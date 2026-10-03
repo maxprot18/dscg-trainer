@@ -1,0 +1,25 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-ifrs-ias16-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-16-immobilisations",
+      "difficulty": 2,
+      "tags": ["amortissement", "composants"],
+      "statement": "Une compagnie aérienne acquiert un avion pour 10 M€. Les moteurs (3 M€) ont une durée d'utilité de 8 ans, la cellule (7 M€) de 20 ans. Selon IAS 16, comment l'avion doit-il être amorti ?",
+      "options": [
+        "Un seul plan d'amortissement sur 20 ans pour 10 M€",
+        "Deux plans distincts : les moteurs sur 8 ans, la cellule sur 20 ans",
+        "Au choix de l'entité, selon sa politique comptable",
+        "Un seul plan sur la durée d'utilité moyenne pondérée des composants"
+      ],
+      "answer": [1],
+      "explanation": "IAS 16 impose l'approche par composants : chaque partie d'une immobilisation corporelle dont le coût est significatif par rapport au coût total est amortie séparément sur sa propre durée d'utilité. Les moteurs (30 % du coût, 8 ans) et la cellule (20 ans) ont des durées très différentes : on retient deux plans. Une durée moyenne pondérée ou un plan unique ne reflètent pas le rythme de consommation des avantages économiques.",
+      "source_ref": "IAS 16 §43-47 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 60
+    }
+  ]
+}
