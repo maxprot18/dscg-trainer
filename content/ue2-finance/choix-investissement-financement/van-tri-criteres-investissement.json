@@ -1,0 +1,22 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-invest-van-0001",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "van-tri-criteres-investissement",
+      "difficulty": 1,
+      "tags": ["VAN", "actualisation"],
+      "statement": "Un projet nécessite un investissement initial de 100 000 € (versé en début de période 0). Il génère des flux nets de trésorerie de 30 000 € par an, perçus en fin d'année, pendant 5 ans, sans valeur résiduelle. Le coût du capital est de 8 %. Calculez la valeur actuelle nette (VAN) du projet, en euros.",
+      "expected_value": 19781.30,
+      "tolerance": { "kind": "relative", "value": 0.01 },
+      "unit": "€",
+      "decimals": 2,
+      "explanation": "VAN = −I₀ + Σ FNT × (1,08)^−t. Les flux étant constants, on utilise le facteur d'annuité : [1 − (1,08)^−5] / 0,08 ≈ 3,99271. Valeur actuelle des flux : 30 000 × 3,99271 ≈ 119 781,30 €. VAN ≈ 119 781,30 − 100 000 = 19 781,30 €. La VAN est positive : le projet crée de la valeur au taux de 8 % et doit être accepté selon ce critère.",
+      "source_ref": "Formule de la VAN — calcul financier (actualisation de flux constants)",
+      "verified": true,
+      "estimated_seconds": 180
+    }
+  ]
+}

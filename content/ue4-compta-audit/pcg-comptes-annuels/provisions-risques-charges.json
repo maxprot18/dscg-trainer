@@ -1,0 +1,23 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-pcg-provisions-0001",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "provisions-risques-charges",
+      "difficulty": 1,
+      "tags": ["provision pour litige", "dotation"],
+      "statement": "Au 31/12/N, la société Alpha fait l'objet d'une action en justice engagée par un ancien client qui lui réclame 40 000 € de dommages et intérêts. Son avocat estime probable une condamnation à verser 25 000 €. Le litige relève de l'activité courante. Passez l'écriture d'inventaire au 31/12/N.",
+      "date": "31/12/N",
+      "entries": [
+        { "account": "6815", "label": "Dotations aux provisions d'exploitation", "debit": 25000, "credit": 0 },
+        { "account": "1511", "label": "Provisions pour litiges", "debit": 0, "credit": 25000 }
+      ],
+      "explanation": "Les trois conditions de comptabilisation d'un passif sont réunies : obligation à l'égard d'un tiers à la clôture (le litige), sortie de ressources probable sans contrepartie au moins équivalente, montant estimable de façon fiable. On provisionne la meilleure estimation de la sortie de ressources (25 000 €), et non le montant réclamé (40 000 €). Le litige étant lié à l'exploitation, la dotation est enregistrée au compte 6815 (dotations aux provisions d'exploitation) par le crédit du compte 1511 (provisions pour litiges).",
+      "source_ref": "PCG art. 321-5, 322-1 et 323-1 à 323-6 (règl. ANC 2014-03) ; comptes 1511 et 6815",
+      "verified": true,
+      "estimated_seconds": 120
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-audit-ventes-0001",
+      "type": "audit_case",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-procedures-substantives",
+      "difficulty": 2,
+      "tags": ["séparation des exercices", "cut-off", "chiffre d'affaires"],
+      "title": "Ventes de fin d'année chez un distributeur",
+      "cycle": "ventes-clients",
+      "situation": "Vous auditez les comptes au 31/12/N de Bêta, distributeur de matériel électrique. Le chiffre d'affaires progresse de 12 % alors que le marché est stable. Le chiffre d'affaires de décembre N représente 18 % du total annuel contre 9 % en moyenne les années précédentes. La direction a un objectif de croissance conditionnant le versement de primes. Les conditions de vente sont « départ entrepôt » : le transfert de contrôle intervient à l'expédition. Le contrôle interne sur la facturation a été jugé fiable lors de l'intérim.",
+      "assertions": ["Séparation des exercices", "Réalité (survenance)"],
+      "procedures": {
+        "options": [
+          "Rapprocher les dernières factures de décembre N et les premières de janvier N+1 des bons de livraison signés, pour vérifier la date d'expédition",
+          "Examiner les avoirs émis en janvier et février N+1 et identifier ceux qui annulent des ventes de décembre N",
+          "Envoyer des demandes de confirmation de solde aux principaux clients et analyser les écarts",
+          "Inventorier physiquement les immobilisations corporelles de l'entrepôt",
+          "Vérifier le calcul des amortissements des véhicules de livraison",
+          "Contrôler l'exhaustivité des dettes fournisseurs par l'examen des décaissements postérieurs à la clôture"
+        ],
+        "answer": [0, 1, 2]
+      },
+      "risk": {
+        "options": ["Faible", "Modéré", "Élevé"],
+        "answer": 2,
+        "rationale": "Plusieurs facteurs de risque se cumulent : croissance atypique par rapport au marché, concentration anormale du chiffre d'affaires en décembre et incitation de la direction (primes liées à la croissance). La NEP 240 impose de présumer un risque de fraude dans la comptabilisation des produits ; ici il porte sur la séparation des exercices et la réalité des ventes de fin d'année. La fiabilité du contrôle interne de facturation ne couvre pas le risque de contournement des contrôles par la direction."
+      },
+      "conclusion": {
+        "model_answer": "Sur la base des procédures mises en œuvre (tests de séparation des exercices sur les factures et bons de livraison encadrant la clôture, revue des avoirs postérieurs, confirmations clients), nous avons obtenu des éléments suffisants et appropriés pour conclure que le chiffre d'affaires de l'exercice N est rattaché au bon exercice et correspond à des ventes réelles, sous réserve des ajustements éventuellement identifiés et communiqués à la direction.",
+        "key_points": [
+          "Rappeler les procédures réalisées et les assertions couvertes (séparation des exercices, réalité)",
+          "Se prononcer sur le caractère suffisant et approprié des éléments collectés",
+          "Mentionner le traitement des anomalies détectées (ajustement proposé ou impact sur l'opinion)"
+        ]
+      },
+      "explanation": "Le risque identifié porte sur des ventes enregistrées en N alors que les biens n'ont été expédiés qu'en N+1, ou sur des ventes fictives annulées après la clôture. Les procédures pertinentes testent directement ces assertions : rapprochement facture / bon de livraison autour de la clôture, examen des avoirs postérieurs et confirmations clients (qui confirment l'existence des créances et la réalité des ventes). L'inventaire des immobilisations, les amortissements et l'exhaustivité des dettes fournisseurs concernent d'autres cycles. Le risque est élevé compte tenu des facteurs de risque de fraude (NEP 240) ; la réponse doit inclure des procédures substantives spécifiques (NEP 330).",
+      "source_ref": "NEP 240 (fraude, présomption de risque sur les produits), NEP 330 (réponses aux risques), NEP 505 (confirmations externes)",
+      "verified": true,
+      "estimated_seconds": 420
+    }
+  ]
+}

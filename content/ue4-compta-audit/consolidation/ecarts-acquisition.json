@@ -1,0 +1,19 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-conso-goodwill-0001",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "ecarts-acquisition",
+      "difficulty": 1,
+      "tags": ["goodwill", "IFRS 3", "intérêts minoritaires"],
+      "front": "IFRS 3 : goodwill « partiel » et goodwill « complet » — quelle différence ?",
+      "back": "Goodwill = contrepartie transférée + participations ne donnant pas le contrôle (PNC) + juste valeur de la participation antérieure − actifs nets identifiables acquis (évalués, en règle générale, à leur juste valeur à la date d'acquisition). Goodwill partiel : les PNC sont évaluées à leur quote-part de l'actif net identifiable → seul le goodwill du groupe est constaté. Goodwill complet : les PNC sont évaluées à leur juste valeur → le goodwill inclut aussi la part des minoritaires. L'option se choisit acquisition par acquisition.",
+      "explanation": "IFRS 3 §19 laisse le choix d'évaluation des PNC (juste valeur ou quote-part de l'actif net identifiable) pour chaque regroupement d'entreprises ; le §32 définit le calcul du goodwill. Le choix modifie le montant du goodwill et des capitaux propres attribuables aux minoritaires, et donc les tests de dépréciation selon IAS 36.",
+      "source_ref": "IFRS 3 §19 et §32 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45
+    }
+  ]
+}
