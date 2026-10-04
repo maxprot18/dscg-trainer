@@ -1,0 +1,532 @@
+{
+  "topics": [
+    {
+      "id": "ue6-oral-0001",
+      "theme": "economie-regulations",
+      "notions": [
+        "macroeconomic-indicators"
+      ],
+      "title": "Nordland: soft landing or slow stall?",
+      "document": "*Nordland Economic Review — fictional country, illustrative data*\n\n**Inflation is coming down. So why is nobody celebrating?**\n\nNordland's statistics office released its quarterly figures on Tuesday, and at first glance they look like the textbook soft landing policymakers have been hoping for. Headline inflation fell to 2.4% in the third quarter, down from a peak of 7.9% two years ago, largely because energy prices have dropped back. Yet a closer look at the numbers tells a more nuanced story.\n\n| | Q4 last year | Q1 | Q2 | Q3 |\n|---|---|---|---|---|\n| Real GDP growth (q/q) | +0.3% | +0.1% | −0.1% | +0.1% |\n| Headline inflation (y/y) | 3.6% | 3.1% | 2.7% | 2.4% |\n| Core inflation (y/y) | 3.9% | 3.7% | 3.5% | 3.4% |\n| Unemployment rate (ILO) | 6.1% | 6.3% | 6.6% | 6.8% |\n\nCore inflation, which strips out energy and food, has barely moved and remains well above the central bank's 2% target, driven by services prices and wage settlements negotiated last year. Meanwhile the economy has essentially flatlined: output contracted in the second quarter and only just recovered in the third, so Nordland narrowly avoided a technical recession.\n\nThe labour market is also softening. The number of jobseekers rose by 90,000 over the year, although part of the increase reflects higher participation, as older workers and second earners returned to the labour force to cope with the cost of living.\n\n\"Disinflation is real, but the last mile will be the hardest,\" said Ingrid Holm, chief economist at Fjord Capital. \"With growth close to zero and a negative output gap, wage pressures should ease next year. The risk is that the central bank keeps rates high for too long and turns stagnation into a genuine downturn.\"\n\nNordland's finance ministry, for its part, expects real growth of 0.6% next year, a forecast most private-sector economists regard as optimistic.",
+      "task": "Present the document and discuss whether Nordland is heading for a soft landing, and what headline indicators can hide about the real state of an economy.",
+      "outline": [
+        "Introduction: context of post-inflation slowdown; problem: does falling headline inflation mean the battle is won?",
+        "Part 1 — Reading the data: disinflation driven by energy, sticky core inflation, near-zero growth and a narrowly avoided technical recession",
+        "Part 2 — Labour market and output gap: rising unemployment partly explained by higher participation, easing wage pressures",
+        "Part 3 — Policy dilemma: risk of keeping rates too high versus risk of persistent services inflation; credibility of the government forecast",
+        "Conclusion: a fragile soft landing; opening on the limits of GDP and the unemployment rate as measures of well-being"
+      ],
+      "vocabulary": [
+        {
+          "term": "headline inflation",
+          "translation": "inflation totale"
+        },
+        {
+          "term": "core inflation",
+          "translation": "inflation sous-jacente"
+        },
+        {
+          "term": "disinflation",
+          "translation": "désinflation"
+        },
+        {
+          "term": "technical recession",
+          "translation": "récession technique"
+        },
+        {
+          "term": "labour force",
+          "translation": "population active"
+        },
+        {
+          "term": "participation rate",
+          "translation": "taux d'activité"
+        },
+        {
+          "term": "output gap",
+          "translation": "écart de production"
+        },
+        {
+          "term": "wage settlement",
+          "translation": "accord salarial"
+        },
+        {
+          "term": "soft landing",
+          "translation": "atterrissage en douceur"
+        }
+      ],
+      "jury_questions": [
+        "Could you explain the difference between disinflation and deflation, using the figures in the table?",
+        "Why can the unemployment rate rise even when employment does not fall?",
+        "Two quarters of negative growth is a rule of thumb: what other indicators would you look at to decide whether a country is in recession?",
+        "How might persistent core inflation affect a company's budgeting, pricing and wage negotiations?",
+        "Is GDP still a relevant indicator of economic performance in your view?"
+      ],
+      "verified": true
+    },
+    {
+      "id": "ue6-oral-0002",
+      "theme": "economie-regulations",
+      "notions": [
+        "monetary-fiscal-policy"
+      ],
+      "title": "Calvania's budget meets Frankfurt's caution",
+      "document": "*The Continental Ledger — fictional euro-area member state, illustrative figures*\n\n**Calvania's finance minister bets on growth as Brussels watches the numbers**\n\nCalvania's finance minister, Paolo Verri, unveiled next year's draft budget on Monday with a promise that seemed to please everyone: no tax rises, more defence and housing spending, and a deficit that would still fall from 4.6% to 4.1% of GDP. Economists were quick to point out the catch.\n\nThe plan rests on nominal GDP growth of 3.5%, well above the 2.6% expected by the country's independent fiscal council. Public debt stands at 113% of GDP, and Calvania has been under the EU's excessive deficit procedure since last year. Under the reformed fiscal rules, it has committed to a multi-year net expenditure path that caps the growth of net primary spending (excluding interest, cyclical unemployment benefits and the effect of new tax measures). \"If growth disappoints, the deficit target will be out of reach within twelve months,\" warned the council in its opinion.\n\nThe debt arithmetic is unforgiving. Even if the government meets its deficit target, the debt ratio will fall only if nominal growth outpaces the accumulation of new borrowing. Calvania's ten-year bond yield has already edged up, and its spread over German Bunds widened by 25 basis points after the announcement.\n\nMonetary policy offers little relief. As a euro-area member, Calvania cannot set its own interest rates, and the European Central Bank has signalled that it will keep its policy stance unchanged until it is confident that services inflation is returning sustainably to its 2% target. \"Fiscal stimulus in a single country does not change the ECB's view of the euro area as a whole,\" noted Hanna Weber, an economist at Rheinwerk Bank. \"But it does raise questions about the policy mix: governments loosening while the central bank stays cautious is a recipe for higher borrowing costs.\"\n\nMr Verri brushed aside the criticism, arguing that public investment would \"pay for itself\" by lifting potential output.",
+      "task": "Present the document and discuss whether an expansionary budget is sustainable for a highly indebted country that has no control over its own monetary policy.",
+      "outline": [
+        "Introduction: a euro-area government loosening fiscal policy; problem: can growth alone stabilise public debt?",
+        "Part 1 — The budget and its assumptions: deficit versus debt, optimistic growth forecast, role of the independent fiscal council",
+        "Part 2 — The EU framework: excessive deficit procedure, net expenditure path, market reaction through spreads",
+        "Part 3 — The policy mix in a monetary union: single monetary policy, national fiscal policies, risk of crowding out",
+        "Conclusion: credibility depends on realistic forecasts; opening on public investment versus current spending"
+      ],
+      "vocabulary": [
+        {
+          "term": "draft budget",
+          "translation": "projet de budget (en France : projet de loi de finances)"
+        },
+        {
+          "term": "deficit",
+          "translation": "déficit"
+        },
+        {
+          "term": "public debt",
+          "translation": "dette publique"
+        },
+        {
+          "term": "fiscal council",
+          "translation": "conseil budgétaire indépendant (en France : Haut Conseil des finances publiques)"
+        },
+        {
+          "term": "excessive deficit procedure",
+          "translation": "procédure de déficit excessif"
+        },
+        {
+          "term": "net expenditure path",
+          "translation": "trajectoire de dépenses nettes"
+        },
+        {
+          "term": "spread",
+          "translation": "écart de taux"
+        },
+        {
+          "term": "basis point",
+          "translation": "point de base"
+        },
+        {
+          "term": "policy mix",
+          "translation": "combinaison des politiques économiques"
+        },
+        {
+          "term": "crowding out",
+          "translation": "effet d'éviction"
+        }
+      ],
+      "jury_questions": [
+        "Why does a falling deficit not necessarily mean falling debt? Could you illustrate with the figures in the article?",
+        "What are the ECB's mandate and main instruments, and why can it not respond to the situation of one member state?",
+        "What does a widening spread over German Bunds tell us, and what does it mean for companies based in Calvania?",
+        "Is the argument that public investment 'pays for itself' convincing?",
+        "How would higher interest rates affect the valuation of assets and liabilities in a company's financial statements?"
+      ],
+      "verified": true
+    },
+    {
+      "id": "ue6-oral-0003",
+      "theme": "economie-regulations",
+      "notions": [
+        "international-trade-globalisation"
+      ],
+      "title": "Nearshoring under tariff pressure",
+      "document": "*Internal memo — Vestral Machines SA (fictional company)*\n\n**To:** Executive Committee\n**From:** Claire Dumont, Supply Chain Director\n**Subject:** Sourcing options for precision castings, 2027-2029\n\nOur precision castings are currently sourced from a single supplier in East Asia. Three developments force us to review this choice.\n\nFirst, US trade policy has been volatile since 2025 and tariffs on European machinery remain higher than they were. Our American customers, who account for 28% of revenue, increasingly ask us to absorb part of the duty.\n\nSecond, the EU carbon border adjustment mechanism (CBAM) entered its definitive phase in January 2026. As our imports of steel and aluminium products exceed the annual 50-tonne threshold, we must now be an authorised CBAM declarant, and we will have to surrender certificates corresponding to the embedded emissions of our imports. Our Asian supplier relies on coal-based electricity and cannot yet provide verified emissions data, which means default values, and therefore higher costs, would apply.\n\nThird, the 2024 shipping disruptions showed how exposed a single-source model is: our lead time doubled and we had to air-freight parts at three times the usual cost.\n\n| Landed cost per tonne (estimate) | East Asia | Morocco | France |\n|---|---|---|---|\n| Purchase price | €2,100 | €2,450 | €2,950 |\n| Freight and insurance | €260 | €90 | €30 |\n| Estimated carbon cost | €180 | €70 | — |\n| Total | €2,540 | €2,610 | €2,980 |\n| Lead time | 9 weeks | 3 weeks | 2 weeks |\n\nMorocco, which has a free trade agreement with the EU, is now within 3% of our current cost while cutting lead times by two thirds. I recommend a dual-sourcing strategy: 60% from Morocco and 40% retained in Asia during the transition, with a review in 2028.\n\nThe figures exclude currency risk: a further depreciation of the dirham against the euro would favour the Moroccan option, while a weaker currency on our Asian supplier's side would make the current option cheaper again.",
+      "task": "Present the document and discuss how tariffs, carbon pricing and supply chain risks are reshaping European companies' sourcing decisions.",
+      "outline": [
+        "Introduction: end of cost-only globalisation; problem: is nearshoring a rational choice or a costly insurance policy?",
+        "Part 1 — The drivers of change: US tariffs, the CBAM definitive phase, lessons of shipping disruptions",
+        "Part 2 — Analysing the cost table: landed cost versus purchase price, carbon cost, lead time and working capital",
+        "Part 3 — Strategic trade-offs: dual sourcing, free trade agreements, currency risk, de-risking versus efficiency",
+        "Conclusion: resilience now has a price; opening on the future of global value chains"
+      ],
+      "vocabulary": [
+        {
+          "term": "landed cost",
+          "translation": "coût de revient rendu"
+        },
+        {
+          "term": "tariff",
+          "translation": "droit de douane"
+        },
+        {
+          "term": "carbon border adjustment mechanism",
+          "translation": "mécanisme d'ajustement carbone aux frontières"
+        },
+        {
+          "term": "embedded emissions",
+          "translation": "émissions intrinsèques"
+        },
+        {
+          "term": "lead time",
+          "translation": "délai d'approvisionnement"
+        },
+        {
+          "term": "dual sourcing",
+          "translation": "double approvisionnement"
+        },
+        {
+          "term": "nearshoring",
+          "translation": "relocalisation de proximité"
+        },
+        {
+          "term": "free trade agreement",
+          "translation": "accord de libre-échange"
+        },
+        {
+          "term": "depreciation",
+          "translation": "dépréciation (de la monnaie)"
+        }
+      ],
+      "jury_questions": [
+        "Why is the landed cost a better basis for comparison than the purchase price alone?",
+        "What is the purpose of the CBAM, and why might some trading partners see it as a form of protectionism?",
+        "What is the difference between a free trade area and a customs union? Where does the EU-Morocco relationship fit?",
+        "How would you hedge the currency risk mentioned at the end of the memo?",
+        "Shorter lead times reduce inventories: how would that show in the company's balance sheet and cash flow?"
+      ],
+      "verified": true
+    },
+    {
+      "id": "ue6-oral-0004",
+      "theme": "economie-regulations",
+      "notions": [
+        "regulation-competition-law"
+      ],
+      "title": "Brussels opens an in-depth probe into a packaging merger",
+      "document": "*Market Watch Europe — fictional companies*\n\n**Commission takes a closer look at the Pactera-Lindqvist deal**\n\nThe European Commission has opened an in-depth Phase II investigation into the proposed €3.4bn acquisition of Lindqvist Packaging by its rival Pactera, saying the deal could significantly impede competition in the market for rigid food packaging in the European Economic Area.\n\nThe transaction, announced in March, was notified to Brussels in late August. Because the parties' combined turnover exceeds the EU Merger Regulation thresholds, the Commission alone is competent and the deal cannot close before it is cleared. The Commission now has 90 working days, which may be extended, to reach a decision.\n\n| Rigid food packaging, EEA (share of sales) | Market share |\n|---|---|\n| Duromer | 34% |\n| Pactera | 22% |\n| Calder Group | 18% |\n| Lindqvist | 14% |\n| Others (none above 3%) | 12% |\n\nAccording to the Commission's preliminary assessment, the combined entity would become the market leader with 36% of sales, ahead of Duromer. Customers, mainly large food manufacturers, told investigators that they rely on a small number of suppliers able to deliver across several countries, and that switching costs are high because each packaging line is certified for a specific format.\n\nPactera argues that the market is wider than the Commission suggests and that competition from flexible plastic and paper-based alternatives keeps prices in check. It has said it is \"ready to discuss remedies\", which analysts expect to include the divestiture of two Lindqvist plants in Poland and Spain.\n\nThe case comes after a turbulent year for the sector. In February, the Commission fined three other producers a total of €210m for coordinating price increases on aluminium trays; one of them escaped a fine altogether after revealing the cartel under the leniency programme. Lawyers say the episode has pushed packaging groups to strengthen their compliance programmes and whistleblowing channels.",
+      "task": "Present the document and discuss how EU competition law balances the benefits of consolidation against the risk of reduced competition.",
+      "outline": [
+        "Introduction: a merger under review after a cartel case; problem: when should a public authority stop two firms from combining?",
+        "Part 1 — The merger control procedure: EU dimension, notification, standstill obligation, Phase I and Phase II",
+        "Part 2 — Assessing market power: market definition, market shares and HHI, switching costs, possible remedies",
+        "Part 3 — The wider picture: cartels, leniency, fines and corporate compliance programmes",
+        "Conclusion: protecting customers without blocking efficient deals; opening on the debate about European champions"
+      ],
+      "vocabulary": [
+        {
+          "term": "in-depth investigation",
+          "translation": "enquête approfondie"
+        },
+        {
+          "term": "merger control",
+          "translation": "contrôle des concentrations"
+        },
+        {
+          "term": "to notify",
+          "translation": "notifier"
+        },
+        {
+          "term": "switching costs",
+          "translation": "coûts de changement de fournisseur"
+        },
+        {
+          "term": "remedies",
+          "translation": "mesures correctives"
+        },
+        {
+          "term": "divestiture",
+          "translation": "cession"
+        },
+        {
+          "term": "cartel",
+          "translation": "entente"
+        },
+        {
+          "term": "leniency programme",
+          "translation": "programme de clémence"
+        },
+        {
+          "term": "compliance programme",
+          "translation": "programme de conformité"
+        },
+        {
+          "term": "whistleblowing channel",
+          "translation": "dispositif d'alerte"
+        }
+      ],
+      "jury_questions": [
+        "Could you calculate the HHI before and after the merger using the table, explaining how you treat the fragmented \"others\", and comment on the result?",
+        "What is the difference between a structural and a behavioural remedy? Which one is the Commission likely to prefer here?",
+        "Why does market definition matter so much in this case?",
+        "How does a leniency programme destabilise cartels, and how should a fine be reflected in the company's accounts?",
+        "Should Europe relax merger control to allow the emergence of 'European champions'?"
+      ],
+      "verified": true
+    },
+    {
+      "id": "ue6-oral-0005",
+      "theme": "gouvernance-rse-finance",
+      "notions": [
+        "corporate-governance"
+      ],
+      "title": "Shareholder revolt over pay at Harwell Group",
+      "document": "*City Desk — fictional company*\n\n**Harwell investors rebel over chief executive's \"golden handcuffs\"**\n\nShareholders in Harwell Group plc, the London-listed engineering services company, delivered a stinging rebuke to its board at Thursday's annual general meeting, with 38% of votes cast against the directors' remuneration report.\n\nThe revolt centred on a one-off retention award of shares worth £4.2m granted to chief executive Martin Ashby in March, on top of his regular long-term incentive plan. The award vests after two years and is subject only to Mr Ashby remaining in post, with no performance conditions attached. Both leading proxy advisers had recommended voting against, arguing that the award \"rewards tenure rather than results\" at a time when the share price has fallen 14% over three years.\n\nThe vote on the remuneration report is advisory, so the award stands. But under the UK Corporate Governance Code, a company that receives 20% or more of votes against a resolution must explain what it will do to understand the reasons, and publish an update within six months. Harwell's chair, Elizabeth Crane, said the remuneration committee would \"engage extensively\" with shareholders.\n\nPressure is also building on the board itself. Kestrel Partners, an activist fund that has built up a 5.3% stake, is calling for Ms Crane to step down. It points out that she has chaired the board for ten years, beyond the nine-year limit the Code sets for a chair's tenure, and that two of the five members of the remuneration committee previously worked with Mr Ashby at a rival firm.\n\n\"The issue is not the size of the package; it is the absence of accountability,\" said Kestrel's founder, Ravi Menon. The fund has not ruled out requisitioning a general meeting to propose new directors.\n\nHarwell's binding vote on its remuneration policy is due next year. Analysts say that a defeat then would leave the board no choice but to rework the pay structure and seek fresh approval.",
+      "task": "Present the document and discuss how shareholders can hold boards accountable for executive pay, and how effective these mechanisms really are.",
+      "outline": [
+        "Introduction: an AGM revolt over pay; problem: do say-on-pay votes give shareholders real power?",
+        "Part 1 — The facts: the retention award, the vote, the role of proxy advisers, advisory versus binding votes",
+        "Part 2 — Governance weaknesses: chair tenure and independence, composition of the remuneration committee, 'comply or explain'",
+        "Part 3 — Shareholder tools: engagement, activism, requisitioning a meeting; comparison with the French regime",
+        "Conclusion: soft pressure often works through reputation; opening on aligning pay with long-term and ESG performance"
+      ],
+      "vocabulary": [
+        {
+          "term": "annual general meeting (AGM)",
+          "translation": "assemblée générale annuelle"
+        },
+        {
+          "term": "remuneration report",
+          "translation": "rapport sur les rémunérations"
+        },
+        {
+          "term": "retention award",
+          "translation": "prime de fidélisation"
+        },
+        {
+          "term": "long-term incentive plan",
+          "translation": "plan d'intéressement à long terme"
+        },
+        {
+          "term": "to vest",
+          "translation": "être définitivement acquis"
+        },
+        {
+          "term": "proxy adviser",
+          "translation": "agence de conseil en vote"
+        },
+        {
+          "term": "advisory vote",
+          "translation": "vote consultatif"
+        },
+        {
+          "term": "activist fund",
+          "translation": "fonds activiste"
+        },
+        {
+          "term": "to requisition a meeting",
+          "translation": "demander la convocation d'une assemblée"
+        },
+        {
+          "term": "independent director",
+          "translation": "administrateur indépendant"
+        }
+      ],
+      "jury_questions": [
+        "What is the difference between the vote on the remuneration report and the vote on the remuneration policy?",
+        "How would the outcome differ for a French listed company under the say-on-pay rules?",
+        "Why do governance codes rely on 'comply or explain' rather than on binding law?",
+        "What role should the audit committee and the remuneration committee play respectively, and why must their members be independent?",
+        "How do performance shares affect the financial statements under IFRS 2?"
+      ],
+      "verified": true
+    },
+    {
+      "id": "ue6-oral-0006",
+      "theme": "gouvernance-rse-finance",
+      "notions": [
+        "csr-esg-sustainability"
+      ],
+      "title": "Lower intensity, higher emissions: reading a sustainability statement",
+      "document": "*Extract from the sustainability statement of Transalis Logistics SA (fictional listed company), 2025 financial year*\n\n**Climate change (ESRS E1) — Greenhouse gas emissions**\n\n| tCO₂e | 2024 | 2025 | Change |\n|---|---|---|---|\n| Scope 1 (own fleet and depots) | 42,000 | 43,500 | +3.6% |\n| Scope 2 (market-based) | 8,000 | 5,500 | −31.3% |\n| Scope 3 (subcontracted transport, purchased goods) | 150,000 | 165,000 | +10.0% |\n| **Total** | **200,000** | **214,000** | **+7.0%** |\n| Revenue (€m) | 500 | 590 | +18.0% |\n| Carbon intensity (tCO₂e per €m) | 400 | 363 | −9.3% |\n\n\"2025 was another year of decoupling,\" writes our CEO, Aurélie Marchand. \"Our carbon intensity fell by more than 9% while revenue grew 18%. Thanks to our green electricity contracts, most of our depots now run on renewable power, and since July all our parcel deliveries in France have been certified carbon neutral through high-quality offset projects.\"\n\nOur double materiality assessment identified climate change mitigation as material from both an impact and a financial perspective: transport accounts for a large share of our emissions, and carbon pricing, low-emission zones and customer requirements create risks for our business model. Our transition plan targets a 42% reduction in Scope 1 and 2 emissions by 2030 compared with 2024, mainly through the conversion of 35% of our fleet to electric and biogas trucks.\n\nScope 3 emissions rose mainly because we relied more on subcontracted hauliers to meet demand. We have started collecting primary data from our 40 largest subcontractors.\n\nWith 1,150 employees and turnover above €450m, we expect to remain within the scope of the CSRD as amended by the 2026 Omnibus simplification package. Our statement was subject to a limited assurance engagement by our statutory auditor.\n\n*Note: new EU consumer protection rules applying from late September 2026 prohibit claims that a product has a neutral or reduced environmental impact when they are based on offsetting emissions.*",
+      "task": "Present the document and discuss whether Transalis's climate communication gives a fair picture of its performance, and what the risks of greenwashing are for companies.",
+      "outline": [
+        "Introduction: the rise of mandatory sustainability reporting; problem: can a company report good news while its emissions rise?",
+        "Part 1 — Reading the table: absolute versus intensity figures, weight of Scope 3, the Scope 2 effect of green electricity contracts",
+        "Part 2 — The CEO's message under scrutiny: 'decoupling', carbon-neutral claims based on offsets, greenwashing risk",
+        "Part 3 — The regulatory framework: CSRD and ESRS, double materiality, limited assurance, the Omnibus simplification",
+        "Conclusion: credibility rests on absolute reductions and value chain engagement; opening on the role of the auditor and investors"
+      ],
+      "vocabulary": [
+        {
+          "term": "sustainability statement",
+          "translation": "état de durabilité"
+        },
+        {
+          "term": "greenhouse gas (GHG) emissions",
+          "translation": "émissions de gaz à effet de serre"
+        },
+        {
+          "term": "carbon intensity",
+          "translation": "intensité carbone"
+        },
+        {
+          "term": "decoupling",
+          "translation": "découplage"
+        },
+        {
+          "term": "offsetting",
+          "translation": "compensation carbone"
+        },
+        {
+          "term": "double materiality",
+          "translation": "double matérialité"
+        },
+        {
+          "term": "transition plan",
+          "translation": "plan de transition"
+        },
+        {
+          "term": "subcontractor / haulier",
+          "translation": "sous-traitant / transporteur routier"
+        },
+        {
+          "term": "limited assurance",
+          "translation": "assurance limitée"
+        },
+        {
+          "term": "greenwashing",
+          "translation": "écoblanchiment"
+        }
+      ],
+      "jury_questions": [
+        "Can you explain why subcontracted transport falls within Scope 3 and not Scope 1?",
+        "Is the CEO's claim of 'decoupling' accurate? What would absolute decoupling require?",
+        "What is the difference between limited and reasonable assurance, and what does it mean for a reader of this statement?",
+        "How could climate risks affect the financial statements, for instance asset impairment or the useful life of diesel trucks?",
+        "Do you think the 2026 simplification of the CSRD is a step back for sustainability or a necessary adjustment?"
+      ],
+      "verified": true
+    },
+    {
+      "id": "ue6-oral-0007",
+      "theme": "gouvernance-rse-finance",
+      "notions": [
+        "banking-financial-markets"
+      ],
+      "title": "A mid-sized bank under the market's microscope",
+      "document": "*Financial Daily — fictional bank, illustrative figures*\n\n**Ostmark Bank shares slide despite solid capital ratios**\n\nShares in Ostmark Bank fell 9% on Wednesday after the mid-sized lender reported a sharper-than-expected drop in its net interest margin, reviving questions about the profitability of regional banks now that interest rates have come down from their peak.\n\n| Ostmark Bank, key figures | 30 June 2026 | 31 Dec 2025 |\n|---|---|---|\n| CET1 capital | €6.2bn | €6.0bn |\n| Risk-weighted assets | €48bn | €47bn |\n| CET1 ratio | 12.9% | 12.8% |\n| Leverage ratio | 3.6% | 3.6% |\n| Liquidity coverage ratio (LCR) | 138% | 145% |\n| Net interest margin | 1.62% | 1.85% |\n\nOn paper, the bank looks robust: its CET1 ratio is well above its regulatory requirement of 10.1%, which includes the Basel minimum, the capital conservation and countercyclical buffers and a bank-specific add-on set by the ECB's supervisors. Its liquidity coverage ratio comfortably exceeds the 100% minimum.\n\nThe problem lies in earnings. During the period of high rates, Ostmark benefited from repricing its loans faster than its deposits. As policy rates were cut in 2024 and 2025, the process went into reverse: variable-rate loans now earn less, while depositors, who have become more rate-sensitive, are keeping money in term accounts rather than current accounts.\n\nAnalysts also flagged the bank's €9bn portfolio of fixed-rate government and covered bonds bought before 2022. Classified at amortised cost, the portfolio carries unrealised losses of around €600m that do not appear in the income statement or in regulatory capital. \"It is not a solvency issue as long as the bank can hold the bonds to maturity,\" said Laura Brenner, a banking analyst at Halden Research. \"But it limits management's flexibility if deposits start to leave.\"\n\nOstmark plans to issue €750m of senior preferred bonds next month and to cut costs by closing 40 branches by 2028.",
+      "task": "Present the document and discuss whether solid capital ratios are enough to judge the health of a bank, and how changes in interest rates affect banks.",
+      "outline": [
+        "Introduction: banks between falling rates and market scepticism; problem: is a well-capitalised bank necessarily a sound one?",
+        "Part 1 — Solvency and liquidity: CET1 ratio on risk-weighted assets, leverage ratio, LCR, supervisory requirements",
+        "Part 2 — Profitability under pressure: net interest margin, loan and deposit repricing, depositor behaviour",
+        "Part 3 — Hidden risks: unrealised bond losses, link between bond prices and yields, funding and the planned bond issue",
+        "Conclusion: capital is necessary but not sufficient; opening on the lessons of the 2023 regional bank failures in the United States"
+      ],
+      "vocabulary": [
+        {
+          "term": "net interest margin",
+          "translation": "marge nette d'intérêt"
+        },
+        {
+          "term": "lender",
+          "translation": "prêteur / établissement de crédit"
+        },
+        {
+          "term": "risk-weighted assets",
+          "translation": "actifs pondérés par les risques"
+        },
+        {
+          "term": "capital conservation buffer",
+          "translation": "coussin de conservation des fonds propres"
+        },
+        {
+          "term": "leverage ratio",
+          "translation": "ratio de levier"
+        },
+        {
+          "term": "liquidity coverage ratio",
+          "translation": "ratio de liquidité à court terme"
+        },
+        {
+          "term": "repricing",
+          "translation": "révision des taux"
+        },
+        {
+          "term": "unrealised losses",
+          "translation": "moins-values latentes"
+        },
+        {
+          "term": "amortised cost",
+          "translation": "coût amorti"
+        },
+        {
+          "term": "covered bond",
+          "translation": "obligation sécurisée"
+        }
+      ],
+      "jury_questions": [
+        "Why is the CET1 ratio calculated on risk-weighted assets rather than on total assets? What does the leverage ratio add?",
+        "Why do existing fixed-rate bonds lose value when interest rates rise?",
+        "What accounting classification allows the bank not to recognise these losses in profit or loss, and under what condition?",
+        "Who supervises a bank like Ostmark in the euro area, and why was the banking union created?",
+        "What is the difference between issuing bonds and issuing new shares for a bank?"
+      ],
+      "verified": true
+    },
+    {
+      "id": "ue6-oral-0008",
+      "theme": "gouvernance-rse-finance",
+      "notions": [
+        "mergers-acquisitions-english"
+      ],
+      "title": "Hostile bid for Aldermoor: premium, defences and next steps",
+      "document": "*Deal Street — fictional companies, Paris-listed target*\n\n**Brennac launches hostile €31-a-share bid for Aldermoor**\n\nBrennac Foods has gone directly to the shareholders of Aldermoor, the Paris-listed maker of frozen bakery products, with a cash tender offer of €31 per share, after the target's board rejected three private approaches over the summer.\n\nThe offer represents a premium of 29% to Aldermoor's undisturbed share price of €24, the closing price before press reports of Brennac's interest in July. It values Aldermoor's equity at €2.48bn on the basis of its 80 million shares. Including net debt of €520m, the enterprise value comes to €3.0bn, or 12 times last year's EBITDA of €250m.\n\nBrennac, which already holds 9% of Aldermoor's capital, says the combination would create annual cost synergies of €70m by the third year, mainly in procurement and logistics. The offer is conditional on Brennac obtaining more than 50% of the share capital and on clearance by competition authorities.\n\nAldermoor's board described the bid as \"opportunistic\" and said it \"significantly undervalues\" the company, pointing to a recent turnaround in margins. According to people familiar with the matter, its advisers have contacted a private equity firm that could act as a white knight, possibly through a leveraged buyout.\n\nAldermoor's founding family, which owns 22% of the capital and enjoys double voting rights, has not yet said whether it will tender its shares. Its decision is likely to be decisive.\n\nAnalysts note that many promised synergies in the food sector have failed to materialise. \"Brennac is paying for synergies upfront,\" said Marc Lefort, an analyst at Granvelle Securities. \"If it reaches 90%, it can squeeze out the minorities and delist Aldermoor; if it ends up stuck at 60%, integration will be far more complicated.\"",
+      "task": "Present the document and discuss whether the bid is likely to succeed and whether it creates value for the shareholders of both companies.",
+      "outline": [
+        "Introduction: a hostile takeover attempt; problem: is a 29% premium enough, and who really wins in a takeover?",
+        "Part 1 — The terms of the offer: premium over the undisturbed price, equity value, enterprise value and EV/EBITDA multiple",
+        "Part 2 — The battle for control: hostile versus friendly bid, the board's defences, the white knight, the family's double voting rights",
+        "Part 3 — Value creation: synergies and integration risk, goodwill, thresholds after the offer (squeeze-out, delisting)",
+        "Conclusion: target shareholders usually gain, acquirers often overpay; opening on the role of regulators and employees"
+      ],
+      "vocabulary": [
+        {
+          "term": "tender offer",
+          "translation": "offre publique"
+        },
+        {
+          "term": "hostile bid",
+          "translation": "offre hostile"
+        },
+        {
+          "term": "undisturbed share price",
+          "translation": "cours non affecté (avant rumeurs)"
+        },
+        {
+          "term": "premium",
+          "translation": "prime"
+        },
+        {
+          "term": "enterprise value",
+          "translation": "valeur d'entreprise"
+        },
+        {
+          "term": "cost synergies",
+          "translation": "synergies de coûts"
+        },
+        {
+          "term": "white knight",
+          "translation": "chevalier blanc"
+        },
+        {
+          "term": "leveraged buyout (LBO)",
+          "translation": "rachat avec effet de levier"
+        },
+        {
+          "term": "to tender shares",
+          "translation": "apporter ses titres à l'offre"
+        },
+        {
+          "term": "squeeze-out",
+          "translation": "retrait obligatoire"
+        }
+      ],
+      "jury_questions": [
+        "Could you check the premium and the EV/EBITDA multiple given in the article?",
+        "Why is the comparison made with the undisturbed share price rather than with the price on the day of the offer?",
+        "Brennac holds 9%: what would happen if it bought shares on the market and crossed 30% of the capital or voting rights?",
+        "How would the acquisition be recorded in Brennac's consolidated accounts, and what is goodwill?",
+        "Why do so many acquisitions fail to deliver the expected synergies?"
+      ],
+      "verified": true
+    }
+  ]
+}
