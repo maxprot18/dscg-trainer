@@ -1,0 +1,222 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-ifrs-ias19-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-19-avantages-personnel",
+      "difficulty": 1,
+      "tags": [
+        "cotisations définies",
+        "prestations définies",
+        "classification"
+      ],
+      "statement": "Parmi les avantages suivants accordés par une société française, lequel relève d'un régime à cotisations définies selon IAS 19 ?",
+      "options": [
+        "Les indemnités de fin de carrière prévues par la convention collective",
+        "Une retraite supplémentaire garantissant aux cadres dirigeants 10 % de leur dernier salaire",
+        "Les médailles du travail versées après 20 ans d'ancienneté",
+        "Les cotisations patronales versées au régime de retraite complémentaire obligatoire AGIRC-ARRCO"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Dans un régime à cotisations définies, l'obligation de l'employeur se limite au versement des cotisations : il ne supporte ni le risque actuariel ni le risque de placement (IAS 19 §28). C'est le cas des cotisations aux régimes obligatoires de retraite complémentaire, comptabilisées en charges quand elles sont dues. Les indemnités de fin de carrière sont un régime à prestations définies : l'employeur garantit un montant fonction du salaire et de l'ancienneté. La retraite « chapeau » garantit un niveau de prestation : prestations définies. Les médailles du travail ne sont pas des avantages postérieurs à l'emploi mais d'autres avantages à long terme (§153).",
+      "source_ref": "IAS 19 §8, §26-31 et §153 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-ifrs-ias19-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-19-avantages-personnel",
+      "difficulty": 2,
+      "tags": [
+        "autres avantages à long terme",
+        "médailles du travail",
+        "écarts actuariels"
+      ],
+      "statement": "À la clôture, la réévaluation de l'engagement relatif aux médailles du travail d'un groupe fait apparaître une perte actuarielle de 12 000 € (rotation du personnel plus faible que prévu et baisse du taux d'actualisation). Comment cette perte est-elle comptabilisée selon IAS 19 ?",
+      "options": [
+        "En autres éléments du résultat global (OCI), sans recyclage ultérieur en résultat",
+        "En résultat de la période",
+        "En OCI, puis recyclée en résultat lors du versement des médailles",
+        "Elle n'est pas comptabilisée tant qu'elle reste inférieure à 10 % de l'engagement (corridor)"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Les médailles du travail sont d'« autres avantages à long terme ». Leur engagement est évalué comme celui d'un régime à prestations définies, mais toutes les composantes du coût, y compris les réévaluations, sont comptabilisées en résultat (IAS 19 §154-156). Le traitement en OCI sans recyclage concerne les seuls avantages postérieurs à l'emploi à prestations définies (§120c, §122) : c'est le piège classique. IAS 19 n'autorise jamais le recyclage des réévaluations, et la méthode du corridor a été supprimée lors de la révision de 2011.",
+      "source_ref": "IAS 19 §153-156 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-ifrs-ias19-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-19-avantages-personnel",
+      "difficulty": 1,
+      "tags": [
+        "avantages à court terme",
+        "congés payés"
+      ],
+      "statement": "Selon IAS 19, les congés payés acquis par les salariés et non encore pris à la clôture, dont le règlement est attendu dans les douze mois, sont comptabilisés en passif pour leur montant non actualisé.",
+      "answer": true,
+      "justification": "Ce sont des avantages à court terme : ils sont comptabilisés au fur et à mesure des services rendus, sans actualisation.",
+      "explanation": "Les absences rémunérées cumulables (congés payés) dont le règlement intégral est attendu dans les douze mois suivant la clôture sont des avantages à court terme (IAS 19 §8-9). Le coût attendu est comptabilisé quand les salariés rendent les services qui augmentent leurs droits (§13a, §15), pour un montant non actualisé (§11). L'actualisation et les méthodes actuarielles ne concernent que les avantages à long terme et postérieurs à l'emploi.",
+      "source_ref": "IAS 19 §9-16 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-ifrs-ias19-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-19-avantages-personnel",
+      "difficulty": 3,
+      "tags": [
+        "prestations définies",
+        "actifs du régime",
+        "réévaluations",
+        "OCI"
+      ],
+      "statement": "Une société gère un régime de retraite à prestations définies partiellement financé par un fonds externe. Au 01/01/N : valeur actualisée de l'obligation (DBO) 500 000 € ; juste valeur des actifs du régime 380 000 €. Données N : taux d'actualisation 4 % ; coût des services rendus 30 000 € ; cotisations versées au fonds le 31/12/N : 25 000 € ; prestations payées par le fonds le 31/12/N : 20 000 €. Hypothèse simplificatrice : les cotisations et les prestations interviennent le 31/12/N, et l'intérêt est calculé sur les soldes d'ouverture. Au 31/12/N, l'actuaire évalue la DBO à 545 000 € et la juste valeur des actifs du régime s'établit à 391 000 €. Calculez le montant total des réévaluations comptabilisées en autres éléments du résultat global en N (montant de la perte, en euros, exprimé en valeur positive).",
+      "expected_value": 24200,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "DBO attendue au 31/12/N = 500 000 + 30 000 (coût des services) + 20 000 (intérêt : 4 % × 500 000) − 20 000 (prestations) = 530 000 €. DBO réelle 545 000 € : perte actuarielle de 15 000 €. Actifs attendus = 380 000 + 15 200 (produit d'intérêt au taux d'actualisation : 4 % × 380 000) + 25 000 (cotisations) − 20 000 (prestations) = 400 200 €. Juste valeur réelle 391 000 € : le rendement réel est inférieur de 9 200 € au produit d'intérêt, ce qui constitue une perte de réévaluation. Total des réévaluations en OCI = 15 000 + 9 200 = 24 200 € (perte), non recyclable (IAS 19 §122, §127). Erreurs classiques : ne retenir que l'écart sur la DBO (15 000 €) ou calculer le rendement attendu des actifs à un autre taux que le taux d'actualisation (§125).",
+      "source_ref": "IAS 19 §57, §120, §123-127 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 300
+    },
+    {
+      "id": "ue4-ifrs-ias19-0005",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-19-avantages-personnel",
+      "difficulty": 2,
+      "tags": [
+        "prestations définies",
+        "coût des services",
+        "intérêt net"
+      ],
+      "statement": "La société Lyra comptabilise ses indemnités de fin de carrière (régime à prestations définies non financé) selon IAS 19. Au 01/01/N, l'engagement s'élève à 240 000 €. Pour N, l'actuaire communique un coût des services rendus de 21 000 € ; le taux d'actualisation est de 3,5 % et aucune prestation n'a été versée en N. Aucun écart actuariel n'est constaté. Passez au 31/12/N l'écriture de comptabilisation de la charge de l'exercice, en utilisant le compte 153 pour l'engagement, le compte 6815 pour le coût des services et le compte 668 pour la charge d'intérêt nette.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "6815",
+          "label": "Coût des services rendus",
+          "debit": 21000,
+          "credit": 0
+        },
+        {
+          "account": "668",
+          "label": "Intérêt net sur le passif au titre des prestations définies",
+          "debit": 8400,
+          "credit": 0
+        },
+        {
+          "account": "153",
+          "label": "Provision pour pensions et obligations similaires",
+          "debit": 0,
+          "credit": 29400
+        }
+      ],
+      "explanation": "Le coût des services rendus (21 000 €) et l'intérêt net sont comptabilisés en résultat (IAS 19 §120a-b). Le régime n'étant pas financé, l'intérêt net est l'intérêt sur la DBO d'ouverture : 240 000 × 3,5 % = 8 400 € (§123), présenté ici en charge financière. La provision augmente de 21 000 + 8 400 = 29 400 € ; l'engagement au 31/12/N s'élève à 269 400 €.",
+      "source_ref": "IAS 19 §120-123 (règlement UE 2023/1803) ; PCG comptes 153, 6815 et 668",
+      "verified": true,
+      "estimated_seconds": 200
+    },
+    {
+      "id": "ue4-ifrs-ias19-0006",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-19-avantages-personnel",
+      "difficulty": 3,
+      "tags": [
+        "prestations définies",
+        "coût des services passés",
+        "écarts actuariels",
+        "OCI"
+      ],
+      "title": "Indemnités de fin de carrière et modification du régime chez Orion",
+      "context": "La société Orion, cotée, établit ses comptes consolidés en IFRS. Ses salariés bénéficient d'indemnités de fin de carrière (IFC) prévues par un accord d'entreprise.\nLe régime n'est pas financé : Orion verse directement les indemnités aux salariés partant en retraite.\nAu 01/01/N, la valeur actualisée de l'obligation (DBO) s'élève à 800 000 €.\nTaux d'actualisation retenu pour N : 3 %.\nCoût des services rendus N communiqué par l'actuaire : 52 000 €.\nLe 31/12/N, un avenant à l'accord d'entreprise, immédiatement applicable, majore le barème des indemnités ; l'actuaire évalue l'augmentation de la DBO qui en résulte, au titre des services passés, à 40 000 €.\nIndemnités versées le 31/12/N : 30 000 €.\nAu 31/12/N, après prise en compte de l'avenant et d'hypothèses actuarielles mises à jour (baisse du taux d'actualisation, hausse des salaires), l'actuaire évalue la DBO à 905 000 €.\nOn retient l'hypothèse simplificatrice que tous les flux de l'année (hors coût des services) interviennent le 31/12/N.\nLe directeur financier souhaite étaler le coût de l'avenant sur la durée résiduelle moyenne d'activité des salariés (12 ans).",
+      "sub_questions": [
+        {
+          "id": "q1-services-passes",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Comment comptabiliser l'augmentation de 40 000 € de la DBO due à l'avenant ?",
+          "options": [
+            "En résultat de N, en totalité",
+            "En résultat, étalée sur 12 ans",
+            "En autres éléments du résultat global (OCI)",
+            "En capitaux propres, directement en réserves"
+          ],
+          "answer": [
+            0
+          ],
+          "explanation": "C'est un coût des services passés, comptabilisé immédiatement en résultat à la date de la modification du régime (IAS 19 §103). L'étalement sur la durée d'activité résiduelle n'est plus autorisé depuis la révision de 2011. Ce n'est pas une réévaluation : pas d'OCI."
+        },
+        {
+          "id": "q2-ecart-actuariel",
+          "kind": "numeric",
+          "points": 4,
+          "prompt": "Calculez l'écart actuariel de l'exercice N (montant de la perte, en euros, en valeur positive).",
+          "expected_value": 19000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "DBO attendue au 31/12/N = 800 000 + 52 000 (services rendus) + 24 000 (intérêt : 3 % × 800 000) + 40 000 (services passés) − 30 000 (prestations) = 886 000 €. DBO réelle : 905 000 €. Perte actuarielle = 19 000 €. Oublier le coût des services passés conduirait à une perte de 59 000 €."
+        },
+        {
+          "id": "q3-charge-resultat",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez la charge totale comptabilisée en résultat en N au titre du régime (en euros).",
+          "expected_value": 116000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Charge en résultat = coût des services rendus 52 000 + coût des services passés 40 000 + intérêt net 24 000 = 116 000 € (IAS 19 §120a-b). L'écart actuariel de 19 000 € n'y figure pas (OCI) et les indemnités versées réduisent la provision sans constituer une charge supplémentaire."
+        },
+        {
+          "id": "q4-traitement-ecart",
+          "kind": "open",
+          "points": 3,
+          "prompt": "Indiquez le traitement comptable de l'écart actuariel et son incidence sur les capitaux propres et sur les résultats futurs.",
+          "model_answer": "L'écart actuariel de 19 000 € est une réévaluation du passif net au titre des prestations définies : il est comptabilisé immédiatement en autres éléments du résultat global (IAS 19 §120c, §127). Il diminue les capitaux propres (après effet d'impôt différé, IAS 12) sans transiter par le résultat. Il n'est jamais recyclé en résultat, même lors du paiement des indemnités ; il peut seulement être transféré entre postes de capitaux propres (§122). Aucun étalement ni corridor n'est admis.",
+          "key_points": [
+            "Réévaluation comptabilisée en OCI dès la période",
+            "Diminution des capitaux propres sans effet sur le résultat",
+            "Pas de recyclage ultérieur en résultat (§122)",
+            "Pas de corridor ni d'étalement"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Le coût des services passés et l'intérêt net vont en résultat, les écarts actuariels en OCI non recyclable. La DBO attendue intègre toutes les variations connues (services rendus, intérêt, services passés, prestations) : l'écart actuariel est la différence résiduelle avec l'évaluation de clôture.",
+      "source_ref": "IAS 19 §57, §102-104, §120-130 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 720
+    }
+  ]
+}

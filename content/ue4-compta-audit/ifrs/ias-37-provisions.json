@@ -1,0 +1,225 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-ifrs-ias37-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-37-provisions",
+      "difficulty": 1,
+      "tags": [
+        "conditions de comptabilisation",
+        "pertes opérationnelles futures"
+      ],
+      "statement": "Au 31/12/N, laquelle des situations suivantes ne peut PAS donner lieu à la comptabilisation d'une provision selon IAS 37 ?",
+      "options": [
+        "Les pertes d'exploitation attendues d'une division en N+1 et N+2",
+        "Un litige avec un client que l'entité perdra probablement, pour un montant estimé de façon fiable",
+        "La garantie légale sur les produits vendus en N, dont les réparations sont probables",
+        "Une amende environnementale probable pour une pollution causée en N"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Les pertes opérationnelles futures ne répondent pas à la définition d'un passif : elles ne résultent d'aucune obligation actuelle née d'un événement passé (IAS 37 §63) ; elles constituent au plus un indice de perte de valeur (IAS 36). Le litige, la garantie et l'amende résultent d'un événement passé (vente, dommage, infraction) créant une obligation actuelle avec une sortie de ressources probable et estimable : les trois conditions de §14 sont réunies.",
+      "source_ref": "IAS 37 §14, §19 et §63 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-ifrs-ias37-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-37-provisions",
+      "difficulty": 2,
+      "tags": [
+        "restructuration",
+        "dépenses directes"
+      ],
+      "statement": "Une entreprise a annoncé au 15/12/N un plan détaillé de fermeture d'un site. Laquelle des dépenses suivantes peut être incluse dans la provision pour restructuration au 31/12/N ?",
+      "options": [
+        "La formation des salariés du site mutés sur un autre site du groupe",
+        "La campagne de communication destinée à rassurer les clients",
+        "Les indemnités de licenciement des salariés du site non reclassés",
+        "Les frais de déménagement des salariés conservés vers leur nouveau site"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "La provision pour restructuration ne comprend que les dépenses directes, nécessairement entraînées par la restructuration et non liées aux activités poursuivies (IAS 37 §80) : les indemnités de licenciement en font partie. Sont expressément exclus la reconversion et la mutation du personnel conservé, le marketing, et les investissements dans de nouveaux systèmes ou réseaux de distribution (§81) : ces coûts se rattachent à la conduite future de l'activité.",
+      "source_ref": "IAS 37 §80-81 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-ifrs-ias37-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-37-provisions",
+      "difficulty": 2,
+      "tags": [
+        "actualisation",
+        "taux avant impôt"
+      ],
+      "statement": "Selon IAS 37, lorsque l'effet de la valeur temps est significatif, une provision est actualisée à un taux avant impôt, et l'augmentation de la provision liée à l'écoulement du temps est comptabilisée en charge financière.",
+      "answer": true,
+      "justification": "IAS 37 impose l'actualisation lorsque l'effet est significatif, à un taux avant impôt ; la désactualisation est un coût d'emprunt.",
+      "explanation": "Le montant de la provision est la valeur actualisée des dépenses attendues lorsque l'effet de la valeur temps est significatif (IAS 37 §45). Le taux reflète l'appréciation actuelle de la valeur temps et les risques propres au passif, avant impôt (§47). L'augmentation de la provision due à l'écoulement du temps est comptabilisée en coût d'emprunt, c'est-à-dire en charge financière (§60).",
+      "source_ref": "IAS 37 §45-47 et §60 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-ifrs-ias37-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-37-provisions",
+      "difficulty": 2,
+      "tags": [
+        "garantie",
+        "valeur attendue",
+        "actualisation"
+      ],
+      "statement": "En N, une entreprise a vendu 2 000 appareils assortis d'une garantie d'un an. D'après l'expérience passée : 85 % des appareils ne présenteront aucun défaut, 12 % nécessiteront une réparation mineure (coût unitaire 150 €) et 3 % devront être remplacés (coût unitaire 900 €). Les dépenses de garantie sont attendues dans un an ; l'effet de l'actualisation est jugé significatif et le taux avant impôt est de 4 %. Calculez le montant de la provision pour garantie au 31/12/N (en euros, arrondi à l'euro).",
+      "expected_value": 86538,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Pour une population nombreuse, la provision est évaluée à la valeur attendue (IAS 37 §39) : 2 000 × (0,85 × 0 + 0,12 × 150 + 0,03 × 900) = 2 000 × 45 = 90 000 €. Actualisation sur un an (§45) : 90 000 / 1,04 = 86 538 €. Retenir 90 000 € revient à omettre l'actualisation demandée.",
+      "source_ref": "IAS 37 §39 et §45 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue4-ifrs-ias37-0005",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-37-provisions",
+      "difficulty": 2,
+      "tags": [
+        "litige",
+        "résultat le plus probable",
+        "remboursement"
+      ],
+      "statement": "Au 31/12/N, la société Vega est assignée par un client pour un défaut de livraison. Ses avocats estiment qu'elle sera condamnée à verser 120 000 € (probabilité 70 %) ou 60 000 € (probabilité 30 %) ; ils jugent qu'aucun élément ne justifie d'ajuster le résultat le plus probable. Le contrat d'assurance de Vega couvre ce sinistre à hauteur de 80 000 € ; l'assureur a confirmé par écrit sa prise en charge, de sorte que le remboursement est quasi certain. Passez l'écriture au 31/12/N selon IAS 37, en utilisant : 1511 pour la provision, 6815 pour la dotation, 4687 pour la créance sur l'assureur et 758 pour le produit correspondant.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "6815",
+          "label": "Dotation aux provisions pour litiges",
+          "debit": 120000,
+          "credit": 0
+        },
+        {
+          "account": "1511",
+          "label": "Provision pour litiges",
+          "debit": 0,
+          "credit": 120000
+        },
+        {
+          "account": "4687",
+          "label": "Remboursement à recevoir de l'assureur",
+          "debit": 80000,
+          "credit": 0
+        },
+        {
+          "account": "758",
+          "label": "Produit de remboursement d'assurance",
+          "debit": 0,
+          "credit": 80000
+        }
+      ],
+      "explanation": "Obligation unique : la meilleure estimation est le résultat individuel le plus probable, soit 120 000 €, et non la valeur attendue (0,7 × 120 000 + 0,3 × 60 000 = 102 000 €), réservée aux populations nombreuses (IAS 37 §39-40) ; les avocats n'ayant relevé aucun motif d'ajustement, ce montant est retenu tel quel. Le remboursement quasi certain de l'assureur est un actif distinct, limité au montant de la provision (§53) : il ne vient pas en déduction de la provision au bilan. Au compte de résultat, la charge peut être présentée nette du remboursement (§54).",
+      "source_ref": "IAS 37 §39-40 et §53-54 (règlement UE 2023/1803) ; PCG comptes 1511, 4687, 6815 et 758",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue4-ifrs-ias37-0006",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-37-provisions",
+      "difficulty": 3,
+      "tags": [
+        "restructuration",
+        "passif éventuel",
+        "démantèlement",
+        "désactualisation"
+      ],
+      "title": "Clôture des provisions chez Méridia",
+      "context": "La société Méridia établit ses comptes en IFRS et clôture au 31/12/N. Trois dossiers sont à examiner.\n1. Restructuration. Le 10/12/N, le conseil d'administration a approuvé un plan détaillé de fermeture de l'usine de Tours (site concerné, salariés visés par catégorie, coûts, calendrier : fermeture en juin N+1). Le plan a été présenté aux représentants du personnel et annoncé à l'ensemble des salariés le 18/12/N. Coûts estimés :\n- indemnités de licenciement des salariés non reclassés : 600 000 € ;\n- pénalités de résiliation des contrats de sous-traitance propres au site : 40 000 € ;\n- formation des salariés reclassés sur le site de Blois : 80 000 € ;\n- transfert vers Blois des équipements conservés : 50 000 € ;\n- pertes d'exploitation du site de Tours jusqu'à sa fermeture : 150 000 €.\n2. Litige. Un ancien distributeur réclame 200 000 € de dommages et intérêts. Les avocats estiment le risque de condamnation à 30 % ; il n'est pas éloigné.\n3. Démantèlement. Méridia exploite depuis le 01/01/N une installation qu'elle est tenue de démanteler. La provision correspondante, constatée en contrepartie du coût de l'installation, s'élevait à 300 000 € (valeur actualisée) au 01/01/N ; le taux d'actualisation avant impôt est de 5 % et aucune estimation n'a changé.",
+      "sub_questions": [
+        {
+          "id": "q1-obligation-implicite",
+          "kind": "open",
+          "points": 3,
+          "prompt": "Méridia doit-elle comptabiliser une provision pour restructuration au 31/12/N ? Justifiez.",
+          "model_answer": "Oui. Une restructuration crée une obligation implicite lorsque l'entité a un plan formalisé et détaillé et qu'elle a créé, chez les personnes concernées, une attente fondée qu'elle le mettra en œuvre, en commençant à l'exécuter ou en annonçant ses principales caractéristiques (IAS 37 §72). Le plan est détaillé (site, salariés, coûts, calendrier) et il a été annoncé aux salariés et à leurs représentants le 18/12/N, avant la clôture. L'obligation actuelle existe, la sortie de ressources est probable et estimable (§14) : une provision est comptabilisée. La seule décision du conseil du 10/12/N n'aurait pas suffi.",
+          "key_points": [
+            "Plan formalisé et détaillé",
+            "Annonce aux personnes concernées avant la clôture : attente fondée",
+            "Obligation implicite née avant le 31/12/N",
+            "Une décision non annoncée ne suffit pas"
+          ]
+        },
+        {
+          "id": "q2-montant-restructuration",
+          "kind": "numeric",
+          "points": 4,
+          "prompt": "Calculez le montant de la provision pour restructuration au 31/12/N (en euros).",
+          "expected_value": 640000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Seules les dépenses directes, nécessairement entraînées par la restructuration et non liées aux activités poursuivies, sont provisionnées (IAS 37 §80) : indemnités de licenciement 600 000 € + pénalités de résiliation 40 000 € = 640 000 €. Sont exclus la formation des salariés reclassés (exclusion expresse de §81) et le transfert des équipements conservés, lié à la poursuite de l'activité à Blois (§80b), ainsi que les pertes d'exploitation futures (§63 et §82)."
+        },
+        {
+          "id": "q3-litige",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Quel traitement retenir pour la réclamation du distributeur ?",
+          "options": [
+            "Provision de 200 000 €",
+            "Provision de 60 000 € (30 % × 200 000 €)",
+            "Passif éventuel : aucune provision, information en annexe",
+            "Aucune provision ni information"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "La sortie de ressources n'est pas probable (30 %) : aucune provision n'est comptabilisée (IAS 37 §14 et §23). Le risque n'étant pas éloigné, il s'agit d'un passif éventuel mentionné en annexe (§86). La pondération par la probabilité ne sert qu'à évaluer une provision déjà justifiée, pour une population nombreuse."
+        },
+        {
+          "id": "q4-demantelement",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez le montant de la provision pour démantèlement au 31/12/N (en euros).",
+          "expected_value": 315000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "La provision augmente du fait de l'écoulement du temps : désactualisation = 300 000 × 5 % = 15 000 €, comptabilisée en charge financière (IAS 37 §60). Provision au 31/12/N = 315 000 €. La contrepartie initiale (coût de l'installation, IAS 16 §16c) est amortie séparément."
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Le cas mobilise les trois conditions de comptabilisation (§14), l'obligation implicite de restructuration (§72), le périmètre des coûts de restructuration (§80-81), la distinction provision / passif éventuel (§86) et la désactualisation (§60).",
+      "source_ref": "IAS 37 §14, §60, §72, §80-81 et §86 ; IAS 16 §16c (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 780
+    }
+  ]
+}

@@ -19,6 +19,184 @@
       "source_ref": "IAS 40 §5, §7 et §9 (règlement UE 2023/1803) ; IAS 16 (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-ifrs-ias40-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-40-immeubles-placement",
+      "difficulty": 1,
+      "tags": [
+        "définition",
+        "classification"
+      ],
+      "statement": "Dans les comptes consolidés d'un groupe, lequel des biens suivants est un immeuble de placement selon IAS 40 ?",
+      "options": [
+        "Un immeuble en cours de construction par une filiale de promotion pour être vendu en lots",
+        "Un terrain détenu par la mère sans affectation future déterminée",
+        "Un bâtiment détenu par la mère et loué à une filiale qui y exploite une usine",
+        "Le siège social occupé par les services administratifs du groupe"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Un terrain détenu pour une utilisation future indéterminée est un immeuble de placement (IAS 40 §8b) : il est réputé détenu pour valoriser le capital. L'immeuble construit pour être vendu dans le cours normal de l'activité relève d'IAS 2 (§9a). Le bâtiment loué à une filiale est occupé par le groupe : immeuble de placement dans les comptes individuels de la mère, mais pas dans les comptes consolidés (§15), où il relève d'IAS 16. Le siège social est occupé par son propriétaire : IAS 16 (§9c).",
+      "source_ref": "IAS 40 §5, §8-9 et §15 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-ifrs-ias40-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-40-immeubles-placement",
+      "difficulty": 2,
+      "tags": [
+        "transfert",
+        "changement d'utilisation",
+        "modèle de la juste valeur"
+      ],
+      "statement": "Une société qui applique le modèle de la juste valeur à ses immeubles de placement quitte un bâtiment qu'elle occupait (comptabilisé au coût selon IAS 16, valeur nette 700 000 €) et le donne en location simple à un tiers. À la date du changement d'utilisation, sa juste valeur est de 950 000 € ; aucune baisse de valeur n'a été antérieurement constatée en résultat. Comment traiter l'écart de 250 000 € ?",
+      "options": [
+        "En résultat, comme toute variation de juste valeur d'un immeuble de placement",
+        "En autres éléments du résultat global (écart de réévaluation), comme une réévaluation IAS 16",
+        "Aucun traitement : l'immeuble est transféré pour sa valeur nette comptable de 700 000 €",
+        "En diminution du coût présumé de l'immeuble de placement"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Lors du transfert d'un bien occupé par son propriétaire vers un immeuble de placement évalué à la juste valeur, l'entité applique IAS 16 jusqu'à la date du changement d'utilisation, puis traite l'écart entre la valeur comptable et la juste valeur comme une réévaluation selon IAS 16 (IAS 40 §61) : la hausse est portée en OCI, en écart de réévaluation, sauf reprise d'une baisse antérieure passée en résultat (IAS 16 §39). Les variations ultérieures de juste valeur iront en résultat (§35). Le transfert à la valeur comptable ne vaut que pour le modèle du coût (§59).",
+      "source_ref": "IAS 40 §57 et §61 ; IAS 16 §39-40 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-ifrs-ias40-0004",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-40-immeubles-placement",
+      "difficulty": 2,
+      "tags": [
+        "modèle de la juste valeur",
+        "variation de juste valeur",
+        "absence d'amortissement"
+      ],
+      "statement": "La société Thalès Immo détient un immeuble de placement donné en location à des tiers, évalué selon le modèle de la juste valeur. Le terrain est suivi au compte 211 et le bâtiment au compte 213. Au 31/12/N-1, leurs justes valeurs respectives étaient de 600 000 € et 2 400 000 € ; au 31/12/N, elles s'établissent à 640 000 € et 2 310 000 €. Le service comptable propose par ailleurs de comptabiliser une dotation aux amortissements du bâtiment de 48 000 € pour N. Passez l'écriture de clôture au 31/12/N selon IAS 40, en utilisant le compte 758 pour les profits de juste valeur et le compte 658 pour les pertes de juste valeur (une ligne par compte).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "211",
+          "label": "Terrain : hausse de juste valeur",
+          "debit": 40000,
+          "credit": 0
+        },
+        {
+          "account": "658",
+          "label": "Perte de juste valeur sur immeuble de placement",
+          "debit": 90000,
+          "credit": 0
+        },
+        {
+          "account": "213",
+          "label": "Bâtiment : baisse de juste valeur",
+          "debit": 0,
+          "credit": 90000
+        },
+        {
+          "account": "758",
+          "label": "Profit de juste valeur sur immeuble de placement",
+          "debit": 0,
+          "credit": 40000
+        }
+      ],
+      "explanation": "Selon le modèle de la juste valeur, l'immeuble de placement est réévalué à chaque clôture et la variation de juste valeur est comptabilisée en résultat de la période (IAS 40 §33 et §35). Terrain : +40 000 € (profit, compte 758) ; bâtiment : −90 000 € (perte, compte 658). Aucun amortissement n'est comptabilisé dans ce modèle : la dotation de 48 000 € proposée doit être écartée. Variation nette en résultat : −50 000 €.",
+      "source_ref": "IAS 40 §33 et §35 (règlement UE 2023/1803) ; PCG comptes 211, 213, 658 et 758",
+      "verified": true,
+      "estimated_seconds": 220
+    },
+    {
+      "id": "ue4-ifrs-ias40-0005",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-40-immeubles-placement",
+      "difficulty": 3,
+      "tags": [
+        "usage mixte",
+        "modèle de la juste valeur",
+        "transfert",
+        "IAS 16"
+      ],
+      "title": "Immeuble à usage mixte de la société Atlas",
+      "context": "La société Atlas, qui établit ses comptes en IFRS, a acquis le 01/01/N un immeuble de bureaux pour 3 000 000 €, frais d'acquisition inclus, dont 500 000 € pour le terrain.\nL'immeuble comprend plusieurs étages dotés d'accès séparés, qui peuvent être vendus séparément sous le régime de la copropriété.\n70 % de la surface (et de la valeur) est donnée en location simple à des entreprises tierces ; Atlas occupe les 30 % restants pour ses propres services.\nAtlas applique le modèle de la juste valeur à ses immeubles de placement et le modèle du coût à ses immobilisations corporelles.\nLa partie occupée par Atlas est amortie linéairement sur 25 ans, sans valeur résiduelle (seul le bâtiment est amortissable).\nAu 31/12/N, la juste valeur de l'ensemble immobilier est de 3 300 000 €, répartie proportionnellement aux surfaces.\nLe 01/01/N+1, Atlas déménage ses services dans d'autres locaux et donne immédiatement en location simple à un tiers la partie qu'elle occupait. La juste valeur de cette partie est alors de 1 000 000 €.\nAucune perte de valeur n'a été constatée.",
+      "sub_questions": [
+        {
+          "id": "q1-classement",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Comment classer l'immeuble dans les comptes de N ?",
+          "options": [
+            "En totalité en immeuble de placement, la part louée étant majoritaire",
+            "En totalité en immobilisation corporelle (IAS 16), puisqu'Atlas en occupe une partie",
+            "Pour 70 % en immeuble de placement et pour 30 % en immobilisation corporelle (IAS 16)",
+            "En stock, l'immeuble pouvant être vendu par lots"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "Lorsque les parties d'un bien peuvent être vendues ou louées séparément, chacune est comptabilisée séparément (IAS 40 §10) : 70 % en immeuble de placement, 30 % en IAS 16. Le critère de la part non significative ne s'applique que si les parties ne sont pas séparables. Rien n'indique une intention de vente dans le cours normal de l'activité (IAS 2)."
+        },
+        {
+          "id": "q2-variation-jv",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez l'incidence sur le résultat de N de la partie classée en immeuble de placement (en euros, profit en valeur positive).",
+          "expected_value": 210000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Coût de la partie louée : 70 % × 3 000 000 = 2 100 000 € ; juste valeur au 31/12/N : 70 % × 3 300 000 = 2 310 000 €. Profit de juste valeur en résultat = 210 000 € (IAS 40 §35), sans amortissement."
+        },
+        {
+          "id": "q3-amortissement",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez la dotation aux amortissements de N de la partie occupée par Atlas (en euros).",
+          "expected_value": 30000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Base amortissable : 30 % × (3 000 000 − 500 000) = 750 000 € (le terrain n'est pas amorti, IAS 16 §58). Dotation = 750 000 / 25 = 30 000 €. Valeur nette au 31/12/N = 30 % × 3 000 000 − 30 000 = 870 000 €."
+        },
+        {
+          "id": "q4-transfert",
+          "kind": "open",
+          "points": 4,
+          "prompt": "Analysez le traitement comptable du changement d'utilisation du 01/01/N+1 et chiffrez son incidence.",
+          "model_answer": "Le départ d'Atlas et la mise en location à un tiers constituent un changement d'utilisation avéré : la partie est transférée d'IAS 16 vers les immeubles de placement (IAS 40 §57). Comme Atlas applique le modèle de la juste valeur, la partie est évaluée à sa juste valeur de 1 000 000 € ; l'écart avec sa valeur nette comptable (870 000 €), soit 130 000 €, est traité comme une réévaluation selon IAS 16 (IAS 40 §61) : en l'absence de baisse antérieure passée en résultat, il est comptabilisé en OCI (écart de réévaluation en capitaux propres, IAS 16 §39), et non en résultat. Les variations ultérieures de juste valeur de cette partie seront comptabilisées en résultat et elle ne sera plus amortie.",
+          "key_points": [
+            "Changement d'utilisation avéré : transfert IAS 16 → IAS 40",
+            "Évaluation à la juste valeur de 1 000 000 €",
+            "Écart de 130 000 € (1 000 000 − 870 000) en OCI comme une réévaluation IAS 16",
+            "Variations ultérieures en résultat, plus d'amortissement"
+          ]
+        }
+      ],
+      "total_points": 11,
+      "explanation": "Le cas articule la séparation des parties d'un bien à usage mixte (§10), le modèle de la juste valeur (§35), l'amortissement de la partie IAS 16 et le transfert vers les immeubles de placement à la juste valeur, dont l'écart suit la logique de la réévaluation IAS 16 (§61).",
+      "source_ref": "IAS 40 §10, §33-35, §61 ; IAS 16 §39 et §58 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 720
     }
   ]
 }
