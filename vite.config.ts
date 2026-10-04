@@ -36,6 +36,9 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,ico,json,woff2}'],
         navigateFallback: 'index.html',
+        // Le contenu d'une UE tient dans un seul fichier JS (UE 4 : ~1,3 Mo) : on relève la limite
+        // de précache (2 Mo par défaut) pour que tout reste disponible hors ligne.
+        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
       },
     }),
   ],
