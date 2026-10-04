@@ -1,12 +1,12 @@
 # PROGRESS — DSCG Trainer
 
-Dernière mise à jour : 2026-10-03, fin de la session phase 0 (cadrage).
+Dernière mise à jour : 2026-10-04, fin de la session phase 0 (cadrage).
 
 ## État par phase
 
 | Phase | État |
 | --- | --- |
-| 0. Cadrage | Terminée sur la branche `claude/amazing-ramanujan-t4eqgp` : le déploiement GitHub Pages attend la fusion dans `main` (voir « Points ouverts ») |
+| 0. Cadrage | Terminée, fusionnée dans `main` et déployée sur https://maxprot18.github.io/dscg-trainer/ (2026-10-04) |
 | 1. Moteur | À faire |
 | 2. Contenu UE 4 | À faire |
 | 3. Contenu UE 1, 2, 3, 5, 6 | À faire |
@@ -51,7 +51,7 @@ Dernière mise à jour : 2026-10-03, fin de la session phase 0 (cadrage).
 
 ## Points ouverts / à vérifier
 
-- **Déploiement** : le workflow ne déploie que depuis `main`, et cette session travaille sur la branche `claude/amazing-ramanujan-t4eqgp`. Il faut fusionner dans `main`, puis activer une fois Pages (Settings > Pages > Build and deployment > Source : « GitHub Actions »), car le `GITHUB_TOKEN` ne peut probablement pas l'activer seul. Relancer ensuite le workflow (Actions > Run workflow).
+- **Déploiement** : résolu. GitHub Pages est activé (source : GitHub Actions) et chaque push sur `main` déploie automatiquement.
 - **Taxonomie à relire sur le texte officiel.** Légifrance, le BO et les sites officiels étaient inaccessibles depuis l'environnement cloud (proxy). La structure vient du recoupement de résultats de recherche. À contrôler en priorité : intitulés et modalités des UE, découpage des blocs du programme 2025.
 - **Numéros d'articles PCG** des exercices d'exemple (321-5, 322-1, 323-1 à 323-6) : jugés plausibles par le relecteur, mais pas confirmés sur le texte.
 - UE 1, 5 et 6 ont moins de 5 questions par notion à la cible V1 : on peut regrouper des notions en phase 3 si c'est trop fin.
