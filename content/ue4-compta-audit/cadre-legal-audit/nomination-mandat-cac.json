@@ -1,0 +1,41 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-cadre-nomination-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "nomination-mandat-cac",
+      "difficulty": 1,
+      "tags": ["commissaire aux comptes", "durée du mandat", "nomination"],
+      "statement": "L'assemblée générale ordinaire d'une SA nomme un commissaire aux comptes titulaire dans le cadre d'un audit légal. Quelle est la durée de son mandat ?",
+      "options": [
+        "Six exercices ; le mandat prend fin à l'issue de l'assemblée qui statue sur les comptes du sixième exercice",
+        "Six ans à compter de la date de l'assemblée de nomination, indépendamment des exercices sociaux",
+        "Trois exercices, renouvelables une seule fois",
+        "Une durée librement fixée par les statuts, dans la limite de dix exercices"
+      ],
+      "answer": [0],
+      "explanation": "Le commissaire aux comptes est nommé pour six exercices. Le mandat se compte en exercices sociaux, et non en années civiles : il expire après la réunion de l'assemblée qui statue sur les comptes du sixième exercice. Les statuts ne peuvent pas modifier cette durée. La mention d'une durée de trois exercices renvoie à un autre dispositif : la mission propre aux petites entreprises (dite ALPE), créée par la loi PACTE, que la société peut choisir lorsqu'elle désigne un CAC sans y être tenue ou dans certains cas de groupe ; ce n'est pas la durée de droit commun d'un audit légal. Un suppléant n'est exigé que si le titulaire est une personne physique ou une société unipersonnelle.",
+      "source_ref": "C. com. art. L. 821-40 s. (désignation des CAC) et L. 821-44 (mandat de six exercices ; anc. art. L. 823-3), dans leur rédaction issue de l'ordonnance n° 2023-1142 du 6 décembre 2023",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-cadre-nomination-0002",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "nomination-mandat-cac",
+      "difficulty": 1,
+      "tags": ["loi PACTE", "seuils d'audit légal", "SA", "SAS"],
+      "statement": "Depuis la loi PACTE de 2019, toute société anonyme doit désigner un commissaire aux comptes, quelle que soit sa taille, alors que les SAS et les SARL n'y sont tenues qu'au-delà de certains seuils.",
+      "answer": false,
+      "justification": "La loi PACTE a supprimé l'obligation automatique de désignation propre aux SA : toutes les sociétés commerciales (SA, SAS, SARL, SNC, SCA) sont désormais soumises aux mêmes seuils, fixés par décret et appréciés sur deux des trois critères (total du bilan, chiffre d'affaires hors taxes, nombre moyen de salariés).",
+      "explanation": "Avant la réforme, la SA devait toujours désigner un commissaire aux comptes, contrairement aux SAS et SARL soumises à des seuils. Le décret n° 2019-514 a fixé des seuils communs à toutes les formes de sociétés commerciales, avec un dispositif spécifique pour les groupes (la tête de groupe apprécie les seuils sur l'ensemble qu'elle forme avec les sociétés qu'elle contrôle ; les filiales importantes peuvent aussi être concernées). Des obligations de désignation subsistent indépendamment des seuils : entités d'intérêt public, désignation demandée par des associés représentant une fraction du capital ou par décision de justice, certaines entités relevant de textes particuliers. Retenir le principe (seuils identiques pour toutes les sociétés commerciales) plutôt que les montants, qui sont fixés par voie réglementaire et peuvent être actualisés.",
+      "source_ref": "Loi n° 2019-486 du 22 mai 2019 (PACTE) ; décret n° 2019-514 du 24 mai 2019 ; C. com., partie réglementaire (seuils de désignation du CAC)",
+      "verified": true,
+      "estimated_seconds": 40
+    }
+  ]
+}

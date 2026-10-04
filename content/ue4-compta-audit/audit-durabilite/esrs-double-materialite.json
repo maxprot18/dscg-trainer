@@ -1,0 +1,19 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-durab-materialite-0001",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "audit-durabilite",
+      "notion": "esrs-double-materialite",
+      "difficulty": 1,
+      "tags": ["ESRS", "double matérialité", "CSRD", "définition"],
+      "front": "Double matérialité (ESRS 1) : quelles sont ses deux dimensions et quand une question de durabilité doit-elle être publiée ?",
+      "back": "1) Matérialité d'impact (approche « de l'intérieur vers l'extérieur ») : impacts négatifs ou positifs, réels ou potentiels, de l'entreprise et de sa chaîne de valeur sur les personnes et l'environnement.\n2) Matérialité financière (approche « de l'extérieur vers l'intérieur ») : risques et opportunités de durabilité qui ont ou pourraient raisonnablement avoir un effet significatif sur la situation financière, la performance, les flux de trésorerie, l'accès au financement ou le coût du capital de l'entreprise.\nUne question est matérielle, donc publiée dans l'état de durabilité, dès qu'elle est matérielle selon l'une OU l'autre dimension (ou les deux).",
+      "explanation": "La double matérialité est le socle de l'état de durabilité : l'analyse détermine les informations à publier selon les normes thématiques ESRS. L'auditeur de durabilité examine le processus mis en œuvre par l'entité pour la réaliser (identification des impacts, risques et opportunités, critères et seuils retenus, implication des parties prenantes). Ce point fait partie de la mission de certification.",
+      "source_ref": "Règlement délégué (UE) 2023/2772, annexe I, ESRS 1 « Exigences générales », chapitre 3 (double matérialité : matérialité d'impact et matérialité financière)",
+      "verified": true,
+      "estimated_seconds": 40
+    }
+  ]
+}

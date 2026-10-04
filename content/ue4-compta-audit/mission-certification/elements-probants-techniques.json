@@ -1,0 +1,25 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-mission-probants-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "elements-probants-techniques",
+      "difficulty": 2,
+      "tags": ["éléments probants", "fiabilité", "NEP 500", "confirmation externe"],
+      "statement": "Pour vérifier le solde d'une créance client de 240 000 €, l'auditeur dispose de quatre éléments. Lequel est, en principe, le plus fiable au sens de la NEP 500 ?",
+      "options": [
+        "Une copie de la facture de vente remise par le service comptable de l'entité",
+        "La déclaration orale du directeur financier indiquant que le client a confirmé sa dette par téléphone",
+        "La réponse écrite du client à une demande de confirmation envoyée et reçue directement par l'auditeur",
+        "Le grand livre auxiliaire client édité par l'entité à la date de clôture"
+      ],
+      "answer": [2],
+      "explanation": "La NEP 500 retient plusieurs critères de fiabilité : un élément provenant d'une source externe à l'entité est plus fiable qu'un élément interne ; un élément obtenu directement par l'auditeur est plus fiable qu'un élément obtenu indirectement ; un élément écrit est plus fiable qu'une déclaration orale ; un original est plus fiable qu'une copie. La confirmation directe du client remplit les trois premiers critères (source externe, obtention directe, écrit), et la NEP 505 en organise les modalités : l'auditeur garde la maîtrise de l'envoi et de la réception. La copie de facture et le grand livre sont des documents internes ; la déclaration du directeur financier est orale et indirecte.",
+      "source_ref": "NEP 500 (caractère probant des éléments collectés) ; NEP 505 (demandes de confirmation des tiers)",
+      "verified": true,
+      "estimated_seconds": 50
+    }
+  ]
+}
