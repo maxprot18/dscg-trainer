@@ -1,0 +1,144 @@
+{
+  "exercises": [
+    {
+      "id": "ue3-pilproc-changement-0001",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "management-changement-competences",
+      "difficulty": 1,
+      "tags": [
+        "conduite du changement",
+        "Kotter"
+      ],
+      "source_ref": "J. Kotter, Leading Change (1996), processus en huit étapes",
+      "verified": true,
+      "estimated_seconds": 50,
+      "statement": "Selon le modèle de conduite du changement en huit étapes de John Kotter, quelle est la première étape ?",
+      "options": [
+        "Ancrer les nouvelles pratiques dans la culture de l'entreprise",
+        "Créer un sentiment d'urgence",
+        "Obtenir des victoires rapides et visibles",
+        "Former l'ensemble du personnel aux nouveaux outils"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'option 2 est exacte : Kotter commence par instaurer un sentiment d'urgence, pour vaincre la complaisance et montrer pourquoi le statu quo n'est plus tenable ; viennent ensuite la coalition, la vision, sa communication, la levée des obstacles, les victoires rapides et la consolidation. L'option 1 est la dernière étape du modèle. L'option 3 intervient en cours de processus, pour entretenir la dynamique. L'option 4 n'est pas une étape en tant que telle du modèle ; la formation est l'un des moyens de lever les obstacles."
+    },
+    {
+      "id": "ue3-pilproc-changement-0002",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "management-changement-competences",
+      "difficulty": 2,
+      "tags": [
+        "management des connaissances",
+        "SECI"
+      ],
+      "source_ref": "I. Nonaka et H. Takeuchi, The Knowledge-Creating Company (1995), modèle SECI",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Avant le départ en retraite de son meilleur régleur, une entreprise organise une série d'entretiens avec lui et rédige, à partir de ces échanges, un guide illustré des réglages délicats des machines. Selon le modèle SECI de Nonaka et Takeuchi, quel mode de conversion des connaissances est principalement mobilisé ?",
+      "options": [
+        "La socialisation",
+        "La combinaison",
+        "L'intériorisation",
+        "L'externalisation"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'option 4 est exacte : l'externalisation transforme une connaissance tacite (le savoir-faire du régleur) en connaissance explicite (le guide écrit). L'option 1, la socialisation, transmet du tacite au tacite par l'observation et la pratique partagée (compagnonnage), sans formalisation. L'option 2, la combinaison, assemble des connaissances déjà explicites (documents, bases de données). L'option 3, l'intériorisation, correspond à l'appropriation d'une connaissance explicite par la pratique : elle interviendra lorsque les nouveaux régleurs utiliseront le guide."
+    },
+    {
+      "id": "ue3-pilproc-changement-0003",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "management-changement-competences",
+      "difficulty": 2,
+      "tags": [
+        "apprentissage organisationnel",
+        "double boucle"
+      ],
+      "source_ref": "C. Argyris et D. Schön, Organizational Learning (1978), apprentissage en simple et double boucle",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Une chaîne de magasins constate des ruptures de stock répétées. Laquelle de ces réactions relève d'un apprentissage en double boucle au sens d'Argyris et Schön ?",
+      "options": [
+        "Relancer plus souvent les fournisseurs pour respecter les délais prévus",
+        "Augmenter le stock de sécurité calculé par la règle habituelle",
+        "Remettre en cause l'objectif de stock minimal fixé par la direction et le mode de pilotage des approvisionnements",
+        "Sanctionner les chefs de rayon responsables des ruptures"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'option 3 est exacte : l'apprentissage en double boucle interroge les normes, valeurs et objectifs qui guident l'action (ici la politique de stock minimal elle-même). Les options 1 et 2 relèvent de la simple boucle : on corrige l'action pour revenir à la norme, sans la remettre en question. L'option 4 ne constitue pas un apprentissage : elle cherche un responsable sans modifier ni l'action ni les normes."
+    },
+    {
+      "id": "ue3-pilproc-changement-0004",
+      "type": "true_false",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "management-changement-competences",
+      "difficulty": 2,
+      "tags": [
+        "conduite du changement",
+        "Lewin"
+      ],
+      "source_ref": "K. Lewin (1947), modèle du changement en trois phases",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Dans le modèle de Kurt Lewin, la phase de décristallisation précède la mise en œuvre du changement : elle vise à faire prendre conscience de la nécessité de changer et à remettre en cause les pratiques existantes.",
+      "answer": true,
+      "justification": "Vrai : décristallisation, puis déplacement (mise en œuvre), puis recristallisation (stabilisation).",
+      "explanation": "Lewin décrit le changement en trois temps. La décristallisation (unfreezing) déstabilise l'équilibre existant : prise de conscience, remise en cause des habitudes, réduction des forces de résistance. Le déplacement (moving) met en œuvre les nouvelles pratiques. La recristallisation (refreezing) les stabilise et les intègre aux normes du groupe, pour éviter le retour aux anciennes habitudes."
+    },
+    {
+      "id": "ue3-pilproc-changement-0005",
+      "type": "numeric",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "management-changement-competences",
+      "difficulty": 2,
+      "tags": [
+        "GPEC",
+        "GEPP",
+        "écart prévisionnel"
+      ],
+      "source_ref": "Gestion prévisionnelle des emplois et des compétences (GEPP) ; programme DSCG UE3, management des compétences",
+      "verified": true,
+      "estimated_seconds": 180,
+      "statement": "Dans le cadre de sa gestion prévisionnelle des emplois et des compétences, une entreprise estime son besoin en techniciens de maintenance à 60 dans trois ans. Elle en emploie 52 aujourd'hui. Sur les trois prochaines années, elle prévoit :\n- 9 départs en retraite ;\n- 3 démissions par an ;\n- 4 promotions de techniciens vers des postes d'encadrement ;\n- 6 opérateurs de production reconvertis au métier de technicien grâce à un parcours de formation interne.\n\nCalculez le nombre de techniciens à recruter à l'extérieur pour couvrir le besoin dans trois ans.",
+      "expected_value": 24,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "techniciens",
+      "decimals": 0,
+      "explanation": "Ressources prévisibles dans trois ans = 52 − 9 (retraites) − 3 × 3 (démissions) − 4 (promotions sortantes du métier) + 6 (reconversions entrantes) = 36. Écart = besoin − ressources = 60 − 36 = 24 techniciens à recruter. Erreurs classiques : ne compter qu'une année de démissions (18), oublier les promotions (20) ou les reconversions (30)."
+    },
+    {
+      "id": "ue3-pilproc-changement-0006",
+      "type": "flashcard",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "management-changement-competences",
+      "difficulty": 1,
+      "tags": [
+        "management des connaissances",
+        "SECI"
+      ],
+      "source_ref": "I. Nonaka et H. Takeuchi, The Knowledge-Creating Company (1995), modèle SECI",
+      "verified": true,
+      "estimated_seconds": 40,
+      "front": "Quels sont les quatre modes de conversion des connaissances du modèle SECI (Nonaka et Takeuchi) ?",
+      "back": "Socialisation : tacite → tacite (compagnonnage, observation).\nExternalisation : tacite → explicite (formaliser un savoir-faire).\nCombinaison : explicite → explicite (assembler des documents, des bases).\nIntériorisation : explicite → tacite (s'approprier par la pratique).",
+      "explanation": "Le modèle décrit une spirale de création de connaissances : chaque mode alimente le suivant. L'externalisation est l'étape clé pour sécuriser un savoir-faire détenu par quelques personnes."
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "exercises": [
+    {
+      "id": "ue3-pilproc-risques-0001",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "gestion-risques-controle-interne",
+      "difficulty": 1,
+      "tags": [
+        "COSO",
+        "composantes du contrôle interne"
+      ],
+      "source_ref": "COSO, Internal Control – Integrated Framework (2013), cinq composantes",
+      "verified": true,
+      "estimated_seconds": 50,
+      "statement": "Lequel de ces éléments ne figure pas parmi les cinq composantes du contrôle interne du référentiel COSO (2013) ?",
+      "options": [
+        "L'environnement de contrôle",
+        "Le contrôle budgétaire",
+        "L'évaluation des risques",
+        "Les activités de pilotage"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'option 2 est la bonne réponse : le contrôle budgétaire est un outil de contrôle de gestion, qui peut constituer une activité de contrôle, mais ce n'est pas l'une des composantes du référentiel. Les cinq composantes du COSO 2013 sont l'environnement de contrôle (option 1), l'évaluation des risques (option 3), les activités de contrôle, l'information et la communication, et les activités de pilotage (option 4), déclinées en 17 principes."
+    },
+    {
+      "id": "ue3-pilproc-risques-0002",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "gestion-risques-controle-interne",
+      "difficulty": 2,
+      "tags": [
+        "trois lignes",
+        "gouvernance des risques"
+      ],
+      "source_ref": "IIA, modèle des trois lignes (2020)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Selon le modèle des trois lignes de l'IIA (Institute of Internal Auditors), quel acteur relève de la deuxième ligne ?",
+      "options": [
+        "Le directeur d'usine, responsable de la maîtrise des risques de son site",
+        "L'audit interne, qui rend compte au comité d'audit",
+        "Le responsable de la conformité, qui définit les procédures et surveille leur application",
+        "Le commissaire aux comptes, qui certifie les comptes annuels"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'option 3 est exacte : la deuxième ligne regroupe les fonctions d'expertise et de surveillance des risques (gestion des risques, conformité, contrôle interne), qui appuient et challengent la première ligne. L'option 1 relève de la première ligne : le management opérationnel est propriétaire des risques et des contrôles. L'option 2 est la troisième ligne : assurance indépendante rendue à l'organe de gouvernance. L'option 4 est un prestataire externe d'assurance, extérieur aux trois lignes."
+    },
+    {
+      "id": "ue3-pilproc-risques-0003",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "gestion-risques-controle-interne",
+      "difficulty": 2,
+      "tags": [
+        "séparation des tâches",
+        "fraude",
+        "activités de contrôle"
+      ],
+      "source_ref": "COSO, Internal Control – Integrated Framework (2013) ; AMF, cadre de référence sur les dispositifs de gestion des risques et de contrôle interne (2010)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Dans une PME, quelle combinaison de tâches confiée à une même personne crée le risque de fraude le plus direct ?",
+      "options": [
+        "Saisir les commandes clients et répondre aux réclamations des clients",
+        "Classer les pièces justificatives et archiver les relevés bancaires",
+        "Établir le budget de son service et en suivre la réalisation",
+        "Créer de nouveaux fournisseurs dans le fichier des tiers et valider les paiements"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'option 4 est exacte : la même personne peut créer un fournisseur fictif (ou modifier les coordonnées bancaires d'un fournisseur réel) et autoriser le règlement, puis détourner les fonds sans intervention d'un tiers. La séparation des fonctions incompatibles (autorisation, enregistrement, conservation des actifs, contrôle) est le contrôle préventif de base. Les options 1, 2 et 3 réunissent des tâches dont le cumul n'ouvre pas d'accès direct aux actifs ni de possibilité de dissimulation comparable."
+    },
+    {
+      "id": "ue3-pilproc-risques-0004",
+      "type": "true_false",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "gestion-risques-controle-interne",
+      "difficulty": 1,
+      "tags": [
+        "contrôle interne",
+        "assurance raisonnable"
+      ],
+      "source_ref": "COSO, Internal Control – Integrated Framework (2013) ; AMF, cadre de référence sur les dispositifs de gestion des risques et de contrôle interne (2010)",
+      "verified": true,
+      "estimated_seconds": 40,
+      "statement": "Même bien conçu et bien appliqué, un dispositif de contrôle interne ne fournit qu'une assurance raisonnable, et non absolue, quant à l'atteinte des objectifs de l'organisation.",
+      "answer": true,
+      "justification": "Vrai : collusion, contournement par la direction, erreur humaine ou rapport coût-bénéfice limitent tout dispositif.",
+      "explanation": "Le COSO comme le cadre de référence de l'AMF insistent sur les limites inhérentes au contrôle interne : erreurs de jugement, défaillances humaines, collusion entre plusieurs personnes, contournement des contrôles par la direction, et arbitrage entre le coût d'un contrôle et le risque qu'il couvre. Le contrôle interne réduit la probabilité et l'impact des risques, il ne les élimine pas."
+    },
+    {
+      "id": "ue3-pilproc-risques-0005",
+      "type": "numeric",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "gestion-risques-controle-interne",
+      "difficulty": 2,
+      "tags": [
+        "gestion des risques",
+        "perte espérée",
+        "traitement du risque"
+      ],
+      "source_ref": "Norme ISO 31000:2018, processus de management du risque (analyse, évaluation, traitement)",
+      "verified": true,
+      "estimated_seconds": 180,
+      "statement": "Une entreprise de distribution estime le risque de cyberattaque par rançongiciel à une probabilité annuelle de 15 %, pour un impact de 600 000 € par sinistre (arrêt de l'activité, restauration, perte de chiffre d'affaires). Un dispositif de sécurité (sauvegardes isolées, authentification renforcée, plan de reprise) ramènerait la probabilité annuelle à 6 % et l'impact à 400 000 €. Il coûterait 20 000 € par an.\n\nEn raisonnant sur la perte annuelle espérée (probabilité × impact), calculez le gain annuel net attendu du dispositif, en euros.",
+      "expected_value": 46000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Perte annuelle espérée sans dispositif = 15 % × 600 000 = 90 000 €. Avec le dispositif = 6 % × 400 000 = 24 000 €. Réduction de la perte espérée = 66 000 € ; gain net = 66 000 − 20 000 = 46 000 € par an. Erreurs classiques : oublier le coût du dispositif (66 000 €) ou ne prendre en compte que la baisse de probabilité (15 % × 600 000 − 6 % × 600 000 − 20 000 = 34 000 €). Ce raisonnement en espérance ne suffit pas toujours : un risque rare mais d'impact extrême peut justifier un traitement même si le gain espéré est faible."
+    },
+    {
+      "id": "ue3-pilproc-risques-0006",
+      "type": "case_study",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "gestion-risques-controle-interne",
+      "difficulty": 3,
+      "tags": [
+        "cartographie des risques",
+        "criticité",
+        "COSO",
+        "fraude au virement"
+      ],
+      "source_ref": "COSO, Internal Control – Integrated Framework (2013) ; norme ISO 31000:2018 ; AMF, cadre de référence sur les dispositifs de gestion des risques et de contrôle interne (2010)",
+      "verified": true,
+      "estimated_seconds": 840,
+      "title": "Mécanor : cartographie des risques",
+      "context": "Mécanor, fabricant de pièces mécaniques (180 salariés), a établi sa première cartographie des risques. Chaque risque est noté en probabilité (P, de 1 à 4) et en impact (I, de 1 à 4), avant dispositifs de maîtrise (brut) et après prise en compte des dispositifs existants (net). La criticité est égale à P × I.\n\n- R1, rupture d'approvisionnement (fournisseur unique d'un alliage) : brut P3, I4 ; net P2, I4 (stock de sécurité de deux mois).\n- R2, fraude au faux changement de coordonnées bancaires d'un fournisseur : brut P3, I3 ; net P3, I3 (aucun dispositif spécifique : la comptable modifie les RIB à réception d'un courriel et prépare seule les virements, que le dirigeant signe électroniquement par lots sans pièces).\n- R3, rançongiciel : brut P2, I4 ; net P2, I3 (sauvegardes quotidiennes).\n- R4, erreurs de facturation clients : brut P4, I2 ; net P2, I2 (contrôle automatique des prix dans l'ERP).\n- R5, départ d'un ingénieur méthodes clé : brut P2, I3 ; net P2, I3.\n\nLe conseil d'administration a fixé l'appétence au risque : tout risque dont la criticité nette atteint 9 ou plus doit faire l'objet d'un plan d'action immédiat.",
+      "sub_questions": [
+        {
+          "id": "q1-criticite",
+          "kind": "numeric",
+          "prompt": "Calculez la baisse de criticité (brute − nette) obtenue grâce aux dispositifs existants, tous risques confondus.",
+          "points": 2,
+          "expected_value": 10,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "decimals": 0,
+          "explanation": "Criticités brutes : R1 12, R2 9, R3 8, R4 8, R5 6, soit 43. Criticités nettes : R1 8, R2 9, R3 6, R4 4, R5 6, soit 33. Baisse = 43 − 33 = 10 (R1 : −4 ; R3 : −2 ; R4 : −4)."
+        },
+        {
+          "id": "q2-priorite",
+          "kind": "mcq",
+          "prompt": "Quel risque doit faire l'objet d'un plan d'action immédiat selon l'appétence fixée par le conseil ?",
+          "points": 2,
+          "options": [
+            "R1, rupture d'approvisionnement, car sa criticité brute est la plus élevée",
+            "R2, fraude au changement de coordonnées bancaires",
+            "R3, rançongiciel, car son impact brut est maximal",
+            "Aucun, car tous les risques sont couverts par au moins un dispositif"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "L'option 2 est exacte : R2 est le seul risque dont la criticité nette (3 × 3 = 9) atteint le seuil d'appétence ; aucun dispositif ne le réduit. L'option 1 est fausse : la priorité se juge sur le risque net ; R1 a une criticité brute de 12 mais nette de 8, sous le seuil (il reste à surveiller, car il dépend de l'efficacité du stock de sécurité). L'option 3 est fausse : la criticité nette de R3 est de 6. L'option 4 est fausse : R2 et R5 n'ont aucun dispositif de maîtrise."
+        },
+        {
+          "id": "q3-coso",
+          "kind": "true_false",
+          "prompt": "Un contre-appel systématique du fournisseur, à un numéro déjà connu, avant toute modification de coordonnées bancaires relève de la composante « activités de contrôle » du COSO.",
+          "points": 2,
+          "answer": true,
+          "explanation": "Vrai : il s'agit d'un contrôle préventif portant sur une opération (vérification indépendante de l'authenticité de la demande), donc d'une activité de contrôle au sens du COSO 2013."
+        },
+        {
+          "id": "q4-plan-action",
+          "kind": "open",
+          "prompt": "Proposez un plan d'action pour le risque R2 et indiquez les limites de la cartographie réalisée.",
+          "points": 4,
+          "model_answer": "Le dispositif actuel cumule les failles : modification des RIB sur simple courriel, cumul par la comptable de la mise à jour du fichier des tiers et de la préparation des virements, signature par lots sans pièces justificatives. Plan d'action : contre-appel du fournisseur à un numéro connu (et non celui du courriel) avant toute modification ; séparation des tâches entre la personne qui modifie le fichier des tiers et celle qui prépare les paiements ; validation de toute modification de RIB par une seconde personne, avec traçabilité dans l'ERP ; signature des virements sur présentation des factures et contrôle renforcé des premiers paiements vers un RIB modifié ; sensibilisation du personnel à l'ingénierie sociale ; vérification de la couverture d'assurance fraude. Objectif : ramener la probabilité à 1 ou 2, soit une criticité nette de 3 à 6. Limites de la cartographie : notation subjective sur une échelle courte, criticité P × I qui met sur le même plan un risque fréquent bénin et un risque rare grave, risques nets dépendants de l'efficacité réelle des dispositifs (à tester, par exemple le stock de sécurité de R1), interdépendances ignorées (un rançongiciel peut faciliter une fraude), et nécessité d'une mise à jour régulière.",
+          "key_points": [
+            "Failles de R2 : absence de vérification des demandes, cumul de fonctions incompatibles, signature sans pièces",
+            "Contrôles préventifs : contre-appel, séparation des tâches, double validation tracée des modifications de RIB",
+            "Contrôles détectifs et humains : revue des paiements vers RIB modifiés, sensibilisation, assurance",
+            "Limites : subjectivité de la notation, P × I réducteur, efficacité des dispositifs à tester, interdépendances, mise à jour"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "La cartographie se lit en risque net, après dispositifs de maîtrise, et se confronte à l'appétence au risque définie par l'organe de gouvernance. Le traitement d'un risque de fraude passe d'abord par des activités de contrôle : séparation des tâches et vérifications indépendantes."
+    }
+  ]
+}

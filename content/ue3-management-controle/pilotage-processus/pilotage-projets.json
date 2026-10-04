@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "id": "ue3-pilproc-projets-0001",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "pilotage-projets",
+      "difficulty": 1,
+      "tags": [
+        "PERT",
+        "chemin critique"
+      ],
+      "source_ref": "Méthode PERT : réseau, dates au plus tôt et au plus tard, chemin critique ; programme DSCG UE3, pilotage des projets",
+      "verified": true,
+      "estimated_seconds": 50,
+      "statement": "Dans un réseau PERT, qu'appelle-t-on le chemin critique ?",
+      "options": [
+        "La suite des tâches qui mobilisent le plus de ressources humaines",
+        "La suite des tâches les plus coûteuses du projet",
+        "La suite des tâches présentant le plus de risques techniques",
+        "La suite des tâches dont la marge totale est nulle, qui détermine la durée minimale du projet"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'option 4 est exacte : le chemin critique est le plus long chemin du réseau ; ses tâches n'ont aucune marge totale, et tout retard sur l'une d'elles décale d'autant la fin du projet. Sa durée est la durée minimale du projet. Les options 1, 2 et 3 confondent criticité au sens du délai avec la charge en ressources, le coût ou le risque technique : une tâche coûteuse ou risquée peut avoir de la marge."
+    },
+    {
+      "id": "ue3-pilproc-projets-0002",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "pilotage-projets",
+      "difficulty": 2,
+      "tags": [
+        "valeur acquise",
+        "CPI",
+        "SPI"
+      ],
+      "source_ref": "PMI, PMBOK, méthode de la valeur acquise ; norme ISO 21502:2020 (management de projet)",
+      "verified": true,
+      "estimated_seconds": 75,
+      "statement": "À mi-parcours d'un projet, le contrôleur de gestion relève : valeur planifiée (VP) 500 000 € ; valeur acquise (VA) 450 000 € ; coût réel du travail réalisé (CR) 420 000 €. Quel diagnostic peut-on poser ?",
+      "options": [
+        "Le projet est en avance et en dépassement de coût",
+        "Le projet est en retard et en dépassement de coût",
+        "Le projet est en retard, mais le travail réalisé a coûté moins que prévu",
+        "Le projet est en avance et le travail réalisé a coûté moins que prévu"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'option 3 est exacte. Délai : SPI = VA ÷ VP = 450 000 ÷ 500 000 = 0,90 < 1, écart de délai VA − VP = −50 000 € : le travail réalisé est inférieur au travail prévu, le projet est en retard. Coût : CPI = VA ÷ CR = 450 000 ÷ 420 000 ≈ 1,07 > 1, écart de coût VA − CR = +30 000 € : le travail réalisé a coûté moins que son budget. L'option 2 est fausse : le CPI est supérieur à 1, il n'y a pas de dépassement de coût. Les options 1 et 4 se trompent sur le délai (SPI < 1). À noter : comparer directement CR à VP (420 000 € contre 500 000 €) ne permet pas de conclure, car cette comparaison mélange l'effet coût et l'effet délai."
+    },
+    {
+      "id": "ue3-pilproc-projets-0003",
+      "type": "true_false",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "pilotage-projets",
+      "difficulty": 1,
+      "tags": [
+        "valeur acquise",
+        "écart de coût"
+      ],
+      "source_ref": "PMI, PMBOK, méthode de la valeur acquise ; norme ISO 21502:2020 (management de projet)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Une valeur acquise supérieure au coût réel du travail réalisé signifie que le projet est en avance sur son planning.",
+      "answer": false,
+      "justification": "Faux : VA > CR traduit une performance de coût favorable ; le délai s'apprécie en comparant VA à la valeur planifiée.",
+      "explanation": "La comparaison VA − CR (ou CPI = VA ÷ CR) mesure l'efficience en coût : le travail réalisé a coûté moins que son budget. L'avancement par rapport au planning se mesure par VA − VP (ou SPI = VA ÷ VP). Un projet peut très bien être économe et en retard, ou dépensier et en avance."
+    },
+    {
+      "id": "ue3-pilproc-projets-0004",
+      "type": "numeric",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "pilotage-projets",
+      "difficulty": 2,
+      "tags": [
+        "PERT",
+        "marge totale",
+        "chemin critique"
+      ],
+      "source_ref": "Méthode PERT : réseau, dates au plus tôt et au plus tard, chemin critique ; programme DSCG UE3, pilotage des projets",
+      "verified": true,
+      "estimated_seconds": 240,
+      "statement": "Un projet de déménagement d'un siège social comprend les tâches suivantes (durées en semaines) :\n- A, choix des locaux : 3 semaines, sans antériorité ;\n- B, plan d'aménagement : 4 semaines, après A ;\n- C, appel d'offres travaux : 2 semaines, après A ;\n- D, travaux : 4 semaines, après C ;\n- E, commande du mobilier : 5 semaines, après A ;\n- F, câblage et installation informatique : 3 semaines, après B et D ;\n- G, livraison et montage du mobilier : 2 semaines, après E.\n\nLe projet est terminé lorsque F et G sont achevées. Calculez la marge totale de la tâche B, en semaines.",
+      "expected_value": 2,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "semaines",
+      "decimals": 0,
+      "explanation": "Dates au plus tôt : A 0 → 3 ; B 3 → 7 ; C 3 → 5 ; D 5 → 9 ; E 3 → 8 ; F commence au plus tôt à max(7 ; 9) = 9 et finit à 12 ; G 8 → 10. Durée du projet = max(12 ; 10) = 12 semaines ; chemin critique A-C-D-F. Dates au plus tard : F doit commencer au plus tard à 12 − 3 = 9, donc B doit finir au plus tard à 9 et commencer au plus tard à 5. Marge totale de B = 5 − 3 = 2 semaines. La marge libre de B vaut ici aussi 2 semaines, puisque F, seul successeur de B, ne peut pas commencer avant la semaine 9. Erreur classique : raisonner sur le seul chemin A-B-F (10 semaines) en oubliant que F attend aussi D, ce qui fait croire, à tort, que B est critique."
+    },
+    {
+      "id": "ue3-pilproc-projets-0005",
+      "type": "numeric",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "pilotage-projets",
+      "difficulty": 3,
+      "tags": [
+        "valeur acquise",
+        "estimation à terminaison",
+        "CPI"
+      ],
+      "source_ref": "PMI, PMBOK, méthode de la valeur acquise ; norme ISO 21502:2020 (management de projet)",
+      "verified": true,
+      "estimated_seconds": 240,
+      "statement": "Le budget à l'achèvement (BAC) d'un projet de refonte d'un site de vente en ligne est de 480 000 €. À la fin du sixième mois, la valeur planifiée s'élève à 260 000 €, l'avancement physique est estimé à 50 % et le coût réel du travail réalisé à 300 000 €.\n\nEn supposant que la performance de coût observée jusqu'ici se maintiendra jusqu'à la fin du projet, calculez l'estimation à terminaison (EAC), en euros.",
+      "expected_value": 600000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Valeur acquise VA = 50 % × 480 000 = 240 000 €. CPI = VA ÷ CR = 240 000 ÷ 300 000 = 0,80. Si cette performance se maintient, EAC = BAC ÷ CPI = 480 000 ÷ 0,80 = 600 000 € (soit un dépassement prévisible de 120 000 €). Erreur classique : EAC = CR + (BAC − VA) = 300 000 + 240 000 = 540 000 €, formule qui suppose que le reste du projet se déroulera exactement au coût budgété, hypothèse contraire à l'énoncé. La valeur planifiée (260 000 €) sert à mesurer le retard (SPI = 240 000 ÷ 260 000 ≈ 0,92), pas l'EAC demandée."
+    },
+    {
+      "id": "ue3-pilproc-projets-0006",
+      "type": "case_study",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "pilotage-projets",
+      "difficulty": 3,
+      "tags": [
+        "valeur acquise",
+        "CPI",
+        "SPI",
+        "pilotage de projet"
+      ],
+      "source_ref": "PMI, PMBOK, méthode de la valeur acquise ; norme ISO 21502:2020 (management de projet)",
+      "verified": true,
+      "estimated_seconds": 900,
+      "title": "Plateforme logistique de Saint-Vulbas : suivi d'avancement",
+      "context": "La société Rhodalog fait construire une plateforme logistique. Le budget à l'achèvement (BAC) est de 2 000 000 €, pour une durée prévue de dix mois. Il se décompose en trois lots :\n- lot 1, terrassement et voirie : 400 000 € ;\n- lot 2, gros œuvre et charpente : 1 000 000 € ;\n- lot 3, équipements (rayonnages, quais, sécurité incendie) : 600 000 €.\n\nSelon le planning initial, à la fin du cinquième mois, le lot 1 devait être achevé, le lot 2 réalisé à 60 % et le lot 3 pas encore commencé.\n\nÀ la fin du cinquième mois, le maître d'œuvre constate les avancements physiques suivants : lot 1 achevé ; lot 2 réalisé à 45 % (intempéries et difficultés d'approvisionnement en acier) ; lot 3 réalisé à 10 % (rayonnages livrés en avance). Les coûts réels cumulés, tous lots confondus, s'élèvent à 1 040 000 €.\n\nLe directeur financier note que « les dépenses (1 040 000 €) sont proches du prévu (1 000 000 €), donc le projet est sous contrôle ».",
+      "sub_questions": [
+        {
+          "id": "q1-va",
+          "kind": "numeric",
+          "prompt": "Calculez la valeur acquise à la fin du cinquième mois, en euros.",
+          "points": 2,
+          "expected_value": 910000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "VA = Σ (avancement réel × budget du lot) = 100 % × 400 000 + 45 % × 1 000 000 + 10 % × 600 000 = 400 000 + 450 000 + 60 000 = 910 000 €. Pour mémoire, la valeur planifiée vaut 400 000 + 60 % × 1 000 000 = 1 000 000 €."
+        },
+        {
+          "id": "q2-cpi",
+          "kind": "numeric",
+          "prompt": "Calculez l'indice de performance des coûts (CPI), arrondi à trois décimales.",
+          "points": 2,
+          "expected_value": 0.875,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.005
+          },
+          "decimals": 3,
+          "explanation": "CPI = VA ÷ CR = 910 000 ÷ 1 040 000 = 0,875 : chaque euro dépensé n'a produit que 0,875 € de travail budgété. L'écart de coût vaut VA − CR = −130 000 €."
+        },
+        {
+          "id": "q3-diagnostic",
+          "kind": "mcq",
+          "prompt": "Quel diagnostic poser sur la situation du projet à la fin du cinquième mois ?",
+          "points": 2,
+          "options": [
+            "Projet en retard (SPI = 0,91) et en dépassement de coût (CPI = 0,875)",
+            "Projet sous contrôle, car les coûts réels ne dépassent le prévu que de 4 %",
+            "Projet en avance grâce au lot 3, mais en dépassement de coût",
+            "Projet en retard, mais conforme au budget pour le travail réalisé"
+          ],
+          "answer": [
+            0
+          ],
+          "explanation": "L'option 1 est exacte : SPI = VA ÷ VP = 910 000 ÷ 1 000 000 = 0,91 (écart de délai −90 000 €) et CPI = 0,875 (écart de coût −130 000 €). L'option 2 reprend l'erreur du directeur financier : comparer CR (1 040 000 €) à VP (1 000 000 €) mélange les effets coût et délai ; en réalité moins de travail que prévu a été fait, et il a coûté plus cher que son budget. L'option 3 est fausse : l'avance sur le lot 3 (+60 000 €) ne compense pas le retard du lot 2 (−150 000 €). L'option 4 est fausse : le CPI est inférieur à 1."
+        },
+        {
+          "id": "q4-eac",
+          "kind": "numeric",
+          "prompt": "En supposant que la performance de coût observée se maintienne, calculez l'estimation à terminaison (EAC), en euros, arrondie à l'euro.",
+          "points": 2,
+          "expected_value": 2285714,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.005
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "EAC = BAC ÷ CPI = 2 000 000 ÷ 0,875 ≈ 2 285 714 €, soit un dépassement prévisible d'environ 285 714 € (14,3 % du budget). Erreur classique : EAC = CR + (BAC − VA) = 1 040 000 + 1 090 000 = 2 130 000 €, qui suppose que le reste du projet sera réalisé au coût budgété."
+        },
+        {
+          "id": "q5-recommandations",
+          "kind": "open",
+          "prompt": "Répondez au directeur financier et proposez des actions de pilotage.",
+          "points": 4,
+          "model_answer": "Le jugement du directeur financier repose sur une comparaison entre dépenses réelles et budget planifié, qui ne dit rien de la quantité de travail réalisée. La méthode de la valeur acquise montre un projet à la fois en retard (SPI 0,91 : 90 000 € de travail en moins que prévu) et en dérive de coût (CPI 0,875 : 130 000 € de surcoût sur le travail fait). Si la tendance se poursuit, le coût final atteindrait environ 2,29 M€, soit près de 286 000 € de dépassement. Le retard porte sur le lot 2, qui est vraisemblablement sur le chemin critique (le gros œuvre conditionne l'installation des équipements) : il faut vérifier l'impact sur la date de mise en service. Actions : analyser l'écart de coût par lot (hausse du prix de l'acier, surcoûts liés aux intempéries), renégocier ou activer les clauses de révision de prix et de pénalités avec les entreprises, réordonnancer les tâches ou renforcer les équipes sur le lot 2, vérifier les conditions de stockage des rayonnages livrés en avance, mobiliser la provision pour aléas, et réviser le budget à terminaison présenté au comité de pilotage, avec un suivi mensuel des indicateurs CPI et SPI par lot.",
+          "key_points": [
+            "Comparer coûts réels et valeur planifiée ne permet pas de conclure : il faut la valeur acquise",
+            "Retard (SPI 0,91) et surcoût (CPI 0,875) ; EAC ≈ 2,29 M€",
+            "Analyse par lot : retard concentré sur le gros œuvre, probablement critique pour la date de fin",
+            "Actions correctrices (contrats, ressources, ordonnancement, aléas) et révision du budget à terminaison"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "La valeur acquise valorise le travail réalisé au coût budgété ; elle permet de séparer l'écart de délai (VA − VP) et l'écart de coût (VA − CR), que la comparaison directe des dépenses au budget planifié confond."
+    }
+  ]
+}
