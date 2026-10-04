@@ -1,0 +1,162 @@
+{
+  "exercises": [
+    {
+      "id": "ue5-siorg-gouv-0001",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "gouvernance-si-alignement",
+      "difficulty": 1,
+      "tags": [
+        "COBIT 2019",
+        "gouvernance",
+        "management",
+        "EDM"
+      ],
+      "statement": "Le référentiel COBIT 2019 répartit ses 40 objectifs en cinq domaines. Lequel relève de la gouvernance, et non du management du SI ?",
+      "options": [
+        "APO : aligner, planifier et organiser",
+        "EDM : évaluer, diriger et surveiller",
+        "DSS : délivrer, servir et soutenir",
+        "MEA : surveiller, évaluer et apprécier"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "COBIT 2019 sépare la gouvernance, exercée par le conseil et la direction générale, du management, confié à la direction des SI. Le seul domaine de gouvernance est EDM (évaluer, diriger, surveiller) : on y fixe les orientations, on arbitre et on contrôle l'atteinte des objectifs. L'option 1 (APO) est un domaine de management qui traduit les orientations en plans et en organisation. L'option 3 (DSS) est le domaine de management de l'exploitation et du support des services. L'option 4 (MEA) est le piège classique : bien qu'il parle de surveillance et d'évaluation, c'est un domaine de management (mesure de la performance, du contrôle interne et de la conformité), dont les résultats remontent au domaine EDM.",
+      "source_ref": "COBIT 2019 (ISACA), cadre de référence : domaine de gouvernance EDM et domaines de management APO, BAI, DSS, MEA ; ISO/IEC 38500",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue5-siorg-gouv-0002",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "gouvernance-si-alignement",
+      "difficulty": 2,
+      "tags": [
+        "ITIL 4",
+        "gestion des incidents",
+        "gestion des problèmes"
+      ],
+      "statement": "Depuis trois semaines, le module de paie d'une entreprise se bloque chaque lundi matin. À chaque fois, le centre de support redémarre le serveur et le service reprend en vingt minutes. Le DSI veut que ces interruptions cessent. Selon ITIL 4, quelle pratique faut-il mobiliser en priorité ?",
+      "options": [
+        "La gestion des incidents, en réduisant le délai de redémarrage du serveur",
+        "La gestion des niveaux de service, en renégociant l'engagement de disponibilité avec la direction des ressources humaines",
+        "La gestion des problèmes, pour identifier et traiter la cause racine des blocages répétés",
+        "La gestion des actifs informatiques, pour inventorier le serveur concerné"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Dans ITIL 4, la gestion des incidents vise à rétablir le service le plus vite possible : c'est ce que fait déjà le support en redémarrant le serveur. Quand des incidents se répètent, il faut une analyse de la cause racine et une solution durable : c'est l'objet de la gestion des problèmes, qui peut aboutir à une demande de changement. L'option 1 accélère le rétablissement mais laisse la cause intacte, les blocages continueront. L'option 2 modifie l'engagement de service au lieu de résoudre la panne : c'est contourner le problème. L'option 4 apporte une information utile (inventaire du serveur) mais ne traite pas les interruptions.",
+      "source_ref": "ITIL 4 (Axelos) : pratiques de gestion des incidents et de gestion des problèmes",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue5-siorg-gouv-0003",
+      "type": "true_false",
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "gouvernance-si-alignement",
+      "difficulty": 1,
+      "tags": [
+        "ITIL 4",
+        "COBIT",
+        "référentiels"
+      ],
+      "statement": "ITIL est avant tout un référentiel de gouvernance destiné au conseil d'administration pour fixer les orientations stratégiques du système d'information.",
+      "answer": false,
+      "justification": "Faux : ITIL est un référentiel de bonnes pratiques de gestion des services informatiques, utilisé par la DSI au quotidien ; c'est COBIT qui couvre la gouvernance.",
+      "explanation": "ITIL 4 décrit comment concevoir, fournir et améliorer les services informatiques : chaîne de valeur des services, sept principes directeurs et 34 pratiques (incidents, problèmes, changements, niveaux de service…). Il relève du management opérationnel. La gouvernance (évaluer, diriger, surveiller) est traitée par COBIT, dans son domaine EDM, et par la norme ISO/IEC 38500. Les deux référentiels sont complémentaires : COBIT dit ce qu'il faut gouverner et contrôler, ITIL comment gérer les services.",
+      "source_ref": "ITIL 4 (Axelos), système de valeur des services ; COBIT 2019 (ISACA), domaine EDM ; ISO/IEC 38500",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue5-siorg-gouv-0004",
+      "type": "case_study",
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "gouvernance-si-alignement",
+      "difficulty": 3,
+      "tags": [
+        "gouvernance du SI",
+        "disponibilité",
+        "SLA",
+        "run / build",
+        "alignement stratégique"
+      ],
+      "title": "Groupe Ardoise : diagnostic de la gouvernance du SI",
+      "context": "Le Groupe Ardoise (négoce de matériaux, 650 salariés, 14 agences) a fait de la vente en ligne aux artisans l'axe principal de son plan stratégique à trois ans. Le comité de direction se plaint pourtant d'un SI « qui ne suit pas ».\n\nÉléments recueillis :\n- l'ERP est ouvert 24 h sur 24 ; le contrat de service interne entre la DSI et les métiers prévoit une disponibilité mensuelle d'au moins 99,5 %. En novembre (30 jours), l'ERP a été indisponible au total 5 heures, en quatre interruptions ;\n- les quatre interruptions ont la même origine, une saturation de la base de données lors des traitements de nuit ; chacune a été close par un redémarrage ;\n- le budget annuel de la DSI s'élève à 2 400 000 €, dont 1 980 000 € consacrés au maintien en conditions opérationnelles de l'existant (« run ») et le reste aux projets nouveaux (« build ») ;\n- il n'existe ni schéma directeur ni comité de pilotage SI : les projets sont lancés à la demande des directeurs d'agence, sans priorisation, et le DSI n'assiste pas au comité de direction ;\n- aucun indicateur sur le SI n'est présenté à la direction générale.",
+      "sub_questions": [
+        {
+          "id": "q1-disponibilite",
+          "kind": "numeric",
+          "prompt": "Calculez le taux de disponibilité de l'ERP en novembre (en %, arrondi à deux décimales).",
+          "points": 2,
+          "expected_value": 99.31,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.01
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Temps d'ouverture = 30 × 24 = 720 h. Disponibilité = (720 − 5) ÷ 720 = 99,31 %. L'engagement de 99,5 % n'est pas tenu : il autorisait au plus 0,5 % × 720 = 3,6 h d'indisponibilité dans le mois."
+        },
+        {
+          "id": "q2-part-run",
+          "kind": "numeric",
+          "prompt": "Calculez la part du budget de la DSI consacrée au maintien de l'existant (« run ») (en %, arrondi à une décimale).",
+          "points": 2,
+          "expected_value": 82.5,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "Part du run = 1 980 000 ÷ 2 400 000 = 82,5 %. Il ne reste que 17,5 % du budget (420 000 €) pour les projets nouveaux, ce qui laisse peu de marge pour soutenir le développement de la vente en ligne."
+        },
+        {
+          "id": "q3-pratique-itil",
+          "kind": "mcq",
+          "prompt": "Les quatre interruptions ont une cause commune. Quelle pratique ITIL la DSI aurait-elle dû engager ?",
+          "points": 2,
+          "options": [
+            "La gestion des incidents",
+            "La gestion des problèmes",
+            "La gestion des actifs informatiques",
+            "La gestion des relations fournisseurs"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "Des incidents répétés de même origine appellent la gestion des problèmes : rechercher la cause racine (saturation de la base lors des traitements de nuit) et mettre en place une correction durable, via un changement. La gestion des incidents (option 1) a seulement rétabli le service par des redémarrages. Les options 3 et 4 ne traitent pas la cause des pannes."
+        },
+        {
+          "id": "q4-recommandations",
+          "kind": "open",
+          "prompt": "Rédigez un diagnostic de la gouvernance du SI du groupe et proposez des mesures pour améliorer l'alignement du SI sur la stratégie.",
+          "points": 6,
+          "model_answer": "Le diagnostic révèle un défaut d'alignement stratégique et de gouvernance. La stratégie mise sur la vente en ligne, mais le SI absorbe 82,5 % de son budget dans le maintien de l'existant et ne respecte pas son engagement de disponibilité (99,31 % contre 99,5 %), alors qu'un site marchand dépend directement de la disponibilité de l'ERP. Les projets naissent des demandes des agences, sans priorisation au regard de la stratégie ; la DSI n'est pas représentée au comité de direction et aucun indicateur ne remonte à la direction générale : la fonction d'évaluation, d'orientation et de surveillance (domaine EDM de COBIT) n'est pas exercée. Mesures proposées : élaborer un schéma directeur à trois ans aligné sur le plan stratégique ; créer un comité de pilotage SI présidé par la direction générale qui priorise et arbitre les projets selon leur valeur et leurs risques ; associer le DSI au comité de direction ; mettre en place un tableau de bord du SI (disponibilité et respect des SLA, part run / build, avancement des projets, satisfaction des utilisateurs) ; rationaliser le run (traiter les problèmes récurrents, décommissionner les applications redondantes) pour dégager des moyens de build ; s'appuyer sur COBIT pour la gouvernance et sur ITIL pour professionnaliser l'exploitation (gestion des problèmes et des niveaux de service).",
+          "key_points": [
+            "Défaut d'alignement : stratégie de vente en ligne contre budget absorbé par le run et SLA non tenu",
+            "Absence d'instance de gouvernance (pas de schéma directeur, pas de comité de pilotage, DSI hors du comité de direction)",
+            "Mesures : schéma directeur, comité de pilotage présidé par la direction générale, priorisation des projets",
+            "Tableau de bord du SI présenté à la direction (disponibilité, run / build, projets, satisfaction)",
+            "Référentiels : COBIT pour la gouvernance, ITIL pour l'exploitation (gestion des problèmes)"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Disponibilité = (720 − 5) ÷ 720 = 99,31 % < 99,5 % ; part du run = 1 980 000 ÷ 2 400 000 = 82,5 %. Les interruptions répétées de même cause relèvent de la gestion des problèmes (ITIL). Le cas illustre une gouvernance absente : sans schéma directeur, comité de pilotage ni indicateurs, le SI ne peut pas être aligné sur la stratégie. La gouvernance du SI est une responsabilité de la direction générale.",
+      "source_ref": "COBIT 2019 (ISACA), domaine EDM ; ITIL 4 (Axelos), gestion des problèmes ; modèle d'alignement stratégique de Henderson et Venkatraman (1993)",
+      "verified": true,
+      "estimated_seconds": 900
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "exercises": [
+    {
+      "id": "ue5-outils-cloud-0001",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "cloud-saas-externalisation",
+      "difficulty": 2,
+      "tags": [
+        "IaaS",
+        "PaaS",
+        "SaaS",
+        "modèles de service"
+      ],
+      "statement": "Une PME veut développer sa propre application de prise de commande, sans avoir à gérer ni serveurs, ni systèmes d'exploitation, ni bases de données et intergiciels : elle souhaite seulement écrire, déployer et faire évoluer son code. Quel modèle de service cloud correspond à ce besoin ?",
+      "options": [
+        "Le SaaS (logiciel en tant que service)",
+        "L'IaaS (infrastructure en tant que service)",
+        "Un cloud privé hébergé dans ses locaux",
+        "Le PaaS (plateforme en tant que service)"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Le PaaS fournit une plateforme de développement et d'exécution : le fournisseur gère l'infrastructure, les systèmes d'exploitation, les bases et intergiciels ; le client gère ses applications et ses données. L'option 1 (SaaS) fournit une application déjà développée par l'éditeur, ce qui ne permet pas de développer sa propre application. L'option 2 (IaaS) fournit des serveurs virtuels mais laisse au client la gestion des systèmes d'exploitation et des intergiciels, ce que la PME refuse. L'option 3 est un modèle de déploiement, non un modèle de service, et obligerait la PME à exploiter elle-même l'infrastructure.",
+      "source_ref": "NIST SP 800-145 (2011), The NIST Definition of Cloud Computing : modèles de service IaaS, PaaS, SaaS",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue5-outils-cloud-0002",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "cloud-saas-externalisation",
+      "difficulty": 1,
+      "tags": [
+        "externalisation",
+        "infogérance",
+        "réversibilité",
+        "contrat"
+      ],
+      "statement": "Dans un contrat d'infogérance ou de service cloud, quelle clause organise la restitution des données et le transfert vers un autre prestataire ou vers l'entreprise à la fin du contrat ?",
+      "options": [
+        "La clause de niveaux de service (SLA)",
+        "La clause de pénalités",
+        "La clause de réversibilité",
+        "La clause d'exclusivité"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "La clause de réversibilité prévoit, en fin de contrat, la restitution des données dans un format exploitable, la documentation et l'assistance au transfert, avec un calendrier et un prix ; sans elle, l'entreprise risque une forte dépendance au prestataire. La clause de niveaux de service (option 1) fixe les engagements de qualité (disponibilité, délais de rétablissement) pendant l'exécution du contrat. La clause de pénalités (option 2) sanctionne le non-respect de ces engagements. La clause d'exclusivité (option 4) interdit de recourir à d'autres prestataires et accroît au contraire la dépendance.",
+      "source_ref": "Programme DSCG UE 5 : externalisation et contrats de services (niveaux de service, réversibilité)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue5-outils-cloud-0003",
+      "type": "true_false",
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "cloud-saas-externalisation",
+      "difficulty": 1,
+      "tags": [
+        "SaaS",
+        "RGPD",
+        "responsable du traitement",
+        "sous-traitant"
+      ],
+      "statement": "Lorsqu'une entreprise utilise un logiciel de paie en mode SaaS, le fournisseur héberge les données des salariés, mais l'entreprise reste responsable du traitement au sens du RGPD.",
+      "answer": true,
+      "justification": "Vrai : l'entreprise détermine les finalités et les moyens du traitement de paie ; le fournisseur SaaS agit pour son compte en qualité de sous-traitant.",
+      "explanation": "Le RGPD distingue le responsable du traitement, qui détermine les finalités et les moyens du traitement (art. 4), et le sous-traitant, qui traite les données pour son compte (art. 28). Le fournisseur SaaS est sous-traitant : il doit présenter des garanties suffisantes et être lié par un contrat comportant les clauses de l'article 28. L'externalisation ne transfère donc pas la responsabilité : l'entreprise doit choisir un prestataire offrant ces garanties, encadrer contractuellement le traitement et contrôler son exécution.",
+      "source_ref": "Règlement (UE) 2016/679 (RGPD), art. 4 (définitions) et art. 28 (sous-traitant)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue5-outils-cloud-0004",
+      "type": "case_study",
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "cloud-saas-externalisation",
+      "difficulty": 3,
+      "tags": [
+        "SaaS",
+        "coût total de possession",
+        "CapEx / OpEx",
+        "réversibilité"
+      ],
+      "title": "Cabinet Orcière : logiciel de gestion sur site ou en SaaS ?",
+      "context": "Le cabinet Orcière (150 collaborateurs) doit remplacer son logiciel de gestion interne (temps passés, facturation, suivi des dossiers). Deux solutions sont comparées sur 5 ans.\n\nSolution 1, logiciel installé sur site :\n- licence perpétuelle : 120 000 € et serveurs : 40 000 €, payés en année 0 ;\n- maintenance annuelle : 22 % du prix de la licence ;\n- exploitation par l'équipe informatique interne : 0,5 équivalent temps plein, coût complet annuel d'un ETP 60 000 €.\n\nSolution 2, logiciel en SaaS :\n- abonnement : 45 € par utilisateur et par mois, pour 150 utilisateurs ;\n- migration et paramétrage initiaux : 30 000 € en année 0 ;\n- administration fonctionnelle interne : 0,2 ETP par an.\n\nLe cabinet prévoit une croissance de ses effectifs, mais le nombre d'utilisateurs n'est pas connu avec précision. Il traite des données confidentielles de ses clients. Le TCO est calculé sans actualisation.",
+      "sub_questions": [
+        {
+          "id": "q1-tco-site",
+          "kind": "numeric",
+          "prompt": "Calculez le coût total de possession (TCO) sur 5 ans de la solution sur site (en €).",
+          "points": 2,
+          "expected_value": 442000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Coûts initiaux = 120 000 + 40 000 = 160 000 €. Coûts annuels = 22 % × 120 000 + 0,5 × 60 000 = 26 400 + 30 000 = 56 400 €. TCO = 160 000 + 5 × 56 400 = 442 000 €."
+        },
+        {
+          "id": "q2-tco-saas",
+          "kind": "numeric",
+          "prompt": "Calculez le TCO sur 5 ans de la solution SaaS (en €).",
+          "points": 2,
+          "expected_value": 495000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Abonnement annuel = 45 × 150 × 12 = 81 000 €. Administration = 0,2 × 60 000 = 12 000 €. TCO = 30 000 + 5 × (81 000 + 12 000) = 30 000 + 465 000 = 495 000 €. Sur 5 ans, le SaaS coûte 53 000 € de plus que la solution sur site."
+        },
+        {
+          "id": "q3-responsabilite",
+          "kind": "mcq",
+          "prompt": "En mode SaaS, qui assure en principe l'application des correctifs de sécurité du logiciel ?",
+          "points": 1,
+          "options": [
+            "Le cabinet, par son équipe informatique",
+            "Le fournisseur SaaS",
+            "L'hébergeur des postes de travail des collaborateurs",
+            "Aucun acteur, le SaaS n'en nécessitant pas"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "En SaaS, le fournisseur exploite l'application et l'infrastructure : il applique les mises à jour et correctifs de l'application. Le client reste responsable de ses données, de la gestion des comptes et des droits de ses utilisateurs, et de ses paramétrages (modèle de responsabilité partagée)."
+        },
+        {
+          "id": "q4-decision",
+          "kind": "open",
+          "prompt": "Le SaaS étant plus cher sur 5 ans, faut-il l'écarter ? Argumentez en intégrant les critères non financiers et les précautions contractuelles.",
+          "points": 5,
+          "model_answer": "Le TCO n'est qu'un critère. Le SaaS coûte 53 000 € de plus sur 5 ans (495 000 € contre 442 000 €), mais il présente des avantages : pas d'investissement initial important (dépenses de fonctionnement plutôt que d'investissement, ce qui préserve la trésorerie), élasticité (le coût suit le nombre d'utilisateurs, alors que la solution sur site devra peut-être être redimensionnée avec la croissance), mise à jour continue du logiciel et des correctifs de sécurité, moindre dépendance à une équipe interne réduite (0,5 ETP), accès à distance, délai de mise en œuvre court. Le calcul est aussi incomplet : la solution sur site devra sans doute renouveler ses serveurs et supporter des montées de version, et une croissance des effectifs augmenterait l'abonnement du SaaS. Les risques du SaaS : confidentialité et localisation des données des clients, dépendance au fournisseur et à la connexion, évolution des tarifs, capacité limitée de personnalisation. Précautions : niveaux de service (disponibilité, délais de rétablissement) assortis de pénalités, clause de réversibilité (restitution des données dans un format exploitable), localisation des données dans l'UE et clauses de sous-traitance conformes au RGPD (art. 28), sécurité (chiffrement, certifications, droit d'audit), encadrement des hausses de prix. La décision peut retenir le SaaS si le cabinet valorise la flexibilité et la sécurité opérationnelle au-delà de l'écart de coût, ou la solution sur site s'il privilégie la maîtrise des données et le coût.",
+          "key_points": [
+            "Écart de TCO de 53 000 € en faveur du site, à relativiser (hypothèses de croissance, renouvellement des serveurs, montées de version)",
+            "Avantages du SaaS : OpEx plutôt que CapEx, élasticité, mises à jour et sécurité gérées par le fournisseur, déploiement rapide",
+            "Risques : confidentialité et localisation des données, dépendance au fournisseur, hausse des tarifs",
+            "Clauses : SLA et pénalités, réversibilité, RGPD art. 28 et localisation, sécurité et droit d'audit"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "TCO sur site = 160 000 + 5 × 56 400 = 442 000 € ; TCO SaaS = 30 000 + 5 × 93 000 = 495 000 €. Le choix d'une solution cloud combine le coût, la flexibilité, la sécurité et la maîtrise contractuelle (niveaux de service, réversibilité, protection des données).",
+      "source_ref": "NIST SP 800-145 (2011) ; RGPD art. 28 ; méthode du coût total de possession (TCO)",
+      "verified": true,
+      "estimated_seconds": 900
+    }
+  ]
+}

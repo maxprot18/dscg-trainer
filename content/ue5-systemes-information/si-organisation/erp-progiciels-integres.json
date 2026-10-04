@@ -1,0 +1,172 @@
+{
+  "exercises": [
+    {
+      "id": "ue5-siorg-erp-0001",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "erp-progiciels-integres",
+      "difficulty": 1,
+      "tags": [
+        "ERP",
+        "PGI",
+        "base de données unique"
+      ],
+      "statement": "Quelle caractéristique distingue fondamentalement un progiciel de gestion intégré (ERP) d'un ensemble d'applications de gestion ?",
+      "options": [
+        "Il est obligatoirement développé sur mesure pour l'entreprise",
+        "Il est réservé à l'analyse décisionnelle des données historiques",
+        "Ses modules partagent une base de données unique, de sorte qu'une saisie met à jour tous les modules concernés",
+        "Il relie des logiciels de différents éditeurs par des interfaces développées au cas par cas"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Un ERP est composé de modules (finance, achats, ventes, stocks, paie…) qui partagent une base de données et un référentiel uniques : une information saisie une fois (par exemple une réception de marchandises) met à jour en temps réel tous les modules concernés (stocks, comptabilité fournisseurs). L'option 1 est fausse : un ERP est un progiciel standard que l'on paramètre. L'option 2 décrit un entrepôt de données ou un outil décisionnel, alimenté notamment par l'ERP. L'option 4 décrit précisément la situation que l'ERP remplace : des applications hétérogènes reliées par des interfaces.",
+      "source_ref": "Programme DSCG UE 5 : progiciels de gestion intégrés (base de données unique, intégration des processus)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue5-siorg-erp-0002",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "erp-progiciels-integres",
+      "difficulty": 2,
+      "tags": [
+        "ERP",
+        "paramétrage",
+        "développement spécifique",
+        "intégrateur"
+      ],
+      "statement": "Lors du déploiement d'un ERP, la direction commerciale exige de conserver sa procédure actuelle de facturation, très différente du standard du progiciel. L'intégrateur propose de développer un module spécifique modifiant le code de l'ERP. Quelle recommandation est la plus pertinente ?",
+      "options": [
+        "Accepter le développement spécifique, car un ERP doit toujours s'adapter intégralement aux processus existants",
+        "Renoncer au module de facturation de l'ERP et conserver l'ancien logiciel de facturation sans interface",
+        "Retarder le démarrage de l'ERP jusqu'à ce que l'éditeur intègre la procédure dans sa version standard",
+        "Examiner d'abord si la procédure peut être alignée sur le standard ou couverte par le paramétrage, car les spécifiques alourdissent la maintenance et les montées de version"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Un ERP apporte des processus standardisés que l'on adapte par paramétrage. Le développement spécifique doit rester l'exception : il renchérit le projet, complique la maintenance et chaque montée de version (il faut retester et réadapter le code), et accroît la dépendance envers l'intégrateur. La démarche recommandée consiste à remettre en cause le processus existant et à l'aligner sur le standard, sauf si la procédure procure un avantage concurrentiel réel. L'option 1 fait perdre l'intérêt du progiciel. L'option 2 réintroduit des ressaisies et casse l'intégration des données. L'option 3 rend le projet dépendant d'une décision de l'éditeur qui n'interviendra peut-être jamais.",
+      "source_ref": "Programme DSCG UE 5 : progiciels de gestion intégrés (paramétrage, développements spécifiques, conduite du projet)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue5-siorg-erp-0003",
+      "type": "journal_entry",
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "erp-progiciels-integres",
+      "difficulty": 2,
+      "tags": [
+        "ERP",
+        "logiciel acquis",
+        "compte 205",
+        "coût d'acquisition",
+        "paramétrage"
+      ],
+      "statement": "Le 1er mars N, la société Pelvoux reçoit les factures relatives à son nouvel ERP, installé sur ses propres serveurs : licence d'utilisation perpétuelle 96 000 € HT (éditeur) et paramétrage des modules par l'intégrateur, indispensable à la mise en service, 36 000 € HT. La formation des utilisateurs, facturée séparément pour 6 000 € HT, est traitée par ailleurs et n'est pas à enregistrer ici. TVA au taux de 20 %. Enregistrez l'écriture relative à la licence et au paramétrage, en utilisant les comptes 404 et 44562.",
+      "date": "01/03/N",
+      "entries": [
+        {
+          "account": "205",
+          "label": "Concessions et droits similaires, brevets, licences, logiciels",
+          "debit": 132000,
+          "credit": 0
+        },
+        {
+          "account": "44562",
+          "label": "TVA déductible sur immobilisations",
+          "debit": 26400,
+          "credit": 0
+        },
+        {
+          "account": "404",
+          "label": "Fournisseurs d'immobilisations",
+          "debit": 0,
+          "credit": 158400
+        }
+      ],
+      "explanation": "La licence perpétuelle installée sur les serveurs de l'entreprise est un logiciel acquis contrôlé par celle-ci : elle s'inscrit au compte 205. Son coût d'acquisition comprend le prix d'achat et les coûts directement attribuables à la mise en état d'utilisation, dont le paramétrage réalisé par l'intégrateur : 96 000 + 36 000 = 132 000 € HT. La formation des utilisateurs n'est jamais incorporée au coût d'un actif : elle est comptabilisée en charges (et n'est pas demandée ici). TVA déductible sur immobilisations : 132 000 × 20 % = 26 400 € (compte 44562). Dette envers les fournisseurs d'immobilisations : 158 400 € TTC (compte 404). Le logiciel sera amorti à compter de sa mise en service.",
+      "source_ref": "PCG art. 213-8 (coût d'acquisition : prix d'achat et coûts directement attribuables) et règles relatives aux logiciels (règl. ANC 2014-03) ; comptes 205, 404, 44562",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue5-siorg-erp-0004",
+      "type": "case_study",
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "erp-progiciels-integres",
+      "difficulty": 3,
+      "tags": [
+        "ERP",
+        "coût total de possession",
+        "VAN",
+        "conduite du changement"
+      ],
+      "title": "Brévent Industries : faut-il remplacer le SI de gestion par un ERP ?",
+      "context": "Brévent Industries (fabrication de pièces mécaniques, 320 salariés) utilise six logiciels de gestion reliés par des interfaces développées au fil du temps. Les ressaisies sont nombreuses et la clôture mensuelle prend douze jours. La direction étudie le passage à un ERP installé sur ses serveurs, sur un horizon de 5 ans.\n\nCoûts initiaux (année 0) :\n- licences : 300 000 € ;\n- intégration (paramétrage, reprise des données, tests) : 250 000 € ;\n- formation des utilisateurs : 40 000 € ;\n- serveurs et matériel : 60 000 € ;\n- temps des équipes internes affectées au projet : 50 000 €.\n\nCoûts annuels (années 1 à 5) : maintenance éditeur égale à 20 % du prix des licences ; exploitation et hébergement 25 000 €.\n\nGains annuels attendus (années 1 à 5) : arrêt de la maintenance des six logiciels actuels 90 000 € ; gains de productivité (suppression des ressaisies, clôture accélérée) 180 000 €.\n\nOn raisonne avant impôt, sans valeur résiduelle, avec un taux d'actualisation de 9 %. Les flux annuels sont supposés intervenir en fin d'année.",
+      "sub_questions": [
+        {
+          "id": "q1-tco",
+          "kind": "numeric",
+          "prompt": "Calculez le coût total de possession (TCO) de l'ERP sur 5 ans, non actualisé (en €).",
+          "points": 2,
+          "expected_value": 1125000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Coûts initiaux = 300 000 + 250 000 + 40 000 + 60 000 + 50 000 = 700 000 €. Coûts annuels = 20 % × 300 000 + 25 000 = 60 000 + 25 000 = 85 000 €. TCO = 700 000 + 5 × 85 000 = 1 125 000 €."
+        },
+        {
+          "id": "q2-van",
+          "kind": "numeric",
+          "prompt": "Calculez la valeur actuelle nette (VAN) du projet au taux de 9 % (en €, arrondie à l'euro).",
+          "points": 3,
+          "expected_value": 19585,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.01
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Flux net annuel = gains − coûts annuels = 270 000 − 85 000 = 185 000 €. Facteur d'actualisation d'une annuité de 5 ans à 9 % : (1 − 1,09⁻⁵) ÷ 0,09 = 3,88965. VAN = −700 000 + 185 000 × 3,88965 = −700 000 + 719 585 = 19 585 €. La VAN est positive mais faible (moins de 3 % de l'investissement) : le projet est très sensible à une dérive des coûts d'intégration ou à un retard des gains."
+        },
+        {
+          "id": "q3-specifiques",
+          "kind": "true_false",
+          "prompt": "Pour sécuriser l'adhésion des utilisateurs, il est recommandé de reproduire dans l'ERP, par des développements spécifiques, le fonctionnement de chacun des six logiciels actuels.",
+          "points": 1,
+          "answer": false,
+          "explanation": "Faux : multiplier les spécifiques renchérit le projet et la maintenance, complique les montées de version et fait perdre l'intérêt du progiciel. On aligne les processus sur le standard et on recourt au paramétrage ; l'adhésion se gagne par la conduite du changement."
+        },
+        {
+          "id": "q4-risques",
+          "kind": "open",
+          "prompt": "Au-delà de la VAN, présentez les principaux risques du projet et les conditions de sa réussite.",
+          "points": 4,
+          "model_answer": "La VAN de 19 585 € est positive mais très faible au regard d'un investissement de 700 000 € : un dépassement des coûts initiaux d'environ 20 000 € (moins de 3 % de l'investissement, soit 8 % des coûts d'intégration) ou un retard d'un an dans les gains suffirait à la rendre négative. Les gains de productivité (180 000 € par an) sont les plus incertains, car ils supposent que l'organisation change réellement (suppression des ressaisies, nouvelle organisation de la clôture). Risques : dérive des coûts et des délais d'intégration, qualité de la reprise des données, résistance des utilisateurs, multiplication des spécifiques, dépendance envers l'éditeur et l'intégrateur, perturbation de l'activité au démarrage. Conditions de réussite : implication de la direction générale et d'un comité de pilotage, cahier des charges précis, choix rigoureux de l'éditeur et de l'intégrateur, alignement des processus sur le standard, conduite du changement (communication, formation, utilisateurs clés), tests et reprise de données soignés, démarrage planifié hors période de clôture, suivi des gains après la mise en service. Une analyse de sensibilité et des gains qualitatifs (fiabilité des données, traçabilité, pilotage en temps réel) complètent la décision.",
+          "key_points": [
+            "VAN positive mais faible, très sensible aux hypothèses (coûts d'intégration, gains de productivité)",
+            "Risques : dérive du projet, reprise des données, résistance au changement, spécifiques, dépendance éditeur",
+            "Conditions : sponsor de la direction, comité de pilotage, alignement sur le standard, conduite du changement et formation",
+            "Gains qualitatifs à prendre en compte : intégration et fiabilité des données, clôture accélérée, traçabilité"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "TCO sur 5 ans = 700 000 + 5 × 85 000 = 1 125 000 € ; VAN = −700 000 + 185 000 × 3,88965 = 19 585 €. Le projet est rentable de justesse ; sa réussite dépend moins de la technique que de l'alignement des processus sur le standard et de la conduite du changement.",
+      "source_ref": "Programme DSCG UE 5 : progiciels de gestion intégrés (coût total de possession, conduite de projet) ; VAN = −I₀ + Σ FNTₜ (1 + k)⁻ᵗ",
+      "verified": true,
+      "estimated_seconds": 900
+    }
+  ]
+}
