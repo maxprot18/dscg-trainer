@@ -1,0 +1,185 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-durab-proc-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "audit-durabilite",
+      "notion": "procedures-audit-durabilite",
+      "difficulty": 2,
+      "tags": [
+        "assurance limitée",
+        "procédures",
+        "nature des travaux"
+      ],
+      "statement": "Dans une mission d'assurance limitée sur l'état de durabilité, quelles procédures constituent l'essentiel des travaux du professionnel ?",
+      "options": [
+        "Des tests de procédures sur tous les contrôles internes de reporting, obligatoires quel que soit le risque",
+        "Des demandes de confirmation adressées systématiquement aux fournisseurs de la chaîne de valeur",
+        "Des entretiens et des procédures analytiques, complétés de tests limités selon les risques identifiés",
+        "Des contrôles de détail exhaustifs de chaque donnée publiée"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'option 3 est exacte : en assurance limitée, les travaux reposent principalement sur des entretiens et des procédures analytiques, complétés de tests de détail limités ciblés sur les risques ; les travaux sont moins étendus qu'en assurance raisonnable. L'option 1 est fausse : les tests de contrôles ne sont pas imposés de manière systématique ; leur mise en œuvre dépend de la stratégie retenue. L'option 2 est fausse : des confirmations externes peuvent être utiles ponctuellement, mais ne sont pas systématiques. L'option 4 est fausse : aucune mission d'assurance n'implique un contrôle exhaustif.",
+      "source_ref": "Ordonnance n° 2023-1142 (mission d'assurance limitée) ; norme internationale ISSA 5000 (IAASB) : procédures en assurance limitée",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-durab-proc-0002",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "audit-durabilite",
+      "notion": "procedures-audit-durabilite",
+      "difficulty": 2,
+      "tags": [
+        "informations prospectives",
+        "plan de transition",
+        "objectifs"
+      ],
+      "statement": "Lorsque l'état de durabilité publie un objectif de réduction de 40 % des émissions de GES d'ici 2030, l'auditeur de durabilité se prononce sur la probabilité que cet objectif soit atteint.",
+      "answer": false,
+      "justification": "Faux : l'auditeur vérifie la cohérence de l'objectif avec la stratégie et les autres informations, ainsi que la présentation et le caractère raisonnable des hypothèses ; il ne se prononce pas sur sa réalisation.",
+      "explanation": "Les informations prospectives (objectifs, plans de transition, effets financiers attendus) sont incertaines par nature. Les travaux portent sur le processus d'établissement, la cohérence avec le plan d'actions, les budgets et les investissements annoncés (par exemple les CapEx de la taxonomie), l'année de référence et la méthode de calcul, et la mention des hypothèses retenues. Le rapport peut rappeler que les résultats réels peuvent différer des objectifs.",
+      "source_ref": "Ordonnance n° 2023-1142 ; norme internationale ISSA 5000 (IAASB) : informations prospectives ; règlement délégué (UE) 2023/2772, ESRS E1-1 et E1-4",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-durab-proc-0003",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "audit-durabilite",
+      "notion": "procedures-audit-durabilite",
+      "difficulty": 2,
+      "tags": [
+        "GES",
+        "anomalies",
+        "scope 1",
+        "calcul"
+      ],
+      "statement": "L'auditeur de durabilité de la société Torvane vérifie les émissions de scope 1 publiées : 28 400 tCO₂e. Ses travaux révèlent :\n- un site omis dans la collecte, qui a consommé 2 100 MWh de gaz naturel ; facteur d'émission retenu par la société : 0,205 tCO₂e par MWh ;\n- les camions d'une filiale ont été comptés deux fois, pour 260 tCO₂e.\n\nCalculez le montant corrigé des émissions de scope 1 (en tCO₂e, arrondi à la tonne).",
+      "expected_value": 28571,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "tCO₂e",
+      "decimals": 0,
+      "explanation": "Site omis : 2 100 × 0,205 = 430,5 tCO₂e à ajouter (sous-évaluation). Double comptage : 260 tCO₂e à retrancher (surévaluation). Scope 1 corrigé = 28 400 + 430,5 − 260 = 28 570,5, soit 28 571 tCO₂e à la tonne (l'arrondi 28 570 est également accepté). Erreurs classiques : additionner les deux anomalies (29 090,5) ou inverser leurs sens (28 229,5). L'anomalie nette (170,5 tCO₂e, soit 0,6 % du montant publié) s'apprécie au regard du seuil de signification ; les anomalies brutes et leur nature (défaut de périmètre) restent à examiner.",
+      "source_ref": "Règlement délégué (UE) 2023/2772, ESRS E1-6 (émissions brutes de scope 1) ; ordonnance n° 2023-1142 (mission d'assurance limitée)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue4-durab-proc-0004",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "audit-durabilite",
+      "notion": "procedures-audit-durabilite",
+      "difficulty": 3,
+      "tags": [
+        "connectivité",
+        "provision environnementale",
+        "remise en état",
+        "PCG"
+      ],
+      "statement": "En lisant le projet d'état de durabilité de la société Ferval (clôture au 31/12/N), l'auditeur de durabilité relève la mention suivante : « Un arrêté préfectoral notifié en novembre N impose la dépollution des sols du site de Montluel, estimée à 480 000 €. Le groupe envisage en outre, de sa propre initiative et sans aucun engagement pris envers des tiers à la clôture, d'aménager une zone de biodiversité sur ce site pour 90 000 €. » Dans les comptes, une provision de 150 000 € a été constituée en N−1 au titre de la pollution de ce site, dans l'attente de l'arrêté ; rien n'a été comptabilisé en N.\n\nL'auditeur des comptes en est informé et la société décide d'ajuster ses comptes. Passez l'écriture d'inventaire au 31/12/N. Utilisez le compte 1581 « Provisions pour remise en état ».",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "6815",
+          "label": "Dotation aux provisions d'exploitation (480 000 − 150 000)",
+          "debit": 330000,
+          "credit": 0
+        },
+        {
+          "account": "1581",
+          "label": "Provisions pour remise en état — site de Montluel",
+          "debit": 0,
+          "credit": 330000
+        }
+      ],
+      "explanation": "L'arrêté préfectoral notifié avant la clôture crée une obligation à l'égard d'un tiers, dont il est probable qu'elle provoquera une sortie de ressources sans contrepartie : une provision de 480 000 € est requise. La provision existante (150 000 €) est complétée par une dotation de 330 000 €. L'aménagement de la zone de biodiversité (90 000 €) relève d'une décision volontaire de gestion, sans obligation légale ni implicite à la clôture (aucun engagement envers des tiers) : aucune provision. Erreurs classiques : doter 480 000 € sans tenir compte de la provision existante ; inclure les 90 000 € (dotation de 420 000 €). Cet exemple illustre la connectivité entre l'état de durabilité et les comptes : une obligation environnementale décrite dans le reporting de durabilité doit être cohérente avec les passifs comptabilisés.",
+      "source_ref": "PCG art. 321-1 et suivants, règles relatives aux passifs (règl. ANC 2014-03) ; comptes 1581 et 6815 ; règlement délégué (UE) 2023/2772, ESRS 1 (connectivité avec les états financiers)",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue4-durab-proc-0005",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "audit-durabilite",
+      "notion": "procedures-audit-durabilite",
+      "difficulty": 3,
+      "tags": [
+        "assurance limitée",
+        "ESRS S1",
+        "taux de fréquence",
+        "périmètre",
+        "cas pratique"
+      ],
+      "title": "Mirabel Industries : vérification d'un indicateur social",
+      "context": "Le cabinet Aubrac Audit, commissaire aux comptes inscrit pour la certification des informations en matière de durabilité, intervient chez Mirabel Industries, groupe industriel de 1 900 salariés répartis sur quatre sites.\n\nLe projet d'état de durabilité présente, au titre d'ESRS S1, un taux de fréquence des accidents du travail de 11,9 (31 accidents enregistrés pour 2 600 000 heures travaillées, rapportés à un million d'heures). Le taux de N−1 publié était de 12,8.\n\nLors de l'entretien avec la responsable santé-sécurité, l'auditeur apprend que le site de Dole, contrôlé par le groupe et intégré aux comptes consolidés, n'a pas transmis ses données à temps. Les registres du site, consultés par l'auditeur, font état de 6 accidents enregistrés et de 360 000 heures travaillées sur l'exercice.\n\nLa direction souhaite publier le taux sans le site de Dole, en indiquant que « la baisse traduit l'efficacité du plan sécurité ».",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Quelle procédure a permis à l'auditeur de détecter le défaut de périmètre, et laquelle confirme les données du site de Dole ?",
+          "options": [
+            "Une confirmation externe auprès de la caisse d'assurance retraite, puis une procédure analytique",
+            "Un entretien avec la responsable santé-sécurité, puis l'inspection des registres du site",
+            "Un test de contrôle sur le logiciel de paie, puis une observation physique",
+            "Une procédure analytique sur les taux N−1, puis un recalcul des heures par sondage sur la paie"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Selon l'énoncé, l'information provient d'un entretien et elle est corroborée par la consultation des registres du site (inspection). Les autres combinaisons ne correspondent pas aux faits décrits, même si une procédure analytique sur la baisse du taux aurait aussi pu alerter l'auditeur."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Recalculez le taux de fréquence du groupe en intégrant le site de Dole (accidents par million d'heures travaillées, arrondi à une décimale).",
+          "expected_value": 12.5,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "accidents par million d'heures",
+          "decimals": 1,
+          "explanation": "Accidents : 31 + 6 = 37. Heures : 2 600 000 + 360 000 = 2 960 000. Taux = 37 × 1 000 000 ÷ 2 960 000 = 12,5. Le taux publié par la direction (11,9) est sous-évalué ; le taux du seul site de Dole est de 16,7."
+        },
+        {
+          "id": "q3",
+          "kind": "true_false",
+          "points": 2,
+          "prompt": "Parce que la mission est d'assurance limitée, l'auditeur peut se contenter de mentionner l'omission du site de Dole dans ses documents de travail, sans demander de correction.",
+          "answer": false,
+          "explanation": "Faux : l'assurance limitée réduit l'étendue des travaux, pas les conséquences d'une anomalie relevée. L'auditeur communique l'anomalie à la direction, demande sa correction et en apprécie l'incidence sur sa conclusion si elle n'est pas corrigée."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "points": 3,
+          "prompt": "Indiquez la démarche de l'auditeur face au refus éventuel de la direction de corriger l'indicateur, et l'incidence possible sur son rapport.",
+          "model_answer": "L'auditeur communique l'anomalie à la direction (et, le cas échéant, au comité d'audit, qui suit le processus d'élaboration des informations de durabilité) et demande la correction du taux et de l'affirmation sur la baisse. Le taux corrigé (12,5) traduit en effet une baisse limitée par rapport à 12,8, que le commentaire de la direction exagère. Si la direction refuse, l'auditeur apprécie le caractère significatif de l'anomalie non corrigée, par son montant (écart de 0,6 point sur un indicateur clé, tendance faussée) et par sa nature (défaut de périmètre, commentaire trompeur, indicateur sensible pour les parties prenantes). S'il la juge significative, il formule une conclusion avec réserve, voire défavorable si l'incidence est généralisée, en motivant sa position dans son rapport.",
+          "key_points": [
+            "Communication à la direction et au comité d'audit ; demande de correction du taux et du commentaire",
+            "Appréciation du caractère significatif quantitatif et qualitatif (tendance, périmètre, sensibilité)",
+            "Conclusion modifiée (réserve, voire conclusion défavorable) si l'anomalie significative n'est pas corrigée"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas illustre une anomalie de périmètre sur un indicateur social d'ESRS S1, détectée par entretien et corroborée par inspection, le recalcul du taux de fréquence et le traitement d'une anomalie en assurance limitée : la nature des travaux est allégée, mais une anomalie significative non corrigée conduit à modifier la conclusion.",
+      "source_ref": "Ordonnance n° 2023-1142 (mission d'assurance limitée, rapport) ; règlement délégué (UE) 2023/2772, ESRS S1-14 (indicateurs de santé et de sécurité)",
+      "verified": true,
+      "estimated_seconds": 720
+    }
+  ]
+}

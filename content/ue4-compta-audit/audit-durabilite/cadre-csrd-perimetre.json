@@ -1,0 +1,153 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-durab-csrd-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "audit-durabilite",
+      "notion": "cadre-csrd-perimetre",
+      "difficulty": 1,
+      "tags": [
+        "CSRD",
+        "état de durabilité",
+        "rapport de gestion"
+      ],
+      "statement": "Une société anonyme entre dans le champ de la directive CSRD. Où doit-elle présenter son état de durabilité ?",
+      "options": [
+        "Dans l'annexe des comptes annuels, à la suite des engagements hors bilan",
+        "Dans un document séparé, publié uniquement sur le site internet de la société",
+        "Dans une section distincte du rapport de gestion",
+        "Dans le rapport sur le gouvernement d'entreprise"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'option 3 est exacte : la CSRD, transposée par l'ordonnance n° 2023-1142, prévoit que l'état de durabilité constitue une section distincte du rapport de gestion (ou du rapport de gestion du groupe pour les comptes consolidés). L'option 1 est fausse : l'annexe relève des états financiers et de la certification des comptes, pas du reporting de durabilité. L'option 2 est fausse : une simple publication sur le site internet ne remplit pas l'obligation ; la CSRD rattache l'information au rapport de gestion, publié et déposé avec les comptes. L'option 4 est fausse : le rapport sur le gouvernement d'entreprise traite de la composition des organes, des rémunérations des mandataires et des conventions, pas de l'état de durabilité.",
+      "source_ref": "Directive (UE) 2022/2464, art. 1 (art. 19 bis et 29 bis de la directive 2013/34/UE) ; ordonnance n° 2023-1142 ; C. com. art. L. 232-6-3",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-durab-csrd-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "audit-durabilite",
+      "notion": "cadre-csrd-perimetre",
+      "difficulty": 1,
+      "tags": [
+        "CSRD",
+        "NFRD",
+        "DPEF",
+        "textes européens"
+      ],
+      "statement": "Quel texte européen a remplacé la directive NFRD (2014/95/UE), dont la transposition française était la déclaration de performance extra-financière (DPEF) ?",
+      "options": [
+        "Le règlement (UE) 2020/852 sur la taxonomie",
+        "La directive (UE) 2022/2464, dite CSRD",
+        "Le règlement délégué (UE) 2023/2772 adoptant les normes ESRS",
+        "Le règlement (UE) 2019/2088, dit SFDR"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'option 2 est exacte : la directive CSRD (2022/2464) modifie la directive comptable 2013/34/UE et remplace le régime NFRD ; en France, l'état de durabilité succède à la DPEF. L'option 1 est fausse : le règlement taxonomie classe les activités durables et impose des indicateurs (article 8), mais ne fixe pas l'ensemble du reporting. L'option 3 est fausse : le règlement délégué 2023/2772 adopte les normes ESRS, c'est-à-dire le contenu détaillé du reporting prévu par la CSRD ; c'est un texte d'application, pas le texte qui remplace la NFRD. L'option 4 est fausse : le règlement SFDR concerne la publication d'informations par les acteurs des marchés financiers (sociétés de gestion, assureurs…) sur leurs produits.",
+      "source_ref": "Directive (UE) 2022/2464 du 14 décembre 2022 (CSRD), modifiant notamment la directive 2013/34/UE",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-durab-csrd-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "audit-durabilite",
+      "notion": "cadre-csrd-perimetre",
+      "difficulty": 2,
+      "tags": [
+        "CSRD",
+        "exemption",
+        "filiale",
+        "groupe"
+      ],
+      "statement": "La société F, filiale française non cotée et contrôlée par une société mère européenne, entre dans le champ de la CSRD. Dans quel cas peut-elle être exemptée de publier son propre état de durabilité ?",
+      "options": [
+        "Dès lors que sa société mère est cotée, quel que soit le contenu du rapport de la mère",
+        "Jamais : toute entreprise entrant dans le champ doit publier son propre état de durabilité",
+        "Uniquement si elle emploie moins de 500 salariés, quelle que soit la situation de sa mère",
+        "Si elle est incluse dans le rapport consolidé de durabilité de sa mère, établi selon les ESRS ou un référentiel équivalent, et que son rapport de gestion le mentionne"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'option 4 est exacte : la CSRD prévoit une exemption de la filiale incluse dans le rapport consolidé de durabilité de sa mère, établi conformément aux ESRS (ou à un référentiel jugé équivalent pour une mère hors Union), sous réserve notamment que le rapport de gestion de la filiale mentionne l'entité qui publie le rapport consolidé et le moyen d'y accéder. Cette exemption est fermée aux grandes entreprises dont les titres sont admis sur un marché réglementé de l'Union, ce qui n'est pas le cas de F. L'option 1 est fausse : la cotation de la mère n'emporte pas exemption ; c'est l'inclusion dans un rapport consolidé conforme qui compte. L'option 2 est fausse : l'exemption existe précisément pour éviter les doublons dans les groupes. L'option 3 est fausse : aucun critère d'effectif propre ne commande l'exemption de la filiale.",
+      "source_ref": "Directive (UE) 2022/2464, art. 1 (art. 19 bis, § 9, et 29 bis, § 8, de la directive 2013/34/UE) ; ordonnance n° 2023-1142",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-durab-csrd-0004",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "audit-durabilite",
+      "notion": "cadre-csrd-perimetre",
+      "difficulty": 2,
+      "tags": [
+        "CSRD",
+        "état de durabilité",
+        "contenu"
+      ],
+      "statement": "Parmi les informations suivantes, laquelle ne relève PAS de l'état de durabilité prévu par la CSRD ?",
+      "options": [
+        "La description du modèle d'affaires et de la stratégie au regard des questions de durabilité",
+        "Le tableau détaillé des rémunérations individuelles versées à chaque mandataire social au titre de l'exercice",
+        "Le rôle des organes d'administration, de direction et de surveillance en matière de durabilité",
+        "La part du chiffre d'affaires associée à des activités alignées sur la taxonomie européenne"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'option 2 est la bonne réponse : le détail des rémunérations individuelles des mandataires sociaux figure dans le rapport sur le gouvernement d'entreprise des sociétés cotées ; l'état de durabilité peut évoquer l'intégration de critères de durabilité dans les mécanismes d'incitation, mais pas reprendre ce tableau. L'option 1 est une information requise (modèle d'affaires et stratégie, résilience, prise en compte des parties prenantes). L'option 3 est requise : la CSRD et ESRS 2 imposent de décrire le rôle et l'expertise des organes en matière de durabilité. L'option 4 est requise : l'article 8 du règlement (UE) 2020/852 impose la publication des indicateurs de la taxonomie dans l'état de durabilité.",
+      "source_ref": "Directive (UE) 2022/2464, art. 1 (art. 19 bis, § 2, de la directive 2013/34/UE) ; règlement (UE) 2020/852, art. 8 ; règlement délégué (UE) 2023/2772, ESRS 2",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-durab-csrd-0005",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "audit-durabilite",
+      "notion": "cadre-csrd-perimetre",
+      "difficulty": 1,
+      "tags": [
+        "CSRD",
+        "ESRS",
+        "actes délégués"
+      ],
+      "statement": "L'état de durabilité est établi selon les normes européennes d'information en matière de durabilité (ESRS), adoptées par la Commission européenne par voie d'actes délégués.",
+      "answer": true,
+      "justification": "Vrai : la CSRD habilite la Commission à adopter les ESRS par actes délégués ; le premier jeu a été adopté par le règlement délégué (UE) 2023/2772.",
+      "explanation": "Les ESRS sont élaborées sur avis technique de l'EFRAG puis adoptées par la Commission. Le règlement délégué 2023/2772 comprend deux normes transversales (ESRS 1 et ESRS 2) et dix normes thématiques (environnement, social, gouvernance). Ce règlement étant d'application directe, il n'a pas besoin d'être transposé ; la CSRD, elle, est une directive transposée en France par l'ordonnance n° 2023-1142. Des révisions de simplification des ESRS ont été engagées en 2025 : elles prennent elles aussi la forme d'actes délégués.",
+      "source_ref": "Directive (UE) 2022/2464, art. 1 (art. 29 ter de la directive 2013/34/UE) ; règlement délégué (UE) 2023/2772 du 31 juillet 2023",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue4-durab-csrd-0006",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "audit-durabilite",
+      "notion": "cadre-csrd-perimetre",
+      "difficulty": 1,
+      "tags": [
+        "CSRD",
+        "état de durabilité",
+        "contenu"
+      ],
+      "front": "CSRD : que doit permettre de comprendre l'état de durabilité, et quels grands éléments décrit-il ?",
+      "back": "Il permet de comprendre les impacts de l'entreprise sur les questions de durabilité ET la manière dont ces questions affectent son évolution, ses résultats et sa situation (double matérialité).\nIl décrit notamment : le modèle d'affaires et la stratégie ; les objectifs et les progrès réalisés ; le rôle des organes d'administration, de direction et de surveillance ; les politiques et la diligence raisonnable ; les principaux impacts, risques et opportunités, y compris dans la chaîne de valeur ; les indicateurs de la taxonomie (article 8 du règlement 2020/852).",
+      "explanation": "L'état de durabilité est une section distincte du rapport de gestion, établie selon les ESRS et certifiée par un commissaire aux comptes inscrit pour cette activité ou un organisme tiers indépendant accrédité.",
+      "source_ref": "Directive (UE) 2022/2464, art. 1 (art. 19 bis, § 1 et 2, de la directive 2013/34/UE) ; C. com. art. L. 232-6-3",
+      "verified": true,
+      "estimated_seconds": 45
+    }
+  ]
+}
