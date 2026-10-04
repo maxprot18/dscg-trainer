@@ -1,0 +1,249 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-eval-gordon-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "evaluation-dividendes-gordon",
+      "difficulty": 3,
+      "tags": [
+        "Gordon-Shapiro",
+        "taux de croissance soutenable",
+        "ROE"
+      ],
+      "source_ref": "Gordon-Shapiro : P₀ = D₁ / (k − g), g = (1 − d) × ROE",
+      "estimated_seconds": 120,
+      "statement": "Une société prévoit un bénéfice par action de 5 € pour l’année prochaine. Elle distribue durablement 40 % de son bénéfice et la rentabilité de ses capitaux propres (ROE) est stable à 12,5 %. Les actionnaires exigent une rentabilité de 10 %. Selon le modèle de Gordon-Shapiro, avec une croissance des dividendes égale au taux de croissance soutenable, quelle est la valeur de l’action ?",
+      "options": [
+        "200 €",
+        "40 €",
+        "80 €",
+        "20 €"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Dividende D₁ = 40 % × 5 = 2 €. Taux de croissance soutenable g = taux de rétention × ROE = 60 % × 12,5 % = 7,5 %. P₀ = 2 / (10 % − 7,5 %) = 2 / 0,025 = 80 € (option 3). L’option 1 actualise le bénéfice (5 / 0,025) au lieu du dividende ; l’option 2 calcule g avec le taux de distribution (40 % × 12,5 % = 5 %) au lieu du taux de rétention ; l’option 4 ignore la croissance (2 / 0,10)."
+    },
+    {
+      "id": "ue2-eval-gordon-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "evaluation-dividendes-gordon",
+      "difficulty": 2,
+      "tags": [
+        "rentabilité implicite",
+        "Gordon-Shapiro"
+      ],
+      "source_ref": "Gordon-Shapiro : k = D₁ / P₀ + g, avec D₁ = D₀ × (1 + g)",
+      "estimated_seconds": 90,
+      "statement": "Une action cote 62,50 €. La société vient de verser un dividende de 2,40 € par action, et le marché anticipe une croissance des dividendes de 4 % par an à l’infini. Quel est le taux de rentabilité exigé par les actionnaires implicite dans ce cours ?",
+      "options": [
+        "7,84 %",
+        "7,99 %",
+        "3,99 %",
+        "4,00 %"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le prochain dividende vaut D₁ = 2,40 × 1,04 = 2,496 €. k = D₁ / P₀ + g = 2,496 / 62,50 + 4 % = 3,99 % + 4 % ≈ 7,99 % (option 2). L’option 1 utilise le dernier dividende versé D₀ au lieu de D₁ (3,84 % + 4 %) ; l’option 3 oublie la croissance ; l’option 4 se limite au taux de croissance."
+    },
+    {
+      "id": "ue2-eval-gordon-0003",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "evaluation-dividendes-gordon",
+      "difficulty": 2,
+      "tags": [
+        "Gordon-Shapiro",
+        "valeur de l’action"
+      ],
+      "source_ref": "Gordon-Shapiro : P₀ = D₀ × (1 + g) / (k − g)",
+      "estimated_seconds": 150,
+      "statement": "La société Ferlane vient de verser un dividende de 3,00 € par action. Ses dividendes devraient croître de 2,5 % par an à l’infini et le coût de ses capitaux propres est de 8,5 %. Calculez la valeur d’une action Ferlane selon le modèle de Gordon-Shapiro, en euros (deux décimales).",
+      "expected_value": 51.25,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "unit": "€",
+      "decimals": 2,
+      "explanation": "D₁ = 3,00 × 1,025 = 3,075 €. P₀ = 3,075 / (0,085 − 0,025) = 3,075 / 0,06 = 51,25 €. Erreur classique : actualiser le dernier dividende versé, 3,00 / 0,06 = 50,00 €, résultat hors tolérance."
+    },
+    {
+      "id": "ue2-eval-gordon-0004",
+      "type": "journal_entry",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "evaluation-dividendes-gordon",
+      "difficulty": 1,
+      "tags": [
+        "titres de participation",
+        "frais d’acquisition en charges"
+      ],
+      "source_ref": "PCG, coût d’entrée des titres et option de comptabilisation des frais d’acquisition en charges (règl. ANC 2014-03) ; comptes 261, 6226, 44566, 512",
+      "estimated_seconds": 180,
+      "statement": "Le 15 mai N, la société Corvin acquiert 12 000 actions de la société Ferlane au prix unitaire de 48 €, valeur issue d’une évaluation par actualisation des dividendes. Les titres sont classés en titres de participation (compte 261). Corvin règle aussi des honoraires de conseil de 4 000 € HT (TVA 20 %, récupérable), qu’elle comptabilise en charges (compte 6226). Tout est payé par banque. Passez l’écriture d’acquisition chez Corvin.",
+      "date": "15/05/N",
+      "entries": [
+        {
+          "account": "261",
+          "label": "Titres de participation",
+          "debit": 576000,
+          "credit": 0
+        },
+        {
+          "account": "6226",
+          "label": "Honoraires",
+          "debit": 4000,
+          "credit": 0
+        },
+        {
+          "account": "44566",
+          "label": "TVA déductible sur autres biens et services",
+          "debit": 800,
+          "credit": 0
+        },
+        {
+          "account": "512",
+          "label": "Banque",
+          "debit": 0,
+          "credit": 580800
+        }
+      ],
+      "explanation": "Titres : 12 000 × 48 = 576 000 €, inscrits au 261 pour leur prix d’achat, les frais étant comptabilisés en charges selon l’option retenue. Honoraires : 4 000 € au 6226 ; TVA récupérable : 800 € au 44566. Décaissement = 576 000 + 4 000 + 800 = 580 800 €."
+    },
+    {
+      "id": "ue2-eval-gordon-0005",
+      "type": "journal_entry",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "evaluation-dividendes-gordon",
+      "difficulty": 2,
+      "tags": [
+        "cession de titres",
+        "produits de cession",
+        "valeur comptable"
+      ],
+      "source_ref": "PCG, comptes 775 (produits des cessions d’éléments d’actif), 675 (valeurs comptables des éléments d’actif cédés), 261, 512",
+      "estimated_seconds": 180,
+      "statement": "La société Corvin détient 12 000 actions Ferlane, inscrites en titres de participation (compte 261) pour 48 € l’unité, sans dépréciation. Le 30 septembre N+2, elle cède 5 000 de ces actions au prix unitaire de 61 €, déterminé par actualisation des dividendes, encaissé par banque. Frais de cession ignorés. Passez l’écriture (une seule écriture) constatant la cession et la sortie des titres cédés.",
+      "date": "30/09/N+2",
+      "entries": [
+        {
+          "account": "512",
+          "label": "Banque",
+          "debit": 305000,
+          "credit": 0
+        },
+        {
+          "account": "775",
+          "label": "Produits des cessions d’éléments d’actif",
+          "debit": 0,
+          "credit": 305000
+        },
+        {
+          "account": "675",
+          "label": "Valeurs comptables des éléments d’actif cédés",
+          "debit": 240000,
+          "credit": 0
+        },
+        {
+          "account": "261",
+          "label": "Titres de participation",
+          "debit": 0,
+          "credit": 240000
+        }
+      ],
+      "explanation": "Prix de cession : 5 000 × 61 = 305 000 € (512 au débit, 775 au crédit). Sortie des titres pour leur valeur comptable : 5 000 × 48 = 240 000 € (675 au débit, 261 au crédit). La plus-value de cession, 305 000 − 240 000 = 65 000 €, apparaît par différence entre 775 et 675 dans le résultat exceptionnel. Les 7 000 actions restantes demeurent au bilan pour 336 000 €."
+    },
+    {
+      "id": "ue2-eval-gordon-0006",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "evaluation-dividendes-gordon",
+      "difficulty": 3,
+      "tags": [
+        "Bates",
+        "PER de sortie",
+        "croissance temporaire"
+      ],
+      "source_ref": "Modèle de Bates : P₀ = Σ Dₜ (1 + k)⁻ᵗ + PERₙ × BPAₙ (1 + k)⁻ⁿ ; Gordon-Shapiro (condition g < k)",
+      "estimated_seconds": 900,
+      "title": "Valeur de l’action Arvel en phase de forte croissance",
+      "context": "La société Arvel, spécialisée dans les capteurs connectés, connaît une forte croissance. Son bénéfice par action (BPA) de N vient d’être publié : 4,00 €. Les analystes anticipent une croissance du BPA de 12 % par an pendant les cinq prochaines années (BPA de N+t = 4 × 1,12ᵗ). Arvel distribue chaque année 30 % de son bénéfice ; les dividendes sont versés en fin d’année.\nÀ la fin de N+5, on estime que l’action pourra être revendue sur la base d’un PER de 11 appliqué au BPA de N+5.\nLe coût des capitaux propres d’Arvel est de 10 %. L’évaluation est faite au 31/12/N. Montants en euros par action, deux décimales.",
+      "sub_questions": [
+        {
+          "id": "va-dividendes",
+          "kind": "numeric",
+          "prompt": "Calculez la valeur actuelle au 31/12/N des dividendes versés de N+1 à N+5, en euros par action.",
+          "points": 5,
+          "expected_value": 6.34,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.01
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "Dₜ = 0,3 × 4 × 1,12ᵗ = 1,2 × 1,12ᵗ : 1,344 ; 1,505 ; 1,686 ; 1,888 ; 2,115 €. Valeurs actuelles à 10 % : 1,222 + 1,244 + 1,267 + 1,290 + 1,313 ≈ 6,34 €."
+        },
+        {
+          "id": "valeur-action",
+          "kind": "numeric",
+          "prompt": "Calculez la valeur de l’action Arvel au 31/12/N selon le modèle de Bates, en euros.",
+          "points": 6,
+          "expected_value": 54.48,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.01
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "BPA de N+5 = 4 × 1,12⁵ = 7,049 €. Prix de revente = 11 × 7,049 = 77,54 € ; valeur actuelle : 77,54 / 1,1⁵ = 48,15 €. P₀ = 6,34 + 48,15 ≈ 54,48 €."
+        },
+        {
+          "id": "gordon-inapplicable",
+          "kind": "mcq",
+          "prompt": "Pourquoi ne peut-on pas évaluer Arvel par le modèle de Gordon-Shapiro avec un taux de croissance de 12 % ?",
+          "points": 3,
+          "options": [
+            "Parce que le modèle de Gordon-Shapiro ne s’applique qu’aux sociétés non cotées",
+            "Parce que le taux de distribution est inférieur à 50 %",
+            "Parce que le taux de croissance retenu dépasse le coût des capitaux propres, ce qui rend la formule D₁ / (k − g) sans signification",
+            "Parce que le BPA de N est déjà connu"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "La formule D₁ / (k − g) n’a de sens que si g < k ; avec g = 12 % > k = 10 %, la série des dividendes actualisés diverge et la formule donne une valeur négative (option 3). Une croissance aussi forte ne peut être que temporaire, d’où le modèle de Bates. Les options 1, 2 et 4 ne sont pas des conditions d’application du modèle."
+        },
+        {
+          "id": "limites-bates",
+          "kind": "open",
+          "prompt": "Indiquez quelle part de la valeur provient du prix de revente et commentez les principales hypothèses du modèle et leurs limites.",
+          "points": 6,
+          "model_answer": "La valeur actuelle du prix de revente (48,15 €) représente environ 88 % de la valeur de l’action (54,48 €) : l’évaluation dépend surtout du PER de sortie, qui joue le rôle d’une valeur terminale. Ce PER de 11 doit être cohérent avec la situation attendue d’Arvel en N+5 : croissance ralentie, rentabilité exigée inchangée ; un PER de sortie trop élevé ferait payer deux fois la croissance. Le modèle suppose aussi une croissance régulière de 12 % pendant cinq ans, un taux de distribution stable de 30 % et un coût des capitaux propres constant. Il évalue une participation minoritaire (flux de dividendes et prix de revente). Une analyse de sensibilité au PER de sortie, à la durée de la phase de croissance et à k est indispensable.",
+          "key_points": [
+            "Prix de revente actualisé ≈ 88 % de la valeur (48,15 / 54,48)",
+            "PER de sortie = hypothèse clé, à rendre cohérent avec une croissance ralentie",
+            "Hypothèses : croissance régulière, distribution stable, k constant",
+            "Valeur minoritaire ; sensibilité au PER, à la durée et à k"
+          ]
+        }
+      ],
+      "total_points": 20,
+      "explanation": "Modèle de Bates : dividendes actualisés N+1 à N+5 ≈ 6,34 € ; prix de revente 11 × 7,049 = 77,54 €, actualisé à 48,15 € ; P₀ ≈ 54,48 €. Gordon-Shapiro est inapplicable tant que g ≥ k."
+    }
+  ]
+}

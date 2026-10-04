@@ -1,0 +1,233 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-eval-gw-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "evaluation-goodwill-rente",
+      "difficulty": 1,
+      "tags": [
+        "goodwill",
+        "rente",
+        "superprofit"
+      ],
+      "source_ref": "Méthodes mixtes : rente de goodwill = bénéfice − rémunération normale des capitaux engagés (i × A)",
+      "estimated_seconds": 45,
+      "statement": "Dans les méthodes d’évaluation par le goodwill, la rente de goodwill (ou superprofit) correspond :",
+      "options": [
+        "au bénéfice total de l’entreprise, capitalisé à l’infini",
+        "à la différence entre le bénéfice et la rémunération normale des capitaux engagés",
+        "à la différence entre la valeur de marché et la valeur comptable des actifs",
+        "à la différence entre le chiffre d’affaires et les charges d’exploitation"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La rente de goodwill est le bénéfice excédant ce que rapporterait un placement normal des capitaux engagés : B − i × A (option 2). Capitaliser le bénéfice total (option 1) donne une valeur de rendement, pas un goodwill. L’écart entre valeur de marché et valeur comptable des actifs (option 3) correspond aux plus-values latentes intégrées dans l’ANCC. L’option 4 décrit le résultat d’exploitation, sans référence à la rémunération des capitaux."
+    },
+    {
+      "id": "ue2-eval-gw-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "evaluation-goodwill-rente",
+      "difficulty": 2,
+      "tags": [
+        "méthode des praticiens",
+        "valeur de rendement",
+        "goodwill"
+      ],
+      "source_ref": "Méthode des praticiens : V = (ANCC + valeur de rendement) / 2, valeur de rendement = B / taux de capitalisation ; goodwill implicite = V − ANCC",
+      "estimated_seconds": 90,
+      "statement": "Une société présente un ANCC de 3 000 000 € et un bénéfice normatif de 360 000 €. Le taux de capitalisation retenu est de 9 %. Selon la méthode des praticiens, quel est le goodwill implicite ?",
+      "options": [
+        "1 000 000 €",
+        "3 500 000 €",
+        "4 000 000 €",
+        "500 000 €"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Valeur de rendement = 360 000 / 0,09 = 4 000 000 €. Valeur des praticiens = (3 000 000 + 4 000 000) / 2 = 3 500 000 €. Goodwill implicite = 3 500 000 − 3 000 000 = 500 000 € (option 4). L’option 1 est l’écart entre valeur de rendement et ANCC, non divisé par deux ; l’option 2 est la valeur de l’entreprise et non le goodwill ; l’option 3 est la valeur de rendement."
+    },
+    {
+      "id": "ue2-eval-gw-0003",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "evaluation-goodwill-rente",
+      "difficulty": 2,
+      "tags": [
+        "badwill",
+        "goodwill négatif"
+      ],
+      "source_ref": "Méthodes mixtes : V = ANCC + aₙ × (B − i × A) ; rente négative si B < i × A",
+      "estimated_seconds": 45,
+      "statement": "Lorsque le bénéfice normatif est inférieur à la rémunération normale des capitaux engagés, la méthode de la rente conduit à une valeur inférieure à l’actif net comptable corrigé.",
+      "answer": true,
+      "justification": "Vrai : la rente B − i × A est négative, le goodwill aussi (badwill), et V = ANCC + goodwill est inférieure à l’ANCC.",
+      "explanation": "Une entreprise qui ne rémunère pas ses capitaux au taux normal détruit de la valeur : un investisseur préférerait placer la même somme au taux i. La rente actualisée est négative et vient en déduction de l’ANCC. Ce badwill traduit une rentabilité insuffisante et peut aussi signaler des actifs surévalués dans l’ANCC."
+    },
+    {
+      "id": "ue2-eval-gw-0004",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "evaluation-goodwill-rente",
+      "difficulty": 2,
+      "tags": [
+        "rente abrégée",
+        "CPNE",
+        "actualisation"
+      ],
+      "source_ref": "Rente abrégée du goodwill : GW = (B − i × CPNE) × [1 − (1 + k)⁻ⁿ] / k",
+      "estimated_seconds": 240,
+      "statement": "La société Alvéa utilise des capitaux permanents nécessaires à l’exploitation (CPNE) de 5 000 000 €. Son bénéfice économique normatif après impôt est de 720 000 € par an. On retient un taux de rémunération normale des capitaux de 6 %, une durée de la rente de 5 ans et un taux d’actualisation de la rente de 10 %. Calculez le goodwill par la méthode de la rente abrégée, en euros (arrondi à l’euro).",
+      "expected_value": 1592130,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Rente annuelle = 720 000 − 6 % × 5 000 000 = 720 000 − 300 000 = 420 000 €. Facteur d’actualisation : a₅ à 10 % = [1 − 1,1⁻⁵] / 0,1 = 3,790787. Goodwill = 420 000 × 3,790787 ≈ 1 592 130 €. Erreurs classiques : capitaliser la rente à l’infini (420 000 / 0,1 = 4 200 000 €) ou rémunérer les CPNE au taux de 10 % (rente 220 000 €, goodwill ≈ 833 973 €)."
+    },
+    {
+      "id": "ue2-eval-gw-0005",
+      "type": "journal_entry",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "evaluation-goodwill-rente",
+      "difficulty": 2,
+      "tags": [
+        "fonds de commerce",
+        "fonds commercial",
+        "droit au bail"
+      ],
+      "source_ref": "PCG, comptes 206 (droit au bail), 207 (fonds commercial), 2154, 2184, 404 ; fonds commercial = éléments incorporels non identifiables séparément (règl. ANC 2015-06)",
+      "estimated_seconds": 240,
+      "statement": "Le 1er juillet N, la société Minerve achète un fonds de commerce pour un prix de 1 250 000 €, déterminé par une méthode de goodwill. L’acte de cession ventile les éléments identifiables à leur valeur réelle : droit au bail 150 000 €, matériel industriel 320 000 €, mobilier 80 000 €. Le reste du prix rémunère la clientèle et l’achalandage, non identifiables séparément. Le prix est dû au cédant (compte 404) ; les frais d’acte sont ignorés. Passez l’écriture d’acquisition chez Minerve.",
+      "date": "01/07/N",
+      "entries": [
+        {
+          "account": "206",
+          "label": "Droit au bail",
+          "debit": 150000,
+          "credit": 0
+        },
+        {
+          "account": "207",
+          "label": "Fonds commercial",
+          "debit": 700000,
+          "credit": 0
+        },
+        {
+          "account": "2154",
+          "label": "Matériel industriel",
+          "debit": 320000,
+          "credit": 0
+        },
+        {
+          "account": "2184",
+          "label": "Mobilier",
+          "debit": 80000,
+          "credit": 0
+        },
+        {
+          "account": "404",
+          "label": "Fournisseurs d’immobilisations",
+          "debit": 0,
+          "credit": 1250000
+        }
+      ],
+      "explanation": "Éléments identifiables : 150 000 + 320 000 + 80 000 = 550 000 €. La différence entre le prix et ces éléments, 1 250 000 − 550 000 = 700 000 €, correspond au goodwill payé (clientèle, achalandage) et s’inscrit en fonds commercial (207). Le droit au bail, identifiable séparément, a son propre compte (206). La dette envers le vendeur d’immobilisations est enregistrée au 404 (et non au 401)."
+    },
+    {
+      "id": "ue2-eval-gw-0006",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "evaluation-goodwill-rente",
+      "difficulty": 3,
+      "tags": [
+        "rente abrégée",
+        "méthode UEC",
+        "CPNE",
+        "goodwill"
+      ],
+      "source_ref": "Méthodes mixtes : GW = aₙ × (B − i × CPNE) ; méthode de l’UEC : V = (ANCC + aₙ × B) / (1 + i × aₙ)",
+      "estimated_seconds": 900,
+      "title": "Valeur de la société Lumea par les méthodes du goodwill",
+      "context": "La société Lumea, éditeur de logiciels de gestion, envisage d’ouvrir son capital. Les données suivantes ont été réunies au 31/12/N :\n- actif net comptable corrigé (ANCC) : 2 400 000 € ;\n- capitaux permanents nécessaires à l’exploitation (CPNE) : 3 200 000 € ;\n- bénéfice économique normatif après impôt (B) : 420 000 € par an.\nL’évaluateur retient :\n- un taux de rémunération normale des capitaux (taux sans risque) i = 5 % ;\n- une durée de la rente de 6 ans ;\n- un taux d’actualisation de la rente k = 9 %.\nLa valeur de l’entreprise est égale à l’ANCC augmenté du goodwill. Arrondir à l’euro.",
+      "sub_questions": [
+        {
+          "id": "gw-cpne",
+          "kind": "numeric",
+          "prompt": "Calculez le goodwill par la méthode de la rente abrégée, la rente étant calculée sur les CPNE, en euros.",
+          "points": 5,
+          "expected_value": 1166339,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.01
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Rente = 420 000 − 5 % × 3 200 000 = 260 000 €. a₆ à 9 % = [1 − 1,09⁻⁶] / 0,09 = 4,485919. GW = 260 000 × 4,485919 ≈ 1 166 339 €."
+        },
+        {
+          "id": "valeur-rente",
+          "kind": "mcq",
+          "prompt": "Quelle est la valeur de Lumea selon cette méthode ?",
+          "points": 3,
+          "options": [
+            "1 166 339 €",
+            "3 566 339 €",
+            "4 366 339 €",
+            "2 400 000 €"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "V = ANCC + GW = 2 400 000 + 1 166 339 = 3 566 339 € (option 2). L’option 1 est le seul goodwill ; l’option 3 ajoute le goodwill aux CPNE au lieu de l’ANCC ; l’option 4 est l’ANCC seul."
+        },
+        {
+          "id": "valeur-uec",
+          "kind": "numeric",
+          "prompt": "Calculez la valeur de Lumea par la méthode de l’UEC, dans laquelle la rente est calculée sur la valeur cherchée : V = ANCC + a₆ × (B − i × V). Donnez V en euros.",
+          "points": 5,
+          "expected_value": 3499224,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.01
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "V (1 + i × a₆) = ANCC + a₆ × B ; V = (2 400 000 + 4,485919 × 420 000) / (1 + 0,05 × 4,485919) = 4 284 086 / 1,224296 ≈ 3 499 224 €. Goodwill implicite ≈ 1 099 224 €."
+        },
+        {
+          "id": "commentaire",
+          "kind": "open",
+          "prompt": "Comparez les deux valeurs obtenues et discutez le choix de la base rémunérée (ANCC, CPNE, valeur de l’entreprise) ainsi que celui des paramètres i, k et n.",
+          "points": 7,
+          "model_answer": "Les deux méthodes donnent des valeurs proches (3,57 M€ et 3,50 M€), supérieures à l’ANCC : Lumea dégage une rentabilité supérieure à la rémunération normale de ses capitaux. La méthode UEC rémunère la valeur totale de l’entreprise, goodwill compris : la base étant plus élevée que les CPNE, la rente et donc la valeur sont un peu plus faibles. Le choix de la base doit refléter les capitaux réellement nécessaires à l’exploitation : les CPNE (immobilisations d’exploitation + BFRE) excluent les actifs hors exploitation, qu’il faut alors ajouter séparément ; l’ANCC mélange actifs d’exploitation et hors exploitation. Le taux i est un taux sans risque, k un taux plus élevé intégrant le risque de disparition du superprofit ; la durée n (souvent 5 à 8 ans) traduit la durabilité de l’avantage concurrentiel, faible dans un secteur logiciel concurrentiel. La valeur est sensible à ces paramètres : une analyse de sensibilité et un recoupement par DCF ou multiples sont nécessaires.",
+          "key_points": [
+            "Valeurs proches et supérieures à l’ANCC : rentabilité supérieure au taux normal",
+            "UEC : base rémunérée = valeur totale, donc rente et valeur plus faibles",
+            "Base CPNE cohérente avec un bénéfice d’exploitation ; actifs hors exploitation à ajouter à part",
+            "i sans risque, k plus élevé, n = durabilité du superprofit ; sensibilité et recoupement"
+          ]
+        }
+      ],
+      "total_points": 20,
+      "explanation": "Rente abrégée : GW = a₆ × (B − i × CPNE) ≈ 1 166 339 €, V ≈ 3 566 339 €. Méthode UEC : V = (ANCC + a₆ B) / (1 + i a₆) ≈ 3 499 224 €. Les écarts proviennent de la base rémunérée."
+    }
+  ]
+}

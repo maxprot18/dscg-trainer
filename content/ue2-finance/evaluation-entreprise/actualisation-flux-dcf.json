@@ -78,6 +78,183 @@
       ],
       "total_points": 20,
       "explanation": "Démarche DCF : (1) actualiser au CMPC les flux de trésorerie disponibles de l'horizon explicite (≈ 8,26 M€) ; (2) calculer la valeur terminale par Gordon-Shapiro sur le premier flux post-horizon, 3,06 / (8 % − 2 %) = 51 M€, puis l'actualiser sur 4 ans (≈ 37,49 M€) ; (3) valeur d'entreprise ≈ 45,74 M€ ; (4) retrancher la dette financière nette (6 M€) pour obtenir la valeur des capitaux propres ≈ 39,74 M€. Le CMPC est le taux adapté car les flux de trésorerie disponibles reviennent à l'ensemble des apporteurs de capitaux (actionnaires et prêteurs)."
+    },
+    {
+      "id": "ue2-eval-dcf-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "actualisation-flux-dcf",
+      "difficulty": 2,
+      "tags": [
+        "flux de trésorerie disponible",
+        "impôt normatif",
+        "BFR"
+      ],
+      "source_ref": "DCF : FTD = EBE − IS normatif sur EBIT − investissements − variation du BFR",
+      "estimated_seconds": 90,
+      "statement": "Une société prévoit pour N+1 : EBE 10 M€, résultat d’exploitation (EBIT) 6 M€, investissements 4 M€, augmentation du BFR d’exploitation 0,5 M€. Le taux d’IS est de 25 %. Quel est le flux de trésorerie disponible de N+1 ?",
+      "options": [
+        "5,0 M€",
+        "3,0 M€",
+        "8,0 M€",
+        "4,0 M€"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "IS normatif sur le résultat d’exploitation : 6 × 25 % = 1,5 M€. FTD = 10 − 1,5 − 4 − 0,5 = 4,0 M€ (option 4). L’option 1 ajoute la hausse du BFR au lieu de la retrancher ; l’option 2 calcule l’impôt sur l’EBE (2,5 M€) au lieu de l’EBIT ; l’option 3 oublie les investissements."
+    },
+    {
+      "id": "ue2-eval-dcf-0003",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "actualisation-flux-dcf",
+      "difficulty": 3,
+      "tags": [
+        "valeur terminale",
+        "Gordon-Shapiro",
+        "actualisation"
+      ],
+      "source_ref": "DCF : VTₙ = FTDₙ × (1 + g) / (CMPC − g), actualisée sur n périodes",
+      "estimated_seconds": 120,
+      "statement": "Le dernier flux de trésorerie disponible de l’horizon explicite (année 5) est de 5 M€. Au-delà, les flux croissent de 2 % par an à l’infini. Le CMPC est de 9 %. Quelle est la valeur actuelle à la date d’évaluation (début de l’année 1) de la valeur terminale ?",
+      "options": [
+        "72,86 M€",
+        "46,42 M€",
+        "47,35 M€",
+        "51,61 M€"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "VT en fin d’année 5 = 5 × 1,02 / (0,09 − 0,02) = 5,1 / 0,07 = 72,86 M€ ; valeur actuelle = 72,86 / 1,09⁵ = 72,86 / 1,538624 ≈ 47,35 M€ (option 3). L’option 1 n’est pas actualisée ; l’option 2 utilise le flux de l’année 5 au lieu de celui de l’année 6 (5 / 0,07 / 1,09⁵) ; l’option 4 n’actualise que sur 4 ans."
+    },
+    {
+      "id": "ue2-eval-dcf-0004",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "actualisation-flux-dcf",
+      "difficulty": 1,
+      "tags": [
+        "flux de trésorerie disponible",
+        "frais financiers"
+      ],
+      "source_ref": "DCF entité : FTD avant frais financiers, actualisés au CMPC",
+      "estimated_seconds": 40,
+      "statement": "Dans la méthode DCF fondée sur les flux de trésorerie disponibles actualisés au CMPC, les flux sont calculés après déduction des frais financiers.",
+      "answer": false,
+      "justification": "Faux : les flux de trésorerie disponibles reviennent à tous les apporteurs de capitaux et sont calculés avant frais financiers ; le coût de la dette est intégré dans le CMPC.",
+      "explanation": "Déduire les frais financiers des flux et actualiser au CMPC compterait deux fois le coût de la dette. Les FTD sont calculés à partir du résultat d’exploitation, avec un impôt normatif, et donnent la valeur d’entreprise ; la valeur des capitaux propres s’obtient ensuite en retranchant la dette nette."
+    },
+    {
+      "id": "ue2-eval-dcf-0005",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "actualisation-flux-dcf",
+      "difficulty": 2,
+      "tags": [
+        "Gordon-Shapiro",
+        "actifs hors exploitation",
+        "dette nette"
+      ],
+      "source_ref": "DCF : VE = FTD₁ / (CMPC − g) ; VCP = VE − dette nette + actifs hors exploitation",
+      "estimated_seconds": 180,
+      "statement": "La société Ostrel est arrivée à maturité : son flux de trésorerie disponible de N+1 est estimé à 3,2 M€ et devrait croître ensuite de 1,5 % par an à l’infini. Son CMPC est de 8,5 %. Sa dette financière nette s’élève à 12 M€. Elle détient en outre une participation non consolidée, sans lien avec l’exploitation, dont la valeur de marché est de 2 M€ (ses dividendes ne sont pas inclus dans les flux). Calculez la valeur des capitaux propres d’Ostrel au début de N+1, en millions d’euros (deux décimales).",
+      "expected_value": 35.71,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "unit": "M€",
+      "decimals": 2,
+      "explanation": "VE = 3,2 / (0,085 − 0,015) = 3,2 / 0,07 = 45,71 M€. VCP = 45,71 − 12 + 2 = 35,71 M€. Erreurs classiques : oublier l’actif hors exploitation (33,71 M€) ou appliquer la croissance au flux N+1 déjà prévisionnel (3,2 × 1,015 / 0,07 − 10 = 36,40 M€)."
+    },
+    {
+      "id": "ue2-eval-dcf-0006",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "actualisation-flux-dcf",
+      "difficulty": 2,
+      "tags": [
+        "flux de trésorerie disponible",
+        "valeur terminale",
+        "CMPC"
+      ],
+      "source_ref": "DCF : FTD = EBIT × (1 − t) + DAP − investissements − ΔBFR ; VE = Σ FTDₜ (1 + CMPC)⁻ᵗ + VT₃ (1 + CMPC)⁻³",
+      "estimated_seconds": 900,
+      "title": "Valeur d’entreprise de la société Nordel",
+      "context": "La société Nordel, spécialisée dans la maintenance industrielle, établit le plan d’affaires suivant (en M€, flux perçus en fin d’année) :\n- résultat d’exploitation (EBIT) : N+1 4,0 ; N+2 4,4 ; N+3 4,8 ;\n- dotations aux amortissements : N+1 1,5 ; N+2 1,6 ; N+3 1,7 ;\n- investissements : N+1 2,0 ; N+2 2,2 ; N+3 2,4 ;\n- augmentation du BFR d’exploitation : N+1 0,4 ; N+2 0,4 ; N+3 0,3.\nLe taux d’IS est de 25 %. Le CMPC est de 9 %. Au-delà de N+3, les flux de trésorerie disponibles croissent de 2 % par an à l’infini (le flux de N+4 vaut le flux de N+3 × 1,02). L’évaluation est faite au 31/12/N. Montants en M€, deux décimales.",
+      "sub_questions": [
+        {
+          "id": "ftd-n1",
+          "kind": "numeric",
+          "prompt": "Calculez le flux de trésorerie disponible de N+1, en M€.",
+          "points": 4,
+          "expected_value": 2.1,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.01
+          },
+          "unit": "M€",
+          "decimals": 2,
+          "explanation": "FTD N+1 = 4,0 × 0,75 + 1,5 − 2,0 − 0,4 = 3,0 + 1,5 − 2,0 − 0,4 = 2,10 M€. De même, FTD N+2 = 3,3 + 1,6 − 2,2 − 0,4 = 2,30 M€ et FTD N+3 = 3,6 + 1,7 − 2,4 − 0,3 = 2,60 M€."
+        },
+        {
+          "id": "ve",
+          "kind": "numeric",
+          "prompt": "Calculez la valeur d’entreprise de Nordel au 31/12/N, en M€.",
+          "points": 8,
+          "expected_value": 35.12,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.01
+          },
+          "unit": "M€",
+          "decimals": 2,
+          "explanation": "Valeur actuelle des flux explicites : 2,1 / 1,09 + 2,3 / 1,09² + 2,6 / 1,09³ = 1,93 + 1,94 + 2,01 = 5,87 M€. VT fin N+3 = 2,6 × 1,02 / (0,09 − 0,02) = 37,89 M€ ; actualisée : 37,89 / 1,09³ = 29,25 M€. VE = 5,87 + 29,25 = 35,12 M€."
+        },
+        {
+          "id": "impot-normatif",
+          "kind": "mcq",
+          "prompt": "Pourquoi l’impôt retenu dans les flux est-il calculé sur le résultat d’exploitation plutôt que sur le résultat avant impôt (après frais financiers) ?",
+          "points": 3,
+          "options": [
+            "Parce que le résultat d’exploitation est toujours plus faible que le résultat avant impôt",
+            "Parce que l’économie d’impôt liée aux intérêts est déjà prise en compte dans le CMPC, par le coût de la dette après impôt",
+            "Parce que les frais financiers ne sont pas fiscalement déductibles",
+            "Parce que l’impôt réellement payé n’est pas connu"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Le CMPC intègre le coût de la dette après impôt k_D (1 − t) : l’économie d’impôt sur les intérêts y est déjà comptée. Calculer l’impôt après frais financiers la compterait une seconde fois (option 2). L’option 1 est fausse : en présence d’intérêts, l’EBIT est supérieur au résultat avant impôt. L’option 3 est fausse : les intérêts sont en principe déductibles. L’option 4 ne justifie rien : il s’agit d’un impôt normatif prévisionnel."
+        },
+        {
+          "id": "poids-vt",
+          "kind": "open",
+          "prompt": "Calculez la part de la valeur terminale dans la valeur d’entreprise et indiquez deux vérifications à mener sur le flux normatif retenu pour la calculer.",
+          "points": 5,
+          "model_answer": "La valeur terminale actualisée (29,25 M€) représente environ 83 % de la VE (35,12 M€). Le flux normatif de N+3 doit refléter un régime de croisière : les investissements doivent être cohérents avec les dotations aux amortissements (ici 2,4 contre 1,7 : un investissement de croissance qui ne se prolonge pas forcément à l’infini) et la variation du BFR doit être cohérente avec un taux de croissance de 2 %. Le taux g doit rester inférieur au CMPC et proche de la croissance nominale de long terme. Une analyse de sensibilité au CMPC et à g complète l’évaluation.",
+          "key_points": [
+            "Part de la VT ≈ 83 % (29,25 / 35,12)",
+            "Cohérence investissements / amortissements dans le flux normatif",
+            "Variation du BFR cohérente avec la croissance perpétuelle de 2 %",
+            "g < CMPC et sensibilité au couple CMPC / g"
+          ]
+        }
+      ],
+      "total_points": 20,
+      "explanation": "FTD = EBIT (1 − t) + DAP − investissements − ΔBFR : 2,10 ; 2,30 ; 2,60 M€. VE = 5,87 + 29,25 ≈ 35,12 M€. L’impôt est normatif (sur l’EBIT) car l’effet fiscal de la dette est dans le CMPC."
     }
   ]
 }

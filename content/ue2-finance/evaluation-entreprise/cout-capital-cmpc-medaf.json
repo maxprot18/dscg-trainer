@@ -25,6 +25,122 @@
       "unit": "%",
       "decimals": 2,
       "explanation": "1) Coût des capitaux propres (MEDAF) : 3 % + 1,2 × 6 % = 10,2 %. 2) Coût de la dette après impôt : 5 % × (1 − 0,25) = 3,75 % (les intérêts sont déductibles). 3) Pondérations en valeurs de marché : CP = 600/1 000 = 60 % ; D = 400/1 000 = 40 %. 4) CMPC = 10,2 % × 0,6 + 3,75 % × 0,4 = 6,12 % + 1,50 % = 7,62 %. Erreurs fréquentes : oublier l'économie d'impôt sur la dette (on obtiendrait 8,12 %) ou pondérer avec des valeurs comptables."
+    },
+    {
+      "id": "ue2-eval-cmpc-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "cout-capital-cmpc-medaf",
+      "difficulty": 1,
+      "tags": [
+        "MEDAF",
+        "prime de risque"
+      ],
+      "source_ref": "MEDAF : k_CP = r_f + β × [E(R_M) − r_f]",
+      "estimated_seconds": 60,
+      "statement": "Le taux sans risque est de 2,5 %, la rentabilité attendue du marché de 9 % et le bêta des capitaux propres d’une société de 0,9. Selon le MEDAF, quel est le coût de ses capitaux propres ?",
+      "options": [
+        "10,60 %",
+        "8,35 %",
+        "5,85 %",
+        "8,10 %"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Prime de risque du marché = 9 % − 2,5 % = 6,5 %. k_CP = 2,5 % + 0,9 × 6,5 % = 2,5 % + 5,85 % = 8,35 % (option 2). L’option 1 multiplie le bêta par la rentabilité du marché et non par la prime (2,5 + 0,9 × 9) ; l’option 3 oublie le taux sans risque ; l’option 4 se limite à 0,9 × 9 %."
+    },
+    {
+      "id": "ue2-eval-cmpc-0003",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "cout-capital-cmpc-medaf",
+      "difficulty": 2,
+      "tags": [
+        "bêta",
+        "société non cotée",
+        "comparables"
+      ],
+      "source_ref": "Relation de Hamada : β_A = β_CP / [1 + (1 − t) D / CP] ; réendettement à la structure de la cible",
+      "estimated_seconds": 75,
+      "statement": "Pour estimer le coût des capitaux propres d’une société non cotée, quelle démarche permet d’obtenir son bêta ?",
+      "options": [
+        "Retenir un bêta égal à 1, puisque la société n’est pas cotée",
+        "Retenir directement la moyenne des bêtas des capitaux propres de sociétés cotées comparables",
+        "Calculer le bêta à partir de la volatilité du résultat comptable de la société",
+        "Désendetter les bêtas de sociétés cotées comparables avec leur propre structure financière, en retenir la moyenne ou la médiane, puis le réendetter avec la structure financière de la société"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Les bêtas observés des comparables incorporent leur propre endettement. On les désendette (bêta de l’actif économique), on en retient une valeur centrale, puis on la réendette avec le ratio D / CP de la société évaluée (option 4). L’option 1 suppose arbitrairement un risque égal à celui du marché ; l’option 2 ignore les différences d’endettement entre comparables et cible ; l’option 3 confond volatilité comptable et risque systématique de marché."
+    },
+    {
+      "id": "ue2-eval-cmpc-0004",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "cout-capital-cmpc-medaf",
+      "difficulty": 2,
+      "tags": [
+        "bêta",
+        "levier financier"
+      ],
+      "source_ref": "Relation de Hamada : β_CP = β_A × [1 + (1 − t) × D / CP]",
+      "estimated_seconds": 45,
+      "statement": "À risque économique identique, une société plus endettée présente un bêta des capitaux propres plus élevé qu’une société moins endettée.",
+      "answer": true,
+      "justification": "Vrai : β_CP = β_A × [1 + (1 − t) D / CP] croît avec le ratio D / CP, car le risque financier s’ajoute au risque économique.",
+      "explanation": "Les actionnaires d’une société endettée sont servis après les prêteurs : la variabilité de leur rentabilité augmente avec l’endettement (effet de levier). Leur bêta, et donc le coût des capitaux propres exigé, augmente, même si l’activité (β_A) est la même."
+    },
+    {
+      "id": "ue2-eval-cmpc-0005",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "cout-capital-cmpc-medaf",
+      "difficulty": 3,
+      "tags": [
+        "bêta désendetté",
+        "bêta réendetté",
+        "CMPC",
+        "Hamada"
+      ],
+      "source_ref": "Relation de Hamada (dette sans risque) : β_A = β_CP / [1 + (1 − t) D / CP] ; MEDAF ; CMPC pondéré par la structure cible",
+      "estimated_seconds": 300,
+      "statement": "La société non cotée Varenne veut déterminer son CMPC. Un comparable coté a un bêta des capitaux propres de 1,4 et un ratio dette nette / capitaux propres (en valeurs de marché) de 0,6. Varenne retient une structure cible avec un ratio dette / capitaux propres de 0,25. Autres données : taux sans risque 3 %, prime de risque du marché 6 %, coût de la dette avant impôt 4,5 %, taux d’IS 25 % (identique pour les deux sociétés). On utilise la relation de Hamada (dette sans risque). Calculez le CMPC de Varenne, en pourcentage avec deux décimales (ex. 8,15 pour 8,15 %).",
+      "expected_value": 8.58,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "decimals": 2,
+      "explanation": "1) Bêta désendetté : 1,4 / [1 + 0,75 × 0,6] = 1,4 / 1,45 = 0,9655. 2) Bêta réendetté de Varenne : 0,9655 × [1 + 0,75 × 0,25] = 0,9655 × 1,1875 = 1,1466. 3) k_CP = 3 % + 1,1466 × 6 % = 9,88 %. 4) Coût de la dette après impôt : 4,5 % × 0,75 = 3,375 %. 5) Pondérations : D / CP = 0,25 donc CP / (CP + D) = 1 / 1,25 = 80 % et D / (CP + D) = 20 %. CMPC = 0,8 × 9,88 % + 0,2 × 3,375 % ≈ 8,58 %. Erreurs classiques : utiliser directement le bêta du comparable (CMPC ≈ 9,80 %) ou utiliser D / (D + CP) dans la relation de Hamada (CMPC ≈ 9,10 %)."
+    },
+    {
+      "id": "ue2-eval-cmpc-0006",
+      "type": "flashcard",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "cout-capital-cmpc-medaf",
+      "difficulty": 1,
+      "tags": [
+        "Hamada",
+        "bêta désendetté"
+      ],
+      "source_ref": "Relation de Hamada (dette sans risque, taux d’IS t)",
+      "estimated_seconds": 30,
+      "front": "Comment passer du bêta des capitaux propres au bêta de l’actif économique (bêta désendetté), et inversement ?",
+      "back": "β_A = β_CP / [1 + (1 − t) × D / CP]\nβ_CP = β_A × [1 + (1 − t) × D / CP]\nD / CP : dette sur capitaux propres en valeurs de marché ; t : taux d’IS.\nOn désendette avec la structure du comparable, on réendette avec celle de la cible.",
+      "explanation": "Cette relation (Hamada) suppose une dette sans risque (bêta de la dette nul) et un endettement constant. Elle sert surtout à estimer le bêta d’une société non cotée à partir de comparables cotés, puis son coût des capitaux propres par le MEDAF."
     }
   ]
 }

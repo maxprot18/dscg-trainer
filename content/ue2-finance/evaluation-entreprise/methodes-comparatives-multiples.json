@@ -1,0 +1,206 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-eval-mult-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "methodes-comparatives-multiples",
+      "difficulty": 1,
+      "tags": [
+        "PER",
+        "multiples"
+      ],
+      "source_ref": "Méthodes analogiques : PER = capitalisation / résultat net ; multiples de VE appliqués à des agrégats avant frais financiers",
+      "estimated_seconds": 45,
+      "statement": "Appliqué à l’agrégat correspondant de la société évaluée, lequel de ces multiples donne directement la valeur de ses capitaux propres, sans retraitement de la dette ?",
+      "options": [
+        "VE / EBITDA",
+        "PER (cours / bénéfice par action)",
+        "VE / chiffre d’affaires",
+        "VE / EBIT"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le PER rapporte la capitalisation boursière au résultat net, agrégat après frais financiers revenant aux actionnaires : appliqué au résultat net de la cible, il donne directement la valeur des capitaux propres (option 2). Les multiples VE / EBITDA, VE / CA et VE / EBIT (options 1, 3 et 4) donnent une valeur d’entreprise, dont il faut retrancher la dette financière nette."
+    },
+    {
+      "id": "ue2-eval-mult-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "methodes-comparatives-multiples",
+      "difficulty": 2,
+      "tags": [
+        "multiples de transactions",
+        "prime de contrôle"
+      ],
+      "source_ref": "Méthodes analogiques : multiples de transactions (prix d’acquisitions, prime de contrôle et synergies incluses) / multiples boursiers (valeur minoritaire)",
+      "estimated_seconds": 60,
+      "statement": "Pourquoi les multiples issus de transactions récentes sur des sociétés comparables sont-ils en général plus élevés que les multiples boursiers du même secteur ?",
+      "options": [
+        "Parce que les sociétés cotées publient des résultats plus élevés que les sociétés rachetées",
+        "Parce que les multiples de transactions sont calculés sur des agrégats après impôt",
+        "Parce que le prix d’une prise de contrôle intègre une prime de contrôle et une partie des synergies attendues",
+        "Parce que les multiples boursiers incluent une décote d’illiquidité"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Un acquéreur qui prend le contrôle paie une prime reflétant le pouvoir de décision et les synergies attendues : les multiples de transactions traduisent une valeur majoritaire (option 3). L’option 1 n’a pas de fondement : le niveau des résultats est neutralisé par le rapport prix / agrégat. L’option 2 est fausse : les deux familles utilisent les mêmes agrégats (EBITDA, EBIT, résultat net). L’option 4 est inversée : la décote d’illiquidité s’applique à une société non cotée évaluée sur multiples boursiers, les cours des sociétés cotées n’en contiennent pas."
+    },
+    {
+      "id": "ue2-eval-mult-0003",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "methodes-comparatives-multiples",
+      "difficulty": 2,
+      "tags": [
+        "VE / EBITDA",
+        "dette nette"
+      ],
+      "source_ref": "Méthodes analogiques : VCP = multiple VE / EBITDA × EBITDA − dette financière nette",
+      "estimated_seconds": 75,
+      "statement": "La médiane des multiples VE / EBITDA d’un échantillon de sociétés cotées comparables est de 7,5. La société évaluée présente un EBITDA normatif de 12 M€ et une dette financière nette de 30 M€. Quelle est la valeur de ses capitaux propres ?",
+      "options": [
+        "90 M€",
+        "120 M€",
+        "60 M€",
+        "30 M€"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Valeur d’entreprise = 7,5 × 12 = 90 M€ ; valeur des capitaux propres = 90 − 30 = 60 M€ (option 3). L’option 1 est la valeur d’entreprise, la dette n’ayant pas été retranchée ; l’option 2 ajoute la dette au lieu de la retrancher ; l’option 4 retranche deux fois la dette."
+    },
+    {
+      "id": "ue2-eval-mult-0004",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "methodes-comparatives-multiples",
+      "difficulty": 1,
+      "tags": [
+        "décote d’illiquidité",
+        "société non cotée"
+      ],
+      "source_ref": "Méthodes analogiques : décote d’illiquidité appliquée à une société non cotée évaluée sur multiples boursiers",
+      "estimated_seconds": 40,
+      "statement": "Lorsqu’une société non cotée est évaluée à partir de multiples de sociétés cotées comparables, on applique souvent une décote d’illiquidité à la valeur obtenue.",
+      "answer": true,
+      "justification": "Vrai : les titres de la société non cotée sont moins facilement cessibles que des titres cotés, ce qui justifie une décote, souvent de 15 à 30 %.",
+      "explanation": "Les multiples boursiers reflètent le prix de titres négociables à tout moment sur un marché liquide. Un actionnaire d’une société non cotée ne peut pas céder ses titres aussi facilement : l’évaluateur corrige cette différence par une décote d’illiquidité, dont le taux dépend de la taille de la société et du bloc évalué."
+    },
+    {
+      "id": "ue2-eval-mult-0005",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "methodes-comparatives-multiples",
+      "difficulty": 2,
+      "tags": [
+        "PER",
+        "médiane",
+        "décote d’illiquidité"
+      ],
+      "source_ref": "Méthodes analogiques : VCP = PER médian × résultat net normatif, puis décote d’illiquidité",
+      "estimated_seconds": 180,
+      "statement": "Pour évaluer la société non cotée Pradel, on retient cinq sociétés cotées comparables dont les PER, calculés sur les bénéfices prévisionnels N+1, sont : 11 ; 13 ; 15 ; 16 ; 22. Le résultat net normatif prévisionnel N+1 de Pradel est de 1,8 M€. On retient le PER médian de l’échantillon, puis une décote d’illiquidité de 20 %. Calculez la valeur des capitaux propres de Pradel, en millions d’euros (deux décimales).",
+      "expected_value": 21.6,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "unit": "M€",
+      "decimals": 2,
+      "explanation": "PER médian = 15 (troisième valeur de la série ordonnée). Valeur avant décote = 15 × 1,8 = 27 M€ ; après décote de 20 % : 27 × 0,8 = 21,60 M€. Erreurs classiques : retenir la moyenne (15,4, soit 22,18 M€ après décote) ou oublier la décote (27 M€)."
+    },
+    {
+      "id": "ue2-eval-mult-0006",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "methodes-comparatives-multiples",
+      "difficulty": 3,
+      "tags": [
+        "VE / EBITDA",
+        "VE / EBIT",
+        "multiples de transactions",
+        "dette nette"
+      ],
+      "source_ref": "Méthodes analogiques : VE = médiane des multiples × agrégat ; VCP = VE − dette financière nette ; multiples de transactions incluant une prime de contrôle",
+      "estimated_seconds": 900,
+      "title": "Évaluation de la société Telmar par les multiples",
+      "context": "La société Telmar, distributeur de matériel médical non coté, fait l’objet de deux projets : la cession d’un bloc minoritaire de 10 % à un fonds, et à plus long terme la cession du contrôle à un groupe industriel. Ses agrégats normatifs N+1 sont : EBITDA 8 M€, EBIT 5 M€. Sa dette financière nette s’élève à 14 M€ ; il n’y a ni intérêts minoritaires ni actifs hors exploitation.\nÉchantillon de cinq sociétés cotées comparables (multiples N+1) :\n- VE / EBITDA : 5,8 ; 6,2 ; 6,5 ; 7,1 ; 9,4 ;\n- VE / EBIT : 9,5 ; 10,4 ; 11,0 ; 12,2 ; 15,9.\nTrois acquisitions de contrôle récentes de sociétés comparables font ressortir un multiple VE / EBITDA médian de 8.\nOn retient les médianes des échantillons. Montants en millions d’euros, une décimale.",
+      "sub_questions": [
+        {
+          "id": "vcp-ebitda",
+          "kind": "numeric",
+          "prompt": "Calculez la valeur des capitaux propres de Telmar à partir du multiple boursier VE / EBITDA médian, en M€.",
+          "points": 4,
+          "expected_value": 38,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.01
+          },
+          "unit": "M€",
+          "decimals": 1,
+          "explanation": "Médiane VE / EBITDA = 6,5. VE = 6,5 × 8 = 52 M€ ; VCP = 52 − 14 = 38 M€. Avec la moyenne (7,0), on obtiendrait 42 M€."
+        },
+        {
+          "id": "vcp-ebit",
+          "kind": "numeric",
+          "prompt": "Calculez la valeur des capitaux propres de Telmar à partir du multiple boursier VE / EBIT médian, en M€.",
+          "points": 4,
+          "expected_value": 41,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.01
+          },
+          "unit": "M€",
+          "decimals": 1,
+          "explanation": "Médiane VE / EBIT = 11,0. VE = 11 × 5 = 55 M€ ; VCP = 55 − 14 = 41 M€."
+        },
+        {
+          "id": "transactions",
+          "kind": "mcq",
+          "prompt": "Le multiple de transactions conduit à une valeur des capitaux propres de 8 × 8 − 14 = 50 M€. Pour quel projet cette référence est-elle la plus pertinente ?",
+          "points": 4,
+          "options": [
+            "La cession du bloc minoritaire de 10 % au fonds",
+            "La cession du contrôle au groupe industriel",
+            "Les deux projets indifféremment",
+            "Aucun : un multiple de transactions ne s’applique qu’à des sociétés cotées"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Les multiples de transactions intègrent une prime de contrôle et des synergies : ils sont adaptés à la cession du contrôle (option 2). Pour un bloc minoritaire (option 1), les multiples boursiers, éventuellement diminués d’une décote d’illiquidité, sont plus adaptés ; l’option 3 ignore cette différence de nature. L’option 4 est fausse : les transactions portent souvent sur des sociétés non cotées."
+        },
+        {
+          "id": "synthese",
+          "kind": "open",
+          "prompt": "Commentez l’écart entre les valeurs obtenues et proposez une fourchette de valeur pour la cession du bloc minoritaire, en précisant les ajustements éventuels.",
+          "points": 8,
+          "model_answer": "Les multiples boursiers donnent 38 M€ (VE / EBITDA) et 41 M€ (VE / EBIT) : l’écart vient de la différence d’intensité capitalistique entre Telmar et l’échantillon : l’EBIT de Telmar représente 62,5 % de son EBITDA, contre environ 59 % pour l’échantillon (6,5 / 11), ses dotations aux amortissements sont donc relativement plus faibles, ce qui favorise le multiple d’EBIT. Le multiple VE / EBITDA est indépendant de la politique d’amortissement mais ignore les investissements ; le VE / EBIT les prend en compte de façon comptable. La valeur de transaction (50 M€) est supérieure car elle intègre une prime de contrôle : elle ne convient pas à un bloc de 10 %. Pour le bloc minoritaire, on retient une fourchette fondée sur les multiples boursiers, soit environ 38 à 41 M€ pour 100 % des titres, à laquelle on applique une décote d’illiquidité (Telmar n’est pas cotée), par exemple de 15 à 25 %, soit environ 29 à 35 M€ pour 100 %, et 2,9 à 3,5 M€ pour le bloc de 10 %. Il faut vérifier la comparabilité de l’échantillon (taille, croissance, marges), la normalisation des agrégats et la sensibilité au choix médiane / moyenne.",
+          "key_points": [
+            "Écart EBITDA / EBIT lié à l’intensité capitalistique : dotations relativement plus faibles chez Telmar (EBIT / EBITDA 62,5 % contre environ 59 %)",
+            "Valeur de transaction = valeur de contrôle (prime), inadaptée à un bloc minoritaire",
+            "Fourchette fondée sur les multiples boursiers, avec décote d’illiquidité",
+            "Contrôles : comparabilité de l’échantillon, agrégats normatifs, médiane plutôt que moyenne"
+          ]
+        }
+      ],
+      "total_points": 20,
+      "explanation": "VCP boursière : 38 M€ (VE / EBITDA médian 6,5) et 41 M€ (VE / EBIT médian 11) ; valeur de transaction 50 M€ (contrôle). Toujours retrancher la dette nette d’une VE, et choisir l’échantillon selon la nature du bloc évalué."
+    }
+  ]
+}
