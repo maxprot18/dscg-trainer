@@ -1,0 +1,178 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-rse-csrd-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "performance-durable-rse",
+      "notion": "diagnostic-extra-financier-csrd",
+      "difficulty": 1,
+      "tags": [
+        "intensité carbone",
+        "ESRS E1"
+      ],
+      "source_ref": "Règl. délégué (UE) 2023/2772, ESRS E1, exigence E1-6 (émissions brutes des scopes 1, 2 et 3 et intensité GES par chiffre d'affaires net)",
+      "verified": true,
+      "estimated_seconds": 50,
+      "statement": "Selon l'ESRS E1, à quelle grandeur l'entreprise rapporte-t-elle ses émissions totales de gaz à effet de serre pour publier son intensité GES ?",
+      "options": [
+        "À sa valeur ajoutée",
+        "Au total de son bilan",
+        "À son effectif moyen",
+        "À son chiffre d'affaires net"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'exigence E1-6 de l'ESRS E1 demande une intensité GES par chiffre d'affaires net (tCO₂e par unité monétaire de chiffre d'affaires), le chiffre d'affaires étant rapproché des états financiers (option 4). La valeur ajoutée (option 1), le total du bilan (option 2) et l'effectif (option 3) peuvent servir à des analyses complémentaires, mais ne sont pas le dénominateur prévu par la norme."
+    },
+    {
+      "id": "ue2-rse-csrd-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "performance-durable-rse",
+      "notion": "diagnostic-extra-financier-csrd",
+      "difficulty": 2,
+      "tags": [
+        "prix interne du carbone",
+        "shadow price",
+        "investissement"
+      ],
+      "source_ref": "Règl. délégué (UE) 2023/2772, ESRS E1, exigence E1-8 (tarification interne du carbone) ; critère de la VAN",
+      "verified": true,
+      "estimated_seconds": 75,
+      "statement": "Le groupe Altis intègre un prix de 120 € par tonne de CO₂e dans le calcul de la VAN de tous ses projets d'investissement. Aucun montant n'est facturé aux filiales ni décaissé. Quelle affirmation est exacte ?",
+      "options": [
+        "Ce prix fictif n'entraîne ni décaissement ni charge comptable, mais il peut conduire à rejeter un projet dont la VAN financière est positive",
+        "Le groupe doit comptabiliser chaque année une charge égale aux émissions multipliées par 120 €",
+        "Les émissions ainsi « valorisées » peuvent être déduites des émissions brutes publiées dans l'état de durabilité",
+        "Il s'agit d'une redevance interne : les sommes correspondantes alimentent un fonds de transition"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Il s'agit d'un prix fictif (shadow price) : il modifie les critères de choix d'investissement sans flux réel ni écriture comptable (option 1). Un projet très émetteur peut ainsi voir sa VAN devenir négative. L'option 2 confond prix fictif et coût réel. L'option 3 est fausse : la valorisation interne ne réduit pas les émissions brutes, qui sont publiées sans déduction. L'option 4 décrit une redevance interne (internal fee), réellement facturée aux entités, ce que l'énoncé exclut. L'ESRS E1 (E1-8) demande de décrire le type de dispositif, le prix par tonne et le périmètre couvert."
+    },
+    {
+      "id": "ue2-rse-csrd-0003",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "performance-durable-rse",
+      "notion": "diagnostic-extra-financier-csrd",
+      "difficulty": 2,
+      "tags": [
+        "intensité carbone",
+        "diagnostic"
+      ],
+      "source_ref": "Intensité GES = émissions ÷ chiffre d'affaires net (ESRS E1, E1-6)",
+      "verified": true,
+      "estimated_seconds": 50,
+      "statement": "Si le chiffre d'affaires d'une entreprise augmente de 20 % et ses émissions de gaz à effet de serre de 10 %, son intensité carbone par chiffre d'affaires diminue.",
+      "answer": true,
+      "justification": "Vrai : l'intensité est multipliée par 1,10 / 1,20 ≈ 0,917, soit une baisse d'environ 8,3 %, alors que les émissions augmentent.",
+      "explanation": "L'intensité rapporte les émissions au chiffre d'affaires : elle baisse dès que le chiffre d'affaires croît plus vite que les émissions. L'analyste doit donc lire conjointement l'évolution absolue (ici une hausse de 10 %, défavorable au regard d'une trajectoire de réduction) et l'intensité, en neutralisant si possible l'effet prix et les variations de périmètre."
+    },
+    {
+      "id": "ue2-rse-csrd-0004",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "performance-durable-rse",
+      "notion": "diagnostic-extra-financier-csrd",
+      "difficulty": 2,
+      "tags": [
+        "intensité carbone",
+        "scopes",
+        "crédits carbone"
+      ],
+      "source_ref": "Règl. délégué (UE) 2023/2772, ESRS E1, E1-6 (émissions brutes scopes 1, 2 et 3, intensité par chiffre d'affaires net) et E1-7 (crédits carbone présentés séparément)",
+      "verified": true,
+      "estimated_seconds": 180,
+      "statement": "L'état de durabilité de la société Brenne indique pour l'exercice N : scope 1 : 12 000 tCO₂e ; scope 2 : 3 800 tCO₂e selon la méthode fondée sur la localisation et 3 000 tCO₂e selon la méthode fondée sur le marché ; scope 3 : 45 000 tCO₂e. La société a acquis et annulé 5 000 tonnes de crédits carbone. Son chiffre d'affaires net s'élève à 250 M€. En retenant le scope 2 fondé sur le marché, calculez l'intensité GES totale (scopes 1, 2 et 3) en tCO₂e par M€ de chiffre d'affaires, arrondie à l'unité.",
+      "expected_value": 240,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "tCO₂e/M€",
+      "decimals": 0,
+      "explanation": "Émissions brutes totales = 12 000 + 3 000 + 45 000 = 60 000 tCO₂e. Intensité = 60 000 / 250 = 240 tCO₂e par M€. Les crédits carbone sont présentés séparément et ne viennent jamais en déduction des émissions brutes (une déduction donnerait 220). Retenir le scope 2 fondé sur la localisation donnerait 243,2 : l'énoncé impose la méthode fondée sur le marché."
+    },
+    {
+      "id": "ue2-rse-csrd-0005",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "performance-durable-rse",
+      "notion": "diagnostic-extra-financier-csrd",
+      "difficulty": 3,
+      "tags": [
+        "prix interne du carbone",
+        "VAN différentielle",
+        "décarbonation"
+      ],
+      "source_ref": "Critère de la VAN : VAN = −I₀ + Σ FNTₜ (1 + k)⁻ᵗ ; prix interne du carbone (ESRS E1, E1-8)",
+      "verified": true,
+      "estimated_seconds": 900,
+      "title": "Chaudière gaz ou pompe à chaleur ?",
+      "context": "La société Calvia doit remplacer le système de chauffage de son site principal. Deux options sont étudiées sur 10 ans.\n- Option A, chaudière gaz : investissement 400 000 € ; coûts annuels d'énergie et de maintenance 95 000 € ; émissions 300 tCO₂e par an.\n- Option B, pompe à chaleur : investissement 700 000 € ; coûts annuels d'énergie et de maintenance 75 000 € ; émissions 40 tCO₂e par an.\nHypothèses : aucune valeur résiduelle ; investissement en date 0 et coûts en fin d'année ; raisonnement hors impôt et à prix constants ; taux d'actualisation 8 %.\nLe conseil d'administration a adopté un prix interne du carbone de 100 € par tCO₂e, à intégrer dans les calculs de VAN sans facturation ni décaissement.\nOn raisonne en flux différentiels de l'option B par rapport à l'option A.",
+      "sub_questions": [
+        {
+          "id": "van-sans-carbone",
+          "kind": "numeric",
+          "prompt": "Calculez la VAN différentielle (B − A) sans prix du carbone, en euros arrondis à l'unité.",
+          "points": 3,
+          "expected_value": -165798,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.01
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Investissement supplémentaire : 700 000 − 400 000 = 300 000 €. Économie annuelle : 95 000 − 75 000 = 20 000 €. Facteur d'annuité à 8 % sur 10 ans : (1 − 1,08⁻¹⁰) / 0,08 ≈ 6,7101. VAN = −300 000 + 20 000 × 6,7101 ≈ −165 798 €."
+        },
+        {
+          "id": "van-avec-carbone",
+          "kind": "numeric",
+          "prompt": "Calculez la VAN différentielle (B − A) en intégrant le prix interne du carbone de 100 €/tCO₂e, en euros arrondis à l'unité.",
+          "points": 3,
+          "expected_value": 8664,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.01
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Émissions évitées : 300 − 40 = 260 tCO₂e par an, valorisées 260 × 100 = 26 000 € par an. Flux différentiel annuel : 20 000 + 26 000 = 46 000 €. VAN = −300 000 + 46 000 × 6,7101 ≈ 8 664 €."
+        },
+        {
+          "id": "prix-equilibre",
+          "kind": "numeric",
+          "prompt": "Calculez le prix interne du carbone (en € par tCO₂e, arrondi au centime) pour lequel les deux options sont équivalentes.",
+          "points": 2,
+          "expected_value": 95.03,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€/tCO₂e",
+          "decimals": 2,
+          "explanation": "On cherche p tel que −300 000 + (20 000 + 260 p) × 6,7101 = 0, soit 20 000 + 260 p = 300 000 / 6,7101 ≈ 44 709,2 ; d'où p ≈ 24 709,2 / 260 ≈ 95,03 € par tCO₂e."
+        },
+        {
+          "id": "conclusion",
+          "kind": "open",
+          "prompt": "Concluez sur le choix et indiquez deux limites ou points de vigilance de ce raisonnement.",
+          "points": 2,
+          "model_answer": "Sans prix du carbone, la pompe à chaleur détruit de la valeur (VAN différentielle d'environ −165 800 €) ; avec le prix interne de 100 €/t, elle devient légèrement préférable (environ +8 700 €). Le choix dépend donc entièrement du prix interne retenu, très proche du prix d'équilibre (environ 95 €/t) : la décision est fragile. Le prix interne est fictif, il ne génère aucun encaissement : le projet B dégrade la rentabilité financière tant qu'aucun coût réel du carbone (taxe, quotas, exigences de clients ou de financeurs) ne se matérialise. Limites : hypothèse de prix constants (énergie et carbone), absence d'impôt et de valeur résiduelle, émissions estimées. Il faut tester la sensibilité au prix de l'énergie et documenter la cohérence du prix interne avec le plan de transition décrit dans l'état de durabilité.",
+          "key_points": [
+            "VAN différentielle négative sans carbone, positive avec un prix de 100 €/t",
+            "Prix d'équilibre proche du prix retenu : décision sensible à cette hypothèse",
+            "Prix fictif sans décaissement : écart entre VAN « carbone » et rentabilité financière",
+            "Hypothèses simplificatrices : prix constants, hors impôt, pas de valeur résiduelle"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le prix interne du carbone transforme les émissions évitées en flux fictifs qui s'ajoutent aux économies de coûts. Le prix d'équilibre mesure le prix du carbone à partir duquel l'option bas carbone devient préférable : c'est un indicateur utile pour le conseil, qui peut le comparer aux prix de marché des quotas et aux scénarios de transition."
+    }
+  ]
+}

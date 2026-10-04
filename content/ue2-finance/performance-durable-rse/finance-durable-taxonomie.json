@@ -1,0 +1,225 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-rse-taxo-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "performance-durable-rse",
+      "notion": "finance-durable-taxonomie",
+      "difficulty": 2,
+      "tags": [
+        "obligation liée à la durabilité",
+        "obligation verte"
+      ],
+      "source_ref": "ICMA, Sustainability-Linked Bond Principles et Green Bond Principles ; règl. (UE) 2023/2631 (obligations vertes européennes)",
+      "verified": true,
+      "estimated_seconds": 70,
+      "statement": "Une société émet une obligation dont le coupon augmentera de 25 points de base si, à fin N+4, elle n'a pas réduit de 30 % ses émissions des scopes 1 et 2 par rapport à N. Les fonds levés financent ses besoins généraux. De quel instrument s'agit-il ?",
+      "options": [
+        "Une obligation verte (use of proceeds)",
+        "Une obligation liée à la durabilité (sustainability-linked bond)",
+        "Une obligation verte européenne au sens du règlement (UE) 2023/2631",
+        "Une obligation sociale"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'obligation liée à la durabilité (option 2) ne fléche pas les fonds : ses caractéristiques financières (ici une hausse du coupon, ou step-up) dépendent de l'atteinte d'un objectif de performance (réduction de 30 %) mesuré par un indicateur clé (émissions scopes 1 et 2) à une date d'observation. Une obligation verte (option 1) affecte au contraire les fonds à des projets environnementaux, ce que l'énoncé exclut. L'obligation verte européenne (option 3) est une obligation verte dont les fonds sont alloués à des activités alignées sur la taxonomie. Une obligation sociale (option 4) finance des projets sociaux identifiés."
+    },
+    {
+      "id": "ue2-rse-taxo-0002",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "performance-durable-rse",
+      "notion": "finance-durable-taxonomie",
+      "difficulty": 1,
+      "tags": [
+        "SFDR",
+        "label ISR"
+      ],
+      "source_ref": "Règl. (UE) 2019/2088 (SFDR), art. 8 et 9 ; référentiel du label ISR (label public distinct)",
+      "verified": true,
+      "estimated_seconds": 40,
+      "statement": "Un fonds classé « article 9 » au sens du règlement SFDR obtient automatiquement le label ISR.",
+      "answer": false,
+      "justification": "Faux : la classification SFDR est un régime de transparence ; le label ISR s'obtient séparément, après audit par un organisme certificateur selon son propre référentiel.",
+      "explanation": "Le règlement SFDR impose aux gérants de publier des informations selon que le produit promeut des caractéristiques environnementales ou sociales (article 8) ou poursuit un objectif d'investissement durable (article 9). Ce n'est pas un label. Le label ISR, label public, repose sur un référentiel distinct (méthodologie ESG, exclusions renforcées en 2024, notamment sur les énergies fossiles) et sur un contrôle par un organisme accrédité. Un fonds peut être classé article 8 ou 9 sans être labellisé, et inversement le label n'emporte pas un classement article 9."
+    },
+    {
+      "id": "ue2-rse-taxo-0003",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "performance-durable-rse",
+      "notion": "finance-durable-taxonomie",
+      "difficulty": 2,
+      "tags": [
+        "taxonomie",
+        "chiffre d'affaires aligné",
+        "DNSH"
+      ],
+      "source_ref": "Règl. (UE) 2020/852, art. 3 (activité alignée) et art. 8 ; règl. délégué (UE) 2021/2178, annexe I (pas de double comptage)",
+      "verified": true,
+      "estimated_seconds": 200,
+      "statement": "Le groupe Solvane (chiffre d'affaires net consolidé : 80 M€) analyse ses activités au regard de la taxonomie européenne :\n- fabrication de composants d'éoliennes : 18 M€, éligible, respectant les critères d'examen technique, le principe DNSH et les garanties minimales ;\n- rénovation énergétique de bâtiments : 6 M€, éligible et alignée, contribuant substantiellement à la fois à l'atténuation et à l'adaptation au changement climatique ;\n- transport routier de marchandises : 10 M€, éligible, critères de contribution substantielle respectés, mais critère DNSH relatif à la pollution non satisfait ;\n- négoce de produits pétroliers : 46 M€, non éligible.\nCalculez la part du chiffre d'affaires alignée sur la taxonomie, en pourcentage arrondi au dixième (ex. 12,5 pour 12,5 %).",
+      "expected_value": 30,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "decimals": 1,
+      "explanation": "Chiffre d'affaires aligné = 18 + 6 = 24 M€ ; part alignée = 24 / 80 = 30,0 %. La rénovation contribue à deux objectifs mais n'est comptée qu'une fois (la compter deux fois donnerait 37,5 %). Le transport routier est éligible mais non aligné, faute de respecter le principe DNSH. La part éligible serait de (18 + 6 + 10) / 80 = 42,5 %. Pour l'analyste, 30 % mesure l'exposition actuelle du chiffre d'affaires aux activités durables ; la majorité de l'activité reste liée aux produits pétroliers, exposée au risque de transition."
+    },
+    {
+      "id": "ue2-rse-taxo-0004",
+      "type": "journal_entry",
+      "ue": "UE2",
+      "theme": "performance-durable-rse",
+      "notion": "finance-durable-taxonomie",
+      "difficulty": 1,
+      "tags": [
+        "obligation verte",
+        "emprunt obligataire",
+        "prime de remboursement"
+      ],
+      "source_ref": "PCG (règl. ANC 2014-03) : comptes 163 Autres emprunts obligataires, 169 Primes de remboursement des obligations, 512 Banques",
+      "verified": true,
+      "estimated_seconds": 180,
+      "statement": "Le 1er avril N, la société Lumen émet un emprunt obligataire vert : 20 000 obligations de nominal 100 €, émises à 98 € et remboursables au pair in fine. Les fonds sont affectés à la rénovation énergétique de ses entrepôts et encaissés le jour même sur le compte bancaire. Les frais d'émission sont ignorés. Passez l'écriture d'émission (utilisez le compte 163 pour l'emprunt et le compte 169 pour la prime de remboursement).",
+      "date": "01/04/N",
+      "entries": [
+        {
+          "account": "512",
+          "label": "Banques",
+          "debit": 1960000,
+          "credit": 0
+        },
+        {
+          "account": "169",
+          "label": "Primes de remboursement des obligations",
+          "debit": 40000,
+          "credit": 0
+        },
+        {
+          "account": "163",
+          "label": "Autres emprunts obligataires",
+          "debit": 0,
+          "credit": 2000000
+        }
+      ],
+      "explanation": "Le caractère vert de l'emprunt (affectation des fonds) ne modifie pas sa comptabilisation : c'est un emprunt obligataire ordinaire. La dette est inscrite pour sa valeur de remboursement : 20 000 × 100 = 2 000 000 € au crédit du 163. Les fonds encaissés s'élèvent à 20 000 × 98 = 1 960 000 € (débit 512). L'écart de 40 000 € est une prime de remboursement, inscrite à l'actif au compte 169 et amortie ensuite sur la durée de l'emprunt."
+    },
+    {
+      "id": "ue2-rse-taxo-0005",
+      "type": "journal_entry",
+      "ue": "UE2",
+      "theme": "performance-durable-rse",
+      "notion": "finance-durable-taxonomie",
+      "difficulty": 2,
+      "tags": [
+        "subvention d'investissement",
+        "transition énergétique"
+      ],
+      "source_ref": "PCG (règl. ANC 2014-03), règles relatives aux subventions d'investissement : comptes 131, 139 et 777 ; CGI art. 42 septies (étalement)",
+      "verified": true,
+      "estimated_seconds": 200,
+      "statement": "Le 1er juillet N, la société Ardane met en service une installation photovoltaïque acquise 600 000 € HT, amortie linéairement sur 20 ans. Elle a obtenu de la région une subvention d'investissement de 180 000 € pour ce projet, comptabilisée au compte 131 lors de son octroi. L'exercice coïncide avec l'année civile. Passez au 31/12/N l'écriture de reprise de la quote-part de subvention de l'exercice.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "139",
+          "label": "Subventions d'investissement inscrites au compte de résultat",
+          "debit": 4500,
+          "credit": 0
+        },
+        {
+          "account": "777",
+          "label": "Quote-part des subventions d'investissement virée au résultat de l'exercice",
+          "debit": 0,
+          "credit": 4500
+        }
+      ],
+      "explanation": "Une subvention qui finance un bien amortissable est reprise au résultat au rythme de l'amortissement de ce bien. Taux d'amortissement : 1/20 ; prorata de 6 mois en N. Quote-part = 180 000 / 20 × 6/12 = 4 500 €. On débite le 139 (qui vient en diminution du 131 au bilan, dans les capitaux propres) et on crédite le 777 (produit de l'exercice). La reprise atténue l'effet de la dotation aux amortissements (600 000 / 20 × 6/12 = 15 000 €). En analyse financière, la subvention est souvent rattachée aux ressources propres, nette de l'impôt latent."
+    },
+    {
+      "id": "ue2-rse-taxo-0006",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "performance-durable-rse",
+      "notion": "finance-durable-taxonomie",
+      "difficulty": 3,
+      "tags": [
+        "greenium",
+        "obligation verte",
+        "taxonomie",
+        "CapEx alignées"
+      ],
+      "source_ref": "ICMA Green Bond Principles ; règl. (UE) 2023/2631 (obligations vertes européennes) ; règl. (UE) 2020/852, art. 8 et règl. délégué (UE) 2021/2178, annexe I (dénominateur CapEx) ; taux actuariel",
+      "verified": true,
+      "estimated_seconds": 900,
+      "title": "Le coût réel d'une obligation verte",
+      "context": "Le groupe Vestal, coté, envisage d'émettre une obligation verte pour financer la modernisation de son parc industriel.\n- Montant : 300 M€, émission au pair, durée 5 ans, coupon annuel de 3,10 %, remboursement au pair in fine.\n- Une obligation conventionnelle de même maturité et de même rang offrirait un rendement actuariel de 3,25 % (émission au pair).\n- Le caractère vert entraîne des frais spécifiques : 0,2 M€ à l'émission (cadre d'émission, seconde opinion) et 0,15 M€ par an (reporting d'allocation et d'impact, vérification), payés à la date de chaque coupon. Les autres frais sont identiques pour les deux obligations et ignorés.\n- Pour l'exercice N, les entrées d'immobilisations corporelles et incorporelles du groupe s'élèvent à 110 M€ hors goodwill (dont 10 M€ de droits d'utilisation). Une acquisition a en outre généré un goodwill de 25 M€. Les CapEx associées à des activités alignées sur la taxonomie s'élèvent à 33 M€.",
+      "sub_questions": [
+        {
+          "id": "greenium",
+          "kind": "numeric",
+          "prompt": "Calculez le greenium de l'émission, en points de base.",
+          "points": 2,
+          "expected_value": 15,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "pb",
+          "decimals": 0,
+          "explanation": "Greenium = rendement de l'obligation conventionnelle − rendement de l'obligation verte = 3,25 % − 3,10 % = 0,15 point, soit 15 points de base (l'obligation verte étant émise au pair, son rendement actuariel égale son coupon)."
+        },
+        {
+          "id": "cout-actuariel",
+          "kind": "numeric",
+          "prompt": "Calculez le taux actuariel du financement vert pour Vestal, frais spécifiques compris, en pourcentage arrondi au centième (ex. 3,05 pour 3,05 %).",
+          "points": 3,
+          "expected_value": 3.16,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.03
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Flux pour l'émetteur (M€) : date 0 : +300 − 0,2 = +299,8 ; dates 1 à 4 : −(9,3 + 0,15) = −9,45 ; date 5 : −9,45 − 300 = −309,45. Le taux t qui annule la valeur actuelle vérifie 299,8 = 9,45 × [1 − (1 + t)⁻⁵] / t + 300 × (1 + t)⁻⁵ ; on trouve t ≈ 3,1646 %, soit 3,16 %. Les frais spécifiques absorbent une partie du greenium : l'avantage net n'est plus que d'environ 8 à 9 points de base par rapport à 3,25 % (le coupon seul, 3,10 %, surestime l'avantage)."
+        },
+        {
+          "id": "capex-alignees",
+          "kind": "mcq",
+          "prompt": "Quelle part des CapEx de l'exercice N le groupe doit-il publier comme alignée sur la taxonomie ?",
+          "points": 2,
+          "options": [
+            "24,4 %",
+            "30,0 %",
+            "33,0 %"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Le dénominateur CapEx comprend les entrées d'immobilisations corporelles et incorporelles de l'exercice, droits d'utilisation compris, mais exclut le goodwill : 110 M€. Part alignée = 33 / 110 = 30,0 % (option 2). L'option 1 (33 / 135) inclut à tort le goodwill ; l'option 3 (33 / 100) exclut à tort les droits d'utilisation."
+        },
+        {
+          "id": "analyse",
+          "kind": "open",
+          "prompt": "Appréciez l'intérêt de cette émission pour Vestal au-delà de son coût, et indiquez les conditions à respecter pour qu'elle soit crédible (et, le cas échéant, qualifiée d'obligation verte européenne).",
+          "points": 3,
+          "model_answer": "L'économie de coût est modeste (greenium de 15 pb, ramené à environ 8-9 pb après frais spécifiques), ce qui est conforme aux constats empiriques : le financement vert n'est pas d'abord un levier de coût. Son intérêt tient surtout à l'élargissement de la base d'investisseurs (fonds ISR et article 8 ou 9), à une demande souvent supérieure à l'offre, au signal donné sur la stratégie de transition et à la cohérence avec les indicateurs taxonomie publiés (30 % de CapEx alignées). En contrepartie, il crée une exigence de transparence et un risque de réputation en cas d'écoblanchiment. Crédibilité : affectation des fonds à des projets environnementaux définis dans un cadre d'émission, processus de sélection des projets, suivi séparé des fonds, reporting d'allocation et d'impact, revue externe (piliers des Green Bond Principles). Pour la qualification d'obligation verte européenne (règlement 2023/2631, standard volontaire) : fonds alloués à des activités alignées sur la taxonomie (sous réserve d'une poche de flexibilité limitée), fiche d'information et rapports normalisés, examinateur externe enregistré auprès de l'ESMA.",
+          "key_points": [
+            "Avantage de coût faible, réduit par les frais spécifiques",
+            "Intérêts principaux : diversification des investisseurs, signal stratégique, cohérence avec la taxonomie",
+            "Conditions : affectation et suivi des fonds, sélection des projets, reporting, revue externe",
+            "Obligation verte européenne : alignement taxonomie et examinateur enregistré auprès de l'ESMA",
+            "Risque d'écoblanchiment et de réputation"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le greenium se lit sur les rendements, mais le coût réel du financement vert se calcule frais spécifiques compris, par un taux actuariel. Les indicateurs taxonomie (part de CapEx alignée) permettent de vérifier que la stratégie financée par l'émission est cohérente avec la trajectoire publiée dans l'état de durabilité."
+    }
+  ]
+}

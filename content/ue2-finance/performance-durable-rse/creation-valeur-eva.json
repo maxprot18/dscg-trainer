@@ -1,0 +1,197 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-rse-eva-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "performance-durable-rse",
+      "notion": "creation-valeur-eva",
+      "difficulty": 1,
+      "tags": [
+        "EVA",
+        "NOPAT"
+      ],
+      "source_ref": "EVA = NOPAT − CMPC × capital économique ; NOPAT = résultat d'exploitation × (1 − t) (méthode Stern Stewart)",
+      "verified": true,
+      "estimated_seconds": 90,
+      "statement": "La société Orsay présente : capital économique en début d'exercice 200 M€ ; résultat d'exploitation 24 M€ ; charges d'intérêts 4 M€ ; taux d'IS 25 % ; CMPC 7 %. Quelle est son EVA de l'exercice ?",
+      "options": [
+        "10 M€",
+        "1 M€",
+        "4 M€",
+        "18 M€"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "NOPAT = 24 × (1 − 0,25) = 18 M€ (calculé avant frais financiers). Charge du capital = 7 % × 200 = 14 M€. EVA = 18 − 14 = 4 M€ (option 3). L'option 1 oublie l'impôt (24 − 14). L'option 2 déduit les intérêts avant impôt ((24 − 4) × 0,75 − 14 = 1) : le coût de la dette est alors compté deux fois, puisqu'il figure déjà dans le CMPC. L'option 4 est le NOPAT, sans déduction de la rémunération du capital."
+    },
+    {
+      "id": "ue2-rse-eva-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "performance-durable-rse",
+      "notion": "creation-valeur-eva",
+      "difficulty": 2,
+      "tags": [
+        "valeur partenariale",
+        "valeur actionnariale",
+        "parties prenantes"
+      ],
+      "source_ref": "G. Charreaux et P. Desbrières (1998), valeur partenariale ; R. E. Freeman (1984), théorie des parties prenantes ; EVA (Stern Stewart)",
+      "verified": true,
+      "estimated_seconds": 75,
+      "statement": "Laquelle des situations suivantes illustre une hausse de la valeur actionnariale (EVA) sans création de valeur partenariale ?",
+      "options": [
+        "Un procédé plus économe en énergie réduit les coûts de production, l'économie étant partagée entre clients et actionnaires",
+        "Une innovation accroît la disposition à payer des clients pour un coût des ressources inchangé",
+        "Un meilleur entretien des machines réduit les rebuts et les arrêts de production",
+        "L'entreprise impose à ses fournisseurs, sans contrepartie, un allongement des délais de paiement et une baisse de prix"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Imposer des délais plus longs et des prix plus bas aux fournisseurs réduit le BFR et augmente la marge : l'EVA progresse, mais la valeur est transférée des fournisseurs vers les actionnaires, sans création de valeur pour l'ensemble des parties prenantes (option 4). Les options 1, 2 et 3 décrivent au contraire une création de valeur partenariale : économie de ressources (options 1 et 3) ou hausse de la valeur perçue par les clients (option 2), c'est-à-dire un écart accru entre la valeur des produits et le coût d'opportunité des ressources."
+    },
+    {
+      "id": "ue2-rse-eva-0003",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "performance-durable-rse",
+      "notion": "creation-valeur-eva",
+      "difficulty": 3,
+      "tags": [
+        "MVA",
+        "EVA",
+        "anticipations"
+      ],
+      "source_ref": "MVA = valeur de marché (capitalisation + dette nette) − capital économique = valeur actuelle des EVA futures (Stern Stewart)",
+      "verified": true,
+      "estimated_seconds": 90,
+      "statement": "Le groupe Delcourt présente : capitalisation boursière 1 100 M€ ; dette financière nette 400 M€ ; capital économique 1 000 M€ ; EVA de l'exercice 30 M€ ; CMPC 7,5 %. Quelle interprétation de sa MVA est la plus pertinente ?",
+      "options": [
+        "La MVA de 500 M€ dépasse la valeur actuelle d'une EVA constante de 30 M€ (400 M€) : le marché anticipe une croissance de l'EVA",
+        "La MVA de 100 M€ est inférieure à 400 M€ : le marché anticipe une baisse de l'EVA",
+        "La MVA de 500 M€ prouve que le groupe a détruit de la valeur, car elle excède le capital investi",
+        "La MVA de 500 M€ devrait être égale à l'EVA de l'exercice : le marché surévalue le groupe"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Valeur de marché de l'entreprise = 1 100 + 400 = 1 500 M€ ; MVA = 1 500 − 1 000 = 500 M€. Si l'EVA restait constante à 30 M€, sa valeur actuelle serait 30 / 0,075 = 400 M€. La MVA, supérieure, intègre une anticipation de croissance de l'EVA (option 1). L'option 2 oublie d'ajouter la dette nette (1 100 − 1 000). L'option 3 inverse le sens : une MVA positive traduit une création de valeur. L'option 4 compare un stock (valeur actuelle de toutes les EVA futures) à un flux annuel."
+    },
+    {
+      "id": "ue2-rse-eva-0004",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "performance-durable-rse",
+      "notion": "creation-valeur-eva",
+      "difficulty": 2,
+      "tags": [
+        "EVA",
+        "résultat net",
+        "CMPC"
+      ],
+      "source_ref": "EVA = (ROCE après impôt − CMPC) × capital économique",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Une entreprise dont le résultat net est positif peut détruire de la valeur pour ses actionnaires au sens de l'EVA.",
+      "answer": true,
+      "justification": "Vrai : l'EVA est négative dès que la rentabilité économique après impôt est inférieure au CMPC, même si le résultat net est positif.",
+      "explanation": "Le résultat net ne rémunère pas les capitaux propres : il ne déduit que le coût de la dette. L'EVA déduit la rémunération exigée par l'ensemble des apporteurs de capitaux (CMPC × capital économique). Une entreprise qui dégage 5 % de rentabilité économique après impôt avec un CMPC de 8 % est bénéficiaire mais détruit de la valeur."
+    },
+    {
+      "id": "ue2-rse-eva-0005",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "performance-durable-rse",
+      "notion": "creation-valeur-eva",
+      "difficulty": 3,
+      "tags": [
+        "EVA",
+        "MVA",
+        "décarbonation",
+        "valeur partenariale"
+      ],
+      "source_ref": "EVA = NOPAT − CMPC × CE ; MVA = VE − CE (Stern Stewart) ; valeur partenariale (Charreaux et Desbrières, 1998) ; C. civ. art. 1833",
+      "verified": true,
+      "estimated_seconds": 900,
+      "title": "Investir dans la décarbonation détruit-il de la valeur ?",
+      "context": "La société Norvel, cotée, fabrique des emballages.\n- Capital économique au début de l'exercice N : 500 M€.\n- Résultat d'exploitation N : 75 M€ ; taux d'IS : 25 % ; CMPC : 8 %.\n- Au 31/12/N : capitalisation boursière 620 M€ ; dette financière nette 280 M€. On retient le capital économique de 500 M€ pour le calcul de la MVA.\nLa direction étudie un programme de décarbonation des fours : investissement de 60 M€ réalisé fin N, qui accroît le capital économique dès le début de N+1. Il procurerait des économies d'énergie et de quotas d'émission de 4 M€ avant impôt en N+1, puis croissantes avec le prix du carbone. La rémunération variable des dirigeants est aujourd'hui indexée sur l'EVA annuelle.",
+      "sub_questions": [
+        {
+          "id": "eva-n",
+          "kind": "numeric",
+          "prompt": "Calculez l'EVA de Norvel pour l'exercice N, en M€ arrondis au centième.",
+          "points": 2,
+          "expected_value": 16.25,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "M€",
+          "decimals": 2,
+          "explanation": "NOPAT = 75 × (1 − 0,25) = 56,25 M€. Charge du capital = 8 % × 500 = 40 M€. EVA = 56,25 − 40 = 16,25 M€ (ROCE après impôt de 11,25 % contre un CMPC de 8 %)."
+        },
+        {
+          "id": "mva",
+          "kind": "numeric",
+          "prompt": "Calculez la MVA de Norvel au 31/12/N, en M€.",
+          "points": 2,
+          "expected_value": 400,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "M€",
+          "decimals": 0,
+          "explanation": "Valeur de marché de l'entreprise = 620 + 280 = 900 M€. MVA = 900 − 500 = 400 M€."
+        },
+        {
+          "id": "eva-projet",
+          "kind": "numeric",
+          "prompt": "Calculez la contribution du programme de décarbonation à l'EVA de N+1, en M€ arrondis au dixième (valeur négative si l'EVA diminue).",
+          "points": 2,
+          "expected_value": -1.8,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "M€",
+          "decimals": 1,
+          "explanation": "NOPAT additionnel = 4 × (1 − 0,25) = 3 M€. Charge du capital additionnelle = 8 % × 60 = 4,8 M€. Contribution à l'EVA = 3 − 4,8 = −1,8 M€."
+        },
+        {
+          "id": "interpretation",
+          "kind": "mcq",
+          "prompt": "Quelle conclusion tirer de la contribution calculée à la question précédente ?",
+          "points": 2,
+          "options": [
+            "Le programme détruit de la valeur et doit être abandonné, puisque l'EVA de N+1 diminue",
+            "L'EVA d'une seule année ne suffit pas : il faut apprécier la valeur actuelle des EVA (ou la VAN) sur toute la durée du programme, avec des économies croissantes",
+            "L'EVA n'est pas affectée, car un investissement de décarbonation n'entre pas dans le capital économique"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "La création de valeur d'un investissement se mesure par la VAN, égale à la valeur actuelle des EVA futures qu'il génère. Une EVA négative la première année est fréquente pour un investissement dont les gains croissent (option 2). L'option 1 confond EVA annuelle et création de valeur. L'option 3 est fausse : les fours sont des immobilisations d'exploitation, incluses dans le capital économique."
+        },
+        {
+          "id": "gouvernance",
+          "kind": "open",
+          "prompt": "En quoi l'indexation de la rémunération des dirigeants sur l'EVA annuelle peut-elle freiner ce programme ? Proposez des aménagements, en mobilisant les notions de valeur partenariale et de création de valeur durable.",
+          "points": 2,
+          "model_answer": "L'EVA annuelle pénalise les investissements dont les gains sont différés : le programme réduit l'EVA de N+1 de 1,8 M€ et donc la rémunération variable, ce qui incite au court-termisme. Or il peut créer de la valeur à long terme (économies croissantes avec le prix du carbone, réduction du risque de transition, attentes des clients et des financeurs) et de la valeur partenariale (réduction des externalités supportées par la société civile). Aménagements : mesurer l'EVA sur plusieurs années ou sur la base de la valeur actuelle des EVA prévues, neutraliser temporairement le capital des investissements de transition en cours de montée en charge, intégrer dans la rémunération variable des critères extra-financiers mesurables (réduction des émissions, objectifs du plan de transition), utiliser un prix interne du carbone dans les choix d'investissement. Ces aménagements sont cohérents avec l'obligation de gérer la société en prenant en considération les enjeux sociaux et environnementaux (C. civ. art. 1833).",
+          "key_points": [
+            "EVA annuelle pénalisant les investissements à gains différés : risque de court-termisme",
+            "Création de valeur à long terme et valeur partenariale (externalités, risque de transition)",
+            "EVA pluriannuelle ou neutralisation temporaire du capital de transition",
+            "Critères extra-financiers mesurables dans la rémunération variable"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Norvel crée de la valeur (EVA de 16,25 M€, MVA de 400 M€). Le programme de décarbonation réduit l'EVA à court terme, ce qui ne préjuge pas de sa VAN. Le cas illustre le risque de court-termisme d'un pilotage par l'EVA annuelle et l'intérêt d'indicateurs de création de valeur durable."
+    }
+  ]
+}
