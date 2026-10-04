@@ -1,0 +1,179 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-risques-credit-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "risque-credit-contrepartie",
+      "difficulty": 2,
+      "tags": [
+        "perte attendue",
+        "LGD",
+        "probabilité de défaut"
+      ],
+      "source_ref": "Perte attendue = EAD × PD × LGD ; IFRS 9 §5.5.17 (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 90,
+      "statement": "La société Rance détient sur un client une créance de 2 000 000 €. Elle estime la probabilité de défaut de ce client à 3 % sur un an et, en cas de défaut, un taux de recouvrement de 40 %. Quelle est la perte attendue sur un an ?",
+      "options": [
+        "24 000 €",
+        "36 000 €",
+        "60 000 €",
+        "1 200 000 €"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "Perte attendue = exposition × probabilité de défaut × perte en cas de défaut, avec LGD = 1 − 40 % = 60 % : 2 000 000 × 3 % × 60 % = 36 000 € (option 2). L’option 1 multiplie par le taux de recouvrement (40 %) au lieu de la perte en cas de défaut. L’option 3 suppose une perte totale en cas de défaut (aucun recouvrement). L’option 4 est la perte en cas de défaut certain (2 000 000 × 60 %), sans tenir compte de la probabilité."
+    },
+    {
+      "id": "ue2-risques-credit-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "risque-credit-contrepartie",
+      "difficulty": 2,
+      "tags": [
+        "risque de liquidité",
+        "ligne de crédit confirmée"
+      ],
+      "source_ref": "Gestion du risque de liquidité : lignes confirmées, maturité de la dette ; IFRS 7 §39 (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 75,
+      "statement": "La société Sérent, dont l’activité est très saisonnière, craint de ne pas pouvoir faire face à ses échéances en cas de retournement du marché du crédit. Laquelle de ces mesures réduit le plus directement son risque de liquidité ?",
+      "options": [
+        "Souscrire une assurance-crédit sur ses principaux clients",
+        "Négocier une ligne de crédit confirmée à trois ans, mobilisable à tout moment",
+        "Augmenter le montant de sa facilité de caisse non confirmée, renouvelable chaque année à la discrétion de la banque",
+        "Conclure un swap payeur du taux fixe sur sa dette variable"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "Une ligne confirmée engage la banque à prêter pendant sa durée, même si le marché se tend : c’est une réserve de liquidité fiable (option 2). L’option 3 n’apporte pas cette sécurité, la banque pouvant réduire ou retirer une facilité non confirmée précisément en période de tension. L’assurance-crédit (option 1) couvre le risque de défaillance des clients, pas l’accès au financement, même si elle limite les impayés. Le swap (option 4) gère le risque de taux, sans effet sur la disponibilité des fonds."
+    },
+    {
+      "id": "ue2-risques-credit-0003",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "risque-credit-contrepartie",
+      "difficulty": 1,
+      "tags": [
+        "escompte",
+        "recours",
+        "risque client"
+      ],
+      "source_ref": "Escompte d’effets de commerce : crédit de mobilisation avec recours contre le cédant en cas d’impayé",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "En escomptant un effet de commerce auprès de sa banque, une entreprise transfère à celle-ci le risque de non-paiement de son client.",
+      "answer": false,
+      "justification": "L’escompte se fait avec recours : en cas d’impayé à l’échéance, la banque débite l’entreprise du montant de l’effet. Le risque client reste à sa charge.",
+      "explanation": "L’escompte est un crédit de mobilisation : il procure de la trésorerie avant l’échéance, mais l’entreprise reste garante du paiement. Il en est de même de la cession Dailly. Pour transférer le risque de crédit, l’entreprise doit recourir à l’assurance-crédit, à l’affacturage avec garantie contre l’insolvabilité du débiteur ou à des garanties obtenues du client (garantie bancaire, crédit documentaire)."
+    },
+    {
+      "id": "ue2-risques-credit-0004",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "risque-credit-contrepartie",
+      "difficulty": 2,
+      "tags": [
+        "risque de contrepartie",
+        "swap",
+        "coût de remplacement"
+      ],
+      "source_ref": "Risque de contrepartie sur dérivés : coût de remplacement ; IFRS 7 §36 (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Pour une entreprise, le risque de contrepartie sur un swap de taux conclu avec une banque correspond au coût de remplacement du contrat, c’est-à-dire à sa valeur de marché lorsqu’elle est positive pour l’entreprise.",
+      "answer": true,
+      "justification": "Le nominal d’un swap n’est pas échangé : si la banque fait défaut, l’entreprise perd seulement la valeur positive du contrat, qu’elle devrait payer pour en conclure un équivalent.",
+      "explanation": "Seuls des différentiels d’intérêts sont échangés sur un swap de taux. Si la banque fait défaut alors que le swap a une valeur négative pour l’entreprise, celle-ci ne perd rien (elle reste redevable de cette valeur envers la contrepartie défaillante). Si la valeur est positive, l’entreprise doit remplacer le contrat aux conditions du marché, plus défavorables : sa perte est ce coût de remplacement. Les accords de compensation et les appels de marge (collatéral) réduisent ce risque ; une exposition potentielle future s’y ajoute en pratique, car la valeur du swap évolue avec les taux."
+    },
+    {
+      "id": "ue2-risques-credit-0005",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "risque-credit-contrepartie",
+      "difficulty": 3,
+      "tags": [
+        "perte attendue",
+        "concentration",
+        "impasse de liquidité"
+      ],
+      "source_ref": "Perte attendue = EAD × PD × LGD ; IFRS 7 §35A-39 (règl. UE 2023/1803) ; échéancier de trésorerie",
+      "verified": true,
+      "estimated_seconds": 720,
+      "title": "Pélican : clients fragiles et trésorerie tendue",
+      "context": "La société Pélican (distribution de matériel médical) détient 5 000 000 € de créances clients, ainsi réparties :\n- client A (groupe hospitalier privé) : 1 500 000 €, probabilité de défaut à un an 1 %, taux de recouvrement en cas de défaut 50 % ;\n- client B (chaîne de cliniques récemment rachetée par un fonds) : 800 000 €, probabilité de défaut 4 %, taux de recouvrement 30 % ;\n- autres clients (plusieurs centaines, diversifiés) : 2 700 000 €, probabilité de défaut moyenne 2 %, taux de recouvrement 40 %.\n\nPrévisions de trésorerie pour le prochain trimestre (en €) : trésorerie initiale 400 000 ; encaissements clients 2 600 000 ; décaissements d’exploitation 3 300 000 ; échéance d’emprunt 500 000.\n\nPélican dispose d’une ligne de crédit confirmée de 600 000 €. Son contrat d’emprunt contient un covenant : dette financière nette / EBITDA ≤ 3. Le ratio actuel est de 2,8.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "Calculez la perte attendue à un an sur l’ensemble du portefeuille clients, en euros.",
+          "points": 3,
+          "expected_value": 62300,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "A : 1 500 000 × 1 % × 50 % = 7 500 €. B : 800 000 × 4 % × 70 % = 22 400 €. Autres : 2 700 000 × 2 % × 60 % = 32 400 €. Total : 62 300 €."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "prompt": "Calculez le besoin de financement du trimestre qui n’est pas couvert par la ligne de crédit confirmée, en euros (nombre positif).",
+          "points": 3,
+          "expected_value": 200000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Impasse de liquidité : 400 000 + 2 600 000 − 3 300 000 − 500 000 = − 800 000 €. Après mobilisation de la ligne confirmée de 600 000 €, il manque 200 000 €."
+        },
+        {
+          "id": "q3",
+          "kind": "mcq",
+          "prompt": "Quelle mesure est la plus adaptée au risque spécifique que représente le client B ?",
+          "points": 2,
+          "options": [
+            "Escompter les effets acceptés par le client B",
+            "Obtenir une garantie (assurance-crédit ou garantie bancaire) et plafonner l’encours accordé au client B",
+            "Mobiliser les créances sur le client B par cession Dailly",
+            "Conclure un swap de taux pour se protéger contre la défaillance du client B"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "Le client B concentre plus du tiers de la perte attendue (22 400 € sur 62 300 €) avec une forte perte en cas de défaut : il faut transférer ou limiter ce risque, par une garantie ou une assurance-crédit et un plafond d’encours (option 2). L’escompte et la cession Dailly (options 1 et 3) procurent de la trésorerie mais avec recours : le risque reste chez Pélican. Un swap de taux (option 4) ne couvre pas le risque de crédit."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "prompt": "Analysez l’exposition de Pélican aux risques de crédit et de liquidité et proposez des actions.",
+          "points": 4,
+          "model_answer": "Risque de crédit : la perte attendue (62 300 €, 1,2 % de l’encours) reste modérée, mais le portefeuille est concentré : le client A représente 30 % des créances et le client B, dont le profil s’est dégradé avec son rachat par un fonds, porte 36 % de la perte attendue. Une défaillance de A ou de B aurait un effet bien supérieur à la perte attendue. Actions : assurance-crédit ou garanties sur B, plafonds d’encours, suivi des notations, relances et réduction des délais de paiement. Risque de liquidité : l’impasse trimestrielle de 800 000 € n’est couverte qu’à 600 000 € par la ligne confirmée ; il faut trouver 200 000 € (affacturage, augmentation ou nouvelle ligne confirmée, décalage d’investissements, négociation des délais fournisseurs). Le covenant (2,8 pour un maximum de 3) laisse peu de marge : un tirage sur les lignes et une baisse d’EBITDA liée à un impayé pourraient le faire franchir et rendre la dette exigible. Anticiper en négociant avec les banques (relèvement du seuil ou dérogation) avant la date de test.",
+          "key_points": [
+            "Perte attendue modérée mais concentration forte sur A et B",
+            "Client B : garantie, assurance-crédit, plafond d’encours",
+            "Impasse de 800 000 €, dont 200 000 € non couverts : financement complémentaire à trouver",
+            "Covenant proche de son seuil : risque d’exigibilité anticipée, négociation à anticiper"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Perte attendue 62 300 € ; impasse de liquidité de 800 000 € dont 200 000 € non couverts par la ligne confirmée ; concentration sur A et B et covenant proche du seuil. Le risque de crédit se transfère par garantie ou assurance-crédit, le risque de liquidité se couvre par des ressources confirmées."
+    }
+  ]
+}
