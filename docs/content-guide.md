@@ -1,0 +1,51 @@
+# Guide de rédaction du contenu
+
+Ce guide s'adresse aux agents (et contributeurs) qui rédigent ou relisent des fiches de cours et des exercices. Il complète `CLAUDE.md` ; le format exact des exercices est défini par `src/content/schema.ts` (à lire avant d'écrire).
+
+## Principes
+
+- **Tout est rédigé en propre.** Aucune reprise de sites tiers, de manuels ou d'annales (corrigés compris) : ils servent au mieux à calibrer le niveau. Les textes officiels (PCG règl. ANC 2014-03, règl. ANC 2020-01 pour les comptes consolidés, règl. ANC 2017-01 pour les fusions, Code de commerce, CGI, NEP, IFRS adoptées par l'UE via le règlement 2023/1803) servent à la justesse : renvoi d'article ou de paragraphe et reformulation, citation courte seulement.
+- **Exactitude avant tout.** Un numéro d'article dont on n'est pas sûr ne s'écrit pas : citer alors le texte sans numéro (« PCG, règles relatives aux provisions (règl. ANC 2014-03) »). Depuis l'ordonnance n° 2023-1142, les articles du Code de commerce sur le commissariat aux comptes sont numérotés L. 821-x (ex. L. 821-44 : mandat de six exercices) et le H3C est devenu la H2A.
+- **Niveau DSCG**, langue française (UE 6 : anglais).
+
+## Fiche de cours (`content/courses/<id-notion>.md`)
+
+Une fiche par notion, écrite **avant** les exercices de la notion (les exercices s'appuient sur elle). Le nom du fichier est exactement l'id de la notion dans `content/taxonomy.json`. 10 à 30 lignes non vides, en Markdown :
+
+```markdown
+# <Titre de la notion>
+
+**Références :** IAS 16 §43-62 (règl. UE 2023/1803) ; PCG art. 214-9
+
+<Définitions, règles, conditions, méthodes de calcul en phrases courtes ou listes.>
+
+**Formules clés :** VAN = −I₀ + Σ FNTₜ (1 + k)⁻ᵗ
+
+## À retenir
+- <2 à 5 points, dont les pièges classiques>
+```
+
+Pas de tableau de plus de 6 lignes, pas d'images. Formules en texte (Unicode autorisé : ₀ ¹ ² × − Σ ≤ ≥).
+
+## Exercices (`content/<slug-ue>/<theme>/<id-notion>.json`)
+
+Fichier `{ "exercises": [ ... ] }`, un fichier par notion (exception : le thème `cycles-audit` utilise un fichier par cycle, `cycles-audit/<cycle>.json`). Si le fichier existe, **ajouter** au tableau sans modifier les exercices existants.
+
+Champs communs : `id` (`<ue>-<theme-court>-<notion-courte>-<nnnn>`, kebab-case, unique — vérifier par `grep -r` ; ne jamais réutiliser un id), `type`, `ue`, `theme`, `notion`, `difficulty` (1, 2, 3), `tags`, `source_ref` (précis : paragraphe, article, compte), `verified: false` (seul le relecteur passe à `true`), `estimated_seconds` réaliste (QCM 45-90 s, calcul 120-300 s, cas 300-900 s), `explanation`.
+
+Règles par type :
+
+- **mcq** : 4 options, une seule défendable (ou `multiple: true` si plusieurs bonnes réponses, à réserver à 10 % des QCM). Distracteurs plausibles (erreurs classiques). L'explication justifie la bonne réponse **et** dit pourquoi chaque distracteur est faux. Varier la position de la bonne réponse (pas toujours l'index 1).
+- **true_false** : affirmation nette, ni piège de formulation ni double négation ; `justification` courte (1-2 phrases), `explanation` plus développée. Équilibrer vrai et faux (~50/50).
+- **numeric** : données suffisantes dans l'énoncé, unité précisée, arrondi demandé explicite. Tolérance : `absolute` 0.5 à 1 pour des montants exacts en euros, `relative` 0.01 pour des calculs actualisés ou des montants arrondis, `absolute` 0.1 pour des pourcentages exprimés en points. La tolérance accepte les arrondis raisonnables mais rejette les erreurs classiques (vérifier que l'erreur type tombe hors tolérance). Calculs vérifiés avec node ; détail du calcul dans l'explication.
+- **journal_entry** : comptes PCG exacts et assez détaillés (au moins 3 chiffres ; un sous-compte plus détaillé saisi par l'utilisateur sera accepté), écriture équilibrée, une ligne par compte. Indiquer dans l'énoncé si un compte particulier est attendu quand plusieurs sont défendables (ex. « utilisez le compte 4456 »). En consolidation, préciser les conventions de comptes dans l'énoncé.
+- **case_study** : `context` de 10 à 20 lignes, 3 à 5 sous-questions enchaînées de `kind` variés (au moins une `numeric` et une `open`), `points` cohérents, `total_points` = somme.
+- **consolidation_case** : `entities` (une seule mère) et `links` cohérents avec le contexte, 3 à 5 `steps` avec `stage`, hypothèses explicites (amortissement ou non de l'écart d'acquisition, taux d'impôt, méthode), `total_points`.
+- **audit_case** : `cycle` égal au `group` de la notion ; situation de 6 à 12 lignes avec des faits chiffrés ; 5 ou 6 procédures dont 2 ou 3 pertinentes ; risque Faible / Modéré / Élevé justifié par les faits de l'énoncé ; conclusion type et `key_points` qui ne supposent aucun fait absent de l'énoncé.
+- **flashcard** : recto = question courte, verso = réponse de 2 à 6 lignes ; `explanation` = complément ou référence.
+
+Variété : ne pas répéter le même scénario ou les mêmes chiffres d'un exercice à l'autre ; couvrir les différents aspects de la notion décrits dans la fiche de cours.
+
+## Relecture indépendante (obligatoire avant `verified: true`)
+
+Le relecteur n'est pas le rédacteur. Pour chaque exercice : lire l'énoncé seul, le résoudre (recalcul avec node), **puis** comparer avec la réponse et l'explication. Vérifier l'exactitude technique, la cohérence énoncé / réponse / explication, l'unicité de la bonne réponse, la tolérance, `source_ref`, les données suffisantes. Corriger ce qui est sûr, passer à `true` ; laisser `false` en expliquant si le fond est faux et la correction incertaine. Relire aussi les fiches de cours du lot (exactitude, références, 10-30 lignes). Terminer par `npm run validate`.
