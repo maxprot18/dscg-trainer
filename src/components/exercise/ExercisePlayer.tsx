@@ -13,6 +13,7 @@ import { Link } from 'react-router-dom'
 import { BookmarkButton } from '@/components/BookmarkButton'
 import { ReportLink } from '@/components/ReportLink'
 import { TypeIcon } from '@/components/TypeIcon'
+import { Markdown } from '@/components/Markdown'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { CYCLE_LABELS, TYPE_LABELS } from '@/content/labels'
@@ -53,7 +54,28 @@ function Statement({ exercise }: { exercise: Exercise }) {
     case 'flashcard':
       return null
     case 'case_study':
-      return (
+      return exercise.dossier ? (
+        <FoldableContext title={exercise.title}>
+          <div className="flex flex-wrap gap-1">
+            <Badge variant="secondary">Sujet type d’examen</Badge>
+            <Badge variant="outline">{Math.round(exercise.estimated_seconds / 60)} min</Badge>
+            {exercise.total_points !== undefined && <Badge variant="outline">{formatNumber(exercise.total_points)} points</Badge>}
+          </div>
+          <div className="text-sm">
+            <Markdown source={exercise.context} />
+          </div>
+          {exercise.annexes?.map((annex, i) => (
+            <details key={i} className="rounded-md border">
+              <summary className="cursor-pointer px-3 py-2 text-sm font-medium">
+                Annexe {i + 1} — {annex.title}
+              </summary>
+              <div className="border-t px-3 py-2 text-sm">
+                <Markdown source={annex.content} />
+              </div>
+            </details>
+          ))}
+        </FoldableContext>
+      ) : (
         <FoldableContext title={exercise.title}>
           <p className="text-sm whitespace-pre-line">{exercise.context}</p>
         </FoldableContext>

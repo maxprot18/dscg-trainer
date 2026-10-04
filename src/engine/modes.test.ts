@@ -197,3 +197,20 @@ describe('test de positionnement et séance du jour', () => {
     expect(timeLimit({ mode: 'diagnostic', seed: 2, ue: 'UE4' }, durations)).toBeNull()
   })
 })
+
+describe('examen blanc avec dossiers de type examen', () => {
+  const dossier = (id: string, seconds: number) => ex(id, { type: 'case_study', dossier: true, estimated_seconds: seconds } as Partial<Exercise>)
+
+  it('dossiers en tête, dans la limite de 60 % du temps, exclus des autres sessions', () => {
+    const shorts = Array.from({ length: 40 }, (_, i) => ex(`q${i}`, { estimated_seconds: 120 }))
+    const pool = [dossier('d1', 4800), dossier('d2', 4800), dossier('d3', 4800), ...shorts]
+    const exam = buildSession({ mode: 'exam', seed: 1, ue: mcq.ue }, pool, durations)
+    const ds = exam.filter((e) => e.id.startsWith('d'))
+    expect(ds).toHaveLength(1) // 240 min × 60 % = 144 min : un seul dossier de 80 min… et pas deux (160 min)
+    expect(exam[0].id).toBe(ds[0].id)
+    expect(exam.reduce((s, e) => s + e.estimated_seconds, 0)).toBeLessThanOrEqual(240 * 60)
+    for (const config of [{ mode: 'quick', seed: 1 }, { mode: 'smart', seed: 1 }, { mode: 'theme', seed: 1, scope: { ue: mcq.ue } }] as const) {
+      expect(buildSession(config, pool, durations).some((e) => e.id.startsWith('d'))).toBe(false)
+    }
+  })
+})

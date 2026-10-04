@@ -204,6 +204,27 @@ describe('journal_entry', () => {
 })
 
 describe('case_study', () => {
+  it('dossier de type examen : annexes, 6 à 15 sous-questions, barème et durée', () => {
+    const many = (e: Json) => {
+      const qs = e.sub_questions as Json[]
+      e.sub_questions = Array.from({ length: 8 }, (_, i) => ({ ...qs[1], id: `q${i + 1}`, points: 2.5 }))
+      e.total_points = 20
+    }
+    const dossier = variant('case_study', (e) => {
+      many(e)
+      e.dossier = true
+      e.estimated_seconds = 3600
+      e.annexes = [
+        { title: 'Bilan', content: '| Poste | N |\n| --- | --- |\n| Actif | 100 |' },
+        { title: 'Contrat', content: 'Extrait du contrat.' },
+      ]
+    })
+    expect(exerciseSchema.safeParse(dossier).success).toBe(true)
+    expectIssueAt(variant('case_study', (e) => (many(e), (e.dossier = true), (e.estimated_seconds = 3600))), 'annexes')
+    expectIssueAt(variant('case_study', many), 'sub_questions')
+    expectIssueAt(variant('case_study', (e) => (e.annexes = [{ title: 'A', content: 'B' }])), 'annexes')
+  })
+
   it('3 à 5 sous-questions', () => {
     expectIssueAt(variant('case_study', (e) => (e.sub_questions = (e.sub_questions as Json[]).slice(0, 2))), 'sub_questions')
   })

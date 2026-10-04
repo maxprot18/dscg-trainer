@@ -13,6 +13,11 @@ export const THEME_SESSION_SIZE = 20
 /** Exercices jugés assez courts pour la session rapide. */
 export const QUICK_MAX_SECONDS = 180
 
+/** Dossier de type examen (long sujet avec annexes) : réservé à l'examen blanc et à la liste des sujets type. */
+export function isDossier(e: Exercise): boolean {
+  return e.type === 'case_study' && e.dossier === true
+}
+
 export interface ThemeScope {
   ue: UeId
   theme?: string
@@ -44,8 +49,9 @@ export function shuffle<T>(items: readonly T[], random: () => number): T[] {
  * Session rapide : 10 exercices mélangés, en priorité courts (≤ 3 min estimées),
  * complétés par des exercices plus longs si le stock de courts ne suffit pas.
  */
-export function buildQuickSession(pool: readonly Exercise[], seed: number, size = QUICK_SESSION_SIZE): Exercise[] {
+export function buildQuickSession(all: readonly Exercise[], seed: number, size = QUICK_SESSION_SIZE): Exercise[] {
   const random = seededRandom(seed)
+  const pool = all.filter((e) => !isDossier(e))
   const short = shuffle(
     pool.filter((e) => e.estimated_seconds <= QUICK_MAX_SECONDS),
     random,
@@ -73,7 +79,7 @@ export function buildThemeSession(
   size = THEME_SESSION_SIZE,
 ): Exercise[] {
   const picked = shuffle(
-    pool.filter((e) => inScope(e, scope)),
+    pool.filter((e) => inScope(e, scope) && !isDossier(e)),
     seededRandom(seed),
   ).slice(0, size)
   return picked.sort((a, b) => a.difficulty - b.difficulty)
@@ -127,13 +133,14 @@ export function smartNotionOrder(
  * notion (jamais faits d'abord, puis ratés, puis les moins récemment faits), mélangés.
  */
 export function buildSmartSession(
-  pool: readonly Exercise[],
+  all: readonly Exercise[],
   snapshot: ProgressSnapshot,
   now: number,
   seed: number,
   size = SMART_SESSION_SIZE,
 ): Exercise[] {
   const random = seededRandom(seed)
+  const pool = all.filter((e) => !isDossier(e))
   const lastAttempt = new Map<string, Attempt>()
   for (const a of [...snapshot.attempts].sort((x, y) => x.date - y.date)) lastAttempt.set(a.exerciseId, a)
   const byNotion = new Map<string, Exercise[]>()
@@ -181,6 +188,8 @@ const CALC_TYPES: readonly Exercise['type'][] = ['numeric', 'journal_entry']
 const QUESTION_TYPES: readonly Exercise['type'][] = ['mcq', 'true_false']
 /** Part du temps de l'examen consacrée aux cas, aux calculs et écritures, aux questions. */
 export const EXAM_SHARES = { cases: 0.55, calc: 0.25, questions: 0.2 } as const
+/** Part maximale du temps de l'examen blanc donnée aux dossiers de type examen. */
+export const EXAM_DOSSIER_SHARE = 0.6
 
 /**
  * Examen blanc d'une UE : un sujet dont la durée estimée remplit la durée de l'épreuve, composé
@@ -190,14 +199,23 @@ export const EXAM_SHARES = { cases: 0.55, calc: 0.25, questions: 0.2 } as const
 export function buildExamSession(pool: readonly Exercise[], ue: UeId, durationMinutes: number, seed: number): Exercise[] {
   const random = seededRandom(seed)
   const budget = durationMinutes * 60
-  const inUe = pool.filter((e) => e.ue === ue && e.type !== 'flashcard')
+  // Dossiers de type examen d'abord (au plus 60 % du temps), comme les dossiers d'un vrai sujet.
+  const dossiers: Exercise[] = []
+  let dossierTime = 0
+  for (const d of shuffle(pool.filter((e) => e.ue === ue && isDossier(e)), random)) {
+    if (dossierTime + d.estimated_seconds > budget * EXAM_DOSSIER_SHARE) continue
+    dossiers.push(d)
+    dossierTime += d.estimated_seconds
+  }
+  const inUe = pool.filter((e) => e.ue === ue && e.type !== 'flashcard' && !isDossier(e))
   const buckets = [
     { types: QUESTION_TYPES, share: EXAM_SHARES.questions },
     { types: CALC_TYPES, share: EXAM_SHARES.calc },
     { types: CASE_TYPES, share: EXAM_SHARES.cases },
   ].map((b) => ({ ...b, items: shuffle(inUe.filter((e) => b.types.includes(e.type)), random), picked: [] as Exercise[] }))
 
-  let used = 0
+  let used = dossierTime
+  const rest = budget - dossierTime
   const take = (bucket: (typeof buckets)[number], limit: number) => {
     let spent = bucket.picked.reduce((s, e) => s + e.estimated_seconds, 0)
     for (const e of bucket.items) {
@@ -208,10 +226,10 @@ export function buildExamSession(pool: readonly Exercise[], ue: UeId, durationMi
       used += e.estimated_seconds
     }
   }
-  for (const b of buckets) take(b, budget * b.share)
+  for (const b of buckets) take(b, rest * b.share)
   // Le temps laissé libre (type absent de l'UE, exercices trop longs) est complété par les autres blocs.
-  for (const b of [...buckets].reverse()) take(b, budget)
-  return buckets.flatMap((b) => b.picked)
+  for (const b of [...buckets].reverse()) take(b, rest)
+  return [...dossiers, ...buckets.flatMap((b) => b.picked)]
 }
 
 /** Note sur 20 d'un examen blanc : chaque exercice pèse sa durée estimée ; un exercice non traité vaut 0. */
