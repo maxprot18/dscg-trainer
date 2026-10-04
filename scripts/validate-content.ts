@@ -54,6 +54,9 @@ export interface ValidationResult {
 }
 
 const TAXONOMY_FILE = 'taxonomy.json'
+/** Longueur attendue d'une fiche de cours (lignes non vides, SPEC : 10 à 30 lignes). */
+const COURSE_MIN_LINES = 10
+const COURSE_MAX_LINES = 30
 /** Fichiers de documentation tolérés à la racine de content/. */
 const ROOT_DOC_FILES = new Set(['LICENSE', 'README.md'])
 const COURSES_DIR = 'courses'
@@ -234,6 +237,15 @@ export function validateContent(contentDir: string | URL, opts: ValidateOptions)
         errors.push(`${relPath} : "${notionId}" n'est pas un identifiant de notion de la taxonomie`)
       } else {
         stats.courses++
+        const lines = readFileSync(path.join(coursesDir, entry.name), 'utf8')
+          .split(/\r?\n/)
+          .filter((l) => l.trim() !== '')
+        if (!lines[0]?.startsWith('# ')) errors.push(`${relPath} : la fiche doit commencer par un titre « # … »`)
+        if (lines.length < COURSE_MIN_LINES || lines.length > COURSE_MAX_LINES) {
+          warnings.push(
+            `${relPath} : ${lines.length} lignes non vides (attendu : ${COURSE_MIN_LINES} à ${COURSE_MAX_LINES})`,
+          )
+        }
       }
     }
   }
