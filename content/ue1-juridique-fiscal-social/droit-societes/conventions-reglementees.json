@@ -1,0 +1,126 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-soc-conv-0001",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "conventions-reglementees",
+      "difficulty": 1,
+      "tags": ["SA", "conseil d'administration", "personne intéressée"],
+      "statement": "Dans une SA à conseil d'administration, l'administrateur directement intéressé à une convention réglementée peut prendre part au vote du conseil sur l'autorisation de cette convention.",
+      "answer": false,
+      "justification": "La personne directement ou indirectement intéressée à la convention ne peut pas prendre part au vote du conseil sur l'autorisation sollicitée (C. com. art. L225-40).",
+      "explanation": "La procédure des conventions réglementées vise à prévenir les conflits d'intérêts : l'intéressé informe le conseil dès qu'il a connaissance de la convention et ne vote pas. Il ne vote pas non plus à l'assemblée qui statue sur le rapport spécial du commissaire aux comptes, et ses actions ne sont pas prises en compte pour le calcul de la majorité (elles le restent, depuis la loi n° 2019-486 dite PACTE, pour le calcul du quorum).",
+      "source_ref": "C. com. art. L225-38 et L225-40",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue1-soc-conv-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "conventions-reglementees",
+      "difficulty": 2,
+      "tags": ["SA", "qualification des conventions", "convention interdite", "convention libre"],
+      "statement": "La SA Cobalt (conseil d'administration) envisage quatre opérations. Laquelle doit faire l'objet d'une autorisation préalable du conseil d'administration au titre des conventions réglementées ?",
+      "options": [
+        "Un prêt de 30 000 € consenti par Cobalt à l'un de ses administrateurs, personne physique",
+        "Un bail commercial conclu entre Cobalt et une SARL dont un administrateur de Cobalt est le gérant",
+        "Une vente de marchandises, au tarif habituel, à un actionnaire détenant 15 % des droits de vote, dans le cadre de l'activité courante",
+        "Une convention de trésorerie avec une filiale dont Cobalt détient 100 % du capital"
+      ],
+      "answer": [1],
+      "multiple": false,
+      "explanation": "Une convention conclue avec une entreprise dont un administrateur de la société est gérant relève de la procédure d'autorisation préalable (C. com. art. L225-38, al. 3) : option 2. Le prêt à un administrateur personne physique (option 1) est une convention interdite (art. L225-43), frappée de nullité : elle ne peut pas être autorisée. La vente courante à des conditions normales (option 3) est libre (art. L225-39), même avec un actionnaire à plus de 10 %. La convention avec une filiale détenue à 100 % (option 4) est également exclue du dispositif (art. L225-39).",
+      "source_ref": "C. com. art. L225-38, L225-39 et L225-43",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue1-soc-conv-0003",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "conventions-reglementees",
+      "difficulty": 3,
+      "tags": ["SA", "assemblée générale ordinaire", "actionnaire intéressé", "majorité", "voix exprimées"],
+      "statement": "Le capital de la SA Natéo est composé de 200 000 actions, chacune donnant droit à une voix. La société Holdex, qui détient 24 000 actions (12 % des droits de vote), a conclu avec Natéo une convention de prestation de services, autorisée par le conseil d'administration. L'assemblée générale ordinaire, réunie sur première convocation, statue sur le rapport spécial du commissaire aux comptes. Sont présents ou représentés des actionnaires détenant 130 000 actions, dont les 24 000 actions de Holdex. Sur la résolution approuvant la convention, les autres actionnaires présents ou représentés se répartissent ainsi : 50 000 voix pour, 46 000 voix contre, 10 000 abstentions ; Holdex a voté pour. Calculez le pourcentage de voix favorables retenu pour apprécier l'adoption de la résolution. Réponse en pourcentage, arrondie au dixième.",
+      "expected_value": 52.1,
+      "tolerance": { "kind": "absolute", "value": 0.1 },
+      "unit": "%",
+      "decimals": 1,
+      "explanation": "1) Holdex est intéressée : elle ne peut pas prendre part au vote et ses actions ne sont pas prises en compte pour le calcul de la majorité (C. com. art. L225-40). Son vote est donc écarté.\n2) Quorum (AGO, première convocation : 1/5 des actions ayant droit de vote, art. L225-98) : depuis la loi PACTE, les actions de l'intéressé restent comptées pour le quorum : 130 000 / 200 000 = 65 % ≥ 20 %. Même en les excluant (106 000 / 176 000 = 60,2 %), le quorum serait atteint.\n3) Majorité des voix exprimées : les abstentions ne sont pas des voix exprimées (art. L225-98). Voix exprimées : 50 000 + 46 000 = 96 000. Pourcentage favorable : 50 000 / 96 000 = 52,1 % > 50 % : la résolution est adoptée.\nErreurs classiques : compter le vote de Holdex (74 000 / 120 000 = 61,7 %) ou les abstentions (50 000 / 106 000 = 47,2 %, qui conduirait à tort au rejet).",
+      "source_ref": "C. com. art. L225-40 (exclusion de l'intéressé) et L225-98 (quorum et majorité de l'AGO, voix exprimées)",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue1-soc-conv-0004",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "conventions-reglementees",
+      "difficulty": 3,
+      "tags": ["SAS", "conventions réglementées", "convention interdite", "convention courante", "rapport spécial"],
+      "title": "Tilleul SAS : trois conventions à qualifier",
+      "context": "Tilleul SAS, qui fabrique du mobilier de jardin, est présidée par M. Royer, personne physique. Son capital est détenu à 30 % par la SA Fennec (30 % des droits de vote), à 45 % par M. Royer et à 25 % par divers associés. Tilleul a désigné un commissaire aux comptes. Exercice clos le 31/12/N.\nLes statuts ne contiennent aucune stipulation particulière sur les conventions.\nAu cours de N :\n- le 1er mars N, Tilleul a conclu avec Fennec un contrat de prestations de direction (stratégie, finance) moyennant des honoraires mensuels de 15 000 € HT ; à compter du 1er septembre N, les honoraires ont été portés à 16 500 € HT par avenant ;\n- le 10 avril N, Tilleul a consenti à M. Royer un prêt personnel de 40 000 € pour l'achat de sa résidence principale, au taux de 1 % ;\n- tout au long de l'année, Tilleul a vendu des salons de jardin, au tarif catalogue et aux conditions habituelles, à la SARL Jardivert, dont M. Royer est le gérant.\nLe président prépare l'assemblée qui statuera sur les comptes de N.",
+      "sub_questions": [
+        {
+          "id": "q1-pret",
+          "kind": "mcq",
+          "prompt": "Comment qualifier le prêt consenti par Tilleul à M. Royer ?",
+          "points": 2,
+          "options": [
+            "Convention réglementée, à soumettre à l'approbation des associés sur rapport du commissaire aux comptes",
+            "Convention libre, car le montant est modeste",
+            "Convention interdite, frappée de nullité",
+            "Convention valable si elle est ratifiée à l'unanimité des associés"
+          ],
+          "answer": [2],
+          "multiple": false,
+          "explanation": "Il est interdit à la SAS de consentir un prêt à son président personne physique (C. com. art. L227-12, qui étend aux dirigeants de SAS l'interdiction de l'article L225-43) : option 3. La convention est nulle et aucune approbation, même unanime, ne peut la régulariser (options 1 et 4). Le montant est indifférent (option 2)."
+        },
+        {
+          "id": "q2-honoraires",
+          "kind": "numeric",
+          "prompt": "Calculez le montant HT des honoraires facturés par Fennec au titre de N, à mentionner dans le rapport sur les conventions. Réponse en euros.",
+          "points": 2,
+          "expected_value": 156000,
+          "tolerance": { "kind": "absolute", "value": 1 },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Mars à août : 6 × 15 000 = 90 000 € ; septembre à décembre : 4 × 16 500 = 66 000 €. Total : 156 000 € HT. Fennec disposant de plus de 10 % des droits de vote, la convention entre dans le champ de l'article L227-10."
+        },
+        {
+          "id": "q3-desapprobation",
+          "kind": "true_false",
+          "prompt": "Vrai ou faux : si les associés refusent d'approuver le contrat conclu avec Fennec, ce contrat est annulé de plein droit.",
+          "points": 1,
+          "answer": false,
+          "explanation": "Faux. Les conventions non approuvées produisent néanmoins leurs effets ; il appartient à la personne intéressée et éventuellement au président et aux autres dirigeants d'en supporter les conséquences dommageables pour la société (C. com. art. L227-10, dernier alinéa)."
+        },
+        {
+          "id": "q4-procedure",
+          "kind": "open",
+          "prompt": "Exposez le traitement de chacune des trois opérations lors de la préparation de l'assemblée annuelle de Tilleul.",
+          "points": 4,
+          "model_answer": "Contrat avec Fennec : convention réglementée de SAS, car Fennec dispose de plus de 10 % des droits de vote. Aucune autorisation préalable n'est exigée par la loi. Le président en avise le commissaire aux comptes, qui présente aux associés un rapport sur cette convention (objet, modalités, montant de 156 000 € HT en N) ; les associés statuent sur ce rapport lors de l'approbation des comptes. À défaut d'approbation, le contrat produit ses effets, mais les conséquences dommageables peuvent être mises à la charge de Fennec et éventuellement des dirigeants. Prêt à M. Royer : convention interdite (L227-12), nulle ; il ne doit pas être soumis à approbation mais remboursé, et il peut engager la responsabilité du président (voire caractériser un abus de biens sociaux s'il est contraire à l'intérêt social). Ventes à Jardivert : M. Royer étant gérant de Jardivert, il s'agit d'opérations courantes conclues à des conditions normales, donc libres (L227-11) : aucune procédure.",
+          "key_points": [
+            "Contrat Fennec : convention réglementée (associé à plus de 10 % des droits de vote), sans autorisation préalable",
+            "Rapport du commissaire aux comptes sur la convention et décision des associés à l'approbation des comptes",
+            "Convention non approuvée : effets maintenus, conséquences dommageables à la charge de l'intéressé et éventuellement des dirigeants",
+            "Prêt au président personne physique : convention interdite et nulle (L227-12), non régularisable",
+            "Ventes à Jardivert : opérations courantes à conditions normales, conventions libres (L227-11)"
+          ]
+        }
+      ],
+      "total_points": 9,
+      "explanation": "Le cas distingue les trois catégories en SAS : conventions réglementées (approbation a posteriori sur rapport, art. L227-10), conventions interdites (L227-12) et conventions courantes libres (L227-11).",
+      "source_ref": "C. com. art. L227-10, L227-11 et L227-12 ; art. L225-43 (par renvoi)",
+      "verified": true,
+      "estimated_seconds": 720
+    }
+  ]
+}

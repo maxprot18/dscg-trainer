@@ -1,0 +1,156 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-soc-capital-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "operations-sur-capital",
+      "difficulty": 2,
+      "tags": ["SA", "augmentation de capital", "libération"],
+      "statement": "Une SA dont le capital est entièrement libéré émet des actions nouvelles en numéraire, au nominal de 10 € et au prix de 18 €. Quel montant minimal chaque souscripteur doit-il verser, par action, lors de la souscription ?",
+      "options": [
+        "5 €, soit la moitié du nominal",
+        "18 €, soit la totalité du prix d'émission",
+        "4,50 €, soit le quart du prix d'émission",
+        "10,50 €, soit le quart du nominal et la totalité de la prime"
+      ],
+      "answer": [3],
+      "multiple": false,
+      "explanation": "Lors d'une augmentation de capital, les actions de numéraire sont libérées d'au moins un quart de leur valeur nominale et de la totalité de la prime d'émission (C. com. art. L225-144) : 10 × 1/4 + (18 − 10) = 2,50 + 8 = 10,50 € (option 4). La moitié du nominal (option 1) est la règle de la constitution (art. L225-3). La libération intégrale (option 2) est possible mais pas obligatoire. Le quart du prix d'émission (option 3) oublie que la prime doit être versée en totalité.",
+      "source_ref": "C. com. art. L225-144 (libération des actions de numéraire en cas d'augmentation de capital)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue1-soc-capital-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "operations-sur-capital",
+      "difficulty": 2,
+      "tags": ["SA", "réduction de capital", "opposition des créanciers"],
+      "statement": "L'AGE d'une SA décide une réduction de capital non motivée par des pertes, par rachat et annulation d'actions. Quelle affirmation est exacte ?",
+      "options": [
+        "Les créanciers dont la créance est antérieure peuvent former opposition, et les opérations de réduction ne peuvent commencer pendant le délai d'opposition",
+        "Les créanciers ne disposent d'aucun recours, la décision relevant de la seule souveraineté de l'assemblée",
+        "La réduction exige l'unanimité des actionnaires, car elle porte atteinte à leurs droits",
+        "Le conseil d'administration peut décider seul la réduction, sans autorisation de l'assemblée"
+      ],
+      "answer": [0],
+      "multiple": false,
+      "explanation": "Une réduction non motivée par des pertes diminue le gage des créanciers : ceux dont la créance est antérieure au dépôt du procès-verbal au greffe peuvent former opposition, et les opérations ne peuvent commencer pendant le délai d'opposition ni, le cas échéant, avant qu'il ait été statué en première instance (C. com. art. L225-205) : option 1. L'option 2 nie ce droit d'opposition. La réduction est votée par l'AGE à la majorité des deux tiers, sans unanimité (option 3), sous réserve de l'égalité des actionnaires. Le conseil ne peut agir seul (option 4) : il peut seulement recevoir une délégation de l'AGE (art. L225-204).",
+      "source_ref": "C. com. art. L225-204 (compétence de l'AGE) et L225-205 (opposition des créanciers)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue1-soc-capital-0003",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "operations-sur-capital",
+      "difficulty": 2,
+      "tags": ["DPS", "valeur théorique", "augmentation de capital"],
+      "statement": "La SA Kerval a un capital de 400 000 actions, cotées 36 € avant l'opération. Elle émet en numéraire 100 000 actions nouvelles au prix de 28 € (nominal 10 €), à raison d'une action nouvelle pour quatre anciennes, avec maintien du droit préférentiel de souscription. Calculez la valeur théorique d'un droit préférentiel de souscription, en euros, arrondie au centime.",
+      "expected_value": 1.6,
+      "tolerance": { "kind": "absolute", "value": 0.01 },
+      "unit": "€",
+      "decimals": 2,
+      "explanation": "Valeur théorique de l'action après émission : (400 000 × 36 + 100 000 × 28) / 500 000 = (14 400 000 + 2 800 000) / 500 000 = 34,40 €.\nValeur théorique du DPS = valeur avant − valeur après = 36 − 34,40 = 1,60 €. Formule directe : (36 − 28) × 100 000 / 500 000 = 8 × 1/5 = 1,60 €.\nErreur classique : diviser l'écart par le rapport anciennes/nouvelles (8 / 4 = 2 €) au lieu de rapporter les actions nouvelles au nombre total après émission.",
+      "source_ref": "C. com. art. L225-132 (droit préférentiel de souscription, négociable)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue1-soc-capital-0004",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "operations-sur-capital",
+      "difficulty": 2,
+      "tags": ["augmentation de capital", "prime d'émission", "souscription", "capital appelé"],
+      "statement": "Le 15 mars N, la SA Ombelle (capital entièrement libéré) enregistre la souscription de 50 000 actions nouvelles en numéraire, de nominal 10 €, émises au prix de 16 €. La société appelle le minimum légal à la souscription ; le solde du nominal sera appelé ultérieurement. Passez l'écriture constatant la souscription (avant tout versement des fonds), en utilisant les comptes 4562 (capital appelé non versé), 109 (capital souscrit non appelé), 1011, 1012 et 1041.",
+      "date": "15/03/N",
+      "entries": [
+        { "account": "4562", "label": "Apporteurs - capital appelé non versé", "debit": 425000, "credit": 0 },
+        { "account": "109", "label": "Actionnaires - capital souscrit non appelé", "debit": 375000, "credit": 0 },
+        { "account": "1011", "label": "Capital souscrit - non appelé", "debit": 0, "credit": 375000 },
+        { "account": "1012", "label": "Capital souscrit - appelé, non versé", "debit": 0, "credit": 125000 },
+        { "account": "1041", "label": "Primes d'émission", "debit": 0, "credit": 300000 }
+      ],
+      "explanation": "Minimum légal (C. com. art. L225-144) : un quart du nominal et la totalité de la prime.\n- Nominal appelé : 50 000 × 10 × 1/4 = 125 000 € (crédit 1012) ; nominal non appelé : 50 000 × 7,50 = 375 000 € (crédit 1011, débit 109).\n- Prime : 50 000 × (16 − 10) = 300 000 €, appelée en totalité (crédit 1041).\n- Créance sur les souscripteurs pour la part appelée : 125 000 + 300 000 = 425 000 € (débit 4562).\nTotal : 800 000 € = 50 000 × 16. Lors du versement, la banque (512) sera débitée par le crédit du 4562, et le capital appelé versé sera viré du 1012 au 1013.",
+      "source_ref": "C. com. art. L225-144 ; PCG (règl. ANC 2014-03), comptes 1011, 1012, 1041, 109 et 4562",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue1-soc-capital-0005",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "operations-sur-capital",
+      "difficulty": 3,
+      "tags": ["augmentation de capital", "DPS", "dilution", "suppression du DPS"],
+      "title": "Orme : augmentation de capital et dilution",
+      "context": "La SA Orme, non cotée, a un capital de 600 000 € divisé en 60 000 actions de 10 € de nominal, entièrement libérées. La valeur réelle de l'action, établie par un expert, est de 45 €.\nPour financer une nouvelle usine, le conseil d'administration propose à l'AGE une augmentation de capital en numéraire de 20 000 actions nouvelles émises au prix de 33 €, avec maintien du droit préférentiel de souscription (une action nouvelle pour trois anciennes).\nMme Delmas détient 9 000 actions. Elle ne dispose pas des liquidités nécessaires pour souscrire et envisage de céder l'intégralité de ses droits préférentiels de souscription à leur valeur théorique.\nUn administrateur suggère, en alternative, de réserver toute l'émission à un fonds d'investissement extérieur.\nOn suppose que la valeur théorique de l'action après l'opération se forme sur la base de la valeur réelle avant émission et du prix d'émission.",
+      "sub_questions": [
+        {
+          "id": "q1-dps",
+          "kind": "numeric",
+          "prompt": "Calculez la valeur théorique d'un droit préférentiel de souscription, en euros.",
+          "points": 2,
+          "expected_value": 3,
+          "tolerance": { "kind": "absolute", "value": 0.01 },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "Valeur après émission : (60 000 × 45 + 20 000 × 33) / 80 000 = (2 700 000 + 660 000) / 80 000 = 42 €. DPS = 45 − 42 = 3 €, ou (45 − 33) × 20 000 / 80 000 = 12 × 1/4 = 3 €. L'erreur (45 − 33) / 3 = 4 € est hors tolérance."
+        },
+        {
+          "id": "q2-dilution",
+          "kind": "numeric",
+          "prompt": "Mme Delmas cède tous ses droits et ne souscrit pas. Quel pourcentage du capital détient-elle après l'opération ? Réponse en pourcentage, arrondie au centième.",
+          "points": 2,
+          "expected_value": 11.25,
+          "tolerance": { "kind": "absolute", "value": 0.1 },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Avant : 9 000 / 60 000 = 15 %. Après : 9 000 / 80 000 = 11,25 %. Sa participation est diluée de 3,75 points."
+        },
+        {
+          "id": "q3-suppression",
+          "kind": "mcq",
+          "prompt": "Si l'émission était réservée au fonds d'investissement, quelle condition devrait être respectée ?",
+          "points": 2,
+          "options": [
+            "Une décision du conseil d'administration, le DPS relevant de sa compétence exclusive",
+            "Une décision de l'AGE supprimant le DPS, au vu d'un rapport du conseil d'administration et d'un rapport du commissaire aux comptes",
+            "L'accord unanime de tous les actionnaires, chacun renonçant individuellement à son droit",
+            "Aucune formalité particulière, le DPS ne bénéficiant qu'aux sociétés cotées"
+          ],
+          "answer": [1],
+          "multiple": false,
+          "explanation": "La suppression du DPS relève de l'AGE, qui statue sur le rapport du conseil d'administration et sur celui du commissaire aux comptes (C. com. art. L225-135) : option 2. Le conseil ne peut supprimer le DPS de sa propre autorité (option 1). L'unanimité n'est pas requise (option 3) : une renonciation individuelle est une autre technique, non une condition de la suppression collective. Le DPS existe dans toutes les SA, cotées ou non (option 4, art. L225-132)."
+        },
+        {
+          "id": "q4-analyse",
+          "kind": "open",
+          "prompt": "Montrez, chiffres à l'appui, que la cession des droits préserve en théorie le patrimoine de Mme Delmas, puis indiquez ce qu'elle perd néanmoins.",
+          "points": 3,
+          "model_answer": "Avant l'opération, le patrimoine de Mme Delmas vaut 9 000 × 45 = 405 000 €. Après, ses 9 000 actions valent 9 000 × 42 = 378 000 € ; la cession de ses 9 000 droits à 3 € lui rapporte 27 000 €. Total : 405 000 €, soit le même montant. Le DPS compense exactement la baisse de valeur de l'action due à l'émission en dessous de la valeur réelle. En revanche, sa participation passe de 15 % à 11,25 % : elle perd du pouvoir (droits de vote, poids en assemblée, éventuelle minorité de blocage) et une part des bénéfices futurs.",
+          "key_points": [
+            "Patrimoine avant : 9 000 × 45 = 405 000 €",
+            "Patrimoine après : 9 000 × 42 + 9 000 × 3 = 405 000 €, neutralité patrimoniale",
+            "Le DPS compense la dilution financière liée à un prix d'émission inférieur à la valeur réelle",
+            "Dilution du pouvoir : 15 % ramenés à 11,25 % des droits de vote et des droits aux dividendes"
+          ]
+        }
+      ],
+      "total_points": 9,
+      "explanation": "Le cas relie calcul du DPS, dilution et règles de compétence : le DPS neutralise la perte de valeur, pas la perte de pouvoir ; sa suppression relève de l'AGE sur rapports du conseil et du commissaire aux comptes.",
+      "source_ref": "C. com. art. L225-129, L225-131, L225-132 et L225-135",
+      "verified": true,
+      "estimated_seconds": 720
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-soc-pacte-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "pactes-associes-clauses-statutaires",
+      "difficulty": 1,
+      "tags": ["SAS", "clause d'inaliénabilité"],
+      "statement": "Les statuts d'une SAS peuvent prévoir l'inaliénabilité des actions. Quelle est la durée maximale de cette inaliénabilité fixée par la loi ?",
+      "options": [
+        "Cinq ans",
+        "Quinze ans",
+        "Dix ans",
+        "La durée de la société, soit au plus 99 ans"
+      ],
+      "answer": [2],
+      "multiple": false,
+      "explanation": "Les statuts de la SAS peuvent prévoir l'inaliénabilité des actions pour une durée n'excédant pas dix ans (C. com. art. L227-13) : option 3. Cinq ans (option 1) est une durée possible mais pas le maximum légal. Quinze ans (option 2) et la durée de la société (option 4) dépassent le plafond : une inaliénabilité trop longue porterait une atteinte excessive au droit de propriété.",
+      "source_ref": "C. com. art. L227-13",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue1-soc-pacte-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "pactes-associes-clauses-statutaires",
+      "difficulty": 2,
+      "tags": ["SAS", "clause d'agrément", "sanction", "nullité"],
+      "statement": "Les statuts de la SAS Atrium soumettent toute cession d'actions à l'agrément préalable de la collectivité des associés. Un associé cède ses actions à un tiers sans solliciter cet agrément. Quelle est la sanction prévue par la loi ?",
+      "options": [
+        "La cession est valable ; l'associé cédant doit seulement des dommages-intérêts à la société",
+        "La cession est valable entre les parties mais inopposable à la société pendant dix ans",
+        "La cession est valable si le cessionnaire était de bonne foi",
+        "La cession est nulle"
+      ],
+      "answer": [3],
+      "multiple": false,
+      "explanation": "Toute cession effectuée en violation des clauses statutaires (inaliénabilité, agrément…) est nulle (C. com. art. L227-15) : option 4. L'allocation de seuls dommages-intérêts (option 1) est la sanction de principe de la violation d'un pacte extrastatutaire, pas d'une clause statutaire de SAS. L'inopposabilité temporaire (option 2) n'existe pas. La bonne foi du cessionnaire (option 3) est indifférente : les statuts publiés lui sont opposables.",
+      "source_ref": "C. com. art. L227-14 et L227-15",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue1-soc-pacte-0003",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "pactes-associes-clauses-statutaires",
+      "difficulty": 2,
+      "tags": ["pacte d'associés", "effet relatif", "opposabilité"],
+      "statement": "Un pacte d'associés extrastatutaire est opposable aux tiers acquéreurs de titres dans les mêmes conditions que les statuts.",
+      "answer": false,
+      "justification": "Le pacte est un contrat : il ne crée d'obligations qu'entre ses signataires (effet relatif, C. civ. art. 1199). Les statuts, publiés, sont au contraire opposables aux tiers.",
+      "explanation": "La violation d'un pacte se résout en principe par des dommages-intérêts dus par le signataire défaillant. Le tiers acquéreur n'est atteint que dans des cas particuliers : pour un pacte de préférence, le bénéficiaire peut obtenir la nullité de la cession ou sa substitution au tiers si celui-ci connaissait l'existence du pacte et l'intention du bénéficiaire de s'en prévaloir (C. civ. art. 1123, al. 2). C'est pourquoi les clauses jugées essentielles (agrément, inaliénabilité, exclusion) sont souvent insérées dans les statuts, où leur violation est sanctionnée par la nullité (en SAS, C. com. art. L227-15).",
+      "source_ref": "C. civ. art. 1199 (effet relatif) et art. 1123 (pacte de préférence) ; C. com. art. L227-15",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue1-soc-pacte-0004",
+      "type": "flashcard",
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "pactes-associes-clauses-statutaires",
+      "difficulty": 1,
+      "tags": ["SA", "clause d'agrément", "refus d'agrément"],
+      "front": "SA non cotée : que se passe-t-il si la société refuse d'agréer le cessionnaire proposé ?",
+      "back": "Le conseil d'administration (ou le directoire) doit, dans les 3 mois de la notification du refus, faire acquérir les actions par un actionnaire, par un tiers ou, avec le consentement du cédant, par la société en vue d'une réduction de capital.\nÀ défaut d'accord, le prix est fixé par un expert (C. civ. art. 1843-4).\nSi l'achat n'est pas réalisé dans ce délai (prorogeable en justice), l'agrément est réputé donné.",
+      "explanation": "C. com. art. L228-24. En amont, le silence gardé par la société pendant trois mois après la demande d'agrément vaut agrément (art. L228-23). Le mécanisme garantit au cédant une sortie : la clause d'agrément ne peut pas aboutir à le rendre prisonnier de ses titres.",
+      "source_ref": "C. com. art. L228-23 et L228-24 ; C. civ. art. 1843-4",
+      "verified": true,
+      "estimated_seconds": 45
+    }
+  ]
+}
