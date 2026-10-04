@@ -1,0 +1,379 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-dossier-0001",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "notion": "actualisation-flux-dcf",
+      "difficulty": 3,
+      "tags": [
+        "sujet type",
+        "diagnostic financier",
+        "SIG",
+        "effet de levier",
+        "flux de trésorerie disponible",
+        "MEDAF",
+        "CMPC",
+        "DCF",
+        "multiples",
+        "cession"
+      ],
+      "source_ref": "Méthode PCG des soldes intermédiaires de gestion (règl. ANC 2014-03, système développé) ; relation de l'effet de levier ; IAS 7 §10 et §18-20 (règl. UE 2023/1803) pour la logique des flux ; MEDAF et relation de Hamada ; modèle de Gordon-Shapiro appliqué à la valeur terminale ; CGI art. 39 (déductibilité des intérêts)",
+      "verified": true,
+      "estimated_seconds": 5400,
+      "total_points": 20,
+      "title": "Menuiseries Albarède : diagnostic et évaluation en vue d'une cession",
+      "context": "La société **Menuiseries Albarède SAS**, installée près de Valence, conçoit et fabrique du mobilier de bureau et des agencements sur mesure pour les entreprises et les collectivités. Elle revend aussi, en négoce, des sièges et accessoires achetés auprès de fabricants partenaires. Elle emploie 85 salariés et a réalisé un chiffre d'affaires de 13,2 M€ en 2025.\n\nSa présidente et unique associée, **Hélène Albarède**, 64 ans, souhaite céder la totalité des titres. Le groupe **Ostral**, concurrent industriel de taille nationale, a remis une lettre d'intention (annexe 5). Mme Albarède juge l'offre très insuffisante, mais elle se demande si sa propre prétention est réaliste. Elle s'inquiète aussi de la baisse de rentabilité constatée en 2025 et de la tension de trésorerie, que l'acquéreur ne manquera pas de souligner.\n\nVous êtes collaborateur du cabinet d'expertise comptable qui accompagne Mme Albarède. Le cabinet vous confie deux travaux :\n\n1. un **diagnostic financier** des exercices 2024 et 2025 (activité, rentabilité, flux de trésorerie), destiné à anticiper les arguments de l'acquéreur ;\n2. une **évaluation des titres au 31 décembre 2025** par l'actualisation des flux de trésorerie disponibles et par les multiples, afin de proposer une fourchette de prix argumentée pour la négociation.\n\nSauf mention contraire, les montants sont en milliers d'euros (k€), le taux d'impôt sur les sociétés est de 25 % et les flux du plan d'affaires sont supposés intervenir en fin d'année. Arrondissez les pourcentages à deux décimales et les montants au k€.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Comptes de résultat simplifiés (k€)",
+          "content": "| Postes | 2024 | 2025 |\n| --- | ---: | ---: |\n| Ventes de marchandises | 1 200 | 1 300 |\n| Achats de marchandises | 760 | 820 |\n| Stock de marchandises au 1er janvier | 140 | 150 |\n| Stock de marchandises au 31 décembre | 150 | 170 |\n| Production vendue | 10 800 | 11 900 |\n| Production stockée | 100 | −50 |\n| Matières et approvisionnements consommés | 4 300 | 4 900 |\n| Autres achats et charges externes | 1 900 | 2 100 |\n| Subventions d'exploitation | 40 | 30 |\n| Impôts, taxes et versements assimilés | 220 | 240 |\n| Charges de personnel | 3 500 | 3 800 |\n| Autres produits d'exploitation (encaissables) | 30 | 20 |\n| Dotations aux amortissements | 600 | 650 |\n| Autres charges d'exploitation (décaissables) | 10 | 10 |\n| Produits financiers | 10 | 10 |\n| Charges financières (intérêts) | 180 | 200 |\n| Produits exceptionnels sur cession d'immobilisations | 0 | 120 |\n| Valeur nette comptable des immobilisations cédées | 0 | 70 |\n| Impôt sur les bénéfices (25 %) | 180 | 140 |\n| **Résultat net** | **540** | **420** |\n\nLa société n'a constitué aucune provision ; aucune reprise n'est intervenue sur les deux exercices."
+        },
+        {
+          "title": "Annexe 2 — Bilans économiques et informations sur les flux de 2025 (k€)",
+          "content": "**Bilans économiques au 31 décembre**\n\n| Emplois | 2024 | 2025 | Ressources | 2024 | 2025 |\n| --- | ---: | ---: | --- | ---: | ---: |\n| Immobilisations d'exploitation nettes | 5 200 | 5 600 | Capitaux propres | 4 500 | 4 720 |\n| BFR d'exploitation | 2 300 | 2 900 | Dettes financières | 3 600 | 4 200 |\n| | | | Trésorerie active (à déduire) | −600 | −420 |\n| | | | Endettement financier net | 3 000 | 3 780 |\n| **Actif économique** | **7 500** | **8 500** | **Capitaux investis** | **7 500** | **8 500** |\n\nLa trésorerie active n'est pas excédentaire : elle est nécessaire à l'exploitation courante mais elle est retenue en déduction des dettes pour mesurer l'endettement net.\n\n**Informations complémentaires sur 2025**\n- Acquisitions d'immobilisations : 1 120.\n- Cession d'une ligne de façonnage : prix encaissé 120, valeur nette comptable 70.\n- Dividendes versés en 2025 : 200.\n- Nouveaux emprunts : 1 000 ; remboursements d'emprunts : 400.\n- Le BFR d'exploitation, stable autour de 19 % du chiffre d'affaires jusqu'en 2024, a été dégradé en 2025 par un allongement des délais de paiement accordés aux collectivités."
+        },
+        {
+          "title": "Annexe 3 — Plan d'affaires 2026-2030 établi par la direction (k€)",
+          "content": "| Années | 2026 | 2027 | 2028 | 2029 | 2030 |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| Résultat d'exploitation (EBIT) | 800 | 900 | 1 000 | 1 080 | 1 120 |\n| Dotations aux amortissements | 680 | 700 | 720 | 740 | 760 |\n| Investissements | 800 | 760 | 760 | 760 | 760 |\n| Augmentation du BFR d'exploitation | 150 | 120 | 120 | 100 | 80 |\n\nHypothèses de la direction :\n- redressement progressif de la marge grâce à une hausse de tarifs négociée avec les principaux clients et à la renégociation des contrats d'approvisionnement en panneaux ;\n- au-delà de 2030, les flux de trésorerie disponibles croissent de **2 % par an** à l'infini ; le flux de 2030 est jugé normatif (investissements égaux aux dotations) ;\n- l'impôt normatif est calculé au taux de 25 % sur le résultat d'exploitation."
+        },
+        {
+          "title": "Annexe 4 — Données de marché et sociétés comparables",
+          "content": "**Paramètres du coût du capital (hypothèses retenues par le cabinet)**\n- Taux sans risque (OAT 10 ans) : 3,20 %.\n- Prime de risque du marché actions : 5,50 %.\n- Prime spécifique (taille et faible liquidité des titres) ajoutée au coût des capitaux propres : 1,25 %.\n- Coût de la dette avant impôt (taux auquel la société emprunterait aujourd'hui) : 5,00 %.\n- Structure financière cible, en valeurs de marché : dette nette / capitaux propres = 0,5.\n- La dette est supposée sans risque pour la relation de Hamada.\n\n**Sociétés cotées comparables (mobilier professionnel)**\n\n| Société | Bêta des capitaux propres | Dette nette / capitaux propres (valeurs de marché) | VE / EBE 2025 |\n| --- | ---: | ---: | ---: |\n| Comparable A | 1,04 | 0,40 | 7,0 |\n| Comparable B | 0,87 | 0,20 | 6,5 |\n| Comparable C | 1,28 | 0,60 | 7,5 |\n| Comparable D | non disponible | non disponible | 9,8 |\n\nTaux d'impôt de toutes les sociétés : 25 %. Le cabinet retient la **médiane** des échantillons. Pour une cession de 100 % des titres, il considère que la décote d'illiquidité et la prime de contrôle se compensent lorsqu'on applique des multiples boursiers : aucun ajustement n'est donc pratiqué.\n\n**Transactions récentes dans le secteur (acquisitions de 100 % des titres)** : VE / EBE de 7,6 ; 8,0 et 8,4."
+        },
+        {
+          "title": "Annexe 5 — Extrait de la lettre d'intention du groupe Ostral et position de la cédante",
+          "content": "*Extrait de la lettre d'intention (rédigée en propre pour le cas) :*\n\n« Sous réserve des conclusions de l'audit d'acquisition, Ostral propose d'acquérir 100 % des titres de Menuiseries Albarède pour un prix de **5 400 k€**, déterminé sur la base de la dette nette au 31 décembre 2025. Ce prix sera ajusté, euro pour euro, de l'écart entre la dette nette constatée à la date de cession et celle du 31 décembre 2025. La cédante consentira une garantie d'actif et de passif d'une durée de trois ans, plafonnée à 15 % du prix. Notre offre tient compte de la baisse de rentabilité de 2025, du niveau d'endettement et du caractère, selon nous, optimiste du plan d'affaires. »\n\n*Position de Mme Albarède :* elle demande **8 000 k€**, chiffre obtenu par un conseil qui a actualisé le même plan d'affaires au même coût du capital, mais avec une croissance à l'infini de 3 %."
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "À partir de l'annexe 1, calculez l'excédent brut d'exploitation (EBE) de 2025, en k€.",
+          "points": 1.5,
+          "expected_value": 1340,
+          "tolerance": { "kind": "absolute", "value": 1 },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "Coût d'achat des marchandises vendues = 820 + 150 − 170 = 800 ; marge commerciale = 1 300 − 800 = 500. Production de l'exercice = 11 900 − 50 = 11 850. Valeur ajoutée = 500 + 11 850 − 4 900 − 2 100 = 5 350. EBE = 5 350 + 30 − 240 − 3 800 = **1 340 k€** (2024 : 1 470 k€). Erreurs classiques : retrancher les dotations (690, c'est déjà presque le résultat d'exploitation), oublier la variation du stock de marchandises (EBE de 1 320) ou inclure les autres produits d'exploitation, qui viennent après l'EBE."
+        },
+        {
+          "id": "q2",
+          "kind": "open",
+          "prompt": "À l'aide de l'annexe 1 et de vos calculs, commentez l'évolution de l'activité et de la rentabilité d'exploitation entre 2024 et 2025 (croissance, taux de valeur ajoutée, taux de marge d'EBE, partage de la valeur ajoutée). Quel argument l'acquéreur peut-il en tirer ?",
+          "points": 2,
+          "model_answer": "Le chiffre d'affaires progresse de 10 % (12 000 k€ en 2024, 13 200 k€ en 2025), porté par la production vendue (+10,2 %) et, plus modestement, par le négoce, dont le taux de marge commerciale reste stable (37,5 % puis 38,5 %). Cette croissance ne se retrouve pas dans les soldes : la valeur ajoutée n'augmente que de 3,9 % (5 150 à 5 350 k€) et son taux sur chiffre d'affaires recule de 42,9 % à 40,5 %, car les consommations en provenance des tiers (matières et charges externes) croissent de 12,9 % et la production stockée devient négative. L'EBE baisse de 8,8 % (1 470 à 1 340 k€) : son taux passe de 12,25 % à 10,15 % du chiffre d'affaires. Les charges de personnel (+8,6 %) absorbent une part croissante de la valeur ajoutée (68,0 % puis 71,0 %). Le résultat d'exploitation recule plus fortement (890 à 700 k€, −21 %) sous l'effet de dotations en hausse. On observe donc un effet ciseau : les charges croissent plus vite que l'activité, signe d'une difficulté à répercuter la hausse des coûts dans les prix. L'acquéreur s'en servira pour contester le redressement de marge prévu au plan d'affaires et justifier un prix bas ; la cédante devra documenter les hausses de tarifs déjà négociées.",
+          "key_points": [
+            "Croissance du chiffre d'affaires de 10 % mais valeur ajoutée en hausse de 3,9 % seulement (taux de VA de 42,9 % à 40,5 %)",
+            "Taux de marge d'EBE en baisse de 12,25 % à 10,15 % : effet ciseau",
+            "Consommations externes (+12,9 %) et personnel (part de la VA de 68,0 % à 71,0 %) progressent plus vite que l'activité",
+            "Résultat d'exploitation en recul d'environ 21 % malgré la croissance",
+            "Argument de l'acquéreur : crédibilité du redressement de marge du plan d'affaires, donc pression sur le prix"
+          ],
+          "explanation": "Calculs : VA/CA = 5 150 / 12 000 = 42,9 % puis 5 350 / 13 200 = 40,5 % ; EBE/CA = 12,25 % puis 10,15 % ; personnel/VA = 3 500 / 5 150 = 68,0 % puis 3 800 / 5 350 = 71,0 % ; consommations externes 6 200 puis 7 000 (+12,9 %). Une bonne copie relie les chiffres à une cause (prix non répercutés, coûts des matières) et à l'enjeu de la cession."
+        },
+        {
+          "id": "q3",
+          "kind": "numeric",
+          "prompt": "À partir des annexes 1 et 2, calculez la rentabilité économique après impôt de 2025, rapportée à l'actif économique de clôture, en %.",
+          "points": 1.5,
+          "expected_value": 6.18,
+          "tolerance": { "kind": "absolute", "value": 0.1 },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Re = résultat d'exploitation × (1 − t) / actif économique = 700 × 0,75 / 8 500 = 525 / 8 500 = **6,18 %** (2024 : 890 × 0,75 / 7 500 = 8,90 %). Résultat d'exploitation 2025 = EBE 1 340 + autres produits 20 − dotations 650 − autres charges 10 = 700. Erreurs : oublier l'impôt (8,24 %), utiliser le résultat net (4,94 %), qui dépend du financement."
+        },
+        {
+          "id": "q4",
+          "kind": "numeric",
+          "prompt": "À partir des annexes 1 et 2, calculez la rentabilité financière courante après impôt de 2025 (hors résultat exceptionnel), rapportée aux capitaux propres de clôture, en %. Vous pouvez utiliser la relation de l'effet de levier, avec un coût net de l'endettement après impôt égal à (charges financières − produits financiers) × (1 − t) / endettement net de clôture.",
+          "points": 1.5,
+          "expected_value": 8.1,
+          "tolerance": { "kind": "absolute", "value": 0.1 },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Coût net de l'endettement : i = (200 − 10) × 0,75 / 3 780 = 3,77 %. Bras de levier D/CP = 3 780 / 4 720 = 0,801. Rf = Re + (Re − i) × D/CP = 6,18 % + (6,18 % − 3,77 %) × 0,801 = **8,10 %**. Vérification directe : résultat courant après impôt = (700 − 190) × 0,75 = 382,5 ; 382,5 / 4 720 = 8,10 %. L'effet de levier reste positif (Re > i), mais le différentiel s'est fortement réduit. Erreurs : bras de levier D/(D + CP), qui donne 7,25 % ; prendre le résultat net comptable (420 / 4 720 = 8,90 %), qui inclut la plus-value de cession non récurrente."
+        },
+        {
+          "id": "q5",
+          "kind": "numeric",
+          "prompt": "À partir des annexes 1 et 2, calculez le flux de trésorerie disponible de 2025 (flux de trésorerie liés à l'activité − acquisitions d'immobilisations + cessions d'immobilisations), en k€. Les flux liés à l'activité sont obtenus à partir de la capacité d'autofinancement et de la variation du BFR d'exploitation.",
+          "points": 2,
+          "expected_value": -580,
+          "tolerance": { "kind": "absolute", "value": 1 },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "CAF = résultat net + dotations − produit de cession + VNC des actifs cédés = 420 + 650 − 120 + 70 = 1 020 (vérification soustractive : 1 340 + 20 − 10 + 10 − 200 − 140 = 1 020). Flux liés à l'activité = 1 020 − (2 900 − 2 300) = 420. FTD = 420 − 1 120 + 120 = **−580 k€**. Rapprochement : −580 − 200 (dividendes) + 1 000 − 400 (emprunts) = −180, égal à la baisse de la trésorerie (600 à 420). Erreurs : oublier la hausse du BFR (+20), oublier le prix de cession (−700), ou laisser la plus-value dans la CAF et ajouter aussi le prix (−530, double comptage)."
+        },
+        {
+          "id": "q6",
+          "kind": "true_false",
+          "prompt": "Vrai ou faux ? Au vu des annexes 1 et 2, le flux de trésorerie disponible négatif de 2025 suffit à établir que la société n'est plus en mesure de faire face à ses échéances.",
+          "points": 1,
+          "answer": false,
+          "explanation": "Faux. La CAF reste nettement positive (1 020 k€) ; le FTD négatif vient d'investissements supérieurs aux dotations (1 120 contre 650 : outil en développement) et d'une hausse ponctuelle du BFR (600 k€, passage de 19,2 % à 22,0 % du chiffre d'affaires). Il signale en revanche un financement par la dette (endettement net de 3 000 à 3 780 k€) et une distribution de 200 k€ non couverte par le FTD, situation non durable si elle se prolonge : c'est un point de vigilance, pas une preuve de défaillance."
+        },
+        {
+          "id": "q7",
+          "kind": "numeric",
+          "prompt": "À partir de l'annexe 4, calculez le coût des capitaux propres de Menuiseries Albarède, en % : désendettez les bêtas des comparables, retenez la médiane des bêtas de l'actif économique, réendettez-la avec la structure cible, appliquez le MEDAF puis ajoutez la prime spécifique.",
+          "points": 1.5,
+          "expected_value": 10.5,
+          "tolerance": { "kind": "absolute", "value": 0.05 },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Bêtas désendettés β_A = β_CP / [1 + (1 − t) × D/CP] : A = 1,04 / 1,30 = 0,80 ; B = 0,87 / 1,15 = 0,757 ; C = 1,28 / 1,45 = 0,883. Médiane : 0,80. Bêta réendetté : 0,80 × (1 + 0,75 × 0,5) = 1,10. k_CP = 3,20 % + 1,10 × 5,50 % + 1,25 % = **10,50 %**. Erreurs : réendetter avec D/V = 1/3 au lieu de D/CP (β = 1,00, k_CP = 9,95 %) ; oublier la prime spécifique (9,25 %) ; retenir la moyenne des bêtas des capitaux propres sans les désendetter (β = 1,063, k_CP = 10,30 %) ; multiplier le bêta par la rentabilité du marché au lieu de la prime."
+        },
+        {
+          "id": "q8",
+          "kind": "numeric",
+          "prompt": "À partir de l'annexe 4 et de la question précédente, calculez le coût moyen pondéré du capital (CMPC), en %.",
+          "points": 1,
+          "expected_value": 8.25,
+          "tolerance": { "kind": "absolute", "value": 0.05 },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Pondérations cibles : CP/V = 1 / 1,5 = 2/3, D/V = 1/3. Coût de la dette après impôt : 5,00 % × 0,75 = 3,75 %. CMPC = 10,50 % × 2/3 + 3,75 % × 1/3 = 7,00 % + 1,25 % = **8,25 %**. Erreurs : oublier l'économie d'impôt sur la dette (8,67 %), pondérer avec D/CP = 0,5 au lieu de D/V, utiliser le coût historique de la dette de l'annexe 1."
+        },
+        {
+          "id": "q9",
+          "kind": "numeric",
+          "prompt": "À partir de l'annexe 3, calculez les flux de trésorerie disponibles de 2026 à 2030, puis la valeur des capitaux propres au 31 décembre 2025 par la méthode DCF, en k€. Retenez un CMPC de 8,25 % quel que soit votre résultat précédent, une croissance à l'infini de 2 % et l'endettement net de l'annexe 2.",
+          "points": 2.5,
+          "expected_value": 6771,
+          "tolerance": { "kind": "relative", "value": 0.01 },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "FTD = EBIT × 0,75 + dotations − investissements − ΔBFR : 2026 : 600 + 680 − 800 − 150 = 330 ; 2027 : 495 ; 2028 : 590 ; 2029 : 690 ; 2030 : 840 + 760 − 760 − 80 = 760. Valeurs actualisées à 8,25 % : 304,8 ; 422,4 ; 465,1 ; 502,5 ; 511,3, soit 2 206,2. Valeur terminale fin 2030 = 760 × 1,02 / (0,0825 − 0,02) = 12 403,2, actualisée sur 5 ans : 8 344,4. VE = 10 550,6 ; valeur des capitaux propres = 10 550,6 − 3 780 = **6 771 k€** (environ). La valeur terminale représente 79 % de la VE. Erreurs : ne pas actualiser la valeur terminale (10 829), la calculer avec le flux de 2030 sans croissance (6 607), l'actualiser sur 6 ans (6 135), déduire les frais financiers des flux, ou annoncer la VE (10 551) comme valeur des titres."
+        },
+        {
+          "id": "q10",
+          "kind": "mcq",
+          "prompt": "À partir des annexes 1, 2 et 4, quelle valeur des capitaux propres (en k€) obtient-on par le multiple boursier VE / EBE, selon la méthode retenue par le cabinet ?",
+          "points": 1.5,
+          "options": [
+            "9 715",
+            "6 538",
+            "6 878",
+            "5 935"
+          ],
+          "answer": [3],
+          "multiple": false,
+          "explanation": "Médiane des quatre multiples boursiers (6,5 ; 7,0 ; 7,5 ; 9,8) = (7,0 + 7,5) / 2 = 7,25. VE = 7,25 × EBE 2025 de 1 340 = 9 715 ; valeur des capitaux propres = 9 715 − 3 780 = 5 935 k€ (option 4), sans décote ni prime selon l'annexe 4. L'option 1 est la valeur d'entreprise, avant déduction de l'endettement net. L'option 2 utilise la moyenne (7,7), tirée vers le haut par la valeur extrême 9,8. L'option 3 applique la médiane à l'EBE de 2024 (1 470), alors que les multiples portent sur 2025."
+        },
+        {
+          "id": "q11",
+          "kind": "open",
+          "prompt": "En vous appuyant sur l'ensemble de vos résultats et des annexes 3 à 5 (vous calculerez aussi la valeur issue des transactions récentes), proposez à Mme Albarède une fourchette de prix pour 100 % des titres et argumentez votre position face à l'offre d'Ostral et à sa propre prétention.",
+          "points": 4,
+          "model_answer": "Les méthodes donnent les valeurs suivantes des capitaux propres : DCF 6 771 k€ ; multiples boursiers 5 935 k€ ; transactions récentes (médiane 8,0 × 1 340 = 10 720 de VE, moins 3 780) 6 940 k€. Le DCF est sensible au taux : à CMPC de 7,75 % ou 8,75 %, la valeur va de 7 742 à 5 944 k€, et la valeur terminale pèse près de 80 % de la VE. Il repose en outre sur un redressement de l'EBIT (de 700 en 2025 à 1 120 en 2030) que le diagnostic rend discutable : taux d'EBE en baisse, Re de 6,18 % inférieure au CMPC de 8,25 % en 2025, ce qui signifie que la société détruit actuellement de la valeur. Les multiples de transactions, qui intègrent une prime de contrôle et une partie des synergies, sont pertinents pour une cession de 100 % à un industriel. Une fourchette de 6 000 à 6 900 k€ est donc défendable, avec un objectif de négociation autour de 6 500 k€. L'offre d'Ostral (5 400 k€) est inférieure à toutes les méthodes, même aux multiples boursiers : elle revient à appliquer une décote injustifiée pour une prise de contrôle et à ignorer les synergies dont profitera un concurrent. La prétention de 8 000 k€ repose sur une croissance à l'infini de 3 %, à laquelle la valeur est très sensible (8 457 k€ contre 6 771 k€ à 2 %) et qui paraît élevée pour un secteur mature ; elle dépasse aussi la valeur issue des transactions. Pour rapprocher les positions, Mme Albarède peut proposer un complément de prix (earn-out) indexé sur l'EBE 2026-2027, qui partage le risque du plan d'affaires, et négocier le plafond de la garantie d'actif et de passif ainsi que la définition de la dette nette retenue pour l'ajustement de prix (le BFR anormalement élevé de 2025 la pénalise).",
+          "key_points": [
+            "Synthèse des valeurs : DCF environ 6 770, multiples boursiers 5 935, transactions 6 940 (médiane 8,0 × 1 340 − 3 780)",
+            "Fragilité du DCF : poids de la valeur terminale, sensibilité au CMPC et à g, plan d'affaires optimiste au regard du diagnostic (Re < CMPC)",
+            "Fourchette argumentée d'environ 6,0 à 6,9 M€, cohérente avec une cession du contrôle à un industriel",
+            "Offre de 5,4 M€ inférieure à toutes les méthodes ; prétention de 8 M€ fondée sur une croissance de 3 % peu réaliste",
+            "Leviers de négociation : complément de prix lié aux résultats, garantie d'actif et de passif, définition de la dette nette et du BFR normatif"
+          ],
+          "explanation": "On attend une conclusion chiffrée et argumentée, pas une moyenne mécanique des méthodes. Calculs d'appui : transactions 8,0 × 1 340 − 3 780 = 6 940 ; DCF à 7,75 % : 7 742 ; à 8,75 % : 5 944 ; DCF à g = 3 % : 8 457. Les meilleures copies relient l'évaluation au diagnostic (rentabilité économique inférieure au coût du capital, BFR dégradé) et proposent des mécanismes contractuels pour combler l'écart de prix."
+        }
+      ],
+      "explanation": "Méthode : (1) diagnostic : SIG (EBE 1 340 k€, taux de marge en baisse de 12,25 % à 10,15 %, effet ciseau), rentabilité économique 6,18 % et financière courante 8,10 % (levier positif mais réduit, i = 3,77 %), flux de trésorerie disponible de −580 k€ dû aux investissements et à la hausse du BFR ; (2) coût du capital : bêtas désendettés puis réendettés (β = 1,10), k_CP = 10,50 % avec la prime spécifique, CMPC = 8,25 % ; (3) évaluation : DCF 6 771 k€ (valeur terminale 79 % de la VE), multiples boursiers 5 935 k€, transactions 6 940 k€ ; (4) conclusion : fourchette d'environ 6,0 à 6,9 M€, offre d'Ostral trop basse, prétention de la cédante fondée sur une croissance à l'infini excessive, mécanismes de complément de prix pour rapprocher les parties."
+    },
+    {
+      "id": "ue2-dossier-0002",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "van-tri-criteres-investissement",
+      "difficulty": 3,
+      "tags": [
+        "sujet type",
+        "flux de trésorerie d'un projet",
+        "VAN",
+        "TRI",
+        "indice de profitabilité",
+        "emprunt",
+        "crédit-bail",
+        "risque de change",
+        "change à terme",
+        "option de change"
+      ],
+      "source_ref": "Calcul financier (VAN, TRI, indice de profitabilité, coût actuariel) ; CGI art. 39 (déductibilité des amortissements, des intérêts et des redevances) ; parité des taux d'intérêt couverte ; PCG comptes 164, 661 et 512 (règl. ANC 2014-03)",
+      "verified": true,
+      "estimated_seconds": 5400,
+      "total_points": 20,
+      "title": "Hydralis : une ligne de production pour le marché américain",
+      "context": "La société **Hydralis SAS**, implantée près d'Angers, conçoit et assemble des modules de filtration d'eau pour l'industrie agroalimentaire. Elle réalise aujourd'hui l'essentiel de son chiffre d'affaires en Europe, en euros.\n\nUn distributeur américain lui propose un **contrat d'approvisionnement de cinq ans** portant sur un module spécialement adapté aux normes nord-américaines. Les ventes seraient **facturées en dollars**, alors que tous les coûts de production resteraient en euros. Le projet suppose l'installation d'une nouvelle ligne d'assemblage dans l'usine d'Angers au 1er janvier 2027 (date 0).\n\nLe directeur administratif et financier, **Karim Benali**, vous demande, en tant que contrôleur financier, de préparer le dossier qui sera présenté au comité de direction. Il attend :\n\n1. l'évaluation de la rentabilité du projet (flux de trésorerie, VAN, TRI, indice de profitabilité) et de sa sensibilité au cours du dollar ;\n2. la comparaison des deux offres de financement reçues pour la ligne (emprunt bancaire ou crédit-bail) et l'écriture correspondante si l'emprunt est retenu ;\n3. une recommandation sur la couverture du risque de change de la première livraison, puis sur la gestion de ce risque pendant toute la durée du contrat.\n\nLe taux d'impôt sur les sociétés est de 25 % ; Hydralis est bénéficiaire et peut imputer immédiatement toute économie d'impôt. Sauf mention contraire, les flux interviennent en fin d'année.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Caractéristiques du projet",
+          "content": "**Investissement** : ligne d'assemblage de 2 000 000 € HT (TVA récupérable), payée en date 0, amortie en linéaire sur 5 ans sur le plan fiscal.\n\n**Étude de faisabilité** : 60 000 €, réalisée et payée en 2026 par un cabinet d'ingénierie.\n\n**Contrat de vente** : prix unitaire fixe de **990 USD** pendant toute la durée du contrat ; volumes fermes :\n\n| Année | 1 | 2 | 3 | 4 | 5 |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| Modules livrés | 2 000 | 2 500 | 3 000 | 3 000 | 3 000 |\n\n**Cours budgétaire** retenu par la direction pour toute la durée du projet : 1 € = 1,10 USD (soit 900 € par module).\n\n**Coûts** (en euros) : coût variable de 495 € par module ; charges fixes décaissables propres au projet de 250 000 € par an.\n\n**BFR** : 10 % du chiffre d'affaires de l'année, exprimé en euros ; il est constitué au début de chaque année (c'est-à-dire en fin d'année précédente) et récupéré intégralement en fin d'année 5.\n\n**Fin du projet** : la ligne, totalement amortie, serait revendue 150 000 € en fin d'année 5.\n\n**Coût du capital** d'Hydralis retenu pour ce projet : 9 %."
+        },
+        {
+          "title": "Annexe 2 — Offres de financement de la ligne",
+          "content": "**Offre 1 — Emprunt bancaire**\n- Montant : 2 000 000 €, débloqué en date 0.\n- Taux : 4,5 % par an ; remboursement par **annuités constantes** sur 5 ans, première échéance en fin d'année 1.\n- Frais de dossier : 20 000 €, payés en date 0, déductibles immédiatement (l'économie d'impôt correspondante est rattachée à la date 0).\n- Garanties : nantissement du matériel et caution personnelle du dirigeant actionnaire.\n\n**Offre 2 — Crédit-bail**\n- Financement de 100 % du prix de la ligne, sans apport ni garantie complémentaire.\n- Cinq redevances annuelles de **470 000 €**, payables en fin d'année.\n- Option d'achat en fin d'année 5 pour un prix symbolique, considéré comme négligeable ; la revente de la ligne pour 150 000 € reste possible après la levée de l'option, comme dans le cas d'un achat.\n\nLe DAF rappelle que les deux offres doivent être comparées sur des bases homogènes, après impôt, sans remettre en cause la décision d'investir."
+        },
+        {
+          "title": "Annexe 3 — Première livraison et données de marché au 2 janvier 2027",
+          "content": "La première livraison (500 modules) sera facturée **495 000 USD**, payables à **90 jours**.\n\n| Donnée | Valeur |\n| --- | --- |\n| Cours au comptant | 1 € = 1,1000 USD |\n| Taux d'intérêt à 90 jours sur l'euro (annuel, base 360 jours) | 2,2 % |\n| Taux d'intérêt à 90 jours sur le dollar (annuel, base 360 jours) | 4,4 % |\n| Option de vente de dollars (put USD) à 90 jours | prix d'exercice 1 € = 1,1000 USD |\n| Prime de l'option | 1,2 % du nominal converti au cours au comptant, payée immédiatement |\n\nLe cours à terme se déduit de la parité des taux d'intérêt couverte. On néglige le coût de financement de la prime."
+        },
+        {
+          "title": "Annexe 4 — Extrait du compte rendu du comité de direction du 15 décembre 2026",
+          "content": "*Compte rendu rédigé en propre pour le cas.*\n\nLe directeur général estime que « le dollar va s'apprécier dans les prochains mois : il serait dommage de se couvrir et de renoncer à ce gain ». Il ajoute que, le projet étant rentable au cours budgétaire, « le risque de change est un sujet de trésorerie, pas un sujet d'investissement ».\n\nLe DAF rappelle que la politique financière du groupe interdit toute position spéculative, que le budget de chaque année est construit sur un cours garanti, et que la marge du projet est faible par module rapportée au prix de vente. Il souhaite que le comité dispose d'un chiffrage de la sensibilité de la VAN au cours du dollar, en retenant l'hypothèse d'un dollar à 1 € = 1,20 USD pendant toute la durée du contrat."
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "À partir de l'annexe 1, calculez le flux net de trésorerie de l'année 1 du projet, au cours budgétaire, en euros.",
+          "points": 1.5,
+          "expected_value": 475000,
+          "tolerance": { "kind": "absolute", "value": 1 },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Chiffre d'affaires année 1 = 2 000 × 900 = 1 800 000 € ; EBE = 2 000 × (900 − 495) − 250 000 = 560 000 €. Dotation = 2 000 000 / 5 = 400 000 €. CAF d'exploitation = 560 000 × 0,75 + 0,25 × 400 000 = 520 000 €. Variation du BFR en fin d'année 1 (constitution pour l'année 2) : 10 % × (2 250 000 − 1 800 000) = 45 000 €. Flux net = 520 000 − 45 000 = **475 000 €**. L'étude de 60 000 € est un coût irrécupérable, exclu. Erreurs : oublier l'économie d'impôt sur l'amortissement (375 000 €), déduire en année 1 le BFR de l'année 1 lui-même (déjà constitué en date 0)."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "prompt": "À partir de l'annexe 1, calculez la valeur actuelle nette (VAN) du projet au coût du capital, au cours budgétaire, en euros.",
+          "points": 2,
+          "expected_value": 787039,
+          "tolerance": { "kind": "relative", "value": 0.01 },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Flux nets : date 0 : −2 000 000 − 180 000 (BFR de l'année 1) = −2 180 000 ; année 1 : 475 000 ; année 2 : 671 875 − 45 000 = 626 875 ; années 3 et 4 : CAF = (3 000 × 405 − 250 000) × 0,75 + 100 000 = 823 750 ; année 5 : 823 750 + 270 000 (BFR récupéré) + 112 500 (revente nette d'impôt : 150 000 × 0,75, VNC nulle) = 1 206 250. Actualisés à 9 % : −2 180 000 + 435 780 + 527 628 + 636 086 + 583 565 + 783 980 = **787 039 €**. Erreurs : inclure l'étude (727 039 €), retenir la revente brute de 150 000 € (811 412 €), oublier la récupération du BFR, ou déduire les intérêts du financement des flux."
+        },
+        {
+          "id": "q3",
+          "kind": "numeric",
+          "prompt": "À partir des flux de la question précédente, calculez le taux de rentabilité interne (TRI) du projet, en %.",
+          "points": 1.5,
+          "expected_value": 20.18,
+          "tolerance": { "kind": "absolute", "value": 0.1 },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "VAN à 20 % : +9 891 € ; VAN à 21 % : −44 942 €. Interpolation : TRI ≈ 20 % + 9 891 / (9 891 + 44 942) = **20,18 %** (la résolution numérique donne le même résultat). Le TRI est très supérieur au coût du capital de 9 %."
+        },
+        {
+          "id": "q4",
+          "kind": "numeric",
+          "prompt": "Calculez l'indice de profitabilité du projet (arrondi à deux décimales).",
+          "points": 1,
+          "expected_value": 1.36,
+          "tolerance": { "kind": "absolute", "value": 0.01 },
+          "decimals": 2,
+          "explanation": "IP = 1 + VAN / I₀ = 1 + 787 039 / 2 180 000 = **1,36** : chaque euro investi (ligne et BFR initial) rapporte 1,36 € en valeur actuelle. Erreurs : calculer VAN / I₀ seul (0,36) ou ne pas inclure le BFR initial dans l'investissement (1,39)."
+        },
+        {
+          "id": "q5",
+          "kind": "numeric",
+          "prompt": "À partir des annexes 1 et 4, recalculez la VAN du projet en supposant que le dollar s'établisse à 1 € = 1,20 USD pendant toute la durée du contrat (prix en dollars, coûts en euros et prix de revente inchangés ; le BFR reste égal à 10 % du chiffre d'affaires en euros), en euros.",
+          "points": 2,
+          "expected_value": 212911,
+          "tolerance": { "kind": "relative", "value": 0.01 },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Prix en euros : 990 / 1,20 = 825 € ; marge sur coût variable : 330 € par module. EBE : 410 000 ; 575 000 ; 740 000 (années 3 à 5). CAF : 407 500 ; 531 250 ; 655 000. BFR : 165 000 ; 206 250 ; 247 500. Flux : date 0 : −2 165 000 ; année 1 : 407 500 − 41 250 = 366 250 ; année 2 : 531 250 − 41 250 = 490 000 ; années 3 et 4 : 655 000 ; année 5 : 655 000 + 247 500 + 112 500 = 1 015 000. VAN à 9 % = **212 911 €**. Une baisse du dollar de 1,10 à 1,20 USD pour 1 € (−8,3 % de la valeur du dollar) réduit la VAN de 73 % : la marge unitaire baisse de 405 à 330 €, alors que les coûts restent en euros. Le cours qui annule la VAN est d'environ 1,24 USD pour 1 €."
+        },
+        {
+          "id": "q6",
+          "kind": "numeric",
+          "prompt": "À partir de l'annexe 2, calculez le coût actuariel après impôt de l'emprunt bancaire, frais de dossier compris, en %.",
+          "points": 1.5,
+          "expected_value": 3.64,
+          "tolerance": { "kind": "absolute", "value": 0.05 },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Annuité = 2 000 000 × 0,045 / (1 − 1,045⁻⁵) = 455 583,28 €. Intérêts : 90 000 ; 73 549 ; 56 357 ; 38 392 ; 19 618. Décaissements nets d'impôt = annuité − 25 % × intérêts : 433 083 ; 437 196 ; 441 494 ; 445 985 ; 450 679. Somme nette reçue en date 0 = 2 000 000 − 20 000 × 0,75 = 1 985 000. Le taux r qui égalise 1 985 000 et les décaissements actualisés vaut **3,64 %**. Sans les frais, on retrouverait 4,5 % × 0,75 = 3,375 % ; avant impôt, le coût serait d'environ 4,86 %."
+        },
+        {
+          "id": "q7",
+          "kind": "numeric",
+          "prompt": "À partir de l'annexe 2, calculez le coût actuariel après impôt du crédit-bail, en %.",
+          "points": 1.5,
+          "expected_value": 4.26,
+          "tolerance": { "kind": "absolute", "value": 0.05 },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Ressource en date 0 : prix de la ligne évité, 2 000 000 €. Décaissements annuels : redevance nette d'impôt 470 000 × 0,75 = 352 500 €, plus la perte de l'économie d'impôt sur l'amortissement que l'entreprise aurait pratiqué en achetant, 0,25 × 400 000 = 100 000 €, soit 452 500 € pendant 5 ans. r tel que 2 000 000 = 452 500 × [1 − (1 + r)⁻⁵] / r : **r ≈ 4,26 %**. La revente finale est identique dans les deux solutions et n'entre pas dans la comparaison. Erreurs : oublier la perte des économies d'impôt sur amortissements (flux de 352 500 €, qui donnerait un coût négatif absurde), raisonner avant impôt (5,63 %)."
+        },
+        {
+          "id": "q8",
+          "kind": "open",
+          "prompt": "À partir de vos résultats et de l'annexe 2, quel financement recommandez-vous ? Votre réponse doit tenir compte des éléments chiffrés et des critères qualitatifs.",
+          "points": 2,
+          "model_answer": "L'emprunt bancaire coûte 3,64 % après impôt, frais compris, contre 4,26 % pour le crédit-bail : sur des bases homogènes (même bien, même durée, flux après impôt), l'emprunt est la solution la moins coûteuse et doit être retenu en priorité. Les deux coûts sont nettement inférieurs au coût du capital de 9 % et au TRI du projet (20,18 %) : le choix du financement n'affecte pas la décision d'investir, qui est prise sur la VAN calculée indépendamment du financement. Le crédit-bail présente toutefois des avantages qualitatifs : financement de 100 % sans apport, aucune garantie personnelle du dirigeant, rapidité de mise en place et préservation des lignes bancaires pour d'autres besoins. L'emprunt impose un nantissement et une caution personnelle, et alourdit l'endettement visible au bilan (le crédit-bail, hors bilan dans les comptes individuels en PCG, est cependant retraité par les analystes et les banques). Je recommande l'emprunt si le dirigeant accepte de donner sa caution et si la capacité d'endettement le permet ; à défaut, le surcoût du crédit-bail (environ 0,6 point) reste modéré.",
+          "key_points": [
+            "Emprunt moins coûteux après impôt (3,64 %) que le crédit-bail (4,26 %)",
+            "Comparaison homogène après impôt ; la décision d'investir reste fondée sur la VAN, indépendante du financement",
+            "Avantages du crédit-bail : 100 % du financement, pas de caution, rapidité, lignes bancaires préservées",
+            "Contraintes de l'emprunt : nantissement, caution personnelle, endettement au bilan",
+            "Recommandation motivée, conditionnée aux garanties et à la capacité d'endettement"
+          ],
+          "explanation": "Une bonne copie conclut à partir des coûts actuariels après impôt, rappelle la séparation entre décision d'investissement et décision de financement, puis nuance avec les critères qualitatifs propres à l'annexe 2 (garanties exigées, absence d'apport)."
+        },
+        {
+          "id": "q9",
+          "kind": "journal_entry",
+          "prompt": "L'emprunt est retenu (annexe 2). Passez l'écriture de paiement de la première annuité au 31 décembre 2027, par le compte bancaire, en utilisant les comptes 164, 661 et 512 (montants au centime).",
+          "points": 1.5,
+          "date": "2027-12-31",
+          "entries": [
+            { "account": "164", "label": "Emprunts auprès des établissements de crédit (remboursement du capital)", "debit": 365583.28, "credit": 0 },
+            { "account": "661", "label": "Charges d'intérêts", "debit": 90000, "credit": 0 },
+            { "account": "512", "label": "Banque", "debit": 0, "credit": 455583.28 }
+          ],
+          "explanation": "Annuité constante = 2 000 000 × 0,045 / (1 − 1,045⁻⁵) = 455 583,28 €. Intérêts de l'année 1 = 2 000 000 × 4,5 % = 90 000 € (compte 661, charge déductible) ; remboursement du capital = 455 583,28 − 90 000 = 365 583,28 € (débit du 164, qui diminue la dette). Le remboursement du capital n'est pas une charge. Les frais de dossier ont été comptabilisés en date 0 et ne figurent pas dans cette écriture."
+        },
+        {
+          "id": "q10",
+          "kind": "numeric",
+          "prompt": "À partir de l'annexe 3, calculez le montant en euros garanti par une vente à terme à 90 jours des 495 000 USD de la première livraison (cours à terme non arrondi, résultat arrondi à l'euro).",
+          "points": 1.5,
+          "expected_value": 447552,
+          "tolerance": { "kind": "absolute", "value": 15 },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Cours à terme (USD pour 1 €) = 1,1000 × (1 + 4,4 % × 90/360) / (1 + 2,2 % × 90/360) = 1,1000 × 1,011 / 1,0055 = 1,10602. Montant garanti = 495 000 / 1,10602 = **447 552 €** (447 559 € avec un cours arrondi à 1,1060, accepté). Le dollar, à taux plus élevé, cote en déport : il vaut moins à terme qu'au comptant (450 000 €). Erreurs : retenir le cours comptant (450 000 €), inverser la parité (452 461 €), ne pas proratiser les taux (environ 440 517 €)."
+        },
+        {
+          "id": "q11",
+          "kind": "mcq",
+          "prompt": "À partir de l'annexe 3 et de la question précédente : la prime du put USD s'élève à 1,2 % × 495 000 / 1,10 = 5 400 €. Pour quels cours au comptant à l'échéance l'option procure-t-elle un encaissement net supérieur à celui du terme ?",
+          "points": 1.5,
+          "options": [
+            "Dès que le cours passe sous 1,1000 USD pour 1 € (prix d'exercice)",
+            "Dès que le cours passe sous 1,1060 USD pour 1 € (cours à terme)",
+            "Seulement si le cours passe sous environ 1,0928 USD pour 1 €",
+            "Seulement si le cours dépasse environ 1,1200 USD pour 1 €"
+          ],
+          "answer": [2],
+          "multiple": false,
+          "explanation": "L'option ne bat le terme que si elle est abandonnée et que le dollar s'est apprécié : 495 000 / S − 5 400 > 447 552, soit S < 495 000 / 452 952 ≈ 1,0928 USD pour 1 € (option 3). L'option 1 ignore la prime et la comparaison avec le terme : entre 1,0928 et 1,1000, l'option est abandonnée mais rapporte moins que le terme. L'option 2 ignore la prime. L'option 4 correspond à une baisse du dollar : l'option est alors exercée et rapporte 450 000 − 5 400 = 444 600 €, moins que le terme (447 552 €)."
+        },
+        {
+          "id": "q12",
+          "kind": "open",
+          "prompt": "À l'aide des annexes 3 et 4 et de vos résultats (questions 2, 5, 10 et 11), répondez au directeur général : faut-il couvrir la première livraison, avec quel instrument, et comment gérer le risque de change sur toute la durée du contrat ? Concluez sur l'intérêt du projet.",
+          "points": 2.5,
+          "model_answer": "Hydralis détient une position longue en dollars dès la signature du contrat : elle perd si le dollar baisse. Ne pas se couvrir revient à spéculer sur la hausse du dollar, ce que la politique financière interdit ; sans couverture, un dollar à 1,15 USD pour 1 € ramènerait la première livraison à 430 435 € au lieu de 450 000 €. Pour cette livraison, la vente à terme garantit 447 552 € sans décaissement, conformément au principe d'un budget construit sur un cours garanti. Le put USD protège sous 1,10 (444 600 € nets si le dollar baisse) tout en laissant profiter d'une hausse (461 581 € à 1,06), mais il ne fait mieux que le terme que si le dollar passe sous 1,0928 : il ne se justifie que si la direction croit fermement à l'appréciation du dollar et accepte de payer 5 400 € de prime. Je recommande le terme, ou une option seulement pour une partie du montant. Contrairement à l'avis du directeur général, le risque de change est aussi un sujet d'investissement : le prix est fixe en dollars sur cinq ans et les coûts sont en euros, de sorte qu'à 1,20 USD pour 1 €, la VAN tombe de 787 039 € à 212 911 €, et qu'elle s'annule vers 1,24. Couvrir une seule facture ne traite pas ce risque économique : il faut une politique de couverture glissante des flux futurs (ventes à terme échelonnées sur les volumes fermes, éventuellement swap de devises), des techniques internes (clause d'indexation du prix sur le cours ou partage du risque avec le distributeur, achats ou financement en dollars pour adosser les flux) et une révision régulière. Le projet reste créateur de valeur (VAN positive, TRI de 20,18 %, IP de 1,36), y compris dans le scénario défavorable de 1,20 : il peut être accepté, sous réserve de cette politique de couverture.",
+          "key_points": [
+            "Position longue en dollars : ne pas se couvrir revient à spéculer, ce que la politique financière interdit",
+            "Première livraison : le terme garantit 447 552 € ; l'option ne fait mieux qu'au-dessous d'environ 1,0928 et coûte 5 400 € de prime",
+            "Le risque de change affecte la VAN (787 039 € au cours budgétaire, 212 911 € à 1,20, nulle vers 1,24) : c'est un sujet d'investissement",
+            "Politique de couverture sur la durée : couvertures glissantes, indexation contractuelle, adossement des flux en dollars",
+            "Conclusion : projet créateur de valeur, à accepter sous réserve d'une couverture du risque de change"
+          ],
+          "explanation": "On attend une réponse argumentée qui distingue la couverture d'une facture (risque de transaction, traité par le terme ou l'option) et l'exposition de long terme du projet (prix fixe en dollars, coûts en euros), mesurée par la sensibilité de la VAN. Calculs d'appui : sans couverture à 1,15 : 495 000 / 1,15 = 430 435 € ; option exercée : 450 000 − 5 400 = 444 600 € ; option abandonnée à 1,06 : 466 981 − 5 400 = 461 581 €."
+        }
+      ],
+      "explanation": "Méthode : (1) flux différentiels après impôt : CAF = EBE × 0,75 + 0,25 × 400 000, BFR constitué en début d'année et récupéré en fin de projet, revente nette d'impôt (112 500 €), étude de faisabilité exclue (coût irrécupérable) ; (2) critères : VAN 787 039 €, TRI 20,18 %, IP 1,36 ; sensibilité : VAN de 212 911 € avec un dollar à 1,20 USD pour 1 € ; (3) financement : coût après impôt de l'emprunt 3,64 % contre 4,26 % pour le crédit-bail (perte des économies d'impôt sur amortissements comprise), écriture de la première annuité (164 : 365 583,28 ; 661 : 90 000 ; 512 : 455 583,28) ; (4) change : terme à 1,10602, soit 447 552 € garantis, option préférable seulement au-dessous de 1,0928 ; le risque de change, qui touche la VAN du projet, appelle une politique de couverture sur toute la durée du contrat."
+    }
+  ]
+}
