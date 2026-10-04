@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 import { VitePWA } from 'vite-plugin-pwa'
 
+import pkg from './package.json' with { type: 'json' }
 import { stripUnverified } from './build/stripUnverified.ts'
 
 // GitHub Pages sert le site sous /dscg-trainer/ ; en dev on reste à la racine.
@@ -12,6 +13,7 @@ const base = process.env.VITE_BASE ?? (process.env.NODE_ENV === 'production' ? '
 
 export default defineConfig({
   base,
+  define: { __APP_VERSION__: JSON.stringify(pkg.version) },
   plugins: [
     stripUnverified(),
     react(),

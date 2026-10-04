@@ -25,6 +25,19 @@ describe('ExercisePlayer', () => {
     expect(onComplete).toHaveBeenCalledWith(expect.objectContaining({ correct: true }), [{ kind: 'choice', selected: [1] }])
   })
 
+  it('lien « signaler une erreur » vers une issue GitHub pré-remplie, après la correction', async () => {
+    const e = ex('mcq')
+    const { user } = setup(e)
+    expect(screen.queryByRole('link', { name: /Signaler une erreur/ })).not.toBeInTheDocument()
+    await user.click(screen.getAllByRole('radio')[1])
+    await user.click(screen.getByRole('button', { name: 'Valider' }))
+    const href = screen.getByRole('link', { name: /Signaler une erreur/ }).getAttribute('href')!
+    const url = new URL(href)
+    expect(url.origin + url.pathname).toBe('https://github.com/maxprot18/dscg-trainer/issues/new')
+    expect(url.searchParams.get('title')).toContain(e.id)
+    expect(url.searchParams.get('body')).toContain(e.source_ref)
+  })
+
   it('QCM : raccourcis clavier 1-4 et Entrée', async () => {
     const { onComplete, user } = setup(ex('mcq'))
     await user.keyboard('1{Enter}')
