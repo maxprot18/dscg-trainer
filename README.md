@@ -2,7 +2,7 @@
 
 Application web installable (PWA) pour s'entraîner au DSCG : audit, comptabilité, IFRS, consolidation, finance, droit, fiscalité, contrôle de gestion, systèmes d'information et anglais des affaires. Elle fonctionne hors ligne sur téléphone et ordinateur ; la progression reste dans le navigateur.
 
-**Site :** https://maxprot18.github.io/dscg-trainer/ · version 1.2.0 ([journal des versions](CHANGELOG.md))
+**Site :** https://maxprot18.github.io/dscg-trainer/ · version 1.3.0 ([journal des versions](CHANGELOG.md))
 
 <p>
   <img src="docs/screenshots/accueil.png" alt="Accueil : objectif du jour, série et contenu disponible" width="200">
@@ -21,7 +21,7 @@ Application web installable (PWA) pour s'entraîner au DSCG : audit, comptabilit
 
 - **S'entraîner** : session rapide (10 questions, 5 minutes), session par UE, thème ou notion, **révision intelligente** par répétition espacée (SM-2), **mode erreurs**, **flashcards**, **examen blanc** chronométré à la durée de l'épreuve, noté sur 20, corrigé à la fin et reprenable s'il est interrompu.
 - **Progression** : objectif quotidien, taux de réussite par UE, thème, notion et type d'exercice, carte de chaleur du programme, activité des huit dernières semaines, série de jours, historique des sessions, export et import JSON.
-- **Cours** : entrée par UE, une fiche par notion avec diagrammes, maîtrise et fiches lues, notions précédente et suivante, lien direct vers les exercices, fiches d'une UE à imprimer.
+- **Cours** : entrée par UE, une fiche par notion mise en page par partie (enjeu, règles, exemple résolu, erreurs fréquentes, à retenir) avec diagrammes, maîtrise et fiches lues, notions précédente et suivante, lien direct vers les exercices, fiches d'une UE à imprimer.
 - **Qualité de vie** : mode sombre, recherche plein texte (raccourci « / »), raccourcis clavier (1-9 pour répondre, Entrée pour valider), autocomplétion des comptes PCG dans les écritures, marque-pages « à revoir plus tard », bouton « signaler une erreur » qui ouvre une issue GitHub pré-remplie, bandeau de mise à jour.
 
 <p>

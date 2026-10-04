@@ -2,7 +2,7 @@ import { ArrowLeft, Printer } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 
-import { Markdown } from '@/components/Markdown'
+import { CourseSheet } from '@/components/CourseSheet'
 import { Button } from '@/components/ui/button'
 import { loadAllCourses, taxonomy } from '@/content/load'
 
@@ -58,8 +58,8 @@ export function CoursePrintPage() {
             {theme.notions.map((notion) => {
               const text = courses.get(notion.id)
               return (
-                <article key={notion.id} className="text-sm">
-                  {text ? <Markdown source={text} /> : <h3 className="font-semibold">{notion.title}</h3>}
+                <article key={notion.id} className="print-sheet">
+                  {text ? <CourseSheet source={text} titleLevel={3} /> : <h3 className="font-semibold">{notion.title}</h3>}
                 </article>
               )
             })}
