@@ -2,6 +2,7 @@ import { BookOpen, ChartColumn, Dumbbell, House, Search, Settings } from 'lucide
 import { Suspense } from 'react'
 import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom'
 
+import { PwaBanner } from '@/components/PwaBanner'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { Button } from '@/components/ui/button'
 import { useKeyboard } from '@/hooks/useKeyboard'
@@ -20,6 +21,7 @@ export function Layout() {
   useKeyboard((key) => (key === '/' ? (navigate('/recherche'), true) : false), true)
   return (
     <div className="mx-auto flex min-h-dvh max-w-3xl flex-col lg:max-w-5xl">
+      <PwaBanner />
       <header className="flex items-center justify-between px-4 pt-3">
         <Link to="/" className="text-muted-foreground text-sm font-semibold">
           DSCG Trainer

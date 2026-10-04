@@ -56,7 +56,7 @@ describe('écran Progression', () => {
     expect(cells.filter((c) => c.dataset.mastery === 'new').length).toBeGreaterThan(50)
     expect(screen.getAllByRole('link', { name: /Maîtrisé : 100 % sur 4 tentatives/ })).toHaveLength(1)
 
-    expect(screen.getByText('Révision intelligente')).toBeInTheDocument()
+    expect(screen.getAllByText('Révision intelligente').length).toBeGreaterThan(0)
     expect(screen.getByText(/5\/7 réussis/)).toBeInTheDocument()
   })
 

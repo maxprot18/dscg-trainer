@@ -1,6 +1,7 @@
 import { Download, RotateCcw, Upload } from 'lucide-react'
 import { useRef, useState } from 'react'
 
+import { useInstallPrompt } from '@/hooks/useInstallPrompt'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
@@ -22,6 +23,7 @@ async function downloadExport() {
 
 export function SettingsPage() {
   const settings = useSettings()
+  const install = useInstallPrompt()
   const input = useRef<HTMLInputElement>(null)
   const [message, setMessage] = useState<string | null>(null)
 
@@ -100,8 +102,21 @@ export function SettingsPage() {
           <CardTitle>Affichage</CardTitle>
           <CardDescription>Thème clair, sombre ou celui du système.</CardDescription>
         </CardHeader>
-        <CardContent className="flex items-center gap-2 text-sm">
-          <ThemeToggle /> Changer de thème
+        <CardContent className="flex flex-col gap-3 text-sm">
+          <div className="flex items-center gap-2">
+            <ThemeToggle /> Changer de thème
+          </div>
+          <div className="flex flex-wrap items-center gap-2">
+            {install ? (
+              <Button variant="outline" onClick={() => void install()}>
+                <Download /> Installer l’application
+              </Button>
+            ) : (
+              <p className="text-muted-foreground">
+                Pour installer l’application : « Ajouter à l’écran d’accueil » dans le menu du navigateur (ou elle est déjà installée).
+              </p>
+            )}
+          </div>
         </CardContent>
       </Card>
       <Card>

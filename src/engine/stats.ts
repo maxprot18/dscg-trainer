@@ -223,3 +223,57 @@ export function notionsToReview(entries: readonly { exercise: { notion: string }
     .map(([notion, n]) => ({ notion, ...n }))
     .sort((a, b) => b.failed - a.failed || a.notion.localeCompare(b.notion))
 }
+
+export interface WeekActivity {
+  /** Début de la semaine (lundi 0 h, heure locale). */
+  start: number
+  attempts: number
+  correct: number
+  rate: number | null
+}
+
+/** Début de la semaine (lundi) d'un instant. */
+export function startOfWeek(t: number): number {
+  const d = new Date(startOfDay(t))
+  const shift = (d.getDay() + 6) % 7
+  return startOfDay(d.getTime() - shift * DAY_MS + DAY_MS / 2 - DAY_MS / 2)
+}
+
+/** Activité des `weeks` dernières semaines (la plus ancienne d'abord, la semaine en cours en dernier). */
+export function weeklyActivity(attempts: readonly Attempt[], now: number, weeks = 8): WeekActivity[] {
+  const current = startOfWeek(now)
+  const starts = Array.from({ length: weeks }, (_, i) => startOfDay(current - (weeks - 1 - i) * 7 * DAY_MS + DAY_MS / 2))
+  const out = starts.map((start) => ({ start, attempts: 0, correct: 0, rate: null as number | null }))
+  for (const a of attempts) {
+    const w = startOfWeek(a.date)
+    const bucket = out.find((o) => o.start === w)
+    if (!bucket) continue
+    bucket.attempts++
+    if (a.correct) bucket.correct++
+  }
+  for (const o of out) o.rate = o.attempts === 0 ? null : o.correct / o.attempts
+  return out
+}
+
+export interface TypeStat {
+  type: string
+  attempts: number
+  correct: number
+  rate: number
+}
+
+/** Réussite par type d'exercice (types connus seulement), du moins réussi au mieux réussi. */
+export function statsByType(attempts: readonly Attempt[], typeOf: (exerciseId: string) => string | undefined): TypeStat[] {
+  const map = new Map<string, { attempts: number; correct: number }>()
+  for (const a of attempts) {
+    const type = typeOf(a.exerciseId)
+    if (!type) continue
+    const s = map.get(type) ?? { attempts: 0, correct: 0 }
+    s.attempts++
+    if (a.correct) s.correct++
+    map.set(type, s)
+  }
+  return [...map.entries()]
+    .map(([type, s]) => ({ type, ...s, rate: s.correct / s.attempts }))
+    .sort((a, b) => a.rate - b.rate || b.attempts - a.attempts)
+}

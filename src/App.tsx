@@ -8,6 +8,7 @@ import { HomePage } from '@/pages/HomePage'
 const TrainPage = lazy(() => import('@/pages/TrainPage').then((m) => ({ default: m.TrainPage })))
 const CoursesPage = lazy(() => import('@/pages/CoursesPage').then((m) => ({ default: m.CoursesPage })))
 const CourseUePage = lazy(() => import('@/pages/CourseUePage').then((m) => ({ default: m.CourseUePage })))
+const CoursePrintPage = lazy(() => import('@/pages/CoursePrintPage').then((m) => ({ default: m.CoursePrintPage })))
 const CoursePage = lazy(() => import('@/pages/CoursePage').then((m) => ({ default: m.CoursePage })))
 const ProgressPage = lazy(() => import('@/pages/ProgressPage').then((m) => ({ default: m.ProgressPage })))
 const SessionPage = lazy(() => import('@/pages/SessionPage').then((m) => ({ default: m.SessionPage })))
@@ -23,6 +24,7 @@ export function AppRoutes() {
         <Route path="entrainement" element={<TrainPage />} />
         <Route path="cours" element={<CoursesPage />} />
         <Route path="cours/ue/:ueId" element={<CourseUePage />} />
+        <Route path="cours/ue/:ueId/imprimer" element={<CoursePrintPage />} />
         <Route path="cours/:notionId" element={<CoursePage />} />
         <Route path="progression" element={<ProgressPage />} />
         <Route path="session" element={<SessionPage />} />
