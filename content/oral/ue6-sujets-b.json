@@ -1,0 +1,796 @@
+{
+  "topics": [
+    {
+      "id": "ue6-oral-0009",
+      "theme": "management-si-marketing",
+      "notions": [
+        "digital-transformation-ai"
+      ],
+      "title": "Calderon Logistics bets on AI in its back office",
+      "document": "**Calderon Logistics puts generative AI to work in finance and HR — and discovers the fine print**\n\nWhen Calderon Logistics, a Lyon-based freight forwarder with 2,300 employees, moved its accounting to a cloud-based ERP last year, the aim was simply to retire a legacy system that nobody dared to touch. Twelve months on, the project has turned into something far more ambitious.\n\nThe finance team now relies on a generative AI assistant to read supplier invoices, match them with purchase orders and draft journal entries. \"Last year we still had software robots copying figures from PDFs into the ledger,\" says CFO Hélène Marchetti. \"They broke every time a supplier changed its invoice layout. The new model copes with any format.\" Invoice processing time has fallen from six days to under two, and the month-end close is three days shorter.\n\nMs Marchetti is careful to add that a human still approves every entry. In the pilot phase, the assistant occasionally \"invented\" a purchase order number that looked perfectly plausible — a classic hallucination that the accounts payable team caught before payment.\n\nThe HR department has gone further, testing a tool that ranks job applicants for warehouse supervisor roles. Here the company's lawyers have urged caution. Under the EU AI Act, systems used to recruit or select candidates are classified as high-risk. From December 2027, the vendor will have to provide documented risk management, quality training data and logging, while Calderon, as the deployer, will have to ensure effective human oversight, keep the logs and inform staff representatives before using the tool. Calderon has also had to check that the software vendor acts only as a processor under a written contract, as the GDPR requires, since CVs contain personal data.\n\nThe bill is not trivial: subscription fees have replaced the licence purchases and in-house servers of the old system, turning capital expenditure into operating expenses, but leaving Calderon heavily dependent on a single provider. \"Vendor lock-in is the risk we talk about least and should talk about most,\" admits the CIO.",
+      "task": "Present the document and discuss whether the benefits of artificial intelligence in a company's finance and HR functions outweigh the legal, operational and ethical risks it creates.",
+      "outline": [
+        "Introduction: Calderon's move from a legacy system to a cloud ERP and generative AI; problem: can a mid-sized company capture AI's efficiency gains while keeping control of its risks?",
+        "Part 1 — The gains: faster invoice processing and closing, generative AI handling varied formats where RPA failed, shift from capex to opex with SaaS.",
+        "Part 2 — The risks: hallucinations and the need for a human in the loop, high-risk classification of recruitment tools under the AI Act, GDPR controller-processor relationship, vendor lock-in.",
+        "Part 3 — Governance responses: internal controls over AI-generated entries, documentation and human oversight, exit clauses and data portability in cloud contracts.",
+        "Conclusion: AI as a tool that strengthens rather than replaces professional judgement; opening on the changing role of accountants and auditors."
+      ],
+      "vocabulary": [
+        {
+          "term": "legacy system",
+          "translation": "système hérité"
+        },
+        {
+          "term": "cloud-based ERP",
+          "translation": "progiciel de gestion intégré en mode cloud"
+        },
+        {
+          "term": "software robot (RPA)",
+          "translation": "robot logiciel (automatisation robotisée des processus)"
+        },
+        {
+          "term": "month-end close",
+          "translation": "clôture mensuelle"
+        },
+        {
+          "term": "hallucination",
+          "translation": "hallucination (réponse plausible mais fausse)"
+        },
+        {
+          "term": "human oversight",
+          "translation": "contrôle humain"
+        },
+        {
+          "term": "high-risk system",
+          "translation": "système à haut risque"
+        },
+        {
+          "term": "processor",
+          "translation": "sous-traitant (au sens du RGPD)"
+        },
+        {
+          "term": "vendor lock-in",
+          "translation": "dépendance au fournisseur"
+        },
+        {
+          "term": "operating expenses (opex)",
+          "translation": "charges d'exploitation"
+        }
+      ],
+      "jury_questions": [
+        "Why did the robotic process automation used before fail, according to the CFO?",
+        "Why is the recruitment tool considered high-risk, and what obligations does that trigger for Calderon?",
+        "Who is the controller and who is the processor in this case, and what happens if there is a data breach?",
+        "How would you design an internal control over journal entries drafted by an AI assistant?",
+        "What would a statutory auditor need to understand about this system before relying on it?"
+      ],
+      "verified": true
+    },
+    {
+      "id": "ue6-oral-0010",
+      "theme": "management-si-marketing",
+      "notions": [
+        "hr-leadership-management"
+      ],
+      "title": "Brennan Packaging: restructuring and staff engagement",
+      "document": "**Internal memo — Brennan Packaging Ltd**\n**From:** Siobhan Kerr, Chief Executive\n**To:** All staff\n**Subject:** Our plan for 2027 and what you told us\n\nDear colleagues,\n\nLast month I shared the results of our annual engagement survey, and I promised you an honest response. Here it is.\n\nFirst, the difficult news. Our Leeds plant, which makes rigid plastic trays, has been loss-making for three years as customers switch to fibre-based packaging. The board is proposing to close it in March 2027, and formal consultation with employee representatives starts next week. Around 70 roles are at risk of redundancy. Every affected employee will be offered a role at our Bradford site where possible, a reskilling programme in fibre moulding, and a severance package above the statutory minimum. Nobody will be dismissed for performance reasons as part of this process; this is about the plant, not the people.\n\nSecond, what you told us. 81% of you are proud of the products we make, but only 46% feel that your manager recognises good work, and 39% believe you have real opportunities to grow. Pay was rarely mentioned as the main problem. Staff turnover reached 14% this year — 84 leavers out of an average headcount of 600 — and exit interviews point to a lack of career prospects rather than salaries.\n\nSo we will change the way we manage. From January, every team leader will attend a coaching-based leadership course, annual appraisals will be replaced by quarterly development conversations, and we will publish internal vacancies before advertising externally. Hybrid working will be extended to office staff who want it.\n\nI know that announcing redundancies and a new management style in the same letter may sound contradictory. I believe the opposite: if we want to keep our best people through a difficult transition, we must give them responsibility, recognition and a future here.\n\nSiobhan Kerr",
+      "task": "Present the document and discuss how a leader can maintain employee motivation and trust while announcing a restructuring.",
+      "outline": [
+        "Introduction: a CEO memo combining a plant closure and the response to an engagement survey; problem: can a company cut jobs and improve engagement at the same time?",
+        "Part 1 — The restructuring: economic redundancies distinguished from dismissal, redeployment, reskilling and severance as ways to limit the human and reputational cost.",
+        "Part 2 — The diagnosis: survey results and turnover (84 ÷ 600 = 14%) read through Herzberg (pay as a hygiene factor, recognition and growth as motivators).",
+        "Part 3 — The leadership response: from transactional to transformational and coaching styles, development conversations, internal mobility, hybrid work.",
+        "Conclusion: credibility depends on consistency between words and actions; opening on employer branding and the cost of losing talent."
+      ],
+      "vocabulary": [
+        {
+          "term": "engagement survey",
+          "translation": "enquête d'engagement des salariés"
+        },
+        {
+          "term": "to be made redundant",
+          "translation": "être licencié pour motif économique"
+        },
+        {
+          "term": "to be dismissed",
+          "translation": "être licencié (ici pour motif personnel)"
+        },
+        {
+          "term": "severance package",
+          "translation": "indemnités de départ"
+        },
+        {
+          "term": "reskilling",
+          "translation": "reconversion professionnelle"
+        },
+        {
+          "term": "staff turnover",
+          "translation": "taux de rotation du personnel"
+        },
+        {
+          "term": "exit interview",
+          "translation": "entretien de départ"
+        },
+        {
+          "term": "appraisal",
+          "translation": "entretien annuel d'évaluation"
+        },
+        {
+          "term": "headcount",
+          "translation": "effectif"
+        }
+      ],
+      "jury_questions": [
+        "What is the difference between being made redundant and being dismissed, and why does the CEO insist on it?",
+        "How is the 14% turnover rate calculated, and what does it cost a company?",
+        "Which motivation theory best explains the survey results? Justify your answer.",
+        "Would you describe Siobhan Kerr's leadership style as transactional or transformational?",
+        "How should the costs of the Leeds closure be treated in the financial statements?"
+      ],
+      "verified": true
+    },
+    {
+      "id": "ue6-oral-0011",
+      "theme": "management-si-marketing",
+      "notions": [
+        "strategy-business-models"
+      ],
+      "title": "Velorama switches from selling bikes to renting them",
+      "document": "**From products to subscriptions: Velorama rethinks the bicycle business**\n\nFor forty years Velorama, a family-owned bicycle maker based near Nantes, did one thing: it designed bikes, built them and sold them through independent dealers. Then the market turned. After the post-pandemic boom, European bike sales slumped, dealers were left with unsold stock, and Asian manufacturers cut prices aggressively. Velorama's revenue fell by 18% in two years.\n\nIts response has been to stop selling bikes to commuters altogether — at least in cities. Since 2025, urban customers in Nantes, Bordeaux and Lille can subscribe to a Velorama e-bike for €49 a month, including maintenance, insurance against theft and a replacement within 48 hours in case of breakdown. Businesses can lease fleets for their employees. Subscribers now number 21,000, and recurring revenue already accounts for 31% of group sales.\n\n\"We used to earn money once, on the day of the sale,\" says managing director Paul Rivoallan. \"Now we earn it every month, and we keep the customer for years.\" The bikes remain on Velorama's balance sheet, which has required a €35 million bank loan to finance the fleet. Churn — subscribers who cancel — is running at 2% a month, and each new customer costs about €140 in marketing.\n\nThe model also changes the company's key activities. Velorama has opened repair hubs in each city, built an app that manages bookings and payments, and signed a partnership with a regional insurer. Its designers now focus on durability and easy repair rather than on next season's colours.\n\nCompetitors are watching. Several start-ups offer similar schemes, and some city councils run their own public bike-sharing systems. Velorama's bet is that quality, service and its brand will make the difference.",
+      "task": "Present the document and discuss the strategic relevance and the risks of Velorama's move to a subscription business model.",
+      "outline": [
+        "Introduction: a traditional manufacturer facing falling sales and price competition; problem: is the shift to subscriptions a sustainable source of competitive advantage?",
+        "Part 1 — The strategic context: Porter's five forces (buyer power, low-cost rivals, substitutes such as public bike-sharing) and the choice of differentiation through service.",
+        "Part 2 — The new business model: canvas building blocks (value proposition, recurring revenue streams, key activities and partnerships, cost structure) and the Ansoff move.",
+        "Part 3 — Financial and operational risks: capital tied up in the fleet, bank debt, churn and customer acquisition cost versus lifetime value.",
+        "Conclusion: a promising but capital-intensive model; opening on the product-as-a-service trend and the circular economy."
+      ],
+      "vocabulary": [
+        {
+          "term": "business model",
+          "translation": "modèle économique"
+        },
+        {
+          "term": "subscription",
+          "translation": "abonnement"
+        },
+        {
+          "term": "recurring revenue",
+          "translation": "revenus récurrents"
+        },
+        {
+          "term": "dealer",
+          "translation": "revendeur, concessionnaire"
+        },
+        {
+          "term": "fleet",
+          "translation": "flotte"
+        },
+        {
+          "term": "churn",
+          "translation": "taux d'attrition (résiliation)"
+        },
+        {
+          "term": "customer acquisition cost",
+          "translation": "coût d'acquisition client"
+        },
+        {
+          "term": "key partnership",
+          "translation": "partenariat clé"
+        },
+        {
+          "term": "substitute",
+          "translation": "produit de substitution"
+        }
+      ],
+      "jury_questions": [
+        "Which quadrant of the Ansoff matrix does Velorama's move belong to? Justify your answer.",
+        "With a monthly churn of 2%, roughly how long does an average subscriber stay, and is the €140 acquisition cost recovered?",
+        "Why do the bikes stay on Velorama's balance sheet, and how will they be depreciated?",
+        "Is Velorama pursuing cost leadership or differentiation?",
+        "What does a recurring revenue model change for a company's valuation?"
+      ],
+      "verified": true
+    },
+    {
+      "id": "ue6-oral-0012",
+      "theme": "management-si-marketing",
+      "notions": [
+        "operations-supply-chain-marketing"
+      ],
+      "title": "Halvorsen Appliances: trading efficiency for resilience",
+      "document": "**Extract from the 2025 annual report of Halvorsen Appliances plc — Operations review**\n\n2025 tested our supply chain more than any year since the pandemic. Disruption to shipping routes lengthened lead times from our Asian suppliers of electronic control boards from eight to fourteen weeks, and for three months a single supplier's factory fire left two of our dishwasher lines idle. Stock-outs on our best-selling models cost us an estimated £22 million of lost sales and damaged relations with several retailers.\n\nFor a decade our operating model was built on lean principles and just-in-time deliveries. It served us well: low inventories, little waste and a strong return on capital. But it also left us with almost no buffer when things went wrong. The board has therefore approved a change of approach.\n\nFirst, we are moving to dual sourcing for every critical component, including a second control-board supplier in Poland. Second, we hold eight weeks of safety stock on components with long lead times. Third, final assembly for the European market will be nearshored from Vietnam to Portugal by 2027.\n\n| £m | 2025 | 2024 |\n| --- | --- | --- |\n| Revenue | 1,050 | 1,020 |\n| Cost of sales | 730 | 700 |\n| Average inventories | 140 | 105 |\n| Days inventory outstanding | 70 | 55 |\n| On-time delivery rate | 88% | 96% |\n\nThese choices come at a price. Inventory days have risen from 55 to 70 and working capital has increased by £35 million. We believe this is the right trade-off.\n\nOn the commercial side, we launched the Nordic Silence range of quiet dishwashers at a premium price, sold through selected kitchen retailers and our own website rather than through discount chains. Early sales are ahead of plan, and our net promoter score rose from 31 to 38.",
+      "task": "Present the document and discuss whether companies should give up some efficiency in their supply chain in exchange for greater resilience.",
+      "outline": [
+        "Introduction: Halvorsen's supply chain disruptions in 2025 and its change of approach; problem: how far should a manufacturer trade cost efficiency for security of supply?",
+        "Part 1 — The limits of lean and just-in-time: longer lead times, single-supplier dependence, stock-outs and lost sales.",
+        "Part 2 — The resilience measures and their cost: dual sourcing, safety stock, nearshoring; DIO up from 55 to 70 days (140 ÷ 730 × 365) and higher working capital.",
+        "Part 3 — The marketing side: premium positioning and selective distribution of the new range as a way to protect margins.",
+        "Conclusion: resilience as an investment rather than a pure cost; opening on supplier risk mapping and sustainability reporting."
+      ],
+      "vocabulary": [
+        {
+          "term": "lead time",
+          "translation": "délai d'approvisionnement"
+        },
+        {
+          "term": "stock-out",
+          "translation": "rupture de stock"
+        },
+        {
+          "term": "just-in-time",
+          "translation": "juste-à-temps, flux tendus"
+        },
+        {
+          "term": "dual sourcing",
+          "translation": "double approvisionnement"
+        },
+        {
+          "term": "safety stock",
+          "translation": "stock de sécurité"
+        },
+        {
+          "term": "nearshoring",
+          "translation": "relocalisation de proximité"
+        },
+        {
+          "term": "days inventory outstanding",
+          "translation": "durée moyenne de stockage (en jours)"
+        },
+        {
+          "term": "working capital",
+          "translation": "besoin en fonds de roulement"
+        },
+        {
+          "term": "selective distribution",
+          "translation": "distribution sélective"
+        },
+        {
+          "term": "net promoter score",
+          "translation": "indice de recommandation client"
+        }
+      ],
+      "jury_questions": [
+        "How is the days inventory outstanding of 70 days calculated, and why do we use cost of sales rather than revenue?",
+        "What are the advantages and drawbacks of just-in-time production?",
+        "How does an increase in inventories affect the company's cash flow?",
+        "Which elements of the marketing mix are mentioned for the Nordic Silence range?",
+        "Could the lost sales of £22 million be recorded in the financial statements? Why or why not?"
+      ],
+      "verified": true
+    },
+    {
+      "id": "ue6-oral-0013",
+      "theme": "vocabulaire-comptable-financier",
+      "notions": [
+        "financial-statements-vocabulary"
+      ],
+      "title": "Reading the accounts of Harwell Instruments plc",
+      "document": "**Harwell Instruments plc — Extract from the consolidated financial statements for the year ended 31 December 2025**\n\n**Consolidated balance sheet at 31 December (£m)**\n\n| | 2025 | 2024 |\n| --- | --- | --- |\n| Property, plant and equipment | 420 | 390 |\n| Intangible assets | 130 | 140 |\n| **Non-current assets** | **550** | **530** |\n| Inventories | 160 | 150 |\n| Trade receivables | 190 | 170 |\n| Cash and cash equivalents | 70 | 95 |\n| **Current assets** | **420** | **415** |\n| **Total assets** | **970** | **945** |\n| Share capital | 50 | 50 |\n| Share premium | 120 | 120 |\n| Retained earnings | 330 | 295 |\n| **Total equity** | **500** | **465** |\n| Long-term borrowings | 210 | 240 |\n| Provisions | 30 | 25 |\n| **Non-current liabilities** | **240** | **265** |\n| Trade payables | 180 | 170 |\n| Short-term borrowings | 50 | 45 |\n| **Current liabilities** | **230** | **215** |\n| **Total equity and liabilities** | **970** | **945** |\n\n**Consolidated income statement for 2025 (£m)**\n\n| | |\n| --- | --- |\n| Revenue | 1,200 |\n| Cost of sales | (780) |\n| Gross profit | 420 |\n| Distribution costs | (150) |\n| Administrative expenses | (130) |\n| Operating profit | 140 |\n| Finance costs | (20) |\n| Profit before tax | 120 |\n| Income tax expense | (30) |\n| Profit for the year | 90 |\n\n**Comment from the finance director**\n\nRevenue grew by 8% thanks to strong demand for our laboratory sensors. Gross margin held at 35%. Cash and cash equivalents fell by £25 million because we invested £75 million in a new production line, repaid £30 million of long-term borrowings and paid dividends of £55 million to shareholders. Our current ratio remains comfortable at 1.8. As our expenses are presented by function, depreciation and staff costs are disclosed in the notes.",
+      "task": "Present the document and discuss what these financial statements reveal about Harwell Instruments' performance and financial position, paying particular attention to the vocabulary used.",
+      "outline": [
+        "Introduction: the purpose of a balance sheet and an income statement for investors; problem: is Harwell's growth financed in a healthy way?",
+        "Part 1 — Structure and vocabulary: assets = equity + liabilities, current versus non-current items, expenses analysed by function.",
+        "Part 2 — Performance: revenue, gross profit (420 ÷ 1,200 = 35%), operating profit and profit for the year; link between profit, dividends and retained earnings (295 + 90 − 55 = 330).",
+        "Part 3 — Financial position and cash: current ratio (420 ÷ 230 ≈ 1.8), investment in PP&E, debt repayment and the fall in cash.",
+        "Conclusion: a profitable, moderately indebted company; opening on the information missing from the extract (cash flow statement, notes, IFRS 18 from 2027)."
+      ],
+      "vocabulary": [
+        {
+          "term": "balance sheet / statement of financial position",
+          "translation": "bilan"
+        },
+        {
+          "term": "property, plant and equipment (PP&E)",
+          "translation": "immobilisations corporelles"
+        },
+        {
+          "term": "trade receivables",
+          "translation": "créances clients"
+        },
+        {
+          "term": "share premium",
+          "translation": "prime d'émission"
+        },
+        {
+          "term": "retained earnings",
+          "translation": "réserves et report à nouveau"
+        },
+        {
+          "term": "borrowings",
+          "translation": "emprunts et dettes financières"
+        },
+        {
+          "term": "trade payables",
+          "translation": "dettes fournisseurs"
+        },
+        {
+          "term": "cost of sales",
+          "translation": "coût des ventes"
+        },
+        {
+          "term": "gross profit",
+          "translation": "marge brute"
+        },
+        {
+          "term": "income tax expense",
+          "translation": "charge d'impôt sur le résultat"
+        }
+      ],
+      "jury_questions": [
+        "Why are the long-term borrowings not included in current liabilities?",
+        "How can you check the dividend of £55 million from the two statements?",
+        "What is the difference between presenting expenses by nature and by function?",
+        "Profit was £90 million, yet cash fell by £25 million. How do you explain this?",
+        "How would the French equivalent of this balance sheet differ in presentation?"
+      ],
+      "verified": true
+    },
+    {
+      "id": "ue6-oral-0014",
+      "theme": "vocabulaire-comptable-financier",
+      "notions": [
+        "ifrs-terminology"
+      ],
+      "title": "An impairment note from Ostrava Media Group",
+      "document": "**Ostrava Media Group SE — Notes to the consolidated financial statements for the year ended 31 December 2025**\n\n**Note 12 — Goodwill and impairment testing**\n\nGoodwill arising on business combinations is not amortised. It is allocated to cash-generating units (CGUs) and tested for impairment at least annually, or more often if there is an indication that it may be impaired.\n\nIn 2025, advertising revenue in the Group's regional radio business fell by 17%, which was identified as an indication of impairment. The regional radio CGU was therefore tested at 30 September 2025.\n\n| €m | Regional radio CGU |\n| --- | --- |\n| Goodwill | 40 |\n| Licences and other intangible assets | 85 |\n| Property, plant and equipment | 95 |\n| Net working capital | 40 |\n| **Carrying amount** | **260** |\n| Value in use | 225 |\n| Fair value less costs of disposal | 210 |\n\nThe recoverable amount of the CGU is the higher of its value in use and its fair value less costs of disposal, that is €225 million. Value in use was determined by discounting the cash flow projections of the five-year business plan at a pre-tax discount rate of 10.5%, with a long-term growth rate of 0.5%.\n\nAs the carrying amount exceeds the recoverable amount, an impairment loss of €35 million has been recognised in profit or loss, within \"Other operating expenses\". In accordance with IAS 36, the loss has been allocated first to goodwill, which has been reduced to €5 million. The other assets of the CGU have not been impaired. An impairment loss recognised on goodwill cannot be reversed in a subsequent period.\n\nThe licences acquired with the radio stations have a finite useful life and are amortised on a straight-line basis over ten years; studio equipment is depreciated over five to eight years.\n\n**Sensitivity:** an increase of one percentage point in the discount rate would reduce value in use by €18 million and increase the impairment loss accordingly.",
+      "task": "Present the document and discuss how impairment testing affects the reliability and comparability of financial statements, explaining the IFRS terms used.",
+      "outline": [
+        "Introduction: a note to the accounts explaining a goodwill impairment; problem: does impairment testing give a faithful picture or does it rely too much on management judgement?",
+        "Part 1 — The key IFRS concepts: goodwill, CGU, carrying amount, recoverable amount (higher of value in use and fair value less costs of disposal).",
+        "Part 2 — The calculation and its effects: 260 − 225 = €35m loss allocated first to goodwill (40 → 5), recognised in profit or loss, no reversal on goodwill; depreciation versus amortisation.",
+        "Part 3 — The role of judgement: discount rate, growth rate, business plan, sensitivity analysis and the auditor's scrutiny.",
+        "Conclusion: impairment as a warning signal for investors; opening on the debate over reintroducing goodwill amortisation."
+      ],
+      "vocabulary": [
+        {
+          "term": "goodwill",
+          "translation": "écart d'acquisition, goodwill"
+        },
+        {
+          "term": "cash-generating unit (CGU)",
+          "translation": "unité génératrice de trésorerie (UGT)"
+        },
+        {
+          "term": "impairment loss",
+          "translation": "perte de valeur, dépréciation"
+        },
+        {
+          "term": "carrying amount",
+          "translation": "valeur nette comptable"
+        },
+        {
+          "term": "recoverable amount",
+          "translation": "valeur recouvrable"
+        },
+        {
+          "term": "value in use",
+          "translation": "valeur d'utilité"
+        },
+        {
+          "term": "fair value less costs of disposal",
+          "translation": "juste valeur diminuée des coûts de sortie"
+        },
+        {
+          "term": "amortisation",
+          "translation": "amortissement (des immobilisations incorporelles)"
+        },
+        {
+          "term": "depreciation",
+          "translation": "amortissement (des immobilisations corporelles)"
+        },
+        {
+          "term": "discount rate",
+          "translation": "taux d'actualisation"
+        }
+      ],
+      "jury_questions": [
+        "How did the company arrive at an impairment loss of €35 million?",
+        "Why is goodwill not amortised under IFRS, and how does French GAAP treat it?",
+        "What is the difference between depreciation, amortisation and impairment? How would you translate each into French?",
+        "Why does the company disclose a sensitivity analysis?",
+        "Would an auditor be likely to treat this impairment test as a key audit matter? Why?"
+      ],
+      "verified": true
+    },
+    {
+      "id": "ue6-oral-0015",
+      "theme": "vocabulaire-comptable-financier",
+      "notions": [
+        "audit-assurance-vocabulary"
+      ],
+      "title": "Audit planning memo for the audit committee of Ferrand Industrie",
+      "document": "**Moreau Lefèvre Audit — Audit planning report to the Audit Committee of Ferrand Industrie SA**\n**Audit of the financial statements for the year ending 31 December 2026**\n\n**1. Scope and level of assurance**\nOur audit will be conducted in accordance with International Standards on Auditing and the French professional standards. Its objective is to obtain reasonable assurance that the consolidated financial statements as a whole are free from material misstatement, whether due to fraud or error. As in previous years, we also performed a limited review of the half-year financial statements in September; a review is substantially less in scope than an audit and our conclusion was therefore expressed in negative form.\n\n**2. Materiality**\n\n| | €m |\n| --- | --- |\n| Benchmark: forecast profit before tax | 48.0 |\n| Overall materiality (5% of benchmark) | 2.4 |\n| Performance materiality (75% of overall materiality) | 1.8 |\n| Clearly trivial threshold (5% of overall materiality) | 0.12 |\n\nWe will report to you all uncorrected misstatements above the clearly trivial threshold.\n\n**3. Significant risks and planned procedures**\n- *Revenue recognition on long-term contracts*: tests of controls over contract budgets, substantive testing of a sample of contracts, review of cut-off at year end.\n- *Valuation of inventories*: attendance at the physical inventory counts at the Lyon and Grenoble plants on 31 December, testing of net realisable value on slow-moving items.\n- *Trade receivables*: external confirmation of balances with the twenty largest customers, review of the loss allowance.\n- *Management override of controls*: testing of manual journal entries posted during the year and at the period end, including post-closing adjustments, and review of accounting estimates for bias.\n\n**4. Other matters**\nAt the end of our fieldwork we will ask management for a written representation letter. We will also review subsequent events up to the date of our report. Last year, uncorrected misstatements amounted to €0.9 million in aggregate, well below materiality.\n\nHugo Moreau, engagement partner",
+      "task": "Present the document and discuss how the auditor plans an audit to provide reasonable assurance, explaining the key audit terms it uses.",
+      "outline": [
+        "Introduction: an audit planning report sent to an audit committee; problem: how does an auditor focus limited resources on what matters to users of the accounts?",
+        "Part 1 — Levels of assurance: reasonable assurance in an audit versus limited assurance in a review, opinion versus negative-form conclusion.",
+        "Part 2 — Materiality: benchmark and thresholds (€2.4m, €1.8m, €0.12m), aggregation of uncorrected misstatements.",
+        "Part 3 — Risk-based procedures: assertions behind each significant risk (occurrence and cut-off, valuation, existence), tests of controls and substantive procedures, inventory count, confirmations, journal entry testing.",
+        "Conclusion: the dialogue between auditor and audit committee as a pillar of governance; opening on the limits of an audit (fraud, estimates)."
+      ],
+      "vocabulary": [
+        {
+          "term": "reasonable assurance",
+          "translation": "assurance raisonnable"
+        },
+        {
+          "term": "limited review",
+          "translation": "examen limité"
+        },
+        {
+          "term": "material misstatement",
+          "translation": "anomalie significative"
+        },
+        {
+          "term": "materiality",
+          "translation": "seuil de signification"
+        },
+        {
+          "term": "performance materiality",
+          "translation": "seuil de planification"
+        },
+        {
+          "term": "clearly trivial threshold",
+          "translation": "seuil des anomalies manifestement insignifiantes"
+        },
+        {
+          "term": "substantive testing",
+          "translation": "contrôles de substance"
+        },
+        {
+          "term": "physical inventory count",
+          "translation": "inventaire physique"
+        },
+        {
+          "term": "external confirmation",
+          "translation": "demande de confirmation (circularisation)"
+        },
+        {
+          "term": "written representation letter",
+          "translation": "lettre d'affirmation"
+        }
+      ],
+      "jury_questions": [
+        "What is the difference between reasonable assurance and limited assurance?",
+        "Why is performance materiality set lower than overall materiality?",
+        "Which assertion is the auditor mainly testing when attending the inventory count?",
+        "What would happen to the audit opinion if uncorrected misstatements exceeded €2.4 million?",
+        "What is meant by management override of controls, and why is it always treated as a significant risk?"
+      ],
+      "verified": true
+    },
+    {
+      "id": "ue6-oral-0016",
+      "theme": "vocabulaire-comptable-financier",
+      "notions": [
+        "accounting-false-friends"
+      ],
+      "title": "A draft e-mail to head office full of false friends",
+      "document": "**The following e-mail was drafted by a junior accountant at Lumens France SAS, the French subsidiary of a British group, and sent to the financial controller for review before it goes to head office in Manchester. Several words have been translated too literally.**\n\n*Subject: Closing of the exercise 2025 — first figures*\n\nDear Mr Whitfield,\n\nPlease find below the first figures for the closing of the exercise 2025 of Lumens France.\n\nThe business figure reached €46.8 million, against €44.0 million last year, an increase of 6.4%. The actual figures are therefore slightly above the budget of €46.0 million.\n\nThe charges increased more quickly than the products. Personnel charges rose by 9% after the salary agreement signed in March, and we passed a provision for depreciation of clients of €0.6 million because one of our distributors is in receivership. We also recorded a provision for risks of €0.4 million for a litigation with a former employee.\n\nAs a consequence, the exploitation result fell from €3.9 million to €3.2 million and the net result of the exercise is a benefit of €2.1 million.\n\nOn the balance sheet, the stocks increased by €1.1 million and we will have to explain this to the commissioner to the accounts, who will start his mission on 19 January. Our expert-comptable has also asked us to prepare the bilan in the group format before 15 January.\n\nFinally, the capital gain on the cession of our old warehouse in Rouen is €0.8 million. It is included in the result.\n\nDo not hesitate to contact me if you need more precisions.\n\nBest regards,\n\nCamille Duval\nAccountant, Lumens France SAS",
+      "task": "Present the document, identify the false friends and literal translations it contains, suggest correct English terms, and discuss why precise terminology matters in group financial reporting.",
+      "outline": [
+        "Introduction: a draft e-mail from a French subsidiary to a British head office; problem: how can literal translation distort financial information within a group?",
+        "Part 1 — Summary of the content: revenue growth, rising expenses, allowance for doubtful receivables, provision for a legal claim, fall in operating profit, gain on disposal.",
+        "Part 2 — Correcting the false friends: exercise → financial year, business figure → revenue, charges/products → expenses/income, passed a provision → recognised a provision, a litigation → a legal dispute, exploitation result → operating profit, depreciation of clients → loss allowance on receivables, benefit → profit, commissioner → statutory auditor, cession → disposal, precisions → further details, stocks → inventories; a trap to avoid: actual (réalisé vs budget) is used correctly here.",
+        "Part 3 — Why it matters: consistent group reporting, misunderstandings with the parent and the auditors (provision versus impairment, actual versus budget), reputational cost.",
+        "Conclusion: terminology as a professional skill; opening on group accounting manuals and shared charts of accounts."
+      ],
+      "vocabulary": [
+        {
+          "term": "financial year",
+          "translation": "exercice"
+        },
+        {
+          "term": "revenue / turnover",
+          "translation": "chiffre d'affaires"
+        },
+        {
+          "term": "actual figures (vs budget)",
+          "translation": "réalisé (par rapport au budget)"
+        },
+        {
+          "term": "expenses",
+          "translation": "charges"
+        },
+        {
+          "term": "loss allowance on trade receivables",
+          "translation": "dépréciation des créances clients"
+        },
+        {
+          "term": "provision for a legal claim",
+          "translation": "provision pour litige"
+        },
+        {
+          "term": "operating profit",
+          "translation": "résultat d'exploitation"
+        },
+        {
+          "term": "statutory auditor",
+          "translation": "commissaire aux comptes"
+        },
+        {
+          "term": "chartered accountant",
+          "translation": "expert-comptable"
+        },
+        {
+          "term": "gain on disposal",
+          "translation": "plus-value de cession"
+        }
+      ],
+      "jury_questions": [
+        "Why is \"the actual figures are slightly above the budget\" correct, even though actual is a false friend in other contexts?",
+        "How would you translate provision pour dépréciation des créances, and why is depreciation the wrong word?",
+        "What is the difference between a provision and an impairment under IFRS?",
+        "Can you rewrite the paragraph on expenses and provisions in correct financial English?",
+        "Why could the word stock cause confusion with an American reader?"
+      ],
+      "verified": true
+    },
+    {
+      "id": "ue6-oral-0017",
+      "theme": "rapports-annuels",
+      "notions": [
+        "annual-report-structure"
+      ],
+      "title": "Navigating the annual report of Kestrel Water plc",
+      "document": "**Kestrel Water plc — Annual Report and Accounts 2025: contents**\n\n| Section | Pages |\n| --- | --- |\n| **Strategic report** | |\n| Chair's statement | 2–3 |\n| Chief Executive's review | 4–9 |\n| Our business model and strategy | 10–17 |\n| Key performance indicators | 18–21 |\n| Section 172 statement: engaging with our stakeholders | 22–25 |\n| Sustainability and climate-related disclosures | 26–41 |\n| Principal risks and uncertainties | 42–49 |\n| Financial review | 50–57 |\n| **Governance** | |\n| Board of directors | 58–61 |\n| Corporate governance report | 62–73 |\n| Audit Committee report | 74–79 |\n| Directors' remuneration report | 80–97 |\n| Directors' report | 98–101 |\n| **Financial statements** | |\n| Independent auditor's report | 102–111 |\n| Consolidated income statement and statement of comprehensive income | 112–113 |\n| Consolidated balance sheet | 114 |\n| Consolidated statement of changes in equity | 115 |\n| Consolidated cash flow statement | 116 |\n| Notes to the consolidated financial statements | 117–168 |\n| Company financial statements | 169–176 |\n| **Other information** | |\n| Glossary and alternative performance measures | 177–180 |\n\n**Note from an investor relations adviser to a new board member**\n\n\"Don't try to read it from cover to cover. The strategic report tells the story of the year in management's own words; it is reviewed by the auditor for consistency but not audited. If you want to know how much the executives earned and whether shareholders will vote on their pay policy, go to the remuneration report — part of it is audited. The numbers that really count are in the financial statements and the notes, and these are the only pages covered by the auditor's opinion, together with the audited part of the remuneration report. The dividend recommended to the AGM is in the directors' report. Remember that more than half of the report is narrative, and that the share of sustainability information keeps growing every year.\"",
+      "task": "Present the document and discuss how the structure of an annual report helps — or hinders — shareholders in assessing a listed company.",
+      "outline": [
+        "Introduction: the contents page of a UK listed company's annual report; problem: is the annual report still a readable tool for investors, or has it become a compliance document?",
+        "Part 1 — The three blocks: strategic report (narrative, forward-looking), governance (board, committees, remuneration, directors' report), financial statements and notes.",
+        "Part 2 — Responsibilities and assurance: prepared by the directors, audited financial statements, other information only read by the auditor (ISA 720), audited part of the remuneration report.",
+        "Part 3 — Comparison and trends: French rapport financier annuel and URD, US Form 10-K, growth of sustainability reporting, ESEF digital format.",
+        "Conclusion: a structured but lengthy document; opening on digital reporting and the risk of information overload."
+      ],
+      "vocabulary": [
+        {
+          "term": "annual report and accounts",
+          "translation": "rapport annuel et comptes annuels"
+        },
+        {
+          "term": "strategic report",
+          "translation": "rapport stratégique (équivalent du rapport de gestion)"
+        },
+        {
+          "term": "principal risks and uncertainties",
+          "translation": "principaux risques et incertitudes"
+        },
+        {
+          "term": "directors' remuneration report",
+          "translation": "rapport sur la rémunération des dirigeants"
+        },
+        {
+          "term": "corporate governance report",
+          "translation": "rapport sur le gouvernement d'entreprise"
+        },
+        {
+          "term": "independent auditor's report",
+          "translation": "rapport du commissaire aux comptes"
+        },
+        {
+          "term": "notes to the financial statements",
+          "translation": "annexe"
+        },
+        {
+          "term": "company financial statements",
+          "translation": "comptes sociaux de la société mère"
+        },
+        {
+          "term": "annual general meeting (AGM)",
+          "translation": "assemblée générale annuelle"
+        }
+      ],
+      "jury_questions": [
+        "Which parts of this annual report are covered by the auditor's opinion?",
+        "What is the purpose of the section 172 statement?",
+        "What is the difference between the consolidated and the company financial statements?",
+        "Where would you find the same information in a French annual report?",
+        "Why do companies publish a glossary of alternative performance measures?"
+      ],
+      "verified": true
+    },
+    {
+      "id": "ue6-oral-0018",
+      "theme": "rapports-annuels",
+      "notions": [
+        "management-commentary"
+      ],
+      "title": "The financial review of Arlon Technologies",
+      "document": "**Arlon Technologies NV — Annual Report 2025 — Financial review (extract)**\n\n2025 was a year of solid progress despite currency headwinds. Group revenue rose to €2,310 million (2024: €2,100 million), up 10% on a reported basis. Organic growth was 10.1%, our strongest performance in five years, driven by double-digit growth in our industrial automation segment.\n\n**Revenue bridge (€m)**\n\n| | |\n| --- | --- |\n| Revenue 2024 (reported) | 2,100 |\n| Less: revenue of the cable division sold in December 2024 | (60) |\n| **Revenue 2024 on a like-for-like basis** | **2,040** |\n| Organic growth | 207 |\n| Contribution of Sensonic, acquired on 1 April 2025 | 84 |\n| Currency effect | (21) |\n| **Revenue 2025 (reported)** | **2,310** |\n\nAdjusted EBITDA, our main measure of underlying profitability, reached €395 million. The adjusted EBITDA margin expanded by 70 basis points to 17.1% (2024: 16.4%), reflecting price increases and a better product mix, partly offset by wage inflation.\n\n**Reconciliation of adjusted EBITDA (€m)**\n\n| | 2025 |\n| --- | --- |\n| Operating profit (IFRS) | 250 |\n| Depreciation and amortisation | 120 |\n| Restructuring costs (one-off) | 25 |\n| **Adjusted EBITDA** | **395** |\n\nRestructuring costs relate to the closure of our plant in Liège. We regard them as non-recurring and exclude them from adjusted EBITDA, as we did in 2023 for a similar programme in Germany.\n\n**Outlook.** For 2026 we expect organic revenue growth of 6% to 8% and a further improvement in the adjusted EBITDA margin. These statements are forward-looking and actual results may differ materially from those expressed or implied.\n\nAlternative performance measures are defined in the glossary on pages 210–214.",
+      "task": "Present the document and discuss the usefulness and the limits of alternative performance measures in management commentary.",
+      "outline": [
+        "Introduction: the CFO's financial review of a listed group; problem: do adjusted figures help investors understand performance, or do they flatter it?",
+        "Part 1 — Reading the revenue bridge: reported growth (10%) versus organic growth (207 ÷ 2,040 ≈ 10.1%), treatment of acquisitions, disposals and currency effects.",
+        "Part 2 — Adjusted EBITDA: reconciliation to IFRS operating profit, margin of 17.1% and 70 bp expansion, the question of recurring one-off costs.",
+        "Part 3 — Framework and safeguards: ESMA guidelines on APMs (definition, reconciliation, consistency, no greater prominence), forward-looking statements and cautionary language, unaudited status of the commentary.",
+        "Conclusion: APMs are useful if transparent and consistent; opening on IFRS 18 and the disclosure of management-defined performance measures in audited notes from 2027."
+      ],
+      "vocabulary": [
+        {
+          "term": "currency headwinds",
+          "translation": "effets de change défavorables"
+        },
+        {
+          "term": "reported basis",
+          "translation": "en données publiées"
+        },
+        {
+          "term": "organic growth / like-for-like",
+          "translation": "croissance organique / à périmètre constant"
+        },
+        {
+          "term": "revenue bridge",
+          "translation": "passage du chiffre d'affaires d'une année à l'autre"
+        },
+        {
+          "term": "adjusted EBITDA",
+          "translation": "EBITDA ajusté"
+        },
+        {
+          "term": "basis point",
+          "translation": "point de base"
+        },
+        {
+          "term": "one-off / non-recurring",
+          "translation": "non récurrent, exceptionnel"
+        },
+        {
+          "term": "reconciliation",
+          "translation": "rapprochement"
+        },
+        {
+          "term": "outlook / guidance",
+          "translation": "perspectives / objectifs annoncés"
+        },
+        {
+          "term": "forward-looking statement",
+          "translation": "déclaration prospective"
+        }
+      ],
+      "jury_questions": [
+        "How do you get from 10% reported growth to 10.1% organic growth?",
+        "Why is the disposal of the cable division removed from 2024 revenue rather than from 2025?",
+        "Restructuring costs appear in 2023 and 2025. Is it legitimate to call them one-off?",
+        "Is the financial review audited? What does the auditor do with it?",
+        "How will IFRS 18 change the way management performance measures are disclosed?"
+      ],
+      "verified": true
+    },
+    {
+      "id": "ue6-oral-0019",
+      "theme": "rapports-annuels",
+      "notions": [
+        "auditor-report-english"
+      ],
+      "title": "A qualified opinion on the accounts of Norvane Foods",
+      "document": "**Independent auditor's report to the members of Norvane Foods plc (extract)**\n\n**Qualified opinion**\nWe have audited the financial statements of Norvane Foods plc and its subsidiaries (the Group) for the year ended 31 December 2025, which comprise the consolidated primary statements and the related notes.\n\nIn our opinion, except for the possible effects of the matter described in the Basis for qualified opinion section of our report, the financial statements give a true and fair view of the state of the Group's affairs as at 31 December 2025 and of its profit for the year then ended, and have been properly prepared in accordance with UK-adopted international accounting standards.\n\n**Basis for qualified opinion**\nThe Group's inventories at its Egyptian subsidiary are carried at £14 million in the consolidated balance sheet, out of total inventories of £96 million. Because of travel restrictions imposed at short notice, neither we nor the component auditor were able to attend the physical inventory count at 31 December 2025, and we were unable to satisfy ourselves by alternative means concerning the quantities held. Consequently, we were unable to determine whether any adjustments to this amount were necessary.\n\nWe conducted our audit in accordance with International Standards on Auditing (UK). We believe that the audit evidence we have obtained is sufficient and appropriate to provide a basis for our qualified opinion.\n\n**Key audit matters**\nIn addition to the matter described in the Basis for qualified opinion section, we have determined the matter described below to be a key audit matter.\n*Revenue recognition — customer rebates.* The Group grants volume-related rebates to major retailers, which are estimated at the year end and deducted from revenue (£41 million in 2025). As these estimates involve significant judgement, we tested the rebate calculations against signed contracts, compared prior-year estimates with actual settlements and inspected credit notes issued after the year end. These matters were addressed in the context of our audit as a whole, and we do not provide a separate opinion on them.\n\n**Other information**\nThe directors are responsible for the other information contained in the annual report. Our opinion does not cover the other information and we do not express any form of assurance conclusion thereon. Our responsibility is to read the other information and to consider whether it is materially inconsistent with the financial statements or with our knowledge obtained in the audit.\n\nRachel Okafor (Senior Statutory Auditor), for and on behalf of Pemberton Hale LLP, Statutory Auditor, London, 12 March 2026",
+      "task": "Present the document and discuss what this auditor's report tells investors, and why the type of opinion matters.",
+      "outline": [
+        "Introduction: the auditor's report as the only independent section of the annual report; problem: what message does a qualified opinion send to shareholders?",
+        "Part 1 — The opinion: 'except for' wording, the limitation of scope on £14m of inventories, why the matter is material but not pervasive (qualified rather than disclaimer).",
+        "Part 2 — The other sections: basis for opinion and ISAs, key audit matter on rebates (judgement, procedures, no separate opinion), other information read but not audited.",
+        "Part 3 — Consequences: reaction of investors and lenders, possible covenant clauses, comparison with French certification avec réserve and US critical audit matters.",
+        "Conclusion: a modified opinion as a signal rather than a verdict on the company; opening on the value of extended auditor's reports."
+      ],
+      "vocabulary": [
+        {
+          "term": "qualified opinion",
+          "translation": "opinion avec réserve"
+        },
+        {
+          "term": "true and fair view",
+          "translation": "image fidèle"
+        },
+        {
+          "term": "basis for opinion",
+          "translation": "fondement de l'opinion"
+        },
+        {
+          "term": "limitation of scope",
+          "translation": "limitation de l'étendue des travaux"
+        },
+        {
+          "term": "component auditor",
+          "translation": "auditeur d'une entité du groupe"
+        },
+        {
+          "term": "sufficient appropriate audit evidence",
+          "translation": "éléments probants suffisants et appropriés"
+        },
+        {
+          "term": "key audit matter",
+          "translation": "point clé de l'audit"
+        },
+        {
+          "term": "customer rebate",
+          "translation": "ristourne, remise de fin d'année accordée aux clients"
+        },
+        {
+          "term": "other information",
+          "translation": "autres informations"
+        },
+        {
+          "term": "senior statutory auditor",
+          "translation": "associé signataire"
+        }
+      ],
+      "jury_questions": [
+        "Why is the opinion qualified rather than a disclaimer of opinion?",
+        "Does the key audit matter on rebates mean that there is a problem with revenue?",
+        "What would the auditor have done if it had found a material inconsistency in the other information?",
+        "How would the same situation be worded in a French commissaire aux comptes report?",
+        "How might the company's banks react to a qualified opinion?"
+      ],
+      "verified": true
+    },
+    {
+      "id": "ue6-oral-0020",
+      "theme": "rapports-annuels",
+      "notions": [
+        "key-ratios-english"
+      ],
+      "title": "Broker note: are Tamworth Engineering's ratios as good as they look?",
+      "document": "**Equity research — Tamworth Engineering plc — Results for the year ended 31 December 2025**\n\nTamworth's full-year results were broadly in line with consensus. Management highlights an EBITDA margin of 16.7%, a return on capital employed of 12% and leverage comfortably below the 3× covenant in its bank facilities. Our table below recomputes the main ratios from the published accounts.\n\n| Key figures (€m unless stated) | 2025 |\n| --- | --- |\n| Revenue | 1,800 |\n| Operating profit (EBIT) | 216 |\n| Depreciation and amortisation | 84 |\n| Net finance costs | 27 |\n| Profit for the year | 141 |\n| of which attributable to non-controlling interests | 6 |\n| Total equity | 1,000 |\n| Non-current liabilities | 800 |\n| Borrowings | 520 |\n| Lease liabilities | 80 |\n| Cash and cash equivalents | 150 |\n| Net cash from operating activities | 260 |\n| Capital expenditure | 110 |\n| Proceeds from disposals | 10 |\n\n| Ratios | 2025 |\n| --- | --- |\n| EBITDA margin | 16.7% |\n| ROCE (EBIT ÷ equity + non-current liabilities) | 12.0% |\n| Net debt (incl. leases) ÷ EBITDA | 1.5× |\n| Gearing | 45% |\n| Interest cover | 8.0× |\n| Basic EPS | €1.55 |\n| Dividend per share | €0.62 |\n| P/E at €23.30 | 15.0× |\n\nEarnings per share benefited from the buyback of 6 million shares on 1 July 2025; 90 million shares were outstanding at the start of the year. The board proposes a dividend of €0.62, a payout ratio of 40%.\n\nFree cash flow, defined by the company as net cash from operating activities less capital expenditure plus disposal proceeds, was €160 million, a cash conversion of 113% of profit for the year. However, the company's definition does not deduct lease repayments, so free cash flow is flattered compared with peers.\n\nWith ROCE barely above our 10% estimate of the group's weighted average cost of capital, we keep our Hold rating.",
+      "task": "Present the document and discuss how investors use financial ratios to assess a company, and why the definitions behind those ratios matter.",
+      "outline": [
+        "Introduction: a broker note recomputing Tamworth's ratios; problem: do ratios give an objective view of performance, or do they depend on the definitions chosen?",
+        "Part 1 — Profitability: EBITDA (216 + 84 = 300) and margin, ROCE (216 ÷ (1,000 + 800) = 12%) compared with a 10% WACC — limited value creation.",
+        "Part 2 — Financial structure and shareholder returns: net debt (520 + 80 − 150 = 450), leverage 1.5× and covenant, gearing 45%, interest cover 8×; EPS on weighted shares (135 ÷ 87m = €1.55), payout and P/E.",
+        "Part 3 — The definition issue: free cash flow without lease repayments, inclusion or exclusion of leases in net debt, ESMA guidelines on APMs and the need for reconciliations.",
+        "Conclusion: ratios are indispensable but only comparable when definitions are consistent; opening on IFRS 18 and management-defined performance measures."
+      ],
+      "vocabulary": [
+        {
+          "term": "return on capital employed (ROCE)",
+          "translation": "rentabilité des capitaux employés"
+        },
+        {
+          "term": "leverage (net debt ÷ EBITDA)",
+          "translation": "levier d'endettement"
+        },
+        {
+          "term": "gearing",
+          "translation": "taux d'endettement net (dette nette ÷ capitaux propres)"
+        },
+        {
+          "term": "interest cover",
+          "translation": "couverture des frais financiers"
+        },
+        {
+          "term": "basic earnings per share (EPS)",
+          "translation": "résultat de base par action"
+        },
+        {
+          "term": "share buyback",
+          "translation": "rachat d'actions"
+        },
+        {
+          "term": "payout ratio",
+          "translation": "taux de distribution"
+        },
+        {
+          "term": "price-earnings ratio (P/E)",
+          "translation": "multiple de capitalisation des bénéfices (PER)"
+        },
+        {
+          "term": "free cash flow",
+          "translation": "flux de trésorerie disponible"
+        },
+        {
+          "term": "covenant",
+          "translation": "clause de respect de ratios financiers (covenant)"
+        }
+      ],
+      "jury_questions": [
+        "How is the weighted average number of shares calculated here, and why are non-controlling interests excluded from EPS?",
+        "What does a ROCE of 12% compared with a WACC of 10% tell you?",
+        "What would happen if leverage exceeded the 3× covenant?",
+        "Why does the analyst say that free cash flow is flattered? Recompute it if lease repayments were €25 million.",
+        "What are the limits of the P/E ratio as a valuation tool?"
+      ],
+      "verified": true
+    }
+  ]
+}
