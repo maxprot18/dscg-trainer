@@ -23,10 +23,10 @@ describe('recherche', () => {
   it('trouve fiches et exercices sans tenir compte des accents, puis ouvre un exercice', async () => {
     await loadExercises()
     renderAt('/recherche?q=ecart%20d%27acquisition')
-    const courses = await screen.findByRole('region', { name: 'Fiches de cours' }, { timeout: 10_000 })
-    expect(within(courses).getAllByRole('link').length).toBeGreaterThan(0)
+    const courses = screen.getByRole('region', { name: 'Fiches de cours' })
+    expect((await within(courses).findAllByRole('link', undefined, { timeout: 10_000 })).length).toBeGreaterThan(0)
     const exercises = screen.getByRole('region', { name: 'Exercices' })
-    const links = within(exercises).getAllByRole('link')
+    const links = await within(exercises).findAllByRole('link', undefined, { timeout: 10_000 })
     expect(links.length).toBeGreaterThan(0)
 
     await db.attempts.clear()

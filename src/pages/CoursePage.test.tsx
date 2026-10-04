@@ -14,6 +14,7 @@ vi.mock('@/content/load', async (importOriginal) => {
   return {
     ...actual,
     useExercises: () => [mcq],
+    exerciseCount: (key: string) => (key === `notion:${mcq.notion}` ? 1 : 0),
     loadCourse: async (id: string) =>
       id === 'ias-16-immobilisations' ? '# IAS 16 — Immobilisations corporelles\n\n**Références :** IAS 16 §43' : null,
   }

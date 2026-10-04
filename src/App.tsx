@@ -1,14 +1,17 @@
+import { lazy } from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 
 import { Layout } from '@/components/Layout'
-import { CoursePage } from '@/pages/CoursePage'
-import { CoursesPage } from '@/pages/CoursesPage'
-import { ExercisePage } from '@/pages/ExercisePage'
 import { HomePage } from '@/pages/HomePage'
-import { ProgressPage } from '@/pages/ProgressPage'
-import { SearchPage } from '@/pages/SearchPage'
-import { SessionPage } from '@/pages/SessionPage'
-import { TrainPage } from '@/pages/TrainPage'
+
+// Un fichier JS par écran : l'accueil s'affiche sans attendre le code des autres écrans.
+const TrainPage = lazy(() => import('@/pages/TrainPage').then((m) => ({ default: m.TrainPage })))
+const CoursesPage = lazy(() => import('@/pages/CoursesPage').then((m) => ({ default: m.CoursesPage })))
+const CoursePage = lazy(() => import('@/pages/CoursePage').then((m) => ({ default: m.CoursePage })))
+const ProgressPage = lazy(() => import('@/pages/ProgressPage').then((m) => ({ default: m.ProgressPage })))
+const SessionPage = lazy(() => import('@/pages/SessionPage').then((m) => ({ default: m.SessionPage })))
+const SearchPage = lazy(() => import('@/pages/SearchPage').then((m) => ({ default: m.SearchPage })))
+const ExercisePage = lazy(() => import('@/pages/ExercisePage').then((m) => ({ default: m.ExercisePage })))
 
 export function AppRoutes() {
   return (

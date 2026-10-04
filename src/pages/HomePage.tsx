@@ -4,13 +4,12 @@ import { Link } from 'react-router-dom'
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { taxonomy, useExercises } from '@/content/load'
+import { exerciseCount, taxonomy } from '@/content/load'
 import { useProgress } from '@/db/progress'
 import { newSeed, sessionSearch } from '@/engine/sessionConfig'
 import { currentStreak } from '@/engine/stats'
 
 export function HomePage() {
-  const exercises = useExercises()
   const progress = useProgress()
   const [now] = useState(() => Date.now())
   const notionCount = taxonomy.ues.reduce((n, ue) => n + ue.themes.reduce((m, t) => m + t.notions.length, 0), 0)
@@ -53,7 +52,7 @@ export function HomePage() {
         </CardHeader>
         <CardContent className="flex flex-col gap-4">
           <div className="grid grid-cols-3 gap-4 text-center">
-            <Stat value={exercises?.length ?? '…'} label="exercices" />
+            <Stat value={exerciseCount('total').toLocaleString('fr-FR')} label="exercices" />
             <Stat value={notionCount} label="notions" />
             <Stat value={taxonomy.ues.length} label="UE" />
           </div>

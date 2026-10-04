@@ -15,7 +15,7 @@ describe('navigation', () => {
     )
     expect(screen.getByRole('heading', { name: 'DSCG Trainer' })).toBeInTheDocument()
     await userEvent.click(screen.getByRole('link', { name: 'Cours' }))
-    expect(screen.getByRole('heading', { name: 'Cours' })).toBeInTheDocument()
+    expect(await screen.findByRole('heading', { name: 'Cours' })).toBeInTheDocument()
     expect(screen.getByText(/UE4 — Comptabilité et audit/)).toBeInTheDocument()
     // Les pages lancent le chargement du contenu : l'attendre avant la fin du test,
     // sinon les imports des fichiers UE se terminent après la destruction de l'environnement.

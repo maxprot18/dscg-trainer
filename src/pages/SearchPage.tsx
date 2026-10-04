@@ -44,7 +44,6 @@ export function SearchPage() {
   const courseHits = useMemo(() => (courseDocs ? searchPrepared(courseDocs, query, 20) : []), [courseDocs, query])
   const exerciseHits = useMemo(() => (exerciseDocs ? searchPrepared(exerciseDocs, query, 30) : []), [exerciseDocs, query])
   const searching = queryTokens(query).length > 0
-  const loading = !courseDocs || !exerciseDocs
 
   return (
     <div className="flex flex-col gap-4">
@@ -65,50 +64,57 @@ export function SearchPage() {
         <p className="text-muted-foreground text-sm">
           Tapez au moins un mot de deux lettres. Accents et majuscules sont ignorés ; tous les mots doivent apparaître.
         </p>
-      ) : loading ? (
-        <p className="text-muted-foreground text-sm">Chargement du contenu…</p>
-      ) : courseHits.length === 0 && exerciseHits.length === 0 ? (
+      ) : courseDocs && exerciseDocs && courseHits.length === 0 && exerciseHits.length === 0 ? (
         <p className="text-muted-foreground text-sm">Aucun résultat pour « {query} ».</p>
       ) : (
         <>
+          {/* Chaque section s'affiche dès que son contenu est chargé (les fiches sont plus légères). */}
           <section aria-label="Fiches de cours" className="flex flex-col gap-2">
             <h2 className="flex items-center gap-2 font-semibold">
-              <BookOpen className="size-4" aria-hidden /> Fiches de cours ({courseHits.length})
+              <BookOpen className="size-4" aria-hidden /> Fiches de cours {courseDocs && `(${courseHits.length})`}
             </h2>
-            <ul className="flex flex-col gap-2">
-              {courseHits.map(({ item, snippet }) => (
-                <li key={item.id}>
-                  <Link to={`/cours/${item.id}`} className="hover:bg-accent block rounded-md border p-3 text-sm">
-                    <span className="flex items-center gap-2 font-medium">
-                      <Badge variant="secondary">{item.ue}</Badge> {item.title}
-                    </span>
-                    <span className="text-muted-foreground mt-1 block text-xs">{snippet}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            {!courseDocs ? (
+              <p className="text-muted-foreground text-sm">Chargement des fiches…</p>
+            ) : (
+              <ul className="flex flex-col gap-2">
+                {courseHits.map(({ item, snippet }) => (
+                  <li key={item.id}>
+                    <Link to={`/cours/${item.id}`} className="hover:bg-accent block rounded-md border p-3 text-sm">
+                      <span className="flex items-center gap-2 font-medium">
+                        <Badge variant="secondary">{item.ue}</Badge> {item.title}
+                      </span>
+                      <span className="text-muted-foreground mt-1 block text-xs">{snippet}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
           </section>
           <section aria-label="Exercices" className="flex flex-col gap-2">
             <h2 className="flex items-center gap-2 font-semibold">
-              <Dumbbell className="size-4" aria-hidden /> Exercices ({exerciseHits.length}
-              {exerciseHits.length === 30 ? ' premiers' : ''})
+              <Dumbbell className="size-4" aria-hidden /> Exercices{' '}
+              {exerciseDocs && `(${exerciseHits.length}${exerciseHits.length === 30 ? ' premiers' : ''})`}
             </h2>
-            <ul className="flex flex-col gap-2">
-              {exerciseHits.map(({ item, snippet }) => (
-                <li key={item.id}>
-                  <Link to={`/exercice/${item.id}`} className="hover:bg-accent block rounded-md border p-3 text-sm">
-                    <span className="flex flex-wrap items-center gap-2">
-                      <Badge variant="secondary">{item.ue}</Badge>
-                      <Badge variant="outline">{TYPE_LABELS[item.type]}</Badge>
-                      <span className="text-muted-foreground text-xs">
-                        {index.notions.get(item.notion)?.notion.title}
+            {!exerciseDocs ? (
+              <p className="text-muted-foreground text-sm">Chargement des exercices…</p>
+            ) : (
+              <ul className="flex flex-col gap-2">
+                {exerciseHits.map(({ item, snippet }) => (
+                  <li key={item.id}>
+                    <Link to={`/exercice/${item.id}`} className="hover:bg-accent block rounded-md border p-3 text-sm">
+                      <span className="flex flex-wrap items-center gap-2">
+                        <Badge variant="secondary">{item.ue}</Badge>
+                        <Badge variant="outline">{TYPE_LABELS[item.type]}</Badge>
+                        <span className="text-muted-foreground text-xs">
+                          {index.notions.get(item.notion)?.notion.title}
+                        </span>
                       </span>
-                    </span>
-                    <span className="text-muted-foreground mt-1 block text-xs">{snippet}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+                      <span className="text-muted-foreground mt-1 block text-xs">{snippet}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
           </section>
         </>
       )}

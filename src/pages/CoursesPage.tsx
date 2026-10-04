@@ -2,12 +2,9 @@ import { FileText } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 import { Badge } from '@/components/ui/badge'
-import { hasCourse, taxonomy, useExercises } from '@/content/load'
+import { exerciseCount, hasCourse, taxonomy } from '@/content/load'
 
 export function CoursesPage() {
-  const exercises = useExercises()
-  const countByNotion = new Map<string, number>()
-  for (const e of exercises ?? []) countByNotion.set(e.notion, (countByNotion.get(e.notion) ?? 0) + 1)
 
   return (
     <div className="flex flex-col gap-4">
@@ -26,7 +23,7 @@ export function CoursesPage() {
                 </summary>
                 <ul className="mt-2 flex flex-col gap-1 pl-4 text-sm">
                   {theme.notions.map((notion) => {
-                    const count = countByNotion.get(notion.id) ?? 0
+                    const count = exerciseCount(`notion:${notion.id}`)
                     const course = hasCourse(notion.id)
                     return (
                       <li key={notion.id}>

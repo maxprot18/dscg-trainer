@@ -10,9 +10,21 @@ import taxonomyJson from '@content/taxonomy.json'
 
 import type { ExamDurations } from '@/engine/sessionConfig'
 
-import { contentFileSchema, taxonomySchema, type Exercise, type Taxonomy, type UeId } from './schema'
+import type { Exercise, Taxonomy, UeId } from './schema'
 
-export const taxonomy: Taxonomy = taxonomySchema.parse(taxonomyJson)
+/**
+ * Taxonomie embarquée telle quelle : elle est validée par `npm run validate` et par les tests
+ * (src/content/taxonomy.test.ts), ce qui évite d'embarquer Zod dans le fichier JS principal.
+ */
+export const taxonomy = taxonomyJson as Taxonomy
+
+/**
+ * Nombre d'exercices publiés par UE (`UE4`), thème (`UE4/ifrs`) ou notion (`notion:ias16`), calculé
+ * au build (exercices vérifiés seulement) : disponible sans charger le contenu.
+ */
+export function exerciseCount(key: string): number {
+  return __EXERCISE_COUNTS__[key] ?? 0
+}
 
 /** Durée de l'épreuve de chaque UE (examen blanc). */
 export const examDurations = Object.fromEntries(
@@ -30,28 +42,17 @@ const bundles: Record<UeId, () => Promise<{ default: Modules }>> = {
   UE6: () => import('./bundles/ue6'),
 }
 
-export function parseExercises(modules: Modules, includeUnverified: boolean): Exercise[] {
-  return Object.entries(modules)
-    .flatMap(([path, data]) => {
-      const parsed = contentFileSchema.safeParse(data)
-      if (!parsed.success) {
-        console.error(`Contenu invalide ignoré : ${path}`, parsed.error.issues)
-        return []
-      }
-      return parsed.data.exercises
-    })
-    .filter((ex) => includeUnverified || ex.verified)
-}
-
 let cache: Promise<Exercise[]> | null = null
 let loaded: Exercise[] | null = null
 
 /** Tous les exercices servis (chargés une seule fois). */
 export function loadExercises(): Promise<Exercise[]> {
-  cache ??= Promise.all(Object.values(bundles).map((load) => load())).then((mods) => {
-    loaded = mods.flatMap((m) => parseExercises(m.default, import.meta.env.DEV))
-    return loaded
-  })
+  cache ??= Promise.all([import('./parse'), ...Object.values(bundles).map((load) => load())]).then(
+    ([{ parseExercises }, ...mods]) => {
+      loaded = mods.flatMap((m) => parseExercises(m.default, import.meta.env.DEV))
+      return loaded
+    },
+  )
   return cache
 }
 

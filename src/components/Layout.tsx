@@ -1,4 +1,5 @@
 import { BookOpen, ChartColumn, Dumbbell, House, Search } from 'lucide-react'
+import { Suspense } from 'react'
 import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom'
 
 import { ThemeToggle } from '@/components/ThemeToggle'
@@ -33,7 +34,10 @@ export function Layout() {
         </div>
       </header>
       <main className="flex-1 px-4 pt-3 pb-24">
-        <Outlet />
+        {/* Les écrans sont chargés à la demande : l'en-tête et la navigation restent affichés. */}
+        <Suspense fallback={<p className="text-muted-foreground">Chargement…</p>}>
+          <Outlet />
+        </Suspense>
       </main>
       <nav className="bg-background/95 fixed inset-x-0 bottom-0 border-t backdrop-blur" aria-label="Navigation principale">
         <ul className="mx-auto grid max-w-3xl grid-cols-4">
