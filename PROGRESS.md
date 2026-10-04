@@ -1,6 +1,6 @@
 # PROGRESS — DSCG Trainer
 
-Dernière mise à jour : 2026-10-04, fin de la session phase 7 (interface, version 1.1.0). Phases 6 (cours enrichis) et 8 (exercices complémentaires) à venir, voir `docs/audit-v1.md`.
+Dernière mise à jour : 2026-10-04, fin de la session phase 6 (cours enrichis et visuels, version 1.2.0). Phase 8 (exercices complémentaires) à venir, voir `docs/audit-v1.md`.
 
 ## État par phase
 
@@ -13,8 +13,8 @@ Dernière mise à jour : 2026-10-04, fin de la session phase 7 (interface, versi
 | 4. Progression | Terminée (voir ci-dessous) |
 | 5. Finitions | Terminée : version 1.0.0 (voir ci-dessous) |
 | 7. Interface (audit v1) | Terminée : version 1.1.0 (voir ci-dessous) |
-| 6. Cours enrichis et visuels | À faire (phase suivante) |
-| 8. Exercices complémentaires | À faire |
+| 6. Cours enrichis et visuels | Terminée : version 1.2.0 (voir ci-dessous) |
+| 8. Exercices complémentaires | À faire (phase suivante) |
 
 ## Phase 0 : ce qui est fait
 
@@ -119,6 +119,15 @@ L'audit `docs/audit-v1.md` (4 octobre 2026) a fixé trois phases hors SPEC, vali
 - **Accueil, progression, réglages** : objectif quotidien (anneau), activité des huit dernières semaines (deux graphiques, une mesure chacun), réussite par type d'exercice, historique filtrable ; `/reglages` (objectif, tailles de session, thème, export, import, remise à zéro, installation) ; bandeaux « nouvelle version » (service worker en mode prompt) et « installer ».
 - **Vérifications** : 190 tests verts ; smoke test Chromium (session rapide, flashcards, écriture, cours, fiche, progression, mode sombre, grand écran), aucune erreur console ; Lighthouse 95-96 en performance (90 sur la fiche de cours) et 100 en accessibilité, bonnes pratiques et SEO sur tous les écrans mesurés.
 
+## Phase 6 : ce qui est fait (cours enrichis et visuels)
+
+- **271 fiches réécrites** (22 à 30 lignes non vides, un bloc diagramme comptant pour une ligne) selon la structure fixée dans `docs/content-guide.md` : références, **Enjeu**, règles développées, formules, **## Exemple** (chiffré et résolu, recalculé avec node par le rédacteur puis par le relecteur), **## Erreurs fréquentes** (tirées des distracteurs des QCM de la notion), **## À retenir**, **Notions liées** (1 054 liens internes, tous vérifiés par le validateur et le relecteur). UE 6 en anglais avec ligne **Glossary** (20 fiches).
+- **172 diagrammes** (cinq formes de la phase 7), soit environ deux fiches sur trois ; chaque libellé, pourcentage ou date vérifié par le relecteur.
+- **Méthode** : 27 lots (plan dans le scratchpad de session : `p6/plan.json`, briefs rédacteur et relecteur, script `commit-lot.sh` qui vérifie la longueur, le validateur et commite/pousse le lot), rédacteur puis relecteur indépendant par lot, un commit par lot relu (28 commits de contenu). Deux limites d'usage de l'API ont interrompu 18 agents ; les lots ont été repris sur l'état de l'arbre de travail (fiches partielles listées dans `p6/status.md`).
+- **Corrections de fond apportées par les relecteurs** (droit à octobre 2026) : droits d'enregistrement des fusions (gratuité depuis la LF 2019, CGI art. 816 : fiche et deux exercices de `regime-fiscal-faveur-fusions.json` corrigés et relus) ; seuils d'exemption de consolidation 30 M€ / 60 M€ / 250 (D. 230-2, décret 2024-152) ; numérotation L. 821-x confirmée pour les articles les plus cités (L. 821-40, -41, -44 à -46, -49, -50, -53, -54, -56, -63, -67 à -69) ; IFRS 18 adoptée par l'UE (règl. 2026/338, exercices ouverts dès 2027) ; Omnibus I (directive 2026/470) et actes délégués ESRS (3 juillet 2026) et taxonomie (règl. 2026/73) ; omnibus IA (règl. 2026/1744 : haut risque reporté au 2 décembre 2027) ; Data Act (frais de migration supprimés au 12 janvier 2027) ; renumérotation des contrats à long terme (règl. ANC 2026-03, art. 523-x dès 2027) ; comptes du règl. ANC 2022-06 (1522 restructurations, 6673/7673 VMP, 6582 amendes, 121-5 méthodes de référence) ; procédure d'alerte (président du tribunal informé à partir de la phase 2) ; NIS 2 non encore transposée en France au 4 octobre 2026.
+- **Interface** : bouton « S'entraîner » et navigation rendus avec la fiche (plus de décalage de mise en page) ; Lighthouse fiche de cours 96 en performance (90 en phase 7), CLS 0,07 (0,16), 100 ailleurs ; aucune erreur console. Captures `fiche.png` (mobile, diagramme) et `fiche-desktop.png` (sombre) refaites.
+- **Vérifications** : `npm run lint`, `validate` (271/271 fiches, 172 diagrammes, 1 400 exercices vérifiés), `typecheck`, 190 tests, build : tout vert.
+
 ## Décisions prises (et pourquoi)
 
 1. **Programme de référence : arrêté du 4 août 2025** (BOESR n° 32 du 28/08/2025, NOR MENS2523324A). Il s'applique aux épreuves du DSCG à partir de la session 2027, celle que Max préparera ; il remplace l'arrêté du 13/02/2019.
@@ -172,6 +181,11 @@ L'audit `docs/audit-v1.md` (4 octobre 2026) a fixé trois phases hors SPEC, vali
 42. **(Phase 7) Reprise d'examen reconstruite depuis les tentatives** plutôt que par une sauvegarde parallèle : chaque réponse est déjà enregistrée au fil de l'eau ; un examen non terminé sur le même sujet (même URL, donc même graine) et de moins de 24 h est proposé à la reprise.
 43. **(Phase 7) Graphiques à une mesure** : deux petits graphiques (exercices, taux) plutôt qu'un graphique à deux axes ; une seule teinte par graphique ; valeurs lisibles dans la description SVG.
 
+44. **(Phase 6) Fiches de 22 à 30 lignes, structure fixe** (guide § « Fiche de cours ») : le plafond de 30 lignes du validateur est conservé pour que la fiche reste lisible sur téléphone ; le plancher passe de 10 à 22 pour garantir l'exemple et les erreurs fréquentes. Un bloc diagramme compte pour une ligne (sinon un diagramme de 8 lignes JSON interdisait tout développement).
+45. **(Phase 6) Diagrammes seulement quand la notion s'y prête** (environ deux fiches sur trois, 172) : pas de diagramme décoratif ; le relecteur vérifie chaque libellé. Les notions purement lexicales (UE 6 vocabulaire) ou purement textuelles n'en ont pas.
+46. **(Phase 6) Droit à jour à la date de la session, vérifié par recherche web** : quand un relecteur établit qu'une règle a changé (IFRS 18, Omnibus I, omnibus IA, décret 2024-152…), la fiche est mise à jour et les exercices de la notion sont contrôlés dans la foulée (grep sur les chiffres ou dates concernés) ; seuls deux exercices (fusions) ont dû être corrigés. Les numéros d'articles non confirmés restent cités sans numéro (décision 23), et la date du jour (« à ce jour ») est écrite quand un texte est en cours (NIS 2).
+47. **(Phase 6) Reprise des lots interrompus sur l'arbre de travail** plutôt que depuis zéro : le rédacteur de reprise relit et recalcule les fiches déjà écrites, puis termine le lot ; le relecteur repart toujours de zéro. Aucun commit avant relecture, même sur demande du hook de fin de tour.
+
 ## Points ouverts / à vérifier
 
 - **Déploiement** : résolu. GitHub Pages est activé (source : GitHub Actions) et chaque push sur `main` déploie automatiquement.
@@ -180,14 +194,15 @@ L'audit `docs/audit-v1.md` (4 octobre 2026) a fixé trois phases hors SPEC, vali
 - UE 1, 5 et 6 ont moins de 5 questions par notion à la cible V1 : on peut regrouper des notions en phase 3 si c'est trop fin.
 
 - **Points de fond** : ceux relevés en phases 2 et 3 ont été vérifiés et corrigés en phase 5 (voir « Phase 5 : ce qui est fait »). Les relecteurs n'ont pu lire la plupart des textes officiels qu'au travers de résumés de recherche (Légifrance, ANC et BOFiP bloqués par le proxy) : un contrôle humain sur les textes reste souhaitable, en priorité sur les règlements récents (ANC 2026-03, directive (UE) 2026/470) et sur le plan de comptes PCG 2025.
-- **Décalage de mise en page (CLS) de 0,07 sur toutes les pages** et 0,15 sur la fiche de cours (le bouton « S'entraîner » descend quand la fiche arrive) : performance Lighthouse 90 sur la fiche, 95-96 ailleurs. À regarder en phase 6 (charger la fiche avec la page, remonter le bouton) ; le 0,07 commun vient probablement du remplacement de l'écran « Chargement… » de Suspense.
+- **Décalage de mise en page (CLS) de 0,07 sur toutes les pages** : vient du remplacement de l'écran « Chargement… » de Suspense dans `<main>` ; sans effet sur les scores (95-96). Le 0,15 propre à la fiche de cours est corrigé en phase 6.
+- **Points à revoir quand les textes évolueront** : date de promulgation de la loi française transposant NIS 2 (`conformite-reglementaire-si`, « non promulguée à ce jour ») ; numéro recodifié de l'infraction de non-révélation des faits délictueux (ancien L. 820-7, cité sans numéro) ; compte 7673 (produits nets sur cessions de VMP) vu par symétrie avec 6673 sur une seule source ; l'exercice `theorie-portefeuille-medaf` utilise le compte parent 667 pour une cession de VMP (accepté : 667 reste le compte de rattachement de 6673).
+- **Release GitHub** : les tags ne peuvent pas être poussés depuis l'environnement (passerelle limitée aux branches). Créer les releases v1.0.0, v1.1.0 et v1.2.0 depuis l'interface GitHub (commits de fusion des PR #8, #9 et de la PR de la phase 6).
 
-## Prochaine étape : phase 6 (cours enrichis et visuels)
+## Prochaine étape : phase 8 (exercices complémentaires)
 
-- Voir `docs/audit-v1.md` § 1 et § 6. Fiches à 25-30 lignes avec une structure fixe : enjeu, règles, **exemple chiffré résolu**, **erreurs fréquentes à l'examen** (tirées des distracteurs des QCM de la notion), « À retenir », **notions liées** (liens `[titre](/cours/id)`), références ; glossaire anglais → français dans les fiches UE 6.
-- Visuels : blocs ```` ```diagram ```` (formes et schéma dans `src/content/diagram.ts` et `diagramSchema.ts`, exemples dans `src/components/Markdown.test.tsx`) sur les notions qui s'y prêtent, environ 120 ; `npm run validate` les vérifie.
-- Méthode : 25 lots (mêmes découpages qu'en phases 2 et 3), rédacteur puis relecteur indépendant par lot, commit par lot ; le relecteur vérifie aussi que chaque lien interne pointe vers la bonne notion et que chaque diagramme est juste. Mettre à jour `docs/content-guide.md` (structure des fiches, diagrammes, liens) avant de lancer les rédacteurs.
-- Puis phase 8 : environ 150 exercices sur les notions à 3-4 exercices (UE 1, 5, 6).
+- Voir `docs/audit-v1.md` § 3. Environ 150 exercices sur les notions qui n'en ont que 3 ou 4 (UE 1, 5 et 6 ; `npm run validate` affiche les comptes par notion, `exerciseCount()` côté app) pour que chaque notion atteigne au moins 5 à 6 exercices et que les sessions par notion aient du sens.
+- Méthode inchangée : lots par thème (une dizaine), rédacteur puis relecteur indépendant qui recalcule chaque réponse, `verified: true` seulement après relecture, un commit par lot ; répartition des types et difficultés de `CLAUDE.md`, règles de `docs/content-guide.md` (les fiches enrichies servent désormais de base : s'appuyer sur leurs exemples et erreurs fréquentes sans les recopier). Ids nouveaux à la suite des numéros existants.
+- Fin de phase : `validate:strict`, lint, tests, build, CHANGELOG 1.3.0, README (nombre d'exercices), PROGRESS.md, PR, CI, fusion.
 
 ## Budget consommé (estimation)
 
@@ -198,4 +213,5 @@ L'audit `docs/audit-v1.md` (4 octobre 2026) a fixé trois phases hors SPEC, vali
 - Phase 4 : environ 15 à 20 $ (cible SPEC : 25 $). Aucun sous-agent : travail direct (moteur, écrans, tests, smoke test).
 - Phase 5 : environ 20 à 30 $ (cible SPEC : 15 $, dépassement accepté pour finir proprement). 5 sous-agents (vérification des points ouverts et relecture, harmonisation des comptes ANC 2022-06 et relecture), le reste en travail direct (code, Lighthouse, captures).
 - Phase 7 : environ 35 à 45 $ (estimation de l'audit : 40 à 60 $). Aucun sous-agent : travail direct.
-- Cumul estimé : environ 260 à 330 $. L'utilisateur a accepté de dépasser le budget initial de 250 $ pour les phases 6 à 8 (audit : 155 à 215 $ pour les trois).
+- Phase 6 : environ 110 à 140 $ (estimation de l'audit : 80 à 110 $). Environ 72 sous-agents (27 rédactions, 27 relectures, 18 relances après deux limites d'usage), de 90 000 à 140 000 tokens chacun ; le dépassement vient des relances et des recherches web des relecteurs (droit 2026). Le reste en travail direct (plan, briefs, commits, Lighthouse, captures).
+- Cumul estimé : environ 370 à 470 $. L'utilisateur a accepté de dépasser le budget initial de 250 $ pour les phases 6 à 8 (audit : 155 à 215 $ pour les trois ; reste la phase 8, estimée 35 à 45 $).
