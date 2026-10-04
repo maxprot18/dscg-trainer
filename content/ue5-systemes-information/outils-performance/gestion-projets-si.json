@@ -1,0 +1,179 @@
+{
+  "exercises": [
+    {
+      "id": "ue5-outils-projets-0001",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "gestion-projets-si",
+      "difficulty": 1,
+      "tags": [
+        "cycle en V",
+        "recette",
+        "méthodes prédictives"
+      ],
+      "statement": "Dans un projet conduit selon le cycle en V, à quelle phase de la branche descendante correspond la recette (tests d'acceptation par la maîtrise d'ouvrage) ?",
+      "options": [
+        "À la conception détaillée",
+        "Au codage",
+        "À l'expression des besoins et aux spécifications",
+        "À la conception de l'architecture technique"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Le cycle en V associe à chaque phase de conception (branche descendante) une phase de test (branche montante) qui vérifie ses livrables. La recette, menée par la maîtrise d'ouvrage, vérifie que le système répond aux besoins exprimés : elle correspond à l'expression des besoins et aux spécifications. La conception détaillée (option 1) est vérifiée par les tests unitaires. Le codage (option 2) est la pointe du V, sans phase de test symétrique. L'architecture technique ou conception générale (option 4) est vérifiée par les tests d'intégration.",
+      "source_ref": "Méthodes prédictives de conduite de projet : cycle en V (correspondance conception / tests)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue5-outils-projets-0002",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "gestion-projets-si",
+      "difficulty": 2,
+      "tags": [
+        "Scrum",
+        "Product Owner",
+        "backlog",
+        "sprint"
+      ],
+      "statement": "Une équipe Scrum est à mi-parcours d'un sprint de deux semaines. Le directeur commercial demande d'ajouter immédiatement une fonctionnalité qu'il juge urgente. Quelle réponse est conforme à Scrum ?",
+      "options": [
+        "Le Scrum Master ajoute la fonctionnalité au sprint en cours et prolonge celui-ci d'une semaine",
+        "La demande est portée au Product Owner, qui l'inscrit au backlog produit et la priorise, en général pour un prochain sprint",
+        "L'équipe de développement l'intègre sans délai, car l'agilité impose d'accepter toute demande à tout moment",
+        "Le directeur commercial étant le client, il modifie lui-même le backlog du sprint en cours"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Dans Scrum, le Product Owner est seul responsable du backlog produit et de sa priorisation : toute nouvelle demande passe par lui. Le sprint a une durée fixe et un objectif qui ne doit pas être remis en cause en cours de route ; la fonctionnalité sera donc en principe planifiée pour un sprint suivant (si l'objectif du sprint devient obsolète, seul le Product Owner peut l'annuler). L'option 1 est fausse : le Scrum Master est garant de la méthode, il ne gère pas le contenu, et la durée d'un sprint n'est pas prolongée. L'option 3 confond accueil du changement et désorganisation : l'agilité accueille le changement entre les itérations, par le backlog. L'option 4 contourne le Product Owner, ce qui crée des priorités concurrentes.",
+      "source_ref": "Scrum Guide (K. Schwaber et J. Sutherland, 2020) : rôles du Product Owner et du Scrum Master, sprint ; Manifeste agile (2001)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue5-outils-projets-0003",
+      "type": "numeric",
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "gestion-projets-si",
+      "difficulty": 2,
+      "tags": [
+        "valeur acquise",
+        "CPI",
+        "estimation à terminaison"
+      ],
+      "statement": "Un projet de refonte du site intranet a un budget total (BAC) de 400 000 €. À la date du point d'avancement, le travail réalisé représente 40 % du projet, le budget du travail qui était prévu à cette date s'élève à 200 000 € et les coûts réels engagés à 190 000 €. En supposant que la performance de coût observée se maintienne jusqu'à la fin, calculez l'estimation du coût à terminaison (EAC) (en €, arrondie à l'euro).",
+      "expected_value": 475000,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Valeur acquise VA = 40 % × 400 000 = 160 000 €. CPI = VA ÷ CR = 160 000 ÷ 190 000 = 0,8421. EAC = BAC ÷ CPI = 400 000 ÷ 0,8421 = 475 000 €, soit un dépassement prévisible de 75 000 €. Erreurs classiques : diviser par le SPI (VA ÷ VP = 0,8, ce qui donne 500 000 €) ou ajouter au coût réel le budget restant sans le corriger (190 000 + 240 000 = 430 000 €, hypothèse où le reste du projet se déroulerait conformément au budget). La valeur planifiée de 200 000 € sert au SPI, pas à l'EAC.",
+      "source_ref": "Méthode de la valeur acquise (PMI, PMBOK) : VA, CPI = VA ÷ CR, EAC = BAC ÷ CPI",
+      "verified": true,
+      "estimated_seconds": 200
+    },
+    {
+      "id": "ue5-outils-projets-0004",
+      "type": "case_study",
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "gestion-projets-si",
+      "difficulty": 3,
+      "tags": [
+        "valeur acquise",
+        "CPI",
+        "SPI",
+        "jours-hommes",
+        "pilotage de projet"
+      ],
+      "title": "Projet Dématex : point d'avancement à quatre mois",
+      "context": "La société Lauzière a lancé un projet de dématérialisation des notes de frais (application mobile et circuit de validation). Le projet est confié à une équipe interne de cinq personnes.\n\nBudget initial : charge estimée à 600 jours-hommes, valorisés à 500 € le jour-homme, soit un budget total (BAC) de 300 000 €. Durée prévue : 8 mois, avec une consommation du budget supposée régulière.\n\nAu bout de 4 mois, le chef de projet présente la situation suivante :\n- selon le planning, 50 % du projet aurait dû être réalisé ;\n- l'avancement réel mesuré sur les livrables est de 40 % ;\n- les coûts réels engagés s'élèvent à 135 000 €.\n\nPour rattraper le retard, le directeur financier propose d'ajouter immédiatement trois développeurs prestataires à l'équipe.",
+      "sub_questions": [
+        {
+          "id": "q1-valeur-acquise",
+          "kind": "numeric",
+          "prompt": "Calculez la valeur acquise (VA) à quatre mois (en €).",
+          "points": 2,
+          "expected_value": 120000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "VA = avancement réel × BAC = 40 % × 300 000 = 120 000 €. La valeur acquise se calcule au coût budgété du travail réalisé, et non au coût réel (135 000 €) ni au coût prévu à cette date (VP = 50 % × 300 000 = 150 000 €)."
+        },
+        {
+          "id": "q2-cpi",
+          "kind": "numeric",
+          "prompt": "Calculez l'indice de performance des coûts (CPI) (arrondi à deux décimales).",
+          "points": 2,
+          "expected_value": 0.89,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.01
+          },
+          "decimals": 2,
+          "explanation": "CPI = VA ÷ CR = 120 000 ÷ 135 000 = 0,89. Chaque euro dépensé n'a produit que 0,89 € de travail budgété : le projet dépasse son budget. Écart de coût = VA − CR = −15 000 €."
+        },
+        {
+          "id": "q3-spi",
+          "kind": "mcq",
+          "prompt": "Quelle interprétation de l'indice de performance des délais (SPI) est exacte ?",
+          "points": 2,
+          "options": [
+            "SPI = 1,25 : le projet est en avance",
+            "SPI = 0,80 : le projet a réalisé 80 % du travail prévu à cette date, il est en retard",
+            "SPI = 0,89 : le projet est en retard de 11 %",
+            "SPI = 0,90 : le projet est dans les temps, l'écart étant inférieur à 10 %"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "SPI = VA ÷ VP = 120 000 ÷ 150 000 = 0,80 : seuls 80 % du travail planifié à cette date ont été réalisés (écart de délai = VA − VP = −30 000 €). L'option 1 inverse le ratio (VP ÷ VA). L'option 3 reprend le CPI, qui mesure les coûts et non les délais. L'option 4 repose sur un calcul et un seuil sans fondement."
+        },
+        {
+          "id": "q4-eac",
+          "kind": "numeric",
+          "prompt": "En supposant que la performance de coût observée se maintienne, calculez l'estimation du coût à terminaison (EAC) (en €, arrondie à l'euro).",
+          "points": 2,
+          "expected_value": 337500,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.01
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "EAC = BAC ÷ CPI = 300 000 ÷ (120 000 ÷ 135 000) = 300 000 × 135 000 ÷ 120 000 = 337 500 €, soit un dépassement prévisible de 37 500 € (12,5 %). En jours-hommes : 600 ÷ 0,8889 = 675 j-h."
+        },
+        {
+          "id": "q5-recommandation",
+          "kind": "open",
+          "prompt": "Que pensez-vous de la proposition du directeur financier ? Quelles autres mesures envisager ?",
+          "points": 4,
+          "model_answer": "Le projet est à la fois en retard (SPI = 0,80) et en dépassement de coût (CPI = 0,89, EAC = 337 500 €). Ajouter trois prestataires immédiatement est risqué : selon la loi de Brooks, ajouter des personnes à un projet en retard le retarde souvent davantage, car les nouveaux venus doivent être formés par l'équipe en place (qui produit moins pendant ce temps) et les besoins de coordination augmentent avec la taille de l'équipe ; de plus, cela alourdirait encore le coût (prestataires plus chers que le jour-homme interne). Il faut d'abord analyser les causes du retard : estimation initiale sous-évaluée, besoins mal stabilisés, difficultés techniques, indisponibilité des membres de l'équipe. Mesures possibles : réviser le planning et le budget à terminaison et les faire valider par le comité de pilotage ; réduire ou phaser le périmètre (livrer d'abord l'essentiel, par exemple la saisie mobile et un circuit de validation simple, en approche incrémentale) ; stabiliser les besoins avec la maîtrise d'ouvrage ; renforcer ponctuellement l'équipe sur des tâches bien isolées et peu dépendantes de l'existant, si un renfort est retenu ; suivre CPI et SPI à chaque point d'avancement.",
+          "key_points": [
+            "Diagnostic : retard (SPI 0,80) et dépassement (CPI 0,89, EAC 337 500 €)",
+            "Loi de Brooks : un renfort tardif accroît formation et coordination et peut aggraver le retard, tout en augmentant le coût",
+            "Analyser les causes avant d'agir (estimation, besoins, technique, disponibilité)",
+            "Alternatives : arbitrage en comité de pilotage, réduction ou phasage du périmètre, renfort ciblé sur des tâches isolées, suivi des indicateurs"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "VA = 40 % × 300 000 = 120 000 € ; VP = 150 000 € ; CPI = 120 000 ÷ 135 000 = 0,89 ; SPI = 120 000 ÷ 150 000 = 0,80 ; EAC = 300 000 ÷ 0,8889 = 337 500 €. La méthode de la valeur acquise permet de distinguer le retard du dépassement de coût ; la réponse managériale doit tenir compte de la loi de Brooks.",
+      "source_ref": "Méthode de la valeur acquise (PMI, PMBOK) ; F. Brooks, The Mythical Man-Month (1975)",
+      "verified": true,
+      "estimated_seconds": 900
+    }
+  ]
+}

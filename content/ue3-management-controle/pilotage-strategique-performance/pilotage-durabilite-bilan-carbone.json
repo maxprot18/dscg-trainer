@@ -1,0 +1,197 @@
+{
+  "exercises": [
+    {
+      "id": "ue3-pilotage-durab-0001",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "pilotage-durabilite-bilan-carbone",
+      "difficulty": 1,
+      "tags": [
+        "bilan carbone",
+        "scopes"
+      ],
+      "source_ref": "GHG Protocol, A Corporate Accounting and Reporting Standard (WRI/WBCSD, 2004), périmètres (scopes) 1, 2 et 3 ; C. env. art. L. 229-25",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Dans un bilan des émissions de gaz à effet de serre établi selon le GHG Protocol, à quel périmètre (scope) appartiennent les émissions liées aux trajets domicile-travail des salariés ?",
+      "options": [
+        "Scope 1",
+        "Scope 2",
+        "Scope 3",
+        "Ces émissions ne sont pas comptabilisées"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'option 3 est exacte : les déplacements domicile-travail des salariés, effectués avec des véhicules que l'entreprise ne détient pas, sont des émissions indirectes autres que celles de l'énergie achetée : scope 3 (amont). L'option 1 est fausse : le scope 1 couvre les émissions directes de sources détenues ou contrôlées (chaudières, flotte de véhicules de l'entreprise). L'option 2 est fausse : le scope 2 couvre l'énergie achetée (électricité, chaleur, vapeur). L'option 4 est fausse : ce poste fait partie des catégories du scope 3."
+    },
+    {
+      "id": "ue3-pilotage-durab-0002",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "pilotage-durabilite-bilan-carbone",
+      "difficulty": 2,
+      "tags": [
+        "scope 3",
+        "réduction des émissions"
+      ],
+      "source_ref": "GHG Protocol, A Corporate Accounting and Reporting Standard (WRI/WBCSD, 2004), périmètres (scopes) 1, 2 et 3 ; C. env. art. L. 229-25",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Une entreprise agroalimentaire veut réduire ses émissions de scope 3 amont. Laquelle de ces actions porte principalement sur ce périmètre ?",
+      "options": [
+        "Remplacer la chaudière au fioul de l’usine par une pompe à chaleur",
+        "Souscrire un contrat d’électricité d’origine renouvelable pour ses entrepôts",
+        "Remplacer les véhicules diesel de sa propre flotte par des véhicules électriques",
+        "Sélectionner des fournisseurs de matières premières agricoles dont les pratiques sont moins émettrices"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'option 4 est exacte : les émissions liées à la production des matières premières achetées relèvent du scope 3 amont (biens et services achetés), souvent le premier poste d'une entreprise agroalimentaire. L'option 1 est fausse : la chaudière de l'usine émet du scope 1 (combustion directe) ; la pompe à chaleur déplace une partie des émissions vers le scope 2. L'option 2 est fausse : l'électricité achetée relève du scope 2. L'option 3 est fausse : la flotte détenue relève du scope 1."
+    },
+    {
+      "id": "ue3-pilotage-durab-0003",
+      "type": "true_false",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "pilotage-durabilite-bilan-carbone",
+      "difficulty": 2,
+      "tags": [
+        "double matérialité",
+        "ESRS"
+      ],
+      "source_ref": "ESRS 1, chapitre 3 (double matérialité), règlement délégué (UE) 2023/2772 ; directive (UE) 2022/2464",
+      "verified": true,
+      "estimated_seconds": 50,
+      "statement": "Au sens des ESRS, une question de durabilité n'est matérielle que si elle l'est à la fois du point de vue de l'impact et du point de vue financier.",
+      "answer": false,
+      "justification": "Il suffit qu'elle soit matérielle d'un seul des deux points de vue, impact ou financier.",
+      "explanation": "La double matérialité combine deux regards : la matérialité d'impact (incidences de l'entreprise et de sa chaîne de valeur sur les personnes et l'environnement) et la matérialité financière (risques et opportunités de durabilité qui affectent ou pourraient affecter la situation financière, la performance ou les flux de trésorerie). Une question est matérielle dès que l'un des deux critères est rempli ; elle doit alors faire l'objet d'informations dans l'état de durabilité."
+    },
+    {
+      "id": "ue3-pilotage-durab-0004",
+      "type": "numeric",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "pilotage-durabilite-bilan-carbone",
+      "difficulty": 2,
+      "tags": [
+        "bilan carbone",
+        "scopes",
+        "facteurs d’émission"
+      ],
+      "source_ref": "GHG Protocol, A Corporate Accounting and Reporting Standard (WRI/WBCSD, 2004), périmètres (scopes) 1, 2 et 3 ; C. env. art. L. 229-25",
+      "verified": true,
+      "estimated_seconds": 240,
+      "statement": "Une PME industrielle prépare son bilan des émissions de gaz à effet de serre. Données de l'année et facteurs d'émission retenus (hypothèses) :\n- gaz naturel brûlé dans ses fours : 850 000 kWh, facteur 0,227 kgCO₂e/kWh ;\n- gazole consommé par ses camions de livraison (détenus) : 18 000 litres, facteur 3,1 kgCO₂e/litre ;\n- électricité achetée : 1 200 000 kWh, facteur 0,052 kgCO₂e/kWh ;\n- voyages d'affaires en avion : 310 000 passagers.km, facteur 0,15 kgCO₂e/passager.km.\n\nCalculez le total des émissions des scopes 1 et 2 (en tonnes de CO₂ équivalent, arrondi à une décimale).",
+      "expected_value": 311.2,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "unit": "tCO₂e",
+      "decimals": 1,
+      "explanation": "Scope 1 (émissions directes) : gaz naturel 850 000 × 0,227 = 192 950 kg, soit 192,95 t ; gazole des camions détenus 18 000 × 3,1 = 55 800 kg, soit 55,8 t. Scope 2 (électricité achetée) : 1 200 000 × 0,052 = 62 400 kg, soit 62,4 t. Total scopes 1 et 2 = 192,95 + 55,8 + 62,4 = 311,15 t, soit environ 311,2 tCO₂e. Les voyages en avion (310 000 × 0,15 = 46,5 t) relèvent du scope 3 et sont exclus ; les inclure donnerait 357,7 t."
+    },
+    {
+      "id": "ue3-pilotage-durab-0005",
+      "type": "flashcard",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "pilotage-durabilite-bilan-carbone",
+      "difficulty": 1,
+      "tags": [
+        "scopes",
+        "GHG Protocol"
+      ],
+      "source_ref": "GHG Protocol, A Corporate Accounting and Reporting Standard (WRI/WBCSD, 2004), périmètres (scopes) 1, 2 et 3 ; C. env. art. L. 229-25",
+      "verified": true,
+      "estimated_seconds": 40,
+      "front": "Que recouvrent les scopes 1, 2 et 3 du GHG Protocol ?",
+      "back": "Scope 1 : émissions directes des sources détenues ou contrôlées (combustion sur site, véhicules de l'entreprise, procédés, fuites de fluides frigorigènes).\nScope 2 : émissions indirectes liées à l'énergie achetée (électricité, chaleur, vapeur, froid).\nScope 3 : toutes les autres émissions indirectes de la chaîne de valeur, amont (achats, transport amont, déplacements des salariés) et aval (utilisation et fin de vie des produits vendus).",
+      "explanation": "Le scope 3 représente souvent la plus grande part des émissions. Le bilan réglementaire français (C. env. art. L. 229-25) intègre, depuis 2023, les émissions indirectes significatives."
+    },
+    {
+      "id": "ue3-pilotage-durab-0006",
+      "type": "case_study",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "pilotage-durabilite-bilan-carbone",
+      "difficulty": 3,
+      "tags": [
+        "trajectoire de réduction",
+        "plan de transition",
+        "intensité carbone"
+      ],
+      "source_ref": "ESRS E1 Changement climatique (règl. délégué (UE) 2023/2772) ; GHG Protocol (WRI/WBCSD, 2004) ; programme DSCG UE 3",
+      "verified": true,
+      "estimated_seconds": 900,
+      "title": "Fonderies Arvel : piloter une trajectoire de décarbonation",
+      "context": "Les Fonderies Arvel se sont fixé en 2023 un objectif de réduction de 42 % de leurs émissions des scopes 1 et 2 entre 2022 (année de référence) et 2030.\n\nDonnées :\n- émissions scopes 1 et 2 en 2022 : 4 800 tCO₂e, pour un chiffre d'affaires de 60 M€ ;\n- émissions scopes 1 et 2 en 2025 : 4 320 tCO₂e, pour un chiffre d'affaires de 72 M€ ;\n- les émissions de scope 3 (achats de métaux, transport, usage des pièces vendues) sont estimées à environ six fois celles des scopes 1 et 2, mais ne sont pas encore suivies.\n\nLe directeur financier se félicite que l'intensité carbone ait baissé de 25 % depuis 2022. Le comité de direction se demande comment intégrer cet objectif climatique au pilotage (budgets, investissements, tableau de bord).",
+      "sub_questions": [
+        {
+          "id": "q1-cible-2030",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez le niveau d’émissions des scopes 1 et 2 visé pour 2030 (en tCO₂e).",
+          "expected_value": 2784,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "tCO₂e",
+          "decimals": 0,
+          "explanation": "Cible 2030 = 4 800 × (1 − 0,42) = 4 800 × 0,58 = 2 784 tCO₂e. Erreur classique : appliquer la réduction aux émissions de 2025 (4 320 × 0,58 = 2 505,6 t)."
+        },
+        {
+          "id": "q2-reduction-annuelle",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez la réduction annuelle moyenne (linéaire, en tCO₂e par an) nécessaire entre 2025 et 2030 pour atteindre la cible.",
+          "expected_value": 307.2,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "tCO₂e/an",
+          "decimals": 1,
+          "explanation": "Réduction restante = 4 320 − 2 784 = 1 536 tCO₂e, sur 5 ans (2025 à 2030) : 1 536 ÷ 5 = 307,2 tCO₂e par an. Entre 2022 et 2025, la baisse n'a été que de 480 t, soit 160 t par an : le rythme doit presque doubler."
+        },
+        {
+          "id": "q3-intensite",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Le directeur financier met en avant la baisse de 25 % de l'intensité carbone (tCO₂e par M€ de chiffre d'affaires). Quelle appréciation est la plus juste ?",
+          "options": [
+            "La baisse d’intensité suffit à prouver que l’entreprise est sur sa trajectoire",
+            "Le calcul est faux : l’intensité a augmenté entre 2022 et 2025",
+            "L’intensité a bien baissé de 25 % (de 80 à 60 tCO₂e/M€), mais l’objectif porte sur les émissions absolues, qui n’ont baissé que de 10 % : la croissance de l’activité masque un retard sur la trajectoire",
+            "L’intensité carbone n’a pas de sens pour une entreprise industrielle"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "L'option 3 est exacte : intensité 2022 = 4 800 ÷ 60 = 80 tCO₂e/M€ ; 2025 = 4 320 ÷ 72 = 60 tCO₂e/M€, soit −25 %. Mais les émissions absolues n'ont baissé que de 10 % (4 320 ÷ 4 800 − 1), alors que la réduction linéaire de 42 % sur 8 ans supposait environ −15,75 % en 3 ans (42 % × 3 ÷ 8). L'option 1 est fausse : l'objectif est formulé en valeur absolue. L'option 2 est fausse : le calcul de l'intensité est juste. L'option 4 est fausse : l'intensité est un indicateur utile de pilotage, à condition de le compléter par les émissions absolues."
+        },
+        {
+          "id": "q4-pilotage",
+          "kind": "open",
+          "points": 5,
+          "prompt": "Comment intégrer l'objectif climatique au système de pilotage des Fonderies Arvel ? Évoquez notamment les outils de contrôle de gestion et la question du scope 3.",
+          "model_answer": "1) Décliner la trajectoire : cible annuelle d'environ 307 t de réduction, répartie par site et par poste d'émission (fours, chauffage, flotte), avec un responsable pour chacun. 2) Tableau de bord : suivre à la fois les émissions absolues (indicateur de résultat) et des indicateurs avancés (consommation d'énergie par tonne coulée, part d'électricité bas carbone, avancement des projets d'efficacité énergétique) ; conserver l'intensité, mais jamais seule. 3) Budgets et investissements : intégrer un prix interne du carbone dans les calculs de rentabilité des projets (VAN), réserver une enveloppe d'investissements de décarbonation, faire apparaître dans le contrôle budgétaire les écarts sur émissions à côté des écarts financiers. 4) Rémunération variable des dirigeants indexée en partie sur l'atteinte de la trajectoire. 5) Scope 3 : il pèse environ six fois les scopes 1 et 2 ; ne pas le suivre donne une image très partielle de l'empreinte. Il faut l'estimer (achats de métaux, transport), engager les fournisseurs (critères carbone dans les achats, métal recyclé) et, à terme, fixer un objectif. Le plan de transition et les informations climat de l'état de durabilité (ESRS E1), si l'entreprise y est soumise, exigent cohérence entre objectifs, actions et moyens financiers.",
+          "key_points": [
+            "Déclinaison de la trajectoire en cibles annuelles par responsable et par poste",
+            "Tableau de bord combinant émissions absolues, intensité et indicateurs avancés",
+            "Outils financiers : prix interne du carbone dans les investissements, budgets et rémunérations",
+            "Scope 3 prépondérant à estimer, avec engagement des fournisseurs et objectif dédié"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Une trajectoire de réduction se pilote en valeur absolue par rapport à l'année de référence ; l'intensité carbone peut baisser par simple effet de croissance de l'activité. Le cas relie le bilan carbone aux outils classiques du contrôle de gestion (tableau de bord, budgets, choix d'investissement, rémunérations) et souligne le poids du scope 3."
+    }
+  ]
+}

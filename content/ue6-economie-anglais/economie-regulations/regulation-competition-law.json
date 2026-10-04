@@ -1,0 +1,126 @@
+{
+  "exercises": [
+    {
+      "id": "ue6-eco-reg-0001",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "economie-regulations",
+      "notion": "regulation-competition-law",
+      "difficulty": 2,
+      "tags": [
+        "abuse of dominance",
+        "article 102 TFEU",
+        "antitrust"
+      ],
+      "statement": "A software company holds about 70% of the EU market for a type of business software. Which of the following situations is most likely to be an infringement of Article 102 TFEU?",
+      "options": [
+        "The company has reached its 70% market share by developing better products than its rivals.",
+        "The company makes the sale of its software conditional on customers also buying its separate cloud-storage service.",
+        "The company charges higher prices than its competitors for a product that customers consider superior.",
+        "The company refuses to merge with a smaller competitor that approached it."
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "Option 2 describes tying: a dominant firm uses its market power on one product to force customers to buy a separate product, which can exclude competitors on the second market; it is a classic abuse under Article 102. Option 1 is lawful: holding a dominant position, or acquiring it through competition on the merits, is not prohibited; only its abuse is. Option 3 is not in itself abusive: charging a premium for a superior product is normal competition (only excessive or unfair prices may be abusive). Option 4 is irrelevant: no firm is obliged to merge.",
+      "source_ref": "TFEU art. 102, point (d) (making contracts subject to supplementary obligations which have no connection with the subject of such contracts)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue6-eco-reg-0002",
+      "type": "case_study",
+      "ue": "UE6",
+      "theme": "economie-regulations",
+      "notion": "regulation-competition-law",
+      "difficulty": 3,
+      "tags": [
+        "merger control",
+        "HHI",
+        "EU Merger Regulation",
+        "remedies"
+      ],
+      "title": "Proposed merger of two European packaging manufacturers",
+      "context": "Alpha Pack SE and Beta Containers NV, two manufacturers of food packaging, have signed a merger agreement. You advise the legal and finance team of Alpha Pack and must prepare an English-language memo.\n\nData (last financial year, hypotheses for this exercise):\n- Alpha Pack: worldwide turnover €4,200m, of which €1,900m in the EU (€700m in France, the largest member state);\n- Beta Containers: worldwide turnover €1,300m, of which €900m in the EU (€350m in the Netherlands, the largest member state).\n\nShares of the relevant market (rigid plastic food packaging in the European Economic Area): Alpha Pack 30%, Beta Containers 20%, Gamma 25%, Delta 15%, Epsilon 10%.\n\nThe CEO of Alpha Pack would like to start integrating the sales teams and harmonising prices \"as soon as the agreement is signed, to capture synergies quickly\".",
+      "sub_questions": [
+        {
+          "id": "eu-dimension",
+          "kind": "mcq",
+          "prompt": "Applying the main turnover test of the EU Merger Regulation (combined worldwide turnover above €5,000m; EU-wide turnover of each of at least two parties above €250m; unless each party achieves more than two-thirds of its EU turnover in one and the same member state), what is the correct conclusion?",
+          "points": 4,
+          "options": [
+            "The deal has no EU dimension, because Beta Containers' worldwide turnover is below €5,000m.",
+            "The deal has an EU dimension and must be notified to the European Commission.",
+            "The deal has no EU dimension, because both parties achieve more than two-thirds of their EU turnover in one member state.",
+            "The deal must be notified separately in France and the Netherlands only."
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "Combined worldwide turnover = 4,200 + 1,300 = €5,500m > €5,000m; EU turnover of each party (€1,900m and €900m) > €250m. The two-thirds exception does not apply: France represents 700 / 1,900 ≈ 37% of Alpha Pack's EU turnover and the Netherlands 350 / 900 ≈ 39% of Beta's. The €5,000m threshold is a combined figure, not per party (option 1). Under the one-stop shop principle, national notifications are replaced by a single EU notification (option 4)."
+        },
+        {
+          "id": "post-merger-hhi",
+          "kind": "numeric",
+          "prompt": "Calculate the post-merger Herfindahl-Hirschman Index (HHI) of the relevant market, market shares being expressed in percentage points.",
+          "points": 4,
+          "expected_value": 3450,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "points",
+          "decimals": 0,
+          "explanation": "Post-merger shares: Alpha-Beta 50%, Gamma 25%, Delta 15%, Epsilon 10%. HHI = 50² + 25² + 15² + 10² = 2,500 + 625 + 225 + 100 = 3,450. Pre-merger HHI = 30² + 20² + 25² + 15² + 10² = 2,250, so the delta is 1,200 (= 2 × 30 × 20)."
+        },
+        {
+          "id": "concern-level",
+          "kind": "true_false",
+          "prompt": "True or false: with a post-merger HHI of 3,450 and a delta of 1,200, the Commission is unlikely to identify competition concerns, because these figures stay within the \"safe harbour\" of its horizontal merger guidelines.",
+          "points": 3,
+          "answer": false,
+          "explanation": "False. The guidelines' safe harbour for a post-merger HHI above 2,000 requires a delta below 150. Here the delta (1,200) is eight times higher and the merged entity would hold 50% of the market: serious doubts are likely, possibly leading to an in-depth (Phase II) investigation."
+        },
+        {
+          "id": "memo",
+          "kind": "open",
+          "prompt": "Write a short memo paragraph in English advising the CEO on (a) his integration plan before clearance and (b) how the deal could still be cleared.",
+          "points": 9,
+          "model_answer": "(a) The CEO's plan must be stopped. Because the deal has an EU dimension, it must be notified to the European Commission and cannot be implemented before clearance (standstill obligation). Integrating sales teams or harmonising prices before clearance would be \"gun-jumping\", which can be fined up to 10% of the group's worldwide turnover; coordinating prices with a competitor that is not yet part of the group could also breach Article 101 TFEU as a cartel. Until closing, the two companies must keep competing independently; integration planning should be limited and use clean teams for any exchange of commercially sensitive information. (b) With a combined 50% market share, a post-merger HHI of 3,450 and a delta of 1,200, the deal is likely to raise a significant impediment to effective competition. Clearance could be obtained by offering remedies, ideally structural ones such as the divestiture of an overlapping business or plants to a suitable buyer, so that the competitive overlap is reduced; behavioural commitments are generally considered less effective.",
+          "key_points": [
+            "EU dimension: notification to the Commission and standstill obligation",
+            "Integration or price coordination before clearance = gun-jumping (fines up to 10% of worldwide turnover) and possible cartel risk",
+            "Clean team for sensitive information; parties keep competing until closing",
+            "High market share and HHI delta: likely concerns; clearance possible with remedies, preferably structural divestitures"
+          ]
+        }
+      ],
+      "total_points": 20,
+      "explanation": "The case tests the EU Merger Regulation jurisdictional test (combined €5,000m worldwide, €250m EU-wide for at least two parties, two-thirds rule), the HHI as a screening tool (post-merger 3,450, delta 1,200, far beyond the 150 safe-harbour delta), the standstill obligation (gun-jumping) and remedies.",
+      "source_ref": "Council Regulation (EC) No 139/2004, art. 1(2) (EU dimension), art. 7 (suspension of concentrations) and art. 14 (fines) ; Commission Guidelines on the assessment of horizontal mergers (2004/C 31/03), §19-21",
+      "verified": true,
+      "estimated_seconds": 900
+    },
+    {
+      "id": "ue6-eco-reg-0003",
+      "type": "flashcard",
+      "ue": "UE6",
+      "theme": "economie-regulations",
+      "notion": "regulation-competition-law",
+      "difficulty": 1,
+      "tags": [
+        "cartel",
+        "leniency programme",
+        "vocabulary"
+      ],
+      "front": "What is a \"leniency programme\" in competition law?",
+      "back": "A policy under which a company that reports its participation in a cartel to the competition authority and cooperates with the investigation can obtain full immunity from fines (usually the first to come forward) or a reduction of its fine (later applicants providing significant added value).\nFrench equivalent: programme de clémence.",
+      "explanation": "Leniency programmes destabilise cartels by giving each member an incentive to \"blow the whistle\" first. They exist at EU level (Commission Notice on immunity from fines and reduction of fines in cartel cases, 2006) and in national systems (e.g. the French Autorité de la concurrence). They do not protect individuals from other consequences such as damages claims by victims.",
+      "source_ref": "TFEU art. 101 ; Commission Notice on immunity from fines and reduction of fines in cartel cases (2006/C 298/11)",
+      "verified": true,
+      "estimated_seconds": 30
+    }
+  ]
+}

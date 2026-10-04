@@ -1,0 +1,175 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-restr-fusjur-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "fusions-scissions-regime-juridique",
+      "difficulty": 1,
+      "tags": [
+        "fusion-absorption",
+        "effets",
+        "transmission universelle"
+      ],
+      "statement": "La SAS Lunel absorbe la SARL Pradel. Quel est l'effet juridique de l'opération pour la SARL Pradel et ses associés ?",
+      "options": [
+        "La SARL Pradel est mise en liquidation ; ses associés reçoivent le boni de liquidation en numéraire",
+        "La SARL Pradel subsiste comme filiale de la SAS Lunel, qui reçoit ses parts sociales",
+        "La SARL Pradel est dissoute sans liquidation ; son patrimoine est transmis universellement à la SAS Lunel et ses associés deviennent associés de la SAS Lunel",
+        "La SARL Pradel est dissoute ; chacun de ses biens doit être cédé séparément à la SAS Lunel, les dettes restant à la charge des associés de Pradel"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "La fusion entraîne la dissolution sans liquidation de la société absorbée et la transmission universelle de son patrimoine (actifs, dettes, contrats) à l'absorbante ; les associés de l'absorbée reçoivent des titres de l'absorbante (option 3). Il n'y a pas de liquidation ni de boni en numéraire (option 1) : la soulte éventuelle est limitée à 10 % de la valeur nominale des titres attribués. L'option 2 décrit une prise de participation, voire un apport de titres, pas une fusion. L'option 4 nie la transmission universelle : aucune cession bien par bien n'est nécessaire et les dettes passent à l'absorbante.",
+      "source_ref": "C. com. art. L. 236-1 et s. (rédaction issue de l'ordonnance n° 2023-393 du 24 mai 2023) : définition et effets de la fusion",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue1-restr-fusjur-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "fusions-scissions-regime-juridique",
+      "difficulty": 2,
+      "tags": [
+        "fusion",
+        "créanciers",
+        "opposition"
+      ],
+      "statement": "La société Garonne Matériaux, créancière d'une facture de 85 000 € née avant la publication du projet de fusion de son client (société absorbée), craint pour son paiement. Quelle est sa situation ?",
+      "options": [
+        "Elle peut former opposition dans le délai légal de 30 jours ; l'opposition n'empêche pas la fusion, le tribunal pouvant ordonner le remboursement de la créance ou la constitution de garanties",
+        "Elle peut bloquer la fusion, qui ne peut être réalisée sans l'accord de tous les créanciers antérieurs",
+        "Son opposition suspend la fusion jusqu'au paiement intégral de sa créance",
+        "Elle ne dispose d'aucun recours, seuls les obligataires étant protégés en cas de fusion"
+      ],
+      "answer": [
+        0
+      ],
+      "multiple": false,
+      "explanation": "Les créanciers non obligataires des sociétés participantes, dont la créance est antérieure à la publicité du projet de fusion, peuvent former opposition dans un délai de 30 jours. Cette opposition n'a pas d'effet suspensif : le tribunal la rejette ou ordonne le remboursement des créances ou la constitution de garanties (option 1). Aucun accord unanime des créanciers n'est requis (option 2). L'opposition ne suspend pas l'opération (option 3) ; la créance est de toute façon transmise à l'absorbante. Les créanciers ordinaires sont protégés, pas seulement les obligataires (option 4), qui disposent d'un régime propre (assemblée des obligataires de l'absorbée).",
+      "source_ref": "C. com. art. L. 236-1 et s., dispositions relatives à l'opposition des créanciers non obligataires (rédaction issue de l'ordonnance n° 2023-393)",
+      "verified": true,
+      "estimated_seconds": 70
+    },
+    {
+      "id": "ue1-restr-fusjur-0003",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "fusions-scissions-regime-juridique",
+      "difficulty": 1,
+      "tags": [
+        "fusion",
+        "dissolution",
+        "liquidation"
+      ],
+      "statement": "En cas de fusion-absorption, la société absorbée est dissoute puis fait l'objet d'une liquidation, à l'issue de laquelle son actif net est transféré à la société absorbante.",
+      "answer": false,
+      "justification": "La fusion entraîne la dissolution sans liquidation de la société absorbée : son patrimoine est transmis universellement à l'absorbante.",
+      "explanation": "L'économie de la fusion tient précisément à l'absence de liquidation : il n'y a ni réalisation des actifs, ni apurement du passif, ni partage. La transmission universelle porte sur l'ensemble des droits et obligations de l'absorbée, qui disparaît à la date de réalisation de l'opération, et ses associés reçoivent des titres de l'absorbante.",
+      "source_ref": "C. com. art. L. 236-1 et s. ; C. civ. art. 1844-4 (fusion et scission)",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue1-restr-fusjur-0004",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "fusions-scissions-regime-juridique",
+      "difficulty": 3,
+      "tags": [
+        "fusion-absorption",
+        "parité",
+        "participation préalable",
+        "apport partiel d'actif"
+      ],
+      "title": "Calvane absorbe Bérinne",
+      "context": "La SA Calvane (capital de 1 500 000 €, 150 000 actions de 10 € de nominal) projette d'absorber la SAS Bérinne, avec laquelle elle n'a pas de dirigeant commun.\nLa SAS Bérinne a un capital de 60 000 actions. Sa valeur réelle globale est estimée à 4 800 000 €. La valeur réelle d'une action Calvane est de 120 €.\nCalvane détient depuis deux ans 6 000 actions Bérinne (10 % du capital), acquises sur le marché secondaire.\nLe projet de fusion prévoit une parité fondée sur les valeurs réelles et précise que Calvane ne recevra pas ses propres actions en échange des actions Bérinne qu'elle détient.\nBérinne a émis un emprunt obligataire et compte de nombreux fournisseurs. Un fournisseur important a déjà annoncé qu'il ferait opposition.\nLe directeur financier de Calvane évoque une alternative : plutôt qu'une fusion, Bérinne apporterait uniquement sa branche « logistique » à une filiale de Calvane, en plaçant l'opération sous le régime des scissions.",
+      "sub_questions": [
+        {
+          "id": "q1-actions",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez le nombre d'actions Calvane à émettre en rémunération de la fusion.",
+          "expected_value": 36000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "actions",
+          "decimals": 0,
+          "explanation": "Valeur d'une action Bérinne : 4 800 000 / 60 000 = 80 €. Parité : 80 / 120 = 2 actions Calvane pour 3 actions Bérinne. Actions Bérinne à rémunérer : 60 000 − 6 000 détenues par Calvane = 54 000. Actions à émettre : 54 000 × 2 / 3 = 36 000 (augmentation de capital de 360 000 € de nominal). L'erreur consistant à rémunérer les 60 000 actions donne 40 000 actions, hors tolérance."
+        },
+        {
+          "id": "q2-approbation",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Quelle approbation la fusion requiert-elle, en l'absence de dispositions particulières ?",
+          "options": [
+            "Une décision du seul conseil d'administration de Calvane, l'absorbée n'ayant pas à se prononcer",
+            "Une décision des associés de Bérinne seulement, la fusion n'affectant pas les actionnaires de Calvane",
+            "L'unanimité des actionnaires de Calvane et des associés de Bérinne",
+            "L'approbation par l'assemblée générale extraordinaire de Calvane et par la collectivité des associés de Bérinne statuant dans les conditions requises pour modifier les statuts"
+          ],
+          "answer": [
+            3
+          ],
+          "multiple": false,
+          "explanation": "Hors fusion simplifiée (100 %), la fusion est approuvée par chaque société participante dans les conditions de modification des statuts : AGE de Calvane, décision collective extraordinaire des associés de Bérinne (option 4). Le conseil arrête le projet mais ne décide pas seul (option 1). Les actionnaires de Calvane se prononcent, car le capital augmente et ils sont dilués (option 2). L'unanimité (option 3) n'est exigée que si l'opération augmente les engagements des associés, ce qui n'est pas le cas entre SA et SAS."
+        },
+        {
+          "id": "q3-opposition",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "L'opposition annoncée par le fournisseur de Bérinne empêchera la réalisation de la fusion tant que le tribunal n'aura pas statué.",
+          "answer": false,
+          "explanation": "L'opposition des créanciers non obligataires n'a pas d'effet suspensif : la fusion peut être réalisée ; le tribunal rejette l'opposition ou ordonne le remboursement ou la constitution de garanties."
+        },
+        {
+          "id": "q4-apa",
+          "kind": "open",
+          "points": 3,
+          "prompt": "Comparez l'alternative envisagée (apport partiel de la branche logistique sous le régime des scissions) à la fusion, pour Bérinne et pour ses associés.",
+          "model_answer": "Dans l'apport partiel d'actif, Bérinne n'est pas dissoute : elle continue d'exister avec ses autres activités. C'est elle, et non ses associés, qui reçoit les titres émis par la filiale de Calvane en rémunération de l'apport. Placé sous le régime des scissions, l'apport emporte transmission universelle de la branche (actifs, dettes, contrats et salariés qui s'y rattachent), sans cession élément par élément, avec la procédure de la scission (projet, rapports, approbation, information et opposition des créanciers). La société apporteuse et la bénéficiaire sont en principe solidaires des dettes transmises, sauf dérogation prévue au projet, auquel cas les créanciers peuvent former opposition. Dans la fusion, au contraire, Bérinne disparaît et ses associés deviennent actionnaires de Calvane.",
+          "key_points": [
+            "APA : pas de dissolution de Bérinne",
+            "Les titres de la bénéficiaire sont remis à Bérinne, pas à ses associés",
+            "Régime des scissions : transmission universelle de la branche (actifs, passifs, contrats de travail)",
+            "Solidarité entre apporteuse et bénéficiaire pour les dettes transmises, sauf dérogation et opposition des créanciers",
+            "Fusion : disparition de Bérinne et associés devenant actionnaires de Calvane"
+          ]
+        }
+      ],
+      "total_points": 9,
+      "explanation": "Le cas relie la parité d'échange (avec neutralisation des actions de l'absorbée détenues par l'absorbante), les règles d'approbation, la protection des créanciers et la distinction entre fusion et apport partiel d'actif sous le régime des scissions.",
+      "source_ref": "C. com. art. L. 236-1 et s. (fusion, scission, apport partiel d'actif, rédaction issue de l'ordonnance n° 2023-393) ; C. trav. art. L. 1224-1",
+      "verified": true,
+      "estimated_seconds": 780
+    },
+    {
+      "id": "ue1-restr-fusjur-0005",
+      "type": "flashcard",
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "fusions-scissions-regime-juridique",
+      "difficulty": 1,
+      "tags": [
+        "scission partielle",
+        "ordonnance 2023-393",
+        "apport partiel d'actif"
+      ],
+      "front": "Qu'est-ce que la scission partielle introduite par l'ordonnance n° 2023-393, et en quoi diffère-t-elle de l'apport partiel d'actif ?",
+      "back": "Une société transmet une partie de son patrimoine (une ou plusieurs branches) à une ou plusieurs sociétés, sans être dissoute.\nLes titres émis par les bénéficiaires sont attribués directement à ses associés.\nDans l'APA, ces titres sont remis à la société apporteuse elle-même.\nLa scission partielle évite ainsi l'APA suivi d'une distribution des titres reçus.",
+      "explanation": "La scission partielle a été créée lors de la transposition de la directive (UE) 2019/2121 par l'ordonnance du 24 mai 2023, qui a refondu le chapitre du Code de commerce consacré aux fusions et scissions.",
+      "source_ref": "C. com. art. L. 236-1 et s. (rédaction issue de l'ordonnance n° 2023-393 du 24 mai 2023), dispositions relatives à la scission partielle",
+      "verified": true,
+      "estimated_seconds": 40
+    }
+  ]
+}

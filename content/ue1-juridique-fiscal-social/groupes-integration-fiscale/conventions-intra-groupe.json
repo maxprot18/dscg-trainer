@@ -1,0 +1,174 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-groupes-conv-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "conventions-intra-groupe",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "contrôle",
+        "présomption",
+        "L233-3"
+      ],
+      "statement": "La SA Ardoise détient 42 % des droits de vote de la SA Basalte. Le reste des droits de vote est réparti entre une société de capital-investissement (18 %) et un actionnariat dispersé dont aucun membre ne dépasse 3 %. Aucun pacte ne lie les actionnaires. Au regard du Code de commerce, quelle qualification retenir ?",
+      "options": [
+        "Basalte est une filiale d'Ardoise",
+        "Ardoise détient une simple participation dans Basalte, sans contrôle possible",
+        "Basalte n'est contrôlée par personne, faute de majorité absolue des droits de vote",
+        "Ardoise est présumée contrôler Basalte"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Une société est présumée en contrôler une autre lorsqu'elle dispose directement ou indirectement d'une fraction des droits de vote supérieure à 40 % et qu'aucun autre associé ne détient une fraction supérieure (C. com. art. L233-3, II) : avec 42 % contre 18 % pour le deuxième actionnaire, Ardoise est présumée contrôler Basalte (option 4).\nL'option 1 est fausse : la qualité de filiale suppose la détention de plus de la moitié du capital (L233-1).\nL'option 2 confond la qualification de participation (fraction du capital entre 10 % et 50 %, L233-2), qui peut se cumuler avec le contrôle, et une absence de contrôle qui est contredite par la présomption.\nL'option 3 ignore que le contrôle peut exister sans majorité absolue (présomption, contrôle de fait).",
+      "source_ref": "C. com. art. L233-1, L233-2 et L233-3, II (présomption de contrôle au-delà de 40 % des droits de vote)",
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue1-groupes-conv-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "conventions-intra-groupe",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "franchissement de seuils",
+        "société cotée",
+        "déclaration d'intention",
+        "L233-7"
+      ],
+      "statement": "La SAS Cormoran, qui détenait 18 % du capital et des droits de vote de la SA Dorade, société cotée sur un marché réglementé, acquiert en bourse un bloc qui porte sa détention à 26 %. Quelles obligations pèsent sur Cormoran ?",
+      "options": [
+        "Informer Dorade dans les quinze jours de la seule détention de plus de 25 %, l'AMF n'ayant pas à être informée",
+        "Informer Dorade et l'AMF, dans un délai de quatre jours de bourse, du franchissement des seuils de 20 % et de 25 %, et déclarer ses intentions pour les six mois à venir",
+        "Déposer un projet d'offre publique visant la totalité du capital de Dorade",
+        "Aucune obligation, la déclaration n'étant due qu'au franchissement du seuil de 1/3"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Toute personne qui vient à posséder plus de 5 %, 10 %, 15 %, 20 %, 25 %, 30 %, 1/3, 50 %, 2/3, 90 % ou 95 % du capital ou des droits de vote d'une société cotée en informe la société et l'AMF dans un délai de quatre jours de bourse (C. com. art. L233-7, I et II). En passant de 18 % à 26 %, Cormoran franchit les seuils de 20 % et de 25 %. Au franchissement des seuils de 10 %, 15 %, 20 % et 25 %, elle doit en outre déclarer les objectifs qu'elle a l'intention de poursuivre au cours des six mois à venir (L233-7, VII) : option 2.\nL'option 1 oublie le seuil de 20 %, l'information de l'AMF et retient un délai erroné.\nL'option 3 : le dépôt obligatoire d'une offre publique n'est déclenché qu'au franchissement du seuil de 30 % (réglementation AMF).\nL'option 4 est fausse : la liste des seuils commence à 5 %.\nÀ défaut de déclaration régulière, les actions excédant la fraction non déclarée sont privées du droit de vote (L233-14).",
+      "source_ref": "C. com. art. L233-7 (seuils, délai, déclaration d'intention) et L233-14 (privation des droits de vote)",
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue1-groupes-conv-0003",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "conventions-intra-groupe",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "autocontrôle",
+        "droits de vote",
+        "L233-31"
+      ],
+      "statement": "La SAS Écume, contrôlée indirectement par la SA Falaise par l'intermédiaire d'une filiale de celle-ci (Falaise ne détient directement aucune action d'Écume), détient 3 % des actions de Falaise. Lors de l'assemblée générale de Falaise, Écume ne peut pas exercer les droits de vote attachés à ces actions.",
+      "answer": true,
+      "justification": "Vrai : les droits de vote attachés aux actions d'une société détenues par une société qu'elle contrôle ne peuvent pas être exercés en assemblée (autocontrôle, C. com. art. L233-31).",
+      "explanation": "L'autocontrôle permettrait aux dirigeants de la mère de voter, par l'intermédiaire de la filiale, avec des actions financées par la mère elle-même. Le Code de commerce ne l'interdit pas, mais il prive de droit de vote les actions ou droits de vote d'une société possédés par une ou plusieurs sociétés qu'elle contrôle directement ou indirectement (L233-31). Écume conserve ses actions et ses droits financiers (dividendes) ; seul le droit de vote est suspendu. Ces actions ne sont pas prises en compte pour le calcul du quorum.",
+      "source_ref": "C. com. art. L233-31 (privation des droits de vote des actions d'autocontrôle)",
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue1-groupes-conv-0004",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "conventions-intra-groupe",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "contrôle indirect",
+        "centralisation de trésorerie",
+        "monopole bancaire",
+        "intérêt de groupe",
+        "abus de biens sociaux"
+      ],
+      "title": "Groupe Aldric : trésorerie centralisée et soutien à une filiale",
+      "context": "La SA Aldric détient 70 % du capital et des droits de vote de la SAS Brisa. Brisa détient elle-même 45 % du capital et des droits de vote de la SA Dune ; le reste du capital de Dune est dispersé, aucun autre actionnaire ne détenant plus de 6 %.\nAldric, Brisa et Dune ont signé le 1er avril N une convention de centralisation de trésorerie : les excédents de chaque société sont remontés chaque jour sur un compte centralisateur ouvert au nom d'Aldric, et les besoins sont couverts par des avances d'Aldric. Les avances portent intérêt au taux annuel de 4 % (hypothèse : taux conforme aux conditions de marché), calculé prorata temporis par mois entiers.\nDu 1er avril N au 31 décembre N, Dune a bénéficié d'une avance constante de 600 000 € d'Aldric.\nEn novembre N, Dune connaît de graves difficultés commerciales. Le président de Brisa envisage de consentir à Dune un prêt de 2 M€ sans intérêt, remboursable in fine dans dix ans. Les capitaux propres de Brisa s'élèvent à 2,5 M€ et sa trésorerie disponible à 2,2 M€ ; Brisa et Dune n'ont aucune relation commerciale ou industrielle.",
+      "sub_questions": [
+        {
+          "id": "q1-qualification",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Quelle est la situation de Dune à l'égard d'Aldric au sens du Code de commerce ?",
+          "options": [
+            "Dune est une filiale d'Aldric",
+            "Dune est contrôlée indirectement par Aldric, par l'intermédiaire de Brisa",
+            "Dune est une participation d'Aldric à hauteur de 31,5 %, sans contrôle",
+            "Dune n'a aucun lien juridique avec Aldric"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Brisa détient 45 % des droits de vote de Dune et aucun autre associé ne détient une fraction supérieure : Brisa est présumée contrôler Dune (C. com. art. L233-3, II). Aldric contrôlant Brisa (70 % des droits de vote), elle contrôle Dune indirectement (L233-3, I, « directement ou indirectement ») : option 2. Dune n'est pas une filiale d'Aldric (option 1), faute de détention directe de plus de la moitié du capital. Le pourcentage d'intérêt de 31,5 % (70 % × 45 %) mesure les droits financiers et n'exclut pas le contrôle (option 3)."
+        },
+        {
+          "id": "q2-interets",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez les intérêts dus par Dune à Aldric au titre de N sur l'avance de trésorerie. Réponse en euros.",
+          "expected_value": 18000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Avance de 600 000 € du 1er avril au 31 décembre N, soit 9 mois : 600 000 × 4 % × 9/12 = 18 000 €. Une erreur sur la durée (12 mois) donnerait 24 000 €."
+        },
+        {
+          "id": "q3-monopole",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "Vrai ou faux : la convention de centralisation de trésorerie est contraire au monopole des établissements de crédit, car Aldric n'est pas un établissement de crédit.",
+          "answer": false,
+          "explanation": "Faux. Les opérations de trésorerie entre sociétés ayant entre elles, directement ou indirectement, des liens de capital conférant à l'une un pouvoir de contrôle effectif sur les autres échappent au monopole bancaire (C. mon. fin. art. L511-7, I, 3°). Aldric, Brisa et Dune sont dans ce cas."
+        },
+        {
+          "id": "q4-interet-groupe",
+          "kind": "open",
+          "points": 4,
+          "prompt": "Le prêt sans intérêt envisagé par Brisa au profit de Dune peut-il être justifié par l'intérêt de groupe ? Exposez les conditions et concluez.",
+          "model_answer": "Le prêt consenti sans intérêt sur dix ans est contraire à l'intérêt social de Brisa pris isolément ; s'il est décidé de mauvaise foi par son dirigeant, il peut caractériser un abus de biens sociaux. La jurisprudence (Cass. crim. 4 février 1985, Rozenblum) admet le fait justificatif de l'intérêt de groupe sous quatre conditions cumulatives : un groupe structuré, aux liens capitalistiques réels ; un intérêt économique, social ou financier commun, apprécié au regard d'une politique élaborée pour l'ensemble du groupe ; un concours qui n'est pas dépourvu de contrepartie et ne rompt pas l'équilibre entre les engagements respectifs des sociétés ; un concours qui n'excède pas les possibilités financières de la société qui le supporte. Ici, le groupe est structuré, mais Brisa et Dune n'ont aucune relation économique, le prêt est sans intérêt et sans contrepartie, et son montant (2 M€) représente 80 % des capitaux propres et plus de 90 % de la trésorerie de Brisa, ce qui excède ses capacités et met en péril sa situation. L'intérêt de groupe ne peut donc pas être invoqué : le président de Brisa s'exposerait au délit d'abus de biens sociaux. Une solution serait de limiter le montant, de prévoir une rémunération et des garanties, ou de faire porter le soutien par Aldric dans le cadre de la convention de trésorerie.",
+          "key_points": [
+            "Prêt sans intérêt contraire à l'intérêt social de Brisa : risque d'abus de biens sociaux",
+            "Conditions Rozenblum : groupe structuré, intérêt commun, contrepartie et équilibre des engagements, absence d'excès par rapport aux capacités financières",
+            "Absence de relation économique entre Brisa et Dune et absence de contrepartie",
+            "Montant disproportionné (80 % des capitaux propres, plus de 90 % de la trésorerie)",
+            "Conclusion : intérêt de groupe non caractérisé"
+          ]
+        }
+      ],
+      "total_points": 9,
+      "explanation": "Le cas combine la notion de contrôle indirect (L233-3), l'exception au monopole bancaire pour la trésorerie intra-groupe (C. mon. fin. L511-7, I, 3°) et les limites de l'intérêt de groupe en matière d'abus de biens sociaux (jurisprudence Rozenblum).",
+      "source_ref": "C. com. art. L233-3 ; C. mon. fin. art. L511-7, I, 3° ; C. com. art. L242-6, 3° et L244-1 (abus de biens sociaux, applicable au président de SAS) ; Cass. crim. 4 février 1985 (Rozenblum)",
+      "estimated_seconds": 720
+    },
+    {
+      "id": "ue1-groupes-conv-0005",
+      "type": "flashcard",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "conventions-intra-groupe",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "filiale",
+        "participation",
+        "contrôle"
+      ],
+      "front": "Filiale, participation, société contrôlée : quels critères fixe le Code de commerce ?",
+      "back": "Filiale : plus de la moitié du capital détenue par une autre société (L233-1).\nParticipation : fraction du capital comprise entre 10 % et 50 % (L233-2).\nContrôle (L233-3) : majorité des droits de vote (directe, indirecte ou par accord), décisions déterminées en fait, ou pouvoir de nommer la majorité des dirigeants ; présumé au-delà de 40 % des droits de vote si aucun autre associé ne détient davantage.",
+      "explanation": "Filiale et participation se définissent par le capital, le contrôle par les droits de vote. Une participation détenue par une société contrôlée est réputée détenue indirectement par la société qui la contrôle (L233-4).",
+      "source_ref": "C. com. art. L233-1 à L233-4",
+      "estimated_seconds": 40
+    }
+  ]
+}

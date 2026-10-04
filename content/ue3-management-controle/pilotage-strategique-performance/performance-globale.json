@@ -1,0 +1,197 @@
+{
+  "exercises": [
+    {
+      "id": "ue3-pilotage-perfglob-0001",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "performance-globale",
+      "difficulty": 1,
+      "tags": [
+        "triple bottom line",
+        "performance globale"
+      ],
+      "source_ref": "J. Elkington, Cannibals with Forks (1997), triple bottom line",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "La notion de triple bottom line (Elkington) propose d'évaluer l'entreprise selon trois dimensions. Lesquelles ?",
+      "options": [
+        "Économique, sociale et environnementale (profit, people, planet)",
+        "Financière, commerciale et industrielle",
+        "Stratégique, tactique et opérationnelle",
+        "Actionnaires, dirigeants et salariés"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "L'option 1 est exacte : la triple bottom line ajoute aux résultats économiques une mesure des performances sociale et environnementale ; c'est le fondement de la notion de performance globale. L'option 2 est fausse : ces trois dimensions restent purement économiques. L'option 3 est fausse : elle désigne les niveaux de décision (Anthony, Ansoff), pas des dimensions de performance. L'option 4 est fausse : elle énumère des parties prenantes, pas des dimensions de performance."
+    },
+    {
+      "id": "ue3-pilotage-perfglob-0002",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "performance-globale",
+      "difficulty": 2,
+      "tags": [
+        "valeur partenariale",
+        "valeur actionnariale"
+      ],
+      "source_ref": "G. Charreaux et P. Desbrières, « Gouvernance des entreprises : valeur partenariale contre valeur actionnariale », Finance Contrôle Stratégie (1998)",
+      "verified": true,
+      "estimated_seconds": 75,
+      "statement": "Quelle proposition décrit correctement la valeur partenariale au sens de Charreaux et Desbrières ?",
+      "options": [
+        "La richesse créée pour les seuls actionnaires, mesurée par l’EVA",
+        "La valeur boursière des capitaux propres diminuée de leur valeur comptable",
+        "La richesse créée pour l’ensemble des parties prenantes, égale à la différence entre les ventes valorisées au prix d’opportunité et les coûts d’opportunité des ressources consommées",
+        "Le montant des dépenses de mécénat et de sponsoring de l’entreprise"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'option 3 est exacte : la valeur partenariale élargit la mesure de la création de valeur à toutes les parties prenantes (clients, salariés, fournisseurs, prêteurs, actionnaires) ; elle compare ce que les clients seraient prêts à payer aux coûts d'opportunité des ressources apportées. L'option 1 est fausse : elle définit la valeur actionnariale. L'option 2 est fausse : elle définit la MVA (approche boursière de la valeur actionnariale). L'option 4 est fausse : le mécénat est une dépense, pas une mesure de valeur créée."
+    },
+    {
+      "id": "ue3-pilotage-perfglob-0003",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "performance-globale",
+      "difficulty": 2,
+      "tags": [
+        "ISO 26000",
+        "RSE"
+      ],
+      "source_ref": "Norme ISO 26000:2010, Lignes directrices relatives à la responsabilité sociétale",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Quelle affirmation sur la norme ISO 26000 est exacte ?",
+      "options": [
+        "Elle permet d’obtenir une certification RSE délivrée par un organisme accrédité",
+        "Elle ne traite que des questions environnementales",
+        "Elle est imposée par la loi PACTE aux sociétés à mission",
+        "Elle fournit des lignes directrices non certifiables, organisées autour de sept questions centrales"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'option 4 est exacte : ISO 26000 est une norme de lignes directrices ; elle n'est pas conçue pour la certification. Ses sept questions centrales sont la gouvernance, les droits de l'homme, les relations et conditions de travail, l'environnement, la loyauté des pratiques, les questions relatives aux consommateurs, et les communautés et le développement local. L'option 1 est fausse : contrairement à ISO 14001 (management environnemental), elle n'est pas certifiable. L'option 2 est fausse : l'environnement n'est qu'une des sept questions. L'option 3 est fausse : la loi PACTE n'impose pas cette norme."
+    },
+    {
+      "id": "ue3-pilotage-perfglob-0004",
+      "type": "true_false",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "performance-globale",
+      "difficulty": 1,
+      "tags": [
+        "parties prenantes",
+        "Freeman"
+      ],
+      "source_ref": "R.E. Freeman, Strategic Management: A Stakeholder Approach (1984)",
+      "verified": true,
+      "estimated_seconds": 40,
+      "statement": "Selon Freeman, seuls les acteurs liés à l'entreprise par un contrat (salariés, clients, fournisseurs, prêteurs, actionnaires) sont des parties prenantes.",
+      "answer": false,
+      "justification": "Freeman retient une définition large : tout groupe ou individu qui peut affecter la réalisation des objectifs de l'organisation ou être affecté par elle, avec ou sans contrat.",
+      "explanation": "Une collectivité locale exposée aux nuisances d'une usine, une ONG ou les riverains n'ont pas de contrat avec l'entreprise mais sont des parties prenantes au sens de Freeman (1984). Cette définition large fonde la théorie des parties prenantes, s'oppose à une vision strictement actionnariale et sert de base à la mesure de la performance globale et à la valeur partenariale."
+    },
+    {
+      "id": "ue3-pilotage-perfglob-0005",
+      "type": "numeric",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "performance-globale",
+      "difficulty": 2,
+      "tags": [
+        "valeur ajoutée",
+        "partage de la valeur"
+      ],
+      "source_ref": "Approche comptable de la valeur partenariale : état de répartition de la valeur ajoutée (programme DSCG UE 3, performance globale)",
+      "verified": true,
+      "estimated_seconds": 150,
+      "statement": "La société Garonne a dégagé une valeur ajoutée de 12 000 k€, répartie ainsi : charges de personnel 7 800 k€ ; impôts et taxes 500 k€ ; charges financières (intérêts) 400 k€ ; impôt sur les bénéfices 700 k€ ; dividendes 900 k€ ; le solde est conservé par l'entreprise (autofinancement).\n\nCalculez la part de la valeur ajoutée revenant aux apporteurs de capitaux, prêteurs et actionnaires (en % de la valeur ajoutée, arrondi à une décimale).",
+      "expected_value": 10.8,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "decimals": 1,
+      "explanation": "Apporteurs de capitaux = prêteurs (intérêts 400 k€) + actionnaires (dividendes 900 k€) = 1 300 k€. Part = 1 300 ÷ 12 000 = 10,8 %. Pour mémoire : personnel 65,0 % ; État (impôts et taxes + impôt sur les bénéfices) 1 200 ÷ 12 000 = 10,0 % ; entreprise (autofinancement) 12 000 − 7 800 − 500 − 400 − 700 − 900 = 1 700 k€, soit 14,2 %. Erreurs classiques : retenir les seuls dividendes (7,5 %) ou les seuls intérêts (3,3 %)."
+    },
+    {
+      "id": "ue3-pilotage-perfglob-0006",
+      "type": "case_study",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "performance-globale",
+      "difficulty": 2,
+      "tags": [
+        "RSE",
+        "indicateurs extra-financiers",
+        "parties prenantes"
+      ],
+      "source_ref": "R.E. Freeman, Strategic Management: A Stakeholder Approach (1984) ; J. Elkington (1997), triple bottom line ; programme DSCG UE 3 (performance globale)",
+      "verified": true,
+      "estimated_seconds": 720,
+      "title": "Cartonnerie Lisle : intégrer la RSE au pilotage",
+      "context": "La Cartonnerie Lisle (420 salariés) fabrique des emballages en carton pour la grande distribution. Ses clients exigent désormais des preuves de performance sociale et environnementale dans leurs appels d'offres ; la commune s'inquiète des rejets d'eau de l'usine ; les salariés se plaignent de la pénibilité des postes d'expédition.\n\nLa direction publie depuis deux ans un rapport RSE riche en photos et en engagements, mais le tableau de bord mensuel du comité de direction ne contient que des indicateurs financiers, et la rémunération variable des managers dépend uniquement du résultat d'exploitation.\n\nDonnées de l'année : 14 accidents du travail avec arrêt ; 1 120 000 heures travaillées ; consommation d'eau de 3,2 litres par kg de carton produit (objectif affiché : 2,5 litres).",
+      "sub_questions": [
+        {
+          "id": "q1-taux-frequence",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez le taux de fréquence des accidents du travail (accidents avec arrêt × 1 000 000 ÷ heures travaillées), arrondi à une décimale.",
+          "expected_value": 12.5,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "decimals": 1,
+          "explanation": "Taux de fréquence = 14 × 1 000 000 ÷ 1 120 000 = 12,5 accidents avec arrêt par million d’heures travaillées."
+        },
+        {
+          "id": "q2-parties-prenantes",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Au sens de Freeman, lesquelles des parties citées dans l'énoncé sont des parties prenantes de la cartonnerie ?",
+          "options": [
+            "Les seuls actionnaires",
+            "Les actionnaires et les salariés uniquement",
+            "Les clients, la commune et les salariés, en plus des actionnaires",
+            "Uniquement les acteurs liés par un contrat avec l’entreprise"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "L'option 3 est exacte : clients, commune et salariés peuvent affecter les objectifs de l'entreprise ou être affectés par elle ; ce sont des parties prenantes au sens large de Freeman. Les options 1 et 2 sont fausses : elles adoptent une vision trop étroite. L'option 4 est fausse : la commune n'a pas de lien contractuel avec l'entreprise, mais elle est affectée par ses rejets d'eau."
+        },
+        {
+          "id": "q3-decouplage",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "La situation décrite présente un risque de découplage entre le discours RSE de l'entreprise et ses pratiques de pilotage.",
+          "answer": true,
+          "explanation": "Vrai : le rapport RSE affiche des engagements, mais ni le tableau de bord ni la rémunération des managers n'intègrent d'indicateur social ou environnemental. La RSE reste un exercice de communication, sans effet sur les décisions : c'est le découplage, qui expose aussi à un reproche d'écoblanchiment."
+        },
+        {
+          "id": "q4-integration",
+          "kind": "open",
+          "points": 4,
+          "prompt": "Proposez des mesures pour intégrer la performance sociale et environnementale au pilotage de la cartonnerie.",
+          "model_answer": "1) Enrichir le tableau de bord du comité de direction avec quelques indicateurs extra-financiers liés aux enjeux identifiés : taux de fréquence des accidents (12,5) et taux de gravité, absentéisme au poste d'expédition, consommation d'eau par kg (3,2 l pour un objectif de 2,5 l), qualité des rejets, part de fibres recyclées ou certifiées. 2) Fixer des cibles et des plans d'action rattachés à des responsables (directeur d'usine, responsable sécurité), par exemple l'aménagement des postes d'expédition. 3) Intégrer une part de critères RSE mesurables dans la rémunération variable des managers, pour aligner les comportements. 4) Associer les parties prenantes : dialogue avec la commune sur les rejets, avec les représentants du personnel sur la pénibilité, réponse aux exigences des clients appuyée sur des données vérifiables. 5) Fiabiliser la collecte (définitions, contrôles internes), éventuellement faire vérifier les informations par un tiers. L'entreprise passe ainsi d'un discours à un pilotage effectif de la performance globale, tout en tenant compte des arbitrages possibles avec la rentabilité à court terme.",
+          "key_points": [
+            "Indicateurs extra-financiers ciblés au tableau de bord (sécurité, pénibilité, eau), avec cibles",
+            "Responsables et plans d’action identifiés",
+            "Critères RSE dans la rémunération variable des managers",
+            "Dialogue avec les parties prenantes et fiabilité des données (contrôle, vérification externe)"
+          ]
+        }
+      ],
+      "total_points": 9,
+      "explanation": "La performance globale suppose d'intégrer les dimensions sociale et environnementale au système de pilotage (indicateurs, objectifs, rémunérations) et non seulement à la communication. Le cas mobilise la théorie des parties prenantes, un indicateur social chiffré (taux de fréquence) et la notion de découplage."
+    }
+  ]
+}

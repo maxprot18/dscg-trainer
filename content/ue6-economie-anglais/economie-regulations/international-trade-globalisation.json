@@ -1,0 +1,79 @@
+{
+  "exercises": [
+    {
+      "id": "ue6-eco-trade-0001",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "economie-regulations",
+      "notion": "international-trade-globalisation",
+      "difficulty": 1,
+      "tags": [
+        "customs union",
+        "free trade area",
+        "regional integration"
+      ],
+      "statement": "What distinguishes a customs union from a free trade area?",
+      "options": [
+        "A customs union also allows free movement of workers and capital.",
+        "A customs union abolishes tariffs between members, whereas a free trade area does not.",
+        "A customs union requires a single currency.",
+        "A customs union adds a common external tariff applied by all members to imports from non-members."
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Option 4 is correct: in both a free trade area and a customs union, internal tariffs are removed; a customs union goes further with a common external tariff (the EU is a customs union). Option 1 describes a single (common) market, a higher level of integration. Option 2 is wrong because a free trade area also abolishes tariffs between its members. Option 3 is wrong: a single currency belongs to a monetary union, which is a separate step (several EU member states do not use the euro).",
+      "source_ref": "GATT 1994, art. XXIV §8 (definitions of customs union and free-trade area) ; TFEU art. 28 (EU customs union, common customs tariff)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue6-eco-trade-0002",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "economie-regulations",
+      "notion": "international-trade-globalisation",
+      "difficulty": 3,
+      "tags": [
+        "comparative advantage",
+        "opportunity cost"
+      ],
+      "statement": "With one hour of labour, country A can produce either 4 units of machinery or 8 units of textiles; country B can produce either 1 unit of machinery or 4 units of textiles. According to the theory of comparative advantage, which specialisation leads to gains from trade?",
+      "options": [
+        "Country A should produce both goods, since it has an absolute advantage in both.",
+        "Country A should specialise in machinery and country B in textiles.",
+        "Country A should specialise in textiles and country B in machinery.",
+        "No trade is beneficial, since country B is less productive in both goods."
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "Opportunity cost of 1 unit of machinery: 8 / 4 = 2 textiles in A, 4 / 1 = 4 textiles in B. A therefore has the comparative advantage in machinery, and B in textiles (opportunity cost of 1 textile: 0.25 machinery in B vs 0.5 in A). So option 2 is correct. Options 1 and 4 confuse absolute and comparative advantage: even though A is more productive in both goods, both countries gain by specialising according to opportunity costs. Option 3 reverses the specialisation.",
+      "source_ref": "D. Ricardo, On the Principles of Political Economy and Taxation (1817), theory of comparative advantage",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue6-eco-trade-0003",
+      "type": "true_false",
+      "ue": "UE6",
+      "theme": "economie-regulations",
+      "notion": "international-trade-globalisation",
+      "difficulty": 1,
+      "tags": [
+        "exchange rate",
+        "competitiveness",
+        "exports"
+      ],
+      "statement": "All other things being equal, an appreciation of the euro against the US dollar makes euro-area exports cheaper for American buyers.",
+      "answer": false,
+      "justification": "False: when the euro appreciates, each euro costs more dollars, so euro-priced exports become more expensive for American buyers.",
+      "explanation": "Example: a product priced at €100 costs $110 when €1 = $1.10, and $120 when €1 = $1.20. An appreciation of the euro therefore reduces the price competitiveness of euro-area exports and makes imports from the US cheaper in euros. Conversely, a depreciation of the euro helps exporters but raises the cost of imported goods, including energy priced in dollars, which can add to inflation.",
+      "source_ref": "Exchange rate and price competitiveness: foreign-currency price of exports = domestic price × exchange rate (foreign currency per unit of domestic currency)",
+      "verified": true,
+      "estimated_seconds": 45
+    }
+  ]
+}

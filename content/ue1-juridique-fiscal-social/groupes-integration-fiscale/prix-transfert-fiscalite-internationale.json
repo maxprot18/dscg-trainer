@@ -1,0 +1,104 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-groupes-prixtr-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "prix-transfert-fiscalite-internationale",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "territorialité",
+        "établissement stable",
+        "succursale"
+      ],
+      "statement": "La SA Xénon, établie en France, exploite à Madrid une succursale (établissement stable sans personnalité juridique) qui a dégagé en N un bénéfice de 200 000 €. Comment ce bénéfice est-il traité pour l'IS français de Xénon ?",
+      "options": [
+        "Il est imposable en France, sous déduction d'un crédit d'impôt égal à l'impôt espagnol",
+        "Il n'est imposable en France que s'il est rapatrié au siège",
+        "Il est exclu de la base de l'IS français en application du principe de territorialité",
+        "Il est imposable en France au taux de 0 %, sous réserve d'une quote-part de frais et charges de 5 %"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'IS français ne frappe que les bénéfices réalisés dans les entreprises exploitées en France (CGI art. 209, I) : les résultats d'une succursale étrangère en sont exclus, qu'ils soient bénéficiaires ou déficitaires (option 3). Ils sont imposés dans l'État où l'établissement est situé, ce que confirme la convention fiscale franco-espagnole.\nL'option 1 décrit une imposition mondiale avec crédit d'impôt, que la France n'applique pas en matière d'IS (hors régimes particuliers).\nL'option 2 confond avec la distribution de dividendes par une filiale.\nL'option 4 transpose à tort le régime mère-fille, qui concerne les dividendes de filiales, personnes morales distinctes.",
+      "source_ref": "CGI art. 209, I (territorialité de l'IS)",
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue1-groupes-prixtr-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "prix-transfert-fiscalite-internationale",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "prix de transfert",
+        "article 57",
+        "charge de la preuve"
+      ],
+      "statement": "L'administration entend réintégrer dans le résultat de la SAS Yole, filiale française d'un groupe allemand, une partie des redevances de marque versées à sa société mère établie en Allemagne, sur le fondement de l'article 57 du CGI. Que doit-elle établir ?",
+      "options": [
+        "Uniquement que le montant des redevances excède celui de l'exercice précédent",
+        "L'existence d'un lien de dépendance entre Yole et sa mère, et l'octroi d'un avantage par rapport aux conditions de pleine concurrence",
+        "Uniquement que la société mère bénéficie en Allemagne d'un régime fiscal privilégié",
+        "Rien : c'est à Yole de prouver dans tous les cas que les redevances sont normales"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'article 57 permet de réintégrer les bénéfices indirectement transférés à une entreprise étrangère liée par majoration ou diminution des prix ou par tout autre moyen. L'administration doit établir, d'une part, le lien de dépendance juridique ou de fait (ici évident : la bénéficiaire est la mère), d'autre part, l'avantage consenti, par comparaison avec ce qu'auraient pratiqué des entreprises indépendantes (option 2).\nL'option 1 n'est pas un critère.\nL'option 3 : le régime fiscal privilégié n'est pas une condition de l'article 57 ; il dispense seulement l'administration de prouver la dépendance lorsque la bénéficiaire est située dans un tel État.\nL'option 4 : la charge de la preuve pèse sur l'administration, même si les obligations documentaires de l'entreprise facilitent son contrôle.",
+      "source_ref": "CGI art. 57 (transfert indirect de bénéfices à l'étranger)",
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue1-groupes-prixtr-0003",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "prix-transfert-fiscalite-internationale",
+      "verified": true,
+      "difficulty": 3,
+      "tags": [
+        "article 209 B",
+        "sociétés étrangères contrôlées",
+        "régime fiscal privilégié"
+      ],
+      "statement": "La SA Zircon, soumise à l'IS en France, détient 30 % du capital et des droits de vote d'une société établie hors de l'Union européenne dans un État à régime fiscal privilégié ; les 70 % restants sont détenus par des investisseurs étrangers indépendants. Zircon est imposable en France sur 30 % des bénéfices de cette société en application de l'article 209 B du CGI.",
+      "answer": false,
+      "justification": "Faux : l'article 209 B suppose en principe la détention directe ou indirecte de plus de 50 % des actions, droits financiers ou droits de vote de l'entité étrangère ; avec 30 % et des coactionnaires indépendants, il ne s'applique pas.",
+      "explanation": "L'article 209 B vise les entités établies dans un État à régime fiscal privilégié (impôt inférieur d'au moins 40 % à celui qui serait dû en France dans les conditions de droit commun, CGI art. 238 A, seuil applicable depuis 2020) dont la société française détient plus de 50 %. Le seuil est abaissé à 5 % dans des cas particuliers (notamment lorsque plus de 50 % de l'entité est détenu par des entreprises établies en France ou contrôlées par elles), ce qui n'est pas le cas ici. Même lorsque le seuil est atteint, la société française peut échapper à l'imposition si l'entité exerce une activité industrielle ou commerciale effective (clause de sauvegarde).",
+      "source_ref": "CGI art. 209 B (sociétés étrangères contrôlées, seuil de plus de 50 %) ; CGI art. 238 A (régime fiscal privilégié)",
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue1-groupes-prixtr-0004",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "prix-transfert-fiscalite-internationale",
+      "verified": true,
+      "difficulty": 3,
+      "tags": [
+        "prix de transfert",
+        "article 57",
+        "pleine concurrence",
+        "réintégration"
+      ],
+      "statement": "La SAS Brique, filiale française d'un groupe néerlandais, fait l'objet d'une vérification portant sur l'exercice N. Trois flux intra-groupe sont examinés :\n- ventes de 20 000 unités de produits finis à une société sœur établie en Belgique au prix unitaire de 80 € HT, alors que Brique vend les mêmes produits, dans des conditions comparables (volumes, marché, conditions de livraison), à des clients indépendants au prix unitaire de 100 € HT ;\n- redevance de marque versée à la société mère néerlandaise, égale à 8 % du chiffre d'affaires de Brique (5 000 000 € HT) ; une étude de comparables montre qu'une redevance de 5 % correspond aux conditions de pleine concurrence ;\n- prestations de services administratifs facturées par la mère pour 300 000 € HT, réellement rendues, documentées et facturées à un prix conforme au marché.\nLe lien de dépendance est établi. Calculez le montant total des bénéfices à réintégrer dans le résultat de Brique en application de l'article 57 du CGI. Réponse en euros.",
+      "expected_value": 550000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Ventes minorées : (100 − 80) × 20 000 = 400 000 €.\nRedevance excessive : (8 % − 5 %) × 5 000 000 = 150 000 € ; seule la fraction excédant le taux de pleine concurrence est réintégrée, la redevance de 5 % restant déductible.\nPrestations administratives : réelles et facturées à prix de marché, aucun avantage n'est consenti, pas de réintégration.\nTotal : 400 000 + 150 000 = 550 000 €, soit un supplément d'IS de 137 500 € au taux de 25 %.\nErreurs classiques : réintégrer toute la redevance (400 000 + 400 000 = 800 000 €) ou les prestations administratives (850 000 €).",
+      "source_ref": "CGI art. 57 (réintégration des bénéfices transférés à une entreprise liée établie hors de France)",
+      "estimated_seconds": 240
+    }
+  ]
+}

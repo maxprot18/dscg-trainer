@@ -1,0 +1,235 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-diag-structure-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "structure-financiere-endettement",
+      "difficulty": 2,
+      "tags": [
+        "endettement net",
+        "IFRS 16"
+      ],
+      "source_ref": "IAS 7 §7-8 (règl. UE 2023/1803) pour la trésorerie et les équivalents ; définition de l’endettement net donnée par l’énoncé",
+      "verified": true,
+      "estimated_seconds": 90,
+      "statement": "Bilan consolidé d'un groupe (en k€) : emprunts obligataires 6 000 ; emprunts bancaires 4 500 ; dettes locatives (IFRS 16) 2 000 ; concours bancaires courants 300 ; trésorerie et équivalents de trésorerie 2 800 ; actions cotées détenues à titre de placement (non équivalents de trésorerie) 400. Le groupe définit l'endettement net comme l'ensemble des dettes financières, dettes locatives et concours bancaires inclus, diminué de la trésorerie et des équivalents de trésorerie. Quel est son endettement net ?",
+      "options": [
+        "8 000 k€",
+        "9 600 k€",
+        "10 000 k€",
+        "9 700 k€"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Endettement net = 6 000 + 4 500 + 2 000 + 300 − 2 800 = 10 000 k€ (option 3). 8 000 (option 1) exclut les dettes locatives, alors que la définition du groupe les inclut. 9 600 (option 2) déduit en plus les actions cotées, qui ne sont pas des équivalents de trésorerie (risque de variation de valeur non négligeable, IAS 7 §7). 9 700 (option 4) oublie les concours bancaires courants."
+    },
+    {
+      "id": "ue2-diag-structure-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "structure-financiere-endettement",
+      "difficulty": 3,
+      "tags": [
+        "covenants",
+        "classement courant / non courant"
+      ],
+      "source_ref": "IAS 1 §69, §74 et §75 (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 120,
+      "statement": "Au 31 décembre N, un groupe ne respecte pas le covenant (endettement net / EBITDA ≤ 3) d'un emprunt de 20 M€ remboursable in fine en N+4 ; le bris rend la dette exigible à la demande de la banque. Le 15 février N+1, avant l'arrêté des comptes, la banque renonce par écrit à exiger le remboursement anticipé. Comment l'emprunt est-il classé au bilan IFRS du 31 décembre N ?",
+      "options": [
+        "En passif non courant, puisque la renonciation est obtenue avant l'arrêté des comptes",
+        "En passif courant, la renonciation étant postérieure à la clôture ; information en annexe",
+        "En passif non courant, avec une simple mention du bris en annexe",
+        "Pour moitié en courant et pour moitié en non courant"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "IAS 1 §74 : lorsqu'une clause d'un emprunt à long terme n'est pas respectée à la clôture et rend la dette exigible à vue, la dette est classée en courant, même si le prêteur accepte après la clôture et avant l'autorisation de publication de ne pas exiger le paiement. Seul un délai de grâce d'au moins douze mois accordé avant la clôture permettrait le classement non courant. D'où l'option 2 ; la renonciation obtenue en février est un événement postérieur non ajustant, mentionné en annexe. Les options 1 et 3 ignorent que l'appréciation se fait à la clôture. Aucune règle ne prévoit le partage de l'option 4."
+    },
+    {
+      "id": "ue2-diag-structure-0003",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "structure-financiere-endettement",
+      "difficulty": 1,
+      "tags": [
+        "FRNG",
+        "BFR",
+        "trésorerie nette"
+      ],
+      "source_ref": "Bilan fonctionnel : trésorerie nette = FRNG − BFR",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Une trésorerie nette négative implique nécessairement un fonds de roulement net global (FRNG) négatif.",
+      "answer": false,
+      "justification": "Faux : trésorerie nette = FRNG − BFR ; un FRNG positif mais inférieur au BFR donne une trésorerie nette négative.",
+      "explanation": "La relation fondamentale du bilan fonctionnel est TN = FRNG − BFR. Une entreprise dont les ressources stables excèdent les emplois stables (FRNG positif) peut avoir une trésorerie nette négative si son BFR est plus élevé encore, par exemple en cas de croissance rapide ou d'allongement des délais clients. Elle finance alors une partie de son BFR par des concours bancaires courants."
+    },
+    {
+      "id": "ue2-diag-structure-0004",
+      "type": "journal_entry",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "structure-financiere-endettement",
+      "difficulty": 2,
+      "tags": [
+        "obligations convertibles",
+        "gearing"
+      ],
+      "source_ref": "PCG : comptes 161 (emprunts obligataires convertibles), 1013 (capital souscrit, appelé, versé), 1043 (primes de conversion d’obligations en actions)",
+      "verified": true,
+      "estimated_seconds": 180,
+      "statement": "La société mère d'un groupe a émis des obligations convertibles en actions. Le 1er juillet N, les porteurs de 2 000 obligations de nominal 500 € (émises et remboursables au pair) demandent leur conversion, à raison d'une action de nominal 100 € par obligation. Les intérêts ont été payés le jour même. Enregistrez la conversion dans les comptes individuels de la mère (comptes 161, 1013 et 1043).",
+      "date": "01/07/N",
+      "entries": [
+        {
+          "account": "161",
+          "label": "Emprunts obligataires convertibles",
+          "debit": 1000000,
+          "credit": 0
+        },
+        {
+          "account": "1013",
+          "label": "Capital souscrit, appelé, versé",
+          "debit": 0,
+          "credit": 200000
+        },
+        {
+          "account": "1043",
+          "label": "Primes de conversion d’obligations en actions",
+          "debit": 0,
+          "credit": 800000
+        }
+      ],
+      "explanation": "La dette éteinte vaut 2 000 × 500 = 1 000 000 €. Le capital augmente de 2 000 × 100 = 200 000 € ; la différence, 800 000 €, est une prime de conversion (compte 1043). L'opération n'entraîne aucun flux de trésorerie (opération non monétaire, IAS 7 §43) mais améliore la structure financière : l'endettement net baisse de 1 M€ et les capitaux propres augmentent de 1 M€, ce qui réduit le gearing."
+    },
+    {
+      "id": "ue2-diag-structure-0005",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "structure-financiere-endettement",
+      "difficulty": 2,
+      "tags": [
+        "covenants",
+        "levier",
+        "EBITDA"
+      ],
+      "source_ref": "Covenant de levier : endettement net / EBITDA ≤ plafond contractuel",
+      "verified": true,
+      "estimated_seconds": 150,
+      "statement": "Un groupe a un endettement net de 18 000 k€ et un EBITDA de 6 000 k€. Son contrat de crédit impose un ratio endettement net / EBITDA inférieur ou égal à 3,5. L'endettement net restant inchangé, de combien l'EBITDA peut-il baisser au maximum avant le bris du covenant ? Réponse en k€, arrondie à l'unité.",
+      "expected_value": 857,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "unit": "k€",
+      "decimals": 0,
+      "explanation": "Ratio actuel : 18 000 / 6 000 = 3,0. EBITDA minimal = 18 000 / 3,5 = 5 142,9 k€. Baisse maximale = 6 000 − 5 142,9 = 857 k€, soit environ 14,3 % de l'EBITDA. Erreur classique : raisonner sur l'écart de ratio (0,5 × 6 000 = 3 000) ou calculer une hausse d'endettement possible (0,5 × 6 000 = 3 000 k€ de dette supplémentaire), qui ne répond pas à la question."
+    },
+    {
+      "id": "ue2-diag-structure-0006",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "structure-financiere-endettement",
+      "difficulty": 2,
+      "tags": [
+        "bilan fonctionnel",
+        "BFR",
+        "gearing"
+      ],
+      "source_ref": "Bilan fonctionnel : FRNG, BFR, trésorerie nette ; ratio endettement net / capitaux propres",
+      "verified": true,
+      "estimated_seconds": 660,
+      "title": "Société Ternac : lecture du bilan fonctionnel",
+      "context": "Bilan fonctionnel de la société Ternac (négoce et transformation de bois) au 31 décembre N, en k€ (valeurs brutes) :\n- capitaux propres : 9 000 ; amortissements et dépréciations cumulés : 6 000 ; provisions pour risques : 500 ; dettes financières à long terme : 7 500 ;\n- immobilisations brutes : 19 500 ;\n- stocks : 3 200 ; créances clients : 5 400 ; autres créances hors exploitation : 200 ;\n- dettes fournisseurs : 2 900 ; dettes fiscales et sociales : 1 300 ; dettes sur immobilisations : 300 ;\n- disponibilités : 400 ; concours bancaires courants : 1 200.\n\nLe chiffre d'affaires hors taxes de N s'élève à 36 000 k€ ; il a progressé de 20 % en un an. Les dettes fiscales et sociales sont rattachées à l'exploitation. L'endettement net est défini comme les dettes financières à long terme et les concours bancaires, diminués des disponibilités. Le banquier de Ternac s'inquiète de l'augmentation des concours bancaires.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "Calculez le fonds de roulement net global (FRNG), en k€.",
+          "points": 2,
+          "expected_value": 3500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "Ressources stables = 9 000 + 6 000 + 500 + 7 500 = 23 000 ; FRNG = 23 000 − 19 500 = 3 500 k€."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "prompt": "Calculez la trésorerie nette, en k€ (signe moins si elle est négative).",
+          "points": 2,
+          "expected_value": -800,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "BFRE = 3 200 + 5 400 − 2 900 − 1 300 = 4 400 ; BFRHE = 200 − 300 = − 100 ; BFR = 4 300. TN = 3 500 − 4 300 = − 800 k€, ce que confirme 400 − 1 200."
+        },
+        {
+          "id": "q3",
+          "kind": "numeric",
+          "prompt": "Exprimez le BFR d’exploitation en jours de chiffre d’affaires hors taxes (année de 360 jours), arrondi à l’unité.",
+          "points": 2,
+          "expected_value": 44,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "jours",
+          "decimals": 0,
+          "explanation": "4 400 / 36 000 × 360 = 44 jours."
+        },
+        {
+          "id": "q4",
+          "kind": "mcq",
+          "prompt": "Quel est le gearing (endettement net / capitaux propres) de Ternac ?",
+          "points": 2,
+          "options": [
+            "0,83",
+            "0,92",
+            "0,97",
+            "0,36"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "Endettement net = 7 500 + 1 200 − 400 = 8 300 ; 8 300 / 9 000 = 0,92 (option 2). 0,83 oublie les concours bancaires et les disponibilités (7 500 / 9 000) ; 0,97 oublie de déduire les disponibilités (8 700 / 9 000) ; 0,36 rapporte l'endettement net aux ressources stables (8 300 / 23 000)."
+        },
+        {
+          "id": "q5",
+          "kind": "open",
+          "prompt": "Rédigez un bref diagnostic de l’équilibre financier de Ternac et proposez des pistes.",
+          "points": 4,
+          "model_answer": "Ternac dispose d'un FRNG positif (3 500 k€) : ses emplois stables sont financés par des ressources stables. Mais le FRNG ne couvre pas le BFR (4 300 k€, dont 44 jours de CA pour l'exploitation), d'où une trésorerie nette négative de 800 k€ financée par des concours bancaires. La situation s'explique par la croissance de 20 % du CA, qui gonfle mécaniquement stocks et créances. L'endettement reste modéré (gearing 0,92) mais repose en partie sur des crédits à court terme, fragiles. Pistes : réduire le BFR (délais clients, rotation des stocks, affacturage), renforcer le FRNG par un emprunt à moyen terme ou un apport en capitaux propres, adapter le rythme de croissance à la capacité de financement.",
+          "key_points": [
+            "FRNG positif mais inférieur au BFR : trésorerie nette négative",
+            "Cause : croissance de 20 % qui accroît le BFR",
+            "Gearing modéré (0,92) mais dépendance aux concours bancaires courants",
+            "Pistes : réduction du BFR, ressources longues supplémentaires, croissance maîtrisée"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "FRNG 3 500 ; BFR 4 300 (BFRE 4 400, BFRHE − 100) ; TN − 800 ; BFRE 44 jours de CA ; gearing 0,92. Le cas illustre une crise de croissance : équilibre structurel correct mais BFR mal financé."
+    }
+  ]
+}

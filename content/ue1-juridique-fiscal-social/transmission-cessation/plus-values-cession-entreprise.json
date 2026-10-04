@@ -1,0 +1,144 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-trans-pv-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "plus-values-cession-entreprise",
+      "difficulty": 2,
+      "tags": [
+        "plus-values professionnelles",
+        "CGI 151 septies",
+        "entreprise individuelle"
+      ],
+      "statement": "Mme Garnier exploite depuis 8 ans un commerce de vente de marchandises en entreprise individuelle, soumis à l'impôt sur le revenu. Ses recettes annuelles HT ont été de 205 000 € et 215 000 € au cours des deux derniers exercices. Elle cède un véhicule utilitaire en dégageant une plus-value. Quel est le régime de cette plus-value au regard de l'article 151 septies du CGI ?",
+      "options": [
+        "Exonération partielle, les recettes dépassant 90 000 €",
+        "Exonération totale, l'activité étant exercée depuis au moins 5 ans et les recettes moyennes n'excédant pas 250 000 €",
+        "Aucune exonération, l'article 151 septies étant réservé aux cessions de l'entreprise entière",
+        "Exonération totale de l'impôt sur le revenu et des prélèvements sociaux, sans condition de recettes"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "Pour une activité de vente, l'exonération est totale si l'activité est exercée depuis au moins 5 ans et si la moyenne des recettes HT des deux exercices précédents n'excède pas 250 000 € (exonération partielle jusqu'à 350 000 €) : moyenne 210 000 € (option 2). Le seuil de 90 000 € (option 1) concerne les prestations de services. L'article 151 septies s'applique aux plus-values réalisées en cours d'exploitation, pas seulement à la cession de l'entreprise (option 3), qui relève aussi de l'article 238 quindecies. L'exonération est soumise à une condition de recettes (option 4).",
+      "source_ref": "CGI art. 151 septies (exonération des plus-values professionnelles des petites entreprises)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue1-trans-pv-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "plus-values-cession-entreprise",
+      "difficulty": 2,
+      "tags": [
+        "titres de participation",
+        "long terme",
+        "quote-part de frais et charges"
+      ],
+      "statement": "La SA Holding Varenne (IS au taux normal de 25 %) cède des titres de participation détenus depuis 6 ans et dégage une plus-value de 500 000 €. Quel est l'impôt sur les sociétés dû au titre de cette cession ?",
+      "options": [
+        "125 000 €, la plus-value étant imposée au taux normal",
+        "75 000 €, la plus-value à long terme étant imposée au taux réduit de 15 %",
+        "Aucun impôt, la plus-value étant totalement exonérée",
+        "15 000 €, seule une quote-part de frais et charges de 12 % de la plus-value étant imposée au taux normal"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Les plus-values à long terme de cession de titres de participation détenus depuis au moins 2 ans sont exonérées, sous réserve de la réintégration d'une quote-part de frais et charges de 12 % du montant brut des plus-values, imposée au taux normal (CGI art. 219 I a quinquies) : 500 000 × 12 % × 25 % = 15 000 € (option 4). L'option 1 ignore le régime du long terme ; aucun taux réduit de 15 % ne s'applique à ces plus-values (option 2), qui relèvent de l'exonération sous réserve de la quote-part ; l'option 3 oublie la quote-part.",
+      "source_ref": "CGI art. 219 I a quinquies (plus-values à long terme sur titres de participation, quote-part de 12 %)",
+      "verified": true,
+      "estimated_seconds": 70
+    },
+    {
+      "id": "ue1-trans-pv-0003",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "plus-values-cession-entreprise",
+      "difficulty": 3,
+      "tags": [
+        "départ à la retraite",
+        "abattement fixe",
+        "CGI 150-0 D ter",
+        "PFU"
+      ],
+      "statement": "M. Olivier, dirigeant depuis 20 ans de la SAS Olivier Bois qu'il a fondée, cède la totalité de ses actions pour 1 400 000 € et part à la retraite trois mois plus tard. Il avait souscrit ses actions pour 150 000 € ; les frais de cession à sa charge s'élèvent à 20 000 €. Toutes les conditions de l'abattement fixe de 500 000 € pour départ à la retraite sont remplies. Hypothèses : imposition au prélèvement forfaitaire unique, 12,8 % d'impôt sur le revenu et prélèvements sociaux de 18,6 % (taux applicable aux plus-values mobilières depuis la LFSS 2026) ; on ignore la contribution exceptionnelle et la contribution différentielle sur les hauts revenus. Calculez le montant total de l'impôt sur le revenu et des prélèvements sociaux dus sur la plus-value, en euros.",
+      "expected_value": 322220,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Plus-value : 1 400 000 − 20 000 − 150 000 = 1 230 000 €.\nImpôt sur le revenu : (1 230 000 − 500 000) × 12,8 % = 730 000 × 12,8 % = 93 440 €.\nPrélèvements sociaux, calculés sur la plus-value avant abattement : 1 230 000 × 18,6 % = 228 780 €.\nTotal : 322 220 €. Appliquer l'abattement aux prélèvements sociaux (730 000 × 31,4 % = 229 220 €) est l'erreur classique ; oublier les frais de cession donne 96 000 + 232 500 = 328 500 €.",
+      "source_ref": "CGI art. 150-0 D (calcul de la plus-value), 150-0 D ter (abattement fixe pour départ à la retraite) et 200 A (prélèvement forfaitaire unique) ; CSS art. L. 136-6 et LFSS 2026 (taux de CSG porté à 10,6 % sur les revenus du patrimoine visés)",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue1-trans-pv-0004",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "plus-values-cession-entreprise",
+      "difficulty": 2,
+      "tags": [
+        "cession de titres de participation",
+        "reprise de dépréciation",
+        "775",
+        "675"
+      ],
+      "statement": "Le 30 juin N, la SA Orsane cède pour 520 000 € la totalité de sa participation dans la société Delta (titres de participation acquis 380 000 €, dépréciés à hauteur de 60 000 € au 31 décembre N-1). Le prix est encaissé le jour même par virement. Passez l'écriture de cession et de reprise de la dépréciation devenue sans objet, en utilisant les comptes 512, 775, 675, 261, 2961 et 7866.",
+      "date": "30/06/N",
+      "entries": [
+        {
+          "account": "512",
+          "label": "Banque",
+          "debit": 520000,
+          "credit": 0
+        },
+        {
+          "account": "775",
+          "label": "Produits des cessions d'éléments d'actif",
+          "debit": 0,
+          "credit": 520000
+        },
+        {
+          "account": "675",
+          "label": "Valeurs comptables des éléments d'actif cédés",
+          "debit": 380000,
+          "credit": 0
+        },
+        {
+          "account": "261",
+          "label": "Titres de participation",
+          "debit": 0,
+          "credit": 380000
+        },
+        {
+          "account": "2961",
+          "label": "Dépréciations des titres de participation",
+          "debit": 60000,
+          "credit": 0
+        },
+        {
+          "account": "7866",
+          "label": "Reprises sur dépréciations des éléments financiers",
+          "debit": 0,
+          "credit": 60000
+        }
+      ],
+      "explanation": "Le prix encaissé est porté au crédit du 775 ; les titres sortent pour leur coût d'acquisition (débit 675, crédit 261). La dépréciation, devenue sans objet, est reprise (débit 2961, crédit 7866). Effet sur le résultat comptable : 520 000 − 380 000 + 60 000 = 200 000 €. Fiscalement, la plus-value de cession (520 000 − 380 000 = 140 000 €) relève du régime du long terme des titres de participation détenus depuis au moins 2 ans : seule une quote-part de frais et charges de 12 % est imposée au taux normal.",
+      "source_ref": "PCG (règl. ANC 2014-03), comptes 261, 2961, 675, 775 et 7866 ; CGI art. 219 I a quinquies",
+      "verified": true,
+      "estimated_seconds": 210
+    }
+  ]
+}

@@ -15,6 +15,156 @@
       "source_ref": "CGI art. 223 A (conditions de détention de 95 % du capital et périmètre du groupe intégré)",
       "verified": true,
       "estimated_seconds": 60
+    },
+    {
+      "id": "ue1-groupes-integ-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "integration-fiscale-perimetre",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "intégration fiscale",
+        "conditions"
+      ],
+      "statement": "Parmi les éléments suivants, lequel n'est PAS une condition pour qu'une filiale puisse être incluse dans un groupe fiscalement intégré ?",
+      "options": [
+        "Ses exercices sont ouverts et clos aux mêmes dates que ceux de la société mère",
+        "Elle est soumise à l'impôt sur les sociétés",
+        "Elle donne son accord à son inclusion dans le groupe",
+        "Elle est bénéficiaire lors de son entrée dans le groupe"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Aucune condition de rentabilité n'est exigée : une filiale déficitaire peut entrer dans le groupe, c'est même l'un des intérêts du régime, ses déficits s'imputant sur les bénéfices des autres membres (option 4).\nLes options 1, 2 et 3 sont des conditions posées par l'article 223 A du CGI : exercices de même durée ouverts et clos aux mêmes dates, assujettissement à l'IS, accord de la filiale, auxquelles s'ajoute la détention d'au moins 95 % du capital par la mère.",
+      "source_ref": "CGI art. 223 A (conditions d'appartenance au groupe intégré)",
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue1-groupes-integ-0003",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "integration-fiscale-perimetre",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "intégration fiscale",
+        "détention indirecte",
+        "seuil de 95 %"
+      ],
+      "statement": "La SA Nacre, société mère d'un groupe intégré, détient directement 60 % du capital de la SAS Opale. Les 40 % restants sont détenus par la SAS Perle. Nacre peut-elle inclure Opale dans son groupe ?",
+      "options": [
+        "Oui si Perle est détenue à 100 % par Nacre et est membre du groupe intégré",
+        "Oui si Perle est détenue à 80 % par Nacre, car Nacre contrôle Perle",
+        "Non dans tous les cas, la détention directe de 60 % étant inférieure à 95 %",
+        "Oui dans tous les cas, Nacre et Perle détenant ensemble 100 % d'Opale"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "La détention de 95 % peut être directe ou indirecte, mais la détention indirecte ne compte que si elle s'exerce par l'intermédiaire de sociétés du groupe intégré (CGI art. 223 A). Si Perle est détenue à 100 % par Nacre et membre du groupe, Nacre détient 60 % + 40 % = 100 % d'Opale : l'inclusion est possible (option 1).\nL'option 2 est fausse : une société détenue à 80 % ne peut pas être membre du groupe, et les titres qu'elle détient ne sont pas pris en compte ; Nacre ne détient alors que 60 %.\nL'option 3 ignore la détention indirecte.\nL'option 4 ignore que Perle doit être membre du groupe.",
+      "source_ref": "CGI art. 223 A (détention directe ou indirecte par l'intermédiaire de sociétés du groupe)",
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue1-groupes-integ-0004",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "integration-fiscale-perimetre",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "intégration fiscale",
+        "option",
+        "durée"
+      ],
+      "statement": "L'option pour le régime de l'intégration fiscale est valable pour une durée de trois exercices, au terme de laquelle elle doit être expressément renouvelée.",
+      "answer": false,
+      "justification": "Faux : l'option est valable pour cinq exercices et se renouvelle par tacite reconduction (CGI art. 223 A).",
+      "explanation": "La société mère notifie son option à l'administration ; l'option vaut pour une période de cinq exercices et est renouvelable tacitement par période de cinq exercices. Chaque année, la mère communique la liste des sociétés membres du groupe ; une filiale peut entrer ou sortir du périmètre en cours de période, sans remettre en cause l'option elle-même.",
+      "source_ref": "CGI art. 223 A (option pour cinq exercices, renouvellement par tacite reconduction)",
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue1-groupes-integ-0005",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "integration-fiscale-perimetre",
+      "verified": true,
+      "difficulty": 3,
+      "tags": [
+        "intégration fiscale",
+        "périmètre",
+        "détention indirecte",
+        "sortie du groupe"
+      ],
+      "title": "Groupe Hestia : délimiter le périmètre d'intégration",
+      "context": "La SA Hestia, soumise à l'IS et dont le capital est détenu par des personnes physiques, clôture ses exercices le 31 décembre. Elle envisage d'opter pour l'intégration fiscale à compter de l'exercice N. Ses participations sont les suivantes (pourcentages identiques en capital, droits à dividendes et droits de vote, stables depuis plusieurs années) :\n- SAS Alma : 100 % détenue par Hestia ; IS ; clôture au 31 décembre ;\n- SA Brume : 70 % détenue par Hestia et 28 % par Alma ; IS ; clôture au 31 décembre ;\n- SARL Cobalt : 96 % détenue par Hestia ; IS ; clôture au 30 juin ;\n- SAS Delta : 90 % détenue par Hestia et 5 % par la SA Éther, elle-même détenue à 60 % par Hestia ; IS ; clôture au 31 décembre ;\n- SCI Fjord : 100 % détenue par Hestia ; non soumise à l'IS (régime des sociétés de personnes).\nToutes les sociétés éligibles donnent leur accord. Les résultats fiscaux prévisionnels de N, déterminés comme en l'absence d'intégration, sont : Hestia + 400 000 € ; Alma − 150 000 € ; Brume + 90 000 € ; Cobalt + 60 000 € ; Delta − 70 000 € ; Éther + 20 000 €. Aucune opération intra-groupe n'est à retraiter.",
+      "sub_questions": [
+        {
+          "id": "q1-perimetre",
+          "kind": "mcq",
+          "points": 3,
+          "multiple": true,
+          "prompt": "Quelles sociétés peuvent être intégrées avec Hestia au titre de N ? (plusieurs réponses possibles)",
+          "options": [
+            "Alma",
+            "Brume",
+            "Cobalt",
+            "Delta",
+            "Fjord"
+          ],
+          "answer": [
+            0,
+            1
+          ],
+          "explanation": "Alma (100 %, IS, même clôture) est éligible. Brume est détenue à 70 % directement et à 28 % par Alma, société du groupe : 98 % au total, elle est éligible si Alma est intégrée. Cobalt est exclue (clôture au 30 juin, différente de celle de la mère). Delta n'est détenue qu'à 90 % : les 5 % détenus par Éther, qui n'est pas membre du groupe (détenue à 60 %), ne comptent pas. Fjord n'est pas soumise à l'IS."
+        },
+        {
+          "id": "q2-alma",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "Vrai ou faux : Hestia pourrait intégrer Brume tout en laissant Alma hors du périmètre.",
+          "answer": false,
+          "explanation": "Faux. Sans Alma dans le groupe, les 28 % qu'elle détient dans Brume ne sont pas pris en compte (détention indirecte uniquement par l'intermédiaire de sociétés du groupe, CGI art. 223 A) : Hestia ne détiendrait que 70 % de Brume."
+        },
+        {
+          "id": "q3-resultat",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "En retenant le périmètre maximal possible, calculez le résultat d'ensemble prévisionnel de N. Réponse en euros.",
+          "expected_value": 340000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Hestia + Alma + Brume : 400 000 − 150 000 + 90 000 = 340 000 €. Inclure à tort Cobalt, Delta et Éther donnerait 350 000 €."
+        },
+        {
+          "id": "q4-sortie",
+          "kind": "open",
+          "points": 4,
+          "prompt": "Le groupe ayant été constitué, Hestia envisage de céder le 1er juillet N+2 à un dirigeant 5 % du capital de Brume (Alma conservant ses 28 %). Analysez les conséquences de cette opération sur l'appartenance de Brume au groupe.",
+          "model_answer": "Après la cession, Hestia détient 65 % + 28 % = 93 % de Brume, en dessous du seuil de 95 %. La condition de détention doit être remplie de manière continue au cours de l'exercice : Brume sort du groupe avec effet dès l'ouverture de l'exercice N+2 (1er janvier N+2), et non au 1er juillet. Son résultat de N+2 est imposé séparément, Brume redevenant redevable de l'IS et des acomptes. Les déficits éventuellement subis par Brume pendant l'intégration restent acquis au groupe (imputables sur le résultat d'ensemble) et ne lui sont pas restitués. Les neutralisations antérieures portant sur des opérations entre Brume et les autres membres (plus-values de cession d'immobilisations intra-groupe, abandons de créances) sont réintégrées dans le résultat d'ensemble (CGI art. 223 R). La convention d'intégration peut prévoir une indemnisation de Brume pour la perte de ses déficits. Pour éviter la sortie, la cession devrait être limitée de sorte que la détention reste au moins égale à 95 %.",
+          "key_points": [
+            "Détention ramenée à 93 % : condition de 95 % non remplie",
+            "Sortie avec effet à l'ouverture de l'exercice N+2 (condition continue sur l'exercice)",
+            "Imposition séparée de Brume dès N+2 ; déficits d'ensemble conservés par le groupe",
+            "Réintégration des neutralisations antérieures liées à Brume (223 R) et indemnisation éventuelle prévue par la convention"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas porte sur les conditions de l'article 223 A : seuil de 95 % apprécié via les seules sociétés du groupe, identité des dates de clôture, assujettissement à l'IS, et sur les effets de la sortie d'une filiale.",
+      "source_ref": "CGI art. 223 A (conditions et périmètre) ; CGI art. 223 R (sortie du groupe)",
+      "estimated_seconds": 780
     }
   ]
 }

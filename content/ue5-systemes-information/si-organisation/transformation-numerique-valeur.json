@@ -1,0 +1,104 @@
+{
+  "exercises": [
+    {
+      "id": "ue5-siorg-transfo-0001",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "transformation-numerique-valeur",
+      "difficulty": 3,
+      "tags": [
+        "VAN",
+        "délai de récupération",
+        "ROI",
+        "choix d'investissement"
+      ],
+      "statement": "Deux projets numériques exclusifs demandent chacun un investissement de 100 000 €. Projet A : flux nets de trésorerie de 70 000 € en année 1 et 50 000 € en année 2. Projet B : 30 000 € en année 1, 40 000 € en année 2 et 70 000 € en année 3. Taux d'actualisation : 10 %. Flux en fin d'année. Quelle affirmation est exacte ?",
+      "options": [
+        "A a la VAN la plus élevée, puisqu'il est récupéré le plus rapidement",
+        "B a la VAN la plus élevée (environ 12 900 € contre 5 000 € pour A), mais A est récupéré plus vite (1,6 an contre 2,4 ans environ)",
+        "B a un ROI simple de 40 %, donc une VAN de 40 000 €",
+        "Les deux projets ont une VAN négative au taux de 10 %"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "VAN A = −100 000 + 70 000 ÷ 1,1 + 50 000 ÷ 1,1² = −100 000 + 63 636 + 41 322 = 4 959 €. VAN B = −100 000 + 30 000 ÷ 1,1 + 40 000 ÷ 1,1² + 70 000 ÷ 1,1³ = −100 000 + 27 273 + 33 058 + 52 592 = 12 923 €. Délai de récupération (non actualisé) : A, 70 000 en année 1 puis 30 000 ÷ 50 000 = 0,6 an, soit 1,6 an ; B, 70 000 cumulés fin d'année 2 puis 30 000 ÷ 70 000 ≈ 0,43 an, soit environ 2,4 ans. L'option 1 confond rapidité de récupération et création de valeur : le délai de récupération ignore les flux postérieurs. L'option 3 assimile le ROI simple ((140 000 − 100 000) ÷ 100 000 = 40 %) à une VAN, alors que le ROI ignore l'actualisation et s'exprime en pourcentage. L'option 4 est contredite par le calcul. Selon le critère de la VAN, B est préféré ; A ne le serait que si la contrainte de liquidité ou le risque à long terme primait.",
+      "source_ref": "Évaluation des investissements : VAN = −I₀ + Σ FNTₜ (1 + k)⁻ᵗ ; délai de récupération ; ROI simple",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue5-siorg-transfo-0002",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "transformation-numerique-valeur",
+      "difficulty": 2,
+      "tags": [
+        "chaîne de valeur",
+        "Porter",
+        "activités principales"
+      ],
+      "statement": "Un fabricant de meubles déploie un système de gestion d'entrepôt qui optimise la réception, le stockage et la mise à disposition des panneaux de bois et quincailleries auprès des ateliers. Dans la chaîne de valeur de M. Porter, quelle activité ce système renforce-t-il directement ?",
+      "options": [
+        "La logistique interne (activité principale)",
+        "La logistique externe (activité principale)",
+        "Les approvisionnements (activité de soutien)",
+        "L'infrastructure de l'entreprise (activité de soutien)"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "La logistique interne regroupe la réception, le stockage et la distribution des intrants aux unités de production : c'est exactement le périmètre du système décrit. La logistique externe (option 2) concerne le stockage et la distribution des produits finis aux clients. Les approvisionnements (option 3) désignent la fonction d'achat des intrants (sélection des fournisseurs, négociation, commandes), non leur manutention. L'infrastructure de l'entreprise (option 4) couvre la direction générale, la finance, le juridique, la planification. Le SI peut ainsi renforcer chaque maillon de la chaîne de valeur, ce qui en fait une source d'avantage concurrentiel.",
+      "source_ref": "M. Porter, L'avantage concurrentiel (1985) : chaîne de valeur, activités principales et activités de soutien",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue5-siorg-transfo-0003",
+      "type": "numeric",
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "transformation-numerique-valeur",
+      "difficulty": 2,
+      "tags": [
+        "VAN",
+        "projet numérique",
+        "CRM",
+        "actualisation"
+      ],
+      "statement": "Une entreprise envisage de déployer un outil de gestion de la relation client (CRM). Investissement initial : 200 000 €. Flux nets de trésorerie attendus (gains moins coûts de fonctionnement), en fin d'année : 50 000 € en année 1, 70 000 € en année 2, 80 000 € en année 3 et 80 000 € en année 4. Aucune valeur résiduelle. Taux d'actualisation : 8 %. Calculez la VAN du projet (en €, arrondie à l'euro).",
+      "expected_value": 28619,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "VAN = −200 000 + 50 000 ÷ 1,08 + 70 000 ÷ 1,08² + 80 000 ÷ 1,08³ + 80 000 ÷ 1,08⁴ = −200 000 + 46 296 + 60 014 + 63 507 + 58 802 = 28 619 €. Erreur classique : oublier d'actualiser (somme des flux − investissement = 80 000 €). La VAN étant positive, le projet crée de la valeur au taux exigé de 8 %.",
+      "source_ref": "Évaluation des investissements : VAN = −I₀ + Σ FNTₜ (1 + k)⁻ᵗ",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue5-siorg-transfo-0004",
+      "type": "flashcard",
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "transformation-numerique-valeur",
+      "difficulty": 1,
+      "tags": [
+        "paradoxe de Solow",
+        "productivité",
+        "actifs complémentaires"
+      ],
+      "front": "Qu'est-ce que le paradoxe de Solow et comment l'explique-t-on ?",
+      "back": "Constat selon lequel les investissements informatiques massifs ne se traduisent pas, ou avec retard, par des gains de productivité mesurables (« on voit des ordinateurs partout, sauf dans les statistiques de productivité »).\nExplications : délai d'apprentissage et de diffusion, mesure imparfaite des gains (qualité, délais), et surtout nécessité d'actifs complémentaires (réorganisation des processus, compétences, conduite du changement).",
+      "explanation": "Le paradoxe a été formulé en 1987 par l'économiste Robert Solow. Les travaux ultérieurs montrent que les gains liés aux technologies de l'information existent mais dépendent des changements organisationnels qui les accompagnent : c'est pourquoi un projet SI doit être conduit comme un projet de transformation et non comme une simple installation technique.",
+      "source_ref": "R. Solow, New York Times Book Review, 12 juillet 1987 ; travaux sur la valeur des SI (actifs complémentaires)",
+      "verified": true,
+      "estimated_seconds": 45
+    }
+  ]
+}

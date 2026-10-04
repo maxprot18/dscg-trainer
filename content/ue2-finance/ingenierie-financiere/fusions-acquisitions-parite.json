@@ -1,0 +1,198 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-ingfi-fusion-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "fusions-acquisitions-parite",
+      "difficulty": 1,
+      "tags": [
+        "parité d'échange",
+        "fusion"
+      ],
+      "source_ref": "Parité d'échange = valeur unitaire de l'action absorbée / valeur unitaire de l'action absorbante",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "La société Alpha absorbe la société Bêta. La valeur unitaire retenue est de 120 € pour l'action Alpha et de 80 € pour l'action Bêta. Quelle est la parité d'échange ?",
+      "options": [
+        "3 actions Alpha pour 2 actions Bêta",
+        "1 action Alpha pour 1 action Bêta",
+        "2 actions Alpha pour 3 actions Bêta",
+        "2 actions Alpha pour 1 action Bêta"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Parité = 80 / 120 = 2/3 : chaque action Bêta donne droit à 2/3 d'action Alpha, soit 2 actions Alpha pour 3 actions Bêta. Vérification : 3 actions Bêta valent 240 €, comme 2 actions Alpha. L'option 1 inverse la parité (120 / 80) et avantagerait les actionnaires de Bêta. L'option 2 ignore la différence de valeur unitaire. L'option 4 ne correspond à aucun rapport de valeurs de l'énoncé."
+    },
+    {
+      "id": "ue2-ingfi-fusion-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "fusions-acquisitions-parite",
+      "difficulty": 2,
+      "tags": [
+        "parité d'échange",
+        "actions à émettre",
+        "participation préalable"
+      ],
+      "source_ref": "Code de commerce, régime des fusions : pas d'échange des actions de l'absorbée détenues par l'absorbante ; nombre d'actions à émettre = actions échangées × parité",
+      "verified": true,
+      "estimated_seconds": 90,
+      "statement": "La société Cendre absorbe la société Doris. Doris compte 300 000 actions d'une valeur unitaire de 50 € ; l'action Cendre vaut 125 €. Cendre détient déjà 10 % du capital de Doris. Combien d'actions Cendre doivent être émises pour rémunérer les autres actionnaires de Doris ?",
+      "options": [
+        "120 000",
+        "270 000",
+        "675 000",
+        "108 000"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Parité : 50 / 125 = 0,4 action Cendre pour 1 action Doris (2 pour 5). Cendre ne peut pas recevoir ses propres actions en échange des 30 000 actions Doris qu'elle détient : seules 270 000 actions sont échangées, d'où 270 000 × 0,4 = 108 000 actions nouvelles. L'option 1 rémunère toutes les actions Doris, y compris celles de Cendre. L'option 2 est le nombre d'actions Doris échangées, sans application de la parité. L'option 3 applique la parité inversée (270 000 × 125 / 50)."
+    },
+    {
+      "id": "ue2-ingfi-fusion-0003",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "fusions-acquisitions-parite",
+      "difficulty": 2,
+      "tags": [
+        "BPA",
+        "effet relutif",
+        "bootstrap"
+      ],
+      "source_ref": "Analyse financière des fusions : effet relutif ou dilutif sur le BPA selon les PER retenus dans la parité",
+      "verified": true,
+      "estimated_seconds": 75,
+      "statement": "Affirmation : une fusion rémunérée par échange d'actions peut augmenter le bénéfice par action de l'absorbante sans aucune synergie, lorsque le PER retenu pour l'absorbée dans la parité est inférieur à celui de l'absorbante.",
+      "answer": true,
+      "justification": "Vrai. L'absorbante émet alors peu d'actions au regard du résultat qu'elle acquiert : le BPA augmente mécaniquement (effet relutif ou bootstrap), sans création de valeur.",
+      "explanation": "Exemple : A (résultat 10, 10 actions, PER 20, cours 20) absorbe B (résultat 10, PER 10, valeur 100). A émet 100 / 20 = 5 actions ; le BPA passe de 1 à 20 / 15 = 1,33. Mais si le marché applique au nouvel ensemble un PER moyen pondéré, la valeur totale est inchangée : la hausse du BPA ne traduit aucune création de valeur. Seules les synergies supérieures à la prime payée en créent."
+    },
+    {
+      "id": "ue2-ingfi-fusion-0004",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "fusions-acquisitions-parite",
+      "difficulty": 2,
+      "tags": [
+        "synergies",
+        "prime de contrôle",
+        "création de valeur"
+      ],
+      "source_ref": "Valeur des synergies = valeur actuelle des gains nets d'impôt − coûts d'intégration ; prix maximal = valeur autonome + valeur des synergies ; rente perpétuelle V = F / k",
+      "verified": true,
+      "estimated_seconds": 180,
+      "statement": "La société Etna envisage d'acquérir la totalité de la société Fjord, dont la capitalisation boursière (valeur autonome) est de 200 M€. Le rapprochement dégagerait des synergies de coûts de 6 M€ par an, nets d'impôt, dès la première année et à perpétuité, actualisées au taux de 8 %. Les coûts d'intégration, décaissés immédiatement, sont estimés à 15 M€ nets d'impôt. Quelle prime maximale (en % de la capitalisation de Fjord) Etna peut-elle offrir sans détruire de valeur pour ses actionnaires ? Réponse en %, arrondie à une décimale.",
+      "expected_value": 30,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "decimals": 1,
+      "explanation": "Valeur actuelle des synergies : 6 / 0,08 = 75 M€ ; valeur nette des coûts d'intégration : 75 − 15 = 60 M€. Prix maximal : 200 + 60 = 260 M€, soit une prime maximale de 60 / 200 = 30,0 %. Oublier les coûts d'intégration conduirait à 37,5 %. À ce prix, toute la valeur des synergies irait aux actionnaires de Fjord ; Etna a intérêt à payer moins pour en conserver une partie."
+    },
+    {
+      "id": "ue2-ingfi-fusion-0005",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "fusions-acquisitions-parite",
+      "difficulty": 3,
+      "tags": [
+        "parité d'échange",
+        "évaluation multicritère",
+        "BPA",
+        "synergies"
+      ],
+      "source_ref": "Évaluation multicritère (actif net corrigé, valeur de rendement par le PER) ; parité = V_absorbée / V_absorbante ; Code de commerce, régime des fusions",
+      "verified": true,
+      "estimated_seconds": 840,
+      "title": "Fusion Alba – Brena : parité et effet sur le bénéfice par action",
+      "context": "La société Alba envisage d'absorber la société Brena, avec laquelle elle n'a aucun lien en capital. Les conseils retiennent pour chaque société la moyenne arithmétique de deux valeurs :\n- l'actif net corrigé (ANC) ;\n- la valeur de rendement, égale au résultat net multiplié par un PER de 12 pour les deux sociétés.\n\nDonnées :\n- Alba : 1 000 000 d'actions ; ANC 60 M€ ; résultat net 9 M€ ;\n- Brena : 360 000 actions ; ANC 21,6 M€ ; résultat net 2,4 M€.\n\nLes résultats nets sont supposés récurrents. Les dirigeants d'Alba espèrent des synergies, mais leur montant n'est pas encore chiffré.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "Calculez la valeur unitaire de l'action Brena retenue pour la parité, en euros.",
+          "points": 2,
+          "expected_value": 70,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€",
+          "explanation": "Valeur de rendement : 2,4 × 12 = 28,8 M€. Valeur retenue : (21,6 + 28,8) / 2 = 25,2 M€, soit 25,2 / 0,36 = 70 € par action. (Alba : (60 + 108) / 2 = 84 M€, soit 84 € par action.)"
+        },
+        {
+          "id": "q2",
+          "kind": "mcq",
+          "prompt": "Quelle est la parité d'échange ?",
+          "points": 2,
+          "options": [
+            "6 actions Alba pour 5 actions Brena",
+            "5 actions Alba pour 6 actions Brena",
+            "1 action Alba pour 1 action Brena",
+            "5 actions Alba pour 7 actions Brena"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "Parité = 70 / 84 = 5/6 : 5 actions Alba pour 6 actions Brena. L'option 1 inverse le rapport."
+        },
+        {
+          "id": "q3",
+          "kind": "numeric",
+          "prompt": "Combien d'actions Alba faut-il émettre pour rémunérer les actionnaires de Brena ?",
+          "points": 2,
+          "expected_value": 300000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "actions",
+          "decimals": 0,
+          "explanation": "360 000 × 5/6 = 300 000 actions nouvelles. Les actionnaires de Brena détiendront 300 000 / 1 300 000 = 23,1 % du nouvel ensemble."
+        },
+        {
+          "id": "q4",
+          "kind": "numeric",
+          "prompt": "Calculez le BPA d'Alba après la fusion, en l'absence de synergies, en euros arrondis au centime.",
+          "points": 3,
+          "expected_value": 8.77,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.01
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "Résultat combiné : 9 + 2,4 = 11,4 M€ ; nombre d'actions : 1 300 000 ; BPA = 11,4 / 1,3 = 8,77 €, contre 9,00 € avant la fusion : l'opération est dilutive pour les actionnaires d'Alba."
+        },
+        {
+          "id": "q5",
+          "kind": "open",
+          "prompt": "Expliquez l'origine de la dilution du BPA et indiquez à quelle condition l'opération créerait de la valeur pour les actionnaires d'Alba.",
+          "points": 4,
+          "model_answer": "Les actionnaires de Brena reçoivent 23,1 % du capital alors que Brena n'apporte que 21,1 % du résultat (2,4 / 11,4) : la parité valorise Brena relativement mieux sur l'actif net (ANC élevé au regard de son résultat), ce qui dilue le BPA d'Alba. Il faudrait 0,3 M€ de synergies annuelles (9 × 1,3 − 11,4) pour maintenir le BPA à 9 €. Mais le BPA n'est pas un critère de création de valeur : l'opération crée de la valeur pour les actionnaires d'Alba si la valeur actuelle des synergies, nette des coûts d'intégration, dépasse la valeur transférée aux actionnaires de Brena au-delà de la valeur intrinsèque de leur société (la prime implicite dans la parité). Il faut donc chiffrer les synergies et vérifier la robustesse de l'évaluation multicritère.",
+          "key_points": [
+            "Part du capital reçue (23,1 %) supérieure à la part du résultat apportée (21,1 %)",
+            "Synergies de 0,3 M€ par an nécessaires pour neutraliser la dilution",
+            "Le BPA ne mesure pas la création de valeur",
+            "Création de valeur si la valeur des synergies nettes dépasse la prime implicite accordée"
+          ]
+        }
+      ],
+      "total_points": 13,
+      "explanation": "Valeurs unitaires : Alba 84 €, Brena 70 € ; parité 5 pour 6 ; 300 000 actions nouvelles ; BPA de 9,00 € à 8,77 €. Le cas distingue l'effet comptable sur le BPA de la création de valeur, qui dépend des synergies et de la prime."
+    }
+  ]
+}

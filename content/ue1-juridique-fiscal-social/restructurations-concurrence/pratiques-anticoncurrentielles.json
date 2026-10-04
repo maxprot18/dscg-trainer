@@ -1,0 +1,155 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-restr-pac-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "pratiques-anticoncurrentielles",
+      "difficulty": 1,
+      "tags": [
+        "entente",
+        "échange d'informations",
+        "L. 420-1"
+      ],
+      "statement": "Lequel des comportements suivants est le plus susceptible d'être qualifié d'entente anticoncurrentielle ?",
+      "options": [
+        "Une entreprise fixe seule ses prix en observant ceux, publics, de ses concurrents",
+        "Une entreprise développe un produit plus performant qui lui fait gagner des parts de marché",
+        "Une entreprise refuse, pour un motif de solvabilité objectivement vérifié, de livrer un client qui ne paie pas ses factures",
+        "Trois concurrents se communiquent régulièrement leurs hausses de tarifs prévues pour le trimestre suivant"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "L'échange entre concurrents d'informations sur leurs prix futurs réduit l'incertitude sur le comportement de chacun et constitue une pratique concertée ayant un objet anticoncurrentiel (C. com. art. L. 420-1 ; TFUE art. 101) : option 4. S'aligner unilatéralement sur des prix publics (option 1) relève du parallélisme de comportement, licite en l'absence de concertation. Gagner des parts de marché par l'innovation (option 2) est la concurrence par les mérites. Un refus de vente justifié par un motif objectif (option 3) n'est pas une entente, qui suppose un concours de volontés.",
+      "source_ref": "C. com. art. L. 420-1 ; TFUE art. 101 § 1 (ententes)",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue1-restr-pac-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "pratiques-anticoncurrentielles",
+      "difficulty": 2,
+      "tags": [
+        "exemption",
+        "progrès économique",
+        "L. 420-4"
+      ],
+      "statement": "Plusieurs fabricants concurrents concluent un accord de recherche commune sur un procédé de recyclage. Pour échapper à l'interdiction des ententes au titre de l'exemption individuelle, quelles conditions doivent-ils démontrer ?",
+      "options": [
+        "Que l'accord a été notifié à l'Autorité de la concurrence et autorisé par elle avant sa mise en œuvre",
+        "Que l'accord contribue au progrès économique, réserve aux utilisateurs une partie équitable du profit, ne comporte que des restrictions indispensables et n'élimine pas la concurrence pour une partie substantielle des produits",
+        "Que leur part de marché cumulée ne dépasse pas 50 %",
+        "Que l'accord n'a pas encore produit d'effet sur les prix, l'objet anticoncurrentiel étant insuffisant pour sanctionner"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "L'exemption individuelle (C. com. art. L. 420-4, I, 2° ; TFUE art. 101 § 3) suppose la réunion de quatre conditions cumulatives : progrès économique, partie équitable du profit aux utilisateurs, restrictions indispensables, absence d'élimination de la concurrence pour une partie substantielle des produits (option 2). Il n'existe pas de procédure de notification préalable des ententes (option 1) : c'est l'entreprise qui doit prouver, en cas de poursuite, qu'elle remplit les conditions. Aucun seuil de 50 % ne vaut exemption (option 3). Une entente ayant un objet anticoncurrentiel est prohibée même sans effet démontré (option 4), la loi visant l'objet ou l'effet.",
+      "source_ref": "C. com. art. L. 420-4 (exemption) ; TFUE art. 101 § 3",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue1-restr-pac-0003",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "pratiques-anticoncurrentielles",
+      "difficulty": 1,
+      "tags": [
+        "dépendance économique",
+        "L. 420-2"
+      ],
+      "statement": "Une entreprise qui ne détient pas de position dominante peut néanmoins être sanctionnée pour avoir exploité abusivement l'état de dépendance économique dans lequel se trouve à son égard un client ou un fournisseur.",
+      "answer": true,
+      "justification": "L'abus de dépendance économique (C. com. art. L. 420-2, al. 2) est une infraction autonome, qui n'exige pas de position dominante.",
+      "explanation": "L'article L. 420-2 vise, à son alinéa 1, l'abus de position dominante et, à son alinéa 2, l'exploitation abusive de l'état de dépendance économique d'un client ou d'un fournisseur, dès lors qu'elle est susceptible d'affecter le fonctionnement ou la structure de la concurrence. Cette dernière condition, appréciée strictement, explique que les sanctions sur ce fondement restent rares ; les victimes agissent souvent aussi sur le terrain des pratiques restrictives (C. com. art. L. 442-1).",
+      "source_ref": "C. com. art. L. 420-2, al. 2 (abus de dépendance économique)",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue1-restr-pac-0004",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "pratiques-anticoncurrentielles",
+      "difficulty": 2,
+      "tags": [
+        "entente sur les prix",
+        "sanction",
+        "clémence",
+        "de minimis",
+        "rupture brutale"
+      ],
+      "title": "Entente entre négociants en matériaux",
+      "context": "Trois négociants en matériaux de construction d'une même région, dont la société Briand Matériaux, se réunissent depuis le début de l'exercice N-1 pour fixer ensemble un « prix plancher » de vente des tuiles et se répartir les grands chantiers publics. Leurs parts de marché cumulées sur le marché régional sont estimées à 8 %.\nEn N+1, un salarié de l'un des négociants dénonce les faits. L'Autorité de la concurrence ouvre une enquête et envisage une sanction en N+1, après la clôture de l'exercice N.\nBriand Matériaux appartient à un groupe dont le chiffre d'affaires mondial hors taxes a été de 640 M€ en N-2, 710 M€ en N-1 et 690 M€ en N (exercices calés sur l'année civile).\nPar ailleurs, le principal fournisseur de Briand, informé de l'enquête, cesse du jour au lendemain de la livrer, après quinze ans de relations régulières, sans préavis écrit.",
+      "sub_questions": [
+        {
+          "id": "q1-qualification",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Comment qualifier les pratiques des trois négociants ?",
+          "options": [
+            "Un abus de position dominante collective, seule qualification possible entre plusieurs entreprises",
+            "Une entente verticale, licite en deçà de 30 % de part de marché",
+            "Une entente horizontale ayant un objet anticoncurrentiel (fixation de prix et répartition de marchés)",
+            "Une simple pratique restrictive de concurrence relevant uniquement de la responsabilité civile"
+          ],
+          "answer": [
+            2
+          ],
+          "multiple": false,
+          "explanation": "Des concurrents qui fixent des prix et se répartissent des marchés commettent une entente horizontale ayant un objet anticoncurrentiel (C. com. art. L. 420-1) : option 3. La position dominante collective (option 1) suppose une domination du marché, absente avec 8 % de part de marché. L'entente n'est pas verticale (option 2) : les trois entreprises sont au même stade de distribution. Les pratiques restrictives de l'article L. 442-1 (option 4) concernent les relations commerciales bilatérales, pas la concertation entre concurrents."
+        },
+        {
+          "id": "q2-deminimis",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "Leur part de marché cumulée étant inférieure à 10 %, les négociants peuvent invoquer la règle de minimis pour échapper aux poursuites.",
+          "answer": false,
+          "explanation": "La procédure de minimis (C. com. art. L. 464-6-1) est exclue pour les restrictions caractérisées, dont la fixation des prix et la répartition des marchés."
+        },
+        {
+          "id": "q3-plafond",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez le montant maximal de la sanction pécuniaire encourue par Briand Matériaux, en millions d'euros, en retenant le chiffre d'affaires du groupe.",
+          "expected_value": 71,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "M€",
+          "decimals": 1,
+          "explanation": "Plafond : 10 % du chiffre d'affaires mondial HT le plus élevé réalisé au cours d'un des exercices clos depuis l'exercice précédant celui au cours duquel les pratiques ont été mises en œuvre (C. com. art. L. 464-2, I). Pratiques mises en œuvre en N-1 : exercices de référence N-2, N-1 et N. Maximum : 710 M€ ; plafond = 10 % × 710 = 71 M€. Retenir le dernier exercice (69 M€) ou N-2 (64 M€) est une erreur."
+        },
+        {
+          "id": "q4-strategie",
+          "kind": "open",
+          "points": 3,
+          "prompt": "Quelle stratégie Briand Matériaux peut-elle adopter face à l'enquête, et de quels recours dispose-t-elle contre son fournisseur ?",
+          "model_answer": "Face à l'enquête, Briand peut solliciter le bénéfice de la procédure de clémence (C. com. art. L. 464-2, IV) : en apportant des éléments de preuve ayant une valeur ajoutée significative, et en coopérant pleinement, elle peut obtenir une réduction de sanction, l'exonération totale étant en principe réservée au premier demandeur avant que l'Autorité ne dispose d'éléments suffisants. Elle peut aussi, en ne contestant pas les griefs notifiés, recourir à la procédure de transaction (C. com. art. L. 464-2, III), qui fixe la sanction entre un minimum et un maximum proposés par le rapporteur général. Contre son fournisseur, la cessation sans préavis écrit d'une relation commerciale établie depuis quinze ans constitue une rupture brutale (C. com. art. L. 442-1, II), qui engage la responsabilité de son auteur : Briand peut demander réparation du préjudice (marge perdue pendant la durée du préavis qui aurait été raisonnable) devant une juridiction spécialisée. Le fournisseur pourrait invoquer une inexécution grave, mais la seule existence d'une enquête ne caractérise pas une faute de Briand à son égard.",
+          "key_points": [
+            "Clémence : réduction ou exonération de sanction en contrepartie d'éléments de preuve et d'une coopération",
+            "Rupture brutale d'une relation commerciale établie (L. 442-1, II) : préavis écrit insuffisant",
+            "Réparation du préjudice : marge brute perdue sur la durée du préavis raisonnable",
+            "Juridictions spécialisées pour le contentieux des pratiques restrictives"
+          ]
+        }
+      ],
+      "total_points": 8,
+      "explanation": "Le cas articule qualification d'une entente horizontale, exclusion du seuil de minimis pour les restrictions caractérisées, calcul du plafond de sanction et distinction entre pratiques anticoncurrentielles (atteinte au marché, Autorité de la concurrence) et pratiques restrictives (responsabilité civile, juge).",
+      "source_ref": "C. com. art. L. 420-1, L. 442-1, L. 464-2 et L. 464-6-1",
+      "verified": true,
+      "estimated_seconds": 720
+    }
+  ]
+}

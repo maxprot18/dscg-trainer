@@ -1,0 +1,105 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-ethique-rgpd-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "rgpd-conformite-numerique",
+      "difficulty": 1,
+      "tags": [
+        "violation de données",
+        "notification",
+        "CNIL"
+      ],
+      "statement": "Le lundi à 9 heures, une PME découvre qu'un pirate a dérobé le fichier de ses clients (noms, adresses, coordonnées bancaires). Dans quel délai doit-elle, en principe, notifier cette violation de données à la CNIL ?",
+      "options": [
+        "Dans les meilleurs délais et, si possible, 72 heures au plus tard après en avoir pris connaissance",
+        "Dans un délai d'un mois",
+        "Dans un délai de 15 jours ouvrés",
+        "Aucune notification n'est due si la PME emploie moins de 250 salariés"
+      ],
+      "answer": [
+        0
+      ],
+      "multiple": false,
+      "explanation": "Le responsable du traitement notifie la violation à l'autorité de contrôle dans les meilleurs délais et, si possible, 72 heures au plus tard après en avoir pris connaissance, sauf si la violation n'est pas susceptible d'engendrer un risque pour les droits et libertés des personnes (RGPD art. 33) : option 1. Le délai d'un mois (option 2) est celui de la réponse aux demandes d'exercice des droits (art. 12). Le délai de 15 jours (option 3) n'existe pas. Aucune dispense liée à l'effectif n'est prévue (option 4). Le vol de coordonnées bancaires présentant un risque élevé, les clients doivent aussi être informés (art. 34).",
+      "source_ref": "Règlement (UE) 2016/679, art. 33 et 34",
+      "estimated_seconds": 45,
+      "verified": true
+    },
+    {
+      "id": "ue1-ethique-rgpd-0002",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "rgpd-conformite-numerique",
+      "difficulty": 2,
+      "tags": [
+        "registre des traitements",
+        "dispense",
+        "moins de 250 salariés"
+      ],
+      "statement": "Une entreprise de 40 salariés est dispensée de tenir un registre des activités de traitement pour la gestion de la paie de son personnel.",
+      "answer": false,
+      "justification": "La dispense des structures de moins de 250 salariés ne s'applique pas aux traitements qui ne sont pas occasionnels, comme la paie (RGPD art. 30, §5).",
+      "explanation": "L'article 30, §5, du RGPD dispense de registre les entreprises de moins de 250 salariés, sauf si le traitement est susceptible de comporter un risque pour les droits et libertés des personnes, s'il n'est pas occasionnel, ou s'il porte sur des données sensibles ou relatives aux condamnations. La paie, traitement permanent qui inclut en outre des données relatives à la santé (arrêts maladie), doit figurer au registre.",
+      "source_ref": "Règlement (UE) 2016/679, art. 30, §5",
+      "estimated_seconds": 45,
+      "verified": true
+    },
+    {
+      "id": "ue1-ethique-rgpd-0003",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "rgpd-conformite-numerique",
+      "difficulty": 1,
+      "tags": [
+        "sanctions",
+        "amende administrative",
+        "plafond"
+      ],
+      "statement": "La CNIL sanctionne la SA Datavia pour défaut de sécurité de ses traitements (RGPD art. 32) et absence de notification d'une violation de données (art. 33), manquements passibles de l'amende de l'article 83, §4 : jusqu'à 10 M€ ou, pour une entreprise, jusqu'à 2 % du chiffre d'affaires annuel mondial total de l'exercice précédent, le montant le plus élevé étant retenu. Le chiffre d'affaires mondial de Datavia pour l'exercice précédent s'élève à 300 M€. Calculez le montant maximal de l'amende encourue, en millions d'euros.",
+      "expected_value": 10,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "M€",
+      "decimals": 1,
+      "explanation": "Plafond proportionnel : 2 % × 300 = 6 M€. Plafond fixe : 10 M€. Le montant le plus élevé est retenu : 10 M€.\nErreurs classiques : retenir 6 M€ (oublier que le plus élevé des deux s'applique) ou appliquer le barème de l'article 83, §5 (20 M€ ou 4 %), réservé aux manquements aux principes, aux bases légales, aux droits des personnes et aux règles de transfert.",
+      "source_ref": "Règlement (UE) 2016/679, art. 83, §4 et §5",
+      "estimated_seconds": 120,
+      "verified": true
+    },
+    {
+      "id": "ue1-ethique-rgpd-0004",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "rgpd-conformite-numerique",
+      "difficulty": 2,
+      "tags": [
+        "bases légales",
+        "obligation légale",
+        "données des salariés"
+      ],
+      "statement": "Sur quelle base légale du RGPD repose la transmission mensuelle, par l'employeur, des données de paie de ses salariés aux organismes sociaux via la déclaration sociale nominative (DSN) ?",
+      "options": [
+        "Le consentement de chaque salarié",
+        "L'intérêt légitime de l'employeur",
+        "Le respect d'une obligation légale à laquelle l'employeur est soumis",
+        "La sauvegarde des intérêts vitaux des salariés"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "La DSN est imposée par la loi (Code de la sécurité sociale) : le traitement est nécessaire au respect d'une obligation légale à laquelle le responsable est soumis (RGPD art. 6, §1, c) : option 3. Le consentement (option 1) est inadapté, car il doit être libre et révocable alors que le salarié ne peut pas s'opposer à la déclaration et se trouve en situation de subordination. L'intérêt légitime (option 2) ne se justifie pas lorsqu'une obligation légale fonde le traitement. Les intérêts vitaux (option 4) visent les situations où la vie de la personne est en jeu.",
+      "source_ref": "Règlement (UE) 2016/679, art. 6, §1, et art. 7",
+      "estimated_seconds": 60,
+      "verified": true
+    }
+  ]
+}

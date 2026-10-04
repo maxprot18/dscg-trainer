@@ -1,0 +1,221 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-eval-anr-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "evaluation-patrimoniale-anr",
+      "difficulty": 1,
+      "tags": [
+        "ANC",
+        "actif fictif"
+      ],
+      "source_ref": "Approche patrimoniale : ANC = capitaux propres comptables − actif fictif (frais d’établissement, primes de remboursement des obligations, frais d’émission d’emprunt)",
+      "estimated_seconds": 45,
+      "statement": "Pour passer des capitaux propres comptables à l’actif net comptable (ANC) d’une société, lequel des postes suivants faut-il retrancher ?",
+      "options": [
+        "Les subventions d’investissement",
+        "Le report à nouveau créditeur",
+        "Les provisions réglementées",
+        "Les frais d’établissement inscrits à l’actif"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Les frais d’établissement sont un actif fictif (« non-valeur ») : ils n’ont aucune valeur de cession et sont éliminés pour obtenir l’ANC (option 4). Les subventions d’investissement (option 1) et les provisions réglementées (option 3) font partie des capitaux propres comptables ; dans l’ANCC, seul l’impôt latent qu’elles supportent est traité comme une dette, elles ne sont pas retranchées en totalité. Le report à nouveau créditeur (option 2) est une composante ordinaire des capitaux propres."
+    },
+    {
+      "id": "ue2-eval-anr-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "evaluation-patrimoniale-anr",
+      "difficulty": 1,
+      "tags": [
+        "ANCC",
+        "fiscalité latente",
+        "plus-value latente"
+      ],
+      "source_ref": "Approche patrimoniale : écarts de réévaluation retenus nets d’impôt latent ; taux normal de l’IS de 25 % (CGI art. 219)",
+      "estimated_seconds": 60,
+      "statement": "Un terrain figure au bilan d’une société pour 200 000 € ; sa valeur de marché est estimée à 500 000 €. Le taux d’IS est de 25 % et l’évaluateur tient compte de la fiscalité latente. De combien la réévaluation de ce terrain augmente-t-elle l’actif net comptable corrigé (ANCC) ?",
+      "options": [
+        "300 000 €",
+        "500 000 €",
+        "225 000 €",
+        "75 000 €"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Plus-value latente = 500 000 − 200 000 = 300 000 € ; impôt latent = 300 000 × 25 % = 75 000 € ; augmentation de l’ANCC = 300 000 × (1 − 0,25) = 225 000 € (option 3). L’option 1 ignore la fiscalité latente ; l’option 2 ajoute la valeur de marché totale alors que le terrain est déjà inclus pour 200 000 € dans les capitaux propres ; l’option 4 correspond au seul impôt latent."
+    },
+    {
+      "id": "ue2-eval-anr-0003",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "evaluation-patrimoniale-anr",
+      "difficulty": 2,
+      "multiple": true,
+      "tags": [
+        "actif fictif",
+        "ANC"
+      ],
+      "source_ref": "Approche patrimoniale : élimination de l’actif fictif (frais d’établissement, primes de remboursement des obligations) ; PCG, comptes 201 et 169",
+      "estimated_seconds": 75,
+      "statement": "Parmi les éléments suivants inscrits à l’actif du bilan, lesquels constituent un actif fictif à éliminer pour calculer l’actif net comptable corrigé ? (plusieurs réponses possibles)",
+      "options": [
+        "Les frais d’établissement (compte 201)",
+        "Un brevet acquis dont la valeur de marché est attestée par une expertise",
+        "Les primes de remboursement des obligations (compte 169)",
+        "Les créances clients jugées recouvrables"
+      ],
+      "answer": [
+        0,
+        2
+      ],
+      "explanation": "Les frais d’établissement (option 1) et les primes de remboursement des obligations (option 3) sont des charges étalées qui n’ont aucune valeur de réalisation : ce sont des non-valeurs, éliminées de l’actif net. Le brevet (option 2) est un actif réel, retenu à sa valeur expertisée (éventuelle plus-value nette d’impôt latent). Les créances clients recouvrables (option 4) sont des actifs réels retenus à leur valeur probable de recouvrement."
+    },
+    {
+      "id": "ue2-eval-anr-0004",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "evaluation-patrimoniale-anr",
+      "difficulty": 1,
+      "tags": [
+        "ANCC",
+        "actif fictif"
+      ],
+      "source_ref": "Approche patrimoniale : élimination de l’actif fictif pour le calcul de l’ANC et de l’ANCC",
+      "estimated_seconds": 40,
+      "statement": "Dans le calcul de l’actif net comptable corrigé, les frais d’établissement inscrits à l’actif sont conservés pour leur valeur nette comptable.",
+      "answer": false,
+      "justification": "Faux : les frais d’établissement sont un actif fictif, sans valeur de cession ; ils sont éliminés de l’actif net.",
+      "explanation": "L’ANCC repose sur la valeur réelle des éléments du patrimoine. Les frais d’établissement, comme les primes de remboursement des obligations, sont des charges étalées sans valeur de réalisation : on les retranche des capitaux propres comptables dès le calcul de l’ANC. Seuls les actifs réels (corporels, incorporels identifiables, financiers, circulants) sont conservés et réévalués."
+    },
+    {
+      "id": "ue2-eval-anr-0005",
+      "type": "journal_entry",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "evaluation-patrimoniale-anr",
+      "difficulty": 2,
+      "tags": [
+        "titres de participation",
+        "frais d’acquisition",
+        "incorporation au coût"
+      ],
+      "source_ref": "PCG, coût d’entrée des titres immobilisés : prix d’achat + frais d’acquisition sur option (règl. ANC 2014-03) ; CGI art. 209, VII ; comptes 261, 44566, 512",
+      "estimated_seconds": 240,
+      "statement": "Le 1er mars N, la société Hexalis acquiert 100 % des actions de la société Darne. Le prix, fixé à partir de l’actif net comptable corrigé de Darne, est de 2 100 000 €. Hexalis supporte en outre des honoraires d’avocat et d’évaluateur de 45 000 € HT (TVA 20 %, récupérable) et des droits d’enregistrement de 2 100 €. Hexalis a opté pour l’incorporation des frais d’acquisition au coût des titres. Les titres sont classés en titres de participation (compte 261). Tout est réglé par banque le jour même. Passez l’écriture d’acquisition chez Hexalis.",
+      "date": "01/03/N",
+      "entries": [
+        {
+          "account": "261",
+          "label": "Titres de participation (prix + frais incorporés)",
+          "debit": 2147100,
+          "credit": 0
+        },
+        {
+          "account": "44566",
+          "label": "TVA déductible sur autres biens et services",
+          "debit": 9000,
+          "credit": 0
+        },
+        {
+          "account": "512",
+          "label": "Banque",
+          "debit": 0,
+          "credit": 2156100
+        }
+      ],
+      "explanation": "Coût d’entrée des titres = prix d’achat 2 100 000 + honoraires HT 45 000 + droits d’enregistrement 2 100 = 2 147 100 € (option d’incorporation des frais). La TVA sur honoraires (45 000 × 20 % = 9 000 €), récupérable, est inscrite au compte 44566 et ne fait pas partie du coût. Décaissement total = 2 147 100 + 9 000 = 2 156 100 €. Sur le plan fiscal, les frais incorporés au coût de titres de participation sont déduits par voie d’amortissement dérogatoire sur cinq ans (CGI art. 209, VII). Sans l’option, les honoraires iraient en 6226 et les droits en 6354."
+    },
+    {
+      "id": "ue2-eval-anr-0006",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "verified": true,
+      "notion": "evaluation-patrimoniale-anr",
+      "difficulty": 3,
+      "tags": [
+        "ANC",
+        "ANCC",
+        "fiscalité latente",
+        "passif latent"
+      ],
+      "source_ref": "Approche patrimoniale : ANC = capitaux propres − actif fictif ; ANCC = ANC + écarts de réévaluation nets d’impôt − impôt latent sur subventions d’investissement ; taux d’IS 25 % (CGI art. 219)",
+      "estimated_seconds": 900,
+      "title": "Actif net comptable corrigé de la société Bréval",
+      "context": "La société Bréval, fabricant de menuiseries, fait l’objet d’une offre de rachat. Au 31/12/N, ses capitaux propres comptables s’élèvent à 4 200 000 € : capital 1 500 000 €, réserves 2 100 000 €, résultat 450 000 €, subventions d’investissement 150 000 €. Le capital est divisé en 15 000 actions.\nL’actif comprend des frais d’établissement (valeur nette 60 000 €) et des primes de remboursement des obligations (40 000 €).\nL’expertise fournit les informations suivantes :\n- terrain : valeur nette comptable 500 000 €, valeur de marché 1 300 000 € ;\n- constructions : valeur nette comptable 1 200 000 €, valeur d’utilité 1 500 000 € ;\n- stocks : dépréciation complémentaire nécessaire de 80 000 € ;\n- un litige prud’homal non provisionné justifie une provision de 120 000 €, fiscalement déductible.\nHypothèses : taux d’IS 25 % ; les écarts de réévaluation, la dépréciation des stocks et la provision sont pris nets d’impôt latent ; l’élimination de l’actif fictif se fait sans effet d’impôt ; l’impôt latent sur les subventions d’investissement (25 % de leur montant) est traité comme une dette. Arrondir à l’euro.",
+      "sub_questions": [
+        {
+          "id": "anc",
+          "kind": "numeric",
+          "prompt": "Calculez l’actif net comptable (ANC) de Bréval, en euros.",
+          "points": 3,
+          "expected_value": 4100000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "ANC = 4 200 000 − 60 000 (frais d’établissement) − 40 000 (primes de remboursement) = 4 100 000 €."
+        },
+        {
+          "id": "ancc",
+          "kind": "numeric",
+          "prompt": "Calculez l’actif net comptable corrigé (ANCC) de Bréval, en euros.",
+          "points": 7,
+          "expected_value": 4737500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Corrections brutes : terrain +800 000, constructions +300 000, stocks −80 000, provision −120 000, soit +900 000 € ; nettes d’impôt : 900 000 × 0,75 = 675 000 €. Impôt latent sur subventions : 150 000 × 25 % = 37 500 €. ANCC = 4 100 000 + 675 000 − 37 500 = 4 737 500 €."
+        },
+        {
+          "id": "valeur-action",
+          "kind": "numeric",
+          "prompt": "Déduisez-en la valeur patrimoniale d’une action Bréval, en euros, arrondie au centime.",
+          "points": 3,
+          "expected_value": 315.83,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.05
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "4 737 500 / 15 000 = 315,83 € par action."
+        },
+        {
+          "id": "limites",
+          "kind": "open",
+          "prompt": "L’acquéreur envisage de céder le terrain dès le rachat. Expliquez l’incidence de cette intention sur le traitement de la fiscalité latente, puis présentez les limites de l’approche patrimoniale pour évaluer Bréval.",
+          "points": 7,
+          "model_answer": "Si le terrain doit être cédé rapidement, la plus-value latente sera effectivement imposée : la déduction de l’impôt latent (800 000 × 25 % = 200 000 €) est alors pleinement justifiée, voire certaine dans son montant et son échéance. À l’inverse, pour un actif d’exploitation conservé durablement, l’impôt latent ne sera payé qu’à une échéance lointaine et incertaine, d’où des pratiques qui l’actualisent ou ne le retiennent que partiellement. Limites de l’approche : elle donne une valeur statique à une date, sans tenir compte de la capacité bénéficiaire future ni des actifs incorporels non identifiés (savoir-faire, clientèle, organisation) ; elle dépend fortement des expertises (valeur de marché, valeur d’utilité) ; elle convient surtout aux sociétés à forte intensité d’actifs ou aux holdings. Pour Bréval, elle doit être complétée par une méthode de rendement ou mixte (goodwill) et par des flux actualisés.",
+          "key_points": [
+            "Cession prévue : l’impôt latent sur la plus-value du terrain devient certain et doit être déduit",
+            "Actif conservé : impôt latent lointain et incertain, parfois actualisé ou non retenu en totalité",
+            "Approche statique qui ignore la rentabilité future et le goodwill",
+            "Dépendance aux expertises ; à compléter par des méthodes de rendement, mixtes ou DCF"
+          ]
+        }
+      ],
+      "total_points": 20,
+      "explanation": "Démarche : (1) ANC = capitaux propres − actif fictif = 4 100 000 € ; (2) ANCC = ANC + corrections de valeur nettes d’impôt (675 000 €) − impôt latent sur subventions (37 500 €) = 4 737 500 € ; (3) valeur par action ≈ 315,83 €. Erreurs classiques : oublier la fiscalité latente sur les corrections (on obtiendrait 4 962 500 €) ou omettre le passif latent du litige."
+    }
+  ]
+}

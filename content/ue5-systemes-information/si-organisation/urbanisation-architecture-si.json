@@ -1,0 +1,104 @@
+{
+  "exercises": [
+    {
+      "id": "ue5-siorg-urba-0001",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "urbanisation-architecture-si",
+      "difficulty": 1,
+      "tags": [
+        "urbanisation",
+        "cartographie",
+        "vue fonctionnelle"
+      ],
+      "statement": "Dans la cartographie d'un SI urbanisé, dans quelle vue se trouve le découpage du système en zones, quartiers et îlots ?",
+      "options": [
+        "La vue applicative",
+        "La vue technique",
+        "La vue métier",
+        "La vue fonctionnelle"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Le découpage en zones, quartiers et îlots (blocs fonctionnels) appartient à la vue fonctionnelle, qui décrit les fonctions du SI indépendamment des logiciels qui les réalisent. La vue applicative (option 1) recense les applications et les flux qu'elles échangent. La vue technique (option 2) décrit l'infrastructure : serveurs, réseaux, bases de données. La vue métier (option 3) décrit les processus, activités et acteurs de l'organisation ; c'est elle qui guide le découpage fonctionnel.",
+      "source_ref": "Démarche d'urbanisation du SI (métaphore de la cité) : vues métier, fonctionnelle, applicative et technique",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue5-siorg-urba-0002",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "urbanisation-architecture-si",
+      "difficulty": 2,
+      "tags": [
+        "interfaces",
+        "point à point",
+        "ESB",
+        "couplage"
+      ],
+      "statement": "Une entreprise exploite 8 applications qui doivent toutes pouvoir échanger des données entre elles. Combien d'interfaces faut-il au maximum avec des liaisons point à point bidirectionnelles, et combien de connecteurs avec un bus d'échanges (ESB) auquel chaque application est reliée ?",
+      "options": [
+        "28 interfaces en point à point, 8 connecteurs avec le bus",
+        "56 interfaces en point à point, 8 connecteurs avec le bus",
+        "28 interfaces en point à point, 1 connecteur avec le bus",
+        "64 interfaces en point à point, 16 connecteurs avec le bus"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Avec des liaisons point à point bidirectionnelles, chaque paire d'applications nécessite une interface : n(n − 1) ÷ 2 = 8 × 7 ÷ 2 = 28. Avec un bus, chaque application a un seul connecteur vers le bus, soit 8 connecteurs. L'option 2 compte chaque paire deux fois (8 × 7 = 56, un sens par interface), ce qui contredit l'hypothèse de liaisons bidirectionnelles. L'option 3 oublie que chaque application doit être raccordée au bus. L'option 4 retient n² = 64 (une application n'échange pas avec elle-même) et double les connecteurs. Ce calcul illustre la règle d'urbanisation qui préfère les échanges normalisés par un bus aux liaisons multiples point à point.",
+      "source_ref": "Démarche d'urbanisation du SI : règles de découplage et d'échanges normalisés (EAI, ESB) ; nombre de paires = n(n − 1) ÷ 2",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue5-siorg-urba-0003",
+      "type": "true_false",
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "urbanisation-architecture-si",
+      "difficulty": 2,
+      "tags": [
+        "référentiel",
+        "données de référence",
+        "MDM"
+      ],
+      "statement": "Selon les principes d'urbanisation, une donnée de référence telle que la fiche client doit avoir une source unique, les autres applications en recevant des copies synchronisées.",
+      "answer": true,
+      "justification": "Vrai : chaque donnée de référence a un propriétaire et une source uniques (référentiel ou MDM), qui la diffuse aux applications utilisatrices.",
+      "explanation": "Si chaque application créait et modifiait sa propre fiche client, on obtiendrait des doublons et des informations contradictoires (adresses, conditions de paiement) et des rapprochements coûteux. L'urbanisation impose donc une source unique par donnée de référence (référentiel client, article, fournisseur), gérée par un propriétaire désigné ; les autres applications consomment cette donnée par des échanges normalisés. C'est le rôle des outils de gestion des données de référence (MDM).",
+      "source_ref": "Démarche d'urbanisation du SI : règle du référentiel unique par donnée de référence (gestion des données de référence, MDM)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue5-siorg-urba-0004",
+      "type": "numeric",
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "urbanisation-architecture-si",
+      "difficulty": 2,
+      "tags": [
+        "disponibilité",
+        "redondance",
+        "architecture technique"
+      ],
+      "statement": "Le site de commande en ligne d'une entreprise repose sur trois éléments, tous indispensables : une couche web composée de deux serveurs identiques fonctionnant en redondance (un seul suffit pour assurer le service), chacun disponible à 99 % ; un serveur d'application disponible à 99,5 % ; un serveur de base de données disponible à 99,8 %. Les pannes sont supposées indépendantes. Calculez la disponibilité globale du service (en %, arrondie à deux décimales).",
+      "expected_value": 99.29,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.05
+      },
+      "unit": "%",
+      "decimals": 2,
+      "explanation": "Couche web redondante (parallèle) : 1 − (1 − 0,99)² = 1 − 0,0001 = 0,9999. Les trois éléments sont en série : A = 0,9999 × 0,995 × 0,998 = 0,99291, soit 99,29 %. Erreur classique : ignorer la redondance et multiplier 0,99 × 0,995 × 0,998 = 98,31 %. La redondance de la couche web la rend quasi négligeable dans les indisponibilités ; c'est désormais le serveur d'application qui limite la disponibilité.",
+      "source_ref": "Architecture technique du SI : disponibilité d'éléments en série (produit des disponibilités) et en parallèle (1 − produit des indisponibilités)",
+      "verified": true,
+      "estimated_seconds": 180
+    }
+  ]
+}

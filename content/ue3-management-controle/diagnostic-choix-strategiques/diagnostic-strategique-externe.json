@@ -1,0 +1,200 @@
+{
+  "exercises": [
+    {
+      "id": "ue3-diag-externe-0001",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "diagnostic-strategique-externe",
+      "difficulty": 1,
+      "tags": [
+        "PESTEL",
+        "macro-environnement"
+      ],
+      "statement": "Le règlement général sur la protection des données (RGPD) encadre la collecte et l'exploitation des données personnelles des clients d'un site de vente en ligne. Dans quelle dimension de la grille PESTEL ce facteur se classe-t-il ?",
+      "options": [
+        "Politique",
+        "Technologique",
+        "Légale",
+        "Socioculturelle"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'option 3 est exacte : le RGPD est un règlement européen, c'est-à-dire une règle de droit qui s'impose à l'entreprise ; il relève de la dimension Légale de la grille PESTEL. L'option 1 est fausse : la dimension Politique vise les choix des pouvoirs publics (stabilité, politique fiscale, aides, orientations commerciales), pas le contenu d'une norme juridique en vigueur. L'option 2 est fausse : la collecte de données est rendue possible par la technologie, mais le fait décrit est l'encadrement juridique de cette collecte. L'option 4 est fausse : les attentes des consommateurs en matière de vie privée relèvent du socioculturel, alors que l'énoncé décrit une obligation réglementaire.",
+      "source_ref": "Programme DSCG UE3 (arrêté du 4 août 2025), diagnostic externe ; grille PESTEL",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue3-diag-externe-0002",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "diagnostic-strategique-externe",
+      "difficulty": 2,
+      "tags": [
+        "cinq forces",
+        "pouvoir des fournisseurs"
+      ],
+      "statement": "Un fabricant d'équipements industriels analyse le pouvoir de négociation de ses fournisseurs. Quelle situation renforce ce pouvoir ?",
+      "options": [
+        "Les fournisseurs sont nombreux et vendent un produit standardisé",
+        "Le fabricant peut changer de fournisseur sans coût ni délai de requalification",
+        "Le fabricant représente la majeure partie du chiffre d'affaires de chacun de ses fournisseurs",
+        "Les fournisseurs sont peu nombreux, le composant n'a pas de substitut et changer de fournisseur impose une longue requalification"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'option 4 est exacte : un fournisseur est en position de force quand il est peu substituable (peu de concurrents, composant indispensable sans équivalent) et que changer de fournisseur coûte cher au client (requalification, outillages). L'option 1 est fausse : des fournisseurs nombreux vendant un produit standardisé sont mis en concurrence, leur pouvoir est faible. L'option 2 est fausse : l'absence de coût de changement affaiblit le fournisseur. L'option 3 est fausse : lorsque le client représente l'essentiel du chiffre d'affaires du fournisseur, c'est le fournisseur qui dépend du client ; son pouvoir de négociation diminue.",
+      "source_ref": "M. Porter, Competitive Strategy (1980), modèle des cinq forces",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue3-diag-externe-0003",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "diagnostic-strategique-externe",
+      "difficulty": 2,
+      "tags": [
+        "groupes stratégiques",
+        "barrières à la mobilité"
+      ],
+      "statement": "Dans l'hôtellerie, une chaîne d'hôtels économiques envisage de rejoindre le groupe stratégique des hôtels de luxe. Quel obstacle constitue une barrière à la mobilité au sens de l'analyse des groupes stratégiques ?",
+      "options": [
+        "La croissance de la demande touristique mondiale",
+        "La réputation haut de gamme à construire et les investissements immobiliers spécifiques (emplacements prestigieux, standing des établissements)",
+        "La concurrence des plateformes de location de logements entre particuliers",
+        "La hausse des taux d'intérêt qui renchérit le financement de tous les hôteliers"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'option 2 est exacte : les barrières à la mobilité sont les obstacles propres au passage d'un groupe stratégique à un autre ; la réputation haut de gamme et les actifs immobiliers spécifiques (emplacements, standing) sont acquis par les hôtels de luxe et longs ou coûteux à reproduire. L'option 1 est fausse : la croissance de la demande est un facteur d'environnement qui concerne tout le secteur, et elle facilite plutôt les déplacements. L'option 3 est fausse : les plateformes de location entre particuliers sont des substituts, une des cinq forces, pas un obstacle au changement de groupe. L'option 4 est fausse : la hausse des taux est un facteur économique du PESTEL qui touche tous les acteurs, quel que soit leur groupe.",
+      "source_ref": "M. Porter, Competitive Strategy (1980), analyse des groupes stratégiques ; R. Caves et M. Porter (1977), barrières à la mobilité",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue3-diag-externe-0004",
+      "type": "true_false",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "diagnostic-strategique-externe",
+      "difficulty": 1,
+      "tags": [
+        "cinq forces",
+        "pouvoirs publics"
+      ],
+      "statement": "Dans le modèle initial des cinq forces de Porter, l'État constitue une sixième force à part entière.",
+      "answer": false,
+      "justification": "Faux : dans le modèle initial, l'État n'est pas une force ; il agit sur chacune des cinq forces (réglementation, barrières à l'entrée, commande publique).",
+      "explanation": "Dans le modèle de 1980, les cinq forces sont la rivalité entre concurrents, la menace des entrants, la menace des substituts et les pouvoirs de négociation des clients et des fournisseurs. Les pouvoirs publics y apparaissent comme un facteur qui modifie ces forces : une réglementation peut élever les barrières à l'entrée, une commande publique accroît le pouvoir d'un client, etc. Certains auteurs ont proposé ensuite d'ajouter une sixième force (l'État, ou les complémenteurs), mais ce n'est pas le modèle initial.",
+      "source_ref": "M. Porter, Competitive Strategy (1980), modèle des cinq forces",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue3-diag-externe-0005",
+      "type": "numeric",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "diagnostic-strategique-externe",
+      "difficulty": 2,
+      "tags": [
+        "taux de croissance",
+        "TCAM",
+        "attractivité du marché"
+      ],
+      "statement": "Le marché français des vélos à assistance électrique est passé de 420 M€ de ventes en 2021 à 560 M€ en 2025. Calculez le taux de croissance annuel moyen (TCAM) du marché sur la période, en %, arrondi à deux décimales.",
+      "expected_value": 7.46,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "decimals": 2,
+      "explanation": "TCAM = (V₂₀₂₅ ÷ V₂₀₂₁)^(1/4) − 1 = (560 ÷ 420)^(0,25) − 1 = 1,33333^(0,25) − 1 ≈ 0,07457, soit 7,46 % par an. Il y a 4 années de croissance entre 2021 et 2025 (pas 5). Erreur classique : diviser la croissance totale de 33,33 % par 4, ce qui donne 8,33 % et surestime le rythme annuel car les croissances se composent.",
+      "source_ref": "Programme DSCG UE3 (arrêté du 4 août 2025), diagnostic externe ; taux de croissance annuel moyen (moyenne géométrique)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue3-diag-externe-0006",
+      "type": "case_study",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "diagnostic-strategique-externe",
+      "difficulty": 3,
+      "tags": [
+        "PESTEL",
+        "cinq forces",
+        "concentration",
+        "IHH"
+      ],
+      "title": "Cyclonia : diagnostic externe du marché des vélos cargo",
+      "context": "Cyclonia, PME lyonnaise, assemble des vélos cargo électriques destinés aux familles et aux artisans. Elle étudie l'attractivité de son marché en France.\n\nDonnées sectorielles (parts de marché en valeur, 2025) : Velkar 30 %, Cargomax 25 %, Cyclonia 20 %, Bakfi 15 %, Trans'Roule 10 %. Aucun autre acteur n'est significatif.\n\nInformations recueillies :\n- les moteurs et batteries proviennent de deux fabricants mondiaux qui fournissent à eux seuls 85 % du marché ; changer de motorisation impose de reconcevoir le cadre ;\n- deux enseignes spécialisées réalisent 70 % des ventes aux particuliers et négocient des remises croissantes ;\n- plusieurs métropoles développent des pistes cyclables larges et restreignent la circulation des voitures en centre-ville ;\n- les familles urbaines renoncent de plus en plus à une seconde voiture ;\n- les constructeurs automobiles lancent de petits utilitaires électriques et l'autopartage se développe ;\n- l'industrialisation d'un vélo cargo demande des investissements modérés, mais l'accès aux deux enseignes est difficile pour un nouveau venu ;\n- le marché croît d'environ 12 % par an.",
+      "sub_questions": [
+        {
+          "id": "q1-ihh",
+          "kind": "numeric",
+          "prompt": "Calculez l'indice de Herfindahl-Hirschman (IHH) du marché, parts exprimées en pourcentage.",
+          "points": 2,
+          "expected_value": 2250,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "decimals": 0,
+          "explanation": "IHH = 30² + 25² + 20² + 15² + 10² = 900 + 625 + 400 + 225 + 100 = 2 250 (sur un maximum de 10 000). Le CR4 vaut 30 + 25 + 20 + 15 = 90 % : le marché est concentré, avec cinq acteurs de taille comparable, ce qui nourrit une rivalité directe."
+        },
+        {
+          "id": "q2-pestel",
+          "kind": "mcq",
+          "prompt": "Dans quelle dimension PESTEL classer le renoncement croissant des familles urbaines à une seconde voiture ?",
+          "points": 2,
+          "options": [
+            "Économique",
+            "Socioculturelle",
+            "Écologique",
+            "Politique"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "L'option 2 est exacte : il s'agit d'une évolution des modes de vie et des comportements de consommation, qui relève du socioculturel. L'option 1 est fausse : le coût de la voiture peut en être une cause, mais le fait décrit est un changement de comportement. L'option 3 est fausse : la dimension écologique vise les contraintes et enjeux environnementaux (climat, ressources). L'option 4 est fausse : les politiques des métropoles (pistes, restrictions) sont un autre fait de l'énoncé, distinct du comportement des ménages."
+        },
+        {
+          "id": "q3-pouvoir-clients",
+          "kind": "true_false",
+          "prompt": "La concentration de la distribution (deux enseignes réalisant 70 % des ventes aux particuliers) renforce le pouvoir de négociation des clients de Cyclonia.",
+          "points": 2,
+          "answer": true,
+          "explanation": "Vrai : pour les assembleurs, les clients directs sont les distributeurs. Concentrés et incontournables, ils peuvent exiger des remises (comme l'énoncé le constate) et menacer de déréférencer un fabricant."
+        },
+        {
+          "id": "q4-synthese",
+          "kind": "open",
+          "prompt": "Analysez les cinq forces du secteur à partir de l'énoncé et concluez sur son attractivité pour Cyclonia.",
+          "points": 4,
+          "model_answer": "Rivalité : forte malgré la croissance, car cinq acteurs de taille proche (IHH 2 250, aucun leader dominant) se disputent les mêmes distributeurs. Entrants : menace modérée ; les investissements sont accessibles, mais l'accès à une distribution très concentrée constitue une barrière. Substituts : menace réelle et croissante (petits utilitaires électriques pour les artisans, autopartage pour les familles). Clients (distributeurs) : pouvoir élevé, deux enseignes font 70 % des ventes et imposent des remises. Fournisseurs : pouvoir élevé, deux motoristes détiennent 85 % du marché et les coûts de changement sont forts (reconception du cadre). Le macro-environnement est en revanche porteur : politiques urbaines favorables, évolution des modes de vie, croissance de 12 % par an. Conclusion : marché en croissance mais dont une grande partie de la valeur est captée par l'amont et l'aval ; attractivité moyenne. Cyclonia doit desserrer ces contraintes : diversifier ses canaux (vente directe, flottes professionnelles), sécuriser ou diversifier sa motorisation, se différencier pour limiter la rivalité.",
+          "key_points": [
+            "Rivalité forte : acteurs de taille proche, marché concentré (IHH 2 250)",
+            "Pouvoir élevé des distributeurs (70 % des ventes) et des motoristes (85 %, coûts de changement)",
+            "Substituts : utilitaires électriques et autopartage",
+            "Entrants : barrière liée à l'accès à la distribution",
+            "Conclusion nuancée : croissance et PESTEL porteurs, mais valeur captée par l'amont et l'aval ; pistes d'action"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas combine les trois niveaux du diagnostic externe : macro-environnement (PESTEL), structure du secteur (concentration et cinq forces) et conclusion sur l'attractivité, à confronter ensuite au diagnostic interne.",
+      "source_ref": "M. Porter, Competitive Strategy (1980), modèle des cinq forces ; indice de Herfindahl-Hirschman ; grille PESTEL",
+      "verified": true,
+      "estimated_seconds": 720
+    }
+  ]
+}

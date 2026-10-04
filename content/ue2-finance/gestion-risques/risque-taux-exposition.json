@@ -1,0 +1,182 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-risques-expotaux-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "risque-taux-exposition",
+      "difficulty": 1,
+      "tags": [
+        "dette à taux fixe",
+        "risque de valeur"
+      ],
+      "source_ref": "Risque de taux : risque de flux (taux variable) et risque de valeur (taux fixe)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "La société Kerlan a emprunté 5 M€ à taux fixe de 4 % sur dix ans. Deux ans plus tard, les taux de marché baissent à 2,5 %. Quelle est la conséquence pour Kerlan ?",
+      "options": [
+        "Ses charges d’intérêts augmentent",
+        "Ses charges d’intérêts diminuent",
+        "Ses flux d’intérêts sont inchangés, mais elle supporte un coût d’opportunité : la valeur actuelle de sa dette augmente",
+        "Elle subit une perte de change"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "À taux fixe, les intérêts versés ne changent pas (les options 1 et 2 sont fausses). Kerlan supporte un risque de valeur : actualisée au nouveau taux de marché, sa dette vaut davantage, et elle paie 4 % quand ses concurrents empruntent à 2,5 % (coût d’opportunité, option 3). Elle ne pourrait en sortir qu’en remboursant par anticipation, souvent moyennant une indemnité. L’option 4 confond avec le risque de change, absent d’un emprunt en euros."
+    },
+    {
+      "id": "ue2-risques-expotaux-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "risque-taux-exposition",
+      "difficulty": 2,
+      "tags": [
+        "impasse de taux",
+        "taux variable"
+      ],
+      "source_ref": "Impasse de taux = actifs à taux variable − passifs à taux variable ; effet annuel ≈ impasse × Δtaux",
+      "verified": true,
+      "estimated_seconds": 120,
+      "statement": "Le bilan de la société Lanvaux comprend, entre autres : des placements de trésorerie à taux variable de 3 M€ ; des emprunts à taux variable de 8 M€ ; des emprunts à taux fixe de 6 M€ ; des immobilisations de 15 M€. Toutes choses égales par ailleurs, quel est l’effet annuel sur le résultat avant impôt d’une hausse immédiate et durable de 1 point des taux d’intérêt ?",
+      "options": [
+        "+ 50 000 €",
+        "− 50 000 €",
+        "− 80 000 €",
+        "− 140 000 €"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "Seuls les éléments à taux variable modifient les flux : impasse = 3 − 8 = − 5 M€ (position emprunteuse nette). Une hausse de 1 point réduit le résultat d’environ 5 M€ × 1 % = 50 000 € par an (option 2). L’option 1 inverse le sens : une position emprunteuse perd à la hausse. L’option 3 oublie les placements variables, dont le rendement augmente. L’option 4 ajoute à tort la dette à taux fixe, dont les intérêts ne varient pas (elle porte un risque de valeur, non de flux)."
+    },
+    {
+      "id": "ue2-risques-expotaux-0003",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "risque-taux-exposition",
+      "difficulty": 1,
+      "tags": [
+        "duration",
+        "zéro coupon"
+      ],
+      "source_ref": "Duration de Macaulay : D = Σ t × Fₜ (1 + r)⁻ᵗ / P",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "La duration d’une obligation zéro coupon est égale à sa durée de vie résiduelle.",
+      "answer": true,
+      "justification": "Un zéro coupon n’a qu’un seul flux, versé à l’échéance : la moyenne pondérée des dates des flux est cette date.",
+      "explanation": "La duration est la moyenne des dates des flux pondérée par leur valeur actuelle. Pour un zéro coupon, l’unique flux (remboursement et intérêts capitalisés) intervient à l’échéance, qui reçoit donc tout le poids : D = maturité. Pour une obligation à coupons, les coupons intermédiaires raccourcissent la duration en dessous de la maturité ; c’est pourquoi un zéro coupon est, à maturité égale, plus sensible aux taux."
+    },
+    {
+      "id": "ue2-risques-expotaux-0004",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "risque-taux-exposition",
+      "difficulty": 2,
+      "tags": [
+        "sensibilité",
+        "duration",
+        "portefeuille obligataire"
+      ],
+      "source_ref": "Sensibilité = D / (1 + r) ; ΔP ≈ − S × Δr × P",
+      "verified": true,
+      "estimated_seconds": 150,
+      "statement": "La société Mauges détient un portefeuille d’obligations à taux fixe d’une valeur de marché de 1 000 000 €, dont la duration est de 4,6 ans pour un taux actuariel de 5 %. Les taux de marché augmentent de 0,5 point. À l’aide de la sensibilité, estimez la variation de valeur du portefeuille en euros (indiquez le signe moins pour une baisse, arrondi à l’euro).",
+      "expected_value": -21905,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Sensibilité = 4,6 / 1,05 ≈ 4,381. Variation relative ≈ − 4,381 × 0,5 % ≈ − 2,19 %. Variation de valeur ≈ − 0,0219 × 1 000 000 ≈ − 21 905 €. Erreur fréquente : utiliser la duration sans la diviser par (1 + r), soit − 23 000 €. L’approximation linéaire surestime un peu la baisse réelle (convexité)."
+    },
+    {
+      "id": "ue2-risques-expotaux-0005",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "risque-taux-exposition",
+      "difficulty": 3,
+      "tags": [
+        "duration",
+        "immunisation",
+        "réinvestissement"
+      ],
+      "source_ref": "Duration de Macaulay ; sensibilité ; immunisation d’un placement obligataire",
+      "verified": true,
+      "estimated_seconds": 780,
+      "title": "Mutuelle Nérac : placer pour payer dans trois ans",
+      "context": "La mutuelle Nérac doit financer dans environ 2,9 ans la rénovation de son siège. Elle envisage d’acheter des obligations à taux fixe ayant les caractéristiques suivantes :\n- valeur nominale : 1 000 € ;\n- coupon annuel : 4 % (40 € par an), payé en fin d’année ;\n- remboursement in fine au pair dans 3 ans ;\n- taux actuariel du marché : 5 %.\n\nLe trésorier craint une hausse des taux : « Si les taux montent, le prix de nos obligations va baisser et nous aurons moins que prévu ». Un conseiller lui répond qu’en retenant un placement dont la duration correspond à l’horizon, ce risque est neutralisé pour une variation de taux immédiate et unique.\n\nOn arrondira les prix au centime et la duration à deux décimales.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "Calculez le prix de l’obligation au taux actuariel de 5 %, en euros.",
+          "points": 2,
+          "expected_value": 972.77,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.05
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "P = 40 / 1,05 + 40 / 1,05² + 1 040 / 1,05³ = 38,10 + 36,28 + 898,39 ≈ 972,77 €. L’obligation cote sous le pair car son coupon (4 %) est inférieur au taux du marché (5 %)."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "prompt": "Calculez la duration de l’obligation, en années.",
+          "points": 3,
+          "expected_value": 2.88,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.01
+          },
+          "unit": "ans",
+          "decimals": 2,
+          "explanation": "D = (1 × 38,10 + 2 × 36,28 + 3 × 898,39) / 972,77 = (38,10 + 72,56 + 2 695,17) / 972,77 ≈ 2 805,83 / 972,77 ≈ 2,88 ans. Elle est inférieure à la maturité (3 ans) car les coupons sont perçus avant l’échéance."
+        },
+        {
+          "id": "q3",
+          "kind": "mcq",
+          "prompt": "Les taux passent immédiatement de 5 % à 6 % et y restent. Pour un horizon de détention égal à la duration, que se passe-t-il ?",
+          "points": 2,
+          "options": [
+            "La baisse du prix l’emporte : la valeur acquise à l’horizon diminue",
+            "La baisse du prix est compensée par le réinvestissement des coupons à un taux plus élevé : la valeur acquise à l’horizon est pratiquement inchangée",
+            "Le réinvestissement l’emporte nettement : la valeur acquise à l’horizon augmente fortement",
+            "Le prix de l’obligation ne varie pas, car le coupon est fixe"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "À un horizon égal à la duration, l’effet prix (perte en capital à la revente) et l’effet réinvestissement (coupons replacés à 6 %) se compensent : la valeur acquise reste pratiquement égale à celle obtenue à 5 % (environ 1 119,8 € dans les deux cas), option 2. Pour un horizon plus court, l’effet prix dominerait (option 1) ; pour un horizon plus long, l’effet réinvestissement dominerait, sans forte hausse ici (option 3). L’option 4 est fausse : un coupon fixe rend justement le prix sensible aux taux."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "prompt": "Expliquez au trésorier le principe de l’immunisation et ses limites.",
+          "points": 3,
+          "model_answer": "Une hausse des taux fait baisser le prix de l’obligation (effet prix) mais permet de réinvestir les coupons à un taux plus élevé (effet réinvestissement). Ces deux effets jouent en sens contraire ; lorsque l’horizon de placement est égal à la duration (ici 2,88 ans, proche des 2,9 ans visés), ils se compensent et la valeur acquise à l’horizon est protégée contre une variation de taux. Limites : la protection vaut pour une variation immédiate et unique, avec une courbe des taux plate ; la duration diminue avec le temps et change quand les taux varient, ce qui oblige à réajuster le portefeuille ; le risque de défaut de l’émetteur n’est pas couvert. Le trésorier pourrait aussi, plus simplement, acheter un zéro coupon d’échéance égale à son horizon.",
+          "key_points": [
+            "Effet prix et effet réinvestissement jouent en sens inverse",
+            "Ils se compensent quand l’horizon est égal à la duration",
+            "Limites : variation unique, courbe plate, réajustements nécessaires, risque de crédit non couvert",
+            "Alternative : zéro coupon d’échéance égale à l’horizon"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Prix 972,77 € ; duration 2,88 ans ; horizon proche de la duration : placement quasi immunisé (valeur acquise d’environ 1 119,8 € à 5 % comme à 6 %). L’immunisation repose sur la compensation de l’effet prix et de l’effet réinvestissement."
+    }
+  ]
+}

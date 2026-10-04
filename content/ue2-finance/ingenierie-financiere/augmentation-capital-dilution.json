@@ -19,6 +19,265 @@
       "answer": false,
       "justification": "Faux. Cours théorique après opération : (4 × 60 + 1 × 45) / 5 = 285 / 5 = 57 €. DPS = 60 − 57 = 3 €. Autre formulation : DPS = (60 − 45) × N/(N+A) = 15 × 1/5 = 3 €. Il faut répartir l'écart de 15 € sur les 5 actions du nouvel ensemble, pas sur les 4 anciennes.",
       "explanation": "Le DPS compense la perte de valeur subie par l'ancien actionnaire du fait de l'émission en dessous du cours. Après l'opération, 5 actions valent 4 × 60 + 45 = 285 €, soit 57 € l'une : chaque action ancienne perd 3 €, valeur théorique du droit. Vérification : un nouvel investisseur achète 4 DPS (12 €) et paie 45 € pour obtenir une action valant 57 €, soit un coût total de 57 € : il est indifférent."
+    },
+    {
+      "id": "ue2-ingfi-dps-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "augmentation-capital-dilution",
+      "difficulty": 1,
+      "tags": [
+        "droit d'attribution",
+        "incorporation de réserves"
+      ],
+      "source_ref": "Augmentation de capital par incorporation de réserves : droit d'attribution = cours avant − cours théorique après = C × A / (N + A)",
+      "verified": true,
+      "estimated_seconds": 75,
+      "statement": "Une société dont l'action cote 84 € incorpore des réserves à son capital et attribue gratuitement 1 action nouvelle pour 3 actions anciennes. Quelle est la valeur théorique du droit d'attribution attaché à chaque action ancienne ?",
+      "options": [
+        "28 €",
+        "21 €",
+        "0 €, puisque les actions nouvelles sont gratuites",
+        "63 €"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "La valeur de la société ne change pas : 3 actions anciennes valent 3 × 84 = 252 € et, après l'attribution, ce montant se répartit sur 4 actions, soit 63 € l'une. Chaque action ancienne perd 84 − 63 = 21 €, valeur du droit d'attribution (formule : 84 × 1/4 = 21 €). L'option 1 (84 / 3 = 28 €) répartit la valeur sur les 3 actions anciennes au lieu des 4 actions du nouvel ensemble. L'option 3 oublie que l'action gratuite a une valeur : il faut 3 droits pour l'obtenir, et c'est précisément ce qui compense la baisse du cours. L'option 4 (63 €) est le cours théorique après opération, pas la valeur du droit."
+    },
+    {
+      "id": "ue2-ingfi-dps-0003",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "augmentation-capital-dilution",
+      "difficulty": 2,
+      "tags": [
+        "dilution du contrôle",
+        "DPS"
+      ],
+      "source_ref": "Dilution du contrôle : pourcentage après opération = actions détenues / (N + A) ; le DPS (C. com., art. L. 225-132) protège la valeur, non le pourcentage",
+      "verified": true,
+      "estimated_seconds": 75,
+      "statement": "Un actionnaire détient 120 000 actions d'une société dont le capital compte 1 000 000 d'actions (12 %). La société augmente son capital à raison de 1 action nouvelle pour 4 anciennes. L'actionnaire ne souscrit pas et vend tous ses droits préférentiels de souscription. Quel pourcentage du capital détient-il après l'opération ?",
+      "options": [
+        "12 %, la vente des DPS compensant la dilution",
+        "9 %",
+        "10 %",
+        "9,6 %"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Après l'opération, le capital compte 1 000 000 + 250 000 = 1 250 000 actions ; l'actionnaire en détient toujours 120 000, soit 120 000 / 1 250 000 = 9,6 % (12 % / 1,25). L'option 1 confond protection en valeur et protection en contrôle : le produit de la vente des DPS compense la baisse du cours, pas la perte de pourcentage. L'option 2 retire un quart du pourcentage (12 % × 3/4), comme si les 250 000 actions nouvelles étaient prises sur le million existant. L'option 3 est un arrondi sans fondement."
+    },
+    {
+      "id": "ue2-ingfi-dps-0004",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "augmentation-capital-dilution",
+      "difficulty": 2,
+      "tags": [
+        "opération blanche",
+        "DPS"
+      ],
+      "source_ref": "Valeur théorique du DPS = (C − E) × A / (N + A) ; opération blanche : produit de cession des DPS = coût de souscription (C. com., art. L. 225-132 pour le droit)",
+      "verified": true,
+      "estimated_seconds": 240,
+      "statement": "L'action d'une société cote 80 €. La société émet des actions nouvelles au prix de 62 €, à raison de 1 action nouvelle pour 5 anciennes. Un actionnaire détient 600 actions et souhaite réaliser une opération blanche : vendre une partie de ses DPS (au prix théorique) et utiliser les autres pour souscrire, sans apporter de trésorerie. Combien d'actions nouvelles peut-il souscrire au maximum (nombre entier) ?",
+      "expected_value": 23,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "actions",
+      "decimals": 0,
+      "explanation": "Cours théorique après opération : (5 × 80 + 62) / 6 = 462 / 6 = 77 € ; DPS = 80 − 77 = 3 €. Pour souscrire n actions, il faut 5n droits et 62n € ; il vend les 600 − 5n droits restants. Condition : 3 × (600 − 5n) ≥ 62n, soit 1 800 ≥ 77n, n ≤ 23,38. Il souscrit 23 actions : il utilise 115 droits, en vend 485 pour 1 455 €, paie 23 × 62 = 1 426 € et conserve 29 €. Avec 24 actions, il ne vendrait que 480 droits (1 440 €) pour un coût de 1 488 € : il lui manquerait de la trésorerie. Raccourci : n = valeur de ses droits / cours théorique = 1 800 / 77."
+    },
+    {
+      "id": "ue2-ingfi-dps-0005",
+      "type": "journal_entry",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "augmentation-capital-dilution",
+      "difficulty": 1,
+      "tags": [
+        "augmentation de capital",
+        "écriture",
+        "prime d'émission"
+      ],
+      "source_ref": "PCG : comptes 4563 (Associés – versements reçus sur augmentation de capital), 101 (Capital), 1041 (Primes d'émission)",
+      "verified": true,
+      "estimated_seconds": 180,
+      "statement": "Une SA émet 50 000 actions nouvelles de nominal 10 € au prix de 26 €, libérées intégralement à la souscription. Les fonds reçus de la banque dépositaire ont été enregistrés au crédit du compte 4563. Passez l'écriture constatant la réalisation de l'augmentation de capital (utilisez le compte 101 pour le capital).",
+      "date": "Date de réalisation",
+      "entries": [
+        {
+          "account": "4563",
+          "label": "Associés – versements reçus sur augmentation de capital",
+          "debit": 1300000,
+          "credit": 0
+        },
+        {
+          "account": "101",
+          "label": "Capital (50 000 × 10 €)",
+          "debit": 0,
+          "credit": 500000
+        },
+        {
+          "account": "1041",
+          "label": "Primes d'émission (50 000 × 16 €)",
+          "debit": 0,
+          "credit": 800000
+        }
+      ],
+      "explanation": "Les fonds versés (50 000 × 26 = 1 300 000 €) ont été portés au compte 4563 en attendant la réalisation de l'opération. À la réalisation, ce compte est soldé : le capital augmente du nominal (50 000 × 10 = 500 000 €, compte 101, sous-compte 1013 « Capital souscrit, appelé, versé ») et l'excédent du prix d'émission sur le nominal (50 000 × 16 = 800 000 €) est porté en prime d'émission (compte 1041)."
+    },
+    {
+      "id": "ue2-ingfi-dps-0006",
+      "type": "journal_entry",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "augmentation-capital-dilution",
+      "difficulty": 2,
+      "tags": [
+        "frais d'augmentation de capital",
+        "prime d'émission",
+        "écriture"
+      ],
+      "source_ref": "PCG : frais d'augmentation de capital imputables sur la prime d'émission (option) ; comptes 1041 (Primes d'émission), 44566 (TVA sur autres biens et services), 512 (Banques)",
+      "verified": true,
+      "estimated_seconds": 180,
+      "statement": "À la suite d'une augmentation de capital, une société reçoit la facture des honoraires de la banque conseil et des avocats : 36 000 € HT, TVA 20 % (récupérable), payée immédiatement par virement. Elle opte pour l'imputation des frais sur la prime d'émission. Convention : l'imputation est directe (sans passer par un compte de charges) et porte sur le montant hors taxes ; on ignore l'effet d'impôt sur les sociétés. Passez l'écriture.",
+      "date": "Date de paiement",
+      "entries": [
+        {
+          "account": "1041",
+          "label": "Primes d'émission (frais imputés)",
+          "debit": 36000,
+          "credit": 0
+        },
+        {
+          "account": "44566",
+          "label": "TVA déductible sur autres biens et services",
+          "debit": 7200,
+          "credit": 0
+        },
+        {
+          "account": "512",
+          "label": "Banques",
+          "debit": 0,
+          "credit": 43200
+        }
+      ],
+      "explanation": "Les frais d'augmentation de capital peuvent, sur option, être imputés sur la prime d'émission plutôt que comptabilisés en charges (ou en frais d'établissement). La prime (compte 1041) est diminuée du montant hors taxes, 36 000 € ; la TVA récupérable (36 000 × 20 % = 7 200 €) est inscrite au compte 44566 ; la banque est créditée du TTC, 43 200 €. En pratique, l'imputation se fait souvent pour un montant net de l'économie d'impôt correspondante ; l'énoncé l'écarte par convention. Si la prime est insuffisante, l'excédent de frais reste en charges."
+    },
+    {
+      "id": "ue2-ingfi-dps-0007",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "augmentation-capital-dilution",
+      "difficulty": 3,
+      "tags": [
+        "obligations convertibles",
+        "BPA dilué",
+        "dilution",
+        "IAS 32"
+      ],
+      "source_ref": "PCG : compte 161 (Emprunts obligataires convertibles) ; IAS 32 §28-32 (instruments financiers composés, règl. UE 2023/1803) ; IAS 33 (résultat par action dilué)",
+      "verified": true,
+      "estimated_seconds": 780,
+      "title": "Société Varenne : émission d'obligations convertibles",
+      "context": "La société Varenne (SA cotée, comptes individuels en PCG) compte 2 000 000 d'actions. Son résultat net annuel attendu est stable à 8 000 000 €.\n\nPour financer un programme d'investissement, elle émet le 1er janvier N un emprunt obligataire convertible :\n- 20 000 obligations convertibles (OC) de nominal 1 000 €, émises et remboursables au pair ;\n- taux d'intérêt nominal 3 % (contre 5 % pour un emprunt classique de même durée) ;\n- chaque OC peut être convertie à tout moment en 20 actions nouvelles Varenne, au gré du porteur.\n\nLe taux d'impôt sur les sociétés est de 25 %. Un fonds détient aujourd'hui 10 % du capital de Varenne et ne détient aucune OC. Les fonds de l'émission sont encaissés intégralement le 1er janvier N, sans frais.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "journal_entry",
+          "prompt": "Passez l'écriture d'émission des OC au 1er janvier N dans les comptes individuels (PCG).",
+          "points": 2,
+          "date": "01/01/N",
+          "entries": [
+            {
+              "account": "512",
+              "label": "Banques",
+              "debit": 20000000,
+              "credit": 0
+            },
+            {
+              "account": "161",
+              "label": "Emprunts obligataires convertibles",
+              "debit": 0,
+              "credit": 20000000
+            }
+          ],
+          "explanation": "20 000 × 1 000 € = 20 000 000 €, émis au pair : en PCG, l'OC est intégralement une dette (compte 161) jusqu'à sa conversion, sans séparation d'une composante capitaux propres."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "prompt": "Calculez le bénéfice par action dilué annuel en supposant la conversion de toutes les OC, en euros arrondis au centime.",
+          "points": 3,
+          "expected_value": 3.52,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.01
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "Actions potentielles : 20 000 × 20 = 400 000. Intérêts économisés en cas de conversion, nets d'impôt : 20 000 000 × 3 % × (1 − 25 %) = 450 000 €. BPA dilué = (8 000 000 + 450 000) / (2 000 000 + 400 000) = 3,52 €, contre un BPA de base de 4,00 €. Oublier de réintégrer les intérêts donnerait 3,33 €."
+        },
+        {
+          "id": "q3",
+          "kind": "numeric",
+          "prompt": "Si toutes les OC sont converties, quel pourcentage du capital le fonds détiendra-t-il ? Réponse en %, arrondie à deux décimales.",
+          "points": 2,
+          "expected_value": 8.33,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.01
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Le fonds détient 10 % × 2 000 000 = 200 000 actions ; après conversion, le capital compte 2 400 000 actions : 200 000 / 2 400 000 = 8,33 %."
+        },
+        {
+          "id": "q4",
+          "kind": "mcq",
+          "prompt": "Si Varenne établissait des comptes consolidés en IFRS, comment l'émission serait-elle présentée ?",
+          "points": 2,
+          "options": [
+            "Intégralement en dette financière, comme en PCG",
+            "Intégralement en capitaux propres, puisque les OC donnent accès au capital",
+            "En instrument dérivé évalué à la juste valeur pour la totalité",
+            "Une composante dette (flux actualisés au taux d'un emprunt non convertible) et une composante capitaux propres (le solde)"
+          ],
+          "answer": [
+            3
+          ],
+          "multiple": false,
+          "explanation": "IAS 32 §28-32 : l'OC à parité fixe est un instrument composé ; l'émetteur évalue d'abord la dette (flux actualisés au taux de 5 % d'un emprunt sans option) et affecte le solde à la composante capitaux propres. Les options 1 et 2 ignorent la séparation ; l'option 3 ne vaut pas pour une conversion en un nombre fixe d'actions contre un montant fixe."
+        },
+        {
+          "id": "q5",
+          "kind": "open",
+          "prompt": "Pourquoi Varenne a-t-elle pu choisir l'OC plutôt qu'un emprunt classique ou une augmentation de capital immédiate ? Comparez brièvement avec les ORA et les BSA.",
+          "points": 4,
+          "model_answer": "L'OC réduit le coût immédiat de la dette (3 % au lieu de 5 %) car les porteurs reçoivent une option de conversion. Par rapport à une augmentation de capital immédiate, la dilution est différée et n'intervient que si le cours dépasse le prix de conversion implicite (50 €), donc à un prix supérieur au cours actuel en général ; si la conversion n'a pas lieu, la société doit rembourser. Les intérêts sont déductibles. L'ORA, remboursée obligatoirement en actions, est plus proche des fonds propres (pas de remboursement en numéraire, dilution certaine). Le BSA ne procure des fonds qu'à l'exercice et n'est pas une dette ; il est souvent attaché à une émission (ABSA, OBSA) pour en abaisser le coût.",
+          "key_points": [
+            "Coupon réduit grâce à l'option de conversion",
+            "Dilution différée et conditionnelle, à un prix de conversion supérieur au cours",
+            "Risque de remboursement en numéraire si la conversion n'a pas lieu",
+            "ORA : dilution certaine, quasi-fonds propres ; BSA : fonds à l'exercice seulement, pas de dette"
+          ]
+        }
+      ],
+      "total_points": 13,
+      "explanation": "Le cas relie l'écriture d'émission (dette en PCG, instrument composé en IFRS), la mesure de la dilution (BPA dilué de 4,00 € à 3,52 € ; contrôle du fonds de 10 % à 8,33 %) et l'intérêt financier de l'OC parmi les titres donnant accès au capital."
     }
   ]
 }

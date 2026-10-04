@@ -1,0 +1,197 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-treso-plan-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "gestion-tresorerie",
+      "notion": "plan-tresorerie-previsionnel",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "budget de trésorerie",
+        "charges calculées"
+      ],
+      "source_ref": "Construction du budget de trésorerie : seuls les flux encaissés ou décaissés y figurent (charges calculées exclues)",
+      "estimated_seconds": 45,
+      "statement": "Parmi les éléments suivants, lequel ne doit pas figurer dans le budget de trésorerie d’une entreprise ?",
+      "options": [
+        "La TVA à décaisser au titre du mois précédent",
+        "Le remboursement en capital d’une échéance d’emprunt",
+        "Les acomptes d’impôt sur les sociétés",
+        "Les dotations aux amortissements des immobilisations"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Le budget de trésorerie ne retient que des flux monétaires. Les dotations aux amortissements sont des charges calculées, sans décaissement : elles n’y figurent pas (option 4). La TVA nette payée le mois suivant (option 1), le remboursement du capital d’un emprunt (option 2, absent du compte de résultat mais bien décaissé) et les acomptes d’IS (option 3) sont des décaissements effectifs."
+    },
+    {
+      "id": "ue2-treso-plan-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "gestion-tresorerie",
+      "notion": "plan-tresorerie-previsionnel",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "budget de TVA",
+        "TVA à décaisser"
+      ],
+      "source_ref": "CGI, TVA : régime réel normal (déclaration et paiement mensuels) ; TVA déductible sur biens, services et immobilisations",
+      "estimated_seconds": 75,
+      "statement": "Une entreprise relève du régime réel normal de TVA (déclaration et paiement le mois suivant). En avril, la TVA collectée s’élève à 30 000 €, la TVA déductible sur biens et services à 18 000 € et la TVA déductible sur une immobilisation acquise en avril à 5 000 €. Aucun crédit de TVA antérieur n’existe. Quel décaissement de TVA le budget de trésorerie doit-il faire apparaître ?",
+      "options": [
+        "12 000 € en mai",
+        "7 000 € en avril",
+        "7 000 € en mai",
+        "30 000 € en mai"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "TVA à décaisser au titre d’avril = 30 000 − 18 000 − 5 000 = 7 000 €, payée avec la déclaration déposée en mai (option 3). L’option 1 oublie la TVA déductible sur l’immobilisation, qui se déduit comme celle sur biens et services. L’option 2 place le paiement le mois même, alors qu’il intervient le mois suivant. L’option 4 retient la TVA collectée brute, sans imputation de la TVA déductible."
+    },
+    {
+      "id": "ue2-treso-plan-0003",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "gestion-tresorerie",
+      "notion": "plan-tresorerie-previsionnel",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "budget des encaissements",
+        "TVA"
+      ],
+      "source_ref": "Construction du budget de trésorerie : encaissements clients pour leur montant TTC",
+      "estimated_seconds": 40,
+      "statement": "Dans le budget de trésorerie, les encaissements sur ventes sont retenus pour leur montant hors taxes, la TVA étant traitée uniquement dans le budget de TVA.",
+      "answer": false,
+      "justification": "Les clients règlent le montant TTC : les encaissements sont donc retenus TTC, et le budget de TVA calcule séparément la TVA nette à décaisser.",
+      "explanation": "Le budget de trésorerie suit les flux réels. Le client paie la facture TTC, c’est ce montant qui est encaissé, selon les délais de règlement. La TVA collectée, incluse dans cet encaissement, est ensuite reversée à l’État (nette de la TVA déductible) le mois suivant : c’est l’objet du budget de TVA, dont le résultat est repris en décaissement. Retenir les ventes HT conduirait à sous-estimer les encaissements tout en comptant la TVA à payer."
+    },
+    {
+      "id": "ue2-treso-plan-0004",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "gestion-tresorerie",
+      "notion": "plan-tresorerie-previsionnel",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "budget des encaissements",
+        "délais de règlement"
+      ],
+      "source_ref": "Construction du budget des encaissements : ventes TTC ventilées selon les délais de règlement",
+      "estimated_seconds": 180,
+      "statement": "Une entreprise réalise les ventes hors taxes suivantes : janvier 50 000 €, février 60 000 €, mars 40 000 € (TVA au taux de 20 %). Ses clients règlent 30 % au comptant (mois de la vente), 50 % le mois suivant la vente et 20 % deux mois après la vente. Calculez le montant des encaissements clients de mars, en euros.",
+      "expected_value": 62400,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Montants TTC : janvier 60 000, février 72 000, mars 48 000. Encaissements de mars = 30 % × 48 000 (ventes de mars) + 50 % × 72 000 (ventes de février) + 20 % × 60 000 (ventes de janvier) = 14 400 + 36 000 + 12 000 = 62 400 €. Raisonner hors taxes donnerait 52 000 €, ce qui est faux : les clients paient TTC."
+    },
+    {
+      "id": "ue2-treso-plan-0005",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "gestion-tresorerie",
+      "notion": "plan-tresorerie-previsionnel",
+      "verified": true,
+      "difficulty": 3,
+      "tags": [
+        "budget de trésorerie",
+        "budget de TVA",
+        "équilibrage"
+      ],
+      "source_ref": "Construction du budget de trésorerie et du budget de TVA (régime réel normal) ; règle de l’équilibre financier (financement des emplois durables par des ressources stables)",
+      "estimated_seconds": 900,
+      "title": "Ardel : budget de trésorerie du premier trimestre",
+      "context": "La société Ardel prépare son budget de trésorerie pour le premier trimestre N. Trésorerie au 1er janvier : 15 000 €. TVA au taux de 20 % sur toutes les ventes et achats ci-dessous.\n- Ventes HT : janvier 100 000 €, février 120 000 €, mars 150 000 €. Les clients règlent 50 % le mois de la vente et 50 % le mois suivant. Les créances clients au 1er janvier (108 000 € TTC) sont encaissées en janvier.\n- Achats HT : janvier 70 000 €, février 90 000 €, mars 80 000 €, payés le mois suivant. La dette fournisseurs au 1er janvier (72 000 € TTC) est payée en janvier.\n- Salaires et charges sociales : 30 000 € par mois, payés dans le mois.\n- Une machine de 120 000 € HT est livrée, facturée et payée comptant en février.\n- Une échéance d’emprunt de 25 000 € est payée en mars.\n- Régime réel normal : la TVA du mois M (collectée sur les ventes du mois, déductible sur les factures du mois) est payée en M + 1 ; un crédit de TVA est reporté sur les mois suivants. La TVA due au titre de décembre N-1, payée en janvier, s’élève à 6 000 €.\n- Les dotations aux amortissements du trimestre s’élèvent à 9 000 €.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez le total des décaissements de février, en euros.",
+          "expected_value": 264000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Fournisseurs (achats de janvier TTC) 84 000 + salaires 30 000 + TVA due au titre de janvier (20 000 − 14 000 = 6 000) + machine TTC 144 000 = 264 000 €."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez la trésorerie prévisionnelle à fin mars, en euros (indiquez le signe moins pour un solde négatif).",
+          "expected_value": -58000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Encaissements : janvier 108 000 + 60 000 = 168 000 ; février 60 000 + 72 000 = 132 000 ; mars 72 000 + 90 000 = 162 000. Décaissements : janvier 72 000 + 30 000 + 6 000 = 108 000 ; février 264 000 ; mars 108 000 (achats de février TTC) + 30 000 + 25 000 = 163 000, sans TVA à payer car la déclaration de février dégage un crédit de 24 000 − 18 000 − 24 000 = −18 000 €, reporté. Soldes : janvier 75 000 ; février −57 000 ; mars −58 000 €. Les dotations aux amortissements ne sont pas des flux."
+        },
+        {
+          "id": "q3",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Quelle solution de financement est la plus adaptée au déficit mis en évidence ?",
+          "options": [
+            "Un découvert bancaire autorisé renouvelé chaque mois",
+            "Un emprunt à moyen terme adossé à l’acquisition de la machine",
+            "Des facilités de caisse en fin de mois",
+            "L’émission de NEU CP"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "Le déficit provient de l’investissement (144 000 € TTC payés en février), emploi durable qui doit être financé par une ressource stable : un emprunt à moyen terme (option 2), dont l’échéancier suit la durée d’utilisation de la machine. Le découvert (option 1) et les facilités de caisse (option 3) sont des concours courants, coûteux et révocables, destinés à des décalages temporaires. Les NEU CP (option 4) sont un financement de court terme réservé aux grandes entreprises, inadapté à une PME et à un emploi durable."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "points": 4,
+          "prompt": "Commentez le budget obtenu et proposez des mesures d’équilibrage pour le trimestre.",
+          "model_answer": "L’exploitation dégage des flux positifs (encaissements supérieurs aux décaissements hors investissement et emprunt) et la trésorerie de janvier est excédentaire (75 000 €). Le déficit apparaît en février avec le paiement comptant de la machine (144 000 € TTC) et persiste en mars (−58 000 €), aggravé par l’échéance d’emprunt. La TVA sur la machine est récupérée par imputation (crédit de 18 000 € reporté), ce qui allégera les décaissements de TVA des mois suivants. Mesures : financer la machine par un emprunt à moyen terme ou un crédit-bail plutôt que par la trésorerie ; à défaut, négocier un paiement échelonné avec le fournisseur ; demander le remboursement du crédit de TVA si les conditions sont remplies ; placer l’excédent de janvier sur un support liquide (OPCVM monétaire) puisqu’il sera consommé en février ; n’utiliser les concours courants que pour les décalages résiduels.",
+          "key_points": [
+            "Déficit dû à l’investissement payé comptant, non à l’exploitation",
+            "Emploi durable à financer par une ressource stable (emprunt ou crédit-bail)",
+            "Crédit de TVA de 18 000 € à imputer ou dont le remboursement peut être demandé",
+            "Excédent de janvier à placer sur un support liquide de très court terme"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Soldes mensuels : 75 000 (janvier), −57 000 (février), −58 000 € (mars). Le crédit de TVA de février (18 000 €) supprime le décaissement de TVA de mars. Le déficit est structurel (investissement) et appelle un financement stable."
+    },
+    {
+      "id": "ue2-treso-plan-0006",
+      "type": "flashcard",
+      "ue": "UE2",
+      "theme": "gestion-tresorerie",
+      "notion": "plan-tresorerie-previsionnel",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "trésorerie zéro",
+        "dates de valeur"
+      ],
+      "source_ref": "Gestion de trésorerie au jour le jour : prévisions en dates de valeur et équilibrage quotidien des comptes",
+      "estimated_seconds": 60,
+      "front": "Qu’est-ce que l’objectif de « trésorerie zéro » et comment l’atteindre ?",
+      "back": "Maintenir chaque jour des soldes bancaires en valeur proches de zéro : ne payer aucun agio inutile et ne laisser aucune encaisse non rémunérée. Moyens : prévisions au jour le jour en dates de valeur (fiches en valeur par banque), équilibrage des soldes entre banques par virements, arbitrage quotidien entre découvert et placement, centralisation des comptes du groupe.",
+      "explanation": "La trésorerie zéro est un objectif de gestion, pas un solde comptable : la trésorerie nette du bilan peut être positive si les excédents sont placés. Elle suppose de raisonner en dates de valeur, puisque les intérêts bancaires sont calculés sur les soldes en valeur et non sur les soldes comptables."
+    }
+  ]
+}

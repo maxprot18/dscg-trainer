@@ -1,0 +1,178 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-social-epargne-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "droit-social",
+      "notion": "epargne-salariale",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "participation",
+        "intéressement",
+        "régime social"
+      ],
+      "statement": "Laquelle des affirmations suivantes relatives à la participation et à l'intéressement est exacte ?",
+      "options": [
+        "L'intéressement est obligatoire dans les entreprises d'au moins 50 salariés, la participation restant facultative",
+        "La participation est obligatoire dans les entreprises d'au moins 50 salariés, alors que l'intéressement est toujours facultatif",
+        "La réserve spéciale de participation est égale, dans tous les cas, à 5 % du bénéfice fiscal",
+        "Les sommes versées au titre de la participation sont soumises aux cotisations de sécurité sociale comme des salaires"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "La participation est obligatoire dans les entreprises employant au moins 50 salariés ; l'intéressement est mis en place par accord, de manière facultative (option 2). L'option 1 inverse les deux dispositifs. L'option 3 est fausse : la formule légale est RSP = ½ (B − 5 % C) × S / VA ; les 5 % s'appliquent aux capitaux propres, en déduction du bénéfice. L'option 4 est fausse : les sommes ne sont pas des salaires au sens des cotisations de sécurité sociale ; seules la CSG et la CRDS sont dues (l'employeur supporte le cas échéant le forfait social).",
+      "source_ref": "C. trav. art. L3322-2 (participation obligatoire), L3312-1 s. (intéressement), L3324-1 (formule de la RSP)",
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue1-social-epargne-0002",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "droit-social",
+      "notion": "epargne-salariale",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "participation",
+        "réserve spéciale de participation",
+        "formule légale"
+      ],
+      "statement": "La SA Quartz (210 salariés) calcule sa réserve spéciale de participation de l'exercice N selon la formule légale : RSP = ½ × (B − 5 % C) × S / VA. Données : bénéfice fiscal diminué de l'impôt correspondant B = 1 350 000 € ; capitaux propres C = 4 000 000 € ; salaires S = 3 000 000 € ; valeur ajoutée VA = 5 000 000 €. Calculez la RSP, en euros, arrondie à l'euro.",
+      "expected_value": 345000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "B − 5 % C = 1 350 000 − 0,05 × 4 000 000 = 1 350 000 − 200 000 = 1 150 000 €.\n½ × 1 150 000 = 575 000 €.\nS / VA = 3 000 000 / 5 000 000 = 0,6.\nRSP = 575 000 × 0,6 = 345 000 €.\nErreurs classiques : oublier la déduction de 5 % des capitaux propres (405 000 €) ou omettre le coefficient ½ (690 000 €).",
+      "source_ref": "C. trav. art. L3324-1 (formule de la réserve spéciale de participation)",
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue1-social-epargne-0003",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "droit-social",
+      "notion": "epargne-salariale",
+      "verified": true,
+      "difficulty": 3,
+      "tags": [
+        "participation",
+        "RSP",
+        "forfait social",
+        "clôture"
+      ],
+      "statement": "Au 31 décembre N, la SA Mistral (320 salariés) calcule sa réserve spéciale de participation selon la formule légale RSP = ½ × (B − 5 % C) × S / VA, avec : B = 2 400 000 € ; C = 8 000 000 € ; S = 5 100 000 € ; VA = 7 500 000 €. Hypothèse : forfait social au taux de 20 % de la RSP, à la charge de l'employeur. Passez l'écriture d'inventaire au 31 décembre N constatant la participation et le forfait social correspondant, en utilisant les comptes 691 et 4284 pour la participation, 645 et 4386 pour le forfait social.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "691",
+          "label": "Participation des salariés aux résultats",
+          "debit": 680000,
+          "credit": 0
+        },
+        {
+          "account": "645",
+          "label": "Charges de sécurité sociale (forfait social)",
+          "debit": 136000,
+          "credit": 0
+        },
+        {
+          "account": "4284",
+          "label": "Dettes provisionnées pour participation des salariés aux résultats",
+          "debit": 0,
+          "credit": 680000
+        },
+        {
+          "account": "4386",
+          "label": "Organismes sociaux - charges à payer (forfait social)",
+          "debit": 0,
+          "credit": 136000
+        }
+      ],
+      "explanation": "RSP = ½ × (2 400 000 − 0,05 × 8 000 000) × 5 100 000 / 7 500 000 = ½ × 2 000 000 × 0,68 = 680 000 €.\nForfait social = 20 % × 680 000 = 136 000 €.\nLa participation de l'exercice est une charge de N, constatée à la clôture : débit 691, crédit 4284. Le forfait social afférent est une charge sociale à payer : débit 645, crédit 4386 (compte imposé par l'énoncé). Total : 816 000 € au débit et au crédit. La participation ne s'enregistre pas au 641 : elle n'est pas une rémunération du travail au sens comptable et figure sur une ligne distincte du compte de résultat.",
+      "source_ref": "C. trav. art. L3324-1 ; PCG (règl. ANC 2014-03), comptes 691, 4284, 645 et 4386",
+      "estimated_seconds": 270
+    },
+    {
+      "id": "ue1-social-epargne-0004",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "droit-social",
+      "notion": "epargne-salariale",
+      "verified": true,
+      "difficulty": 3,
+      "tags": [
+        "intéressement",
+        "participation facultative",
+        "PEE",
+        "répartition"
+      ],
+      "title": "Lumen : intéressement et plan d'épargne",
+      "context": "La SAS Lumen, éditeur de logiciels, emploie 40 salariés depuis plusieurs années ; son effectif n'a jamais atteint 50 salariés. Elle n'a pas mis en place de participation. Un accord d'intéressement conclu avec le CSE prévoit une prime collective calculée en fonction du résultat d'exploitation et du taux de satisfaction des clients.\nAu titre de l'exercice N, l'intéressement global s'élève à 72 000 €. L'accord prévoit la répartition suivante :\n- 40 % de manière uniforme entre les bénéficiaires ;\n- 60 % proportionnellement aux salaires bruts de l'année.\nLes 40 salariés ont été présents toute l'année ; la masse des salaires bruts des bénéficiaires est de 1 600 000 €. Théo, développeur, a perçu 36 000 € bruts en N.\nUn plan d'épargne d'entreprise (PEE) est ouvert ; Théo envisage d'y placer sa prime.\nHypothèses : aucun plafond individuel d'intéressement n'est atteint ; Lumen n'est pas redevable du forfait social sur l'intéressement.",
+      "sub_questions": [
+        {
+          "id": "q1-participation",
+          "kind": "mcq",
+          "prompt": "Lumen est-elle tenue de mettre en place la participation ?",
+          "points": 2,
+          "options": [
+            "Oui, toute entreprise qui verse de l'intéressement doit aussi mettre en place la participation",
+            "Oui, dès lors qu'elle réalise un bénéfice fiscal",
+            "Non, la participation n'est obligatoire qu'à partir de 50 salariés ; Lumen peut toutefois l'instituer volontairement",
+            "Non, et il lui est interdit de l'instituer avant d'avoir atteint 50 salariés"
+          ],
+          "answer": [
+            2
+          ],
+          "multiple": false,
+          "explanation": "La participation est obligatoire dans les entreprises employant au moins 50 salariés ; en deçà, elle peut être mise en place volontairement par accord (option 3). L'intéressement et la participation sont des dispositifs indépendants (option 1). Le bénéfice seul ne déclenche pas l'obligation (option 2). Aucune interdiction ne vise les petites entreprises (option 4)."
+        },
+        {
+          "id": "q2-prime-theo",
+          "kind": "numeric",
+          "prompt": "Calculez la prime d'intéressement brute de Théo au titre de N. Réponse en euros, arrondie à l'euro.",
+          "points": 3,
+          "expected_value": 1692,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Part uniforme : 40 % × 72 000 / 40 = 28 800 / 40 = 720 €.\nPart proportionnelle aux salaires : 60 % × 72 000 × 36 000 / 1 600 000 = 43 200 × 0,0225 = 972 €.\nPrime de Théo = 720 + 972 = 1 692 €.\nErreurs classiques : répartir 100 % uniformément (1 800 €) ou 100 % proportionnellement aux salaires (1 620 €)."
+        },
+        {
+          "id": "q3-blocage",
+          "kind": "true_false",
+          "prompt": "Vrai ou faux : si Théo place sa prime sur le PEE, les sommes sont en principe indisponibles pendant cinq ans, sauf cas de déblocage anticipé prévus par la réglementation.",
+          "points": 1,
+          "answer": true,
+          "explanation": "Vrai. Les sommes placées sur un PEE sont indisponibles pendant cinq ans ; des cas de déblocage anticipé (mariage ou PACS, naissance ou adoption d'un troisième enfant, acquisition de la résidence principale, rupture du contrat de travail…) permettent une sortie avant ce terme."
+        },
+        {
+          "id": "q4-comparaison",
+          "kind": "open",
+          "prompt": "Comparez l'intéressement et la participation (fondement, caractère obligatoire, mode de calcul) et présentez les avantages sociaux et fiscaux de ces dispositifs pour Théo et pour Lumen.",
+          "points": 4,
+          "model_answer": "La participation est un dispositif légal de redistribution des bénéfices, obligatoire à partir de 50 salariés et facultatif en deçà ; son montant global (réserve spéciale de participation) résulte d'une formule légale, ½ (B − 5 % C) × S / VA, ou d'une formule dérogatoire au moins aussi favorable. L'intéressement est toujours facultatif et repose sur un accord ; il présente un caractère aléatoire et collectif, et sa formule, librement définie, est liée aux résultats ou aux performances (ici résultat d'exploitation et satisfaction client). Pour Théo, les primes ne sont pas soumises aux cotisations de sécurité sociale (seules la CSG et la CRDS sont dues) et, placées sur le PEE, elles sont exonérées d'impôt sur le revenu, en contrepartie d'un blocage de cinq ans. Pour Lumen, les sommes versées sont déductibles du résultat imposable, ne supportent pas les cotisations patronales de sécurité sociale et, selon l'hypothèse du cas, pas de forfait social ; l'entreprise peut en outre compléter les versements sur le PEE par un abondement plafonné.",
+          "key_points": [
+            "Participation : obligatoire à partir de 50 salariés, formule légale de la RSP",
+            "Intéressement : facultatif, par accord, aléatoire et collectif, formule liée aux résultats ou performances",
+            "Salarié : pas de cotisations de sécurité sociale (CSG-CRDS dues), exonération d'IR si placement sur le PEE, blocage de cinq ans",
+            "Entreprise : charge déductible, pas de cotisations patronales, forfait social non dû selon l'hypothèse, abondement possible"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas confronte les deux dispositifs de partage de la valeur : participation obligatoire au-delà d'un seuil, intéressement facultatif dont la répartition combine ici critère uniforme et critère salarial, et placement sur un PEE soumis à une indisponibilité de cinq ans.",
+      "source_ref": "C. trav. art. L3312-1 s. (intéressement), L3322-2 (participation obligatoire), L3324-1 (RSP), L3332-1 s. et L3332-25 (PEE, indisponibilité)",
+      "estimated_seconds": 780
+    }
+  ]
+}

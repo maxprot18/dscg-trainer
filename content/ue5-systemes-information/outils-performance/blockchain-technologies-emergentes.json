@@ -1,0 +1,78 @@
+{
+  "exercises": [
+    {
+      "id": "ue5-outils-blockchain-0001",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "blockchain-technologies-emergentes",
+      "difficulty": 2,
+      "tags": [
+        "blockchain",
+        "problème de l'oracle",
+        "traçabilité",
+        "intégrité"
+      ],
+      "statement": "Une coopérative laitière inscrit dans une blockchain de consortium les températures des citernes relevées manuellement par les chauffeurs lors de chaque collecte. Quel risque la blockchain ne permet-elle pas, à elle seule, de maîtriser ?",
+      "options": [
+        "La modification a posteriori d'un relevé déjà inscrit",
+        "La contestation de la date d'enregistrement d'un relevé",
+        "La perte des données en cas de panne du serveur d'un des membres",
+        "L'inscription d'une température erronée par un chauffeur"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "La blockchain garantit l'intégrité et l'horodatage de ce qui est inscrit, pas la véracité de la donnée à l'entrée : une température mal relevée ou falsifiée par un chauffeur sera fidèlement conservée. C'est le problème de l'oracle, que l'on réduit par des capteurs connectés, des contrôles croisés et des contrôles a posteriori. L'option 1 est maîtrisée : modifier un bloc ancien obligerait à recalculer les empreintes de tous les blocs suivants et à obtenir l'accord des autres nœuds. L'option 2 est maîtrisée par l'horodatage des blocs. L'option 3 est maîtrisée par la réplication du registre sur les nœuds des différents membres.",
+      "source_ref": "Programme DSCG UE 5 : blockchain et technologies émergentes (registre distribué, consensus, limites)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue5-outils-blockchain-0002",
+      "type": "true_false",
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "blockchain-technologies-emergentes",
+      "difficulty": 1,
+      "tags": [
+        "preuve d'enjeu",
+        "preuve de travail",
+        "consensus",
+        "énergie"
+      ],
+      "statement": "Dans une blockchain fonctionnant par preuve d'enjeu, les blocs sont validés par des mineurs qui résolvent un calcul intensif, ce qui rend ce mécanisme plus énergivore que la preuve de travail.",
+      "answer": false,
+      "justification": "Faux : c'est la preuve de travail qui repose sur un calcul intensif ; la preuve d'enjeu sélectionne les validateurs selon les jetons qu'ils mettent en garantie et consomme beaucoup moins d'énergie.",
+      "explanation": "La preuve de travail (proof of work) met en concurrence des mineurs qui doivent résoudre un problème cryptographique coûteux en calcul : la sécurité vient de l'énergie dépensée, d'où une forte consommation électrique. La preuve d'enjeu (proof of stake) confie la validation à des participants choisis en fonction des crypto-actifs qu'ils immobilisent en garantie et qu'ils peuvent perdre en cas de fraude : elle ne nécessite pas de course au calcul et est nettement plus sobre.",
+      "source_ref": "Programme DSCG UE 5 : blockchain, mécanismes de consensus (preuve de travail, preuve d'enjeu)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue5-outils-blockchain-0003",
+      "type": "numeric",
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "blockchain-technologies-emergentes",
+      "difficulty": 2,
+      "tags": [
+        "blockchain de consortium",
+        "délai de récupération",
+        "traçabilité"
+      ],
+      "statement": "Un transporteur rejoint une blockchain de consortium de traçabilité des marchandises. Sa quote-part d'investissement initial (intégration à son SI, nœud, formation) s'élève à 210 000 €. Il en attend chaque année une baisse du coût des litiges de 45 000 € et une baisse du coût des rapprochements documentaires de 30 000 €. La cotisation annuelle au consortium et l'exploitation du nœud coûtent 15 000 € par an. Les flux sont supposés constants et répartis régulièrement dans l'année. Calculez le délai de récupération de l'investissement, non actualisé (en années, arrondi à une décimale).",
+      "expected_value": 3.5,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.05
+      },
+      "unit": "ans",
+      "decimals": 1,
+      "explanation": "Économies nettes annuelles = 45 000 + 30 000 − 15 000 = 60 000 €. Délai de récupération = 210 000 ÷ 60 000 = 3,5 ans. Erreur classique : oublier les coûts de fonctionnement (210 000 ÷ 75 000 = 2,8 ans). Le délai de récupération ignore la valeur du temps et les flux postérieurs ; il mesure surtout le risque et l'impact sur la liquidité.",
+      "source_ref": "Évaluation des investissements : délai de récupération = investissement ÷ flux nets annuels constants",
+      "verified": true,
+      "estimated_seconds": 150
+    }
+  ]
+}

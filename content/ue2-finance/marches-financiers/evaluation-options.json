@@ -1,0 +1,214 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-marches-optn-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "evaluation-options",
+      "difficulty": 2,
+      "tags": [
+        "déterminants",
+        "volatilité",
+        "valeur d'une option"
+      ],
+      "source_ref": "Déterminants de la valeur des options : cours, prix d'exercice, volatilité, durée, taux, dividendes",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Toutes choses égales par ailleurs, quel est l'effet d'une hausse de la volatilité du sous-jacent sur la valeur d'un call et d'un put européens portant sur ce sous-jacent ?",
+      "options": [
+        "La valeur du call augmente et celle du put diminue",
+        "La valeur du call diminue et celle du put augmente",
+        "La valeur des deux options diminue, car le risque augmente",
+        "La valeur des deux options augmente"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'option 4 est correcte : la perte du détenteur d'une option est limitée à la prime alors que son gain croît avec l'ampleur des mouvements favorables. Une volatilité plus forte augmente la probabilité de gains importants sans accroître la perte maximale : elle valorise donc le call comme le put. Les options 1 et 2 confondent l'effet de la volatilité avec celui du cours du sous-jacent (une hausse du cours valorise le call et déprécie le put). L'option 3 raisonne comme pour un actif détenu en direct, alors que l'asymétrie de l'option fait du risque une source de valeur."
+    },
+    {
+      "id": "ue2-marches-optn-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "evaluation-options",
+      "difficulty": 2,
+      "tags": [
+        "straddle",
+        "points morts",
+        "stratégie"
+      ],
+      "source_ref": "Stratégies optionnelles : straddle (achat d'un call et d'un put de même prix d'exercice et même échéance)",
+      "verified": true,
+      "estimated_seconds": 90,
+      "statement": "Avant la publication de résultats très attendus, un investisseur achète un call et un put européens de même échéance sur l'action Fenix, tous deux de prix d'exercice 50 €. Les primes sont de 3 € pour le call et de 2,50 € pour le put. Entre quelles bornes de cours à l'échéance l'investisseur subit-il une perte ?",
+      "options": [
+        "Entre 47 € et 52,50 €",
+        "Entre 44,50 € et 55,50 €",
+        "Entre 47,50 € et 53 €",
+        "Uniquement si le cours est exactement de 50 €"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'option 2 est correcte : coût total du straddle = 3 + 2,50 = 5,50 €. À l'échéance, le gain brut vaut |S_T − 50| ; l'opération est perdante tant que |S_T − 50| < 5,50, soit entre 44,50 € et 55,50 € (points morts 50 ± 5,50). La perte maximale (5,50 €) est atteinte à 50 €. L'option 1 retranche la prime du call du côté bas et ajoute celle du put du côté haut, sans cumuler les deux primes. L'option 3 utilise chaque prime séparément. L'option 4 confond le point de perte maximale avec la zone de perte."
+    },
+    {
+      "id": "ue2-marches-optn-0003",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "evaluation-options",
+      "difficulty": 2,
+      "tags": [
+        "option américaine",
+        "exercice anticipé"
+      ],
+      "source_ref": "Évaluation des options : non-optimalité de l'exercice anticipé d'un call américain sur action sans dividende (Merton, 1973)",
+      "verified": true,
+      "estimated_seconds": 50,
+      "statement": "Un call américain portant sur une action qui ne verse pas de dividende avant l'échéance a la même valeur qu'un call européen de mêmes caractéristiques.",
+      "answer": true,
+      "justification": "Vrai : exercer avant l'échéance ferait perdre la valeur temps ; il vaut mieux vendre le call que l'exercer, donc le droit d'exercice anticipé ne vaut rien.",
+      "explanation": "La valeur d'un call européen sans dividende est au moins égale à S − K e^(−rT), supérieure à la valeur intrinsèque S − K obtenue en cas d'exercice immédiat. Le détenteur a donc toujours intérêt à conserver ou à céder l'option plutôt qu'à l'exercer. Ce résultat ne vaut ni pour le put américain (l'exercice anticipé peut être optimal si l'option est très dans la monnaie) ni pour un call sur action versant un dividende."
+    },
+    {
+      "id": "ue2-marches-optn-0004",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "evaluation-options",
+      "difficulty": 2,
+      "tags": [
+        "parité call-put",
+        "put européen"
+      ],
+      "source_ref": "Parité call-put des options européennes sans dividende : C + K (1 + r)⁻ᵀ = P + S",
+      "verified": true,
+      "estimated_seconds": 150,
+      "statement": "L'action Ombra (aucun dividende prévu) cote 50 €. Un call européen d'échéance 1 an et de prix d'exercice 52 € vaut 6,20 €. Le taux sans risque annuel (actuariel) est de 3 %. Selon la parité call-put, quelle est la valeur du put européen de même prix d'exercice et de même échéance ? Réponse en euros, 2 décimales.",
+      "expected_value": 6.69,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.02
+      },
+      "unit": "€",
+      "decimals": 2,
+      "explanation": "P = C − S + K/(1 + r)ᵀ = 6,20 − 50 + 52/1,03 = 6,20 − 50 + 50,485 ≈ 6,69 €. Oublier d'actualiser le prix d'exercice donnerait 6,20 − 50 + 52 = 8,20 €. Le put vaut plus que le call alors qu'il a une valeur intrinsèque de 2 € seulement : sa valeur temps reste importante."
+    },
+    {
+      "id": "ue2-marches-optn-0005",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "evaluation-options",
+      "difficulty": 3,
+      "tags": [
+        "Black-Scholes",
+        "call européen"
+      ],
+      "source_ref": "Modèle de Black et Scholes (1973) : C = S N(d₁) − K e^(−rT) N(d₂)",
+      "verified": true,
+      "estimated_seconds": 240,
+      "statement": "On évalue un call européen sur l'action Galen, qui ne verse pas de dividende, avec le modèle de Black et Scholes : C = S × N(d₁) − K × e^(−rT) × N(d₂). Données : cours S = 80 € ; prix d'exercice K = 75 € ; échéance T = 0,5 an ; taux sans risque continu r = 2 % ; volatilité σ = 30 %. Les calculs préalables donnent d₁ = 0,4574 et d₂ = 0,2453, d'où N(d₁) = 0,6763 et N(d₂) = 0,5969 ; e^(−0,01) = 0,99005. Calculez la valeur du call, en euros (2 décimales).",
+      "expected_value": 9.78,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "unit": "€",
+      "decimals": 2,
+      "explanation": "S × N(d₁) = 80 × 0,6763 = 54,104. K × e^(−rT) = 75 × 0,99005 = 74,254 ; × N(d₂) = 74,254 × 0,5969 ≈ 44,322. C ≈ 54,104 − 44,322 ≈ 9,78 €. Valeur intrinsèque 5 € ; valeur temps 4,78 €. Sans actualisation du prix d'exercice, on obtiendrait 54,104 − 75 × 0,5969 ≈ 9,34 € (erreur). Contrôle de d₁ : [ln(80/75) + (0,02 + 0,045) × 0,5]/(0,30 × √0,5) = (0,06454 + 0,0325)/0,21213 ≈ 0,4574 ; d₂ = 0,4574 − 0,2121 = 0,2453."
+    },
+    {
+      "id": "ue2-marches-optn-0006",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "evaluation-options",
+      "difficulty": 3,
+      "tags": [
+        "modèle binomial",
+        "probabilité risque-neutre",
+        "delta"
+      ],
+      "source_ref": "Modèle binomial (Cox, Ross et Rubinstein, 1979) à une période ; parité call-put",
+      "verified": true,
+      "estimated_seconds": 780,
+      "title": "Option sur l'action Médran : modèle binomial à une période",
+      "context": "L'action Médran, qui ne verse pas de dividende, cote 100 €. On suppose que dans un an son cours ne peut prendre que deux valeurs : 120 € (hausse, u = 1,2) ou 85 € (baisse, d = 0,85). Le taux sans risque annuel est de 4 % (taux actuariel, sur la période).\n\nOn souhaite évaluer un call européen d'échéance 1 an et de prix d'exercice 100 €, puis le put de mêmes caractéristiques.\n\nRappels : probabilité risque-neutre p = (1 + r − d)/(u − d) ; valeur de l'option = [p × valeur en cas de hausse + (1 − p) × valeur en cas de baisse]/(1 + r).",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "Calculez la probabilité risque-neutre de hausse p (4 décimales).",
+          "points": 2,
+          "expected_value": 0.5429,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.001
+          },
+          "decimals": 4,
+          "explanation": "p = (1,04 − 0,85)/(1,20 − 0,85) = 0,19/0,35 ≈ 0,5429."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "prompt": "Calculez la valeur du call aujourd'hui, en euros (2 décimales).",
+          "points": 2,
+          "expected_value": 10.44,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.02
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "Valeurs à l'échéance : C_u = max(120 − 100 ; 0) = 20 € ; C_d = max(85 − 100 ; 0) = 0. C = 0,5429 × 20/1,04 ≈ 10,44 €."
+        },
+        {
+          "id": "q3",
+          "kind": "numeric",
+          "prompt": "Calculez le ratio de couverture (delta), c'est-à-dire le nombre d'actions à détenir pour répliquer un call (4 décimales).",
+          "points": 2,
+          "expected_value": 0.5714,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.001
+          },
+          "decimals": 4,
+          "explanation": "Δ = (C_u − C_d)/(S_u − S_d) = (20 − 0)/(120 − 85) = 0,5714. Vérification par réplication : acheter 0,5714 action (57,14 €) et emprunter B tel que 0,5714 × 85 = B × 1,04, soit B ≈ 46,70 € ; coût net 57,14 − 46,70 = 10,44 €, valeur du call."
+        },
+        {
+          "id": "q4",
+          "kind": "numeric",
+          "prompt": "Déduisez de la parité call-put la valeur du put européen de prix d'exercice 100 €, en euros (2 décimales).",
+          "points": 2,
+          "expected_value": 6.59,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.02
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "P = C − S + K/(1 + r) = 10,44 − 100 + 100/1,04 = 10,44 − 100 + 96,15 ≈ 6,59 €. Contrôle direct : P_u = 0, P_d = 15 € ; P = (1 − 0,5429) × 15/1,04 ≈ 6,59 €."
+        },
+        {
+          "id": "q5",
+          "kind": "open",
+          "prompt": "Pourquoi la valeur du call ne dépend-elle pas de la probabilité réelle de hausse de l'action anticipée par les investisseurs ?",
+          "points": 2,
+          "model_answer": "Le call peut être répliqué exactement par un portefeuille composé de 0,5714 action et d'un emprunt au taux sans risque : ce portefeuille a les mêmes flux que le call dans les deux états. Par absence d'opportunité d'arbitrage, le call vaut le coût de ce portefeuille, qui ne dépend que du cours actuel, de u, d, r et du prix d'exercice. Les anticipations des investisseurs sont déjà intégrées dans le cours de l'action. La probabilité p est un artifice de calcul (monde risque-neutre où tout actif rapporte le taux sans risque) et non une probabilité réelle.",
+          "key_points": [
+            "Réplication de l'option par actions et emprunt sans risque",
+            "Absence d'opportunité d'arbitrage : valeur = coût du portefeuille de réplication",
+            "Les anticipations sont déjà dans le cours de l'action",
+            "p est une probabilité risque-neutre, pas une probabilité réelle"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le modèle binomial à une période évalue l'option par réplication ou, de façon équivalente, par actualisation au taux sans risque de son espérance sous probabilité risque-neutre. La parité call-put fournit le put et un contrôle de cohérence."
+    }
+  ]
+}

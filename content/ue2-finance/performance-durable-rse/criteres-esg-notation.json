@@ -1,0 +1,145 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-rse-esg-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "performance-durable-rse",
+      "notion": "criteres-esg-notation",
+      "difficulty": 1,
+      "tags": [
+        "ISR",
+        "best-in-class"
+      ],
+      "source_ref": "Approches de gestion ISR (exclusion, best-in-class, best-in-universe, best-effort, engagement) ; règl. (UE) 2019/2088 (SFDR) pour le cadre de transparence",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Un fonds actions sélectionne, dans chaque secteur d'activité, les entreprises les mieux notées sur les critères ESG, sans écarter aucun secteur a priori. Quelle approche ISR applique-t-il ?",
+      "options": [
+        "L'exclusion sectorielle",
+        "L'approche best-effort",
+        "L'approche best-in-class",
+        "L'engagement actionnarial"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Le best-in-class retient les émetteurs les mieux notés au sein de chaque secteur, ce qui conserve une diversification sectorielle (option 3). L'exclusion sectorielle (option 1) écarte au contraire des secteurs entiers (charbon, armement, tabac…). Le best-effort (option 2) privilégie les émetteurs qui progressent, quel que soit leur niveau actuel. L'engagement actionnarial (option 4) consiste à dialoguer avec les entreprises et à voter en assemblée pour faire évoluer leurs pratiques : ce n'est pas une règle de sélection."
+    },
+    {
+      "id": "ue2-rse-esg-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "performance-durable-rse",
+      "notion": "criteres-esg-notation",
+      "difficulty": 2,
+      "tags": [
+        "notation extra-financière",
+        "matérialité financière"
+      ],
+      "source_ref": "Méthodologies usuelles des agences de notation extra-financière (exposition aux risques ESG matériels et gestion de ces risques, comparaison sectorielle) ; règl. (UE) 2024/3005 (transparence des méthodes)",
+      "verified": true,
+      "estimated_seconds": 75,
+      "statement": "Un gérant s'étonne qu'un cimentier, très émetteur de CO₂, obtienne d'une agence une meilleure note ESG qu'un éditeur de logiciels. Quelle explication est la plus cohérente avec la méthode de la plupart des agences ?",
+      "options": [
+        "La note ESG est une note de solvabilité : le cimentier est simplement moins endetté que l'éditeur",
+        "La note ESG mesure l'impact absolu de l'entreprise sur l'environnement : l'agence a nécessairement commis une erreur",
+        "La note ESG ne porte que sur la gouvernance, qui est meilleure chez le cimentier",
+        "La note ESG apprécie l'exposition aux risques ESG matériels du secteur et la qualité de leur gestion : le cimentier peut gérer ses risques mieux que ses pairs"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "La plupart des notations ESG relèvent de la matérialité financière : elles évaluent l'exposition de l'émetteur aux enjeux ESG pertinents pour son secteur et la manière dont il les gère, souvent par comparaison avec ses pairs (option 4). Une note élevée ne signifie donc pas un faible impact. L'option 1 confond note ESG et note de crédit. L'option 2 prête à la note un objet (l'impact absolu) qu'elle n'a généralement pas. L'option 3 est fausse : la note couvre les trois piliers E, S et G, avec des pondérations propres au secteur."
+    },
+    {
+      "id": "ue2-rse-esg-0003",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "performance-durable-rse",
+      "notion": "criteres-esg-notation",
+      "difficulty": 2,
+      "tags": [
+        "coût du capital",
+        "risque climatique",
+        "évaluation"
+      ],
+      "source_ref": "Évaluation par actualisation des flux : un risque est traduit soit dans les flux (scénarios), soit dans le taux ; MEDAF k_CP = r_f + β × prime",
+      "verified": true,
+      "estimated_seconds": 75,
+      "statement": "Un analyste évalue par DCF une société exposée au risque de transition climatique. Ses flux prévisionnels intègrent déjà un coût du carbone croissant tiré d'un scénario de transition. Il propose d'ajouter en plus une prime de 2 points au coût des capitaux propres au titre du « risque climatique ». Quelle appréciation porter sur cette proposition ?",
+      "options": [
+        "Elle est indispensable, car le MEDAF ne peut en aucun cas intégrer un risque climatique",
+        "Elle risque de compter deux fois le même risque : une prime ne se justifie que pour un risque qui n'est pas déjà traduit dans les flux",
+        "La prime devrait plutôt être ajoutée au coût de la dette après impôt, car seuls les prêteurs supportent le risque climatique",
+        "Elle est sans effet sur la valeur, car la prime s'applique à la fois aux flux explicites et à la valeur terminale"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Un risque doit être intégré une seule fois : soit dans les flux (scénario, coût du carbone), soit dans le taux d'actualisation. Ajouter une prime à un taux appliqué à des flux déjà pénalisés sous-évalue la société (option 2). L'option 1 est excessive : le risque de transition peut avoir une composante systématique (bêta) et une prime spécifique reste possible si le risque n'est pas dans les flux. L'option 3 est fausse : les actionnaires, créanciers résiduels, supportent le risque en premier. L'option 4 est fausse : une hausse du taux réduit à la fois la valeur des flux explicites et la valeur terminale, donc la valeur."
+    },
+    {
+      "id": "ue2-rse-esg-0004",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "performance-durable-rse",
+      "notion": "criteres-esg-notation",
+      "difficulty": 1,
+      "tags": [
+        "notation extra-financière",
+        "notation sollicitée"
+      ],
+      "source_ref": "Distinction notation extra-financière sollicitée / non sollicitée (pratiques des agences)",
+      "verified": true,
+      "estimated_seconds": 40,
+      "statement": "Une notation extra-financière non sollicitée est établie à la demande et aux frais de l'entreprise notée.",
+      "answer": false,
+      "justification": "Faux : c'est la notation sollicitée qui est demandée et payée par l'entreprise ; la notation non sollicitée est établie pour les investisseurs.",
+      "explanation": "La notation non sollicitée (ou déclarative) est produite par l'agence pour ses clients investisseurs, à partir des informations publiques, de questionnaires et du suivi des controverses. La notation sollicitée est commandée par l'entreprise, qui donne accès à des documents internes et à des entretiens ; elle sert notamment à la communication auprès des investisseurs ou à la préparation d'une émission durable."
+    },
+    {
+      "id": "ue2-rse-esg-0005",
+      "type": "flashcard",
+      "ue": "UE2",
+      "theme": "performance-durable-rse",
+      "notion": "criteres-esg-notation",
+      "difficulty": 1,
+      "tags": [
+        "risque ESG",
+        "valeur"
+      ],
+      "source_ref": "Règl. (UE) 2019/2088 (SFDR), art. 2 (risque en matière de durabilité) ; évaluation par actualisation des flux",
+      "verified": true,
+      "estimated_seconds": 45,
+      "front": "Par quels canaux un risque ESG peut-il affecter la valeur d'une entreprise ?",
+      "back": "1. Flux de trésorerie : coût du carbone, amendes et litiges, perte de clients, investissements de mise en conformité.\n2. Actifs : actifs échoués, dépréciations, durées d'utilité raccourcies.\n3. Coût de la dette : marges indexées sur des objectifs ESG, dégradation de la notation de crédit.\n4. Coût des capitaux propres : base d'investisseurs réduite (exclusions), risque systématique de transition.",
+      "explanation": "Le règlement SFDR définit le risque en matière de durabilité comme un événement ou une situation dans le domaine environnemental, social ou de gouvernance qui, s'il survient, pourrait avoir une incidence négative importante sur la valeur d'un investissement. En évaluation, chaque risque est traduit soit dans les flux, soit dans le taux, sans double comptage."
+    },
+    {
+      "id": "ue2-rse-esg-0006",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "performance-durable-rse",
+      "notion": "criteres-esg-notation",
+      "difficulty": 2,
+      "tags": [
+        "CMPC",
+        "MEDAF",
+        "prime de risque ESG"
+      ],
+      "source_ref": "MEDAF k_CP = r_f + β × prime de marché (+ prime spécifique) ; CMPC = k_CP × CP/V + k_D × (1 − t) × D/V",
+      "verified": true,
+      "estimated_seconds": 240,
+      "statement": "Un analyste évalue la société Terrel, exposée à des controverses environnementales qu'il n'a pas traduites dans ses flux prévisionnels. Il ajoute au coût des capitaux propres issu du MEDAF une prime spécifique de 1 point. Données : taux sans risque 3 % ; prime de risque du marché 6 % ; bêta des capitaux propres 1,1 ; coût de la dette avant impôt 4,5 % ; taux d'IS 25 % ; valeur de marché des capitaux propres 700 M€ ; valeur de marché de la dette nette 300 M€. Calculez le CMPC retenu par l'analyste, en pourcentage arrondi au centième (ex. 7,25 pour 7,25 %).",
+      "expected_value": 8.43,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "decimals": 2,
+      "explanation": "1) Coût des capitaux propres : 3 % + 1,1 × 6 % + 1 % = 10,6 %. 2) Coût de la dette après impôt : 4,5 % × (1 − 0,25) = 3,375 %. 3) Poids : CP = 700 / 1 000 = 70 % ; D = 30 %. 4) CMPC = 0,7 × 10,6 % + 0,3 × 3,375 % = 7,42 % + 1,0125 % ≈ 8,43 %. Sans la prime spécifique, on obtiendrait 7,73 % ; en oubliant l'économie d'impôt sur les intérêts, 8,77 %. La prime n'est justifiée que parce que le risque n'a pas été intégré aux flux : sinon, elle compterait deux fois le même risque."
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-contrat-deseq-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "environnement-contractuel",
+      "notion": "desequilibre-rupture-brutale",
+      "difficulty": 2,
+      "tags": [
+        "rupture brutale",
+        "préavis",
+        "relation commerciale établie"
+      ],
+      "statement": "Quelle affirmation relative à la rupture brutale d'une relation commerciale établie (C. com. L442-1 II) est exacte ?",
+      "options": [
+        "Seule la rupture d'un contrat écrit à durée indéterminée peut être sanctionnée",
+        "La victime obtient réparation de la totalité du chiffre d'affaires qu'elle aurait réalisé jusqu'au terme de la relation",
+        "La responsabilité de l'auteur ne peut pas être engagée pour durée insuffisante du préavis dès lors qu'il a respecté un préavis de dix-huit mois",
+        "Une diminution importante et imposée du volume des commandes ne peut pas constituer une rupture"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Depuis l'ordonnance du 24 avril 2019, l'article L442-1 II précise que la responsabilité ne peut pas être engagée pour cause de durée insuffisante dès lors qu'un préavis de dix-huit mois a été respecté (option 3). L'option 1 est fausse : une relation établie peut résulter d'une succession de contrats ou de simples commandes régulières, sans contrat écrit. L'option 2 est fausse : seul le préjudice né de la brutalité est réparé, en général la marge perdue pendant le préavis manquant. L'option 4 est fausse : le texte vise expressément la rupture « même partielle ».",
+      "source_ref": "C. com. L442-1 II",
+      "estimated_seconds": 75,
+      "verified": true
+    },
+    {
+      "id": "ue1-contrat-deseq-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "environnement-contractuel",
+      "notion": "desequilibre-rupture-brutale",
+      "difficulty": 3,
+      "tags": [
+        "déséquilibre significatif",
+        "article 1171",
+        "L442-1",
+        "prix"
+      ],
+      "statement": "Un distributeur impose à un fournisseur de produits d'entretien, sans négociation effective, un prix d'achat très inférieur au prix du marché, figurant dans ses conditions générales d'achat. Le fournisseur veut contester ce prix sur le fondement du déséquilibre significatif. Quelle affirmation est exacte ?",
+      "options": [
+        "Le fournisseur peut obtenir sur le fondement de l'article 1171 du Code civil que la clause de prix soit réputée non écrite",
+        "Le déséquilibre significatif ne peut jamais porter sur le prix, quel que soit le texte invoqué",
+        "Le prix ne peut être contesté que sur le fondement de la lésion, admise entre professionnels",
+        "Sur le fondement de l'article L442-1 I 2° du Code de commerce, le déséquilibre significatif peut résulter d'une inadéquation du prix à la valeur de la prestation"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Dans les relations entre professionnels de la production et de la distribution, la Cour de cassation admet que le déséquilibre significatif sanctionné par le Code de commerce peut résulter d'une inadéquation du prix au bien vendu (Cass. com., 25 janv. 2017, Galec) : option 4. L'article 1171 du Code civil exclut au contraire expressément l'adéquation du prix à la prestation de son contrôle (option 1), et le texte spécial du Code de commerce prime lorsqu'il s'applique. L'option 2 est donc trop générale. L'option 3 est fausse : la lésion n'est pas une cause générale de nullité des contrats (C. civ. art. 1168).",
+      "source_ref": "C. civ. art. 1168 et 1171 ; C. com. L442-1 I 2° ; Cass. com., 25 janv. 2017, n° 15-23.547",
+      "estimated_seconds": 90,
+      "verified": true
+    },
+    {
+      "id": "ue1-contrat-deseq-0003",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "environnement-contractuel",
+      "notion": "desequilibre-rupture-brutale",
+      "difficulty": 3,
+      "tags": [
+        "rupture brutale",
+        "préavis manquant",
+        "marge sur coûts variables"
+      ],
+      "statement": "La SAS Optima, fournisseur de pièces détachées, travaillait depuis huit ans avec la SA Garonne, qui lui notifie par écrit la fin de leur relation avec un préavis de trois mois. Le juge estime que, compte tenu de l'ancienneté et de la dépendance économique, un préavis de neuf mois aurait été raisonnable. Le chiffre d'affaires annuel moyen d'Optima avec Garonne sur les trois derniers exercices est de 900 000 € HT, et son taux de marge sur coûts variables est de 30 %. Calculez l'indemnité due par Garonne au titre de la rupture brutale, en euros.",
+      "expected_value": 135000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Le préjudice réparable est la marge dont Optima a été privée pendant le préavis manquant.\nPréavis manquant : 9 − 3 = 6 mois.\nMarge annuelle : 900 000 × 30 % = 270 000 €.\nIndemnité : 270 000 × 6 / 12 = 135 000 €.\nErreurs classiques : retenir le chiffre d'affaires et non la marge (450 000 €), ou indemniser la totalité du préavis raisonnable sans déduire le préavis accordé (202 500 €).",
+      "source_ref": "C. com. L442-1 II",
+      "estimated_seconds": 180,
+      "verified": true
+    },
+    {
+      "id": "ue1-contrat-deseq-0004",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "environnement-contractuel",
+      "notion": "desequilibre-rupture-brutale",
+      "difficulty": 3,
+      "tags": [
+        "rupture brutale",
+        "provision pour litige",
+        "transaction",
+        "écriture"
+      ],
+      "statement": "Au 31/12/N, la SA Garonne, assignée par un ancien fournisseur pour rupture brutale de relation commerciale établie, avait constitué une provision pour litige de 90 000 € (compte 1511 « Provisions pour litiges », dotation au compte 6875). Le 20 avril N+1, une transaction met fin au litige : Garonne verse au fournisseur une indemnité de 75 000 € par virement. Dans le plan de comptes de Garonne, l'indemnité est enregistrée au compte 6788 « Charges exceptionnelles diverses » et la reprise de provision au compte 7875 « Reprises sur provisions exceptionnelles ». Comptabilisez en une seule écriture le versement de l'indemnité et la reprise de la provision.",
+      "date": "20/04/N+1",
+      "entries": [
+        {
+          "account": "6788",
+          "label": "Indemnité transactionnelle de rupture",
+          "debit": 75000,
+          "credit": 0
+        },
+        {
+          "account": "1511",
+          "label": "Reprise de la provision pour litige",
+          "debit": 90000,
+          "credit": 0
+        },
+        {
+          "account": "512",
+          "label": "Banque",
+          "debit": 0,
+          "credit": 75000
+        },
+        {
+          "account": "7875",
+          "label": "Reprise sur provision exceptionnelle",
+          "debit": 0,
+          "credit": 90000
+        }
+      ],
+      "explanation": "La provision devient sans objet lorsque le litige est éteint par la transaction : elle est reprise en totalité (90 000 €) au compte 7875, et la charge réelle (75 000 €) est constatée au compte 6788, conformément aux conventions de l'énoncé. L'effet net sur le résultat de N+1 est un produit de 15 000 € (90 000 − 75 000), qui traduit la surestimation du risque en N. Le classement des comptes 67, 77 et 687/787 a été remanié par le règlement ANC 2022-06 (exercices ouverts depuis le 1er janvier 2025) : c'est pourquoi l'énoncé impose les comptes ; le raisonnement (charge réelle, reprise intégrale de la provision) n'en dépend pas. Erreur classique : ne reprendre que 75 000 € ou passer seulement l'écart de 15 000 €, ce qui ne respecte pas le principe de non-compensation.",
+      "source_ref": "PCG art. 322-1 s. (provisions) ; comptes 1511, 6788 et 7875 imposés par l'énoncé ; C. com. L442-1 II",
+      "estimated_seconds": 240,
+      "verified": true
+    },
+    {
+      "id": "ue1-contrat-deseq-0005",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "environnement-contractuel",
+      "notion": "desequilibre-rupture-brutale",
+      "difficulty": 2,
+      "tags": [
+        "déséquilibre significatif",
+        "amende civile",
+        "contrat d'adhésion",
+        "grande distribution"
+      ],
+      "title": "Biscuiterie Ondine et ses conditions de référencement",
+      "context": "La SAS Biscuiterie Ondine, PME de 60 salariés, vend ses biscuits à la SA Hypermarchés du Centre, distributeur qui représente 35 % de ses ventes.\nLe contrat annuel, rédigé par le distributeur et présenté comme non négociable, comporte notamment :\n- une clause autorisant le distributeur à déduire d'office de ses paiements toute pénalité qu'il estime due, sans justification ni débat contradictoire ;\n- une clause de « coopération commerciale » de 4 % du chiffre d'affaires, sans service précisément identifié en contrepartie ;\n- une clause permettant au seul distributeur de résilier le contrat sans préavis.\nLe ministre de l'Économie, alerté par plusieurs fournisseurs, envisage d'agir contre le distributeur. Celui-ci a réalisé en France, au cours du dernier exercice clos, un chiffre d'affaires HT de 2,4 milliards d'euros ; les avantages indûment obtenus de l'ensemble des fournisseurs sont évalués à 6 M€.",
+      "sub_questions": [
+        {
+          "id": "q1-fondement",
+          "kind": "mcq",
+          "prompt": "Quel est le fondement le plus approprié pour sanctionner la clause de déduction d'office des pénalités ?",
+          "points": 2,
+          "options": [
+            "C. consom. L212-1 (clauses abusives)",
+            "C. com. L442-1 I 2° (soumission à un déséquilibre significatif)",
+            "C. civ. art. 1170 (obligation essentielle)",
+            "C. com. L442-1 II (rupture brutale)"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "Entre professionnels de la production et de la distribution, la soumission à des obligations créant un déséquilibre significatif relève de L442-1 I 2° (option 2). Le Code de la consommation (option 1) ne protège pas un fournisseur professionnel dans ses rapports avec un distributeur. L'article 1170 (option 3) vise la clause qui prive de sa substance l'obligation essentielle du débiteur. Aucune relation n'a encore été rompue (option 4)."
+        },
+        {
+          "id": "q2-1171",
+          "kind": "true_false",
+          "prompt": "L'article 1171 du Code civil s'applique à toute clause d'un contrat de gré à gré, même librement négociée.",
+          "points": 1,
+          "answer": false,
+          "explanation": "Faux. L'article 1171 ne s'applique qu'aux contrats d'adhésion et aux seules clauses non négociables, déterminées à l'avance par l'une des parties."
+        },
+        {
+          "id": "q3-amende",
+          "kind": "numeric",
+          "prompt": "Calculez le montant maximal de l'amende civile encourue par le distributeur. Réponse en millions d'euros.",
+          "points": 3,
+          "expected_value": 120,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "M€",
+          "decimals": 0,
+          "explanation": "L'amende civile est plafonnée au plus élevé de trois montants (C. com. L442-4) : 5 M€ ; le triple des avantages indûment obtenus, soit 3 × 6 = 18 M€ ; 5 % du chiffre d'affaires HT réalisé en France, soit 5 % × 2 400 = 120 M€. Plafond : 120 M€. Erreur classique : retenir 18 M€ ou 5 M€."
+        },
+        {
+          "id": "q4-analyse",
+          "kind": "open",
+          "prompt": "Montrez que les éléments constitutifs du déséquilibre significatif sont réunis et indiquez les sanctions civiles dont dispose le ministre, en dehors de l'amende.",
+          "points": 4,
+          "model_answer": "Deux éléments doivent être établis. La soumission ou tentative de soumission : le contrat est présenté comme non négociable par un distributeur qui représente 35 % des ventes d'Ondine, ce qui révèle l'absence de négociation effective et un rapport de force défavorable au fournisseur. Le déséquilibre significatif : la déduction d'office de pénalités sans justification, la faculté de résiliation sans préavis réservée au seul distributeur créent une asymétrie de droits et d'obligations sans contrepartie ; la coopération commerciale sans service identifié peut aussi être qualifiée d'avantage sans contrepartie (L442-1 I 1°). Le ministre peut demander la cessation des pratiques, la nullité des clauses, la répétition de l'indu au profit des fournisseurs et des dommages-intérêts, en plus de l'amende civile (L442-4). La clause de résiliation sans préavis pourrait aussi conduire à une rupture brutale si elle était mise en œuvre.",
+          "key_points": [
+            "Soumission : contrat non négociable, poids du distributeur (35 % des ventes)",
+            "Déséquilibre : déductions d'office, résiliation unilatérale sans préavis, absence de réciprocité",
+            "Coopération commerciale sans contrepartie : avantage sans contrepartie (L442-1 I 1°)",
+            "Sanctions L442-4 : cessation, nullité des clauses, restitution de l'indu, dommages-intérêts"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas porte sur le déséquilibre significatif dans les relations entre fournisseurs et distributeurs (L442-1 I), son articulation avec le droit commun (art. 1171, limité aux contrats d'adhésion) et les sanctions de l'action du ministre de l'Économie (L442-4).",
+      "source_ref": "C. com. L442-1 I et L442-4 ; C. civ. art. 1171",
+      "estimated_seconds": 720,
+      "verified": true
+    }
+  ]
+}

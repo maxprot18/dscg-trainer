@@ -1,0 +1,247 @@
+{
+  "exercises": [
+    {
+      "id": "ue3-pilproc-abc-0001",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "pilotage-processus-abc",
+      "difficulty": 1,
+      "tags": [
+        "lean",
+        "gaspillages",
+        "muda"
+      ],
+      "source_ref": "T. Ohno, système de production Toyota : les sept gaspillages (muda)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Dans la démarche lean issue du système de production Toyota, lequel de ces éléments ne fait pas partie des gaspillages (muda) à éliminer ?",
+      "options": [
+        "La surproduction (produire plus ou plus tôt que la demande)",
+        "Les stocks excédentaires",
+        "Les temps d'attente entre deux opérations",
+        "La maintenance préventive des équipements"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'option 4 est la bonne réponse : la maintenance préventive n'est pas un gaspillage, elle limite les pannes et les défauts et contribue au contraire à la fluidité du flux. Les options 1, 2 et 3 sont des gaspillages classiques du lean : la surproduction (souvent présentée comme le pire, car elle engendre stocks et transports), les stocks excédentaires (immobilisation, risque d'obsolescence, problèmes masqués) et les attentes (ressources inoccupées). Les autres muda sont les transports, les opérations inutiles, les mouvements inutiles et les défauts."
+    },
+    {
+      "id": "ue3-pilproc-abc-0002",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "pilotage-processus-abc",
+      "difficulty": 2,
+      "tags": [
+        "ABC",
+        "coûts complets",
+        "petites séries"
+      ],
+      "source_ref": "R. Cooper et R.S. Kaplan (1988), méthode ABC ; programme DSCG UE3, pilotage des processus",
+      "verified": true,
+      "estimated_seconds": 75,
+      "statement": "Une entreprise imputait ses charges indirectes de production aux produits sur la base des heures machine. Elle adopte la méthode ABC et répartit désormais le coût des lancements de fabrication selon le nombre de lots. Quel effet faut-il attendre, toutes choses égales par ailleurs, sur le coût unitaire des produits fabriqués en petites séries ?",
+      "options": [
+        "Il diminue, car les petites séries consomment peu d'heures machine",
+        "Il augmente, car chaque lot supporte le même coût de lancement réparti sur peu d'unités",
+        "Il reste inchangé, car le total des charges indirectes ne change pas",
+        "Il diminue, car la méthode ABC ne retient que les charges variables"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'option 2 est exacte : avec un inducteur « nombre de lots », le coût d'un lancement est le même quelle que soit la taille du lot ; réparti sur peu d'unités, il pèse lourd dans le coût unitaire. Avec une unité d'œuvre volumique (heures machine), les grandes séries supportaient une part excessive de ces charges et subventionnaient les petites séries. L'option 1 décrit l'ancienne logique volumique, justement critiquée. L'option 3 est fausse : le total des charges est inchangé, mais leur répartition entre produits change. L'option 4 est fausse : l'ABC est une méthode de coût complet, qui répartit l'ensemble des charges indirectes."
+    },
+    {
+      "id": "ue3-pilproc-abc-0003",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "pilotage-processus-abc",
+      "difficulty": 2,
+      "tags": [
+        "qualité",
+        "coûts de la non-qualité",
+        "défaillances externes"
+      ],
+      "source_ref": "Coûts d'obtention de la qualité : prévention, détection, défaillances internes et externes ; programme DSCG UE3, pilotage des processus",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Parmi les coûts suivants, lequel constitue un coût de défaillance externe ?",
+      "options": [
+        "Le coût des pièces rebutées en fin de ligne de production",
+        "Le coût de la formation des opérateurs aux procédures qualité",
+        "L'indemnité versée à un client pour une livraison non conforme",
+        "Le coût des contrôles par échantillonnage à la réception des matières"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'option 3 est exacte : une défaillance externe est détectée après la livraison au client (retours, garanties, indemnités, pénalités, perte d'image). L'option 1 est une défaillance interne : le défaut est détecté avant la livraison. L'option 2 est un coût de prévention, engagé pour éviter l'apparition des défauts. L'option 4 est un coût de détection (évaluation), engagé pour repérer les défauts. Seules les défaillances internes et externes forment les coûts de la non-qualité au sens strict."
+    },
+    {
+      "id": "ue3-pilproc-abc-0004",
+      "type": "true_false",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "pilotage-processus-abc",
+      "difficulty": 1,
+      "tags": [
+        "coût cible",
+        "target costing"
+      ],
+      "source_ref": "Méthode du coût cible (target costing) ; programme DSCG UE3, pilotage des processus",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Dans la démarche du coût cible, le coût cible est obtenu en ajoutant la marge souhaitée au coût de revient prévisionnel du produit.",
+      "answer": false,
+      "justification": "Faux : le coût cible se déduit du prix accepté par le marché, diminué de la marge cible.",
+      "explanation": "Le coût cible inverse la logique traditionnelle du « coût + marge » (qui fixe un prix à partir du coût). On part du prix que le marché est prêt à payer pour le produit, on en retranche la marge exigée par l'entreprise : coût cible = prix de marché − marge cible. On compare ensuite le coût estimé, avec les processus actuels, au coût cible ; l'écart doit être résorbé dès la conception (analyse de la valeur, simplification, choix de composants)."
+    },
+    {
+      "id": "ue3-pilproc-abc-0005",
+      "type": "numeric",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "pilotage-processus-abc",
+      "difficulty": 2,
+      "tags": [
+        "ABC",
+        "inducteurs",
+        "coût de revient"
+      ],
+      "source_ref": "R. Cooper et R.S. Kaplan (1988), méthode ABC ; programme DSCG UE3, pilotage des processus",
+      "verified": true,
+      "estimated_seconds": 210,
+      "statement": "Une entreprise applique la méthode ABC. Ses charges indirectes sont regroupées en trois centres de regroupement :\n- approvisionnement : 36 000 €, inducteur « nombre de commandes fournisseurs », 300 commandes ;\n- lancement de la production : 54 000 €, inducteur « nombre de lots », 150 lots ;\n- contrôle qualité : 20 000 €, inducteur « nombre de contrôles », 400 contrôles.\n\nLe modèle Luxe a été fabriqué à 1 000 unités au cours de la période. Il a nécessité 40 commandes fournisseurs, 50 lots et 100 contrôles. Ses charges directes (matières et main-d'œuvre) s'élèvent à 30,00 € par unité.\n\nCalculez le coût de revient unitaire du modèle Luxe, en euros, arrondi au centime.",
+      "expected_value": 57.8,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "€",
+      "decimals": 2,
+      "explanation": "Coûts unitaires des inducteurs : approvisionnement 36 000 ÷ 300 = 120 € par commande ; lancement 54 000 ÷ 150 = 360 € par lot ; contrôle 20 000 ÷ 400 = 50 € par contrôle. Charges indirectes du modèle Luxe : 40 × 120 + 50 × 360 + 100 × 50 = 4 800 + 18 000 + 5 000 = 27 800 €, soit 27,80 € par unité. Coût de revient unitaire = 30,00 + 27,80 = 57,80 €. Erreur classique : oublier les charges directes (27,80 €) ou un centre de regroupement."
+    },
+    {
+      "id": "ue3-pilproc-abc-0006",
+      "type": "numeric",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "pilotage-processus-abc",
+      "difficulty": 2,
+      "tags": [
+        "qualité",
+        "coûts de la non-qualité"
+      ],
+      "source_ref": "Coûts d'obtention de la qualité : prévention, détection, défaillances internes et externes ; programme DSCG UE3, pilotage des processus",
+      "verified": true,
+      "estimated_seconds": 150,
+      "statement": "Le contrôleur de gestion d'une entreprise industrielle recense les coûts suivants liés à la qualité pour l'exercice :\n- formation des opérateurs aux procédures qualité : 40 000 € ;\n- contrôles des matières à la réception : 25 000 € ;\n- étalonnage des appareils de mesure : 7 000 € ;\n- pièces rebutées en cours de fabrication : 60 000 € ;\n- retouches de produits défectueux détectés avant expédition : 18 000 € ;\n- remplacements de produits sous garantie : 35 000 € ;\n- pénalités versées aux clients pour livraisons non conformes : 12 000 €.\n\nCalculez le coût de la non-qualité au sens strict (défaillances internes et externes), en euros.",
+      "expected_value": 125000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Défaillances internes (défauts détectés avant livraison) : rebuts 60 000 + retouches 18 000 = 78 000 €. Défaillances externes (après livraison) : garanties 35 000 + pénalités 12 000 = 47 000 €. Coût de la non-qualité au sens strict = 78 000 + 47 000 = 125 000 €. La formation (40 000 €) est un coût de prévention ; les contrôles à réception (25 000 €) et l'étalonnage (7 000 €) sont des coûts de détection. Ajoutés aux défaillances, ils donnent le coût d'obtention de la qualité (197 000 €), qui n'est pas ce qui est demandé."
+    },
+    {
+      "id": "ue3-pilproc-abc-0007",
+      "type": "case_study",
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "pilotage-processus-abc",
+      "difficulty": 3,
+      "tags": [
+        "coût cible",
+        "ABC",
+        "ABM",
+        "analyse de la valeur"
+      ],
+      "source_ref": "Méthode du coût cible (target costing) ; R. Cooper et R.S. Kaplan (1988), méthode ABC ; ABM ; programme DSCG UE3, pilotage des processus",
+      "verified": true,
+      "estimated_seconds": 900,
+      "title": "Cycles Arvel : coût cible d'un vélo de ville",
+      "context": "Cycles Arvel prépare le lancement d'un vélo de ville à assistance électrique d'entrée de gamme. Le moteur et la batterie sont fournis et facturés à part par un partenaire ; Arvel fabrique le cadre et la transmission. L'étude de marché montre que le prix de vente hors taxe accepté par les distributeurs pour cette partie est de 180 € par vélo. La direction exige une marge de 15 % du prix de vente.\n\nVolume prévu : 6 000 unités par an, livrées en 2 000 commandes clients.\n\nCoût estimé avec les processus actuels, par unité :\n- matières et composants : 78 € ;\n- main-d'œuvre directe : 30 €.\n\nCharges indirectes, évaluées par la méthode ABC :\n- lancement de la production : 1 800 € par lot, lots de 150 unités ;\n- gestion des références de composants : 6 000 € par an et par référence ; le modèle utilise 25 références qui lui sont propres ;\n- préparation et expédition : 45 € par commande client.\n\nLe bureau d'études propose une reconception : utiliser des composants communs aux autres modèles, ce qui ramène à 15 le nombre de références propres au modèle, et passer à des lots de 300 unités. Les coûts directs et le coût d'expédition resteraient inchangés.",
+      "sub_questions": [
+        {
+          "id": "q1-cout-cible",
+          "kind": "numeric",
+          "prompt": "Calculez le coût cible unitaire de la partie fabriquée par Arvel, en euros.",
+          "points": 2,
+          "expected_value": 153,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Coût cible = prix de marché − marge cible = 180 − 15 % × 180 = 180 − 27 = 153 €. Erreur classique : calculer la marge sur le coût (180 ÷ 1,15 = 156,52 €), alors que la marge est exprimée en pourcentage du prix."
+        },
+        {
+          "id": "q2-cout-estime",
+          "kind": "numeric",
+          "prompt": "Calculez le coût estimé unitaire avec les processus actuels (charges directes et indirectes), en euros.",
+          "points": 2,
+          "expected_value": 160,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Charges indirectes par unité : lancement 1 800 ÷ 150 = 12 € ; références 25 × 6 000 ÷ 6 000 = 25 € ; expédition 45 × 2 000 ÷ 6 000 = 15 €, soit 52 €. Coût estimé = 78 + 30 + 52 = 160 €, supérieur de 7 € au coût cible de 153 €."
+        },
+        {
+          "id": "q3-cout-reconcu",
+          "kind": "numeric",
+          "prompt": "Calculez le coût estimé unitaire après la reconception proposée, en euros.",
+          "points": 3,
+          "expected_value": 144,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Lancement : 1 800 ÷ 300 = 6 € ; références : 15 × 6 000 ÷ 6 000 = 15 € ; expédition inchangée : 15 €. Charges indirectes = 36 € par unité. Coût estimé = 78 + 30 + 36 = 144 €, soit 9 € sous le coût cible. Erreur classique : modifier seulement l'un des deux inducteurs (150 € avec les seules références, 154 € avec les seuls lots)."
+        },
+        {
+          "id": "q4-abm",
+          "kind": "mcq",
+          "prompt": "Quelle logique de pilotage la reconception proposée illustre-t-elle ?",
+          "points": 2,
+          "options": [
+            "Une baisse du coût obtenue en réduisant la marge exigée",
+            "Une action sur les inducteurs de coûts (moins de références, moins de lots), conforme à la gestion par les activités (ABM)",
+            "Une simple réaffectation des charges indirectes à d'autres modèles, sans économie réelle",
+            "Une augmentation du prix de vente pour atteindre la marge cible"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "L'option 2 est exacte : l'ABM consiste à agir sur les causes des coûts, c'est-à-dire sur les inducteurs ; ici, moins de références propres et moins de lancements réduisent la consommation des activités. L'option 1 est fausse : la marge cible de 15 % est maintenue. L'option 3 est fausse : si les composants communs ne créent pas de références nouvelles, l'activité de gestion des références diminue réellement ; il faut toutefois vérifier que les ressources libérées sont effectivement supprimées ou redéployées. L'option 4 est fausse : le prix est une donnée du marché dans la démarche du coût cible."
+        },
+        {
+          "id": "q5-recommandation",
+          "kind": "open",
+          "prompt": "Faut-il lancer le produit dans sa version reconçue ? Discutez les conditions et les limites de ce raisonnement.",
+          "points": 3,
+          "model_answer": "La version actuelle (160 €) ne respecte pas le coût cible (153 €) : la lancer en l'état conduirait à une marge de 20 € par vélo, soit 11,1 % du prix au lieu de 15 %. La version reconçue (144 €) dégage une marge de 36 €, soit 20 % du prix, au-delà de la cible : le lancement est justifié sous conditions. Conditions : la mise en commun des composants ne doit pas dégrader la valeur perçue par les clients (fonctions attendues, design), ce que l'analyse de la valeur doit vérifier ; les lots de 300 unités augmentent les stocks et le délai de réponse, ce qui va à l'encontre du flux tiré et a un coût (stockage, obsolescence) non chiffré ici ; les économies d'activités ne sont réelles que si les ressources libérées (personnel de gestion des références, temps de réglage) sont supprimées ou redéployées. Enfin, les coûts par inducteur sont des moyennes historiques et le volume de 6 000 unités reste une prévision.",
+          "key_points": [
+            "Version actuelle hors coût cible (écart de 7 €) ; version reconçue sous le coût cible (marge de 36 €, 20 % du prix)",
+            "Vérifier que la valeur perçue par le client est préservée (analyse de la valeur)",
+            "Des lots plus grands augmentent les stocks : coût caché et tension avec le lean",
+            "Les économies ABC ne sont réelles que si les ressources libérées sont supprimées ou redéployées ; volume prévisionnel incertain"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Le cas articule le coût cible (déduit du prix de marché) et la méthode ABC, qui permet d'identifier les leviers de réduction du coût estimé : le nombre de références et la taille des lots. Coût cible 153 € ; coût estimé 160 € ; après reconception 144 €."
+    }
+  ]
+}

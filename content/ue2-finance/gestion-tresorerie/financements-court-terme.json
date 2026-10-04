@@ -1,0 +1,233 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-treso-fincourt-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "gestion-tresorerie",
+      "notion": "financements-court-terme",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "affacturage",
+        "risque d’impayé"
+      ],
+      "source_ref": "Techniques de mobilisation de créances : affacturage (subrogation et garantie de bonne fin) ; C. mon. fin., art. L. 313-24 (garantie du cédant Dailly)",
+      "estimated_seconds": 45,
+      "statement": "Une PME souhaite à la fois financer ses créances clients et se protéger contre le risque d’insolvabilité de ses clients. Quelle technique répond aux deux objectifs ?",
+      "options": [
+        "L’escompte de lettres de change",
+        "La cession de créances par bordereau Dailly",
+        "L’affacturage avec garantie",
+        "Le crédit de campagne"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L’affacturage avec garantie (option 3) combine financement, recouvrement et garantie contre l’insolvabilité des débiteurs : le factor ne peut pas se retourner contre l’adhérent pour une créance approuvée. L’escompte (option 1) est avec recours : un effet impayé est contrepassé au débit de l’entreprise. Dans la cession Dailly (option 2), le cédant reste garant solidaire du paiement. Le crédit de campagne (option 4) finance un besoin saisonnier sans mobiliser de créances ni couvrir le risque client."
+    },
+    {
+      "id": "ue2-treso-fincourt-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "gestion-tresorerie",
+      "notion": "financements-court-terme",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "NEU CP",
+        "billets de trésorerie",
+        "titres de créances négociables"
+      ],
+      "source_ref": "C. mon. fin., art. L. 213-1 A s. (titres de créances négociables) ; dispositions réglementaires d’application (montant unitaire minimal, durée)",
+      "estimated_seconds": 60,
+      "statement": "Parmi les affirmations suivantes sur les NEU CP (anciens billets de trésorerie), laquelle est exacte ?",
+      "options": [
+        "Ce sont des crédits bancaires accordés par une banque unique, remboursables à vue",
+        "Leur durée peut atteindre cinq ans, comme celle des obligations",
+        "Ils sont accessibles à toute entreprise quelle que soit sa taille, sans montant minimal",
+        "Ce sont des titres de créances négociables émis directement sur le marché monétaire, pour une durée d’un an au plus"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Les NEU CP sont des titres de créances négociables émis par les entreprises sur le marché monétaire, pour une durée d’un an au plus (option 4) : c’est un financement désintermédié, au coût proche des taux de marché. Ce ne sont pas des crédits bancaires (option 1). Au-delà d’un an, on parle de NEU MTN, non de NEU CP (option 2). Le montant unitaire minimal élevé (150 000 €) et les exigences d’information les réservent en pratique aux grandes entreprises (option 3)."
+    },
+    {
+      "id": "ue2-treso-fincourt-0003",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "gestion-tresorerie",
+      "notion": "financements-court-terme",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "cession Dailly",
+        "garantie"
+      ],
+      "source_ref": "C. mon. fin., art. L. 313-23 et L. 313-24",
+      "estimated_seconds": 45,
+      "statement": "Dans une cession de créances professionnelles par bordereau Dailly, l’établissement de crédit cessionnaire supporte seul le risque de défaillance du débiteur cédé, le cédant n’étant pas garant du paiement.",
+      "answer": false,
+      "justification": "Sauf convention contraire, le signataire du bordereau est garant solidaire du paiement des créances cédées : le risque d’impayé reste in fine à la charge du cédant.",
+      "explanation": "La cession Dailly transfère la propriété des créances à la banque, qui peut notifier la cession au débiteur, mais le cédant reste garant solidaire du paiement. Comme l’escompte, c’est un financement avec recours. Seul l’affacturage avec garantie transfère le risque d’insolvabilité du débiteur au factor."
+    },
+    {
+      "id": "ue2-treso-fincourt-0004",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "gestion-tresorerie",
+      "notion": "financements-court-terme",
+      "verified": true,
+      "difficulty": 3,
+      "tags": [
+        "découvert",
+        "dates de valeur",
+        "échelle d’intérêts"
+      ],
+      "source_ref": "Calcul des intérêts débiteurs par échelle d’intérêts sur soldes en dates de valeur (intérêts = Σ solde × jours × taux / 360)",
+      "estimated_seconds": 300,
+      "statement": "Le compte d’une entreprise présente un solde nul en valeur au 1er mars. Les opérations du mois sont : le 5 mars, prélèvement d’un fournisseur de 60 000 € ; le 12 mars, remise de chèques de 25 000 € ; le 20 mars, virement reçu de 15 000 €. Conditions bancaires : débits en valeur J − 1, remises de chèques en valeur J + 2, virements reçus en valeur J + 1 (jours calendaires). Le découvert est facturé 6 % l’an (base 360) ; le dernier solde court jusqu’au 31 mars inclus (soit jusqu’au 1er avril exclu). S’y ajoute une commission de plus fort découvert de 0,05 % sur le plus fort solde débiteur en valeur du mois. Calculez le total des agios de mars, en euros, arrondi au centime.",
+      "expected_value": 207.5,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "€",
+      "decimals": 2,
+      "explanation": "Dates de valeur : prélèvement le 4 mars, chèques le 14 mars, virement le 21 mars. Échelle : −60 000 du 4 au 14 mars (10 jours) = 600 000 ; −35 000 du 14 au 21 mars (7 jours) = 245 000 ; −20 000 du 21 mars au 1er avril (11 jours) = 220 000. Total des nombres débiteurs : 1 065 000. Intérêts : 1 065 000 × 6 % / 360 = 177,50 €. Commission de plus fort découvert : 60 000 × 0,05 % = 30 €. Total : 207,50 €. En raisonnant sur les dates d’opération (7, 8 et 12 jours), on trouverait seulement 156,67 € d’intérêts : les dates de valeur renchérissent le découvert."
+    },
+    {
+      "id": "ue2-treso-fincourt-0005",
+      "type": "journal_entry",
+      "ue": "UE2",
+      "theme": "gestion-tresorerie",
+      "notion": "financements-court-terme",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "escompte",
+        "agios",
+        "écriture"
+      ],
+      "source_ref": "PCG : comptes 5114 (Effets à l’escompte), 512 (Banques), 661 (Charges d’intérêts), 627 (Services bancaires et assimilés), 44566 (TVA sur autres biens et services)",
+      "estimated_seconds": 300,
+      "statement": "Le 10 mai, une entreprise remet à l’escompte une lettre de change de 18 000 € à échéance du 24 juin. La remise a déjà été comptabilisée (débit 5114, crédit 413). Conditions : taux d’escompte 4,8 % l’an (base 360), un jour de banque ajouté à la durée, commission de bordereau de 15 € HT soumise à TVA au taux de 20 %. Passez l’écriture de réception du bordereau d’escompte et du crédit en compte, en soldant directement le compte 5114 (sans utiliser le compte 519). Montants au centime.",
+      "date": "10/05/N",
+      "entries": [
+        {
+          "account": "512",
+          "label": "Banques (net crédité)",
+          "debit": 17871.6,
+          "credit": 0
+        },
+        {
+          "account": "661",
+          "label": "Charges d’intérêts (intérêts d’escompte)",
+          "debit": 110.4,
+          "credit": 0
+        },
+        {
+          "account": "627",
+          "label": "Services bancaires et assimilés (commission)",
+          "debit": 15,
+          "credit": 0
+        },
+        {
+          "account": "44566",
+          "label": "TVA sur autres biens et services",
+          "debit": 3,
+          "credit": 0
+        },
+        {
+          "account": "5114",
+          "label": "Effets à l’escompte",
+          "debit": 0,
+          "credit": 18000
+        }
+      ],
+      "explanation": "Durée : du 10 mai au 24 juin = 21 + 24 = 45 jours, plus un jour de banque = 46 jours. Intérêts : 18 000 × 4,8 % × 46 / 360 = 110,40 € (compte 661, ou 6616 « Intérêts bancaires et sur opérations de financement »). Commission : 15 € HT au compte 627 et 3 € de TVA déductible au compte 44566. Net crédité : 18 000 − 110,40 − 15 − 3 = 17 871,60 €. Le compte 5114 est soldé pour le nominal ; l’entreprise reste exposée au risque d’impayé jusqu’à l’échéance (escompte avec recours, engagement à mentionner en annexe)."
+    },
+    {
+      "id": "ue2-treso-fincourt-0006",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "gestion-tresorerie",
+      "notion": "financements-court-terme",
+      "verified": true,
+      "difficulty": 3,
+      "tags": [
+        "escompte",
+        "cession Dailly",
+        "coût réel",
+        "taux effectif"
+      ],
+      "source_ref": "Coût réel d’un financement : agios HT non récupérables × 360 / (net perçu × durée réelle) ; C. mon. fin., art. L. 313-23 s. (cession Dailly)",
+      "estimated_seconds": 840,
+      "title": "Mobil’Tex : choisir le financement de ses créances",
+      "context": "La société Mobil’Tex détient des créances clients de 120 000 € à échéance de 30 jours (durée réelle). Elle a besoin de cette somme dès aujourd’hui et compare trois solutions (année de 360 jours) :\n1. Escompte des effets acceptés correspondants : taux 5,4 % l’an, 2 jours de banque ajoutés à la durée, commissions forfaitaires de 150 € HT (TVA récupérable).\n2. Cession Dailly des mêmes créances : taux 5,6 % l’an, 1 jour de banque ajouté, frais de dossier de 50 € HT (TVA récupérable).\n3. Découvert autorisé au taux de 7 % l’an, sans commission, pendant 30 jours.\nPour comparer, on retient le coût réel (taux effectif) de chaque solution : agios HT × 360 / (montant net perçu HT × durée réelle en jours). La TVA récupérable sur les commissions n’est pas un coût. Mobil’Tex est une PME de 40 salariés ; ses clients sont des enseignes de la distribution, dont deux connaissent des difficultés.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez le montant total des agios HT de l’escompte, en euros.",
+          "expected_value": 726,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "Intérêts : 120 000 × 5,4 % × (30 + 2) / 360 = 576 €. Agios HT : 576 + 150 = 726 €. Net perçu HT : 120 000 − 726 = 119 274 €."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez le coût réel (taux effectif annuel) de l’escompte, en %, avec deux décimales.",
+          "expected_value": 7.3,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.02
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "726 × 360 / (119 274 × 30) = 7,30 %. Calculé à tort sur le nominal (726 / 120 000 × 12), on trouverait 7,26 % ; sur 32 jours au lieu de la durée réelle, 6,85 %. Le coût réel dépasse nettement le taux nominal de 5,4 % du fait des jours de banque et de la commission forfaitaire, lourde sur une durée courte."
+        },
+        {
+          "id": "q3",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Le coût réel de la cession Dailly est de 6,32 % environ. Quel classement, du moins coûteux au plus coûteux, est exact ?",
+          "options": [
+            "Escompte, Dailly, découvert",
+            "Dailly, escompte, découvert",
+            "Découvert, Dailly, escompte",
+            "Dailly, découvert, escompte"
+          ],
+          "answer": [
+            3
+          ],
+          "multiple": false,
+          "explanation": "Dailly : agios 120 000 × 5,6 % × 31 / 360 + 50 = 628,67 € ; coût réel 628,67 × 360 / (119 371,33 × 30) = 6,32 %. Découvert : 7 % (pas de commission, intérêts sur la durée réelle). Escompte : 7,30 %. Classement : Dailly, découvert, escompte (option 4). Les options 1 et 2 se fient au taux nominal de l’escompte (5,4 %), le plus bas en apparence ; l’option 3 place à tort le découvert devant la cession Dailly."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "points": 4,
+          "prompt": "Au-delà du coût, quels critères Mobil’Tex doit-elle prendre en compte ? Une autre solution mérite-t-elle d’être étudiée ?",
+          "model_answer": "Le coût réel favorise la cession Dailly, mais d’autres critères comptent. Risque : escompte et Dailly sont avec recours, l’entreprise reste exposée à l’impayé, préoccupant ici puisque deux clients sont en difficulté ; l’affacturage avec garantie transférerait ce risque au factor et externaliserait le recouvrement, pour un coût plus élevé (commission d’affacturage et de financement, retenue de garantie). Souplesse : le découvert s’ajuste au besoin réel au jour le jour mais il est révocable et plafonné ; l’escompte suppose des effets acceptés, le Dailly une gestion administrative des bordereaux. Disponibilité des lignes autorisées et relations bancaires, garanties exigées, image auprès des clients (notification). Les NEU CP sont inaccessibles à une PME de cette taille.",
+          "key_points": [
+            "Escompte et Dailly avec recours : risque d’impayé conservé, sensible vu les clients en difficulté",
+            "Affacturage avec garantie : transfert du risque et du recouvrement, coût supérieur",
+            "Souplesse, plafonds autorisés, révocabilité du découvert, contraintes administratives",
+            "NEU CP réservés aux grandes entreprises"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Coûts réels : escompte 7,30 %, Dailly 6,32 %, découvert 7 %. Le taux nominal ne suffit pas à comparer : jours de banque et commissions fixes pèsent lourd sur une durée de 30 jours. Le risque client oriente vers l’affacturage avec garantie."
+    }
+  ]
+}

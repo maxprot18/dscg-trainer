@@ -1,0 +1,237 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-risques-taux-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "couverture-taux",
+      "difficulty": 2,
+      "tags": [
+        "cap",
+        "option de taux"
+      ],
+      "source_ref": "Cap de taux : compensation = N × max(r_réf − r_cap ; 0) × d/360",
+      "verified": true,
+      "estimated_seconds": 120,
+      "statement": "La société Nohant a emprunté 10 M€ à Euribor 6 mois + 1 %, intérêts semestriels. Elle a acheté un cap au taux plafond de 4 % sur le même nominal et les mêmes périodes. Pour la période de 180 jours qui vient de commencer, l’Euribor 6 mois est fixé à 5 % (base de calcul : 360 jours). Quel est le flux généré par le cap pour cette période ?",
+      "options": [
+        "100 000 € reçus par Nohant",
+        "50 000 € versés par Nohant",
+        "Aucun flux : le cap ne joue que si l’Euribor dépasse le taux plafond majoré de la marge",
+        "50 000 € reçus par Nohant"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "L’Euribor (5 %) dépasse le taux plafond (4 %) : le vendeur du cap verse à Nohant 10 000 000 × (5 % − 4 %) × 180/360 = 50 000 € (option 4). Le coût de l’emprunt est ainsi plafonné à 4 % + 1 % = 5 %, hors prime. L’option 1 oublie de proratiser sur un semestre. L’option 2 inverse le sens : l’acheteur du cap reçoit, il n’a payé que la prime. L’option 3 confond : le cap porte sur le taux de référence, la marge restant toujours à la charge de l’emprunteur."
+    },
+    {
+      "id": "ue2-risques-taux-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "couverture-taux",
+      "difficulty": 1,
+      "tags": [
+        "swap de taux",
+        "payeur du fixe"
+      ],
+      "source_ref": "Swap de taux : échange de flux d’intérêts fixe contre variable sur un nominal notionnel",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "La société Orval est endettée à taux variable (Euribor 3 mois + marge) et craint une hausse des taux sur les cinq prochaines années. Elle souhaite figer son coût d’endettement, sans renégocier son emprunt. Quelle opération doit-elle conclure ?",
+      "options": [
+        "Un swap receveur du taux fixe et payeur du taux variable",
+        "L’achat d’un floor",
+        "La vente d’un cap",
+        "Un swap payeur du taux fixe et receveur du taux variable"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "En payant le fixe et en recevant l’Euribor 3 mois, Orval neutralise le variable de son emprunt : son coût devient taux fixe du swap + marge (option 4). Le swap inverse (option 1) transforme une dette fixe en dette variable. Le floor (option 2) protège contre la baisse des taux, utile à un prêteur. Vendre un cap (option 3) fait encaisser une prime mais expose Orval à verser la différence en cas de hausse : le risque est aggravé."
+    },
+    {
+      "id": "ue2-risques-taux-0003",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "couverture-taux",
+      "difficulty": 2,
+      "tags": [
+        "FRA",
+        "emprunt futur"
+      ],
+      "source_ref": "FRA : différentiel réglé en début de période = N × (r_réf − r_FRA) × d/360 / (1 + r_réf × d/360)",
+      "verified": true,
+      "estimated_seconds": 210,
+      "statement": "La société Pradel prévoit d’emprunter 5 000 000 € dans 3 mois pour 6 mois (180 jours). Pour se protéger contre une hausse des taux, elle achète un FRA 3 × 9 au taux garanti de 3,20 % sur ce nominal. À la date de fixation, l’Euribor 6 mois est de 3,80 %. Le différentiel est réglé au début de la période garantie, donc actualisé au taux de référence (intérêts simples, année de 360 jours). Quel montant Pradel reçoit-elle au titre du FRA (en euros, arrondi à l’euro) ?",
+      "expected_value": 14720,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Différentiel d’intérêts en fin de période : 5 000 000 × (3,80 % − 3,20 %) × 180/360 = 15 000 €. Réglé en début de période, il est actualisé : 15 000 / (1 + 3,80 % × 180/360) = 15 000 / 1,019 ≈ 14 720 €. Pradel, acheteuse, reçoit car le taux de référence dépasse le taux garanti ; ce montant compense le surcoût de son emprunt, dont le coût effectif revient à 3,20 % (hors marge). Erreur fréquente : oublier l’actualisation (15 000 €)."
+    },
+    {
+      "id": "ue2-risques-taux-0004",
+      "type": "journal_entry",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "couverture-taux",
+      "difficulty": 1,
+      "tags": [
+        "cap",
+        "prime d’option",
+        "compte 52"
+      ],
+      "source_ref": "PCG art. 628-1 s. (règl. ANC 2014-03 modifié par le règl. ANC 2015-05) ; comptes 52, 627, 512",
+      "verified": true,
+      "estimated_seconds": 120,
+      "statement": "Le 15 janvier N, la société Quintin achète à sa banque un cap de taux destiné à couvrir un emprunt à taux variable. Elle paie une prime de 42 000 € et une commission bancaire de 300 € HT (opération exonérée de TVA), prélevées sur son compte bancaire. Utilisez le compte 52 « Instruments financiers à terme et jetons détenus » pour la prime et le compte 627 pour la commission. Passez l’écriture du 15 janvier N.",
+      "date": "15/01/N",
+      "entries": [
+        {
+          "account": "52",
+          "label": "Instruments financiers à terme (prime du cap)",
+          "debit": 42000,
+          "credit": 0
+        },
+        {
+          "account": "627",
+          "label": "Services bancaires et assimilés",
+          "debit": 300,
+          "credit": 0
+        },
+        {
+          "account": "512",
+          "label": "Banque",
+          "debit": 0,
+          "credit": 42300
+        }
+      ],
+      "explanation": "La prime d’une option est enregistrée à l’actif, au compte 52, lors de son paiement. Dans une relation de couverture, elle est ensuite rapportée au résultat de façon symétrique à l’élément couvert, ici les charges d’intérêts de l’emprunt sur la durée du cap (règl. ANC 2015-05). La commission bancaire est une charge de la période (627). Le compte bancaire est crédité du total, 42 300 €."
+    },
+    {
+      "id": "ue2-risques-taux-0005",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "couverture-taux",
+      "difficulty": 3,
+      "tags": [
+        "swap de taux",
+        "IFRS 9",
+        "couverture de flux de trésorerie"
+      ],
+      "source_ref": "Swap de taux ; IFRS 9 §6.5.2 et §6.5.11 (règl. UE 2023/1803) ; PCG art. 628-1 s. (règl. ANC 2015-05)",
+      "verified": true,
+      "estimated_seconds": 780,
+      "title": "Belem : fixer le coût d’un emprunt variable",
+      "context": "La société Belem (logistique, comptes consolidés en IFRS) a emprunté 20 M€ sur 5 ans au taux Euribor 12 mois + 1 %, intérêts payés annuellement, remboursement in fine. Craignant une remontée des taux, elle conclut avec sa banque un swap de taux de même nominal, de mêmes dates et de même durée :\n- Belem paie à la banque un taux fixe de 2,90 % ;\n- Belem reçoit de la banque l’Euribor 12 mois ;\n- seul le différentiel net est réglé à chaque échéance.\n\nL’Euribor 12 mois retenu pour la première année est de 2,40 % ; on envisage un taux de 3,50 % pour la troisième année.\n\nLa directrice financière veut connaître le coût effectif de l’endettement et la manière dont le swap sera présenté dans les comptes consolidés. Un administrateur s’interroge : « Si les taux baissent, n’aurons-nous pas perdu de l’argent ? »",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "Pour la première année, calculez le différentiel net du swap pour Belem, en euros (positif s’il est reçu, négatif s’il est versé).",
+          "points": 2,
+          "expected_value": -100000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Belem paie 2,90 % et reçoit 2,40 % : différentiel = 20 000 000 × (2,40 % − 2,90 %) = − 100 000 €, versé à la banque."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "prompt": "Calculez la charge financière totale de la première année (intérêts de l’emprunt et différentiel du swap), en euros.",
+          "points": 2,
+          "expected_value": 780000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Intérêts de l’emprunt : 20 000 000 × (2,40 % + 1 %) = 680 000 €. Différentiel versé : 100 000 €. Total : 780 000 €, soit 3,90 % du nominal."
+        },
+        {
+          "id": "q3",
+          "kind": "mcq",
+          "prompt": "Avec un Euribor de 3,50 % en troisième année, quel est le coût effectif de l’endettement de Belem ?",
+          "points": 2,
+          "options": [
+            "4,50 %",
+            "3,90 %",
+            "2,90 %",
+            "3,50 %"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "Emprunt : 3,50 % + 1 % = 4,50 % ; swap : Belem reçoit 3,50 % et paie 2,90 %, soit un différentiel reçu de 0,60 %. Coût net : 4,50 % − 0,60 % = 3,90 % (option 2), identique à la première année : quel que soit l’Euribor, le coût est figé à taux fixe du swap + marge. L’option 1 ignore le swap ; l’option 3 oublie la marge de l’emprunt, que le swap ne couvre pas ; l’option 4 est l’Euribor seul."
+        },
+        {
+          "id": "q4",
+          "kind": "mcq",
+          "prompt": "En IFRS 9, si la relation est documentée et efficace, comment le swap est-il traité ?",
+          "points": 2,
+          "options": [
+            "Couverture de juste valeur : les variations de juste valeur du swap et de l’emprunt sont portées en résultat",
+            "Couverture de flux de trésorerie : la part efficace des variations de juste valeur du swap est portée en autres éléments du résultat global, puis reclassée en résultat au rythme des intérêts couverts",
+            "Le swap n’est pas comptabilisé au bilan ; seuls les différentiels réglés sont enregistrés en charges ou produits financiers",
+            "Couverture d’investissement net dans une activité à l’étranger"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "Le swap couvre la variabilité des flux d’intérêts futurs d’une dette variable : c’est une couverture de flux de trésorerie (IFRS 9 §6.5.2), avec une part efficace en autres éléments du résultat global reclassée en résultat quand les intérêts couverts affectent le résultat (§6.5.11), option 2. La couverture de juste valeur (option 1) viserait un swap qui rend variable une dette à taux fixe. En IFRS, un dérivé figure toujours au bilan à sa juste valeur (l’option 3 décrit plutôt une logique de hors-bilan). L’option 4 est sans rapport."
+        },
+        {
+          "id": "q5",
+          "kind": "open",
+          "prompt": "Répondez à l’administrateur et identifiez les risques que le swap ne supprime pas.",
+          "points": 4,
+          "model_answer": "Si les taux baissent, Belem verse des différentiels plus importants et ne profite pas de la baisse : c’est un coût d’opportunité, pas une perte au regard de l’objectif fixé, qui était de figer le coût à 3,90 %. Le swap aurait alors une juste valeur négative ; il ne se traduirait par une perte effective qu’en cas de résiliation anticipée (soulte à payer), par exemple en cas de remboursement anticipé de l’emprunt. Risques résiduels : risque de contrepartie sur la banque lorsque le swap a une valeur positive pour Belem ; risque lié à la marge de crédit (1 %), non couverte si l’emprunt est renégocié ou refinancé ; risque d’inefficacité si les caractéristiques de l’emprunt et du swap divergent. Un cap aurait permis de profiter de la baisse, contre une prime.",
+          "key_points": [
+            "Baisse des taux : coût d’opportunité, la décision visait la certitude du coût",
+            "Perte effective seulement en cas de résiliation anticipée (soulte)",
+            "Risque de contrepartie sur la banque quand le swap vaut positivement pour Belem",
+            "Marge de crédit et décalages de caractéristiques non couverts ; alternative : cap"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Différentiel de la première année : − 100 000 € ; charge totale : 780 000 € (3,90 %) ; coût figé à 2,90 % + 1 % quel que soit l’Euribor. En IFRS 9, couverture de flux de trésorerie. Le swap supprime l’incertitude, pas le coût d’opportunité ni le risque de contrepartie."
+    },
+    {
+      "id": "ue2-risques-taux-0006",
+      "type": "flashcard",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "couverture-taux",
+      "difficulty": 1,
+      "tags": [
+        "tunnel",
+        "collar",
+        "floor"
+      ],
+      "source_ref": "Options de taux : cap, floor, tunnel",
+      "verified": true,
+      "estimated_seconds": 45,
+      "front": "Qu’est-ce qu’un tunnel (collar) de taux pour un emprunteur à taux variable ?",
+      "back": "La combinaison de l’achat d’un cap (taux plafond) et de la vente d’un floor (taux plancher).\nLe coût de l’emprunt reste compris entre le plancher et le plafond (marge en sus).\nLa prime reçue sur le floor réduit, voire annule, la prime payée sur le cap.\nEn contrepartie, l’emprunteur renonce à la baisse des taux sous le plancher.",
+      "explanation": "Le tunnel est une solution intermédiaire entre le cap seul (protection complète contre la hausse, profit intégral de la baisse, prime élevée) et le swap (coût figé, sans prime). Un tunnel « à prime nulle » est construit de sorte que la prime du floor vendu égale celle du cap acheté."
+    }
+  ]
+}

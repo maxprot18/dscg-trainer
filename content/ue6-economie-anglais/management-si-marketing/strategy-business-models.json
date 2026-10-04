@@ -1,0 +1,144 @@
+{
+  "exercises": [
+    {
+      "id": "ue6-mgmt-strat-0001",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "management-si-marketing",
+      "notion": "strategy-business-models",
+      "difficulty": 2,
+      "tags": [
+        "Porter's five forces",
+        "substitutes"
+      ],
+      "statement": "The strategy director of a European airline writes: \"Since the pandemic, many companies have replaced short business trips with video conferences, and high-speed rail now offers city-centre to city-centre journeys of under three hours on several of our routes.\" Which of Porter's five forces do these observations mainly illustrate?",
+      "options": [
+        "The threat of new entrants",
+        "The bargaining power of suppliers",
+        "The threat of substitutes",
+        "The bargaining power of buyers"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Option 3 is correct: video conferencing and high-speed rail are not airlines, but they satisfy the same need (meeting someone or travelling between two cities) in a different way; they are substitutes, which cap the prices the airline can charge. Option 1 is wrong: new entrants would be new airlines entering the market. Option 2 is wrong: suppliers would be aircraft manufacturers, airports or fuel suppliers. Option 4 is wrong: the bargaining power of buyers concerns customers' ability to negotiate prices (e.g. large corporate accounts), not the existence of alternative products.",
+      "source_ref": "Porter, Competitive Strategy (1980), chapter 1: the five competitive forces",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue6-mgmt-strat-0002",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "management-si-marketing",
+      "notion": "strategy-business-models",
+      "difficulty": 3,
+      "tags": [
+        "business models",
+        "freemium",
+        "network effects",
+        "razor and blades"
+      ],
+      "statement": "Which of the following statements about business models are correct? Select all that apply.",
+      "options": [
+        "A freemium model relies on converting a fraction of free users into paying customers of a premium version.",
+        "In a razor-and-blades model, the company earns most of its margin on the initial product, which is sold at a high price.",
+        "A two-sided platform benefits from indirect network effects: more sellers attract more buyers, and more buyers attract more sellers.",
+        "A cost leadership strategy and premium pricing are naturally consistent, because low costs justify high prices."
+      ],
+      "answer": [
+        0,
+        2
+      ],
+      "multiple": true,
+      "explanation": "Options 1 and 3 are correct. Option 1: in a freemium model, the basic service is free and revenue comes from the minority of users who upgrade, so the conversion rate is a key metric. Option 3: on a two-sided platform (marketplace, app store), the value for each side grows with the number of participants on the other side; these indirect network effects create a \"winner takes most\" dynamic. Option 2 is wrong: in a razor-and-blades model, the initial product (razor, printer, coffee machine) is sold cheaply, sometimes at a loss, and the margin is made on recurring consumables. Option 4 is wrong: cost leadership aims at the lowest costs in the industry, usually to compete on price; premium pricing belongs to a differentiation strategy, and combining both without a clear logic risks being \"stuck in the middle\".",
+      "source_ref": "Osterwalder and Pigneur, Business Model Generation (2010): business model patterns ; Porter, Competitive Strategy (1980): generic strategies",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue6-mgmt-strat-0003",
+      "type": "case_study",
+      "ue": "UE6",
+      "theme": "management-si-marketing",
+      "notion": "strategy-business-models",
+      "difficulty": 3,
+      "tags": [
+        "BCG matrix",
+        "relative market share",
+        "Ansoff matrix",
+        "strategic recommendation"
+      ],
+      "title": "Portfolio review at Ostara Cycles",
+      "context": "Ostara Cycles is a Dutch manufacturer with two divisions. You attend the strategy committee as a junior analyst; the meeting is held in English.\n\nE-bikes division: the European e-bike market grew by 14% last year and is expected to keep growing at a similar pace. Ostara holds a 12% market share; the market leader holds 18%. The division absorbs a lot of cash for marketing and new production lines.\n\nSpare parts division: the market for traditional bicycle spare parts grows by about 1% a year. Ostara is the market leader with a 30% share, against 15% for the next competitor. The division generates a large, stable cash surplus.\n\nProject under discussion: the CEO wants to start selling Ostara's existing e-bike range in Canada, where the company currently has no sales, through a network of independent dealers.\n\nThe committee chair asks you to apply the BCG and Ansoff matrices. Assume the market growth threshold between \"high\" and \"low\" growth is 10% and the relative market share threshold is 1.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculate the relative market share of the e-bikes division. Round to two decimal places.",
+          "expected_value": 0.67,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.01
+          },
+          "unit": "x",
+          "decimals": 2,
+          "explanation": "Relative market share = own share ÷ share of the largest competitor = 12% ÷ 18% = 0.67. Inverting the ratio (18 ÷ 12 = 1.5) or dividing by the market total is a classic error."
+        },
+        {
+          "id": "q2",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "In the BCG matrix, how should the e-bikes division be classified?",
+          "options": [
+            "Star",
+            "Cash cow",
+            "Question mark",
+            "Dog"
+          ],
+          "answer": [
+            2
+          ],
+          "multiple": false,
+          "explanation": "High market growth (14% > 10%) and a relative market share below 1 (0.67): the division is a question mark (problem child). A star would need a relative share above 1; a cash cow and a dog are in low-growth markets."
+        },
+        {
+          "id": "q3",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Which Ansoff growth strategy does the Canadian project represent?",
+          "options": [
+            "Market penetration",
+            "Market development",
+            "Product development",
+            "Diversification"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "Existing products (the current e-bike range) sold in a new market (Canada): market development. Market penetration would mean selling more of the same products in existing markets; product development, new products in existing markets; diversification, new products in new markets."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "points": 6,
+          "prompt": "In about 100 words, in English, give your recommendation on how the portfolio should be managed and comment on the Canadian project.",
+          "model_answer": "The spare parts division is a cash cow (low growth, relative market share of 2): it should be managed for cash, with limited investment. Its surplus should fund the e-bikes division, a question mark in an attractive market: Ostara must invest to gain share and become a star, otherwise the division risks turning into a dog when growth slows. The Canadian project is market development, less risky than diversification but it disperses resources: before going abroad, Ostara should check that it can still gain share in Europe, where it is not the leader. Using independent dealers limits the initial investment and the risk.",
+          "key_points": [
+            "Spare parts identified as a cash cow (relative share 30 ÷ 15 = 2, growth 1%) to be \"milked\"",
+            "Cash from the cash cow used to finance the question mark so that it becomes a star",
+            "Risk that the question mark becomes a dog if it does not gain share",
+            "Critical view of the Canadian project: market development, moderate risk, but possible dispersion of resources; dealer network limits investment"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "The case combines a portfolio analysis (BCG matrix: e-bikes = question mark, spare parts = cash cow) with the Ansoff growth matrix (Canada = market development). The usual logic is to use the cash generated by cash cows to finance the question marks with the best prospects.",
+      "source_ref": "Boston Consulting Group growth-share matrix (Henderson, 1970) ; Ansoff, \"Strategies for diversification\", Harvard Business Review (1957)",
+      "verified": true,
+      "estimated_seconds": 840
+    }
+  ]
+}

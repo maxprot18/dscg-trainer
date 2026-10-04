@@ -1,0 +1,231 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-groupes-resens-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "integration-fiscale-resultat-ensemble",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "intégration fiscale",
+        "déficits antérieurs",
+        "imputation"
+      ],
+      "statement": "La SAS Quille entre au 1er janvier N dans le groupe intégré de la SA Rance. Elle dispose à cette date de déficits reportables de 300 000 €, nés avant son entrée. En N, Quille réalise un bénéfice fiscal de 120 000 € et le résultat d'ensemble du groupe, avant imputation de ces déficits, est de 900 000 €. Comment ces déficits antérieurs peuvent-ils être utilisés en N (hors plafonnement) ?",
+      "options": [
+        "Ils s'imputent sur le résultat d'ensemble, à hauteur de 300 000 €",
+        "Ils sont définitivement perdus du fait de l'entrée dans le groupe",
+        "Ils s'imputent sur le seul bénéfice de Quille, à hauteur de 120 000 €, le solde restant reportable sur ses bénéfices futurs",
+        "Ils sont transférés à Rance, qui peut les imputer sur ses propres bénéfices"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Les déficits subis par une filiale avant son entrée dans le groupe ne peuvent être imputés que sur son propre bénéfice (CGI art. 223 I) : Quille impute 120 000 € sur son bénéfice de N, qui est donc retenu pour zéro dans le résultat d'ensemble ; le solde de 180 000 € reste reportable sur ses bénéfices ultérieurs (option 3).\nL'option 1 confond avec les déficits nés pendant l'intégration, qui s'imputent sur le résultat d'ensemble.\nL'option 2 est fausse : l'entrée ne fait pas perdre les déficits antérieurs.\nL'option 4 est fausse : il n'y a pas de transfert des déficits antérieurs à la mère.",
+      "source_ref": "CGI art. 223 I (imputation des déficits antérieurs à l'entrée sur le seul bénéfice de la société qui les a subis)",
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue1-groupes-resens-0002",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "integration-fiscale-resultat-ensemble",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "intégration fiscale",
+        "résultat d'ensemble",
+        "neutralisations",
+        "IS du groupe"
+      ],
+      "statement": "La SA Saule est la société mère d'un groupe intégré comprenant ses filiales Tilia et Ulmus, détenues à 100 %. Les résultats fiscaux de N, déterminés par chaque société comme si elle était imposée séparément, sont : Saule + 500 000 € ; Tilia + 300 000 € ; Ulmus − 200 000 €.\nOpérations intra-groupe de N :\n- le 31 décembre N, Tilia a cédé à Ulmus une machine en dégageant une plus-value de 80 000 €, comprise dans le résultat fiscal de Tilia ;\n- Saule a consenti à Ulmus un abandon de créance à caractère financier de 50 000 €, réintégré dans le résultat fiscal de Saule (non déductible) et compris dans le résultat fiscal d'Ulmus en produit imposable.\nHypothèses : taux d'IS de 25 % sur la totalité du résultat, ni taux réduit ni contribution sociale ; aucun déficit antérieur. Calculez l'IS dû par le groupe au titre de N. Réponse en euros.",
+      "expected_value": 117500,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Somme algébrique des résultats : 500 000 + 300 000 − 200 000 = 600 000 €.\nNeutralisations : plus-value de cession d'immobilisation entre sociétés du groupe : − 80 000 € (CGI art. 223 F) ; abandon de créance intra-groupe : la réintégration pratiquée par Saule est neutralisée, − 50 000 € (CGI art. 223 B), le produit restant imposé chez Ulmus.\nRésultat d'ensemble : 600 000 − 80 000 − 50 000 = 470 000 €. IS du groupe : 470 000 × 25 % = 117 500 €.\nErreurs classiques : aucune neutralisation (150 000 €), oubli de l'abandon de créance (130 000 €), oubli de la plus-value (137 500 €).",
+      "source_ref": "CGI art. 223 B (résultat d'ensemble, neutralisation des abandons de créances) et art. 223 F (plus-values de cession d'immobilisations entre sociétés du groupe)",
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue1-groupes-resens-0003",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "integration-fiscale-resultat-ensemble",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "intégration fiscale",
+        "convention d'intégration",
+        "comptabilisation chez la filiale"
+      ],
+      "statement": "La SAS Vigne est membre du groupe intégré de la SA Wagram. La convention d'intégration prévoit que chaque filiale verse à la mère l'IS qu'elle aurait supporté en l'absence d'intégration. Le résultat fiscal de Vigne pour N s'élève à 240 000 € (hypothèse : taux d'IS de 25 % sur la totalité du résultat, aucun acompte versé). Passez l'écriture de Vigne au 31 décembre N. Utilisez le compte 695 pour la charge et le compte 451 « Groupe » pour la dette envers la mère.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "695",
+          "label": "Impôts sur les bénéfices",
+          "debit": 60000,
+          "credit": 0
+        },
+        {
+          "account": "451",
+          "label": "Groupe – compte courant Wagram",
+          "debit": 0,
+          "credit": 60000
+        }
+      ],
+      "explanation": "Vigne n'est plus redevable de l'IS envers le Trésor : seule la mère l'est sur le résultat d'ensemble. En application de la convention, Vigne supporte une charge égale à l'IS qu'elle aurait payé seule : 240 000 × 25 % = 60 000 €, enregistrée au débit du 695 ; la contrepartie est une dette envers la mère, au crédit du compte 451 « Groupe », et non une dette envers l'État (444).",
+      "source_ref": "CGI art. 223 A (mère seule redevable) ; PCG (règl. ANC 2014-03), comptes 695 « Impôts sur les bénéfices » et 451 « Groupe »",
+      "estimated_seconds": 120
+    },
+    {
+      "id": "ue1-groupes-resens-0004",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "integration-fiscale-resultat-ensemble",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "intégration fiscale",
+        "produit d'intégration",
+        "comptabilisation chez la mère"
+      ],
+      "statement": "La SA Tanis est la société mère d'un groupe intégré comprenant les filiales Ulex et Vesta. Le résultat d'ensemble de N s'élève à 1 200 000 € (hypothèse : taux d'IS de 25 % sur la totalité du résultat ; on ignore les acomptes). En application de la convention d'intégration, Ulex, bénéficiaire, doit verser à Tanis 90 000 € ; Vesta, déficitaire, ne doit rien.\nPassez au 31 décembre N, dans les comptes de Tanis, les écritures relatives à l'IS du groupe et à la contribution d'Ulex. Conventions : la totalité de l'IS du groupe est enregistrée au débit du compte 695 par le crédit du compte 444 « État – impôts sur les bénéfices » ; la contribution d'Ulex est enregistrée au crédit du compte 698 (sous-compte 6989 « Intégration fiscale – produits ») par le débit du compte 451 « Groupe ».",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "695",
+          "label": "Impôts sur les bénéfices (IS du groupe)",
+          "debit": 300000,
+          "credit": 0
+        },
+        {
+          "account": "444",
+          "label": "État – impôts sur les bénéfices",
+          "debit": 0,
+          "credit": 300000
+        },
+        {
+          "account": "451",
+          "label": "Groupe – compte courant Ulex",
+          "debit": 90000,
+          "credit": 0
+        },
+        {
+          "account": "698",
+          "label": "Intégration fiscale – produits (6989)",
+          "debit": 0,
+          "credit": 90000
+        }
+      ],
+      "explanation": "La mère est seule redevable de l'IS sur le résultat d'ensemble : 1 200 000 × 25 % = 300 000 €, dette envers l'État (695 au débit, 444 au crédit). La contribution due par Ulex au titre de la convention est un produit d'intégration fiscale pour la mère (6989) et une créance sur la filiale (451). La charge nette d'impôt de Tanis s'élève à 300 000 − 90 000 = 210 000 €.",
+      "source_ref": "CGI art. 223 A et 223 B ; PCG (règl. ANC 2014-03), comptes 444, 451, 695 et 698 « Intégration fiscale »",
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue1-groupes-resens-0005",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "integration-fiscale-resultat-ensemble",
+      "verified": true,
+      "difficulty": 3,
+      "tags": [
+        "intégration fiscale",
+        "résultat d'ensemble",
+        "économie d'impôt",
+        "convention d'intégration",
+        "sortie du groupe"
+      ],
+      "title": "Groupe Orsa : économie d'impôt et sortie d'une filiale",
+      "context": "La SA Orsa est depuis plusieurs années la société mère d'un groupe intégré comprenant la SAS Pilon (détenue à 100 %) et la SA Quartz (détenue à 98 %). Tous les exercices coïncident avec l'année civile.\nRésultats fiscaux de N, déterminés par chaque société comme si elle était imposée séparément : Orsa + 600 000 € ; Pilon + 240 000 € ; Quartz − 320 000 €. Aucun déficit antérieur n'existe.\nLe 31 décembre N, Orsa a cédé à Pilon un matériel industriel en dégageant une plus-value de 40 000 €, comprise dans le résultat fiscal d'Orsa.\nHypothèses : taux d'IS de 25 % sur la totalité du résultat, ni taux réduit ni contribution sociale.\nLa convention d'intégration prévoit que chaque filiale verse à Orsa l'IS qu'elle aurait payé en l'absence d'intégration, en tenant compte de ses propres déficits reportables ; l'économie d'impôt procurée par les déficits des filiales est définitivement acquise à Orsa ; aucune indemnisation n'est prévue en cas de sortie du groupe.",
+      "sub_questions": [
+        {
+          "id": "q1-resultat-ensemble",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez le résultat d'ensemble de N. Réponse en euros.",
+          "expected_value": 480000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "600 000 + 240 000 − 320 000 = 520 000 € ; neutralisation de la plus-value de cession intra-groupe : − 40 000 € (CGI art. 223 F). Résultat d'ensemble : 480 000 €."
+        },
+        {
+          "id": "q2-is-groupe",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez l'IS dû par Orsa au titre du groupe pour N. Réponse en euros.",
+          "expected_value": 120000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "480 000 × 25 % = 120 000 €."
+        },
+        {
+          "id": "q3-economie",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez l'économie d'impôt de N procurée par l'intégration, par rapport à une imposition séparée des trois sociétés. Réponse en euros.",
+          "expected_value": 90000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Imposition séparée : Orsa 600 000 × 25 % = 150 000 € ; Pilon 240 000 × 25 % = 60 000 € ; Quartz 0 € (déficit reportable). Total : 210 000 €. IS du groupe : 120 000 €. Économie : 90 000 €, soit 80 000 € liés à l'imputation immédiate du déficit de Quartz (320 000 × 25 %) et 10 000 € liés à la neutralisation de la plus-value (40 000 × 25 %), cette dernière n'étant qu'un report d'imposition."
+        },
+        {
+          "id": "q4-deficit-sortie",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Quartz sort du groupe au cours de N+2 sans avoir réalisé de bénéfice depuis N. Que devient le déficit de 320 000 € subi en N ?",
+          "options": [
+            "Il est restitué à Quartz, qui pourra l'imputer sur ses bénéfices futurs",
+            "Il reste acquis au groupe ; Quartz ne peut plus l'imputer après sa sortie",
+            "Il est partagé entre Orsa et Quartz au prorata des pourcentages de détention",
+            "Il doit être réintégré dans le résultat d'ensemble de l'exercice de sortie"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Les déficits subis par une filiale pendant l'intégration ont été imputés sur le résultat d'ensemble : ils appartiennent au groupe et ne sont pas restitués à la filiale sortante (option 2). Aucun texte ne prévoit de partage (option 3) ni de réintégration du déficit lui-même (option 4) ; ce sont certaines neutralisations, comme celle de la plus-value de cession intra-groupe, qui sont réintégrées en cas de sortie (CGI art. 223 R). Faute de clause d'indemnisation, Quartz perd l'économie future correspondante."
+        },
+        {
+          "id": "q5-convention",
+          "kind": "open",
+          "points": 3,
+          "prompt": "Analysez les effets de la convention d'intégration pour Quartz et pour Orsa en N, puis le risque qu'elle fait peser sur Quartz en cas de sortie. Quelle clause pourrait-on prévoir ?",
+          "model_answer": "En N, Quartz, déficitaire, ne verse rien à Orsa ; Pilon verse 60 000 € et Orsa supporte la charge d'IS du groupe (120 000 €), soit une charge nette de 60 000 €, alors qu'elle aurait payé 150 000 € seule : Orsa capte l'économie de 80 000 € liée au déficit de Quartz (ainsi que l'avantage de trésorerie lié à la neutralisation de la plus-value). Selon la convention, Quartz devenue bénéficiaire paiera à Orsa l'IS calculé après imputation de ses propres déficits, ce qui la place dans la même situation qu'en l'absence d'intégration (principe de neutralité) tant qu'elle reste dans le groupe. En revanche, si elle sort du groupe, elle perd ses déficits, qui restent acquis au groupe, et devra payer l'IS au Trésor sur ses bénéfices futurs sans pouvoir les imputer : elle subit une perte que la convention ne compense pas. La convention, librement établie, ne doit pas porter atteinte à l'intérêt social de la filiale ni aux droits de ses minoritaires (2 % ici). Une clause d'indemnisation de la filiale sortante, à hauteur de l'économie d'impôt dont elle est privée, ou une clause de réallocation des économies d'impôt réduirait ce risque.",
+          "key_points": [
+            "Quartz déficitaire ne verse rien ; Orsa conserve l'économie de 80 000 € procurée par le déficit",
+            "Neutralité tant que Quartz reste dans le groupe (imputation de ses déficits dans le calcul de sa contribution)",
+            "En cas de sortie, perte des déficits restés acquis au groupe",
+            "Respect de l'intérêt social de la filiale et des minoritaires",
+            "Clause d'indemnisation à la sortie ou de réallocation des économies d'impôt"
+          ]
+        }
+      ],
+      "total_points": 11,
+      "explanation": "Le cas illustre la détermination du résultat d'ensemble (somme algébrique et neutralisation des plus-values intra-groupe), la mesure de l'économie d'impôt et le rôle de la convention d'intégration, notamment lors de la sortie d'une filiale.",
+      "source_ref": "CGI art. 223 B, 223 F et 223 R",
+      "estimated_seconds": 900
+    }
+  ]
+}

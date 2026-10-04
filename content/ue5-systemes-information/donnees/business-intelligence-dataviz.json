@@ -1,0 +1,166 @@
+{
+  "exercises": [
+    {
+      "id": "ue5-donnees-bi-0001",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "business-intelligence-dataviz",
+      "difficulty": 1,
+      "tags": [
+        "entrepôt de données",
+        "décisionnel",
+        "OLTP"
+      ],
+      "statement": "Quelle caractéristique distingue un entrepôt de données (data warehouse) de la base de données d'un ERP ?",
+      "options": [
+        "Les données y sont historisées et non volatiles : on ajoute de nouvelles données sans modifier ni supprimer les anciennes",
+        "Il est mis à jour en temps réel par chaque saisie des utilisateurs opérationnels",
+        "Il remplace les bases des applications de gestion, qui peuvent ensuite être supprimées",
+        "Il est organisé par application source, sans harmonisation des codes ni des définitions"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Selon la définition d'Inmon, l'entrepôt est orienté sujet, intégré, non volatil et historisé : il conserve l'historique pour l'analyse et la comparaison dans le temps. L'option 2 décrit un système transactionnel (OLTP) comme l'ERP ; l'entrepôt est alimenté périodiquement par un ETL, souvent la nuit. L'option 3 est fausse : l'entrepôt est alimenté par les applications de gestion, il ne les remplace pas. L'option 4 est l'inverse du caractère intégré : la phase de transformation de l'ETL harmonise codes et définitions.",
+      "source_ref": "Définition de l’entrepôt de données (W. Inmon) ; programme DSCG UE 5 (informatique décisionnelle)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue5-donnees-bi-0002",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "business-intelligence-dataviz",
+      "difficulty": 2,
+      "tags": [
+        "data visualisation",
+        "choix du graphique",
+        "tableau de bord"
+      ],
+      "statement": "Le directeur du réseau veut comparer d'un coup d'œil le chiffre d'affaires du trimestre de ses 14 agences et repérer immédiatement les meilleures et les moins performantes. Quelle représentation est la plus appropriée ?",
+      "options": [
+        "Un graphique en secteurs (camembert) à 14 parts, une couleur par agence",
+        "Une courbe reliant les 14 agences classées par ordre alphabétique",
+        "Un histogramme en barres horizontales triées par chiffre d’affaires décroissant, avec un axe commençant à zéro",
+        "Un histogramme en trois dimensions avec un axe des valeurs commençant au chiffre d’affaires de l’agence la plus faible"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Pour comparer des catégories, les barres sont la forme la plus lisible : l'œil compare des longueurs, et le tri fait apparaître le classement ; l'orientation horizontale laisse la place aux noms d'agences. Le camembert (option 1) est illisible au-delà de quelques parts et sert à montrer une composition, pas un classement. La courbe (option 2) suggère une continuité ou une évolution dans le temps qui n'existe pas entre des agences. L'option 4 cumule deux défauts : la 3D déforme les hauteurs et l'axe tronqué exagère visuellement les écarts.",
+      "source_ref": "Programme DSCG UE 5 : visualisation des données (choix des représentations) ; principes de sémiologie graphique",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue5-donnees-bi-0003",
+      "type": "journal_entry",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "business-intelligence-dataviz",
+      "difficulty": 2,
+      "tags": [
+        "licence de base de données",
+        "charges constatées d’avance",
+        "abonnement"
+      ],
+      "statement": "Le 1er octobre N, la société Belledonne a souscrit pour 12 mois une licence d'accès à une base de données externe de références sectorielles (données financières d'entreprises), qu'elle utilise pour ses études de marché. La facture de 18 000 € HT, payée d'avance, a été enregistrée au compte 651 (redevances pour concessions, brevets, licences et droits similaires), compte à conserver pour la régularisation. La société n'acquiert aucun droit au-delà de la période d'abonnement. Passez l'écriture de régularisation nécessaire à la clôture du 31 décembre N (montants HT).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "486",
+          "label": "Charges constatées d’avance",
+          "debit": 13500,
+          "credit": 0
+        },
+        {
+          "account": "651",
+          "label": "Redevances pour licences",
+          "debit": 0,
+          "credit": 13500
+        }
+      ],
+      "explanation": "Un droit d'accès temporaire à une base de données, sans contrôle d'un actif au-delà de la période, est une charge de la période couverte, pas une immobilisation. Sur les 12 mois facturés, 3 concernent N (octobre à décembre) et 9 concernent N+1. Charge à reporter : 18 000 × 9 ÷ 12 = 13 500 € au débit du compte 486, par le crédit du compte 651. La charge de N est ainsi ramenée à 4 500 €. L'écriture sera contrepassée à l'ouverture de N+1. Une licence perpétuelle de logiciel installée chez l'entreprise s'immobiliserait au contraire au compte 205.",
+      "source_ref": "PCG (règl. ANC 2014-03 modifié), principe d’indépendance des exercices ; comptes 486 et 651",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue5-donnees-bi-0004",
+      "type": "case_study",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "business-intelligence-dataviz",
+      "difficulty": 3,
+      "tags": [
+        "entrepôt de données",
+        "modèle en étoile",
+        "ETL",
+        "tableau de bord"
+      ],
+      "title": "Maison Brévent : un entrepôt de données pour le réseau",
+      "context": "Maison Brévent exploite 40 magasins d'équipement de la maison, ouverts 310 jours par an. Les ventes sont enregistrées par les caisses, les achats et les stocks dans l'ERP, les données clients dans un logiciel de fidélité. Chaque application utilise sa propre codification des produits.\n\nAujourd'hui, le contrôleur de gestion consacre trois jours par mois à extraire ces données dans des tableurs pour produire le reporting du réseau, et les chiffres diffèrent selon qui les produit.\n\nLa direction décide de créer un entrepôt de données. Le modèle proposé est un schéma en étoile : une table de faits VENTES et quatre dimensions (TEMPS, MAGASIN, PRODUIT, CLIENT). Le grain retenu est : une ligne par jour, par magasin et par produit vendu. On estime qu'un magasin vend en moyenne 800 références différentes par jour d'ouverture ; seules les combinaisons ayant donné lieu à une vente créent une ligne.",
+      "sub_questions": [
+        {
+          "id": "q1-table-faits",
+          "kind": "mcq",
+          "prompt": "Quel contenu correspond à la table de faits VENTES ?",
+          "points": 2,
+          "options": [
+            "Le libellé, la famille et le fournisseur de chaque produit",
+            "Des clés étrangères vers les dimensions et des mesures numériques additives (quantités, CA HT, marge)",
+            "La liste des magasins avec leur adresse, leur surface et leur région",
+            "Les écritures comptables de ventes, telles qu’elles figurent dans l’ERP"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "La table de faits contient les mesures que l'on agrège (quantités, chiffre d'affaires, marge) et les clés qui la relient à chaque dimension. Les descriptions (libellé produit, région du magasin) sont des attributs des dimensions PRODUIT et MAGASIN (options 1 et 3). L'option 4 décrit une donnée opérationnelle, non modélisée pour l'analyse."
+        },
+        {
+          "id": "q2-volumetrie",
+          "kind": "numeric",
+          "prompt": "Estimez le nombre de lignes ajoutées chaque année à la table de faits (en lignes).",
+          "points": 3,
+          "expected_value": 9920000,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.01
+          },
+          "unit": "lignes",
+          "decimals": 0,
+          "explanation": "40 magasins × 310 jours × 800 références vendues par jour = 9 920 000 lignes par an. Erreur classique : raisonner sur 365 jours (11 680 000 lignes) alors que les magasins fermés ne génèrent aucune vente."
+        },
+        {
+          "id": "q3-etl",
+          "kind": "true_false",
+          "prompt": "Dans l'alimentation de l'entrepôt, l'harmonisation des codes produits des trois applications et le dédoublonnage des clients relèvent de la phase de transformation de l'ETL.",
+          "points": 1,
+          "answer": true,
+          "explanation": "Vrai : l'ETL extrait les données des sources, les transforme (nettoyage, dédoublonnage, table de correspondance des codes, calculs) puis les charge dans l'entrepôt. C'est la transformation qui rend les données intégrées."
+        },
+        {
+          "id": "q4-recommandations",
+          "kind": "open",
+          "prompt": "Le directeur du réseau demande un tableau de bord mensuel. Proposez quelques indicateurs et leur représentation, puis indiquez les conditions de réussite du projet.",
+          "points": 4,
+          "model_answer": "Indicateurs : chiffre d'affaires et taux de marge par magasin comparés à l'objectif et à N−1 (barres horizontales triées avec repère de l'objectif) ; évolution mensuelle du CA du réseau sur 24 mois (courbe) ; panier moyen et nombre de tickets (indicateurs chiffrés avec flèche de tendance) ; part du CA réalisée avec des clients fidélisés ; rotation des stocks ou ruptures par famille. Peu d'indicateurs, reliés aux objectifs, avec des alertes sur les écarts significatifs. Conditions de réussite : définitions communes validées par les métiers (qu'est-ce que le CA, la marge, un client actif ?) dans un dictionnaire de données ; un propriétaire métier par domaine de données ; table de correspondance des codes produits ou référentiel unique (MDM) ; contrôles de qualité dans l'ETL et rapprochement de l'entrepôt avec la comptabilité ; périodicité d'alimentation (J+1) connue des utilisateurs ; droits d'accès par profil ; données clients traitées conformément au RGPD (minimisation, finalité). Le gain attendu : trois jours de travail mensuel libérés et un chiffre unique pour tout le réseau.",
+          "key_points": [
+            "Indicateurs reliés aux objectifs, comparés à une cible ou à N−1",
+            "Représentation adaptée : barres triées pour comparer, courbe pour l’évolution",
+            "Définitions communes et propriétaires métier des données",
+            "Qualité à l’ETL, référentiel produits, rapprochement avec la comptabilité",
+            "Sécurité des accès et RGPD pour les données clients"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "La table de faits porte les mesures et les clés des dimensions ; au grain jour × magasin × produit, elle reçoit 40 × 310 × 800 = 9 920 000 lignes par an. L'intérêt de l'entrepôt dépend surtout de la gouvernance des données : définitions partagées, qualité traitée à l'ETL, référentiel commun.",
+      "source_ref": "Modélisation dimensionnelle (R. Kimball) ; définition de l’entrepôt de données (W. Inmon) ; programme DSCG UE 5 (informatique décisionnelle)",
+      "verified": true,
+      "estimated_seconds": 900
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "exercises": [
+    {
+      "id": "ue5-donnees-modbd-0001",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "modelisation-bases-donnees",
+      "difficulty": 1,
+      "tags": [
+        "modèle relationnel",
+        "clé étrangère",
+        "intégrité référentielle"
+      ],
+      "statement": "Dans une base de données relationnelle, la table FACTURE contient la colonne #num_client, clé étrangère qui fait référence à la clé primaire de la table CLIENT. Quel est le rôle principal de cette clé étrangère ?",
+      "options": [
+        "Garantir que chaque facture porte un numéro unique",
+        "Interdire qu'un client ait plusieurs factures",
+        "Garantir que chaque facture se rattache à un client qui existe dans la table CLIENT (intégrité référentielle)",
+        "Accélérer le calcul du chiffre d’affaires par client en dupliquant les données du client dans la facture"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Une clé étrangère doit toujours correspondre à une valeur de clé primaire existante dans la table référencée : le SGBD refuse une facture pour un client inexistant, ou la suppression d'un client qui a encore des factures. C'est la contrainte d'intégrité référentielle. L'option 1 décrit le rôle de la clé primaire de FACTURE (num_facture). L'option 2 est fausse : rien n'empêche plusieurs factures d'avoir le même num_client, c'est justement la traduction d'une association père-fils (un client, plusieurs factures). L'option 4 est fausse : la clé étrangère évite au contraire de dupliquer les données du client (nom, adresse) dans chaque facture.",
+      "source_ref": "Modèle relationnel (E. F. Codd) : contraintes d’intégrité d’entité et référentielle ; programme DSCG UE 5 (bases de données)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue5-donnees-modbd-0002",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "modelisation-bases-donnees",
+      "difficulty": 2,
+      "tags": [
+        "normalisation",
+        "3FN",
+        "dépendance fonctionnelle"
+      ],
+      "statement": "La table COMMANDE(num_commande, date_commande, id_client, nom_client, ville_client) a pour clé primaire num_commande. Tous les attributs sont atomiques. Le nom et la ville du client dépendent de l'identifiant du client. Quelle est la situation de cette table au regard de la normalisation ?",
+      "options": [
+        "Elle n'est pas en première forme normale, car elle contient des informations sur deux objets différents",
+        "Elle est en deuxième forme normale mais pas en troisième, car nom_client et ville_client dépendent de id_client, attribut non clé",
+        "Elle n'est pas en deuxième forme normale, car nom_client ne dépend que d'une partie de la clé",
+        "Elle est en troisième forme normale, car chaque attribut dépend de num_commande"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Les attributs sont atomiques : la table est en 1FN. La clé primaire est simple (num_commande) : aucun attribut ne peut dépendre d'une partie seulement de la clé, la table est donc en 2FN. En revanche, nom_client et ville_client dépendent de id_client, qui n'est pas la clé : il y a une dépendance transitive (num_commande → id_client → nom_client), interdite en 3FN. Conséquence : le nom du client est répété dans chaque commande, avec un risque d'incohérence. Solution : créer une table CLIENT(id_client, nom_client, ville_client) et garder #id_client dans COMMANDE. L'option 1 confond 1FN (atomicité) et mélange d'objets. L'option 3 est impossible avec une clé simple. L'option 4 ignore la dépendance transitive.",
+      "source_ref": "Théorie de la normalisation (1FN, 2FN, 3FN) du modèle relationnel ; programme DSCG UE 5 (bases de données)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue5-donnees-modbd-0003",
+      "type": "true_false",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "modelisation-bases-donnees",
+      "difficulty": 1,
+      "tags": [
+        "MCD",
+        "MLD",
+        "règles de passage",
+        "clé étrangère"
+      ],
+      "statement": "Lors du passage du MCD au MLD, une association entre COLLABORATEUR (cardinalités 1,1) et SERVICE (cardinalités 0,n) se traduit par une clé étrangère #code_service dans la table COLLABORATEUR, sans création de table pour l'association.",
+      "answer": true,
+      "justification": "C'est une association père-fils : l'identifiant de l'entité côté n (SERVICE) migre comme clé étrangère dans la table de l'entité côté (1,1) (COLLABORATEUR).",
+      "explanation": "Chaque collaborateur appartient à un et un seul service (1,1) ; un service compte zéro, un ou plusieurs collaborateurs (0,n). Une seule valeur de service par collaborateur : il suffit d'ajouter #code_service dans COLLABORATEUR. Une table d'association n'est créée que pour une association dont les cardinalités maximales sont n des deux côtés (association n-n), sa clé primaire étant alors composée des identifiants des entités reliées.",
+      "source_ref": "Méthode Merise : règles de passage du MCD au modèle relationnel ; programme DSCG UE 5",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue5-donnees-modbd-0004",
+      "type": "case_study",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "modelisation-bases-donnees",
+      "difficulty": 3,
+      "tags": [
+        "MCD",
+        "MLD",
+        "cardinalités",
+        "normalisation",
+        "association porteuse"
+      ],
+      "title": "Locaneige : modéliser la location de matériel de ski",
+      "context": "La société Locaneige loue du matériel de ski dans trois stations. Elle souhaite remplacer ses tableurs par une base de données relationnelle. L'analyse des règles de gestion a abouti au MCD suivant.\n\nEntités et identifiants :\n- CLIENT (num_client, nom, telephone) ;\n- CONTRAT (num_contrat, date_debut, date_fin) ;\n- MATERIEL (num_materiel, marque, taille) ;\n- CATEGORIE (code_cat, libelle, tarif_jour), par exemple « skis adulte », « chaussures enfant ».\n\nAssociations :\n- SIGNER entre CLIENT (1,n) et CONTRAT (1,1) : un contrat est signé par un seul client ; un client n'est enregistré que lorsqu'il signe un premier contrat et peut en signer plusieurs ;\n- APPARTENIR entre MATERIEL (1,1) et CATEGORIE (0,n) ;\n- LOUER entre CONTRAT (1,n) et MATERIEL (0,n), qui porte la propriété etat_retour (bon, à réviser, hors d'usage), renseignée au retour de chaque article.\n\nLe tarif journalier est fixé par catégorie et non article par article.",
+      "sub_questions": [
+        {
+          "id": "q1-cardinalite",
+          "kind": "mcq",
+          "prompt": "Que signifie la cardinalité 0,n de MATERIEL dans l’association LOUER ?",
+          "points": 2,
+          "options": [
+            "Un article peut ne jamais avoir été loué, ou figurer dans plusieurs contrats",
+            "Un article figure dans au moins un contrat, et au plus dans un contrat",
+            "Un contrat peut ne comporter aucun article",
+            "Un article peut appartenir à plusieurs catégories"
+          ],
+          "answer": [
+            0
+          ],
+          "explanation": "La cardinalité se lit du côté de l'entité : chaque occurrence de MATERIEL participe au minimum 0 fois (un article neuf n'a jamais été loué) et au maximum n fois (il est loué successivement dans de nombreux contrats) à l'association LOUER. L'option 2 décrit une cardinalité 1,1. L'option 3 décrit la cardinalité de CONTRAT, qui est 1,n (un contrat comporte au moins un article). L'option 4 concerne APPARTENIR, où MATERIEL a la cardinalité 1,1."
+        },
+        {
+          "id": "q2-cles-etrangeres",
+          "kind": "numeric",
+          "prompt": "Combien de clés étrangères le MLD issu de ce MCD comporte-t-il au total (une colonne = une clé étrangère) ?",
+          "points": 2,
+          "expected_value": 4,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0
+          },
+          "unit": "clés étrangères",
+          "decimals": 0,
+          "explanation": "SIGNER (père-fils) : #num_client dans CONTRAT (1). APPARTENIR (père-fils) : #code_cat dans MATERIEL (1). LOUER (n-n) : nouvelle table LOUER dont la clé primaire est composée de #num_contrat et #num_materiel, deux clés étrangères (2). Total : 4. Erreur classique : oublier que les deux colonnes de la clé composée de LOUER sont aussi des clés étrangères (2 au lieu de 4)."
+        },
+        {
+          "id": "q3-3fn",
+          "kind": "true_false",
+          "prompt": "Ajouter les colonnes libelle et tarif_jour dans la table MATERIEL, pour éviter une jointure, respecterait la troisième forme normale.",
+          "points": 1,
+          "answer": false,
+          "explanation": "Faux : libelle et tarif_jour dépendent de code_cat, attribut non clé de MATERIEL (dépendance transitive num_materiel → code_cat → tarif_jour). Le tarif serait répété pour chaque article de la catégorie et une hausse de tarif obligerait à modifier de nombreuses lignes, avec un risque d'incohérence."
+        },
+        {
+          "id": "q4-mld",
+          "kind": "open",
+          "prompt": "Rédigez le schéma relationnel (MLD) complet : tables, clés primaires et clés étrangères (notées #).",
+          "points": 5,
+          "model_answer": "CLIENT (num_client, nom, telephone)\nCONTRAT (num_contrat, date_debut, date_fin, #num_client)\nCATEGORIE (code_cat, libelle, tarif_jour)\nMATERIEL (num_materiel, marque, taille, #code_cat)\nLOUER (#num_contrat, #num_materiel, etat_retour)\nClés primaires : num_client, num_contrat, code_cat, num_materiel, et le couple (num_contrat, num_materiel) pour LOUER. Chaque entité devient une table ; les associations père-fils SIGNER et APPARTENIR ne donnent pas de table mais une clé étrangère côté (1,1) ; l'association n-n LOUER devient une table qui reçoit sa propriété etat_retour. Le montant d'une location n'est pas stocké : il se calcule par jointure (tarif_jour × nombre de jours).",
+          "key_points": [
+            "Cinq tables : CLIENT, CONTRAT, CATEGORIE, MATERIEL, LOUER",
+            "#num_client dans CONTRAT et #code_cat dans MATERIEL (associations père-fils)",
+            "LOUER : clé primaire composée (#num_contrat, #num_materiel) et attribut etat_retour",
+            "tarif_jour dans CATEGORIE uniquement (3FN)"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le MLD compte cinq tables et quatre clés étrangères : une par association père-fils (SIGNER, APPARTENIR) et deux pour la table issue de l'association n-n LOUER, dont elles forment la clé primaire composée. Les propriétés d'une association n-n (etat_retour) vont dans la table d'association ; le tarif reste dans CATEGORIE pour respecter la 3FN.",
+      "source_ref": "Méthode Merise : MCD, cardinalités, règles de passage au modèle relationnel ; normalisation (3FN) ; programme DSCG UE 5",
+      "verified": true,
+      "estimated_seconds": 900
+    }
+  ]
+}

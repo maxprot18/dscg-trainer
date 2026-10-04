@@ -1,0 +1,180 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-social-licen-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "droit-social",
+      "notion": "licenciement-economique-pse",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "motif économique",
+        "L1233-3"
+      ],
+      "statement": "Parmi les situations suivantes, laquelle ne constitue pas une cause de licenciement pour motif économique au sens de l'article L1233-3 du Code du travail ?",
+      "options": [
+        "Des difficultés économiques caractérisées par une baisse significative du chiffre d'affaires",
+        "La volonté d'améliorer la rentabilité d'une entreprise prospère pour augmenter les dividendes",
+        "Une réorganisation nécessaire à la sauvegarde de la compétitivité de l'entreprise",
+        "La cessation complète de l'activité de l'entreprise"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "L'article L1233-3 vise notamment les difficultés économiques (option 1), les mutations technologiques, la réorganisation nécessaire à la sauvegarde de la compétitivité (option 3) et la cessation d'activité (option 4). La recherche d'une rentabilité accrue dans une entreprise qui ne connaît ni difficultés ni menace sur sa compétitivité (option 2) n'est pas un motif économique : un licenciement fondé sur ce seul objectif serait dépourvu de cause réelle et sérieuse.",
+      "source_ref": "C. trav. art. L1233-3",
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue1-social-licen-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "droit-social",
+      "notion": "licenciement-economique-pse",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "PSE",
+        "seuils",
+        "L1233-61"
+      ],
+      "statement": "Dans laquelle des situations suivantes l'employeur est-il tenu d'établir un plan de sauvegarde de l'emploi (PSE) ?",
+      "options": [
+        "Entreprise de 300 salariés projetant 10 licenciements pour motif économique sur une même période de 30 jours",
+        "Entreprise de 45 salariés projetant 12 licenciements pour motif économique sur un mois",
+        "Entreprise de 120 salariés projetant 8 licenciements pour motif économique sur 30 jours",
+        "Entreprise de 80 salariés concluant 15 ruptures conventionnelles individuelles dans l'année, sans contexte économique"
+      ],
+      "answer": [
+        0
+      ],
+      "multiple": false,
+      "explanation": "Le PSE est obligatoire dans les entreprises d'au moins 50 salariés lorsque le projet porte sur au moins 10 licenciements sur une même période de 30 jours : les deux seuils sont atteints dans l'option 1. Dans l'option 2, l'entreprise compte moins de 50 salariés : pas de PSE, malgré le nombre de licenciements. Dans l'option 3, le nombre de licenciements (8) est inférieur à 10. Dans l'option 4, il ne s'agit pas de licenciements pour motif économique, et des ruptures conventionnelles individuelles conclues hors contexte économique ne déclenchent pas l'obligation.",
+      "source_ref": "C. trav. art. L1233-61",
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue1-social-licen-0003",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "droit-social",
+      "notion": "licenciement-economique-pse",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "indemnité légale de licenciement",
+        "salaire de référence",
+        "ancienneté"
+      ],
+      "statement": "Marc, salarié en CDI, est licencié pour motif économique. Son ancienneté au terme du préavis est de 12 ans et 6 mois. Il a perçu 42 000 € bruts au cours des 12 derniers mois et 10 800 € bruts au cours des 3 derniers mois (sans prime exceptionnelle). Hypothèses : indemnité légale égale à 1/4 de mois de salaire par année d'ancienneté jusqu'à 10 ans et 1/3 de mois par année au-delà, les années incomplètes étant retenues au prorata ; le salaire de référence est le plus favorable entre la moyenne mensuelle des 12 derniers mois et celle des 3 derniers mois. Calculez l'indemnité légale de licenciement, en euros, arrondie à l'euro.",
+      "expected_value": 12000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "1) Salaire de référence : moyenne sur 12 mois = 42 000 / 12 = 3 500 € ; moyenne sur 3 mois = 10 800 / 3 = 3 600 €. On retient le plus favorable : 3 600 €.\n2) Indemnité : 3 600 × (10 × 1/4 + 2,5 × 1/3) = 3 600 × (2,5 + 0,8333) = 12 000 €.\nErreurs classiques : retenir la moyenne sur 12 mois (11 667 €) ou appliquer 1/4 à toute l'ancienneté (3 600 × 12,5 / 4 = 11 250 €).",
+      "source_ref": "C. trav. art. L1234-9 ; C. trav. art. R1234-2 et R1234-4 (taux et salaire de référence, donnés en hypothèse)",
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue1-social-licen-0004",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "droit-social",
+      "notion": "licenciement-economique-pse",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "rupture conventionnelle collective",
+        "L1237-19"
+      ],
+      "statement": "La rupture conventionnelle collective est mise en place par un accord collectif validé par l'administration, qui exclut tout licenciement pour atteindre les objectifs de suppression d'emplois.",
+      "answer": true,
+      "justification": "L'accord portant rupture conventionnelle collective organise des départs volontaires et exclut tout licenciement pour atteindre les objectifs fixés en termes de suppression d'emplois ; il est soumis à la validation de l'administration (DREETS).",
+      "explanation": "La rupture conventionnelle collective repose sur le volontariat : aucun salarié ne peut être contraint au départ, et l'employeur n'a pas à justifier d'un motif économique au sens de l'article L1233-3. L'accord fixe notamment le nombre maximal de départs, les conditions à remplir par les candidats, les modalités de calcul des indemnités et les mesures d'accompagnement. Il se distingue du PSE, qui encadre des licenciements pour motif économique.",
+      "source_ref": "C. trav. art. L1237-19 et suivants",
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue1-social-licen-0005",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "droit-social",
+      "notion": "licenciement-economique-pse",
+      "verified": true,
+      "difficulty": 3,
+      "tags": [
+        "licenciement économique",
+        "difficultés économiques",
+        "PSE",
+        "procédure",
+        "indemnité légale"
+      ],
+      "title": "Corvalis : projet de licenciement collectif",
+      "context": "La SA Corvalis, fabricant de pièces de chaudronnerie, emploie 180 salariés dans un établissement unique et n'appartient à aucun groupe. Un CSE est en place ; un délégué syndical est désigné.\nSituation économique :\n- le chiffre d'affaires de chacun des quatre derniers trimestres est inférieur de 15 % à 20 % à celui du trimestre correspondant de l'année précédente ;\n- les commandes de son principal client, un constructeur de chaudières, ont été divisées par deux.\nLa direction projette la suppression de 22 postes en production, avec des notifications de licenciement prévues sur un même mois. Les négociations avec le délégué syndical n'ont pas abouti : la direction envisage d'élaborer seule les mesures sociales.\nMme Ferrand, soudeuse, figure parmi les salariés susceptibles d'être licenciés. Son ancienneté au terme du préavis sera de 15 ans et 4 mois ; son salaire de référence est de 2 700 € bruts par mois.\nHypothèse : indemnité légale égale à 1/4 de mois de salaire par année d'ancienneté jusqu'à 10 ans et 1/3 de mois par année au-delà, années incomplètes au prorata.",
+      "sub_questions": [
+        {
+          "id": "q1-duree-baisse",
+          "kind": "mcq",
+          "prompt": "Pour une entreprise de l'effectif de Corvalis, quelle durée minimale de baisse significative du chiffre d'affaires, par comparaison avec la même période de l'année précédente, caractérise des difficultés économiques ?",
+          "points": 2,
+          "options": [
+            "Un trimestre",
+            "Deux trimestres consécutifs",
+            "Trois trimestres consécutifs",
+            "Quatre trimestres consécutifs"
+          ],
+          "answer": [
+            2
+          ],
+          "multiple": false,
+          "explanation": "L'article L1233-3 module la durée selon l'effectif : un trimestre (moins de 11 salariés), deux trimestres consécutifs (11 à moins de 50), trois trimestres consécutifs (50 à moins de 300 : option 3), quatre trimestres consécutifs (300 et plus). Avec 180 salariés, il faut trois trimestres consécutifs ; la baisse observée sur quatre trimestres satisfait donc le critère."
+        },
+        {
+          "id": "q2-pse",
+          "kind": "true_false",
+          "prompt": "Vrai ou faux : Corvalis est tenue d'établir un plan de sauvegarde de l'emploi.",
+          "points": 1,
+          "answer": true,
+          "explanation": "Vrai. L'entreprise compte au moins 50 salariés (180) et projette au moins 10 licenciements sur une même période de 30 jours (22 sur un mois) : le PSE est obligatoire (C. trav. art. L1233-61)."
+        },
+        {
+          "id": "q3-indemnite",
+          "kind": "numeric",
+          "prompt": "Calculez l'indemnité légale de licenciement de Mme Ferrand selon l'hypothèse de l'énoncé. Réponse en euros, arrondie à l'euro.",
+          "points": 2,
+          "expected_value": 11550,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Ancienneté : 15 ans et 4 mois = 15,333 ans. Indemnité = 2 700 × (10 × 1/4 + 5,333 × 1/3) = 2 700 × (2,5 + 1,7778) = 6 750 + 4 800 = 11 550 €. Erreur classique : appliquer 1/4 à toute l'ancienneté (2 700 × 15,333 / 4 = 10 350 €)."
+        },
+        {
+          "id": "q4-procedure",
+          "kind": "open",
+          "prompt": "Décrivez les principales étapes et obligations de la procédure que Corvalis doit suivre avant de notifier les licenciements.",
+          "points": 5,
+          "model_answer": "Faute d'accord collectif majoritaire, Corvalis élabore un document unilatéral fixant le contenu du PSE (mesures de reclassement interne et externe, aides à la création d'activité, formation…) et les modalités de la procédure. Elle informe et consulte le CSE sur l'opération projetée (motif, nombre de suppressions, catégories concernées, critères d'ordre, calendrier) et sur le PSE ; pour moins de 100 licenciements, le CSE rend son avis dans un délai de deux mois. L'administration (DREETS) est informée du projet et le document unilatéral doit être homologué ; elle se prononce dans un délai de 21 jours (15 jours pour un accord, en cas de validation). L'employeur doit rechercher le reclassement de chaque salarié avant toute notification et appliquer les critères d'ordre (charges de famille, ancienneté, difficultés de réinsertion, qualités professionnelles) par catégorie professionnelle. Comptant moins de 1 000 salariés, Corvalis doit proposer à chaque salarié le contrat de sécurisation professionnelle. Les licenciements ne peuvent être notifiés qu'après la décision d'homologation ; chaque lettre énonce le motif économique et ses conséquences sur l'emploi.",
+          "key_points": [
+            "Document unilatéral en l'absence d'accord majoritaire, soumis à homologation de la DREETS (21 jours)",
+            "Information-consultation du CSE sur le projet et sur le PSE (délai de deux mois pour moins de 100 licenciements)",
+            "Obligation de reclassement préalable et application des critères d'ordre",
+            "Proposition du contrat de sécurisation professionnelle (entreprise de moins de 1 000 salariés)",
+            "Notification des licenciements après la décision administrative, lettre motivée"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas articule les conditions de fond du licenciement économique (difficultés caractérisées selon l'effectif), le déclenchement du PSE, la procédure (CSE, homologation administrative, reclassement, critères d'ordre, CSP) et le calcul de l'indemnité légale.",
+      "source_ref": "C. trav. art. L1233-3, L1233-4, L1233-5, L1233-30, L1233-57-4, L1233-61, L1233-66 ; C. trav. art. R1234-2 (indemnité, donnée en hypothèse)",
+      "estimated_seconds": 840
+    }
+  ]
+}

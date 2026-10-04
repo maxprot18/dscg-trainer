@@ -1,0 +1,180 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-fisc-remu-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "remuneration-dirigeants-fiscal-social",
+      "difficulty": 2,
+      "tags": [
+        "SARL",
+        "gérant majoritaire",
+        "statut social"
+      ],
+      "statement": "M. Arnal est le gérant unique d'une SARL soumise à l'IS. Il détient 30 % des parts ; son épouse, avec qui il est marié sous le régime de la communauté et qui n'exerce aucune fonction dans la société, en détient 25 % ; un associé extérieur détient les 45 % restants. Quel est le statut social de M. Arnal au titre de sa rémunération de gérance ?",
+      "options": [
+        "Assimilé salarié, car il ne détient personnellement que 30 % des parts",
+        "Travailleur non salarié, car il est gérant majoritaire en tenant compte des parts de son épouse",
+        "Assimilé salarié, car son épouse n'est pas cogérante",
+        "Travailleur non salarié, car tout gérant de SARL relève de ce régime"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le caractère majoritaire de la gérance s'apprécie en ajoutant aux parts du gérant celles de son conjoint (ou partenaire de PACS) et de ses enfants mineurs non émancipés : 30 % + 25 % = 55 %. M. Arnal est gérant majoritaire, travailleur non salarié (exclu de l'affiliation au régime général prévue par CSS art. L311-3 pour les seuls gérants minoritaires ou égalitaires) : option 2.\nL'option 1 oublie les parts du conjoint.\nL'option 3 est fausse : les parts du conjoint sont prises en compte même s'il n'est pas gérant.\nL'option 4 est fausse : les gérants minoritaires ou égalitaires de SARL sont assimilés salariés.",
+      "source_ref": "CSS art. L311-3 (affiliation des gérants minoritaires ou égalitaires de SARL au régime général) ; CGI art. 62 (gérants majoritaires de SARL)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue1-fisc-remu-0002",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "remuneration-dirigeants-fiscal-social",
+      "difficulty": 2,
+      "tags": [
+        "SARL",
+        "dividendes",
+        "cotisations sociales",
+        "gérant majoritaire"
+      ],
+      "statement": "Dans une SARL soumise à l'IS, les dividendes perçus par le gérant majoritaire sont soumis aux cotisations sociales des travailleurs indépendants pour la fraction qui excède 10 % du capital social, des primes d'émission et des sommes versées en compte courant détenus par lui, son conjoint et ses enfants mineurs.",
+      "answer": true,
+      "justification": "Vrai : cette fraction des dividendes est intégrée dans l'assiette des cotisations sociales du travailleur indépendant (CSS art. L131-6).",
+      "explanation": "Le dispositif vise à limiter l'arbitrage consistant à remplacer la rémunération du gérant majoritaire (soumise à cotisations) par des dividendes. La fraction excédant le seuil de 10 % supporte les cotisations et contributions sociales des indépendants ; la fraction inférieure supporte les prélèvements sociaux sur les revenus du capital. Pour l'IR, l'ensemble reste imposé comme un dividende (PFU ou barème sur option). Les dividendes versés au président d'une SAS ne sont pas concernés.",
+      "source_ref": "CSS art. L131-6 (assiette des cotisations des travailleurs indépendants, dividendes excédant 10 %)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue1-fisc-remu-0003",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "remuneration-dirigeants-fiscal-social",
+      "difficulty": 2,
+      "tags": [
+        "SAS",
+        "dividendes",
+        "PFU",
+        "IS",
+        "taux réduit"
+      ],
+      "statement": "M. Delmas est l'associé unique (personne physique) et le président de la SAS Brune, qui remplit les conditions du taux réduit d'IS. Le résultat fiscal de 2024, égal au résultat comptable avant IS, s'élève à 122 500 €. Hypothèses : IS à 15 % jusqu'à 42 500 € de bénéfice et 25 % au-delà ; la réserve légale est déjà dotée au maximum ; la totalité du bénéfice après IS est distribuée en 2025 ; M. Delmas reste soumis au prélèvement forfaitaire unique, retenu par hypothèse au taux global de 30 % (12,8 % d'IR et 17,2 % de prélèvements sociaux). Calculez le montant net perçu par M. Delmas après IS et PFU, arrondi à l'euro.",
+      "expected_value": 67288,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "IS = 42 500 × 15 % + (122 500 − 42 500) × 25 % = 6 375 + 20 000 = 26 375 €.\nBénéfice distribué = 122 500 − 26 375 = 96 125 €.\nPFU = 96 125 × 30 % = 28 837,50 € ; net perçu = 96 125 − 28 837,50 = 67 287,50 €, soit environ 67 288 € (67 287 € accepté).\nLe président d'une SAS étant assimilé salarié, ses dividendes ne supportent pas de cotisations sociales. Erreurs fréquentes : appliquer le PFU au bénéfice avant IS (85 750 €) ou calculer l'IS à 25 % sur la totalité (64 312,50 €).",
+      "source_ref": "CGI art. 219, I-b (taux réduit) ; CGI art. 200 A (prélèvement forfaitaire unique) ; taux de prélèvements sociaux donné par hypothèse",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue1-fisc-remu-0004",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "remuneration-dirigeants-fiscal-social",
+      "difficulty": 3,
+      "tags": [
+        "SARL",
+        "gérant majoritaire",
+        "dividendes",
+        "cotisations sociales",
+        "PFU",
+        "rémunération"
+      ],
+      "title": "SARL Tessier : rémunérer la gérante par salaire ou par dividendes ?",
+      "context": "La SARL Tessier, soumise à l'IS, exploite un bureau d'études. Son capital de 40 000 €, entièrement libéré, est réparti ainsi : 70 % pour Mme Tessier, gérante unique, et 30 % pour un associé extérieur sans lien familial avec elle. Il n'existe pas de prime d'émission.\n\nMme Tessier, célibataire et sans enfant, a laissé en compte courant d'associé une somme de 30 000 € (montant moyen de l'année, seul à retenir pour l'appréciation du seuil).\n\nEn 2026, l'assemblée décide de distribuer 50 000 € de dividendes, répartis au prorata des parts. Mme Tessier perçoit par ailleurs une rémunération de gérance de 48 000 € au titre de 2026.\n\nHypothèses : Mme Tessier reste soumise au prélèvement forfaitaire unique pour ses dividendes (taux d'IR de 12,8 %) ; on ne tient pas compte des prélèvements et cotisations sociales dans les calculs d'impôt.",
+      "sub_questions": [
+        {
+          "id": "q1-statut",
+          "kind": "mcq",
+          "prompt": "Quel est le statut social de Mme Tessier ?",
+          "points": 2,
+          "options": [
+            "Assimilée salariée, affiliée au régime général",
+            "Travailleuse non salariée, en tant que gérante majoritaire",
+            "Salariée de droit commun, avec assurance chômage",
+            "Aucun statut : la gérance de SARL n'ouvre droit à aucune protection sociale"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Détenant 70 % des parts, Mme Tessier est gérante majoritaire : elle relève du régime des travailleurs non salariés, l'affiliation au régime général (CSS art. L311-3) ne visant que les gérants minoritaires ou égalitaires (option 2). L'option 1 vaudrait pour une gérante minoritaire ; l'option 3 suppose un contrat de travail distinct ; l'option 4 est fausse, la gérante majoritaire cotise au régime des indépendants."
+        },
+        {
+          "id": "q2-fraction-cotisations",
+          "kind": "numeric",
+          "prompt": "Calculez la fraction des dividendes perçus par Mme Tessier qui est soumise aux cotisations sociales des travailleurs indépendants, en euros.",
+          "points": 3,
+          "expected_value": 29200,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Dividendes perçus : 50 000 × 70 % = 35 000 €. Seuil : 10 % × (capital détenu 40 000 × 70 % + compte courant 30 000) = 10 % × 58 000 = 5 800 € (CSS art. L131-6). Fraction soumise à cotisations : 35 000 − 5 800 = 29 200 €. Retenir tout le capital social (seuil de 7 000 €, soit 28 000 €) ou oublier le compte courant (seuil de 2 800 €, soit 32 200 €) sont des erreurs."
+        },
+        {
+          "id": "q3-ir-dividendes",
+          "kind": "numeric",
+          "prompt": "Calculez l'impôt sur le revenu dû par Mme Tessier sur ses dividendes au titre du PFU, en euros.",
+          "points": 2,
+          "expected_value": 4480,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Pour l'IR, la totalité des dividendes reste un revenu de capitaux mobiliers, y compris la fraction soumise à cotisations : 35 000 × 12,8 % = 4 480 € (CGI art. 200 A)."
+        },
+        {
+          "id": "q4-remuneration",
+          "kind": "open",
+          "prompt": "Présentez le traitement fiscal de la rémunération de gérance de 48 000 €, pour la société et pour Mme Tessier, et indiquez en quoi il diffère de celui des dividendes.",
+          "points": 3,
+          "model_answer": "Pour la SARL, la rémunération de gérance est une charge déductible du résultat imposable à l'IS, à condition de correspondre à un travail effectif et de ne pas être excessive au regard du service rendu (CGI art. 39-1-1°) ; les cotisations sociales de la gérante sont également déductibles. Pour Mme Tessier, gérante majoritaire, la rémunération est imposable à l'IR dans la catégorie des traitements et salaires (CGI art. 62), après déduction forfaitaire de 10 % ou des frais réels, et soumise au barème progressif. À l'inverse, les dividendes ne sont pas déductibles : ils sont prélevés sur le bénéfice après IS, puis imposés chez l'associé au PFU (ou au barème après abattement de 40 % sur option). L'arbitrage compare donc la charge sociale et l'IR de la rémunération avec l'IS, le PFU et, pour un gérant majoritaire, les cotisations sur la fraction des dividendes excédant 10 %.",
+          "key_points": [
+            "Rémunération déductible pour la société si travail effectif et non excessive",
+            "Imposée dans la catégorie des traitements et salaires (CGI art. 62), abattement de 10 % ou frais réels",
+            "Dividendes non déductibles, prélevés sur le bénéfice après IS",
+            "Dividendes imposés au PFU ou, sur option, au barème après abattement de 40 %"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Gérante majoritaire, Mme Tessier est travailleuse non salariée : la fraction de ses dividendes excédant 10 % de son capital et de son compte courant (29 200 €) supporte les cotisations des indépendants, tandis que l'IR sur la totalité des dividendes relève du PFU (4 480 €). Sa rémunération de gérance est déductible pour la société et imposée dans la catégorie des traitements et salaires.",
+      "source_ref": "CSS art. L311-3 et L131-6 ; CGI art. 39-1-1°, 62 et 200 A",
+      "verified": true,
+      "estimated_seconds": 720
+    },
+    {
+      "id": "ue1-fisc-remu-0005",
+      "type": "flashcard",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "remuneration-dirigeants-fiscal-social",
+      "difficulty": 1,
+      "tags": [
+        "dividendes",
+        "PFU",
+        "barème progressif"
+      ],
+      "front": "Quelles sont les deux modalités d'imposition à l'IR des dividendes perçus par une personne physique résidente ?",
+      "back": "1. Par défaut : prélèvement forfaitaire unique de 12,8 % au titre de l'IR (CGI art. 200 A), auquel s'ajoutent les prélèvements sociaux.\n2. Sur option globale et annuelle : barème progressif, après abattement de 40 % sur le montant des dividendes (CGI art. 158-3-2°), avec une fraction de CSG déductible.\nL'option vaut pour l'ensemble des revenus de capitaux mobiliers et plus-values de l'année.",
+      "explanation": "L'option pour le barème est intéressante pour les foyers dont le taux marginal d'imposition est faible (0 % ou 11 %), grâce à l'abattement de 40 % et à la CSG déductible. Elle s'exerce sur la déclaration de revenus et s'applique à tous les revenus entrant dans le champ du PFU.",
+      "source_ref": "CGI art. 200 A (PFU) ; CGI art. 158-3-2° (abattement de 40 %)",
+      "verified": true,
+      "estimated_seconds": 40
+    }
+  ]
+}

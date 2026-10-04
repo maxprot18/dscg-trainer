@@ -1,0 +1,78 @@
+{
+  "exercises": [
+    {
+      "id": "ue6-rapports-audrep-0001",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "rapports-annuels",
+      "notion": "auditor-report-english",
+      "difficulty": 2,
+      "tags": [
+        "going concern",
+        "material uncertainty",
+        "ISA 570"
+      ],
+      "statement": "The independent auditor's report on Fenwick plc contains, after the \"Basis for opinion\" section, a section headed \"Material uncertainty related to going concern\". It refers to note 2, in which the directors explain that the renewal of the group's main credit facility, due in six months, has not yet been agreed. The \"Opinion\" section states that the financial statements give a true and fair view. What does this mean?",
+      "options": [
+        "The auditor has issued a qualified opinion because of doubts about the company's survival.",
+        "The auditor considers the disclosure in note 2 adequate and draws users' attention to it, without modifying the opinion.",
+        "The auditor was unable to obtain sufficient evidence and therefore disclaims an opinion.",
+        "The auditor considers that the going concern basis of accounting is inappropriate and has issued an adverse opinion."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Option 2 is correct: under ISA 570, when the going concern basis is appropriate but a material uncertainty exists and is adequately disclosed, the auditor expresses an unmodified opinion and includes a separate section headed \"Material uncertainty related to going concern\" referring to the relevant note. Option 1 is wrong: a qualified opinion would be issued only if the disclosure were inadequate, whereas here the Opinion section still states that the financial statements give a true and fair view. Option 3 is wrong: nothing indicates a limitation of scope. Option 4 is wrong: an adverse opinion applies when the financial statements are prepared on a going concern basis although this basis is inappropriate, which is not the case here.",
+      "source_ref": "ISA 570 (Revised) §22-23 (use of the going concern basis appropriate but a material uncertainty exists) — IAASB",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue6-rapports-audrep-0002",
+      "type": "true_false",
+      "ue": "UE6",
+      "theme": "rapports-annuels",
+      "notion": "auditor-report-english",
+      "difficulty": 1,
+      "tags": [
+        "ISA 700",
+        "structure of the auditor's report",
+        "opinion"
+      ],
+      "statement": "In an auditor's report on the financial statements of a listed company prepared under ISA 700 (Revised), the \"Opinion\" section comes first, followed by the \"Basis for opinion\" section.",
+      "answer": true,
+      "justification": "True: since the 2015 revision, ISA 700 requires the Opinion section to be presented first, immediately followed by the Basis for opinion section.",
+      "explanation": "The revised auditor's report places the most important information first: the Opinion section (e.g. \"give a true and fair view\"), then the Basis for opinion (audit performed under ISAs, independence, sufficient appropriate evidence). Then come, where applicable, the going concern section, key audit matters, other information, the responsibilities of management and of the auditor, and other reporting responsibilities.",
+      "source_ref": "ISA 700 (Revised) §23-28 (Opinion and Basis for opinion sections) — IAASB",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue6-rapports-audrep-0003",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "rapports-annuels",
+      "notion": "auditor-report-english",
+      "difficulty": 3,
+      "tags": [
+        "public-interest entities",
+        "Regulation 537/2014",
+        "auditor's report"
+      ],
+      "statement": "You are reading the auditor's report on a French listed group, a public-interest entity. Which of the following items must the report contain under article 10 of Regulation (EU) No 537/2014?",
+      "options": [
+        "The fees billed by the auditor for each individual non-audit service provided to the group",
+        "An opinion on the effectiveness of internal control over financial reporting",
+        "A list of all the misstatements identified during the audit, whether corrected or not",
+        "The date of the auditor's appointment and the total uninterrupted engagement period, including renewals"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Option 4 is correct: article 10 of the Regulation adds specific contents for public-interest entities, including the date of appointment and the period of total uninterrupted engagement, key audit matters, a statement that no prohibited non-audit services were provided and that the auditor remained independent, and confirmation that the opinion is consistent with the additional report to the audit committee. Option 1 is wrong: audit and non-audit fees are disclosed by the entity in the notes, not detailed service by service in the auditor's report (the report only has to indicate services provided in addition to the statutory audit that are not already disclosed in the management report or the financial statements, with no fee breakdown). Option 2 is wrong: an opinion on internal control over financial reporting is a US requirement (Sarbanes-Oxley Act, section 404(b)) for certain issuers, not an EU one. Option 3 is wrong: misstatements are communicated to management and those charged with governance (and summarised in the additional report to the audit committee), not listed in the public report.",
+      "source_ref": "Regulation (EU) No 537/2014, art. 10(2), points (b), (c), (e), (f) and (g) (additional contents of the audit report for public-interest entities) and art. 11 (additional report to the audit committee)",
+      "verified": true,
+      "estimated_seconds": 90
+    }
+  ]
+}

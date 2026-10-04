@@ -1,0 +1,96 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-fin-surreel-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "financement-garanties",
+      "notion": "suretes-reelles",
+      "difficulty": 1,
+      "tags": [
+        "hypothèque",
+        "sûreté immobilière"
+      ],
+      "statement": "La SAS Pradel, propriétaire de son entrepôt, souhaite garantir un prêt bancaire sur ce bâtiment tout en continuant à l'exploiter. Quelle sûreté la banque demandera-t-elle ?",
+      "options": [
+        "Un gage sans dépossession inscrit sur un registre tenu par le greffe",
+        "Une hypothèque conventionnelle, consentie par acte notarié et publiée au service de la publicité foncière",
+        "Un nantissement de l'entrepôt, constaté par un écrit sous seing privé",
+        "Une clause de réserve de propriété insérée dans le contrat de prêt"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "L'hypothèque est la sûreté réelle immobilière sans dépossession : le constituant conserve l'usage de l'immeuble. L'hypothèque conventionnelle exige un acte notarié et sa publication au service de la publicité foncière, qui la rend opposable et fixe son rang (option 2). Le gage (option 1) porte sur des meubles corporels, le nantissement (option 3) sur des meubles incorporels : ni l'un ni l'autre ne peut grever un immeuble. La réserve de propriété (option 4) est une clause du contrat de vente au profit du vendeur impayé, pas une sûreté consentie par un emprunteur sur un bien dont il est déjà propriétaire.",
+      "source_ref": "C. civ., livre IV, dispositions relatives aux hypothèques conventionnelles ; art. 2333 (gage) et 2355 (nantissement)",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue1-fin-surreel-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "financement-garanties",
+      "notion": "suretes-reelles",
+      "difficulty": 3,
+      "tags": [
+        "réserve de propriété",
+        "revendication",
+        "procédure collective"
+      ],
+      "statement": "La société Fluvia a vendu des machines à la société Orbis, livrées le 2 février N. Une clause de réserve de propriété figure dans ses conditions générales de vente, acceptées par écrit par Orbis lors de la commande. Le prix n'est pas payé. Un jugement d'ouverture de redressement judiciaire d'Orbis est publié au BODACC le 10 septembre N ; les machines sont toujours dans les locaux d'Orbis, identifiables et intactes. Quelle affirmation est exacte ?",
+      "options": [
+        "La clause est inopposable à la procédure, une réserve de propriété devant être publiée au registre des sûretés pour produire effet en redressement judiciaire",
+        "Fluvia doit seulement déclarer sa créance : la réserve de propriété ne produit aucun effet après l'ouverture d'une procédure collective",
+        "Fluvia peut revendiquer les machines, à condition d'agir dans les 3 mois de la publication du jugement d'ouverture, soit au plus tard le 10 décembre N",
+        "Fluvia peut revendiquer les machines à tout moment tant que la procédure n'est pas clôturée"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Le vendeur sous réserve de propriété peut revendiquer les biens si la clause a été convenue par écrit au plus tard au moment de la livraison et si les biens se retrouvent en nature (C. com. art. L624-16) ; la demande doit être formée dans les 3 mois de la publication du jugement d'ouverture (art. L624-9) : option 3. Ici, la clause a été acceptée par écrit dès la commande et les machines sont intactes. L'option 1 ajoute une condition de publicité que la loi n'impose pas pour la réserve de propriété. L'option 2 méconnaît l'efficacité de la sûreté-propriété en procédure collective. L'option 4 ignore le délai de forclusion de 3 mois.",
+      "source_ref": "C. civ. art. 2367 (réserve de propriété) ; C. com. art. L624-9 et L624-16 (revendication)",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue1-fin-surreel-0003",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "financement-garanties",
+      "notion": "suretes-reelles",
+      "difficulty": 2,
+      "tags": [
+        "gage",
+        "pacte commissoire"
+      ],
+      "statement": "Lors de la constitution d'un gage portant sur un stock de marchandises, une société commerciale peut convenir avec sa banque qu'à défaut de paiement de la dette garantie, la banque deviendra propriétaire du bien gagé.",
+      "answer": true,
+      "justification": "Vrai : le pacte commissoire est admis en matière de gage (C. civ. art. 2348) ; la valeur du bien est alors fixée à la date du transfert, par expert à défaut de cotation officielle.",
+      "explanation": "Le pacte commissoire est une clause d'attribution conventionnelle de la propriété du bien gagé au créancier en cas de défaillance. Prohibé autrefois, il est admis pour le gage depuis la réforme des sûretés de 2006. Si la valeur du bien excède le montant de la dette, le créancier verse la différence au constituant. En cas de procédure de sauvegarde ou de redressement judiciaire du débiteur, le jugement d'ouverture fait en revanche obstacle à la conclusion et à la réalisation d'un pacte commissoire (C. com. art. L622-7).",
+      "source_ref": "C. civ. art. 2348 (pacte commissoire en matière de gage) ; C. com. art. L622-7",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue1-fin-surreel-0004",
+      "type": "flashcard",
+      "ue": "UE1",
+      "theme": "financement-garanties",
+      "notion": "suretes-reelles",
+      "difficulty": 1,
+      "tags": [
+        "fiducie-sûreté",
+        "sûreté-propriété"
+      ],
+      "front": "Qu'est-ce qu'une fiducie-sûreté et qui peut être fiduciaire ?",
+      "back": "Opération par laquelle un constituant transfère la propriété de biens ou de droits à un fiduciaire, qui les tient dans un patrimoine d'affectation séparé de son patrimoine propre, en garantie d'une obligation.\nSi la dette n'est pas payée, le créancier devient pleinement propriétaire du bien (ou le fait vendre), en restituant l'éventuel excédent de valeur.\nFiduciaires possibles : établissements de crédit, entreprises d'investissement, entreprises d'assurance, avocats.",
+      "explanation": "La fiducie est définie aux articles 2011 et suivants du Code civil (le fiduciaire est limitativement désigné à l'article 2015) ; la fiducie-sûreté fait l'objet de dispositions propres pour les meubles (art. 2372-1 s.) et pour les immeubles. Comme la réserve de propriété, c'est une sûreté-propriété : le créancier n'entre pas en concours avec les autres créanciers sur le bien transféré.",
+      "source_ref": "C. civ. art. 2011, 2015 et 2372-1 s. (fiducie, fiducie-sûreté)",
+      "verified": true,
+      "estimated_seconds": 45
+    }
+  ]
+}

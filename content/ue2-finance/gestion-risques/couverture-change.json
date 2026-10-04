@@ -27,6 +27,258 @@
       ],
       "multiple": false,
       "explanation": "Le cours à terme découle de la parité des taux d'intérêt. Cotation à l'incertain pour le dollar (USD pour 1 EUR) : F = 1,1000 × (1 + 5 % × 90/360) / (1 + 3 % × 90/360) = 1,1000 × 1,0125 / 1,0075 ≈ 1,105459 USD pour 1 EUR. Le dollar, devise au taux le plus élevé, cote en déport à terme. Montant garanti : 1 100 000 / 1,105459 ≈ 995 062 €. 1 000 000 € correspond au cours comptant (aucune prise en compte du différentiel de taux) ; 1 004 963 € inverse les taux dans la formule ; 980 392 € applique le différentiel annuel de 2 points sans le proratiser sur 3 mois (F ≈ 1,1000 × 1,02 = 1,1220). La couverture fige le montant : l'entreprise renonce à un éventuel gain de change mais élimine le risque de perte."
+    },
+    {
+      "id": "ue2-risques-change-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "couverture-change",
+      "difficulty": 2,
+      "tags": [
+        "avance en devises",
+        "exportateur"
+      ],
+      "source_ref": "Avance en devises : montant emprunté = créance / (1 + i_devise × n/360)",
+      "verified": true,
+      "estimated_seconds": 150,
+      "statement": "La société Dunes doit encaisser 1 000 000 USD d’un client américain dans 90 jours. Pour se couvrir, elle emprunte aujourd’hui des dollars, qu’elle convertit immédiatement en euros, de sorte que le remboursement de l’emprunt (capital et intérêts) soit exactement égal à la créance. Le taux d’emprunt en dollars est de 6 % l’an (intérêts simples, année de 360 jours). Quel montant de dollars Dunes doit-elle emprunter (arrondi au dollar) ?",
+      "options": [
+        "985 000 USD",
+        "1 000 000 USD",
+        "985 222 USD",
+        "943 396 USD"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Le montant emprunté M doit vérifier M × (1 + 6 % × 90/360) = 1 000 000, soit M = 1 000 000 / 1,015 ≈ 985 222 USD (option 3) ; ces dollars, convertis au comptant, procurent immédiatement des euros, et l’encaissement du client rembourse l’emprunt. L’option 1 calcule les intérêts sur le montant final (1 000 000 × 1,5 %) au lieu de les calculer sur le capital emprunté. L’option 2 oublie les intérêts : le remboursement dépasserait la créance. L’option 4 applique le taux annuel de 6 % sans le proratiser sur 90 jours."
+    },
+    {
+      "id": "ue2-risques-change-0003",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "couverture-change",
+      "difficulty": 3,
+      "tags": [
+        "IFRS 9",
+        "couverture de flux de trésorerie",
+        "transaction prévue"
+      ],
+      "source_ref": "IFRS 9 §6.3.3, §6.5.2 et §6.5.11 (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 120,
+      "statement": "Le groupe Ferval (comptes IFRS) prévoit, de façon hautement probable, une vente de 2 000 000 USD dans quatre mois, non encore contractualisée. Il la couvre dès aujourd’hui par une vente à terme de dollars, et documente la relation de couverture dès l’origine. À la clôture intermédiaire, la vente n’a pas encore eu lieu et le contrat à terme a une juste valeur positive. Quel traitement IFRS 9 s’applique à la variation de juste valeur du contrat à terme, la relation étant efficace ?",
+      "options": [
+        "Couverture de juste valeur : la variation du contrat à terme est portée en résultat, compensée par une réévaluation de la vente future en résultat",
+        "Couverture d’investissement net : la variation est portée en écart de conversion et recyclée lors de la cession de la filiale",
+        "Aucune comptabilité de couverture n’est possible, une transaction non contractualisée ne pouvant pas être un élément couvert",
+        "Couverture de flux de trésorerie : la part efficace est portée en autres éléments du résultat global, puis reclassée en résultat lorsque la vente affecte le résultat"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Une transaction future hautement probable peut être un élément couvert (IFRS 9 §6.3.3) ; le risque couvert est la variabilité de ses flux de trésorerie en euros : c’est une couverture de flux de trésorerie (option 4). La part efficace de la variation de juste valeur du dérivé est portée en autres éléments du résultat global (réserve de couverture), la part inefficace en résultat, et le montant accumulé est reclassé en résultat lorsque la vente couverte affecte le résultat (§6.5.11). L’option 1 est impossible : une transaction prévue n’est pas comptabilisée, il n’existe rien à réévaluer. L’option 2 vise l’actif net d’une activité à l’étranger. L’option 3 est fausse dès lors que la transaction est hautement probable et la relation documentée."
+    },
+    {
+      "id": "ue2-risques-change-0004",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "couverture-change",
+      "difficulty": 2,
+      "tags": [
+        "option de change",
+        "put",
+        "exportateur"
+      ],
+      "source_ref": "Résultat d’une couverture par option : flux encaissé au cours le plus favorable entre prix d’exercice et comptant, diminué de la prime",
+      "verified": true,
+      "estimated_seconds": 180,
+      "statement": "La société Garonne doit encaisser 500 000 USD dans trois mois. Elle achète une option de vente de dollars (put USD) portant sur 500 000 USD, au prix d’exercice de 0,9200 € pour 1 USD, moyennant une prime de 0,0150 € par dollar payée à la souscription. À l’échéance, le cours au comptant est de 1 USD = 0,8900 €. Quel montant net en euros Garonne obtient-elle, prime déduite (on néglige le coût de financement de la prime) ?",
+      "expected_value": 452500,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Le cours comptant (0,8900 €) est inférieur au prix d’exercice (0,9200 €) : Garonne exerce son option et vend ses dollars à 0,9200 €, soit 500 000 × 0,92 = 460 000 €. Prime payée : 500 000 × 0,015 = 7 500 €. Montant net : 460 000 − 7 500 = 452 500 €. Erreurs fréquentes : oublier la prime (460 000 €) ou vendre au comptant (500 000 × 0,89 − 7 500 = 437 500 €). Sans couverture, Garonne aurait obtenu 445 000 €."
+    },
+    {
+      "id": "ue2-risques-change-0005",
+      "type": "journal_entry",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "couverture-change",
+      "difficulty": 2,
+      "tags": [
+        "vente à terme",
+        "opération commerciale",
+        "symétrie"
+      ],
+      "source_ref": "PCG art. 420-1 s. et 628-1 s. (règl. ANC 2014-03 modifié par le règl. ANC 2015-05) ; comptes 411, 512, 656, 756",
+      "verified": true,
+      "estimated_seconds": 240,
+      "statement": "Le 1er février N, la société Hélis vend des marchandises à un client américain pour 200 000 USD, payables le 30 avril N. La créance est enregistrée au cours du jour, 1 USD = 0,9100 €, soit 182 000 €. Le même jour, Hélis vend à terme 200 000 USD à sa banque, échéance 30 avril N, au cours de 0,9050 € pour 1 USD. Le 30 avril N, le client paie, le contrat à terme est dénoué par livraison des dollars et la banque crédite le compte de l’euro correspondant ; le cours au comptant est alors de 0,8800 €. Convention : la couverture est comptabilisée symétriquement à l’opération commerciale couverte, et l’écart entre le montant encaissé en euros et la créance est enregistré en perte ou gain de change commercial (656 ou 756). Passez l’écriture du 30 avril N.",
+      "date": "30/04/N",
+      "entries": [
+        {
+          "account": "512",
+          "label": "Banque",
+          "debit": 181000,
+          "credit": 0
+        },
+        {
+          "account": "656",
+          "label": "Pertes de change sur créances et dettes commerciales",
+          "debit": 1000,
+          "credit": 0
+        },
+        {
+          "account": "411",
+          "label": "Clients",
+          "debit": 0,
+          "credit": 182000
+        }
+      ],
+      "explanation": "Grâce à la vente à terme, Hélis encaisse 200 000 × 0,9050 = 181 000 €, quel que soit le cours du jour. La créance, enregistrée à 182 000 €, est soldée ; l’écart de 1 000 € correspond au déport du dollar à terme et constitue une perte de change sur opération commerciale (656). Sans couverture, Hélis n’aurait encaissé que 200 000 × 0,88 = 176 000 € (perte de 6 000 €). Le cours comptant du 30 avril n’intervient donc pas dans l’écriture. Le règl. ANC 2015-05 admet aussi d’étaler le déport en résultat financier sur la durée de la couverture ; seule la convention imposée par l’énoncé est attendue ici."
+    },
+    {
+      "id": "ue2-risques-change-0006",
+      "type": "journal_entry",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "couverture-change",
+      "difficulty": 2,
+      "tags": [
+        "achat à terme",
+        "emprunt en devises",
+        "opération financière"
+      ],
+      "source_ref": "PCG art. 420-1 s. et 628-1 s. (règl. ANC 2014-03 modifié par le règl. ANC 2015-05) ; comptes 164, 512, 666, 766",
+      "verified": true,
+      "estimated_seconds": 240,
+      "statement": "Le 1er mars N, la société Isard obtient un emprunt bancaire de 300 000 USD remboursable in fine le 31 août N, enregistré au compte 164 au cours du jour, 1 USD = 0,9500 €, soit 285 000 €. Le même jour, elle achète à terme 300 000 USD pour le 31 août N au cours de 0,9300 € pour 1 USD. Le 31 août N, le cours au comptant est de 0,9700 € ; Isard rembourse l’emprunt avec les dollars livrés par la banque au titre du contrat à terme, payés en euros. Convention : la couverture est comptabilisée symétriquement à l’opération financière couverte, et l’écart entre le décaissement en euros et la dette est enregistré en perte ou gain de change financier (666 ou 766). Les intérêts, réglés séparément, sont ignorés. Passez l’écriture du 31 août N.",
+      "date": "31/08/N",
+      "entries": [
+        {
+          "account": "164",
+          "label": "Emprunts auprès des établissements de crédit",
+          "debit": 285000,
+          "credit": 0
+        },
+        {
+          "account": "512",
+          "label": "Banque",
+          "debit": 0,
+          "credit": 279000
+        },
+        {
+          "account": "766",
+          "label": "Gains de change financiers",
+          "debit": 0,
+          "credit": 6000
+        }
+      ],
+      "explanation": "L’achat à terme fixe le coût des dollars : 300 000 × 0,9300 = 279 000 €. La dette, enregistrée à 285 000 €, est soldée pour 279 000 € : gain de change financier de 6 000 € (766), l’opération couverte étant un emprunt. Ce gain reflète le déport du dollar à terme (taux d’intérêt du dollar supérieur à celui de l’euro), qui compense économiquement des intérêts plus élevés. Sans couverture, le remboursement aurait coûté 291 000 € (perte de 6 000 €). Le règl. ANC 2015-05 admet aussi d’étaler le déport en résultat financier sur la durée de la couverture plutôt que de le constater au dénouement ; seule la convention imposée par l’énoncé est attendue ici."
+    },
+    {
+      "id": "ue2-risques-change-0007",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "couverture-change",
+      "difficulty": 3,
+      "tags": [
+        "change à terme",
+        "option de change",
+        "point mort"
+      ],
+      "source_ref": "Parité des taux d’intérêt couverte ; résultat d’une option de change ; IFRS 9 §6.2 (instruments de couverture) (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 840,
+      "title": "Ondine : terme ou option ?",
+      "context": "La société Ondine (robinetterie haut de gamme) a facturé un distributeur américain pour 800 000 USD, payables dans 180 jours. Elle hésite entre deux couvertures.\n\nDonnées de marché :\n- cours au comptant : 1 EUR = 1,0800 USD (soit environ 0,9259 € pour 1 USD) ;\n- taux d’intérêt à 180 jours, annuels proportionnels (année de 360 jours) : 2,5 % sur l’euro, 4,5 % sur le dollar.\n\nSolution 1 : vente à terme de 800 000 USD à 180 jours, au cours à terme déterminé par la parité des taux d’intérêt.\n\nSolution 2 : achat d’une option de vente de 800 000 USD (put USD), prix d’exercice 0,9100 € pour 1 USD, prime 0,0120 € par dollar payée immédiatement ; on néglige le coût de financement de la prime.\n\nLe gérant estime que « l’option est toujours meilleure puisqu’elle protège sans faire renoncer au gain ».",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "Calculez le montant en euros garanti par la vente à terme (arrondi à l’euro).",
+          "points": 3,
+          "expected_value": 733496,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 100
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Cours à terme (USD pour 1 EUR) : F = 1,0800 × (1 + 4,5 % × 180/360) / (1 + 2,5 % × 180/360) = 1,0800 × 1,0225 / 1,0125 ≈ 1,090667. Montant garanti : 800 000 / 1,090667 ≈ 733 496 €. Le dollar, à taux plus élevé, cote en déport. Erreurs : cours comptant (740 741 €), taux non proratisés (726 564 €)."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "prompt": "Scénario A : à l’échéance, 1 USD = 0,8700 €. Quel montant net (prime déduite) l’option procure-t-elle, en euros ?",
+          "points": 2,
+          "expected_value": 718400,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "L’option est exercée (0,8700 < 0,9100) : 800 000 × 0,91 = 728 000 €, moins la prime de 800 000 × 0,012 = 9 600 €, soit 718 400 €, moins que le terme (733 496 €)."
+        },
+        {
+          "id": "q3",
+          "kind": "numeric",
+          "prompt": "Scénario B : à l’échéance, 1 USD = 0,9600 €. Quel montant net (prime déduite) l’option procure-t-elle, en euros ?",
+          "points": 2,
+          "expected_value": 758400,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "L’option est abandonnée ; les dollars sont vendus au comptant : 800 000 × 0,96 = 768 000 €, moins la prime de 9 600 €, soit 758 400 €, plus que le terme."
+        },
+        {
+          "id": "q4",
+          "kind": "mcq",
+          "prompt": "À partir de quel cours comptant à l’échéance (en € pour 1 USD) l’option devient-elle plus avantageuse que le terme ?",
+          "points": 2,
+          "options": [
+            "Au-dessus de 0,9100 €",
+            "Au-dessus d’environ 0,9169 €",
+            "Au-dessus d’environ 0,9289 €",
+            "Au-dessus d’environ 0,9220 €"
+          ],
+          "answer": [
+            2
+          ],
+          "multiple": false,
+          "explanation": "L’option l’emporte quand elle est abandonnée et que 800 000 × S − 9 600 > 733 496, soit S > 743 096 / 800 000 ≈ 0,9289 € (option 3). L’option 1 est le prix d’exercice, qui ignore la prime et le terme. L’option 2 est le cours à terme (1 / 1,090667 ≈ 0,9169 €), qui ignore la prime. L’option 4 ajoute la prime au prix d’exercice (0,9100 + 0,0120), sans comparer avec le terme."
+        },
+        {
+          "id": "q5",
+          "kind": "open",
+          "prompt": "Que penser de l’affirmation du gérant ? Formulez une recommandation.",
+          "points": 3,
+          "model_answer": "L’affirmation est inexacte : l’option protège en laissant le gain, mais sa prime est payée dans tous les cas. Si le dollar reste sous environ 0,9289 €, l’option fait moins bien que le terme (scénario A : 718 400 € contre 733 496 €) ; elle ne fait mieux qu’en cas de hausse sensible du dollar (scénario B). Le terme garantit 733 496 € sans décaissement initial, mais fait renoncer à tout gain. Le choix dépend des anticipations et de l’aversion au risque : si Ondine veut un montant certain pour sa marge, le terme suffit ; si elle anticipe une hausse du dollar et accepte de payer la prime, l’option convient. Une option dont le prix d’exercice est plus bas réduirait la prime mais aussi la protection.",
+          "key_points": [
+            "La prime est due dans tous les cas : l’option n’est pas toujours meilleure",
+            "L’option ne bat le terme qu’au-dessus du point mort d’environ 0,9289 €",
+            "Le terme garantit un montant certain sans prime, mais supprime le gain potentiel",
+            "Choix selon les anticipations, l’aversion au risque et le coût de la prime"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Terme : 733 496 € garantis. Option : 718 400 € dans le scénario A, 758 400 € dans le scénario B ; point mort option / terme à environ 0,9289 € pour 1 USD. Le terme fige le cours ; l’option protège en laissant le gain, contre une prime non récupérable."
     }
   ]
 }

@@ -5,12 +5,15 @@ import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 import { VitePWA } from 'vite-plugin-pwa'
 
+import { stripUnverified } from './build/stripUnverified.ts'
+
 // GitHub Pages sert le site sous /dscg-trainer/ ; en dev on reste à la racine.
 const base = process.env.VITE_BASE ?? (process.env.NODE_ENV === 'production' ? '/dscg-trainer/' : '/')
 
 export default defineConfig({
   base,
   plugins: [
+    stripUnverified(),
     react(),
     tailwindcss(),
     VitePWA({
@@ -52,6 +55,6 @@ export default defineConfig({
     environment: 'jsdom',
     globals: true,
     setupFiles: ['./src/test/setup.ts'],
-    include: ['src/**/*.test.{ts,tsx}', 'scripts/**/*.test.ts'],
+    include: ['src/**/*.test.{ts,tsx}', 'scripts/**/*.test.ts', 'build/**/*.test.ts'],
   },
 })

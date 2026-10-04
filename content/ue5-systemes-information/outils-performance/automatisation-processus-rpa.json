@@ -1,0 +1,149 @@
+{
+  "exercises": [
+    {
+      "id": "ue5-outils-rpa-0001",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "automatisation-processus-rpa",
+      "difficulty": 2,
+      "tags": [
+        "RPA",
+        "choix des processus",
+        "automatisation"
+      ],
+      "statement": "Une direction financière veut lancer un premier robot logiciel (RPA). Quel processus est le meilleur candidat ?",
+      "options": [
+        "Le lettrage quotidien d'environ 300 relevés bancaires reçus sous forme de fichiers structurés, selon des règles de rapprochement stables",
+        "Le traitement des réclamations de clients rédigées librement, qui exige d'apprécier chaque situation",
+        "La validation des demandes d'investissement, soit une dizaine de dossiers par an",
+        "Le processus de recouvrement, dont l'organisation sera entièrement revue dans six mois"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "La RPA convient aux tâches répétitives, à fort volume, reposant sur des données structurées et des règles stables : le lettrage de relevés bancaires structurés selon des règles constantes en est l'exemple type. L'option 2 exige du jugement sur des textes libres : la RPA seule ne sait pas le faire (il faudrait au minimum des outils d'IA, avec une supervision humaine). L'option 3 a un volume trop faible pour amortir le développement et la maintenance d'un robot, et la décision relève du jugement. L'option 4 conduirait à automatiser un processus appelé à changer : le robot, dépendant des écrans et des procédures, serait à refaire ; il faut d'abord stabiliser et simplifier le processus.",
+      "source_ref": "Programme DSCG UE 5 : automatisation des processus (RPA), critères de choix des processus à automatiser",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue5-outils-rpa-0002",
+      "type": "numeric",
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "automatisation-processus-rpa",
+      "difficulty": 2,
+      "tags": [
+        "RPA",
+        "ETP",
+        "gains de productivité"
+      ],
+      "statement": "Un service comptable saisit 36 000 factures fournisseurs par an ; chaque saisie manuelle prend 6 minutes. Un robot logiciel traitera sans intervention humaine 80 % des factures ; les 20 % restants (exceptions) continueront d'être saisis manuellement en 6 minutes. Un équivalent temps plein (ETP) représente 1 600 heures de travail par an. Calculez le nombre d'ETP libérés par le robot (arrondi à une décimale).",
+      "expected_value": 1.8,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.05
+      },
+      "unit": "ETP",
+      "decimals": 1,
+      "explanation": "Temps économisé = 36 000 × 80 % × 6 min = 172 800 min = 2 880 h. ETP libérés = 2 880 ÷ 1 600 = 1,8 ETP. Erreur classique : oublier que les exceptions restent manuelles (36 000 × 6 ÷ 60 ÷ 1 600 = 2,25 ETP). Ce temps libéré n'est un gain que s'il est réaffecté à des tâches à valeur ajoutée (analyse, contrôle) ou s'il évite des recrutements.",
+      "source_ref": "Programme DSCG UE 5 : automatisation des processus ; ETP libérés = volume automatisé × temps unitaire ÷ temps annuel d'un ETP",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue5-outils-rpa-0003",
+      "type": "true_false",
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "automatisation-processus-rpa",
+      "difficulty": 1,
+      "tags": [
+        "facturation électronique",
+        "réception",
+        "calendrier"
+      ],
+      "statement": "Depuis le 1er septembre 2026, toutes les entreprises assujetties à la TVA établies en France doivent être en mesure de recevoir sous forme électronique les factures de leurs fournisseurs assujettis établis en France.",
+      "answer": true,
+      "justification": "Vrai : l'obligation de réception des factures électroniques s'applique à toutes les entreprises depuis le 1er septembre 2026, quelle que soit leur taille.",
+      "explanation": "La réforme de la facturation électronique entre assujettis établis en France prévoit une entrée en vigueur progressive. L'obligation de réception concerne toutes les entreprises dès le 1er septembre 2026. L'obligation d'émission s'applique au 1er septembre 2026 aux grandes entreprises et aux ETI, et au 1er septembre 2027 aux PME et microentreprises. Les factures transitent par des plateformes agréées, sous forme de données structurées (Factur-X, UBL, CII).",
+      "source_ref": "CGI art. 289 bis ; loi n° 2023-1322 du 29 décembre 2023 de finances pour 2024, art. 91 (calendrier d'entrée en vigueur)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue5-outils-rpa-0004",
+      "type": "case_study",
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "automatisation-processus-rpa",
+      "difficulty": 3,
+      "tags": [
+        "RPA",
+        "rentabilité",
+        "facturation électronique",
+        "automatisation"
+      ],
+      "title": "Groupe Galibier : un robot pour les factures fournisseurs ?",
+      "context": "Le Groupe Galibier (ETI de distribution, établie en France) reçoit 24 000 factures fournisseurs par an, très majoritairement de fournisseurs français, aujourd'hui sous forme de PDF envoyés par courriel. La saisie manuelle de chaque facture dans l'ERP prend 8 minutes.\n\nUn prestataire propose en octobre 2026 un robot logiciel (RPA) couplé à un outil de lecture optique : le robot lit le PDF, saisit la facture dans l'ERP et la rapproche de la commande. Il traiterait seul 75 % des factures ; les 25 % restants (anomalies) seraient traités manuellement en 10 minutes chacun, compte tenu de l'analyse de l'anomalie.\n\nCoûts : développement initial 40 000 € ; licence du robot 15 000 € par an ; maintenance des scripts 8 000 € par an. Le coût complet d'une heure de travail d'un comptable est de 40 €.\n\nLe directeur administratif et financier rappelle que la réforme de la facturation électronique s'applique désormais au groupe.",
+      "sub_questions": [
+        {
+          "id": "q1-heures",
+          "kind": "numeric",
+          "prompt": "Calculez le nombre d'heures de saisie économisées chaque année grâce au robot (en heures).",
+          "points": 2,
+          "expected_value": 2200,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "h",
+          "decimals": 0,
+          "explanation": "Avant : 24 000 × 8 min = 192 000 min = 3 200 h. Après : 24 000 × 25 % = 6 000 factures en anomalie × 10 min = 60 000 min = 1 000 h. Économie = 3 200 − 1 000 = 2 200 h. Erreur classique : appliquer 8 minutes aux anomalies (économie de 2 400 h)."
+        },
+        {
+          "id": "q2-gain-net",
+          "kind": "numeric",
+          "prompt": "Calculez le gain net annuel du robot, hors coût de développement initial (en €).",
+          "points": 2,
+          "expected_value": 65000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Valeur du temps économisé = 2 200 × 40 = 88 000 €. Coûts annuels = 15 000 + 8 000 = 23 000 €. Gain net annuel = 88 000 − 23 000 = 65 000 €. Le développement de 40 000 € serait récupéré en 40 000 ÷ 65 000 ≈ 0,6 an, si les hypothèses restaient valables."
+        },
+        {
+          "id": "q3-principe",
+          "kind": "true_false",
+          "prompt": "Pour fonctionner, le robot RPA nécessite une modification du code de l'ERP afin de lui ouvrir un accès direct à la base de données.",
+          "points": 1,
+          "answer": false,
+          "explanation": "Faux : la RPA agit sur les interfaces utilisateur existantes, comme le ferait un opérateur, sans modifier les applications. C'est ce qui la rend rapide à déployer, mais fragile en cas de changement d'écran."
+        },
+        {
+          "id": "q4-recommandation",
+          "kind": "open",
+          "prompt": "Faut-il investir dans ce robot ? Argumentez en tenant compte de la réforme de la facturation électronique et des limites de la RPA.",
+          "points": 5,
+          "model_answer": "Le calcul est favorable en apparence : 2 200 heures économisées, gain net de 65 000 € par an, récupération en moins d'un an. Mais l'hypothèse de base ne tient plus : depuis le 1er septembre 2026, le groupe doit pouvoir recevoir ses factures de fournisseurs français sous forme électronique structurée (Factur-X, UBL ou CII) via une plateforme agréée. Les grandes entreprises et ETI émettent déjà des factures électroniques, et les PME et microentreprises y seront tenues au 1er septembre 2027. Les PDF envoyés par courriel vont donc disparaître pour l'essentiel des factures domestiques ; les données arriveront structurées et pourront être intégrées dans l'ERP par la plateforme ou par une interface, sans lecture optique ni robot imitant la saisie. Le gain du robot serait au mieux temporaire (jusqu'en septembre 2027 environ) et limité ensuite aux factures étrangères. S'ajoutent les limites propres à la RPA : fragilité en cas de changement d'écran de l'ERP, maintenance des scripts, risque d'automatiser un processus non optimisé, gestion des habilitations et de la traçabilité du robot. Recommandation : ne pas investir dans ce robot, ou seulement de façon très ciblée et sans engagement long ; prioriser le choix d'une plateforme agréée et l'intégration des flux structurés dans l'ERP, et profiter de la réforme pour revoir le processus achats (rapprochement automatique commande / réception / facture, circuit de validation dématérialisé). La RPA pourra être réservée à des tâches résiduelles stables.",
+          "key_points": [
+            "Rentabilité apparente : 2 200 h et 65 000 € par an, récupération en moins d'un an",
+            "Réception électronique obligatoire depuis le 1er septembre 2026, émission par les PME au 1er septembre 2027 : les PDF disparaissent, les données arrivent structurées",
+            "Gain du robot temporaire et limité aux factures résiduelles (étrangères)",
+            "Limites de la RPA : fragilité, maintenance, automatisation d'un processus non repensé, habilitations du robot",
+            "Priorité : plateforme agréée, intégration des flux structurés dans l'ERP, refonte du processus achats"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Heures économisées = 3 200 − 1 000 = 2 200 h ; gain net annuel = 2 200 × 40 − 23 000 = 65 000 €. Le cas montre qu'un calcul de rentabilité doit être replacé dans son contexte : la facturation électronique structurée rend l'automatisation de la lecture des PDF largement obsolète.",
+      "source_ref": "CGI art. 289 bis ; loi n° 2023-1322 de finances pour 2024, art. 91 (calendrier) ; programme DSCG UE 5 : automatisation des processus (RPA)",
+      "verified": true,
+      "estimated_seconds": 900
+    }
+  ]
+}

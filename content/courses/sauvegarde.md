@@ -1,0 +1,15 @@
+# Sauvegarde, sauvegarde accélérée et classes de parties affectées
+
+**Références :** C. com. art. L620-1 (ouverture), L621-3 (période d'observation), L626-12 (durée du plan), L626-29 à L626-32 (classes de parties affectées, application forcée interclasses), L628-1 s. (sauvegarde accélérée) ; ordonnance n° 2021-1193 du 15 septembre 2021
+
+- **Ouverture** : sur demande du **seul débiteur** qui, **sans être en cessation des paiements**, justifie de difficultés qu'il n'est pas en mesure de surmonter. Le dirigeant conserve l'administration de l'entreprise, assisté ou surveillé par un administrateur judiciaire ; un mandataire judiciaire représente les créanciers.
+- **Période d'observation** : 6 mois, renouvelable une fois pour 6 mois, prolongeable exceptionnellement à la demande du procureur de la République, soit **18 mois au plus**. Effets : arrêt des poursuites individuelles, interdiction de payer les créances antérieures, déclaration des créances dans les 2 mois de la publication du jugement au BODACC.
+- **Plan de sauvegarde** : arrêté par le tribunal, durée **10 ans au plus**. Sans classes, le plan résulte de la consultation des créanciers : délais et remises acceptés, ou délais uniformes imposés par le tribunal aux créanciers qui refusent.
+- **Classes de parties affectées** (réforme de 2021) : obligatoires au-delà de seuils fixés par décret (effectif, chiffre d'affaires), possibles sur demande en deçà. L'administrateur répartit les parties affectées (créanciers dont les droits sont modifiés par le plan, détenteurs de capital) en classes selon une communauté d'intérêts suffisante. Chaque classe vote à la **majorité des deux tiers des voix détenues par les membres ayant exprimé un vote**.
+- **Application forcée interclasses** (*cross-class cram-down*) : si une ou plusieurs classes rejettent le plan, le tribunal peut l'imposer, à la demande du débiteur ou de l'administrateur avec l'accord du débiteur, sous conditions cumulatives, notamment : critère du meilleur intérêt des créanciers (aucune partie dissidente moins bien traitée qu'en cas de liquidation, de cession ou de meilleure solution alternative), approbation par une majorité de classes comprenant une classe de créanciers garantis ou mieux classés que les chirographaires, ou à défaut par au moins une classe « dans la monnaie » autre que les détenteurs de capital, et respect de la règle de priorité absolue, à laquelle des dérogations sont possibles.
+- **Sauvegarde accélérée** : réservée au débiteur **engagé dans une conciliation** qui justifie d'un projet de plan susceptible de recueillir un soutien suffisamment large des parties affectées. Classes obligatoires, durée **2 mois, prolongeable jusqu'à 4 mois**. Depuis 2021, plus de seuil de taille ; la sauvegarde financière accélérée a disparu.
+
+## À retenir
+- Sauvegarde = débiteur in bonis (pas de cessation des paiements), à sa seule initiative.
+- Vote des classes : deux tiers des voix exprimées, non des créances totales de la classe.
+- Le rejet par une classe n'interdit pas l'adoption du plan : le tribunal peut l'imposer sous conditions strictes.

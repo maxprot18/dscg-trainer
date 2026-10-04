@@ -1,0 +1,186 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-fisc-isres-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "is-resultat-fiscal",
+      "difficulty": 1,
+      "tags": [
+        "IS",
+        "charges déductibles",
+        "provisions"
+      ],
+      "statement": "Une SA soumise à l'IS a comptabilisé en charges les montants suivants au titre de l'exercice. Lequel est déductible pour la détermination de son résultat fiscal ?",
+      "options": [
+        "Une majoration de retard appliquée par l'administration pour le paiement tardif de la TVA",
+        "L'impôt sur les sociétés de l'exercice",
+        "Une dotation aux provisions pour indemnités de départ à la retraite du personnel",
+        "Une dotation aux provisions pour un litige prud'homal dont l'issue défavorable est probable et le montant évalué avec précision"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'option 4 est la bonne : une provision est déductible si elle couvre une perte ou une charge nettement précisée, que des événements en cours rendent probable, et si elle est comptabilisée (CGI art. 39-1-5°) ; un litige prud'homal probable et évalué avec précision remplit ces conditions.\nL'option 1 est fausse : les amendes, majorations et pénalités mises à la charge des contrevenants ne sont pas déductibles (CGI art. 39-2).\nL'option 2 est fausse : l'IS n'est pas une charge déductible de son propre résultat imposable ; il est réintégré lorsqu'on part du résultat comptable après impôt.\nL'option 3 est fausse : les provisions pour indemnités de départ à la retraite sont expressément exclues des provisions déductibles (CGI art. 39-1-5°) ; la charge sera déduite lors du versement effectif.",
+      "source_ref": "CGI art. 39-1-5° (provisions déductibles et exclusion des provisions pour retraite) ; CGI art. 39-2 (amendes et pénalités)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue1-fisc-isres-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "is-resultat-fiscal",
+      "difficulty": 2,
+      "tags": [
+        "IS",
+        "régime mère-fille",
+        "QPFC",
+        "dividendes"
+      ],
+      "statement": "La SA Holdam, soumise à l'IS au taux normal et n'appartenant à aucun groupe fiscalement intégré, détient depuis quatre ans 30 % du capital de la SAS Ribes. Elle a perçu cette année un dividende de 200 000 € de cette filiale et a opté pour le régime des sociétés mères. Quel retraitement extra-comptable opère-t-elle sur le tableau 2058-A ?",
+      "options": [
+        "Aucun retraitement : le dividende est imposé au taux normal comme un produit financier ordinaire",
+        "Déduction de 200 000 € et réintégration d'une quote-part de frais et charges de 10 000 €",
+        "Déduction de 200 000 €, sans aucune réintégration",
+        "Déduction de 200 000 € et réintégration d'une quote-part de frais et charges de 24 000 €"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Les conditions du régime mère-fille sont remplies : participation d'au moins 5 % du capital, conservée au moins deux ans (CGI art. 145). Le dividende est retranché du bénéfice net total, sous déduction d'une quote-part de frais et charges égale à 5 % du produit brut des participations (CGI art. 216) : déduction de 200 000 € et réintégration de 200 000 × 5 % = 10 000 €. L'option 2 est donc la bonne ; seuls 10 000 € sont finalement imposés au taux normal.\nL'option 1 ignore le régime mère-fille, applicable ici.\nL'option 3 oublie la quote-part de frais et charges (le taux de 1 % ne vaut qu'au sein d'un groupe intégré et il n'y a pas d'exonération totale).\nL'option 4 applique à tort le taux de 12 %, qui concerne la quote-part sur les plus-values à long terme de cession de titres de participation (CGI art. 219, I-a quinquies).",
+      "source_ref": "CGI art. 145 (conditions du régime des sociétés mères) ; CGI art. 216 (déduction des produits nets de participation, quote-part de frais et charges de 5 %)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue1-fisc-isres-0003",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "is-resultat-fiscal",
+      "difficulty": 1,
+      "tags": [
+        "IS",
+        "dons",
+        "réintégrations"
+      ],
+      "statement": "Les dons versés par une société soumise à l'IS à une association reconnue d'intérêt général, comptabilisés en charges, sont déductibles de son résultat fiscal.",
+      "answer": false,
+      "justification": "Faux : les dons ne sont pas déductibles ; ils sont réintégrés extra-comptablement et ouvrent droit, en contrepartie, à une réduction d'impôt (CGI art. 238 bis).",
+      "explanation": "Un don n'est pas engagé dans l'intérêt direct de l'exploitation : il est réintégré sur le tableau 2058-A. Le législateur favorise le mécénat par une réduction d'impôt imputable sur l'IS, égale à un pourcentage des versements retenus dans la limite d'un plafond (CGI art. 238 bis). Déduire le don et bénéficier en plus de la réduction reviendrait à un double avantage. À distinguer des dépenses de parrainage, déductibles lorsqu'elles sont engagées dans l'intérêt de l'exploitation avec une contrepartie publicitaire.",
+      "source_ref": "CGI art. 238 bis (réduction d'impôt au titre des dons des entreprises) ; CGI art. 39-1 (conditions générales de déduction des charges)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue1-fisc-isres-0004",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "is-resultat-fiscal",
+      "difficulty": 2,
+      "tags": [
+        "IS",
+        "résultat fiscal",
+        "véhicule de tourisme",
+        "régime mère-fille"
+      ],
+      "statement": "La SA Valmy (exercice N de 12 mois) présente un résultat comptable après IS de 310 000 €. Informations :\n- l'IS de l'exercice, comptabilisé en charges, s'élève à 95 000 € ;\n- une pénalité de retard de 3 000 € a été comptabilisée en charges ;\n- un véhicule de tourisme acquis le 1er janvier N pour 48 000 € TTC (TVA non récupérable) est amorti linéairement sur 5 ans ; par hypothèse, le plafond fiscal d'amortissement applicable à ce véhicule est de 18 300 € ;\n- la société a perçu 40 000 € de dividendes d'une filiale relevant du régime mère-fille (hors groupe intégré) ;\n- une provision pour indemnités de départ à la retraite, non déduite lors de sa dotation, a été reprise pour 6 000 €.\nCalculez le résultat fiscal de l'exercice N, en euros.",
+      "expected_value": 369940,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Résultat comptable après IS : 310 000 €.\nRéintégrations : IS 95 000 € (non déductible) ; pénalité 3 000 € (CGI art. 39-2) ; amortissement excédentaire du véhicule de tourisme : dotation comptable 48 000 / 5 = 9 600 €, fraction déductible 18 300 / 5 = 3 660 €, réintégration 5 940 € ; quote-part de frais et charges sur dividendes 40 000 × 5 % = 2 000 €.\nDéductions : dividendes mère-fille 40 000 € ; reprise de la provision pour retraite non déduite à l'origine 6 000 € (elle avait été réintégrée lors de la dotation).\nRésultat fiscal = 310 000 + 95 000 + 3 000 + 5 940 + 2 000 − 40 000 − 6 000 = 369 940 €.\nErreurs fréquentes : oublier la quote-part de 5 % (367 940 €) ou réintégrer la totalité de l'amortissement du véhicule (373 600 €).",
+      "source_ref": "CGI art. 39-2 (pénalités) ; CGI art. 39-4 (amortissement des véhicules de tourisme) ; CGI art. 145 et 216 (régime mère-fille, quote-part de 5 %) ; CGI art. 39-1-5° (provisions pour retraite)",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue1-fisc-isres-0005",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "is-resultat-fiscal",
+      "difficulty": 3,
+      "tags": [
+        "IS",
+        "résultat fiscal",
+        "plus-values à long terme",
+        "QPFC",
+        "dépenses somptuaires"
+      ],
+      "title": "SA Orvalis : du résultat comptable à l'impôt sur les sociétés",
+      "context": "La SA Orvalis, fabricant de matériel agricole, clôture son exercice 2025 (12 mois) au 31 décembre. Son chiffre d'affaires HT atteint 18 M€ ; son capital est détenu à 60 % par une société cotée et à 40 % par des fonds d'investissement.\n\nLe résultat comptable avant impôt sur les sociétés s'élève à 1 240 000 €. Il comprend notamment :\n- une plus-value de 300 000 € sur la cession de titres de participation détenus depuis six ans (titres éligibles au régime des plus-values à long terme) ;\n- un dividende de 150 000 € reçu d'une filiale détenue à 40 % depuis cinq ans (régime mère-fille ; pas d'intégration fiscale) ;\n- une amende pour infraction à la réglementation des transports de 8 000 € ;\n- 12 000 € de frais d'une journée de chasse offerte à des clients importants ;\n- une dotation de 45 000 € à la provision pour congés payés, calculée conformément aux règles comptables.\n\nAucune autre correction n'est à envisager. Taux de l'IS : 25 % ; la quote-part de frais et charges sur les plus-values à long terme est imposée au taux normal.",
+      "sub_questions": [
+        {
+          "id": "q1-plus-value-titres",
+          "kind": "mcq",
+          "prompt": "Comment la plus-value de 300 000 € sur titres de participation est-elle traitée pour la détermination de l'IS ?",
+          "points": 2,
+          "options": [
+            "Elle est imposée au taux normal de 25 % comme un produit ordinaire",
+            "Elle est déduite du résultat imposé au taux normal (taux de 0 %), et une quote-part de frais et charges de 12 % de son montant brut est réintégrée",
+            "Elle est déduite en totalité, sans aucune réintégration",
+            "Elle est imposée au taux réduit de 15 %"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Les plus-values à long terme de cession de titres de participation détenus depuis au moins deux ans relèvent d'un taux de 0 %, sous réserve de la réintégration d'une quote-part de frais et charges de 12 % du montant brut des plus-values (CGI art. 219, I-a quinquies) : option 2. L'option 1 ignore ce régime ; l'option 3 oublie la quote-part ; l'option 4 confond avec le taux réduit PME, qui concerne une tranche de bénéfice et non une catégorie de plus-values."
+        },
+        {
+          "id": "q2-resultat-fiscal",
+          "kind": "numeric",
+          "prompt": "Calculez le résultat fiscal imposable au taux normal de 25 %, en euros.",
+          "points": 4,
+          "expected_value": 853500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Résultat comptable avant IS : 1 240 000 €.\nDéductions : plus-value à long terme 300 000 € ; dividende mère-fille 150 000 €.\nRéintégrations : quote-part sur plus-value 300 000 × 12 % = 36 000 € ; quote-part sur dividende 150 000 × 5 % = 7 500 € ; amende 8 000 € (CGI art. 39-2) ; frais de chasse 12 000 € (dépenses somptuaires, CGI art. 39-4).\nRésultat fiscal = 1 240 000 − 300 000 − 150 000 + 36 000 + 7 500 + 8 000 + 12 000 = 853 500 €. La provision pour congés payés n'est pas retraitée."
+        },
+        {
+          "id": "q3-impot",
+          "kind": "numeric",
+          "prompt": "Calculez l'impôt sur les sociétés dû au titre de 2025, en euros.",
+          "points": 2,
+          "expected_value": 213375,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "IS = 853 500 × 25 % = 213 375 €. La plus-value à long terme est imposée à 0 %. L'IS étant inférieur à 763 000 €, la contribution sociale de 3,3 % (CGI art. 235 ter ZC) n'est pas due."
+        },
+        {
+          "id": "q4-justifications",
+          "kind": "open",
+          "prompt": "Justifiez l'absence de retraitement de la provision pour congés payés, puis expliquez pourquoi Orvalis ne bénéficie pas du taux réduit de 15 %.",
+          "points": 3,
+          "model_answer": "La provision pour congés payés correspond aux droits acquis par les salariés à la clôture : il s'agit d'une charge certaine dans son principe et évaluée de façon précise, rattachée à l'exercice au cours duquel les droits sont acquis. Elle est déductible au même titre qu'une charge à payer : aucune réintégration. Le taux réduit de 15 % est réservé aux entreprises dont le chiffre d'affaires HT est inférieur à 10 M€ et dont le capital, entièrement libéré, est détenu de manière continue à 75 % au moins par des personnes physiques (ou des sociétés remplissant ces conditions). Orvalis réalise 18 M€ de chiffre d'affaires et son capital est détenu par une société cotée et des fonds : aucune des deux conditions n'est remplie.",
+          "key_points": [
+            "Congés payés : charge rattachée à l'exercice d'acquisition des droits, déductible",
+            "Taux réduit : CA HT < 10 M€",
+            "Taux réduit : capital libéré détenu à 75 % au moins par des personnes physiques",
+            "Orvalis ne remplit ni la condition de CA ni la condition de détention"
+          ]
+        }
+      ],
+      "total_points": 11,
+      "explanation": "Le passage au résultat fiscal suit le tableau 2058-A : les produits relevant de régimes particuliers (plus-value à long terme, dividendes mère-fille) sont déduits, leurs quotes-parts de frais et charges réintégrées, et les charges non déductibles (amende, dépenses somptuaires) réintégrées. Le résultat fiscal de 853 500 € supporte un IS de 213 375 €.",
+      "source_ref": "CGI art. 219, I-a quinquies (plus-values à long terme sur titres de participation, quote-part de 12 %) ; CGI art. 145 et 216 (régime mère-fille) ; CGI art. 39-2 et 39-4 ; CGI art. 219, I-b (taux réduit PME)",
+      "verified": true,
+      "estimated_seconds": 780
+    }
+  ]
+}

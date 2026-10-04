@@ -1,0 +1,223 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-risques-expochange-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "risque-change-exposition",
+      "difficulty": 1,
+      "tags": [
+        "risque de conversion",
+        "filiale étrangère"
+      ],
+      "source_ref": "IAS 21 §39-41 (règl. UE 2023/1803) : écarts de conversion des activités à l’étranger en autres éléments du résultat global",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Le groupe français Arvel détient une filiale aux États-Unis dont la monnaie fonctionnelle est le dollar. Lors de chaque consolidation, les capitaux propres de la filiale convertis en euros varient avec la parité EUR/USD, sans qu’aucun flux de trésorerie ne soit en jeu. De quel risque s’agit-il ?",
+      "options": [
+        "Risque de transaction",
+        "Risque de conversion",
+        "Risque économique (concurrentiel)",
+        "Risque de contrepartie"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "La variation des capitaux propres consolidés due à la conversion des comptes d’une filiale étrangère est le risque de conversion (ou de consolidation) : c’est un risque comptable, les écarts étant portés en autres éléments du résultat global (IAS 21 §39-41). L’option 1 (risque de transaction) suppose un flux en devises à régler (créance, dette, commande ferme). L’option 3 (risque économique) vise l’effet durable des parités sur la compétitivité et les flux futurs. L’option 4 concerne la défaillance d’une contrepartie, sans lien avec les parités."
+    },
+    {
+      "id": "ue2-risques-expochange-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "risque-change-exposition",
+      "difficulty": 2,
+      "tags": [
+        "position de change",
+        "commande ferme"
+      ],
+      "source_ref": "Position de change = avoirs et créances en devises + engagements de vente fermes − dettes en devises − engagements d’achat fermes",
+      "verified": true,
+      "estimated_seconds": 120,
+      "statement": "Au 30 septembre, la société Brenne recense ses éléments en dollars à échéance de moins de trois mois : créances clients 600 000 USD ; dettes fournisseurs 250 000 USD ; commande d’achat ferme passée à un fournisseur américain, à payer dans deux mois, 150 000 USD ; solde d’un compte bancaire en dollars 50 000 USD. Quelle est sa position de change en dollars ?",
+      "options": [
+        "400 000 USD, position longue : Brenne perd si le dollar baisse",
+        "250 000 USD, position courte : Brenne perd si le dollar monte",
+        "200 000 USD, position longue : Brenne perd si le dollar baisse",
+        "250 000 USD, position longue : Brenne perd si le dollar baisse"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Position = 600 000 + 50 000 − 250 000 − 150 000 = 250 000 USD. Les avoirs en dollars dépassent les engagements : la position est longue et une baisse du dollar réduit leur contre-valeur en euros (option 4). L’option 1 oublie la commande d’achat ferme, qui fait partie de la position dès l’engagement. L’option 3 oublie le compte bancaire en dollars, lui aussi exposé. L’option 2 retient le bon montant mais inverse le sens : une position courte correspond à des engagements supérieurs aux avoirs."
+    },
+    {
+      "id": "ue2-risques-expochange-0003",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "risque-change-exposition",
+      "difficulty": 2,
+      "tags": [
+        "netting",
+        "techniques internes",
+        "groupe"
+      ],
+      "source_ref": "Techniques internes de gestion du risque de change : compensation multilatérale (netting), termaillage, choix de la devise de facturation",
+      "verified": true,
+      "estimated_seconds": 75,
+      "statement": "Le groupe Lissac compte cinq filiales européennes qui facturent entre elles en dollars, en livres et en euros. La trésorerie centrale calcule chaque mois, pour chaque filiale, le solde de ses dettes et créances intragroupe toutes devises confondues, et seuls ces soldes donnent lieu à règlement. Comment s’appelle cette technique ?",
+      "options": [
+        "Le termaillage (leads and lags)",
+        "Le swap de devises",
+        "La compensation multilatérale (netting)",
+        "L’avance en devises"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Compenser les dettes et créances réciproques des filiales pour ne régler que les soldes est le netting (option 3) : il réduit le volume des flux en devises, donc les achats et ventes de devises, leurs coûts et l’exposition à couvrir. Le termaillage (option 1) consiste à accélérer ou retarder un règlement selon l’évolution anticipée des cours. Le swap de devises (option 2) est un instrument financier d’échange de flux dans deux devises. L’avance en devises (option 4) est un emprunt en devises adossé à une créance."
+    },
+    {
+      "id": "ue2-risques-expochange-0004",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "risque-change-exposition",
+      "difficulty": 1,
+      "tags": [
+        "risque économique",
+        "facturation en euros"
+      ],
+      "source_ref": "Typologie du risque de change : transaction, conversion, économique",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Une entreprise française qui achète et vend exclusivement en euros n’est exposée à aucun risque de change.",
+      "answer": false,
+      "justification": "Elle échappe au risque de transaction, mais reste exposée au risque économique : une baisse d’une devise étrangère rend plus compétitifs ses concurrents dont les coûts sont libellés dans cette devise.",
+      "explanation": "Facturer en euros reporte le risque de transaction sur le client ou le fournisseur étranger, mais ne supprime pas le risque économique (ou concurrentiel). Si le dollar baisse, un concurrent américain peut baisser ses prix en euros sans réduire sa marge ; l’entreprise française perd des parts de marché ou doit réduire ses prix. Ses fournisseurs eux-mêmes peuvent avoir des coûts en devises et répercuter les variations. Ce risque, durable et difficile à mesurer, se gère plutôt par des choix stratégiques (localisation de la production, des achats)."
+    },
+    {
+      "id": "ue2-risques-expochange-0005",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "risque-change-exposition",
+      "difficulty": 2,
+      "tags": [
+        "VaR",
+        "méthode paramétrique"
+      ],
+      "source_ref": "Value at Risk paramétrique : VaR(h, α) = z_α × σ_quotidien × √h × valeur de la position",
+      "verified": true,
+      "estimated_seconds": 180,
+      "statement": "La société Corlay détient une position longue en dollars d’une contre-valeur de 1 800 000 €. La volatilité quotidienne du cours EUR/USD est estimée à 0,6 %. On calcule la VaR par la méthode paramétrique (variations supposées normales et indépendantes d’un jour à l’autre) : VaR(h jours, α) = z_α × σ_quotidien × √h × valeur de la position, avec z = 2,33 au seuil de confiance de 99 %. Calculez la VaR à 10 jours au seuil de 99 %, en euros (arrondie à l’euro).",
+      "expected_value": 79576,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "VaR = 2,33 × 0,006 × √10 × 1 800 000 = 2,33 × 0,006 × 3,1623 × 1 800 000 ≈ 79 576 €. Il y a 1 % de probabilité que la perte sur 10 jours dépasse 79 576 €. Erreurs fréquentes : oublier le facteur √10 (25 164 €, VaR à un jour) ou multiplier par 10 au lieu de √10 (251 640 €). La VaR ne renseigne pas sur l’ampleur des pertes au-delà de ce seuil."
+    },
+    {
+      "id": "ue2-risques-expochange-0006",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "risque-change-exposition",
+      "difficulty": 3,
+      "tags": [
+        "position de change",
+        "VaR",
+        "politique de couverture"
+      ],
+      "source_ref": "Position de change par devise et par échéance ; VaR paramétrique ; IFRS 7 §33-34 et §40 (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 720,
+      "title": "Alcyon : mesurer avant de couvrir",
+      "context": "La société Alcyon (équipements de laboratoire, comptes en euros) recense ses éléments en dollars à échéance de trois mois au plus :\n- créances sur des clients américains : 1 200 000 USD, à encaisser dans 60 jours ;\n- dettes envers un sous-traitant américain : 450 000 USD, à payer dans 75 jours ;\n- commande ferme reçue d’un client canadien, facturée en dollars américains : 300 000 USD, livrable et encaissable dans 90 jours ;\n- échéance de remboursement d’un emprunt en dollars : 200 000 USD dans 90 jours ;\n- compte bancaire en dollars : 100 000 USD.\n\nCours au comptant : 1 USD = 0,9200 €. La volatilité quotidienne du dollar contre euro est estimée à 0,55 %. On utilise la VaR paramétrique : VaR(h jours, α) = z_α × σ_quotidien × √h × valeur de la position en euros, avec z = 2,33 à 99 %.\n\nLe directeur financier propose de couvrir séparément, par des ventes à terme, chacune des créances clients, « par prudence ».",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "Calculez la position de change nette d’Alcyon en dollars (positive si elle est longue).",
+          "points": 2,
+          "expected_value": 950000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "USD",
+          "decimals": 0,
+          "explanation": "Avoirs et engagements de vente : 1 200 000 + 300 000 + 100 000 = 1 600 000 USD. Engagements de paiement : 450 000 + 200 000 = 650 000 USD. Position = 950 000 USD, longue."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "prompt": "Si le dollar baisse à 0,8800 €, quelle perte de change (en euros, nombre positif) la position nette subit-elle ?",
+          "points": 2,
+          "expected_value": 38000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "950 000 × (0,9200 − 0,8800) = 38 000 € de perte. En ne regardant que les créances clients, on surestimerait la perte (48 000 €)."
+        },
+        {
+          "id": "q3",
+          "kind": "numeric",
+          "prompt": "Calculez la VaR à 10 jours au seuil de 99 % de la position nette, en euros (arrondie à l’euro).",
+          "points": 2,
+          "expected_value": 35418,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.01
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Valeur de la position : 950 000 × 0,92 = 874 000 €. VaR = 2,33 × 0,0055 × √10 × 874 000 ≈ 35 418 €."
+        },
+        {
+          "id": "q4",
+          "kind": "mcq",
+          "prompt": "Quelle interprétation de cette VaR est exacte ?",
+          "points": 2,
+          "options": [
+            "La perte maximale possible sur 10 jours est de 35 418 €",
+            "Il y a 99 % de probabilité de perdre 35 418 € sur 10 jours",
+            "Il y a 1 % de probabilité que la perte sur 10 jours dépasse environ 35 418 €",
+            "La perte moyenne attendue sur 10 jours est de 35 418 €"
+          ],
+          "answer": [
+            2
+          ],
+          "multiple": false,
+          "explanation": "La VaR est un quantile : avec 99 % de confiance, la perte sur 10 jours ne dépassera pas ce montant ; elle le dépasse dans 1 % des cas (option 3). Ce n’est pas une perte maximale (option 1), les pertes au-delà du seuil n’étant pas bornées, ni une perte probable ou moyenne (options 2 et 4) : l’espérance de variation est supposée nulle."
+        },
+        {
+          "id": "q5",
+          "kind": "open",
+          "prompt": "Appréciez la proposition du directeur financier et proposez une démarche de couverture.",
+          "points": 4,
+          "model_answer": "Couvrir chaque créance isolément revient à couvrir 1 200 000 USD alors que l’exposition réelle n’est que de 950 000 USD : les dettes et le remboursement d’emprunt en dollars constituent une couverture naturelle partielle. Une telle couverture créerait une position courte sur les dettes non adossées, coûterait des frais et des points de terme inutiles. Il faut raisonner sur la position nette par échéance : à 60 jours la position est longue (créances), à 75 et 90 jours les dettes et l’emprunt viennent la réduire. Démarche : utiliser les dollars encaissés à 60 jours pour payer le sous-traitant et rembourser l’emprunt (adossement), éventuellement en plaçant ou en échangeant les dollars entre les dates (swap de change court), puis couvrir le solde net (environ 950 000 USD dont la commande ferme) par une vente à terme ou par une option si Alcyon veut garder un potentiel de hausse. Définir une politique écrite (part de la position à couvrir, instruments autorisés, limite de VaR).",
+          "key_points": [
+            "L’exposition à couvrir est la position nette (950 000 USD), pas les seules créances",
+            "Dettes et emprunt en dollars forment une couverture naturelle ; couvrir les créances seules surcouvre et crée une position courte",
+            "Raisonner par échéance et adosser les flux, puis couvrir le solde (terme ou option)",
+            "Formaliser une politique de couverture (seuils, instruments, limite de VaR)"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Position nette 950 000 USD (longue) ; perte de 38 000 € pour une baisse du dollar de 0,04 € ; VaR 10 jours à 99 % ≈ 35 418 €. La couverture doit porter sur la position nette par échéance, après adossement des flux de même devise."
+    }
+  ]
+}

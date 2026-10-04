@@ -1,0 +1,217 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-ingfi-ipo-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "introduction-bourse",
+      "difficulty": 1,
+      "tags": [
+        "introduction en bourse",
+        "placement global",
+        "procédures"
+      ],
+      "source_ref": "Procédures d'introduction en bourse sur Euronext Paris (placement global et offre à prix ouvert) ; Règlement général de l'AMF",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Lors d'une introduction en bourse à Paris, quelle procédure s'adresse principalement aux investisseurs institutionnels et repose sur la constitution par les banques d'un livre d'ordres dans une fourchette de prix ?",
+      "options": [
+        "L'offre à prix ouvert (OPO)",
+        "La cotation directe",
+        "Le placement global (book building)",
+        "L'offre publique d'échange"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Le placement global (book building) vise les institutionnels : les banques recueillent leurs intentions d'achat (quantités et prix) dans une fourchette, puis fixent le prix définitif et allouent les titres. L'option 1, l'OPO, est la tranche destinée aux particuliers, servie au prix fixé à l'issue du placement. L'option 2, la cotation directe, consiste à admettre les titres sans offre organisée. L'option 4 est une offre publique portant sur les titres d'une société déjà cotée, sans rapport avec une introduction."
+    },
+    {
+      "id": "ue2-ingfi-ipo-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "introduction-bourse",
+      "difficulty": 2,
+      "tags": [
+        "décote d'introduction",
+        "asymétrie d'information"
+      ],
+      "source_ref": "Théorie financière de la sous-évaluation des introductions en bourse (asymétrie d'information, « malédiction du vainqueur »)",
+      "verified": true,
+      "estimated_seconds": 75,
+      "statement": "On observe qu'en moyenne le premier cours coté d'une société introduite en bourse est supérieur à son prix d'introduction. Quelle explication de cette décote d'introduction est la plus couramment avancée ?",
+      "options": [
+        "Une décote minimale de 10 % est imposée par l'AMF pour protéger les particuliers",
+        "Les investisseurs peu informés risquent d'obtenir surtout les titres des introductions surévaluées ; la décote les rémunère et garantit le succès de l'opération",
+        "La décote augmente le montant des fonds levés par la société",
+        "La décote correspond aux frais d'introduction, qui sont déduits du prix payé par les investisseurs"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "L'émetteur et ses banques en savent plus que le marché sur la valeur de la société ; les investisseurs les moins informés reçoivent une part plus importante des introductions surévaluées, moins demandées par les investisseurs avertis (malédiction du vainqueur). Pour les attirer et sécuriser le placement, le prix est fixé avec une décote. L'option 1 est fausse : aucune règle n'impose de décote. L'option 3 est inversée : à nombre d'actions donné, la décote réduit les fonds levés (c'est un coût pour les actionnaires existants). L'option 4 confond la décote avec les commissions, que la société paie aux banques sans modifier le prix payé par les investisseurs."
+    },
+    {
+      "id": "ue2-ingfi-ipo-0003",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "introduction-bourse",
+      "difficulty": 1,
+      "tags": [
+        "prospectus",
+        "AMF"
+      ],
+      "source_ref": "Règlement (UE) 2017/1129, art. 3 (obligation de prospectus) et art. 20 (approbation par l'autorité compétente)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Affirmation : lors d'une introduction en bourse sur un marché réglementé en France, le prospectus doit être approuvé par l'AMF avant l'ouverture de l'offre au public.",
+      "answer": true,
+      "justification": "Vrai. Le règlement (UE) 2017/1129 impose la publication d'un prospectus approuvé par l'autorité compétente, l'AMF en France, avant toute offre au public ou admission sur un marché réglementé.",
+      "explanation": "Le prospectus décrit la société, ses risques, ses comptes, l'utilisation des fonds et les modalités de l'offre. L'AMF vérifie qu'il est complet, compréhensible et cohérent ; son approbation ne vaut pas jugement sur l'opportunité de l'investissement. Des exemptions existent (petites offres, offres réservées aux investisseurs qualifiés), mais pas pour une introduction classique sur un marché réglementé."
+    },
+    {
+      "id": "ue2-ingfi-ipo-0004",
+      "type": "flashcard",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "introduction-bourse",
+      "difficulty": 1,
+      "tags": [
+        "option de surallocation",
+        "greenshoe",
+        "stabilisation"
+      ],
+      "source_ref": "Règlement délégué (UE) 2016/1052 (conditions de la stabilisation et de la surallocation)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "front": "Qu'est-ce que l'option de surallocation (greenshoe) dans une introduction en bourse ?",
+      "back": "Une option consentie aux banques par l'émetteur ou les actionnaires cédants, permettant d'augmenter le nombre de titres offerts de 15 % au plus de l'offre initiale, exerçable dans les 30 jours suivant l'introduction.\nLes banques surallouent ces titres dès l'introduction ; si le cours baisse, elles rachètent sur le marché (stabilisation) ; s'il monte, elles exercent l'option.",
+      "explanation": "Les limites de 15 % et de 30 jours sont fixées par le règlement délégué (UE) 2016/1052. L'option augmente les fonds levés par la société si elle porte sur des actions nouvelles."
+    },
+    {
+      "id": "ue2-ingfi-ipo-0005",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "introduction-bourse",
+      "difficulty": 2,
+      "tags": [
+        "introduction en bourse",
+        "fonds levés",
+        "greenshoe"
+      ],
+      "source_ref": "Structure d'une offre d'introduction en bourse : actions nouvelles (augmentation de capital) et actions cédées (produit revenant aux cédants) ; option de surallocation (règl. délégué (UE) 2016/1052)",
+      "verified": true,
+      "estimated_seconds": 180,
+      "statement": "La société Orphée s'introduit en bourse au prix de 24 € par action. L'offre initiale comprend 2 000 000 d'actions nouvelles et 1 000 000 d'actions anciennes cédées par les fondateurs. L'option de surallocation, égale à 15 % de l'offre initiale, porte sur des actions nouvelles et est exercée intégralement. Les frais à la charge de la société représentent 5 % du produit brut des actions nouvelles émises. Calculez le montant net des fonds perçus par la société, en millions d'euros arrondis au centième.",
+      "expected_value": 55.86,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "unit": "M€",
+      "decimals": 2,
+      "explanation": "Option de surallocation : 15 % × 3 000 000 = 450 000 actions nouvelles. Actions nouvelles émises au total : 2 000 000 + 450 000 = 2 450 000. Produit brut : 2 450 000 × 24 = 58,8 M€ ; frais : 5 % × 58,8 = 2,94 M€ ; montant net : 55,86 M€. Le produit des 1 000 000 d'actions cédées (24 M€) revient aux fondateurs et non à la société. Inclure les cessions donnerait 78,66 M€ ; oublier la surallocation, 45,6 M€."
+    },
+    {
+      "id": "ue2-ingfi-ipo-0006",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "introduction-bourse",
+      "difficulty": 2,
+      "tags": [
+        "introduction en bourse",
+        "PER",
+        "décote",
+        "flottant"
+      ],
+      "source_ref": "Évaluation par les multiples (PER) ; Règlement (UE) 2017/1129 (prospectus) ; pratique des introductions en bourse (décote, flottant)",
+      "verified": true,
+      "estimated_seconds": 660,
+      "title": "Société Lumeo : préparation d'une introduction en bourse",
+      "context": "La société Lumeo (éclairage connecté), non cotée, prépare son introduction sur Euronext Paris. Son capital compte 9 000 000 d'actions, détenues à 70 % par les fondateurs et à 30 % par un fonds de capital-développement.\n\nDonnées pour la valorisation :\n- résultat net prévisionnel de l'année en cours : 12 M€ ;\n- PER moyen d'un échantillon de sociétés cotées comparables : 18 ;\n- les banques recommandent une décote d'introduction de 15 % sur la valeur des capitaux propres avant opération (pre-money) ainsi obtenue.\n\nL'opération consisterait en une augmentation de capital de 3 000 000 d'actions nouvelles, entièrement placées auprès du public au prix d'introduction. Les fondateurs et le fonds ne cèdent aucune action à cette occasion. On ignore les frais et l'option de surallocation.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "Déterminez le prix d'introduction par action, en euros arrondis au centime.",
+          "points": 2,
+          "expected_value": 20.4,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.01
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "Valeur pre-money : 12 × 18 = 216 M€, soit 216 / 9 = 24 € par action. Prix après décote : 24 × (1 − 15 %) = 20,40 €."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "prompt": "Calculez la capitalisation boursière de Lumeo au prix d'introduction, après l'augmentation de capital, en millions d'euros arrondis au dixième.",
+          "points": 3,
+          "expected_value": 244.8,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "M€",
+          "decimals": 1,
+          "explanation": "Nombre d'actions après opération : 9 000 000 + 3 000 000 = 12 000 000. Capitalisation : 12 000 000 × 20,40 = 244,8 M€ (dont 61,2 M€ de fonds levés). Oublier les actions nouvelles donnerait 183,6 M€."
+        },
+        {
+          "id": "q3",
+          "kind": "numeric",
+          "prompt": "Quel pourcentage du capital les fondateurs détiendront-ils après l'opération ? Réponse en %, arrondie au dixième.",
+          "points": 2,
+          "expected_value": 52.5,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "Les fondateurs détiennent 70 % × 9 000 000 = 6 300 000 actions, soit 6 300 000 / 12 000 000 = 52,5 % après l'opération. Le flottant (actions détenues par le public) atteint 3 000 000 / 12 000 000 = 25 %."
+        },
+        {
+          "id": "q4",
+          "kind": "mcq",
+          "prompt": "Parmi les éléments suivants, lequel n'est PAS un avantage de l'introduction en bourse pour Lumeo ou ses actionnaires ?",
+          "points": 2,
+          "options": [
+            "L'accès à de nouveaux financements en fonds propres",
+            "La liquidité offerte au fonds de capital-développement pour sa sortie future",
+            "La possibilité de payer des acquisitions en actions cotées",
+            "L'allègement des obligations d'information financière"
+          ],
+          "answer": [
+            3
+          ],
+          "multiple": false,
+          "explanation": "La cotation alourdit au contraire les obligations d'information (information permanente et périodique, information privilégiée, gouvernance). Les trois autres options sont des avantages classiques."
+        },
+        {
+          "id": "q5",
+          "kind": "open",
+          "prompt": "Les fondateurs hésitent. Présentez les principaux inconvénients et risques de l'introduction pour eux, et un élément qui les rassure.",
+          "points": 4,
+          "model_answer": "La décote de 15 % est un coût : les actions nouvelles sont vendues 20,40 € alors que la valeur estimée est de 24 €, ce qui transfère de la valeur aux nouveaux actionnaires. L'opération entraîne des frais importants (banques, conseils, prospectus) et des coûts récurrents (information financière, communication, gouvernance). Le cours devient public et volatil, la pression des résultats à court terme s'accroît et la société peut faire l'objet d'une offre publique. En revanche, les fondateurs conservent 52,5 % du capital, donc le contrôle, avec un flottant de 25 %.",
+          "key_points": [
+            "Coût de la décote (transfert de valeur aux nouveaux actionnaires)",
+            "Frais d'introduction et coûts récurrents d'information et de gouvernance",
+            "Volatilité du cours, pression du court terme, exposition à une offre publique",
+            "Contrôle conservé : 52,5 % du capital, flottant 25 %"
+          ]
+        }
+      ],
+      "total_points": 13,
+      "explanation": "Prix d'introduction : 216 M€ / 9 000 000 × 0,85 = 20,40 € ; capitalisation après opération : 244,8 M€ ; fondateurs : 52,5 % ; flottant : 25 %. Le cas illustre la fixation du prix (multiples puis décote) et l'arbitrage entre accès au marché et coûts de la cotation."
+    }
+  ]
+}

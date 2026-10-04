@@ -1,0 +1,179 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-contrat-distrib-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "environnement-contractuel",
+      "notion": "contrats-distribution",
+      "difficulty": 1,
+      "tags": [
+        "agent commercial",
+        "qualification"
+      ],
+      "statement": "Quelle situation correspond à la qualification d'agent commercial au sens de l'article L134-1 du Code de commerce ?",
+      "options": [
+        "M. Arnaud achète des vins à un producteur et les revend en son nom à des cavistes, avec une exclusivité sur trois départements",
+        "Mme Bardin exploite une boutique sous l'enseigne d'un réseau dont elle utilise le savoir-faire, moyennant une redevance",
+        "M. Caron, mandataire indépendant, prospecte en permanence des clients et négocie des contrats de vente au nom et pour le compte d'un fabricant, contre commission",
+        "Mme Delmas, salariée d'un fabricant, visite les clients et transmet les commandes, rémunérée par un fixe et des primes"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "L'agent commercial est un mandataire indépendant, chargé de façon permanente de négocier et éventuellement de conclure des contrats au nom et pour le compte du mandant (L134-1) : option 3. L'option 1 décrit un concessionnaire exclusif, qui achète pour revendre en son nom. L'option 2 décrit une franchisée. L'option 4 décrit une salariée (VRP ou commerciale), liée par un contrat de travail, ce qui exclut l'indépendance de l'agent.",
+      "source_ref": "C. com. L134-1",
+      "estimated_seconds": 45,
+      "verified": true
+    },
+    {
+      "id": "ue1-contrat-distrib-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "environnement-contractuel",
+      "notion": "contrats-distribution",
+      "difficulty": 2,
+      "tags": [
+        "agent commercial",
+        "indemnité de cessation",
+        "faute grave"
+      ],
+      "statement": "Dans lequel de ces cas l'agent commercial conserve-t-il son droit à l'indemnité de cessation de contrat (sous réserve de l'avoir réclamée dans le délai légal) ?",
+      "options": [
+        "Le mandant résilie le contrat pour faute grave de l'agent, qui a détourné des clients au profit d'un concurrent",
+        "L'agent cède, avec l'accord du mandant, son contrat d'agence à un successeur qui lui verse un prix",
+        "L'agent démissionne sans motif pour rejoindre un autre mandant",
+        "L'agent met fin au contrat parce qu'une maladie l'empêche de poursuivre son activité"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "L'indemnité de l'article L134-12 n'est pas due dans trois cas (L134-13) : faute grave de l'agent (option 1), cessation à l'initiative de l'agent sans circonstances imputables au mandant (option 3), cession par l'agent de ses droits et obligations à un tiers (option 2, l'agent étant alors rémunéré par son cessionnaire). La cessation à l'initiative de l'agent justifiée par son âge, une infirmité ou une maladie qui ne permet plus raisonnablement la poursuite de son activité laisse subsister l'indemnité : option 4.",
+      "source_ref": "C. com. L134-12 et L134-13",
+      "estimated_seconds": 75,
+      "verified": true
+    },
+    {
+      "id": "ue1-contrat-distrib-0003",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "environnement-contractuel",
+      "notion": "contrats-distribution",
+      "difficulty": 2,
+      "tags": [
+        "agent commercial",
+        "délai",
+        "indemnité de cessation"
+      ],
+      "statement": "L'agent commercial qui ne notifie pas au mandant, dans un délai d'un an à compter de la cessation du contrat, qu'il entend faire valoir ses droits perd le bénéfice de l'indemnité de cessation.",
+      "answer": true,
+      "justification": "L'article L134-12, al. 2, prévoit la déchéance de l'indemnité à défaut de notification dans l'année qui suit la cessation du contrat.",
+      "explanation": "L'indemnité compensatrice est due en principe quelle que soit la cause de la cessation (hors cas de l'article L134-13), mais l'agent doit notifier au mandant, dans un délai d'un an, qu'il entend faire valoir ses droits. Passé ce délai, il est déchu de son droit, même si l'action judiciaire elle-même relève d'un autre délai. En pratique, une lettre recommandée adressée dès la fin du contrat sécurise la créance.",
+      "source_ref": "C. com. L134-12, al. 2",
+      "estimated_seconds": 45,
+      "verified": true
+    },
+    {
+      "id": "ue1-contrat-distrib-0004",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "environnement-contractuel",
+      "notion": "contrats-distribution",
+      "difficulty": 2,
+      "tags": [
+        "agent commercial",
+        "indemnité de cessation",
+        "calcul"
+      ],
+      "statement": "La SA Lumen résilie, sans faute de l'agent, le contrat qui la liait depuis neuf ans à M. Faure, agent commercial. Les commissions perçues par M. Faure au cours des trois dernières années complètes ont été de 78 000 € (N−2), 96 000 € (N−1) et 102 000 € (N). M. Faure a réclamé son indemnité dans le délai légal. On retient l'usage jurisprudentiel : indemnité égale à deux années de commissions, calculées sur la moyenne des trois dernières années. Calculez l'indemnité de cessation, en euros.",
+      "expected_value": 184000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Moyenne annuelle des commissions : (78 000 + 96 000 + 102 000) / 3 = 276 000 / 3 = 92 000 €.\nIndemnité : 2 × 92 000 = 184 000 €.\nErreurs classiques : doubler la dernière année (2 × 102 000 = 204 000 €) ou retenir le total des trois années (276 000 €). L'usage des deux années n'est qu'une référence : le juge apprécie le préjudice réel, et l'indemnité n'est pas due en cas de faute grave de l'agent (L134-13).",
+      "source_ref": "C. com. L134-12 (indemnité compensatrice) ; usage jurisprudentiel des deux années de commissions",
+      "estimated_seconds": 150,
+      "verified": true
+    },
+    {
+      "id": "ue1-contrat-distrib-0005",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "environnement-contractuel",
+      "notion": "contrats-distribution",
+      "difficulty": 2,
+      "tags": [
+        "franchise",
+        "DIP",
+        "non-concurrence",
+        "redevances"
+      ],
+      "title": "Boulangerie Fournil d'Or : entrée dans un réseau de franchise",
+      "context": "Mme Rivière souhaite ouvrir une boulangerie sous l'enseigne « Fournil d'Or », réseau de franchise de commerce de détail exploité par la SAS Fournil Développement.\nLe projet de contrat prévoit :\n- une exclusivité d'approvisionnement en farines et préparations auprès du franchiseur ;\n- un droit d'entrée de 25 000 € HT, payable à la signature ;\n- une redevance de fonctionnement de 5 % du chiffre d'affaires HT et une contribution publicitaire de 1,5 % du chiffre d'affaires HT ;\n- une clause interdisant à Mme Rivière, pendant trois ans après la fin du contrat, d'exercer toute activité de boulangerie-pâtisserie sur l'ensemble du territoire national.\nLe document d'information précontractuelle (DIP) et le projet de contrat ont été remis à Mme Rivière le 2 juin N ; le franchiseur lui propose de signer le 14 juin N. Mme Rivière prévoit un chiffre d'affaires HT de 480 000 € pour sa première année d'exploitation.\nElle vous consulte avant de s'engager.",
+      "sub_questions": [
+        {
+          "id": "q1-delai-dip",
+          "kind": "mcq",
+          "prompt": "Quel délai minimal doit séparer la remise du DIP et du projet de contrat de la signature (ou de tout versement) ?",
+          "points": 2,
+          "options": [
+            "10 jours",
+            "15 jours",
+            "20 jours",
+            "30 jours"
+          ],
+          "answer": [
+            2
+          ],
+          "multiple": false,
+          "explanation": "L'article L330-3 du Code de commerce impose une remise au moins 20 jours avant la signature du contrat ou le versement de toute somme (option 3). Ici, du 2 au 14 juin, il ne s'écoule que 12 jours : la signature doit être reportée au 22 juin au plus tôt, et le droit d'entrée ne peut pas être versé avant."
+        },
+        {
+          "id": "q2-nullite",
+          "kind": "true_false",
+          "prompt": "Si Mme Rivière signe le 14 juin, le non-respect du délai de remise du DIP entraîne automatiquement la nullité du contrat.",
+          "points": 1,
+          "answer": false,
+          "explanation": "Faux. La jurisprudence n'annule le contrat que si le manquement à l'obligation d'information précontractuelle a vicié le consentement du franchisé (erreur ou dol) ; le manquement est par ailleurs sanctionné pénalement par une amende contraventionnelle."
+        },
+        {
+          "id": "q3-redevances",
+          "kind": "numeric",
+          "prompt": "Calculez le montant total HT des redevances (fonctionnement et publicité) dues au titre de la première année, sur la base du chiffre d'affaires prévisionnel. Réponse en euros.",
+          "points": 2,
+          "expected_value": 31200,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Taux cumulé : 5 % + 1,5 % = 6,5 %. Redevances : 480 000 × 6,5 % = 31 200 € HT. Le droit d'entrée (25 000 €) n'est pas une redevance annuelle et ne doit pas être ajouté."
+        },
+        {
+          "id": "q4-non-concurrence",
+          "kind": "open",
+          "prompt": "Appréciez la validité de la clause de non-concurrence post-contractuelle.",
+          "points": 3,
+          "model_answer": "Dans un réseau de distribution de commerce de détail, l'article L341-2 du Code de commerce répute non écrite toute clause restreignant l'activité de l'exploitant après la fin du contrat, sauf si elle remplit cumulativement quatre conditions : porter sur des biens et services en concurrence avec ceux du contrat, être limitée aux terrains et locaux à partir desquels l'exploitant exerçait son activité, être indispensable à la protection du savoir-faire substantiel, spécifique et secret transmis, et ne pas excéder un an après l'échéance du contrat. La clause envisagée (trois ans, tout le territoire national, toute activité de boulangerie-pâtisserie) dépasse la durée et le périmètre autorisés : elle serait réputée non écrite. Mme Rivière peut demander sa renégociation : limitation à un an et aux locaux exploités.",
+          "key_points": [
+            "Texte applicable : C. com. L341-2 (réseaux de commerce de détail)",
+            "Conditions cumulatives : biens concurrents, limitée aux locaux d'exploitation, indispensable à la protection du savoir-faire, un an maximum",
+            "Durée de trois ans et périmètre national excessifs",
+            "Sanction : clause réputée non écrite"
+          ]
+        }
+      ],
+      "total_points": 8,
+      "explanation": "Le cas mobilise l'obligation d'information précontractuelle (L330-3, délai de 20 jours, nullité seulement en cas de vice du consentement), le calcul des redevances de franchise et l'encadrement des clauses de non-concurrence post-contractuelles dans les réseaux de commerce de détail (L341-2, loi du 6 août 2015).",
+      "source_ref": "C. com. L330-3, R330-1 et L341-2",
+      "estimated_seconds": 600,
+      "verified": true
+    }
+  ]
+}

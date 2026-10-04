@@ -1,0 +1,209 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-diag-activite-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "analyse-activite-rentabilite",
+      "difficulty": 1,
+      "tags": [
+        "EBE",
+        "SIG"
+      ],
+      "source_ref": "Tableau des soldes intermédiaires de gestion (méthode PCG) : définition de l'excédent brut d'exploitation",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Lequel des éléments suivants n'intervient pas dans le calcul de l'excédent brut d'exploitation (EBE) ?",
+      "options": [
+        "Les charges de personnel",
+        "Les impôts, taxes et versements assimilés",
+        "Les dotations aux amortissements",
+        "Les subventions d'exploitation"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "EBE = valeur ajoutée + subventions d'exploitation − impôts, taxes et versements assimilés − charges de personnel. Les dotations aux amortissements (option 3) sont déduites plus bas, entre l'EBE et le résultat d'exploitation : c'est ce qui rend l'EBE indépendant de la politique d'amortissement. Les charges de personnel (option 1) et les impôts et taxes (option 2) sont retranchés de la VA pour obtenir l'EBE ; les subventions d'exploitation (option 4) y sont ajoutées."
+    },
+    {
+      "id": "ue2-diag-activite-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "analyse-activite-rentabilite",
+      "difficulty": 2,
+      "tags": [
+        "CAF",
+        "méthode additive"
+      ],
+      "source_ref": "Calcul de la capacité d'autofinancement, méthode additive (à partir du résultat net)",
+      "verified": true,
+      "estimated_seconds": 90,
+      "statement": "Données d'une société (en k€) : résultat net 1 200 ; dotations aux amortissements et provisions 800 ; reprises sur provisions 150 ; produits de cession d'immobilisations 300 ; valeur nette comptable des immobilisations cédées 220 ; quote-part des subventions d'investissement virée au résultat 50. Quelle est la capacité d'autofinancement (CAF) ?",
+      "options": [
+        "1 770 k€",
+        "1 640 k€",
+        "1 720 k€",
+        "1 870 k€"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "CAF = résultat net + dotations − reprises − produits de cession + VNC des actifs cédés − quote-part de subvention virée au résultat = 1 200 + 800 − 150 − 300 + 220 − 50 = 1 720 k€ (option 3). Le couple « − produits de cession + VNC » revient à retirer la plus-value de cession (80), qui n'est pas une ressource d'autofinancement : le prix de cession est une ressource d'investissement. 1 770 (option 1) oublie de retrancher la quote-part de subvention, produit calculé sans encaissement. 1 640 (option 2) retire la plus-value deux fois. 1 870 (option 4) oublie de retrancher les reprises sur provisions."
+    },
+    {
+      "id": "ue2-diag-activite-0003",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "analyse-activite-rentabilite",
+      "difficulty": 2,
+      "tags": [
+        "CAF",
+        "mise en équivalence",
+        "comptes consolidés"
+      ],
+      "source_ref": "IAS 7 §37-38 (règl. UE 2023/1803) ; règl. ANC 2020-01, tableau des flux de trésorerie consolidé",
+      "verified": true,
+      "estimated_seconds": 75,
+      "statement": "Un analyste calcule la CAF d'un groupe à partir du résultat net de l'ensemble consolidé. Ce résultat comprend une quote-part de résultat bénéficiaire de sociétés mises en équivalence. Comment la traite-t-il ?",
+      "options": [
+        "Il la conserve, car elle fait partie du résultat net de l'ensemble consolidé",
+        "Il ne retraite que la part revenant aux minoritaires",
+        "Il l'ajoute une seconde fois, car elle représente une ressource durable",
+        "Il la retranche, car elle ne correspond à aucun encaissement ; seuls les dividendes reçus de ces sociétés constituent un flux"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "La quote-part de résultat des sociétés mises en équivalence est un produit calculé : le groupe n'encaisse rien tant que la société ne distribue pas. On la retranche donc du résultat pour calculer la CAF (ou les flux opérationnels), et l'on retient les dividendes effectivement reçus (option 4). La conserver (option 1) surestime l'autofinancement. Les minoritaires (option 2) concernent les filiales intégrées, pas les sociétés mises en équivalence, et l'on part du résultat de l'ensemble consolidé. L'ajouter à nouveau (option 3) n'a aucun fondement."
+    },
+    {
+      "id": "ue2-diag-activite-0004",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "analyse-activite-rentabilite",
+      "difficulty": 1,
+      "tags": [
+        "EBE"
+      ],
+      "source_ref": "Tableau des soldes intermédiaires de gestion (méthode PCG) : définition de l'EBE",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "L'EBE étant calculé avant les dotations aux amortissements et avant les charges financières, il ne dépend ni de la politique d'amortissement ni du coût de l'endettement financier de l'entreprise.",
+      "answer": true,
+      "justification": "Vrai : les dotations et les charges financières sont déduites après l'EBE.",
+      "explanation": "L'EBE mesure la ressource dégagée par le cycle d'exploitation : VA + subventions d'exploitation − impôts et taxes − charges de personnel. Les dotations (choix d'amortissement) et les intérêts (choix de financement par emprunt) interviennent plus bas dans la cascade des SIG. C'est pourquoi l'EBE est utilisé pour comparer des entreprises aux politiques d'amortissement et d'endettement différentes. Attention toutefois : en comptes individuels, une redevance de crédit-bail reste une charge externe et réduit l'EBE."
+    },
+    {
+      "id": "ue2-diag-activite-0005",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "analyse-activite-rentabilite",
+      "difficulty": 2,
+      "tags": [
+        "SIG",
+        "EBE",
+        "valeur ajoutée"
+      ],
+      "source_ref": "Tableau des soldes intermédiaires de gestion (méthode PCG) : marge commerciale, production, VA, EBE",
+      "verified": true,
+      "estimated_seconds": 240,
+      "statement": "Extrait des comptes de l'exercice N d'une société (en k€) : ventes de marchandises 3 000 ; production vendue 5 400 ; production stockée 200 ; production immobilisée 100 ; achats de marchandises 1 900 ; stock de marchandises au 1er janvier 400 et au 31 décembre 500 ; achats de matières premières 1 600 ; stock de matières au 1er janvier 300 et au 31 décembre 250 ; autres achats et charges externes 1 300 ; subventions d'exploitation 80 ; impôts et taxes 230 ; charges de personnel 2 400 ; dotations aux amortissements 600 ; charges financières 150. Calculez l'excédent brut d'exploitation, en k€.",
+      "expected_value": 1400,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "k€",
+      "decimals": 0,
+      "explanation": "Coût d'achat des marchandises vendues = 1 900 + (400 − 500) = 1 800 ; marge commerciale = 3 000 − 1 800 = 1 200. Production de l'exercice = 5 400 + 200 + 100 = 5 700. Consommations en provenance des tiers = matières consommées (1 600 + 300 − 250 = 1 650) + autres achats et charges externes 1 300 = 2 950. Valeur ajoutée = 1 200 + 5 700 − 2 950 = 3 950. EBE = 3 950 + 80 − 230 − 2 400 = 1 400 k€. Les dotations et les charges financières n'interviennent pas. Erreur classique : inverser la variation du stock de marchandises (coût d'achat 2 000), ce qui donne 1 200."
+    },
+    {
+      "id": "ue2-diag-activite-0006",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "analyse-activite-rentabilite",
+      "difficulty": 2,
+      "tags": [
+        "EBITDA",
+        "taux de marge",
+        "effet ciseau"
+      ],
+      "source_ref": "Orientations ESMA sur les indicateurs alternatifs de performance (2015) ; IAS 1 §85 (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 600,
+      "title": "Groupe Alvéa : croissance et érosion de la marge",
+      "context": "Le groupe Alvéa (équipements de cuisine professionnelle) publie des comptes consolidés en IFRS. Il communique un EBITDA défini comme le résultat opérationnel courant avant dotations aux amortissements et dépréciations. Extraits du compte de résultat consolidé (en k€) :\n- Chiffre d'affaires : N-1 52 000 ; N 58 500\n- Achats consommés : N-1 20 800 ; N 24 570\n- Charges externes : N-1 9 400 ; N 10 300\n- Charges de personnel : N-1 14 300 ; N 15 800\n- Impôts et taxes : N-1 900 ; N 980\n- Dotations aux amortissements : N-1 3 100 ; N 3 600\n\nLa direction souligne une croissance du chiffre d'affaires de 12,5 % à périmètre constant, obtenue en accordant des remises sur les grands comptes alors que le prix de l'acier a augmenté. Aucun autre produit ou charge opérationnel courant n'est à prendre en compte.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "Calculez l'EBITDA de l'exercice N, en k€.",
+          "points": 2,
+          "expected_value": 6850,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "EBITDA N = 58 500 − 24 570 − 10 300 − 15 800 − 980 = 6 850 k€ (les dotations sont exclues par définition). En N-1 : 52 000 − 20 800 − 9 400 − 14 300 − 900 = 6 600 k€."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "prompt": "Calculez le taux de marge d'EBITDA (EBITDA / CA) de l'exercice N, en %, arrondi à une décimale.",
+          "points": 2,
+          "expected_value": 11.7,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "6 850 / 58 500 = 11,7 %, contre 6 600 / 52 000 = 12,7 % en N-1 : le taux de marge perd un point."
+        },
+        {
+          "id": "q3",
+          "kind": "mcq",
+          "prompt": "Quel poste explique principalement la baisse du taux de marge d'EBITDA ?",
+          "points": 2,
+          "options": [
+            "Les charges de personnel",
+            "Les achats consommés",
+            "Les dotations aux amortissements",
+            "Les charges externes"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "Rapportés au CA, les achats consommés passent de 40,0 % à 42,0 % (option 2), soit deux points perdus, cohérent avec les remises accordées et la hausse de l'acier. Les charges de personnel passent de 27,5 % à 27,0 % et les charges externes de 18,1 % à 17,6 % : leur poids baisse. Les dotations (option 3) sont hors EBITDA."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "prompt": "Commentez l'évolution de l'activité et de la rentabilité d'Alvéa, et indiquez les précautions à prendre avant de comparer son EBITDA à celui d'un concurrent.",
+          "points": 4,
+          "model_answer": "Le CA progresse de 12,5 % mais l'EBITDA de 3,8 % seulement (6 600 à 6 850 k€) : effet ciseau, la croissance a été achetée par des remises alors que le coût de la matière augmentait, d'où un poids des achats passé de 40 % à 42 % du CA. La productivité des autres charges s'améliore légèrement (personnel, charges externes), ce qui limite la dégradation à un point de marge. Si la tendance se poursuit, la croissance détruira de la rentabilité : il faut répercuter la hausse des matières ou revoir la politique de remises. L'EBITDA est un indicateur alternatif de performance, non défini par les IFRS : avant toute comparaison, vérifier sa définition (traitement des dépréciations, des éléments non courants, des paiements en actions), le rapprochement avec le résultat opérationnel et l'incidence d'IFRS 16, qui majore l'EBITDA des groupes locataires.",
+          "key_points": [
+            "Croissance du CA (+12,5 %) bien supérieure à celle de l'EBITDA (+3,8 %) : effet ciseau",
+            "Dégradation due aux achats consommés (40 % à 42 % du CA), remises et coût des matières",
+            "Autres charges mieux maîtrisées, insuffisant pour compenser",
+            "EBITDA non normé : vérifier la définition, le rapprochement et l'effet d'IFRS 16 avant comparaison"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas illustre la lecture conjointe de la croissance et de la marge : une hausse du CA n'est créatrice de rentabilité que si les charges variables ne progressent pas plus vite. Calculs : EBITDA N-1 = 6 600 k€ (12,7 %), EBITDA N = 6 850 k€ (11,7 %)."
+    }
+  ]
+}

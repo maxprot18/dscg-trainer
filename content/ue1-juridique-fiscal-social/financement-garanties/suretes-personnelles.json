@@ -1,0 +1,154 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-fin-surpers-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "financement-garanties",
+      "notion": "suretes-personnelles",
+      "difficulty": 2,
+      "tags": [
+        "garantie autonome",
+        "cautionnement",
+        "inopposabilité des exceptions"
+      ],
+      "statement": "La société Lamarre a obtenu de sa banque une garantie autonome à première demande au profit de son client étranger, en garantie de la bonne exécution d'un marché. Le client appelle la garantie ; Lamarre soutient qu'elle a parfaitement exécuté le marché. Que peut opposer la banque garante au bénéficiaire ?",
+      "options": [
+        "Rien qui tienne à l'exécution du marché : elle doit payer, sauf abus ou fraude manifestes du bénéficiaire",
+        "La bonne exécution du marché, car le garant peut opposer toutes les exceptions appartenant au débiteur",
+        "Le bénéfice de discussion, en exigeant que le client poursuive d'abord Lamarre",
+        "La nullité de la garantie, faute de mention de la main du garant fixant un montant en lettres et en chiffres"
+      ],
+      "answer": [
+        0
+      ],
+      "multiple": false,
+      "explanation": "La garantie autonome est indépendante de l'obligation garantie : le garant ne peut opposer aucune exception tenant à cette obligation et n'est libéré qu'en cas d'abus ou de fraude manifestes du bénéficiaire ou de collusion de celui-ci avec le donneur d'ordre (C. civ. art. 2321) : option 1. L'option 2 décrit le cautionnement, engagement accessoire. L'option 3 vise le bénéfice de discussion, propre à la caution simple. L'option 4 transpose à tort la mention exigée de la caution personne physique (art. 2297) : ici, le garant est une banque et l'engagement n'est pas un cautionnement.",
+      "source_ref": "C. civ. art. 2321 (garantie autonome) ; art. 2288 et 2297 (cautionnement)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue1-fin-surpers-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "financement-garanties",
+      "notion": "suretes-personnelles",
+      "difficulty": 2,
+      "tags": [
+        "cautionnement",
+        "information annuelle",
+        "créancier professionnel"
+      ],
+      "statement": "En 2023, M. Vidal, personne physique, s'est porté caution envers une banque d'un prêt consenti à sa société. La banque a omis de lui adresser l'information annuelle sur l'encours de la dette en 2024 et en 2025. La société est défaillante en 2026. Quelle est la sanction de ce manquement ?",
+      "options": [
+        "La nullité du cautionnement, la caution étant totalement libérée",
+        "La réduction de l'engagement au montant que la caution pouvait supporter compte tenu de ses biens et revenus",
+        "Aucune sanction, l'information annuelle n'étant due qu'aux cautions personnes morales",
+        "La déchéance de la garantie des intérêts et pénalités échus depuis la précédente information jusqu'à la communication de la nouvelle ; la caution reste tenue du principal"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Le créancier professionnel doit, avant le 31 mars de chaque année, informer la caution personne physique du montant de la dette (principal, intérêts, accessoires) au 31 décembre précédent ; à défaut, il est déchu de la garantie des intérêts et pénalités échus depuis la précédente information jusqu'à celle de la nouvelle information (C. civ. art. 2302) : option 4. Le principal reste dû : la nullité totale (option 1) est hors de propos. L'option 2 est la sanction de la disproportion manifeste (art. 2300), non du défaut d'information. L'option 3 inverse le champ : l'obligation protège précisément la caution personne physique.",
+      "source_ref": "C. civ. art. 2302 (information annuelle de la caution, ordonnance n° 2021-1192)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue1-fin-surpers-0003",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "financement-garanties",
+      "notion": "suretes-personnelles",
+      "difficulty": 1,
+      "tags": [
+        "lettre d'intention",
+        "groupe de sociétés"
+      ],
+      "statement": "Par une lettre d'intention, la société mère s'engage toujours à payer elle-même la dette de sa filiale si celle-ci est défaillante.",
+      "answer": false,
+      "justification": "Faux : la lettre d'intention est un engagement de faire ou de ne pas faire ayant pour objet le soutien apporté au débiteur (C. civ. art. 2322), non un engagement de payer sa dette.",
+      "explanation": "La portée de la lettre d'intention dépend de sa rédaction. Une simple déclaration de bonne volonté peut n'avoir aucune portée juridique ; un engagement de « faire le nécessaire » pour que la filiale honore ses engagements crée une obligation de résultat dont l'inexécution engage la responsabilité de la mère ; un engagement de « faire ses meilleurs efforts » crée une obligation de moyens. Dans tous les cas, la mère répond de l'inexécution de son propre engagement (dommages et intérêts), elle ne paie pas la dette de la filiale à titre de caution. Si la lettre contenait un engagement de payer en cas de défaillance, elle serait requalifiée en cautionnement.",
+      "source_ref": "C. civ. art. 2322 (lettre d'intention)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue1-fin-surpers-0004",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "financement-garanties",
+      "notion": "suretes-personnelles",
+      "difficulty": 3,
+      "tags": [
+        "cautionnement",
+        "mention",
+        "disproportion",
+        "caution solidaire"
+      ],
+      "title": "Arcane : le cautionnement du gérant",
+      "context": "En mars 2024, la SARL Arcane a obtenu de la banque Sylvane un prêt professionnel de 180 000 €. M. Faure, gérant et associé majoritaire, s'est porté caution solidaire de ce prêt envers la banque.\nL'acte de cautionnement, établi sous forme électronique, comporte une mention que M. Faure a saisie lui-même avant de signer électroniquement : il s'engage, en qualité de caution solidaire et en renonçant au bénéfice de discussion, à payer à la banque ce que lui doit Arcane en cas de défaillance, à hauteur de 50 % des sommes restant dues, dans la limite de 60 000 € (soixante mille euros) couvrant le principal, les intérêts et les accessoires.\nLors de la signature, M. Faure percevait 30 000 € de revenus annuels et ne possédait qu'une épargne de 10 000 € ; on admet qu'au regard de ses biens et revenus, il ne pouvait raisonnablement s'engager qu'à hauteur de 40 000 € et que le cautionnement de 60 000 € était manifestement disproportionné.\nEn 2026, Arcane cesse de rembourser. La banque prononce la déchéance du terme : il reste dû 130 000 € en principal et 10 000 € d'intérêts et accessoires, soit 140 000 €. On suppose que la banque a correctement délivré toutes les informations dues à la caution.\nLa banque assigne directement M. Faure, sans avoir poursuivi la société.",
+      "sub_questions": [
+        {
+          "id": "q1-mention",
+          "kind": "mcq",
+          "prompt": "Le cautionnement de M. Faure est-il valable quant à sa forme ?",
+          "points": 2,
+          "options": [
+            "Non : la mention doit être écrite à la main sur un support papier, une mention électronique étant exclue",
+            "Oui : la caution personne physique doit apposer elle-même la mention, qui peut être électronique, avec un plafond exprimé en lettres et en chiffres",
+            "Non : un cautionnement donné par le gérant d'une SARL doit être autorisé par l'assemblée des associés",
+            "Oui, mais seulement parce que le créancier est un professionnel : envers un créancier non professionnel, aucune mention ne serait exigée"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "Depuis l'ordonnance n° 2021-1192, la caution personne physique appose elle-même, à peine de nullité, la mention de son engagement dans la limite d'un montant exprimé en lettres et en chiffres (C. civ. art. 2297) ; cette mention peut être apposée sous forme électronique (C. civ. art. 1174) : option 2. L'option 1 reflète une lecture dépassée. L'option 3 confond avec la procédure d'autorisation des garanties données par une SA (C. com. art. L225-35) : ici, c'est le gérant qui s'engage à titre personnel. L'option 4 est fausse : l'exigence de mention s'applique quel que soit le créancier."
+        },
+        {
+          "id": "q2-montant",
+          "kind": "numeric",
+          "prompt": "Abstraction faite de la disproportion, quel montant la banque pourrait-elle réclamer à M. Faure en exécution des termes du cautionnement ? Réponse en euros.",
+          "points": 2,
+          "expected_value": 60000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Quotité garantie : 50 % × 140 000 = 70 000 €, montant supérieur au plafond de 60 000 € fixé dans la mention. L'engagement est limité au plus faible des deux : 60 000 €. Les erreurs 70 000 € (oubli du plafond) et 65 000 € (quotité appliquée au seul principal) sont hors tolérance."
+        },
+        {
+          "id": "q3-discussion",
+          "kind": "true_false",
+          "prompt": "M. Faure peut exiger que la banque poursuive d'abord la SARL Arcane avant de se retourner contre lui.",
+          "points": 1,
+          "answer": false,
+          "explanation": "Faux : la caution solidaire est privée du bénéfice de discussion, et M. Faure l'a expressément reconnu dans sa mention (C. civ. art. 2297). La banque peut le poursuivre directement dès la défaillance du débiteur."
+        },
+        {
+          "id": "q4-disproportion",
+          "kind": "open",
+          "prompt": "Quelle est la conséquence de la disproportion manifeste de l'engagement ? Chiffrez le montant finalement dû par M. Faure, comparez avec le régime antérieur à la réforme, puis indiquez les recours dont il dispose après paiement.",
+          "points": 4,
+          "model_answer": "Le cautionnement a été souscrit par une personne physique envers un créancier professionnel et il était, lors de sa conclusion, manifestement disproportionné à ses revenus et à son patrimoine. Pour un cautionnement conclu depuis le 1er janvier 2022, la sanction est la réduction de l'engagement au montant à hauteur duquel la caution pouvait s'engager à cette date (C. civ. art. 2300) : M. Faure doit 40 000 € au lieu de 60 000 €. Sous l'ancien régime (Code de la consommation), le créancier ne pouvait pas se prévaloir du tout d'un engagement disproportionné, sauf retour à meilleure fortune de la caution : la caution était entièrement déchargée. Après avoir payé, M. Faure dispose d'un recours personnel contre la SARL Arcane et d'un recours subrogatoire, qui lui transmet les droits et les éventuelles garanties de la banque ; ce recours sera toutefois de faible valeur pratique si la société est insolvable.",
+          "key_points": [
+            "Conditions : caution personne physique, créancier professionnel, disproportion manifeste appréciée lors de la conclusion",
+            "Sanction depuis 2022 : réduction de l'engagement au montant supportable, soit 40 000 € (C. civ. art. 2300)",
+            "Régime antérieur : décharge totale de la caution (sauf retour à meilleure fortune)",
+            "Après paiement : recours personnel et recours subrogatoire contre le débiteur principal"
+          ]
+        }
+      ],
+      "total_points": 9,
+      "explanation": "Le cas articule la forme du cautionnement (mention de la caution, possible sous forme électronique), son étendue (quotité et plafond), la solidarité (absence de bénéfice de discussion) et la protection de la caution personne physique face au créancier professionnel (réduction pour disproportion depuis l'ordonnance n° 2021-1192).",
+      "source_ref": "C. civ. art. 2288, 2297, 2300 et 2302 (rédaction issue de l'ordonnance n° 2021-1192) ; art. 1174 (écrit électronique)",
+      "verified": true,
+      "estimated_seconds": 780
+    }
+  ]
+}

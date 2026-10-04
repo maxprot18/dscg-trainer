@@ -1,0 +1,164 @@
+{
+  "exercises": [
+    {
+      "id": "ue5-secu-conformite-0001",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "conformite-reglementaire-si",
+      "difficulty": 2,
+      "tags": [
+        "NIS 2",
+        "notification des incidents"
+      ],
+      "statement": "Une entité soumise à NIS 2 prend connaissance d'un incident important un mardi à 10 h. Quel calendrier de déclaration à l'autorité compétente (ou au CSIRT) la directive prévoit-elle ?",
+      "options": [
+        "Alerte précoce sous 24 heures, notification d'incident sous 72 heures, rapport final dans un mois",
+        "Notification unique sous 72 heures, comme pour une violation de données personnelles",
+        "Alerte précoce sous 72 heures, rapport final dans les six mois",
+        "Aucune déclaration obligatoire pour les entités importantes, seulement pour les entités essentielles"
+      ],
+      "answer": [
+        0
+      ],
+      "multiple": false,
+      "explanation": "L'article 23 de NIS 2 prévoit trois étapes (option 1) : une alerte précoce dans les 24 heures après avoir pris connaissance de l'incident (ici avant le mercredi 10 h), une notification d'incident avec une première évaluation dans les 72 heures, puis un rapport final au plus tard un mois après la notification. L'option 2 confond avec la notification à la CNIL prévue par le RGPD (art. 33), qui peut d'ailleurs s'ajouter si des données personnelles sont touchées. L'option 3 inverse les délais. L'option 4 est fausse : l'obligation de notification s'applique aux entités essentielles comme aux entités importantes.",
+      "source_ref": "Directive (UE) 2022/2555 (NIS 2), art. 23",
+      "estimated_seconds": 60,
+      "verified": true
+    },
+    {
+      "id": "ue5-secu-conformite-0002",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "conformite-reglementaire-si",
+      "difficulty": 3,
+      "tags": [
+        "DORA",
+        "prestataires tiers de TIC",
+        "secteur financier"
+      ],
+      "statement": "Laquelle de ces affirmations sur le règlement DORA (résilience opérationnelle numérique du secteur financier) est exacte ?",
+      "options": [
+        "Il ne s'applique qu'aux établissements de crédit, les assureurs relevant exclusivement de NIS 2",
+        "Pour les entités financières qu'il vise, NIS 2 prévaut sur DORA, qui n'en est qu'un complément facultatif",
+        "Les incidents majeurs liés aux TIC sont notifiés uniquement à la CNIL",
+        "Les entités financières tiennent un registre d'information de leurs accords contractuels portant sur des services TIC fournis par des prestataires tiers"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "DORA impose de tenir un registre d'information de tous les contrats de services TIC conclus avec des prestataires tiers, dans le cadre de la gestion du risque lié à ces prestataires (option 4). L'option 1 est fausse : DORA vise aussi les assureurs, les entreprises d'investissement, les établissements de paiement et de monnaie électronique, les sociétés de gestion, etc. L'option 2 inverse la règle : DORA est le texte spécial et prime sur NIS 2 pour ces entités. L'option 3 est fausse : les incidents majeurs sont notifiés à l'autorité compétente du secteur financier (en France, l'ACPR ou l'AMF) ; la CNIL n'intervient qu'en cas de violation de données personnelles, au titre du RGPD.",
+      "source_ref": "Règlement (UE) 2022/2554 (DORA) : champ d’application, gestion du risque lié aux prestataires tiers de TIC (registre d’information), notification des incidents majeurs ; articulation avec la directive (UE) 2022/2555",
+      "estimated_seconds": 75,
+      "verified": true
+    },
+    {
+      "id": "ue5-secu-conformite-0003",
+      "type": "true_false",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "conformite-reglementaire-si",
+      "difficulty": 1,
+      "tags": [
+        "DORA",
+        "nature du texte"
+      ],
+      "statement": "DORA est une directive européenne qui ne s'applique en France qu'une fois transposée par une loi nationale.",
+      "answer": false,
+      "justification": "DORA est le règlement (UE) 2022/2554 : il s'applique directement dans tous les États membres, depuis le 17 janvier 2025, sans transposition.",
+      "explanation": "C'est NIS 2 (directive (UE) 2022/2555) qui doit être transposée, au plus tard le 17 octobre 2024 selon la directive. DORA, en tant que règlement, est obligatoire dans tous ses éléments ; il est complété par des normes techniques adoptées au niveau européen et sa supervision en France relève de l'ACPR et de l'AMF.",
+      "source_ref": "Règlement (UE) 2022/2554 (DORA), dispositions finales (application à compter du 17 janvier 2025) ; TFUE art. 288",
+      "estimated_seconds": 30,
+      "verified": true
+    },
+    {
+      "id": "ue5-secu-conformite-0004",
+      "type": "case_study",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "conformite-reglementaire-si",
+      "difficulty": 3,
+      "tags": [
+        "NIS 2",
+        "DORA",
+        "entité importante",
+        "sanctions",
+        "gouvernance"
+      ],
+      "title": "Groupe Maraval : quelles obligations NIS 2 et DORA ?",
+      "context": "Le groupe Maraval réalise un chiffre d'affaires annuel mondial de 900 M€. Il comprend notamment :\n- Maraval Biscuits, société française qui fabrique industriellement des biscuits et les distribue en gros à la grande distribution : 620 salariés, chiffre d'affaires 140 M€, total de bilan 90 M€ ;\n- Maraval Pay, établissement de paiement agréé qui gère les cartes de fidélité prépayées du groupe.\n\nLa directrice des systèmes d'information de Maraval Biscuits a constaté que :\n- aucune analyse de risques formalisée n'existe ;\n- les lignes de production sont pilotées par des automates reliés au réseau de gestion ;\n- le principal transporteur et le fournisseur de l'ERP accèdent au SI sans exigences de sécurité contractuelles ;\n- le comité de direction n'a jamais été formé à la cybersécurité ;\n- il n'existe pas de procédure de déclaration des incidents.\n\nHypothèses : la production, la transformation et la distribution de denrées alimentaires figurent à l'annexe II de NIS 2 (autres secteurs critiques) ; aucune désignation particulière par l'État n'est intervenue. Pour les sanctions, on retient les plafonds minimaux fixés par la directive.",
+      "sub_questions": [
+        {
+          "id": "q1-qualification",
+          "kind": "mcq",
+          "prompt": "Comment Maraval Biscuits est-elle qualifiée au regard de NIS 2 ?",
+          "points": 2,
+          "options": [
+            "Hors champ : l'agroalimentaire n'est pas concerné par NIS 2",
+            "Entité importante : grande entreprise d'un secteur de l'annexe II",
+            "Entité essentielle : toute entreprise de plus de 250 salariés est essentielle",
+            "Entité essentielle, car elle appartient à un groupe qui comprend un établissement de paiement"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "Les entités des secteurs de l'annexe II, au moins de taille moyenne, sont des entités importantes, quelle que soit leur taille au-delà (sauf désignation par l'État). La taille de 250 salariés ne rend essentielle qu'une grande entreprise d'un secteur de l'annexe I. La présence d'un établissement de paiement dans le groupe ne change pas la qualification de la société de biscuits."
+        },
+        {
+          "id": "q2-sanction",
+          "kind": "numeric",
+          "prompt": "Calculez le plafond de l'amende administrative encourue par Maraval Biscuits en cas de manquement à ses obligations de gestion des risques (en M€, une décimale).",
+          "points": 2,
+          "expected_value": 12.6,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.05
+          },
+          "unit": "M€",
+          "decimals": 1,
+          "explanation": "Entité importante : plafond égal au plus élevé de 7 M€ et de 1,4 % du chiffre d'affaires annuel mondial de l'entreprise (le groupe). 1,4 % × 900 = 12,6 M€ > 7 M€ : plafond = 12,6 M€. Le taux de 2 % (18 M€) ne vaut que pour les entités essentielles ; retenir le chiffre d'affaires de la filiale donnerait 7 M€."
+        },
+        {
+          "id": "q3-maraval-pay",
+          "kind": "mcq",
+          "prompt": "Quel texte encadre principalement la résilience numérique de Maraval Pay ?",
+          "points": 2,
+          "options": [
+            "NIS 2, au titre du secteur bancaire",
+            "Le règlement DORA, applicable depuis le 17 janvier 2025",
+            "Aucun texte, car ses services ne sont proposés qu'aux clients du groupe",
+            "Le seul RGPD"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "Les établissements de paiement entrent dans le champ de DORA, texte spécial qui prime sur NIS 2 pour les entités financières. L'usage interne au groupe ne fait pas sortir un établissement agréé du champ du règlement. Le RGPD s'applique aux données personnelles mais ne traite pas de la résilience opérationnelle numérique."
+        },
+        {
+          "id": "q4-plan",
+          "kind": "open",
+          "prompt": "Présentez les principales actions de mise en conformité de Maraval Biscuits avec NIS 2, au vu des constats de la DSI.",
+          "points": 4,
+          "model_answer": "Gouvernance : le comité de direction doit approuver les mesures de gestion des risques, superviser leur mise en œuvre et suivre une formation ; sa responsabilité peut être engagée (art. 20). Il faut nommer un responsable de la sécurité et s'enregistrer auprès de l'autorité compétente (ANSSI). Analyse de risques formalisée couvrant le SI de gestion et les automates de production, avec une segmentation des réseaux industriels et de gestion. Mesures de l'article 21 proportionnées : politique de sécurité, gestion des incidents, continuité (sauvegardes, PCA / PRA), authentification multifacteur, chiffrement, sensibilisation, gestion des vulnérabilités. Chaîne d'approvisionnement : exigences de sécurité dans les contrats du transporteur et de l'éditeur de l'ERP (accès contrôlés et journalisés, notification des incidents, droit d'audit). Procédure de déclaration des incidents importants : alerte précoce sous 24 h, notification sous 72 h, rapport final dans un mois. Le respect de ces obligations est contrôlé a posteriori, une entité importante n'étant pas soumise à la supervision a priori.",
+          "key_points": [
+            "Implication et formation de la direction, responsabilité des dirigeants (art. 20)",
+            "Analyse de risques incluant les automates, segmentation des réseaux",
+            "Mesures de l'art. 21 : continuité, sauvegardes, authentification multifacteur, gestion des incidents",
+            "Sécurité de la chaîne d'approvisionnement : clauses avec le transporteur et l'éditeur",
+            "Procédure de notification 24 h / 72 h / un mois ; supervision a posteriori"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Maraval Biscuits est une entité importante (annexe II) ; plafond d'amende = max(7 M€ ; 1,4 % × 900 M€) = 12,6 M€. Maraval Pay relève de DORA. La conformité NIS 2 repose sur la gouvernance, les mesures de gestion des risques, la chaîne d'approvisionnement et la notification des incidents.",
+      "source_ref": "Directive (UE) 2022/2555 (NIS 2), art. 3, 20, 21, 23, 33 et 34, annexes I et II ; règlement (UE) 2022/2554 (DORA)",
+      "estimated_seconds": 900,
+      "verified": true
+    }
+  ]
+}

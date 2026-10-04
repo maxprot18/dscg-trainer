@@ -1,0 +1,133 @@
+{
+  "exercises": [
+    {
+      "id": "ue6-mgmt-hr-0001",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "management-si-marketing",
+      "notion": "hr-leadership-management",
+      "difficulty": 1,
+      "tags": [
+        "redundancy",
+        "dismissal",
+        "HR vocabulary"
+      ],
+      "statement": "Following the closure of its Leeds warehouse, a logistics company informs 40 employees that their jobs no longer exist and that their contracts will be terminated. These employees are…",
+      "options": [
+        "dismissed for gross misconduct.",
+        "resigning from the company.",
+        "offered a promotion.",
+        "made redundant."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Option 4 is correct: an employee is made redundant (licenciement pour motif économique) when the job itself disappears, here because the warehouse closes; \"to lay off\" is a common synonym. Option 1 is wrong: dismissal for gross misconduct (faute grave) relates to the employee's behaviour, not to the position. Option 2 is wrong: to resign (démissionner) is a decision taken by the employee. Option 3 is wrong: nothing in the situation suggests a move to a higher position.",
+      "source_ref": "HR vocabulary: redundancy / dismissal / resignation (UK usage)",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue6-mgmt-hr-0002",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "management-si-marketing",
+      "notion": "hr-leadership-management",
+      "difficulty": 2,
+      "tags": [
+        "Herzberg",
+        "motivation",
+        "hygiene factors"
+      ],
+      "statement": "The finance manager of a shared service centre notices that her team is demotivated, although salaries are above the market average and the offices are modern and comfortable. According to Herzberg's two-factor theory, which action is the most likely to increase motivation?",
+      "options": [
+        "Granting a further across-the-board pay rise.",
+        "Giving team members responsibility for whole processes and recognising their achievements.",
+        "Refurbishing the canteen and the break areas.",
+        "Increasing supervision and checking each task more closely."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Option 2 is correct: for Herzberg, motivators (achievement, recognition, responsibility, the work itself, advancement) are the factors that create satisfaction and motivation. Options 1 and 3 are wrong: pay and working conditions are hygiene factors; they prevent dissatisfaction but do not motivate durably, and here they are already satisfactory. Option 4 is wrong: closer control reflects McGregor's Theory X and tends to reduce autonomy, which is a source of motivation.",
+      "source_ref": "Herzberg, Mausner and Snyderman, The Motivation to Work (1959): two-factor theory",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue6-mgmt-hr-0003",
+      "type": "case_study",
+      "ue": "UE6",
+      "theme": "management-si-marketing",
+      "notion": "hr-leadership-management",
+      "difficulty": 2,
+      "tags": [
+        "staff turnover",
+        "onboarding",
+        "leadership styles",
+        "retention"
+      ],
+      "title": "Staff retention at Halvorsen Logistics",
+      "context": "Halvorsen Logistics is a road haulage company based in Rotterdam. Its HR director has prepared the following note for the board, written in English, the group's working language.\n\n\"Headcount: 480 employees at 1 January 2025 and 520 at 31 December 2025. During the year, 75 employees left the company: 52 resigned, 15 retired and 8 were dismissed.\n\nExit interviews: most of those who resigned mention the lack of career prospects and rigid shift patterns. Pay is in line with the market.\n\nNew hires: since September, every new driver shadows an experienced colleague for two weeks and completes an e-learning module on safety and company procedures before driving alone.\n\nManagement: our operations director sets monthly delivery targets for each depot, pays a bonus to depot teams that meet them and gives formal warnings to those that miss them.\"\n\nThe board asks you to analyse this note.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculate Halvorsen's staff turnover rate for 2025, using all leavers and the average headcount. Give the answer as a percentage, rounded to one decimal place.",
+          "expected_value": 15,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "Average headcount = (480 + 520) ÷ 2 = 500. Staff turnover rate = leavers ÷ average headcount = 75 ÷ 500 = 15.0%. Using the closing headcount (75 ÷ 520 = 14.4%) is a classic error."
+        },
+        {
+          "id": "q2",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Which HR term best describes the two-week shadowing and e-learning programme for new drivers?",
+          "options": [
+            "Onboarding",
+            "Outsourcing",
+            "Performance appraisal",
+            "Headhunting"
+          ],
+          "answer": [
+            0
+          ],
+          "multiple": false,
+          "explanation": "Onboarding (intégration) is the process of integrating new hires into the organisation. Outsourcing means entrusting an activity to an external provider; a performance appraisal is the periodic review of an employee's results; headhunting is the direct search for candidates, usually for senior positions."
+        },
+        {
+          "id": "q3",
+          "kind": "true_false",
+          "points": 2,
+          "prompt": "The operations director's management style, as described in the note, is typical of transactional leadership.",
+          "answer": true,
+          "explanation": "True: transactional leadership relies on an exchange: targets are set, rewards (bonuses) are given when they are met and sanctions (formal warnings) when they are missed. Transformational leadership would instead rely on a shared vision, inspiration and the development of employees."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "points": 5,
+          "prompt": "In about 80 words, in English, recommend two measures to reduce voluntary departures, based on the exit interviews.",
+          "model_answer": "Since pay is in line with the market, the problem lies elsewhere. First, Halvorsen should create clear career paths for drivers, for example progression to trainer, team leader or planner roles, supported by upskilling programmes and annual appraisals that discuss development. Second, it should make shift patterns more flexible, for instance by letting drivers swap shifts through an app or choose between fixed and rotating schedules where operations allow. Exit interviews should continue so that the impact of these measures can be monitored.",
+          "key_points": [
+            "Links the measures to the exit interview findings (career prospects, rigid shifts), not to pay",
+            "Career development measure (career paths, training, promotion)",
+            "Working-time flexibility measure (shift swapping, choice of schedules)",
+            "Correct HR vocabulary in English (retention, upskilling, appraisal…)"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "The case links a staff turnover calculation to HR vocabulary (onboarding), a leadership style (transactional) and Herzberg's logic: pay is a hygiene factor already satisfied, so retention depends on motivators such as career development and on working conditions such as shift flexibility.",
+      "source_ref": "Staff turnover rate = leavers ÷ average headcount (usual HR definition) ; Burns (1978) and Bass (1985): transactional vs transformational leadership",
+      "verified": true,
+      "estimated_seconds": 720
+    }
+  ]
+}

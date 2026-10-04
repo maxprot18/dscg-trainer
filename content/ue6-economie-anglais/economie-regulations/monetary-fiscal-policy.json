@@ -1,0 +1,156 @@
+{
+  "exercises": [
+    {
+      "id": "ue6-eco-monpol-0001",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "economie-regulations",
+      "notion": "monetary-fiscal-policy",
+      "difficulty": 2,
+      "tags": [
+        "interest rates",
+        "transmission",
+        "tightening"
+      ],
+      "statement": "A central bank raises its policy rate by 50 basis points to bring inflation back to target. All other things being equal, which effect is the most likely in the short to medium term?",
+      "options": [
+        "Existing fixed-rate bond prices rise, because bonds become more attractive.",
+        "The domestic currency tends to depreciate, which boosts exports.",
+        "Bank lending rates increase, credit demand slows and aggregate demand weakens.",
+        "Inflation falls immediately, within the same month, since prices adjust to the new rate."
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Option 3 describes the core transmission channel: banks pass on the higher policy rate to lending rates, borrowing becomes more expensive, households and firms borrow and spend less, and demand and inflation slow down. Option 1 is wrong: when interest rates rise, the price of existing fixed-rate bonds falls (prices and yields move in opposite directions). Option 2 is wrong: higher rates attract capital inflows and tend to make the currency appreciate, not depreciate. Option 4 is wrong: monetary policy acts with long and variable lags, typically spread over many months.",
+      "source_ref": "TFEU art. 127(1) (price stability objective) ; ECB, monetary policy transmission mechanism",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue6-eco-monpol-0002",
+      "type": "true_false",
+      "ue": "UE6",
+      "theme": "economie-regulations",
+      "notion": "monetary-fiscal-policy",
+      "difficulty": 2,
+      "tags": [
+        "quantitative easing",
+        "central bank balance sheet"
+      ],
+      "statement": "Under quantitative easing (QE), a central bank buys large amounts of financial assets such as government bonds, which expands its balance sheet and puts downward pressure on long-term interest rates.",
+      "answer": true,
+      "justification": "True: QE consists of large-scale asset purchases paid for by creating central bank reserves; the balance sheet grows and higher demand for bonds lowers long-term yields.",
+      "explanation": "QE is an unconventional tool used when policy rates are close to their lower bound. By purchasing government (and sometimes corporate) bonds, the central bank increases the price of these bonds and reduces their yields, which lowers long-term borrowing costs and supports asset prices and lending. The assets bought appear on the asset side of the central bank balance sheet, matched by an increase in bank reserves on the liability side. The reverse process, letting bonds mature without reinvestment or selling them, is called quantitative tightening (QT).",
+      "source_ref": "ECB, asset purchase programmes (APP, PEPP) — unconventional monetary policy measures",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue6-eco-monpol-0003",
+      "type": "numeric",
+      "ue": "UE6",
+      "theme": "economie-regulations",
+      "notion": "monetary-fiscal-policy",
+      "difficulty": 2,
+      "tags": [
+        "real interest rate",
+        "Fisher equation"
+      ],
+      "statement": "A company in an emerging economy can borrow from its bank at a nominal interest rate of 9.0% a year. Expected inflation over the year is 6.0%. Using the exact Fisher relation, calculate the expected real interest rate, in %, rounded to two decimal places.",
+      "expected_value": 2.83,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "decimals": 2,
+      "explanation": "Fisher relation: (1 + i) = (1 + r)(1 + π). So r = (1 + 0.09) / (1 + 0.06) − 1 = 1.028302 − 1 ≈ 2.83%. The approximation r ≈ i − π = 3.00% overstates the real rate by about 0.17 point, a gap that grows with the level of inflation.",
+      "source_ref": "Fisher equation: (1 + nominal rate) = (1 + real rate) × (1 + expected inflation)",
+      "verified": true,
+      "estimated_seconds": 120
+    },
+    {
+      "id": "ue6-eco-monpol-0004",
+      "type": "case_study",
+      "ue": "UE6",
+      "theme": "economie-regulations",
+      "notion": "monetary-fiscal-policy",
+      "difficulty": 3,
+      "tags": [
+        "Taylor rule",
+        "real policy rate",
+        "stagflation",
+        "policy dilemma"
+      ],
+      "title": "Monetary policy dilemma at the Central Bank of Nordavia",
+      "context": "You are preparing a briefing note in English for the board of a French industrial group with a large subsidiary in Nordavia, a fictional country with its own currency. The Central Bank of Nordavia (CBN) has a single mandate of price stability and an inflation target of 2%.\n\nLatest data (hypotheses for this exercise):\n- headline CPI inflation over the past 12 months: 5.2%;\n- core inflation (excluding energy and food): 4.1%;\n- CBN policy rate: 3.5%;\n- real GDP growth over the past year: 0.3%;\n- estimated output gap: −1% of potential GDP;\n- the CBN's estimate of the neutral real interest rate (r*): 1%.\n\nAnalysts are split. Some argue that the CBN is \"behind the curve\" and must keep hiking; others fear that further hikes will push the economy into recession, especially as the government has just announced a fiscal consolidation plan (spending cuts and tax increases) to reduce its deficit.",
+      "sub_questions": [
+        {
+          "id": "real-policy-rate",
+          "kind": "numeric",
+          "prompt": "Using headline inflation and the exact Fisher relation, calculate the ex post real policy rate, in %, rounded to two decimal places (a negative value is expected).",
+          "points": 4,
+          "expected_value": -1.62,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.05
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "r = (1 + 0.035) / (1 + 0.052) − 1 = 1.035 / 1.052 − 1 ≈ −1.62%. The approximation 3.5% − 5.2% = −1.70% is close (0.08 point away) but is not the method requested: the tolerance (±0.05 point) accepts −1.62% and rejects the approximation."
+        },
+        {
+          "id": "taylor-rule",
+          "kind": "numeric",
+          "prompt": "Apply the Taylor rule i = r* + π + 0.5 (π − π*) + 0.5 × output gap, using headline inflation for π. What policy rate does the rule suggest, in %, to one decimal place?",
+          "points": 4,
+          "expected_value": 7.3,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "i = 1 + 5.2 + 0.5 × (5.2 − 2) + 0.5 × (−1) = 1 + 5.2 + 1.6 − 0.5 = 7.3%. The current policy rate (3.5%) is 3.8 points below the rule, which supports the \"behind the curve\" argument."
+        },
+        {
+          "id": "stance",
+          "kind": "mcq",
+          "prompt": "Which statement best describes the current situation in Nordavia?",
+          "points": 4,
+          "options": [
+            "Monetary policy is restrictive, since the policy rate is positive and above 2%.",
+            "Monetary policy is still accommodative in real terms, and the economy shows signs of stagflation.",
+            "The economy is in deflation, since growth is close to zero.",
+            "The output gap is positive, which means demand exceeds potential and calls for fiscal stimulus."
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "Option 2: the real policy rate is negative (about −1.6%), below the neutral rate of 1%, so policy is still accommodative, while inflation is high and growth weak (stagflation). Option 1 looks at the nominal rate only. Option 3 confuses weak growth with falling prices. Option 4 is wrong: the gap is negative (−1%), signalling spare capacity."
+        },
+        {
+          "id": "briefing",
+          "kind": "open",
+          "prompt": "In a short paragraph in English, explain the dilemma facing the CBN and how the government's fiscal plan affects it. State what this means for the subsidiary's financing decisions.",
+          "points": 8,
+          "model_answer": "The CBN faces a trade-off between its price stability mandate and the risk of recession. Inflation is more than twice the 2% target, core inflation (4.1%) shows that price pressures are not limited to energy, and the real policy rate is still negative: a mechanical rule such as the Taylor rule points to a much higher rate (about 7.3%). However, growth is close to zero and the output gap is negative, so further tightening, which acts with long and variable lags, could tip the economy into recession. The fiscal consolidation plan is contractionary: it will weigh on demand and help bring inflation down, which may allow the CBN to tighten less than the rule suggests (a coherent policy mix in which both policies lean against inflation, at the cost of weaker growth). For the subsidiary, borrowing costs are likely to stay high or rise further: it should consider locking in fixed rates or hedging floating-rate debt, keep a strong liquidity buffer and stress-test its business plan for a downturn in local demand.",
+          "key_points": [
+            "Trade-off: inflation well above target and negative real rate vs weak growth and negative output gap",
+            "Taylor rule suggests a much higher rate; monetary policy acts with lags",
+            "Fiscal consolidation is contractionary and reduces the need for further hikes (policy mix)",
+            "Consequences for the subsidiary: higher funding costs, fixed-rate or hedged debt, liquidity buffer, downside scenario"
+          ]
+        }
+      ],
+      "total_points": 20,
+      "explanation": "The real policy rate (≈ −1.62%) and the Taylor-rule rate (7.3%) both show that monetary policy remains loose relative to inflation, while the activity data (growth 0.3%, output gap −1%) argue for caution. The key concepts are the distinction between nominal and real rates, the Taylor rule as a benchmark, stagflation, and the interaction between monetary and fiscal policy (policy mix).",
+      "source_ref": "Fisher equation ; Taylor rule (J. B. Taylor, 1993): i = r* + π + 0.5 (π − π*) + 0.5 (y − y*) ; policy mix",
+      "verified": true,
+      "estimated_seconds": 900
+    }
+  ]
+}

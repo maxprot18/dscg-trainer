@@ -74,6 +74,225 @@
       "source_ref": "Contrôle de gestion : méthode des coûts préétablis et analyse des écarts sur charges directes (programme DSCG UE 3, pilotage de la performance)",
       "verified": true,
       "estimated_seconds": 900
+    },
+    {
+      "id": "ue3-pilotage-budgets-0002",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "gestion-previsionnelle-budgets",
+      "difficulty": 2,
+      "tags": [
+        "contrôle budgétaire",
+        "budget flexible"
+      ],
+      "source_ref": "Contrôle de gestion : gestion budgétaire et analyse des écarts (programme DSCG UE 3, pilotage de la performance)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Le responsable d'un atelier a produit 12 000 unités au lieu des 10 000 prévues au budget. Pour apprécier sa maîtrise des charges, à quel montant faut-il comparer les charges réellement engagées ?",
+      "options": [
+        "Au budget initial, établi pour 10 000 unités",
+        "Aux charges réelles de la période précédente",
+        "Au budget flexible, c'est-à-dire aux charges prévues ajustées au volume réellement produit (12 000 unités)",
+        "Au budget des ventes de la période"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'option 3 est exacte : le contrôle budgétaire compare le réel au préétabli de l'activité réelle. Le budget flexible recalcule les charges variables pour 12 000 unités et conserve les charges fixes ; l'écart obtenu traduit la maîtrise des consommations et des prix, et non l'effet du volume, que le responsable ne décide généralement pas. L'option 1 est fausse : comparer au budget initial ferait apparaître un écart défavorable mécanique, dû au seul surcroît de production. L'option 2 est fausse : la période précédente n'est pas une norme et peut elle-même comporter des inefficiences. L'option 4 est fausse : le budget des ventes concerne le chiffre d'affaires, pas les charges de l'atelier."
+    },
+    {
+      "id": "ue3-pilotage-budgets-0003",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "gestion-previsionnelle-budgets",
+      "difficulty": 3,
+      "tags": [
+        "beyond budgeting",
+        "limites du budget",
+        "prévisions glissantes"
+      ],
+      "source_ref": "J. Hope et R. Fraser, Beyond Budgeting (2003), principes de gestion et de processus",
+      "verified": true,
+      "estimated_seconds": 90,
+      "statement": "Parmi les pratiques suivantes, lesquelles sont cohérentes avec l'approche beyond budgeting ? (plusieurs réponses possibles)",
+      "options": [
+        "Des prévisions glissantes (rolling forecasts) mises à jour chaque trimestre sur un horizon de cinq trimestres",
+        "Une prime annuelle versée selon le taux de réalisation des objectifs budgétaires fixés en début d’exercice",
+        "Des objectifs relatifs, fondés sur la comparaison avec les meilleures unités internes ou les concurrents",
+        "Une allocation des ressources aux unités en cours d’année, au vu des besoins et des opportunités"
+      ],
+      "answer": [
+        0,
+        2,
+        3
+      ],
+      "multiple": true,
+      "explanation": "Les options 1, 3 et 4 sont exactes. Le beyond budgeting (Hope et Fraser) reproche au budget annuel sa rigidité et les comportements qu'il induit (négociation d'objectifs faciles, dépenses de fin d'exercice). Il dissocie la prévision (prévisions glissantes, option 1), la fixation des objectifs (objectifs relatifs par comparaison aux pairs, option 3) et l'allocation des ressources (à la demande, en cours d'année, option 4). L'option 2 est fausse : lier la rémunération à un objectif budgétaire fixé à l'avance est précisément la pratique que l'approche veut abandonner, car elle incite à sous-estimer les objectifs (slack budgétaire) et à gérer pour atteindre le chiffre plutôt que pour la performance relative."
+    },
+    {
+      "id": "ue3-pilotage-budgets-0004",
+      "type": "true_false",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "gestion-previsionnelle-budgets",
+      "difficulty": 1,
+      "tags": [
+        "budgets",
+        "articulation des budgets"
+      ],
+      "source_ref": "Contrôle de gestion : gestion budgétaire et analyse des écarts (programme DSCG UE 3, pilotage de la performance)",
+      "verified": true,
+      "estimated_seconds": 40,
+      "statement": "Dans la procédure budgétaire, le budget des ventes est en principe établi en premier, car il conditionne les budgets de production, d'approvisionnement et de trésorerie.",
+      "answer": true,
+      "justification": "Les ventes prévues déterminent les quantités à produire, donc les achats, les charges et les encaissements : elles sont le point de départ de la chaîne budgétaire.",
+      "explanation": "La construction des budgets suit une logique en cascade : budget des ventes, puis budget de production (ventes ± variation des stocks de produits), budget des approvisionnements, budgets des services fonctionnels et des investissements, enfin budget de trésorerie et documents de synthèse prévisionnels. Une exception : lorsque la capacité de production est le facteur limitant, c'est elle qui plafonne le budget des ventes."
+    },
+    {
+      "id": "ue3-pilotage-budgets-0005",
+      "type": "numeric",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "gestion-previsionnelle-budgets",
+      "difficulty": 2,
+      "tags": [
+        "écarts sur marge",
+        "écart sur prix",
+        "écart sur quantité"
+      ],
+      "source_ref": "Contrôle de gestion : gestion budgétaire et analyse des écarts (programme DSCG UE 3, pilotage de la performance)",
+      "verified": true,
+      "estimated_seconds": 180,
+      "statement": "Le budget de la société Orvane prévoyait la vente de 4 000 unités d'un produit au prix de 75 €, pour un coût de revient préétabli de 50 € par unité. En réalité, 4 400 unités ont été vendues au prix moyen de 72 €. Les produits sont valorisés au coût préétabli pour isoler la performance commerciale.\n\nConvention : écart = réel − prévu ; un écart positif est favorable. Calculez l'écart global sur marge sur coût préétabli (en euros, avec son signe).",
+      "expected_value": -3200,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Marge réelle sur coût préétabli = 4 400 × (72 − 50) = 96 800 €. Marge prévue = 4 000 × (75 − 50) = 100 000 €. Écart global = 96 800 − 100 000 = −3 200 € (défavorable). Décomposition : écart sur prix = (72 − 75) × 4 400 = −13 200 € (défavorable) ; écart sur quantité = (4 400 − 4 000) × 25 = +10 000 € (favorable). La baisse de prix a stimulé les volumes, mais pas assez pour compenser la perte de marge unitaire. Erreur classique : calculer l'écart sur chiffre d'affaires (4 400 × 72 − 4 000 × 75 = +16 800 €), qui ignore le coût des unités supplémentaires."
+    },
+    {
+      "id": "ue3-pilotage-budgets-0006",
+      "type": "numeric",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "gestion-previsionnelle-budgets",
+      "difficulty": 3,
+      "tags": [
+        "écarts sur marge",
+        "composition des ventes",
+        "écart sur volume"
+      ],
+      "source_ref": "Contrôle de gestion : gestion budgétaire et analyse des écarts (programme DSCG UE 3, pilotage de la performance)",
+      "verified": true,
+      "estimated_seconds": 300,
+      "statement": "La société Brévane vend deux produits. Budget : produit A, 3 000 unités, marge unitaire préétablie 20 € ; produit B, 1 000 unités, marge unitaire préétablie 40 €. Réalisations : produit A, 3 600 unités ; produit B, 900 unités.\n\nL'écart sur quantité est décomposé en un écart sur volume global (calculé avec la marge moyenne prévue) et un écart sur composition des ventes (mix). Convention : écart = réel − prévu ; un écart positif est favorable. Calculez l'écart sur composition des ventes (en euros, avec son signe).",
+      "expected_value": -4500,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Composition prévue : A = 3 000 ÷ 4 000 = 75 %, B = 25 %. Quantités réelles totales = 4 500. Quantités réelles au mix prévu : A = 4 500 × 75 % = 3 375 ; B = 4 500 × 25 % = 1 125. Écart sur composition = (3 600 − 3 375) × 20 + (900 − 1 125) × 40 = 4 500 − 9 000 = −4 500 € (défavorable) : les ventes se sont déplacées vers le produit le moins margé. Contrôle : marge moyenne prévue = (60 000 + 40 000) ÷ 4 000 = 25 € ; écart sur volume global = (4 500 − 4 000) × 25 = +12 500 € ; écart sur quantité total = (3 600 − 3 000) × 20 + (900 − 1 000) × 40 = +8 000 € = 12 500 − 4 500."
+    },
+    {
+      "id": "ue3-pilotage-budgets-0007",
+      "type": "case_study",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "gestion-previsionnelle-budgets",
+      "difficulty": 3,
+      "tags": [
+        "centre d’analyse",
+        "budget flexible",
+        "écart sur activité",
+        "écart sur rendement"
+      ],
+      "source_ref": "Contrôle de gestion : gestion budgétaire et analyse des écarts (programme DSCG UE 3, pilotage de la performance)",
+      "verified": true,
+      "estimated_seconds": 900,
+      "title": "Usinage Morlaix : contrôle budgétaire d'un centre d'analyse",
+      "context": "Le centre Usinage de la société Morlaix a pour unité d'œuvre l'heure-machine. Son budget mensuel, établi pour une activité normale de 2 000 heures-machine, comprend :\n- charges variables : 60 000 € (soit 30 € par heure-machine) ;\n- charges fixes : 50 000 €.\nLe coût standard de l'unité d'œuvre est donc de 55 € par heure-machine. La fiche de coût standard prévoit 0,25 heure-machine par pièce.\n\nEn mars, le centre a usiné 7 600 pièces (aucun en-cours). Il a consommé 2 050 heures-machine et ses charges réelles s'élèvent à 117 000 €.\n\nLe responsable du centre explique que plusieurs machines ont subi des arrêts et des réglages répétés après l'arrivée d'une nouvelle série de pièces, et que le prix de l'énergie a augmenté en cours de mois.\n\nConvention : écart = coût réel − coût préétabli ; un écart positif est défavorable, un écart négatif est favorable. Le budget flexible est BF(A) = 30 × A + 50 000.",
+      "sub_questions": [
+        {
+          "id": "q1-ecart-global",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez l'écart global du centre Usinage (en euros, signe selon la convention).",
+          "expected_value": 12500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Activité préétablie de la production réelle = 7 600 × 0,25 = 1 900 heures-machine. Coût préétabli = 1 900 × 55 = 104 500 €. Écart global = 117 000 − 104 500 = +12 500 € (défavorable)."
+        },
+        {
+          "id": "q2-ecart-budget",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez l'écart sur budget (en euros, signe selon la convention).",
+          "expected_value": 5500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Budget flexible de l'activité réelle = 30 × 2 050 + 50 000 = 111 500 €. Écart sur budget = 117 000 − 111 500 = +5 500 € (défavorable) : les charges dépassent ce qu'elles auraient dû être pour 2 050 heures (ici, hausse du prix de l'énergie notamment)."
+        },
+        {
+          "id": "q3-ecart-rendement",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez l'écart sur rendement (en euros, signe selon la convention).",
+          "expected_value": 8250,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Écart sur rendement = (activité réelle − activité préétablie) × coût standard de l'unité d'œuvre = (2 050 − 1 900) × 55 = +8 250 € (défavorable) : 150 heures-machine de plus que la norme pour la production obtenue."
+        },
+        {
+          "id": "q4-ecart-activite",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "L'écart sur activité vaut BF(2 050) − 2 050 × 55 = −1 250 €. Comment l'interpréter ?",
+          "options": [
+            "Une économie sur les charges variables, imputable au responsable du centre",
+            "Un boni de suractivité : les charges fixes sont mieux absorbées car l’activité réelle (2 050 h) dépasse l’activité normale (2 000 h)",
+            "Une perte de productivité de la main-d’œuvre du centre",
+            "Un écart sur prix de l’énergie"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "L'option 2 est exacte : l'écart sur activité correspond à l'imputation rationnelle des charges fixes, (2 000 − 2 050) × 50 000 ÷ 2 000 = −1 250 €. Les 50 heures de suractivité absorbent 25 € de charges fixes chacune. Mais ce boni naît ici d'heures consommées en excès (voir l'écart sur rendement) : il n'a rien d'une performance. L'option 1 est fausse : les charges variables sont neutralisées dans cet écart. L'option 3 est fausse : l'inefficience apparaît dans l'écart sur rendement. L'option 4 est fausse : les prix figurent dans l'écart sur budget."
+        },
+        {
+          "id": "q5-interpretation",
+          "kind": "open",
+          "points": 4,
+          "prompt": "Vérifiez la cohérence des trois écarts et interprétez-les : à quelles causes et à quels responsables les rattacher ?",
+          "model_answer": "Contrôle : 5 500 − 1 250 + 8 250 = 12 500 € = écart global. L'essentiel du dépassement vient de l'écart sur rendement (+8 250 €) : il a fallu 2 050 heures-machine au lieu de 1 900 pour usiner 7 600 pièces, soit environ 7,9 % de temps en plus. Les arrêts et réglages liés à la nouvelle série expliquent cette sous-performance ; elle relève du responsable du centre, mais aussi peut-être du bureau des méthodes (standard non adapté à la nouvelle série) ou de la maintenance. L'écart sur budget (+5 500 €) mêle un effet prix (énergie), peu maîtrisable par le responsable, et éventuellement des surconsommations ; il faudrait le décomposer par nature de charge. L'écart sur activité (−1 250 €) est un boni de suractivité purement mécanique, obtenu grâce aux heures excédentaires : il ne doit pas être porté au crédit du responsable. Actions : analyser les arrêts machine, revoir les réglages ou le standard de la nouvelle série, isoler l'effet prix de l'énergie pour ne pas pénaliser le responsable sur un élément exogène.",
+          "key_points": [
+            "Somme des écarts égale à l’écart global (5 500 − 1 250 + 8 250 = 12 500 €)",
+            "Écart sur rendement principal : 150 heures-machine en excès liées aux arrêts et réglages de la nouvelle série",
+            "Écart sur budget à décomposer : effet prix de l’énergie peu maîtrisable par le responsable",
+            "Boni d’activité mécanique, issu des heures excédentaires, à ne pas interpréter comme une performance"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Méthode des centres d'analyse : on part de l'activité préétablie de la production réelle (7 600 × 0,25 = 1 900 h) pour l'écart global, puis on décompose avec le budget flexible : écart sur budget = réel − BF(Ar) ; écart sur activité = BF(Ar) − Ar × CUs ; écart sur rendement = (Ar − As) × CUs. Ce cas porte sur les charges indirectes ; il complète l'analyse des écarts sur charges directes."
     }
   ]
 }

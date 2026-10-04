@@ -1,0 +1,198 @@
+{
+  "exercises": [
+    {
+      "id": "ue3-diag-frontieres-0001",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "frontieres-organisation",
+      "difficulty": 1,
+      "tags": [
+        "coûts de transaction",
+        "Williamson"
+      ],
+      "statement": "Selon Williamson, quels sont les trois attributs d'une transaction qui déterminent le choix de sa forme d'organisation ?",
+      "options": [
+        "Le prix, la quantité et le délai",
+        "La rationalité limitée, l'opportunisme et la confiance",
+        "La spécificité des actifs, l'incertitude et la fréquence",
+        "La taille, l'ancienneté et la réputation du partenaire"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'option 3 est exacte : Williamson caractérise une transaction par la spécificité des actifs qu'elle requiert, l'incertitude qui l'entoure et sa fréquence ; ces attributs orientent le choix entre marché, formes hybrides et hiérarchie. L'option 1 est fausse : prix, quantité et délai sont des termes du contrat, pas des attributs de la transaction. L'option 2 est fausse, c'est le piège classique : rationalité limitée et opportunisme sont les hypothèses comportementales de la théorie, pas les attributs des transactions ; la confiance n'en fait pas partie. L'option 4 est fausse : ce sont des caractéristiques du partenaire.",
+      "source_ref": "O. Williamson (1975, 1985), théorie des coûts de transaction ; R. Coase (1937)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue3-diag-frontieres-0002",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "frontieres-organisation",
+      "difficulty": 2,
+      "tags": [
+        "alliances",
+        "co-intégration"
+      ],
+      "statement": "Deux constructeurs automobiles concurrents développent et fabriquent ensemble un moteur, que chacun monte ensuite sur ses propres modèles, vendus sous sa marque. Selon la typologie de Garrette et Dussauge, de quelle alliance s'agit-il ?",
+      "options": [
+        "Alliance complémentaire",
+        "Alliance de pseudo-concentration",
+        "Partenariat vertical",
+        "Alliance de co-intégration"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'option 4 est exacte : dans une alliance de co-intégration, des concurrents produisent ensemble un élément commun (ici le moteur) pour bénéficier d'économies d'échelle, chacun l'intégrant dans ses propres produits finals, qui restent concurrents. L'option 1 est fausse : une alliance complémentaire associe des apports de nature différente (par exemple un produit contre un réseau de distribution). L'option 2 est fausse : dans une pseudo-concentration, les partenaires développent, fabriquent et commercialisent un produit final commun. L'option 3 est fausse : un partenariat vertical associe un client et un fournisseur, pas deux concurrents.",
+      "source_ref": "B. Garrette et P. Dussauge, typologie des alliances entre concurrents",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue3-diag-frontieres-0003",
+      "type": "true_false",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "frontieres-organisation",
+      "difficulty": 2,
+      "tags": [
+        "spécificité des actifs",
+        "internalisation"
+      ],
+      "statement": "Selon Williamson, plus les actifs nécessaires à une transaction sont spécifiques, plus l'internalisation tend à être préférée au recours au marché.",
+      "answer": true,
+      "justification": "Vrai : la spécificité des actifs accroît le risque d'opportunisme et les coûts de transaction du marché, ce qui favorise la hiérarchie.",
+      "explanation": "Un actif spécifique (outillage dédié, site construit pour un client, compétence propre à une relation) perd l'essentiel de sa valeur hors de la transaction. La partie qui l'a engagé devient vulnérable à l'opportunisme de l'autre (hold-up : renégociation à son désavantage). Les coûts de rédaction, de contrôle et de renégociation des contrats augmentent alors, ce qui rend la hiérarchie (faire soi-même) ou des formes hybrides très encadrées plus efficientes que le marché.",
+      "source_ref": "O. Williamson (1975, 1985), théorie des coûts de transaction ; R. Coase (1937)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue3-diag-frontieres-0004",
+      "type": "numeric",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "frontieres-organisation",
+      "difficulty": 3,
+      "tags": [
+        "make or buy",
+        "coûts de transaction",
+        "volume d'indifférence"
+      ],
+      "statement": "Une entreprise compare la fabrication interne d'une pièce et son achat à un sous-traitant.\n- Fabrication interne : coût variable 41 € par pièce et coûts fixes annuels de l'atelier 130 000 €.\n- Achat : prix 46 € par pièce, contrôle qualité à réception 2 € par pièce, et coûts de transaction annuels fixes de 25 000 € (recherche et sélection), 15 000 € (négociation et rédaction du contrat) et 30 000 € (suivi du sous-traitant).\nCalculez le volume annuel d'indifférence entre les deux solutions, en nombre de pièces, arrondi à l'unité.",
+      "expected_value": 8571,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "pièces",
+      "decimals": 0,
+      "explanation": "Coût de l'externalisation = (46 + 2) × Q + (25 000 + 15 000 + 30 000) = 48 Q + 70 000. Coût de la production interne = 41 Q + 130 000. Égalité : 48 Q + 70 000 = 41 Q + 130 000, d'où 7 Q = 60 000 et Q ≈ 8 571,4, soit 8 571 pièces. En dessous, l'externalisation coûte moins cher ; au-delà, la production interne. Erreurs classiques : ignorer tous les coûts de transaction (130 000 ÷ (46 − 41) = 26 000 pièces) ou seulement les coûts fixes de transaction (130 000 ÷ (48 − 41) ≈ 18 571 pièces).",
+      "source_ref": "O. Williamson (1975, 1985), théorie des coûts de transaction ; R. Coase (1937)",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue3-diag-frontieres-0005",
+      "type": "case_study",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "frontieres-organisation",
+      "difficulty": 3,
+      "tags": [
+        "externalisation",
+        "coûts de transaction",
+        "spécificité des actifs"
+      ],
+      "title": "Laboratoires Cérès : externaliser le conditionnement ?",
+      "context": "Les Laboratoires Cérès fabriquent des parfums vendus dans un flacon à la forme brevetée, symbole de la marque. Le conditionnement (remplissage, bouchage, étiquetage) est réalisé en interne pour un coût annuel de 1 250 000 €.\n\nUn prestataire propose de reprendre l'activité pour 1 050 000 € par an, dans le cadre d'un contrat de 4 ans. Seuls deux prestataires en Europe savent manipuler ce flacon ; les moules et réglages, propres à Cérès, devraient être installés chez le prestataire retenu.\n\nLe contrôleur de gestion a estimé les coûts liés au recours au prestataire :\n- appel d'offres et sélection : 40 000 €, engagés une seule fois ;\n- négociation et rédaction juridique du contrat : 20 000 €, engagés une seule fois ;\n- ces deux coûts ponctuels sont répartis de façon égale sur la durée du contrat ;\n- un responsable qualité dédié au suivi du prestataire : 55 000 € par an ;\n- renégociations et litiges attendus : 8 % du prix annuel du contrat.\n\nLa demande de parfums est saisonnière et les lancements de nouveaux flacons sont fréquents.",
+      "sub_questions": [
+        {
+          "id": "q1-couts-transaction",
+          "kind": "numeric",
+          "prompt": "Calculez le montant annuel des coûts de transaction liés à l'externalisation, en euros.",
+          "points": 2,
+          "expected_value": 154000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Coûts ponctuels répartis sur 4 ans : (40 000 + 20 000) ÷ 4 = 15 000 €. Suivi : 55 000 €. Renégociations et litiges : 8 % × 1 050 000 = 84 000 €. Total annuel = 15 000 + 55 000 + 84 000 = 154 000 €."
+        },
+        {
+          "id": "q2-economie",
+          "kind": "numeric",
+          "prompt": "Calculez l'économie annuelle apportée par l'externalisation, coûts de transaction compris (en euros ; négative s'il s'agit d'un surcoût).",
+          "points": 2,
+          "expected_value": 46000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Coût total de l'externalisation = 1 050 000 + 154 000 = 1 204 000 €. Économie = 1 250 000 − 1 204 000 = 46 000 € par an, soit environ 3,7 % du coût interne, contre 200 000 € (16 %) si l'on ignore les coûts de transaction."
+        },
+        {
+          "id": "q3-attribut",
+          "kind": "mcq",
+          "prompt": "Quel attribut de la transaction plaide le plus nettement pour le maintien en interne, au sens de Williamson ?",
+          "points": 2,
+          "options": [
+            "La faible fréquence des transactions",
+            "La forte spécificité des actifs (flacon breveté, moules propres à Cérès, deux prestataires seulement)",
+            "L'absence d'incertitude sur la demande",
+            "Le caractère standard de l'activité de conditionnement"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "L'option 2 est exacte : les moules et réglages dédiés et le très petit nombre de prestataires capables exposent Cérès à un risque de hold-up à la renégociation. L'option 1 est fausse : la transaction est récurrente (activité permanente), donc fréquente. L'option 3 est fausse : la demande est saisonnière et les lancements fréquents, l'incertitude est réelle. L'option 4 est fausse : la manipulation du flacon breveté n'a rien de standard."
+        },
+        {
+          "id": "q4-recommandation",
+          "kind": "open",
+          "prompt": "Formulez une recommandation argumentée à la direction.",
+          "points": 4,
+          "model_answer": "L'économie réelle (46 000 € par an, moins de 4 % du coût interne) est faible et fragile : elle repose sur des estimations de coûts de litige et de renégociation, et disparaîtrait si ces coûts dépassaient d'environ 4,4 points de prix le niveau prévu (46 000 € ÷ 1 050 000 €). Les attributs de la transaction plaident pour l'internalisation : forte spécificité des actifs (flacon breveté, moules dédiés), très petit nombre de prestataires (risque de hold-up au renouvellement), incertitude (saisonnalité, lancements fréquents) et fréquence élevée. L'activité touche en outre à un élément central de l'identité de la marque et à des savoir-faire qu'il serait coûteux de reconstituer. Recommandation : maintenir le conditionnement en interne et rechercher des gains de productivité ; à défaut, ne retenir qu'une forme hybride très encadrée (contrat long avec propriété des moules conservée par Cérès, clauses de prix, de qualité, de confidentialité et de réversibilité, double source si possible).",
+          "key_points": [
+            "Économie faible (46 000 €, environ 3,7 %) et sensible aux estimations des coûts de transaction",
+            "Spécificité des actifs et petit nombre de prestataires : risque de hold-up",
+            "Incertitude et fréquence élevées : arguments pour la hiérarchie",
+            "Activité liée à l'identité de la marque",
+            "Alternative : forme hybride encadrée (propriété des moules, clauses de réversibilité, prix, qualité)"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas montre qu'une comparaison limitée au devis du prestataire surestime l'intérêt de l'externalisation, et que la spécificité des actifs pèse sur le choix de la forme de gouvernance.",
+      "source_ref": "O. Williamson (1975, 1985), théorie des coûts de transaction ; R. Coase (1937) ; formes hybrides",
+      "verified": true,
+      "estimated_seconds": 780
+    },
+    {
+      "id": "ue3-diag-frontieres-0006",
+      "type": "flashcard",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "frontieres-organisation",
+      "difficulty": 1,
+      "tags": [
+        "formes hybrides",
+        "marché et hiérarchie"
+      ],
+      "front": "Entre le marché et la hiérarchie, quelles formes hybrides d'organisation des transactions peut-on citer ?",
+      "back": "Des formes qui combinent autonomie juridique des partenaires et coordination durable :\n- contrats de long terme et sous-traitance ;\n- franchise et concession ;\n- quasi-intégration (donneur d'ordres qui encadre étroitement ses fournisseurs) ;\n- alliances et coentreprises ;\n- réseaux d'entreprises coordonnés par une entreprise pivot.",
+      "explanation": "Chez Williamson, les formes hybrides conviennent aux transactions de spécificité intermédiaire : elles combinent incitations du marché et mécanismes de coordination et de contrôle proches de la hiérarchie.",
+      "source_ref": "O. Williamson (1975, 1985), théorie des coûts de transaction ; R. Coase (1937)",
+      "verified": true,
+      "estimated_seconds": 45
+    }
+  ]
+}

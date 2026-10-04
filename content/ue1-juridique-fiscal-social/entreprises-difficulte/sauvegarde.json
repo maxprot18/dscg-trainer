@@ -1,0 +1,178 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-difficulte-sauv-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "sauvegarde",
+      "difficulty": 1,
+      "tags": [
+        "sauvegarde",
+        "ouverture"
+      ],
+      "statement": "Parmi les situations suivantes, laquelle permet l'ouverture d'une procédure de sauvegarde ?",
+      "options": [
+        "Un fournisseur impayé demande l'ouverture d'une sauvegarde contre son client, qui ne règle plus ses factures",
+        "Le procureur de la République saisit le tribunal d'une société dont les comptes font apparaître des pertes répétées",
+        "Une société en cessation des paiements depuis trois mois demande à bénéficier d'une sauvegarde pour éviter le redressement",
+        "Une société qui honore encore ses dettes exigibles, mais justifie de difficultés qu'elle n'est pas en mesure de surmonter, en fait la demande"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "La sauvegarde est ouverte sur demande du débiteur qui, sans être en cessation des paiements, justifie de difficultés qu'il n'est pas en mesure de surmonter (C. com. art. L620-1) : option 4. Seul le débiteur peut la demander : ni un créancier (option 1) ni le ministère public (option 2). Le débiteur en cessation des paiements relève du redressement ou de la liquidation judiciaire (option 3).",
+      "source_ref": "C. com. art. L620-1",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue1-difficulte-sauv-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "sauvegarde",
+      "difficulty": 3,
+      "tags": [
+        "sauvegarde accélérée",
+        "ordonnance 2021-1193",
+        "classes de parties affectées"
+      ],
+      "statement": "Le groupe Hesperia, en conciliation depuis six semaines, a négocié un projet de plan avec ses principaux créanciers financiers ; un créancier obligataire minoritaire refuse toutefois de signer. Le président envisage une sauvegarde accélérée. Quelle affirmation est exacte, en l'état du droit issu de l'ordonnance n° 2021-1193 ?",
+      "options": [
+        "La sauvegarde accélérée est réservée aux débiteurs dépassant des seuils de 20 salariés ou de 3 M€ de chiffre d'affaires, et n'affecte que les créanciers financiers",
+        "La sauvegarde accélérée ouvre une période d'observation de six mois, renouvelable une fois, pendant laquelle les créanciers sont consultés individuellement",
+        "La sauvegarde accélérée suppose une conciliation en cours et un projet de plan susceptible de recueillir un soutien suffisamment large des parties affectées ; elle dure deux mois, prolongeables jusqu'à quatre mois",
+        "La sauvegarde accélérée peut être demandée par les créanciers financiers signataires afin d'imposer le plan au créancier récalcitrant"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Depuis l'ordonnance n° 2021-1193, la sauvegarde accélérée est ouverte au débiteur engagé dans une conciliation qui justifie d'un projet de plan susceptible de recueillir un soutien suffisamment large des parties affectées pour rendre vraisemblable son adoption dans le délai ; elle dure deux mois, prolongeables d'au plus deux mois (C. com. art. L628-1 et L628-8) : option 3. Les seuils de taille et la limitation aux créanciers financiers (option 1) relevaient du régime antérieur (sauvegarde financière accélérée, supprimée en 2021) ; le vote se fait désormais en classes de parties affectées, obligatoires dans cette procédure. La période de six mois renouvelable et la consultation individuelle (option 2) sont celles de la sauvegarde de droit commun. Seul le débiteur peut demander l'ouverture (option 4).",
+      "source_ref": "C. com. art. L628-1 et L628-8 (rédaction issue de l'ordonnance n° 2021-1193)",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue1-difficulte-sauv-0003",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "sauvegarde",
+      "difficulty": 2,
+      "tags": [
+        "plan de sauvegarde",
+        "durée"
+      ],
+      "statement": "La durée du plan de sauvegarde arrêté par le tribunal ne peut pas excéder cinq ans.",
+      "answer": false,
+      "justification": "La durée du plan est fixée par le tribunal dans la limite de dix ans (quinze ans pour un agriculteur).",
+      "explanation": "Le plan de sauvegarde (C. com. art. L626-12) peut s'étendre jusqu'à dix ans, la limite étant portée à quinze ans lorsque le débiteur est un agriculteur. En l'absence de classes, les délais uniformes de paiement que le tribunal peut imposer aux créanciers qui n'ont pas accepté les propositions s'inscrivent dans cette durée, sous réserve des délais supérieurs stipulés avant l'ouverture pour les créances à terme (art. L626-18). Il ne faut pas confondre cette durée avec celle de la période d'observation (six mois renouvelables, dix-huit mois au plus).",
+      "source_ref": "C. com. art. L626-12 et L626-18",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue1-difficulte-sauv-0004",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "sauvegarde",
+      "difficulty": 2,
+      "tags": [
+        "dividende de plan",
+        "plan de sauvegarde",
+        "calcul"
+      ],
+      "statement": "La société Orpin, fournisseur, détient sur la SAS Calade une créance admise au passif de la sauvegarde pour 84 000 €. Le plan arrêté par le tribunal prévoit le remboursement de 100 % du passif admis, sans intérêts, en dix annuités : 5 % du passif admis à la fin de chacune des deux premières années, puis le solde réparti en annuités égales sur les huit années suivantes. Quel montant la société Orpin recevra-t-elle au titre de la troisième annuité ? Réponse en euros.",
+      "expected_value": 9450,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Les deux premières annuités représentent 2 × 5 % = 10 % du passif admis. Le solde, 90 %, est réparti sur 8 annuités égales : 90 % / 8 = 11,25 % par an. Troisième annuité : 84 000 × 11,25 % = 9 450 €. Erreurs classiques hors tolérance : 84 000 / 10 = 8 400 € (annuités supposées égales) ; 84 000 × 5 % = 4 200 € (taux des deux premières années).",
+      "source_ref": "C. com. art. L626-12 (durée du plan) et L626-18 (délais de paiement)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue1-difficulte-sauv-0005",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "sauvegarde",
+      "difficulty": 3,
+      "tags": [
+        "classes de parties affectées",
+        "vote",
+        "application forcée interclasses",
+        "ordonnance 2021-1193"
+      ],
+      "title": "SA Boréale : vote des classes de parties affectées",
+      "context": "La SA Boréale (420 salariés, chiffre d'affaires de 95 M€) n'est pas en cessation des paiements mais ne peut plus faire face seule à l'échéance de sa dette bancaire. Elle a obtenu l'ouverture d'une procédure de sauvegarde. Compte tenu de sa taille, la constitution de classes de parties affectées est obligatoire.\nL'administrateur judiciaire a constitué quatre classes : les créanciers bancaires titulaires de sûretés, les créanciers obligataires chirographaires, les fournisseurs, et les actionnaires.\nLe projet de plan prévoit un rééchelonnement sur huit ans de la dette bancaire, une remise de 30 % pour les obligataires et les fournisseurs, et une augmentation de capital réservée à un investisseur, qui diluerait fortement les actionnaires actuels.\nDans chaque classe, chaque membre dispose d'un nombre de voix proportionnel au montant de sa créance.\nRésultat du vote dans la classe des fournisseurs : créances totales des membres de la classe 9 000 000 € ; créances des membres ayant exprimé un vote 6 000 000 € ; créances des membres ayant voté pour le plan 3 800 000 €.\nLes classes des créanciers bancaires et des obligataires ont approuvé le plan à la majorité requise ; celle des actionnaires l'a rejeté.",
+      "sub_questions": [
+        {
+          "id": "q1-initiative",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Qui pouvait demander l'ouverture de cette procédure de sauvegarde ?",
+          "options": [
+            "Le débiteur seul",
+            "Le débiteur ou l'un de ses créanciers bancaires",
+            "Le débiteur ou le ministère public",
+            "Le débiteur, un créancier ou le ministère public, comme en redressement judiciaire"
+          ],
+          "answer": [
+            0
+          ],
+          "multiple": false,
+          "explanation": "La sauvegarde est une procédure volontaire, ouverte sur la seule demande du débiteur (C. com. art. L620-1) : option 1. La saisine par un créancier ou le ministère public (options 2 à 4) n'existe qu'en redressement ou en liquidation judiciaire."
+        },
+        {
+          "id": "q2-vote-fournisseurs",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez le pourcentage de voix favorables au plan retenu pour apprécier la décision de la classe des fournisseurs. Réponse en pourcentage, arrondie au centième.",
+          "expected_value": 63.33,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "La classe statue à la majorité des deux tiers des voix détenues par les membres ayant exprimé un vote (C. com. art. L626-30-2). Pourcentage : 3 800 000 / 6 000 000 = 63,33 %, inférieur à 66,67 % : la classe des fournisseurs rejette le plan. L'erreur classique consiste à rapporter les voix favorables à l'ensemble de la classe : 3 800 000 / 9 000 000 = 42,22 %, hors tolérance."
+        },
+        {
+          "id": "q3-rejet",
+          "kind": "true_false",
+          "points": 2,
+          "prompt": "Deux classes ayant rejeté le plan, le tribunal ne peut en aucun cas l'arrêter : le débiteur doit présenter un nouveau projet.",
+          "answer": false,
+          "explanation": "Faux. Lorsque le plan n'est pas approuvé par toutes les classes, le tribunal peut l'imposer aux classes dissidentes (application forcée interclasses), à la demande du débiteur ou de l'administrateur avec l'accord du débiteur, si les conditions de l'article L626-32 du Code de commerce sont réunies."
+        },
+        {
+          "id": "q4-conditions",
+          "kind": "open",
+          "points": 3,
+          "prompt": "Présentez les principales conditions que le tribunal doit vérifier pour imposer le plan aux classes des fournisseurs et des actionnaires.",
+          "model_answer": "Le tribunal ne peut imposer le plan aux classes dissidentes que si plusieurs conditions cumulatives sont réunies (C. com. art. L626-32). Le plan doit satisfaire au critère du meilleur intérêt des créanciers : aucune partie affectée dissidente ne doit se trouver dans une situation moins favorable que celle qu'elle connaîtrait en cas de liquidation judiciaire, de cession ou de meilleure solution alternative. Il doit avoir été approuvé par une majorité de classes, dont au moins une classe de créanciers titulaires de sûretés ou mieux classés que les chirographaires, ou, à défaut, par au moins une classe autre que celle des détenteurs de capital qui peut raisonnablement espérer un paiement dans l'hypothèse d'une évaluation de l'entreprise en continuité d'exploitation. Ici, deux classes sur quatre (banques garanties et obligataires) ont approuvé, ce qui ne constitue pas une majorité de classes : il faut donc vérifier la condition subsidiaire, à savoir l'approbation par au moins une classe, autre que les détenteurs de capital, dont on peut raisonnablement supposer qu'elle recevrait un paiement dans une évaluation de l'entreprise en continuité d'exploitation, ce qui est vraisemblable pour la classe bancaire garantie. Enfin, la règle de priorité absolue doit être respectée : les créances d'une classe dissidente doivent être intégralement désintéressées avant qu'une classe de rang inférieur reçoive un paiement ou conserve un intérêt, des dérogations étant possibles lorsqu'elles sont nécessaires et ne portent pas une atteinte excessive aux droits des parties affectées. Pour imposer le plan aux actionnaires, des conditions supplémentaires sont prévues, tenant notamment à la taille de l'entreprise (seuils fixés par décret) et au fait que les détenteurs de capital ne pourraient raisonnablement espérer aucun paiement dans une évaluation de l'entreprise en continuité d'exploitation.",
+          "key_points": [
+            "Demande du débiteur ou de l'administrateur avec l'accord du débiteur",
+            "Critère du meilleur intérêt des créanciers (comparaison avec liquidation, cession ou meilleure solution alternative)",
+            "Approbation par une majorité de classes incluant une classe garantie ou de rang supérieur aux chirographaires, ou à défaut une classe « dans la monnaie » autre que le capital ; ici 2 classes sur 4, donc condition subsidiaire",
+            "Règle de priorité absolue, avec dérogations possibles",
+            "Conditions renforcées pour imposer le plan aux détenteurs de capital"
+          ],
+          "explanation": "C. com. art. L626-31 et L626-32 (rédaction issue de l'ordonnance n° 2021-1193). Le mécanisme transpose la directive (UE) 2019/1023 ; ses conditions sont précises et le cas reste au niveau des principes."
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas porte sur la logique des classes de parties affectées introduite par l'ordonnance n° 2021-1193 : vote à la majorité des deux tiers des voix exprimées dans chaque classe, puis, en cas de rejet, possible application forcée interclasses sous conditions strictes.",
+      "source_ref": "C. com. art. L620-1, L626-29, L626-30-2, L626-31 et L626-32",
+      "verified": true,
+      "estimated_seconds": 780
+    }
+  ]
+}

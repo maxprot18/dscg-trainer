@@ -15,6 +15,72 @@
       "source_ref": "IAS 32 §35 (distributions recognised directly in equity) ; IAS 1 §106-107 (statement of changes in equity) — règlement UE 2023/1803",
       "verified": true,
       "estimated_seconds": 60
+    },
+    {
+      "id": "ue6-rapports-arstruct-0002",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "rapports-annuels",
+      "notion": "annual-report-structure",
+      "difficulty": 2,
+      "tags": [
+        "Form 10-K",
+        "MD&A",
+        "US reporting"
+      ],
+      "statement": "You are analysing the Form 10-K of a US listed company and want to find management's own explanation of why the operating margin fell compared with the previous year. Which part of the 10-K should you read first?",
+      "options": [
+        "Item 1A, Risk Factors",
+        "Item 7, Management's Discussion and Analysis of Financial Condition and Results of Operations",
+        "Item 8, Financial Statements and Supplementary Data",
+        "Item 1, Business"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Option 2 is correct: the MD&A (Item 7) is where management discusses results of operations, liquidity and capital resources, and explains changes from one year to the next. Option 1 is wrong: Item 1A lists the risks that could affect the company in the future; it does not analyse past results. Option 3 is wrong: Item 8 contains the audited financial statements and notes, which show the figures but not management's narrative explanation. Option 4 is wrong: Item 1 describes the company's activities, products, markets and competition.",
+      "source_ref": "SEC Form 10-K, Part II, Item 7 ; Regulation S-K, Item 303 (MD&A)",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue6-rapports-arstruct-0003",
+      "type": "true_false",
+      "ue": "UE6",
+      "theme": "rapports-annuels",
+      "notion": "annual-report-structure",
+      "difficulty": 1,
+      "tags": [
+        "group accounts",
+        "company accounts",
+        "consolidation"
+      ],
+      "statement": "In an annual report, the \"group accounts\" (consolidated financial statements) present the parent and its subsidiaries as a single economic entity, whereas the \"company accounts\" present the parent company on its own.",
+      "answer": true,
+      "justification": "True: consolidated statements combine the parent and its subsidiaries as a single economic entity; the parent company's own (separate) accounts show it as an individual company, with its subsidiaries as investments.",
+      "explanation": "IFRS 10 defines consolidated financial statements as those of a group in which the assets, liabilities, equity, income, expenses and cash flows of the parent and its subsidiaries are presented as those of a single economic entity. UK annual reports usually show the consolidated statements first, then the \"company balance sheet\" and notes of the parent (comptes sociaux), in which subsidiaries appear as investments (titres de participation). In France, listed groups publish consolidated accounts under IFRS and the parent's comptes annuels under French GAAP.",
+      "source_ref": "IFRS 10, Appendix A (definition of consolidated financial statements) ; IAS 27 (separate financial statements) — règlement UE 2023/1803",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue6-rapports-arstruct-0004",
+      "type": "flashcard",
+      "ue": "UE6",
+      "theme": "rapports-annuels",
+      "notion": "annual-report-structure",
+      "difficulty": 1,
+      "tags": [
+        "restated",
+        "comparatives",
+        "IAS 8"
+      ],
+      "front": "An income statement shows the column heading \"2024 (restated)\" next to the 2025 figures. What does \"restated\" mean?",
+      "back": "The comparative (prior-year) figures have been changed since they were first published, so that they are comparable with the current year.\nTypical causes: a change in accounting policy applied retrospectively or the correction of a prior-period error (IAS 8).\nFrench: \"retraité\".",
+      "explanation": "IAS 8 requires a change in accounting policy to be applied retrospectively (§22) and material prior-period errors to be corrected by restating the comparatives (§42). When an operation is classified as discontinued, IFRS 5 speaks of comparatives being \"re-presented\". A restatement note always explains the differences with the figures originally reported.",
+      "source_ref": "IAS 8 §22 (retrospective application) and §42 (correction of prior-period errors) ; IFRS 5 §34 — règlement UE 2023/1803",
+      "verified": true,
+      "estimated_seconds": 40
     }
   ]
 }

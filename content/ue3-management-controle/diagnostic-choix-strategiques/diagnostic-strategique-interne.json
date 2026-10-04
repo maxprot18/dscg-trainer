@@ -1,0 +1,198 @@
+{
+  "exercises": [
+    {
+      "id": "ue3-diag-interne-0001",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "diagnostic-strategique-interne",
+      "difficulty": 1,
+      "tags": [
+        "chaîne de valeur",
+        "activités de soutien"
+      ],
+      "statement": "Dans la chaîne de valeur de Porter, laquelle de ces activités est une activité de soutien ?",
+      "options": [
+        "Les approvisionnements (fonction achats)",
+        "La logistique interne (réception et stockage des intrants)",
+        "Les services après-vente",
+        "La commercialisation et la vente"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "L'option 1 est exacte : dans la chaîne de valeur de Porter, les approvisionnements (la fonction achats, qui acquiert les intrants pour toutes les activités) font partie des activités de soutien, avec l'infrastructure, la gestion des ressources humaines et le développement technologique. L'option 2 est fausse : la logistique interne (réception, stockage, manutention des intrants) est une activité principale ; ne pas la confondre avec la fonction achats. Les options 3 et 4 sont fausses : les services (après-vente, installation) et la commercialisation-vente sont des activités principales.",
+      "source_ref": "M. Porter, Competitive Advantage (1985), chaîne de valeur",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue3-diag-interne-0002",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "diagnostic-strategique-interne",
+      "difficulty": 2,
+      "tags": [
+        "VRIO",
+        "avantage concurrentiel",
+        "ressources"
+      ],
+      "statement": "Selon la grille VRIO, une ressource valorisable et rare, mais qu'un concurrent peut reproduire rapidement et à faible coût, procure :",
+      "options": [
+        "un avantage concurrentiel durable",
+        "un avantage concurrentiel temporaire",
+        "une parité concurrentielle",
+        "un désavantage concurrentiel"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'option 2 est exacte : selon la grille VRIO, une ressource valorisable et rare procure un avantage, mais s'il est facile de l'imiter cet avantage ne dure que le temps que les concurrents la reproduisent. L'option 1 est fausse : l'avantage durable suppose en plus que la ressource soit difficilement imitable (et exploitée par l'organisation). L'option 3 est fausse : la parité concurrentielle correspond à une ressource valorisable mais non rare, que tous les concurrents possèdent. L'option 4 est fausse : une ressource valorisable ne crée pas de désavantage ; le désavantage vient de l'absence d'une ressource que les concurrents détiennent, ou d'une ressource sans valeur.",
+      "source_ref": "J. Barney (1991), approche par les ressources ; grille VRIO",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue3-diag-interne-0003",
+      "type": "true_false",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "diagnostic-strategique-interne",
+      "difficulty": 2,
+      "tags": [
+        "approche par les ressources",
+        "avantage concurrentiel durable"
+      ],
+      "statement": "Selon l'approche par les ressources, une ressource que tous les concurrents peuvent acheter sur le marché aux mêmes conditions peut, à elle seule, fonder un avantage concurrentiel durable.",
+      "answer": false,
+      "justification": "Faux : une ressource accessible à tous n'est pas rare ; elle procure au mieux une parité concurrentielle.",
+      "explanation": "L'approche par les ressources repose sur l'hétérogénéité et l'imparfaite mobilité des ressources entre entreprises. Une ressource standard, achetable sur le marché par n'importe quel concurrent (un logiciel du commerce, une machine de série), n'est pas rare : elle procure au mieux une parité concurrentielle. L'avantage durable vient de ressources rares et difficiles à imiter (histoire spécifique, ambiguïté causale, complexité sociale) ou de la manière, propre à l'entreprise, de les combiner.",
+      "source_ref": "J. Barney (1991), approche par les ressources ; grille VRIO",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue3-diag-interne-0004",
+      "type": "numeric",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "diagnostic-strategique-interne",
+      "difficulty": 2,
+      "tags": [
+        "effet d'expérience",
+        "loi de Henderson"
+      ],
+      "statement": "Le coût unitaire d'un module électronique s'élevait à 120 € lorsque la production cumulée atteignait 5 000 unités. L'entreprise observe un taux d'expérience de 85 % (le coût unitaire baisse de 15 % à chaque doublement de la production cumulée). Calculez le coût unitaire attendu lorsque la production cumulée atteindra 40 000 unités, en euros, arrondi au centime.",
+      "expected_value": 73.7,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "€",
+      "decimals": 2,
+      "explanation": "La production cumulée passe de 5 000 à 40 000 unités : 40 000 ÷ 5 000 = 8 = 2³, soit 3 doublements. Avec un taux d'expérience de 85 %, chaque doublement multiplie le coût par 0,85 : C = 120 × 0,85³ = 120 × 0,614125 = 73,695 ≈ 73,70 €. Erreur classique : retrancher 15 % du coût initial à chaque doublement (120 × (1 − 3 × 0,15) = 66 €) ; les baisses se composent.",
+      "source_ref": "B. Henderson (Boston Consulting Group), effet d'expérience",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue3-diag-interne-0005",
+      "type": "numeric",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "diagnostic-strategique-interne",
+      "difficulty": 2,
+      "tags": [
+        "chaîne de valeur",
+        "marge",
+        "coût des activités"
+      ],
+      "statement": "Un fabricant de trottinettes vend son modèle principal 250 € HT. Le coût unitaire de ses activités se décompose ainsi : logistique interne 30 € ; production 95 € ; logistique externe 20 € ; commercialisation et vente 35 € ; services 15 € ; activités de soutien 25 €. La direction veut porter la marge à 20 % du prix de vente, à prix inchangé, en agissant uniquement sur l'activité de production. Calculez la baisse nécessaire du coût de l'activité de production, en % de son coût actuel, arrondie à deux décimales.",
+      "expected_value": 21.05,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "decimals": 2,
+      "explanation": "Coût total des activités = 30 + 95 + 20 + 35 + 15 + 25 = 220 €. Marge actuelle = 250 − 220 = 30 €, soit 12 % du prix. Marge visée = 20 % × 250 = 50 € : il faut réduire les coûts de 20 €. Toute la baisse portant sur la production : 20 ÷ 95 ≈ 0,2105, soit une réduction de 21,05 % du coût de cette activité. Erreurs classiques : rapporter 20 € au coût total (9,09 %) ou retenir l'écart de taux de marge (8 points).",
+      "source_ref": "M. Porter, Competitive Advantage (1985), chaîne de valeur",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue3-diag-interne-0006",
+      "type": "case_study",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "diagnostic-strategique-interne",
+      "difficulty": 3,
+      "tags": [
+        "VRIO",
+        "chaîne de valeur",
+        "compétences fondamentales"
+      ],
+      "title": "Fromagerie des Aravis : diagnostic interne",
+      "context": "La Fromagerie des Aravis produit et affine un fromage sous appellation d'origine protégée (AOP), comme une vingtaine d'autres fromageries de la zone. Elle vend 60 % de sa production à la grande distribution et 40 % à des crémiers et restaurants étoilés.\n\nRessources identifiées :\n- l'appellation AOP, dont bénéficient tous les producteurs respectant le cahier des charges ;\n- des caves d'affinage naturelles creusées dans la roche il y a plus d'un siècle, à hygrométrie constante, qu'aucun concurrent ne possède ;\n- un maître affineur et son équipe, qui ont développé en quarante ans des profils d'affinage longs, très recherchés par les chefs, et dont le savoir-faire est peu formalisé ;\n- une ligne de conditionnement automatisée récente, achetée auprès d'un équipementier qui la vend à toute la profession.\n\nCoût moyen par kilo vendu (prix de vente moyen : 24,00 €/kg) : collecte et réception du lait 7,20 € ; fabrication 4,80 € ; affinage 3,60 € ; logistique externe 1,50 € ; commercialisation 2,10 € ; activités de soutien 2,40 €.\n\nLes fromages à affinage long se vendent en moyenne 38 €/kg aux restaurants, pour un coût d'affinage supérieur de 4 €/kg à la moyenne.",
+      "sub_questions": [
+        {
+          "id": "q1-marge",
+          "kind": "numeric",
+          "prompt": "Calculez le taux de marge moyen de la fromagerie, en % du prix de vente, arrondi à une décimale.",
+          "points": 2,
+          "expected_value": 10,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "Coût total = 7,20 + 4,80 + 3,60 + 1,50 + 2,10 + 2,40 = 21,60 €/kg. Marge = 24,00 − 21,60 = 2,40 €/kg, soit 2,40 ÷ 24,00 = 10,0 % du prix."
+        },
+        {
+          "id": "q2-vrio",
+          "kind": "mcq",
+          "prompt": "Quelle ressource peut fonder un avantage concurrentiel durable selon la grille VRIO ?",
+          "points": 2,
+          "options": [
+            "L'appellation AOP",
+            "La ligne de conditionnement automatisée",
+            "Les caves naturelles associées au savoir-faire du maître affineur",
+            "Le référencement en grande distribution"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "L'option 3 est exacte : les caves sont rares (aucun concurrent n'en possède) et inimitables (histoire spécifique) ; le savoir-faire tacite, construit en quarante ans, est difficile à imiter (ambiguïté causale, complexité sociale) et il est valorisé par les chefs. L'option 1 est fausse : l'AOP est valorisable, mais partagée par une vingtaine de producteurs ; elle n'est pas rare (parité). L'option 2 est fausse : la ligne est achetable par toute la profession, donc ni rare ni inimitable. L'option 4 est fausse : le référencement n'est pas présenté comme exclusif et l'énoncé ne montre aucune rareté ; c'est en outre un débouché plus qu'une ressource distinctive."
+        },
+        {
+          "id": "q3-soutien",
+          "kind": "true_false",
+          "prompt": "Les activités de soutien (2,40 €/kg) devraient être exclues de l'analyse de la chaîne de valeur, car elles ne contribuent pas à la valeur perçue par les clients.",
+          "points": 2,
+          "answer": false,
+          "explanation": "Faux : chez Porter, les activités de soutien font partie de la chaîne de valeur ; elles irriguent les activités principales (la gestion des ressources humaines, par exemple, conditionne la transmission du savoir-faire de l'affineur)."
+        },
+        {
+          "id": "q4-recommandation",
+          "kind": "open",
+          "prompt": "Identifiez la compétence distinctive de la fromagerie et dites comment la valoriser, en vous appuyant sur les données de marge.",
+          "points": 4,
+          "model_answer": "La compétence distinctive est l'affinage long, qui combine une ressource physique unique (les caves) et un savoir-faire tacite (l'équipe du maître affineur). Elle répond aux critères VRIO : valorisée par les clients exigeants, rare, difficilement imitable. Sur le segment des restaurants, le prix moyen est de 38 €/kg pour un surcoût d'affinage de 4 €/kg : le coût passe d'environ 21,60 € à 25,60 €/kg et la marge à environ 12,40 €/kg, contre 2,40 € en moyenne. La fromagerie a donc intérêt à développer l'affinage long et les ventes aux crémiers et restaurants (différenciation), plutôt que la grande distribution où l'AOP seule ne la distingue pas. Conditions : organiser l'exploitation de la ressource (le O de VRIO), en formalisant et transmettant le savoir-faire (risque de départ du maître affineur), vérifier la capacité des caves et la taille du segment.",
+          "key_points": [
+            "Compétence distinctive : affinage long (caves + savoir-faire tacite), conforme aux critères VRIO",
+            "Marge sur le segment restaurants : environ 12,40 €/kg contre 2,40 €/kg en moyenne",
+            "Orientation vers la différenciation et les clients exigeants",
+            "Risque : savoir-faire concentré sur une personne, à formaliser et transmettre ; capacité des caves"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas articule les deux outils du diagnostic interne : la chaîne de valeur (où se crée la marge) et la grille VRIO (quelles ressources fondent un avantage durable).",
+      "source_ref": "M. Porter, Competitive Advantage (1985), chaîne de valeur ; J. Barney (1991), approche par les ressources ; grille VRIO ; G. Hamel et C.K. Prahalad (1990), compétences fondamentales",
+      "verified": true,
+      "estimated_seconds": 720
+    }
+  ]
+}

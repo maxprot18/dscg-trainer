@@ -1,0 +1,192 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-ethique-anticor-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "anticorruption-vigilance-rse",
+      "difficulty": 2,
+      "tags": [
+        "Sapin 2",
+        "seuils",
+        "programme anticorruption"
+      ],
+      "statement": "On retient les seuils de l'article 17 de la loi Sapin 2 : au moins 500 salariés (ou appartenance à un groupe dont la société mère a son siège en France et dont l'effectif atteint 500 salariés) et chiffre d'affaires, ou chiffre d'affaires consolidé, supérieur à 100 M€. Laquelle de ces sociétés, chacune indépendante de tout groupe, est tenue de mettre en œuvre un programme de prévention de la corruption ?",
+      "options": [
+        "Une SA de 450 salariés réalisant un chiffre d'affaires de 300 M€",
+        "Une SAS de 800 salariés réalisant un chiffre d'affaires de 80 M€",
+        "Une SARL de 120 salariés réalisant un chiffre d'affaires de 150 M€",
+        "Une SA de 650 salariés réalisant un chiffre d'affaires de 120 M€"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Les deux conditions d'effectif et de chiffre d'affaires sont cumulatives (loi n° 2016-1691, art. 17, I). Seule la SA de 650 salariés et 120 M€ de chiffre d'affaires les remplit (option 4). La SA de l'option 1 et la SARL de l'option 3 ont moins de 500 salariés malgré un chiffre d'affaires élevé ; la SAS de l'option 2 a l'effectif requis mais un chiffre d'affaires inférieur à 100 M€. Même non assujetties, ces sociétés restent exposées au risque pénal de corruption et peuvent adopter volontairement un dispositif de conformité.",
+      "source_ref": "Loi n° 2016-1691 du 9 déc. 2016, art. 17, I",
+      "estimated_seconds": 60,
+      "verified": true
+    },
+    {
+      "id": "ue1-ethique-anticor-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "anticorruption-vigilance-rse",
+      "difficulty": 2,
+      "tags": [
+        "lanceur d'alerte",
+        "loi 2022-401",
+        "signalement externe"
+      ],
+      "statement": "Mme Perrin, contrôleuse de gestion dans une société de 300 salariés, découvre des versements suspects à un intermédiaire étranger, laissant présumer une corruption. Elle n'en tire aucun avantage financier et agit de bonne foi. Selon le régime des lanceurs d'alerte issu de la loi n° 2022-401, quelle affirmation est exacte ?",
+      "options": [
+        "Elle doit obligatoirement utiliser d'abord la procédure interne de signalement de la société avant de saisir une autorité",
+        "Elle peut adresser directement un signalement externe à l'autorité compétente, sans signalement interne préalable",
+        "Elle ne bénéficie de la protection que si elle divulgue publiquement les faits",
+        "Elle perd la protection si elle a eu connaissance des faits dans le cadre de ses fonctions"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "Depuis la loi du 21 mars 2022, le lanceur d'alerte choisit librement entre le signalement interne et le signalement externe auprès d'une autorité compétente (option 2) : la hiérarchie des canaux imposée en 2016 a été supprimée (option 1). La divulgation publique n'est qu'une voie subsidiaire, ouverte sous conditions (option 3). Les informations obtenues dans le cadre de l'activité professionnelle sont précisément couvertes, le lanceur d'alerte n'étant pas tenu d'en avoir eu personnellement connaissance dans ce cas (option 4).",
+      "source_ref": "Loi n° 2016-1691, art. 6 et 8, mod. par la loi n° 2022-401 du 21 mars 2022",
+      "estimated_seconds": 75,
+      "verified": true
+    },
+    {
+      "id": "ue1-ethique-anticor-0003",
+      "type": "flashcard",
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "anticorruption-vigilance-rse",
+      "difficulty": 1,
+      "tags": [
+        "Sapin 2",
+        "programme de conformité"
+      ],
+      "front": "Quelles sont les huit mesures du programme anticorruption imposé par l'article 17 de la loi Sapin 2 ?",
+      "back": "1. Code de conduite. 2. Dispositif d'alerte interne. 3. Cartographie des risques.\n4. Procédures d'évaluation des clients, fournisseurs de premier rang et intermédiaires.\n5. Procédures de contrôles comptables. 6. Formation des cadres et personnels les plus exposés.\n7. Régime disciplinaire. 8. Dispositif de contrôle et d'évaluation interne des mesures.",
+      "explanation": "Loi n° 2016-1691, art. 17, II. Le respect de ces mesures est contrôlé par l'Agence française anticorruption, dont la commission des sanctions peut prononcer une injonction et une sanction pécuniaire (jusqu'à 1 M€ pour une personne morale).",
+      "source_ref": "Loi n° 2016-1691 du 9 déc. 2016, art. 17, II",
+      "estimated_seconds": 60,
+      "verified": true
+    },
+    {
+      "id": "ue1-ethique-anticor-0004",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "anticorruption-vigilance-rse",
+      "difficulty": 2,
+      "tags": [
+        "CJIP",
+        "amende d'intérêt public",
+        "écriture"
+      ],
+      "statement": "Le 15 octobre N, la SA Vectis, mise en cause pour des faits de corruption d'agent public étranger, conclut avec le procureur de la République une convention judiciaire d'intérêt public, validée par le président du tribunal. Elle prévoit le versement au Trésor public d'une amende d'intérêt public de 380 000 € et l'indemnisation d'une victime identifiée à hauteur de 45 000 €. Les deux sommes sont payées par virement le jour même ; aucune provision n'avait été constituée. Comptabilisez ces versements en utilisant le compte 6712 « Pénalités, amendes fiscales et pénales » pour l'amende et le compte 6788 « Charges exceptionnelles diverses » pour l'indemnisation.",
+      "date": "15/10/N",
+      "entries": [
+        {
+          "account": "6712",
+          "label": "Amende d'intérêt public (CJIP)",
+          "debit": 380000,
+          "credit": 0
+        },
+        {
+          "account": "6788",
+          "label": "Indemnisation de la victime (CJIP)",
+          "debit": 45000,
+          "credit": 0
+        },
+        {
+          "account": "512",
+          "label": "Banque",
+          "debit": 0,
+          "credit": 425000
+        }
+      ],
+      "explanation": "La CJIP (CPP art. 41-1-2) n'emporte pas déclaration de culpabilité, mais elle impose le versement d'une amende d'intérêt public et, le cas échéant, la réparation du préjudice de la victime. L'amende est enregistrée au compte 6712 et l'indemnisation au compte 6788, comme l'impose l'énoncé (ces comptes relèvent de la nomenclature antérieure au règlement ANC 2022-06, applicable aux exercices ouverts depuis le 1er janvier 2025, qui a remanié les comptes 67 et 77) ; total décaissé : 380 000 + 45 000 = 425 000 €. Fiscalement, l'amende relève des sanctions pécuniaires non déductibles du résultat (CGI art. 39, 2) et doit être réintégrée extra-comptablement.",
+      "source_ref": "CPP art. 41-1-2 ; comptes 6712 et 6788 imposés par l'énoncé ; CGI art. 39, 2",
+      "estimated_seconds": 150,
+      "verified": true
+    },
+    {
+      "id": "ue1-ethique-anticor-0005",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "anticorruption-vigilance-rse",
+      "difficulty": 3,
+      "tags": [
+        "Sapin 2",
+        "devoir de vigilance",
+        "CJIP",
+        "lanceur d'alerte"
+      ],
+      "title": "Groupe Nordal : cartographie des obligations de conformité",
+      "context": "Nordal SA, société mère d'un groupe industriel dont le siège est à Lille, contrôle trois filiales françaises et deux filiales au Vietnam. Données à la clôture des deux derniers exercices :\n- effectif de Nordal SA : 420 salariés ; effectif des filiales françaises : 780 salariés ; effectif des filiales vietnamiennes : 2 600 salariés ;\n- chiffre d'affaires consolidé : 240 M€ (N−2), 255 M€ (N−1) et 270 M€ (N).\nLa direction n'a mis en place ni programme de prévention de la corruption, ni plan de vigilance.\nEn N, un salarié d'une filiale française signale à l'Agence française anticorruption, sans en avoir informé sa hiérarchie, des commissions occultes versées à un intermédiaire pour obtenir un marché public à l'étranger. Le parquet national financier ouvre une enquête et envisage de proposer à Nordal une convention judiciaire d'intérêt public (CJIP). Le dirigeant envisage de licencier le salarié pour « déloyauté ».\nOn retient les seuils suivants : Sapin 2 (art. 17) : au moins 500 salariés au niveau du groupe dont la mère a son siège en France et chiffre d'affaires consolidé supérieur à 100 M€ ; devoir de vigilance : au moins 5 000 salariés (société et filiales françaises) ou au moins 10 000 salariés (société et filiales françaises et étrangères).",
+      "sub_questions": [
+        {
+          "id": "q1-sapin",
+          "kind": "mcq",
+          "prompt": "Le groupe Nordal est-il soumis à l'obligation de prévention de la corruption de l'article 17 de la loi Sapin 2 ?",
+          "points": 2,
+          "options": [
+            "Non, car Nordal SA emploie moins de 500 salariés",
+            "Oui, car l'effectif du groupe dont la mère a son siège en France atteint 500 salariés et le chiffre d'affaires consolidé dépasse 100 M€",
+            "Non, car seules les sociétés cotées sont visées",
+            "Oui, mais uniquement pour les filiales vietnamiennes, exposées aux marchés publics étrangers"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "L'article 17 vise aussi les sociétés appartenant à un groupe dont la mère a son siège en France et dont l'effectif atteint 500 salariés, avec un chiffre d'affaires consolidé supérieur à 100 M€ : 420 + 780 + 2 600 = 3 800 salariés et 270 M€ (option 2). L'effectif de la seule mère (option 1) n'est pas déterminant ; la cotation est sans incidence (option 3) ; le programme couvre l'ensemble du groupe (option 4)."
+        },
+        {
+          "id": "q2-vigilance",
+          "kind": "true_false",
+          "prompt": "Nordal SA est soumise à l'obligation d'établir un plan de vigilance.",
+          "points": 1,
+          "answer": false,
+          "explanation": "Faux. Société et filiales françaises : 420 + 780 = 1 200 salariés, sous le seuil de 5 000 ; avec les filiales étrangères : 3 800 salariés, sous le seuil de 10 000 (C. com. L225-102-4)."
+        },
+        {
+          "id": "q3-cjip",
+          "kind": "numeric",
+          "prompt": "Calculez le plafond de l'amende d'intérêt public que pourrait prévoir la CJIP, en retenant 30 % du chiffre d'affaires moyen annuel calculé sur les trois derniers chiffres d'affaires annuels connus (on retient les chiffres d'affaires consolidés). Réponse en millions d'euros, arrondie au dixième.",
+          "points": 3,
+          "expected_value": 76.5,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "M€",
+          "decimals": 1,
+          "explanation": "Chiffre d'affaires moyen : (240 + 255 + 270) / 3 = 255 M€. Plafond : 30 % × 255 = 76,5 M€ (CPP art. 41-1-2). Erreur classique : appliquer 30 % au dernier chiffre d'affaires (81 M€). Dans la limite de ce plafond, l'amende est fixée de manière proportionnée aux avantages tirés des manquements."
+        },
+        {
+          "id": "q4-alerte",
+          "kind": "open",
+          "prompt": "Le salarié bénéficie-t-il de la protection des lanceurs d'alerte ? Le licenciement envisagé est-il possible ?",
+          "points": 4,
+          "model_answer": "Le salarié est une personne physique qui signale, sans contrepartie financière directe et de bonne foi, des informations sur un délit (corruption d'agent public étranger) dont il a eu connaissance dans le cadre de ses activités professionnelles : il répond à la définition du lanceur d'alerte (loi n° 2016-1691, art. 6, mod. loi n° 2022-401). Depuis 2022, il peut choisir directement le signalement externe auprès d'une autorité compétente, comme l'AFA, sans passer par la voie interne : l'absence d'information de la hiérarchie ne lui fait pas perdre sa protection. Toute mesure de représailles, notamment un licenciement fondé sur le signalement, est nulle (C. trav. L1121-2, L1132-3-3 et L1132-4) ; le salarié pourrait demander sa réintégration. Le dirigeant s'exposerait en outre à des sanctions civiles et pénales (entrave au signalement). Le licenciement pour « déloyauté » est donc à proscrire.",
+          "key_points": [
+            "Définition du lanceur d'alerte : personne physique, sans contrepartie financière directe, de bonne foi",
+            "Libre choix du signalement externe depuis la loi 2022-401",
+            "Nullité des mesures de représailles, dont le licenciement",
+            "Risque de sanctions pour le dirigeant en cas d'entrave"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas confronte un groupe de taille intermédiaire aux seuils des différents dispositifs de conformité : assujetti à Sapin 2 (appréciation au niveau du groupe), non assujetti au devoir de vigilance, exposé à une CJIP plafonnée à 30 % du chiffre d'affaires moyen, et tenu de respecter la protection des lanceurs d'alerte.",
+      "source_ref": "Loi n° 2016-1691, art. 6 à 8 et 17 (mod. loi n° 2022-401) ; CPP art. 41-1-2 ; C. com. L225-102-4",
+      "estimated_seconds": 780,
+      "verified": true
+    }
+  ]
+}

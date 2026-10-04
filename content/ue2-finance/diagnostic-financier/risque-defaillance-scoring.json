@@ -1,0 +1,169 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-diag-scoring-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "risque-defaillance-scoring",
+      "difficulty": 2,
+      "tags": [
+        "scoring",
+        "analyse discriminante",
+        "limites"
+      ],
+      "source_ref": "Méthode des scores par analyse discriminante (Altman, 1968)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Quelle est la principale limite d'une fonction de score construite par analyse discriminante ?",
+      "options": [
+        "Elle ne repose sur aucun ratio comptable",
+        "Ses pondérations et ses seuils dépendent de l'échantillon, du secteur et de la période ayant servi à l'estimer",
+        "Elle ne peut être calculée qu'à partir de comptes établis en IFRS",
+        "Elle mesure la rentabilité de l’entreprise et non son risque"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "Les coefficients sont estimés sur un échantillon d'entreprises saines et défaillantes d'un secteur et d'une époque donnés : appliqués à une autre population, ils perdent leur pouvoir prédictif (option 2). Un score repose au contraire sur des ratios comptables (option 1), se calcule à partir de comptes individuels comme consolidés (option 3) et a précisément pour objet de mesurer le risque de défaillance (option 4)."
+    },
+    {
+      "id": "ue2-diag-scoring-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "risque-defaillance-scoring",
+      "difficulty": 2,
+      "tags": [
+        "cessation des paiements",
+        "procédures collectives"
+      ],
+      "source_ref": "C. com. art. L. 631-1",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Au sens du Code de commerce, une entreprise est en cessation des paiements lorsque :",
+      "options": [
+        "ses capitaux propres deviennent inférieurs à la moitié de son capital social",
+        "elle a subi des pertes pendant trois exercices consécutifs",
+        "elle est dans l’impossibilité de faire face à son passif exigible avec son actif disponible",
+        "sa trésorerie nette est négative à la clôture"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "L. 631-1 définit la cessation des paiements comme l'impossibilité de faire face au passif exigible avec l'actif disponible (option 3) ; elle ouvre la voie au redressement ou à la liquidation judiciaire. Des capitaux propres inférieurs à la moitié du capital (option 1) imposent une décision de l'assemblée sur la dissolution anticipée (L. 225-248 pour les SA), sans constituer une cessation des paiements. Des pertes répétées (option 2) sont un signal d'alerte, pas un critère légal. Une trésorerie nette négative (option 4) peut être couverte par des concours bancaires accordés : l'entreprise paie alors ses dettes exigibles."
+    },
+    {
+      "id": "ue2-diag-scoring-0003",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "risque-defaillance-scoring",
+      "difficulty": 1,
+      "tags": [
+        "Z-score",
+        "Altman"
+      ],
+      "source_ref": "Altman (1968), Z-score des sociétés industrielles cotées",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Avec le Z-score d'Altman (1968), une société industrielle cotée dont le score est inférieur à 1,81 se situe dans la zone de défaillance probable.",
+      "answer": true,
+      "justification": "Vrai : sous 1,81 zone de défaillance, entre 1,81 et 2,99 zone d’incertitude, au-dessus de 2,99 zone saine.",
+      "explanation": "Le Z-score combine cinq ratios (fonds de roulement, bénéfices non distribués cumulés, résultat avant intérêts et impôt et CA rapportés au total actif ; capitalisation boursière rapportée aux dettes). Les seuils de 1,81 et 2,99 ont été établis sur un échantillon de sociétés industrielles américaines cotées : ils ne se transposent pas tels quels à une PME française non cotée."
+    },
+    {
+      "id": "ue2-diag-scoring-0004",
+      "type": "flashcard",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "risque-defaillance-scoring",
+      "difficulty": 1,
+      "tags": [
+        "signaux d’alerte",
+        "défaillance"
+      ],
+      "source_ref": "C. com. art. L. 631-1 et L. 234-1",
+      "verified": true,
+      "estimated_seconds": 30,
+      "front": "Citez les principaux signaux financiers annonciateurs d'une défaillance.",
+      "back": "Érosion durable du taux de marge (effet ciseau) et CAF insuffisante pour couvrir les remboursements.\nTrésorerie nette négative et croissante, recours croissant aux concours bancaires.\nAllongement des délais de paiement des fournisseurs et dettes fiscales et sociales en retard.\nEndettement net / EBITDA élevé, bris de covenants, capitaux propres négatifs.",
+      "explanation": "Ces signaux précèdent la cessation des paiements (L. 631-1). Le commissaire aux comptes qui relève des faits de nature à compromettre la continuité de l'exploitation déclenche la procédure d'alerte (L. 234-1)."
+    },
+    {
+      "id": "ue2-diag-scoring-0005",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "risque-defaillance-scoring",
+      "difficulty": 2,
+      "tags": [
+        "Z-score",
+        "Altman",
+        "diagnostic"
+      ],
+      "source_ref": "Altman (1968), Z-score : Z = 1,2 X1 + 1,4 X2 + 3,3 X3 + 0,6 X4 + 1,0 X5",
+      "verified": true,
+      "estimated_seconds": 600,
+      "title": "Société Brévan : score d’Altman et ses limites",
+      "context": "La société Brévan, fabricant coté de composants métalliques, présente au 31 décembre N les données suivantes (en k€) :\n- total actif : 50 000 ;\n- actifs courants − passifs courants : 4 000 ;\n- bénéfices non distribués cumulés (réserves) : 6 000 ;\n- résultat avant intérêts et impôt : 3 000 ;\n- capitalisation boursière : 15 000 ;\n- total des dettes : 30 000 ;\n- chiffre d'affaires : 60 000.\n\nOn utilise le Z-score d'Altman : Z = 1,2 X1 + 1,4 X2 + 3,3 X3 + 0,6 X4 + 1,0 X5, avec X1 = (actifs courants − passifs courants) / total actif, X2 = bénéfices non distribués cumulés / total actif, X3 = résultat avant intérêts et impôt / total actif, X4 = capitalisation boursière / total des dettes, X5 = CA / total actif. Seuils : Z < 1,81 zone de défaillance probable ; 1,81 ≤ Z ≤ 2,99 zone d'incertitude ; Z > 2,99 zone saine.\n\nUn banquier envisage d'appliquer la même grille à une PME non cotée du secteur des services.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "Calculez le Z-score de Brévan, arrondi à deux décimales.",
+          "points": 3,
+          "expected_value": 1.96,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.01
+          },
+          "decimals": 2,
+          "explanation": "X1 = 0,08 ; X2 = 0,12 ; X3 = 0,06 ; X4 = 0,5 ; X5 = 1,2. Z = 0,096 + 0,168 + 0,198 + 0,300 + 1,200 = 1,962, soit 1,96."
+        },
+        {
+          "id": "q2",
+          "kind": "mcq",
+          "prompt": "Dans quelle zone se situe Brévan ?",
+          "points": 2,
+          "options": [
+            "Zone de défaillance probable",
+            "Zone d'incertitude",
+            "Zone saine",
+            "Impossible à dire sans le taux d’endettement"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "1,81 ≤ 1,96 ≤ 2,99 : zone d'incertitude (option 2), proche du seuil bas. Le score se suffit à lui-même pour le classement ; l'endettement est déjà pris en compte par X4."
+        },
+        {
+          "id": "q3",
+          "kind": "true_false",
+          "prompt": "Vrai ou faux : toutes choses égales par ailleurs, une baisse du cours de bourse de Brévan dégrade son score.",
+          "points": 1,
+          "answer": true,
+          "explanation": "Vrai : la capitalisation boursière entre au numérateur de X4, pondéré positivement (0,6)."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "prompt": "Le banquier peut-il appliquer cette grille à la PME de services ? Quelles autres approches lui conseillez-vous ?",
+          "points": 4,
+          "model_answer": "Non sans précaution. Le Z-score a été estimé sur des sociétés industrielles américaines cotées des années 1960 : X4 suppose une capitalisation boursière qui n'existe pas pour une société non cotée, et X5 (CA / total actif) est structurellement plus élevé dans les services, peu capitalistiques, ce qui fausse le score. Les seuils ne sont donc pas transposables. Il est préférable d'utiliser des scores estimés sur des entreprises françaises comparables (cotation de la Banque de France, fonction de Conan et Holder, scores d'assureurs-crédit) et de compléter par une analyse financière classique (évolution de la marge, CAF, BFR, endettement net / EBITDA, trésorerie) et qualitative (marché, dépendance aux clients, dirigeants). Un score reste une probabilité statistique, pas un diagnostic certain.",
+          "key_points": [
+            "Échantillon d’estimation spécifique (industriels américains cotés) : seuils non transposables",
+            "X4 suppose une capitalisation boursière ; X5 biaisé dans les services",
+            "Utiliser des scores adaptés (Banque de France, Conan et Holder, assureurs-crédit)",
+            "Compléter par l’analyse financière et qualitative"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Z = 1,96 : zone d'incertitude. La méthode des scores est un outil de pré-diagnostic dont la validité dépend de la population ayant servi à l'estimer."
+    }
+  ]
+}

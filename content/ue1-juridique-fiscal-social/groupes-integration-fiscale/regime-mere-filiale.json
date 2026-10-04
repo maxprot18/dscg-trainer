@@ -1,0 +1,180 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-groupes-merefil-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "regime-mere-filiale",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "régime mère-fille",
+        "seuil de détention"
+      ],
+      "statement": "Quel pourcentage minimal du capital de la filiale une société soumise à l'IS doit-elle détenir pour bénéficier du régime des sociétés mères sur les dividendes reçus ?",
+      "options": [
+        "10 %",
+        "50 %",
+        "5 %",
+        "95 %"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Le régime des sociétés mères s'applique aux titres représentant au moins 5 % du capital de la société émettrice (CGI art. 145, 1, b) : option 3.\nL'option 1 (10 %) correspond à la définition d'une participation en droit des sociétés (C. com. L233-2), sans lien avec le régime fiscal.\nL'option 2 (50 %) correspond à la qualité de filiale en droit des sociétés (L233-1).\nL'option 4 (95 %) est le seuil de l'intégration fiscale (CGI art. 223 A).",
+      "source_ref": "CGI art. 145, 1, b (détention d'au moins 5 % du capital)",
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue1-groupes-merefil-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "regime-mere-filiale",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "régime mère-fille",
+        "quote-part de frais et charges",
+        "intégration fiscale"
+      ],
+      "statement": "La SA Garance, tête d'un groupe fiscal intégré, reçoit en N un dividende de 800 000 € de sa filiale Hélix, détenue à 100 % et membre du même groupe intégré depuis plusieurs exercices. Les deux sociétés appliquent le régime mère-fille. Quel montant de quote-part de frais et charges doit être réintégré au titre de ce dividende ?",
+      "options": [
+        "40 000 €",
+        "8 000 €",
+        "0 €",
+        "96 000 €"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La quote-part de frais et charges est en principe de 5 % du produit des participations, mais elle est ramenée à 1 % pour les dividendes perçus par une société d'un groupe intégré d'une société membre du même groupe (CGI art. 216, I) : 800 000 × 1 % = 8 000 € (option 2).\nL'option 1 applique le taux de droit commun de 5 %.\nL'option 3 correspond à l'ancienne neutralisation totale de la quote-part dans le résultat d'ensemble, remplacée par le taux de 1 % depuis les exercices ouverts à compter du 1er janvier 2016.\nL'option 4 applique le taux de 12 %, propre aux plus-values de cession de titres de participation (CGI art. 219, I, a quinquies).",
+      "source_ref": "CGI art. 216, I (quote-part de 5 % ramenée à 1 % pour les produits de participation entre sociétés d'un même groupe intégré)",
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue1-groupes-merefil-0003",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "regime-mere-filiale",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "régime mère-fille",
+        "engagement de conservation"
+      ],
+      "statement": "La SA Iroise a acquis il y a six mois 15 % du capital de la SAS Jade et reçoit aujourd'hui un dividende. Elle peut appliquer immédiatement le régime mère-fille à ce dividende, à condition de conserver les titres pendant deux ans au moins.",
+      "answer": true,
+      "justification": "Vrai : le délai de conservation de deux ans n'a pas à être écoulé à la date de la distribution ; il suffit que la mère s'engage à conserver les titres pendant deux ans (CGI art. 145, 1, c).",
+      "explanation": "Le régime s'applique dès la première distribution dès lors que les autres conditions sont remplies (titres d'au moins 5 % du capital, société mère soumise à l'IS au taux normal). Si les titres sont cédés avant l'expiration du délai de deux ans, la société mère doit verser au Trésor, dans les trois mois de la cession, une somme égale à l'impôt dont elle a été indûment dispensée, majorée de l'intérêt de retard.",
+      "source_ref": "CGI art. 145, 1, c (conservation des titres pendant deux ans et reversement en cas de cession anticipée)",
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue1-groupes-merefil-0004",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "regime-mere-filiale",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "régime mère-fille",
+        "quote-part de frais et charges",
+        "déduction extra-comptable"
+      ],
+      "statement": "La SA Kaolin (IS, aucune intégration fiscale) a comptabilisé en N les dividendes suivants, reçus de sociétés françaises soumises à l'IS :\n- 250 000 € de la SAS Lagune, dont elle détient 8 % du capital depuis cinq ans ;\n- 60 000 € de la SA Mistral, dont elle détient 3 % du capital depuis dix ans.\nKaolin opte pour le régime mère-fille lorsqu'il est applicable. Calculez le montant net de la déduction extra-comptable (dividendes retranchés diminués de la quote-part de frais et charges réintégrée) à opérer sur le tableau de détermination du résultat fiscal. Réponse en euros.",
+      "expected_value": 237500,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Seuls les dividendes de Lagune (8 % du capital, conservés plus de deux ans) ouvrent droit au régime mère-fille ; ceux de Mistral (3 %) sont imposables sans retraitement (CGI art. 145).\nDéduction : 250 000 € ; quote-part de frais et charges réintégrée : 5 % × 250 000 = 12 500 € (CGI art. 216).\nDéduction nette : 250 000 − 12 500 = 237 500 €.\nErreurs classiques : appliquer le régime aux deux dividendes (310 000 × 95 % = 294 500 €) ou oublier la quote-part (250 000 €).",
+      "source_ref": "CGI art. 145 (seuil de 5 %) et art. 216, I (quote-part de frais et charges de 5 %)",
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue1-groupes-merefil-0005",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "regime-mere-filiale",
+      "verified": true,
+      "difficulty": 3,
+      "tags": [
+        "régime mère-fille",
+        "plus-values à long terme",
+        "titres de participation",
+        "résultat fiscal"
+      ],
+      "title": "SA Arbelle : dividendes et cession de titres",
+      "context": "La SA Arbelle, soumise à l'IS au taux de 25 % (hypothèse : ni taux réduit ni contribution sociale), n'est membre d'aucun groupe intégré. Son résultat comptable avant IS de l'exercice N s'élève à 2 000 000 €. Il comprend notamment :\n- un dividende de 500 000 € reçu de la SAS Azur, détenue à 60 % depuis quatre ans ;\n- un dividende de 30 000 € reçu de la SA Bréhat, détenue à 4 % depuis six ans ;\n- un dividende de 100 000 € reçu de la SAS Cèdre, dont Arbelle a acquis 20 % du capital il y a huit mois ; Arbelle entend conserver ces titres ;\n- une plus-value comptable de 800 000 € réalisée sur la cession de la totalité des titres de la SA Diois, comptabilisés en titres de participation et détenus depuis cinq ans (la valeur fiscale des titres est égale à leur valeur comptable).\nToutes les sociétés citées sont françaises et soumises à l'IS. Arbelle opte pour le régime mère-fille chaque fois qu'il est applicable. Il n'y a aucune autre correction extra-comptable.",
+      "sub_questions": [
+        {
+          "id": "q1-brehat",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Quel est le traitement fiscal du dividende reçu de Bréhat ?",
+          "options": [
+            "Déduit, sous réserve d'une quote-part de frais et charges de 5 %",
+            "Déduit en totalité",
+            "Imposable en totalité au taux de droit commun",
+            "Imposable au taux de 0 % avec une quote-part de 12 %"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "Avec 4 % du capital, Arbelle n'atteint pas le seuil de 5 % du régime mère-fille (CGI art. 145) : le dividende reste compris dans le résultat imposable au taux normal (option 3). La durée de détention ne compense pas l'insuffisance du pourcentage. L'option 4 confond avec le régime des plus-values sur titres de participation."
+        },
+        {
+          "id": "q2-qpfc",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez la quote-part de frais et charges à réintégrer au titre des dividendes. Réponse en euros.",
+          "expected_value": 30000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Dividendes éligibles : Azur (500 000 €) et Cèdre (100 000 €, régime applicable dès la distribution sous engagement de conservation de deux ans). Quote-part : 5 % × 600 000 = 30 000 €. Inclure Bréhat donnerait 31 500 € ; exclure Cèdre donnerait 25 000 €."
+        },
+        {
+          "id": "q3-resultat-fiscal",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez le résultat fiscal imposable au taux de 25 % de l'exercice N. Réponse en euros.",
+          "expected_value": 726000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Résultat comptable : 2 000 000 €.\nDéduction des dividendes éligibles : − 600 000 € ; réintégration de la quote-part de 5 % : + 30 000 €.\nPlus-value à long terme sur titres de participation détenus depuis plus de deux ans, imposée au taux de 0 % : déduction de − 800 000 € et réintégration de la quote-part de 12 % du montant brut : + 96 000 € (CGI art. 219, I, a quinquies).\nRésultat fiscal : 2 000 000 − 600 000 + 30 000 − 800 000 + 96 000 = 726 000 €, soit un IS de 181 500 €."
+        },
+        {
+          "id": "q4-cession-cedre",
+          "kind": "open",
+          "points": 3,
+          "prompt": "Arbelle cède finalement les titres Cèdre en N+1, quatorze mois après leur acquisition. Quelles sont les conséquences fiscales pour le dividende reçu en N et pour la plus-value de cession ?",
+          "model_answer": "L'engagement de conservation de deux ans n'est pas respecté. Arbelle doit verser au Trésor, dans les trois mois de la cession, une somme égale à l'impôt dont elle a été dispensée sur le dividende de N, soit 25 % × (100 000 − 5 000) = 23 750 €, majorée de l'intérêt de retard (CGI art. 145, 1, c). La plus-value de cession ne relève pas du régime à long terme au taux de 0 %, les titres étant détenus depuis moins de deux ans : elle est imposée au taux normal, même si les titres sont comptabilisés en titres de participation (CGI art. 219, I, a quinquies).",
+          "key_points": [
+            "Non-respect du délai de conservation de deux ans",
+            "Reversement de l'impôt économisé sur le dividende (23 750 €) dans les trois mois, avec intérêt de retard",
+            "Plus-value à court terme imposée au taux normal (détention inférieure à deux ans)"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas mobilise les conditions du régime mère-fille (5 % du capital, engagement de conservation de deux ans), la quote-part de frais et charges de 5 % et le régime des plus-values à long terme sur titres de participation (taux de 0 % et quote-part de 12 %).",
+      "source_ref": "CGI art. 145, 216 et 219, I, a quinquies",
+      "estimated_seconds": 780
+    }
+  ]
+}

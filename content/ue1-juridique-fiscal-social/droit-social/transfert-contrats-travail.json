@@ -1,0 +1,200 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-social-transfert-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "droit-social",
+      "notion": "transfert-contrats-travail",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "L1224-1",
+        "entité économique autonome",
+        "perte de marché"
+      ],
+      "statement": "Laquelle des opérations suivantes n'entraîne pas, à elle seule, le transfert automatique des contrats de travail en application de l'article L1224-1 du Code du travail ?",
+      "options": [
+        "La fusion-absorption de la société employeur par une autre société",
+        "La vente du fonds de commerce dans lequel travaillent les salariés",
+        "La mise en location-gérance du fonds de commerce exploité par l'employeur",
+        "La perte d'un marché de nettoyage au profit d'un concurrent, sans reprise de matériel, de locaux ni d'autres éléments d'exploitation"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "L'article L1224-1 s'applique en cas de transfert d'une entité économique autonome qui conserve son identité et dont l'activité est poursuivie. La seule perte d'un marché au profit d'un concurrent, sans transfert d'éléments d'exploitation significatifs, ne caractérise pas un tel transfert (option 4) : les contrats ne sont pas transférés de plein droit, sauf disposition conventionnelle de branche organisant la reprise du personnel. La fusion (option 1) et la vente du fonds (option 2) sont expressément visées par le texte (« succession, vente, fusion… »). La location-gérance (option 3) transfère l'exploitation du fonds au locataire-gérant : les contrats lui sont transférés.",
+      "source_ref": "C. trav. art. L1224-1 ; jurisprudence de la Cour de cassation sur l'entité économique autonome",
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue1-social-transfert-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "droit-social",
+      "notion": "transfert-contrats-travail",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "convention collective",
+        "mise en cause",
+        "accord de substitution"
+      ],
+      "statement": "La société Pivoine, qui applique la convention collective de la métallurgie, cède le 1er mars N une branche d'activité autonome à la société Ravel, qui relève d'une autre convention collective. Aucun accord n'est conclu chez Ravel au sujet des salariés transférés. Quel est le sort de la convention collective de la métallurgie à l'égard de ces salariés ?",
+      "options": [
+        "Elle cesse de s'appliquer dès le 1er mars N, la convention de Ravel la remplaçant immédiatement",
+        "Elle continue de s'appliquer indéfiniment aux salariés transférés, qui l'emportent avec eux",
+        "Elle continue de s'appliquer pendant un an à compter de l'expiration d'un préavis de trois mois, soit 15 mois, faute d'accord de substitution",
+        "Elle continue de s'appliquer pendant 12 mois à compter du 1er mars N, puis les salariés perdent toute garantie de rémunération"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Le transfert met en cause la convention collective de l'ancien employeur. Elle continue de produire effet jusqu'à l'entrée en vigueur d'un accord de substitution ou, à défaut, pendant un an à compter de l'expiration du préavis de trois mois, soit 15 mois au total (option 3). À l'issue, sans accord, les salariés conservent une rémunération annuelle au moins égale à celle versée au cours des douze derniers mois. L'option 1 ignore la survie temporaire de la convention mise en cause. L'option 2 est fausse : la survie est limitée dans le temps. L'option 4 oublie le préavis et la garantie de rémunération.",
+      "source_ref": "C. trav. art. L2261-14 (mise en cause d'une convention ou d'un accord) et L2261-9 (préavis de trois mois)",
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue1-social-transfert-0003",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "droit-social",
+      "notion": "transfert-contrats-travail",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "L1224-1",
+        "consentement du salarié"
+      ],
+      "statement": "Lorsque l'article L1224-1 du Code du travail s'applique, le transfert du contrat de travail au nouvel employeur suppose l'accord écrit du salarié.",
+      "answer": false,
+      "justification": "Le transfert s'opère de plein droit : les contrats en cours subsistent avec le nouvel employeur sans que l'accord du salarié soit requis, et celui-ci ne peut pas s'y opposer.",
+      "explanation": "L'article L1224-1 est d'ordre public : il s'impose à l'ancien employeur, au nouvel employeur et au salarié. Le salarié conserve son ancienneté, sa qualification et sa rémunération. En revanche, si le nouvel employeur souhaite ensuite modifier un élément du contrat (rémunération, lieu de travail hors du secteur géographique…), il doit obtenir l'accord du salarié, comme pour toute modification du contrat.",
+      "source_ref": "C. trav. art. L1224-1",
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue1-social-transfert-0004",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "droit-social",
+      "notion": "transfert-contrats-travail",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "L1224-1",
+        "L1224-2",
+        "ancienneté",
+        "licenciement à l'occasion du transfert",
+        "modification du contrat"
+      ],
+      "title": "Ardent et Brume : cession d'une branche logistique",
+      "context": "La SAS Ardent (130 salariés) exerce une activité de négoce de matériel électrique et exploite à Rennes un entrepôt logistique qui fonctionne de manière autonome : 14 salariés dédiés, un responsable d'entrepôt, des chariots élévateurs, un logiciel de gestion des stocks et une clientèle propre de prestations de stockage.\nLe 1er avril N, Ardent cède cette branche logistique (salariés, matériel, logiciel, contrats clients) à la SAS Brume, qui poursuit l'activité dans les mêmes locaux.\nInformations complémentaires :\n- Inès, cariste de l'entrepôt, a été licenciée par Ardent le 15 mars N au motif que « la cession prochaine de l'entrepôt rend son poste inutile » ;\n- une prime d'objectifs de 900 € due au titre de l'année N−1 n'avait pas été versée par Ardent à un salarié de l'entrepôt au 1er avril N ; l'acte de cession ne contient aucune clause sur les dettes salariales ;\n- en septembre N, Brume envisage de déplacer les salariés repris dans un entrepôt situé à Nantes, à 110 km, hors du secteur géographique de Rennes ; les contrats ne comportent pas de clause de mobilité ;\n- Lina, entrée chez Ardent le 1er octobre N−7 et transférée chez Brume, est licenciée par Brume pour motif personnel (cause réelle et sérieuse non discutée). Son ancienneté au terme du préavis est de 7 ans et 9 mois, dont 6 ans et 6 mois chez Ardent. Son salaire de référence est de 2 800 € bruts par mois.\nHypothèse : indemnité légale de licenciement égale à 1/4 de mois de salaire par année d'ancienneté jusqu'à 10 ans (années incomplètes au prorata).",
+      "sub_questions": [
+        {
+          "id": "q1-application",
+          "kind": "mcq",
+          "prompt": "L'article L1224-1 du Code du travail s'applique-t-il à la cession du 1er avril N ?",
+          "points": 2,
+          "options": [
+            "Non, car seule la cession de la totalité de l'entreprise entraîne le transfert des contrats",
+            "Oui, car l'entrepôt constitue une entité économique autonome transférée, dont l'activité est poursuivie par Brume",
+            "Oui, mais seulement pour les salariés qui donnent leur accord écrit au transfert",
+            "Non, car Ardent et Brume n'appartiennent pas au même groupe"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "L'entrepôt réunit des personnes et des éléments corporels et incorporels (matériel, logiciel, clientèle) poursuivant un objectif propre ; il est transféré et son activité poursuivie à l'identique : l'article L1224-1 s'applique (option 2). Le transfert d'une branche autonome suffit, la cession de toute l'entreprise n'est pas exigée (option 1). Le transfert est automatique, sans accord des salariés (option 3). L'appartenance à un groupe est indifférente (option 4)."
+        },
+        {
+          "id": "q2-indemnite-lina",
+          "kind": "numeric",
+          "prompt": "Calculez le montant de l'indemnité légale de licenciement due par Brume à Lina, selon l'hypothèse de l'énoncé. Réponse en euros, arrondie à l'euro.",
+          "points": 2,
+          "expected_value": 5425,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "L'ancienneté acquise chez Ardent est maintenue lors du transfert : l'ancienneté totale de 7 ans et 9 mois (7,75 ans) est retenue. Indemnité = 2 800 × 1/4 × 7,75 = 5 425 €. Erreur classique : ne retenir que l'ancienneté chez Brume (1 an et 3 mois), soit 2 800 × 1/4 × 1,25 = 875 €."
+        },
+        {
+          "id": "q3-mutation-nantes",
+          "kind": "true_false",
+          "prompt": "Vrai ou faux : parce qu'il est un nouvel employeur, Brume peut imposer aux salariés repris leur affectation à Nantes sans leur accord.",
+          "points": 1,
+          "answer": false,
+          "explanation": "Faux. Le transfert ne donne au nouvel employeur aucun pouvoir supplémentaire : les contrats se poursuivent aux mêmes conditions. Une mutation hors du secteur géographique, en l'absence de clause de mobilité, constitue une modification du contrat de travail qui requiert l'accord de chaque salarié ; en cas de refus, Brume devrait renoncer ou engager une procédure de licenciement (économique si le motif de la mutation est économique)."
+        },
+        {
+          "id": "q4-ines-prime",
+          "kind": "open",
+          "prompt": "Analysez la situation d'Inès et indiquez qui doit verser la prime d'objectifs de 900 € due au titre de N−1.",
+          "points": 4,
+          "model_answer": "Inès a été licenciée par Ardent quinze jours avant la cession, au seul motif de la cession à venir. Un licenciement prononcé à l'occasion du transfert, pour faire échec à l'article L1224-1, est privé d'effet : la cession ne peut pas justifier à elle seule une rupture. Inès peut, à son choix, demander à Brume la poursuite de son contrat de travail ou réclamer à Ardent, auteur du licenciement, la réparation du préjudice subi (licenciement sans cause réelle et sérieuse). Pour la prime de 900 €, l'article L1224-2 met à la charge du nouvel employeur les obligations qui incombaient à l'ancien à la date de la modification : le salarié peut en réclamer le paiement à Brume. Aucune procédure collective n'est ouverte et une convention de cession lie les deux sociétés, de sorte que l'exception de L1224-2 ne joue pas. Ardent devra rembourser à Brume la somme versée, l'acte de cession ne prévoyant pas de clause contraire.",
+          "key_points": [
+            "Licenciement prononcé en raison du transfert : privé d'effet",
+            "Choix d'Inès : poursuite du contrat chez Brume ou dommages-intérêts contre Ardent",
+            "Prime due : Brume tenu des obligations d'Ardent à la date du transfert (L1224-2)",
+            "Remboursement par Ardent à Brume, faute de clause contraire ; exceptions (procédure collective, absence de convention) non applicables"
+          ]
+        }
+      ],
+      "total_points": 9,
+      "explanation": "Le cas reprend les effets du transfert d'une entité économique autonome : transfert automatique des contrats, maintien de l'ancienneté, nécessité de l'accord du salarié pour toute modification ultérieure du contrat, inefficacité du licenciement prononcé à l'occasion du transfert et prise en charge des dettes salariales par le cessionnaire.",
+      "source_ref": "C. trav. art. L1224-1, L1224-2 ; C. trav. art. R1234-2 (indemnité légale, donnée en hypothèse) ; jurisprudence de la Cour de cassation sur le licenciement prononcé à l'occasion du transfert",
+      "estimated_seconds": 720
+    },
+    {
+      "id": "ue1-social-transfert-0005",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "droit-social",
+      "notion": "transfert-contrats-travail",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "charges de personnel",
+        "paie",
+        "maintien de la rémunération"
+      ],
+      "statement": "Le 30 avril N, la SAS Brume comptabilise la première paie des 14 salariés repris le 1er avril lors de l'acquisition de la branche logistique de la SAS Ardent, en application de l'article L1224-1 du Code du travail. Brume maintient leurs rémunérations contractuelles, y compris la prime d'ancienneté calculée sur l'ancienneté acquise chez Ardent. Données du mois : salaires bruts 42 000 € (dont 2 100 € de prime d'ancienneté) ; cotisations salariales 22 % du brut ; cotisations patronales 42 % du brut. Hypothèses : toutes les cotisations sont dues à l'URSSAF (compte 431) ; le prélèvement à la source de l'impôt sur le revenu est ignoré. Passez l'écriture de constatation de la paie (avant paiement), en utilisant les comptes 641, 645, 431 et 421.",
+      "date": "30/04/N",
+      "entries": [
+        {
+          "account": "641",
+          "label": "Rémunérations du personnel (salaires bruts)",
+          "debit": 42000,
+          "credit": 0
+        },
+        {
+          "account": "645",
+          "label": "Charges de sécurité sociale et de prévoyance (cotisations patronales)",
+          "debit": 17640,
+          "credit": 0
+        },
+        {
+          "account": "431",
+          "label": "Sécurité sociale (cotisations salariales et patronales)",
+          "debit": 0,
+          "credit": 26880
+        },
+        {
+          "account": "421",
+          "label": "Personnel - rémunérations dues (net à payer)",
+          "debit": 0,
+          "credit": 32760
+        }
+      ],
+      "explanation": "Cotisations salariales : 42 000 × 22 % = 9 240 € ; cotisations patronales : 42 000 × 42 % = 17 640 €.\n- Débit 641 : salaire brut, 42 000 €.\n- Débit 645 : cotisations patronales, 17 640 €.\n- Crédit 431 : total dû à l'URSSAF, 9 240 + 17 640 = 26 880 €.\n- Crédit 421 : net à payer, 42 000 − 9 240 = 32 760 €.\nTotal : 59 640 € au débit et au crédit. Les cotisations salariales sont une retenue sur le brut : elles ne passent pas par le 645. Le transfert des contrats (L1224-1) n'interrompt pas la relation de travail : Brume, nouvel employeur, verse les rémunérations contractuelles antérieures et la prime d'ancienneté reste calculée sur l'ancienneté acquise chez Ardent ; elle fait partie du salaire brut (641) et supporte les cotisations comme le reste de la rémunération.",
+      "source_ref": "PCG (règl. ANC 2014-03), comptes 641, 645, 421 et 431 ; C. trav. art. L1224-1",
+      "estimated_seconds": 180
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-soc-forme-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "choix-forme-sociale",
+      "difficulty": 1,
+      "tags": ["SAS", "organes de direction"],
+      "statement": "Trois associés constituent une société par actions simplifiée (SAS). Quel organe de direction la loi impose-t-elle dans tous les cas ?",
+      "options": [
+        "Un conseil d'administration d'au moins trois membres",
+        "Un directeur général distinct du président",
+        "Un président, personne physique ou morale",
+        "Un directoire et un conseil de surveillance"
+      ],
+      "answer": [2],
+      "multiple": false,
+      "explanation": "La SAS est représentée à l'égard des tiers par un président désigné dans les conditions prévues par les statuts (C. com. art. L227-6) ; il peut être une personne physique ou une personne morale (option 3). Le conseil d'administration (option 1) et le couple directoire / conseil de surveillance (option 4) sont les organes de la SA ; une SAS peut créer des organes collégiaux par ses statuts, mais la loi ne les impose pas. Un directeur général (option 2) est facultatif : les statuts peuvent en prévoir un, sans obligation.",
+      "source_ref": "C. com. art. L227-5 (organisation fixée par les statuts) et L227-6 (président)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue1-soc-forme-0002",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "choix-forme-sociale",
+      "difficulty": 1,
+      "tags": ["SARL", "constitution", "libération des apports"],
+      "statement": "Lors de la constitution d'une SARL, les apports en numéraire doivent être libérés d'au moins la moitié de leur montant.",
+      "answer": false,
+      "justification": "En SARL, les parts représentant des apports en numéraire doivent être libérées d'au moins un cinquième de leur montant à la constitution, le solde dans les cinq ans (C. com. art. L223-7).",
+      "explanation": "La règle de la moitié s'applique à la SA (C. com. art. L225-3) et, par renvoi, à la SAS. En SARL, le minimum est d'un cinquième ; la libération du surplus intervient en une ou plusieurs fois sur décision du gérant, dans un délai de cinq ans à compter de l'immatriculation. Les apports en nature, eux, sont intégralement libérés dès la constitution, quelle que soit la forme.",
+      "source_ref": "C. com. art. L223-7 (SARL) ; C. com. art. L225-3 (SA, pour comparaison)",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue1-soc-forme-0003",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "choix-forme-sociale",
+      "difficulty": 2,
+      "tags": ["SA", "assemblée générale extraordinaire", "quorum", "majorité"],
+      "statement": "Une société anonyme non cotée réunit son assemblée générale extraordinaire sur deuxième convocation, la première n'ayant pas atteint le quorum. Les statuts ne prévoient aucune règle particulière. Quelles sont les conditions de quorum et de majorité applicables ?",
+      "options": [
+        "Quorum d'un quart des actions ayant droit de vote ; majorité des deux tiers des voix exprimées",
+        "Aucun quorum ; majorité des voix exprimées",
+        "Quorum d'un cinquième des actions ayant droit de vote ; majorité absolue des voix exprimées",
+        "Quorum d'un cinquième des actions ayant droit de vote ; majorité des deux tiers des voix exprimées"
+      ],
+      "answer": [3],
+      "multiple": false,
+      "explanation": "L'AGE ne délibère valablement que si les actionnaires présents ou représentés possèdent au moins le quart des actions ayant droit de vote sur première convocation et le cinquième sur deuxième convocation ; elle statue à la majorité des deux tiers des voix exprimées (C. com. art. L225-96) : option 4. L'option 1 reprend le quorum de première convocation. L'option 2 correspond à l'AGO sur deuxième convocation (aucun quorum, majorité des voix exprimées, art. L225-98). L'option 3 mélange le quorum d'AGE et la majorité d'AGO.",
+      "source_ref": "C. com. art. L225-96 (AGE) ; art. L225-98 (AGO, pour comparaison)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue1-soc-forme-0004",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "choix-forme-sociale",
+      "difficulty": 2,
+      "tags": ["SARL", "décision extraordinaire", "majorité", "quorum"],
+      "statement": "La SARL Vertige, constituée en 2016, a un capital divisé en 1 000 parts sociales. Une assemblée est réunie sur première convocation pour décider un changement de dénomination sociale (modification des statuts). Les associés présents ou représentés détiennent 620 parts. Les statuts ne prévoient ni quorum ni majorité plus élevés que la loi. Quel est le nombre minimal de parts qui doivent voter en faveur de la résolution pour qu'elle soit adoptée ? Réponse en nombre entier de parts.",
+      "expected_value": 414,
+      "tolerance": { "kind": "absolute", "value": 0.5 },
+      "unit": "parts",
+      "decimals": 0,
+      "explanation": "1) Quorum : SARL constituée après le 3 août 2005, première convocation : les associés présents ou représentés doivent posséder au moins le quart des parts, soit 250 parts. 620 ≥ 250 : le quorum est atteint.\n2) Majorité : les modifications statutaires sont décidées par les associés représentant au moins les deux tiers des parts détenues par les associés présents ou représentés (C. com. art. L223-30) : 2/3 × 620 = 413,33 parts. Le nombre de parts étant entier, il faut au moins 414 parts favorables.\nErreurs classiques : appliquer les deux tiers au total des parts (667 parts) ou retenir la majorité simple (311 parts).",
+      "source_ref": "C. com. art. L223-30 (SARL : quorum et majorité des modifications statutaires)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue1-soc-forme-0005",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "choix-forme-sociale",
+      "difficulty": 3,
+      "tags": ["choix de forme", "SAS", "SCI", "libération du capital", "liberté statutaire"],
+      "title": "Hélios : structurer un projet avec investisseurs",
+      "context": "Clara, Malik et Jeanne préparent la création d'une entreprise de fabrication de panneaux solaires pliables. Leurs souhaits :\n- un capital de 120 000 €, composé d'un apport en nature de Malik (brevet évalué 40 000 €) et d'apports en numéraire de 80 000 € ;\n- accueillir d'ici deux ans un fonds d'investissement, qui exigera de pouvoir organiser librement la gouvernance (comité stratégique, droits de veto) et d'encadrer les cessions de titres ;\n- interdire aux fondateurs de céder leurs titres pendant les premières années et pouvoir écarter un associé qui cesserait de travailler dans l'entreprise ;\n- aucune cotation en bourse n'est envisagée ;\n- Clara souhaite par ailleurs acquérir, avec son conjoint, le local d'activité au travers d'une société civile immobilière (SCI) qui le donnerait à bail à la société d'exploitation.\nLeur expert-comptable hésite entre SARL, SA et SAS pour la société d'exploitation.",
+      "sub_questions": [
+        {
+          "id": "q1-forme",
+          "kind": "mcq",
+          "prompt": "Quelle forme sociale répond le mieux à l'ensemble des souhaits exprimés pour la société d'exploitation ?",
+          "points": 2,
+          "options": [
+            "SARL, car la cession de parts à un tiers y est soumise à agrément légal",
+            "SAS, en raison de sa liberté statutaire et des clauses spécifiques qu'elle autorise",
+            "SA à conseil d'administration, seule forme permettant l'entrée d'un fonds",
+            "Société en nom collectif, pour renforcer la confiance des investisseurs"
+          ],
+          "answer": [1],
+          "multiple": false,
+          "explanation": "La SAS permet d'organiser librement la direction (L227-5) et d'insérer des clauses d'inaliénabilité (L227-13), d'agrément (L227-14) et d'exclusion (L227-16) : option 2. La SARL (option 1) est rigide (gérance, majorités légales, au plus 100 associés) et peu adaptée à l'arrivée d'un fonds. La SA (option 3) n'est pas la seule forme ouverte à un fonds ; son fonctionnement est très encadré. La SNC (option 4) expose les associés à une responsabilité indéfinie et solidaire."
+        },
+        {
+          "id": "q2-liberation",
+          "kind": "numeric",
+          "prompt": "La forme retenue étant la SAS, quel montant minimal de fonds en numéraire doit être déposé à la constitution ? Réponse en euros.",
+          "points": 2,
+          "expected_value": 40000,
+          "tolerance": { "kind": "absolute", "value": 1 },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "En SAS, comme en SA (renvoi de l'article L227-1 à l'article L225-3), les actions de numéraire sont libérées d'au moins la moitié de leur valeur nominale à la souscription : 80 000 × 1/2 = 40 000 €. L'apport en nature du brevet est intégralement libéré, mais il ne donne lieu à aucun dépôt de fonds. Erreurs classiques : appliquer le cinquième de la SARL (16 000 €) ou la moitié du capital total (60 000 €)."
+        },
+        {
+          "id": "q3-sci",
+          "kind": "true_false",
+          "prompt": "Vrai ou faux : dans la SCI envisagée par Clara, chaque associé répond indéfiniment des dettes sociales à proportion de sa part dans le capital, après vaine poursuite de la société.",
+          "points": 1,
+          "answer": true,
+          "explanation": "Vrai. Les associés d'une société civile répondent indéfiniment des dettes sociales à proportion de leur part dans le capital à la date de l'exigibilité (C. civ. art. 1857) ; les créanciers ne peuvent les poursuivre qu'après avoir préalablement et vainement poursuivi la personne morale (art. 1858). La responsabilité est indéfinie mais non solidaire."
+        },
+        {
+          "id": "q4-statuts",
+          "kind": "open",
+          "prompt": "Indiquez les principales stipulations à prévoir dans les statuts de la SAS pour répondre aux souhaits des fondateurs et du futur fonds, en précisant les limites légales.",
+          "points": 4,
+          "model_answer": "Les statuts désignent le président, seul organe imposé par la loi, et peuvent créer un directeur général et un comité stratégique dotés de droits de veto. Ils doivent réserver à la collectivité des associés les décisions que la loi lui attribue (capital, fusion, dissolution, transformation, comptes annuels et affectation du résultat, nomination des commissaires aux comptes). Une clause d'inaliénabilité peut interdire la cession des actions des fondateurs pendant une durée d'au plus dix ans ; son adoption exige l'unanimité. Une clause d'agrément peut soumettre toute cession à l'accord préalable de la société. Une clause d'exclusion peut contraindre un associé à céder ses actions dans des cas précis (fin de son activité dans l'entreprise), avec une procédure et un prix définis. Une cession réalisée en violation de ces clauses est nulle. Enfin, la SAS ne peut pas procéder à une offre au public de ses titres hors exceptions légales, ce qui est compatible avec l'absence de cotation.",
+          "key_points": [
+            "Président obligatoire ; autres organes (DG, comité stratégique, veto) organisés librement par les statuts",
+            "Décisions réservées aux associés par L227-9 (capital, fusion, dissolution, transformation, comptes)",
+            "Clause d'inaliénabilité : 10 ans au plus, adoptée à l'unanimité",
+            "Clauses d'agrément et d'exclusion possibles ; cession contraire nulle (L227-15)",
+            "Pas d'offre au public de titres (L227-2), cohérent avec l'absence de cotation"
+          ]
+        }
+      ],
+      "total_points": 9,
+      "explanation": "Le cas compare les formes sociales au regard d'un projet concret : la SAS s'impose par sa liberté statutaire et ses clauses spécifiques ; la libération minimale du numéraire y suit la règle de la SA (moitié) ; la SCI expose ses associés à une responsabilité indéfinie et conjointe.",
+      "source_ref": "C. com. art. L227-1, L227-2, L227-5, L227-6, L227-9, L227-13 à L227-16, L227-19, L225-3 ; C. civ. art. 1857 et 1858",
+      "verified": true,
+      "estimated_seconds": 720
+    }
+  ]
+}

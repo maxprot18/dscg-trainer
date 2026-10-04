@@ -42,6 +42,159 @@
       "unit": "%",
       "decimals": 2,
       "explanation": "Le TRI est le taux t qui annule la VAN : −50 000 + 15 000(1+t)^−1 + 18 000(1+t)^−2 + 20 000(1+t)^−3 + 12 000(1+t)^−4 = 0. Encadrement : VAN(11 %) ≈ +651,32 € et VAN(12 %) ≈ −395,83 €. Interpolation linéaire : t ≈ 11 % + 1 % × 651,32 / (651,32 + 395,83) ≈ 11,62 %. La résolution exacte (dichotomie) donne t ≈ 11,618 %. Le projet est acceptable si le TRI dépasse le coût du capital exigé."
+    },
+    {
+      "id": "ue2-invest-van-0003",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "van-tri-criteres-investissement",
+      "difficulty": 2,
+      "tags": [
+        "TRIG",
+        "taux de réinvestissement",
+        "TRI"
+      ],
+      "source_ref": "Taux de rendement interne global : (1 + TRIG)ⁿ = Σ FNTₜ (1 + r)ⁿ⁻ᵗ / I₀ (calcul financier)",
+      "verified": true,
+      "estimated_seconds": 240,
+      "statement": "Un projet coûte 80 000 € en date 0 et rapporte 30 000 € en fin d'année pendant 4 ans, sans valeur résiduelle. Les flux intermédiaires peuvent être réinvestis au taux de 6 % jusqu'à la fin de l'année 4. Calculez le taux de rendement interne global (TRIG) du projet, en pourcentage avec deux décimales (ex. 9,25 pour 9,25 %).",
+      "expected_value": 13.17,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "decimals": 2,
+      "explanation": "Valeur acquise des flux en fin d'année 4 au taux de 6 % : 30 000 × (1,06³ + 1,06² + 1,06 + 1) = 30 000 × 4,374616 ≈ 131 238,48 €. (1 + TRIG)⁴ = 131 238,48 / 80 000 ≈ 1,640481, d'où TRIG ≈ 1,640481^(1/4) − 1 ≈ 13,17 %. Le TRI (taux annulant la VAN, ≈ 18,45 %) est plus élevé car il suppose implicitement un réinvestissement des flux au TRI lui-même, hypothèse peu réaliste."
+    },
+    {
+      "id": "ue2-invest-van-0004",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "van-tri-criteres-investissement",
+      "difficulty": 2,
+      "tags": [
+        "indice de profitabilité",
+        "VAN"
+      ],
+      "source_ref": "Indice de profitabilité = valeur actuelle des flux / I₀ = 1 + VAN / I₀ (calcul financier)",
+      "verified": true,
+      "estimated_seconds": 90,
+      "statement": "Un investissement de 250 000 € en date 0 génère des flux nets de trésorerie de 70 000 € en fin d'année pendant 5 ans. Le coût du capital est de 10 %. Quel est l'indice de profitabilité du projet (arrondi à deux décimales) ?",
+      "options": [
+        "1,40",
+        "1,06",
+        "0,06",
+        "0,94"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Valeur actuelle des flux = 70 000 × [1 − 1,10⁻⁵] / 0,10 ≈ 70 000 × 3,790787 ≈ 265 355 €. IP = 265 355 / 250 000 ≈ 1,06 (option 2) : chaque euro investi restitue 1,06 € actualisé, la VAN (≈ 15 355 €) est positive. L'option 1 rapporte les flux non actualisés (350 000 / 250 000). L'option 3 est le rapport VAN / I₀, qui vaut IP − 1. L'option 4 inverse le rapport (I₀ / valeur actuelle des flux)."
+    },
+    {
+      "id": "ue2-invest-van-0005",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "van-tri-criteres-investissement",
+      "difficulty": 3,
+      "tags": [
+        "conflit VAN TRI",
+        "taux d’indifférence",
+        "projets exclusifs"
+      ],
+      "source_ref": "Taux d’indifférence (Fisher) = TRI du projet différentiel ; primauté de la VAN pour des projets exclusifs (calcul financier)",
+      "verified": true,
+      "estimated_seconds": 150,
+      "statement": "Deux projets exclusifs coûtent chacun 100 000 € en date 0. Le projet A rapporte un flux unique de 150 000 € en fin d'année 3 ; le projet B rapporte 45 000 € en fin d'année pendant 3 ans. Leurs TRI sont d'environ 14,5 % (A) et 16,6 % (B). Le coût du capital est de 6 %. Quelle proposition est exacte ?",
+      "options": [
+        "Il faut retenir B, car son TRI est le plus élevé",
+        "Il faut retenir A : sa VAN à 6 % est la plus élevée, et le classement ne s'inverse qu'au-delà d'un taux d'indifférence d'environ 10,7 %",
+        "Il faut retenir B, car sa VAN à 6 % est la plus élevée",
+        "Il faut retenir A, car le taux d'indifférence est égal à son TRI de 14,5 %"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "VAN à 6 % : A = 150 000 × 1,06⁻³ − 100 000 ≈ 25 943 € ; B = 45 000 × 2,673012 − 100 000 ≈ 20 286 €. A l'emporte (option 2). Le taux d'indifférence est le TRI du projet différentiel A − B (flux 0 ; −45 000 ; −45 000 ; +105 000) : il vaut environ 10,73 %. En dessous, A a la plus forte VAN ; au-dessus, B. Comme 6 % < 10,7 %, le TRI (option 1) donne un classement erroné : pour des projets exclusifs, la VAN prime. L'option 3 est fausse numériquement. L'option 4 confond taux d'indifférence et TRI de A."
+    },
+    {
+      "id": "ue2-invest-van-0006",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "van-tri-criteres-investissement",
+      "difficulty": 2,
+      "tags": [
+        "VAN",
+        "indice de profitabilité",
+        "délai de récupération actualisé"
+      ],
+      "source_ref": "VAN, indice de profitabilité et délai de récupération actualisé (calcul financier)",
+      "verified": true,
+      "estimated_seconds": 600,
+      "title": "Comparer les critères sur un projet de logiciel métier",
+      "context": "La société Ardena envisage le déploiement d'un logiciel métier.\n- Investissement en date 0 : 120 000 €.\n- Flux nets de trésorerie de fin d'année : 30 000 € (année 1), 40 000 € (année 2), 50 000 € (année 3), 40 000 € (année 4), 20 000 € (année 5).\n- Aucune valeur résiduelle.\n- Coût du capital : 8 %.\n- La direction exige que l'investissement soit récupéré, en flux actualisés, en moins de 4 ans.",
+      "sub_questions": [
+        {
+          "id": "van",
+          "kind": "numeric",
+          "prompt": "Calculez la VAN du projet au taux de 8 %, en euros.",
+          "points": 3,
+          "expected_value": 24775.8,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.01
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "Flux actualisés : 27 777,78 ; 34 293,55 ; 39 691,61 ; 29 401,19 ; 13 611,66, soit 144 775,80 €. VAN = 144 775,80 − 120 000 = 24 775,80 €."
+        },
+        {
+          "id": "ip",
+          "kind": "numeric",
+          "prompt": "Calculez l'indice de profitabilité (arrondi à deux décimales).",
+          "points": 2,
+          "expected_value": 1.21,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.01
+          },
+          "decimals": 2,
+          "explanation": "IP = 144 775,80 / 120 000 ≈ 1,21 (= 1 + VAN / I₀)."
+        },
+        {
+          "id": "dra",
+          "kind": "numeric",
+          "prompt": "Calculez le délai de récupération actualisé, en années avec deux décimales (interpolation linéaire dans l'année).",
+          "points": 3,
+          "expected_value": 3.62,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.05
+          },
+          "unit": "ans",
+          "decimals": 2,
+          "explanation": "Cumul des flux actualisés : −92 222,22 (fin année 1) ; −57 928,67 (année 2) ; −18 237,06 (année 3) ; +11 164,14 (année 4). Il manque 18 237,06 € au début de l'année 4, couverts par 18 237,06 / 29 401,19 ≈ 0,62 an du flux actualisé de l'année 4 : DRA ≈ 3,62 ans. Le délai non actualisé (3 ans exactement) est plus court."
+        },
+        {
+          "id": "conclusion",
+          "kind": "open",
+          "prompt": "Le projet respecte-t-il les exigences de la direction ? Quelle est la principale limite du délai de récupération comme critère de choix ?",
+          "points": 2,
+          "model_answer": "Oui : la VAN est positive (≈ 24 776 €), l'indice de profitabilité supérieur à 1 (≈ 1,21) et le délai de récupération actualisé (≈ 3,62 ans) inférieur au plafond de 4 ans. Le délai de récupération est un critère de liquidité et de risque : il ignore les flux postérieurs à la récupération et ne mesure donc pas la rentabilité ; il doit compléter la VAN, pas la remplacer.",
+          "key_points": [
+            "Projet accepté : VAN > 0, IP > 1, DRA < 4 ans",
+            "Le délai ignore les flux après la date de récupération",
+            "Critère de liquidité et de risque, pas de rentabilité"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Les trois critères convergent ici. La VAN mesure la création de valeur en euros, l'IP la rentabilité par euro investi (utile en cas de rationnement du capital) et le DRA la rapidité de récupération."
     }
   ]
 }

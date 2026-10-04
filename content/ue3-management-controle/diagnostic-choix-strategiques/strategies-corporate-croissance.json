@@ -1,0 +1,203 @@
+{
+  "exercises": [
+    {
+      "id": "ue3-diag-corporate-0001",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "strategies-corporate-croissance",
+      "difficulty": 1,
+      "tags": [
+        "intégration verticale",
+        "amont"
+      ],
+      "statement": "Un fabricant de chocolat rachète une coopérative de producteurs de cacao en Côte d'Ivoire. De quelle stratégie s'agit-il ?",
+      "options": [
+        "Intégration verticale amont",
+        "Intégration verticale aval",
+        "Intégration horizontale",
+        "Diversification conglomérale"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "L'option 1 est exacte : le chocolatier prend le contrôle de son fournisseur de matière première, c'est-à-dire d'une activité située en amont de sa filière ; il s'agit d'une intégration verticale amont (sécurisation des approvisionnements, captation de la marge du fournisseur). L'option 2 est fausse : l'intégration aval porterait sur une activité située entre le chocolatier et le client final (distribution, boutiques). L'option 3 est fausse : l'intégration horizontale consiste à racheter un concurrent, ici un autre chocolatier. L'option 4 est fausse : la diversification conglomérale vise une activité sans lien avec le métier, alors que le cacao est la matière première du chocolat.",
+      "source_ref": "Programme DSCG UE3 (arrêté du 4 août 2025), stratégies de groupe ; intégration verticale",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue3-diag-corporate-0002",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "strategies-corporate-croissance",
+      "difficulty": 2,
+      "tags": [
+        "diversification",
+        "matrice d'Ansoff"
+      ],
+      "statement": "Un fabricant de moteurs thermiques pour tondeuses utilise sa technologie et ses usines pour produire des moteurs de bateaux de plaisance, qu'il vend à des chantiers navals. Comment qualifier cette stratégie ?",
+      "options": [
+        "Développement de produits",
+        "Diversification conglomérale",
+        "Pénétration du marché",
+        "Diversification liée (concentrique)"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'option 4 est exacte : le produit (moteur de bateau) et le marché (chantiers navals) sont nouveaux, ce qui caractérise une diversification ; elle est liée (concentrique) car elle exploite la technologie et l'outil industriel existants. L'option 1 est fausse : le développement de produits propose un produit nouveau aux clients actuels (les fabricants de tondeuses), ce qui n'est pas le cas. L'option 2 est fausse : une diversification conglomérale n'aurait aucun lien de métier avec l'activité actuelle, or la technologie est commune. L'option 3 est fausse : la pénétration consiste à vendre davantage les produits actuels sur les marchés actuels.",
+      "source_ref": "H.I. Ansoff (1965), matrice produits-marchés",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue3-diag-corporate-0003",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "strategies-corporate-croissance",
+      "difficulty": 2,
+      "tags": [
+        "croissance externe",
+        "acquisition"
+      ],
+      "statement": "Parmi les propositions suivantes, lesquelles sont des avantages de la croissance externe par rapport à la croissance interne ? (plusieurs réponses possibles)",
+      "options": [
+        "Un accès rapide à des parts de marché et à des compétences déjà constituées",
+        "L'absence de prime de contrôle à payer",
+        "La possibilité de supprimer un concurrent et d'accroître son pouvoir de marché",
+        "Une intégration culturelle et organisationnelle facile"
+      ],
+      "answer": [
+        0,
+        2
+      ],
+      "multiple": true,
+      "explanation": "Les options 1 et 3 sont exactes : la croissance externe donne un accès rapide à des parts de marché, des compétences, des marques ou des réseaux déjà constitués, et le rachat d'un concurrent supprime un rival et accroît le pouvoir de marché (sous réserve du contrôle des concentrations). L'option 2 est fausse : l'acquéreur paie le plus souvent une prime de contrôle au-dessus de la valeur de marché, qui doit être compensée par les synergies. L'option 4 est fausse : l'intégration des équipes, des systèmes et des cultures est au contraire la principale difficulté et une cause fréquente d'échec des acquisitions.",
+      "source_ref": "Programme DSCG UE3 (arrêté du 4 août 2025), stratégies de groupe ; modalités de croissance (interne, externe, conjointe)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue3-diag-corporate-0004",
+      "type": "true_false",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "strategies-corporate-croissance",
+      "difficulty": 1,
+      "tags": [
+        "matrice BCG",
+        "dilemme"
+      ],
+      "statement": "Dans la matrice BCG, un dilemme est un domaine d'activité à forte croissance et à faible part de marché relative, en général consommateur net de liquidités.",
+      "answer": true,
+      "justification": "Vrai : la croissance du marché exige des investissements que la faible part de marché relative ne permet pas d'autofinancer.",
+      "explanation": "Le dilemme (ou point d'interrogation) se situe sur un marché en forte croissance, qui exige des investissements importants, alors que sa part de marché relative inférieure à 1 ne lui donne pas l'avantage de coût de l'expérience : il consomme plus de liquidités qu'il n'en dégage. Le groupe doit choisir entre investir pour en faire une vedette ou s'en retirer.",
+      "source_ref": "Boston Consulting Group, matrice croissance / part de marché relative",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue3-diag-corporate-0005",
+      "type": "numeric",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "strategies-corporate-croissance",
+      "difficulty": 2,
+      "tags": [
+        "matrice BCG",
+        "part de marché relative"
+      ],
+      "statement": "Sur un marché de 400 M€, une entreprise réalise un chiffre d'affaires de 150 M€. Ses principaux concurrents réalisent respectivement 60 M€, 45 M€ et 35 M€, le reste étant très dispersé. Calculez la part de marché relative de l'entreprise au sens de la matrice BCG, arrondie à deux décimales.",
+      "expected_value": 2.5,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.01
+      },
+      "decimals": 2,
+      "explanation": "Part de marché relative = CA de l'entreprise ÷ CA du concurrent le plus important. L'entreprise étant leader, on la compare au second : 150 ÷ 60 = 2,5. Erreurs classiques : calculer la part de marché absolue (150 ÷ 400 = 37,5 %) ou se comparer à la moyenne des concurrents.",
+      "source_ref": "Boston Consulting Group, matrice croissance / part de marché relative",
+      "verified": true,
+      "estimated_seconds": 120
+    },
+    {
+      "id": "ue3-diag-corporate-0006",
+      "type": "case_study",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "strategies-corporate-croissance",
+      "difficulty": 3,
+      "tags": [
+        "matrice BCG",
+        "portefeuille d'activités",
+        "part de marché relative"
+      ],
+      "title": "Groupe Alvéo : analyse de portefeuille",
+      "context": "Le groupe Alvéo fabrique des produits d'isolation et d'aménagement de l'habitat. Il est organisé en quatre domaines d'activité stratégiques (DAS).\n\nDAS A (laine de verre) : CA 45 M€ ; Alvéo est leader, ses deux principaux concurrents réalisent 30 M€ et 22 M€ ; croissance du marché 3 % par an.\nDAS B (isolants biosourcés) : CA 12 M€ ; le leader réalise 40 M€ ; le marché est passé de 80 M€ en 2024 à 92 M€ en 2025.\nDAS C (fenêtres à haute performance) : CA 60 M€ ; Alvéo est leader, ses principaux concurrents réalisent 25 M€ et 18 M€ ; croissance du marché 12 % par an.\nDAS D (lambris PVC) : CA 8 M€ ; le leader réalise 32 M€ ; croissance du marché 1 % par an.\n\nPour construire la matrice, le groupe retient comme seuils une croissance du marché de 10 % par an et une part de marché relative de 1.\n\nLa trésorerie du groupe est tendue ; le DAS A dégage d'importants flux de trésorerie, tandis que le DAS B réclame de lourds investissements industriels.",
+      "sub_questions": [
+        {
+          "id": "q1-pmr-c",
+          "kind": "numeric",
+          "prompt": "Calculez la part de marché relative du DAS C, arrondie à deux décimales.",
+          "points": 2,
+          "expected_value": 2.4,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.01
+          },
+          "decimals": 2,
+          "explanation": "Alvéo est leader du DAS C : on rapporte son CA à celui du second, 60 ÷ 25 = 2,40. Pour mémoire : DAS A = 45 ÷ 30 = 1,50 ; DAS B = 12 ÷ 40 = 0,30 ; DAS D = 8 ÷ 32 = 0,25."
+        },
+        {
+          "id": "q2-croissance-b",
+          "kind": "numeric",
+          "prompt": "Calculez le taux de croissance 2025 du marché du DAS B, en %, arrondi à une décimale.",
+          "points": 2,
+          "expected_value": 15,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "Taux de croissance = (92 − 80) ÷ 80 = 0,15, soit 15,0 %. Erreur classique : rapporter l'écart au montant final (12 ÷ 92 ≈ 13,0 %)."
+        },
+        {
+          "id": "q3-position-b",
+          "kind": "mcq",
+          "prompt": "Dans quelle case de la matrice BCG se situe le DAS B ?",
+          "points": 2,
+          "options": [
+            "Vedette",
+            "Vache à lait",
+            "Dilemme",
+            "Poids mort"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "L'option 3 est exacte : croissance de 15 % (> 10 %) et part de marché relative de 0,30 (< 1). L'option 1 est fausse : une vedette a une part de marché relative supérieure à 1 (c'est le cas du DAS C : 12 % et 2,40). L'option 2 est fausse : une vache à lait est sur un marché à faible croissance avec une part relative supérieure à 1 (DAS A : 3 % et 1,50). L'option 4 est fausse : un poids mort cumule faible croissance et faible part relative (DAS D : 1 % et 0,25)."
+        },
+        {
+          "id": "q4-recommandations",
+          "kind": "open",
+          "prompt": "Positionnez les quatre DAS, formulez des recommandations pour équilibrer le portefeuille et indiquez deux limites de la matrice BCG.",
+          "points": 4,
+          "model_answer": "Positionnement : A vache à lait (3 % ; 1,50), B dilemme (15 % ; 0,30), C vedette (12 % ; 2,40), D poids mort (1 % ; 0,25). Recommandations : rentabiliser le DAS A en limitant les investissements à l'entretien de sa position, pour dégager la trésorerie qui finance les autres DAS ; maintenir la position de leader du DAS C, qui doit s'autofinancer à peu près et deviendra la future vache à lait quand la croissance ralentira ; décider pour le DAS B : investir massivement pour gagner des parts de marché sur un marché porteur (biosourcé) si le groupe peut viser une position de leader, sinon s'allier ou se retirer, car la trésorerie est tendue ; céder ou réduire le DAS D, qui immobilise des ressources sans perspective (sauf rôle de complément de gamme). Limites : deux critères seulement, la croissance ne mesure pas à elle seule l'attrait d'un marché ni la part relative la compétitivité (les matrices McKinsey et ADL sont multicritères) ; hypothèse d'un effet d'expérience significatif, discutable dans les activités où il est faible ; synergies entre DAS ignorées ; dépendance aux seuils choisis et à la délimitation des marchés.",
+          "key_points": [
+            "A vache à lait, B dilemme, C vedette, D poids mort",
+            "A finance ; C à maintenir ; B à arbitrer (investir ou se retirer, alliance) compte tenu de la trésorerie ; D à céder",
+            "Limites : deux critères seulement, hypothèse d'effet d'expérience, synergies ignorées, sensibilité aux seuils et à la définition du marché"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas applique la matrice BCG : calcul des deux critères, positionnement, puis recommandations d'équilibre financier du portefeuille et limites de l'outil.",
+      "source_ref": "Boston Consulting Group, matrice croissance / part de marché relative ; matrices Arthur D. Little et McKinsey",
+      "verified": true,
+      "estimated_seconds": 780
+    }
+  ]
+}

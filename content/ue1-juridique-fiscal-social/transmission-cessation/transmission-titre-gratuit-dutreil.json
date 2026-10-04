@@ -1,0 +1,161 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-trans-dutreil-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "transmission-titre-gratuit-dutreil",
+      "difficulty": 1,
+      "tags": [
+        "pacte Dutreil",
+        "engagement collectif",
+        "seuils"
+      ],
+      "statement": "Pour une société non cotée, quelles sont les conditions minimales de l'engagement collectif de conservation du pacte Dutreil ?",
+      "options": [
+        "Une durée minimale de 2 ans, portant sur au moins 17 % des droits financiers et 34 % des droits de vote",
+        "Une durée minimale de 4 ans, portant sur au moins 10 % des droits financiers et 20 % des droits de vote",
+        "Une durée minimale de 6 ans, portant sur la majorité du capital",
+        "Une durée minimale de 2 ans, portant sur au moins 34 % des droits financiers et 17 % des droits de vote"
+      ],
+      "answer": [
+        0
+      ],
+      "multiple": false,
+      "explanation": "L'engagement collectif dure au moins 2 ans et porte, pour une société non cotée, sur au moins 17 % des droits financiers et 34 % des droits de vote (CGI art. 787 B, a) : option 1. Les seuils de 10 % et 20 % (option 2) sont ceux des sociétés cotées, et la durée de 4 ans était celle de l'engagement individuel avant la loi de finances pour 2026. Aucune majorité du capital n'est exigée (option 3) ; la durée de 6 ans est, depuis cette loi, celle de l'engagement individuel des héritiers ou donataires pour les transmissions intervenues à compter du 21 février 2026. L'option 4 inverse les deux seuils.",
+      "source_ref": "CGI art. 787 B, a (engagement collectif de conservation) et c (engagement individuel), rédaction issue de la loi n° 2026-103 du 19 février 2026 (loi de finances pour 2026)",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue1-trans-dutreil-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "transmission-titre-gratuit-dutreil",
+      "difficulty": 2,
+      "tags": [
+        "pacte Dutreil",
+        "réduction de droits",
+        "âge du donateur",
+        "CGI 790"
+      ],
+      "statement": "Mme Rioux, 74 ans, donne en pleine propriété à sa fille des titres d'une société industrielle couverts par un engagement collectif Dutreil en cours. Sa fille n'a reçu aucune donation antérieure. Quels avantages s'appliquent au calcul des droits ?",
+      "options": [
+        "L'exonération de 75 % seulement, l'abattement personnel n'étant pas cumulable avec le régime Dutreil",
+        "L'exonération de 75 %, l'abattement de 100 000 € et la réduction de droits de 50 %",
+        "La réduction de droits de 50 % seulement, l'exonération de 75 % étant réservée aux successions",
+        "L'exonération de 75 % puis l'abattement de 100 000 € en ligne directe, sans réduction de 50 % des droits"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "L'exonération partielle de 75 % s'applique aux donations comme aux successions (CGI art. 787 B) ; sur la valeur taxable restante s'impute l'abattement de 100 000 € en ligne directe (art. 779), puis le barème. La réduction de 50 % des droits (art. 790) suppose une donation en pleine propriété consentie par un donateur âgé de moins de 70 ans : Mme Rioux a 74 ans (option 4). L'option 1 refuse à tort le cumul avec l'abattement ; l'option 2 accorde la réduction malgré l'âge ; l'option 3 exclut à tort les donations de l'exonération.",
+      "source_ref": "CGI art. 779, 787 B et 790",
+      "verified": true,
+      "estimated_seconds": 70
+    },
+    {
+      "id": "ue1-trans-dutreil-0003",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "transmission-titre-gratuit-dutreil",
+      "difficulty": 2,
+      "tags": [
+        "pacte Dutreil",
+        "droits de donation",
+        "barème"
+      ],
+      "statement": "M. Lenoir, 62 ans, donne en pleine propriété à son fils des titres de sa société commerciale, évalués à 1 200 000 € et remplissant toutes les conditions du pacte Dutreil (exonération de 75 %). Aucune donation antérieure. Hypothèses : abattement en ligne directe de 100 000 € ; barème : 5 % jusqu'à 8 072 €, 10 % de 8 072 à 12 109 €, 15 % de 12 109 à 15 932 €, 20 % de 15 932 à 552 324 € ; réduction de 50 % des droits pour une donation en pleine propriété par un donateur de moins de 70 ans. Calculez les droits de donation à payer, en euros, arrondis au centime.",
+      "expected_value": 19097.18,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 2,
+      "explanation": "Valeur taxable après exonération : 1 200 000 × 25 % = 300 000 €. Après abattement : 300 000 − 100 000 = 200 000 €.\nBarème : 8 072 × 5 % = 403,60 ; 4 037 × 10 % = 403,70 ; 3 823 × 15 % = 573,45 ; (200 000 − 15 932) × 20 % = 36 813,60. Total : 38 194,35 €.\nRéduction de 50 % (donateur de 62 ans, pleine propriété) : 38 194,35 / 2 = 19 097,18 €.\nOublier la réduction (38 194 €) ou appliquer l'abattement avant l'exonération sont des erreurs hors tolérance.",
+      "source_ref": "CGI art. 777 (barème), 779 (abattement), 787 B (exonération de 75 %) et 790 (réduction de droits)",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue1-trans-dutreil-0004",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "transmission-titre-gratuit-dutreil",
+      "difficulty": 3,
+      "tags": [
+        "pacte Dutreil",
+        "donation",
+        "engagements",
+        "remise en cause"
+      ],
+      "title": "Transmission de Ferrand Industrie",
+      "context": "M. Ferrand, 72 ans, détient 60 % du capital et des droits de vote de la SAS Ferrand Industrie (fabrication de pièces mécaniques, non cotée) ; son épouse en détient 10 %, le solde appartenant à des cadres.\nIl y a trois ans, les époux ont signé un engagement collectif de conservation portant sur leurs 70 %, conclu pour 2 ans et prorogé tacitement ; il est en cours.\nM. Ferrand donne en pleine propriété à chacun de ses deux enfants, Paul et Claire, 30 % du capital. La valeur des 60 % est de 2 000 000 €. Aucun des enfants n'a reçu de donation antérieure.\nPaul, salarié de la société, en deviendra président ; Claire, installée à l'étranger, n'y exercera aucune fonction.\nLa donation intervient en octobre 2026. Hypothèses : régime de l'article 787 B issu de la loi de finances pour 2026 (exonération de 75 %, engagement individuel de 6 ans courant ici à compter de la donation, l'engagement collectif ayant déjà atteint sa durée minimale, fonction de direction pendant 3 ans après la transmission ; aucun actif non professionnel exclu) ; abattement en ligne directe de 100 000 € ; barème : 5 % jusqu'à 8 072 €, 10 % jusqu'à 12 109 €, 15 % jusqu'à 15 932 €, 20 % jusqu'à 552 324 € ; réduction de 50 % des droits si le donateur a moins de 70 ans.",
+      "sub_questions": [
+        {
+          "id": "q1-engagement",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "L'engagement collectif des époux permet-il l'application du régime Dutreil ?",
+          "options": [
+            "Non, car un engagement entre époux ne peut constituer un engagement collectif",
+            "Non, car l'engagement doit porter sur la totalité du capital",
+            "Oui, il porte sur 70 % des droits financiers et des droits de vote, dure depuis plus de 2 ans et est en cours au jour de la donation",
+            "Oui, mais seulement si Claire exerce elle aussi une fonction de direction"
+          ],
+          "answer": [
+            2
+          ],
+          "multiple": false,
+          "explanation": "L'engagement collectif peut être conclu entre le donateur et d'autres associés, y compris son conjoint ; il porte sur 70 % des droits, au-delà des seuils de 17 % (droits financiers) et 34 % (droits de vote), et il est en cours depuis plus de 2 ans (option 3). La totalité du capital n'est pas exigée (option 2). La fonction de direction peut être exercée par un seul signataire ou bénéficiaire, ici Paul (option 4)."
+        },
+        {
+          "id": "q2-droits",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez les droits de donation dus par chaque enfant, en euros, arrondis au centime.",
+          "expected_value": 28194.35,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "Part de chaque enfant : 1 000 000 €. Après exonération de 75 % : 250 000 € ; après abattement : 150 000 €. Barème : 403,60 + 403,70 + 573,45 + (150 000 − 15 932) × 20 % = 1 380,75 + 26 813,60 = 28 194,35 €. Pas de réduction de 50 % : le donateur a 72 ans. Appliquer la réduction (14 097 €) est hors tolérance."
+        },
+        {
+          "id": "q3-reduction",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "La donation consentie par M. Ferrand bénéficie de la réduction de 50 % des droits prévue à l'article 790 du CGI.",
+          "answer": false,
+          "explanation": "La réduction suppose un donateur âgé de moins de 70 ans ; M. Ferrand a 72 ans."
+        },
+        {
+          "id": "q4-engagements",
+          "kind": "open",
+          "points": 3,
+          "prompt": "Quels engagements Paul et Claire devront-ils respecter, et quelles seraient les conséquences si Claire vendait ses titres deux ans après la donation ?",
+          "model_answer": "Chaque enfant doit souscrire, dans l'acte de donation, un engagement individuel de conserver les titres reçus pendant 6 ans (durée issue de la loi de finances pour 2026 ; ici à compter de la donation, l'engagement collectif ayant déjà atteint sa durée minimale de 2 ans). Paul, qui deviendra président, assure la fonction de direction exigée pendant les 3 ans suivant la transmission, ce qui suffit pour les deux donataires. Des attestations de respect des engagements doivent être produites. Si Claire vend ses titres au bout de deux ans, elle rompt son engagement individuel : l'exonération de 75 % est remise en cause pour elle seule, qui doit acquitter le complément de droits calculé sans l'exonération, majoré de l'intérêt de retard. La situation fiscale de Paul n'est pas affectée.",
+          "key_points": [
+            "Engagement individuel de conservation de 6 ans pour chaque donataire",
+            "Fonction de direction exercée par Paul pendant 3 ans après la donation",
+            "Rupture par Claire : remise en cause de l'exonération pour elle seule",
+            "Rappel des droits sans exonération et intérêt de retard"
+          ]
+        }
+      ],
+      "total_points": 9,
+      "explanation": "Le cas vérifie les conditions de l'engagement collectif, l'ordre de calcul (exonération de 75 %, abattement, barème), la condition d'âge de la réduction de l'article 790 et le caractère individuel de la sanction en cas de rupture de l'engagement individuel.",
+      "source_ref": "CGI art. 777, 779, 787 B (rédaction issue de la loi de finances pour 2026, n° 2026-103) et 790",
+      "verified": true,
+      "estimated_seconds": 840
+    }
+  ]
+}

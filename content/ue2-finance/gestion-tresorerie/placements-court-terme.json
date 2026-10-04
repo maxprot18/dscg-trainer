@@ -1,0 +1,138 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-treso-placement-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "gestion-tresorerie",
+      "notion": "placements-court-terme",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "titres de créances négociables",
+        "NEU CD"
+      ],
+      "source_ref": "C. mon. fin., art. L. 213-1 A s. (titres de créances négociables)",
+      "estimated_seconds": 45,
+      "statement": "Lequel des supports suivants est un titre de créance négociable ?",
+      "options": [
+        "Un NEU CD (certificat de dépôt négociable émis par une banque)",
+        "Une action de SICAV monétaire",
+        "Une part de fonds commun de placement",
+        "Un compte à terme ouvert auprès d’une banque"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Le NEU CD, émis par un établissement de crédit sur le marché monétaire, est un titre de créance négociable (option 1). Les actions de SICAV (option 2) et les parts de FCP (option 3) sont des parts d’OPCVM, non des titres de créance. Le compte à terme (option 4) est un dépôt bancaire, non négociable."
+    },
+    {
+      "id": "ue2-treso-placement-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "gestion-tresorerie",
+      "notion": "placements-court-terme",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "rendement",
+        "taux proportionnel"
+      ],
+      "source_ref": "Rendement d’un placement à court terme : taux proportionnel = gain / capital investi × 360 / jours",
+      "estimated_seconds": 90,
+      "statement": "Une entreprise acquiert pour 495 000 € un titre de créance remboursé 500 000 € dans 90 jours. Quel est son taux de rendement annuel proportionnel, en base 360 ?",
+      "options": [
+        "4,00 %",
+        "1,01 %",
+        "4,04 %",
+        "4,10 %"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Gain : 5 000 €. Rendement : 5 000 / 495 000 × 360 / 90 = 4,04 % (option 3). L’option 1 rapporte le gain au nominal (500 000) au lieu du capital investi ; l’option 2 n’annualise pas le rendement sur 90 jours ; l’option 4 utilise une base 365 au lieu de la base 360 demandée."
+    },
+    {
+      "id": "ue2-treso-placement-0003",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "gestion-tresorerie",
+      "notion": "placements-court-terme",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "risque de taux",
+        "OPCVM monétaire"
+      ],
+      "source_ref": "Relation inverse entre taux d’intérêt et valeur des titres à taux fixe ; règlement (UE) 2017/1131 (fonds monétaires)",
+      "estimated_seconds": 40,
+      "statement": "Une hausse des taux d’intérêt fait baisser la valeur des titres à taux fixe détenus en portefeuille ; un OPCVM monétaire, investi en instruments de très courte durée, y est peu sensible.",
+      "answer": true,
+      "justification": "La valeur d’un titre à taux fixe baisse quand les taux montent, d’autant plus que son échéance est lointaine ; les instruments très courts d’un fonds monétaire y sont peu exposés.",
+      "explanation": "Quand les taux de marché montent, un titre servant un taux fixe inférieur perd de la valeur, et la perte croît avec la durée restante (sensibilité). Un OPCVM monétaire détient des titres à échéance très courte, renouvelés en permanence aux nouveaux taux : sa sensibilité est faible. C’est pourquoi il convient aux excédents de court terme, contrairement aux obligations longues."
+    },
+    {
+      "id": "ue2-treso-placement-0004",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "gestion-tresorerie",
+      "notion": "placements-court-terme",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "compte à terme",
+        "sortie anticipée"
+      ],
+      "source_ref": "Compte à terme : rémunération fixée à l’ouverture, taux réduit en cas de sortie anticipée ; intérêts simples = capital × taux × jours / 360",
+      "estimated_seconds": 150,
+      "statement": "Une entreprise place 300 000 € sur un compte à terme de 180 jours au taux de 3,1 % l’an (base 360). Le contrat prévoit qu’en cas de retrait anticipé, les intérêts sont calculés au taux réduit de 2,2 % l’an sur la durée effective du placement. Un besoin imprévu l’oblige à retirer les fonds au bout de 120 jours. Calculez les intérêts perçus, en euros.",
+      "expected_value": 2200,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Intérêts : 300 000 × 2,2 % × 120 / 360 = 2 200 €. Au taux contractuel, ils auraient été de 3 100 € sur 120 jours (4 650 € sur 180 jours). Le manque à gagner illustre le coût d’illiquidité du compte à terme : pour un excédent dont la durée est incertaine, un OPCVM monétaire, liquide chaque jour, aurait pu être préférable."
+    },
+    {
+      "id": "ue2-treso-placement-0005",
+      "type": "journal_entry",
+      "ue": "UE2",
+      "theme": "gestion-tresorerie",
+      "notion": "placements-court-terme",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "titres de créances négociables",
+        "écriture",
+        "revenus des VMP"
+      ],
+      "source_ref": "PCG : comptes 5081 (Autres valeurs mobilières), 764 (Revenus des valeurs mobilières de placement), 512 (Banques)",
+      "estimated_seconds": 240,
+      "statement": "Le 1er mars N, une entreprise a acquis au pair un NEU CD de 250 000 €, enregistré au débit du compte 5081. Il est remboursé le 1er juin N avec les intérêts postcomptés au taux de 3 % l’an, calculés sur le nombre exact de jours (base 360). L’entreprise enregistre les intérêts au compte 764. Aucun intérêt couru n’a été comptabilisé (clôture au 31 décembre). Passez l’écriture du 1er juin N, montants au centime.",
+      "date": "01/06/N",
+      "entries": [
+        {
+          "account": "512",
+          "label": "Banques",
+          "debit": 251916.67,
+          "credit": 0
+        },
+        {
+          "account": "5081",
+          "label": "Autres valeurs mobilières (NEU CD)",
+          "debit": 0,
+          "credit": 250000
+        },
+        {
+          "account": "764",
+          "label": "Revenus des valeurs mobilières de placement",
+          "debit": 0,
+          "credit": 1916.67
+        }
+      ],
+      "explanation": "Durée : du 1er mars au 1er juin = 31 (mars) + 30 (avril) + 31 (mai) = 92 jours. Intérêts : 250 000 × 3 % × 92 / 360 = 1 916,67 € (compte 764, comme convenu). Le titre, acquis au pair, est soldé pour 250 000 € au crédit du compte 5081. La banque est débitée de l’encaissement total, 251 916,67 €. Il n’y a ni plus-value ni moins-value de cession (compte 767 ou 667) puisque le titre est remboursé à sa valeur d’acquisition."
+    }
+  ]
+}

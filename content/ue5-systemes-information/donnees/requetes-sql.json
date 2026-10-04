@@ -1,0 +1,161 @@
+{
+  "exercises": [
+    {
+      "id": "ue5-donnees-sql-0001",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "requetes-sql",
+      "difficulty": 1,
+      "tags": [
+        "SQL",
+        "GROUP BY",
+        "HAVING",
+        "WHERE"
+      ],
+      "statement": "Un contrôleur de gestion veut lister les clients dont le total des factures dépasse 50 000 €. Il écrit :\nSELECT id_client, SUM(montant) FROM FACTURE GROUP BY id_client …\nQuelle clause doit-il ajouter pour ne conserver que ces clients ?",
+      "options": [
+        "WHERE SUM(montant) > 50000",
+        "HAVING SUM(montant) > 50000",
+        "WHERE montant > 50000",
+        "ORDER BY SUM(montant) > 50000"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La condition porte sur un agrégat calculé par groupe (le total par client) : elle se place dans HAVING, évalué après le GROUP BY. L'option 1 est invalide : WHERE filtre les lignes avant regroupement et ne peut pas contenir de fonction d'agrégat. L'option 3 est syntaxiquement correcte mais ne conserve que les factures unitaires de plus de 50 000 € : un client ayant dix factures de 8 000 € serait exclu à tort. L'option 4 trie les résultats sans en éliminer aucun.",
+      "source_ref": "Norme ISO/IEC 9075 (SQL) : clauses GROUP BY et HAVING ; programme DSCG UE 5 (exploitation des données)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue5-donnees-sql-0002",
+      "type": "numeric",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "requetes-sql",
+      "difficulty": 2,
+      "tags": [
+        "SQL",
+        "GROUP BY",
+        "HAVING",
+        "résultat de requête"
+      ],
+      "statement": "La table FACTURE contient les lignes suivantes (num, client, region, montant, statut) :\nF1, Alpha, Nord, 4 200, Payée\nF2, Beta, Ouest, 1 800, Payée\nF3, Gamma, Nord, 2 500, Impayée\nF4, Alpha, Nord, 1 300, Payée\nF5, Delta, Ouest, 3 900, Payée\nF6, Beta, Ouest, 2 100, Impayée\nF7, Epsilon, Sud, 5 600, Payée\nF8, Gamma, Sud, 700, Payée\n\nOn exécute la requête :\nSELECT region, SUM(montant) AS total FROM FACTURE WHERE statut = 'Payée' GROUP BY region HAVING SUM(montant) > 5600;\n\nCalculez la somme des valeurs de la colonne total renvoyées par la requête (en €).",
+      "expected_value": 12000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "WHERE retient d'abord les factures payées (F1, F2, F4, F5, F7, F8). GROUP BY calcule ensuite le total par région : Nord = 4 200 + 1 300 = 5 500 ; Ouest = 1 800 + 3 900 = 5 700 ; Sud = 5 600 + 700 = 6 300. HAVING ne garde que les groupes dont le total est strictement supérieur à 5 600 : Ouest et Sud. Somme affichée = 5 700 + 6 300 = 12 000 €. Erreurs classiques : oublier le filtre WHERE (Nord 8 000, Ouest 7 800, Sud 6 300, soit 22 100 €) ; ignorer HAVING (17 500 €).",
+      "source_ref": "Norme ISO/IEC 9075 (SQL) : ordre d’évaluation WHERE, GROUP BY, HAVING ; programme DSCG UE 5",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue5-donnees-sql-0003",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "requetes-sql",
+      "difficulty": 3,
+      "tags": [
+        "SQL",
+        "sous-requête",
+        "NOT IN",
+        "jointure externe"
+      ],
+      "statement": "Tables : CLIENT(id_client, nom) et COMMANDE(id_commande, id_client, date_cde). La colonne id_client est renseignée pour toutes les commandes. On veut la liste des clients qui n'ont passé aucune commande en 2026. Quelle requête donne ce résultat ?",
+      "options": [
+        "SELECT c.nom FROM CLIENT c INNER JOIN COMMANDE o ON c.id_client = o.id_client WHERE o.date_cde NOT BETWEEN '2026-01-01' AND '2026-12-31';",
+        "SELECT c.nom FROM CLIENT c LEFT JOIN COMMANDE o ON c.id_client = o.id_client WHERE o.date_cde BETWEEN '2026-01-01' AND '2026-12-31' AND o.id_commande IS NULL;",
+        "SELECT c.nom FROM CLIENT c INNER JOIN COMMANDE o ON c.id_client = o.id_client WHERE o.date_cde BETWEEN '2026-01-01' AND '2026-12-31' GROUP BY c.nom HAVING COUNT(*) = 0;",
+        "SELECT nom FROM CLIENT WHERE id_client NOT IN (SELECT id_client FROM COMMANDE WHERE date_cde BETWEEN '2026-01-01' AND '2026-12-31');"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "La sous-requête de l'option 4 renvoie les identifiants des clients ayant commandé en 2026 ; NOT IN garde tous les autres, y compris les clients qui n'ont jamais commandé (la précaution sur id_client toujours renseigné évite le piège de NOT IN face à une valeur NULL). L'option 1 renvoie les clients ayant au moins une commande hors 2026, même s'ils ont aussi commandé en 2026, et omet ceux qui n'ont jamais commandé (jointure interne). L'option 2 pose deux conditions contradictoires sur la même ligne (une date en 2026 et une commande inexistante) : elle ne renvoie rien. Il aurait fallu placer le filtre de date dans la clause ON. L'option 3 ne peut rien renvoyer : après une jointure interne, chaque groupe compte au moins une ligne, COUNT(*) n'est jamais nul.",
+      "source_ref": "Norme ISO/IEC 9075 (SQL) : sous-requêtes (IN, NOT IN), jointures interne et externe ; programme DSCG UE 5",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue5-donnees-sql-0004",
+      "type": "case_study",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "requetes-sql",
+      "difficulty": 2,
+      "tags": [
+        "SQL",
+        "jointure",
+        "agrégats",
+        "cabinet",
+        "temps passés"
+      ],
+      "title": "Cabinet Aravis : exploiter les temps passés",
+      "context": "Le cabinet d'expertise comptable Aravis suit les heures de ses collaborateurs dans une base relationnelle de trois tables.\n\nCOLLABORATEUR (id_collab, nom, grade)\nC1, Martin, Senior\nC2, Ndiaye, Assistant\nC3, Roux, Manager\n\nMISSION (id_mission, client, honoraires)\nM1, Sarl Orion, 9 000\nM2, SA Vega, 14 000\nM3, SAS Lyra, 6 000\n\nTEMPS (#id_collab, #id_mission, heures)\nC1, M1, 30\nC2, M1, 45\nC1, M2, 25\nC3, M2, 10\nC2, M2, 60\nC3, M3, 12\nC2, M3, 20\n\nL'associée souhaite analyser la rentabilité horaire des missions.",
+      "sub_questions": [
+        {
+          "id": "q1-heures-assistants",
+          "kind": "numeric",
+          "prompt": "Quel résultat renvoie la requête suivante (en heures) ?\nSELECT SUM(t.heures) FROM TEMPS t INNER JOIN COLLABORATEUR c ON t.id_collab = c.id_collab WHERE c.grade = 'Assistant';",
+          "points": 3,
+          "expected_value": 125,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0
+          },
+          "unit": "h",
+          "decimals": 0,
+          "explanation": "Seul Ndiaye (C2) est assistant : 45 (M1) + 60 (M2) + 20 (M3) = 125 heures."
+        },
+        {
+          "id": "q2-missions-70h",
+          "kind": "mcq",
+          "prompt": "Quelle requête liste les missions pour lesquelles plus de 70 heures ont été saisies au total ?",
+          "points": 3,
+          "options": [
+            "SELECT id_mission, SUM(heures) FROM TEMPS WHERE SUM(heures) > 70 GROUP BY id_mission;",
+            "SELECT id_mission, SUM(heures) FROM TEMPS GROUP BY id_collab HAVING SUM(heures) > 70;",
+            "SELECT id_mission, SUM(heures) FROM TEMPS GROUP BY id_mission HAVING SUM(heures) > 70;",
+            "SELECT id_mission, heures FROM TEMPS WHERE heures > 70;"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "Il faut regrouper par mission puis filtrer sur la somme avec HAVING (option 3) : M1 = 75 h et M2 = 95 h sont retenues, M3 = 32 h est écartée. L'option 1 place un agrégat dans WHERE (erreur). L'option 2 regroupe par collaborateur, et id_mission n'est pas dans le GROUP BY. L'option 4 teste chaque saisie isolément : aucune ne dépasse 70 h, le résultat est vide."
+        },
+        {
+          "id": "q3-jointure-interne",
+          "kind": "true_false",
+          "prompt": "Si une mission M4 était créée dans MISSION sans aucune heure saisie, une jointure interne entre MISSION et TEMPS la ferait apparaître avec un total d'heures nul.",
+          "points": 1,
+          "answer": false,
+          "explanation": "Faux : la jointure interne ne garde que les lignes ayant une correspondance dans les deux tables, M4 disparaîtrait. Pour la faire apparaître, il faut une jointure externe (MISSION LEFT JOIN TEMPS), le total étant alors NULL."
+        },
+        {
+          "id": "q4-honoraires-horaires",
+          "kind": "open",
+          "prompt": "Écrivez la requête qui affiche, pour chaque mission, le client et les honoraires par heure (honoraires ÷ total des heures), puis donnez et commentez les résultats.",
+          "points": 3,
+          "model_answer": "SELECT m.id_mission, m.client, m.honoraires / SUM(t.heures) AS honoraires_heure\nFROM MISSION m INNER JOIN TEMPS t ON m.id_mission = t.id_mission\nGROUP BY m.id_mission, m.client, m.honoraires\nORDER BY honoraires_heure DESC;\nRésultats : M3 (SAS Lyra) 6 000 ÷ 32 = 187,50 € ; M2 (SA Vega) 14 000 ÷ 95 ≈ 147,37 € ; M1 (Sarl Orion) 9 000 ÷ 75 = 120 €. Il ne faut pas écrire SUM(m.honoraires) : la jointure répète les honoraires sur chaque ligne de temps, ce qui les multiplierait. La mission Orion est la moins rentable par heure ; l'analyse devrait être affinée en valorisant les heures au coût de chaque grade (la mission M1 consomme beaucoup d'heures d'assistant, moins coûteuses).",
+          "key_points": [
+            "Jointure MISSION – TEMPS sur id_mission et regroupement par mission",
+            "Toutes les colonnes non agrégées (id_mission, client, honoraires) dans le GROUP BY",
+            "Ne pas sommer les honoraires répétés par la jointure",
+            "Résultats : M3 187,50 €, M2 147,37 €, M1 120 € par heure"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas mobilise la jointure interne, le filtre sur les lignes (WHERE) et sur les groupes (HAVING) : 125 heures d'assistant ; missions de plus de 70 h : M1 (75 h) et M2 (95 h) ; honoraires horaires : 120 €, 147,37 € et 187,50 €.",
+      "source_ref": "Norme ISO/IEC 9075 (SQL) : SELECT, INNER JOIN, GROUP BY, HAVING ; programme DSCG UE 5 (exploitation des données)",
+      "verified": true,
+      "estimated_seconds": 720
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "exercises": [
+    {
+      "id": "ue5-donnees-bigdata-0001",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "big-data-nosql-api",
+      "difficulty": 1,
+      "tags": [
+        "big data",
+        "3V",
+        "variété"
+      ],
+      "statement": "Une enseigne veut analyser ensemble ses tickets de caisse (tables), les avis clients publiés en ligne (textes libres), les photos postées sur les réseaux sociaux et les journaux de navigation de son site (fichiers JSON). Quelle caractéristique du big data cette situation illustre-t-elle principalement ?",
+      "options": [
+        "Le volume",
+        "La variété",
+        "La vélocité",
+        "La véracité"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La variété désigne l'hétérogénéité des formats : données structurées (tickets), semi-structurées (JSON) et non structurées (textes, images), qu'un SGBD relationnel classique traite mal. Le volume (option 1) renvoie à la quantité de données, la vélocité (option 3) à la vitesse de production et de traitement (flux en temps réel), la véracité (option 4) à la fiabilité des données (les avis en ligne peuvent être faux, mais ce n'est pas ce que décrit l'énoncé).",
+      "source_ref": "Programme DSCG UE 5 : données massives (big data) et leurs caractéristiques",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue5-donnees-bigdata-0002",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "big-data-nosql-api",
+      "difficulty": 2,
+      "tags": [
+        "NoSQL",
+        "base orientée graphe",
+        "détection de fraude"
+      ],
+      "statement": "Une banque veut détecter des réseaux de fraude en analysant les liens entre clients, comptes, adresses, téléphones et bénéficiaires de virements : il s'agit de trouver rapidement des chaînes de relations sur plusieurs niveaux (A partage une adresse avec B, qui vire à C…). Quel type de base NoSQL est le plus adapté ?",
+      "options": [
+        "Une base clé-valeur",
+        "Une base orientée documents",
+        "Une base orientée colonnes",
+        "Une base orientée graphe"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Une base orientée graphe stocke des nœuds (clients, comptes, adresses) et des relations (partage, virement) et parcourt efficacement des chemins sur plusieurs niveaux, ce qui exigerait de nombreuses jointures coûteuses en relationnel. La base clé-valeur (option 1) est faite pour des accès très rapides à une valeur par sa clé (cache, sessions), sans requête sur les liens. La base documents (option 2) convient à des objets au schéma souple (fiches produits, profils). La base en colonnes (option 3) sert aux analyses massives sur quelques attributs (séries temporelles, agrégats).",
+      "source_ref": "Programme DSCG UE 5 : bases NoSQL (clé-valeur, documents, colonnes, graphes)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue5-donnees-bigdata-0003",
+      "type": "true_false",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "big-data-nosql-api",
+      "difficulty": 2,
+      "tags": [
+        "API",
+        "REST",
+        "sans état"
+      ],
+      "statement": "Une API REST conserve côté serveur l'état de la session de chaque application cliente, de sorte que les requêtes suivantes n'ont pas besoin de rappeler l'identité ni le contexte du client.",
+      "answer": false,
+      "justification": "Une API REST est sans état : chaque requête contient toutes les informations nécessaires à son traitement, dont le jeton d'authentification.",
+      "explanation": "Le principe d'absence d'état (stateless) de REST signifie que le serveur ne mémorise pas de session entre deux requêtes : le client transmet à chaque appel son jeton (par exemple obtenu via OAuth 2.0) et les paramètres utiles. Cela facilite la montée en charge (n'importe quel serveur peut traiter n'importe quelle requête). Les ressources sont désignées par des URL et manipulées par les verbes HTTP (GET, POST, PUT ou PATCH, DELETE), les données étant le plus souvent échangées en JSON.",
+      "source_ref": "Architecture REST (R. Fielding, 2000) : contrainte d’absence d’état ; programme DSCG UE 5 (API)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue5-donnees-bigdata-0004",
+      "type": "numeric",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "big-data-nosql-api",
+      "difficulty": 2,
+      "tags": [
+        "big data",
+        "volumétrie",
+        "internet des objets",
+        "réplication"
+      ],
+      "statement": "Un industriel équipe ses lignes de production de 2 500 capteurs. Chaque capteur envoie une mesure toutes les 10 secondes, 24 h sur 24 ; chaque mesure occupe 250 octets. Les données sont conservées un an (365 jours) dans un système de fichiers distribué qui réplique chaque bloc en 3 exemplaires. Calculez l'espace de stockage brut nécessaire pour une année, réplication comprise (en Go, avec 1 Go = 10⁹ octets, arrondi à l'unité).",
+      "expected_value": 5913,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "unit": "Go",
+      "decimals": 0,
+      "explanation": "Mesures par capteur et par jour = 86 400 s ÷ 10 = 8 640. Volume quotidien = 2 500 × 8 640 × 250 = 5,4 × 10⁹ octets = 5,4 Go. Volume annuel = 5,4 × 365 = 1 971 Go. Avec 3 réplicas : 1 971 × 3 = 5 913 Go, soit environ 5,9 To. Erreur classique : oublier la réplication (1 971 Go), qui triple le stockage mais protège contre la panne d'un serveur.",
+      "source_ref": "Programme DSCG UE 5 : données massives (volume, stockage distribué)",
+      "verified": true,
+      "estimated_seconds": 180
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-invest-incert-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "investissement-avenir-incertain",
+      "difficulty": 1,
+      "tags": [
+        "avenir incertain",
+        "Wald",
+        "maximin"
+      ],
+      "source_ref": "Théorie de la décision en avenir incertain : critère de Wald (maximin)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "En avenir incertain (probabilités des états de la nature inconnues), en quoi consiste le critère de Wald ?",
+      "options": [
+        "Retenir le projet dont le meilleur résultat possible est le plus élevé",
+        "Retenir le projet dont la moyenne des résultats est la plus élevée",
+        "Retenir le projet dont le regret maximal est le plus faible",
+        "Retenir le projet dont le plus mauvais résultat possible est le meilleur"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Le critère de Wald, ou maximin (option 4), est celui du décideur prudent : il compare les pires résultats de chaque projet et retient le meilleur d'entre eux. L'option 1 décrit le maximax (décideur optimiste). L'option 2 décrit le critère de Laplace (états supposés équiprobables). L'option 3 décrit le critère de Savage (minimax regret)."
+    },
+    {
+      "id": "ue2-invest-incert-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "investissement-avenir-incertain",
+      "difficulty": 2,
+      "tags": [
+        "espérance-variance",
+        "dominance",
+        "coefficient de variation"
+      ],
+      "source_ref": "Critère espérance-variance (Markowitz) : dominance si espérance au moins égale et écart-type au plus égal, avec une inégalité stricte",
+      "verified": true,
+      "estimated_seconds": 90,
+      "statement": "Quatre projets ont les caractéristiques suivantes (VAN en k€) : A : E = 50, σ = 20 ; B : E = 80, σ = 40 ; C : E = 50, σ = 30 ; D : E = 40, σ = 25. Selon le critère espérance-variance, quelle affirmation est exacte ?",
+      "options": [
+        "C est dominé par A",
+        "B est dominé par A",
+        "D domine C",
+        "A domine B, car son coefficient de variation est plus faible"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "A domine C (option 1) : même espérance (50) et risque plus faible (20 < 30). L'option 2 est fausse : B a une espérance plus élevée que A, au prix d'un risque plus fort ; aucun ne domine l'autre et le choix dépend de l'aversion au risque. L'option 3 est fausse : D a un risque plus faible que C mais aussi une espérance plus faible. L'option 4 confond dominance et coefficient de variation : le CV de A (0,40) est inférieur à celui de B (0,50), mais B offre une espérance supérieure, il n'y a pas de dominance."
+    },
+    {
+      "id": "ue2-invest-incert-0003",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "investissement-avenir-incertain",
+      "difficulty": 3,
+      "tags": [
+        "avenir incertain",
+        "Savage",
+        "regret"
+      ],
+      "source_ref": "Théorie de la décision en avenir incertain : critère de Savage (minimax regret)",
+      "verified": true,
+      "estimated_seconds": 150,
+      "statement": "Trois projets ont les VAN suivantes (en k€) selon trois états de la nature S1, S2 et S3 : P1 : 200 ; 120 ; −40. P2 : 150 ; 100 ; 60. P3 : 260 ; 60 ; −80. Quel projet retient-on selon le critère de Savage (minimax regret) ?",
+      "options": [
+        "P2",
+        "P3",
+        "Indifférence entre P1 et P2",
+        "P1"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Meilleure VAN par état : S1 : 260 ; S2 : 120 ; S3 : 60. Regrets : P1 : 60 ; 0 ; 100 (max 100). P2 : 110 ; 20 ; 0 (max 110). P3 : 0 ; 60 ; 140 (max 140). Le plus petit regret maximal est celui de P1 (option 4). P2 (option 1) serait retenu par Wald (pire résultat 60) ou par Laplace (moyenne 103,3), pas par Savage. P3 (option 2) serait retenu par le maximax. Il n'y a pas d'égalité entre P1 et P2 (100 contre 110), ce qui écarte l'option 3."
+    },
+    {
+      "id": "ue2-invest-incert-0004",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "investissement-avenir-incertain",
+      "difficulty": 1,
+      "tags": [
+        "coefficient de variation",
+        "risque"
+      ],
+      "source_ref": "Critère espérance-variance : coefficient de variation = σ / E",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Le coefficient de variation σ(VAN) / E(VAN) mesure le risque d'un projet par unité de VAN espérée : plus il est élevé, plus le risque relatif est fort.",
+      "answer": true,
+      "justification": "Vrai : rapporter l'écart-type à l'espérance permet de comparer le risque de projets de tailles différentes.",
+      "explanation": "L'écart-type mesure la dispersion en valeur absolue ; deux projets de tailles très différentes ne sont donc pas comparables par σ seul. Le coefficient de variation rapporte ce risque à l'espérance. Il ne remplace pas la dominance : un projet à CV plus élevé peut rester préféré par un décideur peu averse au risque si son espérance est forte."
+    },
+    {
+      "id": "ue2-invest-incert-0005",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "investissement-avenir-incertain",
+      "difficulty": 3,
+      "tags": [
+        "arbre de décision",
+        "résolution à rebours",
+        "espérance"
+      ],
+      "source_ref": "Arbre de décision : résolution à rebours, espérance aux nœuds d’aléa et meilleure branche aux nœuds de décision",
+      "verified": true,
+      "estimated_seconds": 420,
+      "statement": "Une entreprise hésite entre deux usines (montants en k€). Grande usine : investissement 1 000 en date 0 ; valeur actuelle en date 0 des flux : 1 600 si la demande est forte (probabilité 0,6), 700 si elle est faible (0,4). Petite usine : investissement 600 en date 0 ; valeur actuelle en date 0 des flux : 900 (demande forte) ou 650 (demande faible). Si la demande se révèle forte, la petite usine peut être agrandie en date 1 pour 450 (montant payé en date 1), ce qui ajoute des flux d'une valeur actuelle en date 0 de 600. Le taux d'actualisation est de 10 %. Calculez l'espérance de VAN de la meilleure décision, en k€ (deux décimales).",
+      "expected_value": 314.55,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "unit": "k€",
+      "decimals": 2,
+      "explanation": "Grande usine : E(VAN) = 0,6 × (1 600 − 1 000) + 0,4 × (700 − 1 000) = 360 − 120 = 240. Petite usine, à rebours : en date 1, si la demande est forte, agrandir rapporte 600 − 450 / 1,10 = 600 − 409,09 = 190,91 > 0, donc on agrandit. VAN demande forte = 900 − 600 + 190,91 = 490,91 ; VAN demande faible = 650 − 600 = 50. E(VAN) = 0,6 × 490,91 + 0,4 × 50 = 294,55 + 20 = 314,55 k€ > 240 : on construit la petite usine. Sans l'option d'agrandissement, la petite usine ne vaudrait que 200 et l'on choisirait à tort la grande ; oublier d'actualiser les 450 donnerait 290."
+    },
+    {
+      "id": "ue2-invest-incert-0006",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "investissement-avenir-incertain",
+      "difficulty": 2,
+      "tags": [
+        "avenir incertain",
+        "Laplace",
+        "Wald",
+        "Hurwicz"
+      ],
+      "source_ref": "Théorie de la décision en avenir incertain : critères de Laplace, Wald (maximin) et Hurwicz",
+      "verified": true,
+      "estimated_seconds": 600,
+      "title": "Choisir un format de magasin sans probabilités",
+      "context": "Une enseigne doit choisir entre trois formats de magasin X, Y et Z. Faute d'historique, elle ne peut pas attribuer de probabilités aux trois scénarios de fréquentation. VAN estimées (en k€) :\n- X : 500 (forte) ; 200 (moyenne) ; −150 (faible).\n- Y : 300 (forte) ; 180 (moyenne) ; 40 (faible).\n- Z : 380 (forte) ; 250 (moyenne) ; −60 (faible).\nLe comité de direction souhaite comparer plusieurs critères avant de décider.",
+      "sub_questions": [
+        {
+          "id": "laplace",
+          "kind": "mcq",
+          "prompt": "Quel format retient-on selon le critère de Laplace ?",
+          "points": 2,
+          "options": [
+            "X",
+            "Y",
+            "Z"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "Moyennes : X = 550 / 3 ≈ 183,3 ; Y = 520 / 3 ≈ 173,3 ; Z = 570 / 3 = 190. Z est retenu."
+        },
+        {
+          "id": "wald",
+          "kind": "mcq",
+          "prompt": "Quel format retient-on selon le critère de Wald (maximin) ?",
+          "points": 2,
+          "options": [
+            "X",
+            "Y",
+            "Z"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Pires résultats : X = −150 ; Y = 40 ; Z = −60. Le meilleur des pires est celui de Y."
+        },
+        {
+          "id": "hurwicz",
+          "kind": "numeric",
+          "prompt": "Avec le critère de Hurwicz et un coefficient d'optimisme α = 0,6 (appliqué au meilleur résultat), quelle est la valeur du critère pour le format retenu, en k€ ?",
+          "points": 3,
+          "expected_value": 240,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "Hurwicz = 0,6 × max + 0,4 × min. X : 300 − 60 = 240 ; Y : 180 + 16 = 196 ; Z : 228 − 24 = 204. X est retenu, avec une valeur de 240."
+        },
+        {
+          "id": "analyse",
+          "kind": "open",
+          "prompt": "Les critères désignent des formats différents. Comment expliquer ce résultat et comment le comité peut-il trancher ?",
+          "points": 3,
+          "model_answer": "Chaque critère traduit une attitude face au risque : Wald (Y) est celui d'un décideur très prudent qui se protège contre le pire ; Hurwicz avec α = 0,6 (X) traduit un certain optimisme ; Laplace (Z) suppose les scénarios équiprobables. Le comité doit expliciter son aversion au risque et sa capacité à supporter une VAN négative (−150 pour X). Z apparaît comme un compromis : meilleure moyenne, perte limitée en scénario faible. Il peut aussi chercher de l'information pour probabiliser les scénarios (étude de marché) et passer à un raisonnement en espérance-variance.",
+          "key_points": [
+            "Les critères reflètent des profils de décideur différents (prudent, optimiste, neutre)",
+            "Le choix dépend de l'aversion au risque et de la capacité à supporter une perte",
+            "Z constitue un compromis (meilleure moyenne, perte limitée)",
+            "Recueillir de l'information pour probabiliser les scénarios"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "En avenir non probabilisable, aucun critère n'est objectivement supérieur. Laplace, Wald et Hurwicz donnent ici trois réponses différentes, ce qui oblige le décideur à expliciter sa préférence face au risque."
+    }
+  ]
+}
