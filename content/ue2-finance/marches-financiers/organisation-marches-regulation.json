@@ -1,0 +1,142 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-marches-regul-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "organisation-marches-regulation",
+      "difficulty": 1,
+      "tags": [
+        "AMF",
+        "régulation"
+      ],
+      "source_ref": "C. mon. fin. art. L621-1",
+      "verified": true,
+      "estimated_seconds": 50,
+      "statement": "Parmi les missions suivantes, laquelle relève de l'Autorité des marchés financiers (AMF) ?",
+      "options": [
+        "Fixer les taux directeurs applicables aux banques de la zone euro",
+        "Veiller à la protection de l'épargne investie en instruments financiers et à l'information des investisseurs",
+        "Contrôler la solvabilité et les exigences de fonds propres des compagnies d'assurance",
+        "Tenir les comptes-titres des investisseurs et assurer le règlement-livraison des titres"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'option 2 est correcte : selon l'article L621-1 du Code monétaire et financier, l'AMF, autorité publique indépendante, veille à la protection de l'épargne investie en instruments financiers, à l'information des investisseurs et au bon fonctionnement des marchés. L'option 1 relève de la BCE (politique monétaire). L'option 3 relève de l'ACPR (contrôle prudentiel des banques et assurances). L'option 4 relève des teneurs de compte-conservateurs et du dépositaire central (Euroclear France), pas du régulateur."
+    },
+    {
+      "id": "ue2-marches-regul-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "organisation-marches-regulation",
+      "difficulty": 2,
+      "tags": [
+        "MiFID II",
+        "protection des investisseurs",
+        "adéquation"
+      ],
+      "source_ref": "Directive 2014/65/UE (MiFID II), art. 25 §2 (évaluation de l'adéquation) et §3 (caractère approprié)",
+      "verified": true,
+      "estimated_seconds": 75,
+      "statement": "Une banque, prestataire de services d'investissement, fournit un service de conseil en investissement à un client non professionnel. Que lui impose MiFID II avant de recommander un produit ?",
+      "options": [
+        "Vérifier seulement que le client comprend le produit (caractère approprié), puis exécuter l'ordre",
+        "Recueillir les connaissances et l'expérience du client, sa situation financière (dont sa capacité à subir des pertes) et ses objectifs (dont sa tolérance au risque), pour s'assurer que la recommandation lui est adaptée",
+        "Reclasser d'office le client en client professionnel afin d'alléger les obligations d'information",
+        "Aucune obligation particulière : le conseil n'est pas un service d'investissement au sens de MiFID II"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'option 2 décrit l'évaluation de l'adéquation, exigée pour le conseil en investissement et la gestion de portefeuille : le prestataire collecte les informations sur les connaissances et l'expérience, la situation financière et les objectifs du client, et ne recommande que des produits adaptés. L'option 1 correspond au test du caractère approprié, moins exigeant, prévu pour les autres services (réception-transmission d'ordres sur produits complexes) ; il ne suffit pas en cas de conseil. L'option 3 est fausse : le passage en catégorie professionnelle suppose des critères et une demande du client, jamais une décision unilatérale pour alléger la protection. L'option 4 est fausse : le conseil en investissement est un service d'investissement visé par la directive."
+    },
+    {
+      "id": "ue2-marches-regul-0003",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "organisation-marches-regulation",
+      "difficulty": 2,
+      "tags": [
+        "abus de marché",
+        "information privilégiée",
+        "MAR"
+      ],
+      "source_ref": "Règlement (UE) 596/2014 (MAR), art. 7 (information privilégiée), art. 14 (interdiction des opérations d'initiés) et art. 17 (publication)",
+      "verified": true,
+      "estimated_seconds": 80,
+      "statement": "Le directeur financier d'une société cotée apprend, deux semaines avant la publication prévue, que le résultat semestriel sera inférieur de 40 % au consensus des analystes. L'information est fiable mais encore confidentielle. Quelle qualification retenir au regard du règlement sur les abus de marché ?",
+      "options": [
+        "Une simple rumeur, puisque les comptes ne sont pas encore arrêtés",
+        "Une information publique dès lors que les analystes suivent la société",
+        "Une information privilégiée : précise, non publique, concernant l'émetteur et susceptible d'influencer sensiblement le cours",
+        "Une manipulation de marché, puisque le cours actuel est trompeur"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'option 3 est correcte : l'information est précise (ampleur chiffrée de l'écart), non publique, concerne directement l'émetteur et, publiée, influencerait sensiblement le cours (critères de l'art. 7 MAR). Le directeur financier ne peut ni négocier les titres, ni recommander de le faire, ni communiquer l'information hors du cadre normal de ses fonctions ; l'émetteur doit la publier dès que possible (art. 17), sauf différé encadré. L'option 1 est fausse : une information peut être précise sans être définitive ou arrêtée. L'option 2 est fausse : le suivi par les analystes ne rend pas publique une information interne. L'option 4 confond : la manipulation de marché suppose un comportement (ordres, diffusion d'informations) donnant des indications fausses ou trompeuses ; la simple détention d'une information n'en est pas une."
+    },
+    {
+      "id": "ue2-marches-regul-0004",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "organisation-marches-regulation",
+      "difficulty": 1,
+      "tags": [
+        "marché primaire",
+        "marché secondaire"
+      ],
+      "source_ref": "Organisation des marchés financiers : marché primaire (émission) et marché secondaire (négociation des titres existants)",
+      "verified": true,
+      "estimated_seconds": 40,
+      "statement": "Lorsqu'un investisseur achète en bourse des actions existantes d'une société cotée, cette société reçoit les fonds correspondants.",
+      "answer": false,
+      "justification": "Faux : l'achat porte sur des titres déjà émis (marché secondaire) ; les fonds vont au vendeur, pas à la société.",
+      "explanation": "Seul le marché primaire (introduction en bourse, augmentation de capital, émission obligataire) apporte des capitaux à l'émetteur. Le marché secondaire organise l'échange des titres existants entre investisseurs : il assure la liquidité des placements et la formation d'un prix de référence, ce qui facilite indirectement les émissions futures, mais la société ne perçoit rien lors de ces transactions."
+    },
+    {
+      "id": "ue2-marches-regul-0005",
+      "type": "journal_entry",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "organisation-marches-regulation",
+      "difficulty": 2,
+      "tags": [
+        "valeurs mobilières de placement",
+        "acquisition",
+        "frais sur titres"
+      ],
+      "source_ref": "PCG (règl. ANC 2014-03) : compte 503 « Actions » (valeurs mobilières de placement), compte 6271 « Frais sur titres (achat, vente, garde des titres) », compte 512 « Banques »",
+      "verified": true,
+      "estimated_seconds": 180,
+      "statement": "Le 12 mars N, la société Orvane passe par son prestataire de services d'investissement un ordre d'achat de 500 actions de la société Bexa, cotée sur un marché réglementé, à titre de placement de trésorerie. L'ordre est exécuté au cours de 42 € par action. Les frais de courtage s'élèvent à 105 € (non soumis à TVA). Orvane a choisi de comptabiliser les frais d'acquisition des titres en charges (compte 6271). Le compte bancaire est débité du total le jour même. Passez l'écriture d'acquisition.",
+      "date": "12/03/N",
+      "entries": [
+        {
+          "account": "503",
+          "label": "Actions (valeurs mobilières de placement)",
+          "debit": 21000,
+          "credit": 0
+        },
+        {
+          "account": "6271",
+          "label": "Frais sur titres",
+          "debit": 105,
+          "credit": 0
+        },
+        {
+          "account": "512",
+          "label": "Banques",
+          "debit": 0,
+          "credit": 21105
+        }
+      ],
+      "explanation": "Les actions acquises pour un placement de trésorerie sont des valeurs mobilières de placement : coût d'acquisition 500 × 42 = 21 000 € au débit du 503. Les frais d'acquisition peuvent être incorporés au coût ou comptabilisés en charges ; l'énoncé retient la seconde option : 105 € au débit du 6271. Le compte 512 est crédité du décaissement total, 21 105 €. Si Orvane avait opté pour l'incorporation, le 503 aurait été débité de 21 105 €."
+    }
+  ]
+}

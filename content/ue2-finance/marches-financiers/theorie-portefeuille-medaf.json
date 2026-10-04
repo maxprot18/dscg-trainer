@@ -1,0 +1,224 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-marches-ptf-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "theorie-portefeuille-medaf",
+      "difficulty": 1,
+      "tags": [
+        "diversification",
+        "risque systématique",
+        "risque spécifique"
+      ],
+      "source_ref": "Théorie du portefeuille (Markowitz, 1952) : décomposition du risque total en risque systématique et risque spécifique",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Un investisseur détient un portefeuille très diversifié d'une centaine d'actions de secteurs différents. Quel risque subsiste principalement ?",
+      "options": [
+        "Le risque spécifique propre à chaque société",
+        "Aucun risque, la diversification ayant tout éliminé",
+        "Le risque de défaillance de chaque émetteur pris isolément",
+        "Le risque systématique, lié aux fluctuations de l'ensemble du marché"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'option 4 est correcte : la diversification élimine le risque spécifique (ou diversifiable), car les événements propres à chaque société se compensent ; le risque systématique (conjoncture, taux, inflation) affecte tous les titres et ne se diversifie pas. L'option 1 désigne précisément le risque éliminé. L'option 2 est fausse : le risque de marché demeure. L'option 3 est une composante du risque spécifique, dont le poids devient négligeable dans un portefeuille de cent lignes."
+    },
+    {
+      "id": "ue2-marches-ptf-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "theorie-portefeuille-medaf",
+      "difficulty": 2,
+      "tags": [
+        "MEDAF",
+        "droite de marché des titres",
+        "alpha"
+      ],
+      "source_ref": "MEDAF (Sharpe, 1964) : E(R_i) = r_f + β_i [E(R_M) − r_f] (droite de marché des titres)",
+      "verified": true,
+      "estimated_seconds": 90,
+      "statement": "Le taux sans risque est de 2,5 % et la prime de risque du marché de 6 %. L'action Tessa a un bêta de 0,8. Un analyste prévoit pour Tessa une rentabilité de 8,5 % sur l'année à venir. Selon le MEDAF, que peut-on conclure ?",
+      "options": [
+        "Tessa est surévaluée : sa rentabilité prévue est inférieure à la rentabilité du marché (8,5 %)",
+        "Tessa est sous-évaluée : sa rentabilité prévue dépasse la rentabilité d'équilibre de 7,3 % ; elle se situe au-dessus de la droite de marché des titres",
+        "Tessa est correctement évaluée, car son bêta est inférieur à 1",
+        "Tessa est sous-évaluée, car sa rentabilité prévue dépasse 2,5 % + 0,8 × 8,5 % = 9,3 %"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'option 2 est correcte : rentabilité d'équilibre = 2,5 % + 0,8 × 6 % = 7,3 %. La rentabilité prévue (8,5 %) est supérieure : alpha de +1,2 point, le titre est au-dessus de la SML, donc sous-évalué (son prix devrait monter jusqu'à ce que sa rentabilité attendue revienne à 7,3 %). L'option 1 compare à la rentabilité du marché (2,5 + 6 = 8,5 %) sans tenir compte du bêta. L'option 3 confond niveau de risque et évaluation. L'option 4 applique le bêta à la rentabilité du marché au lieu de la prime de risque, et sa conclusion est d'ailleurs incohérente avec son propre calcul (8,5 % < 9,3 %)."
+    },
+    {
+      "id": "ue2-marches-ptf-0003",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "theorie-portefeuille-medaf",
+      "difficulty": 1,
+      "tags": [
+        "MEDAF",
+        "risque systématique"
+      ],
+      "source_ref": "MEDAF (Sharpe, 1964) : seul le risque systématique, mesuré par le bêta, est rémunéré",
+      "verified": true,
+      "estimated_seconds": 40,
+      "statement": "Selon le MEDAF, la rentabilité exigée d'un titre dépend uniquement de son risque systématique, mesuré par son bêta, et non de son risque total.",
+      "answer": true,
+      "justification": "Vrai : le risque spécifique pouvant être éliminé gratuitement par la diversification, le marché ne le rémunère pas.",
+      "explanation": "Dans le MEDAF, E(R_i) = r_f + β_i [E(R_M) − r_f]. Deux titres de même bêta ont la même rentabilité exigée, même si l'un a un écart-type bien plus élevé : le surplus de risque est spécifique et disparaît dans un portefeuille diversifié. L'écart-type (risque total) n'intervient que pour les portefeuilles efficients, sur la droite de marché des capitaux."
+    },
+    {
+      "id": "ue2-marches-ptf-0004",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "theorie-portefeuille-medaf",
+      "difficulty": 2,
+      "tags": [
+        "bêta",
+        "covariance"
+      ],
+      "source_ref": "Bêta : β_i = cov(R_i, R_M) / σ²_M",
+      "verified": true,
+      "estimated_seconds": 150,
+      "statement": "Sur les 60 derniers mois, la covariance entre la rentabilité mensuelle de l'action Dorval et celle de l'indice de marché est de 0,0288 (exprimée en rentabilités décimales annualisées). L'écart-type annualisé de la rentabilité du marché est de 16 % ; celui de Dorval est de 25 %. Calculez le bêta de Dorval (2 décimales).",
+      "expected_value": 1.125,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.01
+      },
+      "decimals": 2,
+      "explanation": "β = cov(R_D, R_M)/σ²_M = 0,0288/0,16² = 0,0288/0,0256 ≈ 1,13 (exactement 1,125). L'écart-type de Dorval est inutile pour le bêta ; il permettrait de retrouver le coefficient de corrélation : ρ = 0,0288/(0,25 × 0,16) = 0,72. Erreurs classiques : diviser par l'écart-type du marché (0,0288/0,16 = 0,18) ou par le produit des écarts-types (0,72, qui est la corrélation)."
+    },
+    {
+      "id": "ue2-marches-ptf-0005",
+      "type": "journal_entry",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "theorie-portefeuille-medaf",
+      "difficulty": 2,
+      "tags": [
+        "valeurs mobilières de placement",
+        "cession",
+        "coût moyen pondéré"
+      ],
+      "source_ref": "PCG (règl. ANC 2014-03) : titres fongibles évalués à la sortie au coût moyen pondéré ou selon la méthode PEPS ; comptes 503 « Actions », 667 « Charges nettes sur cessions de valeurs mobilières de placement », 767 « Produits nets sur cessions de valeurs mobilières de placement », 6271 « Frais sur titres »",
+      "verified": true,
+      "estimated_seconds": 240,
+      "statement": "La société Varenne détient en valeurs mobilières de placement 500 actions Celtis, acquises en deux lots : 200 actions à 45 € puis 300 actions à 40 € (frais d'acquisition comptabilisés en charges). Les titres n'ont jamais été dépréciés. Le 20 novembre N, elle cède 300 actions au cours de 41 €. Les frais de cession, 60 €, sont prélevés par la banque sur le produit de la vente et comptabilisés au compte 6271. Les titres sortis sont évalués au coût moyen pondéré. Passez l'écriture de cession (résultat de cession constaté sur un compte de charges ou de produits nets, selon le cas).",
+      "date": "20/11/N",
+      "entries": [
+        {
+          "account": "512",
+          "label": "Banques",
+          "debit": 12240,
+          "credit": 0
+        },
+        {
+          "account": "6271",
+          "label": "Frais sur titres",
+          "debit": 60,
+          "credit": 0
+        },
+        {
+          "account": "667",
+          "label": "Charges nettes sur cessions de valeurs mobilières de placement",
+          "debit": 300,
+          "credit": 0
+        },
+        {
+          "account": "503",
+          "label": "Actions (valeurs mobilières de placement)",
+          "debit": 0,
+          "credit": 12600
+        }
+      ],
+      "explanation": "Coût moyen pondéré : (200 × 45 + 300 × 40)/500 = 21 000/500 = 42 €. Coût de sortie : 300 × 42 = 12 600 €, crédité au 503. Prix de cession : 300 × 41 = 12 300 €, d'où une moins-value de 300 €, enregistrée au 667 (un résultat positif aurait été porté au 767). La banque verse 12 300 − 60 = 12 240 € ; les frais sont une charge (6271). Les 200 actions restantes figurent au bilan pour 200 × 42 = 8 400 €."
+    },
+    {
+      "id": "ue2-marches-ptf-0006",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "theorie-portefeuille-medaf",
+      "difficulty": 3,
+      "tags": [
+        "Markowitz",
+        "diversification",
+        "MEDAF"
+      ],
+      "source_ref": "Markowitz (1952) : E(R_P) et σ²_P d'un portefeuille de deux titres ; MEDAF (Sharpe, 1964)",
+      "verified": true,
+      "estimated_seconds": 840,
+      "title": "Portefeuille Ardèle : deux actions et le marché",
+      "context": "Mme Ardèle souhaite investir dans deux actions cotées :\n- action A : rentabilité espérée 8 %, écart-type 20 %, bêta 0,7 ;\n- action B : rentabilité espérée 14 %, écart-type 32 %, bêta 1,6.\nLe coefficient de corrélation entre les rentabilités de A et de B est de 0,3.\n\nElle envisage de placer 60 % de son capital en A et 40 % en B.\n\nDonnées de marché : taux sans risque 3 % ; rentabilité espérée du portefeuille de marché 9 %.\n\nRappel : σ²_P = x² σ²_A + (1 − x)² σ²_B + 2x(1 − x) ρ σ_A σ_B.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "Calculez la rentabilité espérée du portefeuille 60 % A / 40 % B, en % (1 décimale).",
+          "points": 2,
+          "expected_value": 10.4,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "E(R_P) = 0,6 × 8 + 0,4 × 14 = 4,8 + 5,6 = 10,4 %."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "prompt": "Calculez l'écart-type du portefeuille, en % (1 décimale).",
+          "points": 3,
+          "expected_value": 20,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "σ²_P = 0,36 × 0,04 + 0,16 × 0,1024 + 2 × 0,6 × 0,4 × 0,3 × 0,20 × 0,32 = 0,0144 + 0,016384 + 0,009216 = 0,04. σ_P = 20,0 %. La moyenne pondérée des écarts-types aurait donné 0,6 × 20 + 0,4 × 32 = 24,8 %."
+        },
+        {
+          "id": "q3",
+          "kind": "mcq",
+          "prompt": "D'après le MEDAF, comment l'action B est-elle évaluée par le marché ?",
+          "points": 2,
+          "options": [
+            "Elle est surévaluée : sa rentabilité espérée (14 %) est inférieure à sa rentabilité d'équilibre",
+            "Elle est correctement évaluée, puisque son bêta est supérieur à 1",
+            "Elle est sous-évaluée : sa rentabilité d'équilibre est de 12,6 % et sa rentabilité espérée de 14 % (alpha de +1,4 point)",
+            "Elle est sous-évaluée : sa rentabilité d'équilibre est de 1,6 × 9 % = 14,4 %"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "Rentabilité d'équilibre de B = 3 + 1,6 × (9 − 3) = 12,6 %. B promet 14 % : alpha positif, titre au-dessus de la SML, donc sous-évalué. L'option 4 applique le bêta à la rentabilité du marché au lieu de la prime ; l'option 1 aboutit à la conclusion inverse ; l'option 2 confond niveau de risque et évaluation."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "prompt": "Commentez l'intérêt de la diversification pour Mme Ardèle et situez ce portefeuille par rapport à la frontière efficiente.",
+          "points": 3,
+          "model_answer": "Le portefeuille a le même écart-type que l'action A seule (20 %) mais une rentabilité espérée supérieure (10,4 % contre 8 %) : A détenue seule est dominée, ce qui illustre l'effet de diversification dû à une corrélation faible (0,3). Le risque du portefeuille (20 %) est nettement inférieur à la moyenne pondérée des risques (24,8 %). Ce portefeuille se situe sur la partie efficiente de la courbe des combinaisons de A et B (au-dessus du portefeuille de variance minimale, obtenu ici avec environ 80 % de A) : aucune combinaison de A et B n'offre plus de rentabilité pour 20 % de risque. Avec un actif sans risque et le marché, il faudrait le comparer à la droite de marché des capitaux et rappeler que seul le risque systématique est rémunéré (bêta du portefeuille 0,6 × 0,7 + 0,4 × 1,6 = 1,06).",
+          "key_points": [
+            "Même risque que A, rentabilité supérieure : A seule est dominée",
+            "σ_P (20 %) < moyenne pondérée (24,8 %) grâce à ρ < 1",
+            "Portefeuille sur la partie efficiente de la courbe A-B",
+            "Bêta du portefeuille = moyenne pondérée (1,06) ; seul le risque systématique est rémunéré"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas illustre les deux apports du cours : la diversification de Markowitz (réduction du risque dès que ρ < 1) et l'évaluation d'équilibre par le MEDAF (comparaison de la rentabilité espérée à la SML)."
+    }
+  ]
+}

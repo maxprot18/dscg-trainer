@@ -24,6 +24,214 @@
       "unit": "ans",
       "decimals": 2,
       "explanation": "Flux : 40 € en années 1 à 3, 1 040 € en année 4. Valeurs actuelles à 5 % : 38,10 ; 36,28 ; 34,55 ; 855,61 → prix P ≈ 964,54 €. Flux actualisés pondérés par leur date : 1 × 38,10 + 2 × 36,28 + 3 × 34,55 + 4 × 855,61 ≈ 38,10 + 72,56 + 103,66 + 3 422,44 = 3 636,76. Duration D = 3 636,76 / 964,54 ≈ 3,77 ans. Elle est inférieure à la maturité (4 ans) car les coupons sont perçus avant l'échéance. Sensibilité associée : S = −D/(1+r) ≈ −3,59 : une hausse de 1 point des taux fait baisser le prix d'environ 3,59 %."
+    },
+    {
+      "id": "ue2-marches-oblig-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "evaluation-obligations-duration",
+      "difficulty": 1,
+      "tags": [
+        "obligation",
+        "relation prix-taux",
+        "décote"
+      ],
+      "source_ref": "Évaluation actuarielle des obligations : P = Σ F_t (1 + r)⁻ᵗ",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Une obligation à taux fixe de coupon 3 % a été émise au pair. Les taux de marché pour des obligations comparables passent ensuite à 5 %. Que devient le cours de cette obligation ?",
+      "options": [
+        "Il reste au pair, car le coupon versé ne change pas",
+        "Il passe au-dessus du pair, car l'obligation rapporte désormais 5 %",
+        "Il passe au-dessous du pair, pour que le rendement à l'échéance de l'acheteur atteigne environ 5 %",
+        "Il ne peut pas être déterminé sans connaître la notation de l'émetteur"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'option 3 est correcte : le prix d'une obligation est la valeur actuelle de ses flux ; si le taux d'actualisation (5 %) dépasse le taux du coupon (3 %), la valeur actuelle est inférieure au nominal. La décote compense l'acheteur pour le coupon trop faible. L'option 1 oublie que le prix s'ajuste aux taux du marché. L'option 2 inverse la relation prix-taux, qui est décroissante. L'option 4 est fausse : à risque de crédit inchangé, le sens de la variation découle de la hausse des taux de marché."
+    },
+    {
+      "id": "ue2-marches-oblig-0003",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "evaluation-obligations-duration",
+      "difficulty": 3,
+      "tags": [
+        "convexité",
+        "sensibilité",
+        "risque de taux"
+      ],
+      "source_ref": "Analyse du risque de taux : sensibilité ΔP/P ≈ −D/(1 + r) × Δr et convexité de la relation prix-taux",
+      "verified": true,
+      "estimated_seconds": 90,
+      "statement": "Deux obligations A et B ont le même prix, le même taux actuariel et la même duration de 6 ans, mais B est plus convexe que A. Le gérant anticipe une forte variation des taux, sans en connaître le sens. Quelle affirmation est exacte ?",
+      "options": [
+        "A et B réagiront de façon identique, puisqu'elles ont la même duration",
+        "B est préférable : elle gagnera davantage que A si les taux baissent et perdra moins que A si les taux montent",
+        "B gagnera davantage que A si les taux baissent mais perdra davantage si les taux montent",
+        "A est préférable, car une convexité élevée accroît le risque de taux"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'option 2 est correcte : la convexité mesure la courbure de la relation prix-taux. L'approximation par la duration (linéaire) sous-estime toujours le prix réel ; plus la convexité est forte, plus l'écart favorable est grand, à la hausse comme à la baisse des taux. À duration égale, l'obligation la plus convexe domine donc pour une variation importante des taux (c'est pourquoi la convexité se paie, en général, par un rendement un peu plus faible). L'option 1 ne vaut que pour de très petites variations de taux. L'option 3 décrit un effet symétrique qui n'existe pas : la convexité joue dans les deux sens en faveur du porteur. L'option 4 inverse le raisonnement."
+    },
+    {
+      "id": "ue2-marches-oblig-0004",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "evaluation-obligations-duration",
+      "difficulty": 2,
+      "tags": [
+        "obligation",
+        "prix",
+        "actualisation"
+      ],
+      "source_ref": "Évaluation actuarielle des obligations : P = Σ C (1 + r)⁻ᵗ + N (1 + r)⁻ⁿ",
+      "verified": true,
+      "estimated_seconds": 180,
+      "statement": "Une obligation in fine de nominal 1 000 €, de coupon annuel 3,5 %, est remboursable au pair dans exactement 5 ans ; le prochain coupon sera versé dans un an. Le taux actuariel exigé par le marché pour ce risque est de 4,2 %. Calculez le prix de l'obligation, en euros, arrondi au centime.",
+      "expected_value": 969.01,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "€",
+      "decimals": 2,
+      "explanation": "Coupon = 1 000 × 3,5 % = 35 €. P = 35 × [1 − 1,042⁻⁵]/0,042 + 1 000 × 1,042⁻⁵. Facteur d'actualisation 1,042⁻⁵ ≈ 0,81407 ; valeur actuelle des coupons ≈ 35 × 4,42692 ≈ 154,94 € ; valeur actuelle du remboursement ≈ 814,07 €. P ≈ 969,01 € (soit 96,90 % du nominal). Le prix est sous le pair car le coupon (3,5 %) est inférieur au taux de marché (4,2 %)."
+    },
+    {
+      "id": "ue2-marches-oblig-0005",
+      "type": "journal_entry",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "evaluation-obligations-duration",
+      "difficulty": 2,
+      "tags": [
+        "obligations",
+        "coupon couru",
+        "valeurs mobilières de placement"
+      ],
+      "source_ref": "PCG (règl. ANC 2014-03) : compte 506 « Obligations », compte 5088 « Intérêts courus sur obligations, bons et valeurs assimilées » ; les intérêts courus à l'achat sont exclus du coût d'entrée des titres",
+      "verified": true,
+      "estimated_seconds": 240,
+      "statement": "Le 1er avril N, la société Lumen acquiert, à titre de placement de trésorerie, 100 obligations de nominal 1 000 € chacune, de coupon annuel 4 % payable le 1er octobre de chaque année. Le cours coté, pied de coupon, est de 98,5 % du nominal ; le coupon couru depuis le 1er octobre N−1 représente 6 mois d'intérêts. Les frais sont négligés. Passez l'écriture d'acquisition du 1er avril N en utilisant le compte 5088 pour le coupon couru (paiement par banque, compte 512).",
+      "date": "01/04/N",
+      "entries": [
+        {
+          "account": "506",
+          "label": "Obligations",
+          "debit": 98500,
+          "credit": 0
+        },
+        {
+          "account": "5088",
+          "label": "Intérêts courus sur obligations",
+          "debit": 2000,
+          "credit": 0
+        },
+        {
+          "account": "512",
+          "label": "Banques",
+          "debit": 0,
+          "credit": 100500
+        }
+      ],
+      "explanation": "Prix pied de coupon : 100 × 1 000 × 98,5 % = 98 500 €, coût d'entrée des titres (506). Coupon couru : 100 × 1 000 × 4 % × 6/12 = 2 000 €, payé au vendeur mais exclu du coût d'entrée ; il est porté au débit du 5088. Décaissement total : 100 500 €. Au 1er octobre N, l'encaissement du coupon de 4 000 € soldera le 5088 (2 000 €) et dégagera un produit de 2 000 € au compte 764 « Revenus des valeurs mobilières de placement », correspondant aux 6 mois de détention."
+    },
+    {
+      "id": "ue2-marches-oblig-0006",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "evaluation-obligations-duration",
+      "difficulty": 3,
+      "tags": [
+        "taux actuariel",
+        "sensibilité",
+        "convexité"
+      ],
+      "source_ref": "Calcul actuariel obligataire : taux actuariel, duration de Macaulay, sensibilité S = D/(1 + r), convexité",
+      "verified": true,
+      "estimated_seconds": 840,
+      "title": "Fonds Arcade : risque de taux d'une ligne obligataire",
+      "context": "Le fonds Arcade détient une obligation in fine de nominal 1 000 €, de coupon annuel 4 %, remboursable au pair dans exactement 5 ans (prochain coupon dans un an). Elle cote aujourd'hui 960 € (coupon couru nul).\n\nLe gérant a calculé, au taux actuariel arrondi de 4,92 %, une duration de Macaulay de 4,62 ans.\n\nLe comité des risques demande d'évaluer l'impact d'une hausse brutale de 2 points des taux de marché (taux actuariel porté de 4,92 % à 6,92 %), d'abord avec la sensibilité, puis par un recalcul exact du prix.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "Déterminez le taux actuariel de l'obligation au prix de 960 €, en % (2 décimales).",
+          "points": 2,
+          "expected_value": 4.92,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.05
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "On cherche r tel que 40 × [1 − (1 + r)⁻⁵]/r + 1 000 (1 + r)⁻⁵ = 960. À 4,9 % le prix vaut 960,93 € ; à 5 % il vaut 956,71 € ; par interpolation (ou tableur) r ≈ 4,92 %. Le taux actuariel dépasse le coupon (4 %) car le titre cote sous le pair."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "prompt": "Calculez la sensibilité de l'obligation (en valeur absolue, 2 décimales) à partir de la duration de 4,62 ans et du taux de 4,92 %.",
+          "points": 2,
+          "expected_value": 4.4,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.02
+          },
+          "decimals": 2,
+          "explanation": "S = D/(1 + r) = 4,62/1,0492 ≈ 4,40. Une hausse de 1 point des taux fait baisser le prix d'environ 4,40 %."
+        },
+        {
+          "id": "q3",
+          "kind": "numeric",
+          "prompt": "Estimez, à l'aide de la sensibilité, le prix de l'obligation après la hausse de 2 points, en euros (2 décimales).",
+          "points": 2,
+          "expected_value": 875.46,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "Variation relative ≈ −4,4034 × 0,02 = −8,81 %. Prix estimé ≈ 960 × (1 − 0,08807) ≈ 875,46 €."
+        },
+        {
+          "id": "q4",
+          "kind": "numeric",
+          "prompt": "Recalculez le prix exact de l'obligation au taux actuariel de 6,92 %, en euros (2 décimales).",
+          "points": 2,
+          "expected_value": 880.02,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "P = 40 × [1 − 1,0692⁻⁵]/0,0692 + 1 000 × 1,0692⁻⁵ ≈ 40 × 4,1090 + 715,66 ≈ 880,02 €."
+        },
+        {
+          "id": "q5",
+          "kind": "open",
+          "prompt": "Expliquez l'écart entre le prix estimé et le prix exact, et indiquez ce qu'il se passerait en cas de baisse de 2 points des taux.",
+          "points": 2,
+          "model_answer": "Le prix exact (880,02 €) est supérieur d'environ 4,6 € au prix estimé par la sensibilité (875,46 €) : la relation prix-taux est convexe alors que la sensibilité en donne une approximation linéaire (la tangente). L'approximation surestime donc la baisse de prix quand les taux montent. En cas de baisse de 2 points, la sensibilité prévoit une hausse d'environ 8,8 % (prix ≈ 1 044,54 €) alors que le prix exact au taux de 2,92 % est d'environ 1 049,57 € : elle sous-estime la hausse. La convexité joue toujours en faveur du porteur ; l'écart augmente avec l'ampleur de la variation de taux. Pour de fortes variations, il faut recalculer le prix ou ajouter un terme de convexité.",
+          "key_points": [
+            "Approximation linéaire (tangente) d'une relation prix-taux convexe",
+            "Prix réel toujours au-dessus de l'estimation, en hausse comme en baisse des taux",
+            "Écart croissant avec l'ampleur de la variation (ici environ 4,6 € pour 2 points)",
+            "Recalcul exact ou correction de convexité pour les fortes variations"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "La sensibilité (duration modifiée) mesure le risque de taux en première approximation. Pour une variation de 2 points, l'erreur d'approximation (environ 0,5 % du prix) illustre l'effet de convexité, favorable au porteur dans les deux sens."
     }
   ]
 }

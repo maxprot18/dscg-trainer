@@ -1,0 +1,174 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-marches-effic-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "efficience-finance-comportementale",
+      "difficulty": 1,
+      "tags": [
+        "efficience",
+        "formes d'efficience"
+      ],
+      "source_ref": "Hypothèse d'efficience des marchés (Fama, 1970) : formes faible, semi-forte et forte",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Sur un marché où les cours reflètent toute l'information publique disponible (historique des prix, comptes publiés, communiqués), mais pas l'information détenue par les seuls initiés, quelle forme d'efficience est vérifiée ?",
+      "options": [
+        "Aucune forme d'efficience",
+        "La forme faible uniquement",
+        "La forme semi-forte",
+        "La forme forte"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'option 3 est correcte : la forme semi-forte correspond à l'intégration de toute l'information publique, ce qui inclut l'historique des cours (forme faible). L'option 2 est incomplète : la forme faible ne porte que sur les prix passés, alors que l'énoncé vise toute l'information publique. L'option 4 est fausse : la forme forte suppose que même l'information privée est déjà dans les cours, ce que l'énoncé exclut. L'option 1 est fausse puisque les formes faible et semi-forte sont vérifiées."
+    },
+    {
+      "id": "ue2-marches-effic-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "efficience-finance-comportementale",
+      "difficulty": 2,
+      "tags": [
+        "finance comportementale",
+        "biais",
+        "effet de disposition"
+      ],
+      "source_ref": "Finance comportementale : théorie des perspectives (Kahneman et Tversky, 1979), aversion aux pertes et effet de disposition",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Une investisseuse vend systématiquement les actions de son portefeuille dès qu'elles affichent une plus-value, mais conserve depuis des années celles qui sont en moins-value « en attendant qu'elles reviennent à leur prix d'achat ». Quel biais comportemental illustre principalement cette attitude ?",
+      "options": [
+        "Le mimétisme",
+        "L'effet de disposition, lié à l'aversion aux pertes",
+        "Le biais de disponibilité",
+        "L'excès de confiance"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'option 2 est correcte : l'effet de disposition consiste à réaliser trop vite les gains et à différer la réalisation des pertes ; il s'explique par l'aversion aux pertes de la théorie des perspectives (une perte réalisée est ressentie plus fortement qu'un gain équivalent) et par l'ancrage sur le prix d'achat. L'option 1 (mimétisme) consiste à imiter les décisions des autres investisseurs, ce que l'énoncé ne décrit pas. L'option 3 désigne la surpondération des informations récentes ou marquantes. L'option 4 conduit plutôt à trop négocier et à surestimer la précision de ses prévisions."
+    },
+    {
+      "id": "ue2-marches-effic-0003",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "efficience-finance-comportementale",
+      "difficulty": 2,
+      "tags": [
+        "efficience semi-forte",
+        "analyse fondamentale"
+      ],
+      "source_ref": "Hypothèse d'efficience des marchés (Fama, 1970) : forme semi-forte",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Si le marché est efficient au sens semi-fort, un analyste qui étudie soigneusement les comptes publiés des sociétés peut obtenir durablement une rentabilité supérieure à celle du marché, ajustée du risque.",
+      "answer": false,
+      "justification": "Faux : en efficience semi-forte, toute l'information publique, comptes compris, est déjà intégrée dans les cours.",
+      "explanation": "L'efficience semi-forte implique que ni l'analyse technique (prix passés) ni l'analyse fondamentale fondée sur l'information publique ne procurent de rentabilité anormale durable. Paradoxalement, c'est l'activité de nombreux analystes qui, en exploitant rapidement l'information, rend le marché efficient. Seule une information privée (interdite d'utilisation si elle est privilégiée) pourrait permettre de battre le marché, et seulement si la forme forte n'est pas vérifiée."
+    },
+    {
+      "id": "ue2-marches-effic-0004",
+      "type": "flashcard",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "efficience-finance-comportementale",
+      "difficulty": 1,
+      "tags": [
+        "efficience",
+        "formes d'efficience",
+        "tests"
+      ],
+      "source_ref": "Hypothèse d'efficience des marchés (Fama, 1970)",
+      "verified": true,
+      "estimated_seconds": 40,
+      "front": "Quelles sont les trois formes d'efficience des marchés, et comment teste-t-on chacune ?",
+      "back": "Faible : les cours intègrent l'historique des prix ; test par l'absence d'autocorrélation des rentabilités (l'analyse technique ne bat pas le marché).\nSemi-forte : les cours intègrent toute l'information publique ; test par les études d'événements (ajustement rapide et complet à l'annonce).\nForte : les cours intègrent aussi l'information privée ; test par la performance des initiés ou des gérants, rarement vérifiée.",
+      "explanation": "Les formes sont emboîtées : la forme forte implique la semi-forte, qui implique la faible. Les anomalies relevées par la finance comportementale (momentum, sur-réaction, effet taille) remettent en cause l'efficience sans permettre facilement de l'exploiter, du fait des coûts et des limites de l'arbitrage."
+    },
+    {
+      "id": "ue2-marches-effic-0005",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "efficience-finance-comportementale",
+      "difficulty": 2,
+      "tags": [
+        "étude d'événement",
+        "rentabilité anormale",
+        "efficience semi-forte"
+      ],
+      "source_ref": "Méthodologie des études d'événements : modèle de marché R_t = α + β R_M,t, rentabilité anormale et rentabilité anormale cumulée",
+      "verified": true,
+      "estimated_seconds": 600,
+      "title": "Kelvor : réaction du cours à une annonce d'acquisition",
+      "context": "Le lundi (jour 0), avant l'ouverture de la bourse, la société cotée Kelvor annonce l'acquisition d'un concurrent étranger pour un prix jugé élevé par les analystes. Pour mesurer la réaction du marché, on a estimé le modèle de marché de Kelvor sur les 200 séances précédant la fenêtre d'événement : α = 0,02 % par jour et β = 1,2.\n\nRentabilités quotidiennes observées :\n- jour −1 (vendredi précédent) : Kelvor −1,2 % ; indice de marché +0,4 % ;\n- jour 0 : Kelvor −3,1 % ; indice +0,5 % ;\n- jour +1 : Kelvor +0,2 % ; indice −0,3 %.\n\nLa rentabilité anormale d'un jour est l'écart entre la rentabilité observée de Kelvor et la rentabilité « normale » donnée par le modèle de marché. Aucune autre information concernant Kelvor n'a été publiée sur la période.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "Calculez la rentabilité anormale de Kelvor le jour 0, en % (2 décimales, signe moins si elle est négative).",
+          "points": 2,
+          "expected_value": -3.72,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.02
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Rentabilité normale = 0,02 + 1,2 × 0,5 = 0,62 %. Rentabilité anormale = −3,10 − 0,62 = −3,72 %."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "prompt": "Calculez la rentabilité anormale cumulée sur la fenêtre [−1 ; +1], en % (2 décimales, signe moins si elle est négative).",
+          "points": 3,
+          "expected_value": -4.88,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.03
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Jour −1 : −1,2 − (0,02 + 1,2 × 0,4) = −1,2 − 0,50 = −1,70 %. Jour 0 : −3,72 %. Jour +1 : 0,2 − (0,02 + 1,2 × (−0,3)) = 0,2 − (−0,34) = +0,54 %. Cumul : −1,70 − 3,72 + 0,54 = −4,88 %."
+        },
+        {
+          "id": "q3",
+          "kind": "mcq",
+          "prompt": "Quelle conclusion tirer de la réaction du jour 0 et du jour +1 ?",
+          "points": 2,
+          "options": [
+            "Le marché a ignoré l'annonce, ce qui contredit l'efficience faible",
+            "L'essentiel de l'ajustement a lieu le jour de l'annonce, sans dérive ultérieure significative, ce qui est compatible avec l'efficience semi-forte",
+            "La rentabilité anormale positive du jour +1 prouve que le marché a sur-réagi et qu'il est inefficient au sens fort",
+            "Le bêta de 1,2 suffit à expliquer la baisse du jour 0"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "La forte rentabilité anormale du jour 0 suivie d'un faible ajustement (+0,54 %) indique une intégration rapide de l'information publique : c'est ce qu'attend l'efficience semi-forte. Le marché n'a pas ignoré l'annonce (option 1). Un rebond modeste ne suffit pas à établir une sur-réaction, et l'efficience forte concerne l'information privée (option 3). Le modèle de marché prévoyait une hausse de 0,62 % compte tenu du marché : le bêta n'explique pas la baisse (option 4)."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "prompt": "Commentez la rentabilité anormale du jour −1. Quelles hypothèses peut-on formuler et quelles conséquences en tirer ?",
+          "points": 3,
+          "model_answer": "Le jour −1, avant toute annonce publique, Kelvor sous-performe de 1,70 % alors que le marché monte : la baisse anticipe l'annonce. Deux hypothèses : une fuite d'information (des personnes informées du projet ont vendu ou diffusé l'information), ce qui met en défaut l'efficience forte et peut caractériser une opération d'initié ou une divulgation illicite d'information privilégiée au sens du règlement MAR ; ou une rumeur de marché, voire un hasard statistique (il faudrait tester la significativité de l'écart au regard de l'écart-type des rentabilités anormales). L'AMF pourrait examiner les transactions de la veille ; l'émetteur doit veiller à la confidentialité de l'information et à la tenue de ses listes d'initiés.",
+          "key_points": [
+            "Rentabilité anormale avant l'annonce publique : l'information était partiellement connue",
+            "Hypothèse de fuite : efficience forte non vérifiée, possible opération d'initié (MAR)",
+            "Nuance : tester la significativité statistique, rumeur possible",
+            "Rôle de l'AMF et obligations de confidentialité de l'émetteur"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Une étude d'événement compare la rentabilité observée à la rentabilité normale prévue par le modèle de marché. Ici, la rentabilité anormale cumulée de −4,88 % mesure la destruction de valeur perçue par le marché (prix d'acquisition jugé trop élevé). L'ajustement concentré le jour 0 est compatible avec l'efficience semi-forte ; la baisse du jour −1 suggère une fuite d'information."
+    }
+  ]
+}
