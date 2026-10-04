@@ -1,11 +1,11 @@
-import { Download, Upload } from 'lucide-react'
-import { useMemo, useRef, useState } from 'react'
+import { Settings } from 'lucide-react'
+import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { taxonomy } from '@/content/load'
-import { exportProgress, importProgress, type ProgressExport, type SessionMode } from '@/db/db'
+import type { SessionMode } from '@/db/db'
 import { useProgress, type ProgressData } from '@/db/progress'
 import { sessionSearch } from '@/engine/sessionConfig'
 import {
@@ -29,6 +29,7 @@ const MODE_LABELS: Record<SessionMode, string> = {
   smart: 'Révision intelligente',
   errors: 'Erreurs',
   exam: 'Examen blanc',
+  cards: 'Flashcards',
 }
 
 const percent = (rate: number | null) => (rate === null ? '—' : `${Math.round(rate * 100)} %`)
@@ -40,16 +41,6 @@ function formatDuration(ms: number): string {
 
 const dateFormat = new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'short' })
 const dateTimeFormat = new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })
-
-async function downloadExport() {
-  const data = await exportProgress()
-  const url = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }))
-  const a = document.createElement('a')
-  a.href = url
-  a.download = `dscg-progression-${data.exportedAt.slice(0, 10)}.json`
-  a.click()
-  URL.revokeObjectURL(url)
-}
 
 export function ProgressPage() {
   const progress = useProgress()
@@ -264,54 +255,20 @@ function History({ progress }: { progress: ProgressData }) {
 }
 
 function BackupCard() {
-  const input = useRef<HTMLInputElement>(null)
-  const [message, setMessage] = useState<string | null>(null)
-
-  const onFile = async (file: File) => {
-    try {
-      const data = JSON.parse(await file.text()) as ProgressExport
-      if (!window.confirm('Remplacer toute la progression de cet appareil par celle du fichier ?')) return
-      await importProgress(data)
-      setMessage(`Progression importée : ${data.attempts.length} tentatives, ${data.sessions.length} sessions.`)
-    } catch (e) {
-      setMessage(`Import impossible : ${e instanceof Error ? e.message : 'fichier illisible'}.`)
-    }
-  }
-
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Sauvegarde</CardTitle>
+        <CardTitle>Sauvegarde et réglages</CardTitle>
         <CardDescription>
-          La progression reste dans ce navigateur. Exportez-la pour la sauvegarder ou la reprendre sur un autre appareil.
+          La progression reste dans ce navigateur. Export, import, remise à zéro et objectif quotidien sont dans les réglages.
         </CardDescription>
       </CardHeader>
-      <CardContent className="flex flex-col gap-2">
-        <div className="flex flex-wrap gap-2">
-          <Button variant="outline" onClick={() => void downloadExport()}>
-            <Download /> Exporter ma progression (JSON)
-          </Button>
-          <Button variant="outline" onClick={() => input.current?.click()}>
-            <Upload /> Importer une progression
-          </Button>
-          <input
-            ref={input}
-            type="file"
-            accept="application/json,.json"
-            className="hidden"
-            aria-label="Fichier de progression"
-            onChange={(e) => {
-              const file = e.target.files?.[0]
-              if (file) void onFile(file)
-              e.target.value = ''
-            }}
-          />
-        </div>
-        {message && (
-          <p role="status" className="text-sm">
-            {message}
-          </p>
-        )}
+      <CardContent>
+        <Button asChild variant="outline">
+          <Link to="/reglages">
+            <Settings /> Ouvrir les réglages
+          </Link>
+        </Button>
       </CardContent>
     </Card>
   )

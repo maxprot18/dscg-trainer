@@ -7,6 +7,7 @@ import { UE_IDS } from '@/content/ids'
 import type { UeId } from '@/content/schema'
 
 import {
+  buildCardsSession,
   buildErrorSession,
   buildExamSession,
   buildQuickSession,
@@ -23,6 +24,13 @@ export type SessionConfig =
   | { mode: 'smart'; seed: number }
   | { mode: 'errors'; seed: number; ue?: UeId }
   | { mode: 'exam'; seed: number; ue: UeId }
+  | { mode: 'cards'; seed: number; scope?: ThemeScope }
+
+/** Tailles de session réglables par l'utilisateur. */
+export interface SessionSizes {
+  theme: number
+  cards: number
+}
 
 /** Durée de l'épreuve de chaque UE, en minutes (taxonomie). */
 export type ExamDurations = Readonly<Record<UeId, number>>
@@ -33,10 +41,11 @@ export function newSeed(): number {
 
 export function sessionSearch(config: SessionConfig): string {
   const p = new URLSearchParams({ mode: config.mode, seed: String(config.seed) })
-  if (config.mode === 'theme') {
-    p.set('ue', config.scope.ue)
-    if (config.scope.theme) p.set('theme', config.scope.theme)
-    if (config.scope.notion) p.set('notion', config.scope.notion)
+  if (config.mode === 'theme' || (config.mode === 'cards' && config.scope)) {
+    const scope = config.scope!
+    p.set('ue', scope.ue)
+    if (scope.theme) p.set('theme', scope.theme)
+    if (scope.notion) p.set('notion', scope.notion)
   }
   if ((config.mode === 'errors' || config.mode === 'exam') && config.ue) p.set('ue', config.ue)
   return `?${p.toString()}`
@@ -51,6 +60,10 @@ export function parseSessionSearch(params: URLSearchParams): SessionConfig | nul
   if (mode === 'quick' || mode === 'smart') return { mode, seed }
   if (mode === 'errors') return ueParam && !ue ? null : { mode, seed, ue }
   if (mode === 'exam') return ue ? { mode, seed, ue } : null
+  if (mode === 'cards') {
+    if (ueParam && !ue) return null
+    return ue ? { mode, seed, scope: { ue, theme: params.get('theme') ?? undefined } } : { mode, seed }
+  }
   if (mode === 'theme') {
     const ue = params.get('ue')
     if (!ue || !(UE_IDS as readonly string[]).includes(ue)) return null
@@ -76,12 +89,15 @@ export function buildSession(
   durations: ExamDurations,
   snapshot: ProgressSnapshot = EMPTY_SNAPSHOT,
   now = Date.now(),
+  sizes: SessionSizes = { theme: 20, cards: 20 },
 ): Exercise[] {
   switch (config.mode) {
     case 'quick':
       return buildQuickSession(pool, config.seed)
     case 'theme':
-      return buildThemeSession(pool, config.scope, config.seed)
+      return buildThemeSession(pool, config.scope, config.seed, sizes.theme)
+    case 'cards':
+      return buildCardsSession(pool, config.scope, config.seed, sizes.cards)
     case 'smart':
       return buildSmartSession(pool, snapshot, now, config.seed)
     case 'errors':
@@ -101,6 +117,7 @@ export function timeLimit(config: SessionConfig, durations: ExamDurations): numb
 /** Périmètre enregistré avec la session (historique). */
 export function sessionScope(config: SessionConfig): string | undefined {
   if (config.mode === 'theme') return scopeKey(config.scope)
+  if (config.mode === 'cards') return config.scope ? scopeKey(config.scope) : undefined
   if (config.mode === 'errors' || config.mode === 'exam') return config.ue
   return undefined
 }

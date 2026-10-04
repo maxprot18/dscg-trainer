@@ -7,7 +7,8 @@ import { db, type Attempt } from '@/db/db'
 import type { ProgressData } from '@/db/progress'
 import { DAY_MS } from '@/engine/srs'
 
-import { ProgressPage, ProgressView } from './ProgressPage'
+import { ProgressView } from './ProgressPage'
+import { SettingsPage } from './SettingsPage'
 
 const NOW = new Date(2026, 9, 12, 18, 0).getTime()
 const [n1, n2] = taxonomy.ues[3].themes[0].notions.map((n) => n.id)
@@ -71,7 +72,7 @@ describe('écran Progression', () => {
     vi.spyOn(window, 'confirm').mockReturnValue(true)
     render(
       <MemoryRouter>
-        <ProgressPage />
+        <SettingsPage />
       </MemoryRouter>,
     )
     const exported = { app: 'dscg-trainer', version: 1, exportedAt: new Date(NOW).toISOString(), ...data }
@@ -82,6 +83,5 @@ describe('écran Progression', () => {
       await screen.findByText(/Progression importée : 7 tentatives, 1 sessions/, undefined, { timeout: 10_000 }),
     ).toBeInTheDocument()
     await waitFor(async () => expect(await db.attempts.count()).toBe(7), { timeout: 10_000 })
-    expect(await screen.findByText('7', undefined, { timeout: 10_000 })).toBeInTheDocument()
   }, 30_000)
 })

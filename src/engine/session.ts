@@ -221,3 +221,16 @@ export function examGrade(exercises: readonly Exercise[], scores: ReadonlyMap<st
   const earned = exercises.reduce((s, e) => s + (scores.get(e.id) ?? 0) * e.estimated_seconds, 0)
   return Math.round((earned / total) * 20 * 100) / 100
 }
+
+export const CARDS_SESSION_SIZE = 20
+
+/** Mode flashcards : les cartes d'une UE ou d'un thème, mélangées. */
+export function buildCardsSession(
+  pool: readonly Exercise[],
+  scope: ThemeScope | undefined,
+  seed: number,
+  size = CARDS_SESSION_SIZE,
+): Exercise[] {
+  const cards = pool.filter((e) => e.type === 'flashcard' && (scope === undefined || inScope(e, scope)))
+  return shuffle(cards, seededRandom(seed)).slice(0, size)
+}

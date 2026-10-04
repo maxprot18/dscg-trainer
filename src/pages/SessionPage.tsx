@@ -26,6 +26,7 @@ import {
   type SessionConfig,
 } from '@/engine/sessionConfig'
 import { useKeyboard } from '@/hooks/useKeyboard'
+import { readSettings } from '@/lib/settings'
 
 function BackToTraining({ message }: { message: string }) {
   return (
@@ -84,7 +85,10 @@ function SessionBuilder({
 }) {
   const [params] = useSearchParams()
   const search = params.toString()
-  const [exercises] = useState(() => buildSession(config, pool, examDurations, snapshot, Date.now()))
+  const [exercises] = useState(() => {
+    const settings = readSettings()
+    return buildSession(config, pool, examDurations, snapshot, Date.now(), { theme: settings.themeSessionSize, cards: settings.cardsSessionSize })
+  })
   // Examen blanc : un examen interrompu sur le même sujet est proposé à la reprise.
   const [resumable, setResumable] = useState<ResumableSession | null | undefined>(config.mode === 'exam' ? undefined : null)
   const [decision, setDecision] = useState<'resume' | 'restart' | null>(null)
@@ -104,7 +108,9 @@ function SessionBuilder({
     const message =
       config.mode === 'errors'
         ? 'Aucune erreur à rejouer : toutes vos dernières tentatives sont réussies.'
-        : 'Aucun exercice disponible pour cette sélection pour l’instant.'
+        : config.mode === 'cards'
+          ? 'Aucune flashcard pour cette sélection.'
+          : 'Aucun exercice disponible pour cette sélection pour l’instant.'
     return <BackToTraining message={message} />
   }
   if (resumable === undefined) return <p className="text-muted-foreground">Préparation de la session…</p>

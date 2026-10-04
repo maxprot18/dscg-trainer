@@ -1,4 +1,4 @@
-import { BookOpen, ChartColumn, Dumbbell, House, Search } from 'lucide-react'
+import { BookOpen, ChartColumn, Dumbbell, House, Search, Settings } from 'lucide-react'
 import { Suspense } from 'react'
 import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom'
 
@@ -31,6 +31,11 @@ export function Layout() {
             </Link>
           </Button>
           <ThemeToggle />
+          <Button asChild variant="ghost" size="icon">
+            <Link to="/reglages" aria-label="Réglages" title="Réglages">
+              <Settings />
+            </Link>
+          </Button>
         </div>
       </header>
       <main className="flex-1 px-4 pt-3 pb-24">

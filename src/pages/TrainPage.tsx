@@ -7,6 +7,7 @@ import { examDurations, exerciseCount, taxonomy, useExercises } from '@/content/
 import type { UeId } from '@/content/schema'
 import { useProgress } from '@/db/progress'
 import { buildExamSession, QUICK_SESSION_SECONDS, QUICK_SESSION_SIZE, SMART_SESSION_SIZE } from '@/engine/session'
+import { useSettings } from '@/lib/settings'
 import { newSeed, sessionSearch } from '@/engine/sessionConfig'
 import { failedExerciseIds } from '@/engine/stats'
 
@@ -37,6 +38,19 @@ export function TrainPage() {
   const [ue, setUe] = useState<UeId>(firstUe)
   const [theme, setTheme] = useState('')
   const [notion, setNotion] = useState('')
+  const settings = useSettings()
+  // Flashcards : comptées sur le contenu chargé (les nombres calculés au build ne distinguent pas les types).
+  const [cardsUe, setCardsUe] = useState<UeId | ''>('')
+  const [cardsTheme, setCardsTheme] = useState('')
+  const cardCounts = useMemo(() => {
+    const map = new Map<string, number>()
+    for (const e of exercises ?? []) {
+      if (e.type !== 'flashcard') continue
+      for (const key of ['total', e.ue, `${e.ue}/${e.theme}`]) map.set(key, (map.get(key) ?? 0) + 1)
+    }
+    return map
+  }, [exercises])
+  const cardsAvailable = cardCounts.get(cardsUe ? (cardsTheme ? `${cardsUe}/${cardsTheme}` : cardsUe) : 'total') ?? 0
   const ueData = taxonomy.ues.find((u) => u.id === ue)!
   const themeData = ueData.themes.find((t) => t.id === theme)
   const available = notion ? count(`notion:${notion}`) : theme ? count(`${ue}/${theme}`) : count(ue)
@@ -200,7 +214,73 @@ export function TrainPage() {
               )
             }
           >
-            {available === 0 ? 'Aucun exercice pour l’instant' : `Commencer (${Math.min(available, 20)} exercices)`}
+            {available === 0
+              ? 'Aucun exercice pour l’instant'
+              : `Commencer (${Math.min(available, settings.themeSessionSize)} exercices)`}
+          </Button>
+        </CardContent>
+      </Card>
+      <Card>
+        <CardHeader>
+          <CardTitle>Flashcards</CardTitle>
+          <CardDescription>
+            Définitions, seuils et vocabulaire en recto / verso. Les cartes ratées reviennent dans la révision intelligente.
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="flex flex-col gap-3">
+          <label className="flex flex-col gap-1 text-sm">
+            UE
+            <select
+              className={selectClass}
+              value={cardsUe}
+              onChange={(e) => {
+                setCardsUe(e.target.value as UeId | '')
+                setCardsTheme('')
+              }}
+            >
+              <option value="">Toutes les UE ({cardCounts.get('total') ?? '…'})</option>
+              {taxonomy.ues.map((u) => (
+                <option key={u.id} value={u.id}>
+                  {u.id} — {u.title} ({cardCounts.get(u.id) ?? 0})
+                </option>
+              ))}
+            </select>
+          </label>
+          {cardsUe && (
+            <label className="flex flex-col gap-1 text-sm">
+              Thème
+              <select className={selectClass} value={cardsTheme} onChange={(e) => setCardsTheme(e.target.value)}>
+                <option value="">Tous les thèmes</option>
+                {taxonomy.ues
+                  .find((u) => u.id === cardsUe)!
+                  .themes.map((t) => (
+                    <option key={t.id} value={t.id} disabled={!cardCounts.get(`${cardsUe}/${t.id}`)}>
+                      {t.title} ({cardCounts.get(`${cardsUe}/${t.id}`) ?? 0})
+                    </option>
+                  ))}
+              </select>
+            </label>
+          )}
+          <Button
+            size="lg"
+            variant="outline"
+            disabled={cardsAvailable === 0}
+            aria-busy={!exercises}
+            onClick={() =>
+              navigate(
+                `/session${sessionSearch({
+                  mode: 'cards',
+                  seed: newSeed(),
+                  scope: cardsUe ? { ue: cardsUe, theme: cardsTheme || undefined } : undefined,
+                })}`,
+              )
+            }
+          >
+            {!exercises
+              ? 'Chargement des cartes…'
+              : cardsAvailable === 0
+                ? 'Aucune carte pour cette sélection'
+                : `Réviser les cartes (${Math.min(cardsAvailable, settings.cardsSessionSize)})`}
           </Button>
         </CardContent>
       </Card>
