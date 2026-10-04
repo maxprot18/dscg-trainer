@@ -1,4 +1,4 @@
-import { Download, RotateCcw, ShieldCheck, Upload } from 'lucide-react'
+import { Bug, Download, RotateCcw, ShieldCheck, Upload } from 'lucide-react'
 import { useRef, useState } from 'react'
 
 import { useInstallPrompt } from '@/hooks/useInstallPrompt'
@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { clearProgress, importProgress, type ProgressExport } from '@/db/db'
 import { downloadBackup, isIosBrowserTab, requestPersistence, useStorageStatus } from '@/lib/backup'
+import { clearErrors, errorIssueUrl, readErrors } from '@/lib/errorLog'
 import { DAILY_GOAL_CHOICES, saveSettings, SESSION_SIZE_CHOICES, useSettings } from '@/lib/settings'
 
 const selectClass =
@@ -18,6 +19,7 @@ export function SettingsPage() {
   const storage = useStorageStatus()
   const input = useRef<HTMLInputElement>(null)
   const [message, setMessage] = useState<string | null>(null)
+  const [errors, setErrors] = useState(readErrors)
 
   const onFile = async (file: File) => {
     try {
@@ -173,6 +175,40 @@ export function SettingsPage() {
           )}
         </CardContent>
       </Card>
+      {errors.length > 0 && (
+        <Card>
+          <CardHeader>
+            <CardTitle>Erreurs récentes</CardTitle>
+            <CardDescription>Gardées sur cet appareil seulement ; rien n’est envoyé sans votre accord.</CardDescription>
+          </CardHeader>
+          <CardContent className="flex flex-col gap-2 text-sm">
+            <ul className="flex flex-col gap-1">
+              {errors.slice(0, 5).map((e) => (
+                <li key={e.date} className="flex flex-wrap items-baseline justify-between gap-2">
+                  <span className="min-w-0 break-words">
+                    <span className="text-muted-foreground">{new Date(e.date).toLocaleString('fr-FR')} · {e.route} · </span>
+                    {e.message}
+                  </span>
+                  <a href={errorIssueUrl(e)} target="_blank" rel="noopener noreferrer" className="text-primary inline-flex items-center gap-1 underline">
+                    <Bug className="size-3.5" aria-hidden /> Signaler
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <Button
+              variant="ghost"
+              size="sm"
+              className="self-start"
+              onClick={() => {
+                clearErrors()
+                setErrors([])
+              }}
+            >
+              Effacer le journal
+            </Button>
+          </CardContent>
+        </Card>
+      )}
     </div>
   )
 }
