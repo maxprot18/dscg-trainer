@@ -1,0 +1,132 @@
+{
+  "exercises": [
+    {
+      "id": "ue6-gouv-ma-0001",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "gouvernance-rse-finance",
+      "notion": "mergers-acquisitions-english",
+      "difficulty": 3,
+      "tags": [
+        "takeover defences",
+        "white knight",
+        "vocabulary"
+      ],
+      "statement": "Read this extract from a financial newspaper: \"Facing an unsolicited bid from its larger rival, the board of Orion Retail has rejected the offer as undervaluing the company and is now in talks with a private equity firm that could make a competing, friendly offer.\" Which statement correctly describes the situation?",
+      "options": [
+        "The bid is a friendly takeover, and the private equity firm is acting as a poison pill.",
+        "The board is carrying out a squeeze-out of minority shareholders.",
+        "The rival's offer is a mandatory bid, and the private equity firm is the target.",
+        "The bid is hostile, and the private equity firm is a potential white knight."
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Option 4 is correct: an unsolicited bid rejected by the target's board is a hostile bid, and a third party invited by the target to make a more acceptable (friendly) competing offer is called a white knight. Option 1 is wrong twice: the bid is not friendly, and a poison pill is a mechanism (e.g. issuing shares to existing shareholders at a discount) that makes the takeover more expensive, not a rescuing bidder. Option 2 is wrong: a squeeze-out is carried out by a bidder that already holds a very large majority, to buy out the remaining minority. Option 3 is wrong: nothing indicates that a control threshold was crossed (mandatory bid), and Orion Retail, not the private equity firm, is the target. Under the board neutrality rule (art. 9 of the Takeover Directive, where it applies), seeking a white knight does not require prior shareholder approval.",
+      "source_ref": "Directive 2004/25/EC (takeover bids), art. 9 (board neutrality: frustrating action requires shareholder approval, but seeking alternative bids is expressly allowed) and art. 5 (mandatory bid)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue6-gouv-ma-0002",
+      "type": "case_study",
+      "ue": "UE6",
+      "theme": "gouvernance-rse-finance",
+      "notion": "mergers-acquisitions-english",
+      "difficulty": 2,
+      "tags": [
+        "control premium",
+        "enterprise value",
+        "EV/EBITDA",
+        "due diligence"
+      ],
+      "title": "Cash offer for Brightwater Technologies",
+      "context": "Velora Group, a French listed company, is preparing a recommended cash offer for Brightwater Technologies, a UK-listed engineering company. You are asked to prepare the English-language analysis for Velora's board.\n\nData (hypotheses):\n- Brightwater's undisturbed share price (before rumours of the offer): €40;\n- proposed offer price: €52 per share, in cash;\n- number of Brightwater shares outstanding: 20 million;\n- Brightwater's net debt: €200m;\n- Brightwater's EBITDA for the last financial year: €155m;\n- comparable transactions in the sector were concluded at EV/EBITDA multiples of 7x to 9x.\n\nVelora's CFO expects cost synergies of €30m a year from the third year after closing, mainly from procurement and the merger of two head offices.",
+      "sub_questions": [
+        {
+          "id": "premium",
+          "kind": "numeric",
+          "prompt": "Calculate the control premium offered over the undisturbed share price, in %.",
+          "points": 3,
+          "expected_value": 30,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "Premium = 52 / 40 − 1 = 30%."
+        },
+        {
+          "id": "enterprise-value",
+          "kind": "numeric",
+          "prompt": "Calculate the enterprise value implied by the offer, in €m.",
+          "points": 4,
+          "expected_value": 1240,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€m",
+          "decimals": 0,
+          "explanation": "Equity value = 52 × 20m = €1,040m. Enterprise value = equity value + net debt = 1,040 + 200 = €1,240m."
+        },
+        {
+          "id": "multiple",
+          "kind": "mcq",
+          "prompt": "What is the implied EV/EBITDA multiple, and how does it compare with recent sector transactions?",
+          "points": 4,
+          "options": [
+            "About 6.7x, below the range of comparable transactions",
+            "About 8.0x, within the range of comparable transactions",
+            "About 9.5x, above the range of comparable transactions",
+            "About 8.0x, but the comparison is meaningless because net debt must be excluded from EV"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "EV/EBITDA = 1,240 / 155 = 8.0x, within the 7x-9x range. Option 1 uses the equity value (1,040 / 155 ≈ 6.7x), which is inconsistent with EBITDA, a measure of operating performance before financing. Option 3 (9.5x) has no basis in the data. Option 4 is wrong: EV includes net debt precisely so that it can be compared with EBITDA."
+        },
+        {
+          "id": "risks",
+          "kind": "open",
+          "prompt": "In English, briefly explain why the premium may be justified and which risks the board should examine before approving the offer, including the key areas of due diligence.",
+          "points": 9,
+          "model_answer": "A premium of 30% is the price of acquiring control: Velora will be able to set strategy, combine operations and capture synergies that are not available to minority shareholders. The expected cost synergies of €30m a year, if delivered, could justify part of the premium, since the premium paid to Brightwater shareholders amounts to (52 − 40) × 20m = €240m, i.e. eight years of full synergies before discounting. However, synergies are often overestimated and come late (only from year three here), with integration costs (restructuring, IT, head office merger) and execution risk; the board should value them prudently and avoid paying all of them away to the seller. Due diligence should cover financial matters (quality of earnings, normalised EBITDA, net debt definition including leases and pensions), legal issues (litigation, change-of-control clauses), tax, human resources (key people, pension schemes), ESG risks, and regulatory clearances (merger control, foreign investment screening). Financing the €1,040m cash consideration also raises the question of Velora's own leverage and credit rating.",
+          "key_points": [
+            "Control premium reflects the value of control and expected synergies",
+            "Premium paid ≈ €240m vs €30m of annual synergies from year 3: prudence, integration costs and execution risk",
+            "Due diligence: quality of earnings, net debt (leases, pensions), legal, tax, HR, ESG",
+            "Regulatory clearances and financing impact on the acquirer's leverage"
+          ]
+        }
+      ],
+      "total_points": 20,
+      "explanation": "Premium = 52 / 40 − 1 = 30% ; equity value = €1,040m ; EV = 1,040 + 200 = €1,240m ; EV/EBITDA = 1,240 / 155 = 8.0x, consistent with sector transactions. The case covers the vocabulary of public offers (recommended cash offer, undisturbed price, control premium), valuation (equity value vs enterprise value, multiples) and deal risks (synergies, due diligence).",
+      "source_ref": "Enterprise value = equity value + net debt ; control premium = offer price / undisturbed price − 1 ; IFRS 3 (règlement UE 2023/1803), consideration transferred and goodwill",
+      "verified": true,
+      "estimated_seconds": 600
+    },
+    {
+      "id": "ue6-gouv-ma-0003",
+      "type": "flashcard",
+      "ue": "UE6",
+      "theme": "gouvernance-rse-finance",
+      "notion": "mergers-acquisitions-english",
+      "difficulty": 2,
+      "tags": [
+        "earn-out",
+        "deal structuring",
+        "vocabulary"
+      ],
+      "front": "What is an \"earn-out\" in an acquisition, and why is it used?",
+      "back": "An earn-out is a deferred, contingent part of the purchase price, paid to the sellers only if the target reaches agreed performance targets (e.g. revenue or EBITDA) after closing.\nIt bridges a valuation gap between an optimistic seller and a cautious buyer and keeps the selling managers motivated.\nFrench equivalent: complément de prix.",
+      "explanation": "Earn-outs are common in deals involving young or fast-growing companies whose future performance is uncertain. They can create disputes over how the target is managed and how the performance measure is calculated, so the SPA must define them precisely. Under IFRS 3, contingent consideration is measured at fair value at the acquisition date and included in the consideration transferred.",
+      "source_ref": "IFRS 3 §39-40 and §58 (contingent consideration) — règlement UE 2023/1803",
+      "verified": true,
+      "estimated_seconds": 30
+    }
+  ]
+}

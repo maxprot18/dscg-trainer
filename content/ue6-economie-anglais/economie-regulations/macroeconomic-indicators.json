@@ -1,0 +1,104 @@
+{
+  "exercises": [
+    {
+      "id": "ue6-eco-macro-0001",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "economie-regulations",
+      "notion": "macroeconomic-indicators",
+      "difficulty": 1,
+      "tags": [
+        "GDP",
+        "expenditure approach",
+        "vocabulary"
+      ],
+      "statement": "Which of the following expressions correctly describes GDP measured using the expenditure approach?",
+      "options": [
+        "Consumption + investment + government spending + exports − imports",
+        "Wages + profits + taxes on production − subsidies + imports",
+        "Consumption + investment + government spending + exports + imports",
+        "Gross output of all firms, including intermediate consumption"
+      ],
+      "answer": [
+        0
+      ],
+      "multiple": false,
+      "explanation": "Under the expenditure approach, GDP = C + I + G + (X − M): final spending by households, firms and government, plus net exports. Imports are subtracted because they are produced abroad. Option 2 mixes the income approach (wages, profits, taxes less subsidies) with imports, which have nothing to do with domestic income. Option 3 adds imports instead of subtracting them. Option 4 counts intermediate consumption, which leads to double counting: the output approach only adds up value added (output minus intermediate consumption).",
+      "source_ref": "ESA 2010 (Regulation (EU) No 549/2013), GDP at market prices — expenditure approach",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue6-eco-macro-0002",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "economie-regulations",
+      "notion": "macroeconomic-indicators",
+      "difficulty": 2,
+      "tags": [
+        "inflation",
+        "disinflation",
+        "core inflation"
+      ],
+      "statement": "A central bank bulletin states: \"Headline inflation fell from 6.1% to 3.4% over the year, while core inflation eased only from 4.8% to 4.2%, mainly because energy prices dropped.\" Which interpretation is correct?",
+      "options": [
+        "The economy is in deflation, since inflation has fallen sharply.",
+        "The fall in headline inflation was driven mainly by volatile components, and underlying price pressures remain significant.",
+        "Core inflation is higher than headline inflation, so energy prices must have risen during the year.",
+        "Since headline inflation is still above core inflation, food and energy prices are rising faster than other prices."
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "Option 2 is correct: core inflation excludes volatile items such as energy and food. Headline inflation fell by 2.7 points but core inflation by only 0.6 point, so most of the decline comes from energy; underlying (core) price pressures remain well above a 2% target. Option 1 confuses disinflation (prices still rising, but more slowly) with deflation (prices falling). Option 3 is wrong: core inflation (4.2%) being above headline inflation (3.4%) at the end of the year is consistent with energy prices falling, as the statement says. Option 4 is factually wrong: at the end of the year headline inflation (3.4%) is below core inflation (4.2%), not above it.",
+      "source_ref": "Eurostat HICP methodology — headline HICP vs HICP excluding energy, food, alcohol and tobacco (core inflation)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue6-eco-macro-0003",
+      "type": "numeric",
+      "ue": "UE6",
+      "theme": "economie-regulations",
+      "notion": "macroeconomic-indicators",
+      "difficulty": 2,
+      "tags": [
+        "real GDP",
+        "GDP deflator",
+        "growth rate"
+      ],
+      "statement": "In the economy of Westland, nominal GDP rose from €500bn in year 1 to €560bn in year 2. Over the same period, the GDP deflator rose from 100 to 108. Calculate the real GDP growth rate between year 1 and year 2, in %, rounded to two decimal places. Use the exact formula, not the approximation.",
+      "expected_value": 3.7,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "decimals": 2,
+      "explanation": "Nominal growth = 560 / 500 − 1 = 12%. Price growth (deflator) = 108 / 100 − 1 = 8%. Real growth = (1 + 0.12) / (1 + 0.08) − 1 = 1.037037 − 1 ≈ 3.70%. Equivalently, real GDP in year 2 at year-1 prices = 560 / 1.08 ≈ €518.5bn, i.e. +3.70% on €500bn. The approximation 12% − 8% = 4.00% overstates real growth by 0.3 point because rates are high.",
+      "source_ref": "GDP deflator = nominal GDP / real GDP × 100 ; real growth = (1 + nominal growth) / (1 + inflation) − 1 (ESA 2010, volume measures)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue6-eco-macro-0004",
+      "type": "flashcard",
+      "ue": "UE6",
+      "theme": "economie-regulations",
+      "notion": "macroeconomic-indicators",
+      "difficulty": 1,
+      "tags": [
+        "unemployment rate",
+        "labour force",
+        "ILO"
+      ],
+      "front": "How is the unemployment rate defined (ILO definition), and what is the \"labour force\"?",
+      "back": "Unemployment rate = number of unemployed ÷ labour force × 100.\nThe labour force (population active) = employed + unemployed people.\nAn unemployed person (ILO) is without work, available to start work and has actively looked for a job.\nPeople who are neither working nor looking (students, retirees, discouraged workers) are \"economically inactive\" and are excluded from the denominator.",
+      "explanation": "A common mistake is to divide the number of unemployed by the total working-age population: that ratio is lower and is not the unemployment rate. The employment rate, by contrast, is employed people ÷ working-age population. Discouraged workers who stop searching leave the labour force, which can lower the unemployment rate without any job creation.",
+      "source_ref": "ILO resolution concerning statistics of work, employment and labour underutilisation (19th ICLS, 2013) — definition of unemployment",
+      "verified": true,
+      "estimated_seconds": 30
+    }
+  ]
+}

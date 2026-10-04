@@ -1,0 +1,162 @@
+{
+  "exercises": [
+    {
+      "id": "ue6-gouv-cg-0001",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "gouvernance-rse-finance",
+      "notion": "corporate-governance",
+      "difficulty": 1,
+      "tags": [
+        "non-executive director",
+        "board",
+        "vocabulary"
+      ],
+      "statement": "In a company with a unitary (one-tier) board, what is the main role of a non-executive director?",
+      "options": [
+        "To run a business division on a day-to-day basis.",
+        "To audit the financial statements and sign the audit report.",
+        "To represent employees in collective bargaining.",
+        "To oversee and constructively challenge management without being involved in day-to-day operations."
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Option 4 is correct: non-executive directors (NEDs) sit on the board but are not part of the management team; they monitor performance, challenge strategy and often serve on board committees. Option 1 describes an executive director or a senior manager. Option 2 is the role of the external (statutory) auditor, who is independent from the board. Option 3 is the role of trade unions or employee representatives, not of NEDs.",
+      "source_ref": "UK Corporate Governance Code (FRC), section 2 \"Division of responsibilities\" — role of non-executive directors",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue6-gouv-cg-0002",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "gouvernance-rse-finance",
+      "notion": "corporate-governance",
+      "difficulty": 3,
+      "tags": [
+        "audit committee",
+        "statutory audit",
+        "independence"
+      ],
+      "statement": "Under the EU Audit Directive (Directive 2006/43/EC, art. 39, as amended), which of the following are tasks of the audit committee of a public-interest entity? Select all that apply.",
+      "options": [
+        "Monitoring the effectiveness of the company's internal quality control and risk management systems.",
+        "Preparing the annual financial statements in place of the finance department.",
+        "Reviewing and monitoring the independence of the statutory auditor.",
+        "Setting the remuneration of executive directors."
+      ],
+      "answer": [
+        0,
+        2
+      ],
+      "multiple": true,
+      "explanation": "Options 1 and 3 are correct: art. 39 lists, among others, informing the board of the outcome of the audit, monitoring the financial reporting process, monitoring the effectiveness of internal quality control and risk management systems, monitoring the statutory audit, reviewing and monitoring the independence of the auditor, and being responsible for the auditor selection procedure. Option 2 is wrong: management prepares the financial statements; the committee oversees the process, it does not replace the preparers. Option 4 is the task of the remuneration committee (and of the board), not of the audit committee.",
+      "source_ref": "Directive 2006/43/EC, art. 39(6), as amended by Directive 2014/56/EU",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue6-gouv-cg-0003",
+      "type": "true_false",
+      "ue": "UE6",
+      "theme": "gouvernance-rse-finance",
+      "notion": "corporate-governance",
+      "difficulty": 2,
+      "tags": [
+        "say on pay",
+        "Shareholder Rights Directive II",
+        "executive pay"
+      ],
+      "statement": "The Shareholder Rights Directive II (Directive (EU) 2017/828) requires listed companies to give shareholders a vote on the directors' remuneration policy, but leaves member states free to make that vote binding or advisory.",
+      "answer": true,
+      "justification": "True: SRD II introduced a vote on the remuneration policy and on the remuneration report; member states may provide that the policy vote is advisory rather than binding.",
+      "explanation": "SRD II (art. 9a and 9b inserted into Directive 2007/36/EC) organises \"say on pay\" in two parts: an ex ante vote on the remuneration policy, at least every four years and at each material change, and a vote on the remuneration report describing pay actually awarded. The policy vote is binding by default, but member states may make it advisory; the report vote is in principle advisory. France chose a binding policy vote for listed companies and added ex post votes: the payment of variable and exceptional pay to each executive officer is conditional on shareholder approval.",
+      "source_ref": "Directive (EU) 2017/828 (SRD II), inserting art. 9a (remuneration policy) and 9b (remuneration report) into Directive 2007/36/EC",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue6-gouv-cg-0004",
+      "type": "case_study",
+      "ue": "UE6",
+      "theme": "gouvernance-rse-finance",
+      "notion": "corporate-governance",
+      "difficulty": 2,
+      "tags": [
+        "shareholder activism",
+        "payout ratio",
+        "proxy fight",
+        "board independence"
+      ],
+      "title": "An activist investor at Harbourline plc",
+      "context": "Harbourline plc is a listed logistics group. Last year it reported net income of €80m and paid total dividends of €20m. Its balance sheet shows net cash of €150m (cash exceeds financial debt).\n\nAn activist hedge fund, Crestview Capital, has acquired 6% of the shares. In a public letter to the board, Crestview argues that:\n- the company \"hoards cash\" and should raise its dividend payout ratio to 60% of net income;\n- the roles of chair and CEO, currently held by the founder, should be separated;\n- two new independent directors proposed by Crestview should join the board.\n\nThe board, of which only three of nine members are independent, has rejected the proposals so far. Crestview has announced that it will submit its own resolutions at the next annual general meeting (AGM) and ask other shareholders to vote for them.",
+      "sub_questions": [
+        {
+          "id": "payout-ratio",
+          "kind": "numeric",
+          "prompt": "Calculate Harbourline's dividend payout ratio for last year, in %.",
+          "points": 3,
+          "expected_value": 25,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "Payout ratio = dividends / net income = 20 / 80 = 25%."
+        },
+        {
+          "id": "extra-cash",
+          "kind": "numeric",
+          "prompt": "If Harbourline had applied the 60% payout ratio demanded by Crestview to last year's net income, how much additional cash (in €m) would it have distributed compared with the dividends actually paid?",
+          "points": 4,
+          "expected_value": 28,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€m",
+          "decimals": 0,
+          "explanation": "Dividends at 60% payout = 0.60 × 80 = €48m. Additional cash = 48 − 20 = €28m."
+        },
+        {
+          "id": "proxy-fight",
+          "kind": "mcq",
+          "prompt": "What is the usual name for Crestview's strategy of submitting its own resolutions and soliciting other shareholders' votes at the AGM?",
+          "points": 3,
+          "options": [
+            "A proxy fight",
+            "A squeeze-out",
+            "A poison pill",
+            "A rights issue"
+          ],
+          "answer": [
+            0
+          ],
+          "multiple": false,
+          "explanation": "A proxy fight (or proxy contest) is a campaign to win shareholders' votes, often by collecting their proxies, against the board's position. A squeeze-out is the compulsory buy-out of remaining minority shareholders after a takeover; a poison pill is a takeover defence; a rights issue is a share issue offered to existing shareholders."
+        },
+        {
+          "id": "board-response",
+          "kind": "open",
+          "prompt": "In English, assess the governance arguments raised by Crestview and recommend how the board should respond.",
+          "points": 10,
+          "model_answer": "Crestview's governance arguments have merit. With only three independent directors out of nine and a founder who is both chair and CEO, oversight of management is weak: most governance codes recommend that at least half the board (excluding the chair) be independent and that the roles of chair and CEO be separated, or that a senior or lead independent director be appointed if they are combined (under \"comply or explain\"). The capital allocation argument is more debatable: a 25% payout ratio and €150m of net cash may indicate excess capital, but the board should assess the group's investment needs (fleet, warehouses, acquisitions) before committing to a 60% payout; a share buyback or a special dividend could return surplus cash more flexibly. The board should engage with Crestview and the other major shareholders rather than simply reject the proposals, explain its capital allocation policy clearly, strengthen board independence (for example by appointing new independent directors selected through the nomination committee, not necessarily Crestview's candidates) and consider appointing a lead independent director. A transparent response reduces the risk of losing the AGM votes.",
+          "key_points": [
+            "Weak independence (3 out of 9) and combined chair/CEO roles: legitimate governance concerns under codes and comply or explain",
+            "Capital allocation: net cash and low payout, but the board must weigh investment needs; buyback or special dividend as flexible alternatives",
+            "Engage with the activist and other shareholders rather than reject outright",
+            "Strengthen independence via the nomination committee, lead independent director"
+          ]
+        }
+      ],
+      "total_points": 20,
+      "explanation": "The payout ratio (dividends / net income) is 25%; a 60% payout on €80m would mean €48m of dividends, i.e. €28m more. The case illustrates shareholder activism (public letter, proxy fight), board independence, the separation of chair and CEO roles and the \"comply or explain\" principle.",
+      "source_ref": "UK Corporate Governance Code (FRC), provisions on board independence and separation of chair and CEO roles ; Afep-Medef Code, independent directors ; payout ratio = dividends / net income",
+      "verified": true,
+      "estimated_seconds": 600
+    }
+  ]
+}

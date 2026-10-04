@@ -1,0 +1,76 @@
+{
+  "exercises": [
+    {
+      "id": "ue6-gouv-bank-0001",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "gouvernance-rse-finance",
+      "notion": "banking-financial-markets",
+      "difficulty": 2,
+      "tags": [
+        "CET1 ratio",
+        "Basel III",
+        "capital requirements"
+      ],
+      "statement": "A bank has Common Equity Tier 1 (CET1) capital of €12bn, total assets of €400bn and risk-weighted assets (RWA) of €100bn. Which statement is correct?",
+      "options": [
+        "Its CET1 ratio is 3%, below the Basel III minimum of 4.5%.",
+        "Its CET1 ratio is 12%, above the 4.5% minimum plus the 2.5% capital conservation buffer.",
+        "Its CET1 ratio is 12%, but Basel III requires at least 15% of CET1.",
+        "Its CET1 ratio cannot be calculated without its liquidity coverage ratio."
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "CET1 ratio = CET1 capital / RWA = 12 / 100 = 12%, which is above the 4.5% minimum plus the 2.5% conservation buffer (7%). Option 1 divides by total assets (12 / 400 = 3%): total exposure is the denominator of the leverage ratio, not of the CET1 ratio. Option 3 invents a 15% minimum. Option 4 confuses solvency and liquidity: the LCR is a separate liquidity requirement.",
+      "source_ref": "Regulation (EU) No 575/2013 (CRR), art. 92(1)(a) (CET1 ratio of 4.5%) ; Directive 2013/36/EU (CRD), art. 129 (capital conservation buffer of 2.5%)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue6-gouv-bank-0002",
+      "type": "true_false",
+      "ue": "UE6",
+      "theme": "gouvernance-rse-finance",
+      "notion": "banking-financial-markets",
+      "difficulty": 1,
+      "tags": [
+        "bonds",
+        "yield",
+        "interest rates"
+      ],
+      "statement": "When market interest rates rise, the market price of existing fixed-rate bonds also rises.",
+      "answer": false,
+      "justification": "False: bond prices and yields move in opposite directions; when market rates rise, existing bonds paying a lower fixed coupon lose value.",
+      "explanation": "A fixed-rate bond pays a coupon set at issue. If new bonds offer higher coupons, investors will only buy the existing bond at a lower price, so that its yield matches market rates. Conversely, when rates fall, existing bonds with higher coupons become more valuable and their price rises. The longer the maturity, the stronger the price sensitivity (duration).",
+      "source_ref": "Bond valuation: price = present value of coupons and principal discounted at the market yield — inverse price-yield relationship",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue6-gouv-bank-0003",
+      "type": "numeric",
+      "ue": "UE6",
+      "theme": "gouvernance-rse-finance",
+      "notion": "banking-financial-markets",
+      "difficulty": 2,
+      "tags": [
+        "yield to maturity",
+        "bond pricing"
+      ],
+      "statement": "A corporate bond with a face value of €1,000 pays an annual coupon of 4% and matures in exactly one year, when the last coupon and the principal will be paid. It currently trades at €980. Calculate its yield to maturity, in %, rounded to two decimal places.",
+      "expected_value": 6.12,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "decimals": 2,
+      "explanation": "At maturity the investor receives the coupon (4% × 1,000 = €40) plus the principal (€1,000), i.e. €1,040. Yield to maturity over one year = 1,040 / 980 − 1 = 6.12%. It is higher than the coupon rate (4%) because the bond trades below par. Classic errors: the coupon rate (4.00%) or the current yield (40 / 980 = 4.08%), which ignores the €20 gain at redemption.",
+      "source_ref": "Bond yield to maturity: price = (coupon + face value) / (1 + YTM) for a one-year bond",
+      "verified": true,
+      "estimated_seconds": 150
+    }
+  ]
+}
