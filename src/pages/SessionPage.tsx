@@ -1,17 +1,19 @@
-import { ArrowRight, Clock, X } from 'lucide-react'
+import { ArrowRight, Clock, SkipForward, Timer, X } from 'lucide-react'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 
 import { ExercisePlayer } from '@/components/exercise/ExercisePlayer'
 import { SessionSummary, type SessionEntry } from '@/components/exercise/SessionSummary'
-import { Button } from '@/components/ui/button'
-import { Progress } from '@/components/ui/progress'
 import { ExamSummary } from '@/components/exercise/ExamSummary'
+import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Progress } from '@/components/ui/progress'
 import { examDurations, useExercises } from '@/content/load'
 import type { Exercise } from '@/content/schema'
+import type { Attempt } from '@/db/db'
 import { loadProgress } from '@/db/progress'
 import type { ExerciseResult, PartResponse } from '@/engine/grading'
-import { endSession, recordAttempt, startSession } from '@/engine/recorder'
+import { endSession, findResumableSession, recordAttempt, startSession, type ResumableSession } from '@/engine/recorder'
 import type { ProgressSnapshot } from '@/engine/session'
 import {
   buildSession,
@@ -80,7 +82,24 @@ function SessionBuilder({
   pool: readonly Exercise[]
   snapshot?: ProgressSnapshot
 }) {
+  const [params] = useSearchParams()
+  const search = params.toString()
   const [exercises] = useState(() => buildSession(config, pool, examDurations, snapshot, Date.now()))
+  // Examen blanc : un examen interrompu sur le même sujet est proposé à la reprise.
+  const [resumable, setResumable] = useState<ResumableSession | null | undefined>(config.mode === 'exam' ? undefined : null)
+  const [decision, setDecision] = useState<'resume' | 'restart' | null>(null)
+  useEffect(() => {
+    if (config.mode !== 'exam') return
+    let alive = true
+    void findResumableSession(
+      search,
+      exercises.map((e) => e.id),
+    ).then((found) => alive && setResumable(found))
+    return () => {
+      alive = false
+    }
+  }, [config.mode, search, exercises])
+
   if (exercises.length === 0) {
     const message =
       config.mode === 'errors'
@@ -88,7 +107,33 @@ function SessionBuilder({
         : 'Aucun exercice disponible pour cette sélection pour l’instant.'
     return <BackToTraining message={message} />
   }
-  return <SessionRunner config={config} exercises={exercises} />
+  if (resumable === undefined) return <p className="text-muted-foreground">Préparation de la session…</p>
+  if (resumable && decision === null) {
+    return (
+      <Card>
+        <CardHeader>
+          <CardTitle>Examen interrompu</CardTitle>
+          <CardDescription>
+            Vous avez commencé cet examen blanc et répondu à {resumable.attempts.length} exercice
+            {resumable.attempts.length > 1 ? 's' : ''} sur {exercises.length}. Le chronomètre reprend là où il en était.
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="flex flex-wrap gap-2">
+          <Button onClick={() => setDecision('resume')}>Reprendre l’examen</Button>
+          <Button
+            variant="outline"
+            onClick={() => {
+              void endSession(resumable.sessionId)
+              setDecision('restart')
+            }}
+          >
+            Recommencer
+          </Button>
+        </CardContent>
+      </Card>
+    )
+  }
+  return <SessionRunner config={config} exercises={exercises} search={search} resume={decision === 'resume' ? resumable : null} />
 }
 
 function formatClock(seconds: number): string {
@@ -98,26 +143,50 @@ function formatClock(seconds: number): string {
   return h > 0 ? `${h}:${pad(m)}:${pad(seconds % 60)}` : `${m}:${pad(seconds % 60)}`
 }
 
-function SessionRunner({ config, exercises }: { config: SessionConfig; exercises: Exercise[] }) {
+/** Reconstruit l'état d'un exercice déjà traité (reprise d'examen) à partir de la tentative enregistrée. */
+function entryFromAttempt(exercise: Exercise, attempt: Attempt): SessionEntry {
+  const score = attempt.score ?? (attempt.correct ? 1 : 0)
+  return { exercise, result: { score, correct: attempt.correct, parts: [], earned: score, total: 1 } }
+}
+
+function SessionRunner({
+  config,
+  exercises,
+  search,
+  resume,
+}: {
+  config: SessionConfig
+  exercises: Exercise[]
+  search: string
+  resume: ResumableSession | null
+}) {
   const navigate = useNavigate()
   const limit = timeLimit(config, examDurations)
   const exam = config.mode === 'exam'
-  const [startedAt] = useState(() => Date.now())
-  const [index, setIndex] = useState(0)
-  const [entries, setEntries] = useState<SessionEntry[]>([])
-  const [answers, setAnswers] = useState<Map<string, PartResponse[]>>(() => new Map())
+  const [startedAt] = useState(() => resume?.startedAt ?? Date.now())
+  const byId = useMemo(() => new Map(exercises.map((e) => [e.id, e])), [exercises])
+  const [index, setIndex] = useState(() => resume?.attempts.length ?? 0)
+  const [entries, setEntries] = useState<SessionEntry[]>(() =>
+    (resume?.attempts ?? []).flatMap((a) => {
+      const exercise = byId.get(a.exerciseId)
+      return exercise ? [entryFromAttempt(exercise, a)] : []
+    }),
+  )
+  const [answers, setAnswers] = useState<Map<string, PartResponse[]>>(
+    () => new Map((resume?.attempts ?? []).map((a) => [a.exerciseId, a.answer as PartResponse[]])),
+  )
   const [answered, setAnswered] = useState(false)
-  const [finished, setFinished] = useState(false)
-  const [elapsed, setElapsed] = useState(0)
-  const sessionId = useRef<Promise<number> | null>(null)
+  const [finished, setFinished] = useState(() => (resume?.attempts.length ?? 0) >= exercises.length)
+  const [elapsed, setElapsed] = useState(() => Math.floor((Date.now() - (resume?.startedAt ?? Date.now())) / 1000))
+  const sessionId = useRef<Promise<number> | null>(resume ? Promise.resolve(resume.sessionId) : null)
   const exerciseStartedAt = useRef(0)
 
   useEffect(() => {
     // Garde : en mode strict, React exécute deux fois les effets au montage.
     if (sessionId.current) return
     exerciseStartedAt.current = Date.now()
-    sessionId.current = startSession(config.mode, exercises, sessionScope(config))
-  }, [config, exercises])
+    sessionId.current = startSession(config.mode, exercises, sessionScope(config), undefined, Date.now(), search)
+  }, [config, exercises, search])
 
   useEffect(() => {
     if (finished) return
@@ -147,6 +216,12 @@ function SessionRunner({ config, exercises }: { config: SessionConfig; exercises
     setAnswered(false)
     exerciseStartedAt.current = Date.now()
     window.scrollTo?.({ top: 0 })
+  }
+
+  const stop = () => {
+    const pending = exercises.length - entries.length
+    if (pending > 0 && !window.confirm(`Terminer maintenant ? ${pending} exercice${pending > 1 ? 's' : ''} ne ser${pending > 1 ? 'ont' : 'a'} pas traité${pending > 1 ? 's' : ''}.`)) return
+    setFinished(true)
   }
 
   useKeyboard((key) => (key === 'Enter' ? (next(), true) : false), answered && !finished)
@@ -188,12 +263,13 @@ function SessionRunner({ config, exercises }: { config: SessionConfig; exercises
         <Progress value={((index + (answered ? 1 : 0)) / exercises.length) * 100} className="flex-1" />
         <span
           className={remaining !== null && remaining <= 30 ? 'text-destructive font-semibold' : 'text-muted-foreground'}
-          aria-label={remaining !== null ? 'Temps restant' : 'Temps écoulé'}
+          aria-label={remaining !== null ? 'Temps restant' : 'Durée de la session'}
+          title={remaining !== null ? 'Temps restant' : 'Durée de la session (sans limite)'}
         >
-          <Clock className="mr-1 inline size-4" aria-hidden />
+          {remaining !== null ? <Clock className="mr-1 inline size-4" aria-hidden /> : <Timer className="mr-1 inline size-4" aria-hidden />}
           {formatClock(remaining ?? elapsed)}
         </span>
-        <Button variant="ghost" size="icon" aria-label="Terminer la session" onClick={() => setFinished(true)}>
+        <Button variant="ghost" size="icon" aria-label="Terminer la session" onClick={stop}>
           <X />
         </Button>
       </div>
@@ -203,11 +279,18 @@ function SessionRunner({ config, exercises }: { config: SessionConfig; exercises
         deferFeedback={exam}
         onComplete={(r, resp) => onComplete(current, r, resp)}
       />
-      {answered && (
-        <Button size="lg" onClick={next} className="self-end">
-          {index + 1 >= exercises.length ? 'Voir le bilan' : 'Suivant'} <ArrowRight />
-        </Button>
-      )}
+      <div className="flex items-center justify-end gap-2">
+        {!answered && (
+          <Button variant="ghost" onClick={next} title="Passer sans répondre (compte comme non traité)">
+            <SkipForward /> Passer
+          </Button>
+        )}
+        {answered && (
+          <Button size="lg" onClick={next}>
+            {index + 1 >= exercises.length ? 'Voir le bilan' : 'Suivant'} <ArrowRight />
+          </Button>
+        )}
+      </div>
     </div>
   )
 }
