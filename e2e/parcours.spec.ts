@@ -80,3 +80,17 @@ test('oral d’UE 6 : tirage, préparation, entretien, auto-évaluation enregist
   await expect(page.getByText('Mes oraux blancs')).toBeVisible()
   void errors
 })
+
+test('sujet type d’examen : listé dans S’entraîner, annexes dépliables', async ({ page, errors }) => {
+  await page.goto('entrainement')
+  await expect(page.getByText('Sujets type d’examen')).toBeVisible()
+  await page.getByRole('link', { name: /Projet ERP/ }).click()
+  await expect(page).toHaveURL(/exercice\/ue5-dossier-0001/)
+  await expect(page.getByText('Sujet type d’examen')).toBeVisible()
+  const annex = page.getByText(/^Annexe 1 — /)
+  await annex.click()
+  await expect(annex.locator('xpath=ancestor::details[1]')).toHaveAttribute('open', '')
+  const width = await page.evaluate(() => document.documentElement.scrollWidth)
+  expect(width).toBeLessThanOrEqual(page.viewportSize()!.width)
+  void errors
+})
