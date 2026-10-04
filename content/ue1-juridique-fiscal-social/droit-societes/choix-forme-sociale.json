@@ -143,6 +143,58 @@
       "source_ref": "C. com. art. L227-1, L227-2, L227-5, L227-6, L227-9, L227-13 à L227-16, L227-19, L225-3 ; C. civ. art. 1857 et 1858",
       "verified": true,
       "estimated_seconds": 720
+    },
+    {
+      "id": "ue1-soc-forme-0006",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "choix-forme-sociale",
+      "difficulty": 2,
+      "tags": [
+        "SARL",
+        "constitution",
+        "libération des apports",
+        "apport en nature"
+      ],
+      "statement": "Le 2 mai N, la SARL Atelier Nord est constituée au capital de 50 000 € : apport en nature d'un matériel industriel évalué à 10 000 € et apports en numéraire de 40 000 €. Les associés libèrent le minimum légal des apports en numéraire, dont les fonds sont, par hypothèse, disponibles sur le compte bancaire de la société ; le solde sera appelé ultérieurement. Passez une écriture unique constatant la constitution (souscription, libération et entrée des apports), en utilisant les comptes 2154 « Matériel industriel », 512 « Banque », 109 « Associés – capital souscrit non appelé », 1013 « Capital souscrit – appelé, versé » et 1011 « Capital souscrit – non appelé ».",
+      "date": "02/05/N",
+      "entries": [
+        {
+          "account": "2154",
+          "label": "Matériel industriel (apport en nature)",
+          "debit": 10000,
+          "credit": 0
+        },
+        {
+          "account": "512",
+          "label": "Banque (numéraire libéré)",
+          "debit": 8000,
+          "credit": 0
+        },
+        {
+          "account": "109",
+          "label": "Associés - capital souscrit non appelé",
+          "debit": 32000,
+          "credit": 0
+        },
+        {
+          "account": "1013",
+          "label": "Capital souscrit - appelé, versé",
+          "debit": 0,
+          "credit": 18000
+        },
+        {
+          "account": "1011",
+          "label": "Capital souscrit - non appelé",
+          "debit": 0,
+          "credit": 32000
+        }
+      ],
+      "explanation": "Dans une SARL, les apports en nature sont intégralement libérés dès la constitution et les apports en numéraire doivent l'être d'au moins un cinquième, le solde dans les cinq ans (C. com. L223-7).\n- Apport en nature : 10 000 €, entièrement libéré (débit 2154).\n- Numéraire libéré : 40 000 × 1/5 = 8 000 € (débit 512) ; non appelé : 40 000 − 8 000 = 32 000 € (débit 109, crédit 1011).\n- Capital appelé et versé : 10 000 + 8 000 = 18 000 € (crédit 1013).\nTotal : 50 000 € au débit comme au crédit. Erreur classique : libérer la moitié du numéraire (20 000 €), règle de la SA et de la SAS. L'écriture unique condense les étapes habituelles (souscription au compte 4561, appel, versement) qui aboutissent au même solde.",
+      "source_ref": "C. com. art. L223-7 (libération des apports en SARL) ; PCG (règl. ANC 2014-03), comptes 1011, 1013, 109, 2154 et 512",
+      "verified": true,
+      "estimated_seconds": 210
     }
   ]
 }

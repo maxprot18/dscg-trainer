@@ -174,6 +174,34 @@
       "source_ref": "C. com. L330-3, R330-1 et L341-2",
       "estimated_seconds": 600,
       "verified": true
+    },
+    {
+      "id": "ue1-contrat-distrib-0006",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "environnement-contractuel",
+      "notion": "contrats-distribution",
+      "difficulty": 2,
+      "tags": [
+        "agent commercial",
+        "préavis",
+        "ordre public"
+      ],
+      "statement": "Le 1er février N, la SA Pivoine a conclu avec M. Lenoir un contrat d'agence commerciale à durée indéterminée, qui stipule que chaque partie peut y mettre fin moyennant un préavis de quinze jours. Le 1er novembre N+1, Pivoine notifie à M. Lenoir la fin du contrat, sans lui reprocher de faute. Quel préavis doit-elle respecter ?",
+      "options": [
+        "Quinze jours, conformément à la stipulation du contrat",
+        "Aucun préavis, le mandant pouvant révoquer à tout moment un simple mandataire",
+        "Deux mois, le contrat étant dans sa deuxième année",
+        "Trois mois, quelle que soit l’ancienneté du contrat"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Le préavis légal du contrat d'agent commercial à durée indéterminée est d'un mois pour la première année, de deux mois pour la deuxième année commencée et de trois mois à partir de la troisième année commencée (C. com. L134-11). Le contrat a commencé le 1er février N : au 1er novembre N+1, il en est à sa deuxième année (21 mois), d'où un préavis de deux mois (option 3).\nL'option 1 est fausse : les parties ne peuvent pas convenir de délais plus courts que les délais légaux, la stipulation de quinze jours est donc écartée. L'option 2 est fausse : l'agent commercial n'est pas un mandataire révocable ad nutum ; son contrat, d'intérêt commun, obéit au régime protecteur des articles L134-1 et suivants. L'option 4 est fausse : trois mois ne s'imposent qu'à partir de la troisième année commencée.\nLe respect du préavis ne prive pas l'agent de l'indemnité de cessation (L134-12), qu'il devra réclamer dans l'année.",
+      "source_ref": "C. com. art. L134-11 (préavis du contrat d’agence à durée indéterminée) et L134-12",
+      "verified": true,
+      "estimated_seconds": 60
     }
   ]
 }

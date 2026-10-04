@@ -151,6 +151,55 @@
       "source_ref": "C. com. L225-251 à L225-254",
       "estimated_seconds": 840,
       "verified": true
+    },
+    {
+      "id": "ue1-ethique-gouv-0005",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "gouvernance-responsabilite-dirigeants",
+      "difficulty": 1,
+      "tags": [
+        "SA",
+        "administrateur",
+        "révocation ad nutum"
+      ],
+      "statement": "L'assemblée générale ordinaire d'une SA à conseil d'administration révoque l'un des administrateurs, sans invoquer de motif, après lui avoir permis de présenter ses observations. La révocation intervient dans des conditions ni brutales ni vexatoires. L'administrateur réclame une indemnité. Quelle affirmation est exacte ?",
+      "options": [
+        "Il obtient des dommages-intérêts, toute révocation sans juste motif d'un dirigeant de SA étant indemnisée",
+        "Il n'a droit à aucune indemnité : les administrateurs sont révocables ad nutum par l'assemblée ordinaire",
+        "La révocation est nulle, car seul le conseil d'administration peut révoquer un administrateur",
+        "Il a droit à une indemnité forfaitaire égale à une année de rémunération d'administrateur"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "Les administrateurs peuvent être révoqués à tout moment par l'assemblée générale ordinaire (C. com. L225-18), sans motif ni indemnité (révocation ad nutum), sous réserve du respect du contradictoire et de l'absence de circonstances abusives ou vexatoires, qui seules pourraient fonder des dommages-intérêts : c'est l'option 2.\nL'option 1 est fausse : le droit à dommages-intérêts en cas de révocation sans juste motif concerne le directeur général non président (L225-55), pas l'administrateur. L'option 3 est fausse : l'administrateur est nommé et révoqué par l'assemblée ordinaire, non par le conseil. L'option 4 est fausse : aucune indemnité forfaitaire n'est prévue par la loi.",
+      "source_ref": "C. com. art. L225-18 (nomination et révocation des administrateurs) et L225-55 (révocation du directeur général)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue1-ethique-gouv-0006",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "gouvernance-responsabilite-dirigeants",
+      "difficulty": 1,
+      "tags": [
+        "SARL",
+        "gérant",
+        "révocation",
+        "juste motif"
+      ],
+      "statement": "Le gérant d'une SARL est révocable ad nutum par les associés : sa révocation, même décidée sans juste motif, ne peut jamais lui ouvrir droit à des dommages-intérêts.",
+      "answer": false,
+      "justification": "Le gérant de SARL est révocable par les associés représentant plus de la moitié des parts sociales, mais une révocation décidée sans juste motif peut donner lieu à dommages-intérêts (C. com. L223-25).",
+      "explanation": "La révocation du gérant de SARL est décidée par un ou plusieurs associés représentant plus de la moitié des parts sociales, sauf majorité statutaire plus forte (C. com. L223-25 al. 1, renvoyant à L223-29). Elle n'est pas ad nutum : si elle intervient sans juste motif (faute de gestion, mésentente compromettant l'intérêt social…), le gérant peut obtenir des dommages-intérêts ; la révocation n'en reste pas moins effective. Le gérant peut en outre être révoqué par le tribunal pour cause légitime, à la demande de tout associé. Le régime se rapproche de celui du directeur général de SA (L225-55) et s'oppose à celui des administrateurs de SA, révocables ad nutum par l'assemblée ordinaire (L225-18).",
+      "source_ref": "C. com. art. L223-25 (révocation du gérant de SARL) ; à comparer avec L225-18 et L225-55 (SA)",
+      "verified": true,
+      "estimated_seconds": 45
     }
   ]
 }

@@ -100,6 +100,111 @@
       "source_ref": "Règlement (UE) 2016/679, art. 6, §1, et art. 7",
       "estimated_seconds": 60,
       "verified": true
+    },
+    {
+      "id": "ue1-ethique-rgpd-0005",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "rgpd-conformite-numerique",
+      "difficulty": 1,
+      "tags": [
+        "droit d’accès",
+        "droits des personnes",
+        "délai de réponse"
+      ],
+      "statement": "Un ancien client demande par courriel à la SARL Optika la communication de l'ensemble des données personnelles qu'elle détient sur lui. Dans quel délai Optika doit-elle, en principe, lui répondre ?",
+      "options": [
+        "Dans les 72 heures suivant la réception de la demande",
+        "Dans les deux mois, sans prorogation possible",
+        "Elle n’est tenue de répondre que sur injonction de la CNIL",
+        "Dans un délai d'un mois à compter de la réception de la demande, prorogeable de deux mois compte tenu de la complexité et du nombre de demandes"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Le responsable de traitement répond aux demandes d'exercice des droits (accès, rectification, effacement, opposition…) dans les meilleurs délais et au plus tard dans un délai d'un mois à compter de leur réception ; ce délai peut être prolongé de deux mois, compte tenu de la complexité et du nombre de demandes, la personne étant informée de la prolongation et de ses motifs dans le premier mois (RGPD art. 12 §3) : option 4.\nL'option 1 confond avec le délai de notification d'une violation de données à la CNIL (72 heures, art. 33). L'option 2 est fausse : le délai de principe est d'un mois et la prorogation est possible. L'option 3 est fausse : l'obligation de répondre naît de la demande elle-même (art. 15) ; la CNIL n'intervient qu'en cas de plainte.",
+      "source_ref": "Règl. (UE) 2016/679 (RGPD) art. 12 §3 (délai de réponse) et art. 15 (droit d’accès)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue1-ethique-rgpd-0006",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "rgpd-conformite-numerique",
+      "difficulty": 3,
+      "tags": [
+        "RGPD",
+        "sous-traitant",
+        "sanctions",
+        "traceurs",
+        "violation de données"
+      ],
+      "title": "Lunetik : une boutique en ligne face au RGPD",
+      "context": "La SAS Lunetik vend des lunettes de soleil en ligne à des particuliers. Elle emploie 180 salariés ; son chiffre d'affaires annuel mondial de l'exercice N−1 s'élève à 420 M€.\nSa paie est confiée à un prestataire, la SARL Paysoft, qui traite les données des salariés selon les instructions de Lunetik. Les commandes et les données des clients sont hébergées par la SAS Nuagix. Aucun contrat écrit n'encadre ces deux prestations.\nLe site de Lunetik dépose des traceurs publicitaires dès l'arrivée de l'internaute ; un bandeau indique : « En poursuivant votre navigation, vous acceptez les cookies. »\nPar ailleurs, Lunetik a acheté un fichier de 300 000 adresses électroniques de particuliers et leur adresse chaque semaine des offres commerciales, sans aucune base légale et sans leur offrir la possibilité de s'y opposer.\nLe vendredi 7 juin à 18 heures, le responsable informatique découvre qu'une intrusion a permis de copier les noms, adresses et données de cartes bancaires de 12 000 clients. Le directeur général propose d'attendre la fin de l'audit technique, prévue dans trois semaines, avant de prévenir qui que ce soit.\nOn retient les plafonds de l'article 83 du RGPD : §4, 10 M€ ou 2 % du CA annuel mondial de l'exercice précédent ; §5 (principes, bases légales, droits des personnes), 20 M€ ou 4 % de ce CA ; pour une entreprise, le montant le plus élevé est retenu.",
+      "sub_questions": [
+        {
+          "id": "qualification-prestataires",
+          "kind": "mcq",
+          "prompt": "Quelle est la qualité de Paysoft et de Nuagix au regard du RGPD, et quelle obligation pèse sur Lunetik à leur égard ?",
+          "points": 2,
+          "options": [
+            "Ce sont des responsables de traitement autonomes ; aucune formalité n’est requise",
+            "Ce sont des sous-traitants ; leurs obligations doivent être fixées par un contrat ou un autre acte juridique écrit",
+            "Ce sont des destinataires ponctuels de données ; une simple information des salariés et des clients suffit",
+            "Ce sont des responsables conjoints ; ils doivent désigner ensemble un délégué à la protection des données"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Paysoft et Nuagix traitent les données pour le compte de Lunetik et selon ses instructions : ce sont des sous-traitants (RGPD art. 4 §8). Le traitement par un sous-traitant est régi par un contrat ou un autre acte juridique écrit fixant l'objet, la durée, la finalité, les obligations de sécurité et de confidentialité (art. 28 §3) : son absence est un manquement de Lunetik. Ils ne déterminent ni les finalités ni les moyens essentiels : ils ne sont ni responsables autonomes (option 1) ni responsables conjoints (option 4) ; l'option 3 ignore l'exigence du contrat."
+        },
+        {
+          "id": "plafond-prospection",
+          "kind": "numeric",
+          "prompt": "La prospection sans base légale ni possibilité d'opposition relève de l'article 83 §5. Calculez le montant maximal de l'amende encourue à ce titre, en millions d'euros.",
+          "points": 2,
+          "expected_value": 20,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "M€",
+          "decimals": 1,
+          "explanation": "Plafond = max(20 M€ ; 4 % × 420 M€) = max(20 ; 16,8) = 20 M€. Ici, le pourcentage du CA (16,8 M€) est inférieur au montant fixe : c'est le montant fixe, plus élevé, qui est retenu. Retenir 16,8 M€, ou appliquer le barème du §4 (max(10 ; 8,4) = 10 M€), serait une erreur."
+        },
+        {
+          "id": "traceurs",
+          "kind": "true_false",
+          "prompt": "Vrai ou faux : le bandeau « En poursuivant votre navigation, vous acceptez les cookies » permet à Lunetik de déposer valablement ses traceurs publicitaires dès l'arrivée de l'internaute.",
+          "points": 1,
+          "answer": false,
+          "explanation": "Les traceurs non strictement nécessaires au service, comme les traceurs publicitaires, supposent le consentement préalable de l'internaute, manifesté par un acte positif clair, et aussi simple à refuser qu'à donner (loi Informatique et libertés, art. 82 ; RGPD art. 4 §11). La simple poursuite de la navigation ne vaut pas consentement, et le dépôt avant tout choix est irrégulier."
+        },
+        {
+          "id": "violation-donnees",
+          "kind": "open",
+          "prompt": "La proposition du directeur général d'attendre la fin de l'audit est-elle conforme ? Exposez les obligations de Lunetik à la suite de l'intrusion du 7 juin, en précisant les délais.",
+          "points": 4,
+          "model_answer": "Non. L'intrusion est une violation de données personnelles (art. 4 §12). Lunetik doit la notifier à la CNIL dans les meilleurs délais et, si possible, 72 heures au plus tard après en avoir pris connaissance, soit au plus tard le lundi 10 juin à 18 heures (art. 33) ; elle ne peut pas attendre la fin de l'audit : elle notifie les informations disponibles et les complète ensuite par étapes, en justifiant le retard éventuel. La dispense de notification ne joue pas, car la violation est susceptible d'engendrer un risque pour les personnes. Les données copiées (identité et cartes bancaires de 12 000 clients) exposent à un risque élevé de fraude : Lunetik doit aussi informer les clients concernés dans les meilleurs délais, en termes clairs, avec les mesures à prendre (opposition sur la carte, vigilance) (art. 34). Elle doit enfin consigner la violation dans son registre interne (faits, effets, mesures prises) et prendre les mesures de sécurité destinées à y mettre fin (art. 32 et 33 §5). Le défaut de notification est passible de l'amende du §4 : max(10 M€ ; 2 % × 420 M€ = 8,4 M€) = 10 M€.",
+          "key_points": [
+            "Qualification de violation de données personnelles",
+            "Notification à la CNIL dans les 72 heures de la prise de connaissance (lundi 10 juin, 18 heures), au besoin par étapes",
+            "Information des clients sans retard en raison du risque élevé (données bancaires)",
+            "Documentation dans le registre interne des violations et mesures de sécurité",
+            "Sanction encourue en cas de défaut de notification (art. 83 §4)"
+          ],
+          "explanation": "Le délai de 72 heures court dès la prise de connaissance, y compris le week-end ; l'article 33 §4 autorise une notification échelonnée lorsque toutes les informations ne sont pas disponibles."
+        }
+      ],
+      "total_points": 9,
+      "explanation": "Le cas parcourt les principales obligations d'un responsable de traitement : encadrer contractuellement ses sous-traitants, recueillir un consentement valable pour les traceurs, disposer d'une base légale pour la prospection, réagir à une violation de données dans les délais, et chiffrer le plafond de l'amende en retenant le plus élevé du montant fixe et du pourcentage du chiffre d'affaires.",
+      "source_ref": "Règl. (UE) 2016/679 (RGPD) art. 4, 6, 21, 28, 32 à 34 et 83 §4-5 ; loi n° 78-17 du 6 janv. 1978, art. 82 (traceurs)",
+      "verified": true,
+      "estimated_seconds": 840
     }
   ]
 }

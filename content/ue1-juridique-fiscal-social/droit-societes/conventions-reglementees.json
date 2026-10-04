@@ -121,6 +121,60 @@
       "source_ref": "C. com. art. L227-10, L227-11 et L227-12 ; art. L225-43 (par renvoi)",
       "verified": true,
       "estimated_seconds": 720
+    },
+    {
+      "id": "ue1-soc-conv-0005",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "conventions-reglementees",
+      "difficulty": 1,
+      "tags": [
+        "conventions interdites",
+        "cautionnement",
+        "SARL"
+      ],
+      "statement": "Laquelle des opérations suivantes constitue une convention interdite ?",
+      "options": [
+        "Un prêt consenti par une SA à une société qui est l'un de ses administrateurs personnes morales",
+        "Un cautionnement donné par une SARL pour garantir un emprunt personnel contracté par le fils de son gérant",
+        "Une vente de produits au tarif catalogue, consentie par une SA à son directeur général dans le cadre de son activité courante",
+        "Un bail commercial consenti par une SA à une SCI dont l'un de ses administrateurs est le gérant"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "Sont interdits, à peine de nullité absolue, les emprunts, découverts, cautionnements ou avals consentis par la société au profit de ses dirigeants personnes physiques, mais aussi de leurs conjoints, ascendants, descendants et des personnes interposées ; dans la SARL, le gérant est visé (C. com. L223-21) : le cautionnement de l'emprunt du fils du gérant est interdit (option 2).\nL'option 1 est fausse : l'interdiction ne s'applique pas aux administrateurs personnes morales (L225-43) ; le prêt relève alors de la procédure des conventions réglementées. L'option 3 est fausse : une opération courante conclue à des conditions normales est une convention libre (L225-39). L'option 4 est fausse : la convention conclue avec une entreprise dont un administrateur est gérant est une convention réglementée, soumise à autorisation préalable du conseil (L225-38), non une convention interdite.",
+      "source_ref": "C. com. art. L223-21 (SARL), L225-38, L225-39 et L225-43 (SA)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue1-soc-conv-0006",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "conventions-reglementees",
+      "difficulty": 3,
+      "tags": [
+        "SARL",
+        "conventions réglementées",
+        "majorité",
+        "associé intéressé"
+      ],
+      "statement": "Le capital de la SARL Bastide est divisé en 2 000 parts sociales. M. Vial, gérant associé, détient 600 parts ; il a conclu avec la société un bail portant sur un entrepôt qui lui appartient. L'assemblée annuelle, réunie sur première consultation, statue sur le rapport relatif à cette convention. Les statuts ne prévoient aucune majorité particulière. Quel est le nombre minimal de parts qui doivent voter en faveur de la résolution pour que la convention soit approuvée ? Réponse en nombre entier de parts.",
+      "expected_value": 701,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "parts",
+      "decimals": 0,
+      "explanation": "Dans la SARL, les décisions ordinaires sont adoptées, sur première consultation, par un ou plusieurs associés représentant plus de la moitié des parts sociales (C. com. L223-29). Pour l'approbation d'une convention réglementée, l'associé intéressé ne peut pas prendre part au vote et ses parts ne sont prises en compte ni pour le quorum ni pour la majorité (L223-19).\nBase de calcul : 2 000 − 600 = 1 400 parts ; plus de la moitié : 1 400 / 2 = 700, d'où au moins 701 parts favorables.\nErreurs à éviter : calculer sur la totalité des parts (1 001 parts), ce qui revient à compter les parts de l'intéressé ; retenir 700 parts, qui ne représentent que la moitié et non plus de la moitié ; raisonner comme en SA, où les actions de l'intéressé comptent pour le quorum (L225-40).",
+      "source_ref": "C. com. art. L223-19 (conventions réglementées en SARL) et L223-29 (majorité des décisions ordinaires)",
+      "verified": true,
+      "estimated_seconds": 150
     }
   ]
 }

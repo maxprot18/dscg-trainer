@@ -151,6 +151,39 @@
       "source_ref": "C. com. art. L225-129, L225-131, L225-132 et L225-135",
       "verified": true,
       "estimated_seconds": 720
+    },
+    {
+      "id": "ue1-soc-capital-0006",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "operations-sur-capital",
+      "difficulty": 2,
+      "tags": [
+        "réduction de capital",
+        "pertes",
+        "report à nouveau"
+      ],
+      "statement": "Le capital de la SA Sorbier, entièrement libéré, s'élève à 800 000 €, divisé en 80 000 actions de 10 € de nominal. Le report à nouveau est débiteur de 360 000 € (compte 119). Le 20 juin N, l'AGE décide de réduire le capital pour apurer une partie de ces pertes, en ramenant le nominal de chaque action de 10 € à 6 €. Passez l'écriture constatant la réduction de capital, en utilisant les comptes 1013 « Capital souscrit – appelé, versé » et 119 « Report à nouveau (solde débiteur) ».",
+      "date": "20/06/N",
+      "entries": [
+        {
+          "account": "1013",
+          "label": "Capital souscrit - appelé, versé",
+          "debit": 320000,
+          "credit": 0
+        },
+        {
+          "account": "119",
+          "label": "Report à nouveau (solde débiteur)",
+          "debit": 0,
+          "credit": 320000
+        }
+      ],
+      "explanation": "Montant de la réduction : 80 000 actions × (10 − 6) = 320 000 €. Le capital est ramené à 80 000 × 6 = 480 000 €. La réduction est imputée sur les pertes : on débite le capital et on crédite le report à nouveau débiteur, qui reste débiteur de 360 000 − 320 000 = 40 000 €.\nErreurs à éviter : imputer la totalité des pertes (360 000 €), alors que l'AGE n'a réduit le nominal que de 4 € ; enregistrer une sortie de trésorerie : une réduction motivée par des pertes n'entraîne aucun remboursement aux actionnaires. Sur le plan juridique, elle est décidée par l'AGE (L225-204), dans le respect de l'égalité des actionnaires, et n'ouvre pas de droit d'opposition aux créanciers, réservé aux réductions non motivées par des pertes (L225-205) ; le nouveau capital (480 000 €) reste supérieur au minimum légal de 37 000 € (L224-2).",
+      "source_ref": "C. com. art. L225-204, L225-205 et L224-2 ; PCG (règl. ANC 2014-03), comptes 1013 et 119",
+      "verified": true,
+      "estimated_seconds": 150
     }
   ]
 }
