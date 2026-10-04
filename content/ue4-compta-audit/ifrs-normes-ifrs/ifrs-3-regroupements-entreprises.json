@@ -1,0 +1,227 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-ifrsn-ifrs3-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-3-regroupements-entreprises",
+      "difficulty": 1,
+      "tags": [
+        "frais d'acquisition"
+      ],
+      "statement": "Le groupe Arvel (IFRS) prend le contrôle de la société Bréhat. Il a engagé 240 000 € d'honoraires d'avocats, d'audit d'acquisition et de banque d'affaires pour réaliser l'opération. Comment ces frais sont-ils traités dans les comptes consolidés ?",
+      "options": [
+        "Ils sont inclus dans la contrepartie transférée et augmentent le goodwill",
+        "Ils sont comptabilisés en charges de la période",
+        "Ils sont imputés directement sur les capitaux propres consolidés",
+        "Ils sont étalés en charges sur cinq ans"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "IFRS 3 §53 impose de comptabiliser les frais connexes à l'acquisition (honoraires d'avocats, de conseil, d'évaluation, de due diligence) en charges de la période où ils sont engagés : ils ne font pas partie de la contrepartie transférée et n'augmentent donc pas le goodwill. Les inclure dans le coût des titres était admis par l'ancienne version d'IFRS 3 (avant 2008) et reste possible en règles françaises (règl. ANC 2020-01), d'où la confusion. Ils ne s'imputent pas sur les capitaux propres : seuls les coûts d'émission d'instruments de capitaux propres sont déduits des capitaux propres (IAS 32 §37). Les étaler sur cinq ans n'a pas de fondement en IFRS.",
+      "source_ref": "IFRS 3 §53 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-ifrsn-ifrs3-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-3-regroupements-entreprises",
+      "difficulty": 2,
+      "tags": [
+        "définition d'une entreprise",
+        "test de concentration",
+        "acquisition d'actifs"
+      ],
+      "statement": "La société Ondine (IFRS) acquiert 100 % des titres de la SCI Tarn, dont le seul actif significatif est un immeuble de bureaux loué à des tiers ; la juste valeur de l'immeuble représente 97 % de la juste valeur des actifs bruts acquis. La SCI n'a aucun salarié, la gestion locative étant confiée à un prestataire externe dont le contrat n'est pas repris. Comment l'opération est-elle traitée dans les comptes consolidés d'Ondine ?",
+      "options": [
+        "Comme un regroupement d'entreprises : actifs et passifs identifiables à la juste valeur et goodwill pour le solde",
+        "Par mise en équivalence de la SCI, faute d'activité opérationnelle",
+        "Comme une acquisition d'actifs : le coût est réparti sur les actifs et passifs identifiables au prorata de leurs justes valeurs, sans goodwill",
+        "Comme un regroupement d'entreprises, puisque l'opération porte sur des titres de société et non directement sur l'immeuble"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Le test optionnel de concentration (IFRS 3 B7A-B7B) est satisfait : la quasi-totalité de la juste valeur des actifs bruts acquis (97 %) porte sur un actif identifiable unique, l'immeuble. L'ensemble acquis n'est donc pas une entreprise ; il n'y a d'ailleurs ni salariés ni processus substantiel. L'opération est une acquisition d'actifs : le coût est réparti entre les actifs et passifs identifiables au prorata de leurs justes valeurs relatives, sans goodwill ni profit d'acquisition (§2(b)). Appliquer la méthode de l'acquisition avec goodwill suppose une entreprise. Une société détenue à 100 % est contrôlée et ses actifs figurent dans les comptes consolidés : la mise en équivalence ne s'applique pas. Enfin, la détention de titres n'est pas en soi un critère : c'est la substance de l'ensemble acquis qui compte.",
+      "source_ref": "IFRS 3 §2(b), §3, B7-B7B (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue4-ifrsn-ifrs3-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-3-regroupements-entreprises",
+      "difficulty": 2,
+      "tags": [
+        "coûts de restructuration",
+        "passifs repris"
+      ],
+      "statement": "Lors d'une prise de contrôle, l'acquéreur qui envisage de fermer un site de la société acquise comptabilise, dans l'allocation du prix d'acquisition, une provision pour restructuration qui réduit l'actif net identifiable de l'acquise.",
+      "answer": false,
+      "justification": "Faux. Les coûts de restructuration envisagés par l'acquéreur ne sont pas une obligation actuelle de l'acquise à la date d'acquisition : ils ne sont pas des passifs repris (IFRS 3 §11).",
+      "explanation": "À la date d'acquisition, seuls sont comptabilisés les passifs qui répondent à la définition d'un passif à cette date (IFRS 3 §11). Une restructuration que l'acquéreur prévoit de mettre en œuvre après la prise de contrôle n'est pas une obligation actuelle de l'acquise : elle n'est pas un passif repris et ne réduit pas l'actif net identifiable (elle n'augmente donc pas le goodwill). Elle sera provisionnée après l'acquisition, dans les comptes de l'acquéreur, lorsque les conditions d'IAS 37 (§72 : plan formalisé et attente fondée chez les personnes concernées) seront réunies, avec une charge en résultat.",
+      "source_ref": "IFRS 3 §11 (règlement UE 2023/1803) ; IAS 37 §72 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-ifrsn-ifrs3-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-3-regroupements-entreprises",
+      "difficulty": 2,
+      "tags": [
+        "goodwill complet",
+        "participations ne donnant pas le contrôle"
+      ],
+      "statement": "Le 01/04/N, la société Morvan (IFRS) acquiert 80 % des titres de la société Gex pour 4 000 000 € payés en trésorerie ; elle supporte en outre 120 000 € de frais d'acquisition. À cette date, la juste valeur des actifs identifiables acquis nets des passifs repris de Gex s'élève à 4 200 000 €. Morvan opte pour l'évaluation des participations ne donnant pas le contrôle à la juste valeur, estimée à 950 000 €. Calculez le goodwill à comptabiliser à la date d'acquisition (en euros).",
+      "expected_value": 750000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Avec l'option du goodwill complet, les participations ne donnant pas le contrôle sont évaluées à leur juste valeur (IFRS 3 §19). Goodwill = contrepartie transférée + PNC à la juste valeur − actif net identifiable à la juste valeur (§32) = 4 000 000 + 950 000 − 4 200 000 = 750 000 €. Les frais d'acquisition (120 000 €) sont des charges (§53) et n'entrent pas dans le calcul (erreur : 870 000 €). Pour mémoire, le goodwill partiel serait de 4 000 000 + 20 % × 4 200 000 − 4 200 000 = 640 000 € ; l'écart de 110 000 € est le goodwill attribuable aux PNC.",
+      "source_ref": "IFRS 3 §19 et §32-33, §53 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue4-ifrsn-ifrs3-0005",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-3-regroupements-entreprises",
+      "difficulty": 2,
+      "tags": [
+        "contrepartie éventuelle",
+        "complément de prix",
+        "évaluation ultérieure"
+      ],
+      "statement": "Le 01/01/N, le groupe Lisle (IFRS) a acquis 100 % de la société Penhir. Le prix comprend un complément de prix payable en trésorerie en N+2 si l'EBITDA de Penhir dépasse un seuil ; sa juste valeur à la date d'acquisition, 300 000 €, a été intégrée au calcul du goodwill et enregistrée en dette ; elle était inchangée au 31/12/N. Au 31/12/N+1, grâce aux performances réalisées par Penhir depuis l'acquisition, la juste valeur de ce complément de prix est réestimée à 380 000 €. Passez l'écriture du 31/12/N+1 dans les comptes consolidés (on ignore l'effet d'impôt). Conventions : dette de complément de prix au compte 467 ; variation de juste valeur au compte 658.",
+      "date": "31/12/N+1",
+      "entries": [
+        {
+          "account": "658",
+          "label": "Charges diverses (réévaluation du complément de prix)",
+          "debit": 80000,
+          "credit": 0
+        },
+        {
+          "account": "467",
+          "label": "Dette de complément de prix",
+          "debit": 0,
+          "credit": 80000
+        }
+      ],
+      "explanation": "Le complément de prix est une contrepartie éventuelle comprise dans la contrepartie transférée pour sa juste valeur à la date d'acquisition (IFRS 3 §39). Les variations ultérieures de sa juste valeur qui ne résultent pas d'informations complémentaires sur les faits existant à la date d'acquisition (ici, une meilleure performance de la filiale après la prise de contrôle), ou qui interviennent après la période d'évaluation, ne sont pas des ajustements de période d'évaluation : elles ne modifient pas le goodwill. Une contrepartie éventuelle classée en passif financier est réévaluée à la juste valeur par résultat (§58(b)(i)). Augmentation de la dette : 380 000 − 300 000 = 80 000 €, comptabilisée en charge.",
+      "source_ref": "IFRS 3 §39-40 et §58(b)(i) (règlement UE 2023/1803) ; IFRS 9 §4.2.1 et §5.7.1 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue4-ifrsn-ifrs3-0006",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-3-regroupements-entreprises",
+      "difficulty": 3,
+      "tags": [
+        "méthode de l'acquisition",
+        "allocation du prix",
+        "goodwill complet",
+        "contrepartie éventuelle",
+        "impôts différés"
+      ],
+      "title": "Société Aubrac : prise de contrôle de la société Causse",
+      "context": "Le 01/07/N, la société Aubrac, qui établit ses comptes consolidés selon les IFRS, acquiert 75 % des titres de la société Causse et en obtient le contrôle.\n\nLe prix comprend :\n- 6 000 000 € payés en trésorerie le 01/07/N ;\n- un complément de prix payable en trésorerie en N+2 si le chiffre d'affaires de Causse dépasse un seuil ; sa juste valeur au 01/07/N est estimée à 400 000 €.\nAubrac a par ailleurs payé 150 000 € d'honoraires de conseil et d'audit d'acquisition.\n\nAu 01/07/N, les capitaux propres comptables de Causse s'élèvent à 4 000 000 €. L'analyse menée pour l'allocation du prix fait apparaître :\n- une marque développée en interne, non comptabilisée chez Causse, d'une juste valeur de 800 000 € ;\n- un immeuble dont la juste valeur excède la valeur comptable de 500 000 € ;\n- un litige avec un ancien distributeur : Causse a une obligation actuelle dont la sortie de ressources n'est pas jugée probable ; la juste valeur de ce passif éventuel est de 200 000 € (il n'est pas comptabilisé chez Causse).\nLes autres actifs et passifs ont une juste valeur égale à leur valeur comptable. Les écarts d'évaluation ne sont pas reconnus fiscalement : ils donnent lieu à impôt différé au taux de 25 %.\n\nAubrac opte pour l'évaluation des participations ne donnant pas le contrôle (PNC) à la juste valeur, estimée à 1 900 000 €.",
+      "sub_questions": [
+        {
+          "id": "q1-frais",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Comment les 150 000 € d'honoraires sont-ils traités dans les comptes consolidés d'Aubrac ?",
+          "options": [
+            "Ils sont ajoutés à la contrepartie transférée",
+            "Ils sont déduits des capitaux propres consolidés",
+            "Ils sont comptabilisés en charges de l'exercice N",
+            "Ils sont ajoutés à l'actif net identifiable de Causse"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "Les frais connexes à l'acquisition sont des charges de la période (IFRS 3 §53). Ils ne majorent ni la contrepartie transférée (option 1) ni l'actif net identifiable (option 4, sans objet : ce ne sont pas des actifs de Causse) et ne s'imputent pas sur les capitaux propres, réservés aux coûts d'émission de titres (option 2)."
+        },
+        {
+          "id": "q2-contrepartie",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez la contrepartie transférée (en euros).",
+          "expected_value": 6400000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "La contrepartie transférée comprend la trésorerie remise et la juste valeur, à la date d'acquisition, de la contrepartie éventuelle (IFRS 3 §37-39) : 6 000 000 + 400 000 = 6 400 000 €. Les frais (150 000 €) en sont exclus."
+        },
+        {
+          "id": "q3-actif-net",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez la juste valeur de l'actif net identifiable de Causse au 01/07/N, impôts différés compris (en euros).",
+          "expected_value": 4825000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Écarts d'évaluation : marque + 800 000 (incorporel identifiable comptabilisé même s'il ne l'était pas chez l'acquise, IFRS 3 §13 et B31) ; immeuble + 500 000 ; passif éventuel − 200 000 (comptabilisé car obligation actuelle dont la juste valeur est évaluable, même si la sortie n'est pas probable, §23). Total + 1 100 000 €, impôt différé passif 25 % × 1 100 000 = 275 000 € (IAS 12 §19 et §66 ; IFRS 3 §24-25). Actif net identifiable = 4 000 000 + 1 100 000 − 275 000 = 4 825 000 €."
+        },
+        {
+          "id": "q4-goodwill",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez le goodwill complet comptabilisé au 01/07/N (en euros).",
+          "expected_value": 3475000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Goodwill = contrepartie transférée + PNC à la juste valeur − actif net identifiable (IFRS 3 §32) = 6 400 000 + 1 900 000 − 4 825 000 = 3 475 000 €. Erreurs fréquentes : oublier l'impôt différé (3 200 000 €) ou le complément de prix (3 075 000 €), ajouter les frais (3 625 000 €)."
+        },
+        {
+          "id": "q5-suite",
+          "kind": "open",
+          "points": 2,
+          "prompt": "Au 31/12/N+1, après la fin de la période d'évaluation, la juste valeur du complément de prix est réestimée à 550 000 € du fait des ventes réalisées par Causse depuis l'acquisition. Quel est le traitement de cette variation ? Indiquez aussi le montant du goodwill qu'Aubrac aurait comptabilisé si elle avait opté pour l'évaluation des PNC à la quote-part de l'actif net identifiable.",
+          "model_answer": "Le complément de prix payable en trésorerie est un passif financier relevant d'IFRS 9. Sa variation de juste valeur postérieure à l'acquisition, due à des événements survenus après la prise de contrôle et constatée hors période d'évaluation, n'est pas un ajustement du prix : la hausse de 150 000 € (550 000 − 400 000) est comptabilisée en charge dans le résultat N+1 (IFRS 3 §58(b)(i)) et le goodwill reste à 3 475 000 €. Avec l'option du goodwill partiel, les PNC auraient été évaluées à 25 % × 4 825 000 = 1 206 250 € et le goodwill aurait été de 6 400 000 + 1 206 250 − 4 825 000 = 2 781 250 €, soit 693 750 € de moins (part du goodwill attribuée aux PNC).",
+          "key_points": [
+            "Variation de 150 000 € comptabilisée en résultat, sans ajustement du goodwill",
+            "Hors période d'évaluation et liée à des événements postérieurs à l'acquisition",
+            "PNC à la quote-part : 25 % × 4 825 000 = 1 206 250 €",
+            "Goodwill partiel : 2 781 250 €"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Méthode de l'acquisition : frais d'acquisition en charges (150 000 €) ; contrepartie transférée 6 400 000 € (trésorerie + juste valeur du complément de prix) ; actif net identifiable à la juste valeur 4 825 000 € après marque, réévaluation de l'immeuble, passif éventuel et impôt différé passif ; goodwill complet 3 475 000 € (goodwill partiel 2 781 250 €). La réévaluation ultérieure du complément de prix classé en passif passe en résultat sans modifier le goodwill.",
+      "source_ref": "IFRS 3 §18-19, §23, §24-25, §32, §37-39, §53 et §58 (règlement UE 2023/1803) ; IAS 12 §19 et §66 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 900
+    }
+  ]
+}

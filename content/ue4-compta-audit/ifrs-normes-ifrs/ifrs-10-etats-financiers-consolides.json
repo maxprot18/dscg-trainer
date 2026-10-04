@@ -1,0 +1,120 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-ifrsn-ifrs10-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-10-etats-financiers-consolides",
+      "difficulty": 1,
+      "tags": [
+        "participations ne donnant pas le contrôle",
+        "présentation"
+      ],
+      "statement": "Dans l'état consolidé de la situation financière établi selon les IFRS, où sont présentées les participations ne donnant pas le contrôle ?",
+      "options": [
+        "Parmi les passifs non courants",
+        "Dans une rubrique distincte, entre les capitaux propres et les passifs",
+        "Uniquement en annexe, sans figurer au bilan",
+        "Dans les capitaux propres, séparément des capitaux propres attribuables aux propriétaires de la mère"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Les participations ne donnant pas le contrôle (intérêts minoritaires) sont présentées dans l'état consolidé de la situation financière au sein des capitaux propres, séparément des capitaux propres attribuables aux propriétaires de la mère (IFRS 10 §22 ; IAS 1 §54(q)). Elles ne sont pas une dette : le groupe n'a pas d'obligation de remettre de la trésorerie aux minoritaires. Elles ne sont pas une rubrique intermédiaire entre capitaux propres et dettes (présentation que l'on rencontrait dans d'anciennes pratiques françaises), ni un simple renvoi en annexe.",
+      "source_ref": "IFRS 10 §22 et B94 (règlement UE 2023/1803) ; IAS 1 §54(q) (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-ifrsn-ifrs10-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-10-etats-financiers-consolides",
+      "difficulty": 2,
+      "tags": [
+        "contrôle de fait",
+        "droits de vote",
+        "dispersion de l'actionnariat"
+      ],
+      "statement": "La société Lozère (IFRS) détient 43 % des droits de vote de la société cotée Margeride. Le reste du capital est réparti entre plusieurs milliers d'actionnaires, dont aucun ne détient plus de 1 % ; il n'existe aucun pacte entre eux. Depuis cinq ans, Lozère fait systématiquement adopter ses propositions en assemblée, notamment la désignation de la majorité des administrateurs. Aucun droit de vote potentiel n'existe. Quel traitement retenir dans les comptes consolidés de Lozère ?",
+      "options": [
+        "Mise en équivalence, Lozère n'exerçant qu'une influence notable faute de majorité",
+        "Intégration globale, Lozère ayant le contrôle de fait de Margeride",
+        "Aucune consolidation tant que Lozère ne détient pas plus de 50 % des droits de vote",
+        "Évaluation des titres à la juste valeur selon IFRS 9, Margeride étant cotée"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le contrôle ne suppose pas la majorité des droits de vote. IFRS 10 B41-B45 : un investisseur peut avoir le pouvoir avec moins de la moitié des droits de vote si leur importance relative, par rapport à la dispersion des autres porteurs, lui donne la capacité pratique de diriger unilatéralement les activités pertinentes. Avec 43 % face à des milliers d'actionnaires dont aucun ne dépasse 1 %, sans pacte entre eux, et un historique où Lozère fait seule adopter ses résolutions, le contrôle de fait est caractérisé : intégration globale. La mise en équivalence (influence notable) sous-estime ce pouvoir. Le seuil de 50 % n'est pas une condition, et la cotation de la filiale n'interdit rien.",
+      "source_ref": "IFRS 10 §7, §10-11, B38 et B41-B45 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue4-ifrsn-ifrs10-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-10-etats-financiers-consolides",
+      "difficulty": 2,
+      "tags": [
+        "variation de pourcentage d'intérêt",
+        "transactions entre actionnaires"
+      ],
+      "statement": "Lorsqu'une mère qui contrôle une filiale à 80 % porte sa participation à 95 %, l'écart entre le prix payé et la valeur comptable des participations ne donnant pas le contrôle rachetées est comptabilisé en capitaux propres part du groupe, sans modification du goodwill.",
+      "answer": true,
+      "justification": "Vrai. Sans changement de contrôle, l'opération est une transaction entre actionnaires comptabilisée en capitaux propres (IFRS 10 §23, B96) ; ni goodwill complémentaire ni résultat.",
+      "explanation": "Une fois le contrôle obtenu, les variations du pourcentage de détention qui ne font pas perdre le contrôle sont des transactions entre propriétaires agissant en cette qualité (IFRS 10 §23). La valeur comptable des participations ne donnant pas le contrôle est ajustée pour refléter le nouveau partage, et l'écart avec le prix payé est comptabilisé directement en capitaux propres attribuables aux propriétaires de la mère (B96). Le goodwill déterminé à la prise de contrôle n'est pas modifié et aucun résultat n'est constaté.",
+      "source_ref": "IFRS 10 §23 et B96 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-ifrsn-ifrs10-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-10-etats-financiers-consolides",
+      "difficulty": 3,
+      "tags": [
+        "variation de pourcentage d'intérêt",
+        "rachat de minoritaires",
+        "capitaux propres part du groupe"
+      ],
+      "statement": "La société Brenne (IFRS) contrôle la société Sologne, qu'elle détient à 70 % depuis plusieurs années. Au 30/06/N, la valeur comptable des participations ne donnant pas le contrôle (30 %) de Sologne dans les comptes consolidés s'élève à 600 000 €. À cette date, Brenne rachète 10 % du capital de Sologne à un actionnaire minoritaire pour 260 000 € payés en trésorerie. De quel montant les capitaux propres attribuables aux propriétaires de la mère diminuent-ils du fait de cette opération (en euros, montant positif) ?",
+      "expected_value": 60000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Le rachat de 10 % sans changement de contrôle est une transaction entre actionnaires (IFRS 10 §23). Les PNC transférées représentent 10 % / 30 % de leur valeur comptable : 600 000 × 10/30 = 200 000 €. Prix payé : 260 000 €. L'écart de 60 000 € est imputé sur les capitaux propres attribuables aux propriétaires de la mère (B96) : ils diminuent de 60 000 €. Aucun goodwill complémentaire (erreur fréquente : constater 60 000 € de goodwill) ni aucun résultat n'est comptabilisé.",
+      "source_ref": "IFRS 10 §23 et B96 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue4-ifrsn-ifrs10-0005",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-10-etats-financiers-consolides",
+      "difficulty": 1,
+      "tags": [
+        "droits substantiels",
+        "droits protecteurs",
+        "pouvoir"
+      ],
+      "front": "IFRS 10 : quelle différence entre droits substantiels et droits protecteurs pour apprécier le pouvoir ?",
+      "back": "Droits substantiels : droits que leur titulaire a la capacité pratique d'exercer (pas d'obstacle économique ou juridique), au moment où les décisions sur les activités pertinentes doivent être prises ; seuls ils sont retenus pour apprécier le pouvoir.\nDroits protecteurs : droits qui protègent les intérêts de leur titulaire (veto sur des changements fondamentaux ou des situations exceptionnelles) sans lui donner le pouvoir ; ils n'empêchent pas un autre investisseur de contrôler.",
+      "explanation": "Exemples de droits protecteurs : veto d'un prêteur sur une cession d'actifs significative, accord requis d'un minoritaire pour modifier les statuts ou émettre des titres. Les droits de vote potentiels (options) ne comptent que s'ils sont substantiels (B47-B50).",
+      "source_ref": "IFRS 10 B22-B28 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 40
+    }
+  ]
+}

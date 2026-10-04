@@ -24,6 +24,163 @@
       "source_ref": "IFRS 16 §22-24 et §26-27 (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 150
+    },
+    {
+      "id": "ue4-ifrsn-ifrs16-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-16-contrats-location",
+      "difficulty": 1,
+      "tags": [
+        "preneur",
+        "compte de résultat",
+        "droit d'utilisation"
+      ],
+      "statement": "La société Ardèche (IFRS) prend en location des bureaux pour 6 ans, sans option d'achat ; il ne s'agit pas d'un actif de faible valeur. Quelles charges apparaissent dans son compte de résultat au titre de ce contrat ?",
+      "options": [
+        "Une charge de loyer égale aux loyers payés, répartie linéairement",
+        "Une dotation aux amortissements du droit d'utilisation et une charge d'intérêts sur la dette locative",
+        "Une charge de loyer, le contrat étant une location simple chez le preneur",
+        "Aucune charge : le contrat est traité hors bilan et décrit en annexe"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Chez le preneur, IFRS 16 applique un modèle unique : à la date de début, un droit d'utilisation et une dette locative sont comptabilisés (§22). Au compte de résultat apparaissent l'amortissement du droit d'utilisation (§31) et la charge d'intérêts sur la dette locative (§36-38, §49), et non une charge de loyer. La distinction location simple / location-financement ne subsiste que chez le bailleur, donc la réponse « charge de loyer linéaire » correspond à l'ancien traitement IAS 17 de la location simple. Aucun traitement hors bilan n'existe pour un contrat de 6 ans, l'exemption ne visant que les contrats de 12 mois au plus et les actifs de faible valeur.",
+      "source_ref": "IFRS 16 §22, §31 et §36-38, §49 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-ifrsn-ifrs16-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-16-contrats-location",
+      "difficulty": 2,
+      "tags": [
+        "loyers variables",
+        "dette locative"
+      ],
+      "statement": "Pour un bail commercial prévoyant un loyer fixe et un loyer additionnel égal à 2 % du chiffre d'affaires réalisé dans le magasin, la dette locative du preneur inclut la valeur actualisée du loyer additionnel estimé sur la durée du bail.",
+      "answer": false,
+      "justification": "Faux. Les loyers variables liés au chiffre d'affaires sont exclus de la dette locative et comptabilisés en charges quand ils sont dus (IFRS 16 §27(b), §38(b)).",
+      "explanation": "Seuls les loyers variables qui dépendent d'un indice ou d'un taux (indexation sur l'ICC ou l'ILAT, sur un taux d'intérêt de référence) entrent dans l'évaluation de la dette locative, sur la base de l'indice ou du taux à la date de début (§27(b), §28). Les loyers variables fondés sur le chiffre d'affaires réalisé dans le local ou sur l'utilisation de l'actif en sont exclus : ils sont comptabilisés en charges de la période au cours de laquelle survient l'événement qui les déclenche (§38(b)).",
+      "source_ref": "IFRS 16 §27(b), §28 et §38(b) (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-ifrsn-ifrs16-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-16-contrats-location",
+      "difficulty": 2,
+      "tags": [
+        "durée du contrat",
+        "option de prolongation",
+        "dette locative"
+      ],
+      "statement": "Le 01/01/N, la société Corrèze (IFRS) prend en location un local commercial pour une période non résiliable de 3 ans, au loyer annuel de 12 000 €, payable le 31/12. Le contrat lui donne une option de prolongation de 2 ans au loyer annuel de 13 000 €. Compte tenu des agencements importants qu'elle va réaliser et de l'emplacement stratégique du local, Corrèze est raisonnablement certaine d'exercer l'option. Le taux implicite n'est pas déterminable ; le taux d'emprunt marginal de Corrèze est de 5 %. Calculez la dette locative au 01/01/N (en euros, arrondi au centime).",
+      "expected_value": 53559.95,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "unit": "€",
+      "decimals": 2,
+      "explanation": "La durée du contrat comprend la période non résiliable (3 ans) et la période couverte par l'option de prolongation, dont l'exercice est raisonnablement certain (§18-19, B37 : agencements importants, emplacement stratégique). La dette locative est la valeur actualisée des 5 loyers au taux d'emprunt marginal (§26) : 12 000 × (1,05⁻¹ + 1,05⁻² + 1,05⁻³) + 13 000 × (1,05⁻⁴ + 1,05⁻⁵) = 32 678,98 + 13 000 × (0,822702 + 0,783526) = 32 678,98 + 20 880,97 = 53 559,95 €. Erreurs : ignorer l'option (32 678,98 €) ou appliquer 12 000 € aux 5 années (51 953,72 €).",
+      "source_ref": "IFRS 16 §18-19, §26-27 et B34-B37 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue4-ifrsn-ifrs16-0005",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-16-contrats-location",
+      "difficulty": 2,
+      "tags": [
+        "dette locative",
+        "charge d'intérêts",
+        "paiement du loyer"
+      ],
+      "statement": "Le 01/01/N, la société Hérault (IFRS) a pris en location un engin de chantier pour 4 ans, moyennant un loyer annuel de 15 000 € payable le 31/12. Au taux d'emprunt marginal de 6 %, la dette locative a été comptabilisée pour 51 976,58 €. Passez l'écriture du 31/12/N relative au paiement du loyer, intérêts compris (arrondir au centime). Conventions : dette locative au compte 168, intérêts au compte 661, paiement par le compte 512.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "661",
+          "label": "Charges d'intérêts (dette locative)",
+          "debit": 3118.59,
+          "credit": 0
+        },
+        {
+          "account": "168",
+          "label": "Dette locative",
+          "debit": 11881.41,
+          "credit": 0
+        },
+        {
+          "account": "512",
+          "label": "Banque",
+          "debit": 0,
+          "credit": 15000
+        }
+      ],
+      "explanation": "Après la date de début, la dette locative est augmentée des intérêts et diminuée des loyers versés (IFRS 16 §36). Intérêts N = 51 976,58 × 6 % = 3 118,59 € (charge financière). Le loyer de 15 000 € rembourse donc la dette à hauteur de 15 000 − 3 118,59 = 11 881,41 €. Dette au 31/12/N après paiement : 40 095,17 €. L'amortissement du droit d'utilisation fait l'objet d'une écriture distincte.",
+      "source_ref": "IFRS 16 §36-37 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue4-ifrsn-ifrs16-0006",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-16-contrats-location",
+      "difficulty": 3,
+      "tags": [
+        "droit d'utilisation",
+        "loyers payables d'avance",
+        "coûts directs initiaux",
+        "avantages incitatifs",
+        "démantèlement"
+      ],
+      "statement": "Le 01/01/N, la société Tarn (IFRS) prend en location un bâtiment industriel pour 5 ans. Loyer annuel : 40 000 €, payable d'avance le 01/01 de chaque année (le premier loyer est payé le 01/01/N). Le taux d'emprunt marginal est de 4 %. Le même jour, Tarn paie 3 000 € de frais de négociation directement liés au contrat (coûts directs initiaux) et reçoit du bailleur un avantage incitatif de 5 000 € en trésorerie. Le contrat l'oblige à remettre le site en état à l'issue du bail ; la valeur actualisée de ces coûts est estimée à 8 000 €. Passez l'écriture unique de comptabilisation initiale du contrat au 01/01/N, flux de trésorerie compris (montants arrondis au centime). Conventions : droit d'utilisation au compte 218, dette locative au compte 168, provision pour remise en état au compte 158, trésorerie au compte 512 (une seule ligne, pour le montant net).",
+      "date": "01/01/N",
+      "entries": [
+        {
+          "account": "218",
+          "label": "Droit d'utilisation",
+          "debit": 191195.81,
+          "credit": 0
+        },
+        {
+          "account": "168",
+          "label": "Dette locative",
+          "debit": 0,
+          "credit": 145195.81
+        },
+        {
+          "account": "158",
+          "label": "Provision pour remise en état du site",
+          "debit": 0,
+          "credit": 8000
+        },
+        {
+          "account": "512",
+          "label": "Banque (40 000 + 3 000 − 5 000)",
+          "debit": 0,
+          "credit": 38000
+        }
+      ],
+      "explanation": "Loyers payables d'avance : le loyer du 01/01/N est versé à la date de début et n'entre pas dans la dette, qui correspond aux 4 loyers restants actualisés (§26) : 40 000 × [1 − 1,04⁻⁴] / 0,04 = 40 000 × 3,629895 = 145 195,81 €. Droit d'utilisation (§24) = dette 145 195,81 + loyer versé 40 000 + coûts directs initiaux 3 000 − avantage incitatif reçu 5 000 + coûts de remise en état actualisés 8 000 = 191 195,81 €. Trésorerie nette décaissée : 40 000 + 3 000 − 5 000 = 38 000 €. La provision pour remise en état (8 000 €) est comptabilisée selon IAS 37. Écriture : débit 218 191 195,81 ; crédits 168 145 195,81, 158 8 000 et 512 38 000.",
+      "source_ref": "IFRS 16 §23-24 et §26 (règlement UE 2023/1803) ; IAS 37 §14 et §45 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 300
     }
   ]
 }

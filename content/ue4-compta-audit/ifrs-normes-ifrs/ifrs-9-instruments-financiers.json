@@ -1,0 +1,225 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-ifrsn-ifrs9-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-9-instruments-financiers",
+      "difficulty": 1,
+      "tags": [
+        "classement",
+        "actions",
+        "juste valeur par résultat"
+      ],
+      "statement": "La société Iroise (IFRS) achète des actions cotées dans le but de les revendre à brève échéance pour profiter des variations de cours. Comment ces actions sont-elles évaluées après leur comptabilisation initiale ?",
+      "options": [
+        "Au coût amorti",
+        "À la juste valeur par les autres éléments du résultat global, sans recyclage, sur option",
+        "Au coût historique, avec une dépréciation si le cours devient inférieur au coût",
+        "À la juste valeur par résultat"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Des actions acquises pour être revendues à court terme sont détenues à des fins de transaction. Une action ne donne pas des flux uniquement constitués de principal et d'intérêts : le coût amorti et la juste valeur par OCI recyclable sont exclus. L'option pour la juste valeur par OCI non recyclable n'est ouverte qu'aux instruments de capitaux propres non détenus à des fins de transaction (§5.7.5) : elle est ici impossible. Les actions sont donc évaluées à la juste valeur par résultat (§4.1.4), les coûts de transaction étant comptabilisés en charges (§5.1.1). Le coût historique avec dépréciation est la logique du PCG pour les VMP, pas celle d'IFRS 9.",
+      "source_ref": "IFRS 9 §4.1.4, §5.1.1, §5.7.1 et annexe A (définition de « détenu à des fins de transaction ») (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-ifrsn-ifrs9-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-9-instruments-financiers",
+      "difficulty": 2,
+      "tags": [
+        "test SPPI",
+        "obligation convertible",
+        "classement"
+      ],
+      "statement": "La société Saorge (IFRS) souscrit des obligations convertibles émises par une société cotée : chaque obligation peut être convertie à tout moment en un nombre fixe d'actions de l'émetteur ; à défaut, elle est remboursée au pair à l'échéance avec un coupon annuel fixe. Saorge détient ses placements obligataires pour en encaisser les flux contractuels. Comment ces obligations sont-elles classées par le porteur ?",
+      "options": [
+        "Au coût amorti, puisque le modèle économique est la collecte des flux contractuels",
+        "À la juste valeur par OCI recyclable",
+        "Obligation au coût amorti et dérivé de conversion séparé à la juste valeur par résultat",
+        "À la juste valeur par résultat, pour l'instrument pris dans son ensemble"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Le droit de conversion en un nombre fixe d'actions expose le porteur à la variation du cours de l'action de l'émetteur : les flux ne sont pas uniquement des remboursements de principal et des intérêts (test SPPI non satisfait, IFRS 9 B4.1.14). Le modèle économique de « collecte » ne suffit donc pas à permettre le coût amorti (option 1), ni la juste valeur par OCI recyclable (option 2). IFRS 9 ne prévoit pas de séparation d'un dérivé incorporé dans un actif financier hôte (§4.3.2 ; option 3, logique d'IAS 39) : l'instrument est classé dans son ensemble, à la juste valeur par résultat (§4.1.4).",
+      "source_ref": "IFRS 9 §4.1.2-4.1.4, §4.3.2, B4.1.7A et B4.1.14 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-ifrsn-ifrs9-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-9-instruments-financiers",
+      "difficulty": 2,
+      "tags": [
+        "dépréciation",
+        "pertes de crédit attendues",
+        "approche simplifiée",
+        "créances commerciales"
+      ],
+      "statement": "Pour les créances commerciales sans composante de financement importante, IFRS 9 impose de comptabiliser, dès l'origine, une correction de valeur égale aux pertes de crédit attendues sur toute la durée de vie de la créance.",
+      "answer": true,
+      "justification": "Vrai. C'est l'approche simplifiée, obligatoire pour ces créances (IFRS 9 §5.5.15) : pas de pertes attendues à 12 mois ni de suivi par étapes.",
+      "explanation": "Pour les créances commerciales et actifs sur contrat relevant d'IFRS 15 qui ne comportent pas de composante de financement importante, IFRS 9 impose l'approche simplifiée (§5.5.15(a)(i)) : la correction de valeur est toujours égale aux pertes de crédit attendues sur la durée de vie, dès la comptabilisation initiale, sans suivi de la dégradation du risque de crédit par étapes. En pratique, les entités utilisent souvent une matrice de provisionnement fondée sur l'historique de pertes, ajustée des informations prospectives. Pour les créances comportant une composante de financement importante, l'approche simplifiée est une option.",
+      "source_ref": "IFRS 9 §5.5.15(a)(i) (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-ifrsn-ifrs9-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-9-instruments-financiers",
+      "difficulty": 3,
+      "tags": [
+        "coût amorti",
+        "taux d'intérêt effectif",
+        "coûts de transaction"
+      ],
+      "statement": "Le 01/01/N, la société Vexin (IFRS) acquiert, pour le conserver jusqu'à l'échéance et en encaisser les flux, un emprunt obligataire de valeur nominale 100 000 €, au prix de 96 000 €, et paie 1 000 € de frais de transaction. Coupon annuel : 3 % du nominal, versé le 31/12 ; remboursement au pair le 31/12/N+2. Les flux sont uniquement du principal et des intérêts ; aucun risque de crédit n'est à prendre en compte. Calculez le produit d'intérêt comptabilisé en N selon la méthode du taux d'intérêt effectif (en euros, arrondi à l'euro ; TIE à déterminer au millième de pour cent près).",
+      "expected_value": 3960,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 5
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Valeur initiale = juste valeur + coûts de transaction (actif au coût amorti, IFRS 9 §5.1.1) = 96 000 + 1 000 = 97 000 €. Le TIE r actualise exactement les flux futurs à 97 000 € : 3 000/(1+r) + 3 000/(1+r)² + 103 000/(1+r)³ = 97 000, d'où r ≈ 4,0827 % (par itérations ou à la calculatrice). Produit d'intérêt N = 97 000 × 4,0827 % ≈ 3 960 € (§5.4.1), dont 3 000 € de coupon encaissé et 960 € d'amortissement de la décote, qui porte le coût amorti à 97 960 € au 31/12/N. Erreurs typiques : retenir le seul coupon (3 000 €), étaler la décote linéairement (3 000 + 3 000/3 = 4 000 €) ou omettre les coûts de transaction (≈ 4 276 €).",
+      "source_ref": "IFRS 9 §4.1.2, §5.1.1, §5.4.1 et annexe A (définition du taux d'intérêt effectif) (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 300
+    },
+    {
+      "id": "ue4-ifrsn-ifrs9-0005",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-9-instruments-financiers",
+      "difficulty": 2,
+      "tags": [
+        "instruments de capitaux propres",
+        "juste valeur par OCI",
+        "option irrévocable"
+      ],
+      "statement": "Le 01/03/N, la société Quercy (IFRS) acquiert 10 000 actions non cotées de la société Rance au prix unitaire de 25 €, et paie 2 000 € de frais d'acquisition. Elle les détient dans une perspective stratégique de long terme et a choisi, de façon irrévocable, de présenter leurs variations de juste valeur en autres éléments du résultat global. Au 31/12/N, la juste valeur de l'action Rance est estimée à 28 €. Passez l'écriture d'évaluation du 31/12/N (on ignore l'impôt). Utilisez le compte 271 pour les titres et le compte 105 pour la réserve de juste valeur en OCI.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "271",
+          "label": "Titres immobilisés (droit de propriété)",
+          "debit": 28000,
+          "credit": 0
+        },
+        {
+          "account": "105",
+          "label": "Écart de réévaluation (réserve de juste valeur – OCI)",
+          "debit": 0,
+          "credit": 28000
+        }
+      ],
+      "explanation": "Les titres désignés à la juste valeur par OCI sont comptabilisés initialement à la juste valeur majorée des coûts de transaction (IFRS 9 §5.1.1) : 10 000 × 25 + 2 000 = 252 000 €. Au 31/12/N, juste valeur 10 000 × 28 = 280 000 € : gain de 28 000 € porté en OCI (écart de réévaluation en capitaux propres), sans passage en résultat ni recyclage ultérieur (§5.7.5, B5.7.1). Erreur fréquente : calculer l'écart sur 250 000 € (30 000 €) en oubliant que les frais sont inclus dans la valeur initiale.",
+      "source_ref": "IFRS 9 §5.1.1, §5.7.5-5.7.6 et B5.7.1 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue4-ifrsn-ifrs9-0006",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-9-instruments-financiers",
+      "difficulty": 3,
+      "tags": [
+        "classement",
+        "pertes de crédit attendues",
+        "juste valeur par OCI",
+        "juste valeur par résultat"
+      ],
+      "title": "Société Gévaudan : portefeuille financier au 31/12/N",
+      "context": "La société Gévaudan, qui applique les IFRS, détient au 31/12/N trois lignes de placements, toutes acquises au cours de l'exercice N. On ignore l'impôt.\n\n1. Obligation Alpha, acquise le 01/01/N pour 500 000 € (valeur comptable brute au 31/12/N : 500 000 €) dans un portefeuille géré pour encaisser les flux contractuels ; ses flux sont uniquement du principal et des intérêts. À l'origine, le risque de crédit était faible. Fin N, l'émetteur a vu sa notation abaissée de plusieurs crans : la direction conclut à une augmentation importante du risque de crédit depuis l'origine, sans que l'actif soit déprécié au sens de l'étape 3. Données de risque au 31/12/N : probabilité de défaut à 12 mois 1 %, probabilité de défaut sur la durée de vie 4 %, perte en cas de défaut 40 % de la valeur comptable brute.\n\n2. Actions Bêta : 5 000 actions acquises au prix unitaire de 40 €, plus 1 500 € de frais. Participation stratégique, que Gévaudan a désignée de façon irrévocable à la juste valeur par les autres éléments du résultat global (OCI). Cours au 31/12/N : 36 €. Aucun dividende n'a été reçu en N.\n\n3. Actions Gamma : acquises 20 000 € (plus 300 € de frais de courtage) en vue d'une revente rapide. Juste valeur au 31/12/N : 23 000 €.",
+      "sub_questions": [
+        {
+          "id": "q1-classement-gamma",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Quel est le traitement des actions Gamma ?",
+          "options": [
+            "Juste valeur par résultat ; les 300 € de frais sont comptabilisés en charges",
+            "Juste valeur par résultat ; les 300 € de frais sont ajoutés à la valeur initiale",
+            "Juste valeur par OCI non recyclable, sur option",
+            "Coût amorti, frais inclus"
+          ],
+          "answer": [
+            0
+          ],
+          "explanation": "Détenues à des fins de transaction, les actions Gamma sont évaluées à la juste valeur par résultat (IFRS 9 §4.1.4) ; l'option OCI leur est fermée (§5.7.5). Pour un actif à la juste valeur par résultat, les coûts de transaction ne sont pas incorporés à la valeur initiale (§5.1.1) : ils sont passés en charges. Le coût amorti est exclu pour une action (flux non SPPI)."
+        },
+        {
+          "id": "q2-ecl-alpha",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez la correction de valeur pour pertes de crédit attendues à comptabiliser au 31/12/N sur l'obligation Alpha (en euros).",
+          "expected_value": 8000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "L'augmentation importante du risque de crédit fait passer l'obligation en étape 2 : la correction de valeur est égale aux pertes de crédit attendues sur la durée de vie (IFRS 9 §5.5.3) = 500 000 × 4 % × 40 % = 8 000 €. Sans dégradation importante (étape 1), elle aurait été limitée aux pertes attendues à 12 mois : 500 000 × 1 % × 40 % = 2 000 € (§5.5.5)."
+        },
+        {
+          "id": "q3-oci-beta",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Quel montant de perte latente est comptabilisé en OCI au 31/12/N au titre des actions Bêta (en euros, montant positif) ?",
+          "expected_value": 21500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Valeur initiale = juste valeur + frais (actif non évalué à la juste valeur par résultat, §5.1.1) = 5 000 × 40 + 1 500 = 201 500 €. Juste valeur au 31/12/N = 5 000 × 36 = 180 000 €. Perte latente en OCI : 21 500 € (et non 20 000 €, montant obtenu en oubliant les frais). Aucune dépréciation en résultat : le modèle des pertes de crédit attendues ne s'applique pas aux instruments de capitaux propres."
+        },
+        {
+          "id": "q4-cession-beta",
+          "kind": "true_false",
+          "points": 2,
+          "prompt": "Si Gévaudan cède les actions Bêta en N+1 au prix de 45 € par action, le gain cumulé depuis l'acquisition est reclassé en résultat lors de la cession.",
+          "answer": false,
+          "explanation": "Faux. Pour un instrument de capitaux propres désigné à la juste valeur par OCI, les montants présentés en OCI ne sont jamais recyclés en résultat, même à la cession (IFRS 9 B5.7.1) ; le cumul peut seulement être transféré à l'intérieur des capitaux propres (vers les réserves). Seuls les dividendes passent en résultat."
+        },
+        {
+          "id": "q5-impact-resultat",
+          "kind": "open",
+          "points": 2,
+          "prompt": "Déterminez l'impact total de ces trois placements sur le résultat N de Gévaudan (hors produits d'intérêts de l'obligation) et commentez.",
+          "model_answer": "Obligation Alpha : dotation pour pertes de crédit attendues de 8 000 € (charge). Actions Bêta : aucun impact sur le résultat N (la perte latente de 21 500 € est en OCI et aucun dividende n'a été perçu). Actions Gamma : frais de courtage en charges (300 €) et variation de juste valeur positive en résultat (23 000 − 20 000 = 3 000 €). Impact net sur le résultat N : − 8 000 − 300 + 3 000 = − 5 300 €. Le résultat global (résultat + OCI) intègre en plus la perte de 21 500 € sur Bêta, soit − 26 800 €.",
+          "key_points": [
+            "Pertes de crédit attendues sur la durée de vie : charge de 8 000 €",
+            "Bêta : rien en résultat, perte latente en OCI",
+            "Gamma : + 3 000 € de juste valeur et − 300 € de frais en résultat",
+            "Impact net sur le résultat N : − 5 300 €"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Trois logiques coexistent : obligation au coût amorti dépréciée selon les pertes de crédit attendues (passage en étape 2 : pertes sur la durée de vie, 8 000 €) ; actions désignées à la juste valeur par OCI non recyclable (perte latente de 21 500 € en OCI, aucun recyclage à la cession) ; actions de transaction à la juste valeur par résultat (+ 3 000 € de variation de juste valeur, frais de 300 € en charges). Impact sur le résultat N : − 8 000 + 3 000 − 300 = − 5 300 €.",
+      "source_ref": "IFRS 9 §4.1.2-4.1.4, §5.1.1, §5.5.3-5.5.5, §5.7.1 et §5.7.5, B5.7.1 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 900
+    }
+  ]
+}
