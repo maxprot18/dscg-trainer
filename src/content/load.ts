@@ -48,17 +48,17 @@ export function loadExercises(): Promise<Exercise[]> {
   return cache
 }
 
-/** Exercices servis, ou `null` pendant le premier chargement. */
-export function useExercises(): Exercise[] | null {
+/** Exercices servis, ou `null` pendant le premier chargement. `enabled: false` n'en charge aucun. */
+export function useExercises(enabled = true): Exercise[] | null {
   const [exercises, setExercises] = useState<Exercise[] | null>(loaded)
   useEffect(() => {
-    if (exercises) return
+    if (exercises || !enabled) return
     let alive = true
     void loadExercises().then((list) => alive && setExercises(list))
     return () => {
       alive = false
     }
-  }, [exercises])
+  }, [exercises, enabled])
   return exercises
 }
 

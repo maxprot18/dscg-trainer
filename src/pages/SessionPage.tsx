@@ -33,7 +33,8 @@ function BackToTraining({ message }: { message: string }) {
 }
 
 export function SessionPage({ pool }: { pool?: readonly Exercise[] }) {
-  const loaded = useExercises()
+  // Un pool fourni (tests) dispense de charger tout le contenu.
+  const loaded = useExercises(!pool)
   const available = pool ?? loaded
   if (!available) return <p className="text-muted-foreground">Chargement des exercices…</p>
   return <SessionLoader pool={available} />
