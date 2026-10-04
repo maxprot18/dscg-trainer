@@ -81,3 +81,13 @@ export async function loadCourse(notionId: string): Promise<string | null> {
   const load = courseFiles[coursePath(notionId)]
   return load ? load() : null
 }
+
+/** Toutes les fiches de cours (recherche plein texte), chargées en une fois à la demande. */
+export async function loadAllCourses(): Promise<{ id: string; text: string }[]> {
+  return Promise.all(
+    Object.entries(courseFiles).map(async ([path, load]) => ({
+      id: path.slice('/content/courses/'.length, -'.md'.length),
+      text: await load(),
+    })),
+  )
+}

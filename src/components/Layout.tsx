@@ -1,7 +1,9 @@
-import { BookOpen, ChartColumn, Dumbbell, House } from 'lucide-react'
-import { Link, NavLink, Outlet } from 'react-router-dom'
+import { BookOpen, ChartColumn, Dumbbell, House, Search } from 'lucide-react'
+import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom'
 
 import { ThemeToggle } from '@/components/ThemeToggle'
+import { Button } from '@/components/ui/button'
+import { useKeyboard } from '@/hooks/useKeyboard'
 import { cn } from '@/lib/utils'
 
 const links = [
@@ -12,6 +14,9 @@ const links = [
 ]
 
 export function Layout() {
+  const navigate = useNavigate()
+  // « / » ouvre la recherche (hors saisie dans un champ).
+  useKeyboard((key) => (key === '/' ? (navigate('/recherche'), true) : false), true)
   return (
     <div className="mx-auto flex min-h-dvh max-w-3xl flex-col">
       <header className="flex items-center justify-between px-4 pt-3">
@@ -19,6 +24,11 @@ export function Layout() {
           DSCG Trainer
         </Link>
         <div className="flex items-center">
+          <Button asChild variant="ghost" size="icon">
+            <Link to="/recherche" aria-label="Rechercher (raccourci /)" title="Rechercher (/)">
+              <Search />
+            </Link>
+          </Button>
           <ThemeToggle />
         </div>
       </header>
