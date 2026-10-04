@@ -27,6 +27,196 @@
       ],
       "multiple": false,
       "explanation": "Formule de l'effet de levier : R_f = R_e + (R_e − i) × D/CP. Le levier est D/CP = 2/4 = 0,5. R_f = 9 % + (9 % − 3 %) × 0,5 = 9 % + 3 % = 12 %. Vérification par les montants : résultat économique après impôt = 9 % × 6 M€ = 540 k€ ; frais financiers après impôt = 3 % × 2 M€ = 60 k€ ; résultat net = 480 k€, soit 480/4 000 = 12 %. 11 % résulte d'un levier mal calculé (D/(D+CP) = 1/3 au lieu de D/CP) ; 21 % inverse le ratio (CP/D = 2) ; 6 % n'est que l'écart R_e − i (le différentiel de levier), pas la rentabilité financière. L'effet de levier est positif ici car R_e > i."
+    },
+    {
+      "id": "ue2-diag-levier-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "rentabilite-effet-levier",
+      "difficulty": 1,
+      "tags": [
+        "effet de levier"
+      ],
+      "source_ref": "Relation de l’effet de levier : R_f = R_e + (R_e − i) × D/CP (taux après impôt)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Toutes choses égales par ailleurs, l'endettement accroît la rentabilité financière d'une entreprise lorsque :",
+      "options": [
+        "le ratio dettes financières / capitaux propres est supérieur à 1",
+        "la rentabilité financière est déjà positive",
+        "le coût de la dette après impôt est supérieur à la rentabilité économique après impôt",
+        "la rentabilité économique après impôt est supérieure au coût de la dette après impôt"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Rf = Re + (Re − i) × D/CP : l'endettement augmente Rf si le différentiel (Re − i) est positif, c'est-à-dire si l'actif financé rapporte plus que la dette ne coûte (option 4). Le niveau du ratio D/CP (option 1) ne fait qu'amplifier l'effet, dans un sens ou dans l'autre. Une Rf positive (option 2) ne dit rien du signe du différentiel. Si i > Re (option 3), l'effet est négatif : c'est l'effet de massue."
+    },
+    {
+      "id": "ue2-diag-levier-0003",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "rentabilite-effet-levier",
+      "difficulty": 2,
+      "tags": [
+        "rentabilité économique",
+        "rotation",
+        "BFR"
+      ],
+      "source_ref": "Décomposition de la rentabilité économique : Re = taux de marge économique × rotation de l’actif économique",
+      "verified": true,
+      "estimated_seconds": 90,
+      "statement": "Une société réalise un chiffre d'affaires de 30 M€ et un résultat d'exploitation après impôt de 1,8 M€, avec un actif économique de 20 M€. Grâce à une réduction du BFR, l'actif économique est ramené à 15 M€, le chiffre d'affaires et le résultat d'exploitation restant inchangés. Quelle est la nouvelle rentabilité économique après impôt ?",
+      "options": [
+        "12 %",
+        "9 %",
+        "6 %",
+        "13,5 %"
+      ],
+      "answer": [
+        0
+      ],
+      "multiple": false,
+      "explanation": "Re = taux de marge économique × rotation. Le taux de marge reste 1,8 / 30 = 6 % ; la rotation passe de 30 / 20 = 1,5 à 30 / 15 = 2. Re = 6 % × 2 = 12 % (option 1), soit 1,8 / 15. 9 % (option 2) est la Re avant réduction du BFR. 6 % (option 3) est le seul taux de marge, sans la rotation. 13,5 % (option 4) applique la rotation de 1,5 à la Re initiale de 9 % au lieu de l'appliquer au taux de marge."
+    },
+    {
+      "id": "ue2-diag-levier-0004",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "rentabilite-effet-levier",
+      "difficulty": 3,
+      "tags": [
+        "effet de massue",
+        "taux avant impôt"
+      ],
+      "source_ref": "Relation de l’effet de levier avec taux avant impôt : R_f = [R_e + (R_e − i) × D/CP] × (1 − t)",
+      "verified": true,
+      "estimated_seconds": 120,
+      "statement": "Une société a une rentabilité économique avant impôt de 7 % et un ratio dettes financières nettes / capitaux propres de 1,5. Le taux d'impôt sur les bénéfices est de 25 %. Le coût de sa dette avant impôt passe de 5 % à 9 % après renégociation. Quelle est sa nouvelle rentabilité financière après impôt ?",
+      "options": [
+        "4,0 %",
+        "−0,4 %",
+        "5,25 %",
+        "3,0 %"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Avec des taux avant impôt : Rf = [Re + (Re − i) × D/CP] × (1 − t). Avant : [7 % + (7 % − 5 %) × 1,5] × 0,75 = 7,5 %. Après : [7 % + (7 % − 9 %) × 1,5] × 0,75 = (7 % − 3 %) × 0,75 = 3,0 % (option 4) : le différentiel devient négatif, l'effet de levier se transforme en effet de massue et la Rf passe sous la Re après impôt (5,25 %). 4,0 % (option 1) oublie l'impôt. −0,4 % (option 2) mélange une Re après impôt (5,25 %) et un coût de la dette avant impôt (9 %). 5,25 % (option 3) est la Re après impôt, qui ne serait la Rf qu'en l'absence de dette."
+    },
+    {
+      "id": "ue2-diag-levier-0005",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "rentabilite-effet-levier",
+      "difficulty": 2,
+      "tags": [
+        "rentabilité économique",
+        "actif économique"
+      ],
+      "source_ref": "Rentabilité économique : résultat d’exploitation après impôt / actif économique (immobilisations d’exploitation + BFRE)",
+      "verified": true,
+      "estimated_seconds": 180,
+      "statement": "Données d'un groupe (en k€) : résultat opérationnel 4 200 ; immobilisations d'exploitation nettes 21 000 ; BFR d'exploitation 3 000 ; trésorerie disponible 1 500 ; capitaux propres 16 500 ; dettes financières 9 000. Le taux d'impôt est de 25 %. Calculez la rentabilité économique après impôt, en %, arrondie à une décimale.",
+      "expected_value": 13.1,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "decimals": 1,
+      "explanation": "Actif économique = immobilisations d'exploitation + BFRE = 21 000 + 3 000 = 24 000 k€ (on vérifie : capitaux propres + endettement net = 16 500 + 9 000 − 1 500 = 24 000). Résultat d'exploitation après impôt = 4 200 × 0,75 = 3 150. Re = 3 150 / 24 000 = 13,1 %. Erreurs classiques : oublier l'impôt (17,5 %), intégrer la trésorerie à l'actif économique (3 150 / 25 500 = 12,4 %)."
+    },
+    {
+      "id": "ue2-diag-levier-0006",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "rentabilite-effet-levier",
+      "difficulty": 3,
+      "tags": [
+        "effet de levier",
+        "choix de financement",
+        "risque financier"
+      ],
+      "source_ref": "Relation de l’effet de levier : R_f = R_e + (R_e − i) × D/CP (taux après impôt)",
+      "verified": true,
+      "estimated_seconds": 720,
+      "title": "Société Corvel : financer un projet par dette ou par fonds propres",
+      "context": "La société Corvel (logistique frigorifique) présente la structure suivante :\n- actif économique : 40 M€, financé par 25 M€ de capitaux propres et 15 M€ de dettes financières nettes au taux de 4 % avant impôt ;\n- résultat d'exploitation avant impôt : 4,8 M€ ;\n- taux d'impôt sur les bénéfices : 25 %.\n\nElle envisage un entrepôt de 10 M€ qui dégagerait un résultat d'exploitation supplémentaire de 1,0 M€ avant impôt. Deux financements sont étudiés :\n- solution A : emprunt bancaire de 10 M€ au taux de 6 % avant impôt (les 15 M€ de dettes existantes restent à 4 %) ;\n- solution B : augmentation de capital de 10 M€.\n\nOn suppose que tous les autres paramètres restent inchangés et que l'activité de Corvel est sensible à la conjoncture.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "Calculez la rentabilité financière actuelle de Corvel (avant projet), en %, arrondie à une décimale.",
+          "points": 2,
+          "expected_value": 12.6,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "Résultat net = (4,8 − 15 × 4 %) × 0,75 = (4,8 − 0,6) × 0,75 = 3,15 M€ ; Rf = 3,15 / 25 = 12,6 %. Par la formule : Re après impôt = 4,8 × 0,75 / 40 = 9 % ; i après impôt = 3 % ; Rf = 9 % + 6 % × 0,6 = 12,6 %."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "prompt": "Calculez la rentabilité financière après réalisation du projet financé selon la solution A, en %, arrondie à une décimale.",
+          "points": 3,
+          "expected_value": 13.8,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "Résultat d'exploitation = 5,8 M€ ; intérêts = 0,6 + 10 × 6 % = 1,2 M€ ; résultat net = 4,6 × 0,75 = 3,45 M€ ; Rf = 3,45 / 25 = 13,8 %. Appliquer 4 % à toute la dette donnerait 14,4 %, à tort."
+        },
+        {
+          "id": "q3",
+          "kind": "numeric",
+          "prompt": "Calculez la rentabilité financière après réalisation du projet financé selon la solution B, en %, arrondie à une décimale.",
+          "points": 3,
+          "expected_value": 11.1,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "Résultat net = (5,8 − 0,6) × 0,75 = 3,9 M€ ; capitaux propres = 35 M€ ; Rf = 3,9 / 35 = 11,1 %."
+        },
+        {
+          "id": "q4",
+          "kind": "true_false",
+          "prompt": "Vrai ou faux : la solution A augmente la rentabilité financière bien que le projet ait une rentabilité économique avant impôt (10 %) inférieure à celle de l'actif existant (12 %).",
+          "points": 2,
+          "answer": true,
+          "explanation": "Vrai : ce qui compte pour l'actionnaire est l'écart entre la rentabilité du projet (10 %) et le coût de son financement (6 %). Le projet seul dégage (1,0 − 0,6) × 0,75 = 0,3 M€ sans capitaux propres supplémentaires, ce qui porte la Rf de 12,6 % à 13,8 %."
+        },
+        {
+          "id": "q5",
+          "kind": "open",
+          "prompt": "Quelle solution recommanderiez-vous ? Argumentez au-delà de la seule rentabilité financière.",
+          "points": 4,
+          "model_answer": "La solution A maximise la Rf (13,8 % contre 11,1 % pour B) sans dilution des actionnaires. Mais elle porte l'endettement net de 15 à 25 M€ et le levier D/CP de 0,6 à 1 : la Rf devient plus sensible aux variations du résultat d'exploitation, ce qui est préoccupant pour une activité cyclique. Le différentiel est étroit sur le projet (10 % contre 6 %) : une baisse de rentabilité ou une hausse des taux le ferait disparaître (effet de massue). Il faut aussi vérifier la capacité de remboursement, la couverture des frais financiers et les éventuels covenants. La solution B réduit le risque financier mais dilue la Rf et le contrôle. Une solution mixte peut constituer un compromis ; la décision dépend de l'aversion au risque des actionnaires et de la stabilité attendue du résultat.",
+          "key_points": [
+            "A maximise la Rf (13,8 % contre 11,1 %)",
+            "A accroît le levier (D/CP de 0,6 à 1) et donc le risque financier, sensible pour une activité cyclique",
+            "Différentiel étroit du projet : risque d’effet de massue si la rentabilité baisse ou si les taux montent",
+            "Vérifier la capacité de remboursement et les covenants ; envisager un financement mixte"
+          ]
+        }
+      ],
+      "total_points": 14,
+      "explanation": "Le cas montre que l'effet de levier se juge sur le différentiel entre rentabilité de l'actif et coût de la dette, mais qu'une Rf plus élevée s'accompagne d'un risque financier accru. Rf : 12,6 % actuellement, 13,8 % avec dette, 11,1 % avec augmentation de capital."
     }
   ]
 }

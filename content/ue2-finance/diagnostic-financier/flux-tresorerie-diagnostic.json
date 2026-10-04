@@ -1,0 +1,235 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-diag-flux-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "flux-tresorerie-diagnostic",
+      "difficulty": 1,
+      "tags": [
+        "flux de trésorerie disponible"
+      ],
+      "source_ref": "IAS 7 §10 et §14-16 (règl. UE 2023/1803) ; définition usuelle du flux de trésorerie disponible",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Selon la définition la plus courante en analyse financière, le flux de trésorerie disponible (free cash flow) est égal à :",
+      "options": [
+        "la CAF diminuée des remboursements d'emprunts",
+        "les flux nets de trésorerie liés à l'activité diminués des investissements d'exploitation nets des cessions",
+        "l'EBE diminué de la variation du BFR d'exploitation",
+        "le résultat net augmenté des dotations aux amortissements"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "Le FTD (option 2) mesure ce qui reste de la trésorerie générée par l'activité après financement des investissements nécessaires : il est disponible pour les apporteurs de capitaux. La CAF diminuée des remboursements (option 1) est l'autofinancement disponible après service de la dette, qui ignore le BFR et les investissements. EBE − variation du BFRE (option 3) est l'excédent de trésorerie d'exploitation, avant impôt et avant investissements. Le résultat net augmenté des dotations (option 4) est une approximation grossière de la CAF."
+    },
+    {
+      "id": "ue2-diag-flux-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "flux-tresorerie-diagnostic",
+      "difficulty": 2,
+      "tags": [
+        "IAS 7",
+        "intérêts versés",
+        "comparabilité"
+      ],
+      "source_ref": "IAS 7 §31-34 (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 90,
+      "statement": "Le groupe A classe les intérêts versés en flux de financement et publie des flux nets liés à l'activité de 950 M€. Le groupe B classe ses intérêts versés (120 M€) en flux d'activité et publie des flux nets liés à l'activité de 880 M€. Sur une base comparable, les intérêts étant classés en financement dans les deux groupes :",
+      "options": [
+        "A génère 70 M€ de plus que B",
+        "A génère 190 M€ de plus que B",
+        "B génère 50 M€ de plus que A",
+        "les deux groupes génèrent le même montant"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "IAS 7 §33 autorise le classement des intérêts versés en activité ou en financement. Pour comparer, on reclasse les 120 M€ d'intérêts de B en financement : ses flux d'activité deviennent 880 + 120 = 1 000 M€, contre 950 M€ pour A. B génère donc 50 M€ de plus (option 3). L'option 1 compare les montants publiés sans retraitement. L'option 2 retranche les intérêts au lieu de les réintégrer (880 − 120 = 760). L'option 4 n'a pas de fondement."
+    },
+    {
+      "id": "ue2-diag-flux-0003",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "flux-tresorerie-diagnostic",
+      "difficulty": 2,
+      "tags": [
+        "flux de trésorerie disponible",
+        "croissance"
+      ],
+      "source_ref": "IAS 7 §16 (règl. UE 2023/1803) ; analyse du tableau des flux de trésorerie",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Un flux de trésorerie disponible négatif est nécessairement le signe d'une situation financière dégradée.",
+      "answer": false,
+      "justification": "Faux : un FTD négatif peut résulter d'investissements de capacité ou d'une croissance qui gonfle le BFR.",
+      "explanation": "Le FTD retranche les investissements des flux d'activité. Un groupe en forte croissance, qui investit massivement (capex supérieurs aux dotations) et dont le BFR augmente avec le chiffre d'affaires, peut afficher un FTD négatif tout en étant rentable. Le diagnostic doit porter sur la nature des investissements, la durée de la situation et la manière dont l'écart est financé. En revanche, un FTD durablement négatif sans croissance, couvert par de la dette, est un signal d'alerte."
+    },
+    {
+      "id": "ue2-diag-flux-0004",
+      "type": "journal_entry",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "flux-tresorerie-diagnostic",
+      "difficulty": 1,
+      "tags": [
+        "emprunt",
+        "échéance",
+        "flux de financement"
+      ],
+      "source_ref": "PCG : comptes 164 (emprunts auprès des établissements de crédit), 6611 (intérêts des emprunts et dettes), 512 ; IAS 7 §17 et §33",
+      "verified": true,
+      "estimated_seconds": 150,
+      "statement": "Le 30 juin N, une société paie l'échéance annuelle d'un emprunt bancaire : annuité de 52 000 €, dont 12 000 € d'intérêts. Les intérêts n'ont pas fait l'objet d'une écriture d'intérêts courus. Enregistrez le paiement dans les comptes individuels (comptes 164, 6611 et 512).",
+      "date": "30/06/N",
+      "entries": [
+        {
+          "account": "164",
+          "label": "Emprunts auprès des établissements de crédit (remboursement du capital)",
+          "debit": 40000,
+          "credit": 0
+        },
+        {
+          "account": "6611",
+          "label": "Intérêts des emprunts et dettes",
+          "debit": 12000,
+          "credit": 0
+        },
+        {
+          "account": "512",
+          "label": "Banque",
+          "debit": 0,
+          "credit": 52000
+        }
+      ],
+      "explanation": "L'annuité se décompose en amortissement du capital (52 000 − 12 000 = 40 000 €), qui solde partiellement la dette au compte 164, et en intérêts (12 000 €), charge financière au compte 6611. Dans le tableau des flux, le remboursement de 40 000 € est un flux de financement ; les intérêts versés sont classés en activité ou en financement selon le choix permanent de l'entité (IAS 7 §33). Seuls les intérêts affectent le résultat et la CAF."
+    },
+    {
+      "id": "ue2-diag-flux-0005",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "flux-tresorerie-diagnostic",
+      "difficulty": 3,
+      "tags": [
+        "méthode indirecte",
+        "flux de trésorerie disponible",
+        "mise en équivalence"
+      ],
+      "source_ref": "IAS 7 §18-20 et §37-38 (règl. UE 2023/1803) ; règl. ANC 2020-01, tableau des flux de trésorerie consolidé",
+      "verified": true,
+      "estimated_seconds": 300,
+      "statement": "Données consolidées d'un groupe pour l'exercice N (en k€) : résultat net de l'ensemble consolidé 3 000 ; dotations aux amortissements 2 200 ; dotations nettes aux provisions 100 ; plus-value de cession d'immobilisations 400 (prix de cession encaissé 900) ; quote-part de résultat des sociétés mises en équivalence 250 ; dividendes reçus de ces sociétés 100 ; augmentation des stocks 300 ; augmentation des créances clients 500 ; augmentation des dettes fournisseurs 350 ; acquisitions d'immobilisations payées 3 100. Le groupe classe les intérêts versés et les dividendes reçus en flux d'activité ; l'impôt payé est égal à la charge d'impôt. Calculez le flux de trésorerie disponible (flux d'activité − acquisitions + cessions d'immobilisations), en k€.",
+      "expected_value": 2100,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "k€",
+      "decimals": 0,
+      "explanation": "Flux d'activité = 3 000 + 2 200 + 100 − 400 − 250 + 100 − 300 − 500 + 350 = 4 300 k€. Investissements nets = − 3 100 + 900 = − 2 200 k€. FTD = 4 300 − 2 200 = 2 100 k€. Erreurs classiques : ne pas retrancher la plus-value tout en ajoutant le prix de cession (2 500), conserver la quote-part de résultat des sociétés mises en équivalence (2 350), ou inverser le sens de la variation des dettes fournisseurs (1 400)."
+    },
+    {
+      "id": "ue2-diag-flux-0006",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "flux-tresorerie-diagnostic",
+      "difficulty": 3,
+      "tags": [
+        "tableau des flux",
+        "flux de trésorerie disponible",
+        "politique de distribution"
+      ],
+      "source_ref": "IAS 7 §10, §18 et §31-35 (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 780,
+      "title": "Groupe Néris : qui finance la distribution ?",
+      "context": "Le groupe Néris (matériaux de construction) établit ses comptes en IFRS et classe les intérêts versés en flux de financement. Données de l'exercice N (en k€) :\n- EBITDA : 12 000 ;\n- augmentation du BFR : 1 800 ;\n- impôt sur les bénéfices payé : 1 900 ;\n- acquisitions d'immobilisations : 7 500 ; cessions d'immobilisations encaissées : 300 ;\n- dividendes versés aux actionnaires : 2 500 ; rachat d'actions propres : 1 000 ;\n- nouvel emprunt souscrit : 4 000 ; remboursements d'emprunts : 2 200 ; intérêts versés : 700.\n\nOn assimile les flux d'activité à : EBITDA − variation du BFR − impôt payé. Les dotations aux amortissements de l'exercice s'élèvent à 4 800. La direction présente la politique de distribution (dividendes et rachats) comme « financée par la performance opérationnelle ». L'endettement net d'ouverture représente 2,1 fois l'EBITDA.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "Calculez les flux nets de trésorerie liés à l'activité, en k€.",
+          "points": 2,
+          "expected_value": 8300,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "12 000 − 1 800 − 1 900 = 8 300 k€."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "prompt": "Calculez le flux de trésorerie disponible (flux d’activité − acquisitions + cessions), en k€.",
+          "points": 2,
+          "expected_value": 1100,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "8 300 − 7 500 + 300 = 1 100 k€, soit un taux de conversion FTD / EBITDA de 9,2 %."
+        },
+        {
+          "id": "q3",
+          "kind": "numeric",
+          "prompt": "Calculez la variation de la trésorerie de l’exercice, en k€ (indiquez le signe moins pour une diminution).",
+          "points": 2,
+          "expected_value": -1300,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "Flux de financement = − 2 500 − 1 000 + 4 000 − 2 200 − 700 = − 2 400 k€. Variation = 1 100 − 2 400 = − 1 300 k€."
+        },
+        {
+          "id": "q4",
+          "kind": "mcq",
+          "prompt": "Les distributions aux actionnaires (3 500 k€) ont été financées :",
+          "points": 2,
+          "options": [
+            "intégralement par le flux de trésorerie disponible",
+            "par la cession d’immobilisations",
+            "pour l’essentiel par l’endettement net supplémentaire et la baisse de la trésorerie",
+            "par la baisse du BFR"
+          ],
+          "answer": [
+            2
+          ],
+          "multiple": false,
+          "explanation": "Le FTD (1 100) ne couvre ni les intérêts (700) ni les distributions (3 500). L'endettement brut augmente de 4 000 − 2 200 = 1 800 et la trésorerie baisse de 1 300 : l'endettement net s'accroît de 3 100 k€, ce qui finance l'essentiel des distributions (option 3). Les cessions (300) sont déjà dans le FTD, et le BFR a augmenté."
+        },
+        {
+          "id": "q5",
+          "kind": "open",
+          "prompt": "Rédigez un diagnostic critique de la situation de Néris et de l’affirmation de la direction.",
+          "points": 4,
+          "model_answer": "Néris convertit bien son EBITDA en flux d'activité (8 300, soit 69 %), malgré une hausse du BFR à expliquer (croissance ou dérive des délais). Mais l'effort d'investissement est lourd (7 500, soit 1,6 fois les dotations) : le FTD n'est que de 1 100 (9 % de l'EBITDA). Il ne couvre ni les intérêts ni les distributions de 3 500 : l'affirmation de la direction est inexacte, les distributions sont financées par la dette et la trésorerie, l'endettement net augmentant de 3 100. Cette politique n'est pas durable : si les investissements sont de capacité et produisent des flux futurs, la situation peut être transitoire, sinon il faut réduire les rachats d'actions ou le dividende. Surveiller l'évolution du ratio endettement net / EBITDA au regard des covenants.",
+          "key_points": [
+            "Bonne conversion de l’EBITDA en flux d’activité, mais BFR en hausse à expliquer",
+            "Investissements élevés (1,6 fois les dotations) : FTD faible",
+            "Distributions financées par l’endettement net (+3 100) et non par le FTD",
+            "Politique non durable sans retour sur investissement : surveiller le levier et les covenants"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Flux d’activité 8 300 ; FTD 1 100 ; flux de financement − 2 400 ; variation de trésorerie − 1 300 ; hausse de l’endettement net 3 100 k€. Le tableau des flux permet de vérifier qui finance réellement la rémunération des actionnaires."
+    }
+  ]
+}

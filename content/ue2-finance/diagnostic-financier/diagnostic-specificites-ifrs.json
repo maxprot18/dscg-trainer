@@ -1,0 +1,173 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-diag-ifrs-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "diagnostic-specificites-ifrs",
+      "difficulty": 1,
+      "tags": [
+        "participations ne donnant pas le contrôle",
+        "minoritaires"
+      ],
+      "source_ref": "IFRS 10 §22 (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Dans l'état de la situation financière consolidé établi en IFRS, où sont présentées les participations ne donnant pas le contrôle (intérêts minoritaires) ?",
+      "options": [
+        "Dans les passifs non courants",
+        "En déduction du goodwill",
+        "Uniquement en annexe",
+        "Dans les capitaux propres, séparément des capitaux propres attribuables aux propriétaires de la mère"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "IFRS 10 §22 : les participations ne donnant pas le contrôle sont présentées dans les capitaux propres, séparément de la part des propriétaires de la mère (option 4). Elles ne constituent pas une dette (option 1), car le groupe n'a pas d'obligation de les rembourser. Elles ne viennent pas en déduction du goodwill (option 2), même si, avec l'option du goodwill complet, celui-ci inclut la part des minoritaires. Elles figurent bien au bilan, pas seulement en annexe (option 3). Conséquence pour l'analyste : comparer un résultat part du groupe aux seuls capitaux propres part du groupe."
+    },
+    {
+      "id": "ue2-diag-ifrs-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "diagnostic-specificites-ifrs",
+      "difficulty": 2,
+      "tags": [
+        "IFRS 16",
+        "EBITDA",
+        "endettement net"
+      ],
+      "source_ref": "IFRS 16 §22-26, §49-50 (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 90,
+      "statement": "Un groupe locataire de nombreux entrepôts compare ses indicateurs selon IFRS 16 à ceux qu'il aurait obtenus en comptabilisant les loyers en charges. Quels effets d'IFRS 16 sont exacts ? (plusieurs réponses)",
+      "options": [
+        "Hausse de l'EBITDA",
+        "Baisse des flux nets de trésorerie liés à l’activité",
+        "Hausse de l'endettement net, si les dettes locatives y sont incluses",
+        "Baisse du gearing (endettement net / capitaux propres)"
+      ],
+      "answer": [
+        0,
+        2
+      ],
+      "multiple": true,
+      "explanation": "Selon IFRS 16, le loyer est remplacé par un amortissement du droit d'utilisation et une charge d'intérêts sur la dette locative : l'EBITDA augmente (option 1). La dette locative est comptabilisée au passif : l'endettement net augmente s'il l'inclut (option 3). Les flux d'activité augmentent au contraire, car le remboursement du principal de la dette est classé en financement (§50) : l'option 2 est fausse. Le gearing augmente, puisque l'endettement net croît alors que les capitaux propres baissent légèrement en début de contrat : l'option 4 est fausse."
+    },
+    {
+      "id": "ue2-diag-ifrs-0003",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "diagnostic-specificites-ifrs",
+      "difficulty": 2,
+      "tags": [
+        "goodwill",
+        "IAS 36"
+      ],
+      "source_ref": "IAS 36 §124 (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "En IFRS, une perte de valeur comptabilisée sur un goodwill peut être reprise lors d'un exercice ultérieur si la valeur recouvrable de l'unité génératrice de trésorerie concernée remonte.",
+      "answer": false,
+      "justification": "Faux : IAS 36 §124 interdit toute reprise de perte de valeur sur un goodwill.",
+      "explanation": "Une reprise serait assimilée à la comptabilisation d'un goodwill généré en interne, interdite par IAS 38. La dépréciation du goodwill est donc définitive. Pour l'analyste, c'est une charge non monétaire, souvent présentée hors résultat opérationnel courant, qui réduit durablement les capitaux propres ; elle signale que les perspectives de l'acquisition ont été revues à la baisse."
+    },
+    {
+      "id": "ue2-diag-ifrs-0004",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "diagnostic-specificites-ifrs",
+      "difficulty": 3,
+      "tags": [
+        "IFRS 16",
+        "covenants",
+        "levier"
+      ],
+      "source_ref": "IFRS 16 §22-26 et §49 (règl. UE 2023/1803) ; covenant calculé hors IFRS 16 selon le contrat de crédit",
+      "verified": true,
+      "estimated_seconds": 240,
+      "statement": "Un groupe IFRS publie un EBITDA de 9 400 k€ et un endettement net de 16 000 k€, qui inclut 4 500 k€ de dettes locatives (IFRS 16). Les loyers payés au titre de ces contrats s'élèvent à 1 500 k€ pour l'exercice. Son contrat de crédit calcule le covenant « endettement net / EBITDA » hors IFRS 16 : dettes locatives exclues de l'endettement net et loyers déduits de l'EBITDA comme s'ils étaient des charges. Calculez ce ratio, arrondi à deux décimales.",
+      "expected_value": 1.46,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "decimals": 2,
+      "explanation": "Endettement net hors IFRS 16 = 16 000 − 4 500 = 11 500 k€. EBITDA hors IFRS 16 = 9 400 − 1 500 = 7 900 k€. Ratio = 11 500 / 7 900 = 1,46. Le ratio publié (16 000 / 9 400 = 1,70) n'est pas celui du contrat. Retraiter un seul des deux termes donne 1,22 (dette seule) ou 2,03 (EBITDA seul) : il faut retraiter le numérateur et le dénominateur de façon cohérente."
+    },
+    {
+      "id": "ue2-diag-ifrs-0005",
+      "type": "journal_entry",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "diagnostic-specificites-ifrs",
+      "difficulty": 3,
+      "tags": [
+        "IFRS 16",
+        "retraitement de consolidation",
+        "dette locative"
+      ],
+      "source_ref": "IFRS 16 §31, §36-38 (règl. UE 2023/1803) ; plan de comptes du groupe fondé sur le PCG",
+      "verified": true,
+      "estimated_seconds": 300,
+      "statement": "Une filiale a pris en location, le 1er janvier N, une machine pour 5 ans ; dans ses comptes individuels, le loyer annuel de 18 000 €, payé le 31 décembre N, est comptabilisé en charge (compte 6135). En consolidation (IFRS 16), le droit d'utilisation et la dette locative ont été constatés au 1er janvier N pour 80 000 € (taux implicite du contrat 5 % ; outre les cinq loyers, le contrat prévoit un versement final fixe de 2 641 € le 31 décembre N+4, inclus dans la dette) ; le droit d'utilisation est amorti linéairement sur 5 ans. Passez l'écriture de retraitement de l'exercice N au 31 décembre, en une seule écriture. Comptes du groupe : 1687 dette locative, 6611 intérêts, 6135 locations mobilières, 6811 dotations aux amortissements, 28154 amortissements du droit d'utilisation.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "1687",
+          "label": "Dette locative (remboursement du principal)",
+          "debit": 14000,
+          "credit": 0
+        },
+        {
+          "account": "6611",
+          "label": "Intérêts sur dette locative",
+          "debit": 4000,
+          "credit": 0
+        },
+        {
+          "account": "6811",
+          "label": "Dotation aux amortissements du droit d’utilisation",
+          "debit": 16000,
+          "credit": 0
+        },
+        {
+          "account": "6135",
+          "label": "Annulation du loyer",
+          "debit": 0,
+          "credit": 18000
+        },
+        {
+          "account": "28154",
+          "label": "Amortissement du droit d’utilisation",
+          "debit": 0,
+          "credit": 16000
+        }
+      ],
+      "explanation": "Intérêts N = 80 000 × 5 % = 4 000 € ; le loyer de 18 000 € rembourse donc 14 000 € de principal (dette au 31/12 : 66 000 €). Amortissement = 80 000 / 5 = 16 000 €. Le loyer comptabilisé en charge est annulé (crédit 6135). Effets sur les indicateurs : EBITDA + 18 000 €, résultat opérationnel + 2 000 € (18 000 − 16 000), résultat avant impôt − 2 000 € (charges totales 20 000 € contre 18 000 €) ; endettement net + 66 000 € à la clôture."
+    },
+    {
+      "id": "ue2-diag-ifrs-0006",
+      "type": "flashcard",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "diagnostic-specificites-ifrs",
+      "difficulty": 1,
+      "tags": [
+        "goodwill",
+        "capitaux propres tangibles",
+        "solvabilité"
+      ],
+      "source_ref": "IFRS 3 §32 ; IAS 36 §10 et §90 (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 30,
+      "front": "Pourquoi l'analyste calcule-t-il des capitaux propres tangibles pour apprécier la solvabilité d'un groupe IFRS ?",
+      "back": "Capitaux propres tangibles = capitaux propres − goodwill − autres immobilisations incorporelles.\nLe goodwill ne peut être cédé séparément et sa valeur repose sur les perspectives de l'acquisition.\nIl n'est pas amorti en IFRS mais peut être déprécié brutalement, de façon définitive.\nUn gearing calculé sur capitaux propres tangibles mesure mieux le coussin réellement disponible pour les créanciers.",
+      "explanation": "IFRS 3 §32 définit le goodwill comme un résiduel ; IAS 36 impose un test de dépréciation annuel (§10, §90) et interdit toute reprise (§124). Les prêteurs retiennent souvent la notion de capitaux propres tangibles ou d'actif net tangible dans leurs covenants."
+    }
+  ]
+}
