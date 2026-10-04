@@ -8,9 +8,16 @@ import { useEffect, useState } from 'react'
 
 import taxonomyJson from '@content/taxonomy.json'
 
+import type { ExamDurations } from '@/engine/sessionConfig'
+
 import { contentFileSchema, taxonomySchema, type Exercise, type Taxonomy, type UeId } from './schema'
 
 export const taxonomy: Taxonomy = taxonomySchema.parse(taxonomyJson)
+
+/** Durée de l'épreuve de chaque UE (examen blanc). */
+export const examDurations = Object.fromEntries(
+  taxonomy.ues.map((ue) => [ue.id, ue.exam.duration_minutes]),
+) as unknown as ExamDurations
 
 type Modules = Record<string, unknown>
 

@@ -27,6 +27,43 @@ describe('SessionPage', () => {
   beforeEach(async () => {
     await db.attempts.clear()
     await db.sessions.clear()
+    await db.reviews.clear()
+  })
+
+  it('examen blanc : pas de correction pendant l’épreuve, note sur 20 et correction à la fin', async () => {
+    const user = userEvent.setup()
+    renderAt('/session?mode=exam&seed=1&ue=UE4')
+    expect(screen.getByLabelText('Temps restant')).toHaveTextContent('4:00:00')
+    for (let i = 0; i < 2; i++) {
+      if (screen.queryAllByRole('radio').length > 0) {
+        await user.click(screen.getAllByRole('radio')[1])
+        await user.click(screen.getByRole('button', { name: 'Valider' }))
+      } else {
+        await user.click(screen.getByRole('button', { name: /Faux/ }))
+      }
+      expect(screen.queryByText('Bonne réponse')).not.toBeInTheDocument()
+      await user.click(screen.getByRole('button', { name: /Suivant|Voir le bilan/ }))
+    }
+    expect(screen.getByRole('heading', { name: /Examen blanc UE4/ })).toBeInTheDocument()
+    expect(screen.getByText(/Note : 20(,00)? \/ 20/)).toBeInTheDocument()
+    await waitFor(async () => expect(await db.attempts.count()).toBe(2))
+    expect((await db.sessions.toArray())[0]).toMatchObject({ mode: 'exam', scope: 'UE4' })
+    expect(await db.reviews.count()).toBeGreaterThan(0)
+  })
+
+  it('mode erreurs : rejoue seulement les exercices ratés', async () => {
+    await db.attempts.bulkAdd([
+      { exerciseId: mcq.id, notion: mcq.notion, date: 1, answer: [], correct: false, durationMs: 1 },
+      { exerciseId: tf.id, notion: tf.notion, date: 1, answer: [], correct: true, durationMs: 1 },
+    ])
+    renderAt('/session?mode=errors&seed=1')
+    expect(await screen.findByText('1 / 1')).toBeInTheDocument()
+    expect(screen.getAllByRole('radio').length).toBeGreaterThan(0)
+  })
+
+  it('mode erreurs sans erreur : message', async () => {
+    renderAt('/session?mode=errors&seed=1')
+    expect(await screen.findByText(/Aucune erreur à rejouer/)).toBeInTheDocument()
   })
 
   it('joue une session par thème de bout en bout et enregistre tentatives et session', async () => {

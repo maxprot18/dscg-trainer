@@ -113,4 +113,27 @@ describe('ExercisePlayer', () => {
     await user.click(screen.getByRole('button', { name: 'Valider mon auto-évaluation' }))
     expect(onComplete).toHaveBeenCalledWith(expect.objectContaining({ score: 0.75, correct: true }), expect.anything())
   })
+
+  it('examen blanc : réponse verrouillée, aucune correction pendant l’épreuve', async () => {
+    const e = ex('mcq')
+    const onComplete = vi.fn()
+    render(<ExercisePlayer exercise={e} onComplete={onComplete} deferFeedback />)
+    const user = userEvent.setup()
+    await user.click(screen.getAllByRole('radio')[0])
+    await user.click(screen.getByRole('button', { name: 'Valider' }))
+    expect(onComplete).toHaveBeenCalledWith(expect.objectContaining({ correct: false }), [{ kind: 'choice', selected: [0] }])
+    expect(screen.queryByText(e.explanation)).not.toBeInTheDocument()
+    expect(screen.queryByText('Réponse incorrecte')).not.toBeInTheDocument()
+    expect(screen.getAllByRole('radio')[0]).toBeDisabled()
+    expect(screen.getAllByRole('radio')[0]).toHaveAttribute('aria-checked', 'true')
+    expect(screen.getAllByText(/correction .* fin de l’examen/).length).toBeGreaterThan(0)
+  })
+
+  it('relecture : exercice affiché corrigé avec les réponses données', () => {
+    const e = ex('mcq')
+    render(<ExercisePlayer exercise={e} review={[{ kind: 'choice', selected: [0] }]} />)
+    expect(screen.getByRole('status')).toHaveTextContent('Réponse incorrecte')
+    expect(screen.getByText(e.explanation)).toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: 'Valider' })).not.toBeInTheDocument()
+  })
 })
