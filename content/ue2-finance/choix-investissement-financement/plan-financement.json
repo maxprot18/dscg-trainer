@@ -1,0 +1,188 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-invest-planfin-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "plan-financement",
+      "difficulty": 2,
+      "tags": [
+        "emplois",
+        "ressources",
+        "CAF"
+      ],
+      "source_ref": "Plan de financement : tableau emplois-ressources prévisionnel (analyse financière)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Lequel des éléments suivants ne doit PAS être inscrit comme emploi dans un plan de financement ?",
+      "options": [
+        "Les dividendes à verser",
+        "Les dotations aux amortissements de l'exercice",
+        "Le remboursement de la part en capital des emprunts",
+        "L'augmentation du besoin en fonds de roulement"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Les dotations aux amortissements (option 2) ne sont pas des décaissements : elles n'interviennent qu'indirectement, en majorant la CAF (ressource). Les dividendes (option 1), les remboursements en capital (option 3) et la hausse du BFR (option 4) sont des emplois de fonds."
+    },
+    {
+      "id": "ue2-invest-planfin-0002",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "plan-financement",
+      "difficulty": 1,
+      "tags": [
+        "équilibre",
+        "trésorerie"
+      ],
+      "source_ref": "Plan de financement : critères d’équilibre (analyse financière)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Un plan de financement n'est équilibré que si la variation de trésorerie de chaque année est rigoureusement nulle.",
+      "answer": false,
+      "justification": "Faux : on recherche une trésorerie cumulée positive chaque année, avec des soldes annuels positifs mais modérés, et non une égalité stricte.",
+      "explanation": "Une égalité exacte des emplois et des ressources est irréaliste et laisserait l'entreprise sans marge de sécurité. Le plan est jugé équilibré si la trésorerie reste positive tout au long de l'horizon ; des excédents importants traduisent toutefois des ressources mal employées (emprunt surdimensionné, par exemple)."
+    },
+    {
+      "id": "ue2-invest-planfin-0003",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "plan-financement",
+      "difficulty": 2,
+      "tags": [
+        "CAF",
+        "frais financiers",
+        "VAN"
+      ],
+      "source_ref": "Plan de financement (CAF après frais financiers) et méthode des flux de la VAN (hors frais financiers)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "La CAF inscrite en ressource dans un plan de financement est calculée après frais financiers, alors que les flux actualisés pour calculer la VAN d'un projet les excluent.",
+      "answer": true,
+      "justification": "Vrai : le plan de financement mesure la trésorerie réellement disponible, intérêts payés ; la VAN tient compte du financement par le taux d'actualisation.",
+      "explanation": "Le plan de financement vérifie la soutenabilité financière : il doit intégrer tous les décaissements, y compris les intérêts (dans la CAF) et les remboursements en capital (en emplois). Le calcul de la VAN, lui, isole la rentabilité économique du projet : les frais financiers y seraient comptés deux fois, puisque le taux d'actualisation intègre déjà le coût du financement."
+    },
+    {
+      "id": "ue2-invest-planfin-0004",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "plan-financement",
+      "difficulty": 2,
+      "tags": [
+        "trésorerie cumulée",
+        "soldes annuels"
+      ],
+      "source_ref": "Plan de financement : trésorerie finale = trésorerie initiale + Σ (ressources − emplois)",
+      "verified": true,
+      "estimated_seconds": 240,
+      "statement": "La trésorerie de la société Ostra est de 20 k€ au début de N. Prévisions (en k€) pour N, N+1 et N+2 : CAF : 150 ; 170 ; 190. Investissements : 300 ; 50 ; 50. Augmentation du BFR : 30 ; 10 ; 10. Dividendes : 40 ; 40 ; 50. Remboursements d'emprunts (capital) : 60 ; 60 ; 60. Nouvel emprunt : 200 en N. Calculez la trésorerie à la fin de N+2, en k€ (un montant négatif est précédé du signe moins).",
+      "expected_value": -30,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "k€",
+      "decimals": 0,
+      "explanation": "Soldes annuels (ressources − emplois) : N : 150 + 200 − (300 + 30 + 40 + 60) = −80 ; N+1 : 170 − (50 + 10 + 40 + 60) = +10 ; N+2 : 190 − (50 + 10 + 50 + 60) = +20. Trésorerie fin N+2 = 20 − 80 + 10 + 20 = −30 k€. La trésorerie est négative dès la fin de N (−60 k€) : le plan n'est pas équilibré, un financement complémentaire est nécessaire."
+    },
+    {
+      "id": "ue2-invest-planfin-0005",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "plan-financement",
+      "difficulty": 3,
+      "tags": [
+        "plan de financement",
+        "CAF prévisionnelle",
+        "équilibre"
+      ],
+      "source_ref": "Plan de financement pluriannuel (analyse financière) ; CAF = (EBE − intérêts) × (1 − t) + t × DA",
+      "verified": true,
+      "estimated_seconds": 900,
+      "title": "Plan de financement de la société Meriva",
+      "context": "La société Meriva prépare son plan de financement pour N+1 à N+3 (montants en k€).\n- Trésorerie au début de N+1 : 30.\n- CAF de l'activité existante : 120 par an.\n- Investissement de 600 au début de N+1, amorti fiscalement en linéaire sur 5 ans ; il procure un EBE supplémentaire de 200 par an dès N+1.\n- Augmentation du BFR liée au projet : 50 en N+1, 10 en N+2, 10 en N+3.\n- Financement : emprunt de 400 au début de N+1, au taux de 5 %, remboursable par amortissements constants de 100 en fin d'année (première échéance fin N+1).\n- Dividendes : 60 par an.\n- Taux d'IS : 25 % ; la société est bénéficiaire, les économies d'IS sont immédiates.",
+      "sub_questions": [
+        {
+          "id": "caf-n1",
+          "kind": "numeric",
+          "prompt": "Calculez la CAF totale de N+1 (activité existante et projet, après frais financiers et IS), en k€.",
+          "points": 3,
+          "expected_value": 285,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "k€",
+          "decimals": 2,
+          "explanation": "Intérêts N+1 = 400 × 5 % = 20 ; dotation = 600 / 5 = 120. CAF supplémentaire = (200 − 20) × 0,75 + 0,25 × 120 = 135 + 30 = 165. CAF totale = 120 + 165 = 285 k€."
+        },
+        {
+          "id": "solde-n1",
+          "kind": "numeric",
+          "prompt": "Calculez le solde (ressources − emplois) de N+1, en k€.",
+          "points": 2,
+          "expected_value": -125,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "k€",
+          "decimals": 2,
+          "explanation": "Ressources : CAF 285 + emprunt 400 = 685. Emplois : investissement 600 + BFR 50 + remboursement 100 + dividendes 60 = 810. Solde = −125 k€."
+        },
+        {
+          "id": "treso-n3",
+          "kind": "numeric",
+          "prompt": "Calculez la trésorerie à la fin de N+3, en k€.",
+          "points": 3,
+          "expected_value": 146.25,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "k€",
+          "decimals": 2,
+          "explanation": "Intérêts : 15 en N+2 (capital restant dû 300), 10 en N+3 (200). CAF N+2 = 120 + 185 × 0,75 + 30 = 288,75 ; CAF N+3 = 120 + 190 × 0,75 + 30 = 292,50. Soldes : N+2 = 288,75 − (10 + 100 + 60) = 118,75 ; N+3 = 292,50 − 170 = 122,50. Trésorerie : 30 − 125 = −95 (fin N+1) ; 23,75 (fin N+2) ; 146,25 (fin N+3)."
+        },
+        {
+          "id": "ajustements",
+          "kind": "open",
+          "prompt": "Le plan est-il équilibré ? Proposez des ajustements.",
+          "points": 2,
+          "model_answer": "Non : la trésorerie est négative à la fin de N+1 (−95 k€), puis largement excédentaire à la fin de N+3 (146,25 k€). Il faut couvrir le besoin de N+1 : emprunt plus élevé (par exemple 500 au lieu de 400) ou avec un différé d'amortissement la première année, augmentation de capital, crédit-bail pour une partie de l'investissement, réduction ou report du dividende de N+1, ou action sur le BFR. Les excédents ultérieurs montrent que la difficulté est temporaire : un différé de remboursement est une solution adaptée, et la capacité de remboursement doit être vérifiée.",
+          "key_points": [
+            "Déficit de trésorerie en N+1 (−95 k€) : plan non équilibré",
+            "Excédents ultérieurs : besoin temporaire",
+            "Solutions : emprunt complémentaire ou différé, augmentation de capital, crédit-bail, baisse du dividende, action sur le BFR"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Dans le plan de financement, la CAF intègre les frais financiers après IS ; le capital remboursé est un emploi. Le solde de chaque année et la trésorerie cumulée révèlent ici un besoin concentré sur l'année de l'investissement."
+    },
+    {
+      "id": "ue2-invest-planfin-0006",
+      "type": "flashcard",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "plan-financement",
+      "difficulty": 1,
+      "tags": [
+        "plan de financement",
+        "structure"
+      ],
+      "source_ref": "Plan de financement : tableau emplois-ressources prévisionnel (analyse financière)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "front": "Quels sont les emplois et les ressources d'un plan de financement ?",
+      "back": "Emplois : investissements, augmentation du BFR, remboursements d'emprunts (part en capital), dividendes.\nRessources : CAF prévisionnelle (après frais financiers et IS), cessions d'immobilisations, augmentation de capital en numéraire, nouveaux emprunts, subventions d'investissement.\nTrésorerie finale = trésorerie initiale + Σ (ressources − emplois).",
+      "explanation": "Horizon usuel de 3 à 5 ans. Le plan est équilibré si la trésorerie cumulée reste positive avec des soldes annuels modérés ; c'est un document de négociation avec les banques."
+    }
+  ]
+}

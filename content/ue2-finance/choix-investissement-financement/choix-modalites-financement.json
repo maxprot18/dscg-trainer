@@ -38,6 +38,233 @@
         }
       ],
       "explanation": "Annuité constante : a = 100 000 × 0,05 / (1 − 1,05^−5) ≈ 23 097,48 €. Intérêts de la première année : 100 000 × 5 % = 5 000 € (charge financière, compte 661). Amortissement du capital : 23 097,48 − 5 000 = 18 097,48 €, qui diminue la dette au compte 164. Le décaissement total de 23 097,48 € est crédité au compte 512. Le capital restant dû passe à 81 902,52 € ; les intérêts de l'année suivante seront calculés sur ce montant."
+    },
+    {
+      "id": "ue2-invest-emprunt-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "choix-modalites-financement",
+      "difficulty": 2,
+      "tags": [
+        "crédit-bail",
+        "coût actuariel",
+        "économie d’IS"
+      ],
+      "source_ref": "Coût actuariel après impôt du crédit-bail comparé à l’achat : redevances nettes d’IS et perte des économies d’IS sur amortissements ; CGI art. 39",
+      "verified": true,
+      "estimated_seconds": 75,
+      "statement": "Pour calculer le coût actuariel après impôt d'un crédit-bail, comparé à l'achat du bien, quel élément constitue un décaissement ou un manque à gagner pour le preneur ?",
+      "options": [
+        "Le prix d'achat du bien évité en date 0",
+        "L'économie d'IS procurée par la déduction des redevances",
+        "La perte des économies d'IS sur les amortissements que l'entreprise aurait pratiqués en achetant le bien",
+        "Les intérêts de l'emprunt qui aurait financé l'achat"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "En renonçant à la propriété, le preneur perd la déduction des amortissements et donc l'économie d'IS correspondante (t × dotation) : c'est un coût du crédit-bail (option 3). Le prix d'achat évité (option 1) est la ressource procurée par le crédit-bail en date 0. L'économie d'IS sur les redevances (option 2) réduit le coût : on retient les redevances × (1 − t). Les intérêts d'un emprunt (option 4) relèvent de l'autre mode de financement, auquel on compare le coût obtenu ; ils n'entrent pas dans les flux du crédit-bail."
+    },
+    {
+      "id": "ue2-invest-emprunt-0003",
+      "type": "journal_entry",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "choix-modalites-financement",
+      "difficulty": 1,
+      "tags": [
+        "emprunt",
+        "frais d’émission",
+        "encaissement"
+      ],
+      "source_ref": "PCG : comptes 164 (Emprunts auprès des établissements de crédit), 6272 (Commissions et frais sur émission d’emprunts), 512 (Banques)",
+      "verified": true,
+      "estimated_seconds": 150,
+      "statement": "Le 1er mars N, la société Lumen obtient un emprunt bancaire de 200 000 €. La banque verse les fonds sur le compte courant après prélèvement de frais de dossier de 1 500 € (non soumis à TVA), que la société comptabilise immédiatement en charges (compte 6272). Passez l'écriture du 1er mars N.",
+      "date": "01/03/N",
+      "entries": [
+        {
+          "account": "512",
+          "label": "Banques",
+          "debit": 198500,
+          "credit": 0
+        },
+        {
+          "account": "6272",
+          "label": "Commissions et frais sur émission d’emprunts",
+          "debit": 1500,
+          "credit": 0
+        },
+        {
+          "account": "164",
+          "label": "Emprunts auprès des établissements de crédit",
+          "debit": 0,
+          "credit": 200000
+        }
+      ],
+      "explanation": "La dette est inscrite pour son montant nominal (200 000 € au crédit du 164), même si la somme encaissée est nette des frais. Les frais de dossier (1 500 €) sont une charge de l'exercice (6272) ; le PCG permet aussi de les étaler sur la durée de l'emprunt (transfert au 4816). La banque est débitée du net reçu : 200 000 − 1 500 = 198 500 €. Les frais de dossier renchérissent le coût actuariel de l'emprunt, car l'entreprise rembourse 200 000 € alors qu'elle n'en a reçu que 198 500."
+    },
+    {
+      "id": "ue2-invest-emprunt-0004",
+      "type": "journal_entry",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "choix-modalites-financement",
+      "difficulty": 1,
+      "tags": [
+        "crédit-bail",
+        "levée d’option",
+        "immobilisation"
+      ],
+      "source_ref": "PCG : comptes 2154 (Matériel industriel), 44562 (TVA déductible sur immobilisations), 512 (Banques) ; le bien entre à l’actif lors de la levée d’option",
+      "verified": true,
+      "estimated_seconds": 120,
+      "statement": "Au terme d'un contrat de crédit-bail mobilier, le 30 juin N, la société Brivane lève l'option d'achat d'une machine-outil pour 4 000 € HT (TVA 20 %), payés par virement. Passez l'écriture de levée d'option (utilisez le compte 2154 pour la machine et le compte 44562 pour la TVA).",
+      "date": "30/06/N",
+      "entries": [
+        {
+          "account": "2154",
+          "label": "Matériel industriel",
+          "debit": 4000,
+          "credit": 0
+        },
+        {
+          "account": "44562",
+          "label": "TVA déductible sur immobilisations",
+          "debit": 800,
+          "credit": 0
+        },
+        {
+          "account": "512",
+          "label": "Banques",
+          "debit": 0,
+          "credit": 4800
+        }
+      ],
+      "explanation": "Pendant le contrat, le bien n'était pas à l'actif du preneur (redevances en charges au compte 6122). La levée d'option est une acquisition : la machine est inscrite au compte 2154 pour le prix de levée, 4 000 € HT ; la TVA de 800 € est déductible au titre des immobilisations (44562) ; la banque est créditée de 4 800 €. La machine est ensuite amortie sur sa durée d'utilisation résiduelle."
+    },
+    {
+      "id": "ue2-invest-emprunt-0005",
+      "type": "journal_entry",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "choix-modalites-financement",
+      "difficulty": 2,
+      "tags": [
+        "crédit-bail",
+        "redevance",
+        "dépôt de garantie"
+      ],
+      "source_ref": "PCG : comptes 6122 (Crédit-bail mobilier), 275 (Dépôts et cautionnements versés), 44566 (TVA sur autres biens et services), 512 (Banques)",
+      "verified": true,
+      "estimated_seconds": 180,
+      "statement": "Le 1er avril N, la société Corvel signe un contrat de crédit-bail pour un chariot élévateur. Elle verse ce jour, par virement, un dépôt de garantie de 6 000 € (non soumis à TVA, restituable en fin de contrat) et la première redevance trimestrielle de 9 000 € HT (TVA 20 %), qui couvre le trimestre avril-juin. Passez l'écriture du 1er avril N (TVA au compte 44566).",
+      "date": "01/04/N",
+      "entries": [
+        {
+          "account": "6122",
+          "label": "Redevances de crédit-bail mobilier",
+          "debit": 9000,
+          "credit": 0
+        },
+        {
+          "account": "44566",
+          "label": "TVA sur autres biens et services",
+          "debit": 1800,
+          "credit": 0
+        },
+        {
+          "account": "275",
+          "label": "Dépôts et cautionnements versés",
+          "debit": 6000,
+          "credit": 0
+        },
+        {
+          "account": "512",
+          "label": "Banques",
+          "debit": 0,
+          "credit": 16800
+        }
+      ],
+      "explanation": "En PCG, le preneur n'inscrit pas le bien à son actif : la redevance est une charge (6122, crédit-bail mobilier) de 9 000 € HT, avec une TVA déductible de 1 800 € sur services (44566). Le dépôt de garantie n'est pas une charge mais une créance immobilisée, restituable en fin de contrat (275). Décaissement total : 9 000 + 1 800 + 6 000 = 16 800 €. Le bien sera mentionné dans l'annexe (engagements de crédit-bail)."
+    },
+    {
+      "id": "ue2-invest-emprunt-0006",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "choix-modalites-financement",
+      "difficulty": 3,
+      "tags": [
+        "crédit-bail",
+        "emprunt",
+        "coût actuariel après impôt"
+      ],
+      "source_ref": "Coût actuariel après impôt (calcul financier) ; CGI art. 39 (déductibilité des redevances, des intérêts et des amortissements)",
+      "verified": true,
+      "estimated_seconds": 900,
+      "title": "Emprunt ou crédit-bail pour une presse",
+      "context": "La société Tessia doit financer une presse de 300 000 € HT, amortissable fiscalement en linéaire sur 5 ans. Deux solutions lui sont proposées.\n- Emprunt bancaire de 300 000 € au taux de 5 %, sans frais, sur 5 ans.\n- Crédit-bail sur 5 ans : 5 redevances annuelles de 75 000 €, payées en fin d'année ; option d'achat d'un montant négligeable en fin de contrat (on la néglige).\nHypothèses : taux d'IS 25 % ; les économies d'impôt sont obtenues en fin d'année ; l'entreprise est bénéficiaire. Pour le crédit-bail, on raisonne par rapport à un achat comptant : le crédit-bail procure 300 000 € en date 0 (prix évité) et coûte, chaque année, la redevance nette d'IS et la perte de l'économie d'IS sur l'amortissement.",
+      "sub_questions": [
+        {
+          "id": "flux-annuel",
+          "kind": "numeric",
+          "prompt": "Calculez le décaissement annuel net équivalent du crédit-bail (années 1 à 5), en euros.",
+          "points": 2,
+          "expected_value": 71250,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Redevance nette d'IS = 75 000 × (1 − 0,25) = 56 250 €. Économie d'IS perdue sur amortissement = 0,25 × 300 000 / 5 = 15 000 €. Décaissement équivalent = 56 250 + 15 000 = 71 250 €."
+        },
+        {
+          "id": "cout-cb",
+          "kind": "numeric",
+          "prompt": "Calculez le coût actuariel après impôt du crédit-bail, en pourcentage avec deux décimales.",
+          "points": 3,
+          "expected_value": 6.02,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "On cherche r tel que 300 000 = 71 250 × [1 − (1 + r)⁻⁵] / r, soit un facteur d'annuité de 4,2105. Par encadrement (6 % : 4,2124 ; 6,1 % : 4,2009), r ≈ 6,02 %. Oublier la perte d'économie d'IS (56 250 € par an) conduirait à un taux négatif, absurde."
+        },
+        {
+          "id": "cout-emprunt",
+          "kind": "numeric",
+          "prompt": "Quel est le coût actuariel après impôt de l'emprunt, en pourcentage ?",
+          "points": 2,
+          "expected_value": 3.75,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Sans frais, les intérêts étant déductibles, le coût après impôt est i × (1 − t) = 5 % × 0,75 = 3,75 %."
+        },
+        {
+          "id": "choix",
+          "kind": "open",
+          "prompt": "Quelle solution recommandez-vous ? Citez deux éléments qualitatifs susceptibles de modifier ce choix.",
+          "points": 3,
+          "model_answer": "Sur le plan financier, l'emprunt est moins coûteux (3,75 % après impôt contre environ 6,02 % pour le crédit-bail) : il faut le privilégier. Le crédit-bail peut néanmoins être préféré si la capacité d'endettement de Tessia est saturée ou si la banque exige des garanties que l'entreprise ne peut pas fournir (le bailleur reste propriétaire du bien), s'il permet un financement à 100 % et rapide, ou s'il préserve l'autonomie financière affichée dans les comptes sociaux (pas de dette au bilan en PCG). À l'inverse, il est moins souple (résiliation coûteuse).",
+          "key_points": [
+            "Emprunt retenu : coût après impôt plus faible (3,75 % contre environ 6,02 %)",
+            "Capacité d'endettement et garanties exigées",
+            "Financement intégral et rapidité de mise en place du crédit-bail",
+            "Présentation des comptes sociaux et souplesse du contrat"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le coût actuariel après impôt du crédit-bail intègre la perte des économies d'IS sur amortissements, souvent oubliée. La comparaison avec le coût après impôt de l'emprunt guide le choix, sous réserve des éléments qualitatifs."
     }
   ]
 }

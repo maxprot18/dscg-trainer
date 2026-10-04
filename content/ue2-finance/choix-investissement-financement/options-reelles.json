@@ -1,0 +1,144 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-invest-optreel-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "options-reelles",
+      "difficulty": 1,
+      "tags": [
+        "option d’abandon",
+        "put"
+      ],
+      "source_ref": "Théorie des options réelles (Myers, 1977) : analogie avec les options financières",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "La possibilité d'arrêter un projet et de revendre ses actifs si les résultats sont décevants s'analyse comme :",
+      "options": [
+        "une option d'achat (call) dont le prix d'exercice est le montant de l'investissement",
+        "une option de différer le projet",
+        "une option de vente (put) dont le prix d'exercice est la valeur de revente des actifs",
+        "une obligation de l'entreprise envers ses créanciers"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'option d'abandon (option 3) donne le droit de « vendre » le projet à sa valeur de revente : c'est un put, exercé si la valeur des flux futurs tombe sous cette valeur. L'option 1 correspond aux options de développement ou de différer, qui sont des calls. L'option 2 décrit une autre option réelle (attendre avant d'investir). L'option 4 est fausse : une option est un droit, non une obligation."
+    },
+    {
+      "id": "ue2-invest-optreel-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "options-reelles",
+      "difficulty": 2,
+      "tags": [
+        "volatilité",
+        "valeur de l’option"
+      ],
+      "source_ref": "Théorie des options (Black et Scholes, 1973) appliquée aux options réelles : déterminants de la valeur",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Toutes choses égales par ailleurs, quel est l'effet, sur la valeur d'une option réelle de développement, d'une hausse de la volatilité de la valeur actuelle des flux du projet ?",
+      "options": [
+        "Elle diminue la valeur de l'option, car le projet devient plus risqué",
+        "Elle augmente la valeur de l'option",
+        "Elle est sans effet, seule l'espérance des flux compte",
+        "Elle n'augmente la valeur de l'option que si la VAN classique est positive"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La valeur d'une option croît avec la volatilité du sous-jacent (option 2) : le détenteur profite des scénarios favorables en exerçant l'option et se protège des scénarios défavorables en ne l'exerçant pas ; une dispersion plus forte élargit les gains possibles sans augmenter les pertes. L'option 1 raisonne comme pour un actif sans flexibilité. L'option 3 ignore l'asymétrie des gains propre aux options. L'option 4 est fausse : l'effet de la volatilité ne dépend pas du signe de la VAN classique."
+    },
+    {
+      "id": "ue2-invest-optreel-0003",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "options-reelles",
+      "difficulty": 3,
+      "tags": [
+        "option de différer",
+        "modèle binomial",
+        "probabilité risque-neutre"
+      ],
+      "source_ref": "Modèle binomial d’évaluation des options (Cox, Ross et Rubinstein, 1979) appliqué à une option réelle de différer",
+      "verified": true,
+      "estimated_seconds": 180,
+      "statement": "La valeur actuelle des flux d'un projet est de 1 000 k€ et son investissement de 1 050 k€ (VAN immédiate : −50 k€). L'entreprise peut attendre un an : la valeur en date 1 des flux du projet sera alors de 1 300 k€ ou de 800 k€, et l'investissement restera de 1 050 k€. Taux sans risque : 5 %. Avec le modèle binomial à une période (probabilité risque-neutre), quelle est la valeur de l'option de différer ?",
+      "options": [
+        "0 k€, car la VAN immédiate est négative",
+        "69,05 k€",
+        "125 k€",
+        "119,05 k€"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Probabilité risque-neutre de hausse : p = (1,05 × 1 000 − 800) / (1 300 − 800) = 250 / 500 = 0,5. Gains en date 1 : max(1 300 − 1 050 ; 0) = 250 en hausse, max(800 − 1 050 ; 0) = 0 en baisse. Valeur de l'option = 0,5 × 250 / 1,05 ≈ 119,05 k€ (option 4) : attendre vaut mieux que renoncer, alors que la VAN immédiate est négative. L'option 1 ignore la flexibilité. L'option 2 déduit à tort le déficit de VAN immédiate (119,05 − 50). L'option 3 oublie d'actualiser le gain espéré."
+    },
+    {
+      "id": "ue2-invest-optreel-0004",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "options-reelles",
+      "difficulty": 2,
+      "tags": [
+        "VAN globale",
+        "flexibilité"
+      ],
+      "source_ref": "Théorie des options réelles : VAN globale = VAN classique + valeur des options",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Un projet dont la VAN classique est négative peut être accepté si la valeur des options réelles qui lui sont attachées dépasse ce déficit.",
+      "answer": true,
+      "justification": "Vrai : la décision repose sur la VAN globale, égale à la VAN classique augmentée de la valeur des options réelles.",
+      "explanation": "La VAN classique suppose une décision figée, prise une fois pour toutes. Un projet pilote ou une première implantation peuvent avoir une VAN négative mais ouvrir des options de développement ; si leur valeur dépasse le déficit de VAN, la VAN globale est positive et le projet crée de la valeur."
+    },
+    {
+      "id": "ue2-invest-optreel-0005",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "options-reelles",
+      "difficulty": 2,
+      "tags": [
+        "option d’abandon",
+        "arbre de décision"
+      ],
+      "source_ref": "Évaluation d’une option réelle par arbre de décision : valeur de l’option = VAN avec flexibilité − VAN sans flexibilité",
+      "verified": true,
+      "estimated_seconds": 240,
+      "statement": "Un projet coûte 1 000 k€ en date 0. En date 1, la valeur des flux futurs du projet (évaluée en date 1) sera de 1 400 k€ ou de 700 k€, avec une probabilité de 0,5 chacune. L'entreprise peut, en date 1, abandonner le projet et revendre les actifs pour 900 k€. On raisonne par arbre de décision, avec les probabilités données et un coût du capital de 10 %. Calculez la valeur de l'option d'abandon, en k€ (deux décimales).",
+      "expected_value": 90.91,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "unit": "k€",
+      "decimals": 2,
+      "explanation": "Sans option : VAN = (0,5 × 1 400 + 0,5 × 700) / 1,10 − 1 000 = 954,55 − 1 000 = −45,45 k€. Avec option : en scénario défavorable on abandonne (900 > 700). VAN = (0,5 × 1 400 + 0,5 × 900) / 1,10 − 1 000 = 1 045,45 − 1 000 = +45,45 k€. Valeur de l'option = 45,45 − (−45,45) = 90,91 k€, soit 0,5 × 200 / 1,10. Le projet devient acceptable grâce à la flexibilité."
+    },
+    {
+      "id": "ue2-invest-optreel-0006",
+      "type": "flashcard",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "options-reelles",
+      "difficulty": 1,
+      "tags": [
+        "options réelles",
+        "typologie"
+      ],
+      "source_ref": "Théorie des options réelles (Myers, 1977)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "front": "Quelles sont les principales options réelles et à quelle option financière chacune s'apparente-t-elle ?",
+      "back": "Option de développement (investir davantage si le projet réussit) : call.\nOption de différer (attendre une meilleure information) : call.\nOption d'abandon (arrêter et revendre les actifs) : put, au prix d'exercice égal à la valeur de revente.\nVAN globale = VAN classique + valeur des options réelles.",
+      "explanation": "Les options de flexibilité (changer d'intrant, de produit ou d'échelle) complètent cette liste. Le sous-jacent est la valeur actuelle des flux du projet ; la volatilité de cette valeur augmente la valeur des options."
+    }
+  ]
+}

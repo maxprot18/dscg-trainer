@@ -1,0 +1,207 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-invest-flux-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "flux-tresorerie-projet",
+      "difficulty": 1,
+      "tags": [
+        "flux différentiels",
+        "frais financiers",
+        "coût d’opportunité"
+      ],
+      "source_ref": "Méthode des flux différentiels après impôt (calcul financier) ; le coût du financement est intégré dans le taux d’actualisation",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Une entreprise évalue un projet d'investissement par la VAN au coût du capital. Lequel des éléments suivants ne doit PAS figurer dans les flux nets de trésorerie du projet ?",
+      "options": [
+        "L'économie d'IS procurée par les dotations aux amortissements du matériel",
+        "La valeur de marché d'un terrain que l'entreprise possède déjà et qu'elle affecte au projet",
+        "Les intérêts de l'emprunt souscrit pour financer le matériel",
+        "La baisse de marge d'un produit existant que le nouveau produit va concurrencer"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Les intérêts de l'emprunt (option 3) sont exclus : le coût du financement est déjà pris en compte par le taux d'actualisation (coût du capital) ; les déduire des flux reviendrait à le compter deux fois. L'option 1 est un flux réel (t × dotation, l'amortissement réduisant l'IS payé). L'option 2 est un coût d'opportunité : en affectant le terrain au projet, l'entreprise renonce à le vendre, ce qui doit être imputé au projet. L'option 4 est un effet induit (cannibalisation) : le raisonnement est différentiel, avec projet moins sans projet."
+    },
+    {
+      "id": "ue2-invest-flux-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "flux-tresorerie-projet",
+      "difficulty": 2,
+      "tags": [
+        "valeur résiduelle",
+        "plus-value",
+        "IS"
+      ],
+      "source_ref": "Valeur résiduelle nette d’impôt = prix de cession − t × (prix de cession − VNC fiscale) ; imposition des plus-values de cession au taux de l’IS (hypothèse de l’énoncé)",
+      "verified": true,
+      "estimated_seconds": 90,
+      "statement": "Une machine acquise 100 000 € en début de projet est amortie fiscalement en linéaire sur 5 ans. Le projet s'arrête à la fin de la 4e année et la machine est alors revendue 30 000 €. Taux d'IS : 25 % ; la plus-value est imposée à ce taux en fin d'année 4. Quelle valeur résiduelle nette d'impôt faut-il inscrire dans le flux de l'année 4 ?",
+      "options": [
+        "30 000 €",
+        "22 500 €",
+        "32 500 €",
+        "27 500 €"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "VNC fiscale fin année 4 = 100 000 − 4 × 20 000 = 20 000 €. Plus-value = 30 000 − 20 000 = 10 000 € ; IS = 2 500 €. Valeur résiduelle nette = 30 000 − 2 500 = 27 500 € (option 4). L'option 1 oublie l'impôt sur la plus-value. L'option 2 applique l'IS au prix de cession entier, comme si la VNC était nulle. L'option 3 ajoute l'impôt au lieu de le retrancher."
+    },
+    {
+      "id": "ue2-invest-flux-0003",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "flux-tresorerie-projet",
+      "difficulty": 2,
+      "tags": [
+        "BFR",
+        "variation",
+        "récupération"
+      ],
+      "source_ref": "Méthode des flux différentiels : le BFR est un emploi constitué au rythme du chiffre d’affaires et récupéré en fin de projet",
+      "verified": true,
+      "estimated_seconds": 90,
+      "statement": "Un projet de 3 ans génère un chiffre d'affaires HT de 500 000 € en année 1, puis 600 000 € en années 2 et 3. Le BFR représente 20 % du chiffre d'affaires annuel et doit être constitué en début de chaque année (convention : début d'année t = date t − 1). Quel flux lié au BFR faut-il inscrire en date 1 ?",
+      "options": [
+        "−120 000 €",
+        "+20 000 €",
+        "−20 000 €",
+        "−100 000 €"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "BFR nécessaire : 100 000 € pour l'année 1 (constitué en date 0), 120 000 € pour les années 2 et 3. En date 1 (début de l'année 2), il faut seulement constituer le supplément : 120 000 − 100 000 = 20 000 €, soit un flux de −20 000 € (option 3). L'option 1 inscrit le BFR total au lieu de sa variation. L'option 4 correspond au flux de la date 0. L'option 2 inverse le signe : une hausse du BFR est un emploi. Le BFR cumulé de 120 000 € sera récupéré en date 3."
+    },
+    {
+      "id": "ue2-invest-flux-0004",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "flux-tresorerie-projet",
+      "difficulty": 1,
+      "tags": [
+        "frais financiers",
+        "double comptage"
+      ],
+      "source_ref": "Méthode des flux différentiels (calcul financier) : le coût du financement est intégré dans le coût du capital",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Pour calculer la VAN d'un projet au coût du capital, il faut déduire des flux nets de trésorerie les intérêts de l'emprunt qui finance ce projet.",
+      "answer": false,
+      "justification": "Faux : le coût du financement est déjà intégré dans le taux d'actualisation ; déduire les intérêts reviendrait à le compter deux fois.",
+      "explanation": "Les flux d'un projet d'investissement sont des flux d'exploitation et d'investissement, indépendants du mode de financement. Le coût du capital (CMPC) rémunère prêteurs et actionnaires : actualiser à ce taux suffit à tenir compte du financement. Les frais financiers n'interviennent que dans le plan de financement, via la CAF après intérêts."
+    },
+    {
+      "id": "ue2-invest-flux-0005",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "flux-tresorerie-projet",
+      "difficulty": 2,
+      "tags": [
+        "CAF d’exploitation",
+        "économie d’IS",
+        "amortissement"
+      ],
+      "source_ref": "Flux d’exploitation après impôt = EBE × (1 − t) + t × dotation aux amortissements ; CGI art. 39 (déductibilité des amortissements)",
+      "verified": true,
+      "estimated_seconds": 180,
+      "statement": "Une machine de 240 000 € HT, amortie fiscalement en linéaire sur 5 ans, permet de réaliser un chiffre d'affaires supplémentaire de 180 000 € HT par an. Les charges variables représentent 40 % du chiffre d'affaires et les charges fixes décaissables supplémentaires s'élèvent à 30 000 € par an. Taux d'IS : 25 %. Le BFR ne varie pas en année 2. Calculez le flux net de trésorerie de l'année 2, en euros.",
+      "expected_value": 70500,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "EBE = 180 000 − 0,40 × 180 000 − 30 000 = 78 000 €. Dotation = 240 000 / 5 = 48 000 €. Résultat imposable supplémentaire = 78 000 − 48 000 = 30 000 € ; IS = 7 500 €. FNT = 78 000 − 7 500 = 70 500 €, soit aussi 78 000 × 0,75 + 0,25 × 48 000 = 58 500 + 12 000. L'erreur classique (58 500 €) oublie l'économie d'IS sur l'amortissement."
+    },
+    {
+      "id": "ue2-invest-flux-0006",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "flux-tresorerie-projet",
+      "difficulty": 3,
+      "tags": [
+        "flux de trésorerie",
+        "BFR",
+        "valeur résiduelle",
+        "VAN"
+      ],
+      "source_ref": "Méthode des flux différentiels après impôt ; VAN = −I₀ + Σ FNTₜ (1 + k)⁻ᵗ (calcul financier) ; CGI art. 39 (amortissements)",
+      "verified": true,
+      "estimated_seconds": 900,
+      "title": "Projet de ligne de conditionnement",
+      "context": "La société Valoria étudie une ligne de conditionnement, sur 4 ans.\n- Investissement : 400 000 € HT en date 0, amorti fiscalement en linéaire sur 4 ans.\n- Chiffre d'affaires HT prévu : 300 000 € (année 1), 350 000 € (années 2 et 3), 300 000 € (année 4).\n- EBE : 40 % du chiffre d'affaires.\n- BFR : 10 % du chiffre d'affaires de l'année, constitué en début d'année (début d'année t = date t − 1) et récupéré intégralement en fin d'année 4.\n- La ligne sera revendue 40 000 € en fin d'année 4 (VNC nulle) ; la plus-value est imposée à l'IS.\n- Taux d'IS : 25 % ; coût du capital : 9 %.\n- Flux d'exploitation en fin d'année ; aucun frais financier n'est retenu.",
+      "sub_questions": [
+        {
+          "id": "caf-annee-2",
+          "kind": "numeric",
+          "prompt": "Calculez la CAF d'exploitation (flux d'exploitation après impôt) de l'année 2, en euros.",
+          "points": 2,
+          "expected_value": 130000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "EBE = 0,40 × 350 000 = 140 000 €. Dotation = 100 000 €. CAF d'exploitation = 140 000 × 0,75 + 0,25 × 100 000 = 105 000 + 25 000 = 130 000 €."
+        },
+        {
+          "id": "fnt-annee-4",
+          "kind": "numeric",
+          "prompt": "Calculez le flux net de trésorerie de l'année 4 (date 4), en euros.",
+          "points": 3,
+          "expected_value": 175000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "CAF d'exploitation année 4 = 120 000 × 0,75 + 25 000 = 115 000 €. Récupération du BFR cumulé (10 % × 300 000, niveau atteint en date 3) = 30 000 €. Valeur résiduelle nette = 40 000 × (1 − 0,25) = 30 000 €. FNT = 115 000 + 30 000 + 30 000 = 175 000 €."
+        },
+        {
+          "id": "van",
+          "kind": "numeric",
+          "prompt": "Les flux nets de trésorerie sont : date 0 : −430 000 € ; date 1 : 110 000 € ; date 2 : 130 000 € ; date 3 : 135 000 € ; date 4 : 175 000 €. Calculez la VAN du projet au taux de 9 %, en euros.",
+          "points": 3,
+          "expected_value": 8555.01,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.01
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "Date 0 : −400 000 − 30 000 (BFR année 1). Date 1 : 115 000 − 5 000 (BFR passe à 35 000). Date 2 : 130 000 (pas de variation). Date 3 : 130 000 + 5 000 (BFR revient à 30 000). VAN = −430 000 + 110 000 × 1,09⁻¹ + 130 000 × 1,09⁻² + 135 000 × 1,09⁻³ + 175 000 × 1,09⁻⁴ ≈ −430 000 + 100 917,43 + 109 418,40 + 104 244,77 + 123 974,41 ≈ 8 555,01 €."
+        },
+        {
+          "id": "decision",
+          "kind": "open",
+          "prompt": "Concluez sur l'intérêt du projet et indiquez deux limites ou points de vigilance de cette évaluation.",
+          "points": 2,
+          "model_answer": "La VAN est positive (environ 8 555 €) : au coût du capital de 9 %, le projet crée de la valeur et peut être accepté. La marge est toutefois faible (TRI proche de 9,8 %) : une baisse modeste du chiffre d'affaires ou du taux d'EBE suffirait à rendre la VAN négative ; une analyse de sensibilité est nécessaire. La valeur de revente de 40 000 € et le niveau de BFR sont des estimations incertaines. Les frais financiers sont exclus à juste titre, puisque le taux de 9 % intègre le coût du financement.",
+          "key_points": [
+            "VAN positive : projet acceptable au taux de 9 %",
+            "Marge de sécurité faible : sensibilité au chiffre d'affaires, au taux d'EBE ou à la valeur résiduelle",
+            "Hypothèses incertaines (BFR, valeur de revente, durée)",
+            "Frais financiers exclus car intégrés dans le taux d'actualisation"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Les flux se construisent en trois blocs : investissement et BFR (emplois), CAF d'exploitation après impôt (avec l'économie d'IS sur amortissement), puis récupération du BFR et valeur résiduelle nette d'impôt en fin de projet. La VAN, légèrement positive, invite à tester la robustesse du projet."
+    }
+  ]
+}
