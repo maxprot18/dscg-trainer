@@ -1,0 +1,30 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-eval-cmpc-0001",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "notion": "cout-capital-cmpc-medaf",
+      "difficulty": 2,
+      "tags": [
+        "CMPC",
+        "MEDAF",
+        "bêta",
+        "coût de la dette"
+      ],
+      "source_ref": "MEDAF : k_CP = r_f + β × (E(R_M) − r_f) ; CMPC = k_CP × CP/(CP+D) + k_D × (1 − IS) × D/(CP+D), pondérations en valeurs de marché",
+      "verified": true,
+      "estimated_seconds": 300,
+      "statement": "La société Orvane présente les données suivantes : taux sans risque 3 %, prime de risque du marché 6 %, bêta des capitaux propres 1,2. Sa dette financière coûte 5 % avant impôt ; le taux d'impôt sur les sociétés est de 25 %. La capitalisation boursière s'élève à 600 M€ et la valeur de marché de la dette nette à 400 M€. Calculez le coût moyen pondéré du capital (CMPC), en pourcentage (ex. 8,15 pour 8,15 %).",
+      "expected_value": 7.62,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "decimals": 2,
+      "explanation": "1) Coût des capitaux propres (MEDAF) : 3 % + 1,2 × 6 % = 10,2 %. 2) Coût de la dette après impôt : 5 % × (1 − 0,25) = 3,75 % (les intérêts sont déductibles). 3) Pondérations en valeurs de marché : CP = 600/1 000 = 60 % ; D = 400/1 000 = 40 %. 4) CMPC = 10,2 % × 0,6 + 3,75 % × 0,4 = 6,12 % + 1,50 % = 7,62 %. Erreurs fréquentes : oublier l'économie d'impôt sur la dette (on obtiendrait 8,12 %) ou pondérer avec des valeurs comptables."
+    }
+  ]
+}

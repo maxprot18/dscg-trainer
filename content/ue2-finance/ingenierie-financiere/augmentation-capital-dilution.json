@@ -1,0 +1,24 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-ingfi-dps-0001",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "augmentation-capital-dilution",
+      "difficulty": 1,
+      "tags": [
+        "DPS",
+        "augmentation de capital",
+        "valeur théorique"
+      ],
+      "source_ref": "Valeur théorique du droit préférentiel de souscription : DPS = cours avant opération − cours théorique après opération (C. com., art. L. 225-132 pour l’existence du droit)",
+      "verified": true,
+      "estimated_seconds": 150,
+      "statement": "Une société dont l'action cote 60 € réalise une augmentation de capital en numéraire au prix de 45 €, à raison de 1 action nouvelle pour 4 anciennes. Affirmation : la valeur théorique du droit préférentiel de souscription (DPS) attaché à chaque action ancienne est de 3,75 € (écart de 15 € réparti sur 4 actions anciennes).",
+      "answer": false,
+      "justification": "Faux. Cours théorique après opération : (4 × 60 + 1 × 45) / 5 = 285 / 5 = 57 €. DPS = 60 − 57 = 3 €. Autre formulation : DPS = (60 − 45) × N/(N+A) = 15 × 1/5 = 3 €. Il faut répartir l'écart de 15 € sur les 5 actions du nouvel ensemble, pas sur les 4 anciennes.",
+      "explanation": "Le DPS compense la perte de valeur subie par l'ancien actionnaire du fait de l'émission en dessous du cours. Après l'opération, 5 actions valent 4 × 60 + 45 = 285 €, soit 57 € l'une : chaque action ancienne perd 3 €, valeur théorique du droit. Vérification : un nouvel investisseur achète 4 DPS (12 €) et paie 45 € pour obtenir une action valant 57 €, soit un coût total de 57 € : il est indifférent."
+    }
+  ]
+}

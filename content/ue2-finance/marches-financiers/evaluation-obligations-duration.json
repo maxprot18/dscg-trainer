@@ -1,0 +1,29 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-marches-oblig-0001",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "marches-financiers",
+      "notion": "evaluation-obligations-duration",
+      "difficulty": 3,
+      "tags": [
+        "obligation",
+        "duration",
+        "taux actuariel"
+      ],
+      "source_ref": "Duration de Macaulay : D = Σ t × F_t (1+r)^−t / Σ F_t (1+r)^−t — calcul actuariel obligataire",
+      "verified": true,
+      "estimated_seconds": 420,
+      "statement": "Une obligation in fine de valeur nominale 1 000 €, de coupon annuel 4 %, remboursable au pair, a une durée de vie résiduelle de 4 ans (prochain coupon dans exactement un an). Le taux actuariel du marché pour ce risque est de 5 %. Calculez la duration de Macaulay de cette obligation, en années (2 décimales).",
+      "expected_value": 3.77,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "unit": "ans",
+      "decimals": 2,
+      "explanation": "Flux : 40 € en années 1 à 3, 1 040 € en année 4. Valeurs actuelles à 5 % : 38,10 ; 36,28 ; 34,55 ; 855,61 → prix P ≈ 964,54 €. Flux actualisés pondérés par leur date : 1 × 38,10 + 2 × 36,28 + 3 × 34,55 + 4 × 855,61 ≈ 38,10 + 72,56 + 103,66 + 3 422,44 = 3 636,76. Duration D = 3 636,76 / 964,54 ≈ 3,77 ans. Elle est inférieure à la maturité (4 ans) car les coupons sont perçus avant l'échéance. Sensibilité associée : S = −D/(1+r) ≈ −3,59 : une hausse de 1 point des taux fait baisser le prix d'environ 3,59 %."
+    }
+  ]
+}

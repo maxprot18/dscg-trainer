@@ -1,0 +1,43 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-invest-emprunt-0001",
+      "type": "journal_entry",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "choix-modalites-financement",
+      "difficulty": 1,
+      "tags": [
+        "emprunt",
+        "annuité constante",
+        "écriture"
+      ],
+      "source_ref": "Annuité constante a = C × i / (1 − (1+i)^−n) ; PCG : comptes 164 (Emprunts auprès des établissements de crédit), 661 (Charges d’intérêts), 512 (Banques)",
+      "verified": true,
+      "estimated_seconds": 300,
+      "statement": "Le 1er janvier N, une société a obtenu un emprunt bancaire de 100 000 € au taux annuel de 5 %, remboursable en 5 annuités constantes payées le 31 décembre. Passez l'écriture de paiement de la première annuité au 31/12/N (montants arrondis au centime).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "164",
+          "label": "Emprunts auprès des établissements de crédit (amortissement du capital)",
+          "debit": 18097.48,
+          "credit": 0
+        },
+        {
+          "account": "661",
+          "label": "Charges d’intérêts",
+          "debit": 5000,
+          "credit": 0
+        },
+        {
+          "account": "512",
+          "label": "Banques",
+          "debit": 0,
+          "credit": 23097.48
+        }
+      ],
+      "explanation": "Annuité constante : a = 100 000 × 0,05 / (1 − 1,05^−5) ≈ 23 097,48 €. Intérêts de la première année : 100 000 × 5 % = 5 000 € (charge financière, compte 661). Amortissement du capital : 23 097,48 − 5 000 = 18 097,48 €, qui diminue la dette au compte 164. Le décaissement total de 23 097,48 € est crédité au compte 512. Le capital restant dû passe à 81 902,52 € ; les intérêts de l'année suivante seront calculés sur ce montant."
+    }
+  ]
+}

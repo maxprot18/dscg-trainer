@@ -1,0 +1,22 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-treso-cashpool-0001",
+      "type": "flashcard",
+      "ue": "UE2",
+      "theme": "gestion-tresorerie",
+      "notion": "cash-pooling-centralisation",
+      "difficulty": 1,
+      "tags": [
+        "cash pooling",
+        "centralisation de trésorerie"
+      ],
+      "source_ref": "Techniques de centralisation de trésorerie de groupe (conventions de trésorerie ; C. mon. fin., art. L. 511-7, 3° pour l’exception au monopole bancaire)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "front": "Cash pooling : quelle différence entre centralisation physique (zero balancing) et centralisation notionnelle (notional pooling) ?",
+      "back": "Physique (zero balancing) : les soldes des comptes des filiales sont effectivement virés chaque jour vers un compte centralisateur de la société pivot, qui ramène chaque compte à zéro (ou à un solde cible) ; il en résulte des prêts et emprunts intragroupe rémunérés par une convention de trésorerie. Notionnelle (notional pooling) : aucun transfert de fonds ; la banque calcule fictivement les intérêts sur la somme des soldes débiteurs et créditeurs des comptes, qui restent juridiquement distincts. Dans les deux cas, l'objectif est de compenser excédents et besoins pour réduire les frais financiers.",
+      "explanation": "La centralisation physique déplace réellement les liquidités (gestion par la société pivot, flux intragroupe à documenter et à rémunérer à des conditions normales). La centralisation notionnelle ne déplace rien : c'est une fusion d'échelles d'intérêts réalisée par la banque, plus simple juridiquement mais moins répandue et soumise à des contraintes prudentielles pour les banques. Le choix dépend notamment de la dispersion géographique et des réglementations locales."
+    }
+  ]
+}

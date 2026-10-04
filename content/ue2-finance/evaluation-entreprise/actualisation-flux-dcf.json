@@ -1,0 +1,83 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-eval-dcf-0001",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "evaluation-entreprise",
+      "notion": "actualisation-flux-dcf",
+      "difficulty": 3,
+      "tags": [
+        "DCF",
+        "valeur terminale",
+        "Gordon-Shapiro",
+        "dette nette"
+      ],
+      "source_ref": "Méthode DCF : valeur d’entreprise = Σ FTD_t (1+CMPC)^−t + VT (1+CMPC)^−n, VT = FTD_{n+1} / (CMPC − g) ; valeur des capitaux propres = VE − dette nette",
+      "verified": true,
+      "estimated_seconds": 1200,
+      "title": "Évaluation de la société Kervalis par les flux de trésorerie disponibles",
+      "context": "Un fonds d'investissement envisage d'acquérir 100 % des titres de la société Kervalis, PME industrielle non cotée. Le plan d'affaires retenu après due diligence prévoit les flux de trésorerie disponibles (après impôt, après investissements et variation du BFR) suivants, perçus en fin d'année : 2,0 M€ en N+1, 2,4 M€ en N+2, 2,7 M€ en N+3 et 3,0 M€ en N+4. Au-delà de N+4, on suppose une croissance perpétuelle des flux de 2 % par an (le flux N+5 vaut donc 3,0 × 1,02 M€). Le coût moyen pondéré du capital retenu est de 8 %. Au 31/12/N, la dette financière nette de Kervalis s'élève à 6 M€. L'évaluation est faite au 31/12/N. Les montants sont à exprimer en millions d'euros, avec deux décimales.",
+      "sub_questions": [
+        {
+          "id": "va-flux-explicites",
+          "kind": "numeric",
+          "prompt": "Calculez la valeur actuelle, au 31/12/N, des flux de trésorerie disponibles de la période explicite (N+1 à N+4), en M€.",
+          "points": 5,
+          "expected_value": 8.26,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.01
+          },
+          "unit": "M€",
+          "decimals": 2,
+          "explanation": "2,0/1,08 + 2,4/1,08² + 2,7/1,08³ + 3,0/1,08⁴ = 1,8519 + 2,0576 + 2,1433 + 2,2051 ≈ 8,26 M€."
+        },
+        {
+          "id": "va-valeur-terminale",
+          "kind": "numeric",
+          "prompt": "Calculez la valeur terminale à fin N+4 par la formule de Gordon-Shapiro, puis sa valeur actuelle au 31/12/N. Donnez la valeur actuelle, en M€.",
+          "points": 5,
+          "expected_value": 37.49,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.01
+          },
+          "unit": "M€",
+          "decimals": 2,
+          "explanation": "VT(N+4) = FTD(N+5) / (CMPC − g) = 3,0 × 1,02 / (0,08 − 0,02) = 3,06 / 0,06 = 51,00 M€. Actualisation sur 4 ans : 51 / 1,08⁴ = 51 / 1,36049 ≈ 37,49 M€."
+        },
+        {
+          "id": "valeur-capitaux-propres",
+          "kind": "numeric",
+          "prompt": "Déduisez-en la valeur des capitaux propres de Kervalis, en M€.",
+          "points": 4,
+          "expected_value": 39.74,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.01
+          },
+          "unit": "M€",
+          "decimals": 2,
+          "explanation": "Valeur d'entreprise = 8,26 + 37,49 ≈ 45,74 M€. Valeur des capitaux propres = VE − dette nette = 45,74 − 6 ≈ 39,74 M€."
+        },
+        {
+          "id": "critique-valeur-terminale",
+          "kind": "open",
+          "prompt": "La valeur terminale représente une part très importante de la valeur d'entreprise. Chiffrez cette part et commentez les limites de l'évaluation obtenue, en proposant des moyens d'en mesurer la robustesse.",
+          "points": 6,
+          "model_answer": "La valeur terminale actualisée (37,49 M€) représente environ 82 % de la valeur d'entreprise (45,74 M€) : l'évaluation repose donc surtout sur des hypothèses de long terme. Elle est très sensible au couple CMPC / taux de croissance perpétuelle, puisque le dénominateur CMPC − g ne vaut que 6 points : un g de 2,5 % ou un CMPC de 7,5 % accroît sensiblement la valeur, l'inverse la réduit fortement. Le taux g doit rester cohérent avec la croissance nominale de long terme de l'économie, et le flux normatif de N+5 doit refléter un régime de croisière (investissements de renouvellement cohérents avec les amortissements, BFR stabilisé). Pour tester la robustesse, on construit une table de sensibilité de la valeur au CMPC et à g, on allonge éventuellement l'horizon explicite, on recoupe la valeur terminale par un multiple de sortie (VE/EBITDA de sociétés comparables) et on confronte le résultat à d'autres méthodes (multiples de transactions, approche patrimoniale).",
+          "key_points": [
+            "Part de la valeur terminale ≈ 82 % de la valeur d'entreprise (37,49 / 45,74)",
+            "Forte sensibilité au CMPC et au taux de croissance perpétuelle (dénominateur CMPC − g)",
+            "Cohérence de g avec la croissance de long terme et caractère normatif du flux terminal",
+            "Analyse de sensibilité (table CMPC × g) et recoupement par multiples ou autres méthodes"
+          ],
+          "explanation": "37,49 / 45,74 ≈ 0,819, soit environ 82 %."
+        }
+      ],
+      "total_points": 20,
+      "explanation": "Démarche DCF : (1) actualiser au CMPC les flux de trésorerie disponibles de l'horizon explicite (≈ 8,26 M€) ; (2) calculer la valeur terminale par Gordon-Shapiro sur le premier flux post-horizon, 3,06 / (8 % − 2 %) = 51 M€, puis l'actualiser sur 4 ans (≈ 37,49 M€) ; (3) valeur d'entreprise ≈ 45,74 M€ ; (4) retrancher la dette financière nette (6 M€) pour obtenir la valeur des capitaux propres ≈ 39,74 M€. Le CMPC est le taux adapté car les flux de trésorerie disponibles reviennent à l'ensemble des apporteurs de capitaux (actionnaires et prêteurs)."
+    }
+  ]
+}

@@ -2,7 +2,7 @@ import { exampleExercises } from '@/content/__fixtures__/examples'
 import { exerciseSchema } from '@/content/schema'
 import { DscgDatabase } from '@/db/db'
 
-import { gradeExercise } from './grading'
+import { gradeExercise, type PartResponse } from './grading'
 import { endSession, recordAttempt, startSession } from './recorder'
 
 describe('enregistrement', () => {
@@ -10,7 +10,7 @@ describe('enregistrement', () => {
     const database = new DscgDatabase('test-recorder')
     const ex = exerciseSchema.parse(exampleExercises.mcq)
     const sessionId = await startSession('quick', [ex], undefined, database)
-    const responses = [{ kind: 'choice', selected: [1] }] as const
+    const responses: PartResponse[] = [{ kind: 'choice', selected: [1] }]
     await recordAttempt(ex, responses, gradeExercise(ex, responses), 1234.4, sessionId, database)
     await endSession(sessionId, database)
 
