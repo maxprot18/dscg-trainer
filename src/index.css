@@ -80,3 +80,27 @@
     @apply bg-background text-foreground antialiased;
   }
 }
+
+/* Couleur d'identité de chaque UE (palette catégorielle validée pour les daltonismes, pas de deux hues voisines). */
+:root {
+  --ue-UE1: #2a78d6;
+  --ue-UE2: #eb6834;
+  --ue-UE3: #1baf7a;
+  --ue-UE4: #eda100;
+  --ue-UE5: #e87ba4;
+  --ue-UE6: #008300;
+}
+.dark {
+  --ue-UE1: #3987e5;
+  --ue-UE2: #d95926;
+  --ue-UE3: #199e70;
+  --ue-UE4: #c98500;
+  --ue-UE5: #d55181;
+  --ue-UE6: #008300;
+}
+
+@media print {
+  nav, header, .no-print { display: none !important; }
+  main { padding: 0 !important; }
+  article { break-inside: avoid; }
+}

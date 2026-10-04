@@ -28,6 +28,7 @@ const data: ProgressData = {
   attempts: [...attempts(n1, [true, true, true, true], 0), ...attempts(n2, [false, false, true], 1)],
   reviews: [{ notion: n2, due: NOW - 1000, interval: 1, ease: 2.3, repetitions: 0, lapses: 0 }],
   sessions: [{ id: 1, mode: 'smart', startedAt: NOW - DAY_MS, endedAt: NOW, exerciseIds: [] }],
+  marks: [],
 }
 
 function renderView(progress: ProgressData) {
@@ -59,7 +60,7 @@ describe('écran Progression', () => {
   })
 
   it('sans historique : tout est non travaillé', () => {
-    renderView({ attempts: [], reviews: [], sessions: [] })
+    renderView({ attempts: [], reviews: [], sessions: [], marks: [] })
     expect(screen.getByText('Aucune session pour l’instant.')).toBeInTheDocument()
     expect(screen.queryByRole('link', { name: /Réviser les/ })).not.toBeInTheDocument()
     expect(screen.getByText(`0 / ${taxonomy.ues.flatMap((u) => u.themes.flatMap((t) => t.notions)).length}`)).toBeInTheDocument()

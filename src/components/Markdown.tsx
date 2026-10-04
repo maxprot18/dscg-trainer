@@ -1,13 +1,18 @@
 /**
  * Rendu Markdown minimal pour les fiches de cours (titres, paragraphes, listes,
- * tableaux simples, gras, italique, code). Le contenu est produit par le projet ;
- * aucun HTML brut n'est interprété.
+ * tableaux simples, gras, italique, code, liens internes `[texte](/cours/id)` et
+ * blocs ```diagram). Le contenu est produit par le projet ; aucun HTML brut n'est interprété.
  */
 import { Fragment, type ReactNode } from 'react'
+import { Link } from 'react-router-dom'
+
+import { parseDiagram } from '@/content/diagram'
+
+import { Diagram } from './Diagram'
 
 function inline(text: string): ReactNode[] {
   const out: ReactNode[] = []
-  const re = /(\*\*[^*]+\*\*|\*[^*\s][^*]*\*|`[^`]+`)/g
+  const re = /(\*\*[^*]+\*\*|\*[^*\s][^*]*\*|`[^`]+`|\[[^\]]+\]\([^)\s]+\))/g
   let last = 0
   let m: RegExpExecArray | null
   while ((m = re.exec(text))) {
@@ -16,7 +21,20 @@ function inline(text: string): ReactNode[] {
     const key = `${m.index}`
     if (token.startsWith('**')) out.push(<strong key={key}>{token.slice(2, -2)}</strong>)
     else if (token.startsWith('`')) out.push(<code key={key} className="bg-muted rounded px-1 text-[0.9em]">{token.slice(1, -1)}</code>)
-    else out.push(<em key={key}>{token.slice(1, -1)}</em>)
+    else if (token.startsWith('[')) {
+      const link = /^\[([^\]]+)\]\(([^)\s]+)\)$/.exec(token)!
+      const [, label, href] = link
+      // Seuls les liens internes (chemin absolu de l'app) sont rendus comme liens ; le reste reste du texte.
+      out.push(
+        href.startsWith('/') ? (
+          <Link key={key} to={href} className="text-primary underline underline-offset-2">
+            {inline(label)}
+          </Link>
+        ) : (
+          <Fragment key={key}>{label}</Fragment>
+        ),
+      )
+    } else out.push(<em key={key}>{token.slice(1, -1)}</em>)
     last = m.index + token.length
   }
   if (last < text.length) out.push(text.slice(last))
@@ -40,6 +58,32 @@ export function Markdown({ source, pageTitle = false }: { source: string; pageTi
     const line = lines[i]
     if (line.trim() === '') {
       i++
+      continue
+    }
+    if (line.trim().startsWith('```')) {
+      const lang = line.trim().slice(3).trim()
+      const body: string[] = []
+      i++
+      while (i < lines.length && !lines[i].trim().startsWith('```')) body.push(lines[i++])
+      i++
+      if (lang === 'diagram') {
+        const parsed = parseDiagram(body.join('\n'))
+        blocks.push(
+          parsed.ok ? (
+            <Diagram key={i} spec={parsed.diagram} />
+          ) : (
+            <p key={i} className="text-destructive text-xs">
+              Diagramme illisible : {parsed.error}
+            </p>
+          ),
+        )
+      } else {
+        blocks.push(
+          <pre key={i} className="bg-muted overflow-x-auto rounded-md p-3 text-xs">
+            <code>{body.join('\n')}</code>
+          </pre>,
+        )
+      }
       continue
     }
     const heading = /^(#{1,4})\s+(.*)$/.exec(line)
@@ -107,7 +151,8 @@ export function Markdown({ source, pageTitle = false }: { source: string; pageTi
       lines[i].trim() !== '' &&
       !/^(#{1,4})\s/.test(lines[i]) &&
       !/^\s*([-*]|\d+[.)])\s+/.test(lines[i]) &&
-      !lines[i].trim().startsWith('|')
+      !lines[i].trim().startsWith('|') &&
+      !lines[i].trim().startsWith('```')
     ) {
       para.push(lines[i].trim())
       i++

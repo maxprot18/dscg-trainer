@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react'
+import { MemoryRouter } from 'react-router-dom'
 
 import { Markdown } from './Markdown'
 
@@ -31,5 +32,38 @@ describe('Markdown', () => {
     expect(screen.getByRole('cell', { name: '6811' })).toBeInTheDocument()
     expect(container.querySelector('script')).toBeNull()
     expect(screen.getByText('<script>alert(1)</script>')).toBeInTheDocument()
+  })
+
+  it('liens internes et diagrammes', () => {
+    render(
+      <MemoryRouter>
+        <Markdown
+          source={[
+            '# T',
+            '',
+            'Voir [IAS 36](/cours/ias-36-depreciation) et [externe](https://exemple.org).',
+            '',
+            '```diagram',
+            '{"type":"flow","title":"Étapes du cash pooling","steps":[{"label":"Remontée"},{"label":"Placement"}]}',
+            '```',
+            '',
+            '```diagram',
+            '{"type":"org","title":"Groupe","nodes":[{"id":"M","label":"Mère"},{"id":"F","label":"Fille"}],"links":[{"from":"M","to":"F","label":"80 %"}]}',
+            '```',
+            '',
+            '```diagram',
+            'pas du json',
+            '```',
+          ].join('\n')}
+        />
+      </MemoryRouter>,
+    )
+    expect(screen.getByRole('link', { name: 'IAS 36' })).toHaveAttribute('href', '/cours/ias-36-depreciation')
+    expect(screen.queryByRole('link', { name: 'externe' })).not.toBeInTheDocument()
+    expect(screen.getByText(/et externe\./)).toBeInTheDocument()
+    expect(screen.getByText('Étapes du cash pooling')).toBeInTheDocument()
+    expect(screen.getByText('Remontée')).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: /Groupe\. Mère détient 80 % de Fille/ })).toBeInTheDocument()
+    expect(screen.getByText(/Diagramme illisible/)).toBeInTheDocument()
   })
 })

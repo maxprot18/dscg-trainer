@@ -1,4 +1,4 @@
-import { DscgDatabase, exportProgress, importProgress } from './db'
+import { clearProgress, DscgDatabase, exportProgress, importProgress, setMark, toggleMark } from './db'
 
 describe('progression locale', () => {
   it('exporte puis réimporte les trois tables', async () => {
@@ -15,6 +15,25 @@ describe('progression locale', () => {
     expect(await target.attempts.toArray()).toEqual(dump.attempts)
     expect(await target.reviews.count()).toBe(1)
     expect(await target.sessions.count()).toBe(1)
+  })
+
+  it('marques : bascule, pose idempotente, export v2, import d’un export v1', async () => {
+    const database = new DscgDatabase('test-marks')
+    expect(await toggleMark('bookmark', 'ex-1', database)).toBe(true)
+    expect(await toggleMark('bookmark', 'ex-1', database)).toBe(false)
+    await setMark('read', 'notion:a', database)
+    await setMark('read', 'notion:a', database)
+    expect(await database.marks.count()).toBe(1)
+    const dump = await exportProgress(database)
+    expect(dump.version).toBe(2)
+    expect(dump.marks).toHaveLength(1)
+
+    const v1 = { app: 'dscg-trainer' as const, version: 1 as const, exportedAt: '', attempts: [], reviews: [], sessions: [] }
+    await importProgress(v1, database)
+    expect(await database.marks.count()).toBe(0)
+    await setMark('read', 'notion:b', database)
+    await clearProgress(database)
+    expect(await database.marks.count()).toBe(0)
   })
 
   it('refuse un fichier étranger', async () => {
