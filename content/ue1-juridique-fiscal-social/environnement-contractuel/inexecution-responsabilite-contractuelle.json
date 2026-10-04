@@ -1,0 +1,198 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-contrat-inexec-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "environnement-contractuel",
+      "notion": "inexecution-responsabilite-contractuelle",
+      "difficulty": 1,
+      "tags": [
+        "sanctions de l'inexécution",
+        "article 1217"
+      ],
+      "statement": "Parmi les mesures suivantes, laquelle ne figure pas parmi les sanctions de l'inexécution du contrat énumérées par l'article 1217 du Code civil ?",
+      "options": [
+        "La réduction du prix",
+        "L'exception d'inexécution",
+        "La résolution du contrat",
+        "La nullité du contrat"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "L'article 1217 énumère cinq sanctions : exception d'inexécution (option 2), exécution forcée en nature, réduction du prix (option 1), résolution (option 3) et réparation des conséquences de l'inexécution. La nullité (option 4) sanctionne un défaut affectant la formation du contrat (vice du consentement, contenu illicite…), et non un manquement survenu dans son exécution.",
+      "source_ref": "C. civ. art. 1217 et 1178",
+      "estimated_seconds": 45,
+      "verified": true
+    },
+    {
+      "id": "ue1-contrat-inexec-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "environnement-contractuel",
+      "notion": "inexecution-responsabilite-contractuelle",
+      "difficulty": 2,
+      "tags": [
+        "imprévision",
+        "article 1195",
+        "renégociation"
+      ],
+      "statement": "Un contrat de fourniture d'énergie de cinq ans, conclu en N−2 sans clause relative à l'imprévision, devient excessivement onéreux pour le fournisseur à la suite d'une flambée imprévisible des cours. Le fournisseur demande une renégociation, que le client refuse. Quelle affirmation est exacte ?",
+      "options": [
+        "Le fournisseur peut suspendre ses livraisons dès sa demande de renégociation",
+        "À défaut d'accord des parties dans un délai raisonnable, le juge peut, à la demande d'une partie, réviser le contrat ou y mettre fin",
+        "Le juge ne peut intervenir que si les deux parties le saisissent d'un commun accord",
+        "L'imprévision n'est applicable que si l'exécution est devenue impossible"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "L'article 1195 prévoit qu'en cas de refus ou d'échec de la renégociation, les parties peuvent convenir de la résolution ou demander ensemble au juge d'adapter le contrat ; à défaut d'accord dans un délai raisonnable, le juge peut, à la demande d'une seule partie, réviser le contrat ou y mettre fin (option 2). L'option 1 est fausse : la partie continue d'exécuter ses obligations durant la renégociation. L'option 3 confond la saisine conjointe (adaptation) et la saisine unilatérale ouverte en l'absence d'accord. L'option 4 décrit la force majeure (art. 1218) : l'imprévision suppose une exécution excessivement onéreuse, non impossible.",
+      "source_ref": "C. civ. art. 1195 et 1218",
+      "estimated_seconds": 75,
+      "verified": true
+    },
+    {
+      "id": "ue1-contrat-inexec-0003",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "environnement-contractuel",
+      "notion": "inexecution-responsabilite-contractuelle",
+      "difficulty": 2,
+      "tags": [
+        "clause pénale",
+        "pénalités de retard de livraison",
+        "plafond"
+      ],
+      "statement": "La SARL Alpage a commandé une ligne d'embouteillage pour un prix de 250 000 € HT. Le contrat stipule, en cas de retard de livraison, une pénalité de 0,2 % du prix HT par jour calendaire de retard, plafonnée à 5 % du prix HT. La ligne est livrée avec 32 jours de retard, sans cause exonératoire. On suppose que le juge n'exerce pas son pouvoir de modération. Calculez le montant de la pénalité due par le fournisseur, en euros.",
+      "expected_value": 12500,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Pénalité théorique : 0,2 % × 32 jours = 6,4 % du prix, soit 250 000 × 6,4 % = 16 000 €.\nPlafond : 5 % × 250 000 = 12 500 €. La pénalité due est limitée à 12 500 €.\nErreur classique : oublier le plafond (16 000 €). La pénalité est une clause pénale : le juge pourrait la modérer si elle était manifestement excessive, ou l'augmenter si elle était dérisoire (C. civ. art. 1231-5), hypothèse écartée par l'énoncé.",
+      "source_ref": "C. civ. art. 1231-5",
+      "estimated_seconds": 150,
+      "verified": true
+    },
+    {
+      "id": "ue1-contrat-inexec-0004",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "environnement-contractuel",
+      "notion": "inexecution-responsabilite-contractuelle",
+      "difficulty": 2,
+      "tags": [
+        "pénalités de retard de livraison",
+        "écriture",
+        "règlement fournisseur"
+      ],
+      "statement": "La SA Cèdre a reçu et comptabilisé une facture de son fournisseur de composants d'un montant de 60 000 € HT, TVA 20 %, soit 72 000 € TTC. La livraison a eu 15 jours de retard et le contrat prévoit une pénalité de 0,2 % du prix HT par jour de retard. Le fournisseur accepte que la pénalité soit déduite du règlement. Le 30 septembre N, Cèdre règle par virement le solde dû. La pénalité, de nature indemnitaire, n'est pas soumise à TVA. Comptabilisez le règlement chez Cèdre en enregistrant la pénalité au compte 7711 « Dédits et pénalités perçus sur achats et sur ventes ».",
+      "date": "30/09/N",
+      "entries": [
+        {
+          "account": "401",
+          "label": "Fournisseur : solde de la facture",
+          "debit": 72000,
+          "credit": 0
+        },
+        {
+          "account": "7711",
+          "label": "Pénalité de retard de livraison",
+          "debit": 0,
+          "credit": 1800
+        },
+        {
+          "account": "512",
+          "label": "Banque : règlement net",
+          "debit": 0,
+          "credit": 70200
+        }
+      ],
+      "explanation": "Pénalité : 60 000 × 0,2 % × 15 = 1 800 €. Elle se calcule sur le prix HT, comme le prévoit le contrat, et n'est pas soumise à TVA (indemnité sans contrepartie d'une livraison ou d'une prestation) : la TVA déductible initialement comptabilisée n'est pas modifiée.\nLa dette fournisseur de 72 000 € est soldée ; Cèdre décaisse 72 000 − 1 800 = 70 200 € et constate un produit de 1 800 € au compte 7711 imposé par l'énoncé. Ce compte relève de la nomenclature antérieure au règlement ANC 2022-06 (exercices ouverts depuis le 1er janvier 2025), qui a remanié les comptes 67 et 77 : c'est pourquoi l'énoncé l'impose.",
+      "source_ref": "C. civ. art. 1231-5 ; PCG, comptes 401 et 512 ; compte 7711 imposé par l'énoncé (nomenclature antérieure au règl. ANC 2022-06)",
+      "estimated_seconds": 180,
+      "verified": true
+    },
+    {
+      "id": "ue1-contrat-inexec-0005",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "environnement-contractuel",
+      "notion": "inexecution-responsabilite-contractuelle",
+      "difficulty": 3,
+      "tags": [
+        "délais de paiement",
+        "pénalités de retard",
+        "exception d'inexécution",
+        "clause résolutoire"
+      ],
+      "title": "Cartonnerie Belval face à un client mauvais payeur",
+      "context": "La SAS Cartonnerie Belval livre des emballages en carton à la SARL Dalmo, grossiste, dans le cadre d'un contrat-cadre d'un an.\nLes conditions générales de vente de Belval, acceptées par Dalmo, prévoient :\n- un paiement à 45 jours fin de mois ;\n- des pénalités de retard au taux de la BCE majoré de 10 points, calculées sur le montant TTC, et l'indemnité forfaitaire pour frais de recouvrement prévue par la loi ;\n- une clause résolutoire : « En cas de défaut de paiement d'une facture à son échéance, le contrat sera résolu de plein droit huit jours après une mise en demeure restée sans effet, visant la présente clause. »\nUne facture de 36 000 € TTC, échue le 15 mars N, n'a été réglée par Dalmo que le 2 mai N. Le taux de pénalité applicable est de 12,15 % l'an. Les pénalités sont calculées sur une base de 365 jours.\nDébut juin N, une nouvelle facture reste impayée. Dalmo, qui souhaite renégocier son délai de paiement à 90 jours, demande néanmoins la livraison de sa commande suivante. Belval envisage de suspendre ses livraisons et de mettre fin au contrat.",
+      "sub_questions": [
+        {
+          "id": "q1-delai",
+          "kind": "mcq",
+          "prompt": "Dalmo pourrait-elle obtenir contractuellement un délai de paiement de 90 jours à compter de la date d'émission de la facture ?",
+          "points": 2,
+          "options": [
+            "Oui, le délai de paiement est librement négocié entre professionnels",
+            "Oui, à condition que le délai soit inscrit dans les conditions générales de vente",
+            "Non, le délai convenu ne peut pas dépasser 60 jours à compter de la date d'émission de la facture (ou 45 jours fin de mois, si cela est stipulé et ne constitue pas un abus manifeste)",
+            "Non, le délai légal est impérativement de 30 jours à compter de la réception des marchandises"
+          ],
+          "answer": [
+            2
+          ],
+          "multiple": false,
+          "explanation": "L'article L441-10 du Code de commerce plafonne le délai convenu à 60 jours après la date d'émission de la facture ou, par dérogation, à 45 jours fin de mois si ce délai est expressément stipulé et ne constitue pas un abus manifeste (option 3). Le délai de 30 jours (option 4) ne s'applique qu'à défaut de stipulation. Les options 1 et 2 ignorent ce plafond légal d'ordre public."
+        },
+        {
+          "id": "q2-penalites",
+          "kind": "numeric",
+          "prompt": "Calculez le montant total réclamable par Belval au titre du retard de paiement de la facture de 36 000 € (pénalités et indemnité forfaitaire). Réponse en euros, arrondie au centime.",
+          "points": 3,
+          "expected_value": 615.21,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "Jours de retard du 15 mars au 2 mai : 16 jours (mars) + 30 jours (avril) + 2 jours (mai) = 48 jours.\nPénalités : 36 000 × 12,15 % × 48 / 365 = 575,21 €.\nIndemnité forfaitaire pour frais de recouvrement : 40 € (C. com. D441-5).\nTotal : 575,21 + 40 = 615,21 €. Erreur classique : oublier l'indemnité de 40 € (575,21 €) ou compter 47 jours (563,23 + 40 = 603,23 €)."
+        },
+        {
+          "id": "q3-rappel",
+          "kind": "true_false",
+          "prompt": "Les pénalités de retard et l'indemnité forfaitaire de 40 € sont exigibles sans qu'un rappel soit nécessaire.",
+          "points": 1,
+          "answer": true,
+          "explanation": "Vrai. L'article L441-10 prévoit que les pénalités de retard sont exigibles sans qu'un rappel soit nécessaire, et que tout professionnel en retard de paiement est de plein droit débiteur de l'indemnité forfaitaire pour frais de recouvrement."
+        },
+        {
+          "id": "q4-sanctions",
+          "kind": "open",
+          "prompt": "Belval peut-elle suspendre ses livraisons puis mettre fin au contrat ? Indiquez les conditions à respecter.",
+          "points": 4,
+          "model_answer": "Suspension : Belval peut opposer l'exception d'inexécution (C. civ. art. 1219) et refuser de livrer tant que la facture échue n'est pas réglée, à condition que l'inexécution de Dalmo soit suffisamment grave ; un nouvel impayé, après un premier retard de près de sept semaines, peut le justifier. Elle doit rester proportionnée (suspendre les livraisons, pas conserver indéfiniment des sommes sans rapport). Résolution : la clause résolutoire doit préciser les engagements dont l'inexécution entraîne la résolution, ce qui est le cas (défaut de paiement à l'échéance). Conformément à l'article 1225, la résolution est subordonnée à une mise en demeure infructueuse qui mentionne expressément la clause ; le contrat est résolu à l'expiration du délai de huit jours si Dalmo ne paie pas. Belval peut en outre réclamer les pénalités de retard et des dommages-intérêts en réparation du préjudice subi (art. 1217, sanctions cumulables).",
+          "key_points": [
+            "Exception d'inexécution (art. 1219) : inexécution suffisamment grave, réponse proportionnée",
+            "Clause résolutoire (art. 1225) : mise en demeure infructueuse visant expressément la clause",
+            "Résolution acquise à l'expiration du délai de huit jours",
+            "Cumul possible avec pénalités et dommages-intérêts (art. 1217)"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas combine le régime des délais de paiement entre professionnels (L441-10 : plafond de 60 jours ou 45 jours fin de mois, pénalités exigibles sans rappel, indemnité de 40 €) et les sanctions de l'inexécution du droit commun des contrats (exception d'inexécution, clause résolutoire).",
+      "source_ref": "C. com. L441-10 et D441-5 ; C. civ. art. 1217, 1219 et 1225",
+      "estimated_seconds": 780,
+      "verified": true
+    }
+  ]
+}

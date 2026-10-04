@@ -1,0 +1,151 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-ethique-penal-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "droit-penal-affaires",
+      "difficulty": 1,
+      "tags": [
+        "abus de biens sociaux",
+        "formes sociales",
+        "abus de confiance"
+      ],
+      "statement": "Dans laquelle de ces sociétés le dirigeant qui utilise les fonds sociaux pour payer ses dépenses personnelles ne peut-il pas être poursuivi pour abus de biens sociaux ?",
+      "options": [
+        "Une SARL",
+        "Une SAS",
+        "Une SNC",
+        "Une SA"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Le délit d'abus de biens sociaux est prévu par le Code de commerce pour les SARL (L241-3), les SA (L242-6) et les SAS (L244-1), ainsi que pour les autres sociétés par actions. Il n'existe pas pour les sociétés de personnes comme la SNC (option 3) ni pour les sociétés civiles : le dirigeant peut alors être poursuivi pour abus de confiance (C. pén. art. 314-1).",
+      "source_ref": "C. com. L241-3, L242-6 et L244-1 ; C. pén. art. 314-1",
+      "estimated_seconds": 45,
+      "verified": true
+    },
+    {
+      "id": "ue1-ethique-penal-0002",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "droit-penal-affaires",
+      "difficulty": 2,
+      "tags": [
+        "blanchiment",
+        "amende",
+        "peines"
+      ],
+      "statement": "M. Hervé, gérant d'une société de négoce, est poursuivi pour avoir blanchi, en une seule opération, 2 400 000 € provenant d'une fraude fiscale commise par un tiers. Le blanchiment est simple (ni habituel, ni en bande organisée, ni facilité par l'exercice d'une activité professionnelle). Calculez le montant maximal de l'amende encourue par M. Hervé, en euros.",
+      "expected_value": 1200000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Le blanchiment simple est puni de 5 ans d'emprisonnement et de 375 000 € d'amende (C. pén. art. 324-1). L'article 324-3 permet d'élever l'amende jusqu'à la moitié de la valeur des biens ou des fonds sur lesquels ont porté les opérations de blanchiment : 2 400 000 / 2 = 1 200 000 € > 375 000 €. L'amende maximale est donc de 1 200 000 €. Erreur classique : retenir le plafond fixe de 375 000 € (ou celui de 750 000 € du blanchiment aggravé, écarté par l'énoncé).",
+      "source_ref": "C. pén. art. 324-1 et 324-3",
+      "estimated_seconds": 150,
+      "verified": true
+    },
+    {
+      "id": "ue1-ethique-penal-0003",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "droit-penal-affaires",
+      "difficulty": 1,
+      "tags": [
+        "responsabilité pénale des personnes morales",
+        "blanchiment"
+      ],
+      "statement": "Une société peut être déclarée pénalement responsable du délit de blanchiment commis pour son compte par son dirigeant.",
+      "answer": true,
+      "justification": "Les personnes morales sont responsables pénalement des infractions commises pour leur compte par leurs organes ou représentants (C. pén. art. 121-2).",
+      "explanation": "Depuis 2005, la responsabilité pénale des personnes morales n'est plus limitée aux infractions qui la prévoient expressément : elle s'applique à toutes les infractions commises pour leur compte par leurs organes ou représentants. Elle n'exclut pas celle des dirigeants personnes physiques pour les mêmes faits. L'amende encourue par la personne morale peut atteindre le quintuple de celle prévue pour les personnes physiques (art. 131-38).",
+      "source_ref": "C. pén. art. 121-2 et 131-38",
+      "estimated_seconds": 45,
+      "verified": true
+    },
+    {
+      "id": "ue1-ethique-penal-0004",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "droit-penal-affaires",
+      "difficulty": 3,
+      "tags": [
+        "abus de biens sociaux",
+        "faux",
+        "prescription",
+        "Tracfin",
+        "expert-comptable"
+      ],
+      "title": "Les travaux de la villa du président de Kalis SAS",
+      "context": "M. Jourdan est président et associé à 60 % de Kalis SAS, entreprise de maintenance industrielle dont les comptes sont tenus par un cabinet d'expertise comptable.\nEn N, Kalis a payé pour 180 000 € HT de travaux réalisés en réalité dans la villa personnelle de M. Jourdan. À sa demande, l'entrepreneur a libellé ses factures « Rénovation des locaux du dépôt de Kalis ». La TVA correspondante (36 000 €) a été déduite par Kalis.\nLes comptes de N, dans lesquels ces travaux figurent en charges d'entretien sans autre précision, ont été approuvés par l'assemblée des associés le 20 juin N+1.\nEn N+3, lors d'une mission de révision, le collaborateur du cabinet constate que l'adresse figurant sur les bons de livraison est celle du domicile du président.\nUn associé minoritaire de Kalis s'interroge sur les poursuites pénales envisageables et sur leur délai.",
+      "sub_questions": [
+        {
+          "id": "q1-qualification",
+          "kind": "mcq",
+          "prompt": "Quelle qualification pénale correspond au paiement des travaux par Kalis ?",
+          "points": 2,
+          "options": [
+            "Abus de confiance",
+            "Abus de biens sociaux",
+            "Banqueroute",
+            "Recel de faux"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "Le président de SAS qui fait, de mauvaise foi, des biens de la société un usage contraire à l'intérêt social à des fins personnelles commet un abus de biens sociaux (C. com. L242-6 3°, rendu applicable aux SAS par L244-1) : option 2. L'abus de confiance (option 1) est réservé aux formes sociales non visées par l'ABS. La banqueroute (option 3) suppose une procédure collective. Le recel (option 4) vise celui qui détient ou profite du produit d'une infraction commise par autrui."
+        },
+        {
+          "id": "q2-prescription",
+          "kind": "numeric",
+          "prompt": "On retient par hypothèse que les dépenses n'ont pas été dissimulées et la règle jurisprudentielle selon laquelle la prescription de l'ABS court alors à compter de la présentation des comptes annuels où elles figurent. Sans acte interruptif, indiquez l'année (N+x) au cours de laquelle l'action publique sera prescrite. Répondez par la valeur de x.",
+          "points": 2,
+          "expected_value": 7,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0
+          },
+          "decimals": 0,
+          "explanation": "Le délai de prescription des délits est de six ans (CPP art. 8). Les dépenses figurent dans les comptes de N présentés le 20 juin N+1 : la prescription est acquise le 20 juin N+7, sauf acte interruptif. En pratique, les factures au libellé mensonger pourraient être analysées comme une dissimulation, ce qui reporterait le point de départ au jour où l'infraction est apparue et a pu être constatée (ici N+3), dans la limite de douze ans après les faits (CPP art. 9-1) ; l'énoncé écarte cette analyse par hypothèse. Erreur classique : appliquer l'ancien délai de trois ans (N+4)."
+        },
+        {
+          "id": "q3-tracfin",
+          "kind": "true_false",
+          "prompt": "Si le cabinet soupçonne que les sommes en jeu proviennent d'une infraction punie d'une peine d'emprisonnement supérieure à un an, il doit adresser une déclaration de soupçon à Tracfin.",
+          "points": 1,
+          "answer": true,
+          "explanation": "Vrai. Les experts-comptables sont assujettis aux obligations de lutte contre le blanchiment et doivent déclarer à Tracfin les sommes ou opérations dont ils savent, soupçonnent ou ont de bonnes raisons de soupçonner qu'elles proviennent d'une infraction passible d'une peine privative de liberté supérieure à un an (CMF L561-2 et L561-15)."
+        },
+        {
+          "id": "q4-autres",
+          "kind": "open",
+          "prompt": "Quelles autres infractions peuvent être relevées à l'encontre de M. Jourdan et de l'entrepreneur ? Justifiez brièvement.",
+          "points": 4,
+          "model_answer": "Faux et usage de faux (C. pén. art. 441-1) : les factures mentionnant des travaux dans les locaux de Kalis altèrent frauduleusement la vérité dans un écrit de nature à causer un préjudice (à la société et au Trésor) ; l'entrepreneur qui les a établies est auteur du faux, M. Jourdan, qui les a demandées, en est complice par instigation et commet un usage de faux en les faisant enregistrer en comptabilité. Complicité d'ABS : en établissant sciemment des factures destinées à masquer le paiement par la société de dépenses personnelles, l'entrepreneur a aidé à la commission de l'abus de biens sociaux. Fraude fiscale : la déduction de la TVA (36 000 €) et la déduction en charges de dépenses étrangères à l'intérêt de l'entreprise exposent Kalis à des rappels et pénalités, voire à des poursuites pour fraude fiscale (CGI art. 1741) ; les sommes constituent pour M. Jourdan un avantage imposable (revenus distribués). En revanche, M. Jourdan ne peut pas être poursuivi pour recel de l'ABS dont il est lui-même l'auteur.",
+          "key_points": [
+            "Faux et usage de faux : factures au libellé mensonger (art. 441-1)",
+            "Complicité d'ABS de l'entrepreneur s'il a agi sciemment",
+            "Fraude fiscale : TVA indûment déduite et charges non déductibles",
+            "Avantage imposable entre les mains du président (revenus distribués) ; pas de recel par l'auteur de l'ABS lui-même"
+          ]
+        }
+      ],
+      "total_points": 9,
+      "explanation": "Le cas porte sur l'abus de biens sociaux dans une SAS, la prescription des délits (six ans, point de départ à la présentation des comptes), les infractions connexes (faux, complicité, fraude fiscale) et l'obligation de déclaration de soupçon de l'expert-comptable.",
+      "source_ref": "C. com. L242-6 et L244-1 ; C. pén. art. 441-1 ; CPP art. 8 et 9-1 ; CMF L561-15",
+      "estimated_seconds": 780,
+      "verified": true
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-ethique-gouv-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "gouvernance-responsabilite-dirigeants",
+      "difficulty": 3,
+      "tags": [
+        "responsabilité envers les tiers",
+        "faute séparable",
+        "gérant"
+      ],
+      "statement": "Un client d'une SARL de construction, victime de désordres, agit en responsabilité personnelle contre le gérant. Dans quelle hypothèse la responsabilité personnelle du gérant envers ce tiers peut-elle être retenue ?",
+      "options": [
+        "Le gérant a commis une erreur d'appréciation dans le choix d'un sous-traitant",
+        "Le gérant a sciemment décidé de ne pas souscrire l'assurance de responsabilité décennale obligatoire pour réduire les coûts",
+        "Le chantier a pris du retard en raison d'une mauvaise organisation des équipes",
+        "La société a manqué à son obligation contractuelle de livrer l'ouvrage à la date convenue"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "Envers les tiers, le dirigeant n'engage sa responsabilité personnelle que s'il commet une faute séparable de ses fonctions : faute intentionnelle d'une particulière gravité, incompatible avec l'exercice normal des fonctions sociales. La Cour de cassation l'a retenue à propos d'un gérant qui s'abstient sciemment de souscrire une assurance obligatoire, ce qui constitue en outre une infraction pénale (option 2). Une erreur d'appréciation (option 1) ou une mauvaise organisation (option 3) sont des fautes de gestion commises dans l'exercice des fonctions, qui n'engagent que la société envers les tiers. L'inexécution d'une obligation contractuelle de la société (option 4) engage la responsabilité de la société elle-même.",
+      "source_ref": "C. com. L223-22 ; Cass. com., 20 mai 2003 (faute séparable) ; Cass. com., 28 sept. 2010 (défaut d'assurance obligatoire)",
+      "estimated_seconds": 90,
+      "verified": true
+    },
+    {
+      "id": "ue1-ethique-gouv-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "gouvernance-responsabilite-dirigeants",
+      "difficulty": 2,
+      "tags": [
+        "action ut singuli",
+        "action sociale",
+        "dommages-intérêts"
+      ],
+      "statement": "Des actionnaires minoritaires d'une SA exercent l'action sociale ut singuli contre le directeur général, auquel ils reprochent une faute de gestion ayant fait perdre 800 000 € à la société. Le tribunal fait droit à leur demande. À qui les dommages-intérêts sont-ils alloués ?",
+      "options": [
+        "Aux actionnaires demandeurs, à proportion de leur participation",
+        "À l'ensemble des actionnaires, à proportion de leur participation",
+        "À la société",
+        "Pour moitié à la société et pour moitié aux actionnaires demandeurs"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "L'action ut singuli est l'action sociale exercée par un ou plusieurs associés à la place des représentants légaux : elle répare le préjudice subi par la société, à laquelle les dommages-intérêts sont alloués (C. com. L225-252) : option 3. Les options 1, 2 et 4 confondent avec l'action individuelle, qui suppose un préjudice personnel distinct de celui de la société (une simple dépréciation des titres consécutive au préjudice social n'en est pas un).",
+      "source_ref": "C. com. L225-252",
+      "estimated_seconds": 60,
+      "verified": true
+    },
+    {
+      "id": "ue1-ethique-gouv-0003",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "gouvernance-responsabilite-dirigeants",
+      "difficulty": 2,
+      "tags": [
+        "directeur général",
+        "révocation",
+        "juste motif"
+      ],
+      "statement": "Le directeur général d'une SA, non président du conseil d'administration, révoqué par le conseil sans juste motif, peut obtenir des dommages-intérêts.",
+      "answer": true,
+      "justification": "Le DG est révocable à tout moment par le conseil, mais une révocation décidée sans juste motif peut donner lieu à dommages-intérêts (C. com. L225-55).",
+      "explanation": "La révocabilité à tout moment du DG ne peut pas être supprimée, mais l'absence de juste motif ouvre droit à réparation, sauf lorsque le DG assume les fonctions de président du conseil d'administration (révocation ad nutum). Indépendamment du motif, la révocation intervenue dans des circonstances vexatoires ou sans respect du contradictoire peut aussi être sanctionnée.",
+      "source_ref": "C. com. L225-55",
+      "estimated_seconds": 45,
+      "verified": true
+    },
+    {
+      "id": "ue1-ethique-gouv-0004",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "gouvernance-responsabilite-dirigeants",
+      "difficulty": 3,
+      "tags": [
+        "responsabilité des administrateurs",
+        "solidarité",
+        "part contributive",
+        "quitus",
+        "prescription"
+      ],
+      "title": "SA Horizon Pierre : la responsabilité des administrateurs en question",
+      "context": "La SA Horizon Pierre, société de promotion immobilière à conseil d'administration, a acquis en N−1 un terrain de 2,5 M€ sans étude de sol ni autorisation d'urbanisme, sur décision du conseil prise à l'unanimité des trois administrateurs présents, Mme Aubry (présidente-directrice générale), M. Bel et M. Costa. Le terrain s'est révélé inconstructible : la société a subi un préjudice de 600 000 €.\nLors de l'assemblée de juin N, les actionnaires majoritaires ont voté une résolution donnant « quitus entier et définitif » aux administrateurs pour leur gestion. Les statuts prévoient que « toute action en responsabilité contre les administrateurs doit être préalablement autorisée par l'assemblée générale ».\nM. Dumas, actionnaire minoritaire (4 % du capital), engage en N une action ut singuli. Le tribunal condamne solidairement les trois administrateurs à verser 600 000 € et fixe leur part contributive à 50 % pour Mme Aubry, 30 % pour M. Bel et 20 % pour M. Costa. M. Costa, seul solvable à court terme, paie la totalité de la condamnation.\nPar ailleurs, une entreprise de terrassement, impayée, envisage d'agir directement contre Mme Aubry.",
+      "sub_questions": [
+        {
+          "id": "q1-clause",
+          "kind": "true_false",
+          "prompt": "La clause statutaire subordonnant l'action en responsabilité à l'autorisation préalable de l'assemblée rend l'action de M. Dumas irrecevable.",
+          "points": 1,
+          "answer": false,
+          "explanation": "Faux. Est réputée non écrite toute clause des statuts ayant pour effet de subordonner l'exercice de l'action sociale à l'avis préalable ou à l'autorisation de l'assemblée générale (C. com. L225-253, al. 1)."
+        },
+        {
+          "id": "q2-quitus",
+          "kind": "mcq",
+          "prompt": "Quel est l'effet du quitus voté par l'assemblée de juin N ?",
+          "points": 2,
+          "options": [
+            "Il éteint l'action sociale, mais pas l'action individuelle des actionnaires",
+            "Il éteint toute action en responsabilité pour les faits connus de l'assemblée",
+            "Il est sans effet sur l'action sociale en responsabilité pour faute commise dans l'accomplissement du mandat",
+            "Il ne fait obstacle qu'à l'action des actionnaires ayant voté la résolution"
+          ],
+          "answer": [
+            2
+          ],
+          "multiple": false,
+          "explanation": "Aucune décision de l'assemblée ne peut avoir pour effet d'éteindre une action en responsabilité contre les administrateurs pour faute commise dans l'accomplissement de leur mandat (C. com. L225-253, al. 2) : option 3. Les options 1, 2 et 4 prêtent au quitus un effet extinctif que la loi lui refuse."
+        },
+        {
+          "id": "q3-recours",
+          "kind": "numeric",
+          "prompt": "Calculez le montant total que M. Costa peut réclamer à ses coadministrateurs au titre de son recours contributif. Réponse en euros.",
+          "points": 3,
+          "expected_value": 480000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "La solidarité permet à la société de réclamer la totalité à M. Costa ; dans les rapports entre coobligés, chacun supporte sa part contributive fixée par le tribunal (C. com. L225-251, al. 2). M. Costa supporte définitivement 20 % × 600 000 = 120 000 €. Recours : 600 000 − 120 000 = 480 000 €, soit 300 000 € contre Mme Aubry (50 %) et 180 000 € contre M. Bel (30 %). Erreur classique : diviser par trois (400 000 €)."
+        },
+        {
+          "id": "q4-tiers",
+          "kind": "open",
+          "prompt": "L'entreprise de terrassement impayée peut-elle engager la responsabilité personnelle de Mme Aubry ? Précisez également le délai pour agir dans l'action sociale.",
+          "points": 4,
+          "model_answer": "Envers les tiers, le dirigeant n'engage sa responsabilité personnelle que s'il a commis une faute séparable de ses fonctions, c'est-à-dire une faute intentionnelle d'une particulière gravité, incompatible avec l'exercice normal des fonctions sociales. L'impayé d'une créance de la société et l'acquisition imprudente du terrain sont des fautes de gestion commises dans l'exercice des fonctions : sauf à démontrer, par exemple, que Mme Aubry a sciemment commandé des travaux en sachant que la société ne pourrait pas les payer, l'entreprise de terrassement doit agir contre la société (et, en cas de procédure collective, déclarer sa créance). L'action sociale, quant à elle, se prescrit par trois ans à compter du fait dommageable ou, s'il a été dissimulé, de sa révélation (C. com. L225-254) : l'acquisition de N−1 permet une action engagée en N.",
+          "key_points": [
+            "Responsabilité envers les tiers : faute séparable des fonctions exigée",
+            "Définition : faute intentionnelle, d'une particulière gravité, incompatible avec l'exercice normal des fonctions",
+            "Ici, faute de gestion : action contre la société",
+            "Prescription de l'action sociale : 3 ans à compter du fait dommageable ou de sa révélation (L225-254)"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas mobilise le régime de la responsabilité civile des administrateurs de SA : faute de gestion, solidarité et part contributive (L225-251), action ut singuli, nullité des clauses et inefficacité du quitus (L225-252 et L225-253), prescription triennale (L225-254) et exigence d'une faute séparable envers les tiers.",
+      "source_ref": "C. com. L225-251 à L225-254",
+      "estimated_seconds": 840,
+      "verified": true
+    }
+  ]
+}

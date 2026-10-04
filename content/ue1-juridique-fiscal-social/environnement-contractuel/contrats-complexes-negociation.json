@@ -1,0 +1,130 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-contrat-neg-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "environnement-contractuel",
+      "notion": "contrats-complexes-negociation",
+      "difficulty": 1,
+      "tags": [
+        "offre",
+        "rétractation",
+        "formation du contrat"
+      ],
+      "statement": "Le 2 mars, la SAS Verlaine adresse à un fournisseur une offre d'achat de 2 000 palettes, valable jusqu'au 31 mars. Elle la rétracte le 10 mars, alors que l'offre est parvenue au fournisseur. Celui-ci envoie son acceptation le 15 mars. Quelle est la conséquence juridique ?",
+      "options": [
+        "Le contrat est formé le 15 mars, la rétractation étant privée d'effet pendant le délai fixé",
+        "Le contrat n'est pas formé, mais Verlaine engage sa responsabilité extracontractuelle envers le fournisseur",
+        "Le contrat n'est pas formé et Verlaine n'encourt aucune responsabilité, l'offre étant librement rétractable",
+        "Le contrat est formé et Verlaine doit indemniser le fournisseur de la perte des bénéfices attendus"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "Une fois parvenue à son destinataire, l'offre ne peut pas être rétractée avant l'expiration du délai fixé. La rétractation fautive empêche toutefois la conclusion du contrat et engage la responsabilité extracontractuelle de l'offrant, sans l'obliger à compenser la perte des avantages attendus du contrat (C. civ. art. 1115 et 1116) : option 2. L'option 1 correspond à la solution de la promesse unilatérale (art. 1124), pas à celle de l'offre. L'option 3 vaut seulement pour une offre qui n'est pas encore parvenue au destinataire. L'option 4 est doublement fausse : pas de contrat formé, et la perte des avantages attendus n'est pas réparable.",
+      "source_ref": "C. civ. art. 1115 et 1116",
+      "estimated_seconds": 60,
+      "verified": true
+    },
+    {
+      "id": "ue1-contrat-neg-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "environnement-contractuel",
+      "notion": "contrats-complexes-negociation",
+      "difficulty": 2,
+      "tags": [
+        "pourparlers",
+        "rupture fautive",
+        "préjudice réparable"
+      ],
+      "statement": "Après dix-huit mois de négociations pour la reprise d'une ligne de production, au cours desquels la SA Corail a laissé croire à la SARL Ibis que la signature était acquise, Corail rompt sans motif la veille de la signature. Ibis a engagé 45 000 € de frais d'audit et de conseil, et estime à 300 000 € la marge qu'elle aurait dégagée sur trois ans grâce au contrat. Quel préjudice Ibis peut-elle faire réparer ?",
+      "options": [
+        "La marge de 300 000 € dont elle est privée",
+        "Une fraction de la marge de 300 000 €, au titre de la perte de chance de conclure le contrat",
+        "Aucun préjudice, la rupture des pourparlers étant libre",
+        "Les 45 000 € de frais d'audit et de conseil exposés pour la négociation"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "La rupture des pourparlers est libre, mais elle devient fautive lorsqu'elle est brutale et intervient après qu'un partenaire a laissé croire à la conclusion : la responsabilité extracontractuelle de Corail est engagée. L'article 1112, al. 2, exclut la réparation de la perte des avantages attendus du contrat non conclu et de la perte de chance de les obtenir : seuls les frais exposés sont indemnisables (option 4). Les options 1 et 2 correspondent précisément aux préjudices exclus. L'option 3 ignore l'exigence de bonne foi qui encadre la liberté de rompre.",
+      "source_ref": "C. civ. art. 1112",
+      "estimated_seconds": 75,
+      "verified": true
+    },
+    {
+      "id": "ue1-contrat-neg-0003",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "environnement-contractuel",
+      "notion": "contrats-complexes-negociation",
+      "difficulty": 1,
+      "tags": [
+        "devoir d'information",
+        "valeur de la prestation"
+      ],
+      "statement": "Le devoir précontractuel d'information impose à l'acheteur d'un fonds de commerce de révéler au vendeur qu'il estime le fonds nettement plus cher que le prix proposé.",
+      "answer": false,
+      "justification": "Le devoir d'information de l'article 1112-1 ne porte pas sur l'estimation de la valeur de la prestation.",
+      "explanation": "L'article 1112-1 du Code civil impose de communiquer une information dont l'importance est déterminante pour le consentement de l'autre partie, si celle-ci l'ignore légitimement ou fait confiance à son cocontractant. Son alinéa 2 exclut expressément l'estimation de la valeur de la prestation : chacun doit apprécier lui-même la valeur de ce qu'il achète ou vend. La réticence dolosive ne peut pas non plus résulter du silence sur cette estimation (art. 1137, al. 3).",
+      "source_ref": "C. civ. art. 1112-1, al. 2, et 1137, al. 3",
+      "estimated_seconds": 45,
+      "verified": true
+    },
+    {
+      "id": "ue1-contrat-neg-0004",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "environnement-contractuel",
+      "notion": "contrats-complexes-negociation",
+      "difficulty": 1,
+      "tags": [
+        "faculté de dédit",
+        "écriture",
+        "charges"
+      ],
+      "statement": "La SAS Mirabelle avait conclu un contrat-cadre d'approvisionnement en marchandises comportant une faculté de dédit : chaque partie peut renoncer au contrat avant la première livraison moyennant le versement d'une somme de 8 000 €. Le 12 mai N, Mirabelle exerce cette faculté et verse les 8 000 € par virement bancaire. Le dédit n'est pas soumis à TVA. Comptabilisez le versement chez Mirabelle en utilisant le compte 6711 « Pénalités sur marchés et dédits payés sur achats et ventes ».",
+      "date": "12/05/N",
+      "entries": [
+        {
+          "account": "6711",
+          "label": "Dédit versé au fournisseur",
+          "debit": 8000,
+          "credit": 0
+        },
+        {
+          "account": "512",
+          "label": "Banque",
+          "debit": 0,
+          "credit": 8000
+        }
+      ],
+      "explanation": "Le dédit est le prix de la faculté de se retirer du contrat : il n'est pas la sanction d'une inexécution, le juge ne peut donc pas le modérer comme une clause pénale. Comptablement, c'est une charge, enregistrée au compte imposé par l'énoncé (6711), en contrepartie de la banque. Ce compte relève de la nomenclature antérieure au règlement ANC 2022-06 (exercices ouverts depuis le 1er janvier 2025), qui a remanié les comptes 67 et 77 : c'est pourquoi l'énoncé l'impose. Aucune TVA n'est à constater, l'énoncé précisant que le dédit n'y est pas soumis.",
+      "source_ref": "C. civ. art. 1231-5 (clause pénale, dont la jurisprudence distingue la faculté de dédit) ; compte imposé par l'énoncé (PCG, nomenclature antérieure au règl. ANC 2022-06)",
+      "estimated_seconds": 120,
+      "verified": true
+    },
+    {
+      "id": "ue1-contrat-neg-0005",
+      "type": "flashcard",
+      "ue": "UE1",
+      "theme": "environnement-contractuel",
+      "notion": "contrats-complexes-negociation",
+      "difficulty": 1,
+      "tags": [
+        "contrat électronique",
+        "double clic"
+      ],
+      "front": "À quelles conditions un contrat conclu en ligne est-il valablement formé (règle du « double clic ») ?",
+      "back": "Le destinataire de l'offre doit avoir pu vérifier le détail de sa commande et son prix total, et corriger d'éventuelles erreurs, avant de confirmer sa commande pour exprimer son acceptation définitive.\nL'auteur de l'offre accuse réception de la commande sans délai injustifié, par voie électronique.\nEntre professionnels, il peut être dérogé à ces règles par convention.",
+      "explanation": "C. civ. art. 1127-1 à 1127-3. La commande, la confirmation de l'acceptation et l'accusé de réception sont considérés comme reçus lorsque leurs destinataires peuvent y avoir accès.",
+      "source_ref": "C. civ. art. 1127-2 et 1127-3",
+      "estimated_seconds": 45,
+      "verified": true
+    }
+  ]
+}
