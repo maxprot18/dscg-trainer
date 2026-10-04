@@ -59,3 +59,24 @@ test('lien profond : page d’UE et recherche', async ({ page, errors }) => {
   await expect(page.getByText(/carry-back/i).first()).toBeVisible()
   void errors
 })
+
+test('oral d’UE 6 : tirage, préparation, entretien, auto-évaluation enregistrée', async ({ page, errors }) => {
+  await page.goto('oral')
+  await expect(page.getByText(/\d+ sujets disponibles/)).toBeVisible()
+  await page.getByRole('button', { name: /Tirer un sujet au hasard/ }).click()
+  await expect(page.getByText('Préparation', { exact: false }).first()).toBeVisible()
+  await page.getByLabel(/Mes notes/).fill('Intro, two parts, conclusion')
+  await page.getByRole('button', { name: /Commencer l’exposé/ }).click()
+  await expect(page.getByText('Intro, two parts, conclusion')).toBeVisible()
+  await page.getByRole('button', { name: /Passer à l’entretien/ }).click()
+  const next = page.getByRole('button', { name: /Question suivante/ })
+  while (await next.isVisible()) await next.click()
+  await page.getByRole('button', { name: /Terminer et m’évaluer/ }).click()
+  await expect(page.getByRole('heading', { name: 'Bilan de l’oral' })).toBeVisible()
+  for (const group of await page.locator('fieldset').all()) await group.getByText('4', { exact: true }).click()
+  await expect(page.getByText('Note : 20 / 20')).toBeVisible()
+  await page.getByRole('button', { name: 'Enregistrer ma note' }).click()
+  await page.getByRole('button', { name: 'Nouveau sujet' }).click()
+  await expect(page.getByText('Mes oraux blancs')).toBeVisible()
+  void errors
+})
