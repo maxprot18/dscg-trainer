@@ -1,0 +1,147 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-ingfi-offre-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "offres-publiques",
+      "difficulty": 1,
+      "tags": [
+        "OPE",
+        "OPA",
+        "offres publiques"
+      ],
+      "source_ref": "RG AMF, livre II, titre III (offres publiques d'acquisition : OPA, OPE, offres mixtes)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Une société cotée propose publiquement aux actionnaires d'une autre société cotée de leur remettre 3 de ses propres actions nouvelles pour 2 actions apportées. De quel type d'offre s'agit-il ?",
+      "options": [
+        "Une offre publique d'achat (OPA)",
+        "Une offre publique d'échange (OPE)",
+        "Une offre publique de retrait (OPR)",
+        "Une offre publique de rachat d'actions (OPRA)"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "La rémunération en titres de l'initiateur caractérise l'OPE. L'OPA (option 1) est rémunérée en numéraire. L'OPR (option 3) permet à un actionnaire largement majoritaire d'offrir une sortie aux minoritaires avant un retrait de la cote. L'OPRA (option 4) est l'offre d'une société sur ses propres actions."
+    },
+    {
+      "id": "ue2-ingfi-offre-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "offres-publiques",
+      "difficulty": 2,
+      "tags": [
+        "offre obligatoire",
+        "seuil de 30 %"
+      ],
+      "source_ref": "RG AMF, art. 234-2 (dépôt obligatoire d'une offre en cas de franchissement du seuil de 30 % du capital ou des droits de vote)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Sur un marché réglementé français, à partir de quel franchissement de seuil, en capital ou en droits de vote, une personne est-elle tenue de déposer une offre publique visant la totalité du capital de la société ?",
+      "options": [
+        "Un tiers",
+        "50 %",
+        "90 %",
+        "30 %"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Le dépôt d'une offre est obligatoire lorsqu'une personne, seule ou de concert, vient à détenir plus de 30 % du capital ou des droits de vote. L'option 1 correspond à l'ancien seuil, abaissé à 30 % en 2010. L'option 2 est le seuil de contrôle majoritaire, sans portée particulière en matière d'offre obligatoire. L'option 3 correspond au seuil permettant le retrait obligatoire (minoritaires ne détenant pas plus de 10 %)."
+    },
+    {
+      "id": "ue2-ingfi-offre-0003",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "offres-publiques",
+      "difficulty": 3,
+      "tags": [
+        "retrait obligatoire",
+        "droits de vote double",
+        "loi PACTE"
+      ],
+      "source_ref": "C. mon. fin. art. L. 433-4 ; RG AMF, livre II, titre III, chapitre VII (retrait obligatoire : minoritaires ne représentant pas plus de 10 % du capital et des droits de vote)",
+      "verified": true,
+      "estimated_seconds": 90,
+      "statement": "À l'issue d'une OPA, l'initiateur détient 91 % du capital d'une société cotée sur un marché réglementé, mais seulement 89 % des droits de vote, car plusieurs actionnaires minoritaires bénéficient de droits de vote double. Peut-il mettre en œuvre immédiatement un retrait obligatoire ?",
+      "options": [
+        "Oui, car il détient plus de 90 % du capital",
+        "Non, car il faudrait détenir au moins 95 % du capital et des droits de vote",
+        "Non, car les minoritaires détiennent plus de 10 % des droits de vote",
+        "Oui, dès lors qu'un expert indépendant atteste l'équité du prix"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Le retrait obligatoire suppose que les actionnaires minoritaires ne représentent pas plus de 10 % du capital et des droits de vote : les deux conditions sont cumulatives. Ici, ils détiennent 9 % du capital mais 11 % des droits de vote : le retrait est impossible pour l'instant. L'option 1 n'examine qu'une condition. L'option 2 conclut aussi par la négative, mais sur une règle périmée : le seuil de 95 % a été abaissé à 90 % par la loi PACTE de 2019. L'option 4 confond une condition nécessaire (l'attestation d'équité) avec une condition suffisante."
+    },
+    {
+      "id": "ue2-ingfi-offre-0004",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "offres-publiques",
+      "difficulty": 3,
+      "tags": [
+        "prix de l'offre",
+        "offre obligatoire",
+        "offre volontaire"
+      ],
+      "source_ref": "RG AMF, livre II, titre III : offre obligatoire, prix au moins égal au prix le plus élevé payé par l'initiateur sur les 12 mois précédents (art. 234-6) ; offre volontaire, prix fixé par l'initiateur sous contrôle de conformité de l'AMF",
+      "verified": true,
+      "estimated_seconds": 75,
+      "statement": "Affirmation : le prix d'une offre publique d'achat, qu'elle soit volontaire ou obligatoire, doit au minimum être égal au plus haut cours de bourse de la société visée sur les douze derniers mois.",
+      "answer": false,
+      "justification": "Faux. La règle des douze mois ne concerne que l'offre obligatoire et porte sur le prix le plus élevé payé par l'initiateur pour acquérir des titres, non sur le plus haut cours de bourse. Le prix d'une offre volontaire est fixé librement, sous le contrôle de conformité de l'AMF.",
+      "explanation": "En cas de dépôt obligatoire (franchissement du seuil de 30 %), le prix doit être au moins égal au prix le plus élevé payé par l'initiateur, seul ou de concert, sur les douze mois précédant le fait générateur ; l'AMF peut demander une modification du prix dans certains cas. Pour une offre volontaire, l'initiateur fixe le prix, généralement avec une prime sur le cours, et l'AMF en apprécie la conformité au regard de l'information fournie (critères d'évaluation présentés dans la note d'information)."
+    },
+    {
+      "id": "ue2-ingfi-offre-0005",
+      "type": "journal_entry",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "offres-publiques",
+      "difficulty": 2,
+      "tags": [
+        "OPRA",
+        "actions propres",
+        "réduction de capital",
+        "écriture"
+      ],
+      "source_ref": "PCG : comptes 277 (Actions propres ou parts propres, sous-compte 2772 pour les actions en voie d'annulation), 101 (Capital), 1041 (Primes d'émission) ; C. com. art. L. 225-207 (rachat en vue d'une réduction de capital non motivée par des pertes) et L. 22-10-62 (rachat d'actions par les sociétés cotées)",
+      "verified": true,
+      "estimated_seconds": 180,
+      "statement": "À l'issue d'une offre publique de rachat d'actions (OPRA) réalisée en vue d'une réduction de capital, une société a racheté 20 000 de ses propres actions, de nominal 5 €, au prix de 32 € chacune. Convention : les titres ont été inscrits, lors du rachat, au compte 277 « Actions propres » (sous-compte 2772 « en voie d'annulation »). Le conseil d'administration constate l'annulation des actions ; l'écart entre le prix de rachat et le nominal est imputé sur la prime d'émission (compte 1041), suffisante. Passez l'écriture d'annulation (utilisez le compte 101 pour le capital).",
+      "date": "Date d'annulation",
+      "entries": [
+        {
+          "account": "101",
+          "label": "Capital (20 000 × 5 €)",
+          "debit": 100000,
+          "credit": 0
+        },
+        {
+          "account": "1041",
+          "label": "Primes d'émission (20 000 × 27 €)",
+          "debit": 540000,
+          "credit": 0
+        },
+        {
+          "account": "277",
+          "label": "Actions propres en voie d'annulation",
+          "debit": 0,
+          "credit": 640000
+        }
+      ],
+      "explanation": "Coût des actions rachetées : 20 000 × 32 = 640 000 €, inscrit au compte 277 (sous-compte 2772) car elles sont destinées à être annulées ; des actions destinées aux salariés ou à la régularisation des cours iraient au compte 502. L'annulation réduit le capital du nominal (20 000 × 5 = 100 000 €) et l'écart de 540 000 € est imputé sur la prime d'émission, selon la convention de l'énoncé (il pourrait l'être sur des réserves disponibles). Le rachat suivi d'annulation est une alternative au versement d'un dividende : il restitue de la trésorerie aux actionnaires qui apportent leurs titres et augmente en général le BPA des autres (moins d'actions pour se partager le résultat, au prix des produits financiers perdus sur la trésorerie versée)."
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-ingfi-lbo-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "lbo-montages",
+      "difficulty": 1,
+      "tags": [
+        "capital-investissement",
+        "private equity",
+        "capital-transmission"
+      ],
+      "source_ref": "Segments du capital-investissement : capital-risque, capital-développement, capital-transmission (LBO), capital-retournement",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Un fonds d'investissement finance, aux côtés de l'équipe dirigeante, le rachat d'une PME rentable et mature par une holding de reprise largement endettée. Dans quel segment du capital-investissement intervient-il ?",
+      "options": [
+        "Le capital-risque",
+        "Le capital-développement",
+        "Le capital-retournement",
+        "Le capital-transmission"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Le rachat d'une entreprise mature par une holding endettée, avec les dirigeants (MBO) ou une nouvelle équipe (MBI), relève du capital-transmission, dont le LBO est l'outil principal. Le capital-risque (option 1) finance des entreprises en création ou très jeunes, sans dette d'acquisition. Le capital-développement (option 2) apporte des fonds propres à une entreprise existante pour financer sa croissance, sans changement de contrôle. Le capital-retournement (option 3) concerne les entreprises en difficulté."
+    },
+    {
+      "id": "ue2-ingfi-lbo-0002",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "lbo-montages",
+      "difficulty": 2,
+      "tags": [
+        "intégration fiscale",
+        "levier fiscal",
+        "LBO"
+      ],
+      "source_ref": "CGI art. 223 A et suivants (intégration fiscale, détention d'au moins 95 %)",
+      "verified": true,
+      "estimated_seconds": 90,
+      "statement": "Une holding de reprise détient 100 % d'une cible et forme avec elle un groupe fiscalement intégré. La holding n'a pas d'autre produit imposable que ceux de la cible et supporte 1,2 M€ d'intérêts sur sa dette d'acquisition. La cible dégage un résultat fiscal de 5 M€. Taux d'IS : 25 %. On suppose les intérêts entièrement déductibles (pas de limitation des charges financières). Quelle économie d'impôt annuelle l'intégration fiscale procure-t-elle au groupe, par rapport à une imposition séparée ?",
+      "options": [
+        "1,25 M€",
+        "0 €, car la holding n'a pas de bénéfice",
+        "0,30 M€",
+        "0,95 M€"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Sans intégration, la cible paie 5 × 25 % = 1,25 M€ et le déficit de la holding (1,2 M€) reste reportable sans imputation possible faute de bénéfice propre. Avec l'intégration, le résultat d'ensemble est de 5 − 1,2 = 3,8 M€ et l'IS du groupe de 0,95 M€ : l'économie est 1,2 × 25 % = 0,30 M€. C'est le levier fiscal du LBO. L'option 1 est l'IS de la cible seule ; l'option 2 décrit justement la situation sans intégration ; l'option 4 est l'IS du groupe intégré, pas l'économie."
+    },
+    {
+      "id": "ue2-ingfi-lbo-0003",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "lbo-montages",
+      "difficulty": 2,
+      "tags": [
+        "régime mère-fille",
+        "remontée de dividendes",
+        "quote-part de frais et charges"
+      ],
+      "source_ref": "CGI art. 145 et 216 (régime mère-fille : quote-part de frais et charges de 5 %, 1 % au sein d'un groupe intégré)",
+      "verified": true,
+      "estimated_seconds": 90,
+      "statement": "Une holding de reprise détient 80 % d'une cible (l'intégration fiscale est donc impossible) et bénéficie du régime mère-fille. Elle reçoit 4 000 000 € de dividendes de la cible. Taux d'IS : 25 %. Quel impôt la holding supporte-t-elle au titre de ces dividendes ?",
+      "options": [
+        "50 000 €",
+        "1 000 000 €",
+        "0 €",
+        "10 000 €"
+      ],
+      "answer": [
+        0
+      ],
+      "multiple": false,
+      "explanation": "Le régime mère-fille (participation d'au moins 5 %) exonère les dividendes, sauf une quote-part de frais et charges de 5 % réintégrée au résultat imposable : 4 000 000 × 5 % × 25 % = 50 000 €. L'option 2 applique l'IS à la totalité des dividendes, comme sans régime mère-fille. L'option 3 oublie la quote-part. L'option 4 retient une quote-part de 1 %, réservée aux dividendes reçus de sociétés membres du même groupe intégré, ce qui suppose une détention d'au moins 95 %."
+    },
+    {
+      "id": "ue2-ingfi-lbo-0004",
+      "type": "true_false",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "lbo-montages",
+      "difficulty": 2,
+      "tags": [
+        "levier juridique",
+        "levier fiscal",
+        "LBO"
+      ],
+      "source_ref": "Mécanismes du LBO : leviers financier, juridique et fiscal ; CGI art. 223 A (intégration fiscale)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Affirmation : dans un LBO, l'effet de levier juridique désigne l'économie d'impôt obtenue en imputant les frais financiers de la holding sur les bénéfices de la cible.",
+      "answer": false,
+      "justification": "Faux. Cette économie d'impôt est l'effet de levier fiscal (intégration fiscale). Le levier juridique consiste à contrôler la cible avec un apport en fonds propres limité, grâce à la majorité des droits de vote dans la holding.",
+      "explanation": "Le levier juridique repose sur le contrôle : l'investisseur majoritaire dans la holding contrôle la cible, qu'il détient indirectement avec des capitaux propres réduits, éventuellement en multipliant les holdings en cascade ou en émettant des titres sans droit de vote. Le levier financier tient à l'écart entre la rentabilité de l'investissement et le coût de la dette ; le levier fiscal, à l'imputation des intérêts de la holding sur les bénéfices de la cible grâce à l'intégration fiscale (détention d'au moins 95 %)."
+    },
+    {
+      "id": "ue2-ingfi-lbo-0005",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "lbo-montages",
+      "difficulty": 3,
+      "tags": [
+        "TRI",
+        "multiple",
+        "LBO",
+        "sortie"
+      ],
+      "source_ref": "TRI d'un investissement en fonds propres : (valeur de sortie / mise initiale)^(1/n) − 1 ; valeur des fonds propres = valeur d'entreprise − dette nette",
+      "verified": true,
+      "estimated_seconds": 240,
+      "statement": "Un fonds de LBO apporte 30 M€ de fonds propres à une holding de reprise, dont il détient 85 % du capital (les dirigeants détenant 15 %). Aucun dividende n'est versé aux actionnaires de la holding pendant la durée de l'investissement. Cinq ans plus tard, la cible est revendue sur la base d'une valeur d'entreprise de 150 M€ ; la dette nette consolidée de la holding et de la cible s'élève alors à 40 M€. Calculez le taux de rendement interne (TRI) annuel du fonds, en %, arrondi à une décimale.",
+      "expected_value": 25.5,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "decimals": 1,
+      "explanation": "Valeur des fonds propres à la sortie : 150 − 40 = 110 M€ ; part du fonds : 85 % × 110 = 93,5 M€. Multiple : 93,5 / 30 = 3,12. TRI = 3,1167^(1/5) − 1 ≈ 25,5 %. Erreurs classiques : oublier la quote-part de 85 % (TRI de 29,7 %) ou diviser le gain par la durée sans capitalisation ((3,12 − 1) / 5 = 42,3 %)."
+    },
+    {
+      "id": "ue2-ingfi-lbo-0006",
+      "type": "case_study",
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "lbo-montages",
+      "difficulty": 3,
+      "tags": [
+        "LBO",
+        "capacité de remboursement",
+        "intégration fiscale",
+        "dette d'acquisition"
+      ],
+      "source_ref": "CGI art. 223 A et suivants (intégration fiscale) ; C. com. art. L. 225-216 (interdiction de l'assistance financière) ; analyse de la capacité de remboursement d'une dette d'acquisition",
+      "verified": true,
+      "estimated_seconds": 840,
+      "title": "Holding Arcane : la dette d'acquisition est-elle soutenable ?",
+      "context": "La société Arcane, holding de reprise sans activité propre, acquiert le 1er janvier N 100 % du capital de la société Brisa (fabrication d'emballages) pour 60 M€. Le financement comprend :\n- 24 M€ de capitaux propres apportés par un fonds et par les dirigeants ;\n- 36 M€ de dette senior au taux de 5 %, remboursable par sixièmes égaux à la fin de chaque année (6 M€ par an), intérêts payés en fin d'année.\n\nBrisa dégage un résultat net (après IS à 25 %) stable de 7 M€ par an, qu'elle distribue intégralement à Arcane en fin d'année. Arcane et Brisa forment un groupe fiscalement intégré dès N, avec une convention d'intégration neutre : Brisa verse à Arcane l'impôt qu'elle aurait payé seule, et Arcane paie l'IS du groupe au Trésor.\n\nHypothèses : Arcane n'a pas d'autres charges ; on néglige la quote-part de frais et charges sur dividendes et les règles de limitation de déductibilité des charges financières ; les flux sont annuels.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "Calculez l'économie d'impôt procurée par l'intégration fiscale au titre de l'année N, en millions d'euros arrondis au centième.",
+          "points": 3,
+          "expected_value": 0.45,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.005
+          },
+          "unit": "M€",
+          "decimals": 2,
+          "explanation": "Intérêts N : 36 × 5 % = 1,8 M€. Résultat fiscal de Brisa : 7 / 0,75 = 9,33 M€ ; IS seule : 2,33 M€. IS du groupe : (9,33 − 1,8) × 25 % = 1,88 M€. Économie : 1,8 × 25 % = 0,45 M€, conservée par Arcane grâce à la convention neutre."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "prompt": "Calculez la trésorerie dont dispose Arcane en fin d'année N pour rembourser le capital de la dette, après paiement des intérêts, en millions d'euros arrondis au centième.",
+          "points": 3,
+          "expected_value": 5.65,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.005
+          },
+          "unit": "M€",
+          "decimals": 2,
+          "explanation": "Dividendes reçus 7 + économie d'IS 0,45 − intérêts 1,8 = 5,65 M€."
+        },
+        {
+          "id": "q3",
+          "kind": "true_false",
+          "prompt": "Vrai ou faux : Arcane peut faire face à l'échéance de remboursement du capital de l'année N sans ressource supplémentaire.",
+          "points": 2,
+          "answer": false,
+          "explanation": "Faux : 5,65 M€ disponibles pour 6 M€ à rembourser, soit un besoin de 0,35 M€. Les années suivantes, les intérêts baissent (1,5 M€ en N+1) et l'écart se réduit, mais l'échéance de N n'est pas couverte."
+        },
+        {
+          "id": "q4",
+          "kind": "numeric",
+          "prompt": "Quel dividende minimal Brisa devrait-elle verser en N pour qu'Arcane honore exactement le service de la dette (intérêts et remboursement), compte tenu de l'économie d'impôt d'intégration ? Réponse en millions d'euros arrondis au centième.",
+          "points": 2,
+          "expected_value": 7.35,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.005
+          },
+          "unit": "M€",
+          "decimals": 2,
+          "explanation": "Service de la dette : 6 + 1,8 = 7,8 M€ ; l'économie d'IS (0,45 M€) en couvre une partie : dividende minimal = 7,8 − 0,45 = 7,35 M€, supérieur au résultat distribuable de 7 M€."
+        },
+        {
+          "id": "q5",
+          "kind": "open",
+          "prompt": "Quelles solutions de structuration ou de gestion proposeriez-vous pour sécuriser le montage, et quelle limite juridique faut-il respecter ?",
+          "points": 4,
+          "model_answer": "Le montage est trop tendu en N : il faut adapter le profil de la dette aux capacités de distribution de Brisa, par exemple une dette senior partiellement remboursable in fine ou avec un différé d'amortissement, une tranche mezzanine ou des obligations convertibles subordonnées à intérêts capitalisés, ou un apport en fonds propres plus élevé. Côté cible, on peut dégager de la trésorerie en réduisant le BFR ou en maîtrisant les investissements, mais le dividende reste limité au bénéfice distribuable. Des covenants (ratio dette nette / EBITDA, couverture du service de la dette) encadreront le risque. Limite juridique : Brisa, si elle est une SA, ne peut pas avancer de fonds, consentir de prêts ni donner de sûretés en vue de l'acquisition de ses propres actions (interdiction de l'assistance financière, C. com. art. L. 225-216) ; la dette doit être servie par les dividendes et l'intégration fiscale.",
+          "key_points": [
+            "Adapter le profil de remboursement (in fine, différé, mezzanine, intérêts capitalisés) ou augmenter les fonds propres",
+            "Optimiser la trésorerie de la cible (BFR, investissements) dans la limite du bénéfice distribuable",
+            "Covenants et suivi du ratio de couverture du service de la dette",
+            "Interdiction de l'assistance financière : la cible ne peut pas financer ni garantir le rachat de ses titres"
+          ]
+        }
+      ],
+      "total_points": 14,
+      "explanation": "Capacité de remboursement en N : 7 + 0,45 − 1,8 = 5,65 M€ pour une échéance de 6 M€ ; il faudrait 7,35 M€ de dividendes. Le cas montre que le levier fiscal ne suffit pas à compenser une dette dont le profil d'amortissement dépasse les capacités de distribution de la cible."
+    }
+  ]
+}
