@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
@@ -311,6 +311,20 @@ export function TrainPage() {
               : cardsAvailable === 0
                 ? 'Aucune carte pour cette sélection'
                 : `Réviser les cartes (${Math.min(cardsAvailable, settings.cardsSessionSize)})`}
+          </Button>
+        </CardContent>
+      </Card>
+      <Card>
+        <CardHeader>
+          <CardTitle>Oral d’anglais (UE 6)</CardTitle>
+          <CardDescription>
+            Sujet tiré au sort, préparation chronométrée, exposé et entretien avec les questions du jury, enregistrement de
+            votre voix et auto-évaluation.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Button asChild size="lg" variant="outline" className="w-full">
+            <Link to="/oral">S’entraîner à l’oral</Link>
           </Button>
         </CardContent>
       </Card>
