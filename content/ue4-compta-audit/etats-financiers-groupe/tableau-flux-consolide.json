@@ -1,0 +1,182 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-efg-flux-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "etats-financiers-groupe",
+      "notion": "tableau-flux-consolide",
+      "difficulty": 1,
+      "tags": [
+        "IFRS",
+        "tableau des flux",
+        "prise de contrôle"
+      ],
+      "statement": "Le 01/09/N, le groupe Corvo (IFRS) acquiert 100 % du capital de la société Bastia pour 5 000 k€, payés comptant. À cette date, la trésorerie de Bastia s'élève à 600 k€. Comment cette acquisition apparaît-elle dans le tableau des flux de trésorerie consolidé de N ?",
+      "options": [
+        "Décaissement de 5 000 k€ en flux d'investissement",
+        "Décaissement net de 4 400 k€ en flux de financement",
+        "Décaissement net de 4 400 k€ en flux d'investissement",
+        "Décaissement de 5 000 k€ en flux d'investissement et encaissement de 600 k€ en flux opérationnels"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Les flux liés à l'obtention du contrôle d'une filiale sont présentés séparément en activités d'investissement (IAS 7 §39), pour le prix payé en trésorerie diminué de la trésorerie et des équivalents de trésorerie de la filiale acquise (§42) : 5 000 − 600 = 4 400 k€ (option 3). L'option 1 ignore la trésorerie acquise, qui entre dans la trésorerie du groupe à la même date. L'option 2 classe à tort l'opération en financement : seuls les achats de titres sans changement de contrôle y figurent (§42A). L'option 4 présente la trésorerie acquise comme un flux opérationnel, ce qu'elle n'est pas : elle vient en déduction du prix dans la même ligne.",
+      "source_ref": "IAS 7 §39 et §42 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-efg-flux-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "etats-financiers-groupe",
+      "notion": "tableau-flux-consolide",
+      "difficulty": 2,
+      "tags": [
+        "tableau des flux",
+        "méthode indirecte",
+        "mise en équivalence"
+      ],
+      "statement": "Le groupe Sorgue (IFRS) présente ses flux opérationnels selon la méthode indirecte, à partir du résultat net de l'ensemble consolidé ; il classe les dividendes reçus des sociétés mises en équivalence en flux opérationnels. En N, la quote-part de résultat des sociétés mises en équivalence s'élève à 120 k€ et ces sociétés ont versé au groupe 40 k€ de dividendes. Quel ajustement net ces éléments entraînent-ils sur les flux opérationnels, à partir du résultat net ?",
+      "options": [
+        "−120 k€",
+        "+40 k€",
+        "0 k€",
+        "−80 k€"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "La quote-part de résultat des sociétés mises en équivalence est un produit calculé, sans encaissement : elle est retranchée du résultat (−120 k€). Les dividendes reçus de ces sociétés sont, eux, un flux réel entre le groupe et l'entreprise associée (IAS 7 §37-38) ; classés ici en flux opérationnels, ils sont ajoutés (+40 k€). Ajustement net : −80 k€ (option 4). L'option 1 oublie les dividendes encaissés, l'option 2 oublie d'éliminer la quote-part de résultat, et l'option 3 suppose à tort que la quote-part de résultat correspond à un flux de trésorerie.",
+      "source_ref": "IAS 7 §18(b), §20 et §37-38 ; IAS 28 §10 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-efg-flux-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "etats-financiers-groupe",
+      "notion": "tableau-flux-consolide",
+      "difficulty": 2,
+      "tags": [
+        "IFRS",
+        "tableau des flux",
+        "participations ne donnant pas le contrôle"
+      ],
+      "statement": "Dans le tableau des flux de trésorerie consolidé établi en IFRS, le prix payé par la société mère pour acquérir 10 % supplémentaires du capital d'une filiale qu'elle contrôle déjà est classé en flux d'investissement.",
+      "answer": false,
+      "justification": "Faux : un changement de pourcentage d'intérêt sans changement de contrôle est une transaction entre actionnaires, classée en flux de financement (IAS 7 §42A).",
+      "explanation": "Depuis IFRS 10, l'achat ou la vente de titres d'une filiale qui reste contrôlée est une transaction portant sur les capitaux propres, entre les propriétaires de la mère et les participations ne donnant pas le contrôle. IAS 7 §42A en tire la conséquence : les flux correspondants sont des flux de financement. Seuls les flux liés à l'obtention ou à la perte du contrôle sont présentés en investissement (§39).",
+      "source_ref": "IAS 7 §39 et §42A ; IFRS 10 §23 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-efg-flux-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "etats-financiers-groupe",
+      "notion": "tableau-flux-consolide",
+      "difficulty": 2,
+      "tags": [
+        "tableau des flux",
+        "méthode indirecte",
+        "consolidation"
+      ],
+      "statement": "Le groupe Ardèche (IFRS) présente ses flux opérationnels selon la méthode indirecte. Il classe les dividendes reçus des sociétés mises en équivalence en flux opérationnels. Données consolidées de N (en milliers d'euros) :\n- résultat net de l'ensemble consolidé : 820, dont part du groupe 700 et participations ne donnant pas le contrôle 120 ;\n- dotations aux amortissements et provisions : 310 ;\n- quote-part de résultat des sociétés mises en équivalence : 90 ;\n- dividendes reçus des sociétés mises en équivalence : 30 ;\n- plus-value de cession d'immobilisations : 45 ;\n- charge d'impôt différé : 20 ;\n- augmentation du besoin en fonds de roulement d'exploitation (stocks + créances − dettes d'exploitation) : 110.\nCalculez les flux de trésorerie liés aux activités opérationnelles (en k€).",
+      "expected_value": 935,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "k€",
+      "decimals": 0,
+      "explanation": "Flux opérationnels = 820 + 310 − 90 + 30 − 45 + 20 − 110 = 935 k€. On part du résultat de l'ensemble consolidé (y compris la part des minoritaires) ; on réintègre les charges sans décaissement (dotations, impôt différé), on retranche la quote-part de résultat mise en équivalence et la plus-value (le prix de cession figure en investissement), on ajoute les dividendes encaissés des sociétés mises en équivalence et on retranche l'augmentation du BFR. Partir du résultat part du groupe donnerait 815 k€ ; ajouter la plus-value au lieu de la retrancher, 1 025 k€.",
+      "source_ref": "IAS 7 §18(b), §20 et §37-38 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 200
+    },
+    {
+      "id": "ue4-efg-flux-0005",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "etats-financiers-groupe",
+      "notion": "tableau-flux-consolide",
+      "difficulty": 3,
+      "tags": [
+        "tableau des flux",
+        "prise de contrôle",
+        "dividendes",
+        "IFRS 16",
+        "participations ne donnant pas le contrôle"
+      ],
+      "title": "Groupe Noria : flux d'investissement et de financement consolidés",
+      "context": "Le groupe Noria établit ses comptes consolidés en IFRS (montants en milliers d'euros). Il classe les intérêts versés en flux opérationnels et les dividendes versés en flux de financement. Les flux opérationnels de N, déjà calculés, s'élèvent à 2 400. Autres informations sur N :\n- le 01/07/N, Noria a acquis 80 % de la société Talos pour 1 500, payés comptant, et s'est engagée à verser un complément de prix de 300 en N+2 ; la trésorerie de Talos à la date d'acquisition était de 200 ;\n- acquisitions d'immobilisations corporelles : 900, dont 250 correspondent à un droit d'utilisation reconnu au titre d'un nouveau contrat de location (aucun décaissement) ; le reste a été payé comptant ;\n- cession d'un matériel : prix encaissé 120 (plus-value de 35) ;\n- dividendes : Noria a versé 500 à ses actionnaires ; les filiales ont versé 80 à leurs actionnaires minoritaires et 160 à Noria ;\n- emprunts bancaires : nouvel emprunt de 1 000, remboursements de 400 ;\n- remboursement du principal des dettes locatives : 90 ;\n- rachat à un minoritaire de 10 % du capital de la filiale Ulm, déjà contrôlée : 220 ;\n- trésorerie nette d'ouverture : 1 100 ; incidence des variations de cours de change sur la trésorerie : −30.",
+      "sub_questions": [
+        {
+          "id": "flux-investissement",
+          "kind": "numeric",
+          "prompt": "Calculez les flux de trésorerie liés aux activités d'investissement de N (en k€, avec un signe négatif pour un décaissement net).",
+          "points": 3,
+          "expected_value": -1830,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "Acquisition de Talos, nette de la trésorerie acquise : −(1 500 − 200) = −1 300 (le complément de prix non versé n'est pas un flux de N). Immobilisations payées : −(900 − 250) = −650 (le droit d'utilisation est une opération non monétaire, IAS 7 §43). Cession : +120. Total : −1 300 − 650 + 120 = −1 830 k€."
+        },
+        {
+          "id": "flux-financement",
+          "kind": "numeric",
+          "prompt": "Calculez les flux de trésorerie liés aux activités de financement de N (en k€, avec un signe négatif pour un décaissement net).",
+          "points": 3,
+          "expected_value": -290,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "Dividendes versés aux actionnaires de Noria −500 et aux minoritaires −80 (le dividende de 160 versé à Noria est intragroupe et éliminé) ; emprunt +1 000 ; remboursements −400 ; principal des dettes locatives −90 ; rachat de minoritaires d'Ulm −220 (IAS 7 §42A). Total : −500 − 80 + 1 000 − 400 − 90 − 220 = −290 k€."
+        },
+        {
+          "id": "tresorerie-cloture",
+          "kind": "numeric",
+          "prompt": "Déduisez la trésorerie nette de clôture au 31/12/N (en k€).",
+          "points": 2,
+          "expected_value": 1350,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "Variation de trésorerie = 2 400 − 1 830 − 290 = 280 k€. Trésorerie de clôture = 1 100 + 280 − 30 = 1 350 k€ ; l'incidence des variations de change est présentée sur une ligne distincte (IAS 7 §28)."
+        },
+        {
+          "id": "justifications",
+          "kind": "open",
+          "prompt": "Justifiez le traitement retenu pour le complément de prix, le nouveau contrat de location, le dividende versé par les filiales à Noria et le rachat des titres Ulm.",
+          "points": 4,
+          "model_answer": "Le complément de prix de 300, payable en N+2, ne donne lieu à aucun décaissement en N : il n'apparaît pas dans le tableau de N (il entrera dans le coût du regroupement et figurera au passif, puis sera présenté lors de son paiement). Le droit d'utilisation de 250 est acquis sans sortie de trésorerie : c'est une opération non monétaire exclue du tableau et décrite en annexe (IAS 7 §43) ; seuls les remboursements ultérieurs de la dette locative, ici 90 pour le principal, sont des flux de financement. Le dividende de 160 versé à Noria par ses filiales est un flux interne à l'ensemble consolidé : il est éliminé ; seuls les 80 versés aux minoritaires sortent du groupe. Le rachat de 10 % d'Ulm, déjà contrôlée, est une transaction entre actionnaires sans changement de contrôle : flux de financement (IAS 7 §42A), et non d'investissement.",
+          "key_points": [
+            "Complément de prix non versé : aucun flux en N",
+            "Droit d'utilisation : opération non monétaire exclue (IAS 7 §43) ; remboursement du principal en financement",
+            "Dividende intragroupe éliminé ; seuls les dividendes aux minoritaires sont retenus",
+            "Rachat de minoritaires sans changement de contrôle : financement (IAS 7 §42A)"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Le tableau consolidé ne retient que les flux de trésorerie avec les tiers extérieurs au groupe. La prise de contrôle est présentée nette de la trésorerie acquise ; les opérations non monétaires sont exclues ; les transactions avec les minoritaires sans changement de contrôle relèvent du financement.",
+      "source_ref": "IAS 7 §28, §39, §42, §42A et §43 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 840
+    }
+  ]
+}

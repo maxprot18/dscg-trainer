@@ -1,0 +1,239 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-efg-presentation-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "etats-financiers-groupe",
+      "notion": "etats-financiers-consolides-presentation",
+      "difficulty": 1,
+      "tags": [
+        "règl. ANC 2020-01",
+        "états financiers consolidés",
+        "annexe"
+      ],
+      "statement": "Une société mère non cotée établit ses comptes consolidés selon le règlement ANC 2020-01. Laquelle des affirmations suivantes est exacte ?",
+      "options": [
+        "Les comptes consolidés comportent un état du résultat global, qui présente notamment les écarts de conversion de l'exercice",
+        "Le bilan, le compte de résultat et l'annexe consolidés forment un tout indissociable ; l'annexe ne peut pas être remplacée par le rapport sur la gestion du groupe",
+        "Les comptes consolidés se limitent au bilan et au compte de résultat ; l'annexe est facultative pour une société non cotée",
+        "Le compte de résultat consolidé ne présente que le résultat part du groupe ; la part des minoritaires n'apparaît qu'au bilan"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le Code de commerce (art. L233-20) et le règlement ANC 2020-01 font du bilan, du compte de résultat et de l'annexe consolidés un tout indissociable (option 2) ; le rapport sur la gestion du groupe est un document distinct, qui ne remplace pas l'annexe. L'option 1 décrit l'état du résultat global des IFRS (IAS 1 §10 et §81A) : le règlement ANC 2020-01 n'en comporte pas, les écarts de conversion étant inscrits directement dans les capitaux propres consolidés. L'option 3 est fausse : l'annexe fait partie des comptes consolidés quelle que soit la cotation. L'option 4 est fausse : le compte de résultat consolidé fait apparaître le résultat de l'ensemble consolidé, puis sa répartition entre intérêts minoritaires et part du groupe.",
+      "source_ref": "C. com. art. L233-20 ; règl. ANC 2020-01, présentation des comptes consolidés ; IAS 1 §10 et §81A (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-efg-presentation-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "etats-financiers-groupe",
+      "notion": "etats-financiers-consolides-presentation",
+      "difficulty": 2,
+      "tags": [
+        "IFRS",
+        "résultat global",
+        "écarts de conversion",
+        "participations ne donnant pas le contrôle"
+      ],
+      "statement": "Le groupe Lusia établit ses comptes consolidés en IFRS. Pour l'exercice N : résultat net de l'ensemble consolidé 900 k€, dont 150 k€ attribuables aux participations ne donnant pas le contrôle (PNC) ; écart de conversion négatif de 200 k€ né en totalité de la conversion des comptes de sa filiale américaine, détenue à 75 % ; écarts actuariels positifs de 40 k€ sur le régime de retraite de la société mère (montants nets d'impôt). Quel est le résultat global total attribuable aux propriétaires de la société mère ?",
+      "options": [
+        "590 k€",
+        "740 k€",
+        "790 k€",
+        "640 k€"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Résultat net part du groupe = 900 − 150 = 750 k€. L'écart de conversion est partagé : 75 % × (−200) = −150 k€ pour le groupe et −50 k€ pour les PNC (IAS 21 §41). Les écarts actuariels de la mère reviennent intégralement au groupe : +40 k€. Résultat global part du groupe = 750 − 150 + 40 = 640 k€ (option 4) ; part des PNC = 150 − 50 = 100 k€. L'option 1 (590) impute la totalité de l'écart de conversion au groupe. L'option 2 (740) est le résultat global total de l'ensemble consolidé (640 + 100), non ventilé. L'option 3 (790) oublie l'écart de conversion.",
+      "source_ref": "IAS 1 §81B et §82A ; IAS 21 §41 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue4-efg-presentation-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "etats-financiers-groupe",
+      "notion": "etats-financiers-consolides-presentation",
+      "difficulty": 1,
+      "tags": [
+        "IFRS",
+        "participations ne donnant pas le contrôle",
+        "capitaux propres"
+      ],
+      "statement": "Dans un état de la situation financière consolidé établi en IFRS, les participations ne donnant pas le contrôle sont présentées au sein des capitaux propres, séparément des capitaux propres attribuables aux propriétaires de la société mère.",
+      "answer": true,
+      "justification": "Vrai : IFRS 10 §22 impose de présenter les PNC dans les capitaux propres, distinctement de la part des propriétaires de la mère.",
+      "explanation": "Les minoritaires sont des apporteurs de capitaux propres de l'ensemble consolidé : leurs droits ne sont pas des dettes. IFRS 10 §22 et IAS 1 §54(q) et (r) prévoient une ligne « participations ne donnant pas le contrôle » au sein des capitaux propres, à côté du capital et des réserves attribuables aux propriétaires de la mère. Le résultat net et le résultat global sont de même ventilés entre les deux catégories (IAS 1 §81B).",
+      "source_ref": "IFRS 10 §22 ; IAS 1 §54(q)-(r) et §81B (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue4-efg-presentation-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "etats-financiers-groupe",
+      "notion": "etats-financiers-consolides-presentation",
+      "difficulty": 2,
+      "tags": [
+        "règl. ANC 2020-01",
+        "résultat part du groupe",
+        "dividendes intragroupe",
+        "mise en équivalence"
+      ],
+      "statement": "Le groupe Doria établit ses comptes consolidés selon le règlement ANC 2020-01 (taux d'impôt : 25 % ; écarts d'acquisition non amortis, aucune dépréciation en N). Données de l'exercice N :\n- résultat social de la mère Doria : 400 000 €, dont 24 000 € de dividendes reçus de la filiale Sorel ;\n- Sorel, détenue à 60 % et intégrée globalement : résultat social 150 000 € ; un écart d'évaluation constaté sur ses machines à la date d'acquisition entraîne en consolidation un supplément d'amortissement de 24 000 € par an avant impôt ;\n- Opale, détenue à 25 % et mise en équivalence : résultat 80 000 € ;\n- aucune autre opération intragroupe.\nCalculez le résultat net consolidé part du groupe de N (en euros, arrondi à l'euro).",
+      "expected_value": 475200,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Résultat de Doria retraité : 400 000 − 24 000 (dividende intragroupe éliminé et reclassé en réserves) = 376 000 €. Résultat retraité de Sorel : 150 000 − 24 000 × (1 − 25 %) = 150 000 − 18 000 = 132 000 €, dont part du groupe 60 % × 132 000 = 79 200 € (les minoritaires reçoivent 52 800 €). Quote-part du résultat d'Opale : 25 % × 80 000 = 20 000 €. Résultat part du groupe = 376 000 + 79 200 + 20 000 = 475 200 €. Erreurs fréquentes : ne pas éliminer le dividende (499 200 €), oublier le supplément d'amortissement (486 000 €) ou le retenir avant impôt (471 600 €).",
+      "source_ref": "Règl. ANC 2020-01, élimination des dividendes intragroupe, écarts d'évaluation, impôts différés, intérêts minoritaires et mise en équivalence",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue4-efg-presentation-0005",
+      "type": "consolidation_case",
+      "ue": "UE4",
+      "theme": "etats-financiers-groupe",
+      "notion": "etats-financiers-consolides-presentation",
+      "difficulty": 3,
+      "tags": [
+        "règl. ANC 2020-01",
+        "bilan consolidé",
+        "réserves consolidées",
+        "intérêts minoritaires",
+        "dividendes intragroupe"
+      ],
+      "title": "Groupe Pavie : du cumul des comptes au bilan consolidé",
+      "context": "La société Pavie (P) établit ses comptes consolidés au 31/12/N selon le règlement ANC 2020-01. Elle a créé il y a plusieurs années la société Sillon (S), dont elle a souscrit 75 % du capital (titres S : 300 000 € au bilan de P) ; S est intégrée globalement. Aucun écart d'acquisition ni écart d'évaluation n'existe ; aucun retraitement d'homogénéisation n'est nécessaire et il n'y a pas d'impôt différé à constater.\n\nBilans au 31/12/N (en euros) :\n- P : titres S 300 000 ; autres actifs 1 700 000 ; capital 1 000 000 ; réserves 500 000 ; résultat N 150 000 ; dettes 350 000.\n- S : actifs 1 100 000, dont une créance de 50 000 sur P ; capital 400 000 ; réserves 200 000 (toutes constituées depuis la création de S) ; résultat N 100 000 ; dettes 400 000.\n\nOpérations intragroupe de N : S a versé en N un dividende total de 40 000 €, dont 30 000 € à P, comptabilisés en produits financiers par P ; S a prêté 50 000 € à P (dette comprise dans les dettes de P). Il n'y a pas d'autre opération intragroupe.",
+      "entities": [
+        {
+          "id": "pavie",
+          "name": "Pavie (P)",
+          "is_parent": true
+        },
+        {
+          "id": "sillon",
+          "name": "Sillon (S)"
+        }
+      ],
+      "links": [
+        {
+          "from": "pavie",
+          "to": "sillon",
+          "ownership_pct": 75
+        }
+      ],
+      "steps": [
+        {
+          "id": "resultat-groupe",
+          "stage": "partage-capitaux-propres",
+          "kind": "numeric",
+          "prompt": "Calculez le résultat net consolidé part du groupe de N (en euros).",
+          "points": 3,
+          "expected_value": 195000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Le dividende de 30 000 € reçu de S est un transfert interne : il est éliminé du résultat de P (et reclassé en réserves). Résultat part du groupe = (150 000 − 30 000) + 75 % × 100 000 = 120 000 + 75 000 = 195 000 €. Le résultat net de l'ensemble consolidé est de 220 000 €, dont 25 000 € pour les minoritaires."
+        },
+        {
+          "id": "reserves-consolidees",
+          "stage": "elimination-titres",
+          "kind": "numeric",
+          "prompt": "Calculez le montant des réserves consolidées (part du groupe) au bilan consolidé du 31/12/N (en euros).",
+          "points": 3,
+          "expected_value": 680000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Les titres S (300 000 €) sont éliminés contre la quote-part du capital de S (75 % × 400 000 = 300 000 €) : pas d'écart d'acquisition. Réserves consolidées = réserves de P 500 000 + dividende reclassé 30 000 + 75 % × réserves de S 200 000 (150 000) = 680 000 €. Oublier le reclassement du dividende donne 650 000 €."
+        },
+        {
+          "id": "interets-minoritaires",
+          "stage": "partage-capitaux-propres",
+          "kind": "numeric",
+          "prompt": "Calculez le montant total des intérêts minoritaires au bilan consolidé du 31/12/N, résultat compris (en euros).",
+          "points": 2,
+          "expected_value": 175000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Intérêts minoritaires = 25 % × capitaux propres de S (400 000 + 200 000 + 100 000 = 700 000) = 175 000 €, dont 25 000 € de résultat. Le dividende de 10 000 € versé aux minoritaires a déjà réduit les réserves de S."
+        },
+        {
+          "id": "total-bilan",
+          "stage": "autre",
+          "kind": "numeric",
+          "prompt": "Quel est le total du bilan consolidé au 31/12/N (en euros) ?",
+          "points": 2,
+          "expected_value": 2750000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Actif : 1 700 000 + 1 100 000 − 50 000 (créance intragroupe éliminée) = 2 750 000 € (les titres S sont éliminés). Passif : capital 1 000 000 + réserves consolidées 680 000 + résultat part du groupe 195 000 + intérêts minoritaires 175 000 + dettes (350 000 + 400 000 − 50 000 = 700 000) = 2 750 000 €. L'égalité confirme les calculs."
+        },
+        {
+          "id": "presentation-resultat",
+          "stage": "autre",
+          "kind": "open",
+          "prompt": "Comment le résultat apparaît-il dans le compte de résultat et dans le bilan consolidés de Pavie, et quels autres états accompagnent ces deux documents ?",
+          "points": 2,
+          "model_answer": "Le compte de résultat consolidé présente le résultat net de l'ensemble consolidé (220 000 €), puis la part des intérêts minoritaires (25 000 €) et le résultat net part du groupe (195 000 €). Au bilan, le résultat part du groupe figure dans les capitaux propres du groupe, à côté du capital de la mère et des réserves consolidées ; la part des minoritaires est comprise dans les intérêts minoritaires, présentés distinctement de la part du groupe. Ces états forment avec l'annexe un tout indissociable ; les comptes consolidés comportent aussi un tableau des flux de trésorerie et une analyse de la variation des capitaux propres.",
+          "key_points": [
+            "Résultat de l'ensemble consolidé 220 000 €, ventilé en part du groupe 195 000 € et minoritaires 25 000 €",
+            "Intérêts minoritaires présentés distinctement de la part du groupe au bilan",
+            "L'annexe (avec le tableau des flux de trésorerie et l'analyse de la variation des capitaux propres) complète le bilan et le compte de résultat"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Démarche : éliminer les opérations intragroupe (dividende reçu par la mère, prêt réciproque), éliminer les titres contre la quote-part des capitaux propres de la filiale, puis partager les capitaux propres de S entre groupe (75 %) et minoritaires (25 %). Le contrôle de cohérence actif = passif valide l'ensemble.",
+      "source_ref": "Règl. ANC 2020-01, élimination des opérations intragroupe, élimination des titres, intérêts minoritaires et présentation des comptes consolidés",
+      "verified": true,
+      "estimated_seconds": 900
+    },
+    {
+      "id": "ue4-efg-presentation-0006",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "etats-financiers-groupe",
+      "notion": "etats-financiers-consolides-presentation",
+      "difficulty": 1,
+      "tags": [
+        "IFRS",
+        "résultat global",
+        "OCI"
+      ],
+      "front": "IFRS : quels autres éléments du résultat global (OCI) sont recyclables en résultat, et lesquels ne le sont pas ?",
+      "back": "Recyclables : écarts de conversion des activités à l'étranger (reclassés à la cession), partie efficace des couvertures de flux de trésorerie.\nNon recyclables : écarts de réévaluation des immobilisations (IAS 16), écarts actuariels des régimes à prestations définies (IAS 19), variations de juste valeur des instruments de capitaux propres classés sur option en OCI (IFRS 9).\nL'état du résultat global présente séparément ces deux groupes.",
+      "explanation": "IAS 1 §82A impose de regrouper les OCI selon qu'ils seront ou non reclassés ultérieurement en résultat. Le règlement ANC 2020-01 ne comporte pas d'état du résultat global : les écarts de conversion y sont inscrits directement en capitaux propres.",
+      "source_ref": "IAS 1 §7 et §82A ; IAS 21 §48 ; IAS 16 §39 ; IAS 19 §120 ; IFRS 9 §5.7.5 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45
+    }
+  ]
+}

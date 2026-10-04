@@ -1,0 +1,182 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-efg-rpa-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "etats-financiers-groupe",
+      "notion": "information-sectorielle-resultat-action",
+      "difficulty": 1,
+      "tags": [
+        "IFRS 8",
+        "secteur opérationnel"
+      ],
+      "statement": "Selon IFRS 8, comment un groupe coté identifie-t-il ses secteurs opérationnels ?",
+      "options": [
+        "Chaque filiale juridique constitue un secteur opérationnel distinct",
+        "Les secteurs sont des composantes dont les résultats opérationnels sont régulièrement examinés par le principal décideur opérationnel pour décider de l'affectation des ressources et évaluer leur performance",
+        "La norme impose une double segmentation, par activité et par zone géographique, selon une nomenclature normalisée",
+        "Seules les activités qui représentent plus de 10 % du chiffre d'affaires consolidé sont des secteurs opérationnels"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "IFRS 8 retient l'approche de la direction : un secteur opérationnel est une composante qui exerce des activités génératrices de produits et de charges, dont les résultats sont régulièrement examinés par le principal décideur opérationnel et pour laquelle des informations financières distinctes sont disponibles (§5) ; l'option 2 est donc exacte. L'option 1 confond organisation juridique et pilotage interne. L'option 3 décrit une segmentation imposée que la norme ne prévoit pas (les informations géographiques ne sont demandées qu'à l'échelle de l'entité, §33). L'option 4 confond l'identification des secteurs avec les seuils quantitatifs de 10 % (§13), qui servent à déterminer quels secteurs doivent être présentés séparément.",
+      "source_ref": "IFRS 8 §5, §13 et §33 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-efg-rpa-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "etats-financiers-groupe",
+      "notion": "information-sectorielle-resultat-action",
+      "difficulty": 2,
+      "tags": [
+        "IFRS 8",
+        "seuils quantitatifs"
+      ],
+      "statement": "Le groupe Tessin (IFRS) a identifié six secteurs opérationnels. Données de N (en M€) — produits totaux (externes et intersectoriels) / résultat sectoriel / actifs :\n- A : 5 200 / +600 / 4 000\n- B : 2 300 / +150 / 2 500\n- C : 900 / −180 / 900\n- D : 700 / +50 / 1 300\n- E : 450 / +40 / 700\n- F : 450 / −70 / 600\nQuels secteurs atteignent au moins l'un des seuils quantitatifs d'IFRS 8 ?",
+      "options": [
+        "A et B",
+        "A, B et C",
+        "A, B, C et D",
+        "A, B, C, D et F"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Totaux : produits 10 000, actifs 10 000 ; résultats bénéficiaires cumulés 600 + 150 + 50 + 40 = 840, pertes cumulées 180 + 70 = 250. Seuils (§13) : produits ≥ 1 000 → A et B ; résultat en valeur absolue ≥ 10 % × 840 = 84 (le plus élevé des deux cumuls) → A, B et C (180) ; actifs ≥ 1 000 → A, B et D (1 300). Les secteurs A, B, C et D atteignent donc au moins un seuil (option 3). L'option 1 ne teste que les produits ; l'option 2 oublie le critère des actifs ; l'option 4 retient F, dont la perte (70) est inférieure à 84 et dont produits et actifs sont sous les seuils.",
+      "source_ref": "IFRS 8 §13 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 120
+    },
+    {
+      "id": "ue4-efg-rpa-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "etats-financiers-groupe",
+      "notion": "information-sectorielle-resultat-action",
+      "difficulty": 1,
+      "tags": [
+        "IAS 33",
+        "actions gratuites",
+        "nombre moyen pondéré"
+      ],
+      "statement": "Selon IAS 33, lorsqu'une société attribue gratuitement des actions par incorporation de réserves en cours d'exercice, le nombre moyen pondéré d'actions est ajusté comme si l'attribution avait eu lieu au début de la première période présentée.",
+      "answer": true,
+      "justification": "Vrai : l'attribution gratuite augmente le nombre d'actions sans apport de ressources ; elle est traitée comme si elle avait eu lieu à l'ouverture de la première période présentée (IAS 33 §28 et §64).",
+      "explanation": "Une incorporation de réserves ou une division du nominal ne modifie pas les ressources de l'entité. Pour que le résultat par action reste comparable, IAS 33 §26-28 impose de retraiter le nombre d'actions en circulation comme si l'opération avait eu lieu au début de la première période présentée, et §64 impose d'ajuster rétrospectivement le résultat par action des périodes comparatives. À l'inverse, une augmentation de capital en numéraire au prix de marché est pondérée prorata temporis (§21).",
+      "source_ref": "IAS 33 §21, §26-28 et §64 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-efg-rpa-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "etats-financiers-groupe",
+      "notion": "information-sectorielle-resultat-action",
+      "difficulty": 2,
+      "tags": [
+        "IAS 33",
+        "résultat de base par action",
+        "actions propres",
+        "actions de préférence"
+      ],
+      "statement": "La société Varenne, cotée, établit ses comptes consolidés en IFRS. Pour l'exercice N (clôture au 31/12) :\n- résultat net part du groupe : 4 860 000 € ;\n- actions de préférence à dividende prioritaire cumulatif : dividende prioritaire de l'exercice N de 210 000 €, non encore décidé à la clôture ;\n- actions ordinaires en circulation au 01/01/N : 3 000 000 ;\n- 01/04/N : émission en numéraire, au prix de marché, de 600 000 actions ordinaires ;\n- 01/07/N : rachat de 200 000 actions ordinaires, conservées en actions propres jusqu'à la clôture.\nCalculez le résultat de base par action de N (en euros, arrondi à deux décimales).",
+      "expected_value": 1.39,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "unit": "€",
+      "decimals": 2,
+      "explanation": "Numérateur : le dividende prioritaire cumulatif de l'exercice est déduit même s'il n'est pas encore décidé (IAS 33 §14) : 4 860 000 − 210 000 = 4 650 000 €. Nombre moyen pondéré : 3 000 000 + 600 000 × 9/12 − 200 000 × 6/12 = 3 000 000 + 450 000 − 100 000 = 3 350 000 actions. Résultat de base par action = 4 650 000 / 3 350 000 = 1,388 ≈ 1,39 €. Erreurs fréquentes : retenir les actions à la clôture, 3 400 000 (1,37 €), ou ne pas déduire le dividende prioritaire (1,45 €).",
+      "source_ref": "IAS 33 §10, §12, §14 et §19-21 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 200
+    },
+    {
+      "id": "ue4-efg-rpa-0005",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "etats-financiers-groupe",
+      "notion": "information-sectorielle-resultat-action",
+      "difficulty": 3,
+      "tags": [
+        "IAS 33",
+        "résultat dilué par action",
+        "options",
+        "obligations convertibles"
+      ],
+      "title": "Groupe Marlin : résultat par action de base et dilué",
+      "context": "La société Marlin, cotée, établit ses comptes consolidés en IFRS. Données de l'exercice N :\n- résultat net part du groupe : 12 000 000 € ; aucune action de préférence ;\n- nombre moyen pondéré d'actions ordinaires en circulation : 8 000 000 ;\n- options de souscription d'actions attribuées aux dirigeants, en circulation sur tout l'exercice et exerçables : 600 000 options, prix d'exercice 30 € ;\n- cours moyen de l'action Marlin sur N : 40 € ;\n- obligations convertibles émises avant N, en circulation sur tout l'exercice : charge d'intérêts de N comptabilisée en résultat (taux d'intérêt effectif) 400 000 € ; conversion possible en 500 000 actions ordinaires ;\n- taux d'impôt : 25 %.",
+      "sub_questions": [
+        {
+          "id": "rpa-base",
+          "kind": "numeric",
+          "prompt": "Calculez le résultat de base par action de N (en euros, arrondi à deux décimales).",
+          "points": 2,
+          "expected_value": 1.5,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.005
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "Résultat de base par action = 12 000 000 / 8 000 000 = 1,50 €."
+        },
+        {
+          "id": "actions-options",
+          "kind": "mcq",
+          "prompt": "Combien d'actions supplémentaires les options de souscription ajoutent-elles au dénominateur du résultat dilué ?",
+          "points": 2,
+          "options": [
+            "600 000",
+            "450 000",
+            "150 000",
+            "200 000"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "Méthode du rachat d'actions (IAS 33 §45-46) : les fonds issus de l'exercice (600 000 × 30 = 18 000 000 €) permettraient de racheter 18 000 000 / 40 = 450 000 actions au cours moyen ; seules les 600 000 − 450 000 = 150 000 actions émises sans contrepartie sont ajoutées (formule : 600 000 × (40 − 30) / 40). 600 000 oublie le rachat, 450 000 est le nombre d'actions rachetées, 200 000 rapporte l'écart de prix au prix d'exercice au lieu du cours moyen."
+        },
+        {
+          "id": "rpa-dilue",
+          "kind": "numeric",
+          "prompt": "Calculez le résultat dilué par action de N (en euros, arrondi à deux décimales).",
+          "points": 4,
+          "expected_value": 1.42,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.005
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "Résultat par action incrémental : options, 0 / 150 000 = 0 € (les plus dilutives) ; obligations convertibles, 400 000 × (1 − 25 %) / 500 000 = 300 000 / 500 000 = 0,60 €. On intègre d'abord les options : 12 000 000 / 8 150 000 = 1,472 €. Puis les obligations, dont le résultat incrémental (0,60 €) est inférieur à 1,472 € : 12 300 000 / 8 650 000 = 1,422 ≈ 1,42 €, inférieur au palier précédent, donc dilutif. Erreurs fréquentes : ajouter les intérêts avant impôt (1,43 €) ou ajouter les 600 000 options sans méthode du rachat (1,35 €)."
+        },
+        {
+          "id": "antidilution",
+          "kind": "open",
+          "prompt": "Expliquez pourquoi l'ordre d'intégration des instruments potentiellement dilutifs importe et ce qu'il advient d'un instrument relutif. Indiquez où le résultat par action est présenté.",
+          "points": 4,
+          "model_answer": "Le résultat dilué doit refléter la dilution maximale. IAS 33 §44 impose donc d'intégrer les actions potentielles de la plus dilutive à la moins dilutive, en comparant le résultat par action incrémental de chaque instrument au résultat par action obtenu au palier précédent. Un instrument dont le résultat incrémental est supérieur à ce palier augmenterait le résultat par action ou réduirait la perte par action : il est relutif (antidilutif) et n'est pas pris en compte (§41). Ici, les options (0 €) puis les obligations convertibles (0,60 €) sont toutes deux dilutives. Le résultat de base et le résultat dilué par action, calculés sur le résultat attribuable aux porteurs d'actions ordinaires de la mère, sont présentés au compte de résultat, avec la même importance (§66).",
+          "key_points": [
+            "Classement du plus dilutif au moins dilutif (IAS 33 §44)",
+            "Comparaison du résultat incrémental au palier précédent",
+            "Instrument relutif exclu (IAS 33 §41)",
+            "Présentation au compte de résultat du RPA de base et dilué (IAS 33 §66)"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Le résultat dilué part du résultat de base, ajusté des effets nets d'impôt des actions potentielles au numérateur et des actions supplémentaires au dénominateur, en intégrant les instruments par ordre décroissant de dilution et en écartant les instruments relutifs.",
+      "source_ref": "IAS 33 §10, §31-33, §36, §41, §44-46 et §66 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 720
+    }
+  ]
+}

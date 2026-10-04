@@ -27,6 +27,324 @@
       "source_ref": "IFRS 3 §B63 et IAS 36 §10 et §90 (règlement UE 2023/1803) ; règl. ANC 2020-01, écart d’acquisition",
       "verified": true,
       "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-efg-divergences-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "etats-financiers-groupe",
+      "notion": "divergences-normes-francaises-ifrs",
+      "difficulty": 2,
+      "tags": [
+        "IFRS 1",
+        "première application",
+        "date de transition"
+      ],
+      "statement": "Le groupe Ventoux, qui appliquait jusqu'ici le règlement ANC 2020-01, publie ses premiers états financiers consolidés en IFRS pour l'exercice clos le 31/12/N, avec un seul exercice comparatif. À quelle date établit-il son état de la situation financière d'ouverture en IFRS, et selon quelles normes ?",
+      "options": [
+        "Au 01/01/N, en appliquant les normes en vigueur au 31/12/N",
+        "Au 01/01/N-1, en appliquant les normes en vigueur au 01/01/N-1",
+        "Au 01/01/N, en appliquant les normes en vigueur au 01/01/N",
+        "Au 01/01/N-1, en appliquant les normes en vigueur au 31/12/N"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "La date de transition est le début de la première période pour laquelle l'entité présente une information comparative complète en IFRS (IFRS 1, annexe A) : avec un exercice comparatif N-1, c'est le 01/01/N-1, date de l'état de la situation financière d'ouverture (§6). Les méthodes comptables retenues sont celles des normes en vigueur à la date de clôture des premiers états IFRS, le 31/12/N, appliquées à toutes les périodes présentées (§7-8) : l'option 4 est exacte. Les options 1 et 3 placent la transition au début du premier exercice IFRS et privent le comparatif N-1 d'une base IFRS. L'option 2 retient les normes en vigueur à la date de transition, ce qui conduirait à appliquer des versions différentes selon les périodes.",
+      "source_ref": "IFRS 1 §6-8 et annexe A (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-efg-divergences-0003",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "etats-financiers-groupe",
+      "notion": "divergences-normes-francaises-ifrs",
+      "difficulty": 2,
+      "tags": [
+        "IFRS 16",
+        "location simple",
+        "retraitement ANC vers IFRS",
+        "impôt différé"
+      ],
+      "statement": "La société Gaïa, filiale détenue à 100 %, a pris à bail un entrepôt le 01/01/N pour trois ans ; le loyer annuel de 100 000 €, payable le 31/12 de chaque année, a été comptabilisé en charges. Dans les comptes consolidés établis selon le règlement ANC 2020-01, ce contrat de location simple n'est pas retraité. Le groupe prépare ses comptes consolidés en IFRS et applique IFRS 16 : valeur actualisée des loyers au taux marginal d'endettement de 4 % au 01/01/N, 277 509 € ; droit d'utilisation amorti linéairement sur 3 ans ; taux d'impôt 25 %.\nPassez l'écriture unique de retraitement au 31/12/N (montants arrondis à l'euro ; intérêts = 4 % × dette d'ouverture), impôt différé compris. Comptes conventionnels : 218 Droit d'utilisation, 2818 Amortissements du droit d'utilisation, 168 Dette locative, 6132 Locations immobilières, 6811 Dotations aux amortissements, 661 Charges d'intérêts, 276 Impôts différés actifs, 695 Impôt différé (produit).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "218",
+          "label": "Droit d'utilisation",
+          "debit": 277509,
+          "credit": 0
+        },
+        {
+          "account": "168",
+          "label": "Dette locative (solde au 31/12/N)",
+          "debit": 0,
+          "credit": 188609
+        },
+        {
+          "account": "2818",
+          "label": "Amortissements du droit d'utilisation",
+          "debit": 0,
+          "credit": 92503
+        },
+        {
+          "account": "6811",
+          "label": "Dotation aux amortissements (277 509 / 3)",
+          "debit": 92503,
+          "credit": 0
+        },
+        {
+          "account": "661",
+          "label": "Charges d'intérêts (4 % × 277 509)",
+          "debit": 11100,
+          "credit": 0
+        },
+        {
+          "account": "6132",
+          "label": "Annulation du loyer comptabilisé",
+          "debit": 0,
+          "credit": 100000
+        },
+        {
+          "account": "276",
+          "label": "Impôts différés actifs",
+          "debit": 901,
+          "credit": 0
+        },
+        {
+          "account": "695",
+          "label": "Impôt différé (produit)",
+          "debit": 0,
+          "credit": 901
+        }
+      ],
+      "explanation": "Au 01/01/N, droit d'utilisation et dette locative sont constatés pour 277 509 €. Intérêts de N : 4 % × 277 509 = 11 100 €. Dette au 31/12/N : 277 509 + 11 100 − 100 000 = 188 609 €. Amortissement du droit d'utilisation : 277 509 / 3 = 92 503 €. Le loyer de 100 000 €, déjà payé et comptabilisé en charges, est annulé (son paiement a réduit la dette). Incidence sur le résultat avant impôt : 100 000 − 92 503 − 11 100 = −3 603 €. La valeur comptable de la dette (188 609 €) excède celle du droit d'utilisation (277 509 − 92 503 = 185 006 €) de 3 603 € : la différence temporelle nette déductible fait naître un impôt différé actif net de 25 % × 3 603 = 901 € (arrondi) ; l'exemption de comptabilisation initiale ne s'applique pas à un contrat de location qui crée des différences temporelles imposables et déductibles égales (IAS 12 §22A), et l'impôt différé passif sur le droit d'utilisation est compensé avec l'impôt différé actif sur la dette (même administration fiscale, IAS 12 §74). Résultat net consolidé diminué de 2 702 €. En règlement ANC 2020-01, seuls les contrats de location-financement sont retraités ; le bail simple reste en charges.",
+      "source_ref": "IFRS 16 §22-26, §31 et §36-38 ; IAS 12 §15, §22A, §24 et §74 (règlement UE 2023/1803) ; règl. ANC 2020-01, contrats de location",
+      "verified": true,
+      "estimated_seconds": 360
+    },
+    {
+      "id": "ue4-efg-divergences-0004",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "etats-financiers-groupe",
+      "notion": "divergences-normes-francaises-ifrs",
+      "difficulty": 2,
+      "tags": [
+        "écart d’acquisition",
+        "amortissement",
+        "test de dépréciation",
+        "retraitement ANC vers IFRS"
+      ],
+      "statement": "Le groupe Ondine détient à 100 % la société Récif, acquise le 01/01/N-2. Dans ses comptes consolidés établis selon le règlement ANC 2020-01, l'écart d'acquisition de 500 000 €, jugé à durée d'utilisation limitée, est amorti linéairement sur 10 ans depuis l'acquisition. Pour une présentation de ses comptes en IFRS, le groupe applique IFRS 3 rétrospectivement depuis l'acquisition (sans recourir aux exemptions d'IFRS 1) : le goodwill n'est pas amorti ; le test de dépréciation réalisé au 31/12/N sur l'UGT Récif conduit à constater une perte de valeur de 70 000 € (aucune perte antérieure). Le goodwill n'est pas déductible fiscalement.\nPassez l'écriture unique de retraitement au 31/12/N. Comptes conventionnels : 2807 Amortissements de l'écart d'acquisition, 2907 Dépréciation de l'écart d'acquisition, 106 Réserves consolidées, 6811 Dotations aux amortissements, 6816 Dotations aux dépréciations.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "2807",
+          "label": "Annulation des amortissements cumulés (N-2 à N)",
+          "debit": 150000,
+          "credit": 0
+        },
+        {
+          "account": "106",
+          "label": "Réserves consolidées (amortissements N-2 et N-1)",
+          "debit": 0,
+          "credit": 100000
+        },
+        {
+          "account": "6811",
+          "label": "Annulation de la dotation N",
+          "debit": 0,
+          "credit": 50000
+        },
+        {
+          "account": "6816",
+          "label": "Perte de valeur du goodwill (N)",
+          "debit": 70000,
+          "credit": 0
+        },
+        {
+          "account": "2907",
+          "label": "Dépréciation de l'écart d'acquisition",
+          "debit": 0,
+          "credit": 70000
+        }
+      ],
+      "explanation": "En règlement ANC 2020-01, l'écart d'acquisition a été amorti de 500 000 / 10 = 50 000 € par an, soit 150 000 € au 31/12/N. En IFRS, le goodwill n'est pas amorti (IFRS 3 §B63) : on annule les amortissements cumulés, la part des exercices antérieurs (100 000 €) par les réserves consolidées et celle de N (50 000 €) par le résultat. La perte de valeur IFRS de 70 000 € est ensuite constatée en charge de N (IAS 36 §104) ; elle ne pourra pas être reprise (§124). Aucun impôt différé : le goodwill non déductible relève de l'exception de comptabilisation initiale (IAS 12 §15(a) et §21). Incidence nette sur le résultat de N : +50 000 − 70 000 = −20 000 €.",
+      "source_ref": "IFRS 3 §B63 ; IAS 36 §90, §104 et §124 ; IAS 12 §15(a) et §21 (règlement UE 2023/1803) ; règl. ANC 2020-01, écart d'acquisition",
+      "verified": true,
+      "estimated_seconds": 300
+    },
+    {
+      "id": "ue4-efg-divergences-0005",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "etats-financiers-groupe",
+      "notion": "divergences-normes-francaises-ifrs",
+      "difficulty": 2,
+      "tags": [
+        "goodwill complet",
+        "participations ne donnant pas le contrôle",
+        "élimination des titres",
+        "IFRS 3"
+      ],
+      "statement": "Le 01/01/N, la société Ambre acquiert 70 % du capital et des droits de vote de la société Cobalt pour 910 000 €. À cette date, les capitaux propres de Cobalt s'élèvent à 1 000 000 € (capital 400 000 €, réserves 600 000 €) et la juste valeur de ses actifs et passifs identifiables est égale à leur valeur comptable. Ambre établit ses comptes consolidés en IFRS et opte, pour ce regroupement, pour l'évaluation des participations ne donnant pas le contrôle (PNC) à leur juste valeur, estimée à 380 000 €. Le goodwill n'est pas amorti.\nPassez l'écriture d'élimination des titres et de partage des capitaux propres de Cobalt à la date d'acquisition. Comptes : 101 Capital (Cobalt), 106 Réserves (Cobalt), 207 Écart d'acquisition, 261 Titres de participation, et le compte conventionnel 108 pour les participations ne donnant pas le contrôle.",
+      "date": "01/01/N",
+      "entries": [
+        {
+          "account": "101",
+          "label": "Capital de Cobalt",
+          "debit": 400000,
+          "credit": 0
+        },
+        {
+          "account": "106",
+          "label": "Réserves de Cobalt",
+          "debit": 600000,
+          "credit": 0
+        },
+        {
+          "account": "207",
+          "label": "Goodwill complet",
+          "debit": 290000,
+          "credit": 0
+        },
+        {
+          "account": "261",
+          "label": "Titres Cobalt",
+          "debit": 0,
+          "credit": 910000
+        },
+        {
+          "account": "108",
+          "label": "Participations ne donnant pas le contrôle (juste valeur)",
+          "debit": 0,
+          "credit": 380000
+        }
+      ],
+      "explanation": "Goodwill complet = contrepartie transférée 910 000 + juste valeur des PNC 380 000 − actif net identifiable 1 000 000 = 290 000 € (IFRS 3 §32). Les PNC sont inscrites pour leur juste valeur, 380 000 €. En goodwill partiel, seule méthode du règlement ANC 2020-01 et option alternative en IFRS, les minoritaires seraient évalués à 30 % × 1 000 000 = 300 000 € et l'écart d'acquisition à 910 000 − 700 000 = 210 000 € : l'écart de 80 000 € représente le goodwill attribuable aux minoritaires, qui augmente à la fois l'actif et les PNC.",
+      "source_ref": "IFRS 3 §19 et §32 ; IFRS 10 §22 (règlement UE 2023/1803) ; règl. ANC 2020-01, intérêts minoritaires et écart d'acquisition",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue4-efg-divergences-0006",
+      "type": "consolidation_case",
+      "ue": "UE4",
+      "theme": "etats-financiers-groupe",
+      "notion": "divergences-normes-francaises-ifrs",
+      "difficulty": 3,
+      "tags": [
+        "règl. ANC 2020-01",
+        "IFRS",
+        "frais d’acquisition",
+        "goodwill complet",
+        "IFRS 16",
+        "résultat part du groupe"
+      ],
+      "title": "Groupe Atlas : même acquisition, deux référentiels",
+      "context": "Le 01/01/N, la société Atlas (A) acquiert 80 % du capital et des droits de vote de la société Boréal (B) pour 1 600 000 € ; elle supporte en outre 40 000 € d'honoraires directement liés à l'acquisition, qu'elle incorpore au coût des titres dans ses comptes individuels. On ignore toute incidence fiscale de ces frais. À cette date, l'actif net identifiable de B évalué à la juste valeur s'élève à 1 750 000 € ; le seul écart d'évaluation porte sur un terrain (non amortissable). La juste valeur des 20 % détenus par les minoritaires est estimée à 420 000 €.\n\nEn N, B dégage un résultat social de 200 000 € et ne distribue rien. B loue ses bureaux par un bail commercial (location simple), dont les loyers sont comptabilisés en charges ; l'application d'IFRS 16 réduirait son résultat avant impôt de N de 8 000 €. Taux d'impôt : 25 %.\n\nLe groupe compare deux jeux de comptes consolidés au 31/12/N :\n- règlement ANC 2020-01 : écart d'acquisition partiel, frais d'acquisition inclus dans le coût d'acquisition, écart d'acquisition jugé à durée d'utilisation limitée et amorti linéairement sur 10 ans ;\n- IFRS : goodwill complet (PNC à la juste valeur), non amorti, aucune perte de valeur en N.",
+      "entities": [
+        {
+          "id": "atlas",
+          "name": "Atlas (A)",
+          "is_parent": true
+        },
+        {
+          "id": "boreal",
+          "name": "Boréal (B)"
+        }
+      ],
+      "links": [
+        {
+          "from": "atlas",
+          "to": "boreal",
+          "ownership_pct": 80
+        }
+      ],
+      "steps": [
+        {
+          "id": "ea-anc",
+          "stage": "ecart-acquisition",
+          "kind": "numeric",
+          "prompt": "Calculez l'écart d'acquisition sur B au 01/01/N selon le règlement ANC 2020-01 (en euros).",
+          "points": 2,
+          "expected_value": 240000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Coût d'acquisition des titres, frais inclus : 1 600 000 + 40 000 = 1 640 000 €. Quote-part de l'actif net identifiable : 80 % × 1 750 000 = 1 400 000 €. Écart d'acquisition = 1 640 000 − 1 400 000 = 240 000 €."
+        },
+        {
+          "id": "gw-ifrs",
+          "stage": "ecart-acquisition",
+          "kind": "numeric",
+          "prompt": "Calculez le goodwill complet sur B au 01/01/N en IFRS (en euros).",
+          "points": 2,
+          "expected_value": 270000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Les frais d'acquisition sont des charges (IFRS 3 §53) : contrepartie transférée 1 600 000 €. Goodwill complet = 1 600 000 + 420 000 − 1 750 000 = 270 000 € (dont 1 600 000 − 1 400 000 = 200 000 € pour le groupe et 70 000 € pour les minoritaires)."
+        },
+        {
+          "id": "resultat-anc",
+          "stage": "partage-capitaux-propres",
+          "kind": "numeric",
+          "prompt": "Selon le règlement ANC 2020-01, quelle est l'incidence de l'acquisition de B sur le résultat consolidé part du groupe de N (quote-part du résultat de B, amortissement de l'écart d'acquisition compris, en euros) ?",
+          "points": 3,
+          "expected_value": 136000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Le bail simple n'est pas retraité en règlement ANC 2020-01 et le terrain n'est pas amortissable. Quote-part du groupe : 80 % × 200 000 = 160 000 €. Amortissement de l'écart d'acquisition : 240 000 / 10 = 24 000 €, à la charge du seul groupe (écart partiel). Incidence = 160 000 − 24 000 = 136 000 €."
+        },
+        {
+          "id": "resultat-ifrs",
+          "stage": "partage-capitaux-propres",
+          "kind": "numeric",
+          "prompt": "En IFRS, quelle est l'incidence de l'acquisition de B sur le résultat consolidé part du groupe de N (quote-part du résultat retraité de B et frais d'acquisition compris, en euros) ?",
+          "points": 3,
+          "expected_value": 115200,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Résultat retraité de B : 200 000 − 8 000 × (1 − 25 %) = 194 000 €. Quote-part du groupe : 80 % × 194 000 = 155 200 €. Les frais d'acquisition de 40 000 €, supportés par A, sont des charges de N (sans effet fiscal par hypothèse). Pas d'amortissement du goodwill. Incidence = 155 200 − 40 000 = 115 200 €."
+        },
+        {
+          "id": "rapprochement",
+          "stage": "autre",
+          "kind": "open",
+          "prompt": "Expliquez l'écart entre les deux référentiels sur le résultat part du groupe et chiffrez les intérêts minoritaires relatifs à B au 31/12/N dans chacun d'eux.",
+          "points": 4,
+          "model_answer": "Écart de résultat part du groupe : 136 000 − 115 200 = 20 800 €. Il s'explique par les frais d'acquisition, inclus dans l'écart d'acquisition en règlement ANC 2020-01 mais passés en charges en IFRS (−40 000 €), par l'amortissement de l'écart d'acquisition, pratiqué en règlement ANC 2020-01 mais pas en IFRS (+24 000 €), et par le retraitement IFRS 16 du bail simple de B, pour la part du groupe (−80 % × 6 000 = −4 800 €) : −40 000 + 24 000 − 4 800 = −20 800 €. Intérêts minoritaires au 31/12/N : en règlement ANC 2020-01, 20 % × (1 750 000 + 200 000) = 390 000 € ; en IFRS (goodwill complet), 420 000 + 20 % × 194 000 = 458 800 €, soit leur juste valeur initiale augmentée de leur part du résultat retraité.",
+          "key_points": [
+            "Frais d'acquisition : dans l'écart d'acquisition (ANC) / en charges (IFRS 3 §53)",
+            "Amortissement de l'écart d'acquisition en ANC seulement",
+            "IFRS 16 : retraitement du bail simple, part du groupe −4 800 €",
+            "Intérêts minoritaires : 390 000 € (ANC, quote-part) contre 458 800 € (IFRS, juste valeur)"
+          ]
+        }
+      ],
+      "total_points": 14,
+      "explanation": "La même acquisition produit des écarts d'acquisition, des résultats et des intérêts minoritaires différents selon le référentiel : frais d'acquisition capitalisés ou en charges, écart d'acquisition amorti ou seulement testé, minoritaires à la quote-part de l'actif net ou à la juste valeur, contrats de location simple retraités ou non.",
+      "source_ref": "Règl. ANC 2020-01, coût d'acquisition des titres, écart d'acquisition, intérêts minoritaires et contrats de location ; IFRS 3 §19, §32, §53 et §B63 ; IFRS 16 §22 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 900
     }
   ]
 }
