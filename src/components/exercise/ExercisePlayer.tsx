@@ -6,11 +6,17 @@
  * réponses validées sont verrouillées et la correction est affichée à la fin, en relecture
  * (`review` : réponses déjà données, exercice affiché entièrement corrigé).
  */
-import { useMemo, useRef, useState } from 'react'
+import { BookOpen } from 'lucide-react'
+import { useMemo, useRef, useState, type ReactNode } from 'react'
+import { Link } from 'react-router-dom'
 
+import { BookmarkButton } from '@/components/BookmarkButton'
 import { ReportLink } from '@/components/ReportLink'
+import { TypeIcon } from '@/components/TypeIcon'
 import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
 import { CYCLE_LABELS, TYPE_LABELS } from '@/content/labels'
+import { hasCourse } from '@/content/load'
 import type { Exercise } from '@/content/schema'
 import { combineResults, gradePart, type ExerciseResult, type PartResponse, type PartResult } from '@/engine/grading'
 import { exerciseParts, STAGE_LABELS } from '@/engine/parts'
@@ -19,6 +25,23 @@ import { exerciseIssueUrl } from '@/lib/report'
 
 import { Explanation, Verdict } from './Feedback'
 import { PartView } from './parts'
+
+/**
+ * Énoncé long d'un cas : repliable, pour qu'il ne défile pas hors de vue pendant les
+ * sous-questions sur mobile ; ouvert par défaut.
+ */
+function FoldableContext({ title, children }: { title: string; children: ReactNode }) {
+  return (
+    <details open className="group rounded-lg border">
+      <summary className="flex cursor-pointer items-center justify-between gap-2 px-3 py-2 font-semibold select-none">
+        <span>{title}</span>
+        <span className="text-muted-foreground text-xs font-normal group-open:hidden">Afficher l’énoncé</span>
+        <span className="text-muted-foreground hidden text-xs font-normal group-open:inline">Replier</span>
+      </summary>
+      <div className="flex flex-col gap-3 border-t px-3 py-3">{children}</div>
+    </details>
+  )
+}
 
 function Statement({ exercise }: { exercise: Exercise }) {
   switch (exercise.type) {
@@ -31,16 +54,14 @@ function Statement({ exercise }: { exercise: Exercise }) {
       return null
     case 'case_study':
       return (
-        <div className="flex flex-col gap-2">
-          <h2 className="font-semibold">{exercise.title}</h2>
+        <FoldableContext title={exercise.title}>
           <p className="text-sm whitespace-pre-line">{exercise.context}</p>
-        </div>
+        </FoldableContext>
       )
     case 'consolidation_case': {
       const names = new Map(exercise.entities.map((e) => [e.id, e.name]))
       return (
-        <div className="flex flex-col gap-3">
-          <h2 className="font-semibold">{exercise.title}</h2>
+        <FoldableContext title={exercise.title}>
           <p className="text-sm whitespace-pre-line">{exercise.context}</p>
           <table className="w-full text-sm">
             <caption className="text-muted-foreground mb-1 text-left text-xs">Organigramme du groupe</caption>
@@ -63,13 +84,12 @@ function Statement({ exercise }: { exercise: Exercise }) {
               ))}
             </tbody>
           </table>
-        </div>
+        </FoldableContext>
       )
     }
     case 'audit_case':
       return (
-        <div className="flex flex-col gap-2">
-          <h2 className="font-semibold">{exercise.title}</h2>
+        <FoldableContext title={exercise.title}>
           <div className="flex flex-wrap gap-1">
             <Badge variant="secondary">Cycle {CYCLE_LABELS[exercise.cycle]}</Badge>
             {exercise.assertions?.map((a) => (
@@ -79,7 +99,7 @@ function Statement({ exercise }: { exercise: Exercise }) {
             ))}
           </div>
           <p className="text-sm whitespace-pre-line">{exercise.situation}</p>
-        </div>
+        </FoldableContext>
       )
   }
 }
@@ -123,7 +143,9 @@ export function ExercisePlayer({ exercise, onComplete, deferFeedback = false, re
   return (
     <article className="flex flex-col gap-5">
       <div className="flex flex-wrap items-center gap-2">
-        <Badge>{TYPE_LABELS[exercise.type]}</Badge>
+        <Badge>
+          <TypeIcon type={exercise.type} className="size-3.5" /> {TYPE_LABELS[exercise.type]}
+        </Badge>
         <Badge variant="outline">Niveau {exercise.difficulty}</Badge>
       </div>
       <Statement exercise={exercise} />
@@ -168,6 +190,16 @@ export function ExercisePlayer({ exercise, onComplete, deferFeedback = false, re
             <Explanation>{exercise.explanation}</Explanation>
           </div>
           <p className="text-muted-foreground text-xs">Référence : {exercise.source_ref}</p>
+          <div className="flex flex-wrap items-center gap-2">
+            {hasCourse(exercise.notion) && (
+              <Button asChild variant="outline" size="sm">
+                <Link to={`/cours/${exercise.notion}`}>
+                  <BookOpen /> Voir la fiche de cours
+                </Link>
+              </Button>
+            )}
+            <BookmarkButton target={exercise.id} />
+          </div>
           <ReportLink href={exerciseIssueUrl(exercise)} />
         </div>
       )}

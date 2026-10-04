@@ -44,7 +44,8 @@ export default defineConfig({
     react(),
     tailwindcss(),
     VitePWA({
-      registerType: 'autoUpdate',
+      // Mise à jour sur demande : un bandeau « nouvelle version » propose de recharger (PwaBanner).
+      registerType: 'prompt',
       includeAssets: ['favicon.svg', 'favicon.ico', 'apple-touch-icon-180x180.png'],
       manifest: {
         name: 'DSCG Trainer',

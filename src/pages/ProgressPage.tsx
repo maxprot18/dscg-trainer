@@ -1,11 +1,13 @@
-import { Download, Upload } from 'lucide-react'
-import { useMemo, useRef, useState } from 'react'
+import { Settings } from 'lucide-react'
+import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { taxonomy } from '@/content/load'
-import { exportProgress, importProgress, type ProgressExport, type SessionMode } from '@/db/db'
+import { TYPE_LABELS } from '@/content/labels'
+import { taxonomy, useExercises } from '@/content/load'
+import type { Exercise } from '@/content/schema'
+import type { SessionMode } from '@/db/db'
 import { useProgress, type ProgressData } from '@/db/progress'
 import { sessionSearch } from '@/engine/sessionConfig'
 import {
@@ -14,27 +16,16 @@ import {
   MASTERY_LABELS,
   programProgress,
   sessionHistory,
+  statsByType,
   totalTimeMs,
+  weeklyActivity,
   type GroupProgress,
   type Mastery,
   type NotionProgress,
   type UeProgress,
 } from '@/engine/stats'
+import { MASTERY_COLORS, MASTERY_TEXT } from '@/lib/mastery'
 import { cn } from '@/lib/utils'
-
-const MASTERY_COLORS: Record<Mastery, string> = {
-  new: 'bg-muted border-border',
-  review: 'bg-red-400 border-red-500 dark:bg-red-700',
-  progress: 'bg-amber-300 border-amber-400 dark:bg-amber-600',
-  mastered: 'bg-emerald-500 border-emerald-600 dark:bg-emerald-600',
-}
-
-const MASTERY_TEXT: Record<Mastery, string> = {
-  new: 'text-muted-foreground',
-  review: 'text-red-700 dark:text-red-400',
-  progress: 'text-amber-700 dark:text-amber-400',
-  mastered: 'text-emerald-700 dark:text-emerald-400',
-}
 
 const MODE_LABELS: Record<SessionMode, string> = {
   quick: 'Session rapide',
@@ -42,6 +33,7 @@ const MODE_LABELS: Record<SessionMode, string> = {
   smart: 'Révision intelligente',
   errors: 'Erreurs',
   exam: 'Examen blanc',
+  cards: 'Flashcards',
 }
 
 const percent = (rate: number | null) => (rate === null ? '—' : `${Math.round(rate * 100)} %`)
@@ -53,16 +45,6 @@ function formatDuration(ms: number): string {
 
 const dateFormat = new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'short' })
 const dateTimeFormat = new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })
-
-async function downloadExport() {
-  const data = await exportProgress()
-  const url = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }))
-  const a = document.createElement('a')
-  a.href = url
-  a.download = `dscg-progression-${data.exportedAt.slice(0, 10)}.json`
-  a.click()
-  URL.revokeObjectURL(url)
-}
 
 export function ProgressPage() {
   const progress = useProgress()
@@ -101,8 +83,10 @@ export function ProgressView({ progress, now: nowProp }: { progress: ProgressDat
           </Link>
         </Button>
       )}
+      <WeeklyChart progress={progress} now={now} />
       <Heatmap ues={ues} />
       <ByUe ues={ues} now={now} />
+      <ByType progress={progress} />
       <History progress={progress} />
       <BackupCard />
     </div>
@@ -245,19 +229,143 @@ function ByUe({ ues, now }: { ues: UeProgress[]; now: number }) {
   )
 }
 
-function History({ progress }: { progress: ProgressData }) {
-  const sessions = useMemo(() => sessionHistory(progress.sessions, progress.attempts).slice(0, 15), [progress])
+const weekFormat = new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'short' })
+
+/** Activité des 8 dernières semaines : exercices faits, puis taux de réussite (deux petits graphiques, une mesure chacun). */
+function WeeklyChart({ progress, now }: { progress: ProgressData; now: number }) {
+  const weeks = useMemo(() => weeklyActivity(progress.attempts, now), [progress, now])
+  const max = Math.max(1, ...weeks.map((w) => w.attempts))
+  const W = 320
+  const H = 70
+  const gap = 6
+  const bw = (W - gap * (weeks.length - 1)) / weeks.length
+  if (progress.attempts.length === 0) return null
   return (
     <Card>
       <CardHeader>
+        <CardTitle>Huit dernières semaines</CardTitle>
+        <CardDescription>Exercices faits par semaine, puis taux de réussite. La semaine en cours est à droite.</CardDescription>
+      </CardHeader>
+      <CardContent className="flex flex-col gap-3">
+        <figure>
+          <figcaption className="text-muted-foreground mb-1 text-xs font-semibold uppercase">Exercices</figcaption>
+          <svg viewBox={`0 0 ${W} ${H + 16}`} className="h-auto w-full" role="img" aria-label="Exercices faits par semaine">
+            <desc>{weeks.map((w) => `semaine du ${weekFormat.format(w.start)} : ${w.attempts}`).join(' ; ')}</desc>
+            <line x1={0} y1={H} x2={W} y2={H} className="stroke-border" />
+            {weeks.map((w, i) => {
+              const h = (w.attempts / max) * (H - 4)
+              return (
+                <g key={w.start}>
+                  <title>{`Semaine du ${weekFormat.format(w.start)} : ${w.attempts} exercice${w.attempts > 1 ? 's' : ''}`}</title>
+                  <rect x={i * (bw + gap)} y={H - h} width={bw} height={h} rx={3} className="fill-primary" />
+                  {w.attempts > 0 && (
+                    <text x={i * (bw + gap) + bw / 2} y={H - h - 3} textAnchor="middle" className="fill-muted-foreground text-[9px]">
+                      {w.attempts}
+                    </text>
+                  )}
+                  <text x={i * (bw + gap) + bw / 2} y={H + 12} textAnchor="middle" className="fill-muted-foreground text-[8px]">
+                    {weekFormat.format(w.start)}
+                  </text>
+                </g>
+              )
+            })}
+          </svg>
+        </figure>
+        <figure>
+          <figcaption className="text-muted-foreground mb-1 text-xs font-semibold uppercase">Réussite</figcaption>
+          <svg viewBox={`0 0 ${W} ${H + 4}`} className="h-auto w-full" role="img" aria-label="Taux de réussite par semaine">
+            <desc>{weeks.map((w) => `semaine du ${weekFormat.format(w.start)} : ${percent(w.rate)}`).join(' ; ')}</desc>
+            <line x1={0} y1={H} x2={W} y2={H} className="stroke-border" />
+            <line x1={0} y1={H * 0.3} x2={W} y2={H * 0.3} className="stroke-border" strokeDasharray="3 3" />
+            {weeks.map((w, i) => {
+              if (w.rate === null) return null
+              const h = w.rate * (H - 4)
+              return (
+                <g key={w.start}>
+                  <title>{`Semaine du ${weekFormat.format(w.start)} : ${percent(w.rate)}`}</title>
+                  <rect x={i * (bw + gap)} y={H - h} width={bw} height={h} rx={3} className="fill-emerald-500" />
+                  <text x={i * (bw + gap) + bw / 2} y={H - h - 3} textAnchor="middle" className="fill-muted-foreground text-[9px]">
+                    {Math.round(w.rate * 100)}
+                  </text>
+                </g>
+              )
+            })}
+          </svg>
+          <p className="text-muted-foreground text-xs">Ligne pointillée : 70 %, seuil de réussite des exercices composites.</p>
+        </figure>
+      </CardContent>
+    </Card>
+  )
+}
+
+/** Réussite par type d'exercice (le contenu est chargé en arrière-plan pour connaître le type de chaque tentative). */
+function ByType({ progress }: { progress: ProgressData }) {
+  const exercises = useExercises(progress.attempts.length > 0)
+  const stats = useMemo(() => {
+    if (!exercises) return null
+    const types = new Map(exercises.map((e) => [e.id, e.type]))
+    return statsByType(progress.attempts, (id) => types.get(id))
+  }, [exercises, progress])
+  if (progress.attempts.length === 0) return null
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>Réussite par type d’exercice</CardTitle>
+        <CardDescription>Du type le moins réussi au mieux réussi, sur toutes les tentatives.</CardDescription>
+      </CardHeader>
+      <CardContent className="text-sm">
+        {!stats ? (
+          <p className="text-muted-foreground">Chargement…</p>
+        ) : (
+          <ul className="flex flex-col gap-2">
+            {stats.map((s) => (
+              <li key={s.type} className="flex items-center gap-3">
+                <span className="w-40 shrink-0 truncate">{TYPE_LABELS[s.type as Exercise['type']] ?? s.type}</span>
+                <span className="bg-muted h-2 flex-1 overflow-hidden rounded-full" aria-hidden>
+                  <span className="bg-primary block h-full" style={{ width: `${Math.round(s.rate * 100)}%` }} />
+                </span>
+                <span className="text-muted-foreground w-28 shrink-0 text-right text-xs">
+                  {Math.round(s.rate * 100)} % · {s.correct}/{s.attempts}
+                </span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </CardContent>
+    </Card>
+  )
+}
+
+function History({ progress }: { progress: ProgressData }) {
+  const [mode, setMode] = useState<SessionMode | ''>('')
+  const sessions = useMemo(
+    () => sessionHistory(progress.sessions, progress.attempts).filter((s) => !mode || s.mode === mode),
+    [progress, mode],
+  )
+  return (
+    <Card>
+      <CardHeader className="flex flex-row flex-wrap items-center justify-between gap-2">
         <CardTitle>Historique des sessions</CardTitle>
+        <select
+          aria-label="Filtrer par mode"
+          className="border-input bg-background h-8 rounded-md border px-2 text-xs"
+          value={mode}
+          onChange={(e) => setMode(e.target.value as SessionMode | '')}
+        >
+          <option value="">Tous les modes</option>
+          {(Object.keys(MODE_LABELS) as SessionMode[]).map((m) => (
+            <option key={m} value={m}>
+              {MODE_LABELS[m]}
+            </option>
+          ))}
+        </select>
       </CardHeader>
       <CardContent className="text-sm">
         {sessions.length === 0 ? (
           <p className="text-muted-foreground">Aucune session pour l’instant.</p>
         ) : (
           <ul className="flex flex-col divide-y">
-            {sessions.map((s) => (
+            {sessions.slice(0, 20).map((s) => (
               <li key={s.id} className="flex flex-wrap items-baseline justify-between gap-x-3 py-1.5">
                 <span>
                   {MODE_LABELS[s.mode]}
@@ -277,54 +385,20 @@ function History({ progress }: { progress: ProgressData }) {
 }
 
 function BackupCard() {
-  const input = useRef<HTMLInputElement>(null)
-  const [message, setMessage] = useState<string | null>(null)
-
-  const onFile = async (file: File) => {
-    try {
-      const data = JSON.parse(await file.text()) as ProgressExport
-      if (!window.confirm('Remplacer toute la progression de cet appareil par celle du fichier ?')) return
-      await importProgress(data)
-      setMessage(`Progression importée : ${data.attempts.length} tentatives, ${data.sessions.length} sessions.`)
-    } catch (e) {
-      setMessage(`Import impossible : ${e instanceof Error ? e.message : 'fichier illisible'}.`)
-    }
-  }
-
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Sauvegarde</CardTitle>
+        <CardTitle>Sauvegarde et réglages</CardTitle>
         <CardDescription>
-          La progression reste dans ce navigateur. Exportez-la pour la sauvegarder ou la reprendre sur un autre appareil.
+          La progression reste dans ce navigateur. Export, import, remise à zéro et objectif quotidien sont dans les réglages.
         </CardDescription>
       </CardHeader>
-      <CardContent className="flex flex-col gap-2">
-        <div className="flex flex-wrap gap-2">
-          <Button variant="outline" onClick={() => void downloadExport()}>
-            <Download /> Exporter ma progression (JSON)
-          </Button>
-          <Button variant="outline" onClick={() => input.current?.click()}>
-            <Upload /> Importer une progression
-          </Button>
-          <input
-            ref={input}
-            type="file"
-            accept="application/json,.json"
-            className="hidden"
-            aria-label="Fichier de progression"
-            onChange={(e) => {
-              const file = e.target.files?.[0]
-              if (file) void onFile(file)
-              e.target.value = ''
-            }}
-          />
-        </div>
-        {message && (
-          <p role="status" className="text-sm">
-            {message}
-          </p>
-        )}
+      <CardContent>
+        <Button asChild variant="outline">
+          <Link to="/reglages">
+            <Settings /> Ouvrir les réglages
+          </Link>
+        </Button>
       </CardContent>
     </Card>
   )

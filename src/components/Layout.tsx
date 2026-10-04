@@ -1,7 +1,8 @@
-import { BookOpen, ChartColumn, Dumbbell, House, Search } from 'lucide-react'
+import { BookOpen, ChartColumn, Dumbbell, House, Search, Settings } from 'lucide-react'
 import { Suspense } from 'react'
 import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom'
 
+import { PwaBanner } from '@/components/PwaBanner'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { Button } from '@/components/ui/button'
 import { useKeyboard } from '@/hooks/useKeyboard'
@@ -19,7 +20,8 @@ export function Layout() {
   // « / » ouvre la recherche (hors saisie dans un champ).
   useKeyboard((key) => (key === '/' ? (navigate('/recherche'), true) : false), true)
   return (
-    <div className="mx-auto flex min-h-dvh max-w-3xl flex-col">
+    <div className="mx-auto flex min-h-dvh max-w-3xl flex-col lg:max-w-5xl">
+      <PwaBanner />
       <header className="flex items-center justify-between px-4 pt-3">
         <Link to="/" className="text-muted-foreground text-sm font-semibold">
           DSCG Trainer
@@ -31,6 +33,11 @@ export function Layout() {
             </Link>
           </Button>
           <ThemeToggle />
+          <Button asChild variant="ghost" size="icon">
+            <Link to="/reglages" aria-label="Réglages" title="Réglages">
+              <Settings />
+            </Link>
+          </Button>
         </div>
       </header>
       <main className="flex-1 px-4 pt-3 pb-24">
@@ -40,7 +47,7 @@ export function Layout() {
         </Suspense>
       </main>
       <nav className="bg-background/95 fixed inset-x-0 bottom-0 border-t backdrop-blur" aria-label="Navigation principale">
-        <ul className="mx-auto grid max-w-3xl grid-cols-4">
+        <ul className="mx-auto grid max-w-3xl grid-cols-4 lg:max-w-5xl">
           {links.map(({ to, label, icon: Icon }) => (
             <li key={to}>
               <NavLink

@@ -2,12 +2,13 @@ import { render, screen, waitFor, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { MemoryRouter } from 'react-router-dom'
 
-import { taxonomy } from '@/content/load'
+import { loadExercises, taxonomy } from '@/content/load'
 import { db, type Attempt } from '@/db/db'
 import type { ProgressData } from '@/db/progress'
 import { DAY_MS } from '@/engine/srs'
 
-import { ProgressPage, ProgressView } from './ProgressPage'
+import { ProgressView } from './ProgressPage'
+import { SettingsPage } from './SettingsPage'
 
 const NOW = new Date(2026, 9, 12, 18, 0).getTime()
 const [n1, n2] = taxonomy.ues[3].themes[0].notions.map((n) => n.id)
@@ -28,6 +29,7 @@ const data: ProgressData = {
   attempts: [...attempts(n1, [true, true, true, true], 0), ...attempts(n2, [false, false, true], 1)],
   reviews: [{ notion: n2, due: NOW - 1000, interval: 1, ease: 2.3, repetitions: 0, lapses: 0 }],
   sessions: [{ id: 1, mode: 'smart', startedAt: NOW - DAY_MS, endedAt: NOW, exerciseIds: [] }],
+  marks: [],
 }
 
 function renderView(progress: ProgressData) {
@@ -39,6 +41,10 @@ function renderView(progress: ProgressData) {
 }
 
 describe('écran Progression', () => {
+  // La carte « réussite par type » lance le chargement du contenu : l'attendre avant la fin des tests,
+  // sinon les imports des fichiers UE se terminent après la destruction de l'environnement.
+  afterAll(() => loadExercises())
+
   it('chiffres clés, carte du programme, réussite par notion et historique', () => {
     renderView(data)
     expect(screen.getByText('7')).toBeInTheDocument() // exercices faits
@@ -54,12 +60,12 @@ describe('écran Progression', () => {
     expect(cells.filter((c) => c.dataset.mastery === 'new').length).toBeGreaterThan(50)
     expect(screen.getAllByRole('link', { name: /Maîtrisé : 100 % sur 4 tentatives/ })).toHaveLength(1)
 
-    expect(screen.getByText('Révision intelligente')).toBeInTheDocument()
+    expect(screen.getAllByText('Révision intelligente').length).toBeGreaterThan(0)
     expect(screen.getByText(/5\/7 réussis/)).toBeInTheDocument()
   })
 
   it('sans historique : tout est non travaillé', () => {
-    renderView({ attempts: [], reviews: [], sessions: [] })
+    renderView({ attempts: [], reviews: [], sessions: [], marks: [] })
     expect(screen.getByText('Aucune session pour l’instant.')).toBeInTheDocument()
     expect(screen.queryByRole('link', { name: /Réviser les/ })).not.toBeInTheDocument()
     expect(screen.getByText(`0 / ${taxonomy.ues.flatMap((u) => u.themes.flatMap((t) => t.notions)).length}`)).toBeInTheDocument()
@@ -70,7 +76,7 @@ describe('écran Progression', () => {
     vi.spyOn(window, 'confirm').mockReturnValue(true)
     render(
       <MemoryRouter>
-        <ProgressPage />
+        <SettingsPage />
       </MemoryRouter>,
     )
     const exported = { app: 'dscg-trainer', version: 1, exportedAt: new Date(NOW).toISOString(), ...data }
@@ -81,6 +87,5 @@ describe('écran Progression', () => {
       await screen.findByText(/Progression importée : 7 tentatives, 1 sessions/, undefined, { timeout: 10_000 }),
     ).toBeInTheDocument()
     await waitFor(async () => expect(await db.attempts.count()).toBe(7), { timeout: 10_000 })
-    expect(await screen.findByText('7', undefined, { timeout: 10_000 })).toBeInTheDocument()
   }, 30_000)
 })

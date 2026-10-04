@@ -33,7 +33,7 @@ describe('SessionPage', () => {
   it('examen blanc : pas de correction pendant l’épreuve, note sur 20 et correction à la fin', async () => {
     const user = userEvent.setup()
     renderAt('/session?mode=exam&seed=1&ue=UE4')
-    expect(screen.getByLabelText('Temps restant')).toHaveTextContent('4:00:00')
+    expect(await screen.findByLabelText('Temps restant')).toHaveTextContent('4:00:00')
     for (let i = 0; i < 2; i++) {
       if (screen.queryAllByRole('radio').length > 0) {
         await user.click(screen.getAllByRole('radio')[1])
@@ -49,6 +49,49 @@ describe('SessionPage', () => {
     await waitFor(async () => expect(await db.attempts.count()).toBe(2))
     expect((await db.sessions.toArray())[0]).toMatchObject({ mode: 'exam', scope: 'UE4' })
     expect(await db.reviews.count()).toBeGreaterThan(0)
+  })
+
+  it('examen blanc interrompu : proposé à la reprise avec le même sujet, chrono conservé', async () => {
+    const user = userEvent.setup()
+    const { unmount } = render(
+      <MemoryRouter initialEntries={['/session?mode=exam&seed=1&ue=UE4']}>
+        <Routes>
+          <Route path="/session" element={<SessionPage pool={pool} />} />
+        </Routes>
+      </MemoryRouter>,
+    )
+    expect(await screen.findByText('1 / 2')).toBeInTheDocument()
+    if (screen.queryAllByRole('radio').length > 0) {
+      await user.click(screen.getAllByRole('radio')[1])
+      await user.click(screen.getByRole('button', { name: 'Valider' }))
+    } else {
+      await user.click(screen.getByRole('button', { name: /Faux/ }))
+    }
+    await waitFor(async () => expect(await db.attempts.count()).toBe(1))
+    unmount()
+
+    renderAt('/session?mode=exam&seed=1&ue=UE4')
+    expect(await screen.findByText('Examen interrompu')).toBeInTheDocument()
+    expect(screen.getByText(/répondu à 1 exercice sur 2/)).toBeInTheDocument()
+    await user.click(screen.getByRole('button', { name: 'Reprendre l’examen' }))
+    expect(await screen.findByText('2 / 2')).toBeInTheDocument()
+    expect(await db.sessions.count()).toBe(1)
+  })
+
+  it('passer un exercice et confirmer l’arrêt', async () => {
+    const user = userEvent.setup()
+    vi.spyOn(window, 'confirm').mockReturnValue(false)
+    renderAt('/session?mode=theme&seed=1&ue=UE4')
+    expect(screen.getByLabelText('Durée de la session')).toBeInTheDocument()
+    await user.click(screen.getByRole('button', { name: /Passer/ }))
+    expect(screen.getByText('2 / 2')).toBeInTheDocument()
+    await user.click(screen.getByRole('button', { name: 'Terminer la session' }))
+    expect(window.confirm).toHaveBeenCalled()
+    expect(screen.queryByRole('heading', { name: 'Bilan de la session' })).not.toBeInTheDocument()
+    vi.mocked(window.confirm).mockReturnValue(true)
+    await user.click(screen.getByRole('button', { name: 'Terminer la session' }))
+    expect(screen.getByRole('heading', { name: 'Bilan de la session' })).toBeInTheDocument()
+    expect(screen.getByText(/0 exercice traité sur 2/)).toBeInTheDocument()
   })
 
   it('mode erreurs : rejoue seulement les exercices ratés', async () => {
@@ -83,6 +126,7 @@ describe('SessionPage', () => {
 
     expect(screen.getByRole('heading', { name: 'Bilan de la session' })).toBeInTheDocument()
     expect(screen.getByText(/2 \/ 2 réussis/)).toBeInTheDocument()
+    expect(screen.queryByText('Notions à revoir')).not.toBeInTheDocument()
     await waitFor(async () => expect(await db.attempts.count()).toBe(2))
     const sessions = await db.sessions.toArray()
     expect(sessions).toHaveLength(1)

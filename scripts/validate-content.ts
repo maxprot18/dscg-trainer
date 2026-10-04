@@ -25,6 +25,7 @@ import {
   type Taxonomy,
   type UeId,
 } from '../src/content/schema.ts'
+import { extractDiagramBlocks, parseDiagram } from '../src/content/diagramSchema.ts'
 import { buildTaxonomyIndex, checkPlacement, describePlacementProblem } from '../src/content/taxonomy.ts'
 
 // Messages Zod génériques en français (les messages métier du schéma le sont déjà).
@@ -45,6 +46,7 @@ export interface ValidationStats {
   notionsCovered: number
   notionsTotal: number
   courses: number
+  diagrams: number
 }
 
 export interface ValidationResult {
@@ -72,6 +74,7 @@ function emptyStats(): ValidationStats {
     notionsCovered: 0,
     notionsTotal: 0,
     courses: 0,
+    diagrams: 0,
   }
 }
 
@@ -241,6 +244,15 @@ export function validateContent(contentDir: string | URL, opts: ValidateOptions)
           .split(/\r?\n/)
           .filter((l) => l.trim() !== '')
         if (!lines[0]?.startsWith('# ')) errors.push(`${relPath} : la fiche doit commencer par un titre « # … »`)
+        const source = readFileSync(path.join(coursesDir, entry.name), 'utf8')
+        extractDiagramBlocks(source).forEach((block, k) => {
+          const parsed = parseDiagram(block)
+          if (!parsed.ok) errors.push(`${relPath} : diagramme ${k + 1} invalide (${parsed.error})`)
+          else stats.diagrams++
+        })
+        for (const m of source.matchAll(/\]\((\/cours\/([a-z0-9-]+))\)/g)) {
+          if (!index.notions.has(m[2])) errors.push(`${relPath} : lien vers une notion inconnue « ${m[2]} »`)
+        }
         if (lines.length < COURSE_MIN_LINES || lines.length > COURSE_MAX_LINES) {
           warnings.push(
             `${relPath} : ${lines.length} lignes non vides (attendu : ${COURSE_MIN_LINES} à ${COURSE_MAX_LINES})`,
@@ -272,7 +284,7 @@ export function formatSummary(stats: ValidationStats): string {
     `  Par UE              : ${byUe}`,
     `  Par type            : ${byType || '—'}`,
     `  Notions couvertes   : ${stats.notionsCovered} / ${total} (${pct(stats.notionsCovered, total)})`,
-    `  Fiches de cours     : ${stats.courses} / ${total}`,
+    `  Fiches de cours     : ${stats.courses} / ${total} (${stats.diagrams} diagrammes)`,
   ].join('\n')
 }
 

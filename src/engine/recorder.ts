@@ -3,7 +3,7 @@
  * jour l'état de répétition espacée (SM-2) de la notion de l'exercice.
  */
 import type { Exercise } from '@/content/schema'
-import { db as defaultDb, type DscgDatabase, type SessionMode } from '@/db/db'
+import { db as defaultDb, type Attempt, type DscgDatabase, type SessionMode } from '@/db/db'
 
 import type { ExerciseResult, PartResponse } from './grading'
 import { reviewAfterAttempt, sameDay } from './srs'
@@ -14,9 +14,41 @@ export async function startSession(
   scope?: string,
   database: DscgDatabase = defaultDb,
   now = Date.now(),
+  search?: string,
 ): Promise<number> {
-  const id = await database.sessions.add({ mode, scope, startedAt: now, exerciseIds: exercises.map((e) => e.id) })
+  const id = await database.sessions.add({ mode, scope, startedAt: now, exerciseIds: exercises.map((e) => e.id), search })
   return id as number
+}
+
+/** Délai au-delà duquel un examen interrompu n'est plus proposé à la reprise. */
+export const RESUME_WINDOW_MS = 24 * 60 * 60 * 1000
+
+export interface ResumableSession {
+  sessionId: number
+  startedAt: number
+  attempts: Attempt[]
+}
+
+/**
+ * Examen blanc interrompu pour les mêmes paramètres d'URL (même sujet) : session non terminée,
+ * commencée depuis moins de 24 h, dont la série d'exercices est identique.
+ */
+export async function findResumableSession(
+  search: string,
+  exerciseIds: readonly string[],
+  database: DscgDatabase = defaultDb,
+  now = Date.now(),
+): Promise<ResumableSession | null> {
+  const candidates = await database.sessions
+    .where('mode')
+    .equals('exam')
+    .filter((s) => s.search === search && s.endedAt === undefined && now - s.startedAt < RESUME_WINDOW_MS)
+    .toArray()
+  const session = candidates.sort((a, b) => b.startedAt - a.startedAt)[0]
+  if (!session || session.id === undefined) return null
+  if (session.exerciseIds.length !== exerciseIds.length || session.exerciseIds.some((id, i) => id !== exerciseIds[i])) return null
+  const attempts = await database.attempts.where('sessionId').equals(session.id).sortBy('date')
+  return { sessionId: session.id, startedAt: session.startedAt, attempts }
 }
 
 export async function recordAttempt(

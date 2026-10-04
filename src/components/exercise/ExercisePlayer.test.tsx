@@ -1,8 +1,10 @@
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
+import { MemoryRouter } from 'react-router-dom'
 
 import { exampleExercises } from '@/content/__fixtures__/examples'
 import { exerciseSchema, type Exercise } from '@/content/schema'
+import { formatNumber } from '@/engine/numbers'
 
 import { ExercisePlayer } from './ExercisePlayer'
 
@@ -10,7 +12,11 @@ const ex = (type: keyof typeof exampleExercises): Exercise => exerciseSchema.par
 
 function setup(exercise: Exercise) {
   const onComplete = vi.fn()
-  render(<ExercisePlayer exercise={exercise} onComplete={onComplete} />)
+  render(
+    <MemoryRouter>
+      <ExercisePlayer exercise={exercise} onComplete={onComplete} />
+    </MemoryRouter>,
+  )
   return { onComplete, user: userEvent.setup() }
 }
 
@@ -70,8 +76,14 @@ describe('ExercisePlayer', () => {
     for (const [i, [account, debit, credit]] of rows.entries()) {
       await user.type(screen.getByLabelText(`Compte ligne ${i + 1}`), account)
       if (debit) await user.type(screen.getByLabelText(`Débit ligne ${i + 1}`), debit)
-      if (credit) await user.type(screen.getByLabelText(`Crédit ligne ${i + 1}`), credit)
+      if (credit && i < 2) await user.type(screen.getByLabelText(`Crédit ligne ${i + 1}`), credit)
     }
+    // Libellé du compte affiché sous la saisie, puis « Équilibrer » complète le crédit manquant (1 200).
+    expect(screen.getByLabelText('Compte ligne 1').parentElement).toHaveTextContent('Achats de marchandises')
+    expect(screen.getByLabelText('Compte ligne 3').parentElement).toHaveTextContent('Fournisseurs')
+    await user.click(screen.getByRole('button', { name: /Équilibrer/ }))
+    expect(screen.getByLabelText('Crédit ligne 3')).toHaveValue(formatNumber(1200, 2))
+    expect(screen.getByRole('button', { name: /Équilibrer/ })).toBeDisabled()
     await user.click(screen.getByRole('button', { name: 'Valider l’écriture' }))
     expect(onComplete).toHaveBeenCalledWith(expect.objectContaining({ correct: true, score: 1 }), expect.anything())
     expect(screen.getAllByText('Juste')).toHaveLength(3)
@@ -86,6 +98,8 @@ describe('ExercisePlayer', () => {
 
   it('cas pratique : sous-questions enchaînées et barème', async () => {
     const { onComplete, user } = setup(ex('case_study'))
+    // L'énoncé est repliable (ouvert par défaut).
+    expect(screen.getByText('Replier').closest('details')).toHaveAttribute('open')
     expect(screen.getByText(/Question 1\/4/)).toBeInTheDocument()
     expect(screen.queryByText(/Question 2\/4/)).not.toBeInTheDocument()
     await user.click(screen.getAllByRole('radio')[0])
@@ -130,7 +144,11 @@ describe('ExercisePlayer', () => {
   it('examen blanc : réponse verrouillée, aucune correction pendant l’épreuve', async () => {
     const e = ex('mcq')
     const onComplete = vi.fn()
-    render(<ExercisePlayer exercise={e} onComplete={onComplete} deferFeedback />)
+    render(
+      <MemoryRouter>
+        <ExercisePlayer exercise={e} onComplete={onComplete} deferFeedback />
+      </MemoryRouter>,
+    )
     const user = userEvent.setup()
     await user.click(screen.getAllByRole('radio')[0])
     await user.click(screen.getByRole('button', { name: 'Valider' }))
@@ -144,7 +162,11 @@ describe('ExercisePlayer', () => {
 
   it('relecture : exercice affiché corrigé avec les réponses données', () => {
     const e = ex('mcq')
-    render(<ExercisePlayer exercise={e} review={[{ kind: 'choice', selected: [0] }]} />)
+    render(
+      <MemoryRouter>
+        <ExercisePlayer exercise={e} review={[{ kind: 'choice', selected: [0] }]} />
+      </MemoryRouter>,
+    )
     expect(screen.getByRole('status')).toHaveTextContent('Réponse incorrecte')
     expect(screen.getByText(e.explanation)).toBeInTheDocument()
     expect(screen.queryByRole('button', { name: 'Valider' })).not.toBeInTheDocument()

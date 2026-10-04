@@ -4,6 +4,7 @@ import { exerciseSchema, type Exercise } from '@/content/schema'
 import type { Attempt, Review } from '@/db/db'
 
 import {
+  buildCardsSession,
   buildErrorSession,
   buildExamSession,
   buildSmartSession,
@@ -122,6 +123,28 @@ describe('examen blanc', () => {
     expect(examGrade(exs, new Map([['a', 1], ['b', 1]]))).toBe(20)
     expect(examGrade(exs, new Map([['b', 0.5]]))).toBe(7.5)
     expect(examGrade([], new Map())).toBe(0)
+  })
+})
+
+describe('mode flashcards', () => {
+  it('cartes de l’UE ou du thème, mélangées, limitées', () => {
+    const cards = [
+      ...Array.from({ length: 5 }, (_, i) => ex(`c${i}`, { type: 'flashcard', theme: 'ifrs' } as Partial<Exercise>)),
+      ...Array.from({ length: 3 }, (_, i) => ex(`d${i}`, { type: 'flashcard', theme: 'conso' } as Partial<Exercise>)),
+      ex('ue2', { type: 'flashcard', ue: 'UE2' } as Partial<Exercise>),
+    ]
+    const p = [...pool, ...cards]
+    expect(buildCardsSession(p, undefined, 1)).toHaveLength(9)
+    expect(buildCardsSession(p, { ue: 'UE4' }, 1)).toHaveLength(8)
+    expect(buildCardsSession(p, { ue: 'UE4', theme: 'conso' }, 1).map((e) => e.id).sort()).toEqual(['d0', 'd1', 'd2'])
+    expect(buildCardsSession(p, undefined, 1, 4)).toHaveLength(4)
+    expect(buildCardsSession(pool, undefined, 1)).toEqual([])
+    expect(parseSessionSearch(new URLSearchParams(sessionSearch({ mode: 'cards', seed: 3, scope: { ue: 'UE4', theme: 'conso' } })))).toEqual({
+      mode: 'cards',
+      seed: 3,
+      scope: { ue: 'UE4', theme: 'conso' },
+    })
+    expect(parseSessionSearch(new URLSearchParams('mode=cards&seed=1'))).toEqual({ mode: 'cards', seed: 1 })
   })
 })
 
