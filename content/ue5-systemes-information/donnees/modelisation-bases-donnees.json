@@ -149,6 +149,55 @@
       "source_ref": "Méthode Merise : MCD, cardinalités, règles de passage au modèle relationnel ; normalisation (3FN) ; programme DSCG UE 5",
       "verified": true,
       "estimated_seconds": 900
+    },
+    {
+      "id": "ue5-donnees-modbd-0005",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "modelisation-bases-donnees",
+      "difficulty": 2,
+      "tags": [
+        "MCD",
+        "MLD",
+        "association n-n",
+        "clé primaire composée"
+      ],
+      "statement": "MCD : SALARIE (0,n) — PARTICIPER (nb_heures) — (1,n) PROJET. Un salarié peut participer à plusieurs projets, un projet mobilise au moins un salarié, et le nombre d'heures dépend du couple salarié-projet. Les identifiants sont matricule (SALARIE) et code_projet (PROJET) ; # signale une clé étrangère. Quel modèle relationnel est correct ?",
+      "options": [
+        "SALARIE (matricule, nom) ; PROJET (code_projet, libelle, #matricule, nb_heures)",
+        "SALARIE (matricule, nom, #code_projet, nb_heures) ; PROJET (code_projet, libelle)",
+        "SALARIE (matricule, nom, nb_heures) ; PROJET (code_projet, libelle) ; PARTICIPER (#matricule, #code_projet)",
+        "SALARIE (matricule, nom) ; PROJET (code_projet, libelle) ; PARTICIPER (#matricule, #code_projet, nb_heures), de clé primaire composée (matricule, code_projet)"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'option 4 est la bonne : l'association a une cardinalité maximale n des deux côtés (n-n), elle devient donc une table dont la clé primaire est composée des identifiants des deux entités, et qui reçoit la propriété de l'association (nb_heures). Les options 1 et 2 traitent l'association comme une relation père-fils en faisant migrer une seule clé : chaque projet ne pourrait alors avoir qu'un salarié (option 1) ou chaque salarié qu'un projet (option 2), ce qui contredit les cardinalités. L'option 3 crée bien la table d'association mais place nb_heures dans SALARIE, alors que ce nombre dépend du couple salarié-projet et non du seul salarié.",
+      "source_ref": "Méthode Merise : règles de passage du MCD au modèle relationnel (association n-n) ; modèle relationnel de Codd (1970)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue5-donnees-modbd-0006",
+      "type": "true_false",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "modelisation-bases-donnees",
+      "difficulty": 2,
+      "tags": [
+        "normalisation",
+        "2FN",
+        "dépendance partielle",
+        "clé primaire"
+      ],
+      "statement": "Une table en première forme normale dont la clé primaire est constituée d'un seul attribut peut présenter une dépendance partielle à la clé et ne pas respecter la deuxième forme normale.",
+      "answer": false,
+      "justification": "Faux : une dépendance partielle suppose une clé composée ; avec une clé d'un seul attribut, une table en 1FN est automatiquement en 2FN.",
+      "explanation": "La 2FN exige que tout attribut non clé dépende de toute la clé, et non d'une partie seulement. Avec une clé primaire réduite à un attribut, il n'existe pas de « partie » de clé : la dépendance partielle est impossible et la table en 1FN est en 2FN. Le défaut que l'on peut encore y trouver est une dépendance transitive (un attribut non clé qui dépend d'un autre attribut non clé, comme le nom du client dans une table des commandes), qui relève de la 3FN.",
+      "source_ref": "Normalisation du modèle relationnel (Codd) : définitions des 1FN, 2FN et 3FN",
+      "verified": true,
+      "estimated_seconds": 60
     }
   ]
 }

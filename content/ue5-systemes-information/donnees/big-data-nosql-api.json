@@ -99,6 +99,62 @@
       "source_ref": "Programme DSCG UE 5 : données massives (volume, stockage distribué)",
       "verified": true,
       "estimated_seconds": 180
+    },
+    {
+      "id": "ue5-donnees-bigdata-0005",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "big-data-nosql-api",
+      "difficulty": 1,
+      "tags": [
+        "lac de données",
+        "entrepôt de données",
+        "données brutes",
+        "big data"
+      ],
+      "statement": "Une entreprise veut conserver, dans leur format d'origine et sans définir de structure au préalable, les journaux de navigation de son site, les photos de ses produits et les courriels de ses clients, en vue d'analyses futures qui ne sont pas encore définies. Quelle solution correspond à ce besoin ?",
+      "options": [
+        "Un entrepôt de données structuré selon un modèle en étoile",
+        "Un lac de données",
+        "La base de données de l'ERP",
+        "Une base clé-valeur servant de cache aux sessions du site"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'option 2 est la bonne : le lac de données conserve des données brutes, structurées ou non, dans leur format d'origine, sans schéma préalable ; la structure n'est définie qu'au moment de l'analyse. L'option 1 suppose au contraire des données nettoyées, intégrées et structurées pour des analyses prévues. L'option 3 est une base transactionnelle (OLTP) au schéma fixe, conçue pour les opérations courantes et non pour stocker des images ou des courriels en masse. L'option 4 sert à retrouver très vite une valeur par sa clé, pas à conserver durablement des données hétérogènes pour l'analyse.",
+      "source_ref": "Programme DSCG UE 5 (données massives) : lac de données et entrepôt de données",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue5-donnees-bigdata-0006",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "big-data-nosql-api",
+      "difficulty": 2,
+      "tags": [
+        "Data Act",
+        "cloud",
+        "changement de fournisseur",
+        "frais de migration"
+      ],
+      "statement": "En octobre 2026, une PME décide de quitter son fournisseur de services de cloud pour un concurrent et de faire migrer ses données. Selon le règlement (UE) 2023/2854 (Data Act), que peut lui facturer le fournisseur sortant au titre du changement de fournisseur ?",
+      "options": [
+        "Des frais de changement librement fixés, dès lors qu'ils sont prévus au contrat",
+        "Rien : tous les frais de changement de fournisseur sont interdits depuis le 12 septembre 2025",
+        "Des frais de changement limités aux coûts directement liés à la migration, ces frais devant disparaître à compter du 12 janvier 2027",
+        "Le Data Act ne s'applique pas : il ne concerne que les données des objets connectés, pas les services de cloud"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'option 3 est la bonne : le Data Act, applicable pour l'essentiel depuis le 12 septembre 2025, facilite le changement de fournisseur de cloud ; pendant une période transitoire, les frais de changement sont plafonnés aux coûts directement liés à l'opération, puis ils sont supprimés à compter du 12 janvier 2027 (art. 29). L'option 1 ignore cet encadrement, qui vise précisément les clauses qui verrouillent le client. L'option 2 avance la suppression totale des frais : en octobre 2026, des frais limités aux coûts directs restent possibles. L'option 4 est inexacte : le règlement couvre à la fois les données des produits connectés et le changement de fournisseur de services de traitement de données (cloud).",
+      "source_ref": "Règlement (UE) 2023/2854 (Data Act), art. 29 (frais de changement de fournisseur de services de traitement de données) et dispositions d’application",
+      "verified": true,
+      "estimated_seconds": 75
     }
   ]
 }

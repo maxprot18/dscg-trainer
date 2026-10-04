@@ -99,6 +99,53 @@
       "source_ref": "R. Solow, New York Times Book Review, 12 juillet 1987 ; travaux sur la valeur des SI (actifs complémentaires)",
       "verified": true,
       "estimated_seconds": 45
+    },
+    {
+      "id": "ue5-siorg-transfo-0005",
+      "type": "numeric",
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "transformation-numerique-valeur",
+      "difficulty": 2,
+      "tags": [
+        "délai de récupération",
+        "flux inégaux",
+        "projet numérique",
+        "risque"
+      ],
+      "statement": "Une entreprise de transport étudie un outil d'optimisation des tournées. Investissement : 150 000 € en début d'année 1. Flux nets de trésorerie attendus : 30 000 € en année 1, 50 000 € en année 2, 90 000 € en année 3 et 60 000 € en année 4. Les flux de chaque année sont supposés répartis uniformément sur l'année. Calculez le délai de récupération non actualisé (en années, arrondi au centième).",
+      "expected_value": 2.78,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.02
+      },
+      "unit": "ans",
+      "decimals": 2,
+      "explanation": "Flux cumulés : 30 000 € fin d'année 1, 80 000 € fin d'année 2, 170 000 € fin d'année 3. L'investissement de 150 000 € est récupéré au cours de l'année 3 : il manque 150 000 − 80 000 = 70 000 € au début de l'année 3, couverts en 70 000 ÷ 90 000 = 0,78 an. Délai = 2 + 0,78 = 2,78 ans (environ 2 ans et 9 mois). Erreur classique : diviser l'investissement par le flux moyen (150 000 ÷ 57 500 = 2,61 ans), ce qui ignore le profil des flux. Le délai de récupération mesure la vitesse de retour des fonds (risque) mais ignore les flux postérieurs et l'actualisation : il ne dit rien de la richesse créée, que mesure la VAN.",
+      "source_ref": "Évaluation des investissements : délai de récupération = date où les flux nets de trésorerie cumulés égalent l’investissement initial",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue5-siorg-transfo-0006",
+      "type": "true_false",
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "transformation-numerique-valeur",
+      "difficulty": 2,
+      "tags": [
+        "conformité",
+        "facturation électronique",
+        "VAN",
+        "réduction du risque"
+      ],
+      "statement": "Un projet de mise en conformité avec la facturation électronique obligatoire peut être justifié même si sa VAN, calculée sur les seuls gains chiffrables, est négative.",
+      "answer": true,
+      "justification": "Vrai : un projet de conformité se justifie par le risque qu'il évite (sanctions, impossibilité d'émettre ou de recevoir des factures conformes), qui ne figure pas dans une VAN limitée aux gains chiffrables.",
+      "explanation": "La VAN mesure la richesse créée par les flux chiffrables. Certains projets, comme la conformité réglementaire, la sécurité ou le remplacement d'un système obsolète, ont pour objet principal de réduire un risque : ne pas les réaliser exposerait l'entreprise à des sanctions ou à une rupture de son activité, coût qui n'apparaît pas dans le calcul. On les compare alors entre eux par le coût (choisir la solution conforme la moins coûteuse) et on les complète par des indicateurs non financiers (délai de traitement, taux d'erreur, piste d'audit).",
+      "source_ref": "Évaluation des investissements SI : projets de conformité et de réduction de risque ; obligation de facturation électronique (CGI art. 289 bis)",
+      "verified": true,
+      "estimated_seconds": 60
     }
   ]
 }

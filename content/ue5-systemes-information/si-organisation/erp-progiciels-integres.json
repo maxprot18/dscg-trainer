@@ -167,6 +167,75 @@
       "source_ref": "Programme DSCG UE 5 : progiciels de gestion intégrés (coût total de possession, conduite de projet) ; VAN = −I₀ + Σ FNTₜ (1 + k)⁻ᵗ",
       "verified": true,
       "estimated_seconds": 900
+    },
+    {
+      "id": "ue5-siorg-erp-0005",
+      "type": "journal_entry",
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "erp-progiciels-integres",
+      "difficulty": 2,
+      "tags": [
+        "logiciel créé en interne",
+        "production immobilisée",
+        "compte 232",
+        "compte 721",
+        "mise en service"
+      ],
+      "statement": "La société Galibier développe en interne un module spécifique de déclaration en douane pour son ERP. Les coûts de l'étude préalable et de l'analyse fonctionnelle, engagés en N, ont été laissés en charges. Les coûts de développement de N (48 000 €) ont été inscrits le 31/12/N au débit du compte 232 par le crédit du compte 721. En N+1, jusqu'à la mise en service du module le 1er avril, les coûts de développement (salaires des développeurs, déjà enregistrés en charges par nature) s'élèvent à 30 000 € ; la formation des utilisateurs du module (5 000 €, également enregistrée en charges) a eu lieu en mars. Passez l'écriture unique du 1er avril N+1 qui enregistre la production immobilisée de N+1 directement au compte définitif du logiciel et solde le compte d'immobilisation en cours.",
+      "date": "01/04/N+1",
+      "entries": [
+        {
+          "account": "205",
+          "label": "Concessions et droits similaires, brevets, licences, logiciels",
+          "debit": 78000,
+          "credit": 0
+        },
+        {
+          "account": "232",
+          "label": "Immobilisations incorporelles en cours",
+          "debit": 0,
+          "credit": 48000
+        },
+        {
+          "account": "721",
+          "label": "Production immobilisée – Immobilisations incorporelles",
+          "debit": 0,
+          "credit": 30000
+        }
+      ],
+      "explanation": "Un logiciel créé par l'entreprise pour son propre usage s'immobilise à partir de la phase de développement : les coûts de l'étude préalable et de l'analyse fonctionnelle restent en charges. Pendant le développement, la production est portée au compte 232 par le crédit du compte 721 (production immobilisée, immobilisations incorporelles), qui neutralise dans le résultat les charges par nature déjà enregistrées. À la mise en service, le logiciel passe au compte 205 pour son coût total de production : 48 000 € (N, soldés du compte 232) + 30 000 € (N+1, inscrits directement par le crédit du 721) = 78 000 €. La formation des utilisateurs (5 000 €) n'est pas un coût de production du logiciel : elle reste en charges. Le logiciel sera amorti à compter du 1er avril N+1 (compte 2805).",
+      "source_ref": "PCG art. 611-1 à 611-5 (solutions informatiques créées par l’entité, règl. ANC 2014-03 modifié par le règl. ANC 2023-05) ; comptes 205, 232 et 721",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue5-siorg-erp-0006",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "erp-progiciels-integres",
+      "difficulty": 1,
+      "tags": [
+        "ERP",
+        "base de données unique",
+        "propagation des erreurs",
+        "intégration"
+      ],
+      "statement": "Dans l'ERP d'une entreprise, un magasinier saisit par erreur la réception de 1 000 unités au lieu de 100. Quelle conséquence est la plus probable ?",
+      "options": [
+        "L'erreur reste cantonnée au module de gestion des stocks jusqu'au transfert manuel des données vers la comptabilité",
+        "L'ERP rejette automatiquement la saisie, la base de données unique garantissant l'exactitude des quantités",
+        "Aucune incidence comptable, la comptabilité étant tenue dans un logiciel distinct de celui des stocks",
+        "L'erreur se répercute aussitôt dans tous les modules concernés : stocks, réception à rapprocher de la facture fournisseur, comptabilité"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'option 4 est la bonne : les modules d'un ERP partagent une base de données unique et une saisie unique les met à jour en temps réel ; la contrepartie de cette intégration est qu'une erreur de saisie se propage à tous les modules concernés. D'où l'importance des contrôles à la saisie et du rapprochement réception-facture. L'option 1 décrit un ensemble de logiciels non intégrés reliés par des transferts, ce qu'un ERP supprime précisément. L'option 2 confond cohérence et exactitude : la base unique assure que tous les modules voient la même donnée, pas que cette donnée est juste. L'option 3 est contraire au principe même du progiciel intégré, dont la comptabilité est un module.",
+      "source_ref": "Programme DSCG UE 5 : progiciels de gestion intégrés (base de données unique, intégration des processus, limites)",
+      "verified": true,
+      "estimated_seconds": 45
     }
   ]
 }

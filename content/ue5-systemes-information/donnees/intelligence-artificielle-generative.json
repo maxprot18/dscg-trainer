@@ -95,6 +95,110 @@
       "source_ref": "Règlement (UE) 2024/1689 (AI Act), art. 4 et 50 ; programme DSCG UE 5 : intelligence artificielle générative (usages et limites)",
       "verified": true,
       "estimated_seconds": 40
+    },
+    {
+      "id": "ue5-donnees-ia-0005",
+      "type": "case_study",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "intelligence-artificielle-generative",
+      "difficulty": 3,
+      "tags": [
+        "AI Act",
+        "haut risque",
+        "scoring de crédit",
+        "rappel",
+        "transparence"
+      ],
+      "title": "Financière Lauze : un modèle de score de crédit et un assistant conversationnel",
+      "context": "La Financière Lauze, établissement de crédit à la consommation établi à Lyon, a développé en interne un modèle d'apprentissage automatique qui évalue la solvabilité des particuliers demandeurs de prêt. Elle l'utilise elle-même pour accorder ou refuser les crédits ; elle est donc à la fois fournisseur et déployeur du système.\n\nLe modèle a été testé sur 8 000 dossiers historiques, dont 400 ont effectivement connu un défaut de remboursement. Il en a signalé 640 comme « à risque », dont 320 correspondent à des défauts réels.\n\nLe directeur des risques propose que les demandes notées « à risque » soient refusées automatiquement, sans intervention d'un conseiller, afin de réduire les délais de réponse.\n\nPar ailleurs, depuis septembre 2026, un assistant conversationnel que la Financière Lauze a développé à partir d'un grand modèle de langage, et qu'elle a mis en service sous son nom, répond sur le site aux questions des clients sur leurs contrats ; rien n'indique aux clients qu'ils échangent avec une machine.\n\nOn se place en octobre 2026. On retient que le règlement (UE) 2026/1744 a reporté au 2 décembre 2027 l'application des obligations relatives aux systèmes à haut risque de l'annexe III de l'AI Act.",
+      "sub_questions": [
+        {
+          "id": "q1-rappel",
+          "kind": "numeric",
+          "prompt": "Calculez le rappel du modèle, c’est-à-dire la part des défauts réels qu’il détecte (en %, arrondi à l’unité).",
+          "points": 2,
+          "expected_value": 80,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "%",
+          "decimals": 0,
+          "explanation": "Rappel = vrais positifs ÷ (vrais positifs + faux négatifs) = 320 ÷ 400 = 80 % : 80 défauts réels ne sont pas détectés. La précision est de 320 ÷ 640 = 50 % (une alerte sur deux vise un client qui aurait remboursé). L'exactitude, (320 + 7 280) ÷ 8 000 = 95 %, est flatteuse car les défauts sont rares (5 % des dossiers). Erreur classique : confondre rappel et précision (50 %)."
+        },
+        {
+          "id": "q2-classement",
+          "kind": "mcq",
+          "prompt": "Comment l'AI Act classe-t-il le modèle de score de crédit de la Financière Lauze ?",
+          "points": 2,
+          "options": [
+            "Pratique interdite (art. 5), car il s’agit d’une notation des personnes",
+            "Système à haut risque (art. 6 et annexe III : évaluation de la solvabilité des personnes physiques), dont les obligations s’appliqueront à compter du 2 décembre 2027",
+            "Système soumis à la seule obligation de transparence (art. 50)",
+            "Système à risque minimal, sans obligation, car il est développé et utilisé en interne"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "L'option 2 est la bonne : l'évaluation de la solvabilité des personnes physiques figure à l'annexe III ; c'est un système à haut risque, dont les obligations (gestion des risques, qualité des données, documentation, journalisation, contrôle humain, marquage CE) s'appliquent, après le report de l'omnibus IA, à compter du 2 décembre 2027. L'option 1 confond avec la notation sociale, interdite, qui évalue des personnes sur leur comportement social en général. L'option 3 vise les systèmes qui interagissent avec des personnes ou génèrent du contenu. L'option 4 est fausse : développer un système pour son propre usage, c'est le mettre en service, ce qui fait de l'établissement un fournisseur soumis au règlement."
+        },
+        {
+          "id": "q3-assistant",
+          "kind": "true_false",
+          "prompt": "En octobre 2026, la Financière Lauze doit informer les clients qu'ils interagissent avec une IA lorsqu'ils utilisent l'assistant conversationnel, sauf si cela ressort clairement des circonstances.",
+          "points": 2,
+          "answer": true,
+          "explanation": "Vrai : l'obligation de transparence de l'article 50 de l'AI Act s'applique depuis le 2 août 2026. Un système destiné à interagir avec des personnes doit être conçu pour qu'elles sachent qu'elles échangent avec une IA, sauf évidence ; ce n'est pas le cas ici, rien ne l'indiquant aux clients."
+        },
+        {
+          "id": "q4-refus-auto",
+          "kind": "open",
+          "prompt": "Analysez la proposition du directeur des risques (refus automatique) et présentez les mesures que la Financière Lauze doit prévoir pour son modèle.",
+          "points": 4,
+          "model_answer": "Performance : avec une précision de 50 %, refuser automatiquement les 640 dossiers signalés reviendrait à écarter 320 clients qui auraient remboursé, tout en laissant passer 80 défauts (rappel de 80 %) ; l'exactitude de 95 % ne doit pas faire illusion. Droit applicable : un refus de crédit entièrement automatisé produit des effets significatifs sur la personne ; le RGPD (art. 22) l'interdit sauf exceptions (nécessité contractuelle, consentement explicite, autorisation légale), et impose alors des garanties : droit d'obtenir une intervention humaine, d'exprimer son point de vue et de contester la décision, information sur la logique sous-jacente. Il faut donc maintenir l'examen par un conseiller des dossiers signalés. AI Act : comme fournisseur d'un système à haut risque, l'établissement doit préparer, pour le 2 décembre 2027, un système de gestion des risques, des données d'entraînement de qualité et contrôlées contre les biais, une documentation technique, la journalisation des décisions, un contrôle humain effectif et l'évaluation de conformité avec marquage CE ; comme déployeur, il utilise le système selon sa notice et en assure la surveillance humaine. Il faut aussi suivre la dérive du modèle dans le temps et former les conseillers (maîtrise de l'IA, art. 4, déjà applicable). Une analyse d'impact sur la protection des données s'impose pour ce profilage. Enfin, l'assistant conversationnel doit être mis en conformité sans délai (information des clients, art. 50).",
+          "key_points": [
+            "Précision de 50 % : un refus automatique écarterait 320 bons clients ; l’exactitude de 95 % est trompeuse",
+            "RGPD art. 22 : décision entièrement automatisée encadrée, droit à une intervention humaine et à contestation",
+            "Haut risque (annexe III) : gestion des risques, qualité des données et biais, documentation, journalisation, contrôle humain, marquage CE pour le 2 décembre 2027",
+            "Obligations de déployeur, suivi de la dérive, formation des équipes ; AIPD",
+            "Mise en conformité immédiate de l’assistant (transparence, art. 50)"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Rappel = 320 ÷ 400 = 80 %, précision = 320 ÷ 640 = 50 %, exactitude 95 % trompeuse. Le score de solvabilité des particuliers est un système à haut risque (annexe III), obligations applicables au 2 décembre 2027 après report ; l'assistant conversationnel relève de l'obligation de transparence, applicable depuis le 2 août 2026. Un refus entièrement automatisé se heurte à l'article 22 du RGPD et à l'exigence de contrôle humain.",
+      "source_ref": "Règlement (UE) 2024/1689 (AI Act), art. 3, 4, 6, 50, 113 et annexe III, modifié par le règlement (UE) 2026/1744 ; RGPD art. 22 et 35",
+      "verified": true,
+      "estimated_seconds": 900
+    },
+    {
+      "id": "ue5-donnees-ia-0006",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "intelligence-artificielle-generative",
+      "difficulty": 1,
+      "tags": [
+        "apprentissage automatique",
+        "apprentissage supervisé",
+        "détection de fraude"
+      ],
+      "statement": "Un modèle est entraîné sur un historique de 50 000 factures fournisseurs, chacune étiquetée « frauduleuse » ou « légitime » après contrôle, afin de classer automatiquement les nouvelles factures reçues. De quel type d'apprentissage s'agit-il ?",
+      "options": [
+        "Apprentissage non supervisé",
+        "Apprentissage par renforcement",
+        "IA générative",
+        "Apprentissage supervisé"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'option 4 est la bonne : le modèle apprend à partir de données étiquetées (le résultat attendu, frauduleuse ou légitime, est connu pour chaque exemple) afin de prédire l'étiquette de cas nouveaux ; c'est la définition de l'apprentissage supervisé. L'option 1 travaille sans étiquette (regroupement, détection d'anomalies). L'option 2 apprend une suite de décisions à partir de récompenses. L'option 3 désigne des modèles qui produisent du contenu (texte, image, code), non un classement.",
+      "source_ref": "Programme DSCG UE 5 : intelligence artificielle, apprentissage automatique (supervisé, non supervisé, par renforcement)",
+      "verified": true,
+      "estimated_seconds": 45
     }
   ]
 }

@@ -161,6 +161,53 @@
       "source_ref": "Modélisation dimensionnelle (R. Kimball) ; définition de l’entrepôt de données (W. Inmon) ; programme DSCG UE 5 (informatique décisionnelle)",
       "verified": true,
       "estimated_seconds": 900
+    },
+    {
+      "id": "ue5-donnees-bi-0005",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "business-intelligence-dataviz",
+      "difficulty": 2,
+      "tags": [
+        "modèle en étoile",
+        "grain",
+        "table de faits",
+        "OLAP"
+      ],
+      "statement": "La table de faits VENTES d'un entrepôt de données a pour grain jour × magasin × produit (mesures : quantité vendue, CA, marge). Le directeur marketing demande le panier moyen par ticket de caisse (CA ÷ nombre de tickets), par magasin et par mois. Que faut-il lui répondre ?",
+      "options": [
+        "Il suffit d'agréger (roll-up) les ventes du jour au mois dans la dimension temps",
+        "Un forage vers le détail (drill-down) depuis le jour permet d'atteindre chaque ticket",
+        "Le ticket n'existe pas au grain retenu : il faut une table de faits plus fine, au grain du ticket ou de la ligne de ticket",
+        "Il suffit d'ajouter une dimension CLIENT reliée à la table de faits existante"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'option 3 est la bonne : le grain fixe le niveau de détail d'une ligne de faits ; au grain jour × magasin × produit, les ventes d'un même ticket sont fondues avec celles des autres tickets, et le nombre de tickets ne peut pas être reconstitué (un ticket contient souvent plusieurs produits). Il faut alimenter une table de faits au grain du ticket ou de la ligne de ticket. L'option 1 donne le CA mensuel, pas le nombre de tickets. L'option 2 est impossible : on ne peut pas forer en dessous du grain stocké. L'option 4 ne résout rien : une dimension supplémentaire ne crée pas un niveau de détail que la table de faits n'a pas enregistré.",
+      "source_ref": "Modélisation dimensionnelle (R. Kimball) : grain de la table de faits ; analyse OLAP (drill-down, roll-up)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue5-donnees-bi-0006",
+      "type": "flashcard",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "business-intelligence-dataviz",
+      "difficulty": 1,
+      "tags": [
+        "ETL",
+        "entrepôt de données",
+        "alimentation"
+      ],
+      "front": "Que signifie ETL et quel est le rôle de chacune de ses étapes dans l'alimentation d'un entrepôt de données ?",
+      "back": "ETL : extraction, transformation, chargement (Extract, Transform, Load).\n- Extraction : lecture des données dans les systèmes sources (ERP, CRM, caisses, fichiers).\n- Transformation : nettoyage, dédoublonnage, harmonisation des codes, conversion des unités et devises, calculs et agrégations.\n- Chargement : écriture dans l'entrepôt, en général la nuit : les données y sont disponibles à J+1, pas en temps réel.",
+      "explanation": "La transformation conditionne la qualité des tableaux de bord : c'est là que les codes produits de la caisse, de l'ERP et du programme de fidélité sont rendus cohérents. L'entrepôt est alimenté périodiquement et ne remplace pas les bases des applications de gestion.",
+      "source_ref": "Entrepôt de données (W. Inmon) et modélisation dimensionnelle (R. Kimball) : alimentation ETL",
+      "verified": true,
+      "estimated_seconds": 45
     }
   ]
 }
