@@ -1,0 +1,25 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-difficulte-rj-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "redressement-judiciaire",
+      "difficulty": 2,
+      "tags": ["cessation des paiements", "délai de déclaration", "procédures collectives"],
+      "statement": "Le 2 mai, la dirigeante de la SARL Orvalis constate que l'actif disponible de la société ne permet plus de faire face à son passif exigible, aucune réserve de crédit ni moratoire n'ayant été obtenu. Le redressement reste envisageable. Aucune procédure de conciliation n'a été demandée. Quelle affirmation est exacte ?",
+      "options": [
+        "La société doit demander l'ouverture d'une procédure de redressement judiciaire au plus tard dans les 45 jours qui suivent la cessation des paiements",
+        "La société dispose d'un délai de 18 mois à compter de la cessation des paiements pour demander l'ouverture d'une procédure collective",
+        "La société peut encore demander l'ouverture d'une procédure de sauvegarde, réservée aux débiteurs en cessation des paiements depuis moins de 45 jours",
+        "Seul un créancier ou le ministère public peut saisir le tribunal ; le débiteur n'a pas qualité pour demander l'ouverture d'un redressement judiciaire"
+      ],
+      "answer": [0],
+      "explanation": "La société est en cessation des paiements (impossibilité de faire face au passif exigible avec l'actif disponible, C. com. art. L631-1). Le débiteur doit alors demander l'ouverture d'un redressement judiciaire au plus tard dans les 45 jours suivant la cessation des paiements, s'il n'a pas demandé dans ce délai l'ouverture d'une conciliation (art. L631-4) ; le défaut de déclaration dans ce délai peut entraîner des sanctions pour le dirigeant. Le délai de 18 mois correspond à autre chose : c'est le report maximal de la date de cessation des paiements que peut fixer le tribunal avant le jugement d'ouverture (art. L631-8). La sauvegarde est réservée au débiteur qui n'est pas en cessation des paiements (art. L620-1). Enfin, le débiteur est le premier à pouvoir saisir le tribunal ; un créancier ou le ministère public peuvent également le faire (art. L631-5).",
+      "source_ref": "C. com. art. L631-1, L631-4, L631-5 et L631-8 ; art. L620-1 (sauvegarde)",
+      "verified": true,
+      "estimated_seconds": 75
+    }
+  ]
+}

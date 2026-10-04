@@ -4,6 +4,7 @@ import { Layout } from '@/components/Layout'
 import { CoursesPage } from '@/pages/CoursesPage'
 import { HomePage } from '@/pages/HomePage'
 import { ProgressPage } from '@/pages/ProgressPage'
+import { SessionPage } from '@/pages/SessionPage'
 import { TrainPage } from '@/pages/TrainPage'
 
 export function AppRoutes() {
@@ -14,6 +15,7 @@ export function AppRoutes() {
         <Route path="entrainement" element={<TrainPage />} />
         <Route path="cours" element={<CoursesPage />} />
         <Route path="progression" element={<ProgressPage />} />
+        <Route path="session" element={<SessionPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>

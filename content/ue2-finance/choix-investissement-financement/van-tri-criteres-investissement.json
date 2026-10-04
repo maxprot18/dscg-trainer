@@ -17,6 +17,31 @@
       "source_ref": "Formule de la VAN — calcul financier (actualisation de flux constants)",
       "verified": true,
       "estimated_seconds": 180
+    },
+    {
+      "id": "ue2-invest-van-0002",
+      "type": "numeric",
+      "ue": "UE2",
+      "theme": "choix-investissement-financement",
+      "notion": "van-tri-criteres-investissement",
+      "difficulty": 2,
+      "tags": [
+        "TRI",
+        "actualisation",
+        "interpolation"
+      ],
+      "source_ref": "Définition du taux de rendement interne (taux annulant la VAN) — calcul financier",
+      "verified": true,
+      "estimated_seconds": 300,
+      "statement": "Un projet requiert un investissement de 50 000 € décaissé en date 0. Il dégage des flux nets de trésorerie de fin d'année de 15 000 € (année 1), 18 000 € (année 2), 20 000 € (année 3) et 12 000 € (année 4), sans valeur résiduelle. Calculez le taux de rendement interne (TRI) du projet, en pourcentage (ex. 9,25 pour 9,25 %).",
+      "expected_value": 11.62,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "unit": "%",
+      "decimals": 2,
+      "explanation": "Le TRI est le taux t qui annule la VAN : −50 000 + 15 000(1+t)^−1 + 18 000(1+t)^−2 + 20 000(1+t)^−3 + 12 000(1+t)^−4 = 0. Encadrement : VAN(11 %) ≈ +651,32 € et VAN(12 %) ≈ −395,83 €. Interpolation linéaire : t ≈ 11 % + 1 % × 651,32 / (651,32 + 395,83) ≈ 11,62 %. La résolution exacte (dichotomie) donne t ≈ 11,618 %. Le projet est acceptable si le TRI dépasse le coût du capital exigé."
     }
   ]
 }

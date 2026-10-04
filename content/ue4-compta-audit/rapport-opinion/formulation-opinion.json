@@ -1,0 +1,25 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-rapport-opinion-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "formulation-opinion",
+      "difficulty": 3,
+      "tags": ["opinion", "limitation", "impossibilité de certifier", "NEP 700"],
+      "statement": "Nommé tardivement, le commissaire aux comptes de Sigma n'a pas pu assister à l'inventaire physique de clôture. Les stocks représentent 48 % du total du bilan et les procédures alternatives (inventaire tournant, comptages postérieurs) se révèlent impossibles faute de suivi fiable des mouvements. L'incidence possible touche le résultat, les capitaux propres, la marge et plusieurs notes de l'annexe. Aucune autre difficulté n'a été relevée. Quelle opinion doit-il exprimer ?",
+      "options": [
+        "Une certification avec réserve pour limitation, limitée aux stocks",
+        "Un refus de certifier pour désaccord sur l'évaluation des stocks",
+        "Une impossibilité de certifier",
+        "Une certification sans réserve, assortie d'une observation sur les stocks"
+      ],
+      "answer": [2],
+      "explanation": "Il s'agit d'une limitation de l'étendue des travaux, et non d'un désaccord : le commissaire aux comptes n'a pas identifié d'anomalie, il n'a pas pu collecter les éléments suffisants et appropriés. Ce motif exclut le refus de certifier, qui sanctionne des anomalies significatives à effet diffus. Selon la NEP 700, une limitation conduit à une réserve lorsque ses incidences possibles sont significatives mais circonscrites. Elle conduit à une impossibilité de certifier lorsque ces incidences ne peuvent pas être circonscrites, c'est-à-dire lorsqu'elles sont diffuses. Ici les stocks représentent près de la moitié du bilan et l'incertitude se propage au résultat, aux capitaux propres et à l'annexe : l'effet est diffus. L'observation ne sert qu'à attirer l'attention sur une information correctement présentée dans l'annexe ; elle ne remplace jamais une réserve.",
+      "source_ref": "NEP 700 (rapports du commissaire aux comptes sur les comptes annuels et consolidés : réserve, refus, impossibilité de certifier) ; NEP 501 (présence à l'inventaire physique)",
+      "verified": true,
+      "estimated_seconds": 90
+    }
+  ]
+}

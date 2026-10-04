@@ -1,0 +1,103 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-ifrs-ias38-0001",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-38-immobilisations-incorporelles",
+      "difficulty": 3,
+      "tags": [
+        "frais de recherche",
+        "frais de développement",
+        "coût d’un actif généré en interne",
+        "amortissement"
+      ],
+      "title": "Logiciel développé en interne chez Delta",
+      "context": "La société Delta, qui établit ses comptes consolidés en IFRS, développe en interne un logiciel de planification destiné à être commercialisé sous licence.\nDe janvier à mars N, ses équipes ont mené des travaux d'exploration (tests de faisabilité de plusieurs algorithmes, études de solutions alternatives) pour un coût de 120 000 €.\nLe 1er avril N, la direction a arrêté la solution technique et a pu démontrer que tous les critères d'activation prévus par IAS 38 pour les dépenses de développement étaient remplis.\nD'avril à décembre N, les coûts suivants ont été engagés pour le projet :\n- salaires et charges sociales des développeurs affectés au projet : 300 000 € ;\n- licences de composants logiciels et matières consommées directement par le projet : 50 000 € ;\n- amortissement du matériel informatique utilisé pour le développement : 25 000 € ;\n- quote-part des frais administratifs généraux du siège : 40 000 € ;\n- formation des commerciaux à la vente du futur logiciel : 15 000 €.\nLe logiciel est prêt à être utilisé et mis en service le 01/01/N+1. Sa durée d'utilité est estimée à 5 ans ; le mode linéaire est retenu et la valeur résiduelle est nulle.\nAucun indice de perte de valeur n'existe au 31/12/N+1.\nLes filiales françaises du groupe appliquent par ailleurs le PCG dans leurs comptes individuels.",
+      "sub_questions": [
+        {
+          "id": "q1-recherche",
+          "kind": "mcq",
+          "prompt": "Comment traiter, en IFRS, les 120 000 € engagés de janvier à mars N ?",
+          "points": 2,
+          "options": [
+            "Les immobiliser, puisque le projet a ensuite abouti",
+            "Les comptabiliser en charges de l’exercice N",
+            "Les immobiliser dès lors que le logiciel est mis en service en N+1",
+            "Les porter en charges constatées d’avance jusqu’à la mise en service"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Ces travaux relèvent de la phase de recherche (exploration, évaluation d'alternatives). Les dépenses de recherche sont toujours comptabilisées en charges lorsqu'elles sont engagées (IAS 38 §54-56) et ne peuvent pas être réintégrées dans le coût de l'actif ultérieurement, même si le projet aboutit (§71)."
+        },
+        {
+          "id": "q2-criteres",
+          "kind": "open",
+          "prompt": "Énoncez les conditions qui ont dû être démontrées au 1er avril N pour activer les dépenses de développement.",
+          "points": 4,
+          "model_answer": "Une immobilisation incorporelle résultant du développement est comptabilisée si l'entité peut démontrer, cumulativement : (1) la faisabilité technique de l'achèvement de l'actif en vue de sa mise en service ou de sa vente ; (2) son intention d'achever l'actif et de l'utiliser ou de le vendre ; (3) sa capacité à l'utiliser ou à le vendre ; (4) la façon dont l'actif générera des avantages économiques futurs probables (existence d'un marché pour le logiciel ou utilité interne) ; (5) la disponibilité de ressources techniques, financières et autres suffisantes pour achever le développement et utiliser ou vendre l'actif ; (6) sa capacité à évaluer de façon fiable les dépenses attribuables à l'actif au cours de son développement. Dès lors que ces conditions sont remplies, l'activation est obligatoire en IFRS.",
+          "key_points": [
+            "Faisabilité technique de l’achèvement",
+            "Intention d’achever et d’utiliser ou vendre l’actif",
+            "Capacité à utiliser ou vendre l’actif",
+            "Avantages économiques futurs probables (marché ou utilité interne)",
+            "Ressources techniques et financières suffisantes",
+            "Évaluation fiable des dépenses de développement"
+          ],
+          "explanation": "IAS 38 §57 : six conditions cumulatives ; une fois réunies, l’activation est obligatoire."
+        },
+        {
+          "id": "q3-cout",
+          "kind": "numeric",
+          "prompt": "Calculez le coût de l’immobilisation incorporelle à inscrire au bilan au 31/12/N (en euros).",
+          "points": 3,
+          "expected_value": 375000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Le coût d'une immobilisation générée en interne comprend les coûts directement attribuables engagés à compter de la date où les critères sont remplis : avantages du personnel (300 000), matières et services consommés (50 000), amortissement du matériel informatique utilisé pour le développement (25 000), coût directement attribuable à la création de l'actif, soit 375 000 € (IAS 38 §65-66, liste d'exemples non limitative). Sont exclus les frais administratifs généraux non directement attribuables (40 000) et la formation des commerciaux (15 000), qui est un coût de commercialisation et de formation du personnel (§67)."
+        },
+        {
+          "id": "q4-amortissement",
+          "kind": "journal_entry",
+          "prompt": "Passez l’écriture d’amortissement au 31/12/N+1.",
+          "points": 2,
+          "date": "31/12/N+1",
+          "entries": [
+            {
+              "account": "6811",
+              "label": "Dotations aux amortissements sur immobilisations incorporelles et corporelles",
+              "debit": 75000,
+              "credit": 0
+            },
+            {
+              "account": "2803",
+              "label": "Amortissements des frais de développement",
+              "debit": 0,
+              "credit": 75000
+            }
+          ],
+          "explanation": "L'amortissement commence lorsque l'actif est prêt à être utilisé (01/01/N+1) : 375 000 / 5 = 75 000 € par an, en mode linéaire (IAS 38 §97)."
+        },
+        {
+          "id": "q5-pcg",
+          "kind": "true_false",
+          "prompt": "Dans les comptes individuels établis selon le PCG, l’inscription à l’actif des frais de développement remplissant les conditions requises est obligatoire, comme en IFRS.",
+          "points": 1,
+          "answer": false,
+          "explanation": "En règles françaises, l'activation des frais de développement remplissant les conditions est une option (qualifiée de méthode préférentielle) ; l'entité peut les maintenir en charges. C'est une divergence avec IAS 38, qui rend l'activation obligatoire dès que les critères sont remplis."
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Le cas suit la logique d'IAS 38 pour un actif incorporel généré en interne : séparer la phase de recherche (charges) de la phase de développement (activation obligatoire une fois les six critères démontrés), déterminer le coût en ne retenant que les dépenses directement attribuables engagées après la date de respect des critères, puis amortir à compter de la mise en service. La dernière question rappelle que le PCG laisse le choix entre activation et charges.",
+      "source_ref": "IAS 38 §54-57, §65-67, §71 et §97 (règlement UE 2023/1803) ; PCG art. 212-3 (règl. ANC 2014-03) ; compte 2803",
+      "verified": true,
+      "estimated_seconds": 900
+    }
+  ]
+}

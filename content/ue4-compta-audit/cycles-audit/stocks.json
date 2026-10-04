@@ -1,0 +1,45 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-audit-stocks-0001",
+      "type": "audit_case",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "stocks-procedures-substantives",
+      "difficulty": 2,
+      "tags": ["inventaire physique", "dépréciation des stocks", "rotation lente", "NEP 501"],
+      "title": "Inventaire et rotation lente chez un négociant en pièces détachées",
+      "cycle": "stocks",
+      "situation": "Vous auditez les comptes au 31/12/N de Gamma, négociant en pièces détachées pour engins agricoles (chiffre d'affaires 22 M€). Les stocks de marchandises s'élèvent à 3,1 M€, soit 30 % du total du bilan. Gamma réalise un inventaire physique annuel au 31/12 selon des instructions écrites : comptage en double par des équipes indépendantes du magasin, étiquetage des zones et arrêt des mouvements pendant le comptage. Les tests de contrôle de l'intérim sur les entrées et sorties de stock ont été satisfaisants. L'état de rotation des stocks fait apparaître 180 000 € de références sans mouvement depuis plus de 18 mois, liées à des modèles de tracteurs qui ne sont plus fabriqués. La direction n'a constitué aucune dépréciation sur ces références : elle estime que les agriculteurs continueront d'en avoir besoin pour entretenir leur matériel. Le seuil de signification est fixé à 110 000 €.",
+      "assertions": ["Existence", "Évaluation", "Séparation des exercices"],
+      "procedures": {
+        "options": [
+          "Assister à l'inventaire physique, apprécier l'application des instructions et réaliser des comptages par sondage, du listing vers le stock physique et du stock physique vers le listing",
+          "Pour les références sans mouvement, comparer le coût d'entrée aux ventes et aux prix de vente postérieurs à la clôture, et obtenir des éléments étayant les perspectives d'écoulement avancées par la direction",
+          "Envoyer une demande de confirmation de solde aux banques de Gamma",
+          "Recalculer les dotations aux amortissements des chariots élévateurs de l'entrepôt",
+          "Rapprocher les derniers bons de réception et de livraison avant inventaire, et les premiers après, des enregistrements comptables de l'exercice concerné",
+          "Vérifier l'exhaustivité des charges sociales par rapprochement avec les déclarations sociales nominatives"
+        ],
+        "answer": [0, 1, 4]
+      },
+      "risk": {
+        "options": ["Faible", "Modéré", "Élevé"],
+        "answer": 1,
+        "rationale": "Le poste est significatif (30 % du bilan), mais l'existence est couverte par un inventaire bien organisé et par un contrôle interne testé avec succès : le risque est donc limité sur cette assertion. En revanche, l'évaluation présente un risque spécifique : les 180 000 € de références sans mouvement dépassent le seuil de signification (110 000 €), et leur dépréciation repose sur une estimation de la direction susceptible d'être biaisée (NEP 540). Ce risque ciblé, sur une seule assertion et un montant identifié, conduit à un risque global modéré, avec des procédures substantives spécifiques sur l'évaluation."
+      },
+      "conclusion": {
+        "model_answer": "Nous avons assisté à l'inventaire physique, réalisé des comptages par sondage et testé la séparation des exercices autour de la date d'inventaire. Ces travaux nous ont permis d'obtenir des éléments suffisants et appropriés sur l'existence et le rattachement à l'exercice des stocks au 31/12/N. Concernant l'évaluation, les références sans mouvement depuis plus de 18 mois (180 000 €) ne font l'objet d'aucune dépréciation, et nos travaux (ventes postérieures à la clôture, éléments fournis par la direction sur les perspectives d'écoulement) ne permettent pas, dans l'hypothèse retenue ici, de justifier leur valeur. Nous proposons une dépréciation fondée sur la valeur nette de réalisation. À défaut de correction, l'anomalie, supérieure au seuil de signification, serait prise en compte dans notre opinion conformément à la NEP 450.",
+        "key_points": [
+          "Conclure séparément sur l'existence (inventaire, comptages) et sur l'évaluation (rotation lente)",
+          "Chiffrer l'anomalie potentielle et la comparer au seuil de signification",
+          "Proposer un ajustement à la direction et indiquer l'incidence sur l'opinion à défaut de correction"
+        ]
+      },
+      "explanation": "La NEP 501 impose d'assister à l'inventaire physique lorsque les stocks sont significatifs. Les comptages dans les deux sens couvrent l'existence (du listing vers le physique) et l'exhaustivité (du physique vers le listing). Le test de séparation des exercices autour de l'inventaire vérifie que les entrées et sorties sont rattachées au bon exercice. Le point sensible reste l'évaluation : une référence sans rotation doit être dépréciée lorsque sa valeur actuelle, appréciée à partir des perspectives réelles de vente, est inférieure à son coût, et l'affirmation de la direction doit être étayée. La confirmation bancaire, les amortissements et les charges sociales relèvent d'autres cycles.",
+      "source_ref": "NEP 501 (caractère probant des éléments collectés : applications spécifiques, inventaire physique) ; NEP 540 (estimations comptables) ; NEP 330 ; PCG art. 213-30 s. (coût des stocks) et règles de dépréciation à la date d'inventaire ; comptes 37 et 397",
+      "verified": true,
+      "estimated_seconds": 480
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-conso-eliminations-0001",
+      "type": "consolidation_case",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "eliminations-operations-intra-groupe",
+      "difficulty": 2,
+      "tags": [
+        "marge interne",
+        "stocks",
+        "impôt différé actif",
+        "vente descendante",
+        "intérêts minoritaires"
+      ],
+      "title": "Groupe Nord : marge interne sur stocks entre filiales",
+      "context": "La société Nord (N) consolide ses filiales selon le règlement ANC 2020-01. N détient 90 % du capital et des droits de vote de la société Fjord (F1), qui détient elle-même 80 % du capital et des droits de vote de la société Glace (F2). F1 et F2 sont intégrées globalement. Taux d'impôt : 25 % pour toutes les sociétés.\n\nAu cours de N, F1, négociant, a vendu à F2 des marchandises pour 200 000 € HT, avec un taux de marge de 25 % du prix de vente. Au 31/12/N, F2 détient encore en stock 60 000 € (prix d'achat chez F2) de ces marchandises. Il n'y avait aucun stock d'origine intra-groupe à l'ouverture.",
+      "entities": [
+        {
+          "id": "n",
+          "name": "Nord (N)",
+          "is_parent": true
+        },
+        {
+          "id": "f1",
+          "name": "Fjord (F1)"
+        },
+        {
+          "id": "f2",
+          "name": "Glace (F2)"
+        }
+      ],
+      "links": [
+        {
+          "from": "n",
+          "to": "f1",
+          "ownership_pct": 90
+        },
+        {
+          "from": "f1",
+          "to": "f2",
+          "ownership_pct": 80
+        }
+      ],
+      "steps": [
+        {
+          "id": "marge-stock",
+          "stage": "retraitements",
+          "kind": "numeric",
+          "prompt": "Quel est le montant de la marge interne incluse dans le stock de F2 à éliminer au 31/12/N (avant impôt, en euros) ?",
+          "points": 2,
+          "expected_value": 15000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "La marge est exprimée en pourcentage du prix de vente de F1, qui est le prix d'achat de F2 : 60 000 × 25 % = 15 000 €. Ce profit n'est pas réalisé avec des tiers au niveau du groupe."
+        },
+        {
+          "id": "ecriture-elimination",
+          "stage": "retraitements",
+          "kind": "journal_entry",
+          "prompt": "Passez, avant impôt, les écritures d’élimination du chiffre d’affaires et des achats intra-groupe puis de la marge en stock (en présentation par nature, à saisir à la suite).",
+          "points": 3,
+          "date": "31/12/N",
+          "entries": [
+            {
+              "account": "707",
+              "label": "Ventes de marchandises (F1)",
+              "debit": 200000,
+              "credit": 0
+            },
+            {
+              "account": "607",
+              "label": "Achats de marchandises (F2)",
+              "debit": 0,
+              "credit": 200000
+            },
+            {
+              "account": "6037",
+              "label": "Variation des stocks de marchandises (F2)",
+              "debit": 15000,
+              "credit": 0
+            },
+            {
+              "account": "37",
+              "label": "Stocks de marchandises (F2)",
+              "debit": 0,
+              "credit": 15000
+            }
+          ],
+          "explanation": "Les ventes de F1 et les achats de F2 se compensent : leur élimination (200 000 €) est sans effet sur le résultat. La marge en stock est éliminée en ramenant le stock à son coût pour le groupe : le stock final est diminué de 15 000 € (crédit 37), ce qui réduit la variation de stock et donc le résultat (débit 6037)."
+        },
+        {
+          "id": "impot-differe",
+          "stage": "impots-differes",
+          "kind": "numeric",
+          "prompt": "Quel est le montant de l’impôt différé à constater sur cette élimination (en euros) ?",
+          "points": 2,
+          "expected_value": 3750,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "La valeur du stock en consolidation (45 000 €) devient inférieure à sa base fiscale chez F2 (60 000 €) : différence temporelle déductible de 15 000 €, d'où un impôt différé actif de 15 000 × 25 % = 3 750 € (produit d'impôt différé). L'impact net sur le résultat consolidé est de −11 250 €."
+        },
+        {
+          "id": "pourcentage-partage",
+          "stage": "partage-capitaux-propres",
+          "kind": "mcq",
+          "prompt": "Selon quel pourcentage l’impact net de l’élimination est-il réparti entre le groupe et les intérêts minoritaires ?",
+          "points": 1,
+          "options": [
+            "90 %, pourcentage d’intérêt du groupe dans F1, société vendeuse qui a dégagé la marge",
+            "72 %, pourcentage d’intérêt du groupe dans F2, société qui détient le stock",
+            "80 %, pourcentage de détention de F2 par F1",
+            "100 % à la charge du groupe, les minoritaires n’étant jamais affectés par les éliminations internes"
+          ],
+          "answer": [
+            0
+          ],
+          "explanation": "La marge a été dégagée par F1 et figure dans son résultat : l'élimination affecte les capitaux propres de la société vendeuse et se répartit selon le pourcentage d'intérêt du groupe dans celle-ci (90 %), y compris pour une vente ascendante ou entre filiales. Le pourcentage d'intérêt dans F2 (80 % × 90 % = 72 %) concerne l'acheteuse, sans effet ici. L'élimination est totale entre sociétés intégrées globalement et est partagée avec les minoritaires du vendeur."
+        },
+        {
+          "id": "impact-groupe",
+          "stage": "partage-capitaux-propres",
+          "kind": "numeric",
+          "prompt": "Quel est l’impact de l’élimination sur le résultat consolidé part du groupe (en euros, avec son signe) ?",
+          "points": 2,
+          "expected_value": -10125,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Impact net d'impôt = −15 000 + 3 750 = −11 250 €. Part du groupe = 90 % × (−11 250) = −10 125 € ; part des minoritaires = 10 % × (−11 250) = −1 125 €."
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Les résultats internes inclus dans les actifs (ici une marge sur stock) sont éliminés en totalité entre sociétés intégrées globalement. L'élimination crée une différence temporelle qui donne lieu à un impôt différé actif. L'impact net est partagé entre le groupe et les minoritaires selon le pourcentage d'intérêt dans la société qui a réalisé la marge (le vendeur).",
+      "source_ref": "Règl. ANC 2020-01, élimination des résultats internes et impôts différés ; IFRS 10 §B86(c) et IAS 12 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 600
+    }
+  ]
+}

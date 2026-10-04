@@ -35,6 +35,8 @@ PWA d'entraînement au DSCG (React 18 + TypeScript + Vite, Tailwind + shadcn/ui,
 - `src/content/schema.ts` : schémas Zod des 8 types (`mcq`, `true_false`, `numeric`, `journal_entry`, `case_study`, `consolidation_case`, `audit_case`, `flashcard`) et de la taxonomie. Source de vérité du format : la lire avant d'écrire du contenu.
 - `scripts/validate-content.ts` : `npm run validate`.
 - `src/db/db.ts` : Dexie (`attempts`, `reviews`, `sessions`) + export/import JSON.
+- `src/engine/` : moteur pur, testé sans UI. `parts.ts` découpe chaque exercice en parties notées (choix, vrai/faux, calcul, écriture, réponse rédigée, flashcard) ; `grading.ts` corrige chaque partie et combine selon le barème (seuil de réussite des exercices composites : `PASS_THRESHOLD` = 70 %) ; `session.ts` / `sessionConfig.ts` construisent les sessions (graine dans l'URL `/session?mode=…&seed=…`) ; `recorder.ts` écrit tentatives et sessions dans IndexedDB.
+- `src/components/exercise/` : `ExercisePlayer` (énoncé + parties enchaînées + correction) et `parts.tsx` (un composant de saisie/correction par genre de partie). Ajouter un type d'exercice = l'ajouter au schéma, à `exerciseParts()` et à l'en-tête `Statement`.
 - `src/components/ui/` : composants shadcn/ui (ajoutés à la main : le registre shadcn est bloqué dans l'environnement cloud ; en local `npx shadcn@latest add <composant>` fonctionne avec `components.json`).
 
 ## Conventions de contenu

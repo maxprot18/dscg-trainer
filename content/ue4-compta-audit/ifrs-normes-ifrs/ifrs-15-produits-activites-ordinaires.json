@@ -1,0 +1,43 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-ifrsn-ifrs15-0001",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-15-produits-activites-ordinaires",
+      "difficulty": 2,
+      "tags": [
+        "obligations de prestation",
+        "prix de vente spontané",
+        "passif sur contrat"
+      ],
+      "statement": "Le 01/07/N, la société Tecma (IFRS), distributeur de matériel, livre à un client une machine achetée pour la revente assortie d'un contrat de maintenance de 2 ans, pour un prix global de 12 000 € HT facturé à la livraison (payable à 30 jours). Tecma vend habituellement la machine seule 10 000 € et la maintenance de 2 ans seule 5 000 €. La machine et la maintenance sont des obligations de prestation distinctes ; le contrôle de la machine est transféré à la livraison. Passez l'écriture du 01/07/N (on ignore la TVA ; le produit relatif à la maintenance non encore exécutée est porté au compte de produits constatés d'avance).",
+      "date": "01/07/N",
+      "entries": [
+        {
+          "account": "411",
+          "label": "Clients",
+          "debit": 12000,
+          "credit": 0
+        },
+        {
+          "account": "707",
+          "label": "Ventes de marchandises (machine)",
+          "debit": 0,
+          "credit": 8000
+        },
+        {
+          "account": "487",
+          "label": "Produits constatés d’avance (passif sur contrat – maintenance)",
+          "debit": 0,
+          "credit": 4000
+        }
+      ],
+      "explanation": "Le prix de transaction (12 000 €) est réparti entre les obligations de prestation au prorata de leurs prix de vente spontanés : machine 12 000 × 10 000 / 15 000 = 8 000 € ; maintenance 12 000 × 5 000 / 15 000 = 4 000 €. La remise implicite de 3 000 € est ainsi répartie proportionnellement. Le produit de la machine est comptabilisé à la date du transfert de contrôle (livraison). La maintenance est une obligation remplie progressivement : rien n'est encore exécuté au 01/07/N, les 4 000 € facturés constituent un passif sur contrat (487), repris en produits au fil des 24 mois (1 000 € au 31/12/N).",
+      "source_ref": "IFRS 15 §22, §31, §35, §38, §73-80 et §106 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 180
+    }
+  ]
+}

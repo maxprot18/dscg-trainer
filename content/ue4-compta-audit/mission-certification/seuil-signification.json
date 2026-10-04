@@ -1,0 +1,73 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-mission-seuil-0001",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "seuil-signification",
+      "difficulty": 2,
+      "tags": ["seuil de signification", "seuil de planification", "NEP 320", "NEP 450", "opinion avec réserve"],
+      "title": "Delta : du seuil de signification à l'opinion",
+      "context": "Vous êtes collaborateur du commissaire aux comptes de Delta SAS, fabricant de mobilier de bureau, pour l'exercice clos le 31/12/N. Delta n'est pas une entité d'intérêt public. Données prévisionnelles retenues lors de la planification : chiffre d'affaires 31 500 000 €, résultat courant avant impôt 1 400 000 €, capitaux propres 6 200 000 €, total du bilan 14 800 000 €. Le résultat est l'indicateur suivi par les associés et les banques ; il est stable depuis trois ans.\n\nLa méthodologie du cabinet prévoit : seuil de signification égal à 5 % du résultat courant avant impôt lorsque ce résultat est stable et constitue l'indicateur clé ; seuil de planification égal à 70 % du seuil de signification lorsque le risque d'anomalies est jugé moyen, ce qui est le cas chez Delta.\n\nEn fin de mission, une seule anomalie reste non corrigée : un lot de mobilier invendable, en stock pour 90 000 €, n'a fait l'objet d'aucune dépréciation alors que sa valeur nette de réalisation est nulle. Le président refuse de passer l'ajustement. Le résultat courant avant impôt définitif s'élève à 1 380 000 €, ce qui ne remet pas en cause le seuil de signification retenu. Aucune autre anomalie ni limitation n'a été relevée.",
+      "sub_questions": [
+        {
+          "id": "q1-seuil-signification",
+          "kind": "numeric",
+          "prompt": "Calculez le seuil de signification retenu lors de la planification (en euros).",
+          "points": 2,
+          "expected_value": 70000,
+          "tolerance": { "kind": "absolute", "value": 0 },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "1 400 000 × 5 % = 70 000 €. La NEP 320 laisse le choix du critère au jugement du commissaire aux comptes ; le résultat courant avant impôt est pertinent ici car il est stable et constitue l'indicateur suivi par les utilisateurs des comptes."
+        },
+        {
+          "id": "q2-seuil-planification",
+          "kind": "numeric",
+          "prompt": "Calculez le seuil de planification (en euros).",
+          "points": 2,
+          "expected_value": 49000,
+          "tolerance": { "kind": "absolute", "value": 0 },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "70 000 × 70 % = 49 000 €. Le seuil de planification est inférieur au seuil de signification. Il sert à définir la nature et l'étendue des travaux, pour limiter le risque que le cumul des anomalies non détectées et non corrigées dépasse le seuil de signification."
+        },
+        {
+          "id": "q3-choix-opinion",
+          "kind": "mcq",
+          "prompt": "Compte tenu de l'anomalie non corrigée, quelle opinion le commissaire aux comptes doit-il exprimer sur les comptes de Delta ?",
+          "points": 2,
+          "options": [
+            "Certification sans réserve, l'anomalie étant inférieure à 10 % du résultat",
+            "Certification avec réserve pour désaccord",
+            "Refus de certifier pour désaccord",
+            "Impossibilité de certifier"
+          ],
+          "answer": [1],
+          "explanation": "L'anomalie de 90 000 € dépasse le seuil de signification de 70 000 € : elle est significative. Il s'agit d'un désaccord, puisque la direction refuse de corriger une anomalie identifiée. Son effet n'est pas diffus : il se limite aux stocks, au résultat et aux capitaux propres, pour environ 6,5 % du résultat, et n'affecte pas la lecture d'ensemble des comptes. L'opinion appropriée est donc une certification avec réserve. Un pourcentage forfaitaire du résultat ne remplace pas le seuil fixé selon la NEP 320, et la NEP 450 impose d'apprécier l'incidence des anomalies non corrigées par rapport à ce seuil."
+        },
+        {
+          "id": "q4-paragraphe-fondement",
+          "kind": "open",
+          "prompt": "Rédigez le paragraphe « Fondement de l'opinion avec réserve » du rapport sur les comptes annuels.",
+          "points": 4,
+          "model_answer": "Fondement de l'opinion avec réserve. Le poste « Stocks de produits finis » figurant à l'actif du bilan au 31/12/N inclut un lot de mobilier invendable pour un montant de 90 000 €, dont la valeur nette de réalisation est nulle à la clôture. Aucune dépréciation n'a été constituée sur ce lot, ce qui n'est pas conforme aux règles d'évaluation des stocks prévues par le plan comptable général. Si cette dépréciation avait été comptabilisée, le résultat de l'exercice et les capitaux propres auraient été diminués de 90 000 €, avant effet d'impôt. Nous avons effectué notre audit selon les normes d'exercice professionnel applicables en France ; nous estimons que les éléments que nous avons collectés sont suffisants et appropriés pour fonder notre opinion avec réserve.",
+          "key_points": [
+            "Décrire précisément l'anomalie : poste concerné, montant de 90 000 €, absence de dépréciation d'un stock à valeur nette de réalisation nulle",
+            "Indiquer la règle comptable non respectée (évaluation des stocks au plus bas du coût et de la valeur actuelle, PCG)",
+            "Chiffrer l'incidence sur le résultat et les capitaux propres",
+            "Rappeler que l'audit a été mené selon les NEP et que les éléments collectés sont suffisants et appropriés",
+            "Articuler avec la partie « Opinion avec réserve » (« sous la réserve décrite… » / « à l'exception de l'incidence du point décrit… »)"
+          ],
+          "explanation": "La NEP 700 impose, en cas de réserve, de motiver celle-ci dans une partie distincte du rapport placée après l'opinion. En cas de désaccord, la motivation décrit l'anomalie et en chiffre l'incidence lorsque c'est possible. L'opinion elle-même est formulée « à l'exception de l'incidence du point décrit dans la partie Fondement de l'opinion avec réserve »."
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas enchaîne les étapes de la démarche : détermination du seuil de signification et du seuil de planification (NEP 320), évaluation des anomalies non corrigées par rapport au seuil (NEP 450), puis choix et rédaction de l'opinion (NEP 700). Le point clé est de distinguer le caractère significatif (90 000 € > 70 000 €) du caractère diffus (effet limité à un poste et à ses conséquences directes) : significatif mais non diffus, d'où une réserve et non un refus.",
+      "source_ref": "NEP 320 (application de la notion de caractère significatif lors de la planification et de la réalisation d'un audit) ; NEP 450 (évaluation des anomalies relevées au cours de l'audit) ; NEP 700 (rapports du CAC sur les comptes) ; PCG, art. 213-30 s. (coût des stocks) et règles de dépréciation des actifs à la date d’inventaire (comparaison avec la valeur actuelle)",
+      "verified": true,
+      "estimated_seconds": 900
+    }
+  ]
+}

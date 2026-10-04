@@ -1,0 +1,45 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-audit-achats-0001",
+      "type": "audit_case",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-procedures-substantives",
+      "difficulty": 2,
+      "tags": ["exhaustivité", "factures non parvenues", "passifs non comptabilisés", "compte 408"],
+      "title": "Dettes fournisseurs en baisse après un changement de progiciel",
+      "cycle": "achats-fournisseurs",
+      "situation": "Vous auditez les comptes au 31/12/N d'Epsilon, sous-traitant industriel dans la mécanique de précision. Le volume des achats de matières est stable par rapport à N-1 (environ 9 M€). Epsilon a remplacé son progiciel de gestion en septembre N, et la reprise des données a été réalisée par l'équipe comptable sans validation formelle. Le compte 408 « Fournisseurs – factures non parvenues » passe de 410 000 € à 150 000 €, et le délai moyen de règlement des fournisseurs baisse fortement sans changement des conditions de paiement. Le contrat de prêt d'Epsilon comporte un covenant sur l'EBITDA, proche de sa limite cette année. Le directeur financier explique la baisse du compte 408 par « une meilleure réactivité des fournisseurs dans l'envoi des factures ». Le seuil de signification est fixé à 90 000 €.",
+      "assertions": ["Exhaustivité", "Séparation des exercices"],
+      "procedures": {
+        "options": [
+          "Examiner les factures reçues et les décaissements de janvier et février N+1 pour identifier les charges et dettes relatives à N non comptabilisées au 31/12/N",
+          "Rapprocher les bons de réception des dernières semaines de N des factures comptabilisées ou du compte 408, et rechercher les réceptions sans facture ni provision",
+          "Demander une confirmation de solde aux principaux fournisseurs, sélectionnés d'après le volume d'achats de l'exercice et non d'après le solde comptable, y compris ceux dont le solde est nul",
+          "Assister à l'inventaire physique des immobilisations corporelles de l'atelier",
+          "Vérifier, par sondage, que les factures fournisseurs comptabilisées en N correspondent à des livraisons effectives",
+          "Recalculer la provision pour indemnités de départ à la retraite"
+        ],
+        "answer": [0, 1, 2]
+      },
+      "risk": {
+        "options": ["Faible", "Modéré", "Élevé"],
+        "answer": 2,
+        "rationale": "Plusieurs facteurs se cumulent sur l'exhaustivité des dettes et des charges. L'entité a une incitation à minorer ses charges (covenant d'EBITDA proche de la limite). Le changement de progiciel, avec une reprise non validée, augmente le risque d'erreur. L'évolution du compte 408 (-260 000 €, près de trois fois le seuil de signification) et la baisse du délai fournisseurs sont incohérentes avec des achats stables. Enfin, l'explication de la direction n'est pas corroborée. Le risque d'anomalies significatives est élevé et appelle des procédures substantives étendues orientées vers la recherche de passifs non comptabilisés (NEP 330)."
+      },
+      "conclusion": {
+        "model_answer": "Nous avons examiné les factures reçues et les règlements postérieurs à la clôture, rapproché les réceptions de fin d'exercice des factures et du compte 408, et obtenu des confirmations des principaux fournisseurs sélectionnés selon le volume d'achats. Ces procédures nous ont permis d'obtenir des éléments suffisants et appropriés sur l'exhaustivité des dettes fournisseurs et des achats au 31/12/N. Les charges de l'exercice non comptabilisées identifiées ont été chiffrées et communiquées à la direction pour correction. À défaut d'ajustement, leur incidence, cumulée aux autres anomalies non corrigées, sera appréciée au regard du seuil de signification (NEP 450). Les faiblesses relevées lors de la reprise des données du nouveau progiciel seront communiquées à la gouvernance (NEP 265).",
+        "key_points": [
+          "Rappeler l'assertion visée (exhaustivité, séparation des exercices) et les procédures orientées vers la recherche de passifs non comptabilisés",
+          "Chiffrer les anomalies et les apprécier au regard du seuil de signification",
+          "Mentionner la communication des faiblesses de contrôle interne liées au changement de système"
+        ]
+      },
+      "explanation": "Pour les dettes fournisseurs, le risque principal est la minoration : on teste donc l'exhaustivité en partant de sources extérieures à la comptabilité (factures et paiements postérieurs, bons de réception, réponses des fournisseurs) pour remonter vers les comptes. La confirmation n'est utile pour l'exhaustivité que si l'échantillon est construit à partir du volume d'affaires, car un fournisseur au solde nul ou faible peut dissimuler une dette omise. Le test qui part des factures comptabilisées pour vérifier les livraisons couvre la réalité, et non l'exhaustivité : il ne répond pas au risque identifié. L'inventaire des immobilisations et la provision retraite relèvent d'autres cycles.",
+      "source_ref": "NEP 315 (identification et évaluation des risques) ; NEP 330 (procédures en réponse aux risques évalués) ; NEP 505 (confirmations des tiers) ; NEP 265 (communication des faiblesses du contrôle interne) ; comptes 401 et 408",
+      "verified": true,
+      "estimated_seconds": 480
+    }
+  ]
+}

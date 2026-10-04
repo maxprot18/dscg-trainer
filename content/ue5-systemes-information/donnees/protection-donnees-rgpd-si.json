@@ -1,0 +1,25 @@
+{
+  "exercises": [
+    {
+      "id": "ue5-donnees-rgpd-0001",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "protection-donnees-rgpd-si",
+      "difficulty": 2,
+      "tags": ["RGPD", "violation de données", "notification", "rançongiciel"],
+      "statement": "Un lundi à 9 h, la DSI d'un site de vente en ligne découvre qu'une attaque par rançongiciel a permis l'exfiltration du fichier clients : noms, adresses, courriels et coordonnées bancaires (IBAN) de 40 000 personnes. Les données n'étaient pas chiffrées. L'entreprise est responsable du traitement. Au regard du RGPD, quelle est la conduite à tenir ?",
+      "options": [
+        "Notifier la violation à la CNIL dans les meilleurs délais et, si possible, 72 heures au plus tard après en avoir pris connaissance, et informer les personnes concernées dans les meilleurs délais compte tenu du risque élevé pour leurs droits et libertés",
+        "Notifier la CNIL dans les 72 heures uniquement si les données sont publiées par les attaquants ; à défaut, documenter l'incident dans le registre interne suffit",
+        "Informer les personnes concernées dans un délai d'un mois ; la notification à la CNIL n'est requise que si plus de 100 000 personnes sont touchées",
+        "Laisser l'hébergeur, en sa qualité de sous-traitant, notifier directement la CNIL dans les 24 heures, ce qui décharge l'entreprise de toute obligation de notification"
+      ],
+      "answer": [0],
+      "explanation": "Toute violation de données personnelles doit être notifiée par le responsable du traitement à l'autorité de contrôle (la CNIL) dans les meilleurs délais et, si possible, 72 heures au plus tard après en avoir pris connaissance, sauf si elle n'est pas susceptible d'engendrer un risque pour les droits et libertés des personnes (RGPD art. 33). Ici, l'exfiltration de coordonnées bancaires non chiffrées crée un risque élevé (fraude, hameçonnage ciblé) : les personnes concernées doivent aussi être informées dans les meilleurs délais (art. 34) ; le chiffrement des données aurait pu dispenser de cette communication. La publication des données n'est pas une condition, le seuil de 100 000 personnes n'existe pas, et le délai d'un mois est celui de la réponse aux demandes d'exercice des droits (art. 12). Le sous-traitant doit notifier la violation au responsable du traitement, pas se substituer à lui (art. 33 §2). Dans tous les cas, l'incident est consigné dans la documentation interne des violations (art. 33 §5).",
+      "source_ref": "Règlement (UE) 2016/679 (RGPD), art. 33 et 34 ; art. 12 §3 (délai de réponse aux demandes)",
+      "verified": true,
+      "estimated_seconds": 75
+    }
+  ]
+}

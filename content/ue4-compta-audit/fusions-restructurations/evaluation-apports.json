@@ -1,0 +1,32 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-fusion-apports-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "evaluation-apports",
+      "difficulty": 2,
+      "tags": [
+        "valeur comptable",
+        "valeur réelle",
+        "fusion à l’envers",
+        "contrôle distinct"
+      ],
+      "statement": "La société Albe, contrôlée par la famille Roux, absorbe la société Brix, contrôlée par un fonds d'investissement sans lien avec la famille Roux. Compte tenu de la parité retenue, les anciens actionnaires de Brix détiendront 65 % du capital et des droits de vote d'Albe après la fusion et en prendront le contrôle. Selon le PCG, à quelle valeur les apports de Brix doivent-ils être comptabilisés chez Albe ?",
+      "options": [
+        "À la valeur réelle, car les sociétés sont sous contrôle distinct avant l’opération",
+        "À la valeur comptable, car l'opération est réalisée « à l'envers »",
+        "Au choix des parties, la valeur retenue devant seulement être décrite dans le traité de fusion",
+        "À la valeur réelle pour les actifs corporels et à la valeur comptable pour les actifs incorporels"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le PCG (titre VII issu du règlement ANC 2017-01) fixe la valeur d'apport selon deux critères : le contrôle des sociétés avant l'opération (commun ou distinct) et le sens de l'opération. Entre sociétés sous contrôle distinct, les apports sont évalués à la valeur réelle si l'opération est réalisée « à l'endroit », c'est-à-dire si les actionnaires de l'absorbante gardent le contrôle. Ici, ce sont les actionnaires de l'absorbée (Brix) qui prennent le contrôle de l'absorbante : l'opération est « à l'envers » et les apports doivent être retenus à leur valeur comptable, pour éviter de réévaluer les actifs de l'entité qui est en réalité l'acquéreur. La première option oublie le critère du sens de l'opération. La valeur d'apport n'est pas laissée au libre choix des parties : les règles sont impératives (hors exceptions limitées prévues par le texte). Enfin, le PCG ne distingue pas selon la nature des actifs : la même valeur s'applique à l'ensemble des apports.",
+      "source_ref": "PCG titre VII, règles d’évaluation des apports (règl. ANC 2014-03 modifié par le règl. ANC 2017-01)",
+      "verified": true,
+      "estimated_seconds": 90
+    }
+  ]
+}

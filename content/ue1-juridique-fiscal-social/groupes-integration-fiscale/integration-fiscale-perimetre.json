@@ -1,0 +1,20 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-groupes-integ-0001",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "integration-fiscale-perimetre",
+      "difficulty": 2,
+      "tags": ["intégration fiscale", "seuil de 95 %", "périmètre"],
+      "statement": "La SA Holdia détient 92 % du capital de sa filiale Ferro, mais 96 % des droits de vote grâce à des actions à droit de vote double. Les deux sociétés sont soumises à l'IS et clôturent à la même date. Holdia peut inclure Ferro dans son groupe fiscalement intégré.",
+      "answer": false,
+      "justification": "Faux : la détention de 95 % du capital suppose à la fois 95 % au moins des droits à dividendes et 95 % au moins des droits de vote ; avec 92 % du capital (donc 92 % des droits à dividendes), la condition n'est pas remplie, malgré 96 % des droits de vote.",
+      "explanation": "L'article 223 A du CGI exige que la société mère détienne, directement ou indirectement par l'intermédiaire de sociétés du groupe, 95 % au moins du capital de la filiale, de manière continue au cours de l'exercice. Cette détention s'entend de la pleine propriété d'au moins 95 % des droits à dividendes et d'au moins 95 % des droits de vote. Avec 92 % du capital, Holdia ne remplit pas la condition, quel que soit son pourcentage de droits de vote : un excédent de droits de vote ne compense pas un déficit de capital. Les autres conditions (IS de droit commun, exercices de même date de clôture et de même durée, option de la mère et accord de la filiale) sont nécessaires mais pas suffisantes.",
+      "source_ref": "CGI art. 223 A (conditions de détention de 95 % du capital et périmètre du groupe intégré)",
+      "verified": true,
+      "estimated_seconds": 60
+    }
+  ]
+}

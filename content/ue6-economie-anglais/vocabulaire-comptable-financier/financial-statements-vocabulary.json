@@ -1,0 +1,19 @@
+{
+  "exercises": [
+    {
+      "id": "ue6-vocab-fsv-0001",
+      "type": "flashcard",
+      "ue": "UE6",
+      "theme": "vocabulaire-comptable-financier",
+      "notion": "financial-statements-vocabulary",
+      "difficulty": 1,
+      "tags": ["accruals", "accrual basis", "vocabulary"],
+      "front": "What are \"accruals\" (accrued expenses) in a balance sheet, and what is their French equivalent?",
+      "back": "Accruals are expenses that have been incurred during the period but not yet invoiced or paid at the reporting date (e.g. electricity consumed in December but invoiced after year-end). They are recognised as a liability under the accrual basis of accounting. French equivalent: \"charges à payer\" (e.g. PCG account 408 \"Fournisseurs – factures non parvenues\"). Do not confuse with \"prepayments\" (charges constatées d'avance) or \"deferred income\" (produits constatés d'avance).",
+      "explanation": "Under the accrual basis, the effects of transactions are recognised when they occur, not when cash is paid or received. An expense incurred in the period but not yet invoiced is therefore recorded as an expense against a liability (accrual). The mirror items are prepayments (an expense paid in advance, carried as an asset) and deferred income (revenue received in advance, carried as a liability).",
+      "source_ref": "IAS 1 §27-28, accrual basis of accounting (règlement UE 2023/1803) ; PCG compte 408",
+      "verified": true,
+      "estimated_seconds": 30
+    }
+  ]
+}

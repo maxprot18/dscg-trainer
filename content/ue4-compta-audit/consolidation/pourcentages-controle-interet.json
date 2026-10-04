@@ -1,0 +1,147 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-conso-pourcentages-0001",
+      "type": "consolidation_case",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "pourcentages-controle-interet",
+      "difficulty": 2,
+      "tags": [
+        "pourcentage de contrôle",
+        "pourcentage d’intérêt",
+        "droits de vote",
+        "chaîne de contrôle",
+        "intégration globale"
+      ],
+      "title": "Groupe Mercure : chaîne de participations à trois niveaux",
+      "context": "La société Mercure (M), société mère, établit des comptes consolidés selon le règlement ANC 2020-01. Au 31/12/N, l'organigramme est le suivant :\n- M détient 80 % du capital et des droits de vote de la société Atlas (A) ;\n- A détient 60 % du capital et des droits de vote de la société Boréal (B) ;\n- B détient 30 % du capital de la société Cassis (C) ; certaines de ses actions bénéficiant d'un droit de vote double, B dispose de 40 % des droits de vote de C ;\n- M détient directement 25 % du capital et 25 % des droits de vote de C.\nIl n'existe ni pacte d'actionnaires ni droits de vote potentiels. Les autres actionnaires de chaque société sont dispersés. Les pourcentages sont à exprimer en %, avec une décimale si nécessaire.",
+      "entities": [
+        {
+          "id": "m",
+          "name": "Mercure (M)",
+          "is_parent": true
+        },
+        {
+          "id": "a",
+          "name": "Atlas (A)"
+        },
+        {
+          "id": "b",
+          "name": "Boréal (B)"
+        },
+        {
+          "id": "c",
+          "name": "Cassis (C)"
+        }
+      ],
+      "links": [
+        {
+          "from": "m",
+          "to": "a",
+          "ownership_pct": 80
+        },
+        {
+          "from": "a",
+          "to": "b",
+          "ownership_pct": 60
+        },
+        {
+          "from": "b",
+          "to": "c",
+          "ownership_pct": 30,
+          "voting_pct": 40
+        },
+        {
+          "from": "m",
+          "to": "c",
+          "ownership_pct": 25
+        }
+      ],
+      "steps": [
+        {
+          "id": "controle-b",
+          "stage": "pourcentages",
+          "kind": "numeric",
+          "prompt": "Quel est le pourcentage de contrôle du groupe dans Boréal (B) ?",
+          "points": 2,
+          "expected_value": 60,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "Le pourcentage de contrôle additionne les droits de vote détenus directement par la mère et par les sociétés qu'elle contrôle. M contrôle A (80 %) ; les droits de vote détenus par A dans B (60 %) sont donc retenus en totalité : contrôle de B = 60 %. On ne multiplie pas les pourcentages pour le contrôle."
+        },
+        {
+          "id": "interet-b",
+          "stage": "pourcentages",
+          "kind": "numeric",
+          "prompt": "Quel est le pourcentage d’intérêt du groupe dans Boréal (B) ?",
+          "points": 2,
+          "expected_value": 48,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "Le pourcentage d'intérêt mesure la part du capital détenue directement et indirectement : on multiplie les pourcentages de capital le long de la chaîne. Intérêt dans B = 80 % × 60 % = 48 %."
+        },
+        {
+          "id": "controle-c",
+          "stage": "pourcentages",
+          "kind": "numeric",
+          "prompt": "Quel est le pourcentage de contrôle du groupe dans Cassis (C) ?",
+          "points": 3,
+          "expected_value": 65,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "Droits de vote détenus directement par M : 25 %. B étant contrôlée par le groupe (contrôle de 60 %), ses droits de vote dans C sont retenus en totalité : 40 % (et non 30 %, qui est sa part de capital). Contrôle de C = 25 % + 40 % = 65 %."
+        },
+        {
+          "id": "interet-c",
+          "stage": "pourcentages",
+          "kind": "numeric",
+          "prompt": "Quel est le pourcentage d’intérêt du groupe dans Cassis (C) ?",
+          "points": 3,
+          "expected_value": 39.4,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "On retient les parts de capital, pas les droits de vote. Intérêt direct de M : 25 %. Intérêt indirect via A puis B : 80 % × 60 % × 30 % = 14,4 %. Intérêt total dans C = 25 % + 14,4 % = 39,4 %."
+        },
+        {
+          "id": "methode-c",
+          "stage": "methode",
+          "kind": "mcq",
+          "prompt": "Selon le règlement ANC 2020-01, quelle méthode faut-il appliquer à Cassis (C) dans les comptes consolidés de Mercure ?",
+          "points": 2,
+          "options": [
+            "Intégration globale",
+            "Mise en équivalence",
+            "Comptabilisation des quotes-parts d’actifs, de passifs, de charges et de produits (activité conjointe)",
+            "Exclusion du périmètre, le pourcentage d’intérêt étant inférieur à 50 %"
+          ],
+          "answer": [
+            0
+          ],
+          "explanation": "La méthode dépend de la nature du contrôle, appréciée par le pourcentage de contrôle et non par le pourcentage d'intérêt. Avec 65 % des droits de vote, le groupe exerce un contrôle exclusif sur C : intégration globale. La mise en équivalence vise les entités sous influence notable et, en règlement ANC 2020-01 comme en IFRS 11, les coentreprises sous contrôle conjoint. La comptabilisation des quotes-parts concerne les activités conjointes, ce qui suppose un contrôle conjoint, absent ici. Un intérêt inférieur à 50 % n'est pas un motif d'exclusion : les intérêts minoritaires de C (60,6 %) seront simplement élevés."
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Deux grandeurs distinctes : le pourcentage de contrôle (droits de vote détenus directement ou par des entités contrôlées, sans multiplication) détermine la nature du contrôle donc la méthode ; le pourcentage d'intérêt (produit des parts de capital le long de chaque chaîne, sommé sur les chaînes) sert au partage des capitaux propres et du résultat. Ici : B contrôlée à 60 %, intérêt 48 % ; C contrôlée à 65 %, intérêt 39,4 % ; C est intégrée globalement.",
+      "source_ref": "Règl. ANC 2020-01, périmètre et méthodes de consolidation ; C. com. L233-16 ; IFRS 10 §7 et IFRS 11 §16 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 600
+    }
+  ]
+}

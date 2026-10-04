@@ -1,0 +1,46 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-audit-tresorerie-0001",
+      "type": "audit_case",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-risques",
+      "difficulty": 3,
+      "tags": ["séparation des tâches", "rapprochement bancaire", "fraude", "changement de RIB", "NEP 240"],
+      "title": "Trésorerie d'une PME sans séparation des tâches",
+      "cycle": "tresorerie",
+      "situation": "Vous auditez les comptes au 31/12/N de Zêta, PME de services informatiques (chiffre d'affaires 11 M€, trois comptes bancaires dans deux établissements). Une seule comptable gère la saisie des factures fournisseurs, la préparation et l'émission des virements, ainsi que les rapprochements bancaires. Elle dispose d'une délégation de signature sur la banque en ligne jusqu'à 25 000 € par virement. Le dirigeant, très accaparé par le développement commercial, ne revoit pas les relevés bancaires. Au moment de l'intérim, les derniers rapprochements bancaires établis dataient de septembre N. L'état de rapprochement au 31/12/N, finalement remis, présente 38 000 € de « suspens divers » non documentés, dont certains remontent à plus de six mois. En novembre N, les coordonnées bancaires de deux fournisseurs ont été modifiées à la suite de simples courriels ; des virements de 22 000 € et 24 000 € leur ont ensuite été adressés. Le seuil de signification est fixé à 60 000 €.",
+      "assertions": ["Existence", "Exhaustivité", "Réalité des décaissements"],
+      "procedures": {
+        "options": [
+          "Adresser une demande de confirmation directe aux deux banques, couvrant tous les comptes (y compris ceux clôturés ou à solde nul), les soldes, les signataires habilités et les engagements",
+          "Refaire le rapprochement bancaire au 31/12/N à partir des relevés obtenus directement, analyser chaque suspens et vérifier son dénouement sur les relevés de N+1",
+          "Examiner l'ensemble des modifications de coordonnées bancaires de fournisseurs sur l'exercice, vérifier leur justification auprès des fournisseurs par un canal indépendant et contrôler les virements correspondants",
+          "Tester par sondage le calcul des dotations aux amortissements du matériel informatique",
+          "Assister à l'inventaire physique des stocks de fournitures",
+          "Comparer le montant total des virements de l'exercice à celui de N-1, sans autre investigation si l'écart est inférieur au seuil de signification"
+        ],
+        "answer": [0, 1, 2]
+      },
+      "risk": {
+        "options": ["Faible", "Modéré", "Élevé"],
+        "answer": 2,
+        "rationale": "Plusieurs fonctions incompatibles sont cumulées par une même personne (enregistrement, paiement, rapprochement), et le dirigeant n'exerce aucune supervision : la comptable peut à la fois commettre et dissimuler un détournement. Les rapprochements tardifs, les suspens anciens non justifiés et les changements de RIB sur simple courriel (schéma classique de fraude externe) sont des facteurs de risque de fraude au sens de la NEP 240. Pris isolément, les montants (38 000 € de suspens, 46 000 € de virements suspects) restent inférieurs au seuil de signification, mais leur cumul (84 000 €) le dépasse. Surtout, une fraude a une dimension qualitative : le risque est élevé et appelle une approche substantive renforcée, car on ne peut pas s'appuyer sur le contrôle interne."
+      },
+      "conclusion": {
+        "model_answer": "En l'absence de contrôle interne fiable sur la trésorerie, nous avons adopté une approche exclusivement substantive : confirmation directe des banques, nouveau rapprochement bancaire avec analyse du dénouement des suspens, et vérification des changements de coordonnées bancaires des fournisseurs auprès de ceux-ci. Ces travaux nous ont permis d'obtenir des éléments suffisants et appropriés sur l'existence et l'exhaustivité des disponibilités au 31/12/N. Les suspens non justifiés et les virements effectués vers des coordonnées non confirmées par les fournisseurs ont été chiffrés : nous en tirons les conséquences sur les comptes (perte à constater, ajustement proposé) et sur notre opinion. Nous communiquons à la direction et à l'organe chargé de la gouvernance l'absence de séparation des tâches et de supervision, faiblesse significative du contrôle interne (NEP 265). Si les faits constituent une fraude, nous en tirons les conséquences prévues par la NEP 240 (communication à la direction et à la gouvernance, incidence sur l'opinion) et par le Code de commerce, y compris, le cas échéant, la révélation au procureur de la République des faits délictueux.",
+        "key_points": [
+          "Justifier le recours à une approche substantive, faute de contrôle interne fiable",
+          "Conclure sur l'existence et l'exhaustivité de la trésorerie et chiffrer les éléments non justifiés",
+          "Communiquer la faiblesse significative (séparation des tâches, supervision) à la gouvernance",
+          "Envisager les suites en cas de fraude avérée (NEP 240, révélation des faits délictueux)"
+        ]
+      },
+      "explanation": "La trésorerie est un cycle à fort risque de fraude, car les actifs sont directement détournables. Lorsqu'une même personne enregistre, paie et rapproche sans supervision, l'auditeur ne peut pas s'appuyer sur les contrôles : il doit obtenir des éléments externes (confirmations bancaires, NEP 505) et refaire lui-même les rapprochements. Les changements de RIB sur simple courriel exposent à la fraude au faux fournisseur : l'auditeur vérifie que chaque modification a été contrôlée par un canal indépendant (appel à un contact connu) et que les fonds ont bien été reçus par le vrai fournisseur. La comparaison globale des virements d'un exercice à l'autre est une procédure analytique trop peu précise pour détecter des détournements unitaires de 20 000 à 25 000 €. Les amortissements et les stocks relèvent d'autres cycles.",
+      "source_ref": "NEP 240 (prise en considération de la possibilité de fraudes) ; C. com., obligation de révélation des faits délictueux (ord. 2023-1142) ; NEP 315 ; NEP 330 ; NEP 505 (confirmations des tiers) ; NEP 265 (communication des faiblesses du contrôle interne) ; comptes 512 et 58",
+      "verified": true,
+      "estimated_seconds": 540
+    }
+  ]
+}

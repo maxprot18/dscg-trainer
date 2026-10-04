@@ -1,0 +1,31 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-ifrs-ias2-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-2-stocks",
+      "difficulty": 1,
+      "tags": [
+        "coût des stocks",
+        "frais généraux de production",
+        "capacité normale"
+      ],
+      "statement": "Une société industrielle établit ses comptes selon les IFRS. Parmi les éléments suivants, lequel doit être inclus dans le coût de ses stocks de produits finis selon IAS 2 ?",
+      "options": [
+        "Les frais de stockage des produits finis entreposés après la fin de la fabrication, en attendant leur vente",
+        "Les frais administratifs du siège qui ne contribuent pas à amener les stocks à l'endroit et dans l'état où ils se trouvent",
+        "La quote-part des frais généraux fixes de production, imputée sur la base de la capacité normale des installations",
+        "Le coût des déchets de fabrication anormalement élevés constatés lors d’une panne de machine"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "IAS 2 retient dans le coût de transformation les coûts directs et une affectation systématique des frais généraux de production fixes et variables ; les frais fixes sont imputés sur la base de la capacité normale, la part correspondant à la sous-activité restant en charges (§12-13). Les trois autres éléments sont expressément exclus du coût des stocks et comptabilisés en charges de la période : les montants anormaux de déchets de fabrication, les coûts de stockage sauf s'ils sont nécessaires au processus de production avant une nouvelle étape (ce n'est pas le cas pour des produits finis en attente de vente), et les frais administratifs qui ne contribuent pas à amener les stocks à l'endroit et dans l'état où ils se trouvent (§16).",
+      "source_ref": "IAS 2 §10, §12-13 et §16 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 60
+    }
+  ]
+}

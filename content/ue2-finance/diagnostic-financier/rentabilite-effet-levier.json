@@ -1,0 +1,32 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-diag-levier-0001",
+      "type": "mcq",
+      "ue": "UE2",
+      "theme": "diagnostic-financier",
+      "notion": "rentabilite-effet-levier",
+      "difficulty": 2,
+      "tags": [
+        "effet de levier",
+        "rentabilité financière",
+        "rentabilité économique"
+      ],
+      "source_ref": "Relation de l’effet de levier : R_f = R_e + (R_e − i) × D/CP (taux après impôt)",
+      "verified": true,
+      "estimated_seconds": 150,
+      "statement": "Une entreprise dégage une rentabilité économique après impôt de 9 %. Elle est financée par 4 M€ de capitaux propres et 2 M€ de dettes financières, dont le coût après impôt est de 3 %. Quelle est sa rentabilité financière ?",
+      "options": [
+        "11 %",
+        "12 %",
+        "21 %",
+        "6 %"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "Formule de l'effet de levier : R_f = R_e + (R_e − i) × D/CP. Le levier est D/CP = 2/4 = 0,5. R_f = 9 % + (9 % − 3 %) × 0,5 = 9 % + 3 % = 12 %. Vérification par les montants : résultat économique après impôt = 9 % × 6 M€ = 540 k€ ; frais financiers après impôt = 3 % × 2 M€ = 60 k€ ; résultat net = 480 k€, soit 480/4 000 = 12 %. 11 % résulte d'un levier mal calculé (D/(D+CP) = 1/3 au lieu de D/CP) ; 21 % inverse le ratio (CP/D = 2) ; 6 % n'est que l'écart R_e − i (le différentiel de levier), pas la rentabilité financière. L'effet de levier est positif ici car R_e > i."
+    }
+  ]
+}

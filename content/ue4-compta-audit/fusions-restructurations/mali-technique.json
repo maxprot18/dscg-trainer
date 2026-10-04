@@ -1,0 +1,69 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-fusion-mali-0001",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "mali-technique",
+      "difficulty": 3,
+      "tags": [
+        "fusion",
+        "mali technique",
+        "vrai mali",
+        "contrôle commun",
+        "annulation des titres"
+      ],
+      "statement": "La société Alpha détient 100 % du capital de la société Bêta, dont les titres figurent à son bilan pour 500 000 € (compte 261). Alpha absorbe Bêta ; les apports, réalisés entre sociétés sous contrôle commun, sont évalués à la valeur comptable. Bilan de Bêta à la date d'effet : terrain 200 000 €, stocks de marchandises 100 000 €, disponibilités 200 000 €, dettes fournisseurs 120 000 €. Le terrain a une valeur réelle de 290 000 € ; aucun autre actif ou passif ne présente de plus-value latente, et aucun élément non comptabilisé n'est identifié. Passez chez Alpha l'écriture unique de réception des apports et d'annulation des titres Bêta (on ignore la fiscalité).",
+      "date": "Date d’effet de la fusion",
+      "entries": [
+        {
+          "account": "211",
+          "label": "Terrains",
+          "debit": 200000,
+          "credit": 0
+        },
+        {
+          "account": "2187",
+          "label": "Mali de fusion sur actifs corporels",
+          "debit": 90000,
+          "credit": 0
+        },
+        {
+          "account": "37",
+          "label": "Stocks de marchandises",
+          "debit": 100000,
+          "credit": 0
+        },
+        {
+          "account": "512",
+          "label": "Banques",
+          "debit": 200000,
+          "credit": 0
+        },
+        {
+          "account": "668",
+          "label": "Autres charges financières (vrai mali)",
+          "debit": 30000,
+          "credit": 0
+        },
+        {
+          "account": "401",
+          "label": "Fournisseurs",
+          "debit": 0,
+          "credit": 120000
+        },
+        {
+          "account": "261",
+          "label": "Titres de participation (Bêta)",
+          "debit": 0,
+          "credit": 500000
+        }
+      ],
+      "explanation": "Actif net apporté à la valeur comptable : 200 000 + 100 000 + 200 000 − 120 000 = 380 000 €. Alpha détenant 100 % de Bêta, il n'y a pas d'augmentation de capital : les titres (500 000 €) sont annulés contre l'actif net reçu, d'où un mali de 500 000 − 380 000 = 120 000 €. Le mali technique correspond aux plus-values latentes sur les éléments apportés, dans la limite du mali : 290 000 − 200 000 = 90 000 €. Il est affecté au compte de mali relatif à l'actif concerné (2187 « Mali de fusion sur actifs corporels » pour un terrain) ; le terrain reste inscrit à sa valeur comptable de 200 000 €. Le solde, 120 000 − 90 000 = 30 000 €, est un vrai mali, sans contrepartie identifiable, comptabilisé en charges financières.",
+      "source_ref": "PCG titre VII, traitement du mali technique (règl. ANC 2014-03 modifié par les règl. ANC 2015-06 et 2017-01) ; comptes 2187, 261 et 668",
+      "verified": true,
+      "estimated_seconds": 300
+    }
+  ]
+}
