@@ -1,0 +1,123 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-cadre-organisation-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "organisation-profession",
+      "difficulty": 1,
+      "tags": [
+        "H2A",
+        "supervision",
+        "commissaire aux comptes"
+      ],
+      "source_ref": "C. com., livre VIII, titre II, dispositions relatives à la Haute autorité de l'audit (rédaction issue de l'ordonnance n° 2023-1142 du 6 décembre 2023)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Depuis l'ordonnance n° 2023-1142 du 6 décembre 2023, quel organisme est l'autorité publique chargée de la supervision des commissaires aux comptes (contrôles, enquêtes, sanctions) ?",
+      "options": [
+        "La Compagnie nationale des commissaires aux comptes (CNCC)",
+        "La Haute autorité de l'audit (H2A)",
+        "L'Autorité des marchés financiers (AMF)",
+        "Le Conseil supérieur de l'Ordre des experts-comptables"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'ordonnance n° 2023-1142 a transformé le Haut conseil du commissariat aux comptes (H3C) en Haute autorité de l'audit (H2A), autorité publique indépendante qui supervise les commissaires aux comptes et, depuis la transposition de la directive CSRD, les auditeurs de durabilité : contrôles périodiques, enquêtes, sanctions disciplinaires, normes et déontologie. La CNCC est l'organisme professionnel qui représente la profession et publie la doctrine ; elle n'est pas l'autorité de supervision, même si elle peut recevoir des délégations. L'AMF régule les marchés financiers et les émetteurs cotés, pas la profession de CAC. Le Conseil supérieur de l'Ordre est l'instance nationale des experts-comptables, profession distincte régie par l'ordonnance de 1945."
+    },
+    {
+      "id": "ue4-cadre-organisation-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "organisation-profession",
+      "difficulty": 1,
+      "tags": [
+        "Ordre des experts-comptables",
+        "ordonnance de 1945"
+      ],
+      "source_ref": "Ordonnance n° 45-2138 du 19 septembre 1945 portant institution de l'Ordre des experts-comptables, art. 2",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Quel texte institue l'Ordre des experts-comptables et définit le champ réservé (monopole) de la profession d'expert-comptable ?",
+      "options": [
+        "Le livre VIII du Code de commerce, consacré au commissariat aux comptes",
+        "Le règlement (UE) n° 537/2014 relatif au contrôle légal des comptes des EIP",
+        "L'ordonnance n° 45-2138 du 19 septembre 1945",
+        "La loi n° 2019-486 du 22 mai 2019 (PACTE)"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'ordonnance n° 45-2138 du 19 septembre 1945 institue l'Ordre des experts-comptables (Conseil supérieur et conseils régionaux) et définit, à son article 2, la mission de l'expert-comptable, dont le monopole de la tenue et de la surveillance des comptabilités. Le livre VIII du Code de commerce régit les commissaires aux comptes, pas les experts-comptables. Le règlement 537/2014 encadre l'audit légal des entités d'intérêt public. La loi PACTE a modifié les seuils de désignation des commissaires aux comptes ; elle n'a pas créé l'Ordre."
+    },
+    {
+      "id": "ue4-cadre-organisation-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "organisation-profession",
+      "difficulty": 2,
+      "tags": [
+        "H2A",
+        "CNCC",
+        "répartition des rôles"
+      ],
+      "source_ref": "C. com., livre VIII, titre II, dispositions relatives à la H2A et à la Compagnie nationale des commissaires aux comptes (ordonnance n° 2023-1142)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Parmi les attributions suivantes, laquelle relève de la Compagnie nationale des commissaires aux comptes (CNCC) et non de la Haute autorité de l'audit (H2A) ?",
+      "options": [
+        "Prononcer une sanction d'interdiction temporaire d'exercer à l'encontre d'un commissaire aux comptes",
+        "Diligenter une enquête sur un commissaire aux comptes soupçonné de manquements",
+        "Définir le cadre des contrôles périodiques des commissaires aux comptes détenteurs de mandats d'EIP",
+        "Représenter la profession auprès des pouvoirs publics et défendre ses intérêts"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "La CNCC est l'organisme professionnel des commissaires aux comptes : elle représente la profession auprès des pouvoirs publics, contribue à la formation et publie la doctrine professionnelle. Les trois autres attributions relèvent de la H2A, autorité publique de supervision : elle prononce les sanctions disciplinaires (formation restreinte), dispose d'enquêteurs et organise les contrôles périodiques, qu'elle réalise elle-même pour les CAC d'EIP et peut déléguer à la CNCC pour les autres. Confier la sanction ou l'enquête à l'organisme représentatif de la profession irait contre le principe d'une supervision publique indépendante."
+    },
+    {
+      "id": "ue4-cadre-organisation-0004",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "organisation-profession",
+      "difficulty": 1,
+      "tags": [
+        "sanctions disciplinaires",
+        "H2A",
+        "CNCC"
+      ],
+      "source_ref": "C. com., livre VIII, titre II, dispositions relatives aux sanctions prononcées par la formation restreinte de la H2A (ordonnance n° 2023-1142)",
+      "verified": true,
+      "estimated_seconds": 40,
+      "statement": "La Compagnie nationale des commissaires aux comptes (CNCC) est l'autorité qui prononce les sanctions disciplinaires contre les commissaires aux comptes.",
+      "answer": false,
+      "justification": "Les sanctions disciplinaires des commissaires aux comptes sont prononcées par la formation restreinte de la H2A, autorité publique indépendante, et non par la CNCC, organisme professionnel.",
+      "explanation": "Depuis la réforme de 2016 (alors au profit du H3C), le pouvoir disciplinaire a été retiré aux instances professionnelles : la sanction relève de l'autorité publique de supervision, aujourd'hui la H2A. Une formation de la H2A distincte de celle qui engage les poursuites (la formation restreinte) prononce les sanctions : avertissement, blâme, interdiction temporaire, radiation, sanctions pécuniaires. La CNCC représente la profession, assure la formation et publie la doctrine. Pour les experts-comptables, en revanche, la discipline reste exercée par des chambres de discipline au sein de l'Ordre."
+    },
+    {
+      "id": "ue4-cadre-organisation-0005",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "organisation-profession",
+      "difficulty": 1,
+      "tags": [
+        "expert-comptable",
+        "commissaire aux comptes",
+        "organisation"
+      ],
+      "source_ref": "Ordonnance n° 45-2138 du 19 septembre 1945 ; C. com., livre VIII, titre II (ordonnance n° 2023-1142)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "front": "Expert-comptable et commissaire aux comptes : quels textes, quelles instances, quelle mission principale ?",
+      "back": "Expert-comptable : ordonnance de 1945, Ordre (Conseil supérieur, conseils régionaux) ; mission contractuelle de tenue, présentation, conseil, monopole de la comptabilité.\nCAC : Code de commerce (livre VIII), supervision par la H2A, représentation par la CNCC ; mission légale de certification des comptes.\nOn peut être les deux, mais pas pour la même entité.",
+      "explanation": "L'incompatibilité entre tenue de la comptabilité et certification découle du principe d'indépendance (risque d'autorévision) : le CAC ne peut pas certifier des comptes qu'il a lui-même établis. Depuis l'ordonnance n° 2023-1142, le H3C est devenu la H2A."
+    }
+  ]
+}

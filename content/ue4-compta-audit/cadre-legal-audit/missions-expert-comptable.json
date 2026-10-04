@@ -1,0 +1,137 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-cadre-expert-comptable-0001",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "missions-expert-comptable",
+      "difficulty": 1,
+      "tags": [
+        "honoraires",
+        "expert-comptable",
+        "factures non parvenues"
+      ],
+      "source_ref": "PCG (règl. ANC 2014-03) : comptes 6226 Honoraires, 4081, 44586 ; principe d'indépendance des exercices",
+      "verified": true,
+      "estimated_seconds": 150,
+      "statement": "La SARL Mu confie à un expert-comptable la présentation de ses comptes N pour un forfait de 7 200 € HT. Des acomptes de 450 € HT ont été facturés et comptabilisés pour dix mois de N, soit 4 500 € HT. Par ailleurs, l'établissement de la paie de décembre N (380 € HT) ne sera facturé qu'en janvier N+1. TVA 20 %, récupérable. Passez l'écriture d'inventaire au 31/12/N, en regroupant les honoraires sur une seule ligne du compte 6226 et en utilisant les comptes 4081 et 44586.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "6226",
+          "label": "Honoraires expert-comptable à recevoir",
+          "debit": 3080,
+          "credit": 0
+        },
+        {
+          "account": "44586",
+          "label": "TVA sur factures non parvenues",
+          "debit": 616,
+          "credit": 0
+        },
+        {
+          "account": "4081",
+          "label": "Fournisseurs – factures non parvenues",
+          "debit": 0,
+          "credit": 3696
+        }
+      ],
+      "explanation": "La mission de présentation des comptes N est une charge de N pour son montant total : reste à facturer 7 200 − 4 500 = 2 700 € HT. La paie de décembre N est également une charge de N : 380 € HT. Total : 3 080 € HT ; TVA : 3 080 × 20 % = 616 € ; TTC : 3 696 €. Écriture extournée à l'ouverture de N+1."
+    },
+    {
+      "id": "ue4-cadre-expert-comptable-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "missions-expert-comptable",
+      "difficulty": 2,
+      "tags": [
+        "examen limité",
+        "niveau d'assurance",
+        "présentation des comptes"
+      ],
+      "source_ref": "Normes professionnelles de l'Ordre des experts-comptables : NP 2400 (examen limité), NP 2300 (présentation des comptes), NP 4410 (compilation)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Un expert-comptable conclut sa mission par la phrase : « Sur la base de notre examen limité, nous n'avons pas relevé d'anomalies significatives de nature à remettre en cause la régularité et la sincérité des comptes. » Quel niveau d'assurance cette formulation traduit-elle ?",
+      "options": [
+        "Une assurance raisonnable, exprimée sous forme positive, comme dans un audit",
+        "Aucune assurance, la mission consistant à mettre en forme des informations",
+        "Une assurance modérée, exprimée sous forme négative",
+        "Une assurance limitée à la cohérence et à la vraisemblance des comptes, propre à la présentation des comptes"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'examen limité, fondé essentiellement sur des entretiens et des procédures analytiques, procure une assurance modérée, d'où la formulation négative (« nous n'avons pas relevé… »). L'audit procure une assurance raisonnable, avec une opinion positive (« les comptes sont réguliers et sincères »). La compilation ne procure aucune assurance. La présentation des comptes conduit à une attestation sur la cohérence et la vraisemblance, de portée inférieure à l'examen limité."
+    },
+    {
+      "id": "ue4-cadre-expert-comptable-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "missions-expert-comptable",
+      "difficulty": 2,
+      "tags": [
+        "monopole",
+        "ordonnance de 1945"
+      ],
+      "source_ref": "Ordonnance n° 45-2138 du 19 septembre 1945, art. 2 (mission de l'expert-comptable) et dispositions sur l'exercice illégal",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "L'expert-comptable a le monopole de la tenue, de la centralisation, de l'ouverture, de l'arrêté, de la surveillance, du redressement et de la consolidation des comptabilités des entreprises auxquelles il n'est pas lié par un contrat de travail.",
+      "answer": true,
+      "justification": "Ces travaux sont définis par l'article 2 de l'ordonnance de 1945 et réservés aux experts-comptables inscrits au tableau de l'Ordre ; leur exercice habituel par une autre personne constitue un exercice illégal.",
+      "explanation": "Le monopole ne joue pas pour le salarié qui tient la comptabilité de son employeur (lien de subordination) : c'est le sens de la réserve « auxquelles il n'est pas lié par un contrat de travail ». L'ordonnance habilite aussi l'expert-comptable à réviser et apprécier les comptabilités et à attester la régularité et la sincérité des comptes, dans le cadre de missions contractuelles, distinctes de la certification légale du CAC."
+    },
+    {
+      "id": "ue4-cadre-expert-comptable-0004",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "missions-expert-comptable",
+      "difficulty": 3,
+      "tags": [
+        "incompatibilité",
+        "autorévision",
+        "réseau",
+        "désignation du CAC"
+      ],
+      "source_ref": "Code de déontologie de la profession de commissaire aux comptes (services interdits : tenue de comptabilité, extension au réseau) ; C. com., dispositions sur l'indépendance du CAC (ordonnance n° 2023-1142)",
+      "verified": true,
+      "estimated_seconds": 75,
+      "statement": "Le cabinet d'expertise comptable Hydre tient la comptabilité et établit les comptes annuels de la SAS Nu depuis dix ans. Nu dépasse désormais les seuils de désignation d'un commissaire aux comptes. Le président souhaite confier le mandat de CAC à Hydre, également inscrit comme société de commissaires aux comptes, ou à défaut à une société du même réseau qu'Hydre. Que doit-on lui répondre ?",
+      "options": [
+        "Ni Hydre ni une société de son réseau ne peuvent être CAC de Nu tant que Hydre tient la comptabilité : il faut choisir entre les deux missions",
+        "C'est possible si deux équipes distinctes d'Hydre réalisent l'une la tenue, l'autre l'audit",
+        "C'est possible car Nu n'est pas une entité d'intérêt public",
+        "Seule la société du réseau peut être désignée, puisqu'elle n'a pas tenu la comptabilité"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Tenir la comptabilité ou établir les comptes, puis les certifier, place le professionnel en situation d'autorévision : ce service est interdit au commissaire aux comptes de toute entité, EIP ou non, et l'interdiction s'étend aux membres de son réseau. Une séparation des équipes ne suffit pas, l'interdiction ne pouvant être levée par des mesures de sauvegarde. Nu doit donc désigner un CAC extérieur au réseau d'Hydre, ou Hydre (ou une société de son réseau) doit cesser la tenue de la comptabilité pour pouvoir être désigné."
+    },
+    {
+      "id": "ue4-cadre-expert-comptable-0005",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "missions-expert-comptable",
+      "difficulty": 3,
+      "tags": [
+        "présentation des comptes",
+        "attestation",
+        "réserves"
+      ],
+      "source_ref": "Norme professionnelle de l'Ordre des experts-comptables NP 2300 (mission de présentation des comptes, formulation de l'attestation)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Dans une mission de présentation des comptes, l'expert-comptable qui relève une anomalie significative que le client refuse de corriger peut délivrer une attestation sans réserve, dès lors qu'il signale l'anomalie dans un courrier séparé adressé à la direction.",
+      "answer": false,
+      "justification": "L'anomalie non corrigée doit se traduire dans l'attestation elle-même : réserve ou, si elle remet en cause les comptes dans leur ensemble, absence d'attestation ; un courrier séparé n'informe pas les utilisateurs des comptes.",
+      "explanation": "L'attestation de présentation s'adresse aux utilisateurs des comptes (associés, banques, administration) : elle indique que l'expert-comptable n'a pas relevé d'éléments remettant en cause la cohérence et la vraisemblance des comptes. Délivrer cette attestation sans réserve alors qu'il connaît une anomalie significative serait trompeur et engagerait sa responsabilité. Le courrier à la direction (dit de recommandations) complète l'attestation mais ne la remplace pas."
+    }
+  ]
+}

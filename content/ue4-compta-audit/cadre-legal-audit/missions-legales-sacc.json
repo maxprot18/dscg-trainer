@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-cadre-sacc-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "missions-legales-sacc",
+      "difficulty": 1,
+      "tags": [
+        "missions légales",
+        "conventions réglementées",
+        "SACC"
+      ],
+      "source_ref": "C. com. art. L. 225-40 (rapport spécial du CAC sur les conventions réglementées dans la SA) ; C. com., livre VIII, titre II (missions du CAC, ordonnance n° 2023-1142)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Parmi les interventions suivantes du commissaire aux comptes d'une SA, laquelle constitue une mission légale, et non un service autre que la certification des comptes ?",
+      "options": [
+        "Une attestation sur le respect des covenants d'un contrat de prêt, demandée par la banque",
+        "Des travaux de due diligence sur une société que la SA envisage d'acquérir",
+        "Le rapport spécial présenté à l'assemblée sur les conventions réglementées",
+        "Une consultation sur le traitement comptable d'un contrat de location complexe"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Le rapport spécial sur les conventions réglementées est imposé par la loi : le CAC le présente à l'assemblée, qui statue sur ces conventions. C'est une mission légale, au même titre que la certification et les autres vérifications spécifiques. L'attestation sur covenants, les due diligences d'acquisition et les consultations comptables sont des services autres que la certification (SACC), fournis à la demande de l'entité ou d'un tiers, sous réserve des règles d'indépendance."
+    },
+    {
+      "id": "ue4-cadre-sacc-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "missions-legales-sacc",
+      "difficulty": 2,
+      "tags": [
+        "révélation des faits délictueux",
+        "procureur de la République",
+        "abus de biens sociaux"
+      ],
+      "source_ref": "C. com., livre VIII, titre II, disposition relative à la révélation des faits délictueux au procureur de la République (ordonnance n° 2023-1142) ; NEP 250",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Lors de l'audit de la SA Hydra, le commissaire aux comptes découvre que le directeur général fait régler par la société, depuis deux ans, les travaux de sa résidence personnelle, pour un montant important, sans aucune contrepartie pour la société. Que doit-il faire au titre de ses obligations légales ?",
+      "options": [
+        "Révéler ces faits au procureur de la République, sans attendre la fin de la mission",
+        "En informer le seul conseil d'administration, qui décidera s'il y a lieu de saisir la justice",
+        "Obtenir l'accord écrit du directeur général avant toute démarche, en vertu du secret professionnel",
+        "Démissionner immédiatement, ce qui le dispense de toute autre démarche"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Le commissaire aux comptes doit révéler au procureur de la République les faits délictueux dont il a eu connaissance dans sa mission ; le paiement de dépenses personnelles du dirigeant par la société, sans contrepartie, peut caractériser un abus de biens sociaux. Le secret professionnel ne lui est pas opposable dans ce cas et sa responsabilité ne peut être engagée pour une révélation faite de bonne foi. Informer le conseil d'administration (ce qu'il fait par ailleurs) ne le dispense pas de la révélation ; il n'a pas à obtenir l'accord du dirigeant concerné ; la démission ne fait pas disparaître l'obligation, et ne pas révéler constitue un délit."
+    },
+    {
+      "id": "ue4-cadre-sacc-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "missions-legales-sacc",
+      "difficulty": 2,
+      "tags": [
+        "EIP",
+        "comité d'audit",
+        "SACC"
+      ],
+      "source_ref": "Règlement (UE) n° 537/2014, art. 5 §4 ; C. com., dispositions sur les missions du comité d'audit (approbation des services autres que la certification)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Dans une entité d'intérêt public, la fourniture par le commissaire aux comptes d'un service autre que la certification des comptes, non interdit, est soumise à l'approbation préalable du comité d'audit.",
+      "answer": true,
+      "justification": "Le règlement 537/2014 et le Code de commerce soumettent les SACC non interdits fournis aux EIP à l'approbation du comité d'audit, après analyse des risques pesant sur l'indépendance et des mesures de sauvegarde.",
+      "explanation": "Le comité d'audit est chargé, dans les EIP, du suivi de l'indépendance du commissaire aux comptes. Il approuve préalablement les SACC qui ne figurent pas dans la liste des services interdits. Cette approbation s'ajoute aux autres garde-fous : interdiction de certains services, y compris pour le réseau, plafond des honoraires de SACC à 70 % de la moyenne des honoraires d'audit des trois derniers exercices."
+    },
+    {
+      "id": "ue4-cadre-sacc-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "missions-legales-sacc",
+      "difficulty": 3,
+      "tags": [
+        "plafond des honoraires",
+        "SACC",
+        "EIP",
+        "70 %"
+      ],
+      "source_ref": "Règlement (UE) n° 537/2014, art. 4 §2 (plafond des honoraires de services autres que d'audit à 70 % de la moyenne des honoraires de contrôle légal des trois derniers exercices ; exclusion des services imposés par un texte)",
+      "verified": true,
+      "estimated_seconds": 240,
+      "statement": "Le cabinet Lyra est commissaire aux comptes de la société Draco, entité d'intérêt public, à laquelle il fournit des services autres que la certification (SACC) depuis plus de trois exercices consécutifs. Honoraires de contrôle légal perçus de Draco, de sa société mère et des entités qu'elle contrôle : N-3 : 180 000 € ; N-2 : 200 000 € ; N-1 : 220 000 €. Pour l'exercice N, le comité d'audit a déjà approuvé des SACC pour 95 000 €, auxquels s'ajoutent 15 000 € de SACC imposés par un texte légal. Quel montant maximal d'honoraires de SACC supplémentaires (non imposés par un texte) Lyra peut-il encore facturer au titre de N ? (en euros, arrondi à l'euro)",
+      "expected_value": 45000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "explanation": "Moyenne des honoraires de contrôle légal des trois derniers exercices : (180 000 + 200 000 + 220 000) ÷ 3 = 200 000 €. Plafond des SACC : 70 % × 200 000 = 140 000 €. Les SACC imposés par un texte sont exclus du calcul du plafond. Capacité restante : 140 000 − 95 000 = 45 000 €. Erreurs classiques : inclure les 15 000 € de SACC légaux (30 000 €) ; appliquer les 70 % aux seuls honoraires de N-1 (154 000 − 95 000 = 59 000 €)."
+    },
+    {
+      "id": "ue4-cadre-sacc-0005",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "missions-legales-sacc",
+      "difficulty": 2,
+      "tags": [
+        "honoraires",
+        "factures non parvenues",
+        "charges constatées d'avance"
+      ],
+      "source_ref": "PCG (règl. ANC 2014-03) : comptes 6226 Honoraires, 4081, 44586, 486 Charges constatées d'avance ; principe d'indépendance des exercices",
+      "verified": true,
+      "estimated_seconds": 240,
+      "statement": "Au 31/12/N, la société Lambda constate :\n– les honoraires de son commissaire aux comptes pour l'audit des comptes N, soit 28 000 € HT, n'ont pas encore été facturés (TVA 20 %, récupérable) ;\n– une facture de 8 000 € HT reçue en décembre N, comptabilisée en 6226, porte sur une attestation (SACC) que le commissaire aux comptes réalisera en février N+1 ; la TVA de cette facture a déjà été correctement traitée.\nPassez l'écriture de régularisation unique au 31/12/N, avec une ligne par compte (montant net pour le compte 6226), en utilisant les comptes 4081, 44586 et 486.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "6226",
+          "label": "Honoraires : audit N à recevoir (28 000) net de l'attestation N+1 (8 000)",
+          "debit": 20000,
+          "credit": 0
+        },
+        {
+          "account": "486",
+          "label": "Charges constatées d'avance",
+          "debit": 8000,
+          "credit": 0
+        },
+        {
+          "account": "44586",
+          "label": "TVA sur factures non parvenues",
+          "debit": 5600,
+          "credit": 0
+        },
+        {
+          "account": "4081",
+          "label": "Fournisseurs – factures non parvenues",
+          "debit": 0,
+          "credit": 33600
+        }
+      ],
+      "explanation": "Audit N : charge de N non facturée → débit 6226 28 000, débit 44586 5 600 (28 000 × 20 %), crédit 4081 33 600. Attestation : prestation de N+1 déjà en charge → débit 486 8 000, crédit 6226 8 000. Ligne nette du compte 6226 : 28 000 − 8 000 = 20 000 au débit. Contrôle : débits 20 000 + 8 000 + 5 600 = 33 600 = crédit. Les deux régularisations seront extournées à l'ouverture de N+1."
+    },
+    {
+      "id": "ue4-cadre-sacc-0006",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "missions-legales-sacc",
+      "difficulty": 2,
+      "tags": [
+        "procédure d'alerte",
+        "capitaux propres",
+        "continuité d'exploitation"
+      ],
+      "source_ref": "C. com. art. L. 234-1 (procédure d'alerte du CAC dans la SA) et L. 225-248 (capitaux propres inférieurs à la moitié du capital social) ; NEP 570",
+      "verified": true,
+      "estimated_seconds": 600,
+      "title": "Orion SA : pertes et procédure d'alerte",
+      "context": "Orion SA, société non cotée dotée d'un conseil d'administration, a un capital social de 600 000 €.\nL'exercice N se solde par une perte de 410 000 € ; les capitaux propres au 31/12/N s'élèvent à 245 000 €.\nLors de l'audit, le commissaire aux comptes relève en outre :\n– un retard de trois mois dans le paiement des cotisations sociales ;\n– la dénonciation par la banque principale de l'autorisation de découvert, avec effet au 31 mars N+1 ;\n– la perte du premier client (35 % du chiffre d'affaires), annoncée en janvier N+1.\nLe président du conseil d'administration estime que « tout cela relève de la gestion » et que le commissaire aux comptes n'a pas à intervenir.\nL'assemblée d'approbation des comptes N est prévue en juin N+1.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "De quel montant les capitaux propres au 31/12/N sont-ils inférieurs à la moitié du capital social ? (en euros)",
+          "points": 2,
+          "expected_value": 55000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "explanation": "Moitié du capital : 600 000 ÷ 2 = 300 000 €. Écart : 300 000 − 245 000 = 55 000 €. Les capitaux propres sont devenus inférieurs à la moitié du capital."
+        },
+        {
+          "id": "q2",
+          "kind": "mcq",
+          "prompt": "Quelle obligation résulte de cette situation pour la société ?",
+          "points": 2,
+          "options": [
+            "Réduire immédiatement le capital à hauteur des pertes, avant l'assemblée d'approbation",
+            "Faire décider par l'assemblée extraordinaire, dans les quatre mois de l'approbation des comptes, s'il y a lieu à dissolution anticipée",
+            "Déposer le bilan au tribunal de commerce dans les quarante-cinq jours",
+            "Aucune obligation tant que la société n'est pas en cessation des paiements"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "L. 225-248 : dans les quatre mois de l'approbation des comptes faisant apparaître la perte, le conseil d'administration convoque l'assemblée extraordinaire pour décider s'il y a lieu à dissolution anticipée. À défaut de dissolution, la société doit reconstituer ses capitaux propres ou réduire son capital dans un délai déterminé. Le dépôt de bilan est lié à la cessation des paiements, pas à la perte de la moitié du capital."
+        },
+        {
+          "id": "q3",
+          "kind": "true_false",
+          "prompt": "Vrai ou faux : la seule constatation que les capitaux propres sont inférieurs à la moitié du capital oblige le commissaire aux comptes à déclencher la procédure d'alerte.",
+          "points": 2,
+          "answer": false,
+          "explanation": "Faux. L'alerte est déclenchée lorsque le CAC relève des faits de nature à compromettre la continuité de l'exploitation. La perte de la moitié du capital est un indice parmi d'autres ; ici, ce sont surtout les retards sociaux, la dénonciation du découvert et la perte du premier client qui justifient l'alerte."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "prompt": "Répondez au président et décrivez le déroulement de la procédure d'alerte dans Orion SA.",
+          "points": 4,
+          "model_answer": "La procédure d'alerte est une mission légale du commissaire aux comptes : il doit la déclencher dès qu'il relève des faits de nature à compromettre la continuité de l'exploitation, ce qui est le cas ici (dettes sociales impayées, perte du financement bancaire, perte d'un client représentant 35 % du chiffre d'affaires). Il ne s'immisce pas dans la gestion : il demande des explications. Déroulement : 1) information écrite du président du conseil d'administration, qui doit répondre dans les quinze jours ; 2) à défaut de réponse ou si la réponse ne permet pas d'être assuré de la continuité, invitation écrite au président de faire délibérer le conseil d'administration sur ces faits, la délibération étant communiquée au président du tribunal de commerce ; 3) si la continuité reste compromise, rapport spécial présenté à la prochaine assemblée générale (ou à une assemblée convoquée en cas d'urgence) ; 4) si les décisions de l'assemblée ne permettent pas d'assurer la continuité, information du président du tribunal de commerce sur ses démarches et leurs résultats. La procédure est graduée et le CAC documente chaque étape.",
+          "key_points": [
+            "Faits de nature à compromettre la continuité d'exploitation identifiés dans l'énoncé",
+            "Mission légale, sans immixtion dans la gestion",
+            "Phases : président (réponse sous quinze jours), délibération du conseil d'administration, rapport spécial à l'assemblée, information du président du tribunal de commerce"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas distingue deux mécanismes : la règle de droit des sociétés sur les capitaux propres inférieurs à la moitié du capital (L. 225-248), qui s'impose à la société, et la procédure d'alerte (L. 234-1), mission légale du CAC déclenchée par des faits compromettant la continuité d'exploitation."
+    }
+  ]
+}

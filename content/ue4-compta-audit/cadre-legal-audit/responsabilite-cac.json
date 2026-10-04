@@ -1,0 +1,172 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-cadre-responsabilite-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "responsabilite-cac",
+      "difficulty": 1,
+      "tags": [
+        "responsabilité civile",
+        "obligation de moyens"
+      ],
+      "source_ref": "C. com., disposition sur la responsabilité civile du CAC (anc. art. L. 822-17, renuméroté par l'ordonnance n° 2023-1142)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Quelle est la nature de l'obligation du commissaire aux comptes au regard de sa responsabilité civile ?",
+      "options": [
+        "Une obligation de résultat : toute anomalie significative non détectée engage sa responsabilité",
+        "Une responsabilité limitée à l'entité contrôlée, les tiers ne pouvant jamais agir contre lui",
+        "Une obligation de moyens : il répond des fautes et négligences commises dans ses fonctions, envers l'entité comme envers les tiers",
+        "Une absence de responsabilité civile, seule la responsabilité disciplinaire pouvant être engagée"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Le commissaire aux comptes est responsable, envers l'entité et envers les tiers, des conséquences dommageables des fautes et négligences commises dans l'exercice de ses fonctions. Il est tenu d'une obligation de moyens : la victime doit prouver une faute (diligences insuffisantes au regard des normes), un préjudice et un lien de causalité. Une anomalie non détectée ne suffit pas, l'audit ne donnant qu'une assurance raisonnable. Les tiers (banques, fournisseurs, acquéreurs) peuvent agir ; la responsabilité civile coexiste avec les responsabilités pénale et disciplinaire."
+    },
+    {
+      "id": "ue4-cadre-responsabilite-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "responsabilite-cac",
+      "difficulty": 2,
+      "tags": [
+        "prescription",
+        "responsabilité civile"
+      ],
+      "source_ref": "C. com., disposition sur la prescription de l'action en responsabilité contre le CAC (anc. art. L. 822-18, renuméroté par l'ordonnance n° 2023-1142)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Dans quel délai se prescrit l'action en responsabilité civile engagée contre un commissaire aux comptes ?",
+      "options": [
+        "Trois ans à compter du fait dommageable ou, s'il a été dissimulé, de sa révélation",
+        "Cinq ans à compter du jour où le demandeur a connu les faits, selon le droit commun",
+        "Six ans, durée d'un mandat, à compter de la fin de celui-ci",
+        "Dix ans à compter de la certification des comptes en cause"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Le Code de commerce prévoit pour le CAC un délai spécial : trois ans à compter du fait dommageable ou, s'il a été dissimulé, de sa révélation (même délai que pour les dirigeants de SA). Le délai de cinq ans du droit commun (C. civ. art. 2224) est écarté par ce texte spécial. Les six ans correspondent à la durée du mandat et à la durée de conservation des dossiers, pas à la prescription ; le délai de dix ans ne s'applique pas."
+    },
+    {
+      "id": "ue4-cadre-responsabilite-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "responsabilite-cac",
+      "difficulty": 1,
+      "tags": [
+        "infractions des dirigeants",
+        "responsabilité civile"
+      ],
+      "source_ref": "C. com., disposition sur la responsabilité civile du CAC (anc. art. L. 822-17, renuméroté par l'ordonnance n° 2023-1142)",
+      "verified": true,
+      "estimated_seconds": 40,
+      "statement": "Le commissaire aux comptes est civilement responsable de toutes les infractions commises par les dirigeants de la société qu'il contrôle.",
+      "answer": false,
+      "justification": "Le CAC n'est pas civilement responsable des infractions commises par les dirigeants, sauf si, en ayant eu connaissance, il ne les a pas signalées dans son rapport à l'assemblée générale.",
+      "explanation": "Le texte écarte la responsabilité du commissaire aux comptes pour les infractions des dirigeants et des mandataires sociaux, avec une exception : s'il en a eu connaissance et ne les a pas signalées à l'assemblée. Il reste par ailleurs responsable de ses propres fautes (diligences insuffisantes) et doit révéler les faits délictueux au procureur de la République, faute de quoi il commet un délit."
+    },
+    {
+      "id": "ue4-cadre-responsabilite-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "responsabilite-cac",
+      "difficulty": 2,
+      "tags": [
+        "perte de chance",
+        "préjudice",
+        "tiers"
+      ],
+      "source_ref": "C. com., disposition sur la responsabilité civile du CAC envers les tiers (anc. art. L. 822-17) ; C. civ. art. 1240 (responsabilité délictuelle) ; jurisprudence sur l'indemnisation de la perte de chance",
+      "verified": true,
+      "estimated_seconds": 150,
+      "statement": "La banque Céphée a accordé un crédit de 900 000 € à la société Ara au vu de comptes certifiés sans réserve, qui masquaient une situation déficitaire. Ara a remboursé 150 000 € avant d'être liquidée ; le solde est perdu. Le tribunal retient une faute du commissaire aux comptes (contrôle insuffisant des stocks) et estime que, sans cette faute, la banque aurait eu 40 % de chances de refuser le crédit. Il indemnise la perte de chance. Quel montant le commissaire aux comptes doit-il verser à la banque ? (en euros)",
+      "expected_value": 300000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "explanation": "Préjudice final : 900 000 − 150 000 = 750 000 €. La perte de chance s'indemnise par une fraction du préjudice égale à la probabilité de la chance perdue : 750 000 × 40 % = 300 000 €. Erreurs classiques : appliquer 40 % au crédit initial (360 000 €) ou indemniser tout le préjudice (750 000 €)."
+    },
+    {
+      "id": "ue4-cadre-responsabilite-0005",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "responsabilite-cac",
+      "difficulty": 3,
+      "tags": [
+        "responsabilité pénale",
+        "responsabilité disciplinaire",
+        "responsabilité civile",
+        "non-révélation"
+      ],
+      "source_ref": "C. com., dispositions pénales relatives au CAC (anc. art. L. 820-7 : informations mensongères et non-révélation), responsabilité civile et prescription (anc. art. L. 822-17 et L. 822-18), sanctions de la H2A (ordonnance n° 2023-1142) ; C. civ. art. 1240",
+      "verified": true,
+      "estimated_seconds": 720,
+      "title": "Stocks fictifs chez Tucana",
+      "context": "M. Hadar est commissaire aux comptes de la SAS Tucana, distributeur de matériel électrique.\nLors de l'audit des comptes N, son collaborateur a documenté que 30 % des stocks inscrits au bilan (1,2 M€ sur 4 M€) correspondaient à des références inexistantes, créées par le président pour masquer une perte.\nM. Hadar a lu cette note avant de signer. Le président lui ayant promis de « régulariser l'an prochain », il a certifié les comptes N sans réserve et n'a rien signalé à quiconque.\nAu vu de ces comptes, un fournisseur, la société Mensa, a accordé à Tucana des délais de paiement importants. Tucana a été placée en liquidation judiciaire en N+2 ; la créance de Mensa, 200 000 €, est irrécouvrable.\nLa H2A ouvre une enquête ; Mensa et le parquet envisagent d'agir.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "mcq",
+          "prompt": "Quelle qualification pénale peut être retenue contre M. Hadar ?",
+          "points": 2,
+          "options": [
+            "Aucune : seule la H2A est compétente à l'égard d'un commissaire aux comptes",
+            "L'abus de biens sociaux, puisque les comptes ont été manipulés",
+            "Le délit d'obstacle aux vérifications du commissaire aux comptes",
+            "Le délit de confirmation d'informations mensongères et le délit de non-révélation de faits délictueux"
+          ],
+          "answer": [
+            3
+          ],
+          "explanation": "En certifiant en connaissance de cause des comptes qu'il sait faux, M. Hadar confirme des informations mensongères ; en ne révélant pas au procureur la falsification des stocks, il commet le délit de non-révélation. L'abus de biens sociaux et la présentation de comptes inexacts concernent le président ; l'obstacle aux vérifications est commis par les dirigeants contre le CAC. Les poursuites pénales coexistent avec la procédure disciplinaire."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "prompt": "Quel est le montant maximal de l'amende encourue pour chacun de ces délits ? (en euros)",
+          "points": 2,
+          "expected_value": 75000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "explanation": "Chacun de ces délits est puni de cinq ans d'emprisonnement et de 75 000 € d'amende."
+        },
+        {
+          "id": "q3",
+          "kind": "true_false",
+          "prompt": "Vrai ou faux : la H2A peut prononcer une sanction disciplinaire contre M. Hadar sans attendre l'issue des poursuites pénales.",
+          "points": 2,
+          "answer": true,
+          "explanation": "Vrai. Les responsabilités disciplinaire, pénale et civile sont indépendantes ; la formation restreinte de la H2A apprécie les manquements aux règles professionnelles (diligences, déontologie) et peut sanctionner (jusqu'à la radiation) indépendamment du juge pénal."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "prompt": "La société Mensa peut-elle obtenir réparation de M. Hadar ? Exposez les conditions et le délai pour agir.",
+          "points": 4,
+          "model_answer": "Oui, en principe. Le CAC est responsable envers les tiers des conséquences dommageables de ses fautes et négligences. Mensa doit établir : une faute (certification sans réserve de comptes que le CAC savait faux, faute caractérisée) ; un préjudice (créance irrécouvrable de 200 000 €, ou la perte de chance de ne pas accorder les délais, que le juge peut retenir) ; un lien de causalité (les délais ont été accordés au vu des comptes certifiés). L'exception relative aux infractions des dirigeants ne joue pas : M. Hadar en avait connaissance et ne les a pas signalées. Délai : trois ans à compter du fait dommageable ou, s'il a été dissimulé, de sa révélation. Son assurance de responsabilité civile professionnelle, obligatoire, sera mise en jeu.",
+          "key_points": [
+            "Faute, préjudice et lien de causalité à prouver par le tiers",
+            "Exception des infractions des dirigeants écartée car le CAC en avait connaissance",
+            "Prescription de trois ans, reportée à la révélation en cas de dissimulation",
+            "Indemnisation possible au titre de la perte de chance ; assurance RCP"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Un même comportement engage les trois responsabilités du commissaire aux comptes : pénale (informations mensongères, non-révélation), disciplinaire (H2A) et civile (envers les tiers qui ont subi un préjudice causé par sa faute)."
+    }
+  ]
+}

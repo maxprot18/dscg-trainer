@@ -20,6 +20,192 @@
       "source_ref": "Code de déontologie de la profession de commissaire aux comptes (services interdits, autorévision) ; Règlement (UE) n° 537/2014, art. 5 (services interdits aux CAC d'EIP) ; C. com., dispositions sur l'indépendance du CAC issues de l'ordonnance n° 2023-1142",
       "verified": true,
       "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-cadre-independance-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "independance-deontologie",
+      "difficulty": 2,
+      "tags": [
+        "honoraires",
+        "honoraires conditionnels",
+        "déontologie"
+      ],
+      "source_ref": "Code de déontologie de la profession de commissaire aux comptes (honoraires ; interdiction des honoraires subordonnés à un résultat)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Lors de la négociation de son budget avec une société cliente, un commissaire aux comptes envisage plusieurs modalités d'honoraires. Laquelle est interdite ?",
+      "options": [
+        "Des honoraires calculés à partir d'un volume d'heures estimé selon la taille et la complexité de l'entité",
+        "Une prime égale à 1 % du résultat net si celui-ci dépasse l'objectif annoncé aux banques",
+        "Une révision annuelle du budget pour tenir compte de l'évolution des travaux nécessaires",
+        "Une facturation distincte, dans le respect des règles d'indépendance, d'une attestation demandée par l'entité"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Les honoraires du commissaire aux comptes ne peuvent pas être subordonnés à un résultat ou à un événement (honoraires conditionnels) : une prime liée au résultat net crée une menace d'intérêt personnel, le CAC ayant intérêt à ce que les comptes affichent un résultat élevé. Fixer les honoraires d'après les heures nécessaires à la mission est la règle normale ; réviser le budget selon les travaux est légitime ; une attestation (SACC autorisé) peut être facturée séparément."
+    },
+    {
+      "id": "ue4-cadre-independance-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "independance-deontologie",
+      "difficulty": 3,
+      "tags": [
+        "services interdits",
+        "intérêt financier",
+        "cadeaux",
+        "EIP",
+        "réseau"
+      ],
+      "source_ref": "Règlement (UE) n° 537/2014, art. 5 §1 (services interdits, y compris aux membres du réseau) ; code de déontologie de la profession de CAC (intérêts financiers, cadeaux et avantages) ; C. com. art. L. 225-204 (rapport du CAC sur la réduction de capital)",
+      "verified": true,
+      "estimated_seconds": 90,
+      "statement": "Le cabinet Cassiopée est commissaire aux comptes de la société Véga, entité d'intérêt public cotée. Quelles situations sont incompatibles avec son indépendance ? (Plusieurs réponses possibles.)",
+      "options": [
+        "Un cabinet du même réseau que Cassiopée traite la paie des salariés de Véga",
+        "L'associé signataire détient directement des actions Véga dans son portefeuille personnel",
+        "Cassiopée établit le rapport prévu par la loi sur la réduction de capital décidée par Véga",
+        "L'associé signataire accepte de Véga un séjour d'agrément d'une valeur de 4 000 €"
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ],
+      "multiple": true,
+      "explanation": "Option 1 : les services liés au traitement de la paie figurent parmi les services interdits aux CAC d'EIP par l'article 5 du règlement 537/2014, et l'interdiction s'étend aux membres du réseau. Option 2 : la détention d'un intérêt financier direct dans l'entité contrôlée est interdite (menace d'intérêt personnel). Option 4 : seuls des cadeaux ou avantages de valeur insignifiante peuvent être acceptés ; un séjour de 4 000 € ne l'est pas. Option 3 : le rapport sur une réduction de capital est une mission légale confiée au CAC lui-même ; elle ne menace pas son indépendance."
+    },
+    {
+      "id": "ue4-cadre-independance-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "independance-deontologie",
+      "difficulty": 2,
+      "tags": [
+        "rotation",
+        "associé signataire",
+        "EIP"
+      ],
+      "source_ref": "C. com., disposition relative à la rotation des signataires dans les EIP (anc. art. L. 822-14, renuméroté par l'ordonnance n° 2023-1142) ; règlement (UE) n° 537/2014, art. 17 §7",
+      "verified": true,
+      "estimated_seconds": 120,
+      "statement": "Mme Rigel, associée d'un cabinet de commissaires aux comptes, a signé pour la première fois le rapport de certification des comptes de l'exercice 2021 de la société Antarès, entité d'intérêt public (exercices calendaires). Elle a signé chaque année depuis. En appliquant la règle française de rotation des associés signataires dans les EIP, quel est le dernier exercice dont elle pourra signer le rapport ? (Réponse : une année.)",
+      "expected_value": 2026,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "unit": "année",
+      "explanation": "En France, le CAC personne physique et l'associé signataire d'une société de CAC ne peuvent certifier les comptes d'une EIP plus de six exercices consécutifs (règle plus stricte que le maximum de sept ans du règlement 537/2014). Exercices signés : 2021, 2022, 2023, 2024, 2025, 2026 (2021 + 5 = 2026). Elle pourra de nouveau participer à la mission après un délai de viduité de trois ans. Erreur classique : appliquer le maximum de sept ans du règlement européen, ou calculer 2021 + 6 en oubliant que 2021 est le premier exercice compté ; ces deux erreurs donnent 2027."
+    },
+    {
+      "id": "ue4-cadre-independance-0005",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "independance-deontologie",
+      "difficulty": 1,
+      "tags": [
+        "dépendance financière",
+        "honoraires",
+        "EIP"
+      ],
+      "source_ref": "Règlement (UE) n° 537/2014, art. 4 §3 (honoraires reçus d'une EIP supérieurs à 15 % du total des honoraires)",
+      "verified": true,
+      "estimated_seconds": 120,
+      "statement": "Au cours de l'exercice N-1, le cabinet Orion a perçu 1 650 000 € d'honoraires au total, dont 270 000 € versés par la société Pollux, entité d'intérêt public. Quelle part du total des honoraires du cabinet représentent les honoraires reçus de Pollux ? Exprimez le résultat en pourcentage, arrondi à 0,1 point (ex. 12,5).",
+      "expected_value": 16.4,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "explanation": "270 000 ÷ 1 650 000 = 0,1636, soit 16,4 %. Le seuil de 15 % est dépassé. Si ce dépassement se répète pendant chacun des trois derniers exercices consécutifs, le CAC doit en informer le comité d'audit de Pollux et analyser avec lui les menaces sur son indépendance et les mesures de sauvegarde (par exemple une revue de contrôle qualité de la mission par un autre professionnel). Le dépassement n'interdit pas, à lui seul, la poursuite de la mission."
+    },
+    {
+      "id": "ue4-cadre-independance-0006",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "independance-deontologie",
+      "difficulty": 3,
+      "tags": [
+        "EIP",
+        "SACC",
+        "rotation",
+        "co-commissariat",
+        "comité d'audit"
+      ],
+      "source_ref": "Règlement (UE) n° 537/2014, art. 4, 5 et 17 ; C. com., dispositions sur la durée maximale des mandats et la rotation dans les EIP (anc. art. L. 823-3-1 et L. 822-14, renumérotés par l'ordonnance n° 2023-1142) ; code de déontologie de la profession de CAC",
+      "verified": true,
+      "estimated_seconds": 720,
+      "title": "Indépendance du CAC d'une société cotée",
+      "context": "La société Sirius SA est cotée sur un marché réglementé : c'est une entité d'intérêt public (EIP). Ses exercices coïncident avec l'année civile.\nLe cabinet Audit-Ouest est l'un de ses deux commissaires aux comptes (co-commissariat) depuis l'exercice 2019, premier exercice de sa mission ; le co-commissariat a été maintenu sans interruption.\nChez Audit-Ouest, M. Deneb signe le rapport sur les comptes de Sirius depuis l'exercice 2022.\nEn 2026, le directeur financier de Sirius sollicite Audit-Ouest pour deux prestations :\n– concevoir et mettre en œuvre de nouvelles procédures de contrôle interne relatives à l'information financière ;\n– délivrer une attestation sur le respect des ratios financiers (covenants) prévus par un contrat de crédit syndiqué.\nLe directeur financier précise que le comité d'audit « n'a pas besoin d'être consulté pour des missions de faible montant ».\nOn suppose que les règles françaises de durée maximale de mission et de rotation s'appliquent à toute la période.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "mcq",
+          "prompt": "Laquelle des deux prestations demandées Audit-Ouest peut-il accepter, sous réserve des conditions applicables ?",
+          "points": 2,
+          "options": [
+            "Les deux prestations, puisque Audit-Ouest n'est que l'un des deux commissaires aux comptes",
+            "Aucune des deux : un CAC d'EIP ne peut fournir aucun service autre que la certification",
+            "Seulement l'attestation sur les covenants",
+            "Seulement la conception des procédures de contrôle interne"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "La conception et la mise en œuvre de procédures de contrôle interne relatives à l'information financière figurent parmi les services interdits aux CAC d'EIP (règlement 537/2014, art. 5) : autorévision. L'attestation sur des covenants porte sur des informations établies par l'entité ; c'est un SACC non interdit. Le co-commissariat ne lève pas les interdictions, et les SACC ne sont pas tous interdits aux CAC d'EIP."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "prompt": "Quel est le dernier exercice dont M. Deneb pourra signer le rapport sur les comptes de Sirius ? (Réponse : une année.)",
+          "points": 2,
+          "expected_value": 2027,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0
+          },
+          "unit": "année",
+          "explanation": "Six exercices consécutifs au maximum pour l'associé signataire d'une EIP en France : 2022 à 2027 (2022 + 5). Délai de viduité de trois ans ensuite."
+        },
+        {
+          "id": "q3",
+          "kind": "numeric",
+          "prompt": "Compte tenu du co-commissariat, quel est le dernier exercice que le cabinet Audit-Ouest pourra au plus certifier chez Sirius ? (Réponse : une année.)",
+          "points": 2,
+          "expected_value": 2042,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0
+          },
+          "unit": "année",
+          "explanation": "La durée maximale de la mission d'un même cabinet auprès d'une EIP est de 10 ans, prolongeable à 24 ans en cas de co-commissariat. Premier exercice : 2019 ; vingt-quatre exercices : 2019 à 2042 (2019 + 23). Erreurs classiques : 2043 (2019 + 24) ou 2034 (16 ans, durée applicable après appel d'offres, sans co-commissariat)."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "prompt": "Répondez au directeur financier sur la consultation du comité d'audit et indiquez les autres conditions à respecter avant d'accepter l'attestation.",
+          "points": 4,
+          "model_answer": "Pour une EIP, tout service autre que la certification non interdit doit être approuvé au préalable par le comité d'audit, quel que soit son montant : l'affirmation du directeur financier est inexacte. Le comité se prononce après avoir analysé les risques pesant sur l'indépendance et les mesures de sauvegarde appliquées par le CAC. Audit-Ouest doit lui-même vérifier que la prestation ne le place pas en situation d'autorévision ou d'intérêt personnel, et que les honoraires de SACC respectent le plafond de 70 % de la moyenne des honoraires de contrôle légal des trois derniers exercices lorsque des SACC sont fournis depuis trois exercices consécutifs. Il documente son analyse dans son dossier et établit une lettre de mission propre à l'attestation. Il refuse la conception des procédures de contrôle interne.",
+          "key_points": [
+            "Approbation préalable du comité d'audit obligatoire, quel que soit le montant",
+            "Analyse des menaces et des mesures de sauvegarde",
+            "Plafond de 70 % de la moyenne des honoraires d'audit des trois derniers exercices",
+            "Documentation et lettre de mission distincte ; refus de la prestation interdite"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas combine les principales règles propres aux EIP : liste de services interdits (art. 5 du règlement 537/2014), approbation des SACC par le comité d'audit, plafond des honoraires de SACC (art. 4), rotation des associés signataires (six exercices en France) et durée maximale de la mission d'un cabinet (10 ans, 16 ans après appel d'offres, 24 ans en co-commissariat)."
     }
   ]
 }
