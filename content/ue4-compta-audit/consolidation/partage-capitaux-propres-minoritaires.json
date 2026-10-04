@@ -139,6 +139,188 @@
       "source_ref": "Règl. ANC 2020-01, écarts d’évaluation, écart d’acquisition, impôts différés, intérêts minoritaires et mise en équivalence ; IFRS 3 §18 et §32 (règlement UE 2023/1803) ; IAS 28 §32 (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 900
+    },
+    {
+      "id": "ue4-conso-partage-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "partage-capitaux-propres-minoritaires",
+      "difficulty": 2,
+      "tags": [
+        "intérêts minoritaires",
+        "pourcentage d’intérêt",
+        "chaîne de détention"
+      ],
+      "statement": "Le groupe Kiwi établit ses comptes consolidés selon le règlement ANC 2020-01 (taux d'impôt 25 % ; écart d'acquisition non amorti, sans dépréciation). La société mère Kiwi détient 80 % du capital et des droits de vote de la société Litchi, qui détient elle-même 60 % du capital et des droits de vote de la société Mangue. Litchi et Mangue sont intégrées globalement. Le résultat retraité de Mangue pour N s'élève à 50 000 €. Quelle part de ce résultat revient aux intérêts minoritaires dans le compte de résultat consolidé ?",
+      "options": [
+        "20 000 €",
+        "24 000 €",
+        "10 000 €",
+        "26 000 €"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Option 4 : le pourcentage d'intérêt du groupe dans Mangue est 80 % × 60 % = 48 % ; les intérêts minoritaires représentent 52 % (40 % de minoritaires directs de Mangue + 20 % × 60 % = 12 % de minoritaires indirects via Litchi), soit 52 % × 50 000 = 26 000 €. 20 000 € ne retient que les minoritaires directs (40 %) ; 24 000 € est la part du groupe (48 %) ; 10 000 € applique le pourcentage de minoritaires de Litchi (20 %).",
+      "source_ref": "Règl. ANC 2020-01, partage des capitaux propres et du résultat selon le pourcentage d'intérêt ; IFRS 10 §B94 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-conso-partage-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "partage-capitaux-propres-minoritaires",
+      "difficulty": 1,
+      "tags": [
+        "goodwill partiel",
+        "intérêts minoritaires"
+      ],
+      "statement": "Comptes consolidés établis selon le règlement ANC 2020-01, méthode de l'écart d'acquisition partiel (taux d'impôt 25 % ; écart d'acquisition non amorti). Dans cette méthode, les intérêts minoritaires d'une filiale intégrée globalement ne reçoivent aucune quote-part de l'écart d'acquisition.",
+      "answer": true,
+      "justification": "Vrai : en méthode partielle, l'écart d'acquisition est calculé sur la seule quote-part acquise par le groupe ; les minoritaires sont évalués à leur quote-part des capitaux propres retraités.",
+      "explanation": "L'écart d'acquisition partiel = coût des titres − quote-part du groupe dans l'actif net identifiable à la juste valeur : il appartient intégralement au groupe. Les intérêts minoritaires correspondent à leur pourcentage d'intérêt dans les capitaux propres retraités (écarts d'évaluation compris). En revanche, avec l'écart d'acquisition complet (option ouverte en IFRS par IFRS 3 §19), les minoritaires sont évalués à leur juste valeur et une part de l'écart d'acquisition leur revient.",
+      "source_ref": "Règl. ANC 2020-01, écart d'acquisition et intérêts minoritaires ; IFRS 3 §19 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-conso-partage-0004",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "partage-capitaux-propres-minoritaires",
+      "difficulty": 1,
+      "tags": [
+        "réserves consolidées",
+        "élimination des titres"
+      ],
+      "front": "Comment calculer les réserves consolidées (part du groupe) issues d'une filiale intégrée globalement ?",
+      "back": "Réserves consolidées = % d'intérêt × capitaux propres retraités hors résultat − coût d'acquisition des titres + écart d'acquisition (net des amortissements et dépréciations des exercices antérieurs).\nCela revient à la quote-part du groupe dans les réserves constituées depuis l'acquisition, diminuée des amortissements et dépréciations antérieurs de l'écart d'acquisition.\nL'année de l'acquisition, elles sont nulles.",
+      "explanation": "Exemple : filiale détenue à 80 %, titres acquis 900 000 €, actif net identifiable à l'acquisition 940 000 € (écart d'acquisition 148 000 €) ; si les capitaux propres retraités hors résultat valent 971 000 € deux ans plus tard, les réserves consolidées sont de 80 % × 971 000 − 900 000 + 148 000 = 24 800 €. Références : règl. ANC 2020-01 (élimination des titres et partage des capitaux propres).",
+      "source_ref": "Règl. ANC 2020-01, élimination des titres et partage des capitaux propres",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-conso-partage-0005",
+      "type": "consolidation_case",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "partage-capitaux-propres-minoritaires",
+      "difficulty": 3,
+      "tags": [
+        "intérêts minoritaires",
+        "réserves consolidées",
+        "dividendes",
+        "écart d’évaluation"
+      ],
+      "title": "Groupe Lynx : partage des capitaux propres de Mésange deux ans après l’acquisition",
+      "context": "La société Lynx établit ses comptes consolidés selon le règlement ANC 2020-01, méthode de l'écart d'acquisition partiel. Taux d'impôt : 25 %. L'écart d'acquisition a une durée d'utilisation non limitée : il n'est pas amorti et aucune dépréciation n'a été constatée.\n\nLe 01/01/N-1, Lynx a acquis 80 % du capital et des droits de vote de la société Mésange pour 900 000 €. À cette date, les capitaux propres de Mésange s'élevaient à 850 000 € (capital 400 000 €, réserves 450 000 €). Une construction de Mésange avait une juste valeur supérieure de 120 000 € à sa valeur comptable ; durée d'utilisation résiduelle : 10 ans (amortissement linéaire). Aucun autre écart d'évaluation.\n\nMésange a réalisé un résultat de 70 000 € en N-1, entièrement mis en réserves. En N, elle a distribué un dividende de 30 000 € prélevé sur les réserves (Lynx a encaissé 24 000 €) et a réalisé un résultat de 100 000 €. Au 31/12/N, ses capitaux propres individuels sont donc : capital 400 000 €, réserves 490 000 €, résultat 100 000 €. Il n'existe pas d'autre retraitement ni d'opération interne.",
+      "entities": [
+        {
+          "id": "lynx",
+          "name": "Lynx",
+          "is_parent": true
+        },
+        {
+          "id": "mesange",
+          "name": "Mésange"
+        }
+      ],
+      "links": [
+        {
+          "from": "lynx",
+          "to": "mesange",
+          "ownership_pct": 80
+        }
+      ],
+      "steps": [
+        {
+          "id": "ecart-acquisition",
+          "stage": "ecart-acquisition",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez l'écart d'acquisition sur Mésange (en euros).",
+          "expected_value": 148000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Écart d'évaluation net = 120 000 × 75 % = 90 000 €. Actif net identifiable = 850 000 + 90 000 = 940 000 €. Écart d'acquisition = 900 000 − 80 % × 940 000 = 900 000 − 752 000 = 148 000 €."
+        },
+        {
+          "id": "resultat-retraite",
+          "stage": "retraitements",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Quel est le résultat retraité de Mésange pour N (en euros) ?",
+          "expected_value": 91000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Supplément d'amortissement = 120 000 / 10 = 12 000 € ; reprise d'impôt différé = 3 000 € ; effet net = −9 000 €. Résultat retraité = 100 000 − 9 000 = 91 000 €."
+        },
+        {
+          "id": "reserves-consolidees",
+          "stage": "partage-capitaux-propres",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez les réserves consolidées (part du groupe) issues de Mésange au 31/12/N (en euros).",
+          "expected_value": 24800,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Capitaux propres retraités hors résultat au 31/12/N = 400 000 + 490 000 + 90 000 (écart net) − 9 000 (amortissement net de N-1) = 971 000 €. Réserves consolidées = 80 % × 971 000 − 900 000 + 148 000 = 24 800 €. Contrôle : réserves créées depuis l'acquisition = 70 000 − 9 000 − 30 000 = 31 000 € ; 80 % × 31 000 = 24 800 €."
+        },
+        {
+          "id": "interets-minoritaires",
+          "stage": "partage-capitaux-propres",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Quel est le montant total des intérêts minoritaires relatifs à Mésange au bilan consolidé du 31/12/N, résultat compris (en euros) ?",
+          "expected_value": 212400,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Capitaux propres retraités résultat compris = 971 000 + 91 000 = 1 062 000 €. Intérêts minoritaires = 20 % × 1 062 000 = 212 400 € (dont 18 200 € de résultat). Méthode partielle : aucune part de l'écart d'acquisition."
+        },
+        {
+          "id": "dividende",
+          "stage": "autre",
+          "kind": "mcq",
+          "points": 1,
+          "prompt": "Comment le dividende de 24 000 € encaissé par Lynx est-il traité dans les comptes consolidés de N ?",
+          "options": [
+            "Il est maintenu dans le résultat consolidé, car il a été encaissé par la mère",
+            "Il est éliminé du résultat de Lynx et reclassé en réserves consolidées",
+            "Il est éliminé du résultat de Lynx et porté en diminution de l'écart d'acquisition",
+            "Il est réparti entre résultat part du groupe et intérêts minoritaires"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Le dividende interne est un transfert de réserves de Mésange vers Lynx : il est éliminé du résultat de Lynx (sinon il serait compté deux fois, puisque le résultat de Mésange a déjà été consolidé en N-1) et reclassé en réserves consolidées. Il ne modifie pas l'écart d'acquisition ; la part versée aux minoritaires (6 000 €) réduit les intérêts minoritaires."
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Deux ans après l'acquisition, le partage s'opère sur les capitaux propres retraités (écart d'évaluation net de son amortissement cumulé) : réserves consolidées par la formule % × CP retraités hors résultat − titres + écart d'acquisition, intérêts minoritaires par application du pourcentage minoritaire aux capitaux propres retraités résultat compris. Résultat consolidé part du groupe issu de Mésange : 80 % × 91 000 = 72 800 €.",
+      "source_ref": "Règl. ANC 2020-01, écarts d'évaluation, écart d'acquisition, élimination des dividendes internes et partage des capitaux propres",
+      "verified": true,
+      "estimated_seconds": 900
     }
   ]
 }

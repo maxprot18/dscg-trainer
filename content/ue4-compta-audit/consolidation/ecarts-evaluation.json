@@ -1,0 +1,253 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-conso-evaluation-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "ecarts-evaluation",
+      "difficulty": 1,
+      "tags": [
+        "écart d’évaluation",
+        "intégration globale"
+      ],
+      "statement": "Le groupe Corail établit ses comptes consolidés selon le règlement ANC 2020-01 (taux d'impôt : 25 % ; écart d'acquisition non amorti, durée d'utilisation non limitée). Le 01/01/N, la société mère acquiert 80 % du capital et des droits de vote de la société Dune, intégrée globalement. À cette date, un immeuble de Dune a une juste valeur supérieure de 200 000 € à sa valeur comptable. De quel montant la valeur de cet immeuble est-elle majorée dans le bilan consolidé au 01/01/N ?",
+      "options": [
+        "160 000 €",
+        "150 000 €",
+        "200 000 €",
+        "120 000 €"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "En intégration globale, les actifs identifiables de la filiale sont repris pour 100 % de leur juste valeur, quel que soit le pourcentage d'intérêt : l'immeuble est majoré de 200 000 € (option 3). L'impôt différé (200 000 × 25 % = 50 000 €) est inscrit séparément au passif ; il réduit l'écart d'évaluation net porté en capitaux propres (150 000 €), mais pas la valeur de l'immeuble. 160 000 € applique à tort le pourcentage d'intérêt (80 %) ; 150 000 € confond la valeur de l'actif avec l'écart net d'impôt ; 120 000 € cumule les deux erreurs (80 % × 150 000).",
+      "source_ref": "Règl. ANC 2020-01, évaluation des actifs et passifs identifiables de l'entité acquise ; IFRS 3 §18 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-conso-evaluation-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "ecarts-evaluation",
+      "difficulty": 2,
+      "tags": [
+        "IFRS 3",
+        "actifs identifiables",
+        "passif éventuel"
+      ],
+      "statement": "Le groupe Ibis (IFRS ; goodwill non amorti, soumis à un test de dépréciation annuel ; taux d'impôt 25 %) prend le contrôle de la société Jasmin. Parmi les éléments suivants, lesquels sont comptabilisés séparément du goodwill, parmi les actifs et passifs identifiables de Jasmin à la date d'acquisition ? (plusieurs réponses possibles)",
+      "options": [
+        "Une marque créée en interne par Jasmin, jamais inscrite à son bilan, dont la juste valeur peut être évaluée de façon fiable",
+        "La compétence et l'expérience du personnel en place (main-d'œuvre assemblée)",
+        "Une provision pour la restructuration que Ibis prévoit de lancer chez Jasmin après l'acquisition, sans obligation de Jasmin à la date d'acquisition",
+        "Un litige en cours de Jasmin constituant une obligation actuelle, dont la juste valeur est évaluable de façon fiable mais dont la sortie de ressources n'est pas jugée probable"
+      ],
+      "answer": [
+        0,
+        3
+      ],
+      "multiple": true,
+      "explanation": "Options 1 et 4. La marque est un incorporel identifiable (issu de droits légaux, séparable) : elle est comptabilisée même si l'acquise ne l'avait pas inscrite (IFRS 3 §B31). Le litige est un passif éventuel qu'IFRS 3 §23 impose de comptabiliser dès lors qu'il s'agit d'une obligation actuelle évaluable de façon fiable, même si la sortie n'est pas probable (dérogation à IAS 37). Option 2 : la main-d'œuvre assemblée n'est pas un actif identifiable, sa valeur reste dans le goodwill (§B37). Option 3 : une restructuration voulue par l'acquéreur n'est pas un passif de l'acquise à la date d'acquisition (§11) ; elle sera comptabilisée après coup, selon IAS 37.",
+      "source_ref": "IFRS 3 §11, §23, §B31 et §B37 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue4-conso-evaluation-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "ecarts-evaluation",
+      "difficulty": 1,
+      "tags": [
+        "écart d’évaluation",
+        "amortissement"
+      ],
+      "statement": "Comptes consolidés établis selon le règlement ANC 2020-01 (taux d'impôt 25 %). Une fois constaté à la date d'acquisition, l'écart d'évaluation positif sur une machine amortissable d'une filiale intégrée globalement n'a plus aucune incidence sur le résultat consolidé des exercices suivants.",
+      "answer": false,
+      "justification": "Faux : l'écart d'évaluation sur un actif amortissable est amorti sur la durée d'utilisation résiduelle, ce qui diminue le résultat consolidé de chaque exercice (net de la reprise d'impôt différé).",
+      "explanation": "La machine est inscrite en consolidation à sa juste valeur à la date d'acquisition : sa base amortissable consolidée est supérieure à celle des comptes individuels. Il faut donc pratiquer un supplément d'amortissement égal à l'écart / durée résiduelle, avec une reprise de l'impôt différé passif correspondante (supplément × 25 %). L'effet net diminue le résultat consolidé et se partage entre groupe et minoritaires. Seul un écart sur un actif non amortissable (terrain) reste sans incidence sur le résultat tant que l'actif est détenu.",
+      "source_ref": "Règl. ANC 2020-01, écarts d'évaluation et suivi ultérieur des actifs acquis ; IAS 12 §19 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-conso-evaluation-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "ecarts-evaluation",
+      "difficulty": 2,
+      "tags": [
+        "écart d’évaluation",
+        "amortissement",
+        "impôt différé",
+        "part du groupe"
+      ],
+      "statement": "Le groupe Granit établit ses comptes consolidés selon le règlement ANC 2020-01 ; taux d'impôt : 25 % ; l'écart d'acquisition, à durée d'utilisation non limitée, n'est pas amorti et ne subit aucune dépréciation. Le 01/01/N-1, Granit a acquis 75 % du capital et des droits de vote de la société Hêtre, intégrée globalement. À cette date, une construction de Hêtre avait une juste valeur de 900 000 € pour une valeur comptable de 600 000 € ; sa durée d'utilisation résiduelle était de 15 ans (amortissement linéaire). De combien cet écart d'évaluation diminue-t-il le résultat consolidé part du groupe de l'exercice N ? Donnez la diminution en euros, sous forme d'un nombre positif arrondi à l'euro.",
+      "expected_value": 11250,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Écart d'évaluation = 900 000 − 600 000 = 300 000 €. Supplément d'amortissement annuel = 300 000 / 15 = 20 000 €. Reprise d'impôt différé passif = 20 000 × 25 % = 5 000 €. Diminution du résultat consolidé total = 20 000 − 5 000 = 15 000 € par an (N-1 a été affecté de la même façon, via les réserves en N). Part du groupe = 75 % × 15 000 = 11 250 € ; les minoritaires supportent 3 750 €. Erreurs fréquentes : 15 000 € (oubli du partage, ou oubli de l'impôt différé : 75 % × 20 000), 20 000 € (cumul des deux oublis), 22 500 € (cumul des effets de N-1 et de N).",
+      "source_ref": "Règl. ANC 2020-01, écarts d'évaluation, impôts différés et partage du résultat ; IAS 12 §19 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue4-conso-evaluation-0005",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "ecarts-evaluation",
+      "difficulty": 2,
+      "tags": [
+        "écart d’évaluation",
+        "stocks",
+        "impôt différé"
+      ],
+      "statement": "Le groupe Brume établit ses comptes consolidés selon le règlement ANC 2020-01 ; taux d'impôt : 25 % ; l'écart d'acquisition n'est pas amorti. Le 01/10/N, la société mère a acquis 100 % de la société Cirrus. À cette date, le stock de marchandises de Cirrus (valeur comptable 100 000 €) avait une juste valeur de 130 000 €. Tout ce stock a été vendu avant le 31/12/N.\n\nPassez, au 31/12/N, l'unique écriture de consolidation regroupée qui traduit le sort de cet écart d'évaluation dans les comptes consolidés de N (une ligne par compte, sans les lignes qui se compensent). Conventions : l'écart d'évaluation figure au compte 105 (capitaux propres de Cirrus) ; la consommation supplémentaire de stock passe au compte 6037 ; le produit d'impôt différé est enregistré au crédit du compte 695.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "6037",
+          "label": "Variation des stocks de marchandises (écart d’évaluation consommé)",
+          "debit": 30000,
+          "credit": 0
+        },
+        {
+          "account": "105",
+          "label": "Écart d’évaluation (capitaux propres de Cirrus)",
+          "debit": 0,
+          "credit": 22500
+        },
+        {
+          "account": "695",
+          "label": "Impôt différé (produit)",
+          "debit": 0,
+          "credit": 7500
+        }
+      ],
+      "explanation": "À l'acquisition, le stock est porté à 130 000 € : 37 au débit pour 30 000 €, impôt différé passif (155) au crédit pour 7 500 € et écart d'évaluation (105) au crédit pour 22 500 €. Le stock étant vendu en N, le coût des ventes consolidé doit intégrer l'écart : charge supplémentaire de 30 000 € (6037), et l'impôt différé passif devenu sans objet est repris en produit (7 500 €). Les lignes 37 (débit puis crédit de 30 000 €) et 155 (crédit puis débit de 7 500 €) se compensent. Il reste : 6037 D 30 000, 105 C 22 500, 695 C 7 500. L'écart d'évaluation demeure dans les capitaux propres d'acquisition de Cirrus (il sert au calcul de l'écart d'acquisition) tandis que le résultat consolidé de N baisse de 22 500 €.",
+      "source_ref": "Règl. ANC 2020-01, écarts d'évaluation sur stocks et impôts différés ; IFRS 3 §18 (règlement UE 2023/1803) ; PCG comptes 6037 et 695",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue4-conso-evaluation-0006",
+      "type": "consolidation_case",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "ecarts-evaluation",
+      "difficulty": 2,
+      "tags": [
+        "écart d’évaluation",
+        "IFRS 3",
+        "passif éventuel",
+        "goodwill partiel"
+      ],
+      "title": "Groupe Aster : actifs identifiables de Bora",
+      "context": "La société Aster établit ses comptes consolidés en IFRS. Elle évalue les participations ne donnant pas le contrôle (PNC) à leur quote-part de l'actif net identifiable (goodwill partiel). Le goodwill n'est pas amorti ; il est soumis à un test de dépréciation annuel. Taux d'impôt : 25 % pour tous les impôts différés.\n\nLe 01/01/N, Aster acquiert 90 % du capital et des droits de vote de la société Bora pour 1 000 000 € payés comptant. À cette date, les capitaux propres comptables de Bora s'élèvent à 800 000 € (capital 500 000 €, réserves 300 000 €). L'analyse de juste valeur fait apparaître :\n- un brevet développé par Bora, non inscrit à son bilan, d'une juste valeur de 120 000 €, amortissable sur 4 ans (durée résiduelle de protection) ;\n- un terrain dont la juste valeur dépasse la valeur comptable de 60 000 € ;\n- un litige en cours, qui constitue une obligation actuelle de Bora, non provisionné dans ses comptes car la sortie de ressources n'est pas jugée probable ; sa juste valeur est estimée de façon fiable à 20 000 €.\nLes autres actifs et passifs ont une juste valeur égale à leur valeur comptable. Les bases fiscales ne sont pas modifiées par l'acquisition.",
+      "entities": [
+        {
+          "id": "aster",
+          "name": "Aster",
+          "is_parent": true
+        },
+        {
+          "id": "bora",
+          "name": "Bora"
+        }
+      ],
+      "links": [
+        {
+          "from": "aster",
+          "to": "bora",
+          "ownership_pct": 90
+        }
+      ],
+      "steps": [
+        {
+          "id": "litige",
+          "stage": "retraitements",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "Le litige doit être comptabilisé comme un passif identifiable de Bora dans le cadre du regroupement, bien qu'il ne soit pas provisionné dans ses comptes individuels.",
+          "answer": true,
+          "explanation": "IFRS 3 §23 impose de comptabiliser un passif éventuel de l'acquise s'il s'agit d'une obligation actuelle évaluable de façon fiable, même si la sortie de ressources n'est pas probable."
+        },
+        {
+          "id": "ecarts-nets",
+          "stage": "retraitements",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez le montant total des écarts d'évaluation nets d'impôt différé (en euros).",
+          "expected_value": 120000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Écarts bruts = 120 000 (brevet) + 60 000 (terrain) − 20 000 (litige) = 160 000 €. Impôt différé net = 160 000 × 25 % = 40 000 € (passif de 45 000 € sur le brevet et le terrain, actif de 5 000 € sur le litige). Écarts nets = 160 000 − 40 000 = 120 000 €."
+        },
+        {
+          "id": "ani",
+          "stage": "retraitements",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Quel est l'actif net identifiable de Bora évalué à la juste valeur au 01/01/N (en euros) ?",
+          "expected_value": 920000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Actif net identifiable = capitaux propres comptables 800 000 + écarts nets 120 000 = 920 000 €."
+        },
+        {
+          "id": "goodwill",
+          "stage": "ecart-acquisition",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez le goodwill (partiel) dégagé sur Bora (en euros).",
+          "expected_value": 172000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Goodwill = 1 000 000 + PNC (10 % × 920 000 = 92 000) − 920 000 = 172 000 €, soit aussi 1 000 000 − 90 % × 920 000 = 1 000 000 − 828 000. Sans les écarts d'évaluation, on aurait trouvé à tort 1 000 000 − 720 000 = 280 000 €."
+        },
+        {
+          "id": "amort-brevet",
+          "stage": "retraitements",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "De combien l'amortissement du brevet diminue-t-il le résultat consolidé total de N (part du groupe et PNC confondues), net d'impôt différé ? Réponse en euros, nombre positif.",
+          "expected_value": 22500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Amortissement = 120 000 / 4 = 30 000 € ; reprise d'impôt différé passif = 30 000 × 25 % = 7 500 € ; diminution nette = 22 500 € (dont 20 250 € pour le groupe et 2 250 € pour les PNC)."
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas reprend la démarche d'IFRS 3 : recenser les actifs et passifs identifiables, y compris ceux que l'acquise n'a pas comptabilisés (brevet, passif éventuel), les évaluer à la juste valeur, constater l'impôt différé sur chaque écart, en déduire l'actif net identifiable puis le goodwill. L'écart sur le brevet, amortissable, pèse ensuite sur les résultats consolidés.",
+      "source_ref": "IFRS 3 §18, §19, §23, §32 et §B31 ; IAS 12 §19 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 720
+    }
+  ]
+}

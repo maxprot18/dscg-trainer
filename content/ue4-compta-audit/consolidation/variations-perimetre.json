@@ -1,0 +1,279 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-conso-variations-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "variations-perimetre",
+      "difficulty": 1,
+      "tags": [
+        "IFRS 10",
+        "achat complémentaire",
+        "PNC"
+      ],
+      "statement": "Le groupe Hermine établit ses comptes consolidés en IFRS (goodwill partiel, non amorti, soumis à un test de dépréciation annuel ; taux d'impôt 25 %). Il détient 70 % de sa filiale Isard, qu'il contrôle, et rachète aux minoritaires 10 % supplémentaires. Comment cette opération est-elle traitée dans les comptes consolidés ?",
+      "options": [
+        "Comme une transaction entre actionnaires, en capitaux propres, sans nouveau goodwill ni résultat",
+        "Par le calcul d'un goodwill complémentaire sur les 10 % acquis",
+        "Par la constatation en résultat de l'écart entre le prix payé et la valeur des PNC rachetées",
+        "Par la réévaluation à la juste valeur des actifs et passifs identifiables d'Isard"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Option 1 : le contrôle étant conservé, la variation de pourcentage est une transaction avec les propriétaires agissant en cette qualité (IFRS 10 §23) : les PNC sont diminuées et l'écart avec le prix payé est imputé sur les capitaux propres part du groupe (§B96). Le goodwill n'est déterminé qu'une fois, à la prise de contrôle (option 2 fausse) ; aucun résultat n'est constaté (option 3 fausse) ; les actifs ne sont pas réévalués à nouveau (option 4 fausse).",
+      "source_ref": "IFRS 10 §23 et §B96 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-conso-variations-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "variations-perimetre",
+      "difficulty": 2,
+      "tags": [
+        "perte de contrôle",
+        "participation conservée",
+        "IFRS 10"
+      ],
+      "statement": "Le groupe Fjord établit ses comptes consolidés en IFRS (goodwill non amorti ; taux d'impôt 25 %, effets fiscaux ignorés ici). Il détient 100 % de la société Geysir. Le 31/12/N, il cède 70 % des titres pour 1 400 000 € et conserve 30 %, qui lui confèrent une influence notable. À cette date, l'actif net consolidé de Geysir, goodwill compris, s'élève à 1 500 000 € ; la juste valeur de la participation conservée est de 600 000 €. Geysir n'a aucun montant en autres éléments du résultat global. Quel est le traitement du résultat de cession dans les comptes consolidés ?",
+      "options": [
+        "Un profit de 350 000 € en résultat ; les 30 % conservés restent à leur valeur consolidée de 450 000 €",
+        "Un profit de 350 000 € imputé sur les capitaux propres part du groupe",
+        "Un profit de 500 000 € en résultat ; les 30 % conservés sont inscrits à 600 000 €",
+        "Un profit de 500 000 € imputé sur les capitaux propres part du groupe"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Option 3 : la perte de contrôle entraîne la sortie de tous les actifs et passifs de Geysir, goodwill compris (1 500 000 €) ; la participation conservée est réévaluée à sa juste valeur (600 000 €), qui devient son coût d'entrée en mise en équivalence. Résultat = 1 400 000 + 600 000 − 1 500 000 = 500 000 € en résultat (IFRS 10 §25 et §B98). L'option 1 oublie la réévaluation des 30 % conservés (1 400 000 − 70 % × 1 500 000) ; les options 2 et 4 appliquent à tort le traitement en capitaux propres réservé aux variations de pourcentage sans perte de contrôle.",
+      "source_ref": "IFRS 10 §25, §B98 et §B99 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue4-conso-variations-0003",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "variations-perimetre",
+      "difficulty": 2,
+      "tags": [
+        "acquisition par étapes",
+        "goodwill",
+        "IFRS 3"
+      ],
+      "statement": "Le groupe Galène établit ses comptes consolidés en IFRS ; il évalue les participations ne donnant pas le contrôle (PNC) à leur quote-part de l'actif net identifiable (goodwill partiel) ; le goodwill n'est pas amorti ; taux d'impôt 25 % (les écarts d'évaluation sont déjà intégrés, nets d'impôt, dans l'actif net ci-dessous). Galène détenait 20 % de la société Hublot, mise en équivalence pour 260 000 € au 30/06/N. Le 01/07/N, elle acquiert 50 % supplémentaires pour 1 500 000 € et prend ainsi le contrôle (70 %). À cette date, la juste valeur de la participation antérieure de 20 % est de 580 000 € et l'actif net identifiable de Hublot, à la juste valeur, s'élève à 2 400 000 €. Hublot n'a aucun montant en autres éléments du résultat global. Calculez le goodwill dégagé lors de la prise de contrôle, en euros arrondis à l'euro.",
+      "expected_value": 400000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "IFRS 3 §32 et §42 : goodwill = contrepartie transférée + PNC + juste valeur de la participation antérieure − actif net identifiable. PNC = 30 % × 2 400 000 = 720 000 €. Goodwill = 1 500 000 + 720 000 + 580 000 − 2 400 000 = 400 000 €. La réévaluation de la participation antérieure dégage par ailleurs un profit de 580 000 − 260 000 = 320 000 € en résultat. Erreurs fréquentes : 80 000 € (participation antérieure retenue à sa valeur de mise en équivalence de 260 000 €) ; 0 € ou un montant négatif (participation antérieure oubliée).",
+      "source_ref": "IFRS 3 §32 et §42 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 210
+    },
+    {
+      "id": "ue4-conso-variations-0004",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "variations-perimetre",
+      "difficulty": 3,
+      "tags": [
+        "cession sans perte de contrôle",
+        "PNC",
+        "capitaux propres",
+        "perte de contrôle"
+      ],
+      "title": "Kepler cède une partie de sa filiale Lyra",
+      "context": "La société Kepler établit ses comptes consolidés en IFRS. Elle évalue les participations ne donnant pas le contrôle (PNC) à leur quote-part de l'actif net identifiable (goodwill partiel) ; le goodwill n'est pas amorti et n'a subi aucune dépréciation. Taux d'impôt : 25 % ; les effets fiscaux de la cession sont ignorés.\n\nKepler détient 90 % du capital et des droits de vote de la société Lyra, acquis pour 1 710 000 €. Le goodwill rattaché à Lyra s'élève à 200 000 €.\n\nAu 01/01/N, l'actif net identifiable de Lyra dans les comptes consolidés (écarts d'évaluation compris) s'élève à 1 800 000 € ; les PNC s'élèvent donc à 180 000 €.\n\nLe 01/01/N, Kepler cède à un investisseur extérieur 15 % du capital de Lyra pour 330 000 € ; elle conserve 75 % et le contrôle de Lyra. Pour les cessions sans perte de contrôle, le groupe a pour méthode de transférer aux PNC leur quote-part de l'actif net identifiable consolidé, hors goodwill.\n\nDans les comptes individuels de Kepler, le coût des titres cédés est déterminé au prorata du nombre de titres.",
+      "sub_questions": [
+        {
+          "id": "plus-value-individuelle",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Quelle plus-value de cession Kepler constate-t-elle dans ses comptes individuels (en euros) ?",
+          "expected_value": 45000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Coût des titres cédés = 1 710 000 × 15 / 90 = 285 000 €. Plus-value individuelle = 330 000 − 285 000 = 45 000 €."
+        },
+        {
+          "id": "variation-pnc",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "De combien les PNC augmentent-elles dans le bilan consolidé à la suite de la cession (en euros) ?",
+          "expected_value": 270000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Selon la méthode du groupe, les PNC reçoivent leur quote-part de l'actif net identifiable : 15 % × 1 800 000 = 270 000 € (elles passent de 180 000 € à 450 000 €, soit 25 % × 1 800 000). Le goodwill de 200 000 € reste inchangé."
+        },
+        {
+          "id": "impact-cp-groupe",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Quel est l'impact de l'opération sur les capitaux propres consolidés part du groupe (en euros, avec un signe positif s'il s'agit d'une augmentation) ? On raisonne hors résultat de l'exercice de Lyra.",
+          "expected_value": 60000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "IFRS 10 §23 et §B96 : la cession sans perte de contrôle est une transaction entre actionnaires. Écart entre le prix reçu et la variation des PNC = 330 000 − 270 000 = +60 000 €, imputé directement sur les capitaux propres part du groupe (réserves). La plus-value individuelle de 45 000 € est éliminée du résultat consolidé : le résultat consolidé n'est pas affecté. Contrôle : part du groupe avant = 90 % × 1 800 000 + 200 000 = 1 820 000 € ; après = 75 % × 1 800 000 + 200 000 + trésorerie 330 000 = 1 880 000 € ; écart +60 000 €."
+        },
+        {
+          "id": "perte-controle",
+          "kind": "open",
+          "points": 3,
+          "prompt": "Supposez qu'au lieu de 15 %, Kepler ait cédé 50 % du capital de Lyra et conservé 40 %, lui conférant une influence notable. Exposez, sans calcul, le traitement de l'opération dans les comptes consolidés.",
+          "model_answer": "Kepler perd le contrôle de Lyra. Elle décomptabilise à la date de cession les actifs et passifs de Lyra, le goodwill et les PNC. La participation conservée de 40 % est évaluée à sa juste valeur à cette date, qui constitue son coût d'entrée pour la mise en équivalence. Le résultat de cession consolidé, égal au prix reçu augmenté de la juste valeur de la participation conservée et des PNC décomptabilisées, diminué de l'actif net consolidé et du goodwill, est comptabilisé en résultat, comme les montants reclassables éventuellement cumulés en autres éléments du résultat global. Le résultat de Lyra est intégré globalement jusqu'à la date de cession, puis mis en équivalence.",
+          "key_points": [
+            "Perte de contrôle : sortie des actifs, passifs, goodwill et PNC",
+            "Participation conservée réévaluée à la juste valeur (coût d'entrée en mise en équivalence)",
+            "Résultat de cession en résultat, et non en capitaux propres",
+            "Intégration globale jusqu'à la date de cession, mise en équivalence ensuite"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "La frontière déterminante est celle du contrôle : tant qu'il est conservé, une cession partielle ne produit aucun résultat consolidé (la plus-value individuelle est éliminée et l'écart va en capitaux propres) ; si le contrôle est perdu, le groupe constate un résultat de cession et réévalue la participation conservée.",
+      "source_ref": "IFRS 10 §23, §25, §B96 et §B98 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 840
+    },
+    {
+      "id": "ue4-conso-variations-0005",
+      "type": "consolidation_case",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "variations-perimetre",
+      "difficulty": 3,
+      "tags": [
+        "acquisition par étapes",
+        "mise en équivalence",
+        "goodwill",
+        "date d’entrée"
+      ],
+      "title": "Groupe Nova : de l’influence notable au contrôle d’Orbe",
+      "context": "La société Nova établit ses comptes consolidés en IFRS. Elle évalue les participations ne donnant pas le contrôle (PNC) à leur quote-part de l'actif net identifiable (goodwill partiel). Le goodwill n'est pas amorti ; aucune dépréciation n'est nécessaire. Taux d'impôt : 25 %.\n\nLe 01/01/N-1, Nova a acquis 25 % du capital et des droits de vote de la société Orbe pour 500 000 €, ce qui lui confère une influence notable. Les capitaux propres d'Orbe s'élevaient alors à 1 800 000 € ; aucun écart d'évaluation n'avait été identifié. Orbe a réalisé un résultat de 200 000 € en N-1, sans distribution.\n\nLe 01/07/N, Nova acquiert 40 % supplémentaires pour 1 120 000 € et obtient le contrôle exclusif (65 %). Le résultat d'Orbe de N, 240 000 €, est réparti uniformément sur l'année ; aucune distribution en N. À la date de prise de contrôle :\n- les capitaux propres comptables d'Orbe s'élèvent à 2 120 000 € ;\n- un terrain d'Orbe a une juste valeur supérieure de 80 000 € à sa valeur comptable (impôt différé au taux de 25 %) ;\n- la juste valeur de la participation de 25 % détenue antérieurement est estimée à 650 000 €.\nOrbe n'a aucun montant en autres éléments du résultat global.",
+      "entities": [
+        {
+          "id": "nova",
+          "name": "Nova",
+          "is_parent": true
+        },
+        {
+          "id": "orbe",
+          "name": "Orbe"
+        }
+      ],
+      "links": [
+        {
+          "from": "nova",
+          "to": "orbe",
+          "ownership_pct": 65
+        }
+      ],
+      "steps": [
+        {
+          "id": "mee-30-06",
+          "stage": "methode",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À quelle valeur les titres Orbe mis en équivalence figurent-ils au 30/06/N, juste avant la prise de contrôle (en euros) ?",
+          "expected_value": 580000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Goodwill implicite = 500 000 − 25 % × 1 800 000 = 50 000 €. Titres au 31/12/N-1 = 500 000 + 25 % × 200 000 = 550 000 €. Au 30/06/N : 550 000 + 25 % × 120 000 = 580 000 €."
+        },
+        {
+          "id": "reevaluation",
+          "stage": "autre",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Quel profit la réévaluation de la participation antérieure dégage-t-elle dans le résultat consolidé de N (en euros) ?",
+          "expected_value": 70000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "IFRS 3 §42 : profit = juste valeur 650 000 − valeur de mise en équivalence 580 000 = 70 000 €."
+        },
+        {
+          "id": "goodwill",
+          "stage": "ecart-acquisition",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez le goodwill constaté lors de la prise de contrôle (en euros).",
+          "expected_value": 353000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Actif net identifiable = 2 120 000 + 80 000 × 75 % = 2 180 000 €. PNC = 35 % × 2 180 000 = 763 000 €. Goodwill = 1 120 000 + 763 000 + 650 000 − 2 180 000 = 353 000 €."
+        },
+        {
+          "id": "resultat-groupe",
+          "stage": "partage-capitaux-propres",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Hors profit de réévaluation, quelle est la contribution d'Orbe au résultat consolidé part du groupe de N (en euros) ?",
+          "expected_value": 108000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Premier semestre (mise en équivalence) : 25 % × 120 000 = 30 000 €. Second semestre (intégration globale) : 65 % × 120 000 = 78 000 €. Total = 108 000 € (le terrain n'étant pas amortissable, l'écart d'évaluation n'affecte pas le résultat)."
+        },
+        {
+          "id": "date-integration",
+          "stage": "perimetre",
+          "kind": "mcq",
+          "points": 1,
+          "prompt": "À partir de quelle date les produits et charges d'Orbe sont-ils intégrés ligne à ligne, à 100 %, dans le compte de résultat consolidé ?",
+          "options": [
+            "01/01/N-1",
+            "01/01/N",
+            "01/07/N",
+            "31/12/N"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "L'intégration globale commence à la date de prise de contrôle (IFRS 10 §20), soit le 01/07/N. Avant, Orbe est mise en équivalence : seule la quote-part de résultat figure sur une ligne distincte."
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Prise de contrôle par étapes : la participation antérieure est suivie en mise en équivalence jusqu'à la prise de contrôle, puis réévaluée à la juste valeur avec impact en résultat ; le goodwill est calculé une seule fois, à la date de prise de contrôle, en intégrant cette juste valeur ; le résultat de l'exercice est ventilé entre la période de mise en équivalence et celle d'intégration globale.",
+      "source_ref": "IFRS 3 §32 et §42 ; IFRS 10 §20 ; IAS 28 §10 et §32 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 900
+    }
+  ]
+}

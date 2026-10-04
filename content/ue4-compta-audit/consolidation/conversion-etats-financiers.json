@@ -1,0 +1,264 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-conso-conversion-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "conversion-etats-financiers",
+      "difficulty": 1,
+      "tags": [
+        "IAS 21",
+        "cours de clôture"
+      ],
+      "statement": "Le groupe Orme établit ses comptes consolidés en IFRS, en euros (taux d'impôt 25 % ; goodwill non amorti). Sa filiale américaine a le dollar pour monnaie fonctionnelle. Selon IAS 21, à quel cours ses immobilisations corporelles sont-elles converties dans le bilan consolidé ?",
+      "options": [
+        "Au cours historique de la date d'acquisition de chaque immobilisation",
+        "Au cours moyen de l'exercice",
+        "Au cours de clôture",
+        "Au cours d'ouverture de l'exercice"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Option 3 : avec la méthode du cours de clôture (IAS 21 §39), tous les actifs et passifs, monétaires ou non, sont convertis au cours de clôture. Le cours historique (option 1) ne s'applique qu'aux éléments non monétaires d'une entité dont la monnaie fonctionnelle est l'euro (§23), ainsi qu'aux capitaux propres ; le cours moyen (option 2) sert aux produits et charges ; le cours d'ouverture (option 4) n'est utilisé pour aucun poste.",
+      "source_ref": "IAS 21 §39 et §40 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-conso-conversion-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "conversion-etats-financiers",
+      "difficulty": 2,
+      "tags": [
+        "écart de conversion",
+        "PNC",
+        "autres éléments du résultat global"
+      ],
+      "statement": "Le groupe Platane établit ses comptes consolidés en IFRS (goodwill partiel, non amorti ; taux d'impôt 25 %, effets fiscaux ignorés). Il détient 80 % d'une filiale brésilienne dont la monnaie fonctionnelle est le réal. La conversion des comptes de N par la méthode du cours de clôture fait apparaître un écart de conversion positif de 50 000 € (le goodwill n'en génère aucun). Comment cet écart est-il présenté dans les comptes consolidés de N ?",
+      "options": [
+        "50 000 € en résultat financier",
+        "50 000 € en capitaux propres part du groupe, en écarts de conversion",
+        "40 000 € en écarts de conversion part du groupe et 10 000 € dans les PNC, via les autres éléments du résultat global",
+        "40 000 € en résultat part du groupe et 10 000 € en résultat attribuable aux PNC"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Option 3 : l'écart de conversion est comptabilisé en autres éléments du résultat global et cumulé dans une composante distincte des capitaux propres (IAS 21 §39(c)) ; la part revenant aux minoritaires leur est attribuée (§41), soit 20 % × 50 000 = 10 000 €. Les options 1 et 4 font passer l'écart par le résultat, ce qui n'arrive qu'à la cession (§48) ; l'option 2 oublie la part des PNC.",
+      "source_ref": "IAS 21 §39, §41 et §48 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-conso-conversion-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "conversion-etats-financiers",
+      "difficulty": 1,
+      "tags": [
+        "goodwill",
+        "IAS 21"
+      ],
+      "statement": "Comptes consolidés établis en IFRS (goodwill non amorti ; taux d'impôt 25 %). Le goodwill dégagé lors de l'acquisition d'une filiale étrangère dont la monnaie fonctionnelle est la devise locale reste converti, d'un exercice à l'autre, au cours historique de la date d'acquisition.",
+      "answer": false,
+      "justification": "Faux : le goodwill est traité comme un actif de l'activité à l'étranger, exprimé dans sa monnaie fonctionnelle, et converti au cours de clôture.",
+      "explanation": "IAS 21 §47 : le goodwill et les ajustements de juste valeur issus de l'acquisition d'une activité à l'étranger sont des actifs et passifs de cette activité ; ils sont donc exprimés dans la monnaie fonctionnelle de l'activité et convertis au cours de clôture. Leur variation de valeur en euros alimente les écarts de conversion en capitaux propres.",
+      "source_ref": "IAS 21 §47 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-conso-conversion-0004",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "conversion-etats-financiers",
+      "difficulty": 2,
+      "tags": [
+        "cours de clôture",
+        "écart de conversion",
+        "IAS 21"
+      ],
+      "title": "Convertir les comptes de la filiale canadienne Maple",
+      "context": "Le groupe Érable établit ses comptes consolidés en IFRS, en euros. Le goodwill n'est pas amorti ; aucun goodwill n'existe sur la filiale étudiée. Taux d'impôt : 25 % ; les effets fiscaux de la conversion sont ignorés.\n\nLe 01/01/N, Érable a créé au Canada la société Maple, détenue à 100 %, au capital de 1 000 000 CAD intégralement libéré ce jour-là. La monnaie fonctionnelle de Maple est le dollar canadien (CAD) ; ses comptes sont convertis par la méthode du cours de clôture.\n\nBilan de Maple au 31/12/N (en CAD) : actifs 2 000 000 ; dettes 800 000 ; capital 1 000 000 ; résultat N 200 000. Aucun dividende n'a été versé.\n\nCours retenus (1 CAD = x €) :\n- 01/01/N : 0,70 ;\n- cours moyen de N, représentatif des cours des transactions : 0,68 ;\n- 31/12/N : 0,66.",
+      "sub_questions": [
+        {
+          "id": "resultat",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Quel est le résultat de Maple converti en euros (en euros, arrondi à l'euro) ?",
+          "expected_value": 136000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Les produits et charges sont convertis au cours moyen représentatif : 200 000 × 0,68 = 136 000 €."
+        },
+        {
+          "id": "ecart",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez l'écart de conversion de N, en euros, avec son signe (négatif s'il diminue les capitaux propres).",
+          "expected_value": -44000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Actif net au cours de clôture = (2 000 000 − 800 000) × 0,66 = 792 000 €. Capital au cours historique = 700 000 € ; résultat au cours moyen = 136 000 €. Écart = 792 000 − 700 000 − 136 000 = −44 000 €. Décomposition : capital 1 000 000 × (0,66 − 0,70) = −40 000 € ; résultat 200 000 × (0,66 − 0,68) = −4 000 €."
+        },
+        {
+          "id": "comptabilisation",
+          "kind": "mcq",
+          "points": 1,
+          "prompt": "Où l'écart de conversion est-il comptabilisé ?",
+          "options": [
+            "En charges financières de N",
+            "En autres éléments du résultat global, cumulés en capitaux propres (écarts de conversion)",
+            "En diminution du capital de Maple dans les comptes consolidés",
+            "En provision pour risque de change"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "IAS 21 §39(c) : l'écart né de la conversion d'une activité à l'étranger est comptabilisé en autres éléments du résultat global et cumulé dans une composante distincte des capitaux propres."
+        },
+        {
+          "id": "analyse",
+          "kind": "open",
+          "points": 3,
+          "prompt": "Expliquez l'origine économique de cet écart et dans quel cas il affectera le résultat consolidé.",
+          "model_answer": "Le dollar canadien s'est déprécié face à l'euro au cours de N (0,70 puis 0,66 € pour 1 CAD) : l'investissement net du groupe dans Maple, exprimé en CAD, vaut moins en euros à la clôture. L'écart traduit cette perte latente sur l'actif net d'ouverture (capital) et sur le résultat de l'exercice, accumulé à un cours moyen supérieur au cours de clôture. Il ne s'agit pas d'une perte de change réalisée : il reste en capitaux propres et ne sera reclassé en résultat qu'en cas de cession (ou de perte de contrôle) de Maple.",
+          "key_points": [
+            "Dépréciation du CAD face à l'euro",
+            "Perte latente sur l'investissement net (capital et résultat)",
+            "Pas de passage en résultat avant la cession",
+            "Reclassement en résultat lors de la cession ou de la perte de contrôle (IAS 21 §48)"
+          ]
+        }
+      ],
+      "total_points": 9,
+      "explanation": "Méthode du cours de clôture : actifs et passifs au cours de clôture, capitaux propres au cours historique, résultat au cours moyen ; la différence constitue l'écart de conversion, en capitaux propres, reclassé en résultat à la cession.",
+      "source_ref": "IAS 21 §39, §40 et §48 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 600
+    },
+    {
+      "id": "ue4-conso-conversion-0005",
+      "type": "consolidation_case",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "conversion-etats-financiers",
+      "difficulty": 2,
+      "tags": [
+        "goodwill en devise",
+        "écart de conversion",
+        "PNC"
+      ],
+      "title": "Groupe Rhône : conversion de la filiale suisse Alpenrose",
+      "context": "La société Rhône établit ses comptes consolidés en IFRS, en euros. Elle évalue les participations ne donnant pas le contrôle (PNC) à leur quote-part de l'actif net identifiable (goodwill partiel). Le goodwill n'est pas amorti ; aucune dépréciation n'est nécessaire. Taux d'impôt : 25 % ; les effets fiscaux de la conversion sont ignorés.\n\nLe 01/01/N, Rhône acquiert 80 % du capital et des droits de vote de la société suisse Alpenrose pour 4 000 000 CHF. Alpenrose a le franc suisse pour monnaie fonctionnelle ; ses comptes sont convertis par la méthode du cours de clôture. À la date d'acquisition, son actif net identifiable, évalué à la juste valeur, s'élève à 4 500 000 CHF (égal à ses capitaux propres comptables).\n\nEn N, Alpenrose réalise un résultat de 300 000 CHF, sans distribution.\n\nCours retenus (1 CHF = x €) : 01/01/N : 1,05 ; cours moyen de N : 1,08 ; 31/12/N : 1,10.",
+      "entities": [
+        {
+          "id": "rhone",
+          "name": "Rhône",
+          "is_parent": true
+        },
+        {
+          "id": "alpenrose",
+          "name": "Alpenrose"
+        }
+      ],
+      "links": [
+        {
+          "from": "rhone",
+          "to": "alpenrose",
+          "ownership_pct": 80
+        }
+      ],
+      "steps": [
+        {
+          "id": "goodwill-euros",
+          "stage": "ecart-acquisition",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À quel montant le goodwill figure-t-il au bilan consolidé du 31/12/N (en euros) ?",
+          "expected_value": 440000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Goodwill en devise = 4 000 000 − 80 % × 4 500 000 = 400 000 CHF. Il est converti au cours de clôture (IAS 21 §47) : 400 000 × 1,10 = 440 000 €."
+        },
+        {
+          "id": "ecart-goodwill",
+          "stage": "autre",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Quel écart de conversion le goodwill génère-t-il en N (en euros, positif s'il augmente les capitaux propres) ?",
+          "expected_value": 20000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "400 000 × (1,10 − 1,05) = 20 000 €, revenant entièrement au groupe puisque le goodwill est partiel."
+        },
+        {
+          "id": "ecart-actif-net",
+          "stage": "autre",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez l'écart de conversion de N sur l'actif net d'Alpenrose, avant partage entre groupe et PNC (en euros, positif s'il augmente les capitaux propres).",
+          "expected_value": 231000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Capitaux propres d'acquisition : 4 500 000 × (1,10 − 1,05) = 225 000 € ; résultat : 300 000 × (1,10 − 1,08) = 6 000 € ; total 231 000 €. Contrôle : actif net au cours de clôture 4 800 000 × 1,10 = 5 280 000 € − capitaux propres historiques 4 725 000 € − résultat au cours moyen 324 000 € = 231 000 €."
+        },
+        {
+          "id": "pnc",
+          "stage": "partage-capitaux-propres",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Quel est le montant des PNC relatives à Alpenrose au bilan consolidé du 31/12/N, résultat et écarts de conversion compris (en euros) ?",
+          "expected_value": 1056000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "PNC = 20 % × actif net converti au cours de clôture = 20 % × 5 280 000 = 1 056 000 € (dont 64 800 € de résultat et 46 200 € d'écarts de conversion). En goodwill partiel, les PNC ne reçoivent rien du goodwill ni de son écart de conversion."
+        },
+        {
+          "id": "presentation",
+          "stage": "partage-capitaux-propres",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "La part du groupe dans les écarts de conversion de N s'élève à 204 800 €.",
+          "answer": true,
+          "explanation": "Part du groupe = 80 % × 231 000 + 20 000 (goodwill) = 184 800 + 20 000 = 204 800 € ; les 46 200 € restants sont attribués aux PNC (IAS 21 §41)."
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le goodwill d'une filiale étrangère est un actif en devise converti au cours de clôture ; il génère son propre écart de conversion, attribué au groupe en goodwill partiel. L'écart sur l'actif net se partage entre groupe et PNC selon le pourcentage d'intérêt.",
+      "source_ref": "IAS 21 §39, §41 et §47 ; IFRS 3 §19 et §32 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 840
+    }
+  ]
+}
