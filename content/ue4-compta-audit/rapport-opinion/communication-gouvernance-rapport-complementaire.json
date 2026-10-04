@@ -1,0 +1,127 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-rapport-gouvernance-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "communication-gouvernance-rapport-complementaire",
+      "difficulty": 1,
+      "tags": [
+        "rapport complémentaire",
+        "comité d'audit",
+        "EIP"
+      ],
+      "statement": "À qui le commissaire aux comptes d'une entité d'intérêt public remet-il le rapport complémentaire prévu par le règlement européen n° 537/2014 ?",
+      "options": [
+        "Au comité d'audit",
+        "À l'assemblée générale des actionnaires",
+        "Systématiquement à la Haute Autorité de l'audit (H2A)",
+        "Au public, par une mise en ligne sur le site internet de l'entité"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Le rapport complémentaire est remis par écrit au comité d'audit de l'EIP, au plus tard à la date du rapport sur les comptes (option 1). Il n'est pas présenté à l'assemblée (option 2), qui reçoit le rapport sur les comptes. Il n'est pas adressé systématiquement à l'autorité de supervision (option 3). Il n'est pas publié (option 4) : il contient des informations détaillées sur l'audit (seuil, faiblesses du contrôle interne) qui restent confidentielles.",
+      "source_ref": "Règl. (UE) n° 537/2014 art. 11 (rapport complémentaire au comité d'audit)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-rapport-gouvernance-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "communication-gouvernance-rapport-complementaire",
+      "difficulty": 2,
+      "tags": [
+        "rapport complémentaire",
+        "seuil de signification",
+        "rapport sur les comptes"
+      ],
+      "statement": "Pour une entité d'intérêt public, quelle information figure dans le rapport complémentaire au comité d'audit mais pas dans le rapport sur les comptes ?",
+      "options": [
+        "L'opinion sur les comptes",
+        "Les points clés de l'audit",
+        "Le montant du seuil de signification retenu pour les comptes pris dans leur ensemble",
+        "Les conclusions des vérifications spécifiques sur le rapport de gestion"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Le montant du seuil de signification retenu pour les comptes pris dans leur ensemble figure dans le rapport complémentaire au comité d'audit, non dans le rapport sur les comptes destiné à l'assemblée (option 3). L'opinion (option 1), les points clés de l'audit (option 2) et les vérifications spécifiques (option 4) sont au contraire des parties du rapport sur les comptes.",
+      "source_ref": "Règl. (UE) n° 537/2014 art. 10 et 11 ; NEP 700 ; NEP 320",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-rapport-gouvernance-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "communication-gouvernance-rapport-complementaire",
+      "difficulty": 3,
+      "tags": [
+        "rapport complémentaire",
+        "contenu",
+        "indépendance",
+        "contrôle interne"
+      ],
+      "statement": "Parmi les éléments suivants, lesquels doivent figurer dans le rapport complémentaire au comité d'audit d'une entité d'intérêt public ? (plusieurs réponses possibles)",
+      "options": [
+        "La déclaration d'indépendance du commissaire aux comptes",
+        "Le détail des rémunérations versées aux mandataires sociaux",
+        "Les faiblesses significatives du contrôle interne relevées, en précisant si la direction y a remédié",
+        "L'opinion du commissaire aux comptes sur l'opportunité de la stratégie du groupe"
+      ],
+      "answer": [
+        0,
+        2
+      ],
+      "multiple": true,
+      "explanation": "Le rapport complémentaire comporte notamment la déclaration d'indépendance (option 1) et les faiblesses significatives du contrôle interne relevées, en précisant si la direction y a remédié (option 3). Le détail des rémunérations des mandataires sociaux (option 2) relève du rapport sur le gouvernement d'entreprise établi par l'entité, sur lequel le commissaire aux comptes intervient dans le cadre de ses vérifications spécifiques. Une opinion sur la stratégie (option 4) est exclue : le commissaire aux comptes ne s'immisce pas dans la gestion et ne se prononce pas sur l'opportunité des choix de la direction.",
+      "source_ref": "Règl. (UE) n° 537/2014 art. 11 (contenu du rapport complémentaire)",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue4-rapport-gouvernance-0004",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "communication-gouvernance-rapport-complementaire",
+      "difficulty": 1,
+      "tags": [
+        "faiblesses du contrôle interne",
+        "communication écrite",
+        "NEP 265"
+      ],
+      "statement": "Les faiblesses significatives du contrôle interne relevées par le commissaire aux comptes sont communiquées par écrit aux organes d'administration ou de surveillance et au comité d'audit.",
+      "answer": true,
+      "justification": "Vrai : la NEP 265 exige une communication écrite des faiblesses significatives du contrôle interne.",
+      "explanation": "La NEP 265 impose que les faiblesses significatives du contrôle interne relevées par le commissaire aux comptes soient communiquées par écrit, en temps utile, aux organes mentionnés par le Code de commerce (organe d'administration ou de surveillance, comité d'audit). Les autres communications prévues par la NEP 260 peuvent être orales ou écrites, mais elles sont documentées au dossier.",
+      "source_ref": "NEP 265 (communication des faiblesses du contrôle interne) ; NEP 260",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue4-rapport-gouvernance-0005",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "communication-gouvernance-rapport-complementaire",
+      "difficulty": 1,
+      "tags": [
+        "communication avec la gouvernance",
+        "NEP 260",
+        "contenu légal"
+      ],
+      "front": "Quelles informations le commissaire aux comptes doit-il porter à la connaissance de l'organe d'administration ou de surveillance et du comité d'audit, quelle que soit l'entité ?",
+      "back": "1. Le programme général de travail mis en œuvre et les sondages réalisés.\n2. Les modifications qui lui paraissent devoir être apportées aux comptes, avec ses observations sur les méthodes d'évaluation.\n3. Les irrégularités et inexactitudes découvertes.\n4. Les conclusions de ces observations et rectifications sur le résultat de la période, comparé à celui de la période précédente.",
+      "explanation": "Ces communications s'appliquent à toutes les entités. S'y ajoutent, selon la NEP 260, les difficultés importantes rencontrées et, selon la NEP 265, les faiblesses significatives du contrôle interne (par écrit). Pour les EIP, le rapport complémentaire au comité d'audit vient en plus.",
+      "source_ref": "NEP 260 ; C. com., communications aux organes d'administration ou de surveillance et au comité d'audit (ancien art. L. 823-16, renuméroté par l'ordonnance n° 2023-1142)",
+      "verified": true,
+      "estimated_seconds": 60
+    }
+  ]
+}

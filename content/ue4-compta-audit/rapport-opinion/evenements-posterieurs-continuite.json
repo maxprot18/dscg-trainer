@@ -1,0 +1,222 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-rapport-continuite-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "evenements-posterieurs-continuite",
+      "difficulty": 1,
+      "tags": [
+        "événements postérieurs",
+        "ajustement des comptes",
+        "NEP 560"
+      ],
+      "statement": "Les comptes de l'exercice clos le 31/12/N de Brume SA seront arrêtés le 15/03/N+1. Parmi les événements suivants, survenus entre ces deux dates, lequel impose d'ajuster les comptes de N ?",
+      "options": [
+        "Un incendie, le 10/02/N+1, détruit un entrepôt dont la valeur nette comptable est de 300 000 €",
+        "Brume SA acquiert en janvier N+1 une participation majoritaire dans un concurrent",
+        "Brume SA signe en février N+1 un emprunt destiné à financer une nouvelle ligne de production",
+        "La liquidation judiciaire d'un client, déjà en grave difficulté en décembre N et dont la créance figure au bilan du 31/12/N, est prononcée le 20/01/N+1"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Le critère d'ajustement est l'existence de la situation à la date de clôture. La liquidation prononcée en janvier N+1 confirme que la créance, déjà compromise en décembre N, était dépréciée au 31/12/N : c'est un événement qui révèle une situation existant à la clôture, les comptes N doivent être ajustés (option 4). L'incendie de février N+1 (option 1) est un fait nouveau sans lien avec la situation à la clôture : pas d'ajustement, mais une information en annexe s'il est significatif. L'acquisition d'une participation (option 2) et la signature d'un emprunt (option 3) sont des opérations de N+1 : elles relèvent au plus de l'information en annexe et du rapport de gestion.",
+      "source_ref": "C. com. art. L. 123-20 (risques et pertes connus entre la clôture et l'établissement des comptes) ; NEP 560 (événements postérieurs à la clôture)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-rapport-continuite-0002",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "evenements-posterieurs-continuite",
+      "difficulty": 2,
+      "tags": [
+        "événements postérieurs",
+        "provision pour litige",
+        "effet d'impôt"
+      ],
+      "statement": "Un salarié de Cobra SAS, licencié en septembre N, a saisi le conseil de prud'hommes en octobre N. Au 31/12/N, la société a constitué une provision de 40 000 €. Le 12/02/N+1, avant l'arrêté des comptes, le conseil de prud'hommes condamne Cobra à verser 65 000 € ; la société ne fera pas appel. La provision est fiscalement déductible et le taux d'impôt sur les sociétés est de 25 % (exercice bénéficiaire). De combien le résultat net de N doit-il diminuer après l'ajustement ? Réponse en euros, montant positif, arrondi à l'euro.",
+      "expected_value": 18750,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Le licenciement et la saisine du conseil de prud'hommes datent de N : l'obligation existait à la clôture et le jugement de février N+1, connu avant l'arrêté, précise son montant. C'est un événement postérieur qui conduit à ajuster les comptes de N. Complément de provision : 65 000 − 40 000 = 25 000 € avant impôt. La provision étant déductible, l'impôt diminue de 25 000 × 25 % = 6 250 €. Diminution du résultat net : 25 000 − 6 250 = 18 750 €. Erreurs classiques : retenir 25 000 € (oubli de l'effet d'impôt) ou 48 750 € (65 000 × 0,75, en oubliant la provision déjà constituée).",
+      "source_ref": "C. com. art. L. 123-20 ; NEP 560 (événements postérieurs à la clôture) ; PCG, règles relatives aux provisions (règl. ANC 2014-03)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue4-rapport-continuite-0003",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "evenements-posterieurs-continuite",
+      "difficulty": 3,
+      "tags": [
+        "capitaux propres inférieurs à la moitié du capital",
+        "événements postérieurs",
+        "L. 225-248"
+      ],
+      "statement": "Delta SA a un capital social de 800 000 €. Au 31/12/N, avant ajustements, ses capitaux propres comprennent : capital 800 000 €, réserve légale 20 000 €, report à nouveau −230 000 €, résultat de N −120 000 €. Le commissaire aux comptes relève avant l'arrêté des comptes :\n1. des ventes de janvier N+1 montrent que la valeur nette de réalisation d'un lot de produits en stock au 31/12/N est inférieure de 52 000 € à son coût ;\n2. un client en redressement judiciaire depuis novembre N a été mis en liquidation le 18/01/N+1 : la créance de 30 000 € HT n'est pas recouvrable ;\n3. un incendie, le 14/02/N+1, a causé une perte non assurée estimée à 60 000 €.\nLa société étant déficitaire, ces éléments sont sans incidence sur l'impôt. Calculez : capitaux propres au 31/12/N après les ajustements nécessaires − moitié du capital social. Réponse en euros, négative si les capitaux propres sont inférieurs à la moitié du capital.",
+      "expected_value": -12000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Capitaux propres avant ajustements : 800 000 + 20 000 − 230 000 − 120 000 = 470 000 €, supérieurs à la moitié du capital (400 000 €). Ajustements à retenir : la dépréciation du stock (52 000 €), révélée par les ventes de janvier N+1, et la créance du client dont les difficultés existaient à la clôture (30 000 €) concernent des situations existant au 31/12/N. L'incendie de février N+1 est un événement nouveau, sans lien avec la situation à la clôture : il ne s'ajuste pas (information en annexe). Capitaux propres corrigés : 470 000 − 52 000 − 30 000 = 388 000 €. Écart : 388 000 − 400 000 = −12 000 €. Les ajustements font passer les capitaux propres sous la moitié du capital : le conseil devra consulter l'assemblée sur une éventuelle dissolution anticipée dans les quatre mois de l'approbation des comptes, ce qui constitue aussi un indice à prendre en compte au titre de la continuité d'exploitation. Erreurs classiques : +70 000 € (sans ajustement), −72 000 € (incendie ajusté à tort).",
+      "source_ref": "C. com. art. L. 225-248 (capitaux propres inférieurs à la moitié du capital social) ; C. com. art. L. 123-20 ; NEP 560 ; NEP 570",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue4-rapport-continuite-0004",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "evenements-posterieurs-continuite",
+      "difficulty": 2,
+      "tags": [
+        "événements postérieurs",
+        "provision pour litige",
+        "ajustement proposé"
+      ],
+      "statement": "Fer SAS a livré en N des pièces défectueuses à un client, qui l'a assignée en dommages-intérêts en novembre N. Jugeant le risque éloigné, la direction n'a rien comptabilisé au 31/12/N. Le 20/02/N+1, avant l'arrêté des comptes, le tribunal condamne Fer à verser 58 000 € ; la société renonce à faire appel. Le commissaire aux comptes demande à la direction de corriger les comptes de N avant l'émission de son rapport. Passez l'écriture d'ajustement au 31/12/N, en utilisant les comptes 6815 et 1511 (on ignore l'impôt).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "6815",
+          "label": "Dotations aux provisions pour risques et charges d'exploitation",
+          "debit": 58000,
+          "credit": 0
+        },
+        {
+          "account": "1511",
+          "label": "Provisions pour litiges",
+          "debit": 0,
+          "credit": 58000
+        }
+      ],
+      "explanation": "Le litige est né avant la clôture (livraison défectueuse de N, assignation en novembre N) : l'obligation existait au 31/12/N et le jugement de février N+1, définitif et connu avant l'arrêté, en fixe le montant. C'est un événement postérieur qui impose l'ajustement des comptes de N. L'appréciation initiale de la direction (risque jugé éloigné) est démentie par un élément qui éclaire la situation à la clôture. Écriture : dotation aux provisions d'exploitation (6815) au débit pour 58 000 €, provision pour litiges (1511) au crédit. Le versement interviendra en N+1 : il soldera alors la provision par une reprise.",
+      "source_ref": "C. com. art. L. 123-20 ; NEP 560 ; PCG, règles relatives aux provisions (règl. ANC 2014-03), comptes 1511 et 6815",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue4-rapport-continuite-0005",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "evenements-posterieurs-continuite",
+      "difficulty": 2,
+      "tags": [
+        "événements postérieurs",
+        "dépréciation des stocks",
+        "valeur nette de réalisation"
+      ],
+      "statement": "Au 31/12/N, Opale SARL détient un lot de marchandises évalué à son coût d'acquisition, 120 000 €. En février N+1, avant l'arrêté des comptes, le lot entier est vendu 95 000 € HT, les frais de commercialisation s'élevant à 5 000 € HT. Aucun événement survenu après la clôture n'explique cette baisse de prix : le marché de ces produits s'était déjà retourné en novembre N. Le commissaire aux comptes demande l'ajustement des comptes de N. Passez l'écriture au 31/12/N avec les comptes 6817 et 397.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "6817",
+          "label": "Dotations aux dépréciations des actifs circulants",
+          "debit": 30000,
+          "credit": 0
+        },
+        {
+          "account": "397",
+          "label": "Dépréciations des stocks de marchandises",
+          "debit": 0,
+          "credit": 30000
+        }
+      ],
+      "explanation": "La vente de février N+1 apporte une information sur la valeur du stock qui existait à la clôture : aucun fait nouveau n'a déprécié le lot après le 31/12/N, la vente révèle que sa valeur nette de réalisation était déjà inférieure à son coût. Valeur nette de réalisation : 95 000 − 5 000 = 90 000 €. Dépréciation : 120 000 − 90 000 = 30 000 €. Écriture : dotation aux dépréciations des actifs circulants (6817) au débit, dépréciation des stocks de marchandises (397) au crédit. Erreur classique : déprécier de 25 000 € (120 000 − 95 000) en oubliant les frais de vente.",
+      "source_ref": "C. com. art. L. 123-20 ; NEP 560 ; PCG, règles relatives à l'évaluation des stocks et à leur dépréciation (règl. ANC 2014-03), comptes 397 et 6817",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue4-rapport-continuite-0006",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "evenements-posterieurs-continuite",
+      "difficulty": 3,
+      "tags": [
+        "continuité d'exploitation",
+        "incertitude significative",
+        "NEP 570",
+        "procédure d'alerte",
+        "covenant"
+      ],
+      "title": "Orion : covenant rompu et incertitude sur la continuité",
+      "context": "Vous êtes collaborateur du commissaire aux comptes d'Orion SAS (fabrication d'emballages, non EIP) pour l'exercice clos le 31/12/N. Le rapport doit être émis le 28/03/N+1.\n\nOrion a perdu 900 000 € en N-1 et 1 450 000 € en N. Son capital social s'élève à 2 000 000 € et ses capitaux propres à 850 000 € au 31/12/N.\n\nOrion a souscrit en N-2 un emprunt bancaire de 3 000 000 € assorti d'un covenant (dettes financières nettes / EBE ≤ 3,5). Le ratio atteint 5,1 au 31/12/N : le prêt est devenu exigible à première demande. La banque n'a pas renoncé à cette faculté ; des négociations sont en cours.\n\nTrésorerie au 31/12/N : 400 000 €. Budget de trésorerie de N+1 établi par la direction : encaissements d'exploitation 9 200 000 €, décaissements d'exploitation 9 450 000 €, échéances contractuelles d'emprunt 600 000 €. La direction prévoit en outre une augmentation de capital de 500 000 €, que les associés majoritaires se sont engagés par écrit à souscrire à condition que la banque renonce à l'exigibilité anticipée.\n\nLa direction a établi les comptes selon la convention de continuité d'exploitation. Une note de l'annexe décrit précisément la rupture du covenant, les négociations, le budget de trésorerie, l'augmentation de capital conditionnelle et l'incertitude qui en résulte. Vous jugez la convention de continuité appropriée, mais l'incertitude significative.",
+      "sub_questions": [
+        {
+          "id": "q1-tresorerie-previsionnelle",
+          "kind": "numeric",
+          "prompt": "Calculez la trésorerie prévisionnelle d'Orion au 31/12/N+1, sans l'augmentation de capital et en supposant que la banque n'exige pas le remboursement anticipé. Réponse en euros, négative en cas de déficit.",
+          "points": 2,
+          "expected_value": -450000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "400 000 + 9 200 000 − 9 450 000 − 600 000 = −450 000 €. Même sans exigibilité anticipée, Orion ne peut honorer ses engagements de N+1 sans l'augmentation de capital, elle-même suspendue à l'accord de la banque : c'est ce qui caractérise l'incertitude significative."
+        },
+        {
+          "id": "q2-moitie-capital",
+          "kind": "true_false",
+          "prompt": "Les capitaux propres d'Orion étant inférieurs à la moitié de son capital social, les associés doivent être consultés sur une éventuelle dissolution anticipée.",
+          "points": 1,
+          "answer": true,
+          "explanation": "850 000 € < 2 000 000 € ÷ 2 = 1 000 000 €. L'article L. 225-248, applicable aux SAS par renvoi, impose de consulter les associés dans les quatre mois de l'approbation des comptes qui font apparaître cette perte ; à défaut de dissolution, la situation doit être régularisée au plus tard à la clôture du deuxième exercice suivant."
+        },
+        {
+          "id": "q3-incidence-rapport",
+          "kind": "mcq",
+          "prompt": "Quelle incidence cette situation a-t-elle sur le rapport du commissaire aux comptes ?",
+          "points": 2,
+          "options": [
+            "Certification avec réserve pour incertitude sur la continuité d'exploitation",
+            "Certification sans réserve, assortie d'une observation sur la continuité d'exploitation",
+            "Refus de certifier, la convention de continuité étant inappropriée",
+            "Certification sans réserve, avec une partie distincte intitulée « Incertitude significative liée à la continuité d'exploitation » renvoyant à la note de l'annexe"
+          ],
+          "answer": [
+            3
+          ],
+          "explanation": "La convention de continuité est appropriée et l'annexe décrit l'incertitude de façon adéquate : la NEP 570 prévoit alors une opinion non modifiée et une partie spécifique du rapport consacrée à l'incertitude significative, avec renvoi à l'annexe (option 4). Une réserve (option 1) ne se justifierait qu'en cas d'information insuffisante en annexe. L'observation (option 2) n'est plus l'outil prévu pour l'incertitude sur la continuité, qui a sa propre partie. Le refus de certifier (option 3) suppose une convention de continuité inappropriée, ce qui n'est pas le cas."
+        },
+        {
+          "id": "q4-autres-obligations",
+          "kind": "open",
+          "prompt": "Indépendamment de son opinion, quelles autres démarches le commissaire aux comptes doit-il envisager ?",
+          "points": 3,
+          "model_answer": "Les pertes répétées, la rupture du covenant et le déficit prévisionnel de trésorerie sont des faits de nature à compromettre la continuité de l'exploitation : le commissaire aux comptes engage la procédure d'alerte. Orion étant une SAS, c'est la procédure des sociétés autres que les SA (L. 234-2) : il demande par écrit des explications au président, qui doit répondre sous quinze jours, et informe le président du tribunal de commerce ; si la réponse ne permet pas d'être rassuré, il établit un rapport spécial et invite le président, par un écrit dont copie est adressée au président du tribunal, à faire délibérer l'assemblée ; si, après l'assemblée, la continuité reste compromise, il informe le président du tribunal de commerce de ses démarches et de leurs résultats. La procédure ne s'applique pas si une conciliation ou une sauvegarde a été ouverte. Il vérifie aussi que les associés seront consultés au titre de l'article L. 225-248 et que le rapport de gestion expose la situation. Enfin, il communique son analyse à la gouvernance et documente au dossier son appréciation du budget de trésorerie et des engagements des associés, ainsi que les déclarations écrites obtenues de la direction sur ses intentions.",
+          "key_points": [
+            "Procédure d'alerte de l'article L. 234-2 (SAS) : explications du président sous quinze jours, puis rapport spécial et assemblée, puis président du tribunal de commerce",
+            "Procédure non applicable en cas de conciliation ou de sauvegarde",
+            "Consultation des associés au titre des capitaux propres inférieurs à la moitié du capital",
+            "Communication à la gouvernance et documentation de l'appréciation (budget, engagements des associés, déclarations écrites)"
+          ]
+        }
+      ],
+      "total_points": 8,
+      "explanation": "Le cas articule les trois conséquences d'une incertitude sur la continuité : appréciation chiffrée (budget de trésorerie), traitement dans le rapport (partie spécifique, sans réserve si l'annexe est adéquate) et obligations légales connexes (capitaux propres inférieurs à la moitié du capital, procédure d'alerte, communication à la gouvernance).",
+      "source_ref": "NEP 570 (continuité d'exploitation) ; NEP 700 ; C. com. art. L. 225-248 (applicable aux SAS par renvoi) ; C. com. art. L. 234-2 (procédure d'alerte dans les sociétés autres que les SA)",
+      "verified": true,
+      "estimated_seconds": 720
+    }
+  ]
+}

@@ -20,6 +20,246 @@
       "source_ref": "NEP 700 (rapports du commissaire aux comptes sur les comptes annuels et consolidés : réserve, refus, impossibilité de certifier) ; NEP 501 (présence à l'inventaire physique)",
       "verified": true,
       "estimated_seconds": 90
+    },
+    {
+      "id": "ue4-rapport-opinion-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "formulation-opinion",
+      "difficulty": 2,
+      "tags": [
+        "observation",
+        "changement de méthode",
+        "NEP 700"
+      ],
+      "statement": "Au cours de l'exercice N, Jade SA a adopté la méthode préférentielle de comptabilisation de ses engagements de retraite (provision au bilan). La note 2 de l'annexe décrit ce changement et son incidence de façon complète et exacte ; les comptes ne comportent aucune anomalie significative. Le commissaire aux comptes juge utile d'attirer l'attention des lecteurs sur ce changement. Comment doit-il procéder ?",
+      "options": [
+        "Certifier avec réserve, le changement de méthode rompant la comparabilité des comptes",
+        "Certifier sans réserve et formuler une observation renvoyant à la note 2 de l'annexe",
+        "Certifier sans réserve et mentionner le changement dans la partie « Vérifications spécifiques »",
+        "Refuser de certifier, tout changement de méthode étant interdit en cours d'exercice"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'observation sert à attirer l'attention du lecteur sur une information fournie dans l'annexe, correctement présentée, que le commissaire aux comptes juge importante pour la compréhension des comptes ; elle ne modifie pas l'opinion (option 2). Le changement de méthode est justifié et bien décrit : il n'y a ni anomalie ni limitation, donc aucune réserve (option 1) et a fortiori aucun refus de certifier (option 4), d'autant qu'un changement vers une méthode préférentielle est toujours admis. La partie « Vérifications spécifiques » (option 3) porte sur le rapport de gestion et les autres documents adressés aux actionnaires, non sur l'annexe des comptes.",
+      "source_ref": "NEP 700 (observations dans le rapport sur les comptes) ; PCG, règles relatives aux changements de méthodes comptables (règl. ANC 2014-03)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-rapport-opinion-0003",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "formulation-opinion",
+      "difficulty": 2,
+      "tags": [
+        "ajustement proposé",
+        "produits constatés d'avance",
+        "séparation des exercices",
+        "NEP 450"
+      ],
+      "statement": "Le 20/12/N, Kaolin SAS a facturé et comptabilisé en prestations de services (compte 706) une formation de 54 000 € HT qui sera dispensée en février N+1. Le commissaire aux comptes demande la correction de cette anomalie avant l'émission de son rapport ; la direction l'accepte. Passez l'écriture d'ajustement au 31/12/N en utilisant le compte 487 (on ignore l'impôt).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "706",
+          "label": "Prestations de services",
+          "debit": 54000,
+          "credit": 0
+        },
+        {
+          "account": "487",
+          "label": "Produits constatés d'avance",
+          "debit": 0,
+          "credit": 54000
+        }
+      ],
+      "explanation": "Le produit correspond à une prestation de N+1 : il ne peut pas être rattaché à N. La facture ayant été émise et comptabilisée, la créance subsiste ; la correction consiste à neutraliser le produit de N par un produit constaté d'avance : débit du compte de produit 706 et crédit du compte 487 pour le montant hors taxes, 54 000 €. La TVA n'est pas concernée par cette régularisation. Le produit sera repris en N+1 lors de la réalisation de la formation.",
+      "source_ref": "NEP 450 (communication et correction des anomalies) ; PCG, compte 487 Produits constatés d'avance (règl. ANC 2014-03)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue4-rapport-opinion-0004",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "formulation-opinion",
+      "difficulty": 2,
+      "tags": [
+        "ajustement proposé",
+        "charges à payer",
+        "impôt sur les sociétés",
+        "NEP 450"
+      ],
+      "statement": "Le commissaire aux comptes de Lys SA relève que des honoraires de conseil juridique, correspondant à des travaux réalisés en novembre et décembre N, ont été facturés en janvier N+1 pour 30 000 € HT (TVA 20 %) et ne figurent pas dans les comptes de N. L'impôt sur les sociétés de N (taux 25 %, exercice bénéficiaire) est déjà comptabilisé en charge et en dette ; les honoraires sont déductibles. La direction accepte la correction. Passez au 31/12/N l'écriture d'ajustement, y compris la correction de l'impôt, avec les comptes 6226, 44586, 4081, 444 et 695.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "6226",
+          "label": "Honoraires",
+          "debit": 30000,
+          "credit": 0
+        },
+        {
+          "account": "44586",
+          "label": "TVA sur factures non parvenues",
+          "debit": 6000,
+          "credit": 0
+        },
+        {
+          "account": "4081",
+          "label": "Fournisseurs – factures non parvenues",
+          "debit": 0,
+          "credit": 36000
+        },
+        {
+          "account": "444",
+          "label": "État – impôt sur les bénéfices",
+          "debit": 7500,
+          "credit": 0
+        },
+        {
+          "account": "695",
+          "label": "Impôts sur les bénéfices",
+          "debit": 0,
+          "credit": 7500
+        }
+      ],
+      "explanation": "Les travaux ont été réalisés en N : la charge est rattachée à N par une facture non parvenue. Débit 6226 Honoraires 30 000 € et 44586 TVA sur factures non parvenues 6 000 € ; crédit 4081 Fournisseurs – factures non parvenues 36 000 €. L'impôt de N ayant déjà été comptabilisé, la charge supplémentaire déductible le réduit de 30 000 × 25 % = 7 500 € : débit 444 (la dette d'impôt diminue), crédit 695. Total débit = total crédit = 43 500 €. Le résultat net de N diminue de 22 500 €.",
+      "source_ref": "NEP 450 (communication et correction des anomalies) ; PCG, comptes 4081, 44586, 444 et 695 (règl. ANC 2014-03)",
+      "verified": true,
+      "estimated_seconds": 210
+    },
+    {
+      "id": "ue4-rapport-opinion-0005",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "formulation-opinion",
+      "difficulty": 3,
+      "tags": [
+        "anomalies non corrigées",
+        "capitaux propres",
+        "effet d'impôt",
+        "NEP 450"
+      ],
+      "statement": "Au terme de l'audit de Mica SA (exercice bénéficiaire clos le 31/12/N, taux d'impôt sur les sociétés 25 %), les anomalies suivantes restent non corrigées :\n1. dépréciation d'un stock obsolète non comptabilisée : 70 000 € (déductible) ;\n2. facture de maintenance relative à N-1, comptabilisée en charges de N : 40 000 € ;\n3. produit relatif à une prestation de N+1, comptabilisé en N : 50 000 € HT (imposable) ;\n4. pénalité fiscale notifiée en décembre N, non comptabilisée : 12 000 € (non déductible).\nCalculez la surévaluation nette des capitaux propres au 31/12/N, après impôt, en euros arrondis à l'euro.",
+      "expected_value": 102000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Effet de chaque anomalie sur les capitaux propres au 31/12/N : (1) dépréciation omise : 70 000 × (1 − 25 %) = 52 500 € de surévaluation ; (2) charge de N-1 enregistrée en N : le résultat de N est sous-évalué, mais celui de N-1 était surévalué d'autant ; les capitaux propres de clôture de N, qui cumulent les deux exercices, ne sont pas affectés (effet nul) ; (3) produit de N+1 comptabilisé en N : 50 000 × 0,75 = 37 500 € de surévaluation ; (4) pénalité non déductible omise : 12 000 € de surévaluation, sans effet d'impôt. Total : 52 500 + 0 + 37 500 + 12 000 = 102 000 €. Erreurs classiques : 72 000 € (anomalie 2 retenue en diminution), 99 000 € (effet d'impôt appliqué à la pénalité), 132 000 € (aucun effet d'impôt).",
+      "source_ref": "NEP 450 (évaluation des anomalies relevées au cours de l'audit) ; NEP 700 ; CGI art. 39-2 (non-déductibilité des sanctions et pénalités)",
+      "verified": true,
+      "estimated_seconds": 300
+    },
+    {
+      "id": "ue4-rapport-opinion-0006",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "formulation-opinion",
+      "difficulty": 3,
+      "tags": [
+        "cumul des anomalies",
+        "réserve pour désaccord",
+        "séparation des exercices",
+        "NEP 450",
+        "NEP 700"
+      ],
+      "title": "Hélios : du cumul des anomalies à la réserve",
+      "context": "Vous êtes collaborateur du commissaire aux comptes d'Hélios SAS (non EIP), exercice clos le 31/12/N. Seuil de signification : 200 000 € ; seuil des anomalies manifestement insignifiantes : 10 000 €. Résultat avant impôt : 3 100 000 € ; capitaux propres : 11 000 000 € ; total du bilan : 26 000 000 €.\n\nAnomalies relevées et non corrigées à ce stade (montants avant impôt) :\n1. Une provision pour restructuration de 150 000 € a été comptabilisée au 31/12/N, alors que le plan n'a été décidé et annoncé aux salariés qu'en février N+1.\n2. Des produits finis livrés le 04/01/N+1 ont été facturés et comptabilisés en ventes le 29/12/N pour 600 000 € HT ; leur coût de production, 360 000 €, a été sorti du stock au 31/12/N.\n3. Une créance sur un client en liquidation judiciaire depuis octobre N n'est pas dépréciée : perte probable de 190 000 € HT.\n4. Des frais de réception de 8 000 € ont été imputés à un mauvais compte de charges.\n\nLa direction propose de corriger la seule anomalie 3 et de laisser les autres en l'état.",
+      "sub_questions": [
+        {
+          "id": "q1-cumul",
+          "kind": "numeric",
+          "prompt": "Calculez l'effet net cumulé des anomalies 1 à 4 sur le résultat avant impôt de N, avant toute correction. Exprimez la surévaluation en euros.",
+          "points": 2,
+          "expected_value": 280000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "(1) provision injustifiée : résultat sous-évalué de 150 000 € ; (2) vente de N+1 rattachée à N : marge surévaluée de 600 000 − 360 000 = 240 000 € ; (3) dépréciation omise : surévaluation de 190 000 € ; (4) erreur d'imputation entre deux comptes de charges, sans effet sur le résultat (et inférieure au seuil des anomalies manifestement insignifiantes). Effet net : 240 000 + 190 000 − 150 000 = 280 000 € de surévaluation, au-delà du seuil de 200 000 €."
+        },
+        {
+          "id": "q2-appreciation",
+          "kind": "mcq",
+          "prompt": "La direction corrige l'anomalie 3 et refuse les autres corrections. Quelle appréciation le commissaire aux comptes porte-t-il ?",
+          "points": 2,
+          "options": [
+            "Le solde des anomalies restantes (240 000 − 150 000 = 90 000 €) est inférieur au seuil : certification sans réserve, sans autre analyse",
+            "L'anomalie 2 dépasse à elle seule le seuil et affecte le chiffre d'affaires, les stocks et le résultat ; la compenser avec une provision surévaluée sans lien n'est pas approprié : faute de correction, une réserve pour désaccord s'impose",
+            "Refus de certifier, puisque deux anomalies restent non corrigées",
+            "Impossibilité de certifier, la séparation des exercices sur les ventes n'ayant pas pu être vérifiée"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "La NEP 450 impose d'apprécier les anomalies individuellement et en cumul, en tenant compte des postes affectés. L'anomalie 2 (240 000 €) dépasse le seuil et fausse le chiffre d'affaires et les stocks ; la provision surévaluée porte sur d'autres postes et ne la neutralise pas. Son incidence reste circonscrite (environ 8 % du résultat, 2 % des capitaux propres) : réserve pour désaccord (option 2), et non refus (option 3), qui suppose une incidence diffuse. L'option 1 compense à tort des anomalies sans lien. L'option 4 est fausse : l'anomalie a été identifiée, il s'agit d'un désaccord et non d'une limitation."
+        },
+        {
+          "id": "q3-ecriture-cut-off",
+          "kind": "journal_entry",
+          "prompt": "Le commissaire aux comptes insiste pour que l'anomalie 2 soit corrigée. Passez l'écriture d'ajustement au 31/12/N avec les comptes 701, 487, 355 et 7135 (on ignore l'impôt).",
+          "points": 3,
+          "date": "31/12/N",
+          "entries": [
+            {
+              "account": "701",
+              "label": "Ventes de produits finis",
+              "debit": 600000,
+              "credit": 0
+            },
+            {
+              "account": "487",
+              "label": "Produits constatés d'avance",
+              "debit": 0,
+              "credit": 600000
+            },
+            {
+              "account": "355",
+              "label": "Stocks de produits finis",
+              "debit": 360000,
+              "credit": 0
+            },
+            {
+              "account": "7135",
+              "label": "Variation des stocks de produits",
+              "debit": 0,
+              "credit": 360000
+            }
+          ],
+          "explanation": "La facture a été émise : la créance demeure, mais le produit relève de N+1, date de la livraison. Le produit de N est neutralisé par un produit constaté d'avance (débit 701, crédit 487, 600 000 €). Les produits finis faisaient encore partie du stock au 31/12/N : ils sont réintégrés pour leur coût de production (débit 355, crédit 7135, 360 000 €). Le résultat de N diminue de 240 000 €."
+        },
+        {
+          "id": "q4-redaction",
+          "kind": "open",
+          "prompt": "La direction maintient son refus de corriger l'anomalie 2. Indiquez comment le commissaire aux comptes formule son opinion et ce que son rapport doit contenir à ce titre.",
+          "points": 3,
+          "model_answer": "Le commissaire aux comptes certifie les comptes avec réserve pour désaccord. La partie « Opinion », placée en tête du rapport, indique que, sous la réserve décrite dans la partie « Fondement de l'opinion », les comptes sont réguliers et sincères et donnent une image fidèle. La partie « Fondement de l'opinion » expose le motif : des ventes de produits livrés en janvier N+1 ont été comptabilisées en N, contrairement au principe d'indépendance des exercices ; elle en chiffre l'incidence : chiffre d'affaires surévalué de 600 000 €, stocks sous-évalués de 360 000 €, résultat avant impôt et capitaux propres surévalués de 240 000 € (montant à présenter aussi après impôt si celui-ci est concerné). Elle rappelle le référentiel d'audit et l'indépendance. Le reste du rapport suit la structure habituelle (justification des appréciations, vérifications spécifiques, responsabilités). Le désaccord est également communiqué à la gouvernance.",
+          "key_points": [
+            "Certification avec réserve pour désaccord (incidence circonscrite)",
+            "Opinion en tête du rapport, avec renvoi à la partie « Fondement de l'opinion »",
+            "Motif exposé et incidence chiffrée sur le chiffre d'affaires, les stocks, le résultat et les capitaux propres",
+            "Communication du désaccord à la gouvernance"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas montre qu'on ne raisonne pas seulement sur le solde net des anomalies : une anomalie supérieure au seuil est significative à elle seule, et sa compensation avec une anomalie de sens contraire portant sur un autre poste n'est pas appropriée. Le refus de correction conduit à une réserve pour désaccord, dont le motif et l'incidence chiffrée figurent dans la partie « Fondement de l'opinion ».",
+      "source_ref": "NEP 450 (évaluation des anomalies relevées au cours de l'audit) ; NEP 700 (certification avec réserve) ; PCG, règles relatives aux provisions pour restructuration et compte 487 (règl. ANC 2014-03)",
+      "verified": true,
+      "estimated_seconds": 780
     }
   ]
 }

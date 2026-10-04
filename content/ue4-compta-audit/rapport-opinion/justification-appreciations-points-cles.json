@@ -1,0 +1,123 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-rapport-appreciations-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "justification-appreciations-points-cles",
+      "difficulty": 2,
+      "tags": [
+        "justification des appréciations",
+        "points clés de l'audit",
+        "EIP"
+      ],
+      "statement": "Le commissaire aux comptes de Nacre SAS, qui n'est pas une entité d'intérêt public, s'apprête à certifier les comptes sans réserve. Quelle affirmation relative à la justification des appréciations est exacte ?",
+      "options": [
+        "Elle est obligatoire pour toute entité, même en cas de certification sans réserve ; elle prend la forme de points clés de l'audit pour les seules EIP",
+        "Elle n'est requise que lorsque le commissaire aux comptes formule une réserve",
+        "Elle remplace la partie « Fondement de l'opinion » du rapport",
+        "Elle exprime une opinion distincte sur chacun des postes des comptes examinés"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "La loi impose au commissaire aux comptes de justifier ses appréciations pour toute entité, y compris lorsqu'il certifie sans réserve ; pour les EIP, cette justification prend la forme des points clés de l'audit (option 1). L'option 2 est fausse : la justification n'est pas liée à une réserve. L'option 3 est fausse : la partie « Fondement de l'opinion » subsiste et précède la justification des appréciations. L'option 4 est fausse : les appréciations s'inscrivent dans l'audit des comptes pris dans leur ensemble et ne constituent pas une opinion sur des éléments isolés.",
+      "source_ref": "C. com., obligation de justifier les appréciations (ancien art. L. 823-9, renuméroté par l'ordonnance n° 2023-1142) ; NEP 700 ; NEP 702 (entités autres que les EIP)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-rapport-appreciations-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "justification-appreciations-points-cles",
+      "difficulty": 2,
+      "tags": [
+        "points clés de l'audit",
+        "EIP",
+        "règlement 537/2014"
+      ],
+      "statement": "Dans le rapport sur les comptes d'une société cotée, que doit comporter chaque point clé de l'audit ?",
+      "options": [
+        "Le montant du seuil de signification retenu pour le poste concerné",
+        "Une opinion distincte sur le poste concerné",
+        "La description du risque d'anomalies significatives jugé parmi les plus importants et un résumé de la réponse apportée, avec renvoi à l'annexe",
+        "La liste des faiblesses du contrôle interne communiquées à la direction"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Pour chaque point clé, le rapport décrit le risque d'anomalies significatives jugé parmi les plus importants, résume la réponse apportée par le commissaire aux comptes et renvoie à la note de l'annexe concernée (option 3). Le seuil de signification (option 1) figure dans le rapport complémentaire au comité d'audit, non public, et non dans le rapport sur les comptes. Une opinion séparée sur un poste (option 2) est exclue : les points clés s'inscrivent dans l'audit des comptes pris dans leur ensemble. Les faiblesses du contrôle interne (option 4) sont communiquées à la gouvernance et figurent dans le rapport complémentaire, pas dans les points clés.",
+      "source_ref": "Règl. (UE) n° 537/2014 art. 10 §2 c ; NEP 701 (justification des appréciations, EIP)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-rapport-appreciations-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "justification-appreciations-points-cles",
+      "difficulty": 3,
+      "tags": [
+        "points clés de l'audit",
+        "information en annexe",
+        "désaccord",
+        "goodwill"
+      ],
+      "statement": "Dans une société cotée, le test de dépréciation des écarts d'acquisition est le principal risque identifié. L'annexe ne présente pas les analyses de sensibilité requises par le référentiel ; la direction refuse de les ajouter, et l'omission est significative. Le commissaire aux comptes a lui-même calculé ces sensibilités. Que doit-il faire ?",
+      "options": [
+        "Présenter ses propres analyses de sensibilité dans le point clé de l'audit, ce qui dispense de compléter l'annexe",
+        "Formuler une observation sur les écarts d'acquisition, qui tient lieu à la fois de point clé et de réserve",
+        "Ne rien mentionner, les points clés de l'audit étant facultatifs pour les sociétés cotées",
+        "Traiter l'omission comme un désaccord et en tirer les conséquences sur son opinion, le point clé ne pouvant pas se substituer à l'information que doit fournir l'entité"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Le point clé de l'audit décrit la démarche du commissaire aux comptes ; il ne peut pas se substituer à une information que l'entité doit fournir dans ses comptes. Le commissaire aux comptes n'a pas à publier lui-même une information originale sur l'entité. Il demande à la direction de compléter l'annexe ; si elle refuse et que l'omission est significative, c'est un désaccord (information insuffisante) dont il tire les conséquences sur son opinion (option 4). L'option 1 revient à publier à la place de la direction l'information qui manque. L'option 2 est fausse : une observation attire l'attention sur une information présentée dans l'annexe ; elle ne pallie pas son absence et ne remplace ni réserve ni point clé. L'option 3 est fausse : les points clés sont obligatoires pour une EIP.",
+      "source_ref": "NEP 700 (désaccord, information insuffisante) ; NEP 701 (points clés de l'audit, EIP) ; règl. (UE) n° 537/2014 art. 10",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue4-rapport-appreciations-0004",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "justification-appreciations-points-cles",
+      "difficulty": 1,
+      "tags": [
+        "justification des appréciations",
+        "entités non EIP"
+      ],
+      "statement": "Dans une entité qui n'est pas une EIP, le commissaire aux comptes est dispensé de justifier ses appréciations lorsqu'il certifie les comptes sans réserve.",
+      "answer": false,
+      "justification": "Faux : la justification des appréciations est obligatoire pour toutes les entités, y compris en cas de certification sans réserve.",
+      "explanation": "L'obligation de justifier les appréciations s'applique à toutes les entités dont les comptes sont certifiés, quelle que soit l'opinion. Pour les entités qui ne sont pas des EIP, le commissaire aux comptes expose les appréciations les plus importantes selon son jugement (estimations significatives, principes comptables, présentation d'ensemble) ; pour les EIP, il présente les points clés de l'audit.",
+      "source_ref": "C. com., obligation de justifier les appréciations (ancien art. L. 823-9, renuméroté par l'ordonnance n° 2023-1142) ; NEP 702",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue4-rapport-appreciations-0005",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "justification-appreciations-points-cles",
+      "difficulty": 1,
+      "tags": [
+        "points clés de l'audit",
+        "définition"
+      ],
+      "front": "Qu'est-ce qu'un point clé de l'audit et que contient-il ?",
+      "back": "Dans le rapport sur les comptes d'une EIP, un point clé de l'audit est un risque d'anomalies significatives jugé parmi les plus importants pour l'audit de l'exercice, y compris un risque de fraude.\nIl contient : la description du risque, un résumé de la réponse du commissaire aux comptes, le cas échéant ses observations importantes, et un renvoi à l'annexe.\nCe n'est pas une opinion sur un élément isolé.",
+      "explanation": "Les points clés de l'audit sont la forme que prend la justification des appréciations dans les EIP. Les questions qui motivent une réserve ou l'incertitude significative sur la continuité d'exploitation sont traitées dans leur propre partie du rapport.",
+      "source_ref": "Règl. (UE) n° 537/2014 art. 10 §2 c ; NEP 701",
+      "verified": true,
+      "estimated_seconds": 45
+    }
+  ]
+}

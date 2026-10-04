@@ -1,0 +1,131 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-rapport-affirmation-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "lettre-affirmation",
+      "difficulty": 1,
+      "tags": [
+        "lettre d'affirmation",
+        "date",
+        "NEP 580"
+      ],
+      "statement": "À quelle date la lettre d'affirmation de la direction doit-elle être établie ?",
+      "options": [
+        "À la date de clôture de l'exercice",
+        "À la date d'arrêté des comptes par l'organe compétent",
+        "À la date de l'assemblée appelée à approuver les comptes",
+        "À une date aussi proche que possible de celle du rapport du commissaire aux comptes, sans lui être postérieure"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Les déclarations écrites doivent couvrir toute la période jusqu'à la date du rapport, notamment au regard des événements postérieurs à la clôture : la lettre est datée aussi près que possible de la date du rapport du commissaire aux comptes, et jamais après (option 4). La date de clôture (option 1) laisserait sans déclaration toute la période postérieure. La date d'arrêté des comptes (option 2) est en général antérieure de plusieurs semaines au rapport. Le rapport étant émis avant l'assemblée, une lettre datée du jour de l'assemblée (option 3) serait postérieure au rapport.",
+      "source_ref": "NEP 580 (déclarations de la direction)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-rapport-affirmation-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "lettre-affirmation",
+      "difficulty": 2,
+      "tags": [
+        "lettre d'affirmation",
+        "valeur probante",
+        "stocks"
+      ],
+      "statement": "Faute de temps, l'équipe d'audit de Givre SAS n'a pas testé la valeur nette de réalisation des stocks, qui représentent 30 % du total du bilan. Le chef de mission propose de s'appuyer sur la lettre d'affirmation, dans laquelle le président déclarera qu'aucun article n'est obsolète. Quelle appréciation porter sur cette proposition ?",
+      "options": [
+        "Elle est suffisante : la déclaration engage la direction et couvre l'assertion d'évaluation des stocks",
+        "Elle est insuffisante : la déclaration écrite complète les éléments probants mais ne dispense pas de mettre en œuvre les procédures nécessaires sur l'évaluation des stocks",
+        "Elle est suffisante, car la signature de la lettre transfère au président la responsabilité du commissaire aux comptes sur ce poste",
+        "Elle est sans objet, car une déclaration écrite ne peut porter que sur des éléments non chiffrés"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Les déclarations écrites complètent les éléments probants collectés par ailleurs ; elles ne remplacent pas les procédures que le commissaire aux comptes peut raisonnablement mettre en œuvre (option 2). Sur l'évaluation des stocks, il doit tester la valeur nette de réalisation (prix de vente postérieurs, rotation, articles obsolètes). L'option 1 est fausse : une déclaration de la direction, partie intéressée, n'est pas à elle seule un élément suffisant. L'option 3 est fausse : la responsabilité du commissaire aux comptes sur son opinion ne se transfère pas. L'option 4 est fausse : les déclarations peuvent porter sur des montants (par exemple l'incidence jugée non significative des anomalies non corrigées).",
+      "source_ref": "NEP 580 (déclarations de la direction) ; NEP 500 (caractère probant des éléments collectés)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-rapport-affirmation-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "lettre-affirmation",
+      "difficulty": 2,
+      "tags": [
+        "lettre d'affirmation",
+        "refus de la direction",
+        "limitation",
+        "opinion"
+      ],
+      "statement": "La présidente de Hêtre SA refuse de signer la lettre d'affirmation, notamment la déclaration selon laquelle toutes les opérations ont été enregistrées et toutes les informations mises à la disposition du commissaire aux comptes. Quelle est la conséquence de ce refus ?",
+      "options": [
+        "Aucune : la lettre d'affirmation est un document facultatif",
+        "Le commissaire aux comptes doit démissionner immédiatement de son mandat",
+        "Il s'agit d'un désaccord, qui conduit nécessairement à un refus de certifier",
+        "Il s'agit d'une limitation de l'étendue des travaux, dont le commissaire aux comptes tire les conséquences sur son opinion, jusqu'à l'impossibilité de certifier, en réévaluant la fiabilité des autres déclarations de la direction"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Le refus de fournir une déclaration que le commissaire aux comptes estime nécessaire prive celui-ci d'un élément qu'il juge indispensable : c'est une limitation de l'étendue de ses travaux, et non un désaccord sur une anomalie identifiée (option 4). Il en tire les conséquences sur son opinion ; s'agissant de déclarations générales comme l'exhaustivité des informations fournies, l'incidence est diffuse et peut conduire à l'impossibilité de certifier. Il réévalue aussi sa confiance dans l'intégrité de la direction et dans ses autres déclarations. L'option 1 est fausse : la NEP 580 impose de demander ces déclarations. L'option 2 est fausse : aucune démission immédiate n'est prévue, le commissaire aux comptes exprime son opinion. L'option 3 confond limitation et désaccord : le refus de certifier sanctionne une anomalie significative à effet diffus.",
+      "source_ref": "NEP 580 (déclarations de la direction) ; NEP 700 (limitation et impossibilité de certifier)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-rapport-affirmation-0004",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "lettre-affirmation",
+      "difficulty": 1,
+      "tags": [
+        "lettre d'affirmation",
+        "signataire"
+      ],
+      "statement": "La lettre d'affirmation est rédigée et signée par le commissaire aux comptes, puis transmise à la direction pour information.",
+      "answer": false,
+      "justification": "Faux : la lettre est signée par la direction et adressée au commissaire aux comptes, qui peut seulement en proposer le contenu.",
+      "explanation": "La lettre d'affirmation contient les déclarations de la direction : elle est signée par les personnes responsables de l'établissement des comptes (représentant légal et, le plus souvent, directeur financier) et adressée au commissaire aux comptes. Celui-ci peut en préparer le modèle et préciser les déclarations attendues, mais il ne la signe pas : ce serait contraire à son objet, qui est de recueillir l'engagement écrit de la direction.",
+      "source_ref": "NEP 580 (déclarations de la direction)",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue4-rapport-affirmation-0005",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "lettre-affirmation",
+      "difficulty": 2,
+      "tags": [
+        "lettre d'affirmation",
+        "anomalies non corrigées",
+        "effet d'impôt",
+        "capitaux propres"
+      ],
+      "statement": "La direction d'Iris SAS (exercice bénéficiaire clos le 31/12/N, taux d'impôt sur les sociétés 25 %) a refusé de corriger trois anomalies, dont la liste sera jointe à la lettre d'affirmation :\n1. honoraires d'avocat relatifs à N, facturés en janvier N+1 et non comptabilisés : 18 000 € HT ;\n2. prestation facturée et comptabilisée en produits en décembre N, à réaliser en mars N+1 : 26 000 € HT ;\n3. provision pour garantie surévaluée de 9 000 €.\nTous ces éléments sont fiscalement déductibles ou imposables. Calculez l'effet net cumulé de ces anomalies sur les capitaux propres au 31/12/N, après impôt. Exprimez la surévaluation en euros, arrondie à l'euro.",
+      "expected_value": 26250,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Sens de chaque anomalie sur le résultat et les capitaux propres de N : (1) charge omise → surévaluation de 18 000 € ; (2) produit de N+1 comptabilisé en N (produit constaté d'avance omis) → surévaluation de 26 000 € ; (3) provision surévaluée → sous-évaluation de 9 000 €. Effet net avant impôt : 18 000 + 26 000 − 9 000 = 35 000 € de surévaluation. Tous les éléments ayant une incidence fiscale, l'impôt de N est lui aussi surévalué de 35 000 × 25 % = 8 750 €. Effet net sur les capitaux propres : 35 000 − 8 750 = 26 250 €. Erreurs classiques : 35 000 € (oubli de l'impôt) ou 39 750 € (53 000 × 0,75, sans tenir compte du sens de la troisième anomalie). La direction joindra la liste de ces anomalies à sa lettre et déclarera que leur incidence n'est pas significative ; le commissaire aux comptes forme toutefois sa propre appréciation au regard de son seuil.",
+      "source_ref": "NEP 580 (déclarations de la direction : anomalies non corrigées) ; NEP 450 (évaluation des anomalies relevées)",
+      "verified": true,
+      "estimated_seconds": 180
+    }
+  ]
+}
