@@ -1,6 +1,6 @@
 # PROGRESS — DSCG Trainer
 
-Dernière mise à jour : 2026-10-04, fin de la session phase 4 (progression).
+Dernière mise à jour : 2026-10-04, fin de la session phase 5 (finitions, version 1.0.0).
 
 ## État par phase
 
@@ -11,7 +11,7 @@ Dernière mise à jour : 2026-10-04, fin de la session phase 4 (progression).
 | 2. Contenu UE 4 | Terminée (voir ci-dessous) |
 | 3. Contenu UE 1, 2, 3, 5, 6 | Terminée (voir ci-dessous) |
 | 4. Progression | Terminée (voir ci-dessous) |
-| 5. Finitions | À faire |
+| 5. Finitions | Terminée : version 1.0.0 (voir ci-dessous) |
 
 ## Phase 0 : ce qui est fait
 
@@ -92,6 +92,18 @@ Dernière mise à jour : 2026-10-04, fin de la session phase 4 (progression).
 - **Tests** : 164 tests verts (SM-2, statistiques, nouveaux modes, lecteur en examen et en relecture, page de session en examen et en erreurs, écran Progression avec import, semaine simulée).
 - **Smoke test dans Chromium** (build de prod, 390 px) : révision intelligente jouée, bilan, écran Progression (271 cases, 3 notions travaillées), examen blanc UE 2 lancé (51 exercices, chrono 3:00:00), aucune erreur console.
 
+## Phase 5 : ce qui est fait
+
+- **Mode sombre** (`src/lib/theme.ts`, bouton en tête de page) : préférence système, clair ou sombre, gardée dans le navigateur ; script en tête de `index.html` qui applique le thème avant le premier affichage ; couleur de barre (`theme-color`) adaptée.
+- **Recherche plein texte** (`src/engine/search.ts`, `/recherche?q=…`, icône en tête de page et raccourci « / ») dans les 271 fiches et les 1 400 exercices : accents et casse ignorés, tous les mots requis, titre prioritaire, extrait autour du mot trouvé. Page `/exercice/:id` pour jouer un exercice trouvé (tentative enregistrée hors session).
+- **« Signaler une erreur »** sous chaque correction et chaque fiche : issue GitHub pré-remplie (id, notion, référence citée, version) ; modèle d'issue « Erreur de contenu » (`.github/ISSUE_TEMPLATE/`).
+- **Accueil** : série de jours, notions à réviser, lien vers la révision intelligente et la recherche, version et licence.
+- **Performance** : un fichier JS par écran, Zod hors du fichier principal (257 ko au lieu de 569, 84 ko compressé), nombres d'exercices calculés au build. Lighthouse (mobile simulé, build de prod) : performance 97-98, accessibilité, bonnes pratiques et SEO à 100 sur l'accueil, S'entraîner, Cours, une fiche et Progression (accessibilité vérifiée aussi en mode sombre). La recherche avec requête reste lente au tout premier chargement (elle doit télécharger tout le contenu, ensuite en cache).
+- **PWA** : Lighthouse 12 n'a plus de catégorie « PWA » (supprimée par Google en 2024) ; le critère « Lighthouse PWA à 100 » a donc été vérifié autrement, dans Chromium : manifeste sans erreur, aucune erreur d'installabilité (`Page.getInstallabilityErrors`, hors le mode navigation privée du test), service worker actif, navigation et session rapide hors ligne.
+- **Contenu** : les points ouverts de fond ont été vérifiés par recherche puis relus par un sous-agent indépendant (ANC 2022-06, ANC 2026-03, ANC 2020-01, NEP 315 révisée, carry-back, LFSS 2026, fusions simplifiées, Omnibus I (UE) 2026/470, comptes d'amendes) ; écritures alignées sur le plan de comptes PCG 2025 (23 exercices et 4 fiches : 658x, 657 / 757, 6671 / 7671, 747 ; décision 27 révisée), vérifiées puis relues de la même façon. `validate:strict` : 1 400 exercices sur 1 400 vérifiés.
+- **Documentation et version** : `CONTRIBUTING.md`, `CHANGELOG.md`, README avec captures (clair et sombre, `docs/screenshots/`), version 1.0.0 (`package.json`, affichée sur l'accueil et dans les signalements).
+- **Tests** : 175 tests verts (thème, recherche, signalement, pages de recherche et d'exercice, taxonomie embarquée).
+
 ## Décisions prises (et pourquoi)
 
 1. **Programme de référence : arrêté du 4 août 2025** (BOESR n° 32 du 28/08/2025, NOR MENS2523324A). Il s'applique aux épreuves du DSCG à partir de la session 2027, celle que Max préparera ; il remplace l'arrêté du 13/02/2019.
@@ -124,7 +136,7 @@ Dernière mise à jour : 2026-10-04, fin de la session phase 4 (progression).
 
 25. **(Phase 3) Répartition des types hors UE 4** : les « 5 % de cas de conso ou d'audit » du SPEC n'ont pas d'objet hors UE 4 ; ils sont remplacés par des cas pratiques. Pas d'écritures en UE 3 et UE 6 (remplacées par des calculs ou des flashcards), 5 % seulement en UE 5. Mix retenu : UE1/UE2 40 % QCM, 15 % V-F, 15 % calculs, 10 % écritures, 15 % cas, 5 % flashcards ; UE3 40/15/25/0/15/5 ; UE5 45/15/15/5/15/5 ; UE6 40/15/15/0/15/15 (plus de flashcards, utiles pour le vocabulaire).
 26. **(Phase 3) Rattachements** : affacturage, escompte, Dailly et crédit-bail sont traités dans la notion financement-fonds-propres-obligataire (UE 2) et dans financements-court-terme pour la trésorerie.
-27. **(Phase 3) Comptes de résultat exceptionnel après le règl. ANC 2022-06** : quand une écriture utilise 67x / 77x / 687 / 787 / 7788, le compte est imposé par l'énoncé (convention explicite) et l'explication signale le remaniement de ces comptes, sans affirmer le nouveau classement.
+27. **(Phase 3, révisée en phase 5) Comptes après le règl. ANC 2022-06** : en phase 3, les comptes 67x / 77x étaient imposés par l'énoncé sans affirmer leur nouveau classement. En phase 5, les écritures ont été alignées sur le plan de comptes PCG 2025 après vérification et relecture indépendante : 6711 → 6581, 6712 → 6582, 7711 → 7581 ; cessions d'immobilisations corporelles et incorporelles 657 / 757, financières 6671 / 7671 (au lieu de 675 / 775) ; quote-part de subvention d'investissement 747 (au lieu de 777) ; 678 / 778 et 687 / 787 subsistent pour les éléments exceptionnels.
 28. **(Phase 3) Paramètres fiscaux 2026** : les taux et seuils susceptibles d'avoir changé (PFU, prélèvements sociaux, CSG) sont donnés en hypothèse dans l'énoncé ; les fiches citent les valeurs vérifiées (LF 2026 n° 2026-103, LFSS 2026).
 29. **(Phase 3) Filtrage des non vérifiés au build** (plugin Vite) en plus du filtre à l'exécution : un exercice non relu n'est jamais publié dans les fichiers JS de production.
 
@@ -134,6 +146,11 @@ Dernière mise à jour : 2026-10-04, fin de la session phase 4 (progression).
 33. **(Phase 4) Examen blanc** : la note pondère chaque exercice par sa durée estimée (proxy du barème d'un sujet réel) ; un exercice non traité vaut 0. Les réponses rédigées restent autocorrigées pendant l'épreuve (l'utilisateur doit voir le corrigé type pour cocher les points clés) ; les autres corrections sont différées à la fin. La série est tirée au lancement : un rechargement de la page en cours d'examen recommence l'épreuve (même sujet grâce à la graine, mais réponses perdues).
 34. **(Phase 4) Révision intelligente et erreurs tirées sur l'historique du moment** : la série dépend de la progression au lancement ; un rechargement en cours de session peut donc proposer une autre série (la graine de l'URL ne suffit plus à la reproduire).
 
+35. **(Phase 5) Critère « Lighthouse PWA à 100 »** : la catégorie n'existe plus depuis Lighthouse 12. Remplacé par les contrôles d'installabilité de Chromium et un test hors ligne, plus les quatre catégories restantes de Lighthouse.
+36. **(Phase 5) Recherche sans index pré-calculé** : le contenu tient en mémoire (1 400 exercices) ; le texte est normalisé une fois à l'ouverture de la page, puis chaque frappe parcourt le tableau. Pas de dépendance (type Fuse ou Lunr) : la recherche exacte par mots, accents ignorés, suffit pour des termes techniques (« IAS 16 », « carry-back »).
+37. **(Phase 5) Nombres d'exercices calculés au build** (`__EXERCISE_COUNTS__`, exercices vérifiés seulement) : les écrans s'affichent sans télécharger tout le contenu. En dev, où les exercices non vérifiés sont visibles, ces nombres peuvent être inférieurs à ce qui est jouable.
+38. **(Phase 5) Taxonomie embarquée sans relecture Zod** : validée au build (`npm run validate`) et par un test qui compare sa lecture par le schéma ; Zod n'est chargé qu'avec le contenu.
+
 ## Points ouverts / à vérifier
 
 - **Déploiement** : résolu. GitHub Pages est activé (source : GitHub Actions) et chaque push sur `main` déploie automatiquement.
@@ -141,25 +158,16 @@ Dernière mise à jour : 2026-10-04, fin de la session phase 4 (progression).
 - **Numéros d'articles PCG** des exercices d'exemple (321-5, 322-1, 323-1 à 323-6) : jugés plausibles par le relecteur, mais pas confirmés sur le texte.
 - UE 1, 5 et 6 ont moins de 5 questions par notion à la cible V1 : on peut regrouper des notions en phase 3 si c'est trop fin.
 
-- **Points de fond à faire confirmer par un humain sur les textes** (signalés par les relecteurs, formulations rendues prudentes en attendant) :
-  - correction d'erreur en PCG après le règlement ANC 2022-06 : en résultat ou en report à nouveau (fiche annexe-changements-comptables) ;
-  - référence « PCG art. 622-1 s. » pour les contrats à long terme ;
-  - en ANC 2020-01 : statut du tableau des flux et du tableau de variation des capitaux propres, et présentation des intérêts minoritaires (lot efg) ;
-  - numérotation L. 821-x des articles sur les commissaires aux comptes ;
-  - terminologie de la NEP 315 si une version révisée a été homologuée.
-  - (phase 3) référence « PCG art. 628-1 s. » (instruments financiers à terme et couverture, règl. ANC 2015-05) dans les fiches couverture-change et couverture-taux ;
-  - (phase 3) carry-back au taux de l'IS de l'exercice déficitaire (CGI art. 220 quinquies) ;
-  - (phase 3) taux des prélèvements sociaux sur les dividendes depuis la LFSS 2026 : la fiche remuneration-dirigeants-fiscal-social reste prudente (« vérifier le taux applicable ») ;
-  - (phase 3) fiche UE 4 fusion-simplifiee-tup : elle cite L. 236-11 et L. 236-3 II, numérotation probablement antérieure à l'ordonnance 2023-393 (à remplacer par « L. 236-1 et s. » si non confirmée) ;
-  - (phase 3) fiche UE 6 csr-esg-sustainability : affirmation sur l'accord « Omnibus I » fin 2025 à confirmer ; les fiches UE 2 et UE 3 s'en tiennent à la directive (UE) 2025/794 ;
-  - (phase 3) ue5-donnees-rgpd-0004 : comptes de pénalités imposés par convention, à revoir avec le classement ANC 2022-06.
+- **Points de fond** : ceux relevés en phases 2 et 3 ont été vérifiés et corrigés en phase 5 (voir « Phase 5 : ce qui est fait »). Les relecteurs n'ont pu lire la plupart des textes officiels qu'au travers de résumés de recherche (Légifrance, ANC et BOFiP bloqués par le proxy) : un contrôle humain sur les textes reste souhaitable, en priorité sur les règlements récents (ANC 2026-03, directive (UE) 2026/470) et sur le plan de comptes PCG 2025.
+- **Reprise d'un examen blanc interrompu** : un rechargement de page perd les réponses en cours (décision 33).
 
-## Prochaine étape : phase 5 (finitions)
+## Prochaine étape : après la version 1.0.0
 
-- Livrable (SPEC, « Plan de livraison ») : mode sombre, raccourcis (déjà livrés en phase 1 : 1-9 et Entrée), recherche plein texte dans les cours et exercices, bouton « signaler une erreur » qui ouvre une issue GitHub pré-remplie (id d'exercice, `source_ref`), licence (déjà en place : MIT + CC BY-SA), guide de contribution (`CONTRIBUTING.md`, en s'appuyant sur `docs/content-guide.md`), release v1.0. Critère de fin : Lighthouse PWA à 100, README avec captures. Budget indicatif : 15 $.
-- Les classes `dark:` sont déjà posées dans les composants ; il reste le basculement (préférence système + bouton) et la vérification des contrastes.
-- Pistes laissées en phase 4 : afficher sur l'accueil la série et le nombre de notions à réviser ; reprise d'un examen blanc interrompu (sauvegarde des réponses en cours).
-- Points ouverts de contenu ci-dessus : à traiter au fil de l'eau, ou avec un relecteur humain.
+Le plan de livraison du SPEC est terminé. Suite possible, selon les retours d'usage (SPEC : « marge restante pour les corrections après tes premiers jours d'utilisation ») :
+- traiter les issues ouvertes par le bouton « signaler une erreur » (corriger, faire relire, commit `content(...)` ou `fix(...)`) ;
+- contrôle humain des points listés ci-dessus ;
+- reprise d'un examen blanc interrompu (sauvegarde des réponses en cours dans IndexedDB) ;
+- enrichir les UE 1, 5 et 6, où certaines notions n'ont que 4 ou 5 exercices.
 
 ## Budget consommé (estimation)
 
@@ -168,4 +176,5 @@ Dernière mise à jour : 2026-10-04, fin de la session phase 4 (progression).
 - Phase 2 : environ 80 à 100 $ (cible SPEC : 90 $). 50 sous-agents (25 rédactions, 25 relectures), de 75 000 à 160 000 tokens chacun. Estimation grossière : le coût exact se lit avec `/cost`.
 - Phase 3 : environ 80 à 100 $ (cible SPEC : 70 $). Environ 52 sous-agents (25 rédactions, 26 relectures, plus le plugin de build), de 80 000 à 145 000 tokens chacun. Dépassement dû au volume des lots UE 1 (36-37 exercices) et aux recherches des relecteurs.
 - Phase 4 : environ 15 à 20 $ (cible SPEC : 25 $). Aucun sous-agent : travail direct (moteur, écrans, tests, smoke test).
-- Cumul estimé : environ 205 à 255 $ sur 250 $. La phase 5 (15 $) doit rester sobre : travail direct, pas de sous-agent.
+- Phase 5 : environ 20 à 30 $ (cible SPEC : 15 $, dépassement accepté pour finir proprement). 5 sous-agents (vérification des points ouverts et relecture, harmonisation des comptes ANC 2022-06 et relecture), le reste en travail direct (code, Lighthouse, captures).
+- Cumul estimé : environ 225 à 285 $ pour un budget de 250 $ (+ 15 $ de marge prévue par le SPEC).
