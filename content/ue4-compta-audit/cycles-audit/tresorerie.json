@@ -41,6 +41,860 @@
       "source_ref": "NEP 240 (prise en considération de la possibilité de fraudes) ; C. com., obligation de révélation des faits délictueux (ord. 2023-1142) ; NEP 315 ; NEP 330 ; NEP 505 (confirmations des tiers) ; NEP 265 (communication des faiblesses du contrôle interne) ; comptes 512 et 58",
       "verified": true,
       "estimated_seconds": 540
+    },
+    {
+      "id": "ue4-audit-tresorerie-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "confirmation bancaire",
+        "exhaustivité"
+      ],
+      "statement": "Dans sa demande de confirmation adressée à chaque banque de la société Orion, l'auditeur demande la liste de tous les comptes ouverts au nom de l'entité, y compris ceux dont le solde est nul et ceux clôturés au cours de l'exercice. Quelle assertion cette précision vise-t-elle principalement ?",
+      "options": [
+        "Évaluation des disponibilités",
+        "Séparation des exercices",
+        "Exhaustivité des comptes bancaires",
+        "Présentation des concours bancaires"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Demander à la banque la liste de tous les comptes, sans partir de la liste fournie par l'entité, permet de détecter un compte non enregistré en comptabilité (compte « hors livres » pouvant servir à des détournements) : c'est l'exhaustivité. L'évaluation concerne la conversion des soldes en devises ou la dépréciation des placements. La séparation des exercices porte sur la date de rattachement des opérations, non sur l'existence d'un compte. La présentation des découverts au passif n'est pas l'objet de cette précision.",
+      "source_ref": "NEP 500 (assertions sur les soldes de fin de période) ; NEP 505 (confirmations externes)",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-audit-tresorerie-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "caisse",
+        "existence"
+      ],
+      "statement": "Le 31/12/N, l'auditeur de la société Vega, qui exploite trois magasins, procède avec le caissier au comptage des espèces de chaque caisse et rapproche le montant compté du solde du compte 53. Quelle assertion ce comptage vise-t-il principalement ?",
+      "options": [
+        "Existence du solde de caisse",
+        "Droits et obligations",
+        "Exhaustivité des ventes de l'exercice",
+        "Évaluation des disponibilités en devises"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Le comptage physique vérifie que les espèces inscrites au compte 53 sont réellement présentes : c'est l'existence. Les droits et obligations portent sur la propriété ou la libre disposition des fonds, non établies par un comptage. Le comptage ne prouve pas que toutes les ventes de l'année ont été encaissées et enregistrées : une vente non saisie dont l'argent a été détourné n'apparaît ni en caisse ni en comptabilité. L'évaluation des devises n'est pas en cause pour des caisses en euros.",
+      "source_ref": "NEP 500 (assertions sur les soldes de fin de période) ; PCG compte 53",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-audit-tresorerie-0004",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-assertions",
+      "difficulty": 2,
+      "tags": [
+        "assertions",
+        "nantissement",
+        "droits et obligations",
+        "annexe"
+      ],
+      "statement": "La société Lyra détient un compte à terme de 500 000 €, classé en disponibilités. La confirmation bancaire révèle que ce compte est nanti au profit de la banque en garantie d'un emprunt contracté par une filiale ; l'annexe n'en dit rien. Quelle assertion est principalement en cause ?",
+      "options": [
+        "Existence du compte à terme",
+        "Évaluation du compte à terme",
+        "Séparation des exercices",
+        "Droits et obligations et informations fournies (fonds soumis à restriction)"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Le compte existe bien (la banque le confirme) et son montant nominal n'est pas contesté : ni l'existence ni l'évaluation ne sont en cause. Le nantissement restreint la libre disposition des fonds : l'assertion concernée est celle des droits et obligations, avec l'information à fournir en annexe sur l'engagement donné au profit de la filiale. La séparation des exercices ne joue aucun rôle ici.",
+      "source_ref": "NEP 500 (assertions : droits et obligations, présentation et informations fournies) ; PCG, informations en annexe sur les engagements financiers",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-tresorerie-0005",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "caisse",
+        "solde créditeur"
+      ],
+      "statement": "Un solde créditeur du compte caisse (53) à la clôture révèle nécessairement une anomalie, par exemple une omission d'encaissements ou un décaissement mal enregistré.",
+      "answer": true,
+      "justification": "Vrai : on ne peut pas sortir de la caisse plus d'espèces qu'elle n'en contient, un solde créditeur est donc impossible dans la réalité.",
+      "explanation": "Le compte 53 représente des espèces physiques : son solde ne peut être que débiteur ou nul. Un solde créditeur signale un encaissement non comptabilisé (exhaustivité), un décaissement enregistré deux fois ou en avance, ou une erreur d'imputation. L'auditeur en recherche la cause et vérifie qu'il ne masque pas des recettes détournées.",
+      "source_ref": "NEP 500 (existence, exhaustivité) ; PCG compte 53",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue4-audit-tresorerie-0006",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "soldes",
+        "procédures"
+      ],
+      "front": "Quelles assertions portent sur les soldes de trésorerie à la clôture, et quelle procédure type pour chacune ?",
+      "back": "Existence : confirmation bancaire, rapprochement bancaire, comptage de caisse.\nExhaustivité : confirmation listant tous les comptes (y compris soldes nuls ou clôturés), opérations du relevé non comptabilisées.\nDroits et obligations : confirmation des nantissements et garanties, information en annexe.\nÉvaluation : conversion des comptes en devises au cours de clôture.\nPrésentation : pas de compensation entre banques, découverts au passif.",
+      "explanation": "NEP 500. La confirmation bancaire est la procédure la plus polyvalente du cycle, à condition qu'elle soit envoyée et reçue par l'auditeur et qu'elle demande l'ensemble des comptes et engagements.",
+      "source_ref": "NEP 500 (assertions relatives aux soldes de fin de période) ; NEP 505",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-tresorerie-0007",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-risques",
+      "difficulty": 1,
+      "tags": [
+        "risques",
+        "séparation des tâches",
+        "fraude"
+      ],
+      "statement": "Parmi les situations suivantes relevées chez la société Hydra, laquelle constitue le facteur de risque de fraude le plus direct dans le cycle trésorerie ?",
+      "options": [
+        "La société travaille avec deux banques",
+        "La même personne prépare les virements et établit les rapprochements bancaires",
+        "Les relevés bancaires sont reçus sous format électronique",
+        "Les excédents de trésorerie sont placés sur des comptes à terme à taux fixe"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Une personne qui peut émettre un paiement et établir elle-même le rapprochement peut à la fois détourner des fonds et dissimuler l'opération dans les suspens : c'est un cumul de fonctions incompatibles, facteur de risque de fraude typique. Avoir deux banques est banal et n'augmente que marginalement le risque. Les relevés électroniques ne sont pas en soi un facteur de risque. Des placements à taux fixe posent au plus une question d'évaluation, sans lien avec la fraude.",
+      "source_ref": "NEP 240 (facteurs de risque de fraude) ; NEP 315",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-audit-tresorerie-0008",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "covenant",
+        "window dressing",
+        "séparation des exercices"
+      ],
+      "statement": "La société Draco a souscrit un emprunt assorti d'une covenant : le ratio dette financière nette / EBITDA, calculé sur les comptes au 31/12/N, ne doit pas dépasser 3. Le ratio ressort à 2,95. Dans le cycle trésorerie, quelle anomalie est la plus cohérente avec cette incitation ?",
+      "options": [
+        "Chèques fournisseurs comptabilisés le 31/12/N mais conservés et envoyés en janvier N+1",
+        "Placements de trésorerie dépréciés au-delà de la perte réelle",
+        "Frais bancaires de décembre comptabilisés deux fois",
+        "Encaissements clients reçus début janvier N+1 rattachés au 31/12/N"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "La dette nette est égale aux dettes financières diminuées de la trésorerie : rattacher à N des encaissements de N+1 gonfle la trésorerie de clôture et améliore le ratio, juste sous le plafond. Des chèques comptabilisés mais conservés diminuent la trésorerie et dégradent donc le ratio, à l'inverse de l'incitation. Une dépréciation excessive des placements ou des frais comptabilisés deux fois réduiraient eux aussi la trésorerie ou le résultat, ce qui va contre l'intérêt de la direction.",
+      "source_ref": "NEP 240 (incitations et pressions) ; NEP 315 ; NEP 500 (séparation des exercices)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-audit-tresorerie-0009",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "fraude",
+        "seuil de signification"
+      ],
+      "statement": "Un détournement de trésorerie de 8 000 € découvert chez une société dont le seuil de signification est de 150 000 € peut être laissé sans suite par l'auditeur, puisqu'il est très inférieur au seuil.",
+      "answer": false,
+      "justification": "Faux : une fraude a une dimension qualitative ; quel que soit son montant, l'auditeur doit en tirer les conséquences.",
+      "explanation": "Le seuil de signification sert à apprécier les erreurs ; une fraude, même faible, met en cause la fiabilité du contrôle interne et peut révéler d'autres détournements. L'auditeur réévalue son évaluation des risques, étend ses procédures, communique avec la direction et la gouvernance (NEP 240) et apprécie si les faits relèvent de la révélation au procureur de la République prévue par le Code de commerce.",
+      "source_ref": "NEP 240 (fraude) ; NEP 450 (évaluation des anomalies relevées)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-audit-tresorerie-0010",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "procédures analytiques",
+        "produits financiers"
+      ],
+      "statement": "Lors de la planification, l'auditeur de la société Cetus construit une attente de produits financiers. Un compte à terme de 1 200 000 € est détenu toute l'année N au taux annuel de 3 %. Un second compte à terme de 900 000 € a été souscrit le 01/07/N au taux annuel de 3,6 %. Aucun autre placement n'existe. Les intérêts comptabilisés en produits de N (intérêts courus inclus) s'élèvent à 38 500 €. Calculez l'écart non expliqué entre l'attente et le montant comptabilisé (en euros, arrondi à l'euro).",
+      "expected_value": 13700,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Produits attendus = 1 200 000 × 3 % + 900 000 × 3,6 % × 6/12 = 36 000 + 16 200 = 52 200 €. Écart non expliqué = 52 200 − 38 500 = 13 700 €. Oublier le prorata de détention du second compte donnerait une attente de 68 400 € et un écart de 29 900 €. L'écart oriente vers l'existence des placements (fonds retirés ou détournés), un taux erroné ou l'omission des intérêts courus à recevoir : l'auditeur l'investigue.",
+      "source_ref": "NEP 315 (procédures analytiques de planification) ; NEP 520 ; PCG compte 768",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue4-audit-tresorerie-0011",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-risques",
+      "difficulty": 1,
+      "tags": [
+        "risques",
+        "fraude",
+        "schémas"
+      ],
+      "front": "Pourquoi le cycle trésorerie présente-t-il un risque élevé de fraude, et quels en sont les schémas types ?",
+      "back": "Les fonds sont liquides, directement détournables, et le cycle concentre les flux de tous les autres.\nSchémas : encaissements non remis en banque, paiements fictifs, faux changement de RIB fournisseur, fraude au président, détournement caché dans des suspens « divers », compte bancaire hors livres.\nPrésentation flatteuse : encaissements de N+1 rattachés à N, cavalerie entre comptes.",
+      "explanation": "NEP 240. Facteurs aggravants : cumul de fonctions incompatibles, absence de revue des rapprochements, habilitations larges sur la banque en ligne. La révélation des faits délictueux relève du Code de commerce.",
+      "source_ref": "NEP 240 (fraude) ; NEP 315",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-tresorerie-0012",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-controles-cles",
+      "difficulty": 1,
+      "tags": [
+        "contrôles clés",
+        "changement de RIB",
+        "fraude au faux fournisseur"
+      ],
+      "statement": "La société Lepus reçoit régulièrement des courriels de fournisseurs annonçant un changement de coordonnées bancaires. Quel contrôle prévient le mieux une fraude au faux changement de RIB ?",
+      "options": [
+        "Vérifier que le courriel provient bien du nom de domaine habituel du fournisseur",
+        "Rappeler un interlocuteur connu du fournisseur, au numéro figurant au dossier, avant toute modification du RIB",
+        "Établir chaque mois le rapprochement bancaire",
+        "Demander chaque année au fournisseur de confirmer le solde de son compte"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le contre-appel par un canal indépendant du message reçu, auprès d'un contact déjà connu, empêche la modification frauduleuse avant tout paiement : c'est un contrôle préventif. Le nom de domaine peut être usurpé ou la messagerie du fournisseur piratée. Le rapprochement bancaire ne détecte rien : le virement vers le faux RIB apparaît normalement sur le relevé. La confirmation annuelle de solde ne révèle la fraude qu'a posteriori, quand le préjudice est consommé.",
+      "source_ref": "NEP 315 (compréhension du contrôle interne) ; NEP 240",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-audit-tresorerie-0013",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "contrôles clés",
+        "rapprochement bancaire",
+        "séparation des tâches"
+      ],
+      "statement": "Chez la société Corvus, la trésorière saisit et valide les virements et établit aussi le rapprochement bancaire mensuel. Le DAF signe le rapprochement sans examiner les suspens. Quelle mesure corrige le mieux cette faiblesse ?",
+      "options": [
+        "Faire établir le rapprochement chaque semaine par la trésorière",
+        "Relever le seuil au-delà duquel une double signature est exigée",
+        "Confier le rapprochement à une personne sans accès aux paiements et faire examiner les suspens, pièces à l'appui, par le DAF",
+        "Demander au commissaire aux comptes d'établir lui-même les rapprochements mensuels"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "La faiblesse tient au cumul paiement / rapprochement et à une revue de pure forme : seule une personne indépendante des paiements, avec une revue effective des suspens, rétablit un contrôle détectif fiable. Un rapprochement plus fréquent par la même personne ne supprime pas le cumul. Relever le seuil de double signature affaiblit le contrôle au lieu de le renforcer. Le commissaire aux comptes ne peut pas exercer une tâche de gestion de l'entité qu'il audite : son indépendance serait compromise.",
+      "source_ref": "NEP 315 ; NEP 265 (communication des faiblesses du contrôle interne)",
+      "verified": true,
+      "estimated_seconds": 70
+    },
+    {
+      "id": "ue4-audit-tresorerie-0014",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "contrôles clés",
+        "tests de procédures",
+        "intérim"
+      ],
+      "statement": "Si le contrôle de double validation des virements a été testé sans exception lors de l'intérim en septembre, l'auditeur peut s'appuyer sur ce contrôle pour tout l'exercice sans aucune procédure complémentaire sur la période d'octobre à décembre.",
+      "answer": false,
+      "justification": "Faux : l'auditeur doit obtenir des éléments sur la période restant à courir jusqu'à la clôture.",
+      "explanation": "Un test d'intérim ne prouve l'efficacité du contrôle que sur la période testée. L'auditeur s'informe des changements intervenus ensuite (logiciel, personnes, procédures) et, selon le risque et la durée restante, met en œuvre des tests complémentaires sur la fin de l'exercice (NEP 330).",
+      "source_ref": "NEP 330 (procédures mises en œuvre en réponse à l'évaluation des risques : contrôles testés en cours d'exercice)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-audit-tresorerie-0015",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "contrôles clés",
+        "échantillonnage",
+        "tests de procédures"
+      ],
+      "statement": "L'auditeur de la société Aquila veut tester le contrôle de double validation des virements supérieurs à 15 000 € (3 200 virements sur l'exercice). Il retient un niveau de confiance de 90 % (facteur de confiance R = 2,3), un taux d'écart tolérable de 4 % et ne prévoit aucun écart. Avec l'approximation n = R / TET, combien de virements doit-il tester (nombre entier, arrondi à l'entier supérieur) ?",
+      "expected_value": 58,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "virements",
+      "decimals": 0,
+      "explanation": "n = 2,3 / 0,04 = 57,5, arrondi à l'entier supérieur : 58 virements. La taille de la population (3 200) n'intervient pratiquement pas pour une grande population. Retenir le facteur de 95 % (R = 3) donnerait 75 ; arrondir à l'entier inférieur (57) n'atteindrait pas le niveau de confiance visé. Cette formule est une pratique de cabinet, la NEP 530 n'imposant aucune méthode de calcul.",
+      "source_ref": "NEP 330 (tests de procédures) ; NEP 530 (sélection des éléments à contrôler, approche statistique de pratique)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue4-audit-tresorerie-0016",
+      "type": "audit_case",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "contrôles clés",
+        "banque en ligne",
+        "habilitations",
+        "tests de procédures",
+        "intérim"
+      ],
+      "title": "Double validation des virements après un changement de logiciel",
+      "cycle": "tresorerie",
+      "situation": "Vous auditez les comptes au 31/12/N de Kappa, ETI de négoce (chiffre d'affaires 85 M€, sept comptes bancaires dans quatre banques, trésorerie de 9 M€ à la clôture). Le service trésorerie prépare les virements ; tout virement supérieur à 20 000 € doit être validé dans l'outil de communication bancaire par deux signataires distincts. Les rapprochements bancaires mensuels sont établis par le contrôle de gestion, qui n'a pas accès aux paiements, et visés par le DAF. Lors de l'intérim de septembre N, vous avez testé 40 virements supérieurs à 20 000 € de janvier à août : aucune exception. En octobre N, l'outil de communication bancaire a été remplacé ; les habilitations y ont été paramétrées par le prestataire informatique. Fin novembre N, l'un des deux trésoriers signataires a quitté l'entreprise. Le seuil de signification est fixé à 400 000 €.",
+      "assertions": [
+        "Réalité des décaissements",
+        "Existence des disponibilités",
+        "Exhaustivité des comptes bancaires"
+      ],
+      "procedures": {
+        "options": [
+          "Revoir les habilitations paramétrées dans le nouvel outil (droits de validation, plafonds, désactivation du compte du trésorier parti) et tester la double validation sur un échantillon de virements d'octobre à décembre N",
+          "Étendre l'échantillon de l'intérim de 40 à 80 virements sur la période de janvier à août N",
+          "Adresser des demandes de confirmation à toutes les banques, portant sur les comptes, les soldes, les signataires habilités et les engagements",
+          "S'appuyer sur l'attestation du prestataire indiquant que le paramétrage est conforme au cahier des charges, sans autre vérification",
+          "Obtenir les rapprochements bancaires au 31/12/N visés par le DAF, justifier les suspens et vérifier leur dénouement sur les relevés de N+1",
+          "Assister à l'inventaire physique des marchandises au 31/12/N"
+        ],
+        "answer": [
+          0,
+          2,
+          4
+        ]
+      },
+      "risk": {
+        "options": [
+          "Faible",
+          "Modéré",
+          "Élevé"
+        ],
+        "answer": 1,
+        "rationale": "Le contrôle interne est bien conçu (double validation, rapprochements indépendants et revus) et le test d'intérim n'a révélé aucune exception, ce qui écarte un risque élevé. Mais deux changements sont intervenus après l'intérim : le nouvel outil, dont les habilitations ont été paramétrées par un tiers, et le départ d'un signataire, dont les droits ont pu rester actifs ou ne pas être réattribués. L'efficacité du contrôle n'est donc pas démontrée sur le dernier trimestre, pour une trésorerie significative : le risque est modéré. Aucun indice de fraude ne figure dans les faits."
+      },
+      "conclusion": {
+        "model_answer": "Les tests de procédures de l'intérim ont été complétés par une revue des habilitations du nouvel outil et par un test de la double validation sur le dernier trimestre ; associés aux confirmations bancaires et au contrôle des rapprochements au 31/12/N, ils nous permettent de conclure, si aucune exception n'est relevée, que la double validation a fonctionné sur tout l'exercice et que l'existence des disponibilités et l'exhaustivité des comptes bancaires sont établies. Toute anomalie de paramétrage (signataire parti encore habilité, validation unique possible) serait communiquée à la direction et, si elle constitue une faiblesse significative, à l'organe chargé de la gouvernance (NEP 265), et conduirait à renforcer les procédures substantives sur les décaissements du trimestre.",
+        "key_points": [
+          "Couvrir la période postérieure à l'intérim affectée par le changement d'outil et le départ du signataire",
+          "Ne pas se fonder sur la seule attestation du prestataire",
+          "S'appuyer sur des éléments externes (confirmations) et sur les rapprochements de clôture",
+          "Prévoir la communication d'une éventuelle faiblesse et l'extension des tests substantifs"
+        ]
+      },
+      "explanation": "Le test d'intérim ne couvre que janvier-août ; le remplacement de l'outil et le départ d'un signataire modifient précisément le contrôle sur lequel l'auditeur veut s'appuyer. Il doit donc vérifier le paramétrage (habilitations, plafonds, compte du partant) et retester la double validation sur octobre-décembre (NEP 330). Étendre l'échantillon sur janvier-août n'apporte rien sur la période modifiée. L'attestation du prestataire, qui a lui-même réalisé le paramétrage, n'est pas suffisante seule. Les confirmations bancaires et le contrôle des rapprochements de clôture restent des procédures substantives de base. L'inventaire des marchandises relève du cycle stocks.",
+      "source_ref": "NEP 315 ; NEP 330 (contrôles testés en cours d'exercice) ; NEP 505 (confirmations externes) ; NEP 265",
+      "verified": true,
+      "estimated_seconds": 480
+    },
+    {
+      "id": "ue4-audit-tresorerie-0017",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "rapprochement bancaire",
+        "suspens"
+      ],
+      "statement": "L'état de rapprochement bancaire de la société Pavo au 31/12/N comporte les suspens suivants. Lequel appelle une écriture de régularisation dans les comptes de Pavo au 31/12/N ?",
+      "options": [
+        "Prélèvement de la prime d'assurance du 30/12/N, figurant sur le relevé mais non comptabilisé",
+        "Chèque fournisseur émis et comptabilisé le 28/12/N, débité par la banque le 05/01/N+1",
+        "Remise de chèques clients comptabilisée le 31/12/N, créditée par la banque le 02/01/N+1",
+        "Chèque émis et comptabilisé le 29/12/N, débité le 04/01/N+1"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Le prélèvement a été exécuté par la banque en N : l'opération est réelle et manque dans les comptes de Pavo, qui doit l'enregistrer (charge d'assurance, crédit 512). Les deux chèques émis en fin d'année et la remise du 31/12 sont correctement comptabilisés par Pavo ; ce sont des décalages de traitement bancaire, qui se dénouent d'eux-mêmes sur les relevés de janvier et n'appellent aucune écriture.",
+      "source_ref": "NEP 330 ; PCG compte 512",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-tresorerie-0018",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "confirmation bancaire",
+        "engagements hors bilan"
+      ],
+      "statement": "Dans ses demandes de confirmation bancaire, l'auditeur de la société Ara demande aussi aux banques la liste des cautions données, des nantissements et des effets escomptés non échus. Quel est l'objectif principal de cette demande ?",
+      "options": [
+        "Vérifier le calcul des agios facturés sur l'exercice",
+        "Évaluer les valeurs mobilières de placement à leur cours de clôture",
+        "Respecter une obligation de la NEP 505, qui impose la confirmation des engagements dans tous les audits",
+        "S'assurer de l'exhaustivité des engagements à mentionner en annexe et identifier d'éventuels passifs"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Les engagements hors bilan (cautions, nantissements, effets escomptés non échus dont l'entité reste garante) n'apparaissent pas dans les comptes de bilan : la confirmation par la banque, source externe, permet de vérifier que l'annexe est complète et de repérer un risque de passif (appel en garantie). Les agios se contrôlent sur les relevés et par procédures analytiques. L'évaluation des VMP repose sur les cours de clôture, non sur cette demande. La NEP 505 encadre la mise en œuvre des confirmations quand l'auditeur décide d'y recourir ; elle n'impose pas leur contenu dans tous les audits.",
+      "source_ref": "NEP 505 (confirmations externes) ; NEP 500 ; PCG, informations en annexe sur les engagements financiers",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-tresorerie-0019",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "rapprochement bancaire",
+        "solde 512"
+      ],
+      "statement": "L'auditeur de la société Grus refait le rapprochement bancaire au 31/12/N. Le relevé bancaire présente un solde créditeur de 48 650 € en faveur de Grus. Suspens identifiés : chèques émis et comptabilisés non encore débités (6 200 € et 3 480 €) ; remise de chèques comptabilisée le 31/12 non encore créditée (5 900 €) ; prélèvement d'électricité de 1 150 € et frais bancaires de 85 € figurant sur le relevé mais non comptabilisés ; virement d'un client de 2 400 € reçu le 30/12 et non comptabilisé. Après ces suspens, le rapprochement est équilibré. Quel est le solde débiteur du compte 512 dans les livres de Grus avant régularisation (en euros) ?",
+      "expected_value": 43705,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Solde bancaire corrigé = 48 650 − 6 200 − 3 480 + 5 900 = 44 870 €. Le solde comptable corrigé doit être égal : solde 512 − 1 150 − 85 + 2 400 = 44 870, d'où solde 512 = 44 870 − 1 165 = 43 705 €. Inverser le sens des suspens côté comptabilité donnerait 46 035 € ; les reporter du côté banque mélangerait les deux soldes. Rappel : un solde créditeur au relevé correspond à un solde débiteur du 512.",
+      "source_ref": "NEP 330 ; PCG compte 512",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue4-audit-tresorerie-0020",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "intérêts courus",
+        "frais bancaires",
+        "ajustement proposé"
+      ],
+      "statement": "Lors de l'audit des comptes au 31/12/N de la société Tucana, l'auditeur relève trois omissions : (1) des frais de tenue de compte de décembre de 180 €, exonérés de TVA, prélevés le 31/12/N et non comptabilisés ; (2) les agios du quatrième trimestre sur le découvert, 1 240 €, débités par la banque le 05/01/N+1 et non comptabilisés en N ; (3) les intérêts courus sur un emprunt de 400 000 € au taux annuel de 3,6 %, dont l'échéance annuelle d'intérêts tombe le 31/08, non comptabilisés. Passez l'écriture d'ajustement proposée au 31/12/N, en une seule écriture (une ligne par compte). Utilisez 627 pour les frais, 661 pour l'ensemble des intérêts, 5186 (intérêts courus à payer) pour les intérêts courus sur le découvert et 1688 pour ceux de l'emprunt.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "627",
+          "label": "Services bancaires et assimilés",
+          "debit": 180,
+          "credit": 0
+        },
+        {
+          "account": "661",
+          "label": "Charges d'intérêts",
+          "debit": 6040,
+          "credit": 0
+        },
+        {
+          "account": "512",
+          "label": "Banque",
+          "debit": 0,
+          "credit": 180
+        },
+        {
+          "account": "5186",
+          "label": "Intérêts courus à payer (découvert)",
+          "debit": 0,
+          "credit": 1240
+        },
+        {
+          "account": "1688",
+          "label": "Intérêts courus sur emprunt",
+          "debit": 0,
+          "credit": 4800
+        }
+      ],
+      "explanation": "Frais de décembre : déjà prélevés, ils diminuent le compte 512 (180 €). Agios du T4 : charge de N non encore débitée, donc dette d'intérêts courus à payer en 5186 (1 240 €). Intérêts courus sur l'emprunt du 01/09 au 31/12, soit 4 mois : 400 000 × 3,6 % × 4/12 = 4 800 €, en 1688. Total 661 = 1 240 + 4 800 = 6 040 €. Créditer 512 pour les agios serait une erreur : ils n'ont été débités qu'en N+1. Compter 8 mois (depuis le 01/01) donnerait 9 600 €.",
+      "source_ref": "PCG comptes 5186 (intérêts courus à payer), 1688 (intérêts courus sur emprunts), 627, 661 ; NEP 330",
+      "verified": true,
+      "estimated_seconds": 270
+    },
+    {
+      "id": "ue4-audit-tresorerie-0021",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-procedures-substantives",
+      "difficulty": 3,
+      "tags": [
+        "procédures substantives",
+        "rapprochement bancaire",
+        "suspens",
+        "séparation des exercices"
+      ],
+      "title": "Analyse des suspens bancaires chez Sigma",
+      "context": "Vous auditez les comptes au 31/12/N de la SA Sigma, distributeur de pièces détachées.\nSeuil de signification : 40 000 € ; seuil des anomalies manifestement insignifiantes : 2 000 €.\nAu 31/12/N, le compte 512 présente un solde débiteur de 168 990 € ; le relevé bancaire, obtenu directement auprès de la banque, un solde créditeur de 171 050 €.\nL'état de rapprochement établi par Sigma, équilibré, comporte les suspens suivants :\n- chèque n° 4512 émis le 27/12/N : 9 600 € ;\n- chèque n° 4398 émis le 12/05/N : 4 300 € ;\n- remise de chèques clients comptabilisée le 31/12/N : 23 800 € ;\n- frais bancaires du quatrième trimestre prélevés le 31/12/N, exonérés de TVA, non comptabilisés : 640 € ;\n- virement du client Delta reçu le 30/12/N, non comptabilisé : 12 600 €.\nVos contrôles sur les relevés de N+1 montrent :\n- le chèque n° 4512 a été débité le 06/01/N+1 ;\n- le chèque n° 4398 n'a jamais été encaissé : le fournisseur ne l'a pas reçu et a été réglé une seconde fois par virement en juin N, virement comptabilisé au débit du compte 401 ;\n- sur la remise du 31/12/N, seuls 15 800 € ont été crédités le 03/01/N+1 ; les 8 000 € restants correspondent à un chèque du client Kappa reçu par courrier le 10/01/N+1.",
+      "sub_questions": [
+        {
+          "id": "q1-solde-correct",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Quel est le solde correct du compte 512 au 31/12/N, après prise en compte de l'ensemble de vos constats (en euros) ?",
+          "expected_value": 177250,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Côté comptabilité : 168 990 − 640 + 12 600 + 4 300 (annulation du chèque 4398) − 8 000 (chèque Kappa reçu en N+1) = 177 250 €. Contrôle côté banque : 171 050 − 9 600 (chèque 4512, seul chèque réellement en circulation) + 15 800 (seule part de la remise réellement déposée en N) = 177 250 €. Se limiter aux régularisations de l'état de Sigma donnerait 180 950 €."
+        },
+        {
+          "id": "q2-cheque-ancien",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Quel traitement retenir pour le chèque n° 4398 ?",
+          "options": [
+            "Le maintenir en suspens jusqu'à son encaissement éventuel",
+            "L'annuler par un débit du 512 et un crédit du 401, la dette ayant été réglée par virement",
+            "Constater une charge exceptionnelle de 4 300 € par le crédit du 512",
+            "L'annuler par un débit du 512 et un crédit d'un compte de produit"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Le chèque n'a jamais été reçu et la dette a été éteinte par le virement de juin : le paiement est enregistré deux fois et le compte 401 du fournisseur est débiteur de 4 300 €. L'annulation (débit 512, crédit 401) corrige les deux comptes. Le maintenir en suspens minore la trésorerie à tort. Il n'y a ni charge ni produit : la seule erreur est un double enregistrement du règlement."
+        },
+        {
+          "id": "q3-ecriture",
+          "kind": "journal_entry",
+          "points": 3,
+          "prompt": "Passez, en une seule écriture (une ligne par compte), la régularisation des deux opérations figurant sur le relevé mais non comptabilisées par Sigma (frais bancaires et virement Delta).",
+          "date": "31/12/N",
+          "entries": [
+            {
+              "account": "512",
+              "label": "Banque (12 600 − 640)",
+              "debit": 11960,
+              "credit": 0
+            },
+            {
+              "account": "627",
+              "label": "Services bancaires",
+              "debit": 640,
+              "credit": 0
+            },
+            {
+              "account": "411",
+              "label": "Client Delta",
+              "debit": 0,
+              "credit": 12600
+            }
+          ],
+          "explanation": "Le virement Delta augmente la banque et solde la créance (crédit 411, 12 600 €) ; les frais sont une charge de N (débit 627, 640 €). Le compte 512 est mouvementé pour le net : 12 600 − 640 = 11 960 € au débit."
+        },
+        {
+          "id": "q4-conclusion",
+          "kind": "open",
+          "points": 4,
+          "prompt": "Récapitulez les anomalies relevées, leur incidence sur les comptes et vos suites auprès de la direction.",
+          "model_answer": "Opérations non comptabilisées : frais de 640 € (résultat surévalué de 640 €) et virement Delta de 12 600 € (trésorerie minorée, créances surévaluées, sans effet sur le résultat). Chèque 4398 : double enregistrement d'un paiement, trésorerie minorée de 4 300 € et compte fournisseur débiteur à tort. Remise du 31/12 : un chèque de 8 000 € reçu en N+1 a été rattaché à N ; trésorerie surévaluée et créances minorées de 8 000 €, sans effet sur le résultat. Ces anomalies dépassent le seuil des anomalies manifestement insignifiantes mais restent très inférieures au seuil de signification ; l'auditeur demande leur correction à la direction. L'enregistrement anticipé d'un encaissement est une erreur de séparation qui peut traduire une volonté d'améliorer la trésorerie de clôture : l'auditeur étend ses tests aux autres remises de fin d'année. Le suspens de mai, non analysé pendant sept mois, révèle une revue insuffisante des rapprochements, faiblesse à communiquer à la direction (NEP 265).",
+          "key_points": [
+            "Incidence sur le résultat limitée aux frais de 640 €",
+            "Chèque 4398 : double paiement à annuler (512 / 401)",
+            "Chèque Kappa : encaissement de N+1 rattaché à N, extension des tests de coupure",
+            "Comparaison aux seuils et demande de correction",
+            "Communication de la faiblesse de revue des rapprochements"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Le cas montre qu'un état de rapprochement équilibré ne prouve rien tant que chaque suspens n'a pas été rapproché de son dénouement en N+1 : un chèque ancien jamais encaissé et une remise partiellement fictive au 31/12 se cachaient derrière des suspens apparemment normaux. Les anomalies sont ensuite évaluées au regard des seuils (NEP 450) et la faiblesse de contrôle est communiquée (NEP 265).",
+      "source_ref": "NEP 330 ; NEP 450 (évaluation des anomalies relevées) ; NEP 265 ; PCG comptes 512, 401, 411, 627",
+      "verified": true,
+      "estimated_seconds": 900
+    },
+    {
+      "id": "ue4-audit-tresorerie-0022",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-pieges",
+      "difficulty": 1,
+      "tags": [
+        "pièges",
+        "compensation",
+        "découvert",
+        "présentation"
+      ],
+      "statement": "Au 31/12/N, la société Mensa présente un solde de 120 000 € en sa faveur à la banque A et un découvert de 45 000 € à la banque B. Comment ces soldes doivent-ils figurer au bilan ?",
+      "options": [
+        "Disponibilités pour 75 000 € à l'actif",
+        "Disponibilités pour 120 000 € à l'actif et 45 000 € en emprunts et dettes auprès des établissements de crédit au passif",
+        "Disponibilités pour 120 000 € à l'actif et 45 000 € en dettes fournisseurs au passif",
+        "Disponibilités pour 75 000 € à l'actif, avec le détail des deux comptes en annexe"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le Code de commerce interdit toute compensation entre postes d'actif et de passif : le solde positif reste en disponibilités, le découvert est une dette envers un établissement de crédit. Présenter le net de 75 000 €, même avec un détail en annexe, viole ce principe et masque l'endettement bancaire. Le découvert n'est pas une dette fournisseur.",
+      "source_ref": "C. com. art. L123-19 (interdiction de compensation) ; PCG, modèles de bilan (emprunts et dettes auprès des établissements de crédit)",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-audit-tresorerie-0023",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-pieges",
+      "difficulty": 3,
+      "tags": [
+        "pièges",
+        "chèques émis non envoyés",
+        "window dressing",
+        "ratios"
+      ],
+      "statement": "Le 30/12/N, la société Indus a émis et comptabilisé des chèques fournisseurs pour 140 000 €, mais les a conservés au coffre et ne les a envoyés que le 15/01/N+1. Avant correction, l'actif circulant s'élève à 1 000 000 € et les dettes à court terme à 800 000 €. Quelles affirmations sont exactes ? (plusieurs réponses possibles)",
+      "options": [
+        "Les disponibilités sont minorées de 140 000 €",
+        "Les dettes fournisseurs sont minorées de 140 000 €",
+        "Le résultat de l'exercice est minoré de 140 000 €",
+        "Le ratio de liquidité générale (actif circulant / dettes à court terme) n'est pas affecté, l'actif et le passif diminuant du même montant"
+      ],
+      "answer": [
+        0,
+        1
+      ],
+      "multiple": true,
+      "explanation": "Au 31/12/N, les chèques sont toujours en possession d'Indus : les fonds sont disponibles et les dettes non réglées. La comptabilisation anticipée minore donc les disponibilités et les dettes fournisseurs de 140 000 € chacune (options 1 et 2) ; il faut contre-passer (débit 512, crédit 401). Le résultat n'est pas touché, aucune charge ni produit n'étant en cause. Le ratio de liquidité générale est modifié : 1 000 000 / 800 000 = 1,25 tel que présenté, contre 1 140 000 / 940 000 ≈ 1,21 après correction ; une diminution égale de l'actif et du passif améliore un ratio supérieur à 1. L'auditeur détecte ce montage en rapprochant les dates d'émission des chèques de leurs dates de débit sur les relevés de N+1.",
+      "source_ref": "NEP 500 (séparation des exercices, existence) ; NEP 240 ; PCG comptes 401, 512",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue4-audit-tresorerie-0024",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-pieges",
+      "difficulty": 2,
+      "tags": [
+        "pièges",
+        "devises",
+        "écart de change",
+        "disponibilités"
+      ],
+      "statement": "À la clôture, le gain latent de change constaté sur un compte bancaire en dollars est comptabilisé en produits de l'exercice.",
+      "answer": true,
+      "justification": "Vrai : les liquidités en devises sont converties au cours de clôture et l'écart, gain ou perte, est porté directement en résultat (766 ou 666).",
+      "explanation": "Les créances et dettes en devises suivent un régime asymétrique : écarts inscrits en 476 / 477, gain latent non comptabilisé en résultat, perte latente couverte par une provision. Les disponibilités en devises échappent à ce régime : le PCG prévoit leur conversion au dernier cours de clôture avec inscription directe de l'écart en résultat, que ce soit un gain ou une perte.",
+      "source_ref": "PCG, règles de conversion des liquidités en devises à la clôture (règl. ANC 2014-03) ; PCG comptes 666, 766",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-audit-tresorerie-0025",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-pieges",
+      "difficulty": 3,
+      "tags": [
+        "pièges",
+        "devises",
+        "écart de change",
+        "résultat financier"
+      ],
+      "statement": "Au 31/12/N, la société Norma détient deux comptes bancaires en devises : 230 000 USD, inscrits en comptabilité pour une contre-valeur de 214 500 €, et 80 000 GBP, inscrits pour 92 000 €. Cours de clôture : 1 € = 1,12 USD et 1 € = 0,84 GBP. Quelle est l'incidence nette de la conversion de ces comptes sur le résultat de N (montant positif pour un gain, négatif pour une perte ; en euros, arrondi à l'euro) ?",
+      "expected_value": -5905,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Compte USD : 230 000 / 1,12 = 205 357,14 € ; perte = 205 357,14 − 214 500 = −9 142,86 €. Compte GBP : 80 000 / 0,84 = 95 238,10 € ; gain = 95 238,10 − 92 000 = +3 238,10 €. Les deux écarts sont portés en résultat (666 et 766) : incidence nette = −9 142,86 + 3 238,10 = −5 904,76 €, soit −5 905 €. Ne retenir que la perte, par prudence comme pour les créances, donnerait −9 143 € ; multiplier au lieu de diviser par le cours fausserait entièrement le calcul.",
+      "source_ref": "PCG, règles de conversion des liquidités en devises à la clôture (règl. ANC 2014-03) ; PCG comptes 5124, 666, 766",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue4-audit-tresorerie-0026",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-pieges",
+      "difficulty": 3,
+      "tags": [
+        "pièges",
+        "virements internes",
+        "devises",
+        "écart de change",
+        "ajustement proposé"
+      ],
+      "statement": "Au 31/12/N, l'auditeur de la société Fornax relève deux points. (1) Le compte 580 présente un solde débiteur de 15 000 € : un virement du compte en euros de la banque A vers le compte en euros de la banque B a été exécuté le 31/12/N ; la sortie de A est comptabilisée, mais l'arrivée sur B, qui figure sur le relevé de B au 31/12/N, ne l'est pas. (2) Le compte en dollars, de 96 000 USD, est inscrit pour 88 400 € ; le cours de clôture est de 1 € = 1,12 USD et aucune écriture de conversion n'a été passée. Passez l'écriture d'ajustement proposée au 31/12/N, en une seule écriture. Utilisez 5121 pour le compte en euros de la banque B, 5124 pour le compte en dollars et 666 pour l'écart de change (montants arrondis au centime).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "5121",
+          "label": "Banque B (euros)",
+          "debit": 15000,
+          "credit": 0
+        },
+        {
+          "account": "580",
+          "label": "Virements internes",
+          "debit": 0,
+          "credit": 15000
+        },
+        {
+          "account": "666",
+          "label": "Pertes de change",
+          "debit": 2685.71,
+          "credit": 0
+        },
+        {
+          "account": "5124",
+          "label": "Banque (dollars)",
+          "debit": 0,
+          "credit": 2685.71
+        }
+      ],
+      "explanation": "(1) Le virement est arrivé sur B en N : on débite le compte de B et on solde le compte de passage 580, qui doit être nul à la clôture. (2) Contre-valeur au cours de clôture : 96 000 / 1,12 = 85 714,29 € ; perte = 88 400 − 85 714,29 = 2 685,71 €, portée directement en charges financières (666) par le crédit du compte bancaire. Pour une disponibilité, on n'utilise ni l'écart de conversion actif 476 ni la provision pour perte de change 1515, réservés aux créances et dettes.",
+      "source_ref": "PCG comptes 580 (virements internes), 5121, 5124, 666 ; PCG, règles de conversion des liquidités en devises (règl. ANC 2014-03)",
+      "verified": true,
+      "estimated_seconds": 270
+    },
+    {
+      "id": "ue4-audit-tresorerie-0027",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "tresorerie-pieges",
+      "difficulty": 3,
+      "tags": [
+        "pièges",
+        "présentation",
+        "devises",
+        "cash pooling",
+        "nantissement",
+        "virements internes"
+      ],
+      "title": "Trésorerie de clôture de Thêta",
+      "context": "Vous auditez les comptes au 31/12/N de la SAS Thêta, filiale d'un groupe industriel. Seuil de signification : 30 000 €.\nLe comptable présente au bilan une ligne « Disponibilités » de 315 500 €, qui additionne les soldes suivants :\n- banque Alpha, compte en euros : solde débiteur de 84 000 € ;\n- banque Bêta, compte en euros : solde créditeur (découvert autorisé) de 37 500 €, porté en diminution ;\n- compte en dollars : 60 000 USD, inscrits pour 52 800 € ; cours de clôture 1 € = 1,20 USD, aucune conversion n'a été passée ;\n- compte à terme de 150 000 €, que la confirmation de la banque Bêta indique nanti en garantie du découvert ; l'annexe n'en fait pas mention ;\n- compte de centralisation de trésorerie avec la société mère (cash pooling), débiteur de 45 000 €, enregistré dans un sous-compte du 512 ;\n- compte 580, débiteur de 20 000 € : virement d'Alpha vers Bêta exécuté le 31/12/N, comptabilisé à la sortie d'Alpha mais pas à l'arrivée sur Bêta, alors qu'il figure sur le relevé de Bêta au 31/12/N ;\n- caisse : 1 200 €.\nConvention : le compte à terme, mobilisable à tout moment sous réserve du nantissement, reste classé en disponibilités ; sa restriction relève de l'annexe.",
+      "sub_questions": [
+        {
+          "id": "q1-disponibilites",
+          "kind": "numeric",
+          "points": 4,
+          "prompt": "Quel montant de disponibilités doit figurer à l'actif du bilan de Thêta au 31/12/N (en euros) ?",
+          "expected_value": 285200,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Alpha 84 000 + dollars 60 000 / 1,20 = 50 000 + compte à terme 150 000 + caisse 1 200 = 285 200 €. Le découvert Bêta, après comptabilisation de l'arrivée du virement (−37 500 + 20 000 = −17 500 €), reste créditeur et va au passif ; le 580 est soldé ; le cash pooling est une créance sur la mère. Compenser le découvert donnerait 267 700 € ; garder le 580 en disponibilités, 305 200 €."
+        },
+        {
+          "id": "q2-cash-pooling",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Où classer le solde débiteur de 45 000 € du compte de cash pooling ?",
+          "options": [
+            "En disponibilités, puisqu'il est mobilisable à vue",
+            "En valeurs mobilières de placement",
+            "En créance sur une entité liée (compte courant de groupe, 451)",
+            "En diminution des capitaux propres"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "Les fonds remontés à la mère dans le cadre d'une centralisation de trésorerie constituent une créance sur la société mère, enregistrée dans un compte courant de groupe (451), et non un avoir bancaire de Thêta. Ce ne sont pas des titres de placement, et ils n'ont aucun lien avec les capitaux propres."
+        },
+        {
+          "id": "q3-devises",
+          "kind": "true_false",
+          "points": 2,
+          "prompt": "L'écart de 2 800 € sur le compte en dollars doit être inscrit à l'actif en écart de conversion (476) et couvert par une provision pour perte de change.",
+          "answer": false,
+          "explanation": "Faux : pour une disponibilité en devises, la perte de 52 800 − 50 000 = 2 800 € est comptabilisée directement en charges financières (666). Le mécanisme 476 / provision est réservé aux créances et dettes en devises. L'incidence sur le résultat est ici la même (charge de 2 800 €), mais le classement au bilan diffère."
+        },
+        {
+          "id": "q4-synthese",
+          "kind": "open",
+          "points": 4,
+          "prompt": "Récapitulez les anomalies de présentation et leur incidence au regard du seuil, et indiquez le traitement du nantissement.",
+          "model_answer": "Disponibilités surévaluées de 315 500 − 285 200 = 30 300 € : perte de change de 2 800 €, 580 de 20 000 € à solder, cash pooling de 45 000 € à reclasser en créance sur la mère, et découvert de 37 500 € compensé à tort (17 500 € après prise en compte du virement, à présenter au passif en dettes auprès des établissements de crédit). L'écart de présentation de la trésorerie dépasse le seuil de signification de 30 000 € ; le résultat est surévalué de 2 800 €. Le nantissement du compte à terme ne remet pas en cause son existence mais restreint la libre disposition des fonds : il doit être mentionné en annexe au titre des engagements donnés. L'auditeur demande à la direction de corriger la présentation, l'écriture de change et l'annexe ; à défaut, l'anomalie de présentation, significative, a une incidence sur son opinion.",
+          "key_points": [
+            "Écart sur les disponibilités : 30 300 €, supérieur au seuil de 30 000 €",
+            "Découvert au passif sans compensation (C. com. art. L123-19)",
+            "Cash pooling en créance de groupe, 580 soldé, perte de change de 2 800 € en résultat",
+            "Nantissement mentionné en annexe (engagements donnés)",
+            "Demande de correction et incidence sur l'opinion à défaut"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Le cas réunit les pièges de présentation de la trésorerie : compensation interdite d'un découvert, compte de passage non soldé, conversion des disponibilités en devises directement en résultat, cash pooling à reclasser et fonds nantis à signaler. Chacun paraît modeste, mais leur cumul conduit à une anomalie significative sur le poste de disponibilités.",
+      "source_ref": "C. com. art. L123-19 ; PCG, règles de conversion des liquidités en devises (règl. ANC 2014-03) ; PCG comptes 451, 5121, 5124, 580, 666 ; NEP 450 ; NEP 505",
+      "verified": true,
+      "estimated_seconds": 900
     }
   ]
 }
