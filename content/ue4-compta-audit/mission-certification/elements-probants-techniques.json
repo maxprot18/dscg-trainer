@@ -7,7 +7,12 @@
       "theme": "mission-certification",
       "notion": "elements-probants-techniques",
       "difficulty": 2,
-      "tags": ["éléments probants", "fiabilité", "NEP 500", "confirmation externe"],
+      "tags": [
+        "éléments probants",
+        "fiabilité",
+        "NEP 500",
+        "confirmation externe"
+      ],
       "statement": "Pour vérifier le solde d'une créance client de 240 000 €, l'auditeur dispose de quatre éléments. Lequel est, en principe, le plus fiable au sens de la NEP 500 ?",
       "options": [
         "Une copie de la facture de vente remise par le service comptable de l'entité",
@@ -15,11 +20,115 @@
         "La réponse écrite du client à une demande de confirmation envoyée et reçue directement par l'auditeur",
         "Le grand livre auxiliaire client édité par l'entité à la date de clôture"
       ],
-      "answer": [2],
+      "answer": [
+        2
+      ],
       "explanation": "La NEP 500 retient plusieurs critères de fiabilité : un élément provenant d'une source externe à l'entité est plus fiable qu'un élément interne ; un élément obtenu directement par l'auditeur est plus fiable qu'un élément obtenu indirectement ; un élément écrit est plus fiable qu'une déclaration orale ; un original est plus fiable qu'une copie. La confirmation directe du client remplit les trois premiers critères (source externe, obtention directe, écrit), et la NEP 505 en organise les modalités : l'auditeur garde la maîtrise de l'envoi et de la réception. La copie de facture et le grand livre sont des documents internes ; la déclaration du directeur financier est orale et indirecte.",
       "source_ref": "NEP 500 (caractère probant des éléments collectés) ; NEP 505 (demandes de confirmation des tiers)",
       "verified": true,
       "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-mission-probants-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "elements-probants-techniques",
+      "difficulty": 1,
+      "tags": [
+        "NEP 500",
+        "techniques de contrôle",
+        "observation physique",
+        "stocks"
+      ],
+      "source_ref": "NEP 500 (techniques de contrôle : observation physique)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "explanation": "L'observation physique consiste à regarder un processus ou une procédure exécuté par d'autres, ici le comptage d'inventaire (NEP 500). Ce n'est pas une inspection d'enregistrements, qui porte sur des documents ou des fichiers comptables. Ce n'est pas une confirmation, qui suppose une réponse écrite d'un tiers extérieur à l'entité. Ce n'est pas une procédure analytique, qui compare des montants, des ratios ou des tendances à une attente. Le collaborateur peut compléter l'observation par des comptages par sondage (inspection d'actifs corporels) rapprochés des fiches de comptage.",
+      "statement": "Le 31 décembre, un collaborateur du commissaire aux comptes assiste au comptage des stocks réalisé par le personnel de l'entité et note la manière dont les équipes procèdent (zones comptées, étiquetage, double comptage). Quelle technique de collecte d'éléments probants met-il en œuvre ?",
+      "options": [
+        "L'inspection d'enregistrements comptables",
+        "La demande de confirmation auprès d'un tiers",
+        "La procédure analytique",
+        "L'observation physique"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ue4-mission-probants-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "elements-probants-techniques",
+      "difficulty": 2,
+      "tags": [
+        "NEP 505",
+        "confirmation",
+        "procédures alternatives",
+        "créances clients"
+      ],
+      "source_ref": "NEP 505 (demandes de confirmation des tiers : absence de réponse) ; NEP 500 (fiabilité des éléments probants)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "explanation": "Selon la NEP 505, en l'absence de réponse à une demande de confirmation, le commissaire aux comptes met en œuvre des procédures alternatives pour obtenir les éléments recherchés : examen des règlements postérieurs à la clôture rattachés aux factures du solde, documents de livraison, correspondance avec le client. Une non-réponse n'est pas une confirmation tacite (option 1). Une confirmation obtenue par l'entité elle-même fait perdre la maîtrise du processus par le CAC et la fiabilité de l'élément (option 3). Une déclaration écrite de la direction complète les autres éléments probants, elle ne les remplace pas (option 4).",
+      "statement": "Le commissaire aux comptes de Silex SAS a adressé, sous son contrôle, une demande de confirmation de solde au client Opale (solde de 86 000 € au 31/12/N, composé de trois factures de novembre et décembre). Malgré une relance, aucune réponse n'a été reçue. Que doit-il faire ?",
+      "options": [
+        "Considérer le solde comme confirmé, l'absence de contestation valant accord du client",
+        "Mettre en œuvre des procédures alternatives, par exemple rapprocher les encaissements reçus après la clôture des factures composant le solde et examiner les bons de livraison",
+        "Demander au service comptable de Silex d'appeler le client et de lui transmettre la confirmation obtenue",
+        "Obtenir une déclaration écrite de la direction attestant l'existence de la créance, qui suffit à clore le point"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ue4-mission-probants-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "elements-probants-techniques",
+      "difficulty": 2,
+      "tags": [
+        "NEP 530",
+        "sondage",
+        "extrapolation",
+        "éléments clés"
+      ],
+      "source_ref": "NEP 530 (sélection des éléments à contrôler, sondages, extrapolation des anomalies)",
+      "verified": true,
+      "estimated_seconds": 200,
+      "explanation": "Les éléments clés contrôlés à 100 % ne s'extrapolent pas : leur anomalie de 5 000 € est retenue telle quelle. Population échantillonnée : 4 800 000 € ; échantillon : 960 000 €, soit un rapport de 5. Anomalie extrapolée : 7 200 × 4 800 000 ÷ 960 000 = 36 000 €. Anomalie estimée totale : 5 000 + 36 000 = 41 000 €. Erreurs classiques : oublier l'anomalie des éléments clés (36 000 €), extrapoler l'ensemble des anomalies sur toute la population (12 200 × 6 000 000 ÷ 2 160 000 ≈ 33 889 €) ou extrapoler aussi l'anomalie des éléments clés (5 000 × 5 + 36 000 = 61 000 €). Le CAC compare ensuite ce montant, cumulé aux autres anomalies, au seuil de signification et tient compte du risque d'échantillonnage.",
+      "statement": "Le solde clients de Quartz SA s'élève à 6 000 000 € au 31/12/N. Le commissaire aux comptes :\n- contrôle à 100 % les trois créances de plus de 300 000 €, d'un montant total de 1 200 000 € : il y relève une surévaluation de 5 000 € ;\n- contrôle par sondage statistique le reste de la population (4 800 000 €) : l'échantillon, d'une valeur de 960 000 €, comporte des surévaluations pour un total de 7 200 €.\nL'extrapolation se fait au prorata des valeurs (anomalies de l'échantillon × valeur de la population échantillonnée ÷ valeur de l'échantillon). Calculez l'anomalie estimée totale sur le solde clients, en euros.",
+      "expected_value": 41000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0
+    },
+    {
+      "id": "ue4-mission-probants-0005",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "elements-probants-techniques",
+      "difficulty": 1,
+      "tags": [
+        "NEP 500",
+        "caractère suffisant",
+        "caractère approprié"
+      ],
+      "source_ref": "NEP 500 (caractère suffisant et approprié des éléments probants)",
+      "verified": true,
+      "estimated_seconds": 40,
+      "explanation": "Selon la NEP 500, le CAC collecte des éléments suffisants et appropriés. La quantité nécessaire (caractère suffisant) dépend du risque d'anomalies évalué et de la qualité des éléments : plus ils sont fiables et pertinents, moins il en faut. Mais une grande quantité d'éléments peu fiables ne compense pas leur mauvaise qualité.",
+      "statement": "Le caractère « suffisant » des éléments probants renvoie à leur qualité, c'est-à-dire à leur fiabilité et à leur pertinence.",
+      "answer": false,
+      "justification": "Le caractère suffisant renvoie à la quantité des éléments collectés ; c'est le caractère approprié qui renvoie à leur qualité (pertinence et fiabilité)."
     }
   ]
 }

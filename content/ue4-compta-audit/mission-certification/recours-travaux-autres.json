@@ -1,0 +1,174 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-mission-recours-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "recours-travaux-autres",
+      "difficulty": 1,
+      "tags": [
+        "NEP 620",
+        "expert",
+        "responsabilité"
+      ],
+      "source_ref": "NEP 620 (intervention d'un expert)",
+      "verified": true,
+      "estimated_seconds": 50,
+      "explanation": "Selon la NEP 620, l'intervention d'un expert ne réduit pas la responsabilité du CAC, qui reste seul responsable de l'opinion (option 1 fausse). Il apprécie la compétence, l'indépendance ou l'objectivité de l'expert, définit ses travaux et apprécie le caractère approprié de ses conclusions (sources, hypothèses, méthodes) : il ne peut les reprendre sans les apprécier (option 3 fausse). Le rapport ne fait pas référence à l'expert lorsque l'opinion est sans réserve, une telle mention pouvant laisser croire à un partage de responsabilité (option 2 fausse).",
+      "statement": "Le commissaire aux comptes de Noyer SA désigne un actuaire indépendant pour apprécier l'évaluation des engagements de retraite. Quelle affirmation est exacte ?",
+      "options": [
+        "La responsabilité de l'opinion sur les engagements de retraite est transférée à l'actuaire",
+        "Le rapport du commissaire aux comptes doit toujours mentionner le nom de l'actuaire et ses conclusions",
+        "Le commissaire aux comptes peut reprendre les conclusions de l'actuaire sans les apprécier, puisqu'il l'a lui-même désigné",
+        "Le commissaire aux comptes reste seul responsable de son opinion ; il apprécie la compétence et l'indépendance de l'actuaire ainsi que le caractère approprié de ses travaux"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ue4-mission-recours-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "recours-travaux-autres",
+      "difficulty": 2,
+      "tags": [
+        "NEP 610",
+        "audit interne",
+        "inventaires tournants"
+      ],
+      "source_ref": "NEP 610 (prise de connaissance et utilisation des travaux de l'audit interne)",
+      "verified": true,
+      "estimated_seconds": 70,
+      "explanation": "La NEP 610 permet au CAC d'utiliser les travaux de l'audit interne après avoir évalué la fonction (statut et objectivité, compétence technique, conscience professionnelle) et, pour les travaux qu'il prévoit d'utiliser, apprécié qu'ils sont adaptés à ses objectifs, notamment en en vérifiant une partie. Le rattachement au comité d'audit est un facteur favorable à l'objectivité mais ne dispense pas de l'évaluation (option 1). L'auditeur interne ne partage jamais la responsabilité du CAC (option 3). Aucune interdiction générale ne vise les travaux utiles aux procédures de substance ; le CAC conserve toutefois ses jugements significatifs (option 4).",
+      "statement": "L'audit interne de Charme Distribution, rattaché au comité d'audit, réalise des inventaires tournants dans les entrepôts. Le commissaire aux comptes souhaite utiliser ces travaux pour réduire ses propres comptages. Quelle démarche est conforme à la NEP 610 ?",
+      "options": [
+        "Utiliser les comptages sans autre diligence, le rattachement au comité d'audit garantissant l'indépendance de la fonction",
+        "Évaluer la fonction (objectivité, compétence technique, conscience professionnelle), puis apprécier les travaux visés et en vérifier une partie, par exemple en réexécutant certains comptages",
+        "Demander au responsable de l'audit interne de signer le rapport du commissaire aux comptes pour la partie relative aux stocks",
+        "Renoncer à ces travaux, la NEP 610 interdisant d'utiliser l'audit interne pour des procédures de substance"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ue4-mission-recours-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "recours-travaux-autres",
+      "difficulty": 2,
+      "tags": [
+        "NEP 100",
+        "co-commissariat",
+        "revue croisée"
+      ],
+      "source_ref": "NEP 100 (audit des comptes réalisé par plusieurs commissaires aux comptes)",
+      "verified": true,
+      "estimated_seconds": 40,
+      "explanation": "La NEP 100 organise l'audit conjoint : définition commune de l'approche, répartition équilibrée des travaux selon des critères quantitatifs et qualitatifs, rotation périodique, examen par chacun des travaux des autres, rapport commun. Le co-commissariat est notamment obligatoire pour les personnes et entités astreintes à publier des comptes consolidés.",
+      "statement": "En cas de co-commissariat, chaque commissaire aux comptes examine les travaux réalisés par les autres commissaires aux comptes.",
+      "answer": true,
+      "justification": "C'est la revue croisée prévue par la NEP 100 : elle permet à chacun de fonder sa propre opinion sur l'ensemble des comptes."
+    },
+    {
+      "id": "ue4-mission-recours-0004",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "recours-travaux-autres",
+      "difficulty": 3,
+      "tags": [
+        "NEP 100",
+        "NEP 600",
+        "NEP 620",
+        "co-commissariat",
+        "comptes consolidés",
+        "expert"
+      ],
+      "source_ref": "NEP 100 (audit des comptes réalisé par plusieurs commissaires aux comptes) ; NEP 600 (principes spécifiques applicables à l'audit des comptes consolidés) ; NEP 620 (intervention d'un expert) ; NEP 540 (estimations comptables)",
+      "verified": true,
+      "estimated_seconds": 780,
+      "explanation": "Le cas combine les NEP 100 (co-commissariat : répartition des travaux, revue croisée, rapport commun), 600 (utilisation des travaux des professionnels chargés du contrôle des entités du groupe), 620 (expert désigné par le CAC) et 540 (estimation hors de la fourchette jugée raisonnable). Fil conducteur : le CAC peut s'appuyer sur d'autres professionnels, mais il reste seul responsable de son opinion.",
+      "title": "Hélios SA : co-commissariat, auditeur de filiale et expert",
+      "context": "Hélios SA établit des comptes consolidés (clôture au 31/12/N) et a désigné deux commissaires aux comptes, les cabinets Alpha et Bêta. Le groupe comprend Hélios SA et trois filiales, dont Hélios Iberia, société espagnole contrôlée par un auditeur local qui n'appartient à aucun des deux cabinets.\nPour l'exercice N, les co-commissaires aux comptes ont convenu que :\n- le cabinet Alpha prend en charge Hélios SA et le processus de consolidation ;\n- le cabinet Bêta prend en charge les deux filiales françaises et la relation avec l'auditeur d'Hélios Iberia.\nHélios Iberia détient un immeuble de placement évalué à la juste valeur dans les comptes consolidés : 16,0 M€ selon l'évaluation retenue par la direction du groupe. Les co-commissaires aux comptes ont désigné un expert immobilier indépendant, qui conclut à une fourchette de juste valeur raisonnable comprise entre 13,8 M€ et 15,2 M€, et ont jugé ses travaux appropriés. Le seuil de signification des comptes consolidés est de 1,0 M€.\nL'auditeur d'Hélios Iberia a transmis une synthèse indiquant qu'il n'a relevé aucune anomalie, sans préciser ses travaux sur l'immeuble.",
+      "sub_questions": [
+        {
+          "id": "anomalie-immeuble",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "En retenant comme anomalie l'écart entre l'évaluation de la direction et la borne la plus proche de la fourchette de l'expert, calculez l'anomalie sur la juste valeur de l'immeuble, en euros.",
+          "expected_value": 800000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "L'évaluation de la direction (16,0 M€) est au-dessus de la fourchette (13,8 à 15,2 M€). Anomalie minimale : 16 000 000 − 15 200 000 = 800 000 €. Erreurs classiques : retenir le milieu de fourchette (16,0 − 14,5 = 1,5 M€) ou la borne basse (2,2 M€). L'anomalie est inférieure au seuil de signification (1,0 M€) mais doit être cumulée avec les autres anomalies non corrigées, et une évaluation située hors de la fourchette, du côté favorable, peut être un indice de biais de la direction."
+        },
+        {
+          "id": "responsabilite",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Qui est responsable de l'opinion sur les comptes consolidés d'Hélios SA ?",
+          "options": [
+            "L'auditeur d'Hélios Iberia pour la part des comptes consolidés issue de sa filiale, les co-commissaires pour le reste",
+            "Les cabinets Alpha et Bêta, co-commissaires aux comptes d'Hélios SA, qui émettent un rapport commun sur l'ensemble des comptes consolidés",
+            "Le cabinet Bêta seul pour les filiales et le cabinet Alpha seul pour la société mère",
+            "L'expert immobilier pour la juste valeur de l'immeuble, les co-commissaires pour le reste"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Les commissaires aux comptes de l'entité consolidante restent seuls responsables de l'opinion sur les comptes consolidés (NEP 600) : ils ne partagent cette responsabilité ni avec l'auditeur de la filiale ni avec l'expert (NEP 620). En co-commissariat, la répartition des travaux n'emporte pas répartition des responsabilités : chacun se forge une opinion sur l'ensemble des comptes et ils signent un rapport commun (NEP 100)."
+        },
+        {
+          "id": "revue-croisee",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "Le cabinet Alpha peut exprimer son opinion sur les comptes consolidés sans examiner les travaux réalisés par le cabinet Bêta sur les filiales.",
+          "answer": false,
+          "explanation": "La NEP 100 impose à chaque co-commissaire d'examiner les travaux des autres (revue croisée) afin de fonder sa propre opinion sur l'ensemble des comptes."
+        },
+        {
+          "id": "travaux-complementaires",
+          "kind": "open",
+          "points": 4,
+          "prompt": "Quels travaux les co-commissaires doivent-ils mener à l'égard de l'auditeur d'Hélios Iberia et de l'évaluation de l'immeuble avant de conclure ?",
+          "model_answer": "À l'égard de l'auditeur d'Hélios Iberia (NEP 600), une synthèse sans détail des travaux est insuffisante : les co-commissaires apprécient sa compétence et son indépendance, s'assurent qu'il a reçu et appliqué leurs instructions (seuil, calendrier, risques identifiés, dont l'évaluation de l'immeuble), obtiennent ses conclusions détaillées et, si nécessaire, revoient ses dossiers ou mettent en œuvre eux-mêmes des procédures complémentaires sur l'immeuble. À l'égard de l'évaluation (NEP 620 et NEP 540), ils ont apprécié la compétence et l'indépendance de l'expert et le caractère approprié de ses travaux ; ils comparent ses hypothèses à celles de la direction, demandent à la direction de corriger l'écart d'au moins 800 000 € et, à défaut, cumulent cette anomalie avec les autres anomalies non corrigées pour apprécier leur incidence sur l'opinion. Le rapport ne mentionne ni l'expert ni l'auditeur de la filiale si l'opinion est sans réserve. Le cabinet Alpha examine en outre les travaux de Bêta (revue croisée).",
+          "key_points": [
+            "Insuffisance de la synthèse : instructions, compétence et indépendance de l'auditeur de la filiale, revue de ses travaux ou procédures complémentaires",
+            "Appréciation des hypothèses de l'expert et de la direction ; demande de correction de l'anomalie",
+            "Cumul de l'anomalie non corrigée avec les autres pour apprécier l'opinion",
+            "Responsabilité non partagée : pas de mention de l'expert ou de l'auditeur local dans un rapport sans réserve",
+            "Revue croisée entre co-commissaires"
+          ]
+        }
+      ],
+      "total_points": 10
+    },
+    {
+      "id": "ue4-mission-recours-0005",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "recours-travaux-autres",
+      "difficulty": 1,
+      "tags": [
+        "NEP 600",
+        "comptes consolidés",
+        "auditeurs des entités du groupe"
+      ],
+      "source_ref": "NEP 600 (principes spécifiques applicables à l'audit des comptes consolidés)",
+      "verified": true,
+      "estimated_seconds": 40,
+      "explanation": "La NEP 600 encadre l'utilisation, par le CAC de l'entité consolidante, des travaux des professionnels chargés du contrôle des comptes des entités du groupe. Ces travaux sont un élément probant parmi d'autres : la responsabilité de l'opinion sur les comptes consolidés n'est pas partagée.",
+      "front": "Que fait le commissaire aux comptes de l'entité consolidante à l'égard des auditeurs des entités du groupe (NEP 600) ?",
+      "back": "Il apprécie leur compétence et leur indépendance.\nIl leur adresse des instructions (seuil, calendrier, risques, informations attendues).\nIl revoit leurs conclusions et, si nécessaire, leurs travaux ou met en œuvre des procédures complémentaires.\nIl reste seul responsable de l'opinion sur les comptes consolidés."
+    }
+  ]
+}
