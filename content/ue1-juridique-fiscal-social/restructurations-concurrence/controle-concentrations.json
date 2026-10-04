@@ -1,0 +1,99 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-restr-concent-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "controle-concentrations",
+      "difficulty": 1,
+      "tags": [
+        "notion de concentration",
+        "contrôle conjoint",
+        "L. 430-1"
+      ],
+      "statement": "Laquelle des opérations suivantes constitue une concentration au sens du droit de la concurrence ?",
+      "options": [
+        "L'acquisition par deux groupes indépendants du contrôle conjoint d'une société existante, chacun disposant d'un droit de veto sur le budget et le plan d'affaires",
+        "L'acquisition de 12 % du capital d'une société cotée, sans droit particulier ni représentation au conseil",
+        "La signature d'un contrat de distribution exclusive d'une durée de trois ans",
+        "La création par une société d'une filiale qu'elle détient à 100 %, à laquelle elle apporte une activité existante"
+      ],
+      "answer": [
+        0
+      ],
+      "multiple": false,
+      "explanation": "Constitue une concentration l'acquisition du contrôle, exclusif ou conjoint, de tout ou partie d'une entreprise, le contrôle s'entendant de la possibilité d'exercer une influence déterminante ; des droits de veto sur le budget et le plan d'affaires caractérisent un contrôle conjoint (C. com. art. L. 430-1) : option 1. Une participation minoritaire sans influence déterminante (option 2) n'est pas une concentration. Un contrat de distribution (option 3) relève du droit des ententes, non du contrôle des concentrations. Une restructuration interne à un groupe (option 4) ne modifie pas le contrôle, les entreprises n'étant pas indépendantes.",
+      "source_ref": "C. com. art. L. 430-1 ; règlement (CE) n° 139/2004, art. 3",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue1-restr-concent-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "controle-concentrations",
+      "difficulty": 3,
+      "tags": [
+        "seuils",
+        "dimension européenne",
+        "règle des deux tiers",
+        "L. 430-2"
+      ],
+      "statement": "Le groupe Aldric (CA mondial 4 200 M€, dont 1 800 M€ dans l'UE et 1 500 M€ en France) acquiert le contrôle exclusif du groupe Bastide (CA mondial 900 M€, dont 260 M€ dans l'UE et 200 M€ en France). Les seuils européens alternatifs ne sont pas remplis. Auprès de quelle autorité l'opération doit-elle être notifiée ?",
+      "options": [
+        "La Commission européenne, car le CA mondial cumulé dépasse 5 000 M€ et chaque groupe réalise plus de 250 M€ dans l'UE",
+        "Aucune autorité, l'opération ne franchissant aucun seuil",
+        "La Commission européenne et l'Autorité de la concurrence, chacune pour la part de l'opération qui la concerne",
+        "L'Autorité de la concurrence, car chaque groupe réalise plus des deux tiers de son CA européen en France et les seuils français sont franchis"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Seuils européens principaux : CA mondial cumulé 5 100 M€ > 5 000 M€ et CA dans l'UE de chaque groupe > 250 M€ (1 800 et 260 M€). Mais la dimension européenne est exclue lorsque chaque entreprise réalise plus des deux tiers de son CA européen dans un seul et même État membre : Aldric 1 500 / 1 800 = 83 %, Bastide 200 / 260 = 77 %, tous deux en France. On applique alors les seuils français (C. com. art. L. 430-2) : CA mondial cumulé > 150 M€ et CA en France de chacun > 50 M€ : notification à l'Autorité de la concurrence (option 4). L'option 1 oublie la règle des deux tiers ; l'option 2 oublie les seuils nationaux ; l'option 3 méconnaît le principe du guichet unique, une opération relevant de l'une ou de l'autre autorité.",
+      "source_ref": "Règlement (CE) n° 139/2004, art. 1 ; C. com. art. L. 430-2",
+      "verified": true,
+      "estimated_seconds": 120
+    },
+    {
+      "id": "ue1-restr-concent-0003",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "controle-concentrations",
+      "difficulty": 1,
+      "tags": [
+        "effet suspensif",
+        "notification",
+        "L. 430-4"
+      ],
+      "statement": "En France, une opération de concentration soumise au contrôle ne peut en principe être réalisée qu'après l'accord de l'Autorité de la concurrence.",
+      "answer": true,
+      "justification": "La notification est préalable et suspensive : la réalisation effective ne peut intervenir qu'après l'autorisation (C. com. art. L. 430-4), sauf dérogation motivée.",
+      "explanation": "L'effet suspensif garantit l'efficacité du contrôle. Une dérogation peut être accordée sur demande motivée, par exemple pour la reprise d'une entreprise en difficulté. Réaliser l'opération avant la décision (« gun jumping ») ou sans notification expose à une sanction pécuniaire pouvant atteindre 5 % du chiffre d'affaires HT réalisé en France pour une personne morale (C. com. art. L. 430-8).",
+      "source_ref": "C. com. art. L. 430-4 et L. 430-8",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue1-restr-concent-0004",
+      "type": "flashcard",
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "controle-concentrations",
+      "difficulty": 1,
+      "tags": [
+        "seuils français",
+        "L. 430-2"
+      ],
+      "front": "Quels sont les seuils de contrôle des concentrations en France (cas général) ?",
+      "back": "L'opération n'est pas de dimension européenne et :\n- le CA mondial HT total des entreprises concernées dépasse 150 M€ ;\n- au moins deux d'entre elles réalisent chacune en France un CA HT supérieur à 50 M€.\nSeuils abaissés pour le commerce de détail (75 M€ et 15 M€) et pour les outre-mer.",
+      "explanation": "Les seuils s'apprécient au niveau des groupes auxquels appartiennent les entreprises concernées. Une opération qui les franchit doit être notifiée avant sa réalisation à l'Autorité de la concurrence.",
+      "source_ref": "C. com. art. L. 430-2",
+      "verified": true,
+      "estimated_seconds": 35
+    }
+  ]
+}

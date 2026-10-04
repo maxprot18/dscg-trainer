@@ -1,0 +1,207 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-trans-cessation-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "cessation-activite-fiscalite",
+      "difficulty": 2,
+      "tags": [
+        "boni de liquidation",
+        "revenu distribué",
+        "associé personne physique"
+      ],
+      "statement": "M. Leroy a souscrit à la constitution 40 % des parts d'une SARL soumise à l'IS. À la clôture de la liquidation, il reçoit 260 000 €, dont 40 000 € correspondant au remboursement de ses apports (nominal et prime). Comment ces sommes sont-elles traitées fiscalement chez lui ?",
+      "options": [
+        "Les 260 000 € constituent une plus-value de cession de titres",
+        "Les 40 000 € remboursent ses apports et ne sont pas imposables ; les 220 000 € de boni constituent un revenu distribué, imposé comme un dividende",
+        "Les 260 000 € sont exonérés, la liquidation n'étant pas une cession",
+        "Les 220 000 € de boni sont imposés dans la catégorie des bénéfices industriels et commerciaux"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "Le remboursement des apports n'est pas un revenu ; le boni de liquidation, c'est-à-dire l'excédent des sommes reçues sur les apports, est un revenu distribué imposé comme un dividende (CGI art. 112-1° et 161) : option 2. Pour un associé ayant souscrit ses titres à leur valeur d'apport, il n'y a pas de plus-value distincte (option 1). La liquidation n'ouvre aucune exonération (option 3). L'associé d'une SARL à l'IS ne relève pas des BIC à raison de sa quote-part (option 4).",
+      "source_ref": "CGI art. 112-1° et 161 (boni de liquidation, revenu distribué)",
+      "verified": true,
+      "estimated_seconds": 70
+    },
+    {
+      "id": "ue1-trans-cessation-0002",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "cessation-activite-fiscalite",
+      "difficulty": 1,
+      "tags": [
+        "entreprise individuelle",
+        "cessation",
+        "imposition immédiate",
+        "CGI 201"
+      ],
+      "statement": "La cessation d'une entreprise individuelle relevant des bénéfices industriels et commerciaux entraîne l'imposition immédiate des bénéfices non encore imposés, y compris les plus-values réalisées à l'occasion de la cessation.",
+      "answer": true,
+      "justification": "En cas de cession ou de cessation, l'impôt est établi immédiatement sur les bénéfices non encore taxés (CGI art. 201).",
+      "explanation": "L'exploitant doit déposer une déclaration dans les 60 jours de la publication de la cession ou de la cessation. L'imposition porte sur le résultat de la période écoulée depuis la dernière clôture, sur les provisions devenues sans objet et sur les plus-values de cession, sous réserve des régimes d'exonération (CGI art. 151 septies, 151 septies A, 238 quindecies).",
+      "source_ref": "CGI art. 201 (cession ou cessation d'une entreprise individuelle)",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue1-trans-cessation-0003",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "cessation-activite-fiscalite",
+      "difficulty": 2,
+      "tags": [
+        "boni de liquidation",
+        "apports",
+        "quote-part"
+      ],
+      "statement": "À l'issue des opérations de liquidation amiable de la SAS Cordier, toutes les dettes (y compris l'impôt) étant réglées, l'actif net disponible s'élève à 920 000 €. Les apports des associés s'élèvent à 360 000 € (capital de 300 000 € et prime d'émission de 60 000 €). Mme Cordier, qui a souscrit 40 % des actions à leur émission, n'a jamais cédé ni acquis de titres. Calculez le boni de liquidation lui revenant, en euros.",
+      "expected_value": 224000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Boni global = actif net de liquidation − remboursement des apports = 920 000 − 360 000 = 560 000 €. Part de Mme Cordier : 560 000 × 40 % = 224 000 € (en plus du remboursement de ses apports, 144 000 €). Oublier la prime d'émission parmi les apports donne 248 000 €, hors tolérance ; retenir l'actif net total donne 368 000 €.",
+      "source_ref": "CGI art. 161 (boni de liquidation) ; C. com. art. L. 237-1 s. (liquidation)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue1-trans-cessation-0004",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "cessation-activite-fiscalite",
+      "difficulty": 3,
+      "tags": [
+        "liquidation",
+        "partage",
+        "boni de liquidation",
+        "capitaux propres"
+      ],
+      "statement": "La SARL Ondine est en liquidation amiable. Tous les actifs ont été réalisés et toutes les dettes réglées ; seul subsiste un solde bancaire de 412 000 €. Les comptes de capitaux propres présentent : capital social 1013 : 80 000 € ; prime d'émission 1041 : 20 000 € ; réserve légale 1061 : 8 000 € ; autres réserves 1068 : 150 000 € ; report à nouveau débiteur 119 : 6 000 € ; résultat de la période de liquidation (bénéfice net d'impôt) 120 : 160 000 €. Convention : les droits des associés sont regroupés au crédit du compte 4567 « Associés – capital à rembourser » pour le remboursement des apports (capital et prime) et au crédit du compte 457 « Associés – dividendes à payer » pour le boni de liquidation. Passez l'écriture qui solde les capitaux propres et constate les droits des associés.",
+      "date": "Clôture de la liquidation",
+      "entries": [
+        {
+          "account": "1013",
+          "label": "Capital souscrit, appelé, versé",
+          "debit": 80000,
+          "credit": 0
+        },
+        {
+          "account": "1041",
+          "label": "Primes d'émission",
+          "debit": 20000,
+          "credit": 0
+        },
+        {
+          "account": "1061",
+          "label": "Réserve légale",
+          "debit": 8000,
+          "credit": 0
+        },
+        {
+          "account": "1068",
+          "label": "Autres réserves",
+          "debit": 150000,
+          "credit": 0
+        },
+        {
+          "account": "120",
+          "label": "Résultat de la période de liquidation (bénéfice)",
+          "debit": 160000,
+          "credit": 0
+        },
+        {
+          "account": "119",
+          "label": "Report à nouveau débiteur",
+          "debit": 0,
+          "credit": 6000
+        },
+        {
+          "account": "4567",
+          "label": "Associés – capital à rembourser (apports)",
+          "debit": 0,
+          "credit": 100000
+        },
+        {
+          "account": "457",
+          "label": "Associés – boni de liquidation à payer",
+          "debit": 0,
+          "credit": 312000
+        }
+      ],
+      "explanation": "Capitaux propres : 80 000 + 20 000 + 8 000 + 150 000 − 6 000 + 160 000 = 412 000 €, égal à la trésorerie disponible. Remboursement des apports : capital 80 000 + prime 20 000 = 100 000 € (crédit 4567). Boni de liquidation : 412 000 − 100 000 = 312 000 € (crédit 457), qui correspond aux réserves, au résultat de liquidation et au report à nouveau débiteur. Le report à nouveau débiteur, de solde débiteur, est soldé par un crédit. Les comptes 4567 et 457 seront ensuite soldés par le paiement aux associés (crédit 512). Chez les associés, le boni est un revenu distribué (CGI art. 161) ; le partage supporte le droit de partage.",
+      "source_ref": "PCG (règl. ANC 2014-03), comptes 101, 104, 106, 119, 120, 456 et 457 ; CGI art. 161 et 746",
+      "verified": true,
+      "estimated_seconds": 300
+    },
+    {
+      "id": "ue1-trans-cessation-0005",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "cessation-activite-fiscalite",
+      "difficulty": 2,
+      "tags": [
+        "liquidation",
+        "réalisation de l'actif",
+        "cession d'immeuble",
+        "775",
+        "675"
+      ],
+      "statement": "Le liquidateur de la SA Marbeuf, en liquidation amiable, cède le 15 septembre N l'immeuble de la société pour un prix global de 420 000 €, encaissé par virement. L'immeuble figure au bilan pour un terrain de 60 000 € et une construction de 300 000 € amortie à hauteur de 170 000 € à la date de cession (dotation de la période déjà comptabilisée). Passez l'écriture de cession, en utilisant les comptes 512, 775, 675, 211, 213 et 2813.",
+      "date": "15/09/N",
+      "entries": [
+        {
+          "account": "512",
+          "label": "Banque",
+          "debit": 420000,
+          "credit": 0
+        },
+        {
+          "account": "775",
+          "label": "Produits des cessions d'éléments d'actif",
+          "debit": 0,
+          "credit": 420000
+        },
+        {
+          "account": "675",
+          "label": "Valeurs comptables des éléments d'actif cédés",
+          "debit": 190000,
+          "credit": 0
+        },
+        {
+          "account": "2813",
+          "label": "Amortissements des constructions",
+          "debit": 170000,
+          "credit": 0
+        },
+        {
+          "account": "211",
+          "label": "Terrains",
+          "debit": 0,
+          "credit": 60000
+        },
+        {
+          "account": "213",
+          "label": "Constructions",
+          "debit": 0,
+          "credit": 300000
+        }
+      ],
+      "explanation": "La société en liquidation conserve sa personnalité morale et sa comptabilité pour les besoins de la liquidation : la cession est enregistrée selon les règles habituelles. Valeur nette comptable : terrain 60 000 + construction (300 000 − 170 000) = 190 000 € au débit du 675 ; les amortissements (2813) sont soldés. Plus-value : 420 000 − 190 000 = 230 000 €, comprise dans le résultat de la période de liquidation et soumise à l'IS au taux normal (cessation d'entreprise, CGI art. 221-2).",
+      "source_ref": "PCG (règl. ANC 2014-03), comptes 211, 213, 2813, 675 et 775 ; C. com. art. L. 237-2 ; CGI art. 221-2",
+      "verified": true,
+      "estimated_seconds": 210
+    }
+  ]
+}

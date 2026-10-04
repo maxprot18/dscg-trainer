@@ -1,0 +1,188 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-restr-fiscfus-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "regime-fiscal-faveur-fusions",
+      "difficulty": 2,
+      "tags": [
+        "apport partiel d'actif",
+        "CGI 210 B",
+        "agrément"
+      ],
+      "statement": "La SA Torvane, soumise à l'IS, envisage d'apporter à une société soumise à l'IS soit (projet 1) sa branche complète « emballages » avec tous les actifs et passifs qui s'y rattachent, soit (projet 2) un seul entrepôt isolé. Quelle affirmation est exacte au regard du régime de faveur ?",
+      "options": [
+        "Les deux projets bénéficient de plein droit du régime de faveur, sans engagement particulier",
+        "Le projet 1 bénéficie de plein droit du régime de faveur si Torvane s'engage notamment à conserver 3 ans les titres reçus ; le projet 2 ne peut en bénéficier que sur agrément",
+        "Aucun des deux projets ne peut bénéficier du régime de faveur, réservé aux fusions",
+        "Le projet 2 bénéficie de plein droit du régime de faveur, le projet 1 nécessitant un agrément car il transfère des dettes"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "L'apport d'une branche complète d'activité bénéficie de plein droit du régime de faveur, à condition que l'apporteuse s'engage à conserver les titres reçus pendant 3 ans et à calculer la plus-value de leur cession ultérieure d'après la valeur fiscale des biens apportés (CGI art. 210 B, 1) : option 2. L'apport d'un bien isolé ne constitue pas une branche complète et requiert un agrément (art. 210 B, 3). L'option 1 ignore ces conditions ; l'option 3 oublie que le régime s'étend aux scissions et aux apports partiels d'actif ; l'option 4 inverse les situations, la transmission des passifs liés à la branche étant au contraire inhérente à la branche complète.",
+      "source_ref": "CGI art. 210 A et 210 B (apports partiels d'actif : branche complète, engagement de conservation de 3 ans, agrément)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue1-restr-fiscfus-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "regime-fiscal-faveur-fusions",
+      "difficulty": 2,
+      "tags": [
+        "droits d'enregistrement",
+        "fusion",
+        "droit fixe"
+      ],
+      "statement": "La SAS Merlin (IS) absorbe la SARL Sorbier (IS). L'actif net apporté vaut 900 000 € et, après l'augmentation de capital, le capital de la SAS Merlin s'élève à 180 000 €. Quels droits d'enregistrement l'acte de fusion supporte-t-il ?",
+      "options": [
+        "Un droit proportionnel de 5 % sur l'actif net apporté, soit 45 000 €",
+        "Un droit fixe de 500 €",
+        "Un droit fixe de 375 €",
+        "Un droit de 3 % après abattement de 23 000 €, soit 26 310 €"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Les fusions entre personnes morales soumises à l'IS sont enregistrées au droit fixe de 375 €, porté à 500 € lorsque le capital de la société bénéficiaire, après l'opération, atteint au moins 225 000 € (CGI art. 816). Ici le capital est de 180 000 € : droit fixe de 375 € (option 3), et non 500 € (option 2). Aucun droit proportionnel n'est dû sur l'actif net apporté (option 1). Le droit de 3 % après abattement (option 4) concerne les cessions de parts sociales (art. 726), pas les fusions.",
+      "source_ref": "CGI art. 816 (droit fixe des fusions de sociétés soumises à l'IS)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue1-restr-fiscfus-0003",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "regime-fiscal-faveur-fusions",
+      "difficulty": 2,
+      "tags": [
+        "déficits",
+        "agrément",
+        "CGI 209 II"
+      ],
+      "statement": "Lorsqu'une fusion est placée sous le régime de faveur de l'article 210 A du CGI, les déficits fiscaux reportables de la société absorbée sont transférés de plein droit à la société absorbante.",
+      "answer": false,
+      "justification": "Le transfert des déficits de l'absorbée à l'absorbante est subordonné à un agrément de l'administration (CGI art. 209 II).",
+      "explanation": "Le régime de faveur neutralise l'imposition des plus-values d'apport mais ne transfère pas automatiquement les déficits. L'agrément est délivré si l'opération est justifiée économiquement et n'a pas un but principalement fiscal, si l'activité à l'origine des déficits est poursuivie par l'absorbante pendant une durée minimale et n'a pas fait l'objet de changements significatifs, notamment. À défaut d'agrément, les déficits de l'absorbée sont perdus.",
+      "source_ref": "CGI art. 209 II (transfert des déficits sur agrément) et art. 210 A",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue1-restr-fiscfus-0004",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "regime-fiscal-faveur-fusions",
+      "difficulty": 2,
+      "tags": [
+        "sursis d'imposition",
+        "terrain",
+        "plus-value fiscale"
+      ],
+      "statement": "Lors d'une fusion placée sous le régime de faveur, la SA Astier a reçu un terrain apporté pour 400 000 €. Ce terrain figurait dans les comptes de la société absorbée pour une valeur fiscale de 150 000 €. Trois ans plus tard, Astier cède le terrain 460 000 €. Calculez la plus-value fiscale imposable chez Astier, en euros.",
+      "expected_value": 310000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Le terrain est un bien non amortissable : sous le régime de faveur, l'absorbante s'engage à calculer la plus-value de cession ultérieure d'après la valeur qu'il avait, du point de vue fiscal, chez l'absorbée (sursis d'imposition). Plus-value fiscale = 460 000 − 150 000 = 310 000 €. La plus-value comptable n'est que de 460 000 − 400 000 = 60 000 € : l'écart de 250 000 € (plus-value d'apport en sursis) est réintégré extra-comptablement. Répondre 60 000 € revient à oublier le sursis.",
+      "source_ref": "CGI art. 210 A, 3-c (plus-values sur biens non amortissables calculées d'après la valeur fiscale chez la société absorbée)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue1-restr-fiscfus-0005",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "regime-fiscal-faveur-fusions",
+      "difficulty": 3,
+      "tags": [
+        "régime de faveur",
+        "réintégration",
+        "droits d'enregistrement",
+        "déficits",
+        "apport isolé"
+      ],
+      "title": "Alizé absorbe Boréal",
+      "context": "La SA Alizé absorbe, au 1er juillet N, la SAS Boréal, avec laquelle elle n'a aucun lien de contrôle. Les deux sociétés sont soumises à l'IS. Les apports sont évalués à la valeur réelle et le traité place l'opération sous le régime de l'article 210 A du CGI.\nPlus-values d'apport dégagées sur les éléments de Boréal (valeur d'apport − valeur fiscale) :\n- terrain : 180 000 € ;\n- constructions : 300 000 € ;\n- matériel industriel : 50 000 € ;\n- fonds commercial : 220 000 €.\nBoréal dispose d'un déficit fiscal reportable de 90 000 €.\nAprès l'augmentation de capital rémunérant l'apport, le capital d'Alizé s'élève à 1 200 000 €.\nOn retient une réintégration en année pleine pour la première année et on suppose que les règles de la durée moyenne pondérée ne trouvent pas à s'appliquer.\nUn an plus tard, Alizé envisage d'apporter à une filiale son seul immeuble de bureaux, sans le personnel ni l'activité qui l'occupent.",
+      "sub_questions": [
+        {
+          "id": "q1-reintegration",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez le montant de la réintégration annuelle des plus-values d'apport dans le résultat imposable d'Alizé, en euros.",
+          "expected_value": 30000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Seules les plus-values sur biens amortissables sont réintégrées : constructions sur 15 ans (300 000 / 15 = 20 000 €) et matériel sur 5 ans (50 000 / 5 = 10 000 €), soit 30 000 € par an. Le terrain et le fonds commercial, non amortissables, sont en sursis d'imposition jusqu'à leur cession. Les constructions représentent 300 000 / 350 000 = 86 % de la plus-value nette sur biens amortissables, moins de 90 %, ce qui confirme l'étalement sur 15 ans."
+        },
+        {
+          "id": "q2-droits",
+          "kind": "numeric",
+          "points": 1,
+          "prompt": "Quel est le montant des droits d'enregistrement dus sur l'acte de fusion, en euros ?",
+          "expected_value": 500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Fusion entre sociétés soumises à l'IS : droit fixe de 375 €, porté à 500 € lorsque le capital de la bénéficiaire après l'opération atteint 225 000 € (CGI art. 816). Capital d'Alizé : 1 200 000 € : 500 €."
+        },
+        {
+          "id": "q3-deficit",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Quel est le sort du déficit reportable de 90 000 € de Boréal ?",
+          "options": [
+            "Il est transféré de plein droit à Alizé, par l'effet de la transmission universelle du patrimoine",
+            "Il est imputé sur les plus-values d'apport de Boréal, qui sont imposées à hauteur de ce montant",
+            "Il n'est transféré à Alizé que si celle-ci obtient un agrément ; à défaut, il est perdu",
+            "Il est remboursé à Boréal par le Trésor public à la date de la fusion"
+          ],
+          "answer": [
+            2
+          ],
+          "multiple": false,
+          "explanation": "Le transfert des déficits est subordonné à un agrément (CGI art. 209 II) : option 3. La transmission universelle de droit des sociétés ne suffit pas en droit fiscal (option 1). Sous le régime de faveur, les plus-values d'apport ne sont pas imposées chez Boréal, il n'y a donc pas d'imputation à opérer (option 2). Un déficit n'ouvre pas droit à remboursement (option 4), seul le report en arrière, sur option et dans des limites, crée une créance."
+        },
+        {
+          "id": "q4-apport-immeuble",
+          "kind": "open",
+          "points": 3,
+          "prompt": "L'apport de l'immeuble de bureaux envisagé par Alizé peut-il bénéficier du régime de faveur ? Justifiez et indiquez les engagements qui seraient alors exigés.",
+          "model_answer": "L'immeuble apporté seul, sans le personnel ni l'activité qui l'occupent, ne constitue pas une branche complète d'activité, c'est-à-dire un ensemble capable de fonctionner de manière autonome. Le régime de faveur ne s'applique donc pas de plein droit (CGI art. 210 B, 1) : à défaut d'agrément, la plus-value d'apport est imposée immédiatement chez Alizé. Alizé peut demander un agrément (art. 210 B, 3), accordé si l'apport est justifié par un motif économique, n'a pas pour objectif principal la fraude ou l'évasion fiscale et si les modalités préservent l'imposition future des plus-values. Les engagements exigés seraient notamment la conservation des titres reçus pendant 3 ans et le calcul de la plus-value de cession de ces titres d'après la valeur fiscale de l'immeuble chez Alizé ; la filiale bénéficiaire reprend les engagements de l'article 210 A (réintégration de la plus-value sur la construction sur 15 ans, sursis sur le terrain).",
+          "key_points": [
+            "Un immeuble isolé n'est pas une branche complète d'activité",
+            "Régime de faveur de plein droit exclu : plus-value imposée à défaut d'agrément",
+            "Agrément possible (art. 210 B, 3) : motif économique, absence de but principalement fiscal",
+            "Engagement de conservation des titres 3 ans et calcul de la plus-value sur titres d'après la valeur fiscale des biens apportés",
+            "La bénéficiaire reprend les engagements de l'article 210 A"
+          ]
+        }
+      ],
+      "total_points": 9,
+      "explanation": "Le cas couvre les effets du régime de faveur chez l'absorbante (réintégration étalée des plus-values sur biens amortissables, sursis pour les non amortissables), les droits d'enregistrement de la fusion, le sort des déficits et les conditions du régime pour un apport partiel d'actif.",
+      "source_ref": "CGI art. 210 A, 210 B, 209 II et 816",
+      "verified": true,
+      "estimated_seconds": 840
+    }
+  ]
+}

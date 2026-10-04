@@ -1,0 +1,225 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-trans-cession-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "cession-titres-garantie-passif",
+      "difficulty": 1,
+      "tags": [
+        "fonds de commerce",
+        "opposition",
+        "créanciers du vendeur"
+      ],
+      "statement": "Lors de la vente d'un fonds de commerce, dans quel délai les créanciers du vendeur peuvent-ils former opposition au paiement du prix ?",
+      "options": [
+        "Dans les 30 jours de la signature de l'acte de cession",
+        "Dans les 3 mois de l'entrée en jouissance de l'acquéreur",
+        "Dans les 10 jours de la publication de la vente au BODACC",
+        "Ils ne peuvent pas former opposition : ils ne disposent que d'une action contre le vendeur"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Les créanciers du vendeur peuvent former opposition au paiement du prix dans les 10 jours qui suivent la publication de la vente au BODACC (option 3). C'est pourquoi le prix est en pratique séquestré : l'acquéreur qui paie le vendeur sans tenir compte des oppositions s'expose à payer une seconde fois. Les délais de 30 jours (option 1) et de 3 mois (option 2) ne correspondent pas au texte ; l'option 4 nie le droit d'opposition, qui est précisément la protection des créanciers du cédant.",
+      "source_ref": "C. com. art. L. 141-12 à L. 141-14 (publicité de la vente et opposition des créanciers)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue1-trans-cession-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "cession-titres-garantie-passif",
+      "difficulty": 2,
+      "tags": [
+        "droits d'enregistrement",
+        "parts sociales",
+        "actions",
+        "CGI 726"
+      ],
+      "statement": "M. Vasseur cède pour 600 000 € la moitié du capital d'une société non cotée et sans prépondérance immobilière. Quelle affirmation relative aux droits d'enregistrement est exacte ?",
+      "options": [
+        "Si la société est une SAS, les droits s'élèvent à 3 % de 600 000 €, soit 18 000 €",
+        "Si la société est une SARL, les droits s'élèvent à 3 % de (600 000 − 23 000 × 50 %), soit 17 655 €",
+        "Les droits sont identiques pour une SARL et pour une SAS, la forme sociale étant sans incidence",
+        "Si la société est une SARL, la cession est exonérée de droits, car elle porte sur moins de la totalité des parts"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "Les cessions de parts sociales (SARL) sont taxées à 3 % après un abattement de 23 000 € proratisé selon la fraction du capital cédée (CGI art. 726) : 3 % × (600 000 − 11 500) = 17 655 € (option 2). Pour des actions de SAS, le taux est de 0,1 %, soit 600 € (l'option 1 applique à tort le taux des parts sociales). L'option 3 est donc fausse : la nature des titres (actions ou parts) détermine le taux. Aucune exonération ne s'attache à une cession partielle (option 4).",
+      "source_ref": "CGI art. 726 (droits sur les cessions de droits sociaux)",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue1-trans-cession-0003",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "cession-titres-garantie-passif",
+      "difficulty": 2,
+      "tags": [
+        "fonds de commerce",
+        "droits de mutation",
+        "CGI 719"
+      ],
+      "statement": "La SARL Héloïse acquiert un fonds de commerce de restauration pour 420 000 €. On retient le barème suivant des droits d'enregistrement (taxes additionnelles comprises) : 0 % pour la fraction du prix n'excédant pas 23 000 €, 3 % pour la fraction comprise entre 23 000 € et 200 000 €, 5 % au-delà de 200 000 €. Calculez les droits dus, en euros.",
+      "expected_value": 16310,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Barème par tranches :\n- 0 à 23 000 € : 0 € ;\n- 23 000 à 200 000 € : 177 000 × 3 % = 5 310 € ;\n- 200 000 à 420 000 € : 220 000 × 5 % = 11 000 €.\nTotal : 16 310 €. Appliquer 5 % à la totalité du prix (21 000 €) ou oublier la tranche exonérée (6 000 + 11 000 = 17 000 €) sont des erreurs hors tolérance.",
+      "source_ref": "CGI art. 719 (droits sur les mutations de fonds de commerce)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue1-trans-cession-0004",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "cession-titres-garantie-passif",
+      "difficulty": 2,
+      "tags": [
+        "cession de fonds de commerce",
+        "séquestre",
+        "775",
+        "675"
+      ],
+      "statement": "Le 30 avril N, la SA Pélerin cède son fonds de commerce pour un prix global de 320 000 €. Le fonds comprend un fonds commercial acquis 180 000 € (non amorti, non déprécié) et du matériel industriel acquis 70 000 €, amorti à hauteur de 52 000 € à la date de cession (dotation de l'exercice déjà comptabilisée). Conformément à l'acte, le prix est versé entre les mains d'un séquestre pendant le délai d'opposition des créanciers. Passez l'écriture de cession chez la SA Pélerin, en utilisant les comptes 462, 775 et 675 et les comptes d'immobilisations et d'amortissements appropriés (2154 et 28154 pour le matériel).",
+      "date": "30/04/N",
+      "entries": [
+        {
+          "account": "462",
+          "label": "Créances sur cessions d'immobilisations (prix séquestré)",
+          "debit": 320000,
+          "credit": 0
+        },
+        {
+          "account": "775",
+          "label": "Produits des cessions d'éléments d'actif",
+          "debit": 0,
+          "credit": 320000
+        },
+        {
+          "account": "675",
+          "label": "Valeurs comptables des éléments d'actif cédés",
+          "debit": 198000,
+          "credit": 0
+        },
+        {
+          "account": "28154",
+          "label": "Amortissements du matériel industriel",
+          "debit": 52000,
+          "credit": 0
+        },
+        {
+          "account": "207",
+          "label": "Fonds commercial",
+          "debit": 0,
+          "credit": 180000
+        },
+        {
+          "account": "2154",
+          "label": "Matériel industriel",
+          "debit": 0,
+          "credit": 70000
+        }
+      ],
+      "explanation": "Tant que le prix est séquestré, Pélerin détient une créance (462), et non une disponibilité. Le prix de cession est porté au crédit du 775. Les éléments cédés sortent pour leur valeur nette comptable : fonds commercial 180 000 € + matériel 70 000 − 52 000 = 18 000 €, soit 198 000 € au débit du 675 ; les amortissements (28154) sont soldés. Plus-value comptable : 320 000 − 198 000 = 122 000 €. À l'expiration du délai d'opposition, en l'absence d'opposition, le séquestre verse le prix : débit 512, crédit 462.",
+      "source_ref": "PCG (règl. ANC 2014-03), comptes 207, 2154, 28154, 462, 675 et 775 ; C. com. art. L. 141-14 (opposition des créanciers)",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue1-trans-cession-0005",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "cession-titres-garantie-passif",
+      "difficulty": 3,
+      "tags": [
+        "cession de titres",
+        "garantie de passif",
+        "franchise",
+        "garantie de la garantie"
+      ],
+      "title": "Cession des actions de la SAS Maëlle",
+      "context": "Les deux fondateurs de la SAS Maëlle (non cotée, sans prépondérance immobilière) cèdent le 1er mars N la totalité des actions à la société Orion Développement pour un prix de 2 400 000 €.\nL'acte comporte une clause de garantie de passif rédigée ainsi :\n- les cédants indemnisent la société Maëlle de tout passif ayant une cause antérieure au 1er mars N et non comptabilisé ;\n- franchise de 30 000 € : seule la fraction du passif excédant ce montant est indemnisée ;\n- plafond égal à 20 % du prix de cession ;\n- durée : jusqu'à l'expiration des délais de prescription fiscale et sociale.\nEn septembre N+1, un contrôle fiscal aboutit à un rappel de TVA de 150 000 € et à des pénalités de 50 000 €, portant sur l'exercice N-1. Orion notifie la réclamation dans les formes prévues.\nL'un des cédants envisage de s'installer à l'étranger ; Orion craint de ne pas pouvoir recouvrer l'indemnité.",
+      "sub_questions": [
+        {
+          "id": "q1-droits",
+          "kind": "numeric",
+          "points": 1,
+          "prompt": "Calculez les droits d'enregistrement dus sur la cession des actions, en euros, en retenant le taux de droit commun applicable aux actions.",
+          "expected_value": 2400,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Cession d'actions de société non cotée sans prépondérance immobilière : 0,1 % (CGI art. 726) ; 2 400 000 × 0,1 % = 2 400 €. Le taux de 3 % (72 000 €) concerne les parts sociales."
+        },
+        {
+          "id": "q2-indemnite",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez l'indemnité due par les cédants au titre de la garantie, en euros.",
+          "expected_value": 170000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Passif révélé, de cause antérieure à la cession : 150 000 + 50 000 = 200 000 €. Franchise : seule la fraction excédant 30 000 € est due, soit 170 000 €. Plafond : 20 % × 2 400 000 = 480 000 €, non atteint. Indemnité : 170 000 €. Avec un seuil de déclenchement au lieu d'une franchise, la totalité (200 000 €) aurait été due."
+        },
+        {
+          "id": "q3-garantie",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Quel mécanisme aurait le mieux protégé Orion contre le risque d'insolvabilité ou d'éloignement d'un cédant ?",
+          "options": [
+            "Une clause de non-concurrence à la charge des cédants",
+            "Une garantie de la garantie, par exemple une caution bancaire à première demande ou le séquestre d'une partie du prix",
+            "Une clause d'agrément dans les statuts de Maëlle",
+            "L'allongement de la durée de la garantie de passif"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "La garantie de la garantie (caution bancaire, garantie à première demande, séquestre d'une fraction du prix ou paiement différé) assure le paiement effectif de l'indemnité (option 2). La non-concurrence (option 1) protège la valeur de la clientèle, pas le recouvrement. L'agrément (option 3) contrôle l'entrée de nouveaux associés. Allonger la durée (option 4) n'apporte aucune sûreté si le débiteur est insolvable ou hors d'atteinte."
+        },
+        {
+          "id": "q4-beneficiaire",
+          "kind": "open",
+          "points": 3,
+          "prompt": "La clause prévoit une indemnisation de la société Maëlle. Distinguez cette garantie de passif d'une garantie de valeur et indiquez l'intérêt de chacune pour l'acquéreur.",
+          "model_answer": "La clause étudiée est une garantie de passif au sens strict : le bénéficiaire de l'indemnité est la société cible, Maëlle, dont le patrimoine est reconstitué à hauteur du passif révélé (ici 170 000 €). L'acquéreur n'en profite qu'indirectement, par la valeur de ses titres ; l'indemnité est un produit de la société. Dans une garantie de valeur (ou de prix), le bénéficiaire est l'acquéreur lui-même, Orion, qui obtient une réduction du prix d'acquisition, souvent calculée en fonction de l'incidence du passif sur la valeur des titres, et qui peut l'ajuster à son pourcentage de détention. La garantie de valeur protège mieux un acquéreur qui a payé un prix fondé sur un multiple de résultat ou de capitaux propres ; la garantie de passif protège la trésorerie de la cible et ses créanciers.",
+          "key_points": [
+            "Garantie de passif stricto sensu : indemnité versée à la société cible",
+            "Garantie de valeur : indemnité versée à l'acquéreur, réduction du prix",
+            "Incidence sur le patrimoine de la cible ou sur le prix des titres",
+            "Choix lié au mode de fixation du prix et au pourcentage acquis"
+          ]
+        }
+      ],
+      "total_points": 9,
+      "explanation": "Le cas mobilise les droits d'enregistrement sur cession d'actions, le jeu de la franchise et du plafond dans une garantie de passif, les sûretés garantissant son exécution et la distinction entre garantie de passif et garantie de valeur.",
+      "source_ref": "CGI art. 726 ; C. civ. art. 1103 (force obligatoire du contrat) et art. 2288 s. (cautionnement)",
+      "verified": true,
+      "estimated_seconds": 780
+    }
+  ]
+}
