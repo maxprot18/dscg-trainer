@@ -1,5 +1,3 @@
-import type { CSSProperties } from 'react'
-
 import type { UeId } from '@/content/schema'
 import { ueStyle } from '@/content/ue'
 import { cn } from '@/lib/utils'
@@ -8,7 +6,7 @@ import { cn } from '@/lib/utils'
 export function UeBadge({ ue, className, label }: { ue: UeId; className?: string; label?: string }) {
   return (
     <span
-      style={ueStyle(ue) as CSSProperties}
+      style={ueStyle(ue)}
       className={cn('inline-flex items-center gap-1.5 rounded-md border px-2 py-0.5 text-xs font-medium whitespace-nowrap', className)}
     >
       <span aria-hidden className="size-2 shrink-0 rounded-full bg-[var(--ue)]" />

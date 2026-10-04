@@ -19,7 +19,7 @@ export function Layout() {
   // « / » ouvre la recherche (hors saisie dans un champ).
   useKeyboard((key) => (key === '/' ? (navigate('/recherche'), true) : false), true)
   return (
-    <div className="mx-auto flex min-h-dvh max-w-3xl flex-col">
+    <div className="mx-auto flex min-h-dvh max-w-3xl flex-col lg:max-w-5xl">
       <header className="flex items-center justify-between px-4 pt-3">
         <Link to="/" className="text-muted-foreground text-sm font-semibold">
           DSCG Trainer
@@ -40,7 +40,7 @@ export function Layout() {
         </Suspense>
       </main>
       <nav className="bg-background/95 fixed inset-x-0 bottom-0 border-t backdrop-blur" aria-label="Navigation principale">
-        <ul className="mx-auto grid max-w-3xl grid-cols-4">
+        <ul className="mx-auto grid max-w-3xl grid-cols-4 lg:max-w-5xl">
           {links.map(({ to, label, icon: Icon }) => (
             <li key={to}>
               <NavLink
