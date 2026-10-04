@@ -92,10 +92,10 @@
       "tags": [
         "cession de fonds de commerce",
         "séquestre",
-        "775",
-        "675"
+        "757",
+        "657"
       ],
-      "statement": "Le 30 avril N, la SA Pélerin cède son fonds de commerce pour un prix global de 320 000 €. Le fonds comprend un fonds commercial acquis 180 000 € (non amorti, non déprécié) et du matériel industriel acquis 70 000 €, amorti à hauteur de 52 000 € à la date de cession (dotation de l'exercice déjà comptabilisée). Conformément à l'acte, le prix est versé entre les mains d'un séquestre pendant le délai d'opposition des créanciers. Passez l'écriture de cession chez la SA Pélerin, en utilisant les comptes 462, 775 et 675 et les comptes d'immobilisations et d'amortissements appropriés (2154 et 28154 pour le matériel).",
+      "statement": "Le 30 avril N, la SA Pélerin cède son fonds de commerce pour un prix global de 320 000 €. Le fonds comprend un fonds commercial acquis 180 000 € (non amorti, non déprécié) et du matériel industriel acquis 70 000 €, amorti à hauteur de 52 000 € à la date de cession (dotation de l'exercice déjà comptabilisée). Conformément à l'acte, le prix est versé entre les mains d'un séquestre pendant le délai d'opposition des créanciers. Passez l'écriture de cession chez la SA Pélerin, en utilisant les comptes 462, 757 et 657 et les comptes d'immobilisations et d'amortissements appropriés (2154 et 28154 pour le matériel).",
       "date": "30/04/N",
       "entries": [
         {
@@ -105,14 +105,14 @@
           "credit": 0
         },
         {
-          "account": "775",
-          "label": "Produits des cessions d'éléments d'actif",
+          "account": "757",
+          "label": "Produits des cessions d'immobilisations incorporelles et corporelles",
           "debit": 0,
           "credit": 320000
         },
         {
-          "account": "675",
-          "label": "Valeurs comptables des éléments d'actif cédés",
+          "account": "657",
+          "label": "Valeurs comptables des immobilisations incorporelles et corporelles cédées",
           "debit": 198000,
           "credit": 0
         },
@@ -135,8 +135,8 @@
           "credit": 70000
         }
       ],
-      "explanation": "Tant que le prix est séquestré, Pélerin détient une créance (462), et non une disponibilité. Le prix de cession est porté au crédit du 775. Les éléments cédés sortent pour leur valeur nette comptable : fonds commercial 180 000 € + matériel 70 000 − 52 000 = 18 000 €, soit 198 000 € au débit du 675 ; les amortissements (28154) sont soldés. Plus-value comptable : 320 000 − 198 000 = 122 000 €. À l'expiration du délai d'opposition, en l'absence d'opposition, le séquestre verse le prix : débit 512, crédit 462.",
-      "source_ref": "PCG (règl. ANC 2014-03), comptes 207, 2154, 28154, 462, 675 et 775 ; C. com. art. L. 141-14 (opposition des créanciers)",
+      "explanation": "Tant que le prix est séquestré, Pélerin détient une créance (462), et non une disponibilité. Le prix de cession est porté au crédit du 757. Les éléments cédés sortent pour leur valeur nette comptable : fonds commercial 180 000 € + matériel 70 000 − 52 000 = 18 000 €, soit 198 000 € au débit du 657 ; les amortissements (28154) sont soldés. Plus-value comptable : 320 000 − 198 000 = 122 000 €, en résultat d'exploitation depuis le règl. ANC 2022-06 (comptes 657 / 757, qui remplacent les anciens 675 / 775 pour les immobilisations incorporelles et corporelles). À l'expiration du délai d'opposition, en l'absence d'opposition, le séquestre verse le prix : débit 512, crédit 462.",
+      "source_ref": "PCG (règl. ANC 2014-03 modifié par le règl. ANC 2022-06), comptes 207, 2154, 28154, 462, 657 et 757 ; C. com. art. L. 141-14 (opposition des créanciers)",
       "verified": true,
       "estimated_seconds": 240
     },

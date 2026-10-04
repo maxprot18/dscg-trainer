@@ -87,11 +87,11 @@
         "écriture",
         "charges"
       ],
-      "statement": "La SAS Mirabelle avait conclu un contrat-cadre d'approvisionnement en marchandises comportant une faculté de dédit : chaque partie peut renoncer au contrat avant la première livraison moyennant le versement d'une somme de 8 000 €. Le 12 mai N, Mirabelle exerce cette faculté et verse les 8 000 € par virement bancaire. Le dédit n'est pas soumis à TVA. Comptabilisez le versement chez Mirabelle en utilisant le compte 6711 « Pénalités sur marchés et dédits payés sur achats et ventes ».",
+      "statement": "La SAS Mirabelle avait conclu un contrat-cadre d'approvisionnement en marchandises comportant une faculté de dédit : chaque partie peut renoncer au contrat avant la première livraison moyennant le versement d'une somme de 8 000 €. Le 12 mai N, Mirabelle exerce cette faculté et verse les 8 000 € par virement bancaire. Le dédit n'est pas soumis à TVA. Comptabilisez le versement chez Mirabelle en utilisant le compte 6581 « Pénalités sur marchés et dédits payés ».",
       "date": "12/05/N",
       "entries": [
         {
-          "account": "6711",
+          "account": "6581",
           "label": "Dédit versé au fournisseur",
           "debit": 8000,
           "credit": 0
@@ -103,8 +103,8 @@
           "credit": 8000
         }
       ],
-      "explanation": "Le dédit est le prix de la faculté de se retirer du contrat : il n'est pas la sanction d'une inexécution, le juge ne peut donc pas le modérer comme une clause pénale. Comptablement, c'est une charge, enregistrée au compte imposé par l'énoncé (6711), en contrepartie de la banque. Ce compte relève de la nomenclature antérieure au règlement ANC 2022-06 (exercices ouverts depuis le 1er janvier 2025), qui a remanié les comptes 67 et 77 : c'est pourquoi l'énoncé l'impose. Aucune TVA n'est à constater, l'énoncé précisant que le dédit n'y est pas soumis.",
-      "source_ref": "C. civ. art. 1231-5 (clause pénale, dont la jurisprudence distingue la faculté de dédit) ; compte imposé par l'énoncé (PCG, nomenclature antérieure au règl. ANC 2022-06)",
+      "explanation": "Le dédit est le prix de la faculté de se retirer du contrat : il n'est pas la sanction d'une inexécution, le juge ne peut donc pas le modérer comme une clause pénale. Comptablement, c'est une charge, enregistrée au compte 6581, en contrepartie de la banque. Depuis le règlement ANC 2022-06 (exercices ouverts à compter du 1er janvier 2025), les pénalités sur marchés et dédits payés ne relèvent plus du résultat exceptionnel : l'ancien compte 6711 est remplacé par le compte d'exploitation 6581. Aucune TVA n'est à constater, l'énoncé précisant que le dédit n'y est pas soumis.",
+      "source_ref": "C. civ. art. 1231-5 (clause pénale, dont la jurisprudence distingue la faculté de dédit) ; PCG (règl. ANC 2014-03 modifié par le règl. ANC 2022-06), comptes 6581 et 512",
       "estimated_seconds": 120,
       "verified": true
     },

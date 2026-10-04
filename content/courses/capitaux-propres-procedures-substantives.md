@@ -1,6 +1,6 @@
 # Capitaux propres — procédures substantives
 
-**Références :** NEP 330 ; C. com. art. L232-10 (réserve légale), L232-11 (bénéfice distribuable), L232-12 (acomptes sur dividendes), L225-144 (libération des actions) ; PCG, règles relatives aux subventions d'investissement (règl. ANC 2014-03) et CGI art. 42 septies ; comptes 101 à 145, 457, 777
+**Références :** NEP 330 ; C. com. art. L232-10 (réserve légale), L232-11 (bénéfice distribuable), L232-12 (acomptes sur dividendes), L225-144 (libération des actions) ; PCG, règles relatives aux subventions d'investissement (règl. ANC 2014-03 modifié par le règl. ANC 2022-06) et CGI art. 42 septies ; comptes 101 à 145, 457, 747
 
 - **Tableau de variation des capitaux propres** : expliquer chaque mouvement entre l'ouverture et la clôture et le relier à une pièce (PV, certificat, convention, calcul).
 - **Capital** : rapprocher le montant des statuts à jour, du Kbis et du registre des mouvements de titres. Augmentation en numéraire : bulletins de souscription, certificat du dépositaire, libération d'au moins un quart du nominal et de la totalité de la prime à la souscription (SA).

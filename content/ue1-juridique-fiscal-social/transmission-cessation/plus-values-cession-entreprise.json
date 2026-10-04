@@ -92,10 +92,10 @@
       "tags": [
         "cession de titres de participation",
         "reprise de dépréciation",
-        "775",
-        "675"
+        "7671",
+        "6671"
       ],
-      "statement": "Le 30 juin N, la SA Orsane cède pour 520 000 € la totalité de sa participation dans la société Delta (titres de participation acquis 380 000 €, dépréciés à hauteur de 60 000 € au 31 décembre N-1). Le prix est encaissé le jour même par virement. Passez l'écriture de cession et de reprise de la dépréciation devenue sans objet, en utilisant les comptes 512, 775, 675, 261, 2961 et 7866.",
+      "statement": "Le 30 juin N, la SA Orsane cède pour 520 000 € la totalité de sa participation dans la société Delta (titres de participation acquis 380 000 €, dépréciés à hauteur de 60 000 € au 31 décembre N-1). Le prix est encaissé le jour même par virement. Passez l'écriture de cession et de reprise de la dépréciation devenue sans objet, en utilisant les comptes 512, 7671, 6671, 261, 2961 et 7866.",
       "date": "30/06/N",
       "entries": [
         {
@@ -105,14 +105,14 @@
           "credit": 0
         },
         {
-          "account": "775",
-          "label": "Produits des cessions d'éléments d'actif",
+          "account": "7671",
+          "label": "Produits des cessions d'immobilisations financières",
           "debit": 0,
           "credit": 520000
         },
         {
-          "account": "675",
-          "label": "Valeurs comptables des éléments d'actif cédés",
+          "account": "6671",
+          "label": "Valeurs comptables des immobilisations financières cédées",
           "debit": 380000,
           "credit": 0
         },
@@ -135,8 +135,8 @@
           "credit": 60000
         }
       ],
-      "explanation": "Le prix encaissé est porté au crédit du 775 ; les titres sortent pour leur coût d'acquisition (débit 675, crédit 261). La dépréciation, devenue sans objet, est reprise (débit 2961, crédit 7866). Effet sur le résultat comptable : 520 000 − 380 000 + 60 000 = 200 000 €. Fiscalement, la plus-value de cession (520 000 − 380 000 = 140 000 €) relève du régime du long terme des titres de participation détenus depuis au moins 2 ans : seule une quote-part de frais et charges de 12 % est imposée au taux normal.",
-      "source_ref": "PCG (règl. ANC 2014-03), comptes 261, 2961, 675, 775 et 7866 ; CGI art. 219 I a quinquies",
+      "explanation": "Le prix encaissé est porté au crédit du 7671 ; les titres sortent pour leur coût d'acquisition (débit 6671, crédit 261). Depuis le règl. ANC 2022-06, la cession d'immobilisations financières relève du résultat financier (comptes 6671 / 7671, qui remplacent les anciens 675 / 775). La dépréciation, devenue sans objet, est reprise (débit 2961, crédit 7866). Effet sur le résultat comptable : 520 000 − 380 000 + 60 000 = 200 000 €. Fiscalement, la plus-value de cession (520 000 − 380 000 = 140 000 €) relève, si les titres sont détenus depuis au moins 2 ans (durée que l'énoncé ne précise pas), du régime du long terme des titres de participation : seule une quote-part de frais et charges de 12 % est alors imposée au taux normal ; à défaut, elle est imposée en totalité au taux normal.",
+      "source_ref": "PCG (règl. ANC 2014-03 modifié par le règl. ANC 2022-06), comptes 261, 2961, 6671, 7671 et 7866 ; CGI art. 219 I a quinquies",
       "verified": true,
       "estimated_seconds": 210
     }

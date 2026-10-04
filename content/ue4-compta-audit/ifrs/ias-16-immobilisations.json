@@ -114,11 +114,11 @@
         "remplacement",
         "décomptabilisation"
       ],
-      "source_ref": "IAS 16 §13, §67-72 (règlement UE 2023/1803) ; PCG comptes 213, 2813 et 675",
+      "source_ref": "IAS 16 §13, §67-72 (règlement UE 2023/1803) ; PCG (règl. ANC 2022-06) comptes 213, 2813 et 657",
       "verified": true,
       "estimated_seconds": 180,
-      "explanation": "Lors du remplacement d'un composant, le coût du nouveau composant est inscrit à l'actif et la valeur comptable de la partie remplacée est décomptabilisée (IAS 16 §13 et §70). Amortissements cumulés de l'ancienne toiture : 120 000 × 15 / 20 = 90 000 € ; valeur nette comptable : 30 000 €. On solde le coût (crédit 213 : 120 000 €) et les amortissements (débit 2813 : 90 000 €), la valeur nette comptable de 30 000 € étant comptabilisée en charge (perte de décomptabilisation en résultat, §68 et §71). La nouvelle toiture (150 000 €) sera immobilisée au débit du compte 213 et amortie sur sa propre durée d'utilité.",
-      "statement": "La toiture d'un entrepôt de la société Guidel (IFRS) a été identifiée comme un composant distinct, d'un coût de 120 000 €, amorti linéairement sur 20 ans sans valeur résiduelle. Au 31/12/N, après exactement 15 ans d'utilisation (amortissements de N comptabilisés), elle est démolie et remplacée par une nouvelle toiture de 150 000 €. Passez l'écriture de sortie de l'ancienne toiture au 31/12/N (l'écriture d'acquisition de la nouvelle toiture n'est pas demandée). Utilisez le compte 675 pour la valeur comptable de l'élément sorti.",
+      "explanation": "Lors du remplacement d'un composant, le coût du nouveau composant est inscrit à l'actif et la valeur comptable de la partie remplacée est décomptabilisée (IAS 16 §13 et §70). Amortissements cumulés de l'ancienne toiture : 120 000 × 15 / 20 = 90 000 € ; valeur nette comptable : 30 000 €. On solde le coût (crédit 213 : 120 000 €) et les amortissements (débit 2813 : 90 000 €), la valeur nette comptable de 30 000 € étant comptabilisée en charge au compte 657 (perte de décomptabilisation en résultat, §68 et §71). La nouvelle toiture (150 000 €) sera immobilisée au débit du compte 213 et amortie sur sa propre durée d'utilité.",
+      "statement": "La toiture d'un entrepôt de la société Guidel (IFRS) a été identifiée comme un composant distinct, d'un coût de 120 000 €, amorti linéairement sur 20 ans sans valeur résiduelle. Au 31/12/N, après exactement 15 ans d'utilisation (amortissements de N comptabilisés), elle est démolie et remplacée par une nouvelle toiture de 150 000 €. Passez l'écriture de sortie de l'ancienne toiture au 31/12/N (l'écriture d'acquisition de la nouvelle toiture n'est pas demandée). Utilisez le compte 657 pour la valeur comptable de l'élément sorti.",
       "date": "31/12/N",
       "entries": [
         {
@@ -128,8 +128,8 @@
           "credit": 0
         },
         {
-          "account": "675",
-          "label": "Valeurs comptables des éléments d'actif cédés",
+          "account": "657",
+          "label": "Valeurs comptables des immobilisations incorporelles et corporelles cédées",
           "debit": 30000,
           "credit": 0
         },

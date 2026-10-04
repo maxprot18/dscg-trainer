@@ -84,7 +84,7 @@
         "sortie d’immobilisation",
         "indemnité d’assurance"
       ],
-      "statement": "Le 30 septembre N, un dégât des eaux détruit un serveur acquis 48 000 € HT le 1er juillet N-2, amorti en linéaire sur 4 ans. La dotation aux amortissements de N jusqu'au 30 septembre a déjà été comptabilisée. Le même jour, l'assureur notifie son accord pour une indemnité de 15 000 €, qui sera versée en octobre.\nPassez l'écriture du 30 septembre N constatant la sortie du serveur et l'indemnité.\nConventions : comptes 2183 (matériel informatique), 2818 (amortissements), 675 (valeurs comptables des éléments d'actif cédés) ; la créance sur l'assureur est enregistrée au compte 467 et l'indemnité, qui compense la perte d'une immobilisation, au compte 7788 (produits exceptionnels divers).",
+      "statement": "Le 30 septembre N, un dégât des eaux détruit un serveur acquis 48 000 € HT le 1er juillet N-2, amorti en linéaire sur 4 ans. La dotation aux amortissements de N jusqu'au 30 septembre a déjà été comptabilisée. Le même jour, l'assureur notifie son accord pour une indemnité de 15 000 €, qui sera versée en octobre.\nPassez l'écriture du 30 septembre N constatant la sortie du serveur et l'indemnité.\nConventions : comptes 2183 (matériel informatique), 2818 (amortissements), 657 (valeurs comptables des immobilisations incorporelles et corporelles cédées) ; la créance sur l'assureur est enregistrée au compte 467 et l'indemnité, qui compense la perte d'une immobilisation et est assimilée à un prix de cession, au compte 757 (produits des cessions d'immobilisations incorporelles et corporelles).",
       "date": "30/09/N",
       "entries": [
         {
@@ -94,7 +94,7 @@
           "credit": 0
         },
         {
-          "account": "675",
+          "account": "657",
           "label": "Valeur nette comptable du serveur détruit",
           "debit": 21000,
           "credit": 0
@@ -112,14 +112,14 @@
           "credit": 0
         },
         {
-          "account": "7788",
+          "account": "757",
           "label": "Indemnité d’assurance",
           "debit": 0,
           "credit": 15000
         }
       ],
-      "explanation": "Amortissements cumulés du 1er juillet N-2 au 30 septembre N : 27 mois, soit 48 000 × 27 ÷ 48 = 27 000 € ; VNC = 21 000 €. Le serveur détruit sort de l'actif comme une cession : on solde 2183 et 2818 et la VNC passe en charge (675). L'indemnité est acquise dès l'accord de l'assureur : créance (467) et produit (7788). Perte nette du sinistre = 21 000 − 15 000 = 6 000 €. Une indemnité couvrant des charges d'exploitation (frais de reconstitution des données, location d'un matériel de secours) relèverait d'un autre classement, d'où la convention imposée ; les comptes de transferts de charges (79) ayant été supprimés par le règl. ANC 2022-06, l'indemnité est enregistrée directement en produit.",
-      "source_ref": "PCG (règl. ANC 2014-03) : comptes 2183, 2818, 675, 467, 7788 ; sortie d’une immobilisation détruite",
+      "explanation": "Amortissements cumulés du 1er juillet N-2 au 30 septembre N : 27 mois, soit 48 000 × 27 ÷ 48 = 27 000 € ; VNC = 21 000 €. Le serveur détruit sort de l'actif comme une cession : on solde 2183 et 2818 et la VNC passe en charge (657). L'indemnité est acquise dès l'accord de l'assureur : créance (467) et produit (757). Perte nette du sinistre = 21 000 − 15 000 = 6 000 €. Depuis le règl. ANC 2022-06 (exercices ouverts à compter du 1er janvier 2025), les anciens comptes 675 et 775 sont supprimés : la sortie d'une immobilisation corporelle relève des comptes 657 / 757 (résultat d'exploitation). L'indemnité qui compense la destruction totale ou le vol d'une immobilisation est assimilée à un prix de cession (757) ; une indemnité couvrant des charges d'exploitation (réparation d'un bien conservé, reconstitution des données, location d'un matériel de secours) relèverait du compte 7587 « Indemnités d'assurance », et seul un sinistre constituant un événement majeur et inhabituel justifierait un classement en résultat exceptionnel (778), d'où la convention imposée. Les comptes de transferts de charges (79) ayant été supprimés par le même règlement, l'indemnité est enregistrée directement en produit.",
+      "source_ref": "PCG (règl. ANC 2014-03 modifié par le règl. ANC 2022-06) : comptes 2183, 2818, 657, 467, 757 ; sortie d’une immobilisation détruite",
       "estimated_seconds": 240,
       "verified": true
     }

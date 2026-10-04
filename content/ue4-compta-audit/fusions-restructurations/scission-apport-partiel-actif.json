@@ -112,7 +112,7 @@
         "apporteuse",
         "valeur comptable"
       ],
-      "statement": "La société Ardoise SA filialise sa branche « couverture » en créant la société Zinc SAS, dont elle reçoit les 28 000 actions de 10 € de nominal. Éléments apportés (valeurs comptables chez Ardoise) : matériel industriel brut 400 000 €, amorti pour 150 000 € ; stocks de marchandises 60 000 € ; dettes fournisseurs 30 000 €. Passez chez Ardoise l'écriture unique de réalisation de l'apport, sans passer par les comptes de cession (675, 775) ni par un compte de créance sur la bénéficiaire.",
+      "statement": "La société Ardoise SA filialise sa branche « couverture » en créant la société Zinc SAS, dont elle reçoit les 28 000 actions de 10 € de nominal. Éléments apportés (valeurs comptables chez Ardoise) : matériel industriel brut 400 000 €, amorti pour 150 000 € ; stocks de marchandises 60 000 € ; dettes fournisseurs 30 000 €. Passez chez Ardoise l'écriture unique de réalisation de l'apport, sans passer par les comptes de cession d'immobilisations (657, 757) ni par un compte de créance sur la bénéficiaire.",
       "date": "Date de réalisation de l'apport",
       "entries": [
         {
