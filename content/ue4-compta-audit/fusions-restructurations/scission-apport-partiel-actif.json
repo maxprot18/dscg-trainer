@@ -1,0 +1,281 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-fusion-scission-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "scission-apport-partiel-actif",
+      "difficulty": 1,
+      "tags": [
+        "apport partiel d'actif",
+        "scission",
+        "rémunération"
+      ],
+      "statement": "La société Lin SA apporte sa branche « textiles techniques » à la société Chanvre SA. Il s'agit d'un apport partiel d'actif. Quelle affirmation est exacte ?",
+      "options": [
+        "Lin est dissoute sans liquidation et ses actionnaires reçoivent les actions émises par Chanvre",
+        "Lin est dissoute, mais seulement après liquidation de ses autres activités",
+        "Lin subsiste et reçoit elle-même les actions émises par Chanvre",
+        "Lin subsiste et reçoit de Chanvre un paiement intégral en numéraire"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Dans un apport partiel d'actif, la société apporteuse survit et reçoit elle-même les titres émis par la bénéficiaire en rémunération de son apport (option 3). L'option 1 décrit la scission : dissolution sans liquidation et titres remis aux associés. L'option 2 est fausse : l'APA n'entraîne aucune dissolution. L'option 4 est fausse : la rémunération d'un apport consiste en titres de la bénéficiaire ; un paiement intégral en numéraire serait une cession, non un apport.",
+      "source_ref": "C. com. art. L. 236-1 et s.",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-fusion-scission-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "scission-apport-partiel-actif",
+      "difficulty": 2,
+      "tags": [
+        "apport partiel d'actif",
+        "filialisation",
+        "valeur comptable"
+      ],
+      "statement": "La société Sorgho SA, cotée et sans actionnaire de contrôle, crée une filiale Millet SAS par apport de sa branche « semences ». Millet est détenue à 100 % par Sorgho après l'opération. La valeur nette comptable de la branche est de 1,8 M€ et un expert l'estime à 3,2 M€. Comment les apports doivent-ils être évalués ?",
+      "options": [
+        "À la valeur comptable, l'opération étant réalisée sous contrôle commun",
+        "À la valeur réelle, car la société bénéficiaire est nouvelle",
+        "Au choix des parties, à condition de le justifier dans le traité d'apport",
+        "À la valeur de marché, car le titre VII du PCG ne vise que les fusions"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "La société créée par l'apport est contrôlée par l'apporteuse : l'opération est réalisée entre sociétés sous contrôle commun, donc évaluée à la valeur comptable (option 1), quelle que soit la valeur d'expertise. L'option 2 est fausse : la valeur réelle concerne le contrôle distinct à l'endroit, ce qui n'est pas le cas ici. L'option 3 est fausse : la valeur d'apport n'est pas laissée au choix des parties, elle découle du contrôle et du sens de l'opération. L'option 4 est fausse : le titre VII du PCG s'applique aux apports partiels d'actif, et l'apport d'une branche ne se traite pas comme une cession d'éléments isolés.",
+      "source_ref": "PCG titre VII (règl. ANC 2014-03 modifié par le règl. ANC 2017-01), règles d'évaluation des apports",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-fusion-scission-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "scission-apport-partiel-actif",
+      "difficulty": 2,
+      "tags": [
+        "apport partiel d'actif",
+        "apporteuse",
+        "plus-value d'apport"
+      ],
+      "statement": "Dans un apport partiel d'actif évalué à la valeur réelle, la société apporteuse inscrit les titres reçus pour la valeur d'apport et constate un résultat égal à la différence entre cette valeur et la valeur nette comptable des éléments apportés.",
+      "answer": true,
+      "justification": "Vrai : les titres entrent à la valeur d'apport, les éléments sortent à leur VNC ; l'écart est une plus-value (ou moins-value) d'apport.",
+      "explanation": "Chez l'apporteuse, l'apport s'analyse comme un échange : les éléments apportés sortent pour leur valeur nette comptable et les titres reçus entrent pour la valeur d'apport fixée au traité. Lorsque cette valeur est la valeur réelle (contrôle distinct à l'endroit), l'écart constitue un résultat pour l'apporteuse. À la valeur comptable, titres reçus et VNC sortie se compensent et aucun résultat n'apparaît.",
+      "source_ref": "PCG titre VII (règl. ANC 2014-03 modifié par le règl. ANC 2017-01) ; compte 261",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-fusion-scission-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "scission-apport-partiel-actif",
+      "difficulty": 2,
+      "tags": [
+        "apport partiel d'actif",
+        "prime d'apport",
+        "valeur réelle"
+      ],
+      "statement": "La société Avoine SA apporte une branche complète d'activité à la société Seigle SA, qu'elle ne contrôle pas. Le capital de Seigle est composé de 100 000 actions de 10 € de nominal, d'une valeur réelle unitaire de 25 €. La branche a une valeur nette comptable de 520 000 € et une valeur réelle de 750 000 € ; l'opération est en contrôle distinct, à l'endroit, et la parité est fondée sur ces valeurs réelles. Calculez la prime d'apport comptabilisée par Seigle, en euros.",
+      "expected_value": 450000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Contrôle distinct à l'endroit : apports à la valeur réelle, 750 000 €. Nombre d'actions émises = 750 000 ÷ 25 = 30 000. Augmentation de capital = 30 000 × 10 = 300 000 €. Prime d'apport = 750 000 − 300 000 = 450 000 €. Après l'opération, Avoine détient 30 000 ÷ 130 000 ≈ 23 % de Seigle : elle n'en prend pas le contrôle, ce qui confirme le sens « à l'endroit ». Erreur classique : calculer la prime à partir de la valeur nette comptable de la branche.",
+      "source_ref": "PCG titre VII (règl. ANC 2014-03 modifié par le règl. ANC 2017-01) ; compte 1043",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue4-fusion-scission-0005",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "scission-apport-partiel-actif",
+      "difficulty": 2,
+      "tags": [
+        "apport partiel d'actif",
+        "filialisation",
+        "apporteuse",
+        "valeur comptable"
+      ],
+      "statement": "La société Ardoise SA filialise sa branche « couverture » en créant la société Zinc SAS, dont elle reçoit les 28 000 actions de 10 € de nominal. Éléments apportés (valeurs comptables chez Ardoise) : matériel industriel brut 400 000 €, amorti pour 150 000 € ; stocks de marchandises 60 000 € ; dettes fournisseurs 30 000 €. Passez chez Ardoise l'écriture unique de réalisation de l'apport, sans passer par les comptes de cession (675, 775) ni par un compte de créance sur la bénéficiaire.",
+      "date": "Date de réalisation de l'apport",
+      "entries": [
+        {
+          "account": "261",
+          "label": "Titres de participation Zinc",
+          "debit": 280000,
+          "credit": 0
+        },
+        {
+          "account": "2815",
+          "label": "Amortissements du matériel industriel",
+          "debit": 150000,
+          "credit": 0
+        },
+        {
+          "account": "401",
+          "label": "Fournisseurs",
+          "debit": 30000,
+          "credit": 0
+        },
+        {
+          "account": "2154",
+          "label": "Matériel industriel",
+          "debit": 0,
+          "credit": 400000
+        },
+        {
+          "account": "37",
+          "label": "Stocks de marchandises",
+          "debit": 0,
+          "credit": 60000
+        }
+      ],
+      "explanation": "Filialisation dans une société nouvelle : contrôle commun, apports à la valeur comptable. Actif net apporté = (400 000 − 150 000) + 60 000 − 30 000 = 280 000 € ; les 28 000 actions de 10 € reçues sont inscrites pour 280 000 € en titres de participation. Les éléments apportés sortent pour leur valeur nette comptable : le matériel est soldé en brut (crédit 2154) avec ses amortissements (débit 2815), les stocks sont crédités et la dette fournisseurs transmise débitée. Titres reçus = VNC sortie : aucun résultat. Contrôle : 460 000 = 460 000.",
+      "source_ref": "PCG titre VII (règl. ANC 2014-03 modifié par le règl. ANC 2017-01) ; comptes 261, 2154, 2815, 37, 401",
+      "verified": true,
+      "estimated_seconds": 300
+    },
+    {
+      "id": "ue4-fusion-scission-0006",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "scission-apport-partiel-actif",
+      "difficulty": 3,
+      "tags": [
+        "apport partiel d'actif",
+        "valeur réelle",
+        "fonds commercial",
+        "prime d'apport",
+        "plus-value d'apport"
+      ],
+      "title": "Apport de la branche « emballages » de Cobalt à Nickel",
+      "context": "La société Cobalt SA, indépendante, apporte sa branche « emballages » à la société Nickel SA, dont le capital est composé de 50 000 actions de 10 € de nominal détenues par des actionnaires sans lien avec Cobalt.\nÉléments de la branche (valeur nette comptable chez Cobalt / valeur réelle) :\n- matériel industriel : brut 500 000 €, amortissements 200 000 €, soit VNC 300 000 € / valeur réelle 380 000 € ;\n- stocks de marchandises : 90 000 € / 100 000 € ;\n- dettes fournisseurs : 70 000 € / 70 000 €.\nLa clientèle de la branche n'est pas inscrite au bilan de Cobalt. Le traité d'apport retient une valeur globale de la branche de 560 000 €. La valeur réelle de l'action Nickel est de 40 €.\nLes parties ont placé l'opération sous le régime juridique des scissions.\nOn ignore la fiscalité.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "mcq",
+          "prompt": "Selon quelle méthode les apports doivent-ils être évalués ?",
+          "points": 2,
+          "options": [
+            "Valeur comptable, car il s'agit d'un apport partiel d'actif",
+            "Valeur réelle, car l'opération est en contrôle distinct et Cobalt ne prend pas le contrôle de Nickel",
+            "Valeur comptable, car la clientèle n'est pas inscrite au bilan",
+            "Valeur réelle uniquement pour le matériel, valeur comptable pour le reste"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "Cobalt et Nickel sont indépendantes et Cobalt ne détiendra qu'une minorité de Nickel (voir q2) : contrôle distinct, à l'endroit, donc valeur réelle (option 2). L'option 1 est fausse : la forme d'APA ne dicte pas la méthode. L'option 3 est fausse : un élément non inscrit peut être apporté à sa valeur réelle. L'option 4 est fausse : la méthode s'applique à l'ensemble des apports."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "prompt": "Combien d'actions Nickel doit-elle émettre en rémunération de l'apport ?",
+          "points": 2,
+          "expected_value": 14000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "actions",
+          "decimals": 0,
+          "explanation": "560 000 ÷ 40 = 14 000 actions. Cobalt détiendra 14 000 ÷ 64 000 ≈ 21,9 % de Nickel : pas de prise de contrôle."
+        },
+        {
+          "id": "q3",
+          "kind": "numeric",
+          "prompt": "Calculez la plus-value d'apport constatée par Cobalt, en euros.",
+          "points": 3,
+          "expected_value": 240000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Actif net apporté en VNC = 300 000 + 90 000 − 70 000 = 320 000 €. Plus-value d'apport = 560 000 − 320 000 = 240 000 €."
+        },
+        {
+          "id": "q4",
+          "kind": "journal_entry",
+          "prompt": "Passez chez Nickel l'écriture de réception des apports et d'augmentation de capital, en une seule écriture et sans passer par un compte d'associé.",
+          "points": 5,
+          "entries": [
+            {
+              "account": "207",
+              "label": "Fonds commercial",
+              "debit": 150000,
+              "credit": 0
+            },
+            {
+              "account": "2154",
+              "label": "Matériel industriel",
+              "debit": 380000,
+              "credit": 0
+            },
+            {
+              "account": "37",
+              "label": "Stocks de marchandises",
+              "debit": 100000,
+              "credit": 0
+            },
+            {
+              "account": "401",
+              "label": "Fournisseurs",
+              "debit": 0,
+              "credit": 70000
+            },
+            {
+              "account": "101",
+              "label": "Capital",
+              "debit": 0,
+              "credit": 140000
+            },
+            {
+              "account": "1043",
+              "label": "Prime d'apport",
+              "debit": 0,
+              "credit": 420000
+            }
+          ],
+          "explanation": "Le matériel entre pour sa valeur réelle (380 000 €), qui devient sa base amortissable, sans reprise des amortissements de Cobalt. Actif net identifiable à la valeur réelle = 380 000 + 100 000 − 70 000 = 410 000 € ; l'écart avec la valeur globale (560 000 − 410 000 = 150 000 €) est inscrit en fonds commercial. Capital = 14 000 × 10 = 140 000 € ; prime d'apport = 560 000 − 140 000 = 420 000 €."
+        },
+        {
+          "id": "q5",
+          "kind": "open",
+          "prompt": "Expliquez pourquoi Cobalt n'est pas dissoute et ce qu'apporte le placement de l'opération sous le régime des scissions.",
+          "points": 3,
+          "model_answer": "Dans un apport partiel d'actif, Cobalt n'apporte qu'une partie de son patrimoine et reçoit elle-même les titres émis par Nickel : elle conserve ses autres activités et n'est donc pas dissoute, contrairement à une scission où la société transmet tout son patrimoine et disparaît, ses associés recevant les titres. Le régime des scissions permet de transmettre la branche à titre universel : tous les actifs et passifs qui s'y rattachent passent à Nickel par le seul effet de l'opération, sans cession élément par élément.",
+          "key_points": [
+            "Apport d'une partie du patrimoine seulement : Cobalt subsiste",
+            "Titres reçus par Cobalt elle-même, et non par ses associés",
+            "Régime des scissions : transmission universelle de la branche, actifs et passifs, sans formalités de cession séparées"
+          ]
+        }
+      ],
+      "total_points": 15,
+      "explanation": "Le cas enchaîne les deux côtés d'un apport partiel d'actif en contrôle distinct à l'endroit : détermination de la méthode, rémunération, résultat chez l'apporteuse, écriture chez la bénéficiaire et régime juridique.",
+      "source_ref": "PCG titre VII (règl. ANC 2014-03 modifié par le règl. ANC 2017-01) ; C. com. art. L. 236-1 et s. ; comptes 207, 1043, 261",
+      "verified": true,
+      "estimated_seconds": 900
+    }
+  ]
+}

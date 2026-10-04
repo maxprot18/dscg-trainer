@@ -1,0 +1,185 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-fusion-tup-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "fusion-simplifiee-tup",
+      "difficulty": 1,
+      "tags": [
+        "TUP",
+        "dissolution",
+        "opposition des créanciers"
+      ],
+      "statement": "La société Holding Saule SA détient la totalité des parts de la SARL Tilleul. Elle décide de dissoudre Tilleul en application de l'article 1844-5, alinéa 3, du Code civil. À quel moment le patrimoine de Tilleul est-il transmis à Holding Saule ?",
+      "options": [
+        "À la date de la décision de dissolution prise par l'associé unique",
+        "À l'expiration du délai d'opposition de 30 jours des créanciers, ou après rejet des oppositions, remboursement des créances ou constitution de garanties",
+        "À la clôture des opérations de liquidation de Tilleul",
+        "Au premier jour de l'exercice en cours de Holding Saule"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La transmission n'intervient qu'à l'issue du délai d'opposition de 30 jours ouvert aux créanciers à compter de la publication de la dissolution, ou après rejet de l'opposition, remboursement des créances ou constitution de garanties (option 2). L'option 1 est fausse : la décision de dissolution ouvre le délai d'opposition mais ne transmet pas encore le patrimoine. L'option 3 est fausse : la TUP se fait justement sans liquidation. L'option 4 est fausse : le Code civil ne rattache pas la transmission au début de l'exercice de l'associé unique.",
+      "source_ref": "C. civ. art. 1844-5 al. 3",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-fusion-tup-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "fusion-simplifiee-tup",
+      "difficulty": 2,
+      "tags": [
+        "fusion simplifiée",
+        "formalités",
+        "commissaire à la fusion"
+      ],
+      "statement": "La société Orme SA détient, depuis plusieurs années, 100 % des actions de la société Frêne SAS et prévoit de l'absorber selon la procédure de fusion simplifiée. Laquelle des formalités suivantes reste obligatoire ?",
+      "options": [
+        "L'approbation de la fusion par l'assemblée générale extraordinaire de Frêne",
+        "Le rapport d'un commissaire à la fusion sur la valeur des apports et la parité",
+        "L'émission par Orme d'actions nouvelles remises en échange des actions Frêne",
+        "L'établissement d'un projet de fusion, son dépôt au greffe et sa publicité"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Même simplifiée, la fusion suppose un projet de fusion établi, déposé au greffe et publié (option 4) : c'est lui qui ouvre la période pendant laquelle la détention de 100 % doit être permanente. L'option 1 est fausse : l'article L. 236-11 dispense d'approbation par l'assemblée extraordinaire de l'absorbée. L'option 2 est fausse : aucun rapport du commissaire à la fusion n'est requis, faute de parité à apprécier. L'option 3 est fausse : il n'est pas procédé à l'échange de titres lorsque l'absorbante détient la totalité du capital de l'absorbée (art. L. 236-3 II) ; les titres détenus sont annulés.",
+      "source_ref": "C. com. art. L. 236-11 et L. 236-3 II",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-fusion-tup-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "fusion-simplifiee-tup",
+      "difficulty": 1,
+      "tags": [
+        "TUP",
+        "associé unique",
+        "personne physique"
+      ],
+      "statement": "La dissolution d'une SARL dont toutes les parts sont détenues par une personne physique entraîne la transmission universelle de son patrimoine à cet associé, sans liquidation.",
+      "answer": false,
+      "justification": "Faux : la TUP sans liquidation n'est ouverte qu'à l'associé unique personne morale ; une personne physique doit passer par une liquidation.",
+      "explanation": "L'article 1844-5 du Code civil réserve la transmission universelle sans liquidation au cas où l'associé unique est une personne morale ; son dernier alinéa l'écarte expressément lorsque l'associé unique est une personne physique. Dans ce cas, la dissolution de la société entraîne sa liquidation selon le droit commun (réalisation de l'actif, paiement du passif, partage du boni de liquidation).",
+      "source_ref": "C. civ. art. 1844-5 al. 3 et 4",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-fusion-tup-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "fusion-simplifiee-tup",
+      "difficulty": 2,
+      "tags": [
+        "TUP",
+        "boni de fusion",
+        "résultats accumulés"
+      ],
+      "statement": "La société Charme SA a acquis 100 % des titres de la société Bouleau SARL pour 220 000 €, à une date où les capitaux propres de Bouleau s'élevaient à 260 000 €. Depuis, Bouleau n'a réalisé aucune opération sur son capital et n'a distribué aucun dividende. Charme décide la dissolution de Bouleau avec transmission universelle de patrimoine ; à la date de la transmission, l'actif net comptable de Bouleau, retenu comme valeur d'apport, s'élève à 340 000 €. Quel montant du boni Charme doit-elle comptabiliser en produits financiers ? Réponse en euros.",
+      "expected_value": 80000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Actif net apporté (valeur comptable) = 340 000 €. Boni = 340 000 − 220 000 = 120 000 €. Résultats accumulés depuis l'acquisition et non distribués = variation des capitaux propres sans autre opération = 340 000 − 260 000 = 80 000 €. Le boni est inscrit en résultat financier à hauteur de ces résultats, soit min(120 000 ; 80 000) = 80 000 € ; le solde, 40 000 €, va en capitaux propres. Il correspond à l'écart entre les capitaux propres de Bouleau lors de l'achat (260 000 €) et le prix payé (220 000 €), qui n'est pas un résultat généré depuis l'acquisition. Erreur classique : inscrire tout le boni (120 000 €) en résultat.",
+      "source_ref": "PCG titre VII (règl. ANC 2014-03 modifié par le règl. ANC 2017-01), comptabilisation du boni de fusion ; compte 768",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue4-fusion-tup-0005",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "fusion-simplifiee-tup",
+      "difficulty": 3,
+      "tags": [
+        "TUP",
+        "boni de fusion",
+        "valeur comptable",
+        "reprise des amortissements"
+      ],
+      "statement": "La société Mélèze SA détient 100 % des titres de la société Cèdre SARL, acquis pour 260 000 € (compte 261) lorsque les capitaux propres de Cèdre s'élevaient à 310 000 €. Depuis, Cèdre n'a ni modifié son capital ni distribué de dividende. Mélèze procède à la TUP de Cèdre ; le bilan de Cèdre à la date de la transmission est le suivant : constructions 600 000 € (amorties à hauteur de 250 000 €), stocks de marchandises 80 000 €, créances clients 70 000 €, banque 40 000 €, emprunt bancaire 120 000 €, dettes fournisseurs 60 000 €. Passez chez Mélèze l'écriture unique de reprise du patrimoine et d'annulation des titres, en reprenant les valeurs brutes et les amortissements. Utilisez le compte 768 pour la part du boni inscrite en résultat et le compte 1042 pour la part inscrite en capitaux propres ; on ignore la fiscalité.",
+      "date": "Date de la transmission universelle de patrimoine",
+      "entries": [
+        {
+          "account": "213",
+          "label": "Constructions",
+          "debit": 600000,
+          "credit": 0
+        },
+        {
+          "account": "37",
+          "label": "Stocks de marchandises",
+          "debit": 80000,
+          "credit": 0
+        },
+        {
+          "account": "411",
+          "label": "Clients",
+          "debit": 70000,
+          "credit": 0
+        },
+        {
+          "account": "512",
+          "label": "Banque",
+          "debit": 40000,
+          "credit": 0
+        },
+        {
+          "account": "2813",
+          "label": "Amortissements des constructions",
+          "debit": 0,
+          "credit": 250000
+        },
+        {
+          "account": "164",
+          "label": "Emprunts auprès des établissements de crédit",
+          "debit": 0,
+          "credit": 120000
+        },
+        {
+          "account": "401",
+          "label": "Fournisseurs",
+          "debit": 0,
+          "credit": 60000
+        },
+        {
+          "account": "261",
+          "label": "Titres de participation Cèdre",
+          "debit": 0,
+          "credit": 260000
+        },
+        {
+          "account": "768",
+          "label": "Boni de fusion en résultat financier",
+          "debit": 0,
+          "credit": 50000
+        },
+        {
+          "account": "1042",
+          "label": "Boni de fusion en capitaux propres",
+          "debit": 0,
+          "credit": 50000
+        }
+      ],
+      "explanation": "TUP d'une filiale à 100 % : contrôle commun, apports à la valeur comptable. L'absorbante reprend le détail des valeurs : constructions 600 000 € en brut et 250 000 € d'amortissements. Actif net apporté = 600 000 − 250 000 + 80 000 + 70 000 + 40 000 − 120 000 − 60 000 = 360 000 €. Boni = 360 000 − 260 000 (titres annulés) = 100 000 €. Résultats accumulés depuis l'acquisition et non distribués = 360 000 − 310 000 = 50 000 € : 50 000 € en résultat financier (768) ; le surplus, 50 000 €, en capitaux propres (1042 selon la convention de l'énoncé). Contrôle : débits 790 000 = crédits 790 000.",
+      "source_ref": "PCG titre VII (règl. ANC 2014-03 modifié par le règl. ANC 2017-01), reprise des valeurs brutes et amortissements et comptabilisation du boni ; comptes 213, 2813, 261, 768",
+      "verified": true,
+      "estimated_seconds": 420
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-fusion-fiscal-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "fusion-incidences-fiscales",
+      "difficulty": 2,
+      "tags": [
+        "régime de faveur",
+        "engagements de l'absorbante",
+        "CGI 210 A"
+      ],
+      "statement": "Dans une fusion placée sous le régime de faveur de l'article 210 A du CGI, laquelle des obligations suivantes ne figure PAS parmi les engagements de la société absorbante ?",
+      "options": [
+        "Acquitter immédiatement l'impôt sur la plus-value dégagée sur les immobilisations non amortissables apportées",
+        "Reprendre à son passif les provisions de l'absorbée dont l'imposition est différée",
+        "Calculer les plus-values de cession ultérieure des immobilisations non amortissables d'après leur valeur fiscale chez l'absorbée",
+        "Réintégrer dans ses résultats imposables, de manière étalée, les plus-values dégagées sur les biens amortissables apportés"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Le régime de faveur exonère précisément la plus-value sur immobilisations non amortissables chez l'absorbée : elle est placée en sursis, l'absorbante calculant la plus-value de cession ultérieure d'après la valeur fiscale chez l'absorbée. Payer immédiatement l'impôt n'est donc pas un engagement du régime (option 1). Les options 2, 3 et 4 reprennent des engagements de l'article 210 A : reprise des provisions dont l'imposition est différée, calcul des plus-values ultérieures sur la valeur fiscale d'origine, réintégration étalée des plus-values sur biens amortissables.",
+      "source_ref": "CGI art. 210 A",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-fusion-fiscal-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "fusion-incidences-fiscales",
+      "difficulty": 2,
+      "tags": [
+        "apport partiel d'actif",
+        "CGI 210 B",
+        "titres reçus",
+        "plus-value en sursis"
+      ],
+      "statement": "La société Basalte SA a apporté en N une branche complète d'activité à la société Granit SA, sous le régime de faveur. Valeur fiscale (VNC) des éléments apportés dans les écritures de Basalte : 200 000 € ; valeur d'apport retenue au traité : 500 000 €, montant pour lequel les titres Granit reçus ont été comptabilisés. En N+4, Basalte cède ces titres pour 650 000 €. Quelle est la plus-value fiscale de cession des titres ?",
+      "options": [
+        "150 000 €",
+        "450 000 €",
+        "300 000 €",
+        "650 000 €"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Sous le régime de faveur, la plus-value d'apport de 300 000 € (500 000 − 200 000) n'est pas imposée lors de l'apport, mais l'apporteuse calcule la plus-value de cession des titres reçus d'après la valeur fiscale des biens apportés dans ses écritures, soit 200 000 €. Plus-value imposable = 650 000 − 200 000 = 450 000 € (option 2). L'option 1 (150 000 €) correspond à la plus-value comptable, calculée sur la valeur d'apport ; l'option 3 (300 000 €) n'est que la plus-value en sursis ; l'option 4 confond le prix de cession et la plus-value.",
+      "source_ref": "CGI art. 210 B",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue4-fusion-fiscal-0003",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "fusion-incidences-fiscales",
+      "difficulty": 3,
+      "tags": [
+        "régime de faveur",
+        "réintégration des plus-values",
+        "biens amortissables"
+      ],
+      "statement": "La société Quartz SA absorbe la société Mica SA, en contrôle distinct et à l'endroit ; les apports sont évalués à la valeur réelle et l'opération est placée sous le régime de faveur de l'article 210 A du CGI. Éléments apportés (valeur fiscale chez Mica / valeur d'apport) : terrain 100 000 € / 250 000 € ; construction 400 000 € / 700 000 € ; matériel 50 000 € / 110 000 €. Calculez le montant annuel des plus-values que Quartz doit réintégrer dans son résultat imposable, en euros.",
+      "expected_value": 32000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Seules les plus-values sur biens amortissables sont réintégrées de manière étalée ; celle du terrain (150 000 €) est en sursis jusqu'à sa cession. Plus-value sur la construction : 700 000 − 400 000 = 300 000 € ; sur le matériel : 110 000 − 50 000 = 60 000 €. Part des constructions dans la plus-value nette sur biens amortissables : 300 000 ÷ 360 000 ≈ 83 % ≤ 90 % : la règle de la durée moyenne pondérée ne s'applique pas. Réintégration annuelle = 300 000 ÷ 15 + 60 000 ÷ 5 = 20 000 + 12 000 = 32 000 €. Erreurs classiques : tout étaler sur 15 ans (24 000 €) ou sur 5 ans (72 000 €).",
+      "source_ref": "CGI art. 210 A, 3-d",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue4-fusion-fiscal-0004",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "fusion-incidences-fiscales",
+      "difficulty": 2,
+      "tags": [
+        "valeur comptable",
+        "provisions réglementées",
+        "prime de fusion",
+        "contrôle commun"
+      ],
+      "statement": "Les sociétés Agate SA et Jaspe SA sont toutes deux contrôlées par la société Holding Opale. Agate absorbe Jaspe ; les apports sont évalués à la valeur comptable et l'opération est placée sous le régime de faveur de l'article 210 A du CGI. Bilan de Jaspe : matériel industriel brut 500 000 €, amortissements 200 000 € ; stocks de marchandises 250 000 € ; banque 450 000 € ; dettes fournisseurs 100 000 € ; ses capitaux propres comprennent 60 000 € d'amortissements dérogatoires. Agate émet 20 000 actions de 10 € de nominal. Conformément à son engagement fiscal, Agate reconstitue les amortissements dérogatoires par prélèvement sur la prime de fusion. Passez chez Agate une écriture unique (reprise des valeurs brutes et amortissements, sans compte d'associé), la prime de fusion étant enregistrée nette de cette reconstitution.",
+      "date": "Date de réalisation de la fusion",
+      "entries": [
+        {
+          "account": "2154",
+          "label": "Matériel industriel",
+          "debit": 500000,
+          "credit": 0
+        },
+        {
+          "account": "37",
+          "label": "Stocks de marchandises",
+          "debit": 250000,
+          "credit": 0
+        },
+        {
+          "account": "512",
+          "label": "Banque",
+          "debit": 450000,
+          "credit": 0
+        },
+        {
+          "account": "2815",
+          "label": "Amortissements du matériel industriel",
+          "debit": 0,
+          "credit": 200000
+        },
+        {
+          "account": "401",
+          "label": "Fournisseurs",
+          "debit": 0,
+          "credit": 100000
+        },
+        {
+          "account": "101",
+          "label": "Capital",
+          "debit": 0,
+          "credit": 200000
+        },
+        {
+          "account": "1042",
+          "label": "Prime de fusion",
+          "debit": 0,
+          "credit": 640000
+        },
+        {
+          "account": "145",
+          "label": "Amortissements dérogatoires",
+          "debit": 0,
+          "credit": 60000
+        }
+      ],
+      "explanation": "Contrôle commun (sociétés contrôlées par Holding Opale) : apports à la valeur comptable, avec reprise des valeurs brutes et amortissements. Actif net apporté = (500 000 − 200 000) + 250 000 + 450 000 − 100 000 = 900 000 € ; il inclut les amortissements dérogatoires de 60 000 €, qui sont des capitaux propres chez Jaspe. Augmentation de capital = 20 000 × 10 = 200 000 € ; prime brute = 700 000 €. Pour exécuter l'engagement de reprise des provisions dont l'imposition est différée (CGI art. 210 A), les amortissements dérogatoires sont reconstitués au passif (145) ; selon la pratique usuelle, cette reconstitution est prélevée sur la prime : prime nette = 700 000 − 60 000 = 640 000 €. Contrôle : 1 200 000 = 1 200 000.",
+      "source_ref": "PCG titre VII (règl. ANC 2014-03 modifié par le règl. ANC 2017-01) ; CGI art. 210 A ; comptes 101, 1042, 145",
+      "verified": true,
+      "estimated_seconds": 360
+    },
+    {
+      "id": "ue4-fusion-fiscal-0005",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "fusion-incidences-fiscales",
+      "difficulty": 3,
+      "tags": [
+        "régime de faveur",
+        "sursis d'imposition",
+        "réintégration",
+        "fonds commercial"
+      ],
+      "title": "Fusion Rubis – Saphir sous le régime de faveur",
+      "context": "La société Rubis SA absorbe la société Saphir SA au 1er janvier N. Les deux sociétés sont indépendantes et les actionnaires de Rubis conservent le contrôle : les apports sont évalués à la valeur réelle. L'opération est placée sous le régime de faveur de l'article 210 A du CGI.\nÉléments apportés (valeur fiscale chez Saphir / valeur d'apport) :\n- fonds commercial créé par Saphir, non inscrit à son bilan : 0 € / 200 000 € ;\n- terrain : 80 000 € / 180 000 € ;\n- construction : 300 000 € / 450 000 € ;\n- matériel : 120 000 € / 165 000 € ;\n- stocks : 90 000 € / 90 000 €.\nDurées d'utilisation résiduelles retenues par Rubis : construction 20 ans, matériel 5 ans.\nEn N+2, Rubis envisage de céder le terrain pour 230 000 €.\nTaux d'IS : 25 %.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "Calculez le montant total des plus-values dégagées par Saphir sur les éléments apportés, en euros.",
+          "points": 3,
+          "expected_value": 495000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Fonds commercial 200 000 + terrain 100 000 + construction 150 000 + matériel 45 000 + stocks 0 = 495 000 €."
+        },
+        {
+          "id": "q2",
+          "kind": "true_false",
+          "prompt": "Sous le régime de faveur, Saphir doit acquitter l'IS sur la plus-value relative à son fonds commercial.",
+          "points": 2,
+          "answer": false,
+          "explanation": "Faux : les plus-values nettes sur l'ensemble des éléments apportés sont exonérées chez l'absorbée. Le fonds commercial étant non amortissable, la plus-value est en sursis : elle sera imposée chez Rubis lors d'une cession ultérieure, calculée d'après sa valeur fiscale chez Saphir (0 €)."
+        },
+        {
+          "id": "q3",
+          "kind": "numeric",
+          "prompt": "Calculez le montant que Rubis doit réintégrer chaque année dans son résultat imposable au titre des plus-values sur biens amortissables, en euros.",
+          "points": 3,
+          "expected_value": 19000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Plus-values sur biens amortissables : construction 150 000 €, matériel 45 000 € ; la part des constructions (150 000 ÷ 195 000 ≈ 77 %) ne dépasse pas 90 %. Réintégration = 150 000 ÷ 15 + 45 000 ÷ 5 = 10 000 + 9 000 = 19 000 € par an, quelle que soit la durée d'amortissement retenue (20 ans pour la construction)."
+        },
+        {
+          "id": "q4",
+          "kind": "numeric",
+          "prompt": "Si Rubis cède le terrain pour 230 000 €, quelle plus-value fiscale devra-t-elle déclarer, en euros ?",
+          "points": 3,
+          "expected_value": 150000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Plus-value comptable = 230 000 − 180 000 = 50 000 €. Plus-value fiscale = 230 000 − 80 000 (valeur fiscale chez Saphir) = 150 000 € : les 100 000 € en sursis depuis la fusion deviennent imposables."
+        },
+        {
+          "id": "q5",
+          "kind": "open",
+          "prompt": "Expliquez la logique de la réintégration étalée des plus-values sur biens amortissables pour Rubis.",
+          "points": 4,
+          "model_answer": "Rubis amortit la construction et le matériel sur leur valeur d'apport (450 000 € et 165 000 €), qui intègre les plus-values non imposées chez Saphir : ces amortissements supplémentaires sont déductibles. En contrepartie, la plus-value exonérée chez Saphir est réintégrée par parts égales dans le résultat imposable de Rubis (15 ans pour la construction, 5 ans pour le matériel), soit 19 000 € par an, par retraitement extra-comptable. L'imposition n'est donc pas effacée mais étalée ; en cas de cession d'un bien amortissable, la fraction non encore réintégrée est imposée immédiatement.",
+          "key_points": [
+            "Amortissements calculés et déduits sur la valeur d'apport, plus-value comprise",
+            "Réintégration par parts égales : 15 ans (construction), 5 ans (matériel), indépendamment des durées d'amortissement",
+            "Retraitement extra-comptable, sans écriture",
+            "Cession d'un bien amortissable : réintégration immédiate du solde non réintégré"
+          ]
+        }
+      ],
+      "total_points": 15,
+      "explanation": "Le cas distingue les deux mécanismes du régime de faveur : sursis d'imposition pour les éléments non amortissables (fonds commercial, terrain), réintégration étalée pour les biens amortissables, avec des amortissements calculés sur la valeur d'apport.",
+      "source_ref": "CGI art. 210 A ; PCG titre VII (règl. ANC 2014-03 modifié par le règl. ANC 2017-01)",
+      "verified": true,
+      "estimated_seconds": 900
+    }
+  ]
+}
