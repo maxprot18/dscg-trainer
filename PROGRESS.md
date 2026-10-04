@@ -1,6 +1,6 @@
 # PROGRESS — DSCG Trainer
 
-Dernière mise à jour : 2026-10-04, fin de la session phase 2 (contenu UE 4).
+Dernière mise à jour : 2026-10-04, fin de la session phase 3 (contenu UE 1, 2, 3, 5, 6).
 
 ## État par phase
 
@@ -9,7 +9,7 @@ Dernière mise à jour : 2026-10-04, fin de la session phase 2 (contenu UE 4).
 | 0. Cadrage | Terminée, fusionnée dans `main` et déployée sur https://maxprot18.github.io/dscg-trainer/ (2026-10-04) |
 | 1. Moteur | Terminée (voir ci-dessous) |
 | 2. Contenu UE 4 | Terminée (voir ci-dessous) |
-| 3. Contenu UE 1, 2, 3, 5, 6 | À faire |
+| 3. Contenu UE 1, 2, 3, 5, 6 | Terminée (voir ci-dessous) |
 | 4. Progression | À faire |
 | 5. Finitions | À faire |
 
@@ -69,6 +69,17 @@ Dernière mise à jour : 2026-10-04, fin de la session phase 2 (contenu UE 4).
   - **Validateur** : il exige un titre en tête de fiche et avertit si une fiche sort de 10 à 30 lignes non vides.
   - **Tests** : 133 tests verts. Nouveaux tests : rendu Markdown, page de fiche, contrôle des fiches.
 
+## Phase 3 : ce qui est fait
+
+- **Contenu UE 1, 2, 3, 5, 6 : 700 exercices (existant compris), tous `verified: true`, et 142 nouvelles fiches de cours.** Les 271 notions de la taxonomie ont désormais une fiche.
+  - Par UE (cibles du SPEC atteintes à l'unité) : UE1 200, UE2 250, UE3 100, UE5 80, UE6 70. Total de l'application : 1 400 exercices.
+  - Par type : UE1 80 QCM / 30 V-F / 30 calculs / 20 écritures / 30 cas / 10 flashcards ; UE2 100 / 38 / 38 / 25 / 37 / 12 ; UE3 40 / 15 / 25 / 0 / 15 / 5 ; UE5 36 / 12 / 12 / 4 / 12 / 4 ; UE6 28 / 11 / 11 / 0 / 10 / 10.
+  - Difficulté : 30 % / 50 % / 20 % exactement dans chaque UE.
+  - UE 6 rédigée en anglais.
+- **Méthode** : celle de la phase 2 (plan de 25 lots de 20 à 37 exercices, rédacteurs en parallèle, relecteur indépendant par lot avec les points incertains du rédacteur, un commit `content(ue…)` par lot via le script de garde). Environ 15 % des exercices retouchés à la relecture. Corrections notables : L. 225-40 (l'intéressé compte pour le quorum, pas pour la majorité), seuil de 40 % de l'art. 238 A, sous-capitalisation intégrée à l'art. 212 bis, privilège de conciliation primé par le superprivilège des salaires, procédure de non-contestation des griefs (supprimée) remplacée par la transaction, mise à jour LF 2026 et LFSS 2026 (Dutreil : engagement individuel de 6 ans ; prélèvements sociaux de 18,6 % sur les plus-values mobilières).
+- **Technique** : plugin de build `build/stripUnverified.ts` qui retire les exercices non vérifiés des JSON de contenu au build (testé ; vérifié dans `dist`). Le filtrage à l'exécution de `load.ts` reste en place pour le serveur de dev.
+- **Vérifications locales** : lint OK, `validate:strict` OK (100 % des 1 400 exercices vérifiés), 135 tests verts, build OK.
+
 ## Décisions prises (et pourquoi)
 
 1. **Programme de référence : arrêté du 4 août 2025** (BOESR n° 32 du 28/08/2025, NOR MENS2523324A). Il s'applique aux épreuves du DSCG à partir de la session 2027, celle que Max préparera ; il remplace l'arrêté du 13/02/2019.
@@ -99,6 +110,12 @@ Dernière mise à jour : 2026-10-04, fin de la session phase 2 (contenu UE 4).
 23. **(Phase 2) Références incertaines** : quand un numéro d'article ou de paragraphe n'a pas pu être confirmé (Légifrance, ANC et BOFiP étaient bloqués par le proxy pour la plupart des relecteurs), on cite le texte sans numéro plutôt qu'un numéro douteux. Cela vaut surtout pour la numérotation L. 821-x issue de l'ordonnance 2023-1142 (seul L. 821-44 est confirmé) et pour celle du Code de commerce issue de l'ordonnance 2023-393 (fusions).
 24. **(Phase 2) Renvoi aux options par numéro** : les explications désignent les options par leur numéro (l'interface les numérote de 1 à 4), jamais par une lettre. Un contrôle par script sur tout le contenu n'a trouvé qu'un cas, corrigé.
 
+25. **(Phase 3) Répartition des types hors UE 4** : les « 5 % de cas de conso ou d'audit » du SPEC n'ont pas d'objet hors UE 4 ; ils sont remplacés par des cas pratiques. Pas d'écritures en UE 3 et UE 6 (remplacées par des calculs ou des flashcards), 5 % seulement en UE 5. Mix retenu : UE1/UE2 40 % QCM, 15 % V-F, 15 % calculs, 10 % écritures, 15 % cas, 5 % flashcards ; UE3 40/15/25/0/15/5 ; UE5 45/15/15/5/15/5 ; UE6 40/15/15/0/15/15 (plus de flashcards, utiles pour le vocabulaire).
+26. **(Phase 3) Rattachements** : affacturage, escompte, Dailly et crédit-bail sont traités dans la notion financement-fonds-propres-obligataire (UE 2) et dans financements-court-terme pour la trésorerie.
+27. **(Phase 3) Comptes de résultat exceptionnel après le règl. ANC 2022-06** : quand une écriture utilise 67x / 77x / 687 / 787 / 7788, le compte est imposé par l'énoncé (convention explicite) et l'explication signale le remaniement de ces comptes, sans affirmer le nouveau classement.
+28. **(Phase 3) Paramètres fiscaux 2026** : les taux et seuils susceptibles d'avoir changé (PFU, prélèvements sociaux, CSG) sont donnés en hypothèse dans l'énoncé ; les fiches citent les valeurs vérifiées (LF 2026 n° 2026-103, LFSS 2026).
+29. **(Phase 3) Filtrage des non vérifiés au build** (plugin Vite) en plus du filtre à l'exécution : un exercice non relu n'est jamais publié dans les fichiers JS de production.
+
 ## Points ouverts / à vérifier
 
 - **Déploiement** : résolu. GitHub Pages est activé (source : GitHub Actions) et chaque push sur `main` déploie automatiquement.
@@ -112,26 +129,23 @@ Dernière mise à jour : 2026-10-04, fin de la session phase 2 (contenu UE 4).
   - en ANC 2020-01 : statut du tableau des flux et du tableau de variation des capitaux propres, et présentation des intérêts minoritaires (lot efg) ;
   - numérotation L. 821-x des articles sur les commissaires aux comptes ;
   - terminologie de la NEP 315 si une version révisée a été homologuée.
-- **Contenu non vérifié dans le fichier de l'UE** : les exercices `verified: false` sont filtrés à l'exécution mais restent dans le fichier JS de l'UE. Aucun n'en reste aujourd'hui ; un filtrage au build serait plus propre en phase 3.
-- Les UE 1, 2, 3, 5 et 6 n'ont encore que 18 exercices et aucune fiche : c'est l'objet de la phase 3.
+  - (phase 3) référence « PCG art. 628-1 s. » (instruments financiers à terme et couverture, règl. ANC 2015-05) dans les fiches couverture-change et couverture-taux ;
+  - (phase 3) carry-back au taux de l'IS de l'exercice déficitaire (CGI art. 220 quinquies) ;
+  - (phase 3) taux des prélèvements sociaux sur les dividendes depuis la LFSS 2026 : la fiche remuneration-dirigeants-fiscal-social reste prudente (« vérifier le taux applicable ») ;
+  - (phase 3) fiche UE 4 fusion-simplifiee-tup : elle cite L. 236-11 et L. 236-3 II, numérotation probablement antérieure à l'ordonnance 2023-393 (à remplacer par « L. 236-1 et s. » si non confirmée) ;
+  - (phase 3) fiche UE 6 csr-esg-sustainability : affirmation sur l'accord « Omnibus I » fin 2025 à confirmer ; les fiches UE 2 et UE 3 s'en tiennent à la directive (UE) 2025/794 ;
+  - (phase 3) ue5-donnees-rgpd-0004 : comptes de pénalités imposés par convention, à revoir avec le classement ANC 2022-06.
 
-## Prochaine étape : phase 3 (contenu UE 1, 2, 3, 5, 6)
+## Prochaine étape : phase 4 (progression)
 
-- Objectif : 700 exercices (cibles du SPEC : UE1 200, UE2 250, UE3 100, UE5 80, UE6 70, existant compris : 4 + 10 + 1 + 1 + 2), et les fiches de cours des 142 notions de ces UE. Critère de fin : `npm run validate:strict` passe.
-- Reprendre la méthode de la phase 2 telle quelle :
-  - script de plan (types et difficultés exacts par lot, ≈ 25 à 30 exercices par lot) ;
-  - rédacteurs en parallèle sur des dossiers disjoints, qui lisent `docs/content-guide.md` ;
-  - relecteur indépendant par lot, avec les points incertains du rédacteur ;
-  - commit par lot avec le script de garde.
-- Points d'attention :
-  - UE 1 : fiscalité 2025-2026, en donnant les taux et seuils en hypothèse dans l'énoncé. Droit des sociétés après l'ordonnance 2023-393.
-  - UE 6 : contenu en anglais.
-  - UE 2 : calculs financiers à vérifier avec node.
-- Technique éventuelle : filtrer les exercices non vérifiés au build (plugin Vite) plutôt qu'à l'exécution.
+- Livrable (SPEC, « Plan de livraison ») : répétition espacée (table `reviews`, signal des flashcards et des exercices ratés), mode erreurs, examen blanc chronométré (durée lue dans `exam.duration_minutes` de la taxonomie), carte de chaleur de la progression, export/import. Critère de fin : une semaine d'usage simulée dans les tests. Budget indicatif : 25 $.
+- Le contenu est complet (1 400 exercices, 271 fiches) : la phase 4 est surtout du code (moteur pur testé dans `src/engine/`, puis UI).
+- Points ouverts de contenu ci-dessus : à traiter au fil de l'eau, ou en phase 5 avec un relecteur humain.
 
 ## Budget consommé (estimation)
 
 - Phase 0 : environ 8 à 10 $ (cible SPEC : 10 $), dont 4 sous-agents (taxonomie, schémas, CI, relecture).
 - Phase 1 : environ 20 à 25 $ (cible SPEC : 25 $), dont 9 sous-agents (4 rédactions, 5 relectures).
 - Phase 2 : environ 80 à 100 $ (cible SPEC : 90 $). 50 sous-agents (25 rédactions, 25 relectures), de 75 000 à 160 000 tokens chacun. Estimation grossière : le coût exact se lit avec `/cost`.
-- Cumul estimé : environ 110 à 135 $ sur 250 $. Il reste de quoi faire la phase 3 (70 $) à condition de rester sur des lots de 25 à 30 exercices et des rapports courts.
+- Phase 3 : environ 80 à 100 $ (cible SPEC : 70 $). Environ 52 sous-agents (25 rédactions, 26 relectures, plus le plugin de build), de 80 000 à 145 000 tokens chacun. Dépassement dû au volume des lots UE 1 (36-37 exercices) et aux recherches des relecteurs.
+- Cumul estimé : environ 190 à 235 $ sur 250 $. Pour les phases 4 et 5 (code surtout), limiter les sous-agents et privilégier le travail direct.
