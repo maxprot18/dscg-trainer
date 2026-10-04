@@ -17,6 +17,188 @@
       "source_ref": "CGI art. 219, I (taux normal 25 % et taux réduit PME 15 %, b du I) ; CGI art. 39-2 (non-déductibilité des amendes et pénalités)",
       "verified": true,
       "estimated_seconds": 180
+    },
+    {
+      "id": "ue1-fisc-is-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "is-taux-deficits",
+      "difficulty": 1,
+      "tags": [
+        "IS",
+        "paiement",
+        "solde"
+      ],
+      "statement": "Une société soumise à l'IS clôture son exercice le 31 décembre 2025. Au plus tard à quelle date doit-elle payer le solde de l'impôt sur les sociétés dû au titre de cet exercice ?",
+      "options": [
+        "Le 15 mars 2026",
+        "Le 15 mai 2026",
+        "Le 15 avril 2026",
+        "Le 15 décembre 2026"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le solde de l'IS est liquidé au plus tard le 15 du quatrième mois qui suit la clôture de l'exercice ; pour un exercice clos le 31 décembre, l'échéance est reportée au 15 mai de l'année suivante (CGI art. 1668) : option 2.\nL'option 1 (15 mars) correspond à la date du premier acompte de l'exercice 2026, non au solde de 2025.\nL'option 3 (15 avril) applique la règle du quatrième mois sans tenir compte du report au 15 mai prévu pour les clôtures au 31 décembre.\nL'option 4 (15 décembre) est la date du quatrième acompte.",
+      "source_ref": "CGI art. 1668 (acomptes et liquidation du solde de l'IS)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue1-fisc-is-0003",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "is-taux-deficits",
+      "difficulty": 2,
+      "tags": [
+        "IS",
+        "déficits",
+        "report en avant",
+        "plafonnement"
+      ],
+      "statement": "La SA Brennat dispose au 1er janvier N d'un stock de déficits fiscaux reportables de 2 400 000 €. Elle réalise au titre de N un bénéfice fiscal de 1 800 000 € avant imputation des déficits. Quel montant maximal de déficits peut-elle imputer sur ce bénéfice ?",
+      "options": [
+        "1 800 000 €",
+        "1 000 000 €",
+        "1 400 000 €",
+        "900 000 €"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'imputation des déficits antérieurs est plafonnée à 1 000 000 € majoré de 50 % de la fraction du bénéfice qui excède 1 000 000 € (CGI art. 209, I) : 1 000 000 + 50 % × (1 800 000 − 1 000 000) = 1 400 000 €, soit l'option 3. Le bénéfice imposable est de 400 000 € et le reliquat de déficits (1 000 000 €) reste reportable sans limite de durée.\nL'option 1 ignore le plafonnement (imputation totale à hauteur du bénéfice).\nL'option 2 oublie la majoration de 50 % de la fraction excédant 1 M€.\nL'option 4 applique 50 % à la totalité du bénéfice.",
+      "source_ref": "CGI art. 209, I (report en avant des déficits, plafond de 1 M€ majoré de 50 % de l'excédent)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue1-fisc-is-0004",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "is-taux-deficits",
+      "difficulty": 2,
+      "tags": [
+        "IS",
+        "carry-back",
+        "créance"
+      ],
+      "statement": "La SA Kerlan, imposée au taux normal de l'IS (25 %), a réalisé au titre de 2024 un bénéfice fiscal de 1 500 000 €, entièrement mis en réserve, qui a supporté l'IS au taux de 25 %. L'exercice 2025 se solde par un déficit fiscal de 1 300 000 €. La société opte pour le report en arrière du déficit dans la limite maximale permise. Passez au 31/12/2025 l'écriture constatant la créance née de ce report (utilisez le compte 444 pour la créance sur l'État).",
+      "date": "31/12/2025",
+      "entries": [
+        {
+          "account": "444",
+          "label": "État – créance de report en arrière des déficits",
+          "debit": 250000,
+          "credit": 0
+        },
+        {
+          "account": "699",
+          "label": "Produits – Reports en arrière des déficits",
+          "debit": 0,
+          "credit": 250000
+        }
+      ],
+      "explanation": "Le déficit peut être reporté sur le bénéfice de l'exercice précédent dans la limite du plus faible des deux montants suivants : bénéfice de 2024 non distribué (1 500 000 €) et 1 000 000 € (CGI art. 220 quinquies). Déficit reporté en arrière : 1 000 000 €. Créance = déficit reporté × taux de l'IS applicable à l'exercice déficitaire = 1 000 000 × 25 % = 250 000 €. Elle est constatée au débit d'un compte de créance sur l'État (444) par le crédit du compte 699 « Produits – Reports en arrière des déficits ». Ce produit n'est pas imposable (déduction extra-comptable). Les 300 000 € de déficit non reportés en arrière restent reportables en avant. La créance peut servir au paiement de l'IS des cinq exercices suivants ; la fraction non utilisée est remboursée à l'issue de ce délai.",
+      "source_ref": "CGI art. 220 quinquies (report en arrière, limite de 1 M€, créance) ; PCG compte 699",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue1-fisc-is-0005",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "is-taux-deficits",
+      "difficulty": 2,
+      "tags": [
+        "IS",
+        "acomptes",
+        "déficits",
+        "solde"
+      ],
+      "title": "SAS Ferrand : acomptes, imputation des déficits et liquidation de l'IS 2025",
+      "context": "La SAS Ferrand, filiale à 100 % d'un groupe dont le chiffre d'affaires dépasse 10 M€, est imposée à l'IS au taux normal de 25 % (elle ne bénéficie pas du taux réduit). Elle n'appartient à aucun groupe fiscalement intégré. Ses exercices coïncident avec l'année civile.\n\nAu titre de 2024, son résultat fiscal s'est élevé à 640 000 € (après imputation de déficits), soit un IS de 160 000 €. Par simplification, on admet que les quatre acomptes de 2025 sont tous calculés sur l'IS de 2024 ; la société les a versés aux échéances légales.\n\nAu 1er janvier 2025, la société dispose d'un stock de déficits reportables de 1 500 000 €, issus d'exercices antérieurs.\n\nAu titre de 2025, le bénéfice fiscal avant imputation des déficits s'élève à 1 600 000 €. La contribution sociale sur l'IS n'est pas due.",
+      "sub_questions": [
+        {
+          "id": "q1-acompte",
+          "kind": "numeric",
+          "prompt": "Calculez le montant de chacun des quatre acomptes d'IS versés en 2025, en euros.",
+          "points": 2,
+          "expected_value": 40000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Chaque acompte est égal à 25 % de l'IS de l'exercice de référence (CGI art. 1668) : 160 000 × 25 % = 40 000 €, versé les 15 mars, 15 juin, 15 septembre et 15 décembre 2025, soit 160 000 € au total."
+        },
+        {
+          "id": "q2-deficit-imputable",
+          "kind": "numeric",
+          "prompt": "Calculez le montant des déficits imputables sur le bénéfice de 2025, en euros.",
+          "points": 2,
+          "expected_value": 1300000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Plafond d'imputation (CGI art. 209, I) : 1 000 000 + 50 % × (1 600 000 − 1 000 000) = 1 300 000 €. Le stock (1 500 000 €) excède ce plafond : on impute 1 300 000 €."
+        },
+        {
+          "id": "q3-is-2025",
+          "kind": "numeric",
+          "prompt": "Calculez l'IS dû au titre de 2025, en euros.",
+          "points": 2,
+          "expected_value": 75000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Bénéfice imposable = 1 600 000 − 1 300 000 = 300 000 € ; IS = 300 000 × 25 % = 75 000 €."
+        },
+        {
+          "id": "q4-liquidation",
+          "kind": "mcq",
+          "prompt": "Quelle est la situation de la société lors de la liquidation de l'IS de 2025 (au plus tard le 15 mai 2026) ?",
+          "points": 2,
+          "options": [
+            "Elle doit verser un solde de 75 000 €",
+            "Elle doit verser un solde de 85 000 €",
+            "Elle dispose d'un excédent d'acomptes de 85 000 €, qui lui est restitué",
+            "Aucun solde n'est dû et l'excédent d'acomptes est définitivement perdu"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "Acomptes versés : 160 000 € ; IS dû : 75 000 €. L'excédent de 85 000 € est restitué à la société (CGI art. 1668) : option 3. L'option 1 oublie les acomptes déjà versés ; l'option 2 inverse le sens de l'écart ; l'option 4 est fausse, l'excédent n'est pas perdu."
+        },
+        {
+          "id": "q5-reliquat",
+          "kind": "open",
+          "prompt": "Que devient la fraction des déficits non imputée en 2025 ? La société aurait-elle pu utiliser le report en arrière au titre de 2025 ?",
+          "points": 3,
+          "model_answer": "Le reliquat de 1 500 000 − 1 300 000 = 200 000 € reste reportable en avant, sans limitation de durée, sur les bénéfices des exercices suivants, toujours dans la limite de 1 M€ majoré de 50 % du bénéfice excédant 1 M€. Le report en arrière (carry-back) n'est pas envisageable : il concerne le déficit d'un exercice, imputé sur le bénéfice de l'exercice précédent ; or l'exercice 2025 est bénéficiaire. Il ne permet pas non plus d'utiliser des déficits anciens déjà reportés en avant.",
+          "key_points": [
+            "Reliquat de 200 000 € reportable en avant",
+            "Sans limite de durée mais avec le même plafonnement annuel",
+            "Carry-back réservé au déficit de l'exercice, imputé sur le bénéfice de l'exercice précédent",
+            "2025 étant bénéficiaire, pas de carry-back"
+          ]
+        }
+      ],
+      "total_points": 11,
+      "explanation": "Les acomptes (4 × 40 000 €) sont calculés sur l'IS de référence. Le plafonnement de l'imputation des déficits limite la déduction à 1 300 000 € : IS 2025 de 75 000 €, d'où un excédent d'acomptes de 85 000 € restitué, et 200 000 € de déficits encore reportables.",
+      "source_ref": "CGI art. 1668 (acomptes, solde, restitution de l'excédent) ; CGI art. 209, I (report en avant plafonné) ; CGI art. 220 quinquies (report en arrière)",
+      "verified": true,
+      "estimated_seconds": 600
     }
   ]
 }

@@ -1,0 +1,151 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-fisc-tvaint-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "tva-operations-internationales",
+      "difficulty": 1,
+      "tags": [
+        "TVA",
+        "livraison intracommunautaire",
+        "exonération"
+      ],
+      "statement": "La SARL Lyonnaise d'Outillage vend des machines à une société allemande identifiée à la TVA en Allemagne ; les machines sont expédiées de Lyon à Munich et le numéro de TVA de l'acheteur figure sur la facture. Quel est le traitement de cette vente au regard de la TVA ?",
+      "options": [
+        "La vente est soumise à la TVA française au taux normal, que l'acheteur récupérera en Allemagne",
+        "La livraison intracommunautaire est exonérée en France ; l'acheteur allemand taxe l'acquisition intracommunautaire en Allemagne",
+        "Il s'agit d'une exportation exonérée, justifiée par une déclaration en douane",
+        "L'opération est hors du champ de la TVA et n'entraîne aucune obligation déclarative"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Bien expédié de France vers un autre État membre, acheteur assujetti identifié dans cet État : c'est une livraison intracommunautaire exonérée en France (CGI art. 262 ter I), l'acquéreur taxant l'acquisition intracommunautaire dans l'État d'arrivée. L'option 2 est donc la bonne.\nL'option 1 est fausse : facturer la TVA française n'est pas possible lorsque les conditions de l'exonération sont réunies.\nL'option 3 confond avec l'exportation, qui concerne une sortie du bien hors de l'Union européenne (CGI art. 262 I).\nL'option 4 est fausse : l'opération est dans le champ, exonérée, ouvre droit à déduction de la TVA d'amont et doit figurer sur la déclaration de TVA et dans l'état récapitulatif.",
+      "source_ref": "CGI art. 262 ter I (exonération des livraisons intracommunautaires) ; CGI art. 256 bis (acquisitions intracommunautaires)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue1-fisc-tvaint-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "tva-operations-internationales",
+      "difficulty": 2,
+      "tags": [
+        "TVA",
+        "prestations de services",
+        "autoliquidation",
+        "territorialité"
+      ],
+      "statement": "La SAS Calixte, établie à Nantes et assujettie à la TVA, fait appel à un cabinet de conseil établi à Londres, sans établissement en France, pour une mission de stratégie. Quel est le traitement de cette prestation au regard de la TVA française ?",
+      "options": [
+        "Elle est hors du champ de la TVA française car le prestataire est établi hors de l'Union européenne",
+        "Le cabinet londonien doit s'identifier en France et facturer la TVA française à Calixte",
+        "Elle est imposable en France ; Calixte autoliquide la TVA et la déduit dans les conditions de droit commun",
+        "Elle est imposable au Royaume-Uni, lieu d'établissement du prestataire"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Pour une prestation entre assujettis, le lieu d'imposition est le lieu d'établissement du preneur (CGI art. 259, 1°) : la France. Le prestataire n'étant pas établi en France, la TVA est due par le preneur assujetti (CGI art. 283-2), qui l'autoliquide sur sa déclaration et la déduit s'il a un droit à déduction : option 3.\nL'option 1 est fausse : l'établissement du prestataire hors de l'Union n'exclut pas l'imposition en France.\nL'option 2 est fausse : le mécanisme d'autoliquidation dispense le prestataire de facturer la TVA française.\nL'option 4 applique la règle B to C (lieu du prestataire), qui ne vaut pas entre assujettis.",
+      "source_ref": "CGI art. 259, 1° (lieu des prestations entre assujettis) ; CGI art. 283-2 (autoliquidation par le preneur)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue1-fisc-tvaint-0003",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "tva-operations-internationales",
+      "difficulty": 1,
+      "tags": [
+        "TVA",
+        "importation",
+        "autoliquidation"
+      ],
+      "statement": "Depuis le 1er janvier 2022, une entreprise assujettie identifiée à la TVA en France qui importe des marchandises autoliquide la TVA à l'importation sur sa déclaration de TVA au lieu de la payer en douane.",
+      "answer": true,
+      "justification": "Vrai : l'autoliquidation de la TVA à l'importation est généralisée et obligatoire pour les assujettis identifiés en France depuis le 1er janvier 2022 (CGI art. 1695 II).",
+      "explanation": "Auparavant optionnelle et soumise à agrément, l'autoliquidation est devenue la règle pour les assujettis identifiés en France : la TVA à l'importation est déclarée sur la déclaration de TVA et, dans le même temps, déduite si l'entreprise dispose d'un droit à déduction. L'opération est ainsi neutre en trésorerie, alors que le paiement en douane imposait d'avancer la taxe avant de la récupérer.",
+      "source_ref": "CGI art. 1695 II (autoliquidation de la TVA à l'importation)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue1-fisc-tvaint-0004",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "tva-operations-internationales",
+      "difficulty": 2,
+      "tags": [
+        "TVA",
+        "déclaration",
+        "acquisition intracommunautaire",
+        "exportation"
+      ],
+      "statement": "La SA Terval, soumise au régime réel normal et disposant d'un droit à déduction intégral, réalise en mai N les opérations suivantes (taux de 20 % pour toutes les opérations taxables) :\n- ventes de marchandises à des clients français : 200 000 € HT ;\n- livraisons intracommunautaires à des clients assujettis belges : 80 000 € HT ;\n- exportations vers la Suisse : 50 000 € HT ;\n- acquisition intracommunautaire de marchandises auprès d'un fournisseur italien : 60 000 € HT ;\n- TVA déductible sur achats de biens et services en France : 18 000 €.\nAucun crédit de TVA antérieur n'est disponible. Calculez la TVA nette à payer au titre de mai N, en euros.",
+      "expected_value": 22000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "TVA collectée sur ventes en France : 200 000 × 20 % = 40 000 €. Les livraisons intracommunautaires (CGI art. 262 ter I) et les exportations (CGI art. 262 I) sont exonérées.\nAcquisition intracommunautaire : TVA due 60 000 × 20 % = 12 000 €, autoliquidée et déductible pour le même montant (droit à déduction intégral).\nTVA déductible totale : 18 000 + 12 000 = 30 000 €.\nTVA nette = 40 000 + 12 000 − 30 000 = 22 000 €.\nErreurs fréquentes : oublier la déduction de la TVA autoliquidée (34 000 €) ou taxer les livraisons intracommunautaires (38 000 €).",
+      "source_ref": "CGI art. 256 bis (acquisitions intracommunautaires) ; CGI art. 262 I et 262 ter I (exonérations) ; CGI art. 271 (droit à déduction)",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue1-fisc-tvaint-0005",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "tva-operations-internationales",
+      "difficulty": 2,
+      "tags": [
+        "TVA",
+        "acquisition intracommunautaire",
+        "autoliquidation",
+        "écriture"
+      ],
+      "statement": "La SARL Mosaïk, assujettie avec droit à déduction intégral, reçoit le 12 mars N la facture d'un fournisseur espagnol pour des marchandises expédiées de Valence à Bordeaux : 25 000 € HT, facture établie hors taxe avec mention d'exonération, payable à 60 jours. Le taux de TVA applicable en France est de 20 %. Passez l'écriture d'enregistrement de cette acquisition (utilisez le compte 4452 pour la TVA due et le compte 44566 pour la TVA déductible).",
+      "date": "12/03/N",
+      "entries": [
+        {
+          "account": "607",
+          "label": "Achats de marchandises",
+          "debit": 25000,
+          "credit": 0
+        },
+        {
+          "account": "44566",
+          "label": "TVA déductible sur autres biens et services",
+          "debit": 5000,
+          "credit": 0
+        },
+        {
+          "account": "401",
+          "label": "Fournisseurs",
+          "debit": 0,
+          "credit": 25000
+        },
+        {
+          "account": "4452",
+          "label": "TVA due intracommunautaire",
+          "debit": 0,
+          "credit": 5000
+        }
+      ],
+      "explanation": "L'acquisition intracommunautaire est imposable en France (CGI art. 256 bis) : l'acquéreur autoliquide la TVA, soit 25 000 × 20 % = 5 000 €. Il la constate au crédit du compte 4452 « TVA due intracommunautaire » et, disposant d'un droit à déduction intégral, la porte simultanément au débit du compte 44566. La dette fournisseur ne comprend que le montant HT facturé (25 000 €), le fournisseur espagnol ayant facturé en exonération. L'opération est neutre pour la trésorerie de Mosaïk.",
+      "source_ref": "CGI art. 256 bis (acquisitions intracommunautaires) ; CGI art. 271 (droit à déduction) ; PCG comptes 4452, 44566, 401 et 607",
+      "verified": true,
+      "estimated_seconds": 150
+    }
+  ]
+}

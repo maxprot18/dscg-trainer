@@ -21,6 +21,167 @@
       "source_ref": "PCG, comptes 44551, 44562, 44566, 44567 et 44571 ; CGI art. 271 (droit à déduction)",
       "verified": true,
       "estimated_seconds": 150
+    },
+    {
+      "id": "ue1-fisc-tva-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "tva-droits-deduction",
+      "difficulty": 2,
+      "tags": [
+        "TVA",
+        "coefficient de déduction",
+        "assujettissement",
+        "taxation"
+      ],
+      "statement": "L'association Phare acquiert un équipement pour 50 000 € HT, soit 10 000 € de TVA. Il est utilisé à 80 % pour des opérations dans le champ de la TVA et à 20 % pour des activités non économiques hors champ. Au sein des opérations dans le champ, le coefficient de taxation applicable est de 0,75. Le bien n'est pas exclu du droit à déduction. Quel montant de TVA est déductible ?",
+      "options": [
+        "8 000 €",
+        "7 500 €",
+        "6 000 €",
+        "10 000 €"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Le coefficient de déduction est le produit des coefficients d'assujettissement, de taxation et d'admission (CGI ann. II art. 206) : 0,80 × 0,75 × 1 = 0,60. TVA déductible = 10 000 × 0,60 = 6 000 € : option 3.\nL'option 1 n'applique que le coefficient d'assujettissement.\nL'option 2 n'applique que le coefficient de taxation.\nL'option 4 suppose un droit à déduction intégral, alors que le bien sert en partie à des activités hors champ et à des opérations n'ouvrant pas droit à déduction.",
+      "source_ref": "CGI ann. II art. 205 et 206 (coefficient de déduction = assujettissement × taxation × admission)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue1-fisc-tva-0003",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "tva-droits-deduction",
+      "difficulty": 1,
+      "tags": [
+        "TVA",
+        "exclusions",
+        "coefficient d'admission"
+      ],
+      "statement": "Une société commerciale, assujettie avec un coefficient de taxation de 1, engage les dépenses suivantes. Laquelle ouvre droit à la déduction intégrale de la TVA qui la grève ?",
+      "options": [
+        "L'achat d'une voiture particulière mise à la disposition d'un commercial",
+        "Le gazole consommé par cette voiture particulière",
+        "Des billets de train pour les déplacements professionnels des salariés",
+        "L'achat d'une camionnette utilitaire utilisée pour les livraisons"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'option 4 est la bonne : un véhicule utilitaire affecté à l'activité taxable ouvre droit à déduction intégrale.\nL'option 1 est fausse : les véhicules conçus pour transporter des personnes (voitures particulières) sont exclus du droit à déduction, sauf exceptions (activité de transport, auto-école, location…) ; leur coefficient d'admission est nul.\nL'option 2 est fausse : le carburant (gazole ou essence) des véhicules de tourisme n'est déductible qu'à 80 %.\nL'option 3 est fausse : les services de transport de personnes sont exclus du droit à déduction (CGI ann. II art. 206, IV).",
+      "source_ref": "CGI ann. II art. 206, IV (exclusions du droit à déduction : véhicules de transport de personnes, services de transport de personnes) ; CGI art. 298, 4 (carburants)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue1-fisc-tva-0004",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "tva-droits-deduction",
+      "difficulty": 3,
+      "tags": [
+        "TVA",
+        "régularisation",
+        "coefficient de déduction",
+        "immobilisation"
+      ],
+      "statement": "La SA Ambre a acquis en 2023 une machine (bien meuble immobilisé) grevée de 40 000 € de TVA. Son coefficient de déduction définitif de 2023 était de 0,90 (36 000 € déduits). Les coefficients de déduction définitifs de cette machine sont ensuite de 0,85 en 2024 et de 0,70 en 2025. Calculez le montant de TVA que la société doit reverser au titre de 2025 (montant positif, en euros).",
+      "expected_value": 1600,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Pour un bien meuble immobilisé, la période de régularisation couvre l'année d'acquisition et les quatre années suivantes. Une régularisation annuelle est due lorsque le coefficient de déduction de l'année varie de plus de 10 points par rapport au coefficient initial (CGI ann. II art. 207).\n2024 : 0,85 contre 0,90, variation de 5 points : pas de régularisation.\n2025 : 0,70 contre 0,90, variation de 20 points : régularisation = 40 000 × (0,70 − 0,90) / 5 = −1 600 €, soit 1 600 € à reverser.\nErreurs fréquentes : ne pas diviser par 5 (8 000 €) ou comparer avec le coefficient de l'année précédente (40 000 × 0,15 / 5 = 1 200 €).",
+      "source_ref": "CGI ann. II art. 207 (régularisations annuelles en cas de variation de plus de 10 points du coefficient de déduction des immobilisations)",
+      "verified": true,
+      "estimated_seconds": 210
+    },
+    {
+      "id": "ue1-fisc-tva-0005",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "tva-droits-deduction",
+      "difficulty": 3,
+      "tags": [
+        "TVA",
+        "coefficient de taxation",
+        "secteurs d'activité",
+        "exclusions"
+      ],
+      "title": "SAS Hélios : coefficient de taxation et TVA déductible d'une entreprise partiellement redevable",
+      "context": "La SAS Hélios exerce deux activités : la vente de matériel photovoltaïque, soumise à la TVA, et des actions de formation professionnelle continue exonérées de TVA (sans possibilité d'option). Les deux activités sont dans le champ de la TVA (coefficient d'assujettissement de 1).\n\nDonnées définitives de 2025 (montants HT) :\n- ventes de matériel : 1 200 000 € ;\n- formations exonérées : 300 000 € ;\n- cession d'un véhicule utilitaire immobilisé, soumise à la TVA : 100 000 € ;\n- produits financiers accessoires (intérêts de placements de trésorerie) : 15 000 €.\n\nTVA supportée en 2025 :\n- dépenses affectées exclusivement à l'activité de vente : 30 000 € ;\n- dépenses affectées exclusivement à l'activité de formation : 5 000 € ;\n- frais généraux communs aux deux activités : 12 000 € ;\n- achat d'une voiture particulière pour le directeur commercial : 6 000 €.\n\nOn retient l'arrondi des coefficients par excès à la deuxième décimale.",
+      "sub_questions": [
+        {
+          "id": "q1-coefficient-taxation",
+          "kind": "numeric",
+          "prompt": "Calculez le coefficient de taxation applicable aux frais généraux communs, exprimé en pourcentage.",
+          "points": 2,
+          "expected_value": 80,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 0,
+          "explanation": "Coefficient de taxation = chiffre d'affaires ouvrant droit à déduction / chiffre d'affaires total. Les cessions de biens d'investissement et les opérations financières accessoires sont exclues du numérateur et du dénominateur (CGI ann. II art. 206). Coefficient = 1 200 000 / (1 200 000 + 300 000) = 0,80, soit 80 %. Inclure à tort la cession et les produits financiers donnerait 1 300 000 / 1 615 000 ≈ 80,5 % (81 % après arrondi)."
+        },
+        {
+          "id": "q2-voiture",
+          "kind": "mcq",
+          "prompt": "Quel est le coefficient de déduction de la TVA grevant l'achat de la voiture particulière ?",
+          "points": 2,
+          "options": [
+            "1, car elle est utilisée pour l'activité taxable",
+            "0,80, coefficient de taxation général",
+            "0, car son coefficient d'admission est nul",
+            "0,80, par analogie avec le carburant"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "Les véhicules conçus pour transporter des personnes sont exclus du droit à déduction (CGI ann. II art. 206, IV) : coefficient d'admission nul, donc coefficient de déduction nul quelle que soit l'utilisation (option 3). Les options 1 et 2 ignorent l'exclusion ; l'option 4 confond avec la règle de déduction à 80 % du carburant."
+        },
+        {
+          "id": "q3-tva-deductible",
+          "kind": "numeric",
+          "prompt": "Calculez le montant total de TVA déductible au titre de ces dépenses pour 2025, en euros.",
+          "points": 3,
+          "expected_value": 39600,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Dépenses affectées à la vente : coefficient de taxation 1, soit 30 000 €. Dépenses affectées à la formation exonérée : coefficient de taxation 0, soit 0 €. Frais communs : 12 000 × 0,80 = 9 600 €. Voiture particulière : 0 €. Total = 30 000 + 9 600 = 39 600 €. Appliquer 0,80 à l'ensemble des dépenses hors voiture donnerait 37 600 €."
+        },
+        {
+          "id": "q4-regularisations",
+          "kind": "open",
+          "prompt": "Le coefficient de taxation de 2025 a été déterminé de façon définitive. Expliquez le calendrier des coefficients provisoires et définitifs, et les conséquences, pour les immobilisations utilisées dans les deux activités, d'une forte progression future de l'activité de formation.",
+          "points": 3,
+          "model_answer": "Les coefficients sont d'abord déterminés de façon provisoire pour l'année en cours, à partir des données de l'année précédente (ou d'estimations pour une activité nouvelle). Les coefficients définitifs sont arrêtés au vu des données réelles de l'année, au plus tard avant le 25 avril de l'année suivante ; la différence entre TVA déduite provisoirement et TVA déductible définitivement est régularisée. Pour les immobilisations communes, une progression de la formation exonérée réduit le coefficient de taxation. Si le coefficient de déduction d'une année de la période de régularisation (5 ans pour un bien meuble, 20 ans pour un immeuble) s'écarte de plus de 10 points du coefficient initial, Hélios doit reverser une fraction de la TVA initialement déduite : TVA initiale × (coefficient de l'année − coefficient initial) / 5 (ou / 20).",
+          "key_points": [
+            "Coefficients provisoires fondés sur l'année précédente",
+            "Coefficients définitifs arrêtés avant le 25 avril de l'année suivante, avec régularisation",
+            "Régularisation annuelle des immobilisations si variation de plus de 10 points par rapport au coefficient initial",
+            "Formule : TVA initiale × Δ coefficient / 5 ou / 20"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "La TVA d'amont se répartit selon l'affectation des dépenses : coefficient de taxation de 1 pour l'activité taxée, de 0 pour l'activité exonérée, coefficient général (80 %, calculé hors cessions d'immobilisations et opérations financières accessoires) pour les frais communs, et exclusion totale de la voiture particulière (admission nulle). TVA déductible : 39 600 €.",
+      "source_ref": "CGI art. 271 ; CGI ann. II art. 205, 206 (coefficients d'assujettissement, de taxation et d'admission, exclusions) et 207 (régularisations)",
+      "verified": true,
+      "estimated_seconds": 720
     }
   ]
 }
