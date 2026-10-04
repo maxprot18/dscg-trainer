@@ -234,3 +234,24 @@ export function buildCardsSession(
   const cards = pool.filter((e) => e.type === 'flashcard' && (scope === undefined || inScope(e, scope)))
   return shuffle(cards, seededRandom(seed)).slice(0, size)
 }
+
+// ——— Test de positionnement ———
+
+/** Types retenus pour le test de positionnement : réponse rapide, correction immédiate. */
+const DIAGNOSTIC_TYPES: readonly Exercise['type'][] = ['mcq', 'true_false', 'numeric']
+
+/**
+ * Test de positionnement d'une UE : une question par thème (QCM, vrai/faux ou calcul, de
+ * préférence de niveau 2), dans l'ordre des thèmes. Les réponses alimentent la maîtrise et la
+ * répétition espacée comme n'importe quelle tentative.
+ */
+export function buildDiagnosticSession(pool: readonly Exercise[], ue: UeId, seed: number): Exercise[] {
+  const random = seededRandom(seed)
+  const inUe = pool.filter((e) => e.ue === ue && DIAGNOSTIC_TYPES.includes(e.type))
+  const themes = [...new Set(inUe.map((e) => e.theme))]
+  return themes.flatMap((theme) => {
+    const candidates = shuffle(inUe.filter((e) => e.theme === theme), random)
+    const pick = candidates.find((e) => e.difficulty === 2) ?? candidates[0]
+    return pick ? [pick] : []
+  })
+}

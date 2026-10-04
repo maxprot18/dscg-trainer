@@ -32,7 +32,7 @@ export interface Review extends ReviewState {
   prior?: ReviewState
 }
 
-export type SessionMode = 'quick' | 'theme' | 'smart' | 'exam' | 'errors' | 'cards'
+export type SessionMode = 'quick' | 'theme' | 'smart' | 'exam' | 'errors' | 'cards' | 'diagnostic'
 
 export interface Session {
   id?: number

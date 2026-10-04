@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import { BackupReminder } from '@/components/BackupReminder'
+import { ExamPlanCard } from '@/components/ExamPlanCard'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { exerciseCount, taxonomy } from '@/content/load'
@@ -57,6 +58,7 @@ export function HomePage() {
             </div>
           </CardContent>
       </Card>
+      {progress && <ExamPlanCard attempts={progress.attempts} reviews={progress.reviews} now={now} />}
       <Card>
         <CardHeader>
           <CardTitle>Contenu disponible</CardTitle>

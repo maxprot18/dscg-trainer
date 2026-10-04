@@ -8,6 +8,7 @@ import type { UeId } from '@/content/schema'
 
 import {
   buildCardsSession,
+  buildDiagnosticSession,
   buildErrorSession,
   buildExamSession,
   buildQuickSession,
@@ -21,10 +22,11 @@ import {
 export type SessionConfig =
   | { mode: 'quick'; seed: number }
   | { mode: 'theme'; seed: number; scope: ThemeScope }
-  | { mode: 'smart'; seed: number }
+  | { mode: 'smart'; seed: number; ues?: UeId[] }
   | { mode: 'errors'; seed: number; ue?: UeId }
   | { mode: 'exam'; seed: number; ue: UeId }
   | { mode: 'cards'; seed: number; scope?: ThemeScope }
+  | { mode: 'diagnostic'; seed: number; ue: UeId }
 
 /** Tailles de session réglables par l'utilisateur. */
 export interface SessionSizes {
@@ -47,7 +49,8 @@ export function sessionSearch(config: SessionConfig): string {
     if (scope.theme) p.set('theme', scope.theme)
     if (scope.notion) p.set('notion', scope.notion)
   }
-  if ((config.mode === 'errors' || config.mode === 'exam') && config.ue) p.set('ue', config.ue)
+  if ((config.mode === 'errors' || config.mode === 'exam' || config.mode === 'diagnostic') && config.ue) p.set('ue', config.ue)
+  if (config.mode === 'smart' && config.ues?.length) p.set('ues', config.ues.join(','))
   return `?${p.toString()}`
 }
 
@@ -57,7 +60,12 @@ export function parseSessionSearch(params: URLSearchParams): SessionConfig | nul
   const mode = params.get('mode')
   const ueParam = params.get('ue')
   const ue = ueParam && (UE_IDS as readonly string[]).includes(ueParam) ? (ueParam as UeId) : undefined
-  if (mode === 'quick' || mode === 'smart') return { mode, seed }
+  if (mode === 'quick') return { mode, seed }
+  if (mode === 'smart') {
+    const ues = (params.get('ues') ?? '').split(',').filter((u): u is UeId => (UE_IDS as readonly string[]).includes(u))
+    return ues.length ? { mode, seed, ues } : { mode, seed }
+  }
+  if (mode === 'diagnostic') return ue ? { mode, seed, ue } : null
   if (mode === 'errors') return ueParam && !ue ? null : { mode, seed, ue }
   if (mode === 'exam') return ue ? { mode, seed, ue } : null
   if (mode === 'cards') {
@@ -99,7 +107,9 @@ export function buildSession(
     case 'cards':
       return buildCardsSession(pool, config.scope, config.seed, sizes.cards)
     case 'smart':
-      return buildSmartSession(pool, snapshot, now, config.seed)
+      return buildSmartSession(config.ues?.length ? pool.filter((e) => config.ues!.includes(e.ue)) : pool, snapshot, now, config.seed)
+    case 'diagnostic':
+      return buildDiagnosticSession(pool, config.ue, config.seed)
     case 'errors':
       return buildErrorSession(pool, snapshot.attempts, config.seed, config.ue)
     case 'exam':
@@ -118,7 +128,8 @@ export function timeLimit(config: SessionConfig, durations: ExamDurations): numb
 export function sessionScope(config: SessionConfig): string | undefined {
   if (config.mode === 'theme') return scopeKey(config.scope)
   if (config.mode === 'cards') return config.scope ? scopeKey(config.scope) : undefined
-  if (config.mode === 'errors' || config.mode === 'exam') return config.ue
+  if (config.mode === 'errors' || config.mode === 'exam' || config.mode === 'diagnostic') return config.ue
+  if (config.mode === 'smart' && config.ues?.length) return config.ues.join(',')
   return undefined
 }
 

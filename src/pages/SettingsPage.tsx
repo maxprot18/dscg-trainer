@@ -1,4 +1,4 @@
-import { Bug, Download, RotateCcw, ShieldCheck, Upload } from 'lucide-react'
+import { BellRing, Bug, Download, RotateCcw, ShieldCheck, Upload } from 'lucide-react'
 import { useRef, useState } from 'react'
 
 import { useInstallPrompt } from '@/hooks/useInstallPrompt'
@@ -8,6 +8,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { clearProgress, importProgress, type ProgressExport } from '@/db/db'
 import { downloadBackup, isIosBrowserTab, requestPersistence, useStorageStatus } from '@/lib/backup'
 import { clearErrors, errorIssueUrl, readErrors } from '@/lib/errorLog'
+import { taxonomy } from '@/content/load'
+import { downloadReminder } from '@/lib/reminder'
 import { DAILY_GOAL_CHOICES, saveSettings, SESSION_SIZE_CHOICES, useSettings } from '@/lib/settings'
 
 const selectClass =
@@ -41,6 +43,60 @@ export function SettingsPage() {
   return (
     <div className="flex flex-col gap-4">
       <h1 className="text-2xl font-bold">Réglages</h1>
+      <Card id="examen" className="scroll-mt-4">
+        <CardHeader>
+          <CardTitle>Mon examen</CardTitle>
+          <CardDescription>Date et UE passées : l’accueil en tire un plan de révision et un rythme quotidien.</CardDescription>
+        </CardHeader>
+        <CardContent className="flex flex-col gap-3 text-sm">
+          <label className="flex items-center justify-between gap-3">
+            Date de l’examen
+            <input
+              type="date"
+              className={selectClass}
+              value={settings.examDate ?? ''}
+              onChange={(e) => saveSettings({ examDate: e.target.value || null })}
+            />
+          </label>
+          <fieldset className="flex flex-col gap-1">
+            <legend className="mb-1">UE passées à cette session</legend>
+            <div className="grid grid-cols-1 gap-1 sm:grid-cols-2">
+              {taxonomy.ues.map((u) => (
+                <label key={u.id} className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    className="size-4"
+                    checked={settings.examUes.includes(u.id)}
+                    onChange={(e) =>
+                      saveSettings({
+                        examUes: e.target.checked ? [...settings.examUes, u.id] : settings.examUes.filter((x) => x !== u.id),
+                      })
+                    }
+                  />
+                  {u.id} — {u.title}
+                </label>
+              ))}
+            </div>
+          </fieldset>
+          <div className="flex flex-wrap items-end gap-2 border-t pt-3">
+            <label className="flex flex-col gap-1">
+              Rappel quotidien à
+              <input
+                type="time"
+                className={selectClass}
+                value={settings.reminderTime}
+                onChange={(e) => e.target.value && saveSettings({ reminderTime: e.target.value })}
+              />
+            </label>
+            <Button variant="outline" onClick={() => downloadReminder(settings.reminderTime, settings.examDate)}>
+              <BellRing /> Ajouter à mon agenda
+            </Button>
+          </div>
+          <p className="text-muted-foreground text-xs">
+            Le rappel est un fichier d’agenda (.ics) : un événement chaque jour à l’heure choisie{settings.examDate ? ' jusqu’à l’examen' : ''}, avec alerte. Ouvrez-le pour l’ajouter à votre agenda.
+          </p>
+        </CardContent>
+      </Card>
       <Card>
         <CardHeader>
           <CardTitle>Entraînement</CardTitle>

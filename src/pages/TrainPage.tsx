@@ -31,6 +31,7 @@ export function TrainPage() {
   const errorCount =
     progress && exercises ? failedExerciseIds(progress.attempts).filter((id) => knownIds.has(id)).length : 0
   const [examUe, setExamUe] = useState<UeId>(firstUe)
+  const [diagUe, setDiagUe] = useState<UeId>(firstUe)
   const examSize = useMemo(
     () => (exercises ? buildExamSession(exercises, examUe, examDurations[examUe], 0).length : null),
     [exercises, examUe],
@@ -115,6 +116,35 @@ export function TrainPage() {
         </CardContent>
       </Card>
       <Card>
+        <CardHeader>
+          <CardTitle>Test de positionnement</CardTitle>
+          <CardDescription>
+            Une question par thème de l’UE, sans chrono, pour savoir d’où vous partez ; les résultats alimentent la révision
+            intelligente.
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="flex flex-col gap-3">
+          <label className="flex flex-col gap-1 text-sm">
+            UE à tester
+            <select className={selectClass} value={diagUe} onChange={(e) => setDiagUe(e.target.value as UeId)}>
+              {taxonomy.ues.map((u) => (
+                <option key={u.id} value={u.id}>
+                  {u.id} — {u.title} ({u.themes.length} thèmes)
+                </option>
+              ))}
+            </select>
+          </label>
+          <Button
+            size="lg"
+            variant="outline"
+            disabled={count(diagUe) === 0}
+            onClick={() => navigate(`/session${sessionSearch({ mode: 'diagnostic', seed: newSeed(), ue: diagUe })}`)}
+          >
+            Commencer le test ({taxonomy.ues.find((u) => u.id === diagUe)!.themes.length} questions environ)
+          </Button>
+        </CardContent>
+      </Card>
+      <Card id="examen-blanc" className="scroll-mt-4">
         <CardHeader>
           <CardTitle>Examen blanc</CardTitle>
           <CardDescription>
