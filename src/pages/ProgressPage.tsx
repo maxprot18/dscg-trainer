@@ -85,7 +85,7 @@ export function ProgressView({ progress, now: nowProp }: { progress: ProgressDat
     <div className="flex flex-col gap-4">
       <h1 className="text-2xl font-bold">Progression</h1>
       <Card>
-        <CardContent className="grid grid-cols-2 gap-4 pt-6 text-center sm:grid-cols-3">
+        <CardContent className="grid grid-cols-2 gap-4 text-center sm:grid-cols-3">
           <Stat value={progress.attempts.length} label="exercices faits" />
           <Stat value={percent(overall)} label="réussite récente" />
           <Stat value={formatDuration(totalTimeMs(progress.attempts))} label="temps passé" />
