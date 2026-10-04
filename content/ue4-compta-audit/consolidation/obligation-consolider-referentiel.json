@@ -1,0 +1,24 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-conso-obligation-0001",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "obligation-consolider-referentiel",
+      "difficulty": 1,
+      "tags": [
+        "référentiel",
+        "IFRS sur option",
+        "société non cotée"
+      ],
+      "statement": "Une société mère française dont aucun titre n'est admis aux négociations sur un marché réglementé peut choisir d'établir ses comptes consolidés selon les normes IFRS adoptées par l'Union européenne plutôt que selon le règlement ANC 2020-01.",
+      "answer": true,
+      "justification": "Les IFRS adoptées par l'UE sont obligatoires pour les comptes consolidés des sociétés dont les titres sont admis sur un marché réglementé de l'UE. Les autres sociétés tenues d'établir des comptes consolidés peuvent opter pour ce référentiel ; à défaut, elles appliquent les règles françaises (règlement ANC 2020-01).",
+      "explanation": "Le règlement (CE) n° 1606/2002 impose les IFRS adoptées aux comptes consolidés des sociétés cotées sur un marché réglementé et laisse aux États membres la faculté de les autoriser pour les autres sociétés. La France a ouvert cette option : le Code de commerce dispense les sociétés qui établissent leurs comptes consolidés selon les normes internationales adoptées de l'application des règles françaises de consolidation. La société non cotée a donc le choix entre le règlement ANC 2020-01 et les IFRS adoptées.",
+      "source_ref": "C. com. L233-24 ; règl. (CE) n° 1606/2002 art. 4 et 5 ; règl. ANC 2020-01",
+      "verified": true,
+      "estimated_seconds": 45
+    }
+  ]
+}

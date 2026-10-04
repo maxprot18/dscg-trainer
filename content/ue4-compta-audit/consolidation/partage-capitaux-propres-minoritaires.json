@@ -1,0 +1,144 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-conso-partage-0001",
+      "type": "consolidation_case",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "partage-capitaux-propres-minoritaires",
+      "difficulty": 3,
+      "tags": [
+        "écart d’évaluation",
+        "impôt différé",
+        "écart d’acquisition",
+        "intérêts minoritaires",
+        "mise en équivalence"
+      ],
+      "title": "Groupe Hélios : première consolidation de Flore et d’Écume",
+      "context": "La société Hélios (H) établit des comptes consolidés selon le règlement ANC 2020-01 et retient la méthode de l'écart d'acquisition partiel (intérêts minoritaires évalués à leur quote-part de l'actif net identifiable). Taux d'impôt : 25 %.\n\nLe 01/01/N, H a acquis 70 % du capital et des droits de vote de la société Flore (F) pour 600 000 €. À cette date, les capitaux propres de F s'élèvent à 550 000 € (capital 300 000 €, réserves 250 000 €). Le seul écart entre valeur comptable et juste valeur porte sur un terrain de F, dont la juste valeur excède la valeur comptable de 100 000 €. Au 31/12/N, F dégage un résultat de 80 000 € ; elle n'a distribué aucun dividende.\n\nÉgalement le 01/01/N, H a acquis 30 % du capital de la société Écume (E) pour 110 000 €, ce qui lui confère une influence notable. Les capitaux propres de E s'élèvent à 360 000 € au 01/01/N et à 400 000 € au 31/12/N (résultat N de 40 000 €, sans distribution) ; aucun écart d'évaluation n'est identifié sur E.\n\nLes écarts d’acquisition ont une durée d’utilisation non limitée : ils ne sont pas amortis et aucune dépréciation n’est à constater en N.\n\nLes numéros de comptes utilisés en consolidation sont conventionnels : le compte 105 sert ici à l'écart d'évaluation et le compte 155 aux impôts différés passifs.",
+      "entities": [
+        {
+          "id": "h",
+          "name": "Hélios (H)",
+          "is_parent": true
+        },
+        {
+          "id": "f",
+          "name": "Flore (F)"
+        },
+        {
+          "id": "e",
+          "name": "Écume (E)"
+        }
+      ],
+      "links": [
+        {
+          "from": "h",
+          "to": "f",
+          "ownership_pct": 70
+        },
+        {
+          "from": "h",
+          "to": "e",
+          "ownership_pct": 30
+        }
+      ],
+      "steps": [
+        {
+          "id": "ecart-evaluation",
+          "stage": "retraitements",
+          "kind": "journal_entry",
+          "prompt": "Passez l’écriture de constatation de l’écart d’évaluation sur le terrain de F, impôt différé compris.",
+          "points": 3,
+          "date": "01/01/N",
+          "entries": [
+            {
+              "account": "211",
+              "label": "Terrains (F)",
+              "debit": 100000,
+              "credit": 0
+            },
+            {
+              "account": "155",
+              "label": "Impôts différés passifs",
+              "debit": 0,
+              "credit": 25000
+            },
+            {
+              "account": "105",
+              "label": "Écart d’évaluation (capitaux propres de F)",
+              "debit": 0,
+              "credit": 75000
+            }
+          ],
+          "explanation": "Les actifs identifiables de F sont évalués à leur juste valeur à la date d'acquisition : le terrain est majoré de 100 000 €. La différence temporelle entre cette valeur et la base fiscale du terrain fait naître un impôt différé passif de 100 000 × 25 % = 25 000 €. L'écart d'évaluation net, 75 000 €, s'ajoute aux capitaux propres de F avant partage."
+        },
+        {
+          "id": "ecart-acquisition-f",
+          "stage": "ecart-acquisition",
+          "kind": "numeric",
+          "prompt": "Calculez l’écart d’acquisition dégagé sur Flore (en euros).",
+          "points": 3,
+          "expected_value": 162500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Actif net identifiable de F à la juste valeur = 550 000 + 75 000 = 625 000 €. Quote-part acquise = 70 % × 625 000 = 437 500 €. Écart d'acquisition (méthode partielle) = 600 000 − 437 500 = 162 500 €."
+        },
+        {
+          "id": "minoritaires-f",
+          "stage": "partage-capitaux-propres",
+          "kind": "numeric",
+          "prompt": "Quel est le montant total des intérêts minoritaires relatifs à Flore au bilan consolidé du 31/12/N, résultat compris (en euros) ?",
+          "points": 2,
+          "expected_value": 211500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Capitaux propres retraités de F au 31/12/N = 300 000 + 250 000 + 75 000 + 80 000 = 705 000 €. Intérêts minoritaires = 30 % × 705 000 = 211 500 € (dont 24 000 € de résultat). En méthode partielle, aucun écart d'acquisition n'est attribué aux minoritaires."
+        },
+        {
+          "id": "resultat-groupe-f",
+          "stage": "partage-capitaux-propres",
+          "kind": "numeric",
+          "prompt": "Quelle est la contribution de Flore au résultat consolidé part du groupe de N (en euros) ?",
+          "points": 2,
+          "expected_value": 56000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Le terrain n'étant pas amortissable, l'écart d'évaluation n'affecte pas le résultat de N. Part du groupe = 70 % × 80 000 = 56 000 € ; part des minoritaires = 24 000 €. Les réserves consolidées issues de F sont nulles l'année de l'acquisition : 70 % × 625 000 − 600 000 + 162 500 = 0."
+        },
+        {
+          "id": "titres-mee-e",
+          "stage": "elimination-titres",
+          "kind": "numeric",
+          "prompt": "À quel montant les titres mis en équivalence d’Écume figurent-ils au bilan consolidé du 31/12/N (écart d’acquisition inclus, en euros) ?",
+          "points": 2,
+          "expected_value": 122000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Écart d'acquisition sur E = 110 000 − 30 % × 360 000 = 2 000 €. Titres mis en équivalence au 31/12/N = 30 % × 400 000 + 2 000 = 122 000 € (soit le coût de 110 000 € augmenté de la quote-part du résultat N, 30 % × 40 000 = 12 000 €). Les titres E sont substitués par ce montant, sans intégration des actifs et passifs."
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Démarche de première consolidation : évaluer à la juste valeur les actifs et passifs identifiables de la filiale (écart d'évaluation net d'impôt différé), calculer l'écart d'acquisition par différence entre le coût des titres et la quote-part de l'actif net réévalué, puis partager les capitaux propres retraités entre le groupe et les minoritaires selon le pourcentage d'intérêt. Pour l'entité sous influence notable, les titres sont remplacés par la quote-part des capitaux propres, augmentée de l'écart d'acquisition.",
+      "source_ref": "Règl. ANC 2020-01, écarts d’évaluation, écart d’acquisition, impôts différés, intérêts minoritaires et mise en équivalence ; IFRS 3 §18 et §32 (règlement UE 2023/1803) ; IAS 28 §32 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 900
+    }
+  ]
+}
