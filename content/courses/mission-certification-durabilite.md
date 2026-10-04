@@ -1,17 +1,30 @@
 # Mission de certification des informations en matière de durabilité
 
-**Références :** Directive (UE) 2022/2464 (modifiant la directive 2006/43/CE) ; ordonnance n° 2023-1142 du 6 décembre 2023 (C. com., livre VIII, titre II) ; norme internationale ISSA 5000 (IAASB)
+**Références :** Directive (UE) 2022/2464 (CSRD, modifiant la directive 2006/43/CE sur le contrôle légal) ; directive (UE) 2026/470 (Omnibus I : assurance limitée maintenue) ; ordonnance n° 2023-1142 du 6 décembre 2023 (C. com., livre VIII, titre II : commissaires aux comptes, OTI et auditeurs des informations en matière de durabilité, art. L. 821-x et L. 822-x) ; norme internationale ISSA 5000 (IAASB, 2024) ; lignes directrices du CEAOB sur l'assurance limitée (30 septembre 2024) ; lignes directrices de la Haute autorité de l'audit (H2A) sur la mission de certification des informations en matière de durabilité (octobre 2024, mises à jour en janvier 2026), dans l'attente de la norme européenne d'assurance limitée
 
-- La CSRD impose une vérification des informations de durabilité par un professionnel indépendant. En France, la mission est confiée à un commissaire aux comptes inscrit pour la certification des informations en matière de durabilité ou à un organisme tiers indépendant (OTI) accrédité. Il peut s'agir d'un professionnel autre que le commissaire aux comptes chargé de certifier les comptes.
-- La Haute autorité de l'audit (H2A, ex-H3C) assure la supervision : inscription, normes, contrôles, sanctions. Les règles d'indépendance et de déontologie sont proches de celles du commissariat aux comptes.
-- Niveau d'assurance : assurance limitée. La directive envisageait un passage ultérieur à l'assurance raisonnable ; la directive « Omnibus I » (UE) 2026/470 a supprimé cette perspective.
-- Champ de la mission : conformité de l'état de durabilité aux ESRS, y compris le processus mis en œuvre pour déterminer les informations publiées (analyse de double matérialité) ; respect des exigences de balisage électronique ; respect des obligations de publication de l'article 8 du règlement taxonomie.
-- Assurance limitée : travaux moins étendus qu'en assurance raisonnable (surtout entretiens et procédures analytiques), conclusion exprimée sous une forme négative : « nous n'avons pas relevé d'éléments de nature à remettre en cause… ».
-- Assurance raisonnable (comptes) : opinion exprimée sous une forme positive (« nous certifions que… »).
-- Le rapport du professionnel est communiqué aux actionnaires avec le rapport de gestion. Il peut contenir une conclusion modifiée (réserve, conclusion défavorable, impossibilité de conclure) et des observations.
-- Le comité d'audit suit le processus d'élaboration des informations de durabilité et la réalisation de la mission de certification.
+**Enjeu :** l'état de durabilité est vérifié, mais pas « audité » comme les comptes ; l'examen demande de connaître qui peut faire la mission, sous quel niveau d'assurance, sur quel champ, et de reconnaître la formulation négative de la conclusion.
+
+- La CSRD impose une vérification des informations de durabilité par un professionnel indépendant. En France, la mission est confiée à un **commissaire aux comptes inscrit** pour la certification des informations en matière de durabilité ou à un **organisme tiers indépendant (OTI)** accrédité par le COFRAC et inscrit auprès de la H2A. Il peut s'agir d'un professionnel autre que le commissaire aux comptes chargé de certifier les comptes ; la désignation relève de l'assemblée (ou de l'organe compétent) comme pour le CAC.
+- La H2A (ex-H3C) assure la supervision : inscription, formation (dont une formation spécifique à la durabilité), normes, contrôles de qualité, sanctions. Les règles d'indépendance, de secret professionnel et de déontologie sont alignées sur celles du commissariat aux comptes ; l'auditeur de durabilité révèle aussi les faits délictueux et est protégé par les mêmes dispositions.
+- Niveau d'assurance : **assurance limitée**. La directive envisageait un passage ultérieur à l'assurance raisonnable, après étude de faisabilité ; la directive Omnibus I (UE) 2026/470 a supprimé cette perspective ; la Commission doit adopter par acte délégué une norme d'assurance limitée (échéance reportée au 1er juillet 2027), les vérificateurs suivant d'ici là les lignes directrices de la H2A.
+- Champ de la mission : conformité de l'état de durabilité aux ESRS, y compris le **processus** mis en œuvre par l'entreprise pour déterminer les informations publiées (analyse de double matérialité) ; respect des exigences de balisage électronique ; respect des obligations de publication de l'article 8 du règlement taxonomie. Toutes les informations, qualitatives ou chiffrées, environnementales, sociales ou de gouvernance, sont couvertes.
+- Assurance limitée : travaux moins étendus qu'en assurance raisonnable (surtout entretiens, procédures analytiques, rapprochements, tests limités selon les risques), risque de ne pas détecter une anomalie plus élevé, conclusion exprimée sous une **forme négative** : « nous n'avons pas relevé d'éléments de nature à remettre en cause la conformité, dans tous leurs aspects significatifs… ».
+- Assurance raisonnable (comptes) : opinion exprimée sous une forme positive (« nous certifions que les comptes sont réguliers et sincères… »), fondée sur des travaux étendus (tests de contrôles, procédures de substance).
+- Le rapport du professionnel, distinct du rapport sur les comptes, est communiqué aux actionnaires avec le rapport de gestion : identification de l'état vérifié et du référentiel, responsabilités respectives, nature des travaux, conclusion, et éventuelles observations. La conclusion peut être modifiée : avec réserve, défavorable, ou impossibilité de conclure, selon que l'anomalie ou la limitation est circonscrite ou diffuse.
+- Le comité d'audit suit le processus d'élaboration des informations de durabilité, l'indépendance de l'auditeur de durabilité et la réalisation de la mission.
+
+## Exemple
+Ambre SA, soumise à la CSRD, confie la certification de son état de durabilité 2027 à un OTI accrédité, distinct de son CAC. Lors des travaux, l'OTI constate qu'un site représentant 12 % des émissions de scope 1 a été omis de la collecte et que la direction, après discussion, corrige l'état avant publication : la conclusion reste non modifiée. Si la direction avait refusé la correction, l'anomalie, significative mais limitée à un indicateur, aurait conduit à une **conclusion avec réserve**, formulée en négatif : « à l'exception de l'incidence du point décrit ci-dessus, nous n'avons pas relevé d'éléments de nature à remettre en cause… ». L'OTI ne « certifie » pas que les émissions sont exactes : il conclut qu'il n'a pas relevé d'anomalie significative au terme de procédures limitées, et son rapport est présenté à l'assemblée avec le rapport de gestion.
+
+## Erreurs fréquentes
+- Croire que seul le CAC qui certifie les comptes peut certifier l'état de durabilité : un autre CAC inscrit ou un OTI accrédité le peut aussi.
+- Confondre la conclusion d'assurance limitée (forme négative) avec l'opinion d'audit des comptes (forme positive) ou avec une attestation d'exactitude de chaque indicateur.
+- Limiter la mission aux indicateurs environnementaux chiffrés : elle couvre tout l'état de durabilité, le processus de double matérialité, le balisage et la taxonomie.
+- Penser que l'assurance raisonnable est programmée : Omnibus I a maintenu l'assurance limitée.
 
 ## À retenir
 - Assurance limitée, conclusion négative : à ne pas confondre avec l'opinion d'audit des comptes.
-- CAC inscrit pour la durabilité OU OTI accrédité, sous la supervision de la H2A.
-- Le processus de double matérialité et la taxonomie entrent dans le champ de la mission.
+- CAC inscrit pour la durabilité OU OTI accrédité, sous la supervision de la H2A, avec les mêmes exigences d'indépendance.
+- Le processus de double matérialité, le balisage et la taxonomie entrent dans le champ de la mission.
+
+**Notions liées :** [Procédures d'audit de durabilité](/cours/procedures-audit-durabilite) · [Cadre CSRD](/cours/cadre-csrd-perimetre) · [Formulation de l'opinion](/cours/formulation-opinion) · [Organisation de la profession](/cours/organisation-profession)
