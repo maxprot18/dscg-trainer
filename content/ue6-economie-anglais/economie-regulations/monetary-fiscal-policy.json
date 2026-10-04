@@ -151,6 +151,53 @@
       "source_ref": "Fisher equation ; Taylor rule (J. B. Taylor, 1993): i = r* + π + 0.5 (π − π*) + 0.5 (y − y*) ; policy mix",
       "verified": true,
       "estimated_seconds": 900
+    },
+    {
+      "id": "ue6-eco-monpol-0005",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "economie-regulations",
+      "notion": "monetary-fiscal-policy",
+      "difficulty": 2,
+      "tags": [
+        "public debt",
+        "budget deficit",
+        "debt dynamics"
+      ],
+      "statement": "The finance minister of Belmora says: \"Our deficit is now at the EU reference value of 3% of GDP, so our debt ratio of 100% of GDP will stop rising.\" Nominal GDP is expected to grow by 2% next year and the deficit to remain at 3% of GDP. Ignoring other flows, which statement is correct?",
+      "options": [
+        "The debt ratio will fall to about 97% of GDP, because the deficit is within the 3% reference value.",
+        "The debt ratio will rise to about 101.0% of GDP: the deficit adds to the debt stock faster than nominal GDP growth erodes the ratio.",
+        "The debt ratio will stay at 100% of GDP, because a deficit equal to the reference value stabilises debt by definition.",
+        "The debt ratio will rise to 103% of GDP, because the whole deficit is added to the ratio."
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "Debt ratio next year = (debt + deficit) ÷ (GDP × (1 + nominal growth)) = (100 + 3) ÷ 1.02 = 100.98%, i.e. about 101.0%. The deficit is a flow that adds to the stock of debt; the ratio only stabilises if the deficit is no larger than debt × g ÷ (1 + g) ≈ 100 × 0.02 = 2% of GDP. Option 1 subtracts the deficit instead of adding it. Option 3 is wrong: the 3% and 60% reference values are not linked so as to stabilise any debt level; 3% stabilises a 60% ratio only with nominal growth of about 5%. Option 4 ignores the growth of nominal GDP in the denominator.",
+      "source_ref": "TFEU art. 126 and Protocol No 12 (reference values 3% and 60% of GDP) ; debt dynamics: debt ratio(t+1) = (debt + deficit) ÷ (GDP × (1 + nominal growth))",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue6-eco-monpol-0006",
+      "type": "flashcard",
+      "ue": "UE6",
+      "theme": "economie-regulations",
+      "notion": "monetary-fiscal-policy",
+      "difficulty": 1,
+      "tags": [
+        "automatic stabilisers",
+        "fiscal policy",
+        "vocabulary"
+      ],
+      "front": "What are \"automatic stabilisers\", and how do they differ from discretionary fiscal policy?",
+      "back": "Automatic stabilisers are features of the tax and benefit system that cushion the business cycle without any new government decision: in a downturn, tax receipts fall and unemployment benefits rise, supporting household income; in a boom, the reverse happens.\nDiscretionary policy requires a deliberate decision (a stimulus package, a tax cut, an austerity plan).\nFrench: stabilisateurs automatiques vs politique budgétaire discrétionnaire.",
+      "explanation": "Automatic stabilisers widen the deficit in a recession and narrow it in a recovery, which is why analysts look at the structural (cyclically adjusted) balance to judge the government's fiscal stance. The reformed EU framework steers national budgets through a single operational indicator, the growth of net expenditure, which excludes the cyclical part of unemployment benefits so that automatic stabilisers can operate freely. Automatic stabilisers act quickly because no vote or implementation lag is needed, whereas discretionary measures often arrive late.",
+      "source_ref": "Fiscal policy: automatic stabilisers vs discretionary measures ; Regulation (EU) 2024/1263 (reformed EU economic governance framework), art. 2(2) (net expenditure, excluding cyclical elements of unemployment benefit expenditure)",
+      "verified": true,
+      "estimated_seconds": 30
     }
   ]
 }

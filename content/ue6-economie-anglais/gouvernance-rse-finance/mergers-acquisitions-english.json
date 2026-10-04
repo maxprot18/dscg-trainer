@@ -127,6 +127,87 @@
       "source_ref": "IFRS 3 §39-40 and §58 (contingent consideration) — règlement UE 2023/1803",
       "verified": true,
       "estimated_seconds": 30
+    },
+    {
+      "id": "ue6-gouv-ma-0004",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "gouvernance-rse-finance",
+      "notion": "mergers-acquisitions-english",
+      "difficulty": 2,
+      "tags": [
+        "mandatory bid",
+        "takeover rules",
+        "squeeze-out"
+      ],
+      "statement": "An investor holds 28% of the share capital and voting rights of a company listed on Euronext Paris. It buys a block of shares from a family shareholder that takes its stake to 33%. What is the main legal consequence under French takeover rules?",
+      "options": [
+        "It must file a mandatory public offer for all the remaining shares, at a price at least equal to the highest price it paid over the previous twelve months.",
+        "It may now launch a squeeze-out and force the minority shareholders to sell their shares.",
+        "There is no consequence until it holds more than 50% of the voting rights, since it does not yet control the company.",
+        "It must notify the European Commission under the EU Merger Regulation, which replaces the obligation to make an offer."
+      ],
+      "answer": [
+        0
+      ],
+      "multiple": false,
+      "explanation": "Crossing the 30% threshold of capital or voting rights triggers a mandatory bid: the investor must offer to buy all the other shares, at an equitable price, in France at least the highest price paid over the previous twelve months. Option 2 confuses the mandatory bid with the squeeze-out, which is only available to a holder of at least 90% of the capital and voting rights. Option 3 ignores the fact that 30% is treated as effective control of a listed company with dispersed shareholders. Option 4 mixes up merger control, which assesses the effect on competition and may also apply, with takeover law, which protects minority shareholders: one does not replace the other.",
+      "source_ref": "Directive 2004/25/EC, art. 5 (mandatory bid, equitable price) and art. 15 (squeeze-out) ; AMF General Regulation, art. 234-2 (30% threshold) and art. 234-6 (price of the mandatory offer) ; French Monetary and Financial Code, art. L. 433-4 (squeeze-out at 90%)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue6-gouv-ma-0005",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "gouvernance-rse-finance",
+      "notion": "mergers-acquisitions-english",
+      "difficulty": 3,
+      "tags": [
+        "share-for-share offer",
+        "exchange ratio",
+        "control premium"
+      ],
+      "statement": "Halden plc offers 0.6 new Halden share for each share of Fjord plc. Before the announcement, Halden shares traded at €60 and Fjord shares at €30 (undisturbed price). Which statement is correct?",
+      "options": [
+        "The offer values each Fjord share at €50 (30 ÷ 0.6), a premium of 66.7%.",
+        "The offer values each Fjord share at €36, a premium of 20%; since the exchange ratio is fixed, Fjord shareholders are guaranteed €36 per share whatever happens to Halden's share price.",
+        "The offer values each Fjord share at €36, a premium of 20%; if Halden's share price falls to €55 after the announcement, the offer is worth €33 per Fjord share, a premium of only 10%.",
+        "The offer values each Fjord share at €36, a premium of 16.7% (6 ÷ 36)."
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Implied offer value = exchange ratio × bidder share price = 0.6 × 60 = €36; premium = 36 ÷ 30 − 1 = 20%. In a share-for-share offer with a fixed exchange ratio, the number of shares is fixed but their value is not: if Halden's share falls to €55 (a frequent market reaction for the bidder), the offer is worth 0.6 × 55 = €33, i.e. a premium of 33 ÷ 30 − 1 = 10%. Target shareholders thus bear part of the bidder's share price risk (and become shareholders of the combined group). Option 1 divides instead of multiplying. Option 2 confuses a fixed exchange ratio with a fixed value; only a cash offer, or a collar mechanism, protects the value. Option 4 computes the premium on the offer price instead of the undisturbed price.",
+      "source_ref": "Share exchange offers: implied offer value = exchange ratio × bidder share price ; control premium = offer value ÷ undisturbed price − 1",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue6-gouv-ma-0006",
+      "type": "numeric",
+      "ue": "UE6",
+      "theme": "gouvernance-rse-finance",
+      "notion": "mergers-acquisitions-english",
+      "difficulty": 2,
+      "tags": [
+        "goodwill",
+        "IFRS 3",
+        "contingent consideration"
+      ],
+      "statement": "Norvik SA acquires 100% of the shares of Tessel Ltd. The consideration comprises €850m paid in cash at closing plus an earn-out whose fair value at the acquisition date is €50m. Tessel's net assets in its own books amount to €520m. In the purchase price allocation, the acquirer identifies a brand not recognised by Tessel, with a fair value of €120m, and revalues Tessel's property upwards by €40m; a deferred tax liability of €40m is recognised on these fair value adjustments. No other adjustment is needed. Calculate the goodwill recognised under IFRS 3, in €m.",
+      "expected_value": 260,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€m",
+      "decimals": 0,
+      "explanation": "Consideration transferred = 850 + 50 (earn-out at fair value, included at the acquisition date) = €900m. Fair value of net identifiable assets = 520 + 120 + 40 − 40 = €640m. Goodwill = 900 − 640 = €260m. Classic errors: ignoring the earn-out (850 − 640 = €210m), forgetting the deferred tax liability (900 − 680 = €220m) or using book values (900 − 520 = €380m).",
+      "source_ref": "IFRS 3 Business Combinations, §32 (goodwill), §37 and §39 (consideration transferred, contingent consideration at fair value), §18 (identifiable assets at fair value) and §24 (deferred tax) — Commission Regulation (EU) 2023/1803",
+      "verified": true,
+      "estimated_seconds": 200
     }
   ]
 }
