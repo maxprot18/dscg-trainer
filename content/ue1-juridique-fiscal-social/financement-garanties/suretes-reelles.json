@@ -91,6 +91,110 @@
       "source_ref": "C. civ. art. 2011, 2015 et 2372-1 s. (fiducie, fiducie-sûreté)",
       "verified": true,
       "estimated_seconds": 45
+    },
+    {
+      "id": "ue1-fin-surreel-0005",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "financement-garanties",
+      "notion": "suretes-reelles",
+      "difficulty": 2,
+      "tags": [
+        "hypothèque",
+        "rang",
+        "nantissement de créance",
+        "gage sans dépossession",
+        "pacte commissoire"
+      ],
+      "title": "Corvel : réaliser les garanties de la banque",
+      "context": "En 2023, la banque Brenne a prêté 400 000 € à la SAS Corvel, fabricant de mobilier. En garantie, Corvel lui a consenti :\n- une hypothèque conventionnelle sur son entrepôt, inscrite le 15 juin 2023 ; l'entrepôt était déjà grevé d'une hypothèque inscrite en 2021 au profit de la banque Alba ;\n- un gage sans dépossession sur deux machines de production, constaté par écrit avec une clause prévoyant qu'à défaut de paiement, Brenne deviendra propriétaire des machines ;\n- un nantissement d'une créance de 30 000 € que Corvel détenait sur son client Dorel, constaté par écrit le 10 janvier 2025 ; ce nantissement n'a pas été notifié à Dorel, qui n'est pas intervenu à l'acte.\nEn mars 2025, Dorel paie les 30 000 € à Corvel. En 2026, Corvel cesse de rembourser ; aucune procédure collective n'est ouverte. Brenne prononce la déchéance du terme : sa créance s'élève à 220 000 €.\nL'entrepôt est vendu sur saisie pour 420 000 € (frais ignorés). La créance d'Alba s'élève à 250 000 €. Un fournisseur de Corvel, sans sûreté, est créancier de 60 000 €.\nUn expert désigné à l'amiable évalue les deux machines à 90 000 €.",
+      "sub_questions": [
+        {
+          "id": "q1-gage",
+          "kind": "mcq",
+          "prompt": "Comment le gage sans dépossession des machines est-il rendu opposable aux tiers ?",
+          "points": 2,
+          "options": [
+            "Par la seule signature de l'écrit constatant le gage, sans aucune publicité",
+            "Par une inscription au service de la publicité foncière",
+            "Par une inscription sur le registre des sûretés mobilières",
+            "Par une signification de l'acte à chacun des créanciers de Corvel"
+          ],
+          "answer": [
+            2
+          ],
+          "multiple": false,
+          "explanation": "Le gage est opposable aux tiers par la publicité qui en est faite ou par la dépossession (C. civ. art. 2337) ; sans dépossession, la publicité consiste en une inscription sur un registre spécial (art. 2338), le registre des sûretés mobilières tenu par les greffes depuis le 1er janvier 2023 : option 3. L'écrit (option 1) est une condition de validité entre les parties (art. 2336), pas d'opposabilité. La publicité foncière (option 2) concerne les sûretés immobilières, comme l'hypothèque. Aucune signification aux créanciers n'est prévue (option 4)."
+        },
+        {
+          "id": "q2-rang",
+          "kind": "numeric",
+          "prompt": "Quel montant Brenne reçoit-elle sur le prix de vente de l'entrepôt ? Réponse en euros.",
+          "points": 3,
+          "expected_value": 170000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Les créanciers hypothécaires sont payés dans l'ordre de leurs inscriptions (C. civ. art. 2418). Alba, inscrite en 2021, est payée en premier : 250 000 €. Reste 420 000 − 250 000 = 170 000 €, attribués à Brenne (rang suivant) ; le fournisseur chirographaire ne reçoit rien sur ce prix. Brenne reste créancière de 220 000 − 170 000 = 50 000 €. Une répartition proportionnelle entre Alba et Brenne (420 000 × 220 / 470 ≈ 196 596 €) est fausse et hors tolérance."
+        },
+        {
+          "id": "q3-nantissement",
+          "kind": "true_false",
+          "prompt": "Brenne peut exiger de Dorel qu'il lui paie les 30 000 € de la créance nantie.",
+          "points": 1,
+          "answer": false,
+          "explanation": "Faux : le nantissement de créance est opposable aux tiers dès la date de l'acte (C. civ. art. 2361), mais il n'est opposable au débiteur de la créance nantie qu'après notification ou intervention à l'acte ; à défaut, seul le constituant reçoit valablement le paiement (art. 2362). Dorel, qui a payé Corvel avant toute notification, est libéré."
+        },
+        {
+          "id": "q4-pacte",
+          "kind": "open",
+          "prompt": "Brenne peut-elle se faire attribuer la propriété des machines pour le solde de sa créance ? À quelles conditions, et avec quelle conséquence chiffrée ?",
+          "points": 4,
+          "model_answer": "Oui. La clause du gage prévoyant que Brenne deviendra propriétaire des machines à défaut de paiement est un pacte commissoire, valable en matière de gage depuis 2006 (C. civ. art. 2348). Faute de cotation officielle des machines, leur valeur est déterminée au jour du transfert par un expert désigné à l'amiable ou judiciairement ; toute clause contraire est réputée non écrite. Aucune procédure collective n'étant ouverte, rien n'interdit sa mise en œuvre. Après la vente de l'entrepôt, la créance de Brenne n'est plus que de 50 000 €. Les machines valant 90 000 €, soit plus que la dette garantie, Brenne doit verser à Corvel la différence : 90 000 − 50 000 = 40 000 €. À défaut de pacte, elle aurait pu demander la vente forcée ou l'attribution judiciaire des machines.",
+          "key_points": [
+            "Pacte commissoire admis en matière de gage (C. civ. art. 2348)",
+            "Valeur fixée par expert faute de cotation officielle, au jour du transfert",
+            "Créance résiduelle de 50 000 € après la distribution du prix de l'entrepôt",
+            "Excédent de 40 000 € à restituer à Corvel"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas met en œuvre trois sûretés réelles sur trois biens de nature différente : l'hypothèque (immeuble, rang fixé par l'inscription), le gage sans dépossession (meuble corporel, publicité sur un registre, pacte commissoire) et le nantissement de créance (meuble incorporel, opposable au débiteur cédé seulement après notification).",
+      "source_ref": "C. civ. art. 2336 à 2338 et 2348 (gage) ; art. 2356, 2361 et 2362 (nantissement de créance) ; art. 2385 s. (hypothèques) et 2418 (rang des inscriptions)",
+      "verified": true,
+      "estimated_seconds": 720
+    },
+    {
+      "id": "ue1-fin-surreel-0006",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "financement-garanties",
+      "notion": "suretes-reelles",
+      "difficulty": 1,
+      "tags": [
+        "nantissement",
+        "fonds de commerce",
+        "nature du bien"
+      ],
+      "statement": "La SARL Lumière, qui exploite un restaurant dans des locaux loués, veut garantir un prêt bancaire en affectant son fonds de commerce (clientèle, droit au bail, enseigne) au paiement de sa dette, sans cesser de l'exploiter. Quelle sûreté doit-elle consentir ?",
+      "options": [
+        "Une hypothèque conventionnelle",
+        "Un gage avec dépossession",
+        "Une clause de réserve de propriété",
+        "Un nantissement"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Le fonds de commerce est un meuble incorporel : il peut faire l'objet d'un nantissement, régi par le Code de commerce (C. com. art. L142-1 s.), sans dépossession du débiteur qui continue l'exploitation : option 4. L'hypothèque (option 1) est réservée aux immeubles ; de plus, Lumière n'est que locataire des murs. Le gage (option 2) porte sur des meubles corporels et la dépossession empêcherait l'exploitation. La réserve de propriété (option 3) est une garantie du vendeur sur le bien vendu, non une sûreté consentie par un emprunteur sur ses propres biens.",
+      "source_ref": "C. civ. art. 2355 (nantissement de meubles incorporels) ; C. com. art. L142-1 s. (nantissement du fonds de commerce)",
+      "verified": true,
+      "estimated_seconds": 45
     }
   ]
 }

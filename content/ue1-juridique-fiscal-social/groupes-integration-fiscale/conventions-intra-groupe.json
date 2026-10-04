@@ -169,6 +169,34 @@
       "explanation": "Filiale et participation se définissent par le capital, le contrôle par les droits de vote. Une participation détenue par une société contrôlée est réputée détenue indirectement par la société qui la contrôle (L233-4).",
       "source_ref": "C. com. art. L233-1 à L233-4",
       "estimated_seconds": 40
+    },
+    {
+      "id": "ue1-groupes-conv-0006",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "conventions-intra-groupe",
+      "difficulty": 2,
+      "tags": [
+        "participations réciproques",
+        "L233-29",
+        "droits de vote"
+      ],
+      "statement": "La SA Héron détient 15 % du capital de la SA Ibis. Ibis acquiert à son tour 8 % du capital de Héron. Aucun accord n'intervient entre les deux sociétés pour régulariser la situation. Quelle est la conséquence ?",
+      "options": [
+        "Aucune : les participations réciproques ne sont interdites qu'entre une société et sa filiale détenue à plus de 50 %",
+        "Héron doit céder sa participation dans Ibis, car c'est elle qui a franchi la première le seuil de 10 %",
+        "Ibis doit céder ses actions Héron et ne peut pas exercer les droits de vote qui y sont attachés dans l'attente",
+        "Les actions Héron détenues par Ibis sont annulées de plein droit et le capital de Héron est réduit d'autant"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Une société par actions ne peut posséder d'actions d'une autre société si celle-ci détient plus de 10 % de son capital (C. com. art. L233-29). Héron détenant 15 % d'Ibis, Ibis ne peut détenir d'actions Héron ; à défaut d'accord, la société qui détient la fraction la plus faible du capital de l'autre (Ibis, 8 %) doit céder, et elle ne peut exercer les droits de vote attachés à ces actions : option 3. L'option 1 confond avec l'autocontrôle (L233-31), qui vise les sociétés contrôlées ; l'interdiction des participations réciproques joue dès 10 %. L'option 2 inverse la règle : c'est la participation la plus faible qui est cédée. L'option 4 est fausse : la loi impose une cession, non une annulation.",
+      "source_ref": "C. com. art. L233-29 (participations réciproques entre sociétés par actions) ; art. L233-31 (autocontrôle)",
+      "verified": true,
+      "estimated_seconds": 75
     }
   ]
 }

@@ -146,6 +146,45 @@
       "source_ref": "CGI art. 256 bis (acquisitions intracommunautaires) ; CGI art. 271 (droit à déduction) ; PCG comptes 4452, 44566, 401 et 607",
       "verified": true,
       "estimated_seconds": 150
+    },
+    {
+      "id": "ue1-fisc-tvaint-0006",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "tva-operations-internationales",
+      "difficulty": 1,
+      "tags": [
+        "livraison intracommunautaire",
+        "exportation",
+        "TVA collectée"
+      ],
+      "statement": "La SARL Atelier Vosgien (régime réel normal, taux de TVA de 20 %) facture en juin N les ventes de marchandises suivantes : à des clients français, 50 000 € HT ; à une société belge identifiée à la TVA en Belgique, 20 000 € HT, marchandises expédiées de France vers la Belgique, numéro de TVA de l'acheteur porté sur la facture ; à un client canadien, 15 000 € HT, marchandises exportées, déclaration d'exportation visée par la douane. Enregistrez globalement les ventes du mois en utilisant un seul compte 411 « Clients », un seul compte 707 « Ventes de marchandises » et le compte 44571 « TVA collectée ».",
+      "date": "30/06/N",
+      "entries": [
+        {
+          "account": "411",
+          "label": "Clients",
+          "debit": 95000,
+          "credit": 0
+        },
+        {
+          "account": "707",
+          "label": "Ventes de marchandises",
+          "debit": 0,
+          "credit": 85000
+        },
+        {
+          "account": "44571",
+          "label": "TVA collectée",
+          "debit": 0,
+          "credit": 10000
+        }
+      ],
+      "explanation": "Seules les ventes à des clients français supportent la TVA française : 50 000 × 20 % = 10 000 €. La livraison intracommunautaire à un assujetti belge identifié est exonérée (CGI art. 262 ter I) et l'exportation vers le Canada aussi (art. 262 I) : elles sont facturées hors taxe. Ventes : 50 000 + 20 000 + 15 000 = 85 000 € ; créances clients : 60 000 + 20 000 + 15 000 = 95 000 €. Erreur classique : collecter la TVA sur la livraison intracommunautaire ou sur l'exportation (TVA de 17 000 € au lieu de 10 000 €). Ces opérations exonérées ouvrent néanmoins droit à déduction de la TVA d'amont.",
+      "source_ref": "CGI art. 262 ter I (livraisons intracommunautaires exonérées) ; art. 262 I (exportations exonérées) ; PCG (règl. ANC 2014-03), comptes 411, 707 et 44571",
+      "verified": true,
+      "estimated_seconds": 150
     }
   ]
 }

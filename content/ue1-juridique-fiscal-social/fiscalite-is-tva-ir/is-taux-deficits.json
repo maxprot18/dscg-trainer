@@ -199,6 +199,30 @@
       "source_ref": "CGI art. 1668 (acomptes, solde, restitution de l'excédent) ; CGI art. 209, I (report en avant plafonné) ; CGI art. 220 quinquies (report en arrière)",
       "verified": true,
       "estimated_seconds": 600
+    },
+    {
+      "id": "ue1-fisc-is-0006",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "is-taux-deficits",
+      "difficulty": 2,
+      "tags": [
+        "contribution sociale sur l'IS",
+        "taux normal"
+      ],
+      "statement": "La SA Médoc (exercice de 12 mois clos le 31 décembre N, chiffre d'affaires hors taxes de 60 M€) réalise un bénéfice fiscal de 5 000 000 €. Le taux réduit de 15 % ne lui est pas applicable et elle ne relève d'aucune contribution exceptionnelle. Hypothèses : IS au taux de 25 % ; contribution sociale de 3,3 % assise sur l'IS diminué d'un abattement de 763 000 € par période de 12 mois, due par les entreprises dont le chiffre d'affaires atteint 7 630 000 €. Calculez le montant de la contribution sociale sur l'IS due au titre de N, en euros (arrondi à l'euro).",
+      "expected_value": 16071,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "IS : 5 000 000 × 25 % = 1 250 000 €. Le chiffre d'affaires (60 M€) dépasse 7,63 M€ : la contribution est due. Base : 1 250 000 − 763 000 = 487 000 € ; contribution : 487 000 × 3,3 % = 16 071 €. Erreurs types hors tolérance : 41 250 € (3,3 % de l'IS sans abattement) ou 139 821 € (3,3 % du bénéfice diminué de l'abattement).",
+      "source_ref": "CGI art. 235 ter ZC (contribution sociale de 3,3 % sur l'IS) ; art. 219, I (taux normal de 25 %)",
+      "verified": true,
+      "estimated_seconds": 150
     }
   ]
 }
