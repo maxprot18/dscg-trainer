@@ -1,0 +1,145 @@
+{
+  "exercises": [
+    {
+      "id": "ue6-vocab-audit-0001",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "vocabulaire-comptable-financier",
+      "notion": "audit-assurance-vocabulary",
+      "difficulty": 2,
+      "tags": [
+        "auditor's report",
+        "qualified opinion",
+        "ISA 705"
+      ],
+      "statement": "After obtaining sufficient appropriate audit evidence, the auditor of Kestrel Ltd concludes that the overstatement of inventories, which management refuses to correct, is material but not pervasive to the financial statements. Which opinion should the auditor express under ISA 705?",
+      "options": [
+        "An unmodified opinion with an emphasis of matter paragraph",
+        "An adverse opinion",
+        "A qualified opinion",
+        "A disclaimer of opinion"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Option 3 is correct: when the auditor concludes that misstatements are material, individually or in aggregate, but not pervasive, ISA 705 §7(a) requires a qualified opinion (certification avec réserve). Option 1 is wrong: an emphasis of matter paragraph draws attention to a matter properly presented in the financial statements and does not modify the opinion; it cannot be used for an uncorrected material misstatement. Option 2 is wrong: an adverse opinion is required only when the misstatements are both material and pervasive (§8). Option 4 is wrong: a disclaimer of opinion applies when the auditor is unable to obtain sufficient appropriate audit evidence and the possible effects could be both material and pervasive (§9); here evidence was obtained.",
+      "source_ref": "ISA 705 §7-10 (modified opinions) ; ISA 706 (emphasis of matter) — IAASB ; NEP 700 for the French equivalents",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue6-vocab-audit-0002",
+      "type": "true_false",
+      "ue": "UE6",
+      "theme": "vocabulaire-comptable-financier",
+      "notion": "audit-assurance-vocabulary",
+      "difficulty": 1,
+      "tags": [
+        "review",
+        "limited assurance",
+        "reasonable assurance"
+      ],
+      "statement": "A review of a company's interim financial statements provides the same level of assurance as an audit, namely reasonable assurance.",
+      "answer": false,
+      "justification": "False: a review (examen limité) provides only limited assurance, expressed as a negative conclusion; reasonable assurance is the level of an audit.",
+      "explanation": "An audit aims at reasonable assurance (assurance raisonnable), a high but not absolute level of assurance, and leads to a positive opinion (\"give a true and fair view\"). A review of interim financial information (examen limité in France) consists mainly of enquiries and analytical procedures; it provides limited assurance (assurance modérée) and leads to a conclusion expressed in negative form (\"nothing has come to our attention that causes us to believe…\").",
+      "source_ref": "ISA 200 §5 (reasonable assurance) ; ISRE 2410 (review of interim financial information) — IAASB",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue6-vocab-audit-0003",
+      "type": "flashcard",
+      "ue": "UE6",
+      "theme": "vocabulaire-comptable-financier",
+      "notion": "audit-assurance-vocabulary",
+      "difficulty": 2,
+      "tags": [
+        "key audit matters",
+        "emphasis of matter",
+        "auditor's report"
+      ],
+      "front": "What is a \"key audit matter\" (KAM) in an auditor's report, and how does it differ from an \"emphasis of matter\" paragraph?",
+      "back": "KAM: the matters that, in the auditor's professional judgement, were of most significance in the audit (e.g. goodwill impairment testing), with how they were addressed (ISA 701).\nEmphasis of matter: a paragraph drawing users' attention to a matter already presented or disclosed in the financial statements (ISA 706).\nNeither modifies the opinion. French: \"points clés de l'audit\" / \"observation\".",
+      "explanation": "KAM are required for audits of listed entities (ISA 701) and, in the EU, for public-interest entities under Regulation (EU) No 537/2014. In France, the auditor's report includes the \"justification des appréciations\", which presents the key audit matters (\"points clés de l'audit\"). An emphasis of matter typically relates to a significant uncertainty or a change in accounting method already disclosed in the notes.",
+      "source_ref": "ISA 701 §8-11 (key audit matters) ; ISA 706 §8 (emphasis of matter) — IAASB ; règlement (UE) n° 537/2014 art. 10 for public-interest entities",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue6-vocab-audit-0004",
+      "type": "case_study",
+      "ue": "UE6",
+      "theme": "vocabulaire-comptable-financier",
+      "notion": "audit-assurance-vocabulary",
+      "difficulty": 3,
+      "tags": [
+        "materiality",
+        "performance materiality",
+        "cut-off",
+        "circularisation",
+        "representation letter"
+      ],
+      "title": "Audit planning memo — Brightwater Ltd",
+      "context": "You have just joined the London office of an audit firm. Your manager sends you the following memo on the audit of Brightwater Ltd for the year ended 31 December 2025.\n\n\"Planning: overall materiality has been set at 5% of profit before tax. Profit before tax for the year is estimated at £4.8m. Performance materiality is 75% of overall materiality, and the 'clearly trivial' threshold is 5% of overall materiality.\n\nInterim findings: goods shipped to a customer on 3 January 2026 were invoiced on 30 December 2025 and recorded as revenue in December 2025. The amount is £150k. Management has not yet corrected the error.\n\nYear-end procedures: we will send external confirmations (circularisation) to a sample of trade debtors, attend the client's stocktake on 31 December, and obtain a signed management representation letter before signing our report.\"\n\nYour manager asks you to answer the following questions in English.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "Calculate performance materiality for the Brightwater audit, in £k.",
+          "points": 2,
+          "expected_value": 180,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "£k",
+          "decimals": 0,
+          "explanation": "Overall materiality = 5% × £4,800k = £240k. Performance materiality = 75% × 240 = £180k. (Clearly trivial threshold = 5% × 240 = £12k.) Classic errors: giving overall materiality (240) or applying 75% directly to profit before tax."
+        },
+        {
+          "id": "q2",
+          "kind": "mcq",
+          "prompt": "Which assertion is primarily affected by the £150k error identified at the interim visit?",
+          "points": 2,
+          "options": [
+            "Completeness",
+            "Rights and obligations",
+            "Classification",
+            "Cut-off"
+          ],
+          "answer": [
+            3
+          ],
+          "explanation": "Option 4 is correct: revenue relating to goods shipped in January 2026 was recorded in the 2025 period, which is a cut-off error (séparation des exercices). Option 1 is wrong: completeness concerns transactions that were omitted; here revenue is overstated, not understated. Option 2 is wrong: rights and obligations is an assertion about account balances such as assets owned or controlled. Option 3 is wrong: the revenue was recorded in the correct account, only in the wrong period."
+        },
+        {
+          "id": "q3",
+          "kind": "true_false",
+          "prompt": "Since the £150k error is below overall materiality (£240k), the auditor may ignore it and need not raise it with management.",
+          "points": 1,
+          "answer": false,
+          "explanation": "False: ISA 450 requires the auditor to accumulate all misstatements other than those that are clearly trivial (here £12k) and to communicate them on a timely basis to the appropriate level of management, requesting their correction (ISA 450 §5 and §8). Uncorrected misstatements are then assessed in aggregate."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "prompt": "Explain to a French-speaking colleague what \"external confirmation (circularisation)\", \"stocktake attendance\" and \"management representation letter\" mean, giving the French equivalent and the purpose of each procedure.",
+          "points": 4,
+          "model_answer": "External confirmation (circularisation des clients): the auditor obtains a direct written reply from a third party, here customers, confirming the balance they owe at year-end; it provides evidence on the existence of trade receivables (ISA 505). Stocktake attendance (assistance à l'inventaire physique): the auditor attends the client's physical count of inventories at year-end, observes the counting procedures and performs test counts; it provides evidence on the existence and condition of inventories (ISA 501). Management representation letter (lettre d'affirmation): a letter signed by management, dated as near as practicable to the date of the auditor's report, confirming that management has fulfilled its responsibilities for the financial statements and has provided all relevant information; it is necessary evidence but does not replace other procedures (ISA 580).",
+          "key_points": [
+            "Circularisation = circularisation des clients, direct confirmation from a third party, existence of receivables",
+            "Stocktake attendance = assistance à l'inventaire physique, existence and condition of inventories",
+            "Representation letter = lettre d'affirmation, written representations from management",
+            "Written representations do not replace other audit evidence"
+          ]
+        }
+      ],
+      "total_points": 9,
+      "explanation": "The case combines the planning vocabulary (materiality thresholds), the vocabulary of assertions (cut-off), the treatment of identified misstatements (ISA 450) and the names of the main audit procedures with their French equivalents.",
+      "source_ref": "ISA 320 §10-11 (materiality, performance materiality) ; ISA 315 (assertions) ; ISA 450 §5 and §8 (accumulation and communication of misstatements) ; ISA 501, 505 and 580 — IAASB",
+      "verified": true,
+      "estimated_seconds": 720
+    }
+  ]
+}

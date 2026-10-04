@@ -1,0 +1,136 @@
+{
+  "exercises": [
+    {
+      "id": "ue6-vocab-ff-0001",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "vocabulaire-comptable-financier",
+      "notion": "accounting-false-friends",
+      "difficulty": 2,
+      "tags": [
+        "provision",
+        "loss allowance",
+        "impairment",
+        "receivables"
+      ],
+      "statement": "A French accountant writes in an e-mail to the group's UK head office: « Nous avons comptabilisé une dépréciation des créances douteuses de 50 000 €. » Which English wording is the most consistent with IFRS terminology?",
+      "options": [
+        "We have booked a provision for doubtful debts of €50,000.",
+        "We have set up a reserve for doubtful debts of €50,000.",
+        "We have recorded a depreciation of doubtful receivables of €50,000.",
+        "We have recognised a loss allowance (impairment) of €50,000 on doubtful trade receivables."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Option 4 is correct: under IFRS 9, the expected credit losses on trade receivables are recognised through a loss allowance, which reduces the carrying amount of the receivables; the related expense is an impairment loss. Option 1 is wrong in IFRS terminology: a provision is a liability of uncertain timing or amount (IAS 37 §10), whereas the French \"provision pour créances douteuses\" reduces an asset; the wording is still heard in older UK usage but is not IFRS terminology. Option 2 is wrong: a reserve is a component of equity. Option 3 is wrong: \"depreciation\" means the systematic allocation of the cost of a fixed asset (amortissement), a classic false friend of \"dépréciation\".",
+      "source_ref": "IAS 37 §10 (definition of a provision) ; IFRS 9 §5.5.1 and appendix A (loss allowance) — règlement UE 2023/1803",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue6-vocab-ff-0002",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "vocabulaire-comptable-financier",
+      "notion": "accounting-false-friends",
+      "difficulty": 3,
+      "tags": [
+        "translation",
+        "goodwill",
+        "impairment",
+        "revenue",
+        "net profit"
+      ],
+      "statement": "Choose the best English translation of the following sentence from a French listed group's press release (IFRS accounts):\n« Le chiffre d'affaires de l'exercice progresse de 8 %, mais le résultat net est pénalisé par une dépréciation de l'écart d'acquisition. »",
+      "options": [
+        "The turnover of the exercise rose by 8%, but the net result was penalised by a depreciation of the acquisition gap.",
+        "Revenue for the year rose by 8%, but net profit was hit by a goodwill impairment charge.",
+        "Revenue for the year rose by 8%, but net profit was hit by goodwill amortisation.",
+        "Sales for the year rose by 8%, but net income was hit by a provision on goodwill."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Option 2 is correct: \"chiffre d'affaires\" = revenue, \"de l'exercice\" = for the year, \"résultat net\" = net profit, and \"dépréciation de l'écart d'acquisition\" = goodwill impairment (IAS 36). Option 1 accumulates false friends: \"exercise\", \"net result\", \"depreciation\" (= amortissement) and \"acquisition gap\" instead of goodwill. Option 3 is wrong: \"amortisation\" is a systematic allocation (amortissement), whereas the French sentence describes a loss in value; besides, goodwill is not amortised under IFRS but tested for impairment (IFRS 3 B63(a)). Option 4 is wrong: \"provision\" designates a liability (IAS 37), not the write-down of an asset.",
+      "source_ref": "IAS 36 §10 and §124 (goodwill impairment, no reversal) ; IFRS 3 B63(a) (goodwill not amortised) ; IAS 37 §10 — règlement UE 2023/1803",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue6-vocab-ff-0003",
+      "type": "case_study",
+      "ue": "UE6",
+      "theme": "vocabulaire-comptable-financier",
+      "notion": "accounting-false-friends",
+      "difficulty": 3,
+      "tags": [
+        "translation",
+        "operating profit",
+        "provision",
+        "statutory auditor",
+        "financial year"
+      ],
+      "title": "Translating the accounts of Lumière SA",
+      "context": "You work in the finance department of Lumière SA, a French company that prepares its accounts under French GAAP. A US lender has asked for an English version of the 2025 financial statements. The French income statement shows (k€):\n- Chiffre d'affaires: 12,400\n- Achats consommés: 7,100\n- Charges de personnel: 3,200\n- Dotations aux amortissements: 600\n- Dotations aux dépréciations des créances clients: 150\n- Charges financières: 250\n- Impôt sur les bénéfices: 300\nThere are no other operating items. The balance sheet shows a « provision pour litiges » of 400 k€ relating to a claim by a former supplier, and the notes mention the fees of the « commissaire aux comptes ».\n\nA trainee has produced a first draft containing the following translations: \"Business figure\", \"Exploitation result\", \"Depreciation of customer receivables\", \"Exercise 2025\".",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "Calculate the operating profit (résultat d'exploitation) of Lumière SA for 2025, in k€.",
+          "points": 2,
+          "expected_value": 1350,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "Operating profit = 12,400 − 7,100 − 3,200 − 600 − 150 = 1,350 k€. Finance costs (250) and income tax (300) are below operating profit; net profit = 1,350 − 250 − 300 = 800 k€. Classic errors: forgetting the impairment losses on receivables (1,500) or deducting finance costs and tax (800)."
+        },
+        {
+          "id": "q2",
+          "kind": "true_false",
+          "prompt": "The « provision pour litiges » must not be translated as \"provision\", because in English a provision always means a write-down of an asset.",
+          "points": 1,
+          "answer": false,
+          "explanation": "False: in IFRS English, a provision is precisely a liability of uncertain timing or amount (IAS 37 §10). A provision for a legal claim is therefore correctly translated as \"provision for legal claims\" (or \"litigation provision\"). The false friend concerns the French « provision pour dépréciation », which reduces an asset and is translated as impairment or (loss) allowance."
+        },
+        {
+          "id": "q3",
+          "kind": "mcq",
+          "prompt": "How should « commissaire aux comptes » be translated in the notes?",
+          "points": 1,
+          "options": [
+            "Commissioner of accounts",
+            "Chartered accountant",
+            "Statutory auditor",
+            "Internal auditor"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "Option 3 is correct: the commissaire aux comptes is the statutory auditor, the external auditor appointed under the law to express an opinion on the accounts. Option 1 is a literal and meaningless translation. Option 2 is wrong: a chartered accountant corresponds to the expert-comptable, who prepares or reviews the accounts on behalf of the company. Option 4 is wrong: an internal auditor is an employee of the company (auditeur interne)."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "prompt": "Correct the four translations in the trainee's draft and briefly explain each correction.",
+          "points": 4,
+          "model_answer": "\"Business figure\" → \"revenue\" (or \"turnover\" in UK usage, \"sales\"): chiffre d'affaires has no literal equivalent. \"Exploitation result\" → \"operating profit\" (or \"operating income\" in US English): résultat is translated as profit (or loss) or income, never result, and \"exploitation\" in English mostly suggests taking unfair advantage of someone. \"Depreciation of customer receivables\" → \"impairment losses on trade receivables\" (or \"increase in the allowance for doubtful receivables\"): depreciation means the systematic allocation of the cost of a fixed asset (amortissement), whereas dépréciation is a loss in value. \"Exercise 2025\" → \"financial year 2025\" or \"FY2025\" (US: fiscal year): exercise means physical activity or the exercise of a right or option.",
+          "key_points": [
+            "Chiffre d'affaires = revenue / turnover / sales",
+            "Résultat d'exploitation = operating profit (operating income)",
+            "Dépréciation des créances = impairment (loss allowance) on trade receivables, not depreciation",
+            "Exercice = financial year (FY), not exercise"
+          ]
+        }
+      ],
+      "total_points": 8,
+      "explanation": "The case tests the most frequent false friends met when translating French accounts (résultat, chiffre d'affaires, exercice, dépréciation, commissaire aux comptes) and the case where the French word \"provision\" is correctly translated by \"provision\".",
+      "source_ref": "IAS 37 §10 (provision) ; IAS 36 §6 (impairment loss) ; IAS 1 §82 (line items) — règlement UE 2023/1803 ; usual UK/US professional terminology",
+      "verified": true,
+      "estimated_seconds": 720
+    }
+  ]
+}

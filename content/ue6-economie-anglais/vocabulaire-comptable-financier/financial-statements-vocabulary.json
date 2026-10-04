@@ -14,6 +14,83 @@
       "source_ref": "IAS 1 §27-28, accrual basis of accounting (règlement UE 2023/1803) ; PCG compte 408",
       "verified": true,
       "estimated_seconds": 30
+    },
+    {
+      "id": "ue6-vocab-fsv-0002",
+      "type": "numeric",
+      "ue": "UE6",
+      "theme": "vocabulaire-comptable-financier",
+      "notion": "financial-statements-vocabulary",
+      "difficulty": 1,
+      "tags": [
+        "current ratio",
+        "liquidity",
+        "balance sheet"
+      ],
+      "statement": "Extract from the statement of financial position of Harbour Tools Ltd at 31 December 2025 (€k): property, plant and equipment 900; inventories 180; trade receivables 240; cash and cash equivalents 60; share capital and reserves 620; long-term borrowings 400; trade payables 250; short-term borrowings 70; accruals 40.\n\nCalculate the company's current ratio (current assets ÷ current liabilities). Round to two decimal places.",
+      "expected_value": 1.33,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.01
+      },
+      "decimals": 2,
+      "explanation": "Current assets = inventories 180 + trade receivables 240 + cash and cash equivalents 60 = €480k. Current liabilities = trade payables 250 + short-term borrowings 70 + accruals 40 = €360k. Current ratio = 480 ÷ 360 = 1.33. Property, plant and equipment (non-current asset) and long-term borrowings (non-current liability) are excluded. Classic errors: excluding inventories gives the quick ratio (300 ÷ 360 = 0.83); adding the long-term borrowings to the denominator gives 480 ÷ 760 = 0.63.",
+      "source_ref": "IAS 1 §66-76, classification of current and non-current assets and liabilities (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue6-vocab-fsv-0003",
+      "type": "numeric",
+      "ue": "UE6",
+      "theme": "vocabulaire-comptable-financier",
+      "notion": "financial-statements-vocabulary",
+      "difficulty": 2,
+      "tags": [
+        "EBITDA",
+        "operating profit",
+        "income statement",
+        "alternative performance measure"
+      ],
+      "statement": "Clearwater Foods plc presents its income statement by function. Extract for 2025 (€k): revenue 5,200; cost of sales 3,100 (including depreciation of production equipment: 260); distribution costs 600; administrative expenses 700 (including amortisation of software: 40); other operating income 50; finance costs 120; income tax expense 180. There are no other depreciation, amortisation or impairment charges.\n\nCalculate EBITDA (earnings before interest, tax, depreciation and amortisation), in €k.",
+      "expected_value": 1150,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€k",
+      "decimals": 0,
+      "explanation": "Operating profit = revenue 5,200 − cost of sales 3,100 − distribution costs 600 − administrative expenses 700 + other operating income 50 = €850k. Depreciation and amortisation are embedded in the functional expense lines, so they must be added back: EBITDA = 850 + 260 (depreciation) + 40 (amortisation) = €1,150k. Finance costs and income tax are below operating profit and are not deducted. Classic errors: stopping at operating profit (850); starting from profit before tax (850 − 120 = 730, then 730 + 300 = 1,030); confusing EBITDA with gross profit (5,200 − 3,100 = 2,100).",
+      "source_ref": "IAS 1 §85 and §99-105 (analysis of expenses by function, additional line items) ; IAS 16 §6 and IAS 38 §8 (depreciation, amortisation) — règlement UE 2023/1803. EBITDA is an alternative performance measure, not defined by IFRS",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue6-vocab-fsv-0004",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "vocabulaire-comptable-financier",
+      "notion": "financial-statements-vocabulary",
+      "difficulty": 2,
+      "tags": [
+        "cash flow statement",
+        "investing activities",
+        "IAS 7"
+      ],
+      "statement": "In a statement of cash flows prepared under IAS 7, which of the following cash flows is classified as an investing activity (flux d'investissement)?",
+      "options": [
+        "Cash received from customers for goods held for resale",
+        "Proceeds from the disposal of a warehouse",
+        "Dividends paid to the company's shareholders",
+        "Cash paid for the principal portion of lease liabilities"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Option 2 is correct: cash receipts from sales of property, plant and equipment are investing cash flows (IAS 7 §16(b)). Option 1 is wrong: cash receipts from the sale of goods are the typical operating cash flow (IAS 7 §14(a)). Option 3 is wrong: dividends paid may be presented in financing activities or in operating activities (IAS 7 §34), but never in investing activities. Option 4 is wrong: cash payments for the principal portion of lease liabilities are classified within financing activities (IFRS 16 §50(a), IAS 7 §17).",
+      "source_ref": "IAS 7 §14, §16, §17 and §34 ; IFRS 16 §50 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 75
     }
   ]
 }

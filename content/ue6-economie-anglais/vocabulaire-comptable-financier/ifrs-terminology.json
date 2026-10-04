@@ -1,0 +1,98 @@
+{
+  "exercises": [
+    {
+      "id": "ue6-vocab-ifrsterm-0001",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "vocabulaire-comptable-financier",
+      "notion": "ifrs-terminology",
+      "difficulty": 1,
+      "tags": [
+        "turnover",
+        "revenue",
+        "UK English"
+      ],
+      "statement": "The income statement of a UK private company opens with the line \"Turnover: £8.4m\". What does this figure represent?",
+      "options": [
+        "The proportion of employees who left the company during the year",
+        "The total assets of the company at year-end",
+        "Revenue from the sale of goods and services (chiffre d'affaires)",
+        "The number of times inventories were sold and replaced during the year"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Option 3 is correct: in British accounts, \"turnover\" is the traditional word for revenue from the sale of goods and services, i.e. the French \"chiffre d'affaires\"; IFRS uses \"revenue\". Option 1 is wrong: that is \"staff turnover\" (rotation du personnel), an HR indicator, not an accounting figure. Option 2 is wrong: total assets is a balance sheet total, not a performance figure. Option 4 is wrong: \"inventory turnover\" (rotation des stocks) is a ratio; on its own, \"turnover\" in the accounts means revenue.",
+      "source_ref": "UK statutory formats: the Large and Medium-sized Companies and Groups (Accounts and Reports) Regulations 2008 (SI 2008/410, Schedule 1) and the Small Companies and Groups (Accounts and Directors' Report) Regulations 2008 (SI 2008/409), made under the Companies Act 2006, use \"turnover\" ; IFRS 15 and IAS 1 §82(a) use \"revenue\" (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue6-vocab-ifrsterm-0002",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "vocabulaire-comptable-financier",
+      "notion": "ifrs-terminology",
+      "difficulty": 2,
+      "tags": [
+        "recoverable amount",
+        "impairment",
+        "IAS 36"
+      ],
+      "statement": "In IAS 36 Impairment of Assets, the \"recoverable amount\" (valeur recouvrable) of an asset is defined as:",
+      "options": [
+        "The lower of its fair value less costs of disposal and its value in use",
+        "Its cost less accumulated depreciation and accumulated impairment losses",
+        "Its fair value less costs of disposal, whatever its value in use",
+        "The higher of its fair value less costs of disposal and its value in use"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Option 4 is correct: IAS 36 §18 defines recoverable amount as the higher of fair value less costs of disposal and value in use; an impairment loss is recognised when the carrying amount exceeds this amount (§59). Option 1 is wrong: it takes the lower of the two values, a common confusion with the inventory rule (lower of cost and net realisable value, IAS 2). Option 2 is wrong: that describes the carrying amount (valeur nette comptable), which is compared with recoverable amount. Option 3 is wrong: fair value less costs of disposal is only one of the two measures used.",
+      "source_ref": "IAS 36 §6, §18 and §59 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue6-vocab-ifrsterm-0003",
+      "type": "true_false",
+      "ue": "UE6",
+      "theme": "vocabulaire-comptable-financier",
+      "notion": "ifrs-terminology",
+      "difficulty": 2,
+      "tags": [
+        "stock",
+        "inventories",
+        "shares",
+        "UK vs US English"
+      ],
+      "statement": "In US English, \"stock\" usually refers to a company's shares (e.g. \"common stock\"), whereas in the accounts of a UK company the word \"stock\" has traditionally meant inventories.",
+      "answer": true,
+      "justification": "True: US \"common stock\" = ordinary shares, while UK \"stock\" = inventories (IFRS: \"inventories\").",
+      "explanation": "In traditional UK accounts, \"stock\" (or \"stocks\") means goods held for sale or for use in production (stocks in French); the US equivalent is \"inventory\", and IFRS uses \"inventories\" (IAS 2). In US English, \"stock\" refers to equity shares: \"common stock\" (actions ordinaires), \"preferred stock\" (actions de préférence), \"stockholders' equity\" (capitaux propres). When reading an English-language document, the origin (UK or US) of the text determines the meaning of \"stock\".",
+      "source_ref": "Usual UK and US accounting terminology ; IAS 2 uses \"inventories\" (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue6-vocab-ifrsterm-0004",
+      "type": "flashcard",
+      "ue": "UE6",
+      "theme": "vocabulaire-comptable-financier",
+      "notion": "ifrs-terminology",
+      "difficulty": 1,
+      "tags": [
+        "depreciation",
+        "amortisation",
+        "impairment"
+      ],
+      "front": "In IFRS terminology, what is the difference between \"depreciation\" and \"amortisation\", and how do they translate into French?",
+      "back": "Depreciation: systematic allocation of the cost of property, plant and equipment over its useful life (IAS 16).\nAmortisation: the same mechanism for intangible assets (IAS 38).\nBoth translate as \"amortissement\".\nTrap: \"dépréciation\" in French means an impairment loss (IAS 36), not depreciation.",
+      "explanation": "Both terms describe the systematic allocation of the depreciable amount of an asset over its useful life. IFRS reserves \"depreciation\" for tangible assets and \"amortisation\" (US spelling: amortization) for intangible assets. The French \"dépréciation\" is a false friend: it corresponds to an impairment loss, recognised when the carrying amount exceeds the recoverable amount (IAS 36).",
+      "source_ref": "IAS 16 §6 (depreciation) ; IAS 38 §8 (amortisation) ; IAS 36 §6 (impairment loss) — règlement UE 2023/1803",
+      "verified": true,
+      "estimated_seconds": 30
+    }
+  ]
+}
