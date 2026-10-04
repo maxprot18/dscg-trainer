@@ -44,6 +44,169 @@
       "source_ref": "PCG, règles d'amortissement et amortissements dérogatoires (règl. ANC 2014-03) ; comptes 145, 2815, 6811 et 6872 ; CGI art. 39 A",
       "verified": true,
       "estimated_seconds": 120
+    },
+    {
+      "id": "ue4-pcg-amort-0002",
+      "type": "mcq",
+      "difficulty": 1,
+      "tags": [
+        "début d’amortissement",
+        "mise en service"
+      ],
+      "statement": "Une machine est commandée le 15/01/N, livrée et facturée le 01/03/N, puis mise en service le 01/05/N après installation. À partir de quelle date l’amortissement comptable linéaire commence-t-il à courir ?",
+      "options": [
+        "Le 15/01/N, date de la commande",
+        "Le 01/03/N, date de livraison et de facturation",
+        "Le 01/01/N+1, premier jour de l’exercice suivant",
+        "Le 01/05/N, date de mise en service"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L’amortissement commence à la date de début de consommation des avantages économiques attachés à l’actif, c’est-à-dire en pratique à sa mise en service (01/05/N), avec un calcul prorata temporis. La commande ne fait pas entrer l’actif dans le patrimoine ; la livraison et la facture fixent l’entrée à l’actif mais la machine n’est pas encore utilisable ; rien ne justifie de différer l’amortissement à l’exercice suivant. À noter : le dégressif fiscal court, lui, à partir du premier jour du mois d’acquisition.",
+      "source_ref": "PCG art. 214-1 s. (règl. ANC 2014-03), règles d’amortissement",
+      "estimated_seconds": 45,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "amortissements-depreciations-pcg",
+      "verified": true
+    },
+    {
+      "id": "ue4-pcg-amort-0003",
+      "type": "mcq",
+      "difficulty": 2,
+      "tags": [
+        "dépréciation",
+        "valeur actuelle",
+        "valeur d’usage"
+      ],
+      "statement": "Au 31/12/N, un équipement de la société Pernet a une valeur nette comptable de 80 000 €. Un indice de perte de valeur ayant été identifié, la société estime sa valeur vénale (nette des coûts de sortie) à 50 000 € et sa valeur d’usage à 65 000 €. Quelle dépréciation doit être comptabilisée ?",
+      "options": [
+        "30 000 €",
+        "15 000 €",
+        "22 500 €",
+        "Aucune dépréciation"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La valeur actuelle est la plus élevée de la valeur vénale et de la valeur d’usage : max(50 000 ; 65 000) = 65 000 €. Elle est inférieure à la VNC (80 000 €) : dépréciation = 80 000 − 65 000 = 15 000 € (6816 / 29x). 30 000 € résulte d’une comparaison avec la seule valeur vénale ; 22 500 € d’une moyenne des deux valeurs, sans fondement ; l’absence de dépréciation ne serait justifiée que si la valeur actuelle était au moins égale à la VNC.",
+      "source_ref": "PCG art. 214-1 s. (règl. ANC 2014-03), dépréciation des actifs ; comptes 291 et 6816",
+      "estimated_seconds": 75,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "amortissements-depreciations-pcg",
+      "verified": true
+    },
+    {
+      "id": "ue4-pcg-amort-0004",
+      "type": "numeric",
+      "difficulty": 3,
+      "tags": [
+        "dépréciation",
+        "révision du plan",
+        "amortissement prospectif"
+      ],
+      "statement": "La société Delmas a acquis et mis en service le 01/01/N-1 une machine de 120 000 € HT, amortie en linéaire sur 6 ans sans valeur résiduelle. Au 31/12/N, après comptabilisation de l’amortissement de N, un test fait apparaître une valeur actuelle de 56 000 € ; la dépréciation correspondante est comptabilisée. La durée d’utilisation résiduelle reste de 4 ans. Quel est le montant de la dotation aux amortissements de l’exercice N+1 (en euros) ?",
+      "expected_value": 14000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Annuité initiale : 120 000 / 6 = 20 000 €. VNC au 31/12/N après deux annuités : 120 000 − 40 000 = 80 000 €. Dépréciation : 80 000 − 56 000 = 24 000 €. La comptabilisation d’une dépréciation modifie de manière prospective la base amortissable : la nouvelle valeur nette (56 000 €) est répartie sur la durée résiduelle de 4 ans, soit 56 000 / 4 = 14 000 € pour N+1. Conserver l’annuité de 20 000 € serait une erreur.",
+      "source_ref": "PCG art. 214-1 s. (règl. ANC 2014-03), révision du plan d’amortissement après dépréciation",
+      "estimated_seconds": 180,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "amortissements-depreciations-pcg",
+      "verified": true
+    },
+    {
+      "id": "ue4-pcg-amort-0005",
+      "type": "case_study",
+      "difficulty": 3,
+      "tags": [
+        "prorata temporis",
+        "valeur résiduelle",
+        "dégressif fiscal",
+        "amortissement dérogatoire"
+      ],
+      "title": "Plan d’amortissement et amortissement dérogatoire d’une presse",
+      "context": "Le 01/04/N, la société Faure acquiert et met en service une presse industrielle neuve pour 90 000 € HT. L’exercice coïncide avec l’année civile.\nSur le plan comptable, la presse sera utilisée 5 ans ; le mode linéaire reflète le rythme de consommation des avantages économiques. La société estime de façon fiable qu’elle pourra revendre la presse 10 000 € au terme de ces 5 ans (valeur résiduelle significative).\nSur le plan fiscal, la société pratique l’amortissement dégressif sur 5 ans (coefficient 1,75), calculé sur le coût d’acquisition de 90 000 €, à compter du premier jour du mois d’acquisition.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Quel est le montant de l’amortissement comptable de l’exercice N (en euros) ?",
+          "expected_value": 12000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Montant amortissable : 90 000 − 10 000 = 80 000 €. Annuité pleine : 80 000 / 5 = 16 000 €. Prorata de 9 mois (avril à décembre) : 16 000 × 9/12 = 12 000 €."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Quel est le montant de l’amortissement fiscal (dégressif) de l’exercice N (en euros) ?",
+          "expected_value": 23625,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Taux dégressif : (100 % / 5) × 1,75 = 35 %. Annuité N : 90 000 × 35 % × 9/12 = 23 625 €."
+        },
+        {
+          "id": "q3",
+          "kind": "journal_entry",
+          "points": 3,
+          "prompt": "Passez au 31/12/N l’écriture relative à l’amortissement dérogatoire (comptes 6872 et 145).",
+          "entries": [
+            {
+              "account": "6872",
+              "label": "Dotations aux provisions réglementées (immobilisations)",
+              "debit": 11625,
+              "credit": 0
+            },
+            {
+              "account": "145",
+              "label": "Amortissements dérogatoires",
+              "debit": 0,
+              "credit": 11625
+            }
+          ],
+          "explanation": "L’excédent de l’amortissement fiscal sur l’amortissement comptable est constaté en amortissement dérogatoire : 23 625 − 12 000 = 11 625 €."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "points": 3,
+          "prompt": "Expliquez les deux causes de l’amortissement dérogatoire constaté en N et son incidence sur la valeur nette comptable de la presse et sur le bilan.",
+          "model_answer": "L’écart provient, d’une part, du mode : le dégressif fiscal (35 %) est plus rapide que le linéaire comptable et court depuis le premier jour du mois d’acquisition ; d’autre part, de la base : la valeur résiduelle de 10 000 € est déduite du montant amortissable comptable mais pas de la base fiscale. L’amortissement dérogatoire est une provision réglementée inscrite dans les capitaux propres (compte 145) ; il ne modifie pas l’amortissement comptable (compte 2815), si bien que la VNC de la presse (90 000 − 12 000 = 78 000 €) reste fondée sur le plan économique.",
+          "key_points": [
+            "Mode dégressif plus rapide que le linéaire",
+            "Valeur résiduelle non déduite de la base fiscale",
+            "Provision réglementée en capitaux propres (145)",
+            "VNC inchangée : 78 000 €"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Comptable : (90 000 − 10 000) / 5 × 9/12 = 12 000 € ; fiscal : 90 000 × 35 % × 9/12 = 23 625 € ; amortissement dérogatoire : 11 625 € (6872 / 145).",
+      "source_ref": "PCG art. 214-1 s. (règl. ANC 2014-03), montant amortissable et amortissements dérogatoires ; CGI art. 39 A ; comptes 145 et 6872",
+      "estimated_seconds": 720,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "amortissements-depreciations-pcg",
+      "verified": true
     }
   ]
 }

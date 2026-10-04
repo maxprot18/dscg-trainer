@@ -1,0 +1,216 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-pcg-immo-0001",
+      "type": "mcq",
+      "difficulty": 1,
+      "tags": [
+        "coût d’acquisition",
+        "coûts directement attribuables"
+      ],
+      "statement": "Lors de l’acquisition d’une machine, quelle dépense ne doit pas être incluse dans son coût d’acquisition ?",
+      "options": [
+        "Les frais de transport jusqu’à l’usine",
+        "Les frais de formation des opérateurs à l’utilisation de la machine",
+        "Les frais d’installation et de montage",
+        "Les droits de douane non récupérables"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le coût d’acquisition comprend le prix d’achat (droits de douane et taxes non récupérables compris) et les coûts directement attribuables engagés pour mettre l’actif en place et en état de fonctionner : transport, installation, montage. Les frais de formation du personnel ne servent pas à mettre l’actif en état de fonctionner : ils sont exclus du coût et comptabilisés en charges.",
+      "source_ref": "PCG art. 213-1 s. (règl. ANC 2014-03), coût d’acquisition des immobilisations",
+      "estimated_seconds": 45,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "immobilisations-pcg",
+      "verified": true
+    },
+    {
+      "id": "ue4-pcg-immo-0002",
+      "type": "mcq",
+      "difficulty": 2,
+      "tags": [
+        "frais d’acquisition",
+        "option"
+      ],
+      "statement": "La société Brévan acquiert un immeuble et supporte des droits de mutation et des honoraires de notaire. Quelle affirmation est conforme au PCG ?",
+      "options": [
+        "Ces frais doivent obligatoirement être incorporés au coût de l’immeuble",
+        "Ces frais doivent obligatoirement être comptabilisés en charges",
+        "Ces frais peuvent être incorporés au coût ou comptabilisés en charges, au choix pour chaque immobilisation acquise",
+        "Ces frais peuvent être incorporés au coût ou comptabilisés en charges, l’option retenue s’appliquant à l’ensemble des immobilisations corporelles et incorporelles"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Les droits de mutation, honoraires, commissions et frais d’actes liés à l’acquisition peuvent être soit incorporés au coût d’acquisition, soit comptabilisés en charges. Il s’agit d’une option globale : le choix s’applique à l’ensemble des immobilisations corporelles et incorporelles (une option distincte existe pour les titres). Les deux premières propositions ignorent l’existence de l’option ; la troisième méconnaît son caractère global, qui interdit de choisir immobilisation par immobilisation.",
+      "source_ref": "PCG art. 213-8 (règl. ANC 2014-03), frais d’acquisition des immobilisations",
+      "estimated_seconds": 60,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "immobilisations-pcg",
+      "verified": true
+    },
+    {
+      "id": "ue4-pcg-immo-0003",
+      "type": "true_false",
+      "difficulty": 2,
+      "tags": [
+        "recherche et développement",
+        "immobilisations incorporelles"
+      ],
+      "statement": "Selon le PCG, les dépenses de recherche peuvent être inscrites à l’actif dès lors que le projet présente de sérieuses chances de réussite technique.",
+      "answer": false,
+      "justification": "Les dépenses de recherche sont toujours comptabilisées en charges ; seuls les frais de développement peuvent être immobilisés, sous conditions.",
+      "explanation": "Au stade de la recherche, l’entité ne peut démontrer l’existence d’un actif générateur d’avantages économiques futurs : les dépenses sont en charges. Les frais de développement peuvent en revanche être inscrits en immobilisations incorporelles si l’entité démontre notamment la faisabilité technique du projet, son intention et sa capacité de l’achever et de l’utiliser ou le vendre, la probabilité des avantages économiques futurs et sa capacité à mesurer les dépenses de façon fiable.",
+      "source_ref": "PCG art. 212-3 (règl. ANC 2014-03), frais de recherche et de développement",
+      "estimated_seconds": 45,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "immobilisations-pcg",
+      "verified": true
+    },
+    {
+      "id": "ue4-pcg-immo-0004",
+      "type": "numeric",
+      "difficulty": 2,
+      "tags": [
+        "coût d’acquisition",
+        "calcul"
+      ],
+      "statement": "La société Tessier acquiert une ligne d’embouteillage. Données (montants HT) : prix catalogue 200 000 € ; remise commerciale de 5 % sur le prix catalogue ; transport 4 000 € ; installation et montage 6 000 € ; droits de douane 3 000 € ; essais de bon fonctionnement avant mise en service 1 500 € ; formation du personnel 2 500 € ; campagne publicitaire de lancement des nouveaux produits 3 000 €. La TVA est entièrement récupérable. Quel est le coût d’acquisition de la ligne (en euros) ?",
+      "expected_value": 204500,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Prix d’achat net de remise : 200 000 × 0,95 = 190 000 €. On ajoute les coûts directement attribuables à la mise en place et en état de fonctionner : transport 4 000 + installation 6 000 + droits de douane 3 000 + essais 1 500. Coût d’acquisition = 190 000 + 4 000 + 6 000 + 3 000 + 1 500 = 204 500 €. La formation du personnel (2 500 €) et la publicité de lancement (3 000 €) sont exclues et comptabilisées en charges ; la TVA récupérable n’est pas un élément du coût.",
+      "source_ref": "PCG art. 213-1 s. (règl. ANC 2014-03), coût d’acquisition des immobilisations",
+      "estimated_seconds": 150,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "immobilisations-pcg",
+      "verified": true
+    },
+    {
+      "id": "ue4-pcg-immo-0005",
+      "type": "journal_entry",
+      "difficulty": 2,
+      "tags": [
+        "acquisition",
+        "TVA sur immobilisations"
+      ],
+      "statement": "Le 10/03/N, la société Grandin reçoit la facture d’un fournisseur pour l’achat d’un matériel industriel : prix 80 000 € HT, frais de transport facturés 1 200 € HT, TVA au taux de 20 % sur l’ensemble. Le règlement interviendra à 60 jours. Passez l’écriture d’acquisition en utilisant les comptes 2154, 44562 et 404.",
+      "date": "10/03/N",
+      "entries": [
+        {
+          "account": "2154",
+          "label": "Matériel industriel",
+          "debit": 81200,
+          "credit": 0
+        },
+        {
+          "account": "44562",
+          "label": "TVA déductible sur immobilisations",
+          "debit": 16240,
+          "credit": 0
+        },
+        {
+          "account": "404",
+          "label": "Fournisseurs d’immobilisations",
+          "debit": 0,
+          "credit": 97440
+        }
+      ],
+      "explanation": "Les frais de transport sont des coûts directement attribuables : ils s’ajoutent au prix pour former le coût d’acquisition (80 000 + 1 200 = 81 200 € au débit du 2154). La TVA récupérable (20 % × 81 200 = 16 240 €) n’entre pas dans le coût ; elle est portée au compte 44562. La dette envers le fournisseur d’immobilisations s’élève à 81 200 × 1,2 = 97 440 € (compte 404, distinct du 401 réservé aux fournisseurs de biens et services d’exploitation).",
+      "source_ref": "PCG art. 213-1 s. (règl. ANC 2014-03) ; comptes 2154, 404 et 44562",
+      "estimated_seconds": 120,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "immobilisations-pcg",
+      "verified": true
+    },
+    {
+      "id": "ue4-pcg-immo-0006",
+      "type": "case_study",
+      "difficulty": 3,
+      "tags": [
+        "composants",
+        "terrain",
+        "remplacement de composant"
+      ],
+      "title": "Approche par composants d’un immeuble de bureaux",
+      "context": "Le 01/01/N, la société Morel acquiert un immeuble de bureaux pour 2 000 000 € HT, frais d’acquisition exclus (la société a opté pour leur comptabilisation en charges). L’immeuble est mis en service immédiatement.\nUne expertise permet de ventiler le prix :\n- terrain : 400 000 € ;\n- gros œuvre (structure) : 1 100 000 €, durée d’utilisation 40 ans ;\n- toiture et étanchéité : 240 000 €, durée d’utilisation 20 ans ;\n- installations de chauffage et climatisation : 260 000 €, durée d’utilisation 10 ans.\nLes composants sont amortis selon le mode linéaire, sans valeur résiduelle. La société clôture au 31/12.\nLe 31/12/N+7, après comptabilisation de l’amortissement de N+7, l’installation de chauffage et climatisation est remplacée par une installation neuve de 300 000 € HT.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Comment traiter la quote-part de prix affectée au terrain ?",
+          "options": [
+            "Elle est amortie sur la durée du gros œuvre (40 ans)",
+            "Elle est comptabilisée séparément et n’est pas amortie",
+            "Elle est intégrée au gros œuvre et amortie avec lui",
+            "Elle est comptabilisée en charges dès l’acquisition"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Le terrain n’a pas de durée d’utilisation limitée : il est comptabilisé séparément (compte 211) et n’est pas amorti. L’intégrer au gros œuvre conduirait à amortir un actif non consommé."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Quel est le montant total de la dotation aux amortissements de l’immeuble pour l’exercice N (en euros) ?",
+          "expected_value": 65500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Gros œuvre : 1 100 000 / 40 = 27 500 € ; toiture : 240 000 / 20 = 12 000 € ; chauffage-climatisation : 260 000 / 10 = 26 000 €. Total : 65 500 €. Le terrain n’est pas amorti. Un amortissement global du bâtiment sur 40 ans aurait donné (1 600 000 / 40) = 40 000 €."
+        },
+        {
+          "id": "q3",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Lors du remplacement au 31/12/N+7, quelle est la valeur nette comptable de l’ancienne installation de chauffage et climatisation sortie de l’actif (en euros) ?",
+          "expected_value": 52000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "L’installation a été amortie pendant 8 exercices (N à N+7) : 8 × 26 000 = 208 000 €. VNC = 260 000 − 208 000 = 52 000 €, comptabilisée en charge lors de la sortie ; la nouvelle installation est immobilisée pour 300 000 € et amortie sur sa propre durée."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "points": 2,
+          "prompt": "Pourquoi le PCG impose-t-il l’approche par composants dans cette situation, et quel en est l’effet lors du remplacement ?",
+          "model_answer": "Les éléments principaux de l’immeuble ont des durées d’utilisation sensiblement différentes (40, 20 et 10 ans) : les amortir ensemble sur une durée unique ne refléterait pas le rythme de consommation des avantages économiques. Chaque composant est donc comptabilisé et amorti séparément. Lors du remplacement, l’ancien composant est sorti de l’actif pour sa VNC (charge) et le nouveau est immobilisé, ce qui évite de conserver à l’actif un élément qui n’existe plus et de passer en charges une dépense de remplacement qui constitue un actif.",
+          "key_points": [
+            "Durées d’utilisation différentes des éléments principaux",
+            "Amortissement séparé de chaque composant",
+            "Sortie de la VNC de l’ancien composant",
+            "Immobilisation du nouveau composant"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Terrain non amortissable ; dotation N par composants : 27 500 + 12 000 + 26 000 = 65 500 € ; VNC du composant remplacé après 8 ans : 260 000 − 8 × 26 000 = 52 000 €.",
+      "source_ref": "PCG art. 214-9 (règl. ANC 2014-03), approche par composants ; comptes 211, 213 et 281",
+      "estimated_seconds": 720,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "immobilisations-pcg",
+      "verified": true
+    }
+  ]
+}

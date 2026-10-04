@@ -1,0 +1,145 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-pcg-stocks-0001",
+      "type": "mcq",
+      "difficulty": 1,
+      "tags": [
+        "biens fongibles",
+        "méthodes de sortie"
+      ],
+      "statement": "Dans les comptes individuels établis selon le PCG, quelles méthodes peuvent être utilisées pour évaluer les sorties de stocks de biens fongibles ?",
+      "options": [
+        "Le coût moyen pondéré ou le premier entré, premier sorti (PEPS)",
+        "Le dernier entré, premier sorti (DEPS) uniquement",
+        "Le PEPS ou le DEPS, au choix",
+        "Le prix de vente diminué de la marge habituelle, obligatoirement"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Les biens fongibles sont évalués soit au coût moyen pondéré, soit selon la méthode PEPS. Le DEPS (LIFO) n’est pas admis dans les comptes individuels, car il conduit à valoriser le stock final à des coûts anciens. La méthode du prix de vente diminué de la marge n’est qu’une technique pratique d’approximation du coût, utilisée notamment dans la distribution lorsqu’elle donne un résultat proche du coût réel : ce n’est ni une méthode de sortie des biens fongibles ni une obligation.",
+      "source_ref": "PCG, règles relatives au coût d’entrée et à l’évaluation des stocks (règl. ANC 2014-03), évaluation des biens fongibles",
+      "estimated_seconds": 45,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "stocks-evaluation-pcg",
+      "verified": true
+    },
+    {
+      "id": "ue4-pcg-stocks-0002",
+      "type": "mcq",
+      "difficulty": 2,
+      "tags": [
+        "coût de production",
+        "sous-activité",
+        "capacité normale"
+      ],
+      "statement": "La société Arnal fabrique un produit unique. Pour l’exercice N : charges variables de production 10 € par unité ; charges fixes de production 400 000 € ; capacité normale 100 000 unités ; production réelle 80 000 unités (sous-activité). Quel est le coût de production unitaire à retenir pour l’évaluation des stocks ?",
+      "options": [
+        "15 €",
+        "10 €",
+        "14 €",
+        "14,50 €"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Les charges fixes de production sont imputées sur la base de la capacité normale : 400 000 / 100 000 = 4 € par unité. Coût unitaire = 10 + 4 = 14 €. Les 80 000 € de charges fixes non imputés (400 000 − 80 000 × 4) constituent le coût de la sous-activité, qui reste en charges de la période. 15 € (400 000 / 80 000 = 5 € de fixe) incorpore la sous-activité dans le stock ; 10 € omet les charges fixes de production ; 14,50 € ne correspond à aucune méthode admise.",
+      "source_ref": "PCG, règles relatives au coût d’entrée et à l’évaluation des stocks (règl. ANC 2014-03), coût de production et imputation rationnelle des charges fixes",
+      "estimated_seconds": 90,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "stocks-evaluation-pcg",
+      "verified": true
+    },
+    {
+      "id": "ue4-pcg-stocks-0003",
+      "type": "true_false",
+      "difficulty": 2,
+      "tags": [
+        "coût de production",
+        "frais de stockage"
+      ],
+      "statement": "En principe, les frais de stockage des produits finis en attente de vente ne sont pas incorporés au coût de production des stocks.",
+      "answer": true,
+      "justification": "Les coûts de stockage sont exclus du coût des stocks, sauf s’ils sont nécessaires au processus de production avant une nouvelle étape, ce qui n’est pas le cas de produits finis en attente de vente.",
+      "explanation": "Le coût de production ne comprend que les coûts engagés pour amener les stocks à l’endroit et dans l’état où ils se trouvent. Le stockage de produits finis intervient après la fin de la production : ses coûts sont des charges de la période. L’exception vise les stockages intermédiaires indispensables au processus (par exemple un vieillissement ou un séchage entre deux étapes).",
+      "source_ref": "PCG, règles relatives au coût d’entrée et à l’évaluation des stocks (règl. ANC 2014-03), éléments exclus du coût des stocks",
+      "estimated_seconds": 45,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "stocks-evaluation-pcg",
+      "verified": true
+    },
+    {
+      "id": "ue4-pcg-stocks-0004",
+      "type": "numeric",
+      "difficulty": 3,
+      "tags": [
+        "CMUP après chaque entrée",
+        "dépréciation des stocks"
+      ],
+      "statement": "La société Bonnet clôture son exercice le 31/03/N. Mouvements de mars N d’une marchandise, évaluée au coût moyen unitaire pondéré calculé après chaque entrée :\n- 01/03 : stock initial 200 unités à 50 € ;\n- 05/03 : entrée de 300 unités à 55 € ;\n- 10/03 : sortie de 350 unités ;\n- 20/03 : entrée de 250 unités à 58 € ;\n- 25/03 : sortie de 200 unités.\nAu 31/03/N, le prix de vente probable est de 60 € par unité et les frais de commercialisation restant à engager sont de 7 € par unité. Quel est le montant de la dépréciation à constater sur le stock final au 31/03/N (en euros, arrondi à l’euro) ?",
+      "expected_value": 625,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "CMUP après l’entrée du 05/03 : (200 × 50 + 300 × 55) / 500 = 26 500 / 500 = 53 €. Après la sortie du 10/03 : 150 unités à 53 € = 7 950 €. CMUP après l’entrée du 20/03 : (7 950 + 250 × 58) / 400 = 22 450 / 400 = 56,125 €. Stock final après la sortie du 25/03 : 200 unités × 56,125 = 11 225 €. Valeur actuelle : 200 × (60 − 7) = 10 600 €. Dépréciation : 11 225 − 10 600 = 625 €. Un CMP périodique (54,67 €) donnerait à tort environ 333 €.",
+      "source_ref": "PCG, règles relatives au coût d’entrée et à l’évaluation des stocks (règl. ANC 2014-03), coût moyen pondéré et dépréciation des stocks ; comptes 397 et 6817",
+      "estimated_seconds": 300,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "stocks-evaluation-pcg",
+      "verified": true
+    },
+    {
+      "id": "ue4-pcg-stocks-0005",
+      "type": "journal_entry",
+      "difficulty": 2,
+      "tags": [
+        "variation de stock",
+        "dépréciation des stocks",
+        "marchandises"
+      ],
+      "statement": "Au 31/12/N, la société Lacombe dispose des informations suivantes sur ses marchandises : stock initial (au 01/01/N) 50 000 € ; stock final (inventaire au 31/12/N) 62 000 € ; dépréciation existante au 01/01/N 4 000 € ; dépréciation nécessaire au 31/12/N 6 500 €. Passez en une seule écriture la constatation de la variation de stock et l’ajustement de la dépréciation, en ne retenant qu’un montant net par compte (variation nette de stock ; complément de dépréciation, sans reprise de l’ancienne dépréciation). Utilisez les comptes 37, 6037, 397 et 6817.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "37",
+          "label": "Stocks de marchandises",
+          "debit": 12000,
+          "credit": 0
+        },
+        {
+          "account": "6037",
+          "label": "Variation des stocks de marchandises",
+          "debit": 0,
+          "credit": 12000
+        },
+        {
+          "account": "6817",
+          "label": "Dotations aux dépréciations des actifs circulants",
+          "debit": 2500,
+          "credit": 0
+        },
+        {
+          "account": "397",
+          "label": "Dépréciations des stocks de marchandises",
+          "debit": 0,
+          "credit": 2500
+        }
+      ],
+      "explanation": "Variation de stock : on annule le stock initial (6037 au débit, 37 au crédit pour 50 000 €) et on constate le stock final (37 au débit, 6037 au crédit pour 62 000 €) ; en net, le compte 37 est débité de 12 000 € et le compte 6037 crédité de 12 000 € (augmentation de stock, qui diminue le coût d’achat des marchandises vendues). Dépréciation : 6 500 − 4 000 = 2 500 € de dotation complémentaire (6817 / 397).",
+      "source_ref": "PCG, règles relatives au coût d’entrée et à l’évaluation des stocks (règl. ANC 2014-03) ; comptes 37, 397, 6037 et 6817",
+      "estimated_seconds": 150,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "stocks-evaluation-pcg",
+      "verified": true
+    }
+  ]
+}

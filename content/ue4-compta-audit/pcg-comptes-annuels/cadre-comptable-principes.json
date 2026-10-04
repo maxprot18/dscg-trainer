@@ -1,0 +1,201 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-pcg-cadre-0001",
+      "type": "mcq",
+      "difficulty": 1,
+      "tags": [
+        "comptes annuels",
+        "documents de synthèse"
+      ],
+      "statement": "Selon le Code de commerce, quels documents composent les comptes annuels d’une société commerciale ? (plusieurs réponses possibles)",
+      "options": [
+        "Le bilan",
+        "Le compte de résultat",
+        "L’annexe",
+        "Le rapport de gestion"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "multiple": true,
+      "explanation": "Les comptes annuels comprennent le bilan, le compte de résultat et l’annexe, qui forment un tout indissociable (C. com. L123-12). Le rapport de gestion est un document établi par l’organe de direction pour les sociétés commerciales, mais il ne fait pas partie des comptes annuels : il les commente et n’est pas soumis aux mêmes règles d’établissement.",
+      "source_ref": "C. com. art. L123-12",
+      "estimated_seconds": 45,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "cadre-comptable-principes",
+      "verified": true
+    },
+    {
+      "id": "ue4-pcg-cadre-0002",
+      "type": "mcq",
+      "difficulty": 1,
+      "tags": [
+        "non-compensation",
+        "principes comptables"
+      ],
+      "statement": "Pour alléger son compte de résultat, la société Loran présente sur une seule ligne le solde net entre les intérêts perçus sur ses placements (9 000 €) et les intérêts payés sur ses emprunts (14 000 €), soit une charge nette de 5 000 €. Quel principe comptable cette présentation méconnaît-elle ?",
+      "options": [
+        "Le principe de permanence des méthodes",
+        "Le principe de prudence",
+        "Le principe d’indépendance des exercices",
+        "Le principe de non-compensation"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Aucune compensation ne peut être opérée entre les postes de charges et de produits du compte de résultat, ni entre les postes d’actif et de passif (C. com. L123-19) : intérêts perçus (produits financiers) et intérêts payés (charges financières) doivent apparaître séparément. La permanence des méthodes interdit de changer de méthode d’un exercice à l’autre, ce qui n’est pas le cas ici. La prudence concerne la prise en compte des risques et des seuls bénéfices réalisés : les deux montants sont ici réalisés. L’indépendance des exercices porte sur le rattachement des charges et produits à la bonne période, non sur leur présentation.",
+      "source_ref": "C. com. art. L123-19",
+      "estimated_seconds": 60,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "cadre-comptable-principes",
+      "verified": true
+    },
+    {
+      "id": "ue4-pcg-cadre-0003",
+      "type": "mcq",
+      "difficulty": 2,
+      "tags": [
+        "événements postérieurs à la clôture",
+        "prudence",
+        "créances"
+      ],
+      "statement": "La société Viret clôture au 31/12/N ; ses comptes sont arrêtés le 15/03/N+1. Le 20/02/N+1, elle apprend la mise en liquidation judiciaire d’un client dont la créance (24 000 € TTC) figurait au bilan du 31/12/N ; ce client connaissait de graves difficultés de trésorerie depuis l’automne N. Quel traitement retenir dans les comptes de N ?",
+      "options": [
+        "Aucune incidence sur les comptes de N : l’événement est postérieur à la clôture",
+        "Une simple information dans l’annexe des comptes de N, sans dépréciation",
+        "Une dépréciation de la créance dans les comptes de N, la situation de difficulté existant déjà à la clôture",
+        "Une dépréciation de la créance dans les comptes de N+1 uniquement, date de la liquidation"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Le principe de prudence impose de procéder aux dépréciations nécessaires et de tenir compte des passifs et des pertes nés au cours de l’exercice ou d’un exercice antérieur, même s’ils ne sont connus qu’entre la date de clôture et celle de l’établissement des comptes (C. com. L123-20). La liquidation révèle une situation (insolvabilité du client) qui existait déjà au 31/12/N : c’est un événement qui conduit à ajuster les comptes, donc à déprécier la créance en N (sur la base HT). « Aucune incidence » et « dépréciation en N+1 » ignorent que la perte trouve son origine avant la clôture. L’information en annexe seule est réservée aux événements postérieurs qui ne se rattachent pas à une situation existant à la clôture.",
+      "source_ref": "C. com. art. L123-20 ; PCG art. 121-1 s. (règl. ANC 2014-03)",
+      "estimated_seconds": 75,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "cadre-comptable-principes",
+      "verified": true
+    },
+    {
+      "id": "ue4-pcg-cadre-0004",
+      "type": "true_false",
+      "difficulty": 1,
+      "tags": [
+        "intangibilité du bilan d’ouverture"
+      ],
+      "statement": "Le bilan d’ouverture d’un exercice doit correspondre au bilan de clôture de l’exercice précédent.",
+      "answer": true,
+      "justification": "C’est le principe d’intangibilité du bilan d’ouverture posé par le Code de commerce (L123-19).",
+      "explanation": "Le principe d’intangibilité du bilan d’ouverture garantit la continuité entre deux exercices : les corrections d’erreurs ou les effets de changements de méthode ne modifient pas le bilan d’ouverture, ils transitent par les comptes de l’exercice en cours (résultat ou report à nouveau selon le cas).",
+      "source_ref": "C. com. art. L123-19",
+      "estimated_seconds": 30,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "cadre-comptable-principes",
+      "verified": true
+    },
+    {
+      "id": "ue4-pcg-cadre-0005",
+      "type": "flashcard",
+      "difficulty": 1,
+      "tags": [
+        "principes comptables"
+      ],
+      "front": "Citez les principaux principes comptables posés par le Code de commerce pour l’établissement des comptes annuels.",
+      "back": "Image fidèle, régularité et sincérité (L123-14) ; continuité d’exploitation et prudence (L123-20) ; seuls les bénéfices réalisés sont comptabilisés (L123-21) ; coût historique (L123-18) ; permanence des méthodes (L123-17) ; non-compensation et intangibilité du bilan d’ouverture (L123-19). S’y ajoute l’indépendance des exercices (rattachement des charges et produits).",
+      "explanation": "Ces principes sont repris par le PCG (art. 121-1 s.). La prudence est asymétrique : les pertes probables sont prises en compte, les gains latents ne le sont pas.",
+      "source_ref": "C. com. art. L123-14 à L123-21 ; PCG art. 121-1 s. (règl. ANC 2014-03)",
+      "estimated_seconds": 45,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "cadre-comptable-principes",
+      "verified": true
+    },
+    {
+      "id": "ue4-pcg-cadre-0006",
+      "type": "case_study",
+      "difficulty": 2,
+      "tags": [
+        "prudence",
+        "indépendance des exercices",
+        "produits constatés d’avance",
+        "charges à payer"
+      ],
+      "title": "Révision du résultat de la société Calvi",
+      "context": "La société Calvi clôture son exercice au 31/12/N. Le comptable présente un résultat provisoire de 150 000 €. En révisant le dossier, vous relevez les points suivants.\n1. Des titres de placement acquis 40 000 € valent 52 000 € au 31/12/N. Le comptable a enregistré un produit de 12 000 € pour constater cette plus-value.\n2. D’autres titres de placement, acquis 30 000 €, ne valent plus que 25 000 € au 31/12/N ; rien n’a été comptabilisé.\n3. Le 01/12/N, la société a encaissé 18 000 € de loyers correspondant à la sous-location d’un entrepôt du 01/12/N au 31/05/N+1 (6 mois). La totalité a été comptabilisée en produits de N.\n4. La facture d’électricité de décembre N, estimée à 2 000 € HT, n’a pas été reçue et n’a pas été comptabilisée.\nOn ne tient pas compte de l’impôt sur les sociétés.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Quel principe explique le traitement différent des points 1 et 2 (plus-value latente non comptabilisée, moins-value latente dépréciée) ?",
+          "options": [
+            "La permanence des méthodes",
+            "La prudence",
+            "La non-compensation",
+            "La continuité d’exploitation"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Seuls les bénéfices réalisés peuvent être inscrits dans les comptes (L123-21), alors que les pertes probables doivent être prises en compte (L123-20) : c’est l’asymétrie du principe de prudence. La non-compensation interdit en outre de compenser la plus-value latente des titres du point 1 avec la moins-value du point 2."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Quel est le montant du produit constaté d’avance à comptabiliser au 31/12/N au titre du point 3 (en euros) ?",
+          "expected_value": 15000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Loyer mensuel : 18 000 / 6 = 3 000 €. Seul le mois de décembre N concerne l’exercice N ; les 5 mois de N+1 (janvier à mai) donnent un produit constaté d’avance de 5 × 3 000 = 15 000 € (compte 487)."
+        },
+        {
+          "id": "q3",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Quel est le résultat corrigé de l’exercice N (en euros) ?",
+          "expected_value": 116000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "150 000 − 12 000 (annulation du produit latent) − 5 000 (dépréciation des titres : 30 000 − 25 000) − 15 000 (produit constaté d’avance) − 2 000 (charge à payer d’électricité) = 116 000 €."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "points": 3,
+          "prompt": "Expliquez en quoi les corrections des points 3 et 4 relèvent du principe d’indépendance des exercices.",
+          "model_answer": "Le principe d’indépendance des exercices impose de rattacher à chaque exercice les charges et les produits qui le concernent, et eux seuls, indépendamment de leur date d’encaissement, de décaissement ou de facturation. Au point 3, 5 mois de loyers encaissés en N concernent N+1 : ils sont neutralisés par un produit constaté d’avance de 15 000 €. Au point 4, la consommation d’électricité de décembre est une charge de N même si la facture n’est pas reçue : elle est constatée en charge à payer (2 000 € HT).",
+          "key_points": [
+            "Rattachement des charges et produits à l’exercice qu’ils concernent",
+            "Produit constaté d’avance de 15 000 € pour les loyers de N+1",
+            "Charge à payer de 2 000 € pour l’électricité de décembre N",
+            "Indépendance vis-à-vis des dates d’encaissement ou de facturation"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas mobilise la prudence (asymétrie gains latents / pertes probables), la non-compensation et l’indépendance des exercices. Résultat corrigé : 150 000 − 12 000 − 5 000 − 15 000 − 2 000 = 116 000 €.",
+      "source_ref": "C. com. art. L123-19 à L123-21 ; PCG art. 121-1 s. (règl. ANC 2014-03) ; comptes 487 et 408",
+      "estimated_seconds": 600,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "cadre-comptable-principes",
+      "verified": true
+    }
+  ]
+}
