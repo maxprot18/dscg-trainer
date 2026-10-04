@@ -1,6 +1,6 @@
 # PROGRESS — DSCG Trainer
 
-Dernière mise à jour : 2026-10-04, fin de la session phase 1 (moteur).
+Dernière mise à jour : 2026-10-04, fin de la session phase 2 (contenu UE 4).
 
 ## État par phase
 
@@ -8,7 +8,7 @@ Dernière mise à jour : 2026-10-04, fin de la session phase 1 (moteur).
 | --- | --- |
 | 0. Cadrage | Terminée, fusionnée dans `main` et déployée sur https://maxprot18.github.io/dscg-trainer/ (2026-10-04) |
 | 1. Moteur | Terminée (voir ci-dessous) |
-| 2. Contenu UE 4 | À faire |
+| 2. Contenu UE 4 | Terminée (voir ci-dessous) |
 | 3. Contenu UE 1, 2, 3, 5, 6 | À faire |
 | 4. Progression | À faire |
 | 5. Finitions | À faire |
@@ -50,6 +50,25 @@ Dernière mise à jour : 2026-10-04, fin de la session phase 1 (moteur).
 - **Tests** : 129 tests Vitest verts. Ils couvrent la correction de chaque type et ses cas limites, la lecture des nombres, la construction des sessions, l'enregistrement IndexedDB, le jeu de bout en bout de chacun des 8 types dans le lecteur, une session complète avec enregistrement, et l'arrêt au chrono.
 - **Smoke test dans Chromium** (serveur de dev, téléphone 390 px) : une session rapide de 10 exercices jouée de bout en bout, bilan affiché, 10 tentatives et la session en IndexedDB, aucune erreur console.
 
+## Phase 2 : ce qui est fait
+
+- **Contenu UE 4 : 700 exercices, tous `verified: true`, et 129 fiches de cours, une par notion de l'UE 4.**
+  - Par type : 280 QCM (40 %), 106 vrai/faux, 106 calculs, 69 écritures, 69 cas pratiques, 15 cas de consolidation et 20 cas d'audit, 35 flashcards. C'est la répartition du SPEC à l'unité près.
+  - Par difficulté : environ 30 % de niveau 1, 50 % de niveau 2, 20 % de niveau 3.
+  - Les vrai/faux sont équilibrés (50/50). Dans les QCM, la bonne réponse est un peu moins souvent en position 1 (18 %) qu'en positions 2 à 4.
+  - Les fiches font de 12 à 30 lignes, avec références et section « À retenir ».
+- **Méthode.** Le plan est découpé en 25 lots thématiques de 20 à 37 exercices. Il fixe pour chaque lot les notions, le nombre exact d'exercices par type et par difficulté ; il a été calculé pour tenir la répartition du SPEC sur l'ensemble de l'UE.
+  - Les rédacteurs (sous-agents) travaillent en parallèle sur des fichiers disjoints : fiches d'abord, puis exercices, avec contrôle par script de la conformité au plan.
+  - Chaque lot est ensuite relu par un autre sous-agent, avec la liste des points incertains signalés par le rédacteur. Le relecteur résout chaque énoncé seul, recalcule avec node, puis compare au corrigé.
+  - Un commit par lot relu (25 commits `content(ue4-…)`), via un script qui refuse de commiter s'il reste un exercice non vérifié ou si `npm run validate` échoue.
+  - Environ 20 % des exercices ont été retouchés à la relecture : surtout des références (numéros d'articles incertains remplacés par le texte cité sans numéro), des hypothèses manquantes ajoutées aux énoncés, et quelques vraies erreurs (distracteurs mal calculés, explications fausses, terminologie d'opinion « défavorable » remplacée par celle de la NEP 700).
+- **`docs/content-guide.md`** : guide de rédaction et de relecture, réutilisable en phase 3. Il fixe le format des fiches, les règles par type d'exercice, les tolérances, les conventions de comptes à annoncer dans l'énoncé, le renvoi aux options par numéro et les règles de consolidation ANC 2020-01.
+- **Technique** :
+  - **Chargement par UE** : le contenu est chargé UE par UE (`src/content/bundles/ue*.ts`), dans un fichier JS par UE chargé à la demande et mis en cache par le service worker. Le fichier principal ne contient plus les exercices (516 ko, 160 ko compressé). Le fichier de l'UE 4 pèse 1,3 Mo (340 ko compressé) ; la limite de précache est relevée à 5 Mo.
+  - **Fiches de cours** : page `/cours/:notion` avec un rendu Markdown minimal maison (sans dépendance, aucun HTML brut interprété) et le bouton « S'entraîner sur cette notion ». L'arbre de l'écran Cours affiche le nombre d'exercices par notion et signale les notions qui ont une fiche.
+  - **Validateur** : il exige un titre en tête de fiche et avertit si une fiche sort de 10 à 30 lignes non vides.
+  - **Tests** : 133 tests verts. Nouveaux tests : rendu Markdown, page de fiche, contrôle des fiches.
+
 ## Décisions prises (et pourquoi)
 
 1. **Programme de référence : arrêté du 4 août 2025** (BOESR n° 32 du 28/08/2025, NOR MENS2523324A). Il s'applique aux épreuves du DSCG à partir de la session 2027, celle que Max préparera ; il remplace l'arrêté du 13/02/2019.
@@ -73,6 +92,12 @@ Dernière mise à jour : 2026-10-04, fin de la session phase 1 (moteur).
 16. **(Phase 1) Écritures** : la correction se fait sur le solde net par compte. Deux lignes du même compte sont additionnées, et un débit et un crédit sur le même compte se compensent. Un sous-compte plus détaillé que l'attendu est accepté, pas l'inverse (681 refusé pour 6815). Montants justes à 0,50 € près.
 17. **(Phase 1) Session par thème** : 20 exercices au plus, tirés au hasard puis triés du niveau 1 au niveau 3. Pas de chrono, contrairement à la session rapide.
 18. **(Phase 1) Raccourcis clavier** livrés dès cette phase (prévus en phase 5) : ils étaient nécessaires pour tester le flux.
+19. **(Phase 2) Cible de 700 pour l'UE 4, existant compris** : 32 exercices existaient, 668 ont été ajoutés. Allocation par thème au prorata du nombre de notions (≈ 5,4 exercices par notion), soit 270 pour les 50 notions des cycles d'audit.
+20. **(Phase 2) « 5 % de cas de conso ou d'audit »** : 15 cas de consolidation (thèmes consolidation et comptes de groupe) et 20 cas d'audit (un ou deux par cycle).
+21. **(Phase 2) Cycles d'audit : un fichier par cycle** (`cycles-audit/<cycle>.json`) plutôt qu'un fichier par notion, pour garder ensemble les 27 exercices d'un cycle.
+22. **(Phase 2) Consolidation en normes françaises** : contrôle conjoint traité par intégration proportionnelle en ANC 2020-01, sans distinction coentreprise / activité conjointe. La relecture du lot conso-a l'a établi d'après les recueils ANC, et l'exercice de phase 1 qui disait « mise en équivalence » a été corrigé. En IFRS 11 : coentreprise = mise en équivalence.
+23. **(Phase 2) Références incertaines** : quand un numéro d'article ou de paragraphe n'a pas pu être confirmé (Légifrance, ANC et BOFiP étaient bloqués par le proxy pour la plupart des relecteurs), on cite le texte sans numéro plutôt qu'un numéro douteux. Cela vaut surtout pour la numérotation L. 821-x issue de l'ordonnance 2023-1142 (seul L. 821-44 est confirmé) et pour celle du Code de commerce issue de l'ordonnance 2023-393 (fusions).
+24. **(Phase 2) Renvoi aux options par numéro** : les explications désignent les options par leur numéro (l'interface les numérote de 1 à 4), jamais par une lettre. Un contrôle par script sur tout le contenu n'a trouvé qu'un cas, corrigé.
 
 ## Points ouverts / à vérifier
 
@@ -81,17 +106,32 @@ Dernière mise à jour : 2026-10-04, fin de la session phase 1 (moteur).
 - **Numéros d'articles PCG** des exercices d'exemple (321-5, 322-1, 323-1 à 323-6) : jugés plausibles par le relecteur, mais pas confirmés sur le texte.
 - UE 1, 5 et 6 ont moins de 5 questions par notion à la cible V1 : on peut regrouper des notions en phase 3 si c'est trop fin.
 
-- **Taille du bundle** : 622 ko (194 ko gzip) avec 50 exercices, chargés en eager. Il faudra passer au chargement paresseux par UE au cours de la phase 2, avant d'atteindre environ 300 exercices.
-- Les fiches de cours (`content/courses/`) ne sont pas encore écrites : 0 sur 271. Elles sont prévues en phases 2 et 3, avant les exercices de chaque notion.
+- **Points de fond à faire confirmer par un humain sur les textes** (signalés par les relecteurs, formulations rendues prudentes en attendant) :
+  - correction d'erreur en PCG après le règlement ANC 2022-06 : en résultat ou en report à nouveau (fiche annexe-changements-comptables) ;
+  - référence « PCG art. 622-1 s. » pour les contrats à long terme ;
+  - en ANC 2020-01 : statut du tableau des flux et du tableau de variation des capitaux propres, et présentation des intérêts minoritaires (lot efg) ;
+  - numérotation L. 821-x des articles sur les commissaires aux comptes ;
+  - terminologie de la NEP 315 si une version révisée a été homologuée.
+- **Contenu non vérifié dans le fichier de l'UE** : les exercices `verified: false` sont filtrés à l'exécution mais restent dans le fichier JS de l'UE. Aucun n'en reste aujourd'hui ; un filtrage au build serait plus propre en phase 3.
+- Les UE 1, 2, 3, 5 et 6 n'ont encore que 18 exercices et aucune fiche : c'est l'objet de la phase 3.
 
-## Prochaine étape : phase 2 (contenu UE 4)
+## Prochaine étape : phase 3 (contenu UE 1, 2, 3, 5, 6)
 
-- Objectif : 700 exercices UE 4 et leurs fiches de cours, générés thème par thème (IFRS, PCG, conso, fusions, cadre légal, mission, rapport, durabilité, cycles d'audit), chacun relu par un sous-agent indépendant. Critère de fin : `npm run validate:strict` passe.
-- Méthode qui a bien marché en phase 1 : des lots de 10 à 17 exercices par thème, rédigés en parallèle par plusieurs sous-agents sur des dossiers disjoints, puis relus chacun par un autre sous-agent avec la liste des points sensibles. Un commit par lot relu.
-- Respecter la répartition du SPEC : 40 % QCM, 15 % vrai/faux, 15 % calculs, 10 % écritures, 10 % cas pratiques, 5 % cas de conso ou d'audit, 5 % flashcards ; difficulté 30/50/20.
-- Technique : chargement paresseux du contenu par UE, et affichage des fiches de cours dans l'écran Cours, avec un lien vers les exercices de la notion.
+- Objectif : 700 exercices (cibles du SPEC : UE1 200, UE2 250, UE3 100, UE5 80, UE6 70, existant compris : 4 + 10 + 1 + 1 + 2), et les fiches de cours des 142 notions de ces UE. Critère de fin : `npm run validate:strict` passe.
+- Reprendre la méthode de la phase 2 telle quelle :
+  - script de plan (types et difficultés exacts par lot, ≈ 25 à 30 exercices par lot) ;
+  - rédacteurs en parallèle sur des dossiers disjoints, qui lisent `docs/content-guide.md` ;
+  - relecteur indépendant par lot, avec les points incertains du rédacteur ;
+  - commit par lot avec le script de garde.
+- Points d'attention :
+  - UE 1 : fiscalité 2025-2026, en donnant les taux et seuils en hypothèse dans l'énoncé. Droit des sociétés après l'ordonnance 2023-393.
+  - UE 6 : contenu en anglais.
+  - UE 2 : calculs financiers à vérifier avec node.
+- Technique éventuelle : filtrer les exercices non vérifiés au build (plugin Vite) plutôt qu'à l'exécution.
 
 ## Budget consommé (estimation)
 
 - Phase 0 : environ 8 à 10 $ (cible SPEC : 10 $), dont 4 sous-agents (taxonomie, schémas, CI, relecture).
-- Phase 1 : environ 20 à 25 $ (cible SPEC : 25 $), dont 9 sous-agents (4 rédactions, 5 relectures). Cumul estimé : environ 30 à 35 $ sur 250 $.
+- Phase 1 : environ 20 à 25 $ (cible SPEC : 25 $), dont 9 sous-agents (4 rédactions, 5 relectures).
+- Phase 2 : environ 80 à 100 $ (cible SPEC : 90 $). 50 sous-agents (25 rédactions, 25 relectures), de 75 000 à 160 000 tokens chacun. Estimation grossière : le coût exact se lit avec `/cost`.
+- Cumul estimé : environ 110 à 135 $ sur 250 $. Il reste de quoi faire la phase 3 (70 $) à condition de rester sur des lots de 25 à 30 exercices et des rapports courts.
