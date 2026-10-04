@@ -1,0 +1,486 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-dossier-0001",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "fusions-scissions-regime-juridique",
+      "difficulty": 3,
+      "tags": [
+        "sujet type examen",
+        "fusion-absorption",
+        "parité d'échange",
+        "régime de faveur",
+        "intégration fiscale",
+        "régime mère-fille",
+        "contrôle commun"
+      ],
+      "source_ref": "C. com. art. L. 236-1 et s. (ord. n° 2023-393) ; PCG titre VII (règl. ANC 2014-03 modifié par le règl. ANC 2017-01) ; CGI art. 210 A, 210 B, 38-7 bis, 816, 257 bis ; CGI art. 145, 216, 223 A, 223 I ; comptes 101, 1042, 2813",
+      "verified": true,
+      "estimated_seconds": 4800,
+      "total_points": 20,
+      "title": "Groupe Ardoise : fusion de deux filiales sœurs",
+      "context": "La **SA Ardoise** est la société holding d'un groupe familial de l'Ouest spécialisé dans la chaîne du froid alimentaire. Depuis le 1er janvier N−3, elle est la société mère d'un groupe fiscal intégré (CGI art. 223 A) qui comprend :\n- la **SAS Brume**, prestataire d'entreposage frigorifique et de transport sous température dirigée, détenue à 100 % par Ardoise ;\n- la **SAS Celtis**, qui conditionne et distribue des produits de la mer surgelés, détenue à 97 % par Ardoise, les 3 % restants appartenant à son directeur général, M. Riou.\n\nArdoise détient en outre, depuis N−6, 40 % du capital de la **SAS Dolmen** (fabrication d'emballages isothermes), le solde appartenant à un industriel extérieur au groupe. Toutes les sociétés sont soumises à l'IS au taux normal et clôturent leurs exercices le 31 décembre.\n\nBrume réalise désormais plus de 80 % de son chiffre d'affaires avec Celtis. Le conseil d'administration d'Ardoise souhaite **réunir les deux activités dans une seule société**, supprimer les refacturations entre filiales et réduire le nombre d'entités juridiques du groupe, sans coût fiscal immédiat et sans faire sortir aucune société du groupe intégré. Deux schémas sont à l'étude : l'absorption de Brume par Celtis, ou l'apport par Brume de son activité à Celtis.\n\nVous êtes collaborateur du cabinet d'expertise comptable qui accompagne le groupe. Le directeur financier vous demande d'analyser le choix de l'opération, puis d'en préparer la mise en œuvre juridique, comptable et fiscale (annexes 1 à 4).\n\n**Hypothèses fiscales** : taux d'IS de 25 % sur la totalité des bénéfices ; ne pas tenir compte de la contribution sociale sur l'IS.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Organigramme et données sur le capital",
+          "content": "Organigramme du groupe au 31 décembre N :\n- Ardoise SA → Brume SAS : 100 % (10 000 actions de 20 € de nominal) ;\n- Ardoise SA → Celtis SAS : 97 %, soit 48 500 actions sur 50 000 actions de 10 € de nominal ; M. Riou détient les 1 500 autres actions ;\n- Ardoise SA → Dolmen SAS : 40 % (titres inscrits en titres de participation depuis N−6).\n\nBrume et Celtis sont membres du groupe intégré depuis son origine. Dolmen n'en fait pas partie.\n\nLe déficit d'ensemble reportable du groupe s'élève à 300 000 € au 31 décembre N ; il provient pour l'essentiel des pertes de Brume en N−1. Brume n'a aucun déficit antérieur à son entrée dans le groupe. Aucune cession d'immobilisation, aucune provision ni aucun abandon de créance entre sociétés du groupe ne concerne Brume."
+        },
+        {
+          "title": "Annexe 2 — Bilan de Brume au 31 décembre N (après affectation du résultat)",
+          "content": "| Actif | Brut | Amort. | Net | Passif | Montant |\n| --- | ---: | ---: | ---: | --- | ---: |\n| Terrain | 180 000 | — | 180 000 | Capital (10 000 actions de 20 €) | 200 000 |\n| Constructions | 900 000 | 350 000 | 550 000 | Réserve légale | 20 000 |\n| Matériel de transport | 400 000 | 250 000 | 150 000 | Autres réserves | 730 000 |\n| Clients | 310 000 | — | 310 000 | Emprunts auprès des établissements de crédit | 280 000 |\n| Banque | 140 000 | — | 140 000 | Fournisseurs | 100 000 |\n| **Total** | | | **1 330 000** | **Total** | **1 330 000** |\n\nLes valeurs comptables sont égales aux valeurs fiscales. Brume n'a ni provision réglementée ni amortissement dérogatoire."
+        },
+        {
+          "title": "Annexe 3 — Évaluations retenues par les parties",
+          "content": "Valeurs réelles des éléments de Brume établies par un expert indépendant :\n\n| Élément | Valeur réelle |\n| --- | ---: |\n| Terrain | 380 000 |\n| Constructions | 750 000 |\n| Matériel de transport | 150 000 |\n| Fonds commercial (clientèle, contrats), non inscrit au bilan | 1 050 000 |\n| Clients et banque | 450 000 |\n| Dettes (emprunts et fournisseurs) | − 380 000 |\n| **Valeur réelle de Brume** | **2 400 000** |\n\nValeur réelle de Celtis retenue d'après une évaluation multicritère : **4 000 000 €** pour 50 000 actions.\n\nLa parité d'échange est fixée sur la base des valeurs réelles unitaires des actions des deux sociétés."
+        },
+        {
+          "title": "Annexe 4 — Calendrier envisagé et informations diverses",
+          "content": "- 25 mars N+1 : projet de fusion arrêté par les présidents de Brume et de Celtis ; date d'effet comptable et fiscale rétroactive au **1er janvier N+1**, les comptes de Brume au 31 décembre N servant de base à l'opération.\n- 2 avril N+1 : dépôt du projet au greffe et publicité.\n- 20 avril N+1 : la société Frigotec, fournisseur de Brume, créancière de 45 000 € pour des factures émises en novembre N et payables en juin N+1, forme opposition à la fusion.\n- 15 mai N+1 : décisions des associés de Brume et de Celtis approuvant l'opération.\n- M. Riou a indiqué qu'il ne renoncerait pas à la désignation d'un commissaire à la fusion.\n- En N+1, Ardoise encaissera un dividende de 200 000 € versé par Celtis et un dividende de 100 000 € versé par Dolmen ; elle opte pour le régime des sociétés mères pour ces deux distributions."
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1-choix-operation",
+          "kind": "open",
+          "points": 2,
+          "prompt": "À l'aide du contexte et de l'annexe 1, comparez la fusion-absorption de Brume par Celtis et l'apport partiel d'actif par Brume de son activité à Celtis (effets juridiques sur Brume et sur la remise des titres, régime fiscal applicable), puis recommandez l'opération la mieux adaptée aux objectifs du groupe.",
+          "model_answer": "Dans une fusion-absorption (C. com. art. L. 236-1 et s.), Brume transmet l'universalité de son patrimoine à Celtis et elle est dissoute sans liquidation ; son associée, Ardoise, reçoit en échange des actions Celtis. Dans un apport partiel d'actif, Brume subsiste : elle apporte sa branche d'activité (sous le régime des scissions si les parties l'ont choisi, ce qui permet une transmission universelle de la branche) et reçoit elle-même les actions Celtis, qui deviennent une participation à son bilan.\n\nFiscalement, la fusion entre deux sociétés à l'IS relève de plein droit du régime de faveur de l'article 210 A du CGI, sans agrément. L'apport partiel d'actif bénéficie aussi du régime de faveur de plein droit (art. 210 B) s'il porte sur une branche complète d'activité et si Brume s'engage à conserver trois ans les titres reçus ; à défaut (éléments isolés, absence d'engagement), un agrément serait nécessaire. Dans les deux cas, l'acte est enregistré gratuitement (art. 816 et 817) et la transmission d'une universalité de biens est dispensée de TVA (art. 257 bis).\n\nL'objectif du groupe est de réunir les activités et de réduire le nombre d'entités. L'apport partiel d'actif laisserait subsister Brume, réduite à une holding détenant des titres Celtis, ce qui complique l'organigramme (participations croisées entre filiales) sans avantage. **La fusion-absorption de Brume par Celtis est donc recommandée** : elle supprime une entité, met fin aux refacturations et reste fiscalement neutre.",
+          "key_points": [
+            "Fusion : dissolution sans liquidation de Brume, transmission universelle du patrimoine, actions Celtis remises à Ardoise",
+            "APA : Brume subsiste et reçoit elle-même les actions Celtis",
+            "Régime de faveur de plein droit : art. 210 A pour la fusion, art. 210 B pour l'APA d'une branche complète avec engagement de conservation des titres trois ans (agrément sinon)",
+            "Enregistrement gratuit et dispense de TVA (art. 257 bis) dans les deux cas",
+            "Recommandation motivée : la fusion répond à l'objectif de simplification"
+          ],
+          "explanation": "Le critère décisif est l'objectif de réduction du nombre d'entités : seule la fusion fait disparaître Brume. Les deux opérations sont fiscalement neutres si l'APA porte sur une branche complète d'activité (CGI art. 210 A et 210 B ; art. 816 ; art. 257 bis)."
+        },
+        {
+          "id": "q2-valeur-apport",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "La fusion est retenue. Selon le titre VII du PCG, à quelle valeur les apports de Brume doivent-ils être inscrits chez Celtis (annexes 1 à 3) ?",
+          "options": [
+            "À la valeur réelle, car les apports ont été évalués par un expert indépendant",
+            "À la valeur comptable, car Brume et Celtis sont sous le contrôle commun d'Ardoise avant l'opération",
+            "Au choix des parties, la valeur retenue devant seulement figurer dans le traité de fusion",
+            "À la valeur réelle pour les immobilisations et à la valeur comptable pour les autres éléments"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Avant l'opération, Ardoise contrôle Brume (100 %) et Celtis (97 %) : les deux sociétés sont sous contrôle commun, ce qui impose la valeur comptable, quel que soit le sens de l'opération (PCG titre VII, règl. ANC 2017-01). L'exception tenant à l'insuffisance de l'actif net comptable pour libérer l'augmentation de capital ne joue pas (950 000 € ≥ 300 000 €, voir question 4). L'option 1 est fausse : l'expertise sert à fixer la parité, pas la valeur d'inscription. L'option 3 est fausse : la valeur d'apport découle de la qualification de l'opération, pas de la volonté des parties. L'option 4 est fausse : la méthode s'applique à l'ensemble des apports, sans panachage."
+        },
+        {
+          "id": "q3-regime-simplifie",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "Vrai ou faux ? La fusion peut suivre le régime simplifié (C. com. art. L. 236-11), sans décision des associés de Celtis ni rapport d'un commissaire à la fusion, au seul motif que Brume et Celtis sont toutes deux contrôlées par Ardoise (annexes 1 et 4).",
+          "answer": false,
+          "explanation": "Faux. Le régime simplifié suppose que l'absorbante détienne la totalité des titres de l'absorbée (régime allégé à partir de 90 %) ou, pour une fusion entre sœurs, que la même société détienne la totalité du capital des deux sociétés. Ici, Celtis ne détient aucun titre de Brume et Ardoise ne détient que 97 % de Celtis : le contrôle ne suffit pas. Les associés des deux sociétés doivent approuver l'opération et, M. Riou refusant d'y renoncer, un commissaire à la fusion doit être désigné (la dispense suppose l'unanimité des associés)."
+        },
+        {
+          "id": "q4-nombre-actions",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l'aide des annexes 1 et 3, déterminez la parité d'échange, puis le nombre d'actions nouvelles que Celtis doit émettre au profit d'Ardoise. Réponse en nombre d'actions.",
+          "expected_value": 30000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0
+          },
+          "unit": "actions",
+          "decimals": 0,
+          "explanation": "Valeur réelle unitaire de l'action Brume : 2 400 000 ÷ 10 000 = 240 €. Valeur réelle unitaire de l'action Celtis : 4 000 000 ÷ 50 000 = 80 €. Parité : 240 ÷ 80 = 3 actions Celtis pour 1 action Brume. Actions à émettre : 10 000 × 3 = **30 000 actions**, soit une augmentation de capital de 30 000 × 10 = 300 000 €. Celtis ne détenant aucune action Brume, toutes les actions Brume sont échangées."
+        },
+        {
+          "id": "q5-prime-fusion",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À l'aide des annexes 2 et 3 et de vos réponses précédentes, calculez la prime de fusion inscrite chez Celtis. Réponse en euros.",
+          "expected_value": 650000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Apports à la valeur comptable : actif net comptable de Brume = capitaux propres après affectation = 200 000 + 20 000 + 730 000 = 950 000 € (ou 1 330 000 − 280 000 − 100 000). Prime de fusion = 950 000 − 300 000 = **650 000 €**. Erreur classique : calculer la prime sur la valeur réelle (2 400 000 − 300 000 = 2 100 000 €), alors que le contrôle commun impose la valeur comptable."
+        },
+        {
+          "id": "q6-ecriture-celtis",
+          "kind": "journal_entry",
+          "points": 3,
+          "prompt": "Passez, au 1er janvier N+1, l'écriture de reprise des apports de Brume chez Celtis (annexe 2), en une seule écriture sans passer par le compte 456. Reprenez le détail des valeurs brutes et des amortissements ; utilisez les comptes 211, 213, 2182, 2813, 28182, 411, 512, 164, 401, 101 et 1042.",
+          "date": "N+1-01-01",
+          "entries": [
+            {
+              "account": "211",
+              "label": "Terrain",
+              "debit": 180000,
+              "credit": 0
+            },
+            {
+              "account": "213",
+              "label": "Constructions (valeur brute)",
+              "debit": 900000,
+              "credit": 0
+            },
+            {
+              "account": "2182",
+              "label": "Matériel de transport (valeur brute)",
+              "debit": 400000,
+              "credit": 0
+            },
+            {
+              "account": "411",
+              "label": "Clients",
+              "debit": 310000,
+              "credit": 0
+            },
+            {
+              "account": "512",
+              "label": "Banque",
+              "debit": 140000,
+              "credit": 0
+            },
+            {
+              "account": "2813",
+              "label": "Amortissements des constructions",
+              "debit": 0,
+              "credit": 350000
+            },
+            {
+              "account": "28182",
+              "label": "Amortissements du matériel de transport",
+              "debit": 0,
+              "credit": 250000
+            },
+            {
+              "account": "164",
+              "label": "Emprunts auprès des établissements de crédit",
+              "debit": 0,
+              "credit": 280000
+            },
+            {
+              "account": "401",
+              "label": "Fournisseurs",
+              "debit": 0,
+              "credit": 100000
+            },
+            {
+              "account": "101",
+              "label": "Capital (30 000 actions de 10 €)",
+              "debit": 0,
+              "credit": 300000
+            },
+            {
+              "account": "1042",
+              "label": "Prime de fusion",
+              "debit": 0,
+              "credit": 650000
+            }
+          ],
+          "explanation": "En valeur comptable, l'absorbante reprend les valeurs brutes, les amortissements et les passifs tels qu'ils figurent chez l'absorbée, ce qui conserve les plans d'amortissement. Total des débits : 180 000 + 900 000 + 400 000 + 310 000 + 140 000 = 1 930 000 €. Total des crédits : 350 000 + 250 000 + 280 000 + 100 000 + 300 000 + 650 000 = 1 930 000 €. Les plus-values latentes (terrain, constructions) et le fonds commercial de 1 050 000 € ne sont pas comptabilisés."
+        },
+        {
+          "id": "q7-opposition-frigotec",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À l'aide de l'annexe 4, quelle est la portée de l'opposition formée par Frigotec ?",
+          "options": [
+            "Elle est irrecevable, car la créance de Frigotec n'est pas encore exigible",
+            "Elle suspend la fusion jusqu'au paiement de Frigotec, et les décisions du 15 mai N+1 doivent être reportées",
+            "Elle est recevable mais ne fait pas obstacle à la fusion ; le tribunal la rejette ou ordonne le remboursement de la créance ou la constitution de garanties, faute de quoi la fusion est inopposable à Frigotec",
+            "Elle oblige Celtis à obtenir l'accord exprès de Frigotec pour reprendre la dette de Brume"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "Frigotec est un créancier non obligataire dont la créance est antérieure à la publicité du projet (2 avril N+1) ; elle agit le 20 avril, dans le délai de 30 jours : l'opposition est recevable, même si la créance n'est payable qu'en juin. L'opposition n'a pas d'effet suspensif : la fusion peut être approuvée le 15 mai ; le tribunal rejette l'opposition ou ordonne le remboursement ou la constitution de garanties, et à défaut d'exécution la fusion est inopposable à ce créancier (option 3). L'option 1 est fausse : l'exigibilité n'est pas requise, seule l'antériorité de la créance compte. L'option 2 confond opposition et suspension. L'option 4 est fausse : la transmission universelle du patrimoine fait passer les dettes à Celtis sans accord des créanciers."
+        },
+        {
+          "id": "q8-is-evite",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l'aide de l'annexe 3 et des hypothèses fiscales, calculez l'IS que Brume aurait dû acquitter, au titre des plus-values latentes sur les éléments apportés, si la fusion avait été placée sous le régime fiscal de droit commun plutôt que sous le régime de faveur de l'article 210 A. Ne tenez pas compte du résultat courant de l'exercice. Réponse en euros.",
+          "expected_value": 362500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "En droit commun, la fusion est une cessation d'entreprise pour Brume : ses plus-values latentes sont imposées immédiatement, y compris celle du fonds commercial non inscrit au bilan. Plus-values latentes : terrain 380 000 − 180 000 = 200 000 € ; constructions 750 000 − 550 000 = 200 000 € ; matériel 150 000 − 150 000 = 0 ; fonds commercial 1 050 000 − 0 = 1 050 000 € ; total 1 450 000 €. IS : 1 450 000 × 25 % = **362 500 €**. Le régime de faveur évite cette imposition ; les apports étant inscrits à la valeur comptable, Celtis reprend les valeurs fiscales de Brume et les plus-values latentes ne seront imposées que lors d'une cession ultérieure. Oublier le fonds commercial donne 100 000 €."
+        },
+        {
+          "id": "q9-detention-celtis",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À l'aide de l'annexe 1 et de votre réponse à la question 4, calculez le pourcentage du capital de Celtis détenu par Ardoise après la fusion. Réponse en pourcentage, arrondie à trois décimales.",
+          "expected_value": 98.125,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 3,
+          "explanation": "Après la fusion, Celtis compte 50 000 + 30 000 = 80 000 actions. Ardoise détient 48 500 + 30 000 = 78 500 actions, soit 78 500 ÷ 80 000 = **98,125 %** (M. Riou : 1 500 ÷ 80 000 = 1,875 %). La détention reste supérieure au seuil de 95 % exigé pour l'intégration fiscale (CGI art. 223 A) ; elle s'apprécie en droits à dividendes et en droits de vote, ici identiques faute d'actions de préférence. Retenir 97 % revient à oublier l'augmentation de capital."
+        },
+        {
+          "id": "q10-qpfc",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l'aide des annexes 1 et 4, calculez le montant total de la quote-part de frais et charges finalement retenue dans le résultat d'ensemble du groupe au titre des dividendes encaissés par Ardoise en N+1. Réponse en euros.",
+          "expected_value": 7000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Les deux participations dépassent 5 % du capital et sont détenues depuis plus de deux ans : le régime mère-fille s'applique (CGI art. 145 et 216). Dividende de Celtis, société membre du même groupe intégré : QPFC de 1 % (CGI art. 216, I, al. 2), soit 200 000 × 1 % = 2 000 €. Dividende de Dolmen, non intégrée (40 %) : QPFC de droit commun de 5 %, soit 100 000 × 5 % = 5 000 €. Total : **7 000 €**. Appliquer 5 % aux deux dividendes donne 15 000 € ; appliquer 1 % aux deux donne 3 000 €."
+        },
+        {
+          "id": "q11-integration-fiscale",
+          "kind": "open",
+          "points": 2,
+          "prompt": "À l'aide des annexes 1 et 4 et de vos réponses aux questions 8 à 10, présentez les conséquences de la fusion sur le groupe fiscal intégré (périmètre, déficit d'ensemble, situation de Celtis) et sur l'imposition d'Ardoise au titre de l'échange des titres Brume.",
+          "model_answer": "**Périmètre.** Brume disparaît du fait de sa dissolution sans liquidation : elle cesse d'être membre du groupe, son activité étant désormais imposée dans le résultat de Celtis à compter de la date d'effet. Celtis reste membre du groupe, car Ardoise en détient 98,125 % après l'opération, au-delà du seuil de 95 % (CGI art. 223 A) ; la liste des sociétés membres communiquée avec la déclaration de résultat d'ensemble est mise à jour.\n\n**Déficit d'ensemble.** Le déficit d'ensemble de 300 000 €, bien qu'il provienne des pertes de Brume, appartient au groupe : il reste reportable par Ardoise seule sur les résultats d'ensemble futurs, sans agrément. Aucun déficit propre de Brume antérieur à son entrée dans le groupe n'existe, de sorte que la question d'un transfert sur agrément (art. 209 II) ne se pose pas, et aucune opération intra-groupe neutralisée ne concerne Brume.\n\n**Échange des titres.** Ardoise échange ses actions Brume contre des actions Celtis : la plus-value d'échange bénéficie du sursis d'imposition (CGI art. 38-7 bis) ; elle sera calculée, lors d'une cession ultérieure des actions Celtis, d'après le prix de revient fiscal des actions Brume remises. Les dividendes de Celtis continueront de relever du régime mère-fille avec une QPFC de 1 % tant que Celtis restera intégrée.",
+          "key_points": [
+            "Brume sort du groupe par sa disparition ; son activité est imposée chez Celtis",
+            "Celtis reste intégrée : 98,125 % ≥ 95 %",
+            "Le déficit d'ensemble de 300 000 € reste au groupe, reporté par Ardoise seule, sans agrément",
+            "Pas de déficit propre antérieur de Brume, donc pas de question d'agrément (art. 209 II)",
+            "Échange des titres en sursis d'imposition (art. 38-7 bis), plus-value future calculée sur le prix de revient des actions Brume"
+          ],
+          "explanation": "La fusion entre deux membres du groupe ne fait sortir que la société absorbée, qui disparaît ; le groupe et son déficit d'ensemble subsistent tant que la mère conserve 95 % de l'absorbante (CGI art. 223 A et 223 I ; art. 38-7 bis pour l'échange de titres)."
+        }
+      ],
+      "explanation": "Méthode : (1) choisir l'opération au regard des objectifs (la fusion supprime une entité, l'APA la conserve) ; (2) qualifier l'opération pour le PCG : contrôle commun, donc valeur comptable ; (3) fixer la parité sur les valeurs réelles (3 actions Celtis pour 1 action Brume, 30 000 actions émises), puis la prime de fusion sur l'actif net comptable (950 000 − 300 000 = 650 000 €) et passer l'écriture en reprenant valeurs brutes et amortissements ; (4) vérifier la procédure : pas de régime simplifié, commissaire à la fusion obligatoire faute d'unanimité, opposition des créanciers sans effet suspensif ; (5) chiffrer l'intérêt du régime de faveur (362 500 € d'IS évité) et contrôler les effets sur l'intégration fiscale (98,125 % ≥ 95 %, déficit d'ensemble conservé par la mère) et sur le régime mère-fille (QPFC de 1 % intra-groupe, 5 % hors groupe, soit 7 000 €)."
+    },
+    {
+      "id": "ue1-dossier-0002",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "redressement-judiciaire",
+      "difficulty": 3,
+      "tags": [
+        "sujet type examen",
+        "cessation des paiements",
+        "conciliation",
+        "redressement judiciaire",
+        "contrats en cours",
+        "licenciement économique",
+        "CSE",
+        "insuffisance d'actif"
+      ],
+      "source_ref": "C. com. art. L611-4, L611-11, L620-1, L631-1, L631-4, L631-8, L631-17, L632-1, L622-13, L622-17, L622-24, L631-14, L651-2, L653-4, L653-5, L653-8, L653-11 ; C. trav. art. L1111-2, L1111-3, L1233-3, L1233-58, L1233-61, L1234-9, R1234-2, R1234-4, L2312-8, L2312-63",
+      "verified": true,
+      "estimated_seconds": 5100,
+      "total_points": 20,
+      "title": "SAS Lisière : de la cessation des paiements au plan de réduction d'effectifs",
+      "context": "La **SAS Lisière** fabrique des menuiseries en aluminium pour la construction de logements neufs. Elle est présidée par M. Varenne, qui détient 70 % de son capital par l'intermédiaire de sa holding personnelle, la SARL Varenne Participations ; le solde appartient à un fonds régional. La société, dotée d'un commissaire aux comptes, exerce dans un seul établissement et n'appartient à aucun groupe.\n\nDepuis le printemps N, l'effondrement des mises en chantier et la défaillance de son principal client, un promoteur placé en liquidation judiciaire, ont fait plonger son chiffre d'affaires. Les fournisseurs d'aluminium ont réduit leurs délais de paiement et l'URSSAF n'a accordé qu'un moratoire partiel. Le 20 mars N+1, M. Varenne consulte le cabinet d'expertise comptable dont vous êtes collaborateur. Il souhaite savoir si l'entreprise est en cessation des paiements, quelle procédure engager, et quelles seront les conséquences de la réorganisation envisagée pour les salariés et pour lui-même.\n\nVous traiterez les questions en vous appuyant sur les annexes 1 à 5. Les événements postérieurs au 20 mars N+1 décrits dans l'annexe 4 sont présentés comme acquis ; l'annexe 5 décrit une hypothèse d'évolution défavorable.\n\n**Hypothèses** : la durée collective du travail est de 35 heures par semaine ; la convention collective ne prévoit pas d'indemnité de licenciement plus favorable que l'indemnité légale.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Effectif de Lisière au 20 mars N+1 (situation stable depuis deux ans)",
+          "content": "| Catégorie | Nombre | Précisions |\n| --- | ---: | --- |\n| CDI à temps plein | 72 | dont 3 salariés en arrêt maladie |\n| CDI à temps partiel | 10 | 28 heures par semaine chacun |\n| CDD à temps plein présents depuis plus de 12 mois | 4 | dont 1 remplace un salarié en arrêt maladie |\n| Intérimaires à temps plein | 2 | présents chacun 6 mois au cours des 12 derniers mois, pour un surcroît d'activité |\n| Apprentis | 3 | |\n\nUn comité social et économique est en place depuis plusieurs années."
+        },
+        {
+          "title": "Annexe 2 — Situation de trésorerie au 20 mars N+1",
+          "content": "| Élément | Montant |\n| --- | ---: |\n| Disponibilités en banque | 180 000 |\n| Autorisation de découvert confirmée, non utilisée | 70 000 |\n| Créances clients (échéance moyenne à 75 jours) | 900 000 |\n| Stocks d'aluminium et de produits finis | 600 000 |\n| Dettes fournisseurs échues et réclamées | 310 000 |\n| Cotisations URSSAF échues | 120 000 |\n| dont couvertes par le moratoire accordé par l'URSSAF le 10 mars N+1 | 80 000 |\n| TVA due le 24 avril N+1 | 95 000 |\n| Prêt de Varenne Participations, remboursable in fine le 30 juin N+2 | 60 000 |\n\nLes dettes fournisseurs et URSSAF sont devenues impayables à compter du 1er mars N+1 ; depuis cette date, l'insuffisance de trésorerie est permanente."
+        },
+        {
+          "title": "Annexe 3 — Évolution du chiffre d'affaires trimestriel",
+          "content": "| Trimestre | Chiffre d'affaires (k€) | Même trimestre de l'année précédente (k€) | Variation |\n| --- | ---: | ---: | ---: |\n| T2 N | 2 670 | 3 000 | − 11 % |\n| T3 N | 2 520 | 3 000 | − 16 % |\n| T4 N | 2 370 | 3 000 | − 21 % |\n| T1 N+1 | 2 280 | 3 000 | − 24 % |\n\nRésultat d'exploitation N : − 1 150 k€ (N−1 : + 240 k€). Capitaux propres au 31 décembre N : 310 k€ pour un capital de 800 k€."
+        },
+        {
+          "title": "Annexe 4 — Événements postérieurs au 20 mars N+1 et extraits de contrats",
+          "content": "- **4 mars N+1** (rappel) : sur instruction de M. Varenne, Lisière a remboursé par anticipation l'intégralité d'un autre prêt de 40 000 € consenti par Varenne Participations, dont l'échéance était fixée au 31 décembre N+1.\n- **25 mars N+1** : M. Varenne demande l'ouverture d'une conciliation ; un conciliateur est désigné. Les négociations avec les banques échouent fin avril.\n- **12 mai N+1** : jugement d'ouverture d'un redressement judiciaire ; le tribunal fixe la date de cessation des paiements au 1er mars N+1 et désigne un administrateur judiciaire chargé d'assister le dirigeant, ainsi qu'un mandataire judiciaire.\n- **Contrat de crédit-bail** portant sur la ligne de laquage : loyer mensuel de 15 000 € payable le 1er de chaque mois. Les loyers des 1er mars, 1er avril et 1er mai N+1 sont impayés. Article 14 : « Le contrat sera résilié de plein droit, si bon semble au bailleur, en cas d'ouverture d'une procédure collective à l'égard du preneur. » Le 20 mai N+1, le crédit-bailleur notifie la résiliation sur le fondement de l'article 14. L'administrateur souhaite poursuivre le contrat, la ligne étant indispensable à l'activité."
+        },
+        {
+          "title": "Annexe 5 — Projet de réorganisation et hypothèse de liquidation",
+          "content": "**Projet de l'administrateur (juin N+1)** : fermeture de l'atelier de menuiseries sur mesure et suppression de **14 postes**, dont les licenciements seraient notifiés dans les mêmes 30 jours, pendant la période d'observation.\n\n**Situation de Mme Perrin**, régleuse, salariée concernée : CDI, ancienneté de 13 ans et 6 mois au terme de son préavis. Au cours des douze mois précédant la notification de son licenciement, son salaire mensuel brut a été de 2 550 € pendant les neuf premiers mois, puis de 2 640 € pendant les trois derniers mois, au cours desquels lui a également été versée sa prime annuelle de 1 800 €. Elle n'a perçu aucune autre prime.\n\n**Hypothèse défavorable** : le plan de redressement s'avère impossible et la liquidation judiciaire est prononcée. Le passif admis antérieur au jugement d'ouverture du redressement s'élève à 2 900 000 €, le passif né après ce jugement à 300 000 € et la réalisation des actifs rapporte 1 250 000 €. Le liquidateur relève que M. Varenne a maintenu tout au long de N une politique de prix inférieurs au coût de revient pour conserver le volume d'activité, malgré les alertes répétées du commissaire aux comptes, et rappelle le remboursement du 4 mars N+1."
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1-effectif",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À l'aide de l'annexe 1 et des hypothèses, calculez l'effectif de Lisière selon les règles du Code du travail (C. trav. art. L1111-2 et L1111-3). Réponse en nombre de salariés, arrondi à l'unité si nécessaire.",
+          "expected_value": 84,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "salariés",
+          "decimals": 0,
+          "explanation": "CDI à temps plein : 72 (les salariés en arrêt maladie, dont le contrat est suspendu, sont comptés). CDI à temps partiel : 10 × 28 ÷ 35 = 8. CDD : 3, car le CDD qui remplace un salarié absent n'est pas compté (le remplacé l'est déjà). Intérimaires : au prorata de leur présence sur les 12 derniers mois, 2 × 6 ÷ 12 = 1. Apprentis : exclus. Effectif = 72 + 8 + 3 + 1 = **84 salariés**. Compter le CDD de remplacement et les apprentis donne 88 ; compter les temps partiels pour une unité donne 86."
+        },
+        {
+          "id": "q2-alerte-cse",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "Compte tenu de l'effectif calculé à la question 1 et de l'annexe 3, quelle affirmation relative au CSE de Lisière est exacte ?",
+          "options": [
+            "Le CSE n'a que des attributions réduites, car moins de 100 salariés sont employés",
+            "Le CSE peut déclencher le droit d'alerte économique et devra être informé et consulté sur le projet de licenciement collectif, son avis ne liant pas l'employeur",
+            "Le CSE peut demander lui-même l'ouverture d'une conciliation au président du tribunal",
+            "Le CSE dispose d'un droit de veto sur les licenciements économiques envisagés"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Avec 84 salariés, Lisière dépasse le seuil de 50 : le CSE a des attributions élargies (C. trav. art. L2312-8), dont le droit d'alerte économique en présence de faits de nature à affecter de manière préoccupante la situation économique (L2312-63), que la chute du chiffre d'affaires et les pertes caractérisent, et l'information-consultation sur les compressions d'effectifs (option 2). L'option 1 est fausse : le seuil des attributions élargies est de 50 salariés. L'option 3 est fausse : seul le débiteur peut demander une conciliation. L'option 4 est fausse : l'avis du CSE est consultatif."
+        },
+        {
+          "id": "q3-cessation-paiements",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l'aide de l'annexe 2, calculez au 20 mars N+1 la différence entre l'actif disponible et le passif exigible de Lisière (actif disponible − passif exigible). Réponse en euros, signe négatif si le passif exigible l'emporte.",
+          "expected_value": -100000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Actif disponible : disponibilités 180 000 + réserve de crédit confirmée 70 000 = 250 000 € (les créances à 75 jours et les stocks ne sont pas disponibles). Passif exigible : dettes fournisseurs échues 310 000 + URSSAF échue hors moratoire (120 000 − 80 000 = 40 000) = 350 000 € ; la TVA n'est pas encore échue et le prêt de la holding est remboursable en N+2. Différence : 250 000 − 350 000 = **− 100 000 €** : Lisière ne peut faire face à son passif exigible avec son actif disponible ; elle est en cessation des paiements (C. com. art. L631-1). Oublier le moratoire donne − 180 000 € ; ajouter la TVA donne − 195 000 €."
+        },
+        {
+          "id": "q4-choix-procedure",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "Au 20 mars N+1, compte tenu de votre réponse à la question 3 et de l'annexe 2, quelle procédure M. Varenne peut-il demander ?",
+          "options": [
+            "Une sauvegarde, puisque l'entreprise paraît encore pouvoir être redressée",
+            "Uniquement un mandat ad hoc, toute autre procédure amiable étant fermée au débiteur en cessation des paiements",
+            "Une liquidation judiciaire, seule procédure ouverte à une entreprise en cessation des paiements",
+            "Une conciliation, la cessation des paiements remontant à moins de 45 jours, ou à défaut l'ouverture d'un redressement judiciaire"
+          ],
+          "answer": [
+            3
+          ],
+          "explanation": "La cessation des paiements remonte au 1er mars N+1, soit 19 jours au 20 mars : la conciliation reste ouverte au débiteur qui n'est pas en cessation des paiements depuis plus de 45 jours (C. com. art. L611-4) ; à défaut, M. Varenne doit demander un redressement judiciaire dans les 45 jours (L631-4), soit au plus tard le 15 avril N+1 (option 4). L'option 1 est fausse : la sauvegarde exige l'absence de cessation des paiements (L620-1). L'option 2 est fausse : la conciliation reste possible dans la limite de 45 jours. L'option 3 est fausse : le redressement n'étant pas manifestement impossible (activité, carnet de commandes, actifs), la liquidation ne s'impose pas."
+        },
+        {
+          "id": "q5-analyse-procedure",
+          "kind": "open",
+          "points": 2,
+          "prompt": "À l'aide des annexes 2 à 4, présentez à M. Varenne les intérêts et les limites de la conciliation qu'il a demandée le 25 mars N+1, puis les conséquences de l'échec des négociations sur ses obligations et sur la date de cessation des paiements.",
+          "model_answer": "La conciliation (C. com. art. L611-4 et s.) est une procédure **confidentielle**, ouverte à la seule demande du débiteur, qui reste possible tant que la cessation des paiements ne remonte pas à plus de 45 jours : demandée le 25 mars, soit 24 jours après le 1er mars, elle était recevable. Le conciliateur, désigné pour quatre mois au plus (prorogeables d'un mois), aide à négocier avec les principaux créanciers (banques, fournisseurs d'aluminium, URSSAF) un rééchelonnement ou des remises. Un accord **homologué** aurait conféré aux apports de trésorerie nouveaux le privilège de conciliation (L611-11), au prix d'une publicité ; un accord simplement constaté reste confidentiel.\n\nLimites : la conciliation n'arrête pas les poursuites (seuls des délais de grâce peuvent être demandés au juge) et suppose l'accord de chaque créancier ; elle ne permet pas d'imposer un plan aux créanciers récalcitrants.\n\nLa demande de conciliation dans les 45 jours a dispensé M. Varenne de demander le redressement dans ce délai : il n'encourt pas de sanction pour déclaration tardive. À l'échec des négociations, la cessation des paiements persistant, il devait demander l'ouverture d'un redressement judiciaire (L631-4), ouvert par le jugement du 12 mai. Le tribunal a fixé la date de cessation des paiements au 1er mars N+1 ; elle peut être reportée jusqu'à 18 mois avant le jugement (L631-8) et ouvre la **période suspecte**, pendant laquelle certains actes sont annulables.",
+          "key_points": [
+            "Conciliation recevable : cessation des paiements depuis moins de 45 jours, à l'initiative du seul débiteur",
+            "Procédure confidentielle, 4 mois + 1 au plus, accord constaté ou homologué (privilège de new money si homologation)",
+            "Limites : pas d'arrêt des poursuites, accord de chaque créancier nécessaire",
+            "La demande de conciliation dans les 45 jours écarte le grief de déclaration tardive ; après l'échec, demande de redressement",
+            "Date de cessation des paiements fixée au 1er mars, reportable jusqu'à 18 mois avant le jugement : point de départ de la période suspecte"
+          ],
+          "explanation": "La conciliation est le seul outil amiable compatible avec une cessation des paiements récente (≤ 45 jours) ; son échec renvoie au redressement judiciaire, dont le jugement fixe la date de cessation des paiements et donc la période suspecte (C. com. art. L611-4, L611-11, L631-4, L631-8)."
+        },
+        {
+          "id": "q6-clause-resolutoire",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "Vrai ou faux ? À l'aide de l'annexe 4 : la résiliation notifiée le 20 mai N+1 par le crédit-bailleur sur le fondement de l'article 14 du contrat est efficace, de sorte que l'administrateur ne peut plus exiger la poursuite du contrat.",
+          "answer": false,
+          "explanation": "Faux. Aucune clause ne peut prévoir la résiliation ou la résolution d'un contrat en cours du seul fait de l'ouverture d'une procédure collective (C. com. art. L622-13, applicable au redressement) : l'article 14 est inefficace. Seul l'administrateur peut exiger la poursuite du contrat ; le crédit-bailleur doit alors l'exécuter malgré les loyers impayés antérieurs au jugement, qu'il déclare au passif, les loyers postérieurs devant être payés à leur échéance."
+        },
+        {
+          "id": "q7-creance-credit-bail",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l'aide de l'annexe 4, déterminez le montant de la créance que le crédit-bailleur doit déclarer au mandataire judiciaire au titre des loyers, dans l'hypothèse où l'administrateur exige la poursuite du contrat. Réponse en euros.",
+          "expected_value": 45000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Les loyers échus avant le jugement d'ouverture du 12 mai N+1 sont des créances antérieures : 1er mars, 1er avril et 1er mai, soit 3 × 15 000 = **45 000 €**, à déclarer dans les deux mois de la publication du jugement au BODACC (C. com. art. L622-24). Les loyers échus à compter du 1er juin N+1, nés de la poursuite du contrat pendant la période d'observation, sont des créances postérieures payées à leur échéance (L622-17) et ne se déclarent pas. Oublier le loyer du 1er mai (échu avant le jugement) donne 30 000 €."
+        },
+        {
+          "id": "q8-periode-suspecte",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À l'aide des annexes 2 et 4, quel est le sort du remboursement de 40 000 € effectué le 4 mars N+1 au profit de Varenne Participations ?",
+          "options": [
+            "Il est inattaquable, car il est intervenu avant le jugement d'ouverture du 12 mai N+1",
+            "Il ne peut être annulé que si Varenne Participations connaissait la cessation des paiements, nullité laissée à l'appréciation du tribunal",
+            "Il est nul de plein droit, car il s'agit du paiement d'une dette non échue pendant la période suspecte",
+            "Il est valable, car un prêt d'associé n'est pas une dette de la société au sens des procédures collectives"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "La période suspecte court de la date de cessation des paiements (1er mars N+1) au jugement d'ouverture (12 mai N+1). Le 4 mars, Lisière a remboursé un prêt dont l'échéance était le 31 décembre N+1 : paiement d'une dette **non échue**, cas de nullité de droit (C. com. art. L632-1) ; la holding restitue les 40 000 € et déclare sa créance (option 3). L'option 1 est fausse : les actes de la période suspecte sont précisément antérieurs au jugement. L'option 2 décrit la nullité facultative (L632-2), qui vise le paiement de dettes échues. L'option 4 est fausse : le prêt d'associé est une dette de la société comme une autre."
+        },
+        {
+          "id": "q9-indemnite-licenciement",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l'aide de l'annexe 5 et des hypothèses, calculez l'indemnité légale de licenciement due à Mme Perrin (C. trav. art. L1234-9, R1234-2 et R1234-4). Réponse en euros, arrondie à l'euro.",
+          "expected_value": 10230,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Salaire de référence, le plus favorable de : moyenne des 12 derniers mois = (9 × 2 550 + 3 × 2 640 + 1 800) ÷ 12 = 32 670 ÷ 12 = 2 722,50 € ; moyenne des 3 derniers mois, la prime annuelle étant retenue au prorata = (3 × 2 640 + 1 800 × 3/12) ÷ 3 = 8 370 ÷ 3 = 2 790 €. Retenir 2 790 €. Indemnité = 2 790 × (¼ × 10 + ⅓ × 3,5) = 2 790 × (2,5 + 1,1667) = **10 230 €**. Erreurs types : retenir la moyenne sur 12 mois (9 982,50 €), intégrer toute la prime dans la moyenne des 3 mois (11 880 €), ou appliquer ¼ de mois à toute l'ancienneté (2 790 × 13,5 ÷ 4 = 9 416,25 €)."
+        },
+        {
+          "id": "q10-licenciement-pse",
+          "kind": "open",
+          "points": 2,
+          "prompt": "À l'aide des annexes 1, 3 et 5 et de vos réponses aux questions 1 et 2, présentez les conditions et la procédure des licenciements envisagés pendant la période d'observation (motif, PSE, rôle du CSE, autorisation, mesures dues aux salariés).",
+          "model_answer": "**Motif.** La suppression de 14 postes repose sur des difficultés économiques (C. trav. art. L1233-3) : pour une entreprise de 50 à 299 salariés, une baisse significative du chiffre d'affaires pendant trois trimestres consécutifs par rapport à l'année précédente suffit ; Lisière en compte quatre (− 11 % à − 24 %), auxquels s'ajoutent une perte d'exploitation de 1 150 k€ et la cessation des paiements.\n\n**PSE.** Lisière emploie 84 salariés (au moins 50) et projette au moins 10 licenciements sur 30 jours : un plan de sauvegarde de l'emploi est obligatoire (L1233-61), y compris en redressement judiciaire (L1233-58), avec des mesures de reclassement proportionnées aux moyens de l'entreprise. Il est fixé par accord collectif majoritaire validé ou par document unilatéral homologué par la DREETS, dans les délais aménagés propres aux procédures collectives ; les licenciements ne peuvent être notifiés qu'après la décision administrative.\n\n**CSE.** L'administrateur informe et consulte le CSE sur le projet de réorganisation et de licenciement collectif ; l'avis du CSE est consultatif mais son absence de consultation constitue un délit d'entrave.\n\n**Autorisation.** Pendant la période d'observation, les licenciements présentant un caractère urgent, inévitable et indispensable doivent être autorisés par le **juge-commissaire** (C. com. art. L631-17), qui précise le nombre de salariés et les catégories professionnelles concernées.\n\n**Mesures individuelles.** Recherche de reclassement préalable, application des critères d'ordre, proposition du contrat de sécurisation professionnelle (entreprise en redressement judiciaire), indemnité légale de licenciement (10 230 € pour Mme Perrin), priorité de réembauche ; les créances salariales sont garanties par l'AGS si l'entreprise ne peut les payer.",
+          "key_points": [
+            "Motif économique caractérisé : baisse du chiffre d'affaires sur au moins trois trimestres consécutifs pour 50 à 299 salariés, pertes",
+            "PSE obligatoire : 84 salariés et 14 licenciements sur 30 jours, même en redressement judiciaire",
+            "Information-consultation du CSE, avis consultatif",
+            "Autorisation du juge-commissaire pour les licenciements urgents, inévitables et indispensables (L631-17)",
+            "Reclassement, critères d'ordre, contrat de sécurisation professionnelle, indemnité légale"
+          ],
+          "explanation": "En période d'observation, le droit du licenciement économique (motif, PSE, consultation du CSE) se combine avec l'autorisation du juge-commissaire (C. com. art. L631-17 ; C. trav. art. L1233-3, L1233-58, L1233-61)."
+        },
+        {
+          "id": "q11-insuffisance-actif",
+          "kind": "numeric",
+          "points": 1,
+          "prompt": "Dans l'hypothèse défavorable de l'annexe 5, calculez l'insuffisance d'actif servant de base à une éventuelle action en responsabilité contre M. Varenne. Réponse en euros.",
+          "expected_value": 1650000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Insuffisance d'actif = passif antérieur admis − actif réalisé = 2 900 000 − 1 250 000 = **1 650 000 €**. Le passif né après le jugement d'ouverture (300 000 €) n'entre pas dans le calcul ; l'inclure donne 1 950 000 €."
+        },
+        {
+          "id": "q12-responsabilite-dirigeant",
+          "kind": "open",
+          "points": 2,
+          "prompt": "Dans l'hypothèse défavorable de l'annexe 5, et à l'aide de vos réponses aux questions 5, 8 et 11, appréciez la responsabilité civile et les sanctions professionnelles qu'encourt M. Varenne.",
+          "model_answer": "**Responsabilité pour insuffisance d'actif** (C. com. art. L651-2). Ses conditions sont réunies : liquidation judiciaire d'une personne morale faisant apparaître une insuffisance d'actif de 1 650 000 € ; faute de gestion qui dépasse la simple négligence (politique délibérée de prix inférieurs au coût de revient pendant un an malgré les alertes du commissaire aux comptes, remboursement préférentiel de sa propre holding après la cessation des paiements) ; contribution de ces fautes à l'insuffisance d'actif. Le tribunal, saisi par le liquidateur ou le ministère public dans les trois ans du jugement de liquidation, **peut** mettre à la charge de M. Varenne tout ou partie de l'insuffisance ; les sommes versées entrent dans le patrimoine de la société et profitent à tous les créanciers.\n\n**Sanctions professionnelles.** Le remboursement anticipé, décidé par le dirigeant au profit d'une société qu'il contrôle, alors qu'il ne pouvait ignorer la cessation des paiements, consiste à payer un créancier au préjudice des autres après la cessation des paiements (L653-5, 4°) et à faire du crédit de la société un usage contraire à son intérêt pour favoriser une société dans laquelle il est intéressé (L653-4, 3°) : ces faits peuvent justifier une faillite personnelle ou, à la place, une interdiction de gérer (L653-8), pour 15 ans au plus (L653-11). En revanche, le grief d'omission de déclaration de la cessation des paiements dans les 45 jours ne peut être retenu : M. Varenne a demandé une conciliation dans ce délai.\n\nCes sanctions sont facultatives et cumulables avec la restitution des 40 000 € par la holding au titre de la nullité de droit.",
+          "key_points": [
+            "Trois conditions de l'action en insuffisance d'actif : liquidation, faute de gestion autre qu'une simple négligence, contribution à l'insuffisance",
+            "Fautes identifiées : vente à perte prolongée malgré les alertes, paiement préférentiel de la holding",
+            "Condamnation facultative, totale ou partielle, au profit de tous les créanciers ; action du liquidateur ou du ministère public, prescription 3 ans",
+            "Faillite personnelle ou interdiction de gérer possibles (15 ans au plus) pour le paiement préférentiel (L653-5, 4°) et l'usage du crédit social au profit de la holding (L653-4, 3°)",
+            "Pas de grief de déclaration tardive : conciliation demandée dans les 45 jours"
+          ],
+          "explanation": "On rattache chaque fait à une sanction : faute de gestion contributive pour la responsabilité pour insuffisance d'actif (L651-2), faits graves pour la faillite personnelle ou l'interdiction de gérer (L653-1 et s.), en écartant le grief de déclaration tardive grâce à la conciliation demandée à temps."
+        }
+      ],
+      "explanation": "Méthode : (1) mesurer l'effectif selon les règles du Code du travail (84 salariés) pour fixer les seuils (CSE à attributions élargies, PSE) ; (2) tester la cessation des paiements (actif disponible 250 000 € contre passif exigible 350 000 €, moratoire déduit) ; (3) choisir la procédure : conciliation possible dans les 45 jours, sauvegarde exclue, redressement à défaut ; (4) traiter les effets du redressement : clause résolutoire inefficace, loyers antérieurs déclarés (45 000 €), remboursement d'une dette non échue en période suspecte nul de plein droit ; (5) organiser les licenciements : motif économique, PSE, consultation du CSE, autorisation du juge-commissaire, indemnité légale (10 230 €) ; (6) en cas de liquidation, apprécier la responsabilité du dirigeant sur une insuffisance d'actif de 1 650 000 € et les sanctions professionnelles."
+    }
+  ]
+}
