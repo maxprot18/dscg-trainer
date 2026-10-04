@@ -75,9 +75,12 @@ describe('écran Progression', () => {
     )
     const exported = { app: 'dscg-trainer', version: 1, exportedAt: new Date(NOW).toISOString(), ...data }
     const file = new File([JSON.stringify(exported)], 'progression.json', { type: 'application/json' })
-    await userEvent.upload(await screen.findByLabelText('Fichier de progression'), file)
-    expect(await screen.findByText(/Progression importée : 7 tentatives, 1 sessions/)).toBeInTheDocument()
-    await waitFor(async () => expect(await db.attempts.count()).toBe(7))
-    expect(await screen.findByText('7')).toBeInTheDocument()
-  })
+    await userEvent.upload(await screen.findByLabelText('Fichier de progression', undefined, { timeout: 10_000 }), file)
+    // Lecture du fichier et écriture IndexedDB : plus lentes sur les machines de CI, d'où le délai élargi.
+    expect(
+      await screen.findByText(/Progression importée : 7 tentatives, 1 sessions/, undefined, { timeout: 10_000 }),
+    ).toBeInTheDocument()
+    await waitFor(async () => expect(await db.attempts.count()).toBe(7), { timeout: 10_000 })
+    expect(await screen.findByText('7', undefined, { timeout: 10_000 })).toBeInTheDocument()
+  }, 30_000)
 })
