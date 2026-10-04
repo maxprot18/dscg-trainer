@@ -1,0 +1,96 @@
+{
+  "exercises": [
+    {
+      "id": "ue5-donnees-qualite-0001",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "gouvernance-qualite-donnees",
+      "difficulty": 1,
+      "tags": [
+        "qualité des données",
+        "doublons",
+        "dimensions de la qualité"
+      ],
+      "statement": "Lors d'un audit du fichier clients, on constate que la société Dumas SA y figure trois fois, sous trois codes différents, avec des encours suivis séparément. Quelle dimension de la qualité des données est principalement en cause ?",
+      "options": [
+        "La complétude",
+        "La fraîcheur",
+        "La validité",
+        "L’unicité"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Un même objet réel enregistré plusieurs fois est un défaut d'unicité (doublons). Conséquences : encours client sous-estimé, limite de crédit contournée, relances incohérentes. La complétude (option 1) concerne les champs non renseignés ; la fraîcheur (option 2) les données périmées, non mises à jour ; la validité (option 3) le respect d'un format ou d'une règle (SIREN à 9 chiffres, clé IBAN correcte). Remède : dédoublonnage et, à la source, contrôle d'existence à la création (référentiel client unique, MDM).",
+      "source_ref": "ISO/IEC 25012 (modèle de qualité des données) ; programme DSCG UE 5 (gouvernance et qualité des données)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue5-donnees-qualite-0002",
+      "type": "numeric",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "gouvernance-qualite-donnees",
+      "difficulty": 2,
+      "tags": [
+        "qualité des données",
+        "taux de conformité",
+        "fichier fournisseurs"
+      ],
+      "statement": "Avant la migration vers un nouvel ERP, le contrôle du fichier fournisseurs (2 400 fiches) révèle : 180 fiches sans IBAN, 96 fiches dont l'IBAN a une clé de contrôle erronée et 60 doublons (fiches en trop à supprimer). Chaque fiche ne présente qu'une seule de ces anomalies. Calculez le taux de conformité du fichier, c'est-à-dire la part des fiches sans aucune anomalie (en %, arrondi à une décimale).",
+      "expected_value": 86,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "decimals": 1,
+      "explanation": "Fiches en anomalie = 180 + 96 + 60 = 336 (anomalies disjointes, chaque fiche comptée une fois). Fiches conformes = 2 400 − 336 = 2 064. Taux de conformité = 2 064 ÷ 2 400 = 86,0 %. Erreurs classiques : ne retenir que la complétude de l'IBAN ((2 400 − 180) ÷ 2 400 = 92,5 %) ou oublier les doublons ((2 400 − 276) ÷ 2 400 = 88,5 %). Un IBAN erroné dans le fichier fournisseurs est aussi un point de contrôle anti-fraude (faux changement de coordonnées bancaires).",
+      "source_ref": "ISO/IEC 25012 (complétude, validité, unicité) ; programme DSCG UE 5 (qualité des données)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue5-donnees-qualite-0003",
+      "type": "true_false",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "gouvernance-qualite-donnees",
+      "difficulty": 2,
+      "tags": [
+        "gouvernance des données",
+        "data owner",
+        "data steward",
+        "rôles"
+      ],
+      "statement": "Dans une organisation de gouvernance des données, le propriétaire des données clients (data owner) est en principe un responsable métier, par exemple le directeur commercial, plutôt que la DSI.",
+      "answer": true,
+      "justification": "Le propriétaire des données est le responsable métier qui définit leur signification, leurs règles d'accès et le niveau de qualité attendu ; la DSI fournit et exploite les outils.",
+      "explanation": "La gouvernance des données distingue le propriétaire (data owner), responsable métier d'un domaine de données, le gestionnaire (data steward), qui veille au quotidien à la qualité et à la documentation, et la DSI, qui gère l'infrastructure et les applications. Confier la propriété des données à la DSI est une erreur fréquente : elle ne connaît ni les règles de gestion ni l'usage des données et ne peut pas arbitrer les définitions (qu'est-ce qu'un « client actif » ?). Le DPO, lui, veille à la conformité au RGPD.",
+      "source_ref": "Programme DSCG UE 5 : gouvernance des données (rôles et responsabilités)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue5-donnees-qualite-0004",
+      "type": "flashcard",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "gouvernance-qualite-donnees",
+      "difficulty": 1,
+      "tags": [
+        "MDM",
+        "données de référence",
+        "référentiel"
+      ],
+      "front": "Qu’est-ce qu’un référentiel des données de référence (MDM, master data management) et quel est son intérêt ?",
+      "back": "Dispositif (organisation, règles et outil) qui gère de façon centralisée les données de référence partagées par plusieurs applications : clients, fournisseurs, articles, salariés, plan de comptes.\nUne seule version fait foi et elle est diffusée à l'ERP, au CRM, à l'entrepôt de données…\nIntérêt : suppression des doublons et des incohérences entre applications, contrôles à la création, traçabilité des modifications, fiabilité des reportings.",
+      "explanation": "Le MDM traite la qualité à la source : une fiche fournisseur créée et validée une fois (avec contrôle de l'IBAN et séparation des tâches pour les modifications) alimente toutes les applications. C'est aussi un dispositif de contrôle interne contre la fraude au changement de coordonnées bancaires.",
+      "source_ref": "Programme DSCG UE 5 : gouvernance et qualité des données (données de référence)",
+      "verified": true,
+      "estimated_seconds": 40
+    }
+  ]
+}

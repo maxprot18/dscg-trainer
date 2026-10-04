@@ -20,6 +20,182 @@
       "source_ref": "Règlement (UE) 2016/679 (RGPD), art. 33 et 34 ; art. 12 §3 (délai de réponse aux demandes)",
       "verified": true,
       "estimated_seconds": 75
+    },
+    {
+      "id": "ue5-donnees-rgpd-0002",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "protection-donnees-rgpd-si",
+      "difficulty": 2,
+      "tags": [
+        "RGPD",
+        "base légale",
+        "obligation légale",
+        "DSN"
+      ],
+      "statement": "Chaque mois, le service paie d'une entreprise transmet aux organismes sociaux, par la déclaration sociale nominative (DSN), les rémunérations et les données d'identification de ses salariés. Quelle base légale du RGPD fonde cette transmission ?",
+      "options": [
+        "Le consentement de chaque salarié, recueilli à l’embauche",
+        "L’intérêt légitime de l’employeur à simplifier ses démarches",
+        "L’exécution d’une mission d’intérêt public confiée à l’employeur",
+        "Le respect d’une obligation légale à laquelle l’employeur est soumis"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "La DSN est imposée par le Code de la sécurité sociale : la transmission est nécessaire au respect d'une obligation légale du responsable du traitement (RGPD art. 6 §1 c). Le consentement (option 1) n'est pas adapté : il doit être libre et pouvoir être retiré, ce qui est impossible pour une obligation déclarative, et le déséquilibre de la relation de travail le rend rarement valable. L'intérêt légitime (option 2) n'est pas la base pertinente quand la loi impose le traitement. La mission d'intérêt public (option 3) concerne le traitement effectué par l'organisme qui exerce cette mission, pas l'employeur qui déclare. Pour le calcul de la paie lui-même, la base est l'exécution du contrat de travail, combinée aux obligations légales.",
+      "source_ref": "Règlement (UE) 2016/679 (RGPD), art. 6 §1 (bases légales) et art. 7 et considérant 43 (consentement en cas de déséquilibre)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue5-donnees-rgpd-0003",
+      "type": "numeric",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "protection-donnees-rgpd-si",
+      "difficulty": 3,
+      "tags": [
+        "RGPD",
+        "sanctions",
+        "plafond",
+        "chiffre d’affaires mondial"
+      ],
+      "statement": "La filiale française d'un groupe a réutilisé les données de ses clients à des fins de prospection sans base légale valable (manquement à l'article 6 du RGPD). Son chiffre d'affaires de l'exercice précédent est de 150 M€ ; le chiffre d'affaires annuel mondial consolidé du groupe auquel elle appartient est de 900 M€. On retient, conformément au considérant 150 du RGPD, que la notion d'entreprise s'entend au sens du droit de la concurrence (le groupe). Calculez le montant maximal de l'amende administrative encourue (en M€).",
+      "expected_value": 36,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "M€",
+      "decimals": 1,
+      "explanation": "Le manquement aux bases légales du traitement (art. 6) relève du plafond le plus élevé de l'article 83 §5 : 20 M€ ou 4 % du chiffre d'affaires annuel mondial total de l'exercice précédent, le montant le plus élevé étant retenu. Chiffre d'affaires de l'entreprise au sens du droit de la concurrence = celui du groupe, 900 M€. 4 % × 900 = 36 M€ > 20 M€ : plafond = 36 M€. Erreurs classiques : retenir le chiffre d'affaires de la filiale (4 % × 150 = 6 M€, d'où un plafond de 20 M€) ; appliquer le plafond de l'art. 83 §4 (2 % × 900 = 18 M€, d'où 18 M€) ; retenir le plus faible des deux montants (20 M€). Il s'agit d'un maximum : la CNIL fixe le montant selon la gravité, la durée, le nombre de personnes, la coopération, etc. (art. 83 §2).",
+      "source_ref": "Règlement (UE) 2016/679 (RGPD), art. 83 §2, §4 et §5 ; considérant 150",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue5-donnees-rgpd-0004",
+      "type": "journal_entry",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "protection-donnees-rgpd-si",
+      "difficulty": 2,
+      "tags": [
+        "RGPD",
+        "sanction CNIL",
+        "amende",
+        "reprise de provision"
+      ],
+      "statement": "Fin N, la société Chartreuse, contrôlée par la CNIL pour une conservation excessive des données de ses clients, a constitué une provision pour risque de 120 000 € (dotation enregistrée au compte 6875). Le 15 mai N+1, la CNIL prononce une amende administrative de 150 000 €, réglée le même jour par virement bancaire. Passez l'écriture du 15 mai N+1 (paiement de l'amende et reprise de la provision devenue sans objet). Convention de l'exercice (plan de comptes de la société) : utilisez les comptes 6712 « Pénalités et amendes », 512 « Banque », 1511 « Provisions pour litiges » et 7875 « Reprises sur provisions » (symétrique du compte de dotation utilisé en N).",
+      "date": "15/05/N+1",
+      "entries": [
+        {
+          "account": "6712",
+          "label": "Pénalités et amendes",
+          "debit": 150000,
+          "credit": 0
+        },
+        {
+          "account": "512",
+          "label": "Banque",
+          "debit": 0,
+          "credit": 150000
+        },
+        {
+          "account": "1511",
+          "label": "Provisions pour litiges",
+          "debit": 120000,
+          "credit": 0
+        },
+        {
+          "account": "7875",
+          "label": "Reprises sur provisions",
+          "debit": 0,
+          "credit": 120000
+        }
+      ],
+      "explanation": "L'amende définitivement prononcée est une charge de N+1 (compte 6712 imposé par l'énoncé), réglée par banque : 150 000 €. La provision constituée en N devient sans objet puisque le risque s'est réalisé : elle est intégralement reprise (débit 1511, crédit 7875 pour 120 000 €, compte de reprise symétrique de la dotation). L'impact net sur le résultat de N+1 est de −30 000 €, l'insuffisance de la provision. Le classement de ces comptes a été remanié par le règlement ANC 2022-06 (exercices ouverts depuis le 1er janvier 2025, nouvelle définition du résultat exceptionnel) : c'est pourquoi l'énoncé impose les comptes ; le raisonnement (charge définitive, reprise intégrale de la provision) n'en dépend pas. Fiscalement, les sanctions pécuniaires et pénalités mises à la charge des contrevenants à des obligations légales ne sont pas déductibles (CGI art. 39, 2) : l'amende est réintégrée extra-comptablement ; symétriquement, la dotation de N, non déductible, avait été réintégrée et la reprise de 120 000 € est déduite.",
+      "source_ref": "PCG (règl. ANC 2014-03 modifié, notamment par le règl. ANC 2022-06), règles relatives aux provisions ; comptes imposés par l'énoncé ; CGI art. 39, 2 (non-déductibilité des sanctions) ; RGPD art. 5 §1 e) et 83",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue5-donnees-rgpd-0005",
+      "type": "case_study",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "protection-donnees-rgpd-si",
+      "difficulty": 3,
+      "tags": [
+        "RGPD",
+        "AIPD",
+        "profilage",
+        "droits des personnes",
+        "sous-traitant"
+      ],
+      "title": "Enseigne Altaïr : une application de fidélité géolocalisée",
+      "context": "L'enseigne de distribution Altaïr (2 300 salariés, 180 magasins) lance une application mobile de fidélité. Elle compte 800 000 adhérents à la fin de la première année.\n\nFonctionnalités prévues :\n- carte de fidélité dématérialisée et historique des achats ;\n- offres personnalisées calculées à partir des achats (profilage des habitudes de consommation) ;\n- géolocalisation en continu du téléphone pour envoyer une offre lorsque l'adhérent passe à proximité d'un magasin.\n\nL'application est développée et hébergée par une jeune entreprise française, qui stocke les données sur l'infrastructure d'un fournisseur de cloud établi aux États-Unis. Altaïr a désigné un délégué à la protection des données (DPO) il y a deux ans.\n\nLe directeur marketing souhaite un lancement rapide : « Les clients acceptent les conditions générales en installant l'application, cela vaut accord pour tout. »",
+      "sub_questions": [
+        {
+          "id": "q1-base-geoloc",
+          "kind": "mcq",
+          "prompt": "Sur quelle base légale la géolocalisation en continu à des fins d’offres commerciales doit-elle reposer ?",
+          "points": 2,
+          "options": [
+            "L’acceptation des conditions générales lors de l’installation, qui vaut consentement",
+            "L’exécution du contrat de fidélité",
+            "Le consentement spécifique de l’adhérent, recueilli de façon distincte et retirable à tout moment",
+            "L’intérêt légitime de l’enseigne, sans possibilité d’opposition"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "La géolocalisation continue à des fins de prospection est intrusive et non nécessaire au fonctionnement de la carte de fidélité : elle doit reposer sur un consentement libre, spécifique, éclairé et univoque, distinct de l'acceptation des conditions générales, et aussi simple à retirer qu'à donner (art. 4 §11 et art. 7). L'accès aux données de localisation stockées dans le téléphone suppose d'ailleurs le consentement de l'utilisateur (art. 82 de la loi n° 78-17, transposant la directive « vie privée et communications électroniques »). Les options 1, 2 et 4 sont donc écartées : l'acceptation des conditions générales ne vaut pas consentement spécifique ; l'exécution du contrat ne couvre que ce qui est nécessaire au service (gestion des points). l'intérêt légitime ne peut jamais exclure le droit d'opposition à la prospection (art. 21 §2)."
+        },
+        {
+          "id": "q2-aipd",
+          "kind": "true_false",
+          "prompt": "Altaïr doit réaliser une analyse d’impact relative à la protection des données (AIPD) avant de lancer l’application.",
+          "points": 1,
+          "answer": true,
+          "explanation": "Vrai : le traitement combine profilage à des fins commerciales, suivi systématique de la localisation et grande échelle (800 000 personnes) ; il est susceptible d'engendrer un risque élevé pour les droits et libertés, ce qui impose une AIPD préalable (art. 35), menée avec le conseil du DPO."
+        },
+        {
+          "id": "q3-delai-acces",
+          "kind": "numeric",
+          "prompt": "Un adhérent demande la copie de toutes les données le concernant. Face à un afflux de demandes, Altaïr envisage de prolonger le délai de réponse. Quel est le délai maximal de réponse, prolongation comprise, à compter de la réception de la demande (en mois) ?",
+          "points": 1,
+          "expected_value": 3,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0
+          },
+          "unit": "mois",
+          "decimals": 0,
+          "explanation": "Réponse dans un délai d'un mois, prolongeable de deux mois compte tenu de la complexité et du nombre de demandes, soit 3 mois au maximum ; l'adhérent doit être informé de la prolongation et de ses motifs dans le premier mois (art. 12 §3)."
+        },
+        {
+          "id": "q4-plan-conformite",
+          "kind": "open",
+          "prompt": "Répondez au directeur marketing : présentez les principales mesures de conformité à mettre en œuvre avant le lancement.",
+          "points": 6,
+          "model_answer": "L'acceptation des conditions générales ne vaut pas consentement pour tout : chaque finalité doit avoir sa base légale (art. 6). Gestion de la carte et des points : exécution du contrat ; offres personnalisées fondées sur l'historique : consentement ou intérêt légitime selon l'analyse, avec information claire et droit d'opposition simple ; géolocalisation : consentement spécifique, désactivé par défaut. Mesures : 1) AIPD préalable (profilage, géolocalisation, grande échelle) avec le DPO, et consultation de la CNIL si un risque élevé subsiste (art. 35 et 36) ; 2) inscription des traitements au registre (art. 30) ; 3) protection dès la conception et par défaut (art. 25) : minimisation (localisation ponctuelle près des magasins plutôt que suivi continu, pas de conservation de l'historique des positions), durées de conservation définies (suppression ou anonymisation des comptes inactifs), sécurité (chiffrement, contrôle des accès) ; 4) information claire des adhérents (finalités, durées, destinataires, droits) et procédure de traitement des demandes (accès, effacement, portabilité, opposition) dans le délai d'un mois ; 5) contrat de sous-traitance avec le développeur-hébergeur conforme à l'art. 28 (instructions, sécurité, sous-traitants ultérieurs autorisés, sort des données en fin de contrat, audits) ; 6) encadrement du transfert éventuel vers les États-Unis (chapitre V : décision d'adéquation si le fournisseur y est éligible, ou clauses contractuelles types avec analyse des risques), ou choix d'un hébergement dans l'Union ; 7) procédure de gestion des violations de données. Un lancement non conforme expose à une amende pouvant atteindre 20 M€ ou 4 % du chiffre d'affaires mondial et à un risque d'image.",
+          "key_points": [
+            "Une base légale par finalité ; consentement spécifique et retirable pour la géolocalisation",
+            "AIPD préalable avec le DPO, consultation de la CNIL si risque résiduel élevé",
+            "Registre, minimisation, durées de conservation, sécurité, protection par défaut",
+            "Information des adhérents et procédure de réponse aux demandes d’exercice des droits",
+            "Contrat de sous-traitance (art. 28) et encadrement du transfert hors UE"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas réunit les principaux outils de conformité : base légale par finalité (consentement pour la géolocalisation), AIPD en cas de profilage et de suivi à grande échelle, délai de réponse aux demandes (1 mois + 2 mois au maximum), registre, protection dès la conception, contrat de sous-traitance et encadrement des transferts.",
+      "source_ref": "Règlement (UE) 2016/679 (RGPD), art. 4 §11, 6, 7, 12 §3, 21, 25, 28, 30, 35, 36 et chapitre V (art. 44 à 49)",
+      "verified": true,
+      "estimated_seconds": 900
     }
   ]
 }

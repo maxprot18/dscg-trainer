@@ -1,0 +1,100 @@
+{
+  "exercises": [
+    {
+      "id": "ue5-donnees-ia-0001",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "intelligence-artificielle-generative",
+      "difficulty": 2,
+      "tags": [
+        "AI Act",
+        "haut risque",
+        "recrutement",
+        "annexe III"
+      ],
+      "statement": "Une entreprise de 900 salariés établie en France veut utiliser un logiciel d'IA, acheté à un éditeur, qui analyse les CV reçus et écarte automatiquement les candidatures jugées les moins pertinentes avant tout examen par un recruteur. Comment ce système est-il qualifié par le règlement européen sur l'intelligence artificielle (règlement (UE) 2024/1689) ?",
+      "options": [
+        "Pratique interdite, car il porte sur des données de salariés potentiels",
+        "Système d’IA à haut risque, car il est utilisé pour le recrutement et la sélection des candidats",
+        "Système soumis à la seule obligation d’informer les candidats qu’une IA est utilisée",
+        "Hors champ du règlement, car l’entreprise n’a pas développé elle-même le logiciel"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'annexe III du règlement range parmi les systèmes à haut risque ceux destinés au recrutement ou à la sélection de personnes, notamment pour filtrer les candidatures et évaluer les candidats. L'éditeur (fournisseur) supporte les obligations de conformité (gestion des risques, qualité des données, documentation, marquage) ; l'entreprise (déployeur) doit l'utiliser conformément à la notice, assurer un contrôle humain par des personnes compétentes, surveiller son fonctionnement et informer les représentants du personnel et les salariés concernés. L'option 1 est fausse : les pratiques interdites de l'article 5 sont limitativement énumérées (notation sociale, manipulation, reconnaissance des émotions sur le lieu de travail…) et le tri de CV n'en fait pas partie. L'option 3 décrit les obligations de transparence de l'article 50, insuffisantes ici. L'option 4 est fausse : le règlement vise aussi les déployeurs. Le RGPD s'applique en outre (art. 22 sur les décisions entièrement automatisées).",
+      "source_ref": "Règlement (UE) 2024/1689 (AI Act), art. 5, art. 6 §2 et annexe III (emploi), art. 26 (obligations des déployeurs), art. 50 ; RGPD art. 22",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue5-donnees-ia-0002",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "intelligence-artificielle-generative",
+      "difficulty": 3,
+      "tags": [
+        "apprentissage automatique",
+        "rappel",
+        "précision",
+        "détection de fraude"
+      ],
+      "statement": "Une banque teste un modèle d'apprentissage automatique de détection des virements frauduleux sur 10 000 virements dont 100 sont réellement frauduleux. Le modèle déclenche 250 alertes, dont 80 portent sur des virements réellement frauduleux. Quelle analyse est exacte ?",
+      "options": [
+        "Précision de 80 % et rappel de 32 % : les alertes sont fiables, mais le modèle laisse passer deux fraudes sur trois",
+        "Exactitude de 98,1 % : le modèle est très performant et les fausses alertes sont négligeables",
+        "Rappel de 80 % et précision de 32 % : le modèle détecte 4 fraudes sur 5, mais plus des deux tiers de ses alertes sont de fausses alertes",
+        "Rappel de 80 % et précision de 80 % : le modèle se trompe dans 20 % des cas, aussi bien en alertes qu’en fraudes manquées"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Rappel = fraudes détectées ÷ fraudes réelles = 80 ÷ 100 = 80 %. Précision = alertes justifiées ÷ alertes = 80 ÷ 250 = 32 % : 170 alertes sur 250 (68 %) sont de fausses alertes, qui mobiliseront les analystes. L'option 1 inverse les deux indicateurs. L'option 2 cite une exactitude juste ((80 + 9 730) ÷ 10 000 = 98,1 %, avec 9 900 − 170 = 9 730 virements sains non alertés) mais en tire une conclusion fausse : quand la fraude ne représente que 1 % des cas, un modèle qui ne signalerait jamais rien serait exact à 99 %. L'option 4 calcule la précision sur une mauvaise base. L'arbitrage entre rappel et précision se règle par le seuil d'alerte, selon le coût d'une fraude manquée et celui d'une fausse alerte.",
+      "source_ref": "Programme DSCG UE 5 : intelligence artificielle et apprentissage automatique (mesures de performance d’un classifieur)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue5-donnees-ia-0003",
+      "type": "true_false",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "intelligence-artificielle-generative",
+      "difficulty": 1,
+      "tags": [
+        "AI Act",
+        "champ d’application",
+        "extraterritorialité"
+      ],
+      "statement": "Le règlement européen sur l'intelligence artificielle ne s'applique qu'aux fournisseurs de systèmes d'IA établis dans l'Union européenne.",
+      "answer": false,
+      "justification": "Le règlement vise les fournisseurs qui mettent un système d'IA sur le marché de l'Union ou le mettent en service dans l'Union, où qu'ils soient établis, ainsi que les déployeurs établis dans l'Union.",
+      "explanation": "Comme le RGPD, le règlement (UE) 2024/1689 a une portée extraterritoriale (art. 2) : un éditeur américain ou asiatique qui commercialise un système d'IA dans l'Union y est soumis. Il s'applique aussi aux fournisseurs et déployeurs établis hors de l'Union lorsque les résultats produits par le système sont utilisés dans l'Union, et aux déployeurs établis dans l'Union (entreprises utilisatrices). Les fournisseurs non établis dans l'Union de systèmes à haut risque doivent désigner un mandataire établi dans l'Union.",
+      "source_ref": "Règlement (UE) 2024/1689 (AI Act), art. 2 (champ d’application) et art. 22 (mandataires)",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue5-donnees-ia-0004",
+      "type": "flashcard",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "intelligence-artificielle-generative",
+      "difficulty": 2,
+      "tags": [
+        "IA générative",
+        "hallucination",
+        "RAG",
+        "contrôle humain"
+      ],
+      "front": "Qu’est-ce qu’une « hallucination » d’une IA générative et comment en limiter le risque dans un service financier ?",
+      "back": "Réponse fausse ou inventée (chiffre, article de loi, référence, jurisprudence) présentée de façon assurée et plausible : le modèle produit le texte le plus probable, il ne vérifie pas les faits.\nParades : alimenter le modèle avec des documents internes fiables et citer les sources (génération augmentée par récupération, RAG) ; vérification humaine systématique avant tout usage externe ; réserver l'outil à des tâches de premier jet ou de synthèse ; former les utilisateurs ; tracer les usages.",
+      "explanation": "Le risque d'hallucination s'ajoute aux risques de confidentialité (données clients ou secret professionnel saisis dans un outil public), de droits d'auteur et de biais. Le règlement (UE) 2024/1689 impose par ailleurs aux fournisseurs et déployeurs de veiller à la maîtrise de l'IA par leur personnel (art. 4) et des obligations de transparence pour certains contenus générés (art. 50).",
+      "source_ref": "Règlement (UE) 2024/1689 (AI Act), art. 4 et 50 ; programme DSCG UE 5 : intelligence artificielle générative (usages et limites)",
+      "verified": true,
+      "estimated_seconds": 40
+    }
+  ]
+}
