@@ -1,0 +1,169 @@
+{
+  "exercises": [
+    {
+      "id": "ue5-secu-cyber-0001",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "cybersecurite-menaces",
+      "difficulty": 1,
+      "tags": [
+        "DICP",
+        "intégrité",
+        "fraude au RIB"
+      ],
+      "statement": "Un fraudeur obtient l'accès au compte d'une comptable et remplace, dans l'ERP, le RIB d'un fournisseur par le sien. Le prochain virement est versé sur son compte. Quel critère de sécurité (DICP) est atteint en premier lieu ?",
+      "options": [
+        "La disponibilité",
+        "L'intégrité",
+        "La confidentialité",
+        "La preuve (traçabilité)"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "La donnée fournisseur a été modifiée sans autorisation : c'est une atteinte à l'intégrité (option 2). L'option 1 est fausse : l'ERP est resté accessible, aucun service n'a été interrompu. L'option 3 est fausse : le problème n'est pas qu'une information a été divulguée, mais qu'elle a été altérée. L'option 4 est fausse : la traçabilité permet de retrouver l'auteur de la modification (journal des modifications) ; elle aide à l'enquête mais n'est pas le critère principalement atteint.",
+      "source_ref": "Critères de sécurité DICP ; ISO/IEC 27000 (définitions de l’intégrité et de la confidentialité)",
+      "estimated_seconds": 45,
+      "verified": true
+    },
+    {
+      "id": "ue5-secu-cyber-0002",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "cybersecurite-menaces",
+      "difficulty": 2,
+      "tags": [
+        "rançongiciel",
+        "gestion de crise",
+        "réponse à incident"
+      ],
+      "statement": "Un lundi matin, un salarié signale que les fichiers de son poste ont une extension inconnue et qu'un message réclame une rançon en cryptomonnaie. Quelle est la première mesure à prendre ?",
+      "options": [
+        "Éteindre immédiatement tous les serveurs et postes de l'entreprise pour stopper le chiffrement",
+        "Restaurer sans attendre la dernière sauvegarde sur le poste touché",
+        "Isoler le poste du réseau sans l'éteindre, puis alerter la cellule de crise et le responsable de la sécurité",
+        "Payer rapidement la rançon pour limiter l'interruption, l'assurance remboursant ensuite le montant"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "La priorité est de contenir la propagation : déconnecter le poste du réseau (câble, Wi-Fi) sans l'éteindre, pour conserver en mémoire des traces utiles à l'analyse, puis déclencher la gestion de crise (option 3). L'option 1 est excessive et détruit des traces : on isole d'abord, l'arrêt éventuel d'autres systèmes se décide en cellule de crise. L'option 2 est prématurée : restaurer avant d'avoir identifié le mode d'intrusion expose à une nouvelle infection, et la sauvegarde peut elle-même être compromise. L'option 4 est contraire aux recommandations des autorités : le paiement ne garantit ni le déchiffrement ni la non-divulgation des données, et l'indemnisation par l'assurance suppose une plainte déposée dans les 72 heures (Code des assurances art. L. 12-10-1).",
+      "source_ref": "Recommandations ANSSI sur les attaques par rançongiciel ; Code des assurances art. L. 12-10-1 (loi n° 2023-22 du 24 janvier 2023)",
+      "estimated_seconds": 60,
+      "verified": true
+    },
+    {
+      "id": "ue5-secu-cyber-0003",
+      "type": "numeric",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "cybersecurite-menaces",
+      "difficulty": 2,
+      "tags": [
+        "ALE",
+        "SLE",
+        "ARO",
+        "analyse quantitative"
+      ],
+      "statement": "Une entreprise évalue le risque de rançongiciel sur son ERP et sa base clients, dont la valeur (actif) est estimée à 400 000 €.\n- Sans mesure supplémentaire : facteur d'exposition 25 %, taux annuel d'occurrence 0,4.\n- Avec une solution de détection sur les postes et des sauvegardes immuables : facteur d'exposition 10 %, taux annuel d'occurrence 0,1. Coût annuel de ces mesures : 15 000 €.\nCalculez le gain net annuel procuré par les mesures (baisse de l'espérance de perte annuelle, diminuée du coût annuel des mesures), en euros.",
+      "expected_value": 21000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Avant : SLE = 400 000 × 25 % = 100 000 € ; ALE = 100 000 × 0,4 = 40 000 €. Après : SLE = 400 000 × 10 % = 40 000 € ; ALE = 40 000 × 0,1 = 4 000 €. Baisse d'ALE = 36 000 € ; gain net = 36 000 − 15 000 = 21 000 €. Les mesures sont justifiées économiquement. Oublier le coût des mesures donne 36 000 € ; ne modifier que l'ARO donne une ALE après de 10 000 € et un gain net de 15 000 €.",
+      "source_ref": "Analyse quantitative des risques : SLE = AV × EF, ALE = SLE × ARO (ISO/IEC 27005, approche quantitative)",
+      "estimated_seconds": 180,
+      "verified": true
+    },
+    {
+      "id": "ue5-secu-cyber-0004",
+      "type": "case_study",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "cybersecurite-menaces",
+      "difficulty": 3,
+      "tags": [
+        "EBIOS Risk Manager",
+        "ALE",
+        "disponibilité",
+        "plan de traitement",
+        "obsolescence"
+      ],
+      "title": "Fontanel Équipements : analyse de risques et plan de traitement",
+      "context": "Fontanel Équipements (110 salariés) vend du matériel de cuisine professionnelle, à 40 % par son site de commerce en ligne ouvert 24 h sur 24. Son RSSI à temps partiel conduit une analyse de risques inspirée d'EBIOS Risk Manager.\n\nÉléments recueillis :\n- l'ERP (commandes, stocks, comptabilité) tourne sur un serveur dont le système d'exploitation n'est plus maintenu par l'éditeur depuis deux ans ; sa valeur pour l'entreprise (données, reconstitution, perte d'exploitation) est estimée à 300 000 € ;\n- en cas de rançongiciel, le facteur d'exposition est estimé à 50 % et le taux annuel d'occurrence à 0,3 ;\n- les sauvegardes sont faites chaque nuit sur un disque branché en permanence au serveur ; aucune restauration n'a été testée ;\n- un prestataire de maintenance accède à distance à l'ERP avec un identifiant et un mot de passe partagés entre ses techniciens ;\n- le service comptable a reçu trois courriels de faux changement de RIB l'an dernier, dont un a failli aboutir ;\n- sur l'année écoulée (365 jours), le site marchand a connu trois interruptions de 6 h, 4,5 h et 2,5 h ; le contrat d'hébergement prévoit une disponibilité de 99,9 %.\n\nLe dirigeant dispose d'un budget annuel de 30 000 € pour la sécurité.",
+      "sub_questions": [
+        {
+          "id": "q1-ale",
+          "kind": "numeric",
+          "prompt": "Calculez l'espérance de perte annuelle (ALE) du risque de rançongiciel sur l'ERP (en €).",
+          "points": 2,
+          "expected_value": 45000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "SLE = 300 000 × 50 % = 150 000 € ; ALE = 150 000 × 0,3 = 45 000 €."
+        },
+        {
+          "id": "q2-disponibilite",
+          "kind": "numeric",
+          "prompt": "Calculez la disponibilité constatée du site marchand sur l'année, en pourcentage arrondi à deux décimales.",
+          "points": 2,
+          "expected_value": 99.85,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.005
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Temps d'ouverture = 365 × 24 = 8 760 h ; indisponibilité = 6 + 4,5 + 2,5 = 13 h. Disponibilité = (8 760 − 13) ÷ 8 760 = 99,85 %. L'engagement de 99,9 % (au plus 8,76 h d'interruption par an) n'est pas tenu."
+        },
+        {
+          "id": "q3-atelier",
+          "kind": "mcq",
+          "prompt": "Dans EBIOS Risk Manager, au cours de quel atelier identifie-t-on que le prestataire de maintenance, avec ses accès à distance partagés, peut servir de chemin d'attaque vers l'ERP ?",
+          "points": 1,
+          "options": [
+            "Atelier 1 : cadrage et socle de sécurité",
+            "Atelier 2 : sources de risque",
+            "Atelier 3 : scénarios stratégiques",
+            "Atelier 5 : traitement du risque"
+          ],
+          "answer": [
+            2
+          ],
+          "multiple": false,
+          "explanation": "L'atelier 3 construit les scénarios stratégiques : les chemins d'attaque qui passent par l'écosystème (prestataires, partenaires, fournisseurs). L'atelier 1 fixe le périmètre, les valeurs métier et le socle de sécurité ; l'atelier 2 identifie les sources de risque et leurs objectifs ; l'atelier 5 décide des mesures de traitement une fois les scénarios établis."
+        },
+        {
+          "id": "q4-traitement",
+          "kind": "open",
+          "prompt": "Proposez un plan de traitement des risques hiérarchisé, compatible avec le budget, en justifiant vos priorités.",
+          "points": 5,
+          "model_answer": "Priorité 1, rançongiciel (ALE de 45 000 €, supérieure au budget annuel) : les sauvegardes actuelles sont exposées, car un disque branché en permanence sera chiffré avec le serveur ; il faut appliquer la règle 3-2-1 avec une copie hors ligne ou immuable et tester régulièrement les restaurations. Le serveur dont le système n'est plus maintenu est une vulnérabilité majeure (pas de correctifs) : migration planifiée vers une version supportée ou vers une solution hébergée, isolement réseau en attendant. Priorité 2, accès du prestataire : comptes nominatifs, authentification multifacteur, accès ouverts à la demande et journalisés, clauses de sécurité dans le contrat. Priorité 3, fraude au RIB : procédure de contre-appel sur un numéro connu avant tout changement de coordonnées bancaires, double validation des paiements, sensibilisation du service comptable au hameçonnage. Priorité 4, disponibilité du site : faire jouer les pénalités du contrat d'hébergement (99,85 % constaté contre 99,9 % promis) et étudier une redondance. Le budget de 30 000 € se justifie par comparaison avec l'ALE réduite ; le risque résiduel peut être transféré en partie par une assurance cyber. Le plan est validé par la direction et suivi dans le temps.",
+          "key_points": [
+            "Rançongiciel en priorité (ALE 45 000 €) : sauvegardes hors ligne ou immuables (3-2-1) et tests de restauration",
+            "Système obsolète : migration ou isolement (absence de correctifs, dette technique)",
+            "Prestataire : comptes nominatifs, authentification multifacteur, journalisation, clauses contractuelles",
+            "Fraude au RIB : contre-appel, double validation, sensibilisation",
+            "Arbitrage coût / baisse d'ALE, assurance cyber pour le risque résiduel, pénalités de disponibilité"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "ALE = 300 000 × 50 % × 0,3 = 45 000 € ; disponibilité = 8 747 ÷ 8 760 = 99,85 %. L'atelier 3 d'EBIOS RM traite les chemins d'attaque par l'écosystème. Le plan de traitement hiérarchise les risques selon leur niveau et le rapport coût / réduction du risque.",
+      "source_ref": "EBIOS Risk Manager (ANSSI, 2018), ateliers 1 à 5 ; ALE = SLE × ARO ; disponibilité = temps de service ÷ temps d’ouverture",
+      "estimated_seconds": 900,
+      "verified": true
+    }
+  ]
+}

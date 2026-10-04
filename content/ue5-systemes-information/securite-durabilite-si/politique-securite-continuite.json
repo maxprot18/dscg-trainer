@@ -1,0 +1,127 @@
+{
+  "exercises": [
+    {
+      "id": "ue5-secu-pssi-0001",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "politique-securite-continuite",
+      "difficulty": 1,
+      "tags": [
+        "RPO",
+        "RTO",
+        "continuité"
+      ],
+      "statement": "Lors du bilan d'impact sur l'activité, le directeur commercial indique : « Nous pouvons supporter une coupure de la prise de commandes pendant une demi-journée, mais nous ne pouvons pas perdre plus d'une heure de commandes saisies. » Quel paramètre la contrainte « pas plus d'une heure de commandes perdues » fixe-t-elle ?",
+      "options": [
+        "Le RTO (durée maximale d'interruption admissible)",
+        "Le taux de disponibilité contractuel (SLA)",
+        "Le PUE du centre de données",
+        "Le RPO (perte de données maximale admissible)"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "La perte de données maximale admissible, exprimée en temps, est le RPO (option 4) : il impose ici des sauvegardes ou une réplication au moins toutes les heures. L'option 1 correspond à l'autre contrainte (une demi-journée de coupure acceptable). L'option 2 est un engagement de service d'un prestataire, pas un besoin de continuité exprimé par le métier. L'option 3 mesure l'efficacité énergétique d'un centre de données.",
+      "source_ref": "ISO 22301 (bilan d’impact sur l’activité) ; définitions du RTO et du RPO",
+      "estimated_seconds": 45,
+      "verified": true
+    },
+    {
+      "id": "ue5-secu-pssi-0002",
+      "type": "true_false",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "politique-securite-continuite",
+      "difficulty": 1,
+      "tags": [
+        "sauvegardes",
+        "règle 3-2-1"
+      ],
+      "statement": "La règle de sauvegarde 3-2-1 consiste à conserver trois copies des données, sur deux supports différents, dont une copie hors site.",
+      "answer": true,
+      "justification": "C'est bien la définition de la règle 3-2-1 : trois copies (la donnée de production et deux sauvegardes), deux types de supports, une copie à l'extérieur du site.",
+      "explanation": "La règle 3-2-1 protège contre la panne d'un support (deux supports) et contre un sinistre sur le site (copie hors site). Face aux rançongiciels, on la complète souvent par une copie hors ligne ou immuable (que l'attaquant ne peut ni chiffrer ni effacer) et par des tests de restauration réguliers.",
+      "source_ref": "Guide d’hygiène informatique de l’ANSSI (sauvegardes) ; ISO/IEC 27002:2022 mesure 8.13 (sauvegarde des informations)",
+      "estimated_seconds": 30,
+      "verified": true
+    },
+    {
+      "id": "ue5-secu-pssi-0003",
+      "type": "numeric",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "politique-securite-continuite",
+      "difficulty": 2,
+      "tags": [
+        "RPO",
+        "sauvegardes",
+        "perte de données"
+      ],
+      "statement": "Une PME a fixé un RPO de 4 heures pour sa prise de commandes. Les sauvegardes sont lancées à 0 h, 4 h, 8 h, 12 h, 16 h et 20 h. Un jour, le serveur tombe en panne définitive à 15 h 10. En préparant la restauration, l'équipe constate que la sauvegarde de 12 h avait échoué sans alerte ; celle de 8 h est valide. Les commandes arrivent au rythme régulier de 48 par heure.\nCombien de commandes devront être ressaisies à partir des documents des clients (nombre entier) ?",
+      "expected_value": 344,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "commandes",
+      "decimals": 0,
+      "explanation": "La dernière sauvegarde valide date de 8 h : les données perdues couvrent 8 h → 15 h 10, soit 7 h 10 min = 7,1667 h. Commandes perdues = 7,1667 × 48 = 344. Retenir la sauvegarde de 12 h donnerait 3 h 10 × 48 = 152 commandes. La perte réelle (7 h 10) dépasse le RPO de 4 h : d'où la nécessité de superviser les sauvegardes et de tester les restaurations.",
+      "source_ref": "Définition du RPO ; ISO/IEC 27002:2022 mesure 8.13 (sauvegarde des informations)",
+      "estimated_seconds": 150,
+      "verified": true
+    },
+    {
+      "id": "ue5-secu-pssi-0004",
+      "type": "journal_entry",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "politique-securite-continuite",
+      "difficulty": 2,
+      "tags": [
+        "sinistre informatique",
+        "sortie d’immobilisation",
+        "indemnité d’assurance"
+      ],
+      "statement": "Le 30 septembre N, un dégât des eaux détruit un serveur acquis 48 000 € HT le 1er juillet N-2, amorti en linéaire sur 4 ans. La dotation aux amortissements de N jusqu'au 30 septembre a déjà été comptabilisée. Le même jour, l'assureur notifie son accord pour une indemnité de 15 000 €, qui sera versée en octobre.\nPassez l'écriture du 30 septembre N constatant la sortie du serveur et l'indemnité.\nConventions : comptes 2183 (matériel informatique), 2818 (amortissements), 675 (valeurs comptables des éléments d'actif cédés) ; la créance sur l'assureur est enregistrée au compte 467 et l'indemnité, qui compense la perte d'une immobilisation, au compte 7788 (produits exceptionnels divers).",
+      "date": "30/09/N",
+      "entries": [
+        {
+          "account": "2818",
+          "label": "Amortissements cumulés du serveur",
+          "debit": 27000,
+          "credit": 0
+        },
+        {
+          "account": "675",
+          "label": "Valeur nette comptable du serveur détruit",
+          "debit": 21000,
+          "credit": 0
+        },
+        {
+          "account": "2183",
+          "label": "Sortie du serveur",
+          "debit": 0,
+          "credit": 48000
+        },
+        {
+          "account": "467",
+          "label": "Créance sur l’assureur",
+          "debit": 15000,
+          "credit": 0
+        },
+        {
+          "account": "7788",
+          "label": "Indemnité d’assurance",
+          "debit": 0,
+          "credit": 15000
+        }
+      ],
+      "explanation": "Amortissements cumulés du 1er juillet N-2 au 30 septembre N : 27 mois, soit 48 000 × 27 ÷ 48 = 27 000 € ; VNC = 21 000 €. Le serveur détruit sort de l'actif comme une cession : on solde 2183 et 2818 et la VNC passe en charge (675). L'indemnité est acquise dès l'accord de l'assureur : créance (467) et produit (7788). Perte nette du sinistre = 21 000 − 15 000 = 6 000 €. Une indemnité couvrant des charges d'exploitation (frais de reconstitution des données, location d'un matériel de secours) relèverait d'un autre classement, d'où la convention imposée ; les comptes de transferts de charges (79) ayant été supprimés par le règl. ANC 2022-06, l'indemnité est enregistrée directement en produit.",
+      "source_ref": "PCG (règl. ANC 2014-03) : comptes 2183, 2818, 675, 467, 7788 ; sortie d’une immobilisation détruite",
+      "estimated_seconds": 240,
+      "verified": true
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "exercises": [
+    {
+      "id": "ue5-secu-greenit-0001",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "numerique-responsable-green-it",
+      "difficulty": 1,
+      "tags": [
+        "empreinte carbone",
+        "terminaux",
+        "fabrication"
+      ],
+      "statement": "D'après l'étude de l'ADEME et de l'Arcep publiée en 2022 (données 2020), quelle source pèse le plus dans l'empreinte carbone du numérique en France ?",
+      "options": [
+        "La consommation électrique des centres de données",
+        "La fabrication des terminaux (ordinateurs, écrans, smartphones, téléviseurs)",
+        "La consommation électrique des réseaux de télécommunication",
+        "L'envoi de courriels avec pièces jointes"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "En France, l'électricité étant peu carbonée, l'essentiel de l'empreinte carbone du numérique provient des terminaux, et surtout de leur fabrication (option 2). Les centres de données (option 1) et les réseaux (option 3) pèsent nettement moins dans cette étude ; une actualisation ultérieure, qui intègre les centres de données situés à l'étranger utilisés par les Français, relève la part de ces derniers. L'option 4 est un usage parmi d'autres, dont le poids est faible comparé à la fabrication des équipements : d'où la priorité donnée à l'allongement de la durée de vie.",
+      "source_ref": "Études ADEME-Arcep sur l’empreinte environnementale du numérique en France ; loi n° 2021-1485 du 15 novembre 2021 (REEN)",
+      "estimated_seconds": 45,
+      "verified": true
+    },
+    {
+      "id": "ue5-secu-greenit-0002",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "numerique-responsable-green-it",
+      "difficulty": 2,
+      "tags": [
+        "PUE",
+        "centre de données"
+      ],
+      "statement": "Un centre de données consomme 3 000 MWh par an au total, dont 2 000 MWh pour les serveurs, le stockage et le réseau. Quel est son indicateur d'efficacité énergétique (PUE) ?",
+      "options": [
+        "1,5",
+        "0,67",
+        "2",
+        "0,5"
+      ],
+      "answer": [
+        0
+      ],
+      "multiple": false,
+      "explanation": "PUE = énergie totale du site ÷ énergie des équipements informatiques = 3 000 ÷ 2 000 = 1,5 (option 1) : l'infrastructure (refroidissement, onduleurs, éclairage) consomme 0,5 kWh pour 1 kWh informatique. L'option 2 inverse le rapport (un PUE est toujours supérieur ou égal à 1). L'option 3 rapporte l'énergie informatique à celle de l'infrastructure (2 000 ÷ 1 000), ce qui ne correspond pas à la définition. L'option 4 est la part de l'infrastructure rapportée à l'énergie informatique (1 000 ÷ 2 000), soit PUE − 1.",
+      "source_ref": "Indicateur PUE (Power Usage Effectiveness), ISO/IEC 30134-2",
+      "estimated_seconds": 60,
+      "verified": true
+    },
+    {
+      "id": "ue5-secu-greenit-0003",
+      "type": "numeric",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "numerique-responsable-green-it",
+      "difficulty": 2,
+      "tags": [
+        "empreinte carbone",
+        "durée de vie",
+        "parc informatique"
+      ],
+      "statement": "Une entreprise dispose de 200 ordinateurs portables. Hypothèses par appareil : émissions de fabrication 250 kg CO₂e ; consommation 40 kWh par an ; facteur d'émission de l'électricité 0,05 kg CO₂e par kWh. La fabrication est répartie linéairement sur la durée de vie.\nLa DSI envisage de porter la durée de vie de 4 à 6 ans. Calculez la baisse annuelle de l'empreinte carbone du parc, en kg CO₂e (arrondi à l'unité).",
+      "expected_value": 4167,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "unit": "kg CO₂e",
+      "decimals": 0,
+      "explanation": "Empreinte annuelle par portable = fabrication ÷ durée de vie + 40 × 0,05. Sur 4 ans : 62,5 + 2 = 64,5 kg ; parc = 12 900 kg. Sur 6 ans : 41,67 + 2 = 43,67 kg ; parc = 8 733 kg. Baisse = 12 900 − 8 733 = 4 167 kg CO₂e par an (−32 %). La consommation électrique (400 kg pour le parc) ne pèse presque rien face à la fabrication, ce qui illustre la priorité de l'allongement de la durée de vie.",
+      "source_ref": "Méthode d’empreinte : fabrication amortie sur la durée de vie + usage × facteur d’émission (bilan GES, scopes 2 et 3)",
+      "estimated_seconds": 180,
+      "verified": true
+    },
+    {
+      "id": "ue5-secu-greenit-0004",
+      "type": "case_study",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "numerique-responsable-green-it",
+      "difficulty": 3,
+      "tags": [
+        "PUE",
+        "sobriété numérique",
+        "durée de vie",
+        "stratégie numérique responsable"
+      ],
+      "title": "Groupe Ternoise : construire une stratégie numérique responsable",
+      "context": "Le groupe Ternoise (2 000 salariés, services aux entreprises) publie un rapport de durabilité et veut réduire l'empreinte de son système d'information.\n\nSituation actuelle :\n- un centre de données interne dont les équipements informatiques consomment en moyenne 120 kW en continu (365 jours, 24 h sur 24) ; PUE mesuré : 1,8 ;\n- un hébergeur propose une salle de PUE 1,3 pour les mêmes équipements ;\n- 1 500 ordinateurs portables renouvelés systématiquement tous les 3 ans, et 900 écrans ;\n- de nombreux collaborateurs disposent de deux téléphones (personnel et professionnel) ;\n- les applications internes, développées depuis 15 ans, s'alourdissent à chaque version et ralentissent les postes les plus anciens ;\n- le matériel remplacé est aujourd'hui jeté dans la filière de déchets électriques sans effacement certifié des données.\n\nLa direction demande des chiffres et des priorités d'action.",
+      "sub_questions": [
+        {
+          "id": "q1-energie",
+          "kind": "numeric",
+          "prompt": "Calculez la consommation annuelle totale d'électricité du centre de données interne (en kWh).",
+          "points": 2,
+          "expected_value": 1892160,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "kWh",
+          "decimals": 0,
+          "explanation": "Énergie informatique = 120 kW × 8 760 h = 1 051 200 kWh ; énergie totale = 1 051 200 × 1,8 = 1 892 160 kWh."
+        },
+        {
+          "id": "q2-economie",
+          "kind": "numeric",
+          "prompt": "Calculez l'économie annuelle d'électricité permise par le transfert chez l'hébergeur (en kWh).",
+          "points": 2,
+          "expected_value": 525600,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "kWh",
+          "decimals": 0,
+          "explanation": "Chez l'hébergeur : 1 051 200 × 1,3 = 1 366 560 kWh. Économie = 1 892 160 − 1 366 560 = 525 600 kWh, soit 1 051 200 × (1,8 − 1,3)."
+        },
+        {
+          "id": "q3-levier",
+          "kind": "mcq",
+          "prompt": "Pour réduire l'empreinte carbone du parc de terminaux, quel levier est en principe le plus efficace en France ?",
+          "points": 1,
+          "options": [
+            "Remplacer les portables tous les 3 ans par des modèles plus économes en électricité",
+            "Allonger la durée d'utilisation des portables et des écrans, avec maintenance et reconditionnement",
+            "Imposer l'arrêt des écrans pendant la pause déjeuner",
+            "Supprimer les pièces jointes des courriels internes"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "La fabrication concentre l'essentiel de l'empreinte des terminaux : allonger leur durée de vie réduit directement les émissions amorties chaque année. Renouveler pour gagner en consommation électrique est contre-productif en France, où l'électricité est peu carbonée. Les deux autres gestes réduisent un peu la consommation mais ont un effet limité."
+        },
+        {
+          "id": "q4-strategie",
+          "kind": "open",
+          "prompt": "Proposez une stratégie numérique responsable hiérarchisée pour le groupe, en tenant compte de la sécurité et du pilotage.",
+          "points": 5,
+          "model_answer": "Priorité 1, terminaux : allonger le cycle de renouvellement de 3 à 5 ou 6 ans (garanties étendues, réparation, remplacement des batteries), acheter du matériel réparable ou reconditionné, ajuster le parc aux besoins réels, proposer un téléphone unique à double usage lorsque c'est compatible avec la sécurité. Priorité 2, logiciels : écoconception des applications internes (fonctionnalités utiles, allègement, compatibilité avec le matériel ancien) pour lutter contre l'obsolescence logicielle et réduire la dette technique. Priorité 3, centre de données : transfert chez l'hébergeur (525 600 kWh économisés par an) ou amélioration du refroidissement, après vérification de la sécurité, de la réversibilité et de la localisation des données ; consolidation et virtualisation des serveurs. Priorité 4, fin de vie : réemploi ou don des équipements après effacement certifié des données (exigence de confidentialité), recyclage par une filière agréée des déchets électriques et électroniques. Pilotage : bilan des émissions du SI (fabrication en scope 3, électricité en scope 2) intégré au rapport de durabilité, objectifs chiffrés et indicateurs (durée de vie moyenne, PUE, taux de réemploi), sensibilisation des collaborateurs à la sobriété numérique, critères environnementaux dans les achats.",
+          "key_points": [
+            "Priorité à l'allongement de la durée de vie des terminaux et au dimensionnement du parc",
+            "Écoconception des applications contre l'obsolescence logicielle et la dette technique",
+            "Centre de données : PUE, hébergeur (525 600 kWh) sous conditions de sécurité et de réversibilité",
+            "Fin de vie : réemploi après effacement certifié des données, filière DEEE",
+            "Pilotage : mesure en scopes 2 et 3, indicateurs, achats responsables, sensibilisation"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Énergie interne = 120 × 8 760 × 1,8 = 1 892 160 kWh ; économie chez l'hébergeur = 120 × 8 760 × 0,5 = 525 600 kWh. Le levier principal reste l'allongement de la durée de vie des terminaux, complété par l'écoconception, l'efficacité des centres de données et une fin de vie maîtrisée.",
+      "source_ref": "Loi n° 2021-1485 du 15 novembre 2021 (REEN) ; loi n° 2020-105 du 10 février 2020 (AGEC) ; indicateur PUE (ISO/IEC 30134-2) ; études ADEME-Arcep",
+      "estimated_seconds": 900,
+      "verified": true
+    }
+  ]
+}
