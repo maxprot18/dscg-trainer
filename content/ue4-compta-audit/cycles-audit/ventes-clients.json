@@ -40,6 +40,827 @@
       "source_ref": "NEP 240 (fraude, présomption de risque sur les produits), NEP 330 (réponses aux risques), NEP 505 (confirmations externes)",
       "verified": true,
       "estimated_seconds": 420
+    },
+    {
+      "id": "ue4-audit-ventes-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "réalité",
+        "chiffre d’affaires"
+      ],
+      "statement": "L’auditeur sélectionne des factures dans le journal des ventes et vérifie pour chacune l’existence d’un bon de livraison signé par le client. Quelle assertion ce test vise-t-il principalement ?",
+      "options": [
+        "Exhaustivité des ventes",
+        "Réalité des ventes",
+        "Classification des ventes",
+        "Évaluation des créances clients"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Partir de la comptabilité (factures enregistrées) pour remonter à la preuve de livraison permet de vérifier que chaque vente comptabilisée correspond à une livraison effective : c’est la réalité. L’exhaustivité se teste dans l’autre sens, en partant des bons de livraison pour vérifier qu’ils ont été facturés. La classification porte sur l’imputation au bon compte, que ce test n’examine pas. L’évaluation des créances concerne leur recouvrabilité (dépréciation), non l’existence d’une livraison.",
+      "source_ref": "NEP 500 (assertions relatives aux catégories d’opérations : réalité, exhaustivité)",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-audit-ventes-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "confirmation",
+        "créances"
+      ],
+      "statement": "Quelle assertion relative au solde des créances clients une demande de confirmation directe adressée aux clients permet-elle principalement de vérifier ?",
+      "options": [
+        "L’exhaustivité des créances",
+        "L’évaluation des créances",
+        "La séparation des exercices du chiffre d’affaires",
+        "L’existence des créances"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "En confirmant le solde qu’il doit, le client atteste que la créance existe à la clôture : la confirmation est la procédure de référence pour l’existence. Elle ne prouve pas l’exhaustivité, car les clients sont sélectionnés dans la balance (une créance non enregistrée ne peut pas être confirmée). Un client peut reconnaître sa dette sans être en mesure de la payer : l’évaluation se vérifie par la balance âgée et les règlements postérieurs. Une réponse peut révéler un problème de séparation, mais ce n’est pas l’objectif principal de la procédure.",
+      "source_ref": "NEP 500 (assertions relatives aux soldes) ; NEP 505 (confirmations externes)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-audit-ventes-0004",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-assertions",
+      "difficulty": 2,
+      "tags": [
+        "assertions",
+        "exhaustivité",
+        "sens des tests"
+      ],
+      "statement": "Pour tester l’exhaustivité du chiffre d’affaires d’une société industrielle, quel point de départ l’auditeur doit-il retenir pour sélectionner son échantillon ?",
+      "options": [
+        "Les écritures du compte 706 au grand livre",
+        "Les soldes de la balance auxiliaire clients au 31/12",
+        "Les bons de livraison prénumérotés émis sur l’exercice",
+        "Les factures enregistrées au journal des ventes"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Pour vérifier que toutes les livraisons ont été facturées et comptabilisées, il faut partir d’une population indépendante de la comptabilité et réputée complète : les bons de livraison prénumérotés, dont on suit ensuite la facture et l’écriture. Partir du grand livre, du journal des ventes ou de la balance clients revient à tester des opérations déjà enregistrées : on ne peut pas y trouver une vente omise, ces sélections servent à tester la réalité ou l’existence.",
+      "source_ref": "NEP 500 (assertion d’exhaustivité) ; NEP 330 (conception des procédures substantives)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-ventes-0005",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "confirmation",
+        "exhaustivité"
+      ],
+      "statement": "Les demandes de confirmation de solde adressées aux clients sont la procédure la plus adaptée pour vérifier l’exhaustivité du chiffre d’affaires.",
+      "answer": false,
+      "justification": "Faux : la confirmation part des soldes enregistrés et vérifie surtout l’existence des créances ; l’exhaustivité se teste à partir des bons de livraison.",
+      "explanation": "Les clients interrogés sont tirés de la balance clients : une vente jamais facturée n’y figure pas et échappe donc à la confirmation. Pour l’exhaustivité, l’auditeur part de pièces indépendantes de la facturation (bons de livraison prénumérotés, sorties de stock) et vérifie qu’elles ont donné lieu à facture et comptabilisation. La confirmation reste la procédure de référence pour l’existence des créances.",
+      "source_ref": "NEP 500 (assertions) ; NEP 505 (confirmations externes)",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue4-audit-ventes-0006",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "créances",
+        "soldes"
+      ],
+      "front": "Quelles sont les assertions relatives au solde des créances clients, et quelle procédure type pour chacune ?",
+      "back": "Existence : confirmation directe des soldes.\nDroits et obligations : examen des contrats d’affacturage et des cessions Dailly.\nExhaustivité : rapprochement auxiliaire / collectif, factures à établir (418) à partir des livraisons non facturées.\nÉvaluation et imputation : balance âgée, règlements postérieurs, dépréciations, conversion des créances en devises.",
+      "explanation": "NEP 500 : assertions sur les soldes de fin de période. La confirmation couvre l’existence mais ni l’exhaustivité ni l’évaluation ; chaque assertion appelle une procédure adaptée.",
+      "source_ref": "NEP 500 (assertions relatives aux soldes des comptes en fin de période)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-ventes-0007",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-risques",
+      "difficulty": 1,
+      "tags": [
+        "risques",
+        "évaluation",
+        "DSO"
+      ],
+      "statement": "Quel élément constitue l’indicateur le plus direct d’un risque de surévaluation des créances clients ?",
+      "options": [
+        "Une augmentation du nombre de jours de stock",
+        "Une hausse de la masse salariale du service commercial",
+        "Un allongement du délai moyen de recouvrement et une hausse des créances échues depuis plus de 90 jours",
+        "Une baisse des taux d’intérêt bancaires sur l’exercice"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Un délai de recouvrement qui s’allonge et des créances anciennes en hausse signalent des difficultés d’encaissement : le risque porte sur l’évaluation (dépréciations insuffisantes). L’augmentation des jours de stock relève du cycle stocks. La masse salariale commerciale n’informe pas sur la recouvrabilité des créances. La baisse des taux d’intérêt n’a pas de lien direct avec la valeur des créances clients.",
+      "source_ref": "NEP 315 (procédures analytiques en phase d’évaluation des risques)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-audit-ventes-0008",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "remises de fin d’année",
+        "exhaustivité"
+      ],
+      "statement": "Une société de grande consommation consent à ses distributeurs des ristournes de fin d’année calculées sur le chiffre d’affaires annuel, négociées client par client. Les deux derniers audits ont relevé des ristournes acquises mais non comptabilisées. Quelle assertion présente le risque le plus élevé ?",
+      "options": [
+        "L’existence des créances clients",
+        "Les droits et obligations sur les créances clients",
+        "La classification du chiffre d’affaires entre ventes de produits et de marchandises",
+        "L’exhaustivité des avoirs à établir (compte 4198) et donc la mesure du chiffre d’affaires net"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Les ristournes acquises à la clôture doivent être constatées en avoirs à établir (4198) en réduction du chiffre d’affaires (709). Leur oubli, déjà constaté par le passé, sous-évalue un passif et surévalue le chiffre d’affaires net : le risque porte sur l’exhaustivité de ce passif et la mesure du CA. L’existence des créances n’est pas en cause (les factures sont réelles). Les droits concernent les créances cédées. La classification entre produits et marchandises n’est pas évoquée par les faits.",
+      "source_ref": "NEP 315 (risques au niveau des assertions) ; PCG compte 4198 et compte 709",
+      "verified": true,
+      "estimated_seconds": 70
+    },
+    {
+      "id": "ue4-audit-ventes-0009",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "fraude",
+        "NEP 240"
+      ],
+      "statement": "Selon la NEP 240, le commissaire aux comptes présume l’existence de risques de fraude dans la comptabilisation des produits ; s’il écarte cette présomption, il en justifie les raisons dans son dossier.",
+      "answer": true,
+      "justification": "Vrai : la présomption de risque de fraude sur les produits est posée par la NEP 240 ; elle est réfutable, mais la réfutation doit être documentée.",
+      "explanation": "La comptabilisation des produits est une zone privilégiée de fraude (ventes fictives, anticipation du chiffre d’affaires). La NEP 240 impose donc de présumer ce risque. Le CAC peut l’écarter dans des cas particuliers (par exemple une source de revenus unique, simple et entièrement prévisible), à condition d’en justifier les raisons dans son dossier.",
+      "source_ref": "NEP 240 (prise en considération de la possibilité de fraudes : présomption de risque sur les produits)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-audit-ventes-0010",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "procédures analytiques",
+        "chiffre d’affaires"
+      ],
+      "statement": "En phase de planification, l’auditeur de la société Zeta construit une attente de chiffre d’affaires. Le CA HT de N−1 s’élève à 4 000 000 €. La direction indique une hausse moyenne des prix de vente de 3 % et une baisse des volumes vendus de 2 % sur N. Le CA HT comptabilisé en N s’élève à 4 420 000 €. Calculez l’écart non expliqué entre le CA comptabilisé et le CA attendu (en euros, arrondi à l’euro).",
+      "expected_value": 382400,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "CA attendu = 4 000 000 × 1,03 × 0,98 = 4 037 600 €. Écart non expliqué = 4 420 000 − 4 037 600 = 382 400 €. Les effets prix et volume se combinent de façon multiplicative ; additionner les variations (+3 % − 2 % = +1 %) donnerait 4 040 000 € et un écart de 380 000 €, ce qui est inexact. Un écart de près de 10 % du CA, non expliqué, signale un risque sur la réalité et la séparation des exercices des ventes, à investiguer.",
+      "source_ref": "NEP 315 (procédures analytiques mises en œuvre pour évaluer le risque) ; NEP 520",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue4-audit-ventes-0011",
+      "type": "audit_case",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-risques",
+      "difficulty": 3,
+      "tags": [
+        "risques",
+        "dépréciation des créances",
+        "balance âgée"
+      ],
+      "title": "Dérive du recouvrement chez un équipementier",
+      "cycle": "ventes-clients",
+      "situation": "Vous auditez les comptes au 31/12/N d’Epsilon SAS, équipementier industriel. Le seuil de signification est fixé à 180 000 €. Le chiffre d’affaires est stable (18 M€ HT). Le délai moyen de recouvrement passe de 48 jours en N−1 à 75 jours en N. Les créances échues depuis plus de 180 jours atteignent 640 000 € contre 120 000 € un an plus tôt, dont 410 000 € sur un seul client, Omega. La direction affirme qu’Omega paiera et n’a constaté aucune dépréciation sur ce client. Depuis une réorganisation en mars N, le directeur commercial peut relever les plafonds d’encours sans validation du responsable crédit.",
+      "assertions": [
+        "Évaluation et imputation",
+        "Existence"
+      ],
+      "procedures": {
+        "options": [
+          "Analyser la balance âgée au 31/12/N et rapprocher les créances échues des règlements reçus après la clôture",
+          "Obtenir des éléments probants sur la solvabilité d’Omega (confirmation du solde, informations financières récentes, échéancier ou correspondance avec le client) et apprécier de façon critique la position de la direction",
+          "Examiner les relèvements de plafonds d’encours décidés par le directeur commercial depuis mars N et les créances des clients concernés",
+          "Assister à l’inventaire physique des stocks de produits finis",
+          "Vérifier le calcul des dotations aux amortissements des machines",
+          "Tester l’exhaustivité des dettes fournisseurs par l’examen des factures reçues en janvier N+1"
+        ],
+        "answer": [
+          0,
+          1,
+          2
+        ]
+      },
+      "risk": {
+        "options": [
+          "Faible",
+          "Modéré",
+          "Élevé"
+        ],
+        "answer": 2,
+        "rationale": "Les faits cumulent plusieurs signaux : allongement du délai de recouvrement de 48 à 75 jours à chiffre d’affaires constant, créances échues à plus de 180 jours multipliées par plus de cinq, et une créance douteuse de 410 000 € non dépréciée qui dépasse à elle seule le seuil de signification de 180 000 €. La faiblesse de contrôle interne (plafonds relevés sans validation du responsable crédit) augmente le risque de contrôle. Le risque d’anomalie significative sur l’évaluation des créances est élevé."
+      },
+      "conclusion": {
+        "model_answer": "Au terme des procédures (analyse de la balance âgée et des règlements postérieurs, éléments sur la solvabilité d’Omega, revue des relèvements d’encours), nous concluons sur le caractère suffisant des dépréciations des créances clients. Si les éléments collectés montrent que le recouvrement de la créance Omega est compromis, nous demandons à la direction de constater la dépréciation correspondante ; à défaut, l’anomalie, qui pourrait dépasser le seuil de signification, est appréciée pour son incidence sur l’opinion. La faiblesse relative aux plafonds d’encours est communiquée à la direction.",
+        "key_points": [
+          "Rattacher la conclusion à l’assertion d’évaluation des créances et aux procédures mises en œuvre",
+          "Comparer l’anomalie potentielle sur Omega (410 000 € de créances échues) au seuil de signification de 180 000 €",
+          "Demander la correction à la direction et, en cas de refus, en apprécier l’incidence sur l’opinion",
+          "Communiquer la faiblesse de contrôle interne sur les plafonds d’encours"
+        ]
+      },
+      "points": 10,
+      "explanation": "Le risque porte avant tout sur l’évaluation : les créances anciennes progressent fortement et une créance majeure n’est pas dépréciée malgré son ancienneté. Les procédures pertinentes visent la recouvrabilité (balance âgée et règlements postérieurs, solvabilité d’Omega, encours accordés hors procédure). L’inventaire des stocks, les amortissements et les dettes fournisseurs relèvent d’autres cycles. La NEP 330 impose une réponse adaptée à un risque élevé ; l’auditeur ne peut pas se contenter de l’affirmation de la direction sur le paiement futur d’Omega.",
+      "source_ref": "NEP 315 (évaluation du risque) ; NEP 330 (réponses au risque) ; PCG compte 491 (dépréciation des comptes clients)",
+      "verified": true,
+      "estimated_seconds": 600
+    },
+    {
+      "id": "ue4-audit-ventes-0012",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-controles-cles",
+      "difficulty": 1,
+      "tags": [
+        "contrôles clés",
+        "séparation des tâches"
+      ],
+      "statement": "Dans le cycle ventes-clients, quel cumul de fonctions par une même personne crée le risque le plus important de détournement non détecté ?",
+      "options": [
+        "Enregistrer les encaissements clients, tenir les comptes clients et établir les avoirs",
+        "Saisir les commandes clients et préparer les bons de livraison",
+        "Établir les factures et les classer par numéro",
+        "Relancer les clients en retard et transmettre les litiges au service commercial"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Une personne qui encaisse, tient les comptes clients et peut émettre des avoirs peut détourner un règlement puis solder la créance par un avoir fictif sans que l’anomalie apparaisse : c’est l’incompatibilité majeure du cycle. Saisir les commandes et préparer les livraisons relève de l’administration des ventes, sans accès aux fonds. Établir et classer les factures, ou relancer les clients, ne donne pas la possibilité de détourner des encaissements et de les masquer.",
+      "source_ref": "NEP 315 (compréhension du contrôle interne : séparation des fonctions)",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-audit-ventes-0013",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "contrôles clés",
+        "mesure",
+        "tarifs"
+      ],
+      "statement": "Parmi les contrôles suivants, lesquels répondent au risque de facturation à un prix erroné (assertion de mesure des ventes) ? Plusieurs réponses possibles.",
+      "options": [
+        "Prénumérotation des bons de livraison et contrôle de la séquence",
+        "Accès au fichier des tarifs limité à un responsable, chaque modification étant validée et tracée",
+        "Envoi par l’auditeur de demandes de confirmation de solde aux clients",
+        "Blocage automatique des factures comportant une remise supérieure au barème autorisé, sauf validation d’un responsable"
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "multiple": true,
+      "explanation": "La protection du fichier des tarifs et le blocage des remises hors barème garantissent que les factures sont établies au bon prix : ils couvrent la mesure. La prénumérotation des bons de livraison vise l’exhaustivité de la facturation. La confirmation de solde n’est pas un contrôle interne de l’entité mais une procédure substantive de l’auditeur, orientée vers l’existence des créances.",
+      "source_ref": "NEP 315 (activités de contrôle) ; NEP 500 (assertion de mesure)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-audit-ventes-0014",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-controles-cles",
+      "difficulty": 1,
+      "tags": [
+        "contrôles clés",
+        "exhaustivité",
+        "bons de livraison"
+      ],
+      "statement": "Le rapprochement systématique des bons de livraison prénumérotés avec les factures émises est un contrôle qui vise principalement l’exhaustivité de la facturation.",
+      "answer": true,
+      "justification": "Vrai : en vérifiant que chaque bon de livraison de la séquence a donné lieu à une facture, ce contrôle détecte les livraisons non facturées.",
+      "explanation": "La prénumérotation permet de s’assurer qu’aucun bon de livraison n’a été perdu ; le rapprochement avec les factures garantit que toute livraison est facturée. Réalisé autour de la clôture en comparant les dates, il contribue aussi à la séparation des exercices. Il ne garantit pas, en revanche, que le prix facturé est correct (mesure).",
+      "source_ref": "NEP 315 (activités de contrôle) ; NEP 500 (assertion d’exhaustivité)",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue4-audit-ventes-0015",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "contrôles clés",
+        "test de procédures",
+        "échantillonnage"
+      ],
+      "statement": "L’auditeur veut tester l’efficacité du contrôle « validation du plafond d’encours avant acceptation de la commande ». Il retient un niveau de confiance de 95 % (facteur de confiance 3), un taux d’écart tolérable de 4 % et n’anticipe aucun écart. Selon l’approximation n = facteur de confiance / taux d’écart tolérable, quelle est la taille de l’échantillon de commandes à tester ?",
+      "expected_value": 75,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "commandes",
+      "decimals": 0,
+      "explanation": "n = 3 / 0,04 = 75 commandes. Avec un niveau de confiance de 90 % (facteur 2,3), on obtiendrait environ 58 commandes : la taille de l’échantillon augmente avec le niveau de confiance et diminue quand le taux d’écart tolérable augmente. Cette formule est une approximation statistique (loi de Poisson) utilisée en pratique : la NEP 530 ne prescrit aucune formule, elle exige seulement une taille suffisante pour ramener le risque d’échantillonnage à un niveau acceptable. Si des écarts sont constatés, l’auditeur apprécie s’ils remettent en cause l’appui sur le contrôle (NEP 330).",
+      "source_ref": "NEP 330 (tests de procédures) ; NEP 530 (sondages en audit)",
+      "verified": true,
+      "estimated_seconds": 120
+    },
+    {
+      "id": "ue4-audit-ventes-0016",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "contrôles clés",
+        "cycle"
+      ],
+      "front": "Citez un contrôle clé pour chaque étape du cycle ventes-clients, de la commande au recouvrement.",
+      "back": "Commande : plafond d’encours fixé et validé par une fonction crédit indépendante.\nLivraison : bons de livraison prénumérotés signés par le client.\nFacturation : rapprochement BL / factures, tarifs protégés, remises contrôlées.\nComptabilisation : rapprochement auxiliaire clients / compte 411.\nRecouvrement : séparation encaissement / tenue des comptes / avoirs, avoirs autorisés, revue de la balance âgée et relances.",
+      "explanation": "Compréhension du contrôle interne (NEP 315). Chaque contrôle couvre une assertion : BL prénumérotés et rapprochement → exhaustivité ; tarifs protégés → mesure ; plafond d’encours et balance âgée → évaluation.",
+      "source_ref": "NEP 315 (compréhension du contrôle interne) ; NEP 330",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-audit-ventes-0017",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "confirmation négative"
+      ],
+      "statement": "Dans quelle situation le recours à des demandes de confirmation négatives (réponse attendue seulement en cas de désaccord) est-il le plus adapté ?",
+      "options": [
+        "Une dizaine de clients grands comptes représentant 80 % des créances, avec un risque élevé sur l’existence",
+        "Un client unique en litige dont le solde est contesté",
+        "Plusieurs milliers de particuliers aux soldes faibles et homogènes, un risque évalué faible et un contrôle interne jugé efficace",
+        "Des clients étrangers nouveaux pour lesquels l’auditeur soupçonne des ventes fictives"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "La confirmation négative fournit des éléments moins probants : l’absence de réponse ne prouve pas l’accord. Elle n’est envisageable que si le risque est évalué faible avec un contrôle interne efficace, sur une population nombreuse de petits soldes homogènes, avec un faible taux d’écarts attendu et sans raison de penser que les destinataires négligeront la demande. Pour des grands comptes à risque élevé, un client en litige ou un soupçon de ventes fictives, il faut des confirmations positives et, le cas échéant, des procédures complémentaires.",
+      "source_ref": "NEP 505 (confirmations externes : demandes négatives)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-ventes-0018",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "confirmation",
+        "refus de la direction"
+      ],
+      "statement": "La direction refuse que l’auditeur adresse une demande de confirmation à son principal client, invoquant un litige commercial en cours. Quelle est la démarche appropriée ?",
+      "options": [
+        "Accepter le refus sans autre diligence, la direction étant seule juge de ses relations commerciales",
+        "Envoyer malgré tout la demande au client, le CAC n’ayant pas besoin de l’accord de la direction",
+        "Apprécier le bien-fondé et la vraisemblance des motifs, en tenir compte dans l’évaluation du risque de fraude, puis mettre en œuvre des procédures alternatives",
+        "Refuser immédiatement de certifier les comptes"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Face à un refus, le CAC cherche à comprendre les motifs, apprécie s’ils sont fondés et vraisemblables et en tire les conséquences sur son évaluation des risques, notamment de fraude. Il collecte ensuite d’autres éléments (encaissements postérieurs, factures, bons de livraison, pièces du litige). Accepter sans diligence prive l’audit d’un élément probant. Passer outre le refus n’est pas la démarche prévue. Si le refus paraît injustifié ou si les procédures alternatives ne suffisent pas, le CAC en informe les organes de gouvernance et en tire les conséquences dans son rapport (réserve, voire impossibilité de certifier) : ce n’est qu’un dernier ressort.",
+      "source_ref": "NEP 505 (refus de la direction de laisser adresser une demande de confirmation)",
+      "verified": true,
+      "estimated_seconds": 70
+    },
+    {
+      "id": "ue4-audit-ventes-0019",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-procedures-substantives",
+      "difficulty": 1,
+      "tags": [
+        "procédures substantives",
+        "procédures analytiques",
+        "DSO"
+      ],
+      "statement": "Au 31/12/N, les créances clients de la société Kappa s’élèvent à 1 080 000 € TTC. Le chiffre d’affaires de l’exercice est de 5 400 000 € HT, entièrement soumis à la TVA au taux de 20 %. Calculez le délai moyen de recouvrement des créances clients, sur une base de 360 jours (en jours, arrondi à l’unité).",
+      "expected_value": 60,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "jours",
+      "decimals": 0,
+      "explanation": "CA TTC = 5 400 000 × 1,20 = 6 480 000 €. DSO = 1 080 000 / 6 480 000 × 360 = 60 jours. Rapporter des créances TTC à un CA HT donnerait 72 jours, ce qui surestime le délai : il faut comparer des grandeurs homogènes. L’auditeur compare ensuite ce délai à celui de N−1 et aux conditions de paiement accordées.",
+      "source_ref": "NEP 520 (procédures analytiques) ; PCG compte 411",
+      "verified": true,
+      "estimated_seconds": 120
+    },
+    {
+      "id": "ue4-audit-ventes-0020",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "dépréciation",
+        "ajustement proposé"
+      ],
+      "statement": "Lors de l’analyse de la balance âgée de la société Lambda au 31/12/N, l’auditeur relève une créance de 24 000 € TTC (TVA 20 %) sur un client placé en procédure collective en décembre N. Aucune écriture n’a été passée. Le mandataire estime que 40 % de la créance sera recouvré. Passez l’écriture d’ajustement proposée par l’auditeur au 31/12/N : transfert en clients douteux et dépréciation (utilisez les comptes 416, 491 et 6817).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "416",
+          "label": "Clients douteux ou litigieux",
+          "debit": 24000,
+          "credit": 0
+        },
+        {
+          "account": "6817",
+          "label": "Dotations aux dépréciations des actifs circulants",
+          "debit": 12000,
+          "credit": 0
+        },
+        {
+          "account": "411",
+          "label": "Clients",
+          "debit": 0,
+          "credit": 24000
+        },
+        {
+          "account": "491",
+          "label": "Dépréciations des comptes de clients",
+          "debit": 0,
+          "credit": 12000
+        }
+      ],
+      "explanation": "La créance est d’abord transférée de 411 à 416 pour son montant TTC (24 000 €). La dépréciation se calcule sur le montant HT, la TVA collectée étant récupérable en cas de perte définitive : 24 000 / 1,20 = 20 000 € HT ; perte estimée 60 % ; dépréciation = 20 000 × 60 % = 12 000 €. Déprécier sur le TTC (14 400 €) surestimerait la charge.",
+      "source_ref": "PCG comptes 416, 491 et 6817 ; NEP 330 (procédures substantives sur l’évaluation)",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue4-audit-ventes-0021",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-procedures-substantives",
+      "difficulty": 3,
+      "tags": [
+        "procédures substantives",
+        "confirmations",
+        "séparation des exercices",
+        "dépréciation"
+      ],
+      "title": "Exploitation des confirmations clients chez Gamma",
+      "context": "Vous auditez les comptes au 31/12/N de la SA Gamma, grossiste en fournitures industrielles (TVA 20 %).\nSeuil de signification : 50 000 € ; seuil des anomalies manifestement insignifiantes : 2 500 €.\nVous avez envoyé vous-même des demandes de confirmation positives ; les réponses sont revenues directement au cabinet.\n- Client A : solde 84 000 € TTC, réponse conforme.\n- Client B : solde 36 000 €, réponse 24 000 €. L’écart correspond à un virement de 12 000 € émis par B le 29/12/N et crédité sur le compte bancaire de Gamma le 03/01/N+1.\n- Client C : solde 62 400 €, réponse 48 000 €. L’écart correspond à une facture de 14 400 € TTC datée du 30/12/N ; le bon de livraison signé est daté du 04/01/N+1. Les marchandises figuraient dans l’inventaire physique de Gamma au 31/12/N.\n- Client D : solde 18 000 €, aucune réponse malgré une relance.\n- Client E : solde 30 000 € TTC, non déprécié. Ses retards de paiement sont apparus en novembre N et un redressement judiciaire a été ouvert le 15/01/N+1, avant l’arrêté des comptes. L’administrateur estime le recouvrement à 25 % de la créance.",
+      "sub_questions": [
+        {
+          "id": "q1-non-reponse",
+          "kind": "mcq",
+          "prompt": "Pour le client D, quelle procédure alternative est la plus probante ?",
+          "options": [
+            "Obtenir de la direction de Gamma une attestation écrite confirmant le solde",
+            "Rapprocher le solde des encaissements reçus après la clôture et, pour la partie non encaissée, des factures et bons de livraison signés",
+            "Considérer le solde comme confirmé, le client ayant reçu la demande sans la contester",
+            "Recalculer le total de la balance auxiliaire clients"
+          ],
+          "answer": [
+            1
+          ],
+          "points": 2,
+          "explanation": "Les encaissements postérieurs rapprochés des factures, complétés par les bons de livraison signés, sont des éléments externes ou produits par des tiers qui établissent l’existence de la créance. Une attestation de la direction est un élément interne peu probant. L’absence de réponse à une confirmation positive ne vaut pas accord. Le recalcul de la balance ne prouve pas l’existence d’un solde individuel."
+        },
+        {
+          "id": "q2-cut-off",
+          "kind": "numeric",
+          "prompt": "Analysez les écarts des clients B et C. De combien le résultat avant impôt de N est-il surévalué du fait de ces écarts (en euros) ?",
+          "expected_value": 12000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 3,
+          "explanation": "Client B : le virement était en transit au 31/12/N ; chez Gamma la créance existait bien à la clôture, pas d’anomalie. Client C : la livraison est intervenue en N+1, la vente est anticipée. CA HT à annuler = 14 400 / 1,20 = 12 000 €. Les marchandises ayant été inventoriées dans le stock de Gamma, il n’y a pas d’incidence sur le coût des ventes : le résultat est surévalué de 12 000 €. Retenir aussi l’écart B (24 000 €) ou raisonner en TTC (14 400 €) serait une erreur."
+        },
+        {
+          "id": "q3-depreciation",
+          "kind": "numeric",
+          "prompt": "Calculez la dépréciation à constater sur la créance du client E au 31/12/N (en euros).",
+          "expected_value": 18750,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 3,
+          "explanation": "Les difficultés existaient dès novembre N : l’ouverture du redressement en janvier N+1 apporte une information sur une situation existant à la clôture, à prendre en compte dans les comptes N. Base HT = 30 000 / 1,20 = 25 000 € ; perte estimée 75 % ; dépréciation = 25 000 × 75 % = 18 750 €. Calculer sur le TTC donnerait 22 500 €."
+        },
+        {
+          "id": "q4-conclusion",
+          "kind": "open",
+          "prompt": "Récapitulez les anomalies relevées, comparez-les aux seuils et indiquez la démarche de l’auditeur vis-à-vis de la direction.",
+          "model_answer": "Anomalies relevées : vente anticipée sur C (12 000 € HT) et dépréciation manquante sur E (18 750 €), soit 30 750 € de surévaluation du résultat avant impôt. Ce montant dépasse le seuil des anomalies manifestement insignifiantes (2 500 €) mais reste inférieur au seuil de signification (50 000 €). L’auditeur communique ces anomalies à la direction et lui demande de les corriger. Si elle refuse, il les cumule avec les autres anomalies non corrigées de l’audit pour apprécier leur incidence sur l’opinion, et obtient une déclaration de la direction sur les anomalies non corrigées. L’écart B, simple décalage de règlement, n’est pas une anomalie.",
+          "key_points": [
+            "Total des anomalies : 12 000 + 18 750 = 30 750 €",
+            "Comparaison aux seuils : supérieur à 2 500 €, inférieur à 50 000 €",
+            "Demande de correction à la direction",
+            "Cumul avec les autres anomalies non corrigées en cas de refus"
+          ],
+          "points": 4
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Le cas fait exploiter les résultats d’une campagne de confirmation : distinguer un décalage de règlement (B) d’une erreur de séparation (C), traiter une non-réponse par des procédures alternatives (D) et apprécier une dépréciation en tenant compte d’un événement postérieur révélant une situation antérieure (E). Les anomalies sont ensuite évaluées par rapport aux seuils (NEP 450).",
+      "source_ref": "NEP 505 (confirmations externes) ; NEP 450 (évaluation des anomalies relevées) ; NEP 560 (événements postérieurs) ; PCG comptes 416, 491",
+      "verified": true,
+      "estimated_seconds": 900
+    },
+    {
+      "id": "ue4-audit-ventes-0022",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-pieges",
+      "difficulty": 2,
+      "tags": [
+        "pièges",
+        "lapping",
+        "détournement"
+      ],
+      "statement": "Un comptable clients, qui reçoit aussi les chèques, détourne le règlement du client X puis, chaque mois, impute les règlements reçus d’autres clients sur les factures les plus anciennes de X. Quelle procédure permet le mieux de détecter cette manœuvre ?",
+      "options": [
+        "Comparer, pour un échantillon d’encaissements, les références portées sur les avis de paiement et les remises en banque avec les factures lettrées dans les comptes clients",
+        "Vérifier que le total de la balance auxiliaire clients est égal au solde du compte 411",
+        "Recalculer le délai moyen de recouvrement global de la société",
+        "Contrôler la séquence de numérotation des factures de ventes"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Le décalage d’imputation (lapping) se manifeste par des règlements imputés sur des factures que le payeur n’a pas visées : seule la comparaison entre le détail des paiements (avis, remises) et le lettrage le met en évidence. L’égalité auxiliaire / collectif est préservée par la manœuvre. Le DSO global peut rester stable. La séquence des factures n’est pas affectée par le détournement des encaissements. La faiblesse sous-jacente est l’absence de séparation entre encaissement et tenue des comptes clients.",
+      "source_ref": "NEP 240 (fraude : détournement d’actifs) ; NEP 330",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-audit-ventes-0023",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-pieges",
+      "difficulty": 3,
+      "tags": [
+        "pièges",
+        "devises",
+        "évaluation"
+      ],
+      "statement": "Une créance de 100 000 USD a été enregistrée au cours de 1 € = 1,10 USD. Au 31/12/N, le cours est de 1 € = 1,25 USD et la créance n’est pas encaissée. Quel traitement doit retenir l’auditeur dans les comptes individuels établis selon le PCG ?",
+      "options": [
+        "Maintenir la créance au cours historique, sans autre écriture, la perte n’étant pas réalisée",
+        "Ramener la créance à 80 000 € en dépréciant la différence par le compte 491",
+        "Ramener la créance à 80 000 € en enregistrant la différence directement en perte de change (666)",
+        "Ramener la créance à 80 000 € avec une contrepartie en écart de conversion actif (476) et constituer une provision pour perte de change (1515) de 10 909 €"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Valeur historique = 100 000 / 1,10 = 90 909 € ; valeur au cours de clôture = 100 000 / 1,25 = 80 000 € ; perte latente = 10 909 €. Le PCG impose la conversion au cours de clôture avec un écart de conversion actif (476) qui n’affecte pas directement le résultat, et une provision pour risque (1515) qui constate la perte latente en charge. Maintenir le cours historique ignore la perte latente. Une dépréciation 491 traite un risque d’insolvabilité, pas un effet de change. Une perte de change (666) suppose une perte réalisée lors du règlement.",
+      "source_ref": "PCG, règles de conversion des créances et dettes en monnaies étrangères (règl. ANC 2014-03) ; comptes 476 et 1515",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue4-audit-ventes-0024",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-pieges",
+      "difficulty": 2,
+      "tags": [
+        "pièges",
+        "dépréciation",
+        "TVA"
+      ],
+      "statement": "Une créance douteuse de 12 000 € TTC (TVA 20 %) dont on estime que la moitié ne sera pas recouvrée doit être dépréciée de 6 000 €.",
+      "answer": false,
+      "justification": "Faux : la dépréciation se calcule sur le montant HT, soit 10 000 € × 50 % = 5 000 €.",
+      "explanation": "En cas de perte définitive, la TVA collectée sur la créance est récupérable : seule la part hors taxes constitue une perte pour l’entreprise. Base HT = 12 000 / 1,20 = 10 000 € ; dépréciation = 10 000 × 50 % = 5 000 €. Déprécier le TTC surévalue la charge de 1 000 €.",
+      "source_ref": "PCG comptes 416 et 491 ; NEP 330 (procédures substantives sur l’évaluation)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-audit-ventes-0025",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-pieges",
+      "difficulty": 3,
+      "tags": [
+        "pièges",
+        "sondages",
+        "extrapolation"
+      ],
+      "statement": "Le poste clients de la société Sigma s’élève à 2 400 000 €. L’auditeur a contrôlé en totalité quatre créances clés d’un montant global de 600 000 € et y a relevé une surévaluation de 8 000 €. Sur le reste de la population (1 800 000 €), il a contrôlé un échantillon représentatif de 240 000 € et y a relevé des surévaluations de 3 600 €. Selon la méthode du ratio, calculez l’anomalie totale estimée sur le poste clients (en euros, arrondi à l’euro).",
+      "expected_value": 35000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Les éléments clés, testés à 100 %, ne s’extrapolent pas : anomalie = 8 000 €. Population sondée : taux d’anomalie = 3 600 / 240 000 = 1,5 % ; anomalie projetée = 1,5 % × 1 800 000 = 27 000 €. Anomalie totale estimée = 8 000 + 27 000 = 35 000 €. Extrapoler l’ensemble (11 600 / 840 000 × 2 400 000 ≈ 33 143 €) ou oublier les éléments clés (27 000 €) est erroné.",
+      "source_ref": "NEP 530 (sondages : extrapolation des anomalies) ; NEP 450 (évaluation des anomalies)",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue4-audit-ventes-0026",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-pieges",
+      "difficulty": 2,
+      "tags": [
+        "pièges",
+        "remises de fin d’année",
+        "avoirs à établir"
+      ],
+      "statement": "Le contrat de la société Thêta avec son distributeur Rho prévoit une ristourne de fin d’année de 2,5 % du chiffre d’affaires HT annuel si celui-ci dépasse 1 000 000 €. Rho a réalisé 1 200 000 € HT d’achats en N ; l’avoir sera émis en février N+1 et rien n’a été comptabilisé. Passez l’écriture d’ajustement proposée par l’auditeur au 31/12/N (TVA 20 % ; utilisez les comptes 709, 44587 et 4198).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "709",
+          "label": "Rabais, remises et ristournes accordés par l’entreprise",
+          "debit": 30000,
+          "credit": 0
+        },
+        {
+          "account": "44587",
+          "label": "Taxes sur le chiffre d’affaires sur factures à établir",
+          "debit": 6000,
+          "credit": 0
+        },
+        {
+          "account": "4198",
+          "label": "Rabais, remises, ristournes à accorder et autres avoirs à établir",
+          "debit": 0,
+          "credit": 36000
+        }
+      ],
+      "explanation": "Le seuil de 1 000 000 € étant dépassé, la ristourne est acquise au 31/12/N : 1 200 000 × 2,5 % = 30 000 € HT, TVA 6 000 €, avoir TTC 36 000 €. Elle réduit le chiffre d’affaires (709) et la TVA collectée correspondante est régularisée via 44587. Calculer la ristourne sur la seule part au-delà du seuil (5 000 €) serait contraire au contrat, qui vise le chiffre d’affaires annuel. Omettre cette écriture surévalue le résultat de 30 000 €.",
+      "source_ref": "PCG comptes 709, 44587 et 4198 ; NEP 500 (exhaustivité des passifs, mesure du chiffre d’affaires)",
+      "verified": true,
+      "estimated_seconds": 200
+    },
+    {
+      "id": "ue4-audit-ventes-0027",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "ventes-clients-pieges",
+      "difficulty": 3,
+      "tags": [
+        "pièges",
+        "bill-and-hold",
+        "dépôt",
+        "remises de fin d’année"
+      ],
+      "title": "Ventes de fin d’exercice chez Delta",
+      "context": "Vous auditez les comptes au 31/12/N de Delta SA, fabricant de mobilier de bureau (TVA 20 %). Les tests de fin d’exercice font apparaître trois situations.\n1. Le 28/12/N, Delta a facturé 40 000 € HT de mobilier à un client qui, selon le commercial, souhaite qu’il reste dans l’entrepôt de Delta jusqu’en mars N+1. Il n’existe aucune demande écrite du client ; les meubles ne sont ni étiquetés au nom du client ni séparés du reste du stock.\n2. En décembre N, Delta a remis en dépôt à un distributeur des meubles pour 25 000 € HT, comptabilisés en ventes dès leur expédition. D’après le relevé du dépositaire, 10 000 € HT ont été revendus à des clients finaux avant le 31/12/N ; le reste est toujours chez le dépositaire.\n3. Le distributeur Psi bénéficie d’une ristourne de 3 % de son chiffre d’affaires HT annuel s’il dépasse 500 000 €. Il a réalisé 620 000 € HT en N ; aucun avoir à établir n’a été comptabilisé.\nLors de l’inventaire physique du 31/12/N, les meubles des situations 1 et 2 ont été exclus des quantités comptées.",
+      "sub_questions": [
+        {
+          "id": "q1-bill-and-hold",
+          "kind": "true_false",
+          "prompt": "La vente de la situation 1 peut être maintenue dans le chiffre d’affaires de N.",
+          "answer": false,
+          "points": 2,
+          "explanation": "Faux. Les meubles restent chez Delta, sans demande écrite du client, sans individualisation ni séparation du stock : le transfert des biens n’est pas démontré. La facturation anticipée gonfle le chiffre d’affaires de N ; la vente doit être annulée."
+        },
+        {
+          "id": "q2-ca-annuler",
+          "kind": "numeric",
+          "prompt": "Quel montant total de chiffre d’affaires HT faut-il annuler au titre des situations 1 et 2 (en euros) ?",
+          "expected_value": 55000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 3,
+          "explanation": "Situation 1 : 40 000 €. Situation 2 : en dépôt, la vente n’est réalisée qu’à la revente par le dépositaire ; seuls 10 000 € sont acquis, il faut annuler 25 000 − 10 000 = 15 000 €. Total : 40 000 + 15 000 = 55 000 € HT. Annuler la totalité du dépôt (65 000 €) ou ne rien annuler sur le dépôt (40 000 €) serait erroné."
+        },
+        {
+          "id": "q3-ristourne",
+          "kind": "journal_entry",
+          "prompt": "Passez l’écriture relative à la situation 3 au 31/12/N (utilisez les comptes 709, 44587 et 4198).",
+          "entries": [
+            {
+              "account": "709",
+              "label": "Rabais, remises et ristournes accordés par l’entreprise",
+              "debit": 18600,
+              "credit": 0
+            },
+            {
+              "account": "44587",
+              "label": "Taxes sur le chiffre d’affaires sur factures à établir",
+              "debit": 3720,
+              "credit": 0
+            },
+            {
+              "account": "4198",
+              "label": "Rabais, remises, ristournes à accorder et autres avoirs à établir",
+              "debit": 0,
+              "credit": 22320
+            }
+          ],
+          "points": 3,
+          "explanation": "Le seuil de 500 000 € est dépassé : ristourne = 620 000 × 3 % = 18 600 € HT ; TVA = 3 720 € ; avoir TTC = 22 320 €."
+        },
+        {
+          "id": "q4-stocks",
+          "kind": "open",
+          "prompt": "Expliquez l’incidence de l’annulation des ventes des situations 1 et 2 sur les stocks et la procédure complémentaire à mettre en œuvre.",
+          "model_answer": "Les meubles des situations 1 et 2 dont la vente est annulée (40 000 € et 15 000 € au prix de vente) appartiennent toujours à Delta au 31/12/N : ils doivent figurer dans le stock final, évalués au coût de production et non au prix de vente. Comme ils ont été exclus de l’inventaire, le stock est sous-évalué : la correction réduit le chiffre d’affaires de 55 000 € mais augmente le stock de leur coût, l’incidence nette sur le résultat étant égale à la marge annulée. L’auditeur doit obtenir les quantités concernées (bons de remise en dépôt, relevé du dépositaire, identification des meubles en entrepôt), vérifier leur coût de production et, pour le dépôt, obtenir une confirmation du dépositaire sur les quantités détenues au 31/12/N.",
+          "key_points": [
+            "Les biens non vendus restent la propriété de Delta et doivent figurer au stock",
+            "Évaluation au coût de production, pas au prix de vente",
+            "Incidence nette sur le résultat égale à la marge sur les ventes annulées",
+            "Confirmation des quantités détenues par le dépositaire et vérification du coût"
+          ],
+          "points": 4
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Le cas réunit trois pièges de fin d’exercice : facturation sans livraison effective, ventes en dépôt reconnues à l’expédition et ristournes de fin d’année non provisionnées. Chacun surévalue le chiffre d’affaires ; l’annulation des ventes doit être accompagnée de la réintégration des biens en stock pour mesurer correctement l’incidence sur le résultat.",
+      "source_ref": "C. com. art. L123-21 (seuls les bénéfices réalisés sont inscrits) ; NEP 240 (risque de fraude sur les produits) ; NEP 330 ; PCG comptes 709, 44587 et 4198",
+      "verified": true,
+      "estimated_seconds": 900
     }
   ]
 }
