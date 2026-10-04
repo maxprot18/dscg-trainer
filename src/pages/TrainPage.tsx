@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom'
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { examDurations, taxonomy, useExercises } from '@/content/load'
-import type { Exercise, UeId } from '@/content/schema'
+import { examDurations, exerciseCount, taxonomy, useExercises } from '@/content/load'
+import type { UeId } from '@/content/schema'
 import { useProgress } from '@/db/progress'
 import { buildExamSession, QUICK_SESSION_SECONDS, QUICK_SESSION_SIZE, SMART_SESSION_SIZE } from '@/engine/session'
 import { newSeed, sessionSearch } from '@/engine/sessionConfig'
@@ -13,35 +13,25 @@ import { failedExerciseIds } from '@/engine/stats'
 const selectClass =
   'border-input bg-background focus-visible:ring-ring/50 h-10 w-full rounded-md border px-3 text-sm outline-none focus-visible:ring-[3px]'
 
+/**
+ * Choix du mode d'entraînement. L'écran s'affiche tout de suite avec les nombres d'exercices
+ * calculés au build ; le contenu se charge en arrière-plan pour l'examen blanc et les erreurs.
+ */
 export function TrainPage() {
-  const exercises = useExercises()
-  if (!exercises) return <p className="text-muted-foreground">Chargement des exercices…</p>
-  return <TrainChooser exercises={exercises} />
-}
-
-function TrainChooser({ exercises }: { exercises: Exercise[] }) {
   const navigate = useNavigate()
-  const counts = useMemo(() => {
-    const map = new Map<string, number>()
-    const add = (key: string) => map.set(key, (map.get(key) ?? 0) + 1)
-    for (const e of exercises) {
-      add(e.ue)
-      add(`${e.ue}/${e.theme}`)
-      add(`notion:${e.notion}`)
-    }
-    return map
-  }, [exercises])
-  const count = (key: string) => counts.get(key) ?? 0
+  const exercises = useExercises()
+  const count = exerciseCount
 
   const firstUe = taxonomy.ues.find((u) => count(u.id) > 0)?.id ?? taxonomy.ues[0].id
   const progress = useProgress()
   const [now] = useState(() => Date.now())
   const dueCount = progress?.reviews.filter((r) => r.due <= now).length ?? 0
-  const knownIds = useMemo(() => new Set(exercises.map((e) => e.id)), [exercises])
-  const errorCount = progress ? failedExerciseIds(progress.attempts).filter((id) => knownIds.has(id)).length : 0
+  const knownIds = useMemo(() => new Set((exercises ?? []).map((e) => e.id)), [exercises])
+  const errorCount =
+    progress && exercises ? failedExerciseIds(progress.attempts).filter((id) => knownIds.has(id)).length : 0
   const [examUe, setExamUe] = useState<UeId>(firstUe)
   const examSize = useMemo(
-    () => buildExamSession(exercises, examUe, examDurations[examUe], 0).length,
+    () => (exercises ? buildExamSession(exercises, examUe, examDurations[examUe], 0).length : null),
     [exercises, examUe],
   )
   const [ue, setUe] = useState<UeId>(firstUe)
@@ -65,7 +55,7 @@ function TrainChooser({ exercises }: { exercises: Exercise[] }) {
           <Button
             size="lg"
             className="w-full"
-            disabled={exercises.length === 0}
+            disabled={count('total') === 0}
             onClick={() => navigate(`/session${sessionSearch({ mode: 'quick', seed: newSeed() })}`)}
           >
             Lancer une session rapide
@@ -85,7 +75,7 @@ function TrainChooser({ exercises }: { exercises: Exercise[] }) {
           <Button
             size="lg"
             className="w-full"
-            disabled={exercises.length === 0}
+            disabled={count('total') === 0}
             onClick={() => navigate(`/session${sessionSearch({ mode: 'smart', seed: newSeed() })}`)}
           >
             Réviser ({SMART_SESSION_SIZE} exercices au plus)
@@ -103,6 +93,7 @@ function TrainChooser({ exercises }: { exercises: Exercise[] }) {
             variant="outline"
             className="w-full"
             disabled={errorCount === 0}
+            aria-busy={!exercises}
             onClick={() => navigate(`/session${sessionSearch({ mode: 'errors', seed: newSeed() })}`)}
           >
             {errorCount === 0 ? 'Aucune erreur à rejouer' : `Rejouer mes erreurs (${Math.min(errorCount, 20)})`}
@@ -130,10 +121,12 @@ function TrainChooser({ exercises }: { exercises: Exercise[] }) {
           <Button
             size="lg"
             variant="outline"
-            disabled={examSize === 0}
+            disabled={!examSize}
             onClick={() => navigate(`/session${sessionSearch({ mode: 'exam', seed: newSeed(), ue: examUe })}`)}
           >
-            {examSize === 0
+            {examSize === null
+              ? 'Préparation du sujet…'
+              : examSize === 0
               ? 'Pas encore assez d’exercices'
               : `Commencer l’examen (${examSize} exercices, ${formatDuration(examDurations[examUe])})`}
           </Button>

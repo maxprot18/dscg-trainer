@@ -18,4 +18,4 @@ Soldes de clôture :
 ## À retenir
 - Pièce probante de référence : le procès-verbal d'assemblée, rapproché des écritures et des statuts.
 - Un dividende voté avant la clôture et non payé doit figurer en dette (457) : c'est un test d'exhaustivité.
-- Une subvention d'investissement reste en capitaux propres ; sa reprise au résultat passe par le compte 777.
+- Une subvention d'investissement reste en capitaux propres ; sa reprise au résultat passe par le compte 747 (résultat d'exploitation ; ancien 777 avant le règl. ANC 2022-06).

@@ -8,12 +8,14 @@
  */
 import { useMemo, useRef, useState } from 'react'
 
+import { ReportLink } from '@/components/ReportLink'
 import { Badge } from '@/components/ui/badge'
 import { CYCLE_LABELS, TYPE_LABELS } from '@/content/labels'
 import type { Exercise } from '@/content/schema'
 import { combineResults, gradePart, type ExerciseResult, type PartResponse, type PartResult } from '@/engine/grading'
 import { exerciseParts, STAGE_LABELS } from '@/engine/parts'
 import { formatNumber } from '@/engine/numbers'
+import { exerciseIssueUrl } from '@/lib/report'
 
 import { Explanation, Verdict } from './Feedback'
 import { PartView } from './parts'
@@ -166,6 +168,7 @@ export function ExercisePlayer({ exercise, onComplete, deferFeedback = false, re
             <Explanation>{exercise.explanation}</Explanation>
           </div>
           <p className="text-muted-foreground text-xs">Référence : {exercise.source_ref}</p>
+          <ReportLink href={exerciseIssueUrl(exercise)} />
         </div>
       )}
     </article>

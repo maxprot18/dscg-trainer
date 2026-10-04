@@ -3,7 +3,8 @@
  * rechargement de page redonne la même série d'exercices.
  */
 import type { Exercise } from '@/content/schema'
-import { UE_IDS, type UeId } from '@/content/schema'
+import { UE_IDS } from '@/content/ids'
+import type { UeId } from '@/content/schema'
 
 import {
   buildErrorSession,

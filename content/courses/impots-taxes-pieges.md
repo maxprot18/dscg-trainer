@@ -9,7 +9,7 @@
 - **Intégration fiscale** : la mère est seule redevable de l'IS du groupe ; les filiales intégrées versent leur contribution à la mère selon la convention d'intégration (compte courant), pas au Trésor. La mère constate l'économie ou la charge d'intégration.
 - **Report en arrière (carry-back)** : sur option, le déficit s'impute sur le bénéfice de l'exercice précédent, dans la limite de ce bénéfice et de 1 000 000 € ; la créance obtenue se comptabilise au débit du 444 par le crédit de 699.
 
-**Formules clés :** créance de carry-back = min(déficit, bénéfice N−1, 1 000 000 €) × taux d'IS retenu pour la créance ; économie d'intégration = Σ IS des sociétés bénéficiaires − IS du groupe
+**Formules clés :** créance de carry-back = min(déficit, bénéfice N−1, 1 000 000 €) × taux d'IS applicable à l'exercice déficitaire (25 % au taux normal) ; économie d'intégration = Σ IS des sociétés bénéficiaires − IS du groupe
 
 ## À retenir
 - TVA déclarée supérieure à la TVA théorique calculée sur le CA : penser aux acomptes reçus sur prestations.

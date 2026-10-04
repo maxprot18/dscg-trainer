@@ -1,6 +1,6 @@
 # Contrats à long terme : avancement et pertes à terminaison
 
-**Références :** PCG art. 622-1 s. (règl. ANC 2014-03 modifié) ; comptes 1516, 335, 4181, 487, 704, 6815
+**Références :** PCG art. 622-1 s. (règl. ANC 2014-03 modifié ; articles renumérotés sans changement de fond par le règl. ANC 2026-03, homologué par arrêté du 12 août 2026 et applicable aux exercices ouverts à compter du 1er janvier 2027) ; comptes 1516, 335, 4181, 487, 704, 6815
 
 Un **contrat à long terme** porte sur la réalisation d'un bien, d'un service ou d'un ensemble de biens et services dont l'exécution s'étend sur au moins deux exercices.
 

@@ -31,7 +31,8 @@ const cells = (row: string) =>
     .split('|')
     .map((c) => c.trim())
 
-export function Markdown({ source }: { source: string }) {
+/** `pageTitle` : le titre `#` devient le titre principal de la page (`h1`) au lieu d'un `h2`. */
+export function Markdown({ source, pageTitle = false }: { source: string; pageTitle?: boolean }) {
   const lines = source.replace(/\r\n/g, '\n').split('\n')
   const blocks: ReactNode[] = []
   let i = 0
@@ -45,7 +46,7 @@ export function Markdown({ source }: { source: string }) {
     if (heading) {
       const level = heading[1].length
       const cls = level === 1 ? 'text-xl font-bold' : level === 2 ? 'mt-2 text-lg font-semibold' : 'font-semibold'
-      const Tag = (`h${Math.min(level + 1, 4)}`) as 'h2' | 'h3' | 'h4'
+      const Tag = (`h${Math.min(level + (pageTitle ? 0 : 1), 4)}`) as 'h1' | 'h2' | 'h3' | 'h4'
       blocks.push(<Tag key={i} className={cls}>{inline(heading[2])}</Tag>)
       i++
       continue

@@ -3,18 +3,19 @@ import { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 
 import { Markdown } from '@/components/Markdown'
+import { ReportLink } from '@/components/ReportLink'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import { loadCourse, taxonomy, useExercises } from '@/content/load'
+import { exerciseCount, loadCourse, taxonomy } from '@/content/load'
 import { buildTaxonomyIndex } from '@/content/taxonomy'
 import { newSeed, sessionSearch } from '@/engine/sessionConfig'
+import { courseIssueUrl } from '@/lib/report'
 
 const index = buildTaxonomyIndex(taxonomy)
 
 export function CoursePage() {
   const { notionId = '' } = useParams()
   const entry = index.notions.get(notionId)
-  const exercises = useExercises()
   const navigate = useNavigate()
   const [course, setCourse] = useState<{ id: string; text: string | null } | null>(null)
 
@@ -37,7 +38,7 @@ export function CoursePage() {
     )
   }
 
-  const count = exercises?.filter((e) => e.notion === notionId).length ?? 0
+  const count = exerciseCount(`notion:${notionId}`)
   const text = course?.id === notionId ? course.text : undefined
 
   return (
@@ -57,9 +58,12 @@ export function CoursePage() {
           <p className="text-muted-foreground text-sm">La fiche de cours de cette notion n’est pas encore rédigée.</p>
         </>
       ) : (
-        <article className="text-sm">
-          <Markdown source={text} />
-        </article>
+        <>
+          <article className="text-sm">
+            <Markdown source={text} pageTitle />
+          </article>
+          <ReportLink href={courseIssueUrl(notionId, entry.notion.title)} label="Signaler une erreur dans cette fiche" />
+        </>
       )}
       <Button
         size="lg"

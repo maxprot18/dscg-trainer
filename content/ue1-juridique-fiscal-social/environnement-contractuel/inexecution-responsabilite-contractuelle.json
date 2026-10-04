@@ -92,7 +92,7 @@
         "écriture",
         "règlement fournisseur"
       ],
-      "statement": "La SA Cèdre a reçu et comptabilisé une facture de son fournisseur de composants d'un montant de 60 000 € HT, TVA 20 %, soit 72 000 € TTC. La livraison a eu 15 jours de retard et le contrat prévoit une pénalité de 0,2 % du prix HT par jour de retard. Le fournisseur accepte que la pénalité soit déduite du règlement. Le 30 septembre N, Cèdre règle par virement le solde dû. La pénalité, de nature indemnitaire, n'est pas soumise à TVA. Comptabilisez le règlement chez Cèdre en enregistrant la pénalité au compte 7711 « Dédits et pénalités perçus sur achats et sur ventes ».",
+      "statement": "La SA Cèdre a reçu et comptabilisé une facture de son fournisseur de composants d'un montant de 60 000 € HT, TVA 20 %, soit 72 000 € TTC. La livraison a eu 15 jours de retard et le contrat prévoit une pénalité de 0,2 % du prix HT par jour de retard. Le fournisseur accepte que la pénalité soit déduite du règlement. Le 30 septembre N, Cèdre règle par virement le solde dû. La pénalité, de nature indemnitaire, n'est pas soumise à TVA. Comptabilisez le règlement chez Cèdre en enregistrant la pénalité au compte 7581 « Dédits et pénalités perçus ».",
       "date": "30/09/N",
       "entries": [
         {
@@ -102,7 +102,7 @@
           "credit": 0
         },
         {
-          "account": "7711",
+          "account": "7581",
           "label": "Pénalité de retard de livraison",
           "debit": 0,
           "credit": 1800
@@ -114,8 +114,8 @@
           "credit": 70200
         }
       ],
-      "explanation": "Pénalité : 60 000 × 0,2 % × 15 = 1 800 €. Elle se calcule sur le prix HT, comme le prévoit le contrat, et n'est pas soumise à TVA (indemnité sans contrepartie d'une livraison ou d'une prestation) : la TVA déductible initialement comptabilisée n'est pas modifiée.\nLa dette fournisseur de 72 000 € est soldée ; Cèdre décaisse 72 000 − 1 800 = 70 200 € et constate un produit de 1 800 € au compte 7711 imposé par l'énoncé. Ce compte relève de la nomenclature antérieure au règlement ANC 2022-06 (exercices ouverts depuis le 1er janvier 2025), qui a remanié les comptes 67 et 77 : c'est pourquoi l'énoncé l'impose.",
-      "source_ref": "C. civ. art. 1231-5 ; PCG, comptes 401 et 512 ; compte 7711 imposé par l'énoncé (nomenclature antérieure au règl. ANC 2022-06)",
+      "explanation": "Pénalité : 60 000 × 0,2 % × 15 = 1 800 €. Elle se calcule sur le prix HT, comme le prévoit le contrat, et n'est pas soumise à TVA (indemnité sans contrepartie d'une livraison ou d'une prestation) : la TVA déductible initialement comptabilisée n'est pas modifiée.\nLa dette fournisseur de 72 000 € est soldée ; Cèdre décaisse 72 000 − 1 800 = 70 200 € et constate un produit de 1 800 € au compte 7581. Depuis le règlement ANC 2022-06 (exercices ouverts à compter du 1er janvier 2025), les dédits et pénalités perçus ne relèvent plus du résultat exceptionnel : l'ancien compte 7711 est remplacé par le compte d'exploitation 7581.",
+      "source_ref": "C. civ. art. 1231-5 ; PCG (règl. ANC 2014-03 modifié par le règl. ANC 2022-06), comptes 401, 512 et 7581",
       "estimated_seconds": 180,
       "verified": true
     },

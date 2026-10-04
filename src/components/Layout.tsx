@@ -1,6 +1,10 @@
-import { BookOpen, ChartColumn, Dumbbell, House } from 'lucide-react'
-import { NavLink, Outlet } from 'react-router-dom'
+import { BookOpen, ChartColumn, Dumbbell, House, Search } from 'lucide-react'
+import { Suspense } from 'react'
+import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom'
 
+import { ThemeToggle } from '@/components/ThemeToggle'
+import { Button } from '@/components/ui/button'
+import { useKeyboard } from '@/hooks/useKeyboard'
 import { cn } from '@/lib/utils'
 
 const links = [
@@ -11,10 +15,29 @@ const links = [
 ]
 
 export function Layout() {
+  const navigate = useNavigate()
+  // « / » ouvre la recherche (hors saisie dans un champ).
+  useKeyboard((key) => (key === '/' ? (navigate('/recherche'), true) : false), true)
   return (
     <div className="mx-auto flex min-h-dvh max-w-3xl flex-col">
-      <main className="flex-1 px-4 pt-6 pb-24">
-        <Outlet />
+      <header className="flex items-center justify-between px-4 pt-3">
+        <Link to="/" className="text-muted-foreground text-sm font-semibold">
+          DSCG Trainer
+        </Link>
+        <div className="flex items-center">
+          <Button asChild variant="ghost" size="icon">
+            <Link to="/recherche" aria-label="Rechercher (raccourci /)" title="Rechercher (/)">
+              <Search />
+            </Link>
+          </Button>
+          <ThemeToggle />
+        </div>
+      </header>
+      <main className="flex-1 px-4 pt-3 pb-24">
+        {/* Les écrans sont chargés à la demande : l'en-tête et la navigation restent affichés. */}
+        <Suspense fallback={<p className="text-muted-foreground">Chargement…</p>}>
+          <Outlet />
+        </Suspense>
       </main>
       <nav className="bg-background/95 fixed inset-x-0 bottom-0 border-t backdrop-blur" aria-label="Navigation principale">
         <ul className="mx-auto grid max-w-3xl grid-cols-4">

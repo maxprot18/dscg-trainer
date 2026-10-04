@@ -120,7 +120,7 @@
         "subvention d'investissement",
         "transition énergétique"
       ],
-      "source_ref": "PCG (règl. ANC 2014-03), règles relatives aux subventions d'investissement : comptes 131, 139 et 777 ; CGI art. 42 septies (étalement)",
+      "source_ref": "PCG (règl. ANC 2014-03 modifié par le règl. ANC 2022-06), règles relatives aux subventions d'investissement : comptes 131, 139 et 747 ; CGI art. 42 septies (étalement)",
       "verified": true,
       "estimated_seconds": 200,
       "statement": "Le 1er juillet N, la société Ardane met en service une installation photovoltaïque acquise 600 000 € HT, amortie linéairement sur 20 ans. Elle a obtenu de la région une subvention d'investissement de 180 000 € pour ce projet, comptabilisée au compte 131 lors de son octroi. L'exercice coïncide avec l'année civile. Passez au 31/12/N l'écriture de reprise de la quote-part de subvention de l'exercice.",
@@ -133,13 +133,13 @@
           "credit": 0
         },
         {
-          "account": "777",
+          "account": "747",
           "label": "Quote-part des subventions d'investissement virée au résultat de l'exercice",
           "debit": 0,
           "credit": 4500
         }
       ],
-      "explanation": "Une subvention qui finance un bien amortissable est reprise au résultat au rythme de l'amortissement de ce bien. Taux d'amortissement : 1/20 ; prorata de 6 mois en N. Quote-part = 180 000 / 20 × 6/12 = 4 500 €. On débite le 139 (qui vient en diminution du 131 au bilan, dans les capitaux propres) et on crédite le 777 (produit de l'exercice). La reprise atténue l'effet de la dotation aux amortissements (600 000 / 20 × 6/12 = 15 000 €). En analyse financière, la subvention est souvent rattachée aux ressources propres, nette de l'impôt latent."
+      "explanation": "Une subvention qui finance un bien amortissable est reprise au résultat au rythme de l'amortissement de ce bien. Taux d'amortissement : 1/20 ; prorata de 6 mois en N. Quote-part = 180 000 / 20 × 6/12 = 4 500 €. On débite le 139 (qui vient en diminution du 131 au bilan, dans les capitaux propres) et on crédite le 747 (produit d'exploitation de l'exercice ; ce compte remplace l'ancien 777 depuis le règl. ANC 2022-06). La reprise atténue l'effet de la dotation aux amortissements (600 000 / 20 × 6/12 = 15 000 €). En analyse financière, la subvention est souvent rattachée aux ressources propres, nette de l'impôt latent."
     },
     {
       "id": "ue2-rse-taxo-0006",

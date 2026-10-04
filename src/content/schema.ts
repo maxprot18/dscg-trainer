@@ -10,6 +10,8 @@
  */
 import { z } from 'zod'
 
+import { UE_IDS } from './ids'
+
 // ---------------------------------------------------------------------------
 // Constantes partagées
 // ---------------------------------------------------------------------------
@@ -26,7 +28,7 @@ export const JOURNAL_BALANCE_TOLERANCE = 0.005
 /** Tolérance pour comparer une somme de points à `total_points`. */
 const POINTS_EPSILON = 1e-9
 
-export const UE_IDS = ['UE1', 'UE2', 'UE3', 'UE4', 'UE5', 'UE6'] as const
+export { UE_IDS }
 
 export const EXERCISE_TYPES = [
   'mcq',

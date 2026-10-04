@@ -134,7 +134,7 @@
         "produits de cession",
         "valeur comptable"
       ],
-      "source_ref": "PCG, comptes 775 (produits des cessions d’éléments d’actif), 675 (valeurs comptables des éléments d’actif cédés), 261, 512",
+      "source_ref": "PCG (règl. ANC 2014-03 modifié par le règl. ANC 2022-06), comptes 7671 (produits des cessions d’immobilisations financières), 6671 (valeurs comptables des immobilisations financières cédées), 261, 512",
       "estimated_seconds": 180,
       "statement": "La société Corvin détient 12 000 actions Ferlane, inscrites en titres de participation (compte 261) pour 48 € l’unité, sans dépréciation. Le 30 septembre N+2, elle cède 5 000 de ces actions au prix unitaire de 61 €, déterminé par actualisation des dividendes, encaissé par banque. Frais de cession ignorés. Passez l’écriture (une seule écriture) constatant la cession et la sortie des titres cédés.",
       "date": "30/09/N+2",
@@ -146,14 +146,14 @@
           "credit": 0
         },
         {
-          "account": "775",
-          "label": "Produits des cessions d’éléments d’actif",
+          "account": "7671",
+          "label": "Produits des cessions d’immobilisations financières",
           "debit": 0,
           "credit": 305000
         },
         {
-          "account": "675",
-          "label": "Valeurs comptables des éléments d’actif cédés",
+          "account": "6671",
+          "label": "Valeurs comptables des immobilisations financières cédées",
           "debit": 240000,
           "credit": 0
         },
@@ -164,7 +164,7 @@
           "credit": 240000
         }
       ],
-      "explanation": "Prix de cession : 5 000 × 61 = 305 000 € (512 au débit, 775 au crédit). Sortie des titres pour leur valeur comptable : 5 000 × 48 = 240 000 € (675 au débit, 261 au crédit). La plus-value de cession, 305 000 − 240 000 = 65 000 €, apparaît par différence entre 775 et 675 dans le résultat exceptionnel. Les 7 000 actions restantes demeurent au bilan pour 336 000 €."
+      "explanation": "Prix de cession : 5 000 × 61 = 305 000 € (512 au débit, 7671 au crédit). Sortie des titres pour leur valeur comptable : 5 000 × 48 = 240 000 € (6671 au débit, 261 au crédit). La plus-value de cession, 305 000 − 240 000 = 65 000 €, apparaît par différence entre 7671 et 6671 dans le résultat financier : depuis le règl. ANC 2022-06, les cessions d’immobilisations financières ne relèvent plus du résultat exceptionnel (anciens comptes 775 / 675). Les 7 000 actions restantes demeurent au bilan pour 336 000 €."
     },
     {
       "id": "ue2-eval-gordon-0006",

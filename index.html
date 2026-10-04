@@ -9,6 +9,18 @@
     <meta name="theme-color" content="#1e3a8a" />
     <meta name="description" content="Entraînement au DSCG : audit, comptabilité, IFRS, consolidation, finance, droit, fiscalité." />
     <title>DSCG Trainer</title>
+    <script>
+      // Thème appliqué avant le premier affichage (voir src/lib/theme.ts).
+      try {
+        var t = localStorage.getItem('dscg-theme')
+        var dark = t === 'dark' || (t !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches)
+        if (dark) {
+          document.documentElement.classList.add('dark')
+          document.documentElement.style.colorScheme = 'dark'
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0f172a')
+        }
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <div id="root"></div>

@@ -76,8 +76,8 @@
       "answer": [
         3
       ],
-      "explanation": "La subvention existe et a été comptabilisée, mais dans un compte de nature inappropriée : une subvention qui finance un bien durable est une subvention d’investissement (131, reprise au résultat par le compte 777 au rythme de l’amortissement), et non une subvention d’exploitation (74). C’est la classification qui est en cause (option 4), avec pour conséquence un résultat d’exploitation surévalué. L’option 1 est fausse car la subvention a bien été reçue. L’option 2 viserait une subvention dont l’entité ne serait pas bénéficiaire. L’option 3 viserait une subvention non enregistrée, ce qui n’est pas le cas.",
-      "source_ref": "NEP 500 (assertions de présentation) ; PCG, règles relatives aux subventions d’investissement (règl. ANC 2014-03) ; comptes 131, 139, 74, 777",
+      "explanation": "La subvention existe et a été comptabilisée, mais dans un compte de nature inappropriée : une subvention qui finance un bien durable est une subvention d’investissement (131, reprise au résultat par le compte 747 au rythme de l’amortissement), et non une subvention d’exploitation portée en totalité en produit de l’exercice (74). C’est la classification qui est en cause (option 4), avec pour conséquence un résultat d’exploitation surévalué. L’option 1 est fausse car la subvention a bien été reçue. L’option 2 viserait une subvention dont l’entité ne serait pas bénéficiaire. L’option 3 viserait une subvention non enregistrée, ce qui n’est pas le cas.",
+      "source_ref": "NEP 500 (assertions de présentation) ; PCG, règles relatives aux subventions d’investissement (règl. ANC 2014-03 modifié par le règl. ANC 2022-06) ; comptes 131, 139, 74, 747",
       "estimated_seconds": 60,
       "verified": true
     },
@@ -430,7 +430,7 @@
         {
           "id": "q3-ecriture",
           "kind": "journal_entry",
-          "prompt": "Passez l’écriture d’ajustement au 31/12/N. Utilisez les comptes 139 et 777.",
+          "prompt": "Passez l’écriture d’ajustement au 31/12/N. Utilisez les comptes 139 et 747.",
           "date": "31/12/N",
           "entries": [
             {
@@ -440,14 +440,14 @@
               "credit": 0
             },
             {
-              "account": "777",
+              "account": "747",
               "label": "Quote-part des subventions d’investissement virée au résultat",
               "debit": 0,
               "credit": 10000
             }
           ],
           "points": 3,
-          "explanation": "Le compte 139, soustractif du 131, enregistre le cumul des reprises ; le compte 777 constate le produit de l’exercice. Le résultat N était sous-évalué de 10 000 €."
+          "explanation": "Le compte 139, soustractif du 131, enregistre le cumul des reprises ; le compte 747 constate le produit de l’exercice (il remplace l’ancien 777 depuis le règl. ANC 2022-06, la reprise figurant désormais en résultat d’exploitation). Le résultat N était sous-évalué de 10 000 €."
         },
         {
           "id": "q4-affectation",
@@ -465,7 +465,7 @@
       ],
       "total_points": 10,
       "explanation": "Le cas relie deux anomalies à leurs causes : absence de séparation des tâches et de revue sur le suivi des subventions, et comptabilisation de l’affectation sans s’appuyer sur la décision de l’assemblée. Les deux appellent un ajustement et des recommandations de contrôle interne.",
-      "source_ref": "NEP 315 ; NEP 265 (communication des faiblesses du contrôle interne) ; PCG, règles relatives aux subventions d’investissement ; comptes 139, 457, 777, 1068",
+      "source_ref": "NEP 315 ; NEP 265 (communication des faiblesses du contrôle interne) ; PCG, règles relatives aux subventions d’investissement ; comptes 139, 457, 747, 1068 (règl. ANC 2022-06)",
       "estimated_seconds": 720,
       "verified": true
     },
@@ -569,7 +569,7 @@
       "unit": "€",
       "decimals": 0,
       "explanation": "La reprise suit le rythme de l’amortissement du bien financé, qui court à partir de la mise en service. Dotation N = 240 000 / 5 × 6/12 = 24 000 €. Reprise = 90 000 × 24 000 / 240 000 = 9 000 €. Partir de la date d’encaissement (9 mois) donnerait 13 500 € ; retenir une année pleine donnerait 18 000 €.",
-      "source_ref": "PCG, règles relatives aux subventions d’investissement (règl. ANC 2014-03) ; comptes 139, 777",
+      "source_ref": "PCG, règles relatives aux subventions d’investissement (règl. ANC 2014-03 modifié par le règl. ANC 2022-06) ; comptes 139, 747",
       "estimated_seconds": 150,
       "verified": true
     },
@@ -678,7 +678,7 @@
         ]
       },
       "explanation": "Les trois procédures pertinentes couvrent la mesure de l’affectation, l’évaluation de la reprise de subvention et l’exhaustivité des dividendes à payer. Aucune opération d’apport n’ayant eu lieu, le commissaire aux apports n’a pas à intervenir ; la caisse et les engagements de retraite relèvent d’autres cycles. Chiffres de contrôle : 5 % × 420 000 = 21 000 € > 200 000 − 185 000 = 15 000 €, d’où une dotation de 15 000 € ; somme affectée 420 000 + 15 000 = 435 000 € = 15 000 + 300 000 + 100 000 + 20 000.",
-      "source_ref": "NEP 330 ; C. com. art. L232-10 ; PCG, règles relatives aux subventions d’investissement ; comptes 1061, 457, 139, 777",
+      "source_ref": "NEP 330 ; C. com. art. L232-10 ; PCG, règles relatives aux subventions d’investissement (règl. ANC 2022-06) ; comptes 1061, 457, 139, 747",
       "estimated_seconds": 480,
       "verified": true
     },
@@ -778,7 +778,7 @@
       "unit": "€",
       "decimals": 0,
       "explanation": "Terrain (non amortissable) avec clause d’inaliénabilité : reprise sur la durée de la clause, 64 000 / 8 = 8 000 €. Équipement : dotation N = 200 000 / 4 × 3/12 = 12 500 € ; reprise = 50 000 × 12 500 / 200 000 = 3 125 €. Total = 11 125 €. Erreurs classiques : reprendre le terrain par dixièmes (6 400 €, total 9 525 €), réservé à l’absence de clause d’inaliénabilité ; ne pas proratiser l’équipement (12 500 €, total 20 500 €) ; ne rien reprendre sur le terrain au motif qu’il n’est pas amorti (total 3 125 €).",
-      "source_ref": "PCG, règles relatives aux subventions d’investissement (règl. ANC 2014-03) ; CGI art. 42 septies (rythme de reprise des subventions finançant un bien non amortissable) ; comptes 131, 139, 777",
+      "source_ref": "PCG, règles relatives aux subventions d’investissement (règl. ANC 2014-03) ; CGI art. 42 septies (rythme de reprise des subventions finançant un bien non amortissable) ; comptes 131, 139, 747 (règl. ANC 2022-06)",
       "estimated_seconds": 210,
       "verified": true
     },
@@ -921,9 +921,9 @@
           "id": "q4-demarche",
           "kind": "open",
           "prompt": "Décrivez la démarche de l’auditeur sur ce projet de distribution.",
-          "model_answer": "L’auditeur obtient la correction de la reprise de subvention (débit 777, crédit 139 pour 18 000 €) avant l’arrêté définitif des comptes, car le bénéfice distribuable se détermine sur les comptes approuvés. Il signale à la direction que le dividende envisagé excède de 38 000 € le bénéfice distribuable corrigé et qu’il ne peut être voté que si la résolution prévoit expressément un prélèvement sur les réserves facultatives. Il vérifie le texte des résolutions et, après l’assemblée, la conformité de l’écriture d’affectation. Une distribution votée sans ce prélèvement exprès excéderait le bénéfice distribuable de l’exercice : ce serait un dividende fictif, irrégularité à signaler à l’assemblée. La société pourrait en exiger la restitution des actionnaires qui en connaissaient le caractère irrégulier ou ne pouvaient l’ignorer (C. com. art. L232-17), et les dirigeants engageraient leur responsabilité civile, voire pénale (délit de répartition de dividendes fictifs).",
+          "model_answer": "L’auditeur obtient la correction de la reprise de subvention (débit 747, crédit 139 pour 18 000 €) avant l’arrêté définitif des comptes, car le bénéfice distribuable se détermine sur les comptes approuvés. Il signale à la direction que le dividende envisagé excède de 38 000 € le bénéfice distribuable corrigé et qu’il ne peut être voté que si la résolution prévoit expressément un prélèvement sur les réserves facultatives. Il vérifie le texte des résolutions et, après l’assemblée, la conformité de l’écriture d’affectation. Une distribution votée sans ce prélèvement exprès excéderait le bénéfice distribuable de l’exercice : ce serait un dividende fictif, irrégularité à signaler à l’assemblée. La société pourrait en exiger la restitution des actionnaires qui en connaissaient le caractère irrégulier ou ne pouvaient l’ignorer (C. com. art. L232-17), et les dirigeants engageraient leur responsabilité civile, voire pénale (délit de répartition de dividendes fictifs).",
           "key_points": [
-            "Correction préalable de la reprise de subvention (777 / 139 pour 18 000 €)",
+            "Correction préalable de la reprise de subvention (747 / 139 pour 18 000 €)",
             "Dépassement de 38 000 € à couvrir par un prélèvement exprès sur les réserves facultatives",
             "Contrôle des résolutions et de l’écriture d’affectation",
             "À défaut : dividende fictif, irrégularité à signaler"
@@ -933,7 +933,7 @@
       ],
       "total_points": 12,
       "explanation": "Le cas combine trois pièges : l’incidence d’un ajustement d’audit sur le bénéfice distribuable, la réserve légale calculée après pertes antérieures puis plafonnée, et la distribution de réserves qui exige une décision expresse. La réserve légale n’est jamais distribuable.",
-      "source_ref": "C. com. art. L232-10, L232-11 et L232-12 ; PCG comptes 139, 777, 1061, 1068",
+      "source_ref": "C. com. art. L232-10, L232-11 et L232-12 ; PCG (règl. ANC 2022-06) comptes 139, 747, 1061, 1068",
       "estimated_seconds": 900,
       "verified": true
     }

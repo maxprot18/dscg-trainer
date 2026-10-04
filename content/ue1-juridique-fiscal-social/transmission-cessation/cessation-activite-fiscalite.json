@@ -155,10 +155,10 @@
         "liquidation",
         "réalisation de l'actif",
         "cession d'immeuble",
-        "775",
-        "675"
+        "757",
+        "657"
       ],
-      "statement": "Le liquidateur de la SA Marbeuf, en liquidation amiable, cède le 15 septembre N l'immeuble de la société pour un prix global de 420 000 €, encaissé par virement. L'immeuble figure au bilan pour un terrain de 60 000 € et une construction de 300 000 € amortie à hauteur de 170 000 € à la date de cession (dotation de la période déjà comptabilisée). Passez l'écriture de cession, en utilisant les comptes 512, 775, 675, 211, 213 et 2813.",
+      "statement": "Le liquidateur de la SA Marbeuf, en liquidation amiable, cède le 15 septembre N l'immeuble de la société pour un prix global de 420 000 €, encaissé par virement. L'immeuble figure au bilan pour un terrain de 60 000 € et une construction de 300 000 € amortie à hauteur de 170 000 € à la date de cession (dotation de la période déjà comptabilisée). Passez l'écriture de cession, en utilisant les comptes 512, 757, 657, 211, 213 et 2813.",
       "date": "15/09/N",
       "entries": [
         {
@@ -168,14 +168,14 @@
           "credit": 0
         },
         {
-          "account": "775",
-          "label": "Produits des cessions d'éléments d'actif",
+          "account": "757",
+          "label": "Produits des cessions d'immobilisations incorporelles et corporelles",
           "debit": 0,
           "credit": 420000
         },
         {
-          "account": "675",
-          "label": "Valeurs comptables des éléments d'actif cédés",
+          "account": "657",
+          "label": "Valeurs comptables des immobilisations incorporelles et corporelles cédées",
           "debit": 190000,
           "credit": 0
         },
@@ -198,8 +198,8 @@
           "credit": 300000
         }
       ],
-      "explanation": "La société en liquidation conserve sa personnalité morale et sa comptabilité pour les besoins de la liquidation : la cession est enregistrée selon les règles habituelles. Valeur nette comptable : terrain 60 000 + construction (300 000 − 170 000) = 190 000 € au débit du 675 ; les amortissements (2813) sont soldés. Plus-value : 420 000 − 190 000 = 230 000 €, comprise dans le résultat de la période de liquidation et soumise à l'IS au taux normal (cessation d'entreprise, CGI art. 221-2).",
-      "source_ref": "PCG (règl. ANC 2014-03), comptes 211, 213, 2813, 675 et 775 ; C. com. art. L. 237-2 ; CGI art. 221-2",
+      "explanation": "La société en liquidation conserve sa personnalité morale et sa comptabilité pour les besoins de la liquidation : la cession est enregistrée selon les règles habituelles. Valeur nette comptable : terrain 60 000 + construction (300 000 − 170 000) = 190 000 € au débit du 657 (compte qui remplace l'ancien 675 depuis le règl. ANC 2022-06, le prix étant porté au 757) ; les amortissements (2813) sont soldés. Plus-value : 420 000 − 190 000 = 230 000 €, comprise dans le résultat de la période de liquidation et soumise à l'IS au taux normal (cessation d'entreprise, CGI art. 221-2).",
+      "source_ref": "PCG (règl. ANC 2014-03 modifié par le règl. ANC 2022-06), comptes 211, 213, 2813, 657 et 757 ; C. com. art. L. 237-2 ; CGI art. 221-2",
       "verified": true,
       "estimated_seconds": 210
     }

@@ -148,9 +148,9 @@ function Heatmap({ ues }: { ues: UeProgress[] }) {
         <Legend />
         {ues.map((ue) => (
           <section key={ue.id} aria-label={`Carte ${ue.id}`}>
-            <h3 className="mb-1 text-sm font-semibold">
+            <h2 className="mb-1 text-sm font-semibold">
               {ue.id} <span className="text-muted-foreground font-normal">— {ue.covered} / {ue.total} notions travaillées</span>
-            </h3>
+            </h2>
             <div className="flex flex-col gap-1">
               {ue.themes.map((t) => (
                 <div key={t.id} className="flex flex-wrap items-center gap-1">
@@ -161,7 +161,7 @@ function Heatmap({ ues }: { ues: UeProgress[] }) {
                       title={notionLabel(n)}
                       aria-label={notionLabel(n)}
                       data-mastery={n.mastery}
-                      className={cn('size-4 rounded-sm border sm:size-5', MASTERY_COLORS[n.mastery])}
+                      className={cn('size-6 rounded-sm border', MASTERY_COLORS[n.mastery])}
                     />
                   ))}
                 </div>

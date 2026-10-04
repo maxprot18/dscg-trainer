@@ -8,7 +8,7 @@
  */
 import taxonomyJson from '@content/taxonomy.json'
 
-import { parseExercises } from '@/content/load'
+import { parseExercises } from '@/content/parse'
 import { taxonomySchema, type Exercise } from '@/content/schema'
 import { DscgDatabase, exportProgress, importProgress } from '@/db/db'
 import { loadProgress } from '@/db/progress'
