@@ -9,7 +9,7 @@
 **Trois situations à distinguer** :
 - **Changement de méthode** (méthode d'évaluation ou de présentation) : rétrospectif. L'effet cumulé à l'ouverture, calculé comme si la nouvelle méthode avait toujours été appliquée, est imputé, net d'impôt, sur le **report à nouveau** ; le résultat de l'exercice est calculé avec la nouvelle méthode.
 - **Changement d'estimation** (durée d'utilité, coût d'un contrat, taux de recouvrement…) : **prospectif**, en résultat de l'exercice et des suivants.
-- **Correction d'erreur** : omission ou inexactitude commise sur un exercice antérieur ; corrigée dans le résultat de l'exercice où elle est découverte (pas d'imputation sur le report à nouveau), avec information en annexe si elle est significative.
+- **Correction d'erreur** : omission ou inexactitude commise sur un exercice antérieur ; corrigée dans le résultat de l'exercice où elle est découverte (pas de retraitement rétrospectif), sauf si l'écriture erronée avait été imputée directement sur les capitaux propres (correction alors en capitaux propres). Depuis le règl. ANC 2022-06, une correction significative est présentée sur une ligne distincte du compte de résultat, hors résultat courant (ou sur une ligne distincte du report à nouveau dans le cas des capitaux propres), avec information en annexe.
 
 L'annexe justifie tout changement de méthode et en donne l'incidence, avec une information comparative permettant d'apprécier l'effet du changement.
 

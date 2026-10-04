@@ -2,7 +2,7 @@
 
 **Références :** directive (UE) 2022/2464 (CSRD) ; ESRS 1, chapitre 3, et ESRS E1 (règl. délégué (UE) 2023/2772) ; C. env. art. L. 229-25 ; GHG Protocol, *Corporate Standard* (WRI/WBCSD, 2004)
 
-**CSRD** : les entreprises concernées publient un état de durabilité dans le rapport de gestion, selon les normes ESRS, vérifié par un tiers (assurance limitée). Le calendrier a été reporté (directive « stop-the-clock » (UE) 2025/794) et le champ d'application resserré par le paquet de simplification « Omnibus » : vérifier les seuils et dates en vigueur.
+**CSRD** : les entreprises concernées publient un état de durabilité dans le rapport de gestion, selon les normes ESRS, vérifié par un tiers (assurance limitée). Le calendrier a été reporté (directive « stop-the-clock » (UE) 2025/794) et le champ d'application resserré par la directive « Omnibus I » (UE) 2026/470 aux entreprises de plus de 1 000 salariés et 450 M€ de chiffre d'affaires net (transposition au plus tard le 19 mars 2027) : vérifier les seuils et dates applicables à l'exercice.
 
 **Double matérialité** (ESRS 1) : une question de durabilité est matérielle si elle l'est d'un point de vue :
 - d'impact (inside-out) : incidences réelles ou potentielles de l'entreprise et de sa chaîne de valeur sur les personnes et l'environnement ;

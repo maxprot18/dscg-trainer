@@ -10,7 +10,7 @@
 - **Effets financiers attendus** (E1-9) : part des actifs et du chiffre d'affaires exposés aux risques physiques et de transition ; informations soumises à une application progressive.
 - **Connectivité** : les hypothèses climatiques doivent être cohérentes avec les comptes (tests de dépréciation, durées d'amortissement, provisions, quotas d'émission).
 - Autres indicateurs utiles au diagnostic : taux de fréquence des accidents, rotation du personnel, écart de rémunération femmes-hommes, part du chiffre d'affaires et des CapEx alignés sur la taxonomie.
-- Le calendrier et le contenu des obligations ont été révisés en 2025 (directive 2025/794 « stop-the-clock », adoptée ; autres mesures du paquet « Omnibus » soumises à leur propre procédure) : vérifier les textes en vigueur pour l'exercice étudié.
+- Le calendrier et le champ des obligations ont été révisés (directive 2025/794 « stop-the-clock » ; directive « Omnibus I » 2026/470, qui réserve la CSRD aux entreprises de plus de 1 000 salariés et 450 M€ de chiffre d'affaires net, à transposer d'ici mars 2027) ; les ESRS sont simplifiés par acte délégué : vérifier les textes en vigueur pour l'exercice étudié.
 
 **Formules clés :** intensité = émissions (tCO₂e) ÷ CA net (M€) ; coût carbone annuel = émissions × prix interne ; VAN = −I₀ + Σ (FNTₜ − Eₜ × p) (1 + k)⁻ᵗ
 

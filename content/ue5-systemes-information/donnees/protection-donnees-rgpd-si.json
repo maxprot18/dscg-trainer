@@ -88,12 +88,12 @@
         "amende",
         "reprise de provision"
       ],
-      "statement": "Fin N, la société Chartreuse, contrôlée par la CNIL pour une conservation excessive des données de ses clients, a constitué une provision pour risque de 120 000 € (dotation enregistrée au compte 6875). Le 15 mai N+1, la CNIL prononce une amende administrative de 150 000 €, réglée le même jour par virement bancaire. Passez l'écriture du 15 mai N+1 (paiement de l'amende et reprise de la provision devenue sans objet). Convention de l'exercice (plan de comptes de la société) : utilisez les comptes 6712 « Pénalités et amendes », 512 « Banque », 1511 « Provisions pour litiges » et 7875 « Reprises sur provisions » (symétrique du compte de dotation utilisé en N).",
+      "statement": "Fin N, la société Chartreuse, contrôlée par la CNIL pour une conservation excessive des données de ses clients, a constitué une provision pour risque de 120 000 € (dotation enregistrée au compte 6815, provision au compte 1514). Le 15 mai N+1, la CNIL prononce une amende administrative de 150 000 €, réglée le même jour par virement bancaire. Passez l'écriture du 15 mai N+1 (paiement de l'amende et reprise de la provision devenue sans objet). Utilisez les comptes 6582 « Pénalités, amendes fiscales et pénales », 512 « Banque », 1514 « Provisions pour amendes et pénalités » et 7815 « Reprises sur provisions d'exploitation » (symétrique du compte de dotation utilisé en N).",
       "date": "15/05/N+1",
       "entries": [
         {
-          "account": "6712",
-          "label": "Pénalités et amendes",
+          "account": "6582",
+          "label": "Pénalités, amendes fiscales et pénales",
           "debit": 150000,
           "credit": 0
         },
@@ -104,20 +104,20 @@
           "credit": 150000
         },
         {
-          "account": "1511",
-          "label": "Provisions pour litiges",
+          "account": "1514",
+          "label": "Provisions pour amendes et pénalités",
           "debit": 120000,
           "credit": 0
         },
         {
-          "account": "7875",
-          "label": "Reprises sur provisions",
+          "account": "7815",
+          "label": "Reprises sur provisions d'exploitation",
           "debit": 0,
           "credit": 120000
         }
       ],
-      "explanation": "L'amende définitivement prononcée est une charge de N+1 (compte 6712 imposé par l'énoncé), réglée par banque : 150 000 €. La provision constituée en N devient sans objet puisque le risque s'est réalisé : elle est intégralement reprise (débit 1511, crédit 7875 pour 120 000 €, compte de reprise symétrique de la dotation). L'impact net sur le résultat de N+1 est de −30 000 €, l'insuffisance de la provision. Le classement de ces comptes a été remanié par le règlement ANC 2022-06 (exercices ouverts depuis le 1er janvier 2025, nouvelle définition du résultat exceptionnel) : c'est pourquoi l'énoncé impose les comptes ; le raisonnement (charge définitive, reprise intégrale de la provision) n'en dépend pas. Fiscalement, les sanctions pécuniaires et pénalités mises à la charge des contrevenants à des obligations légales ne sont pas déductibles (CGI art. 39, 2) : l'amende est réintégrée extra-comptablement ; symétriquement, la dotation de N, non déductible, avait été réintégrée et la reprise de 120 000 € est déduite.",
-      "source_ref": "PCG (règl. ANC 2014-03 modifié, notamment par le règl. ANC 2022-06), règles relatives aux provisions ; comptes imposés par l'énoncé ; CGI art. 39, 2 (non-déductibilité des sanctions) ; RGPD art. 5 §1 e) et 83",
+      "explanation": "L'amende définitivement prononcée est une charge de N+1 (compte 6582), réglée par banque : 150 000 €. La provision constituée en N devient sans objet puisque le risque s'est réalisé : elle est intégralement reprise (débit 1514, crédit 7815 pour 120 000 €, compte de reprise symétrique de la dotation). L'impact net sur le résultat de N+1 est de −30 000 €, l'insuffisance de la provision. Depuis le règlement ANC 2022-06 (exercices ouverts à compter du 1er janvier 2025), les pénalités et amendes ne relèvent plus du résultat exceptionnel : l'ancien compte 6712 est remplacé par le compte d'exploitation 6582, et la provision correspondante est dotée et reprise en exploitation (6815 / 7815). Fiscalement, les sanctions pécuniaires et pénalités mises à la charge des contrevenants à des obligations légales ne sont pas déductibles (CGI art. 39, 2) : l'amende est réintégrée extra-comptablement ; symétriquement, la dotation de N, non déductible, avait été réintégrée et la reprise de 120 000 € est déduite.",
+      "source_ref": "PCG (règl. ANC 2014-03 modifié par le règl. ANC 2022-06), règles relatives aux provisions ; comptes 1514, 6582, 6815 et 7815 ; CGI art. 39, 2 (non-déductibilité des sanctions) ; RGPD art. 5 §1 e) et 83",
       "verified": true,
       "estimated_seconds": 180
     },
