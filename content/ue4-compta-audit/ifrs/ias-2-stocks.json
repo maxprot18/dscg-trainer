@@ -26,6 +26,109 @@
       "source_ref": "IAS 2 §10, §12-13 et §16 (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-ifrs-ias2-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-2-stocks",
+      "difficulty": 1,
+      "tags": [
+        "formules de coût",
+        "LIFO"
+      ],
+      "source_ref": "IAS 2 §23-27 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "explanation": "IAS 2 ne retient, pour les éléments interchangeables, que deux formules de coût : premier entré, premier sorti (FIFO) et coût moyen pondéré (§25). La méthode LIFO n'est pas admise. Le coût moyen pondéré peut être calculé sur une base périodique ou à chaque nouvelle entrée, selon la situation de l'entité (§27) : les deux options citées sont donc autorisées. L'identification spécifique est réservée aux éléments non interchangeables (§23).",
+      "statement": "Une société IFRS détient des stocks de composants électroniques interchangeables. Laquelle des méthodes suivantes ne peut pas être utilisée pour déterminer le coût de ces stocks selon IAS 2 ?",
+      "options": [
+        "Premier entré, premier sorti (FIFO)",
+        "Coût moyen pondéré calculé après chaque entrée",
+        "Coût moyen pondéré calculé sur la période",
+        "Dernier entré, premier sorti (LIFO)"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ue4-ifrs-ias2-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-2-stocks",
+      "difficulty": 2,
+      "tags": [
+        "valeur nette de réalisation",
+        "matières premières",
+        "dépréciation"
+      ],
+      "source_ref": "IAS 2 §28-32 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "explanation": "La dépréciation des stocks vise à ne pas les porter à l'actif pour un montant supérieur à celui que l'entité récupérera. Pour les matières premières, ce qui compte est la rentabilité des produits finis : si ceux-ci seront vendus au moins à leur coût de revient, aucune dépréciation n'est constatée sur les matières, même si leur prix a baissé. En revanche, si la baisse du prix des matières indique que le coût des produits finis sera supérieur à leur valeur nette de réalisation, les matières sont dépréciées ; le coût de remplacement peut alors être la meilleure mesure disponible de leur valeur nette de réalisation (§32).",
+      "statement": "Selon IAS 2, une entité doit déprécier son stock de matières premières dès que leur prix de remplacement devient inférieur à leur coût, même si les produits finis dans lesquels elles seront incorporées seront vendus au-dessus de leur coût de revient.",
+      "answer": false,
+      "justification": "Faux : les matières destinées à la production ne sont pas dépréciées en dessous de leur coût si les produits finis dans lesquels elles seront incorporées seront vendus au moins à leur coût (IAS 2 §32)."
+    },
+    {
+      "id": "ue4-ifrs-ias2-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-2-stocks",
+      "difficulty": 2,
+      "tags": [
+        "coût de transformation",
+        "capacité normale",
+        "sous-activité"
+      ],
+      "source_ref": "IAS 2 §12-13 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 150,
+      "explanation": "Les frais fixes de production sont imputés au coût des stocks sur la base de la capacité normale (IAS 2 §13) : 240 000 / 20 000 = 12 € par unité. Coût unitaire = 15 + 12 = 27 €. La part non imputée des frais fixes, (20 000 − 16 000) × 12 = 48 000 €, correspond à la sous-activité et est comptabilisée en charges de la période. Erreur classique : diviser les frais fixes par la production réelle (240 000 / 16 000 = 15 €), ce qui donne 30 € et incorpore indûment le coût de la sous-activité dans les stocks.",
+      "statement": "La société Ardoise (IFRS) fabrique un seul produit. Pour l'exercice N :\n- coûts variables de production (matières, main-d'œuvre directe, énergie) : 15 € par unité ;\n- frais généraux fixes de production : 240 000 € ;\n- capacité normale des installations : 20 000 unités ;\n- production réelle de N, en baisse à la suite d'une grève : 16 000 unités.\nCalculez le coût de production unitaire à retenir pour l'évaluation des stocks de produits finis selon IAS 2, en euros (arrondi au centime).",
+      "expected_value": 27,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.01
+      },
+      "unit": "€",
+      "decimals": 2
+    },
+    {
+      "id": "ue4-ifrs-ias2-0005",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-2-stocks",
+      "difficulty": 2,
+      "tags": [
+        "valeur nette de réalisation",
+        "reprise de dépréciation"
+      ],
+      "source_ref": "IAS 2 §6, §9 et §33-34 (règlement UE 2023/1803) ; PCG comptes 397 et 7817",
+      "verified": true,
+      "estimated_seconds": 180,
+      "explanation": "Valeur nette de réalisation = prix de vente estimé − coûts nécessaires pour réaliser la vente = 48 000 − 5 500 = 42 500 € (IAS 2 §6). Le stock est évalué au plus faible du coût (45 000 €) et de la VNR (42 500 €) : la dépréciation nécessaire est de 2 500 € (§9). La dépréciation existante (6 000 €) est donc reprise à hauteur de 3 500 €, la VNR ayant augmenté (§33) ; la reprise ne peut excéder la dépréciation initiale, ce qui est le cas ici. Elle est comptabilisée en diminution des charges de la période (§34) : débit 397, crédit 7817.",
+      "statement": "La société Kerlan (IFRS) détient au 31/12/N un lot de marchandises dont le coût est de 45 000 €. Ce lot, déjà en stock un an plus tôt, avait été déprécié de 6 000 € au 31/12/N−1. Au 31/12/N, son prix de vente estimé dans le cours normal de l'activité est de 48 000 € et les frais de commercialisation nécessaires pour le vendre sont estimés à 5 500 €. Passez l'écriture d'ajustement de la dépréciation au 31/12/N (n'enregistrez que l'ajustement net ; utilisez les comptes du PCG).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "397",
+          "label": "Dépréciations des stocks de marchandises",
+          "debit": 3500,
+          "credit": 0
+        },
+        {
+          "account": "7817",
+          "label": "Reprises sur dépréciations des actifs circulants",
+          "debit": 0,
+          "credit": 3500
+        }
+      ]
     }
   ]
 }

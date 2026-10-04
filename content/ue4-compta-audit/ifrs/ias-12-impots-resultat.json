@@ -1,0 +1,232 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-ifrs-ias12-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-12-impots-resultat",
+      "difficulty": 1,
+      "tags": [
+        "différence temporelle déductible",
+        "actif d'impôt différé"
+      ],
+      "source_ref": "IAS 12 §5, §8 et §24 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "explanation": "La provision a une valeur comptable de 40 000 € et une base fiscale nulle (montant déductible au règlement, IAS 12 §8) : c'est une différence temporelle déductible de 40 000 €, qui donnera lieu à une déduction fiscale future. Un actif d'impôt différé de 40 000 × 25 % = 10 000 € est comptabilisé dès N, le bénéfice imposable futur étant probable (§24). Ce n'est pas un passif d'impôt différé (on ne paiera pas plus d'impôt, on en paiera moins), ni une différence permanente (la charge sera déduite plus tard). Attendre le paiement reviendrait à ignorer la différence temporelle existant à la clôture.",
+      "statement": "Au 31/12/N, la société Douarnenez (IFRS) comptabilise une provision pour garantie de 40 000 €. Fiscalement, la charge ne sera déductible qu'au moment des dépenses effectives de garantie. Le taux d'impôt est de 25 % et l'entité prévoit des bénéfices imposables suffisants. Quelle est la conséquence au regard d'IAS 12 ?",
+      "options": [
+        "Un passif d'impôt différé de 10 000 €",
+        "Aucun impôt différé, car il s'agit d'une différence permanente",
+        "Un actif d'impôt différé de 10 000 €",
+        "Un actif d'impôt différé, comptabilisé seulement lors du paiement des dépenses de garantie"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ue4-ifrs-ias12-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-12-impots-resultat",
+      "difficulty": 2,
+      "tags": [
+        "taux d'impôt",
+        "taux adopté"
+      ],
+      "source_ref": "IAS 12 §47-49 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 75,
+      "explanation": "Les impôts différés sont évalués aux taux d'impôt attendus pour la période au cours de laquelle l'actif sera réalisé ou le passif réglé, sur la base des taux adoptés ou quasi adoptés à la date de clôture (IAS 12 §47). La loi étant adoptée avant la clôture et la différence se résorbant en N+3, le taux de 26 % s'applique : passif de 200 000 × 26 % = 52 000 €. Le taux courant (30 %) ne s'applique pas à une résorption future soumise à un autre taux. IAS 12 retient la méthode du report variable : le stock d'impôts différés est réévalué à chaque changement de taux, il n'est pas figé au taux d'origine. Une moyenne n'aurait de sens que si la différence se résorbait sur plusieurs exercices soumis à des taux différents.",
+      "statement": "Dans un pays où le taux d'impôt sur les bénéfices est de 30 %, une loi définitivement adoptée en novembre N ramène ce taux à 26 % pour les exercices ouverts à compter du 01/01/N+2. Au 31/12/N, la société Penmarc'h (IFRS) a une différence temporelle imposable de 200 000 € qui se résorbera entièrement en N+3. Quel taux applique-t-elle pour évaluer le passif d'impôt différé au 31/12/N ?",
+      "options": [
+        "30 %, taux en vigueur pour l'exercice N",
+        "26 %, taux adopté à la clôture et applicable lors de la résorption de la différence",
+        "Le taux en vigueur lors de la naissance de la différence, sans réévaluation ultérieure",
+        "28 %, moyenne des taux en vigueur entre la clôture et la résorption"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ue4-ifrs-ias12-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-12-impots-resultat",
+      "difficulty": 2,
+      "tags": [
+        "pertes fiscales reportables",
+        "actif d'impôt différé"
+      ],
+      "source_ref": "IAS 12 §34-37 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "explanation": "IAS 12 §34 pose le même critère de probabilité que pour les différences temporelles déductibles. §35 ajoute que l'existence de pertes fiscales non utilisées constitue un indice fort que des bénéfices futurs pourraient ne pas être disponibles : une entité ayant un historique de pertes récentes ne comptabilise l'actif que dans la mesure où elle a des différences temporelles imposables suffisantes ou d'autres indications convaincantes. Les critères d'appréciation sont détaillés au §36 (différences imposables, probabilité de bénéfices avant l'expiration des pertes, causes identifiables non récurrentes, opportunités de planification fiscale). L'actif non comptabilisé est réapprécié à chaque clôture (§37).",
+      "statement": "Selon IAS 12, un actif d'impôt différé au titre de pertes fiscales reportables n'est comptabilisé que dans la mesure où il est probable que l'entité disposera de bénéfices imposables futurs sur lesquels imputer ces pertes.",
+      "answer": true,
+      "justification": "Vrai : IAS 12 §34 subordonne la comptabilisation à la probabilité de bénéfices imposables futurs suffisants."
+    },
+    {
+      "id": "ue4-ifrs-ias12-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-12-impots-resultat",
+      "difficulty": 3,
+      "tags": [
+        "différence temporelle imposable",
+        "amortissement fiscal accéléré",
+        "changement de taux"
+      ],
+      "source_ref": "IAS 12 §5, §15 et §47 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 240,
+      "explanation": "Au 31/12/N+1 : valeur comptable = 360 000 − 2 × 60 000 = 240 000 € ; base fiscale = 360 000 − 2 × 90 000 = 180 000 €. Différence temporelle imposable = 60 000 € (IAS 12 §5 et §15). Elle augmentera encore en N+2 et N+3 (fin de l'amortissement fiscal), puis se résorbera en N+4 et N+5, donc au cours de périodes soumises au taux de 25 %, adopté avant la clôture (§47). Passif d'impôt différé = 60 000 × 25 % = 15 000 €. Erreurs classiques : appliquer le taux de 28 % (16 800 €) ; ne retenir que l'écart d'une année, 30 000 × 25 % = 7 500 €.",
+      "statement": "La société Rosporden (IFRS) a acquis un équipement le 01/01/N pour 360 000 €. Comptablement, il est amorti linéairement sur 6 ans sans valeur résiduelle. Fiscalement, la législation (pays fictif) permet de l'amortir linéairement sur 4 ans. Le taux d'impôt en vigueur en N et N+1 est de 28 % ; une loi adoptée en octobre N+1 le fixe à 25 % pour les exercices ouverts à compter du 01/01/N+2. Calculez le passif d'impôt différé relatif à cet équipement au 31/12/N+1, en euros.",
+      "expected_value": 15000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "€",
+      "decimals": 0
+    },
+    {
+      "id": "ue4-ifrs-ias12-0005",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-12-impots-resultat",
+      "difficulty": 2,
+      "tags": [
+        "réévaluation",
+        "impôt différé en OCI"
+      ],
+      "source_ref": "IAS 16 §39 (règlement UE 2023/1803) ; IAS 12 §15, §20 et §61A-62 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 180,
+      "explanation": "La hausse de valeur (950 000 − 800 000 = 150 000 €) est comptabilisée en autres éléments du résultat global et cumulée en capitaux propres (IAS 16 §39). La valeur comptable du terrain (950 000 €) excède sa base fiscale (800 000 €) : différence temporelle imposable de 150 000 €, d'où un passif d'impôt différé de 37 500 € (IAS 12 §15 et §20). Cet impôt différé suit l'opération qui le génère : il est comptabilisé en OCI, en diminution de l'écart de réévaluation (IAS 12 §61A-62), qui s'établit à 150 000 − 37 500 = 112 500 €. Aucune charge d'impôt n'affecte le résultat net.",
+      "statement": "Au 31/12/N, la société Scaër (IFRS) applique le modèle de la réévaluation à ses terrains. Un terrain acquis 800 000 € est réévalué à sa juste valeur de 950 000 €. La réévaluation n'a aucune incidence fiscale (la base fiscale reste de 800 000 €) ; taux d'impôt : 25 %. Passez l'écriture de réévaluation au 31/12/N, impôt différé compris. Conventions : compte 105 pour l'écart de réévaluation (OCI cumulés en capitaux propres), compte 155 pour le passif d'impôt différé.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "211",
+          "label": "Terrains",
+          "debit": 150000,
+          "credit": 0
+        },
+        {
+          "account": "105",
+          "label": "Écarts de réévaluation",
+          "debit": 0,
+          "credit": 112500
+        },
+        {
+          "account": "155",
+          "label": "Impôts différés passifs",
+          "debit": 0,
+          "credit": 37500
+        }
+      ]
+    },
+    {
+      "id": "ue4-ifrs-ias12-0006",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-12-impots-resultat",
+      "difficulty": 3,
+      "tags": [
+        "impôts différés",
+        "pertes fiscales",
+        "différence permanente",
+        "compensation"
+      ],
+      "source_ref": "IAS 12 §5, §15, §24, §34-36, §47, §56 et §74 (règlement UE 2023/1803) ; IAS 1 §56 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 900,
+      "explanation": "Passif d'impôt différé brut 25 000 € (ligne de production), actif brut 50 000 € (provision et déficit reportable), d'où un actif net de 25 000 € présenté en non courant après compensation (IAS 12 §74). Le passage d'un passif net de 5 000 € à un actif net de 25 000 € se traduit par un produit d'impôt différé de 30 000 €. L'amende, non déductible, est une différence permanente sans impôt différé.",
+      "title": "Société Trégunc : impôts différés au 31/12/N",
+      "context": "La société Trégunc établit ses comptes selon les IFRS. Taux d'impôt adopté, applicable à tous les exercices futurs : 25 %. Toutes les créances et dettes d'impôt relèvent de la même administration fiscale, qui autorise le règlement du montant net. Au 31/12/N, on relève :\n- une ligne de production : valeur comptable 400 000 €, base fiscale 300 000 € (amortissement fiscal accéléré) ;\n- une provision pour indemnités de départ à la retraite de 120 000 €, déductible fiscalement seulement lors des versements ;\n- un déficit fiscal reportable sans limitation de durée de 80 000 € ; les prévisions budgétaires, fiables, montrent des bénéfices imposables suffisants dès N+1 pour l'absorber ;\n- une amende pénale de 10 000 € comptabilisée en charges, définitivement non déductible.\nAu 31/12/N−1, le bilan présentait un passif net d'impôt différé de 5 000 €. Toutes les variations d'impôt différé de N passent par le résultat net.",
+      "sub_questions": [
+        {
+          "id": "q1-passif-id",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez le montant brut du passif d'impôt différé au 31/12/N (en euros).",
+          "expected_value": 25000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Ligne de production : différence temporelle imposable = 400 000 − 300 000 = 100 000 € ; passif d'impôt différé = 100 000 × 25 % = 25 000 € (IAS 12 §15)."
+        },
+        {
+          "id": "q2-actif-id",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez le montant brut de l'actif d'impôt différé au 31/12/N (en euros).",
+          "expected_value": 50000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Provision : valeur comptable 120 000 €, base fiscale 0 : différence temporelle déductible de 120 000 € (§24). Déficit reportable : 80 000 €, utilisable de façon probable (§34). Actif d'impôt différé = (120 000 + 80 000) × 25 % = 50 000 €. L'amende ne génère aucun impôt différé."
+        },
+        {
+          "id": "q3-produit-id",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez le produit (ou la charge) d'impôt différé de l'exercice N (en euros ; valeur positive pour un produit, négative pour une charge).",
+          "expected_value": 30000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Position nette au 31/12/N : actif net de 50 000 − 25 000 = 25 000 €. Au 31/12/N−1 : passif net de 5 000 €. Variation = 25 000 − (−5 000) = 30 000 € d'amélioration, soit un produit d'impôt différé de 30 000 € en résultat."
+        },
+        {
+          "id": "q4-presentation",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Comment les impôts différés sont-ils présentés dans l'état de la situation financière au 31/12/N ?",
+          "options": [
+            "Un actif de 50 000 € et un passif de 25 000 €, sans compensation possible",
+            "Un actif net d'impôt différé de 25 000 €, en actif non courant",
+            "Un actif net d'impôt différé de 25 000 €, en actif courant",
+            "Un actif de 50 000 € en actif courant et un passif de 25 000 € en passif non courant"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Les actifs et passifs d'impôt différé sont compensés lorsque l'entité a un droit juridiquement exécutoire de compenser et qu'ils relèvent de la même administration fiscale (IAS 12 §74), ce qui est le cas ici : actif net de 25 000 €. Les impôts différés ne sont jamais classés en courant (IAS 1 §56)."
+        },
+        {
+          "id": "q5-justification",
+          "kind": "open",
+          "points": 4,
+          "prompt": "Expliquez pourquoi l'amende ne donne lieu à aucun impôt différé, et à quelles conditions l'actif d'impôt différé sur le déficit reportable peut être maintenu dans les comptes des exercices suivants.",
+          "model_answer": "L'amende est une charge définitivement non déductible : sa base fiscale est égale à sa valeur comptable (aucune incidence fiscale ni présente ni future), il n'existe donc pas de différence temporelle mais une différence permanente, sans impôt différé ; elle explique seulement un écart entre la charge d'impôt et le résultat comptable multiplié par le taux (rapprochement en annexe). L'actif sur le déficit reportable est maintenu tant qu'il reste probable que des bénéfices imposables futurs suffisants permettront d'imputer ce déficit (IAS 12 §34-36) ; l'existence de pertes est un indice défavorable qui exige des indications convaincantes, comme ici des prévisions fiables. L'actif est réexaminé à chaque clôture et réduit si la probabilité disparaît (§56).",
+          "key_points": [
+            "Amende : base fiscale = valeur comptable, différence permanente",
+            "Aucun impôt différé sur une différence permanente ; écart expliqué dans le rapprochement de la charge d'impôt",
+            "Déficit : actif maintenu si des bénéfices imposables futurs suffisants restent probables",
+            "Réexamen à chaque clôture et réduction de l'actif si la probabilité disparaît"
+          ]
+        }
+      ],
+      "total_points": 12
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-ifrs-ias7-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-7-tableau-flux-tresorerie",
+      "difficulty": 1,
+      "tags": [
+        "équivalents de trésorerie"
+      ],
+      "source_ref": "IAS 7 §6-7 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "explanation": "Un équivalent de trésorerie est un placement à court terme très liquide, facilement convertible en un montant connu de trésorerie et soumis à un risque négligeable de changement de valeur ; en pratique, son échéance est de 3 mois au plus à compter de la date d'acquisition (IAS 7 §6-7). Le dépôt à terme de 2 mois remplit ces conditions. Les actions sont exclues, leur valeur pouvant varier de façon non négligeable. L'obligation avait une échéance de 2 ans à l'acquisition : le critère s'apprécie à la date d'acquisition, pas à la clôture. Le dépôt à 12 mois bloqué n'est ni à court terme ni facilement convertible.",
+      "statement": "Au 31/12/N, la société Lorient Négoce (IFRS) détient les placements suivants. Lequel constitue un équivalent de trésorerie au sens d'IAS 7 ?",
+      "options": [
+        "Des actions d'une société cotée très liquides, acquises pour être revendues dans le mois",
+        "Un dépôt à terme de 2 mois souscrit le 15/12/N, remboursable sans pénalité significative",
+        "Une obligation acquise en N−1 avec une échéance initiale de 2 ans, venant à échéance dans 2 mois",
+        "Un dépôt à terme de 12 mois bloqué jusqu'à son échéance"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ue4-ifrs-ias7-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-7-tableau-flux-tresorerie",
+      "difficulty": 2,
+      "tags": [
+        "opérations non monétaires",
+        "investissement",
+        "financement"
+      ],
+      "source_ref": "IAS 7 §43-44 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "explanation": "Les opérations d'investissement et de financement qui n'ont pas exigé de trésorerie ni d'équivalents de trésorerie sont exclues du tableau des flux de trésorerie ; elles font l'objet d'une information dans les notes (IAS 7 §43-44). L'acquisition d'un actif en contrepartie de l'émission d'actions en est un exemple type. Présenter un décaissement et un encaissement fictifs de 2 M€ gonflerait artificiellement les flux d'investissement et de financement. L'acquisition d'un entrepôt ne relève en tout état de cause pas des flux opérationnels.",
+      "statement": "Le 01/06/N, la société Pontivy (IFRS) acquiert un entrepôt d'une valeur de 2 M€. Le prix est intégralement réglé par l'émission d'actions nouvelles remises au vendeur. Comment cette opération est-elle traitée dans le tableau des flux de trésorerie de N ?",
+      "options": [
+        "Décaissement de 2 M€ en flux d'investissement et encaissement de 2 M€ en flux de financement",
+        "Décaissement de 2 M€ en flux d'investissement uniquement",
+        "Elle n'apparaît pas dans le tableau des flux de trésorerie ; une information est donnée en annexe",
+        "Décaissement de 2 M€ en flux opérationnel, compensé par un encaissement de 2 M€ en flux de financement"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ue4-ifrs-ias7-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-7-tableau-flux-tresorerie",
+      "difficulty": 1,
+      "tags": [
+        "intérêts versés",
+        "classement des flux"
+      ],
+      "source_ref": "IAS 7 §31-34 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "explanation": "Pour une entité non financière, les intérêts versés peuvent être classés en activités opérationnelles (car ils entrent dans la détermination du résultat net) ou en activités de financement (car ils représentent le coût d'obtention des ressources financières) (IAS 7 §33). Le même choix existe pour les intérêts et dividendes reçus (opérationnel ou investissement) et pour les dividendes versés (financement ou opérationnel, §34). Le classement retenu est appliqué de façon permanente d'un exercice à l'autre (§31). Pour mémoire, IFRS 18 (applicable selon l'IASB aux exercices ouverts à compter du 1er janvier 2027) supprime ce choix pour la plupart des entités.",
+      "statement": "Selon IAS 7, une entité industrielle doit obligatoirement classer les intérêts versés sur ses emprunts dans les flux de trésorerie liés aux activités de financement.",
+      "answer": false,
+      "justification": "Faux : IAS 7 §33 permet de classer les intérêts versés en flux opérationnels ou en flux de financement, le choix étant appliqué de façon permanente."
+    },
+    {
+      "id": "ue4-ifrs-ias7-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-7-tableau-flux-tresorerie",
+      "difficulty": 2,
+      "tags": [
+        "méthode indirecte",
+        "flux opérationnels",
+        "besoin en fonds de roulement"
+      ],
+      "source_ref": "IAS 7 §14, §18(b) et §20 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 180,
+      "explanation": "Méthode indirecte (IAS 7 §18(b) et §20) : résultat net 420 + dotations aux amortissements 150 (charge sans effet de trésorerie) − plus-value de cession 30 (le prix encaissé de 80 relève des flux d'investissement) = 540 ; variation du besoin en fonds de roulement : − 40 (hausse des stocks) + 25 (baisse des créances) + 35 (hausse des dettes fournisseurs) = + 20. Flux opérationnels = 540 + 20 = 560 k€. Erreurs classiques : ajouter la plus-value (620), inverser les signes des variations (520).",
+      "statement": "La société Quimperlé (IFRS) n'a aucune dette financière. Pour l'exercice N (en milliers d'euros) :\n- résultat net : 420 ;\n- dotations aux amortissements : 150 ;\n- plus-value de cession d'une machine, comprise dans le résultat (prix de cession encaissé : 80) : 30 ;\n- stocks : augmentation de 40 sur l'exercice ;\n- créances clients : diminution de 25 ;\n- dettes fournisseurs : augmentation de 35.\nL'impôt payé est égal à la charge d'impôt de l'exercice. Calculez, selon la méthode indirecte, les flux nets de trésorerie liés aux activités opérationnelles de N, en milliers d'euros.",
+      "expected_value": 560,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "k€",
+      "decimals": 0
+    },
+    {
+      "id": "ue4-ifrs-ias7-0005",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-7-tableau-flux-tresorerie",
+      "difficulty": 3,
+      "tags": [
+        "tableau des flux de trésorerie",
+        "méthode indirecte",
+        "opérations non monétaires",
+        "intérêts versés"
+      ],
+      "source_ref": "IAS 7 §6-8, §18-20, §31-34 et §43-44 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 900,
+      "explanation": "Les flux opérationnels sont obtenus par la méthode indirecte à partir du résultat net, corrigé des éléments sans effet de trésorerie, des résultats de cession (dont le prix encaissé relève de l'investissement), de la charge d'intérêts lorsque les intérêts versés sont classés en financement, et de la variation du besoin en fonds de roulement. Les opérations non monétaires sont exclues. Total : 1 130 − 780 − 70 = + 280 k€, soit une trésorerie nette de clôture de 430 k€.",
+      "title": "Société Erdeven : tableau des flux de trésorerie de N",
+      "context": "La société Erdeven établit ses comptes selon les IFRS et présente ses flux opérationnels selon la méthode indirecte. Elle classe les intérêts versés et les dividendes versés en activités de financement. Données de l'exercice N (en milliers d'euros) :\n- résultat net : 800 (après charge d'intérêts de 40, entièrement payée dans l'exercice ; l'impôt payé est égal à la charge d'impôt) ;\n- dotations aux amortissements : 300 ;\n- cession d'une machine : prix encaissé 120, valeur nette comptable 90 ;\n- stocks : 500 au 01/01 et 560 au 31/12 ; créances clients : 700 au 01/01 et 650 au 31/12 ; dettes fournisseurs : 400 au 01/01 et 430 au 31/12 ;\n- acquisitions d'immobilisations payées dans l'exercice : 900 ;\n- un véhicule de 60 a en outre été acquis contre remise d'actions nouvelles au vendeur ;\n- nouvel emprunt bancaire encaissé : 250 ; remboursements d'emprunts : 180 ;\n- dividendes versés : 200 ;\n- augmentation de capital en numéraire : 100 (hors l'émission de 60 liée au véhicule).\nLa trésorerie nette au 01/01/N s'élève à 150 (disponibilités 180, découvert bancaire remboursable à vue −30, utilisé dans la gestion courante de la trésorerie).",
+      "sub_questions": [
+        {
+          "id": "q1-flux-operationnels",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez les flux nets de trésorerie liés aux activités opérationnelles de N (en k€).",
+          "expected_value": 1130,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "800 + 300 (amortissements) − 30 (plus-value : 120 − 90) + 40 (charge d'intérêts réintégrée, les intérêts versés étant classés en financement) − 60 (hausse des stocks) + 50 (baisse des créances) + 30 (hausse des dettes fournisseurs) = 1 130 k€."
+        },
+        {
+          "id": "q2-flux-investissement",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez les flux nets de trésorerie liés aux activités d'investissement de N (en k€, signe négatif pour un décaissement net).",
+          "expected_value": -780,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "− 900 (acquisitions payées) + 120 (prix de cession encaissé) = − 780 k€. Le véhicule acquis contre des actions n'a donné lieu à aucun décaissement : il est exclu (IAS 7 §43)."
+        },
+        {
+          "id": "q3-flux-financement",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez les flux nets de trésorerie liés aux activités de financement de N (en k€, signe négatif pour un décaissement net).",
+          "expected_value": -70,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "+ 250 (emprunt) − 180 (remboursements) − 40 (intérêts versés) − 200 (dividendes versés) + 100 (augmentation de capital en numéraire) = − 70 k€. L'émission de 60 liée au véhicule est exclue. Contrôle : variation de trésorerie = 1 130 − 780 − 70 = + 280 k€ ; trésorerie nette au 31/12/N = 150 + 280 = 430 k€."
+        },
+        {
+          "id": "q4-decouvert",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "Vrai ou faux : le découvert bancaire de 30 k€ doit être présenté en flux de financement plutôt qu'en déduction de la trésorerie d'ouverture.",
+          "answer": false,
+          "explanation": "Faux : les découverts bancaires remboursables à vue qui font partie intégrante de la gestion de trésorerie sont une composante de la trésorerie et des équivalents de trésorerie (IAS 7 §8). Ils viennent en déduction de la trésorerie ; leur variation n'est pas un flux de financement."
+        },
+        {
+          "id": "q5-justifications",
+          "kind": "open",
+          "points": 4,
+          "prompt": "Justifiez le traitement retenu pour la charge d'intérêts dans les flux opérationnels et pour le véhicule acquis contre des actions.",
+          "model_answer": "Le résultat net de 800 a été diminué de la charge d'intérêts de 40. Erdeven classant les intérêts versés en activités de financement (choix permis par IAS 7 §33 et appliqué de façon permanente), la charge d'intérêts est réintégrée dans le calcul indirect des flux opérationnels, puis le décaissement de 40 est présenté en flux de financement : il n'est ainsi compté qu'une fois. L'acquisition du véhicule contre émission d'actions est une opération non monétaire : aucun flux de trésorerie n'a eu lieu, elle est donc exclue du tableau, tant en investissement qu'en financement, et décrite dans les notes (IAS 7 §43-44).",
+          "key_points": [
+            "Intérêts classés en financement : réintégration de la charge dans les flux opérationnels",
+            "Décaissement de 40 présenté une seule fois, en financement",
+            "Véhicule contre actions = opération non monétaire exclue du tableau",
+            "Information en annexe sur l'opération non monétaire (IAS 7 §43)"
+          ]
+        }
+      ],
+      "total_points": 12
+    }
+  ]
+}
