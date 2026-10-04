@@ -60,7 +60,7 @@ export function CoursePage() {
       ) : (
         <>
           <article className="text-sm">
-            <Markdown source={text} />
+            <Markdown source={text} pageTitle />
           </article>
           <ReportLink href={courseIssueUrl(notionId, entry.notion.title)} label="Signaler une erreur dans cette fiche" />
         </>
