@@ -1,0 +1,168 @@
+{
+  "exercises": [
+    {
+      "id": "ue3-diag-business-0001",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "strategies-business",
+      "difficulty": 1,
+      "tags": [
+        "stratégies génériques",
+        "focalisation"
+      ],
+      "statement": "Une entreprise ne s'adresse qu'aux golfeurs gauchers de bon niveau et leur propose des clubs fabriqués sur mesure, vendus nettement plus cher que les modèles standards. Quelle stratégie générique suit-elle ?",
+      "options": [
+        "Domination par les coûts",
+        "Différenciation sur l'ensemble du marché",
+        "Focalisation par les coûts",
+        "Focalisation par la différenciation"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'option 4 est exacte : l'entreprise vise un segment étroit (les golfeurs gauchers exigeants) avec une offre perçue comme unique (sur mesure) vendue au prix fort : c'est une focalisation (concentration) fondée sur la différenciation. L'option 1 est fausse : rien n'indique la recherche du coût le plus bas, le prix fort traduit l'inverse. L'option 2 est fausse : la différenciation au sens strict s'adresse à l'ensemble du marché, pas à un segment étroit. L'option 3 est fausse : la focalisation par les coûts viserait un segment avec une offre au coût le plus bas, pas une offre sur mesure.",
+      "source_ref": "M. Porter, Competitive Strategy (1980), stratégies génériques",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue3-diag-business-0002",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "strategies-business",
+      "difficulty": 2,
+      "tags": [
+        "stratégies génériques",
+        "enlisement"
+      ],
+      "statement": "Une entreprise a des coûts nettement supérieurs à ceux du leader en coûts de son secteur, et ses clients ne perçoivent pas son offre comme supérieure à celle des concurrents. Selon Porter, elle se trouve dans une situation :",
+      "options": [
+        "d'océan bleu",
+        "d'enlisement (stuck in the middle)",
+        "d'intégration verticale",
+        "d'avantage de différenciation"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'option 2 est exacte : Porter qualifie d'enlisement (stuck in the middle) la situation d'une entreprise qui n'a ni le coût le plus bas ni une offre reconnue comme supérieure ; elle est exposée à la fois au leader en coûts et aux entreprises différenciées. L'option 1 est fausse : l'océan bleu désigne la création d'un espace de marché nouveau, pas une position défavorable sur un marché existant. L'option 3 est fausse : l'intégration verticale est une stratégie de groupe (choix des activités amont ou aval), sans rapport avec le constat. L'option 4 est fausse : par hypothèse, l'offre n'est pas perçue comme supérieure, il n'y a donc pas d'avantage de différenciation.",
+      "source_ref": "M. Porter, Competitive Strategy (1980), stratégies génériques",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue3-diag-business-0003",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "strategies-business",
+      "difficulty": 2,
+      "tags": [
+        "océan bleu",
+        "innovation-valeur"
+      ],
+      "statement": "Une chaîne de salles de sport supprime les cours collectifs et les vestiaires luxueux, réduit l'encadrement en salle, ouvre 24 heures sur 24 et lance une application de coaching personnalisé incluse dans l'abonnement. Quel outil correspond à cette démarche ?",
+      "options": [
+        "La recherche d'une domination par les coûts pure",
+        "La matrice du Boston Consulting Group",
+        "La grille Exclure / Atténuer / Renforcer / Créer de la stratégie océan bleu",
+        "La diversification conglomérale"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'option 3 est exacte : la chaîne agit sur les attributs de l'offre selon les quatre actions de la grille de l'océan bleu : exclure (cours collectifs, vestiaires luxueux), atténuer (encadrement), renforcer (amplitude horaire) et créer (coaching par application). Le but est d'obtenir à la fois des coûts bas et une valeur nouvelle pour une clientèle élargie. L'option 1 est fausse : une domination par les coûts pure réduirait les coûts sans créer d'élément de valeur nouveau. L'option 2 est fausse : la matrice BCG analyse un portefeuille de domaines d'activité, pas les attributs d'une offre. L'option 4 est fausse : la chaîne reste dans son métier ; il n'y a ni produit ni marché sans lien avec l'activité actuelle.",
+      "source_ref": "W.C. Kim et R. Mauborgne, Blue Ocean Strategy (2005), grille Exclure / Atténuer / Renforcer / Créer",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue3-diag-business-0004",
+      "type": "true_false",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "strategies-business",
+      "difficulty": 1,
+      "tags": [
+        "domination par les coûts",
+        "prix"
+      ],
+      "statement": "Une stratégie de domination par les coûts n'implique pas nécessairement de pratiquer les prix les plus bas du marché.",
+      "answer": true,
+      "justification": "Vrai : c'est le coût qui doit être le plus bas ; l'avantage peut servir à vendre au prix du marché avec une marge supérieure.",
+      "explanation": "La domination par les coûts vise le coût complet le plus bas du secteur. L'entreprise peut ensuite choisir d'utiliser cet avantage pour baisser ses prix (gagner des parts de marché) ou pour vendre au prix du marché en dégageant une marge supérieure à celle des concurrents. Confondre coût le plus bas et prix le plus bas est un piège classique.",
+      "source_ref": "M. Porter, Competitive Strategy (1980), stratégies génériques",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue3-diag-business-0005",
+      "type": "numeric",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "strategies-business",
+      "difficulty": 2,
+      "tags": [
+        "différenciation",
+        "seuil de rentabilité"
+      ],
+      "statement": "Un fabricant d'appareils de cuisine vend un modèle 70 € (coût variable unitaire 40 €, coûts fixes annuels 600 000 €). Il envisage une stratégie de différenciation (design, garantie étendue) : prix de vente 95 €, coût variable unitaire 52 €, coûts fixes annuels 900 000 € (marketing, conception). Calculez le seuil de rentabilité en quantité après différenciation, arrondi à l'unité supérieure.",
+      "expected_value": 20931,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "unités",
+      "decimals": 0,
+      "explanation": "Avec la différenciation, la marge sur coût variable unitaire devient 95 − 52 = 43 €. Seuil de rentabilité = 900 000 ÷ 43 = 20 930,2 unités, soit 20 931 unités à l'unité supérieure. Pour mémoire, le seuil actuel est 600 000 ÷ (70 − 40) = 20 000 unités, et le résultat prévisionnel pour un volume hypothétique de 25 000 unités vendues dans les deux cas passe de 150 000 € à 25 000 × 43 − 900 000 = 175 000 €. Erreur classique : garder l'ancienne marge unitaire de 30 € (900 000 ÷ 30 = 30 000 unités).",
+      "source_ref": "M. Porter, Competitive Strategy (1980), stratégies génériques ; seuil de rentabilité (analyse coût-volume-profit)",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue3-diag-business-0006",
+      "type": "numeric",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "strategies-business",
+      "difficulty": 3,
+      "tags": [
+        "domination par les coûts",
+        "effet d'expérience",
+        "coût relatif"
+      ],
+      "statement": "Deux fabricants de panneaux solaires suivent la même courbe d'expérience, avec un taux d'expérience de 80 % (le coût unitaire baisse de 20 % à chaque doublement de la production cumulée). Le leader a produit 270 000 panneaux depuis son origine, le challenger 90 000. Le coût unitaire actuel du challenger est de 50 €. Calculez le coût unitaire actuel du leader, en euros, arrondi au centime.",
+      "expected_value": 35.11,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "€",
+      "decimals": 2,
+      "explanation": "Les deux entreprises sont sur la même courbe d'expérience : C_leader ÷ C_challenger = (Q_leader ÷ Q_challenger)^(log₂ 0,80). Rapport des productions cumulées = 270 000 ÷ 90 000 = 3. log₂ 0,80 ≈ −0,32193, donc 3^(−0,32193) ≈ 0,70210. Coût du leader = 50 × 0,70210 ≈ 35,11 €. Erreurs classiques : compter deux doublements (50 × 0,8² = 32 €) ou un et demi (50 × 0,8^1,5 ≈ 35,78 €) ; 3 correspond à log₂ 3 ≈ 1,585 doublement.",
+      "source_ref": "M. Porter, Competitive Strategy (1980), stratégies génériques ; B. Henderson (Boston Consulting Group), effet d'expérience",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue3-diag-business-0007",
+      "type": "flashcard",
+      "ue": "UE3",
+      "theme": "diagnostic-choix-strategiques",
+      "notion": "strategies-business",
+      "difficulty": 1,
+      "tags": [
+        "stratégies génériques",
+        "Porter"
+      ],
+      "front": "Quelles sont les stratégies génériques de Porter, et sur quels deux critères reposent-elles ?",
+      "back": "Deux critères : l'avantage recherché (coût le plus bas ou différenciation) et la cible (tout le marché ou un segment étroit).\n- Domination par les coûts : coût complet le plus bas du secteur, sur un marché large.\n- Différenciation : offre perçue comme unique, vendue avec un prix premium, sur un marché large.\n- Focalisation (concentration) : un segment étroit, servi par les coûts ou par la différenciation.",
+      "explanation": "Porter croise l'avantage concurrentiel recherché (coût ou unicité perçue) et la cible (large ou étroite). Il met en garde contre l'enlisement de l'entreprise qui ne choisit pas, même si des stratégies hybrides sont observées en pratique.",
+      "source_ref": "M. Porter, Competitive Strategy (1980), stratégies génériques",
+      "verified": true,
+      "estimated_seconds": 45
+    }
+  ]
+}
