@@ -1,0 +1,267 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-fusion-boni-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "boni-mali-fusion",
+      "difficulty": 1,
+      "tags": [
+        "prime de fusion",
+        "définition"
+      ],
+      "statement": "Comment se définit la prime de fusion inscrite au passif de l'absorbante ?",
+      "options": [
+        "Différence entre la valeur d'apport revenant aux associés rémunérés et la valeur nominale des titres émis",
+        "Différence entre la valeur réelle et la valeur comptable des actifs apportés",
+        "Différence entre la valeur comptable des titres de l'absorbée détenus par l'absorbante et la quote-part d'actif net correspondante",
+        "Différence entre la valeur réelle des titres émis et leur valeur nominale, quelle que soit la valeur d'apport"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "La prime de fusion est la différence entre la valeur d'apport de la quote-part d'actif net qui rémunère les associés de l'absorbée et la valeur nominale des titres émis. L'option 2 est fausse : l'écart entre valeur réelle et valeur comptable des apports n'est pas comptabilisé en valeur comptable et n'est pas une prime. L'option 3 décrit le boni ou le mali, qui naît de l'annulation des titres détenus par l'absorbante. L'option 4 est fausse en général : elle ne coïncide avec la bonne définition que si la valeur d'apport est égale à la valeur réelle des titres émis ; en valeur comptable, la prime se calcule sur l'actif net comptable.",
+      "source_ref": "PCG titre VII, traitement du boni et du mali de fusion (règl. ANC 2014-03 modifié par les règl. ANC 2015-06 et 2017-01) ; compte 1042",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-fusion-boni-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "boni-mali-fusion",
+      "difficulty": 2,
+      "tags": [
+        "boni de fusion",
+        "résultats accumulés",
+        "capitaux propres"
+      ],
+      "statement": "La société Lambert a acquis 100 % des titres de la société Morin pour 400 000 €. Depuis l'acquisition, Morin a réalisé des bénéfices qu'elle n'a pas distribués pour un total de 50 000 €. Lambert absorbe Morin ; les apports sont évalués à la valeur comptable et l'actif net comptable apporté s'élève à 470 000 €. Comment le boni de fusion est-il comptabilisé chez Lambert ?",
+      "options": [
+        "70 000 € en résultat financier",
+        "70 000 € en capitaux propres",
+        "20 000 € en résultat financier et 50 000 € en capitaux propres",
+        "50 000 € en résultat financier et 20 000 € en capitaux propres"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Lambert détient 100 % de Morin : pas d'augmentation de capital, les titres sont annulés. Boni = actif net comptable apporté − valeur des titres = 470 000 − 400 000 = 70 000 €. Le boni est comptabilisé en résultat financier à hauteur de la quote-part des résultats accumulés par Morin depuis l'acquisition et non distribués (50 000 €), et en capitaux propres pour le surplus (20 000 €). L'option 1 et l'option 2 ignorent la ventilation. L'option 3 inverse les deux montants.",
+      "source_ref": "PCG titre VII, traitement du boni et du mali de fusion (règl. ANC 2014-03 modifié par les règl. ANC 2015-06 et 2017-01) ; comptes 768 et 1042",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue4-fusion-boni-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "boni-mali-fusion",
+      "difficulty": 2,
+      "tags": [
+        "prime de fusion",
+        "participation préalable"
+      ],
+      "statement": "Lorsque l'absorbante détient déjà une partie des titres de l'absorbée, la prime de fusion ne porte que sur la quote-part de l'actif net apporté revenant aux autres associés de l'absorbée.",
+      "answer": true,
+      "justification": "La quote-part revenant à l'absorbante sert à annuler ses titres (boni ou mali) ; seule celle des autres associés rémunère l'augmentation de capital et génère la prime.",
+      "explanation": "Lorsque l'absorbante détient déjà des titres de l'absorbée, l'actif net apporté se partage en deux : la quote-part correspondant aux titres détenus sert à annuler ces titres (boni ou mali), et la quote-part revenant aux autres associés rémunère l'augmentation de capital. La prime de fusion est la différence entre cette seconde quote-part et le nominal des titres émis.",
+      "source_ref": "PCG titre VII, traitement du boni et du mali de fusion (règl. ANC 2014-03 modifié par les règl. ANC 2015-06 et 2017-01)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-fusion-boni-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "boni-mali-fusion",
+      "difficulty": 2,
+      "tags": [
+        "prime de fusion",
+        "valeur comptable",
+        "participation préalable"
+      ],
+      "statement": "La société Sorbier détient 6 000 des 10 000 actions de la société Tilleul (valeur comptable des titres : 380 000 €) et l'absorbe. Les apports sont évalués à la valeur comptable ; l'actif net comptable de Tilleul est de 700 000 €. Les valeurs réelles retenues pour la parité sont de 95 € par action Tilleul et de 76 € par action Sorbier (nominal 20 €). Calculez la prime de fusion (en euros).",
+      "expected_value": 180000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "explanation": "Sorbier contrôle Tilleul (60 %) : contrôle commun, apports à la valeur comptable (700 000 €). Parité = 95 / 76 = 1,25, soit 5 actions Sorbier pour 4 actions Tilleul. Actions rémunérées : 10 000 − 6 000 = 4 000 ; titres émis = 4 000 × 1,25 = 5 000 ; augmentation de capital = 5 000 × 20 = 100 000 €. Prime de fusion = 40 % × 700 000 − 100 000 = 280 000 − 100 000 = 180 000 €. Erreur classique : calculer la prime sur la valeur réelle (4 000 × 95 − 100 000 = 280 000 €). Pour information, l'annulation des titres dégage un boni de 60 % × 700 000 − 380 000 = 40 000 €.",
+      "source_ref": "PCG titre VII, traitement du boni et du mali de fusion (règl. ANC 2014-03 modifié par les règl. ANC 2015-06 et 2017-01) ; compte 1042",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue4-fusion-boni-0005",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "boni-mali-fusion",
+      "difficulty": 2,
+      "tags": [
+        "écritures chez l'absorbante",
+        "boni de fusion",
+        "annulation des titres",
+        "prime de fusion"
+      ],
+      "statement": "La société Gamma détient 6 000 des 8 000 actions de la société Sigma (titres inscrits au compte 261 pour 190 000 €) et l'absorbe ; les apports sont évalués à la valeur comptable. Bilan de Sigma : terrain 150 000 €, stocks de marchandises 90 000 €, clients 80 000 €, banque 60 000 €, fournisseurs 100 000 €. La parité, déterminée sur valeurs réelles, est de 3 actions Gamma (nominal 10 €) pour 2 actions Sigma. La quote-part revenant à Gamma des résultats accumulés par Sigma depuis l'acquisition et non distribués s'élève à 35 000 €. Passez chez Gamma l'écriture unique de réception des apports, d'augmentation de capital et d'annulation des titres Sigma. Conventions : prime de fusion au compte 1042, boni comptabilisé en résultat au compte 768 ; on ignore la fiscalité.",
+      "date": "Date d’effet de la fusion",
+      "entries": [
+        {
+          "account": "211",
+          "label": "Terrains",
+          "debit": 150000,
+          "credit": 0
+        },
+        {
+          "account": "37",
+          "label": "Stocks de marchandises",
+          "debit": 90000,
+          "credit": 0
+        },
+        {
+          "account": "411",
+          "label": "Clients",
+          "debit": 80000,
+          "credit": 0
+        },
+        {
+          "account": "512",
+          "label": "Banques",
+          "debit": 60000,
+          "credit": 0
+        },
+        {
+          "account": "401",
+          "label": "Fournisseurs",
+          "debit": 0,
+          "credit": 100000
+        },
+        {
+          "account": "261",
+          "label": "Titres de participation (Sigma)",
+          "debit": 0,
+          "credit": 190000
+        },
+        {
+          "account": "101",
+          "label": "Capital",
+          "debit": 0,
+          "credit": 30000
+        },
+        {
+          "account": "1042",
+          "label": "Primes de fusion",
+          "debit": 0,
+          "credit": 40000
+        },
+        {
+          "account": "768",
+          "label": "Autres produits financiers (boni de fusion)",
+          "debit": 0,
+          "credit": 20000
+        }
+      ],
+      "explanation": "Contrôle commun : apports à la valeur comptable, actif net = 150 000 + 90 000 + 80 000 + 60 000 − 100 000 = 280 000 €. Rémunération des tiers : 2 000 actions Sigma × 3/2 = 3 000 actions Gamma, augmentation de capital 30 000 € ; prime de fusion = 25 % × 280 000 − 30 000 = 40 000 €. Annulation des titres : boni = 75 % × 280 000 − 190 000 = 20 000 €. Ce boni est inférieur à la quote-part des résultats accumulés depuis l'acquisition et non distribués (35 000 €) : il est entièrement comptabilisé en résultat financier (compte 768). Les titres Sigma sont soldés au crédit du compte 261.",
+      "source_ref": "PCG titre VII, traitement du boni et du mali de fusion (règl. ANC 2014-03 modifié par les règl. ANC 2015-06 et 2017-01) ; comptes 211, 37, 411, 512, 401, 261, 101, 1042 et 768",
+      "verified": true,
+      "estimated_seconds": 360
+    },
+    {
+      "id": "ue4-fusion-boni-0006",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "boni-mali-fusion",
+      "difficulty": 3,
+      "tags": [
+        "participation préalable",
+        "prime de fusion",
+        "mali technique",
+        "vrai mali"
+      ],
+      "title": "Absorption de Pi par Omega",
+      "context": "La société Omega détient 14 000 des 20 000 actions de la société Pi, acquises pour 560 000 € (valeur comptable des titres). Omega absorbe Pi.\nBilan de Pi à la date d'effet (valeurs comptables) : terrain 300 000 € ; constructions (valeur nette) 400 000 € ; stocks 150 000 € ; clients 200 000 € ; banque 50 000 € ; emprunt 350 000 € ; fournisseurs 250 000 €.\nValeurs réelles : terrain 420 000 € ; constructions 460 000 € ; les autres éléments ont une valeur réelle égale à leur valeur comptable et aucun élément non comptabilisé n'est identifié.\nLa parité est fondée sur l'actif net réévalué. La valeur réelle de l'action Omega est de 85 € (nominal 25 €).\nOn ignore la fiscalité.",
+      "sub_questions": [
+        {
+          "id": "methode",
+          "kind": "mcq",
+          "prompt": "À quelle valeur les apports de Pi sont-ils comptabilisés ?",
+          "points": 1,
+          "options": [
+            "Valeur réelle, car Omega est l'absorbante",
+            "Valeur comptable, car les sociétés sont sous contrôle commun",
+            "Valeur réelle, car des actionnaires minoritaires sont rémunérés",
+            "Valeur comptable, car l'opération est réalisée à l'envers"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Omega contrôle Pi (70 %) : contrôle commun, donc valeur comptable. La présence de minoritaires ne change pas la méthode (option 3) ; l'opération n'est pas à l'envers (option 4) ; la qualité d'absorbante n'est pas un critère (option 1)."
+        },
+        {
+          "id": "titres-emis",
+          "kind": "numeric",
+          "prompt": "Combien d'actions Omega sont émises ?",
+          "points": 2,
+          "expected_value": 2400,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "actions",
+          "decimals": 0,
+          "explanation": "Actif net réévalué de Pi = 1 100 000 + 120 000 + 60 000 − 600 000 = 680 000 €, soit 34 € par action. Parité = 34 / 85 = 0,4, soit 2 actions Omega pour 5 actions Pi. Seules les 6 000 actions des minoritaires sont échangées : 6 000 × 0,4 = 2 400 actions."
+        },
+        {
+          "id": "prime-fusion",
+          "kind": "numeric",
+          "prompt": "Calculez la prime de fusion (en euros).",
+          "points": 2,
+          "expected_value": 90000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "explanation": "Actif net comptable apporté = 1 100 000 − 600 000 = 500 000 €. Augmentation de capital = 2 400 × 25 = 60 000 €. Prime = 30 % × 500 000 − 60 000 = 90 000 €. Calculée sur la valeur réelle, elle vaudrait 2 400 × 85 − 60 000 = 144 000 € (erreur)."
+        },
+        {
+          "id": "vrai-mali",
+          "kind": "numeric",
+          "prompt": "Calculez le vrai mali (en euros).",
+          "points": 3,
+          "expected_value": 84000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "explanation": "Mali = 560 000 − 70 % × 500 000 = 210 000 €. Plus-values latentes : 120 000 (terrain) + 60 000 (constructions) = 180 000 € ; quote-part détenue = 70 % × 180 000 = 126 000 € = mali technique (inférieur au mali). Vrai mali = 210 000 − 126 000 = 84 000 €. Retenir 100 % des plus-values donnerait 30 000 € (erreur)."
+        },
+        {
+          "id": "traitement-mali",
+          "kind": "open",
+          "prompt": "Comment Omega comptabilise-t-elle le mali technique et le vrai mali, et comment le mali technique est-il suivi ensuite ?",
+          "points": 2,
+          "model_answer": "Le mali technique (126 000 €) est inscrit à l'actif au compte 2187 « Mali de fusion sur actifs corporels », affecté pour 84 000 € au terrain et 42 000 € aux constructions ; le terrain et les constructions restent à leur valeur comptable. La quote-part affectée aux constructions s'amortit au rythme des constructions ; celle du terrain n'est pas amortie. Chaque quote-part est dépréciée si la valeur actuelle de l'actif devient inférieure à sa valeur comptable augmentée du mali affecté, et sortie du bilan en cas de cession de l'actif. Le vrai mali (84 000 €) est comptabilisé en charges financières de l'exercice.",
+          "key_points": [
+            "Mali technique au compte 2187, affecté au terrain (84 000 €) et aux constructions (42 000 €)",
+            "Amortissement et dépréciation au rythme de l'actif sous-jacent ; sortie en cas de cession",
+            "Vrai mali de 84 000 € en charges financières"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Omega contrôle Pi : contrôle commun, apports à la valeur comptable (500 000 €). Parité 34 / 85 = 2 pour 5 ; 2 400 actions émises ; prime de fusion 30 % × 500 000 − 60 000 = 90 000 €. Mali = 560 000 − 350 000 = 210 000 €, dont mali technique 70 % × 180 000 = 126 000 € et vrai mali 84 000 €.",
+      "source_ref": "PCG titre VII, traitement du boni et du mali de fusion (règl. ANC 2014-03 modifié par les règl. ANC 2015-06 et 2017-01) ; C. com. art. L. 236-1 et s. ; comptes 1042, 2187 et 668",
+      "verified": true,
+      "estimated_seconds": 780
+    }
+  ]
+}

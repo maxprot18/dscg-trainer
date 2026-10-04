@@ -27,6 +27,170 @@
       "source_ref": "PCG titre VII, règles d’évaluation des apports (règl. ANC 2014-03 modifié par le règl. ANC 2017-01)",
       "verified": true,
       "estimated_seconds": 90
+    },
+    {
+      "id": "ue4-fusion-apports-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "evaluation-apports",
+      "difficulty": 1,
+      "tags": [
+        "valeur réelle",
+        "fonds commercial",
+        "écart résiduel"
+      ],
+      "statement": "Dans une fusion dont les apports sont évalués à la valeur réelle, la valeur globale de l'absorbée retenue pour le calcul de la parité excède la somme des valeurs réelles de ses actifs et passifs identifiables. Comment l'absorbante comptabilise-t-elle cet écart ?",
+      "options": [
+        "Elle l'inscrit directement en prime de fusion, sans contrepartie à l'actif",
+        "Elle l'inscrit en produits exceptionnels de l'exercice de la fusion",
+        "Elle l'inscrit en fonds commercial à l'actif de son bilan",
+        "Elle ne le comptabilise pas, car il ne correspond à aucun élément identifiable"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "En valeur réelle, chaque actif et passif identifiable (y compris ceux qui ne figuraient pas au bilan de l'absorbée) est évalué isolément. La valeur globale de l'absorbée retenue pour la parité peut dépasser la somme de ces valeurs : l'écart, qui correspond aux éléments non identifiables séparément, est inscrit en fonds commercial (compte 207) chez l'absorbante. L'option 1 est fausse : la prime de fusion est l'écart entre la valeur d'apport et le nominal des titres émis, elle ne remplace pas un élément d'actif. L'option 2 est fausse : l'écart n'est pas un profit, il correspond à un actif acquis. L'option 4 est fausse : la valeur d'apport totale est la valeur globale, l'écart doit donc être comptabilisé.",
+      "source_ref": "PCG titre VII, règles d’évaluation des apports (règl. ANC 2014-03 modifié par le règl. ANC 2017-01) ; compte 207",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-fusion-apports-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "evaluation-apports",
+      "difficulty": 2,
+      "tags": [
+        "valeur comptable",
+        "valeurs brutes",
+        "amortissements"
+      ],
+      "statement": "La société Hêtre absorbe sa filiale Ifrane ; les apports sont évalués à la valeur comptable. Une machine figure au bilan d'Ifrane pour une valeur brute de 500 000 € et des amortissements cumulés de 300 000 € ; sa valeur réelle est de 260 000 €. Comment la machine est-elle inscrite chez Hêtre ?",
+      "options": [
+        "Pour une valeur brute de 200 000 €, sans amortissements antérieurs",
+        "Pour une valeur brute de 500 000 € et des amortissements cumulés de 300 000 €",
+        "Pour une valeur brute de 260 000 €, sans amortissements antérieurs",
+        "Pour une valeur brute de 500 000 €, les amortissements antérieurs étant abandonnés au profit de la prime de fusion"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Lorsque les apports sont évalués à la valeur comptable, l'absorbante reprend le détail figurant dans les comptes de l'absorbée : valeur brute, amortissements et dépréciations. La machine est donc inscrite pour 500 000 € au débit du compte d'immobilisation et 300 000 € au crédit du compte d'amortissements. L'option 1 est fausse : inscrire la valeur nette comme nouvelle valeur brute ne respecte plus la règle de reprise du détail. L'option 3 est fausse : la valeur réelle n'est pas retenue en contrôle commun. L'option 4 est fausse : l'absorbante continue les plans d'amortissement à partir des valeurs reprises ; on n'abandonne pas les amortissements cumulés.",
+      "source_ref": "PCG titre VII, apports évalués à la valeur comptable (règl. ANC 2014-03 modifié par les règl. ANC 2017-01 et 2019-06)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-fusion-apports-0004",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "evaluation-apports",
+      "difficulty": 2,
+      "tags": [
+        "valeur comptable",
+        "parité",
+        "valeurs réelles"
+      ],
+      "statement": "Lorsque les apports d'une fusion sont comptabilisés à la valeur comptable, la parité d'échange doit elle aussi être déterminée à partir des valeurs comptables des deux sociétés.",
+      "answer": false,
+      "justification": "La parité se fixe sur les valeurs réelles des deux sociétés ; la valeur comptable ne sert qu'à comptabiliser les apports.",
+      "explanation": "La valeur d'apport (comptabilisation) et la valeur d'échange (parité) sont deux notions distinctes. Même lorsque les apports sont comptabilisés à la valeur comptable, par exemple entre sociétés sous contrôle commun, la parité d'échange doit refléter la valeur réelle respective des deux sociétés, faute de quoi les associés minoritaires seraient lésés. Le commissaire à la fusion vérifie le caractère équitable de la parité ; la valeur comptable ne sert qu'à comptabiliser les apports et à calculer la prime de fusion.",
+      "source_ref": "PCG titre VII (règl. ANC 2017-01) ; C. com. art. L. 236-1 et s.",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-fusion-apports-0005",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "evaluation-apports",
+      "difficulty": 3,
+      "tags": [
+        "valeur réelle",
+        "fonds commercial",
+        "éléments non comptabilisés",
+        "prime de fusion"
+      ],
+      "title": "Fusion Atlas – Borée à la valeur réelle",
+      "context": "La société Atlas (30 000 actions de nominal 20 €) est contrôlée par la famille Leroy, qui en détient 21 000 actions. Atlas absorbe la société Borée (10 000 actions), dont le capital est dispersé entre des actionnaires sans lien avec la famille Leroy.\nBilan de Borée à la date d'effet (valeurs comptables) : terrain 100 000 € ; constructions (valeur nette) 250 000 € ; matériel (valeur nette) 90 000 € ; stocks 70 000 € ; clients 110 000 € ; banque 30 000 € ; emprunts 180 000 € ; fournisseurs 120 000 €.\nValeurs réelles retenues : terrain 180 000 € ; constructions 310 000 € ; matériel 80 000 € ; Borée exploite une marque créée en interne, non inscrite à son bilan, évaluée à 60 000 €. Les autres éléments ont une valeur réelle égale à leur valeur comptable.\nLa valeur globale de Borée retenue pour la parité est de 600 000 €, soit 60 € par action ; la valeur réelle de l'action Atlas est de 75 €. La valeur d'apport totale est égale à cette valeur globale. On ignore la fiscalité.",
+      "sub_questions": [
+        {
+          "id": "methode",
+          "kind": "mcq",
+          "prompt": "Quelle méthode d'évaluation des apports s'impose ?",
+          "points": 2,
+          "options": [
+            "Valeur comptable, car l'opération est réalisée à l'envers",
+            "Valeur réelle, car l'opération est réalisée entre sociétés sous contrôle distinct et à l'endroit",
+            "Valeur comptable, car les sociétés sont sous contrôle commun",
+            "Valeur réelle, au choix des parties"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "La famille Leroy ne contrôle pas Borée avant l'opération : contrôle distinct. Atlas émet 8 000 actions (question 4) ; la famille Leroy détient alors 21 000 / 38 000 = 55,3 % du capital et conserve le contrôle : opération à l'endroit, donc valeur réelle. L'option 1 et l'option 3 décrivent des situations absentes de l'énoncé ; l'option 4 est fausse car la méthode n'est pas au choix des parties."
+        },
+        {
+          "id": "actif-net-identifiable",
+          "kind": "numeric",
+          "prompt": "Calculez l'actif net identifiable de Borée évalué à la valeur réelle (en euros).",
+          "points": 2,
+          "expected_value": 540000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "explanation": "Actifs : 180 000 + 310 000 + 80 000 + 60 000 (marque) + 70 000 + 110 000 + 30 000 = 840 000 € ; passifs : 180 000 + 120 000 = 300 000 € ; actif net identifiable = 540 000 €. Oublier la marque non comptabilisée donnerait 480 000 €."
+        },
+        {
+          "id": "fonds-commercial",
+          "kind": "numeric",
+          "prompt": "Calculez le fonds commercial inscrit chez Atlas (en euros).",
+          "points": 2,
+          "expected_value": 60000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "explanation": "Fonds commercial = valeur globale − actif net identifiable = 600 000 − 540 000 = 60 000 €."
+        },
+        {
+          "id": "prime-fusion",
+          "kind": "numeric",
+          "prompt": "Calculez la prime de fusion (en euros).",
+          "points": 2,
+          "expected_value": 440000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "explanation": "Parité = 60 / 75 = 4 actions Atlas pour 5 actions Borée ; titres émis = 10 000 × 4/5 = 8 000 ; augmentation de capital = 8 000 × 20 = 160 000 € ; prime de fusion = 600 000 − 160 000 = 440 000 €."
+        },
+        {
+          "id": "inscription-actifs",
+          "kind": "open",
+          "prompt": "Comment les constructions, le matériel et la marque sont-ils inscrits dans les comptes d'Atlas ?",
+          "points": 2,
+          "model_answer": "Les apports étant évalués à la valeur réelle, les constructions (310 000 €) et le matériel (80 000 €) entrent chez Atlas pour leur valeur réelle, qui devient leur nouvelle valeur brute et leur nouvelle base amortissable ; les amortissements pratiqués par Borée ne sont pas repris. La marque, bien que non comptabilisée chez Borée, est un élément identifiable apporté : elle est inscrite en immobilisation incorporelle (compte 205) pour 60 000 €. Le fonds commercial (compte 207) recueille l'écart résiduel de 60 000 €.",
+          "key_points": [
+            "Valeur réelle = nouvelle valeur brute, sans reprise des amortissements antérieurs",
+            "La marque non comptabilisée chez Borée est inscrite à l'actif d'Atlas (compte 205)",
+            "L'écart résiduel va en fonds commercial (compte 207), distinct de la marque"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas enchaîne les étapes d'une fusion à la valeur réelle : qualification (contrôle distinct, à l'endroit), actif net identifiable réévalué y compris la marque non comptabilisée, fonds commercial résiduel, puis rémunération (8 000 actions, augmentation de capital de 160 000 €, prime de fusion de 440 000 €).",
+      "source_ref": "PCG titre VII, règles d’évaluation des apports (règl. ANC 2014-03 modifié par le règl. ANC 2017-01) ; C. com. art. L. 236-1 et s. ; comptes 205 et 207",
+      "verified": true,
+      "estimated_seconds": 720
     }
   ]
 }

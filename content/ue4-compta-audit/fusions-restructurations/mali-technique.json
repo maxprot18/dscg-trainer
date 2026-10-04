@@ -64,6 +64,164 @@
       "source_ref": "PCG titre VII, traitement du mali technique (règl. ANC 2014-03 modifié par les règl. ANC 2015-06 et 2017-01) ; comptes 2187, 261 et 668",
       "verified": true,
       "estimated_seconds": 300
+    },
+    {
+      "id": "ue4-fusion-mali-0002",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "mali-technique",
+      "difficulty": 1,
+      "tags": [
+        "mali technique",
+        "comptes 2187"
+      ],
+      "statement": "Le mali technique affecté à une construction est inscrit en augmentation de la valeur brute de la construction au compte 213.",
+      "answer": false,
+      "justification": "Le mali technique est inscrit dans un compte spécifique (2187 « Mali de fusion sur actifs corporels ») ; la construction reste à sa valeur comptable.",
+      "explanation": "Le mali technique n'est pas ajouté à la valeur brute de l'actif sous-jacent : il est inscrit dans un compte spécifique, ici 2187 « Mali de fusion sur actifs corporels » (2081 pour les actifs incorporels). La construction reste inscrite au compte 213 pour sa valeur comptable reprise de l'absorbée ; le mali est suivi à part (amortissement, dépréciation, sortie).",
+      "source_ref": "PCG titre VII, traitement du mali technique (règl. ANC 2014-03 modifié par les règl. ANC 2015-06 et 2017-01) ; compte 2187",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-fusion-mali-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "mali-technique",
+      "difficulty": 2,
+      "tags": [
+        "mali technique",
+        "cession de l'actif sous-jacent",
+        "suivi"
+      ],
+      "statement": "Lors de la fusion de N−2, une quote-part de mali technique de 90 000 € a été affectée à un terrain apporté par la société absorbée. En N, l'absorbante cède ce terrain. Que devient cette quote-part de mali ?",
+      "options": [
+        "Elle reste à l'actif jusqu'à ce qu'une dépréciation soit constatée",
+        "Elle est reclassée en vrai mali et comptabilisée en charges financières",
+        "Elle est sortie de l'actif et comptabilisée en résultat avec la cession du terrain",
+        "Elle est réaffectée au fonds commercial de l'absorbante"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Le mali technique suit l'actif auquel il est affecté. Lorsque cet actif est cédé, la quote-part de mali correspondante est sortie de l'actif et comptabilisée en résultat avec la cession, ce qui diminue le résultat de cession. L'option 1 est fausse : le mali ne peut rester à l'actif sans sous-jacent. L'option 2 est fausse : le vrai mali est la part du mali sans contrepartie, déterminée à la date de la fusion ; la cession ne transforme pas le mali technique en vrai mali. L'option 4 est fausse : le mali affecté à un terrain ne peut être réaffecté au fonds commercial.",
+      "source_ref": "PCG titre VII, traitement du mali technique (règl. ANC 2014-03 modifié par les règl. ANC 2015-06 et 2017-01)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-fusion-mali-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "mali-technique",
+      "difficulty": 3,
+      "tags": [
+        "mali technique",
+        "dépréciation",
+        "affectation"
+      ],
+      "statement": "Lors d'une fusion réalisée en N, la société Rho a absorbé sa filiale à 100 % Tau ; les titres Tau figuraient à son bilan pour 900 000 € et l'actif net comptable apporté s'élevait à 650 000 €. Plus-values latentes identifiées à la date de la fusion : terrain (valeur comptable 300 000 €, valeur réelle 480 000 €) et brevet non comptabilisé chez Tau, d'une valeur réelle de 50 000 € ; aucun autre écart ni passif non comptabilisé. À la clôture de N+2, la valeur actuelle du terrain est de 400 000 €. Calculez la dépréciation à constater sur la quote-part de mali technique affectée au terrain (en euros). On ignore la fiscalité.",
+      "expected_value": 80000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "explanation": "Mali = 900 000 − 650 000 = 250 000 €. Plus-values latentes : terrain 480 000 − 300 000 = 180 000 € ; brevet non comptabilisé 50 000 € ; total 230 000 € ≤ 250 000 € : mali technique 230 000 € (180 000 € affectés au terrain au compte 2187, 50 000 € au brevet au compte 2081), vrai mali 20 000 €. À la clôture N+2, valeur comptable du terrain augmentée du mali affecté = 300 000 + 180 000 = 480 000 € > valeur actuelle de 400 000 € : dépréciation de 80 000 €, imputée sur le mali (le terrain lui-même, à 300 000 €, n'est pas déprécié). Retenir tout le mali (250 000 €) donnerait 150 000 € (erreur).",
+      "source_ref": "PCG titre VII, traitement du mali technique (règl. ANC 2014-03 modifié par les règl. ANC 2015-06 et 2017-01) ; comptes 2081 et 2187",
+      "verified": true,
+      "estimated_seconds": 300
+    },
+    {
+      "id": "ue4-fusion-mali-0005",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "mali-technique",
+      "difficulty": 3,
+      "tags": [
+        "mali technique",
+        "vrai mali",
+        "participation préalable",
+        "écritures chez l'absorbante"
+      ],
+      "statement": "La société Kappa détient 8 000 des 10 000 actions de la société Lambda (titres inscrits au compte 261 pour 520 000 €) et l'absorbe ; les apports sont évalués à la valeur comptable. Bilan de Lambda : terrain 250 000 €, stocks de marchandises 120 000 €, clients 130 000 €, banque 50 000 €, fournisseurs 150 000 €. Plus-values latentes : terrain (valeur réelle 300 000 €) et fonds commercial non comptabilisé chez Lambda, évalué à 100 000 € ; aucun passif non comptabilisé. La parité est de 1 action Kappa (nominal 30 €) pour 2 actions Lambda. Passez chez Kappa l'écriture unique de réception des apports, d'augmentation de capital et d'annulation des titres Lambda. Conventions : prime au compte 1042, mali technique aux comptes 2081 et 2187, vrai mali au compte 668 ; on ignore la fiscalité.",
+      "date": "Date d’effet de la fusion",
+      "entries": [
+        {
+          "account": "211",
+          "label": "Terrains",
+          "debit": 250000,
+          "credit": 0
+        },
+        {
+          "account": "37",
+          "label": "Stocks de marchandises",
+          "debit": 120000,
+          "credit": 0
+        },
+        {
+          "account": "411",
+          "label": "Clients",
+          "debit": 130000,
+          "credit": 0
+        },
+        {
+          "account": "512",
+          "label": "Banques",
+          "debit": 50000,
+          "credit": 0
+        },
+        {
+          "account": "2081",
+          "label": "Mali de fusion sur actifs incorporels",
+          "debit": 80000,
+          "credit": 0
+        },
+        {
+          "account": "2187",
+          "label": "Mali de fusion sur actifs corporels",
+          "debit": 40000,
+          "credit": 0
+        },
+        {
+          "account": "668",
+          "label": "Autres charges financières (vrai mali)",
+          "debit": 80000,
+          "credit": 0
+        },
+        {
+          "account": "401",
+          "label": "Fournisseurs",
+          "debit": 0,
+          "credit": 150000
+        },
+        {
+          "account": "261",
+          "label": "Titres de participation (Lambda)",
+          "debit": 0,
+          "credit": 520000
+        },
+        {
+          "account": "101",
+          "label": "Capital",
+          "debit": 0,
+          "credit": 30000
+        },
+        {
+          "account": "1042",
+          "label": "Primes de fusion",
+          "debit": 0,
+          "credit": 50000
+        }
+      ],
+      "explanation": "Contrôle commun : apports à la valeur comptable, actif net = 250 000 + 120 000 + 130 000 + 50 000 − 150 000 = 400 000 €. Tiers (20 %) : 2 000 actions Lambda × 1/2 = 1 000 actions Kappa, augmentation de capital 30 000 € ; prime de fusion = 20 % × 400 000 − 30 000 = 50 000 €. Part détenue (80 %) : mali = 520 000 − 80 % × 400 000 = 200 000 €. Quote-part détenue des plus-values latentes : 80 % × (100 000 + 50 000) = 120 000 € ≤ 200 000 € : mali technique 120 000 €, dont 80 000 € sur le fonds commercial (compte 2081) et 40 000 € sur le terrain (compte 2187). Vrai mali = 200 000 − 120 000 = 80 000 € en charges financières (compte 668). Le terrain reste à 250 000 € et le fonds commercial non comptabilisé chez Lambda n'est pas inscrit en tant que tel.",
+      "source_ref": "PCG titre VII, traitement du boni et du mali de fusion (règl. ANC 2014-03 modifié par les règl. ANC 2015-06 et 2017-01) ; comptes 2081, 2187, 261, 668, 101 et 1042",
+      "verified": true,
+      "estimated_seconds": 480
     }
   ]
 }
