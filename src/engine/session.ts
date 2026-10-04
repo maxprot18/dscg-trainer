@@ -94,7 +94,8 @@ export interface ProgressSnapshot {
 
 /**
  * Ordre de priorité des notions à réviser : d'abord celles dont la révision est échue (les plus en
- * retard d'abord), puis des notions jamais travaillées, puis celles dont la révision approche.
+ * retard d'abord, puis les plus difficiles), puis des notions jamais travaillées, puis celles dont
+ * la révision approche.
  */
 export function smartNotionOrder(
   pool: readonly Exercise[],
@@ -108,7 +109,10 @@ export function smartNotionOrder(
   const dueAt = new Map<string, number>()
   for (const a of snapshot.attempts) dueAt.set(a.notion, Math.max(dueAt.get(a.notion) ?? 0, a.date))
   for (const r of snapshot.reviews) dueAt.set(r.notion, r.due)
-  const byDue = (a: string, b: string) => dueAt.get(a)! - dueAt.get(b)!
+  // À échéance égale, la notion la plus difficile (facilité SM-2 la plus basse) passe d'abord.
+  const ease = new Map(snapshot.reviews.map((r) => [r.notion, r.ease]))
+  const byDue = (a: string, b: string) =>
+    dueAt.get(a)! - dueAt.get(b)! || (ease.get(a) ?? 0) - (ease.get(b) ?? 0) || a.localeCompare(b)
   const due = notions.filter((n) => dueAt.has(n) && dueAt.get(n)! <= now).sort(byDue)
   const fresh = shuffle(
     notions.filter((n) => !dueAt.has(n)),

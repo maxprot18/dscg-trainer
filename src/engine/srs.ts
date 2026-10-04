@@ -1,18 +1,22 @@
 /**
  * Répétition espacée par notion, algorithme SM-2 (SuperMemo 2, P. Woźniak, 1987).
  *
- * Chaque tentative sur un exercice d'une notion donne une qualité de 0 à 5 tirée de la note.
- * Qualité ≥ 3 : la notion est revue avec succès, l'intervalle s'allonge (1 jour, 6 jours, puis
- * intervalle × facilité). Qualité < 3 : la notion repart à 1 jour. Plusieurs tentatives le même
- * jour ne comptent qu'une fois pour allonger l'intervalle (un échec le même jour reste pris en compte).
+ * Une notion est revue au plus une fois par jour : la qualité de la revue (0 à 5) est tirée de la
+ * note moyenne des tentatives du jour sur la notion, et l'état est recalculé à chaque tentative à
+ * partir de l'état du début de journée. Revue réussie (moyenne ≥ 70 %, qualité ≥ 3) : l'intervalle
+ * s'allonge (1 jour, 6 jours, puis intervalle × facilité). Revue ratée : la notion repart à 1 jour.
+ * L'échéance est le début du jour prévu, pour qu'une notion revue un soir soit proposée dès le
+ * matin du jour de révision.
  */
-import type { Review } from '@/db/db'
+import type { Review, ReviewState } from '@/db/db'
 
 export const DAY_MS = 24 * 60 * 60 * 1000
 export const INITIAL_EASE = 2.5
 export const MIN_EASE = 1.3
 /** Qualité minimale d'une revue réussie. */
 export const PASS_QUALITY = 3
+/** Note moyenne du jour à partir de laquelle la revue de la notion est réussie. */
+export const PASS_SCORE = 0.7
 
 /** Qualité SM-2 (0 à 5) d'une note entre 0 et 1. Le seuil de 3 correspond à la réussite (70 %). */
 export function qualityFromScore(score: number, correct: boolean): number {
@@ -21,7 +25,7 @@ export function qualityFromScore(score: number, correct: boolean): number {
   return score > 0 ? 1 : 0
 }
 
-/** Début du jour local d'un instant (pour reconnaître deux revues le même jour). */
+/** Début du jour local d'un instant. */
 export function startOfDay(t: number): number {
   const d = new Date(t)
   d.setHours(0, 0, 0, 0)
@@ -32,38 +36,31 @@ export function sameDay(a: number, b: number): boolean {
   return startOfDay(a) === startOfDay(b)
 }
 
-export function newReview(notion: string, now: number): Review {
-  return { notion, due: now, interval: 0, ease: INITIAL_EASE, repetitions: 0, lapses: 0 }
+/** Début du jour situé `days` jours après `now` (robuste aux changements d'heure). */
+export function dueDate(now: number, days: number): number {
+  return startOfDay(startOfDay(now) + days * DAY_MS + DAY_MS / 2)
 }
 
-/** Nouvel état de la notion après une revue de qualité `quality` à l'instant `now`. */
-export function applyReview(previous: Review | undefined, notion: string, quality: number, now: number): Review {
-  const prev = previous ?? newReview(notion, now)
+/** Une étape SM-2 : nouvel état après une revue de qualité `quality` à l'instant `now`. */
+export function applySm2(previous: ReviewState | undefined, notion: string, quality: number, now: number): ReviewState {
+  const prev = previous ?? { notion, due: now, interval: 0, ease: INITIAL_EASE, repetitions: 0, lapses: 0 }
   const q = Math.max(0, Math.min(5, Math.round(quality)))
-  const reviewedToday = prev.lastReview !== undefined && sameDay(prev.lastReview, now)
-
   if (q < PASS_QUALITY) {
-    // Échec : la notion repart à 1 jour ; la facilité baisse une seule fois par jour.
-    const alreadyFailedToday = reviewedToday && prev.repetitions === 0 && prev.interval <= 1
     return {
       notion,
-      due: now + DAY_MS,
+      due: dueDate(now, 1),
       interval: 1,
-      ease: alreadyFailedToday ? prev.ease : nextEase(prev.ease, q),
+      ease: nextEase(prev.ease, q),
       repetitions: 0,
       lapses: prev.lapses + (prev.repetitions > 0 ? 1 : 0),
       lastReview: now,
     }
   }
-
-  // Succès le même jour qu'une revue précédente : l'intervalle n'est pas allongé une seconde fois.
-  if (reviewedToday) return { ...prev, lastReview: now }
-
   const repetitions = prev.repetitions + 1
   const interval = repetitions === 1 ? 1 : repetitions === 2 ? 6 : Math.round(prev.interval * prev.ease)
   return {
     notion,
-    due: now + interval * DAY_MS,
+    due: dueDate(now, interval),
     interval,
     ease: nextEase(prev.ease, q),
     repetitions,
@@ -77,6 +74,29 @@ function nextEase(ease: number, q: number): number {
   return Math.max(MIN_EASE, Math.round(next * 1000) / 1000)
 }
 
-export function isDue(review: Review, now: number): boolean {
+function stateOf(review: Review | undefined): ReviewState | undefined {
+  if (!review) return undefined
+  const { prior: _prior, ...state } = review
+  return state
+}
+
+/**
+ * État de la notion après une tentative, `dayScores` étant les notes (0 à 1) de toutes les
+ * tentatives du jour sur la notion, celle-ci comprise.
+ */
+export function reviewAfterAttempt(
+  current: Review | undefined,
+  notion: string,
+  dayScores: readonly number[],
+  now: number,
+): Review {
+  const reviewedToday = current?.lastReview !== undefined && sameDay(current.lastReview, now)
+  const base = reviewedToday ? current?.prior : stateOf(current)
+  const mean = dayScores.length === 0 ? 0 : dayScores.reduce((s, x) => s + x, 0) / dayScores.length
+  const next = applySm2(base, notion, qualityFromScore(mean, mean >= PASS_SCORE), now)
+  return base ? { ...next, prior: base } : next
+}
+
+export function isDue(review: ReviewState, now: number): boolean {
   return review.due <= now
 }

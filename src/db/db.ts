@@ -16,8 +16,8 @@ export interface Attempt {
   sessionId?: number
 }
 
-/** État de répétition espacée par notion (algorithme choisi en phase 4). */
-export interface Review {
+/** État de répétition espacée (SM-2) par notion. */
+export interface ReviewState {
   notion: string
   due: number
   interval: number
@@ -25,6 +25,11 @@ export interface Review {
   repetitions: number
   lapses: number
   lastReview?: number
+}
+
+export interface Review extends ReviewState {
+  /** État au début du jour de la dernière revue : la revue du jour est recalculée à chaque tentative. */
+  prior?: ReviewState
 }
 
 export type SessionMode = 'quick' | 'theme' | 'smart' | 'exam' | 'errors'

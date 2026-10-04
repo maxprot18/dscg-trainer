@@ -6,7 +6,7 @@ import type { Exercise } from '@/content/schema'
 import { db as defaultDb, type DscgDatabase, type SessionMode } from '@/db/db'
 
 import type { ExerciseResult, PartResponse } from './grading'
-import { applyReview, qualityFromScore } from './srs'
+import { reviewAfterAttempt, sameDay } from './srs'
 
 export async function startSession(
   mode: SessionMode,
@@ -39,9 +39,20 @@ export async function recordAttempt(
       durationMs: Math.round(durationMs),
       sessionId,
     })
+    // La revue du jour porte sur toutes les tentatives du jour sur la notion.
+    const today = await database.attempts
+      .where('notion')
+      .equals(exercise.notion)
+      .filter((a) => sameDay(a.date, now))
+      .toArray()
     const previous = await database.reviews.get(exercise.notion)
     await database.reviews.put(
-      applyReview(previous, exercise.notion, qualityFromScore(result.score, result.correct), now),
+      reviewAfterAttempt(
+        previous,
+        exercise.notion,
+        today.map((a) => a.score ?? (a.correct ? 1 : 0)),
+        now,
+      ),
     )
     return id as number
   })
