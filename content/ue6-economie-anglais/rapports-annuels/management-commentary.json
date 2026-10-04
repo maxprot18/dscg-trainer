@@ -1,0 +1,132 @@
+{
+  "exercises": [
+    {
+      "id": "ue6-rapports-mc-0001",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "rapports-annuels",
+      "notion": "management-commentary",
+      "difficulty": 2,
+      "tags": [
+        "basis points",
+        "operating margin",
+        "financial review"
+      ],
+      "statement": "The financial review of an annual report states: \"Operating margin expanded by 80 basis points to 12.3%.\" What was the operating margin in the previous year?",
+      "options": [
+        "12.2%",
+        "11.4%",
+        "11.5%",
+        "4.3%"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Option 3 is correct: one basis point is 0.01 percentage point, so 80 bp = 0.8 point and the previous margin was 12.3% − 0.8 = 11.5%. Option 1 treats 80 bp as 0.08 point. Option 2 treats the expansion as a relative increase of 8% (12.3 ÷ 1.08 ≈ 11.4%). Option 4 subtracts 8 percentage points, as if 80 bp were 8 points.",
+      "source_ref": "Market convention: 1 basis point (bp) = 0.01 percentage point",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue6-rapports-mc-0002",
+      "type": "numeric",
+      "ue": "UE6",
+      "theme": "rapports-annuels",
+      "notion": "management-commentary",
+      "difficulty": 2,
+      "tags": [
+        "organic growth",
+        "like-for-like",
+        "constant currency",
+        "APM"
+      ],
+      "statement": "Extract from the chief financial officer's review of Tamsin Group plc (all figures in €m): \"Revenue for 2025 was €2,610m, compared with €2,400m in 2024. 2025 revenue includes €150m from Lindqvist AB, acquired on 1 February 2025. 2024 revenue included €100m from our packaging business, sold on 31 December 2024. Translated at 2024 exchange rates, 2025 revenue would have been €60m higher.\" The group defines organic growth as growth at constant exchange rates, excluding acquisitions and disposals. Calculate organic revenue growth for 2025, as a percentage rounded to one decimal place.",
+      "expected_value": 9.6,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "decimals": 1,
+      "explanation": "Current year on a comparable basis: 2,610 − 150 (acquisition) + 60 (adverse currency effect added back) = 2,520. Prior-year base excluding the disposed business: 2,400 − 100 = 2,300. Organic growth = 2,520 ÷ 2,300 − 1 = 9.6%. For comparison, reported growth is only 2,610 ÷ 2,400 − 1 = 8.75%. Forgetting to remove the disposal from the base gives 2,520 ÷ 2,400 − 1 = 5.0%; subtracting the currency effect instead of adding it back gives (2,400 ÷ 2,300 − 1) = 4.3%.",
+      "source_ref": "ESMA Guidelines on Alternative Performance Measures (ESMA/2015/1415): definition and reconciliation of APMs such as organic growth",
+      "verified": true,
+      "estimated_seconds": 200
+    },
+    {
+      "id": "ue6-rapports-mc-0003",
+      "type": "case_study",
+      "ue": "UE6",
+      "theme": "rapports-annuels",
+      "notion": "management-commentary",
+      "difficulty": 2,
+      "tags": [
+        "adjusted EBITDA",
+        "APM",
+        "ESMA guidelines",
+        "headwinds"
+      ],
+      "title": "Reading the financial review of Corran Industries",
+      "context": "You are preparing a briefing for an investment committee on Corran Industries plc, a listed manufacturer reporting under IFRS. Extracts from the financial review in its 2025 annual report:\n\n\"Despite strong headwinds from energy prices, revenue rose to €3,900m. Adjusted EBITDA, our key measure of underlying performance, reached a record level.\"\n\nIncome statement and notes (€m): operating profit 312, after the following items: depreciation of property, plant and equipment 96; depreciation of right-of-use assets 30; amortisation of intangible assets 22; impairment of goodwill 40; restructuring costs 25; gain on the disposal of a warehouse 18.\n\nCorran defines adjusted EBITDA as operating profit before depreciation, amortisation and impairment, and excluding restructuring costs and gains or losses on disposals of assets.\n\nAnswer the committee's questions in English.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculate Corran's adjusted EBITDA for 2025, in €m.",
+          "expected_value": 507,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€m",
+          "decimals": 0,
+          "explanation": "Adjusted EBITDA = 312 + 96 + 30 + 22 (depreciation and amortisation) + 40 (impairment) + 25 (restructuring costs) − 18 (gain on disposal) = 507. The gain was included in operating profit, so it must be deducted; adding it back (543) is the classic error, as is forgetting the right-of-use depreciation (477)."
+        },
+        {
+          "id": "q2",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Under the ESMA Guidelines on Alternative Performance Measures, which of the following must Corran provide for adjusted EBITDA?",
+          "options": [
+            "An audit opinion specifically covering the adjusted EBITDA figure",
+            "A reconciliation to the most directly reconcilable line item of the financial statements, such as operating profit",
+            "A guarantee that adjusted EBITDA will be higher than operating profit every year",
+            "A presentation of adjusted EBITDA more prominently than IFRS operating profit"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "ESMA requires issuers to define each APM, reconcile it to the most directly reconcilable item of the financial statements, explain its relevance, give comparatives and use it consistently. APMs should not be displayed with more prominence than IFRS measures (so option 4 is the opposite of the rule); no specific audit opinion or \"guarantee\" is required."
+        },
+        {
+          "id": "q3",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "In the sentence \"Despite strong headwinds from energy prices\", the word \"headwinds\" refers to factors that had a favourable effect on Corran's performance.",
+          "answer": false,
+          "explanation": "False: headwinds are unfavourable factors (here, high energy prices weighing on costs); favourable factors are called tailwinds."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "points": 4,
+          "prompt": "In about 70 words, explain to the committee why it should not rely on adjusted EBITDA alone to assess Corran's 2025 performance.",
+          "model_answer": "Adjusted EBITDA (€507m) is management's own measure: it excludes €40m of goodwill impairment and €25m of restructuring costs, which are real costs, and the impairment suggests that a past acquisition is not performing as expected. It also ignores depreciation, i.e. the cost of replacing assets, as well as interest and tax. The committee should compare it with IFRS operating profit (€312m), check whether \"one-off\" restructuring costs recur each year, and look at cash flow.",
+          "key_points": [
+            "Adjusted EBITDA is an APM chosen by management, not an IFRS measure",
+            "Excluded items (impairment, restructuring) are real costs; impairment signals an underperforming acquisition",
+            "Depreciation, interest and tax ignored: EBITDA is not cash flow or profit",
+            "Compare with operating profit (€312m) and check the recurrence of \"exceptional\" items"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "The case shows how to rebuild an APM from its definition and the notes, what the ESMA guidelines require (definition, reconciliation, relevance, comparatives, consistency, no undue prominence) and why investors look beyond \"adjusted\" figures.",
+      "source_ref": "ESMA Guidelines on Alternative Performance Measures (ESMA/2015/1415), in particular the sections on reconciliations and prominence ; IAS 1 §85 (additional line items and subtotals) — règlement UE 2023/1803",
+      "verified": true,
+      "estimated_seconds": 600
+    }
+  ]
+}

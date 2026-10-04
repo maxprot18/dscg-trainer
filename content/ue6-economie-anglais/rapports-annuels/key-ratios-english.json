@@ -1,0 +1,151 @@
+{
+  "exercises": [
+    {
+      "id": "ue6-rapports-kpi-0001",
+      "type": "numeric",
+      "ue": "UE6",
+      "theme": "rapports-annuels",
+      "notion": "key-ratios-english",
+      "difficulty": 2,
+      "tags": [
+        "EPS",
+        "weighted average number of shares",
+        "IAS 33"
+      ],
+      "statement": "Extract from the 2025 annual report of Brannock Holdings plc: \"Profit for the year was €46.8m, of which €4.8m is attributable to non-controlling interests. At 1 January 2025, 100 million ordinary shares were in issue. On 1 July 2025, the company issued 20 million new ordinary shares at full market price. On 1 October 2025, it bought back 8 million shares, which are held in treasury.\" Calculate basic earnings per share for 2025 under IAS 33, in euro cents, rounded to one decimal place.",
+      "expected_value": 38.9,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "euro cents",
+      "decimals": 1,
+      "explanation": "Profit attributable to ordinary equity holders of the parent = 46.8 − 4.8 = €42.0m. Weighted average number of shares = 100 + 20 × 6/12 (outstanding from July to December) − 8 × 3/12 (not outstanding from October to December) = 100 + 10 − 2 = 108 million. Basic EPS = 42.0 ÷ 108 = €0.3889, i.e. 38.9 cents. Classic errors: using the year-end number of shares (42.0 ÷ 112 = 37.5 cents) or total profit including non-controlling interests (46.8 ÷ 108 = 43.3 cents).",
+      "source_ref": "IAS 33 §10 (basic EPS), §19-21 (weighted average number of ordinary shares outstanding, time-weighting of issues and buybacks) — règlement UE 2023/1803",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue6-rapports-kpi-0002",
+      "type": "numeric",
+      "ue": "UE6",
+      "theme": "rapports-annuels",
+      "notion": "key-ratios-english",
+      "difficulty": 2,
+      "tags": [
+        "free cash flow",
+        "APM",
+        "cash flow statement"
+      ],
+      "statement": "Extract from the consolidated cash flow statement of Elmstead plc for 2025 (€m): net cash from operating activities 1,450 (after tax paid and interest paid); purchases of property, plant and equipment (520); purchases of intangible assets (130); proceeds from disposals of property, plant and equipment 40; acquisition of a subsidiary, net of cash acquired (400); repayment of the principal portion of lease liabilities (110); dividends paid (300). Elmstead defines free cash flow as net cash from operating activities, less capital expenditure on property, plant and equipment and intangible assets, plus disposal proceeds of property, plant and equipment, less lease principal repayments. Calculate free cash flow for 2025, in €m.",
+      "expected_value": 730,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "€m",
+      "decimals": 0,
+      "explanation": "Free cash flow = 1,450 − 520 − 130 + 40 − 110 = €730m. Under the company's definition, the acquisition of a subsidiary (400) and dividends paid (300) are excluded: free cash flow measures the cash available, before acquisitions, for shareholders and lenders. Including the acquisition would give 330; including dividends as well, 30; forgetting lease repayments, 840. Because free cash flow is an alternative performance measure with no IFRS definition, the company's own definition must always be applied.",
+      "source_ref": "IAS 7 §10-17 and §31 (classification of cash flows) — règlement UE 2023/1803 ; ESMA Guidelines on Alternative Performance Measures (ESMA/2015/1415)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue6-rapports-kpi-0003",
+      "type": "numeric",
+      "ue": "UE6",
+      "theme": "rapports-annuels",
+      "notion": "key-ratios-english",
+      "difficulty": 3,
+      "tags": [
+        "ROCE",
+        "capital employed",
+        "adjusted operating profit"
+      ],
+      "statement": "Extract from the annual report of Saltmarsh Engineering plc (€m): \"Operating profit for 2025 was €84m, after a restructuring charge of €6m, which we exclude from adjusted operating profit.\" Balance sheet: total equity €410m at 1 January 2025 and €450m at 31 December 2025; non-current liabilities €190m at 1 January 2025 and €230m at 31 December 2025. The group defines adjusted ROCE as adjusted operating profit divided by average capital employed, capital employed being total equity plus non-current liabilities. Calculate adjusted ROCE for 2025, as a percentage rounded to one decimal place.",
+      "expected_value": 14.1,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "decimals": 1,
+      "explanation": "Adjusted operating profit = 84 + 6 = €90m (the restructuring charge was deducted in arriving at operating profit, so it is added back). Capital employed: opening 410 + 190 = 600; closing 450 + 230 = 680; average = (600 + 680) ÷ 2 = 640. Adjusted ROCE = 90 ÷ 640 = 14.1%. Classic errors: using reported operating profit (84 ÷ 640 = 13.1%) or closing capital employed (90 ÷ 680 = 13.2%).",
+      "source_ref": "ROCE = operating profit ÷ capital employed (usual definition, applied according to the company's own APM definition) ; ESMA Guidelines on Alternative Performance Measures (ESMA/2015/1415)",
+      "verified": true,
+      "estimated_seconds": 210
+    },
+    {
+      "id": "ue6-rapports-kpi-0004",
+      "type": "case_study",
+      "ue": "UE6",
+      "theme": "rapports-annuels",
+      "notion": "key-ratios-english",
+      "difficulty": 3,
+      "tags": [
+        "net debt",
+        "leverage",
+        "covenant",
+        "refinancing risk"
+      ],
+      "title": "Net debt and covenant at Wexcombe Group",
+      "context": "A bank is considering a new loan to Wexcombe Group plc, a listed retailer. You are asked to review the following extracts from its 2025 annual report (€m, at 31 December 2025).\n\nBalance sheet: non-current borrowings 640; current borrowings 160 (a bond maturing in June 2026); lease liabilities 200; cash and cash equivalents 300.\n\nIncome statement and notes: EBITDA 280; lease payments made during the year (principal and interest) 50.\n\nFinancial review: \"Net debt, which we define as borrowings plus lease liabilities less cash and cash equivalents, remained under control. Our existing bank facility includes a single covenant: covenant net debt (borrowings less cash, excluding lease liabilities) must not exceed 3.0 times covenant EBITDA (EBITDA less lease payments).\"\n\nAnswer the bank's questions in English.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculate Wexcombe's net debt at 31 December 2025 according to the company's own definition, in €m.",
+          "expected_value": 700,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€m",
+          "decimals": 0,
+          "explanation": "Net debt = borrowings (640 + 160) + lease liabilities 200 − cash 300 = €700m. Forgetting the current borrowings gives 540; forgetting lease liabilities gives 500 (which is the covenant definition, not the company's headline definition)."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculate the leverage ratio (net debt as defined by the company ÷ EBITDA), rounded to one decimal place.",
+          "expected_value": 2.5,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.05
+          },
+          "unit": "x",
+          "decimals": 1,
+          "explanation": "Leverage = 700 ÷ 280 = 2.5x."
+        },
+        {
+          "id": "q3",
+          "kind": "true_false",
+          "points": 2,
+          "prompt": "Using the covenant definitions given in the financial review, Wexcombe is in breach of its covenant at 31 December 2025.",
+          "answer": false,
+          "explanation": "False: covenant net debt = 800 − 300 = €500m; covenant EBITDA = 280 − 50 = €230m; covenant ratio = 500 ÷ 230 ≈ 2.17x, below the 3.0x limit. Headroom: all else being equal, covenant EBITDA could fall to about €167m (500 ÷ 3.0), i.e. by about 27%, before a breach."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "points": 4,
+          "prompt": "In about 80 words, comment on Wexcombe's financial position from a lender's point of view.",
+          "model_answer": "Leverage of 2.5x on the company's definition is moderate for a retailer, and the covenant is respected (about 2.2x against a 3.0x limit), so there is some headroom. However, the €160m bond maturing in June 2026 creates a refinancing risk: it will absorb more than half of the €300m cash or must be refinanced. The bank should also note that different definitions of net debt and EBITDA give different ratios, and ask for cash flow forecasts and sensitivity of EBITDA to a drop in sales.",
+          "key_points": [
+            "Moderate leverage (2.5x) and covenant respected with headroom (≈ 2.2x vs 3.0x)",
+            "Refinancing risk on the €160m bond due within twelve months, compared with cash of €300m",
+            "Ratios depend on the definitions used (with or without leases): read the definitions",
+            "Request for forecasts / sensitivity analysis before lending"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "The case shows that net debt and EBITDA are alternative performance measures whose definition (in particular the treatment of IFRS 16 lease liabilities) changes the ratios, and that lenders look at both covenant headroom and debt maturities.",
+      "source_ref": "IFRS 16 §47 (lease liabilities presented in the balance sheet) — règlement UE 2023/1803 ; ESMA Guidelines on Alternative Performance Measures (ESMA/2015/1415) ; usual definitions of net debt, leverage and covenant ratios",
+      "verified": true,
+      "estimated_seconds": 720
+    }
+  ]
+}

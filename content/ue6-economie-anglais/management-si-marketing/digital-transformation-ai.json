@@ -1,0 +1,98 @@
+{
+  "exercises": [
+    {
+      "id": "ue6-mgmt-ai-0001",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "management-si-marketing",
+      "notion": "digital-transformation-ai",
+      "difficulty": 1,
+      "tags": [
+        "cloud computing",
+        "SaaS",
+        "information systems"
+      ],
+      "statement": "A mid-sized company decides to stop running its accounting software on its own servers. From now on, a provider will host the application, apply the updates and charge a monthly fee per user, and staff will simply log in through a web browser. Which cloud service model has the company chosen?",
+      "options": [
+        "Infrastructure as a service (IaaS)",
+        "Platform as a service (PaaS)",
+        "Software as a service (SaaS)",
+        "An on-premises perpetual licence"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Option 3 is correct: with software as a service, the provider hosts and maintains a ready-to-use application and the customer pays a subscription (here a monthly fee per user). Option 1 is wrong: with IaaS, the provider only supplies computing power, storage and networks; the company would still install and manage the accounting software itself. Option 2 is wrong: PaaS provides a platform for developing and running the customer's own applications. Option 4 is the opposite situation: an on-premises licence means the software runs on the company's own servers, which is precisely what the company is giving up. A side effect worth knowing: the spending moves from capital expenditure (servers, licences) to operating expenditure (subscription).",
+      "source_ref": "Cloud service models IaaS / PaaS / SaaS (usual definitions, e.g. NIST SP 800-145)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue6-mgmt-ai-0002",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "management-si-marketing",
+      "notion": "digital-transformation-ai",
+      "difficulty": 2,
+      "tags": [
+        "AI Act",
+        "high-risk AI",
+        "recruitment"
+      ],
+      "statement": "A European retail chain plans to deploy an AI tool that screens job applicants' CVs, ranks them and draws up the shortlist of candidates invited to an interview. Under the EU Artificial Intelligence Act (Regulation (EU) 2024/1689), how is this system classified?",
+      "options": [
+        "As a minimal-risk system, with no specific obligations, because a human still conducts the interviews.",
+        "As a high-risk system, subject to requirements such as risk management, data quality, documentation and human oversight.",
+        "As a prohibited practice, because AI may never be used to make decisions about people.",
+        "As a limited-risk system, whose only obligation is to inform candidates that they are interacting with an AI."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Option 2 is correct: the AI Act follows a risk-based approach and lists AI systems used for the recruitment or selection of natural persons (in particular to analyse and filter applications and evaluate candidates) among high-risk systems (Annex III, employment). Such systems must meet strict requirements: risk management, data governance, technical documentation, logging, transparency towards deployers and human oversight. Option 1 is wrong: the fact that interviews remain human does not change the classification, since the tool itself filters candidates. Option 3 is wrong: prohibited practices are a short, specific list (e.g. social scoring, certain manipulative techniques), not every use of AI concerning people. Option 4 describes the transparency obligations of limited-risk systems such as chatbots; they are not sufficient for a recruitment tool.",
+      "source_ref": "Regulation (EU) 2024/1689 (AI Act), risk-based approach ; Annex III, point 4 (employment, workers management)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue6-mgmt-ai-0003",
+      "type": "true_false",
+      "ue": "UE6",
+      "theme": "management-si-marketing",
+      "notion": "digital-transformation-ai",
+      "difficulty": 2,
+      "tags": [
+        "GDPR",
+        "data controller",
+        "processor",
+        "SaaS"
+      ],
+      "statement": "A French company that moves its customer database to a SaaS provider transfers its responsibility as data controller under the GDPR to that provider, which becomes solely liable for compliance with the regulation.",
+      "answer": false,
+      "justification": "False: the company still decides why and how the data are processed, so it remains the controller; the SaaS provider acts as a processor on its behalf under a contract (GDPR art. 28).",
+      "explanation": "Under the GDPR, the controller (responsable de traitement) is the entity that determines the purposes and means of the processing (art. 4(7)); the processor (sous-traitant) processes personal data on behalf of the controller (art. 4(8)). Outsourcing the hosting to a cloud provider does not change who decides why the customer data are used: the company remains the controller and must choose a processor offering sufficient guarantees and sign a contract with it (art. 28). The processor has its own obligations (security, acting only on documented instructions) and can also be held liable, but it does not take over the controller's responsibility.",
+      "source_ref": "Regulation (EU) 2016/679 (GDPR), art. 4(7) and 4(8) (definitions), art. 28 (processor)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue6-mgmt-ai-0004",
+      "type": "flashcard",
+      "ue": "UE6",
+      "theme": "management-si-marketing",
+      "notion": "digital-transformation-ai",
+      "difficulty": 1,
+      "tags": [
+        "generative AI",
+        "hallucination",
+        "human in the loop"
+      ],
+      "front": "What is a \"hallucination\" in generative AI, and how can a finance team limit the risk?",
+      "back": "A hallucination is an output that sounds plausible but is false or made up (e.g. an invented figure, standard paragraph or reference).\nTo limit the risk: keep a \"human in the loop\" who reviews outputs, check figures and references against the source documents, give the tool reliable internal data, and never use an unchecked output in reporting.",
+      "explanation": "Large language models predict likely sequences of words; they do not check facts. In accounting and finance, a hallucinated amount or a non-existent paragraph of a standard can lead to a misstatement. Human oversight is also one of the requirements of the EU AI Act for high-risk systems.",
+      "source_ref": "Regulation (EU) 2024/1689 (AI Act), human oversight of high-risk systems ; usual definition of AI hallucination",
+      "verified": true,
+      "estimated_seconds": 40
+    }
+  ]
+}

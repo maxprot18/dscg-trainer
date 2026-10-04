@@ -1,0 +1,95 @@
+{
+  "exercises": [
+    {
+      "id": "ue6-mgmt-ops-0001",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "management-si-marketing",
+      "notion": "operations-supply-chain-marketing",
+      "difficulty": 1,
+      "tags": [
+        "marketing mix",
+        "4Ps",
+        "distribution"
+      ],
+      "statement": "A cosmetics start-up decides to sell its new skincare range only through its own website and a selected network of pharmacies. Which element of the marketing mix (4Ps) does this decision relate to?",
+      "options": [
+        "Place",
+        "Promotion",
+        "Product",
+        "Price"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Option 1 is correct: \"place\" covers distribution, i.e. the channels through which the product reaches customers (website, pharmacies). Option 2 is wrong: promotion concerns communication (advertising, social media, sales promotions). Option 3 is wrong: product concerns the offer itself (formula, packaging, range). Option 4 is wrong: price concerns the pricing policy (level, discounts, payment terms).",
+      "source_ref": "McCarthy, Basic Marketing (1960): the 4Ps of the marketing mix",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue6-mgmt-ops-0002",
+      "type": "numeric",
+      "ue": "UE6",
+      "theme": "management-si-marketing",
+      "notion": "operations-supply-chain-marketing",
+      "difficulty": 2,
+      "tags": [
+        "inventory days",
+        "DIO",
+        "supply chain"
+      ],
+      "statement": "Extract from the annual report of Fjordline Foods plc for the year ended 31 December 2025 (£k): revenue 10,950; cost of sales 7,300; inventories at 1 January 2025: 1,100; inventories at 31 December 2025: 1,300. The supply chain director wants to know the days inventory outstanding (DIO), based on average inventories, cost of sales and a 365-day year. Give the answer in days, rounded to the nearest whole number.",
+      "expected_value": 60,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "days",
+      "decimals": 0,
+      "explanation": "Average inventories = (1,100 + 1,300) ÷ 2 = 1,200. DIO = average inventories ÷ cost of sales × 365 = 1,200 ÷ 7,300 × 365 = 60 days. Inventories are measured at cost, so they are compared with cost of sales, not with revenue (1,200 ÷ 10,950 × 365 = 40 days would understate the holding period). Using closing inventories only would give 1,300 ÷ 7,300 × 365 = 65 days. Equivalently, inventory turnover = 7,300 ÷ 1,200 ≈ 6.1 times a year.",
+      "source_ref": "Days inventory outstanding = average inventory ÷ cost of sales × 365 (usual definition) ; IAS 2 §9 (inventories measured at cost or net realisable value)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue6-mgmt-ops-0003",
+      "type": "true_false",
+      "ue": "UE6",
+      "theme": "management-si-marketing",
+      "notion": "operations-supply-chain-marketing",
+      "difficulty": 1,
+      "tags": [
+        "pricing",
+        "price skimming",
+        "penetration pricing"
+      ],
+      "statement": "Price skimming involves launching a new product at a low price in order to gain market share quickly.",
+      "answer": false,
+      "justification": "False: this describes penetration pricing. Price skimming means launching at a high price, aimed at early adopters, and lowering it gradually.",
+      "explanation": "With price skimming (écrémage), the company \"skims\" the most price-insensitive customers first, typically for innovative products (new smartphones, game consoles), and then cuts the price to reach wider segments. Penetration pricing (prix de pénétration) sets a low launch price to win volume and market share quickly, which suits markets with strong price sensitivity or economies of scale.",
+      "source_ref": "Kotler, Marketing Management: new-product pricing strategies (market skimming vs market penetration)",
+      "verified": true,
+      "estimated_seconds": 35
+    },
+    {
+      "id": "ue6-mgmt-ops-0004",
+      "type": "flashcard",
+      "ue": "UE6",
+      "theme": "management-si-marketing",
+      "notion": "operations-supply-chain-marketing",
+      "difficulty": 2,
+      "tags": [
+        "lead time",
+        "safety stock",
+        "reorder point"
+      ],
+      "front": "What are \"lead time\" and \"safety stock\", and how do they determine the reorder point?",
+      "back": "Lead time (délai d'approvisionnement): the time between placing an order and receiving the goods.\nSafety stock (stock de sécurité): extra inventory held to cover unexpected demand or late deliveries.\nReorder point = expected demand during the lead time + safety stock: when inventory falls to this level, a new order is placed.",
+      "explanation": "Example: daily demand of 40 units, lead time of 5 days and safety stock of 60 units give a reorder point of 40 × 5 + 60 = 260 units. Longer or more uncertain lead times (e.g. distant suppliers) require higher safety stocks, which is the trade-off behind nearshoring and dual sourcing decisions.",
+      "source_ref": "Inventory management: reorder point model (usual operations management definition)",
+      "verified": true,
+      "estimated_seconds": 45
+    }
+  ]
+}
