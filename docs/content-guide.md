@@ -10,22 +10,41 @@ Ce guide s'adresse aux agents (et contributeurs) qui rédigent ou relisent des f
 
 ## Fiche de cours (`content/courses/<id-notion>.md`)
 
-Une fiche par notion, écrite **avant** les exercices de la notion (les exercices s'appuient sur elle). Le nom du fichier est exactement l'id de la notion dans `content/taxonomy.json`. 10 à 30 lignes non vides, en Markdown :
+Une fiche par notion, écrite **avant** les exercices de la notion (les exercices s'appuient sur elle). Le nom du fichier est exactement l'id de la notion dans `content/taxonomy.json`. **22 à 30 lignes non vides** (compter les lignes d'un bloc ```diagram pour une seule), en Markdown, avec cette structure fixe (depuis la phase 6) :
 
 ```markdown
 # <Titre de la notion>
 
 **Références :** IAS 16 §43-62 (règl. UE 2023/1803) ; PCG art. 214-9
 
+**Enjeu :** <une phrase : à quoi sert la notion, où elle tombe à l'examen.>
+
 <Définitions, règles, conditions, méthodes de calcul en phrases courtes ou listes.>
 
 **Formules clés :** VAN = −I₀ + Σ FNTₜ (1 + k)⁻ᵗ
 
+## Exemple
+<Un exemple chiffré résolu en 3 à 6 lignes : données, calcul, résultat, écriture s'il y a lieu. Pour une notion juridique : un cas concret et sa solution.>
+
+## Erreurs fréquentes
+- <2 à 4 erreurs classiques, tirées des distracteurs des QCM de la notion, avec la bonne règle.>
+
 ## À retenir
-- <2 à 5 points, dont les pièges classiques>
+- <2 à 5 points.>
+
+**Notions liées :** [IAS 36 — Dépréciation d'actifs](/cours/ias-36-depreciation) · [Amortissements en PCG](/cours/amortissements-depreciations-pcg)
 ```
 
-Pas de tableau de plus de 6 lignes, pas d'images. Formules en texte (Unicode autorisé : ₀ ¹ ² × − Σ ≤ ≥).
+- **Liens internes** : `[titre](/cours/<id-notion>)`, uniquement vers des notions de la taxonomie (le validateur refuse les autres). 1 à 4 notions liées, choisies parce qu'elles se confondent ou se complètent (même thème ou autre UE).
+- **Diagramme** (quand la notion s'y prête ; environ une notion sur deux) : un bloc ```` ```diagram ```` contenant un JSON validé par `npm run validate`, placé après les règles qu'il illustre. Cinq formes (schéma complet : `src/content/diagramSchema.ts`) :
+  - `timeline` : `{"type":"timeline","title":"…","items":[{"when":"J+45","label":"…","note":"…"}]}` (2 à 10 étapes) ;
+  - `tree` : arbre de décision `{"type":"tree","title":"…","root":{"label":"Question","children":[{"edge":"oui","label":"…"},{"edge":"non","label":"…","children":[…]}]}}` ;
+  - `org` : organigramme `{"type":"org","title":"…","nodes":[{"id":"M","label":"Mère"},{"id":"F","label":"Fille"}],"links":[{"from":"M","to":"F","label":"80 %"}]}` (libellés de nœud ≤ 22 caractères, de lien ≤ 14) ;
+  - `flow` : enchaînement `{"type":"flow","title":"…","steps":[{"label":"…","note":"…"}]}` (2 à 8 étapes) ;
+  - `bars` : comparaison `{"type":"bars","title":"…","unit":"k€","items":[{"label":"…","value":120}]}` (2 à 8 barres, valeurs négatives admises).
+  Le titre dit ce que montre le diagramme ; les libellés sont courts ; aucune donnée qui ne soit pas dans la fiche. Pas d'image, pas de SVG écrit à la main.
+- UE 6 (anglais) : ajouter une ligne **Glossary:** `term — traduction` (4 à 8 termes).
+- Pas de tableau de plus de 6 lignes. Formules en texte (Unicode autorisé : ₀ ¹ ² × − Σ ≤ ≥).
 
 ## Exercices (`content/<slug-ue>/<theme>/<id-notion>.json`)
 
@@ -50,4 +69,4 @@ Variété : ne pas répéter le même scénario ou les mêmes chiffres d'un exer
 
 ## Relecture indépendante (obligatoire avant `verified: true`)
 
-Le relecteur n'est pas le rédacteur. Pour chaque exercice : lire l'énoncé seul, le résoudre (recalcul avec node), **puis** comparer avec la réponse et l'explication. Vérifier l'exactitude technique, la cohérence énoncé / réponse / explication, l'unicité de la bonne réponse, la tolérance, `source_ref`, les données suffisantes. Corriger ce qui est sûr, passer à `true` ; laisser `false` en expliquant si le fond est faux et la correction incertaine. Relire aussi les fiches de cours du lot (exactitude, références, 10-30 lignes). Terminer par `npm run validate`.
+Le relecteur n'est pas le rédacteur. Pour chaque exercice : lire l'énoncé seul, le résoudre (recalcul avec node), **puis** comparer avec la réponse et l'explication. Vérifier l'exactitude technique, la cohérence énoncé / réponse / explication, l'unicité de la bonne réponse, la tolérance, `source_ref`, les données suffisantes. Corriger ce qui est sûr, passer à `true` ; laisser `false` en expliquant si le fond est faux et la correction incertaine. Relire aussi les fiches de cours du lot : exactitude, références, 22-30 lignes, exemple recalculé, erreurs fréquentes exactes, liens vers les bonnes notions, diagrammes justes (chaque pourcentage, date ou étape vérifié contre le texte de la fiche). Terminer par `npm run validate`.
