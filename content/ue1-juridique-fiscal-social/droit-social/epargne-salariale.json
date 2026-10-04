@@ -173,6 +173,77 @@
       "explanation": "Le cas confronte les deux dispositifs de partage de la valeur : participation obligatoire au-delà d'un seuil, intéressement facultatif dont la répartition combine ici critère uniforme et critère salarial, et placement sur un PEE soumis à une indisponibilité de cinq ans.",
       "source_ref": "C. trav. art. L3312-1 s. (intéressement), L3322-2 (participation obligatoire), L3324-1 (RSP), L3332-1 s. et L3332-25 (PEE, indisponibilité)",
       "estimated_seconds": 780
+    },
+    {
+      "id": "ue1-social-epargne-0005",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "droit-social",
+      "notion": "epargne-salariale",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "PEE",
+        "abondement",
+        "plafond"
+      ],
+      "statement": "La SAS Héron (120 salariés) a mis en place un plan d'épargne d'entreprise (PEE) dont le règlement prévoit un abondement de l'employeur égal à 250 % des sommes placées par le salarié (intéressement et versements volontaires). En N, Clara (salaire brut annuel 40 000 €) place sur le PEE 800 € d'intéressement et effectue 1 200 € de versements volontaires. Hypothèses : l'abondement est plafonné, par bénéficiaire et par an, au triple des sommes placées par le salarié et à 8 % du plafond annuel de la sécurité sociale (PASS), fixé à 48 060 €. Calculez l'abondement versé par Héron à Clara au titre de N, en euros, arrondi au centime.",
+      "expected_value": 3844.8,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "€",
+      "decimals": 2,
+      "explanation": "Sommes placées par Clara : 800 + 1 200 = 2 000 €.\nAbondement selon le règlement : 250 % × 2 000 = 5 000 €.\nPlafond du triple : 3 × 2 000 = 6 000 € (non atteint).\nPlafond de 8 % du PASS : 8 % × 48 060 = 3 844,80 € (atteint).\nAbondement = min(5 000 ; 6 000 ; 3 844,80) = 3 844,80 €.\nErreurs types : appliquer le taux du règlement sans plafond (5 000 €) ou retenir le seul plafond du triple (6 000 €). Les versements volontaires (1 200 €) restent sous le plafond de 25 % de la rémunération annuelle (10 000 €), qui ne s'applique d'ailleurs pas à l'intéressement placé.",
+      "source_ref": "C. trav. art. L3332-10 (versements, plafond de 25 %) et L3332-11 (abondement, plafond du triple) ; R3332-8 (plafond de 8 % du PASS ; PASS donné en hypothèse)",
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue1-social-epargne-0006",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "droit-social",
+      "notion": "epargne-salariale",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "participation",
+        "versement",
+        "CSG-CRDS",
+        "forfait social"
+      ],
+      "statement": "Au 31 décembre N, la SA Cobalt (180 salariés) a constaté une participation de 150 000 € (débit 691, crédit 4284) et le forfait social correspondant de 30 000 € (débit 645, crédit 4386). Le 20 mai N+1, après répartition entre les salariés, elle verse par banque la participation nette de CSG-CRDS, en partie au teneur de comptes du PEE et en partie aux salariés ayant demandé un versement immédiat. Le même jour, elle paie par banque le forfait social. La CSG-CRDS, précomptée au taux global de 9,7 % sur le montant brut de la participation, sera reversée à l'URSSAF ultérieurement. Passez l'écriture du 20 mai N+1 en utilisant les comptes 4284, 4386, 431 (CSG-CRDS à reverser) et 512, sans transiter par le compte 424.",
+      "date": "20/05/N+1",
+      "entries": [
+        {
+          "account": "4284",
+          "label": "Dettes provisionnées pour participation des salariés aux résultats",
+          "debit": 150000,
+          "credit": 0
+        },
+        {
+          "account": "4386",
+          "label": "Organismes sociaux - charges à payer (forfait social)",
+          "debit": 30000,
+          "credit": 0
+        },
+        {
+          "account": "431",
+          "label": "Sécurité sociale (CSG-CRDS précomptée)",
+          "debit": 0,
+          "credit": 14550
+        },
+        {
+          "account": "512",
+          "label": "Banque (participation nette + forfait social)",
+          "debit": 0,
+          "credit": 165450
+        }
+      ],
+      "explanation": "La dette de participation provisionnée en N (4284) est soldée pour son montant brut : 150 000 €.\nCSG-CRDS précomptée : 9,7 % × 150 000 = 14 550 €, dette envers l'URSSAF (431) ; elle est à la charge du salarié et réduit la somme versée, sans constituer une charge pour l'entreprise.\nParticipation nette versée (PEE et salariés réunis) : 150 000 − 14 550 = 135 450 €.\nForfait social payé : 30 000 €, qui solde le 4386.\nCrédit 512 = 135 450 + 30 000 = 165 450 €. Total débit = total crédit = 180 000 €.\nAucune charge n'est constatée en N+1 : la charge de participation et celle du forfait social ont été rattachées à N. Fiscalement, la participation, réintégrée en N, est déduite du résultat de N+1, exercice de sa répartition (CGI art. 237 bis A).",
+      "source_ref": "PCG (règl. ANC 2014-03), comptes 4284, 4386, 431 et 512 ; C. trav. art. L3324-1 s. (participation) ; CGI art. 237 bis A ; taux de CSG-CRDS donné en hypothèse",
+      "estimated_seconds": 240
     }
   ]
 }

@@ -100,6 +100,124 @@
       "explanation": "Les seuils s'apprécient sur 12 mois consécutifs. L'avis du CSE est consultatif, mais le défaut de consultation constitue un délit d'entrave. Références : C. trav. art. L2311-2, L2312-8, L2312-17 et L2312-18.",
       "source_ref": "C. trav. art. L2311-2, L2312-8, L2312-17 et L2312-18",
       "estimated_seconds": 60
+    },
+    {
+      "id": "ue1-social-cse-0005",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "droit-social",
+      "notion": "representation-personnel-cse",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "négociation collective",
+        "accord majoritaire",
+        "délégué syndical"
+      ],
+      "statement": "Dans une entreprise pourvue de délégués syndicaux, à quelle condition un accord d'entreprise est-il, en principe, valable ?",
+      "options": [
+        "Il suffit qu'il soit signé par un seul syndicat représentatif, quelle que soit son audience électorale",
+        "Il doit être approuvé par une délibération majoritaire des membres élus du CSE",
+        "Il doit être signé par des syndicats représentatifs ayant recueilli au moins 30 % des suffrages, en l'absence d'opposition des syndicats majoritaires",
+        "Il doit être signé par des syndicats représentatifs ayant recueilli plus de 50 % des suffrages exprimés en faveur des organisations représentatives au premier tour des élections du CSE"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Depuis la généralisation de l'accord majoritaire (L2232-12), l'accord d'entreprise doit être signé par un ou plusieurs syndicats représentatifs ayant recueilli plus de 50 % des suffrages exprimés en faveur des organisations représentatives au premier tour des dernières élections des titulaires du CSE : option 4.\nL'option 1 ignore toute condition d'audience. L'option 2 confond le CSE, qui rend des avis, avec les syndicats, qui négocient et signent les accords en présence de délégués syndicaux. L'option 3 reprend l'ancienne règle (30 % sans opposition majoritaire) ; aujourd'hui, un accord signé par des syndicats ayant plus de 30 % mais pas plus de 50 % n'est valable qu'après approbation des salariés par consultation (référendum) demandée par ces syndicats.",
+      "source_ref": "C. trav. art. L2232-12 (validité des accords d’entreprise)",
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue1-social-cse-0006",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "droit-social",
+      "notion": "representation-personnel-cse",
+      "verified": true,
+      "difficulty": 3,
+      "tags": [
+        "effectif",
+        "consultation du CSE",
+        "délit d’entrave",
+        "accord majoritaire",
+        "restructuration"
+      ],
+      "title": "Verdier : fermeture d’un atelier et dialogue social",
+      "context": "La SAS Verdier fabrique des emballages sur deux sites, à Tours et à Limoges. Sa composition est restée stable sur les 12 derniers mois :\n- 285 salariés en CDI à temps plein, dont 6 en arrêt maladie ;\n- 20 salariés en CDI à temps partiel de 28 heures par semaine (durée légale : 35 heures) ;\n- 8 salariés en CDD pour accroissement temporaire d'activité, présents chacun 6 mois ;\n- 3 salariés en CDD remplaçant chacun un salarié en arrêt maladie, présents 12 mois ;\n- 12 intérimaires pour accroissement temporaire d'activité, présents chacun 4 mois ;\n- 10 apprentis.\nUn CSE et des délégués syndicaux sont en place. Au premier tour des dernières élections des titulaires du CSE, les suffrages valablement exprimés se sont répartis ainsi : CGT 230, CFDT 160, FO 90, UNSA 40.\nLa direction envisage de fermer l'atelier de Limoges : 25 salariés seraient mutés à Tours et 7 seraient licenciés pour motif économique. Avant toute réunion du CSE, le président annonce la fermeture à la presse et signe une promesse de vente des locaux de Limoges.\nUn accord d'entreprise sur l'accompagnement des salariés mutés est ensuite négocié ; la CFDT et FO sont prêtes à le signer, la CGT refuse.\nHypothèses : les syndicats cités remplissent les critères de représentativité autres que l'audience ; le seuil d'audience est de 10 % des suffrages exprimés.",
+      "sub_questions": [
+        {
+          "id": "q1-effectif",
+          "kind": "numeric",
+          "prompt": "Calculez l'effectif de la SAS Verdier selon les règles de décompte du Code du travail. Réponse en nombre de salariés (arrondi à l'unité si nécessaire).",
+          "points": 3,
+          "expected_value": 309,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "salariés",
+          "decimals": 0,
+          "explanation": "CDI à temps plein : 285 (les 6 salariés en arrêt maladie restent comptés, leur contrat n'étant que suspendu).\nTemps partiel : 20 × 28 / 35 = 16.\nCDD pour accroissement d'activité : 8 × 6 / 12 = 4.\nCDD de remplacement : 0 (le salarié remplacé est déjà compté).\nIntérimaires pour accroissement d'activité : 12 × 4 / 12 = 4.\nApprentis : exclus (L1111-3).\nEffectif = 285 + 16 + 4 + 4 = 309 salariés : l'entreprise dépasse 300 salariés (commission santé, sécurité et conditions de travail obligatoire).\nErreurs types : compter les apprentis (319), retirer les salariés malades (303), ajouter les remplaçants (312), compter les temps partiels pour une unité (313)."
+        },
+        {
+          "id": "q2-moment-consultation",
+          "kind": "mcq",
+          "prompt": "À quel moment et dans quelles conditions le CSE doit-il être consulté sur la fermeture de l’atelier de Limoges ?",
+          "points": 2,
+          "options": [
+            "Après la décision, pour être informé de ses modalités de mise en œuvre",
+            "Avant la décision, sur la base d’informations précises et écrites, le CSE disposant d’un délai suffisant pour rendre un avis motivé",
+            "Seulement si le projet comporte au moins 10 licenciements, seuil du plan de sauvegarde de l’emploi",
+            "Uniquement si les élus du CSE en font la demande par un vote majoritaire"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "Dans une entreprise d'au moins 50 salariés, le CSE est informé et consulté sur les questions intéressant l'organisation, la gestion et la marche générale de l'entreprise, notamment les restructurations et compressions d'effectifs (L2312-8) ; la consultation précède la décision de l'employeur et repose sur des informations précises et écrites, avec un délai d'examen suffisant : option 2. L'option 1 inverse la chronologie. L'option 3 confond la consultation du CSE, due quel que soit le nombre de licenciements, avec le seuil du PSE. L'option 4 est fausse : la consultation est une obligation de l'employeur, pas une faculté laissée aux élus."
+        },
+        {
+          "id": "q3-avis-defavorable",
+          "kind": "true_false",
+          "prompt": "Vrai ou faux : si le CSE, régulièrement consulté, rend un avis défavorable sur le projet, la direction ne peut pas fermer l'atelier de Limoges.",
+          "points": 1,
+          "answer": false,
+          "explanation": "Faux. L'avis du CSE est consultatif : une fois la consultation régulièrement menée, l'employeur reste libre de sa décision, même face à un avis défavorable."
+        },
+        {
+          "id": "q4-audience-signataires",
+          "kind": "numeric",
+          "prompt": "Calculez, en pourcentage arrondi à deux décimales, l'audience électorale cumulée de la CFDT et de FO retenue pour apprécier la validité de l'accord d'entreprise.",
+          "points": 2,
+          "expected_value": 52.08,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Suffrages exprimés : 230 + 160 + 90 + 40 = 520. L'UNSA obtient 40 / 520 = 7,69 % < 10 % : elle n'est pas représentative et ses voix sont exclues du dénominateur.\nSuffrages en faveur des syndicats représentatifs : 230 + 160 + 90 = 480.\nAudience CFDT + FO = (160 + 90) / 480 = 250 / 480 = 52,08 % > 50 % : l'accord est valable sans référendum.\nErreur type : rapporter aux 520 suffrages exprimés (48,08 %), ce qui conduirait à tort à juger l'accord minoritaire."
+        },
+        {
+          "id": "q5-entrave-referendum",
+          "kind": "open",
+          "prompt": "Appréciez le comportement du président (annonce publique et promesse de vente avant consultation) et ses conséquences. Indiquez ensuite ce qu'il adviendrait si la CFDT était seule signataire de l'accord.",
+          "points": 4,
+          "model_answer": "Annoncer la fermeture à la presse et signer une promesse de vente des locaux avant toute réunion du CSE revient à prendre la décision avant la consultation, qui perd alors son objet : l'employeur méconnaît l'obligation de consulter le CSE préalablement à la décision sur une restructuration (L2312-8). Ce manquement constitue un délit d'entrave au fonctionnement régulier du CSE (L2317-1), puni d'une amende de 7 500 € ; le CSE peut en outre saisir le juge des référés pour obtenir la suspension de la mise en œuvre du projet jusqu'à ce qu'une consultation régulière ait eu lieu. Les licenciements économiques envisagés supposent eux aussi la consultation préalable du CSE. Si la CFDT était seule signataire, son audience serait de 160 / 480 = 33,33 % : supérieure à 30 % mais pas à 50 %, l'accord ne serait pas valable en l'état ; la CFDT pourrait demander, dans le délai prévu par la loi, une consultation des salariés, l'accord étant validé s'il est approuvé à la majorité des suffrages exprimés.",
+          "key_points": [
+            "Décision prise avant la consultation : méconnaissance de la consultation préalable du CSE sur une restructuration",
+            "Délit d’entrave au fonctionnement régulier du CSE (amende de 7 500 €) et suspension possible du projet en référé",
+            "L’avis reste consultatif, mais la consultation doit précéder la décision",
+            "CFDT seule : 33,33 % (entre 30 et 50 %), accord non valable sauf approbation par référendum des salariés"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Le cas enchaîne le décompte de l'effectif (salariés absents comptés, remplaçants et apprentis exclus, temporaires au prorata), la consultation préalable du CSE sur une restructuration, la portée de son avis, la sanction de l'entrave et la mesure de l'audience des signataires d'un accord, calculée sur les seuls suffrages des syndicats représentatifs.",
+      "source_ref": "C. trav. art. L1111-2 et L1111-3 (effectif), L2312-8 (consultation sur la marche générale de l’entreprise), L2312-15 (informations précises et écrites, avis motivé), L2317-1 (délit d’entrave), L2122-1 (audience de 10 %), L2232-12 (accord majoritaire et consultation des salariés)",
+      "estimated_seconds": 900
     }
   ]
 }

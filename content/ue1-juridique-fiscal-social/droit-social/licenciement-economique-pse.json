@@ -175,6 +175,26 @@
       "explanation": "Le cas articule les conditions de fond du licenciement économique (difficultés caractérisées selon l'effectif), le déclenchement du PSE, la procédure (CSE, homologation administrative, reclassement, critères d'ordre, CSP) et le calcul de l'indemnité légale.",
       "source_ref": "C. trav. art. L1233-3, L1233-4, L1233-5, L1233-30, L1233-57-4, L1233-61, L1233-66 ; C. trav. art. R1234-2 (indemnité, donnée en hypothèse)",
       "estimated_seconds": 840
+    },
+    {
+      "id": "ue1-social-licen-0006",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "droit-social",
+      "notion": "licenciement-economique-pse",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "motif économique",
+        "difficultés économiques",
+        "baisse du chiffre d’affaires"
+      ],
+      "statement": "Dans une entreprise de 30 salariés, une baisse significative du chiffre d'affaires constatée sur un seul trimestre, par comparaison avec le même trimestre de l'année précédente, suffit à caractériser des difficultés économiques au sens de l'article L1233-3 du Code du travail.",
+      "answer": false,
+      "justification": "Faux. Pour une entreprise de 11 à 49 salariés, la baisse doit durer au moins deux trimestres consécutifs ; un seul trimestre ne suffit que dans les entreprises de moins de 11 salariés.",
+      "explanation": "L'article L1233-3 module la durée de la baisse significative des commandes ou du chiffre d'affaires selon l'effectif : au moins 1 trimestre (moins de 11 salariés), 2 trimestres consécutifs (11 à 49), 3 (50 à 299), 4 (300 et plus). Avec 30 salariés, il faut donc deux trimestres consécutifs de baisse. L'employeur peut toutefois invoquer d'autres indicateurs (pertes d'exploitation, dégradation de la trésorerie ou de l'excédent brut d'exploitation, tout autre élément de nature à justifier les difficultés).",
+      "source_ref": "C. trav. art. L1233-3 (définition des difficultés économiques)",
+      "estimated_seconds": 45
     }
   ]
 }
