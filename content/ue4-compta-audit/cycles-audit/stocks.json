@@ -40,6 +40,683 @@
       "source_ref": "NEP 501 (caractère probant des éléments collectés : applications spécifiques, inventaire physique) ; NEP 540 (estimations comptables) ; NEP 330 ; PCG art. 213-30 s. (coût des stocks) et règles de dépréciation à la date d'inventaire ; comptes 37 et 397",
       "verified": true,
       "estimated_seconds": 480
+    },
+    {
+      "id": "ue4-audit-stocks-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-assertions",
+      "difficulty": 1,
+      "tags": ["assertions", "inventaire physique", "existence"],
+      "statement": "Lors de l’inventaire physique de la société Orion au 31/12/N, l’auditeur sélectionne des références sur le listing d’inventaire établi par l’entité et va vérifier leur présence et leur quantité dans le magasin. Quelle assertion ce test vise-t-il principalement ?",
+      "options": [
+        "Exhaustivité des stocks",
+        "Évaluation des stocks",
+        "Existence des stocks",
+        "Séparation des exercices"
+      ],
+      "answer": [2],
+      "explanation": "Partir du listing (ce qui sera inscrit au bilan) pour remonter au stock physique vérifie que les quantités enregistrées existent réellement : c’est l’existence. L’exhaustivité se teste dans l’autre sens, du stock physique vers le listing, pour s’assurer qu’aucun bien présent n’a été omis. L’évaluation porte sur le coût et la dépréciation, que le comptage n’examine pas. La séparation des exercices se teste à partir des derniers bons de réception et de livraison de l’exercice, non par un comptage de références.",
+      "source_ref": "NEP 500 (assertions relatives aux soldes de fin de période) ; NEP 501 (inventaire physique)",
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-audit-stocks-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-assertions",
+      "difficulty": 1,
+      "tags": ["assertions", "droits et obligations", "consignation"],
+      "statement": "Le listing d’inventaire de la société Véga au 31/12/N inclut 45 000 € de marchandises qu’un fournisseur lui a remises en consignation : Véga ne les paiera que lorsqu’elle les aura revendues. Quelle assertion est mise en défaut ?",
+      "options": [
+        "Droits et obligations",
+        "Exhaustivité",
+        "Séparation des exercices",
+        "Classification"
+      ],
+      "answer": [0],
+      "explanation": "Les biens en consignation restent la propriété du fournisseur tant qu’ils ne sont pas revendus : Véga n’en détient pas les droits et ne peut pas les inscrire à son actif. C’est l’assertion droits et obligations qui est en cause. L’exhaustivité serait mise en défaut par une omission, alors qu’ici un bien est compté en trop. Il ne s’agit pas d’un décalage de date entre deux exercices (séparation) ni d’une imputation au mauvais compte de stock (classification).",
+      "source_ref": "NEP 500 (assertion droits et obligations) ; PCG, définition d’un actif (règl. ANC 2014-03, art. 211-1)",
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-audit-stocks-0004",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-assertions",
+      "difficulty": 2,
+      "multiple": true,
+      "tags": ["assertions", "évaluation", "procédures"],
+      "statement": "Parmi les procédures suivantes mises en œuvre sur les stocks de marchandises de la société Lyra, lesquelles visent principalement l’assertion d’évaluation ? (plusieurs réponses possibles)",
+      "options": [
+        "Comparer le coût unitaire des références avec leurs prix de vente pratiqués après la clôture",
+        "Recalculer le coût moyen pondéré de références à partir des factures d’achat de l’exercice",
+        "Compter par sondage des références du listing d’inventaire dans le magasin",
+        "Rapprocher les derniers bons de réception de décembre des factures d’achat comptabilisées en N"
+      ],
+      "answer": [0, 1],
+      "explanation": "Comparer le coût aux prix de vente postérieurs permet de détecter les références dont la valeur actuelle est inférieure au coût (dépréciation) ; recalculer le CMP vérifie le coût d’entrée : les deux visent l’évaluation. Le comptage par sondage du listing vers le magasin vise l’existence. Le rapprochement des derniers bons de réception avec les factures vise la séparation des exercices (et l’exhaustivité des achats), pas la valeur des stocks.",
+      "source_ref": "NEP 500 (assertion évaluation et imputation) ; PCG, règles relatives au coût d’entrée des stocks (règl. ANC 2014-03)",
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-audit-stocks-0005",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-assertions",
+      "difficulty": 1,
+      "tags": ["assertions", "exhaustivité", "comptages"],
+      "statement": "Un comptage par sondage réalisé du stock physique vers le listing d’inventaire permet de vérifier l’exhaustivité des stocks.",
+      "answer": true,
+      "justification": "Vrai : partir des biens présents dans le magasin et vérifier qu’ils figurent au listing permet de détecter les omissions.",
+      "explanation": "Le sens du test détermine l’assertion couverte. Du physique vers le listing, l’auditeur s’assure que tout ce qui est présent est recensé (exhaustivité). Du listing vers le physique, il s’assure que ce qui est recensé existe (existence). Aucun de ces deux tests ne prouve la propriété des biens ni leur valeur.",
+      "source_ref": "NEP 500 (assertions) ; NEP 501 (inventaire physique)",
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue4-audit-stocks-0006",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-assertions",
+      "difficulty": 1,
+      "tags": ["assertions", "stocks", "soldes"],
+      "front": "Quelles sont les assertions relatives au solde des stocks, et quelle procédure type pour chacune ?",
+      "back": "Existence : comptages du listing vers le stock physique lors de l’inventaire.\nExhaustivité : comptages du stock physique vers le listing ; stocks en transit et chez des tiers.\nDroits et obligations : identification des biens reçus en dépôt ou en consignation, contrats (réserve de propriété, gage).\nÉvaluation : recalcul des coûts (CMP, PEPS, coût de production), comparaison aux prix de vente postérieurs, état de rotation et dépréciations.",
+      "explanation": "NEP 500 : assertions sur les soldes de fin de période. L’observation de l’inventaire couvre l’existence et l’exhaustivité ; la propriété et la valeur demandent des procédures spécifiques. Pour les opérations, la séparation des exercices se teste à partir des derniers bons de réception et de livraison.",
+      "source_ref": "NEP 500 (assertions relatives aux soldes des comptes en fin de période) ; NEP 501",
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-stocks-0007",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-risques",
+      "difficulty": 1,
+      "tags": ["risques", "évaluation", "obsolescence"],
+      "statement": "Parmi les éléments suivants relevés lors de la prise de connaissance de la société Atlas, distributeur de matériel informatique, lequel augmente le plus le risque d’anomalie sur l’évaluation des stocks ?",
+      "options": [
+        "L’inventaire physique est réalisé par des équipes indépendantes du magasin",
+        "L’accès à l’entrepôt est limité au personnel autorisé",
+        "Le fournisseur principal a lancé une nouvelle gamme qui remplace la moitié des références détenues en stock",
+        "Les bons de réception sont prénumérotés et rapprochés des commandes"
+      ],
+      "answer": [2],
+      "explanation": "Le remplacement de la moitié des références par une nouvelle gamme crée un risque d’obsolescence : les anciennes références risquent de ne se vendre qu’à prix réduit, voire pas du tout, et de devoir être dépréciées. Les trois autres éléments sont des contrôles internes qui réduisent le risque, et ils portent sur l’existence (inventaire indépendant, accès restreint) ou sur l’exhaustivité et la séparation des entrées (bons de réception), pas sur l’évaluation.",
+      "source_ref": "NEP 315 (facteurs de risque inhérent) ; PCG, règles de dépréciation des stocks (règl. ANC 2014-03)",
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-audit-stocks-0008",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-risques",
+      "difficulty": 2,
+      "tags": ["risques", "procédures analytiques", "marge brute", "rotation"],
+      "statement": "En phase de planification, l’auditeur de la société Hydra, négociant en matériaux, constate que la durée de stockage est passée de 45 jours en N−1 à 70 jours en N, alors que le taux de marge brute progresse de 28 % à 34 %. Selon la direction, les prix d’achat et de vente sont restés stables. Quel risque ces évolutions signalent-elles en priorité ?",
+      "options": [
+        "Une sous-évaluation du stock final due à des dépréciations excessives",
+        "Une surévaluation du stock final (quantités fictives ou références non dépréciées)",
+        "Des ventes de décembre non comptabilisées (exhaustivité du chiffre d’affaires)",
+        "Une erreur de classification entre stocks de marchandises et de matières premières"
+      ],
+      "answer": [1],
+      "explanation": "Un stock final surévalué diminue le coût d’achat des marchandises vendues : la marge augmente et la durée de stockage s’allonge mécaniquement, ce qui correspond aux deux signaux observés à prix constants. Une sous-évaluation par dépréciations excessives réduirait au contraire la marge. Des ventes non comptabilisées dont les biens sont sortis du stock baisseraient le chiffre d’affaires sans baisser le coût des ventes, donc réduiraient la marge. Une erreur de classification entre comptes de stocks n’affecte ni la marge globale ni la durée de stockage totale.",
+      "source_ref": "NEP 315 (procédures analytiques d’évaluation des risques) ; NEP 520",
+      "estimated_seconds": 80
+    },
+    {
+      "id": "ue4-audit-stocks-0009",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-risques",
+      "difficulty": 2,
+      "tags": ["risques", "fraude", "NEP 240"],
+      "statement": "La NEP 240 impose au commissaire aux comptes de présumer l’existence d’un risque de fraude dans l’évaluation des stocks.",
+      "answer": false,
+      "justification": "Faux : la présomption de risque de fraude prévue par la NEP 240 porte sur la comptabilisation des produits, pas sur les stocks.",
+      "explanation": "Pour les stocks, le risque de fraude n’est pas présumé : le commissaire aux comptes l’apprécie à partir des facteurs de risque relevés (objectifs de résultat, rémunération indexée, covenants, stock difficile à contrôler). Le stock final reste un vecteur fréquent de manipulation du résultat, ce qui justifie une attention particulière, mais il ne fait pas l’objet de la présomption réfutable propre aux produits.",
+      "source_ref": "NEP 240 (prise en considération de la possibilité de fraudes lors de l’audit des comptes)",
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue4-audit-stocks-0010",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-risques",
+      "difficulty": 2,
+      "tags": ["risques", "durée de stockage", "procédures analytiques"],
+      "statement": "Pour la société Cétus, négociant, l’auditeur dispose des données suivantes pour l’exercice N : stock initial de marchandises 1 150 000 €, stock final 1 730 000 €, coût d’achat des marchandises vendues 8 640 000 €. Calculez la durée moyenne de stockage en N, sur la base du stock moyen et d’une année de 360 jours (en jours, arrondi à l’unité).",
+      "expected_value": 60,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "jours",
+      "decimals": 0,
+      "explanation": "Stock moyen = (1 150 000 + 1 730 000) / 2 = 1 440 000 €. Durée de stockage = 1 440 000 / 8 640 000 × 360 = 60 jours. Retenir le seul stock final donnerait 72 jours, ce qui ne correspond pas à la méthode demandée. La forte hausse du stock final (+50 %) mérite d’être expliquée : elle peut traduire un ralentissement des ventes et donc un risque sur l’évaluation (rotation lente), ou une surévaluation des quantités.",
+      "source_ref": "NEP 315 (procédures analytiques) ; NEP 520",
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue4-audit-stocks-0011",
+      "type": "audit_case",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-risques",
+      "difficulty": 3,
+      "tags": ["risques", "coût de production", "sous-activité", "stocks chez des tiers"],
+      "title": "Baisse d’activité et changement de système chez un fabricant de pompes",
+      "cycle": "stocks",
+      "situation": "Vous auditez les comptes au 31/12/N de Kappa SAS, fabricant de pompes industrielles (chiffre d’affaires 40 M€). Le seuil de signification est fixé à 250 000 €. Les stocks de produits finis s’élèvent à 5,2 M€ (30 000 pompes), soit 28 % du total du bilan. Une partie de ces stocks, pour 1,5 M€, est entreposée chez un prestataire logistique indépendant. Du fait de la perte d’un client important, la production de N est tombée à 75 000 pompes, pour une capacité normale de 100 000 pompes. Le service contrôle de gestion a réparti la totalité des frais fixes de production de l’exercice (4 M€) sur les 75 000 pompes produites. Kappa a changé de progiciel de gestion en septembre N, avec reprise des données de stocks de l’ancien système. La rémunération variable du directeur général est indexée sur le résultat d’exploitation.",
+      "assertions": ["Évaluation et imputation", "Existence"],
+      "procedures": {
+        "options": [
+          "Analyser le calcul du coût de production des pompes et recalculer l’imputation des frais fixes de production sur la base de la capacité normale",
+          "Obtenir une confirmation directe des quantités détenues par le prestataire logistique et apprécier la nécessité d’une inspection ou d’une assistance à l’inventaire sur son site",
+          "Examiner la reprise des données de stocks lors du changement de progiciel (rapprochement des quantités et valeurs entre l’ancien et le nouveau système, contrôles réalisés par l’entité)",
+          "Envoyer des demandes de confirmation de solde aux principaux clients",
+          "Vérifier le calcul des dotations aux amortissements du siège social",
+          "Rapprocher les déclarations de TVA des comptes 4456 et 4457"
+        ],
+        "answer": [0, 1, 2]
+      },
+      "risk": {
+        "options": ["Faible", "Modéré", "Élevé"],
+        "answer": 2,
+        "rationale": "Les stocks représentent 28 % du bilan. L’imputation de la totalité des frais fixes sur une production inférieure de 25 % à la capacité normale incorpore le coût de la sous-activité au stock : le coût fixe unitaire retenu est de 53,33 € (4 M€ / 75 000) au lieu de 40 € (4 M€ / 100 000), soit une surévaluation d’environ 400 000 € sur 30 000 pompes, supérieure au seuil de 250 000 €. S’y ajoutent un stock significatif chez un tiers (existence), une migration de système en cours d’exercice et une rémunération indexée sur le résultat qui incite à surévaluer le stock final. Le risque d’anomalies significatives est élevé."
+      },
+      "conclusion": {
+        "model_answer": "Le recalcul du coût de production montre que le coût de la sous-activité a été incorporé au stock : avec une imputation des frais fixes sur la capacité normale, le coût fixe unitaire est de 40 € au lieu de 53,33 €, soit une surévaluation des stocks de produits finis d’environ 400 000 € (30 000 × 13,33 €), supérieure au seuil de signification. Nous demandons à la direction de corriger le stock (diminution de la production stockée, le coût de la sous-activité restant en charges). Sous réserve des résultats de la confirmation du prestataire logistique et de l’examen de la reprise des données, nous concluons sur l’existence. À défaut de correction, l’anomalie serait prise en compte dans notre opinion conformément à la NEP 450, et la faiblesse éventuelle relevée lors de la migration serait communiquée à la direction.",
+        "key_points": [
+          "Chiffrer la sous-activité incorporée : 30 000 × (53,33 − 40) ≈ 400 000 €",
+          "Comparer au seuil de signification de 250 000 €",
+          "Traiter séparément l’existence (stock chez le prestataire, reprise des données)",
+          "Demander la correction et indiquer l’incidence sur l’opinion à défaut"
+        ]
+      },
+      "points": 10,
+      "explanation": "Le cas cumule des facteurs de risque sur l’évaluation (sous-activité incorporée, rémunération liée au résultat) et sur l’existence (stock chez un tiers, migration de système). Les procédures pertinentes y répondent : recalcul du coût de production sur la capacité normale, confirmation et éventuellement inspection chez le prestataire, revue de la reprise des données. Les confirmations clients, les amortissements du siège et la TVA relèvent d’autres cycles.",
+      "source_ref": "NEP 315 ; NEP 330 ; NEP 501 (stocks détenus par des tiers) ; NEP 450 ; PCG, règles relatives au coût d’entrée des stocks (règl. ANC 2014-03 : coût de production, capacité normale)",
+      "estimated_seconds": 600
+    },
+    {
+      "id": "ue4-audit-stocks-0012",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-controles-cles",
+      "difficulty": 1,
+      "tags": ["contrôles clés", "protection des actifs", "séparation des tâches"],
+      "statement": "Quel dispositif vise principalement à prévenir le vol de marchandises dans l’entrepôt de la société Draco ?",
+      "options": [
+        "La revue trimestrielle des articles à rotation lente par le contrôleur de gestion",
+        "Le calcul automatique du coût moyen pondéré par le progiciel",
+        "Le rapprochement des factures fournisseurs avec les commandes",
+        "Un accès à l’entrepôt réservé au personnel autorisé, le magasinier ne tenant pas l’inventaire permanent"
+      ],
+      "answer": [3],
+      "explanation": "L’accès restreint protège physiquement les biens, et la séparation entre la garde des marchandises et la tenue de l’inventaire permanent empêche un magasinier de dissimuler un vol en modifiant les quantités enregistrées : ce dispositif vise l’existence et la protection des actifs. La revue des articles à rotation lente et le calcul automatique du CMP portent sur l’évaluation. Le rapprochement factures / commandes porte sur la réalité et la mesure des achats.",
+      "source_ref": "NEP 315 (compréhension du contrôle interne)",
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-audit-stocks-0013",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-controles-cles",
+      "difficulty": 2,
+      "tags": ["contrôles clés", "inventaire tournant", "inventaire permanent"],
+      "statement": "La société Ursa remplace son inventaire annuel par des inventaires tournants répartis sur l’exercice. À quelle condition le commissaire aux comptes peut-il s’appuyer sur ce dispositif pour l’existence des stocks à la clôture ?",
+      "options": [
+        "Les comptages sont réalisés par les magasiniers responsables de chaque zone, qui connaissent le mieux les références",
+        "L’inventaire permanent est fiable, chaque référence est comptée au moins une fois dans l’exercice et les écarts sont analysés et régularisés",
+        "Les comptages portent en priorité sur les références de faible valeur, plus nombreuses",
+        "Les écarts de comptage inférieurs à un montant fixé sont passés directement en charges sans analyse"
+      ],
+      "answer": [1],
+      "explanation": "L’inventaire tournant ne remplace l’inventaire annuel que si l’inventaire permanent est fiable (le stock de clôture en est issu), si chaque référence est comptée au moins une fois sur l’exercice et si les écarts sont analysés et corrigés ; le CAC teste ces contrôles. Des comptages par les magasiniers eux-mêmes violent la séparation des tâches. Cibler les références de faible valeur laisse sans contrôle les plus significatives. Passer les écarts en charges sans analyse empêche de détecter vols et erreurs systématiques.",
+      "source_ref": "NEP 330 (tests de procédures) ; NEP 501 (inventaire physique) ; C. com. art. L123-12",
+      "estimated_seconds": 70
+    },
+    {
+      "id": "ue4-audit-stocks-0014",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-controles-cles",
+      "difficulty": 1,
+      "tags": ["contrôles clés", "inventaire permanent", "écarts"],
+      "statement": "Le rapprochement périodique entre l’inventaire permanent et des comptages physiques, avec analyse et validation des écarts par une personne indépendante du magasin, est un contrôle clé du cycle stocks.",
+      "answer": true,
+      "justification": "Vrai : ce rapprochement détecte vols, pertes et erreurs d’enregistrement, et fiabilise les quantités servant à établir le stock de clôture.",
+      "explanation": "Le contrôle porte surtout sur l’existence et l’exhaustivité. Sa validation par une personne indépendante du magasin est essentielle : si le magasinier validait lui-même les écarts, il pourrait masquer des détournements. Un contrôle efficace permet au CAC de réduire l’étendue de ses procédures de fin d’exercice.",
+      "source_ref": "NEP 315 (contrôle interne) ; NEP 330",
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue4-audit-stocks-0015",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-controles-cles",
+      "difficulty": 2,
+      "tags": ["contrôles clés", "tests de procédures", "taille d’échantillon"],
+      "statement": "L’auditeur de la société Pégase veut tester le contrôle suivant : chaque bon de sortie de stock doit être signé par le chef d’atelier. Il retient un niveau de confiance de 95 % (facteur de confiance 3), un taux d’écart tolérable de 4 % et n’attend aucun écart. Calculez la taille de l’échantillon selon l’approximation n = facteur de confiance / taux d’écart tolérable (nombre de bons, arrondi à l’entier supérieur si nécessaire).",
+      "expected_value": 75,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "bons",
+      "decimals": 0,
+      "explanation": "n = 3 / 0,04 = 75 bons. Avec un niveau de confiance de 90 % (facteur 2,3), on obtiendrait 57,5, soit 58 bons : l’échantillon diminue quand la confiance requise baisse ou quand le taux d’écart tolérable augmente. Cette approximation, issue de la loi de Poisson, est une pratique de cabinet ; la NEP 530 n’impose pas de formule.",
+      "source_ref": "NEP 530 (sondages en audit) ; NEP 330 (tests de procédures)",
+      "estimated_seconds": 120
+    },
+    {
+      "id": "ue4-audit-stocks-0016",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-controles-cles",
+      "difficulty": 1,
+      "tags": ["contrôles clés", "cycle stocks"],
+      "front": "Citez un contrôle clé à chaque étape du cycle stocks (réception, garde, sortie, inventaire, valorisation).",
+      "back": "Réception : bons de réception prénumérotés rapprochés des commandes et factures.\nGarde : accès restreint, séparation garde / inventaire permanent / comptabilité.\nSortie : bons de sortie prénumérotés saisis dans l’inventaire permanent.\nInventaire : instructions écrites, équipes indépendantes, comptage en double, écarts analysés.\nValorisation : coût calculé automatiquement, revue des articles à rotation lente, ajustements autorisés.",
+      "explanation": "NEP 315 : le CAC identifie les contrôles pertinents pour l’audit et, s’il compte s’appuyer sur eux, en teste l’efficacité (NEP 330). Chaque contrôle couvre une assertion précise : bons prénumérotés → exhaustivité et séparation ; accès restreint → existence ; revue de rotation → évaluation.",
+      "source_ref": "NEP 315 (compréhension du contrôle interne) ; NEP 330",
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-stocks-0017",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-procedures-substantives",
+      "difficulty": 2,
+      "tags": ["procédures substantives", "stocks chez des tiers", "confirmation"],
+      "statement": "La société Orca détient au 31/12/N 900 000 € de marchandises (18 % de ses stocks) dans l’entrepôt d’un prestataire logistique indépendant. Le seuil de signification est de 120 000 €. Quelle procédure est la plus adaptée pour obtenir des éléments sur l’existence de ces stocks ?",
+      "options": [
+        "Obtenir une déclaration écrite de la direction d’Orca attestant les quantités détenues par le prestataire",
+        "Recalculer le coût moyen pondéré des références entreposées chez le prestataire",
+        "Demander directement au prestataire de confirmer les quantités détenues pour le compte d’Orca et, compte tenu du montant, envisager une inspection ou une assistance à l’inventaire sur son site",
+        "Rapprocher les factures du prestataire logistique des charges externes comptabilisées"
+      ],
+      "answer": [2],
+      "explanation": "Pour les stocks détenus par des tiers, la NEP 501 prévoit une demande de confirmation auprès du tiers et/ou une inspection ou d’autres procédures appropriées ; un montant significatif (900 000 €, plus de sept fois le seuil) justifie d’envisager une inspection sur place. Une déclaration de la direction est un élément interne, insuffisant seul. Le recalcul du CMP vise l’évaluation, pas l’existence. Le rapprochement des factures de stockage concerne les charges externes.",
+      "source_ref": "NEP 501 (stocks détenus par des tiers) ; NEP 505 (confirmations externes)",
+      "estimated_seconds": 70
+    },
+    {
+      "id": "ue4-audit-stocks-0018",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-procedures-substantives",
+      "difficulty": 3,
+      "tags": ["procédures substantives", "inventaire physique", "limitation"],
+      "statement": "Nommé en février N+1, le commissaire aux comptes de la société Ibis n’a pas pu assister à l’inventaire physique du 31/12/N ; les stocks représentent 35 % du bilan. Quelle démarche est conforme à la NEP 501 ?",
+      "options": [
+        "S’appuyer sur une déclaration écrite de la direction confirmant l’existence et la valeur des stocks, qui suffit dans ce cas",
+        "Exclure les stocks du champ de l’audit en le mentionnant dans le rapport, sans incidence sur l’opinion",
+        "Refuser de certifier dès lors que l’inventaire n’a pas été observé, quelles que soient les autres procédures possibles",
+        "Mettre en œuvre des procédures alternatives, par exemple des comptages à une date ultérieure avec contrôle des mouvements entre la clôture et cette date, et, à défaut d’éléments suffisants, en tirer les conséquences sur l’opinion"
+      ],
+      "answer": [3],
+      "explanation": "Lorsque l’assistance à l’inventaire est impossible, la NEP 501 demande au CAC de mettre en œuvre des procédures alternatives permettant d’obtenir des éléments suffisants et appropriés sur l’existence et l’état des stocks, typiquement des comptages ultérieurs et un contrôle des mouvements intermédiaires. S’il n’y parvient pas, la limitation est appréciée dans l’opinion (réserve ou impossibilité de certifier selon son caractère généralisé). Une déclaration de la direction ne remplace pas des éléments probants. Exclure un poste du champ de l’audit n’est pas possible. Le refus de certifier n’est pas automatique.",
+      "source_ref": "NEP 501 (inventaire physique : impossibilité d’y assister) ; NEP 700 (opinion avec réserve ou impossibilité de certifier) ; NEP 580 (déclarations de la direction)",
+      "estimated_seconds": 80
+    },
+    {
+      "id": "ue4-audit-stocks-0019",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-procedures-substantives",
+      "difficulty": 2,
+      "tags": ["procédures substantives", "sondages", "extrapolation", "comptages"],
+      "statement": "Lors du suivi de l’inventaire de la société Aries, le stock de marchandises s’élève à 2 400 000 €. L’auditeur a contrôlé exhaustivement les 12 références de plus forte valeur (600 000 € au total) et relevé une surévaluation de 9 000 € due à des erreurs de comptage. Sur le reste de la population (1 800 000 €), il a testé par sondage statistique des références représentant 150 000 € et relevé une surévaluation nette de 2 500 €. Calculez l’anomalie totale estimée sur le stock (en euros, arrondi à l’euro).",
+      "expected_value": 39000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Anomalie projetée sur la population sondée = 2 500 × 1 800 000 / 150 000 = 30 000 €. Les références testées exhaustivement ne s’extrapolent pas : leur anomalie (9 000 €) s’ajoute telle quelle. Anomalie totale estimée = 9 000 + 30 000 = 39 000 €. Extrapoler sur la totalité du stock (2 400 000 €) donnerait 49 000 €, ce qui revient à compter deux fois les éléments clés.",
+      "source_ref": "NEP 530 (sondages : extrapolation des anomalies) ; NEP 501 (inventaire physique)",
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue4-audit-stocks-0020",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-procedures-substantives",
+      "difficulty": 2,
+      "tags": ["procédures substantives", "dépréciation", "ajustement proposé"],
+      "statement": "La société Lynx n’a passé aucune écriture de dépréciation au 31/12/N. L’auditeur relève : (1) une dépréciation de 6 000 € constatée au 31/12/N−1 sur un lot de matières premières, entièrement consommé au cours de N et donc devenue sans objet ; (2) 500 unités d’une référence de marchandises en fin de série, au coût unitaire de 140 €, dont la valeur actuelle (prix de vente probable diminué des frais de vente) est estimée à 56 € par unité. Passez l’écriture d’ajustement proposée par l’auditeur au 31/12/N (utilisez les comptes 391, 397, 6817 et 7817).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "391",
+          "label": "Dépréciations des matières premières",
+          "debit": 6000,
+          "credit": 0
+        },
+        {
+          "account": "6817",
+          "label": "Dotations aux dépréciations des actifs circulants",
+          "debit": 42000,
+          "credit": 0
+        },
+        {
+          "account": "7817",
+          "label": "Reprises sur dépréciations des actifs circulants",
+          "debit": 0,
+          "credit": 6000
+        },
+        {
+          "account": "397",
+          "label": "Dépréciations des stocks de marchandises",
+          "debit": 0,
+          "credit": 42000
+        }
+      ],
+      "explanation": "(1) La dépréciation des matières premières est devenue sans objet : reprise de 6 000 € (débit 391, crédit 7817). (2) Dépréciation des marchandises = 500 × (140 − 56) = 42 000 € (débit 6817, crédit 397). Calculer la dépréciation sur la valeur actuelle totale (500 × 56 = 28 000 €) ou omettre la reprise sont les erreurs classiques. L’incidence nette sur le résultat est de −36 000 €.",
+      "source_ref": "PCG comptes 391, 397, 6817 et 7817 ; PCG, règles de dépréciation des stocks (règl. ANC 2014-03) ; NEP 450",
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue4-audit-stocks-0021",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-procedures-substantives",
+      "difficulty": 3,
+      "tags": ["procédures substantives", "inventaire anticipé", "inventaire permanent", "seuils"],
+      "title": "Inventaire avancé au 30 novembre chez Delta",
+      "context": "Vous auditez les comptes au 31/12/N de la SA Delta, distributeur de pièces mécaniques.\nSeuil de signification : 60 000 € ; seuil des anomalies manifestement insignifiantes : 3 000 €.\nDelta tient un inventaire permanent informatisé. Pour alléger la clôture, l’inventaire physique a été réalisé le 30/11/N ; vous y avez assisté et vos comptages par sondage n’ont révélé aucun écart.\nLa valeur du stock inventorié au 30/11/N, après correction des écarts de comptage dans l’inventaire permanent, s’élève à 1 260 000 € (au coût).\nEn décembre N :\n- entrées en stock (d’après les bons de réception, au coût) : 410 000 € ;\n- sorties de stock (d’après les bons de livraison aux clients, au coût) : 520 000 €.\nL’inventaire permanent fait apparaître au 31/12/N un stock de 1 175 000 €, montant que la direction prévoit d’inscrire au bilan.\nVos tests sur les entrées de décembre (rapprochement des bons de réception et des factures) n’ont révélé aucune anomalie.",
+      "sub_questions": [
+        {
+          "id": "q1-condition",
+          "kind": "mcq",
+          "prompt": "À quelle condition un inventaire physique réalisé avant la clôture peut-il servir de base à l’audit de l’existence des stocks au 31/12/N ?",
+          "options": [
+            "Aucune : la NEP 501 interdit les inventaires réalisés à une autre date que la clôture",
+            "Le contrôle interne sur les mouvements de stock est fiable, et l’auditeur obtient des éléments sur les mouvements intervenus entre la date d’inventaire et la clôture",
+            "La direction s’engage par écrit à ce que le stock n’ait pas varié de façon significative en décembre",
+            "L’écart entre la date d’inventaire et la clôture n’excède pas trois mois, sans autre condition"
+          ],
+          "answer": [1],
+          "points": 2,
+          "explanation": "La NEP 501 admet un inventaire à une date différente de la clôture : l’auditeur met alors en œuvre des procédures pour vérifier que les mouvements entre les deux dates sont correctement enregistrés, ce qui suppose un contrôle interne fiable sur ces mouvements. Il n’y a pas d’interdiction ; une déclaration de la direction ne suffit pas ; aucun délai forfaitaire ne dispense de contrôler les mouvements."
+        },
+        {
+          "id": "q2-stock-reconstitue",
+          "kind": "numeric",
+          "prompt": "Reconstituez le stock attendu au 31/12/N à partir de l’inventaire du 30/11/N et des mouvements de décembre (en euros).",
+          "expected_value": 1150000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 3,
+          "explanation": "Stock attendu = 1 260 000 + 410 000 − 520 000 = 1 150 000 €. L’inventaire permanent affiche 1 175 000 € : l’écart non expliqué est de 25 000 € (stock de l’inventaire permanent supérieur au stock reconstitué)."
+        },
+        {
+          "id": "q3-cause",
+          "kind": "true_false",
+          "prompt": "Vrai ou faux : l’écart de 25 000 € pourrait s’expliquer par des livraisons de décembre comptabilisées en ventes mais non déstockées dans l’inventaire permanent.",
+          "answer": true,
+          "points": 2,
+          "explanation": "Vrai. Des sorties non saisies dans l’inventaire permanent laissent en stock des biens déjà livrés : l’inventaire permanent est alors supérieur au stock reconstitué à partir des bons de livraison. L’auditeur rapproche les bons de livraison de décembre des sorties enregistrées pour confirmer cette hypothèse."
+        },
+        {
+          "id": "q4-conclusion",
+          "kind": "open",
+          "prompt": "Appréciez l’écart au regard des seuils et indiquez la démarche de l’auditeur.",
+          "model_answer": "Si l’écart n’est pas expliqué, le stock inscrit au bilan serait surévalué de 25 000 €, et le résultat avant impôt d’autant. Ce montant dépasse le seuil des anomalies manifestement insignifiantes (3 000 €) mais reste inférieur au seuil de signification (60 000 €). L’auditeur en recherche la cause (rapprochement des bons de livraison de décembre et des sorties enregistrées) et apprécie si l’anomalie remet en cause la fiabilité de l’inventaire permanent sur lequel repose la démarche d’inventaire anticipé : selon les résultats, il étend ses tests sur les mouvements. Il demande à la direction de corriger le stock (ramené à 1 150 000 €) ; à défaut, l’anomalie est cumulée avec les autres anomalies non corrigées pour apprécier leur incidence sur l’opinion.",
+          "key_points": [
+            "Écart de 25 000 € : surévaluation du stock et du résultat",
+            "Supérieur à 3 000 €, inférieur à 60 000 €",
+            "Rechercher la cause et réapprécier la fiabilité de l’inventaire permanent",
+            "Demander la correction ; à défaut, cumuler avec les autres anomalies non corrigées"
+          ],
+          "points": 4
+        }
+      ],
+      "total_points": 11,
+      "explanation": "Le cas illustre l’inventaire réalisé avant la clôture : sa validité dépend du contrôle des mouvements intermédiaires. La reconstitution du stock (stock inventorié + entrées − sorties) fait apparaître un écart avec l’inventaire permanent, qui constitue une anomalie à apprécier au regard des seuils et un indice sur la fiabilité du système (NEP 450).",
+      "source_ref": "NEP 501 (inventaire physique à une date différente de la clôture) ; NEP 450 (évaluation des anomalies relevées) ; NEP 330",
+      "estimated_seconds": 720
+    },
+    {
+      "id": "ue4-audit-stocks-0022",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-pieges",
+      "difficulty": 2,
+      "tags": ["pièges", "stock final", "incidence sur N+1"],
+      "statement": "Au 31/12/N, le stock final de marchandises de la société Corvus a été surévalué de 50 000 € (erreur de comptage), et l’erreur n’a jamais été corrigée. Le stock au 31/12/N+1 est, lui, correct. Quelle est l’incidence sur les résultats avant impôt ?",
+      "options": [
+        "Résultat N surévalué de 50 000 €, sans incidence sur le résultat N+1",
+        "Résultat N surévalué de 50 000 € et résultat N+1 sous-évalué de 50 000 €",
+        "Résultat N sous-évalué de 50 000 € et résultat N+1 surévalué de 50 000 €",
+        "Aucune incidence sur les résultats : l’erreur ne touche que le bilan"
+      ],
+      "answer": [1],
+      "explanation": "Le stock final N, surévalué, réduit la variation de stock en charges et augmente le résultat N de 50 000 €. Ce même montant devient le stock initial N+1 : la variation de stock N+1 est alors alourdie de 50 000 €, ce qui diminue le résultat N+1 d’autant. Les capitaux propres à fin N+1 sont corrects, mais chaque résultat annuel est faux. Une erreur de stock n’est donc jamais limitée au bilan.",
+      "source_ref": "PCG comptes 37 et 6037 (variation des stocks) ; NEP 510 (soldes d’ouverture)",
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-stocks-0023",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-pieges",
+      "difficulty": 2,
+      "tags": ["pièges", "sous-activité", "coût de production"],
+      "statement": "La société Grus a produit en N 60 000 unités, pour une capacité normale de 100 000 unités. Elle a réparti la totalité de ses frais fixes de production sur les 60 000 unités produites pour valoriser son stock de produits finis. Quelle appréciation l’auditeur doit-il porter ?",
+      "options": [
+        "La méthode est correcte : le coût de production doit absorber l’ensemble des frais réellement engagés",
+        "La méthode est correcte si elle est appliquée de façon permanente d’un exercice à l’autre",
+        "Le stock est surévalué : les frais fixes doivent être imputés sur la base de la capacité normale, le coût de la sous-activité restant en charges de l’exercice",
+        "Le stock est sous-évalué : les frais fixes auraient dû être imputés sur la base de la capacité normale, ce qui augmenterait le coût unitaire"
+      ],
+      "answer": [2],
+      "explanation": "Les frais fixes de production s’imputent sur la base de la capacité normale. Rapportés à une production réelle inférieure, ils gonflent le coût unitaire (ici 1/60 000 au lieu de 1/100 000 des frais fixes par unité) : le stock est surévalué et le coût de la sous-activité, qui devrait rester en charges, est reporté sur l’exercice suivant. La permanence des méthodes ne régularise pas une méthode non conforme. L’imputation sur la capacité normale diminue le coût unitaire, elle ne l’augmente pas.",
+      "source_ref": "PCG, règles relatives au coût d’entrée des stocks (règl. ANC 2014-03 : coût de production, frais fixes et capacité normale) ; NEP 540",
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-audit-stocks-0024",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-pieges",
+      "difficulty": 2,
+      "tags": ["pièges", "biens en transit", "propriété"],
+      "statement": "Des marchandises expédiées par un fournisseur le 28/12/N, dont la propriété est transférée à l’acheteur dès leur remise au transporteur, mais reçues le 03/01/N+1, n’ont pas à figurer dans le stock de l’acheteur au 31/12/N puisqu’elles n’ont pas pu être comptées.",
+      "answer": false,
+      "justification": "Faux : l’acheteur en est propriétaire à la clôture ; elles doivent être ajoutées au stock comme biens en transit, même si elles n’ont pas été comptées.",
+      "explanation": "L’inscription au stock suit la propriété (et le contrôle des biens), non la présence physique. L’auditeur vérifie que les biens en transit appartenant à l’entité sont ajoutés au stock inventorié et que la facture correspondante est comptabilisée en N (ou une facture non parvenue). À l’inverse, des biens présents mais appartenant à des tiers sont exclus.",
+      "source_ref": "NEP 501 ; PCG, définition et comptabilisation des actifs (règl. ANC 2014-03, art. 211-1 et 212-1)",
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-audit-stocks-0025",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-pieges",
+      "difficulty": 3,
+      "tags": ["pièges", "dépréciation", "valeur actuelle", "non-compensation"],
+      "statement": "L’auditeur de la société Delphinus revoit la dépréciation des stocks de marchandises au 31/12/N (aucune dépréciation n’existait au 31/12/N−1). Données par référence :\n- A : 400 unités, coût unitaire 120 €, prix de vente probable 140 € HT, frais de vente 25 € par unité ;\n- B : 250 unités, coût unitaire 80 €, prix de vente probable 130 € HT, frais de vente 10 € par unité ;\n- C : 1 000 unités, coût unitaire 35 €, prix de vente probable 36 € TTC (TVA 20 %), frais de vente 4 € par unité.\nCalculez la dépréciation totale à constater au 31/12/N (en euros, arrondi à l’euro).",
+      "expected_value": 11000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Valeur actuelle unitaire = prix de vente HT − frais de vente. A : 140 − 25 = 115 € < 120 € → dépréciation 400 × 5 = 2 000 €. B : 130 − 10 = 120 € > 80 € → aucune dépréciation ; la plus-value latente (10 000 €) ne compense pas les moins-values des autres références. C : prix HT = 36 / 1,20 = 30 € ; 30 − 4 = 26 € < 35 € → dépréciation 1 000 × 9 = 9 000 €. Total = 11 000 €. Erreurs classiques : compenser avec B (1 000 €), raisonner sur le prix TTC pour C (total 5 000 €) ou oublier les frais de vente (total 5 000 €).",
+      "source_ref": "PCG, règles de dépréciation des stocks à la date d’inventaire (règl. ANC 2014-03) ; C. com. art. L123-19 (non-compensation) ; PCG compte 397",
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue4-audit-stocks-0026",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-pieges",
+      "difficulty": 2,
+      "tags": ["pièges", "séparation des exercices", "facture non parvenue"],
+      "statement": "Lors du test de séparation des exercices chez la société Aquila, l’auditeur constate que des marchandises réceptionnées le 30/12/N (bon de réception signé) ont été comptées dans l’inventaire physique et figurent au stock final de 18 000 € HT. La facture du fournisseur, reçue le 08/01/N+1, a été comptabilisée en N+1 ; aucune écriture n’a été passée en N. Passez l’écriture d’ajustement proposée par l’auditeur au 31/12/N (TVA 20 % ; utilisez les comptes 607, 44586 et 408).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "607",
+          "label": "Achats de marchandises",
+          "debit": 18000,
+          "credit": 0
+        },
+        {
+          "account": "44586",
+          "label": "Taxes sur le chiffre d’affaires sur factures non parvenues",
+          "debit": 3600,
+          "credit": 0
+        },
+        {
+          "account": "408",
+          "label": "Fournisseurs – factures non parvenues",
+          "debit": 0,
+          "credit": 21600
+        }
+      ],
+      "explanation": "Les marchandises sont entrées dans le stock final N mais l’achat n’est pas comptabilisé en N : le résultat N est surévalué de 18 000 €. L’ajustement constate une facture non parvenue : débit 607 (18 000 € HT) et 44586 (TVA 3 600 €), crédit 408 (21 600 € TTC). Le stock final ne doit pas être modifié, car les biens appartiennent bien à Aquila à la clôture ; retirer les biens du stock au lieu de constater l’achat serait une erreur.",
+      "source_ref": "PCG comptes 408, 44586 et 607 ; NEP 501 (séparation des exercices lors de l’inventaire)",
+      "estimated_seconds": 200
+    },
+    {
+      "id": "ue4-audit-stocks-0027",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "stocks-pieges",
+      "difficulty": 3,
+      "tags": ["pièges", "biens de tiers", "biens en transit", "coût de production", "seuils"],
+      "title": "Corrections de stocks chez Epsilon",
+      "context": "Vous auditez les comptes au 31/12/N d’Epsilon SA, qui fabrique et distribue du mobilier de bureau.\nSeuil de signification : 40 000 € ; seuil des anomalies manifestement insignifiantes : 2 000 €.\nLors de vos travaux sur les stocks, vous relevez :\n(a) des fauteuils reçus en dépôt d’un fabricant partenaire, qu’Epsilon ne paie qu’après les avoir revendus, ont été comptés et inclus dans le stock de marchandises pour 30 000 € (au coût) ;\n(b) des bureaux achetés en Italie, dont la propriété a été transférée à Epsilon lors de leur remise au transporteur le 27/12/N, sont arrivés le 04/01/N+1 ; la facture (15 000 € HT) a été comptabilisée en achats de N, mais les biens, non comptés, ne figurent pas dans le stock final ;\n(c) le coût de production des armoires en stock (produits finis) inclut 12 000 € de frais de stockage de produits finis dans l’entrepôt commercial, postérieurs à la fin de la fabrication ;\n(d) le reste du stock a été testé sans anomalie.\nAucune de ces situations n’a fait l’objet d’une correction. Ignorez l’impôt sur les sociétés.",
+      "sub_questions": [
+        {
+          "id": "q1-transit",
+          "kind": "mcq",
+          "prompt": "Quel traitement retenir pour les bureaux en transit (b) au 31/12/N ?",
+          "options": [
+            "Les exclure du stock et annuler l’achat comptabilisé en N",
+            "Les ajouter au stock final de N pour 15 000 €, l’achat restant comptabilisé en N",
+            "Ne rien corriger, l’achat et le stock étant tous deux rattachés à N+1",
+            "Les inscrire en immobilisations en cours jusqu’à leur réception"
+          ],
+          "answer": [1],
+          "points": 2,
+          "explanation": "Epsilon est propriétaire des bureaux depuis le 27/12/N : ils doivent figurer dans son stock au 31/12/N, en cohérence avec l’achat déjà comptabilisé en N. Annuler l’achat serait contraire au transfert de propriété ; l’achat est bien en N, l’option 3 repose donc sur un fait faux ; il s’agit de marchandises destinées à la revente, pas d’immobilisations."
+        },
+        {
+          "id": "q2-incidence",
+          "kind": "numeric",
+          "prompt": "Calculez l’incidence nette des trois anomalies sur le résultat de N, exprimée comme le montant dont ce résultat est surévalué (en euros).",
+          "expected_value": 27000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 3,
+          "explanation": "(a) Biens de tiers inclus : stock et résultat surévalués de 30 000 €. (b) Biens en transit omis alors que l’achat est en charges : stock et résultat sous-évalués de 15 000 €. (c) Frais de stockage postérieurs à la production, exclus du coût : stock de produits finis et production stockée surévalués de 12 000 €. Surévaluation nette = 30 000 − 15 000 + 12 000 = 27 000 €. Additionner les trois montants (57 000 €) ou ignorer (c) (15 000 €) sont des erreurs."
+        },
+        {
+          "id": "q3-ecriture-depot",
+          "kind": "journal_entry",
+          "prompt": "Passez l’écriture d’ajustement relative aux fauteuils reçus en dépôt (a) au 31/12/N (utilisez les comptes 37 et 6037).",
+          "date": "31/12/N",
+          "entries": [
+            {
+              "account": "6037",
+              "label": "Variation des stocks de marchandises",
+              "debit": 30000,
+              "credit": 0
+            },
+            {
+              "account": "37",
+              "label": "Stocks de marchandises",
+              "debit": 0,
+              "credit": 30000
+            }
+          ],
+          "points": 2,
+          "explanation": "Le stock final de marchandises est réduit de 30 000 € : débit 6037 (la variation de stock en charges augmente), crédit 37. Les biens restent la propriété du fabricant déposant."
+        },
+        {
+          "id": "q4-conclusion",
+          "kind": "open",
+          "prompt": "Appréciez les anomalies au regard des seuils, indiquez la démarche de l’auditeur et l’incidence d’une absence de correction sur l’exercice suivant.",
+          "model_answer": "Les anomalies relevées surévaluent le résultat de N de 27 000 € (30 000 € pour les biens en dépôt, 12 000 € pour les frais de stockage, compensés en partie par 15 000 € de biens en transit omis). Chaque anomalie et leur total dépassent le seuil des anomalies manifestement insignifiantes (2 000 €), mais le total reste inférieur au seuil de signification (40 000 €). L’auditeur communique ces anomalies à la direction et lui demande de les corriger ; à défaut, il les cumule avec les autres anomalies non corrigées pour apprécier leur incidence sur l’opinion et obtient une déclaration écrite de la direction. Non corrigées, ces anomalies se retourneraient en N+1, le stock final N devenant le stock initial N+1 : le résultat de N+1 serait minoré de 27 000 €.",
+          "key_points": [
+            "Surévaluation nette de 27 000 € du résultat N",
+            "Supérieure au seuil de 2 000 €, inférieure au seuil de signification de 40 000 €",
+            "Demande de correction à la direction ; à défaut, cumul des anomalies non corrigées et déclaration écrite",
+            "Retournement en N+1 via le stock initial"
+          ],
+          "points": 4
+        }
+      ],
+      "total_points": 11,
+      "explanation": "Le cas réunit trois pièges du cycle stocks : biens de tiers présents physiquement (propriété), biens en transit absents mais appartenant à l’entité, et coûts à exclure du coût de production. Les anomalies se compensent partiellement ; leur effet net est apprécié au regard des seuils (NEP 450), sans oublier leur retournement sur l’exercice suivant.",
+      "source_ref": "NEP 501 ; NEP 450 (évaluation des anomalies relevées) ; PCG, règles relatives au coût d’entrée des stocks (règl. ANC 2014-03 : coûts exclus du coût de production) ; PCG comptes 37 et 6037",
+      "estimated_seconds": 780
     }
   ]
 }

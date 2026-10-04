@@ -134,14 +134,236 @@
           "answer": [
             0
           ],
-          "explanation": "La méthode dépend de la nature du contrôle, appréciée par le pourcentage de contrôle et non par le pourcentage d'intérêt. Avec 65 % des droits de vote, le groupe exerce un contrôle exclusif sur C : intégration globale. La mise en équivalence vise les entités sous influence notable et, en règlement ANC 2020-01 comme en IFRS 11, les coentreprises sous contrôle conjoint. La comptabilisation des quotes-parts concerne les activités conjointes, ce qui suppose un contrôle conjoint, absent ici. Un intérêt inférieur à 50 % n'est pas un motif d'exclusion : les intérêts minoritaires de C (60,6 %) seront simplement élevés."
+          "explanation": "La méthode dépend de la nature du contrôle, appréciée par le pourcentage de contrôle et non par le pourcentage d'intérêt. Avec 65 % des droits de vote, le groupe exerce un contrôle exclusif sur C : intégration globale. La mise en équivalence vise les entités sous influence notable (et, en IFRS seulement, les coentreprises : IFRS 11 §24). La comptabilisation des quotes-parts d'actifs et de passifs est le traitement IFRS 11 des activités conjointes ; le règlement ANC 2020-01 applique, lui, l'intégration proportionnelle aux entités sous contrôle conjoint. Ces deux traitements supposent un contrôle conjoint, absent ici. Un intérêt inférieur à 50 % n'est pas un motif d'exclusion : les intérêts minoritaires de C (60,6 %) seront simplement élevés."
         }
       ],
       "total_points": 12,
       "explanation": "Deux grandeurs distinctes : le pourcentage de contrôle (droits de vote détenus directement ou par des entités contrôlées, sans multiplication) détermine la nature du contrôle donc la méthode ; le pourcentage d'intérêt (produit des parts de capital le long de chaque chaîne, sommé sur les chaînes) sert au partage des capitaux propres et du résultat. Ici : B contrôlée à 60 %, intérêt 48 % ; C contrôlée à 65 %, intérêt 39,4 % ; C est intégrée globalement.",
-      "source_ref": "Règl. ANC 2020-01, périmètre et méthodes de consolidation ; C. com. L233-16 ; IFRS 10 §7 et IFRS 11 §16 (règlement UE 2023/1803)",
+      "source_ref": "Règl. ANC 2020-01, périmètre et méthodes de consolidation ; C. com. L233-16 et L233-18 ; IFRS 11 §15-16, §20 et §24 (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 600
+    },
+    {
+      "id": "ue4-conso-pourcentages-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "pourcentages-controle-interet",
+      "difficulty": 1,
+      "tags": [
+        "pourcentage de contrôle",
+        "chaîne de contrôle",
+        "influence notable"
+      ],
+      "statement": "La société Kappa détient 80 % du capital et des droits de vote de Lambda, qui détient 30 % du capital et des droits de vote de Mu. Kappa ne détient aucun titre de Mu en direct. Quel est le pourcentage de contrôle du groupe Kappa dans Mu ?",
+      "options": [
+        "24 %",
+        "30 %",
+        "80 %",
+        "110 %"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Pour le pourcentage de contrôle, on retient en totalité les droits de vote détenus par les entités que la mère contrôle, sans multiplier les pourcentages. Kappa contrôle Lambda (80 %) ; les 30 % de droits de vote détenus par Lambda dans Mu sont donc retenus en totalité : contrôle = 30 %, d'où une influence notable présumée. 24 % (option 1) est le pourcentage d'intérêt (80 % × 30 %), qui ne sert pas à apprécier le contrôle. 80 % (option 3) est le contrôle de Lambda, pas de Mu. 110 % (option 4) additionne des pourcentages qui ne portent pas sur la même société.",
+      "source_ref": "Règl. ANC 2020-01 ; C. com. L233-16",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-conso-pourcentages-0003",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "pourcentages-controle-interet",
+      "difficulty": 2,
+      "tags": [
+        "pourcentage d'intérêt",
+        "détention directe et indirecte"
+      ],
+      "statement": "La société Pi détient 70 % du capital de Rho et 10 % du capital de Sigma. Rho détient 40 % du capital de Sigma. Le capital et les droits de vote se confondent dans chaque société. Calculez le pourcentage d'intérêt du groupe Pi dans Sigma (en %, arrondi au dixième).",
+      "expected_value": 38,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "decimals": 1,
+      "explanation": "Le pourcentage d'intérêt additionne les chemins de détention du capital : direct, 10 % ; indirect par Rho, 70 % × 40 % = 28 %. Intérêt total = 10 % + 28 % = 38 %. Erreurs fréquentes : retenir 50 % (c'est le pourcentage de contrôle : 10 % + 40 %, Rho étant contrôlée) ou oublier la détention directe (28 %).",
+      "source_ref": "Règl. ANC 2020-01 (pourcentage d'intérêt)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue4-conso-pourcentages-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "pourcentages-controle-interet",
+      "difficulty": 3,
+      "tags": [
+        "pourcentage d'intérêt",
+        "actions d'autocontrôle",
+        "autodétention"
+      ],
+      "statement": "La société Oméga détient 60 % du capital de Tau. Tau détient 5 400 des 12 000 actions composant le capital d'Upsilon. Upsilon détient elle-même 1 200 de ses propres actions (actions d'autocontrôle). Calculez le pourcentage d'intérêt du groupe Oméga dans Upsilon (en %, arrondi au dixième).",
+      "expected_value": 30,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "decimals": 1,
+      "explanation": "Les actions que Upsilon détient sur elle-même ne donnent droit à aucune part des résultats ou des capitaux propres revenant aux actionnaires : les pourcentages se calculent hors actions autodétenues. Pourcentage de Tau dans Upsilon = 5 400 ÷ (12 000 − 1 200) = 5 400 ÷ 10 800 = 50 %. Pourcentage d'intérêt du groupe = 60 % × 50 % = 30 %. Erreur classique : 5 400 ÷ 12 000 = 45 %, soit 60 % × 45 % = 27 %.",
+      "source_ref": "Règl. ANC 2020-01 (pourcentage d'intérêt, titres d'autocontrôle)",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue4-conso-pourcentages-0005",
+      "type": "consolidation_case",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "pourcentages-controle-interet",
+      "difficulty": 2,
+      "tags": [
+        "pourcentage de contrôle",
+        "pourcentage d'intérêt",
+        "intérêts minoritaires",
+        "plusieurs chemins"
+      ],
+      "title": "Groupe Véga : participations croisées sur deux niveaux",
+      "context": "La société Véga (V) établit ses comptes consolidés selon le règlement ANC 2020-01. Au 31/12/N :\n- V détient 70 % du capital de Lyre (L) et 15 % du capital de Pollux (P) ;\n- L détient 45 % du capital de P et 30 % du capital de Sextant (S) ;\n- P détient 25 % du capital de S.\nDans chaque société, capital et droits de vote se confondent ; les autres actionnaires sont dispersés et il n'existe ni pacte ni droits de vote potentiels. Les pourcentages sont à exprimer en %, arrondis au dixième.",
+      "entities": [
+        {
+          "id": "v",
+          "name": "Véga (V)",
+          "is_parent": true
+        },
+        {
+          "id": "l",
+          "name": "Lyre (L)"
+        },
+        {
+          "id": "p",
+          "name": "Pollux (P)"
+        },
+        {
+          "id": "s",
+          "name": "Sextant (S)"
+        }
+      ],
+      "links": [
+        {
+          "from": "v",
+          "to": "l",
+          "ownership_pct": 70
+        },
+        {
+          "from": "v",
+          "to": "p",
+          "ownership_pct": 15
+        },
+        {
+          "from": "l",
+          "to": "p",
+          "ownership_pct": 45
+        },
+        {
+          "from": "l",
+          "to": "s",
+          "ownership_pct": 30
+        },
+        {
+          "from": "p",
+          "to": "s",
+          "ownership_pct": 25
+        }
+      ],
+      "steps": [
+        {
+          "id": "controle-p",
+          "stage": "pourcentages",
+          "kind": "numeric",
+          "prompt": "Quel est le pourcentage de contrôle du groupe dans Pollux (P) ?",
+          "points": 2,
+          "expected_value": 60,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "V contrôle L (70 %) : les droits de vote de L dans P sont retenus en totalité. Contrôle de P = 15 % (direct) + 45 % (via L) = 60 %."
+        },
+        {
+          "id": "interet-p",
+          "stage": "pourcentages",
+          "kind": "numeric",
+          "prompt": "Quel est le pourcentage d'intérêt du groupe dans Pollux (P) ?",
+          "points": 2,
+          "expected_value": 46.5,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "Intérêt = 15 % + 70 % × 45 % = 15 % + 31,5 % = 46,5 %."
+        },
+        {
+          "id": "controle-s",
+          "stage": "pourcentages",
+          "kind": "numeric",
+          "prompt": "Quel est le pourcentage de contrôle du groupe dans Sextant (S) ?",
+          "points": 2,
+          "expected_value": 55,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "L et P étant toutes deux contrôlées par le groupe, leurs droits de vote dans S s'additionnent : 30 % + 25 % = 55 %."
+        },
+        {
+          "id": "methode-s",
+          "stage": "methode",
+          "kind": "mcq",
+          "prompt": "Selon quelle méthode Sextant (S) est-elle consolidée ?",
+          "points": 1,
+          "options": [
+            "Mise en équivalence, car le pourcentage d'intérêt est inférieur à 50 %",
+            "Intégration globale",
+            "Intégration proportionnelle",
+            "Elle n'est pas consolidée, aucune société ne détenant seule la majorité"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Le groupe dispose de 55 % des droits de vote de S : contrôle exclusif de droit, intégration globale. Le pourcentage d'intérêt, inférieur à 50 %, ne détermine pas la méthode."
+        },
+        {
+          "id": "interet-s",
+          "stage": "pourcentages",
+          "kind": "numeric",
+          "prompt": "Quel est le pourcentage d'intérêt du groupe dans Sextant (S) ?",
+          "points": 3,
+          "expected_value": 32.6,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "Chemin V → L → S : 70 % × 30 % = 21 %. Chemin V → P → S : 46,5 % × 25 % = 11,625 % (on utilise l'intérêt total du groupe dans P, détention directe comprise). Total = 32,625 %, soit 32,6 %. Les intérêts minoritaires de S représentent 67,4 %."
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le contrôle se calcule en additionnant les droits de vote de la mère et de ses filiales contrôlées (sans multiplication) ; il commande la méthode. L'intérêt se calcule en multipliant les pourcentages de capital le long de chaque chemin et en additionnant les chemins ; il commande le partage entre groupe et minoritaires.",
+      "source_ref": "Règl. ANC 2020-01 ; C. com. L233-16 et L233-18",
+      "verified": true,
+      "estimated_seconds": 540
     }
   ]
 }

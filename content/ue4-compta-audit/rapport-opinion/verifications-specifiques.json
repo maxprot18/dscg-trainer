@@ -1,0 +1,174 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-rapport-verifs-0001",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "verifications-specifiques",
+      "difficulty": 2,
+      "tags": [
+        "délais de paiement",
+        "fournisseurs",
+        "rapport de gestion"
+      ],
+      "statement": "Pour le rapport de gestion de Lin SAS (clôture 31/12/N), la direction prépare le tableau des factures fournisseurs reçues non réglées dont le terme est échu. Elle exprime les pourcentages par rapport aux achats de l'exercice TTC, soit 1 950 000 €. Factures non réglées au 31/12/N (montants TTC) :\n1. 14 400 €, échéance 12/12/N ;\n2. 7 260 €, échéance 25/11/N ;\n3. 21 600 €, échéance 20/01/N+1 ;\n4. 3 840 €, échéance 28/09/N ;\n5. 6 000 €, échéance 15/10/N, contestée par Lin SAS (litige sur la qualité).\nConformément au modèle réglementaire, les factures litigieuses sont présentées à part, hors tranches de retard. Calculez le pourcentage des achats TTC que représente le total des factures échues non réglées, toutes tranches de retard confondues. Réponse en %, arrondie à deux décimales.",
+      "expected_value": 1.31,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.05
+      },
+      "unit": "%",
+      "decimals": 2,
+      "explanation": "Seules les factures dont le terme est échu au 31/12/N entrent dans les tranches de retard : 14 400 € (retard de 19 jours), 7 260 € (36 jours) et 3 840 € (94 jours). La facture 3 n'est pas échue ; la facture 5, litigieuse, est présentée à part. Total : 14 400 + 7 260 + 3 840 = 25 500 €. Pourcentage : 25 500 ÷ 1 950 000 = 1,3077 % ≈ 1,31 %. Erreurs classiques : inclure la facture litigieuse (1,62 %) ou la facture non échue (2,42 %). Le commissaire aux comptes vérifiera la sincérité et la concordance de cette information avec les comptes.",
+      "source_ref": "C. com. art. L. 441-14 et D. 441-6 (informations sur les délais de paiement) ; NEP 9510",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue4-rapport-verifs-0002",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "verifications-specifiques",
+      "difficulty": 2,
+      "tags": [
+        "délais de paiement",
+        "clients",
+        "rapport de gestion"
+      ],
+      "statement": "Pour le rapport de gestion de Saule SA (clôture 31/12/N), les factures clients émises non réglées dont le terme est échu se répartissent ainsi au 31/12/N (montants TTC) : 1 à 30 jours de retard : 48 000 € ; 31 à 60 jours : 22 500 € ; 61 à 90 jours : 9 300 € ; 91 jours et plus : 15 600 €, dont une facture de 4 800 € faisant l'objet d'un litige. Conformément au modèle réglementaire, les factures litigieuses sont présentées à part. Le chiffre d'affaires de l'exercice s'élève à 2 400 000 € HT, entièrement soumis à la TVA au taux de 20 %, et la société exprime ses pourcentages sur une base TTC. Calculez le pourcentage du chiffre d'affaires TTC représenté par la tranche « 91 jours et plus ». Réponse en %, arrondie à deux décimales.",
+      "expected_value": 0.38,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.03
+      },
+      "unit": "%",
+      "decimals": 2,
+      "explanation": "Les factures litigieuses sont exclues des tranches : montant de la tranche « 91 jours et plus » = 15 600 − 4 800 = 10 800 €. Les montants étant TTC, le dénominateur doit l'être aussi : 2 400 000 × 1,20 = 2 880 000 €. Pourcentage : 10 800 ÷ 2 880 000 = 0,375 % ≈ 0,38 %. Erreurs classiques : garder la facture litigieuse (0,54 %) ou rapporter un montant TTC à un chiffre d'affaires HT (0,45 %).",
+      "source_ref": "C. com. art. L. 441-14 et D. 441-6 (informations sur les délais de paiement) ; NEP 9510",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue4-rapport-verifs-0003",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "verifications-specifiques",
+      "difficulty": 3,
+      "tags": [
+        "rapport de gestion",
+        "conventions réglementées",
+        "prises de participation",
+        "NEP 9510"
+      ],
+      "title": "Cèdre : rapport de gestion et convention non autorisée",
+      "context": "Vous êtes collaborateur du commissaire aux comptes de Cèdre SA (société anonyme à conseil d'administration, non cotée, non EIP), exercice clos le 31/12/N. Les comptes annuels ne comportent pas d'anomalie significative : le commissaire aux comptes envisage de les certifier sans réserve.\n\nLors de la lecture du projet de rapport de gestion, vous relevez :\n- le résultat net de N y est présenté pour 1 250 000 €, alors que les comptes annuels font apparaître 1 210 000 € ;\n- en juin N, Cèdre a acquis 35 % du capital de Bouleau SAS, société française : le rapport de gestion n'en dit rien.\n\nPar ailleurs, depuis le 01/04/N, Cèdre loue un entrepôt à une SCI dont le directeur général de Cèdre est le gérant et l'associé majoritaire. Le bail n'a pas été autorisé préalablement par le conseil d'administration. Loyer mensuel HT : 8 000 € d'avril à septembre N, puis 8 200 € à compter d'octobre N après révision. Le loyer est conforme au marché.",
+      "sub_questions": [
+        {
+          "id": "q1-montant-convention",
+          "kind": "numeric",
+          "prompt": "Calculez le montant HT des loyers comptabilisés en charges par Cèdre en N au titre de ce bail, à mentionner dans le rapport spécial. Réponse en euros.",
+          "points": 2,
+          "expected_value": 72600,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Avril à septembre : 6 × 8 000 = 48 000 € ; octobre à décembre : 3 × 8 200 = 24 600 €. Total : 72 600 €. Le rapport spécial indique notamment l'objet, les modalités et le montant des sommes versées ou reçues au cours de l'exercice."
+        },
+        {
+          "id": "q2-convention-non-autorisee",
+          "kind": "mcq",
+          "prompt": "Comment le commissaire aux comptes traite-t-il ce bail ?",
+          "points": 2,
+          "options": [
+            "Il formule une réserve sur les comptes annuels",
+            "Il le mentionne dans son rapport spécial en exposant les circonstances pour lesquelles la procédure d'autorisation n'a pas été suivie ; l'assemblée peut couvrir la convention par un vote",
+            "Il révèle au procureur de la République le défaut d'autorisation, qui constitue en soi un délit",
+            "Il n'en dit rien, car seules les conventions autorisées peuvent figurer dans le rapport spécial"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Le bail conclu avec une société dont le directeur général est gérant et associé majoritaire est une convention réglementée (personne intéressée indirectement). Non autorisée préalablement, elle figure dans le rapport spécial, qui expose pourquoi la procédure n'a pas été suivie ; l'assemblée peut la couvrir par un vote (option 2). Les comptes ne sont pas faux : pas de réserve (option 1). Le défaut d'autorisation entraîne une possible nullité si la convention est préjudiciable, mais n'est pas en soi un délit (option 3) ; le loyer étant conforme au marché, rien n'indique un abus de biens sociaux. L'option 4 est contraire au texte."
+        },
+        {
+          "id": "q3-rapport-gestion",
+          "kind": "open",
+          "prompt": "Quelles démarches le commissaire aux comptes entreprend-il au sujet des deux points relevés dans le rapport de gestion, et quelle en est la traduction dans son rapport si la direction ne corrige pas ?",
+          "points": 3,
+          "model_answer": "Il signale les deux points à la direction et demande la correction du rapport de gestion avant sa communication aux actionnaires. Le résultat net de 1 250 000 € ne concorde pas avec les comptes (1 210 000 €) : c'est une inexactitude sur une information tirée des comptes, dont il vérifie la sincérité et la concordance. La prise de participation de 35 % dans une société française franchit le seuil du tiers du capital : elle doit être mentionnée dans le rapport de gestion. Si la direction ne corrige pas, le commissaire aux comptes en fait état dans la partie « Vérifications spécifiques » de son rapport (observation sur la sincérité et la concordance du résultat présenté ; mention de la prise de participation omise), et il signale ces inexactitudes et irrégularités à la plus prochaine assemblée. Il en informe aussi la gouvernance. Son opinion sur les comptes annuels n'est pas modifiée.",
+          "key_points": [
+            "Demande de correction à la direction avant diffusion du rapport de gestion",
+            "Défaut de concordance du résultat avec les comptes annuels",
+            "Prise de participation supérieure au tiers du capital à mentionner (L. 233-6)",
+            "À défaut de correction : observation dans la partie « Vérifications spécifiques » et signalement à l'assemblée, sans modification de l'opinion"
+          ]
+        },
+        {
+          "id": "q4-incidence-opinion",
+          "kind": "true_false",
+          "prompt": "Les anomalies relevées dans le rapport de gestion conduisent le commissaire aux comptes à formuler une réserve sur les comptes annuels.",
+          "points": 1,
+          "answer": false,
+          "explanation": "Faux : l'opinion porte sur les comptes annuels, qui ne comportent pas d'anomalie significative. Les inexactitudes du rapport de gestion sont traitées dans la partie « Vérifications spécifiques »."
+        }
+      ],
+      "total_points": 8,
+      "explanation": "Le cas distingue l'opinion sur les comptes, qui n'est pas affectée, des vérifications spécifiques (rapport de gestion, prises de participation) et du rapport spécial sur les conventions réglementées, y compris non autorisées.",
+      "source_ref": "NEP 9510 ; C. com. art. L. 225-38, L. 225-40 et L. 225-42 (conventions réglementées) ; C. com. art. L. 233-6 (prises de participation) ; C. com., signalement des irrégularités et inexactitudes (ancien art. L. 823-12)",
+      "verified": true,
+      "estimated_seconds": 720
+    },
+    {
+      "id": "ue4-rapport-verifs-0004",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "verifications-specifiques",
+      "difficulty": 2,
+      "tags": [
+        "rapport de gestion",
+        "concordance",
+        "NEP 9510"
+      ],
+      "statement": "Le rapport de gestion d'Aulne SA indique un chiffre d'affaires de 12,4 M€, « en hausse de 8 % ». Les comptes annuels, exacts, font apparaître 12,1 M€, soit une hausse de 5 %. La direction refuse de corriger le rapport de gestion. Que fait le commissaire aux comptes ?",
+      "options": [
+        "Il fait état de cette inexactitude dans la partie « Vérifications spécifiques » de son rapport, sans modifier son opinion sur les comptes",
+        "Il formule une réserve sur les comptes annuels",
+        "Il refuse de certifier les comptes annuels",
+        "Il ne fait rien, le rapport de gestion relevant de la seule responsabilité du conseil d'administration"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Le commissaire aux comptes vérifie la sincérité et la concordance avec les comptes des informations financières du rapport de gestion. Les comptes étant exacts, l'erreur ne porte que sur le rapport de gestion : à défaut de correction, il la décrit dans la partie « Vérifications spécifiques » de son rapport, sans modifier son opinion sur les comptes (option 1), et la signale à l'assemblée. Les options 2 et 3 sont fausses : une réserve ou un refus de certifier ne visent que des anomalies ou des limitations portant sur les comptes. L'option 4 est fausse : la NEP 9510 impose précisément cette vérification, même si le rapport de gestion est établi sous la responsabilité de l'organe d'administration.",
+      "source_ref": "NEP 9510 (diligences relatives au rapport de gestion et aux documents adressés aux actionnaires) ; NEP 700 ; C. com., signalement des irrégularités et inexactitudes (ancien art. L. 823-12)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-rapport-verifs-0005",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "verifications-specifiques",
+      "difficulty": 1,
+      "tags": [
+        "conventions réglementées",
+        "rapport spécial"
+      ],
+      "statement": "Le commissaire aux comptes n'a pas à se prononcer sur l'utilité ou le bien-fondé des conventions réglementées présentées dans son rapport spécial.",
+      "answer": true,
+      "justification": "Vrai : il en présente les caractéristiques et modalités essentielles ; l'appréciation de leur intérêt revient à l'assemblée.",
+      "explanation": "Le rapport spécial présente aux actionnaires, à partir des informations reçues et de celles relevées au cours de la mission, les caractéristiques et modalités essentielles des conventions réglementées. Le commissaire aux comptes n'a pas à rechercher l'existence d'autres conventions ni à apprécier leur utilité ou leur bien-fondé : c'est à l'assemblée de se prononcer, au vu de l'intérêt que présentent ces conventions pour la société.",
+      "source_ref": "C. com. art. L. 225-40 (rapport spécial sur les conventions réglementées) ; R. 225-31 (contenu du rapport spécial)",
+      "verified": true,
+      "estimated_seconds": 40
+    }
+  ]
+}

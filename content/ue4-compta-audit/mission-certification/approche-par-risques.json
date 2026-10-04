@@ -1,0 +1,179 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-mission-risques-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "approche-par-risques",
+      "difficulty": 1,
+      "tags": [
+        "NEP 315",
+        "procédures d'évaluation des risques"
+      ],
+      "statement": "Parmi les procédures suivantes, laquelle ne fait pas partie des procédures d'évaluation des risques prévues par la NEP 315 pour prendre connaissance de l'entité ?",
+      "options": [
+        "Les entretiens avec la direction et d'autres personnes de l'entité",
+        "L'envoi de demandes de confirmation des soldes à une sélection de clients",
+        "Les procédures analytiques",
+        "L'observation physique et l'inspection de documents"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La NEP 315 retient trois procédures pour prendre connaissance de l'entité et évaluer les risques : les entretiens avec la direction et d'autres personnes de l'entité, les procédures analytiques, et l'observation physique et l'inspection. La demande de confirmation des soldes clients (NEP 505) est une procédure de substance mise en œuvre en réponse aux risques évalués (NEP 330), pour collecter des éléments sur l'existence des créances : elle intervient après l'évaluation des risques, non pour la réaliser.",
+      "source_ref": "NEP 315 (connaissance de l'entité et de son environnement et évaluation du risque d'anomalies significatives dans les comptes) ; NEP 505 ; NEP 330",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-mission-risques-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "approche-par-risques",
+      "difficulty": 2,
+      "tags": [
+        "NEP 315",
+        "NEP 240",
+        "risque au niveau des comptes",
+        "fraude"
+      ],
+      "statement": "Lors de la prise de connaissance de Quartz SA, le commissaire aux comptes apprend que la rémunération variable du directeur général dépend entièrement du résultat d'exploitation et que l'entrée d'un fonds d'investissement au capital, prévue en N+1, sera valorisée sur la base des comptes N. Comment ce facteur doit-il être analysé ?",
+      "options": [
+        "Comme un risque limité à l'assertion de réalité du chiffre d'affaires, sans incidence sur les autres postes",
+        "Comme un risque d'activité sans traduction comptable, qui n'appelle aucune réponse particulière de l'auditeur",
+        "Comme un facteur de risque de fraude pesant sur les comptes pris dans leur ensemble, susceptible d'affecter de nombreuses assertions, et à traiter comme un risque requérant une démarche d'audit particulière",
+        "Comme un risque lié au contrôle, que le commissaire aux comptes compense en abaissant le seuil de signification sans modifier ses procédures"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Une forte incitation de la direction à présenter un résultat élevé est un facteur de risque de fraude (comptes présentés de façon trompeuse). Elle peut se traduire dans de nombreux postes (ventes, stocks, provisions, estimations) et justifie une évaluation au niveau des comptes pris dans leur ensemble. La NEP 240 conduit à considérer les risques d'anomalies significatives résultant de fraudes comme des risques inhérents élevés qui requièrent une démarche d'audit particulière. Le limiter au chiffre d'affaires est trop étroit ; parler de risque d'activité sans incidence est faux, puisque l'incitation porte précisément sur les comptes. Ce n'est pas un risque lié au contrôle, et abaisser le seuil sans adapter les procédures (supervision renforcée, imprévisibilité, examen des écritures et des estimations) ne répond pas au risque.",
+      "source_ref": "NEP 315 (évaluation du risque d'anomalies significatives) ; NEP 240 (prise en considération de la possibilité de fraudes lors de l'audit des comptes)",
+      "verified": true,
+      "estimated_seconds": 80
+    },
+    {
+      "id": "ue4-mission-risques-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "approche-par-risques",
+      "difficulty": 2,
+      "tags": [
+        "NEP 200",
+        "risque d'audit",
+        "risque de non-détection"
+      ],
+      "statement": "Le risque inhérent et le risque lié au contrôle existent indépendamment de l'audit : le commissaire aux comptes ne peut agir que sur le risque de non-détection, par le choix de ses procédures.",
+      "answer": true,
+      "justification": "Les risques inhérent et lié au contrôle dépendent de l'entité ; l'auditeur les évalue. Il maîtrise le risque de non-détection en adaptant la nature, le calendrier et l'étendue de ses procédures.",
+      "explanation": "La NEP 200 décompose le risque d'audit en risque d'anomalies significatives (lui-même composé du risque inhérent et du risque lié au contrôle) et en risque de non-détection. Les deux premiers tiennent à l'activité de l'entité et à son contrôle interne : l'auditeur les évalue (NEP 315) mais ne les modifie pas. Pour maintenir le risque d'audit à un niveau faible, il ajuste le risque de non-détection acceptable : plus le risque d'anomalies significatives est élevé, plus ses procédures de substance doivent être probantes et étendues (NEP 330). Le fait que ses recommandations conduisent parfois l'entité à améliorer son contrôle interne pour les exercices suivants ne change pas cette analyse pour l'exercice audité.",
+      "source_ref": "NEP 200 (principes applicables à l'audit) ; NEP 315 ; NEP 330",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-mission-risques-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "approche-par-risques",
+      "difficulty": 2,
+      "tags": [
+        "modèle du risque d'audit",
+        "risque de non-détection"
+      ],
+      "statement": "Pour l'assertion « évaluation » des stocks de Pléiade SAS, le cabinet retient un risque d'audit acceptable de 5 %. Le risque inhérent est évalué à 80 % et le risque lié au contrôle à 50 %. En appliquant le modèle multiplicatif du risque d'audit (RA = RI × RC × RND), calculez le risque de non-détection acceptable. Réponse en pourcentage, arrondie à une décimale.",
+      "expected_value": 12.5,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "decimals": 1,
+      "explanation": "RND = RA ÷ (RI × RC) = 5 % ÷ (0,80 × 0,50) = 0,05 ÷ 0,40 = 0,125, soit 12,5 %. Erreur classique : multiplier les trois taux (0,05 × 0,8 × 0,5 = 2 %). Interprétation : un risque de non-détection acceptable de 12,5 % est faible ; l'auditeur doit donc mettre en œuvre des procédures de substance probantes sur l'évaluation des stocks (tests de prix de revient, analyse de la rotation, contrôle de la valeur nette de réalisation sur les ventes postérieures). Le modèle multiplicatif est un outil pédagogique et de méthodologie de cabinet ; la NEP 200 en pose les composantes sans imposer de formule.",
+      "source_ref": "NEP 200 (composantes du risque d'audit) ; NEP 330 (réponses au risque évalué)",
+      "verified": true,
+      "estimated_seconds": 120
+    },
+    {
+      "id": "ue4-mission-risques-0005",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "approche-par-risques",
+      "difficulty": 3,
+      "tags": [
+        "NEP 315",
+        "connaissance de l'entité",
+        "assertions",
+        "covenant",
+        "risques"
+      ],
+      "title": "Volta SA : de la connaissance de l'entité aux risques d'anomalies",
+      "context": "Volta SA conçoit et assemble des trottinettes électriques vendues à des enseignes de sport et à des opérateurs de location. Vous préparez la planification de l'audit de l'exercice clos le 31/12/N. Les entretiens et procédures analytiques réalisés vous ont permis de relever les faits suivants :\n- le chiffre d'affaires prévisionnel N progresse de 35 %, alors que le marché des trottinettes progresse d'environ 5 % ; la direction l'explique par un nouveau contrat avec un opérateur de location signé en novembre N, assorti d'un droit de retour de 90 jours ;\n- les stocks de batteries de première génération (2,1 millions d'euros) ne sont plus compatibles avec les modèles commercialisés depuis septembre N ;\n- l'emprunt bancaire est assorti d'un covenant : le ratio dette financière nette ÷ EBITDA doit rester inférieur à 3 au 31/12/N, faute de quoi la banque peut exiger le remboursement anticipé ; la dette financière nette prévue au 31/12/N est de 8 700 000 € et l'EBITDA prévisionnel de 3 000 000 € ;\n- la rémunération variable du président est assise sur l'EBITDA ;\n- la société n'a pas de service d'audit interne et le contrôle de gestion se limite à un reporting trimestriel.",
+      "sub_questions": [
+        {
+          "id": "q1-marge-covenant",
+          "kind": "numeric",
+          "prompt": "De quel montant (en euros) l'EBITDA prévisionnel devrait-il diminuer, à dette financière nette inchangée, pour que le ratio atteigne exactement 3 ?",
+          "points": 2,
+          "expected_value": 100000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Ratio actuel : 8 700 000 ÷ 3 000 000 = 2,9. EBITDA correspondant à un ratio de 3 : 8 700 000 ÷ 3 = 2 900 000 €. Diminution : 3 000 000 − 2 900 000 = 100 000 €, soit 3,3 % de l'EBITDA. La marge est très faible : la moindre anomalie surévaluant l'EBITDA peut masquer un manquement au covenant."
+        },
+        {
+          "id": "q2-assertion-batteries",
+          "kind": "mcq",
+          "prompt": "Quelle assertion est principalement exposée par la situation des batteries de première génération ?",
+          "points": 2,
+          "options": [
+            "L'existence des stocks",
+            "L'exhaustivité des stocks",
+            "Les droits et obligations sur les stocks",
+            "L'évaluation des stocks"
+          ],
+          "answer": [
+            3
+          ],
+          "explanation": "Les batteries existent et appartiennent à l'entité, mais leur incompatibilité avec les modèles actuels fait douter de leur valeur nette de réalisation : le risque porte sur l'évaluation (dépréciation éventuellement insuffisante). Les autres assertions ne sont pas spécialement affectées par ce fait."
+        },
+        {
+          "id": "q3-signal-ventes",
+          "kind": "true_false",
+          "prompt": "Une croissance des ventes de 35 % sur un marché en hausse d'environ 5 % est un indicateur de risque sur la réalité et la séparation des exercices des ventes, même si la direction fournit une explication.",
+          "points": 1,
+          "answer": true,
+          "explanation": "L'écart avec le marché est un signal issu des procédures analytiques. L'explication de la direction (nouveau contrat) doit être corroborée ; le droit de retour de 90 jours et la signature en fin d'exercice renforcent le risque sur la réalité des ventes et le moment de leur comptabilisation."
+        },
+        {
+          "id": "q4-cartographie",
+          "kind": "open",
+          "prompt": "Identifiez les risques d'anomalies significatives de Volta, en précisant pour chacun le niveau (comptes pris dans leur ensemble ou assertion) et ceux qui requièrent une démarche d'audit particulière.",
+          "points": 5,
+          "model_answer": "1. Risque au niveau des comptes pris dans leur ensemble : la combinaison d'un covenant à la limite (marge de 100 000 € d'EBITDA) et d'une rémunération variable assise sur l'EBITDA crée une forte incitation à surévaluer l'EBITDA. C'est un facteur de risque de fraude, qui requiert une démarche d'audit particulière (NEP 240) : examen des écritures de fin d'exercice, des estimations et des opérations inhabituelles. L'absence d'audit interne et un contrôle de gestion limité aggravent le risque lié au contrôle. Si le covenant n'était pas respecté, l'exigibilité anticipée de la dette poserait en outre une question de classement et de continuité d'exploitation. 2. Ventes, assertions de réalité et de séparation des exercices : croissance atypique, contrat signé en novembre avec droit de retour de 90 jours ; risque que des ventes soient comptabilisées alors que les retours probables ne sont pas pris en compte. Ce risque, lié à la comptabilisation des produits dans un contexte d'incitation, requiert une démarche particulière (la NEP 240 présume d'ailleurs l'existence de risques de fraude dans la comptabilisation des produits). 3. Stocks de batteries, assertion d'évaluation : 2,1 millions d'euros de stocks devenus incompatibles, dépréciation reposant sur une estimation fortement incertaine ; démarche particulière au titre des estimations. Chaque risque doit être rattaché à des procédures en réponse (NEP 330).",
+          "key_points": [
+            "Identifier l'incitation à surévaluer l'EBITDA (covenant à la limite et rémunération variable) comme risque au niveau des comptes pris dans leur ensemble et facteur de risque de fraude",
+            "Rattacher le contrat de novembre avec droit de retour aux assertions de réalité et de séparation des exercices des ventes",
+            "Rattacher les batteries incompatibles à l'assertion d'évaluation des stocks",
+            "Qualifier les risques de fraude, de comptabilisation des produits et d'estimation incertaine comme requérant une démarche d'audit particulière",
+            "Noter l'incidence d'un contrôle interne peu développé sur le risque lié au contrôle"
+          ],
+          "explanation": "La NEP 315 demande d'évaluer les risques aux deux niveaux et d'identifier ceux qui requièrent une démarche d'audit particulière ; la NEP 240 range les risques de fraude dans cette catégorie et présume un risque de fraude dans la comptabilisation des produits."
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas part de faits relevés lors de la prise de connaissance pour aboutir à une cartographie des risques. Les points clés : relier chaque fait à une assertion ou aux comptes pris dans leur ensemble, repérer les incitations (covenant, rémunération variable) et identifier les risques requérant une démarche particulière.",
+      "source_ref": "NEP 315 (connaissance de l'entité et évaluation du risque d'anomalies significatives) ; NEP 240 (fraudes) ; NEP 500 (assertions)",
+      "verified": true,
+      "estimated_seconds": 840
+    }
+  ]
+}

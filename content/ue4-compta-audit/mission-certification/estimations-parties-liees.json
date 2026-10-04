@@ -1,0 +1,225 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-mission-estimations-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "estimations-parties-liees",
+      "difficulty": 1,
+      "tags": [
+        "NEP 540",
+        "estimation comptable",
+        "définition"
+      ],
+      "source_ref": "NEP 540 (appréciation des estimations comptables)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "explanation": "Une estimation comptable est un montant déterminé en l'absence de moyen de mesure précis, qui repose sur le jugement de la direction : la provision pour litige dépend de l'issue incertaine de la procédure et de l'appréciation du risque. Le montant d'une facture, le capital social et le solde bancaire rapproché résultent de documents ou de faits mesurés précisément ; ils ne comportent pas d'incertitude d'estimation.",
+      "statement": "Parmi les montants suivants figurant dans les comptes de Tilleul SAS, lequel constitue une estimation comptable au sens de la NEP 540 ?",
+      "options": [
+        "Le montant d'une facture fournisseur reçue et comptabilisée en décembre",
+        "Le capital social inscrit au bilan",
+        "La provision pour le litige prud'homal en cours avec un ancien salarié",
+        "Le solde bancaire rapproché du relevé de la banque au 31 décembre"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ue4-mission-estimations-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "estimations-parties-liees",
+      "difficulty": 2,
+      "tags": [
+        "NEP 540",
+        "revue rétrospective",
+        "biais de la direction",
+        "provisions pour litiges"
+      ],
+      "source_ref": "NEP 540 (revue du dénouement des estimations antérieures, biais de la direction)",
+      "verified": true,
+      "estimated_seconds": 70,
+      "explanation": "La revue rétrospective prévue par la NEP 540 n'a pas pour objet de remettre en cause les comptes antérieurs : une estimation raisonnable à la date d'arrêté n'est pas une erreur si son dénouement diffère (option 1 fausse). En revanche, des écarts répétés et toujours dans le même sens sont un indice de biais de la direction ou de faiblesse du processus d'estimation : le CAC en tient compte pour évaluer le risque d'anomalies sur les provisions de l'exercice et renforcer ses procédures (option 2 fausse). Un indice de biais ne conduit pas à lui seul à un refus de certifier (option 3 fausse).",
+      "statement": "Chez Frêne SA, le commissaire aux comptes compare le dénouement des litiges des trois derniers exercices aux provisions constituées : à chaque fois, le montant finalement payé a dépassé la provision de 30 à 40 %. Que doit-il en déduire ?",
+      "options": [
+        "Les comptes des exercices précédents comportaient des anomalies qu'il faut corriger rétrospectivement",
+        "Aucune conséquence : le dénouement d'une estimation diffère toujours de l'estimation initiale",
+        "Il doit refuser de certifier les comptes de l'exercice, la direction n'étant pas fiable",
+        "Il s'agit d'un indice possible de biais de la direction, dont il tient compte pour évaluer le risque et apprécier les provisions pour litiges de l'exercice"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ue4-mission-estimations-0003",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "estimations-parties-liees",
+      "difficulty": 2,
+      "tags": [
+        "NEP 540",
+        "estimation indépendante",
+        "provision pour garantie"
+      ],
+      "source_ref": "NEP 540 (estimation établie par le commissaire aux comptes) ; PCG art. 322-1 et s. (provisions, règl. ANC 2014-03)",
+      "verified": true,
+      "estimated_seconds": 240,
+      "explanation": "Coûts restant à supporter au 31/12/N : ventes N : 8 000 000 × 1,5 % = 120 000 € (aucun coût consommé) ; ventes N−1 : 7 000 000 × 1,5 % × 60 % = 63 000 € (reste la seconde année). Estimation du CAC : 120 000 + 63 000 = 183 000 €. Écart : 183 000 − 150 000 = 33 000 € d'insuffisance de provision. Erreurs classiques : provisionner la totalité du coût des ventes N−1 (225 000 €, écart 75 000 €) ou oublier les ventes N−1 (120 000 €, écart −30 000 €). Avant de conclure à une anomalie, le CAC rapproche son estimation de celle de la direction (hypothèses, données) et tient compte des événements postérieurs à la clôture.",
+      "statement": "Hêtre SAS vend des équipements garantis 24 mois. Pour apprécier la provision pour garantie au 31/12/N, le commissaire aux comptes construit sa propre estimation à partir des statistiques de l'entité, qu'il a testées :\n- coût total des interventions sous garantie : 1,5 % du chiffre d'affaires des ventes garanties ;\n- ce coût est supporté pour 40 % la première année suivant la vente et pour 60 % la seconde ;\n- chiffre d'affaires garanti : 7 000 000 € en N−1 et 8 000 000 € en N.\nPar simplification, on considère que les ventes N n'ont encore généré aucun coût et que les ventes N−1 ont déjà consommé leurs coûts de première année. La provision comptabilisée est de 150 000 €. Calculez l'écart entre l'estimation du commissaire aux comptes et la provision comptabilisée (estimation − provision comptabilisée), en euros.",
+      "expected_value": 33000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0
+    },
+    {
+      "id": "ue4-mission-estimations-0004",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "estimations-parties-liees",
+      "difficulty": 2,
+      "tags": [
+        "NEP 540",
+        "NEP 560",
+        "dépréciation des créances",
+        "ajustement proposé"
+      ],
+      "source_ref": "NEP 540 (estimations comptables) ; NEP 560 (événements postérieurs à la clôture) ; NEP 450 (anomalies relevées) ; PCG, comptes 416, 491 et 6817 (règl. ANC 2014-03)",
+      "verified": true,
+      "estimated_seconds": 200,
+      "explanation": "Le redressement judiciaire, survenu après la clôture mais avant l'arrêté, confirme une situation existant au 31/12/N (impayés depuis octobre N) : c'est un événement postérieur qui donne lieu à ajustement des comptes. Reclassement de la créance TTC : 48 000 € en 416. La dépréciation se calcule sur le montant HT, la TVA étant récupérable sur la part non recouvrée : 48 000 ÷ 1,2 = 40 000 € HT ; part irrécouvrable estimée 75 % : 40 000 × 75 % = 30 000 €. Erreur classique : déprécier le TTC (36 000 €). L'estimation de la dépréciation est appréciée par le CAC à partir d'un élément externe (information du mandataire), plus fiable qu'une appréciation interne.",
+      "statement": "Au cours de l'audit des comptes de Charme SAS (clôture au 31/12/N, arrêté des comptes prévu le 20/03/N+1), le commissaire aux comptes apprend que le client Lambda a été placé en redressement judiciaire le 15/02/N+1. Les factures de Lambda étaient impayées depuis octobre N. La créance, de 48 000 € TTC (TVA 20 %), figure au compte 411 sans dépréciation. D'après le mandataire judiciaire, le taux de recouvrement estimé est de 25 %. Rédigez l'écriture d'ajustement proposée au 31/12/N (reclassement en créance douteuse et dépréciation). Utilisez les comptes 416, 411, 6817 et 491.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "416",
+          "label": "Clients douteux ou litigieux",
+          "debit": 48000,
+          "credit": 0
+        },
+        {
+          "account": "411",
+          "label": "Clients",
+          "debit": 0,
+          "credit": 48000
+        },
+        {
+          "account": "6817",
+          "label": "Dotations aux dépréciations des actifs circulants",
+          "debit": 30000,
+          "credit": 0
+        },
+        {
+          "account": "491",
+          "label": "Dépréciations des comptes de clients",
+          "debit": 0,
+          "credit": 30000
+        }
+      ]
+    },
+    {
+      "id": "ue4-mission-estimations-0005",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "estimations-parties-liees",
+      "difficulty": 2,
+      "tags": [
+        "conventions réglementées",
+        "rapport spécial",
+        "SA"
+      ],
+      "source_ref": "C. com. art. L. 225-40 et L. 225-42 ; NEP 550 (parties liées)",
+      "verified": true,
+      "estimated_seconds": 40,
+      "explanation": "Une convention réglementée non autorisée peut être annulée si elle a eu des conséquences dommageables pour la société ; la nullité peut être couverte par un vote de l'assemblée sur rapport spécial du commissaire aux comptes exposant les circonstances du défaut d'autorisation (L. 225-42). Le CAC n'a pas à rechercher systématiquement l'existence de conventions, mais il signale celles dont il a eu connaissance, y compris à l'occasion de ses travaux sur les parties liées (NEP 550).",
+      "statement": "Dans une SA, lorsqu'une convention réglementée a été conclue sans l'autorisation préalable du conseil d'administration, le commissaire aux comptes la signale dans son rapport spécial à l'assemblée.",
+      "answer": true,
+      "justification": "Le CAC porte à la connaissance de l'assemblée les conventions non autorisées dans un rapport spécial qui expose les circonstances pour lesquelles la procédure d'autorisation n'a pas été suivie."
+    },
+    {
+      "id": "ue4-mission-estimations-0006",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "estimations-parties-liees",
+      "difficulty": 3,
+      "tags": [
+        "NEP 550",
+        "parties liées",
+        "conventions réglementées",
+        "rapport spécial"
+      ],
+      "source_ref": "NEP 550 (parties liées) ; C. com. art. L. 225-38, L. 225-39, L. 225-40, L. 225-42 et L. 225-43 ; C. com. art. R. 123-198 (annexe, transactions avec les parties liées)",
+      "verified": true,
+      "estimated_seconds": 780,
+      "explanation": "Le cas mobilise la NEP 550 (identification des parties liées, vigilance, transactions non communiquées) et le régime des conventions réglementées de la SA : autorisation préalable du conseil (L. 225-38), exclusion des opérations courantes conclues à des conditions normales (L. 225-39), rapport spécial du CAC (L. 225-40) et convention non autorisée (L. 225-42). Le caractère significatif d'une transaction avec une partie liée s'apprécie aussi par sa nature, pas seulement par son montant.",
+      "title": "Orme SA : un bail conclu avec une société du dirigeant",
+      "context": "Orme SA (clôture au 31/12/N, chiffre d'affaires 28 M€, conseil d'administration) est dirigée par M. Ferrand, président-directeur général et administrateur. M. Ferrand est également gérant et associé majoritaire (80 % des parts) de la SCI Valmont.\nLe 15/03/N, Orme SA a signé avec la SCI Valmont un bail commercial portant sur un entrepôt, avec prise d'effet au 01/04/N, pour un loyer annuel de 360 000 € HT. Le conseil d'administration n'a pas été consulté avant la signature.\nUne estimation réalisée par un expert immobilier indépendant, obtenue par le commissaire aux comptes, situe la valeur locative de marché de cet entrepôt à 270 000 € HT par an.\nEn début de mission, la direction a remis au commissaire aux comptes une liste des parties liées et des transactions conclues avec elles : la SCI Valmont n'y figure pas. Le commissaire aux comptes a découvert le bail en examinant le détail du compte 6132 (locations immobilières).\nLe seuil de signification retenu pour les comptes d'Orme SA est de 280 000 €.",
+      "sub_questions": [
+        {
+          "id": "qualification",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Comment qualifier le bail conclu entre Orme SA et la SCI Valmont au regard du Code de commerce ?",
+          "options": [
+            "Une convention libre, car la SCI Valmont est une société civile et non une société commerciale",
+            "Une convention réglementée, car le PDG d'Orme SA est gérant de la SCI Valmont et le bail n'est pas conclu à des conditions normales",
+            "Une convention interdite, nulle de plein droit sans régularisation possible",
+            "Une opération courante conclue à des conditions normales, dispensée de toute procédure"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "L'article L. 225-38 soumet à autorisation préalable du conseil les conventions conclues entre la société et une entreprise dont le directeur général ou un administrateur est notamment gérant ; la forme civile de la SCI est indifférente. Le loyer, supérieur d'un tiers à la valeur de marché, exclut la qualification d'opération courante conclue à des conditions normales (L. 225-39). Les conventions interdites (L. 225-43) visent notamment les prêts et cautions au profit des administrateurs personnes physiques, pas un bail."
+        },
+        {
+          "id": "surcout",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez, en euros, le surcoût supporté par Orme SA sur l'exercice N par rapport à la valeur locative de marché (prorata en mois, base 12 mois).",
+          "expected_value": 67500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Surcoût annuel : 360 000 − 270 000 = 90 000 €. Le bail court du 01/04/N au 31/12/N, soit 9 mois : 90 000 × 9/12 = 67 500 €. Erreur classique : retenir l'année entière (90 000 €) ou le loyer total de la période (270 000 €)."
+        },
+        {
+          "id": "liste-direction",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "Le commissaire aux comptes peut fonder ses travaux sur les parties liées uniquement sur la liste remise par la direction, sans autre vigilance.",
+          "answer": false,
+          "explanation": "Selon la NEP 550, le CAC demande cette liste à la direction mais reste attentif, tout au long de l'audit, aux parties liées et transactions non communiquées (examen des contrats, des procès-verbaux, des opérations inhabituelles). Le cas d'Orme SA, découvert à l'examen du compte 6132, le montre."
+        },
+        {
+          "id": "consequences",
+          "kind": "open",
+          "points": 4,
+          "prompt": "Quelles conséquences le commissaire aux comptes tire-t-il de cette découverte (travaux complémentaires, communications, rapports) ?",
+          "model_answer": "La transaction non communiquée remet en cause l'exhaustivité de la liste fournie : le CAC interroge la direction sur les raisons de l'omission, réévalue le risque que d'autres parties liées ou transactions n'aient pas été identifiées et étend ses procédures (contrats, procès-verbaux, comptes de charges, recherche des mandats du dirigeant). Il en informe la gouvernance (conseil d'administration). Il vérifie que l'information sur cette transaction, conclue hors conditions normales de marché, figure en annexe. La convention n'ayant pas été autorisée, il la signale dans son rapport spécial sur les conventions réglementées en exposant les circonstances pour lesquelles la procédure d'autorisation n'a pas été suivie, l'assemblée pouvant couvrir la nullité. Le surcoût de 67 500 € est inférieur au seuil de signification, mais la transaction est sensible par sa nature (dirigeant) ; le CAC apprécie enfin si le versement d'un loyer excessif à une société du dirigeant peut constituer un délit (abus de biens sociaux) à révéler au procureur de la République, et en tient compte dans son appréciation de la fiabilité des déclarations de la direction.",
+          "key_points": [
+            "Liste de la direction incomplète : entretien avec la direction, risque réévalué, procédures étendues",
+            "Information de la gouvernance",
+            "Vérification de l'information en annexe (transaction hors conditions de marché)",
+            "Mention de la convention non autorisée dans le rapport spécial (L. 225-42)",
+            "Appréciation d'un éventuel fait délictueux (abus de biens sociaux) et de la fiabilité des déclarations de la direction"
+          ]
+        }
+      ],
+      "total_points": 10
+    }
+  ]
+}

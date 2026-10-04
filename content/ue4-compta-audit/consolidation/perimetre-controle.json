@@ -1,0 +1,313 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-conso-perimetre-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "perimetre-controle",
+      "difficulty": 1,
+      "tags": [
+        "influence notable",
+        "présomption",
+        "mise en équivalence"
+      ],
+      "statement": "À partir de quelle fraction des droits de vote l'influence notable est-elle présumée ?",
+      "options": [
+        "10 %",
+        "20 %",
+        "Plus de 40 %",
+        "Plus de 50 %"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'influence notable est présumée lorsque l'investisseur dispose, directement ou indirectement, d'au moins 20 % des droits de vote (seuil identique en règles françaises et dans IAS 28 §5). Il s'agit d'une présomption simple, qui peut être renversée ou démontrée en dessous du seuil. 10 % est un seuil sans portée ici ; plus de 40 % correspond à la présomption de contrôle exclusif de fait (avec absence d'associé détenant plus) ; la majorité des droits de vote caractérise le contrôle exclusif de droit.",
+      "source_ref": "C. com. L233-17-2 ; règl. ANC 2020-01 ; IAS 28 §5-6 (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-conso-perimetre-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "perimetre-controle",
+      "difficulty": 2,
+      "tags": [
+        "contrôle de fait",
+        "40 %",
+        "contrôle exclusif"
+      ],
+      "statement": "La société Sirius détient depuis trois exercices 43 % des droits de vote de la société Talc. Le deuxième actionnaire détient 25 % des droits de vote ; le reste est dispersé dans le public. Il n'existe aucun pacte d'actionnaires. En règles françaises, quelle est la nature du lien entre Sirius et Talc ?",
+      "options": [
+        "Aucun contrôle, puisque Sirius ne détient pas la majorité des droits de vote",
+        "Contrôle conjoint, puisque deux actionnaires détiennent ensemble la majorité",
+        "Influence notable seulement",
+        "Contrôle exclusif de fait (présumé)"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Le contrôle exclusif de fait résulte de la désignation, pendant deux exercices successifs, de la majorité des membres des organes de direction ; il est présumé lorsque la société a disposé sur cette période de plus de 40 % des droits de vote et qu'aucun autre associé n'en détenait une fraction supérieure. Sirius (43 % depuis trois ans, autre associé principal à 25 %) remplit les deux conditions : contrôle exclusif, donc intégration globale. L'option 1 ignore le contrôle de fait ; l'option 3 décrit l'influence notable, insuffisante au regard des faits ; l'option 2 confond le nombre d'associés avec le partage contractuel du contrôle, qui suppose un accord entre un nombre limité d'associés.",
+      "source_ref": "C. com. L233-16 II 2° ; règl. ANC 2020-01",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-conso-perimetre-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "perimetre-controle",
+      "difficulty": 1,
+      "tags": [
+        "IFRS 10",
+        "contrôle",
+        "rendements variables"
+      ],
+      "statement": "Selon IFRS 10, un investisseur contrôle une entité lorsqu'il détient le pouvoir sur celle-ci, qu'il est exposé ou a droit à des rendements variables en raison de ses liens avec elle, et qu'il a la capacité d'utiliser son pouvoir pour influer sur le montant de ces rendements.",
+      "answer": true,
+      "justification": "C'est la définition du contrôle d'IFRS 10 §7 : trois conditions cumulatives.",
+      "explanation": "IFRS 10 §7 définit le contrôle par trois éléments cumulatifs : le pouvoir sur l'entité émettrice, l'exposition ou le droit à des rendements variables en raison des liens avec elle, et la capacité d'exercer ce pouvoir de manière à influer sur le montant de ces rendements. L'analyse ne repose donc pas uniquement sur la détention de la majorité des droits de vote : droits de vote potentiels substantiels, accords contractuels ou pouvoir de fait peuvent conférer le contrôle.",
+      "source_ref": "IFRS 10 §7 (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-conso-perimetre-0004",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "perimetre-controle",
+      "difficulty": 2,
+      "tags": [
+        "droits de vote double",
+        "contrôle de droit",
+        "droits de vote potentiels",
+        "IFRS 10"
+      ],
+      "title": "Altaïr : droits de vote double et droits potentiels",
+      "context": "La SA Altaïr prépare ses comptes consolidés au 31/12/N.\n\nParticipation dans Zinc : le capital de la société Zinc est composé de 10 000 actions. Les statuts confèrent un droit de vote double aux actions inscrites au nominatif depuis plus de deux ans ; 5 000 actions bénéficient de ce droit au 31/12/N. Altaïr détient 4 200 actions de Zinc, dont 3 500 à droit de vote double. Les 1 500 autres actions à droit de vote double appartiennent à des actionnaires individuels ; le reste du capital est dispersé.\n\nParticipation dans Yuzu : Altaïr détient 35 % des droits de vote de la société Yuzu. Elle dispose en outre d'une option d'achat, exerçable à tout moment, portant sur 20 % supplémentaires des droits de vote, à un prix proche de la valeur de marché. L'autre actionnaire significatif détient 30 % des droits de vote ; le solde est dispersé. Pour la question 4, on suppose que les comptes consolidés d'Altaïr sont établis selon les IFRS adoptées par l'UE.\n\nAucune autre information n'est à prendre en compte.",
+      "sub_questions": [
+        {
+          "id": "vote-zinc",
+          "kind": "numeric",
+          "prompt": "Quel pourcentage des droits de vote de Zinc Altaïr détient-elle au 31/12/N ? (en %, arrondi au dixième)",
+          "points": 3,
+          "expected_value": 51.3,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "Total des voix = 10 000 + 5 000 voix supplémentaires (actions à droit double) = 15 000. Voix d'Altaïr = 4 200 + 3 500 = 7 700. Pourcentage = 7 700 ÷ 15 000 = 51,3 %."
+        },
+        {
+          "id": "nature-zinc",
+          "kind": "mcq",
+          "prompt": "Quelle est la nature du contrôle d'Altaïr sur Zinc ?",
+          "points": 2,
+          "options": [
+            "Contrôle exclusif de droit",
+            "Contrôle exclusif de fait",
+            "Influence notable, la participation au capital n'étant que de 42 %",
+            "Contrôle conjoint"
+          ],
+          "answer": [
+            0
+          ],
+          "explanation": "Altaïr détient la majorité des droits de vote (51,3 %) : contrôle exclusif de droit, sans qu'il soit besoin de recourir à la présomption de contrôle de fait. Le pourcentage de capital (42 %) n'est pas le critère du contrôle."
+        },
+        {
+          "id": "interet-zinc",
+          "kind": "true_false",
+          "prompt": "Le pourcentage d'intérêt d'Altaïr dans Zinc, utilisé pour le partage des capitaux propres, est de 51,3 %.",
+          "points": 1,
+          "answer": false,
+          "explanation": "Le pourcentage d'intérêt se calcule sur le capital : 4 200 ÷ 10 000 = 42 %. Les droits de vote double influent sur le contrôle, pas sur les droits aux bénéfices et aux capitaux propres."
+        },
+        {
+          "id": "yuzu-ifrs",
+          "kind": "open",
+          "prompt": "Selon IFRS 10, Altaïr contrôle-t-elle Yuzu ? Justifiez en vous appuyant sur les faits de l'énoncé.",
+          "points": 4,
+          "model_answer": "IFRS 10 retient trois critères cumulatifs : pouvoir, exposition à des rendements variables, lien entre les deux. Pour apprécier le pouvoir, les droits de vote potentiels sont pris en compte s'ils sont substantiels. L'option d'Altaïr est exerçable à tout moment, à un prix proche de la valeur de marché, donc sans obstacle économique : elle est substantielle. En l'exerçant, Altaïr disposerait de 55 % des droits de vote, ce qui lui donne dès aujourd'hui la capacité de diriger les activités pertinentes de Yuzu. Altaïr est exposée aux rendements de Yuzu par sa participation de 35 % et peut influer sur eux par ce pouvoir. Elle contrôle donc Yuzu, qui est intégrée globalement ; le pourcentage d'intérêt retenu pour le partage reste, en principe, de 35 % tant que l'option n'est pas exercée.",
+          "key_points": [
+            "Trois critères cumulatifs d'IFRS 10 §7",
+            "Droits de vote potentiels retenus s'ils sont substantiels (exerçables, prix non dissuasif)",
+            "35 % + 20 % = 55 % : pouvoir sur les activités pertinentes",
+            "Conclusion : contrôle, intégration globale",
+            "L'option non exercée n'augmente pas le pourcentage d'intérêt"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le contrôle s'apprécie sur les droits de vote et non sur le capital : grâce aux droits de vote doubles, Altaïr contrôle Zinc avec 42 % du capital. Le pourcentage d'intérêt (42 %) sert seulement au partage des capitaux propres. En IFRS, des droits de vote potentiels substantiels (exerçables immédiatement, à un prix non dissuasif) entrent dans l'appréciation du pouvoir.",
+      "source_ref": "C. com. L233-16 II ; règl. ANC 2020-01 ; IFRS 10 §7 et §B47-B50 (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 600
+    },
+    {
+      "id": "ue4-conso-perimetre-0005",
+      "type": "consolidation_case",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "perimetre-controle",
+      "difficulty": 3,
+      "tags": [
+        "périmètre",
+        "contrôle de fait",
+        "contrôle conjoint",
+        "influence notable",
+        "chaîne de contrôle"
+      ],
+      "title": "Groupe Orion : déterminer le périmètre",
+      "context": "La société Orion (O) établit ses comptes consolidés au 31/12/N selon le règlement ANC 2020-01. Ses participations (capital et droits de vote identiques sauf mention contraire) sont les suivantes :\n- Ambre (A) : O détient 55 %.\n- Basalte (B) : O détient 45 % depuis N-3 ; aucun autre actionnaire ne dépasse 12 %. O a désigné la majorité des administrateurs de B lors des deux derniers exercices.\n- Cobalt (C) : O détient 50 % ; la société Delta, sans lien avec O, détient les autres 50 %. Un accord prévoit que toutes les décisions stratégiques, financières et opérationnelles de C sont prises à l'unanimité des deux associés.\n- Diorite (D) : O détient 15 %. Elle dispose de 2 sièges sur 9 au conseil d'administration de D, participe à l'élaboration de ses politiques et lui fournit une technologie indispensable à son activité.\n- Émeraude (E) : O détient 18 %, sans représentation dans les organes de direction ni relations commerciales avec E.\n- Fer (F) : A détient 60 % ; O ne détient pas de titres de F en direct.\nToutes les entités ont une activité significative.",
+      "entities": [
+        {
+          "id": "o",
+          "name": "Orion (O)",
+          "is_parent": true
+        },
+        {
+          "id": "a",
+          "name": "Ambre (A)"
+        },
+        {
+          "id": "b",
+          "name": "Basalte (B)"
+        },
+        {
+          "id": "c",
+          "name": "Cobalt (C)"
+        },
+        {
+          "id": "d",
+          "name": "Diorite (D)"
+        },
+        {
+          "id": "e",
+          "name": "Émeraude (E)"
+        },
+        {
+          "id": "f",
+          "name": "Fer (F)"
+        }
+      ],
+      "links": [
+        {
+          "from": "o",
+          "to": "a",
+          "ownership_pct": 55
+        },
+        {
+          "from": "o",
+          "to": "b",
+          "ownership_pct": 45
+        },
+        {
+          "from": "o",
+          "to": "c",
+          "ownership_pct": 50
+        },
+        {
+          "from": "o",
+          "to": "d",
+          "ownership_pct": 15
+        },
+        {
+          "from": "o",
+          "to": "e",
+          "ownership_pct": 18
+        },
+        {
+          "from": "a",
+          "to": "f",
+          "ownership_pct": 60
+        }
+      ],
+      "steps": [
+        {
+          "id": "nature-b",
+          "stage": "perimetre",
+          "kind": "mcq",
+          "prompt": "Quelle est la nature du lien entre O et Basalte (B) ?",
+          "points": 2,
+          "options": [
+            "Influence notable",
+            "Contrôle exclusif de fait",
+            "Contrôle conjoint",
+            "Aucun lien, faute de majorité"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "O détient plus de 40 % des droits de vote, aucun autre actionnaire ne détient une fraction supérieure, et O a désigné la majorité des administrateurs pendant deux exercices successifs : contrôle exclusif de fait (C. com. L233-16 II 2°)."
+        },
+        {
+          "id": "methode-c",
+          "stage": "methode",
+          "kind": "mcq",
+          "prompt": "Selon quelle méthode Cobalt (C) est-elle consolidée dans les comptes d'Orion établis selon le règlement ANC 2020-01 ?",
+          "points": 2,
+          "options": [
+            "Intégration globale",
+            "Mise en équivalence",
+            "Intégration proportionnelle",
+            "C est exclue du périmètre"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "Les décisions de C exigent l'accord unanime de deux associés : contrôle conjoint. En règles françaises, le contrôle conjoint conduit à l'intégration proportionnelle (C. com. L233-18 ; règl. ANC 2020-01). En IFRS, une coentreprise serait mise en équivalence."
+        },
+        {
+          "id": "nature-d",
+          "stage": "perimetre",
+          "kind": "true_false",
+          "prompt": "Diorite (D) entre dans le périmètre de consolidation d'Orion et doit être mise en équivalence, bien que O ne détienne que 15 % des droits de vote.",
+          "points": 2,
+          "answer": true,
+          "explanation": "La présomption d'influence notable à 20 % est simple. La représentation au conseil, la participation aux politiques et la dépendance technologique démontrent une influence notable : D est mise en équivalence. À l'inverse, É (18 %, sans aucun de ces indices) n'est pas consolidée."
+        },
+        {
+          "id": "interet-f",
+          "stage": "pourcentages",
+          "kind": "numeric",
+          "prompt": "Quel est le pourcentage d'intérêt du groupe dans Fer (F) ? (en %, arrondi au dixième)",
+          "points": 2,
+          "expected_value": 33,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "Pourcentage d'intérêt = 55 % × 60 % = 33 %. Le contrôle de F est de 60 % (O contrôle A, dont les droits de vote dans F sont retenus en totalité) : F est intégrée globalement malgré un intérêt inférieur à 50 %."
+        },
+        {
+          "id": "synthese",
+          "stage": "methode",
+          "kind": "open",
+          "prompt": "Présentez le périmètre de consolidation d'Orion : pour chaque société (A à F), indiquez si elle est consolidée et selon quelle méthode.",
+          "points": 2,
+          "model_answer": "A : contrôle exclusif de droit (55 %), intégration globale. B : contrôle exclusif de fait, intégration globale. C : contrôle conjoint, intégration proportionnelle. D : influence notable démontrée malgré 15 %, mise en équivalence. É : ni contrôle ni influence notable, non consolidée (titres maintenus en titres de participation). F : contrôle exclusif indirect via A (60 %), intégration globale, avec un intérêt de 33 %.",
+          "key_points": [
+            "A, B et F en intégration globale",
+            "C en intégration proportionnelle",
+            "D mise en équivalence",
+            "É hors périmètre",
+            "Le contrôle de F passe par A ; l'intérêt de 33 % ne change pas la méthode"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "La démarche part de la nature du lien (droits de vote, faits, accords) pour en déduire l'inclusion dans le périmètre et la méthode : intégration globale pour le contrôle exclusif, intégration proportionnelle pour le contrôle conjoint (règles françaises), mise en équivalence pour l'influence notable. Le pourcentage d'intérêt n'intervient qu'ensuite, pour le partage : Fer est intégrée globalement avec 33 % d'intérêt.",
+      "source_ref": "C. com. L233-16 et L233-18 ; règl. ANC 2020-01",
+      "verified": true,
+      "estimated_seconds": 780
+    }
+  ]
+}

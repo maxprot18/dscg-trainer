@@ -19,6 +19,99 @@
       "source_ref": "C. com. L233-24 ; règl. (CE) n° 1606/2002 art. 4 et 5 ; règl. ANC 2020-01",
       "verified": true,
       "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-conso-obligation-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "obligation-consolider-referentiel",
+      "difficulty": 1,
+      "tags": [
+        "obligation de consolider",
+        "influence notable",
+        "C. com. L233-16"
+      ],
+      "statement": "La SA Lumen, non cotée, détient 30 % des droits de vote de la société Opale, sur laquelle elle exerce une influence notable. Elle ne détient aucune autre participation. Sous réserve des dispenses prévues par la loi, laquelle de ces propositions est exacte ?",
+      "options": [
+        "Lumen n'est pas concernée par l'obligation de consolider, car ses titres ne sont pas cotés",
+        "Lumen n'est pas concernée, car seules les sociétés qui détiennent au moins une filiale à plus de 50 % doivent consolider",
+        "Lumen n'est concernée que si elle est constituée sous forme de société par actions simplifiée",
+        "Lumen entre dans le champ de l'obligation, car l'influence notable sur une entreprise suffit"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Le Code de commerce impose d'établir et de publier des comptes consolidés aux sociétés commerciales qui contrôlent de manière exclusive ou conjointe une ou plusieurs entreprises, ou qui exercent sur elles une influence notable (C. com. L233-16). La SA Lumen, qui exerce une influence notable sur une entreprise, entre dans ce champ, sous réserve des dispenses de L233-17. Le critère n'est ni la cotation (option 1 : la cotation commande le référentiel IFRS, pas l'obligation de consolider), ni la détention exclusive de filiales à plus de 50 % (option 2 : le contrôle conjoint et l'influence notable suffisent), ni une forme juridique particulière (option 3 : toutes les sociétés commerciales sont visées, la SAS comme la SA).",
+      "source_ref": "C. com. L233-16",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-conso-obligation-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "obligation-consolider-referentiel",
+      "difficulty": 2,
+      "tags": [
+        "dispense",
+        "sous-groupe",
+        "C. com. L233-17"
+      ],
+      "statement": "La SA Vigne, non cotée, détient plusieurs filiales françaises ; l'ensemble qu'elle forme avec elles dépasse largement les seuils de taille. Vigne est détenue à 100 % par la société allemande Bauer GmbH, qui établit et publie des comptes consolidés incluant Vigne et ses filiales. Vigne doit-elle établir des comptes consolidés ?",
+      "options": [
+        "Oui, car l'ensemble Vigne dépasse les seuils de taille pendant deux exercices successifs",
+        "Oui, et obligatoirement en IFRS, parce que sa mère publie des comptes consolidés",
+        "Non, elle peut bénéficier de la dispense prévue pour les sociétés incluses dans les comptes consolidés publiés de leur mère",
+        "Non, mais seulement si sa société mère est une société française"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "La dispense dite « des sous-groupes » joue lorsque la société est elle-même contrôlée par une entreprise qui l'inclut dans ses comptes consolidés publiés, y compris une mère établie dans un autre État de l'Union. Elle ne s'applique pas si la société a des titres admis sur un marché réglementé, ce qui n'est pas le cas ici, et les minoritaires peuvent s'y opposer, ce qui est sans objet puisque Bauer détient 100 % du capital. Le dépassement des seuils (option 1) ne fait obstacle qu'à la dispense de taille, pas à celle des sous-groupes. L'option 2 confond l'obligation de consolider et le référentiel : les IFRS ne s'imposent qu'aux sociétés cotées. L'option 4 est fausse : une mère établie dans un État membre de l'UE peut ouvrir la dispense.",
+      "source_ref": "C. com. L233-17 (dispense des sous-groupes)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-conso-obligation-0004",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "obligation-consolider-referentiel",
+      "difficulty": 1,
+      "tags": [
+        "dispense de taille",
+        "marché réglementé",
+        "C. com. L233-17"
+      ],
+      "statement": "La dispense d'établir des comptes consolidés accordée aux petits groupes (non-dépassement de deux des trois seuils pendant deux exercices successifs) s'applique même si l'une des sociétés de l'ensemble a des titres admis aux négociations sur un marché réglementé.",
+      "answer": false,
+      "justification": "La dispense de taille ne s'applique pas lorsqu'une des sociétés de l'ensemble a des titres admis sur un marché réglementé.",
+      "explanation": "Le Code de commerce dispense de consolider les ensembles qui ne dépassent pas, pendant deux exercices successifs, deux des trois seuils fixés par décret (total de bilan, chiffre d'affaires net, effectif moyen). Cette dispense est écartée dès que l'une des sociétés de l'ensemble a émis des titres admis aux négociations sur un marché réglementé : la protection des investisseurs l'emporte sur la taille du groupe. L'affirmation est donc fausse.",
+      "source_ref": "C. com. L233-17",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-conso-obligation-0005",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "obligation-consolider-referentiel",
+      "difficulty": 1,
+      "tags": [
+        "référentiel",
+        "IFRS",
+        "ANC 2020-01"
+      ],
+      "front": "Quel référentiel une société mère française applique-t-elle à ses comptes consolidés ?",
+      "back": "Titres admis sur un marché réglementé de l'UE : IFRS adoptées par l'UE, obligatoirement.\nAutres sociétés : règlement ANC 2020-01, ou IFRS adoptées sur option (l'option dispense des règles françaises de consolidation).\nLes comptes individuels restent établis selon le PCG dans tous les cas.",
+      "explanation": "Le règlement (CE) n° 1606/2002 impose les IFRS adoptées aux comptes consolidés des sociétés cotées sur un marché réglementé de l'UE (art. 4) et permet aux États de les autoriser pour les autres (art. 5) ; la France a ouvert l'option (C. com. L233-24). Le référentiel du consolidé est indépendant de celui des comptes individuels, qui suivent le PCG.",
+      "source_ref": "Règl. (CE) n° 1606/2002 art. 4 et 5 ; C. com. L233-24 ; règl. ANC 2020-01",
+      "verified": true,
+      "estimated_seconds": 45
     }
   ]
 }

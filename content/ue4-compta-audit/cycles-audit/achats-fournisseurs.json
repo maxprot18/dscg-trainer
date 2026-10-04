@@ -40,6 +40,831 @@
       "source_ref": "NEP 315 (identification et évaluation des risques) ; NEP 330 (procédures en réponse aux risques évalués) ; NEP 505 (confirmations des tiers) ; NEP 265 (communication des faiblesses du contrôle interne) ; comptes 401 et 408",
       "verified": true,
       "estimated_seconds": 480
+    },
+    {
+      "id": "ue4-audit-achats-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "exhaustivité",
+        "bons de réception"
+      ],
+      "statement": "L’auditeur de la société Orion sélectionne des bons de réception de décembre N et vérifie que chacun correspond à une facture comptabilisée en N ou à une facture non parvenue enregistrée au compte 408. Quelle assertion ce test vise-t-il principalement ?",
+      "options": [
+        "Réalité des achats",
+        "Droits et obligations relatifs aux dettes",
+        "Exhaustivité des achats et des dettes fournisseurs",
+        "Présentation des dettes fournisseurs"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Le test part de documents indépendants de la comptabilité (les bons de réception) pour vérifier que chaque réception a bien donné lieu à un enregistrement (facture en 401 ou facture non parvenue en 408) : c’est un test d’exhaustivité des achats et des dettes. La réalité se teste en sens inverse, des écritures vers les pièces. Les droits et obligations portent sur le fait que la dette incombe bien à l’entité, ce que le rapprochement ne démontre pas spécifiquement. La présentation concerne le classement et l’information en annexe.",
+      "source_ref": "NEP 500 (assertions relatives aux flux d’opérations et aux soldes) ; compte 408",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-achats-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-assertions",
+      "difficulty": 2,
+      "tags": [
+        "assertions",
+        "réalité",
+        "sens des tests"
+      ],
+      "statement": "Le CAC de la société Vega craint que des charges de sous-traitance fictives aient été enregistrées pour justifier des sorties de fonds. Quelle procédure répond le mieux à ce risque ?",
+      "options": [
+        "Rapprocher les bons de réception de l’exercice des factures enregistrées",
+        "Demander une confirmation aux sous-traitants dont le solde est nul à la clôture",
+        "Examiner les décaissements de janvier N+1 pour identifier des charges de N non comptabilisées",
+        "Sélectionner des factures de sous-traitance comptabilisées et les rapprocher des contrats, bons de commande et procès-verbaux de prestation"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Pour la réalité, on part de ce qui est enregistré (les factures comptabilisées en sous-traitance) et on cherche la preuve que la prestation a bien été commandée et rendue : contrat ou bon de commande, bon de réception ou procès-verbal de prestation. Partir des bons de réception vers la comptabilité teste l’exhaustivité. Confirmer des fournisseurs à solde nul vise aussi l’exhaustivité des dettes. L’examen des décaissements postérieurs à la clôture sert à rechercher des passifs non comptabilisés, donc encore l’exhaustivité.",
+      "source_ref": "NEP 500 (assertions relatives aux flux d’opérations : réalité)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-audit-achats-0004",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-assertions",
+      "difficulty": 2,
+      "tags": [
+        "assertions",
+        "soldes",
+        "flux"
+      ],
+      "statement": "Parmi les assertions suivantes, lesquelles se rapportent au solde des dettes fournisseurs à la clôture (et non aux flux d’achats de l’exercice) ? Plusieurs réponses possibles.",
+      "options": [
+        "Existence",
+        "Séparation des exercices",
+        "Évaluation et imputation",
+        "Mesure"
+      ],
+      "answer": [
+        0,
+        2
+      ],
+      "multiple": true,
+      "explanation": "Les assertions sur les soldes de fin de période sont : existence, droits et obligations, exhaustivité, évaluation et imputation. Existence et évaluation et imputation sont donc les bonnes réponses. La séparation des exercices et la mesure sont des assertions sur les flux d’opérations (les achats de l’exercice), pas sur le solde des dettes.",
+      "source_ref": "NEP 500 (assertions relatives aux soldes des comptes en fin de période et aux flux d’opérations)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-achats-0005",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "exhaustivité",
+        "passif"
+      ],
+      "statement": "Pour les dettes fournisseurs, l’auditeur oriente en général ses travaux en priorité vers l’exhaustivité plutôt que vers l’existence.",
+      "answer": true,
+      "justification": "Vrai : le risque dominant sur un passif est sa minoration, c’est-à-dire l’omission de dettes.",
+      "explanation": "Une entité qui veut améliorer son résultat ou son endettement apparent a intérêt à omettre des dettes et des charges, rarement à en inventer. C’est pourquoi, pour les dettes fournisseurs, l’auditeur part de sources externes ou indépendantes de la comptabilité (factures et règlements postérieurs, bons de réception, relevés des fournisseurs) pour vérifier que toutes les dettes sont enregistrées. L’existence n’est pas ignorée, mais elle est en général moins exposée.",
+      "source_ref": "NEP 500 (assertions) ; NEP 330 (procédures en réponse aux risques évalués)",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue4-audit-achats-0006",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "flux",
+        "achats"
+      ],
+      "front": "Quelles sont les assertions relatives aux flux d’achats de l’exercice, et quel test type pour chacune ?",
+      "back": "Réalité : des factures comptabilisées vers commande et réception.\nExhaustivité : des bons de réception vers la comptabilité (401 ou 408).\nMesure : rapprochement facture / commande (prix, quantités, remises).\nSéparation des exercices : réceptions de fin N et début N+1 rapprochées des factures.\nClassification : imputation charge ou immobilisation, nature de charge.",
+      "explanation": "NEP 500 : assertions sur les flux d’opérations de l’exercice. Le sens du test dépend de l’assertion : des écritures vers les pièces pour la réalité, des pièces vers les écritures pour l’exhaustivité.",
+      "source_ref": "NEP 500 (assertions relatives aux flux d’opérations)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-achats-0007",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-risques",
+      "difficulty": 1,
+      "tags": [
+        "risques",
+        "minoration",
+        "covenant"
+      ],
+      "statement": "La société Lyra doit respecter un ratio de résultat d’exploitation fixé par son contrat de prêt, et la marge est proche de la limite. Quel risque l’auditeur doit-il considérer en priorité dans le cycle achats-fournisseurs ?",
+      "options": [
+        "L’enregistrement de factures fictives qui surévaluent les dettes fournisseurs",
+        "L’omission de factures de fin d’exercice qui minore les charges et les dettes",
+        "L’enregistrement en double de factures de fournisseurs",
+        "La conversion d’une dette en devises au cours historique"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Une entité incitée à présenter un meilleur résultat a intérêt à réduire ses charges : le moyen le plus simple est d’omettre des factures de fin d’exercice ou de sous-estimer les factures non parvenues, ce qui minore à la fois les charges et les dettes. Des factures fictives ou des doubles enregistrements augmenteraient les charges, à l’opposé de l’incitation. La conversion d’une dette en devises au cours historique est une erreur d’évaluation dont le sens dépend de l’évolution du cours ; elle n’est pas liée à l’incitation décrite.",
+      "source_ref": "NEP 315 (facteurs de risque d’anomalies significatives) ; NEP 240 (incitations à la fraude)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-achats-0008",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "fraude",
+        "fournisseur fictif"
+      ],
+      "statement": "Lors de la revue du fichier fournisseurs de la société Altair, lequel des faits suivants signale le plus fortement un risque de détournement par fournisseur fictif ?",
+      "options": [
+        "Un fournisseur de matières a augmenté ses prix de 4 %, en ligne avec l’indice de prix du secteur",
+        "Un fournisseur historique accorde un escompte de 2 % pour paiement comptant",
+        "Un fournisseur créé en novembre N, sans bon de réception associé, est réglé sur un compte bancaire identique à celui d’un salarié",
+        "Les achats auprès d’un fournisseur américain sont couverts par des achats de dollars à terme"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Un fournisseur récent, sans bon de réception, réglé sur le compte bancaire d’un salarié cumule les signaux d’un faux fournisseur : pas de preuve de livraison et un bénéficiaire interne. Une hausse de prix conforme au marché est explicable. Un escompte pour paiement comptant est une pratique commerciale normale. Des achats en devises couverts par des contrats à terme réduisent le risque de change et ne signalent pas une fraude.",
+      "source_ref": "NEP 240 (facteurs de risque de fraude : détournement d’actifs) ; NEP 315",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-achats-0009",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "procédures analytiques",
+        "marge"
+      ],
+      "statement": "Lors de la planification de l’audit du négociant Deneb, la direction indique que le taux de marge commerciale (exprimé en pourcentage du chiffre d’affaires) est stable à 32 % depuis trois ans. En N, le chiffre d’affaires HT s’élève à 12 500 000 € et le coût d’achat des marchandises vendues comptabilisé (achats ± variation de stock) à 8 020 000 €. De combien le coût d’achat comptabilisé est-il inférieur au coût attendu (en euros, arrondi à l’euro) ?",
+      "expected_value": 480000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Coût d’achat des marchandises vendues attendu = 12 500 000 × (1 − 0,32) = 8 500 000 €. Écart = 8 500 000 − 8 020 000 = 480 000 €. Le coût comptabilisé est inférieur de 480 000 € à l’attente : le taux de marge apparent passe à (12 500 000 − 8 020 000) / 12 500 000 = 35,8 %. Sans explication (baisse des prix d’achat, changement de mix), cet écart oriente vers un risque d’omission d’achats (exhaustivité, séparation des exercices) ou de surévaluation du stock final. Appliquer le taux de marge au coût d’achat au lieu du CA (8 020 000 × 1,32) serait une erreur de méthode.",
+      "source_ref": "NEP 315 (procédures analytiques mises en œuvre pour évaluer le risque) ; NEP 520",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue4-audit-achats-0010",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "fraude",
+        "NEP 240"
+      ],
+      "statement": "La NEP 240 impose au commissaire aux comptes de présumer un risque de fraude dans la comptabilisation des achats, comme pour les produits.",
+      "answer": false,
+      "justification": "Faux : la présomption porte sur les produits ; pour les achats, seul le risque de contournement des contrôles par la direction est toujours retenu.",
+      "explanation": "La NEP 240 pose une présomption réfutable de risque de fraude dans la comptabilisation des produits, pas des achats. Pour les achats, le risque de fraude est évalué au cas par cas (fournisseurs fictifs, changements de RIB, minoration de charges). En revanche, le risque de contournement des contrôles par la direction est toujours retenu, et touche directement les estimations du cycle comme le 408 ou les avoirs à recevoir.",
+      "source_ref": "NEP 240 (présomption de risque de fraude dans la comptabilisation des produits ; contournement des contrôles par la direction)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-audit-achats-0011",
+      "type": "audit_case",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-risques",
+      "difficulty": 3,
+      "tags": [
+        "risques",
+        "fraude",
+        "fichier fournisseurs",
+        "RIB"
+      ],
+      "title": "Nouveaux fournisseurs et changement de RIB chez Rigel",
+      "cycle": "achats-fournisseurs",
+      "situation": "Vous auditez les comptes au 31/12/N de Rigel, PME de services (CA 14 M€). Le service comptable compte deux personnes ; l’une d’elles crée les fournisseurs dans le progiciel, saisit les factures et prépare les fichiers de virement, que le dirigeant valide en bloc sans pièces. Trois fournisseurs de « prestations de conseil » ont été créés en octobre N ; ils ont reçu au total 96 000 € de virements en novembre et décembre N et leur solde est nul à la clôture. Aucun contrat ni bon de réception n’est rattaché à leurs factures, et deux d’entre eux ont la même adresse, celle d’un particulier. En décembre N, le RIB du principal fournisseur informatique a été modifié à la suite d’un simple courriel ; deux virements de 41 000 € au total ont été émis vers le nouveau compte. Le seuil de signification est fixé à 70 000 €.",
+      "assertions": [
+        "Réalité des achats",
+        "Existence des dettes et des paiements"
+      ],
+      "procedures": {
+        "options": [
+          "Obtenir le journal des créations et modifications du fichier fournisseurs, et vérifier le changement de RIB du fournisseur informatique par contre-appel à un interlocuteur et un numéro connus, indépendants du courriel reçu",
+          "Pour les trois nouveaux fournisseurs, vérifier leur existence (registre du commerce, répertoire SIRENE), obtenir les contrats et les preuves des prestations rendues, et identifier les titulaires des comptes bénéficiaires",
+          "Rapprocher les coordonnées bancaires des fournisseurs de celles des salariés et des dirigeants enregistrées dans la paie",
+          "Envoyer une demande de confirmation de solde aux trois nouveaux fournisseurs, à l’adresse figurant dans le fichier maître",
+          "Assister à l’inventaire physique des stocks de fournitures au 31/12/N",
+          "Recalculer le compte 408 à partir des réceptions non facturées de décembre N"
+        ],
+        "answer": [
+          0,
+          1,
+          2
+        ]
+      },
+      "risk": {
+        "options": [
+          "Faible",
+          "Modéré",
+          "Élevé"
+        ],
+        "answer": 2,
+        "rationale": "Le contrôle interne ne prévient pas la fraude : une même personne crée les fournisseurs, saisit les factures et prépare les paiements, et la validation du dirigeant se fait sans pièces. Des faits précis laissent penser à des détournements : 96 000 € versés à des fournisseurs récents sans contrat ni réception, dont deux à l’adresse d’un particulier, et un changement de RIB sur simple courriel suivi de 41 000 € de virements. Le montant en jeu (137 000 €) dépasse le seuil de signification (70 000 €). Le risque d’anomalies significatives résultant de fraudes est élevé."
+      },
+      "conclusion": {
+        "model_answer": "Le risque de détournement d’actifs par fournisseurs fictifs et par modification frauduleuse des coordonnées bancaires est élevé. Nous avons vérifié l’existence des trois nouveaux fournisseurs et la réalité de leurs prestations, rapproché leurs comptes bénéficiaires des coordonnées des salariés et confirmé par contre-appel le changement de RIB du fournisseur informatique. Si ces travaux confirment des paiements sans contrepartie, les charges correspondantes ne sont pas des charges d’exploitation de l’entité : elles sont à traiter comme des détournements (perte ou créance sur l’auteur selon les possibilités de recouvrement) et à apprécier au regard du seuil de signification (NEP 450). Les 41 000 € virés sur le compte frauduleux n’éteignent pas la dette envers le fournisseur informatique, qui n’a pas été payé : cette dette doit être rétablie au passif. Les faits sont communiqués à la direction et aux organes de gouvernance ; la faiblesse de séparation des tâches est communiquée selon la NEP 265. Si les faits sont avérés et constitutifs d’un délit (abus de confiance, escroquerie), le commissaire aux comptes les révèle au procureur de la République, obligation légale prévue par le Code de commerce.",
+        "key_points": [
+          "Le risque retenu est élevé et justifié par les faits : cumul de fonctions, fournisseurs sans réception, adresse commune, RIB modifié sur courriel",
+          "Les procédures retenues reposent sur des éléments indépendants du fichier fournisseurs manipulé",
+          "Les montants en cause (137 000 €) sont rapprochés du seuil de signification ; la dette envers le vrai fournisseur informatique (41 000 €) subsiste",
+          "Communication à la gouvernance, faiblesses du contrôle interne (NEP 265) et appréciation de la révélation des faits délictueux"
+        ]
+      },
+      "explanation": "Le cas cumule une faiblesse de séparation des tâches (création des fournisseurs, saisie des factures et préparation des virements par la même personne) et des signaux concrets de détournement : fournisseurs récents sans réception, domiciliés chez un particulier, et changement de RIB demandé par simple courriel. Les procédures pertinentes vérifient l’existence réelle des fournisseurs et des prestations, et l’authenticité des changements de coordonnées bancaires par une source indépendante. Une confirmation envoyée à l’adresse du fichier maître n’est pas fiable si ce fichier est précisément manipulé ; l’inventaire des stocks et le recalcul du 408 ne répondent pas au risque de détournement identifié.",
+      "source_ref": "NEP 240 (fraude) ; NEP 315 ; NEP 330 ; NEP 450 ; NEP 265 (communication des faiblesses du contrôle interne) ; C. com., révélation des faits délictueux au procureur de la République",
+      "verified": true,
+      "estimated_seconds": 540
+    },
+    {
+      "id": "ue4-audit-achats-0012",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-controles-cles",
+      "difficulty": 1,
+      "tags": [
+        "contrôles clés",
+        "rapprochement à trois",
+        "bon à payer"
+      ],
+      "statement": "Quel contrôle empêche le plus directement le paiement d’une facture portant sur des marchandises jamais reçues ?",
+      "options": [
+        "Le lettrage mensuel des comptes fournisseurs",
+        "Le rapprochement de chaque facture avec le bon de commande et le bon de réception avant l’émission du bon à payer",
+        "Le contrôle arithmétique des factures (quantités × prix, TVA)",
+        "Le classement chronologique des factures reçues"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le rapprochement de la facture avec la commande et le bon de réception, préalable au bon à payer, empêche de régler une facture portant sur des biens jamais reçus : c’est un contrôle préventif qui couvre la réalité. Le lettrage mensuel intervient après le paiement et ne vérifie pas la réception. Le contrôle arithmétique vérifie les calculs de la facture, pas la livraison. Le classement chronologique est une mesure d’organisation sans effet sur ce risque.",
+      "source_ref": "NEP 315 (compréhension du contrôle interne)",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-audit-achats-0013",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "contrôles clés",
+        "séparation des tâches",
+        "fichier fournisseurs"
+      ],
+      "statement": "Parmi les cumuls de fonctions suivants, lequel expose le plus directement l’entité à un détournement de fonds ?",
+      "options": [
+        "Passer les commandes et réceptionner les marchandises",
+        "Saisir les factures et lettrer les comptes fournisseurs",
+        "Établir le budget des achats et analyser les écarts",
+        "Modifier les coordonnées bancaires des fournisseurs et préparer les fichiers de virement"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Celui qui peut modifier les coordonnées bancaires d’un fournisseur et préparer les virements peut rediriger un paiement vers son propre compte : c’est le cumul le plus directement exposé au détournement de fonds. Commander et réceptionner facilite des achats injustifiés, mais les fonds vont alors à un vrai fournisseur (sauf collusion). Saisir les factures et lettrer est un cumul courant, à risque d’erreur plus que de vol. Budgéter et analyser les écarts relève du pilotage.",
+      "source_ref": "NEP 315 (compréhension du contrôle interne) ; NEP 240 (détournement d’actifs)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-achats-0014",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-controles-cles",
+      "difficulty": 1,
+      "tags": [
+        "contrôles clés",
+        "double paiement"
+      ],
+      "statement": "L’apposition de la mention « payé » sur les factures réglées, ou leur blocage dans le progiciel après paiement, est un contrôle destiné à éviter les doubles paiements.",
+      "answer": true,
+      "justification": "Vrai : une facture marquée comme réglée ne peut plus être présentée au paiement une seconde fois.",
+      "explanation": "Annuler la facture après règlement (mention « payé », tampon ou statut bloquant dans le progiciel) empêche qu’elle soit présentée une seconde fois au paiement. Le contrôle couvre la réalité des décaissements. En cas de défaillance, un double paiement apparaît souvent sous la forme d’un solde fournisseur débiteur, à analyser.",
+      "source_ref": "NEP 315 (compréhension du contrôle interne : activités de contrôle)",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue4-audit-achats-0015",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "contrôles clés",
+        "tests de procédures",
+        "taux de déviation"
+      ],
+      "statement": "Pour tester le rapprochement à trois (commande / réception / facture) de la société Hydra, l’auditeur tire au hasard 60 factures parmi les 2 400 factures d’achat de l’exercice. Pour 4 d’entre elles, le bon à payer a été émis sans bon de réception. Le taux de déviation tolérable a été fixé à 5 %. Calculez le taux de déviation observé (en %, arrondi au dixième).",
+      "expected_value": 6.7,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "decimals": 1,
+      "explanation": "Taux de déviation observé = 4 / 60 = 6,67 %, soit 6,7 % arrondi. Il dépasse le taux de déviation tolérable de 5 % : l’auditeur ne peut pas s’appuyer sur le rapprochement à trois pour réduire ses procédures substantives sur la réalité et la mesure des achats. Il étend ses tests de détail et communique la faiblesse à la direction (NEP 265). Diviser par le nombre de factures de la population (4 / 2 400) n’a pas de sens : le taux se mesure sur l’échantillon testé.",
+      "source_ref": "NEP 330 (tests de procédures) ; NEP 530 (sondages)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue4-audit-achats-0016",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "contrôles clés",
+        "fichier fournisseurs",
+        "RIB"
+      ],
+      "front": "Quels contrôles clés protègent le fichier fournisseurs (création et changement de RIB) ?",
+      "back": "Création et modification réservées à une personne qui ne saisit ni ne paie.\nPièces justificatives (Kbis, RIB original) exigées et validation par un responsable.\nChangement de RIB confirmé par contre-appel au numéro habituel du fournisseur.\nRevue périodique du journal des modifications et des fournisseurs inactifs ou en double.",
+      "explanation": "La fraude au changement de RIB (faux courriel d’un fournisseur réel) est fréquente. Le contre-appel doit utiliser des coordonnées déjà connues, jamais celles fournies dans la demande.",
+      "source_ref": "NEP 315 (compréhension du contrôle interne) ; NEP 240",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-achats-0017",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "confirmation",
+        "écart"
+      ],
+      "statement": "Le fournisseur Antares répond à la demande de confirmation de l’auditeur de la société Castor en indiquant un solde de 52 000 € au 31/12/N, alors que le compte fournisseur chez Castor présente un solde de 40 000 €. L’écart correspond à une facture de 12 000 € TTC datée du 29/12/N, relative à des marchandises reçues par Castor le 28/12/N selon le bon de réception, et non comptabilisée. Quelle conclusion l’auditeur en tire-t-il ?",
+      "options": [
+        "Aucune anomalie : la facture n’était pas parvenue à Castor à la clôture",
+        "La dette de 12 000 € TTC doit être enregistrée en N, en facture non parvenue (408) si la facture n’est toujours pas reçue",
+        "Il faut demander à Antares de rectifier son relevé pour le ramener à 40 000 €",
+        "Il faut constater une charge constatée d’avance de 10 000 € HT"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La marchandise a été reçue le 28/12/N : la dette existe à la clôture, que la facture soit parvenue ou non. L’écart révèle une dette omise de 12 000 € à enregistrer en facture non parvenue (408), avec la charge correspondante. Ce n’est pas un simple décalage sans incidence : un règlement en transit justifierait un écart, pas une livraison non comptabilisée. Demander au fournisseur de corriger son relevé n’a pas de sens, son solde étant exact. Une charge constatée d’avance réduirait les charges, à l’inverse de ce qui est requis.",
+      "source_ref": "NEP 505 (confirmations externes : exploitation des réponses) ; NEP 330 ; compte 408",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-audit-achats-0018",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-procedures-substantives",
+      "difficulty": 3,
+      "tags": [
+        "procédures substantives",
+        "séparation des exercices",
+        "stock"
+      ],
+      "statement": "Lors du test de séparation des exercices chez la société Pollux, l’auditeur constate que la facture du bon de réception n° 4 521, daté du 02/01/N+1, a été comptabilisée en achats de N (dette en 401), alors que la marchandise a été, à juste titre, exclue de l’inventaire physique au 31/12/N. Quelle est l’incidence sur les comptes de N ?",
+      "options": [
+        "Aucune incidence sur le résultat, puisque la marchandise a été exclue du stock",
+        "Le résultat de N est surévalué et les dettes fournisseurs sont sous-évaluées",
+        "Seule la présentation du bilan est affectée, sans incidence sur le résultat",
+        "Le résultat de N est sous-évalué et les dettes fournisseurs sont surévaluées : erreur de séparation des exercices"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "La facture a été enregistrée en achats N alors que la réception date de N+1 : la charge N et la dette au 31/12/N sont surévaluées. La marchandise, absente à la clôture, a été correctement exclue de l’inventaire, donc le stock final ne compense pas l’achat : le résultat N est sous-évalué du montant HT de l’achat. L’anomalie relève de la séparation des exercices (et de l’existence de la dette). Prétendre à une absence d’incidence oublie que l’achat a été enregistré ; un résultat surévalué correspondrait au cas inverse (bien inventorié sans facture enregistrée).",
+      "source_ref": "NEP 500 (séparation des exercices, existence) ; NEP 330 ; PCG compte 603 (variation des stocks)",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue4-audit-achats-0019",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "sondage",
+        "extrapolation"
+      ],
+      "statement": "L’auditeur de la société Ara teste par sondage les charges externes de l’exercice (population de 2 400 000 €). L’échantillon, d’une valeur de 600 000 €, contient des charges de N+1 enregistrées à tort en N pour un total de 9 000 €. Selon la méthode du ratio appliquée à la valeur totale de la population, calculez l’anomalie extrapolée (en euros, arrondi à l’euro). L’anomalie tolérable est de 30 000 €.",
+      "expected_value": 36000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Taux d’anomalie de l’échantillon = 9 000 / 600 000 = 1,5 %. Anomalie extrapolée = 1,5 % × 2 400 000 = 36 000 €. Elle dépasse l’anomalie tolérable de 30 000 € : l’auditeur ne peut pas conclure que la population est exempte d’anomalie significative ; il demande à la direction d’analyser et de corriger la population, ou étend ses travaux. Retenir les seuls 9 000 € constatés, ou extrapoler à la population non testée (1 800 000 € × 1,5 % = 27 000 €) en oubliant les anomalies de l’échantillon, sous-estimerait l’anomalie totale.",
+      "source_ref": "NEP 530 (sondages : extrapolation des anomalies) ; NEP 450",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue4-audit-achats-0020",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "factures non parvenues",
+        "ajustement proposé"
+      ],
+      "statement": "Lors de la revue des réceptions de fin d’exercice de la société Lynx, l’auditeur relève des marchandises reçues le 27/12/N pour 18 500 € HT (TVA 20 %), comptées dans l’inventaire physique au 31/12/N. La facture, reçue le 09/01/N+1, n’a donné lieu à aucune écriture en N. Passez l’écriture d’ajustement proposée par l’auditeur au 31/12/N (utilisez les comptes 607, 44586 et 408).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "607",
+          "label": "Achats de marchandises",
+          "debit": 18500,
+          "credit": 0
+        },
+        {
+          "account": "44586",
+          "label": "Taxes sur le chiffre d’affaires sur factures non parvenues",
+          "debit": 3700,
+          "credit": 0
+        },
+        {
+          "account": "408",
+          "label": "Fournisseurs – factures non parvenues",
+          "debit": 0,
+          "credit": 22200
+        }
+      ],
+      "explanation": "La marchandise a été reçue en N et figure dans le stock final : l’achat doit être rattaché à N. Faute de facture enregistrée, on constate une facture non parvenue : charge HT 18 500 € au compte 607, TVA déductible en attente 18 500 × 20 % = 3 700 € au compte 44586, dette TTC 22 200 € au compte 408. Sans cette écriture, le résultat N était surévalué de 18 500 € (stock compté mais achat non enregistré). L’écriture sera contre-passée au début de N+1, à la réception de la facture.",
+      "source_ref": "PCG comptes 607, 44586 et 408 ; NEP 330 (séparation des exercices)",
+      "verified": true,
+      "estimated_seconds": 200
+    },
+    {
+      "id": "ue4-audit-achats-0021",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-procedures-substantives",
+      "difficulty": 3,
+      "tags": [
+        "procédures substantives",
+        "passifs non comptabilisés",
+        "séparation des exercices",
+        "seuil de signification"
+      ],
+      "title": "Recherche de passifs non comptabilisés chez Sirius",
+      "context": "Vous auditez les comptes au 31/12/N de la SAS Sirius, distributeur de matériel électrique (TVA 20 %).\nSeuil de signification : 40 000 € ; seuil des anomalies manifestement insignifiantes : 2 000 €.\nVous examinez les factures reçues et les décaissements de janvier et février N+1. Aucune des pièces ci-dessous n’a donné lieu à une écriture en N.\n- Pièce 1 : facture d’électricité de 4 800 € TTC reçue le 15/01/N+1, pour la consommation de décembre N.\n- Pièce 2 : facture de marchandises de 21 600 € TTC reçue le 08/01/N+1 ; le bon de réception est daté du 05/01/N+1.\n- Pièce 3 : facture d’honoraires d’avocat de 18 000 € TTC reçue le 20/01/N+1, pour des travaux réalisés en novembre et décembre N.\n- Pièce 4 : bon de commande signé le 20/12/N pour un chariot élévateur de 60 000 € HT, livrable en février N+1 ; acompte non versé.\n- Pièce 5 : facture de marchandises de 36 000 € TTC reçue le 06/01/N+1 ; le bon de réception est daté du 30/12/N et les marchandises ont été comptées dans l’inventaire physique au 31/12/N.",
+      "sub_questions": [
+        {
+          "id": "q1-impact",
+          "kind": "numeric",
+          "prompt": "Calculez le total des charges HT de N non comptabilisées, c’est-à-dire le montant dont le résultat avant impôt de N est surévalué du fait de ces pièces (en euros).",
+          "expected_value": 49000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 3,
+          "explanation": "Pièce 1 : consommation de N, 4 800 / 1,20 = 4 000 € HT. Pièce 2 : réception en N+1, charge de N+1, aucune incidence. Pièce 3 : service rendu en N, 18 000 / 1,20 = 15 000 € HT. Pièce 4 : commande non exécutée, pas de charge. Pièce 5 : réception en N, marchandises comptées dans le stock final sans achat enregistré : 36 000 / 1,20 = 30 000 € HT. Total : 4 000 + 15 000 + 30 000 = 49 000 €. Inclure la pièce 2 (+18 000) ou raisonner en TTC (58 800) serait une erreur."
+        },
+        {
+          "id": "q2-ecriture",
+          "kind": "journal_entry",
+          "prompt": "Passez l’écriture d’ajustement relative à la pièce 5 au 31/12/N (utilisez les comptes 607, 44586 et 408).",
+          "date": "31/12/N",
+          "entries": [
+            {
+              "account": "607",
+              "label": "Achats de marchandises",
+              "debit": 30000,
+              "credit": 0
+            },
+            {
+              "account": "44586",
+              "label": "Taxes sur le chiffre d’affaires sur factures non parvenues",
+              "debit": 6000,
+              "credit": 0
+            },
+            {
+              "account": "408",
+              "label": "Fournisseurs – factures non parvenues",
+              "debit": 0,
+              "credit": 36000
+            }
+          ],
+          "points": 3,
+          "explanation": "La facture n’étant pas enregistrée à la clôture, on constate une facture non parvenue : 30 000 € HT en achats, 6 000 € de TVA en attente de déduction (44586) et 36 000 € TTC au 408. Le stock final, déjà compté, n’est pas modifié."
+        },
+        {
+          "id": "q3-commande",
+          "kind": "mcq",
+          "prompt": "Quel traitement réserver à la pièce 4 dans les comptes de N ?",
+          "options": [
+            "Enregistrer une facture non parvenue de 60 000 € HT au compte 404",
+            "Ne rien enregistrer au bilan ; mentionner l’engagement en annexe s’il est significatif",
+            "Constituer une provision pour charges de 60 000 €",
+            "Enregistrer l’immobilisation à l’actif avec une dette envers le fournisseur"
+          ],
+          "answer": [
+            1
+          ],
+          "points": 2,
+          "explanation": "À la clôture, le chariot n’est pas livré : aucune obligation de payer n’est née, il n’y a ni actif ni dette. La commande ferme est un engagement donné, à mentionner en annexe s’il est significatif. Une facture non parvenue suppose une livraison ; une provision suppose une sortie de ressources sans contrepartie au moins équivalente, ce qui n’est pas le cas d’un achat d’immobilisation."
+        },
+        {
+          "id": "q4-conclusion",
+          "kind": "open",
+          "prompt": "Comparez les anomalies relevées aux seuils et indiquez la démarche de l’auditeur.",
+          "model_answer": "Les charges omises (4 000 + 15 000 + 30 000 = 49 000 € HT) surévaluent le résultat avant impôt de N et minorent les dettes fournisseurs de 58 800 € TTC. Le montant dépasse le seuil des anomalies manifestement insignifiantes (2 000 €) et le seuil de signification (40 000 €). L’auditeur communique ces anomalies à la direction et lui demande d’enregistrer les factures non parvenues correspondantes. Si la direction refuse, l’anomalie non corrigée, significative, conduit à une opinion modifiée (certification avec réserve, voire refus si ses effets étaient diffus). Compte tenu du nombre d’omissions, l’auditeur s’interroge aussi sur le processus de suivi des réceptions et des charges récurrentes, et étend si besoin ses recherches.",
+          "key_points": [
+            "Total des anomalies : 49 000 € HT sur le résultat (58 800 € TTC de dettes omises)",
+            "Comparaison aux seuils : supérieur à 2 000 € et à 40 000 €",
+            "Demande de correction à la direction",
+            "À défaut de correction, opinion modifiée",
+            "Pièces 2 et 4 sans incidence sur N"
+          ],
+          "points": 4
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Le cas met en œuvre la recherche de passifs non comptabilisés : chaque pièce postérieure est rattachée à l’exercice selon la date de réception ou du service rendu, et non selon la date de la facture ou du paiement. Une commande non livrée n’est pas une dette. Le traitement du stock conditionne l’incidence d’un achat omis sur le résultat. Les anomalies sont enfin cumulées et comparées au seuil de signification (NEP 450).",
+      "source_ref": "NEP 330 ; NEP 450 (évaluation des anomalies relevées) ; PCG comptes 408, 44586, 607 ; PCG, engagements hors bilan (annexe)",
+      "verified": true,
+      "estimated_seconds": 900
+    },
+    {
+      "id": "ue4-audit-achats-0022",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-pieges",
+      "difficulty": 1,
+      "tags": [
+        "pièges",
+        "soldes débiteurs",
+        "présentation"
+      ],
+      "statement": "La balance fournisseurs de la société Talos fait apparaître un solde débiteur de 15 000 € correspondant à un acompte versé sur une commande non encore livrée au 31/12/N. Comment ce solde doit-il être présenté ?",
+      "options": [
+        "Compensé avec les soldes créditeurs des autres fournisseurs",
+        "Présenté à l’actif en avances et acomptes versés sur commandes (4091)",
+        "Maintenu au passif en dettes fournisseurs, pour un montant négatif",
+        "Passé en charges de l’exercice"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Un acompte versé est une créance sur le fournisseur : il se présente à l’actif (compte 4091), sans compensation avec les dettes envers les autres fournisseurs, conformément au principe de non-compensation. Le compenser minorerait à la fois l’actif et le passif. Le laisser au passif en négatif revient au même. Le passer en charge serait faux tant que la livraison n’est pas intervenue.",
+      "source_ref": "PCG compte 4091 (fournisseurs – avances et acomptes versés sur commandes) ; C. com. art. L. 123-19 (non-compensation)",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-audit-achats-0023",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-pieges",
+      "difficulty": 2,
+      "tags": [
+        "pièges",
+        "charges récurrentes",
+        "factures non parvenues"
+      ],
+      "statement": "Lors de la revue analytique mensuelle des charges de la société Atlas, l’auditeur constate que le compte d’électricité ne comprend que 11 factures mensuelles pour N, la dernière portant sur novembre. Le contrat de fourniture n’a pas changé. Quelle conclusion est la plus pertinente ?",
+      "options": [
+        "Aucune incidence : la facture de décembre, payée en janvier N+1, relève de N+1",
+        "Il faut constater une charge constatée d’avance pour décembre",
+        "Aucune incidence : une charge récurrente se compense d’un exercice à l’autre",
+        "La consommation de décembre N est probablement omise : une facture non parvenue doit être enregistrée en N"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Onze factures pour douze mois de consommation signalent une facture manquante, très probablement celle de décembre N, facturée en N+1. La consommation de décembre est une charge de N : il faut une facture non parvenue. Rattacher la facture à N+1 parce qu’elle est payée en janvier confond la date de paiement et la date du service rendu. Une charge constatée d’avance concerne une charge comptabilisée en N pour un service de N+1, l’inverse de la situation. Le caractère récurrent de la charge n’exonère pas de la séparation des exercices.",
+      "source_ref": "NEP 520 (procédures analytiques) ; PCG compte 408 ; NEP 500 (séparation des exercices)",
+      "verified": true,
+      "estimated_seconds": 70
+    },
+    {
+      "id": "ue4-audit-achats-0024",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-pieges",
+      "difficulty": 1,
+      "tags": [
+        "pièges",
+        "commandes",
+        "engagements"
+      ],
+      "statement": "Une commande ferme passée auprès d’un fournisseur avant la clôture, mais non livrée au 31/12/N, doit être enregistrée au compte 408 « Fournisseurs – factures non parvenues ».",
+      "answer": false,
+      "justification": "Faux : sans livraison ni service rendu, aucune dette n’est née ; il s’agit d’un engagement, mentionné en annexe s’il est significatif.",
+      "explanation": "Le compte 408 enregistre des dettes nées de livraisons ou de services rendus dont la facture n’est pas encore reçue. Une commande non exécutée à la clôture ne crée pas encore d’obligation de payer : il n’y a ni charge ni dette. L’engagement est, s’il est significatif, mentionné en annexe. Enregistrer la commande en 408 surévaluerait les charges ou l’actif et les dettes.",
+      "source_ref": "PCG, définition du passif et engagements hors bilan (règl. ANC 2014-03) ; compte 408",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue4-audit-achats-0025",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-pieges",
+      "difficulty": 3,
+      "tags": [
+        "pièges",
+        "délai fournisseurs",
+        "DPO",
+        "procédures analytiques"
+      ],
+      "statement": "Au 31/12/N, la société Mira présente les soldes suivants : fournisseurs (401) 1 080 000 € ; fournisseurs d’immobilisations (404) 325 000 € ; fournisseurs – factures non parvenues (408) 180 000 € TTC. Les achats de biens et services de l’exercice, tous soumis à la TVA au taux de 20 %, s’élèvent à 7 000 000 € HT. Calculez le délai moyen de règlement des fournisseurs d’exploitation en rapportant des grandeurs homogènes (en jours, année de 360 jours, arrondi à l’unité).",
+      "expected_value": 54,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "jours",
+      "decimals": 0,
+      "explanation": "Grandeurs homogènes : dettes fournisseurs d’exploitation TTC = 401 + 408 = 1 080 000 + 180 000 = 1 260 000 € (le 404, lié aux immobilisations, est exclu car les achats d’immobilisations ne figurent pas au dénominateur). Achats TTC = 7 000 000 × 1,20 = 8 400 000 €. DPO = 1 260 000 / 8 400 000 × 360 = 54 jours. Erreurs classiques : achats HT au dénominateur (64,8 jours), oubli du 408 (46,3 jours), inclusion du 404 (67,9 jours). Un délai moyen de 54 jours est compatible avec le plafond légal de 60 jours à compter de l’émission de la facture, ce qui n’exclut pas des dépassements individuels.",
+      "source_ref": "NEP 520 (procédures analytiques) ; C. com. art. L. 441-10 (délais de paiement) ; PCG comptes 401, 404, 408",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue4-audit-achats-0026",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-pieges",
+      "difficulty": 2,
+      "tags": [
+        "pièges",
+        "avoirs à recevoir",
+        "remises de fin d’année",
+        "ajustement proposé"
+      ],
+      "statement": "Le contrat liant la société Kappa à son principal fournisseur de marchandises prévoit une ristourne de fin d’année de 2 % des achats HT de l’année civile si ces achats atteignent 2 000 000 € HT. Au 31/12/N, les achats HT auprès de ce fournisseur s’élèvent à 2 150 000 € (TVA 20 %). L’avoir sera émis en février N+1 et rien n’a été comptabilisé. Passez l’écriture d’ajustement proposée par l’auditeur au 31/12/N (utilisez les comptes 4098, 6097 et 44586).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "4098",
+          "label": "Rabais, remises, ristournes à obtenir et autres avoirs non encore reçus",
+          "debit": 51600,
+          "credit": 0
+        },
+        {
+          "account": "6097",
+          "label": "Rabais, remises et ristournes obtenus sur achats de marchandises",
+          "debit": 0,
+          "credit": 43000
+        },
+        {
+          "account": "44586",
+          "label": "Taxes sur le chiffre d’affaires sur factures non parvenues",
+          "debit": 0,
+          "credit": 8600
+        }
+      ],
+      "explanation": "Le palier de 2 000 000 € est franchi à la clôture : la ristourne est acquise en N, même si l’avoir n’est reçu qu’en N+1. Montant HT = 2 150 000 × 2 % = 43 000 € ; TVA à reverser sur la déduction initiale = 43 000 × 20 % = 8 600 € ; avoir TTC = 51 600 €. On débite 4098 (TTC), on crédite 6097 (réduction des achats de marchandises, HT) et 44586 (TVA). L’omission sous-évaluait le résultat de 43 000 €. Appliquer le taux au montant TTC des achats serait une erreur.",
+      "source_ref": "PCG comptes 4098 (rabais, remises, ristournes à obtenir et autres avoirs non encore reçus), 6097 et 44586 ; NEP 330",
+      "verified": true,
+      "estimated_seconds": 200
+    },
+    {
+      "id": "ue4-audit-achats-0027",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "achats-fournisseurs-pieges",
+      "difficulty": 3,
+      "tags": [
+        "pièges",
+        "408 surévalué",
+        "classification",
+        "double paiement",
+        "seuil de signification"
+      ],
+      "title": "Charges surévaluées chez Delta",
+      "context": "Vous auditez les comptes au 31/12/N de la SA Delta, fabricant de mobilier (TVA 20 %). Le résultat de N est très supérieur au budget et le dirigeant souhaite « lisser » les résultats d’une année sur l’autre.\nSeuil de signification : 50 000 € ; seuil des anomalies manifestement insignifiantes : 2 500 €.\nVos travaux font apparaître les points suivants :\n- Point A : le compte 408 comprend 25 000 € HT de factures non parvenues datant de N−2, relatives à trois fournisseurs qui confirment n’avoir plus aucune facture à émettre.\n- Point B : une machine de découpe de 42 000 € HT, mise en service le 01/10/N, a été enregistrée en charges d’entretien (6155). Sa durée d’utilisation est estimée à 5 ans (amortissement linéaire, prorata temporis).\n- Point C : une facture de 9 600 € TTC a été payée deux fois en novembre N ; les deux règlements ont été correctement débités au compte du fournisseur, qui présente un solde débiteur de 9 600 € à la clôture.",
+      "sub_questions": [
+        {
+          "id": "q1-impact",
+          "kind": "numeric",
+          "prompt": "Calculez l’incidence nette des points A et B sur le résultat avant impôt de N, c’est-à-dire le montant dont il est sous-évalué (en euros).",
+          "expected_value": 64900,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 4,
+          "explanation": "Point A : les factures non parvenues sans obligation sont reprises : +25 000 €. Point B : la machine est à immobiliser (+42 000 € de charges annulées) et à amortir sur 3 mois : 42 000 / 5 × 3/12 = 2 100 €. Incidence nette B = 42 000 − 2 100 = 39 900 €. Total : 25 000 + 39 900 = 64 900 €. Oublier l’amortissement (67 000 €) ou amortir sur une année entière (58 600 €) serait une erreur."
+        },
+        {
+          "id": "q2-double-paiement",
+          "kind": "mcq",
+          "prompt": "Quel est le traitement du point C dans les comptes de N ?",
+          "options": [
+            "Constater une charge exceptionnelle de 9 600 €",
+            "Compenser le solde débiteur avec les autres dettes fournisseurs",
+            "Présenter les 9 600 € en créance à l’actif (fournisseur débiteur) et en demander le remboursement, sans incidence sur le résultat si le recouvrement est assuré",
+            "Annuler le second règlement en créditant le compte de banque"
+          ],
+          "answer": [
+            2
+          ],
+          "points": 2,
+          "explanation": "Le trop-versé est une créance sur le fournisseur : il se présente à l’actif sans compensation, et le résultat n’est pas affecté tant que le remboursement est assuré. Une charge ne se justifierait qu’en cas de perte probable (dépréciation). Le règlement a bien eu lieu : on ne peut pas l’annuler en banque."
+        },
+        {
+          "id": "q3-lissage",
+          "kind": "true_false",
+          "prompt": "Dans le contexte de Delta, l’auditeur doit considérer un risque de surévaluation des charges et des passifs, et pas seulement un risque de minoration.",
+          "answer": true,
+          "points": 2,
+          "explanation": "Vrai : l’objectif de lissage d’un résultat supérieur au budget incite à gonfler les charges (408 conservé, immobilisation passée en charges) ; les points A et B l’illustrent."
+        },
+        {
+          "id": "q4-conclusion",
+          "kind": "open",
+          "prompt": "Comparez les anomalies relevées aux seuils et indiquez la démarche de l’auditeur.",
+          "model_answer": "Les points A et B sous-évaluent le résultat avant impôt de 64 900 € (reprise du 408 sans objet : 25 000 € ; immobilisation passée en charges, nette de 2 100 € d’amortissement : 39 900 €). Le point C est un reclassement de 9 600 € à l’actif, sans incidence sur le résultat. Le cumul dépasse le seuil des anomalies manifestement insignifiantes (2 500 €) et le seuil de signification (50 000 €). L’auditeur demande à la direction de corriger ces anomalies. À défaut, l’anomalie significative non corrigée conduit à une opinion modifiée (certification avec réserve). Compte tenu de la volonté de lissage, il étend ses travaux sur les estimations et les charges de fin d’exercice (contournement des contrôles par la direction, NEP 240).",
+          "key_points": [
+            "Total A + B : 64 900 € de sous-évaluation du résultat",
+            "Point C : reclassement à l’actif sans incidence sur le résultat",
+            "Comparaison aux seuils : supérieur à 2 500 € et à 50 000 €",
+            "Demande de correction, opinion modifiée à défaut",
+            "Extension des travaux liée à l’incitation au lissage"
+          ],
+          "points": 4
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Le cas rassemble trois pièges du cycle, cette fois dans le sens d’une sous-évaluation du résultat : factures non parvenues anciennes sans obligation, immobilisation passée en charges, double paiement. Les anomalies sont chiffrées, cumulées et comparées au seuil de signification, en gardant à l’esprit qu’une incitation au lissage rend la surévaluation des charges aussi pertinente que leur minoration.",
+      "source_ref": "NEP 450 (évaluation des anomalies relevées) ; NEP 240 ; PCG comptes 408, 2154, 6155, 2815 ; PCG, règles relatives aux immobilisations corporelles et à leur amortissement (règl. ANC 2014-03)",
+      "verified": true,
+      "estimated_seconds": 900
     }
   ]
 }

@@ -1,0 +1,117 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-ifrs-ias1-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-1-presentation-etats-financiers",
+      "difficulty": 3,
+      "tags": [
+        "courant / non courant",
+        "covenant",
+        "événement postérieur"
+      ],
+      "source_ref": "IAS 1 §69, §74 et §76 (règlement UE 2023/1803) ; IAS 10 §21-22 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 75,
+      "explanation": "Le classement d'un passif dépend des droits existant à la date de clôture. Au 31/12/N, le bris de covenant rend l'emprunt exigible à vue : l'entité n'a pas le droit de différer son règlement d'au moins 12 mois, l'emprunt est donc courant en totalité (IAS 1 §69 et §74). La renonciation obtenue le 15/02/N+1 est un événement postérieur à la clôture qui ne modifie pas ce classement ; elle est seulement mentionnée en annexe (IAS 1 §76, IAS 10). L'échéance contractuelle initiale ne compte plus dès lors que la dette est exigible à la clôture. Il n'existe pas de ventilation en fonction de la durée de la renonciation : la renonciation est postérieure à la clôture et ne peut donc pas fonder un classement non courant, même partiel.",
+      "statement": "La société Varonne (IFRS, clôture au 31/12/N) a un emprunt bancaire de 5 M€ remboursable in fine en N+5. Au 31/12/N, elle ne respecte pas un ratio financier prévu au contrat (covenant), ce qui rend l'emprunt exigible à vue à cette date. Le 15/02/N+1, avant l'arrêté des comptes, la banque renonce par écrit à exiger le remboursement anticipé pour une durée de 18 mois. Comment l'emprunt est-il classé dans l'état de la situation financière au 31/12/N ?",
+      "options": [
+        "En passif non courant, car la renonciation de la banque a été obtenue avant l'arrêté des comptes",
+        "En passif non courant, car l'échéance contractuelle initiale se situe en N+5",
+        "En passif courant pour la totalité, car l'entité n'avait pas, à la clôture, le droit de différer le règlement d'au moins 12 mois",
+        "En passif courant pour la seule fraction correspondant aux 18 mois couverts par la renonciation"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ue4-ifrs-ias1-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-1-presentation-etats-financiers",
+      "difficulty": 2,
+      "tags": [
+        "autres éléments du résultat global",
+        "recyclage"
+      ],
+      "source_ref": "IAS 1 §7 et §82A (règlement UE 2023/1803) ; IAS 21 §48 ; IAS 16 §41 ; IAS 19 §122 ; IFRS 9 B5.7.1 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "explanation": "Les écarts de conversion d'une activité à l'étranger sont accumulés en capitaux propres puis reclassés en résultat lors de la sortie de cette activité (IAS 21 §48) : ce sont des OCI recyclables, présentés dans un groupe distinct (IAS 1 §82A). Les trois autres ne sont jamais recyclés : l'écart de réévaluation IAS 16 peut seulement être viré en résultats non distribués (réserves) lors de la sortie de l'actif ou au fil de son utilisation (IAS 16 §41) ; les réévaluations du passif net au titre des régimes à prestations définies restent en capitaux propres (IAS 19 §122) ; pour les instruments de capitaux propres désignés à la juste valeur par OCI, les montants ne sont jamais transférés en résultat, même lors de la cession (IFRS 9 §5.7.5 et B5.7.1).",
+      "statement": "Parmi les autres éléments du résultat global (OCI) suivants, lequel sera ultérieurement reclassé (recyclé) en résultat net ?",
+      "options": [
+        "L'écart de conversion d'une filiale étrangère consolidée, lors de la cession de cette filiale",
+        "L'écart de réévaluation d'un immeuble évalué selon le modèle de la réévaluation d'IAS 16",
+        "Les écarts actuariels sur un régime de retraite à prestations définies",
+        "La variation de juste valeur d'actions désignées dès l'origine à la juste valeur par OCI"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ue4-ifrs-ias1-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-1-presentation-etats-financiers",
+      "difficulty": 1,
+      "tags": [
+        "compensation",
+        "principes généraux"
+      ],
+      "source_ref": "IAS 1 §32-35 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "explanation": "IAS 1 §32 interdit la compensation sauf exigence ou autorisation d'une norme : par exemple, une créance client et une dette fournisseur envers une même contrepartie restent présentées séparément. Les cas de compensation reposent sur une norme : actifs et passifs financiers sous les conditions d'IAS 32 §42, actifs et passifs d'impôt différé sous les conditions d'IAS 12 §74, résultat de cession d'un actif non courant présenté net des frais de cession (IAS 1 §34). La présentation d'un actif net de ses dépréciations (stocks, créances) n'est pas une compensation (§33).",
+      "statement": "Selon IAS 1, une entité ne doit pas compenser les actifs et les passifs, ni les produits et les charges, sauf si une norme ou une interprétation l'impose ou l'autorise.",
+      "answer": true,
+      "justification": "C'est le principe de non-compensation posé par IAS 1 §32 ; une compensation n'est admise que si une norme l'impose ou l'autorise."
+    },
+    {
+      "id": "ue4-ifrs-ias1-0004",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-1-presentation-etats-financiers",
+      "difficulty": 1,
+      "tags": [
+        "jeu complet d'états financiers"
+      ],
+      "source_ref": "IAS 1 §10 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 30,
+      "explanation": "IAS 1 §10 autorise d'autres intitulés (par exemple « bilan » ou « compte de résultat ») et permet de présenter le résultat global en un seul état ou en deux états (compte de résultat séparé suivi d'un état du résultat global, §10A). L'état de la situation financière d'ouverture de la période comparative n'est exigé que si l'application rétrospective, le retraitement ou le reclassement a un effet significatif sur cet état (§40A).",
+      "front": "Quelles sont les composantes d'un jeu complet d'états financiers selon IAS 1 ?",
+      "back": "1. État de la situation financière à la clôture.\n2. État du résultat net et des autres éléments du résultat global de la période.\n3. État des variations des capitaux propres.\n4. Tableau des flux de trésorerie.\n5. Notes annexes (méthodes comptables significatives et autres informations), avec l'information comparative.\n6. En cas d'application rétrospective ou de retraitement, état de la situation financière à l'ouverture de la période comparative."
+    },
+    {
+      "id": "ue4-ifrs-ias1-0005",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-1-presentation-etats-financiers",
+      "difficulty": 1,
+      "tags": [
+        "résultat global",
+        "autres éléments du résultat global"
+      ],
+      "source_ref": "IAS 1 §7, §81A et §106-109 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 120,
+      "explanation": "Résultat global = résultat net + autres éléments du résultat global (IAS 1 §7 et §81A) = 500 + 120 − 40 + 30 = 610 k€. Les dividendes versés et l'augmentation de capital sont des transactions avec les propriétaires agissant en cette qualité : ils figurent uniquement dans l'état des variations des capitaux propres (IAS 1 §106 et §109), pas dans le résultat global. Erreur classique : déduire les dividendes (410) ou ajouter l'augmentation de capital (910).",
+      "statement": "Pour l'exercice N, la société Bréhat (IFRS) communique les éléments suivants (en milliers d'euros) :\n- résultat net : 500 ;\n- écart de réévaluation d'un immeuble (modèle de la réévaluation IAS 16), net d'impôt : +120 ;\n- écarts actuariels sur régime de retraite à prestations définies, nets d'impôt : −40 ;\n- part efficace de la variation de juste valeur d'une couverture de flux de trésorerie, nette d'impôt : +30 ;\n- dividendes versés aux actionnaires : 200 ;\n- augmentation de capital en numéraire : 300.\nCalculez le résultat global total de l'exercice N, en milliers d'euros.",
+      "expected_value": 610,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "k€",
+      "decimals": 0
+    }
+  ]
+}

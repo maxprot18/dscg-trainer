@@ -1,0 +1,192 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-fusion-cadre-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "fusion-traitement-comptable",
+      "difficulty": 1,
+      "tags": [
+        "valeur d’apport",
+        "contrôle",
+        "sens de l’opération"
+      ],
+      "statement": "Selon le PCG, quels critères déterminent la valeur (comptable ou réelle) à laquelle sont comptabilisés les apports reçus lors d'une fusion ?",
+      "options": [
+        "La forme juridique des sociétés et le régime fiscal choisi pour l'opération",
+        "La taille des sociétés et la cotation éventuelle de l'absorbante",
+        "Le contrôle des sociétés avant l'opération (commun ou distinct) et, en cas de contrôle distinct, le sens de l'opération",
+        "Le choix exprimé par les parties dans le traité de fusion, sous réserve de l'accord du commissaire à la fusion"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Le PCG (titre VII) détermine la valeur d'apport à partir de deux critères : le contrôle des sociétés avant l'opération (commun ou distinct) et, lorsque le contrôle est distinct, le sens de l'opération (à l'endroit ou à l'envers). L'option 1 est fausse : ni la forme juridique ni le régime fiscal (CGI art. 210 A) ne commandent la valeur comptable des apports. L'option 2 est fausse : la taille ou la cotation n'interviennent pas. L'option 4 est fausse : la valeur d'apport n'est pas laissée au choix des parties, les règles du PCG sont impératives ; le commissaire à la fusion apprécie les valeurs mais ne fixe pas la méthode.",
+      "source_ref": "PCG titre VII, règles d’évaluation des apports (règl. ANC 2014-03 modifié par le règl. ANC 2017-01)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-fusion-cadre-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "fusion-traitement-comptable",
+      "difficulty": 1,
+      "tags": [
+        "contrôle commun",
+        "mère-fille",
+        "valeur comptable"
+      ],
+      "statement": "La société Mistral détient 80 % du capital et des droits de vote de la société Noroît depuis plusieurs années. Mistral absorbe Noroît. À quelle valeur les apports de Noroît sont-ils comptabilisés chez Mistral ?",
+      "options": [
+        "À la valeur réelle, car l'opération est réalisée à l'endroit",
+        "À la valeur réelle, car Mistral est la société absorbante",
+        "Au choix de Mistral, la méthode devant être indiquée dans l'annexe",
+        "À la valeur comptable, car les deux sociétés sont sous contrôle commun"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "La société Mistral contrôle la société Noroît (80 % des droits de vote) : l'une contrôle l'autre avant l'opération, les sociétés sont donc sous contrôle commun. En contrôle commun, les apports sont évalués à la valeur comptable, quel que soit le sens de l'opération. L'option 1 est fausse : la valeur réelle est réservée aux opérations entre sociétés sous contrôle distinct réalisées à l'endroit. L'option 2 est fausse : être l'absorbante ne suffit pas, c'est la relation de contrôle qui compte. L'option 3 est fausse : la valeur d'apport n'est pas laissée au choix des parties.",
+      "source_ref": "PCG titre VII, règles d’évaluation des apports (règl. ANC 2014-03 modifié par le règl. ANC 2017-01)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-fusion-cadre-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "fusion-traitement-comptable",
+      "difficulty": 2,
+      "tags": [
+        "contrôle distinct",
+        "à l'endroit",
+        "valeur réelle"
+      ],
+      "statement": "La holding Solen détient 70 % du capital et des droits de vote de la société Orion. Orion absorbe la société Pégase, dont le capital est réparti entre de nombreux actionnaires sans lien avec Solen. Après la fusion, Solen détient 52 % du capital et des droits de vote d'Orion. À quelle valeur les apports de Pégase sont-ils comptabilisés chez Orion ?",
+      "options": [
+        "À la valeur comptable, car Solen contrôle l'absorbante : l'opération est réalisée sous contrôle commun",
+        "À la valeur réelle, car l'opération est réalisée entre sociétés sous contrôle distinct et à l'endroit",
+        "À la valeur comptable, car l'opération est réalisée à l'envers",
+        "À la valeur réelle pour les immobilisations et à la valeur comptable pour les éléments circulants"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Avant l'opération, la holding Solen contrôle Orion mais n'a aucun lien avec Pégase : les sociétés sont sous contrôle distinct. Après la fusion, Solen détient encore 52 % du capital et des droits de vote d'Orion : les actionnaires qui contrôlaient l'absorbante conservent le contrôle, l'opération est réalisée à l'endroit. En contrôle distinct à l'endroit, les apports sont évalués à la valeur réelle. L'option 1 est fausse : le contrôle commun suppose qu'une même entité contrôle les deux sociétés (ou que l'une contrôle l'autre) avant l'opération ; contrôler l'absorbante seule ne suffit pas. L'option 3 est fausse : l'opération serait à l'envers si les actionnaires de Pégase prenaient le contrôle d'Orion, ce qui n'est pas le cas. L'option 4 est fausse : la même méthode s'applique à l'ensemble des apports, sans distinction selon la nature des actifs.",
+      "source_ref": "PCG titre VII, règles d’évaluation des apports (règl. ANC 2014-03 modifié par le règl. ANC 2017-01)",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue4-fusion-cadre-0004",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "fusion-traitement-comptable",
+      "difficulty": 1,
+      "tags": [
+        "effets juridiques",
+        "dissolution sans liquidation",
+        "transmission universelle"
+      ],
+      "statement": "La fusion-absorption entraîne la dissolution sans liquidation de la société absorbée et la transmission universelle de son patrimoine à la société absorbante.",
+      "answer": true,
+      "justification": "C'est l'effet prévu par le Code de commerce : l'absorbée disparaît sans liquidation et son patrimoine est transmis à titre universel à l'absorbante.",
+      "explanation": "La fusion entraîne, à la date de réalisation, la dissolution sans liquidation de la société absorbée et la transmission universelle de son patrimoine à l'absorbante, dans l'état où il se trouve. Les associés de l'absorbée deviennent associés de l'absorbante. Il n'y a donc ni opérations de liquidation ni partage du boni de liquidation : l'absorbante reprend l'ensemble des actifs et des passifs, y compris ceux qui ne figurent pas au bilan.",
+      "source_ref": "C. com. art. L. 236-1 et s. (rédaction issue de l'ordonnance n° 2023-393)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-fusion-cadre-0005",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "fusion-traitement-comptable",
+      "difficulty": 1,
+      "tags": [
+        "valeur d’apport",
+        "tableau de synthèse"
+      ],
+      "front": "Selon le PCG, quelle valeur d'apport retenir dans chacune des trois situations : contrôle commun, contrôle distinct à l'endroit, contrôle distinct à l'envers ?",
+      "back": "Contrôle commun (à l'endroit comme à l'envers) : valeur comptable.\nContrôle distinct, opération à l'endroit (les actionnaires de l'absorbante gardent le contrôle) : valeur réelle.\nContrôle distinct, opération à l'envers (les actionnaires de l'absorbée prennent le contrôle) : valeur comptable.",
+      "explanation": "Le critère du sens de l'opération ne joue qu'entre sociétés sous contrôle distinct : on regarde qui contrôle l'absorbante après la fusion. Le texte prévoit quelques exceptions limitées à ce tableau.",
+      "source_ref": "PCG titre VII, règles d’évaluation des apports (règl. ANC 2014-03 modifié par le règl. ANC 2017-01)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-fusion-cadre-0006",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "fusion-traitement-comptable",
+      "difficulty": 2,
+      "tags": [
+        "écritures chez l'absorbée",
+        "valeur comptable",
+        "contrôle commun"
+      ],
+      "statement": "La société Delta est absorbée par sa société sœur Epsilon ; les deux sociétés sont contrôlées par la même holding et les apports sont évalués à la valeur comptable. Bilan de Delta à la date d'effet : constructions 300 000 € (amortissements cumulés 120 000 €), stocks de marchandises 80 000 €, créances clients 60 000 €, banque 40 000 €, emprunt 90 000 €, dettes fournisseurs 70 000 € ; capitaux propres : capital 150 000 €, réserve légale 15 000 €, autres réserves 25 000 €, résultat 10 000 €. Passez chez Delta l'écriture de transfert des actifs et des passifs à Epsilon. Convention : la créance sur l'absorbante est enregistrée au compte 467 « Société absorbante – compte d'apport » ; on ignore la fiscalité.",
+      "date": "Date d’effet de la fusion",
+      "entries": [
+        {
+          "account": "467",
+          "label": "Société absorbante – compte d'apport",
+          "debit": 200000,
+          "credit": 0
+        },
+        {
+          "account": "2813",
+          "label": "Amortissements des constructions",
+          "debit": 120000,
+          "credit": 0
+        },
+        {
+          "account": "164",
+          "label": "Emprunts auprès des établissements de crédit",
+          "debit": 90000,
+          "credit": 0
+        },
+        {
+          "account": "401",
+          "label": "Fournisseurs",
+          "debit": 70000,
+          "credit": 0
+        },
+        {
+          "account": "213",
+          "label": "Constructions",
+          "debit": 0,
+          "credit": 300000
+        },
+        {
+          "account": "37",
+          "label": "Stocks de marchandises",
+          "debit": 0,
+          "credit": 80000
+        },
+        {
+          "account": "411",
+          "label": "Clients",
+          "debit": 0,
+          "credit": 60000
+        },
+        {
+          "account": "512",
+          "label": "Banques",
+          "debit": 0,
+          "credit": 40000
+        }
+      ],
+      "explanation": "Les apports étant évalués à la valeur comptable, la créance sur l'absorbante est égale à l'actif net comptable de Delta : (300 000 − 120 000) + 80 000 + 60 000 + 40 000 − 90 000 − 70 000 = 200 000 €, ce qui correspond aux capitaux propres (150 000 + 15 000 + 25 000 + 10 000). Delta solde chaque compte d'actif et de passif : les constructions sont sorties pour leur valeur brute (crédit 213) et les amortissements cumulés sont soldés au débit du 2813 ; les dettes sont soldées au débit. Le débit du compte 467 (200 000 €) représente la créance sur l'absorbante, réglée ensuite par la remise des titres. Aucun résultat de fusion n'apparaît puisque la valeur d'apport est égale à la valeur nette comptable.",
+      "source_ref": "PCG titre VII (règl. ANC 2017-01) ; comptes 213, 2813, 37, 411, 512, 164, 401 et 467",
+      "verified": true,
+      "estimated_seconds": 240
+    }
+  ]
+}

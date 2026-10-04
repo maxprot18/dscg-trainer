@@ -38,6 +38,173 @@
       "source_ref": "IFRS 15 §22, §31, §35, §38, §73-80 et §106 (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 180
+    },
+    {
+      "id": "ue4-ifrsn-ifrs15-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-15-produits-activites-ordinaires",
+      "difficulty": 2,
+      "tags": [
+        "agent ou principal",
+        "produit net"
+      ],
+      "statement": "La société Vacanza (IFRS) exploite une plateforme de réservation d'hôtels. Pour une nuitée réservée et payée en ligne 200 € par un client, elle conserve une commission de 15 % et reverse le solde à l'hôtel. Le prix est fixé par l'hôtel, qui est responsable de la prestation ; Vacanza ne réserve pas de chambres à l'avance et ne supporte aucun risque d'invendus ; son obligation est remplie dès la confirmation de la réservation, la commission lui restant acquise même en cas d'annulation. Quel produit Vacanza comptabilise-t-elle au titre de cette réservation ?",
+      "options": [
+        "200 € de produit et 170 € de charge, puisqu'elle encaisse la totalité du prix",
+        "30 € de produit, à la date de confirmation de la réservation",
+        "30 € de produit, à la date du séjour du client à l'hôtel",
+        "200 € de produit, à la date du séjour, et une dette de 170 € envers l'hôtel"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La plateforme ne contrôle jamais les nuitées avant leur transfert au client : elle ne s'engage pas à les fournir, ne supporte aucun risque de stock (pas de réservation préalable de chambres, pas de pénalité en cas d'invendus) et ne fixe pas le prix (indicateurs de B37). Elle agit comme agent : son obligation est d'organiser la fourniture du service par l'hôtel, et son produit est la commission nette, 15 % × 200 = 30 € (B36). Comptabiliser 200 € en produit (et 170 € en charge) serait le traitement d'un principal. Le fait d'encaisser le prix total ne fait pas de la plateforme un principal : les 170 € reversés sont une dette envers l'hôtel. Différer la commission jusqu'au séjour ne correspond pas à l'obligation de l'agent, remplie lors de la réservation confirmée.",
+      "source_ref": "IFRS 15 B34-B38 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-ifrsn-ifrs15-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-15-produits-activites-ordinaires",
+      "difficulty": 2,
+      "tags": [
+        "comptabilisation à l'avancement",
+        "transfert du contrôle"
+      ],
+      "statement": "Parmi les contrats suivants, conclus par des entités appliquant les IFRS, lesquels donnent lieu à une comptabilisation du produit à l'avancement ? (plusieurs réponses possibles)",
+      "options": [
+        "Construction d'un entrepôt sur un terrain appartenant au client",
+        "Contrat annuel de nettoyage quotidien des bureaux d'un client",
+        "Vente d'une machine de série fabriquée sur stock, livrée et payée en fin d'année",
+        "Fabrication d'un équipement sur mesure, sans usage alternatif pour le fabricant, le contrat ne prévoyant aucun paiement avant la livraison, même en cas de résiliation par le client"
+      ],
+      "answer": [
+        0,
+        1
+      ],
+      "multiple": true,
+      "explanation": "IFRS 15 §35 : le produit est comptabilisé progressivement si l'un des trois critères est rempli. Option 1 : le bâtiment construit sur le terrain du client est un actif que le client contrôle au fur et à mesure de sa construction (§35(b)) : avancement. Option 2 : le client reçoit et consomme simultanément les avantages du nettoyage (§35(a)) : avancement. Option 3 : la machine standard a un usage alternatif et son contrôle passe à la livraison : produit à une date donnée (§38). Option 4 : l'équipement sur mesure n'a pas d'usage alternatif, mais l'entité n'a aucun droit exécutoire au paiement de la prestation effectuée à date (§35(c) exige les deux conditions) : produit à la livraison.",
+      "source_ref": "IFRS 15 §35-38 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue4-ifrsn-ifrs15-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-15-produits-activites-ordinaires",
+      "difficulty": 2,
+      "tags": [
+        "contrepartie variable",
+        "remise sur volume",
+        "passif de remboursement"
+      ],
+      "statement": "Le 01/01/N, la société Garonne (IFRS) conclut avec un distributeur un contrat-cadre d'un an : prix unitaire de 50 € HT ; si le distributeur achète plus de 10 000 unités sur l'année civile N, il bénéficie d'une remise de 10 % sur toutes les unités achetées dans l'année, payée en fin d'année. Au 31/03/N, 3 000 unités ont été livrées et facturées au prix de 50 €. Compte tenu de l'historique et des prévisions du distributeur (12 000 unités attendues), Garonne juge hautement probable que le seuil sera dépassé. Calculez le produit à comptabiliser au titre du premier trimestre N (en euros).",
+      "expected_value": 135000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "La remise rétroactive est une contrepartie variable (IFRS 15 §51). Dès le premier trimestre, Garonne estime le prix de transaction en tenant compte de la remise, puisqu'il est hautement probable que le seuil sera franchi (§53 et §56) : prix unitaire 50 × 90 % = 45 €. Produit du 1er trimestre = 3 000 × 45 = 135 000 €. Le client est facturé 150 000 € : les 15 000 € de différence constituent un passif de remboursement (§55). Erreur fréquente : comptabiliser 150 000 € et attendre le franchissement effectif du seuil.",
+      "source_ref": "IFRS 15 §50-56 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue4-ifrsn-ifrs15-0005",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-15-produits-activites-ordinaires",
+      "difficulty": 3,
+      "tags": [
+        "modèle en cinq étapes",
+        "obligations de prestation",
+        "contrepartie variable",
+        "répartition du prix",
+        "passif sur contrat"
+      ],
+      "title": "Société Logitek : vente d'un logiciel avec installation et maintenance",
+      "context": "Le 01/01/N, la société Logitek (IFRS), éditeur de logiciels, signe avec un client un contrat comprenant :\n- une licence d'utilisation de son logiciel de gestion, mise à disposition le 01/01/N : le client a le droit d'utiliser le logiciel tel qu'il existe à cette date ;\n- une prestation d'installation et de paramétrage standard, que d'autres prestataires sont capables de réaliser ; elle ne modifie pas le logiciel de façon significative et sera achevée en janvier N ;\n- une maintenance (assistance et corrections) de 2 ans, du 01/01/N au 31/12/N+1, rendue de façon régulière.\n\nPrix : 150 000 € HT, plus une prime de 20 000 € si le logiciel est opérationnel avant le 31/03/N. À la signature, Logitek, qui a réalisé de nombreuses installations similaires dans des délais inférieurs à un mois, estime à 95 % la probabilité d'obtenir la prime et juge hautement probable qu'elle ne fera pas l'objet d'un ajustement à la baisse.\n\nLa prime ne remplit pas les conditions d'une affectation exclusive à l'une des prestations (IFRS 15 §85).\n\nPrix de vente spontanés pratiqués par Logitek : licence 120 000 € ; installation 20 000 € ; maintenance de 2 ans 40 000 €.\n\nLe logiciel est opérationnel le 15/02/N. Le client a été facturé et a payé 170 000 € au cours de N. On ignore la TVA.",
+      "sub_questions": [
+        {
+          "id": "q1-obligations",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Combien d'obligations de prestation distinctes le contrat comporte-t-il ?",
+          "options": [
+            "Une seule, le client achetant une solution logicielle globale",
+            "Deux : la licence avec l'installation d'une part, la maintenance d'autre part",
+            "Trois : la licence, l'installation et la maintenance",
+            "Quatre, la prime constituant une obligation de prestation distincte"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "Chaque élément est distinct (IFRS 15 §27) : le client peut tirer avantage de la licence seule ou avec des ressources aisément disponibles (l'installation standard peut être faite par d'autres prestataires), et l'installation ne modifie pas significativement le logiciel, ce qui rend les promesses séparables (§29). La maintenance est une série de services distincte. La prime n'est pas une obligation de prestation mais une contrepartie variable affectant le prix."
+        },
+        {
+          "id": "q2-prime",
+          "kind": "true_false",
+          "points": 2,
+          "prompt": "La prime de 20 000 € doit être exclue du prix de transaction à la signature, puisqu'elle dépend d'un événement futur incertain.",
+          "answer": false,
+          "explanation": "Faux. La prime est une contrepartie variable (§51), estimée ici par la méthode du montant le plus probable, adaptée à une issue binaire (§53(b)) : 20 000 €. Elle est incluse dans le prix de transaction dès la signature, car il est hautement probable que son inclusion ne donnera pas lieu à un ajustement à la baisse important (§56). Prix de transaction : 170 000 €."
+        },
+        {
+          "id": "q3-licence",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez la part du prix de transaction allouée à la licence (en euros, arrondi à l'euro).",
+          "expected_value": 113333,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Répartition au prorata des prix de vente spontanés (§76) : 170 000 × 120 000 / 180 000 = 113 333 €. Installation : 170 000 × 20 000 / 180 000 = 18 889 € ; maintenance : 170 000 × 40 000 / 180 000 = 37 778 €. Erreurs : répartir 150 000 € seulement (100 000 €) ou retenir le prix de vente spontané (120 000 €). La prime n'est pas affectée en totalité à l'installation : celle-ci recevrait alors 36 667 €, bien au-delà de son prix de vente spontané, ce qui contredirait l'objectif de répartition (§85(b))."
+        },
+        {
+          "id": "q4-produit-n",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez le produit total comptabilisé par Logitek au titre de ce contrat en N (en euros, arrondi à l'euro).",
+          "expected_value": 151111,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 2
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Licence (droit d'utiliser le logiciel tel qu'il existe) : produit à la date du transfert, le 01/01/N (B58 et B61) : 113 333 €. Installation achevée en janvier N : 18 889 €. Maintenance rendue progressivement sur 2 ans (§35(a)) : 37 778 / 2 = 18 889 €. Total N = 113 333,33 + 18 888,89 + 18 888,89 = 151 111 €."
+        },
+        {
+          "id": "q5-bilan",
+          "kind": "open",
+          "points": 2,
+          "prompt": "Comment le contrat est-il présenté dans l'état de la situation financière de Logitek au 31/12/N ? Justifiez.",
+          "model_answer": "Le client a payé 170 000 € alors que Logitek n'a comptabilisé que 151 111 € de produit : la contrepartie reçue avant l'exécution de la seconde année de maintenance constitue un passif sur contrat de 18 889 € (IFRS 15 §106), qui sera repris en produit en N+1 au fur et à mesure de la maintenance. Il n'y a ni créance (tout a été encaissé) ni actif sur contrat. Si une partie restait à encaisser alors que la prestation correspondante est réalisée et le droit inconditionnel, elle serait présentée en créance (§108).",
+          "key_points": [
+            "Passif sur contrat de 18 889 € (maintenance N+1 encaissée d'avance)",
+            "Reprise en produit en N+1 au rythme de la maintenance",
+            "Ni créance ni actif sur contrat, le prix étant entièrement encaissé"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Trois obligations de prestation distinctes (licence, installation, maintenance). Prix de transaction 170 000 € (bonus inclus selon la méthode du montant le plus probable, sa réalisation étant hautement probable), réparti au prorata des prix de vente spontanés (licence 113 333 €, installation 18 889 €, maintenance 37 778 €). Produit N : 151 111 € ; passif sur contrat au 31/12/N : 18 889 €.",
+      "source_ref": "IFRS 15 §22-30, §31-38, §50-56, §73-80, §84-85, §105-107 et B58-B62 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 900
     }
   ]
 }

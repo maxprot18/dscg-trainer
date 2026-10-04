@@ -1,0 +1,941 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-audit-capitaux-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "capital social",
+        "existence"
+      ],
+      "statement": "L’auditeur rapproche le montant du capital social inscrit au bilan de clôture des statuts à jour et de l’extrait Kbis de la société. Quelle assertion cette procédure couvre-t-elle principalement ?",
+      "options": [
+        "L’exhaustivité des dividendes à payer",
+        "La séparation des exercices",
+        "L’existence du capital inscrit au bilan",
+        "L’évaluation des subventions d’investissement"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Les statuts à jour et le Kbis établissent le montant juridique du capital : le rapprochement prouve que le solde inscrit au bilan existe tel quel (option 3). L’option 1 se teste à partir des PV d’assemblée et du compte 457, pas des statuts. L’option 2 concerne le rattachement d’opérations à l’exercice, sans lien avec un solde de capital fixé par les statuts. L’option 4 relève du recalcul des reprises de subventions (131 / 139).",
+      "source_ref": "NEP 500 (assertions relatives aux soldes de fin de période) ; PCG compte 101",
+      "estimated_seconds": 50,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "dividendes",
+        "exhaustivité"
+      ],
+      "statement": "Quelle procédure couvre le mieux l’exhaustivité des dettes envers les associés au titre des dividendes votés (compte 457) ?",
+      "options": [
+        "Partir des paiements enregistrés au débit du compte 457 et les rapprocher des relevés bancaires",
+        "Partir des décisions de distribution figurant dans les procès-verbaux d’assemblée de l’exercice et vérifier leur enregistrement au crédit du compte 457",
+        "Recalculer les amortissements dérogatoires de l’exercice",
+        "Demander aux principaux clients de confirmer leur solde"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Pour l’exhaustivité, on part de la source des dettes (les décisions d’assemblée) et on vérifie qu’elles sont toutes comptabilisées (option 2). L’option 1 part de la comptabilité : elle teste la réalité des paiements, pas l’absence d’omission. L’option 3 concerne les provisions réglementées. L’option 4 relève du cycle ventes-clients.",
+      "source_ref": "NEP 500 (assertions) ; PCG compte 457 « Associés – dividendes à payer »",
+      "estimated_seconds": 50,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-assertions",
+      "difficulty": 2,
+      "tags": [
+        "assertions",
+        "subventions d’investissement",
+        "classification"
+      ],
+      "statement": "La société Iota a reçu en N une subvention de 100 000 € destinée à financer l’achat d’une machine. Elle l’a enregistrée en totalité au compte 74 « Subventions d’exploitation ». Quelle assertion est principalement mise en défaut ?",
+      "options": [
+        "L’existence de la subvention",
+        "Les droits et obligations",
+        "L’exhaustivité des produits",
+        "La classification (présentation)"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "La subvention existe et a été comptabilisée, mais dans un compte de nature inappropriée : une subvention qui finance un bien durable est une subvention d’investissement (131, reprise au résultat par le compte 777 au rythme de l’amortissement), et non une subvention d’exploitation (74). C’est la classification qui est en cause (option 4), avec pour conséquence un résultat d’exploitation surévalué. L’option 1 est fausse car la subvention a bien été reçue. L’option 2 viserait une subvention dont l’entité ne serait pas bénéficiaire. L’option 3 viserait une subvention non enregistrée, ce qui n’est pas le cas.",
+      "source_ref": "NEP 500 (assertions de présentation) ; PCG, règles relatives aux subventions d’investissement (règl. ANC 2014-03) ; comptes 131, 139, 74, 777",
+      "estimated_seconds": 60,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0004",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "capital non appelé",
+        "présentation"
+      ],
+      "statement": "Le capital souscrit non appelé (compte 109) est présenté au passif du bilan, en déduction du capital social.",
+      "answer": false,
+      "justification": "Faux : le capital souscrit non appelé est une créance sur les associés, présentée à l’actif du bilan (en tête de l’actif) ; le capital figure au passif pour son montant total souscrit.",
+      "explanation": "Le PCG prévoit une ligne « Capital souscrit non appelé » à l’actif. Le capital social reste inscrit au passif pour la totalité du capital souscrit, ventilé en interne entre 1011 (souscrit non appelé), 1012 (souscrit appelé non versé) et 1013 (souscrit appelé versé). Compenser les deux montants nuirait à la présentation et masquerait la créance sur les associés (assertion droits et obligations).",
+      "source_ref": "PCG, modèle de bilan (règl. ANC 2014-03) ; comptes 101, 109",
+      "estimated_seconds": 40,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0005",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "augmentation de capital",
+        "pièces probantes"
+      ],
+      "front": "Augmentation de capital en numéraire : quelles pièces l’auditeur examine-t-il, et quelle assertion chacune couvre-t-elle ?",
+      "back": "PV de l’AGE : réalité et mesure de l’opération décidée.\nBulletins de souscription et certificat du dépositaire des fonds : réalité des souscriptions et des versements.\nStatuts modifiés et Kbis : existence du capital à la clôture.\nÉcritures (1011, 1012, 1013, 104, 109 ou 4562) : classification entre capital appelé ou non, versé ou non, et prime d’émission.",
+      "explanation": "NEP 500 : chaque assertion appelle une pièce adaptée. Le certificat du dépositaire est l’élément externe qui prouve la libération ; la prime d’émission (1041) se distingue du capital.",
+      "source_ref": "NEP 500 ; PCG comptes 101, 104, 109, 456",
+      "estimated_seconds": 60,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0006",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-risques",
+      "difficulty": 1,
+      "tags": [
+        "risques",
+        "approche d’audit",
+        "tests de détail"
+      ],
+      "statement": "Pourquoi l’auditeur privilégie-t-il souvent des tests de détail portant sur la totalité des mouvements des capitaux propres plutôt que des sondages ?",
+      "options": [
+        "Parce que les opérations sont peu nombreuses et de montant unitaire élevé",
+        "Parce que la NEP 315 interdit de tester les contrôles internes de ce cycle",
+        "Parce que les capitaux propres ne présentent aucun risque de fraude",
+        "Parce que les sondages sont interdits pour les comptes de bilan"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Quelques opérations par an (affectation du résultat, augmentation de capital, subvention reçue), chacune significative : les examiner toutes est simple et plus probant qu’un échantillon (option 1). L’option 2 est fausse : la NEP 315 impose de comprendre le contrôle interne et rien n’interdit de le tester ; c’est simplement peu efficient ici. L’option 3 est fausse : une augmentation de capital libérée par compensation avec une créance fictive ou un dividende fictif sont des risques réels. L’option 4 est fausse : les sondages sont admis pour tous les comptes (NEP 530).",
+      "source_ref": "NEP 315 ; NEP 330 (choix de la nature et de l’étendue des procédures) ; NEP 530",
+      "estimated_seconds": 50,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0007",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "parties liées",
+        "augmentation de capital",
+        "compensation"
+      ],
+      "statement": "Le président de la SA Epsilon, actionnaire à 70 %, souscrit seul une augmentation de capital de 400 000 € (nominal et prime), libérée par compensation avec la créance qu’il détient sur la société au titre de son compte courant d’associé. Quel est le risque principal pour l’auditeur ?",
+      "options": [
+        "Un risque de séparation des exercices sur le chiffre d’affaires de décembre",
+        "Un risque que la créance compensée soit inexistante, surévaluée ou non exigible, et que le capital ne soit donc pas réellement libéré",
+        "Un risque que la dotation à la réserve légale de l’exercice soit sous-évaluée du fait de l’augmentation de capital",
+        "Un risque de dépréciation des stocks de produits finis"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La libération par compensation n’apporte aucun fonds nouveau : elle n’est valable que si la créance est certaine, liquide et exigible. Comme le souscripteur est une partie liée (NEP 550), le risque porte sur la réalité de la libération et sur une créance gonflée (option 2). L’option 1 et l’option 4 concernent d’autres cycles. L’option 3 est erronée : le plafond de la réserve légale (10 % du capital) augmente avec le capital, mais la dotation de l’exercice dépend du bénéfice et non de l’opération elle-même ; ce n’est pas le risque principal.",
+      "source_ref": "NEP 550 (relations et transactions avec les parties liées) ; NEP 315 ; C. com., règles de libération des actions par compensation de créances",
+      "estimated_seconds": 75,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0008",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "subventions d’investissement",
+        "subvention conditionnelle"
+      ],
+      "statement": "Une subvention d’investissement conditionnée au maintien de l’effectif pendant trois ans peut rester intégralement en capitaux propres, sans autre traitement, alors qu’il est manifeste à la clôture que l’entreprise ne respectera pas cette condition.",
+      "answer": false,
+      "justification": "Faux : le remboursement devenant probable, l’entité doit constater le passif correspondant ; maintenir la subvention en capitaux propres surévalue ceux-ci.",
+      "explanation": "Une subvention conditionnelle n’est définitivement acquise que si les conditions sont respectées. Lorsque leur non-respect est manifeste à la clôture, une sortie de ressources au profit de l’organisme est probable : l’entité constate une dette (ou une provision si le montant ou l’échéance restent incertains) et sort des capitaux propres la subvention non encore reprise, la fraction déjà virée au résultat donnant lieu à une charge. L’auditeur examine la convention et les prévisions d’effectif pour apprécier ce risque.",
+      "source_ref": "PCG, règles relatives aux subventions d’investissement et aux passifs (règl. ANC 2014-03) ; NEP 315",
+      "estimated_seconds": 60,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0009",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "bénéfice distribuable",
+        "dividende fictif",
+        "réserve légale"
+      ],
+      "statement": "SA Zêta, clôture au 31/12/N. Capital 500 000 € ; réserve légale 40 000 € ; réserves facultatives 20 000 € ; report à nouveau débiteur 30 000 € ; bénéfice de l’exercice N 150 000 €. Les statuts ne prévoient aucune réserve statutaire. Le conseil envisage de proposer un dividende de 125 000 € prélevé sur le seul résultat de l’exercice. Pour apprécier le risque de dividende fictif, calculez le bénéfice distribuable de l’exercice au sens du Code de commerce, hors réserves (en euros).",
+      "expected_value": 114000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Dotation à la réserve légale = 5 % × (150 000 − 30 000) = 6 000 €, inférieure au montant restant pour atteindre 10 % du capital (50 000 − 40 000 = 10 000 €). Bénéfice distribuable = 150 000 − 30 000 − 6 000 = 114 000 €. Le dividende envisagé (125 000 €) l’excède de 11 000 € : il n’est régulier que si l’assemblée décide expressément de prélever ce complément sur les réserves facultatives (20 000 € disponibles), en indiquant le poste. Calculer la réserve légale sur le bénéfice brut (7 500 €) donnerait 112 500 € ; oublier le report à nouveau débiteur donnerait 142 500 €.",
+      "source_ref": "C. com. art. L232-10 (réserve légale) et L232-11 (bénéfice distribuable)",
+      "estimated_seconds": 180,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0010",
+      "type": "audit_case",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "capitaux propres inférieurs à la moitié du capital",
+        "parties liées",
+        "subvention conditionnelle"
+      ],
+      "title": "Pertes, augmentation de capital et subvention conditionnelle chez Oméga",
+      "cycle": "capitaux-propres",
+      "situation": "Vous intervenez en février N+1 sur les comptes au 31/12/N de la SA Oméga (capital initial 800 000 €).\nLes comptes N−1, approuvés le 20/05/N, font apparaître une perte de 520 000 € et des capitaux propres de 310 000 €. Aucune assemblée générale extraordinaire n’a été convoquée depuis.\nLe 15/10/N, le président, actionnaire à 60 %, a souscrit seul une augmentation de capital de 200 000 € (nominal, sans prime), libérée par compensation avec son compte courant d’associé, dont le solde arrêté par le conseil s’élevait à 250 000 €.\nLe résultat provisoire de N est une perte de 90 000 €.\nUne subvention d’investissement de 150 000 €, reçue en N−2, est conditionnée au maintien de 40 emplois jusqu’au 31/12/N+1 ; l’effectif est de 33 salariés au 31/12/N.",
+      "assertions": [
+        "Réalité (libération du capital)",
+        "Évaluation et présentation (subvention)",
+        "Conformité aux règles légales (procédure des capitaux propres inférieurs à la moitié du capital)"
+      ],
+      "procedures": {
+        "options": [
+          "Vérifier si l’assemblée générale extraordinaire prévue lorsque les capitaux propres deviennent inférieurs à la moitié du capital a été convoquée dans les quatre mois de l’approbation des comptes N−1 et, à défaut, prévoir de signaler l’irrégularité à la prochaine assemblée",
+          "Rapprocher le montant compensé de l’arrêté de compte courant, du procès-verbal de l’AGE et des mouvements du compte courant, en vérifiant que la créance était certaine, liquide et exigible",
+          "Examiner la convention de subvention et les prévisions d’effectif pour apprécier la probabilité d’un remboursement et son traitement dans les comptes",
+          "Envoyer des demandes de confirmation de solde aux principaux clients",
+          "Observer l’inventaire physique des stocks de matières premières",
+          "Tester l’efficacité du contrôle d’accès au fichier des tarifs de vente"
+        ],
+        "answer": [
+          0,
+          1,
+          2
+        ]
+      },
+      "risk": {
+        "options": [
+          "Faible",
+          "Modéré",
+          "Élevé"
+        ],
+        "answer": 2,
+        "rationale": "Les capitaux propres N−1 (310 000 €) étaient inférieurs à la moitié du capital (400 000 €) sans que l’AGE ait été réunie dans le délai de quatre mois (expiré le 20/09/N) : une irrégularité est déjà acquise. Après l’augmentation de capital et la perte de N, les capitaux propres (310 000 + 200 000 − 90 000 = 420 000 €) restent inférieurs à la moitié du nouveau capital (500 000 €). L’augmentation a été souscrite par une partie liée par compensation, et la condition de la subvention (40 emplois) n’est pas respectée à la clôture (33 salariés). Ces facteurs cumulés justifient un risque élevé."
+      },
+      "conclusion": {
+        "model_answer": "Les procédures réalisées (revue de la procédure légale liée aux pertes, contrôle de la libération par compensation, examen de la convention de subvention) permettent de conclure sur la régularité des opérations sur capitaux propres. L’absence de consultation de l’AGE dans le délai légal est une irrégularité à signaler à la prochaine assemblée ; la situation des capitaux propres, toujours inférieurs à la moitié du capital, doit être suivie, tout comme ses conséquences éventuelles sur la continuité d’exploitation. Le traitement de la subvention (passif en cas de remboursement probable) fait l’objet d’un ajustement à proposer si nécessaire.",
+        "key_points": [
+          "Irrégularité : AGE non convoquée dans les quatre mois suivant l’approbation des comptes N−1",
+          "Capitaux propres au 31/12/N (420 000 €) toujours inférieurs à la moitié du capital (500 000 €)",
+          "Libération par compensation à justifier (créance certaine, liquide et exigible ; partie liée)",
+          "Risque de remboursement de la subvention à traduire dans les comptes"
+        ]
+      },
+      "explanation": "Le cas réunit trois risques propres au cycle : non-respect d’une procédure légale (C. com. art. L225-248), opération sur le capital avec une partie liée (NEP 550) et subvention conditionnelle. Les procédures retenues y répondent directement ; confirmations clients, inventaire des stocks et contrôle des tarifs relèvent d’autres cycles.",
+      "source_ref": "C. com. art. L225-248 ; NEP 315 ; NEP 550 ; NEP 570 (continuité d’exploitation)",
+      "estimated_seconds": 480,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0011",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-controles-cles",
+      "difficulty": 1,
+      "tags": [
+        "contrôles clés",
+        "procès-verbaux",
+        "comptabilisation"
+      ],
+      "statement": "Quel contrôle interne réduit le mieux le risque d’écritures sur les capitaux propres dépourvues de fondement juridique ?",
+      "options": [
+        "Le lettrage mensuel des comptes clients",
+        "La confirmation des soldes par le commissaire aux comptes",
+        "L’inventaire physique annuel des immobilisations",
+        "La comptabilisation de ces écritures uniquement à partir du procès-verbal signé, avec validation par le directeur financier"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Une écriture sur les capitaux propres doit traduire une décision d’un organe social ; exiger le PV signé et une validation hiérarchique est le contrôle clé (option 4). L’option 1 concerne le cycle ventes. L’option 2 est une procédure de l’auditeur, pas un contrôle interne de l’entité. L’option 3 couvre l’existence des immobilisations.",
+      "source_ref": "NEP 315 (compréhension du contrôle interne)",
+      "estimated_seconds": 45,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0012",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "contrôles clés",
+        "subventions d’investissement",
+        "reprise"
+      ],
+      "statement": "Le tableau de suivi des subventions de la société Kappa calcule la reprise de chaque subvention d’investissement par dixièmes, quel que soit le bien financé (machines amorties sur 5 ans, bâtiment amorti sur 25 ans). Quel contrôle clé fait défaut ?",
+      "options": [
+        "Le rapprochement annuel du plan de reprise de chaque subvention avec le plan d’amortissement du bien financé",
+        "L’autorisation préalable des demandes de subvention par le conseil d’administration",
+        "La séparation entre l’encaissement de la subvention et sa comptabilisation",
+        "La confirmation annuelle du montant accordé auprès de l’organisme financeur"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Une subvention finançant un bien amortissable se reprend au rythme de l’amortissement de ce bien ; la reprise par dixièmes n’est prévue que pour les biens non amortissables sans clause d’inaliénabilité. Le contrôle qui détecterait l’erreur est le rapprochement avec le plan d’amortissement (option 1). L’option 2 encadre l’obtention, pas le calcul. L’option 3 protège contre un détournement des fonds. L’option 4 confirme le montant accordé mais pas son rythme de reprise.",
+      "source_ref": "PCG, règles relatives aux subventions d’investissement (règl. ANC 2014-03) ; NEP 315",
+      "estimated_seconds": 70,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0013",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "contrôles clés",
+        "approche d’audit",
+        "NEP 330"
+      ],
+      "statement": "Dans la SAS Rhô, l’associé unique dirigeant prend seul les décisions et le comptable passe trois écritures sur les capitaux propres par an. Quelle approche de l’auditeur est la plus adaptée ?",
+      "options": [
+        "Tester l’efficacité des contrôles sur un échantillon de 25 opérations sur capitaux propres",
+        "Se dispenser de comprendre le contrôle interne de ce cycle, faute d’opérations nombreuses",
+        "Prendre connaissance du contrôle interne, puis contrôler exhaustivement chacune des trois opérations par des tests de détail",
+        "Se fonder uniquement sur une déclaration écrite de la direction confirmant les capitaux propres"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "La NEP 315 impose de comprendre le contrôle interne pertinent ; avec trois opérations par an, le test de détail exhaustif est la réponse la plus efficiente (option 3). L’option 1 est irréaliste : il n’existe pas 25 occurrences, et des tests de procédures n’ont guère d’intérêt dans ce contexte. L’option 2 contrevient à la NEP 315. L’option 4 est insuffisante : une déclaration de la direction complète les éléments collectés mais ne les remplace pas.",
+      "source_ref": "NEP 315 ; NEP 330 ; NEP 580 (déclarations de la direction)",
+      "estimated_seconds": 60,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0014",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-controles-cles",
+      "difficulty": 1,
+      "tags": [
+        "contrôles clés",
+        "dividendes",
+        "calendrier légal"
+      ],
+      "statement": "Dans une SA, la mise en paiement des dividendes doit intervenir dans un délai maximal de neuf mois après la clôture de l’exercice, sauf prolongation accordée par décision de justice.",
+      "answer": true,
+      "justification": "Vrai : le Code de commerce fixe ce délai de neuf mois ; seul le juge peut le prolonger.",
+      "explanation": "Le respect de ce délai fait partie du calendrier légal suivi par le secrétariat juridique. L’auditeur vérifie que le compte 457 est soldé dans le délai et identifie les dividendes restant dus à la clôture, qui constituent une dette envers les associés.",
+      "source_ref": "C. com. art. L232-13",
+      "estimated_seconds": 40,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0015",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "contrôles clés",
+        "subventions d’investissement",
+        "affectation du résultat",
+        "faiblesses"
+      ],
+      "title": "Suivi des subventions et affectation du résultat chez Sigma",
+      "context": "Vous réalisez l’audit des comptes au 31/12/N de la SA Sigma.\nLe comptable unique tient le tableau de suivi des subventions, passe les écritures correspondantes et n’est soumis à aucune revue. Il a quitté la société en novembre N ; son remplaçant est arrivé en décembre.\nSubvention d’investissement : 80 000 € reçus en N−1 pour une machine acquise 320 000 €, amortie en linéaire sur 8 ans à compter du 01/01/N−1. Une reprise de 10 000 € a été comptabilisée en N−1 ; aucune reprise n’a été comptabilisée en N.\nAffectation du résultat N−1 : l’écriture a été passée en avril N à partir du projet de résolutions du conseil (dividende de 90 000 €). L’assemblée du 20/06/N a finalement voté un dividende de 70 000 € et affecté la différence de 20 000 € aux réserves facultatives. L’écriture n’a pas été modifiée et les dividendes ont été payés pour 70 000 € en juillet N.",
+      "sub_questions": [
+        {
+          "id": "q1-faiblesse",
+          "kind": "mcq",
+          "prompt": "Quelle faiblesse de contrôle interne explique le mieux l’omission de la reprise de subvention en N ?",
+          "options": [
+            "L’absence d’autorisation de la demande de subvention par le conseil",
+            "L’absence de revue du tableau de suivi et de rapprochement avec le plan d’amortissement, une seule personne assurant tout le processus",
+            "L’absence de confirmation bancaire de l’encaissement de la subvention",
+            "L’absence d’inventaire physique de la machine"
+          ],
+          "answer": [
+            1
+          ],
+          "points": 2,
+          "explanation": "Le tableau dépend d’une seule personne, sans revue ni rapprochement avec le plan d’amortissement : le départ du comptable a suffi pour que la reprise soit oubliée (option 2). Les autres options ne concernent pas le calcul ni la comptabilisation annuelle de la reprise."
+        },
+        {
+          "id": "q2-reprise",
+          "kind": "numeric",
+          "prompt": "Calculez la quote-part de subvention à virer au résultat de N (en euros).",
+          "expected_value": 10000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 2,
+          "explanation": "Dotation aux amortissements N = 320 000 / 8 = 40 000 €. Reprise = 80 000 × 40 000 / 320 000 = 10 000 € (soit 80 000 / 8)."
+        },
+        {
+          "id": "q3-ecriture",
+          "kind": "journal_entry",
+          "prompt": "Passez l’écriture d’ajustement au 31/12/N. Utilisez les comptes 139 et 777.",
+          "date": "31/12/N",
+          "entries": [
+            {
+              "account": "139",
+              "label": "Subventions d’investissement inscrites au compte de résultat",
+              "debit": 10000,
+              "credit": 0
+            },
+            {
+              "account": "777",
+              "label": "Quote-part des subventions d’investissement virée au résultat",
+              "debit": 0,
+              "credit": 10000
+            }
+          ],
+          "points": 3,
+          "explanation": "Le compte 139, soustractif du 131, enregistre le cumul des reprises ; le compte 777 constate le produit de l’exercice. Le résultat N était sous-évalué de 10 000 €."
+        },
+        {
+          "id": "q4-affectation",
+          "kind": "open",
+          "prompt": "Analysez l’anomalie sur l’affectation du résultat N−1, indiquez l’écriture de correction et recommandez des contrôles pour le cycle.",
+          "model_answer": "L’écriture d’affectation reprend le projet du conseil et non la décision de l’assemblée : le compte 457 a été crédité de 90 000 € alors que 70 000 € seulement ont été votés et payés. Il reste au crédit du 457 un solde de 20 000 € qui ne correspond à aucune dette, tandis que les réserves facultatives sont sous-évaluées du même montant. Correction : débit 457 pour 20 000 €, crédit 1068 pour 20 000 €. Recommandations : comptabiliser l’affectation uniquement à partir du PV signé de l’assemblée ; faire valider les écritures sur capitaux propres par le directeur financier ; rapprocher chaque année le tableau de suivi des subventions du plan d’amortissement, avec une revue par une personne autre que celle qui le tient ; documenter la procédure pour assurer sa continuité en cas de départ.",
+          "key_points": [
+            "Écriture passée sur le projet et non sur la décision de l’assemblée",
+            "Solde injustifié de 20 000 € au compte 457, réserves facultatives sous-évaluées d’autant",
+            "Correction : débit 457 / crédit 1068 pour 20 000 €",
+            "Contrôles : écriture à partir du PV signé, validation hiérarchique, revue et rapprochement du tableau des subventions"
+          ],
+          "points": 3
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas relie deux anomalies à leurs causes : absence de séparation des tâches et de revue sur le suivi des subventions, et comptabilisation de l’affectation sans s’appuyer sur la décision de l’assemblée. Les deux appellent un ajustement et des recommandations de contrôle interne.",
+      "source_ref": "NEP 315 ; NEP 265 (communication des faiblesses du contrôle interne) ; PCG, règles relatives aux subventions d’investissement ; comptes 139, 457, 777, 1068",
+      "estimated_seconds": 720,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0016",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "acompte sur dividende"
+      ],
+      "statement": "En novembre N, le conseil d’administration de la SA Nu a décidé le versement d’un acompte sur dividende de 50 000 €. Quelle condition l’auditeur doit-il vérifier ?",
+      "options": [
+        "L’acompte a été autorisé par une assemblée générale extraordinaire statuant à la majorité des deux tiers",
+        "L’acompte n’excède pas 10 % du capital social",
+        "La réserve légale a atteint 10 % du capital avant le versement",
+        "Un bilan établi en cours ou en fin d’exercice et certifié par un commissaire aux comptes fait apparaître un bénéfice, après pertes antérieures et dotations aux réserves obligatoires et compte tenu du report bénéficiaire, au moins égal à l’acompte"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L’acompte sur dividende est décidé par l’organe de direction avant l’approbation des comptes, à condition qu’un bilan certifié fasse apparaître un bénéfice distribuable suffisant ; l’acompte ne peut excéder ce bénéfice (option 4). Aucune décision d’AGE n’est exigée (option 1). Aucun plafond de 10 % du capital n’existe (option 2). Le niveau atteint par la réserve légale n’est pas une condition (option 3) : seules les dotations obligatoires de la période sont déduites.",
+      "source_ref": "C. com. art. L232-12",
+      "estimated_seconds": 70,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0017",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-procedures-substantives",
+      "difficulty": 3,
+      "tags": [
+        "procédures substantives",
+        "augmentation de capital",
+        "libération"
+      ],
+      "statement": "L’AGE de la SA Xi décide une augmentation de capital en numéraire par émission de 100 000 actions de 10 € de nominal, émises au prix de 14 €. En contrôlant le certificat du dépositaire des fonds, quel montant minimal l’auditeur s’attend-il à voir versé lors de la souscription ?",
+      "options": [
+        "250 000 €",
+        "500 000 €",
+        "650 000 €",
+        "1 400 000 €"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Lors d’une augmentation de capital d’une SA, les actions de numéraire sont libérées d’un quart au moins du nominal et de la totalité de la prime d’émission : 100 000 × (10 / 4 + 4) = 250 000 + 400 000 = 650 000 € (option 3). L’option 1 oublie la prime. L’option 2 applique la libération de la moitié du nominal prévue à la constitution, sans la prime. L’option 4 correspond à la libération intégrale, qui n’est pas exigée.",
+      "source_ref": "C. com. art. L225-144 ; PCG comptes 1011, 1013, 1041, 4562",
+      "estimated_seconds": 90,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0018",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "réserve légale",
+        "affectation du résultat"
+      ],
+      "statement": "La SA Pi a un capital de 800 000 € et une réserve légale de 76 500 €. Le bénéfice de l’exercice N s’élève à 120 000 € ; il n’existe aucune perte antérieure. Le projet d’affectation prévoit une dotation à la réserve légale de 6 000 €. Recalculez la dotation minimale obligatoire à la réserve légale (en euros).",
+      "expected_value": 3500,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Prélèvement de 5 % : 120 000 × 5 % = 6 000 €. Mais la dotation n’est obligatoire que jusqu’à ce que la réserve atteigne 10 % du capital, soit 80 000 € : il manque 80 000 − 76 500 = 3 500 €. Dotation obligatoire = min (6 000 ; 3 500) = 3 500 €. La dotation de 6 000 € n’est pas interdite, mais l’excédent de 2 500 € n’a rien d’obligatoire : il réduit le bénéfice distribuable sans nécessité, ce que l’auditeur signale si le projet le présente comme une obligation légale.",
+      "source_ref": "C. com. art. L232-10",
+      "estimated_seconds": 120,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0019",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "subventions d’investissement",
+        "reprise",
+        "prorata temporis"
+      ],
+      "statement": "La société Upsilon a reçu le 01/04/N une subvention d’investissement de 90 000 € pour financer un équipement de 240 000 €, mis en service le 01/07/N et amorti en linéaire sur 5 ans. La subvention est inscrite en capitaux propres. Calculez la quote-part de subvention à virer au résultat de l’exercice N clos le 31/12/N (en euros).",
+      "expected_value": 9000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "La reprise suit le rythme de l’amortissement du bien financé, qui court à partir de la mise en service. Dotation N = 240 000 / 5 × 6/12 = 24 000 €. Reprise = 90 000 × 24 000 / 240 000 = 9 000 €. Partir de la date d’encaissement (9 mois) donnerait 13 500 € ; retenir une année pleine donnerait 18 000 €.",
+      "source_ref": "PCG, règles relatives aux subventions d’investissement (règl. ANC 2014-03) ; comptes 139, 777",
+      "estimated_seconds": 150,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0020",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "affectation du résultat",
+        "écriture d’ajustement"
+      ],
+      "statement": "Au 31/12/N−1, la SA Tau (capital 1 000 000 €, réserve légale 60 000 €) présentait un bénéfice de 180 000 € et un report à nouveau créditeur de 12 000 €. L’assemblée du 18/06/N a décidé : dotation à la réserve légale de 5 % du bénéfice, dotation aux réserves facultatives de 40 000 €, dividendes de 140 000 €, le solde en report à nouveau. Aucune écriture n’a été passée. Proposez l’écriture d’affectation à la date de l’assemblée. Utilisez les comptes 1061, 1068 et 457, et passez au compte 110 la seule variation nette du report à nouveau.",
+      "date": "18/06/N",
+      "entries": [
+        {
+          "account": "120",
+          "label": "Résultat de l’exercice (bénéfice)",
+          "debit": 180000,
+          "credit": 0
+        },
+        {
+          "account": "110",
+          "label": "Report à nouveau (variation nette)",
+          "debit": 9000,
+          "credit": 0
+        },
+        {
+          "account": "1061",
+          "label": "Réserve légale",
+          "debit": 0,
+          "credit": 9000
+        },
+        {
+          "account": "1068",
+          "label": "Autres réserves (facultatives)",
+          "debit": 0,
+          "credit": 40000
+        },
+        {
+          "account": "457",
+          "label": "Associés – dividendes à payer",
+          "debit": 0,
+          "credit": 140000
+        }
+      ],
+      "explanation": "Somme à affecter = 180 000 + 12 000 = 192 000 €. Réserve légale = 5 % × 180 000 = 9 000 € (la réserve passe à 69 000 €, sous le plafond de 100 000 €). Réserves facultatives 40 000 € ; dividendes 140 000 € ; nouveau report à nouveau = 192 000 − 9 000 − 40 000 − 140 000 = 3 000 €. Le report à nouveau créditeur passe de 12 000 € à 3 000 € : le compte 110 est débité de la variation de 9 000 €. Total des débits = 189 000 € = total des crédits.",
+      "source_ref": "C. com. art. L232-10 et L232-11 ; PCG comptes 110, 120, 1061, 1068, 457",
+      "estimated_seconds": 240,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0021",
+      "type": "audit_case",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "affectation du résultat",
+        "subventions d’investissement"
+      ],
+      "title": "Affectation du résultat et première subvention chez Thêta",
+      "cycle": "capitaux-propres",
+      "situation": "SA Thêta, clôture au 31/12/N. Capital 2 000 000 € entièrement libéré ; réserve légale 185 000 € à l’ouverture.\nLes comptes N−1 font apparaître un bénéfice de 420 000 € et un report à nouveau créditeur de 15 000 €.\nL’assemblée du 12/06/N a voté : dotation à la réserve légale de 15 000 €, dividendes de 300 000 €, réserves facultatives de 100 000 €, report à nouveau de 20 000 €.\nL’écriture d’affectation a été passée par un comptable recruté en N, qui n’avait jamais traité cette opération.\nEn N, Thêta a reçu sa première subvention d’investissement (240 000 €) pour un équipement mis en service le 01/07/N et amorti sur 10 ans.\nAucune opération sur le capital n’a eu lieu dans l’exercice ; le contexte ne révèle aucune incitation particulière de la direction.",
+      "assertions": [
+        "Mesure (affectation, réserve légale)",
+        "Évaluation (reprise de subvention)",
+        "Exhaustivité (dividendes à payer)"
+      ],
+      "procedures": {
+        "options": [
+          "Rapprocher l’écriture d’affectation du PV de l’assemblée et recalculer la dotation à la réserve légale au regard du plafond de 10 % du capital",
+          "Recalculer la quote-part de subvention virée au résultat à partir de la convention et du plan d’amortissement de l’équipement",
+          "Rapprocher les mouvements du compte 457 des paiements bancaires et vérifier que les dividendes non payés à la clôture figurent en dette",
+          "Envoyer une demande de confirmation au commissaire aux apports",
+          "Inventorier physiquement les espèces en caisse",
+          "Recalculer la provision pour indemnités de départ à la retraite"
+        ],
+        "answer": [
+          0,
+          1,
+          2
+        ]
+      },
+      "risk": {
+        "options": [
+          "Faible",
+          "Modéré",
+          "Élevé"
+        ],
+        "answer": 1,
+        "rationale": "Les opérations sont peu nombreuses et sans incitation particulière de la direction, ce qui écarte un risque élevé. Mais l’affectation a été comptabilisée par un comptable inexpérimenté sur cette opération et la subvention est la première reçue : le risque d’erreur de mesure (réserve légale plafonnée, reprise à proratiser) n’est pas faible. Le risque est modéré."
+      },
+      "conclusion": {
+        "model_answer": "Après rapprochement de l’écriture d’affectation avec le PV, recalcul de la réserve légale (plafonnée à 15 000 €, montant manquant pour atteindre 200 000 €), contrôle du compte 457 et recalcul de la reprise de subvention (240 000 / 10 × 6/12 = 12 000 € pour N), nous concluons sur la conformité des capitaux propres aux décisions de l’assemblée et aux règles comptables, sous réserve des écarts éventuellement relevés, qui feront l’objet d’ajustements proposés à la direction.",
+        "key_points": [
+          "Dotation à la réserve légale attendue : 15 000 € (plafond de 10 % du capital atteint)",
+          "Reprise de subvention attendue en N : 12 000 € (six mois d’amortissement)",
+          "Contrôle du compte 457 : dividendes payés et solde restant dû",
+          "Écarts éventuels traités par des ajustements proposés"
+        ]
+      },
+      "explanation": "Les trois procédures pertinentes couvrent la mesure de l’affectation, l’évaluation de la reprise de subvention et l’exhaustivité des dividendes à payer. Aucune opération d’apport n’ayant eu lieu, le commissaire aux apports n’a pas à intervenir ; la caisse et les engagements de retraite relèvent d’autres cycles. Chiffres de contrôle : 5 % × 420 000 = 21 000 € > 200 000 − 185 000 = 15 000 €, d’où une dotation de 15 000 € ; somme affectée 420 000 + 15 000 = 435 000 € = 15 000 + 300 000 + 100 000 + 20 000.",
+      "source_ref": "NEP 330 ; C. com. art. L232-10 ; PCG, règles relatives aux subventions d’investissement ; comptes 1061, 457, 139, 777",
+      "estimated_seconds": 480,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0022",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-pieges",
+      "difficulty": 1,
+      "tags": [
+        "pièges",
+        "capitaux propres inférieurs à la moitié du capital",
+        "délais"
+      ],
+      "statement": "Les comptes N d’une SA, approuvés le 10/06/N+1, font apparaître pour la première fois des capitaux propres inférieurs à la moitié du capital social du fait des pertes. Dans quel délai le conseil d’administration doit-il convoquer l’assemblée générale extraordinaire pour statuer sur une éventuelle dissolution anticipée ?",
+      "options": [
+        "Dans les six mois suivant la clôture de l’exercice N",
+        "Avant la clôture du deuxième exercice suivant celui de la constatation des pertes",
+        "Dans le mois suivant l’approbation des comptes",
+        "Dans les quatre mois suivant l’approbation des comptes, soit au plus tard le 10/10/N+1"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L’AGE doit être consultée dans les quatre mois qui suivent l’approbation des comptes ayant fait apparaître les pertes (option 4). L’option 1 correspond au délai d’approbation des comptes annuels. L’option 2 correspond au délai de régularisation (reconstitution des capitaux propres ou réduction du capital) lorsque la dissolution n’est pas décidée. L’option 3 n’a pas de fondement légal.",
+      "source_ref": "C. com. art. L225-248",
+      "estimated_seconds": 50,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0023",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-pieges",
+      "difficulty": 3,
+      "tags": [
+        "pièges",
+        "réserve légale",
+        "report à nouveau débiteur"
+      ],
+      "statement": "SA Phi : capital 400 000 € ; réserve légale 36 000 € ; report à nouveau débiteur 20 000 € ; bénéfice de l’exercice 90 000 €. Quelle est la dotation minimale obligatoire à la réserve légale ?",
+      "options": [
+        "4 500 €",
+        "3 500 €",
+        "4 000 €",
+        "9 000 €"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Base = bénéfice diminué des pertes antérieures : 90 000 − 20 000 = 70 000 € ; 5 % × 70 000 = 3 500 €. Plafond restant : 10 % × 400 000 − 36 000 = 4 000 €, non atteint. Dotation = 3 500 € (option 2). L’option 1 applique 5 % au bénéfice brut sans plafond. L’option 3 applique 5 % au bénéfice brut (4 500 €) puis le plafond de 4 000 € : la base est erronée. L’option 4 confond le taux de 5 % et le plafond de 10 %.",
+      "source_ref": "C. com. art. L232-10",
+      "estimated_seconds": 90,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0024",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-pieges",
+      "difficulty": 2,
+      "tags": [
+        "pièges",
+        "capitaux propres inférieurs à la moitié du capital",
+        "régularisation"
+      ],
+      "statement": "Lorsque l’AGE d’une SA dont les capitaux propres sont devenus inférieurs à la moitié du capital décide de ne pas dissoudre la société, celle-ci doit, au plus tard à la clôture du deuxième exercice suivant celui de la constatation des pertes, reconstituer ses capitaux propres à hauteur d’au moins la moitié du capital ou réduire son capital dans les conditions légales.",
+      "answer": true,
+      "justification": "Vrai : c’est le délai de régularisation prévu par le Code de commerce lorsque la dissolution anticipée n’est pas décidée.",
+      "explanation": "La constatation des pertes intervient lors de l’approbation des comptes : pour des comptes N approuvés en N+1, la régularisation doit être acquise à la clôture de N+3. La reconstitution peut résulter de bénéfices, d’une augmentation de capital ou d’apports ; à défaut, la société réduit son capital. Sans régularisation, tout intéressé peut demander la dissolution en justice ; le tribunal peut accorder un délai, et la dissolution n’est pas prononcée si la situation est régularisée au jour où il statue.",
+      "source_ref": "C. com. art. L225-248",
+      "estimated_seconds": 50,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0025",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-pieges",
+      "difficulty": 3,
+      "tags": [
+        "pièges",
+        "subventions d’investissement",
+        "bien non amortissable",
+        "prorata temporis"
+      ],
+      "statement": "La société Chi a reçu en N deux subventions d’investissement inscrites en capitaux propres :\n- 64 000 € reçus le 01/01/N pour l’achat d’un terrain ; la convention impose une clause d’inaliénabilité du terrain de 8 ans ;\n- 50 000 € pour un équipement de 200 000 €, mis en service le 01/10/N et amorti en linéaire sur 4 ans.\nCalculez la quote-part totale des subventions à virer au résultat de l’exercice N clos le 31/12/N (en euros).",
+      "expected_value": 11125,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Terrain (non amortissable) avec clause d’inaliénabilité : reprise sur la durée de la clause, 64 000 / 8 = 8 000 €. Équipement : dotation N = 200 000 / 4 × 3/12 = 12 500 € ; reprise = 50 000 × 12 500 / 200 000 = 3 125 €. Total = 11 125 €. Erreurs classiques : reprendre le terrain par dixièmes (6 400 €, total 9 525 €), réservé à l’absence de clause d’inaliénabilité ; ne pas proratiser l’équipement (12 500 €, total 20 500 €) ; ne rien reprendre sur le terrain au motif qu’il n’est pas amorti (total 3 125 €).",
+      "source_ref": "PCG, règles relatives aux subventions d’investissement (règl. ANC 2014-03) ; CGI art. 42 septies (rythme de reprise des subventions finançant un bien non amortissable) ; comptes 131, 139, 777",
+      "estimated_seconds": 210,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0026",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-pieges",
+      "difficulty": 3,
+      "tags": [
+        "pièges",
+        "capitaux propres inférieurs à la moitié du capital",
+        "continuité d’exploitation"
+      ],
+      "title": "Capitaux propres inférieurs à la moitié du capital chez Lambda",
+      "context": "Vous êtes commissaire aux comptes de la SA Lambda (clôture au 31/12/N). Les comptes N, arrêtés par le conseil, seront soumis à l’assemblée d’approbation le 18/05/N+1. Capitaux propres au 31/12/N :\n- capital social : 1 500 000 € (entièrement libéré) ;\n- prime d’émission : 100 000 € ;\n- réserve légale : 60 000 € ;\n- report à nouveau débiteur : 420 000 € ;\n- résultat N (perte) : 610 000 € ;\n- subventions d’investissement nettes (131 − 139) : 85 000 € ;\n- provisions réglementées : 25 000 €.\nLa direction présente un plan de redressement prévoyant un retour aux bénéfices en N+2 ; le principal concours bancaire arrive à échéance en septembre N+1 et son renouvellement est en cours de négociation.",
+      "sub_questions": [
+        {
+          "id": "q1-capitaux-propres",
+          "kind": "numeric",
+          "prompt": "Calculez le montant des capitaux propres au 31/12/N, en retenant le total de la rubrique « capitaux propres » du bilan (subventions et provisions réglementées comprises), en euros.",
+          "expected_value": 740000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 3,
+          "explanation": "1 500 000 + 100 000 + 60 000 − 420 000 − 610 000 + 85 000 + 25 000 = 740 000 €. Moitié du capital : 750 000 €. Les capitaux propres sont inférieurs de 10 000 € ; en excluant subventions et provisions réglementées, ils seraient de 630 000 €, la conclusion reste la même."
+        },
+        {
+          "id": "q2-procedure",
+          "kind": "true_false",
+          "prompt": "La procédure prévue en cas de capitaux propres inférieurs à la moitié du capital social doit être mise en œuvre à l’issue de l’approbation des comptes N.",
+          "answer": true,
+          "points": 1,
+          "explanation": "740 000 € < 750 000 € : la condition est remplie du fait des pertes constatées dans les comptes N."
+        },
+        {
+          "id": "q3-delai",
+          "kind": "mcq",
+          "prompt": "Au plus tard à quelle date l’assemblée générale extraordinaire doit-elle être consultée ?",
+          "options": [
+            "30/06/N+1",
+            "18/09/N+1",
+            "31/12/N+1",
+            "31/12/N+3"
+          ],
+          "answer": [
+            1
+          ],
+          "points": 2,
+          "explanation": "Quatre mois après l’approbation des comptes du 18/05/N+1, soit le 18/09/N+1 (option 2). Le 30/06/N+1 correspond au délai d’approbation des comptes (six mois). Le 31/12/N+3 est la date limite de régularisation si la dissolution n’est pas décidée (clôture du deuxième exercice suivant celui de la constatation, intervenue en N+1). Le 31/12/N+1 n’a pas de fondement."
+        },
+        {
+          "id": "q4-cac",
+          "kind": "open",
+          "prompt": "Quelles sont les diligences et obligations du commissaire aux comptes dans cette situation ?",
+          "model_answer": "Le commissaire aux comptes vérifie que le conseil convoque l’AGE dans les quatre mois suivant l’approbation et que la décision fait l’objet de la publicité légale. À défaut, il signale l’irrégularité à la plus prochaine assemblée. Il rappelle que, si la dissolution n’est pas décidée, les capitaux propres doivent être reconstitués à au moins la moitié du capital, ou le capital réduit, au plus tard le 31/12/N+3. Indépendamment de cette procédure, les pertes cumulées et l’échéance du concours bancaire en septembre N+1 sont des indices de difficulté : il apprécie le caractère approprié de la convention de continuité d’exploitation (NEP 570), examine le plan de redressement et l’état des négociations bancaires, vérifie l’information donnée en annexe et en tire les conséquences sur son rapport ; si des faits sont de nature à compromettre la continuité de l’exploitation, il envisage la procédure d’alerte.",
+          "key_points": [
+            "Contrôle de la convocation de l’AGE dans les quatre mois et de la publicité",
+            "Signalement de l’irrégularité à la prochaine assemblée à défaut",
+            "Délai de régularisation au 31/12/N+3 si la dissolution n’est pas décidée",
+            "Appréciation de la continuité d’exploitation (NEP 570) : plan, concours bancaire, annexe",
+            "Procédure d’alerte envisagée si la continuité est compromise"
+          ],
+          "points": 4
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas articule le calcul des capitaux propres, le calendrier de la procédure (quatre mois pour l’AGE, clôture du deuxième exercice suivant la constatation pour régulariser) et la distinction entre l’obligation juridique et l’appréciation de la continuité d’exploitation, qui obéit à ses propres règles.",
+      "source_ref": "C. com. art. L225-248 ; NEP 570 (continuité d’exploitation)",
+      "estimated_seconds": 840,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-capitaux-0027",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "capitaux-propres-pieges",
+      "difficulty": 3,
+      "tags": [
+        "pièges",
+        "dividende fictif",
+        "réserve légale",
+        "bénéfice distribuable",
+        "subventions d’investissement"
+      ],
+      "title": "Projet de dividende et ajustement d’audit chez Mu",
+      "context": "SA Mu, clôture au 31/12/N. Capitaux propres avant affectation :\n- capital : 1 200 000 € (entièrement libéré) ;\n- réserve légale : 110 000 € ;\n- réserves facultatives : 50 000 € ;\n- report à nouveau débiteur : 40 000 € ;\n- bénéfice N (comptes provisoires) : 260 000 €.\nLes statuts ne prévoient aucune réserve statutaire.\nVos travaux montrent que la reprise de subvention d’investissement comptabilisée en N (30 000 €) aurait dû s’élever à 12 000 €. La direction accepte de corriger. L’impôt sur les bénéfices est ignoré (déficits reportables suffisants).\nLe conseil envisage de proposer à l’assemblée un dividende de 230 000 €, prélevé sur le résultat de l’exercice.",
+      "sub_questions": [
+        {
+          "id": "q1-reserve-legale",
+          "kind": "numeric",
+          "prompt": "Après correction, calculez la dotation minimale obligatoire à la réserve légale (en euros).",
+          "expected_value": 10000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 3,
+          "explanation": "Bénéfice corrigé = 260 000 − (30 000 − 12 000) = 242 000 €. 5 % × (242 000 − 40 000) = 10 100 €. Plafond restant : 10 % × 1 200 000 − 110 000 = 10 000 €. Dotation = 10 000 €. Sans le plafond, on obtiendrait 10 100 € ; sur le bénéfice non corrigé, 11 000 € avant plafond."
+        },
+        {
+          "id": "q2-distribuable",
+          "kind": "numeric",
+          "prompt": "Après correction, calculez le bénéfice distribuable de l’exercice, hors réserves (en euros).",
+          "expected_value": 192000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 3,
+          "explanation": "242 000 − 40 000 − 10 000 = 192 000 €. Sans la correction d’audit, on obtiendrait 260 000 − 40 000 − 10 000 = 210 000 €."
+        },
+        {
+          "id": "q3-dividende",
+          "kind": "mcq",
+          "prompt": "Que conclure du dividende envisagé de 230 000 € ?",
+          "options": [
+            "Il est régulier sans modification, puisqu’il est inférieur au bénéfice de l’exercice",
+            "Il n’est régulier que si l’assemblée décide expressément de prélever au moins 38 000 € sur les réserves facultatives, en indiquant le poste",
+            "Il est irrégulier dans tous les cas, les réserves ne pouvant jamais être distribuées",
+            "Il est régulier à condition de prélever 38 000 € sur la réserve légale"
+          ],
+          "answer": [
+            1
+          ],
+          "points": 2,
+          "explanation": "230 000 − 192 000 = 38 000 € excèdent le bénéfice distribuable. L’assemblée peut distribuer des réserves disponibles par une décision expresse indiquant les postes prélevés ; les réserves facultatives (50 000 €) suffisent (option 2). Après distribution, les capitaux propres (1 332 000 €) restent supérieurs au capital augmenté de la réserve légale (1 320 000 €). L’option 1 ignore le report à nouveau débiteur et la réserve légale. L’option 3 est fausse : les réserves disponibles sont distribuables. L’option 4 est fausse : la réserve légale n’est pas distribuable."
+        },
+        {
+          "id": "q4-demarche",
+          "kind": "open",
+          "prompt": "Décrivez la démarche de l’auditeur sur ce projet de distribution.",
+          "model_answer": "L’auditeur obtient la correction de la reprise de subvention (débit 777, crédit 139 pour 18 000 €) avant l’arrêté définitif des comptes, car le bénéfice distribuable se détermine sur les comptes approuvés. Il signale à la direction que le dividende envisagé excède de 38 000 € le bénéfice distribuable corrigé et qu’il ne peut être voté que si la résolution prévoit expressément un prélèvement sur les réserves facultatives. Il vérifie le texte des résolutions et, après l’assemblée, la conformité de l’écriture d’affectation. Une distribution votée sans ce prélèvement exprès excéderait le bénéfice distribuable de l’exercice : ce serait un dividende fictif, irrégularité à signaler à l’assemblée. La société pourrait en exiger la restitution des actionnaires qui en connaissaient le caractère irrégulier ou ne pouvaient l’ignorer (C. com. art. L232-17), et les dirigeants engageraient leur responsabilité civile, voire pénale (délit de répartition de dividendes fictifs).",
+          "key_points": [
+            "Correction préalable de la reprise de subvention (777 / 139 pour 18 000 €)",
+            "Dépassement de 38 000 € à couvrir par un prélèvement exprès sur les réserves facultatives",
+            "Contrôle des résolutions et de l’écriture d’affectation",
+            "À défaut : dividende fictif, irrégularité à signaler"
+          ],
+          "points": 4
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Le cas combine trois pièges : l’incidence d’un ajustement d’audit sur le bénéfice distribuable, la réserve légale calculée après pertes antérieures puis plafonnée, et la distribution de réserves qui exige une décision expresse. La réserve légale n’est jamais distribuable.",
+      "source_ref": "C. com. art. L232-10, L232-11 et L232-12 ; PCG comptes 139, 777, 1061, 1068",
+      "estimated_seconds": 900,
+      "verified": true
+    }
+  ]
+}

@@ -7,17 +7,132 @@
       "theme": "pcg-comptes-annuels",
       "notion": "provisions-risques-charges",
       "difficulty": 1,
-      "tags": ["provision pour litige", "dotation"],
+      "tags": [
+        "provision pour litige",
+        "dotation"
+      ],
       "statement": "Au 31/12/N, la société Alpha fait l'objet d'une action en justice engagée par un ancien client qui lui réclame 40 000 € de dommages et intérêts. Son avocat estime probable une condamnation à verser 25 000 €. Le litige relève de l'activité courante. Passez l'écriture d'inventaire au 31/12/N.",
       "date": "31/12/N",
       "entries": [
-        { "account": "6815", "label": "Dotations aux provisions d'exploitation", "debit": 25000, "credit": 0 },
-        { "account": "1511", "label": "Provisions pour litiges", "debit": 0, "credit": 25000 }
+        {
+          "account": "6815",
+          "label": "Dotations aux provisions d'exploitation",
+          "debit": 25000,
+          "credit": 0
+        },
+        {
+          "account": "1511",
+          "label": "Provisions pour litiges",
+          "debit": 0,
+          "credit": 25000
+        }
       ],
       "explanation": "Les trois conditions de comptabilisation d'un passif sont réunies : obligation à l'égard d'un tiers à la clôture (le litige), sortie de ressources probable sans contrepartie au moins équivalente, montant estimable de façon fiable. On provisionne la meilleure estimation de la sortie de ressources (25 000 €), et non le montant réclamé (40 000 €). Le litige étant lié à l'exploitation, la dotation est enregistrée au compte 6815 (dotations aux provisions d'exploitation) par le crédit du compte 1511 (provisions pour litiges).",
       "source_ref": "PCG art. 321-5, 322-1 et 323-1 à 323-6 (règl. ANC 2014-03) ; comptes 1511 et 6815",
       "verified": true,
       "estimated_seconds": 120
+    },
+    {
+      "id": "ue4-pcg-provisions-0002",
+      "type": "mcq",
+      "difficulty": 2,
+      "tags": [
+        "conditions de comptabilisation",
+        "contrat déficitaire"
+      ],
+      "statement": "Au 31/12/N, laquelle de ces situations justifie la comptabilisation d’une provision dans les comptes de la société Ravel ?",
+      "options": [
+        "Les budgets prévoient une perte d’exploitation de 150 000 € en N+1 du fait de la baisse du marché",
+        "Le conseil d’administration a décidé le 20/12/N une restructuration qui n’a été ni engagée ni annoncée aux personnes concernées avant le 31/12/N",
+        "Un contrat de vente ferme et non résiliable signé en N fera ressortir une perte de 40 000 € lors de son exécution en N+1",
+        "Un plan de formation de 30 000 € est programmé pour le personnel en N+1"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Le contrat ferme et déficitaire crée à la clôture une obligation contractuelle dont l’exécution entraînera une sortie de ressources sans contrepartie au moins équivalente : une provision pour perte sur contrat de 40 000 € est requise. Les pertes d’exploitation futures ne résultent d’aucune obligation à la clôture. Une restructuration n’est provisionnée que si elle a été décidée et annoncée (ou engagée) avant la clôture, créant une attente chez les personnes concernées. Le plan de formation est une dépense future sans obligation envers un tiers à la clôture.",
+      "source_ref": "PCG art. 321-1 s. et 322-1 s. (règl. ANC 2014-03), conditions de comptabilisation des provisions",
+      "estimated_seconds": 90,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "provisions-risques-charges",
+      "verified": true
+    },
+    {
+      "id": "ue4-pcg-provisions-0003",
+      "type": "true_false",
+      "difficulty": 1,
+      "tags": [
+        "évaluation",
+        "litige"
+      ],
+      "statement": "Une provision pour litige doit être évaluée au montant réclamé par le demandeur.",
+      "answer": false,
+      "justification": "La provision est évaluée à la meilleure estimation de la sortie de ressources nécessaire pour éteindre l’obligation, et non au montant réclamé.",
+      "explanation": "Le montant réclamé par la partie adverse est souvent supérieur à ce que l’entité devra effectivement verser. La provision correspond à la meilleure estimation de la sortie de ressources à la clôture, établie à partir des éléments disponibles (avis de l’avocat, jurisprudence, état de la procédure), et révisée à chaque clôture.",
+      "source_ref": "PCG art. 323-1 s. (règl. ANC 2014-03), évaluation des passifs",
+      "estimated_seconds": 30,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "provisions-risques-charges",
+      "verified": true
+    },
+    {
+      "id": "ue4-pcg-provisions-0004",
+      "type": "numeric",
+      "difficulty": 3,
+      "tags": [
+        "garanties données aux clients",
+        "approche statistique",
+        "dotation complémentaire"
+      ],
+      "statement": "La société Cardon vend des appareils assortis d’une garantie de 2 ans à compter de la vente. Les statistiques internes, fiables, montrent qu’en moyenne 1,5 % des appareils sous garantie donnent lieu à une réparation par année de garantie restant à courir, pour un coût moyen de 200 € par réparation. Au 31/12/N :\n- les 8 000 appareils vendus en N-1 ont encore 1 an de garantie à courir ;\n- les 12 000 appareils vendus en N ont encore 2 ans de garantie à courir.\nLa provision pour garanties inscrite au bilan au 31/12/N-1 s’élève à 70 000 €. Quel est le montant de la dotation complémentaire à comptabiliser au 31/12/N (en euros) ?",
+      "expected_value": 26000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Pour une population nombreuse d’obligations, la provision correspond à l’espérance des coûts. Ventes N-1 : 8 000 × 1,5 % × 1 an × 200 = 24 000 €. Ventes N : 12 000 × 1,5 % × 2 ans × 200 = 72 000 €. Provision nécessaire au 31/12/N : 96 000 €. Dotation complémentaire : 96 000 − 70 000 = 26 000 € (6815 / 1512). Retenir la provision totale (96 000 €) ou omettre la seconde année de garantie des ventes N (60 000 € nécessaires, soit une reprise) seraient des erreurs.",
+      "source_ref": "PCG art. 322-1 s. et 323-1 s. (règl. ANC 2014-03) ; comptes 1512 et 6815",
+      "estimated_seconds": 240,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "provisions-risques-charges",
+      "verified": true
+    },
+    {
+      "id": "ue4-pcg-provisions-0005",
+      "type": "journal_entry",
+      "difficulty": 2,
+      "tags": [
+        "gros entretien",
+        "révision d’estimation"
+      ],
+      "statement": "La société Lemaire exploite un four soumis à une obligation réglementaire de révision complète tous les 5 ans. Elle a opté pour la constitution d’une provision pour gros entretien plutôt que pour l’approche par composants. La dernière révision a eu lieu le 01/01/N-1 ; la prochaine aura lieu le 31/12/N+3. La provision, constituée linéairement sur la période de 5 ans séparant deux révisions, s’élève à 12 000 € au 31/12/N-1 (coût alors estimé à 60 000 €). Au 31/12/N, le coût estimé de la prochaine révision est porté à 70 000 €. Passez l’écriture d’ajustement de la provision au 31/12/N.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "6815",
+          "label": "Dotations aux provisions d’exploitation",
+          "debit": 16000,
+          "credit": 0
+        },
+        {
+          "account": "1572",
+          "label": "Provisions pour gros entretien ou grandes révisions",
+          "debit": 0,
+          "credit": 16000
+        }
+      ],
+      "explanation": "La provision pour gros entretien est constituée progressivement sur la période séparant deux révisions (5 exercices : N-1 à N+3), sur la base du coût estimé à la clôture. Au 31/12/N, deux exercices sur cinq sont écoulés : provision nécessaire = 70 000 × 2/5 = 28 000 €. La révision du coût estimé (changement d’estimation) est traitée de manière prospective dans l’exercice, sans retraitement de N-1. Dotation : 28 000 − 12 000 = 16 000 € (6815 / 1572). Une dotation calculée sur l’ancien coût (12 000 €) ou sur le seul nouveau coût annuel (14 000 €) serait insuffisante.",
+      "source_ref": "PCG art. 322-1 s. et 323-1 s. (règl. ANC 2014-03), provisions pour gros entretien ou grandes révisions ; comptes 1572 et 6815",
+      "estimated_seconds": 150,
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "provisions-risques-charges",
+      "verified": true
     }
   ]
 }

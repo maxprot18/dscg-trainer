@@ -24,6 +24,121 @@
       "source_ref": "IAS 36 §18, §30-31, §55 et §59-60 (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 180
+    },
+    {
+      "id": "ue4-ifrs-ias36-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-36-depreciation-actifs",
+      "difficulty": 1,
+      "tags": [
+        "test annuel",
+        "goodwill",
+        "indice de perte de valeur"
+      ],
+      "statement": "Pour lequel des actifs suivants un test de dépréciation doit-il être réalisé chaque année, même en l'absence de tout indice de perte de valeur ?",
+      "options": [
+        "Un immeuble de bureaux amorti sur 40 ans",
+        "Un brevet acquis, amorti sur sa durée de protection restante de 8 ans",
+        "Le goodwill issu d'un regroupement d'entreprises",
+        "Une machine de production récente et pleinement utilisée"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "IAS 36 §10 impose un test annuel, indépendamment de tout indice, pour le goodwill acquis lors d'un regroupement d'entreprises, pour les immobilisations incorporelles à durée d'utilité indéterminée et pour celles qui ne sont pas encore prêtes à être utilisées. L'immeuble, le brevet amorti (durée d'utilité finie) et la machine ne sont testés que si un indice de perte de valeur est identifié à la clôture (§9).",
+      "source_ref": "IAS 36 §9-10 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-ifrs-ias36-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-36-depreciation-actifs",
+      "difficulty": 2,
+      "tags": [
+        "reprise de perte de valeur",
+        "plafond de reprise"
+      ],
+      "statement": "Une machine acquise le 01/01/N pour 500 000 €, amortie linéairement sur 10 ans sans valeur résiduelle, a été dépréciée au 31/12/N : sa valeur recouvrable était alors de 360 000 € et l'amortissement a ensuite été calculé sur la durée résiduelle de 9 ans. Au 31/12/N+2, après l'amortissement de N+2, un indice montre que la perte a diminué : la valeur recouvrable est estimée à 420 000 €. Quel montant de reprise de perte de valeur comptabiliser ?",
+      "options": [
+        "140 000 €",
+        "90 000 €",
+        "0 €, une perte de valeur ne se reprend pas",
+        "70 000 €"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Valeur comptable au 31/12/N+2 = 360 000 − 2 × 40 000 = 280 000 €. La reprise est plafonnée à la valeur comptable qu'aurait eue l'actif sans dépréciation, nette des amortissements (IAS 36 §117) : 500 000 − 3 × 50 000 = 350 000 €. Reprise = 350 000 − 280 000 = 70 000 €. 140 000 € porterait l'actif à sa valeur recouvrable, au-delà du plafond. 90 000 € reprend la perte initiale sans tenir compte des amortissements qu'elle a évités. L'interdiction de reprise ne vise que le goodwill (§124).",
+      "source_ref": "IAS 36 §114-117 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 120
+    },
+    {
+      "id": "ue4-ifrs-ias36-0004",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-36-depreciation-actifs",
+      "difficulty": 1,
+      "tags": [
+        "goodwill",
+        "reprise de perte de valeur"
+      ],
+      "statement": "Une perte de valeur comptabilisée sur un goodwill peut être reprise lors d'un exercice ultérieur si la valeur recouvrable de l'UGT à laquelle il est affecté augmente.",
+      "answer": false,
+      "justification": "IAS 36 interdit toute reprise d'une perte de valeur sur le goodwill.",
+      "explanation": "Une perte de valeur du goodwill ne peut pas être reprise lors d'une période ultérieure (IAS 36 §124). La hausse ultérieure de la valeur recouvrable de l'UGT traduit vraisemblablement un goodwill généré en interne, dont la comptabilisation est interdite par IAS 38 §48 (IAS 36 §125). La reprise reste possible pour les autres actifs de l'UGT, dans la limite du plafond de §117.",
+      "source_ref": "IAS 36 §124-125 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-ifrs-ias36-0005",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-36-depreciation-actifs",
+      "difficulty": 3,
+      "tags": [
+        "UGT",
+        "goodwill",
+        "imputation de la perte de valeur"
+      ],
+      "statement": "Au 31/12/N, une UGT comprend : un goodwill de 80 000 €, des constructions d'une valeur comptable de 400 000 € et du matériel d'une valeur comptable de 200 000 €. Sa valeur recouvrable est de 560 000 €. La juste valeur diminuée des coûts de sortie des constructions, déterminable isolément, est de 390 000 € ; ni la juste valeur ni la valeur d'utilité du matériel ne peuvent être déterminées isolément. Calculez la valeur comptable du matériel après imputation de la perte de valeur de l'UGT (en euros).",
+      "expected_value": 170000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Perte de valeur de l'UGT = (80 000 + 400 000 + 200 000) − 560 000 = 120 000 €. Elle est imputée d'abord sur le goodwill (80 000 €, ramené à zéro), puis le solde de 40 000 € sur les autres actifs au prorata de leur valeur comptable (IAS 36 §104) : 26 666,67 € aux constructions et 13 333,33 € au matériel. Mais les constructions ne peuvent descendre sous leur juste valeur diminuée des coûts de sortie de 390 000 € (§105) : leur perte est limitée à 10 000 €. Les 16 666,67 € non imputés sont répartis sur le matériel, qui supporte au total 30 000 €. Valeur comptable du matériel = 200 000 − 30 000 = 170 000 €. Ignorer le plancher de §105 donnerait 186 666,67 €.",
+      "source_ref": "IAS 36 §104-105 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 300
+    },
+    {
+      "id": "ue4-ifrs-ias36-0006",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-36-depreciation-actifs",
+      "difficulty": 1,
+      "tags": [
+        "valeur recouvrable",
+        "définition"
+      ],
+      "front": "Comment se définit la valeur recouvrable d'un actif selon IAS 36 ?",
+      "back": "C'est le plus élevé de :\n- la juste valeur diminuée des coûts de sortie ;\n- la valeur d'utilité (valeur actualisée des flux de trésorerie futurs attendus de l'actif).\nUne perte de valeur est constatée si la valeur comptable excède la valeur recouvrable.",
+      "explanation": "IAS 36 §6 et §18. Si l'un des deux montants excède la valeur comptable, l'actif n'est pas déprécié et il n'est pas nécessaire de calculer l'autre (§19).",
+      "source_ref": "IAS 36 §6 et §18 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 30
     }
   ]
 }

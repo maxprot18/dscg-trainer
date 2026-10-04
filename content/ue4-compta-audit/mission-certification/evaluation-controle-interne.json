@@ -1,0 +1,222 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-mission-ci-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "evaluation-controle-interne",
+      "difficulty": 1,
+      "tags": [
+        "NEP 315",
+        "composantes du contrôle interne"
+      ],
+      "statement": "Parmi les éléments suivants, lequel n'est pas une composante du contrôle interne de l'entité dont le commissaire aux comptes prend connaissance selon la NEP 315 ?",
+      "options": [
+        "L'environnement de contrôle",
+        "Le seuil de signification retenu par le commissaire aux comptes",
+        "Les activités (procédures) de contrôle",
+        "La surveillance du bon fonctionnement des contrôles"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La NEP 315 décrit les composantes du contrôle interne de l'entité : environnement de contrôle, processus d'identification par l'entité des risques liés à son activité, système d'information relatif à l'élaboration de l'information financière, procédures de contrôle et surveillance de leur bon fonctionnement. Le seuil de signification est un outil de l'auditeur (NEP 320), qui ne relève pas du dispositif de contrôle de l'entité. Les trois autres propositions sont bien des composantes.",
+      "source_ref": "NEP 315 (connaissance de l'entité, dont son contrôle interne) ; NEP 320",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-mission-ci-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "evaluation-controle-interne",
+      "difficulty": 2,
+      "tags": [
+        "NEP 315",
+        "test de cheminement",
+        "mise en œuvre des contrôles"
+      ],
+      "statement": "Chez Lumen SAS, un collaborateur suit une commande client depuis sa saisie jusqu'à l'encaissement, en inspectant chaque document et en observant les contrôles décrits par le responsable administratif (vérification du crédit client, rapprochement bon de livraison et facture). Que lui permet ce test de cheminement ?",
+      "options": [
+        "Conclure que les contrôles du cycle ventes ont fonctionné efficacement pendant tout l'exercice",
+        "Se dispenser de procédures de substance sur les créances clients significatives",
+        "Vérifier l'existence de l'ensemble des créances clients à la clôture",
+        "Confirmer sa compréhension du processus et vérifier que les contrôles décrits ont été mis en œuvre"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Le test de cheminement est une procédure de prise de connaissance du contrôle interne (NEP 315) : il permet de confirmer la compréhension du processus et de vérifier la mise en œuvre des contrôles, sur une opération. Il ne démontre pas leur efficacité sur la période, qui exige des tests de procédures portant sur un nombre suffisant d'opérations (NEP 330). Même avec des contrôles efficaces, des procédures de substance restent obligatoires sur les soldes significatifs. Enfin, l'existence des créances à la clôture se vérifie par des procédures de substance (confirmations, encaissements postérieurs), non par le suivi d'une commande.",
+      "source_ref": "NEP 315 (prise de connaissance du contrôle interne) ; NEP 330 (tests de procédures et procédures de substance)",
+      "verified": true,
+      "estimated_seconds": 70
+    },
+    {
+      "id": "ue4-mission-ci-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "evaluation-controle-interne",
+      "difficulty": 3,
+      "tags": [
+        "séparation des fonctions",
+        "NEP 265",
+        "trésorerie",
+        "risque lié au contrôle"
+      ],
+      "multiple": true,
+      "statement": "Chez Corail SAS, une même employée ouvre le courrier, enregistre les règlements clients en comptabilité, remet les chèques en banque, établit les avoirs et prépare le rapprochement bancaire mensuel, qui n'est revu par personne. Les créances clients représentent 2,4 millions d'euros, pour un seuil de signification de 90 000 €. Quelles sont les conséquences appropriées pour l'audit ? (plusieurs réponses)",
+      "options": [
+        "Il s'agit d'une faiblesse de séparation des fonctions, qui permet un détournement d'encaissements masqué par des avoirs ou des imputations décalées ; le commissaire aux comptes la communique à la direction et, le cas échéant, aux organes de gouvernance",
+        "Le risque lié au contrôle est élevé sur les encaissements et les créances : le commissaire aux comptes renforce ses procédures de substance (confirmation de soldes clients, examen des avoirs et des créances passées en pertes, rapprochement bancaire refait à la clôture)",
+        "Le commissaire aux comptes teste ce dispositif sur un échantillon de règlements afin de pouvoir réduire ses procédures de substance sur les créances",
+        "Le commissaire aux comptes doit refuser de certifier les comptes, puisque le contrôle interne ne permet pas de garantir la fiabilité des comptes"
+      ],
+      "answer": [
+        0,
+        1
+      ],
+      "explanation": "Le cumul des fonctions d'encaissement, d'enregistrement, d'établissement des avoirs et de rapprochement supprime la séparation entre détention des actifs, enregistrement et contrôle : une même personne peut détourner un chèque et masquer l'écart. C'est une faiblesse importante, à communiquer en application de la NEP 265 (option 1). Le contrôle étant défaillant, le risque lié au contrôle est élevé et l'auditeur répond par des procédures de substance plus probantes et plus étendues (option 2, NEP 330). Tester un contrôle dont on sait qu'il est mal conçu n'a pas de sens : les tests de procédures ne se justifient que si l'auditeur prévoit de s'appuyer sur le contrôle (l'option 3 est fausse). Une faiblesse de contrôle interne n'entraîne pas par elle-même une modification de l'opinion : celle-ci dépend des anomalies significatives éventuellement relevées ou d'une impossibilité de collecter des éléments suffisants (l'option 4 est fausse).",
+      "source_ref": "NEP 265 (communication des faiblesses du contrôle interne) ; NEP 315 ; NEP 330 (réponses au risque évalué)",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue4-mission-ci-0004",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "evaluation-controle-interne",
+      "difficulty": 2,
+      "tags": [
+        "NEP 330",
+        "tests de procédures",
+        "efficacité des contrôles"
+      ],
+      "statement": "Lorsque le commissaire aux comptes prévoit de s'appuyer sur l'efficacité d'un contrôle pour réduire ses procédures de substance, il doit collecter des éléments sur le fonctionnement de ce contrôle pendant toute la période sur laquelle il entend s'appuyer.",
+      "answer": true,
+      "justification": "Un test de procédures porte sur l'efficacité du contrôle pendant la période concernée, pas seulement à une date ; un contrôle efficace en mars peut avoir cessé de fonctionner en novembre.",
+      "explanation": "La NEP 330 prévoit des tests de procédures lorsque l'auditeur part de l'hypothèse que les contrôles fonctionnent efficacement. Ces tests doivent couvrir la période sur laquelle il compte s'appuyer. Si les tests ont été réalisés en intérim, il collecte des éléments complémentaires sur la période restant à courir jusqu'à la clôture (changements significatifs, résultat de tests complémentaires). À défaut, il ne peut pas réduire ses procédures de substance.",
+      "source_ref": "NEP 330 (procédures mises en œuvre par le commissaire aux comptes à l'issue de son évaluation des risques), tests de procédures",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-mission-ci-0005",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "evaluation-controle-interne",
+      "difficulty": 2,
+      "tags": [
+        "NEP 450",
+        "ajustement proposé",
+        "factures non parvenues",
+        "séparation des exercices"
+      ],
+      "statement": "Chez Sirocco SAS (clôture au 31/12/N), le commissaire aux comptes a relevé une faiblesse : les bons d'intervention des prestataires ne sont pas rapprochés des factures reçues, de sorte que les prestations réalisées en fin d'exercice ne sont pas recensées. En examinant les factures reçues en janvier N+1, il identifie une facture de maintenance des machines de production de 8 000 € HT (TVA 20 %), pour une intervention réalisée le 18/12/N, non comptabilisée en N. Rédigez l'écriture d'ajustement qu'il propose au 31/12/N. Utilisez les comptes 6156, 44586 et 4081.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "6156",
+          "label": "Maintenance",
+          "debit": 8000,
+          "credit": 0
+        },
+        {
+          "account": "44586",
+          "label": "Taxes sur le chiffre d'affaires sur factures non parvenues",
+          "debit": 1600,
+          "credit": 0
+        },
+        {
+          "account": "4081",
+          "label": "Fournisseurs — factures non parvenues",
+          "debit": 0,
+          "credit": 9600
+        }
+      ],
+      "explanation": "La prestation a été réalisée en N : la charge doit être rattachée à N (indépendance des exercices) même si la facture n'est reçue qu'en N+1. Charge HT : 8 000 € au compte 6156 ; TVA déductible attendue : 8 000 × 20 % = 1 600 € au compte 44586 ; dette envers le fournisseur : 9 600 € TTC au compte 4081. L'anomalie résulte directement de la faiblesse de contrôle interne : au-delà de cet ajustement, le commissaire aux comptes étend sa recherche de charges non comptabilisées (factures reçues et décaissements postérieurs à la clôture) et communique la faiblesse à la direction (NEP 265).",
+      "source_ref": "NEP 450 (anomalies relevées et demande de correction) ; NEP 265 ; PCG, comptes 6156, 44586 et 4081 (règl. ANC 2014-03)",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue4-mission-ci-0006",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "evaluation-controle-interne",
+      "difficulty": 3,
+      "tags": [
+        "cycle achats",
+        "tests de procédures",
+        "taux d'écart",
+        "NEP 265"
+      ],
+      "title": "Cyprès SAS : évaluer le contrôle interne du cycle achats",
+      "context": "Cyprès SAS, fabricant d'emballages en carton, réalise 14 millions d'euros d'achats par an auprès de 300 fournisseurs. Vous intervenez en intérim pour l'exercice clos le 31/12/N. La procédure décrite par la direction est la suivante :\n- toute commande supérieure à 5 000 € doit être approuvée dans le logiciel par le directeur des achats ;\n- le magasin établit un bon de réception à chaque livraison ;\n- la comptabilité rapproche commande, bon de réception et facture avant d'enregistrer la facture ;\n- les deux comptables fournisseurs peuvent créer et modifier les fiches fournisseurs, y compris les coordonnées bancaires, et préparent les virements, signés électroniquement par le directeur financier au vu d'une liste récapitulative.\nLe test de cheminement a confirmé cette description. Vous avez ensuite prélevé un échantillon de 25 commandes de plus de 5 000 € passées entre janvier et septembre N : 3 n'ont pas été approuvées par le directeur des achats. Le cabinet retient un taux d'écart tolérable de 5 % pour ce contrôle. Le seuil de signification est de 120 000 €.",
+      "sub_questions": [
+        {
+          "id": "q1-nature-test",
+          "kind": "mcq",
+          "prompt": "Quelle est la nature du travail réalisé sur l'échantillon de 25 commandes ?",
+          "points": 2,
+          "options": [
+            "Une procédure analytique substantive",
+            "Un test de procédures portant sur l'efficacité du contrôle d'approbation",
+            "Une demande de confirmation externe",
+            "Un test de détail sur l'exhaustivité des dettes fournisseurs"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Le collaborateur vérifie, sur un échantillon, si un contrôle (l'approbation des commandes) a fonctionné : c'est un test de procédures au sens de la NEP 330. Il ne porte pas sur un montant comptabilisé (test de détail) ni sur une relation entre données (procédure analytique)."
+        },
+        {
+          "id": "q2-taux-ecart",
+          "kind": "numeric",
+          "prompt": "Calculez le taux d'écart constaté dans l'échantillon (en %, arrondi à une décimale).",
+          "points": 2,
+          "expected_value": 12,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "3 ÷ 25 = 0,12, soit 12 %. Ce taux est plus de deux fois supérieur au taux tolérable de 5 %."
+        },
+        {
+          "id": "q3-appui-controle",
+          "kind": "true_false",
+          "prompt": "Au vu de ce résultat, le commissaire aux comptes peut s'appuyer sur le contrôle d'approbation des commandes pour réduire ses procédures de substance sur les achats.",
+          "points": 1,
+          "answer": false,
+          "explanation": "Le taux d'écart (12 %) dépasse le taux tolérable (5 %) : le contrôle ne peut pas être considéré comme efficace. Le risque lié au contrôle est réévalué à la hausse et les procédures de substance sont étendues."
+        },
+        {
+          "id": "q4-faiblesses-consequences",
+          "kind": "open",
+          "prompt": "Identifiez les faiblesses du cycle achats de Cyprès, leurs risques, les conséquences sur votre démarche et la communication à prévoir.",
+          "points": 5,
+          "model_answer": "Faiblesse 1 : le contrôle d'approbation des commandes ne fonctionne pas (12 % d'écarts contre 5 % tolérables). Risque : achats non autorisés ou fictifs, charges injustifiées (réalité des achats). Faiblesse 2 : les comptables fournisseurs peuvent modifier les coordonnées bancaires des fournisseurs et préparent les virements ; le directeur financier signe au vu d'une liste récapitulative, sans justificatif. Il n'y a pas de séparation entre la gestion du fichier fournisseurs et les paiements : risque de détournement (virement vers un compte contrôlé par un salarié ou un fraudeur se faisant passer pour un fournisseur). C'est un facteur de risque de fraude. Conséquences sur la démarche : ne pas s'appuyer sur le contrôle d'approbation ; renforcer les procédures de substance sur les achats et les décaissements : examen des modifications du fichier fournisseurs sur la période, rapprochement d'un échantillon de virements avec des factures et des bons de réception, recherche de fournisseurs aux coordonnées bancaires identiques à celles de salariés, analyse des achats par fournisseur ; étendre ces travaux de la date d'intérim jusqu'à la clôture. Communication : faiblesses communiquées en temps utile à la direction et, le cas échéant, aux organes de gouvernance (NEP 265), avec leurs risques et des recommandations (approbation bloquante dans le logiciel, séparation des droits de modification des fiches et de préparation des paiements, contrôle des changements de coordonnées bancaires par appel au fournisseur, signature des virements au vu des justificatifs).",
+          "key_points": [
+            "Faiblesse sur l'approbation des commandes, démontrée par le taux d'écart de 12 %",
+            "Absence de séparation entre la modification des fiches fournisseurs et la préparation des paiements, risque de détournement (fraude)",
+            "Pas d'appui sur le contrôle : procédures de substance étendues et ciblées sur les décaissements et le fichier fournisseurs, jusqu'à la clôture",
+            "Communication des faiblesses à la direction et aux organes de gouvernance selon la NEP 265, avec recommandations"
+          ],
+          "explanation": "La NEP 330 tire les conséquences d'un contrôle inefficace (procédures de substance accrues) et la NEP 265 organise la communication des faiblesses relevées. Le relevé ne vaut pas opinion sur le contrôle interne."
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas enchaîne prise de connaissance (test de cheminement), test de procédures et conclusion sur le contrôle, puis conséquences pour l'audit et communication des faiblesses. Le point clé : un test de cheminement satisfaisant ne prouve pas l'efficacité, et un taux d'écart supérieur au tolérable interdit de s'appuyer sur le contrôle.",
+      "source_ref": "NEP 315 (prise de connaissance du contrôle interne) ; NEP 330 (tests de procédures) ; NEP 265 (communication des faiblesses du contrôle interne) ; NEP 240 (facteurs de risque de fraude)",
+      "verified": true,
+      "estimated_seconds": 840
+    }
+  ]
+}

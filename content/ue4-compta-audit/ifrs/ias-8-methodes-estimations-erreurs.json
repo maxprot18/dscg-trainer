@@ -26,6 +26,170 @@
       "source_ref": "IAS 8 §5, §32-38 et §41-42 (règlement UE 2023/1803) ; IAS 16 §51 (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-ifrs-ias8-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-8-methodes-estimations-erreurs",
+      "difficulty": 1,
+      "tags": [
+        "changement de méthode comptable",
+        "application rétrospective"
+      ],
+      "source_ref": "IAS 8 §5, §14 et §19-22 (règlement UE 2023/1803) ; IAS 2 §25 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "explanation": "Le passage du FIFO au coût moyen pondéré modifie la base d'évaluation des stocks : c'est un changement de méthode comptable. Il est permis s'il fournit une information fiable et plus pertinente (IAS 8 §14(b)) et s'applique de façon rétrospective : comme si la nouvelle méthode avait toujours été appliquée, avec ajustement des capitaux propres d'ouverture de la période la plus ancienne présentée et retraitement des comparatifs (§19 et §22), sauf impraticabilité. Ce n'est pas un changement d'estimation (aucune information nouvelle sur un montant incertain), ni une erreur (la méthode FIFO était correctement appliquée). Il n'est pas interdit : IAS 8 encadre les changements volontaires sans les prohiber.",
+      "statement": "En N, la société Carnac (IFRS) décide de passer, pour ses stocks de pièces détachées interchangeables, de la méthode FIFO à la méthode du coût moyen pondéré, jugée plus pertinente pour refléter son activité. Aucune norme n'impose ce changement. Comment ce changement est-il traité ?",
+      "options": [
+        "Comme un changement d'estimation, appliqué de façon prospective à compter de N",
+        "Comme un changement de méthode comptable, appliqué de façon rétrospective avec retraitement de l'information comparative",
+        "Comme la correction d'une erreur, imputée sur le résultat de N",
+        "Il est interdit, une méthode de coût de stocks ne pouvant être modifiée après son adoption"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ue4-ifrs-ias8-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-8-methodes-estimations-erreurs",
+      "difficulty": 2,
+      "tags": [
+        "mode d'amortissement",
+        "changement d'estimation"
+      ],
+      "source_ref": "IAS 16 §60-62 (règlement UE 2023/1803) ; IAS 8 §32-38 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "explanation": "IAS 16 §61 prévoit que le mode d'amortissement est revu au moins à chaque clôture et que son changement, pour refléter le rythme attendu de consommation des avantages, est comptabilisé comme un changement d'estimation comptable selon IAS 8. Il s'applique donc de façon prospective : la valeur nette comptable au début de N est amortie selon le nouveau mode sur la durée restante (IAS 8 §36-38). Ce n'est pas un changement de méthode (la méthode, amortir sur la durée d'utilité selon le rythme de consommation, est inchangée), ni une erreur, puisque le mode linéaire n'était pas une mauvaise utilisation des informations disponibles. L'imputation d'un effet cumulé en résultat ne correspond à aucun traitement prévu par IAS 8.",
+      "statement": "La société Plouha (IFRS) amortissait une presse selon le mode linéaire. En N, une analyse montre que les avantages économiques de la presse sont consommés plus rapidement au cours des premières années ; elle adopte un amortissement dégressif à compter de N. Comment ce changement est-il qualifié et comptabilisé ?",
+      "options": [
+        "Changement de méthode comptable : application rétrospective et retraitement des comparatifs",
+        "Correction d'erreur : ajustement des capitaux propres d'ouverture de la période la plus ancienne présentée",
+        "Changement de méthode comptable : effet cumulé imputé sur le résultat de N",
+        "Changement d'estimation comptable : application prospective sur la valeur nette comptable restante"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ue4-ifrs-ias8-0004",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-8-methodes-estimations-erreurs",
+      "difficulty": 2,
+      "tags": [
+        "distinction méthode / estimation"
+      ],
+      "source_ref": "IAS 8 §32-36 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "explanation": "Cette règle de repli (IAS 8 §35) évite des retraitements rétrospectifs lorsque la nature du changement est ambiguë. Elle conduit à une application prospective, en résultat de la période du changement et des périodes futures concernées (§36). Un changement de la base d'évaluation (par exemple, passage du coût à la juste valeur) reste en revanche un changement de méthode comptable (§35), appliqué rétrospectivement.",
+      "statement": "Selon IAS 8, lorsqu'il est difficile de distinguer un changement de méthode comptable d'un changement d'estimation comptable, le changement est traité comme un changement d'estimation comptable.",
+      "answer": true,
+      "justification": "Vrai : IAS 8 §35 prévoit qu'en cas de difficulté à faire la distinction, le changement est traité comme un changement d'estimation comptable."
+    },
+    {
+      "id": "ue4-ifrs-ias8-0005",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-8-methodes-estimations-erreurs",
+      "difficulty": 3,
+      "tags": [
+        "correction d'erreur",
+        "retraitement des comparatifs",
+        "stocks",
+        "impôt"
+      ],
+      "source_ref": "IAS 8 §5, §41-42 et §49 (règlement UE 2023/1803) ; IAS 2 §34 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 900,
+      "explanation": "Une erreur significative d'une période antérieure est corrigée par retraitement rétrospectif (IAS 8 §42) : résultat N−1 retraité 362 500 €, capitaux propres au 31/12/N−1 retraités 1 962 500 €. En N, la correction du stock d'ouverture neutralise la surcharge du coût des ventes, d'où un résultat N supérieur de 37 500 € à celui qui découlait des écritures erronées. L'annexe décrit la nature de l'erreur et les montants corrigés par poste (§49).",
+      "title": "Société Locmaria : erreur sur le stock de clôture N−1",
+      "context": "La société Locmaria établit ses comptes selon les IFRS ; elle présente un seul exercice comparatif. Taux d'impôt sur le résultat : 25 % ; on retient que la correction de l'erreur a un effet d'impôt au taux de 25 % (la contrepartie fiscale, exigible ou différée, n'est pas à détailler).\n\nEn mars N, lors de l'établissement des comptes N, le contrôleur de gestion découvre que l'inventaire physique au 31/12/N−1 a compté deux fois un lot de produits finis : le stock de clôture N−1 a été surévalué de 50 000 €. Les informations nécessaires étaient disponibles lors de l'arrêté des comptes N−1. L'erreur est jugée significative.\n\nLes comptes N−1 publiés font apparaître un résultat net de 400 000 € et des capitaux propres au 31/12/N−1 de 2 000 000 €. Les écritures de N ont été passées à partir du stock d'ouverture erroné (le stock au 31/12/N, lui, est correct). Les comptes N n'ont pas encore été arrêtés.",
+      "sub_questions": [
+        {
+          "id": "q1-qualification",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Comment l'anomalie doit-elle être traitée dans les comptes N ?",
+          "options": [
+            "Changement d'estimation comptable, comptabilisé en résultat de N",
+            "Correction d'une erreur d'une période antérieure, par retraitement rétrospectif des comparatifs N−1",
+            "Correction en résultat de N, avec une simple mention en annexe",
+            "Aucune correction, l'erreur s'étant retournée d'elle-même en N"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Le double comptage résulte de la non-utilisation d'informations fiables disponibles à l'époque : c'est une erreur (IAS 8 §5). Significative, elle est corrigée rétrospectivement dans les premiers états financiers publiés après sa découverte, par retraitement des montants comparatifs de N−1 (§42). Le retournement mécanique en N fausserait les deux exercices : il ne dispense pas de la correction."
+        },
+        {
+          "id": "q2-resultat-n-1",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez le résultat net N−1 retraité présenté en comparatif dans les comptes N (en euros).",
+          "expected_value": 362500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "La surévaluation du stock final de 50 000 € a minoré le coût des ventes N−1 d'autant. Effet net d'impôt : 50 000 × (1 − 25 %) = 37 500 €. Résultat N−1 retraité = 400 000 − 37 500 = 362 500 €."
+        },
+        {
+          "id": "q3-cp-ouverture-n",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez les capitaux propres retraités au 31/12/N−1 (soit à l'ouverture de N), en euros.",
+          "expected_value": 1962500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "2 000 000 − 37 500 = 1 962 500 €. Les capitaux propres au 01/01/N−1 ne sont pas affectés : l'erreur porte sur le stock de clôture N−1, pas sur une période antérieure."
+        },
+        {
+          "id": "q4-effet-resultat-n",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Par rapport aux écritures de N passées à partir du stock d'ouverture erroné, de combien la correction modifie-t-elle le résultat net de N (en euros, signe positif pour une hausse) ?",
+          "expected_value": 37500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Avec un stock d'ouverture surévalué de 50 000 €, le coût des ventes de N était surévalué d'autant et le résultat N minoré. La correction ramène le stock d'ouverture à sa valeur exacte en contrepartie des capitaux propres d'ouverture : le coût des ventes de N diminue de 50 000 € et le résultat net de N augmente de 50 000 × 75 % = 37 500 €."
+        },
+        {
+          "id": "q5-annexe",
+          "kind": "open",
+          "points": 2,
+          "prompt": "Quelles informations la société doit-elle fournir en annexe au titre de cette correction ?",
+          "model_answer": "IAS 8 §49 exige d'indiquer la nature de l'erreur (double comptage d'un lot de produits finis à l'inventaire du 31/12/N−1) ; pour la période antérieure présentée, le montant de la correction pour chaque poste affecté des états financiers (stocks −50 000 €, coût des ventes +50 000 €, charge d'impôt −12 500 €, résultat net −37 500 €) et, si IAS 33 s'applique, pour le résultat par action de base et dilué ; le montant de la correction au début de la période antérieure la plus ancienne présentée (nul ici) ; ces informations n'ont pas à être répétées dans les états financiers ultérieurs.",
+          "key_points": [
+            "Nature de l'erreur",
+            "Montant de la correction par poste affecté des comparatifs N−1",
+            "Effet sur le résultat par action si IAS 33 s'applique",
+            "Montant de la correction à l'ouverture de la période la plus ancienne présentée"
+          ]
+        }
+      ],
+      "total_points": 10
     }
   ]
 }

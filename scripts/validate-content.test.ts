@@ -23,6 +23,9 @@ function makeContentDir(name: string, files: Record<string, unknown>): string {
 
 const ex = exampleExercises
 
+/** Fiche de cours valide : un titre et 10 lignes non vides. */
+const course = (title: string) => [`# ${title}`, ...Array.from({ length: 9 }, (_, i) => `Ligne ${i + 1}`)].join('\n')
+
 describe('validateContent — dossier valide', () => {
   const dir = makeContentDir('valid', {
     'taxonomy.json': exampleTaxonomy,
@@ -33,8 +36,8 @@ describe('validateContent — dossier valide', () => {
     'ue4-compta-audit/consolidation/perimetre-et-methodes.json': { exercises: [ex.consolidation_case] },
     'ue4-compta-audit/audit/cycle-ventes-clients.json': { exercises: [ex.audit_case] },
     'ue2-finance/van-tri.json': { exercises: [ex.numeric] },
-    'courses/ias-16-immobilisations.md': '# IAS 16\n',
-    'courses/van-tri.md': '# VAN\n',
+    'courses/ias-16-immobilisations.md': course('IAS 16'),
+    'courses/van-tri.md': course('VAN'),
   })
 
   it('ne remonte ni erreur ni avertissement, en mode normal comme strict', () => {
@@ -94,6 +97,7 @@ describe('validateContent — dossier avec erreurs', () => {
     'orphelin.json': { exercises: [{ ...ex.numeric, id: 'ue2-orphelin' }] },
     'notes.txt': 'brouillon',
     'courses/notion-fantome.md': '# ?\n',
+    'courses/van-tri.md': 'VAN sans titre\n',
     'courses/ias-16-immobilisations.md': '# IAS 16\n',
   })
 
@@ -126,6 +130,8 @@ describe('validateContent — dossier avec erreurs', () => {
 
   it('vérifie les fiches de cours', () => {
     has(r.errors, 'courses/notion-fantome.md', 'notion')
+    has(r.errors, 'courses/van-tri.md', 'titre')
+    expect(r.warnings.some((m) => m.includes('courses/ias-16-immobilisations.md') && m.includes('lignes'))).toBe(true)
     expect(r.errors.some((m) => m.includes('courses/ias-16-immobilisations.md'))).toBe(false)
   })
 

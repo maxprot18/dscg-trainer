@@ -68,6 +68,129 @@
       "source_ref": "NEP 320 (application de la notion de caractère significatif lors de la planification et de la réalisation d'un audit) ; NEP 450 (évaluation des anomalies relevées au cours de l'audit) ; NEP 700 (rapports du CAC sur les comptes) ; PCG, art. 213-30 s. (coût des stocks) et règles de dépréciation des actifs à la date d’inventaire (comparaison avec la valeur actuelle)",
       "verified": true,
       "estimated_seconds": 900
+    },
+    {
+      "id": "ue4-mission-seuil-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "seuil-signification",
+      "difficulty": 2,
+      "tags": [
+        "NEP 320",
+        "révision du seuil",
+        "seuil de signification"
+      ],
+      "statement": "Lors de la planification de l'audit de Brume SAS, le seuil de signification a été fixé à 100 000 €, soit 5 % d'un résultat courant avant impôt prévisionnel de 2 000 000 €, indicateur jugé pertinent. À la clôture, à la suite de la perte d'un client important, le résultat courant avant impôt définitif n'est que de 900 000 €. Que doit faire le commissaire aux comptes ?",
+      "options": [
+        "Conserver le seuil de 100 000 €, car la NEP 320 impose de le figer dès la planification",
+        "Conserver le seuil de 100 000 € et se borner à mentionner l'écart de résultat dans la note de synthèse",
+        "Recalculer le seuil sur le chiffre d'affaires afin d'obtenir un montant proche de 100 000 € et éviter des travaux supplémentaires",
+        "Revoir le seuil à la baisse (de l'ordre de 45 000 € avec la même méthode) et apprécier si la nature et l'étendue des travaux restent appropriées, en les complétant si nécessaire"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "La NEP 320 prévoit que le commissaire aux comptes revoie le seuil de signification (et le seuil de planification) lorsqu'il prend connaissance, en cours de mission, d'informations qui l'auraient conduit à retenir un montant différent. Avec la même méthode : 900 000 × 5 % = 45 000 €. Il apprécie alors si les travaux réalisés avec un seuil de planification trop élevé restent suffisants et les complète au besoin. Le seuil n'est pas figé à la planification ; une simple mention dans la note de synthèse ne règle pas l'insuffisance éventuelle des travaux. Changer de critère dans le seul but de conserver un seuil élevé n'est pas un exercice du jugement professionnel : le critère doit refléter l'indicateur pertinent pour les utilisateurs des comptes.",
+      "source_ref": "NEP 320 (application de la notion de caractère significatif lors de la planification et de la réalisation d'un audit), révision des seuils en cours de mission",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-mission-seuil-0003",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "seuil-signification",
+      "difficulty": 1,
+      "tags": [
+        "NEP 450",
+        "anomalies manifestement insignifiantes",
+        "seuil de signification"
+      ],
+      "statement": "Pour l'audit de Cobalt SAS, la méthodologie du cabinet prévoit : seuil de signification égal à 5 % du résultat courant avant impôt ; seuil des anomalies manifestement insignifiantes égal à 5 % du seuil de signification. Le résultat courant avant impôt de Cobalt s'élève à 2 600 000 €. Calculez le seuil des anomalies manifestement insignifiantes, en euros, arrondi à l'euro.",
+      "expected_value": 6500,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Seuil de signification : 2 600 000 × 5 % = 130 000 €. Seuil des anomalies manifestement insignifiantes : 130 000 × 5 % = 6 500 €. Les anomalies inférieures à 6 500 € ne sont pas cumulées (NEP 450) ; celles qui le dépassent sont recensées, communiquées à la direction et cumulées pour apprécier leur incidence par rapport au seuil de signification. Ce seuil se distingue du seuil de planification, plus élevé, qui sert à déterminer la nature et l'étendue des travaux.",
+      "source_ref": "NEP 320 (seuil de signification) ; NEP 450 (évaluation des anomalies relevées au cours de l'audit)",
+      "verified": true,
+      "estimated_seconds": 120
+    },
+    {
+      "id": "ue4-mission-seuil-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "seuil-signification",
+      "difficulty": 3,
+      "tags": [
+        "NEP 450",
+        "cumul des anomalies",
+        "anomalies non corrigées"
+      ],
+      "statement": "Au terme de l'audit de Grenat SAS, le seuil de signification est de 65 000 € et le seuil des anomalies manifestement insignifiantes de 2 000 €. La direction n'a corrigé aucune des anomalies suivantes, toutes exprimées avant impôt :\n1. stock de produits finis surévalué de 42 000 € (coût de production incluant à tort des frais commerciaux) ;\n2. honoraires d'avocat de décembre N non provisionnés : 31 000 € ;\n3. prestation réalisée en janvier N+1, comptabilisée en produits de N : 18 000 € HT ;\n4. provision pour litige surestimée de 12 000 € au vu de la transaction signée en janvier N+1 ;\n5. frais de déplacement de N-1 enregistrés en charges de N : 1 500 €.\nCalculez l'effet net cumulé, sur le résultat avant impôt de N, des anomalies non corrigées à prendre en compte pour l'appréciation de leur caractère significatif. Exprimez la surévaluation nette du résultat en euros.",
+      "expected_value": 79000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Effet de chaque anomalie sur le résultat de N : (1) stock surévalué → résultat surévalué de 42 000 ; (2) charge omise → résultat surévalué de 31 000 ; (3) produit de N+1 rattaché à N → résultat surévalué de 18 000 ; (4) provision surestimée → résultat sous-évalué de 12 000 ; (5) 1 500 € est inférieur au seuil des anomalies manifestement insignifiantes (2 000 €) : non cumulé. Effet net : 42 000 + 31 000 + 18 000 − 12 000 = 79 000 € de surévaluation. Erreurs classiques : additionner les montants sans tenir compte du sens (103 000), inclure l'anomalie insignifiante (77 500 en la retranchant, car elle sous-évalue le résultat de N). 79 000 € dépasse le seuil de signification de 65 000 € : le commissaire aux comptes demande les corrections ; à défaut, les anomalies non corrigées étant significatives, son opinion est modifiée. La correction de la seule anomalie 1 ramènerait l'effet net à 37 000 €, sous le seuil, sous réserve de l'appréciation de la nature de chaque anomalie et de leur effet poste par poste.",
+      "source_ref": "NEP 450 (évaluation des anomalies relevées au cours de l'audit) ; NEP 320 (seuil de signification)",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue4-mission-seuil-0005",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "seuil-signification",
+      "difficulty": 2,
+      "tags": [
+        "NEP 450",
+        "ajustement proposé",
+        "dépréciation des créances",
+        "clients douteux"
+      ],
+      "statement": "À l'issue de ses travaux sur Mistral SAS (exercice clos le 31/12/N), le commissaire aux comptes a retenu un seuil de signification de 50 000 €. Le cumul des anomalies non corrigées atteint 62 000 €. La principale concerne le client Roc SARL, placé en redressement judiciaire le 20/12/N : sa créance de 36 000 € TTC (TVA 20 %) figure toujours au compte 411 et n'a fait l'objet d'aucune dépréciation, alors que le mandataire judiciaire laisse prévoir une perte de 50 % du montant hors taxes. Rédigez l'écriture d'ajustement que le commissaire aux comptes propose à la direction au 31/12/N : reclassement de la créance en clients douteux, puis dépréciation. Utilisez les comptes 416, 411, 6817 et 491.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "416",
+          "label": "Clients douteux — Roc SARL",
+          "debit": 36000,
+          "credit": 0
+        },
+        {
+          "account": "411",
+          "label": "Clients — Roc SARL",
+          "debit": 0,
+          "credit": 36000
+        },
+        {
+          "account": "6817",
+          "label": "Dotations aux dépréciations des actifs circulants",
+          "debit": 15000,
+          "credit": 0
+        },
+        {
+          "account": "491",
+          "label": "Dépréciations des comptes de clients",
+          "debit": 0,
+          "credit": 15000
+        }
+      ],
+      "explanation": "La créance est d'abord isolée en clients douteux pour son montant TTC (36 000 €). La dépréciation se calcule sur le montant hors taxes, car la TVA collectée sera récupérable en cas de perte définitive : 36 000 ÷ 1,20 = 30 000 € HT ; 30 000 × 50 % = 15 000 €. Une fois cet ajustement accepté, le cumul des anomalies non corrigées passe à 62 000 − 15 000 = 47 000 €, sous le seuil de signification de 50 000 €. La NEP 450 prévoit que le commissaire aux comptes communique les anomalies relevées (au-delà du seuil des anomalies manifestement insignifiantes) à la direction et lui demande de les corriger.",
+      "source_ref": "NEP 450 (évaluation des anomalies relevées au cours de l'audit) ; PCG, comptes 416, 491 et 6817 (règl. ANC 2014-03) ; PCG, règles de dépréciation des actifs à la date d'inventaire",
+      "verified": true,
+      "estimated_seconds": 240
     }
   ]
 }

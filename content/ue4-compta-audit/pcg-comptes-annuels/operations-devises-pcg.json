@@ -44,6 +44,183 @@
       "source_ref": "PCG art. 420-1 s. (règl. ANC 2014-03) ; comptes 476, 1515 et 6865",
       "verified": true,
       "estimated_seconds": 150
+    },
+    {
+      "id": "ue4-pcg-devises-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "operations-devises-pcg",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "gain latent",
+        "écart de conversion passif"
+      ],
+      "statement": "Le 20/11/N, la société Norma a acheté des marchandises à un fournisseur britannique pour 20 000 GBP (1 GBP = 1,18 €), payables le 20/02/N+1. Au 31/12/N, 1 GBP = 1,15 €. Comment Norma traite-t-elle l'écart constaté à la clôture ?",
+      "options": [
+        "Elle constate un gain de change de 600 € en produits.",
+        "Elle diminue la dette de 600 € par le crédit du compte 477 « Différences de conversion – Passif », sans produit.",
+        "Elle ne passe aucune écriture : la dette reste au cours historique jusqu'au règlement.",
+        "Elle diminue la dette de 600 € par le débit du compte 476 « Différences de conversion – Actif » et constate une provision."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "À la clôture, la dette est convertie au cours de clôture : 20 000 × 1,15 = 23 000 € contre 23 600 € comptabilisés, soit une baisse de 600 €, c'est-à-dire un gain latent. La dette est débitée de 600 € par le crédit du compte 477 ; par prudence, le gain latent n'est pas porté en résultat. Il ne s'agit pas d'un gain réalisé (première réponse). La dette doit être convertie au cours de clôture (troisième réponse). Le compte 476 et la provision concernent les pertes latentes (quatrième réponse).",
+      "source_ref": "PCG art. 420-1 s. (règl. ANC 2014-03) ; compte 477",
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-pcg-devises-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "operations-devises-pcg",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "position globale de change",
+        "provision pour perte de change"
+      ],
+      "statement": "Au 31/12/N, la société Tiber présente, en dollars américains :\n- une créance client de 20 000 USD, échéance 31/01/N+1, faisant apparaître une perte latente de 1 200 € ;\n- une dette fournisseur de 15 000 USD, échéance 05/02/N+1, faisant apparaître un gain latent de 700 €.\nLes échéances sont jugées suffisamment voisines pour constituer une position globale de change. Quel est le montant de la provision pour perte de change à constater ?",
+      "options": [
+        "1 200 €",
+        "1 900 €",
+        "500 €",
+        "0 €"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "En principe, chaque perte latente est provisionnée. Lorsque des créances et dettes libellées dans la même devise ont des échéances suffisamment voisines, elles forment une position globale de change et la provision est limitée à l'excédent des pertes latentes sur les gains latents : 1 200 − 700 = 500 €. Les écarts restent inscrits pour leur montant brut aux comptes 476 (1 200 €) et 477 (700 €). 1 200 € ignore la position globale ; 1 900 € additionne pertes et gains ; 0 € suppose à tort que le gain couvre intégralement la perte.",
+      "source_ref": "PCG art. 420-1 s. (provision pour perte de change, position globale de change, règl. ANC 2014-03) ; comptes 476, 477, 1515",
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-pcg-devises-0004",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "operations-devises-pcg",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "emprunt en devises",
+        "perte latente",
+        "provision pour perte de change"
+      ],
+      "statement": "Le 01/10/N, la société Rhône a obtenu un emprunt bancaire de 100 000 CHF, remboursable in fine le 30/09/N+3, enregistré au cours du jour (1 CHF = 1,02 €). Au 31/12/N, 1 CHF = 1,05 €. L'emprunt n'est pas couvert. Passez les écritures d'inventaire relatives à la conversion de l'emprunt au 31/12/N (les deux écritures sont à saisir à la suite ; on ignore les intérêts).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "476",
+          "label": "Différences de conversion – Actif",
+          "debit": 3000,
+          "credit": 0
+        },
+        {
+          "account": "164",
+          "label": "Emprunts auprès des établissements de crédit",
+          "debit": 0,
+          "credit": 3000
+        },
+        {
+          "account": "6865",
+          "label": "Dotations aux provisions financières",
+          "debit": 3000,
+          "credit": 0
+        },
+        {
+          "account": "1515",
+          "label": "Provisions pour pertes de change",
+          "debit": 0,
+          "credit": 3000
+        }
+      ],
+      "explanation": "Valeur historique de l'emprunt : 100 000 × 1,02 = 102 000 €. Valeur au cours de clôture : 100 000 × 1,05 = 105 000 €. La dette augmente de 3 000 € : perte latente, enregistrée au débit du compte 476 par le crédit du compte 164, sans passage en charges. Par prudence, la perte latente non couverte est provisionnée : dotation aux provisions financières (6865), l'emprunt étant une opération financière, par le crédit du compte 1515. L'écart de conversion est contrepassé à l'ouverture de N+1.",
+      "source_ref": "PCG art. 420-1 s. (règl. ANC 2014-03) ; comptes 164, 476, 1515, 6865",
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue4-pcg-devises-0005",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "operations-devises-pcg",
+      "verified": true,
+      "difficulty": 3,
+      "tags": [
+        "écarts de conversion",
+        "liquidités en devises",
+        "perte de change réalisée",
+        "provision"
+      ],
+      "title": "Opérations en dollars de la société Ébène",
+      "context": "La société Ébène (exercice civil) réalise les opérations suivantes en dollars américains (USD). Aucune couverture de change n'est mise en place.\n\n- 15/11/N : achat de marchandises à un fournisseur américain pour 50 000 USD, payables le 15/01/N+1 ; cours du jour : 1 USD = 0,92 €.\n- 01/12/N : vente de produits à un client américain pour 30 000 USD, payables le 31/03/N+1 ; cours du jour : 1 USD = 0,93 €.\n- Ébène détient en outre un compte bancaire en dollars présentant un solde positif de 10 000 USD, inscrit en comptabilité pour 9 000 € (cours d'acquisition des devises : 0,90 €). Ce solde n'a pas bougé depuis.\n\nAu 31/12/N, 1 USD = 0,95 €.\nLes échéances de la créance et de la dette sont trop éloignées pour constituer une position globale de change.\n\nLe 15/01/N+1, Ébène règle son fournisseur au cours de 1 USD = 0,94 €. À l'ouverture de N+1, les écarts de conversion ont été contrepassés.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "Quel est le montant de la provision pour perte de change à constater au 31/12/N (en euros) ?",
+          "points": 2,
+          "expected_value": 1500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Dette : 50 000 × (0,95 − 0,92) = +1 500 € (perte latente, compte 476). Créance : 30 000 × (0,95 − 0,93) = +600 € (gain latent, compte 477). Sans position globale de change, le gain latent ne réduit pas la provision : provision = 1 500 €."
+        },
+        {
+          "id": "q2",
+          "kind": "mcq",
+          "prompt": "Comment traiter, au 31/12/N, le compte bancaire en dollars ?",
+          "points": 2,
+          "options": [
+            "Écart de 500 € inscrit au compte 477, sans produit.",
+            "Aucune écriture : les disponibilités restent au cours historique.",
+            "Gain de change de 500 € porté directement en résultat financier.",
+            "Écart de 500 € inscrit au compte 476 et provisionné."
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "Les liquidités en devises sont converties au cours de clôture et l'écart est porté directement en résultat : 10 000 × 0,95 − 9 000 = 500 € de gain de change (766). Les comptes 476 et 477 ne concernent que les créances et dettes."
+        },
+        {
+          "id": "q3",
+          "kind": "numeric",
+          "prompt": "Quel est le montant de la perte de change réalisée lors du règlement du fournisseur le 15/01/N+1 (en euros) ?",
+          "points": 2,
+          "expected_value": 1000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Après contrepassation de l'écart de conversion, la dette figure à sa valeur historique de 46 000 € (50 000 × 0,92). Montant décaissé : 50 000 × 0,94 = 47 000 €. Perte de change réalisée : 1 000 €."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "prompt": "Analysez l'incidence de l'opération d'achat sur les résultats de N et de N+1, en distinguant perte latente, provision et perte réalisée.",
+          "points": 4,
+          "model_answer": "En N, la hausse de la dette (1 500 €) n'est pas une charge : elle figure au compte 476. Par prudence, une provision pour perte de change de 1 500 € est dotée ; le résultat de N supporte donc une charge de 1 500 €. En N+1, l'écart est contrepassé à l'ouverture et la provision, devenue sans objet après le règlement, est reprise (produit de 1 500 €). Le règlement fait apparaître une perte de change réalisée de 1 000 € par rapport à la valeur historique ; s'agissant d'une dette commerciale, elle est classée dans les pertes de change sur créances et dettes commerciales (656). Le résultat de N+1 s'améliore de 500 € (1 500 − 1 000). Sur les deux exercices, la perte totale est de 1 000 €, égale à la perte économique effectivement subie (47 000 − 46 000 €).",
+          "key_points": [
+            "Perte latente de 1 500 € au compte 476, sans charge directe",
+            "Provision de 1 500 € en N",
+            "Reprise de 1 500 € et perte réalisée de 1 000 € en N+1 (656, dette commerciale)",
+            "Effet cumulé sur deux exercices : −1 000 €"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas distingue les trois traitements du change en PCG : écarts de conversion sur créances et dettes (476 / 477, provision des seules pertes latentes en l'absence de position globale : 1 500 €), écart sur liquidités porté directement en résultat (gain de 500 €), et perte réalisée au règlement, calculée par rapport au cours historique (1 000 €).",
+      "source_ref": "PCG art. 420-1 s. (règl. ANC 2014-03 modifié par le règl. ANC 2015-05) ; comptes 476, 477, 1515, 656, 766",
+      "estimated_seconds": 780
     }
   ]
 }

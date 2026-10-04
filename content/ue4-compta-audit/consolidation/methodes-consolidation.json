@@ -1,0 +1,349 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-conso-methodes-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "methodes-consolidation",
+      "difficulty": 1,
+      "tags": [
+        "intégration globale",
+        "intégration proportionnelle",
+        "mise en équivalence",
+        "ANC 2020-01"
+      ],
+      "statement": "En règles françaises (règlement ANC 2020-01), quelle correspondance entre nature du lien et méthode de consolidation est exacte ?",
+      "options": [
+        "Contrôle exclusif : intégration globale ; contrôle conjoint : mise en équivalence ; influence notable : mise en équivalence",
+        "Contrôle exclusif : intégration globale ; contrôle conjoint : intégration proportionnelle ; influence notable : mise en équivalence",
+        "Contrôle exclusif : intégration globale ; contrôle conjoint : mise en équivalence ; influence notable : intégration proportionnelle",
+        "Contrôle exclusif, contrôle conjoint et influence notable : intégration globale, avec des intérêts minoritaires plus ou moins élevés"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "En règles françaises, la méthode découle de la nature du contrôle : intégration globale pour le contrôle exclusif, intégration proportionnelle pour le contrôle conjoint, mise en équivalence pour l'influence notable (C. com. L233-18 ; règl. ANC 2020-01). L'option 1 applique la logique IFRS 11 (coentreprise mise en équivalence), qui n'est pas celle du règlement ANC. L'option 3 inverse contrôle conjoint et influence notable. L'option 4 est fausse : l'intégration globale est réservée au contrôle exclusif.",
+      "source_ref": "C. com. L233-18 ; règl. ANC 2020-01",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-conso-methodes-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "methodes-consolidation",
+      "difficulty": 2,
+      "tags": [
+        "IFRS 11",
+        "activité conjointe",
+        "coentreprise"
+      ],
+      "statement": "Deux groupes appliquant les IFRS exploitent ensemble un entrepôt logistique, sans créer de société : chacun détient une quote-part indivise de l'actif (60 % et 40 %), supporte la même quote-part des dettes et des charges, et les décisions sont prises à l'unanimité. Comment le partenaire à 40 % traduit-il ce partenariat dans ses comptes consolidés ?",
+      "options": [
+        "Il comptabilise ses droits sur les actifs, ses obligations au titre des passifs et sa quote-part des produits et des charges de l'activité",
+        "Il met en équivalence sa participation de 40 % dans le partenariat",
+        "Il applique l'intégration proportionnelle sur option",
+        "Il intègre globalement le partenariat et constate 60 % d'intérêts minoritaires"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Le partenariat n'est pas logé dans un véhicule distinct et les partenaires ont des droits directs sur les actifs et des obligations au titre des passifs : c'est une activité conjointe (IFRS 11 §15). Chaque partenaire comptabilise ses actifs, passifs, produits et charges relatifs à l'activité, ici sa quote-part de 40 % (§20). La mise en équivalence (option 2) s'applique aux coentreprises, dont les partenaires ont des droits sur l'actif net (§16 et §24). L'intégration proportionnelle (option 3) n'existe plus en IFRS. L'intégration globale (option 4) suppose le contrôle exclusif, absent ici puisque les décisions requièrent l'unanimité.",
+      "source_ref": "IFRS 11 §15-16, §20 et §24 ; IAS 28 §16 (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-conso-methodes-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "methodes-consolidation",
+      "difficulty": 2,
+      "tags": [
+        "IFRS 11",
+        "coentreprise",
+        "intégration proportionnelle"
+      ],
+      "statement": "Selon IFRS 11, un coentrepreneur peut choisir de consolider sa participation dans une coentreprise par intégration proportionnelle plutôt que par mise en équivalence.",
+      "answer": false,
+      "justification": "IFRS 11 §24 impose la mise en équivalence (IAS 28) pour les coentreprises ; l'option d'intégration proportionnelle a disparu avec IAS 31.",
+      "explanation": "IFRS 11 §24 impose au coentrepreneur de comptabiliser sa participation dans une coentreprise selon la méthode de la mise en équivalence prévue par IAS 28. L'option d'intégration proportionnelle qu'offrait l'ancienne norme IAS 31 a été supprimée. C'est une divergence avec le règlement ANC 2020-01, qui retient l'intégration proportionnelle pour les entités sous contrôle conjoint.",
+      "source_ref": "IFRS 11 §24 ; IAS 28 §16 (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-conso-methodes-0004",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "methodes-consolidation",
+      "difficulty": 2,
+      "tags": [
+        "mise en équivalence",
+        "titres mis en équivalence",
+        "quote-part de résultat"
+      ],
+      "statement": "La société Crayon détient depuis la création de la société Ligne 25 % de son capital, souscrits pour 50 000 € (valeur inscrite au compte 261 chez Crayon) ; elle exerce sur Ligne une influence notable. Au 31/12/N, les capitaux propres de Ligne s'élèvent à 300 000 € : capital 200 000 €, réserves 60 000 €, résultat N 40 000 €. Ligne n'a jamais distribué de dividende.\n\nPassez l'écriture de mise en équivalence au bilan consolidé du 31/12/N. Conventions : 2618 Titres mis en équivalence, 261 Titres de participation, 106 Réserves consolidées, 120 Résultat consolidé.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "2618",
+          "label": "Titres mis en équivalence (Ligne)",
+          "debit": 75000,
+          "credit": 0
+        },
+        {
+          "account": "261",
+          "label": "Titres de participation (Ligne)",
+          "debit": 0,
+          "credit": 50000
+        },
+        {
+          "account": "106",
+          "label": "Réserves consolidées",
+          "debit": 0,
+          "credit": 15000
+        },
+        {
+          "account": "120",
+          "label": "Résultat consolidé (quote-part de résultat MEE)",
+          "debit": 0,
+          "credit": 10000
+        }
+      ],
+      "explanation": "Les titres de participation (25 % × 200 000 = 50 000 €, acquis à la création, donc sans écart d'acquisition) sont remplacés par la quote-part des capitaux propres de Ligne : 25 % × 300 000 = 75 000 €. La différence de 25 000 € se répartit entre les réserves consolidées (25 % × 60 000 = 15 000 €, résultats accumulés depuis l'entrée dans le groupe) et le résultat consolidé (25 % × 40 000 = 10 000 €, quote-part de résultat des sociétés mises en équivalence).",
+      "source_ref": "C. com. L233-18 ; règl. ANC 2020-01 (mise en équivalence) ; IAS 28 §10",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue4-conso-methodes-0005",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "methodes-consolidation",
+      "difficulty": 3,
+      "tags": [
+        "intégration proportionnelle",
+        "mise en équivalence",
+        "coentreprise",
+        "ANC 2020-01 vs IFRS"
+      ],
+      "title": "Prisme et la coentreprise Jade : deux référentiels, deux images",
+      "context": "La SA Prisme a créé il y a plusieurs années, avec un partenaire industriel indépendant, la société Jade, dont chacun détient 50 % du capital et des droits de vote. Les statuts de Jade imposent l'accord des deux associés pour toutes les décisions relatives aux activités pertinentes. Jade est une société par actions : ses associés n'ont aucun droit direct sur ses actifs ni obligation au titre de ses dettes ; ils ont droit à son actif net.\n\nPrisme a souscrit 50 % du capital lors de la création, pour 200 000 €. Aucun écart d'évaluation ni d'acquisition n'existe.\n\nBilan résumé de Jade au 31/12/N (en milliers d'euros) : immobilisations 800 ; stocks 200 ; trésorerie 100 ; capital 400 ; réserves 120 ; résultat N 80 ; dettes financières 350 ; dettes d'exploitation 150.\nCompte de résultat N de Jade : chiffre d'affaires 1 500 k€ ; résultat net 80 k€.\n\nJade n'a réalisé aucune opération avec Prisme ou ses filiales et n'a jamais distribué de dividende. La direction de Prisme hésite entre le règlement ANC 2020-01 et les IFRS adoptées par l'UE pour ses comptes consolidés.",
+      "sub_questions": [
+        {
+          "id": "classement-ifrs",
+          "kind": "mcq",
+          "prompt": "Comment Jade est-elle qualifiée au regard d'IFRS 11 ?",
+          "points": 2,
+          "options": [
+            "Activité conjointe",
+            "Coentreprise",
+            "Entreprise associée",
+            "Filiale de Prisme"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Contrôle conjoint (unanimité) exercé via un véhicule distinct qui confère aux partenaires des droits sur l'actif net, et non des droits sur les actifs et obligations au titre des passifs : coentreprise (IFRS 11 §16)."
+        },
+        {
+          "id": "ca-ip",
+          "kind": "numeric",
+          "prompt": "En règles françaises, quel montant du chiffre d'affaires de Jade est repris dans le chiffre d'affaires consolidé de Prisme (en euros) ?",
+          "points": 2,
+          "expected_value": 750000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Contrôle conjoint : intégration proportionnelle à hauteur de 50 %. 50 % × 1 500 000 = 750 000 €."
+        },
+        {
+          "id": "titres-mee",
+          "kind": "numeric",
+          "prompt": "En IFRS, quelle est la valeur des titres mis en équivalence de Jade au bilan consolidé de Prisme au 31/12/N (en euros) ?",
+          "points": 2,
+          "expected_value": 300000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Capitaux propres de Jade = 400 + 120 + 80 = 600 k€. Titres mis en équivalence = 50 % × 600 000 = 300 000 €, dont 200 000 € de coût d'origine, 60 000 € de réserves et 40 000 € de quote-part de résultat N."
+        },
+        {
+          "id": "resultat-identique",
+          "kind": "true_false",
+          "prompt": "Le résultat consolidé part du groupe de Prisme est le même, que Jade soit intégrée proportionnellement ou mise en équivalence.",
+          "points": 1,
+          "answer": true,
+          "explanation": "Dans les deux cas, Prisme constate 50 % du résultat de Jade, soit 40 000 € : ligne par ligne en intégration proportionnelle, sur une seule ligne (quote-part de résultat des sociétés mises en équivalence) en mise en équivalence."
+        },
+        {
+          "id": "comparaison",
+          "kind": "open",
+          "prompt": "Comparez l'effet des deux méthodes sur le total du bilan, le chiffre d'affaires et l'endettement financier consolidés de Prisme.",
+          "points": 3,
+          "model_answer": "En intégration proportionnelle (ANC 2020-01), Prisme reprend 50 % des actifs de Jade (550 k€ : immobilisations 400, stocks 100, trésorerie 50) et 50 % de ses dettes (250 k€, dont 175 k€ de dettes financières), à la place des titres de 200 k€ : le total du bilan augmente de 350 k€, le chiffre d'affaires de 750 k€ et l'endettement financier de 175 k€ (125 k€ en net de la trésorerie). En mise en équivalence (IFRS), seule une ligne de titres de 300 k€ figure à l'actif : le chiffre d'affaires et l'endettement ne sont pas affectés, le total du bilan n'augmente que de 100 k€ par rapport aux comptes individuels. Les ratios (marge, endettement, rotation des actifs) diffèrent donc sensiblement, à résultat et capitaux propres part du groupe identiques.",
+          "key_points": [
+            "IP : reprise de 50 % des actifs et passifs à la place des titres",
+            "IP : CA +750 k€, dettes financières +175 k€",
+            "MEE : une seule ligne d'actif de 300 k€, CA et dettes inchangés",
+            "Résultat et capitaux propres part du groupe identiques",
+            "Effet sur les ratios d'analyse financière"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Une même participation sous contrôle conjoint est traitée différemment selon le référentiel : intégration proportionnelle en règles françaises, mise en équivalence en IFRS pour une coentreprise. Le résultat consolidé et les capitaux propres part du groupe sont identiques ; le bilan, le chiffre d'affaires et l'endettement présentés diffèrent.",
+      "source_ref": "C. com. L233-18 ; règl. ANC 2020-01 ; IFRS 11 §16 et §24 ; IAS 28 §10 (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 780
+    },
+    {
+      "id": "ue4-conso-methodes-0006",
+      "type": "consolidation_case",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "methodes-consolidation",
+      "difficulty": 2,
+      "tags": [
+        "intégration globale",
+        "intégration proportionnelle",
+        "mise en équivalence",
+        "IFRS 11"
+      ],
+      "title": "Groupe Atria : appliquer les trois méthodes",
+      "context": "La société Atria (AT) établit ses comptes consolidés au 31/12/N selon le règlement ANC 2020-01. Elle détient (capital et droits de vote identiques) :\n- 80 % de Bélier (BE), qu'elle contrôle seule ;\n- 50 % de Capella (CA), contrôlée conjointement avec un partenaire indépendant en vertu d'un accord exigeant l'unanimité ; Capella est une société dont les associés ont droit à l'actif net ;\n- 25 % de Draco (DR), sur laquelle elle exerce une influence notable.\nToutes les participations ont été souscrites lors de la constitution des sociétés : il n'existe ni écart d'acquisition ni écart d'évaluation. Aucune opération réciproque n'a eu lieu entre les sociétés.\n\nDonnées au 31/12/N : créances clients de Bélier 600 000 € ; créances clients de Capella 400 000 € ; capitaux propres de Draco 520 000 € (capital 300 000 €, réserves 160 000 €, résultat N 60 000 €) ; titres Draco inscrits chez Atria pour 75 000 €. Draco n'a jamais distribué de dividende.",
+      "entities": [
+        {
+          "id": "at",
+          "name": "Atria (AT)",
+          "is_parent": true
+        },
+        {
+          "id": "be",
+          "name": "Bélier (BE)"
+        },
+        {
+          "id": "ca",
+          "name": "Capella (CA)"
+        },
+        {
+          "id": "dr",
+          "name": "Draco (DR)"
+        }
+      ],
+      "links": [
+        {
+          "from": "at",
+          "to": "be",
+          "ownership_pct": 80
+        },
+        {
+          "from": "at",
+          "to": "ca",
+          "ownership_pct": 50
+        },
+        {
+          "from": "at",
+          "to": "dr",
+          "ownership_pct": 25
+        }
+      ],
+      "steps": [
+        {
+          "id": "clients-be",
+          "stage": "methode",
+          "kind": "numeric",
+          "prompt": "Pour quel montant les créances clients de Bélier figurent-elles au bilan consolidé (en euros) ?",
+          "points": 2,
+          "expected_value": 600000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Contrôle exclusif : intégration globale. Les actifs de la filiale sont repris à 100 %, quel que soit le pourcentage d'intérêt : 600 000 €. La part des minoritaires apparaît dans les capitaux propres, pas dans les actifs."
+        },
+        {
+          "id": "clients-ca",
+          "stage": "methode",
+          "kind": "numeric",
+          "prompt": "Pour quel montant les créances clients de Capella figurent-elles au bilan consolidé (en euros) ?",
+          "points": 2,
+          "expected_value": 200000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Contrôle conjoint, règles françaises : intégration proportionnelle à hauteur de 50 %. 50 % × 400 000 = 200 000 €."
+        },
+        {
+          "id": "titres-dr",
+          "stage": "methode",
+          "kind": "numeric",
+          "prompt": "Quelle est la valeur des titres mis en équivalence de Draco au bilan consolidé (en euros) ?",
+          "points": 2,
+          "expected_value": 130000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Titres mis en équivalence = 25 % × 520 000 = 130 000 €. L'écart avec le coût historique (130 000 − 75 000 = 55 000 €) correspond à 25 % des réserves (40 000 €) et du résultat N (15 000 €) accumulés depuis la constitution."
+        },
+        {
+          "id": "resultat-dr",
+          "stage": "partage-capitaux-propres",
+          "kind": "numeric",
+          "prompt": "Quel montant figure sur la ligne « quote-part de résultat des sociétés mises en équivalence » du compte de résultat consolidé (en euros) ?",
+          "points": 2,
+          "expected_value": 15000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "25 % × 60 000 = 15 000 €. En mise en équivalence, les produits et charges de Draco ne sont pas cumulés ligne par ligne."
+        },
+        {
+          "id": "ifrs-ca",
+          "stage": "methode",
+          "kind": "mcq",
+          "prompt": "Si Atria appliquait les IFRS adoptées par l'UE, quelle méthode retiendrait-elle pour Capella ?",
+          "points": 2,
+          "options": [
+            "Intégration proportionnelle, comme en règles françaises",
+            "Intégration globale",
+            "Mise en équivalence",
+            "Comptabilisation des titres au coût, sans consolidation"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "Capella est une coentreprise au sens d'IFRS 11 (contrôle conjoint, droits sur l'actif net) : elle est mise en équivalence selon IAS 28 (IFRS 11 §24). L'intégration proportionnelle n'est pas admise en IFRS."
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Chaque méthode traduit la nature du lien : l'intégration globale reprend 100 % des éléments de la filiale, l'intégration proportionnelle la quote-part détenue, la mise en équivalence remplace les titres par la quote-part des capitaux propres. Le passage aux IFRS ne change que le traitement des entités sous contrôle conjoint qualifiées de coentreprises.",
+      "source_ref": "C. com. L233-18 ; règl. ANC 2020-01 ; IFRS 11 §24 et IAS 28 §10 (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 540
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-fusion-retro-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "retroactivite-fusion",
+      "difficulty": 1,
+      "tags": [
+        "rétroactivité",
+        "date d'effet",
+        "bornes"
+      ],
+      "statement": "La société Platane SA absorbe la société Peuplier SA. Les deux sociétés clôturent leur exercice le 31 décembre ; le dernier exercice clos de Peuplier est celui de N-1. Les assemblées générales approuvent la fusion le 20 mai N. Parmi les dates suivantes, laquelle le traité peut-il retenir comme date d'effet de la fusion ?",
+      "options": [
+        "1er juillet N-1",
+        "1er octobre N-1",
+        "1er janvier N",
+        "1er mars N+1"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "La date d'effet stipulée ne peut être antérieure à la clôture du dernier exercice clos de l'absorbée (31 décembre N-1) ni postérieure à la clôture de l'exercice en cours de l'absorbante (31 décembre N). Seul le 1er janvier N respecte ces bornes (option 3). Les options 1 et 2 sont antérieures à la clôture du dernier exercice clos de Peuplier. L'option 4 est postérieure à la clôture de l'exercice en cours de Platane.",
+      "source_ref": "C. com. art. L. 236-4",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-fusion-retro-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "retroactivite-fusion",
+      "difficulty": 2,
+      "tags": [
+        "rétroactivité",
+        "période intercalaire",
+        "résultat intercalaire"
+      ],
+      "statement": "Une fusion approuvée le 30 juin N prend effet rétroactivement au 1er janvier N. Entre ces deux dates, l'absorbée a réalisé un bénéfice de 45 000 €. Comment ce résultat intercalaire est-il traité chez l'absorbante ?",
+      "options": [
+        "Il est inscrit en prime de fusion, en complément de l'actif net apporté",
+        "Il augmente l'actif net apporté, qui est évalué à la date de réalisation",
+        "Il est inscrit directement en report à nouveau de l'absorbante",
+        "Les produits et charges de la période intercalaire sont repris dans le compte de résultat de l'absorbante"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Avec effet rétroactif, les apports sont évalués à la date d'effet et les opérations de la période intercalaire sont réputées faites pour le compte de l'absorbante, qui reprend les produits et charges correspondants dans son propre compte de résultat (option 4). L'option 1 est fausse : le résultat intercalaire n'est pas une prime, il transite par le résultat. L'option 2 est fausse : l'actif net apporté est celui de la date d'effet, il ne s'accroît pas du résultat intercalaire. L'option 3 est fausse : le résultat intercalaire n'est pas inscrit directement en report à nouveau.",
+      "source_ref": "PCG titre VII (règl. ANC 2014-03 modifié par le règl. ANC 2017-01), rétroactivité et opérations de la période intercalaire",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-fusion-retro-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "retroactivite-fusion",
+      "difficulty": 1,
+      "tags": [
+        "date de réalisation",
+        "assemblée générale"
+      ],
+      "statement": "À défaut de stipulation contraire du traité, une fusion par absorption d'une société existante prend effet à la date de la dernière des assemblées générales ayant approuvé l'opération.",
+      "answer": true,
+      "justification": "Vrai : c'est la règle par défaut de l'article L. 236-4 ; une autre date doit être prévue par le traité.",
+      "explanation": "L'article L. 236-4 du Code de commerce fixe la date d'effet par défaut : immatriculation de la société nouvelle en cas de création, sinon date de la dernière assemblée générale ayant approuvé l'opération. Le traité peut retenir une autre date, rétroactive ou différée, dans les bornes légales.",
+      "source_ref": "C. com. art. L. 236-4",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-fusion-retro-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "retroactivite-fusion",
+      "difficulty": 2,
+      "tags": [
+        "rétroactivité",
+        "période intercalaire",
+        "marge interne"
+      ],
+      "statement": "La société Hêtre SA absorbe la société Noyer SA ; la fusion, approuvée le 30 juin N, prend effet rétroactivement au 1er janvier N. Hêtre ne détenait aucun titre de Noyer. Données : résultat propre de Hêtre pour N, hors effets de la fusion, 200 000 € ; résultat de Noyer du 1er janvier au 30 juin N, 60 000 €. Le 15 avril N, Noyer a vendu à Hêtre des marchandises pour 30 000 € (coût d'achat chez Noyer : 20 000 €), toujours en stock chez Hêtre au 31 décembre N, où elles figurent pour 30 000 €. On ignore l'impôt. Calculez le résultat N de Hêtre après prise en compte de la fusion, en euros.",
+      "expected_value": 250000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Avec effet au 1er janvier N, les opérations de Noyer depuis cette date sont réputées faites pour le compte de Hêtre, qui reprend dans son résultat le résultat intercalaire (60 000 €). La vente de Noyer à Hêtre pendant la période intercalaire devient une opération interne : on élimine la vente (30 000 €) et l'achat correspondant, et la marge de 30 000 − 20 000 = 10 000 € contenue dans le stock de Hêtre au 31 décembre est annulée. Résultat N de Hêtre = 200 000 + 60 000 − 10 000 = 250 000 €. Erreur classique : oublier l'élimination de la marge (260 000 €) ou exclure le résultat intercalaire (190 000 €).",
+      "source_ref": "PCG titre VII (règl. ANC 2014-03 modifié par le règl. ANC 2017-01), opérations de la période intercalaire",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue4-fusion-retro-0005",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "retroactivite-fusion",
+      "difficulty": 1,
+      "tags": [
+        "rétroactivité",
+        "date d'effet",
+        "bornes"
+      ],
+      "front": "Entre quelles bornes le traité peut-il fixer la date d'effet d'une fusion ?",
+      "back": "La date d'effet ne peut être :\n- ni antérieure à la clôture du dernier exercice clos de la société absorbée ;\n- ni postérieure à la clôture de l'exercice en cours de la société absorbante.\nÀ défaut de stipulation : dernière assemblée ayant approuvé l'opération (ou immatriculation de la société nouvelle).",
+      "explanation": "La borne basse protège la fiabilité de l'évaluation (les apports reposent sur des comptes arrêtés) ; la borne haute évite de reporter l'opération au-delà de l'exercice en cours de la bénéficiaire. Fiscalement, la doctrine administrative admet la rétroactivité si la date d'effet n'est antérieure ni à l'ouverture de l'exercice de l'absorbante au cours duquel la fusion est réalisée, ni à la clôture du dernier exercice de l'absorbée.",
+      "source_ref": "C. com. art. L. 236-4 ; CGI art. 210 A et doctrine administrative (BOFiP) sur la rétroactivité des fusions",
+      "verified": true,
+      "estimated_seconds": 40
+    }
+  ]
+}

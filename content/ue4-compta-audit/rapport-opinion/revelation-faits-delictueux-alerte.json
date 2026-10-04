@@ -1,0 +1,197 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-rapport-alerte-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "revelation-faits-delictueux-alerte",
+      "difficulty": 1,
+      "tags": [
+        "révélation des faits délictueux",
+        "procureur de la République"
+      ],
+      "statement": "À qui le commissaire aux comptes révèle-t-il les faits délictueux dont il a connaissance au cours de sa mission ?",
+      "options": [
+        "Au président du tribunal de commerce",
+        "Au procureur de la République",
+        "À la Haute Autorité de l'audit (H2A)",
+        "À la seule assemblée générale des actionnaires"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le Code de commerce impose au commissaire aux comptes de révéler au procureur de la République les faits délictueux dont il a connaissance au cours de sa mission (option 2). Le président du tribunal de commerce (option 1) intervient dans la procédure d'alerte, qui concerne la continuité d'exploitation. La H2A (option 3) supervise la profession ; elle n'est pas destinataire des révélations. L'assemblée (option 4) reçoit le signalement des irrégularités et inexactitudes, qui ne remplace pas la révélation.",
+      "source_ref": "C. com., obligation de révélation des faits délictueux (ancien art. L. 823-12, renuméroté par l'ordonnance n° 2023-1142)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-rapport-alerte-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "revelation-faits-delictueux-alerte",
+      "difficulty": 2,
+      "tags": [
+        "procédure d'alerte",
+        "SA",
+        "continuité d'exploitation"
+      ],
+      "statement": "Le commissaire aux comptes de Pin SA, société anonyme à conseil d'administration, relève des faits de nature à compromettre la continuité de l'exploitation. Quelle est la première étape de la procédure d'alerte ?",
+      "options": [
+        "Présenter un rapport spécial à la prochaine assemblée générale",
+        "Saisir le président du tribunal de commerce, qui convoque les dirigeants",
+        "Informer le président du conseil d'administration, qui doit répondre sous quinze jours",
+        "Demander directement une délibération du conseil d'administration, sans information préalable du président"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Dans une SA à conseil d'administration, la première phase consiste à informer le président du conseil des faits de nature à compromettre la continuité de l'exploitation ; il doit répondre sous quinze jours (option 3). La délibération du conseil (option 4) n'intervient qu'en deuxième phase, à défaut de réponse ou si la réponse ne rassure pas. Le rapport spécial à l'assemblée (option 1) correspond à la troisième phase. Le président du tribunal de commerce (option 2) n'ouvre pas la procédure : en SA, il reçoit copie de l'invitation à faire délibérer le conseil et communication de la délibération (deuxième phase), puis il est informé des démarches et de leurs résultats si les décisions de l'assemblée ne permettent pas d'assurer la continuité.",
+      "source_ref": "C. com. art. L. 234-1 (procédure d'alerte du commissaire aux comptes dans les SA)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-rapport-alerte-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "revelation-faits-delictueux-alerte",
+      "difficulty": 2,
+      "tags": [
+        "révélation des faits délictueux",
+        "abus de biens sociaux",
+        "remboursement"
+      ],
+      "statement": "Le commissaire aux comptes de Rêve SA découvre que la société a payé en N des travaux de 85 000 € dans la résidence secondaire de son président-directeur général. Interrogé, celui-ci rembourse intégralement la somme avant la clôture. Le seuil de signification est de 120 000 €. Le commissaire aux comptes doit-il révéler ces faits ?",
+      "options": [
+        "Non, le remboursement a fait disparaître l'infraction",
+        "Non, car le montant est inférieur au seuil de signification",
+        "Oui, mais seulement après accord du conseil d'administration",
+        "Oui : l'infraction est consommée dès l'usage des fonds ; le remboursement ne l'efface pas, et le commissaire aux comptes révèle les faits au procureur sans avoir à les qualifier définitivement"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'abus de biens sociaux est consommé dès l'usage des fonds sociaux à des fins personnelles : le remboursement ultérieur ne l'efface pas. Le commissaire aux comptes doit révéler les faits au procureur ; il n'a pas à les qualifier définitivement ni à en apporter la preuve (option 4). L'option 1 est fausse pour la raison indiquée. L'option 2 est fausse : l'obligation de révélation ne dépend d'aucun seuil de signification. L'option 3 est fausse : la révélation est une obligation personnelle du commissaire aux comptes, qui n'est subordonnée à aucun accord des organes sociaux.",
+      "source_ref": "C. com., obligation de révélation des faits délictueux (ancien art. L. 823-12) ; C. com. art. L. 242-6 (abus de biens sociaux dans les SA)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-rapport-alerte-0004",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "revelation-faits-delictueux-alerte",
+      "difficulty": 1,
+      "tags": [
+        "procédure d'alerte",
+        "conciliation",
+        "sauvegarde"
+      ],
+      "statement": "La procédure d'alerte du commissaire aux comptes n'est pas applicable lorsqu'une procédure de conciliation ou de sauvegarde a été engagée par les dirigeants.",
+      "answer": true,
+      "justification": "Vrai : le Code de commerce écarte l'alerte du commissaire aux comptes lorsque les dirigeants ont engagé une conciliation ou une sauvegarde.",
+      "explanation": "Lorsque les dirigeants ont eux-mêmes engagé une procédure de conciliation ou de sauvegarde, les difficultés sont déjà traitées sous le contrôle du tribunal : le Code de commerce écarte alors la procédure d'alerte du commissaire aux comptes, qui conserve ses autres obligations (opinion, NEP 570, révélation).",
+      "source_ref": "C. com. art. L. 234-1 et suivants (procédure d'alerte du commissaire aux comptes, exclusion en cas de conciliation ou de sauvegarde)",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue4-rapport-alerte-0005",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "revelation-faits-delictueux-alerte",
+      "difficulty": 2,
+      "tags": [
+        "révélation des faits délictueux",
+        "responsabilité du commissaire aux comptes"
+      ],
+      "statement": "Le commissaire aux comptes qui révèle de bonne foi des faits délictueux au procureur de la République engage sa responsabilité si les poursuites n'aboutissent pas à une condamnation.",
+      "answer": false,
+      "justification": "Faux : la loi exclut la mise en cause de sa responsabilité du fait de la révélation ; c'est la non-révélation qui est sanctionnée.",
+      "explanation": "Le texte qui impose la révélation précise que la responsabilité du commissaire aux comptes ne peut pas être engagée du fait de cette révélation : le secret professionnel est levé à l'égard du procureur. Peu importe que les poursuites aboutissent ou non. C'est au contraire la non-révélation qui constitue un délit, puni de cinq ans d'emprisonnement et de 75 000 € d'amende.",
+      "source_ref": "C. com., obligation de révélation des faits délictueux et absence de responsabilité du fait de la révélation (ancien art. L. 823-12, renuméroté par l'ordonnance n° 2023-1142)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-rapport-alerte-0006",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "revelation-faits-delictueux-alerte",
+      "difficulty": 3,
+      "tags": [
+        "procédure d'alerte",
+        "révélation des faits délictueux",
+        "SAS",
+        "continuité d'exploitation"
+      ],
+      "title": "Tilia : alerte et révélation lors de l'intérim",
+      "context": "Vous êtes collaborateur du commissaire aux comptes de Tilia SAS (distribution de matériel médical, non EIP), exercice clos le 31/12/N. L'intervention intérimaire a lieu en novembre N.\n\nEn septembre N, le principal client de Tilia, qui représentait 45 % du chiffre d'affaires, a mis fin au contrat. La trésorerie s'élève à 180 000 € au 31/10/N. Selon le budget établi par la direction, les flux nets d'exploitation seront négatifs de 65 000 € par mois de novembre N à février N+1, et une échéance d'emprunt de 40 000 € est due en janvier N+1. La ligne de découvert de 150 000 € arrive à échéance le 31/12/N ; la banque n'a pas indiqué si elle la renouvellerait. Aucune procédure de conciliation ou de sauvegarde n'est engagée.\n\nLors de l'examen des notes de frais, vous relevez 23 000 € de dépenses de voyages familiaux du président, payées par la carte bancaire de la société en N et enregistrées en frais de réception, sans justificatif professionnel. Le président reconnaît les faits et propose de rembourser la somme avant la clôture.",
+      "sub_questions": [
+        {
+          "id": "q1-procedure-applicable",
+          "kind": "mcq",
+          "prompt": "Quelle procédure d'alerte le commissaire aux comptes de Tilia met-il en œuvre ?",
+          "points": 2,
+          "options": [
+            "Information du président du conseil d'administration, puis délibération du conseil, puis rapport spécial à l'assemblée, puis information du tribunal",
+            "Demande écrite d'explications au président, qui répond sous quinze jours ; puis, si la continuité reste compromise, rapport spécial et invitation à faire délibérer l'assemblée ; enfin information du président du tribunal de commerce",
+            "Saisine immédiate du procureur de la République",
+            "Aucune : l'alerte ne peut être déclenchée qu'après l'arrêté des comptes annuels"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Tilia est une SAS : la procédure applicable est celle des sociétés autres que les SA (L. 234-2), en trois temps (explications du président, dont la réponse est portée à la connaissance du président du tribunal de commerce ; rapport spécial et assemblée ; information du président du tribunal), sans phase de délibération d'un conseil d'administration (option 2). L'option 1 décrit la procédure de la SA à conseil d'administration. Le procureur (option 3) est destinataire des révélations de faits délictueux, non de l'alerte. L'option 4 est fausse : l'alerte se déclenche dès que les faits sont relevés au cours de la mission."
+        },
+        {
+          "id": "q2-tresorerie",
+          "kind": "numeric",
+          "prompt": "Calculez la trésorerie prévisionnelle de Tilia au 28/02/N+1, sans découvert bancaire. Réponse en euros, négative en cas de déficit.",
+          "points": 2,
+          "expected_value": -120000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "180 000 − 4 × 65 000 − 40 000 = 180 000 − 260 000 − 40 000 = −120 000 €. Sans renouvellement du découvert, Tilia ne peut pas faire face à ses échéances dès le début de N+1 : la perte du client et ce déficit sont des faits de nature à compromettre la continuité de l'exploitation."
+        },
+        {
+          "id": "q3-depenses-president",
+          "kind": "open",
+          "prompt": "Quelles conséquences le commissaire aux comptes tire-t-il des dépenses personnelles du président ?",
+          "points": 3,
+          "model_answer": "L'usage des fonds de la société à des fins personnelles par son président est susceptible de constituer un abus de biens sociaux. Le commissaire aux comptes doit révéler ces faits au procureur de la République, par écrit, dès qu'il en a une connaissance suffisante, sans avoir à les qualifier définitivement ; le remboursement proposé n'efface pas l'infraction, et aucun seuil ne s'applique. Sa responsabilité ne peut pas être engagée du fait de cette révélation, alors que la non-révélation est un délit. Il apprécie aussi l'incidence comptable (les dépenses ne sont pas des charges de la société ; une créance sur le président apparaît jusqu'au remboursement), en tient compte dans son évaluation du risque de fraude et de l'intégrité de la direction (NEP 240, NEP 250), étend ses contrôles sur les dépenses du président, communique les faits à la gouvernance et signale l'irrégularité à la plus prochaine assemblée.",
+          "key_points": [
+            "Faits susceptibles de constituer un abus de biens sociaux",
+            "Révélation au procureur sans délai, sans qualification définitive ; le remboursement n'efface pas l'infraction",
+            "Absence de responsabilité du fait de la révélation ; la non-révélation est un délit",
+            "Incidence sur les comptes, sur l'évaluation du risque de fraude et sur l'intégrité de la direction ; communication à la gouvernance et signalement à l'assemblée"
+          ]
+        },
+        {
+          "id": "q4-moment-alerte",
+          "kind": "true_false",
+          "prompt": "Le commissaire aux comptes doit attendre l'audit des comptes annuels pour déclencher la procédure d'alerte : il ne peut pas le faire lors d'une intervention intérimaire.",
+          "points": 1,
+          "answer": false,
+          "explanation": "Faux : l'alerte est déclenchée dès que des faits de nature à compromettre la continuité de l'exploitation sont relevés à l'occasion de la mission, à quelque moment que ce soit."
+        }
+      ],
+      "total_points": 8,
+      "explanation": "Le cas distingue deux obligations légales du commissaire aux comptes qui reposent sur des faits différents : la procédure d'alerte (continuité d'exploitation, dans sa version applicable aux SAS) et la révélation des faits délictueux (dépenses personnelles du président). Ni l'une ni l'autre n'attend la fin de l'exercice.",
+      "source_ref": "C. com. art. L. 234-2 (procédure d'alerte dans les sociétés autres que les SA) ; C. com., révélation des faits délictueux (ancien art. L. 823-12) ; C. com. art. L. 242-6 et L. 244-1 (abus de biens sociaux, applicable au président de SAS) ; NEP 250 ; NEP 570",
+      "verified": true,
+      "estimated_seconds": 720
+    }
+  ]
+}

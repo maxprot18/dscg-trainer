@@ -98,6 +98,104 @@
       "source_ref": "IAS 38 §54-57, §65-67, §71 et §97 (règlement UE 2023/1803) ; PCG art. 212-3 (règl. ANC 2014-03) ; compte 2803",
       "verified": true,
       "estimated_seconds": 900
+    },
+    {
+      "id": "ue4-ifrs-ias38-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-38-immobilisations-incorporelles",
+      "difficulty": 1,
+      "tags": [
+        "durée d'utilité indéterminée",
+        "amortissement",
+        "test de dépréciation"
+      ],
+      "statement": "Selon IAS 38, une immobilisation incorporelle dont la durée d'utilité est indéterminée :",
+      "options": [
+        "est amortie sur une durée maximale de 20 ans",
+        "est amortie sur 10 ans faute de pouvoir estimer sa durée d'utilité",
+        "n'est pas amortie et fait l'objet d'un test de dépréciation au moins annuel",
+        "n'est pas amortie et n'est testée qu'en présence d'un indice de perte de valeur"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Une immobilisation incorporelle à durée d'utilité indéterminée n'est pas amortie (IAS 38 §107) ; elle est soumise à un test de dépréciation chaque année et chaque fois qu'il existe un indice de perte de valeur (§108 ; IAS 36 §10). Le caractère indéterminé de la durée est réexaminé à chaque période (§109). IAS 38 ne fixe aucune durée plafond (20 ans) ; l'amortissement sur 10 ans faute d'estimation fiable est une règle propre au référentiel français, sans équivalent en IFRS. Un test seulement sur indice ne vaut que pour les actifs amortissables.",
+      "source_ref": "IAS 38 §107-109 ; IAS 36 §10 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-ifrs-ias38-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-38-immobilisations-incorporelles",
+      "difficulty": 2,
+      "tags": [
+        "modèle de la réévaluation",
+        "marché actif",
+        "marques"
+      ],
+      "statement": "Un groupe détient des marques acquises lors de regroupements d'entreprises, dont la juste valeur a été estimée par un expert selon une méthode des redevances. Il n'existe pas de marché actif pour ces marques. Le groupe peut-il les évaluer selon le modèle de la réévaluation ?",
+      "options": [
+        "Oui, dès lors qu'un expert indépendant détermine la juste valeur à chaque clôture",
+        "Oui, à condition que la réévaluation porte sur l'ensemble de la catégorie des marques",
+        "Non, le modèle de la réévaluation est interdit pour toutes les immobilisations incorporelles",
+        "Non, le modèle de la réévaluation exige que la juste valeur soit déterminée par référence à un marché actif"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Le modèle de la réévaluation n'est applicable à une immobilisation incorporelle que si la juste valeur peut être déterminée par référence à un marché actif (IAS 38 §75), ce qui est rare et en pratique exclu pour les marques, uniques par nature (§78). Une expertise ou une méthode des redevances ne suffit pas. Le traitement par catégorie (§72) est une condition supplémentaire, non suffisante. Le modèle n'est pas interdit en soi : il reste possible, par exemple, pour des quotas ou licences négociables sur un marché actif.",
+      "source_ref": "IAS 38 §72, §75 et §78 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-ifrs-ias38-0004",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-38-immobilisations-incorporelles",
+      "difficulty": 2,
+      "tags": [
+        "marque générée en interne",
+        "génération interne"
+      ],
+      "statement": "Une marque développée en interne peut être immobilisée en IFRS dès lors que les dépenses engagées pour la créer (design, dépôt, campagnes de lancement) sont mesurées de façon fiable.",
+      "answer": false,
+      "justification": "IAS 38 interdit de comptabiliser en immobilisation les marques générées en interne, quel que soit le suivi des coûts.",
+      "explanation": "Les marques, titres de journaux, listes de clients et éléments similaires générés en interne ne sont pas comptabilisés en immobilisations incorporelles (IAS 38 §63) : leurs dépenses ne peuvent être distinguées du coût de développement de l'activité dans son ensemble (§64). Seule une marque acquise (séparément ou lors d'un regroupement d'entreprises) peut figurer à l'actif. Les frais de dépôt et de lancement sont des charges.",
+      "source_ref": "IAS 38 §63-64 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-ifrs-ias38-0005",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-38-immobilisations-incorporelles",
+      "difficulty": 2,
+      "tags": [
+        "acquisition séparée",
+        "coût d'entrée",
+        "amortissement"
+      ],
+      "statement": "Le 01/04/N, une société acquiert une licence d'exploitation d'un logiciel de gestion de production : prix catalogue 120 000 € HT, remise de 5 % ; TVA récupérable. Elle engage en outre : tests de bon fonctionnement avant mise en service 8 000 € ; formation des utilisateurs 6 000 € ; campagne de communication interne sur le nouvel outil 10 000 €. La licence est prête à être utilisée le 01/04/N ; elle est amortie linéairement sur 4 ans, sans valeur résiduelle. Calculez sa valeur comptable nette au 31/12/N (en euros).",
+      "expected_value": 99125,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Coût = prix d'achat net de remise 120 000 × 0,95 = 114 000 € + coûts directement attribuables (tests de bon fonctionnement) 8 000 € = 122 000 € (IAS 38 §27-28). La formation du personnel et la communication sont exclues du coût (§29). Amortissement N (9 mois) = 122 000 / 4 × 9/12 = 22 875 €. Valeur nette au 31/12/N = 122 000 − 22 875 = 99 125 €. Inclure la formation donnerait 104 000 € ; amortir sur une année pleine, 91 500 €.",
+      "source_ref": "IAS 38 §27-30 et §97 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 200
     }
   ]
 }

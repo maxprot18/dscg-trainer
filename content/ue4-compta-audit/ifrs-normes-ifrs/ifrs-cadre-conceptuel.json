@@ -1,0 +1,118 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-ifrsn-cadre-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-cadre-conceptuel",
+      "difficulty": 1,
+      "tags": [
+        "définition du passif",
+        "éléments des états financiers"
+      ],
+      "statement": "Selon le Cadre conceptuel de l'IASB (2018), qu'est-ce qu'un passif ?",
+      "options": [
+        "Une sortie probable de ressources dont le montant peut être évalué de façon fiable",
+        "Une dépense future que la direction s'est fixé l'objectif d'engager",
+        "Une obligation actuelle de l'entité de transférer une ressource économique du fait d'événements passés",
+        "L'intérêt résiduel dans les actifs de l'entité après déduction de ses dettes"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Le Cadre conceptuel de 2018 définit le passif comme une obligation actuelle de l'entité de transférer une ressource économique du fait d'événements passés ; la définition ne contient plus de référence à une sortie « probable » d'avantages. « Une sortie probable de ressources dont le montant est fiable » mélange l'ancienne définition (2010) et les critères de comptabilisation. Une dépense future envisagée par la direction (plan de restructuration non annoncé, par exemple) n'est pas une obligation actuelle : l'entité peut l'éviter par ses actions futures. Enfin, le passif n'est pas l'intérêt résiduel : c'est la définition des capitaux propres.",
+      "source_ref": "Cadre conceptuel de l'information financière (IASB, 2018), chap. 4 (§4.26-4.47)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-ifrsn-cadre-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-cadre-conceptuel",
+      "difficulty": 1,
+      "tags": [
+        "caractéristiques qualitatives"
+      ],
+      "statement": "Parmi les notions suivantes, laquelle est une caractéristique qualitative auxiliaire de l'information financière au sens du Cadre conceptuel de l'IASB ?",
+      "options": [
+        "La pertinence",
+        "L'image fidèle",
+        "L'importance relative",
+        "La comparabilité"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Le Cadre distingue deux caractéristiques qualitatives fondamentales, la pertinence et l'image fidèle, et quatre caractéristiques auxiliaires qui en renforcent l'utilité : comparabilité, vérifiabilité, rapidité et compréhensibilité. La comparabilité est donc la réponse. La pertinence et l'image fidèle sont fondamentales, pas auxiliaires. L'importance relative (significativité) est un aspect de la pertinence propre à chaque entité, non une caractéristique auxiliaire.",
+      "source_ref": "Cadre conceptuel de l'information financière (IASB, 2018), chap. 2 (§2.4-2.5, §2.23-2.38)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-ifrsn-cadre-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-cadre-conceptuel",
+      "difficulty": 2,
+      "tags": [
+        "comptabilisation",
+        "incertitude"
+      ],
+      "statement": "Selon le Cadre conceptuel révisé en 2018, à quelle condition un élément qui répond à la définition d'un actif est-il comptabilisé dans l'état de la situation financière ?",
+      "options": [
+        "Si l'entrée d'avantages économiques est plus probable qu'improbable (probabilité supérieure à 50 %) et si son coût peut être évalué de façon fiable",
+        "Si sa comptabilisation fournit aux utilisateurs une information pertinente et une image fidèle de l'actif, compte tenu de la contrainte de coût",
+        "Toujours, dès lors que la définition de l'actif est remplie",
+        "Si la direction estime que sa comptabilisation est prudente"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Depuis 2018, le Cadre ne retient plus de seuil général de probabilité : un élément conforme à la définition d'un actif ou d'un passif est comptabilisé si cela fournit une information pertinente et une image fidèle, compte tenu de la contrainte de coût. Une faible probabilité d'entrée ou de sortie d'avantages ou une forte incertitude d'évaluation peuvent conduire à ne pas comptabiliser, mais ce sont des facteurs d'appréciation, non un seuil de 50 %. Le critère « probable et évaluable de façon fiable » est celui de l'ancien Cadre (2010) et subsiste dans certaines normes (IAS 16 §7, IAS 37 §14). Le Cadre n'impose pas de comptabiliser tout élément conforme à la définition, ni ne s'en remet au seul choix de la direction.",
+      "source_ref": "Cadre conceptuel de l'information financière (IASB, 2018), chap. 5 (§5.6-5.25)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-ifrsn-cadre-0004",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-cadre-conceptuel",
+      "difficulty": 1,
+      "tags": [
+        "statut du Cadre conceptuel",
+        "hiérarchie des normes"
+      ],
+      "statement": "En cas de contradiction entre le Cadre conceptuel de l'IASB et les dispositions d'une norme IFRS adoptée, l'entité applique le Cadre conceptuel.",
+      "answer": false,
+      "justification": "Faux. Le Cadre conceptuel n'est pas une norme et ne prévaut sur aucune norme : en cas de conflit, la norme s'applique.",
+      "explanation": "Le Cadre conceptuel n'est pas une norme : il aide l'IASB à élaborer des normes cohérentes et aide les préparateurs à définir des méthodes comptables lorsqu'aucune norme ne s'applique (IAS 8 §11, en second rang après les normes traitant de questions similaires). Il n'a d'ailleurs pas été adopté par l'Union européenne. Aucune disposition du Cadre ne prévaut sur une norme : en cas de conflit, c'est la norme qui s'applique, même si l'IASB peut s'écarter volontairement du Cadre dans une norme.",
+      "source_ref": "Cadre conceptuel de l'information financière (IASB, 2018), statut et objet (SP1.1-SP1.2) ; IAS 8 §11 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-ifrsn-cadre-0005",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-cadre-conceptuel",
+      "difficulty": 1,
+      "tags": [
+        "caractéristiques qualitatives",
+        "image fidèle"
+      ],
+      "front": "Quelles sont les deux caractéristiques qualitatives fondamentales de l'information financière (Cadre conceptuel IASB 2018) et leurs composantes ?",
+      "back": "1. Pertinence : valeur prédictive, valeur de confirmation, importance relative.\n2. Image fidèle : information exhaustive, neutre (la prudence soutient la neutralité) et exempte d'erreurs.\nCaractéristiques auxiliaires : comparabilité, vérifiabilité, rapidité, compréhensibilité.",
+      "explanation": "La notion d'image fidèle a remplacé celle de « fiabilité » dès 2010 ; le Cadre de 2018 a réintroduit la prudence comme soutien de la neutralité (§2.16), sans autoriser de sous-évaluation des actifs ou de surévaluation des passifs.",
+      "source_ref": "Cadre conceptuel de l'information financière (IASB, 2018), chap. 2 (§2.5-2.22)",
+      "verified": true,
+      "estimated_seconds": 40
+    }
+  ]
+}

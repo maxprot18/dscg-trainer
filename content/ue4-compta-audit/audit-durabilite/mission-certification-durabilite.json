@@ -15,6 +15,99 @@
       "source_ref": "Directive (UE) 2022/2464 (CSRD), modifiant la directive 2006/43/CE (assurance limitée) ; Ordonnance n° 2023-1142 du 6 décembre 2023 (certification des informations en matière de durabilité, CAC et OTI)",
       "verified": true,
       "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-durab-certif-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "audit-durabilite",
+      "notion": "mission-certification-durabilite",
+      "difficulty": 1,
+      "tags": [
+        "certification des informations en matière de durabilité",
+        "OTI",
+        "H2A"
+      ],
+      "statement": "En France, à qui une société soumise à la CSRD peut-elle confier la certification de ses informations en matière de durabilité ?",
+      "options": [
+        "Exclusivement au commissaire aux comptes qui certifie ses comptes annuels",
+        "À un expert-comptable inscrit au tableau de l'Ordre, sans autre condition",
+        "À l'Autorité des marchés financiers, pour les sociétés cotées",
+        "À un commissaire aux comptes inscrit pour la certification des informations en matière de durabilité ou à un organisme tiers indépendant accrédité"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'option 4 est exacte : l'ordonnance n° 2023-1142 ouvre la mission aux commissaires aux comptes inscrits pour cette activité et aux organismes tiers indépendants (OTI) accrédités, sous la supervision de la H2A. L'option 1 est fausse : la mission peut être confiée au commissaire aux comptes des comptes, s'il remplit les conditions, mais aussi à un autre professionnel. L'option 2 est fausse : la qualité d'expert-comptable ne suffit pas ; la mission relève d'un statut et d'une supervision spécifiques. L'option 3 est fausse : l'AMF est un régulateur de marché, pas un prestataire d'assurance ; elle contrôle l'information publiée par les sociétés cotées.",
+      "source_ref": "Ordonnance n° 2023-1142 du 6 décembre 2023 (C. com., livre VIII, titre II : certification des informations en matière de durabilité par un commissaire aux comptes ou un OTI)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-durab-certif-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "audit-durabilite",
+      "notion": "mission-certification-durabilite",
+      "difficulty": 2,
+      "tags": [
+        "assurance limitée",
+        "rapport",
+        "conclusion"
+      ],
+      "statement": "Quelle formulation correspond à la conclusion sans modification d'un rapport de certification des informations en matière de durabilité, dans le cadre actuel de la CSRD ?",
+      "options": [
+        "« Nous certifions que l'état de durabilité est régulier et sincère et donne une image fidèle de la performance de durabilité de l'entité. »",
+        "« Sur la base des procédures que nous avons mises en œuvre et des éléments que nous avons collectés, nous n'avons pas relevé d'éléments de nature à remettre en cause le fait que les informations en matière de durabilité sont établies, dans tous leurs aspects significatifs, conformément aux exigences applicables. »",
+        "« À notre avis, les informations en matière de durabilité présentent sincèrement, dans tous leurs aspects significatifs, la performance de durabilité de l'entité. »",
+        "« Nous attestons de l'exactitude de chacun des indicateurs publiés dans l'état de durabilité. »"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'option 2 est exacte : la mission est une mission d'assurance limitée ; la conclusion s'exprime sous une forme négative (absence d'éléments relevés remettant en cause la conformité au référentiel). L'option 1 reprend la formule de certification des comptes (régularité, sincérité, image fidèle), propre à l'assurance raisonnable. L'option 3 est une opinion positive, caractéristique d'une assurance raisonnable, que la CSRD n'impose pas à ce stade. L'option 4 est fausse : aucune mission d'assurance ne porte sur l'exactitude de chaque donnée ; le professionnel se prononce par rapport à un seuil de signification.",
+      "source_ref": "Directive (UE) 2022/2464 (directive 2006/43/CE modifiée : mission d'assurance limitée) ; ordonnance n° 2023-1142",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-durab-certif-0004",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "audit-durabilite",
+      "notion": "mission-certification-durabilite",
+      "difficulty": 1,
+      "tags": [
+        "certification des informations en matière de durabilité",
+        "champ de la mission"
+      ],
+      "statement": "La mission de certification des informations en matière de durabilité porte uniquement sur les indicateurs environnementaux chiffrés de l'état de durabilité.",
+      "answer": false,
+      "justification": "Faux : la mission porte sur la conformité de l'ensemble de l'état de durabilité aux ESRS, y compris le processus de double matérialité, sur le balisage électronique et sur les informations de l'article 8 du règlement taxonomie.",
+      "explanation": "Les informations sociales (ESRS S1 à S4), de gouvernance (G1), les informations narratives (politiques, actions, objectifs) et les informations générales d'ESRS 2 entrent dans le champ, au même titre que les données environnementales chiffrées. Le professionnel examine aussi le processus mis en œuvre par l'entité pour déterminer les informations publiées. Le niveau d'assurance est limité, ce qui n'empêche pas un champ étendu.",
+      "source_ref": "Directive (UE) 2022/2464 (art. 34 de la directive 2013/34/UE modifié : objet de l'assurance) ; ordonnance n° 2023-1142",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue4-durab-certif-0005",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "audit-durabilite",
+      "notion": "mission-certification-durabilite",
+      "difficulty": 2,
+      "tags": [
+        "double matérialité",
+        "champ de la mission",
+        "processus"
+      ],
+      "statement": "Le processus mis en œuvre par l'entreprise pour déterminer les informations publiées dans son état de durabilité, c'est-à-dire son analyse de double matérialité, entre dans le champ de la mission de certification des informations en matière de durabilité.",
+      "answer": true,
+      "justification": "Vrai : la CSRD et l'ordonnance n° 2023-1142 incluent expressément dans la mission l'examen du processus de détermination des informations publiées au regard des ESRS.",
+      "explanation": "Le professionnel ne refait pas l'analyse de double matérialité, mais apprécie si le processus suivi est conforme aux exigences d'ESRS 1 : identification des impacts, risques et opportunités, prise en compte de la chaîne de valeur et des parties prenantes, critères et seuils retenus, documentation. Une analyse lacunaire peut conduire à des omissions d'informations matérielles, et donc à une conclusion modifiée.",
+      "source_ref": "Directive (UE) 2022/2464 (art. 34 de la directive 2013/34/UE modifié) ; ordonnance n° 2023-1142 ; règlement délégué (UE) 2023/2772, ESRS 1, chapitre 3",
+      "verified": true,
+      "estimated_seconds": 50
     }
   ]
 }

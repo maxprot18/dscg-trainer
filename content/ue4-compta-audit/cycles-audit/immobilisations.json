@@ -1,0 +1,888 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-audit-immo-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "existence",
+        "inspection physique"
+      ],
+      "statement": "L'auditeur sélectionne des machines dans le fichier des immobilisations de la société Orion et se rend dans l'usine pour les voir et relever leur numéro de série. Quelle assertion ce test vise-t-il principalement ?",
+      "options": [
+        "Exhaustivité des immobilisations",
+        "Droits et obligations",
+        "Existence des immobilisations",
+        "Évaluation des immobilisations"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Partir du fichier (ce qui est comptabilisé) pour remonter au bien physique vérifie que les immobilisations inscrites existent : c'est l'existence. L'exhaustivité se teste dans l'autre sens, en partant des biens observés dans l'usine pour vérifier leur inscription au fichier. Voir une machine ne prouve pas que l'entité en est propriétaire (elle peut être louée ou en crédit-bail) : les droits et obligations se vérifient sur les factures, contrats ou titres. L'évaluation (amortissements, dépréciation) n'est que marginalement éclairée par l'observation de l'état du bien.",
+      "source_ref": "NEP 500 (assertions relatives aux soldes des comptes en fin de période : existence)",
+      "estimated_seconds": 50,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "droits et obligations",
+        "propriété"
+      ],
+      "statement": "Pour les ensembles immobiliers et la flotte de véhicules inscrits à l'actif de la société Lyra, l'auditeur examine les actes notariés et les certificats d'immatriculation (cartes grises) au nom de l'entité. Quelle assertion est principalement couverte ?",
+      "options": [
+        "Droits et obligations",
+        "Existence",
+        "Exhaustivité",
+        "Séparation des exercices"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Les titres de propriété (actes notariés, cartes grises au nom de la société) établissent que l'entité détient les droits sur les biens inscrits : c'est l'assertion droits et obligations. L'existence physique se vérifie par inspection des biens, non par un document juridique. L'exhaustivité suppose de partir de biens non encore rattachés au fichier. La séparation des exercices porte sur le rattachement des opérations à la bonne période, que l'examen d'un titre de propriété ne teste pas.",
+      "source_ref": "NEP 500 (assertions relatives aux soldes : droits et obligations)",
+      "estimated_seconds": 50,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-assertions",
+      "difficulty": 2,
+      "tags": [
+        "assertions",
+        "exhaustivité",
+        "entretien"
+      ],
+      "statement": "Chez Vega, l'auditeur extrait du grand livre toutes les factures supérieures à 5 000 € HT imputées au compte 615 « Entretien et réparations » et examine pour chacune si la dépense aurait dû être immobilisée (remplacement d'un composant, amélioration durable). Quelle assertion relative aux soldes d'immobilisations ce test vise-t-il ?",
+      "options": [
+        "Existence des immobilisations",
+        "Droits et obligations",
+        "Évaluation des amortissements",
+        "Exhaustivité des immobilisations"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Une dépense immobilisable passée en charges est absente de l'actif : rechercher ces dépenses dans les comptes de charges teste l'exhaustivité des immobilisations. L'existence se teste en partant du fichier vers le bien ; ce test ne remet pas en cause les biens déjà inscrits. Les droits et obligations portent sur la propriété des biens, non sur leur imputation. L'évaluation des amortissements suppose que le bien soit déjà à l'actif ; ce test cherche justement des biens qui n'y sont pas.",
+      "source_ref": "NEP 500 (assertion exhaustivité) ; PCG art. 211-1 et 212-1 (définition et comptabilisation des actifs) ; PCG compte 615",
+      "estimated_seconds": 70,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0004",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "existence",
+        "exhaustivité"
+      ],
+      "statement": "Partir des machines observées dans l'atelier pour vérifier qu'elles figurent bien dans le fichier des immobilisations permet de tester l'existence des immobilisations.",
+      "answer": false,
+      "justification": "Faux : partir du terrain vers le fichier teste l'exhaustivité ; l'existence se teste en partant du fichier vers le bien.",
+      "explanation": "Le sens du test détermine l'assertion couverte. Un bien observé mais absent du fichier révèle une omission (exhaustivité). Pour l'existence, l'auditeur sélectionne des lignes du fichier et vérifie que le bien correspondant est présent : un bien inscrit mais introuvable révèle une sortie non comptabilisée ou un actif fictif.",
+      "source_ref": "NEP 500 (assertions : existence, exhaustivité)",
+      "estimated_seconds": 40,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0005",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "soldes",
+        "procédures"
+      ],
+      "front": "Quelles sont les assertions relatives aux soldes d'immobilisations, et quelle procédure type pour chacune ?",
+      "back": "Existence : inspection physique en partant du fichier.\nDroits et obligations : actes notariés, cartes grises, factures, repérage du crédit-bail.\nExhaustivité : du terrain vers le fichier ; revue des comptes d'entretien et de petit matériel.\nÉvaluation et imputation : recalcul des amortissements, revue des indices de perte de valeur et du test de dépréciation.",
+      "explanation": "NEP 500 : chaque assertion appelle une procédure adaptée. L'inspection physique prouve l'existence mais ni la propriété ni la correcte évaluation du bien.",
+      "source_ref": "NEP 500 (assertions relatives aux soldes des comptes en fin de période)",
+      "estimated_seconds": 60,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0006",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-risques",
+      "difficulty": 1,
+      "tags": [
+        "risques",
+        "activation de charges",
+        "incitations"
+      ],
+      "statement": "Dans laquelle des situations suivantes le risque que des charges soient comptabilisées à tort en immobilisations est-il le plus élevé ?",
+      "options": [
+        "Une PME familiale très bénéficiaire qui cherche à réduire son impôt sur les sociétés",
+        "Une société dont l'emprunt bancaire est assorti d'un covenant de résultat qu'elle risque de ne pas respecter",
+        "Une société qui n'a réalisé aucun investissement au cours de l'exercice",
+        "Une société dont toutes les immobilisations sont totalement amorties"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Activer des charges augmente le résultat : la direction y est incitée lorsqu'un covenant de résultat risque d'être franchi (NEP 240, facteurs de risque liés aux pressions). Une société cherchant à réduire son impôt a l'incitation inverse : passer en charges des dépenses immobilisables (risque sur l'exhaustivité des immobilisations). Sans investissement, les occasions d'activer des charges sont limitées. Le fait que les biens existants soient amortis ne crée pas en soi d'incitation à activer des charges.",
+      "source_ref": "NEP 315 (évaluation du risque) ; NEP 240 (facteurs de risque de fraude : pressions)",
+      "estimated_seconds": 60,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0007",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "dépréciation",
+        "indice de perte de valeur"
+      ],
+      "statement": "Lors de la prise de connaissance de la société Antarès, quel fait constitue un indice de perte de valeur imposant à l'entité de tester la dépréciation d'une immobilisation ?",
+      "options": [
+        "La ligne de production est amortie selon le mode dégressif",
+        "La ligne de production a été financée par un emprunt à taux fixe",
+        "La VNC de la ligne de production est devenue faible car elle est presque totalement amortie",
+        "La perte du principal client a réduit de moitié le taux d'utilisation de la ligne de production"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Une baisse durable et importante de l'utilisation d'un actif, due à un changement défavorable de l'environnement, est un indice de perte de valeur : l'entité doit alors comparer la VNC à la valeur actuelle. Le mode d'amortissement dégressif est un choix de plan, sans lien avec une perte de valeur. Le mode de financement n'affecte pas la valeur de l'actif. Une VNC faible du fait de l'amortissement n'est pas un indice ; elle rend même une dépréciation moins probable.",
+      "source_ref": "PCG art. 214-15 s. (dépréciation des actifs, indices de perte de valeur) ; NEP 540",
+      "estimated_seconds": 70,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0008",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "exhaustivité",
+        "fiscalité"
+      ],
+      "statement": "Lorsque la direction cherche avant tout à minimiser le résultat imposable, l'auditeur oriente en priorité ses tests sur le cycle immobilisations vers le risque de dépenses immobilisables comptabilisées en charges.",
+      "answer": true,
+      "justification": "Vrai : passer en charges une dépense immobilisable réduit immédiatement le résultat ; le risque porte sur l'exhaustivité des immobilisations.",
+      "explanation": "Le sens du risque dépend des incitations de la direction. Une entreprise qui veut réduire son impôt a intérêt à sous-évaluer l'actif en imputant en charges des dépenses à immobiliser ; l'auditeur revoit alors les comptes d'entretien, de petit matériel et de sous-traitance. À l'inverse, une entreprise sous pression de résultat présente un risque d'activation de charges (réalité, classification).",
+      "source_ref": "NEP 315 (évaluation des risques au niveau des assertions) ; NEP 500 (exhaustivité)",
+      "estimated_seconds": 45,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0009",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "procédures analytiques",
+        "dotations"
+      ],
+      "statement": "En phase de planification, l'auditeur de la société Capella construit une attente de dotations aux amortissements des immobilisations corporelles. Brut amortissable au 01/01/N : 2 400 000 € ; au 31/12/N : 2 600 000 €. Les acquisitions sont réparties régulièrement sur l'année et tous les biens sont amortis en linéaire sur une durée moyenne de 8 ans. La dotation comptabilisée en N s'élève à 248 000 €. Calculez l'écart non expliqué entre la dotation attendue (sur la base du brut amortissable moyen) et la dotation comptabilisée (en euros, arrondi à l'euro).",
+      "expected_value": 64500,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Brut moyen = (2 400 000 + 2 600 000) / 2 = 2 500 000 €. Taux moyen = 1 / 8 = 12,5 %. Dotation attendue = 2 500 000 × 12,5 % = 312 500 €. Écart = 312 500 − 248 000 = 64 500 € (dotation comptabilisée inférieure à l'attente). Retenir le brut de clôture donnerait 325 000 − 248 000 = 77 000 €. Un tel écart peut révéler des dotations omises (biens non saisis dans le fichier, mise en service non enregistrée) ou des durées allongées sans justification ; il oriente les tests de détail.",
+      "source_ref": "NEP 315 (procédures analytiques de planification) ; NEP 520",
+      "estimated_seconds": 150,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0010",
+      "type": "audit_case",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-risques",
+      "difficulty": 3,
+      "tags": [
+        "risques",
+        "production immobilisée",
+        "durées d’amortissement",
+        "covenants"
+      ],
+      "title": "Résultat sous pression chez un équipementier",
+      "cycle": "immobilisations",
+      "situation": "Vous auditez les comptes au 31/12/N de la SAS Draco, équipementier industriel. Le chiffre d'affaires baisse de 15 % mais le résultat d'exploitation reste stable. Un emprunt bancaire de 6 000 000 € impose un ratio dette nette / EBE inférieur à 3, que la société respectait de justesse en N−1.\nLa production immobilisée (compte 72) passe de 150 000 € à 420 000 € ; elle comprend des heures du bureau d'études et une quote-part de frais de siège.\nDes frais de développement de 280 000 € sont activés pour la première fois sur un projet dont la commercialisation n'est pas encore décidée.\nEn juillet N, la direction a porté la durée d'amortissement des machines de 5 à 8 ans, sans étude technique, ce qui réduit les dotations de 190 000 €.\nSeuil de signification : 120 000 €.",
+      "assertions": [
+        "Réalité et classification des immobilisations produites",
+        "Évaluation (amortissements)"
+      ],
+      "procedures": {
+        "options": [
+          "Analyser la production immobilisée : rapprocher les heures des relevés de temps par projet, vérifier les taux horaires et exclure les frais de siège non directement attribuables",
+          "Vérifier que les frais de développement remplissent toutes les conditions d'activation, notamment l'intention et la capacité d'achever le projet et la probabilité d'avantages économiques futurs",
+          "Obtenir la justification technique de l'allongement des durées d'amortissement (usage réel, maintenance, comparaison sectorielle) et vérifier son application prospective",
+          "Envoyer des demandes de confirmation de solde aux principaux clients",
+          "Assister à l'inventaire physique des stocks de produits finis",
+          "Contrôler les déclarations de TVA collectée de l'exercice"
+        ],
+        "answer": [
+          0,
+          1,
+          2
+        ]
+      },
+      "risk": {
+        "options": [
+          "Faible",
+          "Modéré",
+          "Élevé"
+        ],
+        "answer": 2,
+        "rationale": "Les facteurs de risque se cumulent : covenant proche d'être franchi (incitation à améliorer l'EBE et le résultat), résultat stable malgré la baisse d'activité, triplement de la production immobilisée incluant des frais de siège, première activation de frais de développement sur un projet non décidé, allongement des durées sans étude technique. Chacun de ces éléments (270 000 € d'augmentation de production immobilisée, 280 000 € de frais de développement, 190 000 € de dotations en moins) dépasse le seuil de signification de 120 000 €."
+      },
+      "conclusion": {
+        "model_answer": "Le risque d'anomalies significatives sur la valeur des immobilisations est élevé. Les procédures substantives (analyse de la production immobilisée, examen des conditions d'activation des frais de développement, appréciation de la justification des nouvelles durées) visent la réalité, la classification et l'évaluation des immobilisations. Si les frais de siège, les frais de développement ou l'allongement des durées ne sont pas justifiés, l'auditeur demande les corrections à la direction ; à défaut, il apprécie l'incidence des anomalies non corrigées sur son opinion et en informe la gouvernance.",
+        "key_points": [
+          "Risque élevé justifié par l'incitation (covenant) et les montants supérieurs au seuil",
+          "Assertions visées : réalité, classification, évaluation",
+          "Frais de siège non directement attribuables à exclure de la production immobilisée",
+          "Changement de durée : estimation à justifier techniquement, appliquée de manière prospective"
+        ]
+      },
+      "explanation": "Les trois procédures retenues répondent directement aux trois zones de risque décrites (production immobilisée, frais de développement, durées d'amortissement). Les confirmations clients, l'inventaire des stocks et la TVA collectée concernent d'autres cycles. La NEP 330 exige des procédures substantives spécifiques face à un risque élevé ; la NEP 540 encadre l'examen des estimations (durées d'utilisation, perspectives du projet de développement).",
+      "source_ref": "NEP 315 ; NEP 240 (facteurs de risque) ; NEP 330 ; NEP 540 (estimations comptables) ; PCG art. 212-3 (frais de développement) ; PCG, règles relatives au coût de production (règl. ANC 2014-03)",
+      "estimated_seconds": 480,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0011",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "contrôles clés",
+        "autorisation",
+        "délégation de pouvoirs"
+      ],
+      "statement": "Quel contrôle interne permet le mieux de prévenir des acquisitions d'immobilisations non autorisées ?",
+      "options": [
+        "L'inventaire physique annuel des immobilisations comparé au fichier",
+        "Le rapprochement mensuel du fichier des immobilisations avec la balance générale",
+        "La validation préalable de chaque demande d'investissement selon une délégation de pouvoirs à seuils, dans la limite d'un budget approuvé",
+        "L'étiquetage des biens dès leur réception"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Seule l'autorisation préalable intervient avant l'engagement de la dépense : c'est un contrôle préventif qui couvre la réalité et l'autorisation des acquisitions. L'inventaire physique et le rapprochement fichier / balance sont des contrôles de détection, qui portent sur l'existence et l'exhaustivité des biens déjà acquis, sans vérifier qu'ils étaient autorisés. L'étiquetage facilite le suivi et l'inventaire mais n'empêche pas une acquisition non autorisée.",
+      "source_ref": "NEP 315 (compréhension du contrôle interne : activités de contrôle)",
+      "estimated_seconds": 60,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0012",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "contrôles clés",
+        "sorties",
+        "inventaire physique"
+      ],
+      "statement": "Chez Hydra, des matériels mis au rebut par les ateliers ne sont jamais signalés à la comptabilité. Quel contrôle permet de détecter ces sorties non comptabilisées ?",
+      "options": [
+        "L'approbation du budget annuel d'investissement par le conseil d'administration",
+        "Le calcul automatique des dotations par le logiciel d'immobilisations",
+        "La revue des factures importantes imputées en compte d'entretien",
+        "L'inventaire physique périodique des biens étiquetés, comparé au fichier, avec analyse des écarts"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Un bien inscrit au fichier mais introuvable lors de l'inventaire physique révèle une sortie non comptabilisée : ce contrôle de détection couvre l'existence. Le budget d'investissement porte sur les entrées, pas sur les sorties. Le calcul automatique des dotations continue au contraire d'amortir les biens disparus tant qu'ils restent au fichier. La revue des factures d'entretien vise les dépenses immobilisables passées en charges (exhaustivité), non les sorties.",
+      "source_ref": "NEP 315 (activités de contrôle) ; NEP 500 (existence)",
+      "estimated_seconds": 60,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0013",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-controles-cles",
+      "difficulty": 1,
+      "tags": [
+        "contrôles clés",
+        "tests de procédures",
+        "procédures substantives"
+      ],
+      "statement": "Si les tests de procédures montrent que les contrôles internes du cycle immobilisations sont efficaces, l'auditeur peut se dispenser de toute procédure substantive sur des immobilisations significatives.",
+      "answer": false,
+      "justification": "Faux : quelle que soit l'évaluation du risque, la NEP 330 impose des procédures substantives sur chaque catégorie d'opérations et solde significatif.",
+      "explanation": "Des contrôles efficaces réduisent le risque et permettent d'alléger l'étendue des procédures substantives (échantillons plus petits, procédures analytiques plus larges), mais ne les suppriment pas. Les immobilisations étant significatives, l'auditeur doit au minimum mettre en œuvre des procédures substantives adaptées, par exemple le rapprochement du tableau de variation et le recalcul des dotations.",
+      "source_ref": "NEP 330 (procédures substantives sur les éléments significatifs)",
+      "estimated_seconds": 40,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0014",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-controles-cles",
+      "difficulty": 1,
+      "tags": [
+        "contrôles clés",
+        "cycle immobilisations"
+      ],
+      "front": "Quels sont les contrôles clés du cycle immobilisations ?",
+      "back": "Autorisation : budget approuvé, délégation de pouvoirs à seuils.\nSéparation des tâches : commande, réception, tenue du fichier et paiement.\nFichier tenu à jour et rapproché de la balance.\nInventaire physique périodique des biens étiquetés.\nSorties : bon de cession ou de rebut autorisé et transmis à la comptabilité.\nRègle écrite charge / immobilisation et paramétrage protégé des durées.",
+      "explanation": "NEP 315 : l'auditeur prend connaissance de ces contrôles ; NEP 330 : il teste ceux sur lesquels il s'appuie. L'autorisation est préventive, l'inventaire et le rapprochement sont des contrôles de détection.",
+      "source_ref": "NEP 315 ; NEP 330",
+      "estimated_seconds": 60,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0015",
+      "type": "audit_case",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "contrôles clés",
+        "fichier des immobilisations",
+        "faiblesses du contrôle interne"
+      ],
+      "title": "Fichier des immobilisations à l'abandon",
+      "cycle": "immobilisations",
+      "situation": "Vous auditez les comptes au 31/12/N de la SARL Lynx, prestataire informatique stable, sans endettement ni objectif de résultat particulier.\nImmobilisations corporelles brutes : 1 900 000 €, dont 1 300 000 € de matériel informatique réparti en environ 900 éléments de faible valeur unitaire, en grande partie déjà fortement amortis.\nLe fichier des immobilisations n'a pas été rapproché de la balance depuis deux ans ; l'écart constaté par vos soins s'élève à 42 000 € (fichier supérieur à la balance).\nAucun inventaire physique n'a été réalisé depuis quatre ans ; les techniciens remplacent et jettent régulièrement du matériel sans formalité.\nSeuil de signification : 95 000 €.",
+      "assertions": [
+        "Existence",
+        "Exhaustivité"
+      ],
+      "procedures": {
+        "options": [
+          "Analyser l'écart de 42 000 € entre le fichier et la balance et en obtenir la justification ligne par ligne",
+          "Sélectionner des éléments dans le fichier et vérifier leur présence physique, en étendant l'échantillon au matériel informatique",
+          "Interroger les techniciens sur les mises au rebut de l'exercice et rechercher les biens remplacés encore inscrits au fichier",
+          "Envoyer des demandes de confirmation aux fournisseurs d'immobilisations sur les soldes de clôture",
+          "Recalculer le chiffre d'affaires par procédure analytique",
+          "Tester l'efficacité de la procédure d'autorisation des investissements sur l'exercice"
+        ],
+        "answer": [
+          0,
+          1,
+          2
+        ]
+      },
+      "risk": {
+        "options": [
+          "Faible",
+          "Modéré",
+          "Élevé"
+        ],
+        "answer": 1,
+        "rationale": "Les contrôles de détection des sorties sont défaillants (pas d'inventaire depuis quatre ans, pas de rapprochement depuis deux ans, rebuts sans formalité), ce qui crée un risque réel sur l'existence du matériel informatique. Mais l'écart connu (42 000 €) est inférieur au seuil de signification, le matériel concerné est en grande partie fortement amorti (incidence limitée sur la VNC et le résultat), l'activité est stable et la direction n'a pas d'incitation particulière à manipuler les comptes : le risque est modéré."
+      },
+      "conclusion": {
+        "model_answer": "Faute de pouvoir s'appuyer sur le contrôle interne, l'auditeur adopte une approche substantive : justification de l'écart fichier / balance, inspection physique par sondage à partir du fichier et recherche des biens mis au rebut. Les anomalies relevées (sorties non comptabilisées) sont communiquées à la direction pour correction. Les faiblesses du contrôle interne (absence d'inventaire et de rapprochement, rebuts non formalisés) sont communiquées à la direction et, si elles sont significatives, à la gouvernance, avec une recommandation de procédure de sortie et d'inventaire périodique.",
+        "key_points": [
+          "Approche substantive en l'absence de contrôles fiables",
+          "Assertions visées : existence et exhaustivité",
+          "Écart de 42 000 € à justifier et à cumuler avec les autres anomalies",
+          "Communication des faiblesses du contrôle interne (NEP 265)"
+        ]
+      },
+      "explanation": "Les procédures retenues traitent directement les faits : écart fichier / balance, absence d'inventaire et rebuts non suivis. La confirmation fournisseurs porte sur les dettes, non sur les biens ; la revue analytique du chiffre d'affaires relève du cycle ventes ; tester la procédure d'autorisation est inutile pour l'existence des biens anciens et n'a pas de sens alors que l'auditeur ne s'appuiera pas sur le contrôle interne.",
+      "source_ref": "NEP 315 ; NEP 330 ; NEP 265 (communication des faiblesses du contrôle interne) ; NEP 450",
+      "estimated_seconds": 420,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0016",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-procedures-substantives",
+      "difficulty": 1,
+      "tags": [
+        "procédures substantives",
+        "acquisitions",
+        "mesure"
+      ],
+      "statement": "Pour vérifier la mesure des acquisitions d'immobilisations de l'exercice, quelle procédure l'auditeur met-il en œuvre ?",
+      "options": [
+        "Rapprocher les acquisitions du tableau de variation des factures, en vérifiant les éléments inclus dans le coût (frais d'installation inclus, TVA récupérable et frais de formation exclus)",
+        "Observer l'inventaire physique des biens acquis",
+        "Examiner les procès-verbaux d'assemblée générale",
+        "Recalculer les dotations aux amortissements des biens acquis avant l'exercice"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "La mesure porte sur le montant enregistré : seul le rapprochement avec les factures et l'analyse des composantes du coût d'entrée la vérifient. L'inventaire physique prouve l'existence, pas le montant. Les procès-verbaux d'assemblée ne renseignent pas sur le coût d'un bien. Les dotations des biens anciens relèvent de l'évaluation des soldes, non de la mesure des acquisitions de l'exercice.",
+      "source_ref": "NEP 500 (assertion mesure) ; PCG art. 213-8 s. (coût d'acquisition)",
+      "estimated_seconds": 50,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0017",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "dépréciation",
+        "estimations comptables"
+      ],
+      "statement": "La société Pégase a testé la dépréciation d'un site industriel à partir de sa valeur d'usage, calculée par la direction en actualisant des flux de trésorerie prévisionnels. Quelle démarche de l'auditeur est conforme à la NEP 540 ?",
+      "options": [
+        "Se fonder sur la déclaration écrite de la direction confirmant le caractère raisonnable des hypothèses",
+        "Comparer les flux prévisionnels aux budgets approuvés et aux réalisations passées, apprécier le taux d'actualisation et mesurer la sensibilité du résultat du test aux hypothèses clés",
+        "Remplacer la valeur d'usage par la valeur vénale, plus objective",
+        "Vérifier uniquement l'exactitude arithmétique de l'actualisation"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La NEP 540 demande d'apprécier les hypothèses, la méthode et les données d'une estimation : comparaison aux budgets et aux réalisations passées, examen du taux, analyse de sensibilité. Une déclaration écrite complète les éléments collectés mais ne s'y substitue pas. La valeur actuelle est la plus élevée de la valeur vénale et de la valeur d'usage : l'auditeur ne peut écarter la valeur d'usage. Le seul contrôle arithmétique laisse de côté les hypothèses, principale source de risque.",
+      "source_ref": "NEP 540 (estimations comptables) ; PCG art. 214-15 s. (dépréciation des actifs : valeur actuelle)",
+      "estimated_seconds": 75,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0018",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "recalcul",
+        "dotations",
+        "valeur résiduelle"
+      ],
+      "statement": "La société Altaïr a commandé une machine en février N, reçue le 1er avril N et mise en service le 1er mai N. Coût d'acquisition : 84 000 € HT. Durée d'utilisation : 6 ans, amortissement linéaire. La société prévoit de revendre la machine au terme de cette durée pour une valeur résiduelle de 6 000 €, significative et mesurable de façon fiable. Recalculez la dotation aux amortissements de l'exercice N, clos le 31/12/N (en euros, arrondi à l'euro).",
+      "expected_value": 8667,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Base amortissable = 84 000 − 6 000 = 78 000 €. Annuité = 78 000 / 6 = 13 000 €. L'amortissement débute à la mise en service (1er mai) : 8 mois. Dotation N = 13 000 × 8 / 12 = 8 666,67 €, soit 8 667 €. Partir de la réception (9 mois) donnerait 9 750 € ; ignorer la valeur résiduelle donnerait 84 000 / 6 × 8 / 12 = 9 333 €.",
+      "source_ref": "PCG, règles relatives à l'amortissement (base amortissable, point de départ) (règl. ANC 2014-03) ; NEP 330",
+      "estimated_seconds": 150,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0019",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "cessions",
+        "résultat de cession"
+      ],
+      "statement": "La société Bellatrix a acquis un véhicule utilitaire le 1er juillet N−3 pour 36 000 € HT, amorti en linéaire sur 5 ans. Elle le cède le 30 septembre N pour 14 000 € HT. L'auditeur recalcule le résultat de cession. Quel est-il (en euros, montant positif pour une plus-value, négatif pour une moins-value) ?",
+      "expected_value": 1400,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Durée d'utilisation du 01/07/N−3 au 30/09/N : 3 ans et 3 mois, soit 39 mois. Amortissements cumulés = 36 000 × 39 / 60 = 23 400 € (dont dotation N : 36 000 / 5 × 9 / 12 = 5 400 €). VNC = 36 000 − 23 400 = 12 600 €. Résultat de cession = 14 000 − 12 600 = +1 400 € (plus-value). Oublier la dotation de N jusqu'à la date de cession (amortissements arrêtés au 31/12/N−1 : 18 000 €) conduirait à une moins-value de 4 000 €.",
+      "source_ref": "PCG, règles relatives à l'amortissement et à la sortie des actifs (règl. ANC 2014-03) ; NEP 330",
+      "estimated_seconds": 180,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0020",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "ajustement proposé",
+        "charge à immobiliser"
+      ],
+      "statement": "En revoyant le compte 615 « Entretien et réparations » de la société Castor au 31/12/N (exercice non encore clôturé), l'auditeur relève une facture de 18 000 € HT : il s'agit de l'achat d'un équipement industriel neuf, mis en service le 1er juillet N, d'une durée d'utilisation de 5 ans (amortissement linéaire). Passez l'écriture d'ajustement proposée par l'auditeur au 31/12/N : immobilisation de l'équipement et dotation de l'exercice (utilisez les comptes 2154, 615, 6811 et 2815).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "2154",
+          "label": "Matériel industriel",
+          "debit": 18000,
+          "credit": 0
+        },
+        {
+          "account": "6811",
+          "label": "Dotations aux amortissements des immobilisations",
+          "debit": 1800,
+          "credit": 0
+        },
+        {
+          "account": "615",
+          "label": "Entretien et réparations",
+          "debit": 0,
+          "credit": 18000
+        },
+        {
+          "account": "2815",
+          "label": "Amortissements des installations techniques, matériel et outillage",
+          "debit": 0,
+          "credit": 1800
+        }
+      ],
+      "explanation": "L'exercice n'étant pas clôturé, la charge est directement annulée au crédit du compte 615 et l'équipement inscrit au débit du compte 2154 pour 18 000 € (TVA déjà traitée lors de la comptabilisation initiale). Dotation N = 18 000 / 5 × 6 / 12 = 1 800 € (mise en service le 1er juillet). Incidence nette : résultat augmenté de 18 000 − 1 800 = 16 200 €. Omettre la dotation surévaluerait le résultat corrigé.",
+      "source_ref": "PCG art. 212-1 s. (comptabilisation des actifs) ; PCG comptes 2154, 2815, 615, 6811 ; NEP 450 (anomalies relevées)",
+      "estimated_seconds": 210,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0021",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-procedures-substantives",
+      "difficulty": 3,
+      "tags": [
+        "procédures substantives",
+        "tableau de variation",
+        "cessions",
+        "dotations"
+      ],
+      "title": "Revue du tableau de variation chez Delta",
+      "context": "Vous auditez les comptes au 31/12/N de la SA Delta, société de transport et de logistique.\nSeuil de signification : 60 000 € ; seuil des anomalies manifestement insignifiantes : 3 000 €.\nLes dotations aux amortissements sont calculées par le logiciel à partir du fichier des immobilisations.\nFait 1 : le total brut du fichier des immobilisations corporelles (4 820 000 €) est inférieur de 48 000 € au solde des comptes 21 de la balance (4 868 000 €). L'écart correspond à un chariot élévateur acquis 48 000 € HT, mis en service le 1er octobre N, comptabilisé en 2154 mais jamais saisi dans le fichier. Sa durée d'utilisation est de 8 ans (linéaire).\nFait 2 : un camion acquis le 1er janvier N−2 pour 60 000 € HT, amorti en linéaire sur 5 ans, a été cédé le 30 juin N pour 20 000 € HT. La société a enregistré le prix de cession en produit, mais le camion figure toujours au fichier : le logiciel a donc calculé une dotation de 12 000 € sur l'année N entière, et le camion reste à l'actif.",
+      "sub_questions": [
+        {
+          "id": "q1-assertion",
+          "kind": "mcq",
+          "prompt": "Au 31/12/N, quelle assertion relative aux soldes est principalement mise en défaut par le fait 2 ?",
+          "options": [
+            "Exhaustivité des immobilisations",
+            "Existence des immobilisations",
+            "Droits et obligations",
+            "Séparation des exercices des produits"
+          ],
+          "answer": [
+            1
+          ],
+          "points": 2,
+          "explanation": "Le camion n'appartient plus à la société au 31/12/N mais figure toujours à l'actif : le solde inclut un bien qui n'existe plus pour l'entité (existence). L'exhaustivité porterait sur un bien omis. Les droits et obligations pourraient être évoqués, mais l'anomalie première est la présence d'un actif sorti. Le prix de cession est bien rattaché à l'exercice N."
+        },
+        {
+          "id": "q2-dotation-omise",
+          "kind": "numeric",
+          "prompt": "Fait 1 : calculez la dotation aux amortissements omise sur le chariot élévateur pour l'exercice N (en euros).",
+          "expected_value": 1500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 2,
+          "explanation": "Le bien n'étant pas au fichier, aucune dotation n'a été calculée. Dotation N = 48 000 / 8 × 3 / 12 = 1 500 € (mise en service le 1er octobre). Une année pleine donnerait 6 000 €."
+        },
+        {
+          "id": "q3-cession",
+          "kind": "numeric",
+          "prompt": "Fait 2 : de combien le résultat avant impôt de N est-il surévalué du fait du traitement de la cession du camion (en euros) ?",
+          "expected_value": 24000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 4,
+          "explanation": "Traitement correct : amortissements au 31/12/N−1 = 60 000 × 2 / 5 = 24 000 € ; dotation N jusqu'au 30/06 = 60 000 / 5 × 6 / 12 = 6 000 € ; VNC à la cession = 60 000 − 30 000 = 30 000 € ; incidence sur le résultat N = 20 000 − 6 000 − 30 000 = −16 000 €. Traitement de la société : produit 20 000 € − dotation 12 000 € = +8 000 €. Surévaluation = 8 000 − (−16 000) = 24 000 €, égale à la VNC du camion restant à tort à l'actif (60 000 − 36 000)."
+        },
+        {
+          "id": "q4-synthese",
+          "kind": "open",
+          "prompt": "Récapitulez les anomalies relevées, comparez-les aux seuils et indiquez la démarche de l'auditeur.",
+          "model_answer": "Anomalies : dotation omise sur le chariot (1 500 €) et cession du camion mal traitée (24 000 €), soit une surévaluation du résultat avant impôt de 25 500 €. Au bilan, la VNC des immobilisations est surévaluée d'autant (le chariot est bien à l'actif mais sous-amorti de 1 500 € ; le camion, VNC 24 000 €, doit sortir). Le total dépasse le seuil des anomalies manifestement insignifiantes (3 000 €) mais reste inférieur au seuil de signification (60 000 €). L'auditeur communique ces anomalies à la direction et demande leur correction (saisie du chariot au fichier, sortie du camion avec dotation limitée au 30/06). En cas de refus, il les cumule avec les autres anomalies non corrigées et obtient une déclaration écrite à ce sujet. Il recommande en outre un rapprochement périodique fichier / balance et une procédure de transmission des sorties.",
+          "key_points": [
+            "Total : 1 500 + 24 000 = 25 500 € de surévaluation du résultat",
+            "Comparaison aux seuils : supérieur à 3 000 €, inférieur à 60 000 €",
+            "Demande de correction à la direction ; cumul des anomalies non corrigées en cas de refus",
+            "Recommandation : rapprochement fichier / balance et procédure de sortie"
+          ],
+          "points": 4
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Le cas fait exploiter le rapprochement du fichier avec la balance (bien omis du fichier, donc non amorti) et l'examen des cessions (sortie oubliée, dotation calculée au-delà de la date de cession). Le calcul du résultat de cession intègre la dotation jusqu'à la date de sortie. Les anomalies sont ensuite appréciées au regard des seuils (NEP 450).",
+      "source_ref": "NEP 330 ; NEP 450 (évaluation des anomalies relevées) ; PCG, règles relatives à l'amortissement et à la sortie des actifs (règl. ANC 2014-03)",
+      "estimated_seconds": 900,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0022",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-pieges",
+      "difficulty": 2,
+      "tags": [
+        "pièges",
+        "coût d'entrée",
+        "frais exclus"
+      ],
+      "statement": "La société Cygnus acquiert une presse hydraulique. Parmi les dépenses suivantes, laquelle doit être incorporée au coût d'entrée de la presse ?",
+      "options": [
+        "La formation des opérateurs à l'utilisation de la presse",
+        "Les pertes d'exploitation des deux premiers mois, liées à la montée en cadence",
+        "Les coûts d'installation et les essais de bon fonctionnement réalisés avant la mise en service",
+        "La campagne publicitaire annonçant la nouvelle gamme de produits fabriquée avec la presse"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Les coûts d'installation et d'essais sont directement attribuables à la mise en état de fonctionnement du bien : ils font partie du coût d'entrée. Les frais de formation du personnel, les pertes opérationnelles initiales et les frais de publicité ou de lancement sont expressément exclus du coût et constituent des charges de l'exercice.",
+      "source_ref": "PCG art. 213-8 s. (coût d'acquisition : coûts directement attribuables et coûts exclus)",
+      "estimated_seconds": 60,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0023",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-pieges",
+      "difficulty": 3,
+      "tags": [
+        "pièges",
+        "anomalies",
+        "crédit-bail",
+        "terrain",
+        "mise au rebut"
+      ],
+      "statement": "Lors de l'audit des comptes sociaux au 31/12/N de la société Aquila, l'auditeur relève les situations suivantes. Lesquelles constituent une anomalie ? (plusieurs réponses)",
+      "options": [
+        "Un matériel totalement amorti, mis au rebut en mars N, figure toujours au fichier et au bilan pour sa valeur brute et ses amortissements",
+        "Des engins pris en crédit-bail ne figurent pas à l'actif ; les redevances sont en charges et les engagements sont mentionnés en annexe",
+        "Un terrain acquis 400 000 € est amorti sur 20 ans",
+        "Les dotations d'une machine sont calculées à compter de sa mise en service, intervenue deux mois après sa livraison"
+      ],
+      "answer": [
+        0,
+        2
+      ],
+      "multiple": true,
+      "explanation": "Option 1 : anomalie ; même sans effet sur le résultat, le bien sorti doit être retiré (brut et amortissements surévalués, existence). Option 3 : anomalie ; un terrain, dont la durée d'utilisation n'est pas limitée, ne s'amortit pas. Option 2 : traitement correct dans les comptes sociaux, où le bien en crédit-bail n'est pas inscrit à l'actif du preneur. Option 4 : traitement correct, l'amortissement débutant à la mise en service et non à la livraison.",
+      "source_ref": "PCG, règles relatives à l’amortissement, à la sortie des actifs et au crédit-bail (règl. ANC 2014-03) ; NEP 500 (existence)",
+      "estimated_seconds": 90,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0024",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-pieges",
+      "difficulty": 2,
+      "tags": [
+        "pièges",
+        "mise au rebut",
+        "présentation"
+      ],
+      "statement": "La mise au rebut d'un matériel totalement amorti n'a pas d'incidence sur le résultat, mais doit être comptabilisée pour retirer du bilan la valeur brute et les amortissements correspondants.",
+      "answer": true,
+      "justification": "Vrai : la VNC est nulle, la sortie se traduit par un débit du compte d'amortissement et un crédit du compte d'immobilisation, sans effet sur le résultat.",
+      "explanation": "Ne pas comptabiliser la sortie laisse au bilan un actif qui n'existe plus : la valeur brute et les amortissements cumulés sont surévalués du même montant, ce qui fausse l'information (tableau des immobilisations en annexe, taux de vétusté). L'auditeur le détecte par l'inventaire physique à partir du fichier et par l'interrogation des services techniques.",
+      "source_ref": "PCG, règles relatives à la sortie des actifs (règl. ANC 2014-03) ; NEP 500 (existence)",
+      "estimated_seconds": 45,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0025",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-pieges",
+      "difficulty": 3,
+      "tags": [
+        "pièges",
+        "dépréciation",
+        "valeur actuelle",
+        "valeur d'usage"
+      ],
+      "statement": "La société Orion a acquis le 1er janvier N−2 une ligne de conditionnement pour 500 000 €, amortie en linéaire sur 10 ans. Au 31/12/N, à la suite de la perte d'un client important, elle teste la dépréciation de la ligne. Valeur vénale : 260 000 € ; coûts de sortie : 10 000 €. Flux de trésorerie nets attendus de l'utilisation : 65 000 € par an pendant les 7 années restantes (fin d'année), taux d'actualisation 10 %, aucune valeur résiduelle. Calculez la dépréciation à comptabiliser au 31/12/N (en euros, arrondi à l'euro).",
+      "expected_value": 33553,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "VNC au 31/12/N = 500 000 − 3 × 50 000 = 350 000 €. Valeur vénale nette = 260 000 − 10 000 = 250 000 €. Valeur d'usage = 65 000 × (1 − 1,1⁻⁷) / 0,1 = 65 000 × 4,8684 ≈ 316 447 €. Valeur actuelle = la plus élevée des deux = 316 447 €. Dépréciation = 350 000 − 316 447 ≈ 33 553 €. Retenir la seule valeur vénale nette donnerait 100 000 € (piège classique) ; oublier les coûts de sortie ne change rien ici puisque la valeur d'usage est la plus élevée. Le plan d'amortissement est ensuite révisé sur la base de la nouvelle valeur nette.",
+      "source_ref": "PCG art. 214-15 s. (dépréciation : valeur actuelle, valeur vénale, valeur d'usage) ; NEP 540",
+      "estimated_seconds": 270,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0026",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-pieges",
+      "difficulty": 2,
+      "tags": [
+        "pièges",
+        "ajustement proposé",
+        "frais de formation"
+      ],
+      "statement": "La société Phénix a immobilisé le 1er avril N une machine pour 96 000 € HT (compte 2154), amortie en linéaire sur 5 ans ; la dotation N comptabilisée s'élève à 14 400 €. L'auditeur constate que ce montant inclut 6 000 € HT de formation des opérateurs, facturée par le fournisseur de la machine (prestation externe enregistrée par la société au compte 6228 « Rémunérations d'intermédiaires et honoraires – Divers »). Passez au 31/12/N (exercice non clôturé) l'écriture d'ajustement proposée : reclassement des frais de formation en charges et annulation de l'excédent de dotation correspondant (utilisez les comptes 6228, 2154, 2815 et 6811).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "6228",
+          "label": "Rémunérations d’intermédiaires et honoraires – divers (formation)",
+          "debit": 6000,
+          "credit": 0
+        },
+        {
+          "account": "2815",
+          "label": "Amortissements des installations techniques, matériel et outillage",
+          "debit": 900,
+          "credit": 0
+        },
+        {
+          "account": "2154",
+          "label": "Matériel industriel",
+          "debit": 0,
+          "credit": 6000
+        },
+        {
+          "account": "6811",
+          "label": "Dotations aux amortissements des immobilisations",
+          "debit": 0,
+          "credit": 900
+        }
+      ],
+      "explanation": "Les frais de formation du personnel sont exclus du coût d'entrée : 6 000 € sont sortis du compte 2154 et passés en charges (compte 6228, prestation de formation facturée par un tiers). L'excédent de dotation correspondant est annulé : 6 000 / 5 × 9 / 12 = 900 € (mise en service le 1er avril). Contrôle : dotation corrigée = 90 000 / 5 × 9 / 12 = 13 500 € = 14 400 − 900. Incidence nette : résultat diminué de 6 000 − 900 = 5 100 €.",
+      "source_ref": "PCG art. 213-8 s. (coûts exclus du coût d'acquisition) ; PCG comptes 2154, 2815, 6811 ; NEP 450",
+      "estimated_seconds": 210,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-immo-0027",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "immobilisations-pieges",
+      "difficulty": 3,
+      "tags": [
+        "pièges",
+        "composants",
+        "mise au rebut",
+        "crédit-bail"
+      ],
+      "title": "Trois pièges chez Omega",
+      "context": "Vous auditez les comptes sociaux au 31/12/N de la SA Omega, fabricant de mobilier.\nSeuil de signification : 90 000 € ; seuil des anomalies manifestement insignifiantes : 4 500 €.\nFait A : la toiture de l'usine, comptabilisée comme un composant distinct du bâtiment (brut 60 000 €, totalement amortie), a été remplacée. La nouvelle toiture, mise en service le 1er octobre N, a coûté 120 000 € HT, comptabilisés au compte 615 « Entretien et réparations ». Sa durée d'utilisation est de 20 ans (linéaire). L'ancienne toiture figure toujours à l'actif.\nFait B : une presse (brut 25 000 €, totalement amortie) a été mise au rebut en juin N ; elle figure toujours au fichier et au bilan.\nFait C : un centre d'usinage est financé par crédit-bail depuis janvier N. Les redevances sont comptabilisées au compte 612 et les engagements restant à payer sont détaillés en annexe ; le bien ne figure pas à l'actif.",
+      "sub_questions": [
+        {
+          "id": "q1-toiture",
+          "kind": "numeric",
+          "prompt": "Fait A : de combien le résultat avant impôt de N est-il sous-évalué (en euros) ?",
+          "expected_value": 118500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 3,
+          "explanation": "La nouvelle toiture est un composant à immobiliser : la charge de 120 000 € est annulée et remplacée par une dotation de 120 000 / 20 × 3 / 12 = 1 500 €. Sous-évaluation du résultat = 120 000 − 1 500 = 118 500 €. La sortie de l'ancienne toiture, totalement amortie, n'a pas d'effet sur le résultat."
+        },
+        {
+          "id": "q2-rebut",
+          "kind": "journal_entry",
+          "prompt": "Fait B : passez l'écriture de sortie de la presse mise au rebut (utilisez les comptes 2154 et 2815).",
+          "entries": [
+            {
+              "account": "2815",
+              "label": "Amortissements des installations techniques, matériel et outillage",
+              "debit": 25000,
+              "credit": 0
+            },
+            {
+              "account": "2154",
+              "label": "Matériel industriel",
+              "debit": 0,
+              "credit": 25000
+            }
+          ],
+          "points": 2,
+          "explanation": "La presse étant totalement amortie, sa VNC est nulle : la sortie se limite à solder les amortissements cumulés contre la valeur brute, sans incidence sur le résultat. La même écriture s'applique à l'ancienne toiture du fait A (débit 2813, crédit 2131 pour 60 000 €)."
+        },
+        {
+          "id": "q3-credit-bail",
+          "kind": "true_false",
+          "prompt": "Fait C : dans les comptes sociaux d'Omega, le centre d'usinage en crédit-bail aurait dû être inscrit à l'actif.",
+          "answer": false,
+          "points": 2,
+          "explanation": "Faux : dans les comptes sociaux, le preneur ne comptabilise pas à l'actif le bien pris en crédit-bail ; les redevances sont des charges (612) et les engagements figurent en annexe. Le traitement d'Omega est correct. Le retraitement en immobilisation relève des comptes consolidés ou des IFRS."
+        },
+        {
+          "id": "q4-synthese",
+          "kind": "open",
+          "prompt": "Appréciez les anomalies au regard des seuils et indiquez la démarche de l'auditeur.",
+          "model_answer": "Le fait A est une anomalie de 118 500 € sur le résultat avant impôt (sous-évaluation) et sur l'actif (nouvelle toiture à immobiliser) ; elle dépasse le seuil de signification de 90 000 € et doit être corrigée : virement de 120 000 € du compte 615 au compte 2131, dotation de 1 500 €, sortie de l'ancienne toiture. Le fait B surévalue le brut et les amortissements de 25 000 € sans effet sur le résultat ni sur la VNC ; il est supérieur au seuil des anomalies manifestement insignifiantes et sa correction est demandée. Le fait C n'est pas une anomalie. Si la direction refusait de corriger le fait A, l'anomalie significative non corrigée conduirait l'auditeur à certifier avec réserve ou, si son incidence était diffuse, à refuser de certifier (NEP 700) ; l'impossibilité de certifier vise les limitations, non les désaccords.",
+          "key_points": [
+            "Fait A : 118 500 € > seuil de signification, correction indispensable",
+            "Fait B : erreur de présentation de 25 000 € (brut et amortissements), sans effet sur le résultat",
+            "Fait C : traitement conforme aux comptes sociaux",
+            "Refus de correction d'une anomalie significative : incidence sur l'opinion"
+          ],
+          "points": 4
+        }
+      ],
+      "total_points": 11,
+      "explanation": "Le cas réunit trois pièges fréquents : remplacement d'un composant passé en entretien (approche par composants, PCG art. 214-9), mise au rebut oubliée d'un bien totalement amorti et traitement du crédit-bail dans les comptes sociaux. Les anomalies sont ensuite appréciées au regard des seuils (NEP 450) et de leur incidence sur l'opinion (NEP 700).",
+      "source_ref": "PCG art. 214-9 (composants) ; PCG, règles relatives au crédit-bail et à la sortie des actifs (règl. ANC 2014-03) ; NEP 450 ; NEP 700",
+      "estimated_seconds": 840,
+      "verified": true
+    }
+  ]
+}

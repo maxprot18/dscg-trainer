@@ -6,7 +6,7 @@ import { ExercisePlayer } from '@/components/exercise/ExercisePlayer'
 import { SessionSummary, type SessionEntry } from '@/components/exercise/SessionSummary'
 import { Button } from '@/components/ui/button'
 import { Progress } from '@/components/ui/progress'
-import { exercises as allExercises } from '@/content/load'
+import { useExercises } from '@/content/load'
 import type { Exercise } from '@/content/schema'
 import type { ExerciseResult, PartResponse } from '@/engine/grading'
 import { endSession, recordAttempt, startSession } from '@/engine/recorder'
@@ -32,7 +32,14 @@ function BackToTraining({ message }: { message: string }) {
   )
 }
 
-export function SessionPage({ pool = allExercises }: { pool?: readonly Exercise[] }) {
+export function SessionPage({ pool }: { pool?: readonly Exercise[] }) {
+  const loaded = useExercises()
+  const available = pool ?? loaded
+  if (!available) return <p className="text-muted-foreground">Chargement des exercices…</p>
+  return <SessionLoader pool={available} />
+}
+
+function SessionLoader({ pool }: { pool: readonly Exercise[] }) {
   const [params] = useSearchParams()
   const search = params.toString()
   const config = useMemo(() => parseSessionSearch(new URLSearchParams(search)), [search])

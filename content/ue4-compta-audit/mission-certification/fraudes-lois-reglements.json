@@ -1,0 +1,173 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-mission-fraudes-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "fraudes-lois-reglements",
+      "difficulty": 1,
+      "tags": [
+        "NEP 240",
+        "détournement d’actifs",
+        "typologie des fraudes"
+      ],
+      "source_ref": "NEP 240 (prise en considération de la possibilité de fraudes : définitions)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "explanation": "La NEP 240 distingue deux catégories de fraudes : les informations financières mensongères (présentation volontairement fausse des comptes, souvent par la direction) et le détournement d'actifs (vol ou appropriation de biens de l'entité, souvent par des salariés, dissimulé par de fausses écritures). Le magasinier s'approprie des stocks : c'est un détournement d'actifs. Il ne s'agit pas d'informations financières mensongères, l'objectif n'étant pas de présenter des comptes trompeurs mais de cacher le vol. Il ne s'agit pas d'une erreur : l'acte est intentionnel. Enfin, le vol affecte directement les comptes (stocks surévalués si les ajustements sont mal justifiés).",
+      "statement": "Chez Cèdre SARL, un magasinier revend pour son propre compte des pièces détachées et masque les sorties de stock en saisissant des ajustements d'inventaire. Comment qualifier ces faits au regard de la NEP 240 ?",
+      "options": [
+        "Un détournement d'actifs",
+        "Des informations financières mensongères établies par la direction",
+        "Une erreur, faute d'intention de tromper les utilisateurs des comptes",
+        "Un non-respect de textes sans incidence sur les comptes"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ue4-mission-fraudes-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "fraudes-lois-reglements",
+      "difficulty": 2,
+      "tags": [
+        "NEP 250",
+        "textes légaux et réglementaires",
+        "environnement"
+      ],
+      "source_ref": "NEP 250 (prise en compte du risque d'anomalies significatives résultant du non-respect de textes légaux et réglementaires)",
+      "verified": true,
+      "estimated_seconds": 70,
+      "explanation": "La NEP 250 distingue les textes ayant une incidence directe sur les montants et informations des comptes (fiscalité, droit social, droit comptable), pour lesquels le CAC collecte des éléments suffisants et appropriés de leur respect (option 4), et les autres textes, dont le non-respect peut avoir des conséquences financières (environnement, autorisations d'exploiter). Pour ces derniers, ses procédures se limitent à des demandes d'informations auprès de la direction et à la consultation des correspondances avec les autorités. Elles ne sont pas nulles (option 3) car un manquement peut nécessiter une provision ou affecter la continuité. Un audit de conformité complet (option 1) dépasse la mission de certification ; le CAC ne l'engagerait qu'en cas d'indices de non-conformité, pour en apprécier l'incidence sur les comptes.",
+      "statement": "Mélèze SA exploite une installation classée pour la protection de l'environnement. Les textes environnementaux applicables n'ont pas d'incidence directe sur la détermination des montants des comptes, mais leur non-respect pourrait entraîner des amendes ou une fermeture du site. Quelles procédures le commissaire aux comptes met-il en œuvre à leur égard, en l'absence d'indice de non-conformité ?",
+      "options": [
+        "Un audit complet de conformité environnementale de chaque installation, réalisé par un expert qu'il désigne",
+        "Des demandes d'informations auprès de la direction sur le respect de ces textes et la consultation de la correspondance avec les autorités administratives compétentes",
+        "Aucune procédure, ces textes n'entrant pas dans le champ de l'audit des comptes",
+        "La collecte d'éléments suffisants et appropriés établissant le respect de chaque disposition, comme pour les textes fiscaux"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ue4-mission-fraudes-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "fraudes-lois-reglements",
+      "difficulty": 3,
+      "tags": [
+        "NEP 240",
+        "contournement des contrôles",
+        "tests des écritures",
+        "biais"
+      ],
+      "source_ref": "NEP 240 (procédures en réponse au risque de contournement des contrôles par la direction)",
+      "verified": true,
+      "estimated_seconds": 90,
+      "explanation": "La NEP 240 prévoit, en réponse au risque de contournement des contrôles par la direction, trois procédures mises en œuvre en toute hypothèse : tests des écritures comptables (en particulier manuelles et de fin d'exercice, sélectionnées sur des critères tels que l'auteur, la date, les comptes inhabituels, les montants ronds), revue des estimations comptables pour détecter un biais, et examen de la justification économique des opérations importantes inhabituelles. Les contrôles internes peuvent précisément être contournés par la direction : s'appuyer sur leur efficacité ne répond pas au risque (option 1). Une déclaration écrite ne remplace aucune procédure (option 2). Des confirmations clients supplémentaires ne visent pas les écritures manuelles de clôture qui affectent l'EBITDA (charges, provisions, reclassements) ; la réponse doit être ciblée sur le risque identifié (option 4).",
+      "statement": "Chez Sapin SA, la prime du directeur financier dépend de l'EBITDA, l'objectif annuel a été atteint de justesse, et de nombreuses écritures manuelles ont été passées par la direction financière lors de la clôture. Quelle réponse correspond le mieux aux exigences de la NEP 240 face au risque de contournement des contrôles par la direction ?",
+      "options": [
+        "S'appuyer sur les tests de procédures du cycle ventes, jugés efficaces l'an dernier, et réduire les travaux de fin d'exercice",
+        "Obtenir du directeur financier une déclaration écrite attestant l'absence de fraude et en rester là",
+        "Tester les écritures comptables, en ciblant les écritures manuelles de fin d'exercice sur des critères de risque, revoir les estimations à la recherche d'un biais et examiner la justification économique des opérations inhabituelles importantes",
+        "Doubler le nombre de demandes de confirmation adressées aux clients, sans autre modification du programme de travail"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ue4-mission-fraudes-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "fraudes-lois-reglements",
+      "difficulty": 2,
+      "tags": [
+        "NEP 240",
+        "détournement d’actifs",
+        "stock théorique",
+        "procédure analytique"
+      ],
+      "source_ref": "NEP 240 (fraudes : détournement d'actifs) ; NEP 520 (procédures analytiques)",
+      "verified": true,
+      "estimated_seconds": 220,
+      "explanation": "Coût d'achat des marchandises vendues : 2 100 000 × (1 − 30 %) = 1 470 000 €. Stock théorique : 420 000 + 1 380 000 − 1 470 000 = 330 000 €. Écart avec le stock physique : 330 000 − 286 000 = 44 000 €, dont 5 000 € justifiés par la casse documentée. Écart inexpliqué : 39 000 €. Erreurs classiques : oublier la casse (44 000 €) ou appliquer les 30 % au coût d'achat (taux de marge au lieu du taux de marque : coût des ventes 2 100 000 ÷ 1,3 ≈ 1 615 385 €, stock théorique ≈ 184 615 €, inférieur au stock physique, donc incohérent). Un écart inexpliqué de cette ampleur, rapproché du soupçon de vols, conduit le CAC à approfondir (contrôle des ajustements d'inventaire, des accès au stock), à informer la direction et la gouvernance, et à apprécier la nécessité d'une révélation de faits délictueux.",
+      "statement": "Le commissaire aux comptes de Pin SAS, distributeur, soupçonne des vols de marchandises. Il reconstitue le stock théorique de l'exercice N au coût d'achat :\n- stock initial : 420 000 € ;\n- achats de marchandises : 1 380 000 € ;\n- ventes de marchandises : 2 100 000 € HT, avec un taux de marge brute stable de 30 % du prix de vente HT, qu'il a corroboré.\nL'inventaire physique au 31/12/N valorise le stock à 286 000 €. Des marchandises cassées, documentées par des constats, représentent 5 000 € au coût et n'ont pas été sorties du stock théorique. Calculez, en euros, l'écart de stock restant inexpliqué.",
+      "expected_value": 39000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0
+    },
+    {
+      "id": "ue4-mission-fraudes-0005",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "fraudes-lois-reglements",
+      "difficulty": 2,
+      "tags": [
+        "NEP 240",
+        "informations financières mensongères",
+        "chiffre d’affaires fictif",
+        "ajustement proposé"
+      ],
+      "source_ref": "NEP 240 (fraudes : informations financières mensongères) ; NEP 450 (anomalies relevées) ; PCG, comptes 411, 44571 et 701 (règl. ANC 2014-03)",
+      "verified": true,
+      "estimated_seconds": 180,
+      "explanation": "La vente ne correspond à aucune livraison ni prestation : le produit n'existe pas (assertion de réalité) et la créance non plus. L'écriture annule le chiffre d'affaires (60 000 €), la TVA collectée correspondante (60 000 × 20 % = 12 000 €) et la créance TTC (72 000 €). Aucun stock n'étant sorti, aucune correction de stock n'est nécessaire. Au-delà de l'ajustement, il s'agit d'informations financières mensongères établies par la direction : la NEP 240 conduit le CAC à réévaluer le risque de fraude (autres factures de fin d'exercice, avoirs de début N+1), à reconsidérer la fiabilité des déclarations de la direction, à informer la gouvernance et à apprécier si les faits doivent être révélés au procureur de la République.",
+      "statement": "En testant la séparation des exercices chez Bouleau SA (clôture au 31/12/N), le commissaire aux comptes relève une facture de vente de produits finis n° 1287 du 30/12/N, adressée au client Delta pour 60 000 € HT (TVA 20 %), comptabilisée en N. Aucune commande, aucun bon de livraison ni aucune sortie de stock ne la justifient, et un avoir total a été émis le 10/01/N+1. La direction admet que la facture visait à atteindre l'objectif de chiffre d'affaires. Rédigez l'écriture d'ajustement proposée au 31/12/N pour annuler cette vente fictive. Utilisez les comptes 701, 44571 et 411.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "701",
+          "label": "Ventes de produits finis",
+          "debit": 60000,
+          "credit": 0
+        },
+        {
+          "account": "44571",
+          "label": "TVA collectée",
+          "debit": 12000,
+          "credit": 0
+        },
+        {
+          "account": "411",
+          "label": "Clients",
+          "debit": 0,
+          "credit": 72000
+        }
+      ]
+    },
+    {
+      "id": "ue4-mission-fraudes-0006",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "fraudes-lois-reglements",
+      "difficulty": 1,
+      "tags": [
+        "NEP 240",
+        "responsabilités",
+        "direction",
+        "gouvernance"
+      ],
+      "source_ref": "NEP 240 (responsabilités respectives de la direction et du commissaire aux comptes)",
+      "verified": true,
+      "estimated_seconds": 40,
+      "explanation": "La NEP 240 rappelle que la responsabilité première de la prévention et de la détection des fraudes repose sur la direction (mise en place du contrôle interne) et la gouvernance (surveillance). Le CAC fait preuve d'esprit critique, évalue les risques de fraude et y répond, mais l'assurance obtenue est raisonnable et non absolue : une fraude organisée et dissimulée (collusion, faux documents) peut ne pas être détectée malgré un audit correctement conduit.",
+      "statement": "La prévention et la détection des fraudes incombent au premier chef au commissaire aux comptes.",
+      "answer": false,
+      "justification": "Elles incombent d'abord à la direction et aux personnes constituant le gouvernement d'entreprise ; le CAC prend en compte le risque de fraude pour obtenir une assurance raisonnable que les comptes ne comportent pas d'anomalies significatives."
+    }
+  ]
+}

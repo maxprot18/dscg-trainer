@@ -7,7 +7,10 @@
       "theme": "ifrs",
       "notion": "ias-16-immobilisations",
       "difficulty": 2,
-      "tags": ["amortissement", "composants"],
+      "tags": [
+        "amortissement",
+        "composants"
+      ],
       "statement": "Une compagnie aérienne acquiert un avion pour 10 M€. Les moteurs (3 M€) ont une durée d'utilité de 8 ans, la cellule (7 M€) de 20 ans. Selon IAS 16, comment l'avion doit-il être amorti ?",
       "options": [
         "Un seul plan d'amortissement sur 20 ans pour 10 M€",
@@ -15,11 +18,167 @@
         "Au choix de l'entité, selon sa politique comptable",
         "Un seul plan sur la durée d'utilité moyenne pondérée des composants"
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "IAS 16 impose l'approche par composants : chaque partie d'une immobilisation corporelle dont le coût est significatif par rapport au coût total est amortie séparément sur sa propre durée d'utilité. Les moteurs (30 % du coût, 8 ans) et la cellule (20 ans) ont des durées très différentes : on retient deux plans. Une durée moyenne pondérée ou un plan unique ne reflètent pas le rythme de consommation des avantages économiques.",
       "source_ref": "IAS 16 §43-47 (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-ifrs-ias16-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-16-immobilisations",
+      "difficulty": 1,
+      "tags": [
+        "début de l'amortissement"
+      ],
+      "source_ref": "IAS 16 §55 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "explanation": "L'amortissement d'un actif commence dès qu'il est disponible pour être utilisé, c'est-à-dire dès qu'il se trouve à l'endroit et dans l'état nécessaires pour fonctionner de la manière prévue par la direction (IAS 16 §55). Ici, le 01/10/N. À la réception, la machine n'était pas encore installée ni testée. Attendre la mise en production effective n'est pas conforme : l'inactivité de l'actif ne suspend pas l'amortissement (sauf mode fondé sur l'utilisation). Aucune règle ne repousse l'amortissement au début de l'exercice suivant.",
+      "statement": "La société Bénodet (IFRS) réceptionne une machine le 01/09/N. Elle est installée et testée, et se trouve prête à fonctionner comme prévu par la direction le 01/10/N. Faute de commandes, elle n'est mise en production que le 01/02/N+1. À quelle date commence l'amortissement de la machine ?",
+      "options": [
+        "01/09/N, date de réception",
+        "01/10/N, date à laquelle elle est prête à être utilisée",
+        "01/02/N+1, date de sa mise en production",
+        "01/01/N+1, début de l'exercice suivant sa mise en service"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ue4-ifrs-ias16-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-16-immobilisations",
+      "difficulty": 2,
+      "tags": [
+        "modèle de la réévaluation",
+        "catégorie d'immobilisations"
+      ],
+      "source_ref": "IAS 16 §31, §34 et §36-38 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "explanation": "Si une immobilisation corporelle est réévaluée, toute la catégorie à laquelle elle appartient doit l'être (IAS 16 §36), afin d'éviter des réévaluations sélectives et une présentation mêlant des coûts et des valeurs de dates différentes (§38). Les réévaluations doivent être suffisamment régulières pour que la valeur comptable ne diffère pas significativement de la juste valeur à la clôture (§31). Le choix ne se fait pas actif par actif, mais il ne s'étend pas non plus à toutes les immobilisations corporelles : seulement à la catégorie (§37, ex. terrains, terrains et constructions, machines). La fréquence dépend des variations de la juste valeur : annuelle si elle est volatile, tous les 3 à 5 ans sinon (§34) ; elle n'est pas obligatoirement annuelle.",
+      "statement": "La société Concarneau (IFRS) possède plusieurs immeubles de bureaux, tous évalués selon le modèle du coût. Le marché immobilier ayant fortement progressé, la direction souhaite appliquer le modèle de la réévaluation au seul immeuble situé en centre-ville. Que prévoit IAS 16 ?",
+      "options": [
+        "La réévaluation peut porter sur ce seul immeuble, la norme laissant le choix actif par actif",
+        "Toute la catégorie doit être réévaluée, avec une réévaluation obligatoirement annuelle",
+        "Si un immeuble est réévalué, toutes les immobilisations corporelles de l'entité doivent l'être",
+        "Si un immeuble est réévalué, tous les immeubles de bureaux (même catégorie) doivent l'être, avec des réévaluations suffisamment régulières"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ue4-ifrs-ias16-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-16-immobilisations",
+      "difficulty": 2,
+      "tags": [
+        "coût d'entrée",
+        "démantèlement",
+        "coûts d'essai"
+      ],
+      "source_ref": "IAS 16 §16-20A (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 180,
+      "explanation": "Prix d'achat net de remise : 400 000 × 0,95 = 380 000 € (IAS 16 §16(a)). Coûts directement attribuables : transport 6 000 + installation 14 000 + essais 8 000 = 28 000 € (§16(b) et §17). Démantèlement actualisé : 40 000 € (§16(c), contrepartie provision IAS 37). Coût = 380 000 + 28 000 + 40 000 = 448 000 €. La formation du personnel est exclue (§19(c)). Le produit de la vente des échantillons (3 000 €) et le coût de ces éléments sont comptabilisés en résultat, sans réduire le coût de l'installation (§20A, amendement de 2020). Erreurs classiques : déduire les 3 000 € (445 000) ou inclure la formation (453 000).",
+      "statement": "La société Fouesnant (IFRS) acquiert une installation de production. Données (hors TVA récupérable) :\n- prix catalogue : 400 000 €, remise commerciale obtenue : 5 % ;\n- transport jusqu'au site : 6 000 € ; installation et montage : 14 000 € ;\n- essais de bon fonctionnement : 8 000 € ; les échantillons produits pendant les essais ont été vendus 3 000 € ;\n- formation des opérateurs : 5 000 € ;\n- valeur actualisée des coûts de démantèlement et de remise en état du site, obligation née dès l'installation : 40 000 €.\nCalculez le coût d'entrée de l'installation selon IAS 16, en euros.",
+      "expected_value": 448000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "€",
+      "decimals": 0
+    },
+    {
+      "id": "ue4-ifrs-ias16-0005",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-16-immobilisations",
+      "difficulty": 2,
+      "tags": [
+        "approche par composants",
+        "remplacement",
+        "décomptabilisation"
+      ],
+      "source_ref": "IAS 16 §13, §67-72 (règlement UE 2023/1803) ; PCG comptes 213, 2813 et 675",
+      "verified": true,
+      "estimated_seconds": 180,
+      "explanation": "Lors du remplacement d'un composant, le coût du nouveau composant est inscrit à l'actif et la valeur comptable de la partie remplacée est décomptabilisée (IAS 16 §13 et §70). Amortissements cumulés de l'ancienne toiture : 120 000 × 15 / 20 = 90 000 € ; valeur nette comptable : 30 000 €. On solde le coût (crédit 213 : 120 000 €) et les amortissements (débit 2813 : 90 000 €), la valeur nette comptable de 30 000 € étant comptabilisée en charge (perte de décomptabilisation en résultat, §68 et §71). La nouvelle toiture (150 000 €) sera immobilisée au débit du compte 213 et amortie sur sa propre durée d'utilité.",
+      "statement": "La toiture d'un entrepôt de la société Guidel (IFRS) a été identifiée comme un composant distinct, d'un coût de 120 000 €, amorti linéairement sur 20 ans sans valeur résiduelle. Au 31/12/N, après exactement 15 ans d'utilisation (amortissements de N comptabilisés), elle est démolie et remplacée par une nouvelle toiture de 150 000 €. Passez l'écriture de sortie de l'ancienne toiture au 31/12/N (l'écriture d'acquisition de la nouvelle toiture n'est pas demandée). Utilisez le compte 675 pour la valeur comptable de l'élément sorti.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "2813",
+          "label": "Amortissements des constructions",
+          "debit": 90000,
+          "credit": 0
+        },
+        {
+          "account": "675",
+          "label": "Valeurs comptables des éléments d'actif cédés",
+          "debit": 30000,
+          "credit": 0
+        },
+        {
+          "account": "213",
+          "label": "Constructions",
+          "debit": 0,
+          "credit": 120000
+        }
+      ]
+    },
+    {
+      "id": "ue4-ifrs-ias16-0006",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-16-immobilisations",
+      "difficulty": 3,
+      "tags": [
+        "modèle de la réévaluation",
+        "baisse de valeur",
+        "autres éléments du résultat global"
+      ],
+      "source_ref": "IAS 16 §39-40 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 200,
+      "explanation": "La baisse de valeur est de 340 000 − 280 000 = 60 000 €. Selon IAS 16 §40, une diminution consécutive à une réévaluation est comptabilisée en autres éléments du résultat global, en diminution de l'écart de réévaluation, à hauteur du solde créditeur existant pour ce même actif (40 000 €) ; le surplus (20 000 €) est comptabilisé en charges dans le résultat net. Le terrain est ramené à sa juste valeur de 280 000 €, inférieure de 20 000 € à son coût historique, ce qui correspond bien à la perte passée en résultat. Erreur classique : passer la totalité de la baisse en résultat ou, à l'inverse, débiter le compte 105 de 60 000 € au-delà de son solde. Si la valeur remontait ensuite, la hausse serait d'abord reprise en résultat à hauteur des 20 000 € (§39).",
+      "statement": "La société Larmor (IFRS) applique le modèle de la réévaluation à ses terrains. Un terrain acquis 300 000 € a été réévalué à 340 000 € au 31/12/N−1 : il figure au compte 211 pour 340 000 € et un écart de réévaluation de 40 000 € a été constaté au compte 105 à cette date. Au 31/12/N, la juste valeur du terrain n'est plus que de 280 000 €. Passez l'écriture du 31/12/N (on ignore les impôts différés). Conventions : compte 105 pour l'écart de réévaluation, compte 6816 pour la part de la baisse comptabilisée en résultat, la baisse étant imputée directement au compte 211.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "105",
+          "label": "Écarts de réévaluation",
+          "debit": 40000,
+          "credit": 0
+        },
+        {
+          "account": "6816",
+          "label": "Dotations aux dépréciations des immobilisations corporelles",
+          "debit": 20000,
+          "credit": 0
+        },
+        {
+          "account": "211",
+          "label": "Terrains",
+          "debit": 0,
+          "credit": 60000
+        }
+      ]
     }
   ]
 }

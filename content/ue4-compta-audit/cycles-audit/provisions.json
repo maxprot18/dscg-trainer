@@ -1,0 +1,934 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-audit-provisions-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "exhaustivité",
+        "litiges"
+      ],
+      "statement": "L’auditeur de la société Orion analyse le compte d’honoraires d’avocats (6226) de l’exercice et rapproche chaque cabinet payé du registre des litiges tenu par la direction juridique. Quelle assertion ce test vise-t-il principalement ?",
+      "options": [
+        "Évaluation des provisions pour litiges",
+        "Existence des provisions pour litiges",
+        "Exhaustivité des provisions pour litiges",
+        "Séparation des exercices des honoraires d’avocats"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Partir d’une source indépendante du registre (les honoraires payés) pour vérifier que chaque dossier traité par un avocat figure au registre, et donc a été examiné pour provision, teste l’exhaustivité : un litige absent du registre serait révélé par les honoraires versés. L’option 1 (évaluation) supposerait d’examiner le montant provisionné de chaque dossier, ce que ce test ne fait pas. L’option 2 (existence) se teste dans l’autre sens, en partant des provisions comptabilisées vers les justificatifs de l’obligation. L’option 4 porte sur le rattachement des honoraires à l’exercice, qui n’est pas l’objet du rapprochement avec le registre.",
+      "source_ref": "NEP 500 (assertions : exhaustivité) ; NEP 501 (litiges)",
+      "estimated_seconds": 60,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "existence",
+        "lissage"
+      ],
+      "statement": "Au 31/12/N, la société Lyra a doté une « provision pour risques divers » de 300 000 €. Interrogée, la direction explique qu’il s’agit d’une marge de sécurité « au cas où l’activité ralentirait en N+1 » ; aucun litige, contrat ni engagement n’y est rattaché. Quelle assertion est principalement mise en cause ?",
+      "options": [
+        "Existence (réalité de l’obligation)",
+        "Exhaustivité",
+        "Droits et obligations sur un actif",
+        "Séparation des exercices des produits"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Une provision suppose une obligation envers un tiers née d’un événement antérieur à la clôture (PCG art. 322-1 s.). Ici aucune obligation n’existe : la provision n’a pas de réalité, ce qui met en cause l’existence du passif (et constitue une forme de lissage du résultat). L’option 2 (exhaustivité) concerne au contraire une obligation non provisionnée. L’option 3 vise les actifs détenus par l’entité, non un passif. L’option 4 porte sur le rattachement des produits, sans rapport avec la situation.",
+      "source_ref": "NEP 500 (assertions sur les soldes : existence) ; PCG art. 322-1 s. (conditions de comptabilisation d’une provision)",
+      "estimated_seconds": 50,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-assertions",
+      "difficulty": 2,
+      "tags": [
+        "assertions",
+        "présentation",
+        "dette",
+        "charge à payer"
+      ],
+      "statement": "Le 20/12/N, la société Véga a signé avec un fournisseur une transaction mettant fin à un litige : elle s’engage à lui verser 70 000 € le 15/01/N+1. Au 31/12/N, le montant figure toujours en provision pour litiges (1511) pour 70 000 €. Quelle assertion est principalement en cause ?",
+      "options": [
+        "Existence : la provision doit être reprise sans contrepartie, l’obligation ayant disparu",
+        "Évaluation : la provision doit être portée au montant initialement réclamé par le fournisseur",
+        "Exhaustivité : une provision complémentaire est nécessaire pour les intérêts de retard",
+        "Présentation (classement) : le montant et l’échéance étant certains, il s’agit d’une dette et non d’une provision"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "La transaction fixe le montant (70 000 €) et l’échéance : l’incertitude qui caractérise une provision a disparu, l’obligation devient une dette à présenter en dettes et non en provisions. Le résultat n’est pas affecté, seul le classement au bilan l’est. L’option 1 est fausse : l’obligation existe toujours, elle a seulement changé de nature. L’option 2 est fausse : la transaction remplace la réclamation initiale. L’option 3 suppose des intérêts de retard dont l’énoncé ne fait pas état.",
+      "source_ref": "NEP 500 (assertions sur la présentation des comptes) ; PCG art. 321-1 s. (définition des passifs et des provisions)",
+      "estimated_seconds": 75,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0004",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "existence",
+        "obligation"
+      ],
+      "statement": "Une provision constituée alors qu’aucune obligation envers un tiers n’existe à la clôture constitue une anomalie portant sur l’assertion d’existence.",
+      "answer": true,
+      "justification": "Vrai : sans obligation envers un tiers née d’un événement antérieur, le passif n’existe pas ; la provision est injustifiée, quelle que soit la prudence invoquée.",
+      "explanation": "Les conditions de comptabilisation d’une provision (obligation, sortie de ressources probable, estimation fiable) doivent être remplies à la clôture. Une provision qui n’en remplit pas la première surévalue les passifs et minore le résultat : l’assertion d’existence est en défaut. Ce type d’anomalie se rencontre dans les stratégies de lissage du résultat (provisions constituées une bonne année, reprises une année moins favorable).",
+      "source_ref": "NEP 500 (assertions : existence) ; PCG art. 322-1 s.",
+      "estimated_seconds": 40,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0005",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "provisions",
+        "procédures"
+      ],
+      "front": "Quelles assertions sont en jeu pour les provisions pour risques et charges, et quelle procédure type pour chacune ?",
+      "back": "Exhaustivité : confirmation des avocats, revue des PV, analyse des honoraires juridiques.\nExistence : justificatif de l’obligation à la clôture (assignation, contrat, plan annoncé).\nÉvaluation : revue des hypothèses, recalcul, dénouement postérieur (NEP 540).\nPrésentation : distinction provision / dette / dépréciation, passifs éventuels en annexe.",
+      "explanation": "NEP 500 et NEP 540. L’exhaustivité est l’assertion la plus exposée : les provisions ne résultent pas d’un flux de pièces courant et un litige ou une garantie peuvent être oubliés.",
+      "source_ref": "NEP 500 (assertions) ; NEP 540 (estimations comptables) ; NEP 501 (litiges)",
+      "estimated_seconds": 60,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0006",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-risques",
+      "difficulty": 1,
+      "tags": [
+        "risques",
+        "estimations comptables",
+        "NEP 540"
+      ],
+      "statement": "Pourquoi les provisions pour risques et charges présentent-elles en général un risque inhérent plus élevé que les dettes fournisseurs ?",
+      "options": [
+        "Parce qu’elles sont toujours d’un montant supérieur au seuil de signification",
+        "Parce qu’elles font l’objet d’une confirmation externe obligatoire",
+        "Parce que leur montant repose sur des estimations soumises à incertitude et au jugement de la direction",
+        "Parce qu’elles ne sont pas soumises au principe de prudence"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "La NEP 540 relie le risque inhérent d’une estimation à l’incertitude d’estimation, à sa complexité et à la subjectivité des hypothèses : c’est le cas des provisions, dont le montant dépend de l’issue d’événements futurs, alors qu’une dette fournisseur est justifiée par une facture d’un montant certain. L’option 1 est fausse : le montant des provisions varie selon les entités. L’option 2 est fausse : aucune confirmation n’est obligatoire de manière générale ; la demande aux avocats répond à un risque sur les litiges. L’option 4 est fausse : la prudence s’applique pleinement aux provisions.",
+      "source_ref": "NEP 540 (facteurs de risque inhérent des estimations : incertitude, complexité, subjectivité)",
+      "estimated_seconds": 50,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0007",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "incitation",
+        "sous-évaluation"
+      ],
+      "statement": "Parmi les situations suivantes, laquelle accroît principalement le risque de sous-évaluation des provisions ?",
+      "options": [
+        "Le résultat avant provisions dépasse largement le budget et l’intéressement des dirigeants est plafonné",
+        "Un covenant bancaire impose un ratio dette nette / EBE inférieur à 3 et le ratio estimé avant arrêté atteint 2,9",
+        "La société a repris sans objet en N plusieurs provisions constituées en N−1",
+        "La direction juridique tient un registre des litiges rapproché chaque trimestre de la comptabilité"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Un covenant proche de son seuil incite la direction à limiter les charges, notamment les dotations aux provisions, pour ne pas le franchir : risque de sous-évaluation (exhaustivité, évaluation). L’option 1 décrit au contraire une incitation à surprovisionner (mettre en réserve le résultat excédentaire non rémunéré). L’option 3 signale plutôt des provisions excessives en N−1 ou un lissage. L’option 4 est un contrôle qui réduit le risque d’omission, non un facteur de risque.",
+      "source_ref": "NEP 315 (facteurs de risque inhérent) ; NEP 540 (biais de la direction) ; NEP 240",
+      "estimated_seconds": 75,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0008",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "revue rétrospective",
+        "NEP 540"
+      ],
+      "statement": "Lorsque la revue rétrospective montre qu’une provision de N−1 a été largement reprise sans objet en N, l’auditeur doit en conclure que les comptes de N−1 comportaient une anomalie.",
+      "answer": false,
+      "justification": "Faux : l’estimation de N−1 reposait sur l’information alors disponible ; la revue rétrospective sert à apprécier le processus d’estimation et un éventuel biais, pas à remettre en cause les comptes antérieurs.",
+      "explanation": "La NEP 540 prévoit que l’auditeur examine le dénouement des estimations de l’exercice précédent. Un écart entre provision et dénouement n’établit pas en soi une erreur de N−1 : il n’y a anomalie que si l’information disponible à l’arrêté des comptes N−1 n’a pas été correctement utilisée. L’écart renseigne en revanche sur la fiabilité des estimations de la direction et oriente l’évaluation du risque sur les provisions de N (biais possible si les écarts vont toujours dans le même sens).",
+      "source_ref": "NEP 540 (revue du dénouement des estimations comptables de l’exercice précédent)",
+      "estimated_seconds": 60,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0009",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "revue rétrospective",
+        "garanties"
+      ],
+      "statement": "Lors de l’audit des comptes N de la société Pégase, l’auditeur procède à la revue rétrospective de la provision pour garanties. Au 31/12/N−1, la provision s’élevait à 120 000 € et couvrait les ventes de N−1 encore sous garantie (garantie d’un an). Les coûts de garantie effectivement supportés en N au titre de ces ventes s’élèvent à 162 000 € ; toutes les garanties correspondantes sont expirées au 31/12/N. Calculez l’écart de dénouement rapporté à la provision initiale (en %, arrondi à une décimale).",
+      "expected_value": 35,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "decimals": 1,
+      "explanation": "Écart de dénouement = 162 000 − 120 000 = 42 000 € de sous-estimation. Écart relatif = 42 000 / 120 000 = 35,0 %. Rapporter l’écart aux coûts réels (42 000 / 162 000 = 25,9 %) est une erreur : on mesure la qualité de l’estimation initiale. Une sous-estimation de 35 % conduit l’auditeur à considérer un risque élevé de sous-évaluation de la provision de N et à examiner si les taux statistiques ont été mis à jour.",
+      "source_ref": "NEP 540 (revue du dénouement des estimations antérieures) ; NEP 315",
+      "estimated_seconds": 120,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0010",
+      "type": "audit_case",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "lissage",
+        "existence",
+        "NEP 240"
+      ],
+      "title": "Provision pour risques divers chez un éditeur de logiciels",
+      "cycle": "provisions",
+      "situation": "Vous auditez les comptes au 31/12/N de la SA Andromède, éditeur de logiciels. Le résultat courant avant dotations aux provisions atteint 2 400 000 € pour un budget de 1 500 000 €. La rémunération variable du directeur général est indexée sur le résultat, mais plafonnée dès que le budget est dépassé de 20 %. Le 31/12/N, une écriture manuelle passée par le directeur financier a doté une « provision pour risques divers » de 600 000 €, sans dossier justificatif. En N, la société a repris sans objet 350 000 € de provisions constituées en N−1. Le seuil de signification est fixé à 120 000 €.",
+      "assertions": [
+        "Existence (réalité de l’obligation)",
+        "Évaluation"
+      ],
+      "procedures": {
+        "options": [
+          "Obtenir de la direction la liste des risques couverts par la provision de 600 000 € et les justificatifs d’une obligation envers un tiers à la clôture",
+          "Examiner les écritures manuelles de fin d’exercice passées sur les comptes de provisions et les personnes qui les ont saisies",
+          "Analyser les reprises sans objet de N au regard des justifications données pour les provisions de N−1",
+          "Envoyer des demandes de confirmation de solde aux principaux clients",
+          "Assister à l’inventaire physique des stocks de supports",
+          "Recalculer les dotations aux amortissements des logiciels acquis"
+        ],
+        "answer": [
+          0,
+          1,
+          2
+        ]
+      },
+      "risk": {
+        "options": [
+          "Faible",
+          "Modéré",
+          "Élevé"
+        ],
+        "answer": 2,
+        "rationale": "Le résultat dépasse le budget de 60 % alors que la rémunération variable est plafonnée au-delà de 20 % : la direction est incitée à mettre en réserve l’excédent. La provision de 600 000 €, soit cinq fois le seuil de signification, a été passée manuellement par la direction en fin d’exercice sans justificatif, et des reprises sans objet importantes en N suggèrent un schéma de lissage. Ces facteurs relèvent d’un risque de fraude (contournement des contrôles par la direction) sur l’existence des provisions."
+      },
+      "conclusion": {
+        "model_answer": "À défaut de justification d’une obligation envers un tiers à la clôture, la provision pour risques divers de 600 000 € ne remplit pas les conditions de comptabilisation : elle constitue une anomalie significative surévaluant les passifs et minorant le résultat. Nous demandons à la direction de la reprendre. En cas de refus, l’anomalie, supérieure au seuil de signification, nous conduirait à formuler une opinion avec réserve pour désaccord, ou un refus de certifier si ses effets étaient diffus. L’écriture manuelle passée par la direction est communiquée à la gouvernance et prise en compte dans notre appréciation du risque de fraude.",
+        "key_points": [
+          "Absence d’obligation justifiée à la clôture : provision non conforme",
+          "Anomalie de 600 000 € supérieure au seuil de signification de 120 000 €",
+          "Demande de correction à la direction, incidence sur l’opinion en cas de refus",
+          "Communication à la gouvernance d’une écriture de la direction révélatrice d’un risque de fraude"
+        ]
+      },
+      "explanation": "Le cas illustre un risque de surévaluation des provisions (existence) dans un contexte d’incitation à lisser le résultat. Les procédures pertinentes portent sur la justification de l’obligation, les écritures manuelles de la direction (NEP 240) et les reprises sans objet. Les confirmations clients, l’inventaire des stocks et le recalcul des amortissements concernent d’autres cycles et ne répondent pas au risque identifié.",
+      "source_ref": "NEP 240 (contournement des contrôles par la direction, écritures manuelles) ; NEP 540 (biais de la direction) ; NEP 450 ; PCG art. 322-1 s.",
+      "estimated_seconds": 480,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0011",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-controles-cles",
+      "difficulty": 1,
+      "tags": [
+        "contrôles clés",
+        "exhaustivité",
+        "arrêté des comptes"
+      ],
+      "statement": "Quel contrôle interne contribue le plus directement à l’exhaustivité des provisions pour risques à la clôture ?",
+      "options": [
+        "Le contrôle arithmétique du tableau de variation des provisions par le service comptable",
+        "Un questionnaire d’arrêté adressé à chaque responsable opérationnel sur les réclamations, contrôles et engagements en cours, dont les réponses sont rapprochées des provisions",
+        "L’autorisation par le directeur financier de tout paiement supérieur à 10 000 €",
+        "L’archivage des procès-verbaux d’assemblée générale par le secrétariat juridique"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le questionnaire d’arrêté recense, auprès de ceux qui connaissent les dossiers, les risques nés avant la clôture ; son rapprochement avec les provisions permet de détecter un risque non provisionné : il couvre l’exhaustivité. L’option 1 vérifie l’exactitude du calcul des mouvements comptabilisés, pas l’omission d’un risque. L’option 3 est un contrôle du cycle trésorerie sur les décaissements. L’option 4 est une conservation de documents, qui ne recense ni n’analyse les risques.",
+      "source_ref": "NEP 315 (compréhension du contrôle interne) ; NEP 330",
+      "estimated_seconds": 50,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0012",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "contrôles clés",
+        "garanties",
+        "backtesting",
+        "évaluation"
+      ],
+      "statement": "La société Céphée calcule sa provision pour garanties en appliquant au chiffre d’affaires un taux statistique. Chaque semestre, le contrôle de gestion compare les coûts de garantie réellement supportés aux montants provisionnés et ajuste le taux si l’écart dépasse 10 %. Quelle assertion ce contrôle couvre-t-il principalement ?",
+      "options": [
+        "Exhaustivité des ventes sous garantie",
+        "Existence de l’obligation de garantie",
+        "Présentation de la provision dans l’annexe",
+        "Évaluation de la provision pour garanties"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "La confrontation des coûts réels aux provisions (backtesting) permet de vérifier que le taux statistique reste représentatif et de le corriger : elle porte sur le montant de la provision, donc son évaluation. L’option 1 relèverait d’un rapprochement entre ventes et base de calcul, qui n’est pas décrit. L’option 2 découle des contrats de vente et des conditions de garantie, non de la comparaison des coûts. L’option 3 concerne l’information en annexe, que ce contrôle n’examine pas.",
+      "source_ref": "NEP 315 ; NEP 540 (contrôles relatifs au processus d’estimation)",
+      "estimated_seconds": 60,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0013",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "contrôles clés",
+        "retraites",
+        "actuaire",
+        "données"
+      ],
+      "statement": "La société Draco fait évaluer ses indemnités de fin de carrière par un actuaire externe, à partir d’un fichier du personnel (dates de naissance, d’entrée, salaires) extrait par le service paie. Quel contrôle de l’entité est le plus pertinent pour fiabiliser la provision ?",
+      "options": [
+        "Le rapprochement, avant envoi, du fichier transmis à l’actuaire avec la paie de décembre (effectifs et masse salariale)",
+        "La vérification des diplômes et références professionnelles de l’actuaire",
+        "L’envoi du rapport de l’actuaire au commissaire aux comptes avant l’arrêté",
+        "La comparaison du montant de la provision avec celui de l’exercice précédent par le comptable qui l’a saisi"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Le calcul de l’actuaire n’est fiable que si les données de base sont exhaustives et exactes : le rapprochement du fichier transmis avec la paie (effectifs, salaires) est le contrôle clé de l’entité. L’option 2 renseigne sur la compétence de l’expert, mais ne garantit pas la qualité des données. L’option 3 n’est pas un contrôle interne mais une transmission d’information. L’option 4, faite par la personne qui saisit, manque d’indépendance et ne détecte pas une erreur de données stable d’une année sur l’autre.",
+      "source_ref": "NEP 315 ; NEP 540 (données utilisées pour l’estimation) ; recommandation ANC 2013-02",
+      "estimated_seconds": 70,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0014",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-controles-cles",
+      "difficulty": 1,
+      "tags": [
+        "contrôles clés",
+        "registre des litiges",
+        "exhaustivité"
+      ],
+      "statement": "Un registre des litiges tenu par la direction juridique et rapproché périodiquement des provisions comptabilisées est un contrôle qui contribue à l’exhaustivité des provisions pour litiges.",
+      "answer": true,
+      "justification": "Vrai : le registre recense les dossiers en cours et son rapprochement avec la comptabilité permet de détecter un litige non examiné pour provision.",
+      "explanation": "Le recensement est l’étape la plus sensible du processus de provisionnement : un litige inconnu du service comptable ne sera jamais provisionné. Le registre, tenu par ceux qui suivent les dossiers, et son rapprochement périodique avec les provisions répondent à ce risque. L’auditeur qui souhaite s’appuyer sur ce contrôle en teste l’efficacité (NEP 330), par exemple en inspectant les rapprochements et en vérifiant que les dossiers révélés par les honoraires d’avocats y figurent.",
+      "source_ref": "NEP 315 ; NEP 330 (tests de procédures)",
+      "estimated_seconds": 40,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0015",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-controles-cles",
+      "difficulty": 3,
+      "tags": [
+        "contrôles clés",
+        "garanties",
+        "évaluation",
+        "recommandations"
+      ],
+      "title": "Processus de provision pour garanties chez Kappa",
+      "context": "Vous auditez les comptes au 31/12/N de la SA Kappa, fabricant de chaudières, qui accorde une garantie contractuelle de deux ans sur ses produits.\nSeuil de signification : 150 000 € ; seuil des anomalies manifestement insignifiantes : 7 500 €.\nProcessus décrit lors de l’intérim :\n- Le contrôleur de gestion calcule seul la provision en appliquant un taux de 2 % au chiffre d’affaires des 24 derniers mois. Ce taux n’a pas été modifié depuis cinq ans.\n- Le service après-vente (SAV) enregistre les coûts de garantie (pièces, main-d’œuvre) dans un logiciel non relié à la comptabilité. Aucun rapprochement n’est fait entre ces coûts et la provision.\n- La provision est comptabilisée sans revue par la direction financière.\nDonnées :\n- Chiffre d’affaires N : 16 000 000 € ; chiffre d’affaires N−1 : 14 000 000 €.\n- Provision comptabilisée au 31/12/N : 2 % × 30 000 000 = 600 000 €.\n- Statistiques du SAV sur les trois derniers exercices : le coût total de garantie représente 3 % du chiffre d’affaires, dont 1,8 % supporté la première année et 1,2 % la seconde.\nHypothèse simplificatrice : au 31/12/N, les ventes de N n’ont encore généré aucun coût de garantie et celles de N−1 ont épuisé leur première année de garantie.",
+      "sub_questions": [
+        {
+          "id": "q1-faiblesse",
+          "kind": "mcq",
+          "prompt": "Quelle est la principale faiblesse du processus au regard de l’évaluation de la provision ?",
+          "options": [
+            "Le calcul est fondé sur le chiffre d’affaires plutôt que sur le nombre d’appareils vendus",
+            "Le taux de 2 % n’est jamais confronté aux coûts réels de garantie suivis par le SAV",
+            "La provision est comptabilisée en fin d’exercice et non mensuellement",
+            "Les coûts de garantie sont enregistrés par le SAV et non par le service comptable"
+          ],
+          "answer": [
+            1
+          ],
+          "points": 2,
+          "explanation": "Sans comparaison entre coûts réels et provision (backtesting), un taux devenu obsolète n’est pas détecté : c’est la faiblesse principale pour l’évaluation. L’option 1 est une méthode acceptable si le taux est représentatif. L’option 3 n’affecte pas le montant à la clôture. L’option 4 n’est pas une faiblesse en soi : c’est l’absence de rapprochement entre le SAV et la comptabilité qui pose problème."
+        },
+        {
+          "id": "q2-provision-requise",
+          "kind": "numeric",
+          "prompt": "À partir des statistiques du SAV et de l’hypothèse simplificatrice, calculez la provision pour garanties requise au 31/12/N (en euros).",
+          "expected_value": 648000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 3,
+          "explanation": "Ventes de N : coût restant = 3 % × 16 000 000 = 480 000 €. Ventes de N−1 : seule la seconde année reste à courir, soit 1,2 % × 14 000 000 = 168 000 €. Provision requise = 480 000 + 168 000 = 648 000 €. Appliquer 3 % aux deux exercices (900 000 €) oublierait que la première année des ventes de N−1 est écoulée."
+        },
+        {
+          "id": "q3-reponse-auditeur",
+          "kind": "true_false",
+          "prompt": "Compte tenu de ces faiblesses, l’auditeur ne peut pas s’appuyer sur le contrôle interne et doit fonder sa conclusion sur des procédures substantives renforcées sur l’évaluation de la provision.",
+          "answer": true,
+          "points": 2,
+          "explanation": "Vrai : le calcul n’est ni revu ni confronté aux coûts réels ; aucun contrôle ne peut être testé utilement. L’auditeur recalcule la provision à partir de données qu’il vérifie (statistiques du SAV rapprochées de pièces) et compare avec le montant comptabilisé (NEP 330, NEP 540)."
+        },
+        {
+          "id": "q4-synthese",
+          "kind": "open",
+          "prompt": "Qualifiez l’écart constaté au regard des seuils et formulez les recommandations de contrôle interne à adresser à la direction.",
+          "model_answer": "La provision est sous-évaluée de 648 000 − 600 000 = 48 000 €. Cet écart dépasse le seuil des anomalies manifestement insignifiantes (7 500 €) mais reste inférieur au seuil de signification (150 000 €) : l’auditeur demande sa correction et, à défaut, le cumule avec les autres anomalies non corrigées. Recommandations : rapprocher au moins annuellement les coûts réels du SAV et la provision, mettre à jour le taux en conséquence (éventuellement par année de garantie), faire revoir et valider le calcul par la direction financière, relier ou rapprocher le logiciel du SAV et la comptabilité, documenter la méthode.",
+          "key_points": [
+            "Sous-évaluation de 48 000 € (648 000 − 600 000)",
+            "Supérieure à 7 500 € et inférieure à 150 000 € : demande de correction, cumul si refus",
+            "Rapprochement périodique coûts réels / provision et mise à jour du taux",
+            "Revue et validation du calcul par une personne distincte (direction financière)"
+          ],
+          "points": 4
+        }
+      ],
+      "total_points": 11,
+      "explanation": "Le cas relie l’analyse du contrôle interne à l’évaluation de l’estimation : un taux statistique figé, sans backtesting ni revue, conduit à une provision mal évaluée. L’auditeur recalcule la provision à partir des données du SAV et formule des recommandations.",
+      "source_ref": "NEP 315 ; NEP 330 ; NEP 540 ; NEP 450 (évaluation des anomalies relevées) ; PCG compte 1512",
+      "estimated_seconds": 840,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0016",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-procedures-substantives",
+      "difficulty": 1,
+      "tags": [
+        "procédures substantives",
+        "avocats",
+        "NEP 501"
+      ],
+      "statement": "Dans le cadre d’une demande de confirmation adressée aux avocats de l’entité sur les litiges en cours (NEP 501), comment la réponse doit-elle être obtenue ?",
+      "options": [
+        "L’avocat répond à la direction, qui transmet une copie au commissaire aux comptes",
+        "L’avocat répond directement au commissaire aux comptes",
+        "La direction rédige elle-même la réponse et la fait signer par l’avocat",
+        "Le commissaire aux comptes interroge l’avocat par téléphone, sans écrit"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La demande est préparée par l’entité et signée par sa direction (l’avocat est tenu au secret professionnel envers son client), puis envoyée par le commissaire aux comptes ; elle invite l’avocat à répondre directement à ce dernier, afin d’éviter toute altération de la réponse. L’option 1 fait transiter la réponse par l’entité, ce qui en réduit le caractère probant. L’option 3 revient à obtenir une déclaration de la direction. L’option 4 ne fournit pas d’élément écrit documentable dans le dossier.",
+      "source_ref": "NEP 501 (demande de confirmation des avocats sur les litiges)",
+      "estimated_seconds": 45,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0017",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "événements postérieurs",
+        "litiges"
+      ],
+      "statement": "Au 31/12/N, la société Hydra a provisionné 60 000 € au titre d’un litige prud’homal engagé en N. Le 10/02/N+1, avant l’arrêté des comptes, le conseil de prud’hommes la condamne à verser 95 000 € ; elle renonce à faire appel. Quel traitement l’auditeur doit-il attendre dans les comptes de N ?",
+      "options": [
+        "Aucun ajustement : le jugement est postérieur à la clôture ; une simple mention en annexe suffit",
+        "Ajustement de la provision à 95 000 €, le jugement précisant une obligation qui existait à la clôture",
+        "Reprise de la provision de 60 000 € et comptabilisation de la condamnation en N+1",
+        "Maintien de la provision à 60 000 € et mention du jugement dans le rapport sur le gouvernement d’entreprise"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le litige existait à la clôture ; le jugement rendu avant l’arrêté apporte une information sur cette situation et doit être pris en compte (C. com. L123-20 : risques connus entre la clôture et l’établissement des comptes). La provision est portée à 95 000 €, soit une dotation complémentaire de 35 000 €. L’option 1 confond avec un événement nouveau postérieur à la clôture, qui seul relève de l’annexe. L’option 3 rattacherait à N+1 une charge relevant de N. L’option 4 laisse subsister une provision sous-évaluée de 35 000 €.",
+      "source_ref": "NEP 560 (événements postérieurs à la clôture) ; C. com. L123-20 ; PCG art. 323-1 s.",
+      "estimated_seconds": 75,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0018",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "garanties",
+        "espérance",
+        "recalcul"
+      ],
+      "statement": "La société Lynx vend des robots ménagers garantis 12 mois. Au 31/12/N, 10 000 appareils sont encore sous garantie. Selon les statistiques des trois derniers exercices, sur la période de garantie restante, 5 % de ces appareils présenteront un défaut mineur (coût moyen de réparation : 40 €) et 1,5 % un défaut majeur (coût moyen de remplacement : 260 €) ; les deux catégories sont exclusives. La provision comptabilisée s’élève à 45 000 €. Recalculez la provision et indiquez le montant de la sous-évaluation (en euros).",
+      "expected_value": 14000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Pour une population nombreuse d’obligations, on retient l’espérance des coûts. Provision requise = 10 000 × (5 % × 40 + 1,5 % × 260) = 10 000 × (2 + 3,9) = 59 000 €. Sous-évaluation = 59 000 − 45 000 = 14 000 €. Ne retenir que les défauts majeurs (39 000 €) ou que les défauts mineurs (20 000 €) conduirait à conclure à tort à une surévaluation.",
+      "source_ref": "PCG art. 323-1 s. (évaluation des provisions) ; NEP 540 (recalcul, estimation indépendante) ; PCG compte 1512",
+      "estimated_seconds": 150,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0019",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "ajustement proposé",
+        "dotation",
+        "reprise"
+      ],
+      "statement": "L’exploitation des réponses aux demandes de confirmation des avocats et des mouvements de provisions de la société Orque au 31/12/N fait apparaître :\n- un litige commercial engagé en novembre N, non provisionné, pour lequel l’avocat estime une condamnation probable de 65 000 € ;\n- une provision pour garantie (1512) de 30 000 €, constituée pour un chantier dont la période de garantie a expiré en octobre N sans aucune réclamation.\nPassez l’écriture d’ajustement proposée par l’auditeur au 31/12/N (utilisez les comptes 6815, 7815, 1511 et 1512).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "6815",
+          "label": "Dotations aux provisions pour risques et charges",
+          "debit": 65000,
+          "credit": 0
+        },
+        {
+          "account": "1512",
+          "label": "Provisions pour garanties données aux clients",
+          "debit": 30000,
+          "credit": 0
+        },
+        {
+          "account": "1511",
+          "label": "Provisions pour litiges",
+          "debit": 0,
+          "credit": 65000
+        },
+        {
+          "account": "7815",
+          "label": "Reprises sur provisions pour risques et charges",
+          "debit": 0,
+          "credit": 30000
+        }
+      ],
+      "explanation": "Le litige remplit les conditions d’une provision à la clôture (obligation née en N, sortie probable, estimation fournie par l’avocat) : dotation de 65 000 € (débit 6815, crédit 1511). La garantie ayant expiré sans réclamation, le risque a disparu : reprise sans objet de 30 000 € (débit 1512, crédit 7815). Dotation et reprise ne se compensent pas : chaque mouvement est comptabilisé pour son montant. L’incidence nette sur le résultat est une baisse de 35 000 €.",
+      "source_ref": "PCG art. 322-1 s. et 323-1 s. ; PCG comptes 1511, 1512, 6815, 7815 ; NEP 501",
+      "estimated_seconds": 210,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0020",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-procedures-substantives",
+      "difficulty": 3,
+      "tags": [
+        "procédures substantives",
+        "litiges",
+        "avocats",
+        "événements postérieurs",
+        "passif éventuel"
+      ],
+      "title": "Revue des litiges chez Omicron",
+      "context": "Vous auditez les comptes au 31/12/N de la SA Omicron, fabricant de mobilier de bureau. Les comptes seront arrêtés le 15/03/N+1.\nSeuil de signification : 100 000 € ; seuil des anomalies manifestement insignifiantes : 5 000 €.\nLes réponses des avocats à vos demandes de confirmation, reçues directement au cabinet, et vos autres travaux font apparaître :\n- Litige 1 : un concurrent réclame 900 000 € pour contrefaçon d’un modèle. Aucune provision. L’avocat estime qu’une condamnation est possible mais peu probable et ne peut en chiffrer le montant.\n- Litige 2 : un ancien directeur commercial, licencié en septembre N, conteste son licenciement. Provision : 50 000 €. Le 20/02/N+1, le conseil de prud’hommes condamne Omicron à lui verser 85 000 € ; Omicron renonce à faire appel.\n- Litige 3 : un fournisseur réclamait 150 000 €. Provision : 120 000 €. Le 28/12/N, une transaction a été signée pour 40 000 €, payés le 10/01/N+1. Aucune écriture n’a été passée à ce titre.\n- Événement 4 : le 05/02/N+1, une fuite de solvants dans l’usine a pollué une parcelle voisine ; le coût de dépollution est estimé à 70 000 €. Aucune écriture.",
+      "sub_questions": [
+        {
+          "id": "q1-litige-1",
+          "kind": "mcq",
+          "prompt": "Quel traitement le litige 1 appelle-t-il dans les comptes de N ?",
+          "options": [
+            "Une provision de 900 000 €, montant réclamé",
+            "Une provision forfaitaire égale à la moitié de la réclamation",
+            "Aucune provision, mais une information en annexe au titre des passifs éventuels",
+            "Aucun traitement, le litige n’étant pas jugé"
+          ],
+          "answer": [
+            2
+          ],
+          "points": 2,
+          "explanation": "La sortie de ressources n’est pas probable et le montant n’est pas estimable : pas de provision, mais il s’agit d’un passif éventuel significatif à mentionner en annexe. Provisionner la réclamation (option 1) ou un forfait (option 2) ne repose sur aucune estimation fiable. L’option 4 omet l’information due en annexe."
+        },
+        {
+          "id": "q2-incidence",
+          "kind": "numeric",
+          "prompt": "Déterminez l’incidence nette des ajustements nécessaires (litiges 2 et 3 et événement 4) sur le résultat avant impôt de N. Indiquez un montant positif si le résultat doit être augmenté, négatif s’il doit être diminué (en euros).",
+          "expected_value": 45000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 4,
+          "explanation": "Litige 2 : le jugement précise une obligation existant à la clôture ; dotation complémentaire de 85 000 − 50 000 = 35 000 € (résultat −35 000 €). Litige 3 : la transaction signée avant la clôture fixe une dette de 40 000 € ; la provision de 120 000 € est reprise et la charge de 40 000 € constatée, soit +80 000 €. Événement 4 : fait nouveau survenu après la clôture, sans ajustement (information en annexe). Incidence nette = −35 000 + 80 000 = +45 000 €. Oublier la charge de 40 000 € sur le litige 3 donnerait +85 000 € ; provisionner la dépollution donnerait −25 000 €."
+        },
+        {
+          "id": "q3-evenement-4",
+          "kind": "true_false",
+          "prompt": "Le coût de dépollution lié à la fuite du 05/02/N+1 doit être provisionné dans les comptes de N, car il est connu avant l’arrêté des comptes.",
+          "answer": false,
+          "points": 2,
+          "explanation": "Faux : l’événement générateur (la fuite) est survenu après la clôture ; aucune obligation n’existait au 31/12/N. Il s’agit d’un événement postérieur sans ajustement, mentionné en annexe s’il est significatif (NEP 560). L’article L123-20 du Code de commerce vise les risques nés au cours de l’exercice ou d’un exercice antérieur."
+        },
+        {
+          "id": "q4-conclusion",
+          "kind": "open",
+          "prompt": "Récapitulez les anomalies relevées au regard des seuils et indiquez la démarche de l’auditeur, y compris pour les informations en annexe.",
+          "model_answer": "Anomalies sur le résultat : provision du litige 2 sous-évaluée de 35 000 € ; litige 3 surévaluant les charges de 80 000 €, avec en outre un classement erroné (une dette fournisseur de 40 000 € figure en provision). Chaque anomalie dépasse le seuil des anomalies manifestement insignifiantes (5 000 €) ; prises isolément comme en net (+45 000 €), elles restent inférieures au seuil de signification (100 000 €). L’auditeur les communique à la direction et demande leur correction ; en cas de refus, il les cumule avec les autres anomalies non corrigées et obtient une déclaration écrite sur ces anomalies. Il demande aussi que l’annexe mentionne le litige 1 (passif éventuel) et l’événement 4 (événement postérieur), et obtient une déclaration écrite de la direction sur l’exhaustivité des litiges communiqués.",
+          "key_points": [
+            "Anomalies de −35 000 € (litige 2) et +80 000 € (litige 3), net +45 000 €",
+            "Supérieures à 5 000 €, inférieures à 100 000 € : demande de correction, cumul si refus",
+            "Reclassement de 40 000 € de provision en dette",
+            "Information en annexe du passif éventuel (litige 1) et de l’événement postérieur (événement 4)",
+            "Déclaration écrite de la direction sur l’exhaustivité des litiges"
+          ],
+          "points": 4
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Le cas fait exploiter les réponses des avocats et la revue des événements postérieurs : distinguer passif éventuel (annexe), événement postérieur révélant une situation existant à la clôture (ajustement) et fait nouveau (annexe), et traiter une transaction signée avant la clôture en dette. Les anomalies sont ensuite appréciées au regard des seuils (NEP 450).",
+      "source_ref": "NEP 501 (litiges) ; NEP 560 (événements postérieurs) ; NEP 450 ; NEP 580 ; C. com. L123-20 ; PCG art. 322-1 s. et 323-1 s.",
+      "estimated_seconds": 900,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0021",
+      "type": "audit_case",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-procedures-substantives",
+      "difficulty": 3,
+      "tags": [
+        "procédures substantives",
+        "litiges",
+        "avocats",
+        "exhaustivité"
+      ],
+      "title": "Litiges prud’homaux et commerciaux chez un transporteur",
+      "cycle": "provisions",
+      "situation": "Vous auditez les comptes au 31/12/N de la SAS Sirius, transporteur routier. Les provisions pour litiges (1511) s’élèvent à 380 000 € et couvrent six litiges prud’homaux et un litige commercial ; le seuil de signification est de 150 000 €. La direction juridique tient un registre des litiges, rapproché chaque trimestre des provisions par le directeur financier ; vos tests de l’intérim n’ont relevé aucune anomalie dans ces rapprochements. La revue du dénouement des provisions de N−1 fait apparaître un écart global de 4 %. Les estimations reposent principalement sur l’appréciation des avocats. Le compte d’honoraires d’avocats (6226) montre en N des paiements à trois cabinets. Aucune incitation particulière de la direction n’a été identifiée.",
+      "assertions": [
+        "Exhaustivité",
+        "Évaluation"
+      ],
+      "procedures": {
+        "options": [
+          "Adresser, avec l’accord de la direction, une demande de confirmation aux avocats sur les litiges en cours, leur issue probable et leur estimation financière, la réponse devant parvenir directement au cabinet",
+          "Rapprocher les cabinets payés au compte 6226 de ceux qui figurent au registre des litiges",
+          "Examiner les jugements, transactions et correspondances juridiques intervenus entre la clôture et la date d’arrêté des comptes",
+          "Envoyer des demandes de confirmation de solde aux principaux fournisseurs de carburant",
+          "Assister à l’inventaire physique des pièces détachées",
+          "Recalculer les amortissements des tracteurs routiers"
+        ],
+        "answer": [
+          0,
+          1,
+          2
+        ]
+      },
+      "risk": {
+        "options": [
+          "Faible",
+          "Modéré",
+          "Élevé"
+        ],
+        "answer": 1,
+        "rationale": "Les provisions pour litiges (380 000 €) dépassent le seuil de signification et reposent sur des estimations subjectives, ce qui exclut un risque faible. En revanche, le registre des litiges est rapproché trimestriellement et ce contrôle a été testé sans anomalie, la revue rétrospective montre des estimations fiables (écart de 4 %) et aucune incitation de la direction n’a été relevée : le risque n’est pas élevé."
+      },
+      "conclusion": {
+        "model_answer": "Sur la base des réponses des avocats reçues directement, du rapprochement des honoraires juridiques avec le registre des litiges et de la revue des événements postérieurs, nous avons obtenu des éléments suffisants et appropriés pour conclure que les provisions pour litiges sont exhaustives et correctement évaluées au 31/12/N, sous réserve des ajustements éventuellement identifiés et communiqués à la direction. Nous complétons ces travaux par une déclaration écrite de la direction sur l’exhaustivité des litiges communiqués.",
+        "key_points": [
+          "Rappeler les procédures réalisées et les assertions couvertes (exhaustivité, évaluation)",
+          "Se prononcer sur le caractère suffisant et approprié des éléments collectés",
+          "Traitement des anomalies éventuelles (ajustement proposé, incidence sur l’opinion)",
+          "Déclaration écrite de la direction en complément"
+        ]
+      },
+      "explanation": "Le risque porte sur l’omission d’un litige et sur l’évaluation des provisions existantes. La demande de confirmation aux avocats (NEP 501), le rapprochement des honoraires avec le registre et la revue des événements postérieurs (NEP 560) répondent à ces assertions. Les confirmations fournisseurs, l’inventaire des pièces et le recalcul des amortissements relèvent d’autres cycles. Le risque est modéré : significatif et subjectif, mais atténué par un contrôle interne testé et des estimations historiquement fiables.",
+      "source_ref": "NEP 501 (litiges) ; NEP 540 ; NEP 560 ; NEP 580 ; NEP 330",
+      "estimated_seconds": 480,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0022",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-pieges",
+      "difficulty": 2,
+      "tags": [
+        "pièges",
+        "litiges",
+        "meilleure estimation"
+      ],
+      "statement": "Un client de la société Phénix l’a assignée en N et réclame 800 000 € de dommages et intérêts pour un retard de livraison. Au 31/12/N, l’avocat de Phénix estime une condamnation probable, d’un montant le plus vraisemblable de 250 000 € compte tenu de la jurisprudence. Quel montant de provision l’auditeur doit-il attendre ?",
+      "options": [
+        "800 000 €, montant réclamé par le client",
+        "250 000 €, meilleure estimation de la sortie de ressources",
+        "Aucune provision tant que le jugement n’est pas rendu",
+        "525 000 €, moyenne entre la réclamation et l’estimation de l’avocat"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La provision est évaluée à la meilleure estimation de la sortie de ressources nécessaire pour éteindre l’obligation à la clôture ; pour un litige unique, l’issue la plus vraisemblable estimée par l’avocat (250 000 €) en est la base. L’option 1 confond réclamation et estimation. L’option 3 est fausse : la condamnation probable suffit, sans attendre le jugement. L’option 4 est une moyenne arbitraire sans fondement.",
+      "source_ref": "PCG art. 323-1 s. (évaluation des provisions) ; NEP 540 ; NEP 501",
+      "estimated_seconds": 60,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0023",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-pieges",
+      "difficulty": 2,
+      "tags": [
+        "pièges",
+        "pertes futures",
+        "obligation"
+      ],
+      "statement": "Au 31/12/N, la société Gémeaux envisage de constituer plusieurs provisions. Lesquelles ne sont PAS justifiées ? (plusieurs réponses)",
+      "options": [
+        "Une provision pour les pertes d’exploitation prévues en N+1 par l’établissement de Lille",
+        "Une provision pour les frais de formation que nécessitera un nouveau logiciel déployé en N+1",
+        "Une provision pour les réparations sous garantie des produits vendus en N",
+        "Une provision pour un litige prud’homal engagé en N dont l’avocat estime la perte probable"
+      ],
+      "answer": [
+        0,
+        1
+      ],
+      "multiple": true,
+      "explanation": "Les options 1 et 2 ne sont pas justifiées : les pertes d’exploitation futures ne résultent d’aucune obligation envers un tiers, et les frais de formation futurs ne découlent d’aucune obligation existant à la clôture (ce sont des charges de N+1). L’option 3 est justifiée : la garantie accordée sur les ventes de N est une obligation contractuelle née avant la clôture. L’option 4 est justifiée : le litige existe, la sortie est probable et estimable.",
+      "source_ref": "PCG art. 322-1 s. (conditions de comptabilisation des provisions)",
+      "estimated_seconds": 75,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0024",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-pieges",
+      "difficulty": 2,
+      "tags": [
+        "pièges",
+        "restructuration",
+        "annonce"
+      ],
+      "statement": "Une restructuration décidée par le conseil d’administration le 12/12/N mais annoncée aux salariés et à leurs représentants seulement le 20/01/N+1 doit être provisionnée au 31/12/N.",
+      "answer": false,
+      "justification": "Faux : la provision pour restructuration suppose que la décision ait été prise et annoncée aux personnes concernées avant la clôture ; l’annonce de janvier N+1 relève de l’information en annexe.",
+      "explanation": "Tant qu’elle n’est pas annoncée, la décision du conseil peut encore être modifiée et ne crée pas d’obligation envers les salariés à la clôture. L’annonce postérieure à la clôture est un événement postérieur sans ajustement des comptes de N, à mentionner en annexe si elle est significative. L’auditeur qui trouve une telle provision au bilan propose sa reprise.",
+      "source_ref": "PCG art. 322-1 s. (provisions pour restructuration) ; NEP 560",
+      "estimated_seconds": 50,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0025",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-pieges",
+      "difficulty": 2,
+      "tags": [
+        "pièges",
+        "reprise",
+        "dénouement"
+      ],
+      "statement": "Au 31/12/N−1, la société Ara avait constitué une provision pour litige (1511) de 120 000 €. En juin N, le litige est clos par une transaction : Ara verse 75 000 € d’indemnité. Elle supporte par ailleurs en N 8 000 € d’honoraires d’avocat sur ce dossier, non provisionnés. Calculez l’incidence nette de ce dossier sur le résultat avant impôt de N (montant positif si le résultat augmente, négatif s’il diminue, en euros).",
+      "expected_value": 37000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Le litige étant éteint, la provision est reprise en totalité : 120 000 € en produit (7815), dont 75 000 € utilisés et 45 000 € devenus sans objet. Les charges réelles de N, comptabilisées séparément, sont l’indemnité (75 000 €) et les honoraires (8 000 €). Incidence nette = 120 000 − 75 000 − 8 000 = +37 000 €. Oublier les honoraires donnerait +45 000 € ; oublier la reprise donnerait −83 000 €.",
+      "source_ref": "PCG art. 323-1 s. (reprise des provisions) ; PCG comptes 1511, 7815, 6226",
+      "estimated_seconds": 120,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0026",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-pieges",
+      "difficulty": 3,
+      "tags": [
+        "pièges",
+        "retraites",
+        "IFC",
+        "actualisation"
+      ],
+      "statement": "La société Cygne a choisi de provisionner ses indemnités de fin de carrière (méthode des unités de crédit projetées, droits répartis linéairement sur toute la carrière dans l’entreprise). L’auditeur recalcule l’engagement relatif à une salariée :\n- indemnité prévue par la convention collective au départ : 3 mois de salaire de fin de carrière ; salaire mensuel projeté au départ : 5 000 € ;\n- départ prévu dans 12 ans ; ancienneté acquise au 31/12/N : 18 ans ; ancienneté totale au départ : 30 ans ;\n- probabilité d’être présente dans l’entreprise au départ : 70 % ;\n- taux d’actualisation : 3,5 % ; charges sociales ignorées.\nCalculez l’engagement au 31/12/N (en euros, arrondi à l’euro).",
+      "expected_value": 4169,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Indemnité projetée = 3 × 5 000 = 15 000 €. Droits acquis = 15 000 × 18 / 30 = 9 000 €. Pondération par la probabilité de présence : 9 000 × 70 % = 6 300 €. Actualisation sur 12 ans : 6 300 / 1,035¹² = 6 300 / 1,5111 ≈ 4 169 €. Oublier l’actualisation donne 6 300 € ; oublier le prorata d’ancienneté donne environ 6 949 € ; ces deux erreurs sont hors tolérance.",
+      "source_ref": "C. com. L123-13 (engagements de retraite) ; recommandation ANC 2013-02 (méthode des unités de crédit projetées) ; NEP 540",
+      "estimated_seconds": 240,
+      "verified": true
+    },
+    {
+      "id": "ue4-audit-provisions-0027",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "provisions-pieges",
+      "difficulty": 3,
+      "tags": [
+        "pièges",
+        "restructuration",
+        "perte à terminaison",
+        "pertes futures"
+      ],
+      "title": "Revue des provisions à la clôture chez Sigma",
+      "context": "Vous auditez les comptes au 31/12/N de la SA Sigma, entreprise d’ingénierie industrielle. Seuil de signification : 200 000 €.\nVos travaux sur les provisions font apparaître :\n- Restructuration : le 10/12/N, le conseil d’administration a décidé la fermeture du site de Brest et adopté un plan détaillé (coût estimé : 450 000 €). Le plan a été présenté aux salariés et à leurs représentants le 15/01/N+1. Une provision de 450 000 € a été comptabilisée au 31/12/N.\n- Contrat à long terme : Sigma réalise pour un client une ligne de production, au prix forfaitaire de 2 000 000 €. Les coûts totaux sont désormais estimés à 2 300 000 €. Le contrat est comptabilisé à l’avancement, mesuré par les coûts : au 31/12/N, les coûts engagés (920 000 €) et le produit correspondant (800 000 €) sont comptabilisés ; aucun en-cours n’est inscrit à l’actif. Aucune provision n’a été constituée.\n- Site de Lyon : la direction prévoit des pertes d’exploitation de 150 000 € en N+1 pour ce site et a constitué une provision de ce montant.",
+      "sub_questions": [
+        {
+          "id": "q1-restructuration",
+          "kind": "true_false",
+          "prompt": "La provision pour restructuration de 450 000 € est justifiée au 31/12/N, la décision ayant été prise et le plan détaillé adopté avant la clôture.",
+          "answer": false,
+          "points": 2,
+          "explanation": "Faux : le plan n’a été annoncé aux personnes concernées que le 15/01/N+1 ; à la clôture, aucune obligation n’existait envers les salariés. La provision doit être reprise et la restructuration mentionnée en annexe."
+        },
+        {
+          "id": "q2-perte-terminaison",
+          "kind": "numeric",
+          "prompt": "Calculez la provision pour perte à terminaison à constituer au 31/12/N (en euros).",
+          "expected_value": 180000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 3,
+          "explanation": "Perte à terminaison = 2 300 000 − 2 000 000 = 300 000 €. Avancement = 920 000 / 2 300 000 = 40 %. Perte déjà constatée par l’avancement = 920 000 − 800 000 = 120 000 €. Provision = 300 000 − 120 000 = 180 000 €. Provisionner la totalité de la perte (300 000 €) compterait deux fois les 120 000 € déjà en résultat."
+        },
+        {
+          "id": "q3-site-lyon",
+          "kind": "mcq",
+          "prompt": "Quel traitement la provision pour pertes d’exploitation du site de Lyon appelle-t-elle ?",
+          "options": [
+            "Maintien, par application du principe de prudence",
+            "Maintien, mais présentation en dépréciation des actifs du site",
+            "Reprise, aucune obligation envers un tiers n’existant à la clôture",
+            "Maintien à hauteur de la moitié, les pertes étant seulement probables"
+          ],
+          "answer": [
+            2
+          ],
+          "points": 2,
+          "explanation": "Les pertes d’exploitation futures ne résultent d’aucune obligation envers un tiers : elles ne se provisionnent pas, la prudence ne justifiant pas une provision sans obligation. L’option 2 confond avec une dépréciation, qui suppose un test de valeur des actifs (valeur actuelle inférieure à la valeur nette comptable), et non une prévision de pertes. L’option 4 est arbitraire."
+        },
+        {
+          "id": "q4-incidence",
+          "kind": "numeric",
+          "prompt": "Calculez l’incidence nette des corrections nécessaires sur le résultat avant impôt de N (montant positif si le résultat augmente, négatif s’il diminue, en euros).",
+          "expected_value": 420000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 3,
+          "explanation": "Reprise de la provision pour restructuration : +450 000 €. Dotation pour perte à terminaison : −180 000 €. Reprise de la provision pour pertes futures du site de Lyon : +150 000 €. Incidence nette = 450 000 − 180 000 + 150 000 = +420 000 €."
+        },
+        {
+          "id": "q5-conclusion",
+          "kind": "open",
+          "prompt": "Concluez sur les anomalies relevées au regard du seuil de signification et indiquez les conséquences possibles sur l’opinion.",
+          "model_answer": "Les anomalies relevées sont la provision pour restructuration injustifiée (450 000 €), l’absence de provision pour perte à terminaison (180 000 €) et la provision pour pertes futures injustifiée (150 000 €), soit une sous-évaluation nette du résultat de 420 000 €. Le net, comme la provision pour restructuration prise isolément, dépasse le seuil de signification (200 000 €) ; la compensation entre anomalies de sens contraire ne dispense pas d’examiner chacune. L’auditeur demande à la direction de les corriger et de mentionner la restructuration en annexe. En cas de refus, il formule une opinion avec réserve pour désaccord, voire un refus de certifier si les effets étaient jugés diffus.",
+          "key_points": [
+            "Anomalies : +450 000 €, −180 000 €, +150 000 € ; net +420 000 €",
+            "Supérieur au seuil de signification de 200 000 €",
+            "Demande de correction et information en annexe sur la restructuration",
+            "À défaut : opinion avec réserve pour désaccord (ou refus de certifier si effets diffus)"
+          ],
+          "points": 4
+        }
+      ],
+      "total_points": 14,
+      "explanation": "Le cas réunit trois pièges classiques : une restructuration annoncée après la clôture (pas de provision), une perte à terminaison à provisionner pour sa fraction non encore constatée, et une provision pour pertes d’exploitation futures interdite. Les anomalies, de sens contraires, sont ensuite appréciées au regard du seuil de signification (NEP 450).",
+      "source_ref": "PCG art. 322-1 s. et 323-1 s. ; PCG art. 622-1 s. (contrats à long terme) ; NEP 450 ; NEP 560 ; NEP 700",
+      "estimated_seconds": 900,
+      "verified": true
+    }
+  ]
+}

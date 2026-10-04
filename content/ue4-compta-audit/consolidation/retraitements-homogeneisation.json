@@ -1,0 +1,339 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-conso-retraitements-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "retraitements-homogeneisation",
+      "difficulty": 1,
+      "tags": [
+        "amortissements dérogatoires",
+        "écritures fiscales",
+        "impôt différé"
+      ],
+      "statement": "Une filiale intégrée globalement a comptabilisé des amortissements dérogatoires dans ses comptes individuels. Quel traitement est retenu en consolidation (règlement ANC 2020-01) ?",
+      "options": [
+        "Ils sont maintenus dans les capitaux propres consolidés, au sein des provisions réglementées",
+        "Ils sont reclassés en provisions pour risques et charges",
+        "Ils sont éliminés, en contrepartie des réserves et du résultat, avec constatation d'un impôt différé",
+        "Ils sont éliminés sans aucune incidence fiscale, car l'impôt a déjà été payé"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Les amortissements dérogatoires (compte 145) sont des écritures d'origine purement fiscale : ils sont annulés en consolidation, en contrepartie des réserves (part antérieure) et du résultat (dotation ou reprise de l'exercice). L'annulation fait apparaître un écart entre la valeur consolidée et la base fiscale, d'où un impôt différé passif. L'option 1 les maintient, ce que le règlement exclut ; l'option 2 les reclasse en provisions alors qu'ils ne correspondent à aucun passif ; l'option 4 oublie l'impôt différé.",
+      "source_ref": "Règl. ANC 2020-01 (élimination des écritures passées pour la seule application des législations fiscales) ; PCG compte 145",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-conso-retraitements-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "retraitements-homogeneisation",
+      "difficulty": 2,
+      "tags": [
+        "crédit-bail",
+        "location-financement",
+        "ANC 2020-01"
+      ],
+      "statement": "Une filiale française d'un groupe qui applique le règlement ANC 2020-01 a pris une machine en crédit-bail ; elle comptabilise les redevances en charges dans ses comptes individuels. Quel traitement est retenu dans les comptes consolidés ?",
+      "options": [
+        "Le retraitement est une simple option : le groupe peut conserver les redevances en charges",
+        "Le retraitement n'est obligatoire que pour les contrats d'une durée supérieure à dix ans",
+        "Le retraitement est interdit, les comptes consolidés devant reprendre les comptes individuels établis selon le PCG",
+        "La machine est inscrite à l'actif et une dette financière est constatée : ce retraitement est obligatoire"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Le règlement ANC 2020-01 rend obligatoire, dans les comptes consolidés, la comptabilisation à l'actif des biens pris en location-financement (crédit-bail notamment) avec une dette financière au passif ; sous le règlement CRC 99-02, ce traitement était une méthode préférentielle. L'option 1 décrit l'ancien régime ; l'option 3 confond comptes consolidés et comptes individuels, où le PCG maintient la comptabilisation des redevances en charges ; l'option 2 est sans fondement : la durée du contrat n'est pas le critère.",
+      "source_ref": "Règl. ANC 2020-01 (contrats de location-financement)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-conso-retraitements-0003",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "retraitements-homogeneisation",
+      "difficulty": 2,
+      "tags": [
+        "crédit-bail",
+        "dette financière",
+        "location-financement"
+      ],
+      "statement": "Le 01/01/N, une filiale a pris en crédit-bail un équipement d'une valeur de 200 000 € (valeur actualisée des redevances), amortissable linéairement sur 5 ans. La redevance annuelle, payée le 31/12, s'élève à 48 000 €, dont 10 000 € d'intérêts au titre de N. Dans les comptes consolidés, le contrat est retraité. Quel est le montant de la dette financière liée à ce contrat au bilan consolidé du 31/12/N (en euros) ?",
+      "expected_value": 162000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Au 01/01/N, la dette financière est égale à la valeur du bien : 200 000 €. La redevance de 48 000 € se décompose en intérêts (10 000 €, charge financière) et remboursement du capital (38 000 €). Dette au 31/12/N = 200 000 − 38 000 = 162 000 €. Erreur classique : déduire la redevance entière (152 000 €).",
+      "source_ref": "Règl. ANC 2020-01 (contrats de location-financement)",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue4-conso-retraitements-0004",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "retraitements-homogeneisation",
+      "difficulty": 2,
+      "tags": [
+        "amortissements dérogatoires",
+        "impôt différé passif",
+        "réserves",
+        "résultat"
+      ],
+      "statement": "Au 01/01/N, les amortissements dérogatoires de la société Ivoire, filiale intégrée globalement à 100 %, s'élèvent à 24 000 €. Ivoire a doté 8 000 € en N. Taux d'impôt : 25 %.\n\nPassez l'écriture de retraitement au bilan consolidé du 31/12/N. Conventions : 145 Amortissements dérogatoires, 155 Impôts différés passifs, 106 Réserves, 120 Résultat de l'exercice.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "145",
+          "label": "Amortissements dérogatoires (Ivoire)",
+          "debit": 32000,
+          "credit": 0
+        },
+        {
+          "account": "155",
+          "label": "Impôts différés passifs",
+          "debit": 0,
+          "credit": 8000
+        },
+        {
+          "account": "106",
+          "label": "Réserves (part antérieure, nette d'impôt)",
+          "debit": 0,
+          "credit": 18000
+        },
+        {
+          "account": "120",
+          "label": "Résultat (dotation N, nette d'impôt)",
+          "debit": 0,
+          "credit": 6000
+        }
+      ],
+      "explanation": "Le solde des amortissements dérogatoires au 31/12/N (24 000 + 8 000 = 32 000 €) est annulé. Impôt différé passif = 25 % × 32 000 = 8 000 €. La part antérieure à N (24 000 € × 75 % = 18 000 €) augmente les réserves ; la dotation de N (8 000 € × 75 % = 6 000 €) augmente le résultat. Contrôle : 18 000 + 6 000 + 8 000 = 32 000 €.",
+      "source_ref": "Règl. ANC 2020-01 (élimination des écritures fiscales, impôts différés) ; PCG compte 145",
+      "verified": true,
+      "estimated_seconds": 300
+    },
+    {
+      "id": "ue4-conso-retraitements-0005",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "retraitements-homogeneisation",
+      "difficulty": 2,
+      "tags": [
+        "homogénéisation",
+        "mode d'amortissement",
+        "impôt différé passif"
+      ],
+      "title": "Groupe Sable : harmoniser les plans d'amortissement",
+      "context": "Le groupe Sable applique pour ses machines l'amortissement linéaire sur 5 ans, considéré comme représentatif de leur consommation. Sa filiale Galet, détenue à 100 % et intégrée globalement, a acquis le 01/01/N une machine pour 100 000 € HT. Galet l'amortit dans ses comptes individuels selon le mode dégressif sur 5 ans (taux de 35 %), qu'elle a retenu comme mode comptable ; aucun amortissement dérogatoire n'est comptabilisé. La base fiscale de la machine est sa valeur nette comptable dans les comptes individuels de Galet. Taux d'impôt : 25 %. L'incidence du retraitement est significative pour le groupe.",
+      "sub_questions": [
+        {
+          "id": "obligation",
+          "kind": "true_false",
+          "prompt": "Le groupe peut conserver l'amortissement dégressif de Galet dans les comptes consolidés, puisqu'il est admis dans ses comptes individuels.",
+          "points": 1,
+          "answer": false,
+          "explanation": "Les comptes consolidés sont établis selon des méthodes homogènes : la méthode du groupe s'impose, sauf incidence non significative, ce qui n'est pas le cas ici."
+        },
+        {
+          "id": "impact-brut",
+          "kind": "numeric",
+          "prompt": "Quel est l'impact du retraitement sur le résultat consolidé N avant impôt (en euros, avec son signe) ?",
+          "points": 3,
+          "expected_value": 15000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Dotation de Galet : 100 000 × 35 % = 35 000 €. Dotation du groupe : 100 000 ÷ 5 = 20 000 €. La charge diminue de 15 000 € : impact +15 000 € avant impôt."
+        },
+        {
+          "id": "nature-id",
+          "kind": "mcq",
+          "prompt": "Quel impôt différé le retraitement fait-il naître au 31/12/N ?",
+          "points": 2,
+          "options": [
+            "Un impôt différé actif de 3 750 €",
+            "Un impôt différé passif de 3 750 €",
+            "Un impôt différé passif de 15 000 €",
+            "Aucun, le retraitement étant purement comptable"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Valeur consolidée de la machine : 80 000 € ; base fiscale : 65 000 €. La valeur comptable excède la base fiscale de 15 000 € : différence temporelle imposable, impôt différé passif de 15 000 × 25 % = 3 750 €."
+        },
+        {
+          "id": "impact-net",
+          "kind": "numeric",
+          "prompt": "Quel est l'impact net d'impôt du retraitement sur le résultat consolidé N (en euros) ?",
+          "points": 2,
+          "expected_value": 11250,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "15 000 − 3 750 = 11 250 €."
+        },
+        {
+          "id": "suite",
+          "kind": "open",
+          "prompt": "Comment ce retraitement évoluera-t-il au cours des exercices suivants ?",
+          "points": 2,
+          "model_answer": "L'écart de valeur entre les deux plans se reporte en réserves consolidées à l'ouverture de N+1 (11 250 € net d'impôt). Dès que la dotation dégressive de Galet devient inférieure à la dotation linéaire du groupe, le retraitement de l'exercice devient négatif sur le résultat, et l'impôt différé passif se reprend. À la fin du plan, les deux valeurs nettes sont nulles : l'écart cumulé et l'impôt différé disparaissent.",
+          "key_points": [
+            "Report de l'écart antérieur en réserves",
+            "Inversion de l'effet sur le résultat quand la dotation dégressive passe sous la dotation linéaire",
+            "Reprise progressive de l'impôt différé passif",
+            "Écart nul en fin de plan"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "L'homogénéisation impose d'appliquer les méthodes du groupe à toutes les entités consolidées, sauf incidence non significative. Le retraitement d'un mode d'amortissement modifie la valeur consolidée du bien par rapport à sa base fiscale : un impôt différé en découle.",
+      "source_ref": "Règl. ANC 2020-01 (méthodes homogènes, impôts différés) ; IFRS 10 §19 et §B87 (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 600
+    },
+    {
+      "id": "ue4-conso-retraitements-0006",
+      "type": "consolidation_case",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "retraitements-homogeneisation",
+      "difficulty": 3,
+      "tags": [
+        "amortissements dérogatoires",
+        "crédit-bail",
+        "impôts différés",
+        "intérêts minoritaires"
+      ],
+      "title": "Groupe Cèdre : retraitements chez la filiale Érable",
+      "context": "La société Cèdre (C) détient 80 % du capital et des droits de vote de la société Érable (E), intégrée globalement selon le règlement ANC 2020-01. Taux d'impôt : 25 %.\n\n1. Amortissements dérogatoires : au 01/01/N, ils s'élèvent à 40 000 € dans les comptes d'Érable. En N, Érable a comptabilisé une reprise de 5 000 €.\n2. Crédit-bail : le 01/01/N, Érable a pris en crédit-bail un matériel d'une valeur de 90 000 €, amortissable linéairement sur 6 ans dans le groupe. La redevance annuelle (payée le 31/12) est de 18 000 €, dont 4 500 € d'intérêts au titre de N. Érable comptabilise les redevances en charges.\n\nConventions pour les écritures : 145 Amortissements dérogatoires, 155 Impôts différés passifs, 106 Réserves, 120 Résultat de l'exercice.",
+      "entities": [
+        {
+          "id": "c",
+          "name": "Cèdre (C)",
+          "is_parent": true
+        },
+        {
+          "id": "e",
+          "name": "Érable (E)"
+        }
+      ],
+      "links": [
+        {
+          "from": "c",
+          "to": "e",
+          "ownership_pct": 80
+        }
+      ],
+      "steps": [
+        {
+          "id": "ecriture-derog",
+          "stage": "retraitements",
+          "kind": "journal_entry",
+          "prompt": "Passez l'écriture d'élimination des amortissements dérogatoires d'Érable au bilan consolidé du 31/12/N, impôt différé compris.",
+          "points": 3,
+          "date": "31/12/N",
+          "entries": [
+            {
+              "account": "145",
+              "label": "Amortissements dérogatoires (Érable)",
+              "debit": 35000,
+              "credit": 0
+            },
+            {
+              "account": "120",
+              "label": "Résultat (reprise N éliminée, nette d'impôt)",
+              "debit": 3750,
+              "credit": 0
+            },
+            {
+              "account": "155",
+              "label": "Impôts différés passifs",
+              "debit": 0,
+              "credit": 8750
+            },
+            {
+              "account": "106",
+              "label": "Réserves (part antérieure, nette d'impôt)",
+              "debit": 0,
+              "credit": 30000
+            }
+          ],
+          "explanation": "Solde au 31/12/N : 40 000 − 5 000 = 35 000 €, annulé. Impôt différé passif : 25 % × 35 000 = 8 750 €. Réserves : +40 000 × 75 % = 30 000 €. La reprise de 5 000 € avait augmenté le résultat individuel ; son élimination le diminue de 5 000 × 75 % = 3 750 € (débit 120). Contrôle : 35 000 + 3 750 = 8 750 + 30 000."
+        },
+        {
+          "id": "cb-brut",
+          "stage": "retraitements",
+          "kind": "numeric",
+          "prompt": "Quel est l'impact du retraitement du crédit-bail sur le résultat N d'Érable avant impôt (en euros, avec son signe) ?",
+          "points": 2,
+          "expected_value": -1500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "La redevance (18 000 €) est remplacée par une dotation aux amortissements (90 000 ÷ 6 = 15 000 €) et des intérêts (4 500 €), soit 19 500 € de charges : impact −1 500 € avant impôt."
+        },
+        {
+          "id": "cb-id",
+          "stage": "impots-differes",
+          "kind": "mcq",
+          "prompt": "Quel impôt différé le retraitement du crédit-bail fait-il apparaître au 31/12/N ?",
+          "points": 2,
+          "options": [
+            "Un impôt différé passif de 375 €",
+            "Un impôt différé actif de 375 €",
+            "Un impôt différé actif de 4 500 €",
+            "Aucun impôt différé"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Au bilan consolidé : matériel 90 000 − 15 000 = 75 000 € ; dette 90 000 − (18 000 − 4 500) = 76 500 €. L'actif net retraité est de −1 500 €, alors que la base fiscale correspondante est nulle (redevances déduites) : différence temporelle déductible, impôt différé actif de 1 500 × 25 % = 375 €."
+        },
+        {
+          "id": "impact-groupe",
+          "stage": "partage-capitaux-propres",
+          "kind": "numeric",
+          "prompt": "Quel est l'impact net d'impôt de l'ensemble des retraitements sur le résultat consolidé part du groupe de N (en euros, avec son signe) ?",
+          "points": 3,
+          "expected_value": -3900,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Amortissements dérogatoires : −3 750 €. Crédit-bail : −1 500 × 75 % = −1 125 €. Total : −4 875 €. Part du groupe : 80 % × (−4 875) = −3 900 € ; part des minoritaires : −975 €."
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Chaque retraitement est d'abord calculé sur la filiale, impôt différé compris, puis réparti entre réserves (antérieur) et résultat (exercice). Pour une filiale intégrée globalement, l'impact net est ensuite partagé entre le groupe et les minoritaires selon le pourcentage d'intérêt.",
+      "source_ref": "Règl. ANC 2020-01 (élimination des écritures fiscales, location-financement, impôts différés)",
+      "verified": true,
+      "estimated_seconds": 780
+    }
+  ]
+}

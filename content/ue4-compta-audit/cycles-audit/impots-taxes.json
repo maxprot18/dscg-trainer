@@ -1,0 +1,926 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-audit-impots-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "impôt sur les sociétés",
+        "évaluation"
+      ],
+      "source_ref": "NEP 500 (assertions : évaluation, mesure)",
+      "verified": true,
+      "estimated_seconds": 50,
+      "statement": "L'auditeur reprend le tableau de passage du résultat comptable au résultat fiscal, vérifie les réintégrations et déductions, puis recalcule l'impôt sur les sociétés et le compare à la charge comptabilisée en 695. Quelle assertion ce travail vise-t-il principalement ?",
+      "options": [
+        "Existence de la dette d’IS",
+        "Séparation des exercices",
+        "Évaluation (exactitude du montant) de la charge et de la dette d’IS",
+        "Présentation de l’IS dans l’annexe"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Recalculer l'IS à partir du résultat fiscal permet de vérifier que le montant comptabilisé est exact : c'est l'évaluation (mesure). L'option 1 est inadaptée : pour une dette d'IS, le risque n'est pas qu'elle soit fictive mais qu'elle soit mal calculée ou omise. L'option 2 porterait sur le rattachement de l'impôt au bon exercice, que le recalcul ne teste pas. L'option 4 concerne l'information en annexe, non examinée ici."
+    },
+    {
+      "id": "ue4-audit-impots-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "exhaustivité",
+        "taxes locales"
+      ],
+      "source_ref": "NEP 500 (assertions : exhaustivité) ; PCG compte 63",
+      "verified": true,
+      "estimated_seconds": 50,
+      "statement": "L'auditeur obtient l'ensemble des avis d'imposition reçus par l'entité au cours de l'exercice (contribution économique territoriale, taxes foncières) et vérifie que chacun a donné lieu à une charge dans les comptes 63. Quelle assertion est testée en priorité ?",
+      "options": [
+        "Réalité des charges d’impôts et taxes",
+        "Classification des charges d’impôts et taxes",
+        "Évaluation des dettes fiscales",
+        "Exhaustivité des charges d’impôts et taxes"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Le test part d'une source indépendante de la comptabilité (les avis d'imposition) pour vérifier que chaque impôt dû a été enregistré : c'est un test d'exhaustivité. La réalité (option 1) se testerait dans l'autre sens, en partant des charges comptabilisées pour remonter aux avis. La classification (option 2) porte sur l'imputation au bon compte, et l'évaluation (option 3) sur l'exactitude des montants des dettes à la clôture, que ce test ne vise pas en premier lieu."
+    },
+    {
+      "id": "ue4-audit-impots-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-assertions",
+      "difficulty": 2,
+      "tags": [
+        "assertions",
+        "existence",
+        "crédit de TVA"
+      ],
+      "source_ref": "NEP 500 (assertions sur les soldes : existence) ; PCG comptes 44567, 44583",
+      "verified": true,
+      "estimated_seconds": 70,
+      "statement": "Au 31/12/N, la société Orion présente au bilan un crédit de TVA à reporter (44567) de 185 000 €, en forte hausse par rapport à N−1, à la suite d'un important programme d'investissement. Quelle procédure apporte l'élément le plus probant sur l'existence de cette créance ?",
+      "options": [
+        "Rapprocher le solde de la dernière déclaration de TVA déposée et examiner, sur un échantillon, les factures d’immobilisations à l’origine de la TVA déductible (mentions obligatoires, droit à déduction)",
+        "Obtenir une déclaration écrite de la direction confirmant le montant du crédit de TVA",
+        "Vérifier que le crédit de TVA a été correctement classé en « autres créances » au bilan",
+        "Comparer le solde du compte 44567 au solde de N−1 et documenter la variation"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "L'existence d'un crédit de TVA se vérifie en le rapprochant de la déclaration déposée et en remontant aux factures qui justifient la TVA déduite (factures conformes, dépenses ouvrant droit à déduction). Une déclaration de la direction (option 2) est un élément interne qui ne suffit pas seul. Le classement au bilan (option 3) relève de la présentation, pas de l'existence. La comparaison avec N−1 (option 4) est une procédure analytique qui oriente les travaux mais ne prouve pas l'existence, d'autant que la hausse est attendue ici."
+    },
+    {
+      "id": "ue4-audit-impots-0004",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "dettes fiscales",
+        "exhaustivité"
+      ],
+      "source_ref": "NEP 500 (assertions sur les soldes : existence, exhaustivité)",
+      "verified": true,
+      "estimated_seconds": 40,
+      "statement": "Pour les dettes fiscales (IS à payer, TVA à décaisser, taxes à payer), l'assertion la plus exposée au risque est en général l'existence.",
+      "answer": false,
+      "justification": "Faux : pour un passif, le risque principal est la sous-évaluation ou l'omission ; l'assertion la plus exposée est l'exhaustivité.",
+      "explanation": "Une entité qui souhaite améliorer son résultat ou sa présentation a intérêt à minorer ses dettes, pas à les gonfler. L'auditeur teste donc surtout l'exhaustivité des dettes fiscales, en partant de sources indépendantes (déclarations, avis d'imposition, correspondance avec l'administration). L'existence est en revanche l'assertion clé pour les créances fiscales (crédit de TVA, acomptes d'IS excédentaires)."
+    },
+    {
+      "id": "ue4-audit-impots-0005",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "impôt sur les sociétés",
+        "TVA"
+      ],
+      "source_ref": "NEP 500 (assertions) ; PCG comptes 444, 445, 4486",
+      "verified": true,
+      "estimated_seconds": 60,
+      "front": "Pour le cycle impôts et taxes, quelle assertion est prioritaire pour chaque poste, et avec quelle procédure type ?",
+      "back": "Dettes d'IS, de TVA et de taxes : exhaustivité (avis d'imposition, déclarations, correspondance avec l'administration).\nCharge d'IS : évaluation (preuve d'impôt, recalcul à partir du résultat fiscal).\nCrédit de TVA, acomptes d'IS excédentaires : existence (déclarations déposées, factures justificatives, relevé de solde).\nTaxes de l'exercice non liquidées : séparation des exercices (charges à payer 4486).",
+      "explanation": "NEP 500 : les assertions orientent le choix des procédures. Les passifs fiscaux se testent surtout en exhaustivité, les créances fiscales en existence ; la preuve d'impôt couvre l'exactitude de la charge d'IS."
+    },
+    {
+      "id": "ue4-audit-impots-0006",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-risques",
+      "difficulty": 1,
+      "tags": [
+        "risques",
+        "contrôle fiscal",
+        "provisions"
+      ],
+      "source_ref": "NEP 315 (évaluation du risque) ; NEP 250 (non-respect des textes légaux et réglementaires)",
+      "verified": true,
+      "estimated_seconds": 50,
+      "statement": "Parmi les faits suivants relevés lors de la prise de connaissance de l'entité, lequel constitue l'indicateur de risque le plus direct d'anomalie significative dans le cycle impôts et taxes ?",
+      "options": [
+        "L’entité a changé de commissaire aux comptes à l’expiration du mandat précédent",
+        "L’entité a reçu en novembre N une proposition de rectification portant sur la TVA des exercices N−2 et N−1",
+        "L’entité verse ses acomptes d’IS aux échéances légales",
+        "L’entité a déménagé son siège social dans des locaux loués"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Une proposition de rectification signale un rappel d'impôt possible, avec intérêts de retard et majorations, qui peut nécessiter une provision pour impôts (155) et une information en annexe : c'est un facteur de risque direct sur l'exhaustivité et l'évaluation des passifs fiscaux. Le changement de commissaire aux comptes (option 1) n'est pas en soi un risque fiscal. Le paiement des acomptes aux échéances (option 3) est plutôt un signe de bonne gestion. Le déménagement dans des locaux loués (option 4) peut modifier les taxes locales mais n'indique pas en soi une anomalie."
+    },
+    {
+      "id": "ue4-audit-impots-0007",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "NEP 250",
+        "textes légaux"
+      ],
+      "source_ref": "NEP 250 (non-respect des textes légaux et réglementaires)",
+      "verified": true,
+      "estimated_seconds": 70,
+      "statement": "Selon la NEP 250, comment le commissaire aux comptes appréhende-t-il la législation fiscale applicable à l'entité ?",
+      "options": [
+        "Il se limite à interroger la direction et à lire les procès-verbaux, la législation fiscale n’ayant pas d’effet direct sur les comptes",
+        "Il recherche systématiquement toutes les infractions fiscales commises par l’entité au cours de l’exercice",
+        "Il collecte des éléments suffisants et appropriés sur le respect de la législation fiscale, celle-ci ayant une incidence directe sur la détermination des montants et informations des comptes",
+        "Il n’a pas à s’en préoccuper si l’entité est assistée d’un expert-comptable qui établit les déclarations fiscales"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "La NEP 250 distingue les textes qui ont une incidence directe sur les montants des comptes (législation fiscale et sociale, par exemple) et les autres textes. Pour les premiers, le CAC collecte des éléments suffisants et appropriés sur leur respect. L'option 1 décrit les procédures limitées applicables aux autres textes. L'option 2 est excessive : l'audit n'a pas pour objet de rechercher toutes les infractions. L'option 4 est fausse : l'intervention d'un tiers dans la préparation des déclarations ne dispense pas le CAC de ses propres travaux."
+    },
+    {
+      "id": "ue4-audit-impots-0008",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "TVA intracommunautaire",
+        "autoliquidation"
+      ],
+      "source_ref": "CGI art. 256 bis (acquisitions intracommunautaires imposables) ; PCG comptes 4452, 44566 ; NEP 250",
+      "verified": true,
+      "estimated_seconds": 80,
+      "statement": "La société Vela, qui a un droit à déduction intégral, achète des marchandises à des fournisseurs allemands depuis le début de l'exercice. L'auditeur constate que la TVA sur ces acquisitions intracommunautaires n'a jamais été autoliquidée. Quelle analyse est correcte ?",
+      "options": [
+        "Aucune conséquence : les achats intracommunautaires sont exonérés de TVA chez l’acquéreur",
+        "La TVA nette à payer est sous-évaluée du montant de la TVA non autoliquidée, ce qui affecte le résultat",
+        "Le fournisseur allemand aurait dû facturer la TVA française ; Vela doit lui réclamer des factures rectificatives",
+        "La TVA nette n’est pas modifiée, la TVA due et la TVA déductible se compensant, mais l’omission constitue un manquement déclaratif susceptible de sanction"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Pour une acquisition intracommunautaire, l'acquéreur est redevable de la TVA : il la constate comme due (4452) et, s'il a un droit à déduction intégral, la déduit simultanément (44566). L'omission ne change donc pas la TVA nette, mais c'est une non-conformité déclarative qui peut être sanctionnée (risque NEP 250). L'option 1 confond l'exonération de la livraison chez le vendeur et l'imposition de l'acquisition chez l'acheteur. L'option 2 oublie la déduction simultanée. L'option 3 est fausse : le fournisseur facture hors taxe, c'est l'acquéreur qui autoliquide."
+    },
+    {
+      "id": "ue4-audit-impots-0009",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "taux effectif",
+        "procédures analytiques"
+      ],
+      "source_ref": "NEP 315 (procédures analytiques pour évaluer le risque) ; NEP 520",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Un taux effectif d'impôt (charge d'IS / résultat avant impôt) nettement inférieur au taux légal, sans changement de législation ni différence permanente identifiée, est un indicateur de risque d'anomalie sur la charge d'impôt.",
+      "answer": true,
+      "justification": "Vrai : en l'absence d'explication (différences permanentes, crédits d'impôt, taux réduit), l'écart suggère une sous-évaluation de l'IS à investiguer.",
+      "explanation": "Le taux effectif est une procédure analytique simple de planification. Il s'écarte légitimement du taux légal en présence de charges non déductibles, de produits exonérés (dividendes du régime mère-fille), de crédits d'impôt, de l'imputation de déficits ou d'un taux réduit. Si aucun de ces éléments ne l'explique, l'auditeur oriente ses travaux vers l'exactitude et l'exhaustivité de la charge d'IS."
+    },
+    {
+      "id": "ue4-audit-impots-0010",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "procédures analytiques",
+        "TVA collectée"
+      ],
+      "source_ref": "NEP 520 (procédures analytiques) ; CGI art. 262 (exonération des exportations) ; PCG compte 44571",
+      "verified": true,
+      "estimated_seconds": 180,
+      "statement": "La société Lyra vend uniquement des biens. Son chiffre d'affaires HT de l'exercice N s'élève à 5 200 000 €, dont 800 000 € d'exportations hors Union européenne, exonérées. Le reste est taxable au taux de 20 % (hypothèse : taux unique). Le cumul des crédits du compte 44571 « TVA collectée » sur l'exercice s'élève à 846 000 €. Calculez l'écart non expliqué entre la TVA collectée théorique et la TVA collectée comptabilisée (en euros, arrondi à l'euro).",
+      "expected_value": 34000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "CA taxable = 5 200 000 − 800 000 = 4 400 000 €. TVA collectée théorique = 4 400 000 × 20 % = 880 000 €. Écart = 880 000 − 846 000 = 34 000 €. Oublier de retirer les exportations donnerait 1 040 000 − 846 000 = 194 000 €. L'écart, qui suggère une TVA collectée sous-estimée (facture saisie avec un code TVA erroné, opération à tort considérée comme exonérée), doit être investigué avant de conclure."
+    },
+    {
+      "id": "ue4-audit-impots-0011",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-risques",
+      "difficulty": 3,
+      "tags": [
+        "risques",
+        "contrôle fiscal",
+        "provision pour impôts",
+        "NEP 250"
+      ],
+      "source_ref": "NEP 250 ; NEP 580 (déclarations de la direction) ; PCG compte 155 (provisions pour impôts) ; CGI art. 1727 (intérêt de retard) ; NEP 700 (rapport sur les comptes)",
+      "verified": true,
+      "estimated_seconds": 780,
+      "title": "Proposition de rectification chez Hydra",
+      "context": "Vous auditez les comptes au 31/12/N de la SAS Hydra, distributeur de matériel médical.\nSeuil de signification : 45 000 € ; seuil des anomalies manifestement insignifiantes : 2 000 €.\nUne vérification de comptabilité portant sur N−2 s'est achevée en octobre N.\nLe 20/11/N, Hydra a reçu une proposition de rectification : l'administration remet en cause la déduction de 60 000 € de TVA sur des factures d'un fournisseur jugées non conformes.\nLa direction conteste par écrit et n'a constitué aucune provision, estimant que « la discussion n'est pas terminée ».\nLe conseil fiscal d'Hydra, interrogé par vos soins, répond que le rappel des droits sera très probablement maintenu.\nHypothèses retenues par le conseil : intérêt de retard au taux de 0,20 % par mois, appliqué sur 24 mois ; majoration de 10 % des droits rappelés.\nLe conseil estime que l'administration n'appliquera pas de pénalité plus lourde.\nLes autres exercices non prescrits n'ont pas été vérifiés ; les achats auprès du même fournisseur se sont poursuivis en N−1 et N.",
+      "sub_questions": [
+        {
+          "id": "q1-assertions",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Quelles assertions sont principalement en jeu dans cette situation ?",
+          "options": [
+            "Existence et droits sur les créances fiscales",
+            "Exhaustivité et évaluation des passifs (provision pour impôts)",
+            "Séparation des exercices des ventes",
+            "Classification des charges de personnel"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Le risque est qu'un passif probable (rappel de TVA, intérêts et majoration) ne soit pas comptabilisé ou soit sous-évalué : exhaustivité et évaluation des provisions. Les autres options ne correspondent pas aux faits."
+        },
+        {
+          "id": "q2-provision",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez le montant de la provision pour impôts à constituer au 31/12/N au titre de la proposition de rectification sur N−2, selon les hypothèses du conseil (en euros).",
+          "expected_value": 68880,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Droits : 60 000 €. Intérêt de retard : 60 000 × 0,20 % × 24 = 2 880 €. Majoration : 60 000 × 10 % = 6 000 €. Provision = 60 000 + 2 880 + 6 000 = 68 880 €. Retenir les seuls droits (60 000 €) ou oublier la majoration (62 880 €) sous-évaluerait la provision."
+        },
+        {
+          "id": "q3-contestation",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "La contestation écrite de la direction suffit à justifier l'absence de provision.",
+          "answer": false,
+          "explanation": "Faux : la provision se fonde sur la probabilité de la sortie de ressources. Le conseil fiscal juge le maintien du rappel très probable ; la contestation ne change pas cette appréciation."
+        },
+        {
+          "id": "q4-demarche",
+          "kind": "open",
+          "points": 4,
+          "prompt": "Indiquez les procédures complémentaires à mettre en œuvre et la démarche de l'auditeur vis-à-vis de la direction.",
+          "model_answer": "L'auditeur lit la proposition de rectification et la réponse de la société, et obtient du conseil fiscal une confirmation écrite de son appréciation. Il étend ses travaux à N−1 et N : les achats auprès du même fournisseur continuant, il examine les factures correspondantes et apprécie le risque d'un rappel sur ces exercices non prescrits. L'absence de provision de 68 880 € constitue une anomalie supérieure au seuil de signification (45 000 €) : il demande à la direction de la corriger. À défaut, l'anomalie non corrigée, significative, conduit à une certification avec réserve (NEP 700), voire à un refus de certifier si les anomalies non corrigées ont une incidence significative et généralisée sur les comptes. Il obtient une déclaration écrite de la direction sur les litiges et les anomalies non corrigées (NEP 580) et vérifie l'information en annexe.",
+          "key_points": [
+            "Lecture de la proposition de rectification et confirmation écrite du conseil fiscal",
+            "Extension du risque aux exercices N−1 et N (mêmes achats auprès du fournisseur)",
+            "Anomalie de 68 880 € supérieure au seuil de signification de 45 000 € : demande de correction",
+            "Incidence sur l’opinion en cas de refus (certification avec réserve, voire refus de certifier) ; déclaration écrite de la direction (NEP 580)"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas illustre un facteur de risque fiscal majeur (proposition de rectification) et ses conséquences : appréciation de la provision pour impôts selon la probabilité de sortie de ressources, calcul des droits, intérêts et majoration, extension du risque aux exercices non vérifiés et incidence sur l'opinion si la direction refuse de corriger."
+    },
+    {
+      "id": "ue4-audit-impots-0012",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-controles-cles",
+      "difficulty": 1,
+      "tags": [
+        "contrôles clés",
+        "TVA",
+        "rapprochement"
+      ],
+      "source_ref": "NEP 315 (contrôle interne pertinent pour l’audit) ; NEP 330 (tests de procédures)",
+      "verified": true,
+      "estimated_seconds": 50,
+      "statement": "Parmi les procédures internes suivantes, laquelle constitue un contrôle clé sur l'exactitude des déclarations de TVA ?",
+      "options": [
+        "L’archivage numérique des déclarations déposées",
+        "Le paiement de la TVA par prélèvement automatique à l’échéance",
+        "L’envoi d’un courriel de rappel au comptable dix jours avant chaque échéance",
+        "Le rapprochement mensuel, avant dépôt, des comptes de TVA avec la déclaration, revu et signé par un responsable autre que le préparateur"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Le rapprochement des comptes de TVA avec la déclaration, revu par une personne indépendante du préparateur avant dépôt, permet de détecter les erreurs de montant : c'est un contrôle clé sur l'exactitude. L'archivage (option 1) assure la conservation, pas l'exactitude. Le prélèvement automatique (option 2) et le rappel d'échéance (option 3) préviennent les retards de paiement ou de dépôt, mais ne garantissent pas que le montant déclaré est juste."
+    },
+    {
+      "id": "ue4-audit-impots-0013",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "contrôles clés",
+        "paramétrage",
+        "informatique"
+      ],
+      "source_ref": "NEP 315 (contrôles généraux informatiques) ; NEP 330 (tests de procédures)",
+      "verified": true,
+      "estimated_seconds": 80,
+      "statement": "La société Cygnus facture automatiquement la TVA à partir des codes TVA paramétrés dans son ERP. L'auditeur souhaite s'appuyer sur ce contrôle automatisé pour réduire ses tests de détail sur la TVA collectée. Quelle démarche est appropriée ?",
+      "options": [
+        "Vérifier les taux paramétrés et tester les contrôles généraux informatiques sur la gestion des modifications et des accès au paramétrage pour l’exercice",
+        "Vérifier les taux paramétrés à la date de clôture uniquement, puisque l’ERP applique toujours le même calcul",
+        "S’appuyer sur le contrôle sans le tester, l’ERP étant un progiciel reconnu",
+        "Recalculer la TVA de toutes les factures de l’exercice"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Un contrôle automatisé s'exécute de façon constante tant que le paramétrage n'est pas modifié : l'auditeur vérifie le paramétrage et teste les contrôles généraux informatiques (accès, gestion des changements) pour s'assurer qu'il est resté inchangé et fiable sur toute la période. L'option 2 ne couvre pas d'éventuelles modifications en cours d'exercice. L'option 3 est contraire à la NEP 330 : le CAC ne s'appuie sur un contrôle qu'après l'avoir testé. L'option 4 est un test de détail exhaustif, qui ne relève pas de la démarche d'appui sur le contrôle visée ici."
+    },
+    {
+      "id": "ue4-audit-impots-0014",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-controles-cles",
+      "difficulty": 1,
+      "tags": [
+        "contrôles clés",
+        "calendrier fiscal",
+        "pénalités"
+      ],
+      "source_ref": "NEP 315 (composantes du contrôle interne : activités de contrôle)",
+      "verified": true,
+      "estimated_seconds": 40,
+      "statement": "Un calendrier fiscal recensant les échéances déclaratives et de paiement, suivi par le service comptable, est un contrôle préventif du risque de pénalités de retard.",
+      "answer": true,
+      "justification": "Vrai : il anticipe les échéances (acomptes d'IS, TVA, taxes locales) et prévient les dépôts ou paiements tardifs.",
+      "explanation": "Le calendrier fiscal agit avant que l'erreur se produise : c'est un contrôle préventif. Il ne garantit pas l'exactitude des montants, qui relève d'autres contrôles (rapprochements, revue des déclarations, revue du calcul de l'IS). L'auditeur le prend en compte lorsqu'il évalue le risque de pénalités non provisionnées."
+    },
+    {
+      "id": "ue4-audit-impots-0015",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "contrôles clés",
+        "TVA sur les encaissements",
+        "rapprochement"
+      ],
+      "source_ref": "CGI art. 269, 2-c (exigibilité de la TVA sur les prestations de services à l’encaissement) ; NEP 330 (réexécution d’un contrôle)",
+      "verified": true,
+      "estimated_seconds": 240,
+      "statement": "La société Draco réalise uniquement des prestations de services taxables à 20 %, sans option pour les débits : la TVA est exigible à l'encaissement. Elle n'a reçu aucun acompte et n'a constaté ni avoir ni créance irrécouvrable sur l'exercice. Pour tester le rapprochement CA / TVA déclarée, l'auditeur dispose des données de l'exercice N : CA HT comptabilisé 3 000 000 € ; créances clients TTC au 01/01/N 360 000 € et au 31/12/N 480 000 € (toutes relatives à des prestations taxables) ; TVA collectée déclarée sur l'exercice 571 000 €. Calculez l'écart entre la TVA exigible théorique et la TVA déclarée (en euros, arrondi à l'euro).",
+      "expected_value": 9000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Encaissements TTC = CA TTC − augmentation des créances = 3 000 000 × 1,20 − (480 000 − 360 000) = 3 600 000 − 120 000 = 3 480 000 €. Base HT encaissée = 3 480 000 / 1,20 = 2 900 000 €. TVA exigible théorique = 2 900 000 × 20 % = 580 000 €. Écart = 580 000 − 571 000 = 9 000 € (TVA vraisemblablement sous-déclarée). Raisonner sur le CA facturé donnerait 600 000 − 571 000 = 29 000 € ; retrancher la variation TTC sans la convertir en HT donnerait 5 000 €."
+    },
+    {
+      "id": "ue4-audit-impots-0016",
+      "type": "audit_case",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "contrôles clés",
+        "TVA",
+        "rapprochement",
+        "rotation du personnel"
+      ],
+      "source_ref": "NEP 315 ; NEP 330 (tests de procédures et procédures substantives) ; PCG comptes 44571, 44566",
+      "verified": true,
+      "estimated_seconds": 420,
+      "title": "Rapprochements de TVA interrompus chez Pégase",
+      "cycle": "impots-taxes",
+      "situation": "Vous auditez les comptes au 31/12/N de Pégase, négociant en fournitures de bureau qui vend uniquement en France, à des clients professionnels, au taux de 20 %. Le chiffre d'affaires HT s'élève à 9 600 000 €, réparti de façon régulière sur l'année. La procédure prévoit un rapprochement mensuel entre les comptes de TVA et la déclaration, revu et signé par le directeur financier avant dépôt. Lors de l'intérim, vous avez constaté que ce contrôle a fonctionné de janvier à août N. Le comptable chargé de la TVA a quitté l'entité fin août ; son remplaçant est arrivé en décembre et aucun rapprochement n'a été établi de septembre à novembre. Les déclarations de ces trois mois ont été préparées par une assistante, sans revue. Aucune modification du paramétrage TVA de l'ERP n'a eu lieu sur l'exercice.",
+      "assertions": [
+        "Exhaustivité de la TVA collectée et des dettes fiscales",
+        "Évaluation (exactitude) de la TVA à décaisser"
+      ],
+      "procedures": {
+        "options": [
+          "Réexécuter, pour septembre à novembre, le rapprochement entre la TVA collectée et déductible comptabilisée et les déclarations déposées, et analyser les écarts",
+          "Calculer une TVA collectée théorique (CA HT × 20 %) sur septembre à novembre et la comparer à la TVA déclarée",
+          "Rapprocher le solde du compte de TVA à décaisser au 31/12/N de la déclaration de décembre et de son paiement en janvier N+1",
+          "Envoyer des demandes de confirmation de solde aux principaux clients",
+          "Assister à l’inventaire physique des stocks au 31/12/N",
+          "Vérifier le calcul des amortissements des immobilisations acquises en N"
+        ],
+        "answer": [
+          0,
+          1,
+          2
+        ]
+      },
+      "risk": {
+        "options": [
+          "Faible",
+          "Modéré",
+          "Élevé"
+        ],
+        "answer": 1,
+        "rationale": "Le contrôle clé a été inopérant pendant trois mois, sur des déclarations préparées sans revue par une personne non spécialiste : le risque d'erreur sur cette période ne peut pas être réduit par le contrôle. Il reste modéré et non élevé : l'activité est simple (un seul taux, ventes uniquement en France, pas d'opérations exonérées), le paramétrage de l'ERP n'a pas changé et le contrôle a fonctionné sur huit mois. La réponse consiste à renforcer les procédures substantives sur septembre à novembre."
+      },
+      "conclusion": {
+        "model_answer": "Sur la base des procédures mises en œuvre (réexécution des rapprochements de septembre à novembre, procédure analytique sur la TVA collectée, rapprochement du solde de clôture avec la déclaration de décembre et son paiement), nous avons obtenu des éléments suffisants et appropriés sur l'exhaustivité et l'exactitude de la TVA comptabilisée et déclarée, sous réserve des écarts éventuellement identifiés et communiqués à la direction. La défaillance du contrôle de septembre à novembre est communiquée à la direction et, si elle est jugée importante, à l'organe de gouvernance.",
+        "key_points": [
+          "Confiance dans le contrôle limitée à la période janvier-août ; procédures substantives renforcées sur septembre-novembre",
+          "Assertions couvertes : exhaustivité et exactitude de la TVA",
+          "Communication de la faiblesse de contrôle interne relevée"
+        ]
+      },
+      "explanation": "Lorsqu'un contrôle clé cesse de fonctionner sur une partie de l'exercice, l'auditeur ne peut s'y appuyer que pour la période où il a été testé efficace ; pour le reste, il met en œuvre des procédures substantives (NEP 330). La réexécution des rapprochements, la TVA théorique et le rapprochement du solde de clôture répondent directement au risque. Les confirmations clients, l'inventaire et les amortissements relèvent d'autres cycles."
+    },
+    {
+      "id": "ue4-audit-impots-0017",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "preuve d’impôt",
+        "procédures analytiques"
+      ],
+      "source_ref": "NEP 520 (procédures analytiques substantives) ; PCG compte 695",
+      "verified": true,
+      "estimated_seconds": 70,
+      "statement": "L'auditeur multiplie le résultat comptable avant impôt par le taux légal d'IS, puis explique l'écart avec la charge d'IS comptabilisée par les charges non déductibles, les produits non imposables et les crédits d'impôt. Comment qualifier ce travail ?",
+      "options": [
+        "Un test de procédures sur le contrôle interne fiscal",
+        "Une procédure analytique substantive (preuve d’impôt) qui vise l’exactitude de la charge d’IS",
+        "Une confirmation externe auprès de l’administration fiscale",
+        "Une procédure d’évaluation du risque sans valeur probante"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La preuve d'impôt construit une attente (IS théorique) et analyse l'écart avec le réalisé : c'est une procédure analytique substantive au sens de la NEP 520, qui apporte des éléments sur l'exactitude de la charge d'IS. Ce n'est pas un test de procédures (option 1), qui porterait sur l'exécution d'un contrôle. Aucune demande n'est adressée à un tiers (option 3). L'option 4 est fausse : menée avec une attente précise et des écarts expliqués et corroborés, elle a une valeur probante."
+    },
+    {
+      "id": "ue4-audit-impots-0018",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-procedures-substantives",
+      "difficulty": 3,
+      "tags": [
+        "procédures substantives",
+        "impôt sur les sociétés",
+        "résultat fiscal",
+        "taux réduit"
+      ],
+      "source_ref": "CGI art. 219, I (taux normal et taux réduit des PME) ; CGI art. 145 et 216 (régime mère-fille, quote-part de frais et charges) ; CGI art. 39, 2 (sanctions non déductibles)",
+      "verified": true,
+      "estimated_seconds": 300,
+      "statement": "La SAS Aquila remplit les conditions du taux réduit d'IS des PME. Hypothèses : taux réduit de 15 % jusqu'à 42 500 € de bénéfice, taux normal de 25 % au-delà ; contributions additionnelles ignorées. Le résultat comptable avant IS de N s'élève à 620 000 € (aucune charge d'IS n'y figure). Il comprend : des amendes et pénalités de 12 000 € (non déductibles) ; une dotation à une provision non déductible de 30 000 € ; des dividendes de 100 000 € reçus d'une filiale relevant du régime mère-fille (quote-part de frais et charges de 5 % à réintégrer). Calculez l'IS dû au titre de N (en euros, arrondi à l'euro).",
+      "expected_value": 137500,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Résultat fiscal = 620 000 + 12 000 + 30 000 − 100 000 (déduction des dividendes) + 5 000 (quote-part de 5 %) = 567 000 €. IS = 42 500 × 15 % + (567 000 − 42 500) × 25 % = 6 375 + 131 125 = 137 500 €. Appliquer 25 % à tout le résultat donnerait 141 750 € ; oublier la quote-part de frais et charges donnerait 136 250 €."
+    },
+    {
+      "id": "ue4-audit-impots-0019",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "ajustement proposé",
+        "impôt sur les sociétés",
+        "charges à payer"
+      ],
+      "source_ref": "PCG comptes 695, 444, 6312, 4486 ; NEP 450 (anomalies relevées)",
+      "verified": true,
+      "estimated_seconds": 240,
+      "statement": "Lors de l'audit des comptes au 31/12/N de la société Lupus, l'auditeur constate qu'aucune charge d'IS n'a été comptabilisée. Le résultat fiscal de N, établi et vérifié, s'élève à 360 000 € ; hypothèse : taux unique de 25 %. Les acomptes versés en cours d'année ont été correctement débités au compte 444. Il constate aussi que le solde de la taxe d'apprentissage dû au titre des rémunérations de N, qui sera déclaré et payé en N+1, n'a pas été comptabilisé : masse salariale N de 2 400 000 €, taux du solde de 0,09 % (hypothèse). Le résultat fiscal indiqué tient déjà compte de la déduction de ce solde. Passez l'écriture d'ajustement proposée au 31/12/N (utilisez les comptes 695, 444, 6312 et 4486).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "695",
+          "label": "Impôts sur les bénéfices",
+          "debit": 90000,
+          "credit": 0
+        },
+        {
+          "account": "6312",
+          "label": "Taxe d’apprentissage",
+          "debit": 2160,
+          "credit": 0
+        },
+        {
+          "account": "444",
+          "label": "État — impôts sur les bénéfices",
+          "debit": 0,
+          "credit": 90000
+        },
+        {
+          "account": "4486",
+          "label": "État — charges à payer",
+          "debit": 0,
+          "credit": 2160
+        }
+      ],
+      "explanation": "IS dû = 360 000 × 25 % = 90 000 € : débit 695, crédit 444 ; les acomptes déjà débités au 444 viennent en déduction et le solde du compte représente la dette (ou la créance) nette. Solde de la taxe d'apprentissage = 2 400 000 × 0,09 % = 2 160 € : la taxe est due au titre des rémunérations de N, c'est une charge de N ; son montant n'étant pas encore liquidé, elle est enregistrée en charge à payer (4486). Créditer le 444 pour le solde de taxe d'apprentissage serait une erreur : ce compte est réservé aux impôts sur les bénéfices."
+    },
+    {
+      "id": "ue4-audit-impots-0020",
+      "type": "audit_case",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "crédit d’impôt recherche",
+        "existence"
+      ],
+      "source_ref": "NEP 330 ; NEP 500 (existence) ; NEP 620 (utilisation des travaux d’un expert) ; CGI art. 244 quater B (crédit d’impôt recherche)",
+      "verified": true,
+      "estimated_seconds": 420,
+      "title": "Premier crédit d’impôt recherche chez Orca",
+      "cycle": "impots-taxes",
+      "situation": "Vous auditez les comptes au 31/12/N de la SAS Orca, éditeur de logiciels. Pour la première fois, Orca a comptabilisé un crédit d'impôt recherche (CIR) de 420 000 €, présenté en créance sur l'État. Le résultat avant impôt s'élève à 1 050 000 € ; le seuil de signification est fixé à 60 000 €. Le dossier a été préparé par un cabinet de conseil rémunéré à 25 % du crédit obtenu. Les dépenses retenues sont pour l'essentiel des salaires d'ingénieurs, dont le temps passé sur les projets éligibles est estimé à 70 % de leur temps total ; aucun relevé de temps n'existe. Aucun rescrit n'a été demandé à l'administration.",
+      "assertions": [
+        "Existence de la créance de CIR",
+        "Évaluation de la créance de CIR"
+      ],
+      "procedures": {
+        "options": [
+          "Examiner le dossier technique justifiant le caractère de recherche des projets retenus et, si nécessaire, recourir à un expert",
+          "Rapprocher les salaires retenus des bulletins de paie et apprécier la justification du taux de 70 % de temps consacré (entretiens, plannings, livrables)",
+          "Recalculer le crédit à partir des dépenses éligibles retenues et des taux applicables, et le rapprocher de la déclaration spécifique déposée",
+          "Envoyer des demandes de confirmation aux principaux clients d’Orca",
+          "Assister à l’inventaire physique du matériel informatique",
+          "Vérifier le lettrage des comptes fournisseurs"
+        ],
+        "answer": [
+          0,
+          1,
+          2
+        ]
+      },
+      "risk": {
+        "options": [
+          "Faible",
+          "Modéré",
+          "Élevé"
+        ],
+        "answer": 2,
+        "rationale": "Le CIR représente 40 % du résultat avant impôt et sept fois le seuil de signification. C'est une première année, le conseil a un intérêt direct à maximiser le crédit (rémunération au résultat), l'éligibilité des projets relève d'un jugement technique et le temps consacré repose sur une estimation non documentée. Ces faits justifient un risque élevé sur l'existence et l'évaluation de la créance."
+      },
+      "conclusion": {
+        "model_answer": "Sur la base des procédures mises en œuvre (examen du dossier technique, contrôle des salaires et de la justification du temps consacré, recalcul du crédit), nous avons obtenu des éléments suffisants et appropriés sur l'existence et l'évaluation de la créance de CIR, sous réserve des ajustements éventuellement identifiés et communiqués à la direction. À défaut de justification suffisante du temps consacré, la part non justifiée du crédit constitue une anomalie à évaluer au regard du seuil de signification.",
+        "key_points": [
+          "Procédures réalisées : éligibilité des projets, assiette (salaires et temps), recalcul",
+          "Assertions couvertes : existence et évaluation de la créance",
+          "Traitement de la part non justifiée comme anomalie au regard du seuil de signification"
+        ]
+      },
+      "explanation": "Les procédures pertinentes testent l'éligibilité des projets (existence), l'assiette et le temps consacré (évaluation) et le calcul du crédit. Les confirmations clients, l'inventaire du matériel et le lettrage fournisseurs ne répondent pas au risque. Le risque est élevé compte tenu du poids du crédit, de l'incitation du conseil et du caractère non documenté de l'estimation de temps."
+    },
+    {
+      "id": "ue4-audit-impots-0021",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-procedures-substantives",
+      "difficulty": 3,
+      "tags": [
+        "procédures substantives",
+        "impôt sur les sociétés",
+        "TVA",
+        "ajustement proposé"
+      ],
+      "source_ref": "NEP 520 ; NEP 450 (anomalies relevées) ; PCG comptes 444, 695, 44571 ; CGI art. 39, 4 (amortissements excédentaires des véhicules de tourisme)",
+      "verified": true,
+      "estimated_seconds": 840,
+      "title": "Revue des comptes fiscaux de Kappa",
+      "context": "Vous auditez les comptes au 31/12/N de la SA Kappa, fabricant de pièces mécaniques (TVA 20 %, toutes ses ventes sont taxables en France).\nSeuil de signification : 40 000 € ; seuil des anomalies manifestement insignifiantes : 2 000 €.\nLa société ne remplit pas les conditions du taux réduit ; hypothèse : taux unique d'IS de 25 %, contributions additionnelles ignorées.\nRésultat comptable avant IS : 410 000 € ; aucune charge d'IS n'a été comptabilisée.\nRéintégrations fiscales identifiées : amendes 6 000 € ; amortissements excédentaires de véhicules de tourisme 14 000 €. Aucune déduction.\nCompte 444 au 31/12/N : solde débiteur de 120 000 €, correspondant aux quatre acomptes versés en N.\nCA HT de N : 8 500 000 €. Cumul des crédits du compte 44571 : 1 682 000 €.\nVos investigations sur l'écart de TVA montrent que des factures de N, émises à des clients professionnels français, ont été saisies avec un code TVA à 0 % par erreur ; les clients n'ont pas été facturés de cette TVA.",
+      "sub_questions": [
+        {
+          "id": "q1-is-du",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez l'IS dû au titre de N (en euros).",
+          "expected_value": 107500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Résultat fiscal = 410 000 + 6 000 + 14 000 = 430 000 €. IS = 430 000 × 25 % = 107 500 €. Calculer sur le résultat comptable donnerait 102 500 €."
+        },
+        {
+          "id": "q2-ecriture",
+          "kind": "journal_entry",
+          "points": 2,
+          "prompt": "Passez l'écriture d'ajustement proposée au titre de l'IS au 31/12/N.",
+          "date": "31/12/N",
+          "entries": [
+            {
+              "account": "695",
+              "label": "Impôts sur les bénéfices",
+              "debit": 107500,
+              "credit": 0
+            },
+            {
+              "account": "444",
+              "label": "État — impôts sur les bénéfices",
+              "debit": 0,
+              "credit": 107500
+            }
+          ],
+          "explanation": "L'IS dû se constate au débit du 695 par le crédit du 444, où il s'impute sur les acomptes déjà débités."
+        },
+        {
+          "id": "q3-solde-444",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Après cet ajustement, quel est le montant du solde du compte 444 (en euros, en valeur absolue) ? Il s'agit d'un solde débiteur ou créditeur : à vous de l'analyser.",
+          "expected_value": 12500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Solde = 120 000 (débit) − 107 500 (crédit) = 12 500 € débiteur : les acomptes excèdent l'IS dû, Kappa détient une créance sur l'État, présentée à l'actif (autres créances) sans compensation avec ses dettes fiscales."
+        },
+        {
+          "id": "q4-tva-conclusion",
+          "kind": "open",
+          "points": 5,
+          "prompt": "Chiffrez l'écart de TVA, indiquez son incidence et la régularisation possible, puis récapitulez les anomalies au regard des seuils et la démarche de l'auditeur.",
+          "model_answer": "TVA théorique = 8 500 000 × 20 % = 1 700 000 € ; écart = 1 700 000 − 1 682 000 = 18 000 € de TVA non collectée. Kappa reste redevable de cette TVA envers l'État : la dette fiscale est sous-évaluée de 18 000 €. Les clients étant des professionnels pouvant déduire la TVA, la régularisation passe par l'émission de factures rectificatives : débit 411, crédit 44571 pour 18 000 €, sans incidence sur le résultat si la TVA est récupérée auprès des clients ; à défaut de refacturation, la TVA serait une charge pour Kappa. Anomalies : IS non comptabilisé de 107 500 € (résultat surévalué ; créance d'IS présentée pour 120 000 € au lieu de 12 500 € ; bien au-delà du seuil de signification de 40 000 €) et TVA non collectée de 18 000 € (inférieure au seuil de signification mais supérieure au seuil de 2 000 € : elle est cumulée avec les autres anomalies). L'auditeur demande la correction des deux ; si l'IS n'était pas comptabilisé, l'anomalie significative conduirait à une certification avec réserve, voire à un refus de certifier si son incidence était jugée généralisée (NEP 700).",
+          "key_points": [
+            "Écart de TVA : 1 700 000 − 1 682 000 = 18 000 €, dette envers l’État sous-évaluée",
+            "Régularisation par factures rectificatives (411 / 44571), sans incidence sur le résultat si refacturée",
+            "IS omis de 107 500 € : anomalie significative (> 40 000 €)",
+            "Demande de correction ; incidence sur l’opinion en cas de refus"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Le cas enchaîne les procédures substantives du cycle : recalcul de l'IS à partir du résultat fiscal, écriture 695 / 444, analyse du solde du 444 (créance car acomptes supérieurs à l'IS dû), procédure analytique sur la TVA collectée et évaluation des anomalies au regard des seuils (NEP 450)."
+    },
+    {
+      "id": "ue4-audit-impots-0022",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-pieges",
+      "difficulty": 1,
+      "tags": [
+        "pièges",
+        "acomptes d’IS",
+        "compte 444"
+      ],
+      "source_ref": "PCG compte 444 (État — impôts sur les bénéfices) ; CGI art. 1668 (acomptes d’IS)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Comment se comptabilise le versement d'un acompte d'impôt sur les sociétés en cours d'exercice ?",
+      "options": [
+        "Débit 695, crédit 512",
+        "Débit 6351, crédit 512",
+        "Débit 444, crédit 512",
+        "Débit 4486, crédit 512"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'acompte est une avance sur l'impôt de l'exercice : il se porte au débit du 444, qui sera crédité de l'IS dû à la clôture (débit 695). Le débiter en 695 (option 1) doublerait la charge lors de la comptabilisation de l'IS dû. Le 6351 (option 2) enregistre les impôts directs autres que l'IS. Le 4486 (option 4) sert aux charges à payer d'impôts non encore liquidés, pas aux acomptes."
+    },
+    {
+      "id": "ue4-audit-impots-0023",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-pieges",
+      "difficulty": 2,
+      "tags": [
+        "pièges",
+        "non-compensation",
+        "présentation"
+      ],
+      "source_ref": "C. com. art. L123-19 (interdiction de compensation) ; PCG compte 444",
+      "verified": true,
+      "estimated_seconds": 70,
+      "statement": "Au 31/12/N, après comptabilisation de l'IS dû, le compte 444 de la société Ibis présente un solde débiteur de 15 000 € (acomptes supérieurs à l'IS dû). Ibis a par ailleurs une TVA à décaisser de 40 000 €. La direction souhaite présenter au passif une dette fiscale nette de 25 000 €. Quelle est la position de l'auditeur ?",
+      "options": [
+        "Il accepte, les deux montants concernant le même créancier, l’État",
+        "Il demande de présenter la créance d’IS de 15 000 € à l’actif et la dette de TVA de 40 000 € au passif, sans compensation",
+        "Il demande d’annuler la créance d’IS, qui ne sera remboursée qu’après la liquidation de l’impôt",
+        "Il accepte la compensation à condition qu’elle soit mentionnée dans l’annexe"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le Code de commerce interdit la compensation entre postes d'actif et de passif : la créance d'IS (excédent d'acomptes) figure à l'actif et la dette de TVA au passif. Le fait que l'État soit le même interlocuteur (option 1) ne justifie pas la compensation. La créance existe à la clôture et ne doit pas être annulée (option 3) : son remboursement ou son imputation suit la liquidation. Une mention en annexe (option 4) ne régularise pas une présentation contraire au principe de non-compensation."
+    },
+    {
+      "id": "ue4-audit-impots-0024",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-pieges",
+      "difficulty": 3,
+      "tags": [
+        "pièges",
+        "TVA",
+        "rapprochement",
+        "acomptes reçus"
+      ],
+      "source_ref": "CGI art. 269, 2-a et 2-c (exigibilité de la TVA) ; NEP 520",
+      "verified": true,
+      "estimated_seconds": 90,
+      "statement": "La société Tucana rapproche la TVA collectée déclarée sur l'exercice de la TVA théorique calculée sur son chiffre d'affaires comptable taxable. La TVA déclarée est supérieure de 24 000 € à la TVA théorique. Lequel des éléments suivants peut expliquer un écart dans ce sens ?",
+      "options": [
+        "Des livraisons intracommunautaires exonérées, incluses à tort dans le calcul de la TVA théorique",
+        "Une augmentation, sur l’exercice, des créances clients relatives à des prestations de services dont la TVA est exigible à l’encaissement",
+        "Des exportations hors Union européenne exonérées, incluses à tort dans le calcul de la TVA théorique",
+        "Des acomptes reçus en fin d’exercice sur des prestations de services qui seront réalisées et facturées l’exercice suivant"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Pour les prestations de services, la TVA est exigible à l'encaissement, y compris celui d'un acompte : elle est déclarée alors que le chiffre d'affaires n'est pas encore comptabilisé, d'où une TVA déclarée supérieure à la TVA théorique. Les options 1 et 3 gonfleraient la TVA théorique (opérations exonérées comptées à tort) et expliqueraient une TVA déclarée inférieure à la théorique. L'option 2 retarde l'exigibilité : la TVA des prestations non encaissées n'est pas encore déclarée, ce qui produit aussi un écart dans l'autre sens."
+    },
+    {
+      "id": "ue4-audit-impots-0025",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-pieges",
+      "difficulty": 2,
+      "tags": [
+        "pièges",
+        "intégration fiscale"
+      ],
+      "source_ref": "CGI art. 223 A (intégration fiscale : société mère seule redevable)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Dans un groupe fiscalement intégré, chaque filiale intégrée reste redevable de son propre impôt sur les sociétés envers le Trésor.",
+      "answer": false,
+      "justification": "Faux : la société mère est seule redevable de l'IS calculé sur le résultat d'ensemble du groupe.",
+      "explanation": "Selon l'article 223 A du CGI, la société mère se constitue seule redevable de l'IS dû sur le résultat d'ensemble. Les filiales versent à la mère la contribution prévue par la convention d'intégration (souvent l'IS qu'elles auraient payé sans intégration), enregistrée en compte courant et non au compte 444. L'auditeur de la filiale vérifie l'application de la convention ; celui de la mère vérifie le calcul de l'IS du groupe et le traitement de l'économie ou de la charge d'intégration."
+    },
+    {
+      "id": "ue4-audit-impots-0026",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-pieges",
+      "difficulty": 2,
+      "tags": [
+        "pièges",
+        "report en arrière des déficits",
+        "carry-back"
+      ],
+      "source_ref": "CGI art. 220 quinquies (report en arrière des déficits) ; PCG comptes 444, 699",
+      "verified": true,
+      "estimated_seconds": 180,
+      "statement": "La société Mensa clôture N avec un déficit fiscal de 1 300 000 €. Elle opte pour le report en arrière sur le bénéfice de N−1, qui s'élevait à 900 000 € (hypothèses : aucune distribution, bénéfice d'imputation égal au bénéfice de N−1 ; plafond légal de 1 000 000 € ; taux d'IS à retenir pour le calcul de la créance : 25 %). Calculez le montant de la créance de report en arrière à comptabiliser au 31/12/N (en euros).",
+      "expected_value": 225000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Déficit imputable = min(1 300 000 ; 900 000 ; 1 000 000) = 900 000 €. Créance = 900 000 × 25 % = 225 000 €, comptabilisée au débit du 444 par le crédit du 699. Retenir le plafond de 1 000 000 € sans le limiter au bénéfice de N−1 donnerait 250 000 € ; retenir tout le déficit donnerait 325 000 €. Le solde du déficit (400 000 €) reste reportable en avant."
+    },
+    {
+      "id": "ue4-audit-impots-0027",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "impots-taxes-pieges",
+      "difficulty": 3,
+      "tags": [
+        "pièges",
+        "intégration fiscale",
+        "économie d’impôt"
+      ],
+      "source_ref": "CGI art. 223 A (intégration fiscale) ; avis du CNC relatif à la comptabilisation de l'IS dans le régime de l'intégration fiscale ; NEP 500 ; PCG compte 695",
+      "verified": true,
+      "estimated_seconds": 720,
+      "title": "Groupe fiscalement intégré Altaïr",
+      "context": "Vous auditez les comptes individuels au 31/12/N de la SA Altaïr, société mère d'un groupe fiscalement intégré depuis plusieurs années.\nAltaïr détient 98 % de Bételgeuse et 100 % de Castor ; les deux filiales sont membres du groupe intégré.\nLa convention d'intégration prévoit que chaque filiale verse à la mère l'IS qu'elle aurait payé en l'absence d'intégration ; une filiale déficitaire ne verse rien et conserve le droit d'imputer ses déficits sur ses bénéfices futurs dans le calcul de sa contribution. La convention ne prévoit aucune indemnisation des filiales à leur sortie du groupe.\nRésultats fiscaux de N : Altaïr 300 000 € ; Bételgeuse déficit de 120 000 € ; Castor 200 000 €.\nAucune autre correction n'affecte le résultat d'ensemble. Hypothèse : taux unique d'IS de 25 %, contributions additionnelles ignorées.\nLe comptable d'Altaïr a enregistré en 695 la totalité de l'IS du groupe et n'a constaté aucune contribution de Castor.",
+      "sub_questions": [
+        {
+          "id": "q1-redevable",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Qui est redevable envers le Trésor de l'IS calculé sur le résultat d'ensemble ?",
+          "options": [
+            "Chaque société, à hauteur de son propre résultat fiscal",
+            "Altaïr seule",
+            "Altaïr et Castor, seules sociétés bénéficiaires",
+            "Les filiales, solidairement"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "La société mère se constitue seule redevable de l'IS du groupe (CGI art. 223 A) ; les filiales lui versent leur contribution selon la convention."
+        },
+        {
+          "id": "q2-is-groupe",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez l'IS dû par le groupe au titre de N (en euros).",
+          "expected_value": 95000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Résultat d'ensemble = 300 000 − 120 000 + 200 000 = 380 000 € ; IS du groupe = 380 000 × 25 % = 95 000 €."
+        },
+        {
+          "id": "q3-economie",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez l'économie d'impôt liée à l'intégration fiscale, constatée chez Altaïr au titre de N (en euros).",
+          "expected_value": 30000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "IS individuels : Altaïr 300 000 × 25 % = 75 000 € ; Castor 200 000 × 25 % = 50 000 € ; Bételgeuse 0. Total 125 000 €. Économie = 125 000 − 95 000 = 30 000 €, soit l'IS correspondant au déficit de Bételgeuse (120 000 × 25 %)."
+        },
+        {
+          "id": "q4-anomalie-risque",
+          "kind": "open",
+          "points": 4,
+          "prompt": "Analysez la comptabilisation retenue par Altaïr et le point de vigilance lié à l'économie d'intégration.",
+          "model_answer": "Altaïr a raison de constater en dette envers l'État l'IS du groupe (95 000 €), dont elle est seule redevable. Mais elle doit aussi enregistrer en produit (en diminution de sa charge d'impôt) les contributions dues par les filiales bénéficiaires : Castor lui doit 50 000 €, à comptabiliser en compte courant d'intégration. Sa charge nette d'impôt est donc de 95 000 − 50 000 = 45 000 €, soit son IS individuel (75 000 €) diminué de l'économie d'intégration (30 000 €). Faute de constater la contribution de Castor, la charge d'impôt d'Altaïr est surévaluée de 50 000 €. Point de vigilance : l'économie de 30 000 € provient du déficit de Bételgeuse, que celle-ci pourra imputer sur ses bénéfices futurs dans le calcul de sa contribution ; Altaïr supportera alors un IS de groupe supérieur aux contributions reçues. L'auditeur vérifie le traitement retenu (provision si la restitution de l'économie est jugée probable) et l'information donnée en annexe sur le régime d'intégration.",
+          "key_points": [
+            "IS du groupe (95 000 €) dû par la mère seule",
+            "Contribution de Castor (50 000 €) à constater en produit d’intégration, contrepartie compte courant",
+            "Charge nette d’Altaïr = 45 000 € ; charge comptabilisée surévaluée de 50 000 €",
+            "Économie liée au déficit de Bételgeuse susceptible de se retourner : traitement et annexe à vérifier"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "L'intégration fiscale est un piège classique : la mère paie l'IS du groupe mais reçoit les contributions des filiales selon la convention ; l'économie d'intégration née des déficits d'une filiale peut se retourner lorsque celle-ci redevient bénéficiaire. Le cas fait calculer l'IS du groupe et l'économie, puis analyser la comptabilisation chez la mère."
+    }
+  ]
+}

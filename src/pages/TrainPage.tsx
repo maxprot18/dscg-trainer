@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom'
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { exercises, taxonomy } from '@/content/load'
-import type { UeId } from '@/content/schema'
+import { taxonomy, useExercises } from '@/content/load'
+import type { Exercise, UeId } from '@/content/schema'
 import { QUICK_SESSION_SECONDS, QUICK_SESSION_SIZE } from '@/engine/session'
 import { newSeed, sessionSearch } from '@/engine/sessionConfig'
 
@@ -12,6 +12,12 @@ const selectClass =
   'border-input bg-background focus-visible:ring-ring/50 h-10 w-full rounded-md border px-3 text-sm outline-none focus-visible:ring-[3px]'
 
 export function TrainPage() {
+  const exercises = useExercises()
+  if (!exercises) return <p className="text-muted-foreground">Chargement des exercices…</p>
+  return <TrainChooser exercises={exercises} />
+}
+
+function TrainChooser({ exercises }: { exercises: Exercise[] }) {
   const navigate = useNavigate()
   const counts = useMemo(() => {
     const map = new Map<string, number>()
@@ -22,7 +28,7 @@ export function TrainPage() {
       add(`notion:${e.notion}`)
     }
     return map
-  }, [])
+  }, [exercises])
   const count = (key: string) => counts.get(key) ?? 0
 
   const firstUe = taxonomy.ues.find((u) => count(u.id) > 0)?.id ?? taxonomy.ues[0].id

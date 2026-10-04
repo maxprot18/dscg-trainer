@@ -1,0 +1,201 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-mission-informatique-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "audit-environnement-informatise",
+      "difficulty": 1,
+      "tags": [
+        "contrôles généraux informatiques",
+        "habilitations",
+        "NEP 315"
+      ],
+      "source_ref": "NEP 315 (prise de connaissance du contrôle interne et du système d'information)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "explanation": "Les contrôles généraux informatiques portent sur l'environnement dans lequel fonctionnent les applications : gestion des accès et des habilitations, gestion des changements de programmes, exploitation (sauvegardes, traitements planifiés). La gestion des droits d'accès en est l'exemple type. Le blocage d'une facture non conforme à la commande, le calcul automatique de la TVA et le contrôle de vraisemblance d'une date sont des contrôles applicatifs, intégrés à une application et portant sur des transactions.",
+      "statement": "Parmi les contrôles suivants, lequel est un contrôle général informatique ?",
+      "options": [
+        "Le blocage par le progiciel d'une facture fournisseur dont le montant diffère de la commande",
+        "La procédure de création, de modification et de revue périodique des droits d'accès des utilisateurs",
+        "Le calcul automatique de la TVA sur chaque facture de vente",
+        "Le contrôle de vraisemblance qui refuse la saisie d'une date d'échéance antérieure à la date de facture"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ue4-mission-informatique-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "audit-environnement-informatise",
+      "difficulty": 3,
+      "tags": [
+        "contrôles généraux informatiques",
+        "gestion des changements",
+        "NEP 330",
+        "états produits par le système"
+      ],
+      "source_ref": "NEP 315 (système d'information) ; NEP 330 (réponses aux risques évalués) ; NEP 500 (fiabilité des informations produites par l'entité)",
+      "verified": true,
+      "estimated_seconds": 90,
+      "explanation": "La faiblesse de la gestion des changements ne permet plus de présumer que le programme qui produit l'état fonctionne comme prévu. Selon la NEP 500, lorsque le CAC utilise une information produite par l'entité, il apprécie si elle est suffisamment fiable, notamment exhaustive et exacte : il teste donc l'état (logique d'extraction, rapprochement des totaux, test de détail des dates de mouvement) ou le reconstitue lui-même à partir des données brutes. L'automatisation ne dispense pas de ces travaux quand les contrôles généraux sont défaillants (option 1). La faiblesse justifie des procédures adaptées, pas l'abandon du contrôle (option 2) ni une réserve, qui n'intervient que si le CAC ne peut finalement pas collecter d'éléments suffisants et appropriés (option 3).",
+      "statement": "Chez Zinc SA, le commissaire aux comptes prévoyait de s'appuyer sur un état des stocks à rotation lente, édité par le progiciel, pour tester la dépréciation des stocks. Il apprend que les modifications de programmes sont développées et mises en production par la même personne, sans test ni validation. Quelle est la réponse la plus appropriée ?",
+      "options": [
+        "Utiliser l'état sans travaux complémentaires, puisqu'il est produit automatiquement par le progiciel",
+        "Renoncer à tout contrôle de la dépréciation des stocks, faute d'information fiable",
+        "Formuler une réserve pour limitation dès la planification",
+        "Vérifier l'exhaustivité et l'exactitude de l'état (paramètres de l'édition, rapprochement des totaux avec la balance, test de la date de dernier mouvement sur un échantillon) ou recourir à un retraitement indépendant des données, avant de l'utiliser"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ue4-mission-informatique-0003",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "audit-environnement-informatise",
+      "difficulty": 2,
+      "tags": [
+        "analyse de données",
+        "doublons",
+        "achats",
+        "faux positifs"
+      ],
+      "source_ref": "NEP 500 (techniques de contrôle) ; NEP 330 (procédures de substance) ; LPF art. L. 47 A (fichier des écritures comptables)",
+      "verified": true,
+      "estimated_seconds": 200,
+      "explanation": "Fournisseur B : deux factures distinctes de deux mois différents, c'est un faux positif. Fournisseur D : le doublon a déjà été extourné en N, il n'affecte plus les comptes. Restent A et C, dont la seconde saisie surévalue les achats : (12 000 + 7 200) ÷ 1,2 = 16 000 € HT. La TVA déductible est surévaluée de 3 200 €. Pour A, la contrepartie est une dette fournisseur surévaluée ; pour C, le double paiement crée une créance sur le fournisseur à réclamer. Erreurs classiques : retenir les quatre cas (27 600 ÷ 1,2 = 23 000 €) ou raisonner en TTC (19 200 €). Les exceptions d'un script sont des anomalies potentielles, à analyser une à une avant de conclure.",
+      "statement": "Sur le fichier des écritures comptables de Titane SAS (exercice N), le commissaire aux comptes recherche les factures fournisseurs saisies en double (même fournisseur, même montant). Le script remonte quatre cas, qu'il analyse (montants TTC, TVA 20 %) :\n- fournisseur A : facture F-1021 de 12 000 € saisie deux fois, payée une fois ;\n- fournisseur B : deux loyers mensuels de 4 800 € (janvier et février), références distinctes ;\n- fournisseur C : facture C-778 de 7 200 € saisie deux fois et payée deux fois ;\n- fournisseur D : facture D-55 de 3 600 € saisie deux fois, la seconde saisie ayant été annulée par une écriture d'extourne en N.\nCalculez, en euros, la surévaluation des achats HT de l'exercice N résultant des doublons non corrigés.",
+      "expected_value": 16000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0
+    },
+    {
+      "id": "ue4-mission-informatique-0004",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "audit-environnement-informatise",
+      "difficulty": 2,
+      "tags": [
+        "analyse de données",
+        "avoirs à établir",
+        "séparation des exercices",
+        "ajustement proposé"
+      ],
+      "source_ref": "NEP 330 (procédures de substance) ; NEP 450 (anomalies relevées) ; PCG, comptes 4198, 44587 et 709 (règl. ANC 2014-03)",
+      "verified": true,
+      "estimated_seconds": 180,
+      "explanation": "La ristourne est acquise au client au titre du chiffre d'affaires de N : elle réduit le produit de N, même si l'avoir est émis en N+1 (indépendance des exercices). Montant : 2 % × 1 250 000 = 25 000 € HT, enregistré au débit du compte 709. La TVA correspondante (25 000 × 20 % = 5 000 €) sera régularisée à l'émission de l'avoir : elle est portée au débit du compte 44587. La dette envers le client (30 000 € TTC) figure au crédit du compte 4198. L'extraction exhaustive des avoirs postérieurs à la clôture est une application de l'analyse de données au contrôle de la séparation des exercices.",
+      "statement": "Le commissaire aux comptes de Nickel SA (clôture au 31/12/N) extrait du progiciel tous les avoirs émis en janvier N+1 et les rapproche des factures d'origine. Il relève un avoir de 25 000 € HT (TVA 20 %) émis le 18/01/N+1 au client Epsilon : il correspond à la ristourne de fin d'année prévue au contrat (2 % du chiffre d'affaires annuel HT, soit 2 % × 1 250 000 €), acquise au client au titre de N et non comptabilisée en N. Rédigez l'écriture d'ajustement proposée au 31/12/N. Utilisez les comptes 709, 44587 et 4198.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "709",
+          "label": "Rabais, remises et ristournes accordés par l’entreprise",
+          "debit": 25000,
+          "credit": 0
+        },
+        {
+          "account": "44587",
+          "label": "Taxes sur le chiffre d’affaires sur factures à établir",
+          "debit": 5000,
+          "credit": 0
+        },
+        {
+          "account": "4198",
+          "label": "Clients — rabais, remises, ristournes à accorder et autres avoirs à établir",
+          "debit": 0,
+          "credit": 30000
+        }
+      ]
+    },
+    {
+      "id": "ue4-mission-informatique-0005",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "audit-environnement-informatise",
+      "difficulty": 3,
+      "tags": [
+        "NEP 315",
+        "NEP 330",
+        "contrôles généraux informatiques",
+        "FEC",
+        "tests des écritures"
+      ],
+      "source_ref": "NEP 315 et NEP 330 (contrôle interne et système d'information, réponses aux risques) ; NEP 240 (tests des écritures) ; NEP 265 ; NEP 530 ; LPF art. L. 47 A",
+      "verified": true,
+      "estimated_seconds": 780,
+      "explanation": "Le cas relie les contrôles généraux informatiques (NEP 315 et 330), l'analyse de données sur le FEC, les tests des écritures en réponse au risque de contournement des contrôles (NEP 240) et la communication des faiblesses (NEP 265). Une sélection par critères sur toute la population ne donne pas lieu à extrapolation.",
+      "title": "Cobalt SAS : contrôles généraux et analyse du FEC",
+      "context": "Cobalt SAS (clôture au 31/12/N, chiffre d'affaires 54 M€) utilise un progiciel de gestion intégré pour les achats, les ventes et la comptabilité. Le seuil de signification est fixé à 400 000 €.\nRevue des contrôles généraux informatiques : trois développeurs du service informatique disposent de droits d'accès à l'environnement de production ; aucune revue périodique des habilitations n'a été réalisée en N. Le progiciel bloque en principe le paiement d'une facture fournisseur sans bon de réception rapproché (contrôle automatisé).\nAnalyse de données : le commissaire aux comptes a obtenu le fichier des écritures comptables (FEC) de l'exercice et rapproché ses totaux de la balance générale. Un script a sélectionné les écritures manuelles passées entre le 01/01/N+1 et le 31/01/N+1 avec une date comptable au 31/12/N, d'un montant supérieur à 20 000 €. Quatre écritures, saisies par le directeur financier, ont été examinées :\n- E1 : facture à établir de 48 000 € (crédit 706), sans contrat ni prestation identifiée ;\n- E2 : facture à établir de 36 000 € (crédit 706), sans justificatif ;\n- E3 : reprise d'une charge à payer de 21 000 € (débit 4286, crédit 6226), alors que les honoraires correspondants ont été facturés en février N+1 ;\n- E4 : dotation complémentaire à la provision pour litige de 60 000 €, justifiée par un courrier d'avocat.",
+      "sub_questions": [
+        {
+          "id": "controle-automatise",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Quelle conséquence la faiblesse des contrôles généraux informatiques a-t-elle sur le contrôle automatisé de rapprochement facture / bon de réception ?",
+          "options": [
+            "Aucune : un contrôle automatisé fonctionne de manière constante, un test sur une seule facture suffit",
+            "Le commissaire aux comptes doit émettre une opinion avec réserve pour limitation",
+            "Le commissaire aux comptes ne peut s'appuyer sur ce contrôle sans travaux complémentaires ; à défaut, il renforce ses procédures de substance sur les achats",
+            "Le commissaire aux comptes doit faire auditer le progiciel par son éditeur"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "L'accès des développeurs à la production et l'absence de revue des habilitations ne garantissent plus que le programme n'a pas été modifié ni contourné pendant l'exercice : le test d'un contrôle automatisé sur un cas n'est probant que si les contrôles généraux sont efficaces. Une faiblesse de contrôle interne n'est pas une limitation de l'audit : le CAC adapte ses procédures."
+        },
+        {
+          "id": "incidence-resultat",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez, en euros, la surévaluation du résultat avant impôt de l'exercice N résultant des écritures injustifiées.",
+          "expected_value": 105000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "E1 et E2 créent des produits sans fondement : 48 000 + 36 000 = 84 000 €. E3 annule à tort une charge de l'exercice (les honoraires facturés en N+1 confirment la dette) : 21 000 €. E4 est justifiée et diminue le résultat à juste titre : elle est écartée. Surévaluation : 84 000 + 21 000 = 105 000 €. Erreurs classiques : retrancher E4 (45 000 €) ou l'ajouter (165 000 €)."
+        },
+        {
+          "id": "extrapolation",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "Les écritures ayant été sélectionnées par un script sur l'ensemble du FEC, le commissaire aux comptes doit extrapoler les anomalies relevées à toute la population des écritures.",
+          "answer": false,
+          "explanation": "La sélection par critères sur la totalité de la population est une sélection d'éléments spécifiques, non un sondage : les anomalies relevées ne s'extrapolent pas. En revanche, leur nature conduit à étendre les investigations."
+        },
+        {
+          "id": "suite",
+          "kind": "open",
+          "points": 4,
+          "prompt": "Quelles suites le commissaire aux comptes donne-t-il à ces constats ?",
+          "model_answer": "Les écritures E1 à E3, saisies par le directeur financier sans justificatif et toutes favorables au résultat, sont un indice de contournement des contrôles par la direction et d'informations financières mensongères (NEP 240) : le CAC réévalue le risque de fraude, étend les tests des écritures (autres critères, seuil plus bas, autres périodes) et revoit les estimations à la recherche d'un biais. Il demande la correction des 105 000 € et apprécie, en cumulant avec les autres anomalies, l'incidence sur l'opinion ; l'anomalie, inférieure au seuil de 400 000 €, est significative par sa nature. Il reconsidère la fiabilité des déclarations de la direction, informe la gouvernance, communique les faiblesses de contrôle interne significatives (accès des développeurs, absence de revue des habilitations, écritures manuelles non validées) conformément à la NEP 265 et apprécie si les faits doivent être révélés au procureur de la République.",
+          "key_points": [
+            "Indice de contournement des contrôles par la direction : risque de fraude réévalué, tests des écritures étendus",
+            "Demande de correction et cumul avec les autres anomalies ; caractère significatif par nature",
+            "Fiabilité des déclarations de la direction reconsidérée, information de la gouvernance",
+            "Communication des faiblesses significatives du contrôle interne (NEP 265)",
+            "Appréciation d'une éventuelle révélation de faits délictueux"
+          ]
+        }
+      ],
+      "total_points": 10
+    }
+  ]
+}

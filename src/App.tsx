@@ -1,6 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 
 import { Layout } from '@/components/Layout'
+import { CoursePage } from '@/pages/CoursePage'
 import { CoursesPage } from '@/pages/CoursesPage'
 import { HomePage } from '@/pages/HomePage'
 import { ProgressPage } from '@/pages/ProgressPage'
@@ -14,6 +15,7 @@ export function AppRoutes() {
         <Route index element={<HomePage />} />
         <Route path="entrainement" element={<TrainPage />} />
         <Route path="cours" element={<CoursesPage />} />
+        <Route path="cours/:notionId" element={<CoursePage />} />
         <Route path="progression" element={<ProgressPage />} />
         <Route path="session" element={<SessionPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />

@@ -24,6 +24,108 @@
       "source_ref": "PCG art. 622-1 s. (règl. ANC 2014-03) ; comptes 1516 et 6815",
       "verified": true,
       "estimated_seconds": 120
+    },
+    {
+      "id": "ue4-pcg-clt-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "contrats-long-terme-pcg",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "méthode à l’achèvement",
+        "travaux en cours"
+      ],
+      "statement": "La société Granit applique la méthode à l'achèvement à un contrat de construction de 18 mois, au prix de 800 000 € HT, signé le 01/07/N. Au 31/12/N, les coûts engagés s'élèvent à 300 000 € et le coût total prévisionnel à 600 000 €, soit une marge attendue de 200 000 € ; aucune facture n'a été émise. Quel est le traitement au 31/12/N ?",
+      "options": [
+        "Chiffre d'affaires de 400 000 € et marge de 100 000 €.",
+        "Travaux en cours de 300 000 € (production stockée), sans chiffre d'affaires ni marge.",
+        "Travaux en cours de 400 000 €, incluant la quote-part de marge acquise.",
+        "Aucune écriture : les coûts engagés restent en charges jusqu'à l'achèvement."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Selon la méthode à l'achèvement, ni chiffre d'affaires ni marge ne sont reconnus avant la livraison. Les coûts engagés sont neutralisés par la constatation de travaux en cours (compte 335) au coût de production, par le crédit de la variation de production stockée : 300 000 €. La première réponse décrit la méthode à l'avancement (50 % × 800 000 €). Les en-cours ne peuvent inclure de marge (troisième réponse). Laisser les coûts en charges sans en-cours fausserait le résultat de N (quatrième réponse). La marge étant positive, aucune provision n'est nécessaire.",
+      "source_ref": "PCG art. 622-1 s. (règl. ANC 2014-03) ; comptes 335 et 7133",
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-pcg-clt-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "contrats-long-terme-pcg",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "perte à terminaison",
+        "méthode à l’achèvement"
+      ],
+      "statement": "Une entreprise qui applique la méthode à l'achèvement doit constater en totalité, dès qu'elle est probable, la perte attendue à la fin d'un contrat à long terme.",
+      "answer": true,
+      "justification": "La perte à terminaison est constatée en totalité dès qu'elle est probable, quelle que soit la méthode de comptabilisation du contrat.",
+      "explanation": "La méthode à l'achèvement diffère la reconnaissance du chiffre d'affaires et de la marge, mais pas celle des pertes : par prudence, la perte à terminaison probable est constatée immédiatement et en totalité, d'abord par dépréciation des travaux en cours, puis par une provision pour pertes sur contrats (compte 1516) pour le surplus.",
+      "source_ref": "PCG art. 622-1 s. (règl. ANC 2014-03) ; compte 1516",
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-pcg-clt-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "contrats-long-terme-pcg",
+      "verified": true,
+      "difficulty": 3,
+      "tags": [
+        "méthode à l’avancement",
+        "révision d’estimation",
+        "marge"
+      ],
+      "statement": "La société Aster applique la méthode à l'avancement (avancement mesuré par les coûts engagés) à un contrat au prix ferme de 2 400 000 € HT.\n- Au 31/12/N : coûts engagés cumulés 600 000 € ; coût total estimé 2 000 000 €.\n- Au 31/12/N+1 : coûts engagés cumulés 1 540 000 € ; coût total réestimé 2 200 000 €.\nQuel est le résultat (marge) dégagé par le contrat au titre de l'exercice N+1 (en euros) ?",
+      "expected_value": 20000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "N : avancement 600 000 / 2 000 000 = 30 % ; chiffre d'affaires 30 % × 2 400 000 = 720 000 € ; marge N = 720 000 − 600 000 = 120 000 €. N+1 : avancement cumulé 1 540 000 / 2 200 000 = 70 % ; chiffre d'affaires cumulé 70 % × 2 400 000 = 1 680 000 € ; marge cumulée 1 680 000 − 1 540 000 = 140 000 €. Marge N+1 = 140 000 − 120 000 = 20 000 € (chiffre d'affaires N+1 : 960 000 € ; coûts N+1 : 940 000 €). La révision du coût total est un changement d'estimation traité en N+1, sans retraitement de N. Erreur classique : appliquer l'avancement de l'exercice (70 % − 30 % = 40 points) à la marge totale révisée (40 % × 200 000 = 80 000 €), ce qui ignore l'effet de la révision sur la marge déjà constatée en N.",
+      "source_ref": "PCG art. 622-1 s. (méthode à l'avancement, règl. ANC 2014-03)",
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue4-pcg-clt-0005",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "contrats-long-terme-pcg",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "méthode à l’avancement",
+        "factures à établir"
+      ],
+      "statement": "La société Basalte applique la méthode à l'avancement (mesuré par les coûts) à un contrat de travaux de 1 200 000 € HT signé en N. Au 31/12/N, les coûts engagés s'élèvent à 360 000 € et le coût total estimé à 960 000 €. Les situations de travaux facturées en N, déjà enregistrées au compte 704, totalisent 400 000 € HT. Passez l'écriture d'inventaire au 31/12/N permettant d'ajuster le chiffre d'affaires à l'avancement (utilisez les comptes 4181 et 704 ; on ignore la TVA).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "4181",
+          "label": "Clients – Factures à établir",
+          "debit": 50000,
+          "credit": 0
+        },
+        {
+          "account": "704",
+          "label": "Travaux",
+          "debit": 0,
+          "credit": 50000
+        }
+      ],
+      "explanation": "Avancement : 360 000 / 960 000 = 37,5 %. Chiffre d'affaires à reconnaître : 37,5 % × 1 200 000 = 450 000 €. Facturé et comptabilisé : 400 000 €. Il manque 50 000 € de produits, constatés au débit du compte 4181 « Clients – Factures à établir » par le crédit du compte 704. Si la facturation avait excédé le produit à l'avancement, l'excédent aurait été porté en produits constatés d'avance (487).",
+      "source_ref": "PCG art. 622-1 s. (règl. ANC 2014-03) ; comptes 4181 et 704",
+      "estimated_seconds": 150
     }
   ]
 }

@@ -14,6 +14,194 @@
       "source_ref": "Règlement délégué (UE) 2023/2772, annexe I, ESRS 1 « Exigences générales », chapitre 3 (double matérialité : matérialité d'impact et matérialité financière)",
       "verified": true,
       "estimated_seconds": 40
+    },
+    {
+      "id": "ue4-durab-materialite-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "audit-durabilite",
+      "notion": "esrs-double-materialite",
+      "difficulty": 1,
+      "tags": [
+        "ESRS",
+        "ESRS 2",
+        "normes thématiques"
+      ],
+      "statement": "Parmi les normes du premier jeu d'ESRS, laquelle s'applique à toute entreprise concernée, quel que soit le résultat de son analyse de double matérialité ?",
+      "options": [
+        "ESRS E1 Changement climatique",
+        "ESRS S1 Effectifs de l'entreprise",
+        "ESRS G1 Conduite des affaires",
+        "ESRS 2 Informations générales"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'option 4 est exacte : ESRS 2 (gouvernance, stratégie, gestion des impacts, risques et opportunités, indicateurs et objectifs à un niveau général) s'applique toujours, de même que les exigences générales d'ESRS 1. L'option 1 est fausse : E1 est soumise à l'analyse de matérialité ; l'entreprise qui juge le climat non matériel doit toutefois fournir une explication détaillée de sa conclusion, avec une analyse prospective. Les options 2 et 3 sont fausses : S1 et G1 sont des normes thématiques dont l'application dépend du résultat de l'analyse de double matérialité.",
+      "source_ref": "Règlement délégué (UE) 2023/2772, annexe I : ESRS 1, chapitre 3 (double matérialité et informations à publier) ; ESRS 2",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-durab-materialite-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "audit-durabilite",
+      "notion": "esrs-double-materialite",
+      "difficulty": 2,
+      "tags": [
+        "ESRS",
+        "double matérialité",
+        "matérialité financière"
+      ],
+      "statement": "Une société de services informatiques consomme peu d'eau et juge ses impacts sur les ressources aquatiques faibles. En revanche, ses centres de données sont situés dans une zone exposée à des sécheresses durables, et un manque d'eau pour leur refroidissement pourrait entraîner des interruptions de service et des surcoûts importants. Quelle conclusion est conforme aux ESRS ?",
+      "options": [
+        "La question « eau » est matérielle au titre de la matérialité financière et doit faire l'objet d'informations dans l'état de durabilité",
+        "La question n'est pas matérielle, car l'impact de la société sur les ressources en eau est faible",
+        "La question n'est matérielle que si elle l'est à la fois en matérialité d'impact et en matérialité financière",
+        "Le risque doit être présenté uniquement dans l'annexe des comptes, au titre des passifs éventuels"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "L'option 1 est exacte : une question de durabilité est matérielle dès qu'elle l'est selon l'une OU l'autre dimension. Ici, le risque de pénurie d'eau peut raisonnablement avoir un effet significatif sur la performance et les flux de trésorerie : il est matériel au titre de la matérialité financière (de l'extérieur vers l'intérieur). L'option 2 est fausse : elle ne retient que la matérialité d'impact. L'option 3 est fausse : la double matérialité n'exige pas le cumul des deux dimensions. L'option 4 est fausse : un risque de durabilité matériel se publie dans l'état de durabilité ; un passif éventuel suppose une obligation, ce qui n'est pas le cas d'un simple risque opérationnel futur.",
+      "source_ref": "Règlement délégué (UE) 2023/2772, annexe I, ESRS 1, chapitre 3 (matérialité d'impact, matérialité financière, double matérialité)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-durab-materialite-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "audit-durabilite",
+      "notion": "esrs-double-materialite",
+      "difficulty": 2,
+      "tags": [
+        "ESRS E1",
+        "GES",
+        "scopes 1 2 3",
+        "calcul"
+      ],
+      "statement": "La société Verdal publie ses émissions de gaz à effet de serre (GES) de l'exercice selon ESRS E1. Données (en tCO₂e) :\n- scope 1 (combustion de gaz dans ses fours et carburant de sa flotte) : 3 200 ;\n- scope 2 selon la méthode fondée sur la localisation : 1 100 ; selon la méthode fondée sur le marché (contrats d'électricité d'origine renouvelable) : 400 ;\n- scope 3 (achats de matières, transport amont, utilisation des produits vendus) : 18 500 ;\n- crédits carbone achetés et annulés dans l'exercice : 2 000.\n\nCalculez le total des émissions brutes de GES à publier selon la méthode fondée sur la localisation (en tCO₂e, à l'unité).",
+      "expected_value": 22800,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "tCO₂e",
+      "decimals": 0,
+      "explanation": "Total des émissions brutes (localisation) = scope 1 + scope 2 (localisation) + scope 3 = 3 200 + 1 100 + 18 500 = 22 800 tCO₂e. Erreurs classiques : retenir le scope 2 selon le marché donne le total « marché » (3 200 + 400 + 18 500 = 22 100 tCO₂e), qui est publié séparément ; déduire les crédits carbone (22 800 − 2 000 = 20 800) est interdit, car ESRS E1 exige des émissions brutes et présente les crédits carbone et les absorptions dans une exigence distincte (E1-7).",
+      "source_ref": "Règlement délégué (UE) 2023/2772, annexe I, ESRS E1, exigences E1-6 (émissions brutes de GES des scopes 1, 2 et 3 et émissions totales) et E1-7 (absorptions et crédits carbone)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue4-durab-materialite-0005",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "audit-durabilite",
+      "notion": "esrs-double-materialite",
+      "difficulty": 2,
+      "tags": [
+        "quotas d'émission",
+        "ESRS E1",
+        "connectivité",
+        "PCG"
+      ],
+      "statement": "La société Fonderia, soumise au système européen d'échange de quotas d'émission, applique le modèle « Production » des règles du PCG relatives aux quotas d'émission (règl. ANC 2012-03). Pour l'exercice N, elle a reçu gratuitement 10 000 quotas (comptabilisés pour une valeur nulle) et n'en a acheté aucun. Ses émissions vérifiées de N s'élèvent à 11 500 tCO₂e (un quota = une tonne). Au 31/12/N, elle n'a pas encore acquis les quotas manquants ; le cours du quota à cette date est de 72 €.\n\nConventions de comptes de l'énoncé : charge au compte 6588 « Charges diverses de gestion courante » ; dette au compte 449 « Quotas d'émission à acquérir ».\n\nPassez l'écriture d'inventaire au 31/12/N.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "6588",
+          "label": "Charge liée aux quotas manquants (1 500 × 72)",
+          "debit": 108000,
+          "credit": 0
+        },
+        {
+          "account": "449",
+          "label": "Quotas d'émission à acquérir",
+          "debit": 0,
+          "credit": 108000
+        }
+      ],
+      "explanation": "Dans le modèle « Production », les quotas sont des instruments nécessaires à l'activité : un passif naît des émissions. Tant que les émissions sont couvertes par les quotas détenus, la charge correspond à la valeur des quotas consommés (nulle ici pour des quotas gratuits). Au-delà, l'entreprise comptabilise une dette pour les quotas qu'elle devra acquérir, évaluée au cours du quota à la clôture : (11 500 − 10 000) × 72 = 108 000 €. Connectivité avec l'état de durabilité : les 11 500 tCO₂e entrent dans le scope 1 publié selon ESRS E1, et l'auditeur de durabilité rapproche ces émissions de celles qui fondent le passif comptable.",
+      "source_ref": "PCG, règles relatives aux quotas d'émission de gaz à effet de serre (règl. ANC 2012-03, intégré au règl. ANC 2014-03), modèle « Production » ; règlement délégué (UE) 2023/2772, ESRS E1-6",
+      "verified": true,
+      "estimated_seconds": 200
+    },
+    {
+      "id": "ue4-durab-materialite-0006",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "audit-durabilite",
+      "notion": "esrs-double-materialite",
+      "difficulty": 3,
+      "tags": [
+        "ESRS",
+        "double matérialité",
+        "ESRS E1",
+        "intensité GES",
+        "cas pratique"
+      ],
+      "title": "Alvéa : analyse de double matérialité et indicateurs climat",
+      "context": "Le groupe Alvéa fabrique des emballages en verre (chiffre d'affaires net consolidé de N : 125 M€). Il prépare son état de durabilité selon les ESRS.\n\nAnalyse de double matérialité réalisée par la direction :\n- impact sur le climat : les fours de fusion consomment beaucoup de gaz naturel ; impact négatif réel jugé grave ;\n- risque de transition : hausse attendue du coût du carbone et du gaz, avec un effet possible important sur la marge ;\n- biodiversité : les sites sont en zone industrielle, éloignés de zones sensibles ; impacts et risques jugés faibles et documentés ;\n- conditions de travail chez les fournisseurs de sable : peu d'informations disponibles ; la direction propose de ne pas l'analyser « faute de données ».\n\nÉmissions de GES de N (tCO₂e) :\n- scope 1 : 5 400 ;\n- scope 2 : 2 300 selon la localisation, 1 600 selon le marché ;\n- scope 3 : 41 000.\n\nLa directrice financière suggère, si le climat était finalement jugé non matériel, de ne rien publier sur ce thème.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Au regard des ESRS, comment qualifier la question « changement climatique » pour Alvéa ?",
+          "options": [
+            "Matérielle uniquement au titre de la matérialité d'impact",
+            "Matérielle au titre des deux dimensions : impact (émissions des fours) et financière (risque de transition)",
+            "Non matérielle, car les émissions de scope 3 dépassent largement celles du scope 1",
+            "Matérielle uniquement au titre de la matérialité financière"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Les émissions des fours constituent un impact négatif réel grave (matérialité d'impact) et la hausse du coût du carbone peut affecter significativement la marge (matérialité financière). Les options 1 et 4 ne retiennent qu'une dimension alors que les deux sont satisfaites. L'option 3 est sans rapport : le poids du scope 3 ne rend pas le climat non matériel, au contraire."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez l'intensité GES par chiffre d'affaires net selon la méthode fondée sur la localisation (en tCO₂e par million d'euros, arrondi à une décimale).",
+          "expected_value": 389.6,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "tCO₂e/M€",
+          "decimals": 1,
+          "explanation": "Émissions totales (localisation) = 5 400 + 2 300 + 41 000 = 48 700 tCO₂e. Intensité = 48 700 ÷ 125 = 389,6 tCO₂e/M€. Avec le scope 2 « marché », on obtiendrait 48 000 ÷ 125 = 384,0 (indicateur publié séparément) ; sans le scope 3, 7 700 ÷ 125 = 61,6."
+        },
+        {
+          "id": "q3",
+          "kind": "true_false",
+          "points": 2,
+          "prompt": "Si Alvéa concluait que le changement climatique n'est pas matériel, elle pourrait omettre toutes les informations d'ESRS E1 sans autre justification.",
+          "answer": false,
+          "explanation": "Faux : ESRS 1 et ESRS 2 (exigence IRO-2) imposent, lorsque l'entreprise conclut que le changement climatique n'est pas matériel, de publier une explication détaillée des conclusions de son analyse, y compris une analyse prospective des conditions qui pourraient la conduire à une autre conclusion."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "points": 3,
+          "prompt": "Appréciez la position de la direction sur les conditions de travail chez les fournisseurs de sable et indiquez ce que l'auditeur de durabilité examinera dans le processus d'analyse.",
+          "model_answer": "L'analyse de double matérialité couvre la chaîne de valeur amont et aval : l'absence de données ne permet pas d'écarter la question. Alvéa doit apprécier ces impacts potentiels sur les travailleurs de la chaîne de valeur (ESRS S2), au besoin à partir d'estimations, de données sectorielles ou d'échanges avec les fournisseurs, et documenter sa conclusion. L'auditeur examine le processus : identification des parties prenantes, recensement des impacts, risques et opportunités y compris dans la chaîne de valeur, critères et seuils de gravité et de probabilité, documentation et validation par la gouvernance, puis cohérence des conclusions avec les informations publiées.",
+          "key_points": [
+            "La chaîne de valeur est dans le champ de l'analyse ; le manque de données ne justifie pas l'exclusion",
+            "Recours possible à des estimations ou données sectorielles, à documenter (ESRS S2 si matériel)",
+            "L'auditeur examine le processus : parties prenantes, IRO, critères et seuils, documentation, validation"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas mobilise la double matérialité (une dimension suffit, ici les deux sont remplies), le calcul des émissions totales et de l'intensité GES selon ESRS E1, la règle propre au climat (explication détaillée en cas de non-matérialité) et l'extension de l'analyse à la chaîne de valeur, que l'auditeur de durabilité vérifie dans le cadre de sa mission.",
+      "source_ref": "Règlement délégué (UE) 2023/2772, annexe I : ESRS 1, chapitre 3 (double matérialité, chaîne de valeur, cas du changement climatique) ; ESRS 2, IRO-2 ; ESRS E1-6 (émissions et intensité GES) ; ESRS S2",
+      "verified": true,
+      "estimated_seconds": 720
     }
   ]
 }

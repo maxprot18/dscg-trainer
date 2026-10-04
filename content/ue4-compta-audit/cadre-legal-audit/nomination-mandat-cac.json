@@ -36,6 +36,122 @@
       "source_ref": "Loi n° 2019-486 du 22 mai 2019 (PACTE) ; décret n° 2019-514 du 24 mai 2019 ; C. com., partie réglementaire (seuils de désignation du CAC)",
       "verified": true,
       "estimated_seconds": 40
+    },
+    {
+      "id": "ue4-cadre-nomination-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "nomination-mandat-cac",
+      "difficulty": 2,
+      "tags": [
+        "récusation",
+        "désignation",
+        "actionnaires minoritaires"
+      ],
+      "source_ref": "C. com., dispositions sur la récusation du commissaire aux comptes (anc. art. L. 823-6, renuméroté par l'ordonnance n° 2023-1142) ; C. com., partie réglementaire (délai de trente jours de la demande de récusation)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "L'assemblée générale ordinaire d'une SA vient de nommer un commissaire aux comptes. Un actionnaire détenant 7 % du capital estime que ce professionnel entretient des liens d'affaires étroits avec le président du conseil d'administration. Quelle voie lui est ouverte ?",
+      "options": [
+        "Convoquer une nouvelle assemblée ordinaire pour obtenir la révocation du commissaire aux comptes",
+        "Demander en justice, pour juste motif et dans un bref délai suivant la désignation, la récusation du commissaire aux comptes",
+        "Saisir la CNCC, seule compétente pour annuler la désignation d'un commissaire aux comptes",
+        "Aucune : seule une désignation contraire à un texte peut être contestée, et uniquement par le ministère public"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Un ou plusieurs actionnaires représentant au moins 5 % du capital (ainsi que le comité social et économique, le ministère public et, pour les sociétés cotées, l'AMF) peuvent demander en justice la récusation du commissaire aux comptes pour juste motif. La demande doit être formée dans un bref délai suivant la désignation (trente jours, partie réglementaire du Code de commerce). Avec 7 % du capital, l'actionnaire peut agir seul, et un doute sérieux sur l'indépendance constitue un juste motif possible. L'assemblée ne peut pas révoquer un commissaire aux comptes : seul le juge peut le relever de ses fonctions. La CNCC n'a aucun pouvoir sur les désignations. La récusation n'est pas réservée au ministère public."
+    },
+    {
+      "id": "ue4-cadre-nomination-0004",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "nomination-mandat-cac",
+      "difficulty": 2,
+      "tags": [
+        "révocation",
+        "relèvement",
+        "désaccord technique"
+      ],
+      "source_ref": "C. com., disposition sur le relèvement du CAC en cas de faute ou d'empêchement (anc. art. L. 823-7, renuméroté par l'ordonnance n° 2023-1142)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Le conseil d'administration de la SA Altaïr est en désaccord avec son commissaire aux comptes, qui conteste la méthode de dépréciation des stocks retenue et annonce une réserve. Les dirigeants souhaitent mettre fin à son mandat avant son terme. Que prévoit le droit ?",
+      "options": [
+        "L'assemblée générale ordinaire peut révoquer le commissaire aux comptes à tout moment, sans motif",
+        "L'assemblée générale ordinaire peut révoquer le commissaire aux comptes pour juste motif, ce désaccord en constituant un",
+        "Le conseil d'administration peut mettre fin au mandat, à charge d'en informer l'assemblée suivante",
+        "Seul le juge peut relever le commissaire aux comptes de ses fonctions, en cas de faute ou d'empêchement, ce que ne constitue pas ce désaccord"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Pour protéger son indépendance, le commissaire aux comptes ne peut pas être révoqué par les organes de la société. Le relèvement de fonctions est prononcé par le juge, à la demande des personnes habilitées (organe d'administration, actionnaires représentant au moins 5 % du capital, comité social et économique, ministère public, H2A, AMF pour les sociétés cotées), en cas de faute ou d'empêchement. Exprimer un désaccord technique et formuler une réserve relève de l'exercice normal de la mission : ce n'est pas une faute. La révocation ad nutum ou pour juste motif par l'assemblée et la décision du conseil d'administration sont donc exclues."
+    },
+    {
+      "id": "ue4-cadre-nomination-0005",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "nomination-mandat-cac",
+      "difficulty": 2,
+      "tags": [
+        "durée du mandat",
+        "exercice décalé"
+      ],
+      "source_ref": "C. com. art. L. 821-44 (mandat de six exercices, rédaction issue de l'ordonnance n° 2023-1142)",
+      "verified": true,
+      "estimated_seconds": 120,
+      "statement": "La SAS Borée clôture ses exercices le 30 septembre. Son assemblée ordinaire du 20 mars 2026, qui approuve les comptes de l'exercice clos le 30 septembre 2025, nomme pour la première fois un commissaire aux comptes pour un mandat de droit commun. Quelle est l'année de clôture du dernier exercice dont il certifiera les comptes au titre de ce mandat ? (Réponse : une année, par exemple 2030.)",
+      "expected_value": 2031,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "unit": "année",
+      "explanation": "Le mandat porte sur six exercices et le premier exercice contrôlé est celui en cours lors de la nomination, ici l'exercice du 1er octobre 2025 au 30 septembre 2026. Les six exercices sont donc ceux clos le 30 septembre 2026, 2027, 2028, 2029, 2030 et 2031 (2026 + 5 = 2031). Le mandat expirera à l'issue de l'assemblée de 2032 qui statuera sur les comptes clos le 30 septembre 2031. Erreurs classiques : partir de l'exercice clos en 2025, déjà approuvé (réponse 2030), ou compter six années à partir de mars 2026 (réponse 2032)."
+    },
+    {
+      "id": "ue4-cadre-nomination-0006",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "cadre-legal-audit",
+      "notion": "nomination-mandat-cac",
+      "difficulty": 2,
+      "tags": [
+        "honoraires",
+        "factures non parvenues",
+        "premier exercice"
+      ],
+      "source_ref": "PCG (règl. ANC 2014-03) : comptes 6226 Honoraires, 4081 Fournisseurs – factures non parvenues, 44586 Taxes sur le chiffre d'affaires sur factures non parvenues ; principe d'indépendance des exercices",
+      "verified": true,
+      "estimated_seconds": 180,
+      "statement": "La SA Kappa a nommé un commissaire aux comptes en N. La lettre de mission fixe les honoraires de l'audit des comptes N à 24 000 € HT, dont 3 000 € HT au titre des travaux propres à un premier mandat (contrôle des soldes d'ouverture). Une facture d'acompte de 9 600 € HT a été reçue et comptabilisée en N ; le solde ne sera facturé qu'en N+1, après la certification. Les travaux de l'audit N sont réalisés pour l'essentiel. TVA au taux de 20 %, récupérable. Passez l'écriture d'inventaire au 31/12/N (utilisez les comptes 4081 et 44586).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "6226",
+          "label": "Honoraires CAC audit N restant à facturer",
+          "debit": 14400,
+          "credit": 0
+        },
+        {
+          "account": "44586",
+          "label": "TVA sur factures non parvenues",
+          "debit": 2880,
+          "credit": 0
+        },
+        {
+          "account": "4081",
+          "label": "Fournisseurs – factures non parvenues",
+          "debit": 0,
+          "credit": 17280
+        }
+      ],
+      "explanation": "Les honoraires de l'audit des comptes N sont une charge de N, même si une partie sera facturée en N+1. Montant restant : 24 000 − 9 600 = 14 400 € HT (les 3 000 € de soldes d'ouverture sont déjà inclus dans les 24 000 € : ne pas les ajouter). TVA : 14 400 × 20 % = 2 880 € ; total TTC : 17 280 €. L'écriture sera extournée à l'ouverture de N+1, puis la facture définitive enregistrée normalement (6226, 44566, 401)."
     }
   ]
 }

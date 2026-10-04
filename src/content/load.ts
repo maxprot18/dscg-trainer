@@ -1,18 +1,29 @@
 /**
  * Chargement du contenu (/content) dans l'app.
+ * La taxonomie est embarquée ; les exercices sont chargés UE par UE (un fichier JS par UE,
+ * mis en cache par le service worker) ; les fiches de cours, une à une à la demande.
  * Les exercices non vérifiés (verified: false) ne sont jamais servis en production (SPEC).
  */
-import taxonomyJson from '@content/taxonomy.json'
-import { contentFileSchema, taxonomySchema, type Exercise, type Taxonomy } from './schema'
+import { useEffect, useState } from 'react'
 
-const files = import.meta.glob<unknown>(['/content/**/*.json', '!/content/taxonomy.json'], {
-  eager: true,
-  import: 'default',
-})
+import taxonomyJson from '@content/taxonomy.json'
+
+import { contentFileSchema, taxonomySchema, type Exercise, type Taxonomy, type UeId } from './schema'
 
 export const taxonomy: Taxonomy = taxonomySchema.parse(taxonomyJson)
 
-export function parseExercises(modules: Record<string, unknown>, includeUnverified: boolean): Exercise[] {
+type Modules = Record<string, unknown>
+
+const bundles: Record<UeId, () => Promise<{ default: Modules }>> = {
+  UE1: () => import('./bundles/ue1'),
+  UE2: () => import('./bundles/ue2'),
+  UE3: () => import('./bundles/ue3'),
+  UE4: () => import('./bundles/ue4'),
+  UE5: () => import('./bundles/ue5'),
+  UE6: () => import('./bundles/ue6'),
+}
+
+export function parseExercises(modules: Modules, includeUnverified: boolean): Exercise[] {
   return Object.entries(modules)
     .flatMap(([path, data]) => {
       const parsed = contentFileSchema.safeParse(data)
@@ -25,4 +36,41 @@ export function parseExercises(modules: Record<string, unknown>, includeUnverifi
     .filter((ex) => includeUnverified || ex.verified)
 }
 
-export const exercises: Exercise[] = parseExercises(files, import.meta.env.DEV)
+let cache: Promise<Exercise[]> | null = null
+let loaded: Exercise[] | null = null
+
+/** Tous les exercices servis (chargés une seule fois). */
+export function loadExercises(): Promise<Exercise[]> {
+  cache ??= Promise.all(Object.values(bundles).map((load) => load())).then((mods) => {
+    loaded = mods.flatMap((m) => parseExercises(m.default, import.meta.env.DEV))
+    return loaded
+  })
+  return cache
+}
+
+/** Exercices servis, ou `null` pendant le premier chargement. */
+export function useExercises(): Exercise[] | null {
+  const [exercises, setExercises] = useState<Exercise[] | null>(loaded)
+  useEffect(() => {
+    if (exercises) return
+    let alive = true
+    void loadExercises().then((list) => alive && setExercises(list))
+    return () => {
+      alive = false
+    }
+  }, [exercises])
+  return exercises
+}
+
+const courseFiles = import.meta.glob<string>('/content/courses/*.md', { query: '?raw', import: 'default' })
+const coursePath = (notionId: string) => `/content/courses/${notionId}.md`
+
+export function hasCourse(notionId: string): boolean {
+  return coursePath(notionId) in courseFiles
+}
+
+/** Fiche de cours (Markdown) d'une notion, ou `null` si elle n'existe pas encore. */
+export async function loadCourse(notionId: string): Promise<string | null> {
+  const load = courseFiles[coursePath(notionId)]
+  return load ? load() : null
+}

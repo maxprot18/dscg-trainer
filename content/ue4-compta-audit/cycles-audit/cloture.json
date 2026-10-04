@@ -1,0 +1,930 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-audit-cloture-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "exhaustivité",
+        "charges à payer"
+      ],
+      "statement": "En février N+1, l'auditeur examine les factures fournisseurs reçues depuis le 1er janvier N+1 et vérifie, pour celles qui portent sur des prestations réalisées en N, qu'une charge à payer a été comptabilisée au 31/12/N. Quelle assertion ce test vise-t-il principalement ?",
+      "options": [
+        "Réalité des charges de l'exercice",
+        "Classification des charges",
+        "Exhaustivité des charges et des dettes",
+        "Évaluation des charges constatées d'avance"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Le test part de pièces postérieures à la clôture (factures reçues en N+1) pour vérifier qu'aucune charge de N n'a été omise : c'est l'exhaustivité des charges et des dettes (charges à payer, compte 408). La réalité se teste dans l'autre sens, en partant des charges enregistrées vers les pièces. La classification porte sur l'imputation au bon compte, que ce test n'examine pas. Les charges constatées d'avance (486) concernent des charges enregistrées en N mais relatives à N+1, situation inverse de celle testée ici.",
+      "source_ref": "NEP 500 (assertions relatives aux catégories d'opérations et aux soldes : exhaustivité) ; PCG compte 408",
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-audit-cloture-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-assertions",
+      "difficulty": 2,
+      "tags": [
+        "assertions",
+        "annexe",
+        "engagements hors bilan"
+      ],
+      "statement": "L'auditeur rapproche la liste des cautions données par la société, figurant dans les réponses des banques à ses demandes de confirmation et dans les procès-verbaux du conseil d'administration, des engagements hors bilan mentionnés dans le projet d'annexe. Quelle assertion vise-t-il principalement ?",
+      "options": [
+        "Mesure et évaluation des engagements mentionnés",
+        "Réalité des engagements mentionnés",
+        "Présentation et intelligibilité de l'annexe",
+        "Exhaustivité des informations fournies dans l'annexe"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Le test part de sources indépendantes de l'annexe (confirmations bancaires, procès-verbaux) pour vérifier que tous les engagements y figurent : c'est l'exhaustivité des informations fournies. La mesure (option 1) porterait sur le montant des engagements mentionnés, la réalité (option 2) se testerait en partant de l'annexe vers les pièces, et la présentation et l'intelligibilité (option 3) portent sur la clarté et le classement de l'information, non sur son caractère complet.",
+      "source_ref": "NEP 500 (assertions relatives à la présentation des comptes et aux informations fournies dans l'annexe)",
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-cloture-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-assertions",
+      "difficulty": 2,
+      "tags": [
+        "assertions",
+        "produits constatés d'avance",
+        "487"
+      ],
+      "statement": "Une société d'édition de logiciels facture à ses clients des abonnements annuels payables d'avance. Quelle procédure couvre le mieux l'exhaustivité des produits constatés d'avance (compte 487) au 31/12/N ?",
+      "options": [
+        "Partir du registre des contrats d'abonnement facturés en N et vérifier que la fraction relative à N+1 a été différée en 487",
+        "Sélectionner des soldes du compte 487 et les rapprocher des contrats correspondants",
+        "Recalculer les charges constatées d'avance (486) à partir des contrats fournisseurs",
+        "Envoyer des demandes de confirmation de solde aux principaux clients"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Pour tester l'exhaustivité d'un passif, on part d'une population indépendante du compte testé (ici l'ensemble des contrats facturés en N) pour vérifier que chaque fraction relative à N+1 a bien été différée. Partir des soldes du 487 (option 2) ne permet pas de détecter un produit facturé d'avance qui n'aurait jamais été différé : ce test couvre la réalité et l'évaluation du solde. Le recalcul du 486 (option 3) concerne les charges, non les produits. La confirmation clients (option 4) porte sur l'existence des créances.",
+      "source_ref": "NEP 500 (exhaustivité) ; PCG compte 487",
+      "estimated_seconds": 70
+    },
+    {
+      "id": "ue4-audit-cloture-0004",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "annexe"
+      ],
+      "statement": "L'annexe fait partie des comptes annuels : une information obligatoire omise dans l'annexe constitue une anomalie que le commissaire aux comptes doit prendre en compte pour former son opinion.",
+      "answer": true,
+      "justification": "Vrai : les comptes annuels comprennent le bilan, le compte de résultat et l'annexe, qui forment un tout indissociable.",
+      "explanation": "Le CAC certifie les comptes annuels dans leur ensemble, annexe comprise. Les assertions relatives aux informations fournies (exhaustivité, présentation et intelligibilité, mesure, réalité) s'appliquent à l'annexe. Une omission significative, par exemple l'absence de mention d'une incertitude sur la continuité d'exploitation ou d'un engagement important, est une anomalie au même titre qu'une erreur chiffrée.",
+      "source_ref": "C. com. art. L. 123-12 (comptes annuels : bilan, compte de résultat, annexe) ; NEP 500 (assertions relatives aux informations fournies dans l'annexe)",
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue4-audit-cloture-0005",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "comptes de régularisation",
+        "séparation des exercices"
+      ],
+      "front": "Quelles assertions sont principalement en jeu pour les comptes 408, 486 et 487 en fin d'exercice, et quelle procédure type pour chacune ?",
+      "back": "408 (fournisseurs, factures non parvenues) : exhaustivité → examen des factures reçues et des décaissements de début N+1.\n486 (charges constatées d'avance) : existence et évaluation → rapprochement des contrats, recalcul du prorata.\n487 (produits constatés d'avance) : exhaustivité → partir des contrats facturés d'avance et vérifier le différé.\nPour tous : séparation des exercices.",
+      "explanation": "NEP 500 : chaque assertion appelle un test mené dans le bon sens. Les passifs (408, 487) sont exposés au risque d'omission ; l'actif 486 au risque de surévaluation.",
+      "source_ref": "NEP 500 (assertions) ; PCG comptes 408, 486, 487",
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-cloture-0006",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-risques",
+      "difficulty": 1,
+      "tags": [
+        "continuité d'exploitation",
+        "indicateurs"
+      ],
+      "statement": "Parmi les éléments suivants relevés lors de l'audit des comptes au 31/12/N, lequel constitue le plus nettement un indicateur de risque sur la continuité d'exploitation (NEP 570) ?",
+      "options": [
+        "Un changement de logiciel comptable en cours d'exercice",
+        "Un emprunt bancaire de montant important arrivant à échéance en avril N+1, sans accord de renouvellement ni solution de refinancement identifiée",
+        "Une hausse de 8 % du chiffre d'affaires, conforme à celle du secteur",
+        "La nomination d'un nouveau directeur financier venant d'un cabinet d'audit"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Un emprunt important arrivant à échéance dans l'horizon de douze mois, sans renouvellement ni refinancement, menace directement la capacité de l'entité à faire face à ses engagements : c'est un indicateur financier typique de la NEP 570. Le changement de logiciel (option 1) est un facteur de risque d'anomalies (fiabilité des données), pas de continuité. Une croissance conforme au marché (option 3) ne signale aucune difficulté. Le remplacement d'un directeur financier (option 4) n'est pas en soi un indicateur : seul le départ non remplacé de dirigeants clés en serait un.",
+      "source_ref": "NEP 570 (événements ou circonstances susceptibles de mettre en cause la continuité d'exploitation)",
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-audit-cloture-0007",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-risques",
+      "difficulty": 2,
+      "tags": [
+        "continuité d'exploitation",
+        "procédure d'alerte"
+      ],
+      "statement": "Au cours de l'audit des comptes d'une société anonyme à conseil d'administration, le commissaire aux comptes relève des faits de nature à compromettre la continuité de l'exploitation (pertes répétées, retards de paiement aux organismes sociaux). Quelle est sa première démarche au titre de la procédure d'alerte ?",
+      "options": [
+        "Informer le président du conseil d'administration et lui demander des explications",
+        "Saisir immédiatement le président du tribunal de commerce",
+        "Refuser de certifier les comptes de l'exercice",
+        "Révéler les faits au procureur de la République"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Dans la SA, la procédure d'alerte commence par l'information du président du conseil d'administration (ou du directoire), à qui le CAC demande des explications ; ce n'est qu'en l'absence de réponse satisfaisante que la procédure se poursuit par étapes (conseil, assemblée, information du président du tribunal). La saisine immédiate du tribunal (option 2) saute ces étapes. La procédure d'alerte est distincte de l'opinion : elle n'entraîne pas en soi un refus de certifier (option 3). La révélation au procureur (option 4) concerne les faits délictueux, non les difficultés économiques.",
+      "source_ref": "C. com. art. L. 234-1 (procédure d'alerte du commissaire aux comptes dans les SA) ; NEP 570",
+      "estimated_seconds": 70
+    },
+    {
+      "id": "ue4-audit-cloture-0008",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-risques",
+      "difficulty": 2,
+      "tags": [
+        "continuité d'exploitation",
+        "horizon"
+      ],
+      "statement": "Pour apprécier la convention de continuité d'exploitation, le commissaire aux comptes s'assure que l'évaluation de la direction couvre au moins douze mois à compter de la date de son propre rapport.",
+      "answer": false,
+      "justification": "Faux : l'horizon minimal de douze mois s'apprécie à compter de la date de clôture de l'exercice.",
+      "explanation": "La NEP 570 retient une période d'au moins douze mois à compter de la date de clôture. Le CAC tient toutefois compte des événements dont il a connaissance jusqu'à la date de son rapport, y compris ceux qui se situent au-delà de cet horizon, s'ils peuvent mettre en cause la continuité d'exploitation.",
+      "source_ref": "NEP 570 (période d'évaluation de la continuité d'exploitation)",
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-audit-cloture-0009",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-risques",
+      "difficulty": 2,
+      "tags": [
+        "continuité d'exploitation",
+        "capitaux propres",
+        "indicateurs"
+      ],
+      "statement": "Au 31/12/N, les capitaux propres de la SA Iota (avant affectation du résultat) se composent ainsi : capital social 800 000 € ; réserve légale 20 000 € ; autres réserves 45 000 € ; report à nouveau débiteur 110 000 € ; perte de l'exercice N 420 000 €. Il n'existe ni subventions d'investissement ni provisions réglementées. De combien les capitaux propres sont-ils inférieurs à la moitié du capital social (en euros) ?",
+      "expected_value": 65000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Capitaux propres = 800 000 + 20 000 + 45 000 − 110 000 − 420 000 = 335 000 €. Moitié du capital social = 400 000 €. Insuffisance = 400 000 − 335 000 = 65 000 €. Oublier le report à nouveau débiteur donnerait des capitaux propres de 445 000 €, supérieurs à la moitié du capital, et masquerait la situation. Des capitaux propres inférieurs à la moitié du capital imposent à l'assemblée de se prononcer sur une éventuelle dissolution anticipée et constituent un indicateur de risque sur la continuité d'exploitation que le CAC doit prendre en compte.",
+      "source_ref": "C. com. art. L. 225-248 (capitaux propres inférieurs à la moitié du capital social) ; NEP 570",
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue4-audit-cloture-0010",
+      "type": "audit_case",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-risques",
+      "difficulty": 2,
+      "tags": [
+        "continuité d'exploitation",
+        "fin de mission",
+        "annexe"
+      ],
+      "title": "Continuité d'exploitation chez un équipementier",
+      "cycle": "cloture",
+      "situation": "Vous finalisez l'audit des comptes au 31/12/N de la SA Thêta, équipementier automobile (capital social 3 000 000 €). L'exercice N se solde par une perte de 1 800 000 €, la deuxième consécutive ; les capitaux propres s'élèvent à 900 000 €. Un emprunt bancaire de 2 500 000 € arrive à échéance le 30/06/N+1 ; la banque n'a pas encore fait connaître sa décision de renouvellement. Le principal client (40 % du chiffre d'affaires) a annoncé l'arrêt, courant N+1, du programme de véhicules auquel Thêta fournit des pièces. Les prévisions de trésorerie de la direction font apparaître un besoin de 1 200 000 € à l'automne N+1, que la direction prévoit de couvrir par une augmentation de capital souscrite par l'actionnaire principal, sans engagement écrit à ce jour. Le projet d'annexe ne mentionne aucune incertitude.",
+      "assertions": [
+        "Présentation et informations fournies (continuité d'exploitation)",
+        "Évaluation (convention de continuité retenue pour établir les comptes)"
+      ],
+      "procedures": {
+        "options": [
+          "Examiner les prévisions de trésorerie couvrant au moins douze mois à compter de la clôture et apprécier le caractère raisonnable de leurs hypothèses",
+          "Obtenir de la banque et de l'actionnaire principal des éléments écrits sur le renouvellement de l'emprunt et sur l'engagement de souscrire à l'augmentation de capital",
+          "Vérifier que l'annexe décrit les événements créant une incertitude sur la continuité d'exploitation et les plans de la direction",
+          "Envoyer des demandes de confirmation de solde aux principaux clients",
+          "Assister à l'inventaire physique des stocks de matières premières",
+          "Recalculer les dotations aux amortissements des outillages"
+        ],
+        "answer": [
+          0,
+          1,
+          2
+        ]
+      },
+      "risk": {
+        "options": [
+          "Faible",
+          "Modéré",
+          "Élevé"
+        ],
+        "answer": 2,
+        "rationale": "Plusieurs indicateurs de la NEP 570 se cumulent : pertes répétées, capitaux propres inférieurs à la moitié du capital social (900 000 € contre 1 500 000 €), emprunt de 2 500 000 € échéant dans les six mois sans accord de la banque, perte annoncée d'un client représentant 40 % du chiffre d'affaires. Le plan de financement de la direction repose sur un apport sans engagement écrit. Le risque que la convention de continuité soit inappropriée, ou que l'annexe omette une incertitude significative, est élevé."
+      },
+      "conclusion": {
+        "model_answer": "Les procédures mises en œuvre (examen critique des prévisions de trésorerie, recherche d'engagements écrits de la banque et de l'actionnaire, lecture du projet d'annexe) doivent permettre de conclure sur l'existence d'une incertitude significative. À défaut d'engagements fermes, une incertitude significative existe : la direction doit la décrire dans l'annexe, avec ses plans. Le CAC en tire les conséquences dans son rapport (mention spécifique si l'information est adéquate, réserve ou refus si elle ne l'est pas) et met en œuvre la procédure d'alerte, les faits relevés étant de nature à compromettre la continuité de l'exploitation.",
+        "key_points": [
+          "Identifier l'incertitude significative à partir des indicateurs cumulés de l'énoncé",
+          "Exiger une information adéquate en annexe (événements et plans de la direction)",
+          "Conséquences sur le rapport selon le caractère adéquat de l'information",
+          "Déclenchement de la procédure d'alerte (C. com. art. L. 234-1)"
+        ]
+      },
+      "explanation": "Le risque porte sur la convention de continuité d'exploitation et sur l'information donnée en annexe. Les procédures pertinentes testent la capacité de l'entité à financer son activité sur au moins douze mois (prévisions, engagements de financement) et l'exhaustivité de l'annexe. Les confirmations clients, l'inventaire des stocks et le recalcul des amortissements relèvent d'autres cycles et ne répondent pas au risque identifié.",
+      "source_ref": "NEP 570 (continuité d'exploitation) ; C. com. art. L. 225-248 et L. 234-1",
+      "estimated_seconds": 480
+    },
+    {
+      "id": "ue4-audit-cloture-0011",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-controles-cles",
+      "difficulty": 1,
+      "tags": [
+        "contrôles clés",
+        "charges à payer",
+        "exhaustivité"
+      ],
+      "statement": "Quel contrôle interne du processus de clôture répond le mieux au risque d'omission de charges à payer ?",
+      "options": [
+        "La revue mensuelle du compte de résultat par le contrôleur de gestion",
+        "L'autorisation des règlements fournisseurs par le directeur financier",
+        "Le rapprochement, à la clôture, des bons de réception et des commandes livrées non encore facturées, suivi de la comptabilisation des factures non parvenues",
+        "Le lettrage des comptes fournisseurs après chaque règlement"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Le recensement des réceptions non facturées part des événements réels (biens et services reçus) pour vérifier qu'une charge est constatée même sans facture : il couvre directement l'exhaustivité des charges à payer. La revue mensuelle du compte de résultat (option 1) est un contrôle de détection global, trop peu précis pour cet objectif. L'autorisation des règlements (option 2) protège contre les paiements indus. Le lettrage (option 4) ne porte que sur les factures déjà enregistrées.",
+      "source_ref": "NEP 315 (compréhension du contrôle interne) ; PCG compte 408",
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-audit-cloture-0012",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "NEP 450",
+        "anomalies",
+        "seuil"
+      ],
+      "statement": "Le seuil des anomalies manifestement insignifiantes est fixé à 3 000 €. En fin de mission, l'auditeur relève une erreur de séparation des exercices de 2 200 €, isolée et sans indice de fraude. Quel traitement lui réserve-t-il ?",
+      "options": [
+        "Il la cumule avec les autres anomalies non corrigées et la mentionne dans la lettre d'affirmation",
+        "Il exige sa correction, faute de quoi il formule une réserve",
+        "Il étend ses travaux à l'ensemble des écritures de séparation de l'exercice",
+        "Il ne la cumule pas avec les autres anomalies, son montant étant inférieur au seuil des anomalies manifestement insignifiantes"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Les anomalies inférieures au seuil des anomalies manifestement insignifiantes ne sont pas cumulées : leur incidence, même additionnée, est par construction sans conséquence sur les comptes. Le cumul et la mention dans la lettre d'affirmation (option 1) concernent les anomalies au-dessus de ce seuil. Une réserve (option 2) suppose une anomalie significative. L'extension des travaux (option 3) se justifierait si l'erreur révélait une défaillance plus large ou un indice de fraude, ce que l'énoncé exclut.",
+      "source_ref": "NEP 450 (évaluation des anomalies relevées au cours de l'audit) ; NEP 320",
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-cloture-0013",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-controles-cles",
+      "difficulty": 1,
+      "tags": [
+        "NEP 450",
+        "anomalies corrigées"
+      ],
+      "statement": "Une anomalie relevée par le commissaire aux comptes et entièrement corrigée par la direction avant l'arrêté des comptes reste incluse dans le cumul des anomalies non corrigées.",
+      "answer": false,
+      "justification": "Faux : une anomalie corrigée n'affecte plus les comptes ; seules les anomalies non corrigées sont cumulées et comparées au seuil de signification.",
+      "explanation": "La NEP 450 prévoit que le CAC communique les anomalies relevées à la direction et lui demande de les corriger. Une fois corrigée, l'anomalie sort du cumul. Le CAC peut néanmoins tenir compte de sa nature (indice de faiblesse du contrôle interne ou de fraude) pour la suite de la mission. En cas de correction partielle, le reliquat reste dans le cumul.",
+      "source_ref": "NEP 450 (communication et correction des anomalies, anomalies non corrigées)",
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue4-audit-cloture-0014",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "NEP 450",
+        "cumul des anomalies",
+        "seuil de signification"
+      ],
+      "statement": "Audit de la SA Lambda au 31/12/N. Seuil de signification : 60 000 € ; seuil des anomalies manifestement insignifiantes : 3 000 €. Anomalies relevées, toutes dans le sens d'une surévaluation du résultat avant impôt :\n- facture d'honoraires de décembre N non comptabilisée : 14 000 € ;\n- vente de N+1 enregistrée en N (les marchandises figuraient dans le stock inventorié) : 22 000 € ;\n- dépréciation de créance insuffisante : 2 400 € ;\n- charges constatées d'avance surévaluées : 9 500 € ;\n- produit constaté d'avance omis : 16 000 €, corrigé intégralement par la direction ;\n- provision pour litige insuffisante de 11 000 €, la direction ayant accepté de la compléter de 6 000 €.\nCalculez le montant cumulé des anomalies non corrigées à comparer au seuil de signification (en euros).",
+      "expected_value": 50500,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "On écarte l'anomalie de 2 400 € (inférieure au seuil des anomalies manifestement insignifiantes) et le produit constaté d'avance de 16 000 €, corrigé. La provision n'est corrigée qu'en partie : le reliquat de 11 000 − 6 000 = 5 000 € reste dans le cumul. Cumul = 14 000 + 22 000 + 9 500 + 5 000 = 50 500 €. Ce montant est inférieur au seuil de signification (60 000 €) mais s'en approche : le CAC apprécie aussi la nature des anomalies et le risque que des anomalies non détectées portent le total au-delà du seuil. Erreurs fréquentes : inclure les 2 400 € (52 900 €), garder la provision entière (56 500 €) ou le produit corrigé (66 500 €).",
+      "source_ref": "NEP 450 (cumul et évaluation des anomalies non corrigées) ; NEP 320",
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue4-audit-cloture-0015",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-controles-cles",
+      "difficulty": 3,
+      "tags": [
+        "NEP 450",
+        "synthèse des anomalies",
+        "opinion",
+        "lettre d'affirmation"
+      ],
+      "title": "Synthèse des anomalies en fin de mission chez Oméga",
+      "context": "Vous terminez l'audit des comptes au 31/12/N de la SA Oméga, négociant en matériel industriel (TVA 20 %).\nSeuil de signification : 80 000 € ; seuil des anomalies manifestement insignifiantes : 4 000 €.\nLa feuille de synthèse recense les anomalies suivantes :\n1. Facture d'énergie de décembre N, reçue en janvier N+1, non comptabilisée : 12 500 € HT.\n2. Contrat de maintenance facturé à un client le 01/10/N pour douze mois, 48 000 € HT, intégralement comptabilisé en produits de N.\n3. Vente de 35 000 € HT facturée le 30/12/N ; les marchandises (coût d'achat 21 000 €) ont été expédiées le 05/01/N+1, et leur sortie du stock a été enregistrée en N, de sorte qu'elles ne figurent pas dans le stock au 31/12/N. Le transfert de contrôle intervient à l'expédition.\n4. Écart de rapprochement bancaire non justifié : 2 800 €.\n5. Provision pour litige comptabilisée pour 20 000 € alors que l'avocat estime le risque à 60 000 €.\nLa direction accepte de corriger l'anomalie n° 5 mais refuse de corriger les autres, qu'elle juge non significatives.\nIl n'existe aucun indice de fraude et aucune autre anomalie n'a été relevée.",
+      "sub_questions": [
+        {
+          "id": "q1-vente-anticipee",
+          "kind": "numeric",
+          "prompt": "Quelle est l'incidence de l'anomalie n° 3 sur le résultat avant impôt de N (surévaluation, en euros) ?",
+          "expected_value": 14000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 3,
+          "explanation": "La vente doit être annulée en N (−35 000 € de chiffre d'affaires) et les marchandises, encore détenues au 31/12/N, réintégrées en stock (+21 000 €). Résultat surévalué de 35 000 − 21 000 = 14 000 €. Retenir 35 000 € oublierait que la sortie de stock a été enregistrée en N."
+        },
+        {
+          "id": "q2-cumul",
+          "kind": "numeric",
+          "prompt": "Calculez le cumul des anomalies non corrigées à comparer au seuil de signification (en euros).",
+          "expected_value": 62500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 3,
+          "explanation": "Anomalie 1 : 12 500 €. Anomalie 2 : produit constaté d'avance omis = 48 000 × 9/12 = 36 000 €. Anomalie 3 : 14 000 €. L'anomalie 4 (2 800 €) est inférieure au seuil des anomalies manifestement insignifiantes et n'est pas cumulée ; l'anomalie 5 est corrigée. Cumul = 12 500 + 36 000 + 14 000 = 62 500 €, toutes dans le sens d'une surévaluation du résultat."
+        },
+        {
+          "id": "q3-hypothese-refus",
+          "kind": "mcq",
+          "prompt": "Supposons que la direction refuse aussi de corriger l'anomalie n° 5. Les anomalies non corrigées portent sur des postes identifiés et n'ont pas d'effet diffus sur les comptes. Quelle opinion le commissaire aux comptes formule-t-il ?",
+          "options": [
+            "Certification sans réserve, assortie d'une observation",
+            "Certification avec réserve pour désaccord",
+            "Impossibilité de certifier pour limitation",
+            "Refus de certifier pour désaccord"
+          ],
+          "answer": [
+            1
+          ],
+          "points": 2,
+          "explanation": "Le cumul devient 62 500 + 40 000 = 102 500 €, supérieur au seuil de signification : les comptes comportent des anomalies significatives. Faute d'effet diffus, le CAC certifie avec réserve pour désaccord. Une observation (option 1) ne s'emploie pas pour des anomalies significatives non corrigées. La limitation (option 3) suppose une impossibilité de collecter des éléments, non un désaccord. Le refus pour désaccord (option 4) est réservé aux anomalies dont les effets sont diffus."
+        },
+        {
+          "id": "q4-demarche",
+          "kind": "open",
+          "prompt": "Dans la situation réelle (seule l'anomalie n° 5 corrigée), décrivez la démarche de fin de mission du commissaire aux comptes vis-à-vis de ces anomalies.",
+          "model_answer": "Le cumul des anomalies non corrigées (62 500 €) est inférieur au seuil de signification (80 000 €) et aucune anomalie n'est significative par sa nature (pas d'indice de fraude) : il n'y a pas d'incidence sur l'opinion. Le CAC a communiqué en temps utile les anomalies relevées à la direction en lui demandant de les corriger ; il documente son appréciation, individuelle et cumulée, dans son dossier. Il obtient dans la lettre d'affirmation une déclaration de la direction indiquant qu'elle estime l'incidence des anomalies non corrigées non significative, la liste de ces anomalies étant jointe. Il communique les anomalies non corrigées à l'organe chargé de la gouvernance. Le cumul étant proche du seuil, il s'assure enfin que le risque d'anomalies non détectées reste acceptable.",
+          "key_points": [
+            "Comparaison du cumul (62 500 €) au seuil de signification (80 000 €) : pas d'incidence sur l'opinion",
+            "Appréciation de la nature des anomalies, en plus de leur montant",
+            "Déclaration de la direction sur les anomalies non corrigées, avec leur liste, dans la lettre d'affirmation",
+            "Communication à l'organe chargé de la gouvernance et documentation dans le dossier"
+          ],
+          "points": 4
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Le cas fait appliquer la NEP 450 en fin de mission : évaluation de chaque anomalie (dont l'incidence nette d'une vente anticipée lorsque le stock a été sorti), exclusion des anomalies manifestement insignifiantes et des anomalies corrigées, comparaison du cumul au seuil de signification, puis conséquences sur l'opinion et sur la lettre d'affirmation (NEP 580).",
+      "source_ref": "NEP 450 (évaluation des anomalies relevées) ; NEP 580 (déclarations de la direction) ; NEP 260 (communications avec les organes de gouvernance) ; NEP 700 (rapport sur les comptes : réserve, refus)",
+      "estimated_seconds": 900
+    },
+    {
+      "id": "ue4-audit-cloture-0016",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "événements postérieurs",
+        "NEP 560",
+        "provision"
+      ],
+      "statement": "La société Rho clôture au 31/12/N. Le 18/02/N+1, avant l'arrêté des comptes, un jugement la condamne à verser 64 000 € à un fournisseur pour une livraison défectueuse de pièces survenue en septembre N, que Rho avait refusé de payer. Une provision de 30 000 € avait été comptabilisée au 31/12/N. Quel traitement le commissaire aux comptes attend-il dans les comptes de N ?",
+      "options": [
+        "Aucun ajustement : le jugement est postérieur à la clôture, une mention en annexe suffit",
+        "Un complément de provision de 34 000 € dans les comptes de N",
+        "Une charge de 64 000 € comptabilisée en N+1, sans incidence sur N",
+        "L'annulation de la provision de 30 000 € et la constatation d'une dette de 64 000 € en N+1"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le jugement apporte une information sur une obligation qui existait à la clôture (litige né en septembre N) : c'est un événement postérieur qui donne lieu à ajustement. La provision doit être portée à 64 000 €, soit un complément de 34 000 € en N. La simple mention en annexe (option 1) est réservée aux événements liés à des situations nées après la clôture. Reporter la charge en N+1 (options 3 et 4) méconnaît le rattachement de l'obligation à l'exercice N.",
+      "source_ref": "NEP 560 (événements postérieurs à la clôture) ; PCG, règles relatives aux passifs et provisions (règl. ANC 2014-03)",
+      "estimated_seconds": 70
+    },
+    {
+      "id": "ue4-audit-cloture-0017",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "lettre d'affirmation",
+        "NEP 580"
+      ],
+      "statement": "Le commissaire aux comptes prévoit de signer son rapport sur les comptes de N le 12/04/N+1. Les comptes ont été arrêtés par le conseil d'administration le 20/03/N+1. À quelle date la lettre d'affirmation doit-elle être datée ?",
+      "options": [
+        "Au 31/12/N, date de clôture de l'exercice",
+        "Au 20/03/N+1, date d'arrêté des comptes, quelle que soit la date du rapport",
+        "À une date aussi proche que possible du 12/04/N+1, sans lui être postérieure",
+        "Après le 12/04/N+1, pour couvrir les événements survenus jusqu'à l'assemblée"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Les déclarations écrites doivent couvrir la période jusqu'à la date du rapport : la lettre est datée au plus près de cette date et jamais après, car le CAC ne peut fonder son opinion sur un élément qu'il n'a pas encore obtenu. Une lettre datée de la clôture (option 1) ou de l'arrêté (option 2) laisserait sans déclaration la période qui suit, pendant laquelle des événements postérieurs peuvent survenir. Une date postérieure au rapport (option 4) est exclue.",
+      "source_ref": "NEP 580 (déclarations de la direction : date et signataires)",
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-cloture-0018",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "charges constatées d'avance",
+        "486",
+        "prorata temporis"
+      ],
+      "statement": "La société Sigma clôture au 31/12/N. L'auditeur recalcule les charges constatées d'avance à partir de deux contrats, dont les charges ont été intégralement comptabilisées en N :\n- contrat de maintenance informatique couvrant la période du 01/08/N au 31/07/N+1, facturé 18 000 € HT ;\n- loyer d'un entrepôt payé d'avance pour le trimestre du 01/12/N au 28/02/N+1, 9 000 € HT.\nCalculez le montant des charges constatées d'avance à comptabiliser au 31/12/N (en euros, montants HT).",
+      "expected_value": 16500,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Maintenance : 7 mois sur 12 restent à courir après la clôture (janvier à juillet N+1) : 18 000 × 7/12 = 10 500 €. Loyer : 2 mois sur 3 (janvier et février N+1) : 9 000 × 2/3 = 6 000 €. Total = 16 500 € au débit du compte 486. Erreurs fréquentes : retenir 5 mois pour la maintenance (mois écoulés en N), soit 7 500 €, ou calculer sur le TTC.",
+      "source_ref": "PCG compte 486 (charges constatées d'avance) ; NEP 330 (procédures substantives)",
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue4-audit-cloture-0019",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "ajustement proposé",
+        "charges à payer",
+        "charges constatées d'avance"
+      ],
+      "statement": "Lors de ses travaux de fin de mission sur les comptes au 31/12/N de la société Tau, l'auditeur relève deux erreurs, que la direction accepte de corriger :\n- une facture d'entretien des locaux pour décembre N, reçue le 10/01/N+1, de 3 000 € HT (TVA 20 %), n'a pas été comptabilisée en N ;\n- la prime d'assurance annuelle couvrant la période du 01/10/N au 30/09/N+1, 4 800 €, a été intégralement comptabilisée en charges (compte 616) en N.\nPassez l'écriture d'ajustement au 31/12/N (utilisez les comptes 615, 44586, 408, 486 et 616).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "615",
+          "label": "Entretien et réparations",
+          "debit": 3000,
+          "credit": 0
+        },
+        {
+          "account": "44586",
+          "label": "Taxes sur le chiffre d'affaires sur factures non parvenues",
+          "debit": 600,
+          "credit": 0
+        },
+        {
+          "account": "486",
+          "label": "Charges constatées d'avance",
+          "debit": 3600,
+          "credit": 0
+        },
+        {
+          "account": "408",
+          "label": "Fournisseurs, factures non parvenues",
+          "debit": 0,
+          "credit": 3600
+        },
+        {
+          "account": "616",
+          "label": "Primes d'assurances",
+          "debit": 0,
+          "credit": 3600
+        }
+      ],
+      "explanation": "Charge à payer : la prestation de décembre N est une charge de N ; on enregistre 3 000 € HT en 615, la TVA déductible attendue (600 €) en 44586 et la dette TTC (3 600 €) en 408. Charge constatée d'avance : 9 mois sur 12 de la prime concernent N+1, soit 4 800 × 9/12 = 3 600 €, portés au débit du 486 par le crédit du 616. Erreurs fréquentes : enregistrer la charge à payer TTC en 615, ou calculer la charge constatée d'avance sur 3 mois (1 200 €).",
+      "source_ref": "PCG comptes 408, 44586 et 486 ; NEP 450 (ajustements proposés à la direction)",
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue4-audit-cloture-0020",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-procedures-substantives",
+      "difficulty": 3,
+      "tags": [
+        "événements postérieurs",
+        "NEP 560",
+        "provision",
+        "dépréciation"
+      ],
+      "title": "Événements postérieurs à la clôture chez Sigma",
+      "context": "Vous auditez les comptes au 31/12/N de la SA Sigma, fabricant de mobilier (TVA 20 %). Les comptes doivent être arrêtés par le conseil d'administration le 15/03/N+1 ; vous prévoyez de signer votre rapport le 10/04/N+1.\nSeuil de signification : 60 000 €.\nLors de vos travaux de février N+1, vous relevez les faits suivants :\n- 20/01/N+1 : un jugement condamne Sigma à verser 90 000 € à un ancien agent commercial dont le contrat a été rompu en juin N. Une provision de 50 000 € figure dans les comptes au 31/12/N.\n- 25/01/N+1 : le client Delta, dont la créance de 48 000 € TTC est impayée depuis octobre N, est placé en liquidation judiciaire. Le liquidateur indique qu'aucun recouvrement n'est à attendre. Aucune dépréciation n'a été comptabilisée.\n- 12/02/N+1 : un incendie détruit un entrepôt ; les stocks détruits valent 120 000 € et l'assurance doit en couvrir 70 %. L'activité n'est pas durablement affectée.\nLa direction propose de ne rien modifier dans les comptes de N.",
+      "sub_questions": [
+        {
+          "id": "q1-classement",
+          "kind": "mcq",
+          "prompt": "Quel classement de ces trois événements est correct ?",
+          "options": [
+            "Les trois événements sont postérieurs à la clôture : aucun ne donne lieu à ajustement",
+            "Jugement et liquidation de Delta : ajustement des comptes de N ; incendie : information en annexe sans ajustement",
+            "Incendie : ajustement des comptes de N ; jugement et liquidation de Delta : information en annexe",
+            "Jugement : ajustement ; liquidation de Delta et incendie : information en annexe"
+          ],
+          "answer": [
+            1
+          ],
+          "points": 2,
+          "explanation": "Le jugement et la liquidation de Delta révèlent des situations qui existaient à la clôture (rupture du contrat en juin N, impayés depuis octobre N) : ils entraînent un ajustement. L'incendie est un événement nouveau, né après la clôture : il est mentionné dans l'annexe s'il est significatif, sans ajustement des comptes de N."
+        },
+        {
+          "id": "q2-ajustements",
+          "kind": "numeric",
+          "prompt": "Calculez le montant total des ajustements à apporter au résultat avant impôt de N (diminution du résultat, en euros).",
+          "expected_value": 80000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 4,
+          "explanation": "Complément de provision : 90 000 − 50 000 = 40 000 €. Dépréciation de la créance Delta sur sa base hors taxes : 48 000 / 1,20 = 40 000 €, dépréciée à 100 %. Total = 80 000 €. Calculer la dépréciation sur le TTC (48 000 €) donnerait 88 000 € ; ajouter la perte nette liée à l'incendie (36 000 €) serait une erreur de classement."
+        },
+        {
+          "id": "q3-incendie",
+          "kind": "true_false",
+          "prompt": "Le stock détruit par l'incendie doit faire l'objet d'une dépréciation dans les comptes au 31/12/N.",
+          "answer": false,
+          "points": 2,
+          "explanation": "Faux : au 31/12/N, le stock existait et n'était pas déprécié ; la perte résulte d'un événement survenu en N+1 et sera comptabilisée en N+1. Les comptes de N donnent seulement une information en annexe si l'événement est significatif."
+        },
+        {
+          "id": "q4-demarche",
+          "kind": "open",
+          "prompt": "Indiquez les procédures que le commissaire aux comptes met en œuvre sur les événements postérieurs jusqu'à la date de son rapport et sa démarche si la direction maintient sa position.",
+          "model_answer": "Jusqu'au 10/04/N+1, le CAC met en œuvre des procédures pour identifier les événements postérieurs : entretiens avec la direction, lecture des procès-verbaux des organes sociaux et des situations intermédiaires, examen des correspondances avec les avocats, suivi des litiges et des créances douteuses. Il demande à la direction de comptabiliser les ajustements (80 000 €) et de mentionner l'incendie en annexe. Le montant des ajustements dépasse le seuil de signification : si la direction refuse, le CAC formule une réserve pour désaccord, ou un refus de certifier si les effets étaient diffus. Il obtient dans la lettre d'affirmation, datée au plus près de son rapport, une déclaration selon laquelle tous les événements postérieurs nécessitant un ajustement ou une information ont été traités.",
+          "key_points": [
+            "Procédures d'identification jusqu'à la date du rapport : direction, procès-verbaux, situations intermédiaires, avocats",
+            "Demande d'ajustement (80 000 €) et de mention de l'incendie en annexe",
+            "Anomalie supérieure au seuil : réserve pour désaccord en cas de refus",
+            "Déclaration de la direction sur les événements postérieurs (NEP 580)"
+          ],
+          "points": 4
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Le cas fait distinguer les événements postérieurs qui révèlent une situation existant à la clôture (ajustement) de ceux qui naissent après (information en annexe), chiffrer les ajustements et en tirer les conséquences au regard du seuil de signification. Les procédures d'identification couvrent la période allant jusqu'à la date du rapport du CAC.",
+      "source_ref": "NEP 560 (événements postérieurs à la clôture) ; NEP 450 ; NEP 580 ; PCG compte 491",
+      "estimated_seconds": 900
+    },
+    {
+      "id": "ue4-audit-cloture-0021",
+      "type": "audit_case",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "recherche des passifs non enregistrés",
+        "charges à payer",
+        "exhaustivité"
+      ],
+      "title": "Recherche des passifs non enregistrés après une clôture accélérée",
+      "cycle": "cloture",
+      "situation": "Vous auditez les comptes au 31/12/N de la SAS Upsilon, société de services informatiques. Pour respecter le calendrier de son actionnaire, Upsilon a avancé la clôture de ses comptes au 8 janvier N+1, contre le 20 janvier les années précédentes. Les charges à payer (comptes 408 et 4686) s'élèvent à 410 000 € contre 395 000 € en N−1, pour une activité stable. La procédure de recensement des factures non parvenues a été testée lors de l'intérim et jugée efficace. La rémunération des dirigeants ne dépend pas du résultat et aucun covenant bancaire n'est en jeu. Le seuil de signification est de 70 000 €.",
+      "assertions": [
+        "Exhaustivité des charges et des dettes",
+        "Séparation des exercices"
+      ],
+      "procedures": {
+        "options": [
+          "Examiner les factures fournisseurs reçues et les décaissements de janvier et février N+1 et vérifier que les charges relatives à N ont été rattachées à cet exercice",
+          "Comparer les charges à payer par nature avec N−1 et avec l'activité, et obtenir des explications sur les variations",
+          "Demander directement aux principaux fournisseurs un relevé de compte au 31/12/N et le rapprocher des soldes comptables",
+          "Sélectionner des soldes du compte 408 dans la balance et les rapprocher des factures reçues",
+          "Envoyer des demandes de confirmation de solde aux principaux clients",
+          "Recalculer les dotations aux amortissements du matériel informatique"
+        ],
+        "answer": [
+          0,
+          1,
+          2
+        ]
+      },
+      "risk": {
+        "options": [
+          "Faible",
+          "Modéré",
+          "Élevé"
+        ],
+        "answer": 1,
+        "rationale": "Le raccourcissement du calendrier de clôture (8 janvier au lieu du 20) réduit le délai de réception des factures et accroît le risque d'omission de charges à payer. Ce risque est atténué par une procédure de recensement des factures non parvenues testée efficace, par la stabilité des charges à payer au regard de l'activité et par l'absence d'incitation de la direction à majorer le résultat : il est modéré."
+      },
+      "conclusion": {
+        "model_answer": "Les procédures mises en œuvre (examen des factures et décaissements postérieurs, revue analytique des charges à payer, rapprochement des relevés fournisseurs) permettent de conclure sur l'exhaustivité des charges et des dettes et sur la séparation des exercices. Les charges de N éventuellement omises sont chiffrées, communiquées à la direction pour correction et, à défaut, cumulées avec les autres anomalies non corrigées pour être comparées au seuil de signification de 70 000 €.",
+        "key_points": [
+          "Procédures orientées vers l'exhaustivité : partir des pièces postérieures et des tiers, non des soldes comptables",
+          "Lien entre clôture accélérée et risque d'omission",
+          "Traitement des omissions relevées : demande de correction, cumul (NEP 450)"
+        ]
+      },
+      "explanation": "Le risque porte sur l'exhaustivité des passifs. Les procédures pertinentes partent de sources indépendantes des soldes enregistrés : pièces de N+1, relevés des fournisseurs, attente analytique. Sélectionner des soldes du compte 408 dans la balance teste leur existence et ne peut pas révéler une charge omise. Les confirmations clients et le recalcul des amortissements relèvent d'autres cycles.",
+      "source_ref": "NEP 330 (réponses aux risques évalués) ; NEP 500 (exhaustivité) ; NEP 520 ; NEP 450",
+      "estimated_seconds": 420
+    },
+    {
+      "id": "ue4-audit-cloture-0022",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-pieges",
+      "difficulty": 1,
+      "tags": [
+        "séparation des exercices",
+        "charges à payer"
+      ],
+      "statement": "Un cabinet de conseil a réalisé pour la société Phi une mission achevée le 15/12/N. Sa facture, datée du 12/01/N+1, est réglée en février N+1. Phi clôture au 31/12/N. À quel exercice la charge doit-elle être rattachée ?",
+      "options": [
+        "À N+1, date de la facture",
+        "À N, date de réalisation de la prestation, par une charge à payer",
+        "À N+1, date du règlement",
+        "Pour moitié à N et pour moitié à N+1"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La charge se rattache à l'exercice au cours duquel la prestation a été reçue, indépendamment de la date de facture ou de paiement : elle est constatée en N par une charge à payer (compte 408, fournisseurs, factures non parvenues). La date de facture (option 1) et celle du règlement (option 3) sont sans incidence sur le rattachement. Une répartition (option 4) n'aurait de sens que pour une prestation s'étalant sur les deux exercices.",
+      "source_ref": "C. com. art. L. 123-13 (le compte de résultat récapitule les produits et charges de l'exercice sans tenir compte de leur date d'encaissement ou de paiement) ; PCG compte 408",
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-audit-cloture-0023",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-pieges",
+      "difficulty": 2,
+      "tags": [
+        "continuité d'exploitation",
+        "opinion",
+        "annexe"
+      ],
+      "statement": "Le commissaire aux comptes conclut à l'existence d'une incertitude significative sur la continuité d'exploitation. La convention de continuité reste appropriée et l'annexe décrit de façon adéquate l'incertitude et les plans de la direction. Quelle est la conséquence sur son rapport ?",
+      "options": [
+        "Certification avec réserve",
+        "Refus de certifier",
+        "Impossibilité de certifier",
+        "Certification sans réserve, le rapport comportant une mention spécifique de l'incertitude significative liée à la continuité d'exploitation"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Les comptes, annexe comprise, donnent une information adéquate : il n'y a ni désaccord ni limitation, donc pas de réserve (option 1) ni de refus (option 2). L'impossibilité de certifier (option 3) suppose que le CAC n'a pu collecter les éléments nécessaires. Le CAC certifie sans réserve et attire l'attention du lecteur sur l'incertitude dans une partie spécifique de son rapport. Si l'information en annexe était insuffisante, il formulerait une réserve ou un refus.",
+      "source_ref": "NEP 570 (conséquences sur le rapport) ; NEP 700",
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-cloture-0024",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-pieges",
+      "difficulty": 3,
+      "multiple": true,
+      "tags": [
+        "événements postérieurs",
+        "NEP 560",
+        "ajustement"
+      ],
+      "statement": "La société Chi clôture au 31/12/N ; ses comptes sont arrêtés le 20/03/N+1. Parmi les événements suivants, survenus entre ces deux dates, lesquels entraînent un ajustement des comptes de N ? (plusieurs réponses possibles)",
+      "options": [
+        "En février N+1, liquidation judiciaire d'un client dont les retards de paiement étaient apparus à l'automne N",
+        "En mars N+1, incendie d'un entrepôt détruisant une partie des stocks",
+        "En janvier N+1, vente à un prix inférieur à leur coût de produits finis qui figuraient en stock au 31/12/N, le marché s'étant dégradé dès novembre N",
+        "En janvier N+1, forte baisse du cours de bourse de titres de placement détenus, due à l'annonce d'une fusion faite le 15/01/N+1"
+      ],
+      "answer": [
+        0,
+        2
+      ],
+      "explanation": "L'ajustement s'impose quand l'événement révèle une situation existant à la clôture. La liquidation du client (option 1) confirme un risque de non-recouvrement déjà présent en N : la créance doit être dépréciée. La vente à perte de produits en stock dans un marché dégradé depuis novembre N (option 3) renseigne sur leur valeur nette de réalisation à la clôture : le stock doit être déprécié. L'incendie (option 2) et la baisse de cours liée à une annonce de janvier N+1 (option 4) résultent de faits nés après la clôture : information en annexe si significatif, sans ajustement.",
+      "source_ref": "NEP 560 (événements postérieurs à la clôture) ; PCG, règles de dépréciation des actifs (règl. ANC 2014-03)",
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue4-audit-cloture-0025",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-pieges",
+      "difficulty": 1,
+      "tags": [
+        "charges constatées d'avance",
+        "TVA"
+      ],
+      "statement": "Les charges constatées d'avance se calculent sur le montant hors taxes de la charge, la TVA déductible n'étant pas régularisée.",
+      "answer": true,
+      "justification": "Vrai : seule la charge, enregistrée hors taxes en classe 6, est répartie entre les exercices ; la TVA suit ses propres règles de déduction.",
+      "explanation": "Le compte 486 neutralise la fraction de charge relative à l'exercice suivant. Cette charge a été comptabilisée hors taxes, la TVA déductible ayant été portée en 4456 selon les règles fiscales : calculer la charge constatée d'avance sur le TTC surévaluerait l'actif et le résultat.",
+      "source_ref": "PCG compte 486 (charges constatées d'avance)",
+      "estimated_seconds": 35
+    },
+    {
+      "id": "ue4-audit-cloture-0026",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-pieges",
+      "difficulty": 3,
+      "tags": [
+        "produits constatés d'avance",
+        "487",
+        "TVA"
+      ],
+      "statement": "La société de services Psi clôture au 31/12/N. Deux contrats ont été intégralement comptabilisés en produits de N :\n- un contrat d'assistance technique de six mois débutant le 01/11/N, facturé en totalité au démarrage pour 43 200 € TTC (TVA 20 %) ; la prestation est rendue de façon régulière sur la durée du contrat ;\n- un abonnement annuel de maintenance couvrant la période du 01/10/N au 30/09/N+1, facturé 14 400 € HT.\nCalculez le montant des produits constatés d'avance à comptabiliser au 31/12/N (en euros).",
+      "expected_value": 34800,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Assistance : montant HT = 43 200 / 1,20 = 36 000 € ; 4 mois sur 6 restent à exécuter (janvier à avril N+1) : 36 000 × 4/6 = 24 000 €. Maintenance : 9 mois sur 12 : 14 400 × 9/12 = 10 800 €. Total = 34 800 € au crédit du compte 487. Calculer l'assistance sur le TTC donnerait 28 800 + 10 800 = 39 600 € ; inverser les fractions (mois écoulés) donnerait 12 000 + 3 600 = 15 600 €.",
+      "source_ref": "PCG compte 487 (produits constatés d'avance) ; C. com. art. L. 123-13 (produits et charges de l'exercice)",
+      "estimated_seconds": 210
+    },
+    {
+      "id": "ue4-audit-cloture-0027",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "verified": true,
+      "notion": "cloture-pieges",
+      "difficulty": 3,
+      "tags": [
+        "séparation des exercices",
+        "comptes de régularisation",
+        "ajustement proposé"
+      ],
+      "title": "Séparation des exercices chez Kappa",
+      "context": "Vous auditez les comptes au 31/12/N de la SARL Kappa, distributeur de matériel de laboratoire (TVA 20 %). Lors des travaux de fin de mission, vous relevez :\n1. Honoraires d'avocat pour une assistance réalisée en novembre et décembre N : facture de 7 500 € HT reçue le 15/01/N+1, non comptabilisée en N.\n2. Loyer des locaux pour le premier trimestre N+1, 12 000 € HT, payé le 28/12/N et comptabilisé en charges de N.\n3. Contrat de maintenance vendu à un client pour la période du 01/09/N au 31/08/N+1, facturé 27 000 € HT le 01/09/N et intégralement comptabilisé en produits de N.\n4. Marchandises commandées, facturées par le fournisseur le 29/12/N pour 5 000 € HT et comptabilisées en achats de N, mais reçues le 03/01/N+1 ; le transfert de propriété et des risques intervient à la réception. Elles ne figurent pas dans le stock inventorié au 31/12/N.\nLe seuil des anomalies manifestement insignifiantes est de 2 000 €.",
+      "sub_questions": [
+        {
+          "id": "q1-pca",
+          "kind": "numeric",
+          "prompt": "Calculez le produit constaté d'avance relatif au contrat de maintenance (point 3), en euros.",
+          "expected_value": 18000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 2,
+          "explanation": "8 mois sur 12 restent à exécuter après la clôture (janvier à août N+1) : 27 000 × 8/12 = 18 000 €. Retenir les 4 mois écoulés donnerait 9 000 €."
+        },
+        {
+          "id": "q2-ecriture-cap",
+          "kind": "journal_entry",
+          "prompt": "Passez l'écriture d'ajustement relative aux honoraires d'avocat (point 1) au 31/12/N (utilisez les comptes 6226, 44586 et 408).",
+          "date": "31/12/N",
+          "entries": [
+            {
+              "account": "6226",
+              "label": "Honoraires",
+              "debit": 7500,
+              "credit": 0
+            },
+            {
+              "account": "44586",
+              "label": "Taxes sur le chiffre d'affaires sur factures non parvenues",
+              "debit": 1500,
+              "credit": 0
+            },
+            {
+              "account": "408",
+              "label": "Fournisseurs, factures non parvenues",
+              "debit": 0,
+              "credit": 9000
+            }
+          ],
+          "points": 3,
+          "explanation": "La prestation a été reçue en N : charge de 7 500 € HT en 6226, TVA déductible attendue de 1 500 € en 44586, dette de 9 000 € TTC en 408."
+        },
+        {
+          "id": "q3-incidence",
+          "kind": "numeric",
+          "prompt": "Compte tenu des quatre points, de combien le résultat avant impôt de N publié par Kappa est-il surévalué (en euros) ?",
+          "expected_value": 8500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 4,
+          "explanation": "Point 1 : charge omise, résultat surévalué de 7 500 €. Point 2 : charge constatée d'avance non constatée, résultat sous-évalué de 12 000 €. Point 3 : produit constaté d'avance omis, résultat surévalué de 18 000 €. Point 4 : achat de N+1 comptabilisé en N sans contrepartie en stock, résultat sous-évalué de 5 000 €. Solde : 7 500 − 12 000 + 18 000 − 5 000 = 8 500 € de surévaluation. Raisonner en TTC sur le point 1 (9 000 €) donnerait 10 000 € ; oublier le point 4 donnerait 13 500 €."
+        },
+        {
+          "id": "q4-analyse",
+          "kind": "open",
+          "prompt": "Expliquez pourquoi le solde net de 8 500 € ne suffit pas à apprécier ces anomalies et indiquez la démarche de l'auditeur.",
+          "model_answer": "Le solde net masque des anomalies de sens contraire portant sur des postes différents : charge et dette omises (point 1, 9 000 € TTC au passif), produits surévalués et passif de 18 000 € omis (point 3), actif de 12 000 € omis (point 2), achat de N+1 comptabilisé à tort en N (point 4). Chaque anomalie, toutes supérieures au seuil des anomalies manifestement insignifiantes, s'apprécie aussi individuellement, par poste et par nature, notamment au regard de l'exhaustivité des passifs. L'auditeur communique les quatre anomalies à la direction et lui demande de les corriger ; il se demande si leur nombre révèle une faiblesse de la procédure de clôture (recensement des factures non parvenues, revue des contrats facturés d'avance) justifiant d'étendre ses tests de séparation. Les anomalies non corrigées sont cumulées et appréciées au regard du seuil de signification, et figurent dans la lettre d'affirmation.",
+          "key_points": [
+            "Les compensations entre anomalies de sens contraire se font avec prudence : appréciation poste par poste",
+            "Toutes les anomalies dépassent le seuil des anomalies manifestement insignifiantes et sont communiquées pour correction",
+            "Le nombre d'erreurs de séparation interroge le contrôle interne de clôture et l'étendue des tests",
+            "Cumul des anomalies non corrigées et mention dans la lettre d'affirmation"
+          ],
+          "points": 3
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Le cas mobilise les pièges de la séparation des exercices : rattachement selon la date de la prestation ou du transfert de propriété, non selon la facture ou le paiement ; calcul des comptes de régularisation sur le HT ; incidence nette sur le résultat et limites de la compensation entre anomalies (NEP 450).",
+      "source_ref": "PCG comptes 408, 44586, 486, 487 ; C. com. art. L. 123-13 (produits et charges de l'exercice) ; NEP 450",
+      "estimated_seconds": 900
+    }
+  ]
+}

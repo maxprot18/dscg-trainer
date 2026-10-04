@@ -1,0 +1,279 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-fusion-parite-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "parite-echange",
+      "difficulty": 1,
+      "tags": [
+        "soulte",
+        "rompus",
+        "limite légale"
+      ],
+      "statement": "Lors d'une fusion, l'absorbante prévoit de régler une partie de la rémunération des associés de l'absorbée par une soulte en espèces. Quelle est la limite légale de cette soulte ?",
+      "options": [
+        "10 % de la valeur nominale des actions attribuées",
+        "10 % de la valeur réelle des actions attribuées",
+        "10 % du capital de l'absorbante après la fusion",
+        "Aucune limite, dès lors que le commissaire à la fusion l'approuve"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Le Code de commerce autorise le versement d'une soulte en espèces aux associés de la société absorbée, dans la limite de 10 % de la valeur nominale des parts ou actions attribuées. L'option 2 est fausse : la limite se calcule sur la valeur nominale, non sur la valeur réelle. L'option 3 est fausse : la base est constituée des titres attribués aux associés de l'absorbée, non du capital total de l'absorbante. L'option 4 est fausse : la loi plafonne la soulte, sinon l'opération ne serait plus rémunérée principalement en titres.",
+      "source_ref": "C. com. art. L. 236-1 et s. (rédaction issue de l'ordonnance n° 2023-393)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-fusion-parite-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "parite-echange",
+      "difficulty": 2,
+      "tags": [
+        "méthodes d'évaluation",
+        "homogénéité",
+        "parité"
+      ],
+      "statement": "Pour fixer la parité d'une fusion, les dirigeants évaluent la société absorbante par son actif net comptable et la société absorbée par une valeur de rendement. Quelle critique principale peut-on formuler ?",
+      "options": [
+        "La parité doit être fixée sur la base des valeurs nominales des actions",
+        "L'absorbée doit être évaluée à la valeur comptable, puisque c'est sa valeur d'apport",
+        "Les deux sociétés doivent être évaluées selon des méthodes homogènes",
+        "Aucune : chaque société peut être évaluée selon la méthode la plus adaptée à son activité"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "La parité compare la valeur des deux sociétés : pour qu'elle soit équitable, les deux sociétés doivent être évaluées selon les mêmes méthodes, avec les mêmes pondérations et à la même date. Évaluer l'absorbante par l'actif net comptable et l'absorbée par la valeur de rendement fausse la comparaison. L'option 1 est fausse : la valeur nominale ne mesure pas la valeur des sociétés. L'option 2 est fausse : la valeur d'apport (comptabilisation) ne détermine pas la parité, qui repose sur des valeurs réelles. L'option 4 est fausse : la liberté de choix des méthodes est encadrée par l'exigence d'homogénéité, que vérifie le commissaire à la fusion.",
+      "source_ref": "C. com. art. L. 236-1 et s. (rapport du commissaire à la fusion sur le caractère équitable de la parité)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-fusion-parite-0003",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "parite-echange",
+      "difficulty": 2,
+      "tags": [
+        "nombre de titres à émettre",
+        "participation préalable"
+      ],
+      "statement": "La société Cèdre détient 2 000 des 10 000 actions de la société Daphné, qu'elle absorbe. Les valeurs réelles retenues pour la parité sont de 84 € par action Daphné et de 120 € par action Cèdre. Combien d'actions Cèdre faut-il émettre pour rémunérer l'absorption ? Réponse en nombre d'actions.",
+      "expected_value": 5600,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "actions",
+      "decimals": 0,
+      "explanation": "Parité = 84 / 120 = 0,7, soit 7 actions Cèdre pour 10 actions Daphné. Les 2 000 actions Daphné détenues par Cèdre ne sont pas échangées (une société ne peut recevoir ses propres actions en échange de titres qu'elle détient) : seules 10 000 − 2 000 = 8 000 actions sont rémunérées. Titres à émettre = 8 000 × 0,7 = 5 600 actions. Rémunérer la totalité des actions donnerait 7 000, erreur classique.",
+      "source_ref": "C. com. art. L. 236-1 et s. (non-échange des titres détenus par l'absorbante)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue4-fusion-parite-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "parite-echange",
+      "difficulty": 3,
+      "tags": [
+        "valeur de l'absorbante",
+        "participation préalable",
+        "augmentation de capital"
+      ],
+      "statement": "La société Faro (30 000 actions de nominal 15 €) absorbe la société Gênes (10 000 actions), dont elle détient 2 500 actions inscrites à son bilan pour 200 000 €. La parité est fondée sur l'actif net réévalué. Actif net réévalué de Gênes : 960 000 €. Actif net réévalué de Faro, hors titres Gênes : 2 160 000 €. Calculez le montant de l'augmentation de capital de Faro (en euros).",
+      "expected_value": 135000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "explanation": "La valeur de Faro doit intégrer la valeur réelle de sa participation dans Gênes : 25 % × 960 000 = 240 000 €. Valeur de Faro = 2 160 000 + 240 000 = 2 400 000 €, soit 2 400 000 / 30 000 = 80 € par action. Valeur de l'action Gênes = 960 000 / 10 000 = 96 €. Parité = 96 / 80 = 6 actions Faro pour 5 actions Gênes. Actions Gênes à rémunérer : 10 000 − 2 500 = 7 500. Titres émis = 7 500 × 6/5 = 9 000 actions. Augmentation de capital = 9 000 × 15 = 135 000 €. Erreurs classiques : ignorer la participation (Faro à 72 €, 10 000 actions, 150 000 €) ou la retenir à sa valeur comptable (Faro à 78,67 €).",
+      "source_ref": "C. com. art. L. 236-1 et s. ; PCG titre VII (règl. ANC 2017-01)",
+      "verified": true,
+      "estimated_seconds": 300
+    },
+    {
+      "id": "ue4-fusion-parite-0005",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "parite-echange",
+      "difficulty": 2,
+      "tags": [
+        "écritures chez l'absorbante",
+        "valeur réelle",
+        "augmentation de capital",
+        "prime de fusion"
+      ],
+      "statement": "La société Céleste absorbe la société Dorine (6 000 actions) ; les sociétés sont sous contrôle distinct et l'opération est réalisée à l'endroit. Valeurs d'apport (valeurs réelles) : fonds commercial 40 000 €, terrain 120 000 €, construction 200 000 €, stocks de marchandises 50 000 €, créances clients 70 000 €, banque 20 000 € ; passifs pris en charge : emprunt 150 000 €, dettes fournisseurs 50 000 €. La parité est de 2 actions Céleste (nominal 25 €) pour 3 actions Dorine. Passez chez Céleste l'écriture unique d'enregistrement des apports et de leur rémunération, sans passer par un compte d'associés intermédiaire. On ignore la fiscalité.",
+      "date": "Date d’effet de la fusion",
+      "entries": [
+        {
+          "account": "207",
+          "label": "Fonds commercial",
+          "debit": 40000,
+          "credit": 0
+        },
+        {
+          "account": "211",
+          "label": "Terrains",
+          "debit": 120000,
+          "credit": 0
+        },
+        {
+          "account": "213",
+          "label": "Constructions",
+          "debit": 200000,
+          "credit": 0
+        },
+        {
+          "account": "37",
+          "label": "Stocks de marchandises",
+          "debit": 50000,
+          "credit": 0
+        },
+        {
+          "account": "411",
+          "label": "Clients",
+          "debit": 70000,
+          "credit": 0
+        },
+        {
+          "account": "512",
+          "label": "Banques",
+          "debit": 20000,
+          "credit": 0
+        },
+        {
+          "account": "164",
+          "label": "Emprunts auprès des établissements de crédit",
+          "debit": 0,
+          "credit": 150000
+        },
+        {
+          "account": "401",
+          "label": "Fournisseurs",
+          "debit": 0,
+          "credit": 50000
+        },
+        {
+          "account": "101",
+          "label": "Capital",
+          "debit": 0,
+          "credit": 100000
+        },
+        {
+          "account": "1042",
+          "label": "Primes de fusion",
+          "debit": 0,
+          "credit": 200000
+        }
+      ],
+      "explanation": "Actif net apporté à la valeur réelle : 40 000 + 120 000 + 200 000 + 50 000 + 70 000 + 20 000 − 150 000 − 50 000 = 300 000 €. Parité 2 pour 3 : titres émis = 6 000 × 2/3 = 4 000 actions ; augmentation de capital = 4 000 × 25 = 100 000 € ; prime de fusion = 300 000 − 100 000 = 200 000 € (compte 1042). Chaque actif est débité pour sa valeur réelle (fonds commercial au compte 207), les dettes reprises sont créditées, et la rémunération est portée au capital et à la prime de fusion.",
+      "source_ref": "PCG titre VII, règles d’évaluation des apports (règl. ANC 2014-03 modifié par le règl. ANC 2017-01) ; comptes 207, 211, 213, 37, 411, 512, 164, 401, 101 et 1042",
+      "verified": true,
+      "estimated_seconds": 300
+    },
+    {
+      "id": "ue4-fusion-parite-0006",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "parite-echange",
+      "difficulty": 2,
+      "tags": [
+        "parité",
+        "approche multicritère",
+        "rompus",
+        "soulte"
+      ],
+      "title": "Parité et rompus dans la fusion Elsa – Fiona",
+      "context": "La société Elsa (50 000 actions de nominal 10 €), contrôlée à 70 % par la holding Hermine, absorbe la société Fiona (12 000 actions de nominal 20 €), dont le capital est détenu par des actionnaires sans lien avec Hermine. Elsa ne détient aucune action Fiona.\nLes deux sociétés sont évaluées selon la même méthode : moyenne arithmétique de l'actif net réévalué par action et de la valeur de rendement par action.\nElsa : actif net réévalué 88 € par action ; valeur de rendement 92 € par action.\nFiona : actif net réévalué 112 € par action ; valeur de rendement 128 € par action.\nAprès l'opération, Hermine conserve le contrôle d'Elsa. Les apports sont évalués à la valeur réelle ; la valeur d'apport globale est égale à la valeur de Fiona retenue pour la parité.\nM. Garnier détient 100 actions Fiona. On ignore la fiscalité.",
+      "sub_questions": [
+        {
+          "id": "titres-emis",
+          "kind": "numeric",
+          "prompt": "Combien d'actions Elsa sont émises ?",
+          "points": 2,
+          "expected_value": 16000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "actions",
+          "decimals": 0,
+          "explanation": "Valeur Elsa = (88 + 92) / 2 = 90 € ; valeur Fiona = (112 + 128) / 2 = 120 €. Parité = 120 / 90 = 4/3, soit 4 actions Elsa pour 3 actions Fiona. Titres émis = 12 000 × 4/3 = 16 000 actions."
+        },
+        {
+          "id": "augmentation-capital",
+          "kind": "numeric",
+          "prompt": "Calculez l'augmentation de capital d'Elsa (en euros).",
+          "points": 2,
+          "expected_value": 160000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "explanation": "16 000 actions × 10 € de nominal = 160 000 €. Utiliser le nominal de Fiona (20 €) est une erreur."
+        },
+        {
+          "id": "prime-fusion",
+          "kind": "numeric",
+          "prompt": "Calculez la prime de fusion (en euros).",
+          "points": 2,
+          "expected_value": 1280000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "explanation": "Valeur d'apport = 12 000 × 120 = 1 440 000 € ; prime de fusion = 1 440 000 − 160 000 = 1 280 000 €."
+        },
+        {
+          "id": "rompus",
+          "kind": "mcq",
+          "prompt": "Comment M. Garnier peut-il procéder à l'échange de ses 100 actions Fiona ?",
+          "points": 2,
+          "options": [
+            "Il reçoit 133 actions Elsa et l'action restante est annulée sans indemnité",
+            "Il échange 99 actions contre 132 actions Elsa ; pour la 100e, il achète 2 droits pour obtenir 4 actions Elsa supplémentaires ou vend son droit",
+            "Il reçoit 134 actions Elsa, l'arrondi se faisant toujours au nombre entier supérieur",
+            "Il échange ses 100 actions contre 75 actions Elsa"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "La parité porte sur des lots de 3 actions Fiona : 99 actions (33 lots) donnent 132 actions Elsa. L'action restante forme un rompu : M. Garnier achète 2 droits (pour compléter un lot de 3 et recevoir 4 actions Elsa) ou vend son droit. L'option 1 et l'option 3 ignorent le mécanisme des rompus ; l'option 4 applique la parité à l'envers (100 × 3/4)."
+        },
+        {
+          "id": "soulte",
+          "kind": "open",
+          "prompt": "Le traité envisage de régler les rompus par une soulte en espèces. Quelle limite légale s'applique et quel est le plafond global dans cette opération ?",
+          "points": 2,
+          "model_answer": "Le Code de commerce limite la soulte en espèces à 10 % de la valeur nominale des actions attribuées aux associés de l'absorbée. Ici, les actions attribuées ont une valeur nominale totale de 16 000 × 10 = 160 000 € : le total des soultes ne peut dépasser 16 000 €. La limite porte sur la valeur nominale, non sur la valeur réelle (qui donnerait 144 000 €).",
+          "key_points": [
+            "Soulte limitée à 10 % de la valeur nominale des titres attribués",
+            "Plafond global : 10 % × 160 000 = 16 000 €",
+            "La valeur réelle des titres n'est pas la base de calcul"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Valeurs moyennes : Elsa (88 + 92) / 2 = 90 €, Fiona (112 + 128) / 2 = 120 € ; parité 120 / 90 = 4 actions Elsa pour 3 actions Fiona ; 16 000 actions émises, augmentation de capital 160 000 €, prime de fusion 1 440 000 − 160 000 = 1 280 000 €. Les rompus se règlent par achat ou vente de droits, ou par une soulte plafonnée à 10 % de la valeur nominale des titres attribués.",
+      "source_ref": "C. com. art. L. 236-1 et s. ; PCG titre VII (règl. ANC 2017-01)",
+      "verified": true,
+      "estimated_seconds": 600
+    }
+  ]
+}
