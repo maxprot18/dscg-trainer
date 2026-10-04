@@ -139,6 +139,126 @@
       "source_ref": "Boston Consulting Group growth-share matrix (Henderson, 1970) ; Ansoff, \"Strategies for diversification\", Harvard Business Review (1957)",
       "verified": true,
       "estimated_seconds": 840
+    },
+    {
+      "id": "ue6-mgmt-strat-0004",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "management-si-marketing",
+      "notion": "strategy-business-models",
+      "difficulty": 1,
+      "tags": [
+        "Ansoff matrix",
+        "market penetration"
+      ],
+      "statement": "A coffee-shop chain operating only in Belgium launches a loyalty app and a \"second coffee half price\" offer to encourage its existing customers to visit its shops more often. It sells no new products and opens no new markets. In the Ansoff matrix, this is…",
+      "options": [
+        "product development.",
+        "diversification.",
+        "market penetration.",
+        "market development."
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Option 3 is correct: selling more of the existing products to the existing market (here, increasing purchase frequency of current customers) is market penetration, the least risky Ansoff option. Option 1 would require new products for the same customers; option 4, existing products sold to new customers or countries (e.g. opening shops in the Netherlands); option 2, new products in new markets, the riskiest option.",
+      "source_ref": "Ansoff, \"Strategies for Diversification\", Harvard Business Review (1957): product-market growth matrix",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue6-mgmt-strat-0005",
+      "type": "true_false",
+      "ue": "UE6",
+      "theme": "management-si-marketing",
+      "notion": "strategy-business-models",
+      "difficulty": 2,
+      "tags": [
+        "BCG matrix",
+        "relative market share"
+      ],
+      "statement": "In the BCG matrix, a business unit with a relative market share of 1.5 is the leader of its market: its market share is one and a half times that of its largest competitor.",
+      "answer": true,
+      "justification": "Relative market share = own share ÷ share of the largest competitor; a value above 1 means the unit is the market leader.",
+      "explanation": "Example: a 30% share against 20% for the largest rival gives 30 ÷ 20 = 1.5. Only the market leader can have a relative share above 1; for any other company the largest competitor is the leader and the ratio is below 1. A relative share of 1.5 places the unit on the left-hand (\"high share\") side of the matrix: a star if market growth is high, a cash cow if it is low. Dividing by the total market (30% → 0.3) is the classic error.",
+      "source_ref": "Boston Consulting Group growth-share matrix (Henderson, 1970): relative market share",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue6-mgmt-strat-0006",
+      "type": "case_study",
+      "ue": "UE6",
+      "theme": "management-si-marketing",
+      "notion": "strategy-business-models",
+      "difficulty": 2,
+      "tags": [
+        "freemium",
+        "five forces",
+        "network effects",
+        "generic strategies"
+      ],
+      "title": "Business model review at Lingopath",
+      "context": "Lingopath is a start-up based in Lisbon that has developed a language-learning app. You are preparing a briefing in English for a venture capital fund considering an investment.\n\nBusiness model: the basic lessons are free and financed by advertising. A premium plan, at €8 per month, removes advertising and gives access to weekly live sessions with native-speaking tutors. At 31 December 2025, the app had 250,000 active users, of whom 10,000 paid for the premium plan (assume this number stays stable over the next twelve months).\n\nDistribution: the app is downloaded almost exclusively through the two dominant mobile app stores, which charge a commission of 15% to 30% on in-app subscriptions and can change their rules unilaterally.\n\nCommunity: users can post short texts in the language they are learning and have them corrected by native speakers who are themselves learners of another language.\n\nCompetition: several large apps offer free lessons; Lingopath does not try to be the cheapest and targets adults preparing for professional language certificates, a segment the large apps serve poorly.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculate the annual revenue from premium subscriptions expected over the next twelve months, before app-store commissions, in euros.",
+          "expected_value": 960000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "10,000 paying users × €8 × 12 months = €960,000. Applying the price to all 250,000 active users (€24m) ignores the freemium logic: only the converted users (10,000 ÷ 250,000 = 4%) pay."
+        },
+        {
+          "id": "q2",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "In Porter's five forces model, the app stores' position mainly illustrates…",
+          "options": [
+            "the threat of new entrants.",
+            "the bargaining power of suppliers.",
+            "the threat of substitutes.",
+            "the bargaining power of buyers."
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "The app stores provide an essential input (access to users and payment), there are only two of them and Lingopath cannot bypass them: they are powerful suppliers, able to capture part of the margin through their commission. They are neither new competitors nor a substitute product; the buyers are the learners."
+        },
+        {
+          "id": "q3",
+          "kind": "true_false",
+          "points": 2,
+          "prompt": "The community correction feature creates network effects: the service becomes more valuable to each user as the number of users grows.",
+          "answer": true,
+          "explanation": "The more learners of different languages join, the more native speakers are available to correct texts quickly: each new user increases the value of the service for the others (direct network effect), which also raises a barrier to entry for new apps."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "points": 4,
+          "prompt": "In about 80 words, in English, identify Lingopath's generic strategy (Porter) and explain one risk of its business model.",
+          "model_answer": "Lingopath follows a differentiation focus strategy: it does not compete on price but targets a niche, adults preparing for professional certificates, with distinctive features (live tutors, peer correction) that justify a premium subscription. The main risk is its dependence on the two app stores, powerful suppliers that take up to 30% of subscription revenue and can change their rules. A second risk is a low conversion rate: only 4% of users pay, so advertising and conversion must cover the cost of free users.",
+          "key_points": [
+            "Differentiation focus (niche: adults preparing professional certificates), not cost leadership",
+            "Distinctive features justifying a premium price (live tutors, community)",
+            "One risk explained: dependence on app stores (supplier power, commission up to 30%) or low conversion rate (4%) / imitation by large apps"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "The case applies three frameworks to a digital start-up: the freemium model (revenue comes from the converted fraction of users), the five forces (app stores as powerful suppliers) and network effects, then Porter's generic strategies (differentiation focus on a niche).",
+      "source_ref": "Porter, Competitive Strategy (1980): five forces and generic strategies ; Osterwalder and Pigneur, Business Model Generation (2010): freemium pattern",
+      "verified": true,
+      "estimated_seconds": 660
     }
   ]
 }

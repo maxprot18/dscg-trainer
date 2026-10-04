@@ -93,6 +93,60 @@
       "source_ref": "IAS 16 §6 (depreciation) ; IAS 38 §8 (amortisation) ; IAS 36 §6 (impairment loss) — règlement UE 2023/1803",
       "verified": true,
       "estimated_seconds": 30
+    },
+    {
+      "id": "ue6-vocab-ifrsterm-0005",
+      "type": "numeric",
+      "ue": "UE6",
+      "theme": "vocabulaire-comptable-financier",
+      "notion": "ifrs-terminology",
+      "difficulty": 2,
+      "tags": [
+        "impairment loss",
+        "carrying amount",
+        "recoverable amount",
+        "IAS 36"
+      ],
+      "statement": "Note 12 of the IFRS accounts of Calder Packaging plc describes a production line at 31 December 2025 (€k): cost 1,500; accumulated depreciation 600; no previous impairment. Because of a fall in demand, the line is tested for impairment. Its fair value is 730 and the costs of disposal would be 30; its value in use (present value of the future cash flows) is 760.\n\nCalculate the impairment loss to be recognised, in €k (enter 0 if there is none).",
+      "expected_value": 140,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€k",
+      "decimals": 0,
+      "explanation": "Carrying amount = cost − accumulated depreciation = 1,500 − 600 = 900. Fair value less costs of disposal = 730 − 30 = 700. Recoverable amount = the higher of 700 and 760 = 760 (IAS 36 §18). Impairment loss = 900 − 760 = 140, recognised in profit or loss (IAS 36 §59-60); in French, a dépréciation of 140 k€. Taking the lower value (900 − 700 = 200) or ignoring costs of disposal and value in use (900 − 730 = 170) are the classic errors.",
+      "source_ref": "IAS 36 §6, §18 and §59-60 ; IAS 16 §6 (carrying amount) — règlement UE 2023/1803",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue6-vocab-ifrsterm-0006",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "vocabulaire-comptable-financier",
+      "notion": "ifrs-terminology",
+      "difficulty": 2,
+      "tags": [
+        "other comprehensive income",
+        "revaluation surplus",
+        "profit or loss"
+      ],
+      "statement": "Which of the following items is recognised in other comprehensive income (OCI, autres éléments du résultat global) rather than in profit or loss?",
+      "options": [
+        "An impairment loss on goodwill",
+        "A gain on the disposal of a delivery van",
+        "An exchange difference on a trade payable denominated in US dollars",
+        "A revaluation surplus on land measured under the revaluation model"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Option 4 is correct: an increase in carrying amount arising on revaluation is recognised in OCI and accumulated in equity under the heading revaluation surplus (IAS 16 §39), unless it reverses a revaluation decrease previously recognised in profit or loss. Option 1 is wrong: an impairment loss on goodwill is recognised in profit or loss (IAS 36 §60) and is never reversed. Option 2 is wrong: a gain on derecognition of an item of PP&E is included in profit or loss (IAS 16 §68). Option 3 is wrong: exchange differences on settling or translating monetary items such as trade payables are recognised in profit or loss (IAS 21 §28).",
+      "source_ref": "IAS 1 §7 (other comprehensive income) ; IAS 16 §39 and §68 ; IAS 21 §28 ; IAS 36 §60 — règlement UE 2023/1803",
+      "verified": true,
+      "estimated_seconds": 60
     }
   ]
 }

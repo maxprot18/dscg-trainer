@@ -93,6 +93,60 @@
       "source_ref": "Regulation (EU) 2024/1689 (AI Act), human oversight of high-risk systems ; usual definition of AI hallucination",
       "verified": true,
       "estimated_seconds": 40
+    },
+    {
+      "id": "ue6-mgmt-ai-0005",
+      "type": "numeric",
+      "ue": "UE6",
+      "theme": "management-si-marketing",
+      "notion": "digital-transformation-ai",
+      "difficulty": 2,
+      "tags": [
+        "GDPR",
+        "administrative fines",
+        "lawful basis"
+      ],
+      "statement": "Solvane SAS, the French subsidiary of a European retail group, passed the purchase histories of 400,000 customers to advertising partners without any lawful basis for this processing (no consent, no other ground under art. 6). Infringements of the basic principles for processing, including the conditions of lawfulness, fall within the highest tier of administrative fines (GDPR art. 83(5)(a)). Assume that, for the purpose of the fine, the relevant figure is the total worldwide annual turnover of the group (the undertaking) for the preceding financial year, i.e. €1,350m; Solvane's own turnover is €280m.\n\nCalculate the maximum fine the authority may impose, in millions of euros.",
+      "expected_value": 54,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "€m",
+      "decimals": 0,
+      "explanation": "In the highest tier (here, processing without a lawful basis, art. 5 and 6), the maximum fine is €20m or 4% of the total worldwide annual turnover of the preceding financial year, whichever is higher (GDPR art. 83(5)). 4% × €1,350m = €54m, which is higher than €20m: the ceiling is €54m. Two classic errors: applying 4% to the subsidiary's own turnover (4% × 280 = €11.2m, then retaining €20m because it is higher), whereas the statement says the group's turnover is the relevant figure; and taking the lower of the two amounts. The €54m is a ceiling: the actual fine depends on the criteria of art. 83(2) (gravity, duration, intentional or negligent character, cooperation, number of people affected). By contrast, breaches of the controller's obligations on security or breach notification (art. 32-33) fall in the lower tier of art. 83(4) (€10m or 2%).",
+      "source_ref": "Regulation (EU) 2016/679 (GDPR), art. 6 (lawfulness of processing), art. 83(2), 83(4) and 83(5)(a)",
+      "verified": true,
+      "estimated_seconds": 120
+    },
+    {
+      "id": "ue6-mgmt-ai-0006",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "management-si-marketing",
+      "notion": "digital-transformation-ai",
+      "difficulty": 3,
+      "tags": [
+        "AI Act",
+        "risk-based approach",
+        "credit scoring",
+        "chatbot"
+      ],
+      "statement": "A consumer-credit bank operating in the EU uses three AI tools: a chatbot that answers customers' questions on its website, a machine-learning model that assesses the creditworthiness of individuals applying for a loan, and a filter that sorts incoming spam e-mails. Which statement correctly applies the EU Artificial Intelligence Act (Regulation (EU) 2024/1689)?",
+      "options": [
+        "The chatbot is a high-risk system because it interacts directly with customers and may influence their decisions.",
+        "The credit-scoring model is prohibited, because evaluating natural persons to grant or refuse them a service is a form of social scoring.",
+        "The credit-scoring model is a high-risk system: it may be used, subject to requirements on risk management, data quality, documentation and human oversight.",
+        "The spam filter must be registered and placed under human oversight, like any AI system used by a regulated financial institution."
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Option 3 is correct: AI systems intended to evaluate the creditworthiness of natural persons or establish their credit score are listed in Annex III, point 5(b) (art. 6(2)) as high-risk; they are lawful but subject to strict requirements (risk management, data governance, technical documentation, human oversight). Option 1 is wrong: a chatbot falls under the transparency obligations of art. 50 (people must be informed that they are interacting with an AI system), not under the high-risk category. Option 2 is wrong: the prohibited social scoring of art. 5(1)(c) concerns evaluating people on the basis of their social behaviour or personal characteristics leading to unjustified or unrelated detrimental treatment; credit scoring based on financial data is regulated as high-risk, not banned. Option 4 is wrong: a spam filter is a minimal-risk system with no specific obligation; the sector of the user does not change the classification, which depends on the use of the system.",
+      "source_ref": "Regulation (EU) 2024/1689 (AI Act), art. 5(1)(c) (prohibited social scoring), art. 6(2) and Annex III, point 5(b) (creditworthiness of natural persons), art. 50 (transparency obligations)",
+      "verified": true,
+      "estimated_seconds": 90
     }
   ]
 }

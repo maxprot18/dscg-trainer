@@ -131,6 +131,75 @@
       "source_ref": "IAS 37 §10 (provision) ; IAS 36 §6 (impairment loss) ; IAS 1 §82 (line items) — règlement UE 2023/1803 ; usual UK/US professional terminology",
       "verified": true,
       "estimated_seconds": 720
+    },
+    {
+      "id": "ue6-vocab-ff-0004",
+      "type": "flashcard",
+      "ue": "UE6",
+      "theme": "vocabulaire-comptable-financier",
+      "notion": "accounting-false-friends",
+      "difficulty": 1,
+      "tags": [
+        "false friends",
+        "actuellement",
+        "éventuellement"
+      ],
+      "front": "How should « actuellement » and « éventuellement » be translated in a business e-mail, and why not \"actually\" and \"eventually\"?",
+      "back": "« Actuellement » → currently, at present. « Éventuellement » → possibly, if necessary.\n\"Actually\" means in fact, really (and \"actual\" means real, as in \"actual vs budget\": réel / budget).\n\"Eventually\" means in the end, finally (finalement).",
+      "explanation": "Example: « Le budget sera éventuellement révisé ; actuellement, les coûts réels dépassent les prévisions » → \"The budget may be revised if necessary; currently, actual costs exceed the forecast.\" A literal translation (\"will eventually be revised\") would tell the reader that the revision is certain.",
+      "source_ref": "Usual UK/US professional terminology: false friends actual / actuel, eventually / éventuellement",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue6-vocab-ff-0005",
+      "type": "true_false",
+      "ue": "UE6",
+      "theme": "vocabulaire-comptable-financier",
+      "notion": "accounting-false-friends",
+      "difficulty": 2,
+      "tags": [
+        "reserve",
+        "provision",
+        "equity",
+        "false friends"
+      ],
+      "statement": "In a set of IFRS accounts in English, a French « provision pour risques » (a liability for a probable outflow of uncertain amount) may be translated as a \"reserve\".",
+      "answer": false,
+      "justification": "A reserve is a component of equity; a liability of uncertain timing or amount is a \"provision\" (IAS 37 §10).",
+      "explanation": "In IFRS English, reserves (share premium, retained earnings, revaluation surplus) belong to equity and are never set aside for future losses. A « provision pour risques » meeting the IAS 37 definition is translated as a provision (e.g. provision for legal claims). US usage sometimes speaks informally of \"reserves\" for liabilities or allowances, which is precisely why the word must be avoided in IFRS accounts.",
+      "source_ref": "IAS 37 §10 (definition of a provision) ; IAS 1 §54 and §78(e) (equity: issued capital and reserves) — règlement UE 2023/1803",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue6-vocab-ff-0006",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "vocabulaire-comptable-financier",
+      "notion": "accounting-false-friends",
+      "difficulty": 1,
+      "tags": [
+        "bonds",
+        "obligations",
+        "false friends",
+        "translation"
+      ],
+      "statement": "Choose the correct translation of: « Le groupe a remboursé en mars les obligations arrivées à échéance. »",
+      "options": [
+        "The group repaid in March the obligations that came to term.",
+        "The group redeemed in March the shares that had expired.",
+        "The group reimbursed in March the commitments that arrived at echeance.",
+        "In March, the group repaid the bonds that had reached maturity."
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Option 4 is correct: « obligations » are bonds (debt securities), « arriver à échéance » is to mature or reach maturity, and « rembourser » an issue of bonds is to repay or redeem it. Option 1 is wrong: \"obligations\" means commitments or duties in English. Option 2 is wrong: shares are « actions », equity instruments that have no maturity. Option 3 is wrong: \"commitments\" again translates « engagements », and \"echeance\" is not English.",
+      "source_ref": "Usual UK/US financial terminology: bonds / obligations, maturity / échéance ; IAS 32 §11 (financial liability, equity instrument) — règlement UE 2023/1803",
+      "verified": true,
+      "estimated_seconds": 45
     }
   ]
 }

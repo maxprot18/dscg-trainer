@@ -140,6 +140,54 @@
       "source_ref": "ISA 320 §10-11 (materiality, performance materiality) ; ISA 315 (assertions) ; ISA 450 §5 and §8 (accumulation and communication of misstatements) ; ISA 501, 505 and 580 — IAASB",
       "verified": true,
       "estimated_seconds": 720
+    },
+    {
+      "id": "ue6-vocab-audit-0005",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "vocabulaire-comptable-financier",
+      "notion": "audit-assurance-vocabulary",
+      "difficulty": 3,
+      "tags": [
+        "disclaimer of opinion",
+        "adverse opinion",
+        "pervasive",
+        "ISA 705"
+      ],
+      "statement": "A fire at the head office of Thornbury Group destroyed the accounting records of its main subsidiary, which represents about 70% of consolidated revenue and total assets. The auditor cannot obtain sufficient appropriate audit evidence on the subsidiary's inventories, receivables and revenue, and no alternative procedure is possible. The auditor has not identified any specific misstatement but concludes that the possible effects of undetected misstatements could be both material and pervasive. Which opinion should be expressed?",
+      "options": [
+        "A qualified opinion (\"except for\")",
+        "An adverse opinion",
+        "A disclaimer of opinion",
+        "An unmodified opinion with an emphasis of matter paragraph describing the fire"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Option 3 is correct: when the auditor is unable to obtain sufficient appropriate evidence and the possible effects of undetected misstatements could be both material and pervasive, the auditor disclaims an opinion (ISA 705 §9; French: impossibilité de certifier). Option 1 would apply if the possible effects were material but not pervasive (ISA 705 §7(b)). Option 2 is wrong: an adverse opinion is expressed when the auditor has obtained evidence of misstatements that are material and pervasive (ISA 705 §8), not when evidence is lacking. Option 4 is wrong: an emphasis of matter paragraph draws attention to a matter correctly presented in the financial statements and can never replace a modified opinion (ISA 706).",
+      "source_ref": "ISA 705 §7-9 (qualified opinion, adverse opinion, disclaimer of opinion) ; ISA 706 (emphasis of matter) — IAASB ; NEP 705 for the French equivalents",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue6-vocab-audit-0006",
+      "type": "flashcard",
+      "ue": "UE6",
+      "theme": "vocabulaire-comptable-financier",
+      "notion": "audit-assurance-vocabulary",
+      "difficulty": 1,
+      "tags": [
+        "tests of controls",
+        "substantive procedures",
+        "audit evidence"
+      ],
+      "front": "What is the difference between \"tests of controls\" and \"substantive procedures\", and what are they called in French?",
+      "back": "Tests of controls (tests de procédures): procedures designed to evaluate whether internal controls operated effectively throughout the period, e.g. checking that purchase invoices were approved before payment.\nSubstantive procedures (contrôles de substance): procedures designed to detect material misstatements in balances, transactions and disclosures; they include tests of details (e.g. confirmation of receivables) and substantive analytical procedures.",
+      "explanation": "If controls are found effective, the auditor can reduce the extent of substantive procedures; but some substantive procedures are always required for each material class of transactions, account balance and disclosure (ISA 330 §18).",
+      "source_ref": "ISA 330 §4 (definitions of substantive procedure and test of controls) and §18 — IAASB ; NEP 330",
+      "verified": true,
+      "estimated_seconds": 40
     }
   ]
 }

@@ -128,6 +128,71 @@
       "source_ref": "Staff turnover rate = leavers ÷ average headcount (usual HR definition) ; Burns (1978) and Bass (1985): transactional vs transformational leadership",
       "verified": true,
       "estimated_seconds": 720
+    },
+    {
+      "id": "ue6-mgmt-hr-0004",
+      "type": "numeric",
+      "ue": "UE6",
+      "theme": "management-si-marketing",
+      "notion": "hr-leadership-management",
+      "difficulty": 1,
+      "tags": [
+        "absenteeism rate",
+        "average headcount",
+        "HR indicators"
+      ],
+      "statement": "The HR department of Kavanagh Engineering Ltd reports the following figures for 2025: headcount of 150 employees at 1 January and 170 at 31 December; each employee was expected to work 225 days in the year; 1,440 working days were lost through sickness and unauthorised absence.\n\nCalculate the absenteeism rate for 2025, based on the average headcount. Give the answer as a percentage, rounded to one decimal place.",
+      "expected_value": 4,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "decimals": 1,
+      "explanation": "Average headcount = (150 + 170) ÷ 2 = 160. Days that should have been worked = 160 × 225 = 36,000. Absenteeism rate = days lost ÷ days that should have been worked × 100 = 1,440 ÷ 36,000 × 100 = 4.0%. Using the closing headcount (170 × 225 = 38,250 days) gives 3.8%, and using the opening headcount (150 × 225 = 33,750 days) gives 4.3%: both are wrong because the workforce changed during the year.",
+      "source_ref": "Absenteeism rate = days lost ÷ days that should have been worked × 100 ; average headcount = (opening + closing) ÷ 2 (usual HR definitions)",
+      "verified": true,
+      "estimated_seconds": 120
+    },
+    {
+      "id": "ue6-mgmt-hr-0005",
+      "type": "true_false",
+      "ue": "UE6",
+      "theme": "management-si-marketing",
+      "notion": "hr-leadership-management",
+      "difficulty": 1,
+      "tags": [
+        "reskilling",
+        "upskilling",
+        "skills"
+      ],
+      "statement": "Reskilling means training employees so that they perform better in the job they already hold.",
+      "answer": false,
+      "justification": "Improving skills for the current job is upskilling; reskilling means learning new skills in order to move to a different job.",
+      "explanation": "Upskilling (montée en compétences) deepens or updates the skills needed in the current position, for instance an accountant trained on a new ERP module. Reskilling (reconversion) prepares an employee for a different role, typically when automation or a restructuring makes the current job disappear, for instance a data-entry clerk retrained as a payroll analyst. Both are tools to close a skills gap and to avoid redundancies.",
+      "source_ref": "HR vocabulary: upskilling / reskilling, talent management (usual professional definitions)",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue6-mgmt-hr-0006",
+      "type": "flashcard",
+      "ue": "UE6",
+      "theme": "management-si-marketing",
+      "notion": "hr-leadership-management",
+      "difficulty": 2,
+      "tags": [
+        "McGregor",
+        "Theory X",
+        "Theory Y",
+        "management style"
+      ],
+      "front": "What do McGregor's \"Theory X\" and \"Theory Y\" assume about employees, and what management style does each lead to?",
+      "back": "Theory X: people dislike work, avoid responsibility and must be directed, controlled and threatened with sanctions → close supervision, detailed rules, autocratic style.\nTheory Y: people find work natural, seek responsibility and are self-motivated when committed to objectives → delegation, autonomy, participative style.\nMcGregor argued that managers' assumptions tend to become self-fulfilling.",
+      "explanation": "Typical exam use: a manager who reacts to low motivation by adding controls and reporting is applying Theory X, which tends to reduce autonomy and engagement further. Theory Y is consistent with Herzberg's motivators (responsibility, recognition, achievement). French: théorie X / théorie Y ; supervision étroite ; délégation.",
+      "source_ref": "McGregor, The Human Side of Enterprise (1960): Theory X and Theory Y",
+      "verified": true,
+      "estimated_seconds": 45
     }
   ]
 }
