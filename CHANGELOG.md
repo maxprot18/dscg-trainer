@@ -1,5 +1,16 @@
 # Journal des versions
 
+## 1.4.0 (octobre 2026)
+
+Préparation à l'examen et fiabilité, à la suite de l'audit de la version 1.3 (`docs/audit-v2.md`).
+
+- **Sujets type d'examen** : dix dossiers longs corrigés (deux par UE écrite, 60 à 90 minutes, notés sur 20), avec contexte d'entreprise, 4 ou 5 annexes dépliables et 10 à 12 questions enchaînées ; listés dans « S'entraîner » et intégrés à l'examen blanc (jusqu'à 60 % de sa durée).
+- **Oral d'UE 6** : 20 sujets en anglais, tirage au sort, préparation, exposé et entretien chronométrés aux durées de l'épreuve, notes, enregistrement de l'exposé (gardé sur l'appareil), plan type, vocabulaire, questions du jury et grille d'auto-évaluation sur 20 avec historique.
+- **Mon examen** : date d'examen et UE passées (réglages), compte à rebours, plan de révision à rebours avec rythme quotidien conseillé, séance du jour limitée aux UE de l'examen, **test de positionnement** par UE (un exercice par thème), rappel quotidien à ajouter à l'agenda (fichier .ics).
+- **Contenu** : 148 exercices ajoutés pour que chaque notion en compte au moins 5 (UE 1, 5 et 6) ; 1 558 exercices, tous relus de façon indépendante. Quatre fiches corrigées (vigilance anticorruption, intérêts déductibles, rapport d'audit en anglais, plus-values de cession d'entreprise).
+- **Progression protégée** : stockage persistant demandé au navigateur, date de la dernière sauvegarde, rappel de sauvegarde quand la progression n'est pas garantie (notamment dans Safari sur iPhone, qui efface les données d'un site non installé après 7 jours sans visite).
+- **Fiabilité** : erreurs de l'application gardées sur l'appareil, visibles dans les réglages et signalables en un clic, écran de secours au lieu d'une page blanche ; tests de bout en bout (Playwright) lancés à chaque push avant le déploiement ; plus de décalage de mise en page à l'ouverture de l'accueil.
+
 ## 1.3.0 (octobre 2026)
 
 Lisibilité des fiches de cours.
