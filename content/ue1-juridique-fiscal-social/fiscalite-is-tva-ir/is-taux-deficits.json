@@ -1,0 +1,22 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-fisc-is-0001",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "is-taux-deficits",
+      "difficulty": 2,
+      "tags": ["IS", "taux réduit PME", "résultat fiscal"],
+      "statement": "La SAS Lumen clôture son exercice de 12 mois ouvert le 1er janvier 2025. Son chiffre d'affaires HT est de 4,2 M€ ; son capital, entièrement libéré, est détenu à 80 % par ses deux fondateurs (personnes physiques) et à 20 % par un fonds d'investissement. Le résultat comptable avant impôt sur les sociétés s'élève à 165 000 €. Parmi les charges figurent 4 000 € d'amendes et pénalités fiscales, seule correction extra-comptable à opérer. Calculez le montant de l'impôt sur les sociétés dû au titre de l'exercice, en euros.",
+      "expected_value": 38000,
+      "tolerance": { "kind": "absolute", "value": 1 },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "1) Résultat fiscal : les amendes et pénalités ne sont pas déductibles (CGI art. 39-2) et sont réintégrées : 165 000 + 4 000 = 169 000 €. Le résultat comptable étant pris avant IS, il n'y a pas d'IS à réintégrer.\n2) Éligibilité au taux réduit PME : chiffre d'affaires HT inférieur à 10 M€, capital entièrement libéré et détenu de manière continue à 75 % au moins par des personnes physiques (80 % ici). Les trois conditions sont remplies.\n3) Calcul : 42 500 × 15 % = 6 375 € ; (169 000 − 42 500) × 25 % = 126 500 × 25 % = 31 625 €. IS = 6 375 + 31 625 = 38 000 €.\nLe plafond de 42 500 € s'apprécie pour un exercice de 12 mois (il est ajusté prorata temporis en cas d'exercice de durée différente).",
+      "source_ref": "CGI art. 219, I (taux normal 25 % et taux réduit PME 15 %, b du I) ; CGI art. 39-2 (non-déductibilité des amendes et pénalités)",
+      "verified": true,
+      "estimated_seconds": 180
+    }
+  ]
+}

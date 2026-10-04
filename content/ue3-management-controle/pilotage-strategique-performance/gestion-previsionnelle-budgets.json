@@ -1,0 +1,79 @@
+{
+  "exercises": [
+    {
+      "id": "ue3-pilotage-budgets-0001",
+      "type": "case_study",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "gestion-previsionnelle-budgets",
+      "difficulty": 3,
+      "tags": ["analyse des écarts", "coûts standards", "écart sur prix", "écart sur quantité", "main-d'œuvre directe"],
+      "title": "Ateliers Verlaine : analyse des écarts sur charges directes",
+      "context": "Les Ateliers Verlaine fabriquent un seul modèle de luminaire. La fiche de coût standard d'une unité prévoit :\n- matière M : 2 kg à 5,00 €/kg ;\n- main-d'œuvre directe (MOD) : 0,5 heure à 30,00 €/h.\n\nEn octobre, l'atelier a fabriqué 1 000 luminaires (aucun en-cours). Les données réelles sont les suivantes :\n- matière M consommée : 2 150 kg, achetés et consommés dans le mois au prix de 4,80 €/kg ;\n- MOD : 480 heures payées 31,00 €/h.\n\nLe service achats a changé de fournisseur début octobre pour obtenir un meilleur prix. Le responsable de production signale de nombreuses pièces rebutées à la découpe.\n\nConvention : écart = coût réel − coût préétabli de la production réelle ; un écart positif est défavorable, un écart négatif est favorable. Les écarts sur matière sont calculés sur les quantités consommées.",
+      "sub_questions": [
+        {
+          "id": "q1-ecart-global-matiere",
+          "kind": "numeric",
+          "prompt": "Calculez l'écart global sur matière M (en euros, signe selon la convention).",
+          "points": 2,
+          "expected_value": 320,
+          "tolerance": { "kind": "absolute", "value": 0.5 },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Coût réel = 2 150 × 4,80 = 10 320 €. Coût préétabli de la production réelle = 1 000 × 2 × 5,00 = 10 000 €. Écart global = 10 320 − 10 000 = +320 € (défavorable)."
+        },
+        {
+          "id": "q2-ecart-prix-matiere",
+          "kind": "numeric",
+          "prompt": "Calculez l'écart sur prix de la matière M (en euros, signe selon la convention).",
+          "points": 2,
+          "expected_value": -430,
+          "tolerance": { "kind": "absolute", "value": 0.5 },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Écart sur prix = (prix réel − prix standard) × quantité réelle = (4,80 − 5,00) × 2 150 = −430 € (favorable)."
+        },
+        {
+          "id": "q3-ecart-quantite-matiere",
+          "kind": "numeric",
+          "prompt": "Calculez l'écart sur quantité de la matière M (en euros, signe selon la convention).",
+          "points": 2,
+          "expected_value": 750,
+          "tolerance": { "kind": "absolute", "value": 0.5 },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Quantité standard pour la production réelle = 1 000 × 2 = 2 000 kg. Écart sur quantité = (quantité réelle − quantité standard) × prix standard = (2 150 − 2 000) × 5,00 = +750 € (défavorable). Contrôle : −430 + 750 = +320 € = écart global."
+        },
+        {
+          "id": "q4-ecart-rendement-mod",
+          "kind": "numeric",
+          "prompt": "Calculez l'écart sur rendement (efficience) de la MOD (en euros, signe selon la convention).",
+          "points": 2,
+          "expected_value": -600,
+          "tolerance": { "kind": "absolute", "value": 0.5 },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Temps standard pour la production réelle = 1 000 × 0,5 = 500 h. Écart sur rendement = (temps réel − temps standard) × taux standard = (480 − 500) × 30 = −600 € (favorable). Pour mémoire, l'écart sur taux vaut (31 − 30) × 480 = +480 € (défavorable) et l'écart global MOD = 480 × 31 − 500 × 30 = 14 880 − 15 000 = −120 € (favorable)."
+        },
+        {
+          "id": "q5-interpretation",
+          "kind": "open",
+          "prompt": "Interprétez les écarts sur matière : à quels responsables les imputer, et quelle lecture d'ensemble en tirer pour le pilotage ?",
+          "points": 4,
+          "model_answer": "L'écart sur prix (−430 €, favorable) relève a priori du service achats, qui a obtenu un prix inférieur au standard en changeant de fournisseur. L'écart sur quantité (+750 €, défavorable) relève a priori de la production : il traduit une surconsommation de 150 kg, soit 7,5 % de plus que le standard. Mais les deux écarts ne sont pas indépendants : les rebuts signalés à la découpe laissent penser que la matière du nouveau fournisseur est de moindre qualité. Dans ce cas, la surconsommation trouve son origine dans la décision d'achat, et le gain apparent de 430 € est plus que compensé par une perte de 750 € : la décision coûte globalement 320 € sur le mois. Il ne faut donc pas évaluer le service achats sur le seul écart sur prix ; il convient d'analyser les causes des rebuts (qualité matière, réglages, formation), éventuellement de réviser les critères de sélection des fournisseurs (prix et qualité) et d'envisager un indicateur commun achats-production. Si la qualité de la matière est confirmée comme durablement différente, le standard lui-même pourrait devoir être révisé.",
+          "key_points": [
+            "Écart sur prix favorable imputable au service achats, écart sur quantité défavorable imputable à la production",
+            "Interdépendance des écarts : la matière moins chère semble de moindre qualité et provoque des rebuts",
+            "Effet net défavorable de 320 € : l'économie à l'achat est plus que compensée par la surconsommation",
+            "Risque d'évaluation biaisée des responsables si l'on regarde chaque écart isolément ; besoin d'indicateurs partagés ou d'une révision des critères d'achat ou des standards"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Méthode : on compare le coût réel au coût préétabli de la production réelle (et non au budget initial), puis on décompose l'écart global. Matière : écart sur prix calculé sur la quantité réelle (Δprix × Qr) et écart sur quantité valorisé au prix standard (ΔQ × Ps), dont la somme redonne l'écart global (−430 + 750 = +320 €). MOD : écart sur taux (Δtaux × Hr = +480 €) et écart sur rendement (ΔH × Ts = −600 €), soit un écart global de −120 €. L'interprétation doit dépasser l'imputation mécanique des écarts aux responsables et rechercher les causes communes, ici la qualité de la matière achetée.",
+      "source_ref": "Contrôle de gestion : méthode des coûts préétablis et analyse des écarts sur charges directes (programme DSCG UE 3, pilotage de la performance)",
+      "verified": true,
+      "estimated_seconds": 900
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "exercises": [
+    {
+      "id": "ue6-rapports-arstruct-0001",
+      "type": "true_false",
+      "ue": "UE6",
+      "theme": "rapports-annuels",
+      "notion": "annual-report-structure",
+      "difficulty": 1,
+      "tags": ["retained earnings", "dividends", "statement of changes in equity"],
+      "statement": "Extract from the annual report of Northgate plc: \"Retained earnings decreased from €120m at 1 January to €110m at 31 December, reflecting profit for the year of €30m and dividends paid of €40m.\" Under IFRS, the €40m of dividends paid is presented as an expense in the income statement, which is why it reduces retained earnings.",
+      "answer": false,
+      "justification": "False: dividends are a distribution to owners, recognised directly in equity (statement of changes in equity), not an expense in profit or loss.",
+      "explanation": "Under IFRS, distributions to holders of equity instruments are recognised directly in equity. Dividends are therefore shown in the statement of changes in equity, as a deduction from retained earnings; they never pass through the income statement. The reconciliation in the extract is: opening retained earnings €120m + profit for the year €30m − dividends €40m = closing retained earnings €110m. Profit increases retained earnings via the income statement; dividends reduce them via the statement of changes in equity.",
+      "source_ref": "IAS 32 §35 (distributions recognised directly in equity) ; IAS 1 §106-107 (statement of changes in equity) — règlement UE 2023/1803",
+      "verified": true,
+      "estimated_seconds": 60
+    }
+  ]
+}

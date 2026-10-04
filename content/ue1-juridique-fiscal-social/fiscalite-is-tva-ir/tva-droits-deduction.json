@@ -1,0 +1,26 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-fisc-tva-0001",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "tva-droits-deduction",
+      "difficulty": 1,
+      "tags": ["TVA", "liquidation", "crédit de TVA"],
+      "statement": "La société Brisach, soumise au régime réel normal, prépare sa déclaration de TVA du mois de mars N. Soldes des comptes au 31 mars N : TVA collectée 48 000 € ; TVA déductible sur immobilisations 6 000 € ; TVA déductible sur autres biens et services 30 000 € ; crédit de TVA reporté de la déclaration de février 4 000 €. Passez l'écriture de liquidation de la TVA du mois de mars.",
+      "date": "31/03/N",
+      "entries": [
+        { "account": "44571", "label": "TVA collectée", "debit": 48000, "credit": 0 },
+        { "account": "44562", "label": "TVA déductible sur immobilisations", "debit": 0, "credit": 6000 },
+        { "account": "44566", "label": "TVA déductible sur autres biens et services", "debit": 0, "credit": 30000 },
+        { "account": "44567", "label": "Crédit de TVA à reporter", "debit": 0, "credit": 4000 },
+        { "account": "44551", "label": "TVA à décaisser", "debit": 0, "credit": 8000 }
+      ],
+      "explanation": "On solde la TVA collectée (débit 44571) et les comptes de TVA déductible (crédit 44562 et 44566), ainsi que le crédit reporté du mois précédent (crédit 44567), qui s'impute sur la TVA due. TVA nette = 48 000 − 6 000 − 30 000 − 4 000 = 8 000 €. Le solde est positif : c'est une dette envers le Trésor, portée au crédit du 44551 « TVA à décaisser », soldé lors du paiement (débit 44551 / crédit 512). Si la TVA déductible avait excédé la TVA collectée, l'écart aurait été porté au débit du 44567 « Crédit de TVA à reporter ».",
+      "source_ref": "PCG, comptes 44551, 44562, 44566, 44567 et 44571 ; CGI art. 271 (droit à déduction)",
+      "verified": true,
+      "estimated_seconds": 150
+    }
+  ]
+}
