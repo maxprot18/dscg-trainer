@@ -3,7 +3,7 @@
  * réponse rédigée, flashcard). Chaque composant gère sa saisie, appelle `onSubmit`
  * avec la réponse, puis s'affiche en lecture seule avec la correction.
  */
-import { Check, Plus, Trash2, X } from 'lucide-react'
+import { Check, Plus, Scale, Trash2, X } from 'lucide-react'
 import { useState } from 'react'
 
 import { Button } from '@/components/ui/button'
@@ -15,6 +15,7 @@ import type {
   PartResponse,
   PartResult,
 } from '@/engine/grading'
+import { PCG_ACCOUNTS, pcgLabel } from '@/content/pcg'
 import { formatNumber, parseNumberInput } from '@/engine/numbers'
 import type { BooleanPart, ChoicePart, FlashcardPart, JournalPart, NumericPart, OpenPart, Part } from '@/engine/parts'
 import { useKeyboard } from '@/hooks/useKeyboard'
@@ -208,6 +209,18 @@ function JournalInput({ part, response, result, onSubmit }: PartProps<JournalPar
   const totalCredit = lines.reduce((s, l) => s + l.credit, 0)
   const set = (i: number, key: keyof DraftLine, value: string) =>
     setDraft((d) => d.map((l, j) => (j === i ? { ...l, [key]: value } : l)))
+  const difference = Math.round((totalDebit - totalCredit) * 100) / 100
+  /** Complète la première ligne sans montant (ou une nouvelle ligne) pour équilibrer l'écriture. */
+  const balance = () => {
+    if (Math.abs(difference) < 0.005) return
+    const amount = formatNumber(Math.abs(difference), 2)
+    const side: keyof DraftLine = difference > 0 ? 'credit' : 'debit'
+    setDraft((d) => {
+      const i = d.findIndex((l) => l.debit.trim() === '' && l.credit.trim() === '')
+      if (i === -1) return [...d, { ...emptyLine(), [side]: amount }]
+      return d.map((l, j) => (j === i ? { ...l, [side]: amount } : l))
+    })
+  }
   const inputClass =
     'border-input bg-background focus-visible:ring-ring/50 h-9 w-full rounded-md border px-2 text-sm outline-none focus-visible:ring-[3px]'
 
@@ -264,15 +277,31 @@ function JournalInput({ part, response, result, onSubmit }: PartProps<JournalPar
         <span>Crédit</span>
         <span className="w-9" />
       </div>
+      <datalist id="pcg-accounts">
+        {PCG_ACCOUNTS.map((a) => (
+          <option key={a.number} value={a.number}>
+            {a.label}
+          </option>
+        ))}
+      </datalist>
       {draft.map((line, i) => (
         <div key={i} className="grid grid-cols-[1fr_1fr_1fr_auto] gap-2">
-          <input
-            aria-label={`Compte ligne ${i + 1}`}
-            inputMode="numeric"
-            className={cn(inputClass, 'font-mono')}
-            value={line.account}
-            onChange={(e) => set(i, 'account', e.target.value.replace(/\D/g, ''))}
-          />
+          <div className="flex min-w-0 flex-col">
+            <input
+              aria-label={`Compte ligne ${i + 1}`}
+              inputMode="numeric"
+              list="pcg-accounts"
+              autoComplete="off"
+              className={cn(inputClass, 'font-mono')}
+              value={line.account}
+              onChange={(e) => set(i, 'account', e.target.value.replace(/\D/g, ''))}
+            />
+            {line.account.length >= 2 && (
+              <span className="text-muted-foreground truncate text-[11px] leading-4" title={pcgLabel(line.account)}>
+                {pcgLabel(line.account) ?? 'Compte hors liste'}
+              </span>
+            )}
+          </div>
           <input
             aria-label={`Débit ligne ${i + 1}`}
             inputMode="decimal"
@@ -302,12 +331,10 @@ function JournalInput({ part, response, result, onSubmit }: PartProps<JournalPar
         <Button variant="outline" size="sm" onClick={() => setDraft((d) => [...d, emptyLine()])}>
           <Plus /> Ligne
         </Button>
-        <span
-          className={cn(
-            'text-xs',
-            Math.abs(totalDebit - totalCredit) > 0.005 ? 'text-amber-700' : 'text-muted-foreground',
-          )}
-        >
+        <Button variant="outline" size="sm" onClick={balance} disabled={Math.abs(difference) < 0.005} title="Complète le montant manquant">
+          <Scale /> Équilibrer
+        </Button>
+        <span className={cn('text-xs', Math.abs(difference) > 0.005 ? 'text-amber-700 dark:text-amber-400' : 'text-muted-foreground')}>
           Total débit {formatNumber(totalDebit, 2)} · total crédit {formatNumber(totalCredit, 2)}
         </span>
       </div>
