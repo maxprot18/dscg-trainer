@@ -6,15 +6,19 @@ import { ExercisePlayer } from '@/components/exercise/ExercisePlayer'
 import { SessionSummary, type SessionEntry } from '@/components/exercise/SessionSummary'
 import { Button } from '@/components/ui/button'
 import { Progress } from '@/components/ui/progress'
-import { useExercises } from '@/content/load'
+import { ExamSummary } from '@/components/exercise/ExamSummary'
+import { examDurations, useExercises } from '@/content/load'
 import type { Exercise } from '@/content/schema'
+import { loadProgress } from '@/db/progress'
 import type { ExerciseResult, PartResponse } from '@/engine/grading'
 import { endSession, recordAttempt, startSession } from '@/engine/recorder'
+import type { ProgressSnapshot } from '@/engine/session'
 import {
   buildSession,
+  needsProgress,
   newSeed,
   parseSessionSearch,
-  scopeKey,
+  sessionScope,
   sessionSearch,
   timeLimit,
   type SessionConfig,
@@ -44,23 +48,64 @@ function SessionLoader({ pool }: { pool: readonly Exercise[] }) {
   const [params] = useSearchParams()
   const search = params.toString()
   const config = useMemo(() => parseSessionSearch(new URLSearchParams(search)), [search])
-  const exercises = useMemo(() => (config ? buildSession(config, pool) : []), [config, pool])
   if (!config) return <BackToTraining message="Session introuvable." />
-  if (exercises.length === 0) return <BackToTraining message="Aucun exercice disponible pour cette sélection pour l’instant." />
   // La clé recrée le déroulé (état remis à zéro) à chaque nouvelle session.
-  return <SessionRunner key={search} config={config} exercises={exercises} />
+  return needsProgress(config) ? (
+    <ProgressSessionLoader key={search} config={config} pool={pool} />
+  ) : (
+    <SessionBuilder key={search} config={config} pool={pool} />
+  )
+}
+
+/** Révision intelligente et mode erreurs : la série est tirée une fois, sur l'historique du moment. */
+function ProgressSessionLoader({ config, pool }: { config: SessionConfig; pool: readonly Exercise[] }) {
+  const [snapshot, setSnapshot] = useState<ProgressSnapshot | null>(null)
+  useEffect(() => {
+    let alive = true
+    void loadProgress().then((data) => alive && setSnapshot(data))
+    return () => {
+      alive = false
+    }
+  }, [])
+  if (!snapshot) return <p className="text-muted-foreground">Préparation de la session…</p>
+  return <SessionBuilder config={config} pool={pool} snapshot={snapshot} />
+}
+
+function SessionBuilder({
+  config,
+  pool,
+  snapshot,
+}: {
+  config: SessionConfig
+  pool: readonly Exercise[]
+  snapshot?: ProgressSnapshot
+}) {
+  const [exercises] = useState(() => buildSession(config, pool, examDurations, snapshot, Date.now()))
+  if (exercises.length === 0) {
+    const message =
+      config.mode === 'errors'
+        ? 'Aucune erreur à rejouer : toutes vos dernières tentatives sont réussies.'
+        : 'Aucun exercice disponible pour cette sélection pour l’instant.'
+    return <BackToTraining message={message} />
+  }
+  return <SessionRunner config={config} exercises={exercises} />
 }
 
 function formatClock(seconds: number): string {
-  return `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, '0')}`
+  const pad = (n: number) => String(n).padStart(2, '0')
+  const h = Math.floor(seconds / 3600)
+  const m = Math.floor((seconds % 3600) / 60)
+  return h > 0 ? `${h}:${pad(m)}:${pad(seconds % 60)}` : `${m}:${pad(seconds % 60)}`
 }
 
 function SessionRunner({ config, exercises }: { config: SessionConfig; exercises: Exercise[] }) {
   const navigate = useNavigate()
-  const limit = timeLimit(config)
+  const limit = timeLimit(config, examDurations)
+  const exam = config.mode === 'exam'
   const [startedAt] = useState(() => Date.now())
   const [index, setIndex] = useState(0)
   const [entries, setEntries] = useState<SessionEntry[]>([])
+  const [answers, setAnswers] = useState<Map<string, PartResponse[]>>(() => new Map())
   const [answered, setAnswered] = useState(false)
   const [finished, setFinished] = useState(false)
   const [elapsed, setElapsed] = useState(0)
@@ -71,7 +116,7 @@ function SessionRunner({ config, exercises }: { config: SessionConfig; exercises
     // Garde : en mode strict, React exécute deux fois les effets au montage.
     if (sessionId.current) return
     exerciseStartedAt.current = Date.now()
-    sessionId.current = startSession(config.mode, exercises, config.mode === 'theme' ? scopeKey(config.scope) : undefined)
+    sessionId.current = startSession(config.mode, exercises, sessionScope(config))
   }, [config, exercises])
 
   useEffect(() => {
@@ -91,6 +136,7 @@ function SessionRunner({ config, exercises }: { config: SessionConfig; exercises
   const onComplete = (exercise: Exercise, result: ExerciseResult, responses: PartResponse[]) => {
     const durationMs = Date.now() - exerciseStartedAt.current
     setEntries((e) => [...e, { exercise, result }])
+    setAnswers((m) => new Map(m).set(exercise.id, responses))
     setAnswered(true)
     void sessionId.current?.then((id) => recordAttempt(exercise, responses, result, durationMs, id))
   }
@@ -104,6 +150,19 @@ function SessionRunner({ config, exercises }: { config: SessionConfig; exercises
   }
 
   useKeyboard((key) => (key === 'Enter' ? (next(), true) : false), answered && !finished)
+
+  if (finished && config.mode === 'exam') {
+    return (
+      <ExamSummary
+        ue={config.ue}
+        exercises={exercises}
+        entries={entries}
+        answers={answers}
+        elapsedSeconds={elapsed}
+        timedOut={limit !== null && elapsed >= limit}
+      />
+    )
+  }
 
   if (finished) {
     return (
@@ -141,6 +200,7 @@ function SessionRunner({ config, exercises }: { config: SessionConfig; exercises
       <ExercisePlayer
         key={`${index}-${current.id}`}
         exercise={current}
+        deferFeedback={exam}
         onComplete={(r, resp) => onComplete(current, r, resp)}
       />
       {answered && (

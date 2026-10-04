@@ -19,5 +19,8 @@ describe('enregistrement', () => {
     const session = await database.sessions.get(sessionId)
     expect(session?.exerciseIds).toEqual([ex.id])
     expect(session?.endedAt).toBeGreaterThan(0)
+    // La tentative réussie programme la révision de la notion dans 1 jour (SM-2).
+    const review = await database.reviews.get(ex.notion)
+    expect(review).toMatchObject({ notion: ex.notion, repetitions: 1, interval: 1 })
   })
 })

@@ -1,6 +1,10 @@
 /**
  * Lecteur d'un exercice : énoncé, parties enchaînées (la suivante apparaît quand la
  * précédente est validée), puis note globale et correction détaillée.
+ *
+ * En examen blanc (`deferFeedback`), la correction n'est pas montrée pendant l'épreuve : les
+ * réponses validées sont verrouillées et la correction est affichée à la fin, en relecture
+ * (`review` : réponses déjà données, exercice affiché entièrement corrigé).
  */
 import { useMemo, useRef, useState } from 'react'
 
@@ -80,16 +84,25 @@ function Statement({ exercise }: { exercise: Exercise }) {
 
 export interface ExercisePlayerProps {
   exercise: Exercise
-  onComplete: (result: ExerciseResult, responses: PartResponse[]) => void
+  onComplete?: (result: ExerciseResult, responses: PartResponse[]) => void
+  /** Examen blanc : pas de correction pendant l'épreuve. */
+  deferFeedback?: boolean
+  /** Relecture d'un exercice déjà traité, avec les réponses données. */
+  review?: readonly PartResponse[]
 }
 
-export function ExercisePlayer({ exercise, onComplete }: ExercisePlayerProps) {
+export function ExercisePlayer({ exercise, onComplete, deferFeedback = false, review }: ExercisePlayerProps) {
   const parts = useMemo(() => exerciseParts(exercise), [exercise])
-  const [responses, setResponses] = useState<PartResponse[]>([])
-  const [results, setResults] = useState<PartResult[]>([])
-  const [final, setFinal] = useState<ExerciseResult | null>(null)
-  const completed = useRef(false)
+  const [responses, setResponses] = useState<PartResponse[]>(() => (review ? [...review] : []))
+  const [results, setResults] = useState<PartResult[]>(() =>
+    review ? review.map((r, i) => gradePart(parts[i], r)) : [],
+  )
+  const [final, setFinal] = useState<ExerciseResult | null>(() =>
+    review && review.length === parts.length ? combineResults(parts, results) : null,
+  )
+  const completed = useRef(review !== undefined)
   const multi = parts.length > 1
+  const hidden = deferFeedback && !review
 
   const submit = (index: number, response: PartResponse) => {
     if (index !== results.length || completed.current) return
@@ -101,7 +114,7 @@ export function ExercisePlayer({ exercise, onComplete }: ExercisePlayerProps) {
       completed.current = true
       const result = combineResults(parts, nextResults)
       setFinal(result)
-      onComplete(result, nextResponses)
+      onComplete?.(result, nextResponses)
     }
   }
 
@@ -112,7 +125,7 @@ export function ExercisePlayer({ exercise, onComplete }: ExercisePlayerProps) {
         <Badge variant="outline">Niveau {exercise.difficulty}</Badge>
       </div>
       <Statement exercise={exercise} />
-      {parts.slice(0, results.length + 1).map((part, i) => (
+      {parts.slice(0, review ? results.length : results.length + 1).map((part, i) => (
         <div key={part.id} className={multi ? 'border-l-2 pl-3' : undefined}>
           {multi && (
             <p className="text-muted-foreground mb-2 text-xs font-semibold uppercase">
@@ -121,16 +134,25 @@ export function ExercisePlayer({ exercise, onComplete }: ExercisePlayerProps) {
               {part.weight > 1 ? 's' : ''}
             </p>
           )}
-          <PartView
-            part={part}
-            response={responses[i]}
-            result={results[i]}
-            active={i === results.length}
-            onSubmit={(r) => submit(i, r)}
-          />
+          {/* Structure identique avant et après validation : la saisie reste affichée, verrouillée. */}
+          <fieldset disabled={hidden && i < results.length} className="flex min-w-0 flex-col gap-2">
+            <PartView
+              part={part}
+              response={hidden ? undefined : responses[i]}
+              result={hidden ? undefined : results[i]}
+              active={i === results.length}
+              onSubmit={(r) => submit(i, r)}
+            />
+            {hidden && i < results.length && (
+              <p className="text-muted-foreground text-xs">Réponse enregistrée : correction à la fin de l’examen.</p>
+            )}
+          </fieldset>
         </div>
       ))}
-      {final && (
+      {final && hidden && (
+        <p className="text-muted-foreground border-t pt-4 text-sm">Réponse enregistrée. La correction sera affichée à la fin de l’examen.</p>
+      )}
+      {final && !hidden && (
         <div className="flex flex-col gap-3 border-t pt-4">
           {multi && (
             <Verdict

@@ -1,6 +1,6 @@
 # PROGRESS — DSCG Trainer
 
-Dernière mise à jour : 2026-10-04, fin de la session phase 3 (contenu UE 1, 2, 3, 5, 6).
+Dernière mise à jour : 2026-10-04, fin de la session phase 4 (progression).
 
 ## État par phase
 
@@ -10,7 +10,7 @@ Dernière mise à jour : 2026-10-04, fin de la session phase 3 (contenu UE 1, 2,
 | 1. Moteur | Terminée (voir ci-dessous) |
 | 2. Contenu UE 4 | Terminée (voir ci-dessous) |
 | 3. Contenu UE 1, 2, 3, 5, 6 | Terminée (voir ci-dessous) |
-| 4. Progression | À faire |
+| 4. Progression | Terminée (voir ci-dessous) |
 | 5. Finitions | À faire |
 
 ## Phase 0 : ce qui est fait
@@ -80,6 +80,18 @@ Dernière mise à jour : 2026-10-04, fin de la session phase 3 (contenu UE 1, 2,
 - **Technique** : plugin de build `build/stripUnverified.ts` qui retire les exercices non vérifiés des JSON de contenu au build (testé ; vérifié dans `dist`). Le filtrage à l'exécution de `load.ts` reste en place pour le serveur de dev.
 - **Vérifications locales** : lint OK, `validate:strict` OK (100 % des 1 400 exercices vérifiés), 135 tests verts, build OK.
 
+## Phase 4 : ce qui est fait
+
+- **Répétition espacée SM-2 par notion** (`src/engine/srs.ts`, table `reviews`). Chaque tentative met à jour la notion de l'exercice (`recorder.ts`). Une notion est revue au plus une fois par jour : la qualité SM-2 (0 à 5) est tirée de la note moyenne des tentatives du jour sur la notion (réussie à 70 %), recalculée à chaque tentative depuis l'état du début de journée (champ `prior`). Intervalles 1 jour, 6 jours, puis intervalle × facilité ; échec = retour à 1 jour ; échéance au début du jour prévu.
+- **Modes d'entraînement** (`src/engine/session.ts`, `sessionConfig.ts`, écran S'entraîner) :
+  - révision intelligente : notions échues (les plus en retard, puis les plus difficiles), puis notions jamais travaillées, puis celles dont la révision approche ; 3 exercices au plus par notion (jamais faits, puis ratés, puis les moins récents) ; 20 exercices ;
+  - mode erreurs : exercices dont la dernière tentative est ratée, 20 au plus, filtrable par UE dans l'URL ;
+  - examen blanc : sujet d'une UE dont la durée estimée remplit la durée de l'épreuve (taxonomie : 4 h, 3 h, 30 min pour l'oral d'UE 6), environ 20 % de questions, 25 % de calculs et écritures, 55 % de cas, sans flashcard ; chrono de l'épreuve ; aucune correction pendant l'épreuve (réponses verrouillées) ; à la fin, note sur 20 pondérée par la durée estimée de chaque exercice et correction de chaque exercice avec les réponses données.
+- **Écran Progression** : chiffres clés (exercices faits, réussite récente, temps passé, série de jours, jours d'entraînement, notions maîtrisées), bouton « Réviser les notions du jour », carte de chaleur (une case par notion, 4 niveaux, lien vers la fiche), détail repliable UE > thème > notion (taux sur les 10 dernières tentatives, date de révision, lien d'entraînement), historique des 15 dernières sessions, export et import JSON.
+- **Critère de fin : une semaine d'usage simulée** (`src/engine/week.test.ts`) sur le vrai contenu de l'UE 2 : révision intelligente chaque soir, mode erreurs le 3e jour, examen blanc le 6e, puis contrôle de la priorité aux notions échues, de l'espacement (notions à 6 jours dès le 4e soir), de l'apparition de notions nouvelles, de la note d'examen, de la série de 7 jours et de l'aller-retour export / import. La simulation a révélé deux défauts de la première version de SM-2, corrigés (voir décision 31).
+- **Tests** : 164 tests verts (SM-2, statistiques, nouveaux modes, lecteur en examen et en relecture, page de session en examen et en erreurs, écran Progression avec import, semaine simulée).
+- **Smoke test dans Chromium** (build de prod, 390 px) : révision intelligente jouée, bilan, écran Progression (271 cases, 3 notions travaillées), examen blanc UE 2 lancé (51 exercices, chrono 3:00:00), aucune erreur console.
+
 ## Décisions prises (et pourquoi)
 
 1. **Programme de référence : arrêté du 4 août 2025** (BOESR n° 32 du 28/08/2025, NOR MENS2523324A). Il s'applique aux épreuves du DSCG à partir de la session 2027, celle que Max préparera ; il remplace l'arrêté du 13/02/2019.
@@ -116,6 +128,12 @@ Dernière mise à jour : 2026-10-04, fin de la session phase 3 (contenu UE 1, 2,
 28. **(Phase 3) Paramètres fiscaux 2026** : les taux et seuils susceptibles d'avoir changé (PFU, prélèvements sociaux, CSG) sont donnés en hypothèse dans l'énoncé ; les fiches citent les valeurs vérifiées (LF 2026 n° 2026-103, LFSS 2026).
 29. **(Phase 3) Filtrage des non vérifiés au build** (plugin Vite) en plus du filtre à l'exécution : un exercice non relu n'est jamais publié dans les fichiers JS de production.
 
+30. **(Phase 4) SM-2 plutôt que FSRS** : le SPEC laisse le choix. SM-2 tient en quelques lignes, se teste exactement et n'a pas besoin de paramètres appris sur un historique (FSRS en demande des centaines de revues pour être meilleur). L'état est tenu **par notion** (SPEC : « table `reviews` pour l'état de répétition espacée par notion »), pas par exercice.
+31. **(Phase 4) Une revue par notion et par jour, sur la moyenne du jour** : avec une revue par tentative, un seul exercice raté sur trois renvoyait la notion à 1 jour et rien n'était jamais espacé (constaté par la semaine simulée). L'échéance est aussi ramenée au début du jour prévu, sinon une notion revue à 19 h 40 n'était pas proposée le lendemain à 19 h. Les tentatives antérieures à la phase 4 (sans état de révision) rendent leur notion échue.
+32. **(Phase 4) Niveaux de maîtrise** : taux sur les 10 dernières tentatives de la notion ; « maîtrisé » à 80 % et au moins 3 tentatives, « à revoir » sous 50 %, « en cours » entre les deux, « non travaillé » sans tentative.
+33. **(Phase 4) Examen blanc** : la note pondère chaque exercice par sa durée estimée (proxy du barème d'un sujet réel) ; un exercice non traité vaut 0. Les réponses rédigées restent autocorrigées pendant l'épreuve (l'utilisateur doit voir le corrigé type pour cocher les points clés) ; les autres corrections sont différées à la fin. La série est tirée au lancement : un rechargement de la page en cours d'examen recommence l'épreuve (même sujet grâce à la graine, mais réponses perdues).
+34. **(Phase 4) Révision intelligente et erreurs tirées sur l'historique du moment** : la série dépend de la progression au lancement ; un rechargement en cours de session peut donc proposer une autre série (la graine de l'URL ne suffit plus à la reproduire).
+
 ## Points ouverts / à vérifier
 
 - **Déploiement** : résolu. GitHub Pages est activé (source : GitHub Actions) et chaque push sur `main` déploie automatiquement.
@@ -136,11 +154,12 @@ Dernière mise à jour : 2026-10-04, fin de la session phase 3 (contenu UE 1, 2,
   - (phase 3) fiche UE 6 csr-esg-sustainability : affirmation sur l'accord « Omnibus I » fin 2025 à confirmer ; les fiches UE 2 et UE 3 s'en tiennent à la directive (UE) 2025/794 ;
   - (phase 3) ue5-donnees-rgpd-0004 : comptes de pénalités imposés par convention, à revoir avec le classement ANC 2022-06.
 
-## Prochaine étape : phase 4 (progression)
+## Prochaine étape : phase 5 (finitions)
 
-- Livrable (SPEC, « Plan de livraison ») : répétition espacée (table `reviews`, signal des flashcards et des exercices ratés), mode erreurs, examen blanc chronométré (durée lue dans `exam.duration_minutes` de la taxonomie), carte de chaleur de la progression, export/import. Critère de fin : une semaine d'usage simulée dans les tests. Budget indicatif : 25 $.
-- Le contenu est complet (1 400 exercices, 271 fiches) : la phase 4 est surtout du code (moteur pur testé dans `src/engine/`, puis UI).
-- Points ouverts de contenu ci-dessus : à traiter au fil de l'eau, ou en phase 5 avec un relecteur humain.
+- Livrable (SPEC, « Plan de livraison ») : mode sombre, raccourcis (déjà livrés en phase 1 : 1-9 et Entrée), recherche plein texte dans les cours et exercices, bouton « signaler une erreur » qui ouvre une issue GitHub pré-remplie (id d'exercice, `source_ref`), licence (déjà en place : MIT + CC BY-SA), guide de contribution (`CONTRIBUTING.md`, en s'appuyant sur `docs/content-guide.md`), release v1.0. Critère de fin : Lighthouse PWA à 100, README avec captures. Budget indicatif : 15 $.
+- Les classes `dark:` sont déjà posées dans les composants ; il reste le basculement (préférence système + bouton) et la vérification des contrastes.
+- Pistes laissées en phase 4 : afficher sur l'accueil la série et le nombre de notions à réviser ; reprise d'un examen blanc interrompu (sauvegarde des réponses en cours).
+- Points ouverts de contenu ci-dessus : à traiter au fil de l'eau, ou avec un relecteur humain.
 
 ## Budget consommé (estimation)
 
@@ -148,4 +167,5 @@ Dernière mise à jour : 2026-10-04, fin de la session phase 3 (contenu UE 1, 2,
 - Phase 1 : environ 20 à 25 $ (cible SPEC : 25 $), dont 9 sous-agents (4 rédactions, 5 relectures).
 - Phase 2 : environ 80 à 100 $ (cible SPEC : 90 $). 50 sous-agents (25 rédactions, 25 relectures), de 75 000 à 160 000 tokens chacun. Estimation grossière : le coût exact se lit avec `/cost`.
 - Phase 3 : environ 80 à 100 $ (cible SPEC : 70 $). Environ 52 sous-agents (25 rédactions, 26 relectures, plus le plugin de build), de 80 000 à 145 000 tokens chacun. Dépassement dû au volume des lots UE 1 (36-37 exercices) et aux recherches des relecteurs.
-- Cumul estimé : environ 190 à 235 $ sur 250 $. Pour les phases 4 et 5 (code surtout), limiter les sous-agents et privilégier le travail direct.
+- Phase 4 : environ 15 à 20 $ (cible SPEC : 25 $). Aucun sous-agent : travail direct (moteur, écrans, tests, smoke test).
+- Cumul estimé : environ 205 à 255 $ sur 250 $. La phase 5 (15 $) doit rester sobre : travail direct, pas de sous-agent.
