@@ -73,6 +73,140 @@
       "source_ref": "Évaluation des investissements : délai de récupération = investissement ÷ flux nets annuels constants",
       "verified": true,
       "estimated_seconds": 150
+    },
+    {
+      "id": "ue5-outils-blockchain-0004",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "blockchain-technologies-emergentes",
+      "difficulty": 1,
+      "tags": [
+        "types de blockchain",
+        "consortium",
+        "gouvernance"
+      ],
+      "statement": "Six banques européennes veulent tenir un registre commun de leurs garanties bancaires internationales. Aucune ne veut confier ce registre à l'une des autres ni à un opérateur unique ; seuls les établissements membres pourront y écrire et valider les transactions. Quel type de registre correspond à ce besoin ?",
+      "options": [
+        "Une blockchain de consortium",
+        "Une blockchain publique fonctionnant par preuve de travail",
+        "Une blockchain privée contrôlée par la banque la plus importante",
+        "Une base de données centralisée hébergée par l'une des banques"
+      ],
+      "answer": [
+        0
+      ],
+      "multiple": false,
+      "explanation": "Plusieurs organisations qui ne se font pas entièrement confiance partagent un registre dont l'accès est réservé aux membres autorisés : c'est une blockchain de consortium (option 1), avec un consensus simplifié entre nœuds autorisés, rapide et peu coûteux. L'option 2 ouvrirait le registre à tous en lecture et en écriture et imposerait un consensus énergivore, inutile ici. Les options 3 et 4 reviennent à confier le contrôle du registre à un seul acteur, ce que les banques refusent précisément.",
+      "source_ref": "Typologie des registres distribués : blockchains publiques, privées et de consortium (fiche « Blockchain et technologies émergentes »)",
+      "estimated_seconds": 50,
+      "verified": true
+    },
+    {
+      "id": "ue5-outils-blockchain-0005",
+      "type": "true_false",
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "blockchain-technologies-emergentes",
+      "difficulty": 2,
+      "tags": [
+        "RGPD",
+        "droit à l’effacement",
+        "hachage"
+      ],
+      "statement": "Pour concilier l'usage d'une blockchain avec le droit à l'effacement prévu par le RGPD, il est recommandé d'inscrire dans la chaîne une empreinte (hachage) des données personnelles plutôt que les données elles-mêmes, ces dernières étant conservées hors chaîne.",
+      "answer": true,
+      "justification": "Une donnée inscrite dans une blockchain ne peut plus être supprimée ; en n'y inscrivant qu'une empreinte et en conservant la donnée hors chaîne, on peut effacer la donnée source tout en gardant la preuve d'intégrité.",
+      "explanation": "Le registre est pratiquement infalsifiable : modifier ou supprimer un bloc ancien obligerait à recalculer tous les suivants. Cette propriété entre en tension avec le droit à l'effacement (RGPD art. 17). La pratique recommandée consiste à stocker les données personnelles dans une base classique (hors chaîne) et à n'inscrire dans la blockchain que leur empreinte cryptographique, qui permet de prouver qu'un document n'a pas été modifié. Si la donnée source est effacée, l'empreinte seule ne permet plus, en pratique, de la reconstituer.",
+      "source_ref": "RGPD (règl. UE 2016/679) art. 17 (droit à l'effacement) ; CNIL, « Blockchain : solutions pour un usage responsable en présence de données personnelles » (septembre 2018)",
+      "estimated_seconds": 45,
+      "verified": true
+    },
+    {
+      "id": "ue5-outils-blockchain-0006",
+      "type": "case_study",
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "blockchain-technologies-emergentes",
+      "difficulty": 3,
+      "tags": [
+        "blockchain de consortium",
+        "délai de récupération",
+        "contrat intelligent",
+        "oracle",
+        "traçabilité"
+      ],
+      "title": "Coopérative Vergelune : rejoindre une blockchain de traçabilité des fruits ?",
+      "context": "La coopérative Vergelune regroupe 140 producteurs de pommes et de poires. Un grand distributeur lui propose de rejoindre une blockchain de consortium déjà utilisée par une dizaine de fournisseurs, deux transporteurs et le distributeur lui-même : chaque lot y serait suivi du verger au rayon (date de récolte, traitements, passage en station, transport, réception).\n\nDonnées chiffrées pour la coopérative :\n- quote-part d'investissement initial (nœud, intégration à son logiciel de gestion, formation) : 240 000 € ;\n- gains annuels attendus : baisse du coût des litiges avec le distributeur 45 000 €, baisse du coût des rappels de lots (lots ciblés plus précisément) 35 000 € ;\n- coûts annuels de fonctionnement : cotisation au consortium 12 000 €, hébergement et maintenance du nœud 8 000 € ;\n- le distributeur estime de son côté que le dispositif lui fera gagner 90 000 € par an.\n\nLe consortium envisage d'ajouter un contrat intelligent qui verserait automatiquement une pénalité au destinataire lorsqu'un camion arrive avec plus de deux heures de retard. Aujourd'hui, les heures d'arrivée sont saisies à la main par les chauffeurs sur une tablette.\n\nLe directeur de la coopérative s'interroge aussi sur l'inscription dans la chaîne du nom et du numéro de téléphone de chaque producteur, « pour que tout soit traçable ».",
+      "sub_questions": [
+        {
+          "id": "q1-delai-recuperation",
+          "kind": "numeric",
+          "prompt": "Calculez le délai de récupération de l'investissement pour la coopérative, en supposant des flux annuels constants (en années, arrondi à une décimale).",
+          "points": 3,
+          "expected_value": 4,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.05
+          },
+          "unit": "ans",
+          "decimals": 1,
+          "explanation": "Économies nettes annuelles de la coopérative = 45 000 + 35 000 − 12 000 − 8 000 = 60 000 €. Délai de récupération = 240 000 ÷ 60 000 = 4,0 ans. Les gains du distributeur (90 000 €) ne profitent pas à la coopérative et ne s'ajoutent pas. Retenir les gains bruts (80 000 €) donnerait 3,0 ans : erreur classique."
+        },
+        {
+          "id": "q2-consensus",
+          "kind": "mcq",
+          "prompt": "Quel mécanisme de consensus est le plus adapté à ce registre de consortium ?",
+          "points": 2,
+          "options": [
+            "La preuve de travail, seule garantie d'un registre infalsifiable",
+            "Un consensus simplifié entre les nœuds autorisés des membres",
+            "La validation de chaque bloc par le seul distributeur, initiateur du projet",
+            "L'absence de consensus : chaque membre tient sa propre copie modifiable"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "Dans une blockchain de consortium, les nœuds sont connus et autorisés : un consensus simplifié entre eux suffit, rapide et peu coûteux (option 2). L'option 1 est inutilement énergivore : la preuve de travail répond au besoin d'un réseau ouvert à des participants anonymes. L'option 3 redonnerait le contrôle à un seul acteur, ce qui ôterait l'intérêt du registre partagé. L'option 4 supprime la propriété même de la blockchain (un registre commun validé collectivement)."
+        },
+        {
+          "id": "q3-contrat-intelligent",
+          "kind": "mcq",
+          "prompt": "Quelle est la principale limite du contrat intelligent de pénalité de retard envisagé ?",
+          "points": 2,
+          "options": [
+            "Un contrat intelligent ne peut pas déclencher de paiement automatique",
+            "Le contrat s'exécutera sur la base d'heures d'arrivée saisies à la main, dont la blockchain ne garantit pas l'exactitude",
+            "Le registre étant répliqué, la pénalité serait versée autant de fois qu'il y a de nœuds",
+            "Le contrat intelligent rend inutile tout accord écrit entre les membres sur les règles de pénalité"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "C'est le problème de l'oracle : la blockchain garantit l'intégrité de ce qui est inscrit, pas la véracité de la donnée saisie (option 2). Une heure mal saisie déclenchera ou non la pénalité à tort ; il faut une source fiable (géolocalisation, capteur à la réception). L'option 1 est fausse : le versement automatique est précisément l'objet d'un contrat intelligent. L'option 3 confond réplication du registre et exécution : la transaction est inscrite une seule fois puis répliquée. L'option 4 est fausse : les règles (seuil, montant, litiges) doivent être convenues dans la gouvernance du consortium."
+        },
+        {
+          "id": "q4-recommandation",
+          "kind": "open",
+          "prompt": "Recommandez-vous à la coopérative de rejoindre le consortium ? Précisez les conditions à poser, notamment sur les données des producteurs et la fiabilité des données saisies.",
+          "points": 5,
+          "model_answer": "Le projet est pertinent sur le principe : plusieurs acteurs indépendants (producteurs, transporteurs, distributeur) qui ne se font pas entièrement confiance partagent un même registre, ce qui est le cas d'usage d'une blockchain de consortium ; le registre horodaté et infalsifiable réduit les litiges et permet de cibler les rappels de lots. Financièrement, un délai de récupération de 4 ans est acceptable si la durée de vie du dispositif dépasse nettement cet horizon et si les gains de litiges et de rappels sont étayés ; il faudrait compléter par une VAN. Conditions : 1) gouvernance du consortium écrite (qui fait évoluer les règles, répartition des coûts, sortie d'un membre, réversibilité des données) ; 2) fiabilité des données : la blockchain ne rend pas exactes les saisies manuelles (problème de l'oracle), donc capteurs connectés (température, géolocalisation) ou contrôles à la réception avant d'automatiser les pénalités par contrat intelligent ; 3) RGPD : ne pas inscrire en clair le nom et le téléphone des producteurs, données personnelles qui ne pourraient plus être effacées (art. 17) ; inscrire un identifiant de lot ou une empreinte et conserver les données nominatives hors chaîne ; 4) sécurité et intégration du nœud dans le SI de la coopérative, formation des producteurs.",
+          "key_points": [
+            "Cas d'usage adapté : plusieurs acteurs sans confiance totale partagent un registre (consortium)",
+            "Délai de récupération de 4 ans à rapprocher de la durée de vie du projet ; gains à étayer, VAN complémentaire",
+            "Problème de l'oracle : fiabiliser les saisies (capteurs, contrôles) avant d'automatiser les pénalités",
+            "RGPD : pas de données personnelles en clair dans la chaîne, empreinte ou identifiant et données hors chaîne",
+            "Gouvernance du consortium : règles, coûts, sortie d'un membre"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Économies nettes = 80 000 − 20 000 = 60 000 € ; délai de récupération = 240 000 ÷ 60 000 = 4 ans (les gains du distributeur ne comptent pas pour la coopérative). Un consortium appelle un consensus simplifié entre nœuds autorisés. Le contrat intelligent ne vaut que ce que valent les données qui le déclenchent (oracle) ; les données personnelles des producteurs ne doivent pas être inscrites en clair (RGPD art. 17).",
+      "source_ref": "RGPD art. 17 ; délai de récupération (critères de choix d'investissement) ; typologie des registres distribués et contrats intelligents (fiche « Blockchain et technologies émergentes »)",
+      "estimated_seconds": 840,
+      "verified": true
     }
   ]
 }

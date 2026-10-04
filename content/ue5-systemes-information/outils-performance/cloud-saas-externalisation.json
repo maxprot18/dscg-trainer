@@ -157,6 +157,68 @@
       "source_ref": "NIST SP 800-145 (2011) ; RGPD art. 28 ; méthode du coût total de possession (TCO)",
       "verified": true,
       "estimated_seconds": 900
+    },
+    {
+      "id": "ue5-outils-cloud-0005",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "cloud-saas-externalisation",
+      "difficulty": 1,
+      "tags": [
+        "modèles de déploiement",
+        "cloud hybride",
+        "NIST"
+      ],
+      "statement": "Une enseigne de distribution héberge ses données de paie et de comptabilité sur un cloud privé dédié, installé chez un hébergeur. Pour absorber les pics de fréquentation de son site marchand pendant les soldes, elle loue en complément, à l'usage, des serveurs virtuels chez un fournisseur de cloud public, reliés à son environnement privé. Quel modèle de déploiement a-t-elle retenu ?",
+      "options": [
+        "Un cloud public",
+        "Un cloud privé",
+        "Un cloud communautaire",
+        "Un cloud hybride"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "La combinaison d'un cloud privé (données sensibles) et d'un cloud public (capacité élastique pour les pics), reliés entre eux, est un cloud hybride (option 4). L'option 1 ne décrit qu'une partie du dispositif : les données de paie ne sont pas sur des ressources partagées. L'option 2 est incomplète : le site marchand utilise des ressources publiques mutualisées. L'option 3 désigne une infrastructure partagée par plusieurs organisations ayant des besoins communs (par exemple des hôpitaux), ce qui n'est pas le cas ici.",
+      "source_ref": "NIST SP 800-145 (2011), modèles de déploiement : public, privé, communautaire, hybride",
+      "estimated_seconds": 45,
+      "verified": true
+    },
+    {
+      "id": "ue5-outils-cloud-0006",
+      "type": "journal_entry",
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "cloud-saas-externalisation",
+      "difficulty": 2,
+      "tags": [
+        "SaaS",
+        "abonnement",
+        "charges constatées d’avance",
+        "clôture"
+      ],
+      "statement": "La société Belvert (exercice du 1er janvier au 31 décembre) a souscrit un abonnement annuel à un logiciel de gestion commerciale en mode SaaS, pour la période du 1er octobre N au 30 septembre N+1. La facture de 18 000 € HT (TVA 20 %, soit 21 600 € TTC), reçue le 1er octobre N, a été enregistrée en totalité en charge au compte 611.\nPassez l'écriture d'inventaire nécessaire au 31 décembre N.\nConventions : utilisez le compte 486 (charges constatées d'avance) et le compte 611.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "486",
+          "label": "Charges constatées d’avance (abonnement SaaS, 9 mois)",
+          "debit": 13500,
+          "credit": 0
+        },
+        {
+          "account": "611",
+          "label": "Abonnement SaaS rattachable à N+1",
+          "debit": 0,
+          "credit": 13500
+        }
+      ],
+      "explanation": "Un abonnement SaaS est une charge : l'entreprise n'acquiert ni ne contrôle le logiciel, elle achète un service (pas d'immobilisation au compte 205). Seule la part consommée sur l'exercice reste en charge : 3 mois sur 12 (octobre à décembre N). La part relative à N+1 (janvier à septembre, 9 mois) est neutralisée : 18 000 × 9 ÷ 12 = 13 500 € au débit du 486, au crédit du 611. Le calcul porte sur le montant HT, la TVA récupérable n'étant pas une charge (21 600 × 9 ÷ 12 = 16 200 serait faux). Erreur classique : régulariser la part de N (3 mois, 4 500 €) au lieu de celle de N+1. L'écriture sera extournée à l'ouverture de N+1.",
+      "source_ref": "PCG (règl. ANC 2014-03) : principe d'indépendance des exercices, compte 486 « Charges constatées d'avance » ; compte 611 (sous-traitance générale)",
+      "estimated_seconds": 150,
+      "verified": true
     }
   ]
 }

@@ -159,6 +159,61 @@
       "source_ref": "Directive (UE) 2022/2555 (NIS 2), art. 3, 20, 21, 23, 33 et 34, annexes I et II ; règlement (UE) 2022/2554 (DORA)",
       "estimated_seconds": 900,
       "verified": true
+    },
+    {
+      "id": "ue5-secu-conformite-0005",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "conformite-reglementaire-si",
+      "difficulty": 2,
+      "tags": [
+        "NIS 2",
+        "entité importante",
+        "annexe I",
+        "seuils de taille"
+      ],
+      "statement": "La société Aquarive distribue de l'eau potable (secteur de l'annexe I de NIS 2) dans une agglomération. Elle emploie 120 salariés et réalise 25 M€ de chiffre d'affaires pour un total de bilan de 60 M€. Elle n'a fait l'objet d'aucune désignation particulière. Comment est-elle qualifiée au regard de NIS 2 ?",
+      "options": [
+        "Entité essentielle, puisque son secteur figure à l'annexe I",
+        "Entité importante, car elle est de taille moyenne dans un secteur de l'annexe I",
+        "Non concernée, car elle compte moins de 250 salariés",
+        "Entité essentielle, car son total de bilan dépasse 43 M€"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "Avec 120 salariés, Aquarive est une entreprise moyenne : elle dépasse les seuils de la petite entreprise (50 salariés, 10 M€) sans atteindre ceux de la grande (250 salariés, ou à la fois plus de 50 M€ de chiffre d'affaires et plus de 43 M€ de bilan). Une entreprise moyenne d'un secteur de l'annexe I, sans désignation particulière, est une entité importante (option 2). L'option 1 oublie la condition de taille : seules les grandes entreprises de l'annexe I sont en principe essentielles. L'option 3 confond le seuil de l'entité essentielle avec le seuil d'application : NIS 2 vise toutes les entités au moins moyennes de ses annexes. L'option 4 est fausse : le critère financier de la grande entreprise exige plus de 50 M€ de chiffre d'affaires et plus de 43 M€ de bilan ; avec 25 M€ de chiffre d'affaires, il n'est pas rempli.",
+      "source_ref": "Directive (UE) 2022/2555 (NIS 2), art. 2 et 3 et annexe I ; recommandation 2003/361/CE (seuils des entreprises moyennes et grandes)",
+      "estimated_seconds": 80,
+      "verified": true
+    },
+    {
+      "id": "ue5-secu-conformite-0006",
+      "type": "numeric",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "conformite-reglementaire-si",
+      "difficulty": 3,
+      "tags": [
+        "NIS 2",
+        "sanctions",
+        "entité essentielle",
+        "chiffre d’affaires mondial"
+      ],
+      "statement": "La société Gazelec distribue du gaz naturel en France (secteur de l'énergie, annexe I de NIS 2). Elle emploie 900 salariés, réalise 320 M€ de chiffre d'affaires pour un total de bilan de 410 M€, et appartient à un groupe dont le chiffre d'affaires annuel mondial de l'exercice précédent s'élève à 820 M€. Un contrôle révèle de graves manquements à ses obligations de gestion des risques de cybersécurité.\nHypothèse : on retient les plafonds minimaux fixés par la directive.\nCalculez le plafond de l'amende administrative encourue par Gazelec (en M€, arrondi à une décimale).",
+      "expected_value": 16.4,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.05
+      },
+      "unit": "M€",
+      "decimals": 1,
+      "explanation": "Qualification : grande entreprise (au moins 250 salariés) d'un secteur de l'annexe I, donc entité essentielle. Plafond = le plus élevé de 10 M€ et de 2 % du chiffre d'affaires annuel mondial de l'entreprise à laquelle l'entité appartient : 2 % × 820 = 16,4 M€ > 10 M€, donc 16,4 M€. Erreurs classiques : appliquer le taux au seul chiffre d'affaires de la société (2 % × 320 = 6,4 M€, d'où 10 M€ à tort) ; appliquer le barème d'une entité importante (1,4 % × 820 = 11,48 M€) ; retenir le montant fixe de 10 M€ alors que le montant proportionnel est plus élevé.",
+      "source_ref": "Directive (UE) 2022/2555 (NIS 2), art. 3 (entités essentielles) et art. 34, § 4 (amendes des entités essentielles)",
+      "estimated_seconds": 180,
+      "verified": true
     }
   ]
 }

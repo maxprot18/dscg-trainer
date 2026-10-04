@@ -174,6 +174,60 @@
       "source_ref": "Méthode de la valeur acquise (PMI, PMBOK) ; F. Brooks, The Mythical Man-Month (1975)",
       "verified": true,
       "estimated_seconds": 900
+    },
+    {
+      "id": "ue5-outils-projets-0005",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "gestion-projets-si",
+      "difficulty": 1,
+      "tags": [
+        "chemin critique",
+        "PERT",
+        "planification"
+      ],
+      "statement": "Dans le planning PERT d'un projet de déploiement d'un logiciel de trésorerie, la tâche « reprise des données bancaires » est située sur le chemin critique. Elle prend 3 jours ouvrés de retard. Quelle est la conséquence, si aucune mesure de rattrapage n'est prise ?",
+      "options": [
+        "Aucune : le retard est absorbé par la marge de la tâche",
+        "Seul le coût du projet augmente ; la date de fin est inchangée",
+        "La date de fin du projet est décalée de 3 jours ouvrés",
+        "Seules les tâches menées en parallèle sont retardées de 3 jours"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Le chemin critique est la suite des tâches sans marge : tout retard sur l'une d'elles se répercute intégralement sur la date de fin du projet (option 3). L'option 1 est fausse : une tâche critique n'a, par définition, aucune marge. L'option 2 confond délai et coût : le retard peut aussi coûter, mais il décale d'abord la fin. L'option 4 est fausse : ce sont les tâches qui suivent la tâche retardée sur le chemin critique qui sont décalées, pas les tâches parallèles, qui disposent elles-mêmes d'une marge.",
+      "source_ref": "Méthode PERT : chemin critique et marges des tâches (fiche « Conduite de projets SI »)",
+      "estimated_seconds": 50,
+      "verified": true
+    },
+    {
+      "id": "ue5-outils-projets-0006",
+      "type": "numeric",
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "gestion-projets-si",
+      "difficulty": 2,
+      "tags": [
+        "Scrum",
+        "vélocité",
+        "backlog",
+        "planification agile"
+      ],
+      "statement": "Une équipe Scrum développe une application de gestion des notes de frais en sprints de deux semaines. À la fin du sprint 6, le backlog produit restant est estimé à 360 points. Lors de l'affinage du backlog, le Product Owner ajoute de nouvelles user stories pour 45 points et en retire d'autres, jugées non prioritaires, pour 25 points. Les vélocités des trois derniers sprints ont été de 36, 40 et 44 points ; l'équipe planifie avec la moyenne de ces trois sprints.\nCombien de sprints faut-il prévoir pour livrer tout le backlog restant (nombre entier, un sprint entamé compte pour un sprint) ?",
+      "expected_value": 10,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.4
+      },
+      "unit": "sprints",
+      "decimals": 0,
+      "explanation": "Backlog restant après affinage = 360 + 45 − 25 = 380 points. Vélocité moyenne = (36 + 40 + 44) ÷ 3 = 40 points par sprint. Nombre de sprints = 380 ÷ 40 = 9,5, arrondi au sprint supérieur : 10 sprints (20 semaines), car un sprint a une durée fixe et ne se raccourcit pas. Erreurs classiques : oublier l'affinage (360 ÷ 40 = 9 sprints) ou ne pas arrondir au supérieur. La vélocité sert à planifier les sprints suivants ; en agile, le délai et l'équipe sont fixes et c'est le périmètre qui s'ajuste : le Product Owner peut aussi décider de retirer d'autres stories pour tenir 9 sprints.",
+      "source_ref": "Scrum Guide (2020) : sprints de durée fixe, backlog produit ordonné par le Product Owner ; vélocité (pratique de planification agile)",
+      "estimated_seconds": 150,
+      "verified": true
     }
   ]
 }

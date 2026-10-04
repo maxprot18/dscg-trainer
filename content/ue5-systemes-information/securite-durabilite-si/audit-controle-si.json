@@ -91,6 +91,111 @@
       "source_ref": "NEP 315 (connaissance du système d’information) ; COBIT 2019",
       "estimated_seconds": 30,
       "verified": true
+    },
+    {
+      "id": "ue5-secu-auditsi-0005",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "audit-controle-si",
+      "difficulty": 2,
+      "tags": [
+        "ISAE 3402",
+        "SOC 1",
+        "type 2",
+        "prestataire"
+      ],
+      "statement": "La société Corbière (exercice du 1er janvier au 31 décembre N) a confié sa paie à un prestataire en mode SaaS. Son commissaire aux comptes souhaite s'appuyer sur les contrôles du prestataire pour réduire ses propres tests sur les charges de personnel de l'exercice N. Quel document lui est le plus utile ?",
+      "options": [
+        "Un rapport SOC 1 de type 1 décrivant les contrôles du prestataire au 31 décembre N",
+        "Le certificat ISO/IEC 27001 du prestataire, valable trois ans",
+        "Un rapport SOC 2 de type 2 portant sur la sécurité et la disponibilité de la plateforme",
+        "Un rapport ISAE 3402 (SOC 1) de type 2 testant l'efficacité des contrôles sur une période couvrant l'exercice N"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Pour s'appuyer sur des contrôles tout au long de l'exercice, l'auditeur a besoin d'un rapport qui porte sur les contrôles utiles à l'information financière (ISAE 3402 / SOC 1) et qui teste leur efficacité sur une période (type 2) : option 4. L'option 1 ne décrit la conception des contrôles qu'à une date : elle ne prouve pas leur fonctionnement pendant l'exercice. L'option 2 atteste l'existence d'un système de management de la sécurité, pas l'efficacité des contrôles du traitement de la paie. L'option 3 porte sur la sécurité, la disponibilité ou la confidentialité, et non sur les contrôles qui touchent l'information financière.",
+      "source_ref": "ISAE 3402 (rapports d'assurance sur les contrôles d'une société de services) ; rapports SOC 1 / SOC 2, type 1 et type 2",
+      "estimated_seconds": 70,
+      "verified": true
+    },
+    {
+      "id": "ue5-secu-auditsi-0006",
+      "type": "case_study",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "audit-controle-si",
+      "difficulty": 3,
+      "tags": [
+        "revue des habilitations",
+        "contrôles généraux informatiques",
+        "séparation des tâches",
+        "comptes génériques"
+      ],
+      "title": "Groupe Pradelle : revue des accès à l'ERP",
+      "context": "L'audit interne du groupe Pradelle (négoce de matériaux) mène une mission sur l'ERP, qui porte la comptabilité, les achats et les paiements.\n\nConstats :\n- 640 comptes nominatifs actifs ; le rapprochement avec le registre du personnel révèle 32 comptes de salariés partis, encore actifs, dont 2 ont été utilisés après le départ de leur titulaire ;\n- 3 comptables se partagent un compte générique « COMPTA1 », avec un mot de passe commun, pour saisir et valider les écritures de régularisation ;\n- 11 utilisateurs peuvent à la fois créer un fournisseur ou modifier son RIB et valider les virements ;\n- un développeur de l'intégrateur dispose d'un accès administrateur permanent à la production et y applique directement les évolutions de paramétrage, sans recette par les utilisateurs ;\n- l'ERP bloque automatiquement le paiement de toute facture qui dépasse de plus de 2 % la commande correspondante ;\n- aucune revue des habilitations n'a été réalisée depuis la mise en service de l'ERP, il y a trois ans.",
+      "sub_questions": [
+        {
+          "id": "q1-taux-comptes",
+          "kind": "numeric",
+          "prompt": "Calculez le taux de comptes à supprimer, défini comme le nombre de comptes actifs de salariés partis rapporté au nombre de comptes nominatifs actifs revus (en %, arrondi à une décimale).",
+          "points": 3,
+          "expected_value": 5,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.05
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "Taux = 32 ÷ 640 = 5,0 %. Ne retenir que les 2 comptes utilisés après le départ (0,3 %) sous-estimerait l'exposition : tout compte actif sans titulaire présent peut être utilisé. Les 2 connexions postérieures au départ doivent par ailleurs faire l'objet d'une analyse des opérations réalisées."
+        },
+        {
+          "id": "q2-consequence-cgi",
+          "kind": "mcq",
+          "prompt": "Quelle conséquence l'auditeur doit-il tirer de l'accès du développeur à la production pour le blocage automatique des factures supérieures de plus de 2 % à la commande ?",
+          "points": 3,
+          "options": [
+            "Aucune : le blocage est un contrôle applicatif, indépendant des contrôles généraux",
+            "Le blocage peut être considéré comme fiable s'il fonctionne correctement le jour du test",
+            "Le blocage ne peut pas être tenu pour fiable sur toute la période sans travaux complémentaires, car son paramétrage a pu être modifié sans recette",
+            "Le blocage doit être supprimé et remplacé par un contrôle manuel de toutes les factures"
+          ],
+          "answer": [
+            2
+          ],
+          "multiple": false,
+          "explanation": "Un contrôle applicatif n'est fiable dans la durée que si les contrôles généraux le sont : un paramétrage modifiable sans recette par un administrateur rend le blocage contournable (option 3). L'auditeur vérifie l'historique des modifications du paramètre et étend ses tests substantifs sur les paiements. L'option 1 ignore ce lien de dépendance. L'option 2 ne prouve le fonctionnement qu'à une date. L'option 4 est disproportionnée : on corrige la gestion des changements plutôt que de renoncer au contrôle automatique."
+        },
+        {
+          "id": "q3-compte-generique",
+          "kind": "true_false",
+          "prompt": "Le compte générique « COMPTA1 » respecte le critère de preuve (traçabilité) dès lors que ses connexions sont journalisées par l'ERP.",
+          "points": 2,
+          "answer": false,
+          "explanation": "La journalisation enregistre les actions du compte, mais un compte partagé par trois personnes avec un mot de passe commun ne permet pas d'imputer une action à un individu : la traçabilité est perdue. De plus, saisie et validation sur un même compte annulent la séparation des tâches. Il faut des comptes nominatifs et un circuit saisie / validation par deux personnes distinctes."
+        },
+        {
+          "id": "q4-recommandations",
+          "kind": "open",
+          "prompt": "Rédigez les recommandations hiérarchisées de l'audit interne et indiquez les travaux complémentaires à mener sur les paiements.",
+          "points": 4,
+          "model_answer": "Priorité 1 (immédiat) : désactiver les 32 comptes de salariés partis et analyser les opérations réalisées par les 2 comptes utilisés après le départ ; retirer au développeur son accès administrateur permanent (accès temporaire, nominatif, tracé et validé) et imposer une gestion des changements (tests, recette par les utilisateurs, séparation des environnements). Priorité 2 : supprimer le cumul RIB fournisseur / validation des virements pour les 11 utilisateurs (droits incompatibles, risque de fraude direct) ; remplacer le compte « COMPTA1 » par des comptes nominatifs et séparer saisie et validation des écritures de régularisation. Priorité 3 : revue des habilitations au moins annuelle par les responsables métier, procédure de sortie reliée au registre du personnel (désactivation le jour du départ), matrice des droits incompatibles paramétrée dans l'ERP. Travaux complémentaires : extraire les modifications de RIB de la période et les rapprocher des demandes justifiées, examiner les virements validés par les 11 utilisateurs, vérifier l'historique du paramètre de tolérance de 2 % et tester par analyse de données les paiements de factures dépassant la commande ou payées en double.",
+          "key_points": [
+            "Désactivation immédiate des comptes de salariés partis et analyse des 2 utilisations postérieures au départ",
+            "Accès administrateur du développeur retiré et gestion des changements avec recette",
+            "Suppression du cumul RIB / validation des virements et des comptes génériques partagés",
+            "Revue périodique des habilitations et procédure de sortie",
+            "Tests substantifs sur les RIB modifiés, les virements et l'historique du paramétrage"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Taux de comptes à supprimer = 32 ÷ 640 = 5,0 %. Les défaillances des contrôles généraux (accès, changements) empêchent de se fier au blocage automatique sur toute la période. Un compte générique partagé rompt la traçabilité et la séparation des tâches. Les recommandations se hiérarchisent selon le risque : comptes orphelins et accès à la production d'abord, cumuls incompatibles ensuite, revue périodique enfin.",
+      "source_ref": "COBIT 2019 (gestion des accès et des changements) ; NEP 315 (contrôles liés au système d'information) ; principe de séparation des tâches",
+      "estimated_seconds": 840,
+      "verified": true
     }
   ]
 }
