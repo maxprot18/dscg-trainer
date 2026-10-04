@@ -1,0 +1,29 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-pcg-clt-0001",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "contrats-long-terme-pcg",
+      "difficulty": 2,
+      "tags": [
+        "méthode à l’avancement",
+        "perte à terminaison",
+        "provision"
+      ],
+      "statement": "La société Bâtis comptabilise ses contrats à long terme selon la méthode à l'avancement (avancement mesuré par les coûts engagés). En N, elle a signé un contrat de construction au prix ferme de 900 000 € HT. Au 31/12/N, les coûts engagés s'élèvent à 300 000 € et le coût total prévisionnel du contrat est réestimé à 1 000 000 €. Quel est le montant de la provision pour perte à terminaison à constater au 31/12/N (en euros) ?",
+      "expected_value": 70000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Perte à terminaison prévue : 900 000 − 1 000 000 = −100 000 €. Lorsqu'une perte à terminaison est probable, elle doit être constatée en totalité dès qu'elle est connue. Avancement : 300 000 / 1 000 000 = 30 %. Le chiffre d'affaires reconnu à l'avancement est de 30 % × 900 000 = 270 000 € pour 300 000 € de coûts, soit une perte déjà constatée de 30 000 € (30 % de la perte totale). La provision couvre la perte restant à venir : 100 000 − 30 000 = 70 000 € (compte 1516 « Provisions pour pertes sur contrats », par une dotation d'exploitation 6815).",
+      "source_ref": "PCG art. 622-1 s. (règl. ANC 2014-03) ; comptes 1516 et 6815",
+      "verified": true,
+      "estimated_seconds": 120
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-ifrs-ias36-0001",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-36-depreciation-actifs",
+      "difficulty": 2,
+      "tags": [
+        "valeur recouvrable",
+        "valeur d’utilité",
+        "perte de valeur"
+      ],
+      "statement": "Au 31/12/N, une machine spécialisée a une valeur comptable de 180 000 €. Un indice de perte de valeur existe. Sa juste valeur est estimée à 150 000 € et les coûts de sortie à 10 000 €. Les flux de trésorerie nets attendus de son utilisation sont de 50 000 € en N+1, 60 000 € en N+2 et 70 000 € en N+3 (fin de vie, valeur résiduelle nulle), flux supposés reçus en fin d'année. Le taux d'actualisation avant impôt est de 8 %. Calculez la perte de valeur à comptabiliser au 31/12/N (en euros, au centime).",
+      "expected_value": 26695.12,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "unit": "€",
+      "decimals": 2,
+      "explanation": "La valeur recouvrable est la plus élevée de la juste valeur diminuée des coûts de sortie et de la valeur d'utilité. Juste valeur − coûts de sortie = 150 000 − 10 000 = 140 000 €. Valeur d'utilité = 50 000 / 1,08 + 60 000 / 1,08² + 70 000 / 1,08³ = 46 296,30 + 51 440,33 + 55 568,26 = 153 304,88 €. Valeur recouvrable = 153 304,88 €. Perte de valeur = 180 000 − 153 304,88 = 26 695,12 €, comptabilisée immédiatement en résultat ; l'amortissement futur est calculé sur la nouvelle valeur comptable.",
+      "source_ref": "IAS 36 §18, §30-31, §55 et §59-60 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 180
+    }
+  ]
+}

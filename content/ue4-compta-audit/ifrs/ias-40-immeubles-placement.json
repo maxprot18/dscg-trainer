@@ -1,0 +1,24 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-ifrs-ias40-0001",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-40-immeubles-placement",
+      "difficulty": 1,
+      "tags": [
+        "définition",
+        "bien occupé par son propriétaire",
+        "IAS 16"
+      ],
+      "statement": "Un immeuble de bureaux occupé par la société qui le détient pour y installer son siège administratif peut être classé en immeuble de placement selon IAS 40, à condition d'être évalué à la juste valeur.",
+      "answer": false,
+      "justification": "Un immeuble de placement est détenu pour en retirer des loyers, pour valoriser le capital, ou les deux. Un bien occupé par son propriétaire pour ses besoins administratifs relève d'IAS 16, quel que soit le modèle d'évaluation envisagé : le choix du modèle de la juste valeur est une conséquence du classement, pas un critère.",
+      "explanation": "IAS 40 définit l'immeuble de placement par l'intention de détention : percevoir des loyers et/ou valoriser le capital, et non l'utiliser dans la production, la fourniture de biens ou services ou à des fins administratives (§5). Un bien occupé par son propriétaire est expressément exclu des immeubles de placement (§9) et relève d'IAS 16. La possibilité d'opter pour la juste valeur (§30 et §33) n'intervient qu'après le classement en immeuble de placement.",
+      "source_ref": "IAS 40 §5, §7 et §9 (règlement UE 2023/1803) ; IAS 16 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45
+    }
+  ]
+}

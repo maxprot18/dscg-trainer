@@ -1,0 +1,29 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-ifrsn-ifrs16-0001",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "ifrs-normes-ifrs",
+      "notion": "ifrs-16-contrats-location",
+      "difficulty": 2,
+      "tags": [
+        "dette locative",
+        "actualisation",
+        "taux marginal d’endettement"
+      ],
+      "statement": "Le 01/01/N, la société Kappa (IFRS) prend en location un entrepôt pour 5 ans. Les loyers fixes s'élèvent à 20 000 € par an, payables à terme échu le 31/12 de chaque année. Le taux implicite du contrat ne peut pas être déterminé facilement ; le taux d'emprunt marginal du preneur est de 4 %. Il n'y a ni coûts directs initiaux, ni avantages incitatifs, ni option d'achat. Calculez le montant de la dette locative à comptabiliser au 01/01/N (en euros, arrondi au centime).",
+      "expected_value": 89036.45,
+      "tolerance": {
+        "kind": "relative",
+        "value": 0.01
+      },
+      "unit": "€",
+      "decimals": 2,
+      "explanation": "À la date de début, la dette locative est égale à la valeur actualisée des paiements de loyers non encore versés, au taux implicite du contrat ou, à défaut, au taux d'emprunt marginal du preneur (ici 4 %). Loyers à terme échu : dette = 20 000 × [1 − 1,04^(−5)] / 0,04 = 20 000 × 4,451822 = 89 036,45 €. En l'absence de coûts directs initiaux, de paiements d'avance et d'avantages incitatifs, le droit d'utilisation est comptabilisé pour le même montant.",
+      "source_ref": "IFRS 16 §22-24 et §26-27 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 150
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-pcg-amort-0001",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "amortissements-depreciations-pcg",
+      "difficulty": 1,
+      "tags": [
+        "amortissement dérogatoire",
+        "provisions réglementées",
+        "dégressif fiscal"
+      ],
+      "statement": "Le 01/01/N, la société Oméga a acquis une machine industrielle pour 100 000 € HT. Sa durée d'utilisation est de 5 ans ; le mode linéaire reflète le rythme de consommation des avantages économiques. Fiscalement, la société pratique l'amortissement dégressif, dont l'annuité N s'élève à 35 000 €. Passez les écritures d'amortissement au 31/12/N (amortissement pour dépréciation et amortissement dérogatoire, à saisir à la suite).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "6811",
+          "label": "Dotations aux amortissements sur immobilisations incorporelles et corporelles",
+          "debit": 20000,
+          "credit": 0
+        },
+        {
+          "account": "2815",
+          "label": "Amortissements des installations techniques, matériel et outillage industriels",
+          "debit": 0,
+          "credit": 20000
+        },
+        {
+          "account": "6872",
+          "label": "Dotations aux provisions réglementées (immobilisations) – amortissements dérogatoires",
+          "debit": 15000,
+          "credit": 0
+        },
+        {
+          "account": "145",
+          "label": "Amortissements dérogatoires",
+          "debit": 0,
+          "credit": 15000
+        }
+      ],
+      "explanation": "L'amortissement comptable reflète la consommation des avantages économiques : 100 000 / 5 = 20 000 € (6811 / 2815). L'avantage fiscal du dégressif, qui excède l'amortissement comptable, est constaté sous forme d'amortissement dérogatoire (provision réglementée) : 35 000 − 20 000 = 15 000 €, en dotation exceptionnelle au compte 6872 par le crédit du compte 145. La déduction fiscale totale atteint ainsi 35 000 € sans altérer la valeur nette comptable de la machine, qui reste fondée sur le plan économique.",
+      "source_ref": "PCG, règles d'amortissement et amortissements dérogatoires (règl. ANC 2014-03) ; comptes 145, 2815, 6811 et 6872 ; CGI art. 39 A",
+      "verified": true,
+      "estimated_seconds": 120
+    }
+  ]
+}

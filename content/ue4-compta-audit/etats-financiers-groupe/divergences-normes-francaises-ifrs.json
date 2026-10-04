@@ -1,0 +1,32 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-efg-divergences-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "etats-financiers-groupe",
+      "notion": "divergences-normes-francaises-ifrs",
+      "difficulty": 1,
+      "tags": [
+        "écart d’acquisition",
+        "amortissement",
+        "test de dépréciation",
+        "ANC 2020-01"
+      ],
+      "statement": "Un groupe hésite entre le règlement ANC 2020-01 et les IFRS adoptées par l'UE pour ses comptes consolidés. Quelle affirmation décrit correctement le traitement ultérieur d'un écart d'acquisition positif ?",
+      "options": [
+        "En IFRS comme en règlement ANC 2020-01, il est obligatoirement amorti sur une durée maximale de 10 ans",
+        "En IFRS, il n'est pas amorti et fait l'objet d'un test de dépréciation au moins annuel ; en règlement ANC 2020-01, il est amorti si sa durée d'utilisation est limitée, et sinon soumis à un test de dépréciation au moins annuel",
+        "En IFRS, il est amorti sur sa durée d'utilité ; en règlement ANC 2020-01, il n'est jamais amorti",
+        "Dans les deux référentiels, il est imputé directement sur les capitaux propres consolidés lors de l'acquisition"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "En IFRS, le goodwill n'est jamais amorti : il est affecté à des unités génératrices de trésorerie et soumis à un test de dépréciation au moins une fois par an et dès qu'un indice de perte de valeur apparaît (IFRS 3 §B63 ; IAS 36 §10 et §90). Le règlement ANC 2020-01 retient une approche fondée sur la durée d'utilisation : un écart d'acquisition à durée d'utilisation limitée est amorti sur cette durée ; s'il n'existe pas de limite prévisible, il n'est pas amorti mais est testé au moins annuellement. L'amortissement obligatoire sur 10 ans au plus ne correspond à aucun des deux référentiels (il existe seulement une présomption de durée en cas d'impossibilité de déterminer la durée d'utilisation en règles françaises). L'option 3 inverse les deux référentiels. L'imputation sur les capitaux propres n'est pas le traitement de droit commun dans ces référentiels.",
+      "source_ref": "IFRS 3 §B63 et IAS 36 §10 et §90 (règlement UE 2023/1803) ; règl. ANC 2020-01, écart d’acquisition",
+      "verified": true,
+      "estimated_seconds": 60
+    }
+  ]
+}

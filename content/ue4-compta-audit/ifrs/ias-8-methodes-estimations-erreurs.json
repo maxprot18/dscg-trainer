@@ -1,0 +1,31 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-ifrs-ias8-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-8-methodes-estimations-erreurs",
+      "difficulty": 2,
+      "tags": [
+        "changement d’estimation",
+        "durée d’utilité",
+        "application prospective"
+      ],
+      "statement": "Au cours de l'exercice N, une société IFRS constate, à la suite d'une étude technique nouvelle, qu'une ligne de production amortie jusqu'ici sur 10 ans ne sera utilisable que 7 ans au total. Les estimations antérieures avaient été établies de bonne foi avec l'information alors disponible. Comment traiter cette révision ?",
+      "options": [
+        "Comme un changement de méthode comptable : application rétrospective et retraitement de l'information comparative",
+        "Comme la correction d'une erreur d'une période antérieure : retraitement des capitaux propres d'ouverture",
+        "Comme un changement d'estimation comptable : application prospective, sur l'exercice N et les exercices suivants",
+        "Comme un changement d'estimation, mais avec imputation de l'effet cumulé sur les capitaux propres d'ouverture de N"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "La durée d'utilité d'un actif est une estimation comptable : sa révision, due à une information nouvelle, constitue un changement d'estimation et non un changement de méthode ni une correction d'erreur. Son effet est comptabilisé de manière prospective, en résultat de l'exercice du changement et des exercices futurs concernés : la valeur nette comptable résiduelle est amortie sur la durée restante révisée. L'application rétrospective avec retraitement des comparatifs est réservée aux changements de méthode comptable. Le retraitement des capitaux propres d'ouverture vise la correction d'erreurs, ce qui suppose que l'information disponible à l'époque ait été mal utilisée ou ignorée, ce que l'énoncé exclut. Enfin, aucun effet cumulé n'est imputé sur les capitaux propres pour un changement d'estimation.",
+      "source_ref": "IAS 8 §5, §32-38 et §41-42 (règlement UE 2023/1803) ; IAS 16 §51 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 75
+    }
+  ]
+}
