@@ -167,6 +167,26 @@
       "source_ref": "C. com. art. L234-2, L234-4, L611-6, L611-8 et L611-11",
       "verified": true,
       "estimated_seconds": 720
+    },
+    {
+      "id": "ue1-difficulte-prev-0006",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "prevention-alerte-conciliation",
+      "difficulty": 2,
+      "tags": [
+        "accord de conciliation",
+        "procédure collective ultérieure",
+        "remises"
+      ],
+      "statement": "Lorsqu'un redressement judiciaire est ouvert après l'homologation d'un accord de conciliation, les remises de dettes consenties dans cet accord restent acquises au débiteur.",
+      "answer": false,
+      "justification": "L'ouverture d'une procédure de sauvegarde, de redressement ou de liquidation judiciaire met fin de plein droit à l'accord : les créanciers recouvrent l'intégralité de leurs créances et sûretés, déduction faite des sommes perçues.",
+      "explanation": "L'accord de conciliation, constaté ou homologué, prend fin de plein droit à l'ouverture d'une procédure collective (C. com. art. L611-12) : les créanciers qui avaient consenti des délais ou des remises retrouvent leurs créances et sûretés, sous déduction des sommes déjà reçues, et déclarent ces créances. L'homologation conserve toutefois son intérêt dans ce cas : les apports de trésorerie, de biens ou de services nouveaux consentis dans l'accord homologué (new money) bénéficient du privilège de conciliation et sont payés par priorité aux créances antérieures (L611-11).",
+      "source_ref": "C. com. art. L611-11 (privilège de conciliation) et L611-12 (fin de plein droit de l'accord en cas de procédure collective)",
+      "verified": true,
+      "estimated_seconds": 50
     }
   ]
 }

@@ -220,6 +220,34 @@
       "source_ref": "CGI art. 726 ; C. civ. art. 1103 (force obligatoire du contrat) et art. 2288 s. (cautionnement)",
       "verified": true,
       "estimated_seconds": 780
+    },
+    {
+      "id": "ue1-trans-cession-0006",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "cession-titres-garantie-passif",
+      "difficulty": 2,
+      "tags": [
+        "garantie de valeur",
+        "seuil de déclenchement",
+        "bénéficiaire de la garantie"
+      ],
+      "statement": "M. Duval a cédé à la société Kerlan la totalité des actions de la SAS Tregor pour 1 500 000 €. L'acte comporte une garantie de valeur (ou de prix) : le cédant indemnise l'acquéreur de toute diminution de valeur des titres due à un passif de cause antérieure à la cession, avec un seuil de déclenchement de 50 000 € et un plafond égal au prix. Un an après la cession, un redressement social de 80 000 €, portant sur des salaires versés avant la cession, est notifié à Tregor. On admet que la diminution de valeur des titres est égale au passif révélé. Quelle est la conséquence de la garantie ?",
+      "options": [
+        "M. Duval verse 30 000 € à la SAS Tregor, qui règle le redressement",
+        "M. Duval verse 30 000 € à la société Kerlan, en réduction du prix",
+        "M. Duval verse 80 000 € à la SAS Tregor, qui règle le redressement",
+        "M. Duval verse 80 000 € à la société Kerlan, en réduction du prix"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Dans une garantie de valeur, l'indemnité est due à l'acquéreur des titres (Kerlan) et s'analyse en une réduction du prix ; dans une garantie de passif au sens strict, elle est versée à la société cible (Tregor). Le passif de 80 000 € a une cause antérieure à la cession et dépasse le seuil de déclenchement de 50 000 € : une fois le seuil franchi, la totalité du passif est indemnisée, dans la limite du plafond (1 500 000 €, non atteint). Indemnité : 80 000 € versés à Kerlan (option 4).\nL'option 2 traite le seuil comme une franchise (80 000 − 50 000 = 30 000 €) : seule une franchise laisse sa fraction à la charge de l'acquéreur. Les options 1 et 3 désignent la société cible comme bénéficiaire, ce qui correspond à une garantie de passif stricto sensu et non à la garantie de valeur stipulée ; l'option 1 commet en outre l'erreur sur le seuil.",
+      "source_ref": "Garantie conventionnelle (C. civ. art. 1103, force obligatoire du contrat) ; garanties légales insuffisantes pour l'acquéreur de titres (C. civ. art. 1641)",
+      "verified": true,
+      "estimated_seconds": 80
     }
   ]
 }

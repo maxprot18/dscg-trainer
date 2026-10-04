@@ -173,6 +173,58 @@
       "source_ref": "C. com. art. L620-1, L626-29, L626-30-2, L626-31 et L626-32",
       "verified": true,
       "estimated_seconds": 780
+    },
+    {
+      "id": "ue1-difficulte-sauv-0006",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "sauvegarde",
+      "difficulty": 2,
+      "tags": [
+        "plan de sauvegarde",
+        "remise",
+        "perte sur créance",
+        "reprise de dépréciation"
+      ],
+      "statement": "La société Brocante Pro détient sur son client Faïencerie du Lot, placé en sauvegarde, une créance admise au passif pour 36 000 € TTC (30 000 € HT, TVA 20 %), inscrite au compte 416 et dépréciée de 9 000 € au compte 491. Le 14 mai N+1, le tribunal arrête un plan de sauvegarde prévoyant, pour les fournisseurs qui l'ont acceptée, une remise de 25 % des créances admises, le solde étant payable en huit annuités ; Brocante Pro a accepté cette remise. On admet que la TVA afférente à la fraction remise est récupérable à la date du jugement arrêtant le plan et que le solde de la créance ne nécessite plus de dépréciation. Passez au 14 mai N+1 l'écriture constatant la perte et la reprise de la totalité de la dépréciation, en utilisant les comptes 654, 44571, 416, 491 et 7817.",
+      "date": "14/05/N+1",
+      "entries": [
+        {
+          "account": "654",
+          "label": "Pertes sur créances irrécouvrables (remise du plan)",
+          "debit": 7500,
+          "credit": 0
+        },
+        {
+          "account": "44571",
+          "label": "TVA collectée (régularisation sur la remise)",
+          "debit": 1500,
+          "credit": 0
+        },
+        {
+          "account": "416",
+          "label": "Clients douteux - Faïencerie du Lot",
+          "debit": 0,
+          "credit": 9000
+        },
+        {
+          "account": "491",
+          "label": "Dépréciations des comptes de clients",
+          "debit": 9000,
+          "credit": 0
+        },
+        {
+          "account": "7817",
+          "label": "Reprises sur dépréciations des actifs circulants",
+          "debit": 0,
+          "credit": 9000
+        }
+      ],
+      "explanation": "Remise : 25 % × 36 000 = 9 000 € TTC, qui sort du compte 416. Cette fraction est définitivement perdue : perte hors taxe 9 000 / 1,2 = 7 500 € (654) et TVA régularisée 1 500 € (44571), récupérable par hypothèse dès le jugement arrêtant le plan. La dépréciation de 9 000 € devient sans objet et est reprise en totalité (491 au débit, 7817 au crédit). Le solde de 27 000 € TTC reste au compte 416 et sera encaissé au fil des annuités.\nErreurs à éviter : calculer la remise sur le montant hors taxe et créditer le 416 de 7 500 € seulement ; imputer la perte directement sur la dépréciation sans passer par le 654 et le 7817 ; constater une perte sur la totalité de la créance alors que le plan prévoit le paiement du solde.",
+      "source_ref": "C. com. art. L626-18 (délais et remises acceptés par les créanciers dans le plan) ; PCG (règl. ANC 2014-03), comptes 416, 491, 654 et 7817 ; CGI art. 272, 1 (récupération de la TVA sur créance devenue irrécouvrable)",
+      "verified": true,
+      "estimated_seconds": 200
     }
   ]
 }

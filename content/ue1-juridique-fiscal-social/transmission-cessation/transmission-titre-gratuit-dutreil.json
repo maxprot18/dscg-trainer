@@ -156,6 +156,55 @@
       "source_ref": "CGI art. 777, 779, 787 B (rédaction issue de la loi de finances pour 2026, n° 2026-103) et 790",
       "verified": true,
       "estimated_seconds": 840
+    },
+    {
+      "id": "ue1-trans-dutreil-0005",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "transmission-titre-gratuit-dutreil",
+      "difficulty": 1,
+      "tags": [
+        "pacte Dutreil",
+        "engagement post mortem",
+        "succession"
+      ],
+      "statement": "Lorsqu'aucun engagement collectif de conservation n'était en cours au jour du décès du dirigeant, ses héritiers peuvent encore bénéficier du régime Dutreil en souscrivant eux-mêmes un engagement collectif dans les six mois du décès.",
+      "answer": true,
+      "justification": "L'engagement collectif peut être conclu post mortem par les héritiers ou légataires, entre eux ou avec d'autres associés, dans les six mois qui suivent la transmission par décès.",
+      "explanation": "En principe, l'engagement collectif doit avoir été souscrit par le défunt et être en cours au jour de la transmission. Pour les successions, l'article 787 B du CGI permet aux héritiers ou légataires de le souscrire eux-mêmes dans les six mois du décès, aux mêmes seuils (17 % des droits financiers et 34 % des droits de vote pour une société non cotée) et pour la même durée minimale de 2 ans. Les autres conditions demeurent : engagement individuel de chaque héritier, fonction de direction et attestations. Cette faculté est réservée aux transmissions par décès ; pour une donation, l'engagement doit être en cours ou réputé acquis.",
+      "source_ref": "CGI art. 787 B, a (engagement collectif souscrit post mortem dans les six mois du décès)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue1-trans-dutreil-0006",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "transmission-titre-gratuit-dutreil",
+      "difficulty": 3,
+      "tags": [
+        "pacte Dutreil",
+        "actifs non professionnels",
+        "LF 2026",
+        "base taxable"
+      ],
+      "statement": "En octobre 2026, M. Garnier, 66 ans, donne à son fils la pleine propriété de la totalité des actions de la SAS Garnier Logistique, évaluées à 3 000 000 €. Toutes les conditions du pacte Dutreil sont remplies. L'actif de la société comprend un bateau de plaisance et des œuvres d'art, non affectés à l'activité, qui représentent 400 000 € de la valeur des titres. Le fils n'a reçu aucune donation antérieure. Hypothèses : régime de l'article 787 B issu de la loi de finances pour 2026 (exonération de 75 % limitée à la fraction de la valeur des titres représentative des biens affectés à l'activité) ; abattement en ligne directe de 100 000 €. Quelle est la base taxable, avant application du barème ?",
+      "options": [
+        "650 000 €",
+        "550 000 €",
+        "950 000 €",
+        "725 000 €"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "La fraction représentative des actifs non professionnels exclus (400 000 €) n'ouvre pas droit à l'exonération : elle est taxable en totalité. L'exonération de 75 % ne porte que sur la fraction professionnelle : 3 000 000 − 400 000 = 2 600 000 €, taxable à 25 %, soit 650 000 €. Valeur taxable avant abattement : 400 000 + 650 000 = 1 050 000 € ; après l'abattement de 100 000 € : 950 000 € (option 3). La réduction de 50 % des droits (donation en pleine propriété par un donateur de moins de 70 ans) s'appliquera ensuite sur les droits calculés au barème, et non sur la base.\nL'option 1 (25 % × 3 000 000 − 100 000) ignore l'exclusion des actifs non professionnels. L'option 2 (25 % × 2 600 000 − 100 000) retranche ces actifs de l'assiette exonérée mais oublie de les taxer. L'option 4 (25 % × (3 000 000 − 100 000)) impute l'abattement avant l'exonération, ce qui inverse l'ordre de calcul.",
+      "source_ref": "CGI art. 787 B (rédaction issue de la loi de finances pour 2026 : exclusion des biens non affectés à l'activité de l'assiette exonérée) ; art. 779 (abattement) ; art. 790 (réduction de droits)",
+      "verified": true,
+      "estimated_seconds": 110
     }
   ]
 }

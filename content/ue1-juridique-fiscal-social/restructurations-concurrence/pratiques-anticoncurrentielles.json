@@ -150,6 +150,54 @@
       "source_ref": "C. com. art. L. 420-1, L. 442-1, L. 464-2 et L. 464-6-1",
       "verified": true,
       "estimated_seconds": 720
+    },
+    {
+      "id": "ue1-restr-pac-0005",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "pratiques-anticoncurrentielles",
+      "difficulty": 1,
+      "tags": [
+        "exemption",
+        "notification",
+        "L. 420-4"
+      ],
+      "statement": "Deux entreprises concurrentes qui envisagent un accord de production commune peuvent le notifier à l'Autorité de la concurrence afin d'obtenir, avant sa mise en œuvre, une décision d'exemption qui les met à l'abri de toute poursuite au titre des ententes.",
+      "answer": false,
+      "justification": "Aucune procédure de notification préalable n'existe pour les ententes : l'exemption s'apprécie a posteriori, et c'est aux entreprises de prouver que les conditions cumulatives sont réunies.",
+      "explanation": "L'article L. 420-4 du Code de commerce (et l'article 101 § 3 TFUE) admet les pratiques qui contribuent au progrès économique, réservent aux utilisateurs une partie équitable du profit, ne comportent que des restrictions indispensables et n'éliminent pas la concurrence pour une partie substantielle des produits. Ces conditions sont appréciées lors d'un éventuel contrôle, à la charge des entreprises qui les invoquent ; aucune autorisation préalable ne peut être demandée. Les entreprises s'auto-évaluent, en s'appuyant le cas échéant sur les règlements d'exemption par catégorie (par exemple pour la spécialisation ou la recherche-développement). Il ne faut pas confondre avec le contrôle des concentrations, qui repose, lui, sur une notification préalable obligatoire.",
+      "source_ref": "C. com. art. L. 420-1 et L. 420-4 ; TFUE art. 101 § 3",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue1-restr-pac-0006",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "pratiques-anticoncurrentielles",
+      "difficulty": 2,
+      "tags": [
+        "abus de position dominante",
+        "rabais de fidélité",
+        "L. 420-2"
+      ],
+      "statement": "La société Hydrolis détient 65 % du marché français des pompes doseuses industrielles, ses deux principaux concurrents se partageant 20 % du marché. Elle accorde à ses distributeurs une remise de 8 % sur tous leurs achats de l'année, à condition qu'ils lui réservent au moins 90 % de leurs approvisionnements en pompes doseuses. Plusieurs distributeurs ont cessé de référencer les produits concurrents. Quelle analyse est exacte ?",
+      "options": [
+        "La pratique est licite : une entreprise est libre de fixer ses remises et la loi ne sanctionne que les ententes entre plusieurs entreprises",
+        "Hydrolis est sanctionnable du seul fait qu'elle détient 65 % du marché, une telle part de marché étant interdite en elle-même",
+        "La pratique peut constituer un abus de position dominante, car ce rabais de fidélité tend à évincer les concurrents ; la position dominante en elle-même n'est pas fautive",
+        "La pratique relève uniquement de l'abus de dépendance économique, car les distributeurs n'ont pas de solution équivalente"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Avec 65 % du marché face à des concurrents beaucoup plus petits, Hydrolis peut se comporter de façon indépendante : elle est en position dominante. Cette position n'est pas interdite ; seul son abus l'est (C. com. art. L. 420-2, al. 1 ; TFUE art. 102). Un rabais subordonné à l'exclusivité ou à la quasi-exclusivité des achats (rabais de fidélité) s'écarte de la concurrence par les mérites lorsqu'il est de nature à évincer les concurrents, ce que l'autorité vérifie au cas par cas : ici, le déréférencement de leurs produits montre l'effet de fermeture du marché. L'option 3 est exacte.\nL'option 1 est fausse : l'abus de position dominante est une pratique unilatérale, sanctionnée sans concertation. L'option 2 est fausse : la détention d'une forte part de marché, acquise par les mérites, n'est pas fautive. L'option 4 est fausse : l'abus de dépendance économique (L. 420-2, al. 2) vise l'exploitation d'un partenaire sans solution équivalente et ne suppose pas de position dominante ; ici, l'atteinte porte sur le marché par l'éviction des concurrents, ce qui caractérise l'abus de position dominante, et rien n'établit l'absence de solution équivalente pour les distributeurs.",
+      "source_ref": "C. com. art. L. 420-2, al. 1 et 2 ; TFUE art. 102 ; C. com. art. L. 464-2 (sanctions)",
+      "verified": true,
+      "estimated_seconds": 80
     }
   ]
 }
