@@ -1,0 +1,228 @@
+{
+  "exercises": [
+    {
+      "id": "ue3-pilotage-pci-0001",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "centres-responsabilite-prix-cession",
+      "difficulty": 1,
+      "tags": [
+        "centres de responsabilité",
+        "centre de dépenses discrétionnaires"
+      ],
+      "source_ref": "Contrôle de gestion : centres de responsabilité et prix de cession interne (programme DSCG UE 3, pilotage de la performance)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Le service juridique d'un groupe dispose d'un budget annuel de fonctionnement. Il n'existe pas de relation mesurable entre ses dépenses et un volume de production. Quel type de centre de responsabilité constitue-t-il ?",
+      "options": [
+        "Un centre de coûts standards",
+        "Un centre de profit",
+        "Un centre d’investissement",
+        "Un centre de dépenses discrétionnaires"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'option 4 est exacte : un service fonctionnel dont la production n'est pas mesurable est un centre de dépenses discrétionnaires, piloté par un budget de moyens et des indicateurs de qualité de service. L'option 1 est fausse : un centre de coûts standards suppose une relation technique entre consommations et production (atelier). L'option 2 est fausse : le service ne vend rien et ne maîtrise pas de produits. L'option 3 est fausse : il ne décide pas de ses investissements et n'est pas évalué sur une rentabilité des capitaux."
+    },
+    {
+      "id": "ue3-pilotage-pci-0002",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "centres-responsabilite-prix-cession",
+      "difficulty": 2,
+      "tags": [
+        "prix de cession interne",
+        "coût standard"
+      ],
+      "source_ref": "Contrôle de gestion : centres de responsabilité et prix de cession interne (programme DSCG UE 3, pilotage de la performance)",
+      "verified": true,
+      "estimated_seconds": 75,
+      "statement": "Une division fabrique un sous-ensemble spécifique qui n'a pas de marché externe ; elle le cède en totalité à une division d'assemblage. La direction veut que la division vendeuse couvre ses charges fixes sans pouvoir répercuter ses éventuelles inefficiences sur l'acheteuse. Quel prix de cession interne retenir ?",
+      "options": [
+        "Le coût complet réel de la période",
+        "Le coût complet standard (préétabli)",
+        "Le coût variable réel",
+        "Un prix de marché estimé à partir de produits concurrents"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'option 2 est exacte : le coût complet standard couvre les charges fixes (sur la base de l'activité normale) et fige le prix à l'avance ; les écarts entre coût réel et standard restent à la charge de la division vendeuse, qui en est responsable. L'option 1 est fausse : le coût réel transfère les inefficiences du vendeur à l'acheteur et ôte toute incitation à maîtriser les coûts. L'option 3 est fausse : le coût variable ne couvre pas les charges fixes, et le coût réel transmet aussi les inefficiences. L'option 4 est fausse : faute de marché externe pour un sous-ensemble spécifique, un tel prix serait arbitraire."
+    },
+    {
+      "id": "ue3-pilotage-pci-0003",
+      "type": "numeric",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "centres-responsabilite-prix-cession",
+      "difficulty": 2,
+      "tags": [
+        "prix de cession interne",
+        "coût d’opportunité",
+        "prix de marché"
+      ],
+      "source_ref": "Contrôle de gestion : centres de responsabilité et prix de cession interne (programme DSCG UE 3, pilotage de la performance)",
+      "verified": true,
+      "estimated_seconds": 180,
+      "statement": "La division Moteurs fabrique un composant au coût variable unitaire de 30 €. Elle le vend sur le marché au prix de 55 €, en supportant des frais commerciaux variables de 3 € par unité, qui sont évités lorsque la cession est interne. La division Moteurs travaille à pleine capacité : chaque unité cédée à la division Pompes est une unité de moins vendue à l'extérieur.\n\nQuel est le prix de cession interne minimal (en euros par unité) que la division Moteurs peut accepter sans réduire son résultat ?",
+      "expected_value": 52,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.01
+      },
+      "unit": "€",
+      "decimals": 2,
+      "explanation": "PCI minimal = coût marginal + coût d'opportunité. Coût marginal = 30 €. Coût d'opportunité = marge perdue sur la vente externe = 55 − 3 − 30 = 22 €. PCI minimal = 30 + 22 = 52 € (soit le prix de marché diminué des frais commerciaux évités). Erreurs classiques : 30 € (coût variable seul, valable seulement si la division a des capacités inemployées) ou 55 € (prix de marché sans déduire les coûts évités)."
+    },
+    {
+      "id": "ue3-pilotage-pci-0004",
+      "type": "numeric",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "centres-responsabilite-prix-cession",
+      "difficulty": 2,
+      "tags": [
+        "centre d’investissement",
+        "résultat résiduel",
+        "ROI"
+      ],
+      "source_ref": "Contrôle de gestion : centres de responsabilité et prix de cession interne (programme DSCG UE 3, pilotage de la performance)",
+      "verified": true,
+      "estimated_seconds": 150,
+      "statement": "La division Emballages, centre d'investissement, a dégagé un résultat d'exploitation de 1 440 k€ pour des capitaux investis de 9 600 k€. Le groupe retient un coût du capital de 12 %.\n\nCalculez le résultat résiduel de la division (en k€).",
+      "expected_value": 288,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "k€",
+      "decimals": 0,
+      "explanation": "Résultat résiduel = résultat − coût du capital × capitaux investis = 1 440 − 12 % × 9 600 = 1 440 − 1 152 = 288 k€. La division crée de la valeur : son ROI (1 440 ÷ 9 600 = 15 %) dépasse le coût du capital (12 %), et l'écart de 3 points appliqué aux 9 600 k€ redonne 288 k€."
+    },
+    {
+      "id": "ue3-pilotage-pci-0005",
+      "type": "numeric",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "centres-responsabilite-prix-cession",
+      "difficulty": 3,
+      "tags": [
+        "ROI",
+        "résultat résiduel",
+        "congruence"
+      ],
+      "source_ref": "J. Dearden, « The Case Against ROI Control », Harvard Business Review (1969) ; contrôle de gestion des centres d’investissement (programme DSCG UE 3)",
+      "verified": true,
+      "estimated_seconds": 240,
+      "statement": "La division Nord, centre d'investissement, dégage un résultat de 1 800 k€ pour des capitaux investis de 10 000 k€. Son directeur, dont la prime dépend du ROI, étudie un projet nécessitant 2 000 k€ de capitaux et rapportant 300 k€ de résultat annuel. Le coût du capital du groupe est de 11 %.\n\nCalculez le ROI de la division Nord si le projet est réalisé (en %, arrondi à une décimale).",
+      "expected_value": 17.5,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.05
+      },
+      "unit": "%",
+      "decimals": 1,
+      "explanation": "ROI après projet = (1 800 + 300) ÷ (10 000 + 2 000) = 2 100 ÷ 12 000 = 17,5 %, contre 18 % avant projet. Le directeur, évalué sur le ROI, sera tenté de rejeter le projet. Pourtant le projet rapporte 15 % (300 ÷ 2 000), plus que le coût du capital (11 %) : il augmente le résultat résiduel de 300 − 11 % × 2 000 = +80 k€ et crée de la valeur pour le groupe. C'est le défaut de congruence du ROI, que corrigent le résultat résiduel ou l'EVA. Erreur classique : faire la moyenne simple des taux, (18 + 15) ÷ 2 = 16,5 %."
+    },
+    {
+      "id": "ue3-pilotage-pci-0006",
+      "type": "flashcard",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "centres-responsabilite-prix-cession",
+      "difficulty": 1,
+      "tags": [
+        "prix de cession interne",
+        "critères"
+      ],
+      "source_ref": "Contrôle de gestion : centres de responsabilité et prix de cession interne (programme DSCG UE 3, pilotage de la performance)",
+      "verified": true,
+      "estimated_seconds": 40,
+      "front": "Quels critères guident le choix d'un prix de cession interne ?",
+      "back": "1. La congruence : le PCI doit inciter chaque centre à prendre les décisions qui maximisent le résultat du groupe.\n2. L'autonomie des responsables : chacun doit pouvoir décider (acheter ou vendre en interne ou à l'extérieur).\n3. L'évaluation équitable des performances : le résultat de chaque centre doit refléter sa propre efficacité, sans transfert d'inefficiences.\nS'y ajoutent la simplicité et, entre pays, le respect des règles fiscales de prix de transfert.",
+      "explanation": "Ces critères entrent souvent en conflit : un PCI au coût marginal est congruent quand le vendeur a des capacités inemployées, mais pénalise son résultat ; d'où le recours au prix négocié ou au double prix."
+    },
+    {
+      "id": "ue3-pilotage-pci-0007",
+      "type": "case_study",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "centres-responsabilite-prix-cession",
+      "difficulty": 3,
+      "tags": [
+        "prix de cession interne",
+        "capacité saturée",
+        "congruence"
+      ],
+      "source_ref": "Contrôle de gestion : centres de responsabilité et prix de cession interne (programme DSCG UE 3, pilotage de la performance)",
+      "verified": true,
+      "estimated_seconds": 900,
+      "title": "Groupe Talmont : cessions entre divisions à capacité limitée",
+      "context": "Le groupe Talmont comprend deux divisions, centres de profit.\n\nLa division Composants fabrique une pièce au coût variable unitaire de 40 €. Ses charges fixes s'élèvent à 600 000 € par an pour une capacité de 50 000 pièces. Elle peut vendre jusqu'à 30 000 pièces par an sur le marché au prix de 70 €, avec des frais commerciaux variables de 2 € par pièce, évités en cas de cession interne.\n\nLa division Assemblage a besoin de 25 000 pièces par an. Elle peut les acheter à un fournisseur extérieur au prix de 70 € (même qualité). Les charges fixes des deux divisions ne changent pas selon la décision.\n\nSi Composants livre les 25 000 pièces à Assemblage, elle ne peut plus vendre que 25 000 pièces à l'extérieur (capacité de 50 000).\n\nLa direction veut fixer un prix de cession interne unique qui conduise les deux divisions à prendre, de manière autonome, la décision la plus favorable au groupe.",
+      "sub_questions": [
+        {
+          "id": "q1-gain-groupe",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez le gain annuel pour le groupe (en euros) si les 25 000 pièces sont fabriquées par Composants plutôt qu'achetées à l'extérieur.",
+          "expected_value": 610000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Marge externe unitaire de Composants = 70 − 2 − 40 = 28 €. Achat externe : marge de Composants 30 000 × 28 = 840 000 € ; achats d'Assemblage 25 000 × 70 = 1 750 000 € ; solde −910 000 €. Fabrication interne : marge externe 25 000 × 28 = 700 000 € ; coût variable des 25 000 pièces cédées 25 000 × 40 = 1 000 000 € ; solde −300 000 €. Gain = −300 000 − (−910 000) = 610 000 €. Autre lecture : 20 000 pièces produites sur capacité libre économisent 70 − 40 = 30 € chacune (600 000 €) et 5 000 pièces prises sur les ventes externes économisent 70 − (40 + 28) = 2 € chacune (10 000 €)."
+        },
+        {
+          "id": "q2-pci-min",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculez le prix de cession interne unique minimal (en euros par pièce, à deux décimales) que Composants peut accepter pour les 25 000 pièces sans réduire son résultat.",
+          "expected_value": 45.6,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.01
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "Coût pour Composants = coût marginal des 25 000 pièces + marge perdue sur les 5 000 ventes externes abandonnées = 25 000 × 40 + 5 000 × 28 = 1 000 000 + 140 000 = 1 140 000 €. PCI minimal = 1 140 000 ÷ 25 000 = 45,60 €. Le PCI maximal acceptable par Assemblage est 70 € (prix d'achat externe) : tout PCI entre 45,60 € et 70 € conduit les deux divisions à l'échange interne. Erreurs classiques : 40 € (oubli de la marge perdue) ou 68 € (coût d'opportunité appliqué à toutes les pièces, alors que 20 000 sont produites sur capacité libre)."
+        },
+        {
+          "id": "q3-pci-cout-variable",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "La direction envisage de fixer le PCI au coût variable de 40 €. Quelle en est la conséquence la plus probable ?",
+          "options": [
+            "Les deux divisions acceptent l’échange et leurs résultats reflètent fidèlement leur performance",
+            "Composants a intérêt à refuser la cession interne, car elle perd 140 000 € de marge externe sans contrepartie et ne dégage aucune marge sur les pièces cédées",
+            "Assemblage préfère acheter à l’extérieur, car le prix interne est trop élevé",
+            "Le résultat global du groupe augmente du seul fait du changement de prix interne"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "L'option 2 est exacte : à 40 €, Composants ne gagne rien sur les pièces cédées et perd la marge de 5 000 ventes externes (5 000 × 28 = 140 000 €) : un responsable autonome refusera la cession, contre l'intérêt du groupe. L'option 1 est fausse : le PCI au coût variable pénalise le vendeur et attribue tout le gain à l'acheteur. L'option 3 est fausse : 40 € est très inférieur au prix externe de 70 €. L'option 4 est fausse : le PCI ne fait que répartir le résultat entre divisions ; il ne modifie le résultat global qu'à travers les décisions qu'il provoque."
+        },
+        {
+          "id": "q4-recommandation",
+          "kind": "open",
+          "points": 4,
+          "prompt": "Quel prix de cession interne recommanderiez-vous à la direction ? Justifiez au regard des critères de choix d’un PCI.",
+          "model_answer": "Tout PCI compris entre 45,60 € et 70 € rend l'échange interne avantageux pour les deux divisions, donc congruent avec l'intérêt du groupe (gain de 610 000 €), tout en préservant leur autonomie. Dans cette fourchette, le choix détermine le partage du gain : à 45,60 €, tout le gain revient à Assemblage ; à 70 €, tout revient à Composants. Une solution défendable est le prix de marché diminué des frais commerciaux évités, 68 € : c'est une référence objective, Assemblage paie moins que le prix externe et Composants retrouve, sur les pièces cédées, sa marge externe (28 €) et dégage en plus un gain sur la capacité libre ; l'évaluation des centres reste équitable. Un prix négocié dans la fourchette, ou un double prix (Composants crédité à 68 €, Assemblage débité au coût d'opportunité de 45,60 €), sont des alternatives. Un PCI au coût variable (40 €) ou au coût complet réel est à écarter : le premier conduit Composants à refuser, le second transfère ses inefficiences.",
+          "key_points": [
+            "Fourchette de négociation : de 45,60 € (minimum du vendeur) à 70 € (maximum de l’acheteur)",
+            "Le choix dans la fourchette répartit le gain de 610 000 € sans modifier le résultat du groupe",
+            "Recommandation argumentée : prix de marché moins coûts évités (68 €), prix négocié ou double prix",
+            "Critères : congruence, autonomie, évaluation équitable des performances"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Le PCI minimal du vendeur est égal au coût marginal augmenté du coût d'opportunité : nul sur la capacité libre (20 000 pièces), égal à la marge externe perdue de 28 € sur les 5 000 pièces prises sur les ventes externes. Le maximum de l'acheteur est le prix externe. Entre les deux, le PCI ne change pas le résultat du groupe : il en répartit le gain et doit surtout éviter qu'une division refuse une décision favorable au groupe."
+    }
+  ]
+}

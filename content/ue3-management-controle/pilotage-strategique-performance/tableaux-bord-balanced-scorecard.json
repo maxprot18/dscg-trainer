@@ -1,0 +1,198 @@
+{
+  "exercises": [
+    {
+      "id": "ue3-pilotage-tdb-0001",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "tableaux-bord-balanced-scorecard",
+      "difficulty": 1,
+      "tags": [
+        "balanced scorecard",
+        "axes"
+      ],
+      "source_ref": "R. Kaplan et D. Norton, « The Balanced Scorecard », Harvard Business Review (1992) ; Strategy Maps (2004)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Lequel de ces axes ne fait pas partie des quatre axes du balanced scorecard proposé par Kaplan et Norton ?",
+      "options": [
+        "Axe clients",
+        "Axe processus internes",
+        "Axe apprentissage organisationnel",
+        "Axe concurrence et environnement"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'option 4 est exacte : le balanced scorecard de Kaplan et Norton comporte quatre axes : financier, clients, processus internes et apprentissage organisationnel. La concurrence et l'environnement ne forment pas un axe ; l'analyse concurrentielle intervient en amont, dans la formulation de la stratégie que le scorecard traduit. Les options 1, 2 et 3 sont fausses car ce sont bien trois des quatre axes du modèle."
+    },
+    {
+      "id": "ue3-pilotage-tdb-0002",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "tableaux-bord-balanced-scorecard",
+      "difficulty": 2,
+      "tags": [
+        "tableau de bord",
+        "reporting"
+      ],
+      "source_ref": "Contrôle de gestion : tableau de bord de gestion et reporting (programme DSCG UE 3, pilotage de la performance)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Quelle caractéristique distingue le mieux un tableau de bord de gestion d'un reporting ?",
+      "options": [
+        "Le tableau de bord ne contient que des indicateurs financiers",
+        "Le tableau de bord est conçu pour le responsable lui-même, comme outil d’aide à l’action, alors que le reporting est destiné à la hiérarchie et sert surtout au contrôle a posteriori",
+        "Le reporting est produit plus rapidement et plus fréquemment que le tableau de bord",
+        "Le tableau de bord est un document obligatoire publié avec les comptes annuels"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'option 2 est exacte : le tableau de bord est un outil de pilotage pour le responsable (indicateurs choisis pour agir, souvent non financiers, disponibles rapidement), tandis que le reporting fait remonter vers la direction ou le siège des informations normalisées, surtout financières, pour rendre compte et contrôler. L'option 1 est fausse : le tableau de bord mêle indicateurs financiers et non financiers ; c'est même une de ses forces. L'option 3 est fausse : le tableau de bord privilégie la rapidité ; le reporting, plus formalisé, est souvent mensuel. L'option 4 est fausse : c'est un outil interne facultatif."
+    },
+    {
+      "id": "ue3-pilotage-tdb-0003",
+      "type": "mcq",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "tableaux-bord-balanced-scorecard",
+      "difficulty": 2,
+      "tags": [
+        "indicateurs avancés",
+        "indicateurs de résultat"
+      ],
+      "source_ref": "R. Kaplan et D. Norton, « The Balanced Scorecard », Harvard Business Review (1992) ; Strategy Maps (2004)",
+      "verified": true,
+      "estimated_seconds": 60,
+      "statement": "Une chaîne d'hôtels a pour objectif d'améliorer la fidélité de sa clientèle d'affaires. Parmi ces indicateurs, lequel est un indicateur avancé (de pilotage) plutôt qu'un indicateur de résultat ?",
+      "options": [
+        "Le chiffre d’affaires réalisé avec la clientèle d’affaires",
+        "Le taux de réservations répétées sur douze mois",
+        "Le pourcentage de réclamations traitées dans les 24 heures",
+        "La rentabilité économique du segment affaires"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'option 3 est exacte : le délai de traitement des réclamations mesure une action (un processus) qui conditionne la satisfaction et donc la fidélité future ; il permet d'agir avant que le résultat ne se dégrade. Les options 1 et 4 sont fausses : chiffre d'affaires et rentabilité constatent a posteriori des résultats financiers. L'option 2 est fausse : le taux de réservations répétées mesure directement la fidélité, c'est-à-dire le résultat visé sur l'axe clients, avec retard."
+    },
+    {
+      "id": "ue3-pilotage-tdb-0004",
+      "type": "true_false",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "tableaux-bord-balanced-scorecard",
+      "difficulty": 2,
+      "tags": [
+        "carte stratégique",
+        "causalité"
+      ],
+      "source_ref": "R. Kaplan et D. Norton, « The Balanced Scorecard », Harvard Business Review (1992) ; Strategy Maps (2004)",
+      "verified": true,
+      "estimated_seconds": 45,
+      "statement": "Dans la carte stratégique de Kaplan et Norton, les relations de cause à effet vont en principe de l'axe apprentissage organisationnel vers l'axe financier, en passant par les processus internes et les clients.",
+      "answer": true,
+      "justification": "Les compétences et les systèmes améliorent les processus, qui créent la valeur pour les clients, qui produit à son tour les résultats financiers.",
+      "explanation": "La carte stratégique se lit de bas en haut : l'apprentissage organisationnel (compétences, systèmes d'information, culture) est le socle ; il permet d'exceller dans les processus internes, ce qui satisfait les clients et génère in fine la performance financière. Ces liens restent des hypothèses à tester : une limite souvent relevée du modèle est le caractère supposé, et rarement vérifié, de ces causalités."
+    },
+    {
+      "id": "ue3-pilotage-tdb-0005",
+      "type": "numeric",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "tableaux-bord-balanced-scorecard",
+      "difficulty": 1,
+      "tags": [
+        "indicateurs",
+        "taux de service"
+      ],
+      "source_ref": "Contrôle de gestion : construction des indicateurs du tableau de bord (programme DSCG UE 3)",
+      "verified": true,
+      "estimated_seconds": 120,
+      "statement": "Un distributeur suit un indicateur de taux de service : commandes livrées complètes et à l'heure ÷ commandes livrées. En septembre, il a livré 1 840 commandes. Parmi elles, 1 650 ont été livrées à l'heure, dont 86 incomplètes.\n\nCalculez le taux de service de septembre (en %, arrondi à une décimale).",
+      "expected_value": 85,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "%",
+      "decimals": 1,
+      "explanation": "Commandes complètes et à l'heure = 1 650 − 86 = 1 564. Taux de service = 1 564 ÷ 1 840 = 85,0 %. Erreur classique : retenir le taux de ponctualité seul, 1 650 ÷ 1 840 = 89,7 %, qui ignore les livraisons incomplètes."
+    },
+    {
+      "id": "ue3-pilotage-tdb-0006",
+      "type": "case_study",
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "tableaux-bord-balanced-scorecard",
+      "difficulty": 2,
+      "tags": [
+        "balanced scorecard",
+        "carte stratégique",
+        "indicateurs"
+      ],
+      "source_ref": "R. Kaplan et D. Norton, « The Balanced Scorecard », Harvard Business Review (1992) ; Strategy Maps (2004)",
+      "verified": true,
+      "estimated_seconds": 720,
+      "title": "Vélora : construire un balanced scorecard",
+      "context": "Vélora exploite douze magasins de vélos à assistance électrique. Le marché est devenu très concurrentiel : les sites en ligne vendent moins cher. La direction veut se différencier par le service après-vente : réparation rapide en atelier, conseil personnalisé et entretien sous abonnement.\n\nLe contrôleur de gestion propose de suivre notamment les indicateurs suivants :\n- part des techniciens titulaires d'une certification constructeur ;\n- taux de réparations rendues sous 48 heures ;\n- nombre d'abonnements d'entretien actifs ;\n- note de satisfaction après passage en atelier ;\n- marge sur coûts variables de l'activité atelier.\n\nSur le dernier trimestre, l'atelier a traité 2 700 réparations, dont 2 214 rendues au client sous 48 heures.",
+      "sub_questions": [
+        {
+          "id": "q1-axe-certification",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "À quel axe du balanced scorecard rattacher l'indicateur « part des techniciens titulaires d'une certification constructeur » ?",
+          "options": [
+            "Axe financier",
+            "Axe clients",
+            "Axe processus internes",
+            "Axe apprentissage organisationnel"
+          ],
+          "answer": [
+            3
+          ],
+          "explanation": "L'option 4 est exacte : la certification des techniciens mesure le développement des compétences, socle de l'axe apprentissage organisationnel. L'option 1 est fausse : ce n'est pas une mesure de rentabilité. L'option 2 est fausse : l'indicateur ne mesure pas la perception ou le comportement des clients. L'option 3 est fausse : la compétence conditionne les processus (qualité, rapidité de réparation), mais elle n'est pas en elle-même une mesure de processus."
+        },
+        {
+          "id": "q2-taux-48h",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Calculez le taux de réparations rendues sous 48 heures du dernier trimestre (en %, arrondi à une décimale).",
+          "expected_value": 82,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "Taux = 2 214 ÷ 2 700 = 82,0 %. C’est un indicateur de l’axe processus internes, avancé par rapport à la satisfaction et à la fidélité des clients."
+        },
+        {
+          "id": "q3-financier",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "Puisque la stratégie de Vélora repose sur le service, le balanced scorecard peut se passer d'indicateurs financiers.",
+          "answer": false,
+          "explanation": "Faux : le balanced scorecard équilibre les indicateurs ; l'axe financier reste le sommet de la carte stratégique pour une entreprise à but lucratif. Ici, la marge sur coûts variables de l'atelier permet de vérifier que la différenciation par le service est rentable."
+        },
+        {
+          "id": "q4-carte",
+          "kind": "open",
+          "points": 4,
+          "prompt": "Proposez la chaîne de causalité (carte stratégique) reliant les cinq indicateurs, puis indiquez une limite de l'outil dans ce contexte.",
+          "model_answer": "Apprentissage organisationnel : la certification des techniciens améliore leur capacité à diagnostiquer et réparer vite. Processus internes : elle accroît le taux de réparations rendues sous 48 heures (82 % au dernier trimestre ; une cible, par exemple 90 %, est à fixer). Clients : la rapidité et la qualité du service élèvent la note de satisfaction, qui favorise la souscription et le renouvellement des abonnements d'entretien (fidélisation). Financier : les abonnements et le volume de l'atelier augmentent la marge sur coûts variables de l'activité atelier, et soutiennent les ventes de vélos en magasin. Limites : ces liens sont des hypothèses qu'il faudra vérifier dans le temps (une satisfaction élevée ne garantit pas l'abonnement si le prix est jugé trop élevé) ; le nombre d'indicateurs doit rester limité ; chaque indicateur doit être rattaché à un responsable qui le maîtrise (chef d'atelier, responsable magasin) ; le modèle ignore d'autres parties prenantes (salariés, environnement : recyclage des batteries).",
+          "key_points": [
+            "Certification (apprentissage) → délai de réparation (processus) → satisfaction et abonnements (clients) → marge de l’atelier (financier)",
+            "Fixation de cibles et d’initiatives pour chaque indicateur, rattachement à un responsable",
+            "Causalités supposées, à tester dans le temps",
+            "Autre limite pertinente : nombre d’indicateurs, parties prenantes absentes, coût de collecte"
+          ]
+        }
+      ],
+      "total_points": 9,
+      "explanation": "Le balanced scorecard traduit une stratégie (ici, différenciation par le service) en objectifs et indicateurs sur quatre axes reliés par des relations de cause à effet. L'analyse attendue : classer les indicateurs par axe, calculer un indicateur de processus, rappeler la place de l'axe financier et discuter le caractère hypothétique des causalités."
+    }
+  ]
+}
