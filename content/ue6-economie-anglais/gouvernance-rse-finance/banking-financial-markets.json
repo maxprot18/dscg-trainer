@@ -71,6 +71,134 @@
       "source_ref": "Bond yield to maturity: price = (coupon + face value) / (1 + YTM) for a one-year bond",
       "verified": true,
       "estimated_seconds": 150
+    },
+    {
+      "id": "ue6-gouv-bank-0004",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "gouvernance-rse-finance",
+      "notion": "banking-financial-markets",
+      "difficulty": 2,
+      "tags": [
+        "yield curve",
+        "inverted curve",
+        "recession signal"
+      ],
+      "statement": "A market report notes: \"The two-year government bond yields 4.6% while the ten-year bond yields only 3.9%.\" Which interpretation is the most appropriate?",
+      "options": [
+        "The yield curve is inverted: investors expect policy rates to fall in the future, a configuration often read as a signal of a coming slowdown or recession.",
+        "The yield curve is normal: long-term yields are lower because long-term bonds carry less risk than short-term bonds.",
+        "The yield curve is inverted, which means that the government is likely to default on its short-term debt.",
+        "The yield curve is steep: investors expect strong growth and rising inflation over the next ten years."
+      ],
+      "answer": [
+        0
+      ],
+      "multiple": false,
+      "explanation": "A yield curve is inverted when short-term yields exceed long-term yields, as here (4.6% > 3.9%). It usually reflects tight current monetary policy and market expectations that the central bank will cut rates as the economy slows; historically, inversions have often preceded recessions, although the signal is not infallible. Option 2 is wrong: a normal curve slopes upwards, because investors demand a term premium for lending longer. Option 3 confuses the slope of the curve with credit risk, which would show up as a widening spread over other issuers. Option 4 describes a steep upward-sloping curve, the opposite of the data.",
+      "source_ref": "Term structure of interest rates: expectations theory and term premium ; inverted yield curve as a leading indicator of recessions",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue6-gouv-bank-0005",
+      "type": "case_study",
+      "ue": "UE6",
+      "theme": "gouvernance-rse-finance",
+      "notion": "banking-financial-markets",
+      "difficulty": 3,
+      "tags": [
+        "CET1 ratio",
+        "leverage ratio",
+        "LCR",
+        "capital buffers"
+      ],
+      "title": "Capital and liquidity review at Alder Bank",
+      "context": "Alder Bank, a mid-sized euro-area bank, is preparing its quarterly prudential report. The following data are available (hypotheses):\n- Common Equity Tier 1 (CET1) capital: €6.3bn;\n- Additional Tier 1 (AT1) instruments: €1.2bn (Tier 1 capital = CET1 + AT1);\n- risk-weighted assets (RWA): €70bn;\n- leverage ratio total exposure measure: €260bn;\n- stock of high-quality liquid assets (HQLA): €30bn;\n- total net cash outflows over a 30-day stress period: €25bn.\n\nAssume that Alder's overall CET1 requirement is 9.5% of RWA: 6.0% for the minimum and Pillar 2 requirements, plus a combined buffer requirement of 3.5% (capital conservation buffer of 2.5% and countercyclical buffer of 1.0%). The minimum leverage ratio is 3% and the minimum LCR is 100%.\n\nThe board had planned to pay a dividend of €400m next month. You are asked to prepare an English-language note for the board.",
+      "sub_questions": [
+        {
+          "id": "cet1",
+          "kind": "numeric",
+          "prompt": "Calculate Alder Bank's CET1 ratio, in %, rounded to one decimal place.",
+          "points": 4,
+          "expected_value": 9,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "CET1 ratio = CET1 capital ÷ RWA = 6.3 ÷ 70 = 9.0%. Dividing by the total exposure (6.3 ÷ 260 = 2.4%) would be a classic error."
+        },
+        {
+          "id": "leverage",
+          "kind": "numeric",
+          "prompt": "Calculate Alder Bank's leverage ratio, in %, rounded to two decimal places.",
+          "points": 4,
+          "expected_value": 2.88,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Leverage ratio = Tier 1 capital ÷ total exposure = (6.3 + 1.2) ÷ 260 = 7.5 ÷ 260 = 2.88%. Using CET1 only would give 6.3 ÷ 260 = 2.42%."
+        },
+        {
+          "id": "diagnosis",
+          "kind": "mcq",
+          "prompt": "Which diagnosis of Alder Bank's position is correct?",
+          "points": 4,
+          "options": [
+            "All requirements are met: the CET1 ratio of 9.0% is double the 4.5% Basel minimum.",
+            "The CET1 ratio meets the 6.0% minimum and Pillar 2 requirements but eats into the combined buffer (9.0% < 9.5%); the leverage ratio is below 3%; the LCR of 120% is compliant.",
+            "The bank breaches its liquidity requirement, since its LCR is 83%, but its capital position is sound.",
+            "The CET1 ratio is below the 6.0% minimum, so the bank must be put into resolution immediately."
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "CET1 9.0% lies between the 6.0% minimum plus Pillar 2 and the 9.5% overall requirement: the bank is using its buffers, which triggers restrictions on distributions, not resolution. The leverage ratio (2.88%) is below the 3% minimum. LCR = HQLA ÷ net outflows = 30 ÷ 25 = 120% ≥ 100%. Option 1 ignores buffers, Pillar 2 and the leverage ratio. Option 3 inverts the LCR (25 ÷ 30 = 83%). Option 4 is wrong: 9.0% is above 6.0%."
+        },
+        {
+          "id": "recommendations",
+          "kind": "open",
+          "prompt": "In English, explain the consequences for the planned dividend and recommend measures to restore the bank's capital position, distinguishing measures that improve the CET1 ratio from those that improve the leverage ratio.",
+          "points": 8,
+          "model_answer": "Because Alder's CET1 ratio (9.0%) is below its combined buffer requirement (9.5%), the bank falls under the maximum distributable amount (MDA) rules: distributions such as dividends, variable remuneration and AT1 coupons are restricted, and the bank must submit a capital conservation plan to its supervisor (the ECB if it is a significant institution). The €400m dividend should therefore be cancelled or deferred; retaining the earnings also strengthens CET1. The leverage ratio of 2.88% is below the 3% minimum, which is a breach of a Pillar 1 requirement and calls for prompt corrective action agreed with the supervisor. To raise the CET1 ratio, the bank can increase capital (a rights issue or retained earnings) or reduce RWA, for instance by selling or securitising high risk-weight loans, using credit protection or shifting new lending towards lower-weighted exposures. However, reducing risk weights does not help the leverage ratio, which ignores them: to restore it, Alder must increase Tier 1 capital (new CET1 or additional AT1 instruments) or shrink its total exposure (deleveraging, reducing low-margin assets, off-balance-sheet commitments and repo activity). A rights issue is the only measure that improves both ratios at once. The LCR of 120% leaves room, but deleveraging should not erode the HQLA buffer.",
+          "key_points": [
+            "CET1 below the combined buffer requirement: MDA restrictions on dividends, bonuses and AT1 coupons; capital conservation plan; cancel or defer the €400m dividend",
+            "Leverage ratio below 3%: breach of a minimum requirement, corrective action with the supervisor",
+            "CET1 ratio: raise capital or cut RWA (sell or securitise high risk-weight assets)",
+            "Leverage ratio: more Tier 1 (CET1 or AT1) or less total exposure; RWA optimisation does not help; a rights issue improves both"
+          ]
+        }
+      ],
+      "total_points": 20,
+      "explanation": "CET1 ratio = 6.3 ÷ 70 = 9.0% (below the 9.5% overall requirement, above the 6.0% minimum and Pillar 2) ; leverage ratio = 7.5 ÷ 260 = 2.88% (below 3%) ; LCR = 30 ÷ 25 = 120%. The case contrasts risk-based capital and the non-risk-based leverage backstop, and links buffer use to restrictions on distributions.",
+      "source_ref": "Regulation (EU) No 575/2013 (CRR), art. 92(1) (CET1 ratio 4.5%, leverage ratio 3%) and art. 412 (liquidity coverage requirement) ; Directive 2013/36/EU (CRD), art. 129-130 (conservation and countercyclical buffers), art. 141-142 (restrictions on distributions, capital conservation plan)",
+      "verified": true,
+      "estimated_seconds": 840
+    },
+    {
+      "id": "ue6-gouv-bank-0006",
+      "type": "flashcard",
+      "ue": "UE6",
+      "theme": "gouvernance-rse-finance",
+      "notion": "banking-financial-markets",
+      "difficulty": 2,
+      "tags": [
+        "LCR",
+        "NSFR",
+        "liquidity regulation"
+      ],
+      "front": "What do the Basel III liquidity ratios LCR and NSFR measure?",
+      "back": "LCR (liquidity coverage ratio) = high-quality liquid assets ÷ net cash outflows over a 30-day stress period, at least 100%: the bank can survive a one-month run on its own resources.\nNSFR (net stable funding ratio) = available stable funding ÷ required stable funding over one year, at least 100%: long-term assets are financed by stable resources (capital, long-term debt, stable deposits).\nFrench: ratio de liquidité à court terme / ratio de financement stable net.",
+      "explanation": "The LCR addresses short-term liquidity stress (deposit runs, closure of money markets); the NSFR limits structural maturity transformation, i.e. financing long-term loans with short-term wholesale funding. Both complement the capital ratios (CET1, leverage), which deal with solvency rather than liquidity.",
+      "source_ref": "Regulation (EU) No 575/2013 (CRR), art. 412 (liquidity coverage requirement) and art. 413 and 428a et seq. (net stable funding requirement), as amended by Regulation (EU) 2019/876",
+      "verified": true,
+      "estimated_seconds": 35
     }
   ]
 }

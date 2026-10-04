@@ -122,6 +122,117 @@
       "source_ref": "PCG (règl. ANC 2014-03 modifié par le règl. ANC 2022-06) : comptes 2183, 2818, 657, 467, 757 ; sortie d’une immobilisation détruite",
       "estimated_seconds": 240,
       "verified": true
+    },
+    {
+      "id": "ue5-secu-pssi-0005",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "politique-securite-continuite",
+      "difficulty": 1,
+      "tags": [
+        "PCA",
+        "PRA",
+        "mode dégradé"
+      ],
+      "statement": "Pendant l'inondation de son entrepôt principal, un grossiste continue de prendre et de préparer les commandes urgentes depuis un site de secours, avec des procédures manuelles et un accès réduit à son logiciel. Quel dispositif met-il en œuvre ?",
+      "options": [
+        "Sa politique de sécurité des systèmes d'information (PSSI)",
+        "Son plan de continuité d'activité (PCA)",
+        "Son plan de reprise d'activité (PRA)",
+        "Sa charte d'utilisation des moyens informatiques"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "Maintenir les activités critiques pendant la crise, éventuellement en mode dégradé (site de secours, procédures manuelles), relève du plan de continuité d'activité (option 2). Le PRA (option 3) vise à rétablir le SI après le sinistre (restauration, bascule) : le PCA cherche à ne pas s'arrêter, le PRA à redémarrer. La PSSI (option 1) fixe les objectifs et règles de sécurité, et la charte (option 4) décline ces règles pour les utilisateurs : aucune ne décrit la conduite de l'activité pendant un sinistre.",
+      "source_ref": "ISO 22301 (management de la continuité d'activité) ; distinction PCA / PRA (fiche « Politique de sécurité, plans de continuité et de reprise d'activité »)",
+      "estimated_seconds": 45,
+      "verified": true
+    },
+    {
+      "id": "ue5-secu-pssi-0006",
+      "type": "case_study",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "politique-securite-continuite",
+      "difficulty": 3,
+      "tags": [
+        "RTO",
+        "RPO",
+        "sauvegardes immuables",
+        "disponibilité",
+        "PRA"
+      ],
+      "title": "Logistique Brenne : un rançongiciel met le PRA à l'épreuve",
+      "context": "Logistique Brenne exploite un entrepôt ouvert 24 h/24, piloté par un logiciel de gestion d'entrepôt (WMS). Le bilan d'impact sur l'activité a fixé pour le WMS un RTO de 4 heures et un RPO de 2 heures. Les commandes arrivent au rythme régulier de 120 par heure.\n\nDispositif de sauvegarde :\n- une sauvegarde du WMS toutes les 2 heures (0 h, 2 h, 4 h… 22 h), stockée sur un serveur de stockage (NAS) connecté au réseau de l'entreprise ;\n- chaque jour à 8 h 30, la sauvegarde de 8 h est copiée sur une bande, retirée ensuite du réseau ;\n- aucun test de restauration n'a été réalisé depuis deux ans.\n\nIncident : un mardi à 14 h 45, un rançongiciel chiffre simultanément le serveur du WMS et l'ensemble du NAS, y compris toutes les sauvegardes qu'il contient. Seule la bande de 8 h est saine. Faute de procédure à jour, le service n'est rétabli que le mercredi à 9 h 15.\n\nAu cours de l'année, le WMS a par ailleurs subi d'autres interruptions non planifiées pour un total de 3 h 30. L'année compte 8 760 heures.",
+      "sub_questions": [
+        {
+          "id": "q1-commandes-perdues",
+          "kind": "numeric",
+          "prompt": "Combien de commandes devront être ressaisies à partir des documents des clients (nombre entier) ?",
+          "points": 3,
+          "expected_value": 810,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "commandes",
+          "decimals": 0,
+          "explanation": "La dernière sauvegarde saine est la bande de 8 h : les données perdues couvrent 8 h → 14 h 45, soit 6 h 45 = 6,75 h. Commandes perdues = 6,75 × 120 = 810. Partir de la sauvegarde planifiée de 14 h (0,75 h, 90 commandes) serait une erreur : elle a été chiffrée. La perte réelle (6 h 45) dépasse largement le RPO de 2 heures."
+        },
+        {
+          "id": "q2-disponibilite",
+          "kind": "numeric",
+          "prompt": "Calculez la disponibilité du WMS sur l'année, en pourcentage arrondi à deux décimales.",
+          "points": 3,
+          "expected_value": 99.75,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.01
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Interruption due au rançongiciel : mardi 14 h 45 → mercredi 9 h 15 = 9 h 15 + 9 h 15 = 18,5 h. Indisponibilité totale = 18,5 + 3,5 = 22 h. Disponibilité = (8 760 − 22) ÷ 8 760 = 99,75 %. Oublier les autres interruptions donnerait 99,79 %. L'interruption de 18,5 h dépasse le RTO de 4 heures."
+        },
+        {
+          "id": "q3-mesure-sauvegarde",
+          "kind": "mcq",
+          "prompt": "Quelle mesure aurait permis de respecter le RPO malgré le chiffrement du NAS ?",
+          "points": 2,
+          "options": [
+            "Passer à une sauvegarde toutes les heures sur le même NAS",
+            "Ajouter des disques en miroir (RAID) dans le NAS",
+            "Conserver, au rythme du RPO, une copie des sauvegardes hors ligne ou immuable (non modifiable)",
+            "Faire certifier l'entreprise ISO/IEC 27002"
+          ],
+          "answer": [
+            2
+          ],
+          "multiple": false,
+          "explanation": "Pour respecter un RPO de 2 heures face à un rançongiciel, il faut disposer toutes les 2 heures d'une copie que l'attaquant ne peut ni chiffrer ni effacer : copie hors ligne ou stockage immuable, en complément de la règle 3-2-1 (option 3). L'option 1 multiplie des sauvegardes qui seraient chiffrées avec le NAS. L'option 2 protège contre la panne d'un disque, pas contre un chiffrement qui touche toutes les copies. L'option 4 est impossible : l'ISO 27002 est un guide de mesures, non certifiable."
+        },
+        {
+          "id": "q4-plan-action",
+          "kind": "open",
+          "prompt": "Établissez le diagnostic de l'incident au regard des objectifs du BIA et proposez un plan d'action hiérarchisé pour le PRA et la politique de sauvegarde.",
+          "points": 4,
+          "model_answer": "Diagnostic : les deux objectifs sont manqués. Perte de données de 6 h 45 pour un RPO de 2 h (810 commandes à ressaisir) : toutes les sauvegardes intrajournalières étaient sur un NAS accessible depuis le réseau, donc chiffrées avec la production ; seule la copie quotidienne hors ligne était saine. Interruption de 18,5 h pour un RTO de 4 h : procédure de reprise non à jour et jamais testée. Plan d'action : 1) en priorité, sauvegardes hors ligne ou immuables au rythme du RPO, cloisonnement du NAS (comptes d'administration distincts, réseau séparé), supervision des sauvegardes ; 2) mise à jour du PRA (rôles, contacts, ordre de restauration, moyens de secours dimensionnés pour 4 h) et tests de restauration réguliers, au moins une bascule complète par an, avec mise à jour après chaque test ; 3) PCA pour l'entrepôt : procédures en mode dégradé pour continuer d'expédier les commandes urgentes pendant la reprise ; 4) traiter la cause : analyse de la voie d'entrée, correctifs, authentification multifacteur, sensibilisation, conformément à la PSSI ; 5) suivre des indicateurs (taux de succès des sauvegardes, durée des restaurations testées, disponibilité).",
+          "key_points": [
+            "RPO dépassé (6 h 45 contre 2 h) car sauvegardes intrajournalières exposées sur le réseau",
+            "RTO dépassé (18,5 h contre 4 h) faute de PRA à jour et testé",
+            "Sauvegardes hors ligne ou immuables au rythme du RPO, NAS cloisonné, supervision",
+            "PRA mis à jour et testé régulièrement ; PCA en mode dégradé",
+            "Traitement de la cause de l'attaque et indicateurs de suivi"
+          ]
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Perte de données = 14 h 45 − 8 h = 6,75 h, soit 810 commandes (RPO de 2 h dépassé). Interruption = 18,5 h (RTO de 4 h dépassé) ; disponibilité = (8 760 − 22) ÷ 8 760 = 99,75 %. Une sauvegarde n'a de valeur que si elle est hors d'atteinte de l'attaquant, supervisée et restaurable : copies hors ligne ou immuables, tests réguliers du PRA.",
+      "source_ref": "ISO 22301 (BIA, RTO, RPO) ; ISO/IEC 27002:2022 mesure 8.13 (sauvegarde des informations) ; guide d'hygiène informatique de l'ANSSI (sauvegardes déconnectées)",
+      "estimated_seconds": 840,
+      "verified": true
     }
   ]
 }

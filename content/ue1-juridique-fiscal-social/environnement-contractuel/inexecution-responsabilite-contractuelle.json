@@ -193,6 +193,34 @@
       "source_ref": "C. com. L441-10 et D441-5 ; C. civ. art. 1217, 1219 et 1225",
       "estimated_seconds": 780,
       "verified": true
+    },
+    {
+      "id": "ue1-contrat-inexec-0006",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "environnement-contractuel",
+      "notion": "inexecution-responsabilite-contractuelle",
+      "difficulty": 2,
+      "tags": [
+        "clause limitative",
+        "obligation essentielle",
+        "préjudice prévisible"
+      ],
+      "statement": "La SAS Archivia propose aux entreprises un service payant de sauvegarde externalisée de leurs données comptables. Ses conditions générales, acceptées par la SARL Duroc, stipulent : « Archivia n'est responsable d'aucune perte ou altération des données confiées, quelle qu'en soit la cause. » À la suite d'une négligence d'un technicien d'Archivia, qui ne constitue pas une faute lourde, toutes les sauvegardes de Duroc sont effacées. Quelle affirmation est exacte ?",
+      "options": [
+        "La clause est efficace, car elle a été acceptée par un professionnel et aucune faute lourde n'est établie",
+        "Le contrat est nul pour défaut de contrepartie ; Duroc peut seulement obtenir la restitution des sommes versées",
+        "La clause est réputée non écrite, car elle prive de sa substance l'obligation essentielle d'Archivia ; Duroc peut obtenir réparation de son préjudice prévisible",
+        "La clause est réputée non écrite et Duroc peut obtenir réparation de l'intégralité de son préjudice, même imprévisible lors de la conclusion du contrat"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "L'obligation essentielle d'un prestataire de sauvegarde est de conserver les données qui lui sont confiées. Une clause qui l'exonère de toute responsabilité en cas de perte, quelle qu'en soit la cause, prive cette obligation de sa substance : elle est réputée non écrite (C. civ. art. 1170). Duroc obtient alors des dommages-intérêts selon le droit commun, limités au préjudice prévisible lors de la conclusion du contrat, faute de faute lourde ou dolosive (art. 1231-3) : c'est l'option 3.\nL'option 1 est fausse : l'article 1170 s'applique à tout contrat, y compris entre professionnels ; l'absence de faute lourde n'empêche que l'éviction de la clause pour faute lourde, non son éviction pour atteinte à l'obligation essentielle. L'option 2 est fausse : la sanction frappe la seule clause, réputée non écrite, et non le contrat entier. L'option 4 est fausse : l'éviction de la clause ne fait pas disparaître la limite du préjudice prévisible, qui ne cède qu'en cas de faute lourde ou dolosive.",
+      "source_ref": "C. civ. art. 1170 (clause privant de sa substance l’obligation essentielle) et 1231-3 (préjudice prévisible)",
+      "verified": true,
+      "estimated_seconds": 75
     }
   ]
 }

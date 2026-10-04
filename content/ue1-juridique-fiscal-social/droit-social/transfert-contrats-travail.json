@@ -195,6 +195,34 @@
       "explanation": "Cotisations salariales : 42 000 × 22 % = 9 240 € ; cotisations patronales : 42 000 × 42 % = 17 640 €.\n- Débit 641 : salaire brut, 42 000 €.\n- Débit 645 : cotisations patronales, 17 640 €.\n- Crédit 431 : total dû à l'URSSAF, 9 240 + 17 640 = 26 880 €.\n- Crédit 421 : net à payer, 42 000 − 9 240 = 32 760 €.\nTotal : 59 640 € au débit et au crédit. Les cotisations salariales sont une retenue sur le brut : elles ne passent pas par le 645. Le transfert des contrats (L1224-1) n'interrompt pas la relation de travail : Brume, nouvel employeur, verse les rémunérations contractuelles antérieures et la prime d'ancienneté reste calculée sur l'ancienneté acquise chez Ardent ; elle fait partie du salaire brut (641) et supporte les cotisations comme le reste de la rémunération.",
       "source_ref": "PCG (règl. ANC 2014-03), comptes 641, 645, 421 et 431 ; C. trav. art. L1224-1",
       "estimated_seconds": 180
+    },
+    {
+      "id": "ue1-social-transfert-0006",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "droit-social",
+      "notion": "transfert-contrats-travail",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "dettes salariales",
+        "procédure collective",
+        "L1224-2"
+      ],
+      "statement": "La SAS Alto, placée en redressement judiciaire, fait l'objet d'un plan de cession arrêté par le tribunal : la SAS Basse reprend l'activité et les 35 salariés, dont les contrats sont transférés. À la date de la cession, Alto restait devoir à ces salariés deux mois de salaires et des primes. Qui est tenu de ces dettes salariales nées avant la cession ?",
+      "options": [
+        "Basse, qui doit les payer aux salariés puis peut en obtenir le remboursement auprès d'Alto, comme pour toute cession",
+        "Basse seule, sans aucun recours contre Alto, puisqu'elle reprend les contrats de travail",
+        "Alto : en cas de procédure de sauvegarde, de redressement ou de liquidation judiciaire, le repreneur n'est pas tenu des dettes antérieures, qui relèvent de la procédure collective du cédant",
+        "Personne : le transfert des contrats éteint les créances salariales nées avant la cession"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "L'article L1224-2 pose en principe que le nouvel employeur est tenu, envers les salariés transférés, des obligations de l'ancien employeur nées à la date de la modification, l'ancien lui remboursant les sommes payées sauf convention contraire. Mais il écarte cette règle en cas de procédure de sauvegarde, de redressement ou de liquidation judiciaire : les créances antérieures restent dues par Alto et sont traitées dans sa procédure collective (avec, le cas échéant, l'intervention de la garantie des salaires). L'option 3 est donc exacte.\nL'option 1 décrit le principe de droit commun, inapplicable ici. L'option 2 est fausse deux fois : le repreneur n'est pas tenu des dettes en procédure collective et, même hors procédure collective, il dispose en principe d'un recours contre le cédant. L'option 4 est fausse : les créances des salariés subsistent et restent dues par Alto, dans le cadre de sa procédure collective.",
+      "source_ref": "C. trav. art. L1224-2 (obligations du nouvel employeur et exceptions)",
+      "estimated_seconds": 75
     }
   ]
 }

@@ -175,6 +175,34 @@
       "explanation": "Le cas mobilise les conditions du régime mère-fille (5 % du capital, engagement de conservation de deux ans), la quote-part de frais et charges de 5 % et le régime des plus-values à long terme sur titres de participation (taux de 0 % et quote-part de 12 %).",
       "source_ref": "CGI art. 145, 216 et 219, I, a quinquies",
       "estimated_seconds": 780
+    },
+    {
+      "id": "ue1-groupes-merefil-0006",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "regime-mere-filiale",
+      "difficulty": 3,
+      "tags": [
+        "régime mère-fille",
+        "engagement de conservation",
+        "plus-value à court terme"
+      ],
+      "statement": "Le 1er mars N, la SA Ocre (IS au taux normal, aucune intégration fiscale) acquiert 10 % du capital de la SAS Pastel, inscrits en titres de participation. En juin N, elle reçoit un dividende de 100 000 € de Pastel, auquel elle applique le régime mère-fille (déduction de 100 000 € et réintégration d'une quote-part de 5 000 €). Le 1er septembre N+1, elle cède la totalité de ces titres avec une plus-value de 80 000 €. Quelles sont les conséquences fiscales de cette cession ?",
+      "options": [
+        "Aucune sur le dividende, le régime ayant été valablement appliqué lors de la distribution ; la plus-value bénéficie du taux de 0 % avec réintégration d'une quote-part de 12 %",
+        "Ocre doit verser au Trésor, dans les trois mois de la cession, l'IS dont elle a été dispensée sur le dividende, majoré de l'intérêt de retard ; la plus-value bénéficie du taux de 0 % avec réintégration d'une quote-part de 12 %",
+        "Ocre doit déposer une déclaration rectificative de N pour imposer le dividende, sans intérêt de retard ; la plus-value est imposée au taux normal",
+        "Ocre doit verser au Trésor, dans les trois mois de la cession, l'IS dont elle a été dispensée sur le dividende, majoré de l'intérêt de retard ; la plus-value, réalisée sur des titres détenus depuis moins de deux ans, est imposée au taux normal"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Le régime mère-fille s'applique dès la première distribution sous réserve de l'engagement de conserver les titres deux ans. En cas de cession avant ce délai (ici 18 mois), la mère verse au Trésor, dans les trois mois suivant la cession, une somme égale à l'impôt dont elle a été indûment exonérée, majorée de l'intérêt de retard (CGI art. 145, 1, c). Par ailleurs, le taux de 0 % des plus-values sur titres de participation suppose une détention d'au moins deux ans (art. 219, I, a quinquies) : la plus-value de 80 000 € est imposée au taux normal. Seule l'option 4 réunit ces deux conséquences. L'option 1 ignore la rupture de l'engagement de conservation et la condition de durée du taux de 0 %. L'option 2 accorde à tort le taux de 0 %. L'option 3 décrit une procédure inexacte : il s'agit d'un versement spontané dans les trois mois, avec intérêt de retard.",
+      "source_ref": "CGI art. 145, 1, c (conservation des titres pendant deux ans, reversement dans les trois mois) ; art. 219, I, a quinquies (plus-values sur titres de participation détenus depuis au moins deux ans)",
+      "verified": true,
+      "estimated_seconds": 90
     }
   ]
 }

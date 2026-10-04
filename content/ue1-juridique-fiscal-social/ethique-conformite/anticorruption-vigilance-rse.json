@@ -187,6 +187,34 @@
       "source_ref": "Loi n° 2016-1691, art. 6 à 8 et 17 (mod. loi n° 2022-401) ; CPP art. 41-1-2 ; C. com. L225-102-4",
       "estimated_seconds": 780,
       "verified": true
+    },
+    {
+      "id": "ue1-ethique-anticor-0006",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "anticorruption-vigilance-rse",
+      "difficulty": 2,
+      "tags": [
+        "société à mission",
+        "raison d’être",
+        "RSE"
+      ],
+      "statement": "La SAS Terrafibre, qui emploie 35 salariés permanents, a inscrit dans ses statuts une raison d'être ainsi que des objectifs sociaux et environnementaux, et souhaite faire publiquement état de la qualité de société à mission. Quelle affirmation est exacte ?",
+      "options": [
+        "Elle doit constituer un comité de mission distinct des organes sociaux, quel que soit son effectif",
+        "Ses statuts peuvent prévoir qu'un référent de mission remplace le comité de mission, et l'exécution des objectifs est vérifiée par un organisme tiers indépendant",
+        "La qualité de société à mission est réservée aux sociétés anonymes dont les titres sont admis aux négociations sur un marché réglementé",
+        "En cas de non-respect de ses objectifs, l'Agence française anticorruption peut lui infliger une sanction pécuniaire pouvant atteindre 1 M€"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "La société à mission inscrit dans ses statuts une raison d'être et des objectifs sociaux et environnementaux ; un comité de mission, distinct des organes sociaux, en suit l'exécution, et un organisme tiers indépendant vérifie cette exécution (C. com. L210-10). Les sociétés employant moins de cinquante salariés permanents peuvent prévoir dans leurs statuts qu'un référent de mission, qui peut être un salarié, se substitue au comité (L210-12) : c'est l'option 2.\nL'option 1 est fausse : le comité n'est pas obligatoire sous le seuil de cinquante salariés. L'option 3 est fausse : toute société, quelle que soit sa forme (SAS, SARL, SA…), peut adopter cette qualité. L'option 4 est fausse : l'AFA contrôle les programmes anticorruption de la loi Sapin 2 ; le manquement d'une société à mission est sanctionné par la suppression de la mention « société à mission », que le ministère public ou toute personne intéressée peut demander au président du tribunal statuant en référé (L210-11).",
+      "source_ref": "C. com. art. L210-10 (conditions), L210-11 (suppression de la mention) et L210-12 (référent de mission sous 50 salariés) ; C. civ. art. 1835 (raison d’être)",
+      "verified": true,
+      "estimated_seconds": 75
     }
   ]
 }

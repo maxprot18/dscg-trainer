@@ -205,6 +205,64 @@
       "source_ref": "C. com. art. L622-24, L622-26, R622-24, L641-3, L643-1, L643-8 et L643-11",
       "verified": true,
       "estimated_seconds": 840
+    },
+    {
+      "id": "ue1-difficulte-lj-0006",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "liquidation-judiciaire",
+      "difficulty": 2,
+      "tags": [
+        "dividende chirographaire",
+        "clôture pour insuffisance d'actif",
+        "perte sur créance",
+        "TVA"
+      ],
+      "statement": "La société Granville détenait sur son client Avranches, mis en liquidation judiciaire, une créance chirographaire admise pour 28 800 € TTC (24 000 € HT, TVA 20 %), inscrite au compte 416 et dépréciée de 16 000 € au compte 491. Le 20 septembre N+1, le liquidateur lui verse par virement un dividende de 12,5 % de sa créance admise et lui notifie la clôture de la procédure pour insuffisance d'actif ; aucune autre somme ne sera perçue. On admet que la TVA afférente à la fraction non recouvrée est récupérable. Passez l'écriture du 20 septembre N+1 constatant l'encaissement du dividende, la perte et la reprise de la dépréciation, en utilisant les comptes 512, 654, 44571, 416, 491 et 7817.",
+      "date": "20/09/N+1",
+      "entries": [
+        {
+          "account": "512",
+          "label": "Banque (dividende de liquidation)",
+          "debit": 3600,
+          "credit": 0
+        },
+        {
+          "account": "654",
+          "label": "Pertes sur créances irrécouvrables",
+          "debit": 21000,
+          "credit": 0
+        },
+        {
+          "account": "44571",
+          "label": "TVA collectée (régularisation)",
+          "debit": 4200,
+          "credit": 0
+        },
+        {
+          "account": "416",
+          "label": "Clients douteux - Avranches",
+          "debit": 0,
+          "credit": 28800
+        },
+        {
+          "account": "491",
+          "label": "Dépréciations des comptes de clients",
+          "debit": 16000,
+          "credit": 0
+        },
+        {
+          "account": "7817",
+          "label": "Reprises sur dépréciations des actifs circulants",
+          "debit": 0,
+          "credit": 16000
+        }
+      ],
+      "explanation": "Dividende : 12,5 % × 28 800 = 3 600 € encaissés (512). Fraction non recouvrée : 28 800 − 3 600 = 25 200 € TTC, devenue définitivement irrécouvrable avec la clôture pour insuffisance d'actif : perte hors taxe 25 200 / 1,2 = 21 000 € (654) et TVA régularisée 4 200 € (44571). Le compte 416 est soldé (28 800 € au crédit). La dépréciation de 16 000 € devient sans objet et est reprise (491 au débit, 7817 au crédit). Contrôle : débits 3 600 + 21 000 + 4 200 + 16 000 = 44 800 € = crédits 28 800 + 16 000.\nErreurs à éviter : calculer le dividende sur le montant hors taxe (3 000 €), alors que la créance est admise toutes taxes comprises ; régulariser la TVA sur la totalité de la créance (4 800 €), alors que la fraction encaissée a bien été payée ; imputer la perte sur la dépréciation sans constater la reprise.",
+      "source_ref": "C. com. art. L643-11 (clôture pour insuffisance d'actif) ; PCG (règl. ANC 2014-03), comptes 416, 491, 654 et 7817 ; CGI art. 272, 1 (récupération de la TVA sur créance irrécouvrable)",
+      "verified": true,
+      "estimated_seconds": 200
     }
   ]
 }

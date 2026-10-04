@@ -125,6 +125,31 @@
       "source_ref": "C. civ. art. 1127-2 et 1127-3",
       "estimated_seconds": 45,
       "verified": true
+    },
+    {
+      "id": "ue1-contrat-neg-0006",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "environnement-contractuel",
+      "notion": "contrats-complexes-negociation",
+      "difficulty": 2,
+      "tags": [
+        "assurance",
+        "déclaration du risque",
+        "réduction proportionnelle"
+      ],
+      "statement": "La SARL Belvédère a assuré son entrepôt contre l'incendie. Lors de la souscription, son gérant a omis, de bonne foi, de déclarer qu'un atelier de peinture, activité qui aggrave le risque, était installé dans l'entrepôt. La prime annuelle payée est de 4 200 € ; l'assureur établit que, s'il avait connu ce risque, la prime aurait été de 6 000 €. Un incendie cause à la société un dommage garanti de 150 000 € ; l'omission n'est découverte qu'à l'occasion de ce sinistre. Le contrat ne prévoit ni franchise ni plafond. Calculez l'indemnité due par l'assureur, en euros.",
+      "expected_value": 105000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "La fausse déclaration n'étant pas intentionnelle (bonne foi établie), le contrat n'est pas nul (la nullité de L113-8 suppose la mauvaise foi). Le défaut de déclaration étant constaté après le sinistre, l'indemnité est réduite en proportion du taux des primes payées par rapport au taux des primes qui auraient été dues (C. assur. L113-9) :\nindemnité = 150 000 × 4 200 / 6 000 = 150 000 × 0,70 = 105 000 €.\nErreurs à éviter : verser l'intégralité du dommage (150 000 €), ce qui ignore la sanction de l'inexactitude ; refuser toute indemnité (0 €), ce qui applique à tort la nullité réservée à la fausse déclaration intentionnelle ; déduire du dommage la seule insuffisance de prime (150 000 − 1 800 = 148 200 €), ce qui n'est pas la règle proportionnelle.",
+      "source_ref": "C. assur. art. L113-2 (déclaration du risque), L113-8 (fausse déclaration intentionnelle) et L113-9 (omission ou déclaration inexacte de bonne foi)",
+      "verified": true,
+      "estimated_seconds": 150
     }
   ]
 }

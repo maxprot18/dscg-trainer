@@ -94,6 +94,107 @@
       "source_ref": "C. com. art. L. 430-2",
       "verified": true,
       "estimated_seconds": 35
+    },
+    {
+      "id": "ue1-restr-concent-0005",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "controle-concentrations",
+      "difficulty": 1,
+      "tags": [
+        "gun jumping",
+        "sanction",
+        "L. 430-8"
+      ],
+      "statement": "La SA Rance (CA mondial HT du dernier exercice clos : 1 100 M€, dont 360 M€ réalisés en France) a pris le contrôle exclusif de la SAS Couesnon (CA HT réalisé en France sur la même période : 140 M€) sans notifier l'opération, alors que les seuils français étaient franchis. On retient que la sanction encourue par une personne morale qui réalise une concentration sans notification est plafonnée à 5 % de son CA HT réalisé en France lors du dernier exercice clos, augmenté du CA HT réalisé en France sur la même période par la partie acquise. Quel est le montant maximal de la sanction encourue par Rance ? Réponse en millions d'euros.",
+      "expected_value": 25,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "M€",
+      "decimals": 1,
+      "explanation": "Plafond = 5 % × (CA France de l'acquéreur + CA France de la partie acquise) = 5 % × (360 + 140) = 5 % × 500 = 25 M€.\nErreurs à éviter : calculer sur le CA mondial (5 % × 1 100 = 55 M€) : la sanction pour défaut de notification se calcule sur le CA réalisé en France ; oublier le CA de la partie acquise (5 % × 360 = 18 M€) ; appliquer le plafond de 10 % du CA mondial propre aux ententes et abus de domination (L. 464-2).",
+      "source_ref": "C. com. art. L. 430-8, I (sanction de la réalisation d'une concentration sans notification)",
+      "verified": true,
+      "estimated_seconds": 120
+    },
+    {
+      "id": "ue1-restr-concent-0006",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "controle-concentrations",
+      "difficulty": 3,
+      "tags": [
+        "dimension européenne",
+        "règle des deux tiers",
+        "effet suspensif",
+        "procédure"
+      ],
+      "title": "Ouessant prend le contrôle de Sein",
+      "context": "Le groupe Ouessant, fabricant d'équipements nautiques, a signé le 1er octobre N un accord par lequel il acquiert 60 % du capital et des droits de vote de la société Sein, tête d'un groupe concurrent, auprès de la famille fondatrice (personnes physiques qui ne détiennent aucune autre participation).\nChiffres d'affaires HT du dernier exercice clos (en M€), calculés au niveau de chaque groupe :\n- groupe Ouessant : mondial 3 600, dans l'Union européenne 2 400, dont France 1 900 ;\n- groupe Sein : mondial 1 700, dans l'Union européenne 700, dont France 420.\nOn suppose que les seuils européens alternatifs ne sont pas remplis et que l'opération n'a fait l'objet d'aucune demande de renvoi.\nLe directeur général d'Ouessant souhaite réaliser l'acquisition le 15 octobre N et installer aussitôt ses équipes à la direction de Sein, quitte à notifier l'opération le même jour.",
+      "sub_questions": [
+        {
+          "id": "q1-part-france",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Quelle part de son chiffre d'affaires réalisé dans l'Union européenne le groupe Sein réalise-t-il en France ? Réponse en pourcentage, arrondie à une décimale.",
+          "expected_value": 60,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "420 / 700 = 60,0 %. Pour Ouessant, la proportion est de 1 900 / 2 400 = 79,2 %. Ce calcul sert à appliquer la règle des deux tiers (règl. (CE) n° 139/2004, art. 1) : elle n'écarte la compétence de la Commission que si chacune des entreprises concernées réalise plus des deux tiers (66,7 %) de son CA européen dans un seul et même État membre."
+        },
+        {
+          "id": "q2-autorite",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Auprès de quelle autorité l'opération doit-elle être notifiée ?",
+          "options": [
+            "L'Autorité de la concurrence, car Ouessant réalise plus des deux tiers de son CA européen en France",
+            "La Commission européenne, car l'opération est de dimension européenne et la règle des deux tiers ne s'applique pas",
+            "La Commission européenne et l'Autorité de la concurrence, chacune pour les effets de l'opération sur son territoire",
+            "Aucune autorité, l'acquisition d'une participation de 60 % ne constituant pas une prise de contrôle"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "L'acquisition de 60 % du capital et des droits de vote confère le contrôle exclusif : c'est une concentration (option 4 fausse). Seuils européens : CA mondial total 3 600 + 1 700 = 5 300 M€ > 5 000 M€, et chacune des deux entreprises réalise plus de 250 M€ dans l'UE (2 400 et 700 M€). La règle des deux tiers suppose que chaque entreprise concernée réalise plus des deux tiers de son CA européen dans le même État : c'est vrai pour Ouessant (79,2 %), mais pas pour Sein (60 %). L'opération est donc de dimension européenne et relève de la seule Commission (option 2). L'option 1 applique la règle des deux tiers à une seule entreprise. L'option 3 méconnaît le guichet unique : une opération de dimension européenne n'est pas notifiée en parallèle aux autorités nationales."
+        },
+        {
+          "id": "q3-realisation",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "Ouessant peut réaliser l'acquisition et prendre la direction de Sein le 15 octobre N, dès lors qu'elle notifie l'opération le même jour.",
+          "answer": false,
+          "explanation": "La notification est préalable et l'opération est suspendue jusqu'à la décision de l'autorité compétente (règl. (CE) n° 139/2004, art. 7), sauf dérogation accordée par celle-ci. Prendre la direction de la cible avant l'autorisation constitue une réalisation anticipée (gun jumping), passible d'une sanction pécuniaire."
+        },
+        {
+          "id": "q4-procedure",
+          "kind": "open",
+          "points": 3,
+          "prompt": "Décrivez le déroulement de la procédure de contrôle (délais d'examen) et les décisions que l'autorité compétente peut prendre.",
+          "model_answer": "Ouessant notifie le projet à la Commission européenne dès qu'il est suffisamment abouti (l'accord du 1er octobre suffit), et ne le réalise pas avant la décision. La Commission conduit une phase 1 de 25 jours ouvrables, portée à 35 jours ouvrables si des engagements sont proposés. Si des doutes sérieux subsistent, elle ouvre une phase 2 d'examen approfondi de 90 jours ouvrables. Le critère de fond est l'entrave significative à une concurrence effective, notamment par la création ou le renforcement d'une position dominante, les deux groupes étant concurrents ; les gains d'efficacité sont mis en balance. À l'issue de l'examen, la Commission autorise l'opération, l'autorise sous engagements (cession d'une activité, engagements de comportement) ou l'interdit. L'Autorité de la concurrence n'intervient pas, sauf renvoi de l'affaire par la Commission à sa demande.",
+          "key_points": [
+            "Notification préalable à la Commission et effet suspensif",
+            "Phase 1 de 25 jours ouvrables (35 avec engagements)",
+            "Phase 2 de 90 jours ouvrables en cas de doutes sérieux",
+            "Critère : entrave significative à une concurrence effective (position dominante)",
+            "Décisions : autorisation, autorisation sous engagements ou interdiction"
+          ]
+        }
+      ],
+      "total_points": 8,
+      "explanation": "Démarche : qualifier l'opération (prise de contrôle exclusif = concentration), tester les seuils européens, puis la règle des deux tiers, qui exige que chacune des entreprises concernées réalise plus des deux tiers de son CA européen dans le même État membre ; ici, Sein n'en réalise que 60 % en France, de sorte que l'opération reste de dimension européenne et relève de la Commission (guichet unique). La notification est préalable et suspensive : la prise de contrôle anticipée prévue pour le 15 octobre est interdite.",
+      "source_ref": "Règlement (CE) n° 139/2004 du 20 janvier 2004, art. 1 (dimension communautaire, règle des deux tiers), 3 (notion de concentration), 4 (notification préalable), 7 (effet suspensif), 8 (décisions) et 10 (délais) ; C. com. art. L. 430-2 (seuils français)",
+      "verified": true,
+      "estimated_seconds": 720
     }
   ]
 }

@@ -34,6 +34,7 @@ const MODE_LABELS: Record<SessionMode, string> = {
   errors: 'Erreurs',
   exam: 'Examen blanc',
   cards: 'Flashcards',
+  diagnostic: 'Positionnement',
 }
 
 const percent = (rate: number | null) => (rate === null ? '—' : `${Math.round(rate * 100)} %`)

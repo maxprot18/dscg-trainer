@@ -99,6 +99,111 @@
       "explanation": "Ventes minorées : (100 − 80) × 20 000 = 400 000 €.\nRedevance excessive : (8 % − 5 %) × 5 000 000 = 150 000 € ; seule la fraction excédant le taux de pleine concurrence est réintégrée, la redevance de 5 % restant déductible.\nPrestations administratives : réelles et facturées à prix de marché, aucun avantage n'est consenti, pas de réintégration.\nTotal : 400 000 + 150 000 = 550 000 €, soit un supplément d'IS de 137 500 € au taux de 25 %.\nErreurs classiques : réintégrer toute la redevance (400 000 + 400 000 = 800 000 €) ou les prestations administratives (850 000 €).",
       "source_ref": "CGI art. 57 (réintégration des bénéfices transférés à une entreprise liée établie hors de France)",
       "estimated_seconds": 240
+    },
+    {
+      "id": "ue1-groupes-prixtr-0005",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "prix-transfert-fiscalite-internationale",
+      "difficulty": 3,
+      "tags": [
+        "prix de transfert",
+        "art. 57",
+        "territorialité",
+        "succursale",
+        "documentation"
+      ],
+      "title": "Talma : contrôle des flux internationaux",
+      "context": "La SAS Talma, établie à Lyon, fabrique des pompes industrielles. Elle n'est détenue par aucune autre société et clôture ses exercices au 31 décembre. En N, son chiffre d'affaires hors taxes s'élève à 80 M€ et son actif brut à 70 M€ ; le chiffre d'affaires consolidé du groupe qu'elle forme avec ses filiales atteint 120 M€.\nTalma détient 100 % de la société Talma Italia, distributrice établie à Milan, et exploite au Portugal une succursale (établissement stable sans personnalité juridique), dont le résultat est compris dans ses comptes annuels.\nUne vérification de comptabilité portant sur l'exercice N relève :\n- la vente de 8 000 pompes à Talma Italia au prix unitaire de 120 €, alors que Talma vend le même modèle 150 € à des distributeurs indépendants, en quantités et à des conditions comparables ; Talma n'invoque aucune contrepartie ;\n- un prêt de 500 000 € consenti à Talma Italia le 1er janvier N, sans intérêts, pour toute l'année ; le taux qu'aurait pratiqué un prêteur indépendant est de 4 % ; Talma n'invoque aucune contrepartie ;\n- la succursale portugaise a subi en N une perte de 90 000 €, qui a minoré le résultat comptable de Talma ; aucun retraitement n'a été opéré sur la déclaration.\nOn retient un taux d'IS de 25 %.",
+      "sub_questions": [
+        {
+          "id": "q1-preuve",
+          "kind": "mcq",
+          "prompt": "Pour réintégrer les sommes liées aux ventes et au prêt sur le fondement de l'article 57 du CGI, que doit établir l'administration ?",
+          "points": 2,
+          "options": [
+            "Rien : il appartient à Talma de démontrer que ses prix sont conformes au prix de pleine concurrence",
+            "L'existence d'un lien de dépendance entre Talma et Talma Italia et celle d'un avantage consenti, par comparaison avec les conditions pratiquées entre entreprises indépendantes",
+            "L'intention frauduleuse de Talma de transférer des bénéfices hors de France",
+            "Que Talma Italia est établie dans un État à régime fiscal privilégié"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "L'administration doit prouver la dépendance (ici juridique : filiale à 100 %) et l'avantage (écart avec les prix pratiqués avec des indépendants, prêt sans intérêts) ; Talma peut ensuite justifier d'une contrepartie (CGI art. 57) : option 2. L'option 1 inverse la charge de la preuve. Aucune intention frauduleuse n'est exigée (option 3). Le régime fiscal privilégié (option 4) dispense seulement l'administration de prouver la dépendance ; il n'est pas une condition de l'article 57."
+        },
+        {
+          "id": "q2-reintegrations",
+          "kind": "numeric",
+          "prompt": "Quel est le montant total des réintégrations à opérer sur le résultat fiscal de Talma au titre de N (ventes, prêt et succursale) ? Réponse en euros.",
+          "points": 3,
+          "expected_value": 350000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Ventes : (150 − 120) × 8 000 = 240 000 €. Prêt sans intérêts : 500 000 × 4 % = 20 000 €. Succursale : en vertu de la territorialité de l'IS, le résultat d'un établissement exploité hors de France n'est pas pris en compte, qu'il soit bénéficiaire ou déficitaire (CGI art. 209, I) ; la perte de 90 000 € comprise dans le résultat comptable est donc réintégrée. Total : 240 000 + 20 000 + 90 000 = 350 000 €. Erreurs types hors tolérance : 260 000 € (succursale oubliée), 170 000 € (perte de la succursale déduite au lieu d'être réintégrée)."
+        },
+        {
+          "id": "q3-documentation",
+          "kind": "true_false",
+          "prompt": "Talma est tenue de mettre à la disposition de l'administration la documentation complète des prix de transfert prévue à l'article L13 AA du LPF.",
+          "points": 1,
+          "answer": false,
+          "explanation": "Faux : cette obligation vise les entreprises dont le chiffre d'affaires hors taxes ou l'actif brut atteint 150 M€, ou qui appartiennent à un groupe dont une entité atteint ce seuil (LPF art. L13 AA). Talma (80 M€ et 70 M€), qui n'est détenue par aucune société et dont aucune filiale n'atteint le seuil, n'y est pas soumise. Avec plus de 50 M€ de chiffre d'affaires, elle doit en revanche souscrire la déclaration annuelle simplifiée de l'article 223 quinquies B du CGI."
+        },
+        {
+          "id": "q4-analyse",
+          "kind": "open",
+          "prompt": "Justifiez le traitement de chacun des trois points relevés et chiffrez l'IS supplémentaire (hors intérêts de retard et pénalités). Quel argument Talma aurait-elle pu faire valoir pour le prêt sans intérêts ?",
+          "points": 4,
+          "model_answer": "Ventes : Talma et Talma Italia sont dépendantes (filiale à 100 %) ; le prix de 120 € est inférieur de 30 € au prix pratiqué avec des distributeurs indépendants dans des conditions comparables (méthode du prix comparable). Sans contrepartie démontrée, le bénéfice transféré, 240 000 €, est réintégré (CGI art. 57). Prêt : l'absence d'intérêts est un avantage consenti à une entreprise liée étrangère ; le manque à gagner, calculé au taux qu'aurait pratiqué un prêteur indépendant, 20 000 €, est réintégré. Succursale : la perte de l'établissement portugais n'entre pas dans le champ de l'IS français (art. 209, I), elle est réintégrée pour 90 000 € ; elle relève de l'impôt portugais. IS supplémentaire : 350 000 × 25 % = 87 500 €. Pour le prêt, Talma aurait pu tenter de démontrer une contrepartie, par exemple un intérêt commercial propre à soutenir une filiale distributrice en difficulté dont dépendent ses débouchés ; la preuve de cette contrepartie lui incombe une fois la dépendance et l'avantage établis.",
+          "key_points": [
+            "Art. 57 : dépendance (filiale à 100 %) et avantage prouvés, absence de contrepartie",
+            "Réintégrations de 240 000 € (prix) et 20 000 € (intérêts au taux de pleine concurrence)",
+            "Territorialité (art. 209, I) : perte de la succursale étrangère réintégrée pour 90 000 €",
+            "IS supplémentaire : 87 500 €",
+            "Contrepartie possible (intérêt commercial au soutien de la filiale), à prouver par Talma"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas distingue les deux mécanismes qui délimitent le bénéfice imposable en France dans un groupe international : la territorialité de l'IS, qui exclut le résultat des établissements étrangers, et l'article 57, qui réintègre les bénéfices transférés à une entreprise liée étrangère par des conditions anormales, sous réserve d'une contrepartie.",
+      "source_ref": "CGI art. 57 (prix de transfert) ; CGI art. 209, I (territorialité de l'IS) ; LPF art. L13 AA (documentation des prix de transfert) ; CGI art. 223 quinquies B (déclaration annuelle)",
+      "verified": true,
+      "estimated_seconds": 840
+    },
+    {
+      "id": "ue1-groupes-prixtr-0006",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "prix-transfert-fiscalite-internationale",
+      "difficulty": 2,
+      "tags": [
+        "sociétés étrangères contrôlées",
+        "art. 209 B",
+        "régime fiscal privilégié"
+      ],
+      "statement": "La SA Delta, soumise à l'IS en France (taux de droit commun supposé de 25 %), détient 70 % du capital et des droits de vote de la société Kappa, établie hors de l'Union européenne et de l'EEE. Kappa se borne à gérer des brevets concédés au groupe et ne peut justifier d'aucune activité industrielle ou commerciale effective. Elle acquitte localement un impôt égal à 14 % de son bénéfice. Son bénéfice de N, déterminé selon les règles fiscales françaises, s'élève à 1 000 000 € ; elle ne distribue rien. Quel montant Delta doit-elle comprendre dans son résultat imposable de N au titre de Kappa ?",
+      "options": [
+        "Aucun : Kappa est une personne morale distincte et seuls les dividendes qu'elle verserait seraient imposables chez Delta",
+        "700 000 €, quote-part du bénéfice de Kappa correspondant à sa participation, Kappa bénéficiant d'un régime fiscal privilégié",
+        "1 000 000 €, Delta contrôlant Kappa",
+        "Aucun : l'impôt de Kappa (14 %) est supérieur à la moitié de l'IS français (12,5 %), de sorte que Kappa ne bénéficie pas d'un régime fiscal privilégié"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "Un État ou territoire applique un régime fiscal privilégié lorsque l'impôt local est inférieur de plus de 40 % à l'IS français de droit commun, soit ici moins de 25 % × 60 % = 15 % (CGI art. 238 A, seuil applicable depuis 2020). Avec 14 %, Kappa en bénéficie. Delta détenant plus de 50 % et ne pouvant invoquer ni l'exception européenne ni la clause de sauvegarde, elle est imposée sur la quote-part du bénéfice de Kappa : 1 000 000 × 70 % = 700 000 € (CGI art. 209 B), l'impôt acquitté par Kappa étant imputable sur l'IS français à proportion : option 2. L'option 1 décrit le droit commun, écarté par l'article 209 B. L'option 3 oublie la proportion de la participation. L'option 4 applique l'ancien seuil de 50 %, remplacé par celui de 40 %.",
+      "source_ref": "CGI art. 209 B (entités étrangères contrôlées à plus de 50 %) ; CGI art. 238 A (régime fiscal privilégié : impôt inférieur de plus de 40 % à l'IS français)",
+      "verified": true,
+      "estimated_seconds": 90
     }
   ]
 }

@@ -182,6 +182,34 @@
       "source_ref": "CGI art. 271 ; CGI ann. II art. 205, 206 (coefficients d'assujettissement, de taxation et d'admission, exclusions) et 207 (régularisations)",
       "verified": true,
       "estimated_seconds": 720
+    },
+    {
+      "id": "ue1-fisc-tva-0006",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "tva-droits-deduction",
+      "difficulty": 2,
+      "tags": [
+        "droit à déduction",
+        "omission",
+        "délai de régularisation"
+      ],
+      "statement": "En octobre 2026, la SAS Ardèche Bois (assujettie, coefficient de déduction de 1) constate qu'elle n'a jamais déduit la TVA de 4 000 € figurant sur une facture régulière d'achat de matières premières livrées en avril 2024 ; le droit à déduction est donc né en avril 2024. Que peut-elle faire ?",
+      "options": [
+        "Rien : la TVA ne peut être déduite que sur la déclaration du mois au cours duquel le droit à déduction a pris naissance",
+        "Rien : une déduction omise ne peut être réparée que jusqu'au 31 décembre de l'année qui suit celle de l'omission, soit le 31 décembre 2025",
+        "Mentionner distinctement la TVA omise sur une déclaration déposée avant le 31 décembre 2026",
+        "Comptabiliser les 4 000 € en charges et les déduire de son résultat fiscal, la TVA n'étant plus récupérable"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "La déduction s'opère en principe sur la déclaration du mois où le droit est né, mais une omission peut être réparée, par une mention distincte, sur les déclarations ultérieures déposées avant le 31 décembre de la deuxième année qui suit celle de l'omission (CGI ann. II art. 208) : omission de 2024, régularisation possible sur une déclaration déposée avant le 31 décembre 2026 : option 3. L'option 1 ignore cette faculté de rattrapage. L'option 2 retient un délai d'un an au lieu de deux. L'option 4 est fausse : la TVA reste récupérable, et une TVA récupérable n'a pas à être portée en charges.",
+      "source_ref": "CGI ann. II art. 208 (mention de la TVA omise déposée avant le 31 décembre de la deuxième année suivant celle de l'omission) ; CGI art. 271 (droit à déduction)",
+      "verified": true,
+      "estimated_seconds": 60
     }
   ]
 }

@@ -164,6 +164,54 @@
       "source_ref": "EBIOS Risk Manager (ANSSI, 2018), ateliers 1 à 5 ; ALE = SLE × ARO ; disponibilité = temps de service ÷ temps d’ouverture",
       "estimated_seconds": 900,
       "verified": true
+    },
+    {
+      "id": "ue5-secu-cyber-0005",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "cybersecurite-menaces",
+      "difficulty": 2,
+      "tags": [
+        "EBIOS Risk Manager",
+        "traitement du risque",
+        "atelier 5"
+      ],
+      "statement": "Au terme de l'atelier 5 d'EBIOS Risk Manager, le comité des risques d'une entreprise de négoce arrête plusieurs mesures. Quelle association entre la mesure et l'option de traitement du risque est exacte ?",
+      "options": [
+        "Souscrire une cyberassurance couvrant les pertes d'exploitation : réduction du risque",
+        "Déployer l'authentification multifacteur sur les messageries : transfert du risque",
+        "Renoncer à ouvrir l'accès à distance à l'ERP depuis internet : évitement du risque",
+        "Faire approuver par la direction le risque résiduel sur l'ancien serveur de fichiers : réduction du risque"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Renoncer à l'activité ou à l'exposition qui crée le risque (ici, l'accès à l'ERP depuis internet) supprime le scénario : c'est l'évitement (option 3). L'option 1 décrit un transfert : l'assurance prend en charge tout ou partie des conséquences financières, sans réduire la vraisemblance de l'attaque. L'option 2 décrit une réduction : l'authentification multifacteur diminue la vraisemblance d'une compromission de compte. L'option 4 décrit une acceptation : le risque qui subsiste est accepté formellement par la direction.",
+      "source_ref": "EBIOS Risk Manager (ANSSI, 2018), atelier 5 : stratégie de traitement du risque (réduire, transférer, éviter, accepter) ; ISO/IEC 27005",
+      "estimated_seconds": 70,
+      "verified": true
+    },
+    {
+      "id": "ue5-secu-cyber-0006",
+      "type": "true_false",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "cybersecurite-menaces",
+      "difficulty": 1,
+      "tags": [
+        "cyberassurance",
+        "plainte",
+        "LOPMI"
+      ],
+      "statement": "Le versement d'une indemnité d'assurance couvrant les pertes causées par une cyberattaque est subordonné au dépôt d'une plainte par la victime au plus tard 72 heures après qu'elle a eu connaissance de l'atteinte.",
+      "answer": true,
+      "justification": "Depuis la loi LOPMI du 24 janvier 2023, le Code des assurances (art. L. 12-10-1) conditionne l'indemnisation des pertes liées à une atteinte à un système de traitement automatisé de données à une plainte déposée dans les 72 heures suivant sa connaissance.",
+      "explanation": "Cette règle vise à mieux connaître les attaques et à poursuivre leurs auteurs. Le délai court à partir du moment où la victime a connaissance de l'atteinte. Elle s'ajoute aux autres délais de 72 heures : notification à la CNIL en cas de violation de données personnelles (RGPD art. 33) et, pour les entités soumises à NIS 2, notification d'incident après une alerte précoce sous 24 heures. Elle ne rend pas le paiement de la rançon recommandé : les autorités le déconseillent.",
+      "source_ref": "Code des assurances, art. L. 12-10-1 (créé par la loi n° 2023-22 du 24 janvier 2023, LOPMI)",
+      "estimated_seconds": 40,
+      "verified": true
     }
   ]
 }

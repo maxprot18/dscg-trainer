@@ -171,3 +171,46 @@ describe('configuration des nouveaux modes', () => {
     expect(buildSession({ mode: 'exam', seed: 1, ue: 'UE4' }, pool, durations).length).toBe(pool.length)
   })
 })
+
+describe('test de positionnement et séance du jour', () => {
+  const themed = [
+    ...['t1', 't2', 't3'].flatMap((theme) => [
+      ex(`${theme}-a`, { theme, difficulty: 1 }),
+      ex(`${theme}-b`, { theme, difficulty: 2 }),
+      ex(`${theme}-c`, { theme, type: 'flashcard' } as Partial<Exercise>),
+    ]),
+    ex('autre-ue', { ue: 'UE1', theme: 't9' }),
+  ]
+
+  it('une question par thème de l’UE, de préférence de niveau 2, sans flashcard', () => {
+    const picked = buildSession({ mode: 'diagnostic', seed: 3, ue: mcq.ue }, themed, durations)
+    expect(picked.map((e) => e.id)).toEqual(['t1-b', 't2-b', 't3-b'])
+  })
+
+  it('séance du jour limitée aux UE de l’examen ; configuration dans l’URL', () => {
+    const picked = buildSession({ mode: 'smart', seed: 1, ues: ['UE1'] }, themed, durations)
+    expect(picked.map((e) => e.id)).toEqual(['autre-ue'])
+    const search = sessionSearch({ mode: 'smart', seed: 7, ues: ['UE1', 'UE4'] })
+    expect(parseSessionSearch(new URLSearchParams(search))).toEqual({ mode: 'smart', seed: 7, ues: ['UE1', 'UE4'] })
+    expect(parseSessionSearch(new URLSearchParams('mode=diagnostic&seed=2&ue=UE4'))).toEqual({ mode: 'diagnostic', seed: 2, ue: 'UE4' })
+    expect(parseSessionSearch(new URLSearchParams('mode=diagnostic&seed=2'))).toBeNull()
+    expect(timeLimit({ mode: 'diagnostic', seed: 2, ue: 'UE4' }, durations)).toBeNull()
+  })
+})
+
+describe('examen blanc avec dossiers de type examen', () => {
+  const dossier = (id: string, seconds: number) => ex(id, { type: 'case_study', dossier: true, estimated_seconds: seconds } as Partial<Exercise>)
+
+  it('dossiers en tête, dans la limite de 60 % du temps, exclus des autres sessions', () => {
+    const shorts = Array.from({ length: 40 }, (_, i) => ex(`q${i}`, { estimated_seconds: 120 }))
+    const pool = [dossier('d1', 4800), dossier('d2', 4800), dossier('d3', 4800), ...shorts]
+    const exam = buildSession({ mode: 'exam', seed: 1, ue: mcq.ue }, pool, durations)
+    const ds = exam.filter((e) => e.id.startsWith('d'))
+    expect(ds).toHaveLength(1) // 240 min × 60 % = 144 min : un seul dossier de 80 min… et pas deux (160 min)
+    expect(exam[0].id).toBe(ds[0].id)
+    expect(exam.reduce((s, e) => s + e.estimated_seconds, 0)).toBeLessThanOrEqual(240 * 60)
+    for (const config of [{ mode: 'quick', seed: 1 }, { mode: 'smart', seed: 1 }, { mode: 'theme', seed: 1, scope: { ue: mcq.ue } }] as const) {
+      expect(buildSession(config, pool, durations).some((e) => e.id.startsWith('d'))).toBe(false)
+    }
+  })
+})

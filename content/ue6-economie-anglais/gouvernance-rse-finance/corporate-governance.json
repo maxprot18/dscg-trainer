@@ -157,6 +157,53 @@
       "source_ref": "UK Corporate Governance Code (FRC), provisions on board independence and separation of chair and CEO roles ; Afep-Medef Code, independent directors ; payout ratio = dividends / net income",
       "verified": true,
       "estimated_seconds": 600
+    },
+    {
+      "id": "ue6-gouv-cg-0005",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "gouvernance-rse-finance",
+      "notion": "corporate-governance",
+      "difficulty": 2,
+      "tags": [
+        "independent directors",
+        "Afep-Medef Code",
+        "board composition"
+      ],
+      "statement": "The board of a French listed company applying the Afep-Medef Code reviews the independence of four non-executive directors. Which director can be qualified as independent under the Code's criteria?",
+      "options": [
+        "A university professor who joined the board four years ago, holds 2,000 shares of the company and receives only directors' fees.",
+        "A former deputy CEO of the group who left his executive position three years ago.",
+        "A retired audit partner who, until two years ago, signed the company's accounts as its statutory auditor.",
+        "A director who has sat on the board for thirteen years and has never held an executive position in the group."
+      ],
+      "answer": [
+        0
+      ],
+      "multiple": false,
+      "explanation": "Option 1 meets the criteria: no executive or employee role, no business relationship, a tenure of four years, and holding a small number of shares is even encouraged by governance codes; directors' fees do not impair independence. Option 2 fails the cooling-off criterion: no employee or executive position in the company or its group in the previous five years. Option 3 fails the criterion excluding anyone who has been the company's statutory auditor in the previous five years. Option 4 fails the tenure criterion: a director loses independent status once his or her term exceeds twelve years. Non-executive does not mean independent.",
+      "source_ref": "Afep-Medef Corporate Governance Code (December 2022 version), criteria for assessing directors' independence (employee or executive in the previous five years, statutory auditor in the previous five years, more than twelve years on the board)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue6-gouv-cg-0006",
+      "type": "flashcard",
+      "ue": "UE6",
+      "theme": "gouvernance-rse-finance",
+      "notion": "corporate-governance",
+      "difficulty": 1,
+      "tags": [
+        "executive pay",
+        "malus",
+        "clawback"
+      ],
+      "front": "In executive pay, what is the difference between \"malus\" and \"clawback\"?",
+      "back": "Malus: the reduction or cancellation of variable pay (bonus, performance shares) before it vests or is paid, e.g. after misconduct or a material misstatement.\nClawback: the recovery of variable pay that has already been paid or has vested.\nBoth are usually set out in the remuneration policy submitted to shareholders.\nFrench: clause de malus / clause de restitution (clawback).",
+      "explanation": "Malus is easier to apply because the money has not yet been paid; clawback requires the company to recover sums from the executive, which may need legal action. The UK Corporate Governance Code (2024) expects directors' contracts and remuneration documents to include malus and clawback provisions (provision 37) and the annual report to describe them and state whether they were used during the year (provision 38).",
+      "source_ref": "UK Corporate Governance Code (FRC, 2024), provisions 37 (malus and clawback) and 38 (disclosure) ; Directive (EU) 2017/828 (SRD II), art. 9a (remuneration policy)",
+      "verified": true,
+      "estimated_seconds": 30
     }
   ]
 }

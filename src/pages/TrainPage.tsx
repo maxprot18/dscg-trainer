@@ -1,12 +1,12 @@
 import { useMemo, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { examDurations, exerciseCount, taxonomy, useExercises } from '@/content/load'
 import type { UeId } from '@/content/schema'
 import { useProgress } from '@/db/progress'
-import { buildExamSession, QUICK_SESSION_SECONDS, QUICK_SESSION_SIZE, SMART_SESSION_SIZE } from '@/engine/session'
+import { buildExamSession, isDossier, QUICK_SESSION_SECONDS, QUICK_SESSION_SIZE, SMART_SESSION_SIZE } from '@/engine/session'
 import { useSettings } from '@/lib/settings'
 import { newSeed, sessionSearch } from '@/engine/sessionConfig'
 import { failedExerciseIds } from '@/engine/stats'
@@ -31,6 +31,7 @@ export function TrainPage() {
   const errorCount =
     progress && exercises ? failedExerciseIds(progress.attempts).filter((id) => knownIds.has(id)).length : 0
   const [examUe, setExamUe] = useState<UeId>(firstUe)
+  const [diagUe, setDiagUe] = useState<UeId>(firstUe)
   const examSize = useMemo(
     () => (exercises ? buildExamSession(exercises, examUe, examDurations[examUe], 0).length : null),
     [exercises, examUe],
@@ -51,6 +52,7 @@ export function TrainPage() {
     return map
   }, [exercises])
   const cardsAvailable = cardCounts.get(cardsUe ? (cardsTheme ? `${cardsUe}/${cardsTheme}` : cardsUe) : 'total') ?? 0
+  const dossiers = useMemo(() => (exercises ?? []).filter(isDossier), [exercises])
   const ueData = taxonomy.ues.find((u) => u.id === ue)!
   const themeData = ueData.themes.find((t) => t.id === theme)
   const available = notion ? count(`notion:${notion}`) : theme ? count(`${ue}/${theme}`) : count(ue)
@@ -116,6 +118,35 @@ export function TrainPage() {
       </Card>
       <Card>
         <CardHeader>
+          <CardTitle>Test de positionnement</CardTitle>
+          <CardDescription>
+            Une question par thème de l’UE, sans chrono, pour savoir d’où vous partez ; les résultats alimentent la révision
+            intelligente.
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="flex flex-col gap-3">
+          <label className="flex flex-col gap-1 text-sm">
+            UE à tester
+            <select className={selectClass} value={diagUe} onChange={(e) => setDiagUe(e.target.value as UeId)}>
+              {taxonomy.ues.map((u) => (
+                <option key={u.id} value={u.id}>
+                  {u.id} — {u.title} ({u.themes.length} thèmes)
+                </option>
+              ))}
+            </select>
+          </label>
+          <Button
+            size="lg"
+            variant="outline"
+            disabled={count(diagUe) === 0}
+            onClick={() => navigate(`/session${sessionSearch({ mode: 'diagnostic', seed: newSeed(), ue: diagUe })}`)}
+          >
+            Commencer le test ({taxonomy.ues.find((u) => u.id === diagUe)!.themes.length} questions environ)
+          </Button>
+        </CardContent>
+      </Card>
+      <Card id="examen-blanc" className="scroll-mt-4">
+        <CardHeader>
           <CardTitle>Examen blanc</CardTitle>
           <CardDescription>
             Sujet type d’une UE, chronométré à la durée de l’épreuve, noté sur 20, correction à la fin.
@@ -144,6 +175,36 @@ export function TrainPage() {
               ? 'Pas encore assez d’exercices'
               : `Commencer l’examen (${examSize} exercices, ${formatDuration(examDurations[examUe])})`}
           </Button>
+        </CardContent>
+      </Card>
+      <Card>
+        <CardHeader>
+          <CardTitle>Sujets type d’examen</CardTitle>
+          <CardDescription>
+            Dossiers longs avec annexes, comme ceux d’un vrai sujet : 1 h à 1 h 30, notés sur 20. Ils entrent aussi dans
+            l’examen blanc de leur UE.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          {!exercises ? (
+            <p className="text-muted-foreground text-sm">Chargement des sujets…</p>
+          ) : dossiers.length === 0 ? (
+            <p className="text-muted-foreground text-sm">Aucun sujet type pour l’instant.</p>
+          ) : (
+            <ul className="flex flex-col divide-y text-sm">
+              {dossiers.map((d) => (
+                <li key={d.id}>
+                  <Link to={`/exercice/${d.id}`} className="hover:bg-accent flex items-baseline justify-between gap-3 rounded px-2 py-2">
+                    <span className="min-w-0">
+                      <span className="text-muted-foreground mr-1 font-medium">{d.ue}</span>
+                      {d.type === 'case_study' ? d.title : d.id}
+                    </span>
+                    <span className="text-muted-foreground shrink-0 tabular-nums">{Math.round(d.estimated_seconds / 60)} min</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
         </CardContent>
       </Card>
       <Card>
@@ -281,6 +342,20 @@ export function TrainPage() {
               : cardsAvailable === 0
                 ? 'Aucune carte pour cette sélection'
                 : `Réviser les cartes (${Math.min(cardsAvailable, settings.cardsSessionSize)})`}
+          </Button>
+        </CardContent>
+      </Card>
+      <Card>
+        <CardHeader>
+          <CardTitle>Oral d’anglais (UE 6)</CardTitle>
+          <CardDescription>
+            Sujet tiré au sort, préparation chronométrée, exposé et entretien avec les questions du jury, enregistrement de
+            votre voix et auto-évaluation.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Button asChild size="lg" variant="outline" className="w-full">
+            <Link to="/oral">S’entraîner à l’oral</Link>
           </Button>
         </CardContent>
       </Card>

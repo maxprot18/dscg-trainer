@@ -196,6 +196,34 @@
       "source_ref": "Règlement (UE) 2016/679 (RGPD), art. 4 §11, 6, 7, 12 §3, 21, 25, 28, 30, 35, 36 et chapitre V (art. 44 à 49)",
       "verified": true,
       "estimated_seconds": 900
+    },
+    {
+      "id": "ue5-donnees-rgpd-0006",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "protection-donnees-rgpd-si",
+      "difficulty": 3,
+      "tags": [
+        "violation de données",
+        "chiffrement",
+        "notification",
+        "documentation des violations"
+      ],
+      "statement": "L'ordinateur portable d'un gestionnaire de paie, contenant le fichier des rémunérations de 350 salariés, est volé dans un train. Le disque est intégralement chiffré selon l'état de l'art, la clé de déchiffrement n'est pas compromise (elle n'était pas stockée sur l'appareil) et une sauvegarde à jour du fichier existe sur les serveurs de l'entreprise. Quelle conduite est conforme au RGPD ?",
+      "options": [
+        "Notifier la CNIL dans les 72 heures et informer individuellement les 350 salariés, toute violation de données imposant ces deux démarches",
+        "N'effectuer aucune démarche : grâce au chiffrement, l'incident ne constitue pas une violation de données personnelles",
+        "Documenter la violation en interne (faits, effets, mesures prises) ; la notification à la CNIL et l'information des salariés ne sont pas requises, le risque pour les personnes étant improbable et les données inintelligibles",
+        "Informer individuellement les salariés, sans notifier la CNIL ni documenter l'incident"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'option 3 est la bonne : la perte d'un support contenant des données personnelles est une violation de données, qui doit toujours être documentée par le responsable du traitement (faits, effets, mesures prises), afin de pouvoir en rendre compte à la CNIL (art. 33 §5). La notification à la CNIL n'est due que si la violation est susceptible d'engendrer un risque pour les droits et libertés des personnes (art. 33 §1) : avec un chiffrement à l'état de l'art, une clé non compromise et une sauvegarde qui préserve la disponibilité des données, ce risque est improbable. L'information des personnes n'est requise qu'en cas de risque élevé et n'est de toute façon pas exigée lorsque les données ont été rendues incompréhensibles, notamment par chiffrement (art. 34 §3 a). L'option 1 généralise à tort les deux démarches à toute violation. L'option 2 nie l'existence de la violation et omet la documentation obligatoire. L'option 4 inverse la logique : l'information des personnes vise les risques élevés et n'exonère pas de la documentation.",
+      "source_ref": "RGPD (règl. UE 2016/679), art. 33 §1 et §5, art. 34 §1 et §3 a)",
+      "verified": true,
+      "estimated_seconds": 90
     }
   ]
 }

@@ -202,6 +202,35 @@
       "source_ref": "PCG (règl. ANC 2014-03 modifié par le règl. ANC 2022-06), comptes 211, 213, 2813, 657 et 757 ; C. com. art. L. 237-2 ; CGI art. 221-2",
       "verified": true,
       "estimated_seconds": 210
+    },
+    {
+      "id": "ue1-trans-cessation-0006",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "cessation-activite-fiscalite",
+      "difficulty": 1,
+      "tags": [
+        "cessation",
+        "entreprise individuelle",
+        "délais déclaratifs",
+        "CGI 201"
+      ],
+      "statement": "M. Pasquier, commerçant en entreprise individuelle soumis à l'impôt sur le revenu (BIC, régime réel), cède son fonds de commerce ; la cession est publiée le 1er juin. Quelles obligations déclaratives lui incombent ?",
+      "options": [
+        "Aviser l'administration de la cession dans les 45 jours de la publication et déposer la déclaration de résultat de la période écoulée dans les 60 jours",
+        "Déposer la déclaration de résultat avec la déclaration annuelle de l'année suivante, aucune formalité particulière n'étant prévue",
+        "Aviser l'administration dans les 6 mois et déposer la déclaration de résultat dans l'année qui suit la cession",
+        "Aviser l'administration dans les 10 jours de la publication au BODACC, délai pendant lequel les créanciers peuvent former opposition"
+      ],
+      "answer": [
+        0
+      ],
+      "multiple": false,
+      "explanation": "En cas de cession ou de cessation, l'impôt sur le revenu dû sur les bénéfices non encore taxés est établi immédiatement : l'exploitant avise l'administration dans un délai de 45 jours et produit la déclaration de résultat dans un délai de 60 jours, ces délais courant à compter de la publication de la cession dans un journal d'annonces légales (option 1).\nL'option 2 méconnaît le principe d'imposition immédiate. L'option 3 retient le délai de 6 mois propre au décès de l'exploitant. L'option 4 confond avec le délai d'opposition des créanciers du vendeur de fonds de commerce (10 jours de la publication au BODACC), qui relève du droit commercial et non des obligations fiscales.",
+      "source_ref": "CGI art. 201, 1 et 3 (imposition immédiate, avis dans les 45 jours, déclaration dans les 60 jours) ; art. 204 (décès) ; C. com. art. L. 141-14 (opposition)",
+      "verified": true,
+      "estimated_seconds": 50
     }
   ]
 }

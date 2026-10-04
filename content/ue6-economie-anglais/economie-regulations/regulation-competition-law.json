@@ -121,6 +121,79 @@
       "source_ref": "TFEU art. 101 ; Commission Notice on immunity from fines and reduction of fines in cartel cases (2006/C 298/11)",
       "verified": true,
       "estimated_seconds": 30
+    },
+    {
+      "id": "ue6-eco-reg-0004",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "economie-regulations",
+      "notion": "regulation-competition-law",
+      "difficulty": 3,
+      "tags": [
+        "merger control",
+        "EU dimension",
+        "two-thirds rule"
+      ],
+      "statement": "Two French food groups plan to merge. Last year, Alvane achieved a worldwide turnover of €3,800m, of which €1,050m in the EU (including €800m in France); Brisol achieved a worldwide turnover of €1,600m, of which €450m in the EU (including €330m in France). Which authority is competent under the EU Merger Regulation?",
+      "options": [
+        "The European Commission, because the combined worldwide turnover exceeds €5,000m and each party's EU-wide turnover exceeds €250m.",
+        "Neither the Commission nor any national authority, because Brisol's worldwide turnover is below €5,000m.",
+        "The concentration has no EU dimension, because each party achieves more than two-thirds of its EU-wide turnover in France; it falls to national merger control, here the French Autorité de la concurrence if the French thresholds are met.",
+        "The European Commission, because the combined EU-wide turnover of €1,500m exceeds €250m."
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "The main test of art. 1(2) is met on its face: combined worldwide turnover = 3,800 + 1,600 = €5,400m > €5,000m, and each party's EU-wide turnover (€1,050m and €450m) exceeds €250m. But the two-thirds rule removes the EU dimension when each party achieves more than two-thirds of its EU-wide turnover in one and the same member state: Alvane 800 ÷ 1,050 = 76.2% and Brisol 330 ÷ 450 = 73.3% in France. The same exception applies to the alternative test of art. 1(3), so the deal is a \"national\" case reviewed under French merger control (the French thresholds of art. L. 430-2 are clearly met: combined worldwide turnover above €150m and each party above €50m in France). Option 1 stops before the two-thirds rule. Option 2 applies the €5,000m threshold to each party instead of the combined turnover, and wrongly concludes that no authority is competent. Option 4 misreads the €250m threshold, which applies to each of at least two parties individually.",
+      "source_ref": "Council Regulation (EC) No 139/2004, art. 1(2) and 1(3) (EU dimension and two-thirds rule) ; French Commercial Code, art. L. 430-2 (national thresholds)",
+      "verified": true,
+      "estimated_seconds": 120
+    },
+    {
+      "id": "ue6-eco-reg-0005",
+      "type": "true_false",
+      "ue": "UE6",
+      "theme": "economie-regulations",
+      "notion": "regulation-competition-law",
+      "difficulty": 1,
+      "tags": [
+        "Digital Markets Act",
+        "gatekeepers",
+        "ex ante regulation"
+      ],
+      "statement": "Under the EU Digital Markets Act, a designated gatekeeper must comply with obligations such as the ban on self-preferencing without the Commission first having to prove that it abused a dominant position.",
+      "answer": true,
+      "justification": "True: the DMA is ex ante regulation; once a platform is designated as a gatekeeper, its obligations apply directly, without the case-by-case proof of dominance and abuse required under art. 102 TFEU.",
+      "explanation": "The DMA was adopted because art. 102 TFEU cases against large digital platforms took years. The Commission designates gatekeepers on the basis of size and user thresholds for their core platform services; the gatekeepers must then comply with a list of do's and don'ts, including not favouring their own products in rankings (self-preferencing), allowing interoperability and data portability. Non-compliance can be fined up to 10% of worldwide turnover (20% for repeated infringements). Competition law (art. 101-102) continues to apply in parallel.",
+      "source_ref": "Regulation (EU) 2022/1925 (Digital Markets Act), art. 3 (designation of gatekeepers), art. 5-6 (obligations, including the self-preferencing ban) and art. 30 (fines)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue6-eco-reg-0006",
+      "type": "numeric",
+      "ue": "UE6",
+      "theme": "economie-regulations",
+      "notion": "regulation-competition-law",
+      "difficulty": 2,
+      "tags": [
+        "HHI",
+        "market concentration",
+        "horizontal merger"
+      ],
+      "statement": "Six firms share a market as follows: 35%, 20%, 15%, 15%, 10% and 5%. The firm holding 20% plans to acquire the firm holding 10%. Calculate the post-merger Herfindahl-Hirschman Index (HHI), market shares being expressed in percentage points.",
+      "expected_value": 2600,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "points",
+      "decimals": 0,
+      "explanation": "Pre-merger HHI = 35² + 20² + 15² + 15² + 10² + 5² = 1,225 + 400 + 225 + 225 + 100 + 25 = 2,200. Delta = 2 × 20 × 10 = 400. Post-merger HHI = 2,200 + 400 = 2,600 (check: the merged firm holds 30%, so 1,225 + 900 + 225 + 225 + 25 = 2,600). With a post-merger HHI above 2,000 and a delta above 150, the Commission's guidelines no longer presume the absence of concerns: the merger will be examined closely. Classic errors: adding 30² to the pre-merger HHI without removing 20² and 10² (3,100), or stopping at the pre-merger HHI (2,200).",
+      "source_ref": "Commission Guidelines on the assessment of horizontal mergers (2004/C 31/03), §16-21 (HHI levels and deltas)",
+      "verified": true,
+      "estimated_seconds": 150
     }
   ]
 }

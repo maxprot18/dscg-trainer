@@ -99,6 +99,54 @@
       "source_ref": "ILO resolution concerning statistics of work, employment and labour underutilisation (19th ICLS, 2013) — definition of unemployment",
       "verified": true,
       "estimated_seconds": 30
+    },
+    {
+      "id": "ue6-eco-macro-0005",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "economie-regulations",
+      "notion": "macroeconomic-indicators",
+      "difficulty": 2,
+      "tags": [
+        "output gap",
+        "potential GDP",
+        "inflationary pressure"
+      ],
+      "statement": "An IMF staff report on Eastoria estimates actual real GDP at €1,940bn and potential real GDP at €2,000bn for the current year. Which reading of these figures is correct?",
+      "options": [
+        "The output gap is +3%: the economy is overheating and inflationary pressures are building up.",
+        "The output gap is −3.09% of actual GDP: Eastoria is necessarily in recession, since GDP is below potential.",
+        "The output gap is −3% of potential GDP: there is spare capacity in the economy and demand-driven inflationary pressure should be weak.",
+        "The output gap cannot be calculated without the inflation rate, because potential GDP is measured at current prices."
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Output gap = (actual GDP − potential GDP) ÷ potential GDP = (1,940 − 2,000) ÷ 2,000 = −3%. A negative gap means the economy produces less than it could without stoking inflation: there is spare capacity (unused labour and equipment), so demand-driven inflationary pressure is weak. Option 1 gets the sign wrong: a positive gap would signal overheating. Option 2 divides by actual GDP (60 ÷ 1,940 = 3.09%) instead of potential GDP, and confuses a level below potential with a recession, which is defined by falling real GDP (two consecutive quarters of negative growth); an economy can grow while remaining below potential. Option 4 is wrong: both figures are real (volume) GDP, so no inflation rate is needed.",
+      "source_ref": "Output gap = (actual GDP − potential GDP) ÷ potential GDP, in % of potential — IMF and OECD definitions ; recession rule of thumb: two consecutive quarters of negative real GDP growth",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue6-eco-macro-0006",
+      "type": "true_false",
+      "ue": "UE6",
+      "theme": "economie-regulations",
+      "notion": "macroeconomic-indicators",
+      "difficulty": 1,
+      "tags": [
+        "unemployment",
+        "ILO definition",
+        "discouraged workers"
+      ],
+      "statement": "Under the ILO definition, a working-age person without a job who has stopped looking for work because they believe no job is available is counted as unemployed.",
+      "answer": false,
+      "justification": "False: to be unemployed in the ILO sense, a person must be without work, available and actively seeking work; a discouraged worker who has stopped searching is classified as inactive (outside the labour force).",
+      "explanation": "The ILO definition has three cumulative conditions: no work during the reference week, availability to start within two weeks, and active job search during the previous four weeks (or a job found that starts later). A discouraged worker fails the job-search condition and is therefore outside the labour force. This is why the unemployment rate can fall during a long downturn simply because discouraged people leave the labour force: analysts then also look at the participation rate and the employment rate. In French: chômeur au sens du BIT, inactif, travailleur découragé (halo du chômage).",
+      "source_ref": "ILO, Resolution concerning statistics of the economically active population, employment, unemployment and underemployment (13th ICLS, 1982), criteria maintained by the Resolution concerning statistics of work, employment and labour underutilization (19th ICLS, 2013): without work, available, seeking work",
+      "verified": true,
+      "estimated_seconds": 40
     }
   ]
 }

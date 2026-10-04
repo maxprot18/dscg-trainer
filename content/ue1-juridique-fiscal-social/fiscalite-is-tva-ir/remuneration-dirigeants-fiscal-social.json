@@ -175,6 +175,46 @@
       "source_ref": "CGI art. 200 A (PFU) ; CGI art. 158-3-2° (abattement de 40 %)",
       "verified": true,
       "estimated_seconds": 40
+    },
+    {
+      "id": "ue1-fisc-remu-0006",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "remuneration-dirigeants-fiscal-social",
+      "difficulty": 2,
+      "tags": [
+        "dividendes",
+        "prélèvement forfaitaire non libératoire",
+        "prélèvements sociaux",
+        "retenue à la source"
+      ],
+      "statement": "L'assemblée de la SAS Cévennes a décidé la distribution d'un dividende ; la part revenant à M. Pujol, président et associé personne physique fiscalement domicilié en France, soit 20 000 €, a été portée au crédit du compte 457 « Associés – dividendes à payer ». Le 15 juin 2026, la société lui verse son dividende par virement bancaire, après avoir retenu à la source le prélèvement forfaitaire non libératoire d'IR (M. Pujol n'a pas demandé de dispense) et les prélèvements sociaux. Hypothèses : prélèvement forfaitaire non libératoire de 12,8 % ; prélèvements sociaux de 18,6 % (taux applicable aux dividendes perçus en 2026). Passez l'écriture de paiement, en enregistrant l'ensemble des prélèvements retenus au compte 442 « Contributions, impôts et taxes recouvrés pour le compte de l'État ».",
+      "date": "15/06/2026",
+      "entries": [
+        {
+          "account": "457",
+          "label": "Associés – dividendes à payer (M. Pujol)",
+          "debit": 20000,
+          "credit": 0
+        },
+        {
+          "account": "442",
+          "label": "Prélèvement forfaitaire et prélèvements sociaux retenus",
+          "debit": 0,
+          "credit": 6280
+        },
+        {
+          "account": "512",
+          "label": "Banque",
+          "debit": 0,
+          "credit": 13720
+        }
+      ],
+      "explanation": "La société, établissement payeur, retient à la source : prélèvement forfaitaire non libératoire, 20 000 × 12,8 % = 2 560 € (acompte d'IR imputé sur l'impôt dû par M. Pujol l'année suivante) ; prélèvements sociaux, 20 000 × 18,6 % = 3 720 €. Total retenu : 6 280 €, dette envers l'État soldée lors du reversement au Trésor. Net versé : 20 000 − 6 280 = 13 720 €. Le compte 457 est soldé pour le montant brut. Président de SAS, M. Pujol ne supporte aucune cotisation sociale sur ses dividendes, à la différence d'un gérant majoritaire de SARL pour la fraction excédant 10 % du capital, des primes et des comptes courants. Erreur type : retenir 17,2 %, taux des prélèvements sociaux antérieur à 2026 (net de 13 720 € remplacé par 14 000 €).",
+      "source_ref": "CGI art. 117 quater (prélèvement forfaitaire non libératoire de 12,8 %) ; CSS art. L136-7 et L136-8 (prélèvements sociaux sur les revenus de placement, taux modifié par la LFSS pour 2026) ; PCG (règl. ANC 2014-03), comptes 457, 442 et 512",
+      "verified": true,
+      "estimated_seconds": 180
     }
   ]
 }

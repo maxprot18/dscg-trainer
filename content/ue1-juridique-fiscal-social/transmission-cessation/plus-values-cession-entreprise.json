@@ -139,6 +139,56 @@
       "source_ref": "PCG (règl. ANC 2014-03 modifié par le règl. ANC 2022-06), comptes 261, 2961, 6671, 7671 et 7866 ; CGI art. 219 I a quinquies",
       "verified": true,
       "estimated_seconds": 210
+    },
+    {
+      "id": "ue1-trans-pv-0005",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "plus-values-cession-entreprise",
+      "difficulty": 2,
+      "tags": [
+        "apport-cession",
+        "report d'imposition",
+        "150-0 B ter",
+        "réinvestissement",
+        "LF 2026"
+      ],
+      "statement": "En mars 2025, Mme Lebrun a apporté les actions de sa société d'exploitation à la holding Lebrun Participations, qu'elle contrôle ; la plus-value d'apport, de 1 400 000 €, a été placée en report d'imposition. En septembre 2026, la holding cède ces actions pour 2 000 000 €. Dans les trois ans qui suivent, elle consacre 1 300 000 € à l'acquisition du contrôle d'une société industrielle et place le solde en contrats de capitalisation. Quel est le sort du report d'imposition ?",
+      "options": [
+        "Il est maintenu, car la holding a réinvesti au moins 60 % du prix de cession dans une activité économique",
+        "Il prend fin, car la holding a cédé les titres moins de trois ans après l'apport sans réinvestir au moins 70 % du prix dans une activité économique",
+        "Il est maintenu, car la cession intervient plus d'un an après l'apport",
+        "Il prend fin dès la cession par la holding, quel que soit le montant réinvesti"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "La cession par la holding des titres apportés dans les trois ans de l'apport met fin au report, sauf si elle s'engage à réinvestir une fraction du produit de cession dans une activité économique. Pour les cessions réalisées à compter du 21 février 2026, la loi de finances pour 2026 a porté cette fraction de 60 % à 70 %, le délai de réinvestissement de deux à trois ans et la durée de conservation des actifs acquis à cinq ans. Ici, la cession intervient 18 mois après l'apport et le réinvestissement économique représente 1 300 000 / 2 000 000 = 65 % du prix, sous le seuil de 70 % ; les contrats de capitalisation ne sont pas un réinvestissement économique. Le report prend fin et la plus-value de 1 400 000 € est imposée au nom de Mme Lebrun (option 2).\nL'option 1 applique le seuil de 60 % en vigueur avant la loi de finances pour 2026, alors que c'est la date de la cession (septembre 2026) qui détermine le régime. L'option 3 retient un délai d'un an au lieu de trois. L'option 4 est fausse : un réinvestissement d'au moins 70 % dans le délai aurait maintenu le report, et une cession plus de trois ans après l'apport l'aurait laissé subsister sans condition de réinvestissement.",
+      "source_ref": "CGI art. 150-0 B ter (rédaction issue de la loi n° 2026-103 du 19 février 2026, loi de finances pour 2026 : cession dans les trois ans de l'apport, réinvestissement d'au moins 70 % dans les trois ans, applicable aux cessions réalisées à compter du 21 février 2026)",
+      "verified": true,
+      "estimated_seconds": 80
+    },
+    {
+      "id": "ue1-trans-pv-0006",
+      "type": "flashcard",
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "plus-values-cession-entreprise",
+      "difficulty": 1,
+      "tags": [
+        "151 septies",
+        "238 quindecies",
+        "151 septies A",
+        "exonération"
+      ],
+      "front": "Plus-values professionnelles d'un exploitant individuel : quel est le critère de chacun des trois régimes d'exonération (151 septies, 238 quindecies, 151 septies A) ?",
+      "back": "151 septies : activité exercée depuis au moins 5 ans ; critère des recettes (exonération totale jusqu'à 250 000 € pour les ventes ou 90 000 € pour les services, dégressive jusqu'à 350 000 € ou 126 000 €).\n238 quindecies : transmission d'une entreprise individuelle ou d'une branche complète d'activité exercée depuis 5 ans ; critère de la valeur transmise (exonération totale jusqu'à 500 000 €, dégressive jusqu'à 1 000 000 €), immeubles exclus.\n151 septies A : départ à la retraite de l'exploitant d'une PME dans les 2 ans ; exonération d'impôt sur le revenu (hors immeubles), prélèvements sociaux dus.",
+      "explanation": "Moyen mnémotechnique : 151 septies regarde le chiffre d'affaires (recettes moyennes des deux exercices précédents), 238 quindecies regarde ce qui est vendu (valeur des éléments transmis), 151 septies A regarde le cédant (départ en retraite). Le régime de 151 septies s'applique aussi à la cession d'un élément isolé, alors que 238 quindecies exige la transmission d'une entreprise ou d'une branche complète.",
+      "source_ref": "CGI art. 151 septies, 151 septies A et 238 quindecies",
+      "verified": true,
+      "estimated_seconds": 40
     }
   ]
 }

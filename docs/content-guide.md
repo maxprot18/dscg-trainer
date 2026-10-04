@@ -66,6 +66,20 @@ Règles par type :
 - **audit_case** : `cycle` égal au `group` de la notion ; situation de 6 à 12 lignes avec des faits chiffrés ; 5 ou 6 procédures dont 2 ou 3 pertinentes ; risque Faible / Modéré / Élevé justifié par les faits de l'énoncé ; conclusion type et `key_points` qui ne supposent aucun fait absent de l'énoncé.
 - **flashcard** : recto = question courte, verso = réponse de 2 à 6 lignes ; `explanation` = complément ou référence.
 
+## Dossiers de type examen (`content/<slug-ue>/sujets-examen.json`)
+
+Un dossier reproduit un dossier d'épreuve écrite : une entreprise fictive, des annexes, des questions enchaînées sur plusieurs notions de l'UE. Il est servi dans l'examen blanc (jusqu'à 60 % de sa durée) et listé dans « Sujets type d'examen » ; il n'apparaît pas dans les sessions courtes.
+
+- `type: "case_study"`, `dossier: true`, id `<ue>-dossier-<nnnn>`, `notion` = notion centrale, `difficulty: 3`, `estimated_seconds` ≥ 2 700 (60 à 90 minutes en pratique), `total_points: 20` obligatoire.
+- `context` (Markdown) : entreprise et mission confiée, 150 à 300 mots.
+- `annexes` : 2 à 10 annexes `{ title, content }` en Markdown (3 à 5 conseillées), chiffres cohérents entre elles ; toutes les données utiles sont dans le contexte ou les annexes.
+- `sub_questions` : 6 à 15 (8 à 12 conseillées), du plus simple au plus difficile, somme des `points` = 20 ; au moins 3 `numeric` et 2 `open` ; chaque `prompt` cite les annexes à utiliser.
+- Un cas pratique ordinaire (sans `dossier`) reste limité à 5 sous-questions et n'a pas d'annexes.
+
+## Sujets d'oral d'UE 6 (`content/oral/*.json`)
+
+Fichier `{ "topics": [ ... ] }`, format dans `src/content/oralSchema.ts`. Chaque sujet : id `ue6-oral-<nnnn>`, `theme` et `notions` de l'UE 6, `title`, `document` en anglais (120 à 450 mots, rédigé en propre : article de presse, note interne, extrait de rapport), `task` (consigne de l'exposé), `outline` (3 à 7 étapes du plan type), `vocabulary` (4 à 12 termes avec traduction), `jury_questions` (3 à 6 questions d'entretien), `verified`. Le relecteur vérifie l'anglais, l'exactitude des faits techniques, la cohérence plan / consigne et la pertinence des questions.
+
 Variété : ne pas répéter le même scénario ou les mêmes chiffres d'un exercice à l'autre ; couvrir les différents aspects de la notion décrits dans la fiche de cours.
 
 ## Relecture indépendante (obligatoire avant `verified: true`)

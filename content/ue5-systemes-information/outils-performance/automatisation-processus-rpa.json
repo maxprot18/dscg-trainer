@@ -144,6 +144,55 @@
       "source_ref": "CGI art. 289 bis ; loi n° 2023-1322 de finances pour 2024, art. 91 (calendrier) ; programme DSCG UE 5 : automatisation des processus (RPA)",
       "verified": true,
       "estimated_seconds": 900
+    },
+    {
+      "id": "ue5-outils-rpa-0005",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "automatisation-processus-rpa",
+      "difficulty": 2,
+      "tags": [
+        "e-reporting",
+        "facturation électronique",
+        "B2C",
+        "international"
+      ],
+      "statement": "La société Nivolet, assujettie à la TVA en France, vend des articles de sport à des particuliers dans ses magasins et sur son site, et exporte une partie de sa production vers des distributeurs établis hors de l'Union européenne. Que lui impose la réforme de la facturation électronique pour ces deux catégories d'opérations ?",
+      "options": [
+        "Émettre des factures électroniques structurées via une plateforme agréée, y compris à destination des particuliers",
+        "Transmettre à l'administration, via une plateforme agréée, les données de ces transactions (e-reporting)",
+        "Rien : ces opérations sont entièrement en dehors du champ de la réforme",
+        "Adresser à ses clients des factures au format PDF signées, en remplacement des tickets de caisse"
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "Les ventes aux particuliers (B2C) et les opérations internationales ne relèvent pas de la facturation électronique entre assujettis établis en France, mais de l'e-reporting : l'entreprise transmet les données de ces transactions à l'administration par l'intermédiaire d'une plateforme agréée (option 2) ; pour les prestations de services, elle transmet aussi les données de paiement. L'option 1 est fausse : l'obligation d'émission de factures électroniques ne vise que les opérations domestiques entre assujettis (B2B). L'option 3 oublie l'e-reporting, qui fait partie de la réforme. L'option 4 est sans fondement : un PDF n'est pas une donnée structurée et rien n'impose de remplacer les tickets de caisse.",
+      "source_ref": "CGI art. 290 (données de transaction) et art. 290 A (données de paiement), e-reporting et art. 289 bis (facturation électronique entre assujettis) ; loi n° 2023-1322 de finances pour 2024, art. 91",
+      "estimated_seconds": 70,
+      "verified": true
+    },
+    {
+      "id": "ue5-outils-rpa-0006",
+      "type": "true_false",
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "automatisation-processus-rpa",
+      "difficulty": 1,
+      "tags": [
+        "facturation électronique",
+        "Factur-X",
+        "plateforme agréée"
+      ],
+      "statement": "Une PME qui envoie à ses clients professionnels établis en France des factures au format PDF par courriel respectera l'obligation d'émission de factures électroniques qui s'imposera à elle au 1er septembre 2027.",
+      "answer": false,
+      "justification": "Un PDF simple envoyé par courriel n'est pas une facture électronique au sens de la réforme : la facture doit être émise sous forme de données structurées (Factur-X, UBL, CII) et transmise par une plateforme agréée.",
+      "explanation": "La réforme impose, entre assujettis établis en France, une facture émise, transmise et reçue sous forme de données structurées via une plateforme agréée (ex-PDP). Le format Factur-X associe un PDF lisible et un fichier de données structurées conforme à la norme EN 16931 : c'est la partie structurée qui compte. Pour les PME et microentreprises, l'émission devient obligatoire au 1er septembre 2027 ; la réception est obligatoire pour toutes les entreprises depuis le 1er septembre 2026. La PME devra donc choisir une plateforme agréée et adapter son outil de facturation.",
+      "source_ref": "CGI art. 289 bis ; loi n° 2023-1322 de finances pour 2024, art. 91 (calendrier) ; norme EN 16931",
+      "estimated_seconds": 40,
+      "verified": true
     }
   ]
 }

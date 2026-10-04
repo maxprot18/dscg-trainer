@@ -98,6 +98,61 @@
       "source_ref": "C. com. art. L651-2",
       "verified": true,
       "estimated_seconds": 140
+    },
+    {
+      "id": "ue1-difficulte-sanct-0005",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "sanctions-dirigeants-procedures",
+      "difficulty": 2,
+      "tags": [
+        "insuffisance d'actif",
+        "passif admis",
+        "calcul",
+        "condamnation du dirigeant"
+      ],
+      "statement": "La liquidation judiciaire de la SARL Rouergue fait apparaître : créances antérieures au jugement d'ouverture déclarées pour 900 000 €, dont 60 000 € rejetées par le juge-commissaire ; dettes nées après le jugement d'ouverture 80 000 € ; actif réalisé : prix de cession du fonds de commerce 210 000 € et créances clients recouvrées 45 000 €. Le tribunal retient contre le gérant une faute de gestion ayant contribué à l'insuffisance d'actif et met à sa charge 40 % de celle-ci. On retient que l'insuffisance d'actif se calcule à partir du seul passif antérieur admis. Quel est le montant de la condamnation ? Réponse en euros.",
+      "expected_value": 234000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Passif antérieur admis : 900 000 − 60 000 = 840 000 € (les créances rejetées ne font pas partie du passif admis ; les dettes postérieures au jugement sont hors calcul). Actif réalisé : 210 000 + 45 000 = 255 000 €. Insuffisance d'actif : 840 000 − 255 000 = 585 000 €. Condamnation : 40 % × 585 000 = 234 000 €.\nErreurs à éviter : partir du passif déclaré (40 % × (900 000 − 255 000) = 258 000 €) ; ajouter les dettes postérieures (40 % × (920 000 − 255 000) = 266 000 €) ; oublier les créances recouvrées dans l'actif réalisé (40 % × (840 000 − 210 000) = 252 000 €). Les sommes versées par le gérant entreront dans le patrimoine de la société et seront réparties entre tous les créanciers.",
+      "source_ref": "C. com. art. L651-2 (responsabilité pour insuffisance d'actif)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue1-difficulte-sanct-0006",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "sanctions-dirigeants-procedures",
+      "difficulty": 3,
+      "tags": [
+        "dirigeant de fait",
+        "prescription",
+        "insuffisance d'actif",
+        "conversion"
+      ],
+      "statement": "La SAS Lauragais a été placée en redressement judiciaire le 1er mars N ; la procédure a été convertie en liquidation judiciaire par jugement du 10 septembre N, qui fait apparaître une insuffisance d'actif. Pendant les deux années précédentes, M. Castel, associé non mandataire social, donnait seul les ordres aux fournisseurs et aux banques et décidait des embauches ; il a poursuivi une activité lourdement déficitaire. Le 1er juin N+3, le liquidateur assigne M. Castel en responsabilité pour insuffisance d'actif. Quelle analyse est exacte ?",
+      "options": [
+        "L'action est prescrite, car le délai de trois ans court à compter du jugement d'ouverture du redressement judiciaire",
+        "L'action est irrecevable, car elle ne peut viser que les dirigeants de droit régulièrement désignés",
+        "L'action est recevable : elle peut viser un dirigeant de fait, et le délai de trois ans court à compter du jugement qui prononce la liquidation, soit jusqu'au 10 septembre N+3",
+        "L'action est recevable, mais le tribunal doit mettre à la charge de M. Castel l'intégralité de l'insuffisance d'actif dès lors qu'une faute est établie"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "La responsabilité pour insuffisance d'actif vise les dirigeants de droit ou de fait (L651-2). M. Castel exerçait en toute indépendance une activité positive de direction (ordres aux fournisseurs et aux banques, embauches) : il est dirigeant de fait. L'action se prescrit par trois ans à compter du jugement qui prononce la liquidation judiciaire, ici le jugement de conversion du 10 septembre N : l'assignation du 1er juin N+3 est dans le délai (option 3).\nL'option 1 fait courir le délai à compter de l'ouverture du redressement (le délai aurait alors expiré le 1er mars N+3). L'option 2 exclut à tort les dirigeants de fait. L'option 4 est fausse : le tribunal peut mettre à la charge du dirigeant fautif tout ou partie de l'insuffisance ; c'est une faculté, et non une obligation de condamner pour la totalité.",
+      "source_ref": "C. com. art. L651-2, al. 1 (dirigeants de droit ou de fait, tout ou partie de l'insuffisance, prescription de trois ans à compter du jugement prononçant la liquidation)",
+      "verified": true,
+      "estimated_seconds": 90
     }
   ]
 }

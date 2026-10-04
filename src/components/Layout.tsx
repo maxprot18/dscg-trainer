@@ -1,7 +1,8 @@
 import { BookOpen, ChartColumn, Dumbbell, House, Search, Settings } from 'lucide-react'
 import { Suspense } from 'react'
-import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom'
+import { Link, NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom'
 
+import { ErrorBoundary } from '@/components/ErrorBoundary'
 import { PwaBanner } from '@/components/PwaBanner'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { Button } from '@/components/ui/button'
@@ -17,6 +18,7 @@ const links = [
 
 export function Layout() {
   const navigate = useNavigate()
+  const { pathname } = useLocation()
   // « / » ouvre la recherche (hors saisie dans un champ).
   useKeyboard((key) => (key === '/' ? (navigate('/recherche'), true) : false), true)
   return (
@@ -42,9 +44,11 @@ export function Layout() {
       </header>
       <main className="flex-1 px-4 pt-3 pb-24">
         {/* Les écrans sont chargés à la demande : l'en-tête et la navigation restent affichés. */}
-        <Suspense fallback={<p className="text-muted-foreground">Chargement…</p>}>
-          <Outlet />
-        </Suspense>
+        <ErrorBoundary resetKey={pathname}>
+          <Suspense fallback={<p className="text-muted-foreground">Chargement…</p>}>
+            <Outlet />
+          </Suspense>
+        </ErrorBoundary>
       </main>
       <nav className="bg-background/95 fixed inset-x-0 bottom-0 border-t backdrop-blur" aria-label="Navigation principale">
         <ul className="mx-auto grid max-w-3xl grid-cols-4 lg:max-w-5xl">

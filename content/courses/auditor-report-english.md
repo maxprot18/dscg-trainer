@@ -1,6 +1,6 @@
 # Reading the independent auditor’s report
 
-**References:** ISA 700 (Revised), 570 (Revised), 701, 705 (Revised), 706 (Revised) and 720 (Revised) (IAASB) ; PCAOB AS 3101 (critical audit matters) ; Regulation (EU) No 537/2014, art. 10 ; NEP 700, 701 and 705
+**References:** ISA 700 (Revised), 570 (Revised), 701, 705 (Revised), 706 (Revised) and 720 (Revised) (IAASB) ; PCAOB AS 3101 (critical audit matters) ; Regulation (EU) No 537/2014, art. 10 ; NEP 700, 701 and 702
 
 **Key issue:** the auditor's report is the only part of the annual report written by an independent party; the exam gives an extract and asks what the opinion is, whether a given section modifies it, and what the auditor does or does not cover.
 

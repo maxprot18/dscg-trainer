@@ -26,6 +26,7 @@ import {
   type UeId,
 } from '../src/content/schema.ts'
 import { extractDiagramBlocks, parseDiagram } from '../src/content/diagramSchema.ts'
+import { oralFileSchema } from '../src/content/oralSchema.ts'
 import { buildTaxonomyIndex, checkPlacement, describePlacementProblem } from '../src/content/taxonomy.ts'
 
 // Messages Zod génériques en français (les messages métier du schéma le sont déjà).
@@ -46,6 +47,7 @@ export interface ValidationStats {
   notionsCovered: number
   notionsTotal: number
   courses: number
+  oralTopics: number
   diagrams: number
 }
 
@@ -62,6 +64,8 @@ const COURSE_MAX_LINES = 30
 /** Fichiers de documentation tolérés à la racine de content/. */
 const ROOT_DOC_FILES = new Set(['LICENSE', 'README.md'])
 const COURSES_DIR = 'courses'
+/** Sujets d'oral de l'UE 6 (format propre, validé à part). */
+const ORAL_DIR = 'oral'
 
 function emptyStats(): ValidationStats {
   return {
@@ -74,6 +78,7 @@ function emptyStats(): ValidationStats {
     notionsCovered: 0,
     notionsTotal: 0,
     courses: 0,
+    oralTopics: 0,
     diagrams: 0,
   }
 }
@@ -93,7 +98,7 @@ function listContentFiles(contentDir: string, warnings: string[]): string[] {
       const full = path.join(dir, entry.name)
       const relPath = rel(contentDir, full)
       if (entry.isDirectory()) {
-        if (relPath === COURSES_DIR) continue
+        if (relPath === COURSES_DIR || relPath === ORAL_DIR) continue
         walk(full)
       } else if (relPath === TAXONOMY_FILE || ROOT_DOC_FILES.has(relPath)) {
         continue
@@ -264,6 +269,39 @@ export function validateContent(contentDir: string | URL, opts: ValidateOptions)
     }
   }
 
+  // --- Sujets d'oral (UE 6) ---------------------------------------------------
+  const oralDir = path.join(dir, ORAL_DIR)
+  if (existsSync(oralDir) && statSync(oralDir).isDirectory()) {
+    for (const name of readdirSync(oralDir).sort()) {
+      if (!name.endsWith('.json')) continue
+      const relPath = `${ORAL_DIR}/${name}`
+      const json = readJson(path.join(oralDir, name))
+      if (!json.ok) {
+        errors.push(`${relPath} : JSON invalide — ${json.message}`)
+        continue
+      }
+      const parsed = oralFileSchema.safeParse(json.value)
+      if (!parsed.success) {
+        for (const line of formatZodIssues(parsed.error)) errors.push(`${relPath} › ${line}`)
+        continue
+      }
+      const ue6 = taxonomy.ues.find((u) => u.id === 'UE6')
+      for (const t of parsed.data.topics) {
+        const where = `${relPath} › ${t.id}`
+        if (seenIds.has(t.id)) errors.push(`${where} : identifiant en double (déjà dans ${seenIds.get(t.id)})`)
+        seenIds.set(t.id, relPath)
+        if (!ue6?.themes.some((th) => th.id === t.theme)) errors.push(`${where} : thème « ${t.theme} » absent de l'UE 6`)
+        for (const n of t.notions) if (!index.notions.has(n)) errors.push(`${where} : notion inconnue « ${n} »`)
+        stats.oralTopics++
+        if (!t.verified) {
+          const msg = `${where} : sujet d'oral non vérifié (verified: false)`
+          if (opts.requireVerified) errors.push(msg)
+          else warnings.push(msg)
+        }
+      }
+    }
+  }
+
   return { errors, warnings, stats }
 }
 
@@ -287,6 +325,7 @@ export function formatSummary(stats: ValidationStats): string {
     `  Par type            : ${byType || '—'}`,
     `  Notions couvertes   : ${stats.notionsCovered} / ${total} (${pct(stats.notionsCovered, total)})`,
     `  Fiches de cours     : ${stats.courses} / ${total} (${stats.diagrams} diagrammes)`,
+    `  Sujets d'oral UE 6  : ${stats.oralTopics}`,
   ].join('\n')
 }
 

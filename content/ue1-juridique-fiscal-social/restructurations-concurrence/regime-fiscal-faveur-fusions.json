@@ -183,6 +183,32 @@
       "source_ref": "CGI art. 210 A, 210 B, 209 II et 816 (enregistrement gratuit depuis le 1er janvier 2019, LF 2019 art. 26)",
       "verified": true,
       "estimated_seconds": 840
+    },
+    {
+      "id": "ue1-restr-fiscfus-0006",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "regime-fiscal-faveur-fusions",
+      "difficulty": 2,
+      "tags": [
+        "régime de faveur",
+        "biens amortissables",
+        "cession anticipée",
+        "réintégration du reliquat"
+      ],
+      "statement": "Le 1er janvier N, la SAS Ardèche (IS) a absorbé la SAS Drôme (IS) sous le régime de faveur de l'article 210 A du CGI, apports évalués à la valeur réelle. Parmi les biens apportés figure un matériel industriel : valeur d'apport 100 000 €, valeur fiscale chez Drôme 40 000 €. La plus-value d'apport de ce matériel est réintégrée par fractions égales sur 5 ans. Ardèche amortit le matériel en linéaire sur 5 ans à compter du 1er janvier N, sur sa valeur d'apport. Le 31 décembre N+1, Ardèche cède ce matériel pour 75 000 € HT. La fraction de la plus-value d'apport afférente à N+1 a été réintégrée normalement dans le résultat de N+1. Quel montant total la cession conduit-elle à ajouter au résultat imposable de N+1 (plus-value de cession et reliquat de plus-value d'apport), en plus de cette fraction annuelle ? Réponse en euros.",
+      "expected_value": 51000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "1. Plus-value de cession : en contrepartie de la réintégration, les amortissements et les plus-values ultérieures des biens amortissables sont calculés d'après la valeur d'apport. Amortissement annuel : 100 000 / 5 = 20 000 € ; valeur nette au 31/12/N+1 : 100 000 − 2 × 20 000 = 60 000 €. Plus-value de cession : 75 000 − 60 000 = 15 000 €.\n2. Reliquat de plus-value d'apport : plus-value d'apport 100 000 − 40 000 = 60 000 €, réintégrée par cinquièmes (12 000 € par an). Réintégrations effectuées au titre de N et de N+1 : 24 000 €. La cession du bien entraîne l'imposition immédiate de la fraction non encore réintégrée : 60 000 − 24 000 = 36 000 €.\nTotal à ajouter : 15 000 + 36 000 = 51 000 €.\nErreurs à éviter : retenir la seule plus-value de cession (15 000 €) en oubliant le reliquat ; retenir le seul reliquat (36 000 €) ; calculer le reliquat après une seule réintégration (48 000 €, soit 63 000 € au total) ; calculer la plus-value de cession sur la valeur fiscale d'origine du bien, alors que l'absorbante amortit et calcule ses plus-values d'après la valeur d'apport.",
+      "source_ref": "CGI art. 210 A, 3-d (réintégration des plus-values sur biens amortissables, imposition immédiate de la fraction non réintégrée en cas de cession, amortissements et plus-values ultérieures calculés d'après la valeur d'apport)",
+      "verified": true,
+      "estimated_seconds": 200
     }
   ]
 }

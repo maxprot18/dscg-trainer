@@ -157,3 +157,7 @@ dist-ssr
 .idea
 .DS_Store
 *.tsbuildinfo
+
+# Playwright
+test-results/
+playwright-report/

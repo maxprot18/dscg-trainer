@@ -181,6 +181,26 @@
       "source_ref": "CGI art. 219, I-a quinquies (plus-values à long terme sur titres de participation, quote-part de 12 %) ; CGI art. 145 et 216 (régime mère-fille) ; CGI art. 39-2 et 39-4 ; CGI art. 219, I-b (taux réduit PME)",
       "verified": true,
       "estimated_seconds": 780
+    },
+    {
+      "id": "ue1-fisc-isres-0006",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "fiscalite-is-tva-ir",
+      "notion": "is-resultat-fiscal",
+      "difficulty": 1,
+      "tags": [
+        "provisions",
+        "indemnités de départ à la retraite",
+        "réintégration"
+      ],
+      "statement": "La dotation à une provision pour indemnités de départ à la retraite du personnel, comptabilisée en charges par une société soumise à l'IS, est déductible de son résultat fiscal de l'exercice.",
+      "answer": false,
+      "justification": "Faux : les provisions pour indemnités de départ à la retraite ne sont pas déductibles (CGI art. 39-1-5°) ; la dotation est réintégrée et l'indemnité sera déduite lors de son versement.",
+      "explanation": "Le CGI exclut expressément de la déduction les provisions constituées en vue de faire face au versement d'indemnités de départ à la retraite. La dotation est réintégrée extra-comptablement (tableau 2058-A) ; lors de la reprise de la provision, la reprise est déduite pour éviter une double imposition, et l'indemnité effectivement payée constitue une charge déductible. À l'inverse, une provision pour litige probable, nettement précisée et évaluée avec une approximation suffisante, est déductible.",
+      "source_ref": "CGI art. 39-1-5° (provisions déductibles et exclusion des provisions pour indemnités de départ à la retraite)",
+      "verified": true,
+      "estimated_seconds": 45
     }
   ]
 }

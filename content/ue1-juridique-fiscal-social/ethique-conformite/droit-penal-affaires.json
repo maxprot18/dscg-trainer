@@ -146,6 +146,53 @@
       "source_ref": "C. com. L242-6 et L244-1 ; C. pén. art. 441-1 ; CPP art. 8 et 9-1 ; CMF L561-15",
       "estimated_seconds": 780,
       "verified": true
+    },
+    {
+      "id": "ue1-ethique-penal-0005",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "droit-penal-affaires",
+      "difficulty": 2,
+      "tags": [
+        "abus de biens sociaux",
+        "groupe de sociétés",
+        "fait justificatif"
+      ],
+      "statement": "M. Garnier préside la SA Alpha et la SAS Beta, filiale détenue à 70 % par Alpha au sein d'un groupe industriel intégré. Dans le cadre d'un plan de redressement arrêté au niveau du groupe, il fait consentir par Alpha à Beta, en difficulté passagère, une avance de trésorerie de 400 000 €, rémunérée au taux du marché et représentant 5 % de la trésorerie disponible d'Alpha. Un actionnaire minoritaire d'Alpha dénonce un abus de biens sociaux. Quelle affirmation est exacte ?",
+      "options": [
+        "L'abus de biens sociaux est nécessairement constitué, car M. Garnier est dirigeant de Beta et donc intéressé à l'opération",
+        "L'abus de biens sociaux est exclu par principe dès lors que les deux sociétés appartiennent au même groupe",
+        "L'abus de biens sociaux ne peut concerner qu'un usage des biens sociaux au profit personnel direct du dirigeant",
+        "Le délit peut être écarté si le concours est dicté par un intérêt commun apprécié au regard d'une politique de groupe, comporte une contrepartie et n'excède pas les possibilités financières d'Alpha, ce qui semble être le cas ici"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "L'ABS vise aussi l'usage des biens sociaux destiné à favoriser une autre société dans laquelle le dirigeant est intéressé directement ou indirectement (C. com. L242-6 pour la SA). Mais la jurisprudence (arrêt « Rozenblum ») admet un fait justificatif dans les groupes : le concours doit être dicté par un intérêt économique, social ou financier commun apprécié au regard d'une politique élaborée pour l'ensemble du groupe, ne pas être démuni de contrepartie ou rompre l'équilibre des engagements réciproques, et ne pas excéder les possibilités financières de la société qui le supporte. Ici : plan de groupe, avance rémunérée au taux du marché, 5 % de la trésorerie : les conditions paraissent réunies (option 4).\nL'option 1 est fausse : l'intérêt du dirigeant dans Beta fait entrer l'opération dans le champ de l'ABS, mais n'exclut pas le fait justificatif. L'option 2 est fausse : l'appartenance au groupe ne suffit pas, les trois conditions doivent être vérifiées. L'option 3 est fausse : le texte vise aussi le fait de favoriser une autre entreprise dans laquelle le dirigeant est intéressé.",
+      "source_ref": "C. com. art. L242-6 (ABS dans la SA) ; Cass. crim., 4 févr. 1985, « Rozenblum » (fait justificatif tiré de l’intérêt de groupe)",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue1-ethique-penal-0006",
+      "type": "flashcard",
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "droit-penal-affaires",
+      "difficulty": 1,
+      "tags": [
+        "faux et usage de faux",
+        "éléments constitutifs",
+        "peines"
+      ],
+      "front": "Faux (C. pén. art. 441-1) : quels sont les éléments constitutifs et les peines encourues ?",
+      "back": "Éléments : une altération frauduleuse de la vérité, dans un écrit ou tout autre support d'expression de la pensée ayant pour objet ou pouvant avoir pour effet d'établir la preuve d'un droit ou d'un fait ayant des conséquences juridiques (fausse facture, faux procès-verbal), de nature à causer un préjudice, commise intentionnellement.\nPeines : 3 ans d'emprisonnement et 45 000 € d'amende ; l'usage du faux est un délit distinct, puni des mêmes peines.\nPersonne morale : amende jusqu'au quintuple (225 000 €).",
+      "explanation": "Le faux et l'usage de faux se cumulent souvent avec l'abus de biens sociaux (fausses factures masquant des dépenses personnelles). La personne morale encourt une amende dont le taux maximal est le quintuple de celui prévu pour les personnes physiques (C. pén. art. 131-38), soit 5 × 45 000 = 225 000 €.",
+      "source_ref": "C. pén. art. 441-1 (faux et usage de faux) et 131-38 (amende des personnes morales)",
+      "verified": true,
+      "estimated_seconds": 60
     }
   ]
 }

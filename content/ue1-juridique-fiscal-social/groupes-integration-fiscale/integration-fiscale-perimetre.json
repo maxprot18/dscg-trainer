@@ -165,6 +165,25 @@
       "explanation": "Le cas porte sur les conditions de l'article 223 A : seuil de 95 % apprécié via les seules sociétés du groupe, identité des dates de clôture, assujettissement à l'IS, et sur les effets de la sortie d'une filiale.",
       "source_ref": "CGI art. 223 A (conditions et périmètre) ; CGI art. 223 R (sortie du groupe)",
       "estimated_seconds": 780
+    },
+    {
+      "id": "ue1-groupes-integ-0006",
+      "type": "flashcard",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "integration-fiscale-perimetre",
+      "difficulty": 1,
+      "tags": [
+        "intégration fiscale",
+        "société mère",
+        "conditions"
+      ],
+      "front": "Quelles conditions la société mère d'un groupe fiscalement intégré doit-elle remplir ?",
+      "back": "1. Être soumise à l'IS dans les conditions de droit commun (le taux réduit des PME n'y fait pas obstacle).\n2. Ne pas être détenue à 95 % ou plus, directement ou indirectement, par une autre personne morale soumise à l'IS en France (une détention par une personne physique, une société étrangère ou une société non soumise à l'IS ne fait pas obstacle).\n3. Avoir des exercices de 12 mois, ouverts et clos aux mêmes dates que ceux de ses filiales.\n4. Notifier l'option (valable cinq exercices, reconduction tacite) avant la date limite de dépôt de la déclaration de l'exercice précédent, avec l'accord des filiales incluses.",
+      "explanation": "Le régime est optionnel et la mère choisit librement son périmètre. La condition de non-détention à 95 % par une autre société française à l'IS évite qu'une société intermédiaire constitue son propre groupe alors que sa mère pourrait être tête de groupe. Depuis 2014, l'intégration horizontale permet en outre à des sociétés sœurs françaises détenues par une entité mère établie dans l'UE ou l'EEE de former un groupe (CGI art. 223 A).",
+      "source_ref": "CGI art. 223 A (conditions tenant à la société mère, durée de l'option, intégration horizontale) ; CGI ann. III art. 46 quater-0 ZD s. (formalités)",
+      "verified": true,
+      "estimated_seconds": 60
     }
   ]
 }

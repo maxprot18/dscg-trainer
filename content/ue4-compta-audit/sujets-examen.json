@@ -1,0 +1,507 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-dossier-0001",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "partage-capitaux-propres-minoritaires",
+      "difficulty": 3,
+      "tags": [
+        "dossier type examen",
+        "consolidation",
+        "ANC 2020-01",
+        "pourcentages",
+        "écart d’acquisition",
+        "impôts différés",
+        "éliminations",
+        "intérêts minoritaires"
+      ],
+      "source_ref": "Règl. ANC 2020-01 (périmètre, méthodes, retraitements d’homogénéisation, location-financement, écarts d’évaluation et d’acquisition, impôts différés, éliminations des opérations internes, partage des capitaux propres) ; C. com. art. L. 233-16 (obligation de consolider, contrôle exclusif et conjoint), L. 233-17-2 (périmètre, présomption d’influence notable à 20 %) et L. 233-18 (méthodes) ; comptes PCG 106, 120, 145, 155, 276 (convention), 37",
+      "verified": true,
+      "estimated_seconds": 5400,
+      "total_points": 20,
+      "title": "Consolidation du groupe Arverne (normes françaises)",
+      "context": "Le groupe **Arverne** fabrique et distribue des équipements de cuisine professionnelle. La société mère, **Arverne SA**, détient des participations directes et indirectes dans trois sociétés : **Bréhat SAS** (fabrication de fours), **Corlay SA** (distribution en Bretagne) et **Dinan SAS** (bureau d’études). Le groupe est tenu d’établir des comptes consolidés (C. com. art. L. 233-16), ne bénéficie d’aucune des exemptions prévues aux articles L. 233-17 et L. 233-17-1 et les établit selon le **règlement ANC 2020-01**, pour l’exercice N clos le 31 décembre.\n\nLe directeur administratif et financier, M. Le Goff, a préparé le cumul des comptes individuels mais il hésite sur plusieurs traitements. Il vous confie, en qualité de collaborateur du service consolidation, les travaux suivants :\n\n- vérifier le périmètre, les pourcentages de contrôle et d’intérêts, et les méthodes de consolidation ;\n- passer les retraitements d’homogénéisation et répondre à sa question sur le contrat de crédit-bail de Corlay ;\n- reconstituer la première consolidation de Bréhat (écarts d’évaluation, écart d’acquisition, impôts différés) ;\n- éliminer les opérations intra-groupe de l’exercice N ;\n- partager les capitaux propres retraités de Bréhat au 31/12/N entre le groupe et les intérêts minoritaires.\n\n**Hypothèses communes** : taux d’impôt sur les bénéfices de 25 %, applicable à toutes les sociétés et à toutes les échéances ; les montants sont en euros ; les capitaux propres se confondent avec les droits de vote (une action = une voix) ; l’impôt lié aux dividendes intra-groupe est négligé. Toutes les données utiles figurent dans les annexes 1 à 4.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Organigramme du groupe au 31/12/N",
+          "content": "| Société détenue | Détenteur | % du capital et des droits de vote | Date d’entrée |\n| --- | --- | --- | --- |\n| Bréhat SAS | Arverne SA | 80 % | 1/1/N−2 |\n| Corlay SA | Arverne SA | 12 % | N−5 |\n| Corlay SA | Bréhat SAS | 45 % | N−4 |\n| Dinan SAS | Arverne SA | 10 % | N−3 |\n| Dinan SAS | Bréhat SAS | 25 % | N−3 |\n\nLe solde du capital de Corlay SA (43 %) est réparti entre une centaine d’actionnaires personnes physiques ; aucun ne détient plus de 3 %.\n\nLe solde du capital de Dinan SAS (65 %) appartient à la société **Vauban Ingénierie**, extérieure au groupe, qui désigne la majorité des membres du comité de direction. Le groupe Arverne dispose de deux sièges sur sept à ce comité ; les statuts ne prévoient aucune décision prise à l’unanimité et aucun pacte d’actionnaires ne lie Arverne et Vauban Ingénierie."
+        },
+        {
+          "title": "Annexe 2 — Prise de contrôle de Bréhat le 1/1/N−2",
+          "content": "Arverne SA a acquis 80 % du capital de Bréhat SAS le 1er janvier N−2 pour **1 200 000 €** (coût d’acquisition des titres, frais compris).\n\nCapitaux propres de Bréhat au 1/1/N−2 : capital 500 000 € ; réserves 600 000 €. Aucun amortissement dérogatoire ni provision réglementée n’existait à cette date.\n\nÉvaluation des actifs identifiables à la date d’acquisition (valeurs fiscales inchangées) :\n\n| Élément | Valeur comptable | Valeur d’entrée retenue | Observations |\n| --- | --- | --- | --- |\n| Terrain | 200 000 | 320 000 | toujours détenu au 31/12/N |\n| Construction | 400 000 | 560 000 | durée d’utilisation résiduelle 20 ans, amortissement linéaire |\n\nLes autres actifs et passifs ont une valeur d’entrée égale à leur valeur comptable. L’écart d’acquisition a une durée d’utilisation limitée qui ne peut être déterminée de manière fiable : le groupe l’amortit linéairement sur **10 ans**, à compter du 1/1/N−2. Aucune dépréciation n’a été constatée."
+        },
+        {
+          "title": "Annexe 3 — Comptes individuels de Bréhat et note du DAF",
+          "content": "**Capitaux propres de Bréhat au 31/12/N (comptes individuels)**\n\n| Poste | Montant |\n| --- | --- |\n| Capital | 500 000 |\n| Réserves | 760 000 |\n| Résultat de l’exercice N | 240 000 |\n| Amortissements dérogatoires (provisions réglementées) | 40 000 |\n\nLes amortissements dérogatoires concernent des machines acquises le 2 janvier N−2. Leur solde au 1/1/N était de **30 000 €** (constitué en N−2 et N−1) ; la dotation de l’exercice N s’élève à **10 000 €** et figure dans le résultat de 240 000 €. Bréhat a versé en juin N un dividende total de 150 000 €, prélevé sur le résultat N−1 ; les réserves de 760 000 € s’entendent après cette distribution.\n\n**Note du DAF sur Corlay** : « Corlay utilise depuis le 1/1/N une ligne de conditionnement financée par un contrat de crédit-bail (valeur du bien à la signature 900 000 €, durée 6 ans, option d’achat de 1 % en fin de contrat, redevances annuelles de 165 000 € comptabilisées en charges externes). Je propose de ne pas retraiter ce contrat dans les comptes consolidés : le retraitement était seulement une méthode préférentielle dans l’ancien règlement CRC 99-02, et il compliquerait notre clôture. »"
+        },
+        {
+          "title": "Annexe 4 — Opérations intra-groupe de l’exercice N",
+          "content": "- **Ventes de fours** : Bréhat a commencé en N à vendre des fours à Arverne SA, qui les revend à sa clientèle. Ventes de l’exercice : 600 000 € HT. Au 31/12/N, le stock d’Arverne comprend des fours achetés à Bréhat pour **90 000 €**. Bréhat réalise sur ces ventes une marge de **25 % du prix de vente**.\n- **Dividendes** : sur le dividende de 150 000 € versé par Bréhat en juin N, Arverne SA a encaissé **120 000 €**, comptabilisés en produits de participations.\n- Aucune autre opération intra-groupe n’a d’incidence sur le résultat. Les créances et dettes réciproques ont déjà été éliminées par le DAF.\n\n**Conventions de comptes pour les écritures de consolidation** (écritures passées au bilan consolidé) : 106 Réserves consolidées ; 120 Résultat consolidé ; 145 Amortissements dérogatoires ; 155 Impôts différés passifs ; 276 Impôts différés actifs ; 37 Stocks de marchandises."
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1-interet-corlay",
+          "kind": "numeric",
+          "points": 1,
+          "prompt": "À l’aide de l’annexe 1, calculez le pourcentage d’intérêts du groupe Arverne dans Corlay SA (en %, arrondi au dixième).",
+          "expected_value": 48,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "Le pourcentage d’intérêts est la somme des produits des détentions en capital le long de chaque chemin : direct 12 % ; indirect par Bréhat 80 % × 45 % = 36 %. Total : 12 + 36 = **48 %**. Les erreurs types tombent hors tolérance : 57 % (addition des détentions, qui donne le pourcentage de contrôle) ou 36 % (oubli de la détention directe)."
+        },
+        {
+          "id": "q2-methodes",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À l’aide de l’annexe 1, quelles méthodes de consolidation faut-il appliquer à Bréhat, Corlay et Dinan selon le règlement ANC 2020-01 ?",
+          "options": [
+            "Bréhat : intégration globale ; Corlay : mise en équivalence (intérêts inférieurs à 50 %) ; Dinan : mise en équivalence",
+            "Bréhat : intégration globale ; Corlay : intégration globale ; Dinan : intégration proportionnelle",
+            "Bréhat : intégration globale ; Corlay : intégration globale ; Dinan : mise en équivalence",
+            "Bréhat : intégration globale ; Corlay : intégration globale ; Dinan : exclue du périmètre (contrôle détenu par Vauban Ingénierie)"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "Bréhat : contrôle de 80 %, contrôle exclusif, intégration globale. Corlay : contrôle de 12 % + 45 % = 57 % (les voix de Bréhat, contrôlée, sont retenues en totalité), contrôle exclusif, donc intégration globale malgré des intérêts de 48 %. Dinan : contrôle de 10 % + 25 % = 35 % et deux sièges sur sept, influence notable sans contrôle, donc mise en équivalence. L’option 3 est la bonne. L’option 1 choisit la méthode d’après le pourcentage d’intérêts, alors que c’est le contrôle qui la détermine. L’option 2 suppose un contrôle conjoint, qui exigerait un accord contractuel de partage du contrôle (décisions unanimes), absent ici. L’option 4 oublie qu’une entité sous influence notable entre dans le périmètre, même si un tiers la contrôle."
+        },
+        {
+          "id": "q3-perimetre-justification",
+          "kind": "open",
+          "points": 2,
+          "prompt": "À l’aide de l’annexe 1, rédigez pour M. Le Goff une note justifiant le pourcentage de contrôle retenu pour chacune des trois sociétés, la nature du contrôle exercé et la méthode qui en découle. Expliquez pourquoi le pourcentage de contrôle et le pourcentage d’intérêts ne jouent pas le même rôle.",
+          "model_answer": "Le pourcentage de contrôle mesure les droits de vote dont dispose le groupe : on additionne les voix détenues directement par Arverne et celles détenues par les sociétés qu’elle contrôle exclusivement, sans multiplier les pourcentages, car le contrôle se transmet en totalité le long d’une chaîne de sociétés contrôlées. Il détermine l’entrée dans le périmètre et la méthode. Le pourcentage d’intérêts, produit des détentions en capital le long de chaque chemin, mesure la part des capitaux propres et du résultat qui revient au groupe : il sert au partage.\n\n- **Bréhat** : 80 % des droits de vote détenus directement ; contrôle exclusif (majorité des voix) ; intégration globale ; intérêts 80 %.\n- **Corlay** : Arverne détient 12 % et Bréhat, qu’elle contrôle, 45 % : contrôle 57 %, contrôle exclusif de droit ; intégration globale. Les intérêts ne sont que de 48 % (12 % + 80 % × 45 %) : les minoritaires recevront 52 % des capitaux propres et du résultat de Corlay, mais cela n’empêche pas l’intégration globale.\n- **Dinan** : contrôle 10 % + 25 % = 35 %, supérieur au seuil de présomption d’influence notable (20 %), confirmé par la présence de deux membres sur sept au comité de direction ; Vauban Ingénierie, majoritaire, contrôle seule la société et aucun accord ne prévoit de décisions unanimes, donc pas de contrôle conjoint. Influence notable : mise en équivalence ; intérêts 10 % + 80 % × 25 % = 30 %, qui serviront à calculer la quote-part des capitaux propres et du résultat de Dinan.",
+          "key_points": [
+            "Contrôle = somme des droits de vote détenus directement et par les sociétés contrôlées, sans multiplication",
+            "Bréhat 80 % et Corlay 57 % : contrôle exclusif, intégration globale",
+            "Corlay intégrée globalement avec seulement 48 % d’intérêts (52 % de minoritaires)",
+            "Dinan : 35 % des voix et 2 sièges sur 7, sans accord d’unanimité : influence notable, mise en équivalence (intérêts 30 %)",
+            "Contrôle → périmètre et méthode ; intérêts → partage des capitaux propres et du résultat"
+          ],
+          "explanation": "Les pourcentages de contrôle s’additionnent le long des chaînes de sociétés contrôlées ; les pourcentages d’intérêts se multiplient. En normes françaises, la méthode dépend de la nature du contrôle : exclusif (IG), conjoint (IP), influence notable (MEE, présumée à partir de 20 % des droits de vote). Le contrôle conjoint suppose un accord contractuel de partage, absent pour Dinan."
+        },
+        {
+          "id": "q4-derogatoires",
+          "kind": "journal_entry",
+          "points": 2,
+          "prompt": "À l’aide de l’annexe 3, passez au bilan consolidé l’écriture d’élimination des amortissements dérogatoires de Bréhat au 31/12/N, en distinguant l’incidence sur les réserves et sur le résultat, et en constatant l’impôt différé. Utilisez les comptes 145, 106, 120 et 155 (annexe 4).",
+          "date": "31/12/N",
+          "entries": [
+            {
+              "account": "145",
+              "label": "Amortissements dérogatoires (Bréhat)",
+              "debit": 40000,
+              "credit": 0
+            },
+            {
+              "account": "106",
+              "label": "Réserves (part N−2 et N−1, nette d’impôt)",
+              "debit": 0,
+              "credit": 22500
+            },
+            {
+              "account": "120",
+              "label": "Résultat (dotation N, nette d’impôt)",
+              "debit": 0,
+              "credit": 7500
+            },
+            {
+              "account": "155",
+              "label": "Impôts différés passifs",
+              "debit": 0,
+              "credit": 10000
+            }
+          ],
+          "explanation": "Les amortissements dérogatoires, d’origine purement fiscale, sont éliminés en totalité (40 000 €). La part constituée avant N (30 000 €) augmente les réserves pour 30 000 × 0,75 = **22 500 €** ; la dotation de N (10 000 €) augmente le résultat pour 10 000 × 0,75 = **7 500 €**. La déduction fiscale déjà obtenue se reversera : impôt différé passif de 40 000 × 25 % = **10 000 €**. Contrôle : 22 500 + 7 500 + 10 000 = 40 000. Au compte de résultat, la dotation aux amortissements dérogatoires (10 000 €) est annulée et une charge d’impôt différé de 2 500 € est constatée."
+        },
+        {
+          "id": "q5-credit-bail-corlay",
+          "kind": "open",
+          "points": 2,
+          "prompt": "À l’aide de l’annexe 3, répondez à la proposition du DAF de ne pas retraiter le contrat de crédit-bail de Corlay. Indiquez la règle applicable, le principe du retraitement et ses conséquences sur les comptes consolidés (sans chiffrer l’écriture).",
+          "model_answer": "La proposition ne peut pas être retenue. Le règlement CRC 99-02 faisait du retraitement des contrats de location-financement une méthode préférentielle ; le règlement ANC 2020-01, applicable aux comptes consolidés, a supprimé les méthodes préférentielles propres au consolidé et rend ce retraitement obligatoire. La seule dérogation tient au caractère non significatif : un bien de 900 000 €, financé sur 6 ans avec une option d’achat de 1 %, ne peut pas être considéré comme négligeable, et la complexité de la clôture n’est pas un motif admis.\n\nPrincipe : le contrat est traité comme une acquisition financée à crédit. Au 1/1/N, le bien est inscrit à l’actif consolidé de Corlay pour sa valeur de 900 000 € et une dette financière de même montant est constatée. Les redevances de 165 000 € sont éliminées des charges externes et remplacées par une dotation aux amortissements (sur la durée d’utilisation du bien, l’option d’achat étant quasi certaine d’être levée) et par une charge d’intérêts ; la part de redevance qui excède les intérêts rembourse la dette.\n\nConséquences : augmentation du total du bilan et de l’endettement consolidés, hausse de l’excédent brut d’exploitation (les redevances disparaissent des charges externes), décalage du résultat entre exercices, avec un impôt différé sur l’écart entre la valeur consolidée du bien et de la dette et leur base fiscale (nulle pour le preneur). Corlay étant intégrée globalement avec 48 % d’intérêts, l’incidence sur ses capitaux propres et son résultat est partagée à 52 % avec les minoritaires.",
+          "key_points": [
+            "Retraitement obligatoire en règlement ANC 2020-01 (fin des méthodes préférentielles du CRC 99-02)",
+            "Seule exception : caractère non significatif, non démontré ici (bien de 900 000 €)",
+            "Bien inscrit à l’actif et dette financière au passif ; redevances remplacées par amortissement et intérêts",
+            "Incidences : endettement et total du bilan accrus, EBE amélioré, impôt différé",
+            "Effet partagé avec les minoritaires de Corlay (52 %)"
+          ],
+          "explanation": "Le règlement ANC 2020-01 supprime la notion de méthode préférentielle en consolidation et impose le retraitement des contrats de location-financement chez le preneur, sous réserve du caractère significatif. Le candidat doit citer la règle, rejeter l’argument de l’ancien règlement, décrire le mécanisme (actif, dette, amortissement, intérêts) et ses conséquences (bilan, EBE, impôt différé, partage)."
+        },
+        {
+          "id": "q6-ecart-acquisition",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À l’aide de l’annexe 2, calculez l’écart d’acquisition dégagé lors de la prise de contrôle de Bréhat le 1/1/N−2 (en euros), après prise en compte des écarts d’évaluation et des impôts différés correspondants.",
+          "expected_value": 152000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Écarts d’évaluation bruts : terrain 320 000 − 200 000 = 120 000 ; construction 560 000 − 400 000 = 160 000 ; total 280 000. Impôt différé passif : 280 000 × 25 % = 70 000 ; écarts nets : 210 000. Actif net identifiable = 1 100 000 + 210 000 = 1 310 000. Écart d’acquisition = 1 200 000 − 80 % × 1 310 000 = 1 200 000 − 1 048 000 = **152 000 €**. Erreurs types : 96 000 € (impôt différé oublié), 320 000 € (écarts d’évaluation oubliés)."
+        },
+        {
+          "id": "q7-idp-ecarts",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À l’aide de l’annexe 2, calculez le montant des impôts différés passifs liés aux écarts d’évaluation de Bréhat qui figurent au bilan consolidé du 31/12/N (en euros).",
+          "expected_value": 64000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Terrain : l’écart de 120 000 € n’est pas amorti, l’impôt différé passif reste de 120 000 × 25 % = 30 000 €. Construction : l’écart de 160 000 € s’amortit sur 20 ans, soit 8 000 € par an ; l’impôt différé passif initial de 40 000 € se reprend de 8 000 × 25 % = 2 000 € par an, pendant trois exercices (N−2, N−1, N) : 40 000 − 6 000 = 34 000 €. Total : 30 000 + 34 000 = **64 000 €**. Erreurs types : 70 000 € (aucune reprise), 68 000 € (reprise d’un seul exercice)."
+        },
+        {
+          "id": "q8-marge-stocks",
+          "kind": "journal_entry",
+          "points": 2,
+          "prompt": "À l’aide de l’annexe 4, passez au bilan consolidé du 31/12/N l’écriture d’élimination de la marge interne comprise dans le stock d’Arverne, impôt différé compris. Utilisez les comptes 37, 120 et 276.",
+          "date": "31/12/N",
+          "entries": [
+            {
+              "account": "120",
+              "label": "Résultat (marge interne nette d’impôt)",
+              "debit": 16875,
+              "credit": 0
+            },
+            {
+              "account": "276",
+              "label": "Impôts différés actifs",
+              "debit": 5625,
+              "credit": 0
+            },
+            {
+              "account": "37",
+              "label": "Stocks de marchandises (Arverne)",
+              "debit": 0,
+              "credit": 22500
+            }
+          ],
+          "explanation": "Seule la marge comprise dans le stock restant à la clôture est éliminée : 90 000 × 25 % = **22 500 €** (et non 25 % des 600 000 € vendus). Le stock consolidé revient au coût de production de Bréhat. L’élimination crée une différence temporelle : impôt différé actif de 22 500 × 25 % = **5 625 €** ; le résultat consolidé diminue de 22 500 − 5 625 = **16 875 €**. Bréhat étant le vendeur, cette diminution affecte son résultat retraité et sera partagée entre le groupe (80 %) et les minoritaires de Bréhat (20 %). Les ventes de Bréhat à Arverne ayant commencé en N, il n’y a pas de marge sur stock d’ouverture à reprendre."
+        },
+        {
+          "id": "q9-dividendes",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "À l’aide de l’annexe 4 : l’élimination du dividende de 120 000 € reçu de Bréhat diminue le résultat consolidé part du groupe de 120 000 €, mais laisse inchangé le total des capitaux propres consolidés part du groupe.",
+          "answer": true,
+          "explanation": "Vrai. Le dividende interne n’est pas un produit pour le groupe, qui ne s’enrichit pas en se versant à lui-même une partie de ses réserves : il est retiré du résultat d’Arverne (débit 120, résultat) et reclassé en réserves consolidées (crédit 106), puisqu’il provient de bénéfices antérieurs déjà consolidés. Le total des capitaux propres part du groupe est inchangé. La part versée aux minoritaires (30 000 €) n’est pas éliminée : elle a réellement quitté le groupe et a déjà réduit les capitaux propres de Bréhat."
+        },
+        {
+          "id": "q10-reserves-consolidees",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l’aide des annexes 2 à 4 et de vos réponses précédentes, calculez la part des réserves consolidées du groupe provenant de Bréhat au 31/12/N (en euros), après élimination des titres et amortissement de l’écart d’acquisition des exercices N−2 et N−1. Tenez compte des écarts d’évaluation et de l’élimination des amortissements dérogatoires ; le résultat de N est exclu, et le reclassement en réserves du dividende interne reçu par Arverne relève de la contribution d’Arverne (il n’est pas à prendre en compte ici).",
+          "expected_value": 106000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Capitaux propres retraités de Bréhat hors résultat N : capital 500 000 + réserves 760 000 + écarts d’évaluation nets 210 000 − supplément d’amortissement net d’impôt de N−2 et N−1 (2 × 6 000 = 12 000) + amortissements dérogatoires antérieurs nets d’impôt 22 500 = **1 480 500 €**. Part du groupe : 80 % × 1 480 500 = 1 184 400. Élimination des titres : − 1 200 000. Écart d’acquisition net au 1/1/N : 152 000 − 2 × 15 200 = 121 600. Réserves consolidées issues de Bréhat = 1 184 400 − 1 200 000 + 121 600 = **106 000 €**. Contrôle : 80 % des réserves retraitées accumulées depuis l’acquisition (160 000 − 12 000 + 22 500 = 170 500, soit 136 400) moins les amortissements antérieurs de l’écart d’acquisition (30 400) = 106 000 €."
+        },
+        {
+          "id": "q11-interets-minoritaires",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l’aide des annexes 2 à 4 et de vos réponses précédentes, calculez le montant total des intérêts minoritaires de Bréhat au bilan consolidé du 31/12/N (en euros), résultat N compris. Retenez le résultat retraité de Bréhat (écart d’évaluation sur la construction, amortissements dérogatoires, marge interne sur stocks).",
+          "expected_value": 341025,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Résultat retraité de Bréhat pour N : 240 000 − 6 000 (supplément d’amortissement de la construction, 8 000 − 2 000 d’impôt différé) + 7 500 (dotation dérogatoire éliminée, nette d’impôt) − 16 875 (marge interne, Bréhat étant le vendeur) = **224 625 €**. Capitaux propres retraités totaux : 1 480 500 + 224 625 = 1 705 125 €. Intérêts minoritaires = 20 % × 1 705 125 = **341 025 €**, dont 44 925 € de résultat. Les minoritaires ne reçoivent aucune part de l’écart d’acquisition (méthode partielle, seule admise en normes françaises). Erreurs types : 300 000 € (20 % des capitaux propres sociaux, sans retraitement) ou 344 400 € (marge interne oubliée)."
+        },
+        {
+          "id": "q12-resultat-groupe",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À l’aide de vos réponses précédentes, calculez la contribution de Bréhat au résultat consolidé part du groupe de l’exercice N (en euros), après amortissement de l’écart d’acquisition de N. Le dividende reçu par Arverne relève de la contribution d’Arverne et n’est pas à prendre en compte ici.",
+          "expected_value": 164500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Part du groupe dans le résultat retraité de Bréhat : 80 % × 224 625 = 179 700 €. Amortissement de l’écart d’acquisition de N : 152 000 / 10 = 15 200 €, supporté par le seul groupe. Contribution = 179 700 − 15 200 = **164 500 €**. Erreurs types : 179 700 € (amortissement de l’écart d’acquisition oublié) ou 192 000 € (80 % du résultat social, sans retraitement ni amortissement)."
+        }
+      ],
+      "explanation": "Méthode : (1) périmètre et méthodes à partir du pourcentage de contrôle (Bréhat 80 % et Corlay 57 % en intégration globale, Dinan 35 % en mise en équivalence), pourcentages d’intérêts pour le partage (80 %, 48 %, 30 %) ; (2) retraitements d’homogénéisation : élimination des amortissements dérogatoires (réserves 22 500, résultat 7 500, impôt différé passif 10 000) et retraitement obligatoire du crédit-bail de Corlay en règlement ANC 2020-01 ; (3) première consolidation de Bréhat : écarts d’évaluation 280 000, impôt différé passif 70 000, actif net identifiable 1 310 000, écart d’acquisition 152 000 amorti sur 10 ans ; impôts différés passifs résiduels au 31/12/N : 64 000 ; (4) éliminations : marge interne sur stock 22 500 (impôt différé actif 5 625, effet net −16 875 imputé au vendeur Bréhat) et dividende interne de 120 000 reclassé du résultat aux réserves ; (5) partage : résultat retraité de Bréhat 224 625, réserves consolidées issues de Bréhat 106 000, intérêts minoritaires 341 025, contribution au résultat part du groupe 164 500. Points de vigilance : pourcentage de contrôle et d’intérêts à ne pas confondre, écarts d’évaluation à 100 %, impôt différé sur chaque retraitement, séparation réserves / résultat, imputation des résultats internes au vendeur."
+    },
+    {
+      "id": "ue4-dossier-0002",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "reponses-risques-evalues",
+      "difficulty": 3,
+      "tags": [
+        "dossier type examen",
+        "commissariat aux comptes",
+        "indépendance",
+        "seuil de signification",
+        "ventes-clients",
+        "stocks",
+        "opinion",
+        "vérifications spécifiques"
+      ],
+      "source_ref": "C. com. art. L. 821-40 (désignation), L. 821-44 (mandat de six exercices), L. 821-25 et s. (déontologie et indépendance), L. 821-53 (certification), L. 821-54 (vérifications spécifiques), L. 821-56 (signalement à l’assemblée), art. L. 123-21 (principe de réalisation) ; CGI art. 283, 3 (TVA due du fait de sa facturation) ; code de déontologie (décret n° 2020-292) ; NEP 210, 240, 315, 320, 330, 450, 501, 510, 700, 9510 ; PCG comptes 355, 411, 416, 487, 491, 6817, 701, 7135",
+      "verified": true,
+      "estimated_seconds": 4800,
+      "total_points": 20,
+      "title": "Première mission de commissariat aux comptes chez Menuiseries Kervalec",
+      "context": "**Menuiseries Kervalec SAS**, installée près de Quimper, conçoit, fabrique et pose des menuiseries en aluminium (fenêtres, baies, vérandas) pour des promoteurs et des particuliers. La société, détenue à 70 % par sa présidente, Mme Kervalec, et à 30 % par un fonds régional, connaît une forte croissance depuis trois ans. Ses comptes n’ont jamais été audités.\n\nAyant franchi pour la première fois au 31/12/2025 les seuils légaux, la société a désigné le cabinet **Rance Audit**, commissaire aux comptes, lors de l’assemblée générale du 24 juin 2026 qui a approuvé les comptes 2025. L’exercice social coïncide avec l’année civile.\n\nVous êtes chef de mission chez Rance Audit. L’associée signataire, Mme Morvan, vous demande :\n\n- d’analyser les conditions d’acceptation de la mission et les questions d’indépendance ;\n- de fixer les seuils de la mission ;\n- d’identifier les risques et de concevoir les réponses d’audit sur les cycles ventes-clients et stocks ;\n- de chiffrer et de corriger les anomalies relevées lors de l’intervention finale de février 2027 ;\n- d’en tirer les conséquences sur l’opinion et sur les vérifications spécifiques.\n\n**Hypothèses** : taux d’impôt sur les sociétés de 25 % ; toutes les dépréciations envisagées sont fiscalement déductibles ; seuils légaux de désignation d’un commissaire aux comptes (deux sur trois, appréciés à la clôture) : total de bilan 5 M€, chiffre d’affaires hors taxes 10 M€, 50 salariés. Toutes les données utiles figurent dans les annexes 1 à 4.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Données clés et circonstances de la désignation",
+          "content": "| Indicateur | 31/12/2024 | 31/12/2025 | 2026 (comptes provisoires) |\n| --- | --- | --- | --- |\n| Chiffre d’affaires HT | 9,6 M€ | 12,8 M€ | 14,2 M€ |\n| Total du bilan | 4,7 M€ | 7,9 M€ | 8,6 M€ |\n| Effectif salarié | 46 | 58 | 62 |\n| Résultat courant avant impôt | 0,82 M€ | 1,02 M€ | 1,06 M€ |\n| Résultat net | 0,61 M€ | 0,76 M€ | 0,795 M€ |\n\n**Extraits du compte rendu de l’entretien d’acceptation (mai 2026)** :\n\n- La comptabilité est tenue, et les comptes annuels sont établis depuis 2018, par **Rance Expertise**, cabinet d’expertise comptable appartenant au même réseau que Rance Audit. Mme Kervalec « tient beaucoup à garder les mêmes interlocuteurs pour la comptabilité et pour l’audit, c’est plus simple ».\n- Mme Kervalec propose des honoraires d’audit de 38 000 € HT par an, majorés d’une **prime de 5 000 €** si le rapport est remis avant le 31 mars sans réserve, « pour rassurer le fonds régional ».\n- Le directeur commercial, M. Riou, perçoit une prime égale à 1 % du chiffre d’affaires facturé au-delà de 13,5 M€. Le contrat de prêt bancaire de 2025 prévoit un remboursement anticipé si le résultat net devient inférieur à 700 000 €."
+        },
+        {
+          "title": "Annexe 2 — Seuils retenus par le cabinet (politique interne)",
+          "content": "- Critère de référence retenu pour Kervalec : **résultat courant avant impôt prévisionnel 2026**, établi en juin 2026 à **1 100 000 €**.\n- Seuil de signification : **5 %** du critère de référence.\n- Seuil de planification : **70 %** du seuil de signification.\n- Seuil des anomalies manifestement insignifiantes : **5 %** du seuil de signification.\n- Le résultat définitif devant rester proche du prévisionnel, l’associée décide de ne pas réviser les seuils en fin de mission."
+        },
+        {
+          "title": "Annexe 3 — Constats de l’intervention finale (février 2027)",
+          "content": "**Constat 1 — Ventes** : la facture n° 26-1187 du 28 décembre 2026, de **96 000 € HT** (TVA 20 %), concerne les menuiseries de la résidence « Les Glénan ». Les menuiseries ont été fabriquées en décembre et sont restées dans l’entrepôt de Kervalec ; leur pose a eu lieu du 11 au 22 janvier 2027. Selon les conditions générales de vente, la propriété et les risques sont transférés au client à la réception des travaux posés. Le chiffre d’affaires a été comptabilisé en 2026 et les menuiseries, « déjà facturées », ont été exclues de l’inventaire physique du 31 décembre. Leur coût de production s’élève à **67 200 €**.\n\n**Constat 2 — Clients** : la société Bâtisseurs de l’Odet, cliente de Kervalec, a été placée en redressement judiciaire par jugement du 18 novembre 2026. La créance sur ce client s’élève à **90 000 € TTC** (TVA 20 %) ; elle figure en compte 411 sans dépréciation. Le mandataire judiciaire, interrogé, estime le taux de recouvrement probable des créances chirographaires à **20 %**. Kervalec a déclaré sa créance dans les délais.\n\n**Constat 3 — Stocks** : le stock de profilés de la gamme « Kerlis », arrêtée en septembre 2026, est évalué au coût d’achat de **48 000 €**. Un ferrailleur a proposé de racheter l’ensemble pour **12 000 €**, frais d’enlèvement à sa charge ; aucun autre débouché n’existe. Aucune dépréciation n’a été comptabilisée.\n\n**Autres constats** : erreurs d’imputation sur des frais de déplacement pour 1 900 € au total, sans autre anomalie relevée."
+        },
+        {
+          "title": "Annexe 4 — Position de la direction et projet de rapport de gestion",
+          "content": "**Réunion de synthèse du 2 mars 2027** : Mme Kervalec accepte de corriger les constats 1 et 3. Elle refuse en revanche de déprécier la créance sur Bâtisseurs de l’Odet : « ce client nous paiera, il nous l’a promis ». Aucun autre élément probant ne vient étayer cette affirmation.\n\n**Extraits du projet de rapport de gestion (établi avant la réunion, non mis à jour)** :\n\n> « Le chiffre d’affaires 2026 atteint 14,2 M€, en hausse de 11 % par rapport à 2025. Le résultat net ressort à 795 000 €. […] Délais de paiement : le tableau des factures fournisseurs reçues non réglées dont le terme est échu figure ci-après. »\n\nLe projet de rapport ne comporte aucune information sur les factures **émises** non réglées dont le terme est échu, alors que plusieurs créances clients échues sont présentes à la clôture."
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1-mandat",
+          "kind": "mcq",
+          "points": 1,
+          "prompt": "À l’aide du contexte et de l’annexe 1, quels exercices couvre le mandat de Rance Audit ?",
+          "options": [
+            "Les exercices 2025 à 2030",
+            "Les exercices 2026 à 2028 (mission de trois exercices)",
+            "Les exercices 2026 à 2031",
+            "Les exercices 2027 à 2032"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "Kervalec dépasse au 31/12/2025 les trois seuils (bilan 7,9 M€ > 5 M€, CA 12,8 M€ > 10 M€, 58 salariés > 50), alors qu’au 31/12/2024 elle n’en dépassait aucun : la désignation est obligatoire et le mandat est de six exercices (C. com. art. L. 821-44). Le premier exercice contrôlé est celui en cours lors de la nomination (2026) : le mandat couvre 2026 à 2031 (2026 + 5) et expire après l’assemblée statuant sur les comptes 2031. L’option 3 est la bonne. L’option 1 inclut l’exercice 2025, clos et déjà approuvé lors de la nomination. L’option 2 correspond à la mission de trois exercices (ALPE), réservée aux sociétés qui ne sont pas tenues individuellement de désigner un CAC. L’option 4 fait commencer le mandat à l’exercice suivant la nomination."
+        },
+        {
+          "id": "q2-acceptation-independance",
+          "kind": "open",
+          "points": 2,
+          "prompt": "À l’aide de l’annexe 1, analysez les conditions dans lesquelles Rance Audit peut accepter la mission. Vous examinerez notamment les deux propositions de Mme Kervalec et les diligences propres à une première mission.",
+          "model_answer": "Avant d’accepter, le cabinet vérifie qu’il dispose de la compétence et des moyens nécessaires, qu’aucune incompatibilité ni situation interdite ne l’empêche d’intervenir, et que la direction reconnaît ses responsabilités ; l’accord sur les termes de la mission est formalisé dans une lettre de mission (NEP 210).\n\n**Tenue de la comptabilité par Rance Expertise** : un commissaire aux comptes ne peut certifier des comptes qu’il a lui-même tenus ou établis (autorévision), et l’interdiction s’étend aux membres de son réseau ; aucune mesure de sauvegarde, même une séparation des équipes, ne la lève. Rance Audit ne peut donc accepter que si Rance Expertise cesse toute tenue de comptabilité et tout établissement des comptes de Kervalec à compter de l’exercice 2026, premier exercice certifié ; à défaut, il doit refuser. Le fait que Rance Expertise ait établi les comptes 2025, qui fournissent les soldes d’ouverture, constitue en outre une menace à analyser et à documenter (revue des soldes d’ouverture par une équipe indépendante du cabinet d’expertise).\n\n**Prime de 5 000 €** : il s’agit d’honoraires subordonnés à un événement (délai et absence de réserve), interdits sans sauvegarde possible : ils créent une menace d’intérêt personnel sur l’opinion. Les honoraires doivent être fixés d’après le volume de travail estimé (38 000 € HT peuvent être révisés si les travaux l’exigent) ; la prime doit être refusée.\n\n**Première mission** : les comptes n’ont jamais été audités ; le cabinet devra obtenir des éléments suffisants et appropriés sur les soldes d’ouverture au 1/1/2026 (stocks, créances, capitaux propres) et sur la permanence des méthodes (NEP 510), ce qui alourdit le budget de la première année. Enfin, la prime du directeur commercial et la clause du prêt sont des facteurs de risque de fraude à prendre en compte dès la planification.",
+          "key_points": [
+            "Autorévision : tenue de comptabilité et établissement des comptes par le réseau interdits, sans sauvegarde possible",
+            "Acceptation subordonnée à l’arrêt des travaux comptables de Rance Expertise dès l’exercice 2026, sinon refus",
+            "Prime de 5 000 € : honoraires conditionnels interdits ; honoraires fondés sur le volume de travail",
+            "Première mission : diligences sur les soldes d’ouverture et la permanence des méthodes (NEP 510)",
+            "Lettre de mission et identification précoce des facteurs de risque (prime commerciale, clause bancaire)"
+          ],
+          "explanation": "Le raisonnement attendu sépare les situations interdites par principe (autorévision, honoraires conditionnels), qui ne laissent pas de place à une analyse des sauvegardes, et les autres menaces, qui s’analysent. L’interdiction d’autorévision s’applique quelle que soit la taille de l’entité et s’étend au réseau. La première mission impose des travaux spécifiques sur les soldes d’ouverture."
+        },
+        {
+          "id": "q3-seuil-planification",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À l’aide de l’annexe 2, calculez le seuil de planification de la mission (en euros).",
+          "expected_value": 38500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Seuil de signification = 5 % × 1 100 000 = 55 000 €. Seuil de planification = 70 % × 55 000 = **38 500 €**. Seuil des anomalies manifestement insignifiantes = 5 % × 55 000 = 2 750 €. Erreurs types hors tolérance : 55 000 € (seuil de signification) ou 37 100 € (calcul sur le résultat courant définitif de 1 060 000 €, alors que la politique du cabinet retient le prévisionnel et que les seuils ne sont pas révisés)."
+        },
+        {
+          "id": "q4-risques-reponses",
+          "kind": "open",
+          "points": 2.5,
+          "prompt": "À l’aide des annexes 1 et 3, identifiez les risques d’anomalies significatives sur les cycles ventes-clients et stocks, en précisant les assertions concernées, et proposez pour chaque risque les procédures d’audit en réponse.",
+          "model_answer": "**Cycle ventes-clients**\n- *Risque de comptabilisation anticipée du chiffre d’affaires* (assertions : séparation des exercices, réalité). Facteurs : prime du directeur commercial fondée sur le chiffre d’affaires facturé au-delà de 13,5 M€, clause du prêt liée au résultat, croissance rapide ; la NEP 240 présume en outre un risque de fraude dans la comptabilisation des produits. Ce risque requiert une démarche particulière et des tests de détail. Réponses : test de séparation des exercices sur les factures de fin décembre et de début janvier, rapprochées des procès-verbaux de réception des travaux posés (le fait générateur selon les conditions générales) ; revue des avoirs émis en janvier ; procédures analytiques du chiffre d’affaires mensuel et de la marge ; contrôle des écritures manuelles passées en fin d’exercice.\n- *Risque d’évaluation des créances* (assertion : évaluation). Facteurs : clientèle de promoteurs exposée aux défaillances, créances échues à la clôture. Réponses : balance âgée et analyse des retards, examen des règlements postérieurs à la clôture, recherche des clients en procédure collective (informations légales, échanges avec la direction), circularisation d’un échantillon de clients, appréciation des dépréciations sur la base HT.\n\n**Cycle stocks**\n- *Risque d’évaluation* (assertion : évaluation) : gamme Kerlis arrêtée, produits finis et en-cours valorisés à un coût de production qu’il faut vérifier. Réponses : contrôle du calcul des coûts (charges incorporables, sous-activité), comparaison avec les prix de vente ou de cession postérieurs à la clôture, revue des articles à rotation lente ou issus de gammes arrêtées.\n- *Risque d’existence et de séparation des exercices* (assertions : existence, exhaustivité, séparation des exercices) : premier audit, stock significatif, biens facturés mais non livrés exclus de l’inventaire. Réponses : assistance à l’inventaire physique du 31/12/2026 avec comptages par sondages dans les deux sens, contrôle des derniers bons de livraison et de réception, rapprochement des produits facturés non livrés avec l’inventaire ; s’agissant d’une première mission, procédures sur le stock d’ouverture (NEP 510).",
+          "key_points": [
+            "Ventes : risque de comptabilisation anticipée (séparation des exercices, réalité) aggravé par la prime commerciale et la clause bancaire ; présomption NEP 240",
+            "Réponses ventes : test de cut-off rapproché des procès-verbaux de réception, avoirs de janvier, écritures manuelles de fin d’exercice",
+            "Clients : risque d’évaluation ; balance âgée, encaissements postérieurs, recherche des procédures collectives, dépréciation sur le HT",
+            "Stocks : risque d’évaluation (gamme arrêtée, coût de production) ; comparaison avec la valeur de réalisation",
+            "Stocks : existence et séparation des exercices ; assistance à l’inventaire, derniers mouvements, stock d’ouverture d’une première mission"
+          ],
+          "explanation": "Chaque risque doit être relié à un fait de l’énoncé, à une assertion et à une réponse précise (nature, calendrier, étendue des procédures, NEP 330). Les deux facteurs d’incitation (prime indexée sur le chiffre d’affaires, clause du prêt sur le résultat net) pèsent aussi sur les comptes pris dans leur ensemble : supervision renforcée et part d’imprévisibilité dans les procédures."
+        },
+        {
+          "id": "q5-assertion-constat1",
+          "kind": "mcq",
+          "points": 1,
+          "prompt": "À l’aide de l’annexe 3, quelle assertion le constat 1 met-il principalement en défaut ?",
+          "options": [
+            "L’exhaustivité des ventes",
+            "Les droits et obligations sur les créances",
+            "La séparation des exercices des ventes",
+            "L’évaluation des créances clients"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "La vente existe bien (le client a commandé et les travaux ont été réceptionnés en janvier 2027), mais elle a été rattachée à 2026 alors que le transfert de propriété et de risques, fait générateur selon les conditions générales, est intervenu en 2027 : c’est la séparation des exercices qui est en défaut (option 3). L’option 1 viserait des ventes omises, non des ventes anticipées. L’option 2 porte sur la propriété des créances, qui n’est pas en cause. L’option 4 concerne le risque de non-recouvrement, illustré par le constat 2 et non par le constat 1."
+        },
+        {
+          "id": "q6-ecriture-cut-off",
+          "kind": "journal_entry",
+          "points": 2,
+          "prompt": "À l’aide de l’annexe 3, passez au 31/12/2026 l’écriture de correction du constat 1 dans les comptes de Kervalec. La facture étant émise et la TVA qui y est mentionnée étant due du seul fait de sa facturation (CGI art. 283, 3), la créance client et la TVA ne sont pas modifiées : utilisez le compte 487 pour différer le produit et réintégrez les menuiseries en stock (comptes 355 et 7135).",
+          "date": "31/12/2026",
+          "entries": [
+            {
+              "account": "701",
+              "label": "Ventes de produits finis",
+              "debit": 96000,
+              "credit": 0
+            },
+            {
+              "account": "487",
+              "label": "Produits constatés d’avance",
+              "debit": 0,
+              "credit": 96000
+            },
+            {
+              "account": "355",
+              "label": "Stocks de produits finis",
+              "debit": 67200,
+              "credit": 0
+            },
+            {
+              "account": "7135",
+              "label": "Variation des stocks de produits",
+              "debit": 0,
+              "credit": 67200
+            }
+          ],
+          "explanation": "Le chiffre d’affaires de 96 000 € HT est différé en produits constatés d’avance (débit 701, crédit 487) car le transfert de propriété et de risques n’a eu lieu qu’à la réception de janvier 2027 (principe de réalisation, C. com. art. L. 123-21). Les menuiseries, encore dans l’entrepôt au 31/12/2026, appartenaient à Kervalec : elles sont réintégrées au stock pour leur coût de production (débit 355, crédit 7135 : 67 200 €). Incidence sur le résultat avant impôt : −96 000 + 67 200 = **−28 800 €**. La créance (115 200 € TTC) et la TVA collectée restent inchangées : la TVA mentionnée sur une facture est due du seul fait de sa facturation."
+        },
+        {
+          "id": "q7-depreciation-creance",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À l’aide de l’annexe 3 (constat 2), calculez la dépréciation à constituer sur la créance de Bâtisseurs de l’Odet au 31/12/2026 (en euros).",
+          "expected_value": 60000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "La dépréciation se calcule sur le montant hors taxes, car la TVA collectée sera récupérée en cas de perte définitive : 90 000 / 1,2 = 75 000 € HT. Perte probable : 1 − 20 % = 80 %. Dépréciation = 75 000 × 80 % = **60 000 €**. Erreurs types : 72 000 € (base TTC), 15 000 € (taux de recouvrement appliqué à la place du taux de perte), 75 000 € (dépréciation totale malgré le recouvrement attendu)."
+        },
+        {
+          "id": "q8-ecriture-creance",
+          "kind": "journal_entry",
+          "points": 2,
+          "prompt": "À l’aide de l’annexe 3 (constat 2) et de votre réponse précédente, passez au 31/12/2026 les écritures de correction proposées à la direction : transfert de la créance en clients douteux puis dépréciation (comptes 411, 416, 491 et 6817).",
+          "date": "31/12/2026",
+          "entries": [
+            {
+              "account": "416",
+              "label": "Clients douteux ou litigieux (Bâtisseurs de l’Odet)",
+              "debit": 90000,
+              "credit": 0
+            },
+            {
+              "account": "411",
+              "label": "Clients (Bâtisseurs de l’Odet)",
+              "debit": 0,
+              "credit": 90000
+            },
+            {
+              "account": "6817",
+              "label": "Dotations aux dépréciations des actifs circulants",
+              "debit": 60000,
+              "credit": 0
+            },
+            {
+              "account": "491",
+              "label": "Dépréciations des comptes de clients",
+              "debit": 0,
+              "credit": 60000
+            }
+          ],
+          "explanation": "La créance sur un client en redressement judiciaire est d’abord reclassée pour son montant TTC en clients douteux (débit 416, crédit 411 : 90 000 €), puis dépréciée sur la base HT à hauteur de la perte probable (débit 6817, crédit 491 : 60 000 €). La dépréciation est déductible (hypothèse de l’énoncé) ; elle réduirait le résultat net de 60 000 × 0,75 = 45 000 €."
+        },
+        {
+          "id": "q9-cumul-anomalies",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l’aide de l’annexe 3 et de vos réponses précédentes, calculez l’incidence cumulée des constats 1, 2 et 3 sur le résultat net 2026, après impôt (en euros, montant positif correspondant à la surévaluation du résultat). Les erreurs d’imputation sur frais de déplacement sont sans effet sur le résultat.",
+          "expected_value": 93600,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Constat 1 : surévaluation du résultat avant impôt de 96 000 − 67 200 = 28 800 €. Constat 2 : dépréciation omise de 60 000 €. Constat 3 : dépréciation du stock omise de 48 000 − 12 000 = 36 000 €. Cumul avant impôt : 28 800 + 60 000 + 36 000 = 124 800 €, soit plus de deux fois le seuil de signification (55 000 €). Après impôt à 25 % : 124 800 × 0,75 = **93 600 €**. Avec ces corrections, le résultat net passerait de 795 000 € à 701 400 €, tout près du seuil de 700 000 € de la clause du prêt, ce qui renforce le caractère sensible des anomalies. Erreurs types : 124 800 € (impôt oublié), 102 600 € (créance dépréciée sur le TTC : (28 800 + 72 000 + 36 000) × 0,75)."
+        },
+        {
+          "id": "q10-anomalie-stock",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "À l’aide des annexes 2 et 3 : l’anomalie de 36 000 € sur les stocks (constat 3) étant inférieure au seuil de signification, le commissaire aux comptes peut s’abstenir de la communiquer à la direction et de la cumuler avec les autres anomalies.",
+          "answer": false,
+          "explanation": "Faux. Seules les anomalies manifestement insignifiantes, inférieures ici à 2 750 € (5 % de 55 000 €), peuvent ne pas être cumulées (NEP 450). Toutes les autres anomalies relevées sont recensées, cumulées et communiquées en temps utile à la direction, qui est invitée à les corriger. L’anomalie de 36 000 € est d’ailleurs proche du seuil de planification (38 500 €) et, cumulée avec les deux autres, porte le total à 124 800 € avant impôt. Les erreurs d’imputation de 1 900 € sont, elles, sous le seuil des anomalies manifestement insignifiantes."
+        },
+        {
+          "id": "q11-opinion",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À l’aide des annexes 2 à 4, quelle opinion Rance Audit doit-il exprimer sur les comptes 2026 si les constats 1 et 3 sont corrigés et que la direction maintient son refus de déprécier la créance ?",
+          "options": [
+            "Certification sans réserve, avec une observation attirant l’attention sur le redressement judiciaire du client",
+            "Certification avec réserve pour désaccord",
+            "Refus de certifier pour désaccord",
+            "Certification avec réserve pour limitation"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "L’anomalie non corrigée (dépréciation omise de 60 000 € avant impôt, 45 000 € sur le résultat net et les capitaux propres) dépasse le seuil de signification de 55 000 € : elle est significative. Il s’agit d’un désaccord (le commissaire aux comptes dispose des éléments probants, la direction refuse de corriger), dont l’incidence est circonscrite au poste clients et chiffrable : certification avec réserve pour désaccord (option 2), le fondement de l’opinion indiquant les montants. L’option 1 est fausse : une observation ne peut pas remplacer une réserve pour une anomalie non corrigée. L’option 3 suppose une incidence diffuse, ce qui n’est pas le cas d’une créance isolée (90 000 € TTC pour un total de bilan de 8,6 M€). L’option 4 viserait une impossibilité de collecter des éléments probants ; ici, les éléments existent (estimation du mandataire)."
+        },
+        {
+          "id": "q12-verifications-specifiques",
+          "kind": "open",
+          "points": 2,
+          "prompt": "À l’aide de l’annexe 4, indiquez les diligences et les conclusions du commissaire aux comptes sur le projet de rapport de gestion, au titre des vérifications spécifiques, en tenant compte des corrections acceptées par la direction. Précisez l’incidence éventuelle sur l’opinion.",
+          "model_answer": "Au titre des vérifications spécifiques (C. com. art. L. 821-54 ; NEP 9510), le commissaire aux comptes vérifie la sincérité et la concordance avec les comptes annuels des informations données dans le rapport de gestion sur la situation financière et les comptes, et il atteste la sincérité et la concordance avec les comptes des informations relatives aux délais de paiement.\n\n**Concordance** : après correction des constats 1 et 3, le chiffre d’affaires 2026 s’établit à 14 104 000 € (14 200 000 − 96 000) et le résultat net à 746 400 € (795 000 − 48 600, soit 28 800 + 36 000 nets d’impôt). Les montants de 14,2 M€ et de 795 000 € ne concordent plus avec les comptes ; la hausse annoncée doit également être recalculée. Le commissaire aux comptes demande la mise à jour du rapport de gestion.\n\n**Délais de paiement** : l’information sur les factures émises non réglées dont le terme est échu, ventilée par tranches de retard, est obligatoire au même titre que celle sur les factures reçues ; son omission est une inexactitude à faire corriger.\n\n**Conclusion** : si la direction met à jour le rapport, le commissaire aux comptes conclut qu’il n’a pas d’observation à formuler sur la sincérité et la concordance de ces informations avec les comptes, à l’exception de l’incidence du point décrit dans le fondement de son opinion avec réserve (le résultat de 746 400 € intègre la créance non dépréciée). À défaut, il formule des observations dans la partie « Vérifications spécifiques » de son rapport, décrivant les défauts de concordance et l’omission, et les signale à l’assemblée. Ces constats n’ont **aucune incidence sur l’opinion** sur les comptes : une erreur du rapport de gestion donne lieu à une observation, pas à une réserve.",
+          "key_points": [
+            "Vérification de la sincérité et de la concordance avec les comptes (L. 821-54, NEP 9510)",
+            "Chiffres à mettre à jour après corrections : CA 14 104 000 € et résultat net 746 400 €",
+            "Omission des délais de paiement clients : inexactitude à faire corriger",
+            "À défaut de correction : observation dans les vérifications spécifiques et signalement à l’assemblée",
+            "Aucune modification de l’opinion sur les comptes du fait du rapport de gestion"
+          ],
+          "explanation": "Les vérifications spécifiques ne donnent pas lieu à une opinion mais à une conclusion (absence d’observation ou observations). Le candidat doit recalculer les chiffres corrigés (CA −96 000 ; résultat net −(28 800 + 36 000) × 0,75 = −48 600), relever l’omission du tableau des délais clients, et ne pas confondre observation sur le rapport de gestion et réserve sur les comptes."
+        }
+      ],
+      "explanation": "Méthode : (1) désignation obligatoire (trois seuils dépassés au 31/12/2025), mandat de six exercices 2026-2031 ; (2) acceptation : autorévision du réseau (tenue et établissement des comptes) et honoraires conditionnels interdits, diligences de première mission sur les soldes d’ouverture ; (3) seuils : signification 55 000 €, planification 38 500 €, anomalies insignifiantes 2 750 € ; (4) risques : comptabilisation anticipée du chiffre d’affaires (prime commerciale, clause bancaire, présomption NEP 240), évaluation des créances et des stocks, existence et séparation des exercices des stocks, avec procédures en réponse ; (5) anomalies : vente anticipée (−28 800 € avant impôt, écriture 701/487 et 355/7135), créance douteuse (dépréciation de 60 000 € sur le HT), stock obsolète (36 000 €), cumul net d’impôt 93 600 € ; (6) opinion : refus de déprécier la créance, anomalie significative circonscrite, certification avec réserve pour désaccord ; vérifications spécifiques : rapport de gestion à mettre en concordance (CA 14 104 000 €, résultat net 746 400 €) et délais de paiement clients à ajouter, sinon observations, sans incidence sur l’opinion."
+    }
+  ]
+}

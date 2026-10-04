@@ -185,6 +185,26 @@
       "source_ref": "CGI art. 39-1-3°, 212 I et 212 bis",
       "verified": true,
       "estimated_seconds": 840
+    },
+    {
+      "id": "ue1-fin-interets-0006",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "financement-garanties",
+      "notion": "fiscalite-financement-interets",
+      "difficulty": 2,
+      "tags": [
+        "entreprises liées",
+        "taux de marché",
+        "art. 212 I"
+      ],
+      "statement": "La SAS Garonne a emprunté 1 000 000 € à sa société mère pendant toute l'année N, au taux de 6 %, alors que le taux plafond de l'article 39-1-3° du CGI est de 4,5 % pour l'exercice. Elle produit une offre de prêt d'une banque indépendante, faite à la même date, au taux de 6 % pour une opération de même montant, même durée et mêmes garanties. Ses charges financières nettes sont inférieures à 3 M€ et elle n'est pas sous-capitalisée. Les 60 000 € d'intérêts sont intégralement déductibles.",
+      "answer": true,
+      "justification": "Vrai : pour les intérêts servis à une entreprise liée, le taux plafond peut être dépassé si la société prouve qu'elle aurait pu obtenir le même taux d'un établissement financier indépendant dans des conditions analogues (CGI art. 212 I).",
+      "explanation": "Le prêteur étant une entreprise liée (société mère), la déduction n'est pas limitée au taux de l'article 39-1-3° lorsque l'emprunteuse démontre que le taux pratiqué correspond à celui qu'elle aurait pu obtenir auprès d'établissements ou d'organismes financiers indépendants dans des conditions analogues (CGI art. 212 I). L'offre bancaire comparable apporte cette preuve : 1 000 000 × 6 % = 60 000 € sont déductibles au regard du taux. Il reste à appliquer la limitation générale de l'article 212 bis, qui ne joue pas ici (charges financières nettes inférieures à 3 M€, pas de sous-capitalisation). Sans cette preuve, la fraction excédentaire, 1 000 000 × (6 % − 4,5 %) = 15 000 €, aurait été réintégrée.",
+      "source_ref": "CGI art. 212 I (intérêts servis aux entreprises liées, preuve du taux de marché) ; art. 39-1-3° (taux plafond) ; art. 212 bis (limitation générale)",
+      "verified": true,
+      "estimated_seconds": 60
     }
   ]
 }

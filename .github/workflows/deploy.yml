@@ -1,5 +1,5 @@
 # CI + déploiement GitHub Pages de la PWA (Vite, base /dscg-trainer/).
-# - Toutes les branches et les PR vers main : lint, validation du contenu, tests, build.
+# - Toutes les branches et les PR vers main : lint, validation du contenu, tests, build, tests de bout en bout.
 # - main (push ou lancement manuel) : publication sur GitHub Pages.
 name: CI & déploiement Pages
 
@@ -38,6 +38,12 @@ jobs:
       - run: npm run validate
       - run: npm test
       - run: npm run build
+
+      # Parcours dans un vrai navigateur (Chromium mobile) sur le build de production.
+      - name: Tests de bout en bout
+        run: |
+          npx playwright install --with-deps chromium
+          npm run test:e2e
 
       # Fallback SPA (routes profondes) et désactivation de Jekyll.
       - name: Préparer dist pour GitHub Pages

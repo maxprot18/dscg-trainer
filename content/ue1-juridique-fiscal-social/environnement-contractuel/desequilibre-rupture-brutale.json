@@ -202,6 +202,26 @@
       "source_ref": "C. com. L442-1 I et L442-4 ; C. civ. art. 1171",
       "estimated_seconds": 720,
       "verified": true
+    },
+    {
+      "id": "ue1-contrat-deseq-0006",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "environnement-contractuel",
+      "notion": "desequilibre-rupture-brutale",
+      "difficulty": 2,
+      "tags": [
+        "rupture brutale",
+        "préavis",
+        "relation commerciale établie"
+      ],
+      "statement": "Un distributeur qui met fin à une relation commerciale établie depuis vingt ans avec un fournisseur, en lui accordant par écrit un préavis d'une durée suffisante au regard de cette ancienneté, n'engage pas sa responsabilité sur le fondement de l'article L442-1 II du Code de commerce.",
+      "answer": true,
+      "justification": "L'article L442-1 II sanctionne la rupture brutale, c'est-à-dire sans préavis écrit suffisant ; la rupture elle-même, précédée d'un préavis suffisant, reste libre.",
+      "explanation": "Nul n'est tenu de maintenir indéfiniment une relation commerciale : ce qui engage la responsabilité, c'est l'absence de préavis écrit tenant compte notamment de la durée de la relation et des usages (C. com. L442-1 II). Si le préavis accordé est suffisant, la rupture, même d'une relation de vingt ans, n'est pas fautive sur ce fondement ; la loi précise d'ailleurs que la responsabilité ne peut pas être engagée pour durée insuffisante du préavis dès lors qu'un préavis de dix-huit mois a été respecté. Le fournisseur ne pourrait agir qu'en démontrant une autre faute (abus dans l'exercice du droit de rompre, par exemple). L'indemnisation, lorsqu'elle est due, porte d'ailleurs sur la marge perdue pendant le seul préavis manquant, ce qui confirme que c'est la brutalité, et non la rupture, qui est réparée.",
+      "source_ref": "C. com. art. L442-1 II (rupture brutale d’une relation commerciale établie, préavis écrit, plafond de dix-huit mois)",
+      "verified": true,
+      "estimated_seconds": 45
     }
   ]
 }

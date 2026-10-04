@@ -226,6 +226,32 @@
       "explanation": "Le cas illustre la détermination du résultat d'ensemble (somme algébrique et neutralisation des plus-values intra-groupe), la mesure de l'économie d'impôt et le rôle de la convention d'intégration, notamment lors de la sortie d'une filiale.",
       "source_ref": "CGI art. 223 B, 223 F et 223 R",
       "estimated_seconds": 900
+    },
+    {
+      "id": "ue1-groupes-resens-0006",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "integration-fiscale-resultat-ensemble",
+      "difficulty": 3,
+      "tags": [
+        "résultat d'ensemble",
+        "neutralisations",
+        "provision intra-groupe",
+        "abandon de créance"
+      ],
+      "statement": "La SA Aulne est la société mère d'un groupe intégré comprenant les SAS Bouleau et Cèdre, détenues à 100 % depuis plusieurs exercices (exercices civils). Résultats fiscaux de N déterminés par chaque société comme si elle était imposée séparément : Aulne + 500 000 € ; Bouleau + 200 000 € ; Cèdre − 150 000 €. Informations sur N :\n- le 1er octobre N, Aulne a cédé à Bouleau une machine avec une plus-value de 60 000 € ; Bouleau amortit la machine linéairement sur 5 ans à compter de cette date ;\n- Aulne a doté une provision déductible de 40 000 € pour dépréciation d'une créance qu'elle détient sur Cèdre ;\n- Aulne a consenti à Cèdre un abandon de créance à caractère financier de 50 000 €, qu'elle a réintégré dans son résultat individuel ; Cèdre l'a compris dans son résultat.\nAucun déficit d'ensemble antérieur n'est reportable. Calculez le résultat d'ensemble de N, en euros.",
+      "expected_value": 533000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Somme algébrique : 500 000 + 200 000 − 150 000 = 550 000 €. Rectifications : plus-value de cession intra-groupe neutralisée, − 60 000 € ; supplément d'amortissement pratiqué par Bouleau sur cette plus-value réintégré, + 60 000 / 5 × 3/12 = + 3 000 € ; dotation à la provision sur une créance d'une société du groupe réintégrée, + 40 000 € ; abandon de créance intra-groupe : aucune rectification, la neutralisation ayant été supprimée pour les exercices ouverts depuis 2019 (il reste soumis au droit commun dans chaque résultat individuel). Résultat d'ensemble = 550 000 − 60 000 + 3 000 + 40 000 = 533 000 € (IS au taux de 25 % : 133 250 €). Erreurs types hors tolérance : 483 000 € (neutralisation de l'abandon), 530 000 € (oubli du supplément d'amortissement), 493 000 € (oubli de la provision).",
+      "source_ref": "CGI art. 223 B (somme algébrique, réintégration des provisions intra-groupe, fin de la neutralisation des abandons de créances et subventions pour les exercices ouverts depuis le 1er janvier 2019) ; art. 223 F (plus-values de cession entre sociétés du groupe, supplément d'amortissement)",
+      "verified": true,
+      "estimated_seconds": 300
     }
   ]
 }

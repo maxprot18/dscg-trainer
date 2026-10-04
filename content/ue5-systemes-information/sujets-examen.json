@@ -1,0 +1,347 @@
+{
+  "exercises": [
+    {
+      "id": "ue5-dossier-0001",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "erp-progiciels-integres",
+      "difficulty": 3,
+      "tags": ["dossier", "ERP", "alignement stratégique", "grille multicritère", "TCO", "VAN", "chemin critique", "conduite du changement", "gouvernance"],
+      "source_ref": "PCG art. 213-8 et 611-1 à 611-5 (règl. ANC 2014-03), comptes 205, 2183, 44562, 404 ; COBIT 2019 (domaine EDM) ; ISO/IEC 38500 ; modèle d'alignement de Henderson et Venkatraman ; méthode PERT (chemin critique)",
+      "verified": true,
+      "estimated_seconds": 5400,
+      "total_points": 20,
+      "title": "Projet ERP et gouvernance du SI",
+      "context": "La société **Brunelle Inox SAS**, installée près de Roanne, conçoit et fabrique des équipements de cuisine professionnelle en acier inoxydable (plans de travail, fours, cellules de refroidissement) vendus aux restaurateurs, aux hôtels et aux cuisines collectives. Elle emploie 410 salariés répartis entre deux usines et un entrepôt logistique, et a réalisé en 2025 un chiffre d'affaires de 72 M€, dont 18 % à l'export.\n\nLe plan stratégique 2026-2030, validé par le conseil d'administration en juin 2026, repose sur trois axes : augmenter de 40 % le chiffre d'affaires export (Allemagne, Benelux, Espagne), réduire le délai de livraison de six à trois semaines et lancer une offre de maintenance des équipements connectés.\n\nLe système d'information s'est construit par strates : un logiciel de gestion commerciale développé en interne il y a dix-huit ans, une comptabilité sur un progiciel distinct, une gestion de production (GPAO) achetée en 2011 et de nombreux tableurs. Les ressaisies entre ces outils sont quotidiennes. Le service informatique (quatre personnes) est rattaché au directeur administratif et financier, M. Garnier.\n\nLa directrice générale, Mme Lefort, envisage le remplacement de ces applications par un progiciel de gestion intégré (ERP). Trois solutions ont été présélectionnées après un appel d'offres. Contrôleur de gestion récemment recruté(e), vous êtes chargé(e) de préparer le dossier de décision du comité de direction d'octobre 2026 : diagnostic d'alignement, choix de la solution, évaluation économique, planning, comptabilisation et organisation du projet. Les données utiles figurent dans les annexes 1 à 5.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Constats du diagnostic du SI (entretiens de septembre 2026)",
+          "content": "- **Commercial** : le logiciel de gestion commerciale ne gère qu'une devise (euro) et qu'une langue ; les devis export sont établis sur tableur puis ressaisis. Un seul informaticien connaît son code ; il part à la retraite en juin 2027.\n- **Production** : la GPAO arrive en fin de support éditeur le 31 décembre 2027 ; elle ne calcule pas les besoins nets (pas de module de planification des besoins), d'où des stocks de sécurité élevés et des ruptures fréquentes.\n- **Comptabilité** : les factures de vente sont intégrées chaque soir par un fichier d'export ; 2 à 3 % des lignes sont rejetées et corrigées à la main.\n- **Données** : 18 % des références articles existent en double (même article codé différemment par les deux usines).\n- **Organisation** : aucune instance ne réunit la direction générale, les directions métiers et l'informatique ; les priorités informatiques sont fixées par le DAF seul, au fil des demandes.\n- **Sécurité** : les sauvegardes sont réalisées chaque nuit mais leur restauration n'a jamais été testée."
+        },
+        {
+          "title": "Annexe 2 — Grille de choix multicritère (notes sur 10 attribuées par le groupe de travail)",
+          "content": "| Critère | Pondération | Solution A : ERP sous licence, installé sur serveurs internes | Solution B : ERP en mode SaaS | Solution C : progiciels spécialisés reliés par interfaces |\n| --- | --- | --- | --- | --- |\n| Couverture fonctionnelle (production, export, maintenance) | 30 % | 8 | 7 | 6 |\n| Coût total de possession sur 5 ans | 25 % | 7 | 6 | 8 |\n| Capacité d'évolution et d'intégration | 20 % | 7 | 8 | 5 |\n| Sécurité et maîtrise des données | 15 % | 8 | 7 | 6 |\n| Délai de déploiement | 10 % | 6 | 8 | 7 |\n\nLa solution retenue est celle qui obtient le score pondéré le plus élevé, sous réserve de l'analyse économique."
+        },
+        {
+          "title": "Annexe 3 — Coûts des solutions A et B et gains attendus (hors taxes)",
+          "content": "**Solution A (licence)** — coûts initiaux, décaissés à la date 0 : licences 420 000 € ; intégration et paramétrage par l'intégrateur 380 000 € ; serveurs et matériel 90 000 € ; formation des utilisateurs 70 000 €. Coûts annuels (années 1 à 5) : maintenance éditeur égale à 18 % du prix des licences ; hébergement et exploitation 30 000 € ; équipe interne (administrateur fonctionnel, utilisateurs clés) 45 000 €.\n\n**Solution B (SaaS)** — coûts initiaux, à la date 0 : intégration et paramétrage 300 000 € ; formation 70 000 €. Coûts annuels (années 1 à 5) : abonnement 260 000 € ; équipe interne 35 000 €.\n\n**Gains annuels attendus (années 1 à 5), identiques pour A et B** :\n- arrêt des anciens logiciels (maintenance, licences et prestations) : 120 000 € ;\n- suppression des ressaisies : 3 équivalents temps plein redéployés, coût complet 50 000 € chacun ;\n- marge sur ventes supplémentaires grâce à la baisse des ruptures : 50 000 €.\n\n**Gain ponctuel** : la planification des besoins nets doit réduire le stock moyen de 400 000 € ; cette trésorerie est libérée une seule fois, en année 1.\n\n**Hypothèses** : flux supposés encaissés ou décaissés en fin d'année ; coût du capital 9 % ; durée d'utilisation 5 ans ; pas de valeur résiduelle ; l'analyse est conduite avant impôt."
+        },
+        {
+          "title": "Annexe 4 — Tâches du projet (solution A), durées en semaines",
+          "content": "| Code | Tâche | Durée | Antériorités |\n| --- | --- | --- | --- |\n| A | Cadrage et cahier des charges détaillé | 6 | — |\n| B | Contrat avec l'intégrateur | 4 | A |\n| C | Ateliers de conception du paramétrage | 8 | B |\n| D | Installation des serveurs | 3 | B |\n| E | Paramétrage et développements spécifiques | 10 | C, D |\n| F | Nettoyage et reprise des données | 6 | C |\n| G | Tests et recette par les utilisateurs | 5 | E, F |\n| H | Formation des utilisateurs | 4 | E |\n| I | Démarrage (bascule) | 1 | G, H |\n\nLe projet doit démarrer le 4 janvier 2027. Le directeur industriel souhaite un démarrage de tous les modules et des deux usines en une seule fois (« big bang ») ; l'intégrateur propose un démarrage par lots."
+        },
+        {
+          "title": "Annexe 5 — Extraits du compte rendu du groupe de travail et éléments comptables",
+          "content": "**Points soulevés en réunion** :\n- les chefs d'atelier redoutent un contrôle accru de leur activité et une perte de leurs « fichiers maison » ;\n- les commerciaux demandent de reproduire à l'identique les écrans de l'ancien logiciel (estimation de l'intégrateur : 1 400 jours de développements spécifiques) ;\n- la saison haute (commandes des cuisines collectives) court de septembre à novembre ;\n- aucun budget de formation n'a été prévu au-delà de la formation initiale.\n\n**Éléments comptables (solution A)** : les factures de l'éditeur (licences, 420 000 € HT), de l'intégrateur (paramétrage et intégration nécessaires à la mise en service, 380 000 € HT ; formation, 70 000 € HT, facturée séparément) et du fournisseur de matériel (serveurs, 90 000 € HT) sont toutes reçues à la mise en service. TVA au taux de 20 %."
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1-alignement",
+          "kind": "mcq",
+          "prompt": "À l'aide du contexte et de l'annexe 1, indiquez le constat qui illustre le plus directement un défaut d'alignement stratégique du SI (au sens de Henderson et Venkatraman).",
+          "points": 1,
+          "options": [
+            "La GPAO arrive en fin de support éditeur le 31 décembre 2027.",
+            "Les sauvegardes nocturnes n'ont jamais fait l'objet d'un test de restauration.",
+            "Le logiciel commercial ne gère ni plusieurs devises ni plusieurs langues alors que le plan stratégique vise +40 % de chiffre d'affaires export.",
+            "Les factures de vente sont intégrées chaque soir en comptabilité par un fichier d'export."
+          ],
+          "answer": [2],
+          "explanation": "L'alignement stratégique est la cohérence entre la stratégie métier et la capacité du SI à la servir. L'option 3 montre une stratégie (développement export) irréalisable avec l'outil commercial actuel : c'est le défaut d'alignement typique. L'option 1 relève de l'obsolescence et de la pérennité du SI ; l'option 2, de la sécurité (sauvegardes non testées) ; l'option 4, d'un défaut d'intégration technique (interfaces et rejets), qui plaide pour un ERP mais ne met pas en cause la stratégie."
+        },
+        {
+          "id": "q2-score-pondere",
+          "kind": "numeric",
+          "prompt": "À l'aide de l'annexe 2, calculez le score pondéré (sur 10) de la solution arrivée en tête. Arrondissez à deux décimales.",
+          "points": 2,
+          "expected_value": 7.35,
+          "tolerance": { "kind": "absolute", "value": 0.02 },
+          "unit": "points sur 10",
+          "decimals": 2,
+          "explanation": "Score = Σ note × pondération. A = 8 × 0,30 + 7 × 0,25 + 7 × 0,20 + 8 × 0,15 + 6 × 0,10 = 2,40 + 1,75 + 1,40 + 1,20 + 0,60 = **7,35**. B = 2,10 + 1,50 + 1,60 + 1,05 + 0,80 = 7,05. C = 1,80 + 2,00 + 1,00 + 0,90 + 0,70 = 6,40. La solution A arrive en tête avec 7,35."
+        },
+        {
+          "id": "q3-sensibilite",
+          "kind": "true_false",
+          "prompt": "Annexe 2. Le DAF propose de porter la pondération du coût total de possession à 35 % et de ramener celle de la couverture fonctionnelle à 20 %, les autres pondérations restant inchangées. Affirmation : « avec ces pondérations, la solution A perd la première place ».",
+          "points": 1.5,
+          "answer": false,
+          "explanation": "Nouveaux scores : A = 8 × 0,20 + 7 × 0,35 + 7 × 0,20 + 8 × 0,15 + 6 × 0,10 = 1,60 + 2,45 + 1,40 + 1,20 + 0,60 = 7,25 ; B = 1,40 + 2,10 + 1,60 + 1,05 + 0,80 = 6,95 ; C = 1,20 + 2,80 + 1,00 + 0,90 + 0,70 = 6,60. A reste en tête : le classement est robuste à ce changement de pondération, ce qui conforte la recommandation (l'écart entre A et C se réduit toutefois de 0,95 à 0,65 point)."
+        },
+        {
+          "id": "q4-tco-a",
+          "kind": "numeric",
+          "prompt": "À l'aide de l'annexe 3, calculez le coût total de possession (TCO) de la solution A sur 5 ans, en euros (somme non actualisée des coûts initiaux et des coûts annuels).",
+          "points": 2,
+          "expected_value": 1713000,
+          "tolerance": { "kind": "absolute", "value": 1 },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Coûts initiaux = 420 000 + 380 000 + 90 000 + 70 000 = 960 000 €. Coûts annuels = maintenance 18 % × 420 000 = 75 600 € + hébergement 30 000 € + équipe interne 45 000 € = 150 600 €, soit 753 000 € sur 5 ans. TCO = 960 000 + 753 000 = **1 713 000 €**. Oublier la maintenance (1 335 000 €) ou les coûts internes (1 488 000 €) sous-estime le coût réel : la phase d'exploitation pèse ici 44 % du TCO."
+        },
+        {
+          "id": "q5-ecart-tco",
+          "kind": "numeric",
+          "prompt": "Annexe 3. Calculez le TCO sur 5 ans de la solution B, puis indiquez de combien il dépasse celui de la solution A (écart B − A, en euros).",
+          "points": 1.5,
+          "expected_value": 132000,
+          "tolerance": { "kind": "absolute", "value": 1 },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "TCO B = coûts initiaux 300 000 + 70 000 = 370 000 € + coûts annuels (260 000 + 35 000) × 5 = 1 475 000 €, soit **1 845 000 €**. Écart B − A = 1 845 000 − 1 713 000 = **132 000 €**. Le SaaS demande moins d'investissement initial (370 000 € contre 960 000 €) mais coûte plus cher sur 5 ans : sa note de coût plus faible dans la grille est cohérente. Le SaaS reste intéressant pour la trésorerie de départ et l'absence d'infrastructure à gérer."
+        },
+        {
+          "id": "q6-van",
+          "kind": "numeric",
+          "prompt": "À l'aide de l'annexe 3, calculez la valeur actuelle nette (VAN) du projet fondé sur la solution A, au taux de 9 %, sur 5 ans. Arrondissez à l'euro.",
+          "points": 2.5,
+          "expected_value": 65879,
+          "tolerance": { "kind": "relative", "value": 0.01 },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Investissement initial (date 0) = 960 000 €. Gains annuels = 120 000 + 3 × 50 000 + 50 000 = 320 000 € ; coûts annuels = 150 600 € ; flux net annuel = 169 400 € (années 1 à 5). Gain ponctuel : 400 000 € de stock libéré en année 1.\nFacteur d'annuité = [1 − 1,09⁻⁵] ÷ 0,09 = 3,88965.\nVAN = −960 000 + 169 400 × 3,88965 + 400 000 ÷ 1,09 = −960 000 + 658 907 + 366 972 = **+65 879 €**.\nErreurs typiques : oublier la baisse de stock (VAN = −301 093 €) ou ne pas l'actualiser (VAN = +98 907 €). La VAN positive confirme que le projet crée de la valeur, mais elle dépend fortement du gain de stock : ce gain doit être suivi après le démarrage."
+        },
+        {
+          "id": "q7-ecriture-immobilisation",
+          "kind": "journal_entry",
+          "prompt": "À l'aide de l'annexe 5, enregistrez en une seule écriture, à la mise en service, l'acquisition des immobilisations de la solution A (factures de l'éditeur, de l'intégrateur pour le paramétrage et du fournisseur de matériel). Utilisez les comptes 205, 2183, 44562 et un compte unique 404 pour les trois fournisseurs. N'enregistrez pas la facture de formation.",
+          "points": 2,
+          "entries": [
+            { "account": "205", "label": "Logiciel ERP : licences et paramétrage nécessaire à la mise en service", "debit": 800000, "credit": 0 },
+            { "account": "2183", "label": "Serveurs et matériel informatique", "debit": 90000, "credit": 0 },
+            { "account": "44562", "label": "TVA déductible sur immobilisations", "debit": 178000, "credit": 0 },
+            { "account": "404", "label": "Fournisseurs d'immobilisations", "debit": 0, "credit": 1068000 }
+          ],
+          "explanation": "Le coût d'acquisition du logiciel comprend le prix d'achat et les coûts directement attribuables nécessaires à sa mise en service (PCG art. 213-8) ; la solution informatique inclut ses paramétrages et constitue une immobilisation incorporelle (PCG art. 611-1 et 611-2) : licences 420 000 € + paramétrage et intégration 380 000 € = 800 000 € au compte 205. Toutes les factures étant reçues à la mise en service, aucun passage par le compte 232 (immobilisations incorporelles en cours) n'est nécessaire. Les serveurs (90 000 €) sont une immobilisation corporelle (2183). TVA = 20 % × 890 000 = 178 000 € (44562). Total TTC = 1 068 000 € au crédit du 404. La formation (70 000 €) n'est pas directement attribuable à la mise en état de fonctionnement du logiciel : elle reste une charge de l'exercice, comme la maintenance annuelle."
+        },
+        {
+          "id": "q8-chemin-critique",
+          "kind": "numeric",
+          "prompt": "À l'aide de l'annexe 4, déterminez la durée minimale du projet en semaines (durée du chemin critique).",
+          "points": 2,
+          "expected_value": 34,
+          "tolerance": { "kind": "absolute", "value": 0 },
+          "unit": "semaines",
+          "decimals": 0,
+          "explanation": "Dates au plus tôt (début → fin) : A 0 → 6 ; B 6 → 10 ; C 10 → 18 ; D 10 → 13 ; E commence après C et D, soit max(18 ; 13) = 18 → 28 ; F 18 → 24 ; G commence après E et F, soit max(28 ; 24) = 28 → 33 ; H 28 → 32 ; I commence après G et H, soit 33 → **34 semaines**. Chemin critique : A-B-C-E-G-I (6 + 4 + 8 + 10 + 5 + 1 = 34). Marges : D 5 semaines, F 4 semaines, H 1 semaine. Démarrage le 4 janvier 2027 → bascule vers la fin août 2027, juste avant la saison haute (septembre à novembre) : tout retard sur une tâche critique ferait tomber la bascule en pleine saison."
+        },
+        {
+          "id": "q9-risques-changement",
+          "kind": "open",
+          "prompt": "À l'aide des annexes 1, 4 et 5, identifiez les principaux risques du projet ERP et proposez les mesures de conduite du changement et de maîtrise des risques que vous recommandez à la direction générale.",
+          "points": 3,
+          "model_answer": "Le projet présente quatre risques majeurs. Le premier est la dérive du périmètre et du coût : les commerciaux demandent de reproduire l'ancien logiciel, ce qui représenterait 1 400 jours de spécifiques. Ces développements renchériraient le projet puis chaque montée de version et feraient perdre l'intérêt du progiciel standard. Il faut aligner les processus sur le standard, réserver le spécifique à ce qui différencie réellement l'entreprise et soumettre chaque demande à un arbitrage du comité de pilotage.\n\nLe deuxième risque tient au calendrier : le chemin critique de 34 semaines amène la bascule fin août 2027, à la veille de la saison haute, et la GPAO n'est plus maintenue après décembre 2027. Un démarrage « big bang » des deux usines concentre le risque ; un démarrage par lots (finance et achats d'abord, puis une usine pilote) ou une bascule après novembre, avec une marge de sécurité, est préférable.\n\nLe troisième risque porte sur les données : 18 % de références en double. La reprise doit être précédée d'un nettoyage et d'un référentiel article unique sous la responsabilité d'un propriétaire de données métier, faute de quoi les erreurs se propageront à tous les modules de la base unique.\n\nLe quatrième risque est humain : résistance des chefs d'atelier, départ en retraite du seul informaticien qui connaît l'ancien logiciel, formation limitée au démarrage. La conduite du changement passe par un sponsor visible (la directrice générale), une communication sur les finalités (délais, export) plutôt que sur le contrôle, l'implication d'utilisateurs clés dans les ateliers, un plan de formation continu avec un budget dédié et un transfert de connaissances organisé avant juin 2027.",
+          "key_points": [
+            "Développements spécifiques : risque de coût, de délai et de maintenance ; priorité au standard et arbitrage des demandes",
+            "Calendrier : bascule fin août 2027 près de la saison haute, GPAO hors support fin 2027 ; démarrage par lots préférable au big bang",
+            "Qualité des données : 18 % de doublons à nettoyer avant la reprise, référentiel article unique et propriétaire des données",
+            "Facteur humain : sponsor, communication sur les finalités, utilisateurs clés associés, formation continue budgétée",
+            "Dépendance à une personne clé : transfert de connaissances avant le départ en retraite de juin 2027"
+          ],
+          "explanation": "Une bonne réponse relie chaque risque à un fait des annexes (spécifiques, saison haute, doublons, résistance, départ en retraite) et propose une mesure précise pour chacun. Rappeler le paradoxe de Solow est un plus : les gains chiffrés en annexe 3 (ETP redéployés, baisse de stock) ne se matérialiseront que si les processus et les compétences évoluent avec l'outil."
+        },
+        {
+          "id": "q10-gouvernance",
+          "kind": "open",
+          "prompt": "À l'aide du contexte et de l'annexe 1, proposez une organisation de la gouvernance du SI et du pilotage du projet ERP pour Brunelle Inox, en vous appuyant sur les référentiels de gouvernance que vous connaissez.",
+          "points": 2.5,
+          "model_answer": "Aujourd'hui, les priorités informatiques sont fixées par le DAF seul, au fil des demandes : la gouvernance du SI, qui relève de la direction générale (ISO/IEC 38500), n'est pas exercée. Je recommande de créer un comité stratégique SI présidé par la directrice générale et réunissant les directions commerciale, industrielle, financière et le responsable informatique. Selon le domaine EDM de COBIT, il évalue les besoins, oriente les choix au regard du plan 2026-2030 et surveille la valeur créée et les risques. Il adopte un schéma directeur pluriannuel qui ordonne les projets (ERP, offre de maintenance connectée) et valide le budget.\n\nPour le projet ERP, la maîtrise d'ouvrage revient aux métiers : un directeur de projet métier, épaulé par des utilisateurs clés de chaque processus, exprime les besoins, arbitre le paramétrage et prononce la recette. La maîtrise d'œuvre associe le service informatique et l'intégrateur. Un comité de pilotage mensuel (sponsor, MOA, MOE, intégrateur) suit l'avancement, le budget et les risques ; il est seul habilité à accepter un développement spécifique ou un changement de périmètre. La gestion des changements et des niveaux de service après démarrage peut s'appuyer sur ITIL, et des indicateurs (respect du budget et du planning, avancement de la reprise des données, satisfaction des utilisateurs, part du budget consacrée aux projets plutôt qu'au maintien) alimentent un tableau de bord du SI. Enfin, rattacher le responsable informatique à la direction générale plutôt qu'au DAF faciliterait une vision transversale.",
+          "key_points": [
+            "Constat : priorités fixées par le DAF seul, gouvernance non exercée par la direction générale",
+            "Comité stratégique SI présidé par la DG et schéma directeur aligné sur le plan 2026-2030 (COBIT EDM, ISO/IEC 38500)",
+            "Projet : MOA métier avec utilisateurs clés, MOE informatique et intégrateur, comité de pilotage qui arbitre périmètre et spécifiques",
+            "Indicateurs de pilotage et tableau de bord du SI",
+            "Rattachement de l'informatique à la direction générale pour une vision transversale"
+          ],
+          "explanation": "On attend la distinction entre gouvernance (évaluer, orienter, surveiller : direction générale) et management (DSI, projet), les instances concrètes (comité stratégique, schéma directeur, comité de pilotage), la répartition MOA / MOE et le lien avec les constats de l'annexe 1. Citer COBIT pour la gouvernance et ITIL pour la gestion des services après démarrage, sans les confondre."
+        }
+      ],
+      "explanation": "Le dossier enchaîne la démarche complète d'un projet ERP. Diagnostic : le défaut d'alignement se lit dans l'écart entre le plan stratégique (export) et l'outil commercial mono-devise. Choix : la grille pondérée place la solution A en tête (7,35 contre 7,05 et 6,40), classement qui résiste à une hausse du poids du coût. Évaluation : TCO A = 1 713 000 €, TCO B = 1 845 000 € (écart 132 000 €) ; VAN de A à 9 % = +65 879 €, positive grâce au gain ponctuel de stock (400 000 € actualisés). Planning : chemin critique A-B-C-E-G-I de 34 semaines, bascule fin août 2027 juste avant la saison haute. Comptabilisation : 205 pour 800 000 € (licences et paramétrage), 2183 pour 90 000 €, TVA 178 000 €, 404 pour 1 068 000 € ; formation en charges. Organisation : comité stratégique SI présidé par la DG, MOA métier, comité de pilotage qui arbitre les spécifiques, conduite du changement et nettoyage des données avant la reprise."
+    },
+    {
+      "id": "ue5-dossier-0002",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "protection-donnees-rgpd-si",
+      "difficulty": 3,
+      "tags": ["dossier", "MCD", "MLD", "normalisation", "SQL", "analyse de risques", "ALE", "RGPD", "violation de données", "PCA", "RTO", "RPO"],
+      "source_ref": "Règlement (UE) 2016/679 (RGPD), art. 5, 28, 32, 33, 34 et 83, considérant 150 ; Code des assurances art. L. 12-10-1 (loi n° 2023-22 du 24 janvier 2023) ; ISO/IEC 27005 ; ISO 22301 ; méthode Merise (MCD, MLD) ; norme ISO/IEC 9075 (SQL)",
+      "verified": true,
+      "estimated_seconds": 4800,
+      "total_points": 20,
+      "title": "Données, sécurité et conformité",
+      "context": "**Vélorama SAS**, basée à Lyon, propose la location longue durée de vélos à assistance électrique, avec entretien inclus, aux particuliers et aux entreprises de la région Auvergne-Rhône-Alpes. Elle compte 9 200 abonnés et a réalisé en 2025 un chiffre d'affaires de 14,6 M€. Elle est détenue à 100 % par le groupe Mobilis, dont le chiffre d'affaires mondial consolidé 2025 s'élève à 640 M€.\n\nLe SI repose sur une application de gestion des abonnements développée par un prestataire et hébergée chez un hébergeur français, sous contrat de sous-traitance. La base de données relationnelle contient les abonnés (identité, adresse, courriel, IBAN pour le prélèvement des loyers), les contrats, les vélos et les options souscrites. Chaque vélo est équipé d'un traceur antivol dont les positions sont conservées dans la base pendant douze mois.\n\nLe mardi 15 septembre 2026 à 16 h 30, un rançongiciel a chiffré le serveur de gestion ; la DSI l'a constaté à 16 h 45. L'analyse a ensuite montré que le fichier des abonnés avait été copié vers l'extérieur avant le chiffrement.\n\nLe directeur général, M. Benali, vous confie, en tant que consultant(e) au sein d'un cabinet d'expertise comptable, une mission en trois volets : fiabiliser le modèle de données et les requêtes utilisées par le contrôle de gestion, chiffrer les risques de sécurité et la mesure de protection envisagée, et préciser les obligations de Vélorama après la violation de données ainsi que les améliorations à apporter à son plan de continuité. Les données utiles figurent dans les annexes 1 à 5.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Extrait du modèle conceptuel des données et table du service atelier",
+          "content": "**Entités** (identifiant souligné dans le dossier technique, indiqué ici en premier) :\n- ABONNE (num_abonne, nom, ville, type_abonne, courriel, iban)\n- CONTRAT (num_contrat, date_debut, loyer_mensuel, statut)\n- VELO (num_velo, modele, date_mise_service)\n- OPTION (code_option, libelle, prix_mensuel)\n\n**Associations** :\n- ABONNE (0,n) — souscrit — (1,1) CONTRAT\n- CONTRAT (1,1) — porte sur — (0,n) VELO\n- CONTRAT (0,n) — comprend (date_ajout) — (0,n) OPTION\n\n**Table utilisée par le service atelier** (fichier créé hors de la base principale) :\nINTERVENTION (num_intervention, date_intervention, num_velo, modele_velo, technicien, montant)\n\n| num_intervention | date_intervention | num_velo | modele_velo | technicien | montant |\n| --- | --- | --- | --- | --- | --- |\n| I-501 | 2026-06-02 | V12 | Urbis 500 | Morel | 85 |\n| I-502 | 2026-06-03 | V15 | Urbis 500 | Diallo | 40 |\n| I-503 | 2026-06-09 | V12 | Urbis 50 | Morel | 120 |"
+        },
+        {
+          "title": "Annexe 2 — Extrait des tables ABONNE et CONTRAT (au 31 août 2026)",
+          "content": "**ABONNE**\n\n| num_abonne | nom | ville | type_abonne |\n| --- | --- | --- | --- |\n| A01 | Martin | Lyon | Particulier |\n| A02 | Batiplus | Lyon | Entreprise |\n| A03 | Roux | Grenoble | Particulier |\n| A04 | Datacom | Grenoble | Entreprise |\n| A05 | Petit | Annecy | Particulier |\n| A06 | Nguyen | Lyon | Particulier |\n\n**CONTRAT** (num_abonne et num_velo sont des clés étrangères ; num_abonne n'est jamais vide)\n\n| num_contrat | num_abonne | num_velo | date_debut | loyer_mensuel | statut |\n| --- | --- | --- | --- | --- | --- |\n| C101 | A01 | V12 | 2025-03-01 | 89 | Actif |\n| C102 | A02 | V15 | 2025-06-01 | 79 | Actif |\n| C103 | A02 | V16 | 2025-06-01 | 79 | Actif |\n| C104 | A02 | V17 | 2026-01-15 | 79 | Résilié |\n| C105 | A03 | V21 | 2025-09-01 | 99 | Résilié |\n| C106 | A04 | V22 | 2026-02-01 | 85 | Actif |\n| C107 | A04 | V23 | 2026-02-01 | 85 | Actif |\n| C108 | A04 | V24 | 2026-02-01 | 85 | Actif |\n| C109 | A05 | V30 | 2026-04-01 | 95 | Actif |\n| C110 | A03 | V31 | 2026-05-01 | 99 | Actif |\n\n**Requête utilisée par le contrôle de gestion** :\n\n```\nSELECT A.ville, SUM(C.loyer_mensuel) AS loyers, COUNT(*) AS nb\nFROM ABONNE A INNER JOIN CONTRAT C ON A.num_abonne = C.num_abonne\nWHERE C.statut = 'Actif'\nGROUP BY A.ville\nHAVING COUNT(*) >= 2\nORDER BY loyers DESC;\n```"
+        },
+        {
+          "title": "Annexe 3 — Cartographie des risques et mesure de protection envisagée",
+          "content": "**Matrice des risques** (vraisemblance et gravité notées de 1 à 4 ; niveau de risque = vraisemblance × gravité) :\n\n| Scénario | Vraisemblance | Gravité |\n| --- | --- | --- |\n| S1 — Rançongiciel sur le serveur de gestion | 3 | 4 |\n| S2 — Fraude au faux changement de RIB d'un fournisseur | 3 | 3 |\n| S3 — Panne matérielle chez l'hébergeur | 2 | 3 |\n| S4 — Fuite du fichier abonnés par un salarié | 2 | 4 |\n| S5 — Déni de service sur le site de souscription | 4 | 2 |\n\n**Évaluation quantitative du scénario S1** : valeur de l'actif exposé (données, reconstitution, perte d'exploitation) 1 500 000 € ; facteur d'exposition 40 % ; taux annuel d'occurrence estimé 0,25 (une fois tous les quatre ans).\n\n**Mesure envisagée** : outil de détection et de réponse sur les postes et serveurs, authentification multifacteur et sauvegardes hors ligne immuables, pour un coût total de 38 000 € par an. Avec cette mesure, le taux annuel d'occurrence tomberait à 0,1 et le facteur d'exposition à 15 %."
+        },
+        {
+          "title": "Annexe 4 — Chronologie de l'incident du 15 septembre 2026",
+          "content": "- **Mardi 15 septembre, 16 h 30** : chiffrement du serveur de gestion ; message de rançon affiché.\n- **16 h 45** : la DSI constate l'incident ; le responsable informatique éteint aussitôt tous les serveurs.\n- **Mercredi 16 septembre, 10 h** : l'analyse confirme que le fichier des abonnés (9 200 personnes : identité, adresse, courriel, IBAN non chiffrés, historique des positions des vélos sur douze mois) a été copié vers un serveur externe le 15 septembre à 15 h 50.\n- **Mercredi 16 septembre, 11 h** : l'hébergeur indique qu'il avait détecté un trafic sortant anormal le mardi à 16 h, sans en avertir Vélorama.\n- **Jeudi 17 septembre** : le directeur général hésite à notifier la CNIL tant que les données n'ont pas été publiées ; il envisage de payer la rançon, « l'assurance remboursera ».\n\nLe contrat d'assurance cyber de Vélorama couvre les pertes liées aux atteintes aux systèmes informatiques ; aucune plainte n'a encore été déposée."
+        },
+        {
+          "title": "Annexe 5 — Plan de continuité : objectifs et sauvegardes",
+          "content": "**Bilan d'impact sur l'activité (application de gestion des abonnements)** : durée maximale d'interruption admissible (RTO) 12 heures ; perte de données maximale admissible (RPO) 4 heures.\n\n**Sauvegardes** : deux sauvegardes complètes par jour, à 1 h et à 13 h, sur un serveur de l'hébergeur situé dans la même salle que le serveur de production et connecté en permanence au réseau. Aucune alerte n'est envoyée en cas d'échec.\n\n**Constat après l'incident** : la sauvegarde du mardi 15 septembre à 13 h avait échoué ; celle du même jour à 1 h était valide et n'avait pas été chiffrée. Le service a été rétabli le mercredi 16 septembre à 20 h 30. Le plan de reprise n'avait jamais été testé."
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1-mld",
+          "kind": "mcq",
+          "prompt": "À l'aide de l'annexe 1, indiquez le modèle logique relationnel correctement déduit du MCD (clé primaire en premier, clé étrangère précédée de #). La table VELO (num_velo, modele, date_mise_service) est commune aux quatre propositions.",
+          "points": 1.5,
+          "options": [
+            "ABONNE (num_abonne, nom, ville, type_abonne, courriel, iban, #num_contrat) ; CONTRAT (num_contrat, date_debut, loyer_mensuel, statut, #num_velo) ; OPTION (code_option, libelle, prix_mensuel) ; COMPREND (#num_contrat, #code_option, date_ajout)",
+            "ABONNE (num_abonne, nom, ville, type_abonne, courriel, iban) ; CONTRAT (num_contrat, date_debut, loyer_mensuel, statut, #num_velo) ; SOUSCRIT (#num_abonne, #num_contrat) ; OPTION (code_option, libelle, prix_mensuel, #num_contrat, date_ajout)",
+            "ABONNE (num_abonne, nom, ville, type_abonne, courriel, iban) ; CONTRAT (num_contrat, date_debut, loyer_mensuel, statut, #num_abonne, #num_velo) ; OPTION (code_option, libelle, prix_mensuel) ; COMPREND (#num_contrat, #code_option, date_ajout)",
+            "ABONNE (num_abonne, nom, ville, type_abonne, courriel, iban) ; CONTRAT (num_contrat, date_debut, loyer_mensuel, statut, #num_abonne, #num_velo, #code_option, date_ajout) ; OPTION (code_option, libelle, prix_mensuel)"
+          ],
+          "answer": [2],
+          "explanation": "Associations père-fils (souscrit, porte sur) : CONTRAT, côté (1,1), reçoit les clés étrangères #num_abonne et #num_velo, sans table d'association. Association n-n (comprend) : nouvelle table COMPREND dont la clé primaire est composée de #num_contrat et #code_option, et qui porte date_ajout. L'option 3 respecte ces règles. L'option 1 fait migrer la clé dans le mauvais sens (#num_contrat dans ABONNE : un abonné ne pourrait avoir qu'un contrat) et perd le lien abonné-contrat dans CONTRAT. L'option 2 crée une table pour une association père-fils et place #num_contrat dans OPTION, ce qui interdit qu'une option figure dans plusieurs contrats. L'option 4 loge l'association n-n dans CONTRAT : un contrat ne pourrait comprendre qu'une option."
+        },
+        {
+          "id": "q2-normalisation",
+          "kind": "mcq",
+          "prompt": "À l'aide de l'annexe 1, qualifiez la table INTERVENTION du service atelier (clé primaire : num_intervention).",
+          "points": 1.5,
+          "options": [
+            "Elle viole la première forme normale, car un même vélo apparaît sur plusieurs lignes.",
+            "Elle viole la deuxième forme normale, car modele_velo ne dépend que d'une partie de la clé.",
+            "Elle est normalisée en troisième forme normale : chaque attribut dépend de num_intervention.",
+            "Elle viole la troisième forme normale, car modele_velo dépend de num_velo, qui n'est pas la clé."
+          ],
+          "answer": [3],
+          "explanation": "La clé primaire est simple (num_intervention) : la table est en 2FN dès lors qu'elle est en 1FN, et elle est en 1FN (valeurs atomiques, pas de groupe répétitif ; la répétition d'un vélo sur plusieurs lignes n'est pas un groupe répétitif). En revanche, num_intervention → num_velo → modele_velo est une dépendance transitive : la 3FN est violée (option 4). L'anomalie est visible dans l'extrait : le vélo V12 est noté « Urbis 500 » puis « Urbis 50 ». Il faut supprimer modele_velo de la table et faire de num_velo une clé étrangère vers VELO. L'option 2 est impossible avec une clé simple ; l'option 3 ignore la dépendance transitive."
+        },
+        {
+          "id": "q3-resultat-requete",
+          "kind": "numeric",
+          "prompt": "À l'aide de l'annexe 2, exécutez la requête du contrôle de gestion sur l'extrait fourni et indiquez la valeur de la colonne « loyers » sur la première ligne du résultat, en euros.",
+          "points": 2.5,
+          "expected_value": 354,
+          "tolerance": { "kind": "absolute", "value": 0.5 },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "La jointure interne rattache chaque contrat à son abonné (A06, sans contrat, disparaît). WHERE ne garde que les contrats actifs : C104 et C105 (résiliés) sont exclus. Regroupement par ville : Lyon = C101 89 + C102 79 + C103 79 = 247 € (3 contrats) ; Grenoble = C106, C107, C108 (3 × 85 = 255) + C110 99 = 354 € (4 contrats) ; Annecy = 95 € (1 contrat). HAVING COUNT(*) >= 2 écarte Annecy. ORDER BY loyers DESC place Grenoble en tête : **354 €**. Sans le filtre WHERE, on obtiendrait 453 € pour Grenoble (C105 compté), erreur classique."
+        },
+        {
+          "id": "q4-requete-sans-contrat",
+          "kind": "mcq",
+          "prompt": "À l'aide de l'annexe 2, le service commercial veut la liste des abonnés qui n'ont souscrit aucun contrat débutant en 2026 (sur l'extrait : A01 et A06). Quelle requête donne ce résultat ?",
+          "points": 1.5,
+          "options": [
+            "SELECT A.num_abonne, A.nom FROM ABONNE A LEFT JOIN CONTRAT C ON A.num_abonne = C.num_abonne WHERE C.num_contrat IS NULL;",
+            "SELECT A.num_abonne, A.nom FROM ABONNE A INNER JOIN CONTRAT C ON A.num_abonne = C.num_abonne WHERE C.date_debut < '2026-01-01';",
+            "SELECT num_abonne, nom FROM ABONNE WHERE num_abonne NOT IN (SELECT num_abonne FROM CONTRAT WHERE date_debut BETWEEN '2026-01-01' AND '2026-12-31');",
+            "SELECT A.num_abonne, A.nom FROM ABONNE A INNER JOIN CONTRAT C ON A.num_abonne = C.num_abonne WHERE C.date_debut BETWEEN '2026-01-01' AND '2026-12-31' GROUP BY A.num_abonne, A.nom HAVING COUNT(*) = 0;"
+          ],
+          "answer": [2],
+          "explanation": "L'option 3 exclut les abonnés présents dans la liste des contrats débutant en 2026 (A02, A03, A04, A05) et renvoie A01 et A06 ; num_abonne n'étant jamais vide dans CONTRAT, le NOT IN est sûr. L'option 1 ne renvoie que les abonnés sans aucun contrat (A06) et oublie A01. L'option 2 renvoie les abonnés ayant au moins un contrat antérieur à 2026 (A01, A02 deux fois, A03), y compris A02 et A03 qui ont aussi un contrat en 2026, et oublie A06. L'option 4 ne renvoie rien : la jointure interne et le WHERE ne conservent que des abonnés ayant au moins un contrat en 2026, donc aucun groupe ne compte zéro ligne."
+        },
+        {
+          "id": "q5-matrice-risques",
+          "kind": "mcq",
+          "prompt": "À l'aide de l'annexe 3, indiquez le scénario à traiter en priorité selon la matrice des risques.",
+          "points": 1.5,
+          "options": [
+            "S5 — Déni de service sur le site de souscription",
+            "S1 — Rançongiciel sur le serveur de gestion",
+            "S4 — Fuite du fichier abonnés par un salarié",
+            "S2 — Fraude au faux changement de RIB d'un fournisseur"
+          ],
+          "answer": [1],
+          "explanation": "Niveaux de risque (vraisemblance × gravité) : S1 = 3 × 4 = 12 ; S2 = 3 × 3 = 9 ; S3 = 2 × 3 = 6 ; S4 = 2 × 4 = 8 ; S5 = 4 × 2 = 8. S1 (option 2) est prioritaire, et l'incident du 15 septembre l'a confirmé. S5 (option 1) a la vraisemblance la plus forte mais une gravité faible (8) ; S4 (option 3) a la gravité maximale mais une vraisemblance moyenne (8) ; S2 (option 4) arrive deuxième avec 9."
+        },
+        {
+          "id": "q6-ale",
+          "kind": "numeric",
+          "prompt": "À l'aide de l'annexe 3, calculez l'espérance de perte annuelle (ALE) du scénario S1 avant mise en place de la mesure, en euros.",
+          "points": 1.5,
+          "expected_value": 150000,
+          "tolerance": { "kind": "absolute", "value": 1 },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Perte unitaire (SLE) = valeur de l'actif × facteur d'exposition = 1 500 000 × 40 % = 600 000 €. ALE = SLE × taux annuel d'occurrence = 600 000 × 0,25 = **150 000 €**. Prendre la perte unitaire (600 000 €) pour l'ALE revient à supposer un sinistre par an."
+        },
+        {
+          "id": "q7-gain-net-mesure",
+          "kind": "numeric",
+          "prompt": "À l'aide de l'annexe 3, calculez le gain net annuel procuré par la mesure envisagée (baisse de l'ALE diminuée du coût annuel de la mesure), en euros.",
+          "points": 2,
+          "expected_value": 89500,
+          "tolerance": { "kind": "absolute", "value": 1 },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "ALE après mesure = 1 500 000 × 15 % × 0,1 = 225 000 × 0,1 = 22 500 €. Baisse d'ALE = 150 000 − 22 500 = 127 500 €. Gain net = 127 500 − 38 000 = **89 500 € par an** : la mesure est économiquement justifiée (elle le resterait jusqu'à un coût annuel de 127 500 €). Comparer le coût à l'ALE avant seulement (150 000 − 38 000 = 112 000 €) est l'erreur classique : il faut raisonner sur la baisse d'ALE. La mesure agit à la fois sur la fréquence (détection, authentification multifacteur) et sur l'ampleur des dégâts (sauvegardes immuables)."
+        },
+        {
+          "id": "q8-plafond-sanction",
+          "kind": "numeric",
+          "prompt": "Contexte et annexe 4. L'absence de chiffrement des IBAN et le défaut de sécurité du serveur relèvent de l'obligation de sécurité de l'article 32 du RGPD. Calculez le montant maximal de l'amende administrative encourue par Vélorama pour ce manquement, en euros.",
+          "points": 1.5,
+          "expected_value": 12800000,
+          "tolerance": { "kind": "absolute", "value": 1 },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Un manquement à l'article 32 (sécurité) relève du plafond de 10 M€ ou 2 % du chiffre d'affaires annuel mondial de l'exercice précédent, le montant le plus élevé étant retenu (art. 83 §4). Le chiffre d'affaires à retenir est celui de l'entreprise au sens du droit de la concurrence, c'est-à-dire du groupe Mobilis (considérant 150) : 2 % × 640 M€ = 12,8 M€ > 10 M€. Plafond : **12 800 000 €**. Erreurs : 2 % du chiffre d'affaires de la seule filiale (292 000 €), plafond fixe de 10 M€, ou plafond de 4 % (25,6 M€) réservé aux principes, bases légales, droits des personnes et transferts (art. 83 §5) : il ne s'appliquerait que si l'autorité retenait aussi un manquement au principe de sécurité de l'article 5 §1 f, ce que la question exclut en visant le seul article 32."
+        },
+        {
+          "id": "q9-perte-donnees",
+          "kind": "numeric",
+          "prompt": "À l'aide des annexes 4 et 5, calculez la durée de données perdues lors de l'incident (délai entre la dernière sauvegarde valide et le chiffrement), en heures décimales.",
+          "points": 1.5,
+          "expected_value": 15.5,
+          "tolerance": { "kind": "absolute", "value": 0.1 },
+          "unit": "heures",
+          "decimals": 1,
+          "explanation": "La sauvegarde de 13 h ayant échoué, la dernière sauvegarde valide est celle du mardi à 1 h. Perte de données = 16 h 30 − 1 h = **15,5 heures**, très au-delà du RPO de 4 heures. Retenir la sauvegarde planifiée de 13 h (3,5 h) est l'erreur classique : la perte se mesure depuis la dernière sauvegarde réussie. Le dispositif était de toute façon incompatible avec le RPO : deux sauvegardes par jour exposent jusqu'à 12 heures de perte même sans échec."
+        },
+        {
+          "id": "q10-obligations-rgpd",
+          "kind": "open",
+          "prompt": "À l'aide du contexte et de l'annexe 4, exposez les obligations de Vélorama à la suite de la violation de données et répondez aux intentions du directeur général (notification, rançon, assurance). Précisez la responsabilité de l'hébergeur.",
+          "points": 2.5,
+          "model_answer": "La copie du fichier des abonnés est une violation de données personnelles (atteinte à la confidentialité) : Vélorama, responsable du traitement, doit la notifier à la CNIL dans les meilleurs délais et au plus tard 72 heures après en avoir pris connaissance (RGPD art. 33). Le chiffrement du serveur, qui rend les données des abonnés indisponibles, est déjà une violation (atteinte à la disponibilité) : Vélorama en a connaissance dès le constat du mardi 15 septembre à 16 h 45, et la confirmation de l'exfiltration le mercredi à 10 h ne fait qu'en aggraver la nature, sans reporter le point de départ. La notification doit donc intervenir au plus tard le vendredi 18 septembre à 16 h 45. Attendre une éventuelle publication des données n'est pas une option : l'obligation naît dès qu'il existe un risque pour les personnes, et la notification peut être complétée ensuite.\n\nLes données exposées (IBAN non chiffrés, historique de géolocalisation révélant les déplacements) font peser un risque élevé de fraude et d'atteinte à la vie privée : les 9 200 abonnés doivent être informés dans les meilleurs délais (art. 34), en termes clairs (nature de la violation, conséquences probables, mesures prises, conseils de vigilance sur les prélèvements et l'hameçonnage, contact du délégué ou du responsable). L'incident doit être documenté dans le registre des violations.\n\nPayer la rançon n'est pas recommandé par les autorités et ne garantit ni la restitution ni la non-divulgation des données. Surtout, l'indemnisation par l'assurance au titre d'une cyberattaque est subordonnée au dépôt d'une plainte dans les 72 heures suivant la connaissance de l'atteinte (Code des assurances art. L. 12-10-1) : la plainte doit être déposée sans attendre, au plus tard le vendredi 18 septembre.\n\nL'hébergeur, sous-traitant, devait avertir Vélorama dans les meilleurs délais après avoir détecté le trafic anormal (art. 33 §2) et respecter les obligations de sécurité prévues au contrat (art. 28 et 32) : son silence engage sa responsabilité contractuelle, mais il ne décharge pas Vélorama, qui reste responsable de la notification. Enfin, la conservation de douze mois de positions et le stockage d'IBAN en clair devront être revus (minimisation, limitation de la conservation, chiffrement).",
+          "key_points": [
+            "Notification à la CNIL au plus tard 72 heures après la prise de connaissance, sans attendre une publication (art. 33)",
+            "Risque élevé (IBAN en clair, géolocalisation) : information des 9 200 abonnés dans les meilleurs délais (art. 34) et documentation de l'incident",
+            "Rançon déconseillée ; plainte dans les 72 heures obligatoire pour être indemnisé par l'assurance (art. L. 12-10-1 du Code des assurances)",
+            "Hébergeur sous-traitant : devait alerter dans les meilleurs délais (art. 33 §2, art. 28) ; Vélorama reste responsable",
+            "Remédiation : chiffrement des IBAN, réduction de la durée de conservation des positions (art. 5 et 32)"
+          ],
+          "explanation": "La réponse doit dater les délais à partir des faits de l'annexe 4, justifier le risque élevé par la nature des données (financières et de localisation), corriger les deux erreurs du directeur général (attendre la publication, compter sur l'assurance sans plainte) et situer la responsabilité de l'hébergeur sans lui transférer celle du responsable du traitement. Éteindre tous les serveurs (annexe 4) peut aussi être relevé : il fallait isoler les machines du réseau sans les éteindre, pour préserver les traces utiles à l'enquête."
+        },
+        {
+          "id": "q11-continuite",
+          "kind": "open",
+          "prompt": "À l'aide des annexes 4 et 5, évaluez le dispositif de continuité de Vélorama au regard de ses objectifs (RTO, RPO) et formulez vos recommandations.",
+          "points": 2.5,
+          "model_answer": "Le dispositif n'a atteint aucun des deux objectifs fixés par le bilan d'impact. Côté RTO, le service a été interrompu du mardi 16 h 30 au mercredi 20 h 30, soit 28 heures, contre 12 heures admissibles. Côté RPO, la perte de données atteint 15,5 heures, contre 4 heures admissibles, parce que la sauvegarde de 13 h avait échoué sans alerte ; même sans cet échec, deux sauvegardes par jour exposent à 12 heures de perte, ce qui est incompatible avec le RPO.\n\nLes causes sont identifiables : fréquence de sauvegarde inadaptée, absence de supervision des sauvegardes, copie située dans la même salle et connectée en permanence au réseau (exposée au même sinistre et au même rançongiciel), plan de reprise jamais testé.\n\nJe recommande d'abord d'aligner la fréquence sur le RPO : sauvegarde ou réplication au moins toutes les 4 heures, idéalement une réplication continue de la base avec journalisation des transactions. Ensuite, appliquer la règle 3-2-1 complétée d'une copie hors ligne ou immuable : trois copies, deux supports, une copie hors site, une copie déconnectée que le rançongiciel ne peut pas atteindre. Il faut aussi superviser chaque sauvegarde avec une alerte en cas d'échec et tester régulièrement les restaurations. Pour respecter le RTO de 12 heures, il convient de prévoir dans le PRA un environnement de secours prêt à l'emploi (chez l'hébergeur sur un autre site), un ordre de redémarrage et des rôles définis, puis de le tester au moins une fois par an. Le PCA doit enfin prévoir un mode dégradé (prise des souscriptions et des demandes d'entretien sur formulaire) et une procédure de crise : isoler sans éteindre, alerter, notifier. Ces exigences, ainsi que l'obligation d'alerte immédiate, doivent figurer dans le contrat avec l'hébergeur.",
+          "key_points": [
+            "RTO non respecté : 28 heures d'interruption contre 12 heures admissibles",
+            "RPO non respecté : 15,5 heures de données perdues contre 4 heures ; deux sauvegardes par jour sont structurellement insuffisantes",
+            "Causes : sauvegarde non supervisée, copie sur le même site et connectée, PRA jamais testé",
+            "Recommandations : fréquence alignée sur le RPO, règle 3-2-1 avec copie hors ligne ou immuable, alertes et tests de restauration",
+            "PRA testé avec site de secours, mode dégradé du PCA et engagements contractuels de l'hébergeur"
+          ],
+          "explanation": "On attend une comparaison chiffrée avec les objectifs (28 h contre 12 h ; 15,5 h contre 4 h), un diagnostic des causes tiré de l'annexe 5 et des recommandations reliées à chaque cause, en distinguant PCA (continuer en mode dégradé) et PRA (redémarrer le SI)."
+        }
+      ],
+      "explanation": "Le dossier mobilise trois blocs de l'UE 5. Données : le MCD donne CONTRAT (…, #num_abonne, #num_velo) et une table COMPREND pour l'association n-n ; la table INTERVENTION viole la 3FN (modele_velo dépend de num_velo) ; la requête renvoie Grenoble en tête avec 354 € de loyers actifs ; les abonnés sans contrat 2026 s'obtiennent par NOT IN, pas par une jointure interne. Sécurité : S1 est le risque prioritaire (12) ; ALE avant = 150 000 €, après = 22 500 €, gain net de la mesure = 89 500 € par an. Conformité : notification CNIL sous 72 heures sans attendre une publication, information des abonnés (risque élevé), plainte sous 72 heures pour l'assurance, plafond d'amende de 12,8 M€ calculé sur le chiffre d'affaires du groupe. Continuité : 15,5 h de données perdues et 28 h d'interruption, contre un RPO de 4 h et un RTO de 12 h ; il faut aligner les sauvegardes sur le RPO, appliquer la règle 3-2-1 avec copie hors ligne, superviser et tester."
+    }
+  ]
+}

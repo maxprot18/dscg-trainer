@@ -74,6 +74,139 @@
       "source_ref": "Exchange rate and price competitiveness: foreign-currency price of exports = domestic price × exchange rate (foreign currency per unit of domestic currency)",
       "verified": true,
       "estimated_seconds": 45
+    },
+    {
+      "id": "ue6-eco-trade-0004",
+      "type": "numeric",
+      "ue": "UE6",
+      "theme": "economie-regulations",
+      "notion": "international-trade-globalisation",
+      "difficulty": 2,
+      "tags": [
+        "terms of trade",
+        "price indices"
+      ],
+      "statement": "In 2024, Kestria's export price index stood at 104 and its import price index at 98 (base 2015 = 100). In 2025, export prices rose by 3% and import prices by 12%, mainly because of higher energy prices. Calculate Kestria's terms of trade index for 2025, rounded to one decimal place.",
+      "expected_value": 97.6,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.1
+      },
+      "unit": "index points",
+      "decimals": 1,
+      "explanation": "Export price index 2025 = 104 × 1.03 = 107.12; import price index 2025 = 98 × 1.12 = 109.76. Terms of trade = export price index ÷ import price index × 100 = 107.12 ÷ 109.76 × 100 = 97.6 (it was 104 ÷ 98 × 100 = 106.1 in 2024). Below 100, a given volume of exports now buys fewer imports than in the base year: Kestria's terms of trade have deteriorated. Classic errors: inverting the ratio (109.76 ÷ 107.12 × 100 = 102.5), or subtracting growth rates from 100 (100 + 3 − 12 = 91).",
+      "source_ref": "Terms of trade = export price index ÷ import price index × 100 (UNCTAD / IMF definition of the net barter terms of trade)",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue6-eco-trade-0005",
+      "type": "case_study",
+      "ue": "UE6",
+      "theme": "economie-regulations",
+      "notion": "international-trade-globalisation",
+      "difficulty": 2,
+      "tags": [
+        "balance of payments",
+        "current account",
+        "CBAM",
+        "trade balance"
+      ],
+      "title": "Lindmark's external accounts and the EU carbon border adjustment",
+      "context": "Lindmark is a non-EU country whose main trading partner is the European Union. Its central bank has published the following balance of payments figures for last year (hypotheses, in €bn):\n- exports of goods: 180; imports of goods: 205;\n- exports of services: 70; imports of services: 48;\n- primary income (net, mainly dividends paid to foreign investors): −6;\n- secondary income (net, mainly workers' remittances sent abroad): −4.\n\nSteel accounts for 30% of Lindmark's goods exports, and most of it is sold to EU customers. Lindmark's steel is produced in coal-based blast furnaces and the country has no carbon price. The finance minister is worried about the EU carbon border adjustment mechanism (CBAM), which is now in its definitive phase, and a local newspaper headline reads: \"Our current account deficit means Lindmark is losing money every year.\"\n\nYou are asked to prepare an English-language briefing for the minister.",
+      "sub_questions": [
+        {
+          "id": "trade-balance",
+          "kind": "numeric",
+          "prompt": "Calculate Lindmark's trade balance (balance of goods), in €bn. Give a negative number for a deficit.",
+          "points": 4,
+          "expected_value": -25,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€bn",
+          "decimals": 0,
+          "explanation": "Trade balance = exports of goods − imports of goods = 180 − 205 = −€25bn (deficit). Services are not included in the trade balance in the strict sense."
+        },
+        {
+          "id": "current-account",
+          "kind": "numeric",
+          "prompt": "Calculate Lindmark's current account balance, in €bn. Give a negative number for a deficit.",
+          "points": 4,
+          "expected_value": -13,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€bn",
+          "decimals": 0,
+          "explanation": "Balance of goods and services = −25 + (70 − 48) = −€3bn. Current account = goods and services + primary income + secondary income = −3 − 6 − 4 = −€13bn. Forgetting the income balances gives −€3bn; adding only the goods balance and incomes gives −€35bn."
+        },
+        {
+          "id": "financing",
+          "kind": "mcq",
+          "prompt": "Which statement about Lindmark's current account deficit is correct?",
+          "points": 4,
+          "options": [
+            "It is necessarily a loss for the country, which becomes poorer by €13bn every year.",
+            "It is matched by net capital inflows recorded in the financial account (foreign investment, borrowing from abroad or a fall in reserves).",
+            "It must be eliminated within the year under WTO rules on trade balances.",
+            "It is financed by the customs duties Lindmark collects on its imports."
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "By construction of the balance of payments, a current account deficit is matched (apart from the small capital account and errors and omissions) by net inflows on the financial account: foreign direct investment, portfolio inflows, loans from abroad or a drawdown of reserves. It is not a \"loss\" (option 1): it may finance productive investment, although it increases external liabilities. Option 3 is invented: the WTO does not regulate trade balances. Option 4 confuses tax revenue with balance of payments financing."
+        },
+        {
+          "id": "cbam-briefing",
+          "kind": "open",
+          "prompt": "In English, explain to the minister how the CBAM affects Lindmark's steel exports and suggest two possible responses, one for steel producers and one for the government.",
+          "points": 8,
+          "model_answer": "The CBAM requires EU importers of certain carbon-intensive goods, including iron and steel, to pay for the greenhouse gas emissions embedded in those goods, at a price linked to the EU emissions trading system, so that imports bear the same carbon cost as EU production and carbon leakage is avoided. Because Lindmark's steel is made in coal-based blast furnaces, its embedded emissions are high: EU buyers will face a significant extra cost and may switch to cleaner suppliers, which threatens a sector representing 30% of goods exports and could widen the trade deficit. Producers can respond by measuring and reporting their actual emissions accurately (otherwise default values may apply), investing in lower-carbon processes such as electric arc furnaces using scrap or direct reduced iron with hydrogen, and diversifying towards non-EU markets in the short term. The government could introduce a domestic carbon price: a carbon price effectively paid in the country of origin can be deducted from the CBAM obligation, so the revenue stays in Lindmark and can fund the industry's transition. It could also negotiate with the EU and support exporters with green financing. Challenging the CBAM at the WTO is possible but uncertain, and would not remove the commercial pressure from European customers.",
+          "key_points": [
+            "CBAM: EU importers pay for embedded emissions of steel (and other covered goods) at a price aligned with the EU ETS",
+            "High-carbon production makes Lindmark's steel less competitive in the EU: risk for 30% of goods exports and for the trade balance",
+            "Producer response: accurate emissions data, decarbonisation investment (EAF, hydrogen-based DRI), market diversification",
+            "Government response: domestic carbon price deductible from the CBAM charge, transition support, dialogue with the EU"
+          ]
+        }
+      ],
+      "total_points": 20,
+      "explanation": "Trade balance = 180 − 205 = −€25bn ; goods and services = −25 + 22 = −€3bn ; current account = −3 − 6 − 4 = −€13bn, matched by net financial inflows. The case combines reading a balance of payments (BPM6 structure) with the CBAM, which puts a carbon price on imports of steel, cement, aluminium, fertilisers, electricity and hydrogen into the EU.",
+      "source_ref": "IMF Balance of Payments and International Investment Position Manual, 6th edition (BPM6), current and financial accounts ; Regulation (EU) 2023/956 establishing a carbon border adjustment mechanism (CBAM), Annex I (covered goods) and art. 9 (carbon price paid in the country of origin)",
+      "verified": true,
+      "estimated_seconds": 720
+    },
+    {
+      "id": "ue6-eco-trade-0006",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "economie-regulations",
+      "notion": "international-trade-globalisation",
+      "difficulty": 1,
+      "tags": [
+        "WTO",
+        "most-favoured-nation",
+        "tariffs"
+      ],
+      "statement": "Kestria and Japan are both WTO members and have no free trade agreement. Kestria decides to cut its tariff on Japanese wine from 15% to 5%. Under the WTO most-favoured-nation (MFN) principle, what must Kestria do?",
+      "options": [
+        "Apply the 5% tariff to Japanese wine only, since the concession was negotiated with Japan.",
+        "Treat imported Japanese wine like domestic wine for internal taxes once it has cleared customs.",
+        "Apply the 5% tariff only to WTO members that grant Kestria an equivalent concession in return.",
+        "Extend the 5% tariff immediately and unconditionally to wine imported from all other WTO members."
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "The MFN principle (GATT art. I) requires any advantage granted to the products of one member to be extended immediately and unconditionally to like products of all other members. Option 1 describes exactly the discrimination MFN forbids; the main exception is a free trade area or customs union (GATT art. XXIV), which does not exist here. Option 2 describes national treatment (GATT art. III), the other WTO non-discrimination principle, which concerns internal taxes and regulations, not tariffs. Option 3 is wrong because MFN treatment is unconditional.",
+      "source_ref": "GATT 1994, art. I (general most-favoured-nation treatment), art. III (national treatment) and art. XXIV (free trade areas and customs unions)",
+      "verified": true,
+      "estimated_seconds": 60
     }
   ]
 }

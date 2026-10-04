@@ -91,6 +91,111 @@
       "source_ref": "Programme DSCG UE 5 : gouvernance et qualité des données (données de référence)",
       "verified": true,
       "estimated_seconds": 40
+    },
+    {
+      "id": "ue5-donnees-qualite-0005",
+      "type": "case_study",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "gouvernance-qualite-donnees",
+      "difficulty": 3,
+      "tags": [
+        "qualité des données",
+        "taux de conformité",
+        "fichier fournisseurs",
+        "fraude au changement d’IBAN",
+        "MDM"
+      ],
+      "title": "Groupe Taillefer : fiabiliser le fichier fournisseurs",
+      "context": "Le groupe Taillefer (négoce de matériaux) prépare la migration de ses achats vers un nouvel ERP. Le fichier fournisseurs compte 4 000 fiches. Un profilage automatique donne les résultats suivants :\n- 260 fiches sans IBAN ;\n- 300 fiches dont le numéro SIREN ne comporte pas 9 chiffres ;\n- 80 fiches cumulent les deux défauts précédents (elles sont comptées dans chacune des deux lignes ci-dessus) ;\n- 120 fiches en double d'un fournisseur déjà présent, à supprimer, qui ne présentent aucun autre défaut.\n\nLe directeur administratif et financier constate par ailleurs que :\n- n'importe quel comptable peut créer un fournisseur ou modifier un IBAN dans l'ERP actuel, sans validation ;\n- le mois dernier, un faux courriel au nom d'un transporteur a obtenu la modification de son IBAN ; deux virements de 37 000 € au total ont été détournés ;\n- le contrôleur de gestion retraite chaque mois, dans son tableur, les doublons qui faussent ses analyses d'achats par fournisseur.",
+      "sub_questions": [
+        {
+          "id": "q1-conformite",
+          "kind": "numeric",
+          "prompt": "Calculez le taux de conformité du fichier fournisseurs (part des fiches sans aucune anomalie), en %, arrondi au dixième.",
+          "points": 3,
+          "expected_value": 85,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "Fiches présentant au moins un défaut d'IBAN ou de SIREN = 260 + 300 − 80 = 480 (les 80 fiches cumulant les deux défauts ne sont comptées qu'une fois). Avec les 120 doublons, sans autre défaut : 480 + 120 = 600 fiches en anomalie. Fiches conformes = 4 000 − 600 = 3 400 ; taux de conformité = 3 400 ÷ 4 000 = 85,0 %. Erreur classique : additionner toutes les anomalies (680 fiches, soit 83,0 %), ce qui compte deux fois les fiches à double défaut. Le seul taux de complétude de l'IBAN (93,5 %) surestimerait la qualité du fichier."
+        },
+        {
+          "id": "q2-dimension-siren",
+          "kind": "mcq",
+          "prompt": "Quelle dimension de la qualité des données le défaut des SIREN qui ne comportent pas 9 chiffres met-il en cause ?",
+          "points": 2,
+          "options": [
+            "La complétude",
+            "L'unicité",
+            "La validité",
+            "L'actualité"
+          ],
+          "answer": [
+            2
+          ],
+          "multiple": false,
+          "explanation": "L'option 3 est la bonne : un SIREN qui ne compte pas 9 chiffres ne respecte pas le format attendu, ce qui relève de la validité. La complétude (option 1) vise les champs non renseignés, comme les IBAN absents ; l'unicité (option 2) vise les doublons ; l'actualité (option 4) vise une donnée non mise à jour dans le délai utile."
+        },
+        {
+          "id": "q3-iban",
+          "kind": "true_false",
+          "prompt": "Pour prévenir le détournement de virements, une demande de modification d'IBAN reçue par courriel doit être validée par un rappel du fournisseur à un numéro déjà connu, avant toute saisie par une personne habilitée.",
+          "points": 2,
+          "answer": true,
+          "explanation": "Vrai : la fraude au changement d'IBAN repose sur une fausse demande. Le circuit de modification contrôlé (demande, pièce justificative, contre-appel au numéro déjà enregistré et non à celui du courriel, validation par une personne habilitée, séparation des tâches entre saisie et validation) est la parade de base."
+        },
+        {
+          "id": "q4-plan",
+          "kind": "open",
+          "prompt": "Proposez au directeur administratif et financier une organisation et un plan d'action pour fiabiliser durablement le fichier fournisseurs.",
+          "points": 3,
+          "model_answer": "1) Rôles : désigner le directeur des achats propriétaire des données fournisseurs (définitions, règles d'accès, niveau de qualité attendu) ; nommer un gestionnaire des données (data steward) qui instruit les créations et modifications, contrôle les pièces et suit les anomalies ; la DSI fournit les outils et le contrôle d'accès. 2) Avant la migration : nettoyer le fichier (suppression des 120 doublons après rapprochement des encours, recherche des IBAN manquants et correction des SIREN), pour ne pas transférer 600 fiches défectueuses dans le nouvel ERP. 3) À la source : référentiel fournisseurs unique (MDM) ; circuit de création et de modification contrôlé, avec séparation entre demandeur, valideur et comptable payeur, contre-appel systématique pour tout changement d'IBAN ; contrôles de saisie (IBAN obligatoire avec clé de contrôle, SIREN à 9 chiffres, détection des doublons sur le SIREN). 4) Suivi : tableau de bord qualité (taux de conformité, nombre de doublons, délai de traitement des demandes), revue périodique des droits d'accès, journal des modifications sensibles. Le contrôleur de gestion n'a alors plus à retraiter ses données en aval.",
+          "key_points": [
+            "Rôles : propriétaire métier (directeur des achats), gestionnaire des données, DSI fournisseur des outils",
+            "Nettoyage avant migration (doublons, IBAN manquants, SIREN invalides)",
+            "Référentiel unique et circuit de création / modification contrôlé avec séparation des tâches et contre-appel",
+            "Contrôles de saisie (IBAN et clé, SIREN à 9 chiffres, détection des doublons) plutôt que corrections en aval",
+            "Indicateurs de qualité suivis dans le temps et revue des droits"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Fiches en anomalie = 260 + 300 − 80 + 120 = 600, taux de conformité = 85,0 %. Le SIREN mal formé relève de la validité. La fraude au changement d'IBAN se prévient par un circuit de modification contrôlé avec contre-appel ; la qualité se traite à la source, avec un propriétaire métier, un gestionnaire des données et un référentiel unique.",
+      "source_ref": "ISO/IEC 25012 (modèle de qualité des données) ; ISO 8000 ; COBIT 2019, objectif APO14 (gestion des données)",
+      "verified": true,
+      "estimated_seconds": 840
+    },
+    {
+      "id": "ue5-donnees-qualite-0006",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "gouvernance-qualite-donnees",
+      "difficulty": 2,
+      "tags": [
+        "gouvernance des données",
+        "data steward",
+        "rôles",
+        "propriétaire des données"
+      ],
+      "statement": "Dans une entreprise industrielle, le directeur commercial fixe les définitions, les règles d'accès et le niveau de qualité attendu des données clients. Au quotidien, une autre personne instruit les demandes de création et de modification des fiches clients, vérifie les pièces justificatives, corrige les anomalies détectées et documente les règles de saisie. Quel rôle tient cette seconde personne ?",
+      "options": [
+        "Le propriétaire des données (data owner)",
+        "Le gestionnaire des données (data steward)",
+        "Le délégué à la protection des données (DPO)",
+        "Le directeur des données (CDO)"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'option 2 est la bonne : le gestionnaire des données (data steward) veille au quotidien à la qualité, documente, corrige et instruit les demandes de création ou de modification. L'option 1 désigne le rôle du directeur commercial lui-même : responsable métier du domaine, il fixe définitions, règles d'accès et niveau de qualité. L'option 3 vise la conformité des traitements de données personnelles au RGPD, non la qualité opérationnelle des fiches. L'option 4 porte la stratégie data au niveau de la direction et arbitre entre métiers ; il n'instruit pas les demandes fiche par fiche.",
+      "source_ref": "Gouvernance des données : rôles du propriétaire, du gestionnaire et du directeur des données ; COBIT 2019, objectif APO14 (gestion des données)",
+      "verified": true,
+      "estimated_seconds": 60
     }
   ]
 }

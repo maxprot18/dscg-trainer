@@ -91,6 +91,110 @@
       "source_ref": "IAS 7 §14, §16, §17 and §34 ; IFRS 16 §50 (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 75
+    },
+    {
+      "id": "ue6-vocab-fsv-0005",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "vocabulaire-comptable-financier",
+      "notion": "financial-statements-vocabulary",
+      "difficulty": 3,
+      "tags": [
+        "cash flow statement",
+        "IAS 7",
+        "IFRS 16",
+        "dividends paid"
+      ],
+      "statement": "Mayfield plc prepares its statement of cash flows for the financial year 2026 under IAS 7 (IFRS 18 does not yet apply). Which of the following presentations is NOT permitted?",
+      "options": [
+        "Payments for short-term leases (12 months or less) for which the recognition exemption is applied, presented within operating activities",
+        "Interest paid presented within financing activities",
+        "Dividends paid to the shareholders of Mayfield presented within investing activities",
+        "Repayments of the principal portion of lease liabilities presented within financing activities"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Option 3 is not permitted: dividends paid may be classified as financing (a cost of obtaining financial resources) or as operating activities (to show the ability to pay dividends out of operating cash flows), but never as investing activities (IAS 7 §34). The other presentations are permitted or required. Option 1: payments for short-term leases and leases of low-value assets not recognised on the balance sheet (exemption of IFRS 16 §5-6) are classified within operating activities (IFRS 16 §50(c)). Option 2: interest paid may be classified as operating or financing activities, consistently from period to period (IAS 7 §31 and §33). Option 4: cash payments for the principal portion of a lease liability are financing activities (IFRS 16 §50(a)).",
+      "source_ref": "IAS 7 §31, §33 and §34 ; IFRS 16 §50 (règlement UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue6-vocab-fsv-0006",
+      "type": "case_study",
+      "ue": "UE6",
+      "theme": "vocabulaire-comptable-financier",
+      "notion": "financial-statements-vocabulary",
+      "difficulty": 2,
+      "tags": [
+        "statement of financial position",
+        "quick ratio",
+        "current liabilities",
+        "statement of changes in equity"
+      ],
+      "title": "Reading the accounts of Ashby Components Ltd",
+      "context": "You work for the French parent company of Ashby Components Ltd, a UK subsidiary. Its finance director has sent you an extract of the statement of financial position at 31 December 2025 (£k), prepared under IFRS.\n\nNon-current assets: property, plant and equipment 1,250 ; intangible assets 180.\nCurrent assets: inventories 320 ; trade receivables 410 ; prepayments 30 ; cash and cash equivalents 140.\nEquity: share capital 400 ; retained earnings 850.\nLiabilities: trade payables 380 ; accruals 60 ; current tax payable 40 ; bank loan 600, of which 100 is repayable in 2026 and 500 in 2029.\n\nThe finance director adds: \"During the year we paid a dividend of £150k to the parent company and did not issue any new shares.\"",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Calculate the quick ratio (current assets − inventories) ÷ current liabilities at 31 December 2025. Round to two decimal places.",
+          "expected_value": 1,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.01
+          },
+          "unit": "x",
+          "decimals": 2,
+          "explanation": "Current assets = 320 + 410 + 30 + 140 = 900. Current liabilities = 380 + 60 + 40 + 100 (portion of the loan repayable within twelve months) = 580. Quick ratio = (900 − 320) ÷ 580 = 580 ÷ 580 = 1.00. Forgetting the current portion of the loan gives 580 ÷ 480 = 1.21; treating the whole loan as current gives 580 ÷ 1,080 = 0.54."
+        },
+        {
+          "id": "q2",
+          "kind": "true_false",
+          "points": 2,
+          "prompt": "The £500k of the bank loan repayable in 2029 is presented as a current liability.",
+          "answer": false,
+          "explanation": "It is due more than twelve months after the reporting period: it is a non-current liability (IAS 1 §69). Only the £100k repayable in 2026 is current."
+        },
+        {
+          "id": "q3",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "In which primary statement will the £150k dividend appear as a movement in retained earnings?",
+          "options": [
+            "Statement of profit or loss",
+            "Statement of changes in equity",
+            "Statement of other comprehensive income",
+            "Notes only"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "Dividends are distributions to owners: the statement of changes in equity must reconcile each component of equity, showing separately the distributions to owners (IAS 1 §106(d)(iii)), so the £150k reduction of retained earnings appears there, not as an expense in profit or loss or in OCI. \"Notes only\" is wrong: IAS 1 §107 lets the entity give the amount of dividends and the dividend per share either in that statement or in the notes, but the movement itself must appear in the statement of changes in equity. The dividend also appears as a cash outflow in the statement of cash flows (financing or operating activities)."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "points": 3,
+          "prompt": "For your French colleagues, give the French equivalent of: trade receivables, prepayments, accruals, retained earnings, cash and cash equivalents, current tax payable.",
+          "model_answer": "Trade receivables: créances clients. Prepayments: charges constatées d'avance. Accruals: charges à payer. Retained earnings: réserves et report à nouveau (résultats accumulés). Cash and cash equivalents: trésorerie et équivalents de trésorerie. Current tax payable: dette d'impôt exigible (impôt sur les bénéfices à payer).",
+          "key_points": [
+            "Trade receivables = créances clients ; prepayments = charges constatées d'avance",
+            "Accruals = charges à payer (passif), not « produits à recevoir »",
+            "Retained earnings = réserves et report à nouveau",
+            "Cash and cash equivalents = trésorerie et équivalents de trésorerie ; current tax payable = dette d'impôt exigible"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "The case tests the current / non-current split (IAS 1 §66-76), the quick ratio, the statement in which distributions to owners are presented and the French equivalents of usual balance sheet items.",
+      "source_ref": "IAS 1 §10, §66-76 and §106(d) and §107 (règlement UE 2023/1803) ; quick ratio (usual definition)",
+      "verified": true,
+      "estimated_seconds": 600
     }
   ]
 }

@@ -161,6 +161,52 @@
       "source_ref": "Loi n° 2021-1485 du 15 novembre 2021 (REEN) ; loi n° 2020-105 du 10 février 2020 (AGEC) ; indicateur PUE (ISO/IEC 30134-2) ; études ADEME-Arcep",
       "estimated_seconds": 900,
       "verified": true
+    },
+    {
+      "id": "ue5-secu-greenit-0005",
+      "type": "numeric",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "numerique-responsable-green-it",
+      "difficulty": 2,
+      "tags": [
+        "durée de vie",
+        "smartphones",
+        "empreinte carbone",
+        "fabrication"
+      ],
+      "statement": "Une entreprise équipe 400 commerciaux d'un smartphone professionnel, renouvelé aujourd'hui tous les 2 ans. Elle envisage de porter la durée d'usage à 4 ans, en remplaçant la batterie de chaque appareil une fois au cours de sa vie. Hypothèses : émissions de fabrication d'un smartphone 60 kg CO₂e ; émissions de fabrication d'une batterie de remplacement 4 kg CO₂e ; fabrication amortie linéairement sur la durée d'usage ; consommation électrique inchangée.\nCalculez la réduction de l'empreinte carbone annuelle du parc permise par ce changement (en kg CO₂e par an).",
+      "expected_value": 5600,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "kg CO₂e/an",
+      "decimals": 0,
+      "explanation": "Situation actuelle : 400 × 60 ÷ 2 = 12 000 kg CO₂e par an de fabrication amortie. Situation envisagée : 400 × 60 ÷ 4 = 6 000 kg, plus les batteries, une par appareil sur 4 ans : 400 × 4 ÷ 4 = 400 kg ; total 6 400 kg. Réduction = 12 000 − 6 400 = 5 600 kg CO₂e par an (−47 %). Oublier les batteries donnerait 6 000 kg. La consommation électrique étant inchangée, seul l'amortissement de la fabrication varie : allonger la durée de vie est le premier levier, car la fabrication domine l'empreinte des terminaux en France.",
+      "source_ref": "Empreinte annuelle = fabrication ÷ durée de vie + consommation × facteur d'émission ; études ADEME-Arcep sur l'empreinte environnementale du numérique",
+      "estimated_seconds": 150,
+      "verified": true
+    },
+    {
+      "id": "ue5-secu-greenit-0006",
+      "type": "flashcard",
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "numerique-responsable-green-it",
+      "difficulty": 2,
+      "tags": [
+        "bilan GES",
+        "scopes",
+        "CSRD",
+        "ESRS"
+      ],
+      "front": "Comment l'empreinte environnementale du SI entre-t-elle dans le bilan de gaz à effet de serre et dans le rapport de durabilité (CSRD) ?",
+      "back": "Bilan GES : les émissions de fabrication des équipements achetés relèvent du scope 3 (émissions indirectes de la chaîne de valeur) ; l'électricité consommée par les équipements et les salles informatiques relève du scope 2.\nCSRD : l'entreprise soumise intègre ces émissions dans la norme ESRS E1 (changement climatique) et les flux de ressources et déchets du SI (achats de matériel, réemploi, DEEE) dans la norme ESRS E5 (utilisation des ressources et économie circulaire).",
+      "explanation": "En France, la fabrication (scope 3) domine l'empreinte des terminaux, l'électricité étant peu carbonée. Un hébergement externalisé chez un prestataire (cloud, infogérance) déplace la consommation électrique du scope 2 vers le scope 3 (achats de services) sans la faire disparaître. Références : protocole GHG (scopes 1, 2, 3) ; ESRS E1 et E5 (règlement délégué (UE) 2023/2772).",
+      "source_ref": "ESRS E1 et ESRS E5 (règlement délégué (UE) 2023/2772) ; GHG Protocol (scopes 2 et 3)",
+      "estimated_seconds": 40,
+      "verified": true
     }
   ]
 }

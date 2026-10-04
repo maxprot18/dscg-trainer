@@ -1,6 +1,6 @@
 # PROGRESS — DSCG Trainer
 
-Dernière mise à jour : 2026-10-04, lisibilité des fiches (version 1.3.0, demande de l'utilisateur après la phase 6). Phase 8 (exercices complémentaires) à venir, voir `docs/audit-v1.md`.
+Dernière mise à jour : 2026-10-04, version 1.4.0 : phase 8 (exercices complémentaires) et améliorations issues de l'audit `docs/audit-v2.md` (sujets type d'examen, oral d'UE 6, plan d'examen, protection de la progression, tests de bout en bout).
 
 ## État par phase
 
@@ -15,7 +15,8 @@ Dernière mise à jour : 2026-10-04, lisibilité des fiches (version 1.3.0, dema
 | 7. Interface (audit v1) | Terminée : version 1.1.0 (voir ci-dessous) |
 | 6. Cours enrichis et visuels | Terminée : version 1.2.0 (voir ci-dessous) |
 | 6 bis. Lisibilité des fiches | Terminée : version 1.3.0 (voir ci-dessous) |
-| 8. Exercices complémentaires | À faire (phase suivante) |
+| 8. Exercices complémentaires | Terminée : version 1.4.0 (voir ci-dessous) |
+| Améliorations (audit v2) | Terminées : version 1.4.0 (voir ci-dessous) |
 
 ## Phase 0 : ce qui est fait
 
@@ -137,6 +138,19 @@ Demande de l'utilisateur après la v1.2.0 : « le visuel [des cours] doit gagner
 - **Diagrammes** : barres en HTML (libellés et valeurs en texte, le SVG réduit les rendait illisibles sur téléphone) ; organigrammes en HTML avec liens SVG mesurés, flèches de sens, liens réciproques en parallèle, contournement des boîtes, pastilles sans chevauchement ; correction du calcul des niveaux qui bouclait sur les liens réciproques (apport partiel d'actif, LBO : schéma de plusieurs milliers de pixels).
 - **Vérifications** : les 271 fiches rendues dans Chromium sur mobile (390 px) : toutes ont enjeu, exemple, erreurs, à retenir et notions liées habillés, aucune erreur console, aucun débordement horizontal (l'étiquette de thème débordait sur 30 fiches, corrigé) ; Lighthouse sur quatre fiches : 94-95 / 100 / 100 / 100 ; 199 tests verts, lint, validate, build.
 
+## Phase 8 et améliorations de l'audit v2 : ce qui est fait (version 1.4.0)
+
+Demande de l'utilisateur après l'audit `docs/audit-v2.md` : « réaliser les points identifiés concernant les améliorations » (priorités 1 à 6 du § 6 ; la vente et ses prérequis — comptes, paiement, licence, relecture professionnelle — ne sont pas traités).
+
+- **Protection de la progression** (`src/lib/backup.ts`, `BackupReminder`) : `navigator.storage.persist()` demandé une fois après la première tentative (et bouton dans les réglages), état du stockage et date de dernière sauvegarde affichés, rappel à partir de 20 tentatives quand le stockage n'est pas garanti (ou onglet Safari iOS) et que la dernière sauvegarde manque ou date de plus de 14 jours (report de 7 jours).
+- **Fiabilité** (`src/lib/errorLog.ts`, `ErrorBoundary`) : erreurs JS et promesses rejetées gardées en local (20 au plus), visibles dans les réglages avec lien « signaler » ; écran de secours par route (rechargement proposé quand un fichier de l'ancienne version manque après une mise à jour). **Playwright** (`e2e/`, 8 parcours sur Pixel 7 contre `vite preview` : accueil, QCM puis progression, fiche, organigramme, export, liens profonds et recherche, oral, dossier), échec sur toute erreur console, lancé en CI avant le déploiement.
+- **Phase 8** : 148 exercices en 9 lots (rédacteur puis relecteur indépendant, un commit par lot) ; chaque notion en a au moins 5 (UE 1, 5, 6 ; notions ciblées à 6). Quatre fiches corrigées quand elles contredisaient des exercices relus (anticorruption L. 210-11/12, intérêts déductibles : art. 212 I b abrogé par la LF 2020, NEP 702 pour le rapport en anglais, art. 150-0 B ter après la LF 2026).
+- **Plan d'examen** (`src/engine/plan.ts`, `ExamPlanCard`) : date et UE de l'examen dans les réglages, compte à rebours, phases découverte / consolidation / dernière ligne droite (14 jours), notions nouvelles et exercices par jour, séance du jour limitée aux UE (`ues=` dans l'URL), **test de positionnement** (mode `diagnostic` : un QCM, vrai/faux ou calcul par thème, niveau 2 de préférence), rappel quotidien en fichier .ics (`src/lib/reminder.ts`).
+- **Oral d'UE 6** (`OralPage`, `content/oral/`, schéma `oralSchema.ts`) : 20 sujets relus (deux lots), tirage au sort sans répéter les sujets passés, préparation (30 à 60 min), exposé 15 min et entretien 15 min chronométrés, notes, enregistrement MediaRecorder gardé en mémoire (téléchargeable), plan type, vocabulaire, auto-évaluation 5 critères × 4 points, historique en localStorage.
+- **Sujets type d'examen** : `case_study` avec `dossier: true` (6 à 15 sous-questions, 2 à 10 annexes, au moins 45 min, barème obligatoire ; un cas ordinaire reste limité à 5 sous-questions sans annexes). Dix dossiers relus (`content/<ue>/sujets-examen.json`, deux par UE écrite, 80 à 90 min, 10 à 12 questions, 4 ou 5 annexes). Servis seulement par l'examen blanc (en tête, jusqu'à 60 % du temps) et la carte « Sujets type d'examen » de S'entraîner.
+- **Accueil** : la carte d'examen est rendue dès le premier affichage (elle arrivait après la lecture de la base et poussait le contenu de 166 px : CLS 0,087) ; plus aucun décalage mesuré sur accueil, entraînement, fiche et progression.
+- **Vérifications** : lint, `validate:strict` (1 558 exercices vérifiés, 271 fiches, 20 sujets d'oral), tests unitaires, build, 8 parcours Playwright : tout vert.
+
 ## Décisions prises (et pourquoi)
 
 1. **Programme de référence : arrêté du 4 août 2025** (BOESR n° 32 du 28/08/2025, NOR MENS2523324A). Il s'applique aux épreuves du DSCG à partir de la session 2027, celle que Max préparera ; il remplace l'arrêté du 13/02/2019.
@@ -197,24 +211,29 @@ Demande de l'utilisateur après la v1.2.0 : « le visuel [des cours] doit gagner
 48. **(Phase 6 bis) La structure des fiches pilote leur mise en page** : plutôt que d'ajouter des balises dans 271 fichiers, le rendu reconnaît les libellés réservés et les sections du guide ; une fiche qui s'en écarte reste lisible (blocs rendus tels quels). Contrepartie : la forme des libellés, des erreurs « erreur : bonne règle » et des séparateurs « · » et « ; » est désormais une règle du guide.
 49. **(Phase 6 bis) Diagrammes textuels en HTML** : le texte d'un SVG réduit à la largeur d'un téléphone tombait sous 8 px ; les barres et les organigrammes passent en HTML, le SVG ne sert plus qu'aux traits.
 50. **(Phase 6 bis) Version 1.3.0** pour ce lot ; la phase 8 portera la version 1.4.0.
+51. **(v1.4) Rien sans serveur** : sauvegarde, erreurs, historique d'oral et enregistrements restent sur l'appareil ; pas de service de suivi d'erreurs tiers (pas de compte, pas de donnée personnelle envoyée). Le rapport se fait par l'issue GitHub pré-remplie, comme le bouton « signaler une erreur ».
+52. **(v1.4) Dossiers = cas pratiques étendus** plutôt qu'un nouveau type : même correction par partie et même barème, `dossier: true` relâche la limite de 5 sous-questions et autorise les annexes. Les dossiers ne sont pas servis dans les sessions courtes (ils durent plus d'une heure) ; l'examen blanc les place en tête et garde au moins 40 % du temps pour des exercices variés.
+53. **(v1.4) Oral auto-évalué** : sans correcteur humain, la grille (5 critères sur 4) et la comparaison au plan type et au vocabulaire sont la méthode la plus honnête ; l'enregistrement n'est jamais envoyé. Pas de reconnaissance vocale (qualité variable, données envoyées à un tiers sur Chrome).
+54. **(v1.4) Plan d'examen indicatif** : rythme calculé sur les notions non vues et le temps restant, sans planning jour par jour ; la séance du jour reste la révision intelligente filtrée sur les UE de l'examen. Rappel par fichier .ics plutôt que notifications push (pas de serveur, et iOS ne les permet qu'aux applications installées).
 
 ## Points ouverts / à vérifier
 
 - **Déploiement** : résolu. GitHub Pages est activé (source : GitHub Actions) et chaque push sur `main` déploie automatiquement.
 - **Taxonomie à relire sur le texte officiel.** Légifrance, le BO et les sites officiels étaient inaccessibles depuis l'environnement cloud (proxy). La structure vient du recoupement de résultats de recherche. À contrôler en priorité : intitulés et modalités des UE, découpage des blocs du programme 2025.
 - **Numéros d'articles PCG** des exercices d'exemple (321-5, 322-1, 323-1 à 323-6) : jugés plausibles par le relecteur, mais pas confirmés sur le texte.
-- UE 1, 5 et 6 ont moins de 5 questions par notion à la cible V1 : on peut regrouper des notions en phase 3 si c'est trop fin.
 
 - **Points de fond** : ceux relevés en phases 2 et 3 ont été vérifiés et corrigés en phase 5 (voir « Phase 5 : ce qui est fait »). Les relecteurs n'ont pu lire la plupart des textes officiels qu'au travers de résumés de recherche (Légifrance, ANC et BOFiP bloqués par le proxy) : un contrôle humain sur les textes reste souhaitable, en priorité sur les règlements récents (ANC 2026-03, directive (UE) 2026/470) et sur le plan de comptes PCG 2025.
-- **Décalage de mise en page (CLS) de 0,07 sur toutes les pages** : vient du remplacement de l'écran « Chargement… » de Suspense dans `<main>` ; sans effet sur les scores (95-96). Le 0,15 propre à la fiche de cours est corrigé en phase 6.
+- **Décalage de mise en page** : le 0,07 relevé par l'audit venait de la carte d'examen de l'accueil, corrigé en 1.4.0 ; à remesurer avec Lighthouse sur le site déployé.
 - **Points à revoir quand les textes évolueront** : date de promulgation de la loi française transposant NIS 2 (`conformite-reglementaire-si`, « non promulguée à ce jour ») ; numéro recodifié de l'infraction de non-révélation des faits délictueux (ancien L. 820-7, cité sans numéro) ; compte 7673 (produits nets sur cessions de VMP) vu par symétrie avec 6673 sur une seule source ; l'exercice `theorie-portefeuille-medaf` utilise le compte parent 667 pour une cession de VMP (accepté : 667 reste le compte de rattachement de 6673).
-- **Release GitHub** : les tags ne peuvent pas être poussés depuis l'environnement (passerelle limitée aux branches). Créer les releases v1.0.0, v1.1.0 et v1.2.0 depuis l'interface GitHub (commits de fusion des PR #8, #9 et de la PR de la phase 6).
+- **Release GitHub** : les tags ne peuvent pas être poussés depuis l'environnement (passerelle limitée aux branches). Créer les releases v1.0.0 à v1.4.0 depuis l'interface GitHub (commits de fusion des PR correspondantes).
 
-## Prochaine étape : phase 8 (exercices complémentaires)
+## Prochaine étape
 
-- Voir `docs/audit-v1.md` § 3. Environ 150 exercices sur les notions qui n'en ont que 3 ou 4 (UE 1, 5 et 6 ; `npm run validate` affiche les comptes par notion, `exerciseCount()` côté app) pour que chaque notion atteigne au moins 5 à 6 exercices et que les sessions par notion aient du sens.
-- Méthode inchangée : lots par thème (une dizaine), rédacteur puis relecteur indépendant qui recalcule chaque réponse, `verified: true` seulement après relecture, un commit par lot ; répartition des types et difficultés de `CLAUDE.md`, règles de `docs/content-guide.md` (les fiches enrichies servent désormais de base : s'appuyer sur leurs exemples et erreurs fréquentes sans les recopier). Ids nouveaux à la suite des numéros existants.
-- Fin de phase : `validate:strict`, lint, tests, build, CHANGELOG 1.4.0, README (nombre d'exercices), PROGRESS.md, PR, CI, fusion.
+Le cahier des charges et les priorités 1 à 6 de l'audit v2 sont livrés. Suites possibles, à décider avec l'utilisateur :
+
+- **Si vente** (audit v2 § 5) : relecture par un expert-comptable ou un enseignant DSCG (UE 4 et UE 1 d'abord), dépôt privé et nouvelle licence pour le contenu à venir, comptes et synchronisation, paiement, hébergement commercial, CGV et RGPD.
+- **Contenu** : davantage de dossiers type d'examen (deux par UE aujourd'hui), sujets d'oral supplémentaires (20), explication par mauvaise réponse dans les QCM, date de validité par fiche et revue après chaque loi de finances.
+- **Technique** : découper le fichier de contenu de l'UE 4 (1,4 Mo) par thème ; React 19 sans urgence.
 
 ## Budget consommé (estimation)
 
@@ -227,4 +246,5 @@ Demande de l'utilisateur après la v1.2.0 : « le visuel [des cours] doit gagner
 - Phase 7 : environ 35 à 45 $ (estimation de l'audit : 40 à 60 $). Aucun sous-agent : travail direct.
 - Phase 6 : environ 110 à 140 $ (estimation de l'audit : 80 à 110 $). Environ 72 sous-agents (27 rédactions, 27 relectures, 18 relances après deux limites d'usage), de 90 000 à 140 000 tokens chacun ; le dépassement vient des relances et des recherches web des relecteurs (droit 2026). Le reste en travail direct (plan, briefs, commits, Lighthouse, captures).
 - Phase 6 bis (lisibilité des fiches) : environ 15 à 25 $. Aucun sous-agent : travail direct (code, captures, contrôle des 271 fiches dans le navigateur).
-- Cumul estimé : environ 385 à 495 $. L'utilisateur a accepté de dépasser le budget initial de 250 $ pour les phases 6 à 8 (audit : 155 à 215 $ pour les trois ; reste la phase 8, estimée 35 à 45 $).
+- Phase 8 et améliorations v1.4 : environ 70 à 90 $. Environ 36 sous-agents (9 lots de phase 8, 2 lots d'oral et 5 de dossiers, chacun rédacteur puis relecteur, plus quelques corrections de fiches) ; code, tests et documentation en travail direct.
+- Cumul estimé : environ 455 à 585 $. L'utilisateur a accepté de dépasser le budget initial de 250 $ pour les phases 6 à 8 (audit : 155 à 215 $ pour les trois).

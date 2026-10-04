@@ -99,6 +99,110 @@
       "source_ref": "Architecture technique du SI : disponibilité d'éléments en série (produit des disponibilités) et en parallèle (1 − produit des indisponibilités)",
       "verified": true,
       "estimated_seconds": 180
+    },
+    {
+      "id": "ue5-siorg-urba-0005",
+      "type": "true_false",
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "urbanisation-architecture-si",
+      "difficulty": 1,
+      "tags": [
+        "bus d’échanges",
+        "ESB",
+        "interfaces",
+        "intégration"
+      ],
+      "statement": "Avec un bus d'échanges (ESB), un seul connecteur suffit pour relier entre elles les dix applications d'une entreprise.",
+      "answer": false,
+      "justification": "Faux : chaque application dialogue avec le bus par son propre connecteur, il en faut donc dix, contre 45 interfaces en point à point.",
+      "explanation": "Le bus d'échanges centralise les flux : chaque application ne se connecte qu'au bus, qui route et transforme les messages. Il faut donc un connecteur par application, soit n = 10. En liaisons point à point bidirectionnelles, il faudrait jusqu'à n(n − 1) ÷ 2 = 10 × 9 ÷ 2 = 45 interfaces. Le gain du bus tient à ce que le nombre de connecteurs croît comme n et non comme n², et à ce qu'une application peut être remplacée en ne refaisant que son connecteur (faible couplage).",
+      "source_ref": "Démarche d’urbanisation du SI (Club Urba-EA) : outils d’intégration EAI / ESB ; interfaces point à point = n(n − 1) ÷ 2",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue5-siorg-urba-0006",
+      "type": "case_study",
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "urbanisation-architecture-si",
+      "difficulty": 3,
+      "tags": [
+        "urbanisation",
+        "disponibilité",
+        "redondance",
+        "données de référence",
+        "cartographie"
+      ],
+      "title": "Coopérative Vercors : urbaniser un SI en plat de spaghettis",
+      "context": "La coopérative Vercors (produits laitiers, 450 salariés) exploite 9 applications : comptabilité-finance, paie, achats, gestion d'entrepôt, caisses des magasins, site de vente en ligne, programme de fidélité, gestion de la relation client (CRM) et outil décisionnel. Au fil des années, 23 interfaces point à point ont été développées pour les faire communiquer ; chaque nouvelle application en demande plusieurs.\n\nLa fiche client est créée et modifiée séparément dans le CRM, le site, les caisses et le programme de fidélité. Un contrôle récent montre que l'adresse d'un même client diffère d'une application à l'autre dans 18 % des cas.\n\nLa chaîne de commande en ligne enchaîne trois composants, tous indispensables : le serveur du site (disponibilité 99,7 %), le bus d'échanges en cours d'installation (99,9 %) et l'ERP (99,8 %). Les pannes des composants sont supposées indépendantes ; on raisonne sur un mois de 720 heures.\n\nLe DSI propose de doubler le composant le moins disponible par un second composant identique fonctionnant en redondance (un seul des deux suffit pour assurer le service).",
+      "sub_questions": [
+        {
+          "id": "q1-dispo-serie",
+          "kind": "numeric",
+          "prompt": "Calculez la disponibilité actuelle de la chaîne de commande en ligne (en %, arrondie au centième).",
+          "points": 2,
+          "expected_value": 99.4,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.01
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Composants en série : A = 0,997 × 0,999 × 0,998 = 0,99401, soit 99,40 %. Erreurs classiques : retenir la disponibilité du maillon le plus faible (99,7 %) ou faire la moyenne : en série, le résultat est inférieur au plus faible des composants."
+        },
+        {
+          "id": "q2-indispo-redondance",
+          "kind": "numeric",
+          "prompt": "Après la mise en redondance proposée par le DSI, calculez l'indisponibilité attendue de la chaîne sur un mois de 720 heures (en heures, arrondie au centième).",
+          "points": 2,
+          "expected_value": 2.17,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.02
+          },
+          "unit": "h",
+          "decimals": 2,
+          "explanation": "Le maillon faible est le serveur du site (99,7 %). Deux serveurs en parallèle : 1 − (1 − 0,997)² = 1 − 0,003² = 0,999991. Chaîne : 0,999991 × 0,999 × 0,998 = 0,996993, soit 99,70 %. Indisponibilité = 720 × (1 − 0,996993) = 2,17 h par mois, contre 720 × (1 − 0,99401) = 4,31 h avant redondance. La chaîne reste limitée par l'ERP et le bus, désormais maillons faibles."
+        },
+        {
+          "id": "q3-fiche-client",
+          "kind": "mcq",
+          "prompt": "Quelle règle d'urbanisation répond au problème de la fiche client ?",
+          "points": 2,
+          "options": [
+            "Ajouter des interfaces point à point entre les quatre applications pour qu'elles se recopient mutuellement chaque modification",
+            "Confier la fiche client à un référentiel unique, doté d'un propriétaire, les autres applications n'en recevant que des copies synchronisées",
+            "Laisser chaque application gérer sa propre fiche client et rapprocher les écarts une fois par an",
+            "Supprimer l'adresse des fiches clients des applications autres que le CRM, sans les relier au CRM"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "L'option 2 applique la règle selon laquelle une donnée de référence a une source et un propriétaire uniques (référentiel, MDM), diffusée par copies synchronisées. L'option 1 multiplie les interfaces et laisse quatre sources concurrentes : c'est aggraver le plat de spaghettis. L'option 3 traite les écarts après coup, sans en supprimer la cause. L'option 4 prive les caisses, le site et la fidélité d'une donnée dont ils ont besoin."
+        },
+        {
+          "id": "q4-demarche",
+          "kind": "open",
+          "prompt": "Présentez la démarche d'urbanisation que vous recommandez à la coopérative et les bénéfices attendus.",
+          "points": 4,
+          "model_answer": "Avec 9 applications, le point à point pourrait aller jusqu'à 9 × 8 ÷ 2 = 36 interfaces ; les 23 existantes forment déjà un plat de spaghettis coûteux à maintenir, alors qu'un bus d'échanges ne demande que 9 connecteurs. La démarche : 1) cartographier l'existant selon les quatre vues (métier : processus de vente, d'approvisionnement, de paie ; fonctionnelle : zones, quartiers, îlots ; applicative : applications et flux ; technique : serveurs, réseaux) ; 2) définir une cible cohérente avec la stratégie (vente omnicanale), où chaque bloc fonctionnel a une responsabilité unique, où les données de référence (client, article) ont un référentiel et un propriétaire uniques, et où les échanges passent par le bus ou des API normalisées ; 3) bâtir une trajectoire de projets successifs (référentiel client d'abord, puis migration progressive des interfaces vers le bus), chaque évolution rapprochant de la cible sans tout reconstruire. Bénéfices : moins d'interfaces à maintenir, faible couplage (remplacer une application sans toucher aux autres), données client cohérentes, meilleure disponibilité grâce à la redondance des maillons faibles, SI plus réactif aux projets métier. La démarche suppose un pilotage par la gouvernance du SI et l'implication des métiers.",
+          "key_points": [
+            "Diagnostic : 23 interfaces point à point (36 au maximum), contre 9 connecteurs avec un bus",
+            "Cartographie de l’existant selon les quatre vues (métier, fonctionnelle, applicative, technique)",
+            "Cible : responsabilité unique par bloc, référentiel unique des données de référence, échanges par bus ou API",
+            "Trajectoire progressive de projets, sans reconstruction complète",
+            "Bénéfices : faible couplage, cohérence des données, maintenance réduite, disponibilité améliorée"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Disponibilité en série : 0,997 × 0,999 × 0,998 = 99,40 % (4,31 h d'indisponibilité par mois) ; en doublant le serveur du site, maillon faible, la chaîne passe à 99,70 % (2,17 h). Les écarts de fiches clients se traitent par un référentiel unique ; l'urbanisation part d'une cartographie en quatre vues, fixe une cible et une trajectoire progressive.",
+      "source_ref": "Démarche d’urbanisation du SI (Club Urba-EA : quatre vues, règles d’urbanisation) ; TOGAF (The Open Group), cycle ADM ; disponibilité série = Π Aᵢ, parallèle = 1 − Π(1 − Aᵢ)",
+      "verified": true,
+      "estimated_seconds": 900
     }
   ]
 }

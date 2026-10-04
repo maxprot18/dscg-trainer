@@ -74,6 +74,102 @@
       "source_ref": "C. com. art. L228-23 et L228-24 ; C. civ. art. 1843-4",
       "verified": true,
       "estimated_seconds": 45
+    },
+    {
+      "id": "ue1-soc-pacte-0005",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "pactes-associes-clauses-statutaires",
+      "difficulty": 2,
+      "tags": [
+        "préemption",
+        "cession de titres",
+        "clauses statutaires"
+      ],
+      "statement": "Une clause statutaire de préemption interdit à l'associé de céder ses actions tant qu'elle est en vigueur.",
+      "answer": false,
+      "justification": "La préemption ne bloque pas la cession : elle donne aux bénéficiaires une priorité pour acquérir les titres cédés, aux conditions prévues par la clause ; l'interdiction de céder relève de la clause d'inaliénabilité.",
+      "explanation": "La clause de préemption organise une priorité d'achat : lorsque l'associé décide de céder, il doit d'abord offrir ses titres aux bénéficiaires (les autres associés, ou certains d'entre eux), selon l'ordre et le prix prévus. S'ils exercent leur droit, la cession a lieu à leur profit ; s'ils y renoncent, l'associé cède librement au tiers (sous réserve d'une éventuelle clause d'agrément). Elle change donc le bénéficiaire de la cession sans l'interdire. C'est la clause d'inaliénabilité qui interdit de céder, pour une durée qui, en SAS, ne peut excéder dix ans (C. com. L227-13).",
+      "source_ref": "C. com. art. L227-13 à L227-15 (clauses statutaires de SAS : inaliénabilité, agrément, nullité des cessions irrégulières)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue1-soc-pacte-0006",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "pactes-associes-clauses-statutaires",
+      "difficulty": 3,
+      "tags": [
+        "SAS",
+        "préemption",
+        "inaliénabilité",
+        "pacte d’associés",
+        "sortie conjointe"
+      ],
+      "title": "SAS Orfée : sorties d’associés sous contrainte",
+      "context": "La SAS Orfée, éditeur de logiciels, a un capital divisé en 10 000 actions, réparties ainsi : Mme Arnoux, 1 500 actions ; M. Bertin, 3 000 actions ; Mme Chauvet, 2 000 actions ; la SA Capinvest, fonds d'investissement, 3 500 actions.\nLes statuts stipulent notamment :\n- une clause de préemption : tout associé qui envisage de céder ses actions à un tiers doit d'abord les offrir aux autres associés, qui peuvent les acquérir au prorata de leur participation dans le capital ; si certains renoncent, les actions sont réparties entre ceux qui exercent leur droit, au prorata de leurs participations respectives ;\n- une clause d'agrément de tout nouvel associé par décision collective des associés.\nUn pacte d'associés, signé par M. Bertin, Mme Chauvet et Capinvest, mais non par Mme Arnoux, stipule une clause de sortie conjointe : si Capinvest cède ses actions, les deux autres signataires peuvent exiger que le cessionnaire acquière aussi les leurs, aux mêmes conditions de prix.\nEn mars N, Mme Arnoux notifie son projet de céder ses 1 500 actions à un tiers, M. Lys. M. Bertin et Mme Chauvet exercent leur droit de préemption ; Capinvest y renonce.\nEn septembre N, Capinvest cède ses 3 500 actions à la SA Logex, concurrente, dont l'entrée a été régulièrement agréée par les associés, sans permettre à M. Bertin et Mme Chauvet d'exercer leur droit de sortie conjointe. Logex ignorait l'existence du pacte.\nPar ailleurs, M. Bertin et Mme Chauvet souhaitent introduire dans les statuts une clause d'inaliénabilité de cinq ans.",
+      "sub_questions": [
+        {
+          "id": "repartition-preemption",
+          "kind": "numeric",
+          "prompt": "Calculez le nombre d'actions de Mme Arnoux attribuées à M. Bertin en application de la clause de préemption.",
+          "points": 2,
+          "expected_value": 900,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "actions",
+          "decimals": 0,
+          "explanation": "Capinvest ayant renoncé, les 1 500 actions sont réparties entre M. Bertin et Mme Chauvet au prorata de leurs participations : 1 500 × 3 000 / (3 000 + 2 000) = 900 actions pour M. Bertin (et 600 pour Mme Chauvet). Répartir sur la base de toutes les actions des associés non cédants (1 500 × 3 000 / 8 500 ≈ 529) laisserait des actions non attribuées, contrairement à la clause."
+        },
+        {
+          "id": "violation-preemption",
+          "kind": "true_false",
+          "prompt": "Vrai ou faux : si Mme Arnoux avait cédé ses actions à M. Lys sans respecter la clause statutaire de préemption, la cession aurait été nulle.",
+          "points": 1,
+          "answer": true,
+          "explanation": "Dans la SAS, toute cession effectuée en violation des clauses statutaires est nulle (C. com. L227-15). La clause, publiée avec les statuts, est opposable au cessionnaire."
+        },
+        {
+          "id": "inalienabilite",
+          "kind": "mcq",
+          "prompt": "À quelles conditions la clause d'inaliénabilité de cinq ans peut-elle être introduite dans les statuts d'Orfée ?",
+          "points": 2,
+          "options": [
+            "Par une décision collective à la majorité des deux tiers des voix des associés",
+            "Par une décision du président, la clause relevant de la gestion courante",
+            "Par une décision unanime des associés, la durée de cinq ans respectant le plafond légal de dix ans",
+            "Elle ne peut être introduite qu’au moment de la constitution de la société"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "Les statuts de SAS peuvent prévoir l'inaliénabilité des actions pour une durée n'excédant pas dix ans (C. com. L227-13) ; les clauses statutaires visées à cet article ne peuvent être adoptées ou modifiées qu'à l'unanimité des associés (L227-19). L'accord de tous les associés, y compris Logex, est donc nécessaire (option 3). Une majorité qualifiée (option 1) ne suffit pas ; le président n'est pas compétent (option 2) ; l'adoption en cours de vie sociale est possible (option 4)."
+        },
+        {
+          "id": "sortie-conjointe",
+          "kind": "open",
+          "prompt": "M. Bertin et Mme Chauvet peuvent-ils obtenir l'annulation de la cession consentie par Capinvest à Logex ? Indiquez leurs recours et l'enseignement à en tirer pour la rédaction des actes.",
+          "points": 4,
+          "model_answer": "La clause de sortie conjointe figure dans un pacte extrastatutaire : c'est un contrat qui ne lie que ses signataires (effet relatif, C. civ. art. 1199) et qui est en principe inopposable aux tiers. La cession à Logex, régulièrement agréée conformément aux statuts, respecte les clauses statutaires : elle n'encourt pas la nullité de l'article L227-15. Logex ignorait le pacte : elle n'a pas commis de faute en s'en rendant complice, ce qui écarte toute action contre elle. M. Bertin et Mme Chauvet disposent d'une action en responsabilité contractuelle contre Capinvest, qui a manqué à son engagement (art. 1217 et 1231-1) : dommages-intérêts correspondant à la perte de la possibilité de céder leurs actions au prix obtenu par Capinvest. Enseignement : une clause qui doit être opposable aux tiers (sortie conjointe, préemption, agrément renforcé) a intérêt à figurer dans les statuts ; le pacte offre la confidentialité au prix d'une sanction plus faible, qu'une clause pénale peut renforcer.",
+          "key_points": [
+            "Pacte extrastatutaire : effet relatif, inopposable au tiers de bonne foi (art. 1199)",
+            "Cession conforme aux statuts : pas de nullité au titre de L227-15",
+            "Responsabilité contractuelle de Capinvest : dommages-intérêts",
+            "Intérêt d’insérer la clause dans les statuts (opposabilité) ou d’assortir le pacte d’une clause pénale"
+          ],
+          "explanation": "La différence de sanction entre clause statutaire (nullité de la cession) et clause de pacte (dommages-intérêts, sauf collusion du tiers) est le point central du choix entre statuts et pacte."
+        }
+      ],
+      "total_points": 9,
+      "explanation": "Le cas oppose le régime des clauses statutaires de SAS (opposables à tous, cession irrégulière nulle, inaliénabilité limitée à dix ans et adoptée à l'unanimité) à celui du pacte extrastatutaire (effet relatif, sanction par dommages-intérêts), et fait appliquer une clause de préemption au prorata.",
+      "source_ref": "C. com. art. L227-13, L227-14, L227-15 et L227-19 ; C. civ. art. 1199, 1217 et 1231-1",
+      "verified": true,
+      "estimated_seconds": 840
     }
   ]
 }

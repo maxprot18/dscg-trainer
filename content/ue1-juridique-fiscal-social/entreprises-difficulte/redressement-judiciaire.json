@@ -7,7 +7,11 @@
       "theme": "entreprises-difficulte",
       "notion": "redressement-judiciaire",
       "difficulty": 2,
-      "tags": ["cessation des paiements", "délai de déclaration", "procédures collectives"],
+      "tags": [
+        "cessation des paiements",
+        "délai de déclaration",
+        "procédures collectives"
+      ],
       "statement": "Le 2 mai, la dirigeante de la SARL Orvalis constate que l'actif disponible de la société ne permet plus de faire face à son passif exigible, aucune réserve de crédit ni moratoire n'ayant été obtenu. Le redressement reste envisageable. Aucune procédure de conciliation n'a été demandée. Quelle affirmation est exacte ?",
       "options": [
         "La société doit demander l'ouverture d'une procédure de redressement judiciaire au plus tard dans les 45 jours qui suivent la cessation des paiements",
@@ -15,7 +19,9 @@
         "La société peut encore demander l'ouverture d'une procédure de sauvegarde, réservée aux débiteurs en cessation des paiements depuis moins de 45 jours",
         "Seul un créancier ou le ministère public peut saisir le tribunal ; le débiteur n'a pas qualité pour demander l'ouverture d'un redressement judiciaire"
       ],
-      "answer": [0],
+      "answer": [
+        0
+      ],
       "explanation": "La société est en cessation des paiements (impossibilité de faire face au passif exigible avec l'actif disponible, C. com. art. L631-1). Le débiteur doit alors demander l'ouverture d'un redressement judiciaire au plus tard dans les 45 jours suivant la cessation des paiements, s'il n'a pas demandé dans ce délai l'ouverture d'une conciliation (art. L631-4) ; le défaut de déclaration dans ce délai peut entraîner des sanctions pour le dirigeant. Le délai de 18 mois correspond à autre chose : c'est le report maximal de la date de cessation des paiements que peut fixer le tribunal avant le jugement d'ouverture (art. L631-8). La sauvegarde est réservée au débiteur qui n'est pas en cessation des paiements (art. L620-1). Enfin, le débiteur est le premier à pouvoir saisir le tribunal ; un créancier ou le ministère public peuvent également le faire (art. L631-5).",
       "source_ref": "C. com. art. L631-1, L631-4, L631-5 et L631-8 ; art. L620-1 (sauvegarde)",
       "verified": true,
@@ -138,6 +144,82 @@
       "source_ref": "PCG (règl. ANC 2014-03), comptes 416, 491 et 6817 ; C. com. art. L622-24 et R622-24",
       "verified": true,
       "estimated_seconds": 180
+    },
+    {
+      "id": "ue1-difficulte-rj-0006",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "redressement-judiciaire",
+      "difficulty": 3,
+      "tags": [
+        "période suspecte",
+        "report de la date de cessation des paiements",
+        "déclaration des créances",
+        "contrats en cours"
+      ],
+      "title": "SAS Tanneries Vézère : période suspecte et créanciers",
+      "context": "Le 5 novembre N, le tribunal ouvre un redressement judiciaire à l'égard de la SAS Tanneries Vézère et désigne un administrateur doté d'une mission d'assistance ; faute d'éléments, il fixe la date de cessation des paiements au jour du jugement. Le mandataire judiciaire établit ensuite que la société ne pouvait plus faire face à son passif exigible avec son actif disponible depuis le 20 mars N, et demande le report de cette date.\nActes accomplis par la société avant le jugement :\n- 10 avril N : remise d'un camion à un transporteur en paiement d'une facture échue de 25 000 € ;\n- 2 juin N : paiement, à son échéance, d'une mensualité d'emprunt à une banque qui ignorait tout des difficultés ;\n- 15 septembre N : constitution d'une hypothèque sur l'atelier au profit d'une banque, pour garantir un prêt accordé deux ans plus tôt ;\n- 25 octobre N : paiement de factures échues à un fournisseur qui savait que la société ne payait plus ses autres créanciers.\nLa société Silex, fournisseur de produits chimiques, détient une facture de 24 000 € TTC pour une livraison du 10 octobre N, impayée. À la demande de l'administrateur, elle a livré le 20 novembre N, pour les besoins de l'activité, des produits facturés 18 000 € TTC, payables le 20 décembre N.\nLe contrat de location des machines de tannage stipule sa résiliation automatique en cas d'ouverture d'une procédure collective. Le 2 décembre N, le loueur met en demeure l'administrateur de se prononcer sur la poursuite du contrat ; l'administrateur ne répond pas.",
+      "sub_questions": [
+        {
+          "id": "q1-report",
+          "kind": "true_false",
+          "points": 2,
+          "prompt": "Le tribunal peut reporter la date de cessation des paiements au 20 mars N.",
+          "answer": true,
+          "explanation": "La date de cessation des paiements peut être reportée une ou plusieurs fois, sans pouvoir être antérieure de plus de 18 mois à la date du jugement d'ouverture (L631-8), soit ici au plus tôt le 5 mai N-1. Le 20 mars N se situe dans cette limite : le report est possible et ouvre une période suspecte du 20 mars au 5 novembre N."
+        },
+        {
+          "id": "q2-nullites",
+          "kind": "mcq",
+          "points": 3,
+          "prompt": "Si la date est reportée au 20 mars N, quels actes sont frappés de nullité de droit ? (plusieurs réponses possibles)",
+          "options": [
+            "La remise du camion en paiement de la facture du transporteur (10 avril N)",
+            "Le paiement à son échéance de la mensualité d'emprunt (2 juin N)",
+            "L'hypothèque consentie pour garantir le prêt accordé deux ans plus tôt (15 septembre N)",
+            "Le paiement des factures échues au fournisseur informé des difficultés (25 octobre N)"
+          ],
+          "answer": [
+            0,
+            2
+          ],
+          "multiple": true,
+          "explanation": "Sont nuls de droit en période suspecte (L632-1) le paiement d'une dette échue par un mode non communément admis dans les relations d'affaires, comme la remise d'un bien en paiement (option 1), et l'hypothèque conventionnelle constituée pour une dette antérieurement contractée (option 3). Le paiement d'une dette échue par un mode normal relève seulement de la nullité facultative (L632-2), qui suppose que le créancier ait connu la cessation des paiements : la banque qui l'ignorait conserve le paiement (option 2), et le paiement au fournisseur informé (option 4) peut être annulé par le tribunal, sans l'être de droit."
+        },
+        {
+          "id": "q3-declaration",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "Pour quel montant la société Silex doit-elle déclarer sa créance au mandataire judiciaire ? Réponse en euros TTC.",
+          "expected_value": 24000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Seules les créances nées avant le jugement d'ouverture sont déclarées au mandataire, dans les 2 mois de la publication du jugement au BODACC (L622-24) : la facture du 10 octobre, soit 24 000 € TTC. La livraison du 20 novembre, faite pour les besoins de la période d'observation, fait naître une créance postérieure (L622-17), payable à son échéance du 20 décembre et, à défaut, assortie d'un privilège de paiement ; elle n'est pas déclarée comme une créance antérieure. Déclarer 42 000 € confond les deux catégories."
+        },
+        {
+          "id": "q4-contrat",
+          "kind": "open",
+          "points": 3,
+          "prompt": "Quel est le sort du contrat de location des machines ? Envisagez la clause de résiliation et les conséquences du silence de l'administrateur.",
+          "model_answer": "La clause qui prévoit la résiliation du contrat du seul fait de l'ouverture de la procédure est privée d'effet : aucune résiliation ne peut résulter de ce seul fait (L622-13, I) : le jugement du 5 novembre n'a pas mis fin au contrat. Seul l'administrateur peut exiger sa continuation ; il doit alors fournir la prestation promise (payer les loyers postérieurs à leur échéance), le loueur devant exécuter malgré les manquements antérieurs, qui ne lui donnent droit qu'à une déclaration au passif. Mis en demeure le 2 décembre N, l'administrateur dispose d'un mois pour prendre parti (délai que le juge-commissaire peut, avant son expiration, réduire ou prolonger de deux mois au plus) ; à défaut de réponse, le contrat est résilié de plein droit à l'expiration de ce délai, soit le 2 janvier N+1. Le loueur pourra alors reprendre ses machines et déclarer les loyers antérieurs impayés ainsi que les sommes nées de la résiliation.",
+          "key_points": [
+            "Clause de résiliation du seul fait de l'ouverture privée d'effet",
+            "Option de continuation réservée à l'administrateur",
+            "Délai d'un mois après la mise en demeure, résiliation de plein droit à défaut de réponse (2 janvier N+1)",
+            "Loyers antérieurs déclarés au passif"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas enchaîne les questions classiques du redressement : report de la date de cessation des paiements (18 mois au plus avant le jugement), tri des actes de la période suspecte entre nullités de droit (mode de paiement anormal, sûreté pour dette antérieure) et nullités facultatives (paiement normal d'une dette échue à un créancier informé), distinction entre créances antérieures déclarées et créances postérieures privilégiées, et sort des contrats en cours (option de l'administrateur, délai d'un mois après mise en demeure).",
+      "source_ref": "C. com. art. L631-8 (date de cessation des paiements, report de 18 mois), L632-1 et L632-2 (nullités de la période suspecte), L622-13, L622-17 et L622-24 (contrats en cours, créances postérieures, déclaration des créances), applicables au redressement par renvoi de l'art. L631-14",
+      "verified": true,
+      "estimated_seconds": 840
     }
   ]
 }

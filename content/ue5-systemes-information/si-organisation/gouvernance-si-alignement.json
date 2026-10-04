@@ -157,6 +157,60 @@
       "source_ref": "COBIT 2019 (ISACA), domaine EDM ; ITIL 4 (Axelos), gestion des problèmes ; modèle d'alignement stratégique de Henderson et Venkatraman (1993)",
       "verified": true,
       "estimated_seconds": 900
+    },
+    {
+      "id": "ue5-siorg-gouv-0005",
+      "type": "numeric",
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "gouvernance-si-alignement",
+      "difficulty": 1,
+      "tags": [
+        "SLA",
+        "disponibilité",
+        "gestion des niveaux de service",
+        "ITIL"
+      ],
+      "statement": "Le contrat de niveau de service (SLA) du portail de facturation garantit une disponibilité de 99,8 % calculée sur les seules heures d'ouverture du service, fixées à 12 heures par jour ouvré. Le mois de référence compte 22 jours ouvrés. Calculez l'indisponibilité maximale admise sur le mois sans que le SLA soit dépassé (en minutes, arrondie à la minute).",
+      "expected_value": 32,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "min",
+      "decimals": 0,
+      "explanation": "Temps d'ouverture du mois = 12 h × 22 jours = 264 h. Indisponibilité maximale admise = temps d'ouverture × (1 − SLA) = 264 × (1 − 0,998) = 264 × 0,002 = 0,528 h, soit 0,528 × 60 = 31,68 min, arrondies à 32 minutes. Erreurs classiques : raisonner sur 24 h × 30 jours (720 h, soit 86,4 min), alors que le SLA porte sur les heures d'ouverture ; lire 99,8 % comme 0,98 (316,8 min). Convertir le pourcentage en durée permet de vérifier le respect du SLA à partir du relevé des incidents.",
+      "source_ref": "ITIL 4 (Axelos), pratique de gestion des niveaux de service ; indisponibilité maximale admise = temps d’ouverture × (1 − SLA)",
+      "verified": true,
+      "estimated_seconds": 120
+    },
+    {
+      "id": "ue5-siorg-gouv-0006",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "si-organisation",
+      "notion": "gouvernance-si-alignement",
+      "difficulty": 2,
+      "tags": [
+        "alignement stratégique",
+        "Henderson et Venkatraman",
+        "gouvernance",
+        "schéma directeur"
+      ],
+      "statement": "La direction générale d'un distributeur de matériel agricole annonce l'ouverture d'une boutique en ligne dans six mois. La DSI affiche d'excellents indicateurs (disponibilité de 99,9 %, tous les SLA respectés), mais l'ERP ne sait pas publier les stocks en temps réel et aucun projet de vente en ligne ne figure au schéma directeur, construit il y a trois ans par la DSI seule. Quel diagnostic et quelle réponse sont les plus pertinents ?",
+      "options": [
+        "Le SI est bien aligné, puisque sa disponibilité dépasse les engagements de service ; il suffit d'ajouter un module de vente en ligne à l'ERP",
+        "C'est un défaut de management de la DSI, qui doit décider seule de reporter l'ouverture de la boutique en ligne faute de capacités techniques",
+        "C'est un défaut d'alignement stratégique : la stratégie métier n'est pas traduite dans la stratégie et l'infrastructure SI ; le comité stratégique SI, sous l'autorité de la direction générale, doit revoir les priorités du schéma directeur",
+        "C'est un problème de gestion des incidents au sens d'ITIL, à confier au centre de support"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'option 3 est la bonne : dans le modèle de Henderson et Venkatraman, l'alignement suppose la cohérence entre stratégie métier, stratégie SI, organisation et infrastructure. Une stratégie métier (vente en ligne) irréalisable avec l'infrastructure existante révèle un défaut d'alignement, aggravé par un schéma directeur construit sans les métiers. Arbitrer les priorités relève de la gouvernance, donc de la direction générale et du comité stratégique SI. L'option 1 confond excellence opérationnelle et alignement : un SI techniquement performant peut être déconnecté de la stratégie. L'option 2 attribue à la DSI une décision de gouvernance (renoncer à une orientation stratégique) qui revient à la direction générale ; la DSI assure le management. L'option 4 se trompe de niveau : aucun service n'est interrompu, il ne s'agit pas d'un incident.",
+      "source_ref": "Modèle d’alignement stratégique de Henderson et Venkatraman (1993) ; ISO/IEC 38500 (responsabilité de la direction : évaluer, orienter, surveiller)",
+      "verified": true,
+      "estimated_seconds": 75
     }
   ]
 }

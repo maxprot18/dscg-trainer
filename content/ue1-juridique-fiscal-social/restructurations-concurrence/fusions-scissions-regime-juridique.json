@@ -170,6 +170,35 @@
       "source_ref": "C. com. art. L. 236-1 et s. (rédaction issue de l'ordonnance n° 2023-393 du 24 mai 2023), dispositions relatives à la scission partielle",
       "verified": true,
       "estimated_seconds": 40
+    },
+    {
+      "id": "ue1-restr-fusjur-0006",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "restructurations-concurrence",
+      "notion": "fusions-scissions-regime-juridique",
+      "difficulty": 2,
+      "tags": [
+        "fusion",
+        "SNC",
+        "unanimité",
+        "engagements des associés"
+      ],
+      "statement": "La SA Corbières (capital réparti entre 40 actionnaires) doit être absorbée par la SNC Minervois, dont les associés ont la qualité de commerçant et répondent indéfiniment et solidairement des dettes sociales. Les actionnaires de Corbières recevront des parts de la SNC. Quelle condition d'approbation de la fusion est requise du côté de la SA Corbières ?",
+      "options": [
+        "Une décision de l'assemblée générale extraordinaire de Corbières à la majorité des deux tiers des voix exprimées, comme pour toute modification statutaire",
+        "L'accord de chacun des créanciers de Corbières, qui deviendront créanciers de la SNC",
+        "Le seul rapport favorable du commissaire à la fusion, qui dispense de toute décision des actionnaires",
+        "L'accord unanime des actionnaires de Corbières, car l'opération augmente leurs engagements"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "La fusion est en principe approuvée par l'assemblée extraordinaire de chaque société participante, aux conditions de majorité requises pour modifier ses statuts. Mais une opération qui augmente les engagements des associés ne peut être décidée qu'à l'unanimité de ces associés (C. civ. art. 1836, al. 2, règle reprise par le Code de commerce pour les fusions) : en devenant associés d'une SNC, les actionnaires de Corbières passent d'une responsabilité limitée à leurs apports à une responsabilité indéfinie et solidaire. L'option 4 est donc exacte.\nL'option 1 décrit la règle ordinaire, écartée ici parce que l'opération alourdit les engagements des associés. L'option 2 est fausse : les créanciers ne consentent pas à la fusion ; les créanciers non obligataires disposent seulement d'un droit d'opposition, sans effet suspensif. L'option 3 est fausse : le commissaire à la fusion se prononce sur le caractère équitable de la parité, il ne remplace pas la décision des associés.",
+      "source_ref": "C. com. art. L. 236-1 et s. (rédaction issue de l'ordonnance n° 2023-393 : approbation par chaque société participante dans les conditions requises pour la modification des statuts, unanimité des associés dont les engagements sont augmentés, opposition des créanciers) ; C. civ. art. 1836, al. 2 (unanimité pour augmenter les engagements d'un associé)",
+      "verified": true,
+      "estimated_seconds": 70
     }
   ]
 }

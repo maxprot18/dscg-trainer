@@ -14,6 +14,7 @@ const ProgressPage = lazy(() => import('@/pages/ProgressPage').then((m) => ({ de
 const SessionPage = lazy(() => import('@/pages/SessionPage').then((m) => ({ default: m.SessionPage })))
 const SettingsPage = lazy(() => import('@/pages/SettingsPage').then((m) => ({ default: m.SettingsPage })))
 const SearchPage = lazy(() => import('@/pages/SearchPage').then((m) => ({ default: m.SearchPage })))
+const OralPage = lazy(() => import('@/pages/OralPage').then((m) => ({ default: m.OralPage })))
 const ExercisePage = lazy(() => import('@/pages/ExercisePage').then((m) => ({ default: m.ExercisePage })))
 
 export function AppRoutes() {
@@ -31,6 +32,7 @@ export function AppRoutes() {
         <Route path="recherche" element={<SearchPage />} />
         <Route path="reglages" element={<SettingsPage />} />
         <Route path="exercice/:exerciseId" element={<ExercisePage />} />
+        <Route path="oral" element={<OralPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>

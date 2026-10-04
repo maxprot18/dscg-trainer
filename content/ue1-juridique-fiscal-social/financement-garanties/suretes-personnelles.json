@@ -149,6 +149,55 @@
       "source_ref": "C. civ. art. 2288, 2297, 2300 et 2302 (rédaction issue de l'ordonnance n° 2021-1192) ; art. 1174 (écrit électronique)",
       "verified": true,
       "estimated_seconds": 780
+    },
+    {
+      "id": "ue1-fin-surpers-0005",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "financement-garanties",
+      "notion": "suretes-personnelles",
+      "difficulty": 2,
+      "tags": [
+        "cautionnement",
+        "caution solidaire",
+        "bénéfice de discussion",
+        "mention"
+      ],
+      "statement": "En février 2025, Mme Roux s'est portée « caution solidaire » d'un prêt bancaire consenti à sa SARL. La mention qu'elle a apposée elle-même indique le montant maximal garanti en lettres et en chiffres, mais ne précise pas qu'elle ne pourra pas exiger de la banque qu'elle poursuive d'abord la SARL. La SARL étant défaillante, Mme Roux peut opposer à la banque le bénéfice de discussion.",
+      "answer": true,
+      "justification": "Vrai : la caution privée des bénéfices de discussion et de division doit le reconnaître dans sa mention ; à défaut, elle conserve le droit de s'en prévaloir (C. civ. art. 2297, al. 2).",
+      "explanation": "Depuis l'ordonnance n° 2021-1192 (cautionnements conclus à partir du 1er janvier 2022), la seule qualification de « caution solidaire » dans l'acte ne suffit pas à priver une caution personne physique du bénéfice de discussion : sa mention doit exprimer qu'elle ne peut exiger du créancier qu'il poursuive d'abord le débiteur (ou qu'il divise ses poursuites entre les cautions). Faute de cette précision, le cautionnement reste valable (la mention comporte bien le montant en lettres et en chiffres), mais Mme Roux peut demander que la banque discute d'abord les biens de la SARL. Si la mention avait été totalement absente, la sanction aurait été la nullité du cautionnement.",
+      "source_ref": "C. civ. art. 2297 (mention de la caution personne physique, al. 2 : bénéfices de discussion et de division), rédaction issue de l'ordonnance n° 2021-1192",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue1-fin-surpers-0006",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "financement-garanties",
+      "notion": "suretes-personnelles",
+      "difficulty": 1,
+      "tags": [
+        "garantie donnée par une SA",
+        "autorisation du conseil",
+        "inopposabilité"
+      ],
+      "statement": "Le directeur général de la SA Galéa (société industrielle) signe, au nom de la société, un cautionnement de 150 000 € garantissant la dette d'un distributeur indépendant envers sa banque. Le conseil d'administration n'a donné aucune autorisation, ni spéciale ni globale. Le distributeur est défaillant. Quelle est la situation de la banque ?",
+      "options": [
+        "Le cautionnement est inopposable à Galéa : la banque ne peut pas en exiger l'exécution",
+        "Le cautionnement engage Galéa, car le directeur général est investi des pouvoirs les plus étendus pour agir au nom de la société",
+        "Le cautionnement engage Galéa, mais seulement après ratification par l'assemblée générale extraordinaire",
+        "Le cautionnement engage personnellement le directeur général à la place de la société, à hauteur de 150 000 €"
+      ],
+      "answer": [
+        0
+      ],
+      "multiple": false,
+      "explanation": "Dans une SA autre qu'un établissement bancaire ou financier, les cautions, avals et garanties donnés au profit de tiers doivent être autorisés par le conseil d'administration (C. com. art. L225-35, al. 4), le cas échéant dans une limite globale annuelle. À défaut, l'engagement est inopposable à la société : option 1. L'option 2 oublie que ces pouvoirs du directeur général s'exercent sous réserve de ceux que la loi attribue au conseil. L'option 3 est fausse : l'autorisation relève du conseil, non de l'AGE. L'option 4 invente une substitution : la loi ne transforme pas l'engagement de la société en engagement personnel du dirigeant (sa responsabilité ne peut être recherchée que sur le terrain de la faute).",
+      "source_ref": "C. com. art. L225-35, al. 4 (autorisation des cautions, avals et garanties par le conseil d'administration) ; art. L225-56 (pouvoirs du directeur général)",
+      "verified": true,
+      "estimated_seconds": 60
     }
   ]
 }

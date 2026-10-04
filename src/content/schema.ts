@@ -341,16 +341,38 @@ export const journalEntryExerciseSchema = z
   .strictObject({ ...exerciseBase, type: z.literal('journal_entry'), statement: text(), ...journalFields })
   .superRefine((ex, ctx) => checkJournalEntries(ctx, ex.entries))
 
+/** Annexe d'un dossier de type examen (Markdown : texte, tableaux). */
+export const annexSchema = z.strictObject({ title: text(), content: text() })
+
+/** Sous-questions d'un cas pratique : 3 à 5 ; un dossier de type examen va jusqu'à 15. */
+export const CASE_MAX_SUB_QUESTIONS = 5
+export const DOSSIER_MAX_SUB_QUESTIONS = 15
+
 export const caseStudyExerciseSchema = z
   .strictObject({
     ...exerciseBase,
     type: z.literal('case_study'),
     title: text(),
     context: text(),
-    sub_questions: z.array(subQuestionSchema).min(3).max(5),
+    sub_questions: z.array(subQuestionSchema).min(3).max(DOSSIER_MAX_SUB_QUESTIONS),
     total_points: positiveNumber().optional(),
+    /** Dossier de type examen : long sujet avec annexes, servi dans l'examen blanc et la liste des sujets type. */
+    dossier: z.boolean().optional(),
+    annexes: z.array(annexSchema).max(10).optional(),
   })
-  .superRefine((ex, ctx) => checkSubQuestionList(ctx, ex.sub_questions, ex.total_points, 'sub_questions'))
+  .superRefine((ex, ctx) => {
+    checkSubQuestionList(ctx, ex.sub_questions, ex.total_points, 'sub_questions')
+    if (ex.dossier) {
+      if (ex.sub_questions.length < 6) issue(ctx, ['sub_questions'], 'Un dossier de type examen compte au moins 6 sous-questions')
+      if ((ex.annexes?.length ?? 0) < 2) issue(ctx, ['annexes'], 'Un dossier de type examen compte au moins 2 annexes')
+      if (ex.estimated_seconds < 2700) issue(ctx, ['estimated_seconds'], 'Un dossier de type examen dure au moins 45 minutes (2 700 s)')
+      if (ex.total_points === undefined) issue(ctx, ['total_points'], 'Un dossier de type examen indique son barème (total_points)')
+    } else {
+      if (ex.sub_questions.length > CASE_MAX_SUB_QUESTIONS)
+        issue(ctx, ['sub_questions'], `Un cas pratique compte au plus ${CASE_MAX_SUB_QUESTIONS} sous-questions (sinon : dossier: true)`)
+      if (ex.annexes?.length) issue(ctx, ['annexes'], 'Les annexes sont réservées aux dossiers de type examen (dossier: true)')
+    }
+  })
 
 export const consolidationEntitySchema = z.strictObject({
   id: kebabId(),

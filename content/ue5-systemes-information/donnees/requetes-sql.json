@@ -156,6 +156,60 @@
       "source_ref": "Norme ISO/IEC 9075 (SQL) : SELECT, INNER JOIN, GROUP BY, HAVING ; programme DSCG UE 5 (exploitation des données)",
       "verified": true,
       "estimated_seconds": 720
+    },
+    {
+      "id": "ue5-donnees-sql-0005",
+      "type": "numeric",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "requetes-sql",
+      "difficulty": 2,
+      "tags": [
+        "SQL",
+        "AVG",
+        "NULL",
+        "fonctions d’agrégat"
+      ],
+      "statement": "La table DEPLACEMENT (id_dep, collab, km) contient les lignes suivantes, la valeur NULL signalant un kilométrage non encore saisi :\nD1, A, 120\nD2, B, NULL\nD3, A, 80\nD4, C, 200\nD5, B, NULL\nD6, C, 100\n\nOn exécute la requête :\nSELECT AVG(km) AS moyenne FROM DEPLACEMENT WHERE collab <> 'A';\n\nQuelle valeur renvoie la colonne moyenne (en km) ?",
+      "expected_value": 150,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "km",
+      "decimals": 0,
+      "explanation": "WHERE collab <> 'A' conserve D2, D4, D5 et D6. AVG ignore les valeurs NULL : la moyenne porte sur les seules lignes renseignées, D4 et D6, soit (200 + 100) ÷ 2 = 150 km. Erreurs classiques : diviser par le nombre de lignes retenues (300 ÷ 4 = 75), comme le ferait SUM(km) ÷ COUNT(*), ou oublier le filtre (500 ÷ 4 = 125). Pour traiter un kilométrage manquant comme zéro, il faudrait l'indiquer explicitement (par exemple COALESCE(km, 0)).",
+      "source_ref": "ISO/IEC 9075 (SQL) : fonctions d’agrégat (AVG, SUM et COUNT(colonne) ignorent les valeurs NULL)",
+      "verified": true,
+      "estimated_seconds": 120
+    },
+    {
+      "id": "ue5-donnees-sql-0006",
+      "type": "mcq",
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "requetes-sql",
+      "difficulty": 2,
+      "tags": [
+        "SQL",
+        "UPDATE",
+        "WHERE",
+        "mise à jour"
+      ],
+      "statement": "Dans la table FACTURE (num_fact, id_client, montant, statut), de clé primaire num_fact (chaîne de caractères), le comptable veut passer au statut 'Payée' la seule facture F12, déjà enregistrée. Quelle instruction est correcte ?",
+      "options": [
+        "UPDATE FACTURE SET statut = 'Payée';",
+        "UPDATE FACTURE SET statut = 'Payée' WHERE num_fact = 'F12';",
+        "UPDATE FACTURE WHERE num_fact = 'F12' SET statut = 'Payée';",
+        "INSERT INTO FACTURE (num_fact, statut) VALUES ('F12', 'Payée');"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'option 2 est la bonne : UPDATE table SET colonne = valeur WHERE condition modifie les seules lignes qui vérifient la condition ; num_fact étant une chaîne, sa valeur s'écrit entre apostrophes. L'option 1, sans WHERE, passe toutes les factures au statut 'Payée'. L'option 3 inverse l'ordre des clauses (SET doit précéder WHERE) : elle est refusée par le SGBD. L'option 4 tente d'insérer une nouvelle ligne ; la clé primaire F12 existant déjà, l'insertion est rejetée (et elle ne modifierait de toute façon pas la facture existante).",
+      "source_ref": "ISO/IEC 9075 (SQL) : instructions de mise à jour UPDATE … SET … WHERE et INSERT INTO … VALUES",
+      "verified": true,
+      "estimated_seconds": 60
     }
   ]
 }

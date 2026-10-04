@@ -15,4 +15,9 @@ describe('stripUnverifiedExercises', () => {
     const src = JSON.stringify({ ues: [] })
     expect(stripUnverifiedExercises(src)).toBe(src)
   })
+
+  it('filtre aussi les sujets d’oral', () => {
+    const out = JSON.parse(stripUnverifiedExercises(JSON.stringify({ topics: [{ id: 'a', verified: true }, { id: 'b', verified: false }] })))
+    expect(out.topics.map((t: { id: string }) => t.id)).toEqual(['a'])
+  })
 })

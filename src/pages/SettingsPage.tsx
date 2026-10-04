@@ -1,31 +1,27 @@
-import { Download, RotateCcw, Upload } from 'lucide-react'
+import { BellRing, Bug, Download, RotateCcw, ShieldCheck, Upload } from 'lucide-react'
 import { useRef, useState } from 'react'
 
 import { useInstallPrompt } from '@/hooks/useInstallPrompt'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { clearProgress, exportProgress, importProgress, type ProgressExport } from '@/db/db'
+import { clearProgress, importProgress, type ProgressExport } from '@/db/db'
+import { downloadBackup, isIosBrowserTab, requestPersistence, useStorageStatus } from '@/lib/backup'
+import { clearErrors, errorIssueUrl, readErrors } from '@/lib/errorLog'
+import { taxonomy } from '@/content/load'
+import { downloadReminder } from '@/lib/reminder'
 import { DAILY_GOAL_CHOICES, saveSettings, SESSION_SIZE_CHOICES, useSettings } from '@/lib/settings'
 
 const selectClass =
   'border-input bg-background focus-visible:ring-ring/50 h-10 rounded-md border px-3 text-sm outline-none focus-visible:ring-[3px]'
 
-async function downloadExport() {
-  const data = await exportProgress()
-  const url = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }))
-  const a = document.createElement('a')
-  a.href = url
-  a.download = `dscg-progression-${data.exportedAt.slice(0, 10)}.json`
-  a.click()
-  URL.revokeObjectURL(url)
-}
-
 export function SettingsPage() {
   const settings = useSettings()
   const install = useInstallPrompt()
+  const storage = useStorageStatus()
   const input = useRef<HTMLInputElement>(null)
   const [message, setMessage] = useState<string | null>(null)
+  const [errors, setErrors] = useState(readErrors)
 
   const onFile = async (file: File) => {
     try {
@@ -47,6 +43,60 @@ export function SettingsPage() {
   return (
     <div className="flex flex-col gap-4">
       <h1 className="text-2xl font-bold">Réglages</h1>
+      <Card id="examen" className="scroll-mt-4">
+        <CardHeader>
+          <CardTitle>Mon examen</CardTitle>
+          <CardDescription>Date et UE passées : l’accueil en tire un plan de révision et un rythme quotidien.</CardDescription>
+        </CardHeader>
+        <CardContent className="flex flex-col gap-3 text-sm">
+          <label className="flex items-center justify-between gap-3">
+            Date de l’examen
+            <input
+              type="date"
+              className={selectClass}
+              value={settings.examDate ?? ''}
+              onChange={(e) => saveSettings({ examDate: e.target.value || null })}
+            />
+          </label>
+          <fieldset className="flex flex-col gap-1">
+            <legend className="mb-1">UE passées à cette session</legend>
+            <div className="grid grid-cols-1 gap-1 sm:grid-cols-2">
+              {taxonomy.ues.map((u) => (
+                <label key={u.id} className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    className="size-4"
+                    checked={settings.examUes.includes(u.id)}
+                    onChange={(e) =>
+                      saveSettings({
+                        examUes: e.target.checked ? [...settings.examUes, u.id] : settings.examUes.filter((x) => x !== u.id),
+                      })
+                    }
+                  />
+                  {u.id} — {u.title}
+                </label>
+              ))}
+            </div>
+          </fieldset>
+          <div className="flex flex-wrap items-end gap-2 border-t pt-3">
+            <label className="flex flex-col gap-1">
+              Rappel quotidien à
+              <input
+                type="time"
+                className={selectClass}
+                value={settings.reminderTime}
+                onChange={(e) => e.target.value && saveSettings({ reminderTime: e.target.value })}
+              />
+            </label>
+            <Button variant="outline" onClick={() => downloadReminder(settings.reminderTime, settings.examDate)}>
+              <BellRing /> Ajouter à mon agenda
+            </Button>
+          </div>
+          <p className="text-muted-foreground text-xs">
+            Le rappel est un fichier d’agenda (.ics) : un événement chaque jour à l’heure choisie{settings.examDate ? ' jusqu’à l’examen' : ''}, avec alerte. Ouvrez-le pour l’ajouter à votre agenda.
+          </p>
+        </CardContent>
+      </Card>
       <Card>
         <CardHeader>
           <CardTitle>Entraînement</CardTitle>
@@ -128,7 +178,7 @@ export function SettingsPage() {
         </CardHeader>
         <CardContent className="flex flex-col gap-2">
           <div className="flex flex-wrap gap-2">
-            <Button variant="outline" onClick={() => void downloadExport()}>
+            <Button variant="outline" onClick={() => void downloadBackup()}>
               <Download /> Exporter ma progression (JSON)
             </Button>
             <Button variant="outline" onClick={() => input.current?.click()}>
@@ -150,6 +200,30 @@ export function SettingsPage() {
               }}
             />
           </div>
+          <p className="text-muted-foreground text-sm">
+            {storage.lastBackup
+              ? `Dernière sauvegarde depuis cet appareil : ${new Date(storage.lastBackup).toLocaleDateString('fr-FR')}.`
+              : 'Aucune sauvegarde exportée depuis cet appareil.'}{' '}
+            {storage.persisted === true
+              ? 'Stockage protégé : le navigateur ne l’effacera pas pour gagner de la place.'
+              : storage.persisted === false
+                ? 'Stockage non protégé : le navigateur peut l’effacer s’il manque de place.'
+                : ''}
+            {isIosBrowserTab() && ' Sur iPhone, installez l’application : Safari efface les données d’un site après 7 jours sans visite.'}
+          </p>
+          {storage.persisted === false && storage.canPersist && (
+            <Button
+              variant="outline"
+              className="self-start"
+              onClick={() =>
+                void requestPersistence().then((ok) =>
+                  setMessage(ok ? 'Stockage protégé.' : 'Le navigateur a refusé : exportez régulièrement votre progression.'),
+                )
+              }
+            >
+              <ShieldCheck /> Protéger le stockage
+            </Button>
+          )}
           {message && (
             <p role="status" className="text-sm">
               {message}
@@ -157,6 +231,40 @@ export function SettingsPage() {
           )}
         </CardContent>
       </Card>
+      {errors.length > 0 && (
+        <Card>
+          <CardHeader>
+            <CardTitle>Erreurs récentes</CardTitle>
+            <CardDescription>Gardées sur cet appareil seulement ; rien n’est envoyé sans votre accord.</CardDescription>
+          </CardHeader>
+          <CardContent className="flex flex-col gap-2 text-sm">
+            <ul className="flex flex-col gap-1">
+              {errors.slice(0, 5).map((e) => (
+                <li key={e.date} className="flex flex-wrap items-baseline justify-between gap-2">
+                  <span className="min-w-0 break-words">
+                    <span className="text-muted-foreground">{new Date(e.date).toLocaleString('fr-FR')} · {e.route} · </span>
+                    {e.message}
+                  </span>
+                  <a href={errorIssueUrl(e)} target="_blank" rel="noopener noreferrer" className="text-primary inline-flex items-center gap-1 underline">
+                    <Bug className="size-3.5" aria-hidden /> Signaler
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <Button
+              variant="ghost"
+              size="sm"
+              className="self-start"
+              onClick={() => {
+                clearErrors()
+                setErrors([])
+              }}
+            >
+              Effacer le journal
+            </Button>
+          </CardContent>
+        </Card>
+      )}
     </div>
   )
 }

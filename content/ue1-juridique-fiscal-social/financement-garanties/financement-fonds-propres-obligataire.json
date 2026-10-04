@@ -165,6 +165,34 @@
       "source_ref": "PCG (règl. ANC 2014-03), comptes 163 (autres emprunts obligataires) et 169 (primes de remboursement des obligations)",
       "verified": true,
       "estimated_seconds": 180
+    },
+    {
+      "id": "ue1-fin-oblig-0006",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "financement-garanties",
+      "notion": "financement-fonds-propres-obligataire",
+      "difficulty": 2,
+      "tags": [
+        "cession Dailly",
+        "mobilisation de créances",
+        "garantie du cédant"
+      ],
+      "statement": "Le 2 mars N, la SAS Ombrée cède à sa banque, par bordereau Dailly daté du même jour et à titre d'escompte, une créance professionnelle de 40 000 € sur son client Pivert, payable le 30 avril N. Le contrat ne contient aucune clause particulière sur la garantie du cédant. Le 30 avril, Pivert, devenu insolvable, ne paie pas. Quelle est la situation ?",
+      "options": [
+        "La banque supporte seule la perte : devenue propriétaire de la créance, elle ne dispose d'aucun recours contre Ombrée",
+        "La cession est inopposable à Pivert et aux tiers faute de signification par commissaire de justice : Ombrée reste seule créancière",
+        "La banque doit d'abord faire constater l'insolvabilité de Pivert en justice avant de pouvoir agir contre Ombrée, qui n'est qu'une caution simple",
+        "La banque peut réclamer le paiement à Ombrée, garante solidaire du paiement de la créance cédée, la cession lui étant opposable depuis le 2 mars N"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Sauf convention contraire, le signataire du bordereau Dailly est garant solidaire du paiement des créances cédées (C. mon. fin. art. L313-24) : la banque peut se retourner directement contre Ombrée, et la cession est opposable aux tiers dès la date portée sur le bordereau, sans formalité (art. L313-27) : option 4. L'option 1 confond la cession Dailly avec un affacturage assorti d'une garantie de bonne fin, qui transfère le risque d'impayé au factor. L'option 2 applique à tort l'ancienne signification par huissier de la cession de créance civile (ancien C. civ. art. 1690) : le bordereau suffit (la notification au débiteur sert seulement à l'empêcher de payer le cédant). L'option 3 est fausse : la garantie est solidaire, il n'y a ni bénéfice de discussion ni préalable judiciaire.",
+      "source_ref": "C. mon. fin. art. L313-23, L313-24 (garantie solidaire du cédant) et L313-27 (opposabilité à la date du bordereau)",
+      "verified": true,
+      "estimated_seconds": 75
     }
   ]
 }
