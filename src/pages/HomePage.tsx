@@ -1,7 +1,8 @@
 import { Flame, Search, Target } from 'lucide-react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
+import { BackupReminder } from '@/components/BackupReminder'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { exerciseCount, taxonomy } from '@/content/load'
@@ -9,6 +10,7 @@ import { useProgress } from '@/db/progress'
 import { newSeed, sessionSearch } from '@/engine/sessionConfig'
 import { startOfDay } from '@/engine/srs'
 import { currentStreak } from '@/engine/stats'
+import { requestPersistenceOnce } from '@/lib/backup'
 import { useSettings } from '@/lib/settings'
 
 export function HomePage() {
@@ -19,6 +21,11 @@ export function HomePage() {
   const due = progress?.reviews.filter((r) => r.due <= now).length ?? 0
   const { dailyGoal } = useSettings()
   const today = progress ? progress.attempts.filter((a) => startOfDay(a.date) === startOfDay(now)).length : 0
+  const attempts = progress?.attempts.length ?? 0
+  // Stockage persistant demandé une fois, dès que l'utilisateur a commencé à s'entraîner.
+  useEffect(() => {
+    void requestPersistenceOnce(attempts)
+  }, [attempts])
 
   return (
     <div className="flex flex-col gap-6">
@@ -26,6 +33,7 @@ export function HomePage() {
         <h1 className="text-2xl font-bold">DSCG Trainer</h1>
         <p className="text-muted-foreground">Audit, comptabilité, IFRS, consolidation, finance, droit et fiscalité.</p>
       </header>
+      <BackupReminder attempts={attempts} now={now} />
       <Button asChild size="lg" className="h-14 text-lg">
         <Link to="/entrainement">S'entraîner</Link>
       </Button>

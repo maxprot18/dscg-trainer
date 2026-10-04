@@ -1,29 +1,21 @@
-import { Download, RotateCcw, Upload } from 'lucide-react'
+import { Download, RotateCcw, ShieldCheck, Upload } from 'lucide-react'
 import { useRef, useState } from 'react'
 
 import { useInstallPrompt } from '@/hooks/useInstallPrompt'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { clearProgress, exportProgress, importProgress, type ProgressExport } from '@/db/db'
+import { clearProgress, importProgress, type ProgressExport } from '@/db/db'
+import { downloadBackup, isIosBrowserTab, requestPersistence, useStorageStatus } from '@/lib/backup'
 import { DAILY_GOAL_CHOICES, saveSettings, SESSION_SIZE_CHOICES, useSettings } from '@/lib/settings'
 
 const selectClass =
   'border-input bg-background focus-visible:ring-ring/50 h-10 rounded-md border px-3 text-sm outline-none focus-visible:ring-[3px]'
 
-async function downloadExport() {
-  const data = await exportProgress()
-  const url = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }))
-  const a = document.createElement('a')
-  a.href = url
-  a.download = `dscg-progression-${data.exportedAt.slice(0, 10)}.json`
-  a.click()
-  URL.revokeObjectURL(url)
-}
-
 export function SettingsPage() {
   const settings = useSettings()
   const install = useInstallPrompt()
+  const storage = useStorageStatus()
   const input = useRef<HTMLInputElement>(null)
   const [message, setMessage] = useState<string | null>(null)
 
@@ -128,7 +120,7 @@ export function SettingsPage() {
         </CardHeader>
         <CardContent className="flex flex-col gap-2">
           <div className="flex flex-wrap gap-2">
-            <Button variant="outline" onClick={() => void downloadExport()}>
+            <Button variant="outline" onClick={() => void downloadBackup()}>
               <Download /> Exporter ma progression (JSON)
             </Button>
             <Button variant="outline" onClick={() => input.current?.click()}>
@@ -150,6 +142,30 @@ export function SettingsPage() {
               }}
             />
           </div>
+          <p className="text-muted-foreground text-sm">
+            {storage.lastBackup
+              ? `Dernière sauvegarde depuis cet appareil : ${new Date(storage.lastBackup).toLocaleDateString('fr-FR')}.`
+              : 'Aucune sauvegarde exportée depuis cet appareil.'}{' '}
+            {storage.persisted === true
+              ? 'Stockage protégé : le navigateur ne l’effacera pas pour gagner de la place.'
+              : storage.persisted === false
+                ? 'Stockage non protégé : le navigateur peut l’effacer s’il manque de place.'
+                : ''}
+            {isIosBrowserTab() && ' Sur iPhone, installez l’application : Safari efface les données d’un site après 7 jours sans visite.'}
+          </p>
+          {storage.persisted === false && storage.canPersist && (
+            <Button
+              variant="outline"
+              className="self-start"
+              onClick={() =>
+                void requestPersistence().then((ok) =>
+                  setMessage(ok ? 'Stockage protégé.' : 'Le navigateur a refusé : exportez régulièrement votre progression.'),
+                )
+              }
+            >
+              <ShieldCheck /> Protéger le stockage
+            </Button>
+          )}
           {message && (
             <p role="status" className="text-sm">
               {message}
