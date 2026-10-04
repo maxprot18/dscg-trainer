@@ -11,6 +11,7 @@ import {
   notionProgress,
   programProgress,
   sessionHistory,
+  notionsToReview,
   totalTimeMs,
 } from './stats'
 
@@ -78,5 +79,13 @@ describe('statistiques de progression', () => {
     expect(h.map((s) => s.id)).toEqual([2, 1])
     expect(h[1]).toMatchObject({ planned: 2, answered: 2, correct: 1, durationMs: 120_000 })
     expect(totalTimeMs(list)).toBe(120_000)
+  })
+
+  it('notions à revoir après une session : ratées d’abord, les plus ratées en tête', () => {
+    const e = (notion: string, correct: boolean) => ({ exercise: { notion }, result: { correct } })
+    expect(notionsToReview([e('a', true), e('b', false), e('b', true), e('c', false), e('c', false)])).toEqual([
+      { notion: 'c', failed: 2, total: 2 },
+      { notion: 'b', failed: 1, total: 2 },
+    ])
   })
 })

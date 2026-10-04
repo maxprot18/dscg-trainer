@@ -208,3 +208,18 @@ export function sessionHistory(sessions: readonly Session[], attempts: readonly 
     })
     .sort((a, b) => b.startedAt - a.startedAt)
 }
+
+/** Notions des exercices ratés, avec le nombre d'échecs, les plus ratées d'abord. */
+export function notionsToReview(entries: readonly { exercise: { notion: string }; result: { correct: boolean } }[]): { notion: string; failed: number; total: number }[] {
+  const byNotion = new Map<string, { failed: number; total: number }>()
+  for (const { exercise, result } of entries) {
+    const n = byNotion.get(exercise.notion) ?? { failed: 0, total: 0 }
+    n.total++
+    if (!result.correct) n.failed++
+    byNotion.set(exercise.notion, n)
+  }
+  return [...byNotion.entries()]
+    .filter(([, n]) => n.failed > 0)
+    .map(([notion, n]) => ({ notion, ...n }))
+    .sort((a, b) => b.failed - a.failed || a.notion.localeCompare(b.notion))
+}

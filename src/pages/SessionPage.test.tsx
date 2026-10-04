@@ -83,6 +83,7 @@ describe('SessionPage', () => {
 
     expect(screen.getByRole('heading', { name: 'Bilan de la session' })).toBeInTheDocument()
     expect(screen.getByText(/2 \/ 2 réussis/)).toBeInTheDocument()
+    expect(screen.queryByText('Notions à revoir')).not.toBeInTheDocument()
     await waitFor(async () => expect(await db.attempts.count()).toBe(2))
     const sessions = await db.sessions.toArray()
     expect(sessions).toHaveLength(1)

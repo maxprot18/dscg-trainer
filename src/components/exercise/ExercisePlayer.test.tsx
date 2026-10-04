@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
+import { MemoryRouter } from 'react-router-dom'
 
 import { exampleExercises } from '@/content/__fixtures__/examples'
 import { exerciseSchema, type Exercise } from '@/content/schema'
@@ -10,7 +11,11 @@ const ex = (type: keyof typeof exampleExercises): Exercise => exerciseSchema.par
 
 function setup(exercise: Exercise) {
   const onComplete = vi.fn()
-  render(<ExercisePlayer exercise={exercise} onComplete={onComplete} />)
+  render(
+    <MemoryRouter>
+      <ExercisePlayer exercise={exercise} onComplete={onComplete} />
+    </MemoryRouter>,
+  )
   return { onComplete, user: userEvent.setup() }
 }
 
@@ -130,7 +135,11 @@ describe('ExercisePlayer', () => {
   it('examen blanc : réponse verrouillée, aucune correction pendant l’épreuve', async () => {
     const e = ex('mcq')
     const onComplete = vi.fn()
-    render(<ExercisePlayer exercise={e} onComplete={onComplete} deferFeedback />)
+    render(
+      <MemoryRouter>
+        <ExercisePlayer exercise={e} onComplete={onComplete} deferFeedback />
+      </MemoryRouter>,
+    )
     const user = userEvent.setup()
     await user.click(screen.getAllByRole('radio')[0])
     await user.click(screen.getByRole('button', { name: 'Valider' }))
@@ -144,7 +153,11 @@ describe('ExercisePlayer', () => {
 
   it('relecture : exercice affiché corrigé avec les réponses données', () => {
     const e = ex('mcq')
-    render(<ExercisePlayer exercise={e} review={[{ kind: 'choice', selected: [0] }]} />)
+    render(
+      <MemoryRouter>
+        <ExercisePlayer exercise={e} review={[{ kind: 'choice', selected: [0] }]} />
+      </MemoryRouter>,
+    )
     expect(screen.getByRole('status')).toHaveTextContent('Réponse incorrecte')
     expect(screen.getByText(e.explanation)).toBeInTheDocument()
     expect(screen.queryByRole('button', { name: 'Valider' })).not.toBeInTheDocument()

@@ -6,11 +6,17 @@
  * réponses validées sont verrouillées et la correction est affichée à la fin, en relecture
  * (`review` : réponses déjà données, exercice affiché entièrement corrigé).
  */
+import { BookOpen } from 'lucide-react'
 import { useMemo, useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
 
+import { BookmarkButton } from '@/components/BookmarkButton'
 import { ReportLink } from '@/components/ReportLink'
+import { TypeIcon } from '@/components/TypeIcon'
 import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
 import { CYCLE_LABELS, TYPE_LABELS } from '@/content/labels'
+import { hasCourse } from '@/content/load'
 import type { Exercise } from '@/content/schema'
 import { combineResults, gradePart, type ExerciseResult, type PartResponse, type PartResult } from '@/engine/grading'
 import { exerciseParts, STAGE_LABELS } from '@/engine/parts'
@@ -123,7 +129,9 @@ export function ExercisePlayer({ exercise, onComplete, deferFeedback = false, re
   return (
     <article className="flex flex-col gap-5">
       <div className="flex flex-wrap items-center gap-2">
-        <Badge>{TYPE_LABELS[exercise.type]}</Badge>
+        <Badge>
+          <TypeIcon type={exercise.type} className="size-3.5" /> {TYPE_LABELS[exercise.type]}
+        </Badge>
         <Badge variant="outline">Niveau {exercise.difficulty}</Badge>
       </div>
       <Statement exercise={exercise} />
@@ -168,6 +176,16 @@ export function ExercisePlayer({ exercise, onComplete, deferFeedback = false, re
             <Explanation>{exercise.explanation}</Explanation>
           </div>
           <p className="text-muted-foreground text-xs">Référence : {exercise.source_ref}</p>
+          <div className="flex flex-wrap items-center gap-2">
+            {hasCourse(exercise.notion) && (
+              <Button asChild variant="outline" size="sm">
+                <Link to={`/cours/${exercise.notion}`}>
+                  <BookOpen /> Voir la fiche de cours
+                </Link>
+              </Button>
+            )}
+            <BookmarkButton target={exercise.id} />
+          </div>
           <ReportLink href={exerciseIssueUrl(exercise)} />
         </div>
       )}

@@ -2,6 +2,7 @@ import { ArrowLeft } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 
+import { BookmarkButton } from '@/components/BookmarkButton'
 import { Markdown } from '@/components/Markdown'
 import { ReportLink } from '@/components/ReportLink'
 import { Badge } from '@/components/ui/badge'
@@ -62,7 +63,10 @@ export function CoursePage() {
           <article className="text-sm">
             <Markdown source={text} pageTitle />
           </article>
-          <ReportLink href={courseIssueUrl(notionId, entry.notion.title)} label="Signaler une erreur dans cette fiche" />
+          <div className="flex flex-wrap items-center gap-2">
+            <BookmarkButton target={`notion:${notionId}`} />
+            <ReportLink href={courseIssueUrl(notionId, entry.notion.title)} label="Signaler une erreur dans cette fiche" />
+          </div>
         </>
       )}
       <Button
