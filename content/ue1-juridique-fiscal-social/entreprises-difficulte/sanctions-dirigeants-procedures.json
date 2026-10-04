@@ -1,0 +1,103 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-difficulte-sanct-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "sanctions-dirigeants-procedures",
+      "difficulty": 2,
+      "tags": [
+        "insuffisance d'actif",
+        "faute de gestion",
+        "responsabilité des dirigeants"
+      ],
+      "statement": "La SAS Gardon a été placée en liquidation judiciaire le 15 juin N ; la procédure fait apparaître une insuffisance d'actif. Le liquidateur envisage une action en responsabilité contre l'ancien président. Quelle affirmation est exacte ?",
+      "options": [
+        "L'action suppose une faute de gestion, autre qu'une simple négligence, ayant contribué à l'insuffisance d'actif ; elle se prescrit par trois ans à compter du jugement de liquidation",
+        "Le président est tenu de plein droit de l'intégralité du passif social, dès lors que la liquidation fait apparaître une insuffisance d'actif",
+        "L'action peut être exercée par chaque créancier impayé, à titre individuel, et les sommes obtenues lui reviennent en priorité",
+        "L'action est ouverte dès le jugement d'ouverture d'une sauvegarde, avant toute liquidation"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "L'action en responsabilité pour insuffisance d'actif (C. com. art. L651-2) suppose une liquidation judiciaire faisant apparaître une insuffisance d'actif et une faute de gestion ayant contribué à cette insuffisance ; la simple négligence est exclue depuis la loi n° 2016-1691 ; l'action se prescrit par trois ans à compter du jugement qui prononce la liquidation : option 1. Il n'y a aucune responsabilité de plein droit : le tribunal apprécie la faute et peut ne mettre à la charge du dirigeant qu'une partie de l'insuffisance (option 2). L'action appartient au liquidateur et au ministère public (et, sous conditions, aux contrôleurs) ; les sommes versées entrent dans le patrimoine du débiteur et profitent à tous les créanciers (option 3). Elle n'existe pas en sauvegarde (option 4).",
+      "source_ref": "C. com. art. L651-2 et L651-3",
+      "verified": true,
+      "estimated_seconds": 80
+    },
+    {
+      "id": "ue1-difficulte-sanct-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "sanctions-dirigeants-procedures",
+      "difficulty": 3,
+      "tags": [
+        "interdiction de gérer",
+        "faillite personnelle",
+        "banqueroute",
+        "délai de 45 jours"
+      ],
+      "statement": "Le gérant de la SARL Tilleul, en cessation des paiements depuis le 1er février, a délibérément attendu le mois de juillet pour demander l'ouverture d'une procédure collective, sans avoir sollicité de conciliation, afin de terminer un chantier personnel financé par la trésorerie sociale. La société est mise en liquidation judiciaire. Quelle analyse est exacte ?",
+      "options": [
+        "Le seul retard de déclaration entraîne automatiquement la faillite personnelle du gérant pour une durée de vingt ans",
+        "Le retard de déclaration ne peut être sanctionné que si la société a fait l'objet d'une procédure d'alerte préalable du commissaire aux comptes",
+        "Les sanctions professionnelles et la banqueroute s'excluent : le tribunal doit choisir entre une interdiction de gérer et une condamnation pénale",
+        "L'omission sciemment commise de demander l'ouverture dans les 45 jours peut justifier une interdiction de gérer ; l'usage de la trésorerie sociale à des fins personnelles peut en outre fonder une faillite personnelle, dans la limite de quinze ans"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'interdiction de gérer peut être prononcée contre le dirigeant qui a sciemment omis de demander l'ouverture d'un redressement ou d'une liquidation judiciaire dans le délai de 45 jours à compter de la cessation des paiements, sans avoir demandé une conciliation (C. com. art. L653-8) ; l'usage des biens de la personne morale comme des siens propres est un cas de faillite personnelle (art. L653-4) ; la durée de ces sanctions ne peut excéder quinze ans (art. L653-11) : option 4. Aucune sanction n'est automatique et la durée de vingt ans est inexacte (option 1). La sanction ne dépend pas d'une alerte préalable (option 2). Les sanctions professionnelles se cumulent avec les sanctions pénales de la banqueroute, si ses éléments constitutifs sont réunis (option 3).",
+      "source_ref": "C. com. art. L653-4, L653-8, L653-11 et L654-2",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue1-difficulte-sanct-0003",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "sanctions-dirigeants-procedures",
+      "difficulty": 1,
+      "tags": [
+        "insuffisance d'actif",
+        "simple négligence"
+      ],
+      "statement": "Un dirigeant peut être condamné à supporter l'insuffisance d'actif de la société liquidée en raison d'une simple négligence dans la gestion.",
+      "answer": false,
+      "justification": "Depuis la loi n° 2016-1691, la simple négligence dans la gestion de la société ne permet pas d'engager la responsabilité du dirigeant pour insuffisance d'actif.",
+      "explanation": "L'article L651-2 du Code de commerce subordonne la condamnation à une faute de gestion ayant contribué à l'insuffisance d'actif, et précise qu'en cas de simple négligence du dirigeant dans la gestion de la société, sa responsabilité à ce titre ne peut pas être engagée. Le législateur a voulu éviter de sanctionner l'entrepreneur malheureux. Restent sanctionnables, par exemple, la poursuite d'une activité déficitaire en connaissance de cause, une sous-capitalisation manifeste ou l'absence de comptabilité.",
+      "source_ref": "C. com. art. L651-2, al. 1 (rédaction issue de la loi n° 2016-1691)",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue1-difficulte-sanct-0004",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "sanctions-dirigeants-procedures",
+      "difficulty": 2,
+      "tags": [
+        "insuffisance d'actif",
+        "calcul",
+        "condamnation du dirigeant"
+      ],
+      "statement": "La liquidation judiciaire de la SA Cervin fait apparaître les éléments suivants : passif antérieur au jugement d'ouverture admis 1 480 000 € ; passif né après le jugement d'ouverture 190 000 € ; actif réalisé 560 000 €. On retient que l'insuffisance d'actif est calculée à partir du seul passif antérieur au jugement d'ouverture. Le tribunal retient des fautes de gestion du directeur général et met à sa charge 25 % de l'insuffisance d'actif. Quel est le montant de la condamnation ? Réponse en euros.",
+      "expected_value": 230000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Insuffisance d'actif = passif antérieur admis − actif réalisé = 1 480 000 − 560 000 = 920 000 €. Condamnation : 920 000 × 25 % = 230 000 €. Erreur classique hors tolérance : inclure le passif postérieur, (1 480 000 + 190 000 − 560 000) × 25 % = 277 500 €. Les sommes versées par le dirigeant entrent dans le patrimoine du débiteur et sont réparties entre tous les créanciers.",
+      "source_ref": "C. com. art. L651-2",
+      "verified": true,
+      "estimated_seconds": 140
+    }
+  ]
+}

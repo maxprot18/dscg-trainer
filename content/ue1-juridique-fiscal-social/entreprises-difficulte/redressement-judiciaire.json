@@ -20,6 +20,124 @@
       "source_ref": "C. com. art. L631-1, L631-4, L631-5 et L631-8 ; art. L620-1 (sauvegarde)",
       "verified": true,
       "estimated_seconds": 75
+    },
+    {
+      "id": "ue1-difficulte-rj-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "redressement-judiciaire",
+      "difficulty": 1,
+      "tags": [
+        "jugement d'ouverture",
+        "arrêt des poursuites",
+        "créances antérieures"
+      ],
+      "statement": "Le tribunal ouvre une procédure de redressement judiciaire à l'égard de la SARL Brenne le 6 février. Le 10 février, un fournisseur dont la facture date du 15 janvier réclame son paiement. Quelle est la conséquence du jugement d'ouverture ?",
+      "options": [
+        "Le fournisseur peut poursuivre la société et faire saisir ses comptes bancaires, sa créance étant échue avant le jugement",
+        "La société doit payer le fournisseur en priorité pour préserver la continuité des approvisionnements",
+        "La créance est éteinte de plein droit par l'effet du jugement d'ouverture",
+        "Le paiement de cette créance antérieure est interdit et le fournisseur ne peut plus agir individuellement ; il doit déclarer sa créance"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Le jugement d'ouverture interdit de payer toute créance née antérieurement (C. com. art. L622-7) et arrête ou interdit les poursuites individuelles des créanciers antérieurs, y compris les voies d'exécution (art. L622-21), applicables en redressement par renvoi de l'article L631-14. Le fournisseur doit déclarer sa créance au mandataire judiciaire (art. L622-24) : option 4. Les options 1 et 2 contredisent ces deux règles. La créance n'est pas éteinte (option 3) : elle sera traitée dans le cadre du plan ou de la liquidation.",
+      "source_ref": "C. com. art. L622-7, L622-21 et L622-24, applicables par renvoi de l'art. L631-14",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue1-difficulte-rj-0003",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "redressement-judiciaire",
+      "difficulty": 2,
+      "tags": [
+        "contrats en cours",
+        "administrateur judiciaire",
+        "continuation"
+      ],
+      "statement": "La SAS Mirabel, en redressement judiciaire avec un administrateur doté d'une mission d'assistance, loue des chariots élévateurs. Deux loyers sont restés impayés avant le jugement d'ouverture. Le loueur souhaite mettre fin au contrat. Quelle affirmation est exacte ?",
+      "options": [
+        "Le loueur peut résilier le contrat en invoquant le seul jugement d'ouverture, en application d'une clause du contrat prévoyant cette résiliation",
+        "L'administrateur peut exiger la poursuite du contrat ; le loueur doit alors l'exécuter malgré les loyers impayés antérieurs, qu'il déclare au passif",
+        "Le loueur peut suspendre la mise à disposition des chariots jusqu'au paiement des deux loyers antérieurs",
+        "Le contrat est résilié de plein droit par le jugement d'ouverture, sauf accord du juge-commissaire"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Aucune résiliation ne peut résulter du seul fait de l'ouverture de la procédure, nonobstant toute clause contraire (C. com. art. L622-13, I, applicable en redressement par renvoi) : options 1 et 4 fausses. L'administrateur a seul la faculté d'exiger l'exécution des contrats en cours ; le cocontractant doit alors remplir ses obligations malgré le défaut d'exécution par le débiteur d'engagements antérieurs, qui ne lui donne droit qu'à une déclaration au passif : option 2, ce qui exclut aussi l'exception d'inexécution invoquée à l'option 3. Le loueur peut toutefois mettre en demeure l'administrateur de prendre parti ; à défaut de réponse dans le délai d'un mois, le contrat est résilié de plein droit.",
+      "source_ref": "C. com. art. L622-13, applicable par renvoi de l'art. L631-14",
+      "verified": true,
+      "estimated_seconds": 80
+    },
+    {
+      "id": "ue1-difficulte-rj-0004",
+      "type": "true_false",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "redressement-judiciaire",
+      "difficulty": 2,
+      "tags": [
+        "période suspecte",
+        "nullités de droit"
+      ],
+      "statement": "Le paiement d'une dette non échue effectué par le débiteur entre la date de cessation des paiements et le jugement d'ouverture du redressement judiciaire est nul de plein droit.",
+      "answer": true,
+      "justification": "Le paiement de dettes non échues au jour du paiement, quel qu'en soit le mode, figure parmi les nullités de droit de la période suspecte.",
+      "explanation": "Pendant la période suspecte (de la date de cessation des paiements, reportable jusqu'à 18 mois avant le jugement, jusqu'au jugement d'ouverture), certains actes sont nuls de plein droit (C. com. art. L632-1) : actes à titre gratuit, paiement de dettes non échues, paiement de dettes échues par un mode anormal, sûreté constituée pour une dette antérieure, etc. Le tribunal n'a pas de pouvoir d'appréciation. À l'inverse, le paiement de dettes échues par un mode normal relève des nullités facultatives (art. L632-2) : il n'est annulé que si le créancier connaissait la cessation des paiements.",
+      "source_ref": "C. com. art. L632-1, I, 3° et L632-2 ; art. L631-8",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue1-difficulte-rj-0005",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "redressement-judiciaire",
+      "difficulty": 2,
+      "tags": [
+        "créances douteuses",
+        "dépréciation",
+        "redressement judiciaire"
+      ],
+      "statement": "Le 20 décembre N, la société Arnèges apprend l'ouverture d'un redressement judiciaire à l'égard de son client Lorval, qui lui doit une facture de 18 000 € TTC (TVA 20 %). À la clôture du 31 décembre N, elle estime que 60 % de la créance hors taxes ne sera pas recouvrée. Passez, au 31 décembre N, les écritures de reclassement de la créance et de dépréciation, en utilisant les comptes 416, 411, 6817 et 491.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "416",
+          "label": "Clients douteux ou litigieux - Lorval",
+          "debit": 18000,
+          "credit": 0
+        },
+        {
+          "account": "411",
+          "label": "Clients - Lorval",
+          "debit": 0,
+          "credit": 18000
+        },
+        {
+          "account": "6817",
+          "label": "Dotations aux dépréciations des actifs circulants",
+          "debit": 9000,
+          "credit": 0
+        },
+        {
+          "account": "491",
+          "label": "Dépréciations des comptes de clients",
+          "debit": 0,
+          "credit": 9000
+        }
+      ],
+      "explanation": "L'ouverture d'une procédure collective rend le recouvrement incertain : la créance est reclassée en clients douteux pour son montant TTC (18 000 €, débit 416, crédit 411). La dépréciation est calculée sur le montant hors taxes, la TVA collectée pouvant être récupérée si la créance devient définitivement irrécouvrable : HT = 18 000 / 1,2 = 15 000 € ; dépréciation = 15 000 × 60 % = 9 000 € (débit 6817, crédit 491). Erreur classique : 18 000 × 60 % = 10 800 € (base TTC). Le créancier doit par ailleurs déclarer sa créance au mandataire judiciaire dans les deux mois de la publication du jugement au BODACC.",
+      "source_ref": "PCG (règl. ANC 2014-03), comptes 416, 491 et 6817 ; C. com. art. L622-24 et R622-24",
+      "verified": true,
+      "estimated_seconds": 180
     }
   ]
 }

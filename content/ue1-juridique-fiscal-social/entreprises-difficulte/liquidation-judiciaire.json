@@ -1,0 +1,210 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-difficulte-lj-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "liquidation-judiciaire",
+      "difficulty": 1,
+      "tags": [
+        "liquidation judiciaire",
+        "ouverture",
+        "dessaisissement"
+      ],
+      "statement": "Quelles sont les conditions d'ouverture d'une liquidation judiciaire, et quelle en est la conséquence principale pour le débiteur ?",
+      "options": [
+        "Cessation des paiements et redressement manifestement impossible ; le débiteur est dessaisi de l'administration et de la disposition de ses biens au profit du liquidateur",
+        "Difficultés insurmontables sans cessation des paiements ; le débiteur conserve la gestion, assisté d'un administrateur",
+        "Cessation des paiements depuis plus de 45 jours ; le débiteur poursuit son activité sous la surveillance d'un mandataire judiciaire",
+        "Pertes ayant réduit les capitaux propres à moins de la moitié du capital social ; la société est dissoute de plein droit"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "La liquidation judiciaire est ouverte à l'égard du débiteur en cessation des paiements dont le redressement est manifestement impossible (C. com. art. L640-1) ; le jugement emporte dessaisissement du débiteur, dont les droits et actions sur son patrimoine sont exercés par le liquidateur (art. L641-9) : option 1. L'option 2 décrit la sauvegarde. Le délai de 45 jours (option 3) est celui dans lequel le débiteur doit demander l'ouverture ; il ne détermine pas le choix de la procédure. L'option 4 confond avec la procédure des capitaux propres inférieurs à la moitié du capital (droit des sociétés), qui n'entraîne aucune dissolution de plein droit.",
+      "source_ref": "C. com. art. L640-1 et L641-9",
+      "verified": true,
+      "estimated_seconds": 55
+    },
+    {
+      "id": "ue1-difficulte-lj-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "liquidation-judiciaire",
+      "difficulty": 2,
+      "tags": [
+        "rétablissement professionnel",
+        "personne physique",
+        "effacement des dettes"
+      ],
+      "statement": "M. Royer, artisan menuisier exerçant en nom propre, est en cessation des paiements ; son redressement est manifestement impossible. Il n'a plus de salarié depuis un an, n'a pas de procédure en cours et son actif déclaré, très faible, est inférieur au seuil réglementaire. Quelle procédure peut lui être ouverte et quel en est l'effet ?",
+      "options": [
+        "Une sauvegarde accélérée, qui permet d'imposer un plan à ses créanciers en deux mois",
+        "Un rétablissement professionnel, procédure de quatre mois sans liquidation des biens, qui aboutit à l'effacement de ses dettes à l'égard des créanciers dont la créance est née antérieurement",
+        "Une conciliation, seule procédure ouverte aux entrepreneurs individuels",
+        "Un rétablissement professionnel, réservé aux sociétés unipersonnelles, qui transfère les dettes à l'associé unique"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le rétablissement professionnel (C. com. art. L645-1 s.) est ouvert au débiteur personne physique, en cessation des paiements et dont le redressement est manifestement impossible, qui n'a fait l'objet d'aucune procédure collective en cours, n'a pas employé de salarié au cours des six derniers mois et dont l'actif déclaré est inférieur à un montant fixé par décret. D'une durée de quatre mois, sans liquidation des biens, il entraîne l'effacement des dettes antérieures, sauf exceptions (art. L645-11) : option 2. La sauvegarde accélérée (option 1) suppose l'absence de cessation des paiements depuis plus de 45 jours avant la conciliation et un projet de plan. La conciliation (option 3) n'est pas la seule voie, et suppose de ne pas être en cessation des paiements depuis plus de 45 jours. Le rétablissement professionnel concerne les personnes physiques, non les sociétés (option 4).",
+      "source_ref": "C. com. art. L645-1 s. et L645-11",
+      "verified": true,
+      "estimated_seconds": 80
+    },
+    {
+      "id": "ue1-difficulte-lj-0003",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "liquidation-judiciaire",
+      "difficulty": 2,
+      "tags": [
+        "répartition du prix",
+        "dividende chirographaire",
+        "calcul"
+      ],
+      "statement": "Dans la liquidation judiciaire de la SA Pélisse, le tribunal a arrêté un plan de cession de l'entreprise pour un prix de 410 000 €, seul actif à répartir. On retient l'ordre de paiement suivant, chaque rang n'étant payé qu'après désintéressement complet du précédent :\n1. superprivilège des salaires : 45 000 € ;\n2. frais de justice : 30 000 € ;\n3. créances postérieures privilégiées : 85 000 € ;\n4. banque titulaire d'un nantissement sur le fonds de commerce : 210 000 € ;\n5. créanciers chirographaires, au prorata de leurs créances admises : 640 000 € au total.\nLe fournisseur Hélix détient une créance chirographaire admise de 48 000 €. Quel montant recevra-t-il ? Réponse en euros.",
+      "expected_value": 3000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Disponible pour les chirographaires : 410 000 − 45 000 − 30 000 − 85 000 − 210 000 = 40 000 €. Dividende : 40 000 / 640 000 = 6,25 %. Hélix reçoit 48 000 × 6,25 % = 3 000 €. Erreurs classiques hors tolérance : répartir le prix entre tous les créanciers sans ordre (410 000 / 1 010 000 × 48 000 ≈ 19 485 €) ou oublier un rang (par exemple sans les créances postérieures : 125 000 / 640 000 × 48 000 = 9 375 €).",
+      "source_ref": "C. com. art. L642-1 s. (cession), L641-13 (créances postérieures), L643-8 (répartition)",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue1-difficulte-lj-0004",
+      "type": "journal_entry",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "liquidation-judiciaire",
+      "difficulty": 2,
+      "tags": [
+        "admission en non-valeur",
+        "créance irrécouvrable",
+        "régularisation de TVA"
+      ],
+      "statement": "Le 15 octobre N+1, la société Corail reçoit du liquidateur un certificat d'irrécouvrabilité : la liquidation judiciaire de son client Ségur a été clôturée pour insuffisance d'actif, sans aucun dividende. La créance figure au compte 416 pour 7 200 € TTC (dont TVA collectée 1 200 €, que l'on admet régularisable) et a été dépréciée de 4 500 € à la clôture de N. Passez l'écriture constatant la perte et la reprise de la dépréciation, en utilisant les comptes 654, 44571, 416, 491 et 7817.",
+      "date": "15/10/N+1",
+      "entries": [
+        {
+          "account": "654",
+          "label": "Pertes sur créances irrécouvrables",
+          "debit": 6000,
+          "credit": 0
+        },
+        {
+          "account": "44571",
+          "label": "TVA collectée (régularisation)",
+          "debit": 1200,
+          "credit": 0
+        },
+        {
+          "account": "416",
+          "label": "Clients douteux - Ségur",
+          "debit": 0,
+          "credit": 7200
+        },
+        {
+          "account": "491",
+          "label": "Dépréciations des comptes de clients",
+          "debit": 4500,
+          "credit": 0
+        },
+        {
+          "account": "7817",
+          "label": "Reprises sur dépréciations des actifs circulants",
+          "debit": 0,
+          "credit": 4500
+        }
+      ],
+      "explanation": "La clôture pour insuffisance d'actif rend la créance définitivement irrécouvrable (le créancier ne recouvre pas son droit de poursuite individuelle, C. com. art. L643-11). La perte est constatée pour le montant hors taxes (7 200 − 1 200 = 6 000 €, débit 654) ; la TVA collectée sur la créance impayée est régularisée (débit 44571, 1 200 €) ; la créance est soldée pour 7 200 € (crédit 416). La dépréciation devenue sans objet est reprise : débit 491, crédit 7817, 4 500 €. Impact net sur le résultat de N+1 : 6 000 − 4 500 = 1 500 €.",
+      "source_ref": "PCG (règl. ANC 2014-03), comptes 416, 44571, 491, 654 et 7817 ; CGI art. 272 ; C. com. art. L643-11",
+      "verified": true,
+      "estimated_seconds": 200
+    },
+    {
+      "id": "ue1-difficulte-lj-0005",
+      "type": "case_study",
+      "ue": "UE1",
+      "theme": "entreprises-difficulte",
+      "notion": "liquidation-judiciaire",
+      "difficulty": 3,
+      "tags": [
+        "déclaration des créances",
+        "répartition",
+        "nantissement",
+        "clôture pour insuffisance d'actif"
+      ],
+      "title": "SARL Fenouil : liquidation et sort des créanciers",
+      "context": "Le tribunal a prononcé le 28 mars N la liquidation judiciaire de la SARL Fenouil, commerce de détail, sans maintien de l'activité. Le jugement a été publié au BODACC le 12 avril N.\nLa société Delta, fournisseur établi en France, détient une créance de 27 000 € dont l'échéance contractuelle était fixée au 30 septembre N.\nLa banque Arcane a prêté 150 000 € à la société ; sa créance est garantie par un nantissement sur le fonds de commerce.\nUn autre fournisseur, Ombre, créancier de 60 000 €, a omis de déclarer sa créance et n'a pas demandé à être relevé de la forclusion.\nAu terme des opérations, l'actif réalisé s'élève à 380 000 €, dont 110 000 € provenant de la vente du fonds de commerce. On retient l'ordre de paiement suivant :\n1. superprivilège des salaires : 42 000 € ;\n2. frais de justice : 28 000 € ;\n3. créances postérieures privilégiées : 35 000 € ;\n4. banque Arcane : elle reçoit le prix du fonds de commerce, soit 110 000 €, dans la limite de sa créance ; le solde non couvert de sa créance devient chirographaire ;\n5. créanciers chirographaires déclarés et admis, au marc l'euro : 410 000 € (hors solde de la banque Arcane et hors créance d'Ombre).",
+      "sub_questions": [
+        {
+          "id": "q1-delai-declaration",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "Jusqu'à quelle date la société Delta peut-elle déclarer sa créance au liquidateur ?",
+          "options": [
+            "28 mai N",
+            "12 juin N",
+            "12 août N",
+            "30 septembre N, date d'échéance de la créance"
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "Les créanciers déclarent leurs créances dans les deux mois de la publication du jugement d'ouverture au BODACC (C. com. art. R622-24, applicable en liquidation), soit jusqu'au 12 juin N : option 2. Le délai ne court pas de la date du jugement (option 1). Le délai de quatre mois (option 3) ne bénéficie qu'aux créanciers établis hors de France métropolitaine. L'échéance de la créance est indifférente (option 4) : les créances non échues sont déclarées et deviennent d'ailleurs exigibles par le jugement de liquidation."
+        },
+        {
+          "id": "q2-exigibilite",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "La créance de Delta, non échue au 28 mars N, est devenue exigible par l'effet du jugement de liquidation judiciaire.",
+          "answer": true,
+          "explanation": "Vrai. Le jugement qui ouvre ou prononce la liquidation judiciaire rend exigibles les créances non échues (C. com. art. L643-1), sauf poursuite de l'activité en vue d'une cession, hypothèse écartée par l'énoncé."
+        },
+        {
+          "id": "q3-dividende-delta",
+          "kind": "numeric",
+          "points": 4,
+          "prompt": "Calculez le montant que recevra la société Delta, dont la créance de 27 000 € a été admise au passif chirographaire. Réponse en euros, arrondie à l'euro.",
+          "expected_value": 9900,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Disponible pour les chirographaires : 380 000 − 42 000 − 28 000 − 35 000 − 110 000 = 165 000 €. Créances chirographaires : 410 000 + solde de la banque Arcane (150 000 − 110 000 = 40 000) = 450 000 € ; la créance d'Ombre, non déclarée et non relevée de forclusion, ne participe pas à la répartition. Dividende : 165 000 / 450 000 = 36,67 %. Delta reçoit 27 000 × 165 000 / 450 000 = 9 900 €. Erreurs hors tolérance : oubli du solde de la banque (165 000 / 410 000 × 27 000 ≈ 10 866 €) ; inclusion d'Ombre (165 000 / 510 000 × 27 000 ≈ 8 735 €)."
+        },
+        {
+          "id": "q4-cloture",
+          "kind": "open",
+          "points": 3,
+          "prompt": "La liquidation est clôturée pour insuffisance d'actif. Delta peut-elle ensuite poursuivre la SARL Fenouil ou son gérant pour le solde de sa créance ? Quelles conséquences comptables en tire-t-elle ?",
+          "model_answer": "En principe, le jugement de clôture pour insuffisance d'actif ne fait pas recouvrer aux créanciers l'exercice individuel de leurs actions contre le débiteur (C. com. art. L643-11). Les exceptions (fraude à l'égard des créanciers, faillite personnelle, banqueroute, droits attachés à la personne du créancier, recours des cautions et coobligés ayant payé) ne s'appliquent pas en l'état des faits. Delta ne peut pas non plus poursuivre le gérant, simple dirigeant d'une société à responsabilité limitée, en l'absence de caution personnelle ; seule une action en responsabilité pour insuffisance d'actif, exercée par le liquidateur ou le ministère public, pourrait conduire le gérant à contribuer au passif, au profit de l'ensemble des créanciers. Comptablement, le solde non payé (27 000 − 9 900 = 17 100 €) devient définitivement irrécouvrable : Delta solde la créance douteuse (416) par une perte sur créance irrécouvrable (654), pour le montant hors taxes, régularise la TVA collectée correspondante et reprend la dépréciation antérieurement constituée (491 par 7817).",
+          "key_points": [
+            "Principe de non-reprise des poursuites individuelles après clôture pour insuffisance d'actif",
+            "Exceptions limitées, non applicables ici",
+            "Pas d'action personnelle contre le gérant ; action en insuffisance d'actif réservée au liquidateur ou au ministère public",
+            "Perte de 17 100 € TTC : 654 pour le hors taxes, régularisation de TVA, reprise de la dépréciation"
+          ],
+          "explanation": "C. com. art. L643-11 (clôture), L651-2 et L651-3 (action en responsabilité pour insuffisance d'actif) ; PCG, comptes 416, 491, 654 et 7817."
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas suit le parcours du créancier en liquidation : déclaration dans les deux mois de la publication au BODACC, exigibilité des créances non échues, répartition selon l'ordre donné (la fraction non couverte d'une créance garantie devient chirographaire, le créancier forclos est exclu), puis clôture pour insuffisance d'actif.",
+      "source_ref": "C. com. art. L622-24, L622-26, R622-24, L641-3, L643-1, L643-8 et L643-11",
+      "verified": true,
+      "estimated_seconds": 840
+    }
+  ]
+}
