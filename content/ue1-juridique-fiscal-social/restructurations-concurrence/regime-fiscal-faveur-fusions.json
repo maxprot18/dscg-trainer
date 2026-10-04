@@ -38,21 +38,21 @@
       "tags": [
         "droits d'enregistrement",
         "fusion",
-        "droit fixe"
+        "enregistrement gratuit"
       ],
-      "statement": "La SAS Merlin (IS) absorbe la SARL Sorbier (IS). L'actif net apporté vaut 900 000 € et, après l'augmentation de capital, le capital de la SAS Merlin s'élève à 180 000 €. Quels droits d'enregistrement l'acte de fusion supporte-t-il ?",
+      "statement": "La SAS Merlin (IS) absorbe la SARL Sorbier (IS) en N (opération postérieure au 1er janvier 2019). L'actif net apporté vaut 900 000 € (actif brut de 1 200 000 € sous déduction d'un passif pris en charge de 300 000 €) et, après l'augmentation de capital, le capital de la SAS Merlin s'élève à 180 000 €. Quels droits d'enregistrement l'acte de fusion supporte-t-il ?",
       "options": [
         "Un droit proportionnel de 5 % sur l'actif net apporté, soit 45 000 €",
         "Un droit fixe de 500 €",
-        "Un droit fixe de 375 €",
-        "Un droit de 3 % après abattement de 23 000 €, soit 26 310 €"
+        "Aucun : l'acte est enregistré gratuitement",
+        "Un droit de 0,1 % sur l'actif net apporté, soit 900 €"
       ],
       "answer": [
         2
       ],
       "multiple": false,
-      "explanation": "Les fusions entre personnes morales soumises à l'IS sont enregistrées au droit fixe de 375 €, porté à 500 € lorsque le capital de la société bénéficiaire, après l'opération, atteint au moins 225 000 € (CGI art. 816). Ici le capital est de 180 000 € : droit fixe de 375 € (option 3), et non 500 € (option 2). Aucun droit proportionnel n'est dû sur l'actif net apporté (option 1). Le droit de 3 % après abattement (option 4) concerne les cessions de parts sociales (art. 726), pas les fusions.",
-      "source_ref": "CGI art. 816 (droit fixe des fusions de sociétés soumises à l'IS)",
+      "explanation": "Depuis le 1er janvier 2019 (LF 2019, art. 26), les actes constatant une fusion entre personnes morales passibles de l'IS, ainsi que la prise en charge du passif de l'absorbée, sont enregistrés gratuitement (CGI art. 816) : option 3. Le droit fixe de 500 € (option 2), comme l'ancien droit de 375 €, a été supprimé par cette même loi ; le montant du capital de l'absorbante est sans incidence. Aucun droit proportionnel n'est dû sur l'actif net apporté ni sur le passif pris en charge : ni 5 % (option 1), ni 0,1 % (option 4), ce dernier taux étant celui des cessions d'actions (art. 726), pas des fusions.",
+      "source_ref": "CGI art. 816 (enregistrement gratuit des actes de fusion entre personnes morales passibles de l'IS, depuis le 1er janvier 2019, LF 2019 art. 26) ; BOI-ENR-AVS-20-60",
       "verified": true,
       "estimated_seconds": 60
     },
@@ -137,14 +137,14 @@
           "kind": "numeric",
           "points": 1,
           "prompt": "Quel est le montant des droits d'enregistrement dus sur l'acte de fusion, en euros ?",
-          "expected_value": 500,
+          "expected_value": 0,
           "tolerance": {
             "kind": "absolute",
             "value": 0.5
           },
           "unit": "€",
           "decimals": 0,
-          "explanation": "Fusion entre sociétés soumises à l'IS : droit fixe de 375 €, porté à 500 € lorsque le capital de la bénéficiaire après l'opération atteint 225 000 € (CGI art. 816). Capital d'Alizé : 1 200 000 € : 500 €."
+          "explanation": "Fusion entre personnes morales passibles de l'IS : depuis le 1er janvier 2019, l'acte de fusion et la prise en charge du passif de l'absorbée sont enregistrés gratuitement (CGI art. 816, LF 2019 art. 26) : 0 €. Le montant du capital d'Alizé (1 200 000 €) est sans incidence ; l'ancien droit fixe de 375 € / 500 € a été supprimé."
         },
         {
           "id": "q3-deficit",
@@ -179,8 +179,8 @@
         }
       ],
       "total_points": 9,
-      "explanation": "Le cas couvre les effets du régime de faveur chez l'absorbante (réintégration étalée des plus-values sur biens amortissables, sursis pour les non amortissables), les droits d'enregistrement de la fusion, le sort des déficits et les conditions du régime pour un apport partiel d'actif.",
-      "source_ref": "CGI art. 210 A, 210 B, 209 II et 816",
+      "explanation": "Le cas couvre les effets du régime de faveur chez l'absorbante (réintégration étalée des plus-values sur biens amortissables, sursis pour les non amortissables), les droits d'enregistrement de la fusion (enregistrement gratuit entre sociétés à l'IS depuis 2019), le sort des déficits et les conditions du régime pour un apport partiel d'actif.",
+      "source_ref": "CGI art. 210 A, 210 B, 209 II et 816 (enregistrement gratuit depuis le 1er janvier 2019, LF 2019 art. 26)",
       "verified": true,
       "estimated_seconds": 840
     }
