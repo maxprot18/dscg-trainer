@@ -1,5 +1,14 @@
 # Journal des versions
 
+## 1.3.0 (octobre 2026)
+
+Lisibilité des fiches de cours.
+
+- **Mise en page structurée des 271 fiches** : références discrètes en tête, enjeu en encadré, règles titrées, formules isolées une par ligne, exemple en carte avec les calculs détachés, erreurs fréquentes présentées « erreur → bonne règle », points à retenir cochés, notions liées en pastilles, glossaire de l'UE 6 en deux colonnes.
+- Renvois aux articles et paragraphes atténués dans le texte, montants jamais coupés en fin de ligne, raccourcis vers les sections sur téléphone, sommaire cliquable sur grand écran.
+- **Diagrammes lisibles sur téléphone** : barres avec libellés et valeurs en texte, organigrammes avec flèches de sens, liens réciproques et liens contournant les boîtes.
+- Page d'impression d'une UE sur la même mise en page ; étiquette de thème qui débordait sur mobile corrigée.
+
 ## 1.2.0 (octobre 2026)
 
 Cours enrichis et visuels, deuxième phase issue de l'audit de la version 1.0 (`docs/audit-v1.md`).
