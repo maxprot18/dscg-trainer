@@ -127,6 +127,84 @@
       "source_ref": "ESMA Guidelines on Alternative Performance Measures (ESMA/2015/1415), in particular the sections on reconciliations and prominence ; IAS 1 §85 (additional line items and subtotals) — règlement UE 2023/1803",
       "verified": true,
       "estimated_seconds": 600
+    },
+    {
+      "id": "ue6-rapports-mc-0004",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "rapports-annuels",
+      "notion": "management-commentary",
+      "difficulty": 1,
+      "tags": [
+        "top line",
+        "bottom line",
+        "one-off items",
+        "vocabulary"
+      ],
+      "statement": "In his review of the year, the chief executive of Penrose Foods plc writes: \"Top-line growth was strong, but the bottom line was hit by one-off charges.\" Which interpretation is correct?",
+      "options": [
+        "Gross margin improved, but net debt increased because of exceptional capital expenditure.",
+        "Revenue fell, but operating profit was protected by recurring cost savings.",
+        "Profit before tax grew strongly, but revenue was reduced by unfavourable exchange rates.",
+        "Revenue grew strongly, but profit for the year was reduced by non-recurring costs."
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "The \"top line\" is the first line of the income statement, revenue; the \"bottom line\" is the last one, profit for the year. \"One-off charges\" are non-recurring (exceptional) costs such as restructuring or impairment. Option 4 is therefore correct. Option 1 confuses the top line with gross margin and the bottom line with net debt, a balance sheet item. Option 2 contradicts the sentence: the top line grew. Option 3 inverts the two expressions.",
+      "source_ref": "IAS 1 §82(a) (revenue line item) and §81A (profit or loss for the period) — règlement UE 2023/1803 ; IFRS Practice Statement 1 Management Commentary (financial performance)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue6-rapports-mc-0005",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "rapports-annuels",
+      "notion": "management-commentary",
+      "difficulty": 3,
+      "tags": [
+        "IFRS 8",
+        "reportable segments",
+        "10% threshold",
+        "75% test"
+      ],
+      "statement": "Calder Group plc has six operating segments, each reviewed separately by the chief operating decision maker. Segment revenue for 2025 (€m), as sales to external customers / inter-segment sales: A 480 / 0; B 200 / 40; C 30 / 80; D 100 / 0; E 90 / 0; F 60 / 0. None of the segments can be aggregated with another. Assume that the profit or loss and asset tests give the same result as the revenue test. Under IFRS 8, which segments must, as a minimum, be reported separately?",
+      "options": [
+        "A and B only",
+        "A, B and D",
+        "A, B and C, plus at least one additional segment (for example D), so that reportable segments cover at least 75% of external revenue",
+        "All six segments, since each is reviewed by the chief operating decision maker"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Step 1, 10% test (IFRS 8 §13(a)): it is based on reported revenue including inter-segment sales, compared with the combined internal and external revenue of all segments: 480 + 240 + 110 + 100 + 90 + 60 = 1,080, so the threshold is 108. A (480), B (240) and C (110) are reportable; D (100), E (90) and F (60) are not. Step 2, 75% test (§15): external revenue of A, B and C = 480 + 200 + 30 = 710, i.e. 710 ÷ 960 = 74.0% of total external revenue (960), below 75%. Additional segments must be identified as reportable until 75% is reached: adding D gives 810 ÷ 960 = 84.4%. Option 3 is therefore correct. Option 2 applies the 10% test to external revenue only (threshold 96), which wrongly excludes C and includes D. Option 1 stops before the 10% test is fully applied (C passes it with 110 ≥ 108). Option 4 confuses operating segments with reportable segments: segments below the thresholds may be combined in an \"all other segments\" category (§16).",
+      "source_ref": "IFRS 8 Operating Segments §13 (quantitative thresholds), §15 (75% of external revenue) and §16 (all other segments) — règlement UE 2023/1803",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue6-rapports-mc-0006",
+      "type": "flashcard",
+      "ue": "UE6",
+      "theme": "rapports-annuels",
+      "notion": "management-commentary",
+      "difficulty": 1,
+      "tags": [
+        "forward-looking statements",
+        "safe harbour",
+        "cautionary statement",
+        "guidance"
+      ],
+      "front": "What is a \"forward-looking statement\" in an annual report, and why is it accompanied by a cautionary statement?",
+      "back": "A forward-looking statement is a comment by management on future performance or events: guidance (revenue or margin targets), expected market trends, planned investments.\nIt is followed by a cautionary statement (\"safe harbour\" wording) warning that these statements involve risks and uncertainties and that actual results may differ materially.\nThe aim is to limit the company's liability if the forecasts are not met.",
+      "explanation": "In the United States, the Private Securities Litigation Reform Act of 1995 created a safe harbour for forward-looking statements accompanied by meaningful cautionary statements identifying the factors that could cause actual results to differ. European issuers use similar wording in their annual reports and results announcements. Forward-looking statements belong to the narrative, unaudited part of the report.",
+      "source_ref": "US Private Securities Litigation Reform Act of 1995 (safe harbour for forward-looking statements) ; SEC Regulation S-K, Item 303 (known trends and uncertainties)",
+      "verified": true,
+      "estimated_seconds": 45
     }
   ]
 }

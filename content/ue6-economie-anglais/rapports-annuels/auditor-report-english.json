@@ -73,6 +73,129 @@
       "source_ref": "Regulation (EU) No 537/2014, art. 10(2), points (b), (c), (e), (f) and (g) (additional contents of the audit report for public-interest entities) and art. 11 (additional report to the audit committee)",
       "verified": true,
       "estimated_seconds": 90
+    },
+    {
+      "id": "ue6-rapports-audrep-0004",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "rapports-annuels",
+      "notion": "auditor-report-english",
+      "difficulty": 2,
+      "tags": [
+        "key audit matters",
+        "ISA 701",
+        "auditor's report"
+      ],
+      "statement": "The auditor's report on Dunmore plc contains a \"Key audit matters\" section describing two matters: the impairment testing of goodwill and the recognition of revenue on long-term contracts. The opinion is unmodified. Which statement about this section is correct?",
+      "options": [
+        "It gives a separate opinion on the goodwill balance and on contract revenue, in addition to the opinion on the financial statements as a whole.",
+        "It describes the matters of most significance in the audit, why each was significant and how it was addressed, without giving a separate opinion on them.",
+        "It lists the misstatements found by the auditor in these two areas that management refused to correct.",
+        "It replaces a qualified opinion: the auditor reports these disagreements here instead of modifying the opinion."
+      ],
+      "answer": [
+        1
+      ],
+      "multiple": false,
+      "explanation": "Under ISA 701, key audit matters are the matters that, in the auditor's professional judgement, were of most significance in the audit of the current period; for each one the report explains why it was considered most significant and how it was addressed. They are addressed in the context of the audit of the financial statements as a whole, and the auditor does not provide a separate opinion on them, so option 2 is correct and option 1 is wrong. Option 3 is wrong: the section does not list misstatements; an uncorrected material misstatement would lead to a modified opinion. Option 4 is wrong: ISA 701 states that communicating a key audit matter is not a substitute for a modified opinion required by ISA 705.",
+      "source_ref": "ISA 701 (IAASB) §8 (definition), §11 (no separate opinion), §13 (description of each key audit matter), §4 and §12 (not a substitute for a modified opinion) ; NEP 701",
+      "verified": true,
+      "estimated_seconds": 70
+    },
+    {
+      "id": "ue6-rapports-audrep-0005",
+      "type": "true_false",
+      "ue": "UE6",
+      "theme": "rapports-annuels",
+      "notion": "auditor-report-english",
+      "difficulty": 2,
+      "tags": [
+        "other information",
+        "ISA 720",
+        "strategic report"
+      ],
+      "statement": "The auditor of Kelso plc has concluded that the financial statements are free from material misstatement, but that the strategic report overstates the group's market share in a way that is materially misleading, and the directors refuse to correct it. Under ISA 720 (Revised), the auditor describes this uncorrected misstatement in the \"Other information\" section of the report, but the opinion on the financial statements is not modified on this ground.",
+      "answer": true,
+      "justification": "True: the opinion covers only the financial statements; an uncorrected material misstatement of the other information is described in the \"Other information\" section.",
+      "explanation": "ISA 720 (Revised) requires the auditor to read the other information (here the strategic report) and to consider whether it is materially inconsistent with the financial statements or with the auditor's knowledge, or otherwise appears to be materially misstated. If management refuses to correct a material misstatement of the other information, the auditor communicates with those charged with governance and, in the report, includes in the \"Other information\" section a statement describing the uncorrected misstatement (§22(e)(ii)). Since the financial statements themselves are not misstated, there is no ground for a qualified or adverse opinion under ISA 705; in extreme cases the auditor may also consider withdrawing from the engagement where the law allows it.",
+      "source_ref": "ISA 720 (Revised) (IAASB) §14-15 (reading the other information), §17-18 (response when a material misstatement exists) and §22(e) (reporting) ; NEP 9510",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue6-rapports-audrep-0006",
+      "type": "case_study",
+      "ue": "UE6",
+      "theme": "rapports-annuels",
+      "notion": "auditor-report-english",
+      "difficulty": 3,
+      "tags": [
+        "qualified opinion",
+        "ISA 705",
+        "basis for qualified opinion",
+        "key audit matters"
+      ],
+      "title": "A qualified opinion at Ravensworth Group",
+      "context": "You are an analyst at an asset management firm. Ravensworth Group plc, a listed manufacturer reporting under IFRS, has just published its 2025 annual report. Its consolidated income statement shows a profit for the year of €72m; equity at 31 December 2025 is €410m. Extracts from the independent auditor's report:\n\n\"Qualified opinion. ... In our opinion, except for the effects of the matter described in the Basis for qualified opinion section of our report, the consolidated financial statements give a true and fair view of the state of the group's affairs as at 31 December 2025 and of its profit for the year then ended...\"\n\n\"Basis for qualified opinion. The group's inventories are carried in the consolidated balance sheet at €64m. Management has not written down slow-moving inventories of the specialist components division to net realisable value, which constitutes a departure from IAS 2 Inventories. Had these inventories been written down, inventories would have been reduced by €16m, the income tax expense by €4m, and profit for the year and equity by €12m.\"\n\n\"Key audit matters. ... Impairment of goodwill (€220m). ... How our audit addressed the matter: we challenged the cash flow forecasts and the discount rate used by management...\"\n\nAnswer your portfolio manager's questions in English.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "What type of opinion has the auditor expressed, and why?",
+          "options": [
+            "An unmodified opinion with an emphasis of matter, because the inventory issue is disclosed in the notes",
+            "An adverse opinion, because the misstatement is both material and pervasive",
+            "A qualified (\"except for\") opinion, because the misstatement is material but not pervasive",
+            "A disclaimer of opinion, because the auditor could not obtain sufficient appropriate evidence on inventories"
+          ],
+          "answer": [
+            2
+          ],
+          "multiple": false,
+          "explanation": "The heading \"Qualified opinion\" and the words \"except for\" show a qualified opinion. Under ISA 705 §7(a), it is expressed when misstatements are material but not pervasive: here the problem is confined to one balance (inventories of one division) and to quantified amounts. An adverse opinion (option 2) would require pervasive effects; a disclaimer (option 4) relates to an inability to obtain evidence, whereas here the auditor knows and quantifies the misstatement. An emphasis of matter (option 1) never relates to a misstatement."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "points": 3,
+          "prompt": "Using the figures given in the Basis for qualified opinion section, calculate Ravensworth's profit for the year as it would have been if inventories had been written down in accordance with IAS 2, in €m.",
+          "expected_value": 60,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€m",
+          "decimals": 0,
+          "explanation": "Corrected profit = 72 − 16 (write-down to net realisable value) + 4 (reduction in income tax expense) = 72 − 12 = €60m. Deducting the gross write-down without its tax effect gives 56, a classic error; equity would likewise fall from 410 to 398."
+        },
+        {
+          "id": "q3",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "Because goodwill impairment is described in the \"Key audit matters\" section, the auditor has expressed a second reservation, on the goodwill balance of €220m.",
+          "answer": false,
+          "explanation": "False: a key audit matter describes an area of significant audit attention and how it was addressed (ISA 701); it does not modify the opinion and gives no separate opinion. The only reservation in the report is the one described in the Basis for qualified opinion section (inventories)."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "points": 4,
+          "prompt": "In about 80 words, explain how the opinion would have differed (a) if the inventory misstatement had affected most of the balance sheet and the income statement, and (b) if the auditor had instead been unable to attend the inventory count and to obtain any other evidence on inventories.",
+          "model_answer": "(a) If the misstatement had been pervasive, affecting many elements of the financial statements, the auditor would have expressed an adverse opinion, stating that the financial statements do not give a true and fair view. (b) An inability to obtain sufficient appropriate evidence is a limitation of scope, not a known misstatement: the auditor would have expressed a qualified opinion (\"except for the possible effects\") if the possible effects were material but not pervasive, or a disclaimer of opinion if they could be both material and pervasive.",
+          "key_points": [
+            "Material and pervasive misstatement: adverse opinion (ISA 705 §8)",
+            "Inability to obtain evidence: scope limitation, judged on possible effects",
+            "Possible effects material but not pervasive: qualified opinion (\"except for the possible effects\")",
+            "Possible effects material and pervasive: disclaimer of opinion (ISA 705 §9)"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "The case reviews the ISA 705 grid: nature of the matter (misstatement or inability to obtain evidence) crossed with its effect (material only, or material and pervasive) gives qualified, adverse or disclaimer. The Basis for qualified opinion section quantifies the financial effects of the misstatement (ISA 705 §21), which lets an analyst restate profit and equity. Key audit matters never modify the opinion.",
+      "source_ref": "ISA 705 (Revised) (IAASB) §7 (qualified opinion), §8 (adverse opinion), §9 (disclaimer) and §21 (quantification of the financial effects) ; ISA 701 §11, §12 and §15 ; IAS 2 §9 (lower of cost and net realisable value) — règlement UE 2023/1803 ; NEP 700",
+      "verified": true,
+      "estimated_seconds": 720
     }
   ]
 }

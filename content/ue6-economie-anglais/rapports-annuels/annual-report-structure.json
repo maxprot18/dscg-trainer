@@ -7,7 +7,11 @@
       "theme": "rapports-annuels",
       "notion": "annual-report-structure",
       "difficulty": 1,
-      "tags": ["retained earnings", "dividends", "statement of changes in equity"],
+      "tags": [
+        "retained earnings",
+        "dividends",
+        "statement of changes in equity"
+      ],
       "statement": "Extract from the annual report of Northgate plc: \"Retained earnings decreased from €120m at 1 January to €110m at 31 December, reflecting profit for the year of €30m and dividends paid of €40m.\" Under IFRS, the €40m of dividends paid is presented as an expense in the income statement, which is why it reduces retained earnings.",
       "answer": false,
       "justification": "False: dividends are a distribution to owners, recognised directly in equity (statement of changes in equity), not an expense in profit or loss.",
@@ -81,6 +85,54 @@
       "source_ref": "IAS 8 §22 (retrospective application) and §42 (correction of prior-period errors) ; IFRS 5 §34 — règlement UE 2023/1803",
       "verified": true,
       "estimated_seconds": 40
+    },
+    {
+      "id": "ue6-rapports-arstruct-0005",
+      "type": "mcq",
+      "ue": "UE6",
+      "theme": "rapports-annuels",
+      "notion": "annual-report-structure",
+      "difficulty": 1,
+      "tags": [
+        "strategic report",
+        "principal risks and uncertainties",
+        "UK annual report"
+      ],
+      "statement": "A credit analyst wants to read the directors' own description of the main threats facing Halberton plc, a UK listed group (supply disruption, regulatory change, cyber attacks), together with the actions taken to mitigate them. In which part of the annual report is this information required by the UK Companies Act 2006?",
+      "options": [
+        "The directors' remuneration report",
+        "The independent auditor's report, in the key audit matters section",
+        "The strategic report, in the section on principal risks and uncertainties",
+        "The statement of changes in equity"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Section 414C of the Companies Act 2006 requires the strategic report to contain a description of the principal risks and uncertainties facing the company; listed groups present them with their mitigating actions in a dedicated section of the strategic report. Option 1 is wrong: the remuneration report covers directors' pay policy and amounts paid. Option 2 is wrong: key audit matters describe the matters of most significance in the audit of the financial statements, not the business risks identified by the directors. Option 4 is wrong: the statement of changes in equity is a primary financial statement reconciling opening and closing equity (profit, dividends, share issues).",
+      "source_ref": "UK Companies Act 2006, s.414C (contents of the strategic report: principal risks and uncertainties)",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue6-rapports-arstruct-0006",
+      "type": "true_false",
+      "ue": "UE6",
+      "theme": "rapports-annuels",
+      "notion": "annual-report-structure",
+      "difficulty": 2,
+      "tags": [
+        "directors' remuneration report",
+        "say on pay",
+        "shareholder vote"
+      ],
+      "statement": "In the directors' remuneration report of a UK quoted company, the remuneration policy is put to an advisory (non-binding) shareholder vote, whereas the annual report on remuneration, which shows what each director was actually paid for the year, is put to a binding vote.",
+      "answer": false,
+      "justification": "False: it is the other way round. The remuneration policy is subject to a binding vote (at least every three years); the annual report on remuneration is subject to an annual advisory vote.",
+      "explanation": "The UK \"say on pay\" regime distinguishes two votes. The forward-looking remuneration policy must be approved by an ordinary resolution of shareholders, which is binding: once approved, the company may only make payments consistent with it, and the policy must be put to the vote at least every three years (Companies Act 2006, s.439A and s.226B). The annual report on remuneration, which includes the single total figure of remuneration for each director, is put to an advisory vote each year (s.439): a negative vote does not invalidate payments already made, but it obliges the company to put its policy back to a binding vote at the next accounts meeting, normally the following year's AGM (s.439A(2)). The statement reverses the two votes.",
+      "source_ref": "UK Companies Act 2006, s.439 (advisory vote on the directors' remuneration report) and s.439A (binding vote on the remuneration policy, resubmission after a failed advisory vote) ; s.226B (payments consistent with the approved policy)",
+      "verified": true,
+      "estimated_seconds": 60
     }
   ]
 }

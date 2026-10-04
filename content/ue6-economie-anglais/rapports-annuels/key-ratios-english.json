@@ -146,6 +146,59 @@
       "source_ref": "IFRS 16 §47 (lease liabilities presented in the balance sheet) — règlement UE 2023/1803 ; ESMA Guidelines on Alternative Performance Measures (ESMA/2015/1415) ; usual definitions of net debt, leverage and covenant ratios",
       "verified": true,
       "estimated_seconds": 720
+    },
+    {
+      "id": "ue6-rapports-kpi-0005",
+      "type": "numeric",
+      "ue": "UE6",
+      "theme": "rapports-annuels",
+      "notion": "key-ratios-english",
+      "difficulty": 2,
+      "tags": [
+        "cash conversion cycle",
+        "DSO",
+        "DIO",
+        "DPO",
+        "working capital"
+      ],
+      "statement": "Extract from the 2025 consolidated financial statements of Ottery Distribution plc (€m): revenue 7,300; cost of sales 5,475; inventories 900; trade receivables 1,000; trade payables 1,050 (year-end balances). The group defines its working capital indicators on a 365-day year as follows: debtor days (DSO) = trade receivables ÷ revenue × 365; inventory days (DIO) = inventories ÷ cost of sales × 365; creditor days (DPO) = trade payables ÷ cost of sales × 365. Calculate the cash conversion cycle (DIO + DSO − DPO), in days, rounded to one decimal place.",
+      "expected_value": 40,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "unit": "days",
+      "decimals": 1,
+      "explanation": "DSO = 1,000 ÷ 7,300 × 365 = 50.0 days ; DIO = 900 ÷ 5,475 × 365 = 60.0 days ; DPO = 1,050 ÷ 5,475 × 365 = 70.0 days. Cash conversion cycle = 60.0 + 50.0 − 70.0 = 40.0 days: on average, Ottery waits 40 days between paying its suppliers and collecting cash from its customers. Classic errors: adding creditor days instead of deducting them (180.0 days), or computing inventory days on revenue instead of cost of sales (45.0 days, giving a cycle of 25.0 days).",
+      "source_ref": "IAS 1 §54(g), (h) and (k) (inventories, trade receivables and trade payables line items) — règlement UE 2023/1803 ; ESMA Guidelines on APMs (ESMA/2015/1415): company definitions to be disclosed and applied consistently",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue6-rapports-kpi-0006",
+      "type": "numeric",
+      "ue": "UE6",
+      "theme": "rapports-annuels",
+      "notion": "key-ratios-english",
+      "difficulty": 2,
+      "tags": [
+        "dividend cover",
+        "EPS",
+        "dividend per share",
+        "IAS 10"
+      ],
+      "statement": "Extract from the 2025 annual report of Brackley Leisure plc: \"Profit for the year was €195m, of which €15m is attributable to non-controlling interests. The weighted average number of ordinary shares in issue during the year was 120 million (125 million shares in issue at 31 December 2025). An interim dividend of 20 cents per share was paid in September 2025, and the board proposes a final dividend of 40 cents per share, to be paid in May 2026 subject to shareholder approval. The share price at 31 December 2025 was €24.\" The company calculates dividend cover as basic earnings per share divided by the total dividend per share for the year (interim paid plus final proposed). Calculate Brackley's dividend cover for 2025, in times, rounded to two decimal places.",
+      "expected_value": 2.5,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.02
+      },
+      "unit": "times",
+      "decimals": 2,
+      "explanation": "Basic EPS = profit attributable to owners of the parent ÷ weighted average number of shares = (195 − 15) ÷ 120 = €1.50. Total dividend per share for the year = 0.20 + 0.40 = €0.60. Dividend cover = 1.50 ÷ 0.60 = 2.50 times (payout ratio 40%; dividend yield 0.60 ÷ 24 = 2.5%). The final dividend is not a liability at 31 December 2025, since it is declared after the reporting period (IAS 10 §12-13), but the company's definition includes it in the dividend for the year. Classic errors: using total profit (195 ÷ 120 = 1.625, cover 2.71), using the year-end number of shares (180 ÷ 125 = 1.44, cover 2.40), or using the final dividend only (1.50 ÷ 0.40 = 3.75).",
+      "source_ref": "IAS 33 §10 and §19-20 (basic EPS, weighted average number of shares) ; IAS 10 §12-13 (dividends declared after the reporting period) — règlement UE 2023/1803",
+      "verified": true,
+      "estimated_seconds": 180
     }
   ]
 }
