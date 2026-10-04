@@ -26,6 +26,7 @@ PWA d'entraînement au DSCG (React 18 + TypeScript + Vite, Tailwind + shadcn/ui,
 | `npm test` | Vitest (schémas, script de validation, base locale, UI) |
 | `npm run lint` / `npm run typecheck` | oxlint / `tsc -b` |
 | `npm run build` | Build de prod (base `/dscg-trainer/`) + service worker |
+| `npm run test:e2e` | Playwright sur le build (`npm run build` d'abord) |
 
 ## Organisation du code
 
@@ -41,6 +42,9 @@ PWA d'entraînement au DSCG (React 18 + TypeScript + Vite, Tailwind + shadcn/ui,
 - `src/content/diagram.ts` / `diagramSchema.ts` : diagrammes des fiches (blocs ```diagram, cinq formes), rendus par `src/components/Diagram.tsx` ; mise en page des fiches : `src/components/CourseSheet.tsx` (lecture de la structure dans `src/content/courseSheet.ts` et `courseText.ts`, Markdown minimal dans `src/lib/markdown.tsx`) ; `src/content/pcg.ts` : comptes PCG pour l'autocomplétion ; `src/lib/settings.ts` : réglages (localStorage) ; table `marks` (marque-pages, fiches lues) dans `src/db/db.ts`.
 - `src/engine/search.ts` : recherche plein texte (page `/recherche`). `src/lib/theme.ts` : mode sombre (script anti-flash dans `index.html`). `src/lib/report.ts` : lien « signaler une erreur » (issue GitHub pré-remplie).
 - Nombres d'exercices par UE / thème / notion calculés au build (`__EXERCISE_COUNTS__` dans `vite.config.ts`, lus par `exerciseCount()`) ; écrans chargés à la demande (`React.lazy` dans `App.tsx`) ; Zod reste hors du fichier JS principal (ne pas importer `schema.ts` depuis l'accueil ou la mise en page).
+- Préparation à l'examen : `src/engine/plan.ts` (plan à rebours de la date d'examen, carte `ExamPlanCard` de l'accueil), mode `diagnostic` (test de positionnement, un exercice par thème) dans `session.ts`, `src/lib/reminder.ts` (rappel quotidien en fichier .ics). Dossiers de type examen : `case_study` avec `dossier: true` et `annexes` (fichiers `content/<slug-ue>/sujets-examen.json`), servis seulement par l'examen blanc (`isDossier`, 60 % du temps au plus) et la liste « Sujets type d'examen ».
+- Oral d'UE 6 : sujets dans `content/oral/*.json` (schéma `src/content/oralSchema.ts`, chargement `oralTopics.ts`), page `src/pages/OralPage.tsx` (préparation, exposé, entretien chronométrés, enregistrement local `src/hooks/useRecorder.ts`, auto-évaluation gardée dans `src/lib/oralHistory.ts`).
+- Fiabilité : `src/lib/backup.ts` (stockage persistant, date de dernière sauvegarde, rappel `BackupReminder`), `src/lib/errorLog.ts` + `ErrorBoundary` (erreurs gardées en local, visibles dans les réglages). Tests de bout en bout Playwright dans `e2e/` (`npm run test:e2e`, sur le build ; lancés en CI).
 - `src/components/exercise/` : `ExercisePlayer` (énoncé + parties enchaînées + correction) et `parts.tsx` (un composant de saisie/correction par genre de partie). Ajouter un type d'exercice = l'ajouter au schéma, à `exerciseParts()` et à l'en-tête `Statement`.
 - `src/components/ui/` : composants shadcn/ui (ajoutés à la main : le registre shadcn est bloqué dans l'environnement cloud ; en local `npx shadcn@latest add <composant>` fonctionne avec `components.json`).
 
