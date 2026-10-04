@@ -7,12 +7,16 @@ import { ExamPlanCard } from '@/components/ExamPlanCard'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { exerciseCount, taxonomy } from '@/content/load'
+import type { Attempt, Review } from '@/db/db'
 import { useProgress } from '@/db/progress'
 import { newSeed, sessionSearch } from '@/engine/sessionConfig'
 import { startOfDay } from '@/engine/srs'
 import { currentStreak } from '@/engine/stats'
 import { requestPersistenceOnce } from '@/lib/backup'
 import { useSettings } from '@/lib/settings'
+
+const NO_ATTEMPTS: Attempt[] = []
+const NO_REVIEWS: Review[] = []
 
 export function HomePage() {
   const progress = useProgress()
@@ -58,7 +62,8 @@ export function HomePage() {
             </div>
           </CardContent>
       </Card>
-      {progress && <ExamPlanCard attempts={progress.attempts} reviews={progress.reviews} now={now} />}
+      {/* Rendue dès le premier affichage (progression vide en attendant la base) : pas de décalage de mise en page. */}
+      <ExamPlanCard attempts={progress?.attempts ?? NO_ATTEMPTS} reviews={progress?.reviews ?? NO_REVIEWS} now={now} />
       <Card>
         <CardHeader>
           <CardTitle>Contenu disponible</CardTitle>
