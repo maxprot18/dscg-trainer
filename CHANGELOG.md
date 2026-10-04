@@ -1,5 +1,14 @@
 # Journal des versions
 
+## 1.2.0 (octobre 2026)
+
+Cours enrichis et visuels, deuxième phase issue de l'audit de la version 1.0 (`docs/audit-v1.md`).
+
+- **271 fiches de cours réécrites** (22 à 30 lignes chacune), toutes relues de façon indépendante, avec une structure fixe : enjeu, règles développées, **exemple chiffré résolu**, **erreurs fréquentes à l'examen** (tirées des distracteurs des QCM de la notion), « À retenir », **notions liées** (1 054 liens entre fiches) ; glossaire anglais → français dans les 20 fiches de l'UE 6.
+- **172 diagrammes** (frises, arbres de décision, organigrammes, flux, barres) dans les fiches qui s'y prêtent.
+- Droit et normes mis à jour à octobre 2026 pendant la relecture : seuils d'exemption de consolidation (décret 2024-152), numérotation L. 821-x du Code de commerce (ordonnance 2023-1142), IFRS 18 adoptée par l'UE (règl. 2026/338), directive Omnibus I (2026/470), règlement omnibus IA (2026/1744), comptes du règl. ANC 2022-06 ; deux exercices sur les droits d'enregistrement des fusions corrigés (gratuité depuis 2019, CGI art. 816).
+- Fiche de cours : bouton « S'entraîner » et navigation affichés avec la fiche, plus de décalage de mise en page à l'arrivée du texte.
+
 ## 1.1.0 (octobre 2026)
 
 Interface et parcours, à la suite de l'audit de la version 1.0 (`docs/audit-v1.md`).

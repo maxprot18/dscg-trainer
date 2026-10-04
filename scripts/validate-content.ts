@@ -240,7 +240,9 @@ export function validateContent(contentDir: string | URL, opts: ValidateOptions)
         errors.push(`${relPath} : "${notionId}" n'est pas un identifiant de notion de la taxonomie`)
       } else {
         stats.courses++
+        // Lignes non vides, un bloc ``` (diagramme) comptant pour une seule ligne.
         const lines = readFileSync(path.join(coursesDir, entry.name), 'utf8')
+          .replace(/```[\s\S]*?```/g, '```')
           .split(/\r?\n/)
           .filter((l) => l.trim() !== '')
         if (!lines[0]?.startsWith('# ')) errors.push(`${relPath} : la fiche doit commencer par un titre « # … »`)

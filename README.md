@@ -2,11 +2,11 @@
 
 Application web installable (PWA) pour s'entraîner au DSCG : audit, comptabilité, IFRS, consolidation, finance, droit, fiscalité, contrôle de gestion, systèmes d'information et anglais des affaires. Elle fonctionne hors ligne sur téléphone et ordinateur ; la progression reste dans le navigateur.
 
-**Site :** https://maxprot18.github.io/dscg-trainer/ · version 1.1.0 ([journal des versions](CHANGELOG.md))
+**Site :** https://maxprot18.github.io/dscg-trainer/ · version 1.2.0 ([journal des versions](CHANGELOG.md))
 
 <p>
   <img src="docs/screenshots/accueil.png" alt="Accueil : objectif du jour, série et contenu disponible" width="200">
-  <img src="docs/screenshots/exercice.png" alt="Écriture comptable : saisie avec libellés des comptes et bouton Équilibrer" width="200">
+  <img src="docs/screenshots/fiche.png" alt="Fiche de cours IAS 16 : règles, diagramme en barres et exemple résolu" width="200">
   <img src="docs/screenshots/bilan.png" alt="Bilan de session : notions à revoir et exercices" width="200">
   <img src="docs/screenshots/progression-sombre.png" alt="Progression en mode sombre" width="200">
 </p>
@@ -15,7 +15,7 @@ Application web installable (PWA) pour s'entraîner au DSCG : audit, comptabilit
 
 - **1 400 exercices**, tous relus de façon indépendante : UE 1 (200), UE 2 (250), UE 3 (100), UE 4 (700), UE 5 (80), UE 6 (70, en anglais).
 - **8 types** : QCM, vrai / faux, calcul, écriture comptable corrigée compte par compte, cas pratique, cas de consolidation guidé, cas d'audit, flashcard.
-- **271 fiches de cours**, une par notion du programme officiel (arrêté du 4 août 2025), avec les références (articles, paragraphes de normes, comptes PCG) et les formules clés.
+- **271 fiches de cours**, une par notion du programme officiel (arrêté du 4 août 2025), toutes relues de façon indépendante : références (articles, paragraphes de normes, comptes PCG), règles, formules clés, **exemple chiffré résolu**, **erreurs fréquentes à l'examen**, « À retenir », notions liées ; **172 diagrammes** (frises, arbres de décision, organigrammes, flux, barres) ; glossaire anglais → français en UE 6.
 
 ## Fonctionnalités
 
@@ -27,11 +27,11 @@ Application web installable (PWA) pour s'entraîner au DSCG : audit, comptabilit
 <p>
   <img src="docs/screenshots/entrainement.png" alt="Écran S'entraîner : session rapide, révision intelligente, erreurs, examen blanc, flashcards" width="200">
   <img src="docs/screenshots/cours-ue.png" alt="Cours d'une UE : thèmes, notions avec niveau de maîtrise" width="200">
-  <img src="docs/screenshots/flashcards.png" alt="Mode flashcards" width="200">
+  <img src="docs/screenshots/exercice.png" alt="Écriture comptable : saisie avec libellés des comptes et bouton Équilibrer" width="200">
   <img src="docs/screenshots/progression.png" alt="Progression : objectif, chiffres clés et activité hebdomadaire" width="200">
 </p>
 
-<img src="docs/screenshots/fiche-desktop.png" alt="Fiche de cours sur grand écran, avec sommaire et notions du thème" width="820">
+<img src="docs/screenshots/fiche-desktop.png" alt="Fiche de cours sur grand écran en mode sombre, avec sommaire et notions du thème" width="820">
 
 ## Installer sur le téléphone
 
