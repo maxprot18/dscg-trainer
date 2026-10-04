@@ -147,6 +147,245 @@
       "source_ref": "Règl. ANC 2020-01, élimination des résultats internes et impôts différés ; IFRS 10 §B86(c) et IAS 12 (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 600
+    },
+    {
+      "id": "ue4-conso-eliminations-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "eliminations-operations-intra-groupe",
+      "difficulty": 2,
+      "tags": [
+        "marge interne",
+        "mise en équivalence",
+        "entreprise associée"
+      ],
+      "statement": "La société Hêtre, société mère, a vendu en N des marchandises à la société Oural, dont elle détient 30 % et qu'elle met en équivalence. Au 31/12/N, le stock d'Oural contient une marge de 10 000 € réalisée par Hêtre. Quel montant de marge (avant impôt) faut-il éliminer dans les comptes consolidés du groupe Hêtre ?",
+      "options": [
+        "10 000 €",
+        "7 000 €",
+        "3 000 €",
+        "0 €, les opérations avec une entité mise en équivalence n'étant jamais éliminées"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Lorsque l'opération concerne une entité mise en équivalence, le résultat interne n'est éliminé qu'à hauteur de la quote-part du groupe dans cette entité : 30 % × 10 000 = 3 000 € avant impôt (règl. ANC 2020-01 ; IAS 28 §28 pour les transactions descendantes et ascendantes). L'élimination totale (10 000 €) concerne les opérations entre sociétés intégrées globalement ; l'absence d'élimination ignore que le profit n'est pas réalisé avec des tiers à hauteur de la part du groupe ; 7 000 € correspond à la part des autres associés, qui est, elle, réalisée avec des tiers.",
+      "source_ref": "Règl. ANC 2020-01 (élimination des résultats internes) ; IAS 28 §28 (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-conso-eliminations-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "eliminations-operations-intra-groupe",
+      "difficulty": 1,
+      "tags": [
+        "créances et dettes réciproques",
+        "intégration globale"
+      ],
+      "statement": "L'élimination d'une créance détenue par une filiale intégrée globalement sur une autre filiale intégrée globalement n'a pas d'incidence sur le résultat consolidé.",
+      "answer": true,
+      "justification": "Créance et dette réciproques se compensent : l'élimination réduit l'actif et le passif du même montant, sans effet sur le résultat.",
+      "explanation": "Les créances et dettes réciproques entre sociétés intégrées globalement sont éliminées en totalité pour présenter le groupe comme une entité unique (IFRS 10 §B86(c) ; règl. ANC 2020-01). Cette élimination diminue symétriquement l'actif et le passif consolidés : elle ne modifie ni le résultat ni les capitaux propres. Il en va autrement des résultats internes inclus dans des actifs (marges sur stocks, plus-values de cession).",
+      "source_ref": "Règl. ANC 2020-01 (élimination des opérations internes) ; IFRS 10 §B86(c) (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-conso-eliminations-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "eliminations-operations-intra-groupe",
+      "difficulty": 3,
+      "tags": [
+        "plus-value interne",
+        "immobilisation amortissable",
+        "vente descendante",
+        "impôt différé"
+      ],
+      "statement": "Le 01/07/N-1, la société mère Mélèze a cédé à sa filiale Pin (détenue à 80 % et intégrée globalement) une machine pour 150 000 € ; la valeur nette comptable de la machine chez Mélèze était alors de 90 000 €. Pin amortit la machine linéairement sur 5 ans à compter du 01/07/N-1 ; le groupe retient la même durée. Taux d'impôt : 25 %.\n\nQuel est l'impact de l'élimination de cette opération sur les capitaux propres consolidés part du groupe au 31/12/N (réserves et résultat confondus, net d'impôt, en euros avec son signe) ?",
+      "expected_value": -31500,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Plus-value interne : 150 000 − 90 000 = 60 000 €. Le groupe amortit le bien sur sa valeur d'origine pour le groupe (90 000 € sur 5 ans, soit 18 000 € par an) alors que Pin amortit 150 000 € (30 000 € par an) : la plus-value se réintègre de 12 000 € par an. Réintégré au 31/12/N : 6 000 € (six mois de N-1) + 12 000 € (N) = 18 000 €. Plus-value restant à éliminer : 42 000 €. Net d'impôt : 42 000 × 75 % = 31 500 €. Vente descendante réalisée par la mère : l'impact est supporté à 100 % par le groupe, d'où −31 500 €. Erreurs classiques : −42 000 (impôt oublié), −25 200 (application des 80 %), −40 500 (amortissement de N oublié), −45 000 (aucun amortissement réintégré).",
+      "source_ref": "Règl. ANC 2020-01 (élimination des résultats internes, impôts différés) ; IFRS 10 §B86(c) (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 300
+    },
+    {
+      "id": "ue4-conso-eliminations-0005",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "eliminations-operations-intra-groupe",
+      "difficulty": 2,
+      "tags": [
+        "prêt intra-groupe",
+        "intérêts",
+        "élimination réciproque"
+      ],
+      "statement": "La société Mousse a prêté 500 000 € le 01/01/N à sa filiale Algue, intégrée globalement, au taux de 4 % ; les intérêts de N ont été payés le 31/12/N et le capital reste dû. Chez Algue, l'emprunt figure au compte 168 et les intérêts au compte 6611 ; chez Mousse, le prêt figure au compte 274 et les intérêts au compte 7624.\n\nPassez l'écriture d'élimination de cette opération dans les comptes consolidés du 31/12/N (une ligne par compte).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "168",
+          "label": "Emprunt (Algue)",
+          "debit": 500000,
+          "credit": 0
+        },
+        {
+          "account": "274",
+          "label": "Prêt (Mousse)",
+          "debit": 0,
+          "credit": 500000
+        },
+        {
+          "account": "7624",
+          "label": "Revenus des prêts (Mousse)",
+          "debit": 20000,
+          "credit": 0
+        },
+        {
+          "account": "6611",
+          "label": "Intérêts des emprunts (Algue)",
+          "debit": 0,
+          "credit": 20000
+        }
+      ],
+      "explanation": "Le prêt de Mousse et l'emprunt d'Algue se compensent (500 000 €) : on débite la dette chez l'emprunteur et on crédite la créance chez le prêteur. Les intérêts (500 000 × 4 % = 20 000 €) figurent en charge chez Algue et en produit chez Mousse : leur élimination réduit simultanément produits et charges, sans effet sur le résultat consolidé.",
+      "source_ref": "Règl. ANC 2020-01 (élimination des opérations internes) ; IFRS 10 §B86(c) (règl. UE 2023/1803) ; PCG comptes 168, 274, 6611 et 7624",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue4-conso-eliminations-0006",
+      "type": "consolidation_case",
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "eliminations-operations-intra-groupe",
+      "difficulty": 3,
+      "tags": [
+        "dividendes internes",
+        "mise en équivalence",
+        "marge interne",
+        "vente ascendante",
+        "intérêts minoritaires"
+      ],
+      "title": "Groupe Saule : dividendes, marge ascendante et dette réciproque",
+      "context": "La société Saule (S) établit ses comptes consolidés au 31/12/N selon le règlement ANC 2020-01. Elle détient 75 % du capital et des droits de vote de Tilleul (T), intégrée globalement, et 30 % de Frêne (F), mise en équivalence. Les deux participations ont été souscrites à la constitution des sociétés : il n'existe pas d'écart d'acquisition. Taux d'impôt : 25 %.\n\n- En N, T a distribué un dividende total de 100 000 € et F un dividende total de 40 000 € ; Saule a comptabilisé en produits financiers les dividendes reçus.\n- Au 31/12/N, les capitaux propres de F, après cette distribution, s'élèvent à 400 000 € (capital 200 000 €, réserves 150 000 €, résultat N 50 000 €).\n- En N, T a vendu des marchandises à S ; le stock de S au 31/12/N contient une marge de 20 000 € réalisée par T. Il n'y avait pas de stock d'origine interne à l'ouverture.\n- Au 31/12/N, T détient sur S une créance commerciale de 150 000 €.",
+      "entities": [
+        {
+          "id": "s",
+          "name": "Saule (S)",
+          "is_parent": true
+        },
+        {
+          "id": "t",
+          "name": "Tilleul (T)"
+        },
+        {
+          "id": "f",
+          "name": "Frêne (F)"
+        }
+      ],
+      "links": [
+        {
+          "from": "s",
+          "to": "t",
+          "ownership_pct": 75
+        },
+        {
+          "from": "s",
+          "to": "f",
+          "ownership_pct": 30
+        }
+      ],
+      "steps": [
+        {
+          "id": "dividendes",
+          "stage": "autre",
+          "kind": "numeric",
+          "prompt": "Quel montant total de dividendes faut-il retirer du résultat de Saule pour établir le résultat consolidé (en euros) ?",
+          "points": 2,
+          "expected_value": 87000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Dividendes reçus de T : 75 % × 100 000 = 75 000 €. Dividendes reçus de F : 30 % × 40 000 = 12 000 €. Total : 87 000 €. Ces dividendes proviennent de résultats déjà pris en compte dans les réserves consolidées ; les conserver reviendrait à les compter deux fois."
+        },
+        {
+          "id": "contrepartie",
+          "stage": "autre",
+          "kind": "mcq",
+          "prompt": "Quelle est la contrepartie de l'élimination du dividende reçu de Tilleul (75 000 €) ?",
+          "points": 2,
+          "options": [
+            "Les réserves consolidées : le résultat consolidé diminue, les réserves augmentent du même montant",
+            "Les intérêts minoritaires, qui augmentent de 75 000 €",
+            "Les titres de participation de Tilleul, qui diminuent de 75 000 €",
+            "Le chiffre d'affaires consolidé"
+          ],
+          "answer": [
+            0
+          ],
+          "explanation": "Le dividende est retiré du résultat de Saule et réaffecté aux réserves consolidées : les capitaux propres part du groupe ne changent pas au total. La part des minoritaires (25 000 €) est sortie du groupe et réduit les intérêts minoritaires, sans transiter par le résultat de Saule."
+        },
+        {
+          "id": "titres-f",
+          "stage": "methode",
+          "kind": "numeric",
+          "prompt": "Quelle est la valeur des titres mis en équivalence de Frêne au bilan consolidé du 31/12/N (en euros) ?",
+          "points": 2,
+          "expected_value": 120000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Titres mis en équivalence = 30 % × 400 000 = 120 000 €. Les capitaux propres de F étant pris après distribution, le dividende reçu (12 000 €) a déjà réduit la quote-part de capitaux propres revenant au groupe."
+        },
+        {
+          "id": "marge-groupe",
+          "stage": "partage-capitaux-propres",
+          "kind": "numeric",
+          "prompt": "Quel est l'impact de l'élimination de la marge sur stock sur le résultat consolidé part du groupe (net d'impôt, en euros avec son signe) ?",
+          "points": 3,
+          "expected_value": -11250,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Marge éliminée : 20 000 € ; impôt différé actif : 5 000 € ; impact net : −15 000 €. La marge a été réalisée par T (vente ascendante) : partage selon l'intérêt du groupe dans T. Part du groupe : 75 % × (−15 000) = −11 250 € ; intérêts minoritaires : −3 750 €."
+        },
+        {
+          "id": "creance",
+          "stage": "autre",
+          "kind": "true_false",
+          "prompt": "L'élimination de la créance de 150 000 € de Tilleul sur Saule diminue le résultat consolidé.",
+          "points": 1,
+          "answer": false,
+          "explanation": "La créance de T et la dette de S se compensent : l'actif et le passif consolidés diminuent de 150 000 €, sans effet sur le résultat."
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Les opérations internes sans effet sur le résultat (dettes réciproques) sont simplement compensées. Les dividendes internes sont retirés du résultat du bénéficiaire et réaffectés aux réserves ; pour une entité mise en équivalence, ils réduisent la valeur des titres. Les marges internes sont éliminées et l'impact net d'impôt est partagé selon l'intérêt du groupe dans la société qui a dégagé la marge.",
+      "source_ref": "Règl. ANC 2020-01 (élimination des opérations et résultats internes, mise en équivalence, impôts différés) ; IFRS 10 §B86(c) (règl. UE 2023/1803)",
+      "verified": true,
+      "estimated_seconds": 780
     }
   ]
 }
