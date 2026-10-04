@@ -1,0 +1,220 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-pcg-titres-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "instruments-financiers-pcg",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "classement des titres",
+        "titres de participation"
+      ],
+      "statement": "La société Orion acquiert 35 % du capital de la société Vega, un de ses sous-traitants, afin d'exercer une influence sur sa gestion et de sécuriser ses approvisionnements. Elle entend conserver ces titres durablement. Dans quel compte les titres sont-ils inscrits dans les comptes individuels d'Orion ?",
+      "options": [
+        "271 « Titres immobilisés autres que les titres immobilisés de l'activité de portefeuille »",
+        "273 « Titres immobilisés de l'activité de portefeuille »",
+        "261 « Titres de participation »",
+        "503 « Actions » (valeurs mobilières de placement)"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Les titres dont la possession durable est estimée utile à l'activité, notamment parce qu'elle permet d'exercer une influence ou un contrôle sur la société émettrice, sont des titres de participation (compte 261) ; une détention de plus de 10 % du capital fait d'ailleurs présumer cette qualification. Le compte 271 vise les titres détenus durablement sans ces caractéristiques ; le compte 273 (TIAP) un portefeuille géré pour sa rentabilité, sans intervention dans la gestion des sociétés ; le compte 503 des titres acquis pour être revendus à brève échéance, ce qui contredit l'intention de détention durable.",
+      "source_ref": "PCG art. 221-1 s. (règl. ANC 2014-03) ; liste des comptes : 261, 271, 273, 503",
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-pcg-titres-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "instruments-financiers-pcg",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "valeurs mobilières de placement",
+        "dépréciation",
+        "non-compensation"
+      ],
+      "statement": "Au 31/12/N, la société Lyra détient deux lignes d'actions cotées classées en valeurs mobilières de placement :\n- actions Alpha : coût d'entrée 10 000 €, cours moyen de décembre N 12 000 €, cours du 31/12/N 11 500 € ;\n- actions Beta : coût d'entrée 8 000 €, cours moyen de décembre N 6 500 €, cours du 31/12/N 6 800 €.\nAucune dépréciation n'existait à l'ouverture. Quelle écriture d'inventaire Lyra doit-elle passer ?",
+      "options": [
+        "Aucune écriture : la plus-value latente sur Alpha (2 000 €) couvre la moins-value latente sur Beta (1 500 €).",
+        "Une dotation aux dépréciations de 1 200 € (calcul au cours du 31/12/N) sur les actions Beta.",
+        "Une dotation aux dépréciations de 1 500 € sur les actions Beta et un produit financier de 2 000 € sur les actions Alpha.",
+        "Une dotation aux dépréciations de 1 500 € sur les actions Beta, sans rien constater sur les actions Alpha."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Les titres cotés de placement sont évalués à la clôture au cours moyen du dernier mois de l'exercice, ligne par ligne. Beta : 6 500 − 8 000 = moins-value latente de 1 500 €, dépréciée (6866 / 590). Alpha : plus-value latente de 2 000 €, non comptabilisée par prudence. Aucune compensation n'est admise entre les lignes, ce qui écarte la première réponse. Le cours du jour de clôture (qui donnerait une dépréciation de 1 200 €) n'est pas la référence retenue pour les titres cotés. Constater la plus-value latente en produit méconnaît le principe de prudence.",
+      "source_ref": "PCG art. 221-1 s. (évaluation des titres à l'inventaire, règl. ANC 2014-03) ; C. com. L123-19 (non-compensation) ; comptes 590 et 6866",
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-pcg-titres-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "instruments-financiers-pcg",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "coût d’entrée",
+        "frais d’acquisition"
+      ],
+      "statement": "Dans les comptes individuels, les frais d'acquisition de titres (honoraires, commissions, droits de mutation) peuvent, sur option, être comptabilisés en charges au lieu d'être incorporés au coût d'entrée des titres.",
+      "answer": true,
+      "justification": "Le coût d'entrée des titres comprend en principe les frais d'acquisition, mais le PCG ouvre une option pour leur comptabilisation en charges.",
+      "explanation": "Le coût d'acquisition des titres est le prix d'achat augmenté des frais accessoires directement attribuables (honoraires, commissions, droits d'enregistrement). Le PCG permet toutefois, par renvoi à l'option prévue pour les frais d'acquisition des immobilisations, de les passer en charges. L'option, une fois choisie, s'applique de façon permanente. Fiscalement, lorsque les frais sont incorporés au coût des titres de participation, ils sont déduits sur cinq ans par voie d'amortissement dérogatoire (CGI art. 209 VII).",
+      "source_ref": "PCG art. 221-1 et 213-8 (règl. ANC 2014-03) ; CGI art. 209 VII",
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-pcg-titres-0004",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "instruments-financiers-pcg",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "cession de titres",
+        "coût moyen pondéré"
+      ],
+      "statement": "La société Cassis détient des actions Delta classées en valeurs mobilières de placement. Elle a acheté 200 actions le 01/03/N au prix unitaire de 50 €, puis 300 actions le 10/06/N au prix unitaire de 60 € (frais d'acquisition passés en charges). Le 15/09/N, elle cède 250 actions au prix unitaire de 62 €. Cassis évalue les titres sortis au coût moyen pondéré. Quel est le résultat de cession (en euros, arrondi à l'euro ; positif s'il s'agit d'un gain) ?",
+      "expected_value": 1500,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Coût moyen pondéré avant la cession : (200 × 50 + 300 × 60) / 500 = 28 000 / 500 = 56 € par action. Coût des titres sortis : 250 × 56 = 14 000 €. Prix de cession : 250 × 62 = 15 500 €. Résultat de cession : 15 500 − 14 000 = 1 500 € (gain). Avec la méthode PEPS, on aurait trouvé 200 × (62 − 50) + 50 × (62 − 60) = 2 500 €, résultat différent non conforme à la méthode retenue. Les 250 actions restantes figurent au bilan pour 250 × 56 = 14 000 €.",
+      "source_ref": "PCG art. 221-1 s. (sortie des titres de même nature au coût moyen pondéré ou selon la méthode PEPS, règl. ANC 2014-03)",
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue4-pcg-titres-0005",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "instruments-financiers-pcg",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "titres de participation",
+        "valeur d’utilité",
+        "dépréciation"
+      ],
+      "statement": "La société Hermine détient des titres de participation dans la société Pollux, inscrits pour 400 000 € (coût d'entrée, frais inclus). Une dépréciation de 20 000 € a été constatée au 31/12/N-1. Au 31/12/N, compte tenu de la dégradation des perspectives de Pollux, la valeur d'utilité des titres est estimée à 340 000 €. Passez l'écriture d'inventaire au 31/12/N (utilisez le compte 2961).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "6866",
+          "label": "Dotations aux dépréciations des éléments financiers",
+          "debit": 40000,
+          "credit": 0
+        },
+        {
+          "account": "2961",
+          "label": "Dépréciations des titres de participation",
+          "debit": 0,
+          "credit": 40000
+        }
+      ],
+      "explanation": "Les titres de participation sont évalués à la clôture à leur valeur d'utilité. Dépréciation nécessaire au 31/12/N : 400 000 − 340 000 = 60 000 €. Dépréciation existante : 20 000 €. Dotation complémentaire : 60 000 − 20 000 = 40 000 €, en charges financières (6866) par le crédit du compte 2961. La valeur nette comptable des titres ressort à 340 000 €.",
+      "source_ref": "PCG art. 221-1 s. (valeur d'utilité des titres de participation, règl. ANC 2014-03) ; comptes 2961 et 6866",
+      "estimated_seconds": 120
+    },
+    {
+      "id": "ue4-pcg-titres-0006",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "instruments-financiers-pcg",
+      "verified": true,
+      "difficulty": 3,
+      "tags": [
+        "titres de participation",
+        "frais d’acquisition",
+        "amortissement dérogatoire",
+        "dividendes",
+        "valeur d’utilité"
+      ],
+      "title": "Prise de participation de la société Garance",
+      "context": "Le 1er janvier N, la société Garance (exercice civil) acquiert 30 % du capital de la société Saphir, un distributeur de ses produits, pour exercer une influence notable sur sa politique commerciale. Les titres seront conservés durablement.\n\nCoûts liés à l'acquisition :\n- prix d'achat des titres : 600 000 € ;\n- droits d'enregistrement : 600 € ;\n- honoraires d'avocat et d'audit d'acquisition : 9 000 € ;\n- commission de l'intermédiaire : 2 400 €.\n\nGarance a opté pour l'incorporation des frais d'acquisition au coût d'entrée des titres. Sur le plan fiscal, elle déduit ces frais sur cinq ans, à compter de la date d'acquisition, par voie d'amortissement dérogatoire.\n\nLe 15 juin N, l'assemblée générale de Saphir décide de distribuer un dividende ; la quote-part revenant à Garance, 18 000 €, est encaissée le même jour sur son compte bancaire.\n\nAu 31 décembre N, la valeur d'utilité des titres Saphir, estimée à partir de la rentabilité attendue et de la quote-part de capitaux propres, s'élève à 590 000 €.\n\nOn ignore la TVA et l'impôt sur les sociétés.",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "Quel est le coût d'entrée des titres Saphir dans les comptes de Garance (en euros) ?",
+          "points": 2,
+          "expected_value": 612000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Coût d'entrée = prix d'achat + frais d'acquisition incorporés : 600 000 + 600 + 9 000 + 2 400 = 612 000 €."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "prompt": "Quel est le montant de l'amortissement dérogatoire à doter au titre de N (en euros) ?",
+          "points": 2,
+          "expected_value": 2400,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Frais incorporés : 600 + 9 000 + 2 400 = 12 000 €, étalés fiscalement sur cinq ans à compter du 1er janvier N : 12 000 / 5 = 2 400 € pour une année complète."
+        },
+        {
+          "id": "q3",
+          "kind": "journal_entry",
+          "prompt": "Passez l'écriture d'encaissement du dividende le 15 juin N (utilisez le compte 761).",
+          "points": 2,
+          "date": "15/06/N",
+          "entries": [
+            {
+              "account": "512",
+              "label": "Banques",
+              "debit": 18000,
+              "credit": 0
+            },
+            {
+              "account": "761",
+              "label": "Produits de participations",
+              "debit": 0,
+              "credit": 18000
+            }
+          ],
+          "explanation": "Le dividende est un produit financier de l'exercice au cours duquel sa distribution est décidée ; provenant de titres de participation, il est enregistré au compte 761."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "prompt": "Faut-il constater une dépréciation des titres Saphir au 31 décembre N ? Chiffrez-la, indiquez les comptes utilisés et précisez si l'amortissement dérogatoire intervient dans le calcul.",
+          "points": 4,
+          "model_answer": "Les titres de participation sont évalués à la clôture à leur valeur d'utilité, comparée au coût d'entrée, frais d'acquisition inclus. Valeur d'utilité : 590 000 € ; coût d'entrée : 612 000 €. Une moins-value latente de 22 000 € apparaît : elle est constatée par une dépréciation (débit 6866 « Dotations aux dépréciations des éléments financiers », crédit 2961 « Dépréciations des titres de participation »). L'amortissement dérogatoire est une provision réglementée d'origine fiscale inscrite dans les capitaux propres : il ne réduit pas la valeur comptable des titres et n'intervient pas dans le calcul de la dépréciation.",
+          "key_points": [
+            "Comparaison du coût d'entrée frais inclus (612 000 €) avec la valeur d'utilité (590 000 €)",
+            "Dépréciation de 22 000 €",
+            "Comptes 6866 et 2961",
+            "L'amortissement dérogatoire est une provision réglementée sans effet sur la valeur des titres"
+          ]
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas enchaîne les étapes de la vie d'une participation : coût d'entrée frais inclus (612 000 €), étalement fiscal des frais par amortissement dérogatoire (2 400 € en N), dividende en produit financier (761) et dépréciation à la clôture par comparaison avec la valeur d'utilité (22 000 €).",
+      "source_ref": "PCG art. 221-1 s. et 213-8 (règl. ANC 2014-03) ; CGI art. 209 VII ; comptes 261, 2961, 6866, 761",
+      "estimated_seconds": 720
+    }
+  ]
+}

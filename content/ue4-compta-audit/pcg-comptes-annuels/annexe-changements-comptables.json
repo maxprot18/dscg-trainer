@@ -1,0 +1,147 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-pcg-annexe-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "annexe-changements-comptables",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "annexe",
+        "micro-entreprises"
+      ],
+      "statement": "Parmi les entreprises suivantes, lesquelles peuvent, sous réserve des exceptions prévues par la loi, être dispensées d'établir une annexe à leurs comptes annuels ?",
+      "options": [
+        "Les petites entreprises",
+        "Les micro-entreprises",
+        "Toutes les sociétés non soumises à l'obligation de nommer un commissaire aux comptes",
+        "Les entreprises dont les comptes ne comportent aucun engagement hors bilan"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le Code de commerce dispense les micro-entreprises d'établir une annexe (C. com. L123-16-1), sauf exceptions prévues par la loi. Les petites entreprises restent tenues d'en produire une, sous une forme simplifiée (C. com. L123-16). L'absence de commissaire aux comptes n'a aucune incidence sur le contenu des comptes annuels. L'annexe ne se limite pas aux engagements hors bilan : elle expose aussi les règles et méthodes comptables et commente les postes du bilan et du compte de résultat.",
+      "source_ref": "C. com. L123-12, L123-16 et L123-16-1",
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-pcg-annexe-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "annexe-changements-comptables",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "changement de méthode",
+        "changement d’estimation",
+        "qualification"
+      ],
+      "statement": "Laquelle des situations suivantes constitue un changement de méthode comptable au sens du PCG ?",
+      "options": [
+        "La durée d'utilité d'un parc de machines est révisée de 8 à 10 ans à la suite d'une expertise technique.",
+        "Le taux de dépréciation des créances clients anciennes est relevé compte tenu de la dégradation de la conjoncture.",
+        "Une entreprise abandonne la méthode à l'achèvement pour la méthode à l'avancement pour ses contrats à long terme.",
+        "Le coût total estimé d'un contrat à long terme en cours est révisé à la hausse."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Passer de la méthode à l'achèvement à la méthode à l'avancement modifie la règle d'évaluation des contrats : c'est un changement de méthode, toujours admis puisqu'il s'agit d'adopter la méthode de référence. Son effet à l'ouverture est imputé sur le report à nouveau et il est justifié dans l'annexe. Les trois autres situations résultent d'informations nouvelles qui modifient des estimations (durée d'utilité, risque de non-recouvrement, coût à terminaison) : ce sont des changements d'estimation, traités de façon prospective en résultat.",
+      "source_ref": "PCG art. 122-1 s. (règl. ANC 2014-03) ; PCG art. 622-1 s. ; C. com. L123-17",
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-pcg-annexe-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "annexe-changements-comptables",
+      "verified": true,
+      "difficulty": 3,
+      "tags": [
+        "changement de méthode",
+        "méthode de référence",
+        "frais de développement",
+        "report à nouveau"
+      ],
+      "statement": "Au 01/01/N, la société Iris décide d'inscrire à l'actif ses frais de développement, méthode de référence, alors qu'elle les comptabilisait jusqu'ici en charges. Les conditions d'activation étaient remplies et documentées dès l'origine pour les deux projets suivants :\n- projet A : 80 000 € de frais engagés en N-2, projet achevé fin N-2, amortissable linéairement sur 4 ans à compter du 01/01/N-1 ;\n- projet B : 50 000 € de frais engagés en N-1, projet toujours en cours au 01/01/N (non amorti).\nEn faisant abstraction de l'impôt, quel est l'impact du changement de méthode sur le report à nouveau au 01/01/N ?",
+      "options": [
+        "+130 000 €",
+        "+90 000 €",
+        "+110 000 €",
+        "+60 000 €"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Un changement de méthode s'applique rétrospectivement : on calcule, à l'ouverture de l'exercice du changement, la valeur qu'auraient les actifs si la nouvelle méthode avait toujours été appliquée, et l'écart est imputé sur le report à nouveau. Projet A : 80 000 − 20 000 (amortissement de N-1) = 60 000 €. Projet B : 50 000 € (en cours, non amorti). Impact : +110 000 €. 130 000 € oublie l'amortissement de A ; 90 000 € compte deux années d'amortissement alors qu'il n'a commencé qu'au 01/01/N-1 ; 60 000 € omet le projet B, pourtant activable dès N-1. L'amortissement de A de l'exercice N (20 000 €) sera, lui, une charge de N.",
+      "source_ref": "PCG art. 122-1 s. (changements de méthode, règl. ANC 2014-03) ; PCG art. 212-3 (frais de développement)",
+      "estimated_seconds": 120
+    },
+    {
+      "id": "ue4-pcg-annexe-0004",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "annexe-changements-comptables",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "changement d’estimation",
+        "report à nouveau"
+      ],
+      "statement": "Lorsqu'une entreprise allonge la durée d'utilité d'une immobilisation à la suite d'une révision de ses estimations, l'effet de cette révision sur les amortissements des exercices antérieurs est imputé sur le report à nouveau.",
+      "answer": false,
+      "justification": "La révision d'une durée d'utilité est un changement d'estimation : elle s'applique de façon prospective, en résultat de l'exercice et des exercices suivants.",
+      "explanation": "Seuls les changements de méthode donnent lieu à un calcul rétrospectif imputé sur les capitaux propres d'ouverture. Un changement d'estimation résulte d'informations nouvelles ; il n'y a pas d'erreur passée à corriger. La valeur nette comptable à la date de la révision est amortie sur la durée d'utilité résiduelle révisée, ce qui modifie la dotation de l'exercice et des suivants.",
+      "source_ref": "PCG art. 122-1 s. (règl. ANC 2014-03) ; PCG art. 214-1 s. (révision du plan d'amortissement)",
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-pcg-annexe-0005",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "annexe-changements-comptables",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "changement de méthode",
+        "engagements de retraite",
+        "report à nouveau"
+      ],
+      "statement": "Jusqu'en N-1, la société Cèdre mentionnait ses engagements d'indemnités de départ à la retraite dans l'annexe sans les provisionner. À compter du 01/01/N, elle adopte la méthode de référence et les comptabilise au passif. L'engagement est évalué à 150 000 € au 01/01/N et à 165 000 € au 31/12/N (aucun versement en N). Aucun impôt différé n'est constaté dans les comptes individuels. Quel est le montant (en euros, en valeur absolue) de la diminution du report à nouveau liée à ce changement ?",
+      "expected_value": 150000,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Le passage à la méthode de référence est un changement de méthode, appliqué rétrospectivement : l'effet cumulé à l'ouverture de l'exercice du changement, soit l'engagement au 01/01/N (150 000 €), est imputé sur le report à nouveau (débit 110 ou 119, crédit 153). L'augmentation de l'engagement au cours de N (165 000 − 150 000 = 15 000 €) relève de l'exercice N et est dotée en charges (6815). Imputer 165 000 € sur le report à nouveau serait une erreur : la variation de N doit passer par le résultat.",
+      "source_ref": "PCG art. 122-1 s. (règl. ANC 2014-03) ; C. com. L123-13 (engagements de retraite) ; compte 153",
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue4-pcg-annexe-0006",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "pcg-comptes-annuels",
+      "notion": "annexe-changements-comptables",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "permanence des méthodes",
+        "changement de méthode"
+      ],
+      "front": "À quelles conditions une entreprise peut-elle changer de méthode comptable dans ses comptes individuels ?",
+      "back": "Le changement doit être :\n- imposé par un nouveau texte (loi, règlement de l'ANC), ou\n- justifié par un changement exceptionnel dans la situation de l'entreprise ou par la recherche d'une meilleure information.\nL'adoption d'une méthode de référence est toujours admise et ne permet pas de revenir ensuite à l'ancienne méthode.",
+      "explanation": "Exception à la permanence des méthodes (C. com. L123-17 ; PCG art. 122-1 s.). L'annexe justifie le changement et en indique l'incidence ; l'effet cumulé à l'ouverture est imputé sur le report à nouveau.",
+      "source_ref": "C. com. L123-17 ; PCG art. 122-1 s. (règl. ANC 2014-03)",
+      "estimated_seconds": 45
+    }
+  ]
+}
