@@ -1,0 +1,145 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-mission-reponses-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "reponses-risques-evalues",
+      "difficulty": 1,
+      "tags": [
+        "NEP 330",
+        "réponses générales",
+        "imprévisibilité"
+      ],
+      "statement": "Parmi les mesures suivantes, laquelle constitue une réponse générale à un risque d'anomalies significatives évalué au niveau des comptes pris dans leur ensemble ?",
+      "options": [
+        "Introduire un élément d'imprévisibilité dans le choix des procédures d'audit",
+        "Envoyer des demandes de confirmation aux principaux fournisseurs",
+        "Recalculer la dotation aux amortissements des installations techniques",
+        "Contrôler la séparation des exercices sur les dix dernières livraisons de décembre"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "La NEP 330 cite, parmi les réponses générales à un risque au niveau des comptes pris dans leur ensemble : affecter des collaborateurs expérimentés, renforcer la supervision, introduire un élément d'imprévisibilité dans le choix des procédures, modifier la nature, le calendrier ou l'étendue des travaux. Les trois autres propositions sont des procédures de substance qui répondent à un risque au niveau d'une assertion : exhaustivité ou existence des dettes fournisseurs, évaluation des immobilisations, séparation des exercices des ventes.",
+      "source_ref": "NEP 330 (procédures mises en œuvre par le commissaire aux comptes à l'issue de son évaluation des risques), réponses générales",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-mission-reponses-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "reponses-risques-evalues",
+      "difficulty": 2,
+      "tags": [
+        "NEP 330",
+        "exhaustivité",
+        "dettes fournisseurs",
+        "passifs non comptabilisés"
+      ],
+      "statement": "Chez Basalte SAS, le commissaire aux comptes évalue un risque élevé d'omission de dettes fournisseurs à la clôture (assertion d'exhaustivité), la direction cherchant à améliorer le résultat. Quelle procédure de substance répond le mieux à ce risque ?",
+      "options": [
+        "Sélectionner les soldes fournisseurs les plus élevés de la balance et les rapprocher des factures correspondantes",
+        "Recalculer la TVA déductible figurant sur les factures enregistrées en décembre",
+        "Examiner les factures reçues et les décaissements effectués après la clôture, pour identifier des dettes relatives à l'exercice non comptabilisées",
+        "Obtenir de la direction une déclaration écrite attestant que toutes les dettes ont été enregistrées, sans autre procédure"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Pour l'exhaustivité, il faut partir de sources extérieures à la comptabilité ou postérieures à la clôture et vérifier que les dettes correspondantes figurent dans les comptes : c'est la recherche de passifs non comptabilisés (factures reçues et paiements après la clôture, rattachés à des achats ou prestations de l'exercice). Partir des soldes comptabilisés vérifie leur existence, pas l'absence d'omission : une dette non enregistrée ne peut pas être sélectionnée dans la balance. Le recalcul de la TVA porte sur la mesure des opérations enregistrées. La déclaration écrite de la direction est un élément complémentaire qui ne remplace pas les procédures de substance, surtout face à un risque d'incitation de la direction.",
+      "source_ref": "NEP 330 (procédures de substance en réponse au risque évalué au niveau des assertions) ; NEP 500 (assertion d'exhaustivité) ; NEP 580 (déclarations de la direction)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-mission-reponses-0003",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "reponses-risques-evalues",
+      "difficulty": 2,
+      "tags": [
+        "NEP 330",
+        "procédures de substance",
+        "risque lié au contrôle"
+      ],
+      "statement": "Lorsque les tests de procédures montrent que les contrôles du cycle ventes sont efficaces, le commissaire aux comptes peut se dispenser de toute procédure de substance sur le solde clients, même si celui-ci est significatif.",
+      "answer": false,
+      "justification": "Quelle que soit son évaluation des risques, le commissaire aux comptes met en œuvre des procédures de substance pour chaque catégorie d'opérations, solde et information significatifs.",
+      "explanation": "La NEP 330 impose des procédures de substance sur chaque élément significatif, car l'évaluation des risques repose sur le jugement et le contrôle interne a des limites inhérentes (erreurs humaines, collusion, contournement par la direction). Des contrôles efficaces permettent de réduire la nature, le calendrier ou l'étendue des procédures de substance (par exemple moins de confirmations, travaux en intérim), pas de les supprimer.",
+      "source_ref": "NEP 330 (procédures de substance obligatoires pour les éléments significatifs)",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue4-mission-reponses-0004",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "reponses-risques-evalues",
+      "difficulty": 2,
+      "tags": [
+        "NEP 330",
+        "séparation des exercices",
+        "ajustement proposé",
+        "factures à établir"
+      ],
+      "statement": "En réponse à un risque évalué sur la séparation des exercices des ventes de Granit SAS (clôture au 31/12/N), le commissaire aux comptes rapproche les bons de livraison des derniers jours de décembre des factures émises. Il constate qu'une livraison de marchandises effectuée le 28/12/N, d'un montant de 29 000 € HT (TVA 20 %), n'a été facturée que le 6/01/N+1 et n'est pas comptabilisée en N. Les marchandises ont été correctement exclues de l'inventaire de clôture. Rédigez l'écriture d'ajustement qu'il propose au 31/12/N. Utilisez les comptes 4181, 707 et 44587.",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "4181",
+          "label": "Clients — factures à établir",
+          "debit": 34800,
+          "credit": 0
+        },
+        {
+          "account": "707",
+          "label": "Ventes de marchandises",
+          "debit": 0,
+          "credit": 29000
+        },
+        {
+          "account": "44587",
+          "label": "Taxes sur le chiffre d'affaires sur factures à établir",
+          "debit": 0,
+          "credit": 5800
+        }
+      ],
+      "explanation": "La livraison du 28/12/N transfère les marchandises au client : le produit appartient à l'exercice N (indépendance des exercices), même si la facture est établie en N+1. Produit : 29 000 € HT au compte 707 ; TVA correspondante : 29 000 × 20 % = 5 800 € au compte 44587 ; créance : 34 800 € TTC au compte 4181. Les marchandises étant déjà exclues du stock, aucune correction de stock n'est nécessaire ; le coût des marchandises vendues figure déjà en charges (via la variation de stock) : sans l'ajustement, le résultat serait donc sous-évalué du montant total de la vente, soit 29 000 €, et non de la seule marge. Le test de rapprochement livraisons-factures est une procédure de substance (test de détail) répondant à l'assertion de séparation des exercices.",
+      "source_ref": "NEP 330 (procédures de substance) ; NEP 450 (anomalies relevées et demande de correction) ; PCG, comptes 4181, 707 et 44587 (règl. ANC 2014-03)",
+      "verified": true,
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue4-mission-reponses-0005",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "reponses-risques-evalues",
+      "difficulty": 3,
+      "tags": [
+        "NEP 330",
+        "NEP 520",
+        "procédure analytique substantive",
+        "charges financières"
+      ],
+      "statement": "Pour répondre à un risque évalué sur la mesure des charges d'intérêts de Jaspe SAS (exercice du 01/01/N au 31/12/N), le commissaire aux comptes construit une attente à partir des contrats d'emprunt :\n- emprunt A : capital restant dû de 2 400 000 € au 01/01/N, taux fixe 3,5 % ; remboursement de 600 000 € de capital le 30/06/N ;\n- emprunt B : 1 000 000 € souscrit le 01/10/N, taux fixe 4 %, aucun remboursement en N.\nLes intérêts sont calculés prorata temporis, en mois (base 12 mois). Le compte 6611 présente un solde de 96 900 €. Calculez l'écart entre la charge comptabilisée et la charge attendue (comptabilisée − attendue), en euros.",
+      "expected_value": 13400,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Emprunt A : 2 400 000 × 3,5 % × 6/12 = 42 000 € (janvier à juin) ; 1 800 000 × 3,5 % × 6/12 = 31 500 € (juillet à décembre). Emprunt B : 1 000 000 × 4 % × 3/12 = 10 000 €. Charge attendue : 42 000 + 31 500 + 10 000 = 83 500 €. Écart : 96 900 − 83 500 = 13 400 €. Erreurs classiques : oublier le remboursement du 30/06 (attente 94 000, écart 2 900) ou compter l'emprunt B sur l'année (attente 113 500). Si l'écart dépasse le montant que le commissaire aux comptes a jugé acceptable sans investigation, il interroge la direction et corrobore les explications (frais bancaires imputés au 6611, intérêts de découvert, erreur de rattachement), conformément à la NEP 520. La procédure analytique substantive (NEP 520) est surtout adaptée à des montants importants et prévisibles ; selon la NEP 330, si le risque requérait une démarche d'audit particulière et que seules des procédures de substance étaient mises en œuvre, celles-ci devraient comprendre des tests de détail.",
+      "source_ref": "NEP 520 (procédures analytiques) ; NEP 330 (procédures de substance) ; PCG, compte 6611 (règl. ANC 2014-03)",
+      "verified": true,
+      "estimated_seconds": 240
+    }
+  ]
+}

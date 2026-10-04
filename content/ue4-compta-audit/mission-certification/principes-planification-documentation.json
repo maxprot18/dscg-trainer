@@ -1,0 +1,200 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-mission-principes-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "principes-planification-documentation",
+      "difficulty": 1,
+      "tags": [
+        "NEP 200",
+        "assurance raisonnable",
+        "objectif de l'audit"
+      ],
+      "statement": "Quel niveau d'assurance l'audit des comptes mis en œuvre dans le cadre de la certification vise-t-il à obtenir ?",
+      "options": [
+        "Une assurance absolue que les comptes ne comportent aucune erreur",
+        "Une assurance modérée, de même niveau que celle d'un examen limité",
+        "Une assurance raisonnable, c'est-à-dire élevée mais non absolue, que les comptes pris dans leur ensemble ne comportent pas d'anomalies significatives",
+        "Aucune assurance : le commissaire aux comptes se borne à constater la concordance des comptes avec la comptabilité"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "La NEP 200 fixe l'objectif de l'audit : obtenir l'assurance raisonnable, qualifiée d'élevée mais non absolue, que les comptes pris dans leur ensemble ne comportent pas d'anomalies significatives. L'assurance absolue est hors d'atteinte en raison des limites inhérentes à l'audit (sondages, limites du contrôle interne, éléments probants plutôt que concluants) ; elle ne porte d'ailleurs que sur les anomalies significatives, pas sur toute erreur. L'assurance modérée (ou limitée) caractérise l'examen limité, mission de niveau inférieur. Le simple constat de concordance ne correspond pas à une certification : il n'apporte aucune opinion sur la régularité, la sincérité et l'image fidèle.",
+      "source_ref": "NEP 200 (principes applicables à l'audit des comptes mis en œuvre dans le cadre de la certification)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-mission-principes-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "principes-planification-documentation",
+      "difficulty": 1,
+      "tags": [
+        "NEP 300",
+        "planification",
+        "programme de travail"
+      ],
+      "statement": "Selon la NEP 300, quel document définit la nature, le calendrier et l'étendue des procédures d'audit à mettre en œuvre par les membres de l'équipe ?",
+      "options": [
+        "La lettre de mission",
+        "Le plan de mission",
+        "La note de synthèse de fin de mission",
+        "Le programme de travail"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "La NEP 300 distingue deux niveaux de planification. Le programme de travail définit la nature, le calendrier et l'étendue des procédures que les membres de l'équipe doivent mettre en œuvre. Le plan de mission, lui, décrit l'approche générale des travaux (étendue, calendrier, orientation, seuil de signification, risques identifiés) : c'est la stratégie d'ensemble, pas le détail des procédures. La lettre de mission (NEP 210) organise la relation avec l'entité (objectif, obligations respectives, honoraires) ; la note de synthèse résume en fin de mission les conclusions des travaux.",
+      "source_ref": "NEP 300 (planification de l'audit) ; NEP 210 (lettre de mission)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-mission-principes-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "principes-planification-documentation",
+      "difficulty": 2,
+      "tags": [
+        "NEP 230",
+        "documentation",
+        "dossier de travail"
+      ],
+      "statement": "Lors d'une revue du dossier de l'exercice N, l'associé signataire constate que la feuille de travail sur les stocks indique seulement « Inventaire vu, RAS », sans autre précision. Le collaborateur a pourtant assisté à l'inventaire physique et effectué des comptages par sondage. Quelle affirmation est conforme à la NEP 230 ?",
+      "options": [
+        "La documentation doit décrire les procédures réalisées, leurs résultats et la conclusion de façon qu'un professionnel expérimenté n'ayant pas participé à la mission puisse les comprendre : la feuille doit être complétée (articles comptés, écarts, conclusion)",
+        "La mention suffit dès lors que le collaborateur a signé la feuille de travail et peut confirmer oralement ses travaux",
+        "La feuille pourra être complétée après la signature du rapport en y ajoutant des comptages qui n'avaient pas été faits, pour rendre le dossier plus complet",
+        "La documentation doit être transmise à la direction de l'entité, qui la valide avant la signature du rapport"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "La NEP 230 exige un dossier qui permette à un professionnel expérimenté, n'ayant pas participé à la mission, de comprendre la nature, le calendrier et l'étendue des procédures mises en œuvre, leurs résultats, les éléments collectés et les conclusions. « RAS » ne dit ni ce qui a été compté, ni les écarts constatés, ni comment ils ont été traités : la feuille doit être complétée. La confirmation orale du collaborateur ne remplace pas la documentation, qui est la preuve des diligences. Ajouter après la signature du rapport des travaux non réalisés serait une falsification du dossier ; seuls des compléments de forme, datés et identifiés, sont envisageables. Enfin, le dossier appartient au commissaire aux comptes : il n'est ni transmis à l'entité ni validé par elle.",
+      "source_ref": "NEP 230 (documentation de l'audit des comptes)",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-mission-principes-0004",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "principes-planification-documentation",
+      "difficulty": 1,
+      "tags": [
+        "NEP 210",
+        "lettre de mission",
+        "mission légale"
+      ],
+      "statement": "La lettre de mission peut valablement exclure les stocks des travaux du commissaire aux comptes si l'entité et le commissaire aux comptes en conviennent.",
+      "answer": false,
+      "justification": "La certification est une mission légale dont le contenu est fixé par la loi et les NEP : la lettre de mission organise l'intervention mais ne peut pas en restreindre l'étendue.",
+      "explanation": "La NEP 210 prévoit une lettre de mission établie avant le début des travaux, qui précise notamment l'objectif et l'étendue de l'audit, les obligations respectives des parties et le budget d'honoraires. Elle a une fonction d'information et d'organisation. Elle ne peut pas déroger aux obligations légales : le commissaire aux comptes doit collecter les éléments suffisants et appropriés sur tous les postes significatifs. Si les stocks sont significatifs et qu'il ne peut pas les auditer, il s'agit d'une limitation de ses travaux, qui a des conséquences sur l'opinion (réserve ou impossibilité de certifier).",
+      "source_ref": "NEP 210 (lettre de mission) ; NEP 200 (principes applicables à l'audit) ; NEP 700 (incidence d'une limitation des travaux sur l'opinion)",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue4-mission-principes-0005",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "principes-planification-documentation",
+      "difficulty": 1,
+      "tags": [
+        "NEP 230",
+        "documentation",
+        "dossier de travail"
+      ],
+      "front": "Selon la NEP 230, que doit permettre le dossier de travail du commissaire aux comptes ?",
+      "back": "Il doit permettre à un professionnel expérimenté, n'ayant pas participé à la mission, de comprendre :\n- la nature, le calendrier et l'étendue des procédures mises en œuvre ;\n- leurs résultats et les éléments collectés ;\n- les conclusions sur les points importants et les jugements professionnels exercés pour les atteindre.",
+      "explanation": "Le dossier est la preuve des diligences du commissaire aux comptes, notamment en cas de contrôle d'activité par la H2A ou de mise en cause de sa responsabilité. Il lui appartient, n'est pas remis à l'entité et doit être conservé six ans (Code de commerce, partie réglementaire).",
+      "source_ref": "NEP 230 (documentation de l'audit des comptes)",
+      "verified": true,
+      "estimated_seconds": 30
+    },
+    {
+      "id": "ue4-mission-principes-0006",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "mission-certification",
+      "notion": "principes-planification-documentation",
+      "difficulty": 2,
+      "tags": [
+        "NEP 300",
+        "plan de mission",
+        "budget",
+        "premier mandat"
+      ],
+      "title": "Ondine SAS : planifier un premier mandat",
+      "context": "Votre cabinet vient d'être nommé commissaire aux comptes d'Ondine SAS pour six exercices, à compter de l'exercice clos le 31/12/N. Ondine distribue du matériel de piscine auprès de professionnels ; elle n'est pas une entité d'intérêt public. Le chiffre d'affaires prévisionnel est de 22 millions d'euros, avec une forte saisonnalité (60 % des ventes entre avril et juillet). Les stocks, répartis sur deux entrepôts, représentent 35 % du total du bilan. La société a changé de logiciel comptable en septembre N et son directeur financier a quitté l'entreprise en octobre N ; le poste est tenu par intérim par le chef comptable. Les comptes N-1 ont été certifiés sans réserve par un autre commissaire aux comptes.\n\nL'associé souhaite arrêter le plan de mission avant l'intervention intérimaire de novembre N. Le budget prévoit l'intervention de l'associé pendant 30 heures (taux horaire 250 €), d'un manager pendant 80 heures (150 €) et de collaborateurs pendant 210 heures (90 €).",
+      "sub_questions": [
+        {
+          "id": "q1-budget-honoraires",
+          "kind": "numeric",
+          "prompt": "Calculez le budget d'honoraires hors taxes de la mission (en euros).",
+          "points": 2,
+          "expected_value": 38400,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "30 × 250 + 80 × 150 + 210 × 90 = 7 500 + 12 000 + 18 900 = 38 400 €. Le budget d'honoraires figure dans la lettre de mission (NEP 210) et les heures par intervenant sont reprises dans le plan de mission."
+        },
+        {
+          "id": "q2-document-adapte",
+          "kind": "mcq",
+          "prompt": "Dans quel document le commissaire aux comptes indique-t-il que les comptages tournants de l'entrepôt de Nantes seront observés par un collaborateur le 15 novembre N, sur un échantillon de 40 références ?",
+          "points": 2,
+          "options": [
+            "Dans la lettre de mission",
+            "Dans le programme de travail",
+            "Dans le plan de mission",
+            "Dans le rapport sur les comptes annuels"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Une procédure précise, avec sa date et son étendue (40 références), relève du programme de travail, qui définit la nature, le calendrier et l'étendue des procédures confiées à l'équipe. Le plan de mission se limite à l'approche générale (par exemple : « risque élevé sur les stocks, présence aux inventaires »)."
+        },
+        {
+          "id": "q3-plan-fige",
+          "kind": "true_false",
+          "prompt": "Une fois arrêté avant l'intérim, le plan de mission ne peut plus être modifié pendant l'exercice.",
+          "points": 1,
+          "answer": false,
+          "explanation": "La NEP 300 prévoit que le plan de mission et le programme de travail sont modifiés, si nécessaire, au cours de la mission, par exemple si les travaux révèlent des risques nouveaux ou si le résultat définitif conduit à revoir le seuil de signification."
+        },
+        {
+          "id": "q4-elements-plan",
+          "kind": "open",
+          "prompt": "Présentez les principaux éléments que le plan de mission d'Ondine doit contenir, en vous appuyant sur les faits de l'énoncé.",
+          "points": 5,
+          "model_answer": "Le plan de mission décrit l'approche générale des travaux. Pour Ondine, il présente : (1) la connaissance de l'entité : distribution de matériel de piscine, activité saisonnière, deux entrepôts ; (2) les risques identifiés : changement de logiciel comptable en septembre N (risque sur la reprise des données et sur la continuité des traitements), départ du directeur financier et intérim par le chef comptable (risque sur la qualité de l'arrêté des comptes et sur les estimations), stocks représentant 35 % du bilan (existence et évaluation), saisonnalité (séparation des exercices moins sensible en décembre, mais variations de stocks importantes) ; (3) le seuil de signification et le seuil de planification retenus ; (4) l'orientation des travaux : prise de connaissance du nouveau système et contrôle de la reprise des soldes, présence aux inventaires des deux entrepôts, travaux sur les soldes d'ouverture puisqu'il s'agit d'un premier mandat (prise de contact avec le prédécesseur, examen de ses travaux) ; (5) le calendrier (intérim en novembre, inventaire, final) et l'équipe avec le budget d'heures (320 heures, 38 400 €).",
+          "key_points": [
+            "Rappeler la connaissance de l'entité et ses caractéristiques (saisonnalité, deux entrepôts)",
+            "Identifier les risques tirés de l'énoncé : changement de logiciel, départ du directeur financier, poids des stocks",
+            "Mentionner le seuil de signification et le seuil de planification",
+            "Prévoir les travaux propres au premier mandat : soldes d'ouverture, contact avec le prédécesseur",
+            "Indiquer le calendrier, l'équipe et le budget"
+          ],
+          "explanation": "La NEP 300 décrit le plan de mission comme l'approche générale des travaux ; la NEP 510 traite des soldes d'ouverture lors d'un premier mandat. L'essentiel est de relier chaque orientation de travail à un fait de l'énoncé."
+        }
+      ],
+      "total_points": 10,
+      "explanation": "Le cas distingue les trois documents de la planification : la lettre de mission (budget d'honoraires), le plan de mission (approche générale, risques, seuils, calendrier) et le programme de travail (procédures détaillées). Il rappelle que la planification est un processus continu, révisé en cours de mission.",
+      "source_ref": "NEP 300 (planification de l'audit) ; NEP 210 (lettre de mission) ; NEP 510 (contrôle du bilan d'ouverture du premier exercice certifié)",
+      "verified": true,
+      "estimated_seconds": 720
+    }
+  ]
+}
