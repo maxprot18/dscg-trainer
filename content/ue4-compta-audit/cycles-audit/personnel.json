@@ -1,0 +1,880 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-audit-personnel-0001",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "réalité",
+        "salariés fictifs"
+      ],
+      "statement": "L’auditeur sélectionne des salariés dans le journal de paie de l’exercice et vérifie, pour chacun, l’existence d’un contrat de travail signé, son inscription au registre unique du personnel et des relevés de badge sur la période. Quelle assertion ce test vise-t-il principalement ?",
+      "options": [
+        "Exhaustivité des charges de personnel",
+        "Séparation des exercices",
+        "Réalité des charges de personnel",
+        "Classification des charges de personnel"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Le test part des salaires comptabilisés (journal de paie) pour remonter à des preuves d’existence du salarié et de sa présence : il vérifie que chaque rémunération enregistrée correspond à un salarié réel ayant travaillé, c’est la réalité (risque de salariés fictifs). L’option 1 (exhaustivité) se teste dans l’autre sens, des données RH vers la paie. L’option 2 (séparation) porte sur le rattachement à l’exercice, non examiné ici. L’option 4 (classification) concerne le compte d’imputation, que ce test ne contrôle pas.",
+      "source_ref": "NEP 500 (assertions relatives aux catégories d’opérations : réalité, exhaustivité)",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-audit-personnel-0002",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-assertions",
+      "difficulty": 2,
+      "tags": [
+        "assertions",
+        "exhaustivité",
+        "entrées de personnel"
+      ],
+      "statement": "L’auditeur obtient de la DRH la liste des contrats de travail signés au cours de l’exercice (entrées de personnel, y compris les contrats à durée déterminée) et vérifie que chaque salarié recruté figure dans le journal de paie à compter de sa date d’embauche. Quelle assertion est principalement testée ?",
+      "options": [
+        "Exhaustivité des charges de personnel",
+        "Réalité des charges de personnel",
+        "Évaluation des dettes sociales",
+        "Droits et obligations"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Le test part d’une source indépendante de la paie (contrats signés tenus par la DRH) pour vérifier que les rémunérations correspondantes ont bien été enregistrées : il couvre l’exhaustivité. L’option 2 (réalité) se teste en sens inverse, du journal de paie vers les preuves d’existence. L’option 3 vise le montant des dettes sociales à la clôture (recalcul des congés, des charges sociales), non leur enregistrement. L’option 4 est une assertion relative aux soldes (actifs détenus, passifs dus) et ne correspond pas à ce test sur les opérations.",
+      "source_ref": "NEP 500 (assertions relatives aux catégories d’opérations)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-personnel-0003",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-assertions",
+      "difficulty": 2,
+      "tags": [
+        "assertions",
+        "présentation",
+        "engagements de retraite"
+      ],
+      "statement": "Lors de la revue des comptes annuels, l’auditeur vérifie que la dette de congés payés figure parmi les dettes fiscales et sociales (et non parmi les provisions) et que l’annexe mentionne le montant des engagements de retraite que l’entité a choisi de ne pas provisionner. Quelle assertion est visée ?",
+      "options": [
+        "Existence des dettes sociales",
+        "Mesure des charges de personnel",
+        "Séparation des exercices",
+        "Présentation et informations fournies (classification et intelligibilité, exhaustivité de l’information)"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Vérifier le poste du bilan dans lequel figure une dette et la présence d’une information obligatoire en annexe relève des assertions de présentation : classification et intelligibilité (bon poste) et exhaustivité de l’information fournie (engagements non provisionnés à mentionner, C. com. art. L123-13). L’option 1 (existence) porte sur la réalité de la dette, non sur son classement. L’option 2 (mesure) vise le montant des charges. L’option 3 (séparation) concerne le rattachement des opérations au bon exercice.",
+      "source_ref": "NEP 500 (assertions relatives à la présentation des comptes et aux informations fournies) ; C. com. art. L123-13",
+      "verified": true,
+      "estimated_seconds": 70
+    },
+    {
+      "id": "ue4-audit-personnel-0004",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-assertions",
+      "difficulty": 2,
+      "tags": [
+        "assertions",
+        "dettes sociales",
+        "règlements postérieurs"
+      ],
+      "statement": "Rapprocher le solde du compte 431 Sécurité sociale au 31/12/N de la déclaration sociale nominative (DSN) de décembre N et du règlement effectué à l’URSSAF en janvier N+1 contribue à vérifier à la fois l’existence et l’exhaustivité de cette dette.",
+      "answer": true,
+      "justification": "Vrai : le règlement postérieur, rapproché de la déclaration, corrobore la réalité du montant dû et permet de détecter une dette non enregistrée.",
+      "explanation": "La DSN de décembre fixe les cotisations dues sur les salaires de décembre et le relevé bancaire de janvier N+1 en prouve le paiement : un solde comptable égal au montant déclaré et payé est existant ; un montant payé supérieur au solde révèle une dette omise (exhaustivité). Ce rapprochement est une procédure courante sur les dettes sociales, qui se font rarement confirmer directement.",
+      "source_ref": "NEP 500 (assertions relatives aux soldes) ; PCG compte 431",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-audit-personnel-0005",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-assertions",
+      "difficulty": 1,
+      "tags": [
+        "assertions",
+        "dettes sociales",
+        "charges de personnel"
+      ],
+      "front": "Cycle personnel : quelle procédure type pour la réalité des salaires, l’exhaustivité des dettes sociales et l’évaluation de la dette de congés payés ?",
+      "back": "Réalité des salaires : du journal de paie vers contrat, registre unique du personnel, preuve de présence.\nExhaustivité des dettes sociales : rapprochement des soldes 421, 431, 437 avec la DSN de décembre et les règlements de janvier N+1 ; recherche des primes acquises non comptabilisées (4286).\nÉvaluation de la dette de congés : recalcul des jours acquis non pris × salaire journalier, plus charges sociales (4382).",
+      "explanation": "Chaque assertion appelle une procédure dont le sens est adapté : de la comptabilité vers les preuves pour la réalité, de sources externes ou indépendantes vers la comptabilité pour l’exhaustivité, recalcul pour l’évaluation.",
+      "source_ref": "NEP 500 (assertions relatives aux catégories d’opérations et aux soldes)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-personnel-0006",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "fraude",
+        "paie"
+      ],
+      "statement": "Parmi les constats suivants, relevés lors de la prise de connaissance du cycle personnel d’une PME, lesquels constituent des facteurs de risque de détournement sur la paie ? (plusieurs réponses)",
+      "options": [
+        "La gestionnaire de paie saisit seule les entrées et sorties de salariés et peut modifier les coordonnées bancaires dans le fichier de paie",
+        "Les bulletins sont calculés par un logiciel de paie du marché, mis à jour par l’éditeur",
+        "La masse salariale évolue en ligne avec l’effectif moyen et l’augmentation générale accordée",
+        "Le nombre de bulletins payés en décembre excède de quatre le nombre de salariés présents selon le registre unique du personnel"
+      ],
+      "answer": [
+        0,
+        3
+      ],
+      "multiple": true,
+      "explanation": "L’option 1 décrit un cumul de fonctions incompatibles : la même personne peut créer un salarié fictif ou détourner un salaire en modifiant un RIB. L’option 4 est un indice direct d’anomalie : des bulletins sans salarié correspondant au registre peuvent révéler des salariés fictifs ou sortis encore payés. L’option 2 (logiciel du marché mis à jour) réduit plutôt le risque d’erreur de calcul. L’option 3 décrit une évolution cohérente, qui ne signale aucun risque particulier.",
+      "source_ref": "NEP 240 (facteurs de risque de fraude) ; NEP 315",
+      "verified": true,
+      "estimated_seconds": 75
+    },
+    {
+      "id": "ue4-audit-personnel-0007",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "NEP 250",
+        "lois et règlements"
+      ],
+      "statement": "Une société industrielle doit respecter la réglementation sur la santé et la sécurité au travail, dont le non-respect n’a pas d’incidence directe sur la détermination des montants des comptes. Selon la NEP 250, quelles diligences le commissaire aux comptes met-il en œuvre à ce titre ?",
+      "options": [
+        "Un audit complet de conformité de chaque site aux règles d’hygiène et de sécurité",
+        "Aucune diligence, ces textes étant étrangers à la mission de certification",
+        "Une demande de confirmation directe adressée à l’inspection du travail sur l’absence d’infraction",
+        "S’enquérir auprès de la direction du respect de ces textes et consulter la correspondance reçue des autorités administratives et de contrôle"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "La NEP 250 distingue les textes ayant une incidence directe sur les comptes (pour lesquels le CAC collecte des éléments suffisants et appropriés sur leur respect) et les autres textes, pour lesquels ses diligences se limitent à des demandes d’informations auprès de la direction et à la consultation de la correspondance avec les autorités : c’est l’option 4. L’option 1 excède la mission du CAC, qui n’est pas un audit de conformité. L’option 2 est fausse : un non-respect peut entraîner amendes ou litiges ayant une incidence significative sur les comptes. L’option 3 n’est pas une procédure prévue par la norme.",
+      "source_ref": "NEP 250 (textes légaux et réglementaires)",
+      "verified": true,
+      "estimated_seconds": 70
+    },
+    {
+      "id": "ue4-audit-personnel-0008",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "contrôle URSSAF",
+        "événements postérieurs"
+      ],
+      "statement": "Une lettre d’observations de l’URSSAF reçue en février N+1, avant l’arrêté des comptes, et portant sur les exercices N−2 à N, n’a aucune incidence sur les comptes de l’exercice N puisqu’elle est postérieure à la clôture.",
+      "answer": false,
+      "justification": "Faux : le redressement porte sur des cotisations afférentes à des périodes antérieures à la clôture ; l’événement apporte une information sur une situation existant au 31/12/N.",
+      "explanation": "L’obligation de payer des cotisations éventuellement minorées trouve son origine dans les rémunérations versées jusqu’au 31/12/N. La lettre reçue avant l’arrêté des comptes est un événement postérieur qui éclaire une situation existant à la clôture : la direction apprécie la probabilité de la sortie de ressources et constitue une provision (compte 151) si elle est probable, ou donne une information en annexe en cas de contestation sérieuse dont l’issue est incertaine. L’auditeur examine la lettre, la réponse de l’entité et, le cas échéant, l’avis de l’avocat.",
+      "source_ref": "NEP 560 (événements postérieurs à la clôture) ; PCG, règles relatives aux provisions (règl. ANC 2014-03)",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-audit-personnel-0009",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-risques",
+      "difficulty": 2,
+      "tags": [
+        "risques",
+        "procédures analytiques",
+        "charges sociales"
+      ],
+      "statement": "En phase de planification, l’auditeur de la société Delta compare les charges sociales comptabilisées à une attente. Salaires bruts comptabilisés en N (compte 641) : 6 250 000 €. Le taux moyen de cotisations patronales observé en N−1 (645 / 641) est de 41,5 % ; selon la direction, aucun changement significatif de structure des effectifs ni de taux n’est intervenu (hypothèse). Charges sociales comptabilisées en N (compte 645) : 2 410 000 €. Calculez l’écart entre les charges sociales attendues et les charges comptabilisées (montant attendu − montant comptabilisé, en euros, arrondi à l’euro).",
+      "expected_value": 183750,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Charges sociales attendues = 6 250 000 × 41,5 % = 2 593 750 €. Écart = 2 593 750 − 2 410 000 = 183 750 €. Les charges comptabilisées sont inférieures de 183 750 € à l’attente (taux apparent N : 2 410 000 / 6 250 000 = 38,56 %). Ce signal oriente vers un risque de sous-évaluation des charges sociales et des dettes associées (cotisations de décembre ou charges sur congés omises, erreur de paramétrage) ou vers un allègement de cotisations non identifié : l’auditeur devra en obtenir l’explication et la corroborer.",
+      "source_ref": "NEP 315 (procédures analytiques mises en œuvre pour évaluer le risque) ; NEP 520 ; PCG comptes 641, 645",
+      "verified": true,
+      "estimated_seconds": 150
+    },
+    {
+      "id": "ue4-audit-personnel-0010",
+      "type": "audit_case",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-risques",
+      "difficulty": 3,
+      "tags": [
+        "risques",
+        "fraude",
+        "salariés fictifs",
+        "séparation des tâches"
+      ],
+      "title": "Masse salariale atypique chez un sous-traitant automobile",
+      "cycle": "personnel",
+      "situation": "Vous auditez les comptes au 31/12/N de la SAS Kappa, sous-traitant automobile de 220 salariés. La masse salariale brute progresse de 9 % (8 400 000 € contre 7 706 000 € en N−1) alors que l’effectif moyen a diminué de 3 % et que l’augmentation générale accordée au 1er janvier N est de 2 %. La paie est gérée par une seule personne qui saisit les entrées et sorties, modifie les données bancaires des salariés et prépare le fichier de virement ; le directeur financier signe ce fichier sans le rapprocher du journal de paie. Le responsable de paie n’a pas pris de congés depuis deux ans. Aucun rapprochement entre l’effectif payé et le registre unique du personnel n’est réalisé.",
+      "assertions": [
+        "Réalité des charges de personnel",
+        "Mesure des charges de personnel"
+      ],
+      "procedures": {
+        "options": [
+          "Rapprocher la liste des salariés payés en décembre et sur deux autres mois de l’exercice avec le registre unique du personnel et les DSN, et examiner les salariés absents du registre",
+          "Envoyer des demandes de confirmation de solde aux principaux clients",
+          "Rechercher dans le fichier de virement les IBAN communs à plusieurs salariés et les salariés payés après leur date de sortie",
+          "Inventorier physiquement les stocks de produits finis",
+          "Examiner l’historique des modifications du fichier de paie (créations de salariés, changements de RIB et de taux) et obtenir les autorisations correspondantes",
+          "Recalculer les dotations aux amortissements des machines-outils"
+        ],
+        "answer": [
+          0,
+          2,
+          4
+        ]
+      },
+      "risk": {
+        "options": [
+          "Faible",
+          "Modéré",
+          "Élevé"
+        ],
+        "answer": 2,
+        "rationale": "La masse salariale augmente de 9 % alors que l’effectif baisse de 3 % et que l’augmentation générale n’est que de 2 % : l’attente se situe autour de 7 706 000 × 0,97 × 1,02 ≈ 7 624 000 €, soit un écart inexpliqué d’environ 776 000 €. S’y ajoutent un cumul de fonctions incompatibles (saisie des salariés, modification des RIB, préparation des virements), l’absence de rapprochement avant paiement et un comportement inhabituel du responsable (pas de congés), facteur de risque de fraude (NEP 240). Le risque d’anomalie significative sur la réalité des salaires est élevé."
+      },
+      "conclusion": {
+        "model_answer": "Les procédures mises en œuvre (rapprochement des salariés payés avec le registre unique du personnel et les DSN, recherche d’IBAN communs et de paiements postérieurs aux sorties, revue des modifications du fichier de paie) visent à expliquer l’écart de masse salariale et à établir la réalité des rémunérations comptabilisées. Si des salariés fictifs ou des paiements indus sont identifiés, l’auditeur en mesure l’incidence, en informe la direction et la gouvernance, apprécie les conséquences sur son opinion et sur ses obligations (fraude, révélation au procureur si les faits sont délictueux). Il communique en outre les faiblesses de contrôle interne relevées.",
+        "key_points": [
+          "Écart de masse salariale non expliqué par l’effectif et les augmentations",
+          "Cumul de fonctions incompatibles et absence de rapprochement avant paiement",
+          "Procédures ciblées sur la réalité des salariés payés",
+          "Communication à la gouvernance et incidence sur l’opinion en cas d’anomalie ou de fraude"
+        ]
+      },
+      "explanation": "Le cas combine un signal analytique fort (masse salariale en hausse avec un effectif en baisse) et des faiblesses de contrôle qui rendent possible un détournement (salariés fictifs, RIB modifiés). Les procédures pertinentes testent la réalité des salariés payés et les modifications du fichier : rapprochement avec le registre unique du personnel et les DSN, recherche d’IBAN communs, revue des modifications. La confirmation clients, l’inventaire des stocks et les amortissements relèvent d’autres cycles.",
+      "source_ref": "NEP 240 (fraude) ; NEP 315 (évaluation du risque) ; NEP 330 (réponses aux risques évalués)",
+      "verified": true,
+      "estimated_seconds": 480
+    },
+    {
+      "id": "ue4-audit-personnel-0011",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-controles-cles",
+      "difficulty": 1,
+      "tags": [
+        "contrôles clés",
+        "séparation des tâches",
+        "paie"
+      ],
+      "statement": "Dans le cycle personnel, quel cumul de fonctions constitue la faiblesse de séparation des tâches la plus grave ?",
+      "options": [
+        "Le gestionnaire de paie crée les salariés dans le fichier de paie, calcule la paie et valide lui-même le virement des salaires",
+        "Le responsable hiérarchique valide les heures supplémentaires et évalue annuellement ses collaborateurs",
+        "Le comptable enregistre le journal de paie et rapproche le compte 421 du virement des salaires",
+        "La DRH signe les contrats de travail et archive les dossiers du personnel"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "L’option 1 réunit trois fonctions incompatibles : création des salariés (gestion des données permanentes), calcul et paiement. Une seule personne peut alors créer un salarié fictif et encaisser son salaire sans qu’aucun contrôle ne le détecte. L’option 2 relève de l’encadrement normal. L’option 3 associe enregistrement et contrôle comptable, sans accès aux fonds. L’option 4 regroupe des tâches administratives de la DRH, sans calcul ni paiement.",
+      "source_ref": "NEP 315 (compréhension du contrôle interne)",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-audit-personnel-0012",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "contrôles clés",
+        "fichier permanent",
+        "assertions"
+      ],
+      "statement": "Chaque mois, le logiciel de paie édite un état de toutes les modifications du fichier permanent (créations et sorties de salariés, changements de taux horaire, de salaire de base ou de RIB). La DRH le rapproche des pièces justificatives (avenants, demandes signées des salariés) et le vise avant le calcul de la paie. Quel risque ce contrôle couvre-t-il principalement ?",
+      "options": [
+        "L’omission des dettes de congés payés à la clôture",
+        "Le paiement de rémunérations non autorisées (salarié fictif, RIB détourné, hausse de salaire non accordée)",
+        "L’imputation des primes au compte 6411 au lieu du compte 6413",
+        "Le défaut de déclaration des cotisations à l’URSSAF dans les délais"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le contrôle porte sur toute modification des données permanentes, rapprochée d’une autorisation : il prévient les créations de salariés fictifs, les détournements par changement de RIB et les hausses de salaire non accordées, soit la réalité et la mesure des rémunérations. L’option 1 concerne un calcul de clôture, non traité par ce contrôle mensuel. L’option 3 est une erreur de classification, détectée par la revue des imputations comptables. L’option 4 relève du contrôle des échéances déclaratives.",
+      "source_ref": "NEP 315 (activités de contrôle) ; NEP 330",
+      "verified": true,
+      "estimated_seconds": 70
+    },
+    {
+      "id": "ue4-audit-personnel-0013",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-controles-cles",
+      "difficulty": 1,
+      "tags": [
+        "contrôles clés",
+        "tests de procédures",
+        "NEP 330"
+      ],
+      "statement": "Le commissaire aux comptes qui décide de s’appuyer sur le contrôle de validation des heures supplémentaires pour réduire ses procédures substantives peut se contenter d’en prendre connaissance par un test de cheminement, sans en tester l’efficacité sur la période.",
+      "answer": false,
+      "justification": "Faux : pour s’appuyer sur un contrôle, le CAC doit tester son efficacité sur la période au cours de laquelle il entend s’y fier.",
+      "explanation": "La prise de connaissance (test de cheminement) montre que le contrôle a été conçu et mis en place ; elle ne prouve pas qu’il a fonctionné de façon continue. La NEP 330 impose des tests de procédures (inspection des validations, réexécution, observation) sur la période si le CAC compte sur ce contrôle pour réduire l’étendue de ses procédures substantives.",
+      "source_ref": "NEP 330 (tests de procédures)",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue4-audit-personnel-0014",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-controles-cles",
+      "difficulty": 2,
+      "tags": [
+        "contrôles clés",
+        "taille d’échantillon",
+        "tests de procédures"
+      ],
+      "statement": "L’auditeur veut tester le contrôle de validation, par le responsable hiérarchique, des primes variables saisies en paie. Il n’attend aucun écart. Le cabinet retient, pour un niveau de confiance de 90 %, un facteur de confiance de 2,3 et la formule n = facteur de confiance / taux d’écart tolérable. Le taux d’écart tolérable est fixé à 4 %. Calculez la taille de l’échantillon (nombre de saisies de primes à tester, arrondi à l’entier supérieur).",
+      "expected_value": 58,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "unit": "saisies",
+      "decimals": 0,
+      "explanation": "n = 2,3 / 0,04 = 57,5, arrondi à l’entier supérieur : 58 saisies. Arrondir à l’entier inférieur (57), refusé ici, donnerait un niveau de confiance légèrement inférieur à celui recherché. Retenir le facteur de 3 (confiance de 95 %) donnerait 75. Cette approximation est une pratique de cabinet : la NEP 530 n’impose aucune formule.",
+      "source_ref": "NEP 330 (tests de procédures) ; NEP 530 (sondages)",
+      "verified": true,
+      "estimated_seconds": 120
+    },
+    {
+      "id": "ue4-audit-personnel-0015",
+      "type": "flashcard",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-controles-cles",
+      "difficulty": 1,
+      "tags": [
+        "contrôles clés",
+        "cycle personnel"
+      ],
+      "front": "Citez un contrôle clé pour chaque étape du cycle personnel : données permanentes, variables, calcul, paiement, comptabilisation.",
+      "back": "Données permanentes : état mensuel des modifications (créations, RIB, taux) revu et visé par la DRH.\nVariables : heures supplémentaires et primes validées par le responsable hiérarchique.\nCalcul : rapprochement effectif payé / effectif présent et revue des écarts mensuels de masse salariale.\nPaiement : virement validé par une personne distincte du gestionnaire de paie.\nComptabilisation : rapprochement journal de paie / DSN / comptes 421, 431, 641.",
+      "explanation": "La séparation entre gestion des données du personnel, calcul de la paie et paiement est la clé du cycle ; chaque contrôle couvre une assertion précise (réalité, mesure, exhaustivité).",
+      "source_ref": "NEP 315 (compréhension du contrôle interne)",
+      "verified": true,
+      "estimated_seconds": 60
+    },
+    {
+      "id": "ue4-audit-personnel-0016",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-procedures-substantives",
+      "difficulty": 1,
+      "tags": [
+        "procédures substantives",
+        "dettes sociales",
+        "URSSAF"
+      ],
+      "statement": "Pour vérifier le solde du compte 431 Sécurité sociale au 31/12/N, quelle procédure est la plus probante ?",
+      "options": [
+        "Obtenir du responsable de la paie une attestation écrite confirmant le solde",
+        "Comparer le solde à celui du 31/12/N−1",
+        "Rapprocher le solde de la DSN de décembre N et du règlement à l’URSSAF figurant sur le relevé bancaire de janvier N+1",
+        "Vérifier l’addition du journal de paie de décembre N"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "La DSN (déclaration transmise à l’administration) et le relevé bancaire (document externe) établissent le montant dû et son paiement : ils corroborent l’existence et l’exhaustivité de la dette. L’option 1 est un élément interne, peu probant. L’option 2 est une simple comparaison, insuffisante seule pour valider un solde. L’option 4 vérifie l’exactitude arithmétique d’un document interne, sans rapport direct avec le montant dû à l’URSSAF.",
+      "source_ref": "NEP 500 (caractère probant) ; NEP 330 ; PCG compte 431",
+      "verified": true,
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue4-audit-personnel-0017",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "procédures analytiques",
+        "NEP 520"
+      ],
+      "statement": "Dans une procédure analytique substantive sur les salaires, l’auditeur a construit une attente fiable à partir de l’effectif moyen issu des DSN et de la grille de salaires. L’écart entre la masse salariale comptabilisée et l’attente est inférieur au seuil d’écart acceptable qu’il avait fixé. Que peut-il en conclure ?",
+      "options": [
+        "Il doit néanmoins tester l’intégralité des bulletins de paie de l’exercice",
+        "La procédure n’a pas révélé d’anomalie significative et lui apporte des éléments probants sur la masse salariale, sans investigation supplémentaire de cet écart",
+        "Il doit obtenir de la direction une explication écrite de l’écart, qui suffit à le justifier",
+        "La procédure ne lui apporte aucun élément probant, une procédure analytique n’étant utilisable qu’en phase de planification"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Selon la NEP 520, lorsque l’attente est suffisamment précise et fondée sur des données fiables, un écart inférieur au seuil d’écart acceptable ne nécessite pas d’investigation : la procédure fournit des éléments probants (option 2). L’option 1 nierait l’intérêt de la procédure analytique. L’option 3 vise le traitement d’un écart supérieur au seuil, et même dans ce cas l’explication doit être corroborée. L’option 4 est fausse : les procédures analytiques sont aussi des procédures substantives (NEP 520) et servent en fin de mission.",
+      "source_ref": "NEP 520 (procédures analytiques)",
+      "verified": true,
+      "estimated_seconds": 70
+    },
+    {
+      "id": "ue4-audit-personnel-0018",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-procedures-substantives",
+      "difficulty": 3,
+      "tags": [
+        "procédures substantives",
+        "masse salariale",
+        "procédures analytiques"
+      ],
+      "statement": "L’auditeur de la société Epsilon construit une attente de masse salariale brute N. Données : effectif moyen N (issu des DSN) : 126 ETP ; salaire moyen brut annuel par ETP en N−1 : 38 000 € ; augmentation générale de 2,5 % appliquée à compter du 1er avril N ; aucune autre variation de structure (hypothèse). Salaires bruts comptabilisés en N (compte 641) : 5 050 000 €. Calculez l’écart entre la masse salariale comptabilisée et la masse salariale attendue (comptabilisée − attendue, en euros, arrondi à l’euro).",
+      "expected_value": 172225,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "L’augmentation ne joue que sur 9 mois (avril à décembre) : taux moyen annuel = 2,5 % × 9 / 12 = 1,875 %. Masse attendue = 126 × 38 000 × 1,01875 = 4 788 000 × 1,01875 = 4 877 775 €. Écart = 5 050 000 − 4 877 775 = 172 225 €. Appliquer l’augmentation sur 12 mois donnerait une attente de 4 907 700 € et un écart de 142 300 €, ce qui est inexact. L’écart, d’environ 3,5 % de l’attente, devra être comparé au seuil d’écart acceptable puis, s’il le dépasse, expliqué et corroboré (primes, heures supplémentaires, indemnités de départ).",
+      "source_ref": "NEP 520 (procédures analytiques) ; PCG compte 641",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue4-audit-personnel-0019",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "congés payés",
+        "ajustement proposé"
+      ],
+      "statement": "Au 31/12/N, la société Zêta n’a pas mis à jour ses comptes de congés payés : le compte 4282 présente toujours le solde du 31/12/N−1, soit 158 000 €, et le compte 4382 le solde correspondant de 71 100 €. L’auditeur recalcule la dette de congés payés au 31/12/N à 186 000 € (droits acquis non pris, indemnités calculées selon la règle la plus favorable). Le taux de charges patronales applicable aux indemnités de congés est de 45 % (hypothèse). Passez l’écriture d’ajustement proposée au 31/12/N (utilisez les comptes 6412, 645, 4282 et 4382).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "6412",
+          "label": "Congés payés",
+          "debit": 28000,
+          "credit": 0
+        },
+        {
+          "account": "645",
+          "label": "Charges de sécurité sociale et de prévoyance",
+          "debit": 12600,
+          "credit": 0
+        },
+        {
+          "account": "4282",
+          "label": "Dettes provisionnées pour congés à payer",
+          "debit": 0,
+          "credit": 28000
+        },
+        {
+          "account": "4382",
+          "label": "Charges sociales sur congés à payer",
+          "debit": 0,
+          "credit": 12600
+        }
+      ],
+      "explanation": "Seul le complément est à comptabiliser, les comptes présentant déjà le solde de N−1. Complément de dette de congés = 186 000 − 158 000 = 28 000 € (débit 6412, crédit 4282). Charges sociales attendues au 31/12/N = 186 000 × 45 % = 83 700 € ; déjà comptabilisé 71 100 € ; complément = 12 600 € (soit 28 000 × 45 %), débit 645, crédit 4382. Comptabiliser la dette totale (186 000 €) en plus du solde existant la doublerait ; oublier les charges sociales sous-évaluerait les dettes de 12 600 €.",
+      "source_ref": "PCG comptes 4282, 4382, 6412, 645 ; C. trav. art. L3141-3 et L3141-24 ; NEP 450",
+      "verified": true,
+      "estimated_seconds": 240
+    },
+    {
+      "id": "ue4-audit-personnel-0020",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-procedures-substantives",
+      "difficulty": 3,
+      "tags": [
+        "procédures substantives",
+        "masse salariale",
+        "charges sociales",
+        "corroboration"
+      ],
+      "title": "Procédures analytiques sur les charges de personnel chez Orion",
+      "context": "Vous auditez les comptes au 31/12/N de la SAS Orion, société d’ingénierie.\nSeuil de signification : 120 000 € ; seuil des anomalies manifestement insignifiantes : 6 000 €.\nLe contrôle interne de la paie a été testé et jugé efficace ; vous retenez une procédure analytique substantive sur les salaires.\nDonnées issues des DSN et du service RH (jugées fiables) :\n- effectif moyen N−1 : 180 ETP ; effectif moyen N : 186 ETP ;\n- salaire moyen brut annuel par ETP en N−1 : 41 000 € ;\n- augmentation générale de 3 % accordée au 1er juillet N, aucune autre variation de structure.\nSalaires bruts comptabilisés en N (compte 641) : 7 840 000 €.\nCharges sociales comptabilisées en N (compte 645) : 3 180 000 €.\nHypothèse : taux moyen de cotisations patronales stable, égal à 41 % des salaires bruts.\nVous avez fixé le seuil d’écart acceptable de la procédure sur les salaires à 60 000 €.\nInterrogée sur l’écart, la direction indique avoir versé en octobre N une prime exceptionnelle de fin de projet de 85 000 € brut au total.",
+      "sub_questions": [
+        {
+          "id": "q1-attente",
+          "kind": "numeric",
+          "prompt": "Calculez l’écart entre les salaires bruts comptabilisés et la masse salariale attendue (comptabilisé − attendu, en euros, arrondi à l’euro).",
+          "expected_value": 99610,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 3,
+          "explanation": "Augmentation sur 6 mois : 3 % × 6 / 12 = 1,5 %. Masse attendue = 186 × 41 000 × 1,015 = 7 626 000 × 1,015 = 7 740 390 €. Écart = 7 840 000 − 7 740 390 = 99 610 €. Appliquer l’augmentation sur l’année entière (7 854 780 €) ferait apparaître à tort un écart négatif de 14 780 € ; retenir l’effectif N−1 (180 ETP) fausserait l’attente."
+        },
+        {
+          "id": "q2-ecart",
+          "kind": "mcq",
+          "prompt": "Quelle suite l’auditeur doit-il donner à l’écart calculé ?",
+          "options": [
+            "Aucune : l’écart est inférieur au seuil de signification de 120 000 €",
+            "Accepter l’explication de la direction, qui couvre l’essentiel de l’écart",
+            "Corroborer l’explication de la direction par des éléments probants, puis apprécier l’écart résiduel par rapport au seuil d’écart acceptable",
+            "Renoncer à la procédure analytique et tester tous les bulletins de l’exercice"
+          ],
+          "answer": [
+            2
+          ],
+          "points": 2,
+          "explanation": "L’écart (99 610 €) dépasse le seuil d’écart acceptable de 60 000 € : l’auditeur doit l’investiguer, en obtenant une explication de la direction qu’il corrobore (NEP 520), puis apprécier l’écart résiduel. L’option 1 confond seuil de signification et seuil d’écart acceptable de la procédure. L’option 2 omet la corroboration. L’option 4 est disproportionnée : la procédure reste utilisable si l’écart est expliqué."
+        },
+        {
+          "id": "q3-charges",
+          "kind": "numeric",
+          "prompt": "Calculez l’écart entre les charges sociales attendues (sur la base des salaires bruts comptabilisés) et les charges sociales comptabilisées (attendu − comptabilisé, en euros).",
+          "expected_value": 34400,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 3,
+          "explanation": "Charges attendues = 7 840 000 × 41 % = 3 214 400 €. Écart = 3 214 400 − 3 180 000 = 34 400 € : les charges comptabilisées sont inférieures à l’attente, ce qui peut signaler, par exemple, que les cotisations sur la prime exceptionnelle n’ont pas été comptabilisées (85 000 × 41 % = 34 850 €). L’écart est inférieur au seuil de signification mais supérieur au seuil des anomalies manifestement insignifiantes : il appelle une explication."
+        },
+        {
+          "id": "q4-conclusion",
+          "kind": "open",
+          "prompt": "Indiquez comment corroborer l’explication de la direction et concluez sur les salaires et les charges sociales.",
+          "model_answer": "Corroboration : obtenir la décision d’attribution de la prime (validée par la direction générale), la liste des bénéficiaires et vérifier sur un échantillon les bulletins d’octobre N et les virements correspondants ; vérifier que la prime figure dans la DSN d’octobre. Après prise en compte de la prime, l’écart résiduel sur les salaires est de 99 610 − 85 000 = 14 610 €, inférieur au seuil d’écart acceptable (60 000 €) : la procédure analytique permet de conclure à l’absence d’anomalie significative sur les salaires. Sur les charges sociales, l’écart de 34 400 € est proche des cotisations attendues sur la prime (34 850 €) : l’auditeur vérifie si ces cotisations ont été déclarées et comptabilisées. Si une omission est confirmée, il demande la correction à la direction ; l’anomalie, supérieure à 6 000 €, est cumulée avec les autres anomalies non corrigées si la direction refuse.",
+          "key_points": [
+            "Corroborer la prime par la décision d’attribution, les bulletins, les virements et la DSN",
+            "Écart résiduel sur les salaires de 14 610 €, inférieur au seuil d’écart acceptable",
+            "Écart sur les charges sociales cohérent avec des cotisations omises sur la prime, à vérifier",
+            "Demande de correction et cumul des anomalies non corrigées"
+          ],
+          "points": 4
+        }
+      ],
+      "total_points": 12,
+      "explanation": "Le cas met en œuvre une procédure analytique substantive complète (NEP 520) : construction de l’attente avec une augmentation au prorata temporis, comparaison au seuil d’écart acceptable, corroboration de l’explication de la direction et rapprochement de l’écart sur les charges sociales avec un fait identifié. Les anomalies éventuelles sont ensuite appréciées selon la NEP 450.",
+      "source_ref": "NEP 520 (procédures analytiques) ; NEP 500 ; NEP 450 (évaluation des anomalies relevées) ; PCG comptes 641, 645",
+      "verified": true,
+      "estimated_seconds": 840
+    },
+    {
+      "id": "ue4-audit-personnel-0021",
+      "type": "audit_case",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-procedures-substantives",
+      "difficulty": 2,
+      "tags": [
+        "procédures substantives",
+        "dettes sociales",
+        "primes",
+        "congés payés"
+      ],
+      "title": "Dettes sociales de clôture chez un distributeur",
+      "cycle": "personnel",
+      "situation": "Vous auditez les comptes au 31/12/N de la SA Lyra, distributeur de matériel médical de 85 salariés. Seuil de signification : 150 000 €. Les contrôles de la paie ont été testés lors de l’intérim et jugés efficaces. Un accord d’entreprise signé en juin N institue une prime d’objectifs annuelle, versée en mars N+1 si les objectifs commerciaux de N sont atteints et si le salarié est présent au 31/12/N. Le tableau de bord de décembre N montre que les objectifs sont atteints ; la direction estime la prime à 95 000 € brut, mais n’a rien comptabilisé au motif qu’elle « n’est pas encore versée ». La dette de congés payés (4282 : 310 000 €) et les charges sociales correspondantes (4382) sont calculées par le logiciel de gestion des temps. Les soldes des comptes 421 et 431 sont stables par rapport à N−1.",
+      "assertions": [
+        "Exhaustivité des dettes sociales",
+        "Évaluation des dettes sociales",
+        "Séparation des exercices"
+      ],
+      "procedures": {
+        "options": [
+          "Obtenir l’accord d’entreprise, vérifier les conditions d’attribution de la prime et recalculer le montant acquis au 31/12/N, charges sociales comprises",
+          "Demander une confirmation de solde aux principaux fournisseurs",
+          "Rapprocher, pour un échantillon de salariés, les jours de congés acquis non pris de l’état du logiciel avec les dossiers individuels, et recalculer les comptes 4282 et 4382",
+          "Inspecter physiquement les véhicules de la flotte commerciale",
+          "Rapprocher les soldes des comptes 421 et 431 du virement des salaires de décembre, de la DSN de décembre N et du règlement à l’URSSAF de janvier N+1",
+          "Tester la dépréciation des créances clients douteuses"
+        ],
+        "answer": [
+          0,
+          2,
+          4
+        ]
+      },
+      "risk": {
+        "options": [
+          "Faible",
+          "Modéré",
+          "Élevé"
+        ],
+        "answer": 1,
+        "rationale": "Les contrôles de la paie courante sont efficaces, ce qui limite le risque sur les salaires mensuels et les dettes 421 et 431. En revanche, un risque spécifique est identifié sur l’exhaustivité des dettes : la prime d’objectifs acquise au 31/12/N n’est pas comptabilisée (95 000 € plus charges sociales, montant proche du seuil de 150 000 €), et la dette de congés dépend d’un calcul automatisé à vérifier. Aucun facteur de fraude n’est relevé : le risque est modéré."
+      },
+      "conclusion": {
+        "model_answer": "Les procédures mises en œuvre (recalcul de la prime d’objectifs à partir de l’accord, recalcul de la dette de congés et des charges associées sur un échantillon, rapprochement des dettes 421 et 431 avec les paiements postérieurs et la DSN) permettent d’apprécier l’exhaustivité et l’évaluation des dettes sociales au 31/12/N. La prime, acquise au titre de N dès lors que les conditions sont remplies à la clôture, doit être comptabilisée en charges à payer (6413 / 4286, charges sociales 645 / 4386) : l’auditeur en demande la comptabilisation à la direction et, à défaut, l’intègre aux anomalies non corrigées pour apprécier l’incidence sur son opinion.",
+        "key_points": [
+          "Prime acquise en N à comptabiliser en charges à payer, indépendamment de sa date de versement",
+          "Charges sociales sur la prime et sur les congés à inclure",
+          "Rapprochement des dettes 421 et 431 avec les paiements postérieurs",
+          "Demande d’ajustement à la direction et suivi des anomalies non corrigées"
+        ]
+      },
+      "explanation": "Le cas porte sur l’exhaustivité des dettes sociales à la clôture. La date de versement d’une prime est sans incidence : elle constitue une charge de N dès que les conditions d’attribution sont remplies au 31/12/N. Les procédures pertinentes ciblent la prime, la dette de congés et le dénouement des dettes 421 et 431. Les confirmations fournisseurs, l’inspection des véhicules et la dépréciation des créances relèvent d’autres cycles.",
+      "source_ref": "NEP 330 (réponses aux risques évalués) ; NEP 500 ; PCG comptes 4282, 4286, 4382, 4386",
+      "verified": true,
+      "estimated_seconds": 420
+    },
+    {
+      "id": "ue4-audit-personnel-0022",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-pieges",
+      "difficulty": 1,
+      "tags": [
+        "pièges",
+        "congés payés",
+        "présentation"
+      ],
+      "statement": "Comment la dette de congés payés acquis et non pris au 31/12/N est-elle comptabilisée et présentée au bilan selon le PCG ?",
+      "options": [
+        "En provision pour risques et charges (compte 151), au passif hors dettes",
+        "En charge à payer (compte 4282), présentée parmi les dettes fiscales et sociales",
+        "Elle n’est pas comptabilisée : elle est seulement mentionnée en annexe parmi les engagements",
+        "En charge constatée d’avance (compte 486)"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le montant de la dette est connu avec une précision suffisante (droits acquis × indemnité) : il s’agit d’une charge à payer (débit 6412, crédit 4282), présentée en dettes fiscales et sociales, avec les charges sociales correspondantes en 4382. L’option 1 confond dette provisionnée et provision pour risques et charges, dont l’échéance ou le montant est incertain. L’option 3 est fausse : les congés acquis sont une obligation à comptabiliser. L’option 4 inverse le raisonnement : une charge constatée d’avance est un actif correspondant à une charge payée d’avance.",
+      "source_ref": "PCG comptes 4282 et 4382 ; PCG, modèles de bilan (dettes fiscales et sociales)",
+      "verified": true,
+      "estimated_seconds": 45
+    },
+    {
+      "id": "ue4-audit-personnel-0023",
+      "type": "mcq",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-pieges",
+      "difficulty": 3,
+      "tags": [
+        "pièges",
+        "indemnités de fin de carrière",
+        "changement de méthode"
+      ],
+      "statement": "La société Thêta, soumise au PCG, provisionnait depuis plusieurs années ses indemnités de fin de carrière (compte 153). En N, pour améliorer son résultat, la direction reprend la provision et décide de ne plus faire figurer ces engagements qu’en annexe. Quelle est la position de l’auditeur ?",
+      "options": [
+        "Il l’accepte : la provision des engagements de retraite est facultative en règles françaises",
+        "Il l’accepte si le changement et son incidence sont décrits dans l’annexe",
+        "Il exige seulement que la reprise soit présentée en résultat exceptionnel",
+        "Il la refuse : la comptabilisation des provisions pour retraite est la méthode préférentielle et l’abandon d’une méthode préférentielle n’est pas admis"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Le provisionnement des engagements de retraite est facultatif (C. com. art. L123-13), mais c’est la méthode préférentielle ; un changement de méthode n’est admis que vers une méthode préférentielle ou s’il donne une information plus pertinente, et l’adoption d’une méthode préférentielle est irréversible. La reprise est donc une anomalie dont l’auditeur demande la correction (option 4). L’option 1 ignore l’irréversibilité. L’option 2 : une information en annexe ne rend pas acceptable un changement interdit. L’option 3 traite d’un classement, sans remettre en cause la reprise elle-même.",
+      "source_ref": "C. com. art. L123-13 ; recommandation ANC 2013-02 (engagements de retraite) ; PCG, règles relatives aux changements de méthodes comptables (règl. ANC 2014-03)",
+      "verified": true,
+      "estimated_seconds": 90
+    },
+    {
+      "id": "ue4-audit-personnel-0024",
+      "type": "true_false",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-pieges",
+      "difficulty": 1,
+      "tags": [
+        "pièges",
+        "congés payés",
+        "période de référence"
+      ],
+      "statement": "Dans une entreprise appliquant la période de référence du 1er juin au 31 mai, la dette de congés payés au 31/12/N comprend les jours non pris de la période close au 31 mai N et les jours acquis du 1er juin au 31 décembre N.",
+      "answer": true,
+      "justification": "Vrai : les droits acquis depuis le 1er juin N sont une obligation à la clôture, même s’ils ne pourront être pris qu’à partir de l’année suivante.",
+      "explanation": "À raison de 2,5 jours ouvrables par mois (C. trav. art. L3141-3), le salarié a acquis 17,5 jours entre le 1er juin et le 31 décembre N, qui s’ajoutent au reliquat éventuel de la période précédente. Ne retenir que le reliquat de la période close est une erreur fréquente qui sous-évalue la dette 4282 et les charges sociales 4382.",
+      "source_ref": "C. trav. art. L3141-3 ; PCG compte 4282",
+      "verified": true,
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue4-audit-personnel-0025",
+      "type": "numeric",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-pieges",
+      "difficulty": 2,
+      "tags": [
+        "pièges",
+        "congés payés",
+        "charges sociales"
+      ],
+      "statement": "Un atelier de la société Iota compte 15 salariés dans une situation identique au 31/12/N (période de référence du 1er juin au 31 mai) : chacun a un reliquat de 6 jours ouvrables non pris sur la période close au 31 mai N et n’a pris aucun congé depuis le 1er juin N. Il acquiert 2,5 jours ouvrables par mois. La méthode du maintien de salaire, plus favorable que la règle du dixième, conduit à une indemnité de 120 € par jour ouvrable. Taux de charges patronales sur les indemnités de congés : 44 % (hypothèse). Calculez le montant total à inscrire dans les comptes 4282 et 4382 pour cet atelier au 31/12/N (en euros).",
+      "expected_value": 60912,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 1
+      },
+      "unit": "€",
+      "decimals": 0,
+      "explanation": "Jours dus par salarié = 6 + 7 mois × 2,5 = 23,5 jours ouvrables. Dette de congés (4282) = 23,5 × 120 × 15 = 42 300 €. Charges sociales (4382) = 42 300 × 44 % = 18 612 €. Total = 60 912 €. Oublier les droits acquis depuis le 1er juin donnerait 6 × 120 × 15 × 1,44 = 15 552 € ; oublier les charges sociales donnerait 42 300 €.",
+      "source_ref": "C. trav. art. L3141-3 et L3141-24 ; PCG comptes 4282 et 4382",
+      "verified": true,
+      "estimated_seconds": 200
+    },
+    {
+      "id": "ue4-audit-personnel-0026",
+      "type": "journal_entry",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-pieges",
+      "difficulty": 2,
+      "tags": [
+        "pièges",
+        "primes",
+        "charges à payer",
+        "ajustement proposé"
+      ],
+      "statement": "La société Kêta verse chaque année en mars une prime égale à 3 % des salaires bruts de l’année précédente à tous les salariés présents au 31 décembre. Les salaires bruts N s’élèvent à 2 400 000 € et les conditions sont remplies au 31/12/N, mais aucune écriture n’a été passée. Taux de charges patronales sur la prime : 42 % (hypothèse). Passez l’écriture d’ajustement proposée par l’auditeur au 31/12/N (utilisez les comptes 6413, 645, 4286 et 4386).",
+      "date": "31/12/N",
+      "entries": [
+        {
+          "account": "6413",
+          "label": "Primes et gratifications",
+          "debit": 72000,
+          "credit": 0
+        },
+        {
+          "account": "645",
+          "label": "Charges de sécurité sociale et de prévoyance",
+          "debit": 30240,
+          "credit": 0
+        },
+        {
+          "account": "4286",
+          "label": "Personnel – Autres charges à payer",
+          "debit": 0,
+          "credit": 72000
+        },
+        {
+          "account": "4386",
+          "label": "Organismes sociaux – Autres charges à payer",
+          "debit": 0,
+          "credit": 30240
+        }
+      ],
+      "explanation": "La prime est acquise au titre de N dès lors que ses conditions (présence au 31/12/N) sont remplies : elle constitue une charge de N, quelle que soit sa date de versement. Prime = 2 400 000 × 3 % = 72 000 € (débit 6413, crédit 4286). Charges patronales = 72 000 × 42 % = 30 240 € (débit 645, crédit 4386). Omettre les charges sociales sous-évaluerait les dettes de 30 240 €.",
+      "source_ref": "PCG comptes 6413, 645, 4286, 4386 ; NEP 450",
+      "verified": true,
+      "estimated_seconds": 210
+    },
+    {
+      "id": "ue4-audit-personnel-0027",
+      "type": "case_study",
+      "ue": "UE4",
+      "theme": "cycles-audit",
+      "notion": "personnel-pieges",
+      "difficulty": 3,
+      "tags": [
+        "pièges",
+        "extrapolation",
+        "congés payés",
+        "sondages"
+      ],
+      "title": "Test de la dette de congés payés chez Vega",
+      "context": "Vous auditez les comptes au 31/12/N de la SA Vega (400 salariés).\nSeuil de signification : 90 000 € ; seuil des anomalies manifestement insignifiantes : 4 500 €.\nLa dette de congés payés comptabilisée (compte 4282) s’élève à 1 940 000 €. Les charges sociales sur congés sont comptabilisées en 4382 au taux de 45 % (hypothèse).\n- Éléments clés : les 12 cadres dirigeants (dette comptabilisée de 260 000 €) ont été testés en totalité ; le recalcul fait apparaître une sous-évaluation de 4 000 €.\n- Reste de la population (388 salariés, 1 680 000 €) : vous avez tiré un échantillon aléatoire de 50 salariés dont la dette comptabilisée totalise 210 000 €. Votre recalcul donne 222 600 €.\nLes écarts proviennent tous de la même cause : le logiciel calcule l’indemnité selon le maintien de salaire sans la comparer à la règle du dixième, plus favorable pour les salariés ayant effectué de nombreuses heures supplémentaires.",
+      "sub_questions": [
+        {
+          "id": "q1-projection",
+          "kind": "numeric",
+          "prompt": "Calculez l’anomalie projetée sur la population sondée (hors éléments clés), en euros.",
+          "expected_value": 100800,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 3,
+          "explanation": "Anomalie de l’échantillon = 222 600 − 210 000 = 12 600 €. Anomalie projetée = 12 600 × 1 680 000 / 210 000 = 12 600 × 8 = 100 800 €. Projeter sur la dette totale (1 940 000 €) intégrerait à tort les éléments clés et donnerait 116 400 €."
+        },
+        {
+          "id": "q2-elements-cles",
+          "kind": "true_false",
+          "prompt": "L’anomalie de 4 000 € relevée sur les cadres dirigeants doit elle aussi être extrapolée à l’ensemble de la population.",
+          "answer": false,
+          "points": 1,
+          "explanation": "Faux : les éléments clés ont été testés à 100 %, leur anomalie est connue avec certitude et s’ajoute telle quelle à l’anomalie projetée, sans extrapolation (NEP 530)."
+        },
+        {
+          "id": "q3-incidence",
+          "kind": "numeric",
+          "prompt": "Calculez l’incidence totale estimée sur le résultat avant impôt (dette de congés et charges sociales correspondantes), en euros.",
+          "expected_value": 151960,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "points": 3,
+          "explanation": "Anomalie totale estimée sur la dette de congés = 4 000 + 100 800 = 104 800 €. Charges sociales correspondantes = 104 800 × 45 % = 47 160 €. Incidence totale = 104 800 × 1,45 = 151 960 € de sous-évaluation des charges et des dettes. Oublier les charges sociales donnerait 104 800 €."
+        },
+        {
+          "id": "q4-demarche",
+          "kind": "open",
+          "prompt": "Comparez l’incidence aux seuils et décrivez la démarche de l’auditeur vis-à-vis de la direction.",
+          "model_answer": "L’incidence estimée (151 960 €) dépasse le seuil de signification (90 000 €). L’anomalie projetée n’est qu’une estimation : l’auditeur communique l’anomalie et sa cause systématique à la direction et lui demande de recalculer la dette de tous les salariés en comparant maintien de salaire et règle du dixième, puis de corriger les comptes 4282 et 4382. Il contrôle ensuite le nouveau calcul. Si la direction refuse de corriger, l’anomalie, significative, conduit à une opinion avec réserve (voire défavorable si ses effets étaient diffus) ; il obtient une déclaration de la direction sur les anomalies non corrigées. Il signale aussi la faiblesse de paramétrage du logiciel.",
+          "key_points": [
+            "Incidence de 151 960 € supérieure au seuil de signification",
+            "Cause systématique : demande de recalcul exhaustif et de correction par la direction",
+            "Contrôle du nouveau calcul par l’auditeur",
+            "En cas de refus, incidence sur l’opinion (réserve) et déclaration de la direction"
+          ],
+          "points": 4
+        }
+      ],
+      "total_points": 11,
+      "explanation": "Le cas applique la projection d’une anomalie d’échantillon (NEP 530) en distinguant éléments clés et population sondée, puis l’appréciation des anomalies (NEP 450). La cause de l’erreur rappelle que l’indemnité de congés est la plus favorable entre maintien de salaire et règle du dixième (C. trav. art. L3141-24), et que les charges sociales sur congés suivent la dette.",
+      "source_ref": "NEP 530 (sondages) ; NEP 450 (évaluation des anomalies relevées) ; C. trav. art. L3141-24 ; PCG comptes 4282 et 4382",
+      "verified": true,
+      "estimated_seconds": 840
+    }
+  ]
+}
