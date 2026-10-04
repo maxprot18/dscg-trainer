@@ -1,5 +1,5 @@
 // @vitest-environment node
-import { extractDiagramBlocks, parseDiagram } from './diagram'
+import { extractDiagramBlocks, parseDiagram } from './diagramSchema'
 
 describe('diagrammes des fiches', () => {
   it('accepte les cinq formes et refuse un lien vers un nœud inconnu', () => {

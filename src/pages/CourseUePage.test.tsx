@@ -38,10 +38,10 @@ describe('écrans Cours', () => {
     )
     renderAt('/cours/ue/UE4')
     expect(await screen.findByRole('heading', { level: 1, name: ue.title })).toBeInTheDocument()
-    const link = await screen.findByRole('link', { name: `${notion.title} (Maîtrisé, fiche lue)` })
+    const link = await screen.findByRole('link', { name: (n) => n.includes(notion.title) && n.includes('(Maîtrisé)') })
     expect(link).toHaveAttribute('href', `/cours/${notion.id}`)
     expect(within(link).getByLabelText('fiche lue')).toBeInTheDocument()
-    expect(screen.getAllByRole('link', { name: /Non travaillé\)$/ }).length).toBeGreaterThan(50)
+    expect(screen.getAllByRole('link', { name: /\(Non travaillé\)/ }).length).toBeGreaterThan(50)
   })
 
   it('UE inconnue', () => {

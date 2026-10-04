@@ -1,70 +1,39 @@
 /**
- * Diagrammes déclaratifs des fiches de cours : un bloc ```diagram contenant un JSON validé ici,
- * dessiné par `src/components/Diagram.tsx`. Cinq formes suffisent au programme :
+ * Diagrammes déclaratifs des fiches de cours : un bloc ```diagram contenant un JSON, dessiné par
+ * `src/components/Diagram.tsx`. Cinq formes suffisent au programme :
  * - timeline : étapes datées ou ordonnées (procédures collectives, calendrier fiscal) ;
  * - tree : arbre de décision (IFRS 15, IFRS 16, méthode de consolidation) ;
  * - org : organigramme de groupe (périmètre, pourcentages de détention) ;
  * - flow : enchaînement d'étapes ou de flux (cash pooling, affacturage) ;
  * - bars : comparaison de grandeurs (effet de levier, VAN selon le taux).
+ *
+ * Le schéma Zod complet est dans `diagramSchema.ts` (validateur `npm run validate` et tests) ;
+ * à l'exécution, le contenu ayant été validé au build, une lecture légère suffit (sans Zod).
  */
-import { z } from 'zod'
 
-const label = z.string().trim().min(1).max(80)
-const note = z.string().trim().min(1).max(160)
+export interface TreeNode {
+  label: string
+  /** Libellé de la branche qui mène à ce nœud (« oui », « > 50 % »). */
+  edge?: string
+  note?: string
+  children?: TreeNode[]
+}
 
-export const timelineSchema = z.object({
-  type: z.literal('timeline'),
-  title: label,
-  items: z.array(z.object({ when: z.string().trim().max(24).optional(), label, note: note.optional() })).min(2).max(10),
-})
-
-type TreeNodeInput = { label: string; edge?: string; note?: string; children?: TreeNodeInput[] }
-export const treeNodeSchema: z.ZodType<TreeNodeInput> = z.lazy(() =>
-  z.object({
-    label,
-    /** Libellé de la branche qui mène à ce nœud (« oui », « > 50 % »). */
-    edge: z.string().trim().max(30).optional(),
-    note: note.optional(),
-    children: z.array(treeNodeSchema).max(6).optional(),
-  }),
-)
-
-export const treeSchema = z.object({ type: z.literal('tree'), title: label, root: treeNodeSchema })
-
-export const orgSchema = z
-  .object({
-    type: z.literal('org'),
-    title: label,
-    nodes: z.array(z.object({ id: z.string().trim().min(1).max(12), label: z.string().trim().min(1).max(22) })).min(2).max(10),
-    links: z.array(z.object({ from: z.string(), to: z.string(), label: z.string().trim().max(14).optional() })).min(1).max(14),
-  })
-  .superRefine((d, ctx) => {
-    const ids = new Set(d.nodes.map((n) => n.id))
-    if (ids.size !== d.nodes.length) ctx.addIssue({ code: 'custom', message: 'ids de nœuds en double' })
-    for (const l of d.links) {
-      if (!ids.has(l.from) || !ids.has(l.to)) ctx.addIssue({ code: 'custom', message: `lien ${l.from} → ${l.to} : nœud inconnu` })
+export type Diagram =
+  | { type: 'timeline'; title: string; items: { when?: string; label: string; note?: string }[] }
+  | { type: 'tree'; title: string; root: TreeNode }
+  | {
+      type: 'org'
+      title: string
+      nodes: { id: string; label: string }[]
+      links: { from: string; to: string; label?: string }[]
     }
-  })
+  | { type: 'flow'; title: string; steps: { label: string; note?: string }[] }
+  | { type: 'bars'; title: string; unit?: string; items: { label: string; value: number }[] }
 
-export const flowSchema = z.object({
-  type: z.literal('flow'),
-  title: label,
-  steps: z.array(z.object({ label, note: note.optional() })).min(2).max(8),
-})
+export const DIAGRAM_TYPES = ['timeline', 'tree', 'org', 'flow', 'bars'] as const
 
-export const barsSchema = z.object({
-  type: z.literal('bars'),
-  title: label,
-  unit: z.string().trim().max(12).optional(),
-  items: z.array(z.object({ label: z.string().trim().min(1).max(32), value: z.number().finite() })).min(2).max(8),
-})
-
-export const diagramSchema = z.discriminatedUnion('type', [timelineSchema, treeSchema, orgSchema, flowSchema, barsSchema])
-
-export type Diagram = z.infer<typeof diagramSchema>
-export type TreeNode = z.infer<typeof treeNodeSchema>
-
-/** Analyse le JSON d'un bloc ```diagram ; renvoie le diagramme ou un message d'erreur. */
+/** Lecture légère d'un bloc ```diagram (contenu validé au build) : JSON et forme connue. */
 export function parseDiagram(source: string): { ok: true; diagram: Diagram } | { ok: false; error: string } {
   let json: unknown
   try {
@@ -72,11 +41,11 @@ export function parseDiagram(source: string): { ok: true; diagram: Diagram } | {
   } catch (e) {
     return { ok: false, error: `JSON invalide : ${e instanceof Error ? e.message : String(e)}` }
   }
-  const parsed = diagramSchema.safeParse(json)
-  if (!parsed.success) {
-    return { ok: false, error: parsed.error.issues.map((i) => `${i.path.join('.') || '(racine)'} : ${i.message}`).join(' ; ') }
+  const d = json as Partial<Diagram> | null
+  if (!d || typeof d !== 'object' || !(DIAGRAM_TYPES as readonly string[]).includes(String(d.type)) || typeof d.title !== 'string') {
+    return { ok: false, error: 'forme inconnue' }
   }
-  return { ok: true, diagram: parsed.data }
+  return { ok: true, diagram: d as Diagram }
 }
 
 /** Blocs ```diagram d'une fiche Markdown (contenu brut, sans les clôtures). */

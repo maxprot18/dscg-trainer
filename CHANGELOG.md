@@ -1,5 +1,16 @@
 # Journal des versions
 
+## 1.1.0 (octobre 2026)
+
+Interface et parcours, à la suite de l'audit de la version 1.0 (`docs/audit-v1.md`).
+
+- **Cours** : entrée par UE avec l'avancement, page d'UE avec le niveau de maîtrise de chaque notion et les fiches déjà lues, navigation notion précédente / suivante, sommaire et notions du thème sur grand écran, fiches d'une UE à imprimer, diagrammes (frises, arbres de décision, organigrammes, flux, barres) et liens entre fiches.
+- **Exercices** : lien vers la fiche de cours et marque-page « à revoir plus tard » depuis la correction, notions à revoir dans le bilan, autocomplétion des comptes PCG et bouton « Équilibrer » dans les écritures, énoncés de cas repliables.
+- **Sessions** : mode flashcards, reprise d'un examen blanc interrompu, bouton « Passer », confirmation avant d'arrêter, chronomètre explicite.
+- **Accueil et progression** : objectif quotidien, activité des huit dernières semaines, réussite par type d'exercice, historique filtrable.
+- **Réglages** : objectif, taille des sessions, thème, export, import, remise à zéro, installation de l'application ; bandeau « nouvelle version disponible ».
+- Couleur d'identité par UE, icône par type d'exercice, mise en page élargie sur grand écran.
+
 ## 1.0.0 (octobre 2026)
 
 Première version complète, conforme au cahier des charges (`SPEC.md`).

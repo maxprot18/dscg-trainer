@@ -25,7 +25,7 @@ import {
   type Taxonomy,
   type UeId,
 } from '../src/content/schema.ts'
-import { extractDiagramBlocks, parseDiagram } from '../src/content/diagram.ts'
+import { extractDiagramBlocks, parseDiagram } from '../src/content/diagramSchema.ts'
 import { buildTaxonomyIndex, checkPlacement, describePlacementProblem } from '../src/content/taxonomy.ts'
 
 // Messages Zod génériques en français (les messages métier du schéma le sont déjà).

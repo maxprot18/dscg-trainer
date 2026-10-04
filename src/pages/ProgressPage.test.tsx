@@ -2,7 +2,7 @@ import { render, screen, waitFor, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { MemoryRouter } from 'react-router-dom'
 
-import { taxonomy } from '@/content/load'
+import { loadExercises, taxonomy } from '@/content/load'
 import { db, type Attempt } from '@/db/db'
 import type { ProgressData } from '@/db/progress'
 import { DAY_MS } from '@/engine/srs'
@@ -41,6 +41,10 @@ function renderView(progress: ProgressData) {
 }
 
 describe('écran Progression', () => {
+  // La carte « réussite par type » lance le chargement du contenu : l'attendre avant la fin des tests,
+  // sinon les imports des fichiers UE se terminent après la destruction de l'environnement.
+  afterAll(() => loadExercises())
+
   it('chiffres clés, carte du programme, réussite par notion et historique', () => {
     renderView(data)
     expect(screen.getByText('7')).toBeInTheDocument() // exercices faits

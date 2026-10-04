@@ -29,8 +29,8 @@ export function HomePage() {
       <Button asChild size="lg" className="h-14 text-lg">
         <Link to="/entrainement">S'entraîner</Link>
       </Button>
-      {progress && (
-        <Card>
+      {/* Toujours rendue (avec des valeurs à zéro pendant le chargement) pour éviter un saut de mise en page. */}
+      <Card aria-busy={!progress}>
           <CardContent className="flex items-center gap-4">
             <GoalRing done={today} goal={dailyGoal} />
             <div className="flex min-w-0 flex-1 flex-col gap-1">
@@ -48,8 +48,7 @@ export function HomePage() {
               </Button>
             </div>
           </CardContent>
-        </Card>
-      )}
+      </Card>
       <Card>
         <CardHeader>
           <CardTitle>Contenu disponible</CardTitle>

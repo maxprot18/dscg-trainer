@@ -1,6 +1,6 @@
 # PROGRESS — DSCG Trainer
 
-Dernière mise à jour : 2026-10-04, fin de la session phase 5 (finitions, version 1.0.0).
+Dernière mise à jour : 2026-10-04, fin de la session phase 7 (interface, version 1.1.0). Phases 6 (cours enrichis) et 8 (exercices complémentaires) à venir, voir `docs/audit-v1.md`.
 
 ## État par phase
 
@@ -12,6 +12,9 @@ Dernière mise à jour : 2026-10-04, fin de la session phase 5 (finitions, versi
 | 3. Contenu UE 1, 2, 3, 5, 6 | Terminée (voir ci-dessous) |
 | 4. Progression | Terminée (voir ci-dessous) |
 | 5. Finitions | Terminée : version 1.0.0 (voir ci-dessous) |
+| 7. Interface (audit v1) | Terminée : version 1.1.0 (voir ci-dessous) |
+| 6. Cours enrichis et visuels | À faire (phase suivante) |
+| 8. Exercices complémentaires | À faire |
 
 ## Phase 0 : ce qui est fait
 
@@ -104,6 +107,18 @@ Dernière mise à jour : 2026-10-04, fin de la session phase 5 (finitions, versi
 - **Documentation et version** : `CONTRIBUTING.md`, `CHANGELOG.md`, README avec captures (clair et sombre, `docs/screenshots/`), version 1.0.0 (`package.json`, affichée sur l'accueil et dans les signalements).
 - **Tests** : 175 tests verts (thème, recherche, signalement, pages de recherche et d'exercice, taxonomie embarquée).
 
+## Phase 7 : ce qui est fait (interface, après l'audit de la v1)
+
+L'audit `docs/audit-v1.md` (4 octobre 2026) a fixé trois phases hors SPEC, validées par l'utilisateur : 7 interface (faite), 6 cours enrichis avec visuels, 8 exercices complémentaires. Ordre choisi : l'interface d'abord, parce qu'elle pose le composant de diagrammes dont la phase 6 a besoin.
+
+- **Socle** : base locale v2 (table `marks` : marque-pages et fiches lues ; champ `search` des sessions pour la reprise ; export v2, import des v1 et v2, remise à zéro) ; couleur d'identité par UE (`--ue-UE4`, palette catégorielle validée pour les daltonismes, texte jamais dans la couleur) ; icône par type d'exercice.
+- **Fiches** : liens internes `[texte](/cours/notion)` et blocs ```` ```diagram ```` (frise, arbre de décision, organigramme, flux, barres) rendus en HTML/SVG adaptés au thème et aux lecteurs d'écran ; schéma Zod `src/content/diagramSchema.ts` vérifié par `npm run validate` (diagrammes et liens vers des notions inconnues) ; lecture légère sans Zod à l'exécution (`src/content/diagram.ts`).
+- **Cours** : `/cours` en cartes d'UE avec l'avancement ; `/cours/ue/:ue` avec thèmes, maîtrise, fiche lue, marque-page et nombre d'exercices par notion ; fiche marquée lue à l'affichage, notion précédente / suivante, sommaire et notions du thème en colonne latérale sur grand écran (mise en page élargie à 1 024 px) ; `/cours/ue/:ue/imprimer` avec CSS d'impression.
+- **Exercices** : lien « Voir la fiche de cours » et marque-page depuis la correction ; notions à revoir dans le bilan ; autocomplétion des comptes PCG (190 comptes usuels, `src/content/pcg.ts`) et bouton « Équilibrer » ; énoncés de cas repliables.
+- **Sessions** : reprise d'un examen blanc interrompu (même sujet, moins de 24 h, réponses et chrono reconstruits depuis les tentatives), bouton « Passer », confirmation avant d'arrêter, chronomètre explicite ; mode flashcards par UE ou thème.
+- **Accueil, progression, réglages** : objectif quotidien (anneau), activité des huit dernières semaines (deux graphiques, une mesure chacun), réussite par type d'exercice, historique filtrable ; `/reglages` (objectif, tailles de session, thème, export, import, remise à zéro, installation) ; bandeaux « nouvelle version » (service worker en mode prompt) et « installer ».
+- **Vérifications** : 190 tests verts ; smoke test Chromium (session rapide, flashcards, écriture, cours, fiche, progression, mode sombre, grand écran), aucune erreur console ; Lighthouse 95-96 en performance (90 sur la fiche de cours) et 100 en accessibilité, bonnes pratiques et SEO sur tous les écrans mesurés.
+
 ## Décisions prises (et pourquoi)
 
 1. **Programme de référence : arrêté du 4 août 2025** (BOESR n° 32 du 28/08/2025, NOR MENS2523324A). Il s'applique aux épreuves du DSCG à partir de la session 2027, celle que Max préparera ; il remplace l'arrêté du 13/02/2019.
@@ -151,6 +166,12 @@ Dernière mise à jour : 2026-10-04, fin de la session phase 5 (finitions, versi
 37. **(Phase 5) Nombres d'exercices calculés au build** (`__EXERCISE_COUNTS__`, exercices vérifiés seulement) : les écrans s'affichent sans télécharger tout le contenu. En dev, où les exercices non vérifiés sont visibles, ces nombres peuvent être inférieurs à ce qui est jouable.
 38. **(Phase 5) Taxonomie embarquée sans relecture Zod** : validée au build (`npm run validate`) et par un test qui compare sa lecture par le schéma ; Zod n'est chargé qu'avec le contenu.
 
+39. **(Phase 7) Diagrammes déclaratifs plutôt qu'images** : un bloc JSON validé au build, dessiné par un composant (HTML pour les formes textuelles, SVG pour l'organigramme et les barres). Thème sombre, accessibilité (titre et description), aucun poids, relecture possible par le validateur. Cinq formes seulement, pour que les rédacteurs de la phase 6 n'aient pas à inventer.
+40. **(Phase 7) Zod hors des écrans** : le validateur et les tests utilisent le schéma complet des diagrammes ; l'application fait une lecture légère (JSON + forme connue), le contenu ayant été validé au build. Importer Zod dans la page de fiche avait fait passer sa performance Lighthouse de 97 à 69.
+41. **(Phase 7) Fiche lue = fiche affichée** ; marque-pages et fiches lues dans IndexedDB (table `marks`), exportés avec la progression. Les réglages (objectif, tailles) restent en localStorage : ce sont des préférences d'appareil, pas de la progression.
+42. **(Phase 7) Reprise d'examen reconstruite depuis les tentatives** plutôt que par une sauvegarde parallèle : chaque réponse est déjà enregistrée au fil de l'eau ; un examen non terminé sur le même sujet (même URL, donc même graine) et de moins de 24 h est proposé à la reprise.
+43. **(Phase 7) Graphiques à une mesure** : deux petits graphiques (exercices, taux) plutôt qu'un graphique à deux axes ; une seule teinte par graphique ; valeurs lisibles dans la description SVG.
+
 ## Points ouverts / à vérifier
 
 - **Déploiement** : résolu. GitHub Pages est activé (source : GitHub Actions) et chaque push sur `main` déploie automatiquement.
@@ -159,15 +180,14 @@ Dernière mise à jour : 2026-10-04, fin de la session phase 5 (finitions, versi
 - UE 1, 5 et 6 ont moins de 5 questions par notion à la cible V1 : on peut regrouper des notions en phase 3 si c'est trop fin.
 
 - **Points de fond** : ceux relevés en phases 2 et 3 ont été vérifiés et corrigés en phase 5 (voir « Phase 5 : ce qui est fait »). Les relecteurs n'ont pu lire la plupart des textes officiels qu'au travers de résumés de recherche (Légifrance, ANC et BOFiP bloqués par le proxy) : un contrôle humain sur les textes reste souhaitable, en priorité sur les règlements récents (ANC 2026-03, directive (UE) 2026/470) et sur le plan de comptes PCG 2025.
-- **Reprise d'un examen blanc interrompu** : un rechargement de page perd les réponses en cours (décision 33).
+- **Décalage de mise en page (CLS) de 0,07 sur toutes les pages** et 0,15 sur la fiche de cours (le bouton « S'entraîner » descend quand la fiche arrive) : performance Lighthouse 90 sur la fiche, 95-96 ailleurs. À regarder en phase 6 (charger la fiche avec la page, remonter le bouton) ; le 0,07 commun vient probablement du remplacement de l'écran « Chargement… » de Suspense.
 
-## Prochaine étape : après la version 1.0.0
+## Prochaine étape : phase 6 (cours enrichis et visuels)
 
-Le plan de livraison du SPEC est terminé. Suite possible, selon les retours d'usage (SPEC : « marge restante pour les corrections après tes premiers jours d'utilisation ») :
-- traiter les issues ouvertes par le bouton « signaler une erreur » (corriger, faire relire, commit `content(...)` ou `fix(...)`) ;
-- contrôle humain des points listés ci-dessus ;
-- reprise d'un examen blanc interrompu (sauvegarde des réponses en cours dans IndexedDB) ;
-- enrichir les UE 1, 5 et 6, où certaines notions n'ont que 4 ou 5 exercices.
+- Voir `docs/audit-v1.md` § 1 et § 6. Fiches à 25-30 lignes avec une structure fixe : enjeu, règles, **exemple chiffré résolu**, **erreurs fréquentes à l'examen** (tirées des distracteurs des QCM de la notion), « À retenir », **notions liées** (liens `[titre](/cours/id)`), références ; glossaire anglais → français dans les fiches UE 6.
+- Visuels : blocs ```` ```diagram ```` (formes et schéma dans `src/content/diagram.ts` et `diagramSchema.ts`, exemples dans `src/components/Markdown.test.tsx`) sur les notions qui s'y prêtent, environ 120 ; `npm run validate` les vérifie.
+- Méthode : 25 lots (mêmes découpages qu'en phases 2 et 3), rédacteur puis relecteur indépendant par lot, commit par lot ; le relecteur vérifie aussi que chaque lien interne pointe vers la bonne notion et que chaque diagramme est juste. Mettre à jour `docs/content-guide.md` (structure des fiches, diagrammes, liens) avant de lancer les rédacteurs.
+- Puis phase 8 : environ 150 exercices sur les notions à 3-4 exercices (UE 1, 5, 6).
 
 ## Budget consommé (estimation)
 
@@ -177,4 +197,5 @@ Le plan de livraison du SPEC est terminé. Suite possible, selon les retours d'u
 - Phase 3 : environ 80 à 100 $ (cible SPEC : 70 $). Environ 52 sous-agents (25 rédactions, 26 relectures, plus le plugin de build), de 80 000 à 145 000 tokens chacun. Dépassement dû au volume des lots UE 1 (36-37 exercices) et aux recherches des relecteurs.
 - Phase 4 : environ 15 à 20 $ (cible SPEC : 25 $). Aucun sous-agent : travail direct (moteur, écrans, tests, smoke test).
 - Phase 5 : environ 20 à 30 $ (cible SPEC : 15 $, dépassement accepté pour finir proprement). 5 sous-agents (vérification des points ouverts et relecture, harmonisation des comptes ANC 2022-06 et relecture), le reste en travail direct (code, Lighthouse, captures).
-- Cumul estimé : environ 225 à 285 $ pour un budget de 250 $ (+ 15 $ de marge prévue par le SPEC).
+- Phase 7 : environ 35 à 45 $ (estimation de l'audit : 40 à 60 $). Aucun sous-agent : travail direct.
+- Cumul estimé : environ 260 à 330 $. L'utilisateur a accepté de dépasser le budget initial de 250 $ pour les phases 6 à 8 (audit : 155 à 215 $ pour les trois).

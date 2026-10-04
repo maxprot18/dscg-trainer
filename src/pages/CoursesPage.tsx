@@ -41,23 +41,21 @@ export function CoursesPage() {
                     <span className="font-semibold">
                       {ue.id} — {ue.title}
                     </span>
-                    {p && (
-                      <span className="flex items-center gap-2 text-xs">
+                    <span className="flex items-center gap-2 text-xs" aria-busy={!p}>
                         <span
                           className="bg-muted h-1.5 flex-1 overflow-hidden rounded-full"
                           role="progressbar"
-                          aria-label={`${ue.id} : ${p.covered} notions travaillées sur ${total}`}
-                          aria-valuenow={p.covered}
+                          aria-label={`${ue.id} : ${p?.covered ?? 0} notions travaillées sur ${total}`}
+                          aria-valuenow={p?.covered ?? 0}
                           aria-valuemax={total}
                         >
-                          <span className="block h-full bg-emerald-500" style={{ width: `${(p.counts.mastered / total) * 100}%` }} />
+                          <span className="block h-full bg-emerald-500" style={{ width: `${((p?.counts.mastered ?? 0) / total) * 100}%` }} />
                         </span>
                         <span className="text-muted-foreground">
-                          {p.counts.mastered} maîtrisée{p.counts.mastered > 1 ? 's' : ''} · {p.covered} travaillée
-                          {p.covered > 1 ? 's' : ''}
+                          {p?.counts.mastered ?? 0} maîtrisée{(p?.counts.mastered ?? 0) > 1 ? 's' : ''} · {p?.covered ?? 0} travaillée
+                          {(p?.covered ?? 0) > 1 ? 's' : ''}
                         </span>
                       </span>
-                    )}
                   </span>
                   <ChevronRight className="text-muted-foreground size-5 shrink-0 self-center" aria-hidden />
                 </Link>

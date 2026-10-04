@@ -91,10 +91,12 @@ export function CourseUePage() {
                   <Link
                     to={`/cours/${notion.id}`}
                     className="hover:bg-accent/50 flex items-center gap-3 px-4 py-2.5 text-sm"
-                    aria-label={`${notion.title} (${MASTERY_LABELS[m]}${isRead ? ', fiche lue' : ''})`}
                   >
                     <span aria-hidden className={cn('size-2.5 shrink-0 rounded-full border', MASTERY_COLORS[m])} />
-                    <span className={cn('min-w-0 flex-1', !course && 'text-muted-foreground')}>{notion.title}</span>
+                    <span className={cn('min-w-0 flex-1', !course && 'text-muted-foreground')}>
+                      {notion.title}
+                      <span className="sr-only"> ({MASTERY_LABELS[m]})</span>
+                    </span>
                     {marked && <BookmarkCheck className="text-muted-foreground size-3.5 shrink-0" aria-label="à revoir plus tard" />}
                     {isRead && <Check className="size-3.5 shrink-0 text-emerald-600" aria-label="fiche lue" />}
                     <span className="text-muted-foreground w-8 shrink-0 text-right text-xs">{count}</span>

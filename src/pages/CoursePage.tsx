@@ -85,7 +85,10 @@ export function CoursePage() {
           <Badge variant="outline">{entry.theme.title}</Badge>
         </div>
         {text === undefined ? (
-          <p className="text-muted-foreground">Chargement…</p>
+          // Hauteur réservée pour que l'arrivée de la fiche ne décale pas la page.
+          <p className="text-muted-foreground min-h-[70vh]" aria-busy="true">
+            Chargement…
+          </p>
         ) : text === null ? (
           <>
             <h1 className="text-xl font-bold">{entry.notion.title}</h1>
@@ -93,7 +96,7 @@ export function CoursePage() {
           </>
         ) : (
           <>
-            <article className="text-sm">
+            <article className="min-h-[70vh] text-sm">
               <Markdown source={text} pageTitle />
             </article>
             <div className="no-print flex flex-wrap items-center gap-2">
