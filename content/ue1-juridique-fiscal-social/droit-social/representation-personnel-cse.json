@@ -1,0 +1,105 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-social-cse-0001",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "droit-social",
+      "notion": "representation-personnel-cse",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "CSE",
+        "seuil",
+        "mise en place"
+      ],
+      "statement": "À partir de quel effectif la mise en place d'un comité social et économique (CSE) est-elle obligatoire ?",
+      "options": [
+        "Dès que l'entreprise emploie 11 salariés, même pendant un seul mois",
+        "Au moins 20 salariés pendant 12 mois consécutifs",
+        "Au moins 11 salariés pendant 12 mois consécutifs",
+        "Au moins 50 salariés pendant 12 mois consécutifs"
+      ],
+      "answer": [
+        2
+      ],
+      "multiple": false,
+      "explanation": "Le CSE est mis en place dans les entreprises d'au moins 11 salariés, sa mise en place n'étant obligatoire que si ce seuil est atteint pendant 12 mois consécutifs (option 3). Un franchissement ponctuel ne suffit pas (option 1). Le seuil de 20 salariés (option 2) n'est pas celui du CSE. Le seuil de 50 salariés (option 4) détermine l'étendue des attributions du CSE (attributions économiques élargies, personnalité civile, budgets), pas son existence.",
+      "source_ref": "C. trav. art. L2311-2",
+      "estimated_seconds": 40
+    },
+    {
+      "id": "ue1-social-cse-0002",
+      "type": "mcq",
+      "ue": "UE1",
+      "theme": "droit-social",
+      "notion": "representation-personnel-cse",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "CSE",
+        "consultations récurrentes",
+        "BDESE"
+      ],
+      "statement": "Dans une entreprise de 250 salariés, le CSE est consulté chaque année dans le cadre de trois consultations récurrentes. Laquelle des matières suivantes n'en fait pas partie ?",
+      "options": [
+        "Les orientations stratégiques de l'entreprise",
+        "La situation économique et financière de l'entreprise",
+        "La politique sociale de l'entreprise, les conditions de travail et l'emploi",
+        "La fixation de la rémunération individuelle des dirigeants sociaux"
+      ],
+      "answer": [
+        3
+      ],
+      "multiple": false,
+      "explanation": "Les trois consultations récurrentes portent sur les orientations stratégiques (option 1), la situation économique et financière (option 2) et la politique sociale, les conditions de travail et l'emploi (option 3) ; elles s'appuient sur la BDESE. La rémunération des dirigeants sociaux (option 4) relève des organes sociaux (conseil d'administration, assemblée, statuts) et non d'une consultation du CSE.",
+      "source_ref": "C. trav. art. L2312-17 ; C. trav. art. L2312-18 (BDESE)",
+      "estimated_seconds": 50
+    },
+    {
+      "id": "ue1-social-cse-0003",
+      "type": "numeric",
+      "ue": "UE1",
+      "theme": "droit-social",
+      "notion": "representation-personnel-cse",
+      "verified": true,
+      "difficulty": 2,
+      "tags": [
+        "calcul des effectifs",
+        "temps partiel",
+        "CDD",
+        "apprentis"
+      ],
+      "statement": "La société Orpin calcule son effectif pour apprécier ses obligations en matière de représentation du personnel. Sur les 12 derniers mois, elle a employé :\n- 38 salariés en CDI à temps plein (dont une salariée en congé de maternité) ;\n- 6 salariés en CDI à temps partiel de 17,5 heures par semaine (durée légale : 35 heures) ;\n- 4 salariés en CDD pour accroissement temporaire d'activité, présents chacun 6 mois ;\n- 1 salarié en CDD remplaçant la salariée en congé de maternité, présent 12 mois ;\n- 2 apprentis.\nCalculez l'effectif à retenir selon les règles du Code du travail. Réponse en nombre de salariés.",
+      "expected_value": 43,
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.25
+      },
+      "unit": "salariés",
+      "decimals": 1,
+      "explanation": "- CDI à temps plein : 38, y compris la salariée en congé de maternité (contrat suspendu, elle reste comptée).\n- Temps partiel : 6 × 17,5 / 35 = 3.\n- CDD pour accroissement d'activité, au prorata du temps de présence sur 12 mois : 4 × 6 / 12 = 2.\n- CDD de remplacement d'une salariée absente : exclu (sinon le poste serait compté deux fois).\n- Apprentis : exclus du calcul.\nEffectif = 38 + 3 + 2 = 43 salariés. Erreurs classiques : compter le remplaçant (44), les apprentis (45) ou les temps partiels pour une unité chacun (46).",
+      "source_ref": "C. trav. art. L1111-2 (règles de décompte) et L1111-3 (salariés exclus, dont les apprentis)",
+      "estimated_seconds": 180
+    },
+    {
+      "id": "ue1-social-cse-0004",
+      "type": "flashcard",
+      "ue": "UE1",
+      "theme": "droit-social",
+      "notion": "representation-personnel-cse",
+      "verified": true,
+      "difficulty": 1,
+      "tags": [
+        "CSE",
+        "seuils",
+        "attributions"
+      ],
+      "front": "Quelles sont les attributions du CSE selon que l'entreprise compte 11 à 49 salariés ou au moins 50 salariés ?",
+      "back": "11 à 49 salariés : présentation des réclamations individuelles et collectives, promotion de la santé, de la sécurité et des conditions de travail, enquêtes en matière d'accidents du travail, saisine de l'inspection du travail.\n50 salariés et plus : en outre, information-consultation sur l'organisation, la gestion et la marche générale de l'entreprise, trois consultations récurrentes (orientations stratégiques, situation économique et financière, politique sociale), BDESE, personnalité civile, budget de fonctionnement et budget des activités sociales et culturelles.",
+      "explanation": "Les seuils s'apprécient sur 12 mois consécutifs. L'avis du CSE est consultatif, mais le défaut de consultation constitue un délit d'entrave. Références : C. trav. art. L2311-2, L2312-8, L2312-17 et L2312-18.",
+      "source_ref": "C. trav. art. L2311-2, L2312-8, L2312-17 et L2312-18",
+      "estimated_seconds": 60
+    }
+  ]
+}
