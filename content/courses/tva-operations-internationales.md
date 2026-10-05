@@ -1,6 +1,6 @@
 # TVA : territorialité et opérations internationales
 
-**Références :** CGI art. 256 bis, 259, 259 A, 259 D, 262 I, 262 ter I, 283-2 et 1695 II ; PCG comptes 4452 et 44566
+**Références :** CGI art. 256 bis, 258 A, 259, 259 A, 259 D, 262 I, 262 ter I, 283-2, 287 et 1695 I ; PCG comptes 4452 et 44566
 
 **Enjeu :** déterminer dans quel État une opération est taxée et qui doit la TVA (vendeur, acquéreur ou preneur) ; à l'examen, la déclaration de TVA d'une entreprise qui vend et achète dans l'Union et hors de l'Union est un cas récurrent.
 
@@ -8,14 +8,16 @@
 
 **Acquisitions intracommunautaires** (AIC, art. 256 bis) : imposables en France à l'arrivée du bien ; l'acquéreur **autoliquide** la TVA : il la déclare (compte 4452 « TVA due intracommunautaire ») et la déduit sur la même déclaration dans les conditions de droit commun (44566). Opération neutre en trésorerie si le droit à déduction est total ; si le coefficient de déduction est inférieur à 1, seule la part déductible est récupérée.
 
-**Échanges avec les pays tiers** : les exportations sont exonérées (art. 262 I), sous réserve de la preuve de la sortie du bien (déclaration d'exportation visée par la douane). Les importations sont taxables ; depuis le 1er janvier 2022, l'assujetti identifié en France **autoliquide** la TVA à l'importation sur sa déclaration au lieu de la payer en douane (art. 1695 II), les montants étant préremplis à partir des déclarations douanières.
+**Échanges avec les pays tiers** : les exportations sont exonérées (art. 262 I), sous réserve de la preuve de la sortie du bien (déclaration d'exportation visée par la douane). Les importations sont taxables ; depuis le 1er janvier 2022, l'assujetti identifié en France **autoliquide** la TVA à l'importation sur sa déclaration au lieu de la payer en douane (art. 287, 5), les montants étant préremplis à partir des déclarations douanières ; le paiement en douane est réservé aux importateurs non assujettis et non identifiés (art. 1695 I).
 
 **Prestations de services** (art. 259) :
 - entre assujettis (B to B) : lieu d'imposition = lieu d'établissement du **preneur** ; si le prestataire n'est pas établi en France, le preneur français autoliquide la TVA (art. 283-2) et la déduit selon son droit à déduction ;
 - envers un non-assujetti (B to C) : en principe, lieu d'établissement du prestataire ;
 - exceptions notables : services se rattachant à un immeuble (lieu de l'immeuble), restauration et transport de passagers (lieu d'exécution) (art. 259 A) ; services électroniques, de télécommunications et de télévision à des particuliers (lieu du preneur, art. 259 D).
 
-**Ventes à distance à des particuliers de l'Union** : TVA de l'État d'arrivée au-delà d'un seuil annuel de 10 000 € HT (apprécié pour l'ensemble de l'Union, ventes à distance et services électroniques confondus), avec déclaration possible via le guichet unique (OSS) ; en dessous, TVA française.
+**Ventes à distance à des particuliers de l'Union** (art. 258 A et 259 D) : TVA de l'État d'arrivée au-delà d'un seuil annuel de 10 000 € HT (apprécié pour l'ensemble de l'Union, ventes à distance et services électroniques confondus), avec déclaration possible via le guichet unique (OSS) ; en dessous, TVA française.
+
+**Recodification (ord. n° 2025-1247)** : à compter du 1er janvier 2027, ces règles sont reprises à droit constant dans le code des impositions sur les biens et services (ord. n° 2025-1247 du 17 décembre 2025) : les numéros du CGI cités ici changent, pas le fond.
 
 ```diagram
 {"type":"tree","title":"Où et par qui la TVA est-elle due ? (vendeur français, client assujetti)","root":{"label":"Nature de l'opération","children":[{"edge":"livraison de bien","label":"Destination du bien","children":[{"edge":"autre État membre","label":"LIC exonérée en France","note":"AIC autoliquidée par l'acquéreur dans l'État d'arrivée"},{"edge":"pays tiers","label":"Exportation exonérée","note":"preuve douanière de la sortie"},{"edge":"France","label":"TVA française collectée"}]},{"edge":"prestation de services","label":"Lieu d'établissement du preneur","children":[{"edge":"preneur en France","label":"TVA française","note":"autoliquidée par le preneur si le prestataire est étranger"},{"edge":"preneur hors de France","label":"Non imposable en France","note":"facture HT, TVA due par le preneur dans son État"}]}]}}

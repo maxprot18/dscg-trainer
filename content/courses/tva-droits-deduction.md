@@ -19,6 +19,8 @@
 
 **Régularisations des immobilisations** (ann. II art. 207) : si le coefficient de déduction d'une année de la période de régularisation varie de plus de 10 points par rapport au coefficient initial (définitif de l'année d'acquisition), une régularisation annuelle est opérée : TVA initiale × (coefficient de l'année − coefficient initial) / 5 pour un bien meuble (période de 5 ans, année d'acquisition comprise), / 20 pour un immeuble. Résultat négatif = reversement, positif = complément de déduction. Une **régularisation globale** intervient aussi pour les années restantes en cas de cession du bien pendant la période (cession non soumise à TVA : reversement ; cession soumise à TVA d'un bien dont la déduction était partielle : complément).
 
+**Recodification (ord. n° 2025-1247)** : à compter du 1er janvier 2027, ces règles sont reprises à droit constant dans le code des impositions sur les biens et services (ord. n° 2025-1247 du 17 décembre 2025) : les numéros du CGI cités ici changent, pas le fond.
+
 **Formules clés :** coefficient de déduction = assujettissement × taxation × admission ; régularisation annuelle = TVA initiale × Δ coefficient / 5 (ou / 20)
 
 ## Exemple

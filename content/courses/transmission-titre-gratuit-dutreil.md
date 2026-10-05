@@ -12,7 +12,7 @@
 - **fonction de direction** exercée par l'un des signataires ou des bénéficiaires pendant l'engagement collectif et pendant les 3 ans qui suivent la transmission ;
 - **attestations** : la société atteste du respect des engagements au jour de la transmission puis sur demande de l'administration et au terme de l'engagement individuel.
 
-**Actifs exclus (LF 2026)** : la fraction de la valeur des titres représentative de biens non affectés à l'activité, énumérés par la loi (bateaux de plaisance, véhicules de tourisme, bijoux et œuvres d'art, chevaux de course, vins et alcools, droits de chasse ou de pêche, résidences d'agrément), est retranchée de l'assiette exonérée, qui ne porte plus que sur la fraction professionnelle de la valeur des titres ; le taux de 75 % est inchangé.
+**Actifs exclus (LF 2026)** : la fraction de la valeur des titres représentative de biens non exclusivement affectés à l'activité (depuis au moins 3 ans avant la transmission et jusqu'au terme de l'engagement individuel), énumérés par la loi (biens de chasse ou de pêche, véhicules de tourisme, yachts, bateaux de plaisance et aéronefs, bijoux, métaux précieux et objets d'art ou de collection, chevaux de course ou de concours, vins et alcools, logements et résidences), est retranchée de l'assiette exonérée, qui ne porte plus que sur la fraction professionnelle de la valeur des titres ; le taux de 75 % est inchangé.
 
 **Réduction de droits (art. 790)** : si la donation porte sur la **pleine propriété** de titres sous régime Dutreil et que le donateur a **moins de 70 ans**, les droits sont réduits de **50 %** ; en démembrement, pas de réduction.
 
