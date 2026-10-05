@@ -22,7 +22,7 @@
         1
       ],
       "explanation": "Le Code de commerce impose au commissaire aux comptes de révéler au procureur de la République les faits délictueux dont il a connaissance au cours de sa mission (option 2). Le président du tribunal de commerce (option 1) intervient dans la procédure d'alerte, qui concerne la continuité d'exploitation. La H2A (option 3) supervise la profession ; elle n'est pas destinataire des révélations. L'assemblée (option 4) reçoit le signalement des irrégularités et inexactitudes, qui ne remplace pas la révélation.",
-      "source_ref": "C. com., obligation de révélation des faits délictueux (ancien art. L. 823-12, renuméroté par l'ordonnance n° 2023-1142)",
+      "source_ref": "C. com. art. L. 821-10 (obligation de révélation des faits délictueux ; ancien art. L. 823-12, renuméroté par l'ordonnance n° 2023-1142)",
       "verified": true,
       "estimated_seconds": 45
     },
@@ -76,7 +76,7 @@
         3
       ],
       "explanation": "L'abus de biens sociaux est consommé dès l'usage des fonds sociaux à des fins personnelles : le remboursement ultérieur ne l'efface pas. Le commissaire aux comptes doit révéler les faits au procureur ; il n'a pas à les qualifier définitivement ni à en apporter la preuve (option 4). L'option 1 est fausse pour la raison indiquée. L'option 2 est fausse : l'obligation de révélation ne dépend d'aucun seuil de signification. L'option 3 est fausse : la révélation est une obligation personnelle du commissaire aux comptes, qui n'est subordonnée à aucun accord des organes sociaux.",
-      "source_ref": "C. com., obligation de révélation des faits délictueux (ancien art. L. 823-12) ; C. com. art. L. 242-6 (abus de biens sociaux dans les SA)",
+      "source_ref": "C. com. art. L. 821-10 (obligation de révélation des faits délictueux ; ancien art. L. 823-12) ; C. com. art. L. 242-6 (abus de biens sociaux dans les SA)",
       "verified": true,
       "estimated_seconds": 75
     },
@@ -96,7 +96,7 @@
       "answer": true,
       "justification": "Vrai : le Code de commerce écarte l'alerte du commissaire aux comptes lorsque les dirigeants ont engagé une conciliation ou une sauvegarde.",
       "explanation": "Lorsque les dirigeants ont eux-mêmes engagé une procédure de conciliation ou de sauvegarde, les difficultés sont déjà traitées sous le contrôle du tribunal : le Code de commerce écarte alors la procédure d'alerte du commissaire aux comptes, qui conserve ses autres obligations (opinion, NEP 570, révélation).",
-      "source_ref": "C. com. art. L. 234-1 et suivants (procédure d'alerte du commissaire aux comptes, exclusion en cas de conciliation ou de sauvegarde)",
+      "source_ref": "C. com. art. L. 234-4 (procédure d'alerte du commissaire aux comptes écartée en cas de conciliation ou de sauvegarde engagée par les dirigeants)",
       "verified": true,
       "estimated_seconds": 40
     },
@@ -115,7 +115,7 @@
       "answer": false,
       "justification": "Faux : la loi exclut la mise en cause de sa responsabilité du fait de la révélation ; c'est la non-révélation qui est sanctionnée.",
       "explanation": "Le texte qui impose la révélation précise que la responsabilité du commissaire aux comptes ne peut pas être engagée du fait de cette révélation : le secret professionnel est levé à l'égard du procureur. Peu importe que les poursuites aboutissent ou non. C'est au contraire la non-révélation qui constitue un délit, puni de cinq ans d'emprisonnement et de 75 000 € d'amende.",
-      "source_ref": "C. com., obligation de révélation des faits délictueux et absence de responsabilité du fait de la révélation (ancien art. L. 823-12, renuméroté par l'ordonnance n° 2023-1142)",
+      "source_ref": "C. com. art. L. 821-10 (révélation des faits délictueux et absence de responsabilité du fait de la révélation ; ancien art. L. 823-12, renuméroté par l'ordonnance n° 2023-1142) ; C. com. art. L. 821-9 (sanction de la non-révélation)",
       "verified": true,
       "estimated_seconds": 45
     },
@@ -189,7 +189,7 @@
       ],
       "total_points": 8,
       "explanation": "Le cas distingue deux obligations légales du commissaire aux comptes qui reposent sur des faits différents : la procédure d'alerte (continuité d'exploitation, dans sa version applicable aux SAS) et la révélation des faits délictueux (dépenses personnelles du président). Ni l'une ni l'autre n'attend la fin de l'exercice.",
-      "source_ref": "C. com. art. L. 234-2 (procédure d'alerte dans les sociétés autres que les SA) ; C. com., révélation des faits délictueux (ancien art. L. 823-12) ; C. com. art. L. 242-6 et L. 244-1 (abus de biens sociaux, applicable au président de SAS) ; NEP 250 ; NEP 570",
+      "source_ref": "C. com. art. L. 234-2 (procédure d'alerte dans les sociétés autres que les SA) ; C. com. art. L. 821-10 (révélation des faits délictueux ; ancien art. L. 823-12) ; C. com. art. L. 242-6 et L. 244-1 (abus de biens sociaux, applicable au président de SAS) ; NEP 250 ; NEP 570",
       "verified": true,
       "estimated_seconds": 720
     }

@@ -95,8 +95,8 @@
       ],
       "statement": "La lettre d'affirmation est rédigée et signée par le commissaire aux comptes, puis transmise à la direction pour information.",
       "answer": false,
-      "justification": "Faux : la lettre est signée par la direction et adressée au commissaire aux comptes, qui peut seulement en proposer le contenu.",
-      "explanation": "La lettre d'affirmation contient les déclarations de la direction : elle est signée par les personnes responsables de l'établissement des comptes (représentant légal et, le plus souvent, directeur financier) et adressée au commissaire aux comptes. Celui-ci peut en préparer le modèle et préciser les déclarations attendues, mais il ne la signe pas : ce serait contraire à son objet, qui est de recueillir l'engagement écrit de la direction.",
+      "justification": "Faux : les déclarations engagent le représentant légal, qui signe la lettre d'affirmation et l'adresse au commissaire aux comptes ; si c'est le commissaire aux comptes qui écrit, le représentant légal doit confirmer par écrit son accord.",
+      "explanation": "La lettre d'affirmation contient les déclarations de la direction : elle est signée par le représentant légal, en tant que responsable de l'établissement des comptes (éventuellement cosignée par le membre de la direction compétent, par exemple le directeur financier), et envoyée directement au commissaire aux comptes. La NEP 580 admet aussi que le commissaire aux comptes adresse au représentant légal une lettre explicitant sa compréhension des déclarations ; le représentant légal doit alors en accuser réception et confirmer par écrit son accord, au plus tard à la date du rapport. Dans aucun cas il ne s'agit d'une simple transmission pour information : l'objet est de recueillir l'engagement écrit de la direction.",
       "source_ref": "NEP 580 (déclarations de la direction)",
       "verified": true,
       "estimated_seconds": 40
