@@ -91,8 +91,8 @@
       ],
       "front": "Qu’est-ce qu’une « hallucination » d’une IA générative et comment en limiter le risque dans un service financier ?",
       "back": "Réponse fausse ou inventée (chiffre, article de loi, référence, jurisprudence) présentée de façon assurée et plausible : le modèle produit le texte le plus probable, il ne vérifie pas les faits.\nParades : alimenter le modèle avec des documents internes fiables et citer les sources (génération augmentée par récupération, RAG) ; vérification humaine systématique avant tout usage externe ; réserver l'outil à des tâches de premier jet ou de synthèse ; former les utilisateurs ; tracer les usages.",
-      "explanation": "Le risque d'hallucination s'ajoute aux risques de confidentialité (données clients ou secret professionnel saisis dans un outil public), de droits d'auteur et de biais. Le règlement (UE) 2024/1689 impose par ailleurs aux fournisseurs et déployeurs de veiller à la maîtrise de l'IA par leur personnel (art. 4) et des obligations de transparence pour certains contenus générés (art. 50).",
-      "source_ref": "Règlement (UE) 2024/1689 (AI Act), art. 4 et 50 ; programme DSCG UE 5 : intelligence artificielle générative (usages et limites)",
+      "explanation": "Le risque d'hallucination s'ajoute aux risques de confidentialité (données clients ou secret professionnel saisis dans un outil public), de droits d'auteur et de biais. Le règlement (UE) 2024/1689 impose par ailleurs aux fournisseurs et déployeurs de prendre des mesures en faveur de la maîtrise de l'IA par leur personnel (art. 4, reformulé par le règlement (UE) 2026/1744) et des obligations de transparence pour certains contenus générés (art. 50).",
+      "source_ref": "Règlement (UE) 2024/1689 (AI Act), art. 4 et 50, modifié par le règlement (UE) 2026/1744 ; programme DSCG UE 5 : intelligence artificielle générative (usages et limites)",
       "verified": true,
       "estimated_seconds": 40
     },

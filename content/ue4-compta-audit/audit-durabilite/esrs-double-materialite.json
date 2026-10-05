@@ -108,11 +108,11 @@
         "connectivité",
         "PCG"
       ],
-      "statement": "La société Fonderia, soumise au système européen d'échange de quotas d'émission, applique le modèle « Production » des règles du PCG relatives aux quotas d'émission (règl. ANC 2012-03). Pour l'exercice N, elle a reçu gratuitement 10 000 quotas (comptabilisés pour une valeur nulle) et n'en a acheté aucun. Ses émissions vérifiées de N s'élèvent à 11 500 tCO₂e (un quota = une tonne). Au 31/12/N, elle n'a pas encore acquis les quotas manquants ; le cours du quota à cette date est de 72 €.\n\nConventions de comptes de l'énoncé : charge au compte 6588 « Charges diverses de gestion courante » ; dette au compte 449 « Quotas d'émission à acquérir ».\n\nPassez l'écriture d'inventaire au 31/12/N.",
+      "statement": "La société Fonderia, soumise au système européen d'échange de quotas d'émission, applique le modèle « Production » des règles du PCG relatives aux quotas d'émission (règl. ANC 2012-03). Pour l'exercice N, elle a reçu gratuitement 10 000 quotas (comptabilisés pour une valeur nulle) et n'en a acheté aucun. Ses émissions vérifiées de N s'élèvent à 11 500 tCO₂e (un quota = une tonne). Au 31/12/N, elle n'a pas encore acquis les quotas manquants ; le cours du quota à cette date est de 72 €.\n\nConventions de comptes de l'énoncé : charge au compte 658 « Pénalités et autres charges » ; dette au compte 449 « Quotas d'émission à acquérir ».\n\nPassez l'écriture d'inventaire au 31/12/N.",
       "date": "31/12/N",
       "entries": [
         {
-          "account": "6588",
+          "account": "658",
           "label": "Charge liée aux quotas manquants (1 500 × 72)",
           "debit": 108000,
           "credit": 0
@@ -125,7 +125,7 @@
         }
       ],
       "explanation": "Dans le modèle « Production », les quotas sont des instruments nécessaires à l'activité : un passif naît des émissions. Tant que les émissions sont couvertes par les quotas détenus, la charge correspond à la valeur des quotas consommés (nulle ici pour des quotas gratuits). Au-delà, l'entreprise comptabilise une dette pour les quotas qu'elle devra acquérir, évaluée au cours du quota à la clôture : (11 500 − 10 000) × 72 = 108 000 €. Connectivité avec l'état de durabilité : les 11 500 tCO₂e entrent dans le scope 1 publié selon ESRS E1, et l'auditeur de durabilité rapproche ces émissions de celles qui fondent le passif comptable.",
-      "source_ref": "PCG, règles relatives aux quotas d'émission de gaz à effet de serre (règl. ANC 2012-03, intégré au règl. ANC 2014-03), modèle « Production » ; règlement délégué (UE) 2023/2772, ESRS E1-6",
+      "source_ref": "PCG, règles relatives aux quotas d'émission de gaz à effet de serre (règl. ANC 2012-03, intégré au règl. ANC 2014-03 : art. 615-5, 615-6 et 615-11), modèle « Production » ; compte 658 ; règlement délégué (UE) 2023/2772, ESRS E1-6",
       "verified": true,
       "estimated_seconds": 200
     },

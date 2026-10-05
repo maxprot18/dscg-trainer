@@ -1,6 +1,6 @@
 # Choix de solutions : cloud, SaaS, externalisation
 
-**Références :** définition du cloud computing du NIST (SP 800-145, 2011) ; référentiel SecNumCloud (ANSSI) ; RGPD art. 28 (sous-traitant) et 44 à 49 (transferts hors UE) ; PCG compte 205 et 611
+**Références :** définition du cloud computing du NIST (SP 800-145, 2011) ; référentiel SecNumCloud (ANSSI) ; RGPD art. 28 (sous-traitant) et 44 à 49 (transferts hors UE) ; règlement (UE) 2023/2854 (Data Act), art. 23 à 29 (changement de fournisseur de services de traitement de données) ; PCG compte 205 et 611
 
 **Enjeu :** choisir entre une solution hébergée en interne, un service cloud ou une infogérance engage le coût total sur plusieurs années, la sécurité des données et la dépendance au prestataire ; l'examen attend un TCO comparé sur une même durée et une lecture critique du contrat.
 
@@ -13,7 +13,7 @@
 
 **Modèles de déploiement** : public (ressources partagées entre clients), privé (dédié à une organisation, chez elle ou chez un hébergeur), communautaire, hybride. **Responsabilité partagée** : plus on monte vers le SaaS, plus le fournisseur prend en charge ; mais la sécurité des données, des accès et des paramétrages reste toujours au client.
 
-**Externalisation (infogérance)** : confier tout ou partie de l'exploitation ou du développement à un prestataire. Le contrat fixe des **niveaux de service (SLA)** mesurables (disponibilité, délai de rétablissement) assortis de pénalités, les modalités de contrôle (droit d'audit ou rapport d'assurance type ISAE 3402 / SOC), la **réversibilité** (récupération des données dans un format exploitable et transfert en fin de contrat, sans exclusivité) et, pour les données personnelles, les clauses de sous-traitance imposées par le RGPD (art. 28) et la localisation des données.
+**Externalisation (infogérance)** : confier tout ou partie de l'exploitation ou du développement à un prestataire. Le contrat fixe des **niveaux de service (SLA)** mesurables (disponibilité, délai de rétablissement) assortis de pénalités, les modalités de contrôle (droit d'audit ou rapport d'assurance type ISAE 3402 / SOC), la **réversibilité** (récupération des données dans un format exploitable et transfert en fin de contrat, sans exclusivité) et, pour les données personnelles, les clauses de sous-traitance imposées par le RGPD (art. 28) et la localisation des données. Depuis le 12 septembre 2025, le Data Act impose aux fournisseurs de cloud des clauses de changement de fournisseur (préavis de deux mois au plus, transition de trente jours au plus, sauf impossibilité technique) ; les frais de changement, limités jusque-là aux coûts directs, sont interdits à compter du 12 janvier 2027 (art. 25 et 29).
 
 **Critères de choix** : coût total de possession (TCO), passage de dépenses d'investissement (CapEx) à des dépenses de fonctionnement (OpEx), élasticité, délai de mise en œuvre, sécurité et localisation des données (souveraineté, lois extraterritoriales ; qualification SecNumCloud pour les données sensibles), dépendance au fournisseur (lock-in), intégration avec l'existant, compétences internes à conserver.
 
