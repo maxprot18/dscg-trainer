@@ -95,11 +95,11 @@
         "transaction",
         "écriture"
       ],
-      "statement": "Au 31/12/N, la SA Garonne, assignée par un ancien fournisseur pour rupture brutale de relation commerciale établie, avait constitué une provision pour litige de 90 000 € (compte 1511 « Provisions pour litiges », dotation au compte 6875). Le 20 avril N+1, une transaction met fin au litige : Garonne verse au fournisseur une indemnité de 75 000 € par virement. Dans le plan de comptes de Garonne, l'indemnité est enregistrée au compte 6788 « Charges exceptionnelles diverses » et la reprise de provision au compte 7875 « Reprises sur provisions exceptionnelles ». Comptabilisez en une seule écriture le versement de l'indemnité et la reprise de la provision.",
+      "statement": "Au 31/12/N, la SA Garonne, assignée par un ancien fournisseur pour rupture brutale de relation commerciale établie, avait constitué une provision pour litige de 90 000 € (compte 1511 « Provisions pour litiges », dotation au compte 6815 « Dotations aux provisions d'exploitation »). Le 20 avril N+1, une transaction met fin au litige : Garonne verse au fournisseur une indemnité de 75 000 € par virement. Le litige naît des relations courantes avec les fournisseurs : il est classé en résultat d'exploitation, l'indemnité étant enregistrée au compte 658 « Pénalités et autres charges » et la reprise de provision au compte 7815 « Reprises sur provisions d'exploitation ». Comptabilisez en une seule écriture le versement de l'indemnité et la reprise de la provision.",
       "date": "20/04/N+1",
       "entries": [
         {
-          "account": "6788",
+          "account": "658",
           "label": "Indemnité transactionnelle de rupture",
           "debit": 75000,
           "credit": 0
@@ -117,14 +117,14 @@
           "credit": 75000
         },
         {
-          "account": "7875",
-          "label": "Reprise sur provision exceptionnelle",
+          "account": "7815",
+          "label": "Reprise sur provision d'exploitation",
           "debit": 0,
           "credit": 90000
         }
       ],
-      "explanation": "La provision devient sans objet lorsque le litige est éteint par la transaction : elle est reprise en totalité (90 000 €) au compte 7875, et la charge réelle (75 000 €) est constatée au compte 6788, conformément aux conventions de l'énoncé. L'effet net sur le résultat de N+1 est un produit de 15 000 € (90 000 − 75 000), qui traduit la surestimation du risque en N. Le classement des comptes 67, 77 et 687/787 a été remanié par le règlement ANC 2022-06 (exercices ouverts depuis le 1er janvier 2025) : c'est pourquoi l'énoncé impose les comptes ; le raisonnement (charge réelle, reprise intégrale de la provision) n'en dépend pas. Erreur classique : ne reprendre que 75 000 € ou passer seulement l'écart de 15 000 €, ce qui ne respecte pas le principe de non-compensation.",
-      "source_ref": "PCG art. 322-1 s. (provisions) ; comptes 1511, 6788 et 7875 imposés par l'énoncé ; C. com. L442-1 II",
+      "explanation": "La provision devient sans objet lorsque le litige est éteint par la transaction : elle est reprise en totalité (90 000 €) au compte 7815, et la charge réelle (75 000 €) est constatée au compte 658. L'effet net sur le résultat d'exploitation de N+1 est un produit de 15 000 € (90 000 − 75 000), qui traduit la surestimation du risque en N. Classement : depuis le règlement ANC 2022-06 (exercices ouverts depuis le 1er janvier 2025), seuls les produits et charges directement liés à un événement majeur et inhabituel relèvent du résultat exceptionnel (PCG art. 513-5) ; un litige avec un fournisseur, né de l'exploitation normale et courante, n'est pas inhabituel : dotation, reprise et indemnité restent en exploitation (et non en 6875, 7875 ou 678). Erreur classique : ne reprendre que 75 000 € ou passer seulement l'écart de 15 000 €, ce qui ne respecte pas le principe de non-compensation.",
+      "source_ref": "PCG art. 322-1 s. (provisions) et art. 513-5 (résultat exceptionnel) ; PCG comptes 1511, 658, 6815 et 7815 ; C. com. L442-1 II",
       "estimated_seconds": 240,
       "verified": true
     },
