@@ -152,19 +152,19 @@
           "kind": "open",
           "points": 4,
           "prompt": "Un accord est trouvé avec les deux banques. Conseillez le président sur la forme à donner à l'accord, au regard de ses deux objectifs (discrétion et obtention du nouveau prêt).",
-          "model_answer": "L'accord peut être simplement constaté par ordonnance du président du tribunal : il acquiert force exécutoire et reste confidentiel, ce qui répond à l'objectif de discrétion. Mais le constat ne confère aucune priorité au nouveau prêteur. Le privilège de conciliation (paiement par priorité en cas de procédure collective ultérieure, avant toutes les créances antérieures à la conciliation et avant la plupart des créances postérieures, sous réserve notamment du superprivilège des salaires et des frais de justice postérieurs) n'est accordé qu'aux apports nouveaux de trésorerie, biens ou services consentis dans le cadre d'un accord homologué par jugement du tribunal. L'homologation entraîne une publicité (dépôt au greffe, publication) et l'information du CSE. La banque exigeant une garantie de paiement prioritaire, il faut privilégier l'homologation, en acceptant une publicité limitée, le contenu détaillé de l'accord n'étant pas publié.",
+          "model_answer": "L'accord peut être simplement constaté par ordonnance du président du tribunal : il acquiert force exécutoire et reste confidentiel, ce qui répond à l'objectif de discrétion. Mais le constat ne confère aucune priorité au nouveau prêteur. Le privilège de conciliation (paiement par priorité en cas de procédure collective ultérieure, avant toutes les créances antérieures à la conciliation et avant la plupart des créances postérieures, sous réserve notamment du superprivilège des salaires et des frais de justice postérieurs) n'est accordé qu'aux apports nouveaux de trésorerie, biens ou services consentis dans le cadre d'un accord homologué par jugement du tribunal. L'homologation entraîne une publicité (dépôt du jugement au greffe, avis au BODACC et dans un support d'annonces légales) et l'audition des représentants désignés par le CSE. La banque exigeant une garantie de paiement prioritaire, il faut privilégier l'homologation, en acceptant une publicité limitée : le jugement ne reprend pas les termes de l'accord, seuls les garanties, privilèges et montants couverts par le privilège y figurant, et l'accord n'est consultable au greffe que par les personnes appelées à l'audience.",
           "key_points": [
             "Accord constaté : ordonnance, force exécutoire, confidentialité",
             "Privilège de conciliation (new money) réservé à l'accord homologué",
-            "Homologation : jugement, publicité, information du CSE",
+            "Homologation : jugement publié (sans les termes de l'accord), audition des représentants du CSE",
             "Recommandation : homologation, compte tenu de l'exigence de la banque"
           ],
-          "explanation": "C. com. art. L611-8 (constat et homologation), L611-10 et L611-11 (privilège de conciliation)."
+          "explanation": "C. com. art. L611-8 (constat et homologation), L611-9 (audience d'homologation), L611-10 et R611-40, R611-43 (publicité du jugement, qui ne reprend pas les termes de l'accord) et L611-11 (privilège de conciliation)."
         }
       ],
       "total_points": 10,
       "explanation": "Le cas enchaîne la détection (alerte du CAC, art. L234-2), l'articulation avec les procédures de prévention (art. L234-4) et le choix de la forme de l'accord de conciliation (art. L611-6, L611-8 et L611-11). Voir aussi la fiche UE4 sur la procédure d'alerte.",
-      "source_ref": "C. com. art. L234-2, L234-4, L611-6, L611-8 et L611-11",
+      "source_ref": "C. com. art. L234-2, L234-4, L611-6, L611-8, L611-10, L611-11 et R611-40",
       "verified": true,
       "estimated_seconds": 720
     },
