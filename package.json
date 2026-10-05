@@ -15,7 +15,9 @@
     "test:watch": "vitest",
     "test:e2e": "playwright test",
     "validate": "tsx scripts/validate-content.ts",
-    "validate:strict": "tsx scripts/validate-content.ts --require-verified"
+    "validate:strict": "tsx scripts/validate-content.ts --require-verified",
+    "sources": "node scripts/fetch-sources.mjs",
+    "check:refs": "tsx scripts/check-refs.ts"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.3.3",
