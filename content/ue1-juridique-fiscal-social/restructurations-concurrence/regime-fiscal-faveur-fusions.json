@@ -15,7 +15,7 @@
       "statement": "La SA Torvane, soumise à l'IS, envisage d'apporter à une société soumise à l'IS soit (projet 1) sa branche complète « emballages » avec tous les actifs et passifs qui s'y rattachent, soit (projet 2) un seul entrepôt isolé. Quelle affirmation est exacte au regard du régime de faveur ?",
       "options": [
         "Les deux projets bénéficient de plein droit du régime de faveur, sans engagement particulier",
-        "Le projet 1 bénéficie de plein droit du régime de faveur si Torvane s'engage notamment à conserver 3 ans les titres reçus ; le projet 2 ne peut en bénéficier que sur agrément",
+        "Le projet 1 bénéficie de plein droit du régime de faveur, la plus-value de cession ultérieure des titres reçus étant calculée d'après la valeur fiscale des biens apportés ; le projet 2 ne peut en bénéficier que sur agrément",
         "Aucun des deux projets ne peut bénéficier du régime de faveur, réservé aux fusions",
         "Le projet 2 bénéficie de plein droit du régime de faveur, le projet 1 nécessitant un agrément car il transfère des dettes"
       ],
@@ -23,8 +23,8 @@
         1
       ],
       "multiple": false,
-      "explanation": "L'apport d'une branche complète d'activité bénéficie de plein droit du régime de faveur, à condition que l'apporteuse s'engage à conserver les titres reçus pendant 3 ans et à calculer la plus-value de leur cession ultérieure d'après la valeur fiscale des biens apportés (CGI art. 210 B, 1) : option 2. L'apport d'un bien isolé ne constitue pas une branche complète et requiert un agrément (art. 210 B, 3). L'option 1 ignore ces conditions ; l'option 3 oublie que le régime s'étend aux scissions et aux apports partiels d'actif ; l'option 4 inverse les situations, la transmission des passifs liés à la branche étant au contraire inhérente à la branche complète.",
-      "source_ref": "CGI art. 210 A et 210 B (apports partiels d'actif : branche complète, engagement de conservation de 3 ans, agrément)",
+      "explanation": "L'apport d'une branche complète d'activité bénéficie de plein droit du régime de faveur ; la plus-value de cession ultérieure des titres reçus est alors calculée d'après la valeur que les biens apportés avaient, du point de vue fiscal, chez l'apporteuse (CGI art. 210 B, 1 et 2) : option 2. Aucun engagement de conservation des titres n'est exigé pour un tel apport depuis le 1er janvier 2018. L'apport d'un bien isolé ne constitue pas une branche complète et requiert un agrément (art. 210 B, 3), délivré notamment si l'opération est justifiée par un motif économique et si l'apporteuse s'engage à conserver les titres reçus pendant 3 ans. L'option 1 est fausse pour le projet 2 ; l'option 3 oublie que le régime s'étend aux scissions et aux apports partiels d'actif ; l'option 4 inverse les situations, la transmission des passifs liés à la branche étant au contraire inhérente à la branche complète.",
+      "source_ref": "CGI art. 210 A et 210 B, 1 et 2 (branche complète, régime de plein droit, calcul de la plus-value sur titres) et 3 (agrément, engagement de conservation de 3 ans), rédaction issue de la loi n° 2017-1775 (opérations réalisées depuis le 1er janvier 2018)",
       "verified": true,
       "estimated_seconds": 75
     },
@@ -68,11 +68,11 @@
         "agrément",
         "CGI 209 II"
       ],
-      "statement": "Lorsqu'une fusion est placée sous le régime de faveur de l'article 210 A du CGI, les déficits fiscaux reportables de la société absorbée sont transférés de plein droit à la société absorbante.",
+      "statement": "Lorsqu'une fusion est placée sous le régime de faveur de l'article 210 A du CGI, les déficits fiscaux reportables de la société absorbée sont transférés à la société absorbante sans agrément, quel que soit leur montant.",
       "answer": false,
-      "justification": "Le transfert des déficits de l'absorbée à l'absorbante est subordonné à un agrément de l'administration (CGI art. 209 II).",
-      "explanation": "Le régime de faveur neutralise l'imposition des plus-values d'apport mais ne transfère pas automatiquement les déficits. L'agrément est délivré si l'opération est justifiée économiquement et n'a pas un but principalement fiscal, si l'activité à l'origine des déficits est poursuivie par l'absorbante pendant une durée minimale et n'a pas fait l'objet de changements significatifs, notamment. À défaut d'agrément, les déficits de l'absorbée sont perdus.",
-      "source_ref": "CGI art. 209 II (transfert des déficits sur agrément) et art. 210 A",
+      "justification": "Le transfert des déficits de l'absorbée est subordonné à un agrément (CGI art. 209 II, 1) ; la dispense d'agrément ne vaut que si le montant transféré est inférieur à 200 000 € et que d'autres conditions sont remplies (art. 209 II, 2).",
+      "explanation": "Le régime de faveur neutralise l'imposition des plus-values d'apport mais ne transfère pas automatiquement les déficits. L'agrément est délivré si l'opération est justifiée économiquement et n'a pas un but principalement fiscal, si l'activité à l'origine des déficits n'a pas connu de changement significatif chez l'absorbée et est poursuivie par l'absorbante pendant au moins 3 ans, et si les déficits ne proviennent pas de la gestion d'un patrimoine mobilier ou immobilier. Le transfert est dispensé d'agrément lorsque le cumul des déficits, charges financières nettes non déduites et capacité de déduction inemployée transférés est inférieur à 200 000 €, que les déficits ne proviennent pas d'une gestion patrimoniale et que l'absorbée n'a pas cédé ou cessé l'exploitation d'un fonds de commerce ou d'un établissement pendant la période déficitaire. En dehors de ces cas, les déficits de l'absorbée sont perdus.",
+      "source_ref": "CGI art. 209 II, 1 (transfert des déficits sur agrément) et 2 (dispense d'agrément sous 200 000 €) ; art. 210 A",
       "verified": true,
       "estimated_seconds": 45
     },
@@ -116,7 +116,7 @@
         "apport isolé"
       ],
       "title": "Alizé absorbe Boréal",
-      "context": "La SA Alizé absorbe, au 1er juillet N, la SAS Boréal, avec laquelle elle n'a aucun lien de contrôle. Les deux sociétés sont soumises à l'IS. Les apports sont évalués à la valeur réelle et le traité place l'opération sous le régime de l'article 210 A du CGI.\nPlus-values d'apport dégagées sur les éléments de Boréal (valeur d'apport − valeur fiscale) :\n- terrain : 180 000 € ;\n- constructions : 300 000 € ;\n- matériel industriel : 50 000 € ;\n- fonds commercial : 220 000 €.\nBoréal dispose d'un déficit fiscal reportable de 90 000 €.\nAprès l'augmentation de capital rémunérant l'apport, le capital d'Alizé s'élève à 1 200 000 €.\nOn retient une réintégration en année pleine pour la première année et on suppose que les règles de la durée moyenne pondérée ne trouvent pas à s'appliquer.\nUn an plus tard, Alizé envisage d'apporter à une filiale son seul immeuble de bureaux, sans le personnel ni l'activité qui l'occupent.",
+      "context": "La SA Alizé absorbe, au 1er juillet N, la SAS Boréal, avec laquelle elle n'a aucun lien de contrôle. Les deux sociétés sont soumises à l'IS. Les apports sont évalués à la valeur réelle et le traité place l'opération sous le régime de l'article 210 A du CGI.\nPlus-values d'apport dégagées sur les éléments de Boréal (valeur d'apport − valeur fiscale) :\n- terrain : 180 000 € ;\n- constructions : 300 000 € ;\n- matériel industriel : 50 000 € ;\n- fonds commercial : 220 000 €.\nBoréal dispose d'un déficit fiscal reportable de 90 000 €, né de son activité industrielle exercée sans interruption ; Boréal n'a jamais cédé ni cessé l'exploitation d'un fonds de commerce ou d'un établissement, et ne gère aucun patrimoine mobilier ou immobilier ; elle n'a ni charges financières nettes non déduites ni capacité de déduction inemployée à transférer.\nAlizé n'amortit pas en comptabilité le fonds commercial reçu.\nAprès l'augmentation de capital rémunérant l'apport, le capital d'Alizé s'élève à 1 200 000 €.\nOn retient une réintégration en année pleine pour la première année et on suppose que les règles de la durée moyenne pondérée ne trouvent pas à s'appliquer.\nUn an plus tard, Alizé envisage d'apporter à une filiale son seul immeuble de bureaux, sans le personnel ni l'activité qui l'occupent.",
       "sub_questions": [
         {
           "id": "q1-reintegration",
@@ -130,7 +130,7 @@
           },
           "unit": "€",
           "decimals": 0,
-          "explanation": "Seules les plus-values sur biens amortissables sont réintégrées : constructions sur 15 ans (300 000 / 15 = 20 000 €) et matériel sur 5 ans (50 000 / 5 = 10 000 €), soit 30 000 € par an. Le terrain et le fonds commercial, non amortissables, sont en sursis d'imposition jusqu'à leur cession. Les constructions représentent 300 000 / 350 000 = 86 % de la plus-value nette sur biens amortissables, moins de 90 %, ce qui confirme l'étalement sur 15 ans."
+          "explanation": "Seules les plus-values sur biens amortissables sont réintégrées : constructions sur 15 ans (300 000 / 15 = 20 000 €) et matériel sur 5 ans (50 000 / 5 = 10 000 €), soit 30 000 € par an. Le terrain et le fonds commercial (non amorti, donc traité comme un bien non amortissable, CGI art. 210 A, 3-d dernier alinéa) sont en sursis d'imposition jusqu'à leur cession. Les constructions représentent 300 000 / 350 000 = 86 % de la plus-value nette sur biens amortissables, moins de 90 %, ce qui confirme l'étalement sur 15 ans."
         },
         {
           "id": "q2-droits",
@@ -152,16 +152,16 @@
           "points": 2,
           "prompt": "Quel est le sort du déficit reportable de 90 000 € de Boréal ?",
           "options": [
-            "Il est transféré de plein droit à Alizé, par l'effet de la transmission universelle du patrimoine",
-            "Il est imputé sur les plus-values d'apport de Boréal, qui sont imposées à hauteur de ce montant",
             "Il n'est transféré à Alizé que si celle-ci obtient un agrément ; à défaut, il est perdu",
+            "Il est imputé sur les plus-values d'apport de Boréal, qui sont imposées à hauteur de ce montant",
+            "Il est transféré à Alizé sans agrément, son montant étant inférieur à 200 000 € et les autres conditions de la dispense étant remplies",
             "Il est remboursé à Boréal par le Trésor public à la date de la fusion"
           ],
           "answer": [
             2
           ],
           "multiple": false,
-          "explanation": "Le transfert des déficits est subordonné à un agrément (CGI art. 209 II) : option 3. La transmission universelle de droit des sociétés ne suffit pas en droit fiscal (option 1). Sous le régime de faveur, les plus-values d'apport ne sont pas imposées chez Boréal, il n'y a donc pas d'imputation à opérer (option 2). Un déficit n'ouvre pas droit à remboursement (option 4), seul le report en arrière, sur option et dans des limites, crée une créance."
+          "explanation": "Le transfert des déficits de l'absorbée est en principe subordonné à un agrément (CGI art. 209 II, 1), mais il en est dispensé lorsque le montant cumulé des déficits, charges financières nettes non déduites et capacité de déduction inemployée transférés est inférieur à 200 000 €, que les déficits ne proviennent pas d'une gestion patrimoniale et que l'absorbée n'a pas cédé ou cessé l'exploitation d'un fonds de commerce ou d'un établissement pendant la période déficitaire (art. 209 II, 2) : c'est le cas ici (90 000 €), option 3. L'option 1 ignore cette dispense. Sous le régime de faveur, les plus-values d'apport ne sont pas imposées chez Boréal, il n'y a donc pas d'imputation à opérer (option 2). Un déficit n'ouvre pas droit à remboursement (option 4), seul le report en arrière, sur option et dans des limites, crée une créance."
         },
         {
           "id": "q4-apport-immeuble",
@@ -179,8 +179,8 @@
         }
       ],
       "total_points": 9,
-      "explanation": "Le cas couvre les effets du régime de faveur chez l'absorbante (réintégration étalée des plus-values sur biens amortissables, sursis pour les non amortissables), les droits d'enregistrement de la fusion (enregistrement gratuit entre sociétés à l'IS depuis 2019), le sort des déficits et les conditions du régime pour un apport partiel d'actif.",
-      "source_ref": "CGI art. 210 A, 210 B, 209 II et 816 (enregistrement gratuit depuis le 1er janvier 2019, LF 2019 art. 26)",
+      "explanation": "Le cas couvre les effets du régime de faveur chez l'absorbante (réintégration étalée des plus-values sur biens amortissables, sursis pour les non amortissables), les droits d'enregistrement de la fusion (enregistrement gratuit entre sociétés à l'IS depuis 2019), le sort des déficits (transfert dispensé d'agrément sous 200 000 €) et les conditions du régime pour un apport partiel d'actif.",
+      "source_ref": "CGI art. 210 A, 210 B, 209 II (1 : agrément ; 2 : dispense sous 200 000 €) et 816 (enregistrement gratuit depuis le 1er janvier 2019, LF 2019 art. 26)",
       "verified": true,
       "estimated_seconds": 840
     },

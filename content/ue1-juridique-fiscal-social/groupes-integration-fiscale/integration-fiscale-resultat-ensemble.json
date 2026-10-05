@@ -42,15 +42,15 @@
         "IS du groupe"
       ],
       "statement": "La SA Saule est la société mère d'un groupe intégré comprenant ses filiales Tilia et Ulmus, détenues à 100 %. Les résultats fiscaux de N, déterminés par chaque société comme si elle était imposée séparément, sont : Saule + 500 000 € ; Tilia + 300 000 € ; Ulmus − 200 000 €.\nOpérations intra-groupe de N :\n- le 31 décembre N, Tilia a cédé à Ulmus une machine en dégageant une plus-value de 80 000 €, comprise dans le résultat fiscal de Tilia ;\n- Saule a consenti à Ulmus un abandon de créance à caractère financier de 50 000 €, réintégré dans le résultat fiscal de Saule (non déductible) et compris dans le résultat fiscal d'Ulmus en produit imposable.\nHypothèses : taux d'IS de 25 % sur la totalité du résultat, ni taux réduit ni contribution sociale ; aucun déficit antérieur. Calculez l'IS dû par le groupe au titre de N. Réponse en euros.",
-      "expected_value": 117500,
+      "expected_value": 130000,
       "tolerance": {
         "kind": "absolute",
         "value": 1
       },
       "unit": "€",
       "decimals": 0,
-      "explanation": "Somme algébrique des résultats : 500 000 + 300 000 − 200 000 = 600 000 €.\nNeutralisations : plus-value de cession d'immobilisation entre sociétés du groupe : − 80 000 € (CGI art. 223 F) ; abandon de créance intra-groupe : la réintégration pratiquée par Saule est neutralisée, − 50 000 € (CGI art. 223 B), le produit restant imposé chez Ulmus.\nRésultat d'ensemble : 600 000 − 80 000 − 50 000 = 470 000 €. IS du groupe : 470 000 × 25 % = 117 500 €.\nErreurs classiques : aucune neutralisation (150 000 €), oubli de l'abandon de créance (130 000 €), oubli de la plus-value (137 500 €).",
-      "source_ref": "CGI art. 223 B (résultat d'ensemble, neutralisation des abandons de créances) et art. 223 F (plus-values de cession d'immobilisations entre sociétés du groupe)",
+      "explanation": "Somme algébrique des résultats : 500 000 + 300 000 − 200 000 = 600 000 €.\nNeutralisation de la plus-value de cession d'immobilisation entre sociétés du groupe : − 80 000 € (CGI art. 223 F).\nAbandon de créance intra-groupe : aucune rectification. La neutralisation des abandons de créances et subventions entre sociétés du groupe a été supprimée pour les exercices ouverts depuis le 1er janvier 2019 (LF 2019) : l'abandon reste non déductible chez Saule (caractère financier) et imposable chez Ulmus, selon le droit commun.\nRésultat d'ensemble : 600 000 − 80 000 = 520 000 €. IS du groupe : 520 000 × 25 % = 130 000 €.\nErreurs classiques : aucune neutralisation (150 000 €), neutralisation de l'abandon de créance selon l'ancien régime (117 500 €).",
+      "source_ref": "CGI art. 223 B (somme algébrique ; plus de neutralisation des abandons de créances et subventions intra-groupe pour les exercices ouverts depuis le 1er janvier 2019) et art. 223 F (plus-values de cession d'immobilisations entre sociétés du groupe) ; art. 39, 13 (abandon de créance à caractère financier)",
       "estimated_seconds": 240
     },
     {
@@ -205,7 +205,7 @@
           "answer": [
             1
           ],
-          "explanation": "Les déficits subis par une filiale pendant l'intégration ont été imputés sur le résultat d'ensemble : ils appartiennent au groupe et ne sont pas restitués à la filiale sortante (option 2). Aucun texte ne prévoit de partage (option 3) ni de réintégration du déficit lui-même (option 4) ; ce sont certaines neutralisations, comme celle de la plus-value de cession intra-groupe, qui sont réintégrées en cas de sortie (CGI art. 223 R). Faute de clause d'indemnisation, Quartz perd l'économie future correspondante."
+          "explanation": "Les déficits subis par une filiale pendant l'intégration ont été imputés sur le résultat d'ensemble : ils appartiennent au groupe et ne sont pas restitués à la filiale sortante (option 2). Aucun texte ne prévoit de partage (option 3) ni de réintégration du déficit lui-même (option 4) ; ce sont certaines neutralisations, comme celle de la plus-value de cession intra-groupe, qui sont réintégrées en cas de sortie de la société cédante ou cessionnaire (CGI art. 223 F, al. 2). Faute de clause d'indemnisation, Quartz perd l'économie future correspondante."
         },
         {
           "id": "q5-convention",
@@ -224,7 +224,7 @@
       ],
       "total_points": 11,
       "explanation": "Le cas illustre la détermination du résultat d'ensemble (somme algébrique et neutralisation des plus-values intra-groupe), la mesure de l'économie d'impôt et le rôle de la convention d'intégration, notamment lors de la sortie d'une filiale.",
-      "source_ref": "CGI art. 223 B, 223 F et 223 R",
+      "source_ref": "CGI art. 223 B, 223 F et 223 S",
       "estimated_seconds": 900
     },
     {

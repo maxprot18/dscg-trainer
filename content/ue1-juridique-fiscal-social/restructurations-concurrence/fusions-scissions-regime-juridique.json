@@ -52,7 +52,7 @@
       ],
       "multiple": false,
       "explanation": "Les créanciers non obligataires des sociétés participantes, dont la créance est antérieure à la publicité du projet de fusion, peuvent former opposition dans un délai de 30 jours. Cette opposition n'a pas d'effet suspensif : le tribunal la rejette ou ordonne le remboursement des créances ou la constitution de garanties (option 1). Aucun accord unanime des créanciers n'est requis (option 2). L'opposition ne suspend pas l'opération (option 3) ; la créance est de toute façon transmise à l'absorbante. Les créanciers ordinaires sont protégés, pas seulement les obligataires (option 4), qui disposent d'un régime propre (assemblée des obligataires de l'absorbée).",
-      "source_ref": "C. com. art. L. 236-1 et s., dispositions relatives à l'opposition des créanciers non obligataires (rédaction issue de l'ordonnance n° 2023-393)",
+      "source_ref": "C. com. art. L. 236-15 (opposition des créanciers non obligataires, sans effet suspensif, rédaction issue de l'ordonnance n° 2023-393) et R. 236-11 (délai de 30 jours à compter de la dernière publicité) ; art. L. 236-14 (obligataires de l'absorbée)",
       "verified": true,
       "estimated_seconds": 70
     },
@@ -136,19 +136,19 @@
           "kind": "open",
           "points": 3,
           "prompt": "Comparez l'alternative envisagée (apport partiel de la branche logistique sous le régime des scissions) à la fusion, pour Bérinne et pour ses associés.",
-          "model_answer": "Dans l'apport partiel d'actif, Bérinne n'est pas dissoute : elle continue d'exister avec ses autres activités. C'est elle, et non ses associés, qui reçoit les titres émis par la filiale de Calvane en rémunération de l'apport. Placé sous le régime des scissions, l'apport emporte transmission universelle de la branche (actifs, dettes, contrats et salariés qui s'y rattachent), sans cession élément par élément, avec la procédure de la scission (projet, rapports, approbation, information et opposition des créanciers). La société apporteuse et la bénéficiaire sont en principe solidaires des dettes transmises, sauf dérogation prévue au projet, auquel cas les créanciers peuvent former opposition. Dans la fusion, au contraire, Bérinne disparaît et ses associés deviennent actionnaires de Calvane.",
+          "model_answer": "Dans l'apport partiel d'actif, Bérinne n'est pas dissoute : elle continue d'exister avec ses autres activités. C'est elle, et non ses associés, qui reçoit les titres émis par la filiale de Calvane en rémunération de l'apport. Placé sous le régime des scissions, l'apport emporte transmission universelle de la branche (actifs, dettes, contrats et salariés qui s'y rattachent), sans cession élément par élément, avec la procédure de la scission (projet, rapports, approbation, information et opposition des créanciers). La société apporteuse et la bénéficiaire sont en principe débitrices solidaires des créanciers de Bérinne, la responsabilité de la bénéficiaire étant plafonnée à la valeur de l'actif net qui lui est attribué ; le projet peut écarter cette solidarité, auquel cas les créanciers peuvent former opposition. Dans la fusion, au contraire, Bérinne disparaît et ses associés deviennent actionnaires de Calvane.",
           "key_points": [
             "APA : pas de dissolution de Bérinne",
             "Les titres de la bénéficiaire sont remis à Bérinne, pas à ses associés",
             "Régime des scissions : transmission universelle de la branche (actifs, passifs, contrats de travail)",
-            "Solidarité entre apporteuse et bénéficiaire pour les dettes transmises, sauf dérogation et opposition des créanciers",
+            "Solidarité de l'apporteuse et de la bénéficiaire envers les créanciers de Bérinne (bénéficiaire plafonnée à l'actif net reçu), sauf dérogation ouvrant l'opposition des créanciers",
             "Fusion : disparition de Bérinne et associés devenant actionnaires de Calvane"
           ]
         }
       ],
       "total_points": 9,
       "explanation": "Le cas relie la parité d'échange (avec neutralisation des actions de l'absorbée détenues par l'absorbante), les règles d'approbation, la protection des créanciers et la distinction entre fusion et apport partiel d'actif sous le régime des scissions.",
-      "source_ref": "C. com. art. L. 236-1 et s. (fusion, scission, apport partiel d'actif, rédaction issue de l'ordonnance n° 2023-393) ; C. trav. art. L. 1224-1",
+      "source_ref": "C. com. art. L. 236-1 et s. (rédaction issue de l'ordonnance n° 2023-393), notamment L. 236-3 II (pas d'échange des actions de l'absorbée détenues par l'absorbante), L. 236-2 et L. 236-9 (approbation), L. 236-15 (opposition), L. 236-27, L. 236-29 et L. 236-30 (apport partiel d'actif soumis au régime des scissions) ; C. trav. art. L. 1224-1",
       "verified": true,
       "estimated_seconds": 780
     },
@@ -196,7 +196,7 @@
       ],
       "multiple": false,
       "explanation": "La fusion est en principe approuvée par l'assemblée extraordinaire de chaque société participante, aux conditions de majorité requises pour modifier ses statuts. Mais une opération qui augmente les engagements des associés ne peut être décidée qu'à l'unanimité de ces associés (C. civ. art. 1836, al. 2, règle reprise par le Code de commerce pour les fusions) : en devenant associés d'une SNC, les actionnaires de Corbières passent d'une responsabilité limitée à leurs apports à une responsabilité indéfinie et solidaire. L'option 4 est donc exacte.\nL'option 1 décrit la règle ordinaire, écartée ici parce que l'opération alourdit les engagements des associés. L'option 2 est fausse : les créanciers ne consentent pas à la fusion ; les créanciers non obligataires disposent seulement d'un droit d'opposition, sans effet suspensif. L'option 3 est fausse : le commissaire à la fusion se prononce sur le caractère équitable de la parité, il ne remplace pas la décision des associés.",
-      "source_ref": "C. com. art. L. 236-1 et s. (rédaction issue de l'ordonnance n° 2023-393 : approbation par chaque société participante dans les conditions requises pour la modification des statuts, unanimité des associés dont les engagements sont augmentés, opposition des créanciers) ; C. civ. art. 1836, al. 2 (unanimité pour augmenter les engagements d'un associé)",
+      "source_ref": "C. com. art. L. 236-2 (approbation par chaque société participante dans les conditions requises pour la modification des statuts) et L. 236-5 (unanimité des associés dont les engagements sont augmentés), rédaction issue de l'ordonnance n° 2023-393 ; L. 236-15 (opposition des créanciers) ; C. civ. art. 1836, al. 2 (unanimité pour augmenter les engagements d'un associé)",
       "verified": true,
       "estimated_seconds": 70
     }
