@@ -8,7 +8,7 @@
 - Publicité dans un support d'annonces légales puis au BODACC ; les créanciers du cédant peuvent former **opposition** au paiement du prix dans les **10 jours** de la publication au BODACC (L. 141-14).
 - Le prix est en pratique versé à un **séquestre** jusqu'à l'expiration de ce délai ; l'acquéreur qui paie le vendeur malgré une opposition n'est pas libéré à l'égard des opposants et peut payer deux fois.
 - Le vendeur impayé dispose d'un **privilège** inscrit au greffe et d'une **action résolutoire** de la vente (L. 141-5 et L. 141-6).
-- Droits d'enregistrement (art. 719, barème progressif par tranches) : 0 % jusqu'à 23 000 €, 3 % de 23 000 à 200 000 €, 5 % au-delà ; à la charge de l'acquéreur sauf clause contraire.
+- Droits d'enregistrement (art. 719, plus taxes additionnelles départementale et communale, art. 1595 et 1584 ; barème progressif par tranches) : 0 % jusqu'à 23 000 €, 3 % de 23 000 à 200 000 €, 5 % au-delà ; à la charge de l'acquéreur sauf clause contraire.
 
 **Cession de titres** : la société garde son patrimoine, ses contrats et ses dettes ; seul l'associé change, ce qui explique le besoin d'une garantie conventionnelle. Droits (art. 726) : **0,1 %** pour les actions (SA, SAS) ; **3 %** pour les parts sociales (SARL, SNC) après un abattement de 23 000 € × (nombre de parts cédées ÷ nombre total de parts) ; **5 %** pour les titres de sociétés à prépondérance immobilière, quelle que soit la forme.
 

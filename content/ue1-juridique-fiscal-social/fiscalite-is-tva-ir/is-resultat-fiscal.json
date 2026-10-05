@@ -167,10 +167,10 @@
           "kind": "open",
           "prompt": "Justifiez l'absence de retraitement de la provision pour congés payés, puis expliquez pourquoi Orvalis ne bénéficie pas du taux réduit de 15 %.",
           "points": 3,
-          "model_answer": "La provision pour congés payés correspond aux droits acquis par les salariés à la clôture : il s'agit d'une charge certaine dans son principe et évaluée de façon précise, rattachée à l'exercice au cours duquel les droits sont acquis. Elle est déductible au même titre qu'une charge à payer : aucune réintégration. Le taux réduit de 15 % est réservé aux entreprises dont le chiffre d'affaires HT est inférieur à 10 M€ et dont le capital, entièrement libéré, est détenu de manière continue à 75 % au moins par des personnes physiques (ou des sociétés remplissant ces conditions). Orvalis réalise 18 M€ de chiffre d'affaires et son capital est détenu par une société cotée et des fonds : aucune des deux conditions n'est remplie.",
+          "model_answer": "La provision pour congés payés correspond aux droits acquis par les salariés à la clôture : il s'agit d'une charge certaine dans son principe et évaluée de façon précise, rattachée à l'exercice au cours duquel les droits sont acquis. Elle est déductible au même titre qu'une charge à payer : aucune réintégration. Le taux réduit de 15 % est réservé aux entreprises dont le chiffre d'affaires HT n'excède pas 10 M€ et dont le capital, entièrement libéré, est détenu de manière continue à 75 % au moins par des personnes physiques (ou des sociétés remplissant ces conditions). Orvalis réalise 18 M€ de chiffre d'affaires et son capital est détenu par une société cotée et des fonds : aucune des deux conditions n'est remplie.",
           "key_points": [
             "Congés payés : charge rattachée à l'exercice d'acquisition des droits, déductible",
-            "Taux réduit : CA HT < 10 M€",
+            "Taux réduit : CA HT ≤ 10 M€",
             "Taux réduit : capital libéré détenu à 75 % au moins par des personnes physiques",
             "Orvalis ne remplit ni la condition de CA ni la condition de détention"
           ]
