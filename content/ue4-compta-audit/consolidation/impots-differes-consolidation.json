@@ -22,7 +22,7 @@
         2
       ],
       "explanation": "Option 3 : l'élimination de la marge interne ramène le stock consolidé sous sa base fiscale (le prix payé par la filiale) ; l'impôt déjà payé par la mère sur cette marge est « payé d'avance » : impôt différé actif. Option 1 : l'écart d'évaluation positif porte la valeur comptable au-dessus de la base fiscale, d'où un impôt différé passif. Option 2 : annuler les amortissements dérogatoires augmente les capitaux propres consolidés par rapport à la base fiscale : impôt différé passif. Option 4 : aucun impôt différé n'est constaté sur un écart d'acquisition non déductible.",
-      "source_ref": "Règl. ANC 2020-01, impôts différés ; IAS 12 §15 et §24 (règlement UE 2023/1803)",
+      "source_ref": "Règl. ANC 2020-01 art. 272-8 et 272-10 ; IAS 12 §15 et §24 (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 60
     },
@@ -68,7 +68,7 @@
       "answer": true,
       "justification": "Vrai : un actif d'impôt différé n'est constaté que si sa récupération est probable, ce qui suppose des bénéfices imposables futurs suffisants.",
       "explanation": "Le règlement ANC 2020-01, comme IAS 12 §34-36, subordonne la constatation d'un impôt différé actif sur déficits reportables à la probabilité de leur récupération. L'existence de pertes récentes est un indice défavorable ; l'actif peut n'être constaté que partiellement, dans la limite des bénéfices futurs probables. L'appréciation est revue à chaque clôture.",
-      "source_ref": "Règl. ANC 2020-01, impôts différés actifs ; IAS 12 §34-36 (règlement UE 2023/1803)",
+      "source_ref": "Règl. ANC 2020-01 art. 272-9 ; IAS 12 §34-36 (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 45
     },
@@ -213,18 +213,18 @@
           "kind": "open",
           "points": 3,
           "prompt": "Supposez qu'une loi adoptée avant la clôture ramène le taux à 22 % pour les exercices à partir de N+2. Expliquez comment le groupe doit en tenir compte, et s'il doit actualiser ces impôts différés.",
-          "model_answer": "Le groupe applique la méthode du report variable : chaque impôt différé est évalué au taux attendu à la date de reversement de la différence temporelle, selon les taux adoptés à la clôture. Les différences qui se reverseront à partir de N+2 sont évaluées à 22 %, celles qui se reverseront en N+1 restent à 25 % ; l'écart d'évaluation des impôts différés existants qui en résulte passe en résultat (sauf élément initialement enregistré en capitaux propres). Les impôts différés ne sont pas actualisés, quelle que soit l'échéance de reversement.",
+          "model_answer": "Le groupe applique la méthode du report variable : chaque impôt différé est évalué au taux attendu à la date de reversement de la différence temporelle, selon les taux adoptés à la clôture. Les différences qui se reverseront à partir de N+2 sont évaluées à 22 %, celles qui se reverseront en N+1 restent à 25 % ; l'écart d'évaluation des impôts différés existants qui en résulte passe en résultat, même lorsque l'impôt différé avait été constaté à l'origine en capitaux propres (règl. ANC 2020-01, art. 272-13). Les impôts différés ne sont pas actualisés, quelle que soit l'échéance de reversement.",
           "key_points": [
             "Report variable : taux de la période de reversement, adopté à la clôture",
             "Échéancier des reversements (N+1 à 25 %, à partir de N+2 à 22 %)",
-            "Ajustement en résultat",
+            "Ajustement en résultat, même si l'origine était en capitaux propres (art. 272-13)",
             "Pas d'actualisation"
           ]
         }
       ],
       "total_points": 9,
       "explanation": "Le cas recense les principales sources d'impôts différés propres à la consolidation : retraitement de la location-financement (obligatoire en règl. ANC 2020-01), déficits reportables (dans la limite de la récupération probable), élimination de résultats internes, et l'exception de l'écart d'acquisition.",
-      "source_ref": "Règl. ANC 2020-01, impôts différés et retraitement des contrats de location-financement ; IAS 12 §15, §34, §47 et §53 (règlement UE 2023/1803)",
+      "source_ref": "Règl. ANC 2020-01 art. 272-2, 272-9, 272-10, 272-12 et 272-13 ; IAS 12 §15, §34, §47 et §53 (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 720
     }

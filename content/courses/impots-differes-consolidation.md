@@ -1,6 +1,6 @@
 # Impôts différés en consolidation
 
-**Références :** règl. ANC 2020-01 (impôts différés) ; IAS 12 §15, §24, §34, §39, §47, §53, §58 et §74 (règl. UE 2023/1803)
+**Références :** règl. ANC 2020-01 art. 272-7 à 272-14 ; IAS 12 §15, §24, §34, §39, §47, §53, §58 et §74 (règl. UE 2023/1803)
 
 **Enjeu :** presque chaque écriture de consolidation (retraitement, écart d'évaluation, élimination) décale le moment où l'impôt sera payé ; l'examen attend l'impôt différé correspondant, son sens (actif ou passif) et sa contrepartie (résultat, réserves ou goodwill).
 
@@ -13,11 +13,11 @@
 - Déficits fiscaux reportables (actif).
 
 **Comptabilisation**
-- Impôt différé actif : seulement si sa récupération est probable (bénéfices imposables futurs suffisants, IAS 12 §24 et §34) ; un historique de pertes récentes est un indice contraire à documenter.
-- Méthode du report variable : taux applicable à la date de reversement, adopté (ou quasi adopté en IFRS) à la clôture ; un changement de taux réajuste le stock d'impôts différés (IAS 12 §47).
-- Pas d'actualisation (IAS 12 §53) ; l'ANC 2020-01 a supprimé l'actualisation que le CRC 99-02 prévoyait.
-- Contrepartie : résultat, sauf opération enregistrée en capitaux propres ; à l'acquisition, l'impôt différé sur écarts d'évaluation affecte l'écart d'acquisition. Exceptions : pas d'impôt différé sur un goodwill non déductible (IAS 12 §15), ni sur les différences liées à des filiales dont le reversement n'est pas prévisible (§39).
-- Compensation actif/passif si même entité fiscale et même administration (IAS 12 §74) ; au bilan, présentation en non courant.
+- Impôt différé actif : seulement si sa récupération est probable (bénéfices imposables futurs suffisants, IAS 12 §24 et §34 ; art. 272-9) ; en règles françaises, des pertes au cours des deux derniers exercices font présumer l'absence de bénéfice, sauf preuve contraire convaincante.
+- Méthode du report variable : taux applicable à la date de reversement, adopté (ou quasi adopté en IFRS) à la clôture ; un changement de taux réajuste le stock d'impôts différés (IAS 12 §47 ; art. 272-12), en résultat même si l'origine était en capitaux propres en règles françaises (art. 272-13), alors qu'IAS 12 §61A suit l'élément d'origine.
+- Pas d'actualisation, ni en IFRS (IAS 12 §53) ni en règles françaises (art. 272-12).
+- Contrepartie : résultat, sauf opération enregistrée en capitaux propres ; à l'acquisition, l'impôt différé sur écarts d'évaluation affecte l'écart d'acquisition. Exceptions : pas d'impôt différé sur un goodwill non déductible (IAS 12 §15 ; art. 272-10, qui exclut aussi les incorporels non amortis non cessibles séparément), ni sur les différences liées à des filiales dont le reversement n'est pas prévisible (§39 ; en règles françaises, seulement sur les distributions décidées ou probables, art. 272-11).
+- Compensation actif/passif si même entité fiscale et même administration (IAS 12 §74 ; présentation nette obligatoire par entité fiscale, art. 272-14) ; en IFRS, présentation en non courant (IFRS 18 §98).
 
 **Formules clés :** impôt différé = différence temporelle × taux ; actif comptable > base fiscale → passif d'impôt différé ; actif comptable < base fiscale → actif d'impôt différé (sens inverse pour un passif)
 

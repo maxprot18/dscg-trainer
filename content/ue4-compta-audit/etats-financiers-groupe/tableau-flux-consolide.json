@@ -39,7 +39,7 @@
         "méthode indirecte",
         "mise en équivalence"
       ],
-      "statement": "Le groupe Sorgue (IFRS) présente ses flux opérationnels selon la méthode indirecte, à partir du résultat net de l'ensemble consolidé ; il classe les dividendes reçus des sociétés mises en équivalence en flux opérationnels. En N, la quote-part de résultat des sociétés mises en équivalence s'élève à 120 k€ et ces sociétés ont versé au groupe 40 k€ de dividendes. Quel ajustement net ces éléments entraînent-ils sur les flux opérationnels, à partir du résultat net ?",
+      "statement": "Le groupe Sorgue établit ses comptes consolidés selon le règlement ANC 2020-01. Il présente les flux liés à l'activité selon la méthode indirecte et, pour cet exercice, part du résultat net de l'ensemble consolidé ; conformément au modèle du règlement, les dividendes reçus des sociétés mises en équivalence figurent dans les flux liés à l'activité. En N, la quote-part de résultat des sociétés mises en équivalence s'élève à 120 k€ et ces sociétés ont versé au groupe 40 k€ de dividendes. Quel ajustement net ces éléments entraînent-ils sur les flux liés à l'activité, à partir du résultat net de l'ensemble consolidé ?",
       "options": [
         "−120 k€",
         "+40 k€",
@@ -49,8 +49,8 @@
       "answer": [
         3
       ],
-      "explanation": "La quote-part de résultat des sociétés mises en équivalence est un produit calculé, sans encaissement : elle est retranchée du résultat (−120 k€). Les dividendes reçus de ces sociétés sont, eux, un flux réel entre le groupe et l'entreprise associée (IAS 7 §37-38) ; classés ici en flux opérationnels, ils sont ajoutés (+40 k€). Ajustement net : −80 k€ (option 4). L'option 1 oublie les dividendes encaissés, l'option 2 oublie d'éliminer la quote-part de résultat, et l'option 3 suppose à tort que la quote-part de résultat correspond à un flux de trésorerie.",
-      "source_ref": "IAS 7 §18(b), §20 et §37-38 ; IAS 28 §10 (règlement UE 2023/1803)",
+      "explanation": "La quote-part de résultat des sociétés mises en équivalence est un produit calculé, sans encaissement : elle est retranchée du résultat (−120 k€) ; le modèle du règlement part d'ailleurs directement du résultat net des seules sociétés intégrées (art. 282-43). Les dividendes reçus de ces sociétés sont, eux, un flux réel entre le groupe et l'entreprise associée ; le modèle les place dans les flux liés à l'activité, ils sont donc ajoutés (+40 k€). Ajustement net : −80 k€ (option 4). L'option 1 oublie les dividendes encaissés, l'option 2 oublie d'éliminer la quote-part de résultat, et l'option 3 suppose à tort que la quote-part de résultat correspond à un flux de trésorerie. En IFRS (IAS 7 modifiée par IFRS 18), le flux opérationnel part du résultat d'exploitation, qui exclut cette quote-part, et les dividendes reçus sont classés en investissement (§20 et §34A).",
+      "source_ref": "Règl. ANC 2020-01 art. 282-41 et 282-43 ; IAS 7 §20, §34A et §37-38 (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 75
     },
@@ -84,9 +84,9 @@
       "tags": [
         "tableau des flux",
         "méthode indirecte",
-        "consolidation"
+        "règlement ANC 2020-01"
       ],
-      "statement": "Le groupe Ardèche (IFRS) présente ses flux opérationnels selon la méthode indirecte. Il classe les dividendes reçus des sociétés mises en équivalence en flux opérationnels. Données consolidées de N (en milliers d'euros) :\n- résultat net de l'ensemble consolidé : 820, dont part du groupe 700 et participations ne donnant pas le contrôle 120 ;\n- dotations aux amortissements et provisions : 310 ;\n- quote-part de résultat des sociétés mises en équivalence : 90 ;\n- dividendes reçus des sociétés mises en équivalence : 30 ;\n- plus-value de cession d'immobilisations : 45 ;\n- charge d'impôt différé : 20 ;\n- augmentation du besoin en fonds de roulement d'exploitation (stocks + créances − dettes d'exploitation) : 110.\nCalculez les flux de trésorerie liés aux activités opérationnelles (en k€).",
+      "statement": "Le groupe Ardèche établit ses comptes consolidés selon le règlement ANC 2020-01 et présente son tableau des flux de trésorerie selon le modèle établi à partir du résultat net des sociétés intégrées (art. 282-43) : les dividendes reçus des sociétés mises en équivalence y figurent dans les flux liés à l'activité. Données consolidées de N (en milliers d'euros) :\n- résultat net de l'ensemble consolidé : 820, dont part du groupe 700 et intérêts minoritaires 120 ;\n- dotations aux amortissements et provisions : 310 ;\n- quote-part de résultat des sociétés mises en équivalence (comprise dans le résultat de l'ensemble consolidé) : 90 ;\n- dividendes reçus des sociétés mises en équivalence : 30 ;\n- plus-value de cession d'immobilisations (impôt ignoré) : 45 ;\n- charge d'impôt différé : 20 ;\n- augmentation du besoin en fonds de roulement lié à l'activité (stocks + créances − dettes d'exploitation) : 110.\nCalculez le flux net de trésorerie généré par l'activité (en k€).",
       "expected_value": 935,
       "tolerance": {
         "kind": "absolute",
@@ -94,8 +94,8 @@
       },
       "unit": "k€",
       "decimals": 0,
-      "explanation": "Flux opérationnels = 820 + 310 − 90 + 30 − 45 + 20 − 110 = 935 k€. On part du résultat de l'ensemble consolidé (y compris la part des minoritaires) ; on réintègre les charges sans décaissement (dotations, impôt différé), on retranche la quote-part de résultat mise en équivalence et la plus-value (le prix de cession figure en investissement), on ajoute les dividendes encaissés des sociétés mises en équivalence et on retranche l'augmentation du BFR. Partir du résultat part du groupe donnerait 815 k€ ; ajouter la plus-value au lieu de la retrancher, 1 025 k€.",
-      "source_ref": "IAS 7 §18(b), §20 et §37-38 (règlement UE 2023/1803)",
+      "explanation": "Résultat net des sociétés intégrées = 820 − 90 = 730 (part du groupe et minoritaires, la quote-part des sociétés mises en équivalence étant exclue). Marge brute d'autofinancement = 730 + 310 + 20 − 45 = 1 015 : on réintègre les charges sans décaissement (dotations, impôt différé) et on retranche la plus-value (le prix de cession figure en investissement). Flux généré par l'activité = 1 015 + 30 (dividendes des sociétés mises en équivalence) − 110 (augmentation du BFR) = 935 k€. Partir du résultat part du groupe donnerait 815 k€ ; ajouter la plus-value au lieu de la retrancher, 1 025 k€. En IFRS (IAS 7 modifiée par IFRS 18), le point de départ serait le résultat d'exploitation et les dividendes reçus seraient classés en investissement.",
+      "source_ref": "Règl. ANC 2020-01 art. 282-41 et 282-43 ; IAS 7 §20 et §34A (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 200
     },
@@ -114,7 +114,7 @@
         "participations ne donnant pas le contrôle"
       ],
       "title": "Groupe Noria : flux d'investissement et de financement consolidés",
-      "context": "Le groupe Noria établit ses comptes consolidés en IFRS (montants en milliers d'euros). Il classe les intérêts versés en flux opérationnels et les dividendes versés en flux de financement. Les flux opérationnels de N, déjà calculés, s'élèvent à 2 400. Autres informations sur N :\n- le 01/07/N, Noria a acquis 80 % de la société Talos pour 1 500, payés comptant, et s'est engagée à verser un complément de prix de 300 en N+2 ; la trésorerie de Talos à la date d'acquisition était de 200 ;\n- acquisitions d'immobilisations corporelles : 900, dont 250 correspondent à un droit d'utilisation reconnu au titre d'un nouveau contrat de location (aucun décaissement) ; le reste a été payé comptant ;\n- cession d'un matériel : prix encaissé 120 (plus-value de 35) ;\n- dividendes : Noria a versé 500 à ses actionnaires ; les filiales ont versé 80 à leurs actionnaires minoritaires et 160 à Noria ;\n- emprunts bancaires : nouvel emprunt de 1 000, remboursements de 400 ;\n- remboursement du principal des dettes locatives : 90 ;\n- rachat à un minoritaire de 10 % du capital de la filiale Ulm, déjà contrôlée : 220 ;\n- trésorerie nette d'ouverture : 1 100 ; incidence des variations de cours de change sur la trésorerie : −30.",
+      "context": "Le groupe Noria établit ses comptes consolidés en IFRS (montants en milliers d'euros). Il applique IAS 7 dans sa version modifiée par IFRS 18 : les dividendes versés sont classés en flux de financement (§33A). Les flux opérationnels de N, déjà calculés, s'élèvent à 2 400. Autres informations sur N :\n- le 01/07/N, Noria a acquis 80 % de la société Talos pour 1 500, payés comptant, et s'est engagée à verser un complément de prix de 300 en N+2 ; la trésorerie de Talos à la date d'acquisition était de 200 ;\n- acquisitions d'immobilisations corporelles : 900, dont 250 correspondent à un droit d'utilisation reconnu au titre d'un nouveau contrat de location (aucun décaissement) ; le reste a été payé comptant ;\n- cession d'un matériel : prix encaissé 120 (plus-value de 35) ;\n- dividendes : Noria a versé 500 à ses actionnaires ; les filiales ont versé 80 à leurs actionnaires minoritaires et 160 à Noria ;\n- emprunts bancaires : nouvel emprunt de 1 000, remboursements de 400 ;\n- remboursement du principal des dettes locatives : 90 ;\n- rachat à un minoritaire de 10 % du capital de la filiale Ulm, déjà contrôlée : 220 ;\n- trésorerie nette d'ouverture : 1 100 ; incidence des variations de cours de change sur la trésorerie : −30.",
       "sub_questions": [
         {
           "id": "flux-investissement",
@@ -174,7 +174,7 @@
       ],
       "total_points": 12,
       "explanation": "Le tableau consolidé ne retient que les flux de trésorerie avec les tiers extérieurs au groupe. La prise de contrôle est présentée nette de la trésorerie acquise ; les opérations non monétaires sont exclues ; les transactions avec les minoritaires sans changement de contrôle relèvent du financement.",
-      "source_ref": "IAS 7 §28, §39, §42, §42A et §43 (règlement UE 2023/1803)",
+      "source_ref": "IAS 7 §28, §33A, §39, §42, §42A et §43 (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 840
     }

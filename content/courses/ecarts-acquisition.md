@@ -1,6 +1,6 @@
 # Écarts d'acquisition (goodwill) : calcul, goodwill complet ou partiel, dépréciation
 
-**Références :** règl. ANC 2020-01 (écart d'acquisition) ; IFRS 3 §19, §32-36, §39 et §53 ; IAS 36 §80-90, §104 et §124 et annexe C (règl. UE 2023/1803)
+**Références :** règl. ANC 2020-01 art. 231-2, 231-9, 231-11, 231-12 et 232-1 ; IFRS 3 §19, §32-36, §39 et §53 ; IAS 36 §80-90, §104 et §124 et annexe C (règl. UE 2023/1803)
 
 **Enjeu :** le goodwill est le solde de la première consolidation, donc l'endroit où toute erreur d'évaluation se retrouve ; l'examen fait calculer son montant selon l'option retenue (partiel ou complet) puis le suivre (amortissement en règles françaises, test de dépréciation en IFRS).
 
@@ -14,10 +14,10 @@
 **Suivi ultérieur**
 - Règl. ANC 2020-01 : écart d'acquisition à durée d'utilisation limitée → amorti sur cette durée (sur 10 ans si elle ne peut pas être déterminée de façon fiable) ; durée non limitée → non amorti, test de dépréciation au moins une fois par exercice.
 - IFRS : jamais amorti ; affecté aux unités génératrices de trésorerie (UGT) qui bénéficient du regroupement et testé au moins une fois par an (IAS 36 §80 et §90). La perte de valeur de l'UGT s'impute d'abord sur le goodwill, puis sur les autres actifs au prorata (§104).
-- Une dépréciation de l'écart d'acquisition n'est jamais reprise (IAS 36 §124).
+- Une dépréciation de l'écart d'acquisition n'est jamais reprise (IAS 36 §124 ; art. 231-11 en règles françaises).
 - Goodwill complet : la perte de valeur est répartie entre groupe et minoritaires comme le résultat (IAS 36 §C6) ; en goodwill partiel, le test ajuste la valeur comptable de l'UGT d'un goodwill notionnel des minoritaires avant comparaison (§C4).
 
-**Écart négatif (IFRS 3 §34-36)** : après réexamen des évaluations, profit immédiat en résultat (« badwill ») ; en règles françaises, il est repris en résultat selon un plan lié aux pertes ou charges attendues.
+**Écart négatif (IFRS 3 §34-36)** : après réexamen des évaluations, profit immédiat en résultat (« badwill ») ; en règles françaises, il est inscrit au passif et repris en résultat sur une durée reflétant les hypothèses et conditions de l'acquisition, immédiatement si l'acquisition a été faite à des conditions avantageuses (art. 231-12).
 
 **Formules clés :** goodwill partiel = coût − % × ANI ; goodwill complet = coût + JV des PNC − ANI ; goodwill des minoritaires = JV des PNC − % minoritaires × ANI
 
@@ -38,7 +38,7 @@ Goodwill complet = 650 + 150 − 600 = **200 k€** ; PNC = 150 k€. La différ
 
 ## À retenir
 - Pas d'impôt différé sur un goodwill non déductible (IAS 12 §15).
-- Le goodwill d'une entité mise en équivalence est inclus dans la valeur des titres et n'est pas testé séparément.
+- En IFRS, le goodwill d'une entité mise en équivalence est inclus dans la valeur des titres et n'est pas testé séparément (IAS 28 §42).
 - Partiel ou complet : seul le montant du goodwill et des PNC change, pas l'actif net identifiable.
 
 **Notions liées :** [Écarts d'évaluation](/cours/ecarts-evaluation) · [IFRS 3 — Regroupements d'entreprises](/cours/ifrs-3-regroupements-entreprises) · [IAS 36 — Dépréciation d'actifs](/cours/ias-36-depreciation-actifs) · [Variations de périmètre](/cours/variations-perimetre)

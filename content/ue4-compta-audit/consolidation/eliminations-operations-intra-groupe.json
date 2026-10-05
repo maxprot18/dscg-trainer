@@ -171,7 +171,7 @@
         2
       ],
       "explanation": "Lorsque l'opération concerne une entité mise en équivalence, le résultat interne n'est éliminé qu'à hauteur de la quote-part du groupe dans cette entité : 30 % × 10 000 = 3 000 € avant impôt (règl. ANC 2020-01 ; IAS 28 §28 pour les transactions descendantes et ascendantes). L'élimination totale (10 000 €) concerne les opérations entre sociétés intégrées globalement ; l'absence d'élimination ignore que le profit n'est pas réalisé avec des tiers à hauteur de la part du groupe ; 7 000 € correspond à la part des autres associés, qui est, elle, réalisée avec des tiers.",
-      "source_ref": "Règl. ANC 2020-01 (élimination des résultats internes) ; IAS 28 §28 (règl. UE 2023/1803)",
+      "source_ref": "Règl. ANC 2020-01 art. 262-4 (élimination des résultats internes) ; IAS 28 §28 (règl. UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 75
     },
@@ -190,7 +190,7 @@
       "answer": true,
       "justification": "Créance et dette réciproques se compensent : l'élimination réduit l'actif et le passif du même montant, sans effet sur le résultat.",
       "explanation": "Les créances et dettes réciproques entre sociétés intégrées globalement sont éliminées en totalité pour présenter le groupe comme une entité unique (IFRS 10 §B86(c) ; règl. ANC 2020-01). Cette élimination diminue symétriquement l'actif et le passif consolidés : elle ne modifie ni le résultat ni les capitaux propres. Il en va autrement des résultats internes inclus dans des actifs (marges sur stocks, plus-values de cession).",
-      "source_ref": "Règl. ANC 2020-01 (élimination des opérations internes) ; IFRS 10 §B86(c) (règl. UE 2023/1803)",
+      "source_ref": "Règl. ANC 2020-01 art. 251-1 (élimination des opérations internes) ; IFRS 10 §B86(c) (règl. UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 45
     },
@@ -216,7 +216,7 @@
       "unit": "€",
       "decimals": 0,
       "explanation": "Plus-value interne : 150 000 − 90 000 = 60 000 €. Le groupe amortit le bien sur sa valeur d'origine pour le groupe (90 000 € sur 5 ans, soit 18 000 € par an) alors que Pin amortit 150 000 € (30 000 € par an) : la plus-value se réintègre de 12 000 € par an. Réintégré au 31/12/N : 6 000 € (six mois de N-1) + 12 000 € (N) = 18 000 €. Plus-value restant à éliminer : 42 000 €. Net d'impôt : 42 000 × 75 % = 31 500 €. Vente descendante réalisée par la mère : l'impact est supporté à 100 % par le groupe, d'où −31 500 €. Erreurs classiques : −42 000 (impôt oublié), −25 200 (application des 80 %), −40 500 (amortissement de N oublié), −45 000 (aucun amortissement réintégré).",
-      "source_ref": "Règl. ANC 2020-01 (élimination des résultats internes, impôts différés) ; IFRS 10 §B86(c) (règl. UE 2023/1803)",
+      "source_ref": "Règl. ANC 2020-01 art. 251-2 (élimination des résultats internes, impôts différés) ; IFRS 10 §B86(c) (règl. UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 300
     },
@@ -261,7 +261,7 @@
         }
       ],
       "explanation": "Le prêt de Mousse et l'emprunt d'Algue se compensent (500 000 €) : on débite la dette chez l'emprunteur et on crédite la créance chez le prêteur. Les intérêts (500 000 × 4 % = 20 000 €) figurent en charge chez Algue et en produit chez Mousse : leur élimination réduit simultanément produits et charges, sans effet sur le résultat consolidé.",
-      "source_ref": "Règl. ANC 2020-01 (élimination des opérations internes) ; IFRS 10 §B86(c) (règl. UE 2023/1803) ; PCG comptes 168, 274, 6611 et 7624",
+      "source_ref": "Règl. ANC 2020-01 art. 251-1 (élimination des opérations internes) ; IFRS 10 §B86(c) (règl. UE 2023/1803) ; PCG comptes 168, 274, 6611 et 7624",
       "verified": true,
       "estimated_seconds": 180
     },

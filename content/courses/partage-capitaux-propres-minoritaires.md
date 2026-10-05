@@ -1,6 +1,6 @@
 # Partage des capitaux propres et intérêts minoritaires
 
-**Références :** règl. ANC 2020-01 (élimination des titres, partage des capitaux propres, intérêts minoritaires) ; IFRS 10 §22 et §B94 ; IFRS 3 §19 ; IAS 1 §54 et §81B (règl. UE 2023/1803)
+**Références :** règl. ANC 2020-01 (élimination des titres, partage des capitaux propres, intérêts minoritaires) ; IFRS 10 §22 et §B94 ; IFRS 3 §19 ; IFRS 18 §76, §87 et §104 (règl. UE 2023/1803)
 
 **Enjeu :** c'est la dernière étape du tableau de consolidation d'une filiale intégrée globalement : elle fait apparaître les réserves et le résultat consolidés part du groupe, les intérêts minoritaires et l'écart d'acquisition ; l'examen y vérifie que le candidat distingue pourcentage de contrôle (choix de la méthode) et pourcentage d'intérêt (partage).
 
@@ -14,7 +14,7 @@
 - Chaîne de détention : les minoritaires d'une filiale intermédiaire supportent leur part de l'élimination des titres qu'elle détient dans la sous-filiale ; les intérêts minoritaires d'une sous-filiale regroupent minoritaires directs et indirects (100 % − % d'intérêt du groupe).
 - Dividendes versés par la filiale au groupe : éliminés des produits de la mère et reclassés en réserves consolidées ; la part versée aux minoritaires a déjà réduit leurs intérêts dans les comptes individuels.
 
-**Présentation IFRS** : les PNC figurent dans les capitaux propres, sur une ligne distincte de la part du groupe (IAS 1 §54) ; le résultat et le résultat global sont ventilés entre les deux (IAS 1 §81B). Le résultat est attribué aux PNC même si leur solde devient négatif (IFRS 10 §B94). En règles françaises, les intérêts minoritaires sont présentés hors des capitaux propres part du groupe, sur une ligne séparée du bilan.
+**Présentation IFRS** : les PNC figurent dans les capitaux propres, sur une ligne distincte de la part du groupe (IFRS 10 §22 ; IFRS 18 §104) ; le résultat et le résultat global sont ventilés entre les deux (IFRS 18 §76 et §87, qui reprennent l'ancien IAS 1 §81B). Le résultat est attribué aux PNC même si leur solde devient négatif (IFRS 10 §B94). En règles françaises, les intérêts minoritaires sont présentés hors des capitaux propres part du groupe, sur une ligne séparée du bilan (art. 281-1), et leurs pertes au-delà de leur mise sont imputées sur la part du groupe, sauf obligation de les combler (art. 252-1).
 
 **Formules clés :** réserves consolidées (filiale) = % d'intérêt × CP retraités hors résultat − coût des titres + écart d'acquisition (diminué des amortissements et dépréciations antérieurs) ; IM = % des minoritaires × CP retraités (résultat compris) ; % des minoritaires d'une sous-filiale = 100 % − % d'intérêt du groupe
 

@@ -166,7 +166,7 @@
         1
       ],
       "explanation": "Pour le pourcentage de contrôle, on retient en totalité les droits de vote détenus par les entités que la mère contrôle, sans multiplier les pourcentages. Kappa contrôle Lambda (80 %) ; les 30 % de droits de vote détenus par Lambda dans Mu sont donc retenus en totalité : contrôle = 30 %, d'où une influence notable présumée. 24 % (option 1) est le pourcentage d'intérêt (80 % × 30 %), qui ne sert pas à apprécier le contrôle. 80 % (option 3) est le contrôle de Lambda, pas de Mu. 110 % (option 4) additionne des pourcentages qui ne portent pas sur la même société.",
-      "source_ref": "Règl. ANC 2020-01 ; C. com. L233-16",
+      "source_ref": "Règl. ANC 2020-01 art. 211-6 ; C. com. L233-16",
       "verified": true,
       "estimated_seconds": 60
     },

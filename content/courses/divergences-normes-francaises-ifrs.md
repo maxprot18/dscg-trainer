@@ -1,11 +1,11 @@
 # Divergences entre règlement ANC 2020-01 et IFRS ; passage d'un référentiel à l'autre
 
-**Références :** règl. ANC 2020-01 ; IFRS 3 §19, §32, §53 et §B63 ; IAS 36 §90 ; IFRS 16 §22-26 ; IFRS 1 §6-11, §24 et annexe A (règl. UE 2023/1803)
+**Références :** règl. ANC 2020-01 art. 231-2, 231-11, 231-12, 232-1, 272-2 et 272-21 ; IFRS 3 §19, §32, §53 et §B63 ; IAS 36 §90 ; IFRS 16 §22-26 ; IFRS 1 §6-11, §24 et annexe A (règl. UE 2023/1803)
 
 **Enjeu :** un même groupe présente des capitaux propres et un résultat différents selon le référentiel ; à l'examen, on chiffre un retraitement ANC → IFRS (écart d'acquisition, frais d'acquisition, locations) ou l'on date le bilan d'ouverture d'une première application.
 
 **Principales divergences (comptes consolidés)**
-- **Écart d'acquisition** : ANC 2020-01 → amorti sur sa durée d'utilisation si elle est limitée, sinon non amorti avec test de dépréciation au moins annuel ; IFRS → jamais amorti, test de dépréciation annuel au niveau de l'unité génératrice de trésorerie (IAS 36 §90) et dépréciation jamais reprise.
+- **Écart d'acquisition** : ANC 2020-01 → amorti sur sa durée d'utilisation si elle est limitée, sinon non amorti avec test de dépréciation au moins annuel ; IFRS → jamais amorti, test de dépréciation annuel au niveau de l'unité génératrice de trésorerie (IAS 36 §90) et dépréciation jamais reprise ; écart négatif étalé en résultat en ANC (immédiatement si l'acquisition est avantageuse), profit immédiat en IFRS (IFRS 3 §34).
 - **Intérêts minoritaires** : ANC 2020-01 → évalués à leur quote-part de l'actif net identifiable (écart d'acquisition partiel) ; IFRS → option, regroupement par regroupement, pour leur juste valeur (goodwill complet, IFRS 3 §19), qui augmente d'autant écart d'acquisition et minoritaires.
 - **Frais d'acquisition des titres** : ANC 2020-01 → coûts directement attribuables inclus dans le coût d'acquisition (nets de l'économie d'impôt), donc dans l'écart d'acquisition ; IFRS → charges de la période (IFRS 3 §53).
 - **Contrats de location** : ANC 2020-01 → seuls les contrats de location-financement sont retraités (bien à l'actif, emprunt au passif), les locations simples restent en charges ; IFRS 16 → droit d'utilisation et dette locative pour tous les contrats du preneur (exemptions : courte durée, faible valeur), le loyer étant remplacé par un amortissement et une charge d'intérêts.

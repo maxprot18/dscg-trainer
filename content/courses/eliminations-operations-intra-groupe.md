@@ -1,6 +1,6 @@
 # Éliminations des opérations et résultats internes
 
-**Références :** règl. ANC 2020-01 (élimination des opérations internes) ; IFRS 10 §B86(c) ; IAS 28 §28 ; IAS 12 (règl. UE 2023/1803)
+**Références :** règl. ANC 2020-01 art. 251-1, 251-2, 261-3 à 261-5 et 262-4 ; IFRS 10 §B86(c) ; IAS 28 §28 ; IAS 12 (règl. UE 2023/1803)
 
 **Enjeu :** le groupe est une entité unique, donc il ne peut ni se vendre à lui-même ni se devoir à lui-même ; l'examen distingue les éliminations neutres (réciproques) de celles qui modifient le résultat et doivent être partagées avec les minoritaires et assorties d'un impôt différé.
 

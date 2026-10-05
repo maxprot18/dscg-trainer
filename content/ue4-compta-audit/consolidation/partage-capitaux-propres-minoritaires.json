@@ -122,21 +122,21 @@
           "id": "titres-mee-e",
           "stage": "elimination-titres",
           "kind": "numeric",
-          "prompt": "À quel montant les titres mis en équivalence d’Écume figurent-ils au bilan consolidé du 31/12/N (écart d’acquisition inclus, en euros) ?",
+          "prompt": "À quel montant les titres mis en équivalence d’Écume figurent-ils au bilan consolidé du 31/12/N (en euros) ?",
           "points": 2,
-          "expected_value": 122000,
+          "expected_value": 120000,
           "tolerance": {
             "kind": "absolute",
             "value": 1
           },
           "unit": "€",
           "decimals": 0,
-          "explanation": "Écart d'acquisition sur E = 110 000 − 30 % × 360 000 = 2 000 €. Titres mis en équivalence au 31/12/N = 30 % × 400 000 + 2 000 = 122 000 € (soit le coût de 110 000 € augmenté de la quote-part du résultat N, 30 % × 40 000 = 12 000 €). Les titres E sont substitués par ce montant, sans intégration des actifs et passifs."
+          "explanation": "En règles françaises, les titres mis en équivalence sont égaux à la quote-part des capitaux propres retraités de l'entité (art. 262-3) : 30 % × 400 000 = 120 000 €. L'écart d'acquisition sur E, 110 000 − 30 % × 360 000 = 2 000 €, est présenté comme les écarts d'acquisition des entités intégrées (art. 262-2), c'est-à-dire en immobilisations incorporelles et non dans les titres. Contrôle : coût 110 000 + quote-part du résultat N 12 000 = 122 000 € = titres 120 000 + écart d'acquisition 2 000. En IFRS, le goodwill serait inclus dans la valeur des titres (IAS 28 §32), soit 122 000 €."
         }
       ],
       "total_points": 12,
-      "explanation": "Démarche de première consolidation : évaluer à la juste valeur les actifs et passifs identifiables de la filiale (écart d'évaluation net d'impôt différé), calculer l'écart d'acquisition par différence entre le coût des titres et la quote-part de l'actif net réévalué, puis partager les capitaux propres retraités entre le groupe et les minoritaires selon le pourcentage d'intérêt. Pour l'entité sous influence notable, les titres sont remplacés par la quote-part des capitaux propres, augmentée de l'écart d'acquisition.",
-      "source_ref": "Règl. ANC 2020-01, écarts d’évaluation, écart d’acquisition, impôts différés, intérêts minoritaires et mise en équivalence ; IFRS 3 §18 et §32 (règlement UE 2023/1803) ; IAS 28 §32 (règlement UE 2023/1803)",
+      "explanation": "Démarche de première consolidation : évaluer à la juste valeur les actifs et passifs identifiables de la filiale (écart d'évaluation net d'impôt différé), calculer l'écart d'acquisition par différence entre le coût des titres et la quote-part de l'actif net réévalué, puis partager les capitaux propres retraités entre le groupe et les minoritaires selon le pourcentage d'intérêt. Pour l'entité sous influence notable, les titres sont remplacés par la quote-part des capitaux propres ; en règles françaises, l'écart d'acquisition correspondant est présenté séparément à l'actif.",
+      "source_ref": "Règl. ANC 2020-01, écarts d’évaluation, écart d’acquisition, impôts différés, intérêts minoritaires et mise en équivalence (art. 231-9, 232-1, 262-2 et 262-3) ; IFRS 3 §18 et §32 (règlement UE 2023/1803) ; IAS 28 §32 (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 900
     },

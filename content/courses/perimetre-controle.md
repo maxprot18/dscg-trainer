@@ -1,6 +1,6 @@
 # Périmètre de consolidation et nature du contrôle
 
-**Références :** C. com. L233-16 et L233-19 ; règl. ANC 2020-01 ; IFRS 10 §7, §B35-B38 et §B47 (règl. UE 2023/1803) ; IAS 28 §5-6
+**Références :** C. com. L233-16, L233-17-2 et L233-19 ; règl. ANC 2020-01 art. 211-3 à 211-5 et 212-1 ; IFRS 10 §7, §B35-B38 et §B47 (règl. UE 2023/1803) ; IAS 28 §5-6
 
 **Enjeu :** qualifier le lien entre la mère et chaque entité (contrôle exclusif, conjoint, influence notable) détermine l'entrée dans le périmètre et la méthode de consolidation ; l'examen multiplie les cas limites (40 %, droits de vote double, droits potentiels).
 
