@@ -76,7 +76,7 @@
       "answer": [
         0
       ],
-      "explanation": "La NEP 230 exige un dossier qui permette à un professionnel expérimenté, n'ayant pas participé à la mission, de comprendre la nature, le calendrier et l'étendue des procédures mises en œuvre, leurs résultats, les éléments collectés et les conclusions. « RAS » ne dit ni ce qui a été compté, ni les écarts constatés, ni comment ils ont été traités : la feuille doit être complétée. La confirmation orale du collaborateur ne remplace pas la documentation, qui est la preuve des diligences. Ajouter après la signature du rapport des travaux non réalisés serait une falsification du dossier ; seuls des compléments de forme, datés et identifiés, sont envisageables. Enfin, le dossier appartient au commissaire aux comptes : il n'est ni transmis à l'entité ni validé par elle.",
+      "explanation": "La NEP 230 exige un dossier qui permette à un professionnel expérimenté, n'ayant pas participé à la mission, de comprendre la nature, le calendrier et l'étendue des procédures mises en œuvre, leurs résultats, les éléments collectés et les conclusions. « RAS » ne dit ni ce qui a été compté, ni les écarts constatés, ni comment ils ont été traités : la feuille doit être complétée. La confirmation orale du collaborateur ne remplace pas la documentation, qui est la preuve des diligences. Ajouter après la signature du rapport des travaux non réalisés serait une falsification du dossier ; seules des modifications de forme ou de classement restent possibles, dans les soixante jours suivant la signature du rapport (NEP 230 §9). Enfin, le dossier appartient au commissaire aux comptes : il n'est ni transmis à l'entité ni validé par elle.",
       "source_ref": "NEP 230 (documentation de l'audit des comptes)",
       "verified": true,
       "estimated_seconds": 75
@@ -115,7 +115,7 @@
       ],
       "front": "Selon la NEP 230, que doit permettre le dossier de travail du commissaire aux comptes ?",
       "back": "Il doit permettre à un professionnel expérimenté, n'ayant pas participé à la mission, de comprendre :\n- la nature, le calendrier et l'étendue des procédures mises en œuvre ;\n- leurs résultats et les éléments collectés ;\n- les conclusions sur les points importants et les jugements professionnels exercés pour les atteindre.",
-      "explanation": "Le dossier est la preuve des diligences du commissaire aux comptes, notamment en cas de contrôle d'activité par la H2A ou de mise en cause de sa responsabilité. Il lui appartient, n'est pas remis à l'entité et doit être conservé six ans (Code de commerce, partie réglementaire).",
+      "explanation": "Le dossier est la preuve des diligences du commissaire aux comptes, notamment en cas de contrôle d'activité par la H2A ou de mise en cause de sa responsabilité. Il lui appartient, n'est pas remis à l'entité et doit être conservé six ans (C. com. art. R. 820-42).",
       "source_ref": "NEP 230 (documentation de l'audit des comptes)",
       "verified": true,
       "estimated_seconds": 30

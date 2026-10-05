@@ -39,7 +39,7 @@
         "textes légaux et réglementaires",
         "environnement"
       ],
-      "source_ref": "NEP 250 (prise en compte du risque d'anomalies significatives résultant du non-respect de textes légaux et réglementaires)",
+      "source_ref": "NEP 250 (prise en compte du risque d'anomalies significatives dans les comptes résultant du non-respect des textes légaux et réglementaires), §06-07",
       "verified": true,
       "estimated_seconds": 70,
       "explanation": "La NEP 250 distingue les textes ayant une incidence directe sur les montants et informations des comptes (fiscalité, droit social, droit comptable), pour lesquels le CAC collecte des éléments suffisants et appropriés de leur respect (option 4), et les autres textes, dont le non-respect peut avoir des conséquences financières (environnement, autorisations d'exploiter). Pour ces derniers, ses procédures se limitent à des demandes d'informations auprès de la direction et à la consultation des correspondances avec les autorités. Elles ne sont pas nulles (option 3) car un manquement peut nécessiter une provision ou affecter la continuité. Un audit de conformité complet (option 1) dépasse la mission de certification ; le CAC ne l'engagerait qu'en cas d'indices de non-conformité, pour en apprécier l'incidence sur les comptes.",
@@ -164,7 +164,7 @@
       "source_ref": "NEP 240 (responsabilités respectives de la direction et du commissaire aux comptes)",
       "verified": true,
       "estimated_seconds": 40,
-      "explanation": "La NEP 240 rappelle que la responsabilité première de la prévention et de la détection des fraudes repose sur la direction (mise en place du contrôle interne) et la gouvernance (surveillance). Le CAC fait preuve d'esprit critique, évalue les risques de fraude et y répond, mais l'assurance obtenue est raisonnable et non absolue : une fraude organisée et dissimulée (collusion, faux documents) peut ne pas être détectée malgré un audit correctement conduit.",
+      "explanation": "La NEP 240 rappelle que la direction est responsable du contrôle interne mis en place dans l'entité et de la préparation des comptes (§13), sous la surveillance des organes d'administration ou de surveillance (§15) : la prévention et la détection des fraudes reposent donc d'abord sur elles. Le CAC fait preuve d'esprit critique, évalue les risques de fraude et y répond, mais l'assurance obtenue est raisonnable et non absolue : une fraude organisée et dissimulée (collusion, faux documents) peut ne pas être détectée malgré un audit correctement conduit.",
       "statement": "La prévention et la détection des fraudes incombent au premier chef au commissaire aux comptes.",
       "answer": false,
       "justification": "Elles incombent d'abord à la direction et aux personnes constituant le gouvernement d'entreprise ; le CAC prend en compte le risque de fraude pour obtenir une assurance raisonnable que les comptes ne comportent pas d'anomalies significatives."
