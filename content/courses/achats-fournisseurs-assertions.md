@@ -8,7 +8,7 @@ Le CAC décline les risques du cycle par assertion pour choisir des procédures 
 
 - **Flux d’achats et de charges (opérations de l’exercice)** : réalité (les achats correspondent à des biens reçus ou des services rendus à l’entité, pas à des factures fictives), exhaustivité (tous les achats de l’exercice sont enregistrés), mesure (montants exacts, remises déduites, TVA correcte), séparation des exercices (rattachement à la période de la réception ou du service rendu, non à la date de facture ou de paiement), classification (bon compte : charge ou immobilisation, nature de charge).
 - **Soldes des dettes fournisseurs à la clôture** : existence, droits et obligations (la dette est bien une obligation de l’entité), exhaustivité (y compris factures non parvenues en 408), évaluation et imputation (conversion des dettes en devises au cours de clôture, avoirs à recevoir en 4098).
-- **Présentation** : soldes débiteurs reclassés à l’actif (4091, créances sur fournisseurs), dettes d’immobilisations (404) distinctes des dettes d’exploitation, informations sur les délais de paiement dans le rapport de gestion.
+- **Présentation** : soldes débiteurs reclassés à l’actif (4091, créances sur fournisseurs), dettes d’immobilisations (404) distinctes des dettes d’exploitation. Les informations sur les délais de paiement du rapport de gestion (C. com. art. L. 441-14 et D. 441-6) ne relèvent pas de ces assertions : elles font l’objet d’une attestation du CAC.
 
 **Sens des tests :**
 - Exhaustivité : partir de sources indépendantes de la comptabilité (bons de réception, factures et décaissements postérieurs à la clôture, relevés des fournisseurs) et remonter vers les comptes.

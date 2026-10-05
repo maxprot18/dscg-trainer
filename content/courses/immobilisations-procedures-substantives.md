@@ -1,11 +1,11 @@
 # Immobilisations — procédures substantives
 
-**Références :** NEP 330 (procédures substantives) ; NEP 500 (éléments probants) ; NEP 520 (procédures analytiques) ; NEP 540 (estimations comptables) ; PCG comptes 20 à 29, 6811, 6816, 675, 775
+**Références :** NEP 330 (procédures substantives) ; NEP 500 (éléments probants) ; NEP 520 (procédures analytiques) ; NEP 540 (estimations comptables) ; PCG comptes 20 à 29, 6811, 6816, 657, 757
 
 **Enjeu :** le tableau de variation est le fil conducteur du cycle : il relie soldes d'ouverture, acquisitions, sorties et dotations, et chaque ligne appelle une procédure distincte ; l'examen demande très souvent un recalcul de dotation, de VNC ou de résultat de cession.
 
 - **Tableau de variation** : brut d'ouverture + acquisitions − sorties = brut de clôture, idem pour les amortissements ; rapprochement du fichier avec la balance et des soldes d'ouverture avec les comptes N−1 ; toute différence est expliquée.
-- **Acquisitions (mesure, réalité)** : rapprochement des factures, contrats, procès-verbaux de réception ; vérification des composantes du coût (frais directement attribuables inclus ; TVA récupérable, formation et publicité exclues) ; inspection physique des biens significatifs.
+- **Acquisitions (mesure, réalité)** : rapprochement des factures, contrats, procès-verbaux de réception ; vérification des composantes du coût (frais directement attribuables inclus ; TVA récupérable et publicité exclues ; frais externes de formation selon l'option retenue, art. 213-8) ; inspection physique des biens significatifs.
 - **Propriété** : actes notariés, cartes grises, contrats ; repérage des biens en crédit-bail (hors bilan, engagements en annexe).
 - **Sorties** : examen des cessions et rebuts, rapprochement avec les factures de vente et les encaissements ; recalcul du résultat de cession = prix de cession − VNC, la VNC intégrant la dotation de l'exercice jusqu'à la date de sortie.
 - **Amortissements** : recalcul par sondage (base amortissable = coût − valeur résiduelle si elle est significative et mesurable ; point de départ : date de mise en service ; prorata temporis) et revue analytique du taux moyen.
@@ -17,7 +17,7 @@
 ## Exemple
 Rigel a acquis un utilitaire le 01/03/N−2 pour 45 000 € HT, amorti en linéaire sur 5 ans, et l'a cédé le 31/08/N pour 22 000 € HT. L'auditeur recalcule :
 Durée d'utilisation : 30 mois ; amortissements cumulés = 45 000 × 30 / 60 = **22 500 €**, dont dotation N = 45 000 / 5 × 8 / 12 = 6 000 € ; VNC = 45 000 − 22 500 = 22 500 € ; résultat de cession = 22 000 − 22 500 = **−500 €** (moins-value).
-Écritures : débit 6811 / crédit 28182 pour 6 000 € ; débit 28182 pour 22 500 € et 675 pour 22 500 €, crédit 2182 pour 45 000 € ; débit 462 pour 26 400 €, crédit 775 pour 22 000 € et 44571 pour 4 400 €. Si la société a omis la dotation N, la VNC ressort à 28 500 € et la moins-value à 6 500 € : la dotation et le résultat de cession sont faux.
+Écritures : débit 6811 / crédit 28182 pour 6 000 € ; débit 28182 pour 22 500 € et 657 pour 22 500 €, crédit 2182 pour 45 000 € ; débit 462 pour 26 400 €, crédit 757 pour 22 000 € et 44571 pour 4 400 €. Si la société a omis la dotation N, la VNC ressort à 28 500 € et la moins-value à 6 500 € : la dotation et le résultat de cession sont faux.
 
 ## Erreurs fréquentes
 - Faire démarrer l'amortissement à la commande, à la livraison ou à la facture : il court à partir de la mise en service ; une immobilisation en cours ne s'amortit pas.

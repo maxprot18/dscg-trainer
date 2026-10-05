@@ -1,13 +1,13 @@
 # Stocks — procédures substantives
 
-**Références :** NEP 501 (applications spécifiques : inventaire physique, stocks détenus par des tiers) ; NEP 505 (confirmations externes) ; NEP 520 (procédures analytiques) ; NEP 530 (sondages) ; NEP 450 (évaluation des anomalies) ; PCG comptes 31 à 37, 39, 6031, 6037, 713, 6817, 7817
+**Références :** NEP 501 (applications spécifiques : inventaire physique, § 03-06) ; NEP 330 (§ 26 : procédures à une date intermédiaire) ; NEP 505 (confirmations externes) ; NEP 520 (procédures analytiques) ; NEP 530 (sondages) ; NEP 450 (évaluation des anomalies) ; PCG comptes 31 à 37, 39, 6031, 6037, 713, 6817, 7817
 
 **Enjeu :** le stock de clôture pèse directement sur le résultat ; l'assistance à l'inventaire est la seule procédure qui donne au CAC un élément probant direct sur l'existence et l'état des stocks, et l'extrapolation des écarts relevés décide si l'anomalie est significative. L'examen attend la démarche NEP 501 (avant, pendant, après l'inventaire) et le calcul de l'anomalie projetée.
 
 - **Assistance à l'inventaire physique (NEP 501)** : obligatoire lorsque les stocks sont significatifs, sauf impossibilité. Le CAC apprécie les instructions et leur application, observe les comptages, réalise des comptages par sondage dans les deux sens (du listing vers le rayon : existence ; du rayon vers le listing : exhaustivité), relève les derniers documents d'entrée et de sortie pour le test de séparation, repère les articles abîmés ou obsolètes.
-- **Impossibilité d'assister** (nomination tardive, site inaccessible) : procédures alternatives, par exemple comptages à une autre date et contrôle des mouvements intermédiaires ; à défaut d'éléments suffisants, incidence sur l'opinion (réserve ou impossibilité de certifier selon le caractère généralisé).
-- **Inventaire avant la clôture** : possible si le contrôle interne des mouvements est fiable ; le CAC teste les entrées et sorties entre la date d'inventaire et la clôture (stock clôture = stock inventorié + entrées − sorties).
-- **Stocks détenus par des tiers** : confirmation directe auprès du dépositaire et, si le montant est significatif ou la fiabilité du tiers douteuse, inspection ou assistance à l'inventaire chez le tiers ; une déclaration de la direction ne suffit pas.
+- **Absence ou impossibilité d'assister** (nomination tardive, site inaccessible) : comptages à une autre date et contrôle des mouvements intercalaires (§ 05), ou procédures alternatives de caractère probant équivalent (§ 06) ; à défaut d'éléments suffisants, incidence sur l'opinion (réserve ou impossibilité de certifier selon le caractère généralisé).
+- **Inventaire avant la clôture** : possible si le contrôle interne des mouvements est fiable ; le CAC couvre la période jusqu'à la clôture (NEP 330 § 26) et teste les entrées et sorties entre la date d'inventaire et la clôture (stock clôture = stock inventorié + entrées − sorties).
+- **Stocks détenus par des tiers** : confirmation directe auprès du dépositaire (NEP 505) et, si le montant est significatif ou la fiabilité du tiers douteuse, inspection ou assistance à l'inventaire chez le tiers ; une déclaration de la direction ne suffit pas.
 - **Suivi de l'inventaire** : rapprocher les feuilles de comptage du listing final valorisé, vérifier la prise en compte des écarts de comptage et l'absence d'ajouts après l'inventaire.
 - **Évaluation** : recalcul du CMP ou du PEPS sur factures, revue des fiches de coût de production (frais fixes imputés sur la capacité normale), comparaison du coût avec les prix de vente postérieurs à la clôture, analyse de l'état de rotation et des dépréciations (397, 391, 395).
 - **Procédures analytiques (NEP 520)** : durée de stockage, marge brute par famille, comparaison avec N−1 ; un allongement de la rotation oriente vers la dépréciation.
@@ -24,7 +24,7 @@ Anomalie projetée = 4 000 × 3 000 000 / 250 000 = **48 000 €** ; anomalie to
 
 ## Erreurs fréquentes
 - Extrapoler le taux d'erreur de l'échantillon à la totalité du stock, éléments clés compris : les références testées à 100 % s'ajoutent telles quelles, sinon elles sont comptées deux fois.
-- Se contenter d'une déclaration écrite de la direction pour des stocks chez un tiers ou en cas d'inventaire non observé : c'est un élément interne ; la NEP 501 exige confirmation du tiers, inspection ou procédures alternatives.
+- Se contenter d'une déclaration écrite de la direction pour des stocks chez un tiers ou en cas d'inventaire non observé : c'est un élément interne ; il faut une confirmation du tiers (NEP 505) ou une inspection, et, si l'inventaire n'a pu être observé, des procédures alternatives (NEP 501 § 06).
 - Croire qu'un CAC nommé après l'inventaire doit refuser de certifier : il tente d'abord des procédures alternatives ; seule leur insuffisance pèse sur l'opinion.
 - Recalculer le CMP pour prouver l'existence : le recalcul vise l'évaluation ; l'existence se prouve par le comptage.
 

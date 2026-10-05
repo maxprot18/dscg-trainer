@@ -5,7 +5,7 @@
 **Enjeu :** le cycle immobilisations offre à la direction un levier commode sur le résultat (activer ou non une dépense, allonger une durée, différer une dépréciation) ; l'auditeur doit lire les incitations avant de choisir le sens de ses tests. L'examen demande de déduire le risque dominant d'un contexte donné.
 
 Les risques d'anomalies significatives dépendent souvent des incitations de la direction :
-- **Activation de charges** (entretien, frais de formation, coûts administratifs) pour améliorer le résultat : risque fort en cas de covenants bancaires, de bonus fondés sur le résultat ou de recherche de financement. Assertions touchées : réalité, classification.
+- **Activation de charges** (entretien, formation interne ou frais externes de formation contraires à l'option retenue, coûts administratifs) pour améliorer le résultat : risque fort en cas de covenants bancaires, de bonus fondés sur le résultat ou de recherche de financement. Assertions touchées : réalité, classification.
 - **Passage en charges de dépenses immobilisables** pour minorer le résultat fiscal (PME bénéficiaire) : assertion exhaustivité des immobilisations ; l'auditeur revoit alors les comptes 615, 6063 et de sous-traitance.
 - **Production immobilisée** (compte 72) surévaluée : incorporation de coûts indirects non attribuables ou de frais administratifs ; une hausse brutale du compte 72 est un signal.
 - **Frais de développement** activés sans que les six conditions (faisabilité, intention, capacité, avantages futurs, ressources, mesure fiable des coûts) soient remplies.

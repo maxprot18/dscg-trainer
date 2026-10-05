@@ -4,7 +4,7 @@
 
 **Enjeu :** les anomalies du cycle tiennent moins à des erreurs de calcul qu'à des règles mal appliquées (frais incorporés à tort, terrain amorti, composant passé en entretien, dépréciation calculée sur la seule valeur vénale) ; ce sont les distracteurs favoris des QCM et des cas d'audit.
 
-- **Frais exclus du coût** : formation du personnel, publicité et lancement, frais administratifs généraux, pertes opérationnelles initiales sont des charges ; à l'inverse, transport, installation, montage et essais de bon fonctionnement s'incorporent au coût.
+- **Frais exclus du coût** : publicité et lancement, frais administratifs généraux, pertes opérationnelles initiales, formation assurée en interne sont des charges ; les frais externes de formation nécessaires à la mise en service relèvent d'une option (coût ou charges, art. 213-8) ; à l'inverse, transport, installation, montage et essais de bon fonctionnement s'incorporent au coût.
 - **Terrain amorti** : un terrain ne s'amortit pas (durée d'utilisation non limitée, hors terrains de gisement) ; le prix d'un immeuble doit être ventilé entre terrain et construction, seule la construction étant amortie.
 - **Date de départ** : l'amortissement commence à la mise en service, pas à la commande ni à la facture ni à la livraison ; une immobilisation en cours (23) ne s'amortit pas.
 - **Remplacement d'un composant** (toiture, moteur, révision majeure) : le nouveau composant s'immobilise et l'ancien sort de l'actif (sortie de sa VNC) ; le passer en entretien sous-évalue l'actif et le résultat.
@@ -23,7 +23,7 @@ Castor a acquis une machine 300 000 € le 01/01/N−3, amortie en linéaire sur
 VNC au 31/12/N = 300 000 − 4 × 37 500 = 150 000 €. Valeur vénale nette = 105 000 €. Valeur d'usage = 32 000 × (1 − 1,08⁻⁴) / 0,08 ≈ 105 988 €. Valeur actuelle = 105 988 € → dépréciation = 150 000 − 105 988 ≈ **44 012 €** (débit 6816, crédit 2915). Retenir la seule valeur vénale nette aurait donné 45 000 €. Nouvelle annuité à partir de N+1 : 105 988 / 4 ≈ 26 497 €.
 
 ## Erreurs fréquentes
-- Incorporer au coût d'entrée la formation des opérateurs, la campagne de lancement ou les pertes de montée en cadence : ce sont des charges ; seuls les coûts directement attribuables (installation, essais) entrent au coût.
+- Incorporer au coût d'entrée la campagne de lancement, les pertes de montée en cadence ou une formation assurée en interne : ce sont des charges ; seuls les coûts directement attribuables (installation, essais) entrent au coût, et les frais externes de formation sur option seulement.
 - Juger anormal qu'un bien en crédit-bail soit absent de l'actif des comptes sociaux : c'est le traitement correct ; l'anomalie serait l'absence d'information en annexe.
 - Négliger la sortie d'un bien totalement amorti « puisque la VNC est nulle » : le bilan et le tableau des immobilisations restent faux.
 - Déprécier sur la base de la seule valeur vénale sans examiner la valeur d'usage, ou oublier de réviser le plan d'amortissement après dépréciation.
