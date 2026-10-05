@@ -1,6 +1,6 @@
 # PROGRESS — DSCG Trainer
 
-Dernière mise à jour : 2026-10-05, version 1.4.1 : contenu vérifié sur les textes officiels. Avant : version 1.4.0 : phase 8 (exercices complémentaires) et améliorations issues de l'audit `docs/audit-v2.md` (sujets type d'examen, oral d'UE 6, plan d'examen, protection de la progression, tests de bout en bout).
+Dernière mise à jour : 2026-10-05, version 1.4.2 : deuxième série de vérifications sur les textes officiels (reste de l'UE 1, audit, SI, UE 2). Version 1.4.1 : contenu vérifié sur les textes officiels. Avant : version 1.4.0 : phase 8 (exercices complémentaires) et améliorations issues de l'audit `docs/audit-v2.md` (sujets type d'examen, oral d'UE 6, plan d'examen, protection de la progression, tests de bout en bout).
 
 ## État par phase
 
@@ -17,7 +17,7 @@ Dernière mise à jour : 2026-10-05, version 1.4.1 : contenu vérifié sur les t
 | 6 bis. Lisibilité des fiches | Terminée : version 1.3.0 (voir ci-dessous) |
 | 8. Exercices complémentaires | Terminée : version 1.4.0 (voir ci-dessous) |
 | Améliorations (audit v2) | Terminées : version 1.4.0 (voir ci-dessous) |
-| Vérification sur les textes officiels | Terminée : version 1.4.1 (voir ci-dessous) |
+| Vérification sur les textes officiels | Terminée : versions 1.4.1 et 1.4.2 (voir ci-dessous) |
 
 ## Phase 0 : ce qui est fait
 
@@ -161,6 +161,13 @@ Demande de l'utilisateur : accéder aux plateformes officielles pour vérifier l
 - **8 lots correcteur → relecteur indépendant**, un commit par lot : V1 corrections certaines (comptes 152x, 58, 5181, L. 821-10, L. 225-102-1, R. 123-199-1, NEP 700), V2 NEP 600 / 9510 révisées, V3 profession (H2A, délais L. 821-32/33, interdiction temporaire 3 ans, Conseil national de l'Ordre), V4 consolidation (obligation limitée au contrôle exclusif ou conjoint, ANC 2020-01, IAS 7 modifiée), V5 fusions et intégration fiscale (210 B sans conservation pour une branche complète, 209 II dispense ≤ 200 000 €, fin de la neutralisation des abandons de créances), V6 mère-fille / IS / plus-values (pas de condition de classement, seuil ≤ 10 M€, carry-back), V7 PCG 2026 (méthodes de référence de l'art. 121-5, frais de formation sur option, changements de méthode 122-1/122-2, stocks 214-22), V8 IFRS 18 (fiche réécrite, IAS 7 §33A-34A). Une cinquantaine d'exercices au fond corrigé, tous revérifiés ; plusieurs dizaines de fiches.
 - **Code** : autocomplétion PCG alignée sur la nomenclature 2026 (`src/content/pcg.ts`).
 
+## Vérification sur les textes officiels, 2e série : ce qui est fait (version 1.4.2)
+
+- **Sources ajoutées** (`npm run sources`) : texte de chaque NEP depuis les pages de la H2A (`.sources/nep/NEP-<n>.txt`), BOFiP TVA / ENR-DMTG / BIC-BASE-80 / IS-BASE / INT, textes de l'Union dans `.sources/ue/` (537/2014, NIS 2, DORA, CSRD, AI Act, Data Act, Omnibus I).
+- **12 lots correcteur → relecteur indépendant**, un commit par lot : W1 droit des sociétés et pénal des affaires, W2 entreprises en difficulté, W3 droit social et rémunération des dirigeants, W4 TVA / prix de transfert / intérêts / Dutreil, W5 contrats et concurrence, W6 sûretés / financement / RGPD, W7a démarche d'audit, W7b rapport et opinion, W8a et W8b les dix cycles d'audit, W9 audit de durabilité et réglementation des SI, W10 UE 2 (ingénierie financière, régulation, finance durable, couverture), W11 comptes supprimés relevés par la vérification renforcée. Les relecteurs ont tranché par recherche web (Légifrance via résultats de recherche, EUR-Lex, sources professionnelles) les points absents des sources : Code pénal, CPP, CMF, règlement général de l'AMF, ESRS, NIS 2 en France.
+- **Corrections marquantes** : voir CHANGELOG 1.4.2 (seuils des concentrations, NEP 560 / 240 / 501, Omnibus I, recodification TVA au 1er janvier 2027, comptes 2026).
+- **check:refs** : sous-comptes hors nomenclature désormais signalés (sauf ventilation prévue) ; articles « Art 628-11 » sans point reconnus. État final : 4 310 références, 3 signalements distincts voulus (IAS 1 « ex- », IAS 17, IAS 31), 0 compte hors nomenclature.
+
 ## Décisions prises (et pourquoi)
 
 1. **Programme de référence : arrêté du 4 août 2025** (BOESR n° 32 du 28/08/2025, NOR MENS2523324A). Il s'applique aux épreuves du DSCG à partir de la session 2027, celle que Max préparera ; il remplace l'arrêté du 13/02/2019.
@@ -230,6 +237,9 @@ Demande de l'utilisateur : accéder aux plateformes officielles pour vérifier l
 56. **(v1.4.1) IFRS 18 est la référence pour la session 2027** : le règl. 2026/338 supprime IAS 1 au plus tard pour les exercices ouverts à compter du 1er janvier 2027. Les règles enseignées sont présentées selon IFRS 18 et IAS 7 modifiée ; IAS 1 reste citée comme texte remplacé ; un énoncé daté de 2026 peut encore l'appliquer s'il le dit. L'id de notion `ias-1-presentation-etats-financiers` est conservé (progression rattachée), seul le titre change.
 57. **(v1.4.1) Textes officiels hors dépôt** : `.sources/` est ignoré par git (NEP et IFRS non librement rediffusables) ; `npm run sources` les retélécharge, `npm run check:refs` doit rester propre avant tout commit de contenu (règle ajoutée à CLAUDE.md).
 
+58. **(v1.4.2) Recodification de la TVA au 1er janvier 2027** : l'ord. 2025-1247 transfère la TVA du CGI au CIBS « à droit constant ». Les fiches gardent les numéros du CGI (en vigueur jusqu'au 31 décembre 2026) et signalent la recodification ; renuméroter quand le CIBS sera téléchargeable et que la session 2027 approchera.
+59. **(v1.4.2) Pratique professionnelle vs norme** : quand le contenu attribuait à une NEP une règle qui vient des ISA, de la doctrine ou de la pratique (confirmation négative, « limitation », réponse directe des avocats), on la rattache à sa vraie source ou on la présente comme pratique ; une NEP n'est citée que pour ce que son texte dit.
+
 ## Points ouverts / à vérifier
 
 - **Déploiement** : résolu. GitHub Pages est activé (source : GitHub Actions) et chaque push sur `main` déploie automatiquement.
@@ -246,7 +256,7 @@ Demande de l'utilisateur : accéder aux plateformes officielles pour vérifier l
 
 Le cahier des charges, les priorités 1 à 6 de l'audit v2 et la vérification sur les textes officiels (v1.4.1) sont livrés. Suites possibles, à décider avec l'utilisateur :
 
-- **Vérification à poursuivre** : thèmes non couverts par les 8 lots (droit des sociétés, social, TVA, procédures collectives, contrats, UE 2, 3, 5) ; programme officiel à confronter à la taxonomie dès que l'utilisateur fournit le PDF du BO ; règl. 537/2014 (audit des EIP) à télécharger sur EUR-Lex.
+- **Vérification à poursuivre** : UE 3 (peu de textes : contrôle de gestion, stratégie), UE 6 (anglais, vocabulaire), fiches IFRS hors présentation (IAS 16, 36, 37, 38, IFRS 9, 15, 16 : confrontation paragraphe par paragraphe au règlement consolidé), programme officiel à confronter à la taxonomie dès que l'utilisateur fournit le PDF du BO ; CIBS (TVA) à télécharger pour la renumérotation de 2027.
 
 - **Si vente** (audit v2 § 5) : relecture par un expert-comptable ou un enseignant DSCG (UE 4 et UE 1 d'abord), dépôt privé et nouvelle licence pour le contenu à venir, comptes et synchronisation, paiement, hébergement commercial, CGV et RGPD.
 - **Contenu** : davantage de dossiers type d'examen (deux par UE aujourd'hui), sujets d'oral supplémentaires (20), explication par mauvaise réponse dans les QCM, date de validité par fiche et revue après chaque loi de finances.
@@ -265,4 +275,5 @@ Le cahier des charges, les priorités 1 à 6 de l'audit v2 et la vérification s
 - Phase 6 bis (lisibilité des fiches) : environ 15 à 25 $. Aucun sous-agent : travail direct (code, captures, contrôle des 271 fiches dans le navigateur).
 - Phase 8 et améliorations v1.4 : environ 70 à 90 $. Environ 36 sous-agents (9 lots de phase 8, 2 lots d'oral et 5 de dossiers, chacun rédacteur puis relecteur, plus quelques corrections de fiches) ; code, tests et documentation en travail direct.
 - Vérification v1.4.1 : environ 45 à 60 $. 16 sous-agents (8 correcteurs, 8 relecteurs) ; outils de téléchargement et de vérification en travail direct.
-- Cumul estimé : environ 500 à 645 $. L'utilisateur a accepté de dépasser le budget initial de 250 $ pour les phases 6 à 8 (audit : 155 à 215 $ pour les trois).
+- Vérification v1.4.2 : environ 60 à 80 $. 25 sous-agents (12 correcteurs, 13 relecteurs).
+- Cumul estimé : environ 560 à 725 $. L'utilisateur a accepté de dépasser le budget initial de 250 $ pour les phases 6 à 8 (audit : 155 à 215 $ pour les trois).
