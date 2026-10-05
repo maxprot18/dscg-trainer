@@ -182,7 +182,7 @@
           "prompt": "Vrai ou faux : le bandeau « En poursuivant votre navigation, vous acceptez les cookies » permet à Lunetik de déposer valablement ses traceurs publicitaires dès l'arrivée de l'internaute.",
           "points": 1,
           "answer": false,
-          "explanation": "Les traceurs non strictement nécessaires au service, comme les traceurs publicitaires, supposent le consentement préalable de l'internaute, manifesté par un acte positif clair, et aussi simple à refuser qu'à donner (loi Informatique et libertés, art. 82 ; RGPD art. 4 §11). La simple poursuite de la navigation ne vaut pas consentement, et le dépôt avant tout choix est irrégulier."
+          "explanation": "Les traceurs non strictement nécessaires au service, comme les traceurs publicitaires, supposent le consentement préalable de l'internaute, manifesté par un acte positif clair (loi Informatique et libertés, art. 82 ; RGPD art. 4 §11) ; la CNIL exige en outre que le refus soit aussi simple que l'acceptation. La simple poursuite de la navigation ne vaut pas consentement, et le dépôt avant tout choix est irrégulier."
         },
         {
           "id": "violation-donnees",
