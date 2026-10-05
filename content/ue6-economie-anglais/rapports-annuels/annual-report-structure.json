@@ -16,7 +16,7 @@
       "answer": false,
       "justification": "False: dividends are a distribution to owners, recognised directly in equity (statement of changes in equity), not an expense in profit or loss.",
       "explanation": "Under IFRS, distributions to holders of equity instruments are recognised directly in equity. Dividends are therefore shown in the statement of changes in equity, as a deduction from retained earnings; they never pass through the income statement. The reconciliation in the extract is: opening retained earnings €120m + profit for the year €30m − dividends €40m = closing retained earnings €110m. Profit increases retained earnings via the income statement; dividends reduce them via the statement of changes in equity.",
-      "source_ref": "IAS 32 §35 (distributions recognised directly in equity) ; IAS 1 §106-107 (statement of changes in equity) — règlement UE 2023/1803",
+      "source_ref": "IAS 32 §35 (distributions recognised directly in equity) — règlement UE 2023/1803 ; IFRS 18 §107 and §110 (statement of changes in equity; formerly IAS 1 §106-107) — règlement UE 2023/1803 as amended by Regulation (EU) 2026/338",
       "verified": true,
       "estimated_seconds": 60
     },

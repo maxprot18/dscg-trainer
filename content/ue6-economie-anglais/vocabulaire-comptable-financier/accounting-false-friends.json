@@ -128,7 +128,7 @@
       ],
       "total_points": 8,
       "explanation": "The case tests the most frequent false friends met when translating French accounts (résultat, chiffre d'affaires, exercice, dépréciation, commissaire aux comptes) and the case where the French word \"provision\" is correctly translated by \"provision\".",
-      "source_ref": "IAS 37 §10 (provision) ; IAS 36 §6 (impairment loss) ; IAS 1 §82 (line items) — règlement UE 2023/1803 ; usual UK/US professional terminology",
+      "source_ref": "IAS 37 §10 (provision) ; IAS 36 §6 (impairment loss) — règlement UE 2023/1803 ; IFRS 18 §75 (line items; formerly IAS 1 §82) — règlement UE 2023/1803 as amended by Regulation (EU) 2026/338 ; usual UK/US professional terminology",
       "verified": true,
       "estimated_seconds": 720
     },
@@ -168,7 +168,7 @@
       "answer": false,
       "justification": "A reserve is a component of equity; a liability of uncertain timing or amount is a \"provision\" (IAS 37 §10).",
       "explanation": "In IFRS English, reserves (share premium, retained earnings, revaluation surplus) belong to equity and are never set aside for future losses. A « provision pour risques » meeting the IAS 37 definition is translated as a provision (e.g. provision for legal claims). US usage sometimes speaks informally of \"reserves\" for liabilities or allowances, which is precisely why the word must be avoided in IFRS accounts.",
-      "source_ref": "IAS 37 §10 (definition of a provision) ; IAS 1 §54 and §78(e) (equity: issued capital and reserves) — règlement UE 2023/1803",
+      "source_ref": "IAS 37 §10 (definition of a provision) — règlement UE 2023/1803 ; IFRS 18 §104(b) (equity: issued capital and reserves; formerly IAS 1 §54 and §78(e)) — règlement UE 2023/1803 as amended by Regulation (EU) 2026/338",
       "verified": true,
       "estimated_seconds": 45
     },

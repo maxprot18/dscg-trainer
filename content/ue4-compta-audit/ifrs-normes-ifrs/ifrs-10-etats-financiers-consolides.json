@@ -21,8 +21,8 @@
       "answer": [
         3
       ],
-      "explanation": "Les participations ne donnant pas le contrôle (intérêts minoritaires) sont présentées dans l'état consolidé de la situation financière au sein des capitaux propres, séparément des capitaux propres attribuables aux propriétaires de la mère (IFRS 10 §22 ; IAS 1 §54(q)). Elles ne sont pas une dette : le groupe n'a pas d'obligation de remettre de la trésorerie aux minoritaires. Elles ne sont pas une rubrique intermédiaire entre capitaux propres et dettes (présentation que l'on rencontrait dans d'anciennes pratiques françaises), ni un simple renvoi en annexe.",
-      "source_ref": "IFRS 10 §22 et B94 (règlement UE 2023/1803) ; IAS 1 §54(q) (règlement UE 2023/1803)",
+      "explanation": "Les participations ne donnant pas le contrôle (intérêts minoritaires) sont présentées dans l'état consolidé de la situation financière au sein des capitaux propres, séparément des capitaux propres attribuables aux propriétaires de la mère (IFRS 10 §22 ; IFRS 18 §104, ex-IAS 1 §54 q). Elles ne sont pas une dette : le groupe n'a pas d'obligation de remettre de la trésorerie aux minoritaires. Elles ne sont pas une rubrique intermédiaire entre capitaux propres et dettes (présentation que l'on rencontrait dans d'anciennes pratiques françaises), ni un simple renvoi en annexe.",
+      "source_ref": "IFRS 10 §22 et B94 (règlement UE 2023/1803) ; IFRS 18 §104 (règlement UE 2023/1803 modifié par le règl. UE 2026/338 ; ex-IAS 1 §54 q)",
       "verified": true,
       "estimated_seconds": 45
     },

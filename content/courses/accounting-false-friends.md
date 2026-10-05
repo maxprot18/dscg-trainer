@@ -1,6 +1,6 @@
 # False friends and translation pitfalls in accounting and finance
 
-**References:** IAS 2 §9 and §28 ; IAS 36 §6 ; IAS 37 §10 ; IFRS 9 appendix A ("loss allowance") ; IAS 1 §7 (règlement UE 2023/1803) ; usual UK/US professional terminology
+**References:** IAS 2 §9 and §28 ; IAS 36 §6 ; IAS 37 §10 ; IFRS 9 appendix A ("loss allowance") ; IFRS 18 appendix A, formerly IAS 1 §7 (règlement UE 2023/1803 as amended by Regulation (EU) 2026/338) ; usual UK/US professional terminology
 
 **Key issue:** a false friend is a word that looks the same in French and English but means something different; in the exam, translation questions (press releases, e-mails to a head office, extracts of accounts) are built around these words, and a literal translation is always one of the distractors.
 

@@ -20,7 +20,7 @@
 
 **Comptabilisation (§58, §61A-62)** : l'impôt différé suit l'opération qui le génère : en résultat en général, en OCI pour une réévaluation IAS 16 ou IAS 38 ou pour les réévaluations IAS 19, directement en capitaux propres pour un élément porté en capitaux propres (frais d'augmentation de capital). Dans un regroupement d'entreprises, les impôts différés sur les écarts d'évaluation modifient le goodwill (§66).
 
-**Présentation** : compensation des actifs et passifs d'impôt différé si droit juridiquement exécutoire de compenser et même administration fiscale (§74) ; classement en non courant (IAS 1 §56). Exception temporaire obligatoire : aucun impôt différé n'est comptabilisé au titre des impôts « Pilier 2 », avec information en annexe (§4A, §88A-88D).
+**Présentation** : compensation des actifs et passifs d'impôt différé si droit juridiquement exécutoire de compenser et même administration fiscale (§74) ; classement en non courant (IFRS 18 §98, ex-IAS 1 §56). Exception temporaire obligatoire : aucun impôt différé n'est comptabilisé au titre des impôts « Pilier 2 », avec information en annexe (§4A, §88A-88D).
 
 **Formules clés :** impôt différé = différence temporelle × taux attendu au reversement ; charge d'impôt différé de N = (PID − ADI) clôture − (PID − ADI) ouverture, hors part en OCI et capitaux propres
 

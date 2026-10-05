@@ -39,4 +39,4 @@ Dilution : 100 000 options à 20 € (cours moyen 25 €) → 100 000 × (25 −
 - Pas le nombre d'actions à la clôture : la moyenne pondérée.
 - Un instrument dont le RPA incrémental dépasse le RPA en cours de calcul est relutif : il est écarté.
 
-**Notions liées :** [IAS 1 — Présentation des états financiers](/cours/ias-1-presentation-etats-financiers) · [Augmentation de capital et dilution](/cours/augmentation-capital-dilution) · [Présentation des états financiers consolidés](/cours/etats-financiers-consolides-presentation)
+**Notions liées :** [IFRS 18 — Présentation des états financiers (ex-IAS 1)](/cours/ias-1-presentation-etats-financiers) · [Augmentation de capital et dilution](/cours/augmentation-capital-dilution) · [Présentation des états financiers consolidés](/cours/etats-financiers-consolides-presentation)

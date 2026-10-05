@@ -38,7 +38,7 @@
         "covenants",
         "classement courant / non courant"
       ],
-      "source_ref": "IAS 1 §69, §74 et §75 (règl. UE 2023/1803)",
+      "source_ref": "IFRS 18 §101 d), B102, B103 et B105 (règl. UE 2023/1803 modifié par le règl. UE 2026/338 ; règle reprise d'IAS 1 §69, §74 et §75)",
       "verified": true,
       "estimated_seconds": 120,
       "statement": "Au 31 décembre N, un groupe ne respecte pas le covenant (endettement net / EBITDA ≤ 3) d'un emprunt de 20 M€ remboursable in fine en N+4 ; le bris rend la dette exigible à la demande de la banque. Le 15 février N+1, avant l'arrêté des comptes, la banque renonce par écrit à exiger le remboursement anticipé. Comment l'emprunt est-il classé au bilan IFRS du 31 décembre N ?",
@@ -52,7 +52,7 @@
         1
       ],
       "multiple": false,
-      "explanation": "IAS 1 §74 : lorsqu'une clause d'un emprunt à long terme n'est pas respectée à la clôture et rend la dette exigible à vue, la dette est classée en courant, même si le prêteur accepte après la clôture et avant l'autorisation de publication de ne pas exiger le paiement. Seul un délai de grâce d'au moins douze mois accordé avant la clôture permettrait le classement non courant. D'où l'option 2 ; la renonciation obtenue en février est un événement postérieur non ajustant, mentionné en annexe. Les options 1 et 3 ignorent que l'appréciation se fait à la clôture. Aucune règle ne prévoit le partage de l'option 4."
+      "explanation": "IFRS 18 B102 (ex-IAS 1 §74) : lorsqu'une clause d'un emprunt à long terme n'est pas respectée à la clôture et rend la dette exigible à vue, la dette est classée en courant, même si le prêteur accepte après la clôture et avant l'autorisation de publication de ne pas exiger le paiement. Seul un délai de grâce d'au moins douze mois accordé au plus tard à la clôture permettrait le classement non courant (B103). D'où l'option 2 ; la renonciation obtenue en février est un événement postérieur non ajustant (B105), mentionné en annexe. Les options 1 et 3 ignorent que l'appréciation se fait à la clôture. Aucune règle ne prévoit le partage de l'option 4."
     },
     {
       "id": "ue2-diag-structure-0003",

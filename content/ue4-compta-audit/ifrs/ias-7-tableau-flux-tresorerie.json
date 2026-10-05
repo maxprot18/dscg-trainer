@@ -63,13 +63,13 @@
         "intérêts versés",
         "classement des flux"
       ],
-      "source_ref": "IAS 7 §31-34 (règlement UE 2023/1803)",
+      "source_ref": "IAS 7 §31, §33A et §34A-34D, dans leur rédaction issue d'IFRS 18 (règlement UE 2023/1803 modifié par le règl. UE 2026/338)",
       "verified": true,
       "estimated_seconds": 45,
-      "explanation": "Pour une entité non financière, les intérêts versés peuvent être classés en activités opérationnelles (car ils entrent dans la détermination du résultat net) ou en activités de financement (car ils représentent le coût d'obtention des ressources financières) (IAS 7 §33). Le même choix existe pour les intérêts et dividendes reçus (opérationnel ou investissement) et pour les dividendes versés (financement ou opérationnel, §34). Le classement retenu est appliqué de façon permanente d'un exercice à l'autre (§31). Pour mémoire, IFRS 18 (applicable selon l'IASB aux exercices ouverts à compter du 1er janvier 2027) supprime ce choix pour la plupart des entités.",
-      "statement": "Selon IAS 7, une entité industrielle doit obligatoirement classer les intérêts versés sur ses emprunts dans les flux de trésorerie liés aux activités de financement.",
+      "explanation": "Pour les exercices ouverts à compter du 1er janvier 2027 (IFRS 18, règl. UE 2026/338), IAS 7 modifiée supprime le choix de classement pour les entités dont l'activité principale n'est ni l'investissement dans des actifs ni l'octroi de financements à des clients : intérêts versés en financement (§34A a), intérêts et dividendes reçus en investissement (§34A b), dividendes versés en financement (§33A). Seules ces entités particulières (banques, sociétés d'investissement) classent les intérêts versés et les intérêts et dividendes reçus en suivant le classement des produits et charges correspondants dans leur compte de résultat (§34B-34D) ; les dividendes versés restent en financement pour toutes les entités (§33A). Pour un exercice ouvert avant cette date, l'ancienne rédaction d'IAS 7 (§33) laissait le choix entre activités opérationnelles et de financement, appliqué de façon permanente (§31).",
+      "statement": "Selon IAS 7 modifiée par IFRS 18 (exercices ouverts à compter du 1er janvier 2027), une entité industrielle peut choisir de classer les intérêts versés sur ses emprunts en flux opérationnels ou en flux de financement, à condition d'appliquer ce choix de façon permanente.",
       "answer": false,
-      "justification": "Faux : IAS 7 §33 permet de classer les intérêts versés en flux opérationnels ou en flux de financement, le choix étant appliqué de façon permanente."
+      "justification": "Faux : IAS 7 §34A impose désormais à une entité dont l'activité principale n'est ni l'investissement dans des actifs ni l'octroi de financements à des clients de classer les intérêts versés en activités de financement ; le choix a disparu."
     },
     {
       "id": "ue4-ifrs-ias7-0004",
@@ -83,11 +83,11 @@
         "flux opérationnels",
         "besoin en fonds de roulement"
       ],
-      "source_ref": "IAS 7 §14, §18(b) et §20 (règlement UE 2023/1803)",
+      "source_ref": "IAS 7 §14, §18 b), §20 et §35, dans leur rédaction issue d'IFRS 18 (règlement UE 2023/1803 modifié par le règl. UE 2026/338)",
       "verified": true,
       "estimated_seconds": 180,
-      "explanation": "Méthode indirecte (IAS 7 §18(b) et §20) : résultat net 420 + dotations aux amortissements 150 (charge sans effet de trésorerie) − plus-value de cession 30 (le prix encaissé de 80 relève des flux d'investissement) = 540 ; variation du besoin en fonds de roulement : − 40 (hausse des stocks) + 25 (baisse des créances) + 35 (hausse des dettes fournisseurs) = + 20. Flux opérationnels = 540 + 20 = 560 k€. Erreurs classiques : ajouter la plus-value (620), inverser les signes des variations (520).",
-      "statement": "La société Quimperlé (IFRS) n'a aucune dette financière. Pour l'exercice N (en milliers d'euros) :\n- résultat net : 420 ;\n- dotations aux amortissements : 150 ;\n- plus-value de cession d'une machine, comprise dans le résultat (prix de cession encaissé : 80) : 30 ;\n- stocks : augmentation de 40 sur l'exercice ;\n- créances clients : diminution de 25 ;\n- dettes fournisseurs : augmentation de 35.\nL'impôt payé est égal à la charge d'impôt de l'exercice. Calculez, selon la méthode indirecte, les flux nets de trésorerie liés aux activités opérationnelles de N, en milliers d'euros.",
+      "explanation": "Méthode indirecte (IAS 7 §18 b et §20) : résultat d'exploitation 540 + dotations aux amortissements 150 (charge sans effet de trésorerie) − plus-value de cession 30 (le prix encaissé de 80 relève des flux d'investissement) = 660 ; variation du besoin en fonds de roulement : − 40 (hausse des stocks) + 25 (baisse des créances) + 35 (hausse des dettes fournisseurs) = + 20 ; impôt payé, flux opérationnel dont la charge est hors de la catégorie exploitation (§20 d et §35) : − 120. Flux opérationnels = 660 + 20 − 120 = 560 k€. On retrouve le même montant à partir du résultat net (420 + 150 − 30 + 20), l'impôt, payé dans l'exercice, étant ici la seule différence entre les deux résultats. Erreurs classiques : oublier l'impôt payé (680), ajouter la plus-value (620), inverser les signes des variations (520).",
+      "statement": "La société Quimperlé (IFRS ; exercice N ouvert le 01/01/2027, IAS 7 modifiée par IFRS 18) n'a aucune dette financière. Pour l'exercice N (en milliers d'euros) :\n- résultat d'exploitation : 540 ;\n- charge d'impôt sur le résultat : 120, égale à l'impôt payé ;\n- résultat net : 420 ;\n- dotations aux amortissements : 150 ;\n- plus-value de cession d'une machine, comprise dans le résultat d'exploitation (prix de cession encaissé : 80) : 30 ;\n- stocks : augmentation de 40 sur l'exercice ;\n- créances clients : diminution de 25 ;\n- dettes fournisseurs : augmentation de 35.\nCalculez, selon la méthode indirecte, les flux nets de trésorerie liés aux activités opérationnelles de N, en milliers d'euros.",
       "expected_value": 560,
       "tolerance": {
         "kind": "absolute",
@@ -109,12 +109,12 @@
         "opérations non monétaires",
         "intérêts versés"
       ],
-      "source_ref": "IAS 7 §6-8, §18-20, §31-34 et §43-44 (règlement UE 2023/1803)",
+      "source_ref": "IAS 7 §6-8, §18-20, §31-35 et §43-44, dans leur rédaction issue d'IFRS 18 (règlement UE 2023/1803 modifié par le règl. UE 2026/338) ; IFRS 18 §47 et §69",
       "verified": true,
       "estimated_seconds": 900,
-      "explanation": "Les flux opérationnels sont obtenus par la méthode indirecte à partir du résultat net, corrigé des éléments sans effet de trésorerie, des résultats de cession (dont le prix encaissé relève de l'investissement), de la charge d'intérêts lorsque les intérêts versés sont classés en financement, et de la variation du besoin en fonds de roulement. Les opérations non monétaires sont exclues. Total : 1 130 − 780 − 70 = + 280 k€, soit une trésorerie nette de clôture de 430 k€.",
+      "explanation": "Les flux opérationnels sont obtenus par la méthode indirecte à partir du résultat d'exploitation (IAS 7 §18 b et §20), corrigé des éléments sans effet de trésorerie, des résultats de cession (dont le prix encaissé relève de l'investissement) et de la variation du besoin en fonds de roulement, puis diminué de l'impôt payé. Les intérêts versés et les dividendes versés sont classés en financement (§33A et §34A). Les opérations non monétaires sont exclues. Total : 1 130 − 780 − 70 = + 280 k€, soit une trésorerie nette de clôture de 430 k€.",
       "title": "Société Erdeven : tableau des flux de trésorerie de N",
-      "context": "La société Erdeven établit ses comptes selon les IFRS et présente ses flux opérationnels selon la méthode indirecte. Elle classe les intérêts versés et les dividendes versés en activités de financement. Données de l'exercice N (en milliers d'euros) :\n- résultat net : 800 (après charge d'intérêts de 40, entièrement payée dans l'exercice ; l'impôt payé est égal à la charge d'impôt) ;\n- dotations aux amortissements : 300 ;\n- cession d'une machine : prix encaissé 120, valeur nette comptable 90 ;\n- stocks : 500 au 01/01 et 560 au 31/12 ; créances clients : 700 au 01/01 et 650 au 31/12 ; dettes fournisseurs : 400 au 01/01 et 430 au 31/12 ;\n- acquisitions d'immobilisations payées dans l'exercice : 900 ;\n- un véhicule de 60 a en outre été acquis contre remise d'actions nouvelles au vendeur ;\n- nouvel emprunt bancaire encaissé : 250 ; remboursements d'emprunts : 180 ;\n- dividendes versés : 200 ;\n- augmentation de capital en numéraire : 100 (hors l'émission de 60 liée au véhicule).\nLa trésorerie nette au 01/01/N s'élève à 150 (disponibilités 180, découvert bancaire remboursable à vue −30, utilisé dans la gestion courante de la trésorerie).",
+      "context": "La société Erdeven établit ses comptes selon les IFRS (exercice N ouvert le 01/01/2027 : IFRS 18 et IAS 7 modifiée) et présente ses flux opérationnels selon la méthode indirecte. Son activité principale n'est ni l'investissement dans des actifs ni l'octroi de financements à des clients. Données de l'exercice N (en milliers d'euros) :\n- résultat d'exploitation : 1 140 ; charge d'intérêts : 40 (catégorie financement), entièrement payée dans l'exercice ; charge d'impôt sur le résultat : 300, égale à l'impôt payé ; résultat net : 800 ;\n- dotations aux amortissements : 300 ;\n- cession d'une machine : prix encaissé 120, valeur nette comptable 90 (plus-value comprise dans le résultat d'exploitation) ;\n- stocks : 500 au 01/01 et 560 au 31/12 ; créances clients : 700 au 01/01 et 650 au 31/12 ; dettes fournisseurs : 400 au 01/01 et 430 au 31/12 ;\n- acquisitions d'immobilisations payées dans l'exercice : 900 ;\n- un véhicule de 60 a en outre été acquis contre remise d'actions nouvelles au vendeur ;\n- nouvel emprunt bancaire encaissé : 250 ; remboursements d'emprunts : 180 ;\n- dividendes versés : 200 ;\n- augmentation de capital en numéraire : 100 (hors l'émission de 60 liée au véhicule).\nLa trésorerie nette au 01/01/N s'élève à 150 (disponibilités 180, découvert bancaire remboursable à vue −30, utilisé dans la gestion courante de la trésorerie).",
       "sub_questions": [
         {
           "id": "q1-flux-operationnels",
@@ -128,7 +128,7 @@
           },
           "unit": "k€",
           "decimals": 0,
-          "explanation": "800 + 300 (amortissements) − 30 (plus-value : 120 − 90) + 40 (charge d'intérêts réintégrée, les intérêts versés étant classés en financement) − 60 (hausse des stocks) + 50 (baisse des créances) + 30 (hausse des dettes fournisseurs) = 1 130 k€."
+          "explanation": "1 140 (résultat d'exploitation) + 300 (amortissements) − 30 (plus-value : 120 − 90) − 60 (hausse des stocks) + 50 (baisse des créances) + 30 (hausse des dettes fournisseurs) − 300 (impôt payé, §20 d) = 1 130 k€. La charge d'intérêts, classée en financement, n'est pas comprise dans le résultat d'exploitation : il n'y a rien à réintégrer. Contrôle : résultat net 800 + intérêts 40 + impôt 300 = résultat d'exploitation 1 140."
         },
         {
           "id": "q2-flux-investissement",
@@ -156,7 +156,7 @@
           },
           "unit": "k€",
           "decimals": 0,
-          "explanation": "+ 250 (emprunt) − 180 (remboursements) − 40 (intérêts versés) − 200 (dividendes versés) + 100 (augmentation de capital en numéraire) = − 70 k€. L'émission de 60 liée au véhicule est exclue. Contrôle : variation de trésorerie = 1 130 − 780 − 70 = + 280 k€ ; trésorerie nette au 31/12/N = 150 + 280 = 430 k€."
+          "explanation": "+ 250 (emprunt) − 180 (remboursements) − 40 (intérêts versés, §34A) − 200 (dividendes versés, §33A) + 100 (augmentation de capital en numéraire) = − 70 k€. L'émission de 60 liée au véhicule est exclue. Contrôle : variation de trésorerie = 1 130 − 780 − 70 = + 280 k€ ; trésorerie nette au 31/12/N = 150 + 280 = 430 k€."
         },
         {
           "id": "q4-decouvert",
@@ -170,13 +170,13 @@
           "id": "q5-justifications",
           "kind": "open",
           "points": 4,
-          "prompt": "Justifiez le traitement retenu pour la charge d'intérêts dans les flux opérationnels et pour le véhicule acquis contre des actions.",
-          "model_answer": "Le résultat net de 800 a été diminué de la charge d'intérêts de 40. Erdeven classant les intérêts versés en activités de financement (choix permis par IAS 7 §33 et appliqué de façon permanente), la charge d'intérêts est réintégrée dans le calcul indirect des flux opérationnels, puis le décaissement de 40 est présenté en flux de financement : il n'est ainsi compté qu'une fois. L'acquisition du véhicule contre émission d'actions est une opération non monétaire : aucun flux de trésorerie n'a eu lieu, elle est donc exclue du tableau, tant en investissement qu'en financement, et décrite dans les notes (IAS 7 §43-44).",
+          "prompt": "Justifiez le point de départ retenu pour les flux opérationnels, le classement des intérêts versés et le traitement du véhicule acquis contre des actions.",
+          "model_answer": "Pour un exercice ouvert à compter du 1er janvier 2027, IAS 7 modifiée par IFRS 18 fait partir la méthode indirecte du résultat d'exploitation (§18 b et §20), soit 1 140 : ce sous-total n'inclut ni la charge d'intérêts, classée dans la catégorie financement du compte de résultat, ni l'impôt ; l'impôt payé (300), flux opérationnel dont la charge est hors de la catégorie exploitation, est donc déduit séparément (§20 d et §35). Erdeven n'ayant pour activité principale ni l'investissement ni le financement de clients, les intérêts versés (40) sont obligatoirement présentés en flux de financement (§34A), sans option ; ils ne sont ainsi comptés qu'une fois. L'acquisition du véhicule contre émission d'actions est une opération non monétaire : aucun flux de trésorerie n'a eu lieu, elle est donc exclue du tableau, tant en investissement qu'en financement, et décrite dans les notes (IAS 7 §43-44).",
           "key_points": [
-            "Intérêts classés en financement : réintégration de la charge dans les flux opérationnels",
-            "Décaissement de 40 présenté une seule fois, en financement",
-            "Véhicule contre actions = opération non monétaire exclue du tableau",
-            "Information en annexe sur l'opération non monétaire (IAS 7 §43)"
+            "Point de départ : résultat d'exploitation (1 140), qui exclut la charge d'intérêts et l'impôt",
+            "Impôt payé (300) déduit séparément dans les flux opérationnels",
+            "Intérêts versés obligatoirement en financement (§34A), comptés une seule fois",
+            "Véhicule contre actions = opération non monétaire exclue du tableau, information en annexe (IAS 7 §43)"
           ]
         }
       ],

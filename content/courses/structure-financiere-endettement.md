@@ -1,6 +1,6 @@
 # Structure financière, endettement net, BFR et covenants
 
-**Références :** IAS 1 §69, §72A-72B, §74 et §75 (règl. UE 2023/1803, amendements « classement des passifs » et « passifs non courants assortis de covenants », règl. UE 2023/2822, exercices ouverts à compter du 1er janvier 2024) ; bilan fonctionnel (analyse financière classique)
+**Références :** IFRS 18 §101, B100, B102-B103, B105 et B106 (règl. UE 2023/1803 modifié par le règl. UE 2026/338, exercices ouverts à compter du 1er janvier 2027), qui reprennent les règles d'IAS 1 issues des amendements « classement des passifs » et « passifs non courants assortis de covenants » (règl. UE 2023/2822) ; bilan fonctionnel (analyse financière classique)
 
 **Enjeu :** l'analyse de la structure financière répond à deux questions : l'entreprise finance-t-elle durablement son cycle d'exploitation (FRNG, BFR, trésorerie) et peut-elle supporter sa dette (endettement net, levier, covenants) ? C'est le second volet obligé du diagnostic, après la rentabilité.
 
@@ -18,7 +18,7 @@ BFR d'exploitation en jours de CA = BFRE / CA HT × 360 ; une hausse traduit un 
 - couverture des frais financiers = EBITDA (ou résultat opérationnel) / charges financières nettes ;
 - capacité de remboursement = dettes financières / CAF (au-delà de 3 à 4 ans, la dette est jugée lourde).
 
-**Covenants** : engagements contractuels de respect de ratios (ex. endettement net / EBITDA ≤ 3). Leur bris rend la dette exigible par anticipation. IAS 1 §74 : si le bris existe à la clôture et que le prêteur n'a pas accordé, **avant la clôture**, un délai de grâce d'au moins douze mois, la dette est classée en passif courant, même si une renonciation est obtenue avant l'arrêté des comptes (§75 : événement postérieur sans ajustement, mentionné en annexe). Un covenant à tester seulement après la clôture n'affecte pas le classement (§72B).
+**Covenants** : engagements contractuels de respect de ratios (ex. endettement net / EBITDA ≤ 3). Leur bris rend la dette exigible par anticipation. IFRS 18 B102 (ex-IAS 1 §74) : si le bris existe à la clôture et que le prêteur n'a pas accordé, **au plus tard à la clôture**, un délai de grâce d'au moins douze mois (B103), la dette est classée en passif courant, même si une renonciation est obtenue avant l'arrêté des comptes (événement postérieur sans ajustement, mentionné en annexe, B105). Un covenant à respecter seulement après la clôture n'affecte pas le classement (B100 b), mais le risque d'exigibilité dans les douze mois est expliqué en annexe (B106).
 
 **Opérations sur la structure** : conversion d'obligations en actions, augmentation de capital ou cession d'actifs réduisent le gearing ; un rachat d'actions financé par dette l'augmente.
 
@@ -38,4 +38,4 @@ Endettement net = 220 + 50 − 10 = 260 ; gearing = 260 / 400 = 0,65 ; levier = 
 - Les fournisseurs d'immobilisations relèvent du BFR hors exploitation.
 - Marge de manœuvre sur covenant : EBITDA minimal = endettement net / plafond du ratio.
 
-**Notions liées :** [Rentabilité et effet de levier](/cours/rentabilite-effet-levier) · [Financements à court terme](/cours/financements-court-terme) · [Choix des modalités de financement](/cours/choix-modalites-financement) · [IAS 1 — Présentation des états financiers](/cours/ias-1-presentation-etats-financiers)
+**Notions liées :** [Rentabilité et effet de levier](/cours/rentabilite-effet-levier) · [Financements à court terme](/cours/financements-court-terme) · [Choix des modalités de financement](/cours/choix-modalites-financement) · [IFRS 18 — Présentation des états financiers (ex-IAS 1)](/cours/ias-1-presentation-etats-financiers)

@@ -7,11 +7,15 @@
       "theme": "vocabulaire-comptable-financier",
       "notion": "financial-statements-vocabulary",
       "difficulty": 1,
-      "tags": ["accruals", "accrual basis", "vocabulary"],
+      "tags": [
+        "accruals",
+        "accrual basis",
+        "vocabulary"
+      ],
       "front": "What are \"accruals\" (accrued expenses) in a balance sheet, and what is their French equivalent?",
       "back": "Accruals are expenses that have been incurred during the period but not yet invoiced or paid at the reporting date (e.g. electricity consumed in December but invoiced after year-end). They are recognised as a liability under the accrual basis of accounting. French equivalent: \"charges à payer\" (e.g. PCG account 408 \"Fournisseurs – factures non parvenues\"). Do not confuse with \"prepayments\" (charges constatées d'avance) or \"deferred income\" (produits constatés d'avance).",
       "explanation": "Under the accrual basis, the effects of transactions are recognised when they occur, not when cash is paid or received. An expense incurred in the period but not yet invoiced is therefore recorded as an expense against a liability (accrual). The mirror items are prepayments (an expense paid in advance, carried as an asset) and deferred income (revenue received in advance, carried as a liability).",
-      "source_ref": "IAS 1 §27-28, accrual basis of accounting (règlement UE 2023/1803) ; PCG compte 408",
+      "source_ref": "IAS 8 §6M-6N, accrual basis of accounting (formerly IAS 1 §27-28) — règlement UE 2023/1803 as amended by Regulation (EU) 2026/338 ; PCG compte 408",
       "verified": true,
       "estimated_seconds": 30
     },
@@ -35,7 +39,7 @@
       },
       "decimals": 2,
       "explanation": "Current assets = inventories 180 + trade receivables 240 + cash and cash equivalents 60 = €480k. Current liabilities = trade payables 250 + short-term borrowings 70 + accruals 40 = €360k. Current ratio = 480 ÷ 360 = 1.33. Property, plant and equipment (non-current asset) and long-term borrowings (non-current liability) are excluded. Classic errors: excluding inventories gives the quick ratio (300 ÷ 360 = 0.83); adding the long-term borrowings to the denominator gives 480 ÷ 760 = 0.63.",
-      "source_ref": "IAS 1 §66-76, classification of current and non-current assets and liabilities (règlement UE 2023/1803)",
+      "source_ref": "IFRS 18 §96-102, classification of current and non-current assets and liabilities (formerly IAS 1 §66-76) — règlement UE 2023/1803 as amended by Regulation (EU) 2026/338",
       "verified": true,
       "estimated_seconds": 150
     },
@@ -61,7 +65,7 @@
       "unit": "€k",
       "decimals": 0,
       "explanation": "Operating profit = revenue 5,200 − cost of sales 3,100 − distribution costs 600 − administrative expenses 700 + other operating income 50 = €850k. Depreciation and amortisation are embedded in the functional expense lines, so they must be added back: EBITDA = 850 + 260 (depreciation) + 40 (amortisation) = €1,150k. Finance costs and income tax are below operating profit and are not deducted. Classic errors: stopping at operating profit (850); starting from profit before tax (850 − 120 = 730, then 730 + 300 = 1,030); confusing EBITDA with gross profit (5,200 − 3,100 = 2,100).",
-      "source_ref": "IAS 1 §85 and §99-105 (analysis of expenses by function, additional line items) ; IAS 16 §6 and IAS 38 §8 (depreciation, amortisation) — règlement UE 2023/1803. EBITDA is an alternative performance measure, not defined by IFRS",
+      "source_ref": "IFRS 18 §78-83 (analysis of operating expenses by function; formerly IAS 1 §99-105) and §118(b) (operating profit before depreciation, amortisation and IAS 36 impairments is not a management-defined performance measure) — règlement UE 2023/1803 as amended by Regulation (EU) 2026/338 ; IAS 16 §6 and IAS 38 §8 (depreciation, amortisation) — règlement UE 2023/1803",
       "verified": true,
       "estimated_seconds": 240
     },
@@ -87,8 +91,8 @@
       "answer": [
         1
       ],
-      "explanation": "Option 2 is correct: cash receipts from sales of property, plant and equipment are investing cash flows (IAS 7 §16(b)). Option 1 is wrong: cash receipts from the sale of goods are the typical operating cash flow (IAS 7 §14(a)). Option 3 is wrong: dividends paid may be presented in financing activities or in operating activities (IAS 7 §34), but never in investing activities. Option 4 is wrong: cash payments for the principal portion of lease liabilities are classified within financing activities (IFRS 16 §50(a), IAS 7 §17).",
-      "source_ref": "IAS 7 §14, §16, §17 and §34 ; IFRS 16 §50 (règlement UE 2023/1803)",
+      "explanation": "Option 2 is correct: cash receipts from sales of property, plant and equipment are investing cash flows (IAS 7 §16(b)). Option 1 is wrong: cash receipts from the sale of goods are the typical operating cash flow (IAS 7 §14(a)). Option 3 is wrong: dividends paid are classified within financing activities (IAS 7 §33A, as amended by IFRS 18 for financial years beginning on or after 1 January 2027; before that date, financing or operating activities under former §34), never within investing activities. Option 4 is wrong: cash payments for the principal portion of lease liabilities are classified within financing activities (IFRS 16 §50(a), IAS 7 §17).",
+      "source_ref": "IAS 7 §14, §16, §17 and §33A (as amended by IFRS 18, Regulation (EU) 2026/338) ; IFRS 16 §50 (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 75
     },
@@ -157,7 +161,7 @@
           "points": 2,
           "prompt": "The £500k of the bank loan repayable in 2029 is presented as a current liability.",
           "answer": false,
-          "explanation": "It is due more than twelve months after the reporting period: it is a non-current liability (IAS 1 §69). Only the £100k repayable in 2026 is current."
+          "explanation": "It is due more than twelve months after the reporting period: it is a non-current liability (IAS 1 §69, now IFRS 18 §101). Only the £100k repayable in 2026 is current."
         },
         {
           "id": "q3",
@@ -174,7 +178,7 @@
             1
           ],
           "multiple": false,
-          "explanation": "Dividends are distributions to owners: the statement of changes in equity must reconcile each component of equity, showing separately the distributions to owners (IAS 1 §106(d)(iii)), so the £150k reduction of retained earnings appears there, not as an expense in profit or loss or in OCI. \"Notes only\" is wrong: IAS 1 §107 lets the entity give the amount of dividends and the dividend per share either in that statement or in the notes, but the movement itself must appear in the statement of changes in equity. The dividend also appears as a cash outflow in the statement of cash flows (financing or operating activities)."
+          "explanation": "Dividends are distributions to owners: the statement of changes in equity must reconcile each component of equity, showing separately the distributions to owners (IAS 1 §106(d)(iii), now IFRS 18 §107(c)(iii)), so the £150k reduction of retained earnings appears there, not as an expense in profit or loss or in OCI. \"Notes only\" is wrong: IAS 1 §107 (now IFRS 18 §110) lets the entity give the amount of dividends and the dividend per share either in that statement or in the notes, but the movement itself must appear in the statement of changes in equity. The dividend also appears as a cash outflow in the statement of cash flows (financing or operating activities in 2025; financing activities only from 2027, IAS 7 §33A as amended by IFRS 18)."
         },
         {
           "id": "q4",
@@ -191,8 +195,8 @@
         }
       ],
       "total_points": 10,
-      "explanation": "The case tests the current / non-current split (IAS 1 §66-76), the quick ratio, the statement in which distributions to owners are presented and the French equivalents of usual balance sheet items.",
-      "source_ref": "IAS 1 §10, §66-76 and §106(d) and §107 (règlement UE 2023/1803) ; quick ratio (usual definition)",
+      "explanation": "The case tests the current / non-current split (IAS 1 §66-76, now IFRS 18 §96-102), the quick ratio, the statement in which distributions to owners are presented and the French equivalents of usual balance sheet items.",
+      "source_ref": "IAS 1 §10, §66-76, §106(d) and §107, applicable to the 2025 accounts (règlement UE 2023/1803) ; now IFRS 18 §10, §96-102, §107 and §110 (règlement UE 2023/1803 as amended by Regulation (EU) 2026/338, financial years beginning on or after 1 January 2027) ; quick ratio (usual definition)",
       "verified": true,
       "estimated_seconds": 600
     }

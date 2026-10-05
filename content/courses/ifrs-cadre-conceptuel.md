@@ -1,6 +1,6 @@
 # Cadre conceptuel de l'information financière IFRS
 
-**Références :** Cadre conceptuel de l'information financière (IASB, mars 2018), chap. 1 à 8 ; IAS 1 §15-25 et IAS 8 §10-11 (règl. UE 2023/1803)
+**Références :** Cadre conceptuel de l'information financière (IASB, mars 2018), chap. 1 à 8 ; IAS 8 §6A-6L et §10-11 (règl. UE 2023/1803 modifié par le règl. UE 2026/338 ; image fidèle et continuité d'exploitation, ex-IAS 1 §15-25)
 
 **Enjeu :** le Cadre fournit les définitions (actif, passif, produit, charge) et les qualités de l'information que toutes les normes déclinent ; à l'examen, il sert à justifier un traitement en l'absence de norme et à repérer les divergences de raisonnement avec le PCG.
 
@@ -36,4 +36,4 @@ Une entité décide en décembre N de rénover son siège en N+1 pour 800 k€ e
 - La représentation fidèle a remplacé la « fiabilité » ; la prudence n'autorise ni sous-évaluation des actifs ni surévaluation des passifs.
 - La définition de l'actif repose sur le contrôle d'un droit, non sur la propriété juridique.
 
-**Notions liées :** [IAS 8 — Méthodes, estimations et erreurs](/cours/ias-8-methodes-estimations-erreurs) · [IAS 1 — Présentation des états financiers](/cours/ias-1-presentation-etats-financiers) · [IAS 37 — Provisions](/cours/ias-37-provisions) · [Divergences normes françaises / IFRS](/cours/divergences-normes-francaises-ifrs)
+**Notions liées :** [IAS 8 — Méthodes, estimations et erreurs](/cours/ias-8-methodes-estimations-erreurs) · [IFRS 18 — Présentation des états financiers (ex-IAS 1)](/cours/ias-1-presentation-etats-financiers) · [IAS 37 — Provisions](/cours/ias-37-provisions) · [Divergences normes françaises / IFRS](/cours/divergences-normes-francaises-ifrs)

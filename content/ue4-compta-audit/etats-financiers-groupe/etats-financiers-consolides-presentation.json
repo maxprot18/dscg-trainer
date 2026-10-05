@@ -22,8 +22,8 @@
       "answer": [
         1
       ],
-      "explanation": "Le Code de commerce (art. L233-20) et le règlement ANC 2020-01 font du bilan, du compte de résultat et de l'annexe consolidés un tout indissociable (option 2) ; le rapport sur la gestion du groupe est un document distinct, qui ne remplace pas l'annexe. L'option 1 décrit l'état du résultat global des IFRS (IAS 1 §10 et §81A) : le règlement ANC 2020-01 n'en comporte pas, les écarts de conversion étant inscrits directement dans les capitaux propres consolidés. L'option 3 est fausse : l'annexe fait partie des comptes consolidés quelle que soit la cotation. L'option 4 est fausse : le compte de résultat consolidé fait apparaître le résultat de l'ensemble consolidé, puis sa répartition entre intérêts minoritaires et part du groupe.",
-      "source_ref": "C. com. art. L233-20 ; règl. ANC 2020-01, présentation des comptes consolidés ; IAS 1 §10 et §81A (règlement UE 2023/1803)",
+      "explanation": "Le Code de commerce (art. L233-20) et le règlement ANC 2020-01 font du bilan, du compte de résultat et de l'annexe consolidés un tout indissociable (option 2) ; le rapport sur la gestion du groupe est un document distinct, qui ne remplace pas l'annexe. L'option 1 décrit l'état du résultat global des IFRS (IFRS 18 §10 et §86, ex-IAS 1 §10 et §81A) : le règlement ANC 2020-01 n'en comporte pas, les écarts de conversion étant inscrits directement dans les capitaux propres consolidés. L'option 3 est fausse : l'annexe fait partie des comptes consolidés quelle que soit la cotation. L'option 4 est fausse : le compte de résultat consolidé fait apparaître le résultat de l'ensemble consolidé, puis sa répartition entre intérêts minoritaires et part du groupe.",
+      "source_ref": "C. com. art. L233-20 ; règl. ANC 2020-01, présentation des comptes consolidés ; IFRS 18 §10 et §86 (règlement UE 2023/1803 modifié par le règl. UE 2026/338 ; ex-IAS 1 §10 et §81A)",
       "verified": true,
       "estimated_seconds": 50
     },
@@ -51,7 +51,7 @@
         3
       ],
       "explanation": "Résultat net part du groupe = 900 − 150 = 750 k€. L'écart de conversion est partagé : 75 % × (−200) = −150 k€ pour le groupe et −50 k€ pour les PNC (IAS 21 §41). Les écarts actuariels de la mère reviennent intégralement au groupe : +40 k€. Résultat global part du groupe = 750 − 150 + 40 = 640 k€ (option 4) ; part des PNC = 150 − 50 = 100 k€. L'option 1 (590) impute la totalité de l'écart de conversion au groupe. L'option 2 (740) est le résultat global total de l'ensemble consolidé (640 + 100), non ventilé. L'option 3 (790) oublie l'écart de conversion.",
-      "source_ref": "IAS 1 §81B et §82A ; IAS 21 §41 (règlement UE 2023/1803)",
+      "source_ref": "IFRS 18 §87 et §88 (règlement UE 2023/1803 modifié par le règl. UE 2026/338 ; ex-IAS 1 §81B et §82A) ; IAS 21 §41 (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 90
     },
@@ -70,8 +70,8 @@
       "statement": "Dans un état de la situation financière consolidé établi en IFRS, les participations ne donnant pas le contrôle sont présentées au sein des capitaux propres, séparément des capitaux propres attribuables aux propriétaires de la société mère.",
       "answer": true,
       "justification": "Vrai : IFRS 10 §22 impose de présenter les PNC dans les capitaux propres, distinctement de la part des propriétaires de la mère.",
-      "explanation": "Les minoritaires sont des apporteurs de capitaux propres de l'ensemble consolidé : leurs droits ne sont pas des dettes. IFRS 10 §22 et IAS 1 §54(q) et (r) prévoient une ligne « participations ne donnant pas le contrôle » au sein des capitaux propres, à côté du capital et des réserves attribuables aux propriétaires de la mère. Le résultat net et le résultat global sont de même ventilés entre les deux catégories (IAS 1 §81B).",
-      "source_ref": "IFRS 10 §22 ; IAS 1 §54(q)-(r) et §81B (règlement UE 2023/1803)",
+      "explanation": "Les minoritaires sont des apporteurs de capitaux propres de l'ensemble consolidé : leurs droits ne sont pas des dettes. IFRS 10 §22 et IFRS 18 §104 (ex-IAS 1 §54 q et r) prévoient une ligne « participations ne donnant pas le contrôle » au sein des capitaux propres, à côté du capital et des réserves attribuables aux propriétaires de la mère. Le résultat net et le résultat global sont de même ventilés entre les deux catégories (IFRS 18 §76 et §87).",
+      "source_ref": "IFRS 10 §22 (règlement UE 2023/1803) ; IFRS 18 §76, §87 et §104 (règlement UE 2023/1803 modifié par le règl. UE 2026/338 ; ex-IAS 1 §54 q-r et §81B)",
       "verified": true,
       "estimated_seconds": 40
     },
@@ -230,8 +230,8 @@
       ],
       "front": "IFRS : quels autres éléments du résultat global (OCI) sont recyclables en résultat, et lesquels ne le sont pas ?",
       "back": "Recyclables : écarts de conversion des activités à l'étranger (reclassés à la cession), partie efficace des couvertures de flux de trésorerie.\nNon recyclables : écarts de réévaluation des immobilisations (IAS 16), écarts actuariels des régimes à prestations définies (IAS 19), variations de juste valeur des instruments de capitaux propres classés sur option en OCI (IFRS 9).\nL'état du résultat global présente séparément ces deux groupes.",
-      "explanation": "IAS 1 §82A impose de regrouper les OCI selon qu'ils seront ou non reclassés ultérieurement en résultat. Le règlement ANC 2020-01 ne comporte pas d'état du résultat global : les écarts de conversion y sont inscrits directement en capitaux propres.",
-      "source_ref": "IAS 1 §7 et §82A ; IAS 21 §48 ; IAS 16 §39 ; IAS 19 §120 ; IFRS 9 §5.7.5 (règlement UE 2023/1803)",
+      "explanation": "IFRS 18 §88 (ex-IAS 1 §82A) impose de regrouper les OCI selon qu'ils seront ou non reclassés ultérieurement en résultat. Le règlement ANC 2020-01 ne comporte pas d'état du résultat global : les écarts de conversion y sont inscrits directement en capitaux propres.",
+      "source_ref": "IFRS 18 §88 et B87 (règlement UE 2023/1803 modifié par le règl. UE 2026/338 ; ex-IAS 1 §7 et §82A) ; IAS 21 §48 ; IAS 16 §39 ; IAS 19 §120 ; IFRS 9 §5.7.5 (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 45
     }

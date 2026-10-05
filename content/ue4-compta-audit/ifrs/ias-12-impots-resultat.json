@@ -147,7 +147,7 @@
         "différence permanente",
         "compensation"
       ],
-      "source_ref": "IAS 12 §5, §15, §24, §34-36, §47, §56 et §74 (règlement UE 2023/1803) ; IAS 1 §56 (règlement UE 2023/1803)",
+      "source_ref": "IAS 12 §5, §15, §24, §34-36, §47, §56 et §74 (règlement UE 2023/1803) ; IFRS 18 §98 (règlement UE 2023/1803 modifié par le règl. UE 2026/338 ; ex-IAS 1 §56)",
       "verified": true,
       "estimated_seconds": 900,
       "explanation": "Passif d'impôt différé brut 25 000 € (ligne de production), actif brut 50 000 € (provision et déficit reportable), d'où un actif net de 25 000 € présenté en non courant après compensation (IAS 12 §74). Le passage d'un passif net de 5 000 € à un actif net de 25 000 € se traduit par un produit d'impôt différé de 30 000 €. L'amende, non déductible, est une différence permanente sans impôt différé.",
@@ -210,7 +210,7 @@
           "answer": [
             1
           ],
-          "explanation": "Les actifs et passifs d'impôt différé sont compensés lorsque l'entité a un droit juridiquement exécutoire de compenser et qu'ils relèvent de la même administration fiscale (IAS 12 §74), ce qui est le cas ici : actif net de 25 000 €. Les impôts différés ne sont jamais classés en courant (IAS 1 §56)."
+          "explanation": "Les actifs et passifs d'impôt différé sont compensés lorsque l'entité a un droit juridiquement exécutoire de compenser et qu'ils relèvent de la même administration fiscale (IAS 12 §74), ce qui est le cas ici : actif net de 25 000 €. Les impôts différés ne sont jamais classés en courant (IFRS 18 §98, ex-IAS 1 §56)."
         },
         {
           "id": "q5-justification",
