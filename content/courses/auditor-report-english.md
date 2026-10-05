@@ -19,7 +19,7 @@
 
 **EU public-interest entities** (Regulation 537/2014, art. 10): the report also states the date of appointment and the total uninterrupted engagement period, confirms that no prohibited non-audit services were provided and that the opinion is consistent with the additional report to the audit committee.
 
-**France**: *rapport sur les comptes annuels / consolidés* ; KAM appear in the *justification des appréciations – points clés de l'audit* ; *observation* = emphasis of matter.
+**France**: *rapport sur les comptes annuels / consolidés* ; for PIEs, KAM appear in the *justification des appréciations – points clés de l'audit* (NEP 701; other entities: NEP 702, no KAM) ; *observation* = emphasis of matter ; the *vérifications spécifiques* section (NEP 9510, revised 2026) plays the role of the other information section.
 
 ## Example
 Extract: "Material uncertainty related to going concern. We draw attention to note 2, which indicates that the renewal of the group's €150m revolving credit facility, due in six months, has not yet been agreed. These events indicate that a material uncertainty exists... Our opinion is not modified in respect of this matter." The Opinion section states that the accounts give a true and fair view.
