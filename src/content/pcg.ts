@@ -1,6 +1,6 @@
 /**
- * Comptes usuels du plan comptable général (règl. ANC 2014-03, plan de comptes 2025 après le
- * règl. ANC 2022-06), pour l'aide à la saisie des écritures. Liste indicative, non exhaustive :
+ * Comptes usuels du plan comptable général (règl. ANC 2014-03, plan de comptes du PCG consolidé au
+ * 1er janvier 2026, après le règl. ANC 2022-06), pour l'aide à la saisie des écritures. Liste indicative, non exhaustive :
  * un compte absent reste saisissable.
  */
 export interface PcgAccount {
@@ -33,9 +33,15 @@ export const PCG_ACCOUNTS: readonly PcgAccount[] = [
   { number: '1511', label: 'Provisions pour litiges' },
   { number: '1514', label: 'Provisions pour amendes et pénalités' },
   { number: '1515', label: 'Provisions pour pertes de change' },
-  { number: '153', label: 'Provisions pour pensions et obligations similaires' },
-  { number: '155', label: 'Provisions pour impôts' },
-  { number: '158', label: 'Autres provisions pour charges' },
+  { number: '1516', label: 'Provisions pour pertes sur contrats' },
+  { number: '1518', label: 'Autres provisions pour risques' },
+  { number: '152', label: 'Provisions pour charges' },
+  { number: '1521', label: 'Provisions pour pensions et obligations similaires' },
+  { number: '1522', label: 'Provisions pour restructurations' },
+  { number: '1523', label: 'Provisions pour impôts' },
+  { number: '1525', label: 'Provisions pour gros entretien ou grandes révisions' },
+  { number: '1526', label: 'Provisions pour remise en état' },
+  { number: '1527', label: 'Autres provisions pour charges' },
   { number: '161', label: 'Emprunts obligataires convertibles' },
   { number: '163', label: 'Autres emprunts obligataires' },
   { number: '164', label: 'Emprunts auprès des établissements de crédit' },
@@ -121,12 +127,11 @@ export const PCG_ACCOUNTS: readonly PcgAccount[] = [
   { number: '506', label: 'Obligations' },
   { number: '508', label: 'Autres valeurs mobilières de placement' },
   { number: '512', label: 'Banque' },
-  { number: '514', label: 'Chèques postaux' },
   { number: '519', label: 'Concours bancaires courants' },
-  { number: '5186', label: 'Intérêts courus à payer' },
+  { number: '5181', label: 'Intérêts courus à payer' },
   { number: '52', label: 'Instruments financiers à terme et jetons détenus' },
-  { number: '530', label: 'Caisse' },
-  { number: '580', label: 'Virements internes' },
+  { number: '53', label: 'Caisse' },
+  { number: '58', label: 'Virements internes' },
   { number: '590', label: 'Dépréciations des valeurs mobilières de placement' },
   { number: '601', label: 'Achats de matières premières' },
   { number: '6031', label: 'Variation des stocks de matières premières' },
@@ -154,7 +159,6 @@ export const PCG_ACCOUNTS: readonly PcgAccount[] = [
   { number: '666', label: 'Pertes de change' },
   { number: '6671', label: 'Valeurs comptables des immobilisations financières cédées' },
   { number: '668', label: 'Autres charges financières' },
-  { number: '671', label: 'Charges exceptionnelles sur opérations de gestion' },
   { number: '678', label: 'Autres charges exceptionnelles' },
   { number: '681', label: 'Dotations aux amortissements, dépréciations et provisions – exploitation' },
   { number: '6811', label: 'Dotations aux amortissements des immobilisations' },
