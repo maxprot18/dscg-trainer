@@ -668,7 +668,7 @@
       ],
       "title": "Recherche des passifs non enregistrés après une clôture accélérée",
       "cycle": "cloture",
-      "situation": "Vous auditez les comptes au 31/12/N de la SAS Upsilon, société de services informatiques. Pour respecter le calendrier de son actionnaire, Upsilon a avancé la clôture de ses comptes au 8 janvier N+1, contre le 20 janvier les années précédentes. Les charges à payer (comptes 408 et 4686) s'élèvent à 410 000 € contre 395 000 € en N−1, pour une activité stable. La procédure de recensement des factures non parvenues a été testée lors de l'intérim et jugée efficace. La rémunération des dirigeants ne dépend pas du résultat et aucun covenant bancaire n'est en jeu. Le seuil de signification est de 70 000 €.",
+      "situation": "Vous auditez les comptes au 31/12/N de la SAS Upsilon, société de services informatiques. Pour respecter le calendrier de son actionnaire, Upsilon a avancé la clôture de ses comptes au 8 janvier N+1, contre le 20 janvier les années précédentes. Les charges à payer (comptes 408 et 468) s'élèvent à 410 000 € contre 395 000 € en N−1, pour une activité stable. La procédure de recensement des factures non parvenues a été testée lors de l'intérim et jugée efficace. La rémunération des dirigeants ne dépend pas du résultat et aucun covenant bancaire n'est en jeu. Le seuil de signification est de 70 000 €.",
       "assertions": [
         "Exhaustivité des charges et des dettes",
         "Séparation des exercices"

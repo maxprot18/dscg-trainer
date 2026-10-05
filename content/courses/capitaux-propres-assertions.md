@@ -18,7 +18,7 @@ Soldes de clôture :
 - **Présentation et classification** : capital ventilé en 1011 (souscrit non appelé), 1012 (appelé non versé), 1013 (appelé versé) ; réserve légale (1061) distincte des réserves statutaires (1063) et facultatives (1068) ; subvention brute (131) et reprises cumulées (139) ; une subvention qui finance un bien durable n'est pas un produit d'exploitation (74). Annexe : tableau de variation des capitaux propres, composition du capital.
 
 ## Exemple
-SA Alioth, exercice N : augmentation de capital par émission de 10 000 actions de 10 € de nominal, prix d'émission 25 €, libérées à la souscription du minimum légal (moitié du nominal) et de la totalité de la prime ; l'AGO du 15 juin a voté 80 000 € de dividendes sur le résultat N−1, dont 60 000 € payés avant la clôture.
+SA Alioth, exercice N : augmentation de capital par émission de 10 000 actions de 10 € de nominal, prix d'émission 25 €, libérées à la souscription de la moitié du nominal (minimum légal : un quart, L225-144) et de la totalité de la prime ; l'AGO du 15 juin a voté 80 000 € de dividendes sur le résultat N−1, dont 60 000 € payés avant la clôture.
 Capital : 100 000 € (crédit 1011 pour 50 000 € et 1013 pour 50 000 €) ; prime d'émission : 150 000 € (1041) ; versement attesté par le certificat du dépositaire : 50 000 + 150 000 = **200 000 €** (réalité) ; capital souscrit non appelé : **50 000 €** au débit du 109, présenté à l'actif (droits et obligations). Dividendes : le 457 doit présenter 80 000 − 60 000 = **20 000 €** au crédit (exhaustivité de la dette) ; un solde nul signalerait un dividende payé non comptabilisé ou une dette omise.
 
 ## Erreurs fréquentes

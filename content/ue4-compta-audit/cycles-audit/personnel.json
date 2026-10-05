@@ -698,18 +698,18 @@
         "indemnités de fin de carrière",
         "changement de méthode"
       ],
-      "statement": "La société Thêta, soumise au PCG, provisionnait depuis plusieurs années ses indemnités de fin de carrière (compte 153). En N, pour améliorer son résultat, la direction reprend la provision et décide de ne plus faire figurer ces engagements qu’en annexe. Quelle est la position de l’auditeur ?",
+      "statement": "La société Thêta, soumise au PCG, provisionnait depuis plusieurs années ses indemnités de fin de carrière (compte 1521). En N, pour améliorer son résultat, la direction reprend la provision et décide de ne plus faire figurer ces engagements qu’en annexe. Quelle est la position de l’auditeur ?",
       "options": [
         "Il l’accepte : la provision des engagements de retraite est facultative en règles françaises",
         "Il l’accepte si le changement et son incidence sont décrits dans l’annexe",
         "Il exige seulement que la reprise soit présentée en résultat exceptionnel",
-        "Il la refuse : la comptabilisation des provisions pour retraite est la méthode préférentielle et l’abandon d’une méthode préférentielle n’est pas admis"
+        "Il la refuse : la comptabilisation des provisions pour retraite est une méthode de référence et l’adoption d’une méthode de référence est irréversible"
       ],
       "answer": [
         3
       ],
-      "explanation": "Le provisionnement des engagements de retraite est facultatif (C. com. art. L123-13), mais c’est la méthode préférentielle ; un changement de méthode n’est admis que vers une méthode préférentielle ou s’il donne une information plus pertinente, et l’adoption d’une méthode préférentielle est irréversible. La reprise est donc une anomalie dont l’auditeur demande la correction (option 4). L’option 1 ignore l’irréversibilité. L’option 2 : une information en annexe ne rend pas acceptable un changement interdit. L’option 3 traite d’un classement, sans remettre en cause la reprise elle-même.",
-      "source_ref": "C. com. art. L123-13 ; recommandation ANC 2013-02 (engagements de retraite) ; PCG, règles relatives aux changements de méthodes comptables (règl. ANC 2014-03)",
+      "explanation": "Le provisionnement des engagements de retraite est facultatif (C. com. art. L123-13), mais c’est une méthode de référence (terme du PCG depuis le règl. ANC 2022-06, anciennement « méthode préférentielle ») et l’adoption d’une méthode de référence est irréversible (PCG art. 121-5). La reprise est donc une anomalie dont l’auditeur demande la correction (option 4). L’option 1 ignore l’irréversibilité. L’option 2 : une information en annexe ne rend pas acceptable un changement interdit. L’option 3 traite d’un classement, sans remettre en cause la reprise elle-même.",
+      "source_ref": "C. com. art. L123-13 ; recommandation ANC 2013-02 (engagements de retraite) ; PCG art. 121-5 (méthodes de référence, irréversibilité) ; compte 1521",
       "verified": true,
       "estimated_seconds": 90
     },
@@ -860,12 +860,12 @@
           "id": "q4-demarche",
           "kind": "open",
           "prompt": "Comparez l’incidence aux seuils et décrivez la démarche de l’auditeur vis-à-vis de la direction.",
-          "model_answer": "L’incidence estimée (151 960 €) dépasse le seuil de signification (90 000 €). L’anomalie projetée n’est qu’une estimation : l’auditeur communique l’anomalie et sa cause systématique à la direction et lui demande de recalculer la dette de tous les salariés en comparant maintien de salaire et règle du dixième, puis de corriger les comptes 4282 et 4382. Il contrôle ensuite le nouveau calcul. Si la direction refuse de corriger, l’anomalie, significative, conduit à une opinion avec réserve (voire défavorable si ses effets étaient diffus) ; il obtient une déclaration de la direction sur les anomalies non corrigées. Il signale aussi la faiblesse de paramétrage du logiciel.",
+          "model_answer": "L’incidence estimée (151 960 €) dépasse le seuil de signification (90 000 €). L’anomalie projetée n’est qu’une estimation : l’auditeur communique l’anomalie et sa cause systématique à la direction et lui demande de recalculer la dette de tous les salariés en comparant maintien de salaire et règle du dixième, puis de corriger les comptes 4282 et 4382. Il contrôle ensuite le nouveau calcul. Si la direction refuse de corriger, l’anomalie, significative, conduit à une certification avec réserve (voire à un refus de certifier si ses effets étaient diffus) ; il obtient une déclaration de la direction sur les anomalies non corrigées. Il signale aussi la faiblesse de paramétrage du logiciel.",
           "key_points": [
             "Incidence de 151 960 € supérieure au seuil de signification",
             "Cause systématique : demande de recalcul exhaustif et de correction par la direction",
             "Contrôle du nouveau calcul par l’auditeur",
-            "En cas de refus, incidence sur l’opinion (réserve) et déclaration de la direction"
+            "En cas de refus, incidence sur l’opinion (certification avec réserve) et déclaration de la direction"
           ],
           "points": 4
         }

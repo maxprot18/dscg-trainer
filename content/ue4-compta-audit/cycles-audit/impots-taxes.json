@@ -113,11 +113,11 @@
         "impôt sur les sociétés",
         "TVA"
       ],
-      "source_ref": "NEP 500 (assertions) ; PCG comptes 444, 445, 4486",
+      "source_ref": "NEP 500 (assertions) ; PCG comptes 444, 445, 4481",
       "verified": true,
       "estimated_seconds": 60,
       "front": "Pour le cycle impôts et taxes, quelle assertion est prioritaire pour chaque poste, et avec quelle procédure type ?",
-      "back": "Dettes d'IS, de TVA et de taxes : exhaustivité (avis d'imposition, déclarations, correspondance avec l'administration).\nCharge d'IS : évaluation (preuve d'impôt, recalcul à partir du résultat fiscal).\nCrédit de TVA, acomptes d'IS excédentaires : existence (déclarations déposées, factures justificatives, relevé de solde).\nTaxes de l'exercice non liquidées : séparation des exercices (charges à payer 4486).",
+      "back": "Dettes d'IS, de TVA et de taxes : exhaustivité (avis d'imposition, déclarations, correspondance avec l'administration).\nCharge d'IS : évaluation (preuve d'impôt, recalcul à partir du résultat fiscal).\nCrédit de TVA, acomptes d'IS excédentaires : existence (déclarations déposées, factures justificatives, relevé de solde).\nTaxes de l'exercice non liquidées : séparation des exercices (charges à payer 4481).",
       "explanation": "NEP 500 : les assertions orientent le choix des procédures. Les passifs fiscaux se testent surtout en exhaustivité, les créances fiscales en existence ; la preuve d'impôt couvre l'exactitude de la charge d'IS."
     },
     {
@@ -259,7 +259,7 @@
         "provision pour impôts",
         "NEP 250"
       ],
-      "source_ref": "NEP 250 ; NEP 580 (déclarations de la direction) ; PCG compte 155 (provisions pour impôts) ; CGI art. 1727 (intérêt de retard) ; NEP 700 (rapport sur les comptes)",
+      "source_ref": "NEP 250 ; NEP 580 (déclarations de la direction) ; PCG compte 1523 (provisions pour impôts) ; CGI art. 1727 (intérêt de retard) ; NEP 700 (rapport sur les comptes)",
       "verified": true,
       "estimated_seconds": 780,
       "title": "Proposition de rectification chez Hydra",
@@ -542,10 +542,10 @@
         "impôt sur les sociétés",
         "charges à payer"
       ],
-      "source_ref": "PCG comptes 695, 444, 6312, 4486 ; NEP 450 (anomalies relevées)",
+      "source_ref": "PCG comptes 695, 444, 6333, 4386 ; C. trav. art. L6241-2 (solde de la taxe d'apprentissage, 0,09 %) et L6131-3 (recouvrement par l'Urssaf) ; NEP 450 (anomalies relevées)",
       "verified": true,
       "estimated_seconds": 240,
-      "statement": "Lors de l'audit des comptes au 31/12/N de la société Lupus, l'auditeur constate qu'aucune charge d'IS n'a été comptabilisée. Le résultat fiscal de N, établi et vérifié, s'élève à 360 000 € ; hypothèse : taux unique de 25 %. Les acomptes versés en cours d'année ont été correctement débités au compte 444. Il constate aussi que le solde de la taxe d'apprentissage dû au titre des rémunérations de N, qui sera déclaré et payé en N+1, n'a pas été comptabilisé : masse salariale N de 2 400 000 €, taux du solde de 0,09 % (hypothèse). Le résultat fiscal indiqué tient déjà compte de la déduction de ce solde. Passez l'écriture d'ajustement proposée au 31/12/N (utilisez les comptes 695, 444, 6312 et 4486).",
+      "statement": "Lors de l'audit des comptes au 31/12/N de la société Lupus, l'auditeur constate qu'aucune charge d'IS n'a été comptabilisée. Le résultat fiscal de N, établi et vérifié, s'élève à 360 000 € ; hypothèse : taux unique de 25 %. Les acomptes versés en cours d'année ont été correctement débités au compte 444. Il constate aussi que le solde de la taxe d'apprentissage dû au titre des rémunérations de N, qui sera déclaré et payé en N+1, n'a pas été comptabilisé : masse salariale N de 2 400 000 €, taux du solde de 0,09 %. Le résultat fiscal indiqué tient déjà compte de la déduction de ce solde. Passez l'écriture d'ajustement proposée au 31/12/N (utilisez les comptes 695, 444, 6333 et 4386).",
       "date": "31/12/N",
       "entries": [
         {
@@ -555,8 +555,8 @@
           "credit": 0
         },
         {
-          "account": "6312",
-          "label": "Taxe d’apprentissage",
+          "account": "6333",
+          "label": "Contribution unique à la formation professionnelle (solde de la taxe d’apprentissage)",
           "debit": 2160,
           "credit": 0
         },
@@ -567,13 +567,13 @@
           "credit": 90000
         },
         {
-          "account": "4486",
-          "label": "État — charges à payer",
+          "account": "4386",
+          "label": "Organismes sociaux — autres charges à payer",
           "debit": 0,
           "credit": 2160
         }
       ],
-      "explanation": "IS dû = 360 000 × 25 % = 90 000 € : débit 695, crédit 444 ; les acomptes déjà débités au 444 viennent en déduction et le solde du compte représente la dette (ou la créance) nette. Solde de la taxe d'apprentissage = 2 400 000 × 0,09 % = 2 160 € : la taxe est due au titre des rémunérations de N, c'est une charge de N ; son montant n'étant pas encore liquidé, elle est enregistrée en charge à payer (4486). Créditer le 444 pour le solde de taxe d'apprentissage serait une erreur : ce compte est réservé aux impôts sur les bénéfices."
+      "explanation": "IS dû = 360 000 × 25 % = 90 000 € : débit 695, crédit 444 ; les acomptes déjà débités au 444 viennent en déduction et le solde du compte représente la dette (ou la créance) nette. Solde de la taxe d'apprentissage = 2 400 000 × 0,09 % = 2 160 € : la taxe est due au titre des rémunérations de N, c'est une charge de N ; composante de la contribution unique à la formation professionnelle et à l'alternance (C. trav. art. L6131-2), elle est recouvrée par l'Urssaf avec les cotisations d'avril N+1 (L6241-2, II) : charge en 6333, charge à payer envers un organisme social en 4386. Créditer le 444 pour le solde de taxe d'apprentissage serait une erreur : ce compte est réservé aux impôts sur les bénéfices."
     },
     {
       "id": "ue4-audit-impots-0020",
@@ -737,12 +737,12 @@
         "Débit 695, crédit 512",
         "Débit 6351, crédit 512",
         "Débit 444, crédit 512",
-        "Débit 4486, crédit 512"
+        "Débit 4481, crédit 512"
       ],
       "answer": [
         2
       ],
-      "explanation": "L'acompte est une avance sur l'impôt de l'exercice : il se porte au débit du 444, qui sera crédité de l'IS dû à la clôture (débit 695). Le débiter en 695 (option 1) doublerait la charge lors de la comptabilisation de l'IS dû. Le 6351 (option 2) enregistre les impôts directs autres que l'IS. Le 4486 (option 4) sert aux charges à payer d'impôts non encore liquidés, pas aux acomptes."
+      "explanation": "L'acompte est une avance sur l'impôt de l'exercice : il se porte au débit du 444, qui sera crédité de l'IS dû à la clôture (débit 695). Le débiter en 695 (option 1) doublerait la charge lors de la comptabilisation de l'IS dû. Le 6351 (option 2) enregistre les impôts directs autres que l'IS. Le 4481 (option 4, « État – charges à payer ») sert aux charges à payer d'impôts non encore liquidés, pas aux acomptes."
     },
     {
       "id": "ue4-audit-impots-0023",

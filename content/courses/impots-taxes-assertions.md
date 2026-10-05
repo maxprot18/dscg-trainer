@@ -1,15 +1,15 @@
 # Impôts et taxes — assertions d'audit
 
-**Références :** NEP 500 (caractère probant des éléments collectés : assertions) ; NEP 315 (évaluation du risque au niveau des assertions) ; C. com. art. L123-19 (non-compensation) ; PCG comptes 444, 445, 447, 4486, 4487, 63, 695
+**Références :** NEP 500 (caractère probant des éléments collectés : assertions) ; NEP 315 (évaluation du risque au niveau des assertions) ; C. com. art. L123-19 (non-compensation) ; PCG comptes 444, 445, 447, 4481, 4482, 63, 695
 
 **Enjeu :** l'impôt est une dette envers un créancier qui ne confirme rien et dont les avis arrivent souvent après la clôture ; l'examen attend que l'on sache quelle assertion domine pour chaque poste (exhaustivité des dettes, existence des créances, évaluation de l'IS) et quelle source indépendante la couvre.
 
 Le cycle couvre l'impôt sur les sociétés (IS), la TVA et les autres impôts et taxes (contribution économique territoriale, taxes foncières, taxes assises sur les salaires). Le CAC rattache chaque risque à une assertion (NEP 315) et juge chaque élément collecté par rapport à cette assertion (NEP 500).
 
 - **Exhaustivité** : assertion clé pour les dettes fiscales et les charges d'impôts, car l'entité a intérêt à minorer son passif. Le risque principal est l'omission (IS non comptabilisé, taxe oubliée, TVA collectée sous-estimée, rappel d'impôt non provisionné) ; on part des avis d'imposition, des déclarations déposées et de la correspondance avec l'administration pour remonter vers les comptes 63 et 44.
-- **Évaluation / mesure** : exactitude du calcul de l'IS (passage du résultat comptable au résultat fiscal, taux), de la TVA due, des bases des taxes locales et des charges à payer (4486) ; la preuve d'impôt est la procédure type.
+- **Évaluation / mesure** : exactitude du calcul de l'IS (passage du résultat comptable au résultat fiscal, taux), de la TVA due, des bases des taxes locales et des charges à payer (4481) ; la preuve d'impôt est la procédure type.
 - **Existence et droits** : pour les créances fiscales (crédit de TVA 44567, acomptes d'IS excédentaires au débit du 444, créance de report en arrière des déficits, crédits d'impôt), vérifier qu'elles sont réelles, justifiées (déclarations, factures d'immobilisations à l'origine du crédit de TVA) et appartiennent à l'entité.
-- **Séparation des exercices** : rattacher chaque impôt à l'exercice de son fait générateur (taxe due au titre de N = charge de N, même si l'avis ou la liquidation arrivent en N+1 : charge à payer 4486).
+- **Séparation des exercices** : rattacher chaque impôt à l'exercice de son fait générateur (taxe due au titre de N = charge de N, même si l'avis ou la liquidation arrivent en N+1 : charge à payer 4481).
 - **Classification et présentation** : IS en 695 et non en 63 ; impôts et taxes d'exploitation en 63 ; pas de compensation entre une créance d'IS et une dette de TVA (L123-19) ; informations en annexe sur la situation fiscale (déficits reportables, contrôle en cours).
 
 **Formules clés :** dette d'IS à la clôture = IS dû de l'exercice − acomptes versés (solde créditeur du 444) ; TVA à décaisser = TVA collectée − TVA déductible

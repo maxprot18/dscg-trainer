@@ -1,6 +1,6 @@
 # Clôture — assertions d'audit
 
-**Références :** NEP 500 (caractère probant des éléments collectés, assertions) ; C. com. art. L123-12 et L123-13 (comptes annuels, rattachement des charges et produits à l'exercice) ; PCG comptes 408, 418, 4286, 4486, 4686, 4687, 486, 487
+**Références :** NEP 500 (caractère probant des éléments collectés, assertions) ; C. com. art. L123-12 et L123-13 (comptes annuels, rattachement des charges et produits à l'exercice) ; PCG comptes 408, 418, 4286, 4481, 467, 468, 486, 487
 
 **Enjeu :** les travaux de fin de mission portent sur des écritures d'inventaire sans flux de pièces (charges à payer, régularisations, annexe) ; l'examen demande de nommer l'assertion exacte visée par une procédure, et surtout de reconnaître le **sens du test** (de la pièce vers le compte ou du compte vers la pièce).
 
@@ -8,8 +8,8 @@ Les comptes de l'exercice doivent récapituler les charges et les produits de la
 
 Opérations de fin de période :
 - **Séparation des exercices (cut-off)** : charges et produits rattachés à l'exercice de la livraison ou de la prestation, quelle que soit la date de la facture ou du paiement. C'est l'assertion transversale de la clôture, mais elle se décline toujours en exhaustivité ou en réalité selon le sens de l'erreur.
-- **Exhaustivité des charges et des dettes** : toutes les charges de N sont enregistrées, y compris sans facture (charges à payer : 408, 4286, 4486, 4686). Se teste en partant d'une population **extérieure au compte** : factures reçues et décaissements de début N+1, bons de réception non facturés.
-- **Réalité des produits** : les produits à recevoir (418, 4687) correspondent à des droits acquis à la clôture ; se teste en partant du compte vers la pièce (livraison, contrat).
+- **Exhaustivité des charges et des dettes** : toutes les charges de N sont enregistrées, y compris sans facture (charges à payer : 408, 4286, 4386, 4481, 468). Se teste en partant d'une population **extérieure au compte** : factures reçues et décaissements de début N+1, bons de réception non facturés.
+- **Réalité des produits** : les produits à recevoir (418, 4482, 467) correspondent à des droits acquis à la clôture ; se teste en partant du compte vers la pièce (livraison, contrat).
 
 Soldes de régularisation :
 - **Existence et évaluation des charges constatées d'avance (486)** : la prestation reste à recevoir après la clôture et le prorata est juste ; on part des soldes du 486 vers les contrats.
