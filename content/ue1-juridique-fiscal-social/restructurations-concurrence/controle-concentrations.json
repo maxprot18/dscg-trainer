@@ -52,7 +52,7 @@
         3
       ],
       "multiple": false,
-      "explanation": "Seuils européens principaux : CA mondial cumulé 5 100 M€ > 5 000 M€ et CA dans l'UE de chaque groupe > 250 M€ (1 800 et 260 M€). Mais la dimension européenne est exclue lorsque chaque entreprise réalise plus des deux tiers de son CA européen dans un seul et même État membre : Aldric 1 500 / 1 800 = 83 %, Bastide 200 / 260 = 77 %, tous deux en France. On applique alors les seuils français (C. com. art. L. 430-2) : CA mondial cumulé > 150 M€ et CA en France de chacun > 50 M€ : notification à l'Autorité de la concurrence (option 4). L'option 1 oublie la règle des deux tiers ; l'option 2 oublie les seuils nationaux ; l'option 3 méconnaît le principe du guichet unique, une opération relevant de l'une ou de l'autre autorité.",
+      "explanation": "Seuils européens principaux : CA mondial cumulé 5 100 M€ > 5 000 M€ et CA dans l'UE de chaque groupe > 250 M€ (1 800 et 260 M€). Mais la dimension européenne est exclue lorsque chaque entreprise réalise plus des deux tiers de son CA européen dans un seul et même État membre : Aldric 1 500 / 1 800 = 83 %, Bastide 200 / 260 = 77 %, tous deux en France. On applique alors les seuils français (C. com. art. L. 430-2) : CA mondial cumulé > 250 M€ et CA en France de chacun > 80 M€ (seuils relevés par la loi n° 2026-403 du 26 mai 2026 pour les opérations notifiées à compter du 1er septembre 2026) : notification à l'Autorité de la concurrence (option 4). L'option 1 oublie la règle des deux tiers ; l'option 2 oublie les seuils nationaux ; l'option 3 méconnaît le principe du guichet unique, une opération relevant de l'une ou de l'autre autorité.",
       "source_ref": "Règlement (CE) n° 139/2004, art. 1 ; C. com. art. L. 430-2",
       "verified": true,
       "estimated_seconds": 120
@@ -89,8 +89,8 @@
         "L. 430-2"
       ],
       "front": "Quels sont les seuils de contrôle des concentrations en France (cas général) ?",
-      "back": "L'opération n'est pas de dimension européenne et :\n- le CA mondial HT total des entreprises concernées dépasse 150 M€ ;\n- au moins deux d'entre elles réalisent chacune en France un CA HT supérieur à 50 M€.\nSeuils abaissés pour le commerce de détail (75 M€ et 15 M€) et pour les outre-mer.",
-      "explanation": "Les seuils s'apprécient au niveau des groupes auxquels appartiennent les entreprises concernées. Une opération qui les franchit doit être notifiée avant sa réalisation à l'Autorité de la concurrence.",
+      "back": "L'opération n'est pas de dimension européenne et :\n- le CA mondial HT total des entreprises concernées dépasse 250 M€ ;\n- au moins deux d'entre elles réalisent chacune en France un CA HT supérieur à 80 M€.\nSeuils abaissés pour le commerce de détail (100 M€ et 20 M€) et pour les outre-mer.",
+      "explanation": "Seuils relevés par la loi n° 2026-403 du 26 mai 2026, applicables aux opérations notifiées à compter du 1er septembre 2026 (auparavant 150 M€ et 50 M€, 75 M€ et 15 M€ pour le commerce de détail). Les seuils s'apprécient au niveau des groupes auxquels appartiennent les entreprises concernées. Une opération qui les franchit doit être notifiée avant sa réalisation à l'Autorité de la concurrence.",
       "source_ref": "C. com. art. L. 430-2",
       "verified": true,
       "estimated_seconds": 35
