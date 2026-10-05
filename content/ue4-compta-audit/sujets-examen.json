@@ -18,7 +18,7 @@
         "éliminations",
         "intérêts minoritaires"
       ],
-      "source_ref": "Règl. ANC 2020-01 (périmètre, méthodes, retraitements d’homogénéisation, location-financement, écarts d’évaluation et d’acquisition, impôts différés, éliminations des opérations internes, partage des capitaux propres) ; C. com. art. L. 233-16 (obligation de consolider, contrôle exclusif et conjoint), L. 233-17-2 (périmètre, présomption d’influence notable à 20 %) et L. 233-18 (méthodes) ; comptes PCG 106, 120, 145, 155, 276 (convention), 37",
+      "source_ref": "Règl. ANC 2020-01 (périmètre, méthodes, retraitements d’homogénéisation, location-financement, écarts d’évaluation et d’acquisition, impôts différés, éliminations des opérations internes, partage des capitaux propres) ; C. com. art. L. 233-16 (obligation de consolider, contrôle exclusif et conjoint), L. 233-17-2 (périmètre, présomption d’influence notable à 20 %) et L. 233-18 (méthodes) ; comptes PCG 106, 120, 145, 1523, 276 (convention), 37",
       "verified": true,
       "estimated_seconds": 5400,
       "total_points": 20,
@@ -39,7 +39,7 @@
         },
         {
           "title": "Annexe 4 — Opérations intra-groupe de l’exercice N",
-          "content": "- **Ventes de fours** : Bréhat a commencé en N à vendre des fours à Arverne SA, qui les revend à sa clientèle. Ventes de l’exercice : 600 000 € HT. Au 31/12/N, le stock d’Arverne comprend des fours achetés à Bréhat pour **90 000 €**. Bréhat réalise sur ces ventes une marge de **25 % du prix de vente**.\n- **Dividendes** : sur le dividende de 150 000 € versé par Bréhat en juin N, Arverne SA a encaissé **120 000 €**, comptabilisés en produits de participations.\n- Aucune autre opération intra-groupe n’a d’incidence sur le résultat. Les créances et dettes réciproques ont déjà été éliminées par le DAF.\n\n**Conventions de comptes pour les écritures de consolidation** (écritures passées au bilan consolidé) : 106 Réserves consolidées ; 120 Résultat consolidé ; 145 Amortissements dérogatoires ; 155 Impôts différés passifs ; 276 Impôts différés actifs ; 37 Stocks de marchandises."
+          "content": "- **Ventes de fours** : Bréhat a commencé en N à vendre des fours à Arverne SA, qui les revend à sa clientèle. Ventes de l’exercice : 600 000 € HT. Au 31/12/N, le stock d’Arverne comprend des fours achetés à Bréhat pour **90 000 €**. Bréhat réalise sur ces ventes une marge de **25 % du prix de vente**.\n- **Dividendes** : sur le dividende de 150 000 € versé par Bréhat en juin N, Arverne SA a encaissé **120 000 €**, comptabilisés en produits de participations.\n- Aucune autre opération intra-groupe n’a d’incidence sur le résultat. Les créances et dettes réciproques ont déjà été éliminées par le DAF.\n\n**Conventions de comptes pour les écritures de consolidation** (écritures passées au bilan consolidé) : 106 Réserves consolidées ; 120 Résultat consolidé ; 145 Amortissements dérogatoires ; 1523 Impôts différés passifs ; 276 Impôts différés actifs ; 37 Stocks de marchandises."
         }
       ],
       "sub_questions": [
@@ -92,7 +92,7 @@
           "id": "q4-derogatoires",
           "kind": "journal_entry",
           "points": 2,
-          "prompt": "À l’aide de l’annexe 3, passez au bilan consolidé l’écriture d’élimination des amortissements dérogatoires de Bréhat au 31/12/N, en distinguant l’incidence sur les réserves et sur le résultat, et en constatant l’impôt différé. Utilisez les comptes 145, 106, 120 et 155 (annexe 4).",
+          "prompt": "À l’aide de l’annexe 3, passez au bilan consolidé l’écriture d’élimination des amortissements dérogatoires de Bréhat au 31/12/N, en distinguant l’incidence sur les réserves et sur le résultat, et en constatant l’impôt différé. Utilisez les comptes 145, 106, 120 et 1523 (annexe 4).",
           "date": "31/12/N",
           "entries": [
             {
@@ -114,7 +114,7 @@
               "credit": 7500
             },
             {
-              "account": "155",
+              "account": "1523",
               "label": "Impôts différés passifs",
               "debit": 0,
               "credit": 10000
@@ -264,7 +264,7 @@
         "opinion",
         "vérifications spécifiques"
       ],
-      "source_ref": "C. com. art. L. 821-40 (désignation), L. 821-44 (mandat de six exercices), L. 821-25 et s. (déontologie et indépendance), L. 821-53 (certification), L. 821-54 (vérifications spécifiques), L. 821-56 (signalement à l’assemblée), art. L. 123-21 (principe de réalisation) ; CGI art. 283, 3 (TVA due du fait de sa facturation) ; code de déontologie (décret n° 2020-292) ; NEP 210, 240, 315, 320, 330, 450, 501, 510, 700, 9510 ; PCG comptes 355, 411, 416, 487, 491, 6817, 701, 7135",
+      "source_ref": "C. com. art. L. 821-40 (désignation), L. 821-44 (mandat de six exercices), L. 821-25 et s. (déontologie et indépendance), L. 821-53 (certification), L. 821-54 (vérifications spécifiques), L. 821-10 (signalement à l’assemblée), art. L. 123-21 (principe de réalisation) ; CGI art. 283, 3 (TVA due du fait de sa facturation) ; code de déontologie (décret n° 2020-292) ; NEP 210, 240, 315, 320, 330, 450, 501, 510, 700, 9510 ; PCG comptes 355, 411, 416, 487, 491, 6817, 701, 7135",
       "verified": true,
       "estimated_seconds": 4800,
       "total_points": 20,
@@ -490,11 +490,11 @@
           "kind": "open",
           "points": 2,
           "prompt": "À l’aide de l’annexe 4, indiquez les diligences et les conclusions du commissaire aux comptes sur le projet de rapport de gestion, au titre des vérifications spécifiques, en tenant compte des corrections acceptées par la direction. Précisez l’incidence éventuelle sur l’opinion.",
-          "model_answer": "Au titre des vérifications spécifiques (C. com. art. L. 821-54 ; NEP 9510), le commissaire aux comptes vérifie la sincérité et la concordance avec les comptes annuels des informations données dans le rapport de gestion sur la situation financière et les comptes, et il atteste la sincérité et la concordance avec les comptes des informations relatives aux délais de paiement.\n\n**Concordance** : après correction des constats 1 et 3, le chiffre d’affaires 2026 s’établit à 14 104 000 € (14 200 000 − 96 000) et le résultat net à 746 400 € (795 000 − 48 600, soit 28 800 + 36 000 nets d’impôt). Les montants de 14,2 M€ et de 795 000 € ne concordent plus avec les comptes ; la hausse annoncée doit également être recalculée. Le commissaire aux comptes demande la mise à jour du rapport de gestion.\n\n**Délais de paiement** : l’information sur les factures émises non réglées dont le terme est échu, ventilée par tranches de retard, est obligatoire au même titre que celle sur les factures reçues ; son omission est une inexactitude à faire corriger.\n\n**Conclusion** : si la direction met à jour le rapport, le commissaire aux comptes conclut qu’il n’a pas d’observation à formuler sur la sincérité et la concordance de ces informations avec les comptes, à l’exception de l’incidence du point décrit dans le fondement de son opinion avec réserve (le résultat de 746 400 € intègre la créance non dépréciée). À défaut, il formule des observations dans la partie « Vérifications spécifiques » de son rapport, décrivant les défauts de concordance et l’omission, et les signale à l’assemblée. Ces constats n’ont **aucune incidence sur l’opinion** sur les comptes : une erreur du rapport de gestion donne lieu à une observation, pas à une réserve.",
+          "model_answer": "Au titre des vérifications spécifiques (C. com. art. L. 821-54 ; NEP 9510), le commissaire aux comptes vérifie la sincérité et la concordance avec les comptes annuels des informations données dans le rapport de gestion sur la situation financière et les comptes, et il atteste la sincérité et la concordance avec les comptes des informations relatives aux délais de paiement.\n\n**Concordance** : après correction des constats 1 et 3, le chiffre d’affaires 2026 s’établit à 14 104 000 € (14 200 000 − 96 000) et le résultat net à 746 400 € (795 000 − 48 600, soit 28 800 + 36 000 nets d’impôt). Les montants de 14,2 M€ et de 795 000 € ne concordent plus avec les comptes ; la hausse annoncée doit également être recalculée. Le commissaire aux comptes demande la mise à jour du rapport de gestion.\n\n**Délais de paiement** : l’information sur les factures émises non réglées dont le terme est échu, ventilée par tranches de retard, est obligatoire au même titre que celle sur les factures reçues ; son omission est une irrégularité (omission d’une information prévue par les textes, NEP 9510 §18 b) à faire corriger.\n\n**Conclusion** : si la direction met à jour le rapport, le commissaire aux comptes conclut qu’il n’a pas d’observation à formuler sur la sincérité et la concordance de ces informations avec les comptes, à l’exception de l’incidence du point décrit dans le fondement de son opinion avec réserve (le résultat de 746 400 € intègre la créance non dépréciée). À défaut, il formule des observations dans la partie « Vérifications spécifiques » de son rapport sur les défauts de concordance, y mentionne l’irrégularité résultant de l’omission (NEP 9510 §22) et les signale à l’assemblée (C. com. art. L. 821-10). Ces constats n’ont **aucune incidence sur l’opinion** sur les comptes : une erreur du rapport de gestion donne lieu à une observation, pas à une réserve.",
           "key_points": [
             "Vérification de la sincérité et de la concordance avec les comptes (L. 821-54, NEP 9510)",
             "Chiffres à mettre à jour après corrections : CA 14 104 000 € et résultat net 746 400 €",
-            "Omission des délais de paiement clients : inexactitude à faire corriger",
+            "Omission des délais de paiement clients : irrégularité à faire corriger",
             "À défaut de correction : observation dans les vérifications spécifiques et signalement à l’assemblée",
             "Aucune modification de l’opinion sur les comptes du fait du rapport de gestion"
           ],

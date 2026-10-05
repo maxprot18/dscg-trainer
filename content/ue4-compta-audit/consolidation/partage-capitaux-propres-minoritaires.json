@@ -15,7 +15,7 @@
         "mise en équivalence"
       ],
       "title": "Groupe Hélios : première consolidation de Flore et d’Écume",
-      "context": "La société Hélios (H) établit des comptes consolidés selon le règlement ANC 2020-01 et retient la méthode de l'écart d'acquisition partiel (intérêts minoritaires évalués à leur quote-part de l'actif net identifiable). Taux d'impôt : 25 %.\n\nLe 01/01/N, H a acquis 70 % du capital et des droits de vote de la société Flore (F) pour 600 000 €. À cette date, les capitaux propres de F s'élèvent à 550 000 € (capital 300 000 €, réserves 250 000 €). Le seul écart entre valeur comptable et juste valeur porte sur un terrain de F, dont la juste valeur excède la valeur comptable de 100 000 €. Au 31/12/N, F dégage un résultat de 80 000 € ; elle n'a distribué aucun dividende.\n\nÉgalement le 01/01/N, H a acquis 30 % du capital de la société Écume (E) pour 110 000 €, ce qui lui confère une influence notable. Les capitaux propres de E s'élèvent à 360 000 € au 01/01/N et à 400 000 € au 31/12/N (résultat N de 40 000 €, sans distribution) ; aucun écart d'évaluation n'est identifié sur E.\n\nLes écarts d’acquisition ont une durée d’utilisation non limitée : ils ne sont pas amortis et aucune dépréciation n’est à constater en N.\n\nLes numéros de comptes utilisés en consolidation sont conventionnels : le compte 105 sert ici à l'écart d'évaluation et le compte 155 aux impôts différés passifs.",
+      "context": "La société Hélios (H) établit des comptes consolidés selon le règlement ANC 2020-01 et retient la méthode de l'écart d'acquisition partiel (intérêts minoritaires évalués à leur quote-part de l'actif net identifiable). Taux d'impôt : 25 %.\n\nLe 01/01/N, H a acquis 70 % du capital et des droits de vote de la société Flore (F) pour 600 000 €. À cette date, les capitaux propres de F s'élèvent à 550 000 € (capital 300 000 €, réserves 250 000 €). Le seul écart entre valeur comptable et juste valeur porte sur un terrain de F, dont la juste valeur excède la valeur comptable de 100 000 €. Au 31/12/N, F dégage un résultat de 80 000 € ; elle n'a distribué aucun dividende.\n\nÉgalement le 01/01/N, H a acquis 30 % du capital de la société Écume (E) pour 110 000 €, ce qui lui confère une influence notable. Les capitaux propres de E s'élèvent à 360 000 € au 01/01/N et à 400 000 € au 31/12/N (résultat N de 40 000 €, sans distribution) ; aucun écart d'évaluation n'est identifié sur E.\n\nLes écarts d’acquisition ont une durée d’utilisation non limitée : ils ne sont pas amortis et aucune dépréciation n’est à constater en N.\n\nLes numéros de comptes utilisés en consolidation sont conventionnels : le compte 105 sert ici à l'écart d'évaluation et le compte 1523 aux impôts différés passifs.",
       "entities": [
         {
           "id": "h",
@@ -59,7 +59,7 @@
               "credit": 0
             },
             {
-              "account": "155",
+              "account": "1523",
               "label": "Impôts différés passifs",
               "debit": 0,
               "credit": 25000

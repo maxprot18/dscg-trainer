@@ -134,7 +134,7 @@
           "credit": 7500
         }
       ],
-      "explanation": "À l'acquisition, le stock est porté à 130 000 € : 37 au débit pour 30 000 €, impôt différé passif (155) au crédit pour 7 500 € et écart d'évaluation (105) au crédit pour 22 500 €. Le stock étant vendu en N, le coût des ventes consolidé doit intégrer l'écart : charge supplémentaire de 30 000 € (6037), et l'impôt différé passif devenu sans objet est repris en produit (7 500 €). Les lignes 37 (débit puis crédit de 30 000 €) et 155 (crédit puis débit de 7 500 €) se compensent. Il reste : 6037 D 30 000, 105 C 22 500, 695 C 7 500. L'écart d'évaluation demeure dans les capitaux propres d'acquisition de Cirrus (il sert au calcul de l'écart d'acquisition) tandis que le résultat consolidé de N baisse de 22 500 €.",
+      "explanation": "À l'acquisition, le stock est porté à 130 000 € : 37 au débit pour 30 000 €, impôt différé passif (1523) au crédit pour 7 500 € et écart d'évaluation (105) au crédit pour 22 500 €. Le stock étant vendu en N, le coût des ventes consolidé doit intégrer l'écart : charge supplémentaire de 30 000 € (6037), et l'impôt différé passif devenu sans objet est repris en produit (7 500 €). Les lignes 37 (débit puis crédit de 30 000 €) et 1523 (crédit puis débit de 7 500 €) se compensent. Il reste : 6037 D 30 000, 105 C 22 500, 695 C 7 500. L'écart d'évaluation demeure dans les capitaux propres d'acquisition de Cirrus (il sert au calcul de l'écart d'acquisition) tandis que le résultat consolidé de N baisse de 22 500 €.",
       "source_ref": "Règl. ANC 2020-01, écarts d'évaluation sur stocks et impôts différés ; IFRS 3 §18 (règlement UE 2023/1803) ; PCG comptes 6037 et 695",
       "verified": true,
       "estimated_seconds": 240

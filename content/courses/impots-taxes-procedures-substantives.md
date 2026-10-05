@@ -8,7 +8,7 @@
 - **Compte 444** : débit = acomptes versés ; crédit = IS dû de l'exercice (695 / 444). Le solde final est une dette (créditeur) ou une créance (débiteur), rapprochée de la liquidation (relevé de solde) et du paiement de N+1.
 - **TVA** : rapprocher les soldes des comptes 4455 / 44567 de la dernière déclaration ; recalculer une TVA collectée théorique ; examiner la TVA déductible sur un échantillon de factures (mentions obligatoires, droit à déduction, exclusions).
 - **Autres impôts et taxes** : rapprocher les charges du compte 63 des avis d'imposition et des déclarations ; vérifier les charges à payer (4486) pour les taxes de l'exercice non encore liquidées (taxes assises sur les salaires de N déclarées en N+1).
-- **Risque fiscal** : lire la correspondance avec l'administration (avis de vérification, propositions de rectification), interroger le conseil fiscal, apprécier la provision pour impôts (155) et l'information en annexe ; obtenir une déclaration écrite de la direction (NEP 580), qui complète mais ne remplace pas les éléments probants.
+- **Risque fiscal** : lire la correspondance avec l'administration (avis de vérification, propositions de rectification), interroger le conseil fiscal, apprécier la provision pour impôts (1523) et l'information en annexe ; obtenir une déclaration écrite de la direction (NEP 580), qui complète mais ne remplace pas les éléments probants.
 - **Crédits d'impôt** : examen du dossier justificatif (dépenses éligibles, agréments) et recalcul.
 
 ```diagram

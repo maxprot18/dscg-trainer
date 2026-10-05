@@ -1,6 +1,6 @@
 # Audit and assurance vocabulary
 
-**References:** ISA 200, 320, 450, 501, 505, 570, 580, 701, 705 and 706 (IAASB) ; ISRE 2410 ; NEP 320, 700, 701 and 705 (French standards based on the ISAs)
+**References:** ISA 200, 320, 450, 501, 505, 570, 580, 701, 705 and 706 (IAASB) ; ISRE 2410 ; NEP 320, 700 and 701 (French standards based on the ISAs)
 
 **Key issue:** the audit vocabulary of UE 4 has an exact English equivalent in the ISAs; the exam uses extracts of auditor's reports or engagement letters and asks you to identify the level of assurance, the type of opinion or the procedure described.
 

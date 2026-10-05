@@ -92,7 +92,7 @@
         "réserves",
         "résultat"
       ],
-      "statement": "Au 01/01/N, les amortissements dérogatoires de la société Ivoire, filiale intégrée globalement à 100 %, s'élèvent à 24 000 €. Ivoire a doté 8 000 € en N. Taux d'impôt : 25 %.\n\nPassez l'écriture de retraitement au bilan consolidé du 31/12/N. Conventions : 145 Amortissements dérogatoires, 155 Impôts différés passifs, 106 Réserves, 120 Résultat de l'exercice.",
+      "statement": "Au 01/01/N, les amortissements dérogatoires de la société Ivoire, filiale intégrée globalement à 100 %, s'élèvent à 24 000 €. Ivoire a doté 8 000 € en N. Taux d'impôt : 25 %.\n\nPassez l'écriture de retraitement au bilan consolidé du 31/12/N. Conventions : 145 Amortissements dérogatoires, 1523 Impôts différés passifs, 106 Réserves, 120 Résultat de l'exercice.",
       "date": "31/12/N",
       "entries": [
         {
@@ -102,7 +102,7 @@
           "credit": 0
         },
         {
-          "account": "155",
+          "account": "1523",
           "label": "Impôts différés passifs",
           "debit": 0,
           "credit": 8000
@@ -226,7 +226,7 @@
         "intérêts minoritaires"
       ],
       "title": "Groupe Cèdre : retraitements chez la filiale Érable",
-      "context": "La société Cèdre (C) détient 80 % du capital et des droits de vote de la société Érable (E), intégrée globalement selon le règlement ANC 2020-01. Taux d'impôt : 25 %.\n\n1. Amortissements dérogatoires : au 01/01/N, ils s'élèvent à 40 000 € dans les comptes d'Érable. En N, Érable a comptabilisé une reprise de 5 000 €.\n2. Crédit-bail : le 01/01/N, Érable a pris en crédit-bail un matériel d'une valeur de 90 000 €, amortissable linéairement sur 6 ans dans le groupe. La redevance annuelle (payée le 31/12) est de 18 000 €, dont 4 500 € d'intérêts au titre de N. Érable comptabilise les redevances en charges.\n\nConventions pour les écritures : 145 Amortissements dérogatoires, 155 Impôts différés passifs, 106 Réserves, 120 Résultat de l'exercice.",
+      "context": "La société Cèdre (C) détient 80 % du capital et des droits de vote de la société Érable (E), intégrée globalement selon le règlement ANC 2020-01. Taux d'impôt : 25 %.\n\n1. Amortissements dérogatoires : au 01/01/N, ils s'élèvent à 40 000 € dans les comptes d'Érable. En N, Érable a comptabilisé une reprise de 5 000 €.\n2. Crédit-bail : le 01/01/N, Érable a pris en crédit-bail un matériel d'une valeur de 90 000 €, amortissable linéairement sur 6 ans dans le groupe. La redevance annuelle (payée le 31/12) est de 18 000 €, dont 4 500 € d'intérêts au titre de N. Érable comptabilise les redevances en charges.\n\nConventions pour les écritures : 145 Amortissements dérogatoires, 1523 Impôts différés passifs, 106 Réserves, 120 Résultat de l'exercice.",
       "entities": [
         {
           "id": "c",
@@ -267,7 +267,7 @@
               "credit": 0
             },
             {
-              "account": "155",
+              "account": "1523",
               "label": "Impôts différés passifs",
               "debit": 0,
               "credit": 8750

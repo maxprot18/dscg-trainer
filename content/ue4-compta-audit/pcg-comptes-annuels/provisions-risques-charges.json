@@ -120,14 +120,14 @@
           "credit": 0
         },
         {
-          "account": "1572",
+          "account": "1525",
           "label": "Provisions pour gros entretien ou grandes révisions",
           "debit": 0,
           "credit": 16000
         }
       ],
-      "explanation": "La provision pour gros entretien est constituée progressivement sur la période séparant deux révisions (5 exercices : N-1 à N+3), sur la base du coût estimé à la clôture. Au 31/12/N, deux exercices sur cinq sont écoulés : provision nécessaire = 70 000 × 2/5 = 28 000 €. La révision du coût estimé (changement d’estimation) est traitée de manière prospective dans l’exercice, sans retraitement de N-1. Dotation : 28 000 − 12 000 = 16 000 € (6815 / 1572). Une dotation calculée sur l’ancien coût (12 000 €) ou sur le seul nouveau coût annuel (14 000 €) serait insuffisante.",
-      "source_ref": "PCG art. 322-1 s. et 323-1 s. (règl. ANC 2014-03), provisions pour gros entretien ou grandes révisions ; comptes 1572 et 6815",
+      "explanation": "La provision pour gros entretien est constituée progressivement sur la période séparant deux révisions (5 exercices : N-1 à N+3), sur la base du coût estimé à la clôture. Au 31/12/N, deux exercices sur cinq sont écoulés : provision nécessaire = 70 000 × 2/5 = 28 000 €. La révision du coût estimé (changement d’estimation) est traitée de manière prospective dans l’exercice, sans retraitement de N-1. Dotation : 28 000 − 12 000 = 16 000 € (6815 / 1525). Une dotation calculée sur l’ancien coût (12 000 €) ou sur le seul nouveau coût annuel (14 000 €) serait insuffisante.",
+      "source_ref": "PCG art. 214-10, 322-1 s. et 323-1 s. (règl. ANC 2014-03), provisions pour gros entretien ou grandes révisions ; comptes 1525 et 6815",
       "estimated_seconds": 150,
       "ue": "UE4",
       "theme": "pcg-comptes-annuels",

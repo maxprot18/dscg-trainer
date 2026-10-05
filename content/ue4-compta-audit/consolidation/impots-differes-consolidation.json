@@ -109,7 +109,7 @@
         "engagements de retraite",
         "homogénéisation"
       ],
-      "statement": "Le groupe Saphir établit ses comptes consolidés en IFRS (goodwill non amorti ; taux d'impôt 25 %). Sa filiale Topaze, détenue à 100 %, ne provisionne pas ses indemnités de départ à la retraite dans ses comptes individuels ; en consolidation, l'engagement est provisionné conformément à IAS 19 (aucun écart actuariel sur la période). La provision s'élève à 40 000 € au 01/01/N et à 52 000 € au 31/12/N ; les indemnités ne sont déductibles qu'au versement.\n\nPassez l'écriture de retraitement au 31/12/N (une ligne par compte). Conventions : provision au compte 153 ; dotation de l'exercice au compte 6815 ; impôts différés actifs au compte 276 ; produit d'impôt différé au crédit du compte 695 ; incidence des exercices antérieurs, nette d'impôt, au compte 106 (réserves consolidées).",
+      "statement": "Le groupe Saphir établit ses comptes consolidés en IFRS (goodwill non amorti ; taux d'impôt 25 %). Sa filiale Topaze, détenue à 100 %, ne provisionne pas ses indemnités de départ à la retraite dans ses comptes individuels ; en consolidation, l'engagement est provisionné conformément à IAS 19 (aucun écart actuariel sur la période). La provision s'élève à 40 000 € au 01/01/N et à 52 000 € au 31/12/N ; les indemnités ne sont déductibles qu'au versement.\n\nPassez l'écriture de retraitement au 31/12/N (une ligne par compte). Conventions : provision au compte 1521 ; dotation de l'exercice au compte 6815 ; impôts différés actifs au compte 276 ; produit d'impôt différé au crédit du compte 695 ; incidence des exercices antérieurs, nette d'impôt, au compte 106 (réserves consolidées).",
       "date": "31/12/N",
       "entries": [
         {
@@ -131,7 +131,7 @@
           "credit": 0
         },
         {
-          "account": "153",
+          "account": "1521",
           "label": "Provision pour pensions et obligations similaires",
           "debit": 0,
           "credit": 52000
@@ -143,8 +143,8 @@
           "credit": 3000
         }
       ],
-      "explanation": "Provision au bilan consolidé : 52 000 € (crédit 153). Impôt différé actif : 52 000 × 25 % = 13 000 € (débit 276), la base fiscale de la provision étant nulle. Part antérieure : 40 000 € de provision nette de 10 000 € d'impôt différé = 30 000 € en réserves. Part de N : dotation de 12 000 € et produit d'impôt différé de 12 000 × 25 % = 3 000 €. Contrôle : débits 30 000 + 12 000 + 13 000 = 55 000 € = crédits 52 000 + 3 000.",
-      "source_ref": "IAS 12 §24 ; IAS 19 (règlement UE 2023/1803) ; PCG comptes 153, 6815 et 695",
+      "explanation": "Provision au bilan consolidé : 52 000 € (crédit 1521). Impôt différé actif : 52 000 × 25 % = 13 000 € (débit 276), la base fiscale de la provision étant nulle. Part antérieure : 40 000 € de provision nette de 10 000 € d'impôt différé = 30 000 € en réserves. Part de N : dotation de 12 000 € et produit d'impôt différé de 12 000 × 25 % = 3 000 €. Contrôle : débits 30 000 + 12 000 + 13 000 = 55 000 € = crédits 52 000 + 3 000.",
+      "source_ref": "IAS 12 §24 ; IAS 19 (règlement UE 2023/1803) ; PCG comptes 1521, 6815 et 695",
       "verified": true,
       "estimated_seconds": 240
     },

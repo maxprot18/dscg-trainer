@@ -111,7 +111,7 @@
       "verified": true,
       "estimated_seconds": 180,
       "explanation": "La hausse de valeur (950 000 − 800 000 = 150 000 €) est comptabilisée en autres éléments du résultat global et cumulée en capitaux propres (IAS 16 §39). La valeur comptable du terrain (950 000 €) excède sa base fiscale (800 000 €) : différence temporelle imposable de 150 000 €, d'où un passif d'impôt différé de 37 500 € (IAS 12 §15 et §20). Cet impôt différé suit l'opération qui le génère : il est comptabilisé en OCI, en diminution de l'écart de réévaluation (IAS 12 §61A-62), qui s'établit à 150 000 − 37 500 = 112 500 €. Aucune charge d'impôt n'affecte le résultat net.",
-      "statement": "Au 31/12/N, la société Scaër (IFRS) applique le modèle de la réévaluation à ses terrains. Un terrain acquis 800 000 € est réévalué à sa juste valeur de 950 000 €. La réévaluation n'a aucune incidence fiscale (la base fiscale reste de 800 000 €) ; taux d'impôt : 25 %. Passez l'écriture de réévaluation au 31/12/N, impôt différé compris. Conventions : compte 105 pour l'écart de réévaluation (OCI cumulés en capitaux propres), compte 155 pour le passif d'impôt différé.",
+      "statement": "Au 31/12/N, la société Scaër (IFRS) applique le modèle de la réévaluation à ses terrains. Un terrain acquis 800 000 € est réévalué à sa juste valeur de 950 000 €. La réévaluation n'a aucune incidence fiscale (la base fiscale reste de 800 000 €) ; taux d'impôt : 25 %. Passez l'écriture de réévaluation au 31/12/N, impôt différé compris. Conventions : compte 105 pour l'écart de réévaluation (OCI cumulés en capitaux propres), compte 1523 pour le passif d'impôt différé.",
       "date": "31/12/N",
       "entries": [
         {
@@ -127,7 +127,7 @@
           "credit": 112500
         },
         {
-          "account": "155",
+          "account": "1523",
           "label": "Impôts différés passifs",
           "debit": 0,
           "credit": 37500

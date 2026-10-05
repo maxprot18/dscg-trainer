@@ -1,6 +1,6 @@
 # Trésorerie — pièges classiques
 
-**Références :** NEP 505 (confirmations externes) ; NEP 240 (fraude) ; C. com. art. L123-19 (non-compensation) et L823-12 (révélation des faits délictueux) ; PCG art. 420-7 (liquidités en devises, règl. ANC 2014-03) ; PCG comptes 5124, 580, 666, 766, 451, 455
+**Références :** NEP 505 (confirmations externes) ; NEP 240 (fraude) ; C. com. art. L123-19 (non-compensation) et L821-10 (révélation des faits délictueux) ; PCG art. 420-7 (liquidités en devises, règl. ANC 2014-03) ; PCG comptes 5124, 58, 666, 766, 451, 455
 
 **Enjeu :** la trésorerie paraît simple à auditer, mais l'examen y place des pièges de présentation (compensation, devises, cash pooling) et de césure (chèques conservés, encaissements rattachés à tort) qui modifient les ratios sans toujours toucher le résultat.
 
@@ -8,7 +8,7 @@
 - **Compensation** : un découvert dans une banque ne se compense pas avec un solde positif dans une autre (L123-19) ; le découvert figure au passif en emprunts et dettes auprès des établissements de crédit, non en dettes fournisseurs.
 - **Chèques émis mais conservés** : chèques comptabilisés au 31/12 et remis aux fournisseurs en N+1 ; disponibilités et dettes fournisseurs sont minorées du même montant, le résultat est inchangé mais le ratio de liquidité est amélioré. Indice : délai anormal entre la date d'émission et le débit en banque.
 - **Encaissements de N+1 rattachés à N** : journal de banque maintenu ouvert ; trésorerie surévaluée et créances minorées. Indice : remises du 31/12 créditées tardivement ou partiellement sur le relevé de janvier.
-- **Virements internes et cavalerie** : un 580 non soldé, ou un virement enregistré à l'arrivée sans la sortie, fausse la trésorerie ; rapprocher les dates de débit et de crédit sur les deux relevés.
+- **Virements internes et cavalerie** : un compte 58 non soldé, ou un virement enregistré à l'arrivée sans la sortie, fausse la trésorerie ; rapprocher les dates de débit et de crédit sur les deux relevés.
 - **Fonds indisponibles** : compte nanti, séquestre, dépôt de garantie bloqué → information en annexe (engagements donnés) ; ils restent en disponibilités mais ne sont pas librement utilisables.
 - **Comptes courants de trésorerie de groupe (cash pooling)** : créance ou dette envers une entité liée (451 / 455), jamais une disponibilité, même si le solde est remboursable à vue.
 - **Suspens « divers »** : jamais validés globalement ; un suspens côté comptabilité non dénoué peut masquer un détournement.
@@ -34,6 +34,6 @@ Devises : 150 000 / 1,08 = 138 888,89 € ; perte de change de **1 111,11 €** 
 ## À retenir
 - Disponibilités en devises : gains et pertes latents en résultat, sans 476 / 477.
 - Un même montant qui minore actif et passif laisse le résultat inchangé mais modifie les ratios.
-- Le 580 doit être soldé à la clôture ; un solde résiduel est un indice de virement non dénoué ou de cavalerie.
+- Le compte 58 doit être soldé à la clôture ; un solde résiduel est un indice de virement non dénoué ou de cavalerie.
 
 **Notions liées :** [Trésorerie — procédures substantives](/cours/tresorerie-procedures-substantives) · [Opérations en devises en PCG](/cours/operations-devises-pcg) · [Cash pooling](/cours/cash-pooling-centralisation) · [Révélation des faits délictueux et alerte](/cours/revelation-faits-delictueux-alerte)
