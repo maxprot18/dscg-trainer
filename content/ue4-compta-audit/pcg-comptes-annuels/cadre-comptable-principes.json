@@ -74,7 +74,7 @@
       "answer": [
         2
       ],
-      "explanation": "Le principe de prudence impose de procéder aux dépréciations nécessaires et de tenir compte des passifs et des pertes nés au cours de l’exercice ou d’un exercice antérieur, même s’ils ne sont connus qu’entre la date de clôture et celle de l’établissement des comptes (C. com. L123-20). La liquidation révèle une situation (insolvabilité du client) qui existait déjà au 31/12/N : c’est un événement qui conduit à ajuster les comptes, donc à déprécier la créance en N (sur la base HT). « Aucune incidence » et « dépréciation en N+1 » ignorent que la perte trouve son origine avant la clôture. L’information en annexe seule est réservée aux événements postérieurs qui ne se rattachent pas à une situation existant à la clôture.",
+      "explanation": "Le principe de prudence impose de procéder aux dépréciations nécessaires et de tenir compte des passifs nés au cours de l’exercice ou d’un exercice antérieur, même s’ils ne sont connus qu’entre la date de clôture et celle de l’établissement des comptes (C. com. L123-20). La liquidation révèle une situation (insolvabilité du client) qui existait déjà au 31/12/N : c’est un événement qui conduit à ajuster les comptes, donc à déprécier la créance en N (sur la base HT). « Aucune incidence » et « dépréciation en N+1 » ignorent que la perte trouve son origine avant la clôture. L’information en annexe seule est réservée aux événements postérieurs qui ne se rattachent pas à une situation existant à la clôture.",
       "source_ref": "C. com. art. L123-20 ; PCG art. 121-1 s. (règl. ANC 2014-03)",
       "estimated_seconds": 75,
       "ue": "UE4",

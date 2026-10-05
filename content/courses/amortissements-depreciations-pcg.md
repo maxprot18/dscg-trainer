@@ -1,6 +1,6 @@
 # Amortissements et dépréciations des actifs
 
-**Références :** PCG art. 214-1 s. (amortissement), 214-15 s. (dépréciation) et dispositions du titre III sur les provisions réglementées (règl. ANC 2014-03 modifié) ; CGI art. 39 A et 39 B (amortissement dégressif, amortissement minimal) ; comptes 28, 29, 145, 6811, 6816, 6872, 7872
+**Références :** PCG art. 214-1 s. (amortissement), 214-15 s. (dépréciation), 214-8 et 313-1 (amortissements dérogatoires, provisions réglementées) (règl. ANC 2014-03 modifié) ; CGI art. 39 A et 39 B (amortissement dégressif, amortissement minimal) ; comptes 28, 29, 145, 6811, 6816, 6872, 7872
 
 **Enjeu :** le plan d'amortissement et le test de dépréciation fixent la valeur nette comptable de chaque actif et pèsent directement sur le résultat ; le sujet d'examen combine presque toujours amortissement comptable, amortissement fiscal (dérogatoire) et dépréciation.
 
@@ -23,7 +23,7 @@ L'**amortissement** répartit le montant amortissable d'un actif sur sa **durée
 Machine acquise 120 000 € HT le 10/04/N, mise en service le 01/06/N, durée d'utilisation et durée d'usage 5 ans, valeur résiduelle nulle, dégressif fiscal (taux 20 % × 1,75 = 35 %).
 Amortissement comptable N = 120 000 / 5 × 7/12 = **14 000 €** (6811 / 28154) ; amortissement fiscal N = 120 000 × 35 % × 9/12 = **31 500 €** (à partir du 1er avril) ; dérogatoire N = 31 500 − 14 000 = **17 500 €** (6872 / 145).
 N+1 : comptable 24 000 € ; fiscal = (120 000 − 31 500) × 35 % = 30 975 € ; dérogatoire 6 975 €.
-Au 31/12/N+1, un indice de perte de valeur apparaît : valeur vénale nette 60 000 €, valeur d'usage 70 000 €. VNC = 120 000 − 14 000 − 24 000 = 82 000 € ; valeur actuelle = 70 000 € ; dépréciation = **12 000 €** (6816 / 29154). Dotations futures = 70 000 × 12/41 ≈ 20 488 € par an (41 mois restants, du 01/01/N+2 au 31/05/N+3).
+Au 31/12/N+1, un indice de perte de valeur apparaît : valeur vénale nette 60 000 €, valeur d'usage 70 000 €. VNC = 120 000 − 14 000 − 24 000 = 82 000 € ; valeur actuelle = 70 000 € ; dépréciation = **12 000 €** (6816 / 29154). Dotations futures = 70 000 × 12/41 ≈ 20 488 € par an (41 mois restants, du 01/01/N+2 au 31/05/N+5).
 
 ## Erreurs fréquentes
 - Faire courir l'amortissement comptable à la date de commande ou de livraison : il commence à la mise en service (consommation des avantages) ; seul le dégressif fiscal part du premier jour du mois d'acquisition.

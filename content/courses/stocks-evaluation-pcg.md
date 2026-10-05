@@ -15,7 +15,7 @@ Un **stock** est un actif détenu pour être vendu dans le cours normal de l'act
 
 **Biens fongibles** : coût moyen pondéré (CMP, calculé après chaque entrée ou sur la période de stockage) ou premier entré, premier sorti (PEPS). Le dernier entré, premier sorti (DEPS) n'est pas admis dans les comptes individuels. Les biens identifiables (pièces uniques, numéros de série) sont suivis au coût individuel.
 
-**Dépréciation** : à la clôture, si la **valeur actuelle** (en pratique, prix de vente probable diminué des frais restant à engager pour achever et vendre) est inférieure au coût, une dépréciation est constatée article par article (6817 / 39x), sans compensation entre articles, et ajustée chaque année (reprise 7817). Les matières ne sont pas dépréciées si les produits finis auxquels elles sont destinées se vendent au-dessus de leur coût.
+**Dépréciation** : à la clôture, si la **valeur actuelle** (en pratique, prix de vente probable diminué des frais restant à engager pour achever et vendre) est inférieure au coût, une dépréciation est constatée unité par unité ou catégorie par catégorie (6817 / 39x), sans compensation entre éléments (sauf position globale documentée sur une matière première ou une marchandise, art. 214-22), et ajustée chaque année (reprise 7817). Les stocks, et les approvisionnements individualisés, affectés à un contrat de vente ferme dont le prix couvre le coût et tous les frais restant à engager restent à leur valeur d'entrée (art. 214-23).
 
 **Variation de stocks** (inventaire intermittent) : annulation du stock initial puis constatation du stock final ; marchandises et matières en 6037 / 6031 (contrepartie 37 / 31) ; produits et en-cours en 7133 / 7135 (contrepartie 33, 35).
 
@@ -32,7 +32,7 @@ Stock final = 2 000 × 49,50 = **99 000 €** (355 / 7135). Valeur actuelle = 52
 - Imputer les frais fixes sur la production réelle (240 000 / 16 000 = 15 € au lieu de 12 €) : la base est la capacité normale, la sous-activité restant en charges.
 - Admettre le DEPS « au choix » : seuls le CMP et le PEPS sont autorisés dans les comptes individuels.
 - Incorporer les frais de stockage des produits finis ou les frais de commercialisation : ils ne font pas partie du coût de production.
-- Comparer le coût au prix de vente brut : la valeur actuelle est nette des frais de vente restant à engager, et la dépréciation se calcule article par article.
+- Comparer le coût au prix de vente brut : la valeur actuelle est nette des frais de vente restant à engager, et la dépréciation se calcule unité par unité ou par catégorie.
 
 ## À retenir
 - Sous-activité : coût unitaire fixe = frais fixes / production à capacité normale, et non / production réelle.

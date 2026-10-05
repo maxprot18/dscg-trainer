@@ -49,8 +49,8 @@
       "answer": [
         2
       ],
-      "explanation": "Passer de la méthode à l'achèvement à la méthode à l'avancement modifie la règle d'évaluation des contrats : c'est un changement de méthode, toujours admis puisqu'il s'agit d'adopter la méthode de référence. Son effet à l'ouverture est imputé sur le report à nouveau et il est justifié dans l'annexe. Les trois autres situations résultent d'informations nouvelles qui modifient des estimations (durée d'utilité, risque de non-recouvrement, coût à terminaison) : ce sont des changements d'estimation, traités de façon prospective en résultat.",
-      "source_ref": "PCG art. 122-1 s. (règl. ANC 2014-03) ; PCG art. 622-1 s. ; C. com. L123-17",
+      "explanation": "Passer de la méthode à l'achèvement à la méthode à l'avancement modifie la règle d'évaluation des contrats : c'est un changement de méthode à l'initiative de l'entité, admis s'il conduit à une meilleure information financière (art. 122-2) ; il porte sur tous les contrats en cours (art. 622-7). Son effet à l'ouverture est imputé sur le report à nouveau et il est justifié dans l'annexe. Les trois autres situations résultent d'informations nouvelles qui modifient des estimations (durée d'utilité, risque de non-recouvrement, coût à terminaison) : ce sont des changements d'estimation, traités de façon prospective en résultat.",
+      "source_ref": "PCG art. 122-1 s. (règl. ANC 2014-03) ; PCG art. 622-2 et 622-7 ; C. com. L123-17",
       "estimated_seconds": 75
     },
     {
@@ -121,8 +121,8 @@
       },
       "unit": "€",
       "decimals": 0,
-      "explanation": "Le passage à la méthode de référence est un changement de méthode, appliqué rétrospectivement : l'effet cumulé à l'ouverture de l'exercice du changement, soit l'engagement au 01/01/N (150 000 €), est imputé sur le report à nouveau (débit 110 ou 119, crédit 153). L'augmentation de l'engagement au cours de N (165 000 − 150 000 = 15 000 €) relève de l'exercice N et est dotée en charges (6815). Imputer 165 000 € sur le report à nouveau serait une erreur : la variation de N doit passer par le résultat.",
-      "source_ref": "PCG art. 122-1 s. (règl. ANC 2014-03) ; C. com. L123-13 (engagements de retraite) ; compte 153",
+      "explanation": "Le passage à la méthode de référence est un changement de méthode, appliqué rétrospectivement : l'effet cumulé à l'ouverture de l'exercice du changement, soit l'engagement au 01/01/N (150 000 €), est imputé sur le report à nouveau (débit 110 ou 119, crédit 1521 « Provisions pour pensions et obligations similaires »). L'augmentation de l'engagement au cours de N (165 000 − 150 000 = 15 000 €) relève de l'exercice N et est dotée en charges (6815). Imputer 165 000 € sur le report à nouveau serait une erreur : la variation de N doit passer par le résultat.",
+      "source_ref": "PCG art. 122-3 et 324-1 (règl. ANC 2014-03) ; C. com. L123-13 (engagements de retraite) ; compte 1521",
       "estimated_seconds": 150
     },
     {
@@ -138,9 +138,9 @@
         "changement de méthode"
       ],
       "front": "À quelles conditions une entreprise peut-elle changer de méthode comptable dans ses comptes individuels ?",
-      "back": "Le changement doit être :\n- imposé par un nouveau texte (loi, règlement de l'ANC), ou\n- justifié par un changement exceptionnel dans la situation de l'entreprise ou par la recherche d'une meilleure information.\nL'adoption d'une méthode de référence est toujours admise et ne permet pas de revenir ensuite à l'ancienne méthode.",
-      "explanation": "Exception à la permanence des méthodes (C. com. L123-17 ; PCG art. 122-1 s.). L'annexe justifie le changement et en indique l'incidence ; l'effet cumulé à l'ouverture est imputé sur le report à nouveau.",
-      "source_ref": "C. com. L123-17 ; PCG art. 122-1 s. (règl. ANC 2014-03)",
+      "back": "Le changement doit :\n- résulter d'un changement de réglementation comptable (il n'a pas à être justifié), ou\n- à l'initiative de l'entité, remplir une double condition : existence d'un choix entre plusieurs méthodes conformes et meilleure information financière.\nL'adoption d'une méthode de référence n'a pas à être justifiée et est irréversible.",
+      "explanation": "Exception à la permanence des méthodes (C. com. L123-17 ; PCG art. 121-5, 122-1 et 122-2). L'annexe justifie le changement et en indique l'incidence (art. 831-2) ; l'effet cumulé à l'ouverture est imputé sur le report à nouveau (art. 122-3).",
+      "source_ref": "C. com. L123-17 ; PCG art. 121-5, 122-1 et 122-2 (règl. ANC 2014-03)",
       "estimated_seconds": 45
     }
   ]

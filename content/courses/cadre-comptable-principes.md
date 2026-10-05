@@ -10,9 +10,9 @@ Les comptes annuels doivent être **réguliers** (conformes aux règles), **sinc
 
 Principes posés par le Code de commerce et repris par le PCG :
 - **Continuité d'exploitation** : l'entreprise est présumée poursuivre ses activités (L123-20) ; si la continuité est compromise, les actifs sont évalués en valeur liquidative et l'annexe l'indique.
-- **Prudence** : seuls les bénéfices réalisés à la clôture sont comptabilisés (L123-21) ; il est procédé aux dépréciations nécessaires et il est tenu compte des passifs et pertes nés au cours de l'exercice ou d'un exercice antérieur, même connus entre la clôture et l'arrêté des comptes (L123-20).
+- **Prudence** : seuls les bénéfices réalisés à la clôture sont comptabilisés (L123-21) ; il est procédé aux amortissements, dépréciations et provisions nécessaires et il est tenu compte des passifs nés au cours de l'exercice ou d'un exercice antérieur, même connus entre la clôture et l'arrêté des comptes (L123-20).
 - **Coût historique** : les biens entrent au coût d'acquisition, de production ou à leur valeur vénale s'ils sont reçus à titre gratuit (L123-18) ; les plus-values latentes ne sont pas constatées.
-- **Permanence des méthodes** : présentation et méthodes d'évaluation ne changent pas d'un exercice à l'autre, sauf changement exceptionnel de situation ou meilleure information (L123-17), avec justification dans l'annexe.
+- **Permanence des méthodes** : présentation et méthodes comptables ne changent pas d'un exercice à l'autre, sauf cas exceptionnels (L123-17) : changement de réglementation ou changement à l'initiative de l'entité conduisant à une meilleure information (PCG art. 121-5, 122-1 et 122-2), avec justification dans l'annexe.
 - **Non-compensation** : actif et passif, charges et produits sont présentés sans compensation ; chaque élément est évalué séparément (L123-19).
 - **Intangibilité du bilan d'ouverture** : il correspond au bilan de clôture de l'exercice précédent (L123-19) ; l'effet d'un changement de méthode passe par le report à nouveau, jamais par une correction du bilan de clôture antérieur.
 - **Indépendance des exercices** : on rattache à l'exercice les charges et produits qui le concernent, et eux seuls (charges à payer, produits constatés d'avance, factures non parvenues).
@@ -38,4 +38,4 @@ La difficulté existait à la clôture : la créance est reclassée en 416 « Cl
 - Le tableau des flux de trésorerie et le rapport de gestion ne sont pas des comptes annuels au sens de L123-12.
 - La dérogation à une règle pour donner une image fidèle est exceptionnelle et doit être justifiée dans l'annexe.
 
-**Notions liées :** [Annexe et changements comptables](/cours/annexe-changements-comptables) · [Événements postérieurs à la clôture et continuité d'exploitation](/cours/evenements-posterieurs-continuite) · [Cadre conceptuel IFRS](/cours/ifrs-cadre-conceptuel) · [IAS 1 — Présentation des états financiers](/cours/ias-1-presentation-etats-financiers)
+**Notions liées :** [Annexe et changements comptables](/cours/annexe-changements-comptables) · [Événements postérieurs à la clôture et continuité d'exploitation](/cours/evenements-posterieurs-continuite) · [Cadre conceptuel IFRS](/cours/ifrs-cadre-conceptuel) · [IFRS 18 (ex-IAS 1) — Présentation des états financiers](/cours/ias-1-presentation-etats-financiers)

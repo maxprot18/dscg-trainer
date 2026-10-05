@@ -1,6 +1,6 @@
 # Trésorerie — risques
 
-**Références :** NEP 315 (évaluation du risque d'anomalies significatives) ; NEP 240 (fraude) ; NEP 265 (faiblesses du contrôle interne) ; NEP 520 (procédures analytiques) ; C. com. art. L. 821-56 (révélation des faits délictueux ; ancien art. L. 823-12, ordonnance n° 2023-1142)
+**Références :** NEP 315 (évaluation du risque d'anomalies significatives) ; NEP 240 (fraude) ; NEP 265 (faiblesses du contrôle interne) ; NEP 520 (procédures analytiques) ; C. com. art. L. 821-10 (révélation des faits délictueux ; ancien art. L. 823-12, ordonnance n° 2023-1142)
 
 **Enjeu :** la trésorerie concentre le risque de fraude (actifs liquides, volume élevé) et le risque d'habillage de la clôture (covenants calculés sur la dette nette) ; l'examen attend que l'on relie une situation donnée au risque qu'elle crée et que l'on distingue NEP 240 et révélation au procureur.
 
