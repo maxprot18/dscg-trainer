@@ -533,7 +533,7 @@
         "frais bancaires",
         "ajustement proposé"
       ],
-      "statement": "Lors de l'audit des comptes au 31/12/N de la société Tucana, l'auditeur relève trois omissions : (1) des frais de tenue de compte de décembre de 180 €, exonérés de TVA, prélevés le 31/12/N et non comptabilisés ; (2) les agios du quatrième trimestre sur le découvert, 1 240 €, débités par la banque le 05/01/N+1 et non comptabilisés en N ; (3) les intérêts courus sur un emprunt de 400 000 € au taux annuel de 3,6 %, dont l'échéance annuelle d'intérêts tombe le 31/08, non comptabilisés. Passez l'écriture d'ajustement proposée au 31/12/N, en une seule écriture (une ligne par compte). Utilisez 627 pour les frais, 661 pour l'ensemble des intérêts, 5186 (intérêts courus à payer) pour les intérêts courus sur le découvert et 1688 pour ceux de l'emprunt.",
+      "statement": "Lors de l'audit des comptes au 31/12/N de la société Tucana, l'auditeur relève trois omissions : (1) des frais de tenue de compte de décembre de 180 €, exonérés de TVA, prélevés le 31/12/N et non comptabilisés ; (2) les agios du quatrième trimestre sur le découvert, 1 240 €, débités par la banque le 05/01/N+1 et non comptabilisés en N ; (3) les intérêts courus sur un emprunt de 400 000 € au taux annuel de 3,6 %, dont l'échéance annuelle d'intérêts tombe le 31/08, non comptabilisés. Passez l'écriture d'ajustement proposée au 31/12/N, en une seule écriture (une ligne par compte). Utilisez 627 pour les frais, 661 pour l'ensemble des intérêts, 5181 (intérêts courus à payer) pour les intérêts courus sur le découvert et 1688 pour ceux de l'emprunt.",
       "date": "31/12/N",
       "entries": [
         {
@@ -555,7 +555,7 @@
           "credit": 180
         },
         {
-          "account": "5186",
+          "account": "5181",
           "label": "Intérêts courus à payer (découvert)",
           "debit": 0,
           "credit": 1240
@@ -567,8 +567,8 @@
           "credit": 4800
         }
       ],
-      "explanation": "Frais de décembre : déjà prélevés, ils diminuent le compte 512 (180 €). Agios du T4 : charge de N non encore débitée, donc dette d'intérêts courus à payer en 5186 (1 240 €). Intérêts courus sur l'emprunt du 01/09 au 31/12, soit 4 mois : 400 000 × 3,6 % × 4/12 = 4 800 €, en 1688. Total 661 = 1 240 + 4 800 = 6 040 €. Créditer 512 pour les agios serait une erreur : ils n'ont été débités qu'en N+1. Compter 8 mois (depuis le 01/01) donnerait 9 600 €.",
-      "source_ref": "PCG comptes 5186 (intérêts courus à payer), 1688 (intérêts courus sur emprunts), 627, 661 ; NEP 330",
+      "explanation": "Frais de décembre : déjà prélevés, ils diminuent le compte 512 (180 €). Agios du T4 : charge de N non encore débitée, donc dette d'intérêts courus à payer en 5181 (1 240 €). Intérêts courus sur l'emprunt du 01/09 au 31/12, soit 4 mois : 400 000 × 3,6 % × 4/12 = 4 800 €, en 1688. Total 661 = 1 240 + 4 800 = 6 040 €. Créditer 512 pour les agios serait une erreur : ils n'ont été débités qu'en N+1. Compter 8 mois (depuis le 01/01) donnerait 9 600 €.",
+      "source_ref": "PCG comptes 5181 (intérêts courus à payer), 1688 (intérêts courus sur emprunts), 627, 661 ; NEP 330",
       "verified": true,
       "estimated_seconds": 270
     },
@@ -786,7 +786,7 @@
         "écart de change",
         "ajustement proposé"
       ],
-      "statement": "Au 31/12/N, l'auditeur de la société Fornax relève deux points. (1) Le compte 580 présente un solde débiteur de 15 000 € : un virement du compte en euros de la banque A vers le compte en euros de la banque B a été exécuté le 31/12/N ; la sortie de A est comptabilisée, mais l'arrivée sur B, qui figure sur le relevé de B au 31/12/N, ne l'est pas. (2) Le compte en dollars, de 96 000 USD, est inscrit pour 88 400 € ; le cours de clôture est de 1 € = 1,12 USD et aucune écriture de conversion n'a été passée. Passez l'écriture d'ajustement proposée au 31/12/N, en une seule écriture. Utilisez 5121 pour le compte en euros de la banque B, 5124 pour le compte en dollars et 666 pour l'écart de change (montants arrondis au centime).",
+      "statement": "Au 31/12/N, l'auditeur de la société Fornax relève deux points. (1) Le compte 58 présente un solde débiteur de 15 000 € : un virement du compte en euros de la banque A vers le compte en euros de la banque B a été exécuté le 31/12/N ; la sortie de A est comptabilisée, mais l'arrivée sur B, qui figure sur le relevé de B au 31/12/N, ne l'est pas. (2) Le compte en dollars, de 96 000 USD, est inscrit pour 88 400 € ; le cours de clôture est de 1 € = 1,12 USD et aucune écriture de conversion n'a été passée. Passez l'écriture d'ajustement proposée au 31/12/N, en une seule écriture. Utilisez 5121 pour le compte en euros de la banque B, 5124 pour le compte en dollars et 666 pour l'écart de change (montants arrondis au centime).",
       "date": "31/12/N",
       "entries": [
         {
@@ -796,7 +796,7 @@
           "credit": 0
         },
         {
-          "account": "580",
+          "account": "58",
           "label": "Virements internes",
           "debit": 0,
           "credit": 15000
@@ -814,8 +814,8 @@
           "credit": 2685.71
         }
       ],
-      "explanation": "(1) Le virement est arrivé sur B en N : on débite le compte de B et on solde le compte de passage 580, qui doit être nul à la clôture. (2) Contre-valeur au cours de clôture : 96 000 / 1,12 = 85 714,29 € ; perte = 88 400 − 85 714,29 = 2 685,71 €, portée directement en charges financières (666) par le crédit du compte bancaire. Pour une disponibilité, on n'utilise ni l'écart de conversion actif 476 ni la provision pour perte de change 1515, réservés aux créances et dettes.",
-      "source_ref": "PCG comptes 580 (virements internes), 5121, 5124, 666 ; PCG, règles de conversion des liquidités en devises (règl. ANC 2014-03)",
+      "explanation": "(1) Le virement est arrivé sur B en N : on débite le compte de B et on solde le compte de passage 58, qui doit être nul à la clôture. (2) Contre-valeur au cours de clôture : 96 000 / 1,12 = 85 714,29 € ; perte = 88 400 − 85 714,29 = 2 685,71 €, portée directement en charges financières (666) par le crédit du compte bancaire. Pour une disponibilité, on n'utilise ni l'écart de conversion actif 476 ni la provision pour perte de change 1515, réservés aux créances et dettes.",
+      "source_ref": "PCG comptes 58 (virements internes), 5121, 5124, 666 ; PCG, règles de conversion des liquidités en devises (règl. ANC 2014-03)",
       "verified": true,
       "estimated_seconds": 270
     },
@@ -835,7 +835,7 @@
         "virements internes"
       ],
       "title": "Trésorerie de clôture de Thêta",
-      "context": "Vous auditez les comptes au 31/12/N de la SAS Thêta, filiale d'un groupe industriel. Seuil de signification : 30 000 €.\nLe comptable présente au bilan une ligne « Disponibilités » de 315 500 €, qui additionne les soldes suivants :\n- banque Alpha, compte en euros : solde débiteur de 84 000 € ;\n- banque Bêta, compte en euros : solde créditeur (découvert autorisé) de 37 500 €, porté en diminution ;\n- compte en dollars : 60 000 USD, inscrits pour 52 800 € ; cours de clôture 1 € = 1,20 USD, aucune conversion n'a été passée ;\n- compte à terme de 150 000 €, que la confirmation de la banque Bêta indique nanti en garantie du découvert ; l'annexe n'en fait pas mention ;\n- compte de centralisation de trésorerie avec la société mère (cash pooling), débiteur de 45 000 €, enregistré dans un sous-compte du 512 ;\n- compte 580, débiteur de 20 000 € : virement d'Alpha vers Bêta exécuté le 31/12/N, comptabilisé à la sortie d'Alpha mais pas à l'arrivée sur Bêta, alors qu'il figure sur le relevé de Bêta au 31/12/N ;\n- caisse : 1 200 €.\nConvention : le compte à terme, mobilisable à tout moment sous réserve du nantissement, reste classé en disponibilités ; sa restriction relève de l'annexe.",
+      "context": "Vous auditez les comptes au 31/12/N de la SAS Thêta, filiale d'un groupe industriel. Seuil de signification : 30 000 €.\nLe comptable présente au bilan une ligne « Disponibilités » de 315 500 €, qui additionne les soldes suivants :\n- banque Alpha, compte en euros : solde débiteur de 84 000 € ;\n- banque Bêta, compte en euros : solde créditeur (découvert autorisé) de 37 500 €, porté en diminution ;\n- compte en dollars : 60 000 USD, inscrits pour 52 800 € ; cours de clôture 1 € = 1,20 USD, aucune conversion n'a été passée ;\n- compte à terme de 150 000 €, que la confirmation de la banque Bêta indique nanti en garantie du découvert ; l'annexe n'en fait pas mention ;\n- compte de centralisation de trésorerie avec la société mère (cash pooling), débiteur de 45 000 €, enregistré dans un sous-compte du 512 ;\n- compte 58, débiteur de 20 000 € : virement d'Alpha vers Bêta exécuté le 31/12/N, comptabilisé à la sortie d'Alpha mais pas à l'arrivée sur Bêta, alors qu'il figure sur le relevé de Bêta au 31/12/N ;\n- caisse : 1 200 €.\nConvention : le compte à terme, mobilisable à tout moment sous réserve du nantissement, reste classé en disponibilités ; sa restriction relève de l'annexe.",
       "sub_questions": [
         {
           "id": "q1-disponibilites",
@@ -849,7 +849,7 @@
           },
           "unit": "€",
           "decimals": 0,
-          "explanation": "Alpha 84 000 + dollars 60 000 / 1,20 = 50 000 + compte à terme 150 000 + caisse 1 200 = 285 200 €. Le découvert Bêta, après comptabilisation de l'arrivée du virement (−37 500 + 20 000 = −17 500 €), reste créditeur et va au passif ; le 580 est soldé ; le cash pooling est une créance sur la mère. Compenser le découvert donnerait 267 700 € ; garder le 580 en disponibilités, 305 200 €."
+          "explanation": "Alpha 84 000 + dollars 60 000 / 1,20 = 50 000 + compte à terme 150 000 + caisse 1 200 = 285 200 €. Le découvert Bêta, après comptabilisation de l'arrivée du virement (−37 500 + 20 000 = −17 500 €), reste créditeur et va au passif ; le 58 est soldé ; le cash pooling est une créance sur la mère. Compenser le découvert donnerait 267 700 € ; garder le 58 en disponibilités, 305 200 €."
         },
         {
           "id": "q2-cash-pooling",
@@ -880,11 +880,11 @@
           "kind": "open",
           "points": 4,
           "prompt": "Récapitulez les anomalies de présentation et leur incidence au regard du seuil, et indiquez le traitement du nantissement.",
-          "model_answer": "Disponibilités surévaluées de 315 500 − 285 200 = 30 300 € : perte de change de 2 800 €, 580 de 20 000 € à solder, cash pooling de 45 000 € à reclasser en créance sur la mère, et découvert de 37 500 € compensé à tort (17 500 € après prise en compte du virement, à présenter au passif en dettes auprès des établissements de crédit). L'écart de présentation de la trésorerie dépasse le seuil de signification de 30 000 € ; le résultat est surévalué de 2 800 €. Le nantissement du compte à terme ne remet pas en cause son existence mais restreint la libre disposition des fonds : il doit être mentionné en annexe au titre des engagements donnés. L'auditeur demande à la direction de corriger la présentation, l'écriture de change et l'annexe ; à défaut, l'anomalie de présentation, significative, a une incidence sur son opinion.",
+          "model_answer": "Disponibilités surévaluées de 315 500 − 285 200 = 30 300 € : perte de change de 2 800 €, 58 de 20 000 € à solder, cash pooling de 45 000 € à reclasser en créance sur la mère, et découvert de 37 500 € compensé à tort (17 500 € après prise en compte du virement, à présenter au passif en dettes auprès des établissements de crédit). L'écart de présentation de la trésorerie dépasse le seuil de signification de 30 000 € ; le résultat est surévalué de 2 800 €. Le nantissement du compte à terme ne remet pas en cause son existence mais restreint la libre disposition des fonds : il doit être mentionné en annexe au titre des engagements donnés. L'auditeur demande à la direction de corriger la présentation, l'écriture de change et l'annexe ; à défaut, l'anomalie de présentation, significative, a une incidence sur son opinion.",
           "key_points": [
             "Écart sur les disponibilités : 30 300 €, supérieur au seuil de 30 000 €",
             "Découvert au passif sans compensation (C. com. art. L123-19)",
-            "Cash pooling en créance de groupe, 580 soldé, perte de change de 2 800 € en résultat",
+            "Cash pooling en créance de groupe, 58 soldé, perte de change de 2 800 € en résultat",
             "Nantissement mentionné en annexe (engagements donnés)",
             "Demande de correction et incidence sur l'opinion à défaut"
           ]

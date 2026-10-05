@@ -41,4 +41,4 @@ Réévaluations en OCI : −30 000 + 6 000 = −24 000 €. Contrôle : passif n
 - L'intérêt net s'applique au passif net : le rendement des actifs est calculé au taux d'actualisation, pas au rendement réel.
 - Médailles du travail : écarts actuariels en résultat, pas en OCI ; coût des services passés : immédiatement en résultat.
 
-**Notions liées :** [IAS 37 — Provisions](/cours/ias-37-provisions) · [Provisions pour risques et charges (PCG)](/cours/provisions-risques-charges) · [IAS 1 — Présentation des états financiers](/cours/ias-1-presentation-etats-financiers) · [Rémunération des dirigeants : fiscal et social](/cours/remuneration-dirigeants-fiscal-social)
+**Notions liées :** [IAS 37 — Provisions](/cours/ias-37-provisions) · [Provisions pour risques et charges (PCG)](/cours/provisions-risques-charges) · [IFRS 18 — Présentation des états financiers (ex-IAS 1)](/cours/ias-1-presentation-etats-financiers) · [Rémunération des dirigeants : fiscal et social](/cours/remuneration-dirigeants-fiscal-social)

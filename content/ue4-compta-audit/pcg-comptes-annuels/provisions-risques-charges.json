@@ -28,7 +28,7 @@
         }
       ],
       "explanation": "Les trois conditions de comptabilisation d'un passif sont réunies : obligation à l'égard d'un tiers à la clôture (le litige), sortie de ressources probable sans contrepartie au moins équivalente, montant estimable de façon fiable. On provisionne la meilleure estimation de la sortie de ressources (25 000 €), et non le montant réclamé (40 000 €). Le litige étant lié à l'exploitation, la dotation est enregistrée au compte 6815 (dotations aux provisions d'exploitation) par le crédit du compte 1511 (provisions pour litiges).",
-      "source_ref": "PCG art. 321-5, 322-1 et 323-1 à 323-6 (règl. ANC 2014-03) ; comptes 1511 et 6815",
+      "source_ref": "PCG art. 321-5, 322-1 et 323-2 à 323-6 (règl. ANC 2014-03) ; comptes 1511 et 6815",
       "verified": true,
       "estimated_seconds": 120
     },
@@ -120,14 +120,14 @@
           "credit": 0
         },
         {
-          "account": "1572",
+          "account": "1525",
           "label": "Provisions pour gros entretien ou grandes révisions",
           "debit": 0,
           "credit": 16000
         }
       ],
-      "explanation": "La provision pour gros entretien est constituée progressivement sur la période séparant deux révisions (5 exercices : N-1 à N+3), sur la base du coût estimé à la clôture. Au 31/12/N, deux exercices sur cinq sont écoulés : provision nécessaire = 70 000 × 2/5 = 28 000 €. La révision du coût estimé (changement d’estimation) est traitée de manière prospective dans l’exercice, sans retraitement de N-1. Dotation : 28 000 − 12 000 = 16 000 € (6815 / 1572). Une dotation calculée sur l’ancien coût (12 000 €) ou sur le seul nouveau coût annuel (14 000 €) serait insuffisante.",
-      "source_ref": "PCG art. 322-1 s. et 323-1 s. (règl. ANC 2014-03), provisions pour gros entretien ou grandes révisions ; comptes 1572 et 6815",
+      "explanation": "La provision pour gros entretien est constituée progressivement sur la période séparant deux révisions (5 exercices : N-1 à N+3), sur la base du coût estimé à la clôture. Au 31/12/N, deux exercices sur cinq sont écoulés : provision nécessaire = 70 000 × 2/5 = 28 000 €. La révision du coût estimé (changement d’estimation) est traitée de manière prospective dans l’exercice, sans retraitement de N-1. Dotation : 28 000 − 12 000 = 16 000 € (6815 / 1525). Une dotation calculée sur l’ancien coût (12 000 €) ou sur le seul nouveau coût annuel (14 000 €) serait insuffisante.",
+      "source_ref": "PCG art. 214-10, 322-1 s. et 323-1 s. (règl. ANC 2014-03), provisions pour gros entretien ou grandes révisions ; comptes 1525 et 6815",
       "estimated_seconds": 150,
       "ue": "UE4",
       "theme": "pcg-comptes-annuels",

@@ -1,8 +1,10 @@
 # IAS 8 — Méthodes comptables, changements d'estimations et erreurs
 
-**Références :** IAS 8 §5, §10-12, §14-27, §28-31, §32-40, §41-49 (règl. UE 2023/1803, amendement « Définition des estimations comptables » règl. UE 2022/357) ; IAS 16 §51 et §61
+**Références :** IAS 8 §5, §10-12, §14-27, §28-31, §32-40, §41-49 (règl. UE 2023/1803, amendement « Définition des estimations comptables » règl. UE 2022/357) ; IAS 8 §6A-6N, §27A-27I et §31A-31I, ajoutés par IFRS 18 (règl. UE 2026/338) ; IAS 16 §51 et §61
 
 **Enjeu :** qualifier un changement (méthode, estimation ou erreur) pour en déduire le traitement, rétrospectif ou prospectif, et chiffrer le retraitement des comparatifs et des capitaux propres d'ouverture ; QCM de qualification et petits calculs de retraitement, souvent avec effet d'impôt.
+
+**Base d'établissement (§6A-6N)** : avec IFRS 18 (exercices ouverts à compter du 1er janvier 2027), IAS 8, renommée « Base d'établissement des états financiers », reprend d'IAS 1 l'image fidèle et la déclaration explicite de conformité aux IFRS (§6A-6J), la continuité d'exploitation appréciée sur au moins douze mois après la clôture (§6K-6L) et la comptabilité d'engagement (§6M-6N), ainsi que les informations sur les méthodes comptables significatives (§27A-27I) et sur les sources d'incertitude relative aux estimations (§31A-31I).
 
 **Méthodes comptables (§5)** : principes, bases, conventions, règles et pratiques spécifiques appliqués pour établir les états financiers. En l'absence de norme applicable, la direction exerce son jugement en se référant d'abord aux normes traitant de questions similaires, puis au Cadre conceptuel, et enfin éventuellement aux positions d'autres normalisateurs fondés sur un cadre semblable (§10-12).
 
@@ -35,4 +37,4 @@ Dans la même année, Orion ramène de 10 à 6 ans la durée d'utilité restante
 - Durée d'utilité, valeur résiduelle et mode d'amortissement relèvent tous des estimations.
 - Une erreur sur le stock de clôture N−1 affecte deux exercices (résultat N−1 et résultat N via le stock d'ouverture) ; l'effet d'impôt suit.
 
-**Notions liées :** [Annexe et changements comptables (PCG)](/cours/annexe-changements-comptables) · [IAS 16 — Immobilisations corporelles](/cours/ias-16-immobilisations) · [IAS 1 — Présentation des états financiers](/cours/ias-1-presentation-etats-financiers) · [IAS 2 — Stocks](/cours/ias-2-stocks)
+**Notions liées :** [Annexe et changements comptables (PCG)](/cours/annexe-changements-comptables) · [IAS 16 — Immobilisations corporelles](/cours/ias-16-immobilisations) · [IFRS 18 — Présentation des états financiers (ex-IAS 1)](/cours/ias-1-presentation-etats-financiers) · [IAS 2 — Stocks](/cours/ias-2-stocks)

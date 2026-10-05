@@ -1,6 +1,6 @@
 # Analyse de l'activité et de la rentabilité (SIG, EBE, EBITDA, CAF)
 
-**Références :** méthode PCG des soldes intermédiaires de gestion (système développé) ; IAS 1 §82, §85 et §97 (règl. UE 2023/1803) ; orientations ESMA sur les indicateurs alternatifs de performance (2015)
+**Références :** méthode PCG des soldes intermédiaires de gestion (système développé) ; IFRS 18 §69, §117-118 et §123 (règl. UE 2023/1803 modifié par le règl. UE 2026/338, exercices ouverts à compter du 1er janvier 2027) ; orientations ESMA sur les indicateurs alternatifs de performance (2015)
 
 **Enjeu :** le tableau des SIG et la CAF sont le point de départ de tout diagnostic ; à l'examen, on les reconstitue à partir d'un compte de résultat, puis on commente l'évolution des marges (effet ciseau, partage de la valeur ajoutée).
 
@@ -15,7 +15,7 @@
 {"type":"flow","title":"Enchaînement des SIG de l'exemple (k€)","steps":[{"label":"Marge commerciale 220 + production 1 230","note":"négoce et production réunis"},{"label":"− consommations tiers 650","note":"matières, autres achats et charges externes"},{"label":"Valeur ajoutée 800"},{"label":"+ subventions 10 − impôts et taxes 40 − personnel 450","note":"partage de la VA"},{"label":"EBE 320","note":"avant dotations, financier, exceptionnel, IS"},{"label":"− dotations 120"},{"label":"Résultat d'exploitation 200"}]}
 ```
 
-**En IFRS**, aucun SIG n'est imposé : le groupe présente un résultat opérationnel (courant) et souvent un **EBITDA** (résultat opérationnel courant + dotations aux amortissements et dépréciations), indicateur alternatif de performance défini par le groupe lui-même et rapproché des agrégats IFRS (orientations ESMA). Sa composition varie d'un groupe à l'autre (loyers IFRS 16, éléments « non courants »).
+**En IFRS**, aucun SIG n'est imposé, mais IFRS 18 exige au compte de résultat un résultat d'exploitation et un résultat avant financement et impôts sur le résultat (§69). Le groupe publie souvent un **EBITDA** (résultat opérationnel courant + dotations aux amortissements et dépréciations), indicateur alternatif de performance rapproché des agrégats IFRS (orientations ESMA) ; calculé à partir d'un résultat « courant » ou « ajusté », c'est une mesure de la performance définie par la direction, décrite et rapprochée dans une note des états financiers (§117 et §123), ce que n'est pas le simple résultat d'exploitation avant amortissements et pertes de valeur (§118). Sa composition varie d'un groupe à l'autre (loyers IFRS 16, éléments « non courants »).
 
 **Capacité d'autofinancement (CAF)** : ressource interne dégagée par l'activité, avant toute décision de distribution.
 - additive : résultat net + dotations − reprises − quote-part des subventions d'investissement virée au résultat − produits de cession d'actifs + valeur nette comptable des actifs cédés ;
@@ -36,6 +36,6 @@ EBE = 800 + 10 − 40 − 450 = 320 ; résultat d'exploitation = 320 − 120 = 2
 ## À retenir
 - Le coût d'achat des marchandises vendues intègre la variation de stock : un stock qui augmente réduit ce coût.
 - L'EBE ne dépend ni de la politique d'amortissement ni du coût de l'endettement financier ; l'effet ciseau (charges croissant plus vite que le CA) dégrade son taux malgré la croissance.
-- L'EBITDA n'a pas de définition normalisée : vérifier sa composition avant toute comparaison entre groupes.
+- L'EBITDA n'a pas de définition normalisée : vérifier sa composition et son rapprochement avec le résultat d'exploitation avant toute comparaison entre groupes.
 
-**Notions liées :** [Rentabilité économique et effet de levier](/cours/rentabilite-effet-levier) · [Diagnostic par les flux de trésorerie](/cours/flux-tresorerie-diagnostic) · [IAS 1 — Présentation des états financiers](/cours/ias-1-presentation-etats-financiers) · [Key ratios (UE 6)](/cours/key-ratios-english)
+**Notions liées :** [Rentabilité économique et effet de levier](/cours/rentabilite-effet-levier) · [Diagnostic par les flux de trésorerie](/cours/flux-tresorerie-diagnostic) · [IFRS 18 — Présentation des états financiers (ex-IAS 1)](/cours/ias-1-presentation-etats-financiers) · [Key ratios (UE 6)](/cours/key-ratios-english)

@@ -1,6 +1,6 @@
 # Révélation des faits délictueux et procédure d'alerte
 
-**Références :** C. com. art. L. 821-56 (révélation au procureur et signalement à l'assemblée ; ancien art. L. 823-12, ordonnance n° 2023-1142) ; C. com. art. L. 234-1 (SA), L. 234-2 (autres sociétés) et L. 234-4 (suspension) ; C. com. art. L. 242-6 et L. 244-1 (abus de biens sociaux, SA et SAS), L. 241-3 (SARL) ; C. mon. fin. art. L. 561-2 et s. (Tracfin) ; NEP 250 ; NEP 570
+**Références :** C. com. art. L. 821-10 (révélation au procureur et signalement à l'assemblée ; ancien art. L. 823-12, ordonnance n° 2023-1142) ; C. com. art. L. 234-1 (SA), L. 234-2 (autres sociétés) et L. 234-4 (suspension) ; C. com. art. L. 242-6 et L. 244-1 (abus de biens sociaux, SA et SAS), L. 241-3 (SARL) ; C. mon. fin. art. L. 561-2 et s. (Tracfin) ; NEP 250 ; NEP 570
 
 **Enjeu :** deux obligations légales distinctes pèsent sur le commissaire aux comptes (CAC) : dénoncer les délits et prévenir la défaillance ; l'examen demande de savoir quand chacune se déclenche, à qui le CAC s'adresse et dans quel ordre, sans les confondre ni avec le signalement à l'assemblée ni avec la déclaration de soupçon.
 

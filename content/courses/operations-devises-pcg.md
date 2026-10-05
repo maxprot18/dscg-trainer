@@ -11,7 +11,7 @@
 - baisse d'une dette ou hausse d'une créance = **gain latent** → crédit du compte **477** « Différences de conversion – Passif ».
 Les écarts sont **contrepassés à l'ouverture** de l'exercice suivant, ce qui remet la créance ou la dette à sa valeur historique.
 
-**Prudence** : la perte latente donne lieu à une **provision pour perte de change (1515)** par le débit de 6865 ; le gain latent n'est jamais comptabilisé en produit. La provision peut être limitée à la perte nette lorsque créances et dettes dans la même devise ont des **échéances voisines** (position globale de change), ou réduite lorsque l'opération est couverte (couverture de change) ; pour un emprunt en devises à long terme, elle peut être étalée sur la durée restante.
+**Prudence** : la perte latente donne lieu à une **provision pour perte de change (1515)** par le débit de 6865 ; le gain latent n'est jamais comptabilisé en produit. La provision peut être limitée à la perte nette lorsque créances et dettes dans la même devise ont des **échéances voisines** (position globale de change), ou réduite lorsque l'opération est couverte (couverture de change) ; aucune provision n'est constituée lorsque l'opération en devises est elle-même qualifiée d'instrument de couverture (art. 420-5 et 420-6).
 
 **Liquidités en devises** : converties au cours de clôture, l'écart est directement porté en résultat (gain ou perte de change financier, 766 / 666), car il n'y a pas d'incertitude de réalisation.
 

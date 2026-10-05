@@ -45,8 +45,8 @@
       },
       "unit": "€m",
       "decimals": 0,
-      "explanation": "Free cash flow = 1,450 − 520 − 130 + 40 − 110 = €730m. Under the company's definition, the acquisition of a subsidiary (400) and dividends paid (300) are excluded: free cash flow measures the cash available, before acquisitions, for shareholders and lenders. Including the acquisition would give 330; including dividends as well, 30; forgetting lease repayments, 840. Because free cash flow is an alternative performance measure with no IFRS definition, the company's own definition must always be applied.",
-      "source_ref": "IAS 7 §10-17 and §31 (classification of cash flows) — règlement UE 2023/1803 ; ESMA Guidelines on Alternative Performance Measures (ESMA/2015/1415)",
+      "explanation": "Free cash flow = 1,450 − 520 − 130 + 40 − 110 = €730m. Under the company's definition, the acquisition of a subsidiary (400) and dividends paid (300) are excluded: free cash flow measures the cash available, before acquisitions, for shareholders and lenders. Including the acquisition would give 330; including dividends as well, 30; forgetting lease repayments, 840. Because free cash flow is an alternative performance measure with no IFRS definition, the company's own definition must always be applied. Note: Elmstead's 2025 classification of interest paid within operating activities was a permitted choice before IFRS 18; for financial years beginning on or after 1 January 2027, IAS 7 as amended requires a company whose main business activity is neither investing nor providing finance to customers to classify interest paid in financing activities (IAS 7 §34A), so a free cash flow figure \"after interest\" must then deduct it explicitly.",
+      "source_ref": "IAS 7 §10-17 and §31 (classification of cash flows) ; IAS 7 §34A as amended by IFRS 18 (Regulation (EU) 2026/338, financial years beginning on or after 1 January 2027) — règlement UE 2023/1803 ; ESMA Guidelines on Alternative Performance Measures (ESMA/2015/1415)",
       "verified": true,
       "estimated_seconds": 150
     },
@@ -170,7 +170,7 @@
       "unit": "days",
       "decimals": 1,
       "explanation": "DSO = 1,000 ÷ 7,300 × 365 = 50.0 days ; DIO = 900 ÷ 5,475 × 365 = 60.0 days ; DPO = 1,050 ÷ 5,475 × 365 = 70.0 days. Cash conversion cycle = 60.0 + 50.0 − 70.0 = 40.0 days: on average, Ottery waits 40 days between paying its suppliers and collecting cash from its customers. Classic errors: adding creditor days instead of deducting them (180.0 days), or computing inventory days on revenue instead of cost of sales (45.0 days, giving a cycle of 25.0 days).",
-      "source_ref": "IAS 1 §54(g), (h) and (k) (inventories, trade receivables and trade payables line items) — règlement UE 2023/1803 ; ESMA Guidelines on APMs (ESMA/2015/1415): company definitions to be disclosed and applied consistently",
+      "source_ref": "IFRS 18 §103(i), (j) and (m) (inventories, trade receivables and trade payables line items; formerly IAS 1 §54(g), (h) and (k)) — règlement UE 2023/1803 as amended by Regulation (EU) 2026/338 ; ESMA Guidelines on APMs (ESMA/2015/1415): company definitions to be disclosed and applied consistently",
       "verified": true,
       "estimated_seconds": 180
     },

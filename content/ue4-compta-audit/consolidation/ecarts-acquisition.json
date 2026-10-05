@@ -38,7 +38,7 @@
         3
       ],
       "explanation": "Option 4 : selon le règlement ANC 2020-01, un écart d'acquisition dont la durée d'utilisation n'est pas limitée n'est pas amorti ; il fait l'objet d'un test de dépréciation au moins une fois par exercice, et la dépréciation éventuelle n'est pas reprise. Les options 1 et 3 décrivent un amortissement, qui ne concerne que les écarts à durée d'utilisation limitée, amortis sur cette durée ; l'amortissement sur 10 ans (option 1) vise seulement l'écart à durée limitée dont la durée ne peut pas être déterminée de façon fiable, et aucun plafond de 20 ans n'existe (option 3). Ni l'un ni l'autre ne s'applique à un écart dont la durée d'utilisation n'est pas limitée. L'imputation sur les capitaux propres (option 2) n'est pas un traitement admis.",
-      "source_ref": "Règl. ANC 2020-01, écart d'acquisition : amortissement ou test de dépréciation selon la durée d'utilisation",
+      "source_ref": "Règl. ANC 2020-01 art. 231-11 (écart d'acquisition : amortissement ou test de dépréciation selon la durée d'utilisation)",
       "verified": true,
       "estimated_seconds": 60
     },
@@ -103,7 +103,7 @@
         }
       ],
       "explanation": "Amortissement annuel = 240 000 / 8 = 30 000 €. Au 31/12/N, trois exercices sont écoulés (N-2, N-1, N) : amortissement cumulé = 90 000 € au crédit du 2807. Les comptes consolidés étant reconstitués chaque année à partir des comptes individuels, les dotations de N-2 et N-1 (60 000 €) réduisent les réserves consolidées et seule la dotation de N (30 000 €) pèse sur le résultat de l'exercice. Aucun impôt différé n'est constaté sur l'écart d'acquisition.",
-      "source_ref": "Règl. ANC 2020-01, écart d'acquisition à durée d'utilisation limitée : amortissement ; IAS 12 §15 (pas d'impôt différé sur goodwill, règlement UE 2023/1803)",
+      "source_ref": "Règl. ANC 2020-01 art. 231-11 (écart d'acquisition à durée d'utilisation limitée : amortissement) et art. 272-10 (pas d'impôt différé sur un écart d'acquisition non déductible) ; IAS 12 §15 (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 180
     },

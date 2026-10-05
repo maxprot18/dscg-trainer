@@ -11,15 +11,15 @@
       "statement": "Lors de l’acquisition d’une machine, quelle dépense ne doit pas être incluse dans son coût d’acquisition ?",
       "options": [
         "Les frais de transport jusqu’à l’usine",
-        "Les frais de formation des opérateurs à l’utilisation de la machine",
+        "Les frais de la campagne publicitaire annonçant les produits fabriqués sur la machine",
         "Les frais d’installation et de montage",
         "Les droits de douane non récupérables"
       ],
       "answer": [
         1
       ],
-      "explanation": "Le coût d’acquisition comprend le prix d’achat (droits de douane et taxes non récupérables compris) et les coûts directement attribuables engagés pour mettre l’actif en place et en état de fonctionner : transport, installation, montage. Les frais de formation du personnel ne servent pas à mettre l’actif en état de fonctionner : ils sont exclus du coût et comptabilisés en charges.",
-      "source_ref": "PCG art. 213-1 s. (règl. ANC 2014-03), coût d’acquisition des immobilisations",
+      "explanation": "Le coût d’acquisition comprend le prix d’achat (droits de douane et taxes non récupérables compris) et les coûts directement attribuables engagés pour mettre l’actif en place et en état de fonctionner : transport, installation, montage. Les frais de publicité ne servent pas à mettre l’actif en place et en état de fonctionner : ils sont exclus du coût et comptabilisés en charges (art. 213-11). Les trois autres dépenses sont des éléments du coût d’acquisition (prix d’achat droits de douane compris, coûts directement attribuables).",
+      "source_ref": "PCG art. 213-8 et 213-11 (règl. ANC 2014-03), coût d’acquisition des immobilisations",
       "estimated_seconds": 45,
       "ue": "UE4",
       "theme": "pcg-comptes-annuels",
@@ -44,8 +44,8 @@
       "answer": [
         3
       ],
-      "explanation": "Les droits de mutation, honoraires, commissions et frais d’actes liés à l’acquisition peuvent être soit incorporés au coût d’acquisition, soit comptabilisés en charges. Il s’agit d’une option globale : le choix s’applique à l’ensemble des immobilisations corporelles et incorporelles (une option distincte existe pour les titres). Les deux premières propositions ignorent l’existence de l’option ; la troisième méconnaît son caractère global, qui interdit de choisir immobilisation par immobilisation.",
-      "source_ref": "PCG art. 213-8 (règl. ANC 2014-03), frais d’acquisition des immobilisations",
+      "explanation": "Les droits de mutation, honoraires, commissions et frais d’actes liés à l’acquisition peuvent être soit incorporés au coût d’acquisition, soit comptabilisés en charges (art. 213-8) ; l’incorporation constitue la méthode de référence (art. 121-5), dont l’adoption est irréversible. Il s’agit d’une option globale : le choix s’applique à l’ensemble des immobilisations corporelles et incorporelles, une option distincte pouvant être exercée pour l’ensemble des titres immobilisés et de placement (avis du Comité d’urgence du CNC n° 2005-J). Les deux premières propositions ignorent l’existence de l’option ; la troisième méconnaît son caractère global, qui interdit de choisir immobilisation par immobilisation.",
+      "source_ref": "PCG art. 213-8, 213-22 et 121-5 (règl. ANC 2014-03) ; avis du Comité d’urgence du CNC n° 2005-J du 6 décembre 2005 (caractère global de l’option)",
       "estimated_seconds": 60,
       "ue": "UE4",
       "theme": "pcg-comptes-annuels",
@@ -79,7 +79,7 @@
         "coût d’acquisition",
         "calcul"
       ],
-      "statement": "La société Tessier acquiert une ligne d’embouteillage. Données (montants HT) : prix catalogue 200 000 € ; remise commerciale de 5 % sur le prix catalogue ; transport 4 000 € ; installation et montage 6 000 € ; droits de douane 3 000 € ; essais de bon fonctionnement avant mise en service 1 500 € ; formation du personnel 2 500 € ; campagne publicitaire de lancement des nouveaux produits 3 000 €. La TVA est entièrement récupérable. Quel est le coût d’acquisition de la ligne (en euros) ?",
+      "statement": "La société Tessier acquiert une ligne d’embouteillage. Données (montants HT) : prix catalogue 200 000 € ; remise commerciale de 5 % sur le prix catalogue ; transport 4 000 € ; installation et montage 6 000 € ; droits de douane 3 000 € ; essais de bon fonctionnement avant mise en service 1 500 € ; formation du personnel par un organisme externe 2 500 € (la société a opté pour la comptabilisation en charges de ces frais) ; campagne publicitaire de lancement des nouveaux produits 3 000 €. La TVA est entièrement récupérable. Quel est le coût d’acquisition de la ligne (en euros) ?",
       "expected_value": 204500,
       "tolerance": {
         "kind": "absolute",
@@ -87,8 +87,8 @@
       },
       "unit": "€",
       "decimals": 0,
-      "explanation": "Prix d’achat net de remise : 200 000 × 0,95 = 190 000 €. On ajoute les coûts directement attribuables à la mise en place et en état de fonctionner : transport 4 000 + installation 6 000 + droits de douane 3 000 + essais 1 500. Coût d’acquisition = 190 000 + 4 000 + 6 000 + 3 000 + 1 500 = 204 500 €. La formation du personnel (2 500 €) et la publicité de lancement (3 000 €) sont exclues et comptabilisées en charges ; la TVA récupérable n’est pas un élément du coût.",
-      "source_ref": "PCG art. 213-1 s. (règl. ANC 2014-03), coût d’acquisition des immobilisations",
+      "explanation": "Prix d’achat net de remise : 200 000 × 0,95 = 190 000 €. On ajoute les coûts directement attribuables à la mise en place et en état de fonctionner : transport 4 000 + installation 6 000 + droits de douane 3 000 + essais 1 500. Coût d’acquisition = 190 000 + 4 000 + 6 000 + 3 000 + 1 500 = 204 500 €. La formation du personnel (2 500 €) est comptabilisée en charges en vertu de l’option retenue (art. 213-8) et la publicité de lancement (3 000 €) est toujours exclue du coût ; la TVA récupérable n’est pas un élément du coût.",
+      "source_ref": "PCG art. 213-8 s. (règl. ANC 2014-03), coût d’acquisition des immobilisations",
       "estimated_seconds": 150,
       "ue": "UE4",
       "theme": "pcg-comptes-annuels",

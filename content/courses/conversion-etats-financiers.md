@@ -1,6 +1,6 @@
 # Conversion des comptes des filiales étrangères
 
-**Références :** IAS 21 §8-14, §21-23, §38-48 (règl. UE 2023/1803) ; règl. ANC 2020-01 (conversion des comptes des entités étrangères : méthode du cours de clôture et méthode du cours historique)
+**Références :** IAS 21 §8-14, §21-23, §38-48 (règl. UE 2023/1803) ; règl. ANC 2020-01 art. 272-15 à 272-21 (méthode du cours de clôture et méthode du cours historique)
 
 **Enjeu :** avant d'être consolidée, une filiale qui tient ses comptes en devise doit être exprimée dans la monnaie du groupe ; le choix de la méthode dépend de sa monnaie fonctionnelle, et l'examen fait calculer l'écart de conversion puis le placer au bon endroit (capitaux propres ou résultat).
 
@@ -12,9 +12,9 @@
 - capitaux propres : cours historique (date d'entrée dans le groupe pour les capitaux propres acquis, cours de l'exercice de formation pour chaque réserve) ;
 - écart de conversion : en autres éléments du résultat global, cumulé dans une rubrique distincte des capitaux propres, partagé entre groupe et minoritaires (§41). Il mesure l'effet du change sur l'actif net d'ouverture et sur le résultat de l'exercice.
 
-**Méthode du cours historique** (filiale dont la monnaie fonctionnelle est celle de la mère mais qui tient ses comptes en devise, §21-23) : éléments monétaires au cours de clôture, éléments non monétaires au cours historique, produits et charges au cours du jour (ou moyen) sauf les dotations liées à des actifs non monétaires ; l'écart de conversion est en **résultat**. En règles françaises, les deux méthodes coexistent de même, la méthode du cours de clôture étant celle des filiales autonomes.
+**Méthode du cours historique** (filiale dont la monnaie fonctionnelle est celle de la mère mais qui tient ses comptes en devise, §21-23) : éléments monétaires au cours de clôture, éléments non monétaires au cours historique, produits et charges au cours du jour (ou moyen) sauf les dotations liées à des actifs non monétaires ; l'écart de conversion est en **résultat**. En règles françaises, les deux méthodes coexistent de même, la méthode du cours de clôture étant celle des filiales autonomes (art. 272-15 à 272-18) ; l'écart de conversion y est porté en capitaux propres (art. 272-21).
 
-**Cession** avec perte de contrôle : les écarts de conversion cumulés part du groupe sont reclassés en résultat (§48) ; une cession partielle sans perte de contrôle en réattribue une fraction aux minoritaires, sans résultat (§48C).
+**Cession** avec perte de contrôle : les écarts de conversion cumulés part du groupe sont reclassés en résultat (§48) ; une cession partielle sans perte de contrôle en réattribue une fraction aux minoritaires, sans résultat (§48C) ; en règles françaises, la fraction afférente aux titres cédés est reprise en résultat dans tous les cas (art. 272-21).
 
 ```diagram
 {"type":"flow","title":"Convertir une filiale autonome (cours de clôture)","steps":[{"label":"Déterminer la monnaie fonctionnelle","note":"IAS 21 §9-12 : environnement économique principal"},{"label":"Bilan au cours de clôture","note":"actifs et passifs, goodwill compris (§47)"},{"label":"Résultat au cours moyen","note":"approximation des cours du jour (§40)"},{"label":"Capitaux propres au cours historique","note":"date d'entrée ou de formation des réserves"},{"label":"Écart de conversion en capitaux propres","note":"OCI, partagé groupe / minoritaires (§41)"}]}

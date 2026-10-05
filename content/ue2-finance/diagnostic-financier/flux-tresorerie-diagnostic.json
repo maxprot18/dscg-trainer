@@ -38,10 +38,10 @@
         "intérêts versés",
         "comparabilité"
       ],
-      "source_ref": "IAS 7 §31-34 (règl. UE 2023/1803)",
+      "source_ref": "IAS 7 §31-34 (règl. UE 2023/1803, rédaction applicable aux exercices ouverts avant le 1er janvier 2027) ; IAS 7 §34A (rédaction issue d'IFRS 18, règl. UE 2026/338)",
       "verified": true,
       "estimated_seconds": 90,
-      "statement": "Le groupe A classe les intérêts versés en flux de financement et publie des flux nets liés à l'activité de 950 M€. Le groupe B classe ses intérêts versés (120 M€) en flux d'activité et publie des flux nets liés à l'activité de 880 M€. Sur une base comparable, les intérêts étant classés en financement dans les deux groupes :",
+      "statement": "Exercice 2026, ouvert avant le 1er janvier 2027 (IAS 7 dans sa rédaction antérieure à IFRS 18). Le groupe A classe les intérêts versés en flux de financement et publie des flux nets liés à l'activité de 950 M€. Le groupe B classe ses intérêts versés (120 M€) en flux d'activité et publie des flux nets liés à l'activité de 880 M€. Sur une base comparable, les intérêts étant classés en financement dans les deux groupes :",
       "options": [
         "A génère 70 M€ de plus que B",
         "A génère 190 M€ de plus que B",
@@ -52,7 +52,7 @@
         2
       ],
       "multiple": false,
-      "explanation": "IAS 7 §33 autorise le classement des intérêts versés en activité ou en financement. Pour comparer, on reclasse les 120 M€ d'intérêts de B en financement : ses flux d'activité deviennent 880 + 120 = 1 000 M€, contre 950 M€ pour A. B génère donc 50 M€ de plus (option 3). L'option 1 compare les montants publiés sans retraitement. L'option 2 retranche les intérêts au lieu de les réintégrer (880 − 120 = 760). L'option 4 n'a pas de fondement."
+      "explanation": "Pour un exercice ouvert avant le 1er janvier 2027, IAS 7 §33 (ancienne rédaction) autorise le classement des intérêts versés en activité ou en financement. Pour comparer, on reclasse les 120 M€ d'intérêts de B en financement : ses flux d'activité deviennent 880 + 120 = 1 000 M€, contre 950 M€ pour A. B génère donc 50 M€ de plus (option 3). L'option 1 compare les montants publiés sans retraitement. L'option 2 retranche les intérêts au lieu de les réintégrer (880 − 120 = 760). L'option 4 n'a pas de fondement. À compter des exercices ouverts le 1er janvier 2027, IAS 7 modifiée par IFRS 18 impose aux groupes industriels et commerciaux de classer les intérêts versés en financement (§34A) : ce retraitement de comparabilité devient inutile entre deux tels groupes."
     },
     {
       "id": "ue2-diag-flux-0003",
@@ -85,7 +85,7 @@
         "échéance",
         "flux de financement"
       ],
-      "source_ref": "PCG : comptes 164 (emprunts auprès des établissements de crédit), 6611 (intérêts des emprunts et dettes), 512 ; IAS 7 §17 et §33",
+      "source_ref": "PCG : comptes 164 (emprunts auprès des établissements de crédit), 6611 (intérêts des emprunts et dettes), 512 ; IAS 7 §17 et §34A (règl. UE 2023/1803 modifié par le règl. UE 2026/338)",
       "verified": true,
       "estimated_seconds": 150,
       "statement": "Le 30 juin N, une société paie l'échéance annuelle d'un emprunt bancaire : annuité de 52 000 €, dont 12 000 € d'intérêts. Les intérêts n'ont pas fait l'objet d'une écriture d'intérêts courus. Enregistrez le paiement dans les comptes individuels (comptes 164, 6611 et 512).",
@@ -110,7 +110,7 @@
           "credit": 52000
         }
       ],
-      "explanation": "L'annuité se décompose en amortissement du capital (52 000 − 12 000 = 40 000 €), qui solde partiellement la dette au compte 164, et en intérêts (12 000 €), charge financière au compte 6611. Dans le tableau des flux, le remboursement de 40 000 € est un flux de financement ; les intérêts versés sont classés en activité ou en financement selon le choix permanent de l'entité (IAS 7 §33). Seuls les intérêts affectent le résultat et la CAF."
+      "explanation": "L'annuité se décompose en amortissement du capital (52 000 − 12 000 = 40 000 €), qui solde partiellement la dette au compte 164, et en intérêts (12 000 €), charge financière au compte 6611. Dans le tableau des flux, le remboursement de 40 000 € est un flux de financement ; les intérêts versés vont en financement en IFRS pour les exercices ouverts à compter du 1er janvier 2027 (IAS 7 §34A ; auparavant, choix permanent entre activité et financement), tandis que les modèles de l'analyse financière française suivent leurs propres conventions. Seuls les intérêts affectent le résultat et la CAF."
     },
     {
       "id": "ue2-diag-flux-0005",
@@ -124,10 +124,10 @@
         "flux de trésorerie disponible",
         "mise en équivalence"
       ],
-      "source_ref": "IAS 7 §18-20 et §37-38 (règl. UE 2023/1803) ; règl. ANC 2020-01, tableau des flux de trésorerie consolidé",
+      "source_ref": "Règl. ANC 2020-01, art. 282-43 (modèle de tableau des flux de trésorerie établi à partir du résultat net des entités intégrées)",
       "verified": true,
       "estimated_seconds": 300,
-      "statement": "Données consolidées d'un groupe pour l'exercice N (en k€) : résultat net de l'ensemble consolidé 3 000 ; dotations aux amortissements 2 200 ; dotations nettes aux provisions 100 ; plus-value de cession d'immobilisations 400 (prix de cession encaissé 900) ; quote-part de résultat des sociétés mises en équivalence 250 ; dividendes reçus de ces sociétés 100 ; augmentation des stocks 300 ; augmentation des créances clients 500 ; augmentation des dettes fournisseurs 350 ; acquisitions d'immobilisations payées 3 100. Le groupe classe les intérêts versés et les dividendes reçus en flux d'activité ; l'impôt payé est égal à la charge d'impôt. Calculez le flux de trésorerie disponible (flux d'activité − acquisitions + cessions d'immobilisations), en k€.",
+      "statement": "Données consolidées d'un groupe pour l'exercice N (en k€) : résultat net de l'ensemble consolidé 3 000 ; dotations aux amortissements 2 200 ; dotations nettes aux provisions 100 ; plus-value de cession d'immobilisations 400 (prix de cession encaissé 900) ; quote-part de résultat des sociétés mises en équivalence 250 ; dividendes reçus de ces sociétés 100 ; augmentation des stocks 300 ; augmentation des créances clients 500 ; augmentation des dettes fournisseurs 350 ; acquisitions d'immobilisations payées 3 100. Le groupe établit ses comptes selon le règlement ANC 2020-01 et suit le modèle de tableau partant du résultat net : les intérêts versés et les dividendes reçus des sociétés mises en équivalence restent dans les flux d'activité ; l'impôt payé est égal à la charge d'impôt. Calculez le flux de trésorerie disponible (flux d'activité − acquisitions + cessions d'immobilisations), en k€.",
       "expected_value": 2100,
       "tolerance": {
         "kind": "absolute",
@@ -149,7 +149,7 @@
         "flux de trésorerie disponible",
         "politique de distribution"
       ],
-      "source_ref": "IAS 7 §10, §18 et §31-35 (règl. UE 2023/1803)",
+      "source_ref": "IAS 7 §10, §18, §31-35 et §34A (règl. UE 2023/1803 ; §34A issu d'IFRS 18, règl. UE 2026/338 : intérêts versés en financement pour les exercices ouverts à compter du 1er janvier 2027)",
       "verified": true,
       "estimated_seconds": 780,
       "title": "Groupe Néris : qui finance la distribution ?",

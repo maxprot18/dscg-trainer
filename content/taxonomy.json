@@ -100,7 +100,7 @@
               "title": "Lutte anticorruption (Sapin 2), devoir de vigilance, société à mission et RSE",
               "refs": [
                 "Loi n° 2016-1691 art. 17",
-                "C. com. L225-102-4",
+                "C. com. L225-102-1",
                 "C. com. L210-10",
                 "C. civ. art. 1833"
               ]
@@ -1102,7 +1102,7 @@
               "title": "Présentation des états financiers consolidés et de l’annexe",
               "refs": [
                 "Règl. ANC 2020-01",
-                "IAS 1 (règlement UE 2023/1803)"
+                "IFRS 18 (règlement UE 2023/1803 modifié par le règl. UE 2026/338), qui remplace IAS 1 pour les exercices ouverts à compter du 1er janvier 2027"
               ]
             },
             {
@@ -1138,9 +1138,10 @@
           "notions": [
             {
               "id": "ias-1-presentation-etats-financiers",
-              "title": "IAS 1 — Présentation des états financiers",
+              "title": "IFRS 18 — Présentation des états financiers (ex-IAS 1)",
               "refs": [
-                "IAS 1 (règlement UE 2023/1803)"
+                "IFRS 18 (règlement UE 2023/1803 modifié par le règl. UE 2026/338, exercices ouverts à compter du 1er janvier 2027)",
+                "IAS 1 (texte remplacé, exercices ouverts avant le 1er janvier 2027)"
               ]
             },
             {
@@ -1306,7 +1307,7 @@
               "refs": [
                 "PCG art. 321-1 s.",
                 "PCG art. 322-1 s.",
-                "comptes 151 à 158"
+                "comptes 151 et 152"
               ]
             },
             {
@@ -2031,7 +2032,7 @@
                 "NEP 501",
                 "NEP 540",
                 "PCG art. 322-1 s.",
-                "comptes 151 à 158"
+                "comptes 151 et 152"
               ],
               "group": "provisions",
               "group_title": "Cycle provisions"
@@ -2354,7 +2355,7 @@
               "id": "financial-statements-vocabulary",
               "title": "Financial statements vocabulary: balance sheet, income statement, cash flow statement",
               "refs": [
-                "IAS 1 (règlement UE 2023/1803)"
+                "IFRS 18 (règlement UE 2023/1803 modifié par le règl. UE 2026/338), qui remplace IAS 1 pour les exercices ouverts à compter du 1er janvier 2027"
               ]
             },
             {

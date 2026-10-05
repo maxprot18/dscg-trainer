@@ -1,6 +1,6 @@
 # Écarts d'évaluation et juste valeur des actifs et passifs identifiables
 
-**Références :** règl. ANC 2020-01 (évaluation des actifs et passifs identifiables à la date d'acquisition) ; IFRS 3 §10-31 et §45-49 ; IAS 12 §19 (règl. UE 2023/1803)
+**Références :** règl. ANC 2020-01 art. 231-7 à 231-10 et 232-1 ; IFRS 3 §10-31 et §45-49 ; IAS 12 §19 (règl. UE 2023/1803)
 
 **Enjeu :** à la prise de contrôle, le groupe « rachète » les actifs et passifs de la cible à leur valeur réelle ; les écarts d'évaluation réduisent le goodwill et pèsent ensuite sur les résultats consolidés, ce que l'examen fait calculer année après année.
 
@@ -17,7 +17,7 @@
 
 **Suivi ultérieur** : actif amortissable → supplément d'amortissement sur la durée résiduelle, avec reprise progressive de l'impôt différé ; stock → l'écart passe en charge lors de la vente ; terrain → aucun effet sur le résultat tant qu'il est détenu. Ces effets sont partagés entre groupe et minoritaires, et l'écart suit les règles de dépréciation de l'actif concerné.
 
-**Délai d'affectation** : les valeurs provisoires peuvent être ajustées pendant 12 mois au plus après l'acquisition, avec correction rétrospective du goodwill (IFRS 3 §45) ; au-delà, toute correction passe en résultat.
+**Délai d'affectation** : les valeurs provisoires peuvent être ajustées pendant 12 mois au plus après l'acquisition, avec correction rétrospective du goodwill (IFRS 3 §45) ; au-delà, seule une erreur justifie une révision (§50), les changements d'estimation passant en résultat. En règles françaises, le délai court jusqu'à la clôture du premier exercice ouvert après celui de l'acquisition (art. 231-10).
 
 **Formules clés :** écart net = (JV − VC) × (1 − t) ; supplément d'amortissement annuel = écart / durée résiduelle ; actif net identifiable = capitaux propres comptables + écarts nets
 

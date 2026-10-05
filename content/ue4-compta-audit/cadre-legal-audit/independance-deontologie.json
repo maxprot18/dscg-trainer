@@ -16,8 +16,8 @@
         "Délivrer, à la demande d'Oméga, une attestation sur le respect des ratios financiers prévus par son contrat de prêt bancaire"
       ],
       "answer": [3],
-      "explanation": "Le principe d'indépendance interdit au commissaire aux comptes de se trouver en situation d'autorévision, c'est-à-dire d'avoir à certifier des éléments qu'il a lui-même produits. La tenue de la comptabilité et la préparation des comptes, la conception du système d'information comptable et l'évaluation d'un actif significatif à comptabiliser relèvent toutes de cette situation : il se prononcerait ensuite sur ses propres travaux. Ces services sont interdits par le code de déontologie (et, pour les EIP, par la liste du règlement 537/2014). L'attestation sur des covenants bancaires porte sur des informations établies par l'entité ; c'est un service autre que la certification des comptes compatible avec le mandat, fourni dans le respect du code de déontologie et des diligences professionnelles applicables.",
-      "source_ref": "Code de déontologie de la profession de commissaire aux comptes (services interdits, autorévision) ; Règlement (UE) n° 537/2014, art. 5 (services interdits aux CAC d'EIP) ; C. com., dispositions sur l'indépendance du CAC issues de l'ordonnance n° 2023-1142",
+      "explanation": "Le principe d'indépendance interdit au commissaire aux comptes de se trouver en situation d'autorévision, c'est-à-dire d'avoir à certifier des éléments qu'il a lui-même produits. La tenue de la comptabilité et la préparation des comptes, la conception du système d'information comptable et l'évaluation d'un actif significatif à comptabiliser relèvent toutes de cette situation : il se prononcerait ensuite sur ses propres travaux. Le risque d'autorévision interdit d'accepter ou de poursuivre la mission auprès de toute entité (C. com. art. L. 821-28 IV ; code de déontologie, art. 5 et 19) et, pour les EIP, ces services figurent en outre sur la liste du règlement 537/2014. L'attestation sur des covenants bancaires porte sur des informations établies par l'entité ; c'est un service autre que la certification des comptes compatible avec le mandat, fourni dans le respect du code de déontologie et des diligences professionnelles applicables.",
+      "source_ref": "C. com. art. L. 821-28 IV (autorévision, entités autres que les EIP) ; code de déontologie de la profession de CAC (annexe 8-1 du C. com.), art. 5 et 19 ; règlement (UE) n° 537/2014, art. 5 (services interdits aux CAC d'EIP)",
       "verified": true,
       "estimated_seconds": 75
     },
@@ -33,7 +33,7 @@
         "honoraires conditionnels",
         "déontologie"
       ],
-      "source_ref": "Code de déontologie de la profession de commissaire aux comptes (honoraires ; interdiction des honoraires subordonnés à un résultat)",
+      "source_ref": "Code de déontologie de la profession de commissaire aux comptes (annexe 8-1 du C. com.), art. 12 (honoraires) et 13 (interdiction des honoraires proportionnels ou conditionnels)",
       "verified": true,
       "estimated_seconds": 60,
       "statement": "Lors de la négociation de son budget avec une société cliente, un commissaire aux comptes envisage plusieurs modalités d'honoraires. Laquelle est interdite ?",
@@ -62,7 +62,7 @@
         "EIP",
         "réseau"
       ],
-      "source_ref": "Règlement (UE) n° 537/2014, art. 5 §1 (services interdits, y compris aux membres du réseau) ; code de déontologie de la profession de CAC (intérêts financiers, cadeaux et avantages) ; C. com. art. L. 225-204 (rapport du CAC sur la réduction de capital)",
+      "source_ref": "Règlement (UE) n° 537/2014, art. 5 §1 (services interdits, y compris aux membres du réseau) ; C. com. art. L. 821-31 ; code de déontologie de la profession de CAC, art. 14 (cadeaux) et 33 (liens financiers) ; C. com. art. L. 225-204 (rapport du CAC sur la réduction de capital)",
       "verified": true,
       "estimated_seconds": 90,
       "statement": "Le cabinet Cassiopée est commissaire aux comptes de la société Véga, entité d'intérêt public cotée. Quelles situations sont incompatibles avec son indépendance ? (Plusieurs réponses possibles.)",
@@ -92,7 +92,7 @@
         "associé signataire",
         "EIP"
       ],
-      "source_ref": "C. com., disposition relative à la rotation des signataires dans les EIP (anc. art. L. 822-14, renuméroté par l'ordonnance n° 2023-1142) ; règlement (UE) n° 537/2014, art. 17 §7",
+      "source_ref": "C. com. art. L. 821-34 (rotation des signataires dans les EIP, anc. art. L. 822-14) ; règlement (UE) n° 537/2014, art. 17 §7",
       "verified": true,
       "estimated_seconds": 120,
       "statement": "Mme Rigel, associée d'un cabinet de commissaires aux comptes, a signé pour la première fois le rapport de certification des comptes de l'exercice 2021 de la société Antarès, entité d'intérêt public (exercices calendaires). Elle a signé chaque année depuis. En appliquant la règle française de rotation des associés signataires dans les EIP, quel est le dernier exercice dont elle pourra signer le rapport ? (Réponse : une année.)",
@@ -142,7 +142,7 @@
         "co-commissariat",
         "comité d'audit"
       ],
-      "source_ref": "Règlement (UE) n° 537/2014, art. 4, 5 et 17 ; C. com., dispositions sur la durée maximale des mandats et la rotation dans les EIP (anc. art. L. 823-3-1 et L. 822-14, renumérotés par l'ordonnance n° 2023-1142) ; code de déontologie de la profession de CAC",
+      "source_ref": "Règlement (UE) n° 537/2014, art. 4, 5 et 17 ; C. com. art. L. 821-45 (durée maximale de la mission dans les EIP, anc. L. 823-3-1), L. 821-34 (rotation, anc. L. 822-14), L. 821-30 (approbation des SACC) et L. 821-66 (plafond de 70 %) ; code de déontologie de la profession de CAC",
       "verified": true,
       "estimated_seconds": 720,
       "title": "Indépendance du CAC d'une société cotée",

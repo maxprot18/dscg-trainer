@@ -44,7 +44,7 @@
       "statement": "La cessation d'une entreprise individuelle relevant des bénéfices industriels et commerciaux entraîne l'imposition immédiate des bénéfices non encore imposés, y compris les plus-values réalisées à l'occasion de la cessation.",
       "answer": true,
       "justification": "En cas de cession ou de cessation, l'impôt est établi immédiatement sur les bénéfices non encore taxés (CGI art. 201).",
-      "explanation": "L'exploitant doit déposer une déclaration dans les 60 jours de la publication de la cession ou de la cessation. L'imposition porte sur le résultat de la période écoulée depuis la dernière clôture, sur les provisions devenues sans objet et sur les plus-values de cession, sous réserve des régimes d'exonération (CGI art. 151 septies, 151 septies A, 238 quindecies).",
+      "explanation": "L'exploitant au régime réel doit déposer une déclaration dans les 60 jours de la publication de la vente du fonds ou, en cas de cessation, de la fermeture définitive de l'établissement. L'imposition porte sur le résultat de la période écoulée depuis la dernière clôture, sur les provisions devenues sans objet et sur les plus-values de cession, sous réserve des régimes d'exonération (CGI art. 151 septies, 151 septies A, 238 quindecies).",
       "source_ref": "CGI art. 201 (cession ou cessation d'une entreprise individuelle)",
       "verified": true,
       "estimated_seconds": 40
@@ -228,7 +228,7 @@
       ],
       "multiple": false,
       "explanation": "En cas de cession ou de cessation, l'impôt sur le revenu dû sur les bénéfices non encore taxés est établi immédiatement : l'exploitant avise l'administration dans un délai de 45 jours et produit la déclaration de résultat dans un délai de 60 jours, ces délais courant à compter de la publication de la cession dans un journal d'annonces légales (option 1).\nL'option 2 méconnaît le principe d'imposition immédiate. L'option 3 retient le délai de 6 mois propre au décès de l'exploitant. L'option 4 confond avec le délai d'opposition des créanciers du vendeur de fonds de commerce (10 jours de la publication au BODACC), qui relève du droit commercial et non des obligations fiscales.",
-      "source_ref": "CGI art. 201, 1 et 3 (imposition immédiate, avis dans les 45 jours, déclaration dans les 60 jours) ; art. 204 (décès) ; C. com. art. L. 141-14 (opposition)",
+      "source_ref": "CGI art. 201, 1 et 3 (imposition immédiate, avis dans les 45 jours, déclaration dans les 60 jours) ; art. 201, 4 (décès : six mois) ; C. com. art. L. 141-14 (opposition)",
       "verified": true,
       "estimated_seconds": 50
     }

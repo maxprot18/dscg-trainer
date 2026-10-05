@@ -86,7 +86,7 @@
         "remise en état",
         "PCG"
       ],
-      "statement": "En lisant le projet d'état de durabilité de la société Ferval (clôture au 31/12/N), l'auditeur de durabilité relève la mention suivante : « Un arrêté préfectoral notifié en novembre N impose la dépollution des sols du site de Montluel, estimée à 480 000 €. Le groupe envisage en outre, de sa propre initiative et sans aucun engagement pris envers des tiers à la clôture, d'aménager une zone de biodiversité sur ce site pour 90 000 €. » Dans les comptes, une provision de 150 000 € a été constituée en N−1 au titre de la pollution de ce site, dans l'attente de l'arrêté ; rien n'a été comptabilisé en N.\n\nL'auditeur des comptes en est informé et la société décide d'ajuster ses comptes. Passez l'écriture d'inventaire au 31/12/N. Utilisez le compte 1581 « Provisions pour remise en état ».",
+      "statement": "En lisant le projet d'état de durabilité de la société Ferval (clôture au 31/12/N), l'auditeur de durabilité relève la mention suivante : « Un arrêté préfectoral notifié en novembre N impose la dépollution des sols du site de Montluel, estimée à 480 000 €. Le groupe envisage en outre, de sa propre initiative et sans aucun engagement pris envers des tiers à la clôture, d'aménager une zone de biodiversité sur ce site pour 90 000 €. » Dans les comptes, une provision de 150 000 € a été constituée en N−1 au titre de la pollution de ce site, dans l'attente de l'arrêté ; rien n'a été comptabilisé en N.\n\nL'auditeur des comptes en est informé et la société décide d'ajuster ses comptes. Passez l'écriture d'inventaire au 31/12/N. Utilisez le compte 1526 « Provisions pour remise en état ».",
       "date": "31/12/N",
       "entries": [
         {
@@ -96,14 +96,14 @@
           "credit": 0
         },
         {
-          "account": "1581",
+          "account": "1526",
           "label": "Provisions pour remise en état — site de Montluel",
           "debit": 0,
           "credit": 330000
         }
       ],
       "explanation": "L'arrêté préfectoral notifié avant la clôture crée une obligation à l'égard d'un tiers, dont il est probable qu'elle provoquera une sortie de ressources sans contrepartie : une provision de 480 000 € est requise. La provision existante (150 000 €) est complétée par une dotation de 330 000 €. L'aménagement de la zone de biodiversité (90 000 €) relève d'une décision volontaire de gestion, sans obligation légale ni implicite à la clôture (aucun engagement envers des tiers) : aucune provision. Erreurs classiques : doter 480 000 € sans tenir compte de la provision existante ; inclure les 90 000 € (dotation de 420 000 €). Cet exemple illustre la connectivité entre l'état de durabilité et les comptes : une obligation environnementale décrite dans le reporting de durabilité doit être cohérente avec les passifs comptabilisés.",
-      "source_ref": "PCG art. 321-1 et suivants, règles relatives aux passifs (règl. ANC 2014-03) ; comptes 1581 et 6815 ; règlement délégué (UE) 2023/2772, ESRS 1 (connectivité avec les états financiers)",
+      "source_ref": "PCG art. 321-1 et suivants, règles relatives aux passifs (règl. ANC 2014-03) ; comptes 1526 et 6815 ; règlement délégué (UE) 2023/2772, ESRS 1 (connectivité avec les états financiers)",
       "verified": true,
       "estimated_seconds": 240
     },

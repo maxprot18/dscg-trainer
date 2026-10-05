@@ -8,7 +8,7 @@
 
 **Allègements par taille** (seuils C. com., chiffre d'affaires, total du bilan, effectif) : les **petites entreprises** présentent une annexe simplifiée ; les **micro-entreprises** peuvent ne pas en établir, sauf exceptions légales (holdings, sociétés cotées, établissements financiers) ; les moyennes entreprises peuvent présenter un compte de résultat simplifié.
 
-**Permanence des méthodes** : un changement de méthode n'est admis que s'il est imposé par un texte, ou justifié par un changement exceptionnel de la situation de l'entreprise ou par une **meilleure information** (le changement doit améliorer la pertinence des comptes). L'adoption d'une **méthode de référence** (activation des frais de développement, avancement, provisionnement des retraites) est toujours possible et irréversible.
+**Permanence des méthodes** : un changement de méthode n'est admis que s'il résulte d'un changement de réglementation (sans justification à fournir) ou, à l'initiative de l'entité, à la double condition d'un choix entre plusieurs méthodes conformes et d'une **meilleure information** financière (art. 122-1 et 122-2). L'adoption d'une **méthode de référence** (art. 121-5 : activation des coûts de développement et des frais d'acquisition des immobilisations, frais d'établissement en charges, provisionnement des retraites) n'a pas à être justifiée et est irréversible.
 
 **Trois situations à distinguer** :
 - **Changement de méthode** (méthode d'évaluation ou de présentation) : rétrospectif. L'effet cumulé à l'ouverture, calculé comme si la nouvelle méthode avait toujours été appliquée, est imputé, **net d'impôt**, sur le **report à nouveau** (110 ou 119) ; le résultat de l'exercice est calculé avec la nouvelle méthode et les comptes de l'exercice précédent ne sont pas modifiés.
@@ -22,7 +22,7 @@
 L'annexe justifie tout changement de méthode, en donne l'incidence sur le résultat et les capitaux propres, et présente une information comparative **pro forma** permettant d'apprécier l'effet du changement sur les exercices présentés.
 
 ## Exemple
-Au 01/01/N, la société Iris, qui appliquait la méthode à l'achèvement, adopte la méthode à l'avancement (méthode de référence). Au 31/12/N−1, un contrat de 500 000 € (coût total 400 000 €) était avancé à 40 %, sans marge reconnue. Taux d'IS : 25 %.
+Au 01/01/N, la société Iris, qui appliquait la méthode à l'achèvement, adopte la méthode à l'avancement, jugée plus pertinente (changement à l'initiative de l'entité, art. 122-2). Au 31/12/N−1, un contrat de 500 000 € (coût total 400 000 €) était avancé à 40 %, sans marge reconnue. Taux d'IS : 25 %.
 Effet cumulé à l'ouverture = marge non reconnue = (500 000 − 400 000) × 40 % = **40 000 €** avant impôt ; net d'impôt : 40 000 × 75 % = **30 000 €** au crédit du report à nouveau (110), l'impôt correspondant (10 000 €) étant constaté au passif. Le résultat de N est calculé à l'avancement, les comptes de N−1 ne sont pas modifiés, et l'annexe présente un compte de résultat pro forma de N−1 à l'avancement.
 Si Iris avait seulement révisé à la hausse le coût total du contrat, il s'agirait d'un changement d'estimation : effet intégralement dans le résultat de N.
 

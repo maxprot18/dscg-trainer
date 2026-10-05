@@ -1,6 +1,6 @@
 # Audit des estimations comptables et des parties liées
 
-**Références :** NEP 540 « Appréciation des estimations comptables » (correspondance ISA 540) ; NEP 550 « Relations et transactions avec les parties liées » (ISA 550) ; IAS 24 (règl. UE 2023/1803) ; C. com. art. L. 225-38 à L. 225-42 (SA), L. 227-10 (SAS) ; PCG (règl. ANC 2014-03), contenu de l'annexe : transactions avec les parties liées
+**Références :** NEP 540 « Appréciation des estimations comptables » (correspondance ISA 540) ; NEP 550 « Relations et transactions avec les parties liées » (ISA 550) ; IAS 24 (règl. UE 2023/1803) ; C. com. art. L. 225-38 à L. 225-42 (SA), L. 227-10 (SAS) ; PCG art. 834-1 (règl. ANC 2014-03), annexe : transactions avec les parties liées ; C. com. art. R. 123-199-1
 
 **Enjeu :** les estimations (provisions, dépréciations, durées d'utilité) et les transactions avec des parties liées sont les deux terrains privilégiés du biais de la direction ; à l'examen, on attend de distinguer estimation et fait, d'apprécier une fourchette et de qualifier une convention réglementée.
 
@@ -10,7 +10,7 @@
 - Si l'estimation de la direction sort de la fourchette jugée raisonnable, la pratique (en ligne avec l'ISA 540) retient comme anomalie au moins l'écart avec la borne la plus proche de la fourchette ; une estimation à l'intérieur de la fourchette n'est pas une anomalie, même si le CAC aurait retenu un autre montant.
 - Un écart entre le dénouement et l'estimation de l'exercice précédent n'est pas en soi une anomalie des comptes passés : c'est un indice à prendre en compte (biais, fiabilité du processus). Des écarts systématiquement dans le sens favorable au résultat orientent vers un biais.
 - Parties liées (NEP 550) : le CAC demande à la direction l'identité des parties liées et les transactions conclues avec elles, reste attentif tout au long de l'audit (procès-verbaux, contrats, confirmations bancaires, opérations inhabituelles ou sans logique économique apparente) et vérifie l'information donnée en annexe. Une transaction significative hors conditions normales de marché est un risque requérant une démarche particulière.
-- Annexe : les transactions significatives avec des parties liées non conclues à des conditions normales de marché sont décrites dans l'annexe (règles du PCG issues du règl. ANC 2014-03, qui ont remplacé l'ancien art. R. 123-198 du Code de commerce ; définition des parties liées par renvoi aux IFRS adoptées, IAS 24), sauf transactions avec des filiales détenues en totalité.
+- Annexe : les transactions significatives avec des parties liées non conclues à des conditions normales de marché sont décrites dans l'annexe (PCG art. 834-1, règl. ANC 2014-03 ; définition des parties liées par renvoi aux IFRS adoptées, IAS 24, C. com. art. R. 123-199-1), sauf transactions avec des filiales détenues en totalité.
 - Conventions réglementées (SA) : autorisation préalable du conseil, information du CAC, rapport spécial du CAC à l'assemblée, qui statue ; une convention non autorisée est signalée dans ce rapport (L. 225-42) et peut être annulée si elle a eu des conséquences dommageables pour la société. En SAS, rapport du CAC sur les conventions avec les dirigeants ou associés (L. 227-10).
 
 **Formules clés :** anomalie minimale = |estimation de la direction − borne la plus proche de la fourchette du CAC|

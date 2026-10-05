@@ -1,6 +1,6 @@
 # Retraitements d'homogénéisation des comptes individuels
 
-**Références :** règl. ANC 2020-01 (méthodes d'évaluation et de présentation homogènes, élimination des écritures fiscales, location-financement, impôts différés) ; IFRS 10 §19 et §B87 ; IAS 12 (règl. UE 2023/1803)
+**Références :** règl. ANC 2020-01 art. 271-5 (homogénéité), 272-1 (écritures fiscales), 272-2 (crédit-bail) et 272-7 à 272-14 (impôts différés) ; C. com. L233-22 ; IFRS 10 §19 et §B87 ; IAS 12 (règl. UE 2023/1803)
 
 **Enjeu :** les comptes individuels obéissent à des règles nationales et fiscales ; la consolidation les ramène à une méthode unique de groupe, et l'examen note surtout le partage réserves / résultat et l'impôt différé attaché à chaque retraitement.
 
@@ -8,8 +8,8 @@ Les comptes consolidés sont établis selon des méthodes homogènes au sein du 
 
 **Principaux retraitements** :
 - **Homogénéisation des méthodes** : durées et modes d'amortissement, évaluation des stocks (FIFO ou coût moyen pondéré), provisions, conversion des créances et dettes en devises, engagements de retraite comptabilisés ou non.
-- **Élimination des écritures d'origine fiscale** : amortissements dérogatoires, provisions réglementées (hausse des prix, etc.) et subventions d'investissement en capitaux propres sont retraités car ils ne traduisent aucune réalité économique (contrepartie : réserves pour l'antérieur, résultat pour le mouvement de l'exercice).
-- **Contrats de location-financement (crédit-bail)** : le bien figure à l'actif et la dette à l'emprunt chez le preneur ; la redevance est remplacée par une dotation aux amortissements et une charge d'intérêts. Méthode préférentielle sous le règl. CRC 99-02, ce retraitement est obligatoire depuis le règl. ANC 2020-01, qui supprime les méthodes préférentielles propres au consolidé.
+- **Élimination des écritures d'origine fiscale** : amortissements dérogatoires et provisions réglementées (hausse des prix, etc.) sont éliminés car ils ne traduisent aucune réalité économique (contrepartie : réserves pour l'antérieur, résultat pour le mouvement de l'exercice) ; l'impact d'un changement de méthode passé en résultat dans les comptes individuels est reclassé en report à nouveau d'ouverture.
+- **Contrats de crédit-bail et assimilés** (transfert de propriété hautement probable, durée couvrant l'essentiel de la vie du bien ou valeur actualisée des paiements proche de sa valeur vénale) : le bien figure à l'actif et la dette à l'emprunt chez le preneur ; la redevance est remplacée par une dotation aux amortissements et une charge d'intérêts. Méthode préférentielle sous le règl. CRC 99-02, ce retraitement est obligatoire depuis le règl. ANC 2020-01, qui supprime les méthodes préférentielles propres au consolidé.
 - **Impôts différés** : chaque retraitement qui crée un écart entre valeur consolidée et base fiscale entraîne un impôt différé (taux applicable au moment du dénouement) ; la fiscalité différée est obligatoire en consolidation alors qu'elle est absente des comptes sociaux.
 
 ```diagram

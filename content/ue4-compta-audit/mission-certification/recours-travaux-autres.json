@@ -89,10 +89,10 @@
         "comptes consolidés",
         "expert"
       ],
-      "source_ref": "NEP 100 (audit des comptes réalisé par plusieurs commissaires aux comptes) ; NEP 600 (principes spécifiques applicables à l'audit des comptes consolidés) ; NEP 620 (intervention d'un expert) ; NEP 540 (estimations comptables)",
+      "source_ref": "NEP 100 (audit des comptes réalisé par plusieurs commissaires aux comptes) ; NEP 600 révisée (audit des comptes de groupe, y compris l'utilisation des travaux des auditeurs des composants – aspects particuliers ; arrêté du 29 octobre 2025, C. com. art. A. 821-64) ; NEP 620 (intervention d'un expert) ; NEP 540 (estimations comptables)",
       "verified": true,
       "estimated_seconds": 780,
-      "explanation": "Le cas combine les NEP 100 (co-commissariat : répartition des travaux, revue croisée, rapport commun), 600 (utilisation des travaux des professionnels chargés du contrôle des entités du groupe), 620 (expert désigné par le CAC) et 540 (estimation hors de la fourchette jugée raisonnable). Fil conducteur : le CAC peut s'appuyer sur d'autres professionnels, mais il reste seul responsable de son opinion.",
+      "explanation": "Le cas combine les NEP 100 (co-commissariat : répartition des travaux, revue croisée, rapport commun), 600 (direction, supervision et revue des travaux des auditeurs des composants), 620 (expert désigné par le CAC) et 540 (estimation hors de la fourchette jugée raisonnable). Fil conducteur : le CAC peut s'appuyer sur d'autres professionnels, mais il reste seul responsable de son opinion.",
       "title": "Hélios SA : co-commissariat, auditeur de filiale et expert",
       "context": "Hélios SA établit des comptes consolidés (clôture au 31/12/N) et a désigné deux commissaires aux comptes, les cabinets Alpha et Bêta. Le groupe comprend Hélios SA et trois filiales, dont Hélios Iberia, société espagnole contrôlée par un auditeur local qui n'appartient à aucun des deux cabinets.\nPour l'exercice N, les co-commissaires aux comptes ont convenu que :\n- le cabinet Alpha prend en charge Hélios SA et le processus de consolidation ;\n- le cabinet Bêta prend en charge les deux filiales françaises et la relation avec l'auditeur d'Hélios Iberia.\nHélios Iberia détient un immeuble de placement évalué à la juste valeur dans les comptes consolidés : 16,0 M€ selon l'évaluation retenue par la direction du groupe. Les co-commissaires aux comptes ont désigné un expert immobilier indépendant, qui conclut à une fourchette de juste valeur raisonnable comprise entre 13,8 M€ et 15,2 M€, et ont jugé ses travaux appropriés. Le seuil de signification des comptes consolidés est de 1,0 M€.\nL'auditeur d'Hélios Iberia a transmis une synthèse indiquant qu'il n'a relevé aucune anomalie, sans préciser ses travaux sur l'immeuble.",
       "sub_questions": [
@@ -124,7 +124,7 @@
           "answer": [
             1
           ],
-          "explanation": "Les commissaires aux comptes de l'entité consolidante restent seuls responsables de l'opinion sur les comptes consolidés (NEP 600) : ils ne partagent cette responsabilité ni avec l'auditeur de la filiale ni avec l'expert (NEP 620). En co-commissariat, la répartition des travaux n'emporte pas répartition des responsabilités : chacun se forge une opinion sur l'ensemble des comptes et ils signent un rapport commun (NEP 100)."
+          "explanation": "Les commissaires aux comptes de l'entité consolidante restent seuls responsables de l'opinion sur les comptes consolidés (C. com. art. L. 821-53 ; NEP 600) : ils ne partagent cette responsabilité ni avec l'auditeur du composant ni avec l'expert (NEP 620). En co-commissariat, la répartition des travaux n'emporte pas répartition des responsabilités : chacun se forge une opinion sur l'ensemble des comptes et ils signent un rapport commun (NEP 100)."
         },
         {
           "id": "revue-croisee",
@@ -139,9 +139,9 @@
           "kind": "open",
           "points": 4,
           "prompt": "Quels travaux les co-commissaires doivent-ils mener à l'égard de l'auditeur d'Hélios Iberia et de l'évaluation de l'immeuble avant de conclure ?",
-          "model_answer": "À l'égard de l'auditeur d'Hélios Iberia (NEP 600), une synthèse sans détail des travaux est insuffisante : les co-commissaires apprécient sa compétence et son indépendance, s'assurent qu'il a reçu et appliqué leurs instructions (seuil, calendrier, risques identifiés, dont l'évaluation de l'immeuble), obtiennent ses conclusions détaillées et, si nécessaire, revoient ses dossiers ou mettent en œuvre eux-mêmes des procédures complémentaires sur l'immeuble. À l'égard de l'évaluation (NEP 620 et NEP 540), ils ont apprécié la compétence et l'indépendance de l'expert et le caractère approprié de ses travaux ; ils comparent ses hypothèses à celles de la direction, demandent à la direction de corriger l'écart d'au moins 800 000 € et, à défaut, cumulent cette anomalie avec les autres anomalies non corrigées pour apprécier leur incidence sur l'opinion. Le rapport ne mentionne ni l'expert ni l'auditeur de la filiale si l'opinion est sans réserve. Le cabinet Alpha examine en outre les travaux de Bêta (revue croisée).",
+          "model_answer": "À l'égard de l'auditeur d'Hélios Iberia, auditeur d'un composant (NEP 600), une synthèse sans détail des travaux est insuffisante : les co-commissaires, auditeur du groupe, obtiennent sa confirmation qu'il respecte les règles de déontologie, dont l'indépendance, déterminent s'il a la compétence et les capacités requises, s'assurent qu'il a reçu et appliqué leurs instructions (seuil de planification du composant, seuil de communication des anomalies, calendrier, risques identifiés, dont l'évaluation de l'immeuble, domaine à risque élevé qui appelle une supervision renforcée), obtiennent ses communications détaillées (travaux effectués, anomalies relevées, conclusions) et, si nécessaire, revoient sa documentation ou mettent en œuvre eux-mêmes des procédures supplémentaires sur l'immeuble. À l'égard de l'évaluation (NEP 620 et NEP 540), ils ont apprécié la compétence et l'indépendance de l'expert et le caractère approprié de ses travaux ; ils comparent ses hypothèses à celles de la direction, demandent à la direction de corriger l'écart d'au moins 800 000 € et, à défaut, cumulent cette anomalie avec les autres anomalies non corrigées pour apprécier leur incidence sur l'opinion. Le rapport ne mentionne ni l'expert ni l'auditeur de la filiale si l'opinion est sans réserve. Le cabinet Alpha examine en outre les travaux de Bêta (revue croisée).",
           "key_points": [
-            "Insuffisance de la synthèse : instructions, compétence et indépendance de l'auditeur de la filiale, revue de ses travaux ou procédures complémentaires",
+            "Insuffisance de la synthèse : instructions, déontologie (indépendance) et compétence de l'auditeur du composant, revue de ses travaux ou procédures supplémentaires",
             "Appréciation des hypothèses de l'expert et de la direction ; demande de correction de l'anomalie",
             "Cumul de l'anomalie non corrigée avec les autres pour apprécier l'opinion",
             "Responsabilité non partagée : pas de mention de l'expert ou de l'auditeur local dans un rapport sans réserve",
@@ -161,14 +161,14 @@
       "tags": [
         "NEP 600",
         "comptes consolidés",
-        "auditeurs des entités du groupe"
+        "auditeurs des composants"
       ],
-      "source_ref": "NEP 600 (principes spécifiques applicables à l'audit des comptes consolidés)",
+      "source_ref": "NEP 600 révisée (audit des comptes de groupe, y compris l'utilisation des travaux des auditeurs des composants – aspects particuliers ; arrêté du 29 octobre 2025, C. com. art. A. 821-64)",
       "verified": true,
       "estimated_seconds": 40,
-      "explanation": "La NEP 600 encadre l'utilisation, par le CAC de l'entité consolidante, des travaux des professionnels chargés du contrôle des comptes des entités du groupe. Ces travaux sont un élément probant parmi d'autres : la responsabilité de l'opinion sur les comptes consolidés n'est pas partagée.",
-      "front": "Que fait le commissaire aux comptes de l'entité consolidante à l'égard des auditeurs des entités du groupe (NEP 600) ?",
-      "back": "Il apprécie leur compétence et leur indépendance.\nIl leur adresse des instructions (seuil, calendrier, risques, informations attendues).\nIl revoit leurs conclusions et, si nécessaire, leurs travaux ou met en œuvre des procédures complémentaires.\nIl reste seul responsable de l'opinion sur les comptes consolidés."
+      "explanation": "La NEP 600 révisée encadre la participation des auditeurs des composants, membres de l'équipe affectée à la mission, à l'audit des comptes du groupe : l'auditeur du groupe les dirige, les supervise et revoit leurs travaux (§26, §43 à 46). L'associé responsable de l'audit du groupe assume la responsabilité ultime de la mission (§10) et évalue lui-même l'incidence des anomalies non corrigées sur l'opinion (§50) : la responsabilité de l'opinion n'est pas partagée avec les auditeurs des composants.",
+      "front": "Que fait l'auditeur du groupe à l'égard des auditeurs des composants (NEP 600 révisée) ?",
+      "back": "Il obtient leur confirmation du respect de la déontologie (dont l'indépendance) et vérifie leur compétence et leurs capacités.\nIl leur adresse des instructions (seuil de planification du composant, seuil de communication des anomalies, calendrier, risques, informations attendues).\nIl les dirige, les supervise, évalue leurs communications et, si nécessaire, revoit leur documentation ou met en œuvre des procédures supplémentaires.\nIl reste seul responsable de l'opinion sur les comptes du groupe."
     }
   ]
 }

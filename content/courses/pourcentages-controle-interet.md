@@ -1,6 +1,6 @@
 # Pourcentages de contrôle et d'intérêt
 
-**Références :** règl. ANC 2020-01 ; C. com. L233-3, L233-4 et L233-16 ; IFRS 10 §B35 et §B94 (règl. UE 2023/1803)
+**Références :** règl. ANC 2020-01 art. 211-6 et 211-7 ; C. com. L233-3, L233-4 et L233-16 ; IFRS 10 §B35 et §B94 (règl. UE 2023/1803)
 
 **Enjeu :** deux pourcentages répondent à deux questions distinctes : « qui décide ? » (contrôle, donc périmètre et méthode) et « à qui revient la richesse ? » (intérêt, donc partage des capitaux propres) ; les confondre fausse toute la suite d'un cas de consolidation.
 

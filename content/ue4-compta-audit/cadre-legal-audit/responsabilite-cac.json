@@ -11,7 +11,7 @@
         "responsabilité civile",
         "obligation de moyens"
       ],
-      "source_ref": "C. com., disposition sur la responsabilité civile du CAC (anc. art. L. 822-17, renuméroté par l'ordonnance n° 2023-1142)",
+      "source_ref": "C. com. art. L. 821-37 (responsabilité civile du CAC, anc. art. L. 822-17)",
       "verified": true,
       "estimated_seconds": 45,
       "statement": "Quelle est la nature de l'obligation du commissaire aux comptes au regard de sa responsabilité civile ?",
@@ -37,7 +37,7 @@
         "prescription",
         "responsabilité civile"
       ],
-      "source_ref": "C. com., disposition sur la prescription de l'action en responsabilité contre le CAC (anc. art. L. 822-18, renuméroté par l'ordonnance n° 2023-1142)",
+      "source_ref": "C. com. art. L. 821-38 (anc. art. L. 822-18), renvoyant à l'art. L. 225-254 (prescription de trois ans)",
       "verified": true,
       "estimated_seconds": 60,
       "statement": "Dans quel délai se prescrit l'action en responsabilité civile engagée contre un commissaire aux comptes ?",
@@ -63,7 +63,7 @@
         "infractions des dirigeants",
         "responsabilité civile"
       ],
-      "source_ref": "C. com., disposition sur la responsabilité civile du CAC (anc. art. L. 822-17, renuméroté par l'ordonnance n° 2023-1142)",
+      "source_ref": "C. com. art. L. 821-37 (responsabilité civile du CAC, anc. art. L. 822-17)",
       "verified": true,
       "estimated_seconds": 40,
       "statement": "Le commissaire aux comptes est civilement responsable de toutes les infractions commises par les dirigeants de la société qu'il contrôle.",
@@ -83,7 +83,7 @@
         "préjudice",
         "tiers"
       ],
-      "source_ref": "C. com., disposition sur la responsabilité civile du CAC envers les tiers (anc. art. L. 822-17) ; C. civ. art. 1240 (responsabilité délictuelle) ; jurisprudence sur l'indemnisation de la perte de chance",
+      "source_ref": "C. com. art. L. 821-37 (responsabilité civile du CAC envers les tiers, anc. art. L. 822-17) ; C. civ. art. 1240 (responsabilité délictuelle) ; jurisprudence sur l'indemnisation de la perte de chance",
       "verified": true,
       "estimated_seconds": 150,
       "statement": "La banque Céphée a accordé un crédit de 900 000 € à la société Ara au vu de comptes certifiés sans réserve, qui masquaient une situation déficitaire. Ara a remboursé 150 000 € avant d'être liquidée ; le solde est perdu. Le tribunal retient une faute du commissaire aux comptes (contrôle insuffisant des stocks) et estime que, sans cette faute, la banque aurait eu 40 % de chances de refuser le crédit. Il indemnise la perte de chance. Quel montant le commissaire aux comptes doit-il verser à la banque ? (en euros)",
@@ -108,7 +108,7 @@
         "responsabilité civile",
         "non-révélation"
       ],
-      "source_ref": "C. com., dispositions pénales relatives au CAC (anc. art. L. 820-7 : informations mensongères et non-révélation), responsabilité civile et prescription (anc. art. L. 822-17 et L. 822-18), sanctions de la H2A (ordonnance n° 2023-1142) ; C. civ. art. 1240",
+      "source_ref": "C. com. art. L. 821-9 (informations mensongères et non-révélation, anc. L. 820-7), L. 821-37 et L. 821-38 (responsabilité civile et prescription, anc. L. 822-17 et L. 822-18), L. 821-70 et s. (sanctions de la H2A) ; C. civ. art. 1240",
       "verified": true,
       "estimated_seconds": 720,
       "title": "Stocks fictifs chez Tucana",
@@ -149,7 +149,7 @@
           "prompt": "Vrai ou faux : la H2A peut prononcer une sanction disciplinaire contre M. Hadar sans attendre l'issue des poursuites pénales.",
           "points": 2,
           "answer": true,
-          "explanation": "Vrai. Les responsabilités disciplinaire, pénale et civile sont indépendantes ; la formation restreinte de la H2A apprécie les manquements aux règles professionnelles (diligences, déontologie) et peut sanctionner (jusqu'à la radiation) indépendamment du juge pénal."
+          "explanation": "Vrai. Les responsabilités disciplinaire, pénale et civile sont indépendantes ; la commission des sanctions de la H2A apprécie les manquements aux règles professionnelles (diligences, déontologie) et peut sanctionner (jusqu'à la radiation) indépendamment du juge pénal."
         },
         {
           "id": "q4",

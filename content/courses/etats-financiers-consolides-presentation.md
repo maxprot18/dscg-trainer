@@ -1,16 +1,16 @@
 # Présentation des états financiers consolidés et de l'annexe
 
-**Références :** C. com. L233-20 ; règl. ANC 2020-01 (présentation des comptes consolidés) ; IAS 1 §10, §54, §81A-82A et §106 ; IFRS 10 §22 ; IAS 21 §41 (règl. UE 2023/1803)
+**Références :** C. com. L233-20 ; règl. ANC 2020-01 (présentation des comptes consolidés) ; IFRS 18 §10, §53, §75-76, §86-88, §104 et §107 (règl. UE 2023/1803 modifié par le règl. UE 2026/338 ; ex-IAS 1) ; IFRS 10 §22 ; IAS 21 §41 (règl. UE 2023/1803)
 
 **Enjeu :** après les retraitements et éliminations, il faut présenter les comptes de groupe dans la forme attendue par le référentiel ; à l'examen, on partage résultat et capitaux propres entre le groupe et les minoritaires et l'on sait ce que contient ou non chaque état.
 
 **Composantes**
 - C. com. L233-20 et règl. ANC 2020-01 : bilan, compte de résultat et annexe consolidés, qui forment un tout indissociable ; l'annexe comporte obligatoirement un tableau des flux de trésorerie (modèle fourni par le règlement) et une analyse, sous forme de tableau, de la variation des capitaux propres (sans modèle imposé). Le rapport sur la gestion du groupe ne remplace pas l'annexe.
-- IFRS (IAS 1 §10) : état de la situation financière, état du résultat net et des autres éléments du résultat global, état des variations des capitaux propres, tableau des flux de trésorerie, notes, informations comparatives ; un état de la situation financière à l'ouverture de la période comparative s'y ajoute en cas d'application rétrospective significative.
+- IFRS (IFRS 18 §10, qui remplace IAS 1 pour les exercices ouverts à compter du 1er janvier 2027) : état de la situation financière, état du résultat net et des autres éléments du résultat global, état des variations des capitaux propres, tableau des flux de trésorerie, notes, informations comparatives ; un état de la situation financière à l'ouverture de la période comparative s'y ajoute en cas d'application rétrospective significative.
 
-**Résultat** : le compte de résultat consolidé fait apparaître le résultat net de l'ensemble consolidé, puis sa répartition entre part du groupe et intérêts minoritaires (IFRS : participations ne donnant pas le contrôle, PNC ; IAS 1 §81B). Le résultat des sociétés mises en équivalence figure sur une ligne distincte, pour sa seule quote-part.
+**Résultat** : le compte de résultat consolidé fait apparaître le résultat net de l'ensemble consolidé, puis sa répartition entre part du groupe et intérêts minoritaires (IFRS : participations ne donnant pas le contrôle, PNC ; IFRS 18 §76). Le résultat des sociétés mises en équivalence figure sur une ligne distincte, pour sa seule quote-part ; selon IFRS 18, dans la catégorie investissement, donc après le résultat d'exploitation (§53 a et §75 a iii).
 
-**Résultat global (IFRS)** : résultat net + autres éléments du résultat global (OCI), classés selon qu'ils seront ou non reclassés en résultat (IAS 1 §82A).
+**Résultat global (IFRS)** : résultat net + autres éléments du résultat global (OCI), classés selon qu'ils seront ou non reclassés en résultat (IFRS 18 §88).
 - Recyclables : écarts de conversion des activités à l'étranger, partie efficace des couvertures de flux de trésorerie.
 - Non recyclables : écarts de réévaluation (IAS 16), écarts actuariels (IAS 19), variations de juste valeur des instruments de capitaux propres sur option.
 - La part des écarts de conversion qui revient aux minoritaires leur est attribuée (IAS 21 §41) : le résultat global total est lui aussi partagé entre groupe et PNC.
@@ -40,4 +40,4 @@ Les 40 k€ de dividendes reçus par la mère de cette filiale ont été élimin
 - Le résultat global total est lui aussi partagé entre le groupe et les PNC.
 - Pas d'état du résultat global en règlement ANC 2020-01 : les écarts de conversion sont portés directement en capitaux propres.
 
-**Notions liées :** [IAS 1 — Présentation des états financiers](/cours/ias-1-presentation-etats-financiers) · [Partage des capitaux propres et minoritaires](/cours/partage-capitaux-propres-minoritaires) · [Tableau des flux de trésorerie consolidé](/cours/tableau-flux-consolide) · [Conversion des états financiers](/cours/conversion-etats-financiers)
+**Notions liées :** [IFRS 18 — Présentation des états financiers (ex-IAS 1)](/cours/ias-1-presentation-etats-financiers) · [Partage des capitaux propres et minoritaires](/cours/partage-capitaux-propres-minoritaires) · [Tableau des flux de trésorerie consolidé](/cours/tableau-flux-consolide) · [Conversion des états financiers](/cours/conversion-etats-financiers)

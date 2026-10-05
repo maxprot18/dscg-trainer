@@ -1,6 +1,6 @@
 # Personnel — pièges classiques
 
-**Références :** NEP 250 ; NEP 530 (sondages) ; NEP 560 (événements postérieurs) ; C. com. art. L123-13 (engagements de retraite) ; PCG art. 121-5 (permanence des méthodes, méthodes de référence) ; recommandation ANC 2013-02 (engagements de retraite) ; C. trav. art. L3141-5 (congés et arrêt maladie, loi n° 2024-364) ; PCG comptes 153, 4282, 4286, 4382, 4386
+**Références :** NEP 250 ; NEP 530 (sondages) ; NEP 560 (événements postérieurs) ; C. com. art. L123-13 (engagements de retraite) ; PCG art. 121-5 (permanence des méthodes, méthodes de référence) ; recommandation ANC 2013-02 (engagements de retraite) ; C. trav. art. L3141-5 (congés et arrêt maladie, loi n° 2024-364) ; PCG comptes 1521, 4282, 4286, 4382, 4386
 
 **Enjeu :** les pièges du cycle tiennent moins au calcul qu'au rattachement (congés, primes, charges sociales, salaires de décembre) et à la nature des postes (dette ou provision, méthode de référence) ; ce sont les distracteurs favoris des QCM.
 

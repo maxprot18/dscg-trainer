@@ -1,6 +1,6 @@
 # Provisions pour risques et charges
 
-**Références :** PCG art. 321-1 s. (définition et conditions), 322-1 s. (évaluation ; restructurations art. 322-10 ; gros entretien) et 324-1 (engagements de retraite) (règl. ANC 2014-03 modifié par le règl. ANC 2022-06) ; C. com. L123-13 ; comptes 151 à 158, 6815, 6865, 6875, 7815
+**Références :** PCG art. 321-1 s. (définitions), 322-1 s. (comptabilisation ; restructurations art. 322-10 et 322-11), 323-1 s. (évaluation), 214-10 (gros entretien ou grandes révisions) et 324-1 (engagements de retraite) (règl. ANC 2014-03 modifié par le règl. ANC 2022-06) ; C. com. L123-13 ; comptes 151, 152, 6815, 6865, 6875, 7815
 
 **Enjeu :** la provision est le passif le plus discuté à la clôture, parce qu'elle repose sur un jugement ; l'examen demande de dire si l'on provisionne, pour combien, et de distinguer provision, passif éventuel et simple intention de dépense.
 
@@ -11,7 +11,7 @@ Un **passif** est une obligation de l'entité à l'égard d'un tiers dont il est
 
 **Évaluation** : meilleure estimation de la sortie de ressources nécessaire pour éteindre l'obligation à la clôture (pas le montant réclamé par le tiers, ni le maximum possible). Pour une population nombreuse d'obligations (garanties), on retient l'espérance des coûts (probabilité × coût). Révision à chaque clôture : dotation complémentaire (68x) ou reprise (78x) ; la provision est reprise quand l'obligation est éteinte ou n'est plus probable.
 
-Cas usuels : litiges (1511), garanties données aux clients (1512), pertes sur contrats déficitaires (1516, dont les contrats à long terme), restructurations (1522 depuis le règl. ANC 2022-06, à condition que la décision soit prise **et** annoncée aux personnes concernées avant la clôture, avec un plan détaillé), pensions et obligations similaires (153), gros entretien ou grandes révisions (1572) si l'entreprise retient la provision plutôt que l'approche par composants.
+Cas usuels : litiges (1511), garanties données aux clients (1512), pertes sur contrats déficitaires (1516, dont les contrats à long terme), restructurations (1522 depuis le règl. ANC 2022-06, à condition que la décision de l'organe compétent soit prise **et** annoncée aux tiers concernés avant la clôture), pensions et obligations similaires (1521), gros entretien ou grandes révisions (1525) si l'entreprise retient la provision plutôt que l'approche par composants.
 
 Pas de provision pour des pertes d'exploitation futures, ni pour des dépenses futures sans obligation à la clôture (formation, publicité, investissements) : l'entité peut encore y échapper par ses propres décisions.
 

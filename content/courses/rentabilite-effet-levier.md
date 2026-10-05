@@ -1,6 +1,6 @@
 # Rentabilité économique, rentabilité financière et effet de levier
 
-**Références :** relation de l'effet de levier (analyse financière classique) ; IFRS 10 §22 et IAS 1 §81B (règl. UE 2023/1803) pour la part du groupe
+**Références :** relation de l'effet de levier (analyse financière classique) ; IFRS 10 §22 et IFRS 18 §76, ex-IAS 1 §81B (règl. UE 2023/1803 modifié par le règl. UE 2026/338) pour la part du groupe
 
 **Enjeu :** l'effet de levier explique comment le financement par dette transforme la rentabilité de l'outil économique en rentabilité pour l'actionnaire ; question quasi systématique du diagnostic financier, elle sert aussi à juger un choix de financement.
 

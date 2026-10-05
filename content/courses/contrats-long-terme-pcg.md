@@ -1,13 +1,13 @@
 # Contrats à long terme : avancement et pertes à terminaison
 
-**Références :** PCG art. 622-1 à 622-7 (règl. ANC 2014-03 modifié ; transférés sans changement de fond aux art. 523-1 à 523-8 du titre V par le règl. ANC 2026-03 du 6 mars 2026, homologué par arrêté du 12 août 2026 et applicable aux exercices ouverts à compter du 1er janvier 2027) ; comptes 1516, 335, 345, 4181, 487, 704, 6815, 6817, 7133
+**Références :** PCG art. 622-1 à 622-7 (règl. ANC 2014-03 modifié, recueil en vigueur au 1er janvier 2026 ; le règl. ANC 2026-03 du 6 mars 2026, homologué par arrêté du 12 août 2026, les reprend sans changement de fond aux art. 523-1 à 523-8 du titre V, applicables aux exercices ouverts à compter du 1er janvier 2027) ; PCG art. 122-2 (changement de méthode) ; comptes 1516, 335, 345, 4181, 487, 704, 6815, 6817, 7133
 
 **Enjeu :** un contrat qui s'étale sur plusieurs exercices pose la question du rattachement du chiffre d'affaires et de la marge ; l'examen demande le calcul du résultat de l'exercice selon la méthode retenue et le traitement intégral de la perte à terminaison.
 
 Un **contrat à long terme** porte sur la réalisation d'un bien, d'un service ou d'un ensemble de biens et services dont l'exécution s'étend sur au moins deux exercices et dont la date de démarrage et la date d'achèvement se situent dans deux exercices différents (construction, ingénierie, logiciels sur mesure).
 
 **Deux méthodes** :
-- **Méthode à l'avancement** (méthode de référence) : chiffre d'affaires et marge reconnus au fur et à mesure de l'avancement, à condition que le résultat à terminaison puisse être estimé de façon fiable (prix de vente acceptés, coûts totaux et coûts restant à engager évalués, degré d'avancement mesurable). Si cette fiabilité manque, le produit est limité aux coûts engagés, sans marge.
+- **Méthode à l'avancement** : chiffre d'affaires et marge reconnus au fur et à mesure de l'avancement, à condition que le résultat à terminaison puisse être estimé de façon fiable (prix de vente acceptés, coûts totaux et coûts restant à engager évalués, degré d'avancement mesurable). Si cette fiabilité manque, le produit est limité aux coûts engagés, sans marge.
 - **Méthode à l'achèvement** : aucun chiffre d'affaires ni marge avant la fin du contrat ; les coûts engagés figurent en **travaux en cours (335 ou 345)** via la production stockée (7133 ou 7134), pour leur coût et sans marge.
 
 **Mesure de l'avancement** : rapport des coûts engagés aux coûts totaux estimés, ou mesure physique ou technique des travaux exécutés. À chaque clôture, on réestime le coût total : le résultat cumulé est recalculé et la part de l'exercice = résultat cumulé à date − résultat déjà constaté (changement d'estimation, sans retraitement du passé).
@@ -34,7 +34,7 @@ N+1 : surcoûts, coût total réestimé 1 300 000 € (perte à terminaison 100 
 - Corriger le résultat de N après la révision du coût total en N+1 : il s'agit d'un changement d'estimation, traité prospectivement.
 
 ## À retenir
-- L'avancement est la méthode de référence : l'adopter est toujours possible, revenir ensuite à l'achèvement ne l'est plus.
+- Passer à l'avancement est un changement de méthode à l'initiative de l'entité (meilleure information, art. 122-2), appliqué à tous les contrats en cours (art. 622-7) ; revenir ensuite à l'achèvement n'est plus possible.
 - Une révision du coût total se traite en résultat de l'exercice de révision.
 - La perte à terminaison ne s'étale pas : elle est entièrement constatée dès qu'elle est connue, en dépréciation des en-cours puis en provision 1516.
 

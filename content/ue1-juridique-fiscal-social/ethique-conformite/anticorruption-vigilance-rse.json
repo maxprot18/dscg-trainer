@@ -152,7 +152,7 @@
           "prompt": "Nordal SA est soumise à l'obligation d'établir un plan de vigilance.",
           "points": 1,
           "answer": false,
-          "explanation": "Faux. Société et filiales françaises : 420 + 780 = 1 200 salariés, sous le seuil de 5 000 ; avec les filiales étrangères : 3 800 salariés, sous le seuil de 10 000 (C. com. L225-102-4)."
+          "explanation": "Faux. Société et filiales françaises : 420 + 780 = 1 200 salariés, sous le seuil de 5 000 ; avec les filiales étrangères : 3 800 salariés, sous le seuil de 10 000 (C. com. L225-102-1)."
         },
         {
           "id": "q3-cjip",
@@ -184,7 +184,7 @@
       ],
       "total_points": 10,
       "explanation": "Le cas confronte un groupe de taille intermédiaire aux seuils des différents dispositifs de conformité : assujetti à Sapin 2 (appréciation au niveau du groupe), non assujetti au devoir de vigilance, exposé à une CJIP plafonnée à 30 % du chiffre d'affaires moyen, et tenu de respecter la protection des lanceurs d'alerte.",
-      "source_ref": "Loi n° 2016-1691, art. 6 à 8 et 17 (mod. loi n° 2022-401) ; CPP art. 41-1-2 ; C. com. L225-102-4",
+      "source_ref": "Loi n° 2016-1691, art. 6 à 8 et 17 (mod. loi n° 2022-401) ; CPP art. 41-1-2 ; C. com. L225-102-1",
       "estimated_seconds": 780,
       "verified": true
     },

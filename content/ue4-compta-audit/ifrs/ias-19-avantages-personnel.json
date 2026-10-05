@@ -111,7 +111,7 @@
         "coût des services",
         "intérêt net"
       ],
-      "statement": "La société Lyra comptabilise ses indemnités de fin de carrière (régime à prestations définies non financé) selon IAS 19. Au 01/01/N, l'engagement s'élève à 240 000 €. Pour N, l'actuaire communique un coût des services rendus de 21 000 € ; le taux d'actualisation est de 3,5 % et aucune prestation n'a été versée en N. Aucun écart actuariel n'est constaté. Passez au 31/12/N l'écriture de comptabilisation de la charge de l'exercice, en utilisant le compte 153 pour l'engagement, le compte 6815 pour le coût des services et le compte 668 pour la charge d'intérêt nette.",
+      "statement": "La société Lyra comptabilise ses indemnités de fin de carrière (régime à prestations définies non financé) selon IAS 19. Au 01/01/N, l'engagement s'élève à 240 000 €. Pour N, l'actuaire communique un coût des services rendus de 21 000 € ; le taux d'actualisation est de 3,5 % et aucune prestation n'a été versée en N. Aucun écart actuariel n'est constaté. Passez au 31/12/N l'écriture de comptabilisation de la charge de l'exercice, en utilisant le compte 1521 pour l'engagement, le compte 6815 pour le coût des services et le compte 668 pour la charge d'intérêt nette.",
       "date": "31/12/N",
       "entries": [
         {
@@ -127,14 +127,14 @@
           "credit": 0
         },
         {
-          "account": "153",
+          "account": "1521",
           "label": "Provision pour pensions et obligations similaires",
           "debit": 0,
           "credit": 29400
         }
       ],
       "explanation": "Le coût des services rendus (21 000 €) et l'intérêt net sont comptabilisés en résultat (IAS 19 §120a-b). Le régime n'étant pas financé, l'intérêt net est l'intérêt sur la DBO d'ouverture : 240 000 × 3,5 % = 8 400 € (§123), présenté ici en charge financière. La provision augmente de 21 000 + 8 400 = 29 400 € ; l'engagement au 31/12/N s'élève à 269 400 €.",
-      "source_ref": "IAS 19 §120-123 (règlement UE 2023/1803) ; PCG comptes 153, 6815 et 668",
+      "source_ref": "IAS 19 §120-123 (règlement UE 2023/1803) ; PCG comptes 1521, 6815 et 668",
       "verified": true,
       "estimated_seconds": 200
     },

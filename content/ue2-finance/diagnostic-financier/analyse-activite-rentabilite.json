@@ -137,7 +137,7 @@
         "taux de marge",
         "effet ciseau"
       ],
-      "source_ref": "Orientations ESMA sur les indicateurs alternatifs de performance (2015) ; IAS 1 §85 (règl. UE 2023/1803)",
+      "source_ref": "Orientations ESMA sur les indicateurs alternatifs de performance (2015) ; IFRS 18 §117-123 (règl. UE 2023/1803 modifié par le règl. UE 2026/338, exercices ouverts à compter du 1er janvier 2027)",
       "verified": true,
       "estimated_seconds": 600,
       "title": "Groupe Alvéa : croissance et érosion de la marge",
@@ -193,12 +193,12 @@
           "kind": "open",
           "prompt": "Commentez l'évolution de l'activité et de la rentabilité d'Alvéa, et indiquez les précautions à prendre avant de comparer son EBITDA à celui d'un concurrent.",
           "points": 4,
-          "model_answer": "Le CA progresse de 12,5 % mais l'EBITDA de 3,8 % seulement (6 600 à 6 850 k€) : effet ciseau, la croissance a été achetée par des remises alors que le coût de la matière augmentait, d'où un poids des achats passé de 40 % à 42 % du CA. La productivité des autres charges s'améliore légèrement (personnel, charges externes), ce qui limite la dégradation à un point de marge. Si la tendance se poursuit, la croissance détruira de la rentabilité : il faut répercuter la hausse des matières ou revoir la politique de remises. L'EBITDA est un indicateur alternatif de performance, non défini par les IFRS : avant toute comparaison, vérifier sa définition (traitement des dépréciations, des éléments non courants, des paiements en actions), le rapprochement avec le résultat opérationnel et l'incidence d'IFRS 16, qui majore l'EBITDA des groupes locataires.",
+          "model_answer": "Le CA progresse de 12,5 % mais l'EBITDA de 3,8 % seulement (6 600 à 6 850 k€) : effet ciseau, la croissance a été achetée par des remises alors que le coût de la matière augmentait, d'où un poids des achats passé de 40 % à 42 % du CA. La productivité des autres charges s'améliore légèrement (personnel, charges externes), ce qui limite la dégradation à un point de marge. Si la tendance se poursuit, la croissance détruira de la rentabilité : il faut répercuter la hausse des matières ou revoir la politique de remises. L'EBITDA est un indicateur alternatif de performance, non défini par les IFRS ; calculé ici à partir du résultat opérationnel courant, il constitue sous IFRS 18 une mesure de la performance définie par la direction, décrite et rapprochée en note du sous-total IFRS le plus comparable (§117 et §123). Avant toute comparaison, vérifier sa définition (traitement des dépréciations, des éléments non courants, des paiements en actions), le rapprochement avec le résultat opérationnel et l'incidence d'IFRS 16, qui majore l'EBITDA des groupes locataires.",
           "key_points": [
             "Croissance du CA (+12,5 %) bien supérieure à celle de l'EBITDA (+3,8 %) : effet ciseau",
             "Dégradation due aux achats consommés (40 % à 42 % du CA), remises et coût des matières",
             "Autres charges mieux maîtrisées, insuffisant pour compenser",
-            "EBITDA non normé : vérifier la définition, le rapprochement et l'effet d'IFRS 16 avant comparaison"
+            "EBITDA non normé (mesure de la performance définie par la direction sous IFRS 18) : vérifier la définition, le rapprochement et l'effet d'IFRS 16 avant comparaison"
           ]
         }
       ],

@@ -149,7 +149,7 @@
         "avantages incitatifs",
         "démantèlement"
       ],
-      "statement": "Le 01/01/N, la société Tarn (IFRS) prend en location un bâtiment industriel pour 5 ans. Loyer annuel : 40 000 €, payable d'avance le 01/01 de chaque année (le premier loyer est payé le 01/01/N). Le taux d'emprunt marginal est de 4 %. Le même jour, Tarn paie 3 000 € de frais de négociation directement liés au contrat (coûts directs initiaux) et reçoit du bailleur un avantage incitatif de 5 000 € en trésorerie. Le contrat l'oblige à remettre le site en état à l'issue du bail ; la valeur actualisée de ces coûts est estimée à 8 000 €. Passez l'écriture unique de comptabilisation initiale du contrat au 01/01/N, flux de trésorerie compris (montants arrondis au centime). Conventions : droit d'utilisation au compte 218, dette locative au compte 168, provision pour remise en état au compte 158, trésorerie au compte 512 (une seule ligne, pour le montant net).",
+      "statement": "Le 01/01/N, la société Tarn (IFRS) prend en location un bâtiment industriel pour 5 ans. Loyer annuel : 40 000 €, payable d'avance le 01/01 de chaque année (le premier loyer est payé le 01/01/N). Le taux d'emprunt marginal est de 4 %. Le même jour, Tarn paie 3 000 € de frais de négociation directement liés au contrat (coûts directs initiaux) et reçoit du bailleur un avantage incitatif de 5 000 € en trésorerie. Le contrat l'oblige à remettre le site en état à l'issue du bail ; la valeur actualisée de ces coûts est estimée à 8 000 €. Passez l'écriture unique de comptabilisation initiale du contrat au 01/01/N, flux de trésorerie compris (montants arrondis au centime). Conventions : droit d'utilisation au compte 218, dette locative au compte 168, provision pour remise en état au compte 1526, trésorerie au compte 512 (une seule ligne, pour le montant net).",
       "date": "01/01/N",
       "entries": [
         {
@@ -165,7 +165,7 @@
           "credit": 145195.81
         },
         {
-          "account": "158",
+          "account": "1526",
           "label": "Provision pour remise en état du site",
           "debit": 0,
           "credit": 8000
@@ -177,7 +177,7 @@
           "credit": 38000
         }
       ],
-      "explanation": "Loyers payables d'avance : le loyer du 01/01/N est versé à la date de début et n'entre pas dans la dette, qui correspond aux 4 loyers restants actualisés (§26) : 40 000 × [1 − 1,04⁻⁴] / 0,04 = 40 000 × 3,629895 = 145 195,81 €. Droit d'utilisation (§24) = dette 145 195,81 + loyer versé 40 000 + coûts directs initiaux 3 000 − avantage incitatif reçu 5 000 + coûts de remise en état actualisés 8 000 = 191 195,81 €. Trésorerie nette décaissée : 40 000 + 3 000 − 5 000 = 38 000 €. La provision pour remise en état (8 000 €) est comptabilisée selon IAS 37. Écriture : débit 218 191 195,81 ; crédits 168 145 195,81, 158 8 000 et 512 38 000.",
+      "explanation": "Loyers payables d'avance : le loyer du 01/01/N est versé à la date de début et n'entre pas dans la dette, qui correspond aux 4 loyers restants actualisés (§26) : 40 000 × [1 − 1,04⁻⁴] / 0,04 = 40 000 × 3,629895 = 145 195,81 €. Droit d'utilisation (§24) = dette 145 195,81 + loyer versé 40 000 + coûts directs initiaux 3 000 − avantage incitatif reçu 5 000 + coûts de remise en état actualisés 8 000 = 191 195,81 €. Trésorerie nette décaissée : 40 000 + 3 000 − 5 000 = 38 000 €. La provision pour remise en état (8 000 €) est comptabilisée selon IAS 37. Écriture : débit 218 191 195,81 ; crédits 168 145 195,81, 1526 8 000 et 512 38 000.",
       "source_ref": "IFRS 16 §23-24 et §26 (règlement UE 2023/1803) ; IAS 37 §14 et §45 (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 300

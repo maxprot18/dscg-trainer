@@ -33,7 +33,7 @@
       "answer": false,
       "justification": "La loi PACTE a supprimé l'obligation automatique de désignation propre aux SA : toutes les sociétés commerciales (SA, SAS, SARL, SNC, SCA) sont désormais soumises aux mêmes seuils, fixés par décret et appréciés sur deux des trois critères (total du bilan, chiffre d'affaires hors taxes, nombre moyen de salariés).",
       "explanation": "Avant la réforme, la SA devait toujours désigner un commissaire aux comptes, contrairement aux SAS et SARL soumises à des seuils. Le décret n° 2019-514 a fixé des seuils communs à toutes les formes de sociétés commerciales, avec un dispositif spécifique pour les groupes (la tête de groupe apprécie les seuils sur l'ensemble qu'elle forme avec les sociétés qu'elle contrôle ; les filiales importantes peuvent aussi être concernées). Des obligations de désignation subsistent indépendamment des seuils : entités d'intérêt public, désignation demandée par des associés représentant une fraction du capital ou par décision de justice, certaines entités relevant de textes particuliers. Retenir le principe (seuils identiques pour toutes les sociétés commerciales) plutôt que les montants, qui sont fixés par voie réglementaire et peuvent être actualisés.",
-      "source_ref": "Loi n° 2019-486 du 22 mai 2019 (PACTE) ; décret n° 2019-514 du 24 mai 2019 ; C. com., partie réglementaire (seuils de désignation du CAC)",
+      "source_ref": "Loi n° 2019-486 du 22 mai 2019 (PACTE) ; C. com. art. L. 221-9, L. 223-35, L. 225-218, L. 227-9-1 et D. 221-5 (seuils, relevés par le décret n° 2024-152 du 28 février 2024)",
       "verified": true,
       "estimated_seconds": 40
     },
@@ -49,7 +49,7 @@
         "désignation",
         "actionnaires minoritaires"
       ],
-      "source_ref": "C. com., dispositions sur la récusation du commissaire aux comptes (anc. art. L. 823-6, renuméroté par l'ordonnance n° 2023-1142) ; C. com., partie réglementaire (délai de trente jours de la demande de récusation)",
+      "source_ref": "C. com. art. L. 821-49 (récusation, anc. art. L. 823-6) et R. 821-176 (délai de trente jours)",
       "verified": true,
       "estimated_seconds": 60,
       "statement": "L'assemblée générale ordinaire d'une SA vient de nommer un commissaire aux comptes. Un actionnaire détenant 7 % du capital estime que ce professionnel entretient des liens d'affaires étroits avec le président du conseil d'administration. Quelle voie lui est ouverte ?",
@@ -62,7 +62,7 @@
       "answer": [
         1
       ],
-      "explanation": "Un ou plusieurs actionnaires représentant au moins 5 % du capital (ainsi que le comité social et économique, le ministère public et, pour les sociétés cotées, l'AMF) peuvent demander en justice la récusation du commissaire aux comptes pour juste motif. La demande doit être formée dans un bref délai suivant la désignation (trente jours, partie réglementaire du Code de commerce). Avec 7 % du capital, l'actionnaire peut agir seul, et un doute sérieux sur l'indépendance constitue un juste motif possible. L'assemblée ne peut pas révoquer un commissaire aux comptes : seul le juge peut le relever de ses fonctions. La CNCC n'a aucun pouvoir sur les désignations. La récusation n'est pas réservée au ministère public."
+      "explanation": "Un ou plusieurs actionnaires représentant au moins 5 % du capital (ainsi que le comité social et économique, le ministère public et, pour les sociétés cotées, l'AMF) peuvent demander en justice la récusation du commissaire aux comptes pour juste motif. La demande doit être formée dans un bref délai suivant la désignation (trente jours, art. R. 821-176). Avec 7 % du capital, l'actionnaire peut agir seul, et un doute sérieux sur l'indépendance constitue un juste motif possible. L'assemblée ne peut pas révoquer un commissaire aux comptes : seul le juge peut le relever de ses fonctions. La CNCC n'a aucun pouvoir sur les désignations. La récusation n'est pas réservée au ministère public."
     },
     {
       "id": "ue4-cadre-nomination-0004",
@@ -76,7 +76,7 @@
         "relèvement",
         "désaccord technique"
       ],
-      "source_ref": "C. com., disposition sur le relèvement du CAC en cas de faute ou d'empêchement (anc. art. L. 823-7, renuméroté par l'ordonnance n° 2023-1142)",
+      "source_ref": "C. com. art. L. 821-50 (relèvement du CAC en cas de faute ou d'empêchement, anc. art. L. 823-7)",
       "verified": true,
       "estimated_seconds": 60,
       "statement": "Le conseil d'administration de la SA Altaïr est en désaccord avec son commissaire aux comptes, qui conteste la méthode de dépréciation des stocks retenue et annonce une réserve. Les dirigeants souhaitent mettre fin à son mandat avant son terme. Que prévoit le droit ?",
@@ -89,7 +89,7 @@
       "answer": [
         3
       ],
-      "explanation": "Pour protéger son indépendance, le commissaire aux comptes ne peut pas être révoqué par les organes de la société. Le relèvement de fonctions est prononcé par le juge, à la demande des personnes habilitées (organe d'administration, actionnaires représentant au moins 5 % du capital, comité social et économique, ministère public, H2A, AMF pour les sociétés cotées), en cas de faute ou d'empêchement. Exprimer un désaccord technique et formuler une réserve relève de l'exercice normal de la mission : ce n'est pas une faute. La révocation ad nutum ou pour juste motif par l'assemblée et la décision du conseil d'administration sont donc exclues."
+      "explanation": "Pour protéger son indépendance, le commissaire aux comptes ne peut pas être révoqué par les organes de la société. Le relèvement de fonctions est prononcé par le juge, à la demande des personnes habilitées (organe d'administration, actionnaires représentant au moins 5 % du capital, comité social et économique, ministère public, AMF pour les sociétés cotées), en cas de faute ou d'empêchement. Exprimer un désaccord technique et formuler une réserve relève de l'exercice normal de la mission : ce n'est pas une faute. La révocation ad nutum ou pour juste motif par l'assemblée et la décision du conseil d'administration sont donc exclues."
     },
     {
       "id": "ue4-cadre-nomination-0005",

@@ -1,6 +1,6 @@
 # Variations de périmètre : acquisition par étapes, cession, perte de contrôle
 
-**Références :** IFRS 3 §41-42 ; IFRS 10 §23, §25 et §B96-B99 ; IAS 28 §22 (règl. UE 2023/1803) ; règl. ANC 2020-01 (variations du pourcentage d'intérêt, prise de contrôle par étapes, cessions)
+**Références :** IFRS 3 §41-42 ; IFRS 10 §23, §25 et §B96-B99 ; IAS 28 §22 (règl. UE 2023/1803) ; règl. ANC 2020-01 art. 241-1, 242-1 et 242-3 à 242-7
 
 **Enjeu :** chaque mouvement sur le capital d'une filiale pose la même question, franchit-on le seuil du contrôle ? ; la réponse décide si l'opération passe par le résultat (avec réévaluation à la juste valeur) ou seulement par les capitaux propres, et l'examen fait calculer le montant correspondant.
 
@@ -9,11 +9,11 @@
 **Prise de contrôle par étapes (IFRS 3 §41-42)**
 - La participation antérieure (titres disponibles ou mise en équivalence) est réévaluée à sa juste valeur à la date de prise de contrôle ; l'écart avec sa valeur comptable consolidée est un profit ou une perte en résultat, et les montants accumulés en autres éléments du résultat global sont reclassés comme si la participation avait été cédée.
 - Goodwill = contrepartie transférée + PNC + juste valeur de la participation antérieure − actif net identifiable.
-- Règles françaises (ANC 2020-01) : l'écart d'acquisition est calculé en une fois à la date de prise de contrôle sur l'ensemble des titres détenus ; l'écart de réestimation des titres anciennement détenus est inscrit en capitaux propres, pas en résultat.
+- Règles françaises (ANC 2020-01) : l'écart d'acquisition est calculé à la date de prise de contrôle sur le coût total des titres (lots anciens et nouveaux), sans réévaluation des titres à la juste valeur ; la réévaluation de la quote-part d'actif net antérieurement mise en équivalence est portée en réserves consolidées, pas en résultat (art. 241-1).
 
 **Variation de pourcentage sans changement de contrôle (IFRS 10 §23 et §B96)**
 - Achat ou cession de titres entre le groupe et les minoritaires : transaction entre actionnaires, en capitaux propres ; pas de nouveau goodwill, pas de résultat consolidé. La différence entre le prix et la variation des PNC est imputée sur les capitaux propres part du groupe ; la plus-value des comptes individuels du vendeur est éliminée.
-- Divergence française : en ANC 2020-01, un achat complémentaire fait naître un écart d'acquisition complémentaire et une cession partielle sans perte de contrôle dégage un résultat de cession consolidé.
+- Divergence française : en ANC 2020-01, un achat complémentaire fait naître un écart d'acquisition complémentaire (art. 242-1) et une cession partielle sans perte de contrôle dégage un résultat de cession consolidé (art. 242-5) ; en cas de perte de contrôle, la participation conservée garde sa valeur consolidée, qui devient son coût d'entrée (art. 242-7).
 
 **Perte de contrôle (IFRS 10 §25 et §B98)**
 - Décomptabilisation des actifs, passifs, goodwill et PNC de l'ancienne filiale à leur valeur consolidée ; participation conservée évaluée à sa juste valeur, nouveau coût d'entrée en mise en équivalence (IAS 28) ou en actif financier (IFRS 9).
@@ -37,7 +37,7 @@ Variante sans perte de contrôle : Delta détenait 70 % et achète 10 % de plus 
 - Garder la participation antérieure à sa valeur comptable lors d'une prise de contrôle par étapes : IFRS 3 §42 impose sa juste valeur à la date de prise de contrôle.
 
 ## À retenir
-- Franchir le seuil du contrôle (dans un sens ou dans l'autre) déclenche une réévaluation à la juste valeur en résultat.
+- En IFRS, franchir le seuil du contrôle (dans un sens ou dans l'autre) déclenche une réévaluation à la juste valeur en résultat ; pas en règles françaises.
 - Rester au-dessus du seuil : capitaux propres seulement en IFRS ; les règles françaises, elles, dégagent un écart d'acquisition ou un résultat de cession.
 - Ne jamais intégrer le résultat d'avant la prise de contrôle ni celui d'après la perte de contrôle.
 

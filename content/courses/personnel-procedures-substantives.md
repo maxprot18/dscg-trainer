@@ -14,7 +14,7 @@
 ```
 
 - **Écritures** : débit 6412 / crédit 4282 (congés) ; débit 645 / crédit 4382 (charges sociales sur congés) ; débit 6413 / crédit 4286 (primes acquises) ; débit 645 / crédit 4386 (charges sur primes). Quand les comptes portent encore le solde de N−1, seul le complément est enregistré.
-- **Indemnités de fin de carrière** : si l'entité les provisionne (méthode de référence du PCG, irréversible), contrôle des hypothèses actuarielles et de la dotation (6815 / 153) ; sinon, contrôle du montant indiqué en annexe.
+- **Indemnités de fin de carrière** : si l'entité les provisionne (méthode de référence du PCG, irréversible), contrôle des hypothèses actuarielles et de la dotation (6815 / 1521) ; sinon, contrôle du montant indiqué en annexe.
 
 **Formules clés :** masse salariale attendue = effectif moyen N × salaire moyen N−1 × (1 + taux d'augmentation × mois d'application / 12) ; dette de congés = jours acquis non pris × indemnité journalière ; charges sur congés = dette × taux de charges patronales ; taux horaire = salaire mensuel / 151,67
 

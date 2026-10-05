@@ -1,6 +1,6 @@
 # Provisions — assertions d'audit
 
-**Références :** NEP 500 (caractère probant des éléments collectés) ; NEP 540 (estimations comptables) ; PCG art. 321-1 (passif, provision, passif éventuel, charge à payer) et 322-1 s. ; comptes 151 à 158
+**Références :** NEP 500 (caractère probant des éléments collectés) ; NEP 540 (estimations comptables) ; PCG art. 321-1 (passif, provision, passif éventuel, charge à payer) et 322-1 s. ; comptes 151 et 152
 
 **Enjeu :** les provisions ne naissent pas d'un flux de pièces : l'auditeur doit prouver autant ce qui manque (exhaustivité) que ce qui est en trop (existence) ; l'examen attend que l'on nomme l'assertion précise mise en cause par une situation donnée.
 
@@ -12,7 +12,7 @@ Les provisions pour risques et charges sont des passifs estimés : les assertion
 - **Présentation et information** : distinction provision / dette (montant et échéance certains : charge à payer) / dépréciation d'actif ; mention en annexe des passifs éventuels et du tableau des mouvements de provisions.
 
 ```diagram
-{"type":"tree","title":"Provision, dette, passif éventuel ou rien ?","root":{"label":"Obligation envers un tiers née avant la clôture ?","children":[{"edge":"non","label":"Rien : ni provision ni annexe","note":"pertes futures, dépenses décidées sans obligation"},{"edge":"oui","label":"Montant et échéance certains ?","children":[{"edge":"oui","label":"Dette ou charge à payer","note":"facture, transaction signée"},{"edge":"non","label":"Sortie de ressources probable et estimable ?","children":[{"edge":"oui","label":"Provision (151 à 158)","note":"meilleure estimation"},{"edge":"non","label":"Passif éventuel : annexe seulement"}]}]}]}}
+{"type":"tree","title":"Provision, dette, passif éventuel ou rien ?","root":{"label":"Obligation envers un tiers née avant la clôture ?","children":[{"edge":"non","label":"Rien : ni provision ni annexe","note":"pertes futures, dépenses décidées sans obligation"},{"edge":"oui","label":"Montant et échéance certains ?","children":[{"edge":"oui","label":"Dette ou charge à payer","note":"facture, transaction signée"},{"edge":"non","label":"Sortie de ressources probable et estimable ?","children":[{"edge":"oui","label":"Provision (151 ou 152)","note":"meilleure estimation"},{"edge":"non","label":"Passif éventuel : annexe seulement"}]}]}]}}
 ```
 
 **Procédures types :** exhaustivité → demande de confirmation aux avocats, revue des procès-verbaux, analyse des honoraires juridiques ; existence → justificatifs de l'obligation (assignation, contrat, plan annoncé) ; évaluation → revue des hypothèses, recalcul, dénouement postérieur.

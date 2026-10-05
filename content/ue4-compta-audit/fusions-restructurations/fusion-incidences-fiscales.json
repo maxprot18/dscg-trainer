@@ -164,7 +164,7 @@
         "fonds commercial"
       ],
       "title": "Fusion Rubis – Saphir sous le régime de faveur",
-      "context": "La société Rubis SA absorbe la société Saphir SA au 1er janvier N. Les deux sociétés sont indépendantes et les actionnaires de Rubis conservent le contrôle : les apports sont évalués à la valeur réelle. L'opération est placée sous le régime de faveur de l'article 210 A du CGI.\nÉléments apportés (valeur fiscale chez Saphir / valeur d'apport) :\n- fonds commercial créé par Saphir, non inscrit à son bilan : 0 € / 200 000 € ;\n- terrain : 80 000 € / 180 000 € ;\n- construction : 300 000 € / 450 000 € ;\n- matériel : 120 000 € / 165 000 € ;\n- stocks : 90 000 € / 90 000 €.\nDurées d'utilisation résiduelles retenues par Rubis : construction 20 ans, matériel 5 ans.\nEn N+2, Rubis envisage de céder le terrain pour 230 000 €.\nTaux d'IS : 25 %.",
+      "context": "La société Rubis SA absorbe la société Saphir SA au 1er janvier N. Les deux sociétés sont indépendantes et les actionnaires de Rubis conservent le contrôle : les apports sont évalués à la valeur réelle. L'opération est placée sous le régime de faveur de l'article 210 A du CGI.\nÉléments apportés (valeur fiscale chez Saphir / valeur d'apport) :\n- fonds commercial créé par Saphir, non inscrit à son bilan : 0 € / 200 000 € ;\n- terrain : 80 000 € / 180 000 € ;\n- construction : 300 000 € / 450 000 € ;\n- matériel : 120 000 € / 165 000 € ;\n- stocks : 90 000 € / 90 000 €.\nDurées d'utilisation résiduelles retenues par Rubis : construction 20 ans, matériel 5 ans ; le fonds commercial n'est pas amorti en comptabilité.\nEn N+2, Rubis envisage de céder le terrain pour 230 000 €.\nTaux d'IS : 25 %.",
       "sub_questions": [
         {
           "id": "q1",
@@ -186,7 +186,7 @@
           "prompt": "Sous le régime de faveur, Saphir doit acquitter l'IS sur la plus-value relative à son fonds commercial.",
           "points": 2,
           "answer": false,
-          "explanation": "Faux : les plus-values nettes sur l'ensemble des éléments apportés sont exonérées chez l'absorbée. Le fonds commercial étant non amortissable, la plus-value est en sursis : elle sera imposée chez Rubis lors d'une cession ultérieure, calculée d'après sa valeur fiscale chez Saphir (0 €)."
+          "explanation": "Faux : les plus-values nettes sur l'ensemble des éléments apportés sont exonérées chez l'absorbée. Le fonds commercial n'étant pas amorti (il relève alors du régime des biens non amortissables, CGI art. 210 A, 3-d dernier alinéa), la plus-value est en sursis : elle sera imposée chez Rubis lors d'une cession ultérieure, calculée d'après sa valeur fiscale chez Saphir (0 €)."
         },
         {
           "id": "q3",

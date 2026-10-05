@@ -1,6 +1,6 @@
 # IFRS and accounting terminology (UK and US usage)
 
-**References:** IAS 1 §7 and §54 ; IAS 16 §6 ; IAS 36 §6 and §18 ; IAS 37 §10 ; IAS 38 §8 ; IFRS 13 §9 (règlement UE 2023/1803)
+**References:** IFRS 18 appendix A and §103 (formerly IAS 1 §7 and §54 ; Regulation (EU) 2026/338) ; IAS 16 §6 ; IAS 36 §6 and §18 ; IAS 37 §10 ; IAS 38 §8 ; IFRS 13 §9 (règlement UE 2023/1803)
 
 **Key issue:** the same French word (*amortissement*, *stocks*, *provision*) has several English equivalents depending on the asset concerned and on whether the document is British, American or IFRS; the exam asks for the term consistent with the context of the extract.
 

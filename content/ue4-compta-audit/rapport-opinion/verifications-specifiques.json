@@ -120,7 +120,7 @@
       ],
       "total_points": 8,
       "explanation": "Le cas distingue l'opinion sur les comptes, qui n'est pas affectée, des vérifications spécifiques (rapport de gestion, prises de participation) et du rapport spécial sur les conventions réglementées, y compris non autorisées.",
-      "source_ref": "NEP 9510 ; C. com. art. L. 225-38, L. 225-40 et L. 225-42 (conventions réglementées) ; C. com. art. L. 233-6 (prises de participation) ; C. com., signalement des irrégularités et inexactitudes (ancien art. L. 823-12)",
+      "source_ref": "NEP 9510 ; C. com. art. L. 225-38, L. 225-40 et L. 225-42 (conventions réglementées) ; C. com. art. L. 233-6 (prises de participation) ; C. com. art. L. 821-10 (signalement des irrégularités et inexactitudes ; ancien art. L. 823-12)",
       "verified": true,
       "estimated_seconds": 720
     },
@@ -147,7 +147,7 @@
         0
       ],
       "explanation": "Le commissaire aux comptes vérifie la sincérité et la concordance avec les comptes des informations financières du rapport de gestion. Les comptes étant exacts, l'erreur ne porte que sur le rapport de gestion : à défaut de correction, il la décrit dans la partie « Vérifications spécifiques » de son rapport, sans modifier son opinion sur les comptes (option 1), et la signale à l'assemblée. Les options 2 et 3 sont fausses : une réserve ou un refus de certifier ne visent que des anomalies ou des limitations portant sur les comptes. L'option 4 est fausse : la NEP 9510 impose précisément cette vérification, même si le rapport de gestion est établi sous la responsabilité de l'organe d'administration.",
-      "source_ref": "NEP 9510 (diligences relatives au rapport de gestion et aux documents adressés aux actionnaires) ; NEP 700 ; C. com., signalement des irrégularités et inexactitudes (ancien art. L. 823-12)",
+      "source_ref": "NEP 9510 révisée (arrêté du 20 avril 2026), §08, §18 à 22 (diligences relatives au rapport de gestion, inexactitudes et forme du rapport) ; NEP 700 ; C. com. art. L. 821-10 (signalement des irrégularités et inexactitudes ; ancien art. L. 823-12)",
       "verified": true,
       "estimated_seconds": 75
     },

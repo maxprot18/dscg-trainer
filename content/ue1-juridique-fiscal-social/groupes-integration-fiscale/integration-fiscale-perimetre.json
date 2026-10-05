@@ -152,18 +152,18 @@
           "kind": "open",
           "points": 4,
           "prompt": "Le groupe ayant été constitué, Hestia envisage de céder le 1er juillet N+2 à un dirigeant 5 % du capital de Brume (Alma conservant ses 28 %). Analysez les conséquences de cette opération sur l'appartenance de Brume au groupe.",
-          "model_answer": "Après la cession, Hestia détient 65 % + 28 % = 93 % de Brume, en dessous du seuil de 95 %. La condition de détention doit être remplie de manière continue au cours de l'exercice : Brume sort du groupe avec effet dès l'ouverture de l'exercice N+2 (1er janvier N+2), et non au 1er juillet. Son résultat de N+2 est imposé séparément, Brume redevenant redevable de l'IS et des acomptes. Les déficits éventuellement subis par Brume pendant l'intégration restent acquis au groupe (imputables sur le résultat d'ensemble) et ne lui sont pas restitués. Les neutralisations antérieures portant sur des opérations entre Brume et les autres membres (plus-values de cession d'immobilisations intra-groupe, abandons de créances) sont réintégrées dans le résultat d'ensemble (CGI art. 223 R). La convention d'intégration peut prévoir une indemnisation de Brume pour la perte de ses déficits. Pour éviter la sortie, la cession devrait être limitée de sorte que la détention reste au moins égale à 95 %.",
+          "model_answer": "Après la cession, Hestia détient 65 % + 28 % = 93 % de Brume, en dessous du seuil de 95 %. La condition de détention doit être remplie de manière continue au cours de l'exercice : Brume sort du groupe avec effet dès l'ouverture de l'exercice N+2 (1er janvier N+2), et non au 1er juillet. Son résultat de N+2 est imposé séparément, Brume redevenant redevable de l'IS et des acomptes. Les déficits éventuellement subis par Brume pendant l'intégration restent acquis au groupe (imputables sur le résultat d'ensemble) et ne lui sont pas restitués. Les plus-values ou moins-values de cession d'immobilisations entre Brume et les autres membres, neutralisées lors de leur réalisation, sont réintégrées dans le résultat d'ensemble (CGI art. 223 F, al. 2) ; les abandons de créances et subventions ne sont plus neutralisés depuis les exercices ouverts en 2019, sauf rappel de ceux neutralisés auparavant (art. 223 R). La convention d'intégration peut prévoir une indemnisation de Brume pour la perte de ses déficits. Pour éviter la sortie, la cession devrait être limitée de sorte que la détention reste au moins égale à 95 %.",
           "key_points": [
             "Détention ramenée à 93 % : condition de 95 % non remplie",
             "Sortie avec effet à l'ouverture de l'exercice N+2 (condition continue sur l'exercice)",
             "Imposition séparée de Brume dès N+2 ; déficits d'ensemble conservés par le groupe",
-            "Réintégration des neutralisations antérieures liées à Brume (223 R) et indemnisation éventuelle prévue par la convention"
+            "Réintégration des plus-values intra-groupe neutralisées liées à Brume (223 F, al. 2) et indemnisation éventuelle prévue par la convention"
           ]
         }
       ],
       "total_points": 10,
       "explanation": "Le cas porte sur les conditions de l'article 223 A : seuil de 95 % apprécié via les seules sociétés du groupe, identité des dates de clôture, assujettissement à l'IS, et sur les effets de la sortie d'une filiale.",
-      "source_ref": "CGI art. 223 A (conditions et périmètre) ; CGI art. 223 R (sortie du groupe)",
+      "source_ref": "CGI art. 223 A (conditions et périmètre) ; CGI art. 223 F, al. 2, et 223 S (sortie du groupe)",
       "estimated_seconds": 780
     },
     {

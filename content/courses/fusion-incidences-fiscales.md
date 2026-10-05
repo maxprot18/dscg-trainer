@@ -8,7 +8,7 @@
 
 **Régime de faveur** (CGI art. 210 A) : les plus-values nettes et profits dégagés sur l'ensemble des éléments apportés ne sont pas imposés chez l'absorbée. En contrepartie, l'absorbante prend dans le traité les engagements suivants :
 - reprendre à son passif les provisions dont l'imposition est différée (ex. amortissements dérogatoires, provisions réglementées) ;
-- calculer les plus-values de cession ultérieure des immobilisations **non amortissables** (terrain, fonds commercial, titres) d'après leur valeur fiscale chez l'absorbée : sursis d'imposition jusqu'à la cession ;
+- calculer les plus-values de cession ultérieure des immobilisations **non amortissables** (terrain, fonds commercial non amorti, titres) d'après leur valeur fiscale chez l'absorbée : sursis d'imposition jusqu'à la cession ;
 - réintégrer dans ses résultats imposables les plus-values sur biens **amortissables**, par parts égales sur 15 ans pour les constructions (et plantations, agencements de terrains de longue durée) et sur 5 ans pour les autres biens (règle de la durée moyenne pondérée si les constructions représentent plus de 90 % de la plus-value nette sur biens amortissables) ; en contrepartie, ses amortissements fiscaux sont calculés sur la valeur d'apport ;
 - en cas de cession d'un bien amortissable, imposer immédiatement la fraction de plus-value non encore réintégrée ;
 - inscrire les éléments autres que les immobilisations (stocks) pour leur valeur fiscale chez l'absorbée, ou à défaut imposer le profit correspondant.

@@ -111,7 +111,7 @@
       "verified": true,
       "estimated_seconds": 180,
       "explanation": "La hausse de valeur (950 000 − 800 000 = 150 000 €) est comptabilisée en autres éléments du résultat global et cumulée en capitaux propres (IAS 16 §39). La valeur comptable du terrain (950 000 €) excède sa base fiscale (800 000 €) : différence temporelle imposable de 150 000 €, d'où un passif d'impôt différé de 37 500 € (IAS 12 §15 et §20). Cet impôt différé suit l'opération qui le génère : il est comptabilisé en OCI, en diminution de l'écart de réévaluation (IAS 12 §61A-62), qui s'établit à 150 000 − 37 500 = 112 500 €. Aucune charge d'impôt n'affecte le résultat net.",
-      "statement": "Au 31/12/N, la société Scaër (IFRS) applique le modèle de la réévaluation à ses terrains. Un terrain acquis 800 000 € est réévalué à sa juste valeur de 950 000 €. La réévaluation n'a aucune incidence fiscale (la base fiscale reste de 800 000 €) ; taux d'impôt : 25 %. Passez l'écriture de réévaluation au 31/12/N, impôt différé compris. Conventions : compte 105 pour l'écart de réévaluation (OCI cumulés en capitaux propres), compte 155 pour le passif d'impôt différé.",
+      "statement": "Au 31/12/N, la société Scaër (IFRS) applique le modèle de la réévaluation à ses terrains. Un terrain acquis 800 000 € est réévalué à sa juste valeur de 950 000 €. La réévaluation n'a aucune incidence fiscale (la base fiscale reste de 800 000 €) ; taux d'impôt : 25 %. Passez l'écriture de réévaluation au 31/12/N, impôt différé compris. Conventions : compte 105 pour l'écart de réévaluation (OCI cumulés en capitaux propres), compte 1523 pour le passif d'impôt différé.",
       "date": "31/12/N",
       "entries": [
         {
@@ -127,7 +127,7 @@
           "credit": 112500
         },
         {
-          "account": "155",
+          "account": "1523",
           "label": "Impôts différés passifs",
           "debit": 0,
           "credit": 37500
@@ -147,7 +147,7 @@
         "différence permanente",
         "compensation"
       ],
-      "source_ref": "IAS 12 §5, §15, §24, §34-36, §47, §56 et §74 (règlement UE 2023/1803) ; IAS 1 §56 (règlement UE 2023/1803)",
+      "source_ref": "IAS 12 §5, §15, §24, §34-36, §47, §56 et §74 (règlement UE 2023/1803) ; IFRS 18 §98 (règlement UE 2023/1803 modifié par le règl. UE 2026/338 ; ex-IAS 1 §56)",
       "verified": true,
       "estimated_seconds": 900,
       "explanation": "Passif d'impôt différé brut 25 000 € (ligne de production), actif brut 50 000 € (provision et déficit reportable), d'où un actif net de 25 000 € présenté en non courant après compensation (IAS 12 §74). Le passage d'un passif net de 5 000 € à un actif net de 25 000 € se traduit par un produit d'impôt différé de 30 000 €. L'amende, non déductible, est une différence permanente sans impôt différé.",
@@ -210,7 +210,7 @@
           "answer": [
             1
           ],
-          "explanation": "Les actifs et passifs d'impôt différé sont compensés lorsque l'entité a un droit juridiquement exécutoire de compenser et qu'ils relèvent de la même administration fiscale (IAS 12 §74), ce qui est le cas ici : actif net de 25 000 €. Les impôts différés ne sont jamais classés en courant (IAS 1 §56)."
+          "explanation": "Les actifs et passifs d'impôt différé sont compensés lorsque l'entité a un droit juridiquement exécutoire de compenser et qu'ils relèvent de la même administration fiscale (IAS 12 §74), ce qui est le cas ici : actif net de 25 000 €. Les impôts différés ne sont jamais classés en courant (IFRS 18 §98, ex-IAS 1 §56)."
         },
         {
           "id": "q5-justification",
