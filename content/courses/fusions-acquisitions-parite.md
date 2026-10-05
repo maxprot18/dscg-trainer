@@ -6,7 +6,7 @@
 
 **Parité d'échange** = valeur unitaire de l'action absorbée / valeur unitaire de l'action absorbante. Elle fixe le nombre d'actions de l'absorbante remises pour une action de l'absorbée et s'exprime en nombres entiers (2 pour 3), avec une soulte en espèces si nécessaire (≤ 10 % de la valeur nominale des titres attribués).
 - Valeurs déterminées selon une approche multicritère (actif net corrigé, valeur de rendement, DCF, multiples, cours de bourse), avec les mêmes méthodes pour les deux sociétés ; le commissaire à la fusion se prononce sur le caractère équitable du rapport d'échange (L. 236-10).
-- Nombre d'actions à émettre = nombre d'actions de l'absorbée échangées × parité. Les actions de l'absorbée détenues par l'absorbante ne sont pas échangées (fusion-renonciation), et les actions propres de l'absorbée sont annulées.
+- Nombre d'actions à émettre = nombre d'actions de l'absorbée échangées × parité. Les actions de l'absorbée détenues par l'absorbante (fusion-renonciation) ou par l'absorbée elle-même (actions propres) ne sont pas échangées (L. 236-3 II).
 
 **Synergies** : de coûts (achats, fonctions support, sites) ou de revenus (ventes croisées, pouvoir de marché). Leur valeur = valeur actuelle des gains nets d'impôt − coûts d'intégration. Prix maximal pour l'acquéreur = valeur autonome de la cible + valeur des synergies ; la prime versée aux actionnaires de la cible partage les synergies entre les deux groupes d'actionnaires.
 

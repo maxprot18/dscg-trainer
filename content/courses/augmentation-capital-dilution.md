@@ -18,7 +18,7 @@
 
 **Titres hybrides** : OC (obligation convertible en actions au gré du porteur), ORA (remboursée obligatoirement en actions), OBSA et BSA (droit de souscrire à prix fixé). En PCG, l'OC est une dette (compte 161) jusqu'à la conversion ; en IFRS, l'émetteur sépare une composante dette (valeur actuelle des flux au taux d'une dette simple) et une composante capitaux propres (IAS 32 §28-32).
 
-**Comptabilisation** : fonds reçus avant la réalisation au compte 4563 ; à la réalisation, débit 4563, crédit 101 (nominal) et 1041 (prime d'émission). Les frais d'augmentation de capital peuvent être imputés sur la prime d'émission, nets d'impôt (option), ou passés en charges.
+**Comptabilisation** : fonds reçus avant la réalisation au compte 4563 ; à la réalisation, débit 4563, crédit 101 (nominal) et 1041 (prime d'émission). Les frais d'augmentation de capital peuvent être imputés sur la prime d'émission (nets d'impôt en pratique), inscrits en frais d'établissement ou passés en charges ; si la prime est insuffisante, l'excédent va en charges (PCG art. 212-9).
 
 **Formules clés :** C' = (N C + A E) / (N + A) ; DPS = (C − E) × A / (N + A) ; DA = C × A / (N + A)
 

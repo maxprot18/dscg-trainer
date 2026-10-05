@@ -1,6 +1,6 @@
 # Montages à effet de levier (LBO) et capital-investissement
 
-**Références :** CGI art. 145 et 216 (régime mère-fille) ; CGI art. 223 A et suivants (intégration fiscale) ; CGI art. 212 bis (limitation des charges financières nettes) ; C. com. art. L. 225-216 (interdiction de l'assistance financière dans la SA)
+**Références :** CGI art. 145 et 216 (régime mère-fille) ; CGI art. 223 A et suivants (intégration fiscale) ; CGI art. 212 bis et 223 B bis (limitation des charges financières nettes) ; C. com. art. L. 225-216 (interdiction de l'assistance financière dans la SA)
 
 **Enjeu :** le LBO est le montage type de la transmission d'entreprise financée par la dette ; l'examen attend l'organigramme (fonds, holding, cible, banques), la distinction des trois leviers et un test chiffré de la capacité de la cible à rembourser la dette d'acquisition.
 
@@ -9,9 +9,9 @@
 **Les trois leviers**
 - Financier : si la rentabilité économique de la cible dépasse le coût de la dette après impôt, la rentabilité des fonds propres investis augmente avec l'endettement (effet de levier).
 - Juridique : contrôler la cible (plus de 50 % des droits de vote) avec un apport limité, éventuellement via des holdings en cascade ; les managers peuvent détenir une part significative de la holding avec peu de capital.
-- Fiscal : avec une détention d'au moins 95 %, l'intégration fiscale impute les frais financiers de la holding, qui n'a pas de résultat propre, sur les bénéfices de la cible (sous réserve du plafond de l'art. 212 bis : 30 % de l'EBITDA fiscal ou 3 M€).
+- Fiscal : avec une détention d'au moins 95 %, l'intégration fiscale impute les frais financiers de la holding, qui n'a pas de résultat propre, sur les bénéfices de la cible (sous réserve du plafond des charges financières nettes : le plus élevé de 3 M€ et de 30 % de l'EBITDA fiscal, apprécié au niveau du groupe intégré, art. 212 bis et 223 B bis).
 
-**Remontée de dividendes** : régime mère-fille (participation ≥ 5 %, titres conservés 2 ans) : dividendes exonérés sauf une quote-part de frais et charges de 5 %, ramenée à 1 % pour les dividendes versés au sein d'un groupe intégré.
+**Remontée de dividendes** : régime mère-fille (participation ≥ 5 %, titres conservés 2 ans) : dividendes exonérés sauf une quote-part de frais et charges de 5 %, ramenée à 1 % pour les dividendes reçus d'une société membre du même groupe intégré depuis plus d'un exercice (CGI art. 216 I).
 
 **Capacité de remboursement** : dividendes reçus + économie d'IS d'intégration − frais financiers ≥ remboursement du capital. Le montage échoue si la cible ne peut pas distribuer assez (résultat, BFR, investissements, réserve légale, clauses bancaires). La sortie (cession, introduction en bourse, LBO secondaire) intervient à 4-7 ans.
 
@@ -24,14 +24,14 @@
 ```
 
 ## Exemple
-NewCo achète 100 % de la cible 10 M€, financés par 4 M€ de fonds propres et 6 M€ de dette senior à 5 % sur 7 ans (amortissement constant 857 k€ par an). Cible : résultat avant IS 2 000 k€, IS 25 %, distribution intégrale ; hypothèse : holding et cible intégrées fiscalement (détention ≥ 95 %), plafond de l'art. 212 bis non atteint.
-Intérêts année 1 : 6 000 × 5 % = 300 k€. Économie d'IS d'intégration : 300 × 25 % = 75 k€ (IS de 425 k€ au lieu de 500 k€). IS sur la quote-part de 1 % du dividende de 1 500 k€ : 3,75 k€.
-Capacité : 1 500 + 75 − 300 − 3,75 = **1 271 k€ ≥ 857 k€** : la dette est soutenable. Sortie à 5 ans pour 10 M€ de fonds propres : multiple 2,5× ; TRI = 2,5^(1/5) − 1 = 20,1 %.
+NewCo achète 100 % de la cible 10 M€, financés par 4 M€ de fonds propres et 6 M€ de dette senior à 5 % sur 7 ans (amortissement constant 857 k€ par an). Cible : résultat avant IS 2 000 k€, IS 25 %, distribution intégrale ; hypothèse : holding et cible intégrées fiscalement (détention ≥ 95 %), plafond de l'art. 223 B bis non atteint.
+Intérêts année 1 : 6 000 × 5 % = 300 k€. Économie d'IS d'intégration : 300 × 25 % = 75 k€ (IS de 425 k€ au lieu de 500 k€). IS sur la quote-part du dividende de 1 500 k€ : 5 % (et non 1 %, la cible n'étant pas membre du groupe depuis plus d'un exercice), soit 1 500 × 5 % × 25 % = 18,75 k€.
+Capacité : 1 500 + 75 − 300 − 18,75 = **1 256 k€ ≥ 857 k€** : la dette est soutenable. Sortie à 5 ans pour 10 M€ de fonds propres : multiple 2,5× ; TRI = 2,5^(1/5) − 1 = 20,1 %.
 
 ## Erreurs fréquentes
 - Appeler « levier juridique » l'économie d'impôt de l'intégration : le levier juridique est le contrôle obtenu avec un apport limité ; le fiscal est l'imputation des frais financiers.
 - Conclure que l'économie d'IS est nulle « parce que la holding n'a pas de bénéfice » : c'est justement l'intégration fiscale qui permet d'imputer son déficit sur le résultat de la cible.
-- Exonérer totalement les dividendes : la quote-part de frais et charges (5 %, 1 % en intégration) reste imposée.
+- Exonérer totalement les dividendes : la quote-part de frais et charges (5 %, 1 % en intégration après un exercice d'appartenance) reste imposée.
 - Classer le LBO en capital-développement : c'est du capital-transmission.
 
 ## À retenir

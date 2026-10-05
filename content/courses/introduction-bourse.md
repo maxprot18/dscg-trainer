@@ -17,7 +17,7 @@
 
 **Option de surallocation (greenshoe)** : titres supplémentaires (au plus 15 % de l'offre initiale) pouvant être émis ou cédés dans les 30 jours suivant la première cotation, en lien avec la stabilisation du cours par la banque chef de file.
 
-**Flottant** = actions détenues par le public / nombre total d'actions après l'opération ; un flottant minimal est exigé par le marché (25 % sur Euronext, ou 5 % si cela représente au moins 5 M€).
+**Flottant** = actions détenues par le public / nombre total d'actions après l'opération ; un flottant minimal est exigé à l'admission (règles d'Euronext : 25 %, ou moins, jusqu'à 5 %, si le flottant atteint au moins 5 M€ ; la directive (UE) 2024/2811 « Listing Act » ramène l'exigence à 10 % sur un marché réglementé, sous réserve de sa transposition).
 
 **Formules clés :** fonds levés par la société = actions nouvelles × prix − frais ; capitalisation post-money = nombre total d'actions × prix ; pre-money = post-money − fonds levés bruts
 

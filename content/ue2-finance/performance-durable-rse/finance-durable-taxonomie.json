@@ -82,7 +82,7 @@
         "emprunt obligataire",
         "prime de remboursement"
       ],
-      "source_ref": "PCG (règl. ANC 2014-03) : comptes 163 Autres emprunts obligataires, 169 Primes de remboursement des obligations, 512 Banques",
+      "source_ref": "PCG (règl. ANC 2014-03) : comptes 163 Autres emprunts obligataires, 169 Primes de remboursement des emprunts, 512 Banques",
       "verified": true,
       "estimated_seconds": 180,
       "statement": "Le 1er avril N, la société Lumen émet un emprunt obligataire vert : 20 000 obligations de nominal 100 €, émises à 98 € et remboursables au pair in fine. Les fonds sont affectés à la rénovation énergétique de ses entrepôts et encaissés le jour même sur le compte bancaire. Les frais d'émission sont ignorés. Passez l'écriture d'émission (utilisez le compte 163 pour l'emprunt et le compte 169 pour la prime de remboursement).",
@@ -96,7 +96,7 @@
         },
         {
           "account": "169",
-          "label": "Primes de remboursement des obligations",
+          "label": "Primes de remboursement des emprunts",
           "debit": 40000,
           "credit": 0
         },

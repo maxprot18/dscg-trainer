@@ -88,16 +88,16 @@
       "tags": [
         "cap",
         "prime d’option",
-        "compte 52"
+        "compte 521"
       ],
-      "source_ref": "PCG art. 628-1 s. (règl. ANC 2014-03 modifié par le règl. ANC 2015-05) ; comptes 52, 627, 512",
+      "source_ref": "PCG art. 628-1 s. (règl. ANC 2014-03 modifié par le règl. ANC 2015-05) ; comptes 521, 627, 512",
       "verified": true,
       "estimated_seconds": 120,
-      "statement": "Le 15 janvier N, la société Quintin achète à sa banque un cap de taux destiné à couvrir un emprunt à taux variable. Elle paie une prime de 42 000 € et une commission bancaire de 300 € HT (opération exonérée de TVA), prélevées sur son compte bancaire. Utilisez le compte 52 « Instruments financiers à terme et jetons détenus » pour la prime et le compte 627 pour la commission. Passez l’écriture du 15 janvier N.",
+      "statement": "Le 15 janvier N, la société Quintin achète à sa banque un cap de taux destiné à couvrir un emprunt à taux variable. Elle paie une prime de 42 000 € et une commission bancaire de 300 € HT (opération exonérée de TVA), prélevées sur son compte bancaire. Utilisez le compte 521 « Instruments financiers à terme » pour la prime et le compte 627 pour la commission. Passez l’écriture du 15 janvier N.",
       "date": "15/01/N",
       "entries": [
         {
-          "account": "52",
+          "account": "521",
           "label": "Instruments financiers à terme (prime du cap)",
           "debit": 42000,
           "credit": 0
@@ -115,7 +115,7 @@
           "credit": 42300
         }
       ],
-      "explanation": "La prime d’une option est enregistrée à l’actif, au compte 52, lors de son paiement. Dans une relation de couverture, elle est ensuite rapportée au résultat de façon symétrique à l’élément couvert, ici les charges d’intérêts de l’emprunt sur la durée du cap (règl. ANC 2015-05). La commission bancaire est une charge de la période (627). Le compte bancaire est crédité du total, 42 300 €."
+      "explanation": "La prime d’une option est enregistrée à l’actif, au compte 521 (PCG art. 628-2 et art. 1215-52, commentaire du compte 52), lors de son paiement. Dans une relation de couverture, elle est ensuite rapportée au résultat de façon symétrique à l’élément couvert, ici les charges d’intérêts de l’emprunt sur la durée du cap (art. 628-12 : étalement sur la période de couverture, ou constatation au rythme de la transaction couverte). La commission bancaire est une charge de la période (627). Le compte bancaire est crédité du total, 42 300 €."
     },
     {
       "id": "ue2-risques-taux-0005",
