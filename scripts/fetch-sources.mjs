@@ -69,9 +69,8 @@ mkdirSync(join(DIR, 'nep'), { recursive: true })
   const { readFileSync } = await import('node:fs')
   const pages = [...new Set(readFileSync(join(DIR, 'h2a.html'), 'utf8').match(/https:\/\/h2a-france\.org\/normes\/[^"]+/g) ?? [])]
   for (const url of pages) {
-    const num = url.match(/nep-(\d{3,4})\/?$/)?.[1] ?? url.split('/').filter(Boolean).pop()
-    const file = `nep/NEP-${num}.txt`
-    if (have(file)) continue
+    const slug = url.split('/').filter(Boolean).pop()
+    if (pages.length && have(`nep/.done-${slug}`)) continue
     const html = run('curl', ['-sS', '-L', '--fail', '-m', '120', url]).toString()
     const main = html.match(/<main[\s\S]*?<\/main>/)?.[0] ?? html
     const text = main
@@ -82,7 +81,10 @@ mkdirSync(join(DIR, 'nep'), { recursive: true })
       .replace(/&#8211;/g, '–')
       .replace(/&amp;/g, '&')
       .replace(/\n\s*\n+/g, '\n')
-    writeFileSync(join(DIR, file), `${url}\n${text}`)
+    // Fichier nommé d'après le numéro lu dans la page (« NEP 240 - … »), l'adresse ne le donnant pas toujours.
+    const num = text.match(/NEP\s*(\d{3,4})\s*[-–]/)?.[1] ?? slug
+    writeFileSync(join(DIR, `nep/NEP-${num}.txt`), `${url}\n${text}`)
+    writeFileSync(join(DIR, `nep/.done-${slug}`), '')
   }
   console.log('  ', pages.length, 'NEP')
 }
