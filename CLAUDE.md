@@ -11,6 +11,7 @@ PWA d'entraînement au DSCG (React 18 + TypeScript + Vite, Tailwind + shadcn/ui,
 
 - **Commits conventionnels, un commit par étape terminée** : `feat:`, `fix:`, `content:`, `test:`, `ci:`, `docs:`, `chore:`, `refactor:`, avec un scope si utile (`content(ue4-ifrs): …`). Pas de commit fourre-tout en fin de session.
 - **Jamais de contenu copié depuis un site.** Tous les exercices, corrigés et fiches de cours sont rédigés en propre. Les textes officiels (programme DSCG, PCG, Code de commerce, CGI, Code du travail, NEP, IFRS adoptées UE) servent à la justesse : renvoi d'article ou de paragraphe et reformulation, citation courte uniquement. Annales et sites tiers (Compta Online, CRCF, etc.) : calibrage du niveau seulement, aucune reprise.
+- **Toute règle citée se vérifie sur le texte officiel** (`npm run sources` puis lecture dans `.sources/`) ; `npm run check:refs` ne doit signaler aucune nouvelle référence introuvable.
 - **Chaque lot d'exercices est relu par un sous-agent indépendant avant commit.** Le relecteur résout l'énoncé seul, recalcule la réponse, puis compare. `verified: true` uniquement après cette relecture. Les exercices non vérifiés ne sont jamais servis en production (filtrés au chargement, voir `src/content/load.ts`).
 - **Tests verts obligatoires avant push** : `npm run lint && npm run validate && npm test && npm run build` doivent tous passer en local. Ne jamais désactiver ou sauter un test pour passer.
 - **`PROGRESS.md` mis à jour en fin de session** : ce qui est fait, ce qui reste, décisions prises (avec justification), budget consommé estimé, prochaine étape. La session suivante doit pouvoir reprendre sans autre contexte.
@@ -27,6 +28,8 @@ PWA d'entraînement au DSCG (React 18 + TypeScript + Vite, Tailwind + shadcn/ui,
 | `npm run lint` / `npm run typecheck` | oxlint / `tsc -b` |
 | `npm run build` | Build de prod (base `/dscg-trainer/`) + service worker |
 | `npm run test:e2e` | Playwright sur le build (`npm run build` d'abord) |
+| `npm run sources` | Télécharge les textes officiels dans `.sources/` (hors dépôt ; réseau : anc.gouv.fr, h2a-france.org, eur-lex.europa.eu, data.economie.gouv.fr) |
+| `npm run check:refs` | Confronte articles, comptes, NEP et normes IFRS cités aux textes de `.sources/` ; rapport dans `.sources/rapport-references.md` |
 
 ## Organisation du code
 

@@ -2,7 +2,7 @@
 
 Application web installable (PWA) pour s'entraîner au DSCG : audit, comptabilité, IFRS, consolidation, finance, droit, fiscalité, contrôle de gestion, systèmes d'information et anglais des affaires. Elle fonctionne hors ligne sur téléphone et ordinateur ; la progression reste dans le navigateur.
 
-**Site :** https://maxprot18.github.io/dscg-trainer/ · version 1.4.0 ([journal des versions](CHANGELOG.md))
+**Site :** https://maxprot18.github.io/dscg-trainer/ · version 1.4.1 ([journal des versions](CHANGELOG.md))
 
 <p>
   <img src="docs/screenshots/accueil.png" alt="Accueil : objectif du jour, série et contenu disponible" width="200">

@@ -1,6 +1,6 @@
 # PROGRESS — DSCG Trainer
 
-Dernière mise à jour : 2026-10-04, version 1.4.0 : phase 8 (exercices complémentaires) et améliorations issues de l'audit `docs/audit-v2.md` (sujets type d'examen, oral d'UE 6, plan d'examen, protection de la progression, tests de bout en bout).
+Dernière mise à jour : 2026-10-05, version 1.4.1 : contenu vérifié sur les textes officiels. Avant : version 1.4.0 : phase 8 (exercices complémentaires) et améliorations issues de l'audit `docs/audit-v2.md` (sujets type d'examen, oral d'UE 6, plan d'examen, protection de la progression, tests de bout en bout).
 
 ## État par phase
 
@@ -17,6 +17,7 @@ Dernière mise à jour : 2026-10-04, version 1.4.0 : phase 8 (exercices complém
 | 6 bis. Lisibilité des fiches | Terminée : version 1.3.0 (voir ci-dessous) |
 | 8. Exercices complémentaires | Terminée : version 1.4.0 (voir ci-dessous) |
 | Améliorations (audit v2) | Terminées : version 1.4.0 (voir ci-dessous) |
+| Vérification sur les textes officiels | Terminée : version 1.4.1 (voir ci-dessous) |
 
 ## Phase 0 : ce qui est fait
 
@@ -151,6 +152,15 @@ Demande de l'utilisateur après l'audit `docs/audit-v2.md` : « réaliser les po
 - **Accueil** : la carte d'examen est rendue dès le premier affichage (elle arrivait après la lecture de la base et poussait le contenu de 166 px : CLS 0,087) ; plus aucun décalage mesuré sur accueil, entraînement, fiche et progression.
 - **Vérifications** : lint, `validate:strict` (1 558 exercices vérifiés, 271 fiches, 20 sujets d'oral), tests unitaires, build, 8 parcours Playwright : tout vert.
 
+## Vérification sur les textes officiels : ce qui est fait (version 1.4.1)
+
+Demande de l'utilisateur : accéder aux plateformes officielles pour vérifier le contenu. L'utilisateur a ouvert l'accès réseau de l'environnement à anc.gouv.fr, h2a-france.org, eur-lex.europa.eu, data.economie.gouv.fr (Légifrance et le BO restent protégés par un défi anti-robot Cloudflare, non contourné).
+
+- **Sources** (`npm run sources`, dossier `.sources/` hors dépôt) : codes en vigueur par le miroir quotidien de la base LEGI (github.com/LeMyst/Codes : commerce, CGI livres I-II, travail, civil, consommation) et `@socialgouv/legi-data` (sécurité sociale) ; PCG et règl. ANC 2020-01 consolidés au 1er janvier 2026 (PDF ANC convertis par pdftotext) ; référentiel H2A et texte des NEP 600 et 9510 révisées ; règl. (UE) 2023/1803 consolidé au 8 mars 2026, 2026/338 et RGPD (EUR-Lex lu par Chromium, défi JavaScript AWS ; certificats du proxy ajoutés à la base NSS) ; BOFiP en vigueur (séries IS-FUS, IS-GPE, RPPM-PVBMI, open data).
+- **Vérification automatique** (`npm run check:refs`, `scripts/check-refs.ts`) : 3 922 références extraites des exercices et des fiches au départ, 4 215 à la fin (4 140 retrouvées, 3 signalements distincts, tous voulus) (articles des codes, du PCG, de l'ANC 2020-01, NEP, normes et paragraphes IFRS, comptes des écritures) ; restent signalées : IAS 1 (mentions « ex-IAS 1 » voulues), IAS 17 et IAS 31 (citées comme anciennes normes), PCG 523-x (règl. ANC 2026-03, applicable en 2027).
+- **8 lots correcteur → relecteur indépendant**, un commit par lot : V1 corrections certaines (comptes 152x, 58, 5181, L. 821-10, L. 225-102-1, R. 123-199-1, NEP 700), V2 NEP 600 / 9510 révisées, V3 profession (H2A, délais L. 821-32/33, interdiction temporaire 3 ans, Conseil national de l'Ordre), V4 consolidation (obligation limitée au contrôle exclusif ou conjoint, ANC 2020-01, IAS 7 modifiée), V5 fusions et intégration fiscale (210 B sans conservation pour une branche complète, 209 II dispense ≤ 200 000 €, fin de la neutralisation des abandons de créances), V6 mère-fille / IS / plus-values (pas de condition de classement, seuil ≤ 10 M€, carry-back), V7 PCG 2026 (méthodes de référence de l'art. 121-5, frais de formation sur option, changements de méthode 122-1/122-2, stocks 214-22), V8 IFRS 18 (fiche réécrite, IAS 7 §33A-34A). Une cinquantaine d'exercices au fond corrigé, tous revérifiés ; plusieurs dizaines de fiches.
+- **Code** : autocomplétion PCG alignée sur la nomenclature 2026 (`src/content/pcg.ts`).
+
 ## Décisions prises (et pourquoi)
 
 1. **Programme de référence : arrêté du 4 août 2025** (BOESR n° 32 du 28/08/2025, NOR MENS2523324A). Il s'applique aux épreuves du DSCG à partir de la session 2027, celle que Max préparera ; il remplace l'arrêté du 13/02/2019.
@@ -216,9 +226,14 @@ Demande de l'utilisateur après l'audit `docs/audit-v2.md` : « réaliser les po
 53. **(v1.4) Oral auto-évalué** : sans correcteur humain, la grille (5 critères sur 4) et la comparaison au plan type et au vocabulaire sont la méthode la plus honnête ; l'enregistrement n'est jamais envoyé. Pas de reconnaissance vocale (qualité variable, données envoyées à un tiers sur Chrome).
 54. **(v1.4) Plan d'examen indicatif** : rythme calculé sur les notions non vues et le temps restant, sans planning jour par jour ; la séance du jour reste la révision intelligente filtrée sur les UE de l'examen. Rappel par fichier .ics plutôt que notifications push (pas de serveur, et iOS ne les permet qu'aux applications installées).
 
+55. **(v1.4.1) Miroirs open data plutôt que Légifrance** : Légifrance et le BO bloquent les accès automatisés (Cloudflare) ; on ne contourne pas cette protection. La base LEGI (DILA), publiée en open data et reprise chaque jour par des miroirs, donne le même texte consolidé ; le contenu continue de citer les articles, pas le miroir.
+56. **(v1.4.1) IFRS 18 est la référence pour la session 2027** : le règl. 2026/338 supprime IAS 1 au plus tard pour les exercices ouverts à compter du 1er janvier 2027. Les règles enseignées sont présentées selon IFRS 18 et IAS 7 modifiée ; IAS 1 reste citée comme texte remplacé ; un énoncé daté de 2026 peut encore l'appliquer s'il le dit. L'id de notion `ias-1-presentation-etats-financiers` est conservé (progression rattachée), seul le titre change.
+57. **(v1.4.1) Textes officiels hors dépôt** : `.sources/` est ignoré par git (NEP et IFRS non librement rediffusables) ; `npm run sources` les retélécharge, `npm run check:refs` doit rester propre avant tout commit de contenu (règle ajoutée à CLAUDE.md).
+
 ## Points ouverts / à vérifier
 
 - **Déploiement** : résolu. GitHub Pages est activé (source : GitHub Actions) et chaque push sur `main` déploie automatiquement.
+- **Programme officiel (arrêté du 4 août 2025, annexe 2)** : le BO est protégé contre les accès automatisés ; la taxonomie n'a pas encore été confrontée au PDF du programme. L'utilisateur peut le déposer dans la conversation. Rappel : les sessions 2025 et 2026 relevaient de l'arrêté de 2019, le nouveau programme s'applique à partir de la session 2027.
 - **Taxonomie à relire sur le texte officiel.** Légifrance, le BO et les sites officiels étaient inaccessibles depuis l'environnement cloud (proxy). La structure vient du recoupement de résultats de recherche. À contrôler en priorité : intitulés et modalités des UE, découpage des blocs du programme 2025.
 - **Numéros d'articles PCG** des exercices d'exemple (321-5, 322-1, 323-1 à 323-6) : jugés plausibles par le relecteur, mais pas confirmés sur le texte.
 
@@ -229,7 +244,9 @@ Demande de l'utilisateur après l'audit `docs/audit-v2.md` : « réaliser les po
 
 ## Prochaine étape
 
-Le cahier des charges et les priorités 1 à 6 de l'audit v2 sont livrés. Suites possibles, à décider avec l'utilisateur :
+Le cahier des charges, les priorités 1 à 6 de l'audit v2 et la vérification sur les textes officiels (v1.4.1) sont livrés. Suites possibles, à décider avec l'utilisateur :
+
+- **Vérification à poursuivre** : thèmes non couverts par les 8 lots (droit des sociétés, social, TVA, procédures collectives, contrats, UE 2, 3, 5) ; programme officiel à confronter à la taxonomie dès que l'utilisateur fournit le PDF du BO ; règl. 537/2014 (audit des EIP) à télécharger sur EUR-Lex.
 
 - **Si vente** (audit v2 § 5) : relecture par un expert-comptable ou un enseignant DSCG (UE 4 et UE 1 d'abord), dépôt privé et nouvelle licence pour le contenu à venir, comptes et synchronisation, paiement, hébergement commercial, CGV et RGPD.
 - **Contenu** : davantage de dossiers type d'examen (deux par UE aujourd'hui), sujets d'oral supplémentaires (20), explication par mauvaise réponse dans les QCM, date de validité par fiche et revue après chaque loi de finances.
@@ -247,4 +264,5 @@ Le cahier des charges et les priorités 1 à 6 de l'audit v2 sont livrés. Suite
 - Phase 6 : environ 110 à 140 $ (estimation de l'audit : 80 à 110 $). Environ 72 sous-agents (27 rédactions, 27 relectures, 18 relances après deux limites d'usage), de 90 000 à 140 000 tokens chacun ; le dépassement vient des relances et des recherches web des relecteurs (droit 2026). Le reste en travail direct (plan, briefs, commits, Lighthouse, captures).
 - Phase 6 bis (lisibilité des fiches) : environ 15 à 25 $. Aucun sous-agent : travail direct (code, captures, contrôle des 271 fiches dans le navigateur).
 - Phase 8 et améliorations v1.4 : environ 70 à 90 $. Environ 36 sous-agents (9 lots de phase 8, 2 lots d'oral et 5 de dossiers, chacun rédacteur puis relecteur, plus quelques corrections de fiches) ; code, tests et documentation en travail direct.
-- Cumul estimé : environ 455 à 585 $. L'utilisateur a accepté de dépasser le budget initial de 250 $ pour les phases 6 à 8 (audit : 155 à 215 $ pour les trois).
+- Vérification v1.4.1 : environ 45 à 60 $. 16 sous-agents (8 correcteurs, 8 relecteurs) ; outils de téléchargement et de vérification en travail direct.
+- Cumul estimé : environ 500 à 645 $. L'utilisateur a accepté de dépasser le budget initial de 250 $ pour les phases 6 à 8 (audit : 155 à 215 $ pour les trois).

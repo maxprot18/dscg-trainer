@@ -1,5 +1,14 @@
 # Journal des versions
 
+## 1.4.1 (octobre 2026)
+
+Contenu vérifié sur les textes officiels.
+
+- **Textes officiels téléchargés et confrontés au contenu** : codes en vigueur (commerce, CGI, travail, civil, sécurité sociale), PCG et règlement ANC 2020-01 consolidés au 1er janvier 2026, référentiel des NEP de la H2A, IFRS adoptées (règlement 2023/1803 consolidé au 8 mars 2026), BOFiP en vigueur. 4 200 références contrôlées automatiquement (`npm run check:refs`), puis 8 lots relus par des agents ayant le texte officiel sous les yeux.
+- **Corrections de fond**, entre autres : comptes de provisions du PCG 2026 (152x), articles du Code de commerce renumérotés (L. 821-x, devoir de vigilance en L. 225-102-1), NEP 600 et 9510 révisées, obligation de consolider limitée au contrôle exclusif ou conjoint, régime de faveur des apports partiels d'actif (plus d'engagement de conservation pour une branche complète), dispense d'agrément pour les déficits jusqu'à 200 000 €, fin de la neutralisation des abandons de créances en intégration fiscale, méthodes de référence et changements de méthode du PCG, délais et sanctions de la profession de commissaire aux comptes, Conseil national de l'Ordre.
+- **IFRS 18** présentée comme la norme de présentation des états financiers pour la session 2027 (IAS 1 supprimée par le règlement 2026/338, exercices ouverts à compter du 1er janvier 2027) ; IAS 7 modifiée (classement des intérêts et dividendes).
+- Autocomplétion des comptes alignée sur la nomenclature du PCG 2026.
+
 ## 1.4.0 (octobre 2026)
 
 Préparation à l'examen et fiabilité, à la suite de l'audit de la version 1.3 (`docs/audit-v2.md`).
