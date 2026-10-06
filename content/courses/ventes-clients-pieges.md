@@ -8,7 +8,7 @@
 - **Facturation sans livraison (bill-and-hold)** : une vente facturée mais dont les biens restent chez le vendeur n'est reconnue que si le transfert est réel (demande expresse du client, biens individualisés et prêts à être livrés). Le PCG ne traite pas ce cas : on applique le principe de réalisation (C. com. art. L123-21), les critères usuels venant de la pratique (inspirés d'IFRS 15). À défaut, le CA est anticipé.
 - **Dépôt ou consignation** : les biens remis à un dépositaire restent au stock du déposant ; la vente naît lors de la revente au client final.
 - **Remises de fin d'année** : les ristournes acquises à la clôture se comptabilisent en avoirs à établir : débit 709 (HT) et 44587 (TVA), crédit 4198. Un palier non atteint ne donne lieu à aucune écriture.
-- **Créances en devises** : conversion au cours de clôture, écart en 476 / 477, provision pour perte de change (1515) sur la perte latente ; pas de dépréciation 491 pour un simple effet de change, et pas de perte de change (666) tant que la créance n'est pas encaissée.
+- **Créances en devises** : conversion au cours de clôture, écart en 476 / 477, provision pour perte de change (1515) sur la perte latente ; pas de dépréciation 491 pour un simple effet de change, et pas de perte de change (656) tant que la créance n'est pas encaissée.
 - **Clients créditeurs** : soldes créditeurs à reclasser au passif (4191 avances reçues ou 4197 autres avoirs, selon leur nature), sans compensation avec les créances.
 - **Décalage d'imputation des encaissements (lapping)** : un détournement est masqué en imputant les règlements d'un client sur les factures d'un autre ; l'égalité auxiliaire / collectif et le DSO global ne bougent pas ; détection par rapprochement des avis de paiement et des remises en banque avec le lettrage.
 - **Confirmations** : jamais transmises ni récupérées par le client audité ; un échantillon tiré de la balance clients ne teste pas l'exhaustivité.
@@ -23,7 +23,7 @@ Ristourne : le client Oméga a atteint le palier donnant droit à 2 % sur 1 500 
 
 ## Erreurs fréquentes
 - Déprécier 6 000 € une créance de 12 000 € TTC perdue pour moitié : la base est 10 000 € HT, la dépréciation 5 000 €.
-- Passer la perte latente sur une créance en dollars en 666 ou en 491 : le PCG impose l'écart de conversion actif (476) et une provision 1515.
+- Passer la perte latente sur une créance en dollars en 656 ou en 491 : le PCG impose l'écart de conversion actif (476) et une provision 1515.
 - Détecter le lapping par le rapprochement auxiliaire / collectif ou le contrôle de la séquence des factures : ces totaux restent justes ; seul le détail des avis de paiement confronté au lettrage le révèle.
 - Extrapoler l'anomalie des éléments clés : ils ont été testés à 100 %, leur anomalie est connue ; seule l'anomalie du sondage se projette.
 

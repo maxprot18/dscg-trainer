@@ -14,7 +14,7 @@
 
 **Comptabilité de couverture**
 - PCG (règl. ANC 2015-05) : principe de **symétrie**, le résultat de l'instrument est constaté au même rythme et dans la même rubrique que celui de l'élément couvert (résultat d'exploitation pour une opération commerciale, 656 / 756 ; financier pour une opération financière, 666 / 766).
-- Report / déport d'une couverture à terme (PCG) : étalé en résultat financier sur la durée de la couverture, ou rattaché au résultat de l'élément couvert.
+- Report / déport d'une couverture à terme (PCG art. 628-13) : étalé en résultat financier sur la durée de la couverture ; le rattacher au résultat de l'élément couvert (ou à la valeur d'entrée d'un actif) n'est possible, sur option, que pour la couverture d'une transaction future.
 - IFRS 9 : couverture de **juste valeur** (variations en résultat, élément couvert réévalué), de **flux de trésorerie** (part efficace en autres éléments du résultat global, recyclée quand le flux couvert affecte le résultat), d'**investissement net** dans une activité à l'étranger (comme les flux de trésorerie, recyclage à la cession). Désignation et documentation formelles dès l'origine (§6.4.1).
 
 **Formules clés :** F (devise pour 1 €) = S × (1 + i_devise × n/360) / (1 + i_euro × n/360) ; montant avancé = créance / (1 + i_devise × n/360)

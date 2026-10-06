@@ -23,7 +23,7 @@ Société Alnitak, N−1 : bénéfice fiscal 1 200 000 €, aucune distribution.
 Carry-back : déficit imputé = min(1 500 000 ; 1 200 000 ; 1 000 000) = 1 000 000 € ; créance = 1 000 000 × 25 % = **250 000 €** (débit 444, crédit 699) ; 500 000 € restent reportables en avant. Acomptes : 120 000 € passés en charge à tort ; correction par débit 444 et crédit 695 de 120 000 €, qui ramène le 695 à zéro (exercice déficitaire) et fait apparaître une créance au 444 de 120 000 + 250 000 = **370 000 €**, à présenter à l'actif sans compensation avec la TVA à décaisser.
 
 ## Erreurs fréquentes
-- Imputer l'acompte d'IS en 695 ou en 6351 (impôts directs autres que l'IS) ou en 4486 (charges à payer) : c'est une avance, donc le débit du 444.
+- Imputer l'acompte d'IS en 695 ou en 6351 (impôts directs autres que l'IS) ou en 4481 (État – charges à payer) : c'est une avance, donc le débit du 444.
 - Présenter une « dette fiscale nette » (dette de TVA − créance d'IS) au motif que l'État est l'unique créancier : la compensation est interdite, même mentionnée en annexe.
 - Expliquer une TVA déclarée supérieure à la TVA théorique par des exportations ou des livraisons intracommunautaires exonérées incluses à tort dans la base : ce sens d'erreur produit l'écart inverse.
 - Retenir le plafond de 1 000 000 € sans le limiter au bénéfice de N−1, ou imputer tout le déficit : la créance est calculée sur la plus petite des trois limites.

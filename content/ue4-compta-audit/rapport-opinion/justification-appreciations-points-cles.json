@@ -23,7 +23,7 @@
         0
       ],
       "explanation": "La loi impose au commissaire aux comptes de justifier ses appréciations pour toute entité, y compris lorsqu'il certifie sans réserve ; pour les EIP, cette justification prend la forme des points clés de l'audit (option 1). L'option 2 est fausse : la justification n'est pas liée à une réserve. L'option 3 est fausse : la partie « Fondement de l'opinion » subsiste et précède la justification des appréciations. L'option 4 est fausse : les appréciations s'inscrivent dans l'audit des comptes pris dans leur ensemble et ne constituent pas une opinion sur des éléments isolés.",
-      "source_ref": "C. com., obligation de justifier les appréciations (ancien art. L. 823-9, renuméroté par l'ordonnance n° 2023-1142) ; NEP 700 ; NEP 702 (entités autres que les EIP)",
+      "source_ref": "C. com. art. L. 821-53 (obligation de justifier les appréciations ; ancien art. L. 823-9, renuméroté par l'ordonnance n° 2023-1142) ; NEP 700 ; NEP 702 (entités autres que les EIP)",
       "verified": true,
       "estimated_seconds": 60
     },
@@ -97,7 +97,7 @@
       "answer": false,
       "justification": "Faux : la justification des appréciations est obligatoire pour toutes les entités, y compris en cas de certification sans réserve.",
       "explanation": "L'obligation de justifier les appréciations s'applique à toutes les entités dont les comptes sont certifiés, quelle que soit l'opinion. Pour les entités qui ne sont pas des EIP, le commissaire aux comptes expose les appréciations les plus importantes selon son jugement (estimations significatives, principes comptables, présentation d'ensemble) ; pour les EIP, il présente les points clés de l'audit.",
-      "source_ref": "C. com., obligation de justifier les appréciations (ancien art. L. 823-9, renuméroté par l'ordonnance n° 2023-1142) ; NEP 702",
+      "source_ref": "C. com. art. L. 821-53 (obligation de justifier les appréciations ; ancien art. L. 823-9, renuméroté par l'ordonnance n° 2023-1142) ; NEP 702",
       "verified": true,
       "estimated_seconds": 40
     },

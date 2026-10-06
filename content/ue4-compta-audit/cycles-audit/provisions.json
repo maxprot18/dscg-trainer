@@ -265,7 +265,7 @@
         "rationale": "Le résultat dépasse le budget de 60 % alors que la rémunération variable est plafonnée au-delà de 20 % : la direction est incitée à mettre en réserve l’excédent. La provision de 600 000 €, soit cinq fois le seuil de signification, a été passée manuellement par la direction en fin d’exercice sans justificatif, et des reprises sans objet importantes en N suggèrent un schéma de lissage. Ces facteurs relèvent d’un risque de fraude (contournement des contrôles par la direction) sur l’existence des provisions."
       },
       "conclusion": {
-        "model_answer": "À défaut de justification d’une obligation envers un tiers à la clôture, la provision pour risques divers de 600 000 € ne remplit pas les conditions de comptabilisation : elle constitue une anomalie significative surévaluant les passifs et minorant le résultat. Nous demandons à la direction de la reprendre. En cas de refus, l’anomalie, supérieure au seuil de signification, nous conduirait à formuler une opinion avec réserve pour désaccord, ou un refus de certifier si ses effets étaient diffus. L’écriture manuelle passée par la direction est communiquée à la gouvernance et prise en compte dans notre appréciation du risque de fraude.",
+        "model_answer": "À défaut de justification d’une obligation envers un tiers à la clôture, la provision pour risques divers de 600 000 € ne remplit pas les conditions de comptabilisation : elle constitue une anomalie significative surévaluant les passifs et minorant le résultat. Nous demandons à la direction de la reprendre. En cas de refus, l’anomalie, supérieure au seuil de signification, nous conduirait à formuler une certification avec réserve pour désaccord, ou un refus de certifier si ses effets étaient diffus. L’écriture manuelle passée par la direction est communiquée à la gouvernance et prise en compte dans notre appréciation du risque de fraude.",
         "key_points": [
           "Absence d’obligation justifiée à la clôture : provision non conforme",
           "Anomalie de 600 000 € supérieure au seuil de signification de 120 000 €",
@@ -467,18 +467,18 @@
         "avocats",
         "NEP 501"
       ],
-      "statement": "Dans le cadre d’une demande de confirmation adressée aux avocats de l’entité sur les litiges en cours (NEP 501), comment la réponse doit-elle être obtenue ?",
+      "statement": "Le commissaire aux comptes a identifié des litiges susceptibles d’engendrer des risques d’anomalies significatives. Selon la NEP 501, comment obtient-il l’avis des avocats de l’entité ?",
       "options": [
-        "L’avocat répond à la direction, qui transmet une copie au commissaire aux comptes",
-        "L’avocat répond directement au commissaire aux comptes",
-        "La direction rédige elle-même la réponse et la fait signer par l’avocat",
+        "Il interroge lui-même les avocats de l’entité, sans passer par la direction",
+        "Il demande à la direction d’obtenir de ses avocats des informations sur ces litiges et de les lui communiquer",
+        "Il se contente d’une liste des litiges établie et signée par la direction",
         "Le commissaire aux comptes interroge l’avocat par téléphone, sans écrit"
       ],
       "answer": [
         1
       ],
-      "explanation": "La demande est préparée par l’entité et signée par sa direction (l’avocat est tenu au secret professionnel envers son client), puis envoyée par le commissaire aux comptes ; elle invite l’avocat à répondre directement à ce dernier, afin d’éviter toute altération de la réponse. L’option 1 fait transiter la réponse par l’entité, ce qui en réduit le caractère probant. L’option 3 revient à obtenir une déclaration de la direction. L’option 4 ne fournit pas d’élément écrit documentable dans le dossier.",
-      "source_ref": "NEP 501 (demande de confirmation des avocats sur les litiges)",
+      "explanation": "La NEP 501 prévoit que le commissaire aux comptes demande à la direction d’obtenir de ses avocats des informations sur les procès, contentieux et litiges et de les lui communiquer (option 2) ; l’avocat, tenu au secret professionnel envers son client, est interrogé par une lettre signée de la direction, sa réponse pouvant être adressée directement au commissaire aux comptes. Si la direction refuse d’interroger ses avocats ou de communiquer les informations obtenues, le commissaire aux comptes en tire les conséquences dans son rapport. L’option 1 est exclue : le commissaire aux comptes passe par la direction, l’avocat ne pouvant répondre sans l’accord de son client. L’option 3 revient à se fonder sur une déclaration de la direction, qui ne remplace pas l’avis des avocats. L’option 4 ne fournit pas d’élément écrit documentable dans le dossier.",
+      "source_ref": "NEP 501 (procès, contentieux et litiges : informations obtenues des avocats)",
       "estimated_seconds": 45,
       "verified": true
     },
@@ -679,7 +679,7 @@
       ],
       "procedures": {
         "options": [
-          "Adresser, avec l’accord de la direction, une demande de confirmation aux avocats sur les litiges en cours, leur issue probable et leur estimation financière, la réponse devant parvenir directement au cabinet",
+          "Demander à la direction d’interroger ses avocats sur les litiges en cours, leur issue probable et leur estimation financière, et de communiquer leurs réponses écrites au cabinet",
           "Rapprocher les cabinets payés au compte 6226 de ceux qui figurent au registre des litiges",
           "Examiner les jugements, transactions et correspondances juridiques intervenus entre la clôture et la date d’arrêté des comptes",
           "Envoyer des demandes de confirmation de solde aux principaux fournisseurs de carburant",
@@ -702,7 +702,7 @@
         "rationale": "Les provisions pour litiges (380 000 €) dépassent le seuil de signification et reposent sur des estimations subjectives, ce qui exclut un risque faible. En revanche, le registre des litiges est rapproché trimestriellement et ce contrôle a été testé sans anomalie, la revue rétrospective montre des estimations fiables (écart de 4 %) et aucune incitation de la direction n’a été relevée : le risque n’est pas élevé."
       },
       "conclusion": {
-        "model_answer": "Sur la base des réponses des avocats reçues directement, du rapprochement des honoraires juridiques avec le registre des litiges et de la revue des événements postérieurs, nous avons obtenu des éléments suffisants et appropriés pour conclure que les provisions pour litiges sont exhaustives et correctement évaluées au 31/12/N, sous réserve des ajustements éventuellement identifiés et communiqués à la direction. Nous complétons ces travaux par une déclaration écrite de la direction sur l’exhaustivité des litiges communiqués.",
+        "model_answer": "Sur la base des réponses écrites des avocats, du rapprochement des honoraires juridiques avec le registre des litiges et de la revue des événements postérieurs, nous avons obtenu des éléments suffisants et appropriés pour conclure que les provisions pour litiges sont exhaustives et correctement évaluées au 31/12/N, sous réserve des ajustements éventuellement identifiés et communiqués à la direction. Nous complétons ces travaux par une déclaration écrite de la direction sur l’exhaustivité des litiges communiqués.",
         "key_points": [
           "Rappeler les procédures réalisées et les assertions couvertes (exhaustivité, évaluation)",
           "Se prononcer sur le caractère suffisant et approprié des éléments collectés",
@@ -710,7 +710,7 @@
           "Déclaration écrite de la direction en complément"
         ]
       },
-      "explanation": "Le risque porte sur l’omission d’un litige et sur l’évaluation des provisions existantes. La demande de confirmation aux avocats (NEP 501), le rapprochement des honoraires avec le registre et la revue des événements postérieurs (NEP 560) répondent à ces assertions. Les confirmations fournisseurs, l’inventaire des pièces et le recalcul des amortissements relèvent d’autres cycles. Le risque est modéré : significatif et subjectif, mais atténué par un contrôle interne testé et des estimations historiquement fiables.",
+      "explanation": "Le risque porte sur l’omission d’un litige et sur l’évaluation des provisions existantes. L’interrogation des avocats par l’intermédiaire de la direction (NEP 501), le rapprochement des honoraires avec le registre et la revue des événements postérieurs (NEP 560) répondent à ces assertions. Les confirmations fournisseurs, l’inventaire des pièces et le recalcul des amortissements relèvent d’autres cycles. Le risque est modéré : significatif et subjectif, mais atténué par un contrôle interne testé et des estimations historiquement fiables.",
       "source_ref": "NEP 501 (litiges) ; NEP 540 ; NEP 560 ; NEP 580 ; NEP 330",
       "estimated_seconds": 480,
       "verified": true
@@ -914,7 +914,7 @@
           "id": "q5-conclusion",
           "kind": "open",
           "prompt": "Concluez sur les anomalies relevées au regard du seuil de signification et indiquez les conséquences possibles sur l’opinion.",
-          "model_answer": "Les anomalies relevées sont la provision pour restructuration injustifiée (450 000 €), l’absence de provision pour perte à terminaison (180 000 €) et la provision pour pertes futures injustifiée (150 000 €), soit une sous-évaluation nette du résultat de 420 000 €. Le net, comme la provision pour restructuration prise isolément, dépasse le seuil de signification (200 000 €) ; la compensation entre anomalies de sens contraire ne dispense pas d’examiner chacune. L’auditeur demande à la direction de les corriger et de mentionner la restructuration en annexe. En cas de refus, il formule une opinion avec réserve pour désaccord, voire un refus de certifier si les effets étaient jugés diffus.",
+          "model_answer": "Les anomalies relevées sont la provision pour restructuration injustifiée (450 000 €), l’absence de provision pour perte à terminaison (180 000 €) et la provision pour pertes futures injustifiée (150 000 €), soit une sous-évaluation nette du résultat de 420 000 €. Le net, comme la provision pour restructuration prise isolément, dépasse le seuil de signification (200 000 €) ; la compensation entre anomalies de sens contraire ne dispense pas d’examiner chacune. L’auditeur demande à la direction de les corriger et de mentionner la restructuration en annexe. En cas de refus, il formule une certification avec réserve pour désaccord, voire un refus de certifier si les effets étaient jugés diffus.",
           "key_points": [
             "Anomalies : +450 000 €, −180 000 €, +150 000 € ; net +420 000 €",
             "Supérieur au seuil de signification de 200 000 €",

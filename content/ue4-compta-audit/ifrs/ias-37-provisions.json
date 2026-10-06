@@ -108,7 +108,7 @@
         "résultat le plus probable",
         "remboursement"
       ],
-      "statement": "Au 31/12/N, la société Vega est assignée par un client pour un défaut de livraison. Ses avocats estiment qu'elle sera condamnée à verser 120 000 € (probabilité 70 %) ou 60 000 € (probabilité 30 %) ; ils jugent qu'aucun élément ne justifie d'ajuster le résultat le plus probable. Le contrat d'assurance de Vega couvre ce sinistre à hauteur de 80 000 € ; l'assureur a confirmé par écrit sa prise en charge, de sorte que le remboursement est quasi certain. Passez l'écriture au 31/12/N selon IAS 37, en utilisant : 1511 pour la provision, 6815 pour la dotation, 4687 pour la créance sur l'assureur et 758 pour le produit correspondant.",
+      "statement": "Au 31/12/N, la société Vega est assignée par un client pour un défaut de livraison. Ses avocats estiment qu'elle sera condamnée à verser 120 000 € (probabilité 70 %) ou 60 000 € (probabilité 30 %) ; ils jugent qu'aucun élément ne justifie d'ajuster le résultat le plus probable. Le contrat d'assurance de Vega couvre ce sinistre à hauteur de 80 000 € ; l'assureur a confirmé par écrit sa prise en charge, de sorte que le remboursement est quasi certain. Passez l'écriture au 31/12/N selon IAS 37, en utilisant : 1511 pour la provision, 6815 pour la dotation, 467 pour la créance sur l'assureur et 758 pour le produit correspondant.",
       "date": "31/12/N",
       "entries": [
         {
@@ -124,7 +124,7 @@
           "credit": 120000
         },
         {
-          "account": "4687",
+          "account": "467",
           "label": "Remboursement à recevoir de l'assureur",
           "debit": 80000,
           "credit": 0
@@ -137,7 +137,7 @@
         }
       ],
       "explanation": "Obligation unique : la meilleure estimation est le résultat individuel le plus probable, soit 120 000 €, et non la valeur attendue (0,7 × 120 000 + 0,3 × 60 000 = 102 000 €), réservée aux populations nombreuses (IAS 37 §39-40) ; les avocats n'ayant relevé aucun motif d'ajustement, ce montant est retenu tel quel. Le remboursement quasi certain de l'assureur est un actif distinct, limité au montant de la provision (§53) : il ne vient pas en déduction de la provision au bilan. Au compte de résultat, la charge peut être présentée nette du remboursement (§54).",
-      "source_ref": "IAS 37 §39-40 et §53-54 (règlement UE 2023/1803) ; PCG comptes 1511, 4687, 6815 et 758",
+      "source_ref": "IAS 37 §39-40 et §53-54 (règlement UE 2023/1803) ; PCG comptes 1511, 467, 6815 et 758",
       "verified": true,
       "estimated_seconds": 240
     },

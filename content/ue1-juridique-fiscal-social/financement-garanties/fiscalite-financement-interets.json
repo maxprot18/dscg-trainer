@@ -76,7 +76,7 @@
       },
       "unit": "€",
       "decimals": 0,
-      "explanation": "Intérêts comptabilisés : 200 000 × 7 % = 14 000 €. Intérêts déductibles : 200 000 × 5,5 % = 11 000 €. Réintégration : 14 000 − 11 000 = 3 000 €, soit 200 000 × (7 % − 5,5 %).\nLa prêteuse est une personne physique : la possibilité de justifier un taux de marché supérieur (art. 212 I) est réservée aux prêts consentis par des entreprises liées. Erreurs classiques : réintégrer la totalité des intérêts (14 000 €) ou retenir les intérêts déductibles (11 000 €).",
+      "explanation": "Intérêts comptabilisés : 200 000 × 7 % = 14 000 €. Intérêts déductibles : 200 000 × 5,5 % = 11 000 €. Réintégration : 14 000 − 11 000 = 3 000 €, soit 200 000 × (7 % − 5,5 %).\nLa prêteuse est une personne physique : la possibilité de justifier un taux de marché supérieur (art. 212 I, a) est réservée aux sommes mises à disposition par une entreprise associée ou liée. Erreurs classiques : réintégrer la totalité des intérêts (14 000 €) ou retenir les intérêts déductibles (11 000 €).",
       "source_ref": "CGI art. 39-1-3° (taux plafond des intérêts de comptes courants d'associés) ; art. 212 I",
       "verified": true,
       "estimated_seconds": 150
@@ -93,7 +93,7 @@
         "charges financières nettes",
         "EBITDA fiscal"
       ],
-      "statement": "La SA Valtour (exercice de 12 mois) a comptabilisé 4 650 000 € de charges financières et 400 000 € de produits financiers. Parmi les charges, 50 000 € d'intérêts de comptes courants d'associés ont déjà été réintégrés car ils excèdent le taux plafond de l'article 39-1-3° du CGI. Le résultat fiscal avant application de l'article 212 bis (après cette réintégration) s'élève à 6 000 000 € ; les dotations aux amortissements déductibles sont de 1 800 000 €. On admet que l'EBITDA fiscal est égal au résultat fiscal avant application de l'article 212 bis, augmenté des charges financières nettes retenues et des dotations aux amortissements. Calculez le montant des charges financières nettes non déductibles au titre de l'article 212 bis, en euros.",
+      "statement": "La SA Valtour (exercice de 12 mois) a comptabilisé 4 650 000 € de charges financières et 400 000 € de produits financiers. Parmi les charges, 50 000 € d'intérêts de comptes courants d'associés ont déjà été réintégrés car ils excèdent le taux plafond de l'article 39-1-3° du CGI. Le résultat fiscal avant application de l'article 212 bis (après cette réintégration) s'élève à 6 000 000 € ; les dotations aux amortissements déductibles sont de 1 800 000 €. Valtour, membre d'un groupe consolidé mais non membre d'un groupe fiscalement intégré, ne remplit pas la condition de ratio fonds propres / actifs de la clause de sauvegarde (art. 212 bis, VI) et n'est pas sous-capitalisée. On admet que l'EBITDA fiscal est égal au résultat fiscal avant application de l'article 212 bis, augmenté des charges financières nettes retenues et des dotations aux amortissements. Calculez le montant des charges financières nettes non déductibles au titre de l'article 212 bis, en euros.",
       "expected_value": 600000,
       "tolerance": {
         "kind": "absolute",
@@ -101,8 +101,8 @@
       },
       "unit": "€",
       "decimals": 0,
-      "explanation": "Charges financières nettes retenues (hors intérêts déjà réintégrés) : 4 650 000 − 50 000 − 400 000 = 4 200 000 €.\nEBITDA fiscal : 6 000 000 + 4 200 000 + 1 800 000 = 12 000 000 €.\nPlafond : le plus élevé de 3 000 000 € et 30 % × 12 000 000 = 3 600 000 €, soit 3 600 000 €.\nNon déductible : 4 200 000 − 3 600 000 = 600 000 € (reportable sur les exercices suivants).\nErreurs classiques : retenir le plancher de 3 M€ (1 200 000 €) ou oublier d'exclure les intérêts déjà réintégrés (charges nettes de 4 250 000 €, EBITDA de 12 050 000 €, non déductible de 635 000 €).",
-      "source_ref": "CGI art. 212 bis (limitation des charges financières nettes) ; art. 39-1-3°",
+      "explanation": "Charges financières nettes retenues (hors intérêts déjà réintégrés) : 4 650 000 − 50 000 − 400 000 = 4 200 000 €.\nEBITDA fiscal : 6 000 000 + 4 200 000 + 1 800 000 = 12 000 000 €.\nPlafond : le plus élevé de 3 000 000 € et 30 % × 12 000 000 = 3 600 000 €, soit 3 600 000 €.\nNon déductible : 4 200 000 − 3 600 000 = 600 000 € (reportable sur les exercices suivants) ; la clause de sauvegarde n'étant pas remplie, le complément de déduction de 75 % (art. 212 bis, VI ; VI bis pour une entreprise autonome) ne joue pas.\nErreurs classiques : retenir le plancher de 3 M€ (1 200 000 €) ou oublier d'exclure les intérêts déjà réintégrés (charges nettes de 4 250 000 €, EBITDA de 12 050 000 €, non déductible de 635 000 €).",
+      "source_ref": "CGI art. 212 bis, I, II, III et VI (limitation des charges financières nettes) ; art. 39-1-3°",
       "verified": true,
       "estimated_seconds": 270
     },

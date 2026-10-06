@@ -11,7 +11,7 @@
         "titres participatifs",
         "quasi-fonds propres"
       ],
-      "statement": "Une société anonyme envisage d'émettre des titres participatifs pour renforcer ses quasi-fonds propres sans diluer ses actionnaires. Quelle caractéristique correspond à ces titres ?",
+      "statement": "Une société coopérative constituée sous forme de société anonyme envisage d'émettre des titres participatifs pour renforcer ses quasi-fonds propres sans diluer ses actionnaires. Quelle caractéristique correspond à ces titres ?",
       "options": [
         "Ils confèrent un droit de vote en assemblée générale proportionnel à leur valeur nominale",
         "Ils sont obligatoirement convertis en actions à l'issue d'un délai de 7 ans",
@@ -22,7 +22,7 @@
         2
       ],
       "multiple": false,
-      "explanation": "Les titres participatifs (C. com. art. L228-36) ont une rémunération composée d'une partie fixe et d'une partie variable indexée sur l'activité ou les résultats ; ils ne sont remboursables qu'en cas de liquidation de la société ou, à son initiative, à l'expiration d'un délai minimal de 7 ans (option 3). C'est ce qui les rapproche des fonds propres. L'option 1 est fausse : les porteurs n'ont aucun droit de vote, d'où l'absence de dilution du pouvoir. L'option 2 confond avec des obligations remboursables en actions : le titre participatif n'a pas vocation à être converti. L'option 4 est fausse : le porteur ne peut pas exiger le remboursement à tout moment, sinon le titre ne serait pas un quasi-fonds propre.",
+      "explanation": "Les titres participatifs (C. com. art. L228-36), que seules certaines sociétés peuvent émettre (sociétés par actions du secteur public, coopératives, certains organismes d'HLM), ont une rémunération composée d'une partie fixe et d'une partie variable indexée sur l'activité ou les résultats ; ils ne sont remboursables qu'en cas de liquidation de la société ou, à son initiative, à l'expiration d'un délai minimal de 7 ans (option 3). C'est ce qui les rapproche des fonds propres. L'option 1 est fausse : les porteurs n'ont aucun droit de vote, d'où l'absence de dilution du pouvoir. L'option 2 confond avec des obligations remboursables en actions : le titre participatif n'a pas vocation à être converti. L'option 4 est fausse : le porteur ne peut pas exiger le remboursement à tout moment, sinon le titre ne serait pas un quasi-fonds propre.",
       "source_ref": "C. com. art. L228-36 (titres participatifs)",
       "verified": true,
       "estimated_seconds": 60
@@ -150,7 +150,7 @@
         },
         {
           "account": "169",
-          "label": "Primes de remboursement des obligations",
+          "label": "Primes de remboursement des emprunts",
           "debit": 300000,
           "credit": 0
         },
@@ -162,7 +162,7 @@
         }
       ],
       "explanation": "Valeur de remboursement : 10 000 × 520 = 5 200 000 € (crédit 163).\nFonds reçus : 10 000 × 490 = 4 900 000 € (débit 512).\nPrime de remboursement : 10 000 × (520 − 490) = 300 000 € (débit 169) ; elle est amortie sur la durée de l'emprunt (dotation au compte 6861).\nErreur classique : inscrire la dette pour la valeur nominale (5 000 000 €) et limiter la prime à l'écart entre nominal et prix d'émission (100 000 €) ; la prime couvre l'écart total entre prix d'émission et prix de remboursement.",
-      "source_ref": "PCG (règl. ANC 2014-03), comptes 163 (autres emprunts obligataires) et 169 (primes de remboursement des obligations)",
+      "source_ref": "PCG (règl. ANC 2014-03), comptes 163 (autres emprunts obligataires) et 169 (primes de remboursement des emprunts) ; art. 212-10 (amortissement de la prime)",
       "verified": true,
       "estimated_seconds": 180
     },

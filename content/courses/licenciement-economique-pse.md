@@ -1,6 +1,6 @@
 # Licenciement économique, PSE et rupture conventionnelle collective
 
-**Références :** C. trav. art. L1233-3 (motif), L1233-4 (reclassement), L1233-5 (ordre des licenciements), L1233-61 à L1233-64 (PSE), L1233-57-2 et L1233-57-3 (validation, homologation), L1237-19 s. (rupture conventionnelle collective) ; L1234-9 et R1234-2, R1234-4 (indemnité légale)
+**Références :** C. trav. art. L1233-3 (motif), L1233-4 (reclassement), L1233-5 (ordre des licenciements), L1233-61 à L1233-64 (PSE), L1233-57-2 et L1233-57-3 (validation, homologation), L1233-57-4 (délais de 15 et 21 jours), L1237-19 s. (rupture conventionnelle collective) ; L1234-9 et R1234-2, R1234-4 (indemnité légale)
 
 **Enjeu :** une restructuration se traduit souvent par des suppressions d'emplois ; l'examen vérifie la qualification du motif économique, les seuils du PSE et le calcul de l'indemnité légale.
 

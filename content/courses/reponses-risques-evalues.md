@@ -1,6 +1,6 @@
 # Procédures mises en œuvre en réponse aux risques évalués
 
-**Références :** NEP 330 « Procédures d'audit mises en œuvre par le commissaire aux comptes à l'issue de son évaluation des risques » (révisée par l'arrêté du 13 novembre 2024, correspondance ISA 330) ; NEP 315 ; NEP 500 ; NEP 520 ; NEP 450
+**Références :** NEP 330 « Procédures d'audit mises en œuvre par le commissaire aux comptes à l'issue de sa prise de connaissance de l'entité et de son environnement et de son évaluation du risque d'anomalies significatives dans les comptes » (révisée par l'arrêté du 13 novembre 2024, exercices ouverts à compter du 19 novembre 2024 ; correspondance ISA 330) ; NEP 315 ; NEP 500 ; NEP 520 ; NEP 450
 
 **Enjeu :** une fois les risques évalués, le CAC doit choisir la bonne procédure, au bon moment, sur la bonne étendue ; à l'examen, l'erreur type consiste à proposer une procédure qui ne teste pas l'assertion en risque (chercher l'exhaustivité des dettes en partant de la balance fournisseurs).
 
@@ -29,6 +29,6 @@ Opale SA loue 12 locaux identiques à 3 200 € par mois, avec une indexation de
 - Nature (quoi), calendrier (quand), étendue (combien) : trois leviers de réponse.
 - Risque d'exhaustivité : partir des documents externes ou postérieurs vers les comptes ; risque d'existence : partir des comptes vers les justificatifs.
 - Un risque faible lié au contrôle réduit les procédures de substance, il ne les supprime pas pour les postes significatifs.
-- Risque particulier (fraude, estimation sensible) : des tests de détail, pas seulement une procédure analytique.
+- Risque inhérent élevé requérant une démarche particulière (ex. estimation sensible) traité par les seules procédures de substance : des tests de détail, pas seulement une procédure analytique (NEP 330 §25).
 
 **Notions liées :** [Approche par les risques](/cours/approche-par-risques) · [Évaluation du contrôle interne](/cours/evaluation-controle-interne) · [Éléments probants et techniques de contrôle](/cours/elements-probants-techniques) · [Achats-fournisseurs : contrôles clés](/cours/achats-fournisseurs-controles-cles)

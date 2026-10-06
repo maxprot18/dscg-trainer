@@ -149,7 +149,7 @@
         "prime d'émission",
         "écriture"
       ],
-      "source_ref": "PCG : frais d'augmentation de capital imputables sur la prime d'émission (option) ; comptes 1041 (Primes d'émission), 44566 (TVA sur autres biens et services), 512 (Banques)",
+      "source_ref": "PCG art. 212-9 : frais d'augmentation de capital imputables sur la prime d'émission (option) ; comptes 1041 (Primes d'émission), 44566 (TVA sur autres biens et services), 512 (Banques)",
       "verified": true,
       "estimated_seconds": 180,
       "statement": "À la suite d'une augmentation de capital, une société reçoit la facture des honoraires de la banque conseil et des avocats : 36 000 € HT, TVA 20 % (récupérable), payée immédiatement par virement. Elle opte pour l'imputation des frais sur la prime d'émission. Convention : l'imputation est directe (sans passer par un compte de charges) et porte sur le montant hors taxes ; on ignore l'effet d'impôt sur les sociétés. Passez l'écriture.",

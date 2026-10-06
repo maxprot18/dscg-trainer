@@ -1,6 +1,6 @@
 # Protection des données personnelles (RGPD) et conformité numérique
 
-**Références :** règl. (UE) 2016/679 (RGPD) art. 4 à 6, 9, 12 à 22, 28, 30, 33 à 37, 83 ; loi n° 78-17 du 6 janv. 1978 (Informatique et libertés), art. 82
+**Références :** règl. (UE) 2016/679 (RGPD) art. 4 à 6, 9, 12 à 22, 28, 30, 33 à 37, 44 à 49, 83 ; loi n° 78-17 du 6 janv. 1978 (Informatique et libertés), art. 82
 
 **Enjeu :** l'entreprise traite en permanence des données de salariés et de clients ; il faut savoir sur quelle base légale, avec quelle documentation, dans quel délai réagir à une fuite et jusqu'à quel montant la CNIL peut sanctionner. Le cas pratique porte souvent sur la paie, la prospection ou une violation de données.
 
@@ -11,9 +11,9 @@
 - **Documentation** : **registre des activités de traitement** (art. 30) ; la dispense des structures de moins de 250 salariés ne joue pas si le traitement est susceptible de comporter un risque, n'est pas occasionnel ou porte sur des données sensibles (la paie, traitement permanent, doit donc y figurer). Analyse d'impact (AIPD) pour les traitements à risque élevé (art. 35 : profilage, surveillance systématique, données sensibles à grande échelle).
 - **Délégué à la protection des données (art. 37)** : obligatoire pour les autorités publiques et lorsque l'activité de base consiste en un suivi régulier et systématique à grande échelle des personnes ou en un traitement à grande échelle de données sensibles ; facultatif mais recommandé ailleurs. Il peut être interne, externe ou mutualisé.
 - **Violation de données (art. 33-34)** : notification à la **CNIL** dans les meilleurs délais et, si possible, **72 heures** au plus tard après en avoir pris connaissance, sauf si la violation n'est pas susceptible d'engendrer un risque ; information des personnes concernées sans retard si le risque est élevé ; documentation de toute violation dans un registre interne, même non notifiée.
-- **Transferts hors UE** : décision d'adéquation de la Commission, clauses contractuelles types, règles d'entreprise contraignantes (BCR) ; à défaut, le transfert est interdit.
+- **Transferts hors UE (art. 44 à 49)** : décision d'adéquation de la Commission, ou garanties appropriées (clauses contractuelles types, règles d'entreprise contraignantes ou BCR) ; à défaut, transfert possible seulement dans les cas dérogatoires de l'art. 49 (consentement explicite, exécution d'un contrat…).
 - **Sanctions (art. 83)** : amendes administratives jusqu'à **10 M€ ou 2 %** du CA annuel mondial de l'exercice précédent (obligations du responsable et du sous-traitant : sécurité, notification, registre, DPO, AIPD) ; jusqu'à **20 M€ ou 4 %** (principes, bases légales, droits des personnes, transferts). Pour une entreprise, le **montant le plus élevé** des deux est retenu. La CNIL peut aussi mettre en demeure, limiter ou suspendre un traitement.
-- **Traceurs (cookies)** : consentement préalable de l'internaute, aussi simple à refuser qu'à donner, sauf traceurs strictement nécessaires au service (loi Informatique et libertés, art. 82).
+- **Traceurs (cookies)** : information claire et consentement préalable de l'internaute (loi Informatique et libertés, art. 82), sauf traceurs servant à la communication ou strictement nécessaires au service demandé ; la CNIL exige qu'il soit aussi simple de refuser que d'accepter.
 
 **Formule clé :** plafond = max(montant fixe ; pourcentage × CA mondial N−1)
 

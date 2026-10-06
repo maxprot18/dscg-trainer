@@ -440,7 +440,7 @@
       ],
       "statement": "Pour vérifier la mesure des acquisitions d'immobilisations de l'exercice, quelle procédure l'auditeur met-il en œuvre ?",
       "options": [
-        "Rapprocher les acquisitions du tableau de variation des factures, en vérifiant les éléments inclus dans le coût (frais d'installation inclus, TVA récupérable et frais de formation exclus)",
+        "Rapprocher les acquisitions du tableau de variation des factures, en vérifiant les éléments inclus dans le coût (frais d'installation inclus, TVA récupérable exclue, frais externes de formation selon l'option retenue)",
         "Observer l'inventaire physique des biens acquis",
         "Examiner les procès-verbaux d'assemblée générale",
         "Recalculer les dotations aux amortissements des biens acquis avant l'exercice"
@@ -670,7 +670,7 @@
       ],
       "statement": "La société Cygnus acquiert une presse hydraulique. Parmi les dépenses suivantes, laquelle doit être incorporée au coût d'entrée de la presse ?",
       "options": [
-        "La formation des opérateurs à l'utilisation de la presse",
+        "Le salaire du chef d'atelier de Cygnus pendant les heures où il forme lui-même les opérateurs à la presse",
         "Les pertes d'exploitation des deux premiers mois, liées à la montée en cadence",
         "Les coûts d'installation et les essais de bon fonctionnement réalisés avant la mise en service",
         "La campagne publicitaire annonçant la nouvelle gamme de produits fabriquée avec la presse"
@@ -678,7 +678,7 @@
       "answer": [
         2
       ],
-      "explanation": "Les coûts d'installation et d'essais sont directement attribuables à la mise en état de fonctionnement du bien : ils font partie du coût d'entrée. Les frais de formation du personnel, les pertes opérationnelles initiales et les frais de publicité ou de lancement sont expressément exclus du coût et constituent des charges de l'exercice.",
+      "explanation": "Les coûts d'installation et d'essais sont directement attribuables à la mise en état de fonctionnement du bien : ils font partie du coût d'entrée. Les pertes opérationnelles initiales et les frais de publicité ou de lancement ne mettent pas le bien en état de fonctionner : ce sont des charges de l'exercice (art. 213-11 à 213-13). Seuls les frais externes de formation nécessaires à la mise en service peuvent, sur option, être rattachés au coût (art. 213-8) ; une formation assurée en interne par le chef d'atelier n'en relève pas et reste en charges de personnel.",
       "source_ref": "PCG art. 213-8 s. (coût d'acquisition : coûts directement attribuables et coûts exclus)",
       "estimated_seconds": 60,
       "verified": true
@@ -772,7 +772,7 @@
         "ajustement proposé",
         "frais de formation"
       ],
-      "statement": "La société Phénix a immobilisé le 1er avril N une machine pour 96 000 € HT (compte 2154), amortie en linéaire sur 5 ans ; la dotation N comptabilisée s'élève à 14 400 €. L'auditeur constate que ce montant inclut 6 000 € HT de formation des opérateurs, facturée par le fournisseur de la machine (prestation externe enregistrée par la société au compte 6228 « Rémunérations d'intermédiaires et honoraires – Divers »). Passez au 31/12/N (exercice non clôturé) l'écriture d'ajustement proposée : reclassement des frais de formation en charges et annulation de l'excédent de dotation correspondant (utilisez les comptes 6228, 2154, 2815 et 6811).",
+      "statement": "La société Phénix a immobilisé le 1er avril N une machine pour 96 000 € HT (compte 2154), amortie en linéaire sur 5 ans ; la dotation N comptabilisée s'élève à 14 400 €. L'auditeur constate que ce montant inclut 6 000 € HT de formation des opérateurs, facturée par le fournisseur de la machine (prestation externe enregistrée par la société au compte 6228 « Rémunérations d'intermédiaires et honoraires – Divers »). Les règles comptables de Phénix, appliquées de façon permanente, retiennent l'option de comptabilisation en charges des frais externes de formation (PCG art. 213-8). Passez au 31/12/N (exercice non clôturé) l'écriture d'ajustement proposée : reclassement des frais de formation en charges et annulation de l'excédent de dotation correspondant (utilisez les comptes 6228, 2154, 2815 et 6811).",
       "date": "31/12/N",
       "entries": [
         {
@@ -800,7 +800,7 @@
           "credit": 900
         }
       ],
-      "explanation": "Les frais de formation du personnel sont exclus du coût d'entrée : 6 000 € sont sortis du compte 2154 et passés en charges (compte 6228, prestation de formation facturée par un tiers). L'excédent de dotation correspondant est annulé : 6 000 / 5 × 9 / 12 = 900 € (mise en service le 1er avril). Contrôle : dotation corrigée = 90 000 / 5 × 9 / 12 = 13 500 € = 14 400 − 900. Incidence nette : résultat diminué de 6 000 − 900 = 5 100 €.",
+      "explanation": "Les frais externes de formation nécessaires à la mise en service peuvent, sur option, être rattachés au coût d'acquisition ou comptabilisés en charges (PCG art. 213-8) ; Phénix ayant opté pour les charges, leur incorporation contredit sa méthode : 6 000 € sont sortis du compte 2154 et passés en charges (compte 6228, prestation de formation facturée par un tiers). L'excédent de dotation correspondant est annulé : 6 000 / 5 × 9 / 12 = 900 € (mise en service le 1er avril). Contrôle : dotation corrigée = 90 000 / 5 × 9 / 12 = 13 500 € = 14 400 − 900. Incidence nette : résultat diminué de 6 000 − 900 = 5 100 €.",
       "source_ref": "PCG art. 213-8 s. (coûts exclus du coût d'acquisition) ; PCG comptes 2154, 2815, 6811 ; NEP 450",
       "estimated_seconds": 210,
       "verified": true

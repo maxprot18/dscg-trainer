@@ -26,7 +26,7 @@ Un initiateur détenant 25 % du capital de la cible achète un bloc de 7 % à 48
 À l'issue de l'offre, il détient 91 % du capital, mais les minoritaires, dont beaucoup bénéficient de droits de vote double, conservent 12 % des droits de vote : pas de retrait obligatoire possible (seuil de 10 % non atteint sur les droits de vote), la société reste cotée.
 
 ## Erreurs fréquentes
-- Retenir un tiers ou 50 % comme seuil d'offre obligatoire : c'est 30 % depuis 2011 (un tiers était l'ancien seuil).
+- Retenir un tiers ou 50 % comme seuil d'offre obligatoire : c'est 30 % depuis le 1er février 2011 (un tiers était l'ancien seuil).
 - Croire que le prix minimal d'une offre est le plus haut cours de bourse sur 12 mois : la règle vise le prix le plus élevé payé par l'initiateur, et seulement pour l'offre obligatoire.
 - Exiger 95 % pour le retrait obligatoire (ancien seuil, et seuil de l'intégration fiscale) : la condition est que les minoritaires n'excèdent pas 10 % du capital et des droits de vote.
 - Confondre OPE (paiement en titres de l'initiateur) et OPR (offre de retrait avant radiation), ou OPRA (rachat par la société elle-même).

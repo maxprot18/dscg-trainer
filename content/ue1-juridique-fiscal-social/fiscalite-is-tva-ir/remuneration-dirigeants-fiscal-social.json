@@ -42,9 +42,9 @@
       ],
       "statement": "Dans une SARL soumise à l'IS, les dividendes perçus par le gérant majoritaire sont soumis aux cotisations sociales des travailleurs indépendants pour la fraction qui excède 10 % du capital social, des primes d'émission et des sommes versées en compte courant détenus par lui, son conjoint et ses enfants mineurs.",
       "answer": true,
-      "justification": "Vrai : cette fraction des dividendes est intégrée dans l'assiette des cotisations sociales du travailleur indépendant (CSS art. L131-6).",
+      "justification": "Vrai : cette fraction des dividendes est intégrée dans l'assiette des cotisations sociales du travailleur indépendant (CSS art. L131-6 et L136-3, II, 2°).",
       "explanation": "Le dispositif vise à limiter l'arbitrage consistant à remplacer la rémunération du gérant majoritaire (soumise à cotisations) par des dividendes. La fraction excédant le seuil de 10 % supporte les cotisations et contributions sociales des indépendants ; la fraction inférieure supporte les prélèvements sociaux sur les revenus du capital. Pour l'IR, l'ensemble reste imposé comme un dividende (PFU ou barème sur option). Les dividendes versés au président d'une SAS ne sont pas concernés.",
-      "source_ref": "CSS art. L131-6 (assiette des cotisations des travailleurs indépendants, dividendes excédant 10 %)",
+      "source_ref": "CSS art. L131-6 et L136-3, II, 2° (assiette des cotisations des travailleurs indépendants, dividendes excédant 10 %)",
       "verified": true,
       "estimated_seconds": 60
     },
@@ -121,7 +121,7 @@
           },
           "unit": "€",
           "decimals": 0,
-          "explanation": "Dividendes perçus : 50 000 × 70 % = 35 000 €. Seuil : 10 % × (capital détenu 40 000 × 70 % + compte courant 30 000) = 10 % × 58 000 = 5 800 € (CSS art. L131-6). Fraction soumise à cotisations : 35 000 − 5 800 = 29 200 €. Retenir tout le capital social (seuil de 7 000 €, soit 28 000 €) ou oublier le compte courant (seuil de 2 800 €, soit 32 200 €) sont des erreurs."
+          "explanation": "Dividendes perçus : 50 000 × 70 % = 35 000 €. Seuil : 10 % × (capital détenu 40 000 × 70 % + compte courant 30 000) = 10 % × 58 000 = 5 800 € (CSS art. L136-3, II, 2°, et R131-7). Fraction soumise à cotisations : 35 000 − 5 800 = 29 200 €. Retenir tout le capital social (seuil de 7 000 €, soit 28 000 €) ou oublier le compte courant (seuil de 2 800 €, soit 32 200 €) sont des erreurs."
         },
         {
           "id": "q3-ir-dividendes",
@@ -153,7 +153,7 @@
       ],
       "total_points": 10,
       "explanation": "Gérante majoritaire, Mme Tessier est travailleuse non salariée : la fraction de ses dividendes excédant 10 % de son capital et de son compte courant (29 200 €) supporte les cotisations des indépendants, tandis que l'IR sur la totalité des dividendes relève du PFU (4 480 €). Sa rémunération de gérance est déductible pour la société et imposée dans la catégorie des traitements et salaires.",
-      "source_ref": "CSS art. L311-3 et L131-6 ; CGI art. 39-1-1°, 62 et 200 A",
+      "source_ref": "CSS art. L311-3, L131-6 et L136-3, II, 2° ; CGI art. 39-1-1°, 62 et 200 A",
       "verified": true,
       "estimated_seconds": 720
     },

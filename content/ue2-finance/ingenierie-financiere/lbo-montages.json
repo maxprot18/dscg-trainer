@@ -68,7 +68,7 @@
         "remontée de dividendes",
         "quote-part de frais et charges"
       ],
-      "source_ref": "CGI art. 145 et 216 (régime mère-fille : quote-part de frais et charges de 5 %, 1 % au sein d'un groupe intégré)",
+      "source_ref": "CGI art. 145 et 216 (régime mère-fille : quote-part de frais et charges de 5 %, 1 % entre sociétés d'un même groupe intégré depuis plus d'un exercice)",
       "verified": true,
       "estimated_seconds": 90,
       "statement": "Une holding de reprise détient 80 % d'une cible (l'intégration fiscale est donc impossible) et bénéficie du régime mère-fille. Elle reçoit 4 000 000 € de dividendes de la cible. Taux d'IS : 25 %. Quel impôt la holding supporte-t-elle au titre de ces dividendes ?",
@@ -82,7 +82,7 @@
         0
       ],
       "multiple": false,
-      "explanation": "Le régime mère-fille (participation d'au moins 5 %) exonère les dividendes, sauf une quote-part de frais et charges de 5 % réintégrée au résultat imposable : 4 000 000 × 5 % × 25 % = 50 000 €. L'option 2 applique l'IS à la totalité des dividendes, comme sans régime mère-fille. L'option 3 oublie la quote-part. L'option 4 retient une quote-part de 1 %, réservée aux dividendes reçus de sociétés membres du même groupe intégré, ce qui suppose une détention d'au moins 95 %."
+      "explanation": "Le régime mère-fille (participation d'au moins 5 %) exonère les dividendes, sauf une quote-part de frais et charges de 5 % réintégrée au résultat imposable : 4 000 000 × 5 % × 25 % = 50 000 €. L'option 2 applique l'IS à la totalité des dividendes, comme sans régime mère-fille. L'option 3 oublie la quote-part. L'option 4 retient une quote-part de 1 %, réservée aux dividendes reçus de sociétés membres du même groupe intégré depuis plus d'un exercice (art. 216 I), ce qui suppose une détention d'au moins 95 %."
     },
     {
       "id": "ue2-ingfi-lbo-0004",

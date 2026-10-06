@@ -23,7 +23,7 @@
         3
       ],
       "explanation": "Le critère d'ajustement est l'existence de la situation à la date de clôture. La liquidation prononcée en janvier N+1 confirme que la créance, déjà compromise en décembre N, était dépréciée au 31/12/N : c'est un événement qui révèle une situation existant à la clôture, les comptes N doivent être ajustés (option 4). L'incendie de février N+1 (option 1) est un fait nouveau sans lien avec la situation à la clôture : pas d'ajustement, mais une information en annexe s'il est significatif. L'acquisition d'une participation (option 2) et la signature d'un emprunt (option 3) sont des opérations de N+1 : elles relèvent au plus de l'information en annexe et du rapport de gestion.",
-      "source_ref": "C. com. art. L. 123-20 (risques et pertes connus entre la clôture et l'établissement des comptes) ; NEP 560 (événements postérieurs à la clôture)",
+      "source_ref": "C. com. art. L. 123-20 (passifs nés au cours de l'exercice ou d'un exercice antérieur, connus entre la clôture et l'établissement des comptes) ; NEP 560 (événements postérieurs à la clôture)",
       "verified": true,
       "estimated_seconds": 60
     },

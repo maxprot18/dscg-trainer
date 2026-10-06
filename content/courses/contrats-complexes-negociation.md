@@ -1,6 +1,6 @@
 # Négociation et formation des contrats complexes
 
-**Références :** C. civ. art. 1112 à 1112-2 (négociations), 1113 à 1122 (offre et acceptation), 1123-1124 (pacte de préférence, promesse unilatérale), 1125 à 1127-6 (contrat conclu par voie électronique), 1130 à 1144 (vices du consentement) ; C. assur. L113-2, L113-8, L113-9
+**Références :** C. civ. art. 1112 à 1112-2 (négociations), 1113 à 1122 (offre et acceptation), 1123-1124 (pacte de préférence, promesse unilatérale), 1125 à 1127-4 (contrat conclu par voie électronique), 1130 à 1144 (vices du consentement) ; C. assur. L113-2, L113-8, L113-9
 
 **Enjeu :** savoir à quel moment un contrat est formé, ce que l'on peut reprocher à un partenaire qui se retire, et quelle sanction (dommages-intérêts ou nullité) s'attache à chaque manquement : c'est le point de départ de la plupart des cas pratiques de droit des contrats de l'UE 1.
 

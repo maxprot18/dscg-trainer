@@ -14,7 +14,7 @@ La trésorerie est l'aboutissement de tous les cycles (ventes, achats, personnel
 
 **Formules clés :** produits attendus = Σ capital × taux annuel × (mois de détention / 12) ; écart non expliqué = montant comptabilisé − montant attendu ; dette nette = dettes financières − trésorerie
 
-**Fraude :** l'auditeur en tire les conséquences prévues par la NEP 240 (réévaluation des risques, extension des procédures, communication à la direction et à la gouvernance, incidence sur l'opinion) et communique les faiblesses significatives (NEP 265). La révélation au procureur de la République des faits délictueux dont il a connaissance est une obligation distincte du commissaire aux comptes, prévue par le Code de commerce et non par la NEP 240.
+**Fraude :** l'auditeur en tire les conséquences prévues par la NEP 240 (réévaluation des risques, extension des procédures, communication à la direction et à la gouvernance, incidence sur l'opinion) et communique les faiblesses significatives (NEP 265). La révélation au procureur de la République des faits délictueux dont il a connaissance est une obligation légale du commissaire aux comptes (C. com. art. L. 821-10), que la NEP 240 rappelle pour les anomalies significatives résultant de fraudes susceptibles de qualification pénale (§ 31).
 
 ## Exemple
 Au 31/12/N, l'emprunt de Bételgeuse impose un ratio dette financière nette / EBITDA ≤ 3. Dettes financières 9 000 000 €, EBITDA 2 600 000 €, trésorerie réelle 1 000 000 € : ratio = 8 000 000 / 2 600 000 ≈ **3,08**, covenant franchi. Le journal de banque est resté ouvert et un virement client de 400 000 € reçu le 03/01/N+1 a été comptabilisé au 31/12/N : trésorerie présentée 1 400 000 €, ratio = 7 600 000 / 2 600 000 ≈ **2,92**.
@@ -29,6 +29,6 @@ Le facteur de risque (covenant sur la dette nette) oriente l'auditeur vers la co
 ## À retenir
 - Un détournement inférieur au seuil de signification n'est jamais « insignifiant » : la fraude a une dimension qualitative.
 - Un covenant sur la dette nette incite à gonfler la trésorerie de clôture.
-- La révélation des faits délictueux relève du Code de commerce, non de la NEP 240.
+- La révélation des faits délictueux est une obligation du Code de commerce (art. L. 821-10), rappelée par la NEP 240 (§ 31).
 
 **Notions liées :** [Trésorerie — contrôles clés](/cours/tresorerie-controles-cles) · [Fraudes, lois et règlements](/cours/fraudes-lois-reglements) · [Révélation des faits délictueux et alerte](/cours/revelation-faits-delictueux-alerte) · [Approche par les risques](/cours/approche-par-risques)

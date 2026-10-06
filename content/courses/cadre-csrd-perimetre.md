@@ -10,7 +10,7 @@
 - Contenu : l'état de durabilité constitue une **section distincte du rapport de gestion** (ou du rapport de gestion du groupe). Il est établi selon les normes ESRS et permet de comprendre les impacts de l'entreprise sur les questions de durabilité et la manière dont ces questions affectent son évolution, ses résultats et sa situation (double matérialité).
 - Il décrit notamment le modèle d'affaires et la stratégie, les objectifs et les progrès réalisés, le rôle des organes d'administration, de direction et de surveillance, les politiques, la procédure de diligence raisonnable, les principaux impacts, risques et opportunités (IRO) et la chaîne de valeur, avec les indicateurs correspondants.
 - Il inclut les informations exigées par l'article 8 du règlement taxonomie (UE) 2020/852 et doit être balisé au format électronique (ESEF/XBRL) une fois la taxonomie numérique adoptée.
-- Exemption : une filiale peut être dispensée si elle est incluse dans le rapport consolidé de durabilité de sa mère établi selon les ESRS (ou un référentiel jugé équivalent), à condition que son rapport de gestion le mentionne et renvoie au rapport de la mère. L'exemption est fermée aux grandes entreprises dont les titres sont admis sur un marché réglementé de l'Union.
+- Exemption : une filiale peut être dispensée si elle est incluse dans le rapport consolidé de durabilité de sa mère établi selon les ESRS (ou un référentiel jugé équivalent), à condition que son rapport de gestion le mentionne et renvoie au rapport de la mère. Le texte initial ferme l'exemption aux grandes entreprises dont les titres sont admis sur un marché réglementé de l'Union ; Omnibus I supprime cette restriction (art. 19 bis, § 10, et 29 bis, § 9, de la directive 2013/34/UE modifiés).
 - L'état de durabilité fait l'objet d'une certification par un commissaire aux comptes inscrit ou un organisme tiers indépendant (OTI). Le comité d'audit suit le processus d'élaboration de ces informations. En France, le défaut d'établissement ou de certification est assorti de sanctions (injonction, amende).
 
 ```diagram
@@ -18,7 +18,7 @@
 ```
 
 ## Exemple
-Trois sociétés françaises non cotées, exercice 2027. Granit SAS : 1 400 salariés, chiffre d'affaires 620 M€ ; elle dépasse les deux seuils de la directive Omnibus I et établit, pour la première fois, un état de durabilité dans son rapport de gestion 2027 (publié en 2028), certifié en assurance limitée. Schiste SA : 900 salariés, chiffre d'affaires 700 M€ ; une seule condition remplie, elle est hors champ (elle aurait été soumise selon le texte initial). Marne SAS : 1 200 salariés, 500 M€ de chiffre d'affaires, filiale à 100 % d'un groupe allemand qui publie un état de durabilité consolidé selon les ESRS incluant Marne : elle est exemptée si son rapport de gestion mentionne l'exemption et renvoie au rapport de la mère ; elle ne le serait pas si ses titres étaient cotés sur un marché réglementé.
+Trois sociétés françaises non cotées, exercice 2027. Granit SAS : 1 400 salariés, chiffre d'affaires 620 M€ ; elle dépasse les deux seuils de la directive Omnibus I et établit, pour la première fois, un état de durabilité dans son rapport de gestion 2027 (publié en 2028), certifié en assurance limitée. Schiste SA : 900 salariés, chiffre d'affaires 700 M€ ; une seule condition remplie, elle est hors champ (elle aurait été soumise selon le texte initial). Marne SAS : 1 200 salariés, 500 M€ de chiffre d'affaires, filiale à 100 % d'un groupe allemand qui publie un état de durabilité consolidé selon les ESRS incluant Marne : elle est exemptée si son rapport de gestion mentionne l'exemption et renvoie au rapport de la mère (sous le texte initial, elle ne l'aurait pas été si ses titres avaient été cotés sur un marché réglementé : restriction levée par Omnibus I).
 
 ## Erreurs fréquentes
 - Placer l'état de durabilité dans l'annexe des comptes, dans un document séparé ou dans le rapport sur le gouvernement d'entreprise : c'est une section du rapport de gestion.
@@ -30,6 +30,6 @@ Trois sociétés françaises non cotées, exercice 2027. Granit SAS : 1 400 sala
 - État de durabilité = section du rapport de gestion, pas annexe des comptes ni document séparé.
 - CSRD (directive de reporting) ≠ ESRS (normes de contenu, actes délégués) ≠ taxonomie (règlement de classification des activités).
 - Champ resserré par Omnibus I : plus de 1 000 salariés et plus de 450 M€ de chiffre d'affaires ; PME cotées exclues ; assurance limitée maintenue.
-- Exemption des filiales incluses dans le rapport consolidé de la mère, sauf grandes entreprises cotées sur un marché réglementé.
+- Exemption des filiales incluses dans le rapport consolidé de la mère ; l'exclusion des grandes entreprises cotées (texte initial) est supprimée par Omnibus I.
 
 **Notions liées :** [Normes ESRS et double matérialité](/cours/esrs-double-materialite) · [Reporting taxonomie verte](/cours/taxonomie-verte-reporting) · [Mission de certification de durabilité](/cours/mission-certification-durabilite) · [Diagnostic extra-financier et CSRD](/cours/diagnostic-extra-financier-csrd)

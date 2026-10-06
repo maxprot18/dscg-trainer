@@ -200,8 +200,8 @@
         1
       ],
       "multiple": false,
-      "explanation": "Un État ou territoire applique un régime fiscal privilégié lorsque l'impôt local est inférieur de plus de 40 % à l'IS français de droit commun, soit ici moins de 25 % × 60 % = 15 % (CGI art. 238 A, seuil applicable depuis 2020). Avec 14 %, Kappa en bénéficie. Delta détenant plus de 50 % et ne pouvant invoquer ni l'exception européenne ni la clause de sauvegarde, elle est imposée sur la quote-part du bénéfice de Kappa : 1 000 000 × 70 % = 700 000 € (CGI art. 209 B), l'impôt acquitté par Kappa étant imputable sur l'IS français à proportion : option 2. L'option 1 décrit le droit commun, écarté par l'article 209 B. L'option 3 oublie la proportion de la participation. L'option 4 applique l'ancien seuil de 50 %, remplacé par celui de 40 %.",
-      "source_ref": "CGI art. 209 B (entités étrangères contrôlées à plus de 50 %) ; CGI art. 238 A (régime fiscal privilégié : impôt inférieur de plus de 40 % à l'IS français)",
+      "explanation": "Un État ou territoire applique un régime fiscal privilégié lorsque l'impôt local est inférieur de 40 % ou plus à l'IS français de droit commun, soit ici 25 % × 60 % = 15 % ou moins (CGI art. 238 A, seuil applicable depuis 2020). Avec 14 %, Kappa en bénéficie. Delta détenant plus de 50 % et ne pouvant invoquer ni l'exception européenne ni la clause de sauvegarde, elle est imposée sur la quote-part du bénéfice de Kappa : 1 000 000 × 70 % = 700 000 € (CGI art. 209 B), l'impôt acquitté par Kappa étant imputable sur l'IS français à proportion : option 2. L'option 1 décrit le droit commun, écarté par l'article 209 B. L'option 3 oublie la proportion de la participation. L'option 4 applique l'ancien seuil de 50 %, remplacé par celui de 40 %.",
+      "source_ref": "CGI art. 209 B (entités étrangères contrôlées à plus de 50 %) ; CGI art. 238 A (régime fiscal privilégié : impôt inférieur de 40 % ou plus à l'IS français)",
       "verified": true,
       "estimated_seconds": 90
     }

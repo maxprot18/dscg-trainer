@@ -69,9 +69,9 @@
       ],
       "statement": "Depuis le 1er janvier 2022, une entreprise assujettie identifiée à la TVA en France qui importe des marchandises autoliquide la TVA à l'importation sur sa déclaration de TVA au lieu de la payer en douane.",
       "answer": true,
-      "justification": "Vrai : l'autoliquidation de la TVA à l'importation est généralisée et obligatoire pour les assujettis identifiés en France depuis le 1er janvier 2022 (CGI art. 1695 II).",
+      "justification": "Vrai : l'autoliquidation de la TVA à l'importation est généralisée et obligatoire pour les assujettis identifiés en France depuis le 1er janvier 2022 : la perception en douane est réservée aux importateurs non assujettis et non identifiés (CGI art. 1695 I) et les importations figurent sur la déclaration de TVA (CGI art. 287, 5-b quater).",
       "explanation": "Auparavant optionnelle et soumise à agrément, l'autoliquidation est devenue la règle pour les assujettis identifiés en France : la TVA à l'importation est déclarée sur la déclaration de TVA et, dans le même temps, déduite si l'entreprise dispose d'un droit à déduction. L'opération est ainsi neutre en trésorerie, alors que le paiement en douane imposait d'avancer la taxe avant de la récupérer.",
-      "source_ref": "CGI art. 1695 II (autoliquidation de la TVA à l'importation)",
+      "source_ref": "CGI art. 1695 I (TVA à l'importation perçue en douane seulement pour les non-assujettis non identifiés) ; CGI art. 287, 5-b quater (importations et taxe due portées sur la déclaration de TVA)",
       "verified": true,
       "estimated_seconds": 45
     },

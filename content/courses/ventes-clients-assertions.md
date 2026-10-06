@@ -10,7 +10,7 @@ Opérations de l'exercice (chiffre d'affaires, compte 70) :
 - **Réalité** : chaque vente enregistrée correspond à une livraison ou une prestation effective (risque : ventes fictives, facturation sans livraison).
 - **Exhaustivité** : toutes les livraisons de l'exercice sont facturées et comptabilisées (risque : oubli de facturation, avoirs non enregistrés).
 - **Mesure** : prix, remises et TVA correctement calculés ; le chiffre d'affaires net tient compte des ristournes acquises.
-- **Séparation des exercices** : la vente est rattachée à l'exercice du transfert de contrôle des biens (date de livraison, incoterm), et non à la date de facture ou d'encaissement.
+- **Séparation des exercices** : la vente est rattachée à l'exercice de la livraison des biens, qui en transfère la propriété et les risques (incoterm ; PCG art. 512-3 en cas de réserve de propriété), et non à la date de facture ou d'encaissement.
 - **Classification** : imputation au bon compte (70 et non 75 ou 76 ; ventes de produits ou de marchandises).
 
 Soldes de clôture (créances 411, 416, 418) :

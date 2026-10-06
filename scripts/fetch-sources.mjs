@@ -63,17 +63,42 @@ if (!have('anc-2020-01.txt')) {
 // 3. Référentiel normatif de la H2A (liste des NEP homologuées).
 step('NEP (H2A)')
 if (!have('h2a.html')) curl('https://h2a-france.org/referentiel-normatif-et-code-de-deontologie/acceder-au-referentiel-normatif/', 'h2a.html')
+// Texte de chaque NEP : une page par norme sur le site de la H2A, réduite au texte dans nep/NEP-<n>.txt.
+mkdirSync(join(DIR, 'nep'), { recursive: true })
+{
+  const { readFileSync } = await import('node:fs')
+  const pages = [...new Set(readFileSync(join(DIR, 'h2a.html'), 'utf8').match(/https:\/\/h2a-france\.org\/normes\/[^"]+/g) ?? [])]
+  for (const url of pages) {
+    const slug = url.split('/').filter(Boolean).pop()
+    if (pages.length && have(`nep/.done-${slug}`)) continue
+    const html = run('curl', ['-sS', '-L', '--fail', '-m', '120', url]).toString()
+    const main = html.match(/<main[\s\S]*?<\/main>/)?.[0] ?? html
+    const text = main
+      .replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, '')
+      .replace(/<[^>]+>/g, '\n')
+      .replace(/&nbsp;/g, ' ')
+      .replace(/&#8217;|&rsquo;/g, '’')
+      .replace(/&#8211;/g, '–')
+      .replace(/&amp;/g, '&')
+      .replace(/\n\s*\n+/g, '\n')
+    // Fichier nommé d'après le numéro lu dans la page (« NEP 240 - … »), l'adresse ne le donnant pas toujours.
+    const num = text.match(/NEP\s*(\d{3,4})\s*[-–]/)?.[1] ?? slug
+    writeFileSync(join(DIR, `nep/NEP-${num}.txt`), `${url}\n${text}`)
+    writeFileSync(join(DIR, `nep/.done-${slug}`), '')
+  }
+  console.log('  ', pages.length, 'NEP')
+}
 
 // 4. BOFiP en vigueur (open data, séries utiles à l'UE 1).
-step('BOFiP (IS-FUS, IS-GPE, RPPM-PVBMI)')
+step('BOFiP (IS-FUS, IS-GPE, RPPM-PVBMI, TVA, ENR-DMTG, BIC-BASE-80, IS-BASE, INT)')
 const BOFIP = 'https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/bofip-vigueur/exports/json?where='
-for (const s of ['IS-FUS', 'IS-GPE', 'RPPM-PVBMI']) {
+for (const s of ['IS-FUS', 'IS-GPE', 'RPPM-PVBMI', 'TVA', 'ENR-DMTG', 'BIC-BASE-80', 'IS-BASE', 'INT']) {
   if (!have(`bofip-${s}.json`)) curl(`${BOFIP}${encodeURIComponent(`identifiant_juridique like "BOI-${s}%"`)}`, `bofip-${s}.json`)
 }
 
 // 5. EUR-Lex (IFRS consolidées, règlement 2026/338, RGPD) : protégé par un défi JavaScript, lu avec Chromium.
 step('EUR-Lex (IFRS consolidées, 2026/338, RGPD)')
-if (!have('ifrs.txt') || !have('rgpd.txt')) {
+if (!have('ifrs.txt') || !have('rgpd.txt') || !have('ue/omnibus-2026-470.txt')) {
   const { chromium } = await import('@playwright/test')
   const browser = await chromium.launch({ channel: 'chromium', ...(process.env.HTTPS_PROXY ? { proxy: { server: process.env.HTTPS_PROXY } } : {}) })
   const page = await (await browser.newContext({ locale: 'fr-FR' })).newPage()
@@ -82,6 +107,7 @@ if (!have('ifrs.txt') || !have('rgpd.txt')) {
     await page.waitForTimeout(8000)
     return page.evaluate(() => document.body.innerText)
   }
+  if (!have('ifrs.txt')) {
   await page.goto('https://eur-lex.europa.eu/legal-content/FR/ALL/?uri=CELEX:32023R1803', { timeout: 120_000 })
   await page.waitForTimeout(8000)
   const hrefs = await page.evaluate(() => [...document.querySelectorAll('a')].map((a) => a.href))
@@ -90,7 +116,21 @@ if (!have('ifrs.txt') || !have('rgpd.txt')) {
   console.log('   IFRS consolidées :', latest)
   writeFileSync(join(DIR, 'ifrs.txt'), `CELEX ${latest}\n${await text(`https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:${latest}`)}`)
   writeFileSync(join(DIR, 'reg-2026-338.txt'), await text('https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32026R0338'))
-  writeFileSync(join(DIR, 'rgpd.txt'), await text('https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32016R0679'))
+  }
+  if (!have('rgpd.txt')) writeFileSync(join(DIR, 'rgpd.txt'), await text('https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32016R0679'))
+  // Autres textes de l'Union cités en UE 4 (audit, durabilité) et UE 5 (systèmes d'information).
+  mkdirSync(join(DIR, 'ue'), { recursive: true })
+  for (const [name, celex] of [
+    ['audit-537-2014', '32014R0537'],
+    ['nis2-2022-2555', '32022L2555'],
+    ['dora-2022-2554', '32022R2554'],
+    ['csrd-2022-2464', '32022L2464'],
+    ['ia-2024-1689', '32024R1689'],
+    ['data-act-2023-2854', '32023R2854'],
+    ['omnibus-2026-470', '32026L0470'],
+  ]) {
+    if (!have(`ue/${name}.txt`)) writeFileSync(join(DIR, 'ue', `${name}.txt`), await text(`https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:${celex}`))
+  }
   await browser.close()
 }
 

@@ -33,7 +33,7 @@
         "changement de méthode",
         "NEP 700"
       ],
-      "statement": "Au cours de l'exercice N, Jade SA a adopté la méthode préférentielle de comptabilisation de ses engagements de retraite (provision au bilan). La note 2 de l'annexe décrit ce changement et son incidence de façon complète et exacte ; les comptes ne comportent aucune anomalie significative. Le commissaire aux comptes juge utile d'attirer l'attention des lecteurs sur ce changement. Comment doit-il procéder ?",
+      "statement": "Au cours de l'exercice N, Jade SA a adopté la méthode préférentielle de comptabilisation de ses engagements de retraite (provision au bilan). La note 2 de l'annexe décrit ce changement et son incidence de façon complète et exacte ; les comptes ne comportent aucune anomalie significative. Comment le commissaire aux comptes traite-t-il ce changement dans son rapport sur les comptes annuels ?",
       "options": [
         "Certifier avec réserve, le changement de méthode rompant la comparabilité des comptes",
         "Certifier sans réserve et formuler une observation renvoyant à la note 2 de l'annexe",
@@ -43,8 +43,8 @@
       "answer": [
         1
       ],
-      "explanation": "L'observation sert à attirer l'attention du lecteur sur une information fournie dans l'annexe, correctement présentée, que le commissaire aux comptes juge importante pour la compréhension des comptes ; elle ne modifie pas l'opinion (option 2). Le changement de méthode est justifié et bien décrit : il n'y a ni anomalie ni limitation, donc aucune réserve (option 1) et a fortiori aucun refus de certifier (option 4), d'autant qu'un changement vers une méthode préférentielle est toujours admis. La partie « Vérifications spécifiques » (option 3) porte sur le rapport de gestion et les autres documents adressés aux actionnaires, non sur l'annexe des comptes.",
-      "source_ref": "NEP 700 (observations dans le rapport sur les comptes) ; PCG, règles relatives aux changements de méthodes comptables (règl. ANC 2014-03)",
+      "explanation": "L'observation sert à attirer l'attention du lecteur sur une information fournie dans l'annexe, correctement présentée ; elle ne modifie pas l'opinion (option 2). Elle est ici obligatoire : les changements de méthode sont décrits et justifiés dans l'annexe et signalés dans le rapport des commissaires aux comptes (C. com. art. L. 123-17), et la NEP 700 cite le changement de méthode dans les comptes annuels comme cas d'observation systématique. Le changement de méthode est justifié et bien décrit : il n'y a ni anomalie ni limitation, donc aucune réserve (option 1) et a fortiori aucun refus de certifier (option 4), d'autant qu'un changement vers une méthode préférentielle est toujours admis. La partie « Vérifications spécifiques » (option 3) porte sur le rapport de gestion et les autres documents adressés aux actionnaires, non sur l'annexe des comptes.",
+      "source_ref": "NEP 700 § 07 (observations dans le rapport sur les comptes) ; C. com. art. L. 123-17 ; PCG, règles relatives aux changements de méthodes comptables (règl. ANC 2014-03)",
       "verified": true,
       "estimated_seconds": 75
     },

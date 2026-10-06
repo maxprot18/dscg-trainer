@@ -144,7 +144,7 @@
         "clôture pour insuffisance d'actif"
       ],
       "title": "SARL Fenouil : liquidation et sort des créanciers",
-      "context": "Le tribunal a prononcé le 28 mars N la liquidation judiciaire de la SARL Fenouil, commerce de détail, sans maintien de l'activité. Le jugement a été publié au BODACC le 12 avril N.\nLa société Delta, fournisseur établi en France, détient une créance de 27 000 € dont l'échéance contractuelle était fixée au 30 septembre N.\nLa banque Arcane a prêté 150 000 € à la société ; sa créance est garantie par un nantissement sur le fonds de commerce.\nUn autre fournisseur, Ombre, créancier de 60 000 €, a omis de déclarer sa créance et n'a pas demandé à être relevé de la forclusion.\nAu terme des opérations, l'actif réalisé s'élève à 380 000 €, dont 110 000 € provenant de la vente du fonds de commerce. On retient l'ordre de paiement suivant :\n1. superprivilège des salaires : 42 000 € ;\n2. frais de justice : 28 000 € ;\n3. créances postérieures privilégiées : 35 000 € ;\n4. banque Arcane : elle reçoit le prix du fonds de commerce, soit 110 000 €, dans la limite de sa créance ; le solde non couvert de sa créance devient chirographaire ;\n5. créanciers chirographaires déclarés et admis, au marc l'euro : 410 000 € (hors solde de la banque Arcane et hors créance d'Ombre).",
+      "context": "Le tribunal a prononcé le 28 mars N la liquidation judiciaire de la SARL Fenouil, commerce de détail, sans maintien de l'activité. Le jugement a été publié au BODACC le 12 avril N.\nLa société Delta, fournisseur établi en France métropolitaine, détient une créance de 27 000 € dont l'échéance contractuelle était fixée au 30 septembre N.\nLa banque Arcane a prêté 150 000 € à la société ; sa créance est garantie par un nantissement sur le fonds de commerce.\nUn autre fournisseur, Ombre, créancier de 60 000 €, a omis de déclarer sa créance et n'a pas demandé à être relevé de la forclusion.\nAu terme des opérations, l'actif réalisé s'élève à 380 000 €, dont 110 000 € provenant de la vente du fonds de commerce. On retient l'ordre de paiement suivant :\n1. superprivilège des salaires : 42 000 € ;\n2. frais de justice : 28 000 € ;\n3. créances postérieures privilégiées : 35 000 € ;\n4. banque Arcane : elle reçoit le prix du fonds de commerce, soit 110 000 €, dans la limite de sa créance ; le solde non couvert de sa créance devient chirographaire ;\n5. créanciers chirographaires déclarés et admis, au marc l'euro : 410 000 € (hors solde de la banque Arcane et hors créance d'Ombre).",
       "sub_questions": [
         {
           "id": "q1-delai-declaration",
@@ -202,7 +202,7 @@
       ],
       "total_points": 10,
       "explanation": "Le cas suit le parcours du créancier en liquidation : déclaration dans les deux mois de la publication au BODACC, exigibilité des créances non échues, répartition selon l'ordre donné (la fraction non couverte d'une créance garantie devient chirographaire, le créancier forclos est exclu), puis clôture pour insuffisance d'actif.",
-      "source_ref": "C. com. art. L622-24, L622-26, R622-24, L641-3, L643-1, L643-8 et L643-11",
+      "source_ref": "C. com. art. L622-24, L622-26, R622-24 et R641-25, L641-3, L643-1, L643-8 et L643-11",
       "verified": true,
       "estimated_seconds": 840
     },

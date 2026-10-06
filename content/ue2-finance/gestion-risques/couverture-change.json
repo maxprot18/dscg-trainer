@@ -120,10 +120,10 @@
         "opération commerciale",
         "symétrie"
       ],
-      "source_ref": "PCG art. 420-1 s. et 628-1 s. (règl. ANC 2014-03 modifié par le règl. ANC 2015-05) ; comptes 411, 512, 656, 756",
+      "source_ref": "PCG art. 420-5, 628-11 et 628-13 (règl. ANC 2014-03 modifié par le règl. ANC 2015-05) ; comptes 411, 512, 666",
       "verified": true,
       "estimated_seconds": 240,
-      "statement": "Le 1er février N, la société Hélis vend des marchandises à un client américain pour 200 000 USD, payables le 30 avril N. La créance est enregistrée au cours du jour, 1 USD = 0,9100 €, soit 182 000 €. Le même jour, Hélis vend à terme 200 000 USD à sa banque, échéance 30 avril N, au cours de 0,9050 € pour 1 USD. Le 30 avril N, le client paie, le contrat à terme est dénoué par livraison des dollars et la banque crédite le compte de l’euro correspondant ; le cours au comptant est alors de 0,8800 €. Convention : la couverture est comptabilisée symétriquement à l’opération commerciale couverte, et l’écart entre le montant encaissé en euros et la créance est enregistré en perte ou gain de change commercial (656 ou 756). Passez l’écriture du 30 avril N.",
+      "statement": "Le 1er février N, la société Hélis vend des marchandises à un client américain pour 200 000 USD, payables le 30 avril N. La créance est enregistrée au cours du jour, 1 USD = 0,9100 €, soit 182 000 €. Le même jour, Hélis vend à terme 200 000 USD à sa banque, échéance 30 avril N, au cours de 0,9050 € pour 1 USD. Le 30 avril N, le client paie, le contrat à terme est dénoué par livraison des dollars et la banque crédite le compte bancaire d’Hélis des euros correspondants ; le cours au comptant est alors de 0,8800 €. Convention : les effets de change sur la créance et sur le contrat, symétriques, se compensent et ne sont pas enregistrés séparément ; le déport du contrat à terme est enregistré au compte 666. Passez l’écriture du 30 avril N.",
       "date": "30/04/N",
       "entries": [
         {
@@ -133,8 +133,8 @@
           "credit": 0
         },
         {
-          "account": "656",
-          "label": "Pertes de change sur créances et dettes commerciales",
+          "account": "666",
+          "label": "Pertes de change financières (déport)",
           "debit": 1000,
           "credit": 0
         },
@@ -145,7 +145,7 @@
           "credit": 182000
         }
       ],
-      "explanation": "Grâce à la vente à terme, Hélis encaisse 200 000 × 0,9050 = 181 000 €, quel que soit le cours du jour. La créance, enregistrée à 182 000 €, est soldée ; l’écart de 1 000 € correspond au déport du dollar à terme et constitue une perte de change sur opération commerciale (656). Sans couverture, Hélis n’aurait encaissé que 200 000 × 0,88 = 176 000 € (perte de 6 000 €). Le cours comptant du 30 avril n’intervient donc pas dans l’écriture. Le règl. ANC 2015-05 admet aussi d’étaler le déport en résultat financier sur la durée de la couverture ; seule la convention imposée par l’énoncé est attendue ici."
+      "explanation": "Grâce à la vente à terme, Hélis encaisse 200 000 × 0,9050 = 181 000 €, quel que soit le cours du jour. La créance, enregistrée à 182 000 €, est soldée. L’écart de 1 000 € est le déport du dollar à terme ((0,9100 − 0,9050) × 200 000) : la couverture portant sur une créance déjà comptabilisée, le PCG impose de l’étaler en résultat financier sur la durée de la couverture (art. 628-13) ; la couverture étant ouverte et dénouée dans l’exercice, il est constaté en totalité en N (compte 666). Le rattachement du report ou déport au résultat de l’élément couvert n’est possible, sur option, que pour la couverture d’une transaction future. La perte de change sur la créance (200 000 × (0,9100 − 0,8800) = 6 000 €) est compensée par le gain identique du contrat, présenté symétriquement dans la même rubrique (art. 628-11) : les deux s’annulent, et le cours comptant du 30 avril n’intervient pas dans l’écriture. Sans couverture, Hélis n’aurait encaissé que 200 000 × 0,88 = 176 000 € (perte de 6 000 €)."
     },
     {
       "id": "ue2-risques-change-0006",
@@ -159,7 +159,7 @@
         "emprunt en devises",
         "opération financière"
       ],
-      "source_ref": "PCG art. 420-1 s. et 628-1 s. (règl. ANC 2014-03 modifié par le règl. ANC 2015-05) ; comptes 164, 512, 666, 766",
+      "source_ref": "PCG art. 420-5, 628-11 et 628-13 (règl. ANC 2014-03 modifié par le règl. ANC 2015-05) ; comptes 164, 512, 666, 766",
       "verified": true,
       "estimated_seconds": 240,
       "statement": "Le 1er mars N, la société Isard obtient un emprunt bancaire de 300 000 USD remboursable in fine le 31 août N, enregistré au compte 164 au cours du jour, 1 USD = 0,9500 €, soit 285 000 €. Le même jour, elle achète à terme 300 000 USD pour le 31 août N au cours de 0,9300 € pour 1 USD. Le 31 août N, le cours au comptant est de 0,9700 € ; Isard rembourse l’emprunt avec les dollars livrés par la banque au titre du contrat à terme, payés en euros. Convention : la couverture est comptabilisée symétriquement à l’opération financière couverte, et l’écart entre le décaissement en euros et la dette est enregistré en perte ou gain de change financier (666 ou 766). Les intérêts, réglés séparément, sont ignorés. Passez l’écriture du 31 août N.",
@@ -184,7 +184,7 @@
           "credit": 6000
         }
       ],
-      "explanation": "L’achat à terme fixe le coût des dollars : 300 000 × 0,9300 = 279 000 €. La dette, enregistrée à 285 000 €, est soldée pour 279 000 € : gain de change financier de 6 000 € (766), l’opération couverte étant un emprunt. Ce gain reflète le déport du dollar à terme (taux d’intérêt du dollar supérieur à celui de l’euro), qui compense économiquement des intérêts plus élevés. Sans couverture, le remboursement aurait coûté 291 000 € (perte de 6 000 €). Le règl. ANC 2015-05 admet aussi d’étaler le déport en résultat financier sur la durée de la couverture plutôt que de le constater au dénouement ; seule la convention imposée par l’énoncé est attendue ici."
+      "explanation": "L’achat à terme fixe le coût des dollars : 300 000 × 0,9300 = 279 000 €. La dette, enregistrée à 285 000 €, est soldée pour 279 000 € : gain de change financier de 6 000 € (766), l’opération couverte étant un emprunt. Ce gain reflète le déport du dollar à terme (taux d’intérêt du dollar supérieur à celui de l’euro), qui compense économiquement des intérêts plus élevés. Sans couverture, le remboursement aurait coûté 291 000 € (perte de 6 000 €). La perte de change sur la dette (300 000 × (0,9700 − 0,9500) = 6 000 €) et le gain identique du contrat, symétriques (art. 628-11), s’annulent : le gain enregistré au compte 766 correspond au seul déport. La dette étant comptabilisée, le PCG impose d’étaler ce déport en résultat financier sur la durée de la couverture (art. 628-13) ; couverture ouverte et dénouée dans l’exercice, il est constaté en totalité en N."
     },
     {
       "id": "ue2-risques-change-0007",

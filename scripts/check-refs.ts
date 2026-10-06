@@ -76,12 +76,16 @@ for (const [code, dir] of Object.entries(CODE_DIRS) as [Exclude<Code, 'css'>, st
 }
 
 const pcgText = readFileSync(join(SRC, 'pcg.txt'), 'utf8')
-const pcgArticles = new Set([...pcgText.matchAll(/^\s*(?:Art\.|Article)\s+(\d{3}-\d+(?:\/\d+)?(?:-\d+)?)/gm)].map((m) => m[1]))
+const pcgArticles = new Set([...pcgText.matchAll(/^\s*(?:Art\.?|Article)\s+(\d{3}-\d+(?:\/\d+)?(?:-\d+)?)/gm)].map((m) => m[1]))
 /** Comptes de la nomenclature du PCG (liste des comptes, deuxième moitié du recueil). */
 const pcgAccounts = new Set([...pcgText.matchAll(/^\s*(\d{2,7})\s{1,10}[A-ZÉÈÀ«(]/gm)].map((m) => m[1]))
+// Plages « 471 à 473 » de la nomenclature.
+for (const m of pcgText.matchAll(/^\s*(\d{3,4})\s+à\s+(\d{3,4})\b/gm)) for (let n = Number(m[1]); n <= Number(m[2]); n++) pcgAccounts.add(String(n))
+/** Comptes dont la nomenclature prévoit une subdivision calquée sur une autre classe (« même ventilation que… »). */
+const pcgVentilated = new Set([...pcgText.matchAll(/^\s*(\d{2,7})\s+[^\n]*même ventilation/gm)].map((m) => m[1]))
 
 const ancText = readFileSync(join(SRC, 'anc-2020-01.txt'), 'utf8')
-const ancArticles = new Set([...ancText.matchAll(/^\s*(?:Art\.|Article)\s+(\d{3}-\d+)/gm)].map((m) => m[1]))
+const ancArticles = new Set([...ancText.matchAll(/^\s*(?:Art\.?|Article)\s+(\d{3}-\d+)/gm)].map((m) => m[1]))
 
 const h2a = readFileSync(join(SRC, 'h2a.html'), 'utf8')
 const nepNumbers = new Set([...h2a.matchAll(/NEP\s*(\d{3,4})/g)].map((m) => m[1]))
@@ -269,17 +273,11 @@ const accountFindings = new Map<string, string[]>()
 function checkAccounts(id: string, lines: { account: string }[] | undefined) {
   for (const l of lines ?? []) {
     const a = String(l.account)
-    // Un sous-compte non listé est admis s'il prolonge un compte de la nomenclature (PCG art. 933-1).
-    let p = a
-    let found = false
-    while (p.length >= 2) {
-      if (pcgAccounts.has(p)) {
-        found = true
-        break
-      }
-      p = p.slice(0, -1)
-    }
-    if (!found || p.length < Math.min(3, a.length)) accountFindings.set(a, [...(accountFindings.get(a) ?? []), id])
+    // Compte de la nomenclature 2026, ou subdivision d'un compte dont la nomenclature prévoit la ventilation
+    // (« même ventilation que celle du compte 21 »). Les autres subdivisions (4486, 6788…) correspondent le plus
+    // souvent à d'anciens comptes supprimés par le règl. ANC 2022-06 : elles sont signalées.
+    const ok = pcgAccounts.has(a) || [...pcgVentilated].some((v) => a.startsWith(v) && a.length > v.length)
+    if (!ok) accountFindings.set(a, [...(accountFindings.get(a) ?? []), id])
   }
 }
 

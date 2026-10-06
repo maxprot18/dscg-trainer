@@ -1,5 +1,18 @@
 # Journal des versions
 
+## 1.4.2 (octobre 2026)
+
+Deuxième série de vérifications sur les textes officiels : tout le reste de l'UE 1, l'audit (démarche, rapport, cycles, durabilité), les SI (UE 5) et les passages normatifs de l'UE 2.
+
+- **Nouvelles sources** : texte intégral des 42 NEP (H2A), BOFiP TVA, Dutreil, prix de transfert, charges financières et fiscalité internationale, textes de l'Union (règlement 537/2014, NIS 2, DORA, CSRD, AI Act, Data Act, Omnibus I).
+- **Corrections de fond**, entre autres :
+  - **Droit** : seuils de notification des concentrations relevés à 250 M€ / 80 M€ (loi 2026-403, 1er septembre 2026) ; SA à 2 actionnaires même cotée ; période d'observation de 12 mois en sauvegarde ; titres participatifs réservés à certains émetteurs ; fin de la limite de trois mandats au CSE.
+  - **Fiscalité** : art. 212 étendu aux entreprises associées ; engagement individuel Dutreil de 6 ans ; recodification de la TVA dans le CIBS au 1er janvier 2027 signalée.
+  - **Audit** : événements postérieurs selon la NEP 560 (et non l'ISA) ; risques de fraude et NEP 240 / 315 ; NEP 501 limitée à l'inventaire ; observation obligatoire en cas de changement de méthode ; informations des avocats selon la NEP 501.
+  - **Comptabilité** : comptes supprimés du PCG 2026 (6788, 4486, 4687, 7624, 675 / 775, 6312…) ; pertes de change commerciales en 656 ; déport d'un contrat de change étalé en résultat financier.
+  - **Durabilité et SI** : exemption des filiales étendue aux EIP par Omnibus I ; taux de fréquence ESRS S1-14 sur les accidents enregistrables ; état de la transposition de NIS 2 ; report du haut risque de l'AI Act.
+- **Vérification automatique** : `npm run check:refs` signale aussi les sous-comptes absents de la nomenclature 2026 (sauf ventilation prévue par le PCG).
+
 ## 1.4.1 (octobre 2026)
 
 Contenu vérifié sur les textes officiels.

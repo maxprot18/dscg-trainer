@@ -13,7 +13,7 @@
 - **Comptes courants de trésorerie de groupe (cash pooling)** : créance ou dette envers une entité liée (451 / 455), jamais une disponibilité, même si le solde est remboursable à vue.
 - **Suspens « divers »** : jamais validés globalement ; un suspens côté comptabilité non dénoué peut masquer un détournement.
 - **Confirmation** : demandée et reçue par l'auditeur (NEP 505) ; un relevé ou une attestation fournis par l'entité peuvent être falsifiés.
-- **Révélation des faits délictueux** : obligation du Code de commerce envers le procureur de la République, distincte de la démarche de la NEP 240.
+- **Révélation des faits délictueux** : obligation du Code de commerce envers le procureur de la République (art. L. 821-10), rappelée par la NEP 240 (§ 31) pour les anomalies résultant de fraudes susceptibles de qualification pénale.
 
 ```diagram
 {"type":"tree","title":"Ce solde bancaire est-il une disponibilité et comment le présenter ?","root":{"label":"Solde au 31/12 sur un compte","children":[{"edge":"compte courant de groupe","label":"451 / 455 : créance ou dette liée","note":"Pas une disponibilité"},{"edge":"découvert","label":"Passif : dettes auprès des établissements de crédit","note":"Aucune compensation entre banques"},{"edge":"en devises","label":"Convertir au cours de clôture","note":"Écart en 666 ou 766, gain compris"},{"edge":"nanti ou bloqué","label":"Disponibilité + annexe","note":"Engagement donné"}]}}

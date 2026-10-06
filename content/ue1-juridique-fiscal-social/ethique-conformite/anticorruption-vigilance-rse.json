@@ -86,7 +86,7 @@
         "amende d'intérêt public",
         "écriture"
       ],
-      "statement": "Le 15 octobre N, la SA Vectis, mise en cause pour des faits de corruption d'agent public étranger, conclut avec le procureur de la République une convention judiciaire d'intérêt public, validée par le président du tribunal. Elle prévoit le versement au Trésor public d'une amende d'intérêt public de 380 000 € et l'indemnisation d'une victime identifiée à hauteur de 45 000 €. Les deux sommes sont payées par virement le jour même ; aucune provision n'avait été constituée. Comptabilisez ces versements en utilisant le compte 6582 « Pénalités, amendes fiscales et pénales » pour l'amende et, selon le plan de comptes de Vectis, le compte 6788 « Charges exceptionnelles diverses » pour l'indemnisation.",
+      "statement": "Le 15 octobre N, la SA Vectis, mise en cause pour des faits de corruption d'agent public étranger, conclut avec le procureur de la République une convention judiciaire d'intérêt public, validée par le président du tribunal. Elle prévoit le versement au Trésor public d'une amende d'intérêt public de 380 000 € et l'indemnisation d'une victime identifiée à hauteur de 45 000 €. Les deux sommes sont payées par virement le jour même ; aucune provision n'avait été constituée. Comptabilisez ces versements en utilisant le compte 6582 « Pénalités, amendes fiscales et pénales » pour l'amende et, selon le plan de comptes de Vectis, le compte 678 « Autres charges exceptionnelles » pour l'indemnisation.",
       "date": "15/10/N",
       "entries": [
         {
@@ -96,7 +96,7 @@
           "credit": 0
         },
         {
-          "account": "6788",
+          "account": "678",
           "label": "Indemnisation de la victime (CJIP)",
           "debit": 45000,
           "credit": 0
@@ -108,8 +108,8 @@
           "credit": 425000
         }
       ],
-      "explanation": "La CJIP (CPP art. 41-1-2) n'emporte pas déclaration de culpabilité, mais elle impose le versement d'une amende d'intérêt public et, le cas échéant, la réparation du préjudice de la victime. Depuis le règlement ANC 2022-06 (exercices ouverts à compter du 1er janvier 2025), les pénalités et amendes ne relèvent plus du résultat exceptionnel : l'amende est enregistrée au compte d'exploitation 6582, qui remplace l'ancien compte 6712. Le compte 678 « Autres charges exceptionnelles » subsiste (6788 en est une subdivision retenue dans le plan de comptes de Vectis), mais le résultat exceptionnel est désormais réservé aux charges liées à un événement majeur et inhabituel : le classement de l'indemnisation dépend de cette appréciation, c'est pourquoi l'énoncé impose le compte. Total décaissé : 380 000 + 45 000 = 425 000 €. Fiscalement, l'amende relève des sanctions pécuniaires non déductibles du résultat (CGI art. 39, 2) et doit être réintégrée extra-comptablement.",
-      "source_ref": "CPP art. 41-1-2 ; PCG (règl. ANC 2014-03 modifié par le règl. ANC 2022-06), compte 6582 ; compte 6788 imposé par l’énoncé ; CGI art. 39, 2",
+      "explanation": "La CJIP (CPP art. 41-1-2) n'emporte pas déclaration de culpabilité, mais elle impose le versement d'une amende d'intérêt public et, le cas échéant, la réparation du préjudice de la victime. Depuis le règlement ANC 2022-06 (exercices ouverts à compter du 1er janvier 2025), les pénalités et amendes ne relèvent plus du résultat exceptionnel : l'amende est enregistrée au compte d'exploitation 6582, qui remplace l'ancien compte 6712. Le compte 67 ne comprend plus que les comptes 672 et 678 « Autres charges exceptionnelles », et le résultat exceptionnel est désormais réservé aux charges liées à un événement majeur et inhabituel : le classement de l'indemnisation dépend de cette appréciation, c'est pourquoi l'énoncé impose le compte. Total décaissé : 380 000 + 45 000 = 425 000 €. Fiscalement, l'amende relève des sanctions pécuniaires non déductibles du résultat (CGI art. 39, 2) et doit être réintégrée extra-comptablement.",
+      "source_ref": "CPP art. 41-1-2 ; PCG (règl. ANC 2014-03 modifié par le règl. ANC 2022-06), compte 6582 ; compte 678 imposé par l’énoncé (PCG art. 1221-67) ; CGI art. 39, 2",
       "estimated_seconds": 150,
       "verified": true
     },

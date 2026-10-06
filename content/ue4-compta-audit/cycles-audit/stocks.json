@@ -255,7 +255,7 @@
       },
       "points": 10,
       "explanation": "Le cas cumule des facteurs de risque sur l’évaluation (sous-activité incorporée, rémunération liée au résultat) et sur l’existence (stock chez un tiers, migration de système). Les procédures pertinentes y répondent : recalcul du coût de production sur la capacité normale, confirmation et éventuellement inspection chez le prestataire, revue de la reprise des données. Les confirmations clients, les amortissements du siège et la TVA relèvent d’autres cycles.",
-      "source_ref": "NEP 315 ; NEP 330 ; NEP 501 (stocks détenus par des tiers) ; NEP 450 ; PCG, règles relatives au coût d’entrée des stocks (règl. ANC 2014-03 : coût de production, capacité normale)",
+      "source_ref": "NEP 315 ; NEP 330 ; NEP 501 (§ 03-04 : inventaire physique, stocks répartis sur plusieurs sites) ; NEP 505 (confirmation des tiers) ; NEP 450 ; PCG, règles relatives au coût d’entrée des stocks (règl. ANC 2014-03 : coût de production, capacité normale)",
       "estimated_seconds": 600
     },
     {
@@ -369,8 +369,8 @@
         "Rapprocher les factures du prestataire logistique des charges externes comptabilisées"
       ],
       "answer": [2],
-      "explanation": "Pour les stocks détenus par des tiers, la NEP 501 prévoit une demande de confirmation auprès du tiers et/ou une inspection ou d’autres procédures appropriées ; un montant significatif (900 000 €, plus de sept fois le seuil) justifie d’envisager une inspection sur place. Une déclaration de la direction est un élément interne, insuffisant seul. Le recalcul du CMP vise l’évaluation, pas l’existence. Le rapprochement des factures de stockage concerne les charges externes.",
-      "source_ref": "NEP 501 (stocks détenus par des tiers) ; NEP 505 (confirmations externes)",
+      "explanation": "Pour les stocks détenus par des tiers, l’auditeur peut adresser une demande de confirmation au dépositaire (NEP 505) ; les stocks étant répartis sur plusieurs sites, il détermine aussi, en fonction du risque, les lieux où sa présence à l’inventaire est nécessaire (NEP 501 § 04). Un montant significatif (900 000 €, plus de sept fois le seuil) justifie d’envisager une inspection sur place. Une déclaration de la direction est un élément interne, insuffisant seul. Le recalcul du CMP vise l’évaluation, pas l’existence. Le rapprochement des factures de stockage concerne les charges externes.",
+      "source_ref": "NEP 505 (demandes de confirmation des tiers) ; NEP 501 (§ 03-04 : inventaire physique, stocks répartis sur plusieurs sites)",
       "estimated_seconds": 70
     },
     {
@@ -391,7 +391,7 @@
       ],
       "answer": [3],
       "explanation": "Lorsque l’assistance à l’inventaire est impossible, la NEP 501 demande au CAC de mettre en œuvre des procédures alternatives permettant d’obtenir des éléments suffisants et appropriés sur l’existence et l’état des stocks, typiquement des comptages ultérieurs et un contrôle des mouvements intermédiaires. S’il n’y parvient pas, la limitation est appréciée dans l’opinion (réserve ou impossibilité de certifier selon son caractère généralisé). Une déclaration de la direction ne remplace pas des éléments probants. Exclure un poste du champ de l’audit n’est pas possible. Le refus de certifier n’est pas automatique.",
-      "source_ref": "NEP 501 (inventaire physique : impossibilité d’y assister) ; NEP 700 (opinion avec réserve ou impossibilité de certifier) ; NEP 580 (déclarations de la direction)",
+      "source_ref": "NEP 501 (§ 05-06 : inventaire physique, absence ou impossibilité d’y assister) ; NEP 700 (opinion avec réserve ou impossibilité de certifier) ; NEP 580 (déclarations de la direction)",
       "estimated_seconds": 80
     },
     {
@@ -480,7 +480,7 @@
           ],
           "answer": [1],
           "points": 2,
-          "explanation": "La NEP 501 admet un inventaire à une date différente de la clôture : l’auditeur met alors en œuvre des procédures pour vérifier que les mouvements entre les deux dates sont correctement enregistrés, ce qui suppose un contrôle interne fiable sur ces mouvements. Il n’y a pas d’interdiction ; une déclaration de la direction ne suffit pas ; aucun délai forfaitaire ne dispense de contrôler les mouvements."
+          "explanation": "Aucun texte n’impose un inventaire à la date de clôture (C. com. art. L123-12 : inventaire au moins une fois tous les douze mois) ; la NEP 501 demande seulement d’assister à la prise d’inventaire lorsque les stocks sont significatifs. Quand l’inventaire a lieu avant la clôture, l’auditeur met en œuvre des procédures complémentaires couvrant la période jusqu’à la clôture (NEP 330 § 26) pour vérifier que les mouvements entre les deux dates sont correctement enregistrés, ce qui suppose un contrôle interne fiable sur ces mouvements. Il n’y a pas d’interdiction ; une déclaration de la direction ne suffit pas ; aucun délai forfaitaire ne dispense de contrôler les mouvements."
         },
         {
           "id": "q2-stock-reconstitue",
@@ -520,7 +520,7 @@
       ],
       "total_points": 11,
       "explanation": "Le cas illustre l’inventaire réalisé avant la clôture : sa validité dépend du contrôle des mouvements intermédiaires. La reconstitution du stock (stock inventorié + entrées − sorties) fait apparaître un écart avec l’inventaire permanent, qui constitue une anomalie à apprécier au regard des seuils et un indice sur la fiabilité du système (NEP 450).",
-      "source_ref": "NEP 501 (inventaire physique à une date différente de la clôture) ; NEP 450 (évaluation des anomalies relevées) ; NEP 330",
+      "source_ref": "NEP 501 (§ 03 : assistance à l’inventaire physique) ; NEP 330 (§ 26 : procédures de substance réalisées à une date intermédiaire) ; C. com. art. L123-12 ; NEP 450 (évaluation des anomalies relevées)",
       "estimated_seconds": 720
     },
     {
@@ -634,7 +634,7 @@
         }
       ],
       "explanation": "Les marchandises sont entrées dans le stock final N mais l’achat n’est pas comptabilisé en N : le résultat N est surévalué de 18 000 €. L’ajustement constate une facture non parvenue : débit 607 (18 000 € HT) et 44586 (TVA 3 600 €), crédit 408 (21 600 € TTC). Le stock final ne doit pas être modifié, car les biens appartiennent bien à Aquila à la clôture ; retirer les biens du stock au lieu de constater l’achat serait une erreur.",
-      "source_ref": "PCG comptes 408, 44586 et 607 ; NEP 501 (séparation des exercices lors de l’inventaire)",
+      "source_ref": "PCG comptes 408, 44586 et 607 ; NEP 500 (séparation des exercices) ; NEP 501 (inventaire physique)",
       "estimated_seconds": 200
     },
     {
@@ -715,7 +715,7 @@
       ],
       "total_points": 11,
       "explanation": "Le cas réunit trois pièges du cycle stocks : biens de tiers présents physiquement (propriété), biens en transit absents mais appartenant à l’entité, et coûts à exclure du coût de production. Les anomalies se compensent partiellement ; leur effet net est apprécié au regard des seuils (NEP 450), sans oublier leur retournement sur l’exercice suivant.",
-      "source_ref": "NEP 501 ; NEP 450 (évaluation des anomalies relevées) ; PCG, règles relatives au coût d’entrée des stocks (règl. ANC 2014-03 : coûts exclus du coût de production) ; PCG comptes 37 et 6037",
+      "source_ref": "NEP 501 ; NEP 450 (évaluation des anomalies relevées) ; PCG, règles relatives au coût d’entrée des stocks (PCG art. 213-30 et 213-32 : coûts engagés pour amener les stocks à l’endroit et dans l’état où ils se trouvent) ; PCG comptes 37 et 6037",
       "estimated_seconds": 780
     }
   ]

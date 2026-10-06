@@ -10,7 +10,7 @@
       "tags": ["séparation des exercices", "cut-off", "chiffre d'affaires"],
       "title": "Ventes de fin d'année chez un distributeur",
       "cycle": "ventes-clients",
-      "situation": "Vous auditez les comptes au 31/12/N de Bêta, distributeur de matériel électrique. Le chiffre d'affaires progresse de 12 % alors que le marché est stable. Le chiffre d'affaires de décembre N représente 18 % du total annuel contre 9 % en moyenne les années précédentes. La direction a un objectif de croissance conditionnant le versement de primes. Les conditions de vente sont « départ entrepôt » : le transfert de contrôle intervient à l'expédition. Le contrôle interne sur la facturation a été jugé fiable lors de l'intérim.",
+      "situation": "Vous auditez les comptes au 31/12/N de Bêta, distributeur de matériel électrique. Le chiffre d'affaires progresse de 12 % alors que le marché est stable. Le chiffre d'affaires de décembre N représente 18 % du total annuel contre 9 % en moyenne les années précédentes. La direction a un objectif de croissance conditionnant le versement de primes. Les conditions de vente sont « départ entrepôt » : la livraison, qui transfère la propriété et les risques, intervient à l'expédition. Le contrôle interne sur la facturation a été jugé fiable lors de l'intérim.",
       "assertions": ["Séparation des exercices", "Réalité (survenance)"],
       "procedures": {
         "options": [
@@ -458,7 +458,7 @@
         2
       ],
       "explanation": "La confirmation négative fournit des éléments moins probants : l’absence de réponse ne prouve pas l’accord. Elle n’est envisageable que si le risque est évalué faible avec un contrôle interne efficace, sur une population nombreuse de petits soldes homogènes, avec un faible taux d’écarts attendu et sans raison de penser que les destinataires négligeront la demande. Pour des grands comptes à risque élevé, un client en litige ou un soupçon de ventes fictives, il faut des confirmations positives et, le cas échéant, des procédures complémentaires.",
-      "source_ref": "NEP 505 (confirmations externes : demandes négatives)",
+      "source_ref": "NEP 505 (§ 04 et 08 : demandes fermées ou ouvertes, fiabilité des réponses) ; la demande de confirmation négative relève de la pratique professionnelle, la NEP 505 ne la mentionne pas",
       "verified": true,
       "estimated_seconds": 60
     },
@@ -485,7 +485,7 @@
         2
       ],
       "explanation": "Face à un refus, le CAC cherche à comprendre les motifs, apprécie s’ils sont fondés et vraisemblables et en tire les conséquences sur son évaluation des risques, notamment de fraude. Il collecte ensuite d’autres éléments (encaissements postérieurs, factures, bons de livraison, pièces du litige). Accepter sans diligence prive l’audit d’un élément probant. Passer outre le refus n’est pas la démarche prévue. Si le refus paraît injustifié ou si les procédures alternatives ne suffisent pas, le CAC en informe les organes de gouvernance et en tire les conséquences dans son rapport (réserve, voire impossibilité de certifier) : ce n’est qu’un dernier ressort.",
-      "source_ref": "NEP 505 (refus de la direction de laisser adresser une demande de confirmation)",
+      "source_ref": "NEP 505 (§ 10-12 : refus de la direction de laisser adresser une demande de confirmation)",
       "verified": true,
       "estimated_seconds": 70
     },
@@ -682,14 +682,14 @@
       "options": [
         "Maintenir la créance au cours historique, sans autre écriture, la perte n’étant pas réalisée",
         "Ramener la créance à 80 000 € en dépréciant la différence par le compte 491",
-        "Ramener la créance à 80 000 € en enregistrant la différence directement en perte de change (666)",
+        "Ramener la créance à 80 000 € en enregistrant la différence directement en perte de change (656)",
         "Ramener la créance à 80 000 € avec une contrepartie en écart de conversion actif (476) et constituer une provision pour perte de change (1515) de 10 909 €"
       ],
       "answer": [
         3
       ],
-      "explanation": "Valeur historique = 100 000 / 1,10 = 90 909 € ; valeur au cours de clôture = 100 000 / 1,25 = 80 000 € ; perte latente = 10 909 €. Le PCG impose la conversion au cours de clôture avec un écart de conversion actif (476) qui n’affecte pas directement le résultat, et une provision pour risque (1515) qui constate la perte latente en charge. Maintenir le cours historique ignore la perte latente. Une dépréciation 491 traite un risque d’insolvabilité, pas un effet de change. Une perte de change (666) suppose une perte réalisée lors du règlement.",
-      "source_ref": "PCG, règles de conversion des créances et dettes en monnaies étrangères (règl. ANC 2014-03) ; comptes 476 et 1515",
+      "explanation": "Valeur historique = 100 000 / 1,10 = 90 909 € ; valeur au cours de clôture = 100 000 / 1,25 = 80 000 € ; perte latente = 10 909 €. Le PCG impose la conversion au cours de clôture avec un écart de conversion actif (476) qui n’affecte pas directement le résultat, et une provision pour risque (1515) qui constate la perte latente en charge. Maintenir le cours historique ignore la perte latente. Une dépréciation 491 traite un risque d’insolvabilité, pas un effet de change. Une perte de change (656, pertes de change sur créances et dettes commerciales) suppose une perte réalisée lors du règlement.",
+      "source_ref": "PCG art. 420-5 (conversion des créances et dettes en monnaies étrangères) ; comptes 476 et 1515",
       "verified": true,
       "estimated_seconds": 90
     },
