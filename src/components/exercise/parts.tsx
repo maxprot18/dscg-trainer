@@ -4,7 +4,7 @@
  * avec la réponse, puis s'affiche en lecture seule avec la correction.
  */
 import { Check, Plus, Scale, Trash2, X } from 'lucide-react'
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 
 import { Button } from '@/components/ui/button'
 import type {
@@ -16,6 +16,7 @@ import type {
   PartResult,
 } from '@/engine/grading'
 import { PCG_ACCOUNTS, pcgLabel } from '@/content/pcg'
+import { suggestKeyPoints } from '@/engine/keyPoints'
 import { formatNumber, parseNumberInput } from '@/engine/numbers'
 import type { BooleanPart, ChoicePart, FlashcardPart, JournalPart, NumericPart, OpenPart, Part } from '@/engine/parts'
 import { useKeyboard } from '@/hooks/useKeyboard'
@@ -361,6 +362,8 @@ function OpenInput({ part, response, result, onSubmit }: PartProps<OpenPart>) {
   const done = result !== undefined
   const shownText = done ? (response as OpenResponse).text : text
   const shownChecked = done ? (response as OpenResponse).checked : checked
+  const guided = shownText.trim().length > 0
+  const found = useMemo(() => suggestKeyPoints(part.key_points, shownText), [part.key_points, shownText])
 
   return (
     <div className="flex flex-col gap-3">
@@ -374,7 +377,15 @@ function OpenInput({ part, response, result, onSubmit }: PartProps<OpenPart>) {
         className="border-input bg-background focus-visible:ring-ring/50 rounded-md border p-2 text-sm outline-none focus-visible:ring-[3px]"
       />
       {!revealed && !done ? (
-        <Button variant="secondary" className="self-start" onClick={() => setRevealed(true)}>
+        <Button
+          variant="secondary"
+          className="self-start"
+          onClick={() => {
+            // Correction guidée : les points clés dont les mots-clés figurent dans la copie sont pré-cochés.
+            setChecked(suggestKeyPoints(part.key_points, text))
+            setRevealed(true)
+          }}
+        >
           Voir le corrigé
         </Button>
       ) : (
@@ -387,6 +398,12 @@ function OpenInput({ part, response, result, onSubmit }: PartProps<OpenPart>) {
             <legend className="text-muted-foreground mb-1 text-xs font-semibold uppercase">
               Cochez les points présents dans votre réponse
             </legend>
+            {!done && guided && (
+              <p className="text-muted-foreground mb-1 text-xs">
+                Pré-cochés d’après les mots-clés retrouvés dans votre copie : vérifiez chaque point, une reformulation peut
+                échapper au repérage et un mot présent ne suffit pas.
+              </p>
+            )}
             {part.key_points.map((point, i) => (
               <label key={i} className="flex items-start gap-2">
                 <input
@@ -396,7 +413,14 @@ function OpenInput({ part, response, result, onSubmit }: PartProps<OpenPart>) {
                   disabled={done}
                   onChange={(e) => setChecked((c) => c.map((v, j) => (j === i ? e.target.checked : v)))}
                 />
-                <span>{point}</span>
+                <span>
+                  {point}
+                  {guided && (
+                    <span className={cn('ml-2 text-xs', found[i] ? 'text-emerald-700 dark:text-emerald-400' : 'text-muted-foreground')}>
+                      {found[i] ? 'repéré dans votre copie' : 'non repéré'}
+                    </span>
+                  )}
+                </span>
               </label>
             ))}
           </fieldset>

@@ -122,7 +122,9 @@ describe('ExercisePlayer', () => {
     await user.click(screen.getByRole('button', { name: 'Valider l’écriture' }))
     await user.type(screen.getByLabelText('Votre réponse rédigée'), 'Rythme de consommation des avantages')
     await user.click(screen.getByRole('button', { name: 'Voir le corrigé' }))
-    await user.click(screen.getAllByRole('checkbox')[0])
+    // Correction guidée : le point clé dont les mots figurent dans la copie est pré-coché.
+    expect(screen.getAllByRole('checkbox')[0]).toBeChecked()
+    expect(screen.getByText('repéré dans votre copie')).toBeInTheDocument()
     await user.click(screen.getByRole('button', { name: 'Valider mon auto-évaluation' }))
     expect(onComplete).toHaveBeenCalledWith(expect.objectContaining({ earned: 9, total: 10, correct: true }), expect.anything())
     expect(screen.getByText(/Réussi : 9 \/ 10 points/)).toBeInTheDocument()
