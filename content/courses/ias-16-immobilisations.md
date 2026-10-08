@@ -24,7 +24,7 @@
 {"type":"bars","title":"Dotation annuelle d'un avion de 10 M€ : plan unique ou par composants","unit":"k€","items":[{"label":"Plan unique sur 20 ans","value":500},{"label":"Moteurs 3 M€ sur 8 ans","value":375},{"label":"Cellule 7 M€ sur 20 ans","value":350},{"label":"Total par composants","value":725}]}
 ```
 
-**Remplacement d'un composant (§13, §70)** : le coût du nouveau composant est immobilisé, la valeur comptable du composant remplacé est décomptabilisée (estimée au coût du remplacement si elle n'était pas isolée) ; le gain ou la perte de sortie passe en résultat (§68) et n'est pas classé en produit des activités ordinaires.
+**Remplacement d'un composant (§13, §70)** : le coût du nouveau composant est immobilisé, la valeur comptable du composant remplacé est décomptabilisée, même s'il n'était pas amorti séparément (son coût d'origine peut alors être estimé à partir du coût du remplacement) ; le gain ou la perte de sortie passe en résultat (§68) et n'est pas classé en produit des activités ordinaires.
 
 ## Exemple
 Aéro acquiert le 01/01/N un avion pour 10 M€ : moteurs 3 M€ (durée d'utilité 8 ans) et cellule 7 M€ (20 ans), valeurs résiduelles nulles, amortissement linéaire.
