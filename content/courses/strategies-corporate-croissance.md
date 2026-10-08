@@ -1,6 +1,6 @@
 # Stratégies de groupe : diversification, intégration, internationalisation, croissance externe
 
-**Références :** programme DSCG UE3 (arrêté du 4 août 2025) ; H.I. Ansoff (1965), matrice produits-marchés ; Boston Consulting Group, Arthur D. Little et McKinsey, matrices de portefeuille
+**Références :** programme DSCG UE3 (arrêté du 4 août 2025) ; H.I. Ansoff (1957, 1965), matrice produits-marchés ; Boston Consulting Group, Arthur D. Little et McKinsey, matrices de portefeuille
 
 **Enjeu :** choisir les domaines d'activité où l'entreprise est présente, la façon d'y entrer ou d'en sortir, et l'allocation des ressources entre eux ; à l'examen, il faut qualifier une opération (intégration, diversification, croissance externe) et positionner les DAS dans une matrice de portefeuille.
 
@@ -15,7 +15,7 @@
 
 **Matrices de portefeuille** :
 - **BCG** : taux de croissance du marché × part de marché relative (PMR = CA du DAS ÷ CA du principal concurrent ; pour le leader, ÷ CA du second). Vedettes (forte croissance, PMR > 1), vaches à lait (faible croissance, PMR > 1), dilemmes (forte croissance, PMR < 1), poids morts (faible croissance, PMR < 1). Équilibre recherché : les vaches à lait financent les dilemmes prometteurs, futures vedettes.
-- **ADL** : maturité du secteur (démarrage, croissance, maturité, déclin) × position concurrentielle (dominante, forte, favorable, défavorable, marginale).
+- **ADL** : maturité du secteur (démarrage, croissance, maturité, déclin) × position concurrentielle (dominante, forte, favorable, défendable, marginale).
 - **McKinsey** : attrait du marché × atouts de l'entreprise, multicritères, neuf cases.
 
 ```diagram

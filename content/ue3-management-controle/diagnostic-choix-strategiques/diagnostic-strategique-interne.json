@@ -49,7 +49,7 @@
         1
       ],
       "explanation": "L'option 2 est exacte : selon la grille VRIO, une ressource valorisable et rare procure un avantage, mais s'il est facile de l'imiter cet avantage ne dure que le temps que les concurrents la reproduisent. L'option 1 est fausse : l'avantage durable suppose en plus que la ressource soit difficilement imitable (et exploitée par l'organisation). L'option 3 est fausse : la parité concurrentielle correspond à une ressource valorisable mais non rare, que tous les concurrents possèdent. L'option 4 est fausse : une ressource valorisable ne crée pas de désavantage ; le désavantage vient de l'absence d'une ressource que les concurrents détiennent, ou d'une ressource sans valeur.",
-      "source_ref": "J. Barney (1991), approche par les ressources ; grille VRIO",
+      "source_ref": "J. Barney (1991), approche par les ressources ; J. Barney (1995), grille VRIO",
       "verified": true,
       "estimated_seconds": 60
     },
@@ -68,7 +68,7 @@
       "answer": false,
       "justification": "Faux : une ressource accessible à tous n'est pas rare ; elle procure au mieux une parité concurrentielle.",
       "explanation": "L'approche par les ressources repose sur l'hétérogénéité et l'imparfaite mobilité des ressources entre entreprises. Une ressource standard, achetable sur le marché par n'importe quel concurrent (un logiciel du commerce, une machine de série), n'est pas rare : elle procure au mieux une parité concurrentielle. L'avantage durable vient de ressources rares et difficiles à imiter (histoire spécifique, ambiguïté causale, complexité sociale) ou de la manière, propre à l'entreprise, de les combiner.",
-      "source_ref": "J. Barney (1991), approche par les ressources ; grille VRIO",
+      "source_ref": "J. Barney (1991), approche par les ressources ; J. Barney (1995), grille VRIO",
       "verified": true,
       "estimated_seconds": 45
     },
@@ -190,7 +190,7 @@
       ],
       "total_points": 10,
       "explanation": "Le cas articule les deux outils du diagnostic interne : la chaîne de valeur (où se crée la marge) et la grille VRIO (quelles ressources fondent un avantage durable).",
-      "source_ref": "M. Porter, Competitive Advantage (1985), chaîne de valeur ; J. Barney (1991), approche par les ressources ; grille VRIO ; G. Hamel et C.K. Prahalad (1990), compétences fondamentales",
+      "source_ref": "M. Porter, Competitive Advantage (1985), chaîne de valeur ; J. Barney (1991), approche par les ressources ; J. Barney (1995), grille VRIO ; C.K. Prahalad et G. Hamel (1990), compétences fondamentales",
       "verified": true,
       "estimated_seconds": 720
     }

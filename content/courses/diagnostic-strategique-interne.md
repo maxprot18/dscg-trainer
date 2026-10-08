@@ -1,6 +1,6 @@
 # Diagnostic interne : ressources, compétences, chaîne de valeur
 
-**Références :** programme DSCG UE3 (arrêté du 4 août 2025) ; M. Porter, *Competitive Advantage* (1985) ; J. Barney (1991), approche par les ressources ; G. Hamel et C.K. Prahalad (1990)
+**Références :** programme DSCG UE3 (arrêté du 4 août 2025) ; M. Porter, *Competitive Advantage* (1985) ; J. Barney (1991), approche par les ressources, et (1995), grille VRIO ; C.K. Prahalad et G. Hamel (1990)
 
 **Enjeu :** identifier les forces et faiblesses de l'entreprise et, surtout, les sources de son avantage concurrentiel ; à l'examen, le diagnostic interne complète le diagnostic externe dans la SWOT et justifie la stratégie recommandée.
 
@@ -13,9 +13,9 @@
 {"type":"flow","title":"Chaîne de valeur : activités principales (Porter)","steps":[{"label":"Logistique interne","note":"réception, stockage des intrants"},{"label":"Production","note":"transformation"},{"label":"Logistique externe","note":"livraison, distribution"},{"label":"Commercialisation","note":"vente, marketing"},{"label":"Services","note":"après-vente, maintenance"}]}
 ```
 
-**Approche par les ressources (resource-based view)** : l'avantage durable vient de ressources hétérogènes entre entreprises et difficilement mobiles. Grille VRIO (formalisée par Barney après 1991) : ressource **V**alorisable, **R**are, difficilement **I**mitable (histoire spécifique, ambiguïté causale, complexité sociale), exploitée par l'**O**rganisation. Valorisable mais pas rare : parité concurrentielle ; valorisable et rare mais imitable : avantage temporaire ; les quatre critères réunis : avantage durable.
+**Approche par les ressources (resource-based view)** : l'avantage durable vient de ressources hétérogènes entre entreprises et difficilement mobiles. Grille VRIO (Barney, 1995, qui reprend les critères VRIN de 1991 en remplaçant la non-substituabilité par l'organisation) : ressource **V**alorisable, **R**are, difficilement **I**mitable (histoire spécifique, ambiguïté causale, complexité sociale), exploitée par l'**O**rganisation. Valorisable mais pas rare : parité concurrentielle ; valorisable et rare mais imitable : avantage temporaire ; les quatre critères réunis : avantage durable.
 
-**Compétences fondamentales (Hamel et Prahalad)** : combinaisons de savoir-faire et de technologies qui donnent accès à plusieurs marchés, contribuent fortement à la valeur perçue par le client et sont difficiles à imiter. Elles se cultivent au niveau du groupe, au-delà des DAS.
+**Compétences fondamentales (Prahalad et Hamel, 1990)** : combinaisons de savoir-faire et de technologies qui donnent accès à plusieurs marchés, contribuent fortement à la valeur perçue par le client et sont difficiles à imiter. Elles se cultivent au niveau du groupe, au-delà des DAS.
 
 **Effet d'expérience (Henderson, BCG)** : le coût unitaire diminue d'un pourcentage constant (souvent 20 à 30 %) à chaque doublement de la production **cumulée**, grâce à l'apprentissage, aux économies d'échelle et aux innovations de procédés. Le taux d'expérience t est le rapport entre le coût après doublement et le coût avant : t = 0,80 pour une baisse de 20 %.
 

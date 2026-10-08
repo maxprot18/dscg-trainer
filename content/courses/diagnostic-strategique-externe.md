@@ -20,7 +20,7 @@ Les pouvoirs publics ne sont pas une force du modèle initial : ils agissent sur
 **Formules clés :** TCAM = (Vₙ ÷ V₀)^(1/n) − 1 ; IHH = Σ pᵢ² ; CR4 = p₁ + p₂ + p₃ + p₄
 
 ## Exemple
-Le marché des vélos à assistance électrique passe de 420 M€ en 2021 à 560 M€ en 2025 (n = 4 ans) : TCAM = (560 ÷ 420)^(1/4) − 1 = 1,3333^0,25 − 1 ≈ 7,46 % par an (la moyenne arithmétique des variations, 33,3 % ÷ 4 = 8,33 %, serait fausse). Cinq acteurs se partagent ce marché avec 35 %, 25 %, 15 %, 15 % et 10 % : CR4 = 35 + 25 + 15 + 15 = 90 % ; IHH = 35² + 25² + 15² + 15² + 10² = 1 225 + 625 + 225 + 225 + 100 = 2 400. Le marché est concentré (IHH supérieur à 2 000) : la rivalité porte sur la différenciation plutôt que sur les prix, et la menace d'entrée est limitée par la taille requise.
+Le marché des vélos à assistance électrique passe de 420 M€ en 2021 à 560 M€ en 2025 (n = 4 ans) : TCAM = (560 ÷ 420)^(1/4) − 1 = 1,3333^0,25 − 1 ≈ 7,46 % par an (la moyenne arithmétique des variations, 33,3 % ÷ 4 = 8,33 %, serait fausse). Cinq acteurs se partagent ce marché avec 35 %, 25 %, 15 %, 15 % et 10 % : CR4 = 35 + 25 + 15 + 15 = 90 % ; IHH = 35² + 25² + 15² + 15² + 10² = 1 225 + 625 + 225 + 225 + 100 = 2 400. Le marché est concentré (IHH supérieur à 2 000 : au-delà de ce niveau, les lignes directrices européennes sur les concentrations horizontales ne jugent un problème de concurrence peu probable que si l'opération accroît l'indice de moins de 150 points) ; l'intensité de la rivalité dépend ensuite de l'équilibre entre les acteurs, plus vive quand ils sont de taille proche.
 
 ## Erreurs fréquentes
 - Classer une règle de droit en vigueur (RGPD, norme produit) dans le « P » de PESTEL : une loi ou un règlement relève du « L » ; le « P » vise les choix des pouvoirs publics (subvention, fiscalité incitative, stabilité).
@@ -32,6 +32,6 @@ Le marché des vélos à assistance électrique passe de 420 M€ en 2021 à 560
 - Le diagnostic externe identifie les facteurs clés de succès du secteur, à confronter au diagnostic interne (SWOT).
 - Un secteur attractif = forces faibles ; une force forte capte une part de la valeur du secteur.
 - Croissance annuelle moyenne : moyenne géométrique (TCAM), pas moyenne arithmétique.
-- IHH et CR4 mesurent la concentration ; un IHH élevé signale une rivalité moins frontale sur les prix.
+- IHH et CR4 mesurent la concentration ; à concentration donnée, la rivalité est plus forte entre concurrents de taille proche qu'en présence d'un leader dominant.
 
 **Notions liées :** [Diagnostic interne](/cours/diagnostic-strategique-interne) · [Stratégies de domaine](/cours/strategies-business) · [Contrôle des concentrations](/cours/controle-concentrations)
