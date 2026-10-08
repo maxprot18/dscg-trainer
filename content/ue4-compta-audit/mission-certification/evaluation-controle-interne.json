@@ -21,6 +21,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : l'environnement de contrôle est l'une des cinq composantes du contrôle interne de la NEP 315.",
+        "Exact : le seuil de signification est un outil de l'auditeur (NEP 320), étranger au dispositif de contrôle de l'entité.",
+        "Inexact : les activités de contrôle sont l'une des cinq composantes du contrôle interne de la NEP 315.",
+        "Inexact : la surveillance (pilotage) des contrôles est l'une des cinq composantes du contrôle interne de la NEP 315."
+      ],
       "explanation": "La NEP 315 (§24) décrit les cinq composantes du contrôle interne de l'entité : environnement de contrôle, processus d'évaluation des risques par l'entité, pilotage du contrôle interne (suivi de l'efficacité des contrôles), système d'information et de communication relatif à la préparation des comptes, activités de contrôle. Le seuil de signification est un outil de l'auditeur (NEP 320), qui ne relève pas du dispositif de contrôle de l'entité. Les trois autres propositions sont bien des composantes.",
       "source_ref": "NEP 315 (connaissance de l'entité, dont son contrôle interne) ; NEP 320",
       "verified": true,
@@ -48,6 +54,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : l'efficacité sur toute la période exige des tests de procédures sur un nombre suffisant d'opérations (NEP 330).",
+        "Inexact : même avec des contrôles efficaces, des procédures de substance restent obligatoires sur les soldes significatifs.",
+        "Inexact : l'existence des créances se vérifie par des procédures de substance (confirmations, encaissements postérieurs).",
+        "Exact : le test de cheminement confirme la compréhension du processus et la mise en œuvre des contrôles, sur une opération (NEP 315)."
+      ],
       "explanation": "Le test de cheminement est une procédure de prise de connaissance du contrôle interne (NEP 315) : il permet de confirmer la compréhension du processus et de vérifier la mise en œuvre des contrôles, sur une opération. Il ne démontre pas leur efficacité sur la période, qui exige des tests de procédures portant sur un nombre suffisant d'opérations (NEP 330). Même avec des contrôles efficaces, des procédures de substance restent obligatoires sur les soldes significatifs. Enfin, l'existence des créances à la clôture se vérifie par des procédures de substance (confirmations, encaissements postérieurs), non par le suivi d'une commande.",
       "source_ref": "NEP 315 (prise de connaissance du contrôle interne) ; NEP 330 (tests de procédures et procédures de substance)",
       "verified": true,
@@ -67,6 +79,12 @@
         "risque lié au contrôle"
       ],
       "multiple": true,
+      "option_explanations": [
+        "Exact : le cumul des fonctions supprime la séparation entre détention, enregistrement et contrôle ; faiblesse à communiquer (NEP 265).",
+        "Exact : contrôle défaillant, risque lié au contrôle élevé : procédures de substance plus probantes et plus étendues (NEP 330).",
+        "Inexact : tester un contrôle mal conçu n'a pas de sens ; les tests de procédures supposent que l'auditeur prévoie de s'y appuyer.",
+        "Inexact : une faiblesse de contrôle interne n'entraîne pas par elle-même une modification de l'opinion."
+      ],
       "statement": "Chez Corail SAS, une même employée ouvre le courrier, enregistre les règlements clients en comptabilité, remet les chèques en banque, établit les avoirs et prépare le rapprochement bancaire mensuel, qui n'est revu par personne. Les créances clients représentent 2,4 millions d'euros, pour un seuil de signification de 90 000 €. Quelles sont les conséquences appropriées pour l'audit ? (plusieurs réponses)",
       "options": [
         "Il s'agit d'une faiblesse de séparation des fonctions, qui permet un détournement d'encaissements masqué par des avoirs ou des imputations décalées ; le commissaire aux comptes la communique à la direction et, le cas échéant, aux organes de gouvernance",

@@ -25,6 +25,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : l'attestation sur covenants est un SACC, fourni à la demande de l'entité ou d'un tiers, sous réserve de l'indépendance.",
+        "Inexact : les due diligences d'acquisition sont un SACC, et non une mission imposée par la loi.",
+        "Exact : le rapport spécial sur les conventions réglementées est imposé par la loi (art. L. 225-40) ; c'est une mission légale.",
+        "Inexact : une consultation sur un traitement comptable est un SACC, et non une mission légale."
+      ],
       "explanation": "Le rapport spécial sur les conventions réglementées est imposé par la loi : le CAC le présente à l'assemblée, qui statue sur ces conventions. C'est une mission légale, au même titre que la certification et les autres vérifications spécifiques. L'attestation sur covenants, les due diligences d'acquisition et les consultations comptables sont des services autres que la certification (SACC), fournis à la demande de l'entité ou d'un tiers, sous réserve des règles d'indépendance."
     },
     {
@@ -51,6 +57,12 @@
       ],
       "answer": [
         0
+      ],
+      "option_explanations": [
+        "Exact : le CAC révèle au procureur les faits délictueux connus dans sa mission ; ce paiement de dépenses personnelles peut caractériser un abus de biens sociaux.",
+        "Inexact : informer le conseil d'administration ne dispense pas de la révélation au procureur.",
+        "Inexact : le secret professionnel n'est pas opposable à la révélation, qui ne requiert aucun accord du dirigeant concerné.",
+        "Inexact : la démission ne fait pas disparaître l'obligation ; ne pas révéler constitue un délit (art. L. 821-9)."
       ],
       "explanation": "Le commissaire aux comptes doit révéler au procureur de la République les faits délictueux dont il a eu connaissance dans sa mission ; le paiement de dépenses personnelles du dirigeant par la société, sans contrepartie, peut caractériser un abus de biens sociaux. Le secret professionnel ne lui est pas opposable dans ce cas et sa responsabilité ne peut être engagée pour une révélation faite de bonne foi. Informer le conseil d'administration (ce qu'il fait par ailleurs) ne le dispense pas de la révélation ; il n'a pas à obtenir l'accord du dirigeant concerné ; la démission ne fait pas disparaître l'obligation, et ne pas révéler constitue un délit."
     },

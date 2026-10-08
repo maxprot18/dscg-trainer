@@ -37,6 +37,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : E1 est soumise à l'analyse de matérialité ; un climat jugé non matériel exige seulement une explication détaillée et prospective.",
+        "Inexact : S1 est une norme thématique, applicable selon le résultat de l'analyse de double matérialité.",
+        "Inexact : G1 est une norme thématique, applicable selon le résultat de l'analyse de double matérialité.",
+        "Exact : ESRS 2, informations générales, s'applique toujours, comme les exigences générales d'ESRS 1."
+      ],
       "explanation": "L'option 4 est exacte : ESRS 2 (gouvernance, stratégie, gestion des impacts, risques et opportunités, indicateurs et objectifs à un niveau général) s'applique toujours, de même que les exigences générales d'ESRS 1. L'option 1 est fausse : E1 est soumise à l'analyse de matérialité ; l'entreprise qui juge le climat non matériel doit toutefois fournir une explication détaillée de sa conclusion, avec une analyse prospective. Les options 2 et 3 sont fausses : S1 et G1 sont des normes thématiques dont l'application dépend du résultat de l'analyse de double matérialité.",
       "source_ref": "Règlement délégué (UE) 2023/2772, annexe I : ESRS 1, chapitre 3 (double matérialité et informations à publier) ; ESRS 2",
       "verified": true,
@@ -63,6 +69,12 @@
       ],
       "answer": [
         0
+      ],
+      "option_explanations": [
+        "Exact : le risque de pénurie d'eau peut affecter performance et flux de trésorerie ; la matérialité financière suffit à rendre la question matérielle.",
+        "Inexact : ce raisonnement ne retient que la matérialité d'impact et oublie la matérialité financière.",
+        "Inexact : la double matérialité n'exige pas le cumul ; une question est matérielle selon l'une ou l'autre dimension.",
+        "Inexact : un risque de durabilité matériel se publie dans l'état de durabilité ; un passif éventuel suppose une obligation, absente ici."
       ],
       "explanation": "L'option 1 est exacte : une question de durabilité est matérielle dès qu'elle l'est selon l'une OU l'autre dimension. Ici, le risque de pénurie d'eau peut raisonnablement avoir un effet significatif sur la performance et les flux de trésorerie : il est matériel au titre de la matérialité financière (de l'extérieur vers l'intérieur). L'option 2 est fausse : elle ne retient que la matérialité d'impact. L'option 3 est fausse : la double matérialité n'exige pas le cumul des deux dimensions. L'option 4 est fausse : un risque de durabilité matériel se publie dans l'état de durabilité ; un passif éventuel suppose une obligation, ce qui n'est pas le cas d'un simple risque opérationnel futur.",
       "source_ref": "Règlement délégué (UE) 2023/2772, annexe I, ESRS 1, chapitre 3 (matérialité d'impact, matérialité financière, double matérialité)",

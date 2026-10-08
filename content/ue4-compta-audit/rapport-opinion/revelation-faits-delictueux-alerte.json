@@ -21,6 +21,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : le président du tribunal de commerce intervient dans la procédure d'alerte, qui concerne la continuité d'exploitation.",
+        "Exact : le Code de commerce impose de révéler au procureur de la République les faits délictueux connus dans la mission (art. L. 821-10).",
+        "Inexact : la H2A supervise la profession ; elle n'est pas destinataire des révélations.",
+        "Inexact : l'assemblée reçoit le signalement des irrégularités et inexactitudes, qui ne remplace pas la révélation."
+      ],
       "explanation": "Le Code de commerce impose au commissaire aux comptes de révéler au procureur de la République les faits délictueux dont il a connaissance au cours de sa mission (option 2). Le président du tribunal de commerce (option 1) intervient dans la procédure d'alerte, qui concerne la continuité d'exploitation. La H2A (option 3) supervise la profession ; elle n'est pas destinataire des révélations. L'assemblée (option 4) reçoit le signalement des irrégularités et inexactitudes, qui ne remplace pas la révélation.",
       "source_ref": "C. com. art. L. 821-10 (obligation de révélation des faits délictueux ; ancien art. L. 823-12, renuméroté par l'ordonnance n° 2023-1142)",
       "verified": true,
@@ -48,6 +54,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : le rapport spécial à l'assemblée correspond à la troisième phase de la procédure d'alerte.",
+        "Inexact : le président du tribunal n'ouvre pas la procédure ; il reçoit copie de l'invitation à délibérer en deuxième phase.",
+        "Exact : en première phase, le CAC informe le président du conseil d'administration, qui doit répondre sous quinze jours (art. L. 234-1).",
+        "Inexact : la délibération du conseil n'intervient qu'en deuxième phase, à défaut de réponse ou si la réponse ne rassure pas."
+      ],
       "explanation": "Dans une SA à conseil d'administration, la première phase consiste à informer le président du conseil des faits de nature à compromettre la continuité de l'exploitation ; il doit répondre sous quinze jours (option 3). La délibération du conseil (option 4) n'intervient qu'en deuxième phase, à défaut de réponse ou si la réponse ne rassure pas. Le rapport spécial à l'assemblée (option 1) correspond à la troisième phase. Le président du tribunal de commerce (option 2) n'ouvre pas la procédure : en SA, il reçoit copie de l'invitation à faire délibérer le conseil et communication de la délibération (deuxième phase), puis il est informé des démarches et de leurs résultats si les décisions de l'assemblée ne permettent pas d'assurer la continuité.",
       "source_ref": "C. com. art. L. 234-1 (procédure d'alerte du commissaire aux comptes dans les SA)",
       "verified": true,
@@ -74,6 +86,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : l'abus de biens sociaux est consommé dès l'usage des fonds ; le remboursement ne l'efface pas.",
+        "Inexact : l'obligation de révélation ne dépend d'aucun seuil de signification.",
+        "Inexact : la révélation est une obligation personnelle du CAC, qui n'est subordonnée à aucun accord des organes sociaux.",
+        "Exact : infraction consommée dès l'usage des fonds ; le CAC révèle au procureur sans avoir à qualifier définitivement les faits."
       ],
       "explanation": "L'abus de biens sociaux est consommé dès l'usage des fonds sociaux à des fins personnelles : le remboursement ultérieur ne l'efface pas. Le commissaire aux comptes doit révéler les faits au procureur ; il n'a pas à les qualifier définitivement ni à en apporter la preuve (option 4). L'option 1 est fausse pour la raison indiquée. L'option 2 est fausse : l'obligation de révélation ne dépend d'aucun seuil de signification. L'option 3 est fausse : la révélation est une obligation personnelle du commissaire aux comptes, qui n'est subordonnée à aucun accord des organes sociaux.",
       "source_ref": "C. com. art. L. 821-10 (obligation de révélation des faits délictueux ; ancien art. L. 823-12) ; C. com. art. L. 242-6 (abus de biens sociaux dans les SA)",

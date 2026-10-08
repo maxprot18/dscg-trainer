@@ -146,6 +146,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : les comptes étant exacts, l'inexactitude du rapport de gestion est décrite dans les vérifications spécifiques, sans modifier l'opinion.",
+        "Inexact : une réserve ne vise que des anomalies ou limitations portant sur les comptes, ici exacts.",
+        "Inexact : un refus de certifier ne vise que des anomalies portant sur les comptes, ici exacts.",
+        "Inexact : la NEP 9510 impose précisément cette vérification, même si le rapport de gestion relève de l'organe d'administration."
+      ],
       "explanation": "Le commissaire aux comptes vérifie la sincérité et la concordance avec les comptes des informations financières du rapport de gestion. Les comptes étant exacts, l'erreur ne porte que sur le rapport de gestion : à défaut de correction, il la décrit dans la partie « Vérifications spécifiques » de son rapport, sans modifier son opinion sur les comptes (option 1), et la signale à l'assemblée. Les options 2 et 3 sont fausses : une réserve ou un refus de certifier ne visent que des anomalies ou des limitations portant sur les comptes. L'option 4 est fausse : la NEP 9510 impose précisément cette vérification, même si le rapport de gestion est établi sous la responsabilité de l'organe d'administration.",
       "source_ref": "NEP 9510 révisée (arrêté du 20 avril 2026), §08, §18 à 22 (diligences relatives au rapport de gestion, inexactitudes et forme du rapport) ; NEP 700 ; C. com. art. L. 821-10 (signalement des irrégularités et inexactitudes ; ancien art. L. 823-12)",
       "verified": true,

@@ -25,6 +25,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : le blocage d'une facture non conforme à la commande est un contrôle applicatif, portant sur des transactions.",
+        "Exact : la gestion des droits d'accès est l'exemple type de contrôle général informatique, portant sur l'environnement des applications.",
+        "Inexact : le calcul automatique de la TVA est un contrôle applicatif, intégré à une application.",
+        "Inexact : un contrôle de vraisemblance à la saisie est un contrôle applicatif, portant sur des transactions."
       ]
     },
     {
@@ -53,6 +59,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : l'automatisation ne dispense pas de tester l'état quand les contrôles généraux sur les changements de programmes sont défaillants.",
+        "Inexact : la faiblesse justifie des procédures adaptées, pas l'abandon du contrôle de la dépréciation.",
+        "Inexact : une réserve n'intervient que si le CAC ne peut finalement pas collecter d'éléments suffisants et appropriés.",
+        "Exact : selon la NEP 500, le CAC apprécie la fiabilité d'une information produite par l'entité : il teste l'état ou le reconstitue."
       ]
     },
     {

@@ -22,6 +22,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : la justification des appréciations est obligatoire pour toute entité, même sans réserve ; points clés de l'audit pour les seules EIP.",
+        "Inexact : la justification des appréciations n'est pas liée à la formulation d'une réserve.",
+        "Inexact : la partie « Fondement de l'opinion » subsiste et précède la justification des appréciations.",
+        "Inexact : les appréciations s'inscrivent dans l'audit des comptes pris dans leur ensemble, sans opinion sur des éléments isolés."
+      ],
       "explanation": "La loi impose au commissaire aux comptes de justifier ses appréciations pour toute entité, y compris lorsqu'il certifie sans réserve ; pour les EIP, cette justification prend la forme des points clés de l'audit (option 1). L'option 2 est fausse : la justification n'est pas liée à une réserve. L'option 3 est fausse : la partie « Fondement de l'opinion » subsiste et précède la justification des appréciations. L'option 4 est fausse : les appréciations s'inscrivent dans l'audit des comptes pris dans leur ensemble et ne constituent pas une opinion sur des éléments isolés.",
       "source_ref": "C. com. art. L. 821-53 (obligation de justifier les appréciations ; ancien art. L. 823-9, renuméroté par l'ordonnance n° 2023-1142) ; NEP 700 ; NEP 702 (entités autres que les EIP)",
       "verified": true,
@@ -48,6 +54,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : le seuil de signification figure dans le rapport complémentaire au comité d'audit, non public.",
+        "Inexact : les points clés s'inscrivent dans l'audit des comptes pris dans leur ensemble ; aucune opinion séparée sur un poste.",
+        "Exact : chaque point clé décrit un risque parmi les plus importants, résume la réponse apportée et renvoie à l'annexe.",
+        "Inexact : les faiblesses du contrôle interne sont communiquées à la gouvernance et figurent dans le rapport complémentaire."
       ],
       "explanation": "Pour chaque point clé, le rapport décrit le risque d'anomalies significatives jugé parmi les plus importants, résume la réponse apportée par le commissaire aux comptes et renvoie à la note de l'annexe concernée (option 3). Le seuil de signification (option 1) figure dans le rapport complémentaire au comité d'audit, non public, et non dans le rapport sur les comptes. Une opinion séparée sur un poste (option 2) est exclue : les points clés s'inscrivent dans l'audit des comptes pris dans leur ensemble. Les faiblesses du contrôle interne (option 4) sont communiquées à la gouvernance et figurent dans le rapport complémentaire, pas dans les points clés.",
       "source_ref": "Règl. (UE) n° 537/2014 art. 10 §2 c ; NEP 701 (justification des appréciations, EIP)",
@@ -76,6 +88,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : le CAC publierait à la place de la direction l'information manquante ; le point clé ne se substitue pas à l'annexe.",
+        "Inexact : une observation porte sur une information présentée ; elle ne pallie pas son absence et ne remplace ni réserve ni point clé.",
+        "Inexact : les points clés de l'audit sont obligatoires pour une EIP, donc pour une société cotée.",
+        "Exact : l'omission significative refusée par la direction est un désaccord (information insuffisante) dont le CAC tire les conséquences sur l'opinion."
       ],
       "explanation": "Le point clé de l'audit décrit la démarche du commissaire aux comptes ; il ne peut pas se substituer à une information que l'entité doit fournir dans ses comptes. Le commissaire aux comptes n'a pas à publier lui-même une information originale sur l'entité. Il demande à la direction de compléter l'annexe ; si elle refuse et que l'omission est significative, c'est un désaccord (information insuffisante) dont il tire les conséquences sur son opinion (option 4). L'option 1 revient à publier à la place de la direction l'information qui manque. L'option 2 est fausse : une observation attire l'attention sur une information présentée dans l'annexe ; elle ne pallie pas son absence et ne remplace ni réserve ni point clé. L'option 3 est fausse : les points clés sont obligatoires pour une EIP.",
       "source_ref": "NEP 700 (désaccord, information insuffisante) ; NEP 701 (points clés de l'audit, EIP) ; règl. (UE) n° 537/2014 art. 10",

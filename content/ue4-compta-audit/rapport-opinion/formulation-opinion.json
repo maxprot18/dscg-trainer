@@ -16,6 +16,12 @@
         "Une certification sans réserve, assortie d'une observation sur les stocks"
       ],
       "answer": [2],
+      "option_explanations": [
+        "Inexact : la réserve suppose des incidences circonscrites ; ici, elles touchent résultat, capitaux propres et annexe : effet diffus.",
+        "Inexact : il n'y a pas de désaccord, aucune anomalie n'ayant été identifiée ; c'est une limitation des travaux.",
+        "Exact : limitation à effet diffus (stocks à 48 % du bilan, incidences multiples) : impossibilité de certifier (NEP 700).",
+        "Inexact : une observation porte sur une information correctement présentée ; elle ne remplace jamais une réserve."
+      ],
       "explanation": "Il s'agit d'une limitation de l'étendue des travaux, et non d'un désaccord : le commissaire aux comptes n'a pas identifié d'anomalie, il n'a pas pu collecter les éléments suffisants et appropriés. Ce motif exclut le refus de certifier, qui sanctionne des anomalies significatives à effet diffus. Selon la NEP 700, une limitation conduit à une réserve lorsque ses incidences possibles sont significatives mais circonscrites. Elle conduit à une impossibilité de certifier lorsque ces incidences ne peuvent pas être circonscrites, c'est-à-dire lorsqu'elles sont diffuses. Ici les stocks représentent près de la moitié du bilan et l'incertitude se propage au résultat, aux capitaux propres et à l'annexe : l'effet est diffus. L'observation ne sert qu'à attirer l'attention sur une information correctement présentée dans l'annexe ; elle ne remplace jamais une réserve.",
       "source_ref": "NEP 700 (rapports du commissaire aux comptes sur les comptes annuels et consolidés : réserve, refus, impossibilité de certifier) ; NEP 501 (présence à l'inventaire physique)",
       "verified": true,
@@ -42,6 +48,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : le changement est justifié et bien décrit ; sans anomalie ni limitation, aucune réserve n'est fondée.",
+        "Exact : opinion sans réserve et observation obligatoire, la NEP 700 citant le changement de méthode comme cas d'observation systématique.",
+        "Inexact : les vérifications spécifiques portent sur le rapport de gestion et les autres documents, non sur l'annexe.",
+        "Inexact : sans anomalie, aucun refus n'est fondé, et un changement vers une méthode préférentielle est toujours admis."
       ],
       "explanation": "L'observation sert à attirer l'attention du lecteur sur une information fournie dans l'annexe, correctement présentée ; elle ne modifie pas l'opinion (option 2). Elle est ici obligatoire : les changements de méthode sont décrits et justifiés dans l'annexe et signalés dans le rapport des commissaires aux comptes (C. com. art. L. 123-17), et la NEP 700 cite le changement de méthode dans les comptes annuels comme cas d'observation systématique. Le changement de méthode est justifié et bien décrit : il n'y a ni anomalie ni limitation, donc aucune réserve (option 1) et a fortiori aucun refus de certifier (option 4), d'autant qu'un changement vers une méthode préférentielle est toujours admis. La partie « Vérifications spécifiques » (option 3) porte sur le rapport de gestion et les autres documents adressés aux actionnaires, non sur l'annexe des comptes.",
       "source_ref": "NEP 700 § 07 (observations dans le rapport sur les comptes) ; C. com. art. L. 123-17 ; PCG, règles relatives aux changements de méthodes comptables (règl. ANC 2014-03)",

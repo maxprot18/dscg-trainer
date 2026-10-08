@@ -38,6 +38,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : le commissaire aux comptes des comptes peut s'en charger s'il remplit les conditions, mais un autre professionnel le peut aussi.",
+        "Inexact : la qualité d'expert-comptable ne suffit pas ; seuls un commissaire aux comptes inscrit pour cette activité ou un OTI accrédité peuvent être désignés.",
+        "Inexact : l'AMF est un régulateur de marché qui contrôle l'information publiée, pas un prestataire d'assurance.",
+        "Exact : l'ordonnance n° 2023-1142 ouvre la mission aux commissaires aux comptes inscrits pour cette activité et aux OTI accrédités, supervisés par la H2A."
+      ],
       "explanation": "L'option 4 est exacte : l'ordonnance n° 2023-1142 ouvre la mission aux commissaires aux comptes inscrits pour cette activité et aux organismes tiers indépendants (OTI) accrédités, sous la supervision de la H2A. L'option 1 est fausse : la mission peut être confiée au commissaire aux comptes des comptes, s'il remplit les conditions, mais aussi à un autre professionnel. L'option 2 est fausse : la qualité d'expert-comptable ne suffit pas ; la mission relève d'un statut et d'une supervision spécifiques. L'option 3 est fausse : l'AMF est un régulateur de marché, pas un prestataire d'assurance ; elle contrôle l'information publiée par les sociétés cotées.",
       "source_ref": "Ordonnance n° 2023-1142 du 6 décembre 2023 (C. com., livre VIII, titre II : certification des informations en matière de durabilité par un commissaire aux comptes ou un OTI)",
       "verified": true,
@@ -64,6 +70,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : régularité, sincérité et image fidèle sont la formule de certification des comptes, propre à l'assurance raisonnable.",
+        "Exact : la mission est d'assurance limitée ; la conclusion est négative, sans élément relevé remettant en cause la conformité au référentiel.",
+        "Inexact : cette opinion positive caractérise l'assurance raisonnable, que la CSRD n'impose pas à ce stade.",
+        "Inexact : aucune mission d'assurance ne porte sur l'exactitude de chaque donnée ; le professionnel raisonne par rapport à un seuil de signification."
       ],
       "explanation": "L'option 2 est exacte : la mission est une mission d'assurance limitée ; la conclusion s'exprime sous une forme négative (absence d'éléments relevés remettant en cause la conformité au référentiel). L'option 1 reprend la formule de certification des comptes (régularité, sincérité, image fidèle), propre à l'assurance raisonnable. L'option 3 est une opinion positive, caractéristique d'une assurance raisonnable, que la CSRD n'impose pas à ce stade. L'option 4 est fausse : aucune mission d'assurance ne porte sur l'exactitude de chaque donnée ; le professionnel se prononce par rapport à un seuil de signification.",
       "source_ref": "Directive (UE) 2022/2464 (directive 2006/43/CE modifiée : mission d'assurance limitée) ; ordonnance n° 2023-1142",

@@ -25,6 +25,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : la CNCC représente la profession et publie la doctrine ; elle n'est pas l'autorité publique de supervision.",
+        "Exact : l'ordonnance n° 2023-1142 a transformé le H3C en H2A, autorité publique qui contrôle, enquête et sanctionne.",
+        "Inexact : l'AMF régule les marchés financiers et les émetteurs cotés, pas la profession de commissaire aux comptes.",
+        "Inexact : le Conseil national de l'ordre est l'instance des experts-comptables, profession distincte régie par l'ordonnance de 1945."
+      ],
       "explanation": "L'ordonnance n° 2023-1142 a transformé le Haut conseil du commissariat aux comptes (H3C) en Haute autorité de l'audit (H2A), autorité publique indépendante qui supervise les commissaires aux comptes et, depuis la transposition de la directive CSRD, les auditeurs de durabilité : contrôles périodiques, enquêtes, sanctions disciplinaires, normes et déontologie. La CNCC est l'organisme professionnel qui représente la profession et publie la doctrine ; elle n'est pas l'autorité de supervision, même si elle peut recevoir des délégations. L'AMF régule les marchés financiers et les émetteurs cotés, pas la profession de CAC. Le Conseil national de l'ordre (dénomination de l'ancien Conseil supérieur depuis la loi n° 2022-172 du 14 février 2022) est l'instance nationale des experts-comptables, profession distincte régie par l'ordonnance de 1945."
     },
     {
@@ -50,6 +56,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : le livre VIII du Code de commerce régit les commissaires aux comptes, pas les experts-comptables.",
+        "Inexact : le règlement 537/2014 encadre l'audit légal des entités d'intérêt public ; il n'institue pas l'Ordre des experts-comptables.",
+        "Exact : l'ordonnance de 1945 institue l'Ordre et définit, à son article 2, la mission et le monopole de l'expert-comptable.",
+        "Inexact : la loi PACTE a modifié les seuils de désignation des commissaires aux comptes ; elle n'a pas créé l'Ordre."
       ],
       "explanation": "L'ordonnance n° 45-2138 du 19 septembre 1945 institue l'Ordre des experts-comptables (Conseil national, anciennement Conseil supérieur, et conseils régionaux) et définit, à son article 2, la mission de l'expert-comptable, dont le monopole de la tenue et de la surveillance des comptabilités. Le livre VIII du Code de commerce régit les commissaires aux comptes, pas les experts-comptables. Le règlement 537/2014 encadre l'audit légal des entités d'intérêt public. La loi PACTE a modifié les seuils de désignation des commissaires aux comptes ; elle n'a pas créé l'Ordre."
     },
@@ -77,6 +89,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : les sanctions disciplinaires relèvent de la commission des sanctions de la H2A, autorité publique.",
+        "Inexact : les enquêtes relèvent de la H2A, qui dispose d'enquêteurs ; pas de l'organisme représentatif de la profession.",
+        "Inexact : la H2A organise les contrôles périodiques et réalise elle-même ceux des CAC d'EIP.",
+        "Exact : la CNCC, organisme professionnel, représente la profession auprès des pouvoirs publics, contribue à la formation et publie la doctrine."
       ],
       "explanation": "La CNCC est l'organisme professionnel des commissaires aux comptes : elle représente la profession auprès des pouvoirs publics, contribue à la formation et publie la doctrine professionnelle. Les trois autres attributions relèvent de la H2A, autorité publique de supervision : elle prononce les sanctions disciplinaires (commission des sanctions), dispose d'enquêteurs et organise les contrôles périodiques, qu'elle réalise elle-même pour les CAC d'EIP et peut déléguer à la CNCC pour les autres. Confier la sanction ou l'enquête à l'organisme représentatif de la profession irait contre le principe d'une supervision publique indépendante."
     },

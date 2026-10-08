@@ -22,6 +22,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : l'annexe relève des états financiers et de la certification des comptes, pas du reporting de durabilité.",
+        "Inexact : une simple publication sur le site internet ne suffit pas ; la CSRD rattache l'information au rapport de gestion, déposé avec les comptes.",
+        "Exact : la CSRD, transposée par l'ordonnance n° 2023-1142, fait de l'état de durabilité une section distincte du rapport de gestion.",
+        "Inexact : le rapport sur le gouvernement d'entreprise traite des organes, des rémunérations des mandataires et des conventions, pas de la durabilité."
+      ],
       "explanation": "L'option 3 est exacte : la CSRD, transposée par l'ordonnance n° 2023-1142, prévoit que l'état de durabilité constitue une section distincte du rapport de gestion (ou du rapport de gestion du groupe pour les comptes consolidés). L'option 1 est fausse : l'annexe relève des états financiers et de la certification des comptes, pas du reporting de durabilité. L'option 2 est fausse : une simple publication sur le site internet ne remplit pas l'obligation ; la CSRD rattache l'information au rapport de gestion, publié et déposé avec les comptes. L'option 4 est fausse : le rapport sur le gouvernement d'entreprise traite de la composition des organes, des rémunérations des mandataires et des conventions, pas de l'état de durabilité.",
       "source_ref": "Directive (UE) 2022/2464, art. 1 (art. 19 bis et 29 bis de la directive 2013/34/UE) ; ordonnance n° 2023-1142 ; C. com. art. L. 232-6-3",
       "verified": true,
@@ -49,6 +55,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : le règlement taxonomie classe les activités durables et impose les indicateurs de l'article 8, sans fixer l'ensemble du reporting.",
+        "Exact : la CSRD modifie la directive comptable 2013/34/UE et remplace la NFRD ; l'état de durabilité succède à la DPEF.",
+        "Inexact : le règlement délégué 2023/2772 adopte les ESRS, texte d'application de la CSRD ; il ne remplace pas la NFRD.",
+        "Inexact : le règlement SFDR vise la publication d'informations par les acteurs des marchés financiers sur leurs produits, non le reporting des entreprises."
       ],
       "explanation": "L'option 2 est exacte : la directive CSRD (2022/2464) modifie la directive comptable 2013/34/UE et remplace le régime NFRD ; en France, l'état de durabilité succède à la DPEF. L'option 1 est fausse : le règlement taxonomie classe les activités durables et impose des indicateurs (article 8), mais ne fixe pas l'ensemble du reporting. L'option 3 est fausse : le règlement délégué 2023/2772 adopte les normes ESRS, c'est-à-dire le contenu détaillé du reporting prévu par la CSRD ; c'est un texte d'application, pas le texte qui remplace la NFRD. L'option 4 est fausse : le règlement SFDR concerne la publication d'informations par les acteurs des marchés financiers (sociétés de gestion, assureurs…) sur leurs produits.",
       "source_ref": "Directive (UE) 2022/2464 du 14 décembre 2022 (CSRD), modifiant notamment la directive 2013/34/UE",
@@ -78,6 +90,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : la cotation de la mère n'emporte pas exemption ; seule compte l'inclusion dans un rapport consolidé de durabilité conforme.",
+        "Inexact : l'exemption de la filiale existe précisément pour éviter les doublons de reporting dans les groupes.",
+        "Inexact : aucun critère d'effectif propre à la filiale ne commande l'exemption.",
+        "Exact : la filiale incluse dans le rapport consolidé de sa mère (ESRS ou équivalent) est exemptée si son rapport de gestion le mentionne."
+      ],
       "explanation": "L'option 4 est exacte : la CSRD prévoit une exemption de la filiale incluse dans le rapport consolidé de durabilité de sa mère, établi conformément aux ESRS (ou à un référentiel jugé équivalent pour une mère hors Union), sous réserve notamment que le rapport de gestion de la filiale mentionne l'entité qui publie le rapport consolidé et le moyen d'y accéder. Dans le texte initial, cette exemption est fermée aux grandes entreprises dont les titres sont admis sur un marché réglementé de l'Union (restriction supprimée par la directive Omnibus I (UE) 2026/470) ; F n'est de toute façon pas cotée. L'option 1 est fausse : la cotation de la mère n'emporte pas exemption ; c'est l'inclusion dans un rapport consolidé conforme qui compte. L'option 2 est fausse : l'exemption existe précisément pour éviter les doublons dans les groupes. L'option 3 est fausse : aucun critère d'effectif propre ne commande l'exemption de la filiale.",
       "source_ref": "Directive (UE) 2022/2464, art. 1 (art. 19 bis, § 9 et 10, et 29 bis, § 8 et 9, de la directive 2013/34/UE), § 10 et § 9 modifiés par la directive (UE) 2026/470, art. 2 ; ordonnance n° 2023-1142 ; C. com. art. L. 232-6-3, V",
       "verified": true,
@@ -104,6 +122,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : le modèle d'affaires et la stratégie au regard de la durabilité sont une information requise de l'état de durabilité.",
+        "Exact : ce tableau figure dans le rapport sur le gouvernement d'entreprise ; l'état de durabilité évoque seulement les critères de durabilité des incitations.",
+        "Inexact : la CSRD et ESRS 2 imposent de décrire le rôle et l'expertise des organes en matière de durabilité.",
+        "Inexact : l'article 8 du règlement 2020/852 impose ces indicateurs taxonomie dans l'état de durabilité."
       ],
       "explanation": "L'option 2 est la bonne réponse : le détail des rémunérations individuelles des mandataires sociaux figure dans le rapport sur le gouvernement d'entreprise des sociétés cotées ; l'état de durabilité peut évoquer l'intégration de critères de durabilité dans les mécanismes d'incitation, mais pas reprendre ce tableau. L'option 1 est une information requise (modèle d'affaires et stratégie, résilience, prise en compte des parties prenantes). L'option 3 est requise : la CSRD et ESRS 2 imposent de décrire le rôle et l'expertise des organes en matière de durabilité. L'option 4 est requise : l'article 8 du règlement (UE) 2020/852 impose la publication des indicateurs de la taxonomie dans l'état de durabilité.",
       "source_ref": "Directive (UE) 2022/2464, art. 1 (art. 19 bis, § 2, de la directive 2013/34/UE) ; règlement (UE) 2020/852, art. 8 ; règlement délégué (UE) 2023/2772, ESRS 2",

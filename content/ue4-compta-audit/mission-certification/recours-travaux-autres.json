@@ -25,6 +25,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : l'intervention d'un expert ne réduit pas la responsabilité du CAC, seul responsable de l'opinion (NEP 620).",
+        "Inexact : le rapport ne cite pas l'expert en cas d'opinion sans réserve, pour ne pas suggérer un partage de responsabilité.",
+        "Inexact : le CAC apprécie sources, hypothèses et méthodes de l'expert ; il ne reprend pas ses conclusions sans les apprécier.",
+        "Exact : le CAC reste seul responsable ; il apprécie la compétence, l'indépendance de l'actuaire et le caractère approprié de ses travaux."
       ]
     },
     {
@@ -52,6 +58,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : le rattachement au comité d'audit favorise l'objectivité mais ne dispense pas d'évaluer la fonction.",
+        "Exact : la NEP 610 exige d'évaluer la fonction puis d'apprécier les travaux visés, notamment en en vérifiant une partie.",
+        "Inexact : l'auditeur interne ne partage jamais la responsabilité du commissaire aux comptes.",
+        "Inexact : aucune interdiction générale ne vise les procédures de substance ; le CAC conserve toutefois ses jugements significatifs."
       ]
     },
     {
