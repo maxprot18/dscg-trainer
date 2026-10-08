@@ -99,15 +99,15 @@
       "source_ref": "Règl. délégué (UE) 2023/2772, ESRS E1, E1-6 (émissions brutes scopes 1, 2 et 3, intensité par chiffre d'affaires net) et E1-7 (crédits carbone présentés séparément)",
       "verified": true,
       "estimated_seconds": 180,
-      "statement": "L'état de durabilité de la société Brenne indique pour l'exercice N : scope 1 : 12 000 tCO₂e ; scope 2 : 3 800 tCO₂e selon la méthode fondée sur la localisation et 3 000 tCO₂e selon la méthode fondée sur le marché ; scope 3 : 45 000 tCO₂e. La société a acquis et annulé 5 000 tonnes de crédits carbone. Son chiffre d'affaires net s'élève à 250 M€. En retenant le scope 2 fondé sur le marché, calculez l'intensité GES totale (scopes 1, 2 et 3) en tCO₂e par M€ de chiffre d'affaires, arrondie à l'unité.",
-      "expected_value": 240,
+      "statement": "L'état de durabilité de la société Brenne (effectif moyen : 1 500 salariés) indique pour l'exercice N : scope 1 : 12 000 tCO₂e ; scope 2 : 3 800 tCO₂e selon la méthode fondée sur la localisation et 3 000 tCO₂e selon la méthode fondée sur le marché ; scope 3 : 45 000 tCO₂e. La société a acquis et annulé 5 000 tonnes de crédits carbone. Son chiffre d'affaires net s'élève à 500 M€. En retenant le scope 2 fondé sur le marché, calculez l'intensité GES totale (scopes 1, 2 et 3) en tCO₂e par M€ de chiffre d'affaires, arrondie à l'unité.",
+      "expected_value": 120,
       "tolerance": {
         "kind": "absolute",
         "value": 0.5
       },
       "unit": "tCO₂e/M€",
       "decimals": 0,
-      "explanation": "Émissions brutes totales = 12 000 + 3 000 + 45 000 = 60 000 tCO₂e. Intensité = 60 000 / 250 = 240 tCO₂e par M€. Les crédits carbone sont présentés séparément et ne viennent jamais en déduction des émissions brutes (une déduction donnerait 220). Retenir le scope 2 fondé sur la localisation donnerait 243,2 : l'énoncé impose la méthode fondée sur le marché."
+      "explanation": "Émissions brutes totales = 12 000 + 3 000 + 45 000 = 60 000 tCO₂e. Intensité = 60 000 / 500 = 120 tCO₂e par M€. Les crédits carbone sont présentés séparément et ne viennent jamais en déduction des émissions brutes (une déduction donnerait 110). Retenir le scope 2 fondé sur la localisation donnerait 121,6 : l'énoncé impose la méthode fondée sur le marché."
     },
     {
       "id": "ue2-rse-csrd-0005",

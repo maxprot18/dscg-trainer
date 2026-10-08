@@ -120,7 +120,7 @@
         "cession",
         "coût moyen pondéré"
       ],
-      "source_ref": "PCG (règl. ANC 2014-03) : titres fongibles évalués à la sortie au coût moyen pondéré ou selon la méthode PEPS ; comptes 503 « Actions », 667 « Charges nettes sur cessions de valeurs mobilières de placement », 767 « Produits nets sur cessions de valeurs mobilières de placement », 6271 « Frais sur titres »",
+      "source_ref": "PCG (règl. ANC 2014-03) : titres fongibles évalués à la sortie au coût moyen pondéré ou selon la méthode PEPS ; comptes 503 « Actions », 667 « Charges sur cession d'éléments financiers » (sous-compte 6673 « Charges nettes sur cessions de valeurs mobilières de placement »), 767 « Produits sur cession d'éléments financiers » (sous-compte 7673), 6271 « Frais sur titres (achat, vente, garde) » (PCG version 1er janvier 2026, règl. ANC 2022-06)",
       "verified": true,
       "estimated_seconds": 240,
       "statement": "La société Varenne détient en valeurs mobilières de placement 500 actions Celtis, acquises en deux lots : 200 actions à 45 € puis 300 actions à 40 € (frais d'acquisition comptabilisés en charges). Les titres n'ont jamais été dépréciés. Le 20 novembre N, elle cède 300 actions au cours de 41 €. Les frais de cession, 60 €, sont prélevés par la banque sur le produit de la vente et comptabilisés au compte 6271. Les titres sortis sont évalués au coût moyen pondéré. Passez l'écriture de cession (résultat de cession constaté sur un compte de charges ou de produits nets, selon le cas).",
@@ -140,7 +140,7 @@
         },
         {
           "account": "667",
-          "label": "Charges nettes sur cessions de valeurs mobilières de placement",
+          "label": "Charges sur cession d'éléments financiers (6673 Charges nettes sur cessions de VMP)",
           "debit": 300,
           "credit": 0
         },
@@ -151,7 +151,7 @@
           "credit": 12600
         }
       ],
-      "explanation": "Coût moyen pondéré : (200 × 45 + 300 × 40)/500 = 21 000/500 = 42 €. Coût de sortie : 300 × 42 = 12 600 €, crédité au 503. Prix de cession : 300 × 41 = 12 300 €, d'où une moins-value de 300 €, enregistrée au 667 (un résultat positif aurait été porté au 767). La banque verse 12 300 − 60 = 12 240 € ; les frais sont une charge (6271). Les 200 actions restantes figurent au bilan pour 200 × 42 = 8 400 €."
+      "explanation": "Coût moyen pondéré : (200 × 45 + 300 × 40)/500 = 21 000/500 = 42 €. Coût de sortie : 300 × 42 = 12 600 €, crédité au 503. Prix de cession : 300 × 41 = 12 300 €, d'où une moins-value de 300 €, enregistrée au 667, sous-compte 6673 (un résultat positif aurait été porté au 767, sous-compte 7673). La banque verse 12 300 − 60 = 12 240 € ; les frais sont une charge (6271). Les 200 actions restantes figurent au bilan pour 200 × 42 = 8 400 €."
     },
     {
       "id": "ue2-marches-ptf-0006",

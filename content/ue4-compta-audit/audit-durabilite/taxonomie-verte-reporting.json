@@ -80,7 +80,7 @@
         "chiffre d'affaires aligné",
         "calcul"
       ],
-      "statement": "La société Ondine publie ses indicateurs taxonomie de N. Chiffre d'affaires net de N : 80 M€ (produits financiers de 1,5 M€ en sus, non compris dans ce montant). Analyse de ses activités :\n- activité A : 22 M€, éligible, critères de contribution substantielle et DNSH respectés ;\n- activité B : 8 M€, éligible, contribution substantielle à l'atténuation, mais critère DNSH relatif à la pollution non respecté ;\n- activité C : 50 M€, non décrite dans les actes délégués.\nLes garanties minimales sont respectées au niveau de la société.\n\nCalculez la part du chiffre d'affaires alignée sur la taxonomie (en %, arrondi à une décimale).",
+      "statement": "La société Ondine (effectif moyen : 1 200 salariés) publie ses indicateurs taxonomie de N. Chiffre d'affaires net de N : 800 M€ (produits financiers de 15 M€ en sus, non compris dans ce montant). Analyse de ses activités :\n- activité A : 220 M€, éligible, critères de contribution substantielle et DNSH respectés ;\n- activité B : 80 M€, éligible, contribution substantielle à l'atténuation, mais critère DNSH relatif à la pollution non respecté ;\n- activité C : 500 M€, non décrite dans les actes délégués.\nLes garanties minimales sont respectées au niveau de la société.\n\nCalculez la part du chiffre d'affaires alignée sur la taxonomie (en %, arrondi à une décimale).",
       "expected_value": 27.5,
       "tolerance": {
         "kind": "absolute",
@@ -88,7 +88,7 @@
       },
       "unit": "%",
       "decimals": 1,
-      "explanation": "Seule l'activité A remplit toutes les conditions d'alignement. L'activité B est éligible mais non alignée (échec au DNSH) ; l'activité C n'est pas éligible. Le dénominateur est le chiffre d'affaires net (80 M€), sans les produits financiers. Part alignée = 22 ÷ 80 = 27,5 %. Erreurs classiques : retenir la part éligible (30 ÷ 80 = 37,5 %) ou ajouter les produits financiers au dénominateur (22 ÷ 81,5 = 27,0 %).",
+      "explanation": "Seule l'activité A remplit toutes les conditions d'alignement. L'activité B est éligible mais non alignée (échec au DNSH) ; l'activité C n'est pas éligible. Le dénominateur est le chiffre d'affaires net (800 M€), sans les produits financiers. Part alignée = 220 ÷ 800 = 27,5 %. Erreurs classiques : retenir la part éligible (300 ÷ 800 = 37,5 %) ou ajouter les produits financiers au dénominateur (220 ÷ 815 = 27,0 %).",
       "source_ref": "Règlement (UE) 2020/852, art. 3 et 8 ; règlement délégué (UE) 2021/2178, annexe I, point 1.1.1 (indicateur chiffre d'affaires)",
       "verified": true,
       "estimated_seconds": 150
@@ -135,7 +135,7 @@
         "cas pratique"
       ],
       "title": "Hélios Mobilités : indicateurs taxonomie et vérification",
-      "context": "Le groupe Hélios Mobilités réalise en N un chiffre d'affaires net consolidé de 240 M€, réparti comme suit :\n- fabrication de bus électriques : 96 M€. Activité décrite dans l'acte délégué « climat » au titre de l'atténuation. Les bus produits dans l'usine 1 (66 M€) respectent tous les critères techniques. L'usine 2 (30 M€) ne respecte pas un critère DNSH relatif à la prévention de la pollution (rejets non conformes) ;\n- rénovation énergétique de bâtiments pour des clients : 20 M€, activité décrite dans l'acte délégué ; 12 M€ de chantiers satisfont aux critères de contribution substantielle et DNSH, 8 M€ non ;\n- maintenance de camions diesel pour des transporteurs : 124 M€, activité non décrite dans les actes délégués.\n\nLe groupe respecte les garanties minimales. Pour l'indicateur OpEx, le contrôleur de gestion propose de retenir au dénominateur le total des charges d'exploitation consolidées (205 M€).\n\nL'état de durabilité du groupe sera certifié par un commissaire aux comptes inscrit pour cette activité.",
+      "context": "Le groupe Hélios Mobilités (effectif moyen : 2 600 salariés) réalise en N un chiffre d'affaires net consolidé de 600 M€, réparti comme suit :\n- fabrication de bus électriques : 240 M€. Activité décrite dans l'acte délégué « climat » au titre de l'atténuation. Les bus produits dans l'usine 1 (165 M€) respectent tous les critères techniques. L'usine 2 (75 M€) ne respecte pas un critère DNSH relatif à la prévention de la pollution (rejets non conformes) ;\n- rénovation énergétique de bâtiments pour des clients : 50 M€, activité décrite dans l'acte délégué ; 30 M€ de chantiers satisfont aux critères de contribution substantielle et DNSH, 20 M€ non ;\n- maintenance de camions diesel pour des transporteurs : 310 M€, activité non décrite dans les actes délégués.\n\nLe groupe respecte les garanties minimales. Pour l'indicateur OpEx, le contrôleur de gestion propose de retenir au dénominateur le total des charges d'exploitation consolidées (510 M€).\n\nL'état de durabilité du groupe sera certifié par un commissaire aux comptes inscrit pour cette activité.",
       "sub_questions": [
         {
           "id": "q1",
@@ -165,13 +165,13 @@
           },
           "unit": "%",
           "decimals": 1,
-          "explanation": "CA aligné = 66 (usine 1) + 12 (chantiers conformes) = 78 M€. Part = 78 ÷ 240 = 32,5 %. La part éligible serait (96 + 20) ÷ 240 = 48,3 % ; retenir 96 + 12 donnerait 45,0 %."
+          "explanation": "CA aligné = 165 (usine 1) + 30 (chantiers conformes) = 195 M€. Part = 195 ÷ 600 = 32,5 %. La part éligible serait (240 + 50) ÷ 600 = 48,3 % ; retenir 240 + 30 donnerait 45,0 %."
         },
         {
           "id": "q3",
           "kind": "true_false",
           "points": 2,
-          "prompt": "La proposition du contrôleur de gestion de retenir le total des charges d'exploitation (205 M€) comme dénominateur de l'indicateur OpEx est conforme à la taxonomie.",
+          "prompt": "La proposition du contrôleur de gestion de retenir le total des charges d'exploitation (510 M€) comme dénominateur de l'indicateur OpEx est conforme à la taxonomie.",
           "answer": false,
           "explanation": "Faux : le dénominateur OpEx se limite aux coûts directs non immobilisés de R&D, de rénovation de bâtiments, de locations de courte durée, d'entretien et de réparation et d'entretien courant des actifs (règl. délégué 2021/2178, annexe I, point 1.1.3)."
         },

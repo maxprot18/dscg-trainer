@@ -64,7 +64,7 @@
       "notion": "operations-sur-capital",
       "difficulty": 2,
       "tags": ["DPS", "valeur théorique", "augmentation de capital"],
-      "statement": "La SA Kerval a un capital de 400 000 actions, cotées 36 € avant l'opération. Elle émet en numéraire 100 000 actions nouvelles au prix de 28 € (nominal 10 €), à raison d'une action nouvelle pour quatre anciennes, avec maintien du droit préférentiel de souscription. Calculez la valeur théorique d'un droit préférentiel de souscription, en euros, arrondie au centime.",
+      "statement": "Le capital de la SA Kerval est composé de 400 000 actions, cotées 36 € avant l'opération. Elle émet en numéraire 100 000 actions nouvelles au prix de 28 € (nominal 10 €), à raison d'une action nouvelle pour quatre anciennes, avec maintien du droit préférentiel de souscription. Calculez la valeur théorique d'un droit préférentiel de souscription, en euros, arrondie au centime.",
       "expected_value": 1.6,
       "tolerance": { "kind": "absolute", "value": 0.01 },
       "unit": "€",

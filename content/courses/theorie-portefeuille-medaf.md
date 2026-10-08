@@ -1,6 +1,6 @@
 # Théorie du portefeuille, diversification et MEDAF
 
-**Références :** Markowitz (1952), sélection de portefeuille ; Sharpe (1964), modèle d'équilibre des actifs financiers ; PCG (règl. ANC 2014-03), comptes 503, 667 et 767
+**Références :** Markowitz (1952), sélection de portefeuille ; Sharpe (1964), modèle d'équilibre des actifs financiers ; PCG (règl. ANC 2014-03 modifié par le règl. ANC 2022-06), comptes 503, 6673 et 7673
 
 **Enjeu :** expliquer pourquoi seul le risque de marché est rémunéré et en déduire la rentabilité exigée d'un titre ; à l'examen, on calcule la rentabilité et le risque d'un portefeuille de deux titres, un bêta, puis on juge si une action est sur- ou sous-évaluée par rapport à la droite de marché des titres.
 
@@ -10,7 +10,7 @@
 - **Frontière efficiente** : ensemble des portefeuilles qui offrent la rentabilité maximale pour un risque donné. Avec un actif sans risque, la meilleure combinaison est sur la **droite de marché des capitaux** (CML), tangente au portefeuille de marché M : E(R_P) = r_f + [(E(R_M) − r_f)/σ_M] × σ_P (portefeuilles efficients seulement). Tout investisseur détient alors M et l'actif sans risque, dans une proportion qui dépend de son aversion au risque (théorème de séparation).
 - **Bêta** : β_i = cov(R_i, R_M) / σ²_M ; β > 1 : titre plus sensible que le marché ; β du marché = 1 ; β de l'actif sans risque = 0 ; β d'un portefeuille = moyenne pondérée des bêtas.
 - **MEDAF** et **droite de marché des titres** (SML) : E(R_i) = r_f + β_i [E(R_M) − r_f] ; seul le risque systématique est rémunéré, le risque spécifique pouvant être éliminé gratuitement. Un titre dont la rentabilité attendue dépasse celle de la SML (alpha positif) est sous-évalué : son prix devrait monter jusqu'à ramener sa rentabilité sur la droite.
-- **Comptabilisation des titres de placement** : entrée au coût d'acquisition (503) ; à la cession, en cas de titres fongibles, coût de sortie au coût moyen pondéré ou selon la méthode « premier entré, premier sorti » ; résultat de cession net en 767 (produit net) ou 667 (charge nette).
+- **Comptabilisation des titres de placement** : entrée au coût d'acquisition (503) ; à la cession, en cas de titres fongibles, coût de sortie au coût moyen pondéré ou selon la méthode « premier entré, premier sorti » ; résultat de cession net en 7673 (produit net) ou 6673 (charge nette), subdivisions des comptes 767 et 667 « Produits / Charges sur cession d'éléments financiers ».
 
 **Formules clés :** σ²_P = x²σ²_A + (1−x)²σ²_B + 2x(1−x)ρσ_Aσ_B ; β = cov(R_i, R_M)/σ²_M ; E(R_i) = r_f + β (E(R_M) − r_f)
 

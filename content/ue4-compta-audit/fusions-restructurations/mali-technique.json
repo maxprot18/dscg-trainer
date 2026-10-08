@@ -14,7 +14,7 @@
         "contrôle commun",
         "annulation des titres"
       ],
-      "statement": "La société Alpha détient 100 % du capital de la société Bêta, dont les titres figurent à son bilan pour 500 000 € (compte 261). Alpha absorbe Bêta ; les apports, réalisés entre sociétés sous contrôle commun, sont évalués à la valeur comptable. Bilan de Bêta à la date d'effet : terrain 200 000 €, stocks de marchandises 100 000 €, disponibilités 200 000 €, dettes fournisseurs 120 000 €. Le terrain a une valeur réelle de 290 000 € ; aucun autre actif ou passif ne présente de plus-value latente, et aucun élément non comptabilisé n'est identifié. Passez chez Alpha l'écriture unique de réception des apports et d'annulation des titres Bêta (on ignore la fiscalité).",
+      "statement": "La société Alpha détient 100 % du capital de la société Bêta, dont les titres figurent à son bilan pour 500 000 € (compte 261). Alpha absorbe Bêta ; les apports, réalisés entre sociétés sous contrôle commun, sont évalués à la valeur comptable. Bilan de Bêta à la date d'effet : terrain 200 000 €, stocks de marchandises 100 000 €, disponibilités 200 000 €, dettes fournisseurs 120 000 €. Le terrain a une valeur réelle de 290 000 € ; aucun autre actif ou passif ne présente de plus-value latente, et aucun élément non comptabilisé n'est identifié. Passez chez Alpha l'écriture unique de réception des apports et d'annulation des titres Bêta (on ignore la fiscalité ; le vrai mali éventuel est porté au compte 668 « Autres charges financières »).",
       "date": "Date d’effet de la fusion",
       "entries": [
         {

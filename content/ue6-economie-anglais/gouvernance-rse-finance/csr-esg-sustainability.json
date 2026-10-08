@@ -46,7 +46,7 @@
         "Scope 1 and 2",
         "ESG ratio"
       ],
-      "statement": "Extract from the sustainability statement of Lumen Foods (hypotheses):\n- Year 1: Scope 1 emissions 10,000 tCO2e; Scope 2 (market-based) 8,000 tCO2e; Scope 3 70,000 tCO2e; revenue €200m.\n- Year 2: Scope 1 emissions 12,000 tCO2e; Scope 2 (market-based) 5,000 tCO2e; Scope 3 90,000 tCO2e; revenue €250m.\nThe company's target indicator is the carbon intensity of Scopes 1 and 2 combined (market-based), in tCO2e per €m of revenue. Calculate the percentage change in this intensity between year 1 and year 2, in %, rounded to two decimal places (enter a negative number for a decrease).",
+      "statement": "Extract from the sustainability statement of Lumen Foods, a food group with 1,600 employees (hypotheses):\n- Year 1: Scope 1 emissions 10,000 tCO2e; Scope 2 (market-based) 8,000 tCO2e; Scope 3 70,000 tCO2e; revenue €500m.\n- Year 2: Scope 1 emissions 12,000 tCO2e; Scope 2 (market-based) 5,000 tCO2e; Scope 3 90,000 tCO2e; revenue €625m.\nThe company's target indicator is the carbon intensity of Scopes 1 and 2 combined (market-based), in tCO2e per €m of revenue. Calculate the percentage change in this intensity between year 1 and year 2, in %, rounded to two decimal places (enter a negative number for a decrease).",
       "expected_value": -24.44,
       "tolerance": {
         "kind": "absolute",
@@ -54,7 +54,7 @@
       },
       "unit": "%",
       "decimals": 2,
-      "explanation": "Year 1 intensity = (10,000 + 8,000) / 200 = 90 tCO2e per €m. Year 2 intensity = (12,000 + 5,000) / 250 = 68 tCO2e per €m. Change = 68 / 90 − 1 = −24.44%. Scope 3 is not part of the indicator. Classic errors: computing the change in absolute Scope 1 + 2 emissions (17,000 / 18,000 − 1 = −5.56%), or including Scope 3 (year 1: 88,000 / 200 = 440; year 2: 107,000 / 250 = 428; change −2.73%). Note that Scope 1 emissions actually rose: the intensity fell mainly thanks to lower Scope 2 emissions and revenue growth. This Scopes 1 + 2 intensity is a company-specific indicator defined for this exercise: the GHG intensity per net revenue required by ESRS E1 is based on total GHG emissions (Scopes 1, 2 and 3).",
+      "explanation": "Year 1 intensity = (10,000 + 8,000) / 500 = 36 tCO2e per €m. Year 2 intensity = (12,000 + 5,000) / 625 = 27.2 tCO2e per €m. Change = 27.2 / 36 − 1 = −24.44%. Scope 3 is not part of the indicator. Classic errors: computing the change in absolute Scope 1 + 2 emissions (17,000 / 18,000 − 1 = −5.56%), or including Scope 3 (year 1: 88,000 / 500 = 176; year 2: 107,000 / 625 = 171.2; change −2.73%). Note that Scope 1 emissions actually rose: the intensity fell mainly thanks to lower Scope 2 emissions and revenue growth. This Scopes 1 + 2 intensity is a company-specific indicator defined for this exercise: the GHG intensity per net revenue required by ESRS E1 is based on total GHG emissions (Scopes 1, 2 and 3).",
       "source_ref": "Company-specific target indicator defined in the statement (ESRS E1, Delegated Regulation (EU) 2023/2772, requires a GHG intensity per net revenue based on total Scope 1, 2 and 3 emissions) ; GHG Protocol Corporate Standard, Scopes 1 and 2",
       "verified": true,
       "estimated_seconds": 240

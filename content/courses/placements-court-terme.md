@@ -1,6 +1,6 @@
 # Placements de trésorerie et arbitrage risque-rendement
 
-**Références :** C. mon. fin., art. L. 213-1 A s. (titres de créances négociables) ; règlement (UE) 2017/1131 (fonds monétaires) ; PCG, comptes 50, 5088, 764, 767, 667
+**Références :** C. mon. fin., art. L. 213-1 A s. (titres de créances négociables) ; règlement (UE) 2017/1131 (fonds monétaires) ; PCG (plan de comptes issu du règl. ANC 2022-06), comptes 50, 5088, 764, 7673 et 6673
 
 **Enjeu :** placer un excédent sans mettre en péril sa disponibilité ni son capital ; à l'examen, on choisit un support selon la durée et l'incertitude de l'excédent, on calcule un rendement annualisé sur le capital investi et l'on comptabilise le placement et ses revenus.
 
@@ -13,7 +13,7 @@ Les excédents de trésorerie se placent selon trois critères : **liquidité** 
 
 **Rendement** : taux proportionnel annuel (base 360) = gain / capital investi × 360 / durée en jours. Intérêts simples : capital × taux × jours / 360. Le rendement d'un titre acheté en dessous du pair se calcule sur le prix payé, pas sur le nominal remboursé.
 
-**Comptabilisation (PCG)** : titres de placement au débit de la subdivision du compte 50 (5081 « Autres valeurs mobilières » par exemple) ; revenus (intérêts, coupons) au compte 764 ; plus-values de cession au compte 767 (moins-values au 667) ; intérêts courus non échus rattachés à la clôture (5088 au débit, 764 au crédit). Une baisse de la valeur liquidative sous le coût d'entrée donne lieu à dépréciation (590), sans compensation avec les plus-values latentes d'autres titres.
+**Comptabilisation (PCG)** : titres de placement au débit de la subdivision du compte 50 (5081 « Autres valeurs mobilières » par exemple) ; revenus (intérêts, coupons) au compte 764 ; plus-values nettes de cession au compte 7673 (moins-values nettes au 6673), subdivisions des comptes 767 et 667 « Produits / Charges sur cession d'éléments financiers » ; intérêts courus non échus rattachés à la clôture (5088 au débit, 764 au crédit). Une baisse de la valeur liquidative sous le coût d'entrée donne lieu à dépréciation (590), sans compensation avec les plus-values latentes d'autres titres.
 
 ## Exemple
 Une entreprise dispose de 496 000 € disponibles pendant 90 jours. Option 1 : BTF acheté 99,20 % du nominal, remboursé 100 % dans 90 jours. Option 2 : compte à terme à 3,20 % sur 90 jours.
@@ -31,6 +31,6 @@ Compte à terme sur 496 000 € : intérêts = 496 000 × 3,20 % × 90 / 360 = 3
 - Une hausse des taux fait baisser la valeur des titres à taux fixe : risque de taux d'autant plus fort que l'échéance est longue.
 - Un besoin de liquidité incertain oriente vers un OPCVM monétaire plutôt qu'un compte à terme bloqué.
 - Le rendement se mesure sur le capital effectivement investi, pas sur le nominal, et s'annualise en base 360.
-- Revenus de placement : 764 ; résultat de cession : 767 ou 667 ; intérêts courus : 5088.
+- Revenus de placement : 764 ; résultat de cession : 7673 ou 6673 ; intérêts courus : 5088.
 
 **Notions liées :** [Financements à court terme](/cours/financements-court-terme) · [Budget et plan de trésorerie](/cours/plan-tresorerie-previsionnel) · [Évaluation des obligations et duration](/cours/evaluation-obligations-duration) · [Instruments financiers en PCG](/cours/instruments-financiers-pcg)

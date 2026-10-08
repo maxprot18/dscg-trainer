@@ -156,7 +156,7 @@
         "cas pratique"
       ],
       "title": "Alvéa : analyse de double matérialité et indicateurs climat",
-      "context": "Le groupe Alvéa fabrique des emballages en verre (chiffre d'affaires net consolidé de N : 125 M€). Il prépare son état de durabilité selon les ESRS.\n\nAnalyse de double matérialité réalisée par la direction :\n- impact sur le climat : les fours de fusion consomment beaucoup de gaz naturel ; impact négatif réel jugé grave ;\n- risque de transition : hausse attendue du coût du carbone et du gaz, avec un effet possible important sur la marge ;\n- biodiversité : les sites sont en zone industrielle, éloignés de zones sensibles ; impacts et risques jugés faibles et documentés ;\n- conditions de travail chez les fournisseurs de sable : peu d'informations disponibles ; la direction propose de ne pas l'analyser « faute de données ».\n\nÉmissions de GES de N (tCO₂e) :\n- scope 1 : 5 400 ;\n- scope 2 : 2 300 selon la localisation, 1 600 selon le marché ;\n- scope 3 : 41 000.\n\nLa directrice financière suggère, si le climat était finalement jugé non matériel, de ne rien publier sur ce thème.",
+      "context": "Le groupe Alvéa fabrique des emballages en verre (chiffre d'affaires net consolidé de N : 500 M€ ; effectif moyen : 1 400 salariés). Il prépare son état de durabilité selon les ESRS.\n\nAnalyse de double matérialité réalisée par la direction :\n- impact sur le climat : les fours de fusion consomment beaucoup de gaz naturel ; impact négatif réel jugé grave ;\n- risque de transition : hausse attendue du coût du carbone et du gaz, avec un effet possible important sur la marge ;\n- biodiversité : les sites sont en zone industrielle, éloignés de zones sensibles ; impacts et risques jugés faibles et documentés ;\n- conditions de travail chez les fournisseurs de sable : peu d'informations disponibles ; la direction propose de ne pas l'analyser « faute de données ».\n\nÉmissions de GES de N (tCO₂e) :\n- scope 1 : 5 400 ;\n- scope 2 : 2 300 selon la localisation, 1 600 selon le marché ;\n- scope 3 : 41 000.\n\nLa directrice financière suggère, si le climat était finalement jugé non matériel, de ne rien publier sur ce thème.",
       "sub_questions": [
         {
           "id": "q1",
@@ -179,14 +179,14 @@
           "kind": "numeric",
           "points": 3,
           "prompt": "Calculez l'intensité GES par chiffre d'affaires net selon la méthode fondée sur la localisation (en tCO₂e par million d'euros, arrondi à une décimale).",
-          "expected_value": 389.6,
+          "expected_value": 97.4,
           "tolerance": {
             "kind": "absolute",
             "value": 0.1
           },
           "unit": "tCO₂e/M€",
           "decimals": 1,
-          "explanation": "Émissions totales (localisation) = 5 400 + 2 300 + 41 000 = 48 700 tCO₂e. Intensité = 48 700 ÷ 125 = 389,6 tCO₂e/M€. Avec le scope 2 « marché », on obtiendrait 48 000 ÷ 125 = 384,0 (indicateur publié séparément) ; sans le scope 3, 7 700 ÷ 125 = 61,6."
+          "explanation": "Émissions totales (localisation) = 5 400 + 2 300 + 41 000 = 48 700 tCO₂e. Intensité = 48 700 ÷ 500 = 97,4 tCO₂e/M€. Avec le scope 2 « marché », on obtiendrait 48 000 ÷ 500 = 96,0 (indicateur publié séparément) ; sans le scope 3, 7 700 ÷ 500 = 15,4."
         },
         {
           "id": "q3",
@@ -211,7 +211,7 @@
       ],
       "total_points": 10,
       "explanation": "Le cas mobilise la double matérialité (une dimension suffit, ici les deux sont remplies), le calcul des émissions totales et de l'intensité GES selon ESRS E1, la règle propre au climat (explication détaillée en cas de non-matérialité) et l'extension de l'analyse à la chaîne de valeur, que l'auditeur de durabilité vérifie dans le cadre de sa mission.",
-      "source_ref": "Règlement délégué (UE) 2023/2772, annexe I : ESRS 1, chapitre 3 (double matérialité, chaîne de valeur, cas du changement climatique) ; ESRS 2, IRO-2 ; ESRS E1-6 (émissions et intensité GES) ; ESRS S2",
+      "source_ref": "Règlement délégué (UE) 2023/2772, annexe I : ESRS 1, chapitre 3 (double matérialité, chaîne de valeur, cas du changement climatique) ; ESRS 2, IRO-2 ; ESRS E1-6 (émissions et intensité GES) ; ESRS S2 ; directive (UE) 2026/470 (champ : CA net > 450 M€ et plus de 1 000 salariés)",
       "verified": true,
       "estimated_seconds": 720
     }
