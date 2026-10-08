@@ -35,7 +35,7 @@ export function ExercisePage() {
 
   return (
     <div className="flex flex-col gap-4">
-      <button type="button" onClick={() => navigate(-1)} className="text-muted-foreground inline-flex items-center gap-1 self-start text-sm">
+      <button type="button" onClick={() => navigate(-1)} className="text-muted-foreground hover:text-foreground -ml-1 inline-flex min-h-10 items-center gap-1 self-start rounded-md px-1 text-sm">
         <ArrowLeft className="size-4" /> Retour
       </button>
       {entry && (

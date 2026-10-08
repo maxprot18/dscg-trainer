@@ -12,7 +12,7 @@ import { newSeed, sessionSearch } from '@/engine/sessionConfig'
 import { failedExerciseIds } from '@/engine/stats'
 
 const selectClass =
-  'border-input bg-background focus-visible:ring-ring/50 h-10 w-full rounded-md border px-3 text-sm outline-none focus-visible:ring-[3px]'
+  'border-input bg-background focus-visible:ring-ring/70 h-10 w-full rounded-md border px-3 text-sm outline-none focus-visible:ring-[3px]'
 
 /**
  * Choix du mode d'entraînement. L'écran s'affiche tout de suite avec les nombres d'exercices
@@ -153,7 +153,7 @@ export function TrainPage() {
             <select className={selectClass} value={examUe} onChange={(e) => setExamUe(e.target.value as UeId)}>
               {taxonomy.ues.map((u) => (
                 <option key={u.id} value={u.id}>
-                  {u.id} — {u.title} ({formatDuration(examDurations[u.id])})
+                  {u.id} · {formatDuration(examDurations[u.id])} — {u.title}
                 </option>
               ))}
             </select>
@@ -168,7 +168,7 @@ export function TrainPage() {
               ? 'Préparation du sujet…'
               : examSize === 0
               ? 'Pas encore assez d’exercices'
-              : `Commencer l’examen (${examSize} exercices, ${formatDuration(examDurations[examUe])})`}
+              : `Commencer l’examen (environ ${examSize} exercices, ${formatDuration(examDurations[examUe])})`}
           </Button>
         </CardContent>
       </Card>
@@ -186,7 +186,7 @@ export function TrainPage() {
             <select className={selectClass} value={fullUe} onChange={(e) => setFullUe(e.target.value as UeId)}>
               {taxonomy.ues.map((u) => (
                 <option key={u.id} value={u.id}>
-                  {u.id} — {u.title} ({formatDuration(examDurations[u.id])})
+                  {u.id} · {formatDuration(examDurations[u.id])} — {u.title}
                 </option>
               ))}
             </select>
@@ -202,7 +202,7 @@ export function TrainPage() {
               ? 'Préparation du sujet…'
               : fullDossiers < FULL_EXAM_MIN_DOSSIERS
                 ? 'Pas encore assez de dossiers dans cette UE'
-                : `Commencer le sujet (${formatDuration(examDurations[fullUe])}, ${fullDossiers} dossiers au choix)`}
+                : `Commencer le sujet (${formatDuration(examDurations[fullUe])}, dossiers tirés parmi ${fullDossiers})`}
           </Button>
         </CardContent>
       </Card>

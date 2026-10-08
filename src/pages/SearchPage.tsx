@@ -64,7 +64,7 @@ export function SearchPage() {
           autoFocus
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          className="border-input bg-background focus-visible:ring-ring/50 h-10 w-full rounded-md border pr-3 pl-9 text-sm outline-none focus-visible:ring-[3px]"
+          className="border-input bg-background focus-visible:ring-ring/70 h-10 w-full rounded-md border pr-3 pl-9 text-sm outline-none focus-visible:ring-[3px]"
         />
       </form>
       {!searching ? (

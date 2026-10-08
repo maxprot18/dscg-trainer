@@ -14,7 +14,7 @@ import { downloadReminder } from '@/lib/reminder'
 import { DAILY_GOAL_CHOICES, saveSettings, SESSION_SIZE_CHOICES, useSettings } from '@/lib/settings'
 
 const selectClass =
-  'border-input bg-background focus-visible:ring-ring/50 h-10 rounded-md border px-3 text-sm outline-none focus-visible:ring-[3px]'
+  'border-input bg-background focus-visible:ring-ring/70 h-10 rounded-md border px-3 text-sm outline-none focus-visible:ring-[3px]'
 
 export function SettingsPage() {
   const settings = useSettings()

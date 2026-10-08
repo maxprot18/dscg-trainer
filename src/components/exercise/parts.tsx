@@ -184,7 +184,7 @@ function NumericInput({ part, response, result, onSubmit, locked }: PartProps<Nu
           value={value}
           disabled={done}
           onChange={(e) => setRaw(e.target.value)}
-          className="border-input bg-background focus-visible:ring-ring/50 h-10 w-48 rounded-md border px-3 text-right outline-none focus-visible:ring-[3px]"
+          className="border-input bg-background focus-visible:ring-ring/70 h-10 w-48 rounded-md border px-3 text-right outline-none focus-visible:ring-[3px]"
         />
         {part.unit && <span className="text-muted-foreground text-sm">{part.unit}</span>}
         {!done && !locked && (
@@ -245,7 +245,7 @@ function JournalInput({ part, response, result, onSubmit, locked }: PartProps<Jo
     })
   }
   const inputClass =
-    'border-input bg-background focus-visible:ring-ring/50 h-9 w-full rounded-md border px-2 text-sm outline-none focus-visible:ring-[3px]'
+    'border-input bg-background focus-visible:ring-ring/70 h-9 w-full rounded-md border px-2 text-sm outline-none focus-visible:ring-[3px]'
 
   if (done) {
     const given = (response as JournalResponse).lines
@@ -391,7 +391,7 @@ function OpenInput({ part, response, result, onSubmit, deferred, locked }: PartP
         disabled={revealed || done}
         onChange={(e) => setText(e.target.value)}
         placeholder="Rédigez votre réponse, puis comparez-la au corrigé."
-        className="border-input bg-background focus-visible:ring-ring/50 rounded-md border p-2 text-sm outline-none focus-visible:ring-[3px]"
+        className="border-input bg-background focus-visible:ring-ring/70 rounded-md border p-2 text-sm outline-none focus-visible:ring-[3px]"
       />
       {deferred && !done ? (
         // Examen : la réponse est enregistrée sans corrigé ; les points clés repérés dans la copie font la

@@ -14,7 +14,7 @@ import { cn } from '@/lib/utils'
 type Step = 'choose' | 'prep' | 'talk' | 'interview' | 'review'
 
 const selectClass =
-  'border-input bg-background focus-visible:ring-ring/50 h-10 w-full rounded-md border px-3 text-sm outline-none focus-visible:ring-[3px]'
+  'border-input bg-background focus-visible:ring-ring/70 h-10 w-full rounded-md border px-3 text-sm outline-none focus-visible:ring-[3px]'
 const ue6 = taxonomy.ues.find((u) => u.id === 'UE6')!
 const PREP_CHOICES = [ORAL_PREP_MINUTES, 30, 15] as const
 

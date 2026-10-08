@@ -23,7 +23,8 @@
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.929 0.013 255.508);
   --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
+  /* Anneau de focus bien visible (bleu de la marque), clavier comme lecteur d'écran. */
+  --ring: oklch(0.488 0.217 264.376);
   /* Fiches de cours : erreurs fréquentes (ambre) et points à retenir (vert) ; le texte reste en couleur de texte. */
   --warn: oklch(0.62 0.15 62);
   --ok: oklch(0.55 0.13 155);
@@ -47,7 +48,7 @@
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.551 0.027 264.364);
+  --ring: oklch(0.707 0.165 254.624);
   --warn: oklch(0.8 0.14 75);
   --ok: oklch(0.74 0.14 155);
 }
