@@ -5,7 +5,8 @@ import { useInstallPrompt } from '@/hooks/useInstallPrompt'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { clearProgress, importProgress, type ProgressExport } from '@/db/db'
+import { clearProgress, importProgress } from '@/db/db'
+import { MAX_IMPORT_BYTES, parseProgressExport } from '@/db/exportSchema'
 import { downloadBackup, isIosBrowserTab, requestPersistence, useStorageStatus } from '@/lib/backup'
 import { clearErrors, errorIssueUrl, readErrors } from '@/lib/errorLog'
 import { taxonomy } from '@/content/load'
@@ -25,7 +26,8 @@ export function SettingsPage() {
 
   const onFile = async (file: File) => {
     try {
-      const data = JSON.parse(await file.text()) as ProgressExport
+      if (file.size > MAX_IMPORT_BYTES) throw new Error('fichier trop volumineux pour une progression')
+      const data = parseProgressExport(await file.text())
       if (!window.confirm('Remplacer toute la progression de cet appareil par celle du fichier ?')) return
       await importProgress(data)
       setMessage(`Progression importée : ${data.attempts.length} tentatives, ${data.sessions.length} sessions.`)
