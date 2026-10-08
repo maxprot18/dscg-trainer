@@ -30,7 +30,7 @@ export interface ResumableSession {
 }
 
 /**
- * Examen blanc interrompu pour les mêmes paramètres d'URL (même sujet) : session non terminée,
+ * Examen blanc ou sujet complet interrompu pour les mêmes paramètres d'URL (même sujet) : session non terminée,
  * commencée depuis moins de 24 h, dont la série d'exercices est identique.
  */
 export async function findResumableSession(
@@ -41,7 +41,7 @@ export async function findResumableSession(
 ): Promise<ResumableSession | null> {
   const candidates = await database.sessions
     .where('mode')
-    .equals('exam')
+    .anyOf('exam', 'full')
     .filter((s) => s.search === search && s.endedAt === undefined && now - s.startedAt < RESUME_WINDOW_MS)
     .toArray()
   const session = candidates.sort((a, b) => b.startedAt - a.startedAt)[0]
@@ -90,6 +90,12 @@ export async function recordAttempt(
   })
 }
 
-export async function endSession(sessionId: number, database: DscgDatabase = defaultDb, now = Date.now()): Promise<void> {
-  await database.sessions.update(sessionId, { endedAt: now })
+/** Clôt une session ; `grade` : note sur 20 d'un examen blanc ou d'un sujet complet. */
+export async function endSession(
+  sessionId: number,
+  database: DscgDatabase = defaultDb,
+  now = Date.now(),
+  grade?: number,
+): Promise<void> {
+  await database.sessions.update(sessionId, grade === undefined ? { endedAt: now } : { endedAt: now, grade })
 }

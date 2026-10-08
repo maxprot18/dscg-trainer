@@ -232,6 +232,34 @@ export function buildExamSession(pool: readonly Exercise[], ue: UeId, durationMi
   return [...dossiers, ...buckets.flatMap((b) => b.picked)]
 }
 
+/** Nombre minimal de dossiers de type examen pour composer un sujet complet. */
+export const FULL_EXAM_MIN_DOSSIERS = 2
+
+/**
+ * Sujet complet d'une UE, comme le jour de l'épreuve : des dossiers de type examen tirés au sort jusqu'à
+ * remplir la durée de l'épreuve, le temps restant (s'il en reste) étant complété par des cas pratiques.
+ * Vide si l'UE compte moins de FULL_EXAM_MIN_DOSSIERS dossiers.
+ */
+export function buildFullExamSession(pool: readonly Exercise[], ue: UeId, durationMinutes: number, seed: number): Exercise[] {
+  const random = seededRandom(seed)
+  const budget = durationMinutes * 60
+  const all = shuffle(pool.filter((e) => e.ue === ue && isDossier(e)), random)
+  if (all.length < FULL_EXAM_MIN_DOSSIERS) return []
+  const picked: Exercise[] = []
+  let used = 0
+  for (const d of all) {
+    if (used + d.estimated_seconds > budget) continue
+    picked.push(d)
+    used += d.estimated_seconds
+  }
+  for (const e of shuffle(pool.filter((x) => x.ue === ue && CASE_TYPES.includes(x.type) && !isDossier(x)), random)) {
+    if (used + e.estimated_seconds > budget) continue
+    picked.push(e)
+    used += e.estimated_seconds
+  }
+  return picked
+}
+
 /** Note sur 20 d'un examen blanc : chaque exercice pèse sa durée estimée ; un exercice non traité vaut 0. */
 export function examGrade(exercises: readonly Exercise[], scores: ReadonlyMap<string, number>): number {
   const total = exercises.reduce((s, e) => s + e.estimated_seconds, 0)

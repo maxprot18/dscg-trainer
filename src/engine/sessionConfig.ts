@@ -11,6 +11,7 @@ import {
   buildDiagnosticSession,
   buildErrorSession,
   buildExamSession,
+  buildFullExamSession,
   buildQuickSession,
   buildSmartSession,
   buildThemeSession,
@@ -25,6 +26,7 @@ export type SessionConfig =
   | { mode: 'smart'; seed: number; ues?: UeId[] }
   | { mode: 'errors'; seed: number; ue?: UeId }
   | { mode: 'exam'; seed: number; ue: UeId }
+  | { mode: 'full'; seed: number; ue: UeId }
   | { mode: 'cards'; seed: number; scope?: ThemeScope }
   | { mode: 'diagnostic'; seed: number; ue: UeId }
 
@@ -49,7 +51,7 @@ export function sessionSearch(config: SessionConfig): string {
     if (scope.theme) p.set('theme', scope.theme)
     if (scope.notion) p.set('notion', scope.notion)
   }
-  if ((config.mode === 'errors' || config.mode === 'exam' || config.mode === 'diagnostic') && config.ue) p.set('ue', config.ue)
+  if ((config.mode === 'errors' || isExamMode(config) || config.mode === 'diagnostic') && config.ue) p.set('ue', config.ue)
   if (config.mode === 'smart' && config.ues?.length) p.set('ues', config.ues.join(','))
   return `?${p.toString()}`
 }
@@ -67,7 +69,7 @@ export function parseSessionSearch(params: URLSearchParams): SessionConfig | nul
   }
   if (mode === 'diagnostic') return ue ? { mode, seed, ue } : null
   if (mode === 'errors') return ueParam && !ue ? null : { mode, seed, ue }
-  if (mode === 'exam') return ue ? { mode, seed, ue } : null
+  if (mode === 'exam' || mode === 'full') return ue ? { mode, seed, ue } : null
   if (mode === 'cards') {
     if (ueParam && !ue) return null
     return ue ? { mode, seed, scope: { ue, theme: params.get('theme') ?? undefined } } : { mode, seed }
@@ -82,6 +84,31 @@ export function parseSessionSearch(params: URLSearchParams): SessionConfig | nul
     }
   }
   return null
+}
+
+/** Examen blanc ou sujet complet : chronométré, correction à la fin, note sur 20. */
+export function isExamMode(config: SessionConfig): config is Extract<SessionConfig, { mode: 'exam' | 'full' }> {
+  return config.mode === 'exam' || config.mode === 'full'
+}
+
+/** UE dont le contenu suffit pour construire la session (toutes si `undefined`). */
+export function sessionUes(config: SessionConfig): UeId[] | undefined {
+  switch (config.mode) {
+    case 'theme':
+      return [config.scope.ue]
+    case 'cards':
+      return config.scope ? [config.scope.ue] : undefined
+    case 'smart':
+      return config.ues?.length ? config.ues : undefined
+    case 'errors':
+      return config.ue ? [config.ue] : undefined
+    case 'exam':
+    case 'full':
+    case 'diagnostic':
+      return [config.ue]
+    case 'quick':
+      return undefined
+  }
 }
 
 /** Les modes révision intelligente et erreurs se construisent à partir de l'historique. */
@@ -114,13 +141,15 @@ export function buildSession(
       return buildErrorSession(pool, snapshot.attempts, config.seed, config.ue)
     case 'exam':
       return buildExamSession(pool, config.ue, durations[config.ue], config.seed)
+    case 'full':
+      return buildFullExamSession(pool, config.ue, durations[config.ue], config.seed)
   }
 }
 
-/** Durée limite en secondes : 5 minutes en session rapide, la durée de l'épreuve en examen blanc. */
+/** Durée limite en secondes : 5 minutes en session rapide, la durée de l'épreuve en examen blanc ou sujet complet. */
 export function timeLimit(config: SessionConfig, durations: ExamDurations): number | null {
   if (config.mode === 'quick') return QUICK_SESSION_SECONDS
-  if (config.mode === 'exam') return durations[config.ue] * 60
+  if (isExamMode(config)) return durations[config.ue] * 60
   return null
 }
 
@@ -128,7 +157,7 @@ export function timeLimit(config: SessionConfig, durations: ExamDurations): numb
 export function sessionScope(config: SessionConfig): string | undefined {
   if (config.mode === 'theme') return scopeKey(config.scope)
   if (config.mode === 'cards') return config.scope ? scopeKey(config.scope) : undefined
-  if (config.mode === 'errors' || config.mode === 'exam' || config.mode === 'diagnostic') return config.ue
+  if (config.mode === 'errors' || isExamMode(config) || config.mode === 'diagnostic') return config.ue
   if (config.mode === 'smart' && config.ues?.length) return config.ues.join(',')
   return undefined
 }

@@ -18,6 +18,7 @@ import type { SessionEntry } from './SessionSummary'
 
 export function ExamSummary({
   ue,
+  full = false,
   exercises,
   entries,
   answers,
@@ -25,6 +26,8 @@ export function ExamSummary({
   timedOut,
 }: {
   ue: UeId
+  /** Sujet complet (dossiers seulement) plutôt qu'examen blanc. */
+  full?: boolean
   exercises: readonly Exercise[]
   entries: readonly SessionEntry[]
   answers: ReadonlyMap<string, PartResponse[]>
@@ -39,7 +42,9 @@ export function ExamSummary({
 
   return (
     <div className="flex flex-col gap-4">
-      <h1 className="text-2xl font-bold">Examen blanc {ue} : correction</h1>
+      <h1 className="text-2xl font-bold">
+        {full ? 'Sujet complet' : 'Examen blanc'} {ue} : correction
+      </h1>
       {timedOut && <p className="text-muted-foreground text-sm">Temps écoulé : l’épreuve s’est arrêtée automatiquement.</p>}
       <Card>
         <CardHeader>

@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { examDurations, exerciseCount, taxonomy, useExerciseIndex, useUeExercises } from '@/content/load'
 import type { UeId } from '@/content/schema'
 import { useProgress } from '@/db/progress'
-import { buildExamSession, QUICK_SESSION_SECONDS, QUICK_SESSION_SIZE, SMART_SESSION_SIZE } from '@/engine/session'
+import { buildExamSession, FULL_EXAM_MIN_DOSSIERS, QUICK_SESSION_SECONDS, QUICK_SESSION_SIZE, SMART_SESSION_SIZE } from '@/engine/session'
 import { useSettings } from '@/lib/settings'
 import { newSeed, sessionSearch } from '@/engine/sessionConfig'
 import { failedExerciseIds } from '@/engine/stats'
@@ -32,7 +32,7 @@ export function TrainPage() {
     progress && index ? failedExerciseIds(progress.attempts).filter((id) => id in index.ids).length : 0
   const [examUe, setExamUe] = useState<UeId>(firstUe)
   const [diagUe, setDiagUe] = useState<UeId>(firstUe)
-  const examExercises = useUeExercises(examUe)
+  const examExercises = useUeExercises([examUe])
   const examSize = useMemo(
     () => (examExercises ? buildExamSession(examExercises, examUe, examDurations[examUe], 0).length : null),
     [examExercises, examUe],
@@ -46,6 +46,8 @@ export function TrainPage() {
   const cards = (key: string) => count(`cards:${key}`)
   const cardsAvailable = cards(cardsUe ? (cardsTheme ? `${cardsUe}/${cardsTheme}` : cardsUe) : 'total')
   const dossiers = index?.dossiers ?? []
+  const [fullUe, setFullUe] = useState<UeId>(firstUe)
+  const fullDossiers = dossiers.filter((d) => d.ue === fullUe).length
   const ueData = taxonomy.ues.find((u) => u.id === ue)!
   const themeData = ueData.themes.find((t) => t.id === theme)
   const available = notion ? count(`notion:${notion}`) : theme ? count(`${ue}/${theme}`) : count(ue)
@@ -167,6 +169,40 @@ export function TrainPage() {
               : examSize === 0
               ? 'Pas encore assez d’exercices'
               : `Commencer l’examen (${examSize} exercices, ${formatDuration(examDurations[examUe])})`}
+          </Button>
+        </CardContent>
+      </Card>
+      <Card>
+        <CardHeader>
+          <CardTitle>Sujet complet</CardTitle>
+          <CardDescription>
+            Les conditions de l’épreuve : plusieurs dossiers type d’examen enchaînés, à traiter dans la durée officielle,
+            sans correction avant la fin, noté sur 20.
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="flex flex-col gap-3">
+          <label className="flex flex-col gap-1 text-sm">
+            UE du sujet
+            <select className={selectClass} value={fullUe} onChange={(e) => setFullUe(e.target.value as UeId)}>
+              {taxonomy.ues.map((u) => (
+                <option key={u.id} value={u.id}>
+                  {u.id} — {u.title} ({formatDuration(examDurations[u.id])})
+                </option>
+              ))}
+            </select>
+          </label>
+          <Button
+            size="lg"
+            variant="outline"
+            disabled={!index || fullDossiers < FULL_EXAM_MIN_DOSSIERS}
+            aria-busy={!index}
+            onClick={() => navigate(`/session${sessionSearch({ mode: 'full', seed: newSeed(), ue: fullUe })}`)}
+          >
+            {!index
+              ? 'Préparation du sujet…'
+              : fullDossiers < FULL_EXAM_MIN_DOSSIERS
+                ? 'Pas encore assez de dossiers dans cette UE'
+                : `Commencer le sujet (${formatDuration(examDurations[fullUe])}, ${fullDossiers} dossiers au choix)`}
           </Button>
         </CardContent>
       </Card>

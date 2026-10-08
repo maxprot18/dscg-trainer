@@ -214,3 +214,33 @@ describe('examen blanc avec dossiers de type examen', () => {
     }
   })
 })
+
+describe('sujet complet', () => {
+  const dossier = (id: string, seconds: number) => ex(id, { type: 'case_study', dossier: true, estimated_seconds: seconds } as Partial<Exercise>)
+  const caseStudy = (id: string, seconds: number) => ex(id, { type: 'case_study', estimated_seconds: seconds } as Partial<Exercise>)
+
+  it('des dossiers jusqu’à la durée de l’épreuve, complétés par des cas, sans questions courtes', () => {
+    const pool = [dossier('d1', 4800), dossier('d2', 5400), dossier('d3', 5400), caseStudy('c1', 600), caseStudy('c2', 900), ...pool6()]
+    const full = buildSession({ mode: 'full', seed: 3, ue: mcq.ue }, pool, durations)
+    const ds = full.filter((e) => e.id.startsWith('d'))
+    expect(ds).toHaveLength(2) // 240 min : deux dossiers de 80-90 min, pas trois
+    expect(full.slice(0, 2).every((e) => e.id.startsWith('d'))).toBe(true)
+    expect(full.every((e) => e.type === 'case_study')).toBe(true)
+    expect(full.reduce((s, e) => s + e.estimated_seconds, 0)).toBeLessThanOrEqual(240 * 60)
+  })
+
+  it('vide s’il y a moins de deux dossiers dans l’UE', () => {
+    expect(buildSession({ mode: 'full', seed: 3, ue: mcq.ue }, [dossier('d1', 4800), ...pool6()], durations)).toEqual([])
+  })
+
+  it('URL, chrono et périmètre comme l’examen blanc', () => {
+    const config = { mode: 'full', seed: 4, ue: 'UE2' } as const
+    expect(parseSessionSearch(new URLSearchParams(sessionSearch(config).slice(1)))).toEqual(config)
+    expect(parseSessionSearch(new URLSearchParams('mode=full&seed=4'))).toBeNull()
+    expect(timeLimit(config, durations)).toBe(180 * 60)
+  })
+
+  function pool6() {
+    return Array.from({ length: 6 }, (_, i) => ex(`q${i}`, { estimated_seconds: 120 }))
+  }
+})

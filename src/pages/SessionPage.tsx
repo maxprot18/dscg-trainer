@@ -8,20 +8,23 @@ import { ExamSummary } from '@/components/exercise/ExamSummary'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Progress } from '@/components/ui/progress'
-import { examDurations, useExercises } from '@/content/load'
+import { examDurations, useUeExercises } from '@/content/load'
 import type { Exercise } from '@/content/schema'
 import type { Attempt } from '@/db/db'
 import { loadProgress } from '@/db/progress'
 import type { ExerciseResult, PartResponse } from '@/engine/grading'
 import { endSession, findResumableSession, recordAttempt, startSession, type ResumableSession } from '@/engine/recorder'
 import type { ProgressSnapshot } from '@/engine/session'
+import { examGrade } from '@/engine/session'
 import {
   buildSession,
+  isExamMode,
   needsProgress,
   newSeed,
   parseSessionSearch,
   sessionScope,
   sessionSearch,
+  sessionUes,
   timeLimit,
   type SessionConfig,
 } from '@/engine/sessionConfig'
@@ -40,18 +43,24 @@ function BackToTraining({ message }: { message: string }) {
 }
 
 export function SessionPage({ pool }: { pool?: readonly Exercise[] }) {
-  // Un pool fourni (tests) dispense de charger tout le contenu.
-  const loaded = useExercises(!pool)
-  const available = pool ?? loaded
-  if (!available) return <p className="text-muted-foreground">Chargement des exercices…</p>
-  return <SessionLoader pool={available} />
-}
-
-function SessionLoader({ pool }: { pool: readonly Exercise[] }) {
   const [params] = useSearchParams()
   const search = params.toString()
   const config = useMemo(() => parseSessionSearch(new URLSearchParams(search)), [search])
   if (!config) return <BackToTraining message="Session introuvable." />
+  // Un pool fourni (tests) dispense de charger le contenu.
+  return pool ? <SessionLoader config={config} pool={pool} /> : <ContentLoader config={config} />
+}
+
+/** Charge le contenu des seules UE utiles à la session (toutes pour une session rapide). */
+function ContentLoader({ config }: { config: SessionConfig }) {
+  const pool = useUeExercises(sessionUes(config))
+  if (!pool) return <p className="text-muted-foreground">Chargement des exercices…</p>
+  return <SessionLoader config={config} pool={pool} />
+}
+
+function SessionLoader({ config, pool }: { config: SessionConfig; pool: readonly Exercise[] }) {
+  const [params] = useSearchParams()
+  const search = params.toString()
   // La clé recrée le déroulé (état remis à zéro) à chaque nouvelle session.
   return needsProgress(config) ? (
     <ProgressSessionLoader key={search} config={config} pool={pool} />
@@ -89,11 +98,11 @@ function SessionBuilder({
     const settings = readSettings()
     return buildSession(config, pool, examDurations, snapshot, Date.now(), { theme: settings.themeSessionSize, cards: settings.cardsSessionSize })
   })
-  // Examen blanc : un examen interrompu sur le même sujet est proposé à la reprise.
-  const [resumable, setResumable] = useState<ResumableSession | null | undefined>(config.mode === 'exam' ? undefined : null)
+  // Examen blanc ou sujet complet : un examen interrompu sur le même sujet est proposé à la reprise.
+  const [resumable, setResumable] = useState<ResumableSession | null | undefined>(isExamMode(config) ? undefined : null)
   const [decision, setDecision] = useState<'resume' | 'restart' | null>(null)
   useEffect(() => {
-    if (config.mode !== 'exam') return
+    if (!isExamMode(config)) return
     let alive = true
     void findResumableSession(
       search,
@@ -102,7 +111,7 @@ function SessionBuilder({
     return () => {
       alive = false
     }
-  }, [config.mode, search, exercises])
+  }, [config, search, exercises])
 
   if (exercises.length === 0) {
     const message =
@@ -110,7 +119,9 @@ function SessionBuilder({
         ? 'Aucune erreur à rejouer : toutes vos dernières tentatives sont réussies.'
         : config.mode === 'cards'
           ? 'Aucune flashcard pour cette sélection.'
-          : 'Aucun exercice disponible pour cette sélection pour l’instant.'
+          : config.mode === 'full'
+            ? 'Pas encore assez de sujets type d’examen dans cette UE pour composer un sujet complet.'
+            : 'Aucun exercice disponible pour cette sélection pour l’instant.'
     return <BackToTraining message={message} />
   }
   if (resumable === undefined) return <p className="text-muted-foreground">Préparation de la session…</p>
@@ -120,7 +131,7 @@ function SessionBuilder({
         <CardHeader>
           <CardTitle>Examen interrompu</CardTitle>
           <CardDescription>
-            Vous avez commencé cet examen blanc et répondu à {resumable.attempts.length} exercice
+            Vous avez commencé {config.mode === 'full' ? 'ce sujet complet' : 'cet examen blanc'} et répondu à {resumable.attempts.length} exercice
             {resumable.attempts.length > 1 ? 's' : ''} sur {exercises.length}. Le chronomètre reprend là où il en était.
           </CardDescription>
         </CardHeader>
@@ -168,7 +179,7 @@ function SessionRunner({
 }) {
   const navigate = useNavigate()
   const limit = timeLimit(config, examDurations)
-  const exam = config.mode === 'exam'
+  const exam = isExamMode(config)
   const [startedAt] = useState(() => resume?.startedAt ?? Date.now())
   const byId = useMemo(() => new Map(exercises.map((e) => [e.id, e])), [exercises])
   const [index, setIndex] = useState(() => resume?.attempts.length ?? 0)
@@ -205,7 +216,12 @@ function SessionRunner({
   }, [finished, limit, startedAt])
 
   useEffect(() => {
-    if (finished) void sessionId.current?.then((id) => endSession(id))
+    if (!finished) return
+    // Examen : la note sur 20 est gardée avec la session (note prévisionnelle par UE).
+    const grade = exam ? examGrade(exercises, new Map(entries.map((e) => [e.exercise.id, e.result.score]))) : undefined
+    void sessionId.current?.then((id) => endSession(id, undefined, Date.now(), grade))
+    // Une seule fois, à la fin : les réponses ne changent plus ensuite.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [finished])
 
   const onComplete = (exercise: Exercise, result: ExerciseResult, responses: PartResponse[]) => {
@@ -232,10 +248,11 @@ function SessionRunner({
 
   useKeyboard((key) => (key === 'Enter' ? (next(), true) : false), answered && !finished)
 
-  if (finished && config.mode === 'exam') {
+  if (finished && isExamMode(config)) {
     return (
       <ExamSummary
         ue={config.ue}
+        full={config.mode === 'full'}
         exercises={exercises}
         entries={entries}
         answers={answers}

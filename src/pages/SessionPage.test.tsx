@@ -48,6 +48,8 @@ describe('SessionPage', () => {
     expect(screen.getByText(/Note : 20(,00)? \/ 20/)).toBeInTheDocument()
     await waitFor(async () => expect(await db.attempts.count()).toBe(2))
     expect((await db.sessions.toArray())[0]).toMatchObject({ mode: 'exam', scope: 'UE4' })
+    // La note est gardée avec la session (note prévisionnelle).
+    await waitFor(async () => expect((await db.sessions.toArray())[0].grade).toBe(20))
     expect(await db.reviews.count()).toBeGreaterThan(0)
   })
 
@@ -149,6 +151,11 @@ describe('SessionPage', () => {
   it('URL invalide ou sélection vide : renvoie vers le choix des sessions', () => {
     renderAt('/session?mode=autre')
     expect(screen.getByText('Session introuvable.')).toBeInTheDocument()
+  })
+
+  it('sujet complet sans assez de dossiers : message', async () => {
+    renderAt('/session?mode=full&seed=1&ue=UE4')
+    expect(await screen.findByText(/Pas encore assez de sujets type d’examen/)).toBeInTheDocument()
   })
 
   it('sélection sans exercice', () => {

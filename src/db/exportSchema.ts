@@ -50,6 +50,7 @@ export const progressExportSchema = z.object({
       scope: z.string().max(500).optional(),
       exerciseIds: z.array(id),
       search: z.string().max(2000).optional(),
+      grade: z.number().min(0).max(20).optional(),
     }),
   ),
   marks: z

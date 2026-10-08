@@ -32,7 +32,7 @@ export interface Review extends ReviewState {
   prior?: ReviewState
 }
 
-export type SessionMode = 'quick' | 'theme' | 'smart' | 'exam' | 'errors' | 'cards' | 'diagnostic'
+export type SessionMode = 'quick' | 'theme' | 'smart' | 'exam' | 'full' | 'errors' | 'cards' | 'diagnostic'
 
 export interface Session {
   id?: number
@@ -43,6 +43,8 @@ export interface Session {
   exerciseIds: string[]
   /** Paramètres d'URL de la session (`mode=exam&seed=…&ue=…`), pour reprendre un examen interrompu. */
   search?: string
+  /** Note sur 20 d'un examen blanc ou d'un sujet complet terminé (note prévisionnelle). */
+  grade?: number
 }
 
 export type MarkKind = 'bookmark' | 'read'

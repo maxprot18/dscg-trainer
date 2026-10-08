@@ -101,17 +101,21 @@ export function useExercises(enabled = true): Exercise[] | null {
   return exercises
 }
 
-/** Exercices d'une seule UE, ou `null` pendant leur chargement. */
-export function useUeExercises(ue: UeId): Exercise[] | null {
-  const [state, setState] = useState<{ ue: UeId; exercises: Exercise[] } | null>(null)
+/** Exercices des seules UE indiquées (toutes si `undefined`), ou `null` pendant leur chargement. */
+export function useUeExercises(ues: readonly UeId[] | undefined): Exercise[] | null {
+  const key = ues?.join(',') ?? '*'
+  const [state, setState] = useState<{ key: string; exercises: Exercise[] } | null>(() =>
+    loaded && !ues ? { key, exercises: loaded } : null,
+  )
   useEffect(() => {
     let alive = true
-    void loadExercises([ue]).then((exercises) => alive && setState({ ue, exercises }))
+    const list = key === '*' ? undefined : (key.split(',') as UeId[])
+    void loadExercises(list).then((exercises) => alive && setState({ key, exercises }))
     return () => {
       alive = false
     }
-  }, [ue])
-  return state?.ue === ue ? state.exercises : null
+  }, [key])
+  return state?.key === key ? state.exercises : null
 }
 
 /** Index des exercices publiés, ou `null` pendant son chargement. */
