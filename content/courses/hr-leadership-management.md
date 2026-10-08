@@ -29,7 +29,7 @@ Turnover = 36 ÷ ((230 + 250) ÷ 2) = 36 ÷ 240 = **15%** (not 36 ÷ 250 = 14.4%
 - Dividing leavers by the closing headcount instead of the average headcount.
 
 ## Key points
-- "Redundancy" concerns the position, "dismissal" concerns the person's conduct or performance.
+- "Redundancy" concerns the position, "dismissal" in everyday usage the person's conduct or performance; in UK law, redundancy is itself one of the potentially fair reasons for dismissal (Employment Rights Act 1996, s.98(2)(c)).
 - In Herzberg's model, a pay rise removes dissatisfaction but does not, on its own, motivate durably.
 - Staff turnover is computed on the average headcount, not on the closing headcount.
 

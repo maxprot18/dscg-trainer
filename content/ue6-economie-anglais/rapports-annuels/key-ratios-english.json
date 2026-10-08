@@ -125,7 +125,7 @@
           "points": 2,
           "prompt": "Using the covenant definitions given in the financial review, Wexcombe is in breach of its covenant at 31 December 2025.",
           "answer": false,
-          "explanation": "False: covenant net debt = 800 − 300 = €500m; covenant EBITDA = 280 − 50 = €230m; covenant ratio = 500 ÷ 230 ≈ 2.17x, below the 3.0x limit. Headroom: all else being equal, covenant EBITDA could fall to about €167m (500 ÷ 3.0), i.e. by about 27%, before a breach."
+          "explanation": "False: covenant net debt = 800 − 300 = €500m; covenant EBITDA = 280 − 50 = €230m; covenant ratio = 500 ÷ 230 ≈ 2.17x, below the 3.0x limit. Headroom: all else being equal, covenant EBITDA could fall to about €167m (500 ÷ 3.0), i.e. by about 27.5%, before a breach."
         },
         {
           "id": "q4",
