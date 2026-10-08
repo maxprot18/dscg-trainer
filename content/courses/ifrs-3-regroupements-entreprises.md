@@ -10,11 +10,11 @@
 
 **Évaluation (§18-19)** : actifs et passifs identifiables à la **juste valeur** à la date d'acquisition, y compris les incorporels non comptabilisés chez l'acquise (marques, relations clients, technologies) et les passifs éventuels représentant une obligation actuelle évaluable (§23). Les coûts de restructuration que l'acquéreur envisage ne sont pas des passifs repris (§11). PNC : au choix, transaction par transaction, à la **juste valeur** (goodwill « complet ») ou à la **quote-part de l'actif net identifiable** (goodwill « partiel »).
 
-**Contrepartie transférée (§37-40)** : juste valeur des actifs remis, passifs contractés et instruments émis, y compris la **contrepartie éventuelle** (complément de prix) à sa juste valeur à la date d'acquisition. Les ajustements ultérieurs hors période d'évaluation d'une contrepartie éventuelle classée en passif passent en **résultat** ; classée en capitaux propres, elle n'est pas réévaluée (§58).
+**Contrepartie transférée (§37-40)** : juste valeur des actifs remis, passifs contractés et instruments émis, y compris la **contrepartie éventuelle** (complément de prix) à sa juste valeur à la date d'acquisition. Les variations ultérieures de juste valeur qui ne sont pas des ajustements de période d'évaluation (événements postérieurs à l'acquisition : objectif atteint, cours atteint) passent en **résultat** pour une contrepartie éventuelle classée en passif ; classée en capitaux propres, elle n'est pas réévaluée (§58).
 
 **Frais d'acquisition (§53)** : honoraires de conseil, d'audit, d'évaluation et de juristes en **charges** de la période ; les coûts d'émission de titres de dette ou de capitaux propres suivent IFRS 9 / IAS 32 (déduits de la dette ou des capitaux propres).
 
-**Goodwill (§32)** = contrepartie transférée + PNC + juste valeur de la participation antérieurement détenue − solde net des actifs identifiables et passifs repris. Non amorti, test de dépréciation annuel (IAS 36). Montant négatif : réexamen des évaluations, puis profit en résultat (§34-36). **Prise de contrôle par étapes (§42)** : la participation antérieure est réévaluée à la juste valeur, l'écart en résultat. **Période d'évaluation (§45)** : 12 mois au plus pour ajuster rétrospectivement les montants provisoires.
+**Goodwill (§32)** = contrepartie transférée + PNC + juste valeur de la participation antérieurement détenue − solde net des actifs identifiables et passifs repris. Non amorti, test de dépréciation annuel (IAS 36). Montant négatif : réexamen des évaluations, puis profit en résultat (§34-36). **Prise de contrôle par étapes (§42)** : la participation antérieure est réévaluée à la juste valeur, l'écart en résultat (en OCI si elle était désignée à la juste valeur par OCI selon IFRS 9). **Période d'évaluation (§45)** : 12 mois au plus pour ajuster rétrospectivement les montants provisoires.
 
 **Impôts différés (IAS 12 §19, §15(a), §21)** : les écarts entre juste valeur et base fiscale des actifs et passifs repris génèrent des impôts différés, compris dans l'actif net identifiable (ils modifient donc le goodwill) ; aucun impôt différé n'est constaté sur le goodwill lui-même.
 
@@ -29,7 +29,7 @@ Les 30 k€ de frais sont une charge de l'exercice ; les inclure dans le prix au
 - Inclure les frais d'acquisition dans la contrepartie transférée (et donc dans le goodwill) ou les étaler : ils sont en charges de la période (§53).
 - Traiter l'achat d'une société « coquille » détenant un seul immeuble comme un regroupement : le test de concentration conduit à une acquisition d'actifs, sans goodwill.
 - Évaluer les actifs de l'acquise à leur valeur comptable : la juste valeur à la date d'acquisition s'impose, incorporels non comptabilisés inclus.
-- Oublier de réévaluer en résultat la participation antérieure lors d'une prise de contrôle par étapes (§42).
+- Oublier de réévaluer à la juste valeur la participation antérieure lors d'une prise de contrôle par étapes : l'écart va en résultat, ou en OCI selon le cas (§42).
 
 ## À retenir
 - Frais d'acquisition en charges ; pas dans le coût d'acquisition.

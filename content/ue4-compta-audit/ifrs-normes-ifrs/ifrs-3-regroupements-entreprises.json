@@ -20,8 +20,8 @@
       "answer": [
         1
       ],
-      "explanation": "IFRS 3 §53 impose de comptabiliser les frais connexes à l'acquisition (honoraires d'avocats, de conseil, d'évaluation, de due diligence) en charges de la période où ils sont engagés : ils ne font pas partie de la contrepartie transférée et n'augmentent donc pas le goodwill. Les inclure dans le coût des titres était admis par l'ancienne version d'IFRS 3 (avant 2008) et reste possible en règles françaises (règl. ANC 2020-01), d'où la confusion. Ils ne s'imputent pas sur les capitaux propres : seuls les coûts d'émission d'instruments de capitaux propres sont déduits des capitaux propres (IAS 32 §37). Les étaler sur cinq ans n'a pas de fondement en IFRS.",
-      "source_ref": "IFRS 3 §53 (règlement UE 2023/1803)",
+      "explanation": "IFRS 3 §53 impose de comptabiliser les frais connexes à l'acquisition (honoraires d'avocats, de conseil, d'évaluation, de due diligence) en charges de la période où ils sont engagés : ils ne font pas partie de la contrepartie transférée et n'augmentent donc pas le goodwill. Les inclure dans le coût d'acquisition était la règle de l'ancienne version d'IFRS 3 (avant 2008) et le reste en règles françaises (règl. ANC 2020-01, art. 231-2 et 231-3 : coût d'acquisition majoré des coûts directement imputables, nets d'impôt), d'où la confusion. Ils ne s'imputent pas sur les capitaux propres : seuls les coûts d'émission d'instruments de capitaux propres sont déduits des capitaux propres (IAS 32 §37). Les étaler sur cinq ans n'a pas de fondement en IFRS.",
+      "source_ref": "IFRS 3 §53 (règlement UE 2023/1803) ; règl. ANC 2020-01, art. 231-2 et 231-3",
       "verified": true,
       "estimated_seconds": 50
     },

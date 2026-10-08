@@ -13,7 +13,7 @@
 
 **Appréciation du pouvoir** :
 - droits de vote majoritaires en principe ; contrôle **de fait** possible avec moins de 50 % si la dispersion et la passivité des autres actionnaires donnent la capacité pratique de diriger (B41-B45) : 48 % face à des milliers de petits porteurs détenant chacun moins de 1 % et sans accord entre eux suffisent (B43) ; 45 % face à deux actionnaires à 26 % ne suffisent pas (B44) ; entre les deux, d'autres indices sont nécessaires (participation passée aux assemblées, accords contractuels) ;
-- **droits de vote potentiels** (options, obligations convertibles) pris en compte s'ils sont **substantiels** : exerçables en pratique, dans la monnaie, à temps pour les décisions pertinentes (B22-B24, B47-B50) ;
+- **droits de vote potentiels** (options, obligations convertibles) pris en compte s'ils sont **substantiels** : aucun obstacle à l'exercice (prix d'exercice dissuasif notamment), intérêt du titulaire à exercer (instrument dans la monnaie ou synergies), exercice possible à temps pour les décisions pertinentes (B22-B24, B47-B50) ;
 - les **droits protecteurs** (veto sur des décisions fondamentales, hors activités pertinentes) ne confèrent pas le pouvoir (B26-B28) ;
 - entités structurées : analyse de l'objet et de la conception, des risques que l'entité a été créée pour transférer (B51-B54).
 
@@ -34,7 +34,7 @@ M détient 60 % de F (actif net consolidé de F : 500 k€, PNC : 40 % × 500 = 
 
 ## À retenir
 - Le contrôle exclusif est la seule base de l'intégration globale en IFRS ; l'intégration proportionnelle n'existe plus (IFRS 11).
-- Une option d'achat hors de la monnaie ou non exerçable avant l'assemblée décisive n'est pas substantielle.
+- Une option d'achat fortement hors de la monnaie ou non exerçable avant l'assemblée décisive n'est pas substantielle (B24, B50).
 - Achat complémentaire après prise de contrôle : aucun goodwill supplémentaire ; perte de contrôle : résultat et réévaluation du résiduel.
 
 **Notions liées :** [Périmètre et contrôle](/cours/perimetre-controle) · [Pourcentages de contrôle et d'intérêt](/cours/pourcentages-controle-interet) · [Méthodes de consolidation](/cours/methodes-consolidation) · [IFRS 3 — Regroupements d'entreprises](/cours/ifrs-3-regroupements-entreprises)

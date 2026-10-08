@@ -163,18 +163,18 @@
           "kind": "open",
           "prompt": "Expliquez pourquoi l'ordre d'intégration des instruments potentiellement dilutifs importe et ce qu'il advient d'un instrument relutif. Indiquez où le résultat par action est présenté.",
           "points": 4,
-          "model_answer": "Le résultat dilué doit refléter la dilution maximale. IAS 33 §44 impose donc d'intégrer les actions potentielles de la plus dilutive à la moins dilutive, en comparant le résultat par action incrémental de chaque instrument au résultat par action obtenu au palier précédent. Un instrument dont le résultat incrémental est supérieur à ce palier augmenterait le résultat par action ou réduirait la perte par action : il est relutif (antidilutif) et n'est pas pris en compte (§41). Ici, les options (0 €) puis les obligations convertibles (0,60 €) sont toutes deux dilutives. Le résultat de base et le résultat dilué par action, calculés sur le résultat attribuable aux porteurs d'actions ordinaires de la mère, sont présentés au compte de résultat, avec la même importance (§66).",
+          "model_answer": "Le résultat dilué doit refléter la dilution maximale. IAS 33 §44 impose donc d'intégrer les actions potentielles de la plus dilutive à la moins dilutive, en comparant le résultat par action incrémental de chaque instrument au résultat par action obtenu au palier précédent. Un instrument dont le résultat incrémental est supérieur à ce palier augmenterait le résultat par action ou réduirait la perte par action : il est relutif (antidilutif) et n'est pas pris en compte (§41). Ici, les options (0 €) puis les obligations convertibles (0,60 €) sont toutes deux dilutives. Le résultat de base et le résultat dilué par action, calculés sur le résultat attribuable aux porteurs d'actions ordinaires de la mère, sont présentés dans l'état du résultat net (le « compte de résultat »), avec la même importance (§66 et §67A).",
           "key_points": [
             "Classement du plus dilutif au moins dilutif (IAS 33 §44)",
             "Comparaison du résultat incrémental au palier précédent",
             "Instrument relutif exclu (IAS 33 §41)",
-            "Présentation au compte de résultat du RPA de base et dilué (IAS 33 §66)"
+            "Présentation du RPA de base et dilué dans l'état du résultat net (IAS 33 §66, §67A)"
           ]
         }
       ],
       "total_points": 12,
       "explanation": "Le résultat dilué part du résultat de base, ajusté des effets nets d'impôt des actions potentielles au numérateur et des actions supplémentaires au dénominateur, en intégrant les instruments par ordre décroissant de dilution et en écartant les instruments relutifs.",
-      "source_ref": "IAS 33 §10, §31-33, §36, §41, §44-46 et §66 (règlement UE 2023/1803)",
+      "source_ref": "IAS 33 §10, §31-33, §36, §41, §44-46, §66 et §67A (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 720
     }
