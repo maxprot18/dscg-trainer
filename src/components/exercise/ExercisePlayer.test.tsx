@@ -31,6 +31,16 @@ describe('ExercisePlayer', () => {
     expect(onComplete).toHaveBeenCalledWith(expect.objectContaining({ correct: true }), [{ kind: 'choice', selected: [1] }])
   })
 
+  it('QCM : explication de chaque option après la réponse', async () => {
+    const e = { ...ex('mcq'), option_explanations: ['Un seul plan ignore les composants.', 'Approche par composants.', 'Pas de choix.', 'Moyenne interdite.'] }
+    const { user } = setup(e as Exercise)
+    expect(screen.queryByText('Approche par composants.')).not.toBeInTheDocument()
+    await user.click(screen.getAllByRole('radio')[0])
+    await user.click(screen.getByRole('button', { name: 'Valider' }))
+    expect(screen.getByText('Un seul plan ignore les composants.')).toBeInTheDocument()
+    expect(screen.getByText('Approche par composants.')).toBeInTheDocument()
+  })
+
   it('lien « signaler une erreur » vers une issue GitHub pré-remplie, après la correction', async () => {
     const e = ex('mcq')
     const { user } = setup(e)
@@ -112,10 +122,37 @@ describe('ExercisePlayer', () => {
     await user.click(screen.getByRole('button', { name: 'Valider l’écriture' }))
     await user.type(screen.getByLabelText('Votre réponse rédigée'), 'Rythme de consommation des avantages')
     await user.click(screen.getByRole('button', { name: 'Voir le corrigé' }))
-    await user.click(screen.getAllByRole('checkbox')[0])
+    // Correction guidée : le point clé dont les mots figurent dans la copie est pré-coché.
+    expect(screen.getAllByRole('checkbox')[0]).toBeChecked()
+    expect(screen.getByText('repéré dans votre copie')).toBeInTheDocument()
     await user.click(screen.getByRole('button', { name: 'Valider mon auto-évaluation' }))
     expect(onComplete).toHaveBeenCalledWith(expect.objectContaining({ earned: 9, total: 10, correct: true }), expect.anything())
     expect(screen.getByText(/Réussi : 9 \/ 10 points/)).toBeInTheDocument()
+  })
+
+  it('examen : réponse rédigée enregistrée sans afficher le corrigé, notée sur les points clés repérés', async () => {
+    const onComplete = vi.fn()
+    render(
+      <MemoryRouter>
+        <ExercisePlayer exercise={ex('case_study')} onComplete={onComplete} deferFeedback />
+      </MemoryRouter>,
+    )
+    const user = userEvent.setup()
+    await user.click(screen.getAllByRole('radio')[0])
+    await user.click(screen.getByRole('button', { name: 'Valider' }))
+    // Seul le bouton de la question suivante reste : celui de la réponse enregistrée est masqué.
+    expect(screen.getAllByRole('button', { name: 'Valider' })).toHaveLength(1)
+    await user.type(screen.getByLabelText('Votre réponse'), '20000{Enter}')
+    await user.type(screen.getByLabelText('Compte ligne 1'), '68112')
+    await user.type(screen.getByLabelText('Débit ligne 1'), '20000')
+    await user.type(screen.getByLabelText('Compte ligne 2'), '28154')
+    await user.type(screen.getByLabelText('Crédit ligne 2'), '20000')
+    await user.click(screen.getByRole('button', { name: 'Valider l’écriture' }))
+    await user.type(screen.getByLabelText('Votre réponse rédigée'), 'Rythme de consommation des avantages')
+    expect(screen.queryByRole('button', { name: 'Voir le corrigé' })).not.toBeInTheDocument()
+    await user.click(screen.getByRole('button', { name: 'Enregistrer ma réponse' }))
+    expect(screen.queryByText('Corrigé type')).not.toBeInTheDocument()
+    expect(onComplete).toHaveBeenCalledWith(expect.objectContaining({ earned: 9, total: 10 }), expect.anything())
   })
 
   it('cas de consolidation : organigramme et étapes', async () => {

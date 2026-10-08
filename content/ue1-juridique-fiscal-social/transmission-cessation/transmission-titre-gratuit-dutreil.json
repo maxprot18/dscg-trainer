@@ -23,6 +23,12 @@
         0
       ],
       "multiple": false,
+      "option_explanations": [
+        "Exact : engagement collectif d'au moins 2 ans, sur 17 % des droits financiers et 34 % des droits de vote (CGI art. 787 B, a).",
+        "Inexact : 10 % et 20 % sont les seuils des sociétés cotées ; 4 ans était la durée de l'engagement individuel avant la LF 2026.",
+        "Inexact : aucune majorité du capital n'est exigée ; 6 ans est désormais la durée de l'engagement individuel des héritiers ou donataires.",
+        "Inexact : l'option inverse les deux seuils : 17 % des droits financiers et 34 % des droits de vote."
+      ],
       "explanation": "L'engagement collectif dure au moins 2 ans et porte, pour une société non cotée, sur au moins 17 % des droits financiers et 34 % des droits de vote (CGI art. 787 B, a) : option 1. Les seuils de 10 % et 20 % (option 2) sont ceux des sociétés cotées, et la durée de 4 ans était celle de l'engagement individuel avant la loi de finances pour 2026. Aucune majorité du capital n'est exigée (option 3) ; la durée de 6 ans est, depuis cette loi, celle de l'engagement individuel des héritiers ou donataires pour les transmissions intervenues à compter du 21 février 2026. L'option 4 inverse les deux seuils.",
       "source_ref": "CGI art. 787 B, a (engagement collectif de conservation) et c (engagement individuel), rédaction issue de la loi n° 2026-103 du 19 février 2026 (loi de finances pour 2026)",
       "verified": true,
@@ -52,6 +58,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : l'abattement de 100 000 € en ligne directe se cumule avec l'exonération de 75 % (art. 779).",
+        "Inexact : la réduction de 50 % suppose un donateur de moins de 70 ans ; Mme Rioux en a 74 (art. 790).",
+        "Inexact : l'exonération de 75 % s'applique aux donations comme aux successions (art. 787 B).",
+        "Exact : exonération de 75 %, puis abattement de 100 000 € ; pas de réduction de 50 %, la donatrice ayant plus de 70 ans."
+      ],
       "explanation": "L'exonération partielle de 75 % s'applique aux donations comme aux successions (CGI art. 787 B) ; sur la valeur taxable restante s'impute l'abattement de 100 000 € en ligne directe (art. 779), puis le barème. La réduction de 50 % des droits (art. 790) suppose une donation en pleine propriété consentie par un donateur âgé de moins de 70 ans : Mme Rioux a 74 ans (option 4). L'option 1 refuse à tort le cumul avec l'abattement ; l'option 2 accorde la réduction malgré l'âge ; l'option 3 exclut à tort les donations de l'exonération.",
       "source_ref": "CGI art. 779, 787 B et 790",
       "verified": true,
@@ -201,6 +213,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : 25 % × 3 000 000 − 100 000 ignore l'exclusion des 400 000 € d'actifs non professionnels de l'exonération.",
+        "Inexact : 25 % × 2 600 000 − 100 000 retire les actifs non professionnels de l'assiette exonérée mais oublie de les taxer.",
+        "Exact : 400 000 + 25 % × 2 600 000 = 1 050 000 €, moins l'abattement de 100 000 € : 950 000 € (art. 787 B, 779).",
+        "Inexact : 25 % × (3 000 000 − 100 000) impute l'abattement avant l'exonération, ce qui inverse l'ordre de calcul."
+      ],
       "explanation": "La fraction représentative des actifs non professionnels exclus (400 000 €) n'ouvre pas droit à l'exonération : elle est taxable en totalité. L'exonération de 75 % ne porte que sur la fraction professionnelle : 3 000 000 − 400 000 = 2 600 000 €, taxable à 25 %, soit 650 000 €. Valeur taxable avant abattement : 400 000 + 650 000 = 1 050 000 € ; après l'abattement de 100 000 € : 950 000 € (option 3). La réduction de 50 % des droits (donation en pleine propriété par un donateur de moins de 70 ans) s'appliquera ensuite sur les droits calculés au barème, et non sur la base.\nL'option 1 (25 % × 3 000 000 − 100 000) ignore l'exclusion des actifs non professionnels. L'option 2 (25 % × 2 600 000 − 100 000) retranche ces actifs de l'assiette exonérée mais oublie de les taxer. L'option 4 (25 % × (3 000 000 − 100 000)) impute l'abattement avant l'exonération, ce qui inverse l'ordre de calcul.",
       "source_ref": "CGI art. 787 B (rédaction issue de la loi de finances pour 2026 : exclusion des biens non affectés à l'activité de l'assiette exonérée) ; art. 779 (abattement) ; art. 790 (réduction de droits)",
       "verified": true,

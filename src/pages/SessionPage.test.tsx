@@ -48,6 +48,8 @@ describe('SessionPage', () => {
     expect(screen.getByText(/Note : 20(,00)? \/ 20/)).toBeInTheDocument()
     await waitFor(async () => expect(await db.attempts.count()).toBe(2))
     expect((await db.sessions.toArray())[0]).toMatchObject({ mode: 'exam', scope: 'UE4' })
+    // La note est gardée avec la session (note prévisionnelle).
+    await waitFor(async () => expect((await db.sessions.toArray())[0].grade).toBe(20))
     expect(await db.reviews.count()).toBeGreaterThan(0)
   })
 
@@ -149,6 +151,34 @@ describe('SessionPage', () => {
   it('URL invalide ou sélection vide : renvoie vers le choix des sessions', () => {
     renderAt('/session?mode=autre')
     expect(screen.getByText('Session introuvable.')).toBeInTheDocument()
+  })
+
+  it('examen : un cas commencé puis arrêté compte au prorata des questions traitées', async () => {
+    const user = userEvent.setup()
+    const caseStudy = exerciseSchema.parse(exampleExercises.case_study)
+    vi.spyOn(window, 'confirm').mockReturnValue(true)
+    render(
+      <MemoryRouter initialEntries={['/session?mode=exam&seed=1&ue=UE4']}>
+        <Routes>
+          <Route path="/session" element={<SessionPage pool={[caseStudy]} />} />
+        </Routes>
+      </MemoryRouter>,
+    )
+    await screen.findByText(/Question 1\/4/)
+    await user.click(screen.getAllByRole('radio')[0])
+    await user.click(screen.getByRole('button', { name: 'Valider' }))
+    // Réponse verrouillée : plus de bouton de validation, aucune correction.
+    expect(screen.queryByText('Bonne réponse')).not.toBeInTheDocument()
+    await user.click(screen.getByRole('button', { name: 'Terminer la session' }))
+    expect(await screen.findByText(/1 exercice traité sur 1/)).toBeInTheDocument()
+    expect(screen.queryByText(/Note : 0(,00)? \/ 20/)).not.toBeInTheDocument()
+    await waitFor(async () => expect(await db.attempts.count()).toBe(1))
+    vi.restoreAllMocks()
+  })
+
+  it('sujet complet sans assez de dossiers : message', async () => {
+    renderAt('/session?mode=full&seed=1&ue=UE4')
+    expect(await screen.findByText(/Pas encore assez de sujets type d’examen/)).toBeInTheDocument()
   })
 
   it('sélection sans exercice', () => {

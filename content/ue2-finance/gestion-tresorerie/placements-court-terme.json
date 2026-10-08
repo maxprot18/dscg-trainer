@@ -24,6 +24,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : le NEU CD, émis par un établissement de crédit sur le marché monétaire, est un titre de créance négociable.",
+        "Inexact : une action de SICAV est une part d'OPCVM, non un titre de créance.",
+        "Inexact : une part de FCP est une part d'OPCVM, non un titre de créance.",
+        "Inexact : le compte à terme est un dépôt bancaire, non négociable."
+      ],
       "explanation": "Le NEU CD, émis par un établissement de crédit sur le marché monétaire, est un titre de créance négociable (option 1). Les actions de SICAV (option 2) et les parts de FCP (option 3) sont des parts d’OPCVM, non des titres de créance. Le compte à terme (option 4) est un dépôt bancaire, non négociable."
     },
     {
@@ -49,6 +55,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : rapporte le gain au nominal (500 000) au lieu du capital investi (495 000).",
+        "Inexact : n'annualise pas le rendement obtenu sur 90 jours.",
+        "Exact : 5 000 / 495 000 × 360 / 90 = 4,04 %.",
+        "Inexact : utilise une base 365 au lieu de la base 360 demandée."
       ],
       "explanation": "Gain : 5 000 €. Rendement : 5 000 / 495 000 × 360 / 90 = 4,04 % (option 3). L’option 1 rapporte le gain au nominal (500 000) au lieu du capital investi ; l’option 2 n’annualise pas le rendement sur 90 jours ; l’option 4 utilise une base 365 au lieu de la base 360 demandée."
     },
@@ -132,7 +144,7 @@
           "credit": 1916.67
         }
       ],
-      "explanation": "Durée : du 1er mars au 1er juin = 31 (mars) + 30 (avril) + 31 (mai) = 92 jours. Intérêts : 250 000 × 3 % × 92 / 360 = 1 916,67 € (compte 764, comme convenu). Le titre, acquis au pair, est soldé pour 250 000 € au crédit du compte 5081. La banque est débitée de l’encaissement total, 251 916,67 €. Il n’y a ni plus-value ni moins-value de cession (compte 767 ou 667) puisque le titre est remboursé à sa valeur d’acquisition."
+      "explanation": "Durée : du 1er mars au 1er juin = 31 (mars) + 30 (avril) + 31 (mai) = 92 jours. Intérêts : 250 000 × 3 % × 92 / 360 = 1 916,67 € (compte 764, comme convenu). Le titre, acquis au pair, est soldé pour 250 000 € au crédit du compte 5081. La banque est débitée de l’encaissement total, 251 916,67 €. Il n’y a ni plus-value ni moins-value de cession (compte 7673 ou 6673) puisque le titre est remboursé à sa valeur d’acquisition."
     }
   ]
 }

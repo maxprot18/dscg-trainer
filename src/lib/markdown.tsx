@@ -58,9 +58,10 @@ export function inline(text: string, opts: InlineOptions = {}): ReactNode[] {
     else if (token.startsWith('[')) {
       const link = /^\[([^\]]+)\]\(([^)\s]+)\)$/.exec(token)!
       const [, label, href] = link
-      // Seuls les liens internes (chemin absolu de l'app) sont rendus comme liens ; le reste reste du texte.
+      // Seuls les liens internes (chemin absolu de l'app, jamais « //domaine ») sont rendus comme liens ;
+      // le reste reste du texte.
       out.push(
-        href.startsWith('/') ? (
+        /^\/(?!\/)/.test(href) ? (
           <Link key={key} to={href} className="text-primary underline underline-offset-2">
             {inline(label)}
           </Link>

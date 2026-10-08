@@ -22,6 +22,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : acheter pour revendre en son nom avec une exclusivité caractérise un concessionnaire exclusif, non un mandataire.",
+        "Inexact : exploiter une boutique sous enseigne avec le savoir-faire du réseau contre redevance caractérise une franchise.",
+        "Exact : mandataire indépendant chargé de façon permanente de négocier au nom et pour le compte d'un mandant : agent commercial (L134-1).",
+        "Inexact : le contrat de travail de la salariée exclut l'indépendance qui caractérise l'agent commercial."
+      ],
       "explanation": "L'agent commercial est un mandataire indépendant, chargé de façon permanente de négocier et éventuellement de conclure des contrats au nom et pour le compte du mandant (L134-1) : option 3. L'option 1 décrit un concessionnaire exclusif, qui achète pour revendre en son nom. L'option 2 décrit une franchisée. L'option 4 décrit une salariée (VRP ou commerciale), liée par un contrat de travail, ce qui exclut l'indépendance de l'agent.",
       "source_ref": "C. com. L134-1",
       "estimated_seconds": 45,
@@ -50,6 +56,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : la faute grave de l'agent prive celui-ci de l'indemnité de cessation de contrat (L134-13).",
+        "Inexact : la cession par l'agent de son contrat à un tiers exclut l'indemnité ; l'agent est rémunéré par son cessionnaire (L134-13).",
+        "Inexact : la cessation à l'initiative de l'agent, sans circonstances imputables au mandant, exclut l'indemnité (L134-13).",
+        "Exact : la cessation à l'initiative de l'agent justifiée par une maladie empêchant raisonnablement la poursuite de l'activité laisse subsister l'indemnité."
+      ],
       "explanation": "L'indemnité de l'article L134-12 n'est pas due dans trois cas (L134-13) : faute grave de l'agent (option 1), cessation à l'initiative de l'agent sans circonstances imputables au mandant (option 3), cession par l'agent de ses droits et obligations à un tiers (option 2, l'agent étant alors rémunéré par son cessionnaire). La cessation à l'initiative de l'agent justifiée par son âge, une infirmité ou une maladie qui ne permet plus raisonnablement la poursuite de son activité laisse subsister l'indemnité : option 4.",
       "source_ref": "C. com. L134-12 et L134-13",
       "estimated_seconds": 75,
@@ -198,6 +210,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : les parties ne peuvent pas convenir d'un préavis plus court que le préavis légal ; la clause de quinze jours est écartée.",
+        "Inexact : l'agent commercial n'est pas révocable ad nutum ; son contrat d'intérêt commun relève du régime protecteur des articles L134-1 et suivants.",
+        "Exact : au 1er novembre N+1, le contrat est dans sa deuxième année (21 mois) : préavis légal de deux mois (L134-11).",
+        "Inexact : trois mois ne s'imposent qu'à partir de la troisième année commencée ; ici, deuxième année, deux mois."
+      ],
       "explanation": "Le préavis légal du contrat d'agent commercial à durée indéterminée est d'un mois pour la première année, de deux mois pour la deuxième année commencée et de trois mois à partir de la troisième année commencée (C. com. L134-11). Le contrat a commencé le 1er février N : au 1er novembre N+1, il en est à sa deuxième année (21 mois), d'où un préavis de deux mois (option 3).\nL'option 1 est fausse : les parties ne peuvent pas convenir de délais plus courts que les délais légaux, la stipulation de quinze jours est donc écartée. L'option 2 est fausse : l'agent commercial n'est pas un mandataire révocable ad nutum ; son contrat, d'intérêt commun, obéit au régime protecteur des articles L134-1 et suivants. L'option 4 est fausse : trois mois ne s'imposent qu'à partir de la troisième année commencée.\nLe respect du préavis ne prive pas l'agent de l'indemnité de cessation (L134-12), qu'il devra réclamer dans l'année.",
       "source_ref": "C. com. art. L134-11 (préavis du contrat d’agence à durée indéterminée) et L134-12",
       "verified": true,

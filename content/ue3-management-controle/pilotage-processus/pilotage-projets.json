@@ -24,6 +24,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : la criticité tient au délai, pas à la charge en ressources ; une tâche gourmande en personnel peut avoir de la marge.",
+        "Inexact : une tâche coûteuse peut disposer de marge ; le chemin critique se définit par le délai, pas par le coût.",
+        "Inexact : une tâche risquée techniquement peut avoir de la marge ; la criticité PERT porte sur le délai.",
+        "Exact : plus long chemin du réseau, ses tâches ont une marge totale nulle ; tout retard décale d'autant la fin du projet."
+      ],
       "explanation": "L'option 4 est exacte : le chemin critique est le plus long chemin du réseau ; ses tâches n'ont aucune marge totale, et tout retard sur l'une d'elles décale d'autant la fin du projet. Sa durée est la durée minimale du projet. Les options 1, 2 et 3 confondent criticité au sens du délai avec la charge en ressources, le coût ou le risque technique : une tâche coûteuse ou risquée peut avoir de la marge."
     },
     {
@@ -50,6 +56,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : SPI = 450 000 ÷ 500 000 = 0,90 < 1, le projet est en retard ; et CPI ≈ 1,07 exclut tout dépassement.",
+        "Inexact : le retard est réel (SPI 0,90), mais CPI = 450 000 ÷ 420 000 ≈ 1,07 > 1 : pas de dépassement de coût.",
+        "Exact : SPI = 0,90 < 1 (écart de délai −50 000 €) et CPI ≈ 1,07 > 1 (écart de coût +30 000 €).",
+        "Inexact : le coût est maîtrisé (CPI ≈ 1,07), mais SPI = 0,90 < 1 : le projet est en retard, pas en avance."
       ],
       "explanation": "L'option 3 est exacte. Délai : SPI = VA ÷ VP = 450 000 ÷ 500 000 = 0,90 < 1, écart de délai VA − VP = −50 000 € : le travail réalisé est inférieur au travail prévu, le projet est en retard. Coût : CPI = VA ÷ CR = 450 000 ÷ 420 000 ≈ 1,07 > 1, écart de coût VA − CR = +30 000 € : le travail réalisé a coûté moins que son budget. L'option 2 est fausse : le CPI est supérieur à 1, il n'y a pas de dépassement de coût. Les options 1 et 4 se trompent sur le délai (SPI < 1). À noter : comparer directement CR à VP (420 000 € contre 500 000 €) ne permet pas de conclure, car cette comparaison mélange l'effet coût et l'effet délai."
     },

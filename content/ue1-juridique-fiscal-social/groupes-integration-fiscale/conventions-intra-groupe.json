@@ -23,6 +23,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : la qualité de filiale suppose la détention de plus de la moitié du capital (L233-1).",
+        "Inexact : la participation (10 % à 50 % du capital, L233-2) peut se cumuler avec le contrôle, ici présumé.",
+        "Inexact : le contrôle peut exister sans majorité absolue, notamment par présomption au-delà de 40 % des droits de vote.",
+        "Exact : plus de 40 % des droits de vote, aucun autre associé n'en détenant davantage : présomption de contrôle (L233-3, II)."
+      ],
       "explanation": "Une société est présumée en contrôler une autre lorsqu'elle dispose directement ou indirectement d'une fraction des droits de vote supérieure à 40 % et qu'aucun autre associé ne détient une fraction supérieure (C. com. art. L233-3, II) : avec 42 % contre 18 % pour le deuxième actionnaire, Ardoise est présumée contrôler Basalte (option 4).\nL'option 1 est fausse : la qualité de filiale suppose la détention de plus de la moitié du capital (L233-1).\nL'option 2 confond la qualification de participation (fraction du capital entre 10 % et 50 %, L233-2), qui peut se cumuler avec le contrôle, et une absence de contrôle qui est contredite par la présomption.\nL'option 3 ignore que le contrôle peut exister sans majorité absolue (présomption, contrôle de fait).",
       "source_ref": "C. com. art. L233-1, L233-2 et L233-3, II (présomption de contrôle au-delà de 40 % des droits de vote)",
       "estimated_seconds": 60
@@ -50,6 +56,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : l'option oublie le seuil de 20 %, l'information de l'AMF et le délai de quatre jours de bourse.",
+        "Exact : seuils de 20 % et 25 % franchis : information de Dorade et de l'AMF sous quatre jours de bourse, avec déclaration d'intention (L233-7).",
+        "Inexact : le dépôt obligatoire d'une offre publique n'est déclenché qu'au franchissement du seuil de 30 %.",
+        "Inexact : la liste des seuils déclaratifs commence à 5 %, non à 1/3."
       ],
       "explanation": "Toute personne qui vient à posséder plus de 5 %, 10 %, 15 %, 20 %, 25 %, 30 %, 1/3, 50 %, 2/3, 90 % ou 95 % du capital ou des droits de vote d'une société cotée en informe la société et l'AMF dans un délai de quatre jours de bourse (C. com. art. L233-7, I et II). En passant de 18 % à 26 %, Cormoran franchit les seuils de 20 % et de 25 %. Au franchissement des seuils de 10 %, 15 %, 20 % et 25 %, elle doit en outre déclarer les objectifs qu'elle a l'intention de poursuivre au cours des six mois à venir (L233-7, VII) : option 2.\nL'option 1 oublie le seuil de 20 %, l'information de l'AMF et retient un délai erroné.\nL'option 3 : le dépôt obligatoire d'une offre publique n'est déclenché qu'au franchissement du seuil de 30 % (réglementation AMF).\nL'option 4 est fausse : la liste des seuils commence à 5 %.\nÀ défaut de déclaration régulière, les actions excédant la fraction non déclarée sont privées du droit de vote (L233-14).",
       "source_ref": "C. com. art. L233-7 (seuils, délai, déclaration d'intention) et L233-14 (privation des droits de vote)",
@@ -193,6 +205,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : confusion avec l'autocontrôle (L233-31) ; l'interdiction des participations réciproques joue dès que l'une détient plus de 10 % de l'autre.",
+        "Inexact : la règle est inversée ; c'est la société détenant la fraction la plus faible du capital de l'autre qui doit céder.",
+        "Exact : Héron détenant 15 % d'Ibis, Ibis, qui détient la fraction la plus faible, doit céder et ne peut voter avec ces actions (L233-29).",
+        "Inexact : la loi impose une cession des actions, non leur annulation ni une réduction du capital de Héron."
+      ],
       "explanation": "Une société par actions ne peut posséder d'actions d'une autre société si celle-ci détient plus de 10 % de son capital (C. com. art. L233-29). Héron détenant 15 % d'Ibis, Ibis ne peut détenir d'actions Héron ; à défaut d'accord, la société qui détient la fraction la plus faible du capital de l'autre (Ibis, 8 %) doit céder, et elle ne peut exercer les droits de vote attachés à ces actions : option 3. L'option 1 confond avec l'autocontrôle (L233-31), qui vise les sociétés contrôlées ; l'interdiction des participations réciproques joue dès 10 %. L'option 2 inverse la règle : c'est la participation la plus faible qui est cédée. L'option 4 est fausse : la loi impose une cession, non une annulation.",
       "source_ref": "C. com. art. L233-29 (participations réciproques entre sociétés par actions) ; art. L233-31 (autocontrôle)",
       "verified": true,

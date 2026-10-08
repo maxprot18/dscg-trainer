@@ -42,4 +42,14 @@ describe('enregistrement', () => {
     await endSession(sessionId, database, now + 3000)
     expect(await findResumableSession(search, [ex.id], database, now + 4000)).toBeNull()
   })
+
+  it('sujet complet : repris comme un examen blanc, note gardée à la fin', async () => {
+    const database = new DscgDatabase('test-full')
+    const ex = exerciseSchema.parse(exampleExercises.mcq)
+    const search = 'mode=full&seed=1&ue=UE4'
+    const sessionId = await startSession('full', [ex], 'UE4', database, 1000, search)
+    expect(await findResumableSession(search, [ex.id], database, 2000)).toMatchObject({ sessionId })
+    await endSession(sessionId, database, 3000, 12.5)
+    expect(await database.sessions.get(sessionId)).toMatchObject({ endedAt: 3000, grade: 12.5 })
+  })
 })

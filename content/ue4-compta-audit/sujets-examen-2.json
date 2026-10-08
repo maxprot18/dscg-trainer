@@ -1,0 +1,485 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-dossier-0003",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE4",
+      "theme": "ifrs",
+      "notion": "ias-36-depreciation-actifs",
+      "difficulty": 3,
+      "tags": [
+        "dossier type examen",
+        "IFRS",
+        "IFRS 16",
+        "IFRS 15",
+        "IAS 36",
+        "goodwill partiel",
+        "IAS 12",
+        "IFRS 18",
+        "mesures de la performance définies par la direction"
+      ],
+      "source_ref": "IFRS 16 §18-19, §22-27, §31-32, §36-38 et B37 ; IFRS 15 §22, §27, §35, §74, §76, §81 et §105-106 ; IAS 36 §10, §18, §33, §44, §50, §55, §80, §90, §104-105, §124 et annexe C (§C4, §C6, §C8) ; IAS 12 §15, §21A, §22A et §74 ; IFRS 18 §53-54, §59-61, §69-71, B53-B54 et §117-123 (règl. UE 2023/1803 modifié par le règl. UE 2026/338) ; comptes PCG 218, 168 et 512 (conventions de l’énoncé)",
+      "verified": true,
+      "estimated_seconds": 5400,
+      "total_points": 20,
+      "title": "Comptes consolidés 2027 du groupe Hélion (IFRS)",
+      "context": "Le groupe **Hélion**, coté sur Euronext Paris, conçoit et installe des systèmes de stockage d’énergie pour les sites industriels. Ses comptes consolidés sont établis selon les normes IFRS adoptées par l’Union européenne (règlement (UE) 2023/1803 modifié). L’exercice 2027, ouvert le 1er janvier et clos le 31 décembre 2027, est le premier auquel le groupe applique **IFRS 18** *États financiers : présentation et informations à fournir*, obligatoire pour les exercices ouverts à compter du 1er janvier 2027 ; le comparatif 2026 sera retraité.\n\nMme Ferrand, directrice de la consolidation, a établi un projet de compte de résultat consolidé, mais plusieurs opérations de l’exercice n’y sont pas encore traitées correctement. Elle vous confie, en qualité de collaborateur de son équipe, les travaux suivants :\n\n- traiter selon IFRS 16 le bail du nouvel entrepôt de Hélion SA (annexe 1) ;\n- analyser selon IFRS 15 le contrat conclu avec le client Vestra (annexe 2) ;\n- réaliser le test de dépréciation annuel de l’unité génératrice de trésorerie (UGT) Solvia, à laquelle un goodwill est affecté, et en tirer les conséquences, notamment en matière d’impôts différés (annexe 3) ;\n- corriger le projet de compte de résultat, classer ses éléments selon IFRS 18 et préparer l’information sur les indicateurs publiés par la direction (annexe 4).\n\n**Hypothèses communes** : montants en milliers d’euros (k€), arrondis au centième si nécessaire ; taux d’impôt sur le résultat de 25 %, adopté et applicable à toutes les échéances ; Hélion n’octroie pas de financements à ses clients et n’investit pas dans des actifs financiers dans le cadre de son activité principale. Toutes les données utiles figurent dans les annexes 1 à 4.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Bail de l’entrepôt de Corbas (Hélion SA)",
+          "content": "Le 1er janvier 2027, Hélion SA a pris possession d’un entrepôt logistique loué à une société foncière (bail signé le 15 décembre 2026).\n\n| Clause | Contenu |\n| --- | --- |\n| Durée | 5 ans non résiliables à compter du 1/1/2027 |\n| Option de prolongation | 2 ans supplémentaires, au seul choix du preneur, au même loyer |\n| Loyer fixe | 150 k€ par an, payable à terme échu le 31 décembre |\n| Loyer variable | 0,5 % du chiffre d’affaires du site (18 k€ en 2027) |\n| Fin du contrat | ni option d’achat, ni garantie de valeur résiduelle |\n\n**Informations complémentaires**\n- Début 2027, Hélion a installé dans l’entrepôt des rayonnages automatisés et une dalle renforcée, propres à son activité et indissociables du bâtiment (coût 600 k€, durée d’utilité 8 ans).\n- Le loyer de marché d’un entrepôt comparable est estimé à 175 k€ par an ; un déménagement coûterait environ 400 k€. L’entrepôt est le seul site du groupe qui dessert la région Sud-Est.\n- Le taux d’intérêt implicite du bail n’est pas déterminable ; le taux d’emprunt marginal de Hélion est de 4 % pour une durée de 5 à 7 ans.\n- Une commission de 12 k€ a été versée par banque à l’agent immobilier le 1/1/2027 pour la conclusion du bail. Hélion n’applique aucune exemption d’IFRS 16.\n- Fiscalité : les loyers sont déductibles lors de leur paiement et la commission a été déduite du résultat fiscal 2027 ; le droit d’utilisation et le passif locatif ont une base fiscale nulle.\n\n**Traitement dans le projet de comptes (annexe 4)** : les loyers fixes et variables de 2027 (168 k€) et la commission (12 k€) ont été comptabilisés en charges externes ; aucun droit d’utilisation ni passif locatif n’a été constaté."
+        },
+        {
+          "title": "Annexe 2 — Contrat conclu avec la société Vestra",
+          "content": "Le 1er juin 2027, Hélion a signé avec Vestra, industriel de la chimie, un contrat unique portant sur :\n\n- la fourniture d’une batterie de stockage de 4 MWh, livrée le 1er juillet 2027 ; Vestra en obtient le contrôle à la livraison ;\n- son installation sur le site de Vestra, achevée le 30 septembre 2027 ; il s’agit d’une installation standard, couramment réalisée par d’autres installateurs, qui ne modifie pas la batterie ;\n- la maintenance de l’installation pendant 3 ans, du 1er octobre 2027 au 30 septembre 2030 (interventions régulières, Vestra bénéficiant de la prestation au fur et à mesure).\n\n**Prix** : 2 520 k€ hors taxes, facturés le 1er juillet 2027 et encaissés le 31 juillet 2027. Le prix ne comporte aucune contrepartie variable ; Hélion a établi que le paiement d’avance de la maintenance ne traduit pas une composante financement importante (hypothèse à retenir).\n\n**Prix de vente séparés** (prix auxquels Hélion vend habituellement chaque élément isolément) :\n\n| Élément | Prix de vente séparé |\n| --- | --- |\n| Batterie de stockage | 2 000 |\n| Installation | 200 |\n| Maintenance de 3 ans | 600 |\n| Total | 2 800 |\n\nHélion ne dispose d’aucun élément observable indiquant que la remise consentie se rapporte à l’un des éléments en particulier.\n\n**Traitement dans le projet de comptes** : la totalité du prix (2 520 k€) a été comptabilisée en chiffre d’affaires le 1er juillet 2027."
+        },
+        {
+          "title": "Annexe 3 — Test de dépréciation de l’UGT Solvia au 31/12/2027",
+          "content": "Le 1er janvier 2025, Hélion SA a acquis 80 % du capital de **Solvia SAS** (modules de conversion d’énergie). Les participations ne donnant pas le contrôle (PNC, 20 %) ont été évaluées à leur quote-part de l’actif net identifiable : le goodwill comptabilisé, **800 k€**, est un goodwill partiel. Il est entièrement affecté à l’UGT Solvia, qui correspond à la filiale ; aucune autre UGT ne bénéficie des synergies du regroupement. Aucune perte de valeur n’a été constatée avant 2027. Le test annuel est réalisé au 31 décembre.\n\n**Valeurs comptables de l’UGT dans les comptes consolidés au 31/12/2027, avant test**\n\n| Actif | Valeur comptable |\n| --- | --- |\n| Goodwill | 800 |\n| Brevets | 1 200 |\n| Immobilisations corporelles | 4 800 |\n| Total | 6 800 |\n\nLe besoin en fonds de roulement est exclu de la valeur comptable testée, les flux prévisionnels étant établis hors variation du besoin en fonds de roulement.\n\n**Prévisions de flux de trésorerie** (budget approuvé par le conseil d’administration, flux avant impôt, hors financement, supposés perçus en fin d’année)\n\n| | 2028 | 2029 | 2030 | 2031 | 2032 |\n| --- | --- | --- | --- | --- | --- |\n| Flux de l’UGT dans son état actuel | 480 | 500 | 520 | 540 | 560 |\n| Économies attendues de la réorganisation de l’atelier (plan ni annoncé ni engagé) | — | 50 | 50 | 50 | 50 |\n\nAu-delà de 2032, les flux de l’UGT dans son état actuel croissent de 2 % par an à l’infini. Taux d’actualisation reflétant les risques propres à l’UGT : **10 % avant impôt** (7,5 % après impôt).\n\n**Juste valeur diminuée des coûts de sortie de l’UGT** (offre indicative d’un concurrent, nette des frais de cession) : **6 100 k€**.\n\n**Fiscalité** : le goodwill n’est pas déductible (base fiscale nulle) ; aucun impôt différé n’a été comptabilisé sur le goodwill lors de l’acquisition. Les brevets et immobilisations corporelles de Solvia ont, au 31/12/2027, une valeur recouvrable individuelle supérieure à leur valeur comptable."
+        },
+        {
+          "title": "Annexe 4 — Projet de compte de résultat consolidé 2027 et communication financière",
+          "content": "**Projet de compte de résultat consolidé 2027** (charges présentées par nature ; avant prise en compte des annexes 1 à 3)\n\n| Poste | k€ |\n| --- | --- |\n| Chiffre d’affaires | 48 600 |\n| Achats consommés | (21 400) |\n| Charges externes | (9 800) |\n| Charges de personnel | (10 200) |\n| Dotations aux amortissements | (2 900) |\n| Autres produits et charges d’exploitation | (300) |\n| Coûts de restructuration du site de Metz (plan annoncé en 2027, provision IAS 37) | (450) |\n| **Résultat d’exploitation (projet)** | **3 550** |\n| Quote-part du résultat de la coentreprise Ionis (mise en équivalence) | 240 |\n| Produits de placement de la trésorerie | 60 |\n| Intérêts des emprunts bancaires | (380) |\n| Impôt sur le résultat | non encore calculé |\n\n**Communication financière.** Le communiqué de presse sur les résultats annuels présentera deux indicateurs :\n- l’« **EBITDA** », défini comme le résultat d’exploitation avant dotations aux amortissements et pertes de valeur entrant dans le champ d’application d’IAS 36 ;\n- le « **résultat opérationnel courant** » (ROC), défini comme le résultat d’exploitation hors coûts de restructuration et hors pertes de valeur du goodwill ; la direction le présente comme la mesure de la performance récurrente du groupe.\n\nLes coûts de restructuration du site de Metz, supportés par Hélion SA (détenue à 100 % par le groupe), sont déductibles fiscalement au taux de 25 % ; la perte de valeur du goodwill n’a aucun effet fiscal."
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1-duree-bail",
+          "kind": "mcq",
+          "points": 1,
+          "prompt": "À l’aide de l’annexe 1, quelle durée du contrat de location Hélion doit-elle retenir pour évaluer le passif locatif au 1er janvier 2027 ?",
+          "options": [
+            "5 ans : seule la période non résiliable est retenue tant que l’option de prolongation n’a pas été exercée",
+            "7 ans : la période non résiliable augmentée de la période de prolongation, dont l’exercice est raisonnablement certain",
+            "8 ans : la durée d’utilité des aménagements réalisés par le preneur dans l’entrepôt",
+            "5 ans, l’option de prolongation étant seulement mentionnée dans les notes comme un engagement hors bilan"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "La durée du contrat est la période non résiliable augmentée des périodes couvertes par une option de prolongation que le preneur a la certitude raisonnable d’exercer (IFRS 16 §18). Pour l’apprécier, on retient les faits qui donnent au preneur un avantage économique à exercer l’option (§19, B37) : aménagements importants propres au preneur, d’une durée d’utilité (8 ans) supérieure à la période non résiliable ; loyer de la période optionnelle (150 k€) inférieur au marché (175 k€) ; coût élevé d’un déménagement (400 k€) ; importance du site pour l’activité. La certitude raisonnable est acquise : **7 ans** (option 2). L’option 1 ignore §18 a) : une option non encore exercée est prise en compte dès la date de prise d’effet si son exercice est raisonnablement certain. L’option 3 confond la durée d’utilité des aménagements, simple indice, avec la durée du contrat, qui ne peut excéder la période juridiquement exécutoire (5 + 2 ans). L’option 4 décrit une approche hors bilan que le modèle unique du preneur (§22) a supprimée."
+        },
+        {
+          "id": "q2-passif-locatif",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À l’aide de l’annexe 1 et de votre réponse précédente, calculez le passif locatif à comptabiliser par Hélion au 1er janvier 2027 (en k€, arrondi au centième).",
+          "expected_value": 900.31,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "k€",
+          "decimals": 2,
+          "explanation": "Le passif locatif est la valeur actualisée des loyers non encore versés (IFRS 16 §26-27), au taux d’emprunt marginal de 4 % faute de taux implicite déterminable : 7 loyers fixes de 150 k€ payables à terme échu. Passif = 150 × [1 − 1,04⁻⁷] / 0,04 = 150 × 6,002055 = **900,31 k€**. Le loyer variable (0,5 % du chiffre d’affaires du site) n’est pas fonction d’un indice ou d’un taux : il est exclu du passif et passe en charges quand il est encouru (§27 b, §38 b). La commission de 12 k€ est un coût direct initial qui entre dans le droit d’utilisation (§24 c), pas dans le passif. Erreurs types hors tolérance : 667,77 k€ (5 ans seulement), 936,32 k€ (loyers actualisés comme s’ils étaient payables d’avance), 912,31 k€ (commission ajoutée au passif)."
+        },
+        {
+          "id": "q3-ecriture-initiale",
+          "kind": "journal_entry",
+          "points": 1.5,
+          "prompt": "À l’aide de l’annexe 1 et de vos réponses précédentes, passez l’écriture de comptabilisation initiale du bail au 1er janvier 2027, paiement de la commission compris (en k€, au centième). Conventions : droit d’utilisation au compte 218, passif locatif au compte 168, banque au compte 512.",
+          "date": "01/01/2027",
+          "entries": [
+            {
+              "account": "218",
+              "label": "Droit d’utilisation (entrepôt de Corbas)",
+              "debit": 912.31,
+              "credit": 0
+            },
+            {
+              "account": "168",
+              "label": "Passif locatif",
+              "debit": 0,
+              "credit": 900.31
+            },
+            {
+              "account": "512",
+              "label": "Banque (commission de l’agent immobilier)",
+              "debit": 0,
+              "credit": 12
+            }
+          ],
+          "explanation": "À la date de prise d’effet, le preneur comptabilise un droit d’utilisation et un passif locatif (IFRS 16 §22). Le coût du droit d’utilisation comprend le passif locatif initial (900,31) et les coûts directs initiaux supportés par le preneur (12), soit **912,31 k€** (§24 a et c) ; aucun loyer n’a été versé d’avance et aucun coût de remise en état n’est prévu. Le passif locatif est crédité de 900,31 k€ et la banque de 12 k€. Dans le projet, la commission figure en charges externes : la correction l’en retire."
+        },
+        {
+          "id": "q4-passif-fin-2027",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À l’aide de l’annexe 1 et de vos réponses précédentes, calculez la valeur comptable du passif locatif au 31 décembre 2027, après paiement du loyer de l’exercice (en k€, arrondi au centième).",
+          "expected_value": 786.32,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "k€",
+          "decimals": 2,
+          "explanation": "Le passif locatif augmente des intérêts calculés au taux constant de 4 % sur le solde d’ouverture et diminue des loyers payés (IFRS 16 §36-37) : intérêts 2027 = 900,31 × 4 % = 36,01 k€ ; passif au 31/12/2027 = 900,31 + 36,01 − 150 = **786,32 k€**. Le droit d’utilisation est amorti selon IAS 16 sur la durée du contrat, plus courte que la durée d’utilité de l’entrepôt (§31-32) : 912,31 / 7 = 130,33 k€ ; valeur nette au 31/12/2027 : 781,98 k€. Charge 2027 liée au bail : amortissement 130,33 (exploitation) + intérêts 36,01 (financement) + loyer variable 18 (exploitation). Erreurs types : 750,31 k€ (loyer imputé en totalité sur le passif, sans intérêts) ou 936,32 k€ (intérêts ajoutés sans déduire le loyer)."
+        },
+        {
+          "id": "q5-ca-vestra",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l’aide de l’annexe 2, calculez le chiffre d’affaires que Hélion doit comptabiliser en 2027 au titre du contrat Vestra (en k€).",
+          "expected_value": 2025,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "Le contrat comporte trois obligations de prestation distinctes (IFRS 15 §22, §27) : la batterie, l’installation (standard, réalisable par des tiers, sans modification de la batterie) et la maintenance. Le prix de 2 520 est réparti au prorata des prix de vente séparés (§74, §76), la remise de 280 étant répartie sur toutes les obligations faute d’élément observable contraire (§81) : batterie 2 520 × 2 000 / 2 800 = 1 800 ; installation 180 ; maintenance 540. Produits 2027 : batterie 1 800 à la livraison (transfert du contrôle à une date donnée) ; installation 180, réalisée progressivement et achevée le 30 septembre ; maintenance comptabilisée progressivement (§35 a), 540 × 3 / 36 = 45 pour octobre à décembre. Total : **2 025 k€**. Le solde encaissé, 540 − 45 = 495 k€, est un passif sur contrat au 31/12/2027 (§105-106). Erreurs types : 2 520 k€ (traitement du projet), 2 250 k€ (prix de vente séparés sans répartition de la remise : 2 000 + 200 + 50)."
+        },
+        {
+          "id": "q6-impots-differes-bail",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "À l’aide de l’annexe 1 : le bail de l’entrepôt ne donne lieu à aucun impôt différé, car la comptabilisation initiale du droit d’utilisation et du passif locatif n’affecte ni le résultat comptable ni le résultat fiscal.",
+          "answer": false,
+          "explanation": "Faux. L’exemption de comptabilisation initiale d’IAS 12 (§15 b et §24) ne s’applique pas à une transaction qui donne lieu, lors de sa comptabilisation initiale, à des différences temporelles imposables et déductibles d’un même montant (§15 b iii) ; IAS 12 §22A cite précisément le contrat de location chez le preneur. Le droit d’utilisation (base fiscale nulle) crée une différence temporelle imposable et le passif locatif (base fiscale nulle) une différence temporelle déductible. Au 31/12/2027 : passif d’impôt différé 781,98 × 25 % = 195,49 k€ et actif d’impôt différé 786,32 × 25 % = 196,58 k€, présentés compensés (actif net de 1,09 k€) si les conditions d’IAS 12 §74 sont remplies (même administration fiscale, droit de compenser)."
+        },
+        {
+          "id": "q7-valeur-utilite",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l’aide de l’annexe 3, calculez la valeur d’utilité de l’UGT Solvia au 31 décembre 2027 (en k€, arrondi au centième).",
+          "expected_value": 6390.19,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.005
+          },
+          "unit": "k€",
+          "decimals": 2,
+          "explanation": "La valeur d’utilité actualise les flux de l’UGT **dans son état actuel** (IAS 36 §33, §44) : les économies d’une réorganisation ni annoncée ni engagée sont exclues. Les flux sont avant impôt et hors financement (§50) ; le taux est donc le taux **avant impôt** de 10 % (§55). Flux 2028-2032 actualisés : 480 / 1,1 = 436,36 ; 500 / 1,1² = 413,22 ; 520 / 1,1³ = 390,68 ; 540 / 1,1⁴ = 368,83 ; 560 / 1,1⁵ = 347,72 ; total 1 956,81. Valeur terminale fin 2032 : 560 × 1,02 / (0,10 − 0,02) = 7 140, actualisée : 7 140 / 1,1⁵ = 4 433,38. Valeur d’utilité = 1 956,81 + 4 433,38 = **6 390,19 k€**. Erreurs types hors tolérance : 6 930,11 k€ (économies de réorganisation incluses), 9 326,26 k€ (taux après impôt de 7,5 %), 1 956,81 k€ (valeur terminale oubliée)."
+        },
+        {
+          "id": "q8-perte-valeur",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l’aide de l’annexe 3 et de votre réponse précédente, calculez le montant de la perte de valeur à comptabiliser dans les comptes consolidés 2027 au titre de l’UGT Solvia (en k€, arrondi au centième).",
+          "expected_value": 487.85,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.01
+          },
+          "unit": "k€",
+          "decimals": 2,
+          "explanation": "Valeur recouvrable = le plus élevé de la juste valeur diminuée des coûts de sortie (6 100) et de la valeur d’utilité (6 390,19), soit 6 390,19 k€ (IAS 36 §18). Le goodwill étant partiel, la valeur recouvrable de l’UGT couvre aussi le goodwill des PNC, non comptabilisé : la valeur comptable du goodwill est majorée à 800 / 0,8 = 1 000 avant le test (annexe C, §C4). Valeur comptable testée : 1 000 + 1 200 + 4 800 = 7 000 ; perte = 7 000 − 6 390,19 = 609,81 k€, inférieure au goodwill majoré : elle s’impute entièrement sur le goodwill (§104 a), les autres actifs ne sont pas dépréciés. Seule la part de la société mère est comptabilisée comme perte de valeur du goodwill (§C8) : 80 % × 609,81 = **487,85 k€**. Erreurs types hors tolérance : 409,81 k€ (goodwill non majoré : 6 800 − 6 390,19) et 609,81 k€ (perte du goodwill notionnel des PNC comptabilisée)."
+        },
+        {
+          "id": "q9-note-depreciation",
+          "kind": "open",
+          "points": 2,
+          "prompt": "À l’aide de l’annexe 3 et de vos réponses précédentes, rédigez pour Mme Ferrand une note justifiant le traitement de la perte de valeur de l’UGT Solvia : choix de la valeur recouvrable, imputation de la perte, effet sur les participations ne donnant pas le contrôle, incidence en impôts différés et devenir de la perte si la situation de Solvia s’améliore.",
+          "model_answer": "**Valeur recouvrable.** Le goodwill impose un test annuel, même sans indice (IAS 36 §10 et §90). La valeur recouvrable est le plus élevé de la juste valeur diminuée des coûts de sortie (6 100 k€) et de la valeur d’utilité (6 390,19 k€), soit 6 390,19 k€. La valeur d’utilité exclut les économies d’une réorganisation non engagée (§44) et actualise des flux avant impôt au taux avant impôt de 10 % (§50, §55).\n\n**Majoration du goodwill et imputation.** Les PNC ayant été évaluées à leur quote-part d’actif net, le goodwill comptabilisé (800 k€) ne représente que la part du groupe ; la valeur recouvrable de l’UGT, elle, rémunère 100 % de l’activité. Le goodwill est donc majoré à 1 000 k€ pour le test (§C4) : valeur comptable testée 7 000 k€, perte 609,81 k€. Elle s’impute d’abord sur le goodwill (§104 a) ; inférieure au goodwill majoré, elle n’affecte ni les brevets ni les immobilisations corporelles, dont la valeur recouvrable individuelle excède d’ailleurs la valeur comptable (§105).\n\n**Part des PNC.** La fraction de la perte afférente au goodwill des PNC (20 % × 609,81 = 121,96 k€) porte sur un goodwill non comptabilisé : elle n’est pas comptabilisée (§C8). La perte comptabilisée, 487,85 k€, est entièrement attribuable aux propriétaires de la société mère ; les PNC ne sont pas touchées. Goodwill au 31/12/2027 : 800 − 487,85 = 312,15 k€.\n\n**Impôts différés.** Aucun impôt différé n’a été comptabilisé sur le goodwill, non déductible, lors de sa comptabilisation initiale (IAS 12 §15 a) ; la diminution ultérieure de la différence temporelle due à la perte de valeur relève de la même exception (§21A) : aucun produit d’impôt différé.\n\n**Devenir.** Une perte de valeur du goodwill n’est jamais reprise (IAS 36 §124), même si la valeur recouvrable de Solvia remonte : la hausse traduirait un goodwill généré en interne. La perte figure dans la catégorie « exploitation » du compte de résultat et les notes donnent les hypothèses clés du test (taux, croissance, horizon).",
+          "key_points": [
+            "Valeur recouvrable = max(6 100 ; 6 390,19) ; flux dans l’état actuel, taux avant impôt",
+            "Goodwill partiel majoré à 1 000 pour le test (§C4) : perte de 609,81 imputée d’abord sur le goodwill",
+            "Seule la part du groupe (80 %) est comptabilisée : 487,85 k€ ; brevets et corporels non dépréciés",
+            "PNC non affectées : la perte du goodwill non comptabilisé n’est pas constatée (§C8)",
+            "Aucun impôt différé sur le goodwill ni sur sa dépréciation (IAS 12 §15 a, §21A)",
+            "Aucune reprise ultérieure de la perte de valeur du goodwill (§124)"
+          ],
+          "explanation": "La note doit enchaîner le choix de la valeur recouvrable, la majoration du goodwill partiel (point le plus souvent oublié), l’imputation selon §104, la non-comptabilisation de la part des PNC (§C8), l’absence d’impôt différé sur le goodwill et l’interdiction de reprise. Une perte supérieure au goodwill majoré aurait été répartie sur les brevets et immobilisations corporelles au prorata, avec une quote-part pour les PNC et un impôt différé."
+        },
+        {
+          "id": "q10-categories-ifrs18",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À l’aide des annexes 1, 3 et 4, comment Hélion doit-elle classer dans l’état du résultat net 2027 établi selon IFRS 18 : la quote-part de résultat de la coentreprise Ionis, les produits de placement de la trésorerie, les intérêts du passif locatif et la perte de valeur du goodwill de Solvia ?",
+          "options": [
+            "Ionis et produits de placement : exploitation ; intérêts du passif locatif : financement ; perte de valeur du goodwill : investissement",
+            "Ionis : investissement ; produits de placement : financement ; intérêts du passif locatif : exploitation ; perte de valeur du goodwill : exploitation",
+            "Ionis : exploitation ; produits de placement : investissement ; intérêts du passif locatif : financement ; perte de valeur du goodwill : exploitation",
+            "Ionis et produits de placement : investissement ; intérêts du passif locatif : financement ; perte de valeur du goodwill : exploitation"
+          ],
+          "answer": [
+            3
+          ],
+          "explanation": "Pour une entité dont l’activité principale n’est ni l’investissement ni le financement de clients : la quote-part de résultat d’une coentreprise mise en équivalence et les produits de la trésorerie relèvent de la catégorie « investissement » (IFRS 18 §53 a et b, §54) ; le passif locatif ne résulte pas d’une transaction ayant uniquement trait à l’obtention de financements (B53 c), mais ses charges d’intérêts identifiées selon IFRS 16 vont dans la catégorie « financement » (§61 a, B54 c) ; la perte de valeur du goodwill d’une filiale consolidée n’est visée par aucune autre catégorie et reste dans la catégorie résiduelle « exploitation ». L’option 4 est donc la bonne. L’option 1 met la mise en équivalence et la trésorerie en exploitation et le goodwill en investissement (le goodwill d’une filiale consolidée n’est pas une participation au sens de §53 a). L’option 2 classe les produits de placement en financement, catégorie réservée aux passifs, et les intérêts locatifs en exploitation. L’option 3 range la quote-part de la coentreprise en exploitation, alors qu’elle relève de l’investissement."
+        },
+        {
+          "id": "q11-resultat-exploitation",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l’aide des annexes 1 à 4 et de vos réponses précédentes, calculez le résultat d’exploitation consolidé 2027 corrigé, au sens d’IFRS 18 (en k€, arrondi au centième).",
+          "expected_value": 2598.82,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 2
+          },
+          "unit": "k€",
+          "decimals": 2,
+          "explanation": "Résultat d’exploitation du projet : 3 550. Corrections : chiffre d’affaires Vestra − 495 (2 520 comptabilisés au lieu de 2 025) ; annulation des loyers fixes en charges externes + 150 (le loyer variable de 18 reste en charges) ; annulation de la commission en charges externes + 12 (incorporée au droit d’utilisation) ; amortissement du droit d’utilisation − 130,33 ; perte de valeur du goodwill − 487,85. Résultat d’exploitation corrigé = 3 550 − 495 + 150 + 12 − 130,33 − 487,85 = **2 598,82 k€**. Les intérêts du passif locatif (36,01) relèvent de la catégorie « financement » et n’entrent pas dans le résultat d’exploitation. Pour mémoire, résultat avant financement et impôts sur le résultat : 2 598,82 + 240 + 60 = 2 898,82 k€ (IFRS 18 §69-71). Erreurs types : 2 562,81 k€ (intérêts locatifs déduits du résultat d’exploitation), 2 616,82 k€ (loyer variable également retiré des charges : + 180 au lieu de + 162) ou 3 086,67 k€ (perte de valeur oubliée)."
+        },
+        {
+          "id": "q12-mesures-performance",
+          "kind": "open",
+          "points": 2,
+          "prompt": "À l’aide de l’annexe 4 et de vos réponses précédentes, indiquez si l’EBITDA et le résultat opérationnel courant que Hélion publiera sont des mesures de la performance définies par la direction au sens d’IFRS 18, et précisez les informations à fournir dans les notes, rapprochement chiffré compris.",
+          "model_answer": "**Qualification.** Une mesure de la performance définie par la direction (MPD) est un sous-total de produits et de charges utilisé dans la communication publique hors des états financiers pour exprimer le point de vue de la direction sur un aspect de la performance de l’entité dans son ensemble, et qui n’est ni exigé par les normes IFRS ni cité dans la liste de §118 (IFRS 18 §117).\n- L’**EBITDA** de Hélion, défini comme le résultat d’exploitation avant amortissements et pertes de valeur entrant dans le champ d’IAS 36, figure dans la liste des sous-totaux qui ne sont pas des MPD (§118 b) : il n’entre pas dans la note sur les MPD.\n- Le **résultat opérationnel courant**, qui exclut des coûts de restructuration et des pertes de valeur du goodwill, n’est pas cité par §118 et sert à communiquer la vision de la direction sur la performance récurrente : c’est une MPD (la présomption de §119 n’est pas réfutée).\n\n**Informations à fournir** (§121-123), dans une note unique : un énoncé indiquant que les MPD traduisent le point de vue de la direction et ne sont pas nécessairement comparables à des mesures de même nom publiées par d’autres entités (§122) ; une description de l’aspect de la performance mesuré et de son utilité ; le mode de calcul ; le rapprochement avec le sous-total le plus directement comparable, ici le résultat d’exploitation ; l’effet d’impôt et l’effet sur les PNC de chaque élément du rapprochement, avec la méthode de détermination de l’effet d’impôt (§123).\n\n**Rapprochement 2027** (k€) :\n\n| Élément | Montant | Effet d’impôt | Effet sur les PNC |\n| --- | --- | --- | --- |\n| Résultat d’exploitation | 2 598,82 | | |\n| + Coûts de restructuration du site de Metz | 450,00 | (112,50) | 0 |\n| + Perte de valeur du goodwill de Solvia | 487,85 | 0 | 0 |\n| = Résultat opérationnel courant | 3 536,67 | | |\n\nL’effet d’impôt des coûts de restructuration est de 25 % × 450 = 112,50 k€ ; la perte de valeur du goodwill n’a aucun effet fiscal. Aucun élément ne touche les PNC : Metz relève de Hélion SA, détenue à 100 %, et la perte de valeur comptabilisée est entièrement attribuable à la société mère. Le comparatif 2026 de la MPD doit être fourni, IFRS 18 s’appliquant de façon rétrospective.",
+          "key_points": [
+            "Définition d’une MPD : sous-total utilisé dans la communication publique, vision de la direction, non exigé par les IFRS (§117)",
+            "EBITDA avant amortissements et pertes de valeur IAS 36 : exclu des MPD (§118 b)",
+            "Résultat opérationnel courant : MPD soumise à la note unique",
+            "Contenu de la note : avertissement, description, calcul, rapprochement avec le résultat d’exploitation, effets d’impôt et sur les PNC (§122-123)",
+            "Rapprochement : 2 598,82 + 450 + 487,85 = 3 536,67 k€ ; effet d’impôt 112,50 sur la restructuration, nul sur la perte de valeur ; aucun effet sur les PNC"
+          ],
+          "explanation": "IFRS 18 encadre les indicateurs « maison » publiés hors des états financiers : il faut d’abord vérifier si l’indicateur figure dans la liste des sous-totaux exclus (§118), puis fournir les informations de §122-123 pour chaque MPD. Le rapprochement chiffré reprend le résultat d’exploitation corrigé de la question précédente ; l’effet d’impôt et l’effet sur les PNC sont donnés élément par élément."
+        }
+      ],
+      "explanation": "Méthode : (1) IFRS 16 : durée de 7 ans (option de prolongation raisonnablement certaine au vu des aménagements, du loyer inférieur au marché et du coût d’un déménagement), passif locatif 900,31 k€ au taux de 4 %, droit d’utilisation 912,31 k€ avec la commission, passif de 786,32 k€ au 31/12/2027 ; impôts différés sur le droit d’utilisation et le passif locatif (IAS 12 §22A). (2) IFRS 15 : trois obligations de prestation, remise répartie au prorata des prix de vente séparés (1 800 / 180 / 540), chiffre d’affaires 2027 de 2 025 k€ et passif sur contrat de 495 k€. (3) IAS 36 : valeur d’utilité 6 390,19 k€ (flux dans l’état actuel, taux avant impôt, valeur terminale), goodwill partiel majoré à 1 000 pour le test, perte de 609,81 imputée sur le goodwill, dont 487,85 k€ comptabilisés (part du groupe), sans impôt différé ni reprise ultérieure. (4) IFRS 18 : mise en équivalence et trésorerie en investissement, intérêts locatifs en financement, perte de valeur en exploitation ; résultat d’exploitation corrigé 2 598,82 k€ ; le résultat opérationnel courant est une mesure de la performance définie par la direction (rapprochement 3 536,67 k€), l’EBITDA défini par §118 b ne l’est pas. Points de vigilance : majoration du goodwill partiel et non-comptabilisation de la part des PNC, exclusion de la réorganisation non engagée, coûts directs initiaux dans le droit d’utilisation, remise répartie sur toutes les obligations."
+    },
+    {
+      "id": "ue4-dossier-0004",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE4",
+      "theme": "fusions-restructurations",
+      "notion": "mali-technique",
+      "difficulty": 3,
+      "tags": [
+        "dossier type examen",
+        "fusion",
+        "contrôle commun",
+        "parité d’échange",
+        "prime de fusion",
+        "mali technique",
+        "rétroactivité",
+        "régime de faveur",
+        "audit"
+      ],
+      "source_ref": "PCG art. 214-15, 740-1, 741-1, 741-2, 743-1, 744-2, 745-1 à 745-10, 751-4, 752-1 à 752-3 et 838-14 (règl. ANC 2014-03 à jour au 1er janvier 2026) ; C. com. art. L. 236-4 ; CGI art. 210 A et 219, I, a quinquies ; BOI-IS-FUS-10-50-20 ; NEP 315, 500, 540, 620, 700 et 702 ; comptes PCG 101, 1042, 261, 4561, 2081, 2187, 28187, 29081, 668",
+      "verified": true,
+      "estimated_seconds": 5400,
+      "total_points": 20,
+      "title": "Absorption de Corniche par Rivages : mali de fusion, rétroactivité et audit",
+      "context": "La société anonyme **Rivages** (accastillage et équipements nautiques, La Rochelle) détient depuis février N−5 70 % du capital de la **SAS Corniche**, voilerie installée à Lorient. Pour simplifier l’organisation du groupe et regrouper les fonctions commerciales, les deux sociétés ont décidé l’absorption de Corniche par Rivages. Le traité de fusion a été signé le 15 avril N ; les assemblées générales extraordinaires des deux sociétés ont approuvé l’opération le 28 juin N. Le traité stipule une date d’effet au 1er janvier N et place l’opération sous le régime fiscal de faveur de l’article 210 A du CGI. Les deux sociétés clôturent leur exercice le 31 décembre.\n\nVous êtes collaborateur du cabinet de Mme Lemoine, commissaire aux comptes de Rivages, et participez à l’audit des comptes annuels de l’exercice N. Le directeur financier de Rivages, M. Aubert, a préparé les écritures de fusion ; plusieurs de ses choix doivent être vérifiés. Mme Lemoine vous demande :\n\n- de vérifier la valeur d’apport retenue, la parité et la rémunération des apports ;\n- de recalculer et d’affecter le mali de fusion et de reconstituer l’écriture qui aurait dû être passée ;\n- d’analyser les conséquences de la rétroactivité et le suivi du mali au 31 décembre N ;\n- de chiffrer les retraitements fiscaux de l’exercice N liés au mali ;\n- de présenter la démarche d’audit à mettre en œuvre sur ces opérations.\n\n**Hypothèses communes** : montants en euros ; aucune des deux sociétés ne provisionne ses engagements de retraite (méthode non obligatoire en PCG, engagement mentionné en annexe) ; Rivages ne réalise en N aucune autre plus-value ou moins-value à long terme. Toutes les données utiles figurent dans les annexes 1 à 4.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Actionnariat et extraits du traité de fusion",
+          "content": "**Rivages SA** : capital de 1 000 000 € divisé en 50 000 actions de 20 € de nominal, détenu à 62 % par la holding familiale Ostrea.\n\n**Corniche SAS** : capital de 200 000 € divisé en 20 000 actions de 10 € de nominal.\n\n| Associé de Corniche | Actions | Observations |\n| --- | --- | --- |\n| Rivages SA | 14 000 | acquises le 1er février N−5 pour 2 380 000 € (titres de participation, aucune dépréciation) |\n| Azur Capital (fonds d’investissement) | 4 000 | |\n| M. Delorme (fondateur) | 2 000 | |\n| Total | 20 000 | |\n\n**Extraits du traité de fusion**\n- Date d’effet : 1er janvier N ; les apports sont établis d’après les comptes de Corniche arrêtés au 31 décembre N−1 (annexe 2). Toutes les opérations réalisées par Corniche depuis cette date sont réputées faites pour le compte de Rivages.\n- Rapport d’échange : **5 actions Rivages pour 8 actions Corniche**, déterminé à partir des valeurs réelles des deux sociétés (annexe 3). Rivages ne recevra pas d’actions en échange des titres Corniche qu’elle détient.\n- Régime fiscal : article 210 A du CGI ; Rivages prend les engagements prévus par ce texte, dont la reprise à son passif des provisions dont l’imposition est différée.\n\n**Proposition de M. Aubert** : « La parité ayant été calculée sur les valeurs réelles, j’ai enregistré les apports à leur valeur réelle (3 100 000 €), en portant à l’actif les plus-values sur le terrain et les constructions et un fonds commercial de 500 000 € pour le solde. »"
+        },
+        {
+          "title": "Annexe 2 — Bilan de Corniche au 31 décembre N−1",
+          "content": "| Actif | Brut | Amortissements | Net |\n| --- | --- | --- | --- |\n| Terrain | 400 000 | — | 400 000 |\n| Constructions | 1 500 000 | 600 000 | 900 000 |\n| Matériel | 900 000 | 400 000 | 500 000 |\n| Stocks | 300 000 | — | 300 000 |\n| Clients | 500 000 | — | 500 000 |\n| Banque | 200 000 | — | 200 000 |\n| **Total** | | | **2 800 000** |\n\n| Passif | Montant |\n| --- | --- |\n| Capital | 200 000 |\n| Réserves | 1 520 000 |\n| Amortissements dérogatoires | 80 000 |\n| Emprunts | 600 000 |\n| Fournisseurs | 400 000 |\n| **Total** | **2 800 000** |\n\nLe résultat de N−1 a été affecté en totalité aux réserves par l’assemblée générale ordinaire de Corniche du 30 mars N ; Corniche n’a distribué aucun dividende depuis le 31 décembre N−1."
+        },
+        {
+          "title": "Annexe 3 — Évaluations retenues pour la parité (rapport de l’évaluateur)",
+          "content": "Les deux sociétés ont été évaluées au 31 décembre N−1 selon la même méthode, l’actif net réévalué, par un évaluateur indépendant mandaté conjointement par les deux sociétés. La fiscalité latente sur les plus-values n’est pas prise en compte, les immobilisations étant destinées à être conservées (hypothèse retenue par le traité et pour le calcul du mali).\n\n**Corniche** : les éléments non mentionnés ci-dessous ont une valeur réelle égale à leur valeur nette comptable.\n\n| Élément | Valeur nette comptable | Valeur réelle |\n| --- | --- | --- |\n| Terrain | 400 000 | 900 000 |\n| Constructions (durée d’utilisation résiduelle 15 ans) | 900 000 | 1 200 000 |\n| Fonds commercial créé par Corniche, non inscrit au bilan (durée d’utilisation non limitée) | — | 600 000 |\n| Engagements de départ à la retraite non provisionnés | — | (100 000) |\n\n**Rivages** : actif net réévalué hors titres Corniche : **10 230 000 €** ; la participation dans Corniche doit être ajoutée pour sa valeur réelle.\n\n**Note du directeur financier** : au 31/12/N−1, Rivages n’a pas déprécié ses titres Corniche, leur valeur d’utilité intégrant des synergies commerciales qui ne sont pas retenues pour la parité."
+        },
+        {
+          "title": "Annexe 4 — Période intercalaire et situation au 31 décembre N",
+          "content": "**Activité de Corniche du 1er janvier au 28 juin N** (reprise dans les comptes de Rivages) : produits 2 300 000 € ; charges 2 180 000 €.\n\n**Opérations réciproques de la période intercalaire** : Corniche a vendu à Rivages des voiles pour 180 000 €, avec une marge de 25 % du prix de vente. Au 31 décembre N, 48 000 € de ces voiles (prix d’achat chez Rivages) figurent encore dans les stocks de Rivages. La créance et la dette réciproques correspondantes (30 000 € au 28 juin N) ont été soldées.\n\n**Situation au 31 décembre N des actifs auxquels le mali est affecté**\n- Constructions apportées : amortissement linéaire sur la durée résiduelle de 15 ans à compter du 1er janvier N.\n- Terrain : non amortissable ; sa valeur actuelle reste supérieure à sa valeur nette comptable augmentée de la quote-part de mali affectée.\n- Fonds commercial de Corniche : la perte d’un client grand compte en octobre N a conduit l’évaluateur à estimer sa valeur actuelle à **260 000 €** au 31 décembre N.\n\n**Projet de M. Aubert pour la clôture N** (sur la base de sa proposition de l’annexe 1) : aucun amortissement ni dépréciation sur les plus-values et le fonds commercial inscrits, le fonds commercial n’étant pas amorti ; aucun retraitement fiscal lié à la fusion."
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1-valeur-apport",
+          "kind": "mcq",
+          "points": 1,
+          "prompt": "À l’aide des annexes 1 et 2, à quelle valeur les apports de Corniche doivent-ils être comptabilisés par Rivages selon le PCG ?",
+          "options": [
+            "À la valeur réelle (3 100 000 €), puisque la parité a été déterminée à partir des valeurs réelles",
+            "À la valeur réelle, car l’opération est à l’endroit : les actionnaires de Rivages conservent le contrôle après la fusion",
+            "À la valeur comptable (1 800 000 €), car Rivages contrôle Corniche avant l’opération : les sociétés sont sous contrôle commun",
+            "À la valeur comptable, car le placement de l’opération sous le régime de faveur de l’article 210 A du CGI l’impose"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "La valeur d’apport dépend de la situation de contrôle avant l’opération et de son sens (PCG art. 740-1, 743-1), et non de la méthode de calcul de la parité : l’article 740-1 précise que les règles d’évaluation des apports ne visent pas celles retenues pour la parité. Rivages détient 70 % des droits de vote de Corniche : elle la contrôle de manière exclusive (art. 741-1, 741-2), l’opération implique des entités sous contrôle commun et les apports sont retenus à la **valeur comptable**, soit l’actif net comptable de Corniche au 31/12/N−1 : 2 800 000 − 1 000 000 = 1 800 000 € (option 3). L’option 1 confond parité et valeur d’apport (c’est l’erreur de M. Aubert). L’option 2 n’a de sens qu’entre sociétés sous contrôle distinct. L’option 4 inverse la logique : la valeur d’apport est fixée par le PCG, le régime fiscal en tire seulement les conséquences."
+        },
+        {
+          "id": "q2-valeur-action-rivages",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À l’aide de l’annexe 3, calculez la valeur réelle unitaire de l’action Rivages retenue pour la parité (en euros, arrondie au centime), et vérifiez que le rapport d’échange stipulé est cohérent.",
+          "expected_value": 248,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "Valeur réelle de Corniche = actif net comptable 1 800 000 + plus-values (terrain 500 000, constructions 300 000, fonds commercial 600 000) − engagements de retraite 100 000 = 3 100 000 €, soit 155 € par action (20 000 actions). Valeur réelle de Rivages = 10 230 000 + 70 % × 3 100 000 (participation à sa valeur réelle) = 12 400 000 €, soit **248 €** par action (50 000 actions). Parité = 155 / 248 = 0,625 = 5/8 : le rapport de 5 actions Rivages pour 8 actions Corniche est cohérent. Erreur type hors tolérance : 252,20 € (titres Corniche retenus pour leur coût de 2 380 000 €), qui donnerait une parité de 0,6146, sans rapport simple."
+        },
+        {
+          "id": "q3-actions-emises",
+          "kind": "numeric",
+          "points": 1,
+          "prompt": "À l’aide de l’annexe 1, calculez le nombre d’actions nouvelles que Rivages doit émettre pour rémunérer les apports.",
+          "expected_value": 3750,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "actions",
+          "decimals": 0,
+          "explanation": "Seules les actions Corniche détenues par les associés autres que Rivages sont échangées, Rivages ne pouvant recevoir ses propres actions : 20 000 − 14 000 = 6 000 actions. Actions émises = 6 000 × 5/8 = **3 750**, soit 2 500 pour Azur Capital (4 000 × 5/8) et 1 250 pour M. Delorme (2 000 × 5/8), sans rompus. Augmentation de capital : 3 750 × 20 = 75 000 €. Erreur type : 12 500 actions (rémunération des 20 000 actions, y compris celles de l’absorbante)."
+        },
+        {
+          "id": "q4-prime-fusion",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À l’aide des annexes 1 et 2 et de vos réponses précédentes, calculez le montant de la prime de fusion (en euros), avant toute imputation.",
+          "expected_value": 465000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "La prime de fusion porte sur la quote-part des apports revenant aux associés rémunérés, évaluée à la valeur d’apport (valeur comptable) : 30 % × 1 800 000 = 540 000 €. Prime = 540 000 − 75 000 (nominal des actions émises) = **465 000 €**. Erreurs types hors tolérance : 855 000 € (valeur réelle des actions émises, 3 750 × 248, diminuée du nominal), 1 725 000 € (totalité de l’actif net apporté diminuée du nominal). La part de l’actif net correspondant aux titres détenus (70 %) ne crée pas de prime : elle est comparée aux titres annulés et dégage un mali."
+        },
+        {
+          "id": "q5-mali-technique",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À l’aide des annexes 1 à 3, calculez le mali technique dégagé par l’annulation des titres Corniche détenus par Rivages (en euros).",
+          "expected_value": 910000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Mali de fusion = valeur comptable des titres annulés − quote-part détenue de l’actif net apporté, calculé à la date d’effet (PCG art. 745-3, 751-4) : 2 380 000 − 70 % × 1 800 000 = 2 380 000 − 1 260 000 = 1 120 000 €. Mali technique = quote-part détenue des plus-values latentes sur les actifs, comptabilisés ou non, déduction faite des passifs non comptabilisés (art. 745-4) : 70 % × (500 000 + 300 000 + 600 000 − 100 000) = 70 % × 1 300 000 = **910 000 €**, inférieur au mali total. Le solde, 1 120 000 − 910 000 = 210 000 €, est un vrai mali, qui correspond au surprix payé par rapport à la valeur réelle de la participation (2 380 000 − 70 % × 3 100 000). Erreurs types : 980 000 € (engagements de retraite non déduits), 1 120 000 € (mali total traité comme technique)."
+        },
+        {
+          "id": "q6-affectation-mali",
+          "kind": "open",
+          "points": 2.5,
+          "prompt": "À l’aide des annexes 1 à 4 et de vos réponses précédentes, répondez à la proposition de M. Aubert (annexe 1) : indiquez le traitement comptable correct du mali de fusion (affectation du mali technique, comptes utilisés, sort du vrai mali), son suivi ultérieur et l’information à donner dans l’annexe des comptes de Rivages.",
+          "model_answer": "**Rejet de la proposition.** Rivages contrôlant Corniche, les apports sont retenus à la valeur comptable (PCG art. 743-1) : la parité calculée sur les valeurs réelles ne change pas la valeur d’apport (art. 740-1). Les plus-values et le fonds commercial ne peuvent donc pas être inscrits en tant que tels ; ils réapparaissent, pour la quote-part détenue, sous la forme d’un mali technique.\n\n**Affectation du mali technique de 910 000 €** (art. 745-5). La quote-part détenue des plus-values sur les actifs identifiés hors fonds commercial s’élève à 70 % × (500 000 + 300 000) = 560 000 €, montant inférieur au mali technique : le mali est affecté à ces actifs à hauteur de leur plus-value, le solde allant au fonds commercial.\n- Terrain : 350 000 € et constructions : 210 000 €, soit 560 000 € au compte 2187 « Mali de fusion sur actifs corporels » ;\n- Fonds commercial : 910 000 − 560 000 = 350 000 € au compte 2081 « Mali de fusion sur actifs incorporels ».\nLes actifs sous-jacents restent inscrits pour leur valeur comptable chez Corniche ; le mali est comptabilisé dans des comptes spécifiques par catégorie d’actif (art. 745-6).\n\n**Vrai mali de 210 000 €.** Il correspond à une dépréciation de la participation nécessaire au moment de la fusion (surprix lié aux synergies) et est comptabilisé dans le résultat financier de l’exercice N (art. 745-4).\n\n**Suivi** (art. 745-7 à 745-10) : la quote-part affectée aux constructions s’amortit comme elles, sur 15 ans (14 000 € par an, compte 28187) ; celle du terrain n’est pas amortie ; celle du fonds commercial, de durée non limitée, n’est pas amortie mais fait l’objet d’un test de dépréciation au moins annuel (art. 214-15) sur la base « valeur nette comptable + mali affecté » ; une dépréciation est imputée d’abord sur le mali et, pour le fonds commercial, n’est jamais reprise. En cas de cession d’un actif sous-jacent, la quote-part de mali correspondante sort avec lui.\n\n**Annexe** (art. 838-14) : contexte de l’opération et valeur d’apport retenue, éléments significatifs auxquels le mali est affecté et modalités d’amortissement, de dépréciation et de sortie ; à chaque clôture, tableau de suivi du mali par actif (valeur brute, amortissements, dépréciations).",
+          "key_points": [
+            "Contrôle commun : apports à la valeur comptable, la parité sur valeurs réelles est sans incidence (art. 740-1, 743-1)",
+            "Affectation : 350 000 au terrain et 210 000 aux constructions (2187), solde 350 000 au fonds commercial (2081) (art. 745-5)",
+            "Vrai mali de 210 000 en résultat financier de N",
+            "Suivi : amortissement de la part construction sur 15 ans, test de dépréciation annuel de la part fonds commercial sans reprise",
+            "Information en annexe sur l’affectation et le suivi du mali (art. 838-14)"
+          ],
+          "explanation": "L’affectation suit l’ordre de l’article 745-5 : d’abord les plus-values des actifs identifiés hors fonds commercial (quote-part détenue), le résidu au fonds commercial. Une répartition au prorata de toutes les plus-values (325 000 / 195 000 / 390 000) ne respecte pas cet ordre, puisque le mali technique excède ici les plus-values des actifs identifiés. Les engagements de retraite non provisionnés réduisent le mali technique, donc la part résiduelle affectée au fonds commercial."
+        },
+        {
+          "id": "q7-ecriture-annulation",
+          "kind": "journal_entry",
+          "points": 2.5,
+          "prompt": "À l’aide des annexes 1 et 2 et de vos réponses précédentes, passez chez Rivages l’écriture de rémunération des apports et d’annulation des titres Corniche, sachant que l’écriture d’apport des actifs et passifs de Corniche a déjà été passée en contrepartie du crédit du compte 4561 « Associés – Comptes d’apport en société » pour 1 800 000 €. Utilisez les comptes 4561, 2081, 2187, 668 (vrai mali), 101, 1042 et 261.",
+          "date": "28/06/N",
+          "entries": [
+            {
+              "account": "4561",
+              "label": "Corniche – compte d’apport (actif net apporté)",
+              "debit": 1800000,
+              "credit": 0
+            },
+            {
+              "account": "2187",
+              "label": "Mali de fusion sur actifs corporels (terrain 350 000, constructions 210 000)",
+              "debit": 560000,
+              "credit": 0
+            },
+            {
+              "account": "2081",
+              "label": "Mali de fusion sur actifs incorporels (fonds commercial)",
+              "debit": 350000,
+              "credit": 0
+            },
+            {
+              "account": "668",
+              "label": "Vrai mali de fusion",
+              "debit": 210000,
+              "credit": 0
+            },
+            {
+              "account": "101",
+              "label": "Capital (3 750 actions × 20 €)",
+              "debit": 0,
+              "credit": 75000
+            },
+            {
+              "account": "1042",
+              "label": "Prime de fusion",
+              "debit": 0,
+              "credit": 465000
+            },
+            {
+              "account": "261",
+              "label": "Titres de participation Corniche annulés",
+              "debit": 0,
+              "credit": 2380000
+            }
+          ],
+          "explanation": "Le compte d’apport (crédité de l’actif net comptable apporté, 1 800 000 €) est soldé. Sa contrepartie se répartit entre la rémunération des associés tiers (capital 75 000 et prime de fusion 465 000, soit 540 000 = 30 % de l’actif net) et l’annulation des titres détenus (2 380 000 €), dont l’excédent sur la quote-part d’actif net détenue (1 260 000 €) est le mali de 1 120 000 € : mali technique affecté à l’actif (560 000 en 2187, 350 000 en 2081) et vrai mali en charges financières (210 000 en 668). Contrôle : débits 1 800 000 + 560 000 + 350 000 + 210 000 = 2 920 000 ; crédits 75 000 + 465 000 + 2 380 000 = 2 920 000. Le traité prévoyant la reprise des provisions dont l’imposition est différée (CGI art. 210 A, 3, a), Rivages reconstitue ensuite la totalité des amortissements dérogatoires de Corniche (80 000 €) : l’engagement fiscal porte sur l’ensemble des provisions de l’absorbée, et non sur la seule quote-part des associés rémunérés. Le PCG ne fixant pas la contrepartie, la pratique usuelle prélève cette reconstitution sur la prime de fusion, suffisante ici (débit 1042, crédit 145 : prime nette 385 000 €)."
+        },
+        {
+          "id": "q8-date-effet",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "À l’aide du contexte et de l’annexe 2 : le traité aurait pu fixer la date d’effet de la fusion au 1er octobre N−1, afin que les opérations du dernier trimestre N−1 de Corniche soient réputées faites pour le compte de Rivages.",
+          "answer": false,
+          "explanation": "Faux. Lorsque le traité fixe une date d’effet autre que celle de la dernière assemblée ayant approuvé la fusion, cette date ne peut être ni postérieure à la clôture de l’exercice en cours de la société bénéficiaire, ni antérieure à la clôture du dernier exercice clos de la société qui transmet son patrimoine (C. com. art. L. 236-4, 2°). Corniche ayant clos son exercice N−1 le 31 décembre N−1, la date d’effet la plus lointaine possible est le 1er janvier N, celle retenue par le traité ; un exercice arrêté ne peut être remis en cause. Sur le plan fiscal, la rétroactivité est également limitée à l’ouverture de l’exercice de l’absorbante au cours duquel l’opération est réalisée."
+        },
+        {
+          "id": "q9-periode-intercalaire",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À l’aide de l’annexe 4, calculez l’incidence nette de la période intercalaire (activité de Corniche du 1er janvier au 28 juin N et élimination des opérations réciproques) sur le résultat de l’exercice N de Rivages (en euros).",
+          "expected_value": 108000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Du fait de la rétroactivité, Rivages reprend dans son compte de résultat N les produits et charges de Corniche de la période intercalaire : 2 300 000 − 2 180 000 = 120 000 €. Ce bénéfice n’augmente pas les apports, figés à la date d’effet (PCG art. 751-4). Les opérations réciproques de la période deviennent internes (art. 752-1 à 752-3) : les ventes et achats de 180 000 € et la créance et la dette réciproques s’éliminent sans effet sur le résultat, mais la marge comprise dans le stock final est éliminée : 48 000 × 25 % = 12 000 €. Incidence nette : 120 000 − 12 000 = **108 000 €**. Erreurs types : 120 000 € (marge interne oubliée), 75 000 € (marge éliminée sur la totalité des ventes, 180 000 × 25 % = 45 000)."
+        },
+        {
+          "id": "q10-dotations-mali",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À l’aide de l’annexe 4 et de vos réponses précédentes, calculez le montant total des dotations (amortissement et dépréciation) relatives au mali technique à comptabiliser par Rivages au 31 décembre N (en euros).",
+          "expected_value": 104000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Constructions : la quote-part de mali affectée (210 000 €) s’amortit au même rythme que l’actif sous-jacent (PCG art. 745-7), soit 210 000 / 15 = 14 000 € (compte 28187). Terrain : ni amortissement ni dépréciation. Fonds commercial : non inscrit chez Corniche, il a une valeur nette comptable nulle ; le test compare sa valeur actuelle (260 000 €) à la valeur nette comptable augmentée du mali affecté, 0 + 350 000 = 350 000 € (art. 745-8, 214-15) : dépréciation de 90 000 €, imputée sur le mali (compte 29081), sans reprise possible ultérieurement. Total : 14 000 + 90 000 = **104 000 €**. Erreurs types : 143 000 € (affectation au prorata de toutes les plus-values : amortissement 195 000 / 15 = 13 000 et dépréciation 390 000 − 260 000 = 130 000), 90 000 € (amortissement de la part construction oublié)."
+        },
+        {
+          "id": "q11-retraitements-fiscaux",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l’aide du contexte, des annexes 1 et 4 et de vos réponses précédentes, calculez le montant total des réintégrations extra-comptables que Rivages doit effectuer sur son résultat fiscal de l’exercice N au titre du mali de fusion (en euros).",
+          "expected_value": 314000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Sous le régime de faveur, l’inscription du mali technique à l’actif ne peut donner lieu à aucune déduction ultérieure (CGI art. 210 A, 1, al. 3 ; BOI-IS-FUS-10-50-20) : l’amortissement de 14 000 € et la dépréciation de 90 000 € sont réintégrés. Le vrai mali (210 000 €) est une moins-value d’annulation de titres de participation détenus depuis plus de deux ans : elle relève du régime des moins-values à long terme et, pour les titres de participation, du secteur taxé au taux de 0 % (CGI art. 219, I, a quinquies) ; elle n’est donc pas déductible du résultat imposable au taux normal et est réintégrée (Rivages n’a pas d’autre plus ou moins-value à long terme en N). La conclusion serait la même si l’administration démontrait que le surprix rémunère les avantages de la prise de contrôle (synergies) : cette fraction du vrai mali reste non déductible (BOI-IS-FUS-10-50-20, § 60). Total : 210 000 + 14 000 + 90 000 = **314 000 €**. Le bénéfice intercalaire et l’élimination de la marge interne, déjà compris dans le résultat comptable, ne donnent lieu à aucun retraitement : le résultat de la période intercalaire est imposé chez Rivages. Les amortissements dérogatoires de Corniche, reconstitués au passif de Rivages, seront imposés lors de leur reprise. Erreurs types : 104 000 € (vrai mali oublié), 210 000 € (amortissement et dépréciation du mali crus déductibles)."
+        },
+        {
+          "id": "q12-demarche-audit",
+          "kind": "open",
+          "points": 2.5,
+          "prompt": "À l’aide de l’ensemble des annexes, présentez pour Mme Lemoine les principaux risques d’anomalies significatives liés à la fusion dans les comptes N de Rivages et les procédures d’audit à mettre en œuvre en réponse, en citant les normes d’exercice professionnel applicables. Indiquez les conséquences si M. Aubert refusait de corriger son projet.",
+          "model_answer": "**Risques d’anomalies significatives** (NEP 315). La fusion est une opération non courante, de montant élevé, qui repose sur des jugements :\n- évaluation des apports : la valeur réelle retenue par M. Aubert est contraire au PCG (apports à la valeur comptable en contrôle commun) ; risque sur l’existence et l’évaluation des actifs inscrits (plus-values de 800 000 € et fonds commercial de 500 000 €) ;\n- calcul et affectation du mali (910 000 € de mali technique, 210 000 € de vrai mali en résultat), qui dépendent des valeurs réelles fixées par l’évaluateur : estimations comptables à forte subjectivité ;\n- suivi du mali : amortissement de la part construction et dépréciation de la part fonds commercial (90 000 €) omis dans le projet ;\n- rétroactivité : reprise du résultat intercalaire, élimination des opérations réciproques et de la marge en stock (12 000 €) ;\n- informations en annexe (PCG art. 838-14).\n\n**Procédures en réponse** :\n- éléments probants sur la réalité juridique et les termes de l’opération (NEP 500) : traité de fusion, procès-verbaux des AGE du 28 juin N, rapport du commissaire à la fusion, état des titres, contrôle de la parité, du nombre d’actions émises et des écritures (recalcul de la prime et du mali) ;\n- estimations comptables (NEP 540) : appréciation du processus de la direction (méthode d’affectation de l’article 745-5, hypothèses de l’évaluateur sur les plus-values et le fonds commercial, cohérence avec les données de marché), recours aux événements postérieurs à la clôture (évolution du chiffre d’affaires avec les clients de Corniche) ou établissement d’une estimation propre, notamment pour la valeur actuelle du fonds commercial au 31/12/N ;\n- travaux de l’évaluateur (NEP 620) : l’expert étant choisi par l’entité, appréciation de sa compétence et de son indépendance et du caractère approprié de ses travaux comme éléments probants ;\n- période intercalaire : rapprochement des comptes de Corniche au 28 juin N avec les écritures de reprise, contrôle de l’élimination des opérations réciproques et de la marge en stock ;\n- contrôle de l’information donnée en annexe sur l’opération et le mali.\n\n**Conséquences d’un refus de correction.** Les anomalies relevées (actif surévalué, charges d’amortissement et de dépréciation omises, absence d’information) sont comparées au seuil de signification ; si, individuellement ou cumulées, elles sont significatives sans être diffuses, le commissaire aux comptes formule une **certification avec réserve** pour désaccord (NEP 700), en décrivant les montants en cause dans la partie « fondement de l’opinion ». Le traitement de la fusion pourra aussi faire l’objet d’une justification des appréciations dans son rapport (NEP 702, Rivages n’étant pas une entité d’intérêt public).",
+          "key_points": [
+            "Risques : valeur d’apport contraire au PCG, mali et affectation fondés sur des estimations, suivi du mali omis, rétroactivité, annexe",
+            "NEP 500 : traité, PV d’AGE, rapport du commissaire à la fusion, recalcul de la parité, de la prime et du mali",
+            "NEP 540 : processus d’estimation, hypothèses de l’évaluateur, événements postérieurs ou estimation propre (valeur du fonds commercial)",
+            "NEP 620 : compétence, indépendance et travaux de l’évaluateur choisi par l’entité",
+            "Refus de corriger une anomalie significative non diffuse : certification avec réserve pour désaccord ; justification des appréciations (NEP 702)"
+          ],
+          "explanation": "La réponse doit relier les risques aux faits du dossier (valeur réelle retenue à tort, mali non affecté, dotations omises, période intercalaire) et proposer des procédures ciblées, en mobilisant les normes adaptées : prise de connaissance et évaluation des risques (NEP 315), caractère probant des éléments (NEP 500), estimations comptables (NEP 540), intervention d’un expert (NEP 620), puis l’incidence sur l’opinion et la justification des appréciations (NEP 702)."
+        }
+      ],
+      "explanation": "Méthode : (1) qualifier l’opération : Rivages contrôle Corniche (70 %), contrôle commun, apports à la valeur comptable de 1 800 000 € quelle que soit la méthode de parité (PCG art. 740-1, 743-1) ; (2) parité sur valeurs réelles homogènes, la participation de Rivages dans Corniche étant retenue à sa valeur réelle : 155 / 248 = 5/8 ; 3 750 actions émises pour les 6 000 actions des tiers, capital + 75 000 €, prime de fusion 465 000 € ; (3) mali 1 120 000 € (2 380 000 − 70 % × 1 800 000), dont mali technique 910 000 € (70 % des plus-values nettes des engagements de retraite) affecté au terrain (350 000), aux constructions (210 000) puis au fonds commercial pour le solde (350 000), et vrai mali 210 000 € en charges financières ; (4) période intercalaire : bénéfice de 120 000 € repris en résultat, marge interne de 12 000 € éliminée ; (5) suivi : amortissement du mali sur constructions 14 000 € et dépréciation du mali sur fonds commercial 90 000 € ; réintégrations fiscales de 314 000 € (mali technique non déductible, vrai mali en moins-value à long terme à 0 %) ; (6) démarche d’audit fondée sur les NEP 315, 500, 540, 620 et 702. Points de vigilance : ne pas confondre parité et valeur d’apport, ne pas rémunérer les titres détenus, respecter l’ordre d’affectation de l’article 745-5, calculer le mali à la date d’effet."
+    }
+  ]
+}

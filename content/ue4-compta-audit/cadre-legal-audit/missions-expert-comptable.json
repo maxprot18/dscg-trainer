@@ -64,6 +64,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : l'audit donne une assurance raisonnable avec une opinion positive (« les comptes sont réguliers et sincères »), pas « nous n'avons pas relevé ».",
+        "Inexact : c'est la compilation qui ne procure aucune assurance ; l'examen limité en procure une.",
+        "Exact : l'examen limité, fondé sur entretiens et procédures analytiques, procure une assurance modérée, d'où la formulation négative.",
+        "Inexact : la présentation des comptes aboutit à une attestation de cohérence et de vraisemblance, de portée inférieure à l'examen limité."
+      ],
       "explanation": "L'examen limité, fondé essentiellement sur des entretiens et des procédures analytiques, procure une assurance modérée, d'où la formulation négative (« nous n'avons pas relevé… »). L'audit procure une assurance raisonnable, avec une opinion positive (« les comptes sont réguliers et sincères »). La compilation ne procure aucune assurance. La présentation des comptes conduit à une attestation sur la cohérence et la vraisemblance, de portée inférieure à l'examen limité."
     },
     {
@@ -110,6 +116,12 @@
       ],
       "answer": [
         0
+      ],
+      "option_explanations": [
+        "Exact : tenir la comptabilité puis certifier crée une autorévision interdite pour toute entité, et l'interdiction s'étend au réseau.",
+        "Inexact : séparer les équipes ne suffit pas ; l'interdiction d'autorévision ne peut être levée par des mesures de sauvegarde.",
+        "Inexact : l'interdiction d'autorévision vaut pour toute entité, EIP ou non.",
+        "Inexact : l'interdiction s'étend aux membres du réseau d'Hydre ; la société du réseau ne peut pas davantage être désignée."
       ],
       "explanation": "Tenir la comptabilité ou établir les comptes, puis les certifier, place le professionnel en situation d'autorévision : ce service est interdit au commissaire aux comptes de toute entité, EIP ou non, et l'interdiction s'étend aux membres de son réseau. Une séparation des équipes ne suffit pas, l'interdiction ne pouvant être levée par des mesures de sauvegarde. Nu doit donc désigner un CAC extérieur au réseau d'Hydre, ou Hydre (ou une société de son réseau) doit cesser la tenue de la comptabilité pour pouvoir être désigné."
     },

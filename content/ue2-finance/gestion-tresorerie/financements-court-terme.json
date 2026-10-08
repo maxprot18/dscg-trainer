@@ -24,6 +24,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : l'escompte est avec recours ; un effet impayé est contrepassé au débit de l'entreprise.",
+        "Inexact : dans la cession Dailly, le cédant reste garant solidaire du paiement (C. mon. fin., art. L. 313-24).",
+        "Exact : l'affacturage avec garantie combine financement, recouvrement et garantie : le factor ne se retourne pas contre l'adhérent pour une créance approuvée.",
+        "Inexact : le crédit de campagne finance un besoin saisonnier sans mobiliser de créances ni couvrir le risque client."
+      ],
       "explanation": "L’affacturage avec garantie (option 3) combine financement, recouvrement et garantie contre l’insolvabilité des débiteurs : le factor ne peut pas se retourner contre l’adhérent pour une créance approuvée. L’escompte (option 1) est avec recours : un effet impayé est contrepassé au débit de l’entreprise. Dans la cession Dailly (option 2), le cédant reste garant solidaire du paiement. Le crédit de campagne (option 4) finance un besoin saisonnier sans mobiliser de créances ni couvrir le risque client."
     },
     {
@@ -50,6 +56,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : ce ne sont pas des crédits bancaires, mais des titres émis directement sur le marché monétaire.",
+        "Inexact : au-delà d'un an, on parle de NEU MTN, non de NEU CP.",
+        "Inexact : le montant unitaire minimal élevé (150 000 €) et l'information exigée les réservent en pratique aux grandes entreprises.",
+        "Exact : titres de créances négociables émis sur le marché monétaire pour un an au plus : financement désintermédié, proche des taux de marché."
       ],
       "explanation": "Les NEU CP sont des titres de créances négociables émis par les entreprises sur le marché monétaire, pour une durée d’un an au plus (option 4) : c’est un financement désintermédié, au coût proche des taux de marché. Ce ne sont pas des crédits bancaires (option 1). Au-delà d’un an, on parle de NEU MTN, non de NEU CP (option 2). Le montant unitaire minimal élevé (150 000 €) et les exigences d’information les réservent en pratique aux grandes entreprises (option 3)."
     },

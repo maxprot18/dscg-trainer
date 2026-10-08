@@ -23,6 +23,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : l'abus de biens sociaux est prévu pour la SARL par l'article L241-3 du Code de commerce.",
+        "Inexact : l'abus de biens sociaux est prévu pour la SAS par l'article L244-1 du Code de commerce.",
+        "Exact : l'ABS n'existe pas dans les sociétés de personnes comme la SNC ; le dirigeant peut être poursuivi pour abus de confiance (C. pén. 314-1).",
+        "Inexact : l'abus de biens sociaux est prévu pour la SA par l'article L242-6 du Code de commerce."
+      ],
       "explanation": "Le délit d'abus de biens sociaux est prévu par le Code de commerce pour les SARL (L241-3), les SA (L242-6) et les SAS (L244-1), ainsi que pour les autres sociétés par actions. Il n'existe pas pour les sociétés de personnes comme la SNC (option 3) ni pour les sociétés civiles : le dirigeant peut alors être poursuivi pour abus de confiance (C. pén. art. 314-1).",
       "source_ref": "C. com. L241-3, L242-6 et L244-1 ; C. pén. art. 314-1",
       "estimated_seconds": 45,
@@ -170,6 +176,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : l'intérêt du dirigeant dans Beta fait entrer l'opération dans le champ de l'ABS, mais n'exclut pas le fait justificatif tiré du groupe.",
+        "Inexact : l'appartenance au groupe ne suffit pas ; les trois conditions de la jurisprudence Rozenblum doivent être vérifiées.",
+        "Inexact : l'ABS vise aussi le fait de favoriser une autre société dans laquelle le dirigeant est intéressé (L242-6).",
+        "Exact : politique de groupe, avance rémunérée au taux du marché, 5 % de la trésorerie : les conditions du fait justificatif Rozenblum paraissent réunies."
+      ],
       "explanation": "L'ABS vise aussi l'usage des biens sociaux destiné à favoriser une autre société dans laquelle le dirigeant est intéressé directement ou indirectement (C. com. L242-6 pour la SA). Mais la jurisprudence (arrêt « Rozenblum ») admet un fait justificatif dans les groupes : le concours doit être dicté par un intérêt économique, social ou financier commun apprécié au regard d'une politique élaborée pour l'ensemble du groupe, ne pas être démuni de contrepartie ou rompre l'équilibre des engagements réciproques, et ne pas excéder les possibilités financières de la société qui le supporte. Ici : plan de groupe, avance rémunérée au taux du marché, 5 % de la trésorerie : les conditions paraissent réunies (option 4).\nL'option 1 est fausse : l'intérêt du dirigeant dans Beta fait entrer l'opération dans le champ de l'ABS, mais n'exclut pas le fait justificatif. L'option 2 est fausse : l'appartenance au groupe ne suffit pas, les trois conditions doivent être vérifiées. L'option 3 est fausse : le texte vise aussi le fait de favoriser une autre entreprise dans laquelle le dirigeant est intéressé.",
       "source_ref": "C. com. art. L242-6 (ABS dans la SA) ; Cass. crim., 4 févr. 1985, « Rozenblum » (fait justificatif tiré de l’intérêt de groupe)",
       "verified": true,

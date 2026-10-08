@@ -4,7 +4,7 @@
 
 **Enjeu :** classer un avantage dans l'une des quatre catégories, distinguer cotisations définies et prestations définies, puis décomposer la variation du passif net d'un régime à prestations définies entre résultat et OCI ; calcul classique avec écart actuariel.
 
-**Quatre catégories (§5)** : avantages à court terme, postérieurs à l'emploi, autres avantages à long terme, indemnités de fin de contrat de travail. La catégorie détermine la méthode d'évaluation et la contrepartie des écarts.
+**Quatre catégories (§5)** : avantages à court terme, postérieurs à l'emploi, autres avantages à long terme, indemnités de cessation d'emploi (usage courant : de fin de contrat de travail). La catégorie détermine la méthode d'évaluation et la contrepartie des écarts.
 
 **Court terme (§9-25)** : salaires, congés payés, primes et intéressement réglés intégralement dans les 12 mois suivant la clôture de l'exercice où les services sont rendus ; charge de la période et passif pour la part non réglée, **sans actualisation** (§11). Les congés cumulables non pris sont provisionnés ; les congés non cumulables ne le sont pas (§13-16).
 
@@ -13,7 +13,7 @@
 - régime à **prestations définies** (§30) : l'entité garantit un niveau de prestations et supporte les risques (ex. indemnités de fin de carrière conventionnelles, retraites supplémentaires « chapeau ») ; un régime multi-employeurs ou assuré est à prestations définies si l'entité conserve le risque (§32-39, §46-49).
 
 **Prestations définies** :
-- engagement (DBO) évalué selon la **méthode des unités de crédit projetées** (§67-69) : chaque période de service génère une unité supplémentaire de droits, avec hypothèses démographiques et financières (rotation, mortalité, hausse des salaires, §76), actualisées au taux des obligations d'entreprises de première catégorie, ou d'État à défaut de marché large (§83) ;
+- engagement (obligation au titre des prestations définies, DBO) évalué selon la **méthode des unités de crédit projetées** (§67-69) : chaque période de service génère une unité supplémentaire de droits, avec hypothèses démographiques et financières (rotation, mortalité, hausse des salaires, §76), actualisées au taux des obligations d'entreprise de haute qualité, ou d'État à défaut de marché profond (§83) ;
 - passif net = DBO − juste valeur des actifs du régime (§57, §63), actif net plafonné au « plafond de l'actif » (§64) ;
 - coût des services (rendus, passés, liquidations) et **intérêt net** (taux d'actualisation × passif ou actif net d'ouverture) en **résultat** (§120, §123) ;
 - **réévaluations** (écarts actuariels, rendement des actifs hors intérêt calculé, variation du plafond) en **OCI**, jamais recyclées en résultat, transfert en réserves possible (§120c, §122, §127).
@@ -22,7 +22,7 @@
 
 **Autres avantages à long terme (§153-158)** : ex. médailles du travail, congés sabbatiques, primes d'ancienneté ; même évaluation que les prestations définies, mais **tout en résultat**, y compris les réévaluations (§156).
 
-**Indemnités de fin de contrat (§159-171)** : constatées à la première des deux dates suivantes : l'entité ne peut plus retirer son offre, ou elle comptabilise les coûts d'une restructuration IAS 37 impliquant ces indemnités (§165) ; actualisées si réglées au-delà de 12 mois (§169).
+**Indemnités de cessation d'emploi (§159-171)** : constatées à la première des deux dates suivantes : l'entité ne peut plus retirer son offre, ou elle comptabilise les coûts d'une restructuration IAS 37 impliquant ces indemnités (§165) ; actualisées si réglées au-delà de 12 mois (§169).
 
 **Formules clés :** DBO clôture attendue = DBO ouverture + coût des services + intérêt (taux × DBO ouverture) − prestations payées ; écart actuariel = DBO réelle − DBO attendue ; intérêt net = taux × (DBO − actifs) d'ouverture
 

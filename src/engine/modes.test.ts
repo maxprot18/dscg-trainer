@@ -12,8 +12,17 @@ import {
   examGrade,
   SMART_PER_NOTION,
   smartNotionOrder,
+  targetDifficulty,
 } from './session'
-import { buildSession, parseSessionSearch, sessionSearch, timeLimit, type ExamDurations } from './sessionConfig'
+import {
+  buildSession,
+  parseSessionSearch,
+  QUICK_SESSION_FILES,
+  sessionFiles,
+  sessionSearch,
+  timeLimit,
+  type ExamDurations,
+} from './sessionConfig'
 import { DAY_MS } from './srs'
 
 const mcq = exerciseSchema.parse(exampleExercises.mcq)
@@ -64,6 +73,23 @@ describe('révision intelligente', () => {
     expect(n2).toEqual(expect.arrayContaining(['n2-2', 'n2-4']))
     for (const n of new Set(s.map((e) => e.notion))) expect(s.filter((e) => e.notion === n).length).toBeLessThanOrEqual(SMART_PER_NOTION)
     expect(buildSmartSession(pool, { attempts, reviews: [] }, T0, 7, 20)).toHaveLength(18)
+  })
+
+  it('difficulté adaptative : le niveau visé monte avec la réussite récente sur la notion', () => {
+    const tries = (results: boolean[]) => results.map((ok, i) => attempt(`x${i}`, 'n', ok, T0 + i))
+    expect(targetDifficulty([])).toBe(1)
+    expect(targetDifficulty(tries([false, false, true]))).toBe(1)
+    expect(targetDifficulty(tries([true, false, true]))).toBe(2)
+    // Seules les 5 dernières tentatives comptent.
+    expect(targetDifficulty(tries([false, false, false, true, true, true, true, true]))).toBe(3)
+
+    // Notion nouvelle : les exercices de niveau 1 d'abord ; notion bien réussie : niveau 3 d'abord.
+    const levels = [1, 2, 3, 1, 2, 3].map((d, i) => ex(`m${i}`, { notion: 'm', difficulty: d as 1 | 2 | 3 }))
+    const fresh = buildSmartSession(levels, { attempts: [], reviews: [] }, T0, 5)
+    expect(fresh.map((e) => e.difficulty).sort()).toEqual([1, 1, 2])
+    const strong = Array.from({ length: 5 }, (_, i) => attempt(`old${i}`, 'm', true, T0 - DAY_MS + i))
+    const advanced = buildSmartSession(levels, { attempts: strong, reviews: [review('m', T0 - 1)] }, T0, 5)
+    expect(advanced.map((e) => e.difficulty).sort()).toEqual([2, 3, 3])
   })
 
   it('déterministe pour une graine et un historique donnés', () => {
@@ -212,5 +238,70 @@ describe('examen blanc avec dossiers de type examen', () => {
     for (const config of [{ mode: 'quick', seed: 1 }, { mode: 'smart', seed: 1 }, { mode: 'theme', seed: 1, scope: { ue: mcq.ue } }] as const) {
       expect(buildSession(config, pool, durations).some((e) => e.id.startsWith('d'))).toBe(false)
     }
+  })
+})
+
+describe('sujet complet', () => {
+  const dossier = (id: string, seconds: number) => ex(id, { type: 'case_study', dossier: true, estimated_seconds: seconds } as Partial<Exercise>)
+  const caseStudy = (id: string, seconds: number) => ex(id, { type: 'case_study', estimated_seconds: seconds } as Partial<Exercise>)
+
+  it('des dossiers jusqu’à la durée de l’épreuve, complétés par des cas, sans questions courtes', () => {
+    const pool = [dossier('d1', 4800), dossier('d2', 5400), dossier('d3', 5400), caseStudy('c1', 600), caseStudy('c2', 900), ...pool6()]
+    const full = buildSession({ mode: 'full', seed: 3, ue: mcq.ue }, pool, durations)
+    const ds = full.filter((e) => e.id.startsWith('d'))
+    expect(ds).toHaveLength(2) // 240 min : deux dossiers de 80-90 min, pas trois
+    expect(full.slice(0, 2).every((e) => e.id.startsWith('d'))).toBe(true)
+    expect(full.every((e) => e.type === 'case_study')).toBe(true)
+    expect(full.reduce((s, e) => s + e.estimated_seconds, 0)).toBeLessThanOrEqual(240 * 60)
+  })
+
+  it('vide s’il y a moins de deux dossiers dans l’UE', () => {
+    expect(buildSession({ mode: 'full', seed: 3, ue: mcq.ue }, [dossier('d1', 4800), ...pool6()], durations)).toEqual([])
+  })
+
+  it('URL, chrono et périmètre comme l’examen blanc', () => {
+    const config = { mode: 'full', seed: 4, ue: 'UE2' } as const
+    expect(parseSessionSearch(new URLSearchParams(sessionSearch(config).slice(1)))).toEqual(config)
+    expect(parseSessionSearch(new URLSearchParams('mode=full&seed=4'))).toBeNull()
+    expect(timeLimit(config, durations)).toBe(180 * 60)
+  })
+
+  function pool6() {
+    return Array.from({ length: 6 }, (_, i) => ex(`q${i}`, { estimated_seconds: 120 }))
+  }
+})
+
+describe('fichiers chargés par une session', () => {
+  const slugs = { UE1: 'ue1-j', UE2: 'ue2-f', UE3: 'ue3-m', UE4: 'ue4-c', UE5: 'ue5-s', UE6: 'ue6-e' } as const
+  const paths = [
+    '/content/ue4-c/ifrs/ias-16.json',
+    '/content/ue4-c/ifrs/ias-36.json',
+    '/content/ue4-c/consolidation/perimetre.json',
+    '/content/ue4-c/sujets-examen.json',
+    '/content/ue4-c/sujets-examen-2.json',
+    '/content/ue2-f/van.json',
+    ...Array.from({ length: 30 }, (_, i) => `/content/ue1-j/t${i}/n.json`),
+  ]
+  const files = (config: Parameters<typeof sessionFiles>[0]) => sessionFiles(config, paths, slugs)
+
+  it('thème : son dossier et les fichiers à la racine de l’UE ; examen : toute l’UE', () => {
+    expect(files({ mode: 'theme', seed: 1, scope: { ue: 'UE4', theme: 'ifrs' } })).toEqual([
+      '/content/ue4-c/ifrs/ias-16.json',
+      '/content/ue4-c/ifrs/ias-36.json',
+      '/content/ue4-c/sujets-examen.json',
+      '/content/ue4-c/sujets-examen-2.json',
+    ])
+    expect(files({ mode: 'full', seed: 1, ue: 'UE4' })).toHaveLength(5)
+    expect(files({ mode: 'theme', seed: 1, scope: { ue: 'UE2' } })).toEqual(['/content/ue2-f/van.json'])
+  })
+
+  it('session rapide : quelques fichiers tirés avec la graine, sans sujets d’examen ; sinon tout', () => {
+    const quick = files({ mode: 'quick', seed: 9 })!
+    expect(quick).toHaveLength(QUICK_SESSION_FILES)
+    expect(quick.some((p) => p.includes('sujets-examen'))).toBe(false)
+    expect(files({ mode: 'quick', seed: 9 })).toEqual(quick)
+    expect(files({ mode: 'smart', seed: 9 })).toBeUndefined()
+    expect(files({ mode: 'errors', seed: 9 })).toBeUndefined()
+    expect(files({ mode: 'smart', seed: 9, ues: ['UE2'] })).toEqual(['/content/ue2-f/van.json'])
   })
 })

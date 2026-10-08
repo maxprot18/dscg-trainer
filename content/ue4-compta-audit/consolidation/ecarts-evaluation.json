@@ -21,6 +21,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : 160 000 € applique à tort le pourcentage d'intérêt ; en intégration globale, les actifs sont repris pour 100 % de leur juste valeur.",
+        "Inexact : 150 000 € est l'écart net d'impôt porté en capitaux propres ; l'impôt différé de 50 000 € figure séparément au passif.",
+        "Exact : en intégration globale, l'immeuble est majoré de 100 % de l'écart, soit 200 000 €, quel que soit le pourcentage d'intérêt.",
+        "Inexact : 120 000 € (80 % × 150 000) cumule deux erreurs : pourcentage d'intérêt et déduction de l'impôt différé."
+      ],
       "explanation": "En intégration globale, les actifs identifiables de la filiale sont repris pour 100 % de leur juste valeur, quel que soit le pourcentage d'intérêt : l'immeuble est majoré de 200 000 € (option 3). L'impôt différé (200 000 × 25 % = 50 000 €) est inscrit séparément au passif ; il réduit l'écart d'évaluation net porté en capitaux propres (150 000 €), mais pas la valeur de l'immeuble. 160 000 € applique à tort le pourcentage d'intérêt (80 %) ; 150 000 € confond la valeur de l'actif avec l'écart net d'impôt ; 120 000 € cumule les deux erreurs (80 % × 150 000).",
       "source_ref": "Règl. ANC 2020-01, évaluation des actifs et passifs identifiables de l'entité acquise ; IFRS 3 §18 (règlement UE 2023/1803)",
       "verified": true,
@@ -50,6 +56,12 @@
         3
       ],
       "multiple": true,
+      "option_explanations": [
+        "Exact : la marque est un incorporel identifiable, comptabilisé même si l'acquise ne l'avait pas inscrite (IFRS 3 §B31).",
+        "Inexact : la main-d'œuvre assemblée n'est pas un actif identifiable ; sa valeur reste dans le goodwill (IFRS 3 §B37).",
+        "Inexact : une restructuration voulue par l'acquéreur n'est pas un passif de l'acquise à la date d'acquisition (IFRS 3 §11).",
+        "Exact : IFRS 3 §23 impose ce passif éventuel, obligation actuelle évaluable de façon fiable, même si la sortie n'est pas probable."
+      ],
       "explanation": "Options 1 et 4. La marque est un incorporel identifiable (issu de droits légaux, séparable) : elle est comptabilisée même si l'acquise ne l'avait pas inscrite (IFRS 3 §B31). Le litige est un passif éventuel qu'IFRS 3 §23 impose de comptabiliser dès lors qu'il s'agit d'une obligation actuelle évaluable de façon fiable, même si la sortie n'est pas probable (dérogation à IAS 37). Option 2 : la main-d'œuvre assemblée n'est pas un actif identifiable, sa valeur reste dans le goodwill (§B37). Option 3 : une restructuration voulue par l'acquéreur n'est pas un passif de l'acquise à la date d'acquisition (§11) ; elle sera comptabilisée après coup, selon IAS 37.",
       "source_ref": "IFRS 3 §11, §23, §B31 et §B37 (règlement UE 2023/1803)",
       "verified": true,

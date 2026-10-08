@@ -23,7 +23,13 @@
         3
       ],
       "multiple": false,
-      "explanation": "Option 4 is correct: an unsolicited bid rejected by the target's board is a hostile bid, and a third party invited by the target to make a more acceptable (friendly) competing offer is called a white knight. Option 1 is wrong twice: the bid is not friendly, and a poison pill is a mechanism (e.g. issuing shares to existing shareholders at a discount) that makes the takeover more expensive, not a rescuing bidder. Option 2 is wrong: a squeeze-out is carried out by a bidder that already holds a very large majority, to buy out the remaining minority. Option 3 is wrong: nothing indicates that a control threshold was crossed (mandatory bid), and Orion Retail, not the private equity firm, is the target. Under the board neutrality rule (art. 9 of the Takeover Directive, where it applies), seeking a white knight does not require prior shareholder approval.",
+      "option_explanations": [
+        "Incorrect: the bid is unsolicited and rejected, so not friendly; a poison pill is a defensive mechanism, not a rescuing bidder.",
+        "Incorrect: a squeeze-out is carried out by a bidder already holding a very large majority to buy out the minority.",
+        "Incorrect: nothing shows a control threshold was crossed, and Orion Retail, not the private equity firm, is the target.",
+        "Correct: an unsolicited bid rejected by the board is hostile; a third party invited to make a friendlier offer is a white knight."
+      ],
+      "explanation": "Option 4 is correct: an unsolicited bid rejected by the target's board is a hostile bid, and a third party invited by the target to make a more acceptable (friendly) competing offer is called a white knight. Option 1 is wrong twice: the bid is not friendly, and a poison pill is a mechanism (e.g. letting existing shareholders other than the bidder buy new shares at a discount) that makes the takeover more expensive, not a rescuing bidder. Option 2 is wrong: a squeeze-out is carried out by a bidder that already holds a very large majority, to buy out the remaining minority. Option 3 is wrong: nothing indicates that a control threshold was crossed (mandatory bid), and Orion Retail, not the private equity firm, is the target. Under the board neutrality rule (art. 9 of the Takeover Directive, where it applies), seeking a white knight does not require prior shareholder approval.",
       "source_ref": "Directive 2004/25/EC (takeover bids), art. 9 (board neutrality: frustrating action requires shareholder approval, but seeking alternative bids is expressly allowed) and art. 5 (mandatory bid)",
       "verified": true,
       "estimated_seconds": 75
@@ -151,6 +157,12 @@
         0
       ],
       "multiple": false,
+      "option_explanations": [
+        "Correct: crossing 30% triggers a mandatory bid for all remaining shares, at least at the highest price paid over twelve months.",
+        "Incorrect: a squeeze-out is only available to a holder of at least 90% of capital and voting rights.",
+        "Incorrect: 30% is treated as effective control of a listed company; no need to reach 50%.",
+        "Incorrect: merger control assesses competition and takeover law protects minorities; one does not replace the other."
+      ],
       "explanation": "Crossing the 30% threshold of capital or voting rights triggers a mandatory bid: the investor must offer to buy all the other shares, at an equitable price, in France at least the highest price paid over the previous twelve months. Option 2 confuses the mandatory bid with the squeeze-out, which is only available to a holder of at least 90% of the capital and voting rights. Option 3 ignores the fact that 30% is treated as effective control of a listed company with dispersed shareholders. Option 4 mixes up merger control, which assesses the effect on competition and may also apply, with takeover law, which protects minority shareholders: one does not replace the other.",
       "source_ref": "Directive 2004/25/EC, art. 5 (mandatory bid, equitable price) and art. 15 (squeeze-out) ; AMF General Regulation, art. 234-2 (30% threshold) and art. 234-6 (price of the mandatory offer) ; French Monetary and Financial Code, art. L. 433-4 (squeeze-out at 90%)",
       "verified": true,
@@ -179,6 +191,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: it divides instead of multiplying; implied value = 0.6 × €60 = €36, not 30 ÷ 0.6.",
+        "Incorrect: a fixed exchange ratio fixes the number of shares, not their value; only cash or a collar protects the value.",
+        "Correct: 0.6 × 60 = €36, a 20% premium; at €55, 0.6 × 55 = €33, only a 10% premium.",
+        "Incorrect: the premium is computed on the undisturbed price, not the offer price: 36 ÷ 30 − 1 = 20%."
+      ],
       "explanation": "Implied offer value = exchange ratio × bidder share price = 0.6 × 60 = €36; premium = 36 ÷ 30 − 1 = 20%. In a share-for-share offer with a fixed exchange ratio, the number of shares is fixed but their value is not: if Halden's share falls to €55 (a frequent market reaction for the bidder), the offer is worth 0.6 × 55 = €33, i.e. a premium of 33 ÷ 30 − 1 = 10%. Target shareholders thus bear part of the bidder's share price risk (and become shareholders of the combined group). Option 1 divides instead of multiplying. Option 2 confuses a fixed exchange ratio with a fixed value; only a cash offer, or a collar mechanism, protects the value. Option 4 computes the premium on the offer price instead of the undisturbed price.",
       "source_ref": "Share exchange offers: implied offer value = exchange ratio × bidder share price ; control premium = offer value ÷ undisturbed price − 1",
       "verified": true,

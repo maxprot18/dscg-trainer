@@ -22,6 +22,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : une action ne donne pas des flux uniquement de principal et d'intérêts ; le coût amorti est exclu.",
+        "Inexact : l'option OCI non recyclable n'est ouverte qu'aux instruments de capitaux propres non détenus à des fins de transaction (§5.7.5).",
+        "Inexact : coût historique et dépréciation relèvent de la logique du PCG pour les VMP, pas d'IFRS 9.",
+        "Exact : actions détenues à des fins de transaction : juste valeur par résultat (IFRS 9 §4.1.4)."
+      ],
       "explanation": "Des actions acquises pour être revendues à court terme sont détenues à des fins de transaction. Une action ne donne pas des flux uniquement constitués de principal et d'intérêts : le coût amorti et la juste valeur par OCI recyclable sont exclus. L'option pour la juste valeur par OCI non recyclable n'est ouverte qu'aux instruments de capitaux propres non détenus à des fins de transaction (§5.7.5) : elle est ici impossible. Les actions sont donc évaluées à la juste valeur par résultat (§4.1.4), les coûts de transaction étant comptabilisés en charges (§5.1.1). Le coût historique avec dépréciation est la logique du PCG pour les VMP, pas celle d'IFRS 9.",
       "source_ref": "IFRS 9 §4.1.4, §5.1.1, §5.7.1 et annexe A (définition de « détenu à des fins de transaction ») (règlement UE 2023/1803)",
       "verified": true,
@@ -48,6 +54,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : le droit de conversion fait échouer le test SPPI (B4.1.14) ; le modèle de collecte ne suffit pas au coût amorti.",
+        "Inexact : le test SPPI n'étant pas satisfait, la juste valeur par OCI recyclable est exclue.",
+        "Inexact : IFRS 9 ne sépare pas le dérivé incorporé d'un actif financier hôte (§4.3.2) ; c'était la logique d'IAS 39.",
+        "Exact : flux exposés au cours de l'action, test SPPI non satisfait : l'instrument entier va à la juste valeur par résultat (§4.1.4)."
       ],
       "explanation": "Le droit de conversion en un nombre fixe d'actions expose le porteur à la variation du cours de l'action de l'émetteur : les flux ne sont pas uniquement des remboursements de principal et des intérêts (test SPPI non satisfait, IFRS 9 B4.1.14). Le modèle économique de « collecte » ne suffit donc pas à permettre le coût amorti (option 1), ni la juste valeur par OCI recyclable (option 2). IFRS 9 ne prévoit pas de séparation d'un dérivé incorporé dans un actif financier hôte (§4.3.2 ; option 3, logique d'IAS 39) : l'instrument est classé dans son ensemble, à la juste valeur par résultat (§4.1.4).",
       "source_ref": "IFRS 9 §4.1.2-4.1.4, §4.3.2, B4.1.7A et B4.1.14 (règlement UE 2023/1803)",

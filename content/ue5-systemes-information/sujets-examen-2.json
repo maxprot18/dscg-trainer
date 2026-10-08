@@ -1,0 +1,428 @@
+{
+  "exercises": [
+    {
+      "id": "ue5-dossier-0003",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE5",
+      "theme": "securite-durabilite-si",
+      "notion": "politique-securite-continuite",
+      "difficulty": 3,
+      "tags": [
+        "dossier",
+        "DORA",
+        "NIS 2",
+        "incident majeur",
+        "notification",
+        "disponibilité",
+        "SLA",
+        "PCA",
+        "PRA",
+        "RTO",
+        "RPO",
+        "contrôles généraux informatiques",
+        "habilitations",
+        "gestion des changements"
+      ],
+      "source_ref": "Règlement (UE) 2022/2554 (DORA), art. 2, 5, 6, 11, 12, 13, 16, 17, 19, 28, 30 et 64 ; règlement délégué (UE) 2025/301, art. 5 (délais de déclaration) ; directive (UE) 2022/2555 (NIS 2), art. 4 et considérant 28 ; RGPD art. 33 ; ISO 22301 (bilan d'impact, RTO, RPO) ; ISO/IEC 27001:2022 ; COBIT 2019 (contrôles généraux informatiques)",
+      "verified": true,
+      "estimated_seconds": 5100,
+      "total_points": 20,
+      "title": "Cybersécurité, continuité et contrôle du SI",
+      "context": "**Tempo Paiement SA**, établie à Nantes, est un établissement de paiement agréé par l'Autorité de contrôle prudentiel et de résolution (ACPR). Elle propose à 7 800 commerçants l'acceptation des paiements par carte, en magasin et en ligne : elle transmet chaque demande d'autorisation au réseau de cartes, puis verse aux commerçants, le lendemain, le montant des ventes encaissées, diminué de sa commission. En 2025, elle a traité 210 millions d'opérations représentant 4,1 Md€ ; elle emploie 145 salariés, son chiffre d'affaires s'élève à 31 M€ et son total de bilan à 64 M€. Elle est administrée par un conseil d'administration.\n\nLe cœur de son système d'information est la plateforme d'autorisation **Autor**, développée en interne et hébergée dans le centre de données nantais de la société DataOuest, prestataire d'hébergement et d'infrastructure. Le reste du SI est décrit en annexe 1.\n\nEn septembre 2026, Autor a connu plusieurs interruptions, dont une de neuf heures provoquée par une mise en production non maîtrisée. L'ACPR a demandé des explications sur la déclaration tardive de cet incident, et le commissaire aux comptes a signalé des faiblesses dans les contrôles généraux informatiques.\n\nLa directrice générale, Mme Kervella, vous confie, en tant que consultant(e) d'un cabinet d'expertise comptable et d'audit, une mission en trois volets : préciser le cadre réglementaire applicable et apprécier la gestion de l'incident ; mesurer la disponibilité d'Autor et choisir une solution de continuité ; évaluer les contrôles généraux informatiques et proposer un plan d'action au conseil d'administration. Les données utiles figurent dans les annexes 1 à 5.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Système d'information de Tempo et bilan d'impact sur l'activité",
+          "content": "**Applications et objectifs du bilan d'impact** (RTO : durée maximale d'interruption admissible ; RPO : perte de données maximale admissible) :\n\n| Application | Fonction | Hébergement | RTO | RPO |\n| --- | --- | --- | --- | --- |\n| Autor | Autorisation et routage des paiements (fonction critique) | DataOuest, Nantes | 4 h | 15 min |\n| Règl | Calcul des commissions et versement des fonds aux commerçants (fonction critique) | DataOuest, Nantes | 24 h | 1 h |\n| Compta | Comptabilité générale (progiciel en mode SaaS) | Éditeur SaaS, France | 72 h | 24 h |\n| Portail | Espace en ligne des commerçants | DataOuest, Nantes | 24 h | 4 h |\n\n**Situation actuelle** : Autor fonctionne 24 h/24. Une sauvegarde complète est faite chaque nuit à 23 h et copiée sur des serveurs de réserve conservés dans les bureaux de Rennes ; il n'existe aucun site de secours opérationnel. La politique de continuité date de 2021 : elle n'a jamais été présentée au conseil d'administration ni testée. Aucune alerte automatique ne surveille le taux de refus des autorisations.\n\n**Changements** : toute mise en production doit être enregistrée dans l'outil de tickets « Chg », qui impose en principe une recette par le service utilisateur et l'approbation du comité des changements.\n\n**Statut réglementaire** : Tempo n'est ni une microentreprise ni un établissement de paiement exempté."
+        },
+        {
+          "title": "Annexe 2 — Chronologie des interruptions de septembre 2026 et règles de déclaration",
+          "content": "**Lundi 7 septembre 2026** (incident « routage ») :\n- **2 h 05** : M. Morin, développeur, déploie directement en production une correction du module de routage d'Autor, hors de la fenêtre de changement, sans ticket ni recette.\n- **5 h 40** : avec la montée du trafic du matin, le module corrompt une table de paramétrage ; 62 % des demandes d'autorisation sont refusées à tort. Autor est considéré comme indisponible à partir de cette heure.\n- **6 h 10** : alertée par les appels de commerçants, l'équipe d'astreinte constate l'incident.\n- **9 h 30** : réunion de la cellule de crise.\n- **14 h 00** : la cellule de crise classe l'incident comme **majeur** au regard des critères de classification.\n- **14 h 40** : retour à la version antérieure du module et restauration de la table de paramétrage ; le service est rétabli. Bilan : 1,9 million d'opérations refusées, 3 400 commerçants touchés.\n- **Mardi 8 septembre, 11 h 00** : envoi de la notification initiale à l'ACPR.\n- **Mercredi 9 septembre** : courriel d'information aux commerçants.\n\n**Dimanche 13 septembre, 1 h 00 à 2 h 30** : maintenance planifiée de l'infrastructure par DataOuest, notifiée à Tempo le mardi 1er septembre ; Autor est indisponible pendant toute la maintenance.\n\n**Lundi 21 septembre, 15 h 10 à 17 h 25** : panne d'un routeur dans le centre de données de DataOuest ; Autor est inaccessible.\n\n**Délais de déclaration d'un incident majeur retenus pour le sujet** (normes techniques prises en application de l'article 20 du règlement DORA : règlement délégué (UE) 2025/301, art. 5) : notification initiale dans les 4 heures suivant la classification de l'incident comme majeur, et au plus tard 24 heures après que l'entité en a eu connaissance ; rapport intermédiaire dans les 72 heures suivant la notification initiale ; rapport final au plus tard un mois après le dernier rapport intermédiaire."
+        },
+        {
+          "title": "Annexe 3 — Extrait du contrat d'hébergement conclu avec DataOuest (2023)",
+          "content": "**Article 4 — Niveau de service.** DataOuest garantit une disponibilité mensuelle de l'infrastructure hébergée de 99,9 %. Disponibilité = (heures du mois − heures d'indisponibilité imputables à DataOuest) ÷ heures du mois. Ne sont pas imputables à DataOuest : les indisponibilités causées par le client, ses applications ou ses mises à jour ; les maintenances planifiées notifiées au moins cinq jours ouvrés à l'avance.\n\n**Article 5 — Pénalités**, en pourcentage de la redevance mensuelle (36 000 € HT) :\n\n| Disponibilité mensuelle mesurée | Pénalité |\n| --- | --- |\n| 99,9 % ou plus | Aucune |\n| De 99,5 % inclus à 99,9 % exclu | 10 % |\n| De 99 % inclus à 99,5 % exclu | 25 % |\n| Moins de 99 % | 50 % |\n\n**Article 8 — Contrôle.** Tempo peut obtenir une fois par an le certificat ISO 27001 de DataOuest. Aucun droit d'audit ni d'accès aux locaux n'est prévu.\n\n**Article 11 — Fin du contrat.** Préavis de douze mois. Le sort des données et l'assistance à la migration vers un autre prestataire ne sont pas précisés.\n\nLe contrat ne prévoit ni l'obligation pour DataOuest d'informer Tempo de ses propres incidents, ni celle de tester ses plans de secours."
+        },
+        {
+          "title": "Annexe 4 — Solutions de continuité étudiées pour Autor",
+          "content": "**Scénario de référence** : perte totale du centre de données de Nantes (incendie, panne électrique prolongée, rançongiciel sur l'infrastructure). Probabilité annuelle estimée : 8 %. Coût d'une heure d'interruption d'Autor (commissions perdues, pénalités dues aux grandes enseignes, gestes commerciaux) : 30 000 €.\n\n| Option | Description | Délai de reprise | Perte de données maximale | Coût annuel |\n| --- | --- | --- | --- | --- |\n| A — Site froid | Restauration sur les serveurs de réserve de Rennes à partir de la sauvegarde de la nuit | 48 h | 24 h | 60 000 € |\n| B — Site tiède | Second centre de données à Lyon chez un autre prestataire ; réplication asynchrone toutes les 5 minutes ; bascule manuelle | 3 h | 5 min | 190 000 € |\n| C — Deux sites actifs | Nantes et Lyon traitent en parallèle ; réplication synchrone ; bascule automatique | 15 min | 0 | 380 000 € |\n\n**Coût annuel total espéré** d'une option = coût annuel de l'option + probabilité annuelle du sinistre × délai de reprise (en heures) × coût d'une heure d'interruption."
+        },
+        {
+          "title": "Annexe 5 — Travaux sur les contrôles généraux informatiques (septembre 2026)",
+          "content": "**Règles d'habilitation de la politique de sécurité (PSSI, 2022)** :\n1. Les comptes sont nominatifs ; un compte non nominatif n'est admis que pour un compte de service non interactif, rattaché à un responsable nommé.\n2. Aucun développeur ne dispose de droits de modification ou de déploiement en production.\n3. Les droits sont retirés le jour du départ de l'entreprise ou du changement de fonction.\n4. Les accès des prestataires sont nominatifs et limités dans le temps.\n\n**Comptes disposant de droits sur la production d'Autor** (situation au 15 septembre 2026) :\n\n| Compte | Titulaire et fonction | Droits en production | Situation |\n| --- | --- | --- | --- |\n| adm.lefort | J. Lefort, administrateur systèmes | Administration | En poste |\n| adm.benali | S. Benali, administratrice des bases de données | Administration | En poste |\n| dev.morin | T. Morin, développeur | Déploiement | En poste |\n| dev.kane | A. Kane, développeuse | Lecture seule | En poste |\n| adm.roux | P. Roux, ancien administrateur systèmes | Administration | Parti le 30 juin 2026 ; dernière connexion le 12 juillet 2026 |\n| ops.nuit | Compte commun aux cinq agents d'astreinte | Administration | Mot de passe partagé, connexions interactives |\n| adm.picard | L. Picard, responsable de l'exploitation | Administration | En poste |\n| ext.lemoine | R. Lemoine, technicien de DataOuest | Console d'infrastructure | Accès nominatif, expire le 31 décembre 2026 |\n| dev.lucas | M. Lucas, développeur | Déploiement | En poste |\n| adm.giraud | C. Giraud, ancien administrateur des bases de données | Administration | Muté au contrôle de gestion le 1er mai 2026 |\n| svc.batch | Compte de service des traitements de nuit | Exécution des traitements | Non interactif, rattaché à L. Picard |\n| adm.henry | E. Henry, ingénieur réseau | Administration | En poste |\n\n**Test de la gestion des changements** : population de 214 changements enregistrés dans l'outil Chg du 1er janvier au 31 août 2026 ; échantillon aléatoire de 25 changements. Constats : 3 changements sans preuve de recette ; 2 changements mis en production sans approbation du comité des changements ; un même changement figure dans les deux constats. Taux d'écart tolérable fixé par l'auditeur : 5 %.\n\n**Rapprochement complémentaire** : la comparaison des journaux de déploiement d'Autor avec l'outil Chg, du 1er janvier au 15 septembre 2026, fait apparaître 6 mises en production sans ticket, dont celle du 7 septembre à 2 h 05.\n\n**Contrôles automatisés sur lesquels le commissaire aux comptes envisage de s'appuyer** : calcul automatique des commissions par Règl à partir des opérations autorisées par Autor ; blocage par Règl de tout versement vers un compte bancaire de commerçant modifié depuis moins de 48 heures sans seconde validation."
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1-cadre-applicable",
+          "kind": "mcq",
+          "prompt": "À l'aide du contexte et de l'annexe 1, indiquez le cadre réglementaire de cybersécurité applicable à Tempo et l'autorité à laquelle elle déclare ses incidents majeurs liés aux TIC.",
+          "points": 1,
+          "options": [
+            "La directive NIS 2, telle que transposée en droit français ; les incidents importants sont notifiés à l'ANSSI.",
+            "Le règlement DORA, directement applicable depuis le 17 janvier 2025 ; les incidents majeurs liés aux TIC sont déclarés à l'ACPR.",
+            "Le règlement DORA, applicable seulement après l'adoption d'une loi française de transposition ; les incidents majeurs sont déclarés à la CNIL.",
+            "Le cadre simplifié de l'article 16 du règlement DORA, Tempo étant une entreprise de taille moyenne ; les incidents majeurs sont déclarés directement à la Banque centrale européenne."
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Tempo est un établissement de paiement agréé : elle entre dans le champ du règlement (UE) 2022/2554, dit DORA (art. 2 §1 b). Ce règlement est directement applicable depuis le 17 janvier 2025 (art. 64), sans transposition. Elle déclare ses incidents majeurs liés aux TIC à son autorité compétente (art. 19 §1), l'ACPR pour un établissement de paiement en France ; la BCE est informée par cette autorité (art. 19 §6), pas par l'entité. L'option 2 est donc la bonne.\n\nL'option 1 est doublement fausse. Au 8 octobre 2026, NIS 2 n'est toujours pas transposée en France : le projet de loi n'est pas promulgué. Et pour les entités financières, DORA est l'acte sectoriel qui s'applique à la place de NIS 2 (NIS 2, art. 4 et considérant 28). Les établissements de paiement ne figurent d'ailleurs pas dans les annexes de NIS 2. L'option 3 traite DORA comme une directive, alors que c'est un règlement, et confond l'autorité financière avec la CNIL, compétente seulement pour les violations de données personnelles (RGPD art. 33). L'option 4 se trompe de régime : le cadre simplifié de l'article 16 est réservé notamment aux établissements de paiement exemptés et aux petites entreprises d'investissement non interconnectées. Tempo, établissement agréé de 145 salariés, applique le régime complet des articles 5 à 15."
+        },
+        {
+          "id": "q2-responsabilite-direction",
+          "kind": "true_false",
+          "prompt": "À l'aide du contexte et des annexes 1 et 3, dites si l'affirmation suivante est exacte : « En confiant l'hébergement et l'exploitation de l'infrastructure d'Autor à DataOuest, le conseil d'administration de Tempo a transféré à ce prestataire la responsabilité de la gestion du risque lié aux TIC de cette plateforme. »",
+          "points": 1,
+          "answer": false,
+          "explanation": "Faux. L'organe de direction de l'entité financière définit, approuve et supervise le cadre de gestion du risque lié aux TIC, et il en assume la responsabilité ultime (DORA, art. 5 §2 a). L'entité qui recourt à un prestataire tiers de services TIC reste à tout moment pleinement responsable du respect du règlement (art. 28 §1 a). Le conseil d'administration de Tempo doit donc lui-même approuver et revoir périodiquement la politique de continuité et les plans de réponse et de rétablissement (art. 5 §2 e), ainsi que la politique d'utilisation des prestataires (art. 5 §2 h). Or la politique de continuité de 2021 ne lui a jamais été présentée (annexe 1). Externaliser l'exploitation déplace des tâches, pas la responsabilité."
+        },
+        {
+          "id": "q3-controle-applicatif",
+          "kind": "mcq",
+          "prompt": "À l'aide des annexes 1 et 5, indiquez lequel des contrôles suivants est un contrôle applicatif, et non un contrôle général informatique.",
+          "points": 1.5,
+          "options": [
+            "La revue semestrielle, par les responsables, des comptes disposant de droits sur la production d'Autor.",
+            "La séparation des environnements de développement, de recette et de production d'Autor.",
+            "Le blocage par Règl de tout versement vers un compte bancaire de commerçant modifié depuis moins de 48 heures sans seconde validation.",
+            "La supervision quotidienne des sauvegardes de la nuit, avec une alerte en cas d'échec."
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "Un contrôle applicatif est intégré à une application et porte sur les transactions qu'elle traite. Le blocage d'un versement vers un compte bancaire récemment modifié (option 3) répond à cette définition : il agit sur chaque opération de versement. Les trois autres contrôles portent sur l'environnement de toutes les applications et sont des contrôles généraux informatiques. La revue des habilitations (option 1) relève de la gestion des accès. La séparation des environnements (option 2) relève de la gestion des changements. La supervision des sauvegardes (option 4) relève de l'exploitation. Le contrôle applicatif n'est fiable dans la durée que si ces contrôles généraux le sont : un développeur qui déploie seul en production peut modifier ou désactiver le blocage."
+        },
+        {
+          "id": "q4-disponibilite",
+          "kind": "numeric",
+          "prompt": "À l'aide de l'annexe 2, calculez le taux de disponibilité d'Autor pour les commerçants en septembre 2026 (30 jours, service attendu 24 h/24), toutes causes d'interruption confondues. Donnez le résultat en pourcentage, arrondi à deux décimales.",
+          "points": 1.5,
+          "expected_value": 98.23,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.05
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Temps d'ouverture : 30 × 24 = 720 heures. Indisponibilités : incident « routage » du 7 septembre, de 5 h 40 à 14 h 40, soit 9 h ; maintenance du 13 septembre, de 1 h à 2 h 30, soit 1,5 h ; panne du routeur du 21 septembre, de 15 h 10 à 17 h 25, soit 2,25 h. Total : 12,75 h. Disponibilité = (720 − 12,75) ÷ 720 = **98,23 %**. Pour le commerçant, toute interruption compte, qu'elle soit planifiée ou non. Oublier la maintenance donne 98,44 % ; ne retenir que l'incident du 7 septembre donne 98,75 %."
+        },
+        {
+          "id": "q5-penalite-sla",
+          "kind": "numeric",
+          "prompt": "À l'aide des annexes 2 et 3, calculez la pénalité due par DataOuest à Tempo au titre de septembre 2026, en euros HT.",
+          "points": 2,
+          "expected_value": 3600,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€ HT",
+          "decimals": 0,
+          "explanation": "Seules les indisponibilités imputables à DataOuest entrent dans la mesure contractuelle (art. 4). L'incident du 7 septembre est causé par une mise à jour de Tempo : il est exclu. La maintenance du dimanche 13 septembre a été notifiée le mardi 1er septembre, soit huit jours ouvrés à l'avance (du 2 au 11 septembre), au-delà des cinq exigés : elle est exclue aussi. Il reste la panne du routeur du 21 septembre, soit 2,25 h. Disponibilité contractuelle = (720 − 2,25) ÷ 720 = 99,69 %, comprise entre 99,5 % inclus et 99,9 % exclu : pénalité de 10 %. Montant : 10 % × 36 000 = **3 600 € HT**.\n\nErreurs classiques : compter aussi la maintenance (3,75 h, soit 99,48 %, et une pénalité de 25 %, soit 9 000 €) ; ou appliquer la disponibilité globale de 98,23 % (50 %, soit 18 000 €). Tempo ne peut pas reprocher à son hébergeur une panne qu'elle a provoquée."
+        },
+        {
+          "id": "q6-delai-notification",
+          "kind": "mcq",
+          "prompt": "À l'aide de l'annexe 2, indiquez l'heure limite à laquelle Tempo devait adresser la notification initiale de l'incident du 7 septembre à l'autorité compétente.",
+          "points": 1.5,
+          "options": [
+            "Lundi 7 septembre à 10 h 10",
+            "Mardi 8 septembre à 6 h 10",
+            "Jeudi 10 septembre à 6 h 10",
+            "Lundi 7 septembre à 18 h 00"
+          ],
+          "answer": [
+            3
+          ],
+          "explanation": "Deux limites se combinent, et la plus proche s'applique. La première tombe 4 heures après la classification de l'incident comme majeur : 14 h 00 + 4 h, soit le lundi à 18 h 00. La seconde tombe 24 heures après la prise de connaissance, c'est-à-dire après le constat de l'astreinte : 6 h 10 + 24 h, soit le mardi à 6 h 10. L'échéance est donc le **lundi 7 septembre à 18 h 00** (option 4). La notification envoyée le mardi à 11 h 00 est tardive ; elle dépasse même le plafond de 24 heures.\n\nL'option 1 fait courir les 4 heures depuis la détection, alors qu'elles courent depuis la classification. L'option 2 ne retient que le plafond de 24 heures. L'option 3 applique le délai de 72 heures, qui est celui de la notification d'une violation de données personnelles (RGPD art. 33). Deux autres faiblesses ressortent de la chronologie. La classification a pris près de 8 heures après la détection. Et les commerçants, dont les intérêts financiers étaient touchés, devaient être informés sans retard injustifié (DORA, art. 19 §3), et non deux jours plus tard."
+        },
+        {
+          "id": "q7-option-continuite",
+          "kind": "numeric",
+          "prompt": "À l'aide des annexes 1 et 4, déterminez l'option de continuité qui respecte les objectifs du bilan d'impact d'Autor au moindre coût annuel total espéré, et indiquez ce coût, en euros.",
+          "points": 2.5,
+          "expected_value": 197200,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Coût annuel total espéré : option A = 60 000 + 0,08 × 48 × 30 000 = 60 000 + 115 200 = 175 200 € ; option B = 190 000 + 0,08 × 3 × 30 000 = 190 000 + 7 200 = 197 200 € ; option C = 380 000 + 0,08 × 0,25 × 30 000 = 380 000 + 600 = 380 600 €.\n\nL'option A est la moins coûteuse en espérance, mais elle ne respecte ni le RTO de 4 h (reprise en 48 h) ni le RPO de 15 min (jusqu'à 24 h de données perdues). Elle doit être écartée : les objectifs du bilan d'impact sont des contraintes, pas des variables d'arbitrage. DORA exige en outre des capacités TIC redondantes pour les entités autres que les microentreprises (art. 12 §4), ainsi que des actifs TIC conçus dans le respect de l'analyse d'impact (art. 11 §5). L'option B respecte les deux objectifs (3 h ≤ 4 h ; 5 min ≤ 15 min) et coûte 183 400 € de moins par an que l'option C. Réponse : option B, **197 200 €**. Retenir l'option A (175 200 €) est l'erreur attendue."
+        },
+        {
+          "id": "q8-revue-acces",
+          "kind": "numeric",
+          "prompt": "À l'aide de l'annexe 5, indiquez le nombre de comptes disposant de droits sur la production d'Autor qui ne respectent pas au moins une règle d'habilitation de la PSSI.",
+          "points": 1.5,
+          "expected_value": 5,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0
+          },
+          "unit": "comptes",
+          "decimals": 0,
+          "explanation": "Cinq comptes sont en anomalie.\n- dev.morin et dev.lucas : des développeurs disposent de droits de déploiement en production (règle 2). C'est la faille qui a permis l'incident du 7 septembre.\n- adm.roux : le compte d'un administrateur parti le 30 juin est resté actif et a été utilisé le 12 juillet (règle 3). Cette connexion postérieure au départ doit faire l'objet d'une investigation.\n- adm.giraud : les droits d'administration n'ont pas été retirés lors de la mutation au contrôle de gestion (règle 3).\n- ops.nuit : un compte commun, à mot de passe partagé et à usage interactif, empêche d'imputer les actions à une personne (règle 1).\n\nLes autres comptes sont conformes. dev.kane n'a qu'un accès en lecture seule. svc.batch est un compte de service non interactif rattaché à un responsable. ext.lemoine est un accès de prestataire nominatif et limité dans le temps (règle 4). Les comptes d'administration des administrateurs en poste correspondent à leur fonction. Taux d'anomalie : 5 ÷ 12, soit 41,7 % des comptes à privilèges."
+        },
+        {
+          "id": "q9-taux-ecart-changements",
+          "kind": "numeric",
+          "prompt": "À l'aide de l'annexe 5, calculez le taux d'écart constaté sur l'échantillon de changements testé, en pourcentage.",
+          "points": 1.5,
+          "expected_value": 16,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 1,
+          "explanation": "Un changement est en écart s'il présente au moins une anomalie. Changements en écart = 3 + 2 − 1 (le changement compté deux fois) = 4. Taux d'écart = 4 ÷ 25 = **16 %**, très au-delà du taux tolérable de 5 % : le contrôle de gestion des changements est inefficace. Additionner les constats sans retirer le doublon donne 20 %. Le rapprochement complémentaire aggrave la conclusion. Six mises en production n'ont laissé aucune trace dans l'outil Chg : la population testée était incomplète. Un échantillon tiré de l'outil ne pouvait pas détecter ces changements, dont celui qui a provoqué l'incident du 7 septembre."
+        },
+        {
+          "id": "q10-analyse-cgi",
+          "kind": "open",
+          "prompt": "À l'aide des annexes 1, 2 et 5, analysez les causes de l'incident du 7 septembre au regard des contrôles généraux informatiques. Tirez-en les conséquences pour le commissaire aux comptes qui envisage de s'appuyer sur les contrôles automatisés de Règl, puis formulez vos recommandations.",
+          "points": 3,
+          "model_answer": "**Causes de l'incident.** L'incident ne vient pas d'une attaque mais d'une défaillance de trois contrôles généraux informatiques.\n- Gestion des accès : deux développeurs disposent de droits de déploiement en production, contrairement à la PSSI. M. Morin a donc pu modifier seul la plateforme critique.\n- Gestion des changements : la correction a été déployée la nuit, hors fenêtre, sans ticket, sans recette et sans approbation. Le test de l'annexe 5 montre que le cas n'est pas isolé : 16 % d'écarts sur l'échantillon, contre 5 % tolérables, et 6 mises en production absentes de l'outil Chg.\n- Exploitation : aucune alerte ne surveille le taux de refus. L'incident a été découvert par les appels des commerçants, 30 minutes après son début, puis classé près de 8 heures plus tard.\nLa revue des comptes confirme la faiblesse générale de la gestion des accès : 5 comptes à privilèges sur 12 sont en anomalie, dont celui d'un ancien administrateur utilisé après son départ et un compte d'astreinte partagé.\n\n**Conséquences pour l'audit.** Le calcul automatique des commissions et le blocage des versements vers un compte récemment modifié sont des contrôles applicatifs. Ils ne sont fiables sur l'exercice que si les contrôles généraux le sont. Or des personnes non autorisées ont pu modifier la production sans trace, et des comptes partagés ou orphelins disposent de droits d'administration. Le commissaire aux comptes ne peut donc pas s'appuyer sur ces contrôles automatisés sans travaux complémentaires. Il doit tester les modifications de programmes et de paramètres de Règl sur la période (journaux de déploiement), recalculer les commissions sur toute la population par analyse de données, et revoir les changements de coordonnées bancaires des commerçants et les versements associés. Il exploitera aussi les journaux de connexion d'adm.roux et d'ops.nuit. Ces faiblesses sont à communiquer à la direction et au conseil.\n\n**Recommandations**, par priorité :\n1. Retirer immédiatement les droits de déploiement des développeurs, désactiver adm.roux et adm.giraud, remplacer ops.nuit par des comptes nominatifs avec un coffre-fort de mots de passe, et faire analyser la connexion du 12 juillet.\n2. Imposer un circuit de mise en production outillé : ticket obligatoire, recette, approbation, déploiement par l'exploitation seulement, procédure d'urgence tracée et validée a posteriori. Rapprocher chaque mois les journaux de déploiement avec l'outil Chg.\n3. Revoir les habilitations chaque trimestre, avec une validation par les responsables et une sortie des droits reliée aux mouvements de personnel.\n4. Mettre en place une supervision avec des seuils d'alerte, dont le taux de refus des autorisations.\n5. Faire auditer ces contrôles par l'audit interne et suivre les plans d'action.",
+          "key_points": [
+            "Causes : développeurs ayant des droits de déploiement en production, changement sans ticket ni recette ni approbation, absence d'alerte (contrôles d'accès, de changements et d'exploitation défaillants)",
+            "Faiblesse générale chiffrée : 16 % d'écarts contre 5 % tolérables, 6 déploiements hors outil (population incomplète), 5 comptes à privilèges sur 12 en anomalie",
+            "Contrôles applicatifs de Règl non fiables si les contrôles généraux ne le sont pas : pas d'appui sans travaux complémentaires",
+            "Travaux complémentaires : revue des modifications de programmes, recalcul des commissions sur toute la population, revue des changements de coordonnées bancaires et des versements, analyse des connexions suspectes",
+            "Recommandations : retrait immédiat des droits, comptes nominatifs, circuit de mise en production avec séparation des tâches et rapprochement des journaux, revue trimestrielle des accès, supervision et alertes"
+          ],
+          "explanation": "La copie doit relier chaque cause de l'incident à une famille de contrôles généraux (accès, changements, exploitation) et s'appuyer sur les chiffres des questions précédentes. Le point d'audit décisif est le lien entre contrôles généraux et contrôles applicatifs : un blocage automatique ou un calcul de commission ne vaut que si personne ne peut modifier le programme sans contrôle. D'où le passage à des procédures substantives étendues. Les recommandations doivent répondre aux constats, en commençant par les plus urgents."
+        },
+        {
+          "id": "q11-plan-dora",
+          "kind": "open",
+          "prompt": "À l'aide de l'ensemble des annexes, rédigez une note au conseil d'administration présentant les principales mesures à prendre pour mettre Tempo en conformité avec le règlement DORA en matière de gouvernance, de continuité, de gestion des incidents et de relations avec DataOuest.",
+          "points": 3,
+          "model_answer": "**Objet : mise en conformité de Tempo avec le règlement (UE) 2022/2554 (DORA)**\n\n**1. Gouvernance.** Le conseil d'administration assume la responsabilité ultime du risque lié aux TIC (art. 5 §2 a). Il doit approuver le cadre de gestion de ce risque, la stratégie de résilience opérationnelle numérique et le niveau de tolérance au risque. Il approuve aussi, puis revoit périodiquement, la politique de continuité des activités de TIC et les plans de réponse et de rétablissement, ainsi que la politique d'utilisation des prestataires (art. 5 §2 d, e et h). Ses membres suivent une formation régulière (art. 5 §4). Le cadre de gestion du risque est revu au moins une fois par an et après chaque incident majeur (art. 6 §5). Il est confié à une fonction de contrôle indépendante et audité régulièrement par l'audit interne (art. 6 §4 et §6). Les contrôles généraux informatiques défaillants (accès, changements) entrent dans ce cadre. La PSSI de 2022 doit être mise à jour et réellement appliquée.\n\n**2. Continuité.** La politique de 2021, jamais approuvée ni testée, doit être refondue à partir d'un bilan d'impact actualisé (art. 11 §1 et §5). Nous recommandons l'option B : site tiède à Lyon, reprise en 3 h, perte de données de 5 min au plus, pour 197 200 € de coût annuel total espéré. L'option A est exclue : elle ne respecte ni le RTO ni le RPO, alors que DORA impose des capacités redondantes (art. 12 §4). La réplication propage aussi une corruption logique comme celle du 7 septembre. Il faut donc conserver des sauvegardes restaurables à un instant donné, sur des systèmes séparés physiquement et logiquement (art. 12 §3), et tester régulièrement leur restauration (art. 12 §2). Les plans sont testés au moins une fois par an, y compris par un scénario de cyberattaque et une bascule réelle vers Lyon (art. 11 §6). Une fonction de gestion de crise et un plan de communication sont formalisés (art. 11 §7 et art. 14).\n\n**3. Incidents.** Il faut un processus de gestion des incidents avec des indicateurs d'alerte précoce (supervision du taux de refus), une classification rapide selon les critères de l'article 18 et des rôles prédéfinis (art. 17). La déclaration se fait à l'ACPR selon le calendrier en trois temps : notification initiale, rapport intermédiaire, rapport final (art. 19 §4). Pour le 7 septembre, l'échéance était le lundi à 18 h 00, et non le mardi à 11 h 00. Les commerçants doivent être informés sans retard injustifié (art. 19 §3). Un examen post-incident analysera les causes et les améliorations à apporter (art. 13 §2).\n\n**4. DataOuest.** Le contrat de 2023 doit être renégocié. Il doit prévoir : des niveaux de service précis assortis d'objectifs quantitatifs ; l'obligation pour DataOuest de notifier ses incidents et de tester ses plans d'urgence ; des droits d'accès, d'inspection et d'audit pour Tempo et l'ACPR ; la localisation des données, leur restitution et une période de transition en cas de sortie (art. 30 §2 et §3). Une stratégie de sortie documentée et testée est nécessaire (art. 28 §8). Tempo doit enfin tenir le registre d'information de ses contrats de services TIC, en distinguant ceux qui soutiennent des fonctions critiques comme Autor et Règl (art. 28 §3).",
+          "key_points": [
+            "Gouvernance : responsabilité ultime du conseil, approbation de la politique de continuité et de la politique des prestataires, formation, revue annuelle du cadre, audit interne (art. 5 et 6)",
+            "Continuité : bilan d'impact actualisé, option B retenue (A ne respecte ni le RTO ni le RPO), capacités redondantes, sauvegardes séparées et restaurables, tests annuels avec bascule et scénario de cyberattaque (art. 11 et 12)",
+            "Incidents : alerte précoce, classification rapide, déclaration à l'ACPR dans les délais (échéance du 7 septembre à 18 h), information des commerçants, examen post-incident (art. 13, 17 et 19)",
+            "DataOuest : clauses obligatoires (niveaux de service, notification des incidents, droits d'audit, restitution des données, transition), stratégie de sortie testée, registre d'information (art. 28 et 30)",
+            "Tempo reste responsable même en externalisant ; PSSI et contrôles généraux informatiques à remettre en ordre"
+          ],
+          "explanation": "On attend une note structurée selon les quatre axes demandés, qui relie chaque mesure à une obligation de DORA et à un constat des annexes : politique de 2021 jamais approuvée, option de continuité, retard de déclaration, contrat de 2023 lacunaire. Le point technique à ne pas manquer : la réplication vers un site de secours ne protège pas d'une corruption logique des données. Elle doit être complétée par des sauvegardes isolées et restaurables."
+        }
+      ],
+      "explanation": "Cadre : Tempo, établissement de paiement agréé, relève de DORA, directement applicable depuis le 17 janvier 2025, et déclare ses incidents majeurs à l'ACPR. NIS 2, non transposée en France au 8 octobre 2026, ne la vise pas : DORA est l'acte sectoriel. Le conseil d'administration reste responsable même s'il externalise. Mesures : disponibilité d'Autor en septembre = 98,23 % (12,75 h d'interruption sur 720 h). Pénalité due par DataOuest : 3 600 € (seule la panne du routeur lui est imputable, soit 99,69 %). Notification initiale exigible le lundi 7 septembre à 18 h, contre un envoi le mardi à 11 h. Continuité : l'option A (175 200 €) ne respecte ni le RTO ni le RPO ; l'option B (197 200 €) est retenue. Contrôles généraux : 5 comptes à privilèges sur 12 en anomalie, 16 % d'écarts sur les changements contre 5 % tolérables, et 6 déploiements hors outil. Les contrôles applicatifs de Règl ne sont donc pas fiables sans travaux complémentaires. Le plan d'action couvre la gouvernance (art. 5 et 6), la continuité (art. 11 et 12), les incidents (art. 17 et 19) et le contrat DataOuest (art. 28 et 30). Méthode : distinguer ce qui est imputable à l'entité de ce qui l'est au prestataire, et traiter les objectifs du bilan d'impact comme des contraintes avant de comparer les coûts."
+    },
+    {
+      "id": "ue5-dossier-0004",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE5",
+      "theme": "donnees",
+      "notion": "business-intelligence-dataviz",
+      "difficulty": 3,
+      "tags": [
+        "dossier",
+        "entrepôt de données",
+        "modèle en étoile",
+        "tableau de bord",
+        "indicateurs",
+        "SQL",
+        "jointure externe",
+        "valeur acquise",
+        "Scrum",
+        "vélocité",
+        "AI Act",
+        "Data Act",
+        "cloud",
+        "numérique responsable"
+      ],
+      "source_ref": "Règlement (UE) 2024/1689 (AI Act), art. 3, 5, 6, 26, 50, 99, 113 et annexe III, modifié par le règlement (UE) 2026/1744 ; règlement (UE) 2023/2854 (Data Act), art. 2, 23, 25, 29, 31 et 50 ; RGPD art. 22 et 35 ; norme ISO/IEC 9075 (SQL) ; modélisation dimensionnelle (R. Kimball) ; méthode de la valeur acquise (PMI) ; Scrum Guide (2020)",
+      "verified": true,
+      "estimated_seconds": 5100,
+      "total_points": 20,
+      "title": "Pilotage par la donnée et projets numériques",
+      "context": "**Verdalia SAS**, dont le siège est à Toulouse, exploite six supermarchés de produits biologiques et locaux en Occitanie, ainsi qu'un service de commande en ligne avec retrait en magasin ; un septième magasin ouvrira à Rodez le 15 octobre 2026. En 2025, elle a réalisé un chiffre d'affaires de 31 M€ HT avec 290 salariés.\n\nJusqu'ici, le contrôle de gestion produisait chaque mois un tableau de bord sous tableur, à partir d'extractions du logiciel de caisse et de l'ERP. Pour piloter le réseau par la donnée, la direction a lancé en janvier 2026 le projet **Cap Data** : un entrepôt de données hébergé dans le cloud et alimenté chaque nuit, des tableaux de bord en libre-service pour les directeurs de magasin, et plusieurs usages de l'intelligence artificielle. Le projet comporte deux lots. La plateforme de données est confiée au forfait à un intégrateur ; les tableaux de bord sont développés par l'équipe interne selon la méthode Scrum.\n\nMme Delmas, directrice administrative et financière et sponsor du projet, vous confie, en tant que consultant(e) d'un cabinet d'expertise comptable, une mission en trois volets : vérifier les indicateurs et les requêtes qui alimenteront les tableaux de bord ; faire le point sur l'avancement du projet ; apprécier la conformité et la soutenabilité des choix numériques (intelligence artificielle, contrat de cloud, renouvellement du parc informatique). Les données utiles figurent dans les annexes 1 à 5.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Architecture de Cap Data et modèle de l'entrepôt",
+          "content": "**Sources** : logiciel de caisse des magasins (tickets), ERP (achats, stocks, comptabilité), site de commande en ligne.\n\n**Alimentation** : chargement chaque nuit (ETL) dans un entrepôt de données. La plateforme est un service de traitement de données proposé dans le catalogue standard du fournisseur Nubio, avec des données hébergées en France (contrat présenté en annexe 5).\n\n**Modèle de l'entrepôt** :\n- table de faits VENTE_JOUR, au grain jour × magasin × produit ; mesures : quantité vendue, chiffre d'affaires HT, marge brute ;\n- dimension CALENDRIER (jour, semaine, mois, année) ;\n- dimension MAGASIN (magasin, ville, surface, directeur) ;\n- dimension PRODUIT (produit, famille, rayon, fournisseur, origine locale ou non).\n\nLe nombre de tickets n'est pas une mesure de VENTE_JOUR : il est transmis chaque jour, par magasin, par le logiciel de caisse."
+        },
+        {
+          "title": "Annexe 2 — Activité de septembre 2026 et tableau de bord actuel",
+          "content": "| Magasin | CA HT (€) | Tickets | Marge brute (€) | Objectif de CA HT (€) |\n| --- | --- | --- | --- | --- |\n| Toulouse-Capitole | 812 000 | 21 400 | 276 000 | 790 000 |\n| Toulouse-Rangueil | 604 000 | 17 800 | 199 300 | 650 000 |\n| Montauban | 388 000 | 9 700 | 135 800 | 400 000 |\n| Albi | 342 000 | 9 000 | 112 900 | 330 000 |\n| Castres | 266 000 | 7 600 | 90 400 | 300 000 |\n| Auch | 188 000 | 4 500 | 62 000 | 200 000 |\n\n**Tableau de bord mensuel actuel** (classeur de tableur envoyé le 8 du mois suivant) : 23 indicateurs sur trois pages ; un graphique en secteurs en 3D du CA des six magasins ; un histogramme du panier moyen par magasin dont l'axe vertical commence à 33 € ; en page 1, le CA TTC issu des caisses, en page 2, le CA HT comptable ; ni objectif ni comparaison avec l'année précédente ; données ressaisies à la main à partir de deux extractions. Le panier moyen du réseau y est calculé comme la moyenne des paniers moyens des six magasins."
+        },
+        {
+          "title": "Annexe 3 — Extrait de la base de recette et requête du contrôle de gestion",
+          "content": "Schéma : MAGASIN (id_mag, nom, ville) ; PRODUIT (id_prod, libelle, famille) ; VENTE (id_vente, #id_mag, #id_prod, date_vente, quantite, montant_ht). Les données de recette sont fictives et ne reprennent qu'une partie du réseau.\n\n**MAGASIN** : (M1, Capitole, Toulouse) ; (M2, Rangueil, Toulouse) ; (M3, Montauban, Montauban) ; (M7, Rodez, Rodez).\n\n**PRODUIT** : (P01, Pommes, Fruits et légumes) ; (P02, Carottes, Fruits et légumes) ; (P03, Comté, Crèmerie) ; (P04, Yaourt nature, Crèmerie) ; (P05, Pain de campagne, Boulangerie) ; (P06, Huile d'olive, Épicerie) ; (P07, Café moulu, Épicerie).\n\n**VENTE**\n\n| id_vente | id_mag | id_prod | date_vente | quantite | montant_ht |\n| --- | --- | --- | --- | --- | --- |\n| V01 | M1 | P01 | 2026-09-02 | 120 | 300 |\n| V02 | M1 | P03 | 2026-09-02 | 40 | 820 |\n| V03 | M2 | P01 | 2026-09-03 | 90 | 225 |\n| V04 | M2 | P05 | 2026-09-05 | 150 | 480 |\n| V05 | M3 | P04 | 2026-09-08 | 200 | 380 |\n| V06 | M1 | P06 | 2026-09-12 | 30 | 540 |\n| V07 | M3 | P02 | 2026-09-15 | 110 | 165 |\n| V08 | M2 | P03 | 2026-09-19 | 25 | 510 |\n| V09 | M2 | P05 | 2026-09-26 | 420 | 1 350 |\n| V10 | M3 | P07 | 2026-09-29 | 45 | 495 |\n| V11 | M2 | P07 | 2026-08-31 | 60 | 660 |\n| V12 | M1 | P04 | 2026-10-01 | 180 | 342 |\n| V13 | M1 | P07 | 2026-09-30 | 35 | 385 |\n\n**Requête du contrôle de gestion** :\n\n```\nSELECT P.famille, SUM(V.montant_ht) AS ca, COUNT(DISTINCT V.id_mag) AS nb_mag\nFROM VENTE V INNER JOIN PRODUIT P ON V.id_prod = P.id_prod\nWHERE V.date_vente BETWEEN '2026-09-01' AND '2026-09-30'\nGROUP BY P.famille\nHAVING COUNT(DISTINCT V.id_mag) >= 2\nORDER BY ca DESC;\n```"
+        },
+        {
+          "title": "Annexe 4 — Suivi du projet Cap Data au 30 septembre 2026",
+          "content": "**Lot 1 — Plateforme de données (au forfait, suivi en valeur acquise)** : budget total (BAC) 480 000 € ; budget du travail prévu à cette date (valeur planifiée) 300 000 € ; avancement physique constaté 55 % ; coûts réels engagés 312 000 €. Le comité de pilotage considère que les causes des écarts constatés (complexité de la reprise des données de caisse) persisteront jusqu'à la fin du lot.\n\n**Lot 2 — Tableaux de bord (Scrum)** : backlog produit de 240 points, inchangé depuis le lancement ; sprints de deux semaines ; tous les éléments engagés dans chaque sprint ont été livrés et acceptés.\n\n| Sprint | 1 | 2 | 3 | 4 | 5 |\n| --- | --- | --- | --- | --- | --- |\n| Vélocité (points livrés) | 14 | 20 | 30 | 32 | 34 |\n\nRègle de planification de l'équipe : la vélocité de référence est la moyenne des trois derniers sprints. Le sprint 6 commence le lundi 5 octobre 2026."
+        },
+        {
+          "title": "Annexe 5 — Projets d'intelligence artificielle, contrat de cloud et parc informatique",
+          "content": "**Projets d'intelligence artificielle** :\n1. **Assistant conversationnel « Vera »**, en service depuis juin 2026 sur le site de commande en ligne. Fondé sur un modèle d'IA générative fourni par un éditeur, il répond aux questions des clients sur les produits, les allergènes et les commandes. Aucune mention n'indique aux clients qu'ils échangent avec une IA ; deux réponses erronées sur des allergènes ont été signalées en septembre.\n2. **Logiciel de présélection des candidatures**, acheté à un éditeur, dont la mise en service est prévue en janvier 2027. Il analyse les CV reçus pour 60 emplois saisonniers et classe les candidats ; ceux du dernier tiers du classement ne seraient pas examinés par un recruteur.\n3. **Projet de caméras en caisse** analysant les expressions du visage des caissiers pour mesurer leur « engagement » et leur « satisfaction » au contact des clients ; les scores alimenteraient l'entretien annuel d'évaluation.\n\n**Contrat Nubio** (plateforme de données, offre standard du catalogue), signé le 6 octobre 2025 pour trois ans, abonnement de 9 500 € HT par mois. Article 9 : en cas de changement de fournisseur, des « frais d'export et de migration des données » de 18 000 € HT sont dus ; le client doit respecter un préavis de six mois ; les données sont supprimées dix jours après la fin du contrat.\n\n**Parc informatique** : 120 ordinateurs portables, renouvelés tous les 4 ans. Émissions de fabrication : 280 kg CO₂e par ordinateur, réparties linéairement sur la durée de vie. Proposition de la DSI : porter la durée de vie à 6 ans (remplacement des batteries, reconditionnement). Les modèles récents étant plus économes, l'allongement de la durée de vie augmenterait la consommation d'électricité de 8 kWh par an et par ordinateur, en moyenne sur le parc. Facteur d'émission de l'électricité : 0,05 kg CO₂e par kWh."
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1-modele-etoile",
+          "kind": "mcq",
+          "prompt": "À l'aide de l'annexe 1, indiquez l'affirmation exacte sur l'entrepôt de données de Cap Data.",
+          "points": 1,
+          "options": [
+            "Le panier moyen d'un magasin pour une journée se calcule à partir de VENTE_JOUR, en divisant le chiffre d'affaires HT du jour par le nombre de lignes de faits de ce jour.",
+            "L'entrepôt remplacera le logiciel de caisse et l'ERP, qui pourront être arrêtés une fois les données chargées.",
+            "CALENDRIER, MAGASIN et PRODUIT sont les dimensions ; quantité, CA HT et marge brute sont les mesures de la table de faits, dont chaque ligne correspond à un produit vendu dans un magasin un jour donné.",
+            "Comme l'entrepôt est alimenté chaque nuit, les directeurs de magasin pourront y suivre les ventes en temps réel, ticket par ticket."
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "L'option 3 décrit correctement le modèle en étoile. La table de faits porte les mesures numériques, et les dimensions portent les axes d'analyse. Le grain jour × magasin × produit signifie qu'une ligne correspond à un produit vendu dans un magasin un jour donné.\n\nL'option 1 confond lignes de faits et tickets : un ticket comprend plusieurs produits, et un produit apparaît dans de nombreux tickets. Le nombre de lignes du jour est donc le nombre de produits différents vendus. Le panier moyen se calcule avec le nombre de tickets transmis par le logiciel de caisse. L'option 2 est fausse : l'entrepôt est alimenté par les systèmes opérationnels et ne les remplace pas. L'option 4 est fausse deux fois : un chargement nocturne donne des données à J+1, et le grain choisi ne descend pas au ticket."
+        },
+        {
+          "id": "q2-panier-moyen",
+          "kind": "numeric",
+          "prompt": "À l'aide de l'annexe 2, calculez le panier moyen HT du réseau en septembre 2026, en euros, arrondi au centime.",
+          "points": 1.5,
+          "expected_value": 37.14,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.05
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "Panier moyen du réseau = CA HT total ÷ nombre total de tickets. CA HT total = 812 000 + 604 000 + 388 000 + 342 000 + 266 000 + 188 000 = 2 600 000 €. Tickets = 21 400 + 17 800 + 9 700 + 9 000 + 7 600 + 4 500 = 70 000. Panier moyen = 2 600 000 ÷ 70 000 = **37,14 €**.\n\nLe tableau de bord actuel fait la moyenne simple des six paniers moyens (37,94 ; 33,93 ; 40,00 ; 38,00 ; 35,00 ; 41,78), soit 37,78 €. Cette moyenne donne le même poids à Auch (4 500 tickets) qu'à Capitole (21 400 tickets) et surestime le panier du réseau. Un ratio s'agrège en recalculant le rapport des totaux, jamais en faisant la moyenne des ratios."
+        },
+        {
+          "id": "q3-resultat-requete",
+          "kind": "numeric",
+          "prompt": "À l'aide de l'annexe 3, exécutez la requête du contrôle de gestion sur l'extrait de la base de recette et indiquez la valeur de la colonne « ca » sur la première ligne du résultat, en euros.",
+          "points": 2,
+          "expected_value": 1710,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "WHERE ne conserve que les ventes de septembre : V11 (31 août) et V12 (1er octobre) sont écartées avant le regroupement. Par famille :\n- Fruits et légumes = V01 300 + V03 225 + V07 165 = 690 €, 3 magasins ;\n- Crèmerie = V02 820 + V05 380 + V08 510 = 1 710 €, 3 magasins ;\n- Boulangerie = V04 480 + V09 1 350 = 1 830 €, 1 seul magasin (M2) ;\n- Épicerie = V06 540 + V10 495 + V13 385 = 1 420 €, 2 magasins (M1 et M3).\nHAVING COUNT(DISTINCT V.id_mag) >= 2 écarte la Boulangerie : ses deux ventes viennent du même magasin. ORDER BY ca DESC place la Crèmerie en tête : **1 710 €**.\n\nErreurs classiques : compter les lignes (COUNT(*) vaut 2 pour la Boulangerie) et la placer en tête avec 1 830 € ; ou oublier le filtre sur la date, ce qui met l'Épicerie en tête avec 2 080 € (V11 incluse)."
+        },
+        {
+          "id": "q4-jointure-externe",
+          "kind": "mcq",
+          "prompt": "À l'aide de l'annexe 3, le contrôle de gestion veut le CA HT de septembre 2026 de chaque magasin, en conservant les magasins sans vente sur la période (leur CA apparaît alors vide). Sur l'extrait, le résultat attendu comprend quatre lignes, dont Rodez. Quelle requête donne ce résultat ?",
+          "points": 1.5,
+          "options": [
+            "SELECT M.id_mag, M.nom, SUM(V.montant_ht) AS ca_sept FROM MAGASIN M LEFT JOIN VENTE V ON M.id_mag = V.id_mag WHERE V.date_vente BETWEEN '2026-09-01' AND '2026-09-30' GROUP BY M.id_mag, M.nom;",
+            "SELECT M.id_mag, M.nom, SUM(V.montant_ht) AS ca_sept FROM MAGASIN M INNER JOIN VENTE V ON M.id_mag = V.id_mag WHERE V.date_vente BETWEEN '2026-09-01' AND '2026-09-30' GROUP BY M.id_mag, M.nom;",
+            "SELECT M.id_mag, M.nom, SUM(V.montant_ht) AS ca_sept FROM MAGASIN M, VENTE V WHERE V.date_vente BETWEEN '2026-09-01' AND '2026-09-30' GROUP BY M.id_mag, M.nom;",
+            "SELECT M.id_mag, M.nom, SUM(V.montant_ht) AS ca_sept FROM MAGASIN M LEFT JOIN VENTE V ON M.id_mag = V.id_mag AND V.date_vente BETWEEN '2026-09-01' AND '2026-09-30' GROUP BY M.id_mag, M.nom;"
+          ],
+          "answer": [
+            3
+          ],
+          "explanation": "L'option 4 place la condition sur la date dans la clause ON de la jointure externe gauche. Tous les magasins sont conservés ; seules les ventes de septembre leur sont rattachées. Résultat : M1 2 045 €, M2 2 565 €, M3 1 040 €, M7 Rodez vide (NULL).\n\nL'option 1 place la même condition dans le WHERE, qui s'applique après la jointure. Pour Rodez, date_vente vaut NULL : la condition est fausse, la ligne disparaît, et la jointure externe se comporte comme une jointure interne (trois lignes). L'option 2 est une jointure interne : Rodez, sans vente, disparaît d'emblée. L'option 3 n'a pas de condition de jointure : le produit cartésien rattache toutes les ventes de septembre à chaque magasin. Les quatre lignes affichent alors le même total de 5 650 €, ce qui est faux."
+        },
+        {
+          "id": "q5-estimation-terminaison",
+          "kind": "numeric",
+          "prompt": "À l'aide de l'annexe 4, calculez l'estimation à terminaison du lot 1 (coût final prévisible), en euros arrondis à l'unité.",
+          "points": 2.5,
+          "expected_value": 567273,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.01
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Valeur acquise (VA) = 55 % × 480 000 = 264 000 €, c'est-à-dire le budget du travail réellement fait. Écart de coût = VA − coûts réels = 264 000 − 312 000 = −48 000 € ; écart de délai = VA − VP = 264 000 − 300 000 = −36 000 €. Indice de performance des coûts CPI = 264 000 ÷ 312 000 = 0,846. Indice de performance des délais SPI = 264 000 ÷ 300 000 = 0,88. Le lot dépense trop et prend du retard.\n\nLe comité estime que les causes des écarts persisteront : on retient EAC = BAC ÷ CPI = 480 000 ÷ 0,846 = **567 273 €**, soit un dépassement prévisible de 87 273 € (18 %). Avec un CPI arrondi à 0,85, on obtient 564 706 €, dans la tolérance. Erreurs : diviser par le SPI (545 455 €) ; ajouter seulement l'écart déjà constaté au budget (480 000 + 48 000 = 528 000 €), ce qui suppose que les causes ne se reproduiront pas ; ou prendre les coûts réels pour la valeur acquise, ce qui donne un CPI de 1."
+        },
+        {
+          "id": "q6-sprints-restants",
+          "kind": "numeric",
+          "prompt": "À l'aide de l'annexe 4, calculez le nombre de sprints encore nécessaires pour livrer la totalité du backlog du lot 2, selon la règle de planification de l'équipe.",
+          "points": 1.5,
+          "expected_value": 4,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0
+          },
+          "unit": "sprints",
+          "decimals": 0,
+          "explanation": "Points livrés = 14 + 20 + 30 + 32 + 34 = 130 ; reste à livrer = 240 − 130 = 110 points. Vélocité de référence = (30 + 32 + 34) ÷ 3 = 32 points par sprint. 110 ÷ 32 = 3,44, soit **4 sprints** : un sprint commencé compte en entier. Les sprints 6 à 9 mènent, au rythme de deux semaines, au vendredi 27 novembre 2026.\n\nUtiliser la moyenne des cinq sprints (130 ÷ 5 = 26) donnerait 4,23, soit 5 sprints : les premiers sprints, plus lents, correspondent à la montée en régime de l'équipe, et la règle de l'équipe les écarte. Arrondir 3,44 à 3 sprints laisserait 14 points non livrés."
+        },
+        {
+          "id": "q7-classification-ai-act",
+          "kind": "mcq",
+          "prompt": "À l'aide de l'annexe 5, classez les trois projets d'intelligence artificielle de Verdalia selon le règlement (UE) 2024/1689 (AI Act) : (1) l'assistant « Vera », (2) le logiciel de présélection des candidatures, (3) les caméras en caisse.",
+          "points": 1.5,
+          "options": [
+            "(1) risque minimal, sans obligation ; (2) haut risque ; (3) haut risque",
+            "(1) obligation de transparence ; (2) pratique interdite ; (3) haut risque",
+            "(1) haut risque ; (2) obligation de transparence ; (3) pratique interdite",
+            "(1) obligation de transparence ; (2) haut risque ; (3) pratique interdite"
+          ],
+          "answer": [
+            3
+          ],
+          "explanation": "L'option 4 est la bonne.\n- **(1)** Un système destiné à interagir directement avec des personnes doit les informer qu'elles échangent avec une IA (art. 50 §1), obligation applicable depuis le 2 août 2026. Il n'est ni interdit ni à haut risque.\n- **(2)** Les systèmes destinés au recrutement, notamment pour analyser et filtrer les candidatures et évaluer les candidats, figurent à l'annexe III (point 4 a) : c'est un système à **haut risque** (art. 6 §2). Les obligations correspondantes s'appliquent à compter du 2 décembre 2027, date fixée par le règlement (UE) 2026/1744.\n- **(3)** Inférer les émotions d'une personne sur le lieu de travail est une **pratique interdite**, sauf pour des raisons médicales ou de sécurité (art. 5 §1 f). Mesurer l'« engagement » des caissiers pour leur évaluation n'en relève pas. L'interdiction s'applique depuis le 2 février 2025 (art. 113).\n\nL'option 1 ignore l'obligation de transparence et l'interdiction. L'option 2 inverse les catégories des projets 2 et 3. L'option 3 classe l'assistant à haut risque, alors qu'il n'entre dans aucun domaine de l'annexe III."
+        },
+        {
+          "id": "q8-frais-changement-cloud",
+          "kind": "true_false",
+          "prompt": "À l'aide des annexes 1 et 5, dites si l'affirmation suivante est exacte : « Si Verdalia décide en mars 2027 de quitter Nubio pour un autre fournisseur, Nubio pourra lui facturer les 18 000 € HT de frais d'export et de migration des données prévus à l'article 9 du contrat. »",
+          "points": 1,
+          "answer": false,
+          "explanation": "Faux. La plateforme de Nubio est un service de traitement de données au sens du règlement (UE) 2023/2854 (Data Act), applicable depuis le 12 septembre 2025 (art. 50). À compter du 12 janvier 2027, le fournisseur ne peut imposer aucuns frais de changement de fournisseur (art. 29 §1). La définition de ces frais inclut expressément les frais de transfert des données (art. 2, point 36). Jusqu'à cette date, seuls des frais réduits, limités aux coûts directement liés au changement, sont admis (art. 29 §2 et §3). L'exception des services conçus sur mesure (art. 31 §1) ne joue pas pour une offre standard du catalogue. En revanche, les pénalités de résiliation anticipée ne sont pas des frais de changement de fournisseur : une sortie avant le terme de trois ans peut encore en entraîner si le contrat en prévoit."
+        },
+        {
+          "id": "q9-empreinte-parc",
+          "kind": "numeric",
+          "prompt": "À l'aide de l'annexe 5, calculez la réduction nette annuelle des émissions du parc de portables obtenue en portant leur durée de vie de 4 à 6 ans, en kg CO₂e.",
+          "points": 1.5,
+          "expected_value": 2752,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "kg CO₂e",
+          "decimals": 0,
+          "explanation": "Fabrication amortie : 120 × 280 ÷ 4 = 8 400 kg par an aujourd'hui ; 120 × 280 ÷ 6 = 5 600 kg par an avec une durée de vie de 6 ans. Gain : 2 800 kg. En contrepartie, garder des appareils moins économes coûte 120 × 8 × 0,05 = 48 kg par an d'électricité. Réduction nette = 2 800 − 48 = **2 752 kg CO₂e par an**, soit environ un tiers de l'empreinte de fabrication du parc. Oublier la consommation donne 2 800 kg. L'écart illustre le constat de la fiche : en France, avec une électricité peu carbonée, la fabrication pèse bien plus que l'usage, et l'allongement de la durée de vie est le premier levier."
+        },
+        {
+          "id": "q10-tableau-de-bord",
+          "kind": "open",
+          "prompt": "À l'aide des annexes 1 et 2 et de vos calculs, critiquez le tableau de bord mensuel actuel, puis proposez le tableau de bord que Cap Data devrait fournir au directeur du réseau (indicateurs, présentation, fréquence, qualité des données).",
+          "points": 3,
+          "model_answer": "**Critique du tableau de bord actuel.**\n- Trop d'indicateurs : 23 indicateurs sur trois pages diluent l'attention ; aucun n'est relié à un objectif ni comparé à l'année précédente, de sorte que le lecteur ne sait pas où agir.\n- Définitions incohérentes : le CA TTC des caisses et le CA HT comptable coexistent, et le panier moyen du réseau est mal calculé. La moyenne des six paniers (37,78 €) n'est pas le panier du réseau (37,14 €).\n- Présentation trompeuse : un graphique en secteurs en 3D ne permet pas de comparer six magasins, et un axe commençant à 33 € exagère les écarts de panier.\n- Fiabilité et délai insuffisants : les données sont ressaisies à la main à partir de deux extractions, avec un risque d'erreur, et diffusées le 8 du mois suivant.\n\n**Lecture de septembre** avec des définitions homogènes (HT). Le CA du réseau atteint 2 600 k€ pour un objectif de 2 670 k€, soit −2,6 %. Quatre magasins sont sous l'objectif : Castres −11,3 %, Rangueil −7,1 %, Auch −6,0 %, Montauban −3,0 %. Capitole (+2,8 %) et Albi (+3,6 %) le dépassent. Le taux de marge brute du réseau est de 33,7 % (876,4 k€ ÷ 2 600 k€), homogène entre magasins (33 à 35 %). L'écart vient donc des volumes : fréquentation et panier.\n\n**Proposition.** Pour le directeur du réseau, une page mensuelle de 6 à 8 indicateurs, avec une déclinaison quotidienne pour les directeurs de magasin :\n- CA HT par rapport à l'objectif et à N−1 ;\n- nombre de tickets (fréquentation) et panier moyen HT, qui expliquent l'écart de CA ;\n- taux de marge brute ;\n- part des produits locaux, cohérente avec le positionnement de l'enseigne ;\n- taux de rupture ;\n- part du CA réalisé en ligne.\nPrésentation : barres horizontales triées des six magasins, axe à zéro, avec un repère d'objectif ; courbes mensuelles pour les tendances ; feux d'alerte au-delà d'un seuil, par exemple −5 % par rapport à l'objectif.\n\n**Qualité des données.** Toutes les données viennent de l'entrepôt, sans ressaisie. Les définitions sont partagées dans un dictionnaire de données (CA = HT comptable ; panier = CA HT ÷ tickets), et chaque indicateur a un propriétaire. L'ETL comporte des contrôles, dont un rapprochement quotidien entre le CA des caisses et le CA comptable. Les données à J+1 suffisent : un pilotage en temps réel n'est pas nécessaire.",
+          "key_points": [
+            "Critique : trop d'indicateurs sans objectif ni N−1, CA TTC et HT mélangés, panier moyen mal agrégé (37,78 € au lieu de 37,14 €)",
+            "Visualisation trompeuse : secteurs en 3D pour comparer des magasins, axe tronqué à 33 € ; ressaisie manuelle et diffusion tardive",
+            "Lecture de septembre : CA −2,6 % par rapport à l'objectif, Castres et Rangueil en retrait, marge stable autour de 33,7 % : l'écart vient des volumes",
+            "Proposition : 6 à 8 indicateurs reliés aux objectifs (CA, tickets, panier, marge, produits locaux, ruptures), barres triées axe à zéro avec repère d'objectif, alertes, fréquence adaptée au destinataire",
+            "Qualité : source unique (entrepôt), dictionnaire de données et propriétaires des indicateurs, contrôles dans l'ETL"
+          ],
+          "explanation": "La copie doit partir des défauts constatés en annexe 2, en les classant (choix des indicateurs, définitions, visualisation, fiabilité), et s'appuyer sur des chiffres recalculés : panier moyen pondéré, écarts à l'objectif, taux de marge. La proposition doit relier chaque indicateur à une décision et indiquer la présentation et la fréquence. Elle doit aussi traiter la qualité des données en amont, car un tableau de bord ne vaut que par les définitions et les contrôles qui l'alimentent."
+        },
+        {
+          "id": "q11-conformite-numerique",
+          "kind": "open",
+          "prompt": "À l'aide de l'annexe 5, rédigez une note à Mme Delmas présentant, pour chaque projet d'intelligence artificielle et pour le contrat Nubio, les obligations applicables, les risques et vos recommandations.",
+          "points": 3,
+          "model_answer": "**1. Assistant « Vera ».** Les clients doivent être informés qu'ils échangent avec une IA (AI Act, art. 50 §1, applicable depuis le 2 août 2026). Le dispositif actuel n'est pas conforme : il faut l'afficher dès l'ouverture de la conversation et vérifier avec l'éditeur que l'outil le permet. Le risque principal est l'hallucination : deux réponses erronées sur des allergènes peuvent mettre en danger un client et engager la responsabilité de Verdalia. Je recommande de faire répondre l'assistant à partir des fiches produits de l'entreprise (génération augmentée par récupération) en citant la fiche. Les questions d'allergènes doivent être orientées vers l'information officielle de l'étiquetage ou vers un conseiller. Il faut aussi tracer les échanges et faire contrôler régulièrement les réponses par un responsable.\n\n**2. Présélection des candidatures.** C'est un système à haut risque (annexe III, point 4 a). En tant que déployeur, Verdalia devra l'utiliser conformément à la notice et confier le contrôle humain à des personnes formées, disposant de l'autorité nécessaire. Elle devra veiller à la pertinence des données d'entrée, conserver les journaux au moins six mois et informer les candidats qu'ils sont soumis à ce système (art. 26 §1, §2, §4, §6 et §11). Ces obligations s'appliqueront à compter du 2 décembre 2027 (report décidé par le règlement 2026/1744), mais le RGPD s'applique dès janvier 2027. Écarter le dernier tiers des candidats sans examen humain constituerait une décision fondée exclusivement sur un traitement automatisé et produisant des effets significatifs, en principe interdite hors exceptions et garanties (RGPD art. 22). Une analyse d'impact relative à la protection des données s'impose (art. 35). Je recommande qu'un recruteur examine toutes les candidatures, l'outil n'étant qu'une aide au tri. Il faut aussi tester les biais du classement, exiger de l'éditeur sa documentation et son marquage CE, et appliquer dès maintenant les règles du déployeur.\n\n**3. Caméras en caisse.** La reconnaissance des émotions sur le lieu de travail est une pratique interdite depuis le 2 février 2025 (art. 5 §1 f), passible d'une amende pouvant atteindre 35 M€ ou 7 % du chiffre d'affaires mondial (art. 99). Le projet doit être abandonné. L'engagement des caissiers se mesure par des moyens managériaux classiques.\n\n**4. Contrat Nubio.** Plusieurs clauses sont contraires au Data Act, applicable depuis le 12 septembre 2025 : le préavis de six mois dépasse le maximum de deux mois (art. 25 §2 d) ; la suppression des données dix jours après la fin du contrat ne respecte pas la période minimale de récupération de trente jours (art. 25 §2 g). Les 18 000 € de frais d'export ne peuvent excéder les coûts directs jusqu'au 12 janvier 2027 et seront interdits ensuite (art. 29). Le contrat doit aussi prévoir une période de transition de trente jours au plus, pendant laquelle Nubio assiste le changement et maintient le service (art. 25 §2 a). Je recommande un avenant de mise en conformité. Il fixera le format d'export des données, la réversibilité testée et la localisation des données en France, et une stratégie de sortie documentée limitera la dépendance au fournisseur.\n\n**5. Numérique responsable.** Je recommande d'allonger à six ans la durée de vie des portables, soit −2 752 kg CO₂e par an, et de suivre l'empreinte du SI dans les indicateurs de Cap Data.",
+          "key_points": [
+            "Assistant : transparence obligatoire depuis le 2 août 2026 (art. 50) ; maîtrise des hallucinations (réponses à partir des fiches produits, allergènes renvoyés vers une information vérifiée, contrôle humain)",
+            "Présélection : haut risque (annexe III, 4 a) ; obligations du déployeur (art. 26) au 2 décembre 2027 après le report ; RGPD applicable dès maintenant : pas d'élimination sans examen humain (art. 22), analyse d'impact (art. 35)",
+            "Caméras : reconnaissance des émotions au travail interdite depuis le 2 février 2025 (art. 5 §1 f) : abandon du projet",
+            "Nubio : préavis limité à deux mois, transition de trente jours, récupération des données pendant trente jours au moins, frais de changement limités aux coûts puis interdits au 12 janvier 2027 (Data Act, art. 25 et 29) ; avenant et stratégie de sortie",
+            "Numérique responsable : allonger la durée de vie du parc (−2 752 kg CO₂e par an)"
+          ],
+          "explanation": "On attend une note qui, pour chaque projet, qualifie juridiquement la situation (catégorie de l'AI Act et date d'application en octobre 2026), identifie le risque concret décrit dans l'annexe et formule une recommandation opérationnelle. Points de vigilance : le report du haut risque au 2 décembre 2027 ne dispense pas du RGPD, déjà applicable ; l'interdiction des caméras est déjà en vigueur ; plusieurs clauses du contrat Nubio sont contraires au Data Act, et pas seulement les frais."
+        }
+      ],
+      "explanation": "Données : l'entrepôt suit un modèle en étoile au grain jour × magasin × produit ; le panier moyen se calcule à partir des tickets transmis par la caisse. Panier moyen du réseau = 2 600 000 ÷ 70 000 = 37,14 €, et non la moyenne des paniers (37,78 €). La requête renvoie la Crèmerie en tête avec 1 710 € (la Boulangerie, vendue dans un seul magasin, est écartée par HAVING). Pour conserver Rodez, la condition de date se place dans le ON de la jointure externe. Projet : VA = 264 000 €, CPI = 0,846, EAC = 567 273 € ; il reste 110 points, soit 4 sprints à 32 points. Conformité : l'assistant est soumis à la transparence (art. 50), la présélection des CV est à haut risque (annexe III, obligations au 2 décembre 2027, RGPD art. 22 et 35 applicables dès maintenant) et les caméras analysant les émotions sont interdites (art. 5 §1 f). Les frais de changement de fournisseur cloud sont interdits à compter du 12 janvier 2027 (Data Act, art. 29), le préavis est limité à deux mois et la période de récupération des données doit durer au moins trente jours. Allonger la vie des portables à 6 ans réduit les émissions de 2 752 kg CO₂e par an. Méthode : agréger les ratios par les totaux, raisonner sur la valeur acquise au coût budgété, qualifier chaque usage d'IA avant d'en tirer les obligations."
+    }
+  ]
+}

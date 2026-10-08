@@ -22,6 +22,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : faute de gestion autre qu'une simple négligence, ayant contribué à l'insuffisance d'actif ; prescription de trois ans depuis le jugement de liquidation (L651-2).",
+        "Inexact : aucune responsabilité de plein droit ; le tribunal apprécie la faute et peut ne retenir qu'une partie de l'insuffisance.",
+        "Inexact : l'action appartient au liquidateur et au ministère public ; les sommes entrent dans le patrimoine du débiteur, au profit de tous les créanciers.",
+        "Inexact : l'action pour insuffisance d'actif suppose une liquidation judiciaire ; elle n'existe pas en sauvegarde."
+      ],
       "explanation": "L'action en responsabilité pour insuffisance d'actif (C. com. art. L651-2) suppose une liquidation judiciaire faisant apparaître une insuffisance d'actif et une faute de gestion ayant contribué à cette insuffisance ; la simple négligence est exclue depuis la loi n° 2016-1691 ; l'action se prescrit par trois ans à compter du jugement qui prononce la liquidation : option 1. Il n'y a aucune responsabilité de plein droit : le tribunal apprécie la faute et peut ne mettre à la charge du dirigeant qu'une partie de l'insuffisance (option 2). L'action appartient au liquidateur et au ministère public (et, sous conditions, aux contrôleurs) ; les sommes versées entrent dans le patrimoine du débiteur et profitent à tous les créanciers (option 3). Elle n'existe pas en sauvegarde (option 4).",
       "source_ref": "C. com. art. L651-2 et L651-3",
       "verified": true,
@@ -49,6 +55,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : aucune sanction n'est automatique, et la durée des sanctions professionnelles ne peut excéder quinze ans, non vingt (L653-11).",
+        "Inexact : la sanction du retard de déclaration ne dépend d'aucune procédure d'alerte préalable du commissaire aux comptes.",
+        "Inexact : sanctions professionnelles et sanctions pénales de la banqueroute se cumulent si les éléments constitutifs de celle-ci sont réunis.",
+        "Exact : omission sciemment commise dans les 45 jours (L653-8) et usage des biens sociaux comme des siens (L653-4), sanctions limitées à quinze ans."
       ],
       "explanation": "L'interdiction de gérer peut être prononcée contre le dirigeant qui a sciemment omis de demander l'ouverture d'un redressement ou d'une liquidation judiciaire dans le délai de 45 jours à compter de la cessation des paiements, sans avoir demandé une conciliation (C. com. art. L653-8) ; l'usage des biens de la personne morale comme des siens propres est un cas de faillite personnelle (art. L653-4) ; la durée de ces sanctions ne peut excéder quinze ans (art. L653-11) : option 4. Aucune sanction n'est automatique et la durée de vingt ans est inexacte (option 1). La sanction ne dépend pas d'une alerte préalable (option 2). Les sanctions professionnelles se cumulent avec les sanctions pénales de la banqueroute, si ses éléments constitutifs sont réunis (option 3).",
       "source_ref": "C. com. art. L653-4, L653-8, L653-11 et L654-2",
@@ -149,6 +161,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : le délai de trois ans court du jugement qui prononce la liquidation, non de l'ouverture du redressement.",
+        "Inexact : l'action vise les dirigeants de droit ou de fait (L651-2) ; M. Castel dirigeait en fait la société.",
+        "Exact : M. Castel est dirigeant de fait ; le délai court du jugement de conversion du 10 septembre N, l'assignation du 1er juin N+3 est recevable.",
+        "Inexact : le tribunal peut mettre à la charge du dirigeant tout ou partie de l'insuffisance ; c'est une faculté, non une obligation."
+      ],
       "explanation": "La responsabilité pour insuffisance d'actif vise les dirigeants de droit ou de fait (L651-2). M. Castel exerçait en toute indépendance une activité positive de direction (ordres aux fournisseurs et aux banques, embauches) : il est dirigeant de fait. L'action se prescrit par trois ans à compter du jugement qui prononce la liquidation judiciaire, ici le jugement de conversion du 10 septembre N : l'assignation du 1er juin N+3 est dans le délai (option 3).\nL'option 1 fait courir le délai à compter de l'ouverture du redressement (le délai aurait alors expiré le 1er mars N+3). L'option 2 exclut à tort les dirigeants de fait. L'option 4 est fausse : le tribunal peut mettre à la charge du dirigeant fautif tout ou partie de l'insuffisance ; c'est une faculté, et non une obligation de condamner pour la totalité.",
       "source_ref": "C. com. art. L651-2, al. 1 (dirigeants de droit ou de fait, tout ou partie de l'insuffisance, prescription de trois ans à compter du jugement prononçant la liquidation)",
       "verified": true,

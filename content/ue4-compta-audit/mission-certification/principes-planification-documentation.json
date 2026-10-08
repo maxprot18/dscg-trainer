@@ -22,6 +22,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : l'assurance absolue est hors d'atteinte (sondages, limites du contrôle interne) et ne vise que les anomalies significatives.",
+        "Inexact : l'assurance modérée caractérise l'examen limité, mission de niveau inférieur.",
+        "Exact : la NEP 200 vise une assurance raisonnable, élevée mais non absolue, d'absence d'anomalies significatives dans les comptes pris dans leur ensemble.",
+        "Inexact : un simple constat de concordance n'apporte aucune opinion sur régularité, sincérité et image fidèle."
+      ],
       "explanation": "La NEP 200 fixe l'objectif de l'audit : obtenir l'assurance raisonnable, qualifiée d'élevée mais non absolue, que les comptes pris dans leur ensemble ne comportent pas d'anomalies significatives. L'assurance absolue est hors d'atteinte en raison des limites inhérentes à l'audit (sondages, limites du contrôle interne, éléments probants plutôt que concluants) ; elle ne porte d'ailleurs que sur les anomalies significatives, pas sur toute erreur. L'assurance modérée (ou limitée) caractérise l'examen limité, mission de niveau inférieur. Le simple constat de concordance ne correspond pas à une certification : il n'apporte aucune opinion sur la régularité, la sincérité et l'image fidèle.",
       "source_ref": "NEP 200 (principes applicables à l'audit des comptes mis en œuvre dans le cadre de la certification)",
       "verified": true,
@@ -49,6 +55,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : la lettre de mission (NEP 210) organise la relation avec l'entité : objectif, obligations respectives, honoraires.",
+        "Inexact : le plan de mission décrit l'approche générale des travaux, pas le détail des procédures.",
+        "Inexact : la note de synthèse résume en fin de mission les conclusions des travaux ; elle ne programme pas les procédures.",
+        "Exact : selon la NEP 300, le programme de travail fixe la nature, le calendrier et l'étendue des procédures de l'équipe."
+      ],
       "explanation": "La NEP 300 distingue deux niveaux de planification. Le programme de travail définit la nature, le calendrier et l'étendue des procédures que les membres de l'équipe doivent mettre en œuvre. Le plan de mission, lui, décrit l'approche générale des travaux (étendue, calendrier, orientation, seuil de signification, risques identifiés) : c'est la stratégie d'ensemble, pas le détail des procédures. La lettre de mission (NEP 210) organise la relation avec l'entité (objectif, obligations respectives, honoraires) ; la note de synthèse résume en fin de mission les conclusions des travaux.",
       "source_ref": "NEP 300 (planification de l'audit) ; NEP 210 (lettre de mission)",
       "verified": true,
@@ -75,6 +87,12 @@
       ],
       "answer": [
         0
+      ],
+      "option_explanations": [
+        "Exact : le dossier doit permettre à un professionnel expérimenté extérieur de comprendre procédures, résultats et conclusions (NEP 230).",
+        "Inexact : la confirmation orale du collaborateur ne remplace pas la documentation, qui est la preuve des diligences.",
+        "Inexact : ajouter après signature des travaux non réalisés serait une falsification ; seules des modifications de forme restent possibles.",
+        "Inexact : le dossier appartient au commissaire aux comptes ; il n'est ni transmis à l'entité ni validé par elle."
       ],
       "explanation": "La NEP 230 exige un dossier qui permette à un professionnel expérimenté, n'ayant pas participé à la mission, de comprendre la nature, le calendrier et l'étendue des procédures mises en œuvre, leurs résultats, les éléments collectés et les conclusions. « RAS » ne dit ni ce qui a été compté, ni les écarts constatés, ni comment ils ont été traités : la feuille doit être complétée. La confirmation orale du collaborateur ne remplace pas la documentation, qui est la preuve des diligences. Ajouter après la signature du rapport des travaux non réalisés serait une falsification du dossier ; seules des modifications de forme ou de classement restent possibles, dans les soixante jours suivant la signature du rapport (NEP 230 §9). Enfin, le dossier appartient au commissaire aux comptes : il n'est ni transmis à l'entité ni validé par elle.",
       "source_ref": "NEP 230 (documentation de l'audit des comptes)",

@@ -22,6 +22,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : trop restrictif ; une cessation des paiements de 45 jours au plus n'exclut pas la conciliation (L611-4).",
+        "Inexact : aucun seuil d'effectif ni de chiffre d'affaires n'est exigé pour ouvrir une conciliation.",
+        "Exact : difficulté avérée ou prévisible et pas de cessation des paiements depuis plus de 45 jours (L611-4).",
+        "Inexact : 18 mois est le report maximal de la date de cessation des paiements en redressement (L631-8), sans rapport avec la conciliation."
+      ],
       "explanation": "La conciliation est ouverte au débiteur qui éprouve une difficulté juridique, économique ou financière, avérée ou prévisible, et qui ne se trouve pas en cessation des paiements depuis plus de 45 jours (C. com. art. L611-4) : option 3. L'option 1 est trop restrictive : une cessation des paiements récente (45 jours au plus) n'exclut pas la conciliation. Aucun seuil d'effectif ou de chiffre d'affaires n'est exigé (option 2). Le délai de 18 mois de l'option 4 correspond au report maximal de la date de cessation des paiements en redressement judiciaire (art. L631-8), sans rapport avec la conciliation.",
       "source_ref": "C. com. art. L611-4 (conditions de la conciliation)",
       "verified": true,
@@ -48,6 +54,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : la sauvegarde ne peut être demandée que par le débiteur lui-même, représenté par son dirigeant (L620-1).",
+        "Exact : en SARL, tout associé non gérant peut, deux fois par exercice, interroger par écrit le gérant sur la continuité de l'exploitation (L223-36).",
+        "Inexact : aucune fraction de capital n'est exigée en SARL ; le seuil de 5 % concerne la SA (L225-232).",
+        "Inexact : le mandataire ad hoc est désigné par le président du tribunal à la demande du débiteur (L611-3), non par un associé."
       ],
       "explanation": "En SARL, tout associé non gérant peut, deux fois par exercice, poser par écrit des questions au gérant sur tout fait de nature à compromettre la continuité de l'exploitation ; la réponse est communiquée au commissaire aux comptes s'il en existe un (C. com. art. L223-36) : option 2. Aucune fraction minimale du capital n'est exigée en SARL (en SA, le droit appartient aux actionnaires représentant au moins 5 % du capital, art. L225-232), ce qui écarte l'option 3. La sauvegarde ne peut être demandée que par le débiteur lui-même, représenté par son dirigeant (art. L620-1) : option 1 fausse. Le mandataire ad hoc est désigné par le président du tribunal à la demande du débiteur (art. L611-3), non par un associé (option 4).",
       "source_ref": "C. com. art. L223-36 (SARL) et L225-232 (SA) ; art. L611-3 ; art. L620-1",
@@ -87,8 +99,8 @@
       ],
       "front": "Accord de conciliation : quelles différences entre l'accord constaté et l'accord homologué ?",
       "back": "Constaté : ordonnance du président du tribunal, à la demande conjointe des parties ; force exécutoire ; reste confidentiel, sans publicité.\nHomologué : jugement du tribunal, à la demande du débiteur ; publicité et information du CSE.\nSeule l'homologation confère le privilège de conciliation aux apports nouveaux (trésorerie, biens, services), payés par priorité en cas de procédure collective ultérieure.",
-      "explanation": "C. com. art. L611-8 (constat et homologation), L611-10 et L611-11 (privilège de conciliation). Le choix entre les deux formes est un arbitrage entre discrétion (constat) et sécurité des nouveaux financeurs (homologation).",
-      "source_ref": "C. com. art. L611-8, L611-10 et L611-11",
+      "explanation": "C. com. art. L611-8 (constat et homologation), L611-8-1 (information du CSE), L611-10 (publicité du jugement d'homologation) et L611-11 (privilège de conciliation). Le choix entre les deux formes est un arbitrage entre discrétion (constat) et sécurité des nouveaux financeurs (homologation).",
+      "source_ref": "C. com. art. L611-8, L611-8-1 (information du CSE), L611-10 et L611-11",
       "verified": true,
       "estimated_seconds": 60
     },

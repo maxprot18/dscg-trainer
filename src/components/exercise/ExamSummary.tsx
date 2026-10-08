@@ -18,6 +18,7 @@ import type { SessionEntry } from './SessionSummary'
 
 export function ExamSummary({
   ue,
+  full = false,
   exercises,
   entries,
   answers,
@@ -25,6 +26,8 @@ export function ExamSummary({
   timedOut,
 }: {
   ue: UeId
+  /** Sujet complet (dossiers seulement) plutôt qu'examen blanc. */
+  full?: boolean
   exercises: readonly Exercise[]
   entries: readonly SessionEntry[]
   answers: ReadonlyMap<string, PartResponse[]>
@@ -39,7 +42,9 @@ export function ExamSummary({
 
   return (
     <div className="flex flex-col gap-4">
-      <h1 className="text-2xl font-bold">Examen blanc {ue} : correction</h1>
+      <h1 className="text-2xl font-bold">
+        {full ? 'Sujet complet' : 'Examen blanc'} {ue} : correction
+      </h1>
       {timedOut && <p className="text-muted-foreground text-sm">Temps écoulé : l’épreuve s’est arrêtée automatiquement.</p>}
       <Card>
         <CardHeader>
@@ -48,7 +53,8 @@ export function ExamSummary({
         <CardContent className="text-muted-foreground text-sm">
           {entries.length} exercice{entries.length > 1 ? 's' : ''} traité{entries.length > 1 ? 's' : ''} sur {exercises.length}{' '}
           en {Math.floor(minutes / 60)} h {String(minutes % 60).padStart(2, '0')}. Chaque exercice pèse sa durée estimée ;
-          un exercice non traité vaut 0.
+          un exercice commencé compte au prorata des questions traitées, un exercice non traité vaut 0. Les réponses
+          rédigées sont notées sur les points clés repérés dans votre copie.
         </CardContent>
       </Card>
       <ol className="flex flex-col gap-2">
@@ -62,9 +68,9 @@ export function ExamSummary({
                   {!result ? (
                     <CircleMinus className="text-muted-foreground mt-0.5 size-4 shrink-0" aria-label="non traité" />
                   ) : result.correct ? (
-                    <CircleCheck className="mt-0.5 size-4 shrink-0 text-emerald-700" aria-label="réussi" />
+                    <CircleCheck className="mt-0.5 size-4 shrink-0 text-emerald-700 dark:text-emerald-400" aria-label="réussi" />
                   ) : (
-                    <CircleX className="mt-0.5 size-4 shrink-0 text-red-700" aria-label="à revoir" />
+                    <CircleX className="mt-0.5 size-4 shrink-0 text-red-700 dark:text-red-400" aria-label="à revoir" />
                   )}
                   <span className="flex-1">
                     <span className="block">

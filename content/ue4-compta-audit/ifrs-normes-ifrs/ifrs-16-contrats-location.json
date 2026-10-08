@@ -47,6 +47,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : la charge de loyer linéaire correspond à l'ancien traitement IAS 17 de la location simple.",
+        "Exact : modèle unique du preneur ; amortissement du droit d'utilisation (§31) et intérêts sur la dette locative (§36-38).",
+        "Inexact : la distinction location simple / location-financement ne subsiste que chez le bailleur.",
+        "Inexact : l'exemption ne vise que les contrats de 12 mois au plus et les actifs de faible valeur, pas ce bail de 6 ans."
+      ],
       "explanation": "Chez le preneur, IFRS 16 applique un modèle unique : à la date de début, un droit d'utilisation et une dette locative sont comptabilisés (§22). Au compte de résultat apparaissent l'amortissement du droit d'utilisation (§31) et la charge d'intérêts sur la dette locative (§36-38, §49), et non une charge de loyer. La distinction location simple / location-financement ne subsiste que chez le bailleur, donc la réponse « charge de loyer linéaire » correspond à l'ancien traitement IAS 17 de la location simple. Aucun traitement hors bilan n'existe pour un contrat de 6 ans, l'exemption ne visant que les contrats de 12 mois au plus et les actifs de faible valeur.",
       "source_ref": "IFRS 16 §22, §31 et §36-38, §49 (règlement UE 2023/1803)",
       "verified": true,

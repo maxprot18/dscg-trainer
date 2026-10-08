@@ -23,6 +23,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : l'imposition mondiale avec crédit d'impôt n'est pas appliquée par la France en matière d'IS, hors régimes particuliers.",
+        "Inexact : confusion avec la distribution de dividendes par une filiale ; la succursale n'a pas de personnalité juridique.",
+        "Exact : l'IS ne frappe que les bénéfices des entreprises exploitées en France (art. 209, I) ; la succursale madrilène est exclue de la base.",
+        "Inexact : l'option transpose à tort le régime mère-fille, propre aux dividendes de filiales, personnes morales distinctes."
+      ],
       "explanation": "L'IS français ne frappe que les bénéfices réalisés dans les entreprises exploitées en France (CGI art. 209, I) : les résultats d'une succursale étrangère en sont exclus, qu'ils soient bénéficiaires ou déficitaires (option 3). Ils sont imposés dans l'État où l'établissement est situé, ce que confirme la convention fiscale franco-espagnole.\nL'option 1 décrit une imposition mondiale avec crédit d'impôt, que la France n'applique pas en matière d'IS (hors régimes particuliers).\nL'option 2 confond avec la distribution de dividendes par une filiale.\nL'option 4 transpose à tort le régime mère-fille, qui concerne les dividendes de filiales, personnes morales distinctes.",
       "source_ref": "CGI art. 209, I (territorialité de l'IS)",
       "estimated_seconds": 60
@@ -49,6 +55,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : la hausse des redevances par rapport à l'exercice précédent n'est pas un critère de l'article 57.",
+        "Exact : l'administration établit le lien de dépendance et l'avantage consenti par comparaison avec des entreprises indépendantes (CGI art. 57).",
+        "Inexact : le régime fiscal privilégié n'est pas une condition ; il dispense seulement de prouver la dépendance.",
+        "Inexact : la charge de la preuve pèse sur l'administration, même si les obligations documentaires facilitent son contrôle."
       ],
       "explanation": "L'article 57 permet de réintégrer les bénéfices indirectement transférés à une entreprise étrangère liée par majoration ou diminution des prix ou par tout autre moyen. L'administration doit établir, d'une part, le lien de dépendance juridique ou de fait (ici évident : la bénéficiaire est la mère), d'autre part, l'avantage consenti, par comparaison avec ce qu'auraient pratiqué des entreprises indépendantes (option 2).\nL'option 1 n'est pas un critère.\nL'option 3 : le régime fiscal privilégié n'est pas une condition de l'article 57 ; il dispense seulement l'administration de prouver la dépendance lorsque la bénéficiaire est située dans un tel État.\nL'option 4 : la charge de la preuve pèse sur l'administration, même si les obligations documentaires de l'entreprise facilitent son contrôle.",
       "source_ref": "CGI art. 57 (transfert indirect de bénéfices à l'étranger)",
@@ -200,6 +212,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : c'est le droit commun, écarté par l'article 209 B pour une entité contrôlée à plus de 50 % sous régime privilégié.",
+        "Exact : 14 % ≤ 15 % (25 % × 60 %) : régime privilégié ; Delta est imposée sur 1 000 000 × 70 % = 700 000 € (art. 209 B).",
+        "Inexact : l'option oublie de proportionner le bénéfice imposable à la participation de 70 %.",
+        "Inexact : l'option applique l'ancien seuil de 50 % ; un impôt inférieur de 40 % ou plus à l'IS suffit (art. 238 A)."
+      ],
       "explanation": "Un État ou territoire applique un régime fiscal privilégié lorsque l'impôt local est inférieur de 40 % ou plus à l'IS français de droit commun, soit ici 25 % × 60 % = 15 % ou moins (CGI art. 238 A, seuil applicable depuis 2020). Avec 14 %, Kappa en bénéficie. Delta détenant plus de 50 % et ne pouvant invoquer ni l'exception européenne ni la clause de sauvegarde, elle est imposée sur la quote-part du bénéfice de Kappa : 1 000 000 × 70 % = 700 000 € (CGI art. 209 B), l'impôt acquitté par Kappa étant imputable sur l'IS français à proportion : option 2. L'option 1 décrit le droit commun, écarté par l'article 209 B. L'option 3 oublie la proportion de la participation. L'option 4 applique l'ancien seuil de 50 %, remplacé par celui de 40 %.",
       "source_ref": "CGI art. 209 B (entités étrangères contrôlées à plus de 50 %) ; CGI art. 238 A (régime fiscal privilégié : impôt inférieur de 40 % ou plus à l'IS français)",
       "verified": true,

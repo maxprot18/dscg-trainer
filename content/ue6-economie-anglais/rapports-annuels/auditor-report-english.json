@@ -22,6 +22,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Incorrect: a qualification would follow only inadequate disclosure; the Opinion section still states a true and fair view.",
+        "Correct: under ISA 570, an adequately disclosed material uncertainty leads to an unmodified opinion with a separate going concern section.",
+        "Incorrect: nothing indicates a limitation of scope; the auditor did express an opinion.",
+        "Incorrect: an adverse opinion applies when the going concern basis is inappropriate, which is not the case here."
+      ],
       "explanation": "Option 2 is correct: under ISA 570, when the going concern basis is appropriate but a material uncertainty exists and is adequately disclosed, the auditor expresses an unmodified opinion and includes a separate section headed \"Material uncertainty related to going concern\" referring to the relevant note. Option 1 is wrong: a qualified opinion would be issued only if the disclosure were inadequate, whereas here the Opinion section still states that the financial statements give a true and fair view. Option 3 is wrong: nothing indicates a limitation of scope. Option 4 is wrong: an adverse opinion applies when the financial statements are prepared on a going concern basis although this basis is inappropriate, which is not the case here.",
       "source_ref": "ISA 570 (Revised) §22-23 (use of the going concern basis appropriate but a material uncertainty exists) — IAASB",
       "verified": true,
@@ -69,6 +75,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Incorrect: fees are disclosed by the entity in the notes; the report gives no service-by-service fee breakdown.",
+        "Incorrect: an opinion on internal control over financial reporting is a US requirement (Sarbanes-Oxley, section 404(b)), not an EU one.",
+        "Incorrect: misstatements are communicated to management and those charged with governance, not listed in the public report.",
+        "Correct: article 10 requires the date of appointment and the total uninterrupted engagement period for public-interest entities."
+      ],
       "explanation": "Option 4 is correct: article 10 of the Regulation adds specific contents for public-interest entities, including the date of appointment and the period of total uninterrupted engagement, key audit matters, a statement that no prohibited non-audit services were provided and that the auditor remained independent, and confirmation that the opinion is consistent with the additional report to the audit committee. Option 1 is wrong: audit and non-audit fees are disclosed by the entity in the notes, not detailed service by service in the auditor's report (the report only has to indicate services provided in addition to the statutory audit that are not already disclosed in the management report or the financial statements, with no fee breakdown). Option 2 is wrong: an opinion on internal control over financial reporting is a US requirement (Sarbanes-Oxley Act, section 404(b)) for certain issuers, not an EU one. Option 3 is wrong: misstatements are communicated to management and those charged with governance (and summarised in the additional report to the audit committee), not listed in the public report.",
       "source_ref": "Regulation (EU) No 537/2014, art. 10(2), points (b), (c), (e), (f) and (g) (additional contents of the audit report for public-interest entities) and art. 11 (additional report to the audit committee)",
       "verified": true,
@@ -97,6 +109,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: key audit matters are addressed in the context of the audit as a whole; no separate opinion is given on them.",
+        "Correct: ISA 701 requires describing the most significant matters, why they were significant and how they were addressed.",
+        "Incorrect: the section does not list misstatements; an uncorrected material misstatement would lead to a modified opinion.",
+        "Incorrect: ISA 701 states that a key audit matter is not a substitute for a modified opinion required by ISA 705."
+      ],
       "explanation": "Under ISA 701, key audit matters are the matters that, in the auditor's professional judgement, were of most significance in the audit of the current period; for each one the report explains why it was considered most significant and how it was addressed. They are addressed in the context of the audit of the financial statements as a whole, and the auditor does not provide a separate opinion on them, so option 2 is correct and option 1 is wrong. Option 3 is wrong: the section does not list misstatements; an uncorrected material misstatement would lead to a modified opinion. Option 4 is wrong: ISA 701 states that communicating a key audit matter is not a substitute for a modified opinion required by ISA 705.",
       "source_ref": "ISA 701 (IAASB) §8 (definition), §11 (no separate opinion), §13 (description of each key audit matter), §4 and §12 (not a substitute for a modified opinion) ; NEP 701",
       "verified": true,

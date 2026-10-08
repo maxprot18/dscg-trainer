@@ -24,6 +24,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : la triple bottom line ajoute aux résultats économiques les performances sociale et environnementale ; elle fonde la performance globale.",
+        "Inexact : financière, commerciale et industrielle restent trois dimensions purement économiques.",
+        "Inexact : stratégique, tactique et opérationnel désignent les niveaux de décision (Anthony, Ansoff), pas des dimensions de performance.",
+        "Inexact : actionnaires, dirigeants et salariés sont des parties prenantes, pas des dimensions de performance."
+      ],
       "explanation": "L'option 1 est exacte : la triple bottom line ajoute aux résultats économiques une mesure des performances sociale et environnementale ; c'est le fondement de la notion de performance globale. L'option 2 est fausse : ces trois dimensions restent purement économiques. L'option 3 est fausse : elle désigne les niveaux de décision (Anthony, Ansoff), pas des dimensions de performance. L'option 4 est fausse : elle énumère des parties prenantes, pas des dimensions de performance."
     },
     {
@@ -50,6 +56,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : la richesse créée pour les seuls actionnaires définit la valeur actionnariale, pas la valeur partenariale.",
+        "Inexact : la valeur boursière moins la valeur comptable des capitaux propres est la MVA, approche boursière de la valeur actionnariale.",
+        "Exact : elle mesure la richesse créée pour toutes les parties prenantes, par différence entre prix d'opportunité et coûts d'opportunité.",
+        "Inexact : le mécénat est une dépense, pas une mesure de la valeur créée."
+      ],
       "explanation": "L'option 3 est exacte : la valeur partenariale élargit la mesure de la création de valeur à toutes les parties prenantes (clients, salariés, fournisseurs, prêteurs, actionnaires) ; elle compare ce que les clients seraient prêts à payer aux coûts d'opportunité des ressources apportées. L'option 1 est fausse : elle définit la valeur actionnariale. L'option 2 est fausse : elle définit la MVA (approche boursière de la valeur actionnariale). L'option 4 est fausse : le mécénat est une dépense, pas une mesure de valeur créée."
     },
     {
@@ -75,6 +87,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : ISO 26000 n'est pas certifiable, contrairement à ISO 14001 sur le management environnemental.",
+        "Inexact : l'environnement n'est que l'une des sept questions centrales, avec notamment la gouvernance et les droits de l'homme.",
+        "Inexact : la loi PACTE n'impose pas cette norme, qui ne fournit que des lignes directrices.",
+        "Exact : ISO 26000 donne des lignes directrices non certifiables, autour de sept questions centrales (gouvernance, droits de l'homme, environnement…)."
       ],
       "explanation": "L'option 4 est exacte : ISO 26000 est une norme de lignes directrices ; elle n'est pas conçue pour la certification. Ses sept questions centrales sont la gouvernance, les droits de l'homme, les relations et conditions de travail, l'environnement, la loyauté des pratiques, les questions relatives aux consommateurs, et les communautés et le développement local. L'option 1 est fausse : contrairement à ISO 14001 (management environnemental), elle n'est pas certifiable. L'option 2 est fausse : l'environnement n'est qu'une des sept questions. L'option 3 est fausse : la loi PACTE n'impose pas cette norme."
     },

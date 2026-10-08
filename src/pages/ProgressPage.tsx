@@ -4,16 +4,18 @@ import { Link } from 'react-router-dom'
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { TYPE_LABELS } from '@/content/labels'
-import { taxonomy, useExercises } from '@/content/load'
+import { exerciseHeadline, TYPE_LABELS } from '@/content/labels'
+import { taxonomy, useExercise, useExercises } from '@/content/load'
+import { buildTaxonomyIndex } from '@/content/taxonomy'
 import type { Exercise } from '@/content/schema'
 import type { SessionMode } from '@/db/db'
-import { useProgress, type ProgressData } from '@/db/progress'
+import { useMarks, useProgress, type ProgressData } from '@/db/progress'
 import { sessionSearch } from '@/engine/sessionConfig'
 import {
   activeDays,
   currentStreak,
   MASTERY_LABELS,
+  predictedGrades,
   programProgress,
   sessionHistory,
   statsByType,
@@ -33,6 +35,7 @@ const MODE_LABELS: Record<SessionMode, string> = {
   smart: 'Révision intelligente',
   errors: 'Erreurs',
   exam: 'Examen blanc',
+  full: 'Sujet complet',
   cards: 'Flashcards',
   diagnostic: 'Positionnement',
 }
@@ -84,6 +87,8 @@ export function ProgressView({ progress, now: nowProp }: { progress: ProgressDat
           </Link>
         </Button>
       )}
+      <PredictedGrades progress={progress} />
+      <Bookmarks />
       <WeeklyChart progress={progress} now={now} />
       <Heatmap ues={ues} />
       <ByUe ues={ues} now={now} />
@@ -91,6 +96,98 @@ export function ProgressView({ progress, now: nowProp }: { progress: ProgressDat
       <History progress={progress} />
       <BackupCard />
     </div>
+  )
+}
+
+const taxonomyIndex = buildTaxonomyIndex(taxonomy)
+
+/** Exercices et fiches marqués « À revoir plus tard ». */
+function Bookmarks() {
+  const marks = useMarks('bookmark')
+  if (!marks || marks.size === 0) return null
+  const targets = [...marks].sort()
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>À revoir plus tard</CardTitle>
+        <CardDescription>Les exercices et fiches que vous avez marqués.</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <ul className="flex flex-col gap-1 text-sm">
+          {targets.map((target) => (
+            <li key={target}>
+              {target.startsWith('notion:') ? <BookmarkedSheet notion={target.slice('notion:'.length)} /> : <BookmarkedExercise id={target} />}
+            </li>
+          ))}
+        </ul>
+      </CardContent>
+    </Card>
+  )
+}
+
+function BookmarkedSheet({ notion }: { notion: string }) {
+  const entry = taxonomyIndex.notions.get(notion)
+  return (
+    <Link to={`/cours/${notion}`} className="text-primary flex min-h-9 items-center gap-2 underline-offset-2 hover:underline">
+      <span className="text-muted-foreground text-xs">Fiche</span> {entry?.notion.title ?? notion}
+    </Link>
+  )
+}
+
+function BookmarkedExercise({ id }: { id: string }) {
+  const exercise = useExercise(id)
+  if (exercise === null) return null
+  return (
+    <Link to={`/exercice/${id}`} className="text-primary flex min-h-9 items-center gap-2 underline-offset-2 hover:underline">
+      <span className="text-muted-foreground text-xs">{exercise ? exercise.ue : 'Exercice'}</span>
+      <span className="line-clamp-1">{exercise ? exerciseHeadline(exercise) : id}</span>
+    </Link>
+  )
+}
+
+/** Note prévisionnelle par UE, tirée des derniers examens blancs et sujets complets. */
+function PredictedGrades({ progress }: { progress: ProgressData }) {
+  const grades = useMemo(() => predictedGrades(progress.sessions), [progress])
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>Note prévisionnelle</CardTitle>
+        <CardDescription>
+          Moyenne de vos trois derniers examens blancs ou sujets complets de chaque UE, le plus récent comptant davantage.
+        </CardDescription>
+      </CardHeader>
+      <CardContent className="text-sm">
+        {grades.size === 0 ? (
+          <p className="text-muted-foreground">
+            Passez un <Link to="/entrainement#examen-blanc" className="text-primary underline underline-offset-2">examen blanc</Link> pour
+            obtenir une note estimée par UE.
+          </p>
+        ) : (
+          <ul className="flex flex-col gap-2">
+            {taxonomy.ues
+              .filter((u) => grades.has(u.id))
+              .map((u) => {
+                const g = grades.get(u.id)!
+                return (
+                  <li key={u.id} className="flex items-baseline justify-between gap-3">
+                    <span className="min-w-0">
+                      <span className="font-medium">{u.id}</span> <span className="text-muted-foreground">— {u.title}</span>
+                    </span>
+                    <span className="shrink-0 text-right tabular-nums">
+                      <span className={cn('font-semibold', g.grade >= 10 ? 'text-emerald-700 dark:text-emerald-400' : 'text-destructive')}>
+                        {g.grade.toLocaleString('fr-FR')} / 20
+                      </span>
+                      <span className="text-muted-foreground block text-xs">
+                        {g.exams} examen{g.exams > 1 ? 's' : ''}, dernier : {g.last.toLocaleString('fr-FR')}
+                      </span>
+                    </span>
+                  </li>
+                )
+              })}
+          </ul>
+        )}
+      </CardContent>
+    </Card>
   )
 }
 

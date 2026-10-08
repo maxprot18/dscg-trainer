@@ -18,7 +18,7 @@
 Financial review of Ashdown Group plc: "Revenue was €1,840m (2024: €1,600m), up 15%. 2025 includes €120m from Varela SA, acquired on 1 March 2025, and a favourable currency effect of €40m. 2024 included €100m from the logistics business sold on 31 December 2024."
 - Reported growth = 1,840 ÷ 1,600 − 1 = 15%.
 - Organic base 2024 = 1,600 − 100 = 1,500 ; organic revenue 2025 = 1,840 − 120 − 40 = 1,680.
-- Organic growth = 1,680 ÷ 1,500 − 1 = 12%: three points of the reported growth come from the acquisition and the currency.
+- Organic growth = 1,680 ÷ 1,500 − 1 = 12%: the three-point gap with reported growth is a net effect, since the acquisition and the currency raise reported growth while the disposal lowers it.
 - Elsewhere: "operating margin expanded by 80 bp to 12.3%" means a prior-year margin of 12.3 − 0.8 = 11.5%.
 
 ## Common mistakes

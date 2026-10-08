@@ -24,6 +24,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : l'exclusion sectorielle écarte des secteurs entiers (charbon, armement, tabac).",
+        "Inexact : le best-effort privilégie les émetteurs qui progressent, quel que soit leur niveau actuel.",
+        "Exact : le best-in-class retient les mieux notés au sein de chaque secteur, ce qui conserve la diversification sectorielle.",
+        "Inexact : l'engagement actionnarial (dialogue, vote en assemblée) n'est pas une règle de sélection."
+      ],
       "explanation": "Le best-in-class retient les émetteurs les mieux notés au sein de chaque secteur, ce qui conserve une diversification sectorielle (option 3). L'exclusion sectorielle (option 1) écarte au contraire des secteurs entiers (charbon, armement, tabac…). Le best-effort (option 2) privilégie les émetteurs qui progressent, quel que soit leur niveau actuel. L'engagement actionnarial (option 4) consiste à dialoguer avec les entreprises et à voter en assemblée pour faire évoluer leurs pratiques : ce n'est pas une règle de sélection."
     },
     {
@@ -49,6 +55,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : confond note ESG et note de crédit.",
+        "Inexact : prête à la note un objet, l'impact absolu, qu'elle n'a généralement pas ; une note élevée ne signifie pas un faible impact.",
+        "Inexact : la note couvre les trois piliers E, S et G, avec des pondérations propres au secteur.",
+        "Exact : matérialité financière ; la note apprécie l'exposition aux enjeux ESG du secteur et leur gestion, souvent par comparaison avec les pairs."
       ],
       "explanation": "La plupart des notations ESG relèvent de la matérialité financière : elles évaluent l'exposition de l'émetteur aux enjeux ESG pertinents pour son secteur et la manière dont il les gère, souvent par comparaison avec ses pairs (option 4). Une note élevée ne signifie donc pas un faible impact. L'option 1 confond note ESG et note de crédit. L'option 2 prête à la note un objet (l'impact absolu) qu'elle n'a généralement pas. L'option 3 est fausse : la note couvre les trois piliers E, S et G, avec des pondérations propres au secteur."
     },
@@ -76,6 +88,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : excessif ; le risque de transition peut avoir une composante systématique (bêta), et une prime reste possible s'il n'est pas dans les flux.",
+        "Exact : un risque s'intègre une seule fois, dans les flux ou dans le taux ; la prime ajoutée sous-évaluerait la société.",
+        "Inexact : les actionnaires, créanciers résiduels, supportent le risque en premier.",
+        "Inexact : une hausse du taux réduit à la fois la valeur des flux explicites et la valeur terminale."
       ],
       "explanation": "Un risque doit être intégré une seule fois : soit dans les flux (scénario, coût du carbone), soit dans le taux d'actualisation. Ajouter une prime à un taux appliqué à des flux déjà pénalisés sous-évalue la société (option 2). L'option 1 est excessive : le risque de transition peut avoir une composante systématique (bêta) et une prime spécifique reste possible si le risque n'est pas dans les flux. L'option 3 est fausse : les actionnaires, créanciers résiduels, supportent le risque en premier. L'option 4 est fausse : une hausse du taux réduit à la fois la valeur des flux explicites et la valeur terminale, donc la valeur."
     },

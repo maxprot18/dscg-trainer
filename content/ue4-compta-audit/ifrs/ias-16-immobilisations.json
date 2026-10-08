@@ -21,6 +21,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : un plan unique ne reflète pas le rythme de consommation des moteurs, dont le coût est significatif et la durée de 8 ans.",
+        "Exact : approche par composants (IAS 16 §43) ; moteurs (30 % du coût) sur 8 ans, cellule sur 20 ans.",
+        "Inexact : l'approche par composants est imposée par IAS 16 ; elle n'est pas laissée à la politique de l'entité.",
+        "Inexact : une durée moyenne pondérée ne reflète pas le rythme de consommation de chaque composant significatif."
+      ],
       "explanation": "IAS 16 impose l'approche par composants : chaque partie d'une immobilisation corporelle dont le coût est significatif par rapport au coût total est amortie séparément sur sa propre durée d'utilité. Les moteurs (30 % du coût, 8 ans) et la cellule (20 ans) ont des durées très différentes : on retient deux plans. Une durée moyenne pondérée ou un plan unique ne reflètent pas le rythme de consommation des avantages économiques.",
       "source_ref": "IAS 16 §43-47 (règlement UE 2023/1803)",
       "verified": true,
@@ -49,6 +55,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : à la réception, la machine n'était encore ni installée ni testée, donc pas disponible pour être utilisée.",
+        "Exact : l'amortissement commence dès que l'actif est prêt à fonctionner comme prévu par la direction (IAS 16 §55).",
+        "Inexact : l'inactivité de l'actif ne suspend pas l'amortissement, sauf mode fondé sur l'utilisation.",
+        "Inexact : aucune règle ne repousse l'amortissement au début de l'exercice suivant."
       ]
     },
     {
@@ -75,6 +87,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : si une immobilisation est réévaluée, toute sa catégorie doit l'être (IAS 16 §36) ; pas de choix actif par actif.",
+        "Inexact : la fréquence dépend des variations de juste valeur ; annuelle si volatile, sinon tous les 3 à 5 ans (§34).",
+        "Inexact : l'obligation s'étend à la seule catégorie (§37), pas à toutes les immobilisations corporelles.",
+        "Exact : toute la catégorie est réévaluée (§36), assez régulièrement pour que la valeur comptable reste proche de la juste valeur (§31)."
       ]
     },
     {

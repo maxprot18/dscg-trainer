@@ -25,6 +25,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : inverse la parité (120 / 80) et avantagerait les actionnaires de Bêta.",
+        "Inexact : ignore la différence de valeur unitaire entre les deux actions.",
+        "Exact : parité 80 / 120 = 2/3 ; 3 actions Bêta (240 €) valent 2 actions Alpha (240 €).",
+        "Inexact : ne correspond à aucun rapport des valeurs de l'énoncé."
+      ],
       "explanation": "Parité = 80 / 120 = 2/3 : chaque action Bêta donne droit à 2/3 d'action Alpha, soit 2 actions Alpha pour 3 actions Bêta. Vérification : 3 actions Bêta valent 240 €, comme 2 actions Alpha. L'option 1 inverse la parité (120 / 80) et avantagerait les actionnaires de Bêta. L'option 2 ignore la différence de valeur unitaire. L'option 4 ne correspond à aucun rapport de valeurs de l'énoncé."
     },
     {
@@ -53,6 +59,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : rémunère toutes les actions Doris, y compris les 30 000 détenues par Cendre, qui ne sont pas échangées.",
+        "Inexact : 270 000 est le nombre d'actions Doris échangées, sans application de la parité.",
+        "Inexact : applique la parité inversée (270 000 × 125 / 50).",
+        "Exact : 270 000 actions échangées (hors 10 % détenus par Cendre) × 50 / 125 = 108 000 actions nouvelles."
+      ],
       "explanation": "Parité : 50 / 125 = 0,4 action Cendre pour 1 action Doris (2 pour 5). Cendre ne peut pas recevoir ses propres actions en échange des 30 000 actions Doris qu'elle détient : seules 270 000 actions sont échangées, d'où 270 000 × 0,4 = 108 000 actions nouvelles. L'option 1 rémunère toutes les actions Doris, y compris celles de Cendre. L'option 2 est le nombre d'actions Doris échangées, sans application de la parité. L'option 3 applique la parité inversée (270 000 × 125 / 50)."
     },
     {

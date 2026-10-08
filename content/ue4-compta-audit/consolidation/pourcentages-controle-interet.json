@@ -165,6 +165,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : 24 % (80 % × 30 %) est le pourcentage d'intérêt, qui ne sert pas à apprécier le contrôle.",
+        "Exact : Kappa contrôle Lambda ; les 30 % de droits de vote de Lambda dans Mu sont retenus en totalité, sans multiplication.",
+        "Inexact : 80 % est le pourcentage de contrôle dans Lambda, pas dans Mu.",
+        "Inexact : 110 % additionne des pourcentages qui ne portent pas sur la même société."
+      ],
       "explanation": "Pour le pourcentage de contrôle, on retient en totalité les droits de vote détenus par les entités que la mère contrôle, sans multiplier les pourcentages. Kappa contrôle Lambda (80 %) ; les 30 % de droits de vote détenus par Lambda dans Mu sont donc retenus en totalité : contrôle = 30 %, d'où une influence notable présumée. 24 % (option 1) est le pourcentage d'intérêt (80 % × 30 %), qui ne sert pas à apprécier le contrôle. 80 % (option 3) est le contrôle de Lambda, pas de Mu. 110 % (option 4) additionne des pourcentages qui ne portent pas sur la même société.",
       "source_ref": "Règl. ANC 2020-01 art. 211-6 ; C. com. L233-16",
       "verified": true,

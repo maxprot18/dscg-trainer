@@ -22,6 +22,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : datée de la clôture, la lettre laisserait sans déclaration toute la période postérieure jusqu'au rapport.",
+        "Inexact : la date d'arrêté des comptes précède en général de plusieurs semaines celle du rapport.",
+        "Inexact : le rapport est émis avant l'assemblée ; une lettre datée de l'assemblée serait postérieure au rapport.",
+        "Exact : les déclarations couvrent la période jusqu'au rapport ; la lettre est datée au plus près du rapport, jamais après (NEP 580)."
+      ],
       "explanation": "Les déclarations écrites doivent couvrir toute la période jusqu'à la date du rapport, notamment au regard des événements postérieurs à la clôture : la lettre est datée aussi près que possible de la date du rapport du commissaire aux comptes, et jamais après (option 4). La date de clôture (option 1) laisserait sans déclaration toute la période postérieure. La date d'arrêté des comptes (option 2) est en général antérieure de plusieurs semaines au rapport. Le rapport étant émis avant l'assemblée, une lettre datée du jour de l'assemblée (option 3) serait postérieure au rapport.",
       "source_ref": "NEP 580 (déclarations de la direction)",
       "verified": true,
@@ -48,6 +54,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : une déclaration de la direction, partie intéressée, n'est pas à elle seule un élément suffisant.",
+        "Exact : la déclaration écrite complète les éléments probants sans remplacer les procédures sur la valeur nette de réalisation (NEP 580).",
+        "Inexact : la responsabilité du commissaire aux comptes sur son opinion ne se transfère pas.",
+        "Inexact : les déclarations peuvent porter sur des montants, par exemple l'incidence des anomalies non corrigées."
       ],
       "explanation": "Les déclarations écrites complètent les éléments probants collectés par ailleurs ; elles ne remplacent pas les procédures que le commissaire aux comptes peut raisonnablement mettre en œuvre (option 2). Sur l'évaluation des stocks, il doit tester la valeur nette de réalisation (prix de vente postérieurs, rotation, articles obsolètes). L'option 1 est fausse : une déclaration de la direction, partie intéressée, n'est pas à elle seule un élément suffisant. L'option 3 est fausse : la responsabilité du commissaire aux comptes sur son opinion ne se transfère pas. L'option 4 est fausse : les déclarations peuvent porter sur des montants (par exemple l'incidence jugée non significative des anomalies non corrigées).",
       "source_ref": "NEP 580 (déclarations de la direction) ; NEP 500 (caractère probant des éléments collectés)",
@@ -76,6 +88,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : la NEP 580 impose au commissaire aux comptes de demander ces déclarations ; la lettre n'est pas facultative.",
+        "Inexact : aucune démission immédiate n'est prévue ; le commissaire aux comptes exprime son opinion.",
+        "Inexact : confusion entre limitation et désaccord ; le refus de certifier sanctionne une anomalie significative à effet diffus.",
+        "Exact : le refus prive le CAC d'un élément indispensable : limitation, à effet diffus pour ces déclarations générales, jusqu'à l'impossibilité de certifier."
       ],
       "explanation": "Le refus de fournir une déclaration que le commissaire aux comptes estime nécessaire prive celui-ci d'un élément qu'il juge indispensable : c'est une limitation de l'étendue de ses travaux, et non un désaccord sur une anomalie identifiée (option 4). Il en tire les conséquences sur son opinion ; s'agissant de déclarations générales comme l'exhaustivité des informations fournies, l'incidence est diffuse et peut conduire à l'impossibilité de certifier. Il réévalue aussi sa confiance dans l'intégrité de la direction et dans ses autres déclarations. L'option 1 est fausse : la NEP 580 impose de demander ces déclarations. L'option 2 est fausse : aucune démission immédiate n'est prévue, le commissaire aux comptes exprime son opinion. L'option 3 confond limitation et désaccord : le refus de certifier sanctionne une anomalie significative à effet diffus.",
       "source_ref": "NEP 580 (déclarations de la direction) ; NEP 700 (limitation et impossibilité de certifier)",

@@ -3,56 +3,51 @@ import { Link, useNavigate } from 'react-router-dom'
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { examDurations, exerciseCount, taxonomy, useExercises } from '@/content/load'
+import { examDurations, exerciseCount, taxonomy, useExerciseIndex, useUeExercises } from '@/content/load'
 import type { UeId } from '@/content/schema'
 import { useProgress } from '@/db/progress'
-import { buildExamSession, isDossier, QUICK_SESSION_SECONDS, QUICK_SESSION_SIZE, SMART_SESSION_SIZE } from '@/engine/session'
+import { buildExamSession, FULL_EXAM_MIN_DOSSIERS, QUICK_SESSION_SECONDS, QUICK_SESSION_SIZE, SMART_SESSION_SIZE } from '@/engine/session'
 import { useSettings } from '@/lib/settings'
 import { newSeed, sessionSearch } from '@/engine/sessionConfig'
 import { failedExerciseIds } from '@/engine/stats'
 
 const selectClass =
-  'border-input bg-background focus-visible:ring-ring/50 h-10 w-full rounded-md border px-3 text-sm outline-none focus-visible:ring-[3px]'
+  'border-input bg-background focus-visible:ring-ring/70 h-10 w-full rounded-md border px-3 text-sm outline-none focus-visible:ring-[3px]'
 
 /**
  * Choix du mode d'entraînement. L'écran s'affiche tout de suite avec les nombres d'exercices
- * calculés au build ; le contenu se charge en arrière-plan pour l'examen blanc et les erreurs.
+ * calculés au build ; l'index des exercices (erreurs, sujets type) et le contenu de l'UE choisie pour
+ * l'examen blanc se chargent en arrière-plan.
  */
 export function TrainPage() {
   const navigate = useNavigate()
-  const exercises = useExercises()
+  const index = useExerciseIndex()
   const count = exerciseCount
 
   const firstUe = taxonomy.ues.find((u) => count(u.id) > 0)?.id ?? taxonomy.ues[0].id
   const progress = useProgress()
   const [now] = useState(() => Date.now())
   const dueCount = progress?.reviews.filter((r) => r.due <= now).length ?? 0
-  const knownIds = useMemo(() => new Set((exercises ?? []).map((e) => e.id)), [exercises])
   const errorCount =
-    progress && exercises ? failedExerciseIds(progress.attempts).filter((id) => knownIds.has(id)).length : 0
+    progress && index ? failedExerciseIds(progress.attempts).filter((id) => id in index.ids).length : 0
   const [examUe, setExamUe] = useState<UeId>(firstUe)
   const [diagUe, setDiagUe] = useState<UeId>(firstUe)
+  const examExercises = useUeExercises([examUe])
   const examSize = useMemo(
-    () => (exercises ? buildExamSession(exercises, examUe, examDurations[examUe], 0).length : null),
-    [exercises, examUe],
+    () => (examExercises ? buildExamSession(examExercises, examUe, examDurations[examUe], 0).length : null),
+    [examExercises, examUe],
   )
   const [ue, setUe] = useState<UeId>(firstUe)
   const [theme, setTheme] = useState('')
   const [notion, setNotion] = useState('')
   const settings = useSettings()
-  // Flashcards : comptées sur le contenu chargé (les nombres calculés au build ne distinguent pas les types).
   const [cardsUe, setCardsUe] = useState<UeId | ''>('')
   const [cardsTheme, setCardsTheme] = useState('')
-  const cardCounts = useMemo(() => {
-    const map = new Map<string, number>()
-    for (const e of exercises ?? []) {
-      if (e.type !== 'flashcard') continue
-      for (const key of ['total', e.ue, `${e.ue}/${e.theme}`]) map.set(key, (map.get(key) ?? 0) + 1)
-    }
-    return map
-  }, [exercises])
-  const cardsAvailable = cardCounts.get(cardsUe ? (cardsTheme ? `${cardsUe}/${cardsTheme}` : cardsUe) : 'total') ?? 0
-  const dossiers = useMemo(() => (exercises ?? []).filter(isDossier), [exercises])
+  const cards = (key: string) => count(`cards:${key}`)
+  const cardsAvailable = cards(cardsUe ? (cardsTheme ? `${cardsUe}/${cardsTheme}` : cardsUe) : 'total')
+  const dossiers = index?.dossiers ?? []
+  const [fullUe, setFullUe] = useState<UeId>(firstUe)
+  const fullDossiers = dossiers.filter((d) => d.ue === fullUe).length
   const ueData = taxonomy.ues.find((u) => u.id === ue)!
   const themeData = ueData.themes.find((t) => t.id === theme)
   const available = notion ? count(`notion:${notion}`) : theme ? count(`${ue}/${theme}`) : count(ue)
@@ -109,7 +104,7 @@ export function TrainPage() {
             variant="outline"
             className="w-full"
             disabled={errorCount === 0}
-            aria-busy={!exercises}
+            aria-busy={!index}
             onClick={() => navigate(`/session${sessionSearch({ mode: 'errors', seed: newSeed() })}`)}
           >
             {errorCount === 0 ? 'Aucune erreur à rejouer' : `Rejouer mes erreurs (${Math.min(errorCount, 20)})`}
@@ -158,7 +153,7 @@ export function TrainPage() {
             <select className={selectClass} value={examUe} onChange={(e) => setExamUe(e.target.value as UeId)}>
               {taxonomy.ues.map((u) => (
                 <option key={u.id} value={u.id}>
-                  {u.id} — {u.title} ({formatDuration(examDurations[u.id])})
+                  {u.id} · {formatDuration(examDurations[u.id])} — {u.title}
                 </option>
               ))}
             </select>
@@ -173,7 +168,41 @@ export function TrainPage() {
               ? 'Préparation du sujet…'
               : examSize === 0
               ? 'Pas encore assez d’exercices'
-              : `Commencer l’examen (${examSize} exercices, ${formatDuration(examDurations[examUe])})`}
+              : `Commencer l’examen (environ ${examSize} exercices, ${formatDuration(examDurations[examUe])})`}
+          </Button>
+        </CardContent>
+      </Card>
+      <Card>
+        <CardHeader>
+          <CardTitle>Sujet complet</CardTitle>
+          <CardDescription>
+            Les conditions de l’épreuve : plusieurs dossiers type d’examen enchaînés, à traiter dans la durée officielle,
+            sans correction avant la fin, noté sur 20.
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="flex flex-col gap-3">
+          <label className="flex flex-col gap-1 text-sm">
+            UE du sujet
+            <select className={selectClass} value={fullUe} onChange={(e) => setFullUe(e.target.value as UeId)}>
+              {taxonomy.ues.map((u) => (
+                <option key={u.id} value={u.id}>
+                  {u.id} · {formatDuration(examDurations[u.id])} — {u.title}
+                </option>
+              ))}
+            </select>
+          </label>
+          <Button
+            size="lg"
+            variant="outline"
+            disabled={!index || fullDossiers < FULL_EXAM_MIN_DOSSIERS}
+            aria-busy={!index}
+            onClick={() => navigate(`/session${sessionSearch({ mode: 'full', seed: newSeed(), ue: fullUe })}`)}
+          >
+            {!index
+              ? 'Préparation du sujet…'
+              : fullDossiers < FULL_EXAM_MIN_DOSSIERS
+                ? 'Pas encore assez de dossiers dans cette UE'
+                : `Commencer le sujet (${formatDuration(examDurations[fullUe])}, dossiers tirés parmi ${fullDossiers})`}
           </Button>
         </CardContent>
       </Card>
@@ -186,7 +215,7 @@ export function TrainPage() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          {!exercises ? (
+          {!index ? (
             <p className="text-muted-foreground text-sm">Chargement des sujets…</p>
           ) : dossiers.length === 0 ? (
             <p className="text-muted-foreground text-sm">Aucun sujet type pour l’instant.</p>
@@ -197,9 +226,9 @@ export function TrainPage() {
                   <Link to={`/exercice/${d.id}`} className="hover:bg-accent flex items-baseline justify-between gap-3 rounded px-2 py-2">
                     <span className="min-w-0">
                       <span className="text-muted-foreground mr-1 font-medium">{d.ue}</span>
-                      {d.type === 'case_study' ? d.title : d.id}
+                      {d.title}
                     </span>
-                    <span className="text-muted-foreground shrink-0 tabular-nums">{Math.round(d.estimated_seconds / 60)} min</span>
+                    <span className="text-muted-foreground shrink-0 tabular-nums">{d.minutes} min</span>
                   </Link>
                 </li>
               ))}
@@ -299,10 +328,10 @@ export function TrainPage() {
                 setCardsTheme('')
               }}
             >
-              <option value="">Toutes les UE ({cardCounts.get('total') ?? '…'})</option>
+              <option value="">Toutes les UE ({cards('total')})</option>
               {taxonomy.ues.map((u) => (
                 <option key={u.id} value={u.id}>
-                  {u.id} — {u.title} ({cardCounts.get(u.id) ?? 0})
+                  {u.id} — {u.title} ({cards(u.id)})
                 </option>
               ))}
             </select>
@@ -315,8 +344,8 @@ export function TrainPage() {
                 {taxonomy.ues
                   .find((u) => u.id === cardsUe)!
                   .themes.map((t) => (
-                    <option key={t.id} value={t.id} disabled={!cardCounts.get(`${cardsUe}/${t.id}`)}>
-                      {t.title} ({cardCounts.get(`${cardsUe}/${t.id}`) ?? 0})
+                    <option key={t.id} value={t.id} disabled={cards(`${cardsUe}/${t.id}`) === 0}>
+                      {t.title} ({cards(`${cardsUe}/${t.id}`)})
                     </option>
                   ))}
               </select>
@@ -326,7 +355,6 @@ export function TrainPage() {
             size="lg"
             variant="outline"
             disabled={cardsAvailable === 0}
-            aria-busy={!exercises}
             onClick={() =>
               navigate(
                 `/session${sessionSearch({
@@ -337,11 +365,9 @@ export function TrainPage() {
               )
             }
           >
-            {!exercises
-              ? 'Chargement des cartes…'
-              : cardsAvailable === 0
-                ? 'Aucune carte pour cette sélection'
-                : `Réviser les cartes (${Math.min(cardsAvailable, settings.cardsSessionSize)})`}
+            {cardsAvailable === 0
+              ? 'Aucune carte pour cette sélection'
+              : `Réviser les cartes (${Math.min(cardsAvailable, settings.cardsSessionSize)})`}
           </Button>
         </CardContent>
       </Card>

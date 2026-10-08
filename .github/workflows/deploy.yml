@@ -1,11 +1,12 @@
 # CI + déploiement GitHub Pages de la PWA (Vite, base /dscg-trainer/).
-# - Toutes les branches et les PR vers main : lint, validation du contenu, tests, build, tests de bout en bout.
+# - PR vers main (et push sur main) : lint, validation du contenu, tests, build, tests de bout en bout.
+#   Les branches ne lancent pas de run au push : leur PR le fait, ce qui évite deux runs par commit.
 # - main (push ou lancement manuel) : publication sur GitHub Pages.
 name: CI & déploiement Pages
 
 on:
   push:
-    branches: ['**']
+    branches: [main]
   pull_request:
     branches: [main]
   workflow_dispatch:
@@ -24,11 +25,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
+          # Historique complet : date de dernière révision de chaque fiche (build/courseDates.ts).
+          fetch-depth: 0
 
-      - uses: actions/setup-node@v7
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: 22
           cache: npm
@@ -54,7 +57,7 @@ jobs:
       # Artefact Pages uniquement pour main (push ou lancement manuel).
       - name: Publier l'artefact Pages
         if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
-        uses: actions/upload-pages-artifact@v5
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: dist
           # Nécessaire pour embarquer .nojekyll (fichiers cachés exclus par défaut).
@@ -75,11 +78,11 @@ jobs:
       # Avec le GITHUB_TOKEN l'activation peut être refusée : on n'échoue pas ici,
       # deploy-pages signalera l'erreur si Pages reste désactivé.
       - name: Configurer Pages
-        uses: actions/configure-pages@v6
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
         continue-on-error: true
         with:
           enablement: true
 
       - name: Déployer sur GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

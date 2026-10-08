@@ -22,6 +22,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : cessation des paiements et redressement manifestement impossible (L640-1) ; le débiteur est dessaisi au profit du liquidateur (L641-9).",
+        "Inexact : difficultés insurmontables sans cessation des paiements, débiteur gérant avec un administrateur : c'est la sauvegarde.",
+        "Inexact : 45 jours est le délai pour demander l'ouverture d'une procédure ; il ne détermine pas le choix de la liquidation.",
+        "Inexact : confusion avec les capitaux propres inférieurs à la moitié du capital, règle de droit des sociétés sans dissolution de plein droit."
+      ],
       "explanation": "La liquidation judiciaire est ouverte à l'égard du débiteur en cessation des paiements dont le redressement est manifestement impossible (C. com. art. L640-1) ; le jugement emporte dessaisissement du débiteur, dont les droits et actions sur son patrimoine sont exercés par le liquidateur (art. L641-9) : option 1. L'option 2 décrit la sauvegarde. Le délai de 45 jours (option 3) est celui dans lequel le débiteur doit demander l'ouverture ; il ne détermine pas le choix de la procédure. L'option 4 confond avec la procédure des capitaux propres inférieurs à la moitié du capital (droit des sociétés), qui n'entraîne aucune dissolution de plein droit.",
       "source_ref": "C. com. art. L640-1 et L641-9",
       "verified": true,
@@ -48,6 +54,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : la sauvegarde accélérée suppose une conciliation en cours, un projet de plan et pas de cessation des paiements de plus de 45 jours avant celle-ci.",
+        "Exact : personne physique sans salarié depuis six mois, actif sous le seuil : rétablissement professionnel de quatre mois, avec effacement des dettes antérieures (L645-11).",
+        "Inexact : la conciliation n'est pas la seule voie et suppose de ne pas être en cessation des paiements depuis plus de 45 jours.",
+        "Inexact : le rétablissement professionnel est réservé aux personnes physiques, non aux sociétés, et efface les dettes sans les transférer."
       ],
       "explanation": "Le rétablissement professionnel (C. com. art. L645-1 s.) est ouvert au débiteur personne physique, en cessation des paiements et dont le redressement est manifestement impossible, qui n'a fait l'objet d'aucune procédure collective en cours, n'a pas employé de salarié au cours des six derniers mois et dont l'actif déclaré est inférieur à un montant fixé par décret. D'une durée de quatre mois, sans liquidation des biens, il entraîne l'effacement des dettes antérieures, sauf exceptions (art. L645-11) : option 2. La sauvegarde accélérée (option 1) suppose l'absence de cessation des paiements depuis plus de 45 jours avant la conciliation et un projet de plan. La conciliation (option 3) n'est pas la seule voie, et suppose de ne pas être en cessation des paiements depuis plus de 45 jours. Le rétablissement professionnel concerne les personnes physiques, non les sociétés (option 4).",
       "source_ref": "C. com. art. L645-1 s. et L645-11",

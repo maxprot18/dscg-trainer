@@ -1,6 +1,6 @@
 # PROGRESS — DSCG Trainer
 
-Dernière mise à jour : 2026-10-05, version 1.4.2 : deuxième série de vérifications sur les textes officiels (reste de l'UE 1, audit, SI, UE 2). Version 1.4.1 : contenu vérifié sur les textes officiels. Avant : version 1.4.0 : phase 8 (exercices complémentaires) et améliorations issues de l'audit `docs/audit-v2.md` (sujets type d'examen, oral d'UE 6, plan d'examen, protection de la progression, tests de bout en bout).
+Dernière mise à jour : 2026-10-08, version 1.5.0 : finalisation (contenu vérifié sur toutes les UE, sujet complet, explications par option des QCM, correction guidée, note prévisionnelle, performance, sécurité, audit complet v4 et corrections UX). Avant : version 1.4.2 : deuxième série de vérifications sur les textes officiels (reste de l'UE 1, audit, SI, UE 2). Version 1.4.1 : contenu vérifié sur les textes officiels. Avant : version 1.4.0 : phase 8 (exercices complémentaires) et améliorations issues de l'audit `docs/audit-v2.md` (sujets type d'examen, oral d'UE 6, plan d'examen, protection de la progression, tests de bout en bout).
 
 ## État par phase
 
@@ -18,6 +18,7 @@ Dernière mise à jour : 2026-10-05, version 1.4.2 : deuxième série de vérifi
 | 8. Exercices complémentaires | Terminée : version 1.4.0 (voir ci-dessous) |
 | Améliorations (audit v2) | Terminées : version 1.4.0 (voir ci-dessous) |
 | Vérification sur les textes officiels | Terminée : versions 1.4.1 et 1.4.2 (voir ci-dessous) |
+| Finalisation (audit v3) et audit v4 | Terminée : version 1.5.0 (voir ci-dessous) |
 
 ## Phase 0 : ce qui est fait
 
@@ -168,6 +169,15 @@ Demande de l'utilisateur : accéder aux plateformes officielles pour vérifier l
 - **Corrections marquantes** : voir CHANGELOG 1.4.2 (seuils des concentrations, NEP 560 / 240 / 501, Omnibus I, recodification TVA au 1er janvier 2027, comptes 2026).
 - **check:refs** : sous-comptes hors nomenclature désormais signalés (sauf ventilation prévue) ; articles « Art 628-11 » sans point reconnus. État final : 4 310 références, 3 signalements distincts voulus (IAS 1 « ex- », IAS 17, IAS 31), 0 compte hors nomenclature.
 
+## Finalisation : ce qui est fait (version 1.5.0)
+
+- **F1, vérification sur les textes (suite)** : fiches et exercices IFRS détaillés (IAS 2, 8, 12, 16, 19, 36, 37, 38, 40, IFRS 3, 9, 10, 15, 16, information sectorielle), toute l'UE 3 et toute l'UE 6, en 6 lots correcteur → relecteur. Corrections marquantes : bilan GES (scope 3 et R. 229-47), GEPP (L. 2242-2, -13, -20), mali technique affecté selon PCG 745-5 (fiche corrigée), amendes RGPD (art. 83(4)/(5)), IFRS 18 (§53, §69-71, §118), ISA 570 révisée.
+- **F2, technique** : contenu chargé fichier par fichier (`import.meta.glob`) avec index des exercices au build (`build/exerciseIndex.ts`) ; une session ne charge que les fichiers utiles (`sessionFiles`) ; CLS 0 (bandeaux PWA flottants) ; CSP en balise meta (`build/contentSecurityPolicy.ts`), Zod `jitless` (`src/lib/zod.ts`), import de progression validé (`src/db/exportSchema.ts`), liens internes stricts, actions épinglées et Dependabot, CI une fois par push ; dépendances mineures à jour.
+- **F3, pédagogie** : sujet complet (`mode=full`), correction guidée des réponses rédigées (`src/engine/keyPoints.ts`), difficulté adaptative (`targetDifficulty`), note prévisionnelle (`predictedGrades`, note gardée avec la session), date de dernière révision des fiches (`build/courseDates.ts`).
+- **F4, contenu** : 10 nouveaux sujets type d'examen (`sujets-examen-2.json`, deux par UE écrite), explication par option des 625 QCM (`option_explanations`), chaque lot relu.
+- **F5, audit v4** (`docs/audit-v4.md`) : échantillon aléatoire de 60 exercices résolus à l'aveugle (0 erreur, 5 défauts mineurs corrigés, balayage CSRD après Omnibus I et comptes 6673/7673) ; audit UX indépendant (4 bloquants, 16 gênants, 11 cosmétiques) dont les bloquants et la plupart des gênants sont corrigés ; Lighthouse 92 à 97, accessibilité 100.
+- **Tests** : 251 tests unitaires, 9 parcours Playwright (dont le sujet complet).
+
 ## Décisions prises (et pourquoi)
 
 1. **Programme de référence : arrêté du 4 août 2025** (BOESR n° 32 du 28/08/2025, NOR MENS2523324A). Il s'applique aux épreuves du DSCG à partir de la session 2027, celle que Max préparera ; il remplace l'arrêté du 13/02/2019.
@@ -239,10 +249,19 @@ Demande de l'utilisateur : accéder aux plateformes officielles pour vérifier l
 
 58. **(v1.4.2) Recodification de la TVA au 1er janvier 2027** : l'ord. 2025-1247 transfère la TVA du CGI au CIBS « à droit constant ». Les fiches gardent les numéros du CGI (en vigueur jusqu'au 31 décembre 2026) et signalent la recodification ; renuméroter quand le CIBS sera téléchargeable et que la session 2027 approchera.
 59. **(v1.4.2) Pratique professionnelle vs norme** : quand le contenu attribuait à une NEP une règle qui vient des ISA, de la doctrine ou de la pratique (confirmation négative, « limitation », réponse directe des avocats), on la rattache à sa vraie source ou on la présente comme pratique ; une NEP n'est citée que pour ce que son texte dit.
+60. **(v1.5.0) Explications par option dans un champ distinct** (`option_explanations`, facultatif) plutôt que dans `explanation` : affichées sous chaque option après la réponse, contrôlées par le schéma (une par option). Les 228 QCM des cas n'en ont pas encore ; ils gardent leur explication par sous-question.
+61. **(v1.5.0) Sujet complet = dossiers seulement**, tirés au sort jusqu'à la durée officielle, complétés par des cas pratiques s'il reste du temps ; deux dossiers au moins par UE. L'examen blanc garde son mélange (dossiers au plus 60 % du temps).
+62. **(v1.5.0) Réponses rédigées en examen notées automatiquement** sur les points clés repérés dans la copie (mots-clés), sans montrer le corrigé pendant l'épreuve : la note est indicative ; hors examen, l'utilisateur garde la main (points pré-cochés, modifiables).
+63. **(v1.5.0) Dossier commencé noté au prorata** des questions traitées (temps écoulé, arrêt, « Passer ») : plus juste que 0 et cohérent avec une copie partielle.
+64. **(v1.5.0) Date de révision des fiches = date du dernier commit** (historique git au build), plutôt qu'un champ saisi à la main dans 271 fiches : aucune maintenance, mais c'est une date de modification, pas de vérification complète.
+65. **(v1.5.0) Chargement par fichier** : un fichier JS par fichier de contenu plutôt qu'un par UE ; le service worker les précache tous (hors ligne inchangé) et une page ne télécharge que ce qu'elle affiche au premier passage. Convention vérifiée par `npm run validate` : un exercice est rangé dans le dossier de son thème.
+66. **(v1.5.0) Pas de barre de navigation pendant une session** : la sortie passe par ✕ avec confirmation, plutôt qu'un blocage de navigation (React Router `useBlocker` exige un routeur de données).
 
 ## Points ouverts / à vérifier
 
 - **Déploiement** : résolu. GitHub Pages est activé (source : GitHub Actions) et chaque push sur `main` déploie automatiquement.
+- **Audit UX v4, reste à faire** : vrai mode épreuve (navigation libre, annexes à côté de la question), accueil et « S'entraîner » restructurés, lecture sur desktop, saisie d'écriture sur mobile, carte du programme cliquable (`docs/audit-v4.md` § 4).
+- **`@vitejs/plugin-react` 6.1.2** : conflit de dépendance optionnelle avec Babel 8 à l'installation ; resté en 6.1.1.
 - **Programme officiel (arrêté du 4 août 2025, annexe 2)** : le BO est protégé contre les accès automatisés ; la taxonomie n'a pas encore été confrontée au PDF du programme. L'utilisateur peut le déposer dans la conversation. Rappel : les sessions 2025 et 2026 relevaient de l'arrêté de 2019, le nouveau programme s'applique à partir de la session 2027.
 - **Taxonomie à relire sur le texte officiel.** Légifrance, le BO et les sites officiels étaient inaccessibles depuis l'environnement cloud (proxy). La structure vient du recoupement de résultats de recherche. À contrôler en priorité : intitulés et modalités des UE, découpage des blocs du programme 2025.
 - **Numéros d'articles PCG** des exercices d'exemple (321-5, 322-1, 323-1 à 323-6) : jugés plausibles par le relecteur, mais pas confirmés sur le texte.
@@ -254,13 +273,13 @@ Demande de l'utilisateur : accéder aux plateformes officielles pour vérifier l
 
 ## Prochaine étape
 
-Le cahier des charges, les priorités 1 à 6 de l'audit v2 et la vérification sur les textes officiels (v1.4.1) sont livrés. Suites possibles, à décider avec l'utilisateur :
+La version 1.5.0 clôt la finalisation dans le périmètre sans serveur. Suites possibles, à décider avec l'utilisateur (détail et ordre dans `docs/audit-v4.md` § 8) :
 
-- **Vérification à poursuivre** : UE 3 (peu de textes : contrôle de gestion, stratégie), UE 6 (anglais, vocabulaire), fiches IFRS hors présentation (IAS 16, 36, 37, 38, IFRS 9, 15, 16 : confrontation paragraphe par paragraphe au règlement consolidé), programme officiel à confronter à la taxonomie dès que l'utilisateur fournit le PDF du BO ; CIBS (TVA) à télécharger pour la renumérotation de 2027.
-
-- **Si vente** (audit v2 § 5) : relecture par un expert-comptable ou un enseignant DSCG (UE 4 et UE 1 d'abord), dépôt privé et nouvelle licence pour le contenu à venir, comptes et synchronisation, paiement, hébergement commercial, CGV et RGPD.
-- **Contenu** : davantage de dossiers type d'examen (deux par UE aujourd'hui), sujets d'oral supplémentaires (20), explication par mauvaise réponse dans les QCM, date de validité par fiche et revue après chaque loi de finances.
-- **Technique** : découper le fichier de contenu de l'UE 4 (1,4 Mo) par thème ; React 19 sans urgence.
+- **Programme officiel** : confronter la taxonomie à l'annexe 2 de l'arrêté du 4 août 2025 dès que le PDF du BO est fourni.
+- **UX** : vrai mode épreuve, accueil à une action principale, « S'entraîner » regroupé, lecture sur desktop, saisie d'écriture sur mobile.
+- **Contenu** : 2 à 4 dossiers de plus par UE, explications par option des QCM des cas, sujets d'oral supplémentaires.
+- **Échéances 2027** : CIBS (TVA), loi de finances 2027, transposition d'Omnibus I et de NIS 2, ESRS révisées.
+- **Si vente** : relecture professionnelle, comptes, synchronisation, paiement, audit de sécurité dédié.
 
 ## Budget consommé (estimation)
 
@@ -276,4 +295,5 @@ Le cahier des charges, les priorités 1 à 6 de l'audit v2 et la vérification s
 - Phase 8 et améliorations v1.4 : environ 70 à 90 $. Environ 36 sous-agents (9 lots de phase 8, 2 lots d'oral et 5 de dossiers, chacun rédacteur puis relecteur, plus quelques corrections de fiches) ; code, tests et documentation en travail direct.
 - Vérification v1.4.1 : environ 45 à 60 $. 16 sous-agents (8 correcteurs, 8 relecteurs) ; outils de téléchargement et de vérification en travail direct.
 - Vérification v1.4.2 : environ 60 à 80 $. 25 sous-agents (12 correcteurs, 13 relecteurs).
-- Cumul estimé : environ 560 à 725 $. L'utilisateur a accepté de dépasser le budget initial de 250 $ pour les phases 6 à 8 (audit : 155 à 215 $ pour les trois).
+- Finalisation v1.5.0 et audit v4 : environ 130 à 170 $. Environ 43 sous-agents : 14 pour la vérification (UE 3, UE 6, IFRS), 10 pour les sujets type d'examen, 11 pour les explications par option, 2 audits (contenu, UX), 2 pour les corrections de l'audit de contenu, plus quelques relances ; code, tests, mesures et documentation en travail direct.
+- Cumul estimé : environ 690 à 895 $. L'utilisateur a accepté de dépasser le budget initial de 250 $ pour les phases 6 à 8 (audit : 155 à 215 $ pour les trois).

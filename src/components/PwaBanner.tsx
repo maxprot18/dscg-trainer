@@ -1,6 +1,8 @@
 /**
  * Bandeaux PWA : nouvelle version disponible (recharger) et installation de l'application.
  * L'événement `beforeinstallprompt` est gardé pour que le bouton « Installer » reste disponible.
+ * Les bandeaux flottent au-dessus de la barre de navigation : apparus après le chargement, ils ne
+ * décalent pas la page (pas de décalage de mise en page).
  */
 import { Download, RefreshCw, X } from 'lucide-react'
 import { useState } from 'react'
@@ -8,8 +10,10 @@ import { useRegisterSW } from 'virtual:pwa-register/react'
 
 import { Button } from '@/components/ui/button'
 import { useInstallPrompt } from '@/hooks/useInstallPrompt'
+import { cn } from '@/lib/utils'
 
 const INSTALL_DISMISSED_KEY = 'dscg-install-dismissed'
+const FLOATING = 'fixed inset-x-3 bottom-20 z-40 mx-auto flex max-w-3xl items-center justify-between gap-3 rounded-lg px-4 py-2 text-sm shadow-lg lg:max-w-5xl'
 
 export function PwaBanner() {
   const {
@@ -27,7 +31,7 @@ export function PwaBanner() {
 
   if (needRefresh) {
     return (
-      <div role="status" className="bg-primary text-primary-foreground flex items-center justify-between gap-3 px-4 py-2 text-sm">
+      <div role="status" className={cn(FLOATING, 'bg-primary text-primary-foreground')}>
         <span>Nouvelle version disponible.</span>
         <span className="flex items-center gap-1">
           <Button size="sm" variant="secondary" onClick={() => void updateServiceWorker(true)}>
@@ -42,7 +46,7 @@ export function PwaBanner() {
   }
   if (install && !installDismissed) {
     return (
-      <div role="status" className="bg-muted flex items-center justify-between gap-3 px-4 py-2 text-sm">
+      <div role="status" className={cn(FLOATING, 'bg-muted border')}>
         <span>Installez l’application pour l’avoir hors ligne sur l’écran d’accueil.</span>
         <span className="flex items-center gap-1">
           <Button size="sm" onClick={() => void install()}>

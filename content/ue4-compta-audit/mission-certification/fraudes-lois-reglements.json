@@ -25,6 +25,12 @@
       ],
       "answer": [
         0
+      ],
+      "option_explanations": [
+        "Exact : le magasinier s'approprie des stocks et dissimule le vol par de fausses écritures : détournement d'actifs (NEP 240).",
+        "Inexact : le but n'est pas de présenter des comptes trompeurs mais de cacher le vol ; et l'auteur n'est pas la direction.",
+        "Inexact : l'acte est intentionnel ; ce n'est pas une erreur.",
+        "Inexact : le vol affecte directement les comptes, notamment les stocks."
       ]
     },
     {
@@ -52,6 +58,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : un audit de conformité complet dépasse la mission de certification ; il ne s'envisage qu'en cas d'indices de non-conformité.",
+        "Exact : pour les textes sans incidence directe, la NEP 250 limite les procédures aux demandes à la direction et à la consultation des correspondances.",
+        "Inexact : les procédures ne sont pas nulles, un manquement pouvant exiger une provision ou affecter la continuité.",
+        "Inexact : la collecte d'éléments suffisants et appropriés vise les textes à incidence directe (fiscalité, droit social, droit comptable)."
       ]
     },
     {
@@ -80,6 +92,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : la direction peut précisément contourner les contrôles ; s'appuyer sur leur efficacité ne répond pas au risque.",
+        "Inexact : une déclaration écrite ne remplace aucune procédure d'audit.",
+        "Exact : la NEP 240 impose tests des écritures, revue des estimations pour détecter un biais et examen des opérations inhabituelles importantes.",
+        "Inexact : des confirmations clients ne visent pas les écritures manuelles de clôture qui affectent l'EBITDA ; la réponse doit être ciblée."
       ]
     },
     {

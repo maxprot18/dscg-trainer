@@ -24,6 +24,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : oublie l'impôt sur le résultat d'exploitation (24 − 14).",
+        "Inexact : déduit les intérêts ; le coût de la dette est alors compté deux fois, puisqu'il figure déjà dans le CMPC.",
+        "Exact : NOPAT = 24 × 0,75 = 18 M€ ; charge du capital = 7 % × 200 = 14 M€ ; EVA = 4 M€.",
+        "Inexact : 18 M€ est le NOPAT, sans déduction de la rémunération du capital."
+      ],
       "explanation": "NOPAT = 24 × (1 − 0,25) = 18 M€ (calculé avant frais financiers). Charge du capital = 7 % × 200 = 14 M€. EVA = 18 − 14 = 4 M€ (option 3). L'option 1 oublie l'impôt (24 − 14). L'option 2 déduit les intérêts avant impôt ((24 − 4) × 0,75 − 14 = 1) : le coût de la dette est alors compté deux fois, puisqu'il figure déjà dans le CMPC. L'option 4 est le NOPAT, sans déduction de la rémunération du capital."
     },
     {
@@ -51,6 +57,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : l'économie de ressources est une création de valeur partenariale, partagée entre clients et actionnaires.",
+        "Inexact : la hausse de la valeur perçue par les clients, à coût inchangé, crée de la valeur partenariale.",
+        "Inexact : moins de rebuts et d'arrêts économise des ressources : c'est une création de valeur partenariale.",
+        "Exact : l'EVA progresse, mais par transfert de valeur des fournisseurs vers les actionnaires, sans création pour l'ensemble des parties prenantes."
+      ],
       "explanation": "Imposer des délais plus longs et des prix plus bas aux fournisseurs réduit le BFR et augmente la marge : l'EVA progresse, mais la valeur est transférée des fournisseurs vers les actionnaires, sans création de valeur pour l'ensemble des parties prenantes (option 4). Les options 1, 2 et 3 décrivent au contraire une création de valeur partenariale : économie de ressources (options 1 et 3) ou hausse de la valeur perçue par les clients (option 2), c'est-à-dire un écart accru entre la valeur des produits et le coût d'opportunité des ressources."
     },
     {
@@ -77,6 +89,12 @@
       ],
       "answer": [
         0
+      ],
+      "option_explanations": [
+        "Exact : MVA = 1 100 + 400 − 1 000 = 500 M€, supérieure à 30 / 0,075 = 400 M€ : le marché anticipe une croissance de l'EVA.",
+        "Inexact : oublie d'ajouter la dette nette à la capitalisation (1 100 − 1 000).",
+        "Inexact : inverse le sens ; une MVA positive traduit une création de valeur.",
+        "Inexact : compare un stock (valeur actuelle des EVA futures) à un flux annuel."
       ],
       "explanation": "Valeur de marché de l'entreprise = 1 100 + 400 = 1 500 M€ ; MVA = 1 500 − 1 000 = 500 M€. Si l'EVA restait constante à 30 M€, sa valeur actuelle serait 30 / 0,075 = 400 M€. La MVA, supérieure, intègre une anticipation de croissance de l'EVA (option 1). L'option 2 oublie d'ajouter la dette nette (1 100 − 1 000). L'option 3 inverse le sens : une MVA positive traduit une création de valeur. L'option 4 compare un stock (valeur actuelle de toutes les EVA futures) à un flux annuel."
     },

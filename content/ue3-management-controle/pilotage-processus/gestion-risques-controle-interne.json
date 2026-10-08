@@ -24,6 +24,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : l'environnement de contrôle est l'une des cinq composantes du COSO 2013.",
+        "Exact : le contrôle budgétaire est un outil de contrôle de gestion, éventuellement une activité de contrôle, mais pas une composante du référentiel.",
+        "Inexact : l'évaluation des risques est l'une des cinq composantes du COSO 2013.",
+        "Inexact : les activités de pilotage sont l'une des cinq composantes, avec les activités de contrôle et l'information-communication."
+      ],
       "explanation": "L'option 2 est la bonne réponse : le contrôle budgétaire est un outil de contrôle de gestion, qui peut constituer une activité de contrôle, mais ce n'est pas l'une des composantes du référentiel. Les cinq composantes du COSO 2013 sont l'environnement de contrôle (option 1), l'évaluation des risques (option 3), les activités de contrôle, l'information et la communication, et les activités de pilotage (option 4), déclinées en 17 principes."
     },
     {
@@ -49,6 +55,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : le management opérationnel, propriétaire des risques et des contrôles, forme la première ligne.",
+        "Inexact : l'audit interne est la troisième ligne : assurance indépendante rendue à l'organe de gouvernance.",
+        "Exact : la conformité est une fonction d'expertise et de surveillance des risques qui appuie et challenge la première ligne.",
+        "Inexact : le commissaire aux comptes est un prestataire externe d'assurance, extérieur aux trois lignes."
       ],
       "explanation": "L'option 3 est exacte : la deuxième ligne regroupe les fonctions d'expertise et de surveillance des risques (gestion des risques, conformité, contrôle interne), qui appuient et challengent la première ligne. L'option 1 relève de la première ligne : le management opérationnel est propriétaire des risques et des contrôles. L'option 2 est la troisième ligne : assurance indépendante rendue à l'organe de gouvernance. L'option 4 est un prestataire externe d'assurance, extérieur aux trois lignes."
     },
@@ -76,6 +88,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : saisir des commandes et traiter les réclamations n'ouvre ni accès direct aux actifs ni possibilité de dissimulation comparable.",
+        "Inexact : classer et archiver des pièces ne donne ni pouvoir d'autorisation ni accès direct aux fonds.",
+        "Inexact : établir et suivre son budget ne permet ni d'accéder aux actifs ni de dissimuler un détournement.",
+        "Exact : la même personne peut créer un fournisseur fictif et autoriser son règlement ; ces fonctions incompatibles doivent être séparées."
       ],
       "explanation": "L'option 4 est exacte : la même personne peut créer un fournisseur fictif (ou modifier les coordonnées bancaires d'un fournisseur réel) et autoriser le règlement, puis détourner les fonds sans intervention d'un tiers. La séparation des fonctions incompatibles (autorisation, enregistrement, conservation des actifs, contrôle) est le contrôle préventif de base. Les options 1, 2 et 3 réunissent des tâches dont le cumul n'ouvre pas d'accès direct aux actifs ni de possibilité de dissimulation comparable."
     },

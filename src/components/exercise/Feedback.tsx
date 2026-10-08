@@ -1,4 +1,6 @@
-import { CircleCheck, CircleX } from 'lucide-react'
+import { CircleCheck, CircleMinus, CircleX } from 'lucide-react'
+
+import { Markdown } from '@/components/Markdown'
 
 import { cn } from '@/lib/utils'
 
@@ -16,12 +18,22 @@ export function Verdict({ correct, score, label }: { correct: boolean; score?: n
             : 'bg-red-100 text-red-900 dark:bg-red-950 dark:text-red-200',
       )}
     >
-      {correct ? <CircleCheck className="size-4" aria-hidden /> : <CircleX className="size-4" aria-hidden />}
+      {correct ? (
+        <CircleCheck className="size-4" aria-hidden />
+      ) : partial ? (
+        <CircleMinus className="size-4" aria-hidden />
+      ) : (
+        <CircleX className="size-4" aria-hidden />
+      )}
       {label ?? (correct ? 'Bonne réponse' : partial ? `Réponse partielle (${Math.round(score * 100)} %)` : 'Réponse incorrecte')}
     </div>
   )
 }
 
 export function Explanation({ children }: { children: string }) {
-  return <p className="text-muted-foreground text-sm whitespace-pre-line">{children}</p>
+  return (
+    <div className="text-muted-foreground text-sm">
+      <Markdown source={children} />
+    </div>
+  )
 }

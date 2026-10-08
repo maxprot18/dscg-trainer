@@ -22,7 +22,7 @@
 - étape 3 (actif déprécié ; le défaut est présumé survenu au plus tard à 90 jours de retard, B5.5.37) : durée de vie, intérêts calculés sur la valeur nette (§5.4.1) ;
 - approche simplifiée obligatoire pour les créances commerciales sans composante de financement importante : durée de vie dès l'origine (§5.5.15).
 
-**Passifs financiers (§4.2)** : au coût amorti en général ; dérivés et passifs de transaction à la JV par résultat ; option JV par résultat, la variation liée au risque de crédit propre allant en OCI (§5.7.7). Un instrument émis est un passif s'il comporte une obligation contractuelle de remettre de la trésorerie (IAS 32 §11) ; une action de préférence à dividende obligatoire est donc une dette.
+**Passifs financiers (§4.2)** : au coût amorti en général ; dérivés et passifs de transaction à la JV par résultat ; option JV par résultat, la variation liée au risque de crédit propre allant en OCI (§5.7.7). Un instrument émis est un passif s'il comporte une obligation contractuelle de remettre de la trésorerie (IAS 32 §11) ; une action préférentielle rachetable à date fixe ou au gré du porteur, ou dont le dividende n'est pas laissé à la discrétion de l'émetteur, est donc un passif, en tout ou en partie (IAS 32 AG25-AG26).
 
 **Formule clé :** intérêts de l'exercice = valeur comptable brute d'ouverture × TIE ; coût amorti de clôture = ouverture + intérêts TIE − flux encaissés.
 

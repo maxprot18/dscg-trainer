@@ -22,6 +22,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : l’exhaustivité des dividendes à payer se teste à partir des PV d’assemblée et du compte 457, pas des statuts.",
+        "Inexact : la séparation des exercices vise le rattachement d’opérations à l’exercice, sans lien avec un capital fixé par les statuts.",
+        "Exact : statuts à jour et Kbis établissent le montant juridique du capital ; le rapprochement prouve l’existence du solde au bilan.",
+        "Inexact : l’évaluation des subventions relève du recalcul des reprises (comptes 131 et 139), non du rapprochement avec les statuts."
+      ],
       "explanation": "Les statuts à jour et le Kbis établissent le montant juridique du capital : le rapprochement prouve que le solde inscrit au bilan existe tel quel (option 3). L’option 1 se teste à partir des PV d’assemblée et du compte 457, pas des statuts. L’option 2 concerne le rattachement d’opérations à l’exercice, sans lien avec un solde de capital fixé par les statuts. L’option 4 relève du recalcul des reprises de subventions (131 / 139).",
       "source_ref": "NEP 500 (assertions relatives aux soldes de fin de période) ; PCG compte 101",
       "estimated_seconds": 50,
@@ -48,6 +54,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : partir des paiements comptabilisés teste la réalité des règlements, pas l’absence d’omission de dettes.",
+        "Exact : pour l’exhaustivité, on part des décisions d’assemblée, source des dettes, et on vérifie leur enregistrement au compte 457.",
+        "Inexact : les amortissements dérogatoires sont des provisions réglementées, sans rapport avec les dividendes à payer.",
+        "Inexact : la confirmation des soldes clients relève du cycle ventes-clients."
       ],
       "explanation": "Pour l’exhaustivité, on part de la source des dettes (les décisions d’assemblée) et on vérifie qu’elles sont toutes comptabilisées (option 2). L’option 1 part de la comptabilité : elle teste la réalité des paiements, pas l’absence d’omission. L’option 3 concerne les provisions réglementées. L’option 4 relève du cycle ventes-clients.",
       "source_ref": "NEP 500 (assertions) ; PCG compte 457 « Associés – dividendes à payer »",
@@ -76,8 +88,14 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : la subvention a bien été reçue et comptabilisée ; son existence n’est pas en cause.",
+        "Inexact : les droits et obligations viseraient une subvention dont l’entité ne serait pas bénéficiaire, ce qui n’est pas le cas.",
+        "Inexact : l’exhaustivité viserait une subvention non enregistrée, alors qu’elle l’a été, mais dans le mauvais compte.",
+        "Exact : finançant un bien durable, c’est une subvention d’investissement (131, reprise par le 747), non d’exploitation (74)."
+      ],
       "explanation": "La subvention existe et a été comptabilisée, mais dans un compte de nature inappropriée : une subvention qui finance un bien durable est une subvention d’investissement (131, reprise au résultat par le compte 747 au rythme de l’amortissement), et non une subvention d’exploitation portée en totalité en produit de l’exercice (74). C’est la classification qui est en cause (option 4), avec pour conséquence un résultat d’exploitation surévalué. L’option 1 est fausse car la subvention a bien été reçue. L’option 2 viserait une subvention dont l’entité ne serait pas bénéficiaire. L’option 3 viserait une subvention non enregistrée, ce qui n’est pas le cas.",
-      "source_ref": "NEP 500 (assertions de présentation) ; PCG, règles relatives aux subventions d’investissement (règl. ANC 2014-03 modifié par le règl. ANC 2022-06) ; comptes 131, 139, 74, 747",
+      "source_ref": "NEP 500 (assertions de présentation) ; PCG art. 312-1 (reprise des subventions d’investissement) ; comptes 131, 139, 74, 747 (plan de comptes issu du règl. ANC 2022-06)",
       "estimated_seconds": 60,
       "verified": true
     },
@@ -142,6 +160,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : quelques opérations par an, chacune significative : les examiner toutes est simple et plus probant qu’un échantillon.",
+        "Inexact : la NEP 315 impose de comprendre le contrôle interne et n’interdit pas de le tester ; c’est simplement peu efficient ici.",
+        "Inexact : libération par compensation avec une créance fictive ou dividende fictif sont des risques de fraude réels.",
+        "Inexact : la NEP 530 admet les sondages pour tous les comptes, y compris ceux du bilan."
+      ],
       "explanation": "Quelques opérations par an (affectation du résultat, augmentation de capital, subvention reçue), chacune significative : les examiner toutes est simple et plus probant qu’un échantillon (option 1). L’option 2 est fausse : la NEP 315 impose de comprendre le contrôle interne et rien n’interdit de le tester ; c’est simplement peu efficient ici. L’option 3 est fausse : une augmentation de capital libérée par compensation avec une créance fictive ou un dividende fictif sont des risques réels. L’option 4 est fausse : les sondages sont admis pour tous les comptes (NEP 530).",
       "source_ref": "NEP 315 ; NEP 330 (choix de la nature et de l’étendue des procédures) ; NEP 530",
       "estimated_seconds": 50,
@@ -169,6 +193,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : la séparation des exercices sur le chiffre d’affaires relève du cycle ventes, sans lien avec cette opération.",
+        "Exact : la compensation n’apporte aucun fonds ; le souscripteur étant partie liée, la créance peut être fictive, gonflée ou non exigible.",
+        "Inexact : la dotation à la réserve légale dépend du bénéfice ; seul son plafond de 10 % du capital augmente.",
+        "Inexact : la dépréciation des stocks relève d’un autre cycle, sans lien avec l’augmentation de capital."
       ],
       "explanation": "La libération par compensation n’apporte aucun fonds nouveau : elle n’est valable que si la créance est certaine, liquide et exigible. Comme le souscripteur est une partie liée (NEP 550), le risque porte sur la réalité de la libération et sur une créance gonflée (option 2). L’option 1 et l’option 4 concernent d’autres cycles. L’option 3 est erronée : le plafond de la réserve légale (10 % du capital) augmente avec le capital, mais la dotation de l’exercice dépend du bénéfice et non de l’opération elle-même ; ce n’est pas le risque principal.",
       "source_ref": "NEP 550 (relations et transactions avec les parties liées) ; NEP 315 ; C. com., règles de libération des actions par compensation de créances",
@@ -302,6 +332,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : le lettrage des comptes clients est un contrôle du cycle ventes.",
+        "Inexact : la confirmation des soldes est une procédure de l’auditeur, pas un contrôle interne de l’entité.",
+        "Inexact : l’inventaire physique des immobilisations couvre leur existence, pas le fondement juridique des capitaux propres.",
+        "Exact : une écriture sur capitaux propres doit traduire une décision d’un organe social ; exiger le PV signé et une validation est le contrôle clé."
+      ],
       "explanation": "Une écriture sur les capitaux propres doit traduire une décision d’un organe social ; exiger le PV signé et une validation hiérarchique est le contrôle clé (option 4). L’option 1 concerne le cycle ventes. L’option 2 est une procédure de l’auditeur, pas un contrôle interne de l’entité. L’option 3 couvre l’existence des immobilisations.",
       "source_ref": "NEP 315 (compréhension du contrôle interne)",
       "estimated_seconds": 45,
@@ -329,8 +365,14 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : une subvention finançant un bien amortissable se reprend au rythme de son amortissement ; ce rapprochement détecterait l’erreur.",
+        "Inexact : l’autorisation préalable encadre l’obtention de la subvention, pas le calcul de sa reprise.",
+        "Inexact : cette séparation des tâches protège contre un détournement des fonds, non contre une erreur de rythme de reprise.",
+        "Inexact : la confirmation auprès du financeur porte sur le montant accordé, pas sur son rythme de reprise."
+      ],
       "explanation": "Une subvention finançant un bien amortissable se reprend au rythme de l’amortissement de ce bien ; la reprise par dixièmes n’est prévue que pour les biens non amortissables sans clause d’inaliénabilité. Le contrôle qui détecterait l’erreur est le rapprochement avec le plan d’amortissement (option 1). L’option 2 encadre l’obtention, pas le calcul. L’option 3 protège contre un détournement des fonds. L’option 4 confirme le montant accordé mais pas son rythme de reprise.",
-      "source_ref": "PCG, règles relatives aux subventions d’investissement (règl. ANC 2014-03) ; NEP 315",
+      "source_ref": "PCG art. 312-1 (reprise des subventions d’investissement) ; NEP 315",
       "estimated_seconds": 70,
       "verified": true
     },
@@ -355,6 +397,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : il n’existe pas 25 opérations, et tester les contrôles n’a guère d’intérêt avec trois écritures par an.",
+        "Inexact : la NEP 315 impose de comprendre le contrôle interne pertinent, quel que soit le nombre d’opérations.",
+        "Exact : la NEP 315 impose de comprendre le contrôle interne ; avec trois opérations, le test de détail exhaustif est le plus efficient.",
+        "Inexact : une déclaration de la direction complète les éléments collectés mais ne les remplace pas (NEP 580)."
       ],
       "explanation": "La NEP 315 impose de comprendre le contrôle interne pertinent ; avec trois opérations par an, le test de détail exhaustif est la réponse la plus efficiente (option 3). L’option 1 est irréaliste : il n’existe pas 25 occurrences, et des tests de procédures n’ont guère d’intérêt dans ce contexte. L’option 2 contrevient à la NEP 315. L’option 4 est insuffisante : une déclaration de la direction complète les éléments collectés mais ne les remplace pas.",
       "source_ref": "NEP 315 ; NEP 330 ; NEP 580 (déclarations de la direction)",
@@ -490,6 +538,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : l’acompte est décidé par l’organe de direction ; aucune décision d’assemblée générale extraordinaire n’est exigée.",
+        "Inexact : aucun plafond de 10 % du capital n’existe ; l’acompte est limité par le bénéfice distribuable du bilan certifié.",
+        "Inexact : le niveau de la réserve légale n’est pas une condition ; seules les dotations obligatoires de la période sont déduites.",
+        "Exact : l’article L232-12 exige un bilan certifié faisant apparaître un bénéfice distribuable au moins égal à l’acompte."
+      ],
       "explanation": "L’acompte sur dividende est décidé par l’organe de direction avant l’approbation des comptes, à condition qu’un bilan certifié fasse apparaître un bénéfice distribuable suffisant ; l’acompte ne peut excéder ce bénéfice (option 4). Aucune décision d’AGE n’est exigée (option 1). Aucun plafond de 10 % du capital n’existe (option 2). Le niveau atteint par la réserve légale n’est pas une condition (option 3) : seules les dotations obligatoires de la période sont déduites.",
       "source_ref": "C. com. art. L232-12",
       "estimated_seconds": 70,
@@ -516,6 +570,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : 250 000 € correspond au quart du nominal mais oublie la prime d’émission, à libérer en totalité.",
+        "Inexact : 500 000 € applique la libération de la moitié du nominal prévue à la constitution, sans la prime.",
+        "Exact : un quart du nominal plus toute la prime : 100 000 × (2,50 + 4) = 650 000 €.",
+        "Inexact : 1 400 000 € correspond à une libération intégrale, qui n’est pas exigée à la souscription."
       ],
       "explanation": "Lors d’une augmentation de capital d’une SA, les actions de numéraire sont libérées d’un quart au moins du nominal et de la totalité de la prime d’émission : 100 000 × (10 / 4 + 4) = 250 000 + 400 000 = 650 000 € (option 3). L’option 1 oublie la prime. L’option 2 applique la libération de la moitié du nominal prévue à la constitution, sans la prime. L’option 4 correspond à la libération intégrale, qui n’est pas exigée.",
       "source_ref": "C. com. art. L225-144 ; PCG comptes 1011, 1013, 1041, 4562",
@@ -569,7 +629,7 @@
       "unit": "€",
       "decimals": 0,
       "explanation": "La reprise suit le rythme de l’amortissement du bien financé, qui court à partir de la mise en service. Dotation N = 240 000 / 5 × 6/12 = 24 000 €. Reprise = 90 000 × 24 000 / 240 000 = 9 000 €. Partir de la date d’encaissement (9 mois) donnerait 13 500 € ; retenir une année pleine donnerait 18 000 €.",
-      "source_ref": "PCG, règles relatives aux subventions d’investissement (règl. ANC 2014-03 modifié par le règl. ANC 2022-06) ; comptes 139, 747",
+      "source_ref": "PCG art. 312-1 (reprise des subventions d’investissement) ; comptes 139, 747 (plan de comptes issu du règl. ANC 2022-06)",
       "estimated_seconds": 150,
       "verified": true
     },
@@ -704,6 +764,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : six mois après la clôture est le délai d’approbation des comptes annuels, non celui de consultation de l’AGE.",
+        "Inexact : la clôture du deuxième exercice suivant est le délai de régularisation lorsque la dissolution n’est pas décidée.",
+        "Inexact : un délai d’un mois après l’approbation n’a pas de fondement légal.",
+        "Exact : l’article L225-248 impose de consulter l’AGE dans les quatre mois suivant l’approbation des comptes, soit le 10/10/N+1."
+      ],
       "explanation": "L’AGE doit être consultée dans les quatre mois qui suivent l’approbation des comptes ayant fait apparaître les pertes (option 4). L’option 1 correspond au délai d’approbation des comptes annuels. L’option 2 correspond au délai de régularisation (reconstitution des capitaux propres ou réduction du capital) lorsque la dissolution n’est pas décidée. L’option 3 n’a pas de fondement légal.",
       "source_ref": "C. com. art. L225-248",
       "estimated_seconds": 50,
@@ -730,6 +796,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : 4 500 € applique 5 % au bénéfice brut, sans déduire le report à nouveau débiteur ni vérifier le plafond.",
+        "Exact : 5 % × (90 000 − 20 000) = 3 500 €, inférieur au plafond restant de 4 000 € (40 000 − 36 000).",
+        "Inexact : 4 000 € part d’une base erronée (5 % du bénéfice brut) ramenée au plafond ; la base retient les pertes antérieures.",
+        "Inexact : 9 000 € confond le taux de dotation de 5 % avec le plafond de 10 % du capital."
       ],
       "explanation": "Base = bénéfice diminué des pertes antérieures : 90 000 − 20 000 = 70 000 € ; 5 % × 70 000 = 3 500 €. Plafond restant : 10 % × 400 000 − 36 000 = 4 000 €, non atteint. Dotation = 3 500 € (option 2). L’option 1 applique 5 % au bénéfice brut sans plafond. L’option 3 applique 5 % au bénéfice brut (4 500 €) puis le plafond de 4 000 € : la base est erronée. L’option 4 confond le taux de 5 % et le plafond de 10 %.",
       "source_ref": "C. com. art. L232-10",

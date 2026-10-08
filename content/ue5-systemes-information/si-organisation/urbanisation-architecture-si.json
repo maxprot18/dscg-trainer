@@ -22,6 +22,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : la vue applicative recense les applications et les flux qu'elles échangent.",
+        "Inexact : la vue technique décrit l'infrastructure : serveurs, réseaux, bases de données.",
+        "Inexact : la vue métier décrit processus, activités et acteurs ; elle guide le découpage fonctionnel sans le contenir.",
+        "Exact : zones, quartiers et îlots découpent les fonctions du SI indépendamment des logiciels : c'est la vue fonctionnelle."
+      ],
       "explanation": "Le découpage en zones, quartiers et îlots (blocs fonctionnels) appartient à la vue fonctionnelle, qui décrit les fonctions du SI indépendamment des logiciels qui les réalisent. La vue applicative (option 1) recense les applications et les flux qu'elles échangent. La vue technique (option 2) décrit l'infrastructure : serveurs, réseaux, bases de données. La vue métier (option 3) décrit les processus, activités et acteurs de l'organisation ; c'est elle qui guide le découpage fonctionnel.",
       "source_ref": "Démarche d'urbanisation du SI (métaphore de la cité) : vues métier, fonctionnelle, applicative et technique",
       "verified": true,
@@ -49,6 +55,12 @@
       ],
       "answer": [
         0
+      ],
+      "option_explanations": [
+        "Exact : 8 × 7 ÷ 2 = 28 paires, donc 28 interfaces point à point ; avec un bus, un connecteur par application, soit 8.",
+        "Inexact : 8 × 7 = 56 compte chaque paire deux fois, ce qui contredit l'hypothèse de liaisons bidirectionnelles.",
+        "Inexact : chaque application doit être raccordée au bus ; il faut 8 connecteurs, pas un seul.",
+        "Inexact : n² = 64 compte des échanges d'une application avec elle-même, et 16 connecteurs double le raccordement au bus."
       ],
       "explanation": "Avec des liaisons point à point bidirectionnelles, chaque paire d'applications nécessite une interface : n(n − 1) ÷ 2 = 8 × 7 ÷ 2 = 28. Avec un bus, chaque application a un seul connecteur vers le bus, soit 8 connecteurs. L'option 2 compte chaque paire deux fois (8 × 7 = 56, un sens par interface), ce qui contredit l'hypothèse de liaisons bidirectionnelles. L'option 3 oublie que chaque application doit être raccordée au bus. L'option 4 retient n² = 64 (une application n'échange pas avec elle-même) et double les connecteurs. Ce calcul illustre la règle d'urbanisation qui préfère les échanges normalisés par un bus aux liaisons multiples point à point.",
       "source_ref": "Démarche d'urbanisation du SI : règles de découplage et d'échanges normalisés (EAI, ESB) ; nombre de paires = n(n − 1) ÷ 2",

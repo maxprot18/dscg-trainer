@@ -35,7 +35,7 @@ Dilution : 100 000 options à 20 € (cours moyen 25 €) → 100 000 × (25 −
 - Ajouter les intérêts bruts (avant impôt) au numérateur du résultat dilué : seule la charge nette d'impôt est réintégrée.
 
 ## À retenir
-- Résultat par action présenté au compte de résultat, base et dilué, sur le résultat part du groupe (§66).
+- Résultat par action, base et dilué, présenté dans l'état du résultat net (« compte de résultat »), sur le résultat part du groupe (§66, §67A).
 - Pas le nombre d'actions à la clôture : la moyenne pondérée.
 - Un instrument dont le RPA incrémental dépasse le RPA en cours de calcul est relutif : il est écarté.
 

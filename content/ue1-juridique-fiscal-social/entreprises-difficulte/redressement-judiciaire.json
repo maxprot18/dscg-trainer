@@ -22,6 +22,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : en cessation des paiements, sans conciliation demandée, le débiteur doit demander le redressement dans les 45 jours (L631-4).",
+        "Inexact : 18 mois est le report maximal de la date de cessation des paiements fixé par le tribunal (L631-8), non un délai de demande.",
+        "Inexact : la sauvegarde est réservée au débiteur qui n'est pas en cessation des paiements (L620-1).",
+        "Inexact : le débiteur est le premier à pouvoir saisir le tribunal ; créancier et ministère public le peuvent aussi (L631-5)."
+      ],
       "explanation": "La société est en cessation des paiements (impossibilité de faire face au passif exigible avec l'actif disponible, C. com. art. L631-1). Le débiteur doit alors demander l'ouverture d'un redressement judiciaire au plus tard dans les 45 jours suivant la cessation des paiements, s'il n'a pas demandé dans ce délai l'ouverture d'une conciliation (art. L631-4) ; le défaut de déclaration dans ce délai peut entraîner des sanctions pour le dirigeant. Le délai de 18 mois correspond à autre chose : c'est le report maximal de la date de cessation des paiements que peut fixer le tribunal avant le jugement d'ouverture (art. L631-8). La sauvegarde est réservée au débiteur qui n'est pas en cessation des paiements (art. L620-1). Enfin, le débiteur est le premier à pouvoir saisir le tribunal ; un créancier ou le ministère public peuvent également le faire (art. L631-5).",
       "source_ref": "C. com. art. L631-1, L631-4, L631-5 et L631-8 ; art. L620-1 (sauvegarde)",
       "verified": true,
@@ -49,6 +55,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : le jugement d'ouverture arrête les poursuites individuelles des créanciers antérieurs, y compris les voies d'exécution (L622-21).",
+        "Inexact : le paiement de toute créance née antérieurement au jugement d'ouverture est interdit (L622-7).",
+        "Inexact : la créance n'est pas éteinte ; elle doit être déclarée et sera traitée dans le plan ou la liquidation.",
+        "Exact : interdiction de payer les créances antérieures (L622-7), arrêt des poursuites (L622-21) et obligation de déclarer la créance (L622-24)."
+      ],
       "explanation": "Le jugement d'ouverture interdit de payer toute créance née antérieurement (C. com. art. L622-7) et arrête ou interdit les poursuites individuelles des créanciers antérieurs, y compris les voies d'exécution (art. L622-21), applicables en redressement par renvoi de l'article L631-14. Le fournisseur doit déclarer sa créance au mandataire judiciaire (art. L622-24) : option 4. Les options 1 et 2 contredisent ces deux règles. La créance n'est pas éteinte (option 3) : elle sera traitée dans le cadre du plan ou de la liquidation.",
       "source_ref": "C. com. art. L622-7, L622-21 et L622-24, applicables par renvoi de l'art. L631-14",
       "verified": true,
@@ -75,6 +87,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : aucune résiliation ne peut résulter du seul jugement d'ouverture, nonobstant toute clause contraire (L622-13, I).",
+        "Exact : l'administrateur peut exiger la poursuite du contrat ; le loueur l'exécute et déclare au passif les loyers antérieurs impayés (L622-13).",
+        "Inexact : l'inexécution d'engagements antérieurs ne donne droit qu'à une déclaration au passif ; l'exception d'inexécution est exclue.",
+        "Inexact : le jugement d'ouverture n'entraîne aucune résiliation de plein droit (L622-13, I) ; une mise en demeure restée un mois sans réponse peut l'entraîner."
       ],
       "explanation": "Aucune résiliation ne peut résulter du seul fait de l'ouverture de la procédure, nonobstant toute clause contraire (C. com. art. L622-13, I, applicable en redressement par renvoi) : options 1 et 4 fausses. L'administrateur a seul la faculté d'exiger l'exécution des contrats en cours ; le cocontractant doit alors remplir ses obligations malgré le défaut d'exécution par le débiteur d'engagements antérieurs, qui ne lui donne droit qu'à une déclaration au passif : option 2, ce qui exclut aussi l'exception d'inexécution invoquée à l'option 3. Le loueur peut toutefois mettre en demeure l'administrateur de prendre parti ; à défaut de réponse dans le délai d'un mois, le contrat est résilié de plein droit.",
       "source_ref": "C. com. art. L622-13, applicable par renvoi de l'art. L631-14",

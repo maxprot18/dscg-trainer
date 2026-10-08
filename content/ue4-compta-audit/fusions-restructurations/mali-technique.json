@@ -14,7 +14,7 @@
         "contrôle commun",
         "annulation des titres"
       ],
-      "statement": "La société Alpha détient 100 % du capital de la société Bêta, dont les titres figurent à son bilan pour 500 000 € (compte 261). Alpha absorbe Bêta ; les apports, réalisés entre sociétés sous contrôle commun, sont évalués à la valeur comptable. Bilan de Bêta à la date d'effet : terrain 200 000 €, stocks de marchandises 100 000 €, disponibilités 200 000 €, dettes fournisseurs 120 000 €. Le terrain a une valeur réelle de 290 000 € ; aucun autre actif ou passif ne présente de plus-value latente, et aucun élément non comptabilisé n'est identifié. Passez chez Alpha l'écriture unique de réception des apports et d'annulation des titres Bêta (on ignore la fiscalité).",
+      "statement": "La société Alpha détient 100 % du capital de la société Bêta, dont les titres figurent à son bilan pour 500 000 € (compte 261). Alpha absorbe Bêta ; les apports, réalisés entre sociétés sous contrôle commun, sont évalués à la valeur comptable. Bilan de Bêta à la date d'effet : terrain 200 000 €, stocks de marchandises 100 000 €, disponibilités 200 000 €, dettes fournisseurs 120 000 €. Le terrain a une valeur réelle de 290 000 € ; aucun autre actif ou passif ne présente de plus-value latente, et aucun élément non comptabilisé n'est identifié. Passez chez Alpha l'écriture unique de réception des apports et d'annulation des titres Bêta (on ignore la fiscalité ; le vrai mali éventuel est porté au compte 668 « Autres charges financières »).",
       "date": "Date d’effet de la fusion",
       "entries": [
         {
@@ -105,6 +105,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : le mali suit l'actif auquel il est affecté ; il ne peut rester à l'actif sans sous-jacent après la cession.",
+        "Inexact : le vrai mali, part sans contrepartie, se détermine à la date de la fusion ; la cession ne transforme pas le mali technique.",
+        "Exact : le mali technique suit l'actif ; à la cession du terrain, la quote-part est sortie et diminue le résultat de cession.",
+        "Inexact : le mali affecté à un terrain ne peut pas être réaffecté au fonds commercial."
       ],
       "explanation": "Le mali technique suit l'actif auquel il est affecté. Lorsque cet actif est cédé, la quote-part de mali correspondante est sortie de l'actif et comptabilisée en résultat avec la cession, ce qui diminue le résultat de cession. L'option 1 est fausse : le mali ne peut rester à l'actif sans sous-jacent. L'option 2 est fausse : le vrai mali est la part du mali sans contrepartie, déterminée à la date de la fusion ; la cession ne transforme pas le mali technique en vrai mali. L'option 4 est fausse : le mali affecté à un terrain ne peut être réaffecté au fonds commercial.",
       "source_ref": "PCG titre VII, traitement du mali technique (règl. ANC 2014-03 modifié par les règl. ANC 2015-06 et 2017-01)",

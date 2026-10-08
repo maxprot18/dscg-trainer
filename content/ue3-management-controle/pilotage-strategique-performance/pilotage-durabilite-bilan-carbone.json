@@ -24,6 +24,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : le scope 1 couvre les émissions directes de sources détenues ou contrôlées (chaudières, flotte de l'entreprise).",
+        "Inexact : le scope 2 couvre l'énergie achetée (électricité, chaleur, vapeur), pas les déplacements des salariés.",
+        "Exact : trajets en véhicules non détenus par l'entreprise : émissions indirectes hors énergie achetée, donc scope 3 amont.",
+        "Inexact : les déplacements domicile-travail font partie des catégories du scope 3 ; ils sont comptabilisés."
+      ],
       "explanation": "L'option 3 est exacte : les déplacements domicile-travail des salariés, effectués avec des véhicules que l'entreprise ne détient pas, sont des émissions indirectes autres que celles de l'énergie achetée : scope 3 (amont). L'option 1 est fausse : le scope 1 couvre les émissions directes de sources détenues ou contrôlées (chaudières, flotte de véhicules de l'entreprise). L'option 2 est fausse : le scope 2 couvre l'énergie achetée (électricité, chaleur, vapeur). L'option 4 est fausse : ce poste fait partie des catégories du scope 3."
     },
     {
@@ -49,6 +55,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : la chaudière de l'usine émet du scope 1 ; la pompe à chaleur en déplace une partie vers le scope 2.",
+        "Inexact : l'électricité achetée relève du scope 2, pas du scope 3 amont.",
+        "Inexact : la flotte détenue par l'entreprise relève du scope 1 (combustion directe).",
+        "Exact : la production des matières premières achetées relève du scope 3 amont, souvent le premier poste d'un agroalimentaire."
       ],
       "explanation": "L'option 4 est exacte : les émissions liées à la production des matières premières achetées relèvent du scope 3 amont (biens et services achetés), souvent le premier poste d'une entreprise agroalimentaire. L'option 1 est fausse : la chaudière de l'usine émet du scope 1 (combustion directe) ; la pompe à chaleur déplace une partie des émissions vers le scope 2. L'option 2 est fausse : l'électricité achetée relève du scope 2. L'option 3 est fausse : la flotte détenue relève du scope 1."
     },
@@ -107,12 +119,12 @@
         "scopes",
         "GHG Protocol"
       ],
-      "source_ref": "GHG Protocol, A Corporate Accounting and Reporting Standard (WRI/WBCSD, 2004), périmètres (scopes) 1, 2 et 3 ; C. env. art. L. 229-25",
+      "source_ref": "GHG Protocol, A Corporate Accounting and Reporting Standard (WRI/WBCSD, 2004), périmètres (scopes) 1, 2 et 3 ; C. env. art. L. 229-25 et R. 229-47",
       "verified": true,
       "estimated_seconds": 40,
       "front": "Que recouvrent les scopes 1, 2 et 3 du GHG Protocol ?",
       "back": "Scope 1 : émissions directes des sources détenues ou contrôlées (combustion sur site, véhicules de l'entreprise, procédés, fuites de fluides frigorigènes).\nScope 2 : émissions indirectes liées à l'énergie achetée (électricité, chaleur, vapeur, froid).\nScope 3 : toutes les autres émissions indirectes de la chaîne de valeur, amont (achats, transport amont, déplacements des salariés) et aval (utilisation et fin de vie des produits vendus).",
-      "explanation": "Le scope 3 représente souvent la plus grande part des émissions. Le bilan réglementaire français (C. env. art. L. 229-25) intègre, depuis 2023, les émissions indirectes significatives."
+      "explanation": "Le scope 3 représente souvent la plus grande part des émissions. Dans le bilan réglementaire français (C. env. art. L. 229-25), les émissions indirectes significatives ne sont obligatoires que pour les entreprises soumises au rapport de durabilité ; pour les autres, les émissions indirectes obligatoires se limitent à l'énergie achetée (C. env. art. R. 229-47)."
     },
     {
       "id": "ue3-pilotage-durab-0006",

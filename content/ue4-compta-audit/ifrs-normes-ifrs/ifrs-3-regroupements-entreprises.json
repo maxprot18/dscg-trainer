@@ -20,8 +20,14 @@
       "answer": [
         1
       ],
-      "explanation": "IFRS 3 §53 impose de comptabiliser les frais connexes à l'acquisition (honoraires d'avocats, de conseil, d'évaluation, de due diligence) en charges de la période où ils sont engagés : ils ne font pas partie de la contrepartie transférée et n'augmentent donc pas le goodwill. Les inclure dans le coût des titres était admis par l'ancienne version d'IFRS 3 (avant 2008) et reste possible en règles françaises (règl. ANC 2020-01), d'où la confusion. Ils ne s'imputent pas sur les capitaux propres : seuls les coûts d'émission d'instruments de capitaux propres sont déduits des capitaux propres (IAS 32 §37). Les étaler sur cinq ans n'a pas de fondement en IFRS.",
-      "source_ref": "IFRS 3 §53 (règlement UE 2023/1803)",
+      "option_explanations": [
+        "Inexact : inclure les frais dans le coût était la règle de l'ancienne IFRS 3 et reste celle de l'ANC 2020-01, pas des IFRS actuelles.",
+        "Exact : IFRS 3 §53 impose de comptabiliser les frais connexes à l'acquisition en charges de la période.",
+        "Inexact : seuls les coûts d'émission d'instruments de capitaux propres sont déduits des capitaux propres (IAS 32 §37).",
+        "Inexact : un étalement sur cinq ans n'a aucun fondement en IFRS."
+      ],
+      "explanation": "IFRS 3 §53 impose de comptabiliser les frais connexes à l'acquisition (honoraires d'avocats, de conseil, d'évaluation, de due diligence) en charges de la période où ils sont engagés : ils ne font pas partie de la contrepartie transférée et n'augmentent donc pas le goodwill. Les inclure dans le coût d'acquisition était la règle de l'ancienne version d'IFRS 3 (avant 2008) et le reste en règles françaises (règl. ANC 2020-01, art. 231-2 et 231-3 : coût d'acquisition majoré des coûts directement imputables, nets d'impôt), d'où la confusion. Ils ne s'imputent pas sur les capitaux propres : seuls les coûts d'émission d'instruments de capitaux propres sont déduits des capitaux propres (IAS 32 §37). Les étaler sur cinq ans n'a pas de fondement en IFRS.",
+      "source_ref": "IFRS 3 §53 (règlement UE 2023/1803) ; règl. ANC 2020-01, art. 231-2 et 231-3",
       "verified": true,
       "estimated_seconds": 50
     },
@@ -46,6 +52,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : la méthode de l'acquisition avec goodwill suppose une entreprise ; le test de concentration montre que ce n'en est pas une.",
+        "Inexact : une société détenue à 100 % est contrôlée ; la mise en équivalence ne s'applique pas.",
+        "Exact : 97 % de la juste valeur sur un actif unique, test de concentration satisfait (B7A) : acquisition d'actifs, sans goodwill.",
+        "Inexact : la détention de titres n'est pas en soi un critère ; c'est la substance de l'ensemble acquis qui compte."
       ],
       "explanation": "Le test optionnel de concentration (IFRS 3 B7A-B7B) est satisfait : la quasi-totalité de la juste valeur des actifs bruts acquis (97 %) porte sur un actif identifiable unique, l'immeuble. L'ensemble acquis n'est donc pas une entreprise ; il n'y a d'ailleurs ni salariés ni processus substantiel. L'opération est une acquisition d'actifs : le coût est réparti entre les actifs et passifs identifiables au prorata de leurs justes valeurs relatives, sans goodwill ni profit d'acquisition (§2(b)). Appliquer la méthode de l'acquisition avec goodwill suppose une entreprise. Une société détenue à 100 % est contrôlée et ses actifs figurent dans les comptes consolidés : la mise en équivalence ne s'applique pas. Enfin, la détention de titres n'est pas en soi un critère : c'est la substance de l'ensemble acquis qui compte.",
       "source_ref": "IFRS 3 §2(b), §3, B7-B7B (règlement UE 2023/1803)",

@@ -50,6 +50,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : les pertes d'exploitation futures ne résultent d'aucune obligation à la clôture.",
+        "Inexact : une restructuration n'est provisionnée que si elle a été annoncée ou engagée avant la clôture.",
+        "Exact : le contrat ferme et déficitaire crée une obligation à la clôture : provision pour perte sur contrat de 40 000 €.",
+        "Inexact : le plan de formation est une dépense future sans obligation envers un tiers à la clôture."
+      ],
       "explanation": "Le contrat ferme et déficitaire crée à la clôture une obligation contractuelle dont l’exécution entraînera une sortie de ressources sans contrepartie au moins équivalente : une provision pour perte sur contrat de 40 000 € est requise. Les pertes d’exploitation futures ne résultent d’aucune obligation à la clôture. Une restructuration n’est provisionnée que si elle a été décidée et annoncée (ou engagée) avant la clôture, créant une attente chez les personnes concernées. Le plan de formation est une dépense future sans obligation envers un tiers à la clôture.",
       "source_ref": "PCG art. 321-1 s. et 322-1 s. (règl. ANC 2014-03), conditions de comptabilisation des provisions",
       "estimated_seconds": 90,

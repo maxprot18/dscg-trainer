@@ -16,6 +16,12 @@
         "Laisser l'hébergeur, en sa qualité de sous-traitant, notifier directement la CNIL dans les 24 heures, ce qui décharge l'entreprise de toute obligation de notification"
       ],
       "answer": [0],
+      "option_explanations": [
+        "Exact : notification à la CNIL sous 72 heures si possible (art. 33) et, le risque étant élevé (IBAN non chiffrés), information des personnes (art. 34).",
+        "Inexact : la publication des données n'est pas une condition ; la notification est due dès qu'un risque existe pour les personnes.",
+        "Inexact : aucun seuil de 100 000 personnes n'existe ; le délai d'un mois est celui de réponse aux demandes d'exercice des droits.",
+        "Inexact : le sous-traitant notifie la violation au responsable du traitement ; il ne se substitue pas à lui (art. 33 §2)."
+      ],
       "explanation": "Toute violation de données personnelles doit être notifiée par le responsable du traitement à l'autorité de contrôle (la CNIL) dans les meilleurs délais et, si possible, 72 heures au plus tard après en avoir pris connaissance, sauf si elle n'est pas susceptible d'engendrer un risque pour les droits et libertés des personnes (RGPD art. 33). Ici, l'exfiltration de coordonnées bancaires non chiffrées crée un risque élevé (fraude, hameçonnage ciblé) : les personnes concernées doivent aussi être informées dans les meilleurs délais (art. 34) ; le chiffrement des données aurait pu dispenser de cette communication. La publication des données n'est pas une condition, le seuil de 100 000 personnes n'existe pas, et le délai d'un mois est celui de la réponse aux demandes d'exercice des droits (art. 12). Le sous-traitant doit notifier la violation au responsable du traitement, pas se substituer à lui (art. 33 §2). Dans tous les cas, l'incident est consigné dans la documentation interne des violations (art. 33 §5).",
       "source_ref": "Règlement (UE) 2016/679 (RGPD), art. 33 et 34 ; art. 12 §3 (délai de réponse aux demandes)",
       "verified": true,
@@ -43,6 +49,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : le consentement doit être libre et révocable, impossible pour une obligation déclarative, et rarement valable vu le déséquilibre employeur-salarié.",
+        "Inexact : l'intérêt légitime n'est pas la base pertinente quand la loi impose le traitement.",
+        "Inexact : la mission d'intérêt public fonde le traitement de l'organisme qui l'exerce, pas celui de l'employeur qui déclare.",
+        "Exact : la DSN est imposée par le Code de la sécurité sociale ; la transmission répond à une obligation légale (art. 6 §1 c)."
       ],
       "explanation": "La DSN est imposée par le Code de la sécurité sociale : la transmission est nécessaire au respect d'une obligation légale du responsable du traitement (RGPD art. 6 §1 c). Le consentement (option 1) n'est pas adapté : il doit être libre et pouvoir être retiré, ce qui est impossible pour une obligation déclarative, et le déséquilibre de la relation de travail le rend rarement valable. L'intérêt légitime (option 2) n'est pas la base pertinente quand la loi impose le traitement. La mission d'intérêt public (option 3) concerne le traitement effectué par l'organisme qui exerce cette mission, pas l'employeur qui déclare. Pour le calcul de la paie lui-même, la base est l'exécution du contrat de travail, combinée aux obligations légales.",
       "source_ref": "Règlement (UE) 2016/679 (RGPD), art. 6 §1 (bases légales) et art. 7 et considérant 43 (consentement en cas de déséquilibre)",
@@ -219,6 +231,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : la notification n'est due qu'en cas de risque, et l'information des personnes qu'en cas de risque élevé ; ce n'est pas systématique.",
+        "Inexact : la perte d'un support contenant des données personnelles est une violation ; elle doit toujours être documentée (art. 33 §5).",
+        "Exact : chiffrement à l'état de l'art, clé non compromise, sauvegarde : risque improbable ; seule la documentation interne est requise (art. 33 §5).",
+        "Inexact : l'information des personnes vise les risques élevés, écartés ici par le chiffrement (art. 34 §3 a), et n'exonère pas de la documentation."
       ],
       "explanation": "L'option 3 est la bonne : la perte d'un support contenant des données personnelles est une violation de données, qui doit toujours être documentée par le responsable du traitement (faits, effets, mesures prises), afin de pouvoir en rendre compte à la CNIL (art. 33 §5). La notification à la CNIL n'est due que si la violation est susceptible d'engendrer un risque pour les droits et libertés des personnes (art. 33 §1) : avec un chiffrement à l'état de l'art, une clé non compromise et une sauvegarde qui préserve la disponibilité des données, ce risque est improbable. L'information des personnes n'est requise qu'en cas de risque élevé et n'est de toute façon pas exigée lorsque les données ont été rendues incompréhensibles, notamment par chiffrement (art. 34 §3 a). L'option 1 généralise à tort les deux démarches à toute violation. L'option 2 nie l'existence de la violation et omet la documentation obligatoire. L'option 4 inverse la logique : l'information des personnes vise les risques élevés et n'exonère pas de la documentation.",
       "source_ref": "RGPD (règl. UE 2016/679), art. 33 §1 et §5, art. 34 §1 et §3 a)",

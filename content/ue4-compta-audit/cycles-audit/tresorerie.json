@@ -64,6 +64,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : l'évaluation concerne la conversion des soldes en devises ou la dépréciation des placements, non le recensement des comptes.",
+        "Inexact : la séparation des exercices porte sur la date de rattachement des opérations, non sur l'existence d'un compte.",
+        "Exact : obtenir de la banque la liste de tous les comptes, sans partir de celle de l'entité, révèle un compte hors livres.",
+        "Inexact : la présentation des découverts au passif n'est pas l'objet de cette précision."
+      ],
       "explanation": "Demander à la banque la liste de tous les comptes, sans partir de la liste fournie par l'entité, permet de détecter un compte non enregistré en comptabilité (compte « hors livres » pouvant servir à des détournements) : c'est l'exhaustivité. L'évaluation concerne la conversion des soldes en devises ou la dépréciation des placements. La séparation des exercices porte sur la date de rattachement des opérations, non sur l'existence d'un compte. La présentation des découverts au passif n'est pas l'objet de cette précision.",
       "source_ref": "NEP 500 (assertions sur les soldes de fin de période) ; NEP 505 (confirmations externes)",
       "verified": true,
@@ -90,6 +96,12 @@
       ],
       "answer": [
         0
+      ],
+      "option_explanations": [
+        "Exact : le comptage physique vérifie que les espèces inscrites au compte 53 sont réellement présentes.",
+        "Inexact : la propriété ou la libre disposition des fonds n'est pas établie par un comptage.",
+        "Inexact : une vente non saisie dont l'argent a été détourné n'apparaît ni en caisse ni en comptabilité ; le comptage ne la révèle pas.",
+        "Inexact : l'évaluation des devises n'est pas en cause pour des caisses tenues en euros."
       ],
       "explanation": "Le comptage physique vérifie que les espèces inscrites au compte 53 sont réellement présentes : c'est l'existence. Les droits et obligations portent sur la propriété ou la libre disposition des fonds, non établies par un comptage. Le comptage ne prouve pas que toutes les ventes de l'année ont été encaissées et enregistrées : une vente non saisie dont l'argent a été détourné n'apparaît ni en caisse ni en comptabilité. L'évaluation des devises n'est pas en cause pour des caisses en euros.",
       "source_ref": "NEP 500 (assertions sur les soldes de fin de période) ; PCG compte 53",
@@ -118,6 +130,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : la banque confirme le compte ; son existence n'est pas en cause.",
+        "Inexact : le montant nominal de 500 000 € n'est pas contesté ; l'évaluation n'est pas en cause.",
+        "Inexact : la séparation des exercices ne joue aucun rôle dans un nantissement non mentionné.",
+        "Exact : le nantissement restreint la libre disposition des fonds, et l'engagement donné pour la filiale doit figurer en annexe."
       ],
       "explanation": "Le compte existe bien (la banque le confirme) et son montant nominal n'est pas contesté : ni l'existence ni l'évaluation ne sont en cause. Le nantissement restreint la libre disposition des fonds : l'assertion concernée est celle des droits et obligations, avec l'information à fournir en annexe sur l'engagement donné au profit de la filiale. La séparation des exercices ne joue aucun rôle ici.",
       "source_ref": "NEP 500 (assertions : droits et obligations, présentation et informations fournies) ; PCG, informations en annexe sur les engagements financiers",
@@ -185,6 +203,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : travailler avec deux banques est banal et n'augmente que marginalement le risque.",
+        "Exact : émettre les paiements et établir le rapprochement permet de détourner des fonds et de dissimuler l'opération dans les suspens.",
+        "Inexact : la réception électronique des relevés n'est pas en soi un facteur de risque.",
+        "Inexact : des placements à taux fixe posent au plus une question d'évaluation, sans lien avec la fraude."
+      ],
       "explanation": "Une personne qui peut émettre un paiement et établir elle-même le rapprochement peut à la fois détourner des fonds et dissimuler l'opération dans les suspens : c'est un cumul de fonctions incompatibles, facteur de risque de fraude typique. Avoir deux banques est banal et n'augmente que marginalement le risque. Les relevés électroniques ne sont pas en soi un facteur de risque. Des placements à taux fixe posent au plus une question d'évaluation, sans lien avec la fraude.",
       "source_ref": "NEP 240 (facteurs de risque de fraude) ; NEP 315",
       "verified": true,
@@ -212,6 +236,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : des chèques comptabilisés mais conservés diminuent la trésorerie et dégradent le ratio, à l'inverse de l'incitation.",
+        "Inexact : une dépréciation excessive des placements réduirait la trésorerie ou le résultat, contre l'intérêt de la direction.",
+        "Inexact : des frais comptabilisés deux fois réduiraient la trésorerie et le résultat, ce qui va contre l'incitation.",
+        "Exact : rattacher à N des encaissements de N+1 gonfle la trésorerie, réduit la dette nette et maintient le ratio sous 3."
       ],
       "explanation": "La dette nette est égale aux dettes financières diminuées de la trésorerie : rattacher à N des encaissements de N+1 gonfle la trésorerie de clôture et améliore le ratio, juste sous le plafond. Des chèques comptabilisés mais conservés diminuent la trésorerie et dégradent donc le ratio, à l'inverse de l'incitation. Une dépréciation excessive des placements ou des frais comptabilisés deux fois réduiraient eux aussi la trésorerie ou le résultat, ce qui va contre l'intérêt de la direction.",
       "source_ref": "NEP 240 (incitations et pressions) ; NEP 315 ; NEP 500 (séparation des exercices)",
@@ -304,6 +334,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : le nom de domaine peut être usurpé ou la messagerie du fournisseur piratée.",
+        "Exact : le contre-appel par un canal indépendant, auprès d'un contact connu, empêche la modification frauduleuse avant tout paiement.",
+        "Inexact : le virement vers le faux RIB apparaît normalement sur le relevé ; le rapprochement bancaire ne détecte rien.",
+        "Inexact : la confirmation annuelle de solde ne révèle la fraude qu'a posteriori, une fois le préjudice consommé."
+      ],
       "explanation": "Le contre-appel par un canal indépendant du message reçu, auprès d'un contact déjà connu, empêche la modification frauduleuse avant tout paiement : c'est un contrôle préventif. Le nom de domaine peut être usurpé ou la messagerie du fournisseur piratée. Le rapprochement bancaire ne détecte rien : le virement vers le faux RIB apparaît normalement sur le relevé. La confirmation annuelle de solde ne révèle la fraude qu'a posteriori, quand le préjudice est consommé.",
       "source_ref": "NEP 315 (compréhension du contrôle interne) ; NEP 240",
       "verified": true,
@@ -330,6 +366,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : un rapprochement plus fréquent par la même personne ne supprime pas le cumul paiement / rapprochement.",
+        "Inexact : relever le seuil de double signature affaiblit le contrôle au lieu de le renforcer.",
+        "Exact : un rapprochement par une personne indépendante des paiements, avec revue effective des suspens, rétablit un contrôle fiable.",
+        "Inexact : le commissaire aux comptes ne peut exercer une tâche de gestion de l'entité auditée sans compromettre son indépendance."
       ],
       "explanation": "La faiblesse tient au cumul paiement / rapprochement et à une revue de pure forme : seule une personne indépendante des paiements, avec une revue effective des suspens, rétablit un contrôle détectif fiable. Un rapprochement plus fréquent par la même personne ne supprime pas le cumul. Relever le seuil de double signature affaiblit le contrôle au lieu de le renforcer. Le commissaire aux comptes ne peut pas exercer une tâche de gestion de l'entité qu'il audite : son indépendance serait compromise.",
       "source_ref": "NEP 315 ; NEP 265 (communication des faiblesses du contrôle interne)",
@@ -463,6 +505,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : le prélèvement exécuté en N est réel et manque dans les comptes : charge d'assurance à enregistrer, crédit 512.",
+        "Inexact : ce chèque est correctement comptabilisé ; le décalage de débit bancaire se dénoue en janvier sans écriture.",
+        "Inexact : la remise est correctement comptabilisée ; ce décalage de traitement bancaire se dénoue sur le relevé de janvier.",
+        "Inexact : ce chèque est correctement comptabilisé ; son débit en janvier est un décalage bancaire sans écriture."
+      ],
       "explanation": "Le prélèvement a été exécuté par la banque en N : l'opération est réelle et manque dans les comptes de Pavo, qui doit l'enregistrer (charge d'assurance, crédit 512). Les deux chèques émis en fin d'année et la remise du 31/12 sont correctement comptabilisés par Pavo ; ce sont des décalages de traitement bancaire, qui se dénouent d'eux-mêmes sur les relevés de janvier et n'appellent aucune écriture.",
       "source_ref": "NEP 330 ; PCG compte 512",
       "verified": true,
@@ -489,6 +537,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : les agios se contrôlent sur les relevés et par procédures analytiques, non par cette demande.",
+        "Inexact : l'évaluation des valeurs mobilières de placement repose sur les cours de clôture, non sur cette demande.",
+        "Inexact : la NEP 505 encadre les confirmations quand l'auditeur y recourt ; elle n'impose pas leur contenu dans tous les audits.",
+        "Exact : cautions, nantissements et effets escomptés non échus n'apparaissent pas au bilan ; la banque confirme l'exhaustivité de l'annexe."
       ],
       "explanation": "Les engagements hors bilan (cautions, nantissements, effets escomptés non échus dont l'entité reste garante) n'apparaissent pas dans les comptes de bilan : la confirmation par la banque, source externe, permet de vérifier que l'annexe est complète et de repérer un risque de passif (appel en garantie). Les agios se contrôlent sur les relevés et par procédures analytiques. L'évaluation des VMP repose sur les cours de clôture, non sur cette demande. La NEP 505 encadre la mise en œuvre des confirmations quand l'auditeur décide d'y recourir ; elle n'impose pas leur contenu dans tous les audits.",
       "source_ref": "NEP 505 (confirmations externes) ; NEP 500 ; PCG, informations en annexe sur les engagements financiers",
@@ -690,6 +744,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : présenter le net de 75 000 € viole l'interdiction de compensation et masque l'endettement bancaire.",
+        "Exact : sans compensation (art. L123-19), le solde positif reste en disponibilités et le découvert est une dette bancaire.",
+        "Inexact : le découvert est une dette envers un établissement de crédit, non une dette fournisseur.",
+        "Inexact : un détail en annexe ne régularise pas une compensation interdite entre actif et passif."
+      ],
       "explanation": "Le Code de commerce interdit toute compensation entre postes d'actif et de passif : le solde positif reste en disponibilités, le découvert est une dette envers un établissement de crédit. Présenter le net de 75 000 €, même avec un détail en annexe, viole ce principe et masque l'endettement bancaire. Le découvert n'est pas une dette fournisseur.",
       "source_ref": "C. com. art. L123-19 (interdiction de compensation) ; PCG, modèles de bilan (emprunts et dettes auprès des établissements de crédit)",
       "verified": true,
@@ -720,6 +780,12 @@
         1
       ],
       "multiple": true,
+      "option_explanations": [
+        "Exact : les chèques encore au coffre le 31/12/N laissent les fonds disponibles ; la comptabilisation anticipée minore le 512 de 140 000 €.",
+        "Exact : les dettes ne sont pas réglées au 31/12/N ; le compte 401 est minoré de 140 000 €, à contre-passer.",
+        "Inexact : aucune charge ni produit n'est en cause ; seuls le 512 et le 401 sont affectés.",
+        "Inexact : le ratio présenté vaut 1,25 contre 1,21 après correction (1 140 000 / 940 000) ; une baisse égale améliore un ratio supérieur à 1."
+      ],
       "explanation": "Au 31/12/N, les chèques sont toujours en possession d'Indus : les fonds sont disponibles et les dettes non réglées. La comptabilisation anticipée minore donc les disponibilités et les dettes fournisseurs de 140 000 € chacune (options 1 et 2) ; il faut contre-passer (débit 512, crédit 401). Le résultat n'est pas touché, aucune charge ni produit n'étant en cause. Le ratio de liquidité générale est modifié : 1 000 000 / 800 000 = 1,25 tel que présenté, contre 1 140 000 / 940 000 ≈ 1,21 après correction ; une diminution égale de l'actif et du passif améliore un ratio supérieur à 1. L'auditeur détecte ce montage en rapprochant les dates d'émission des chèques de leurs dates de débit sur les relevés de N+1.",
       "source_ref": "NEP 500 (séparation des exercices, existence) ; NEP 240 ; PCG comptes 401, 512",
       "verified": true,

@@ -8,7 +8,7 @@
  * valides, écriture équilibrée, barème cohérent…) sont factorisées dans des
  * helpers de refinement réutilisés par les exercices et les sous-questions.
  */
-import { z } from 'zod'
+import { z } from '../lib/zod'
 
 import { UE_IDS } from './ids'
 
@@ -165,11 +165,14 @@ function checkIndexList(ctx: Ctx, answer: readonly unknown[], optionCount: numbe
 /** Règles d'un choix multiple (QCM ou sous-question QCM). */
 export function checkChoice(
   ctx: Ctx,
-  value: { options: readonly unknown[]; answer: readonly unknown[]; multiple?: boolean },
+  value: { options: readonly unknown[]; answer: readonly unknown[]; multiple?: boolean; option_explanations?: readonly unknown[] },
   path: Path = [],
 ): void {
   checkUniqueStrings(ctx, value.options, [...path, 'options'], 'Option')
   checkIndexList(ctx, value.answer, value.options.length, [...path, 'answer'])
+  if (value.option_explanations && value.option_explanations.length !== value.options.length) {
+    issue(ctx, [...path, 'option_explanations'], 'Une explication par option, dans le même ordre')
+  }
   if (value.answer.length > 1 && value.multiple !== true) {
     issue(ctx, [...path, 'multiple'], 'Plusieurs bonnes réponses : "multiple" doit valoir true')
   }
@@ -254,6 +257,8 @@ const choiceFields = {
   options: z.array(text()).min(2).max(6),
   answer: z.array(z.int().min(0)).min(1),
   multiple: z.boolean().default(false),
+  /** Pourquoi chaque option est juste ou fausse, dans l'ordre des options (affiché après réponse). */
+  option_explanations: z.array(text()).optional(),
 }
 
 const numericFields = {

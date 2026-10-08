@@ -21,6 +21,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : la proposition de valeur est l'un des neuf blocs du canevas, au cœur du modèle.",
+        "Exact : l'analyse de la concurrence relève du diagnostic externe ; elle ne figure pas parmi les neuf blocs du canevas.",
+        "Inexact : les partenaires clés constituent l'un des neuf blocs du Business Model Canvas.",
+        "Inexact : la structure de coûts est l'un des neuf blocs du canevas, avec les flux de revenus."
+      ],
       "explanation": "L'option 2 est exacte : l'analyse de la concurrence n'est pas l'un des neuf blocs du Business Model Canvas (segments de clients, proposition de valeur, canaux, relation client, flux de revenus, ressources clés, activités clés, partenaires clés, structure de coûts) ; elle relève du diagnostic externe. Les options 1, 3 et 4 sont fausses car la proposition de valeur, les partenaires clés et la structure de coûts sont trois des neuf blocs.",
       "source_ref": "A. Osterwalder et Y. Pigneur, Business Model Generation (2010), Business Model Canvas",
       "verified": true,
@@ -47,6 +53,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : la hausse du résultat ne suffit pas ; il faut la comparer au coût (CMPC) des capitaux supplémentaires engagés.",
+        "Inexact : une rentabilité positive ne crée de la valeur que si elle dépasse le CMPC ; ici 7 % < 9 %.",
+        "Exact : EVA = (7 % − 9 %) × capitaux employés < 0 ; augmenter ces capitaux de 20 % accroît la destruction de valeur.",
+        "Inexact : la croissance ne compense rien ; elle applique un écart négatif de 2 points à une base plus large."
       ],
       "explanation": "L'option 3 est exacte : EVA = (rentabilité économique après impôt − CMPC) × capitaux employés. Avec 7 % − 9 % = −2 points, chaque euro de capital employé détruit 0,02 € de valeur par an ; augmenter les capitaux employés de 20 % accroît la destruction de valeur. L'option 1 est fausse : la hausse du résultat ne suffit pas, il faut la comparer au coût des capitaux supplémentaires. L'option 2 est fausse : une rentabilité positive ne crée de la valeur que si elle dépasse le CMPC. L'option 4 est fausse : la croissance ne compense rien ; elle multiplie un écart négatif par une base plus large.",
       "source_ref": "EVA (Stern Stewart) : NOPAT − CMPC × capitaux employés",

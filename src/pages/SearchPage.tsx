@@ -1,5 +1,5 @@
 import { BookOpen, Dumbbell, Search } from 'lucide-react'
-import { useEffect, useMemo, useState } from 'react'
+import { useDeferredValue, useEffect, useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 
 import { Badge } from '@/components/ui/badge'
@@ -19,7 +19,14 @@ interface CourseDoc {
 
 export function SearchPage() {
   const [params, setParams] = useSearchParams()
-  const query = params.get('q') ?? ''
+  // Saisie locale : la recherche suit la frappe avec un temps de retard (useDeferredValue), et l'URL n'est
+  // mise à jour qu'après une courte pause, pour ne perdre aucune touche sur mobile.
+  const [input, setInput] = useState(() => params.get('q') ?? '')
+  const query = useDeferredValue(input)
+  useEffect(() => {
+    const timer = window.setTimeout(() => setParams(input ? { q: input } : {}, { replace: true }), 300)
+    return () => window.clearTimeout(timer)
+  }, [input, setParams])
   const exercises = useExercises()
   const [courses, setCourses] = useState<CourseDoc[] | null>(null)
 
@@ -55,9 +62,9 @@ export function SearchPage() {
           aria-label="Rechercher dans les cours et les exercices"
           placeholder="Ex. écart d’acquisition, IAS 16, carry-back…"
           autoFocus
-          value={query}
-          onChange={(e) => setParams(e.target.value ? { q: e.target.value } : {}, { replace: true })}
-          className="border-input bg-background focus-visible:ring-ring/50 h-10 w-full rounded-md border pr-3 pl-9 text-sm outline-none focus-visible:ring-[3px]"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          className="border-input bg-background focus-visible:ring-ring/70 h-10 w-full rounded-md border pr-3 pl-9 text-sm outline-none focus-visible:ring-[3px]"
         />
       </form>
       {!searching ? (

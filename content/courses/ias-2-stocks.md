@@ -4,7 +4,7 @@
 
 **Enjeu :** calculer le coût d'entrée d'un stock (imputation des frais fixes à la capacité normale), choisir une formule de coût admise et déprécier au plus faible du coût et de la valeur nette de réalisation ; calculs courts très fréquents, souvent couplés au retraitement de la sous-activité.
 
-**Évaluation (§9)** : les stocks sont évalués au plus faible du **coût** et de la **valeur nette de réalisation** (VNR). Les stocks de négociants en matières premières évalués à la juste valeur nette des coûts de vente et les produits agricoles à la récolte sont hors du champ de cette règle d'évaluation (§3).
+**Évaluation (§9)** : les stocks sont évalués au plus faible du **coût** et de la **valeur nette de réalisation** (VNR). Échappent à cette règle d'évaluation les stocks des courtiers arbitragistes évalués à la juste valeur diminuée des coûts de vente et ceux des producteurs agricoles, forestiers ou miniers évalués à la VNR selon les pratiques du secteur (§3) ; les actifs biologiques et la production agricole au moment de la récolte relèvent d'IAS 41 (§2).
 
 **Coût (§10-18)** = coûts d'acquisition + coûts de transformation + autres coûts engagés pour amener les stocks à l'endroit et dans l'état où ils se trouvent :
 - coût d'acquisition (§11) : prix d'achat, droits de douane et taxes non récupérables, transport, manutention ; rabais, remises et ristournes déduits ;
@@ -16,7 +16,7 @@
 
 **VNR (§6)** = prix de vente estimé dans le cours normal de l'activité − coûts estimés d'achèvement − coûts estimés nécessaires pour réaliser la vente. C'est une valeur propre à l'entité, à distinguer de la juste valeur (§7).
 
-**Dépréciation (§28-33)** : en principe article par article, regroupement possible pour des articles similaires d'une même gamme, jamais par catégorie entière (§29) ; les matières premières ne sont pas dépréciées si les produits finis dans lesquels elles seront incorporées seront vendus au moins à leur coût, le coût de remplacement servant alors seulement d'indicateur (§32) ; la dépréciation est **reprise** quand les circonstances qui l'avaient justifiée ont disparu, dans la limite du montant initial (§33). Le stock vendu passe en charges de la période de la vente (§34).
+**Dépréciation (§28-33)** : en principe article par article, regroupement possible pour des articles similaires d'une même gamme, jamais par catégorie entière (§29) ; les matières premières ne sont pas dépréciées si les produits finis dans lesquels elles seront incorporées seront vendus au moins à leur coût ; sinon, elles sont ramenées à leur VNR, dont le coût de remplacement peut être la meilleure mesure disponible (§32) ; la dépréciation est **reprise** quand les circonstances qui l'avaient justifiée ont disparu, dans la limite du montant initial (§33). Le stock vendu passe en charges de la période de la vente (§34).
 
 **Formules clés :** coût unitaire de production = coûts variables unitaires + frais fixes / production à capacité normale (si la production réelle est inférieure) ; dépréciation = coût − VNR si positif
 

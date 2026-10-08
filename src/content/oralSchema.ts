@@ -1,5 +1,5 @@
 /** Schéma Zod des sujets d'oral (validateur et tests ; l'application lit le JSON déjà validé). */
-import { z } from 'zod'
+import { z } from '../lib/zod'
 
 const text = () => z.string().refine((s) => s.trim().length > 0, { message: 'Le texte ne doit pas être vide' })
 

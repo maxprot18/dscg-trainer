@@ -91,6 +91,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : la NEP 320 ne fige pas le seuil ; il est revu si une information nouvelle aurait conduit à un autre montant.",
+        "Inexact : une simple mention dans la note de synthèse ne règle pas l'insuffisance éventuelle des travaux.",
+        "Inexact : changer de critère pour conserver un seuil élevé n'est pas un exercice du jugement professionnel.",
+        "Exact : la NEP 320 impose de revoir le seuil : 900 000 × 5 % = 45 000 €, puis d'apprécier et compléter les travaux."
+      ],
       "explanation": "La NEP 320 prévoit que le commissaire aux comptes revoie le seuil de signification (et le seuil de planification) lorsqu'il prend connaissance, en cours de mission, d'informations qui l'auraient conduit à retenir un montant différent. Avec la même méthode : 900 000 × 5 % = 45 000 €. Il apprécie alors si les travaux réalisés avec un seuil de planification trop élevé restent suffisants et les complète au besoin. Le seuil n'est pas figé à la planification ; une simple mention dans la note de synthèse ne règle pas l'insuffisance éventuelle des travaux. Changer de critère dans le seul but de conserver un seuil élevé n'est pas un exercice du jugement professionnel : le critère doit refléter l'indicateur pertinent pour les utilisateurs des comptes.",
       "source_ref": "NEP 320 (application de la notion de caractère significatif lors de la planification et de la réalisation d'un audit), révision des seuils en cours de mission",
       "verified": true,

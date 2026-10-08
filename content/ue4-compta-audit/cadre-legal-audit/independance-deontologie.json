@@ -16,6 +16,12 @@
         "Délivrer, à la demande d'Oméga, une attestation sur le respect des ratios financiers prévus par son contrat de prêt bancaire"
       ],
       "answer": [3],
+      "option_explanations": [
+        "Inexact : tenir la comptabilité puis certifier les comptes crée une autorévision, interdite pour toute entité (art. L. 821-28 IV).",
+        "Inexact : concevoir le système d'information comptable qu'il auditera ensuite place le CAC en situation d'autorévision.",
+        "Inexact : évaluer un actif significatif destiné au bilan l'amènerait à se prononcer sur ses propres travaux : autorévision.",
+        "Exact : l'attestation sur covenants porte sur des informations établies par l'entité ; c'est un service compatible avec le mandat."
+      ],
       "explanation": "Le principe d'indépendance interdit au commissaire aux comptes de se trouver en situation d'autorévision, c'est-à-dire d'avoir à certifier des éléments qu'il a lui-même produits. La tenue de la comptabilité et la préparation des comptes, la conception du système d'information comptable et l'évaluation d'un actif significatif à comptabiliser relèvent toutes de cette situation : il se prononcerait ensuite sur ses propres travaux. Le risque d'autorévision interdit d'accepter ou de poursuivre la mission auprès de toute entité (C. com. art. L. 821-28 IV ; code de déontologie, art. 5 et 19) et, pour les EIP, ces services figurent en outre sur la liste du règlement 537/2014. L'attestation sur des covenants bancaires porte sur des informations établies par l'entité ; c'est un service autre que la certification des comptes compatible avec le mandat, fourni dans le respect du code de déontologie et des diligences professionnelles applicables.",
       "source_ref": "C. com. art. L. 821-28 IV (autorévision, entités autres que les EIP) ; code de déontologie de la profession de CAC (annexe 8-1 du C. com.), art. 5 et 19 ; règlement (UE) n° 537/2014, art. 5 (services interdits aux CAC d'EIP)",
       "verified": true,
@@ -45,6 +51,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : fixer les honoraires d'après les heures nécessaires selon la taille et la complexité est la règle normale.",
+        "Exact : honoraires conditionnels interdits ; une prime liée au résultat net crée une menace d'intérêt personnel.",
+        "Inexact : réviser le budget selon l'évolution des travaux nécessaires est légitime.",
+        "Inexact : une attestation est un SACC autorisé, qui peut être facturé séparément."
       ],
       "explanation": "Les honoraires du commissaire aux comptes ne peuvent pas être subordonnés à un résultat ou à un événement (honoraires conditionnels) : une prime liée au résultat net crée une menace d'intérêt personnel, le CAC ayant intérêt à ce que les comptes affichent un résultat élevé. Fixer les honoraires d'après les heures nécessaires à la mission est la règle normale ; réviser le budget selon les travaux est légitime ; une attestation (SACC autorisé) peut être facturée séparément."
     },
@@ -78,6 +90,12 @@
         3
       ],
       "multiple": true,
+      "option_explanations": [
+        "Exact : le traitement de la paie figure parmi les services interdits aux CAC d'EIP (règlement 537/2014, art. 5), y compris au réseau.",
+        "Exact : détenir un intérêt financier direct dans l'entité contrôlée est interdit (menace d'intérêt personnel).",
+        "Inexact : le rapport sur la réduction de capital est une mission légale confiée au CAC lui-même ; elle ne menace pas son indépendance.",
+        "Exact : seuls des cadeaux de valeur insignifiante sont acceptables ; un séjour de 4 000 € ne l'est pas."
+      ],
       "explanation": "Option 1 : les services liés au traitement de la paie figurent parmi les services interdits aux CAC d'EIP par l'article 5 du règlement 537/2014, et l'interdiction s'étend aux membres du réseau. Option 2 : la détention d'un intérêt financier direct dans l'entité contrôlée est interdite (menace d'intérêt personnel). Option 4 : seuls des cadeaux ou avantages de valeur insignifiante peuvent être acceptés ; un séjour de 4 000 € ne l'est pas. Option 3 : le rapport sur une réduction de capital est une mission légale confiée au CAC lui-même ; elle ne menace pas son indépendance."
     },
     {

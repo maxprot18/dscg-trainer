@@ -37,3 +37,9 @@ describe('recherche plein texte', () => {
     expect(search([ex], 'motintrouvable', exerciseSearchable)).toHaveLength(0)
   })
 })
+
+describe('requête', () => {
+  it('sépare lettres et chiffres collés : « IAS16 » vaut « IAS 16 »', () => {
+    expect(queryTokens('IAS16')).toEqual(queryTokens('IAS 16'))
+  })
+})

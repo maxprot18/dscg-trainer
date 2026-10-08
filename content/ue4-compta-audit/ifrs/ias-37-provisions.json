@@ -21,6 +21,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : les pertes opérationnelles futures ne résultent d'aucune obligation actuelle née d'un événement passé (IAS 37 §63).",
+        "Inexact : le litige résulte d'un événement passé, avec sortie probable et estimable : les conditions de §14 sont réunies.",
+        "Inexact : la garantie naît des ventes de N, avec réparations probables : obligation actuelle, provision requise.",
+        "Inexact : la pollution de N crée une obligation actuelle, avec sortie probable : les conditions de §14 sont réunies."
+      ],
       "explanation": "Les pertes opérationnelles futures ne répondent pas à la définition d'un passif : elles ne résultent d'aucune obligation actuelle née d'un événement passé (IAS 37 §63) ; elles constituent au plus un indice de perte de valeur (IAS 36). Le litige, la garantie et l'amende résultent d'un événement passé (vente, dommage, infraction) créant une obligation actuelle avec une sortie de ressources probable et estimable : les trois conditions de §14 sont réunies.",
       "source_ref": "IAS 37 §14, §19 et §63 (règlement UE 2023/1803)",
       "verified": true,
@@ -46,6 +52,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : la reconversion du personnel conservé se rattache à l'activité future et est exclue (IAS 37 §81).",
+        "Inexact : les dépenses de marketing sont expressément exclues de la provision pour restructuration (§81).",
+        "Exact : les indemnités de licenciement sont des dépenses directes, nécessairement entraînées par la restructuration (IAS 37 §80).",
+        "Inexact : la mutation du personnel conservé se rattache à l'activité future et est exclue (§81)."
       ],
       "explanation": "La provision pour restructuration ne comprend que les dépenses directes, nécessairement entraînées par la restructuration et non liées aux activités poursuivies (IAS 37 §80) : les indemnités de licenciement en font partie. Sont expressément exclus la reconversion et la mutation du personnel conservé, le marketing, et les investissements dans de nouveaux systèmes ou réseaux de distribution (§81) : ces coûts se rattachent à la conduite future de l'activité.",
       "source_ref": "IAS 37 §80-81 (règlement UE 2023/1803)",

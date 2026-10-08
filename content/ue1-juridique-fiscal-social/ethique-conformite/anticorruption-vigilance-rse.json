@@ -23,6 +23,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : 450 salariés reste sous le seuil de 500 ; les conditions d'effectif et de chiffre d'affaires sont cumulatives.",
+        "Inexact : l'effectif est atteint, mais le chiffre d'affaires de 80 M€ ne dépasse pas 100 M€.",
+        "Inexact : 120 salariés est très en deçà du seuil de 500, malgré un chiffre d'affaires supérieur à 100 M€.",
+        "Exact : 650 salariés et 120 M€ remplissent les deux conditions cumulatives de l'article 17, I, de la loi Sapin 2."
+      ],
       "explanation": "Les deux conditions d'effectif et de chiffre d'affaires sont cumulatives (loi n° 2016-1691, art. 17, I). Seule la SA de 650 salariés et 120 M€ de chiffre d'affaires les remplit (option 4). La SA de l'option 1 et la SARL de l'option 3 ont moins de 500 salariés malgré un chiffre d'affaires élevé ; la SAS de l'option 2 a l'effectif requis mais un chiffre d'affaires inférieur à 100 M€. Même non assujetties, ces sociétés restent exposées au risque pénal de corruption et peuvent adopter volontairement un dispositif de conformité.",
       "source_ref": "Loi n° 2016-1691 du 9 déc. 2016, art. 17, I",
       "estimated_seconds": 60,
@@ -51,6 +57,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : la hiérarchie des canaux imposée en 2016 a été supprimée par la loi du 21 mars 2022.",
+        "Exact : depuis la loi n° 2022-401, le lanceur d'alerte choisit librement entre signalement interne et signalement externe à l'autorité compétente.",
+        "Inexact : la divulgation publique n'est qu'une voie subsidiaire, ouverte sous conditions, et non la condition de la protection.",
+        "Inexact : les informations obtenues dans le cadre de l'activité professionnelle sont précisément couvertes par la protection."
+      ],
       "explanation": "Depuis la loi du 21 mars 2022, le lanceur d'alerte choisit librement entre le signalement interne et le signalement externe auprès d'une autorité compétente (option 2) : la hiérarchie des canaux imposée en 2016 a été supprimée (option 1). La divulgation publique n'est qu'une voie subsidiaire, ouverte sous conditions (option 3). Les informations obtenues dans le cadre de l'activité professionnelle sont précisément couvertes, le lanceur d'alerte n'étant pas tenu d'en avoir eu personnellement connaissance dans ce cas (option 4).",
       "source_ref": "Loi n° 2016-1691, art. 6 et 8, mod. par la loi n° 2022-401 du 21 mars 2022",
       "estimated_seconds": 75,
@@ -211,6 +223,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : sous le seuil de cinquante salariés permanents, le comité de mission n'est pas obligatoire.",
+        "Exact : avec moins de cinquante salariés, un référent de mission peut remplacer le comité (L210-12) ; un organisme tiers indépendant vérifie l'exécution.",
+        "Inexact : toute société, quelle que soit sa forme (SAS, SARL, SA…), peut adopter la qualité de société à mission.",
+        "Inexact : l'AFA contrôle les programmes Sapin 2 ; le manquement entraîne la suppression de la mention « société à mission » en référé (L210-11)."
+      ],
       "explanation": "La société à mission inscrit dans ses statuts une raison d'être et des objectifs sociaux et environnementaux ; un comité de mission, distinct des organes sociaux, en suit l'exécution, et un organisme tiers indépendant vérifie cette exécution (C. com. L210-10). Les sociétés employant moins de cinquante salariés permanents peuvent prévoir dans leurs statuts qu'un référent de mission, qui peut être un salarié, se substitue au comité (L210-12) : c'est l'option 2.\nL'option 1 est fausse : le comité n'est pas obligatoire sous le seuil de cinquante salariés. L'option 3 est fausse : toute société, quelle que soit sa forme (SAS, SARL, SA…), peut adopter cette qualité. L'option 4 est fausse : l'AFA contrôle les programmes anticorruption de la loi Sapin 2 ; le manquement d'une société à mission est sanctionné par la suppression de la mention « société à mission », que le ministère public ou toute personne intéressée peut demander au président du tribunal statuant en référé (L210-11).",
       "source_ref": "C. com. art. L210-10 (conditions), L210-11 (suppression de la mention) et L210-12 (référent de mission sous 50 salariés) ; C. civ. art. 1835 (raison d’être)",
       "verified": true,

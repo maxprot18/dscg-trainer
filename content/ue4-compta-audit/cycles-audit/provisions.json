@@ -22,6 +22,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : l’évaluation supposerait d’examiner le montant provisionné pour chaque dossier, ce que ce test ne fait pas.",
+        "Inexact : l’existence se teste dans l’autre sens, des provisions comptabilisées vers les justificatifs de l’obligation.",
+        "Exact : partir des honoraires payés, source indépendante du registre, révèle un litige non recensé, donc non examiné pour provision.",
+        "Inexact : le rattachement des honoraires à l’exercice n’est pas l’objet du rapprochement avec le registre des litiges."
+      ],
       "explanation": "Partir d’une source indépendante du registre (les honoraires payés) pour vérifier que chaque dossier traité par un avocat figure au registre, et donc a été examiné pour provision, teste l’exhaustivité : un litige absent du registre serait révélé par les honoraires versés. L’option 1 (évaluation) supposerait d’examiner le montant provisionné de chaque dossier, ce que ce test ne fait pas. L’option 2 (existence) se teste dans l’autre sens, en partant des provisions comptabilisées vers les justificatifs de l’obligation. L’option 4 porte sur le rattachement des honoraires à l’exercice, qui n’est pas l’objet du rapprochement avec le registre.",
       "source_ref": "NEP 500 (assertions : exhaustivité) ; NEP 501 (litiges)",
       "estimated_seconds": 60,
@@ -48,6 +54,12 @@
       ],
       "answer": [
         0
+      ],
+      "option_explanations": [
+        "Exact : sans obligation envers un tiers née avant la clôture (PCG art. 322-1 s.), cette provision de lissage n’a pas de réalité.",
+        "Inexact : l’exhaustivité concerne au contraire une obligation existante non provisionnée.",
+        "Inexact : les droits et obligations visés ici portent sur les actifs détenus, non sur un passif.",
+        "Inexact : la séparation des exercices des produits porte sur leur rattachement, sans rapport avec cette provision."
       ],
       "explanation": "Une provision suppose une obligation envers un tiers née d’un événement antérieur à la clôture (PCG art. 322-1 s.). Ici aucune obligation n’existe : la provision n’a pas de réalité, ce qui met en cause l’existence du passif (et constitue une forme de lissage du résultat). L’option 2 (exhaustivité) concerne au contraire une obligation non provisionnée. L’option 3 vise les actifs détenus par l’entité, non un passif. L’option 4 porte sur le rattachement des produits, sans rapport avec la situation.",
       "source_ref": "NEP 500 (assertions sur les soldes : existence) ; PCG art. 322-1 s. (conditions de comptabilisation d’une provision)",
@@ -76,6 +88,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : l’obligation de payer 70 000 € existe toujours ; elle a seulement changé de nature.",
+        "Inexact : la transaction remplace la réclamation initiale ; le montant de 70 000 € est désormais fixé.",
+        "Inexact : l’énoncé ne fait état d’aucun intérêt de retard justifiant une provision complémentaire.",
+        "Exact : montant et échéance fixés par la transaction, l’incertitude disparaît : c’est une dette, et seul le classement est en cause."
       ],
       "explanation": "La transaction fixe le montant (70 000 €) et l’échéance : l’incertitude qui caractérise une provision a disparu, l’obligation devient une dette à présenter en dettes et non en provisions. Le résultat n’est pas affecté, seul le classement au bilan l’est. L’option 1 est fausse : l’obligation existe toujours, elle a seulement changé de nature. L’option 2 est fausse : la transaction remplace la réclamation initiale. L’option 3 suppose des intérêts de retard dont l’énoncé ne fait pas état.",
       "source_ref": "NEP 500 (assertions sur la présentation des comptes) ; PCG art. 321-1 s. (définition des passifs et des provisions)",
@@ -143,6 +161,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : le montant des provisions varie selon les entités ; il n’est pas toujours supérieur au seuil de signification.",
+        "Inexact : aucune confirmation n’est obligatoire en général ; la demande aux avocats répond à un risque sur les litiges.",
+        "Exact : leur montant dépend d’événements futurs ; incertitude, complexité et subjectivité accroissent le risque inhérent (NEP 540).",
+        "Inexact : le principe de prudence s’applique pleinement aux provisions."
+      ],
       "explanation": "La NEP 540 relie le risque inhérent d’une estimation à l’incertitude d’estimation, à sa complexité et à la subjectivité des hypothèses : c’est le cas des provisions, dont le montant dépend de l’issue d’événements futurs, alors qu’une dette fournisseur est justifiée par une facture d’un montant certain. L’option 1 est fausse : le montant des provisions varie selon les entités. L’option 2 est fausse : aucune confirmation n’est obligatoire de manière générale ; la demande aux avocats répond à un risque sur les litiges. L’option 4 est fausse : la prudence s’applique pleinement aux provisions.",
       "source_ref": "NEP 540 (facteurs de risque inhérent des estimations : incertitude, complexité, subjectivité)",
       "estimated_seconds": 50,
@@ -169,6 +193,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : un résultat excédentaire avec intéressement plafonné incite au contraire à surprovisionner.",
+        "Exact : avec un ratio à 2,9 pour un plafond de 3, la direction est incitée à limiter les dotations aux provisions.",
+        "Inexact : des reprises sans objet signalent plutôt des provisions excessives en N−1 ou un lissage.",
+        "Inexact : un registre des litiges rapproché trimestriellement est un contrôle qui réduit le risque d’omission, non un facteur de risque."
       ],
       "explanation": "Un covenant proche de son seuil incite la direction à limiter les charges, notamment les dotations aux provisions, pour ne pas le franchir : risque de sous-évaluation (exhaustivité, évaluation). L’option 1 décrit au contraire une incitation à surprovisionner (mettre en réserve le résultat excédentaire non rémunéré). L’option 3 signale plutôt des provisions excessives en N−1 ou un lissage. L’option 4 est un contrôle qui réduit le risque d’omission, non un facteur de risque.",
       "source_ref": "NEP 315 (facteurs de risque inhérent) ; NEP 540 (biais de la direction) ; NEP 240",
@@ -300,6 +330,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : le contrôle arithmétique vérifie le calcul des mouvements comptabilisés, pas l’omission d’un risque.",
+        "Exact : interroger ceux qui connaissent les dossiers et rapprocher leurs réponses des provisions détecte un risque non provisionné.",
+        "Inexact : l’autorisation des paiements est un contrôle du cycle trésorerie sur les décaissements.",
+        "Inexact : archiver les procès-verbaux conserve des documents sans recenser ni analyser les risques."
+      ],
       "explanation": "Le questionnaire d’arrêté recense, auprès de ceux qui connaissent les dossiers, les risques nés avant la clôture ; son rapprochement avec les provisions permet de détecter un risque non provisionné : il couvre l’exhaustivité. L’option 1 vérifie l’exactitude du calcul des mouvements comptabilisés, pas l’omission d’un risque. L’option 3 est un contrôle du cycle trésorerie sur les décaissements. L’option 4 est une conservation de documents, qui ne recense ni n’analyse les risques.",
       "source_ref": "NEP 315 (compréhension du contrôle interne) ; NEP 330",
       "estimated_seconds": 50,
@@ -328,6 +364,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : l’exhaustivité des ventes relèverait d’un rapprochement entre ventes et base de calcul, non décrit ici.",
+        "Inexact : l’existence de l’obligation découle des contrats de vente et des conditions de garantie, non de la comparaison des coûts.",
+        "Inexact : l’information en annexe n’est pas examinée par ce contrôle.",
+        "Exact : comparer coûts réels et montants provisionnés (backtesting) vérifie et corrige le taux statistique, donc le montant de la provision."
+      ],
       "explanation": "La confrontation des coûts réels aux provisions (backtesting) permet de vérifier que le taux statistique reste représentatif et de le corriger : elle porte sur le montant de la provision, donc son évaluation. L’option 1 relèverait d’un rapprochement entre ventes et base de calcul, qui n’est pas décrit. L’option 2 découle des contrats de vente et des conditions de garantie, non de la comparaison des coûts. L’option 3 concerne l’information en annexe, que ce contrôle n’examine pas.",
       "source_ref": "NEP 315 ; NEP 540 (contrôles relatifs au processus d’estimation)",
       "estimated_seconds": 60,
@@ -355,6 +397,12 @@
       ],
       "answer": [
         0
+      ],
+      "option_explanations": [
+        "Exact : le calcul de l’actuaire n’est fiable que si les données sont exhaustives et exactes ; ce rapprochement avec la paie le garantit.",
+        "Inexact : vérifier les diplômes renseigne sur la compétence de l’expert, pas sur la qualité des données transmises.",
+        "Inexact : transmettre le rapport au CAC est une communication d’information, non un contrôle interne.",
+        "Inexact : faite par celui qui saisit, cette comparaison manque d’indépendance et ne détecte pas une erreur de données stable."
       ],
       "explanation": "Le calcul de l’actuaire n’est fiable que si les données de base sont exhaustives et exactes : le rapprochement du fichier transmis avec la paie (effectifs, salaires) est le contrôle clé de l’entité. L’option 2 renseigne sur la compétence de l’expert, mais ne garantit pas la qualité des données. L’option 3 n’est pas un contrôle interne mais une transmission d’information. L’option 4, faite par la personne qui saisit, manque d’indépendance et ne détecte pas une erreur de données stable d’une année sur l’autre.",
       "source_ref": "NEP 315 ; NEP 540 (données utilisées pour l’estimation) ; recommandation ANC 2013-02",
@@ -477,6 +525,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : l’avocat, tenu au secret envers son client, ne peut répondre sans son accord ; le CAC passe par la direction.",
+        "Exact : la NEP 501 prévoit que la direction interroge ses avocats et communique leurs informations au CAC.",
+        "Inexact : une liste établie par la direction est une déclaration qui ne remplace pas l’avis des avocats.",
+        "Inexact : le CAC n’interroge pas l’avocat directement mais passe par la direction ; un échange oral ne laisserait en outre aucun écrit au dossier."
+      ],
       "explanation": "La NEP 501 prévoit que le commissaire aux comptes demande à la direction d’obtenir de ses avocats des informations sur les procès, contentieux et litiges et de les lui communiquer (option 2) ; l’avocat, tenu au secret professionnel envers son client, est interrogé par une lettre signée de la direction, sa réponse pouvant être adressée directement au commissaire aux comptes. Si la direction refuse d’interroger ses avocats ou de communiquer les informations obtenues, le commissaire aux comptes en tire les conséquences dans son rapport. L’option 1 est exclue : le commissaire aux comptes passe par la direction, l’avocat ne pouvant répondre sans l’accord de son client. L’option 3 revient à se fonder sur une déclaration de la direction, qui ne remplace pas l’avis des avocats. L’option 4 ne fournit pas d’élément écrit documentable dans le dossier.",
       "source_ref": "NEP 501 (procès, contentieux et litiges : informations obtenues des avocats)",
       "estimated_seconds": 45,
@@ -503,6 +557,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : cette option confond avec un événement nouveau postérieur à la clôture ; ce litige existait déjà en N.",
+        "Exact : le jugement éclaire une obligation existant à la clôture ; la provision passe à 95 000 €, soit 35 000 € de dotation complémentaire.",
+        "Inexact : reprendre la provision pour comptabiliser la condamnation en N+1 rattacherait à N+1 une charge relevant de N.",
+        "Inexact : maintenir 60 000 € laisse subsister une provision sous-évaluée de 35 000 €."
       ],
       "explanation": "Le litige existait à la clôture ; le jugement rendu avant l’arrêté apporte une information sur cette situation et doit être pris en compte (C. com. L123-20 : risques connus entre la clôture et l’établissement des comptes). La provision est portée à 95 000 €, soit une dotation complémentaire de 35 000 €. L’option 1 confond avec un événement nouveau postérieur à la clôture, qui seul relève de l’annexe. L’option 3 rattacherait à N+1 une charge relevant de N. L’option 4 laisse subsister une provision sous-évaluée de 35 000 €.",
       "source_ref": "NEP 560 (événements postérieurs à la clôture) ; C. com. L123-20 ; PCG art. 323-1 s.",
@@ -737,6 +797,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : cette option confond le montant réclamé par le client avec l’estimation de la sortie de ressources.",
+        "Exact : pour un litige unique, l’issue la plus vraisemblable estimée par l’avocat fonde la meilleure estimation de la sortie de ressources.",
+        "Inexact : une condamnation probable suffit à provisionner, sans attendre le jugement.",
+        "Inexact : la moyenne entre réclamation et estimation de l’avocat est arbitraire et sans fondement."
+      ],
       "explanation": "La provision est évaluée à la meilleure estimation de la sortie de ressources nécessaire pour éteindre l’obligation à la clôture ; pour un litige unique, l’issue la plus vraisemblable estimée par l’avocat (250 000 €) en est la base. L’option 1 confond réclamation et estimation. L’option 3 est fausse : la condamnation probable suffit, sans attendre le jugement. L’option 4 est une moyenne arbitraire sans fondement.",
       "source_ref": "PCG art. 323-1 s. (évaluation des provisions) ; NEP 540 ; NEP 501",
       "estimated_seconds": 60,
@@ -766,6 +832,12 @@
         1
       ],
       "multiple": true,
+      "option_explanations": [
+        "Exact : provision injustifiée, car les pertes d’exploitation futures ne résultent d’aucune obligation envers un tiers.",
+        "Exact : provision injustifiée, car les frais de formation futurs sont des charges de N+1, sans obligation existant à la clôture.",
+        "Inexact : provision justifiée, car la garantie accordée sur les ventes de N est une obligation contractuelle née avant la clôture.",
+        "Inexact : provision justifiée, car le litige existe et la sortie de ressources est probable et estimable."
+      ],
       "explanation": "Les options 1 et 2 ne sont pas justifiées : les pertes d’exploitation futures ne résultent d’aucune obligation envers un tiers, et les frais de formation futurs ne découlent d’aucune obligation existant à la clôture (ce sont des charges de N+1). L’option 3 est justifiée : la garantie accordée sur les ventes de N est une obligation contractuelle née avant la clôture. L’option 4 est justifiée : le litige existe, la sortie est probable et estimable.",
       "source_ref": "PCG art. 322-1 s. (conditions de comptabilisation des provisions)",
       "estimated_seconds": 75,

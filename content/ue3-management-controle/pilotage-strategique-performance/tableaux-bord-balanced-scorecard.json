@@ -24,6 +24,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : l'axe clients est l'un des quatre axes, avec les axes financier, processus internes et apprentissage.",
+        "Inexact : l'axe processus internes est l'un des quatre axes du balanced scorecard.",
+        "Inexact : l'apprentissage organisationnel est bien l'un des quatre axes du modèle.",
+        "Exact : la concurrence n'est pas un axe ; son analyse intervient en amont, dans la formulation de la stratégie que le scorecard traduit."
+      ],
       "explanation": "L'option 4 est exacte : le balanced scorecard de Kaplan et Norton comporte quatre axes : financier, clients, processus internes et apprentissage organisationnel. La concurrence et l'environnement ne forment pas un axe ; l'analyse concurrentielle intervient en amont, dans la formulation de la stratégie que le scorecard traduit. Les options 1, 2 et 3 sont fausses car ce sont bien trois des quatre axes du modèle."
     },
     {
@@ -50,6 +56,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : le tableau de bord mêle indicateurs financiers et non financiers ; c'est même l'une de ses forces.",
+        "Exact : outil d'aide à l'action du responsable, il s'oppose au reporting, remontée normalisée vers la hiérarchie pour rendre compte et contrôler.",
+        "Inexact : c'est l'inverse ; le tableau de bord privilégie la rapidité, le reporting, plus formalisé, est souvent mensuel.",
+        "Inexact : le tableau de bord est un outil interne facultatif, pas un document publié avec les comptes."
+      ],
       "explanation": "L'option 2 est exacte : le tableau de bord est un outil de pilotage pour le responsable (indicateurs choisis pour agir, souvent non financiers, disponibles rapidement), tandis que le reporting fait remonter vers la direction ou le siège des informations normalisées, surtout financières, pour rendre compte et contrôler. L'option 1 est fausse : le tableau de bord mêle indicateurs financiers et non financiers ; c'est même une de ses forces. L'option 3 est fausse : le tableau de bord privilégie la rapidité ; le reporting, plus formalisé, est souvent mensuel. L'option 4 est fausse : c'est un outil interne facultatif."
     },
     {
@@ -75,6 +87,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : le chiffre d'affaires constate a posteriori un résultat financier ; c'est un indicateur de résultat.",
+        "Inexact : le taux de réservations répétées mesure directement la fidélité visée, avec retard : indicateur de résultat.",
+        "Exact : le délai de traitement des réclamations mesure un processus qui conditionne la satisfaction, donc la fidélité future.",
+        "Inexact : la rentabilité du segment constate a posteriori un résultat financier."
       ],
       "explanation": "L'option 3 est exacte : le délai de traitement des réclamations mesure une action (un processus) qui conditionne la satisfaction et donc la fidélité future ; il permet d'agir avant que le résultat ne se dégrade. Les options 1 et 4 sont fausses : chiffre d'affaires et rentabilité constatent a posteriori des résultats financiers. L'option 2 est fausse : le taux de réservations répétées mesure directement la fidélité, c'est-à-dire le résultat visé sur l'axe clients, avec retard."
     },

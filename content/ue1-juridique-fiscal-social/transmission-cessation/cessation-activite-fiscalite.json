@@ -23,6 +23,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : pour un associé ayant souscrit ses titres à leur valeur d'apport, il n'y a pas de plus-value distincte.",
+        "Exact : le remboursement des apports n'est pas un revenu ; le boni de 220 000 € est un revenu distribué (CGI art. 112-1° et 161).",
+        "Inexact : la liquidation n'ouvre aucune exonération ; le boni est imposé comme un dividende.",
+        "Inexact : l'associé d'une SARL à l'IS ne relève pas des BIC à raison de sa quote-part ; le boni est un revenu distribué."
+      ],
       "explanation": "Le remboursement des apports n'est pas un revenu ; le boni de liquidation, c'est-à-dire l'excédent des sommes reçues sur les apports, est un revenu distribué imposé comme un dividende (CGI art. 112-1° et 161) : option 2. Pour un associé ayant souscrit ses titres à leur valeur d'apport, il n'y a pas de plus-value distincte (option 1). La liquidation n'ouvre aucune exonération (option 3). L'associé d'une SARL à l'IS ne relève pas des BIC à raison de sa quote-part (option 4).",
       "source_ref": "CGI art. 112-1° et 161 (boni de liquidation, revenu distribué)",
       "verified": true,
@@ -227,6 +233,12 @@
         0
       ],
       "multiple": false,
+      "option_explanations": [
+        "Exact : imposition immédiate ; avis dans les 45 jours et déclaration de résultat dans les 60 jours de la publication (CGI art. 201).",
+        "Inexact : l'option méconnaît le principe d'imposition immédiate des bénéfices non encore taxés en cas de cession.",
+        "Inexact : le délai de 6 mois est propre au décès de l'exploitant (art. 201, 4).",
+        "Inexact : confusion avec le délai d'opposition des créanciers du vendeur de fonds (10 jours du BODACC), règle de droit commercial."
+      ],
       "explanation": "En cas de cession ou de cessation, l'impôt sur le revenu dû sur les bénéfices non encore taxés est établi immédiatement : l'exploitant avise l'administration dans un délai de 45 jours et produit la déclaration de résultat dans un délai de 60 jours, ces délais courant à compter de la publication de la cession dans un journal d'annonces légales (option 1).\nL'option 2 méconnaît le principe d'imposition immédiate. L'option 3 retient le délai de 6 mois propre au décès de l'exploitant. L'option 4 confond avec le délai d'opposition des créanciers du vendeur de fonds de commerce (10 jours de la publication au BODACC), qui relève du droit commercial et non des obligations fiscales.",
       "source_ref": "CGI art. 201, 1 et 3 (imposition immédiate, avis dans les 45 jours, déclaration dans les 60 jours) ; art. 201, 4 (décès : six mois) ; C. com. art. L. 141-14 (opposition)",
       "verified": true,

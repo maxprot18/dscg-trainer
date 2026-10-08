@@ -21,6 +21,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : la dimension politique vise les choix des pouvoirs publics (stabilité, fiscalité, aides), pas une norme juridique en vigueur.",
+        "Inexact : la technologie rend la collecte possible, mais le fait décrit est son encadrement juridique.",
+        "Exact : le RGPD est un règlement européen, une règle de droit qui s'impose à l'entreprise : dimension légale.",
+        "Inexact : les attentes des consommateurs en matière de vie privée seraient socioculturelles ; l'énoncé décrit une obligation réglementaire."
+      ],
       "explanation": "L'option 3 est exacte : le RGPD est un règlement européen, c'est-à-dire une règle de droit qui s'impose à l'entreprise ; il relève de la dimension Légale de la grille PESTEL. L'option 1 est fausse : la dimension Politique vise les choix des pouvoirs publics (stabilité, politique fiscale, aides, orientations commerciales), pas le contenu d'une norme juridique en vigueur. L'option 2 est fausse : la collecte de données est rendue possible par la technologie, mais le fait décrit est l'encadrement juridique de cette collecte. L'option 4 est fausse : les attentes des consommateurs en matière de vie privée relèvent du socioculturel, alors que l'énoncé décrit une obligation réglementaire.",
       "source_ref": "Programme DSCG UE3 (arrêté du 4 août 2025), diagnostic externe ; grille PESTEL",
       "verified": true,
@@ -47,6 +53,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : des fournisseurs nombreux vendant un produit standardisé sont mis en concurrence ; leur pouvoir de négociation est faible.",
+        "Inexact : l'absence de coût de changement de fournisseur affaiblit le fournisseur, pas l'inverse.",
+        "Inexact : si le client fait l'essentiel du chiffre d'affaires du fournisseur, c'est le fournisseur qui dépend du client.",
+        "Exact : peu de fournisseurs, aucun substitut et un coût de changement élevé (requalification) rendent le fournisseur peu substituable, donc puissant."
+      ],
       "explanation": "L'option 4 est exacte : un fournisseur est en position de force quand il est peu substituable (peu de concurrents, composant indispensable sans équivalent) et que changer de fournisseur coûte cher au client (requalification, outillages). L'option 1 est fausse : des fournisseurs nombreux vendant un produit standardisé sont mis en concurrence, leur pouvoir est faible. L'option 2 est fausse : l'absence de coût de changement affaiblit le fournisseur. L'option 3 est fausse : lorsque le client représente l'essentiel du chiffre d'affaires du fournisseur, c'est le fournisseur qui dépend du client ; son pouvoir de négociation diminue.",
       "source_ref": "M. Porter, Competitive Strategy (1980), modèle des cinq forces",
       "verified": true,
@@ -72,6 +84,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : la croissance de la demande est un facteur d'environnement commun à tout le secteur ; elle faciliterait plutôt les déplacements.",
+        "Exact : réputation haut de gamme et actifs immobiliers spécifiques sont longs ou coûteux à reproduire : c'est une barrière à la mobilité.",
+        "Inexact : les plateformes entre particuliers sont des substituts, l'une des cinq forces, pas un obstacle au changement de groupe.",
+        "Inexact : la hausse des taux est un facteur économique du PESTEL qui touche tous les hôteliers, quel que soit leur groupe."
       ],
       "explanation": "L'option 2 est exacte : les barrières à la mobilité sont les obstacles propres au passage d'un groupe stratégique à un autre ; la réputation haut de gamme et les actifs immobiliers spécifiques (emplacements, standing) sont acquis par les hôtels de luxe et longs ou coûteux à reproduire. L'option 1 est fausse : la croissance de la demande est un facteur d'environnement qui concerne tout le secteur, et elle facilite plutôt les déplacements. L'option 3 est fausse : les plateformes de location entre particuliers sont des substituts, une des cinq forces, pas un obstacle au changement de groupe. L'option 4 est fausse : la hausse des taux est un facteur économique du PESTEL qui touche tous les acteurs, quel que soit leur groupe.",
       "source_ref": "M. Porter, Competitive Strategy (1980), analyse des groupes stratégiques ; R. Caves et M. Porter (1977), barrières à la mobilité",

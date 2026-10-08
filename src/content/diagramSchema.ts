@@ -7,7 +7,7 @@
  * - flow : enchaînement d'étapes ou de flux (cash pooling, affacturage) ;
  * - bars : comparaison de grandeurs (effet de levier, VAN selon le taux).
  */
-import { z } from 'zod'
+import { z } from '../lib/zod'
 
 const label = z.string().trim().min(1).max(80)
 const note = z.string().trim().min(1).max(160)

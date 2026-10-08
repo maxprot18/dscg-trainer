@@ -87,15 +87,15 @@
         {
           "id": "q5-pcg",
           "kind": "true_false",
-          "prompt": "Dans les comptes individuels établis selon le PCG, l’inscription à l’actif des frais de développement remplissant les conditions requises est obligatoire, comme en IFRS.",
+          "prompt": "Dans les comptes individuels établis selon le PCG, l’inscription à l’actif des frais de développement remplissant les conditions requises (hors solutions informatiques) est obligatoire, comme en IFRS.",
           "points": 1,
           "answer": false,
-          "explanation": "En règles françaises, l'activation des frais de développement remplissant les conditions est une option (qualifiée de méthode préférentielle) ; l'entité peut les maintenir en charges. C'est une divergence avec IAS 38, qui rend l'activation obligatoire dès que les critères sont remplis."
+          "explanation": "En règles françaises, l'activation des frais de développement remplissant les conditions est une option (l'activation y est qualifiée de méthode de référence, PCG art. 212-3) ; l'entité peut les maintenir en charges. C'est une divergence avec IAS 38, qui rend l'activation obligatoire dès que les critères sont remplis. Les solutions informatiques produites par l'entité, comme le logiciel de Delta, suivent un régime propre : leur activation est obligatoire en PCG (art. 611-3)."
         }
       ],
       "total_points": 12,
-      "explanation": "Le cas suit la logique d'IAS 38 pour un actif incorporel généré en interne : séparer la phase de recherche (charges) de la phase de développement (activation obligatoire une fois les six critères démontrés), déterminer le coût en ne retenant que les dépenses directement attribuables engagées après la date de respect des critères, puis amortir à compter de la mise en service. La dernière question rappelle que le PCG laisse le choix entre activation et charges.",
-      "source_ref": "IAS 38 §54-57, §65-67, §71 et §97 (règlement UE 2023/1803) ; PCG art. 212-3 (règl. ANC 2014-03) ; compte 2803",
+      "explanation": "Le cas suit la logique d'IAS 38 pour un actif incorporel généré en interne : séparer la phase de recherche (charges) de la phase de développement (activation obligatoire une fois les six critères démontrés), déterminer le coût en ne retenant que les dépenses directement attribuables engagées après la date de respect des critères, puis amortir à compter de la mise en service. La dernière question rappelle que le PCG laisse le choix entre activation et charges pour les frais de développement autres que les solutions informatiques.",
+      "source_ref": "IAS 38 §54-57, §65-67, §71 et §97 (règlement UE 2023/1803) ; PCG art. 212-3 et 611-3 (règl. ANC 2014-03) ; compte 2803",
       "verified": true,
       "estimated_seconds": 900
     },
@@ -121,7 +121,13 @@
       "answer": [
         2
       ],
-      "explanation": "Une immobilisation incorporelle à durée d'utilité indéterminée n'est pas amortie (IAS 38 §107) ; elle est soumise à un test de dépréciation chaque année et chaque fois qu'il existe un indice de perte de valeur (§108 ; IAS 36 §10). Le caractère indéterminé de la durée est réexaminé à chaque période (§109). IAS 38 ne fixe aucune durée plafond (20 ans) ; l'amortissement sur 10 ans faute d'estimation fiable est une règle propre au référentiel français, sans équivalent en IFRS. Un test seulement sur indice ne vaut que pour les actifs amortissables.",
+      "option_explanations": [
+        "Inexact : IAS 38 ne fixe aucune durée plafond de 20 ans ; une durée indéterminée exclut l'amortissement.",
+        "Inexact : l'amortissement sur 10 ans faute d'estimation fiable est propre au référentiel français (PCG art. 214-3), sans équivalent IFRS.",
+        "Exact : non amortie (IAS 38 §107), elle est testée chaque année et à chaque indice de perte de valeur (§108).",
+        "Inexact : le test seulement sur indice vaut pour les actifs amortissables ; ici, le test est au moins annuel."
+      ],
+      "explanation": "Une immobilisation incorporelle à durée d'utilité indéterminée n'est pas amortie (IAS 38 §107) ; elle est soumise à un test de dépréciation chaque année et chaque fois qu'il existe un indice de perte de valeur (§108 ; IAS 36 §10). Le caractère indéterminé de la durée est réexaminé à chaque période (§109). IAS 38 ne fixe aucune durée plafond (20 ans) ; l'amortissement sur 10 ans faute d'estimation fiable est une règle propre au référentiel français (fonds commercial à durée d'utilisation limitée, PCG art. 214-3), sans équivalent en IFRS. Un test seulement sur indice ne vaut que pour les actifs amortissables.",
       "source_ref": "IAS 38 §107-109 ; IAS 36 §10 (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 60
@@ -147,6 +153,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : une expertise, même indépendante et annuelle, ne remplace pas la référence à un marché actif (IAS 38 §75).",
+        "Inexact : le traitement par catégorie (§72) est une condition supplémentaire, non suffisante sans marché actif.",
+        "Inexact : le modèle n'est pas interdit en soi ; il reste possible pour des quotas ou licences négociables sur un marché actif.",
+        "Exact : la réévaluation exige une juste valeur fondée sur un marché actif (§75), en pratique exclu pour des marques uniques (§78)."
       ],
       "explanation": "Le modèle de la réévaluation n'est applicable à une immobilisation incorporelle que si la juste valeur peut être déterminée par référence à un marché actif (IAS 38 §75), ce qui est rare et en pratique exclu pour les marques, uniques par nature (§78). Une expertise ou une méthode des redevances ne suffit pas. Le traitement par catégorie (§72) est une condition supplémentaire, non suffisante. Le modèle n'est pas interdit en soi : il reste possible, par exemple, pour des quotas ou licences négociables sur un marché actif.",
       "source_ref": "IAS 38 §72, §75 et §78 (règlement UE 2023/1803)",

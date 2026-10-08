@@ -22,6 +22,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : l'unicité du numéro de facture est le rôle de la clé primaire de FACTURE (num_facture).",
+        "Inexact : plusieurs factures peuvent porter le même num_client ; c'est la traduction d'une association père-fils (un client, plusieurs factures).",
+        "Exact : la clé étrangère doit correspondre à une clé primaire existante de CLIENT ; c'est la contrainte d'intégrité référentielle.",
+        "Inexact : la clé étrangère évite au contraire de dupliquer les données du client (nom, adresse) dans chaque facture."
+      ],
       "explanation": "Une clé étrangère doit toujours correspondre à une valeur de clé primaire existante dans la table référencée : le SGBD refuse une facture pour un client inexistant, ou la suppression d'un client qui a encore des factures. C'est la contrainte d'intégrité référentielle. L'option 1 décrit le rôle de la clé primaire de FACTURE (num_facture). L'option 2 est fausse : rien n'empêche plusieurs factures d'avoir le même num_client, c'est justement la traduction d'une association père-fils (un client, plusieurs factures). L'option 4 est fausse : la clé étrangère évite au contraire de dupliquer les données du client (nom, adresse) dans chaque facture.",
       "source_ref": "Modèle relationnel (E. F. Codd) : contraintes d’intégrité d’entité et référentielle ; programme DSCG UE 5 (bases de données)",
       "verified": true,
@@ -48,6 +54,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : la 1FN exige des attributs atomiques, ce qui est le cas ; le mélange de deux objets relève de la 3FN.",
+        "Exact : clé simple, donc 2FN ; mais num_commande → id_client → nom_client est une dépendance transitive, interdite en 3FN.",
+        "Inexact : avec une clé primaire simple, aucun attribut ne peut dépendre d'une partie seulement de la clé.",
+        "Inexact : nom_client dépend de id_client, attribut non clé ; cette dépendance transitive exclut la 3FN."
       ],
       "explanation": "Les attributs sont atomiques : la table est en 1FN. La clé primaire est simple (num_commande) : aucun attribut ne peut dépendre d'une partie seulement de la clé, la table est donc en 2FN. En revanche, nom_client et ville_client dépendent de id_client, qui n'est pas la clé : il y a une dépendance transitive (num_commande → id_client → nom_client), interdite en 3FN. Conséquence : le nom du client est répété dans chaque commande, avec un risque d'incohérence. Solution : créer une table CLIENT(id_client, nom_client, ville_client) et garder #id_client dans COMMANDE. L'option 1 confond 1FN (atomicité) et mélange d'objets. L'option 3 est impossible avec une clé simple. L'option 4 ignore la dépendance transitive.",
       "source_ref": "Théorie de la normalisation (1FN, 2FN, 3FN) du modèle relationnel ; programme DSCG UE 5 (bases de données)",
@@ -172,6 +184,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : faire migrer seulement matricule dans PROJET limiterait chaque projet à un salarié, contrairement à la cardinalité (1,n).",
+        "Inexact : faire migrer seulement code_projet dans SALARIE limiterait chaque salarié à un projet, contrairement à la cardinalité (0,n).",
+        "Inexact : la table d'association est créée, mais nb_heures dépend du couple salarié-projet, pas du seul salarié.",
+        "Exact : une association n-n devient une table à clé composée des deux identifiants, qui reçoit sa propriété nb_heures."
       ],
       "explanation": "L'option 4 est la bonne : l'association a une cardinalité maximale n des deux côtés (n-n), elle devient donc une table dont la clé primaire est composée des identifiants des deux entités, et qui reçoit la propriété de l'association (nb_heures). Les options 1 et 2 traitent l'association comme une relation père-fils en faisant migrer une seule clé : chaque projet ne pourrait alors avoir qu'un salarié (option 1) ou chaque salarié qu'un projet (option 2), ce qui contredit les cardinalités. L'option 3 crée bien la table d'association mais place nb_heures dans SALARIE, alors que ce nombre dépend du couple salarié-projet et non du seul salarié.",
       "source_ref": "Méthode Merise : règles de passage du MCD au modèle relationnel (association n-n) ; modèle relationnel de Codd (1970)",

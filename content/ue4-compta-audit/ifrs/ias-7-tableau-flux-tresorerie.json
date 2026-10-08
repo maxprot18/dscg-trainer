@@ -23,6 +23,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : les actions sont exclues, leur valeur pouvant varier de façon non négligeable.",
+        "Exact : placement très liquide, risque négligeable, échéance de 3 mois au plus à l'acquisition (IAS 7 §7).",
+        "Inexact : le critère des 3 mois s'apprécie à la date d'acquisition, où l'échéance était de 2 ans, pas à la clôture.",
+        "Inexact : un dépôt de 12 mois bloqué n'est ni à court terme ni facilement convertible en trésorerie."
       ]
     },
     {
@@ -50,6 +56,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : présenter des flux fictifs de 2 M€ gonflerait artificiellement les flux d'investissement et de financement.",
+        "Inexact : aucune trésorerie n'est décaissée ; l'opération sans trésorerie est exclue du tableau (IAS 7 §43).",
+        "Exact : les opérations sans trésorerie sont exclues du tableau et font l'objet d'une information en annexe (IAS 7 §43-44).",
+        "Inexact : l'acquisition d'un entrepôt ne relève jamais des flux opérationnels, et elle n'a ici exigé aucune trésorerie."
       ]
     },
     {

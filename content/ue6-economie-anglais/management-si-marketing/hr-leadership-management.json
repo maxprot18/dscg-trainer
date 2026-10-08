@@ -22,6 +22,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Incorrect: dismissal for gross misconduct relates to the employee's behaviour, not to the disappearance of the position.",
+        "Incorrect: resigning is a decision taken by the employee, not by the company.",
+        "Incorrect: a promotion is a move to a higher position, whereas here the jobs disappear and the contracts are terminated.",
+        "Correct: employees are made redundant when the job itself disappears, here because the warehouse closes; \"laid off\" is a synonym."
+      ],
       "explanation": "Option 4 is correct: an employee is made redundant (licenciement pour motif économique) when the job itself disappears, here because the warehouse closes; \"to lay off\" is a common synonym. Option 1 is wrong: dismissal for gross misconduct (faute grave) relates to the employee's behaviour, not to the position. Option 2 is wrong: to resign (démissionner) is a decision taken by the employee. Option 3 is wrong: nothing in the situation suggests a move to a higher position.",
       "source_ref": "HR vocabulary: redundancy / dismissal / resignation (UK usage)",
       "verified": true,
@@ -48,6 +54,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Incorrect: pay is a hygiene factor; it prevents dissatisfaction but does not motivate durably, and salaries are already above market.",
+        "Correct: responsibility, achievement and recognition are Herzberg's motivators, the factors that create satisfaction and motivation.",
+        "Incorrect: working conditions are a hygiene factor, already satisfactory here; improving them will not create lasting motivation.",
+        "Incorrect: closer control reflects McGregor's Theory X and reduces autonomy, itself a source of motivation."
       ],
       "explanation": "Option 2 is correct: for Herzberg, motivators (achievement, recognition, responsibility, the work itself, advancement) are the factors that create satisfaction and motivation. Options 1 and 3 are wrong: pay and working conditions are hygiene factors; they prevent dissatisfaction but do not motivate durably, and here they are already satisfactory. Option 4 is wrong: closer control reflects McGregor's Theory X and tends to reduce autonomy, which is a source of motivation.",
       "source_ref": "Herzberg, Mausner and Snyderman, The Motivation to Work (1959): two-factor theory",

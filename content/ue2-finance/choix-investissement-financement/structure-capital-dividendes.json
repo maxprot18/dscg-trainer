@@ -25,6 +25,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : en marchés parfaits, l'actionnaire fabrique lui-même son dividende ; dividende neutre, seule la politique d'investissement crée de la valeur.",
+        "Inexact : un effet positif du dividende relève du signal ou de la théorie de l'agence, qui supposent des imperfections de marché.",
+        "Inexact : oublie qu'en marchés parfaits l'entreprise peut lever sans coût les fonds non conservés.",
+        "Inexact : en marchés parfaits, le taux de distribution est neutre ; un avantage à tout distribuer supposerait des imperfections (signal, coûts d'agence)."
+      ],
       "explanation": "En marchés parfaits, l'actionnaire peut se fabriquer lui-même le dividende qu'il souhaite en vendant ou en achetant des actions ; la politique de dividende est neutre (option 1) et seule la politique d'investissement crée de la valeur. Les options 2 et 4 relèvent de l'effet de signal ou de la théorie de l'agence, qui supposent des imperfections de marché. L'option 3 oublie qu'en marchés parfaits l'entreprise peut lever sans coût les fonds non conservés."
     },
     {
@@ -52,6 +58,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : ignore la prime exigée pour le risque financier ; c'est le CMPC qui reste à 10 %.",
+        "Inexact : applique la formule avec un IS de 25 % (facteur 1 − t), alors que l'énoncé exclut tout impôt.",
+        "Exact : k_cp = 10 % + (10 % − 5 %) × 0,5 = 12,5 % ; le CMPC reste égal à 10 %.",
+        "Inexact : confond le coût des capitaux propres et la moyenne des deux taux (10 % et 5 %)."
+      ],
       "explanation": "k_cp = k_u + (k_u − k_d) × D / C = 10 % + (10 % − 5 %) × 0,5 = 12,5 % (option 3). Les actionnaires exigent une prime pour le risque financier ; le CMPC reste égal à 10 % : (12,5 × 2 + 5 × 1) / 3 = 10. L'option 1 ignore l'augmentation du risque financier. L'option 2 applique la formule avec un IS de 25 %, hors hypothèse. L'option 4 confond le coût des capitaux propres et la moyenne des deux taux."
     },
     {
@@ -78,6 +90,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : l'indépendance de la valeur et de l'endettement est la thèse de Modigliani-Miller sans impôt.",
+        "Inexact : l'endettement maximal découle de Modigliani-Miller avec impôt, qui ignore les coûts de faillite.",
+        "Inexact : l'ordre autofinancement, dette, capital est la théorie du financement hiérarchique, sans ratio cible.",
+        "Exact : le compromis met en balance économies d'impôt sur les intérêts et coûts de détresse financière croissants : il existe un ratio cible."
       ],
       "explanation": "La théorie du compromis (option 4) met en balance les économies d'impôt sur les intérêts et les coûts de détresse financière (coûts de faillite directs et indirects, coûts d'agence de la dette), qui croissent avec l'endettement : il existe un ratio cible. L'option 1 correspond à Modigliani-Miller sans impôt. L'option 2 correspond à Modigliani-Miller avec impôt, qui ignore les coûts de faillite. L'option 3 décrit la théorie du financement hiérarchique, qui ne retient pas de ratio cible."
     },

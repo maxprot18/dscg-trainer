@@ -22,6 +22,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : le rapport complémentaire est remis par écrit au comité d'audit, au plus tard à la date du rapport sur les comptes (art. 11).",
+        "Inexact : l'assemblée reçoit le rapport sur les comptes, pas le rapport complémentaire.",
+        "Inexact : le rapport complémentaire n'est pas adressé systématiquement à l'autorité de supervision.",
+        "Inexact : il n'est pas publié ; ses informations détaillées sur l'audit (seuil, faiblesses du contrôle interne) restent confidentielles."
+      ],
       "explanation": "Le rapport complémentaire est remis par écrit au comité d'audit de l'EIP, au plus tard à la date du rapport sur les comptes (option 1). Il n'est pas présenté à l'assemblée (option 2), qui reçoit le rapport sur les comptes. Il n'est pas adressé systématiquement à l'autorité de supervision (option 3). Il n'est pas publié (option 4) : il contient des informations détaillées sur l'audit (seuil, faiblesses du contrôle interne) qui restent confidentielles.",
       "source_ref": "Règl. (UE) n° 537/2014 art. 11 (rapport complémentaire au comité d'audit)",
       "verified": true,
@@ -48,6 +54,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : l'opinion figure dans le rapport sur les comptes, dont elle est une partie essentielle.",
+        "Inexact : les points clés de l'audit sont une partie du rapport sur les comptes d'une EIP.",
+        "Exact : le seuil de signification des comptes pris dans leur ensemble figure dans le rapport complémentaire, non dans le rapport sur les comptes.",
+        "Inexact : les vérifications spécifiques sur le rapport de gestion sont une partie du rapport sur les comptes."
       ],
       "explanation": "Le montant du seuil de signification retenu pour les comptes pris dans leur ensemble figure dans le rapport complémentaire au comité d'audit, non dans le rapport sur les comptes destiné à l'assemblée (option 3). L'opinion (option 1), les points clés de l'audit (option 2) et les vérifications spécifiques (option 4) sont au contraire des parties du rapport sur les comptes.",
       "source_ref": "Règl. (UE) n° 537/2014 art. 10 et 11 ; NEP 700 ; NEP 320",
@@ -79,6 +91,12 @@
         2
       ],
       "multiple": true,
+      "option_explanations": [
+        "Exact : la déclaration d'indépendance fait partie du contenu du rapport complémentaire (règlement 537/2014, art. 11).",
+        "Inexact : le détail des rémunérations relève du rapport sur le gouvernement d'entreprise, établi par l'entité.",
+        "Exact : le rapport complémentaire mentionne les faiblesses significatives du contrôle interne et si la direction y a remédié.",
+        "Inexact : le CAC ne s'immisce pas dans la gestion et ne se prononce pas sur l'opportunité des choix de la direction."
+      ],
       "explanation": "Le rapport complémentaire comporte notamment la déclaration d'indépendance (option 1) et les faiblesses significatives du contrôle interne relevées, en précisant si la direction y a remédié (option 3). Le détail des rémunérations des mandataires sociaux (option 2) relève du rapport sur le gouvernement d'entreprise établi par l'entité, sur lequel le commissaire aux comptes intervient dans le cadre de ses vérifications spécifiques. Une opinion sur la stratégie (option 4) est exclue : le commissaire aux comptes ne s'immisce pas dans la gestion et ne se prononce pas sur l'opportunité des choix de la direction.",
       "source_ref": "Règl. (UE) n° 537/2014 art. 11 (contenu du rapport complémentaire)",
       "verified": true,

@@ -25,6 +25,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : pour une dette d'IS, le risque n'est pas qu'elle soit fictive mais mal calculée ou omise.",
+        "Inexact : la séparation des exercices porterait sur le rattachement de l'impôt au bon exercice, que le recalcul ne teste pas.",
+        "Exact : recalculer l'IS à partir du résultat fiscal vérifie que le montant comptabilisé en 695 est exact.",
+        "Inexact : la présentation concerne l'information en annexe, que ce travail n'examine pas."
+      ],
       "explanation": "Recalculer l'IS à partir du résultat fiscal permet de vérifier que le montant comptabilisé est exact : c'est l'évaluation (mesure). L'option 1 est inadaptée : pour une dette d'IS, le risque n'est pas qu'elle soit fictive mais qu'elle soit mal calculée ou omise. L'option 2 porterait sur le rattachement de l'impôt au bon exercice, que le recalcul ne teste pas. L'option 4 concerne l'information en annexe, non examinée ici."
     },
     {
@@ -52,6 +58,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : la réalité se testerait dans l'autre sens, des charges comptabilisées vers les avis d'imposition.",
+        "Inexact : la classification porte sur l'imputation au bon compte, que ce test ne vise pas en premier lieu.",
+        "Inexact : l'évaluation porte sur l'exactitude des dettes à la clôture, non sur l'enregistrement de chaque impôt dû.",
+        "Exact : partir des avis d'imposition, source indépendante de la comptabilité, vérifie que chaque impôt dû a été enregistré."
+      ],
       "explanation": "Le test part d'une source indépendante de la comptabilité (les avis d'imposition) pour vérifier que chaque impôt dû a été enregistré : c'est un test d'exhaustivité. La réalité (option 1) se testerait dans l'autre sens, en partant des charges comptabilisées pour remonter aux avis. La classification (option 2) porte sur l'imputation au bon compte, et l'évaluation (option 3) sur l'exactitude des montants des dettes à la clôture, que ce test ne vise pas en premier lieu."
     },
     {
@@ -78,6 +90,12 @@
       ],
       "answer": [
         0
+      ],
+      "option_explanations": [
+        "Exact : rapprocher le solde de la déclaration déposée et remonter aux factures justifiant la TVA déduite prouve l'existence du crédit.",
+        "Inexact : une déclaration de la direction est un élément interne qui ne suffit pas seul.",
+        "Inexact : le classement en autres créances relève de la présentation, pas de l'existence de la créance.",
+        "Inexact : la comparaison avec N−1 est une procédure analytique qui oriente les travaux sans prouver l'existence, la hausse étant attendue."
       ],
       "explanation": "L'existence d'un crédit de TVA se vérifie en le rapprochant de la déclaration déposée et en remontant aux factures qui justifient la TVA déduite (factures conformes, dépenses ouvrant droit à déduction). Une déclaration de la direction (option 2) est un élément interne qui ne suffit pas seul. Le classement au bilan (option 3) relève de la présentation, pas de l'existence. La comparaison avec N−1 (option 4) est une procédure analytique qui oriente les travaux mais ne prouve pas l'existence, d'autant que la hausse est attendue ici."
     },
@@ -145,6 +163,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : un changement de commissaire aux comptes à l'expiration du mandat n'est pas en soi un risque fiscal.",
+        "Exact : une proposition de rectification annonce un rappel possible, pouvant exiger une provision pour impôts (1523) et une information en annexe.",
+        "Inexact : verser les acomptes d'IS aux échéances légales est plutôt un signe de bonne gestion.",
+        "Inexact : un déménagement peut modifier les taxes locales mais n'indique pas en soi une anomalie."
+      ],
       "explanation": "Une proposition de rectification signale un rappel d'impôt possible, avec intérêts de retard et majorations, qui peut nécessiter une provision pour impôts (1523) et une information en annexe : c'est un facteur de risque direct sur l'exhaustivité et l'évaluation des passifs fiscaux. Le changement de commissaire aux comptes (option 1) n'est pas en soi un risque fiscal. Le paiement des acomptes aux échéances (option 3) est plutôt un signe de bonne gestion. Le déménagement dans des locaux loués (option 4) peut modifier les taxes locales mais n'indique pas en soi une anomalie."
     },
     {
@@ -172,6 +196,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : ces procédures limitées s'appliquent aux autres textes ; la législation fiscale a une incidence directe sur les comptes.",
+        "Inexact : l'audit n'a pas pour objet de rechercher toutes les infractions commises par l'entité.",
+        "Exact : la législation fiscale a une incidence directe sur les montants ; la NEP 250 impose d'en collecter des éléments suffisants et appropriés.",
+        "Inexact : l'intervention d'un expert-comptable dans les déclarations ne dispense pas le CAC de ses propres travaux."
+      ],
       "explanation": "La NEP 250 distingue les textes qui ont une incidence directe sur les montants des comptes (législation fiscale et sociale, par exemple) et les autres textes. Pour les premiers, le CAC collecte des éléments suffisants et appropriés sur leur respect. L'option 1 décrit les procédures limitées applicables aux autres textes. L'option 2 est excessive : l'audit n'a pas pour objet de rechercher toutes les infractions. L'option 4 est fausse : l'intervention d'un tiers dans la préparation des déclarations ne dispense pas le CAC de ses propres travaux."
     },
     {
@@ -198,6 +228,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : cette option confond l'exonération de la livraison chez le vendeur et l'imposition de l'acquisition chez l'acheteur.",
+        "Inexact : cette option oublie la déduction simultanée (44566) qui neutralise la TVA due (4452) en cas de droit à déduction intégral.",
+        "Inexact : le fournisseur allemand facture hors taxe ; c'est l'acquéreur qui autoliquide la TVA.",
+        "Exact : TVA due (4452) et déductible (44566) se compensent, mais l'omission reste un manquement déclaratif sanctionnable (NEP 250)."
       ],
       "explanation": "Pour une acquisition intracommunautaire, l'acquéreur est redevable de la TVA : il la constate comme due (4452) et, s'il a un droit à déduction intégral, la déduit simultanément (44566). L'omission ne change donc pas la TVA nette, mais c'est une non-conformité déclarative qui peut être sanctionnée (risque NEP 250). L'option 1 confond l'exonération de la livraison chez le vendeur et l'imposition de l'acquisition chez l'acheteur. L'option 2 oublie la déduction simultanée. L'option 3 est fausse : le fournisseur facture hors taxe, c'est l'acquéreur qui autoliquide."
     },
@@ -345,6 +381,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : l'archivage assure la conservation des déclarations, pas l'exactitude des montants déclarés.",
+        "Inexact : le prélèvement automatique prévient les retards de paiement mais ne garantit pas que le montant déclaré est juste.",
+        "Inexact : un rappel d'échéance prévient les retards de dépôt, sans contrôler le montant déclaré.",
+        "Exact : le rapprochement comptes de TVA / déclaration, revu par une personne indépendante du préparateur avant dépôt, détecte les erreurs de montant."
+      ],
       "explanation": "Le rapprochement des comptes de TVA avec la déclaration, revu par une personne indépendante du préparateur avant dépôt, permet de détecter les erreurs de montant : c'est un contrôle clé sur l'exactitude. L'archivage (option 1) assure la conservation, pas l'exactitude. Le prélèvement automatique (option 2) et le rappel d'échéance (option 3) préviennent les retards de paiement ou de dépôt, mais ne garantissent pas que le montant déclaré est juste."
     },
     {
@@ -371,6 +413,12 @@
       ],
       "answer": [
         0
+      ],
+      "option_explanations": [
+        "Exact : un contrôle automatisé reste constant tant que le paramétrage est inchangé ; les contrôles généraux informatiques le vérifient sur la période.",
+        "Inexact : vérifier les taux à la seule clôture ne couvre pas d'éventuelles modifications du paramétrage en cours d'exercice.",
+        "Inexact : selon la NEP 330, le CAC ne s'appuie sur un contrôle qu'après l'avoir testé, quelle que soit la réputation du progiciel.",
+        "Inexact : recalculer toutes les factures est un test de détail exhaustif, contraire à la démarche d'appui sur le contrôle."
       ],
       "explanation": "Un contrôle automatisé s'exécute de façon constante tant que le paramétrage n'est pas modifié : l'auditeur vérifie le paramétrage et teste les contrôles généraux informatiques (accès, gestion des changements) pour s'assurer qu'il est resté inchangé et fiable sur toute la période. L'option 2 ne couvre pas d'éventuelles modifications en cours d'exercice. L'option 3 est contraire à la NEP 330 : le CAC ne s'appuie sur un contrôle qu'après l'avoir testé. L'option 4 est un test de détail exhaustif, qui ne relève pas de la démarche d'appui sur le contrôle visée ici."
     },
@@ -500,6 +548,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : un test de procédures porterait sur l'exécution d'un contrôle, non sur la comparaison d'une attente avec le réalisé.",
+        "Exact : construire un IS théorique et expliquer l'écart avec le réalisé est une procédure analytique substantive (NEP 520).",
+        "Inexact : aucune demande n'est adressée à un tiers ; ce n'est pas une confirmation externe.",
+        "Inexact : menée avec une attente précise et des écarts expliqués et corroborés, la preuve d'impôt a une valeur probante."
       ],
       "explanation": "La preuve d'impôt construit une attente (IS théorique) et analyse l'écart avec le réalisé : c'est une procédure analytique substantive au sens de la NEP 520, qui apporte des éléments sur l'exactitude de la charge d'IS. Ce n'est pas un test de procédures (option 1), qui porterait sur l'exécution d'un contrôle. Aucune demande n'est adressée à un tiers (option 3). L'option 4 est fausse : menée avec une attente précise et des écarts expliqués et corroborés, elle a une valeur probante."
     },
@@ -742,6 +796,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : débiter le 695 doublerait la charge lorsque l'IS dû sera comptabilisé à la clôture.",
+        "Inexact : le compte 6351 enregistre les impôts directs autres que l'impôt sur les sociétés.",
+        "Exact : l'acompte est une avance sur l'IS de l'exercice, portée au débit du 444, crédité de l'IS dû à la clôture.",
+        "Inexact : le 4481 (État – charges à payer) sert aux impôts non encore liquidés, pas aux acomptes versés."
+      ],
       "explanation": "L'acompte est une avance sur l'impôt de l'exercice : il se porte au débit du 444, qui sera crédité de l'IS dû à la clôture (débit 695). Le débiter en 695 (option 1) doublerait la charge lors de la comptabilisation de l'IS dû. Le 6351 (option 2) enregistre les impôts directs autres que l'IS. Le 4481 (option 4, « État – charges à payer ») sert aux charges à payer d'impôts non encore liquidés, pas aux acomptes."
     },
     {
@@ -768,6 +828,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : un même interlocuteur, l'État, ne justifie pas la compensation entre postes d'actif et de passif.",
+        "Exact : l'article L123-19 interdit la compensation ; la créance d'IS figure à l'actif et la dette de TVA au passif.",
+        "Inexact : la créance d'IS existe à la clôture ; son remboursement ou son imputation suit la liquidation, sans l'annuler.",
+        "Inexact : une mention en annexe ne régularise pas une présentation contraire au principe de non-compensation."
       ],
       "explanation": "Le Code de commerce interdit la compensation entre postes d'actif et de passif : la créance d'IS (excédent d'acomptes) figure à l'actif et la dette de TVA au passif. Le fait que l'État soit le même interlocuteur (option 1) ne justifie pas la compensation. La créance existe à la clôture et ne doit pas être annulée (option 3) : son remboursement ou son imputation suit la liquidation. Une mention en annexe (option 4) ne régularise pas une présentation contraire au principe de non-compensation."
     },
@@ -796,6 +862,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : des livraisons exonérées comptées à tort gonfleraient la TVA théorique, d'où une TVA déclarée inférieure, écart inverse.",
+        "Inexact : la TVA des prestations non encaissées n'est pas encore déclarée, ce qui produit un écart dans l'autre sens.",
+        "Inexact : des exportations exonérées comptées à tort gonfleraient la TVA théorique, ce qui expliquerait l'écart inverse.",
+        "Exact : la TVA sur prestations est exigible à l'encaissement de l'acompte, déclarée avant la comptabilisation du chiffre d'affaires."
       ],
       "explanation": "Pour les prestations de services, la TVA est exigible à l'encaissement, y compris celui d'un acompte : elle est déclarée alors que le chiffre d'affaires n'est pas encore comptabilisé, d'où une TVA déclarée supérieure à la TVA théorique. Les options 1 et 3 gonfleraient la TVA théorique (opérations exonérées comptées à tort) et expliqueraient une TVA déclarée inférieure à la théorique. L'option 2 retarde l'exigibilité : la TVA des prestations non encaissées n'est pas encore déclarée, ce qui produit aussi un écart dans l'autre sens."
     },

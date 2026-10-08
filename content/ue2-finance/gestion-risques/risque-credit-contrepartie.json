@@ -26,6 +26,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : multiplie par le taux de recouvrement (40 %) au lieu de la perte en cas de défaut (60 %).",
+        "Exact : perte attendue = 2 000 000 × 3 % × (1 − 40 %) = 36 000 €.",
+        "Inexact : suppose une perte totale en cas de défaut, sans aucun recouvrement.",
+        "Inexact : perte en cas de défaut certain (2 000 000 × 60 %), sans tenir compte de la probabilité de 3 %."
+      ],
       "explanation": "Perte attendue = exposition × probabilité de défaut × perte en cas de défaut, avec LGD = 1 − 40 % = 60 % : 2 000 000 × 3 % × 60 % = 36 000 € (option 2). L’option 1 multiplie par le taux de recouvrement (40 %) au lieu de la perte en cas de défaut. L’option 3 suppose une perte totale en cas de défaut (aucun recouvrement). L’option 4 est la perte en cas de défaut certain (2 000 000 × 60 %), sans tenir compte de la probabilité."
     },
     {
@@ -53,6 +59,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : l'assurance-crédit couvre la défaillance des clients, pas l'accès au financement.",
+        "Exact : une ligne confirmée engage la banque à prêter pendant sa durée, même si le marché se tend : réserve de liquidité fiable.",
+        "Inexact : une facilité non confirmée peut être réduite ou retirée par la banque précisément en période de tension.",
+        "Inexact : le swap gère le risque de taux, sans effet sur la disponibilité des fonds."
+      ],
       "explanation": "Une ligne confirmée engage la banque à prêter pendant sa durée, même si le marché se tend : c’est une réserve de liquidité fiable (option 2). L’option 3 n’apporte pas cette sécurité, la banque pouvant réduire ou retirer une facilité non confirmée précisément en période de tension. L’assurance-crédit (option 1) couvre le risque de défaillance des clients, pas l’accès au financement, même si elle limite les impayés. Le swap (option 4) gère le risque de taux, sans effet sur la disponibilité des fonds."
     },
     {

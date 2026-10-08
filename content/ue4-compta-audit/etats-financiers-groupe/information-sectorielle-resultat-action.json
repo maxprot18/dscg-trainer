@@ -21,6 +21,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : cette approche confond organisation juridique et pilotage interne ; IFRS 8 retient l'approche de la direction.",
+        "Exact : approche de la direction ; le secteur est une composante dont les résultats sont examinés par le principal décideur opérationnel (IFRS 8 §5).",
+        "Inexact : la norme n'impose aucune double segmentation ; les informations géographiques sont demandées à l'échelle de l'entité (§33).",
+        "Inexact : le seuil de 10 % (§13) détermine quels secteurs présenter séparément, pas comment les identifier."
+      ],
       "explanation": "IFRS 8 retient l'approche de la direction : un secteur opérationnel est une composante qui exerce des activités génératrices de produits et de charges, dont les résultats sont régulièrement examinés par le principal décideur opérationnel et pour laquelle des informations financières distinctes sont disponibles (§5) ; l'option 2 est donc exacte. L'option 1 confond organisation juridique et pilotage interne. L'option 3 décrit une segmentation imposée que la norme ne prévoit pas (les informations géographiques ne sont demandées qu'à l'échelle de l'entité, §33). L'option 4 confond l'identification des secteurs avec les seuils quantitatifs de 10 % (§13), qui servent à déterminer quels secteurs doivent être présentés séparément.",
       "source_ref": "IFRS 8 §5, §13 et §33 (règlement UE 2023/1803)",
       "verified": true,
@@ -46,6 +52,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : se limiter au test des produits (≥ 1 000) oublie C, retenu par son résultat (180 ≥ 84), et D, retenu par ses actifs.",
+        "Inexact : cette réponse oublie le test des actifs : D, avec 1 300 sur 10 000, dépasse 10 %.",
+        "Exact : produits ≥ 1 000 pour A et B ; résultat ≥ 84 (10 % × 840) pour C ; actifs ≥ 1 000 pour D.",
+        "Inexact : F reste sous tous les seuils : perte de 70 inférieure à 84, produits de 450, actifs de 600."
       ],
       "explanation": "Totaux : produits 10 000, actifs 10 000 ; résultats bénéficiaires cumulés 600 + 150 + 50 + 40 = 840, pertes cumulées 180 + 70 = 250. Seuils (§13) : produits ≥ 1 000 → A et B ; résultat en valeur absolue ≥ 10 % × 840 = 84 (le plus élevé des deux cumuls) → A, B et C (180) ; actifs ≥ 1 000 → A, B et D (1 300). Les secteurs A, B, C et D atteignent donc au moins un seuil (option 3). L'option 1 ne teste que les produits ; l'option 2 oublie le critère des actifs ; l'option 4 retient F, dont la perte (70) est inférieure à 84 et dont produits et actifs sont sous les seuils.",
       "source_ref": "IFRS 8 §13 (règlement UE 2023/1803)",
@@ -163,18 +175,18 @@
           "kind": "open",
           "prompt": "Expliquez pourquoi l'ordre d'intégration des instruments potentiellement dilutifs importe et ce qu'il advient d'un instrument relutif. Indiquez où le résultat par action est présenté.",
           "points": 4,
-          "model_answer": "Le résultat dilué doit refléter la dilution maximale. IAS 33 §44 impose donc d'intégrer les actions potentielles de la plus dilutive à la moins dilutive, en comparant le résultat par action incrémental de chaque instrument au résultat par action obtenu au palier précédent. Un instrument dont le résultat incrémental est supérieur à ce palier augmenterait le résultat par action ou réduirait la perte par action : il est relutif (antidilutif) et n'est pas pris en compte (§41). Ici, les options (0 €) puis les obligations convertibles (0,60 €) sont toutes deux dilutives. Le résultat de base et le résultat dilué par action, calculés sur le résultat attribuable aux porteurs d'actions ordinaires de la mère, sont présentés au compte de résultat, avec la même importance (§66).",
+          "model_answer": "Le résultat dilué doit refléter la dilution maximale. IAS 33 §44 impose donc d'intégrer les actions potentielles de la plus dilutive à la moins dilutive, en comparant le résultat par action incrémental de chaque instrument au résultat par action obtenu au palier précédent. Un instrument dont le résultat incrémental est supérieur à ce palier augmenterait le résultat par action ou réduirait la perte par action : il est relutif (antidilutif) et n'est pas pris en compte (§41). Ici, les options (0 €) puis les obligations convertibles (0,60 €) sont toutes deux dilutives. Le résultat de base et le résultat dilué par action, calculés sur le résultat attribuable aux porteurs d'actions ordinaires de la mère, sont présentés dans l'état du résultat net (le « compte de résultat »), avec la même importance (§66 et §67A).",
           "key_points": [
             "Classement du plus dilutif au moins dilutif (IAS 33 §44)",
             "Comparaison du résultat incrémental au palier précédent",
             "Instrument relutif exclu (IAS 33 §41)",
-            "Présentation au compte de résultat du RPA de base et dilué (IAS 33 §66)"
+            "Présentation du RPA de base et dilué dans l'état du résultat net (IAS 33 §66, §67A)"
           ]
         }
       ],
       "total_points": 12,
       "explanation": "Le résultat dilué part du résultat de base, ajusté des effets nets d'impôt des actions potentielles au numérateur et des actions supplémentaires au dénominateur, en intégrant les instruments par ordre décroissant de dilution et en écartant les instruments relutifs.",
-      "source_ref": "IAS 33 §10, §31-33, §36, §41, §44-46 et §66 (règlement UE 2023/1803)",
+      "source_ref": "IAS 33 §10, §31-33, §36, §41, §44-46, §66 et §67A (règlement UE 2023/1803)",
       "verified": true,
       "estimated_seconds": 720
     }

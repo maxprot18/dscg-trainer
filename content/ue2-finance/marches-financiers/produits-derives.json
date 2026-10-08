@@ -25,6 +25,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : le future est standardisé, coté sur un marché organisé ; la chambre de compensation s'interpose et les appels de marge sont quotidiens.",
+        "Inexact : le contrat sur mesure de gré à gré décrit le forward.",
+        "Inexact : décrit une option ; future et forward sont des engagements fermes.",
+        "Inexact : la plupart des futures sont soldés par une opération inverse avant l'échéance ; certains se dénouent en espèces."
+      ],
       "explanation": "L'option 1 est correcte : le future est standardisé (sous-jacent, échéance, taille), coté sur un marché organisé, et la chambre de compensation s'interpose entre acheteur et vendeur ; les gains et pertes sont réglés chaque jour par les appels de marge, ce qui supprime le risque de contrepartie bilatéral. L'option 2 décrit le forward. L'option 3 décrit une option, alors que future et forward sont des engagements fermes. L'option 4 est fausse : la plupart des futures sont soldés par une opération inverse avant l'échéance, et certains (sur indice) se dénouent en espèces."
     },
     {
@@ -51,6 +57,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : effet inverse ; payer le fixe et recevoir le variable fait perdre si les taux baissent, sans rendre variable une dette déjà fixe.",
+        "Exact : recevoir le fixe compense le coupon de 4,5 % ; la dette devient synthétiquement variable et profitera de la baisse des taux.",
+        "Inexact : inversé ; vendre des futures obligataires rapporte si les taux montent, contrairement à l'anticipation.",
+        "Inexact : le cap protège un emprunteur à taux variable contre la hausse des taux, ce qui ne correspond pas à la situation."
       ],
       "explanation": "L'option 2 est correcte : en recevant le fixe et en payant le variable, Norbelle compense le coupon fixe de son emprunt et supporte au total un coût variable (Euribor + différence entre 4,5 % et le taux fixe du swap) : sa dette est synthétiquement transformée en dette à taux variable, qui bénéficiera de la baisse des taux. L'option 1 produit l'effet inverse (fixer un coût déjà fixe et ajouter une exposition opposée). L'option 3 est inversée : vendre des futures obligataires rapporte si le prix des obligations baisse, c'est-à-dire si les taux montent, ce qui va à l'encontre de l'anticipation de Norbelle (et ne transforme pas durablement sa dette, les futures étant à renouveler par échéances trimestrielles). L'option 4 protège un emprunteur à taux variable contre la hausse des taux, ce qui ne correspond pas à la situation."
     },

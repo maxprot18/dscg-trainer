@@ -24,6 +24,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : fixer les taux directeurs relève de la BCE (politique monétaire).",
+        "Exact : C. mon. fin. art. L621-1 : l'AMF veille à la protection de l'épargne, à l'information des investisseurs et au bon fonctionnement des marchés.",
+        "Inexact : le contrôle prudentiel des banques et assurances relève de l'ACPR.",
+        "Inexact : relève des teneurs de compte-conservateurs et du dépositaire central (Euroclear France), pas du régulateur."
+      ],
       "explanation": "L'option 2 est correcte : selon l'article L621-1 du Code monétaire et financier, l'AMF, autorité publique indépendante, veille à la protection de l'épargne investie en instruments financiers, à l'information des investisseurs et au bon fonctionnement des marchés. L'option 1 relève de la BCE (politique monétaire). L'option 3 relève de l'ACPR (contrôle prudentiel des banques et assurances). L'option 4 relève des teneurs de compte-conservateurs et du dépositaire central (Euroclear France), pas du régulateur."
     },
     {
@@ -51,6 +57,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : le test du caractère approprié, moins exigeant, vise les autres services ; il ne suffit pas en cas de conseil.",
+        "Exact : le conseil exige l'évaluation de l'adéquation (MiFID II, art. 25 §2) : connaissances, expérience, situation financière et objectifs du client.",
+        "Inexact : le passage en client professionnel suppose des critères et une demande du client, jamais une décision unilatérale.",
+        "Inexact : le conseil en investissement est un service d'investissement visé par la directive."
+      ],
       "explanation": "L'option 2 décrit l'évaluation de l'adéquation, exigée pour le conseil en investissement et la gestion de portefeuille : le prestataire collecte les informations sur les connaissances et l'expérience, la situation financière et les objectifs du client, et ne recommande que des produits adaptés. L'option 1 correspond au test du caractère approprié, moins exigeant, prévu pour les autres services (réception-transmission d'ordres sur produits complexes) ; il ne suffit pas en cas de conseil. L'option 3 est fausse : le passage en catégorie professionnelle suppose des critères et une demande du client, jamais une décision unilatérale pour alléger la protection. L'option 4 est fausse : le conseil en investissement est un service d'investissement visé par la directive."
     },
     {
@@ -77,6 +89,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : une information peut être précise sans être définitive ni arrêtée.",
+        "Inexact : le suivi par les analystes ne rend pas publique une information interne.",
+        "Exact : information précise, non publique, concernant l'émetteur et susceptible d'influencer sensiblement le cours (MAR, art. 7).",
+        "Inexact : la manipulation suppose un comportement trompeur (ordres, diffusion) ; détenir une information n'en est pas une."
       ],
       "explanation": "L'option 3 est correcte : l'information est précise (ampleur chiffrée de l'écart), non publique, concerne directement l'émetteur et, publiée, influencerait sensiblement le cours (critères de l'art. 7 MAR). Le directeur financier ne peut ni négocier les titres, ni recommander de le faire, ni communiquer l'information hors du cadre normal de ses fonctions ; l'émetteur doit la publier dès que possible (art. 17), sauf différé encadré. L'option 1 est fausse : une information peut être précise sans être définitive ou arrêtée. L'option 2 est fausse : le suivi par les analystes ne rend pas publique une information interne. L'option 4 confond : la manipulation de marché suppose un comportement (ordres, diffusion d'informations) donnant des indications fausses ou trompeuses ; la simple détention d'une information n'en est pas une."
     },

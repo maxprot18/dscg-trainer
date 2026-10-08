@@ -22,6 +22,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : le contrôle étant conservé, c'est une transaction entre propriétaires (IFRS 10 §23) ; l'écart avec le prix va en capitaux propres part du groupe.",
+        "Inexact : le goodwill n'est déterminé qu'une fois, à la prise de contrôle.",
+        "Inexact : sans perte de contrôle, aucun résultat n'est constaté ; l'écart est imputé sur les capitaux propres (§B96).",
+        "Inexact : les actifs et passifs d'Isard ne sont pas réévalués à nouveau lors d'un rachat de minoritaires."
+      ],
       "explanation": "Option 1 : le contrôle étant conservé, la variation de pourcentage est une transaction avec les propriétaires agissant en cette qualité (IFRS 10 §23) : les PNC sont diminuées et l'écart avec le prix payé est imputé sur les capitaux propres part du groupe (§B96). Le goodwill n'est déterminé qu'une fois, à la prise de contrôle (option 2 fausse) ; aucun résultat n'est constaté (option 3 fausse) ; les actifs ne sont pas réévalués à nouveau (option 4 fausse).",
       "source_ref": "IFRS 10 §23 et §B96 (règlement UE 2023/1803)",
       "verified": true,
@@ -48,6 +54,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : 1 400 000 − 70 % × 1 500 000 = 350 000 oublie la réévaluation des 30 % conservés à leur juste valeur.",
+        "Inexact : l'imputation en capitaux propres est réservée aux variations de pourcentage sans perte de contrôle ; le montant oublie aussi la réévaluation.",
+        "Exact : perte de contrôle, part conservée à juste valeur ; 1 400 000 + 600 000 − 1 500 000 = 500 000 € en résultat.",
+        "Inexact : le montant est juste, mais la perte de contrôle se traduit en résultat, pas en capitaux propres."
       ],
       "explanation": "Option 3 : la perte de contrôle entraîne la sortie de tous les actifs et passifs de Geysir, goodwill compris (1 500 000 €) ; la participation conservée est réévaluée à sa juste valeur (600 000 €), qui devient son coût d'entrée en mise en équivalence. Résultat = 1 400 000 + 600 000 − 1 500 000 = 500 000 € en résultat (IFRS 10 §25 et §B98). L'option 1 oublie la réévaluation des 30 % conservés (1 400 000 − 70 % × 1 500 000) ; les options 2 et 4 appliquent à tort le traitement en capitaux propres réservé aux variations de pourcentage sans perte de contrôle.",
       "source_ref": "IFRS 10 §25, §B98 et §B99 (règlement UE 2023/1803)",

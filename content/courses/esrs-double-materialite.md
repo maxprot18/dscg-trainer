@@ -21,7 +21,7 @@
 ```
 
 ## Exemple
-Tilleul SA (chiffre d'affaires net 130 M€) publie selon E1, en tCO₂e : scope 1 = 4 500 (chaudières et flotte) ; scope 2 = 1 800 selon la méthode fondée sur la localisation et 600 selon la méthode fondée sur le marché (contrats d'électricité renouvelable) ; scope 3 = 21 000 (achats, transport amont, utilisation des produits) ; crédits carbone annulés dans l'exercice = 1 500. Total brut « localisation » = 4 500 + 1 800 + 21 000 = 27 300 tCO₂e ; total brut « marché » = 4 500 + 600 + 21 000 = 26 100 tCO₂e, publié à côté. Intensité = 27 300 ÷ 130 = 210 tCO₂e par M€ de chiffre d'affaires. Les 1 500 tCO₂e de crédits figurent dans E1-7 et ne réduisent aucun de ces totaux (25 800 serait faux).
+Tilleul SA (chiffre d'affaires net 525 M€, 1 600 salariés) publie selon E1, en tCO₂e : scope 1 = 4 500 (chaudières et flotte) ; scope 2 = 1 800 selon la méthode fondée sur la localisation et 600 selon la méthode fondée sur le marché (contrats d'électricité renouvelable) ; scope 3 = 21 000 (achats, transport amont, utilisation des produits) ; crédits carbone annulés dans l'exercice = 1 500. Total brut « localisation » = 4 500 + 1 800 + 21 000 = 27 300 tCO₂e ; total brut « marché » = 4 500 + 600 + 21 000 = 26 100 tCO₂e, publié à côté. Intensité = 27 300 ÷ 525 = 52 tCO₂e par M€ de chiffre d'affaires. Les 1 500 tCO₂e de crédits figurent dans E1-7 et ne réduisent aucun de ces totaux (25 800 serait faux).
 
 ## Erreurs fréquentes
 - Exiger qu'une question soit matérielle à la fois en impact et en finance : une seule dimension suffit (ex. : risque de sécheresse pour des centres de données, matériel financièrement malgré un faible impact sur l'eau).

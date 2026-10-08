@@ -23,6 +23,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: Scope 1 covers direct emissions from sources the company owns or controls, such as its plants, not customers' cars.",
+        "Incorrect: Scope 2 is limited to purchased electricity, steam, heat and cooling consumed by the company.",
+        "Correct: use of sold products is a downstream Scope 3 category, usually the largest emission source for car makers.",
+        "Incorrect: these emissions are not excluded; they are reported in Scope 3, which the ESRS require when material."
+      ],
       "explanation": "Option 3 is correct: the use of sold products is a downstream Scope 3 category (indirect emissions occurring in the value chain); for car makers it is usually the largest source of emissions. Option 1 is wrong: Scope 1 covers direct emissions from sources the company owns or controls (its plants, its own vehicle fleet), not customers' cars. Option 2 is wrong: Scope 2 is limited to purchased electricity, steam, heat and cooling consumed by the company. Option 4 is wrong: these emissions are not excluded; they are reported in Scope 3, which the ESRS require to be disclosed when material.",
       "source_ref": "GHG Protocol Corporate Value Chain (Scope 3) Standard, category 11 \"Use of sold products\" ; ESRS E1 (Delegated Regulation (EU) 2023/2772), gross Scopes 1, 2, 3 GHG emissions",
       "verified": true,
@@ -40,7 +46,7 @@
         "Scope 1 and 2",
         "ESG ratio"
       ],
-      "statement": "Extract from the sustainability statement of Lumen Foods (hypotheses):\n- Year 1: Scope 1 emissions 10,000 tCO2e; Scope 2 (market-based) 8,000 tCO2e; Scope 3 70,000 tCO2e; revenue €200m.\n- Year 2: Scope 1 emissions 12,000 tCO2e; Scope 2 (market-based) 5,000 tCO2e; Scope 3 90,000 tCO2e; revenue €250m.\nThe company's target indicator is the carbon intensity of Scopes 1 and 2 combined (market-based), in tCO2e per €m of revenue. Calculate the percentage change in this intensity between year 1 and year 2, in %, rounded to two decimal places (enter a negative number for a decrease).",
+      "statement": "Extract from the sustainability statement of Lumen Foods, a food group with 1,600 employees (hypotheses):\n- Year 1: Scope 1 emissions 10,000 tCO2e; Scope 2 (market-based) 8,000 tCO2e; Scope 3 70,000 tCO2e; revenue €500m.\n- Year 2: Scope 1 emissions 12,000 tCO2e; Scope 2 (market-based) 5,000 tCO2e; Scope 3 90,000 tCO2e; revenue €625m.\nThe company's target indicator is the carbon intensity of Scopes 1 and 2 combined (market-based), in tCO2e per €m of revenue. Calculate the percentage change in this intensity between year 1 and year 2, in %, rounded to two decimal places (enter a negative number for a decrease).",
       "expected_value": -24.44,
       "tolerance": {
         "kind": "absolute",
@@ -48,7 +54,7 @@
       },
       "unit": "%",
       "decimals": 2,
-      "explanation": "Year 1 intensity = (10,000 + 8,000) / 200 = 90 tCO2e per €m. Year 2 intensity = (12,000 + 5,000) / 250 = 68 tCO2e per €m. Change = 68 / 90 − 1 = −24.44%. Scope 3 is not part of the indicator. Classic errors: computing the change in absolute Scope 1 + 2 emissions (17,000 / 18,000 − 1 = −5.56%), or including Scope 3 (year 1: 88,000 / 200 = 440; year 2: 107,000 / 250 = 428; change −2.73%). Note that Scope 1 emissions actually rose: the intensity fell mainly thanks to lower Scope 2 emissions and revenue growth. This Scopes 1 + 2 intensity is a company-specific indicator defined for this exercise: the GHG intensity per net revenue required by ESRS E1 is based on total GHG emissions (Scopes 1, 2 and 3).",
+      "explanation": "Year 1 intensity = (10,000 + 8,000) / 500 = 36 tCO2e per €m. Year 2 intensity = (12,000 + 5,000) / 625 = 27.2 tCO2e per €m. Change = 27.2 / 36 − 1 = −24.44%. Scope 3 is not part of the indicator. Classic errors: computing the change in absolute Scope 1 + 2 emissions (17,000 / 18,000 − 1 = −5.56%), or including Scope 3 (year 1: 88,000 / 500 = 176; year 2: 107,000 / 625 = 171.2; change −2.73%). Note that Scope 1 emissions actually rose: the intensity fell mainly thanks to lower Scope 2 emissions and revenue growth. This Scopes 1 + 2 intensity is a company-specific indicator defined for this exercise: the GHG intensity per net revenue required by ESRS E1 is based on total GHG emissions (Scopes 1, 2 and 3).",
       "source_ref": "Company-specific target indicator defined in the statement (ESRS E1, Delegated Regulation (EU) 2023/2772, requires a GHG intensity per net revenue based on total Scope 1, 2 and 3 emissions) ; GHG Protocol Corporate Standard, Scopes 1 and 2",
       "verified": true,
       "estimated_seconds": 240
@@ -95,6 +101,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: this confuses eligibility with alignment; eligibility only means the activity is described in the delegated acts.",
+        "Incorrect: too demanding; a substantial contribution to one of the six objectives is enough.",
+        "Incorrect: this mixes up the Taxonomy with ESG ratings and with the SFDR, a separate disclosure regime for financial products.",
+        "Correct: alignment requires a substantial contribution to one objective, no significant harm to the others and minimum safeguards."
+      ],
       "explanation": "Eligibility only means that the activity is described in the Taxonomy delegated acts. Alignment requires three conditions: a substantial contribution to at least one of the six environmental objectives (assessed against technical screening criteria), no significant harm to the other five objectives (DNSH), and compliance with minimum safeguards (OECD Guidelines, UN Guiding Principles on business and human rights). Option 1 confuses eligibility with alignment. Option 2 is too demanding: one objective is enough. Option 3 mixes up the Taxonomy with ESG ratings and with the SFDR, a separate disclosure regime for financial products.",
       "source_ref": "Regulation (EU) 2020/852 (Taxonomy Regulation), art. 3 (criteria for environmentally sustainable economic activities), art. 9 (six environmental objectives), art. 17 (DNSH) and art. 18 (minimum safeguards)",
       "verified": true,

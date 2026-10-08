@@ -26,6 +26,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : un score repose au contraire sur des ratios comptables.",
+        "Exact : les coefficients, estimés sur un échantillon d'un secteur et d'une époque donnés, perdent leur pouvoir prédictif sur une autre population.",
+        "Inexact : un score se calcule à partir de comptes individuels comme consolidés, pas seulement en IFRS.",
+        "Inexact : un score a précisément pour objet de mesurer le risque de défaillance."
+      ],
       "explanation": "Les coefficients sont estimés sur un échantillon d'entreprises saines et défaillantes d'un secteur et d'une époque donnés : appliqués à une autre population, ils perdent leur pouvoir prédictif (option 2). Un score repose au contraire sur des ratios comptables (option 1), se calcule à partir de comptes individuels comme consolidés (option 3) et a précisément pour objet de mesurer le risque de défaillance (option 4)."
     },
     {
@@ -53,6 +59,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : capitaux propres inférieurs à la moitié du capital : décision sur la dissolution anticipée (L. 225-248 pour les SA), non cessation des paiements.",
+        "Inexact : des pertes répétées sont un signal d'alerte, pas un critère légal.",
+        "Exact : C. com. art. L. 631-1 : impossibilité de faire face au passif exigible avec l'actif disponible.",
+        "Inexact : une trésorerie nette négative peut être couverte par des concours bancaires accordés ; l'entreprise paie alors ses dettes exigibles."
+      ],
       "explanation": "L. 631-1 définit la cessation des paiements comme l'impossibilité de faire face au passif exigible avec l'actif disponible (option 3) ; elle ouvre la voie au redressement ou à la liquidation judiciaire. Des capitaux propres inférieurs à la moitié du capital (option 1) imposent une décision de l'assemblée sur la dissolution anticipée (L. 225-248 pour les SA), sans constituer une cessation des paiements. Des pertes répétées (option 2) sont un signal d'alerte, pas un critère légal. Une trésorerie nette négative (option 4) peut être couverte par des concours bancaires accordés : l'entreprise paie alors ses dettes exigibles."
     },
     {

@@ -128,9 +128,25 @@ export function smartNotionOrder(
   return [...due, ...fresh, ...upcoming]
 }
 
+/** Nombre de tentatives récentes d'une notion qui fixent le niveau visé. */
+export const ADAPTIVE_WINDOW = 5
+
+/**
+ * Difficulté visée sur une notion, d'après la réussite des dernières tentatives : niveau 1 pour une notion
+ * nouvelle ou mal réussie (moins de 50 %), niveau 2 entre 50 et 80 %, niveau 3 au-delà.
+ */
+export function targetDifficulty(notionAttempts: readonly Attempt[]): 1 | 2 | 3 {
+  const recent = [...notionAttempts].sort((a, b) => b.date - a.date).slice(0, ADAPTIVE_WINDOW)
+  if (recent.length === 0) return 1
+  const rate = recent.reduce((s, a) => s + (a.score ?? (a.correct ? 1 : 0)), 0) / recent.length
+  return rate < 0.5 ? 1 : rate < 0.8 ? 2 : 3
+}
+
 /**
  * Révision intelligente : les notions choisies par la répétition espacée, jusqu'à 3 exercices par
- * notion (jamais faits d'abord, puis ratés, puis les moins récemment faits), mélangés.
+ * notion (jamais faits d'abord, puis ratés, puis les moins récemment faits), mélangés. Parmi les
+ * exercices d'un même rang, ceux dont le niveau est le plus proche du niveau visé sur la notion
+ * (`targetDifficulty`) passent d'abord : la difficulté monte avec la réussite.
  */
 export function buildSmartSession(
   all: readonly Exercise[],
@@ -142,7 +158,11 @@ export function buildSmartSession(
   const random = seededRandom(seed)
   const pool = all.filter((e) => !isDossier(e))
   const lastAttempt = new Map<string, Attempt>()
-  for (const a of [...snapshot.attempts].sort((x, y) => x.date - y.date)) lastAttempt.set(a.exerciseId, a)
+  const notionAttempts = new Map<string, Attempt[]>()
+  for (const a of [...snapshot.attempts].sort((x, y) => x.date - y.date)) {
+    lastAttempt.set(a.exerciseId, a)
+    notionAttempts.set(a.notion, [...(notionAttempts.get(a.notion) ?? []), a])
+  }
   const byNotion = new Map<string, Exercise[]>()
   for (const e of pool) {
     const list = byNotion.get(e.notion)
@@ -158,10 +178,12 @@ export function buildSmartSession(
   const picked: Exercise[] = []
   for (const notion of smartNotionOrder(pool, snapshot, now, seed)) {
     if (picked.length >= size) break
+    const target = targetDifficulty(notionAttempts.get(notion) ?? [])
+    const gap = (e: Exercise) => Math.abs(e.difficulty - target)
     const candidates = shuffle(byNotion.get(notion) ?? [], random).sort((a, b) => {
       const [ra, da] = rank(a)
       const [rb, db] = rank(b)
-      return ra - rb || da - db
+      return ra - rb || gap(a) - gap(b) || da - db
     })
     picked.push(...candidates.slice(0, Math.min(SMART_PER_NOTION, size - picked.length)))
   }
@@ -230,6 +252,34 @@ export function buildExamSession(pool: readonly Exercise[], ue: UeId, durationMi
   // Le temps laissé libre (type absent de l'UE, exercices trop longs) est complété par les autres blocs.
   for (const b of [...buckets].reverse()) take(b, rest)
   return [...dossiers, ...buckets.flatMap((b) => b.picked)]
+}
+
+/** Nombre minimal de dossiers de type examen pour composer un sujet complet. */
+export const FULL_EXAM_MIN_DOSSIERS = 2
+
+/**
+ * Sujet complet d'une UE, comme le jour de l'épreuve : des dossiers de type examen tirés au sort jusqu'à
+ * remplir la durée de l'épreuve, le temps restant (s'il en reste) étant complété par des cas pratiques.
+ * Vide si l'UE compte moins de FULL_EXAM_MIN_DOSSIERS dossiers.
+ */
+export function buildFullExamSession(pool: readonly Exercise[], ue: UeId, durationMinutes: number, seed: number): Exercise[] {
+  const random = seededRandom(seed)
+  const budget = durationMinutes * 60
+  const all = shuffle(pool.filter((e) => e.ue === ue && isDossier(e)), random)
+  if (all.length < FULL_EXAM_MIN_DOSSIERS) return []
+  const picked: Exercise[] = []
+  let used = 0
+  for (const d of all) {
+    if (used + d.estimated_seconds > budget) continue
+    picked.push(d)
+    used += d.estimated_seconds
+  }
+  for (const e of shuffle(pool.filter((x) => x.ue === ue && CASE_TYPES.includes(x.type) && !isDossier(x)), random)) {
+    if (used + e.estimated_seconds > budget) continue
+    picked.push(e)
+    used += e.estimated_seconds
+  }
+  return picked
 }
 
 /** Note sur 20 d'un examen blanc : chaque exercice pèse sa durée estimée ; un exercice non traité vaut 0. */

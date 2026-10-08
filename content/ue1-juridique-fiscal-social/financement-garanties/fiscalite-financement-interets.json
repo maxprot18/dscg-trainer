@@ -23,6 +23,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : l'option ne vérifie que la condition de taux ; la libération intégrale du capital est une condition cumulative.",
+        "Inexact : l'article 39-1-3° ne prévoit aucune déduction au prorata du capital libéré.",
+        "Inexact : la limitation générale de l'article 212 bis s'applique après les limitations spécifiques ; elle ne rend pas déductibles des intérêts exclus.",
+        "Exact : la déduction exige un capital entièrement libéré et un taux sous le plafond ; la première condition manque, réintégration totale (art. 39-1-3°)."
+      ],
       "explanation": "L'article 39-1-3° du CGI subordonne la déduction des intérêts servis aux associés à deux conditions cumulatives : capital entièrement libéré et taux limité au plafond légal. La première n'est pas remplie : les intérêts sont réintégrés en totalité (option 4). L'option 1 ne vérifie que la condition de taux. L'option 2 invente une déduction au prorata, que le texte ne prévoit pas. L'option 3 renvoie à la limitation générale des charges financières nettes (art. 212 bis), qui s'applique après les limitations spécifiques et ne permet pas de déduire des intérêts déjà exclus.",
       "source_ref": "CGI art. 39-1-3° (intérêts des sommes mises à disposition par les associés)",
       "verified": true,
@@ -51,6 +57,12 @@
         0
       ],
       "multiple": false,
+      "option_explanations": [
+        "Exact : le plafond de taux ne vise que les associés ; 420 000 € de charges nettes restent sous le seuil de 3 M€ (art. 212 bis).",
+        "Inexact : l'option étend à tort aux prêteurs non associés le plafond de taux de l'article 39-1-3°.",
+        "Inexact : la limite retenue est le plus élevé de 3 M€ ou de 30 % de l'EBITDA fiscal, non 30 % seulement.",
+        "Inexact : condition d'affectation inexistante ; un emprunt finançant l'exploitation est aussi déductible."
+      ],
       "explanation": "Le taux plafond de l'article 39-1-3° ne s'applique qu'aux intérêts servis aux associés : des intérêts versés à une banque tierce relèvent du principe de déduction des charges engagées dans l'intérêt de l'entreprise (CGI art. 39-1). Ils restent soumis à la limitation générale de l'article 212 bis, qui autorise la déduction des charges financières nettes jusqu'au plus élevé de 3 M€ ou 30 % de l'EBITDA fiscal ; avec 420 000 €, aucune limitation (option 1). L'option 2 étend à tort le plafond aux prêteurs non associés. L'option 3 oublie que le plafond retenu est le plus élevé des deux montants. L'option 4 pose une condition d'affectation inexistante : un emprunt finançant l'exploitation est aussi déductible.",
       "source_ref": "CGI art. 39-1 et 39-1-3° ; art. 212 bis (limitation des charges financières nettes)",
       "verified": true,

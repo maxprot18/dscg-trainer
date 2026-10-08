@@ -64,6 +64,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : le prix d'achat évité est une ressource procurée par le crédit-bail en date 0, pas un coût.",
+        "Inexact : l'économie d'IS sur les redevances réduit le coût ; on retient les redevances × (1 − t).",
+        "Exact : sans propriété, le preneur perd la déduction des amortissements, donc l'économie d'IS t × dotation : c'est un coût du crédit-bail.",
+        "Inexact : les intérêts relèvent de l'emprunt, l'autre mode de financement auquel on compare le coût obtenu ; ils n'entrent pas dans les flux du crédit-bail."
+      ],
       "explanation": "En renonçant à la propriété, le preneur perd la déduction des amortissements et donc l'économie d'IS correspondante (t × dotation) : c'est un coût du crédit-bail (option 3). Le prix d'achat évité (option 1) est la ressource procurée par le crédit-bail en date 0. L'économie d'IS sur les redevances (option 2) réduit le coût : on retient les redevances × (1 − t). Les intérêts d'un emprunt (option 4) relèvent de l'autre mode de financement, auquel on compare le coût obtenu ; ils n'entrent pas dans les flux du crédit-bail."
     },
     {

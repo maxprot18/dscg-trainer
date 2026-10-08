@@ -64,3 +64,18 @@ export function useTheme(): [ThemePreference, () => void] {
   }
   return [preference, cycle]
 }
+
+/**
+ * Impression toujours en thème clair : texte sombre sur papier blanc, sans fonds sombres. Le thème choisi
+ * est rétabli après l'impression.
+ */
+export function printInLightTheme(): () => void {
+  const before = () => document.documentElement.classList.remove('dark')
+  const after = () => applyTheme(readThemePreference())
+  window.addEventListener('beforeprint', before)
+  window.addEventListener('afterprint', after)
+  return () => {
+    window.removeEventListener('beforeprint', before)
+    window.removeEventListener('afterprint', after)
+  }
+}

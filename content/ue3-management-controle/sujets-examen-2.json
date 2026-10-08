@@ -1,0 +1,442 @@
+{
+  "exercises": [
+    {
+      "id": "ue3-dossier-0003",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "pilotage-processus-abc",
+      "difficulty": 3,
+      "tags": [
+        "dossier type examen",
+        "coûts complets",
+        "centres d'analyse",
+        "ABC",
+        "ABM",
+        "budget flexible",
+        "écarts sur charges",
+        "contrôle budgétaire"
+      ],
+      "source_ref": "Programme DSCG UE 3 (arrêté du 4 août 2025), pilotage des processus et gestion prévisionnelle ; R. Cooper et R.S. Kaplan (1988), méthode ABC ; méthode des coûts complets par centres d'analyse ; analyse des écarts sur charges directes et sur centre d'analyse (budget flexible) ; J. Hope et R. Fraser, Beyond Budgeting (2003)",
+      "verified": true,
+      "estimated_seconds": 4800,
+      "total_points": 20,
+      "title": "Cyclatec : coûts des modèles et contrôle de l'atelier de montage",
+      "explanation": "Démarche attendue : calculer le coût complet du Gravel par les centres d'analyse (1 388,60 €) puis par l'ABC (2 022,80 €), en déduire que le modèle présenté comme le plus rentable perd 116 400 €, le résultat global (1 092 600 €) restant inchangé ; refuser à la fois l'extension de la gamme et l'abandon immédiat (charges indirectes fixes à 85 %, marge sur coûts directs de 375 000 €) au profit de leviers ABM sur les inducteurs. Décomposer ensuite les écarts de l'atelier de montage en septembre 2026 : aluminium (prix −1 920 € favorable, quantité +1 500 € défavorable), MOD (temps +2 800 €, taux +2 610 €), centre de montage (budget +4 500 €, activité −4 600 €, rendement +4 200 €, global +4 100 €), et montrer que l'économie d'achat se paie en heures et en rebuts. La note finale porte sur la portée des coûts complets (coût moyen conventionnel, non pertinent pour une décision de court terme) et des écarts (a posteriori, interdépendants, aveugles à la qualité), à compléter par des marges différentielles, des indicateurs non financiers et des prévisions glissantes.",
+      "context": "**Cyclatec SAS** conçoit et assemble à Cholet (Maine-et-Loire) des vélos à assistance électrique vendus à un réseau de 180 revendeurs indépendants. L'entreprise emploie 210 salariés et a réalisé en 2025 un chiffre d'affaires de 10,18 M€. Elle soude elle-même ses cadres à partir de tubes d'aluminium, achète les composants (moteurs, batteries, transmissions, roues) et assemble trois modèles :\n\n- l'**Urbain**, vélo de ville produit en grandes séries en trois configurations ;\n- le **Cargo**, vélo-cargo familial à fort contenu en composants ;\n- le **Gravel**, vélo tout-chemin lancé en 2023, proposé en 18 configurations (tailles, couleurs, transmissions) et fabriqué en petits lots, souvent à la commande.\n\nLa comptabilité de gestion calcule des coûts complets par la méthode des centres d'analyse. Elle présente le Gravel comme le modèle le plus rentable, avec une marge de plus de 22 % du prix de vente, et le directeur commercial propose d'en doubler les volumes et d'ajouter six configurations. Le directeur général doute de ce diagnostic : les services d'achats, de lancement et d'expédition sont saturés depuis l'arrivée du Gravel. Il a fait conduire une analyse par activités sur les charges indirectes de 2025.\n\nPar ailleurs, l'atelier de montage a dépassé ses coûts standards en septembre 2026, alors que le service achats annonce des économies grâce à un nouveau fournisseur d'aluminium.\n\nContrôleur de gestion de Cyclatec, vous êtes chargé de comparer les deux méthodes de calcul des coûts, d'analyser les écarts de l'atelier de montage en septembre 2026 et d'éclairer le comité de direction sur la portée et les limites de ces outils.\n\nLes données figurent en annexes 1 à 5. Les montants sont hors taxes. Il n'y a pas de stocks de produits finis : tous les vélos produits en 2025 ont été vendus.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Gamme, volumes et coûts directs de 2025",
+          "content": "| Modèle | Vélos produits et vendus | Prix de vente net par vélo | Aluminium par vélo | Composants achetés par vélo | Main-d'œuvre directe (MOD) par vélo |\n| --- | --- | --- | --- | --- | --- |\n| Urbain | 6 000 | 1 050 € | 8 kg | 572 € | 2 h |\n| Cargo | 1 500 | 1 990 € | 14 kg | 1 066 € | 4 h |\n| Gravel | 500 | 1 790 € | 7 kg | 878 € | 3 h |\n\n- Prix de l'aluminium en 2025 : 6,00 €/kg ; taux horaire de la MOD, charges sociales comprises : 40 €/h.\n- Les matières consommées comprennent l'aluminium et les composants (exemple : 8 × 6 + 572 = 620 € par Urbain).\n- Les coûts unitaires réels de 2025 sont égaux aux standards retenus dans la fiche de coût standard (annexe 4)."
+        },
+        {
+          "title": "Annexe 2 — Méthode actuelle : centres d'analyse (charges indirectes de 2025)",
+          "content": "Les charges indirectes de 2025, après répartition secondaire des centres auxiliaires (entretien, administration), sont réparties entre quatre centres principaux.\n\n| Centre principal | Coût total | Unité d'œuvre ou assiette de frais | Nombre d'unités |\n| --- | --- | --- | --- |\n| Approvisionnement | 472 400 € | 100 € de matières consommées | 59 050 |\n| Montage | 1 170 000 € | heure de MOD | 19 500 |\n| Contrôle et finition | 320 000 € | vélo produit | 8 000 |\n| Distribution | 440 000 € | vélo vendu | 8 000 |\n| **Total** | **2 402 400 €** | | |\n\nLe coût complet d'un modèle comprend ses matières, sa MOD et les charges des quatre centres imputées au moyen de ces unités d'œuvre."
+        },
+        {
+          "title": "Annexe 3 — Analyse par activités des charges indirectes de 2025",
+          "content": "L'étude, menée au premier semestre 2026 avec les responsables de service, a réaffecté les mêmes charges indirectes (2 402 400 €) à cinq activités.\n\n| Activité | Coût | Inducteur | Urbain | Cargo | Gravel | Total |\n| --- | --- | --- | --- | --- | --- | --- |\n| Achats et approvisionnement | 288 000 € | commande fournisseur | 360 | 240 | 360 | 960 |\n| Lancement et réglage des séries | 352 000 € | lot de fabrication | 60 | 60 | 100 | 220 |\n| Montage | 1 053 000 € | heure de MOD | 12 000 | 6 000 | 1 500 | 19 500 |\n| Contrôle et essais | 260 000 € | essai sur banc | 600 | 1 500 | 500 | 2 600 |\n| Traitement des commandes clients et expédition | 449 400 € | commande client | 1 000 | 700 | 440 | 2 140 |\n| **Total** | **2 402 400 €** | | | | | |\n\nObservations de l'étude :\n- l'Urbain est contrôlé par échantillonnage (un vélo sur dix) ; le Cargo et le Gravel sont tous essayés sur banc ;\n- les composants du Gravel proviennent de 14 fournisseurs spécialisés, contre 5 pour l'Urbain ;\n- les commandes de Gravel portent souvent sur un seul vélo, celles d'Urbain sur six en moyenne ;\n- environ 85 % des charges indirectes sont fixes à court terme (personnel des services, amortissements, loyers)."
+        },
+        {
+          "title": "Annexe 4 — Atelier de montage : standards, budget et réalisations de septembre 2026",
+          "content": "**Fiche de coût standard** (inchangée depuis 2025) : aluminium 6,00 €/kg, avec 8 kg par Urbain, 14 kg par Cargo et 7 kg par Gravel ; MOD 40 €/h, avec 2 h par Urbain, 4 h par Cargo et 3 h par Gravel.\n\n**Budget mensuel du centre de montage** : charges variables 20 € par heure de MOD et charges fixes 65 000 € par mois ; activité normale 1 625 heures de MOD par mois ; coût standard de l'heure : 60 €.\n\n| Septembre 2026 | Budget initial | Réalisé |\n| --- | --- | --- |\n| Urbain produits | 500 | 480 |\n| Cargo produits | 130 | 140 |\n| Gravel produits | 40 | 50 |\n| Aluminium consommé | — | 6 400 kg à 5,70 €/kg |\n| Heures de MOD | — | 1 740 h pour 72 210 € |\n| Charges réelles du centre de montage | — | 104 300 € |\n\nConvention : les écarts sur charges se calculent par différence entre le réel et le préétabli de la production réelle ; un écart positif est défavorable, un écart négatif favorable. L'écart global du centre de montage (coût réel − coût préétabli de la production réelle) se décompose, à partir du budget flexible, en écart sur budget, écart sur activité et écart sur rendement."
+        },
+        {
+          "title": "Annexe 5 — Extrait du compte rendu du comité de direction du 2 octobre 2026",
+          "content": "- **Directeur commercial** : « Le Gravel dégage plus de 400 € de marge par vélo, près de cinq fois plus que l'Urbain. Doublons les volumes en 2027 et ajoutons six configurations pour répondre aux demandes des revendeurs. »\n- **Responsable des achats** : « Depuis septembre, nous achetons les tubes d'aluminium à un nouveau fournisseur, 5 % moins cher. L'économie est déjà de 1 920 € sur le seul mois de septembre. »\n- **Chef de l'atelier de montage** : « Les nouveaux tubes ont des tolérances de diamètre moins régulières : les reprises de soudure et les cadres mis au rebut ont augmenté. Pour tenir les livraisons, j'ai fait faire des heures supplémentaires, payées avec majoration. »\n- **Directrice administrative et financière** : « Avant de décider, il faut savoir ce que mesurent nos coûts et nos écarts, et ce qu'ils ne mesurent pas. »\n- **Directeur général** : « Je veux une analyse argumentée pour le prochain comité. »"
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1-cout-centres-gravel",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À partir des annexes 1 et 2, calculez le coût complet unitaire d'un Gravel en 2025 selon la méthode des centres d'analyse, en euros arrondis au centime.",
+          "expected_value": 1388.6,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "Coûts des unités d'œuvre : approvisionnement 472 400 ÷ 59 050 = 8 € pour 100 € de matières ; montage 1 170 000 ÷ 19 500 = 60 € l'heure ; contrôle et finition 320 000 ÷ 8 000 = 40 € par vélo ; distribution 440 000 ÷ 8 000 = 55 € par vélo. Gravel : matières 7 × 6 + 878 = 920 € ; MOD 3 × 40 = 120 € ; approvisionnement 9,20 × 8 = 73,60 € ; montage 3 × 60 = 180 € ; contrôle 40 € ; distribution 55 €. Coût complet = 920 + 120 + 73,60 + 180 + 40 + 55 = 1 388,60 €, soit une marge de 1 790 − 1 388,60 = 401,40 € (22,4 % du prix). Pour mémoire : Urbain 964,60 €, Cargo 1 737 €. Erreurs classiques : imputer l'approvisionnement à 8 € par vélo (1 323 €) ou oublier la distribution (1 333,60 €)."
+        },
+        {
+          "id": "q2-cout-abc-gravel",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À partir des annexes 1 et 3, calculez le coût complet unitaire d'un Gravel en 2025 selon la méthode ABC, en euros arrondis au centime.",
+          "expected_value": 2022.8,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "Coûts unitaires des inducteurs : commande fournisseur 288 000 ÷ 960 = 300 € ; lot 352 000 ÷ 220 = 1 600 € ; heure de MOD 1 053 000 ÷ 19 500 = 54 € ; essai 260 000 ÷ 2 600 = 100 € ; commande client 449 400 ÷ 2 140 = 210 €. Charges indirectes du Gravel : 360 × 300 + 100 × 1 600 + 1 500 × 54 + 500 × 100 + 440 × 210 = 108 000 + 160 000 + 81 000 + 50 000 + 92 400 = 491 400 €, soit 982,80 € par vélo. Coût ABC = coûts directs (920 + 120 = 1 040 €) + 982,80 = 2 022,80 €. Pour mémoire : Urbain 700 + 1 122 000 ÷ 6 000 = 887 € ; Cargo 1 310 + 789 000 ÷ 1 500 = 1 836 €. Erreur classique : oublier les coûts directs (982,80 €)."
+        },
+        {
+          "id": "q3-resultat-abc-gravel",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À partir de l'annexe 1 et de la question 2, calculez le résultat analytique 2025 du Gravel selon la méthode ABC, en euros (signe moins pour une perte).",
+          "expected_value": -116400,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 100
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Résultat = 500 × (1 790 − 2 022,80) = −116 400 €. Selon la méthode des centres, le Gravel affichait 500 × 401,40 = +200 700 €. Les autres modèles : Urbain 6 000 × (1 050 − 887) = +978 000 € (contre +512 400 €) ; Cargo 1 500 × (1 990 − 1 836) = +231 000 € (contre +379 500 €). Le résultat total, 1 092 600 €, est identique avec les deux méthodes : seule la répartition des charges indirectes entre modèles change. La tolérance de 100 € couvre les arrondis du coût unitaire et rejette le résultat de la méthode actuelle."
+        },
+        {
+          "id": "q4-comparaison-methodes",
+          "kind": "mcq",
+          "points": 1,
+          "prompt": "À partir des annexes 2 et 3 et des questions 1 à 3, quelle affirmation sur l'écart entre les deux méthodes est exacte ?",
+          "options": [
+            "Le passage à la méthode ABC réduit le résultat global de Cyclatec de 116 400 €",
+            "Avec la méthode ABC, le coût de l'Urbain augmente, car ce modèle consomme 61,5 % des heures de MOD",
+            "La méthode ABC ne retient que les charges variables, ce qui explique la baisse du coût de l'Urbain",
+            "Les unités d'œuvre de la méthode actuelle sont surtout volumiques ; le Gravel, fabriqué en petits lots et en nombreuses configurations, consomme bien plus de commandes, de lots et d'essais que son volume ne le laisse supposer : l'Urbain le subventionne"
+          ],
+          "answer": [
+            3
+          ],
+          "explanation": "L'option 4 est exacte : heures de MOD, vélos produits ou vendus et 100 € de matières varient avec le volume ; or le Gravel, 6,25 % des vélos, consomme 45 % des lots (100 sur 220), 37,5 % des commandes fournisseurs (360 sur 960) et 20,6 % des commandes clients (440 sur 2 140). La méthode actuelle lui impute 174 300 € de charges indirectes (348,60 € par vélo), l'ABC 491 400 € ; l'Urbain, qui supportait ces charges, voit son coût passer de 964,60 € à 887 €. L'option 1 est fausse : les mêmes 2 402 400 € sont répartis, le résultat global reste de 1 092 600 € ; −116 400 € est le résultat du seul Gravel. L'option 2 est fausse : le coût de l'Urbain baisse, ses grandes séries consomment peu de lots et de commandes par vélo. L'option 3 est fausse : l'ABC est une méthode de coût complet, elle répartit toutes les charges indirectes, fixes comprises."
+        },
+        {
+          "id": "q5-decision-gravel",
+          "kind": "open",
+          "points": 2.5,
+          "prompt": "À partir des annexes 3 et 5 et des questions 1 à 4, faut-il suivre la proposition du directeur commercial, abandonner le Gravel, ou faire autre chose ? Argumentez en mobilisant la gestion par les activités (ABM).",
+          "model_answer": "La proposition du directeur commercial repose sur un coût faussé : la méthode des centres impute les charges indirectes par des unités d'œuvre volumiques, si bien que le Gravel, qui ne représente que 6,25 % des vélos, ne supporte que 348,60 € de charges indirectes par vélo alors qu'il consomme 45 % des lots de fabrication, plus d'un tiers des commandes fournisseurs et un cinquième des commandes clients. Selon l'ABC, son coût est de 2 022,80 € pour un prix de 1 790 € et il perd 116 400 € ; doubler les volumes et ajouter six configurations multiplierait précisément les inducteurs les plus coûteux (lots, références, commandes) et saturerait encore les services. Il ne faut pas pour autant l'abandonner sur-le-champ : environ 85 % des charges indirectes sont fixes à court terme, si bien que l'arrêt ferait perdre la marge sur coûts directs du modèle (500 × (1 790 − 1 040) = 375 000 €) sans supprimer l'essentiel des 491 400 € qui lui sont imputés ; le Gravel apporte aussi une image d'innovation auprès des revendeurs. La bonne réponse relève de l'ABM : réduire le nombre de configurations (18) et standardiser les composants pour diminuer le nombre de fournisseurs et de commandes d'achat ; regrouper la fabrication en lots plus grands ou planifier des séries par configuration ; instaurer un minimum de commande ou des frais pour les commandes unitaires ; réviser le prix des configurations sur mesure ; mesurer à nouveau les coûts après ces actions. Le comité peut se fixer un coût cible du Gravel compatible avec le prix accepté par le marché et suivre les inducteurs dans le tableau de bord.",
+          "key_points": [
+            "Coût actuel faussé par des unités d'œuvre volumiques : le Gravel est subventionné par l'Urbain",
+            "Doubler les volumes et ajouter des configurations augmenterait les inducteurs coûteux (lots, commandes, références)",
+            "Pas d'abandon immédiat : charges indirectes fixes à 85 % à court terme, marge sur coûts directs de 375 000 € perdue",
+            "Leviers ABM : moins de configurations, composants standardisés, lots plus grands, minimum de commande, prix revus",
+            "Suivi des inducteurs et coût cible dans le pilotage"
+          ],
+          "explanation": "La copie doit articuler les deux temps : l'ABC révèle la consommation de ressources (coût complet) mais ne mesure pas les économies réalisables à court terme ; la décision se prend sur les coûts et marges évitables, et l'ABM agit sur les causes des coûts (inducteurs)."
+        },
+        {
+          "id": "q6-ecart-prix-aluminium",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À partir de l'annexe 4, calculez l'écart sur prix de l'aluminium de septembre 2026, en euros (positif si défavorable, négatif si favorable).",
+          "expected_value": -1920,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Écart sur prix = (prix réel − prix standard) × quantité réelle = (5,70 − 6,00) × 6 400 = −1 920 €, favorable. C'est l'économie annoncée par le responsable des achats (annexe 5). Erreur classique : valoriser la différence de prix à la quantité standard de la production réelle (−0,30 × 6 150 = −1 845 €)."
+        },
+        {
+          "id": "q7-ecart-quantite-aluminium",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À partir de l'annexe 4, calculez l'écart sur quantité de l'aluminium de septembre 2026, en euros (positif si défavorable, négatif si favorable).",
+          "expected_value": 1500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Quantité standard de la production réelle = 480 × 8 + 140 × 14 + 50 × 7 = 3 840 + 1 960 + 350 = 6 150 kg. Écart sur quantité = (6 400 − 6 150) × 6,00 = 1 500 € défavorable. Écart global = 6 400 × 5,70 − 6 150 × 6,00 = 36 480 − 36 900 = −420 € = −1 920 + 1 500. Erreurs classiques : valoriser l'écart au prix réel (250 × 5,70 = 1 425 €) ou calculer la quantité standard sur la production budgétée (500 × 8 + 130 × 14 + 40 × 7 = 6 100 kg, soit 1 800 €)."
+        },
+        {
+          "id": "q8-ecart-temps-mod",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À partir de l'annexe 4, calculez l'écart sur temps (rendement) de la main-d'œuvre directe de septembre 2026, en euros (positif si défavorable).",
+          "expected_value": 2800,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Heures standards de la production réelle = 480 × 2 + 140 × 4 + 50 × 3 = 960 + 560 + 150 = 1 670 h. Écart sur temps = (1 740 − 1 670) × 40 = 2 800 € défavorable. Taux réel = 72 210 ÷ 1 740 = 41,50 €/h, d'où un écart sur taux = (41,50 − 40) × 1 740 = 2 610 € défavorable (majorations des heures supplémentaires). Écart global = 72 210 − 1 670 × 40 = 5 410 € = 2 800 + 2 610. Erreurs classiques : valoriser l'écart sur temps au taux réel (70 × 41,50 = 2 905 €) ou retenir les heures du budget initial (1 640 h, soit 4 000 €)."
+        },
+        {
+          "id": "q9-ecart-budget-centre",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À partir de l'annexe 4, établissez le budget flexible du centre de montage pour l'activité réelle de septembre 2026, puis calculez l'écart sur budget du centre, en euros (positif si défavorable).",
+          "expected_value": 4500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Budget flexible pour l'activité réelle : BF(1 740) = 20 × 1 740 + 65 000 = 34 800 + 65 000 = 99 800 €. Écart sur budget = coût réel − BF(activité réelle) = 104 300 − 99 800 = 4 500 € défavorable. Erreurs classiques : comparer au budget de l'activité préétablie de la production réelle, BF(1 670) = 98 400 € (5 900 €), ou au budget initial, BF(1 640) = 97 800 € (6 500 €) : ces écarts mélangent la maîtrise des charges et les effets de volume ou de rendement."
+        },
+        {
+          "id": "q10-analyse-centre",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À partir de l'annexe 4 et des questions 8 et 9, quelle analyse des écarts du centre de montage est exacte ?",
+          "options": [
+            "L'écart sur activité, favorable de 4 600 €, montre que l'atelier a bien travaillé en septembre et compense l'écart sur budget",
+            "L'écart sur budget de 4 500 € relève du directeur commercial, puisqu'il dépend du volume vendu",
+            "L'écart global du centre se mesure par rapport au budget initial de septembre, soit 104 300 − 97 800 = 6 500 € défavorable",
+            "L'écart sur activité est favorable de 4 600 € parce que 1 740 heures ont été travaillées pour une activité normale de 1 625 h ; mais 70 de ces heures dépassent le temps standard de la production réelle (écart sur rendement de 4 200 € défavorable) : la suractivité vient en partie de l'inefficience"
+          ],
+          "answer": [
+            3
+          ],
+          "explanation": "L'option 4 est exacte. Écart sur activité = BF(1 740) − 1 740 × 60 = 99 800 − 104 400 = −4 600 € (charges fixes surabsorbées : 65 000 × (1 − 1 740 ÷ 1 625)). Écart sur rendement = (1 740 − 1 670) × 60 = 4 200 € défavorable. Contrôle : 4 500 − 4 600 + 4 200 = 4 100 € = 104 300 − 1 670 × 60. Les 70 heures excédentaires sont les mêmes que celles de l'écart sur temps de la MOD : la suractivité apparente est gonflée par les reprises de soudure. L'option 1 est fausse : un écart favorable sur activité nourri d'heures improductives n'est pas une performance, il se lit avec l'écart sur rendement. L'option 2 est fausse : l'écart sur budget compare le coût réel au budget flexible de l'activité réelle, il est neutre vis-à-vis du volume et relève du chef d'atelier. L'option 3 est fausse : l'écart global se mesure par rapport au coût préétabli de la production réelle (1 670 h × 60 = 100 200 €), soit 4 100 €."
+        },
+        {
+          "id": "q11-changement-fournisseur",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "Vrai ou faux ? À partir des annexes 4 et 5 et des questions 6 à 10, l'écart favorable sur prix de l'aluminium (1 920 €) suffit à établir que le changement de fournisseur est une bonne décision.",
+          "answer": false,
+          "explanation": "Faux. L'économie sur le prix (−1 920 €) est presque annulée par l'écart défavorable sur quantité d'aluminium (+1 500 €), soit un gain net de 420 € seulement. Surtout, les tubes moins réguliers provoquent des reprises de soudure : 70 heures excédentaires, soit 2 800 € d'écart sur temps de MOD et 4 200 € d'écart sur rendement du centre de montage, sans compter les majorations d'heures supplémentaires (2 610 €). Les écarts s'interprètent ensemble et selon leurs causes : un écart favorable chez un responsable (achats) peut en provoquer de défavorables chez un autre (atelier)."
+        },
+        {
+          "id": "q12-limites-outils",
+          "kind": "open",
+          "points": 3,
+          "prompt": "En vous appuyant sur l'ensemble du dossier, et notamment sur l'annexe 5, rédigez pour le comité de direction une note sur les limites des coûts complets (centres d'analyse et ABC) et du contrôle budgétaire par les écarts, et sur l'usage qui peut en être fait pour la décision et le pilotage.",
+          "model_answer": "Les coûts complets répondent à une question précise : combien de ressources chaque modèle consomme-t-il en moyenne ? Leur valeur dépend des conventions de répartition. La méthode des centres repose sur des unités d'œuvre surtout volumiques, ce qui subventionne les petites séries comme le Gravel. L'ABC corrige ce biais en rattachant les charges à leurs causes, mais elle reste coûteuse à mettre en place et à mettre à jour, le choix des activités et des inducteurs comporte une part de jugement (enquêtes auprès des services) et elle demeure un coût complet : 85 % des charges indirectes étant fixes à court terme, le coût ABC ne dit pas ce qu'on économiserait en arrêtant un modèle. Pour décider (abandon, lancement, prix, sous-traitance), il faut raisonner sur les coûts et marges différentiels ou spécifiques ; l'ABC éclaire plutôt la stratégie de gamme à moyen terme, la tarification et surtout l'ABM (réduction des inducteurs). Le contrôle budgétaire a lui aussi ses limites. Les écarts sont calculés a posteriori, un mois après les faits, et dépendent de standards qui peuvent être obsolètes. Ils sont interdépendants : l'économie sur l'aluminium a provoqué des écarts défavorables de quantité, de temps et de rendement, si bien qu'une évaluation cloisonnée par responsable pousse à des comportements opportunistes (acheter moins cher au détriment de l'atelier). Ils ignorent la qualité, les délais et la satisfaction des revendeurs. Enfin, le budget de référence doit être flexible : comparer au budget initial mêle les effets de volume et de maîtrise des charges. Usage recommandé : présenter le coût ABC et la marge sur coûts spécifiques côte à côte avant toute décision de gamme ; analyser les écarts par causes et entre services (achats et atelier ensemble), en fixant des seuils de signification ; compléter le contrôle budgétaire par des indicateurs physiques et non financiers suivis plus fréquemment (taux de reprise de soudure, taux de rebut, heures supplémentaires, nombre de lots et de configurations, délai de livraison) ; envisager des prévisions glissantes plutôt qu'un budget annuel figé. Les outils éclairent la décision, ils ne la remplacent pas.",
+          "key_points": [
+            "Coût complet conventionnel : biais des unités d'œuvre volumiques, ABC plus juste mais coûteuse et en partie subjective",
+            "Coût complet ≠ coût pertinent pour décider : charges fixes à court terme, raisonner en coûts et marges différentiels ou spécifiques",
+            "Limites des écarts : a posteriori, standards à actualiser, interdépendance (achats et atelier), qualité et délais ignorés, budget flexible indispensable",
+            "Usage : ABM et stratégie de gamme, analyse croisée des écarts par causes, seuils de signification",
+            "Compléments : indicateurs non financiers fréquents, prévisions glissantes"
+          ],
+          "explanation": "Une bonne copie relie chaque limite à un fait du dossier (Gravel subventionné, 85 % de charges fixes, aluminium moins cher mais reprises de soudure, comparaison trompeuse au budget initial) et termine par des préconisations opérationnelles."
+        }
+      ]
+    },
+    {
+      "id": "ue3-dossier-0004",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE3",
+      "theme": "pilotage-strategique-performance",
+      "notion": "pilotage-durabilite-bilan-carbone",
+      "difficulty": 3,
+      "tags": [
+        "dossier type examen",
+        "bilan carbone",
+        "scopes",
+        "plan de transition",
+        "indicateurs extra-financiers",
+        "tableau de bord",
+        "conduite du changement",
+        "GEPP"
+      ],
+      "source_ref": "C. env. art. L. 229-25 et R. 229-47 ; C. trav. art. L. 2242-2, L. 2242-11, L. 2242-13 et L. 2242-20 ; GHG Protocol, Corporate Standard (WRI/WBCSD, 2004) ; programme DSCG UE 3 (arrêté du 4 août 2025), pilotage de la performance et management du changement ; J. Kotter, Leading Change (1996) ; R. Kaplan et D. Norton (1992), balanced scorecard",
+      "verified": true,
+      "estimated_seconds": 5100,
+      "total_points": 20,
+      "title": "Transports Rhodanor : décarboner la flotte et piloter la transition",
+      "explanation": "Démarche attendue : établir le bilan de 2025 par scope (scope 1 : 38 858 t, dont 37 500 t de gazole ; scope 2 : 494 t ; scope 3 : 15 620 t, soit 28,4 % seulement pour un transporteur qui exploite sa flotte), calculer l'intensité des scopes 1 et 2 (82,0 gCO₂e/t.km) et rappeler le contenu obligatoire du bilan réglementaire (émissions directes et indirectes liées à l'énergie, plan de transition, mise à jour tous les quatre ans). Chiffrer ensuite la trajectoire : cible 2030 de 23 611,2 t, émissions attendues après le plan de 25 626 t (gain net de 77,175 t par tracteur électrique), soit 27 tracteurs supplémentaires à remplacer. Côté humain : écart de 7 techniciens et de 16 habilitations, négociation triennale sur la GEPP à engager en 2026, conduite du changement participative (Kotter ou Lewin, pilote, CSE, télématique utilisée pour le conseil). Enfin, faire du tableau de bord RSE un outil de pilotage : indicateurs avancés et de résultat par agence, trajectoire en valeur absolue, budget carbone, prix interne du carbone et primes fondées sur des indicateurs maîtrisables.",
+      "context": "**Transports Rhodanor SAS** est une entreprise familiale de transport routier de marchandises sous température dirigée (produits frais et surgelés), implantée dans l'est lyonnais. Elle emploie 820 salariés, dont 560 conducteurs et 40 techniciens de maintenance, exploite 420 tracteurs routiers et six entrepôts frigorifiques, et a réalisé en 2025 un chiffre d'affaires de 138 M€. Ses titres ne sont pas admis aux négociations sur un marché réglementé.\n\nSes principaux clients, enseignes de la grande distribution et industriels de l'agroalimentaire, lui demandent désormais les émissions de gaz à effet de serre liées à leurs flux et intègrent des critères climatiques dans leurs appels d'offres. Le conseil de surveillance a validé en juin 2026 une démarche RSE fondée sur un objectif de réduction de 40 % des émissions directes et liées à l'énergie (scopes 1 et 2) entre 2025 et 2030.\n\nLe dernier bilan des émissions de gaz à effet de serre a été établi en 2022 sur les données de 2021 ; il doit être mis à jour en 2026 sur les données de 2025. Par hypothèse, Rhodanor n'est soumise, pour les exercices 2025 et 2026, ni à la publication d'un état de durabilité (C. com. art. L. 232-6-3 et L. 233-28-4), ni aux obligations de l'article L. 22-10-36 du Code de commerce. Elle n'a pas conclu d'accord de méthode sur le calendrier des négociations obligatoires.\n\nContrôleur de gestion rattaché à la direction financière, vous êtes chargé d'établir le bilan des émissions de 2025, de chiffrer le plan de transition, de refondre le tableau de bord de la performance extra-financière et de préparer, avec la DRH, l'accompagnement humain de la transformation de la flotte.\n\nLes données figurent en annexes 1 à 5. Les facteurs d'émission sont des hypothèses de l'énoncé.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Données d'activité de 2025 et facteurs d'émission (hypothèses)",
+          "content": "| Poste | Donnée d'activité 2025 | Facteur d'émission |\n| --- | --- | --- |\n| Gazole des tracteurs et des véhicules de service : combustion | 15 000 000 L | 2,50 kgCO₂e/L |\n| Gazole : amont (extraction, raffinage et transport du carburant) | 15 000 000 L | 0,60 kgCO₂e/L |\n| Gaz naturel brûlé dans les chaudières des entrepôts et de l'atelier | 2 400 000 kWh | 0,227 kgCO₂e/kWh |\n| Fluide frigorigène rechargé dans les groupes froids des semi-remorques (fuites) | 380 kg | 2 140 kgCO₂e/kg (pouvoir de réchauffement global) |\n| Électricité achetée (entrepôts frigorifiques, bureaux) | 9 500 000 kWh | 0,052 kgCO₂e/kWh |\n| Transports sous-traités à des affréteurs | 22 000 000 t.km | 0,10 kgCO₂e/t.km |\n| Déplacements domicile-travail des salariés en voiture | 4 100 000 km | 0,20 kgCO₂e/km |\n| Achats de biens et services (pneus, pièces, emballages, prestations) | estimation par ratios monétaires | 3 600 tCO₂e |\n\nAutres données de 2025 : 44 100 000 km parcourus par les tracteurs ; 480 000 000 t.km transportées par la flotte propre ; bilan des émissions de 2021 : 52 100 tCO₂e, tous postes confondus."
+        },
+        {
+          "title": "Annexe 2 — Projet de plan de transition 2026-2030",
+          "content": "Objectif : réduire de 40 % les émissions des scopes 1 et 2 en 2030 par rapport à 2025, à activité constante.\n\n| Action | Effet attendu en 2030 |\n| --- | --- |\n| 1. Remplacement de 150 tracteurs diesel des tournées régionales par des tracteurs électriques, avec bornes de recharge dans quatre entrepôts | À calculer : chaque tracteur parcourt 105 000 km par an ; un tracteur diesel consomme 32 L de gazole aux 100 km, un tracteur électrique 1,25 kWh d'électricité achetée par km |\n| 2. Remplacement des chaudières au gaz des entrepôts par des pompes à chaleur | −500 tCO₂e (estimation du bureau d'études, nette de l'électricité supplémentaire) |\n| 3. Groupes froids à fluide de faible pouvoir de réchauffement et contrôle renforcé des fuites | −400 tCO₂e |\n| 4. Formation de tous les conducteurs à l'éco-conduite et suivi télématique des consommations | −1 250 tCO₂e (sur la flotte diesel restante) |\n\nLes facteurs d'émission de l'annexe 1 sont supposés constants jusqu'en 2030. Un tracteur électrique coûte environ 2,5 fois le prix d'un tracteur diesel ; la direction financière envisage d'appliquer un prix interne du carbone de 100 € par tonne aux projets d'investissement."
+        },
+        {
+          "title": "Annexe 3 — Tableau de bord RSE actuel (extrait)",
+          "content": "Le document est établi une fois par an par le service communication pour le rapport RSE publié en juin de l'année suivante. Il n'est pas décliné par agence et n'est pas présenté au comité de direction mensuel.\n\n| Indicateur | Valeur 2025 | Cible |\n| --- | --- | --- |\n| Émissions totales de gaz à effet de serre (tous postes) | non calculées depuis 2021 | — |\n| Consommation moyenne des tracteurs (L aux 100 km), moyenne de l'entreprise | 33,7 | — |\n| Nombre de réunions du comité RSE | 4 | 4 |\n| Part des conducteurs formés à l'éco-conduite | 18 % | — |\n| Taux de fréquence des accidents du travail avec arrêt | 31 | — |\n| Montant des dons à des associations locales | 45 000 € | — |\n| Taux de rotation des conducteurs | 21 % | — |\n\nLa rémunération variable des chefs d'agence dépend uniquement de la marge opérationnelle de leur agence."
+        },
+        {
+          "title": "Annexe 4 — Atelier de maintenance : effectifs et besoins (fin 2026 à fin 2029)",
+          "content": "- Effectif fin 2026 : 40 techniciens de maintenance poids lourds, dont 4 titulaires de l'habilitation aux travaux sur véhicules électriques ; 14 ont plus de 55 ans et détiennent l'essentiel du savoir-faire sur les groupes froids.\n- Besoin estimé fin 2029 : 36 techniciens, dont 20 habilités sur véhicules électriques (un tracteur électrique demande moins d'entretien mécanique, mais des compétences en électrotechnique et en haute tension).\n- Mouvements prévus entre fin 2026 et fin 2029 : 6 départs en retraite ; 2 démissions par an ; 2 promotions de techniciens au poste de chef d'équipe (hors du métier de technicien) ; 3 conducteurs reconvertis comme techniciens après une formation qualifiante.\n- Les 4 techniciens déjà habilités ne figurent pas parmi les départs prévus. Formation à l'habilitation : 5 jours par technicien. Le marché du recrutement des techniciens habilités est très tendu dans la région.\n- La dernière négociation sur la gestion des emplois et des parcours professionnels a eu lieu en 2023."
+        },
+        {
+          "title": "Annexe 5 — Remontées du terrain et extrait du compte rendu de la réunion du CSE du 17 septembre 2026",
+          "content": "- **Élus du CSE (collège conducteurs)** : « Les conducteurs ont appris le projet de camions électriques par la presse professionnelle. Ils craignent de tomber en panne de batterie en tournée, de perdre les tournées longues mieux payées et ils voient dans le boîtier télématique un outil de surveillance et de sanction. »\n- **Élu du CSE (atelier)** : « Les techniciens les plus anciens se demandent ce qu'ils vont devenir : ils ne connaissent pas l'électrique, et personne ne leur a parlé de formation. »\n- **Chef de l'agence de Valence** : « Mes clients veulent des livraisons à l'heure, pas des camions verts. Je ne vois pas pourquoi je ferais des efforts qui ne comptent pas dans ma prime. »\n- **Directeur général** : « La décision est prise. J'annoncerai le plan par une note de service en janvier et les tracteurs électriques arriveront à partir de mars. »\n- **DRH** : « Nous devons de toute façon ouvrir cette année la négociation sur la gestion des emplois et des parcours professionnels. »"
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1-scope-1",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À partir de l'annexe 1, calculez les émissions du scope 1 de Rhodanor en 2025, en tonnes de CO₂ équivalent (tCO₂e), à l'unité près.",
+          "expected_value": 38858,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 10
+          },
+          "unit": "tCO₂e",
+          "decimals": 0,
+          "explanation": "Le scope 1 regroupe les émissions directes des sources détenues ou contrôlées : combustion du gazole 15 000 000 × 2,50 = 37 500 000 kg = 37 500 t ; gaz naturel 2 400 000 × 0,227 = 544,8 t ; fuites de fluide frigorigène 380 × 2 140 = 813,2 t. Total = 38 858 tCO₂e. Erreurs classiques : ajouter l'amont du gazole (9 000 t, scope 3), soit 47 858 t, ou l'électricité achetée (494 t, scope 2), soit 39 352 t ; oublier les fuites de fluide (38 044,8 t)."
+        },
+        {
+          "id": "q2-classement-scopes",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À partir de l'annexe 1, quelle affirmation sur le classement des émissions de Rhodanor est exacte ?",
+          "options": [
+            "L'amont du gazole relève du scope 1, puisque ce carburant est brûlé dans les tracteurs de l'entreprise",
+            "Les transports confiés aux affréteurs relèvent du scope 1, car Rhodanor reste responsable de la prestation envers ses clients",
+            "Les fuites de fluide frigorigène relèvent du scope 1, l'électricité des entrepôts du scope 2 et les transports confiés aux affréteurs du scope 3",
+            "Comme dans la plupart des entreprises, le scope 3 représente plus de la moitié des émissions de Rhodanor"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "L'option 3 est exacte : les fuites proviennent d'équipements que Rhodanor détient (émissions directes, scope 1) ; l'électricité achetée est produite ailleurs (scope 2) ; les camions des affréteurs ne sont ni détenus ni contrôlés par Rhodanor (scope 3 amont). L'option 1 est fausse : seule la combustion dans les tracteurs est directe ; l'extraction, le raffinage et le transport du carburant ont lieu chez les fournisseurs (scope 3). L'option 2 est fausse : la responsabilité commerciale ne change pas le classement, qui dépend de la détention ou du contrôle de la source. L'option 4 est fausse : le scope 3 atteint 9 000 + 2 200 + 820 + 3 600 = 15 620 t sur un total de 54 972 t, soit 28,4 % ; pour un transporteur qui exploite sa propre flotte, le scope 1 domine (70,7 %)."
+        },
+        {
+          "id": "q3-intensite",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À partir de l'annexe 1 et de la question 1, calculez l'intensité carbone des scopes 1 et 2 en 2025, en grammes de CO₂e par tonne-kilomètre transportée par la flotte propre, arrondie à une décimale.",
+          "expected_value": 82.0,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "gCO₂e/t.km",
+          "decimals": 1,
+          "explanation": "Scope 2 = 9 500 000 × 0,052 = 494 000 kg = 494 t. Scopes 1 et 2 = 38 858 + 494 = 39 352 t = 39 352 000 000 g. Intensité = 39 352 000 000 ÷ 480 000 000 = 81,98, soit 82,0 gCO₂e/t.km. Erreurs classiques : retenir le seul scope 1 (80,95, soit 81,0) ou ajouter le scope 3 (114,5). L'intensité rapportée aux t.km permet de comparer Rhodanor à d'autres transporteurs, mais l'objectif du plan porte sur les émissions en valeur absolue."
+        },
+        {
+          "id": "q4-obligations-beges",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À partir du contexte et de l'annexe 1, quelle affirmation sur l'obligation de Rhodanor d'établir un bilan des émissions de gaz à effet de serre (C. env. art. L. 229-25 et R. 229-47) est exacte ?",
+          "options": [
+            "Rhodanor n'est pas tenue d'établir ce bilan, puisqu'elle n'est pas soumise à la publication d'un état de durabilité",
+            "Le bilan doit couvrir les émissions directes et les émissions indirectes liées à l'électricité achetée ; l'amont du gazole, l'affrètement, les déplacements et les achats peuvent y figurer à titre volontaire ; il est joint à un plan de transition, rendu public et mis à jour tous les quatre ans",
+            "Employant plus de 500 personnes, Rhodanor doit y inclure obligatoirement toutes ses émissions indirectes significatives, dont l'affrètement et les achats",
+            "Le bilan est mis à jour tous les trois ans ; son défaut n'est assorti d'aucune sanction"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "L'option 2 est exacte. Le bilan est imposé aux personnes morales de droit privé employant plus de 500 personnes (Rhodanor en compte 820), avec un plan de transition, une publication et une mise à jour tous les quatre ans (C. env. art. L. 229-25). Le bilan distingue émissions directes et émissions indirectes significatives (C. env. art. R. 229-47) ; toutefois, pour les personnes morales de droit privé qui ne publient pas d'état de durabilité et ne relèvent pas des obligations des sociétés cotées (C. com. art. L. 22-10-36, L. 232-6-3 et L. 233-28-4), les émissions indirectes obligatoires se limitent à celles de la consommation d'électricité, de chaleur ou de vapeur. L'option 1 est fausse : l'obligation dépend de l'effectif ; l'état de durabilité ne joue que comme cause de dispense (bilan publié dans ce cadre). L'option 3 est fausse : le scope 3 n'est obligatoire que pour les entreprises soumises à ces articles du Code de commerce, ce qui n'est pas le cas par hypothèse. L'option 4 est fausse : la mise à jour est quadriennale pour les entreprises (trois ans pour les personnes publiques) et le manquement est passible d'une amende administrative de 50 000 € au plus (100 000 € en cas de récidive)."
+        },
+        {
+          "id": "q5-cible-2030",
+          "kind": "numeric",
+          "points": 1,
+          "prompt": "À partir de l'annexe 2 et de la question 3, calculez le plafond d'émissions des scopes 1 et 2 visé pour 2030, en tCO₂e, à une décimale.",
+          "expected_value": 23611.2,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "tCO₂e",
+          "decimals": 1,
+          "explanation": "Cible 2030 = émissions de référence 2025 × (1 − 40 %) = 39 352 × 0,60 = 23 611,2 tCO₂e, soit une réduction à obtenir de 15 740,8 t. Erreurs classiques : appliquer la réduction au seul scope 1 (23 314,8 t) ou au bilan de 2021 (52 100 t, tous postes confondus, qui n'est ni la bonne année de référence ni le bon périmètre)."
+        },
+        {
+          "id": "q6-emissions-2030-plan",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À partir des annexes 1 et 2, calculez les émissions des scopes 1 et 2 attendues en 2030 si les quatre actions du plan sont menées à bien, à activité constante, en tCO₂e à l'unité près.",
+          "expected_value": 25626,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 5
+          },
+          "unit": "tCO₂e",
+          "decimals": 0,
+          "explanation": "Par tracteur remplacé : émissions diesel évitées = 105 000 × 0,32 L × 2,50 = 84 000 kg = 84 t (scope 1) ; émissions de l'électricité de recharge = 105 000 × 1,25 × 0,052 = 6 825 kg = 6,825 t (scope 2) ; gain net = 77,175 t. Pour 150 tracteurs : 11 576,25 t. Total du plan = 11 576,25 + 500 + 400 + 1 250 = 13 726,25 t. Émissions 2030 = 39 352 − 13 726,25 = 25 625,75 ≈ 25 626 tCO₂e, au-dessus de la cible de 23 611,2 t : il manque 2 014,55 t. Erreur classique : oublier l'électricité consommée par les tracteurs électriques (gain de 84 t par tracteur), ce qui donne 24 602 t et sous-estime l'écart."
+        },
+        {
+          "id": "q7-tracteurs-supplementaires",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À partir de l'annexe 2 et des questions 5 et 6, combien de tracteurs diesel faudrait-il remplacer en plus des 150 prévus pour atteindre la cible de 2030 ? On suppose que les tracteurs supplémentaires ont les mêmes caractéristiques que ceux de l'action 1 (kilométrage et consommations) et que les gains des actions 2 à 4 sont inchangés. Donnez le plus petit nombre entier permettant d'atteindre la cible.",
+          "expected_value": 27,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0
+          },
+          "unit": "tracteurs",
+          "decimals": 0,
+          "explanation": "Écart à combler = 25 625,75 − 23 611,2 = 2 014,55 t. Gain net par tracteur = 77,175 t. Nombre = 2 014,55 ÷ 77,175 = 26,1, arrondi à l'entier supérieur pour atteindre la cible : 27 tracteurs (177 au total, sur 420). Erreurs classiques : arrondir à 26 (cible manquée de 8,0 t) ou utiliser le gain brut de 84 t (24 tracteurs). L'arrondi supérieur s'impose car il s'agit d'un plafond à respecter."
+        },
+        {
+          "id": "q8-indicateurs",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À partir des annexes 3 et 5, quelle affirmation sur les indicateurs du tableau de bord est exacte ?",
+          "options": [
+            "La consommation de gazole aux 100 km, suivie chaque mois par agence et par conducteur, est un indicateur de pilotage pertinent pour les chefs d'agence : elle est maîtrisable et réagit vite aux actions (éco-conduite, entretien, affectation des véhicules)",
+            "Les émissions totales de l'entreprise, tous scopes confondus, sont le meilleur indicateur pour évaluer chaque chef d'agence",
+            "Le nombre de réunions du comité RSE est un indicateur de résultat de la performance environnementale",
+            "Une baisse de l'intensité carbone en gCO₂e par t.km garantit une baisse des émissions et suffit à suivre la trajectoire du plan"
+          ],
+          "answer": [
+            0
+          ],
+          "explanation": "L'option 1 est exacte : l'indicateur est lié à l'objectif (le gazole représente 37 500 t, soit 95 % des scopes 1 et 2), maîtrisable localement, disponible rapidement grâce à la télématique, et il annonce l'évolution des émissions : c'est un indicateur avancé. L'option 2 est fausse : un chef d'agence ne maîtrise ni les achats, ni l'affrètement décidé au siège, ni le facteur d'émission de l'électricité ; un indicateur non maîtrisable ne doit pas servir à évaluer un responsable, et un indicateur annuel arrive trop tard pour agir. L'option 3 est fausse : il mesure une activité ou un moyen, pas un résultat environnemental, et sa cible (4 réunions) ne dit rien des émissions. L'option 4 est fausse : si les t.km augmentent, les émissions absolues peuvent croître malgré une intensité en baisse ; la trajectoire se suit en valeur absolue, l'intensité la complète."
+        },
+        {
+          "id": "q9-gepp-ecart",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À partir de l'annexe 4, calculez l'écart quantitatif entre le besoin et les ressources prévisibles en techniciens de maintenance fin 2029 (positif si les besoins dépassent les ressources), en nombre de personnes.",
+          "expected_value": 7,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0
+          },
+          "unit": "techniciens",
+          "decimals": 0,
+          "explanation": "Ressources prévisibles fin 2029 = 40 − 6 départs en retraite − 6 démissions (2 par an sur trois ans) − 2 promotions hors du métier + 3 reconversions entrantes = 29. Écart = 36 − 29 = 7 techniciens à recruter. L'écart qualitatif est plus lourd : il faut 20 habilités, contre 4 aujourd'hui ; si les 7 recrues sont habilitées, 9 des techniciens actuels ou reconvertis restent à former (20 − 4 − 7), davantage si le recrutement de profils habilités échoue sur un marché tendu. Erreurs classiques : oublier les promotions (écart de 5), compter 2 démissions au total au lieu de 2 par an (écart de 3) ou comparer le besoin à l'effectif actuel (−4)."
+        },
+        {
+          "id": "q10-negociation-gepp",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "Vrai ou faux ? À partir du contexte et de l'annexe 4, Rhodanor, qui n'a pas conclu d'accord de méthode, doit engager en 2026 la négociation sur la gestion des emplois et des parcours professionnels, qui est triennale à défaut d'accord.",
+          "answer": true,
+          "explanation": "Vrai. Les entreprises d'au moins 300 salariés négocient sur la gestion des emplois et des parcours professionnels au moins tous les quatre ans (C. trav. art. L. 2242-2), selon la périodicité fixée par un accord de méthode (art. L. 2242-11). À défaut d'accord, la négociation est triennale (art. L. 2242-13, 3° et L. 2242-20) : la dernière ayant eu lieu en 2023, elle doit être engagée en 2026. Elle porte notamment sur la mise en place d'un dispositif de gestion prévisionnelle des emplois et des compétences, « notamment pour répondre aux enjeux de la transition écologique », et sur les orientations de la formation (art. L. 2242-20, 1° et 3°) : c'est le cadre naturel pour négocier l'accompagnement de l'électrification de la flotte."
+        },
+        {
+          "id": "q11-conduite-changement",
+          "kind": "open",
+          "points": 2.5,
+          "prompt": "À partir des annexes 4 et 5, analysez les résistances au changement suscitées par le plan de transition, puis proposez une démarche de conduite du changement en vous appuyant sur un modèle de référence et sur la gestion des emplois et des parcours professionnels.",
+          "model_answer": "Les résistances sont nombreuses et compréhensibles. Les conducteurs craignent pour leur sécurité et leur travail (panne de batterie en tournée), pour leur rémunération (perte des tournées longues) et pour leur autonomie (télématique perçue comme un outil de surveillance) ; ils ont appris le projet par la presse, ce qui nourrit la défiance. Les techniciens âgés redoutent l'obsolescence de leurs compétences, faute d'information sur la formation. Le chef d'agence de Valence oppose un objectif de service et une prime fondée sur la seule marge : sa résistance révèle une incohérence du système d'évaluation. Enfin, l'annonce prévue par note de service traduit un changement prescrit, sans participation, qui risque d'aggraver la rotation des conducteurs (21 %) dans un métier en pénurie. Le modèle de Kotter fournit une démarche : créer le sentiment d'urgence en partageant les faits (exigences des clients et appels d'offres, obligation légale du bilan et du plan de transition, 95 % des émissions des scopes 1 et 2 dues au gazole) ; former une coalition directrice associant direction, chefs d'agence, élus du CSE, conducteurs et techniciens référents ; élaborer et communiquer une vision (une entreprise qui garde ses clients et ses emplois en décarbonant) ; lever les obstacles (garantie de rémunération lors du changement d'affectation, autonomie des tracteurs adaptée aux tournées régionales, télématique utilisée pour le conseil en éco-conduite et non pour sanctionner, critères de prime revus) ; obtenir des victoires rapides par une expérimentation avec des conducteurs volontaires et diffuser leurs résultats ; consolider puis ancrer les nouvelles pratiques dans la culture. La GEPP en est le pilier : la négociation obligatoire de 2026 permet de construire avec les partenaires sociaux un plan de formation à l'habilitation électrique, des parcours de reconversion de conducteurs vers la maintenance, le recrutement des 7 techniciens manquants, et la transmission du savoir-faire des 14 techniciens de plus de 55 ans sur les groupes froids (binômes, guides de réglage : socialisation et externalisation du modèle SECI). Le calendrier de mars doit être adapté en conséquence : un déploiement progressif réussi vaut mieux qu'une annonce rapide rejetée.",
+          "key_points": [
+            "Diagnostic des résistances par population : peur de perdre (rémunération, compétences), incertitude technique, défiance envers la télématique, défaut d'information",
+            "Résistance du chef d'agence révélatrice d'objectifs et de primes incohérents avec la stratégie",
+            "Démarche nommée (Kotter ou Lewin) appliquée au cas : urgence fondée sur les faits, coalition, communication, victoires rapides par un pilote, ancrage",
+            "Participation : CSE, conducteurs volontaires, télématique utilisée pour le conseil et non la sanction",
+            "GEPP : négociation de 2026, habilitations, reconversions, recrutement des 7 techniciens, transmission du savoir-faire des seniors"
+          ],
+          "explanation": "La copie doit partir des faits de l'annexe 5 et ne pas se limiter à réciter un modèle. Lewin (décristallisation, déplacement, recristallisation) est accepté s'il est appliqué au cas. Le lien avec la négociation obligatoire sur la GEPP (question 10) et avec l'écart de compétences (question 9) est attendu."
+        },
+        {
+          "id": "q12-integration-pilotage",
+          "kind": "open",
+          "points": 3,
+          "prompt": "En vous appuyant sur l'ensemble du dossier, critiquez le tableau de bord RSE actuel (annexe 3), puis proposez une intégration des indicateurs de durabilité dans le pilotage de Rhodanor : tableau de bord, budgets et décisions d'investissement, évaluation des responsables.",
+          "model_answer": "Le tableau de bord actuel relève de la communication plus que du pilotage. Il est annuel et publié six mois après la clôture, donc inutilisable pour agir ; il est produit par le service communication, sans lien avec le contrôle de gestion ni avec le comité de direction ; il n'est pas décliné par agence ; ses indicateurs n'ont pas de cible, sauf le nombre de réunions du comité RSE, qui mesure un moyen et non un résultat ; il ne suit pas l'enjeu principal, les émissions, non calculées depuis 2021 ; il mélange des indicateurs utiles (consommation aux 100 km, accidents, rotation des conducteurs) et des données d'affichage (dons). Enfin, la prime des chefs d'agence ne dépend que de la marge : rien ne les incite à agir, d'où un risque de découplage entre le discours RSE et les pratiques. Proposition. Un tableau de bord mensuel, construit avec les chefs d'agence, qui traduit l'objectif de −40 % : en résultat, les émissions des scopes 1 et 2 en valeur absolue comparées à la trajectoire (de 39 352 t en 2025 à 23 611 t en 2030) et l'intensité en gCO₂e par t.km (82,0 en 2025) ; en pilotage, par agence, la consommation aux 100 km, la part des km parcourus en électrique, le taux de disponibilité des tracteurs électriques, les kg de fluide rechargés, la part des conducteurs formés à l'éco-conduite ; sur le volet social, le taux de fréquence des accidents (31), la rotation des conducteurs, le nombre de techniciens habilités (cible 20 en 2029). Ces indicateurs peuvent s'insérer dans un balanced scorecard enrichi d'un axe environnemental et social, avec des relations de cause à effet explicites (formation → consommation → émissions → maintien des contrats clients). Dans les budgets : un budget carbone par agence décliné de la trajectoire, suivi comme le budget financier avec analyse des écarts ; dans les décisions d'investissement : un prix interne du carbone (100 € par tonne) intégré au calcul de rentabilité des tracteurs électriques et des pompes à chaleur, qui rend visibles les émissions évitées. Pour l'évaluation : une part de la rémunération variable des chefs d'agence et des dirigeants fondée sur des indicateurs qu'ils maîtrisent (consommation, formation, accidents), et non sur les émissions totales. Il faut enfin fiabiliser la collecte (télématique, factures d'énergie, registres de recharge des fluides), documenter les facteurs d'émission et préparer une éventuelle vérification par un tiers. Ainsi, l'obligation légale du bilan et du plan de transition devient un outil de pilotage stratégique et commercial.",
+          "key_points": [
+            "Critique : reporting annuel et tardif, sans cibles, non décliné, indicateurs de moyens ou d'affichage, émissions non suivies, primes déconnectées (risque de découplage)",
+            "Tableau de bord mensuel par agence : indicateurs de résultat (émissions absolues contre trajectoire, intensité) et de pilotage (L/100 km, km électriques, fuites, formation)",
+            "Intégration au balanced scorecard (axe environnemental et social) avec relations de cause à effet",
+            "Budget carbone et prix interne du carbone dans les choix d'investissement",
+            "Rémunération variable fondée sur des indicateurs maîtrisables ; fiabilité et traçabilité des données"
+          ],
+          "explanation": "Le correcteur attend une critique argumentée à partir de l'annexe 3 puis une proposition chiffrée qui reprend les résultats du dossier (trajectoire, intensité, techniciens habilités) et couvre les trois volets demandés : tableau de bord, budgets et investissements, évaluation des responsables."
+        }
+      ]
+    }
+  ]
+}

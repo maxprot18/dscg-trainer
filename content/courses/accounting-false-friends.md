@@ -12,10 +12,10 @@
 **Usual pitfalls** (French → correct English, *wrong literal translation*)
 - *résultat* → profit or loss, net income (*result*) ; *résultat d'exploitation* → operating profit (*exploitation result*) ; *chiffre d'affaires* → revenue, turnover (*business figure*)
 - *exercice* → financial year, FY (*exercise*: a drill or a share option exercise) ; *bilan* → balance sheet (*bilan*) ; *actuel* → current (*actual* means real, as in "actual vs budget")
-- *charges* → expenses (in English, charges are fees or levies; "a charge" in a P&L is a one-off expense such as an impairment charge) ; *produits* → income, revenue (*products* are goods)
+- *charges* → expenses (in English, charges are fees or levies; in a P&L, "charge" names a specific expense item, e.g. a depreciation, impairment or tax charge) ; *produits* → income, revenue (*products* are goods)
 - *bénéfice* → profit (*benefit* is an advantage or an employee benefit, *avantage du personnel*) ; *actif / passif* → assets / equity and liabilities ; *capitaux propres* → equity
 - *commissaire aux comptes* → statutory auditor (*commissioner*) ; *expert-comptable* → chartered accountant ; *librairie* → bookshop (*library* = *bibliothèque*)
-- *amortissement* → depreciation or amortisation ; *dépréciation* → impairment ; *plus-value de cession* → gain on disposal ; *stock* → inventories (in US English, stock means shares)
+- *amortissement* → depreciation or amortisation ; *dépréciation* → impairment ; *plus-value de cession* → gain on disposal ; *stock* → inventories (traditional UK accounts also say stock; in US English, stock means shares)
 - *actions / obligations* → shares / bonds (*obligations* means commitments) ; *trésorerie* → cash (treasury is the department) ; *société* → company (*society*)
 
 ## Example

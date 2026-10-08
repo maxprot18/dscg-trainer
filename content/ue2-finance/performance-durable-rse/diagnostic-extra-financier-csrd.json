@@ -24,6 +24,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : la valeur ajoutée peut servir à une analyse complémentaire, mais n'est pas le dénominateur prévu par E1-6.",
+        "Inexact : le total du bilan n'est pas le dénominateur prévu par l'exigence E1-6.",
+        "Inexact : l'effectif peut servir à une analyse complémentaire, mais n'est pas le dénominateur prévu par E1-6.",
+        "Exact : ESRS E1, exigence E1-6 : intensité GES par chiffre d'affaires net, rapproché des états financiers."
+      ],
       "explanation": "L'exigence E1-6 de l'ESRS E1 demande une intensité GES par chiffre d'affaires net (tCO₂e par unité monétaire de chiffre d'affaires), le chiffre d'affaires étant rapproché des états financiers (option 4). La valeur ajoutée (option 1), le total du bilan (option 2) et l'effectif (option 3) peuvent servir à des analyses complémentaires, mais ne sont pas le dénominateur prévu par la norme."
     },
     {
@@ -50,6 +56,12 @@
       ],
       "answer": [
         0
+      ],
+      "option_explanations": [
+        "Exact : prix fictif (shadow price) sans flux réel ni écriture ; il peut rendre négative la VAN d'un projet très émetteur.",
+        "Inexact : confond prix fictif et coût réel ; aucune charge comptable n'est enregistrée.",
+        "Inexact : la valorisation interne ne réduit pas les émissions brutes, publiées sans déduction.",
+        "Inexact : une redevance interne est réellement facturée aux entités, ce que l'énoncé exclut."
       ],
       "explanation": "Il s'agit d'un prix fictif (shadow price) : il modifie les critères de choix d'investissement sans flux réel ni écriture comptable (option 1). Un projet très émetteur peut ainsi voir sa VAN devenir négative. L'option 2 confond prix fictif et coût réel. L'option 3 est fausse : la valorisation interne ne réduit pas les émissions brutes, qui sont publiées sans déduction. L'option 4 décrit une redevance interne (internal fee), réellement facturée aux entités, ce que l'énoncé exclut. L'ESRS E1 (E1-8) demande de décrire le type de dispositif, le prix par tonne et le périmètre couvert."
     },
@@ -87,15 +99,15 @@
       "source_ref": "Règl. délégué (UE) 2023/2772, ESRS E1, E1-6 (émissions brutes scopes 1, 2 et 3, intensité par chiffre d'affaires net) et E1-7 (crédits carbone présentés séparément)",
       "verified": true,
       "estimated_seconds": 180,
-      "statement": "L'état de durabilité de la société Brenne indique pour l'exercice N : scope 1 : 12 000 tCO₂e ; scope 2 : 3 800 tCO₂e selon la méthode fondée sur la localisation et 3 000 tCO₂e selon la méthode fondée sur le marché ; scope 3 : 45 000 tCO₂e. La société a acquis et annulé 5 000 tonnes de crédits carbone. Son chiffre d'affaires net s'élève à 250 M€. En retenant le scope 2 fondé sur le marché, calculez l'intensité GES totale (scopes 1, 2 et 3) en tCO₂e par M€ de chiffre d'affaires, arrondie à l'unité.",
-      "expected_value": 240,
+      "statement": "L'état de durabilité de la société Brenne (effectif moyen : 1 500 salariés) indique pour l'exercice N : scope 1 : 12 000 tCO₂e ; scope 2 : 3 800 tCO₂e selon la méthode fondée sur la localisation et 3 000 tCO₂e selon la méthode fondée sur le marché ; scope 3 : 45 000 tCO₂e. La société a acquis et annulé 5 000 tonnes de crédits carbone. Son chiffre d'affaires net s'élève à 500 M€. En retenant le scope 2 fondé sur le marché, calculez l'intensité GES totale (scopes 1, 2 et 3) en tCO₂e par M€ de chiffre d'affaires, arrondie à l'unité.",
+      "expected_value": 120,
       "tolerance": {
         "kind": "absolute",
         "value": 0.5
       },
       "unit": "tCO₂e/M€",
       "decimals": 0,
-      "explanation": "Émissions brutes totales = 12 000 + 3 000 + 45 000 = 60 000 tCO₂e. Intensité = 60 000 / 250 = 240 tCO₂e par M€. Les crédits carbone sont présentés séparément et ne viennent jamais en déduction des émissions brutes (une déduction donnerait 220). Retenir le scope 2 fondé sur la localisation donnerait 243,2 : l'énoncé impose la méthode fondée sur le marché."
+      "explanation": "Émissions brutes totales = 12 000 + 3 000 + 45 000 = 60 000 tCO₂e. Intensité = 60 000 / 500 = 120 tCO₂e par M€. Les crédits carbone sont présentés séparément et ne viennent jamais en déduction des émissions brutes (une déduction donnerait 110). Retenir le scope 2 fondé sur la localisation donnerait 121,6 : l'énoncé impose la méthode fondée sur le marché."
     },
     {
       "id": "ue2-rse-csrd-0005",

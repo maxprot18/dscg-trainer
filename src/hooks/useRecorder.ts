@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 
-export type RecorderState = 'idle' | 'recording' | 'stopped' | 'unsupported' | 'denied'
+export type RecorderState = 'idle' | 'recording' | 'stopped' | 'unsupported' | 'denied' | 'no-mic' | 'busy'
 
 /**
  * Enregistrement audio local (MediaRecorder) : rien ne quitte l'appareil. L'enregistrement est
@@ -34,8 +34,10 @@ export function useRecorder() {
       recorder.current = rec
       setMimeType(rec.mimeType || 'audio/webm')
       setState('recording')
-    } catch {
-      setState('denied')
+    } catch (error) {
+      // Refus de l'autorisation, absence de micro ou micro déjà utilisé : messages distincts.
+      const name = error instanceof DOMException ? error.name : ''
+      setState(name === 'NotFoundError' || name === 'OverconstrainedError' ? 'no-mic' : name === 'NotReadableError' ? 'busy' : 'denied')
     }
   }, [supported])
 

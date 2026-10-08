@@ -26,6 +26,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : le capital-risque finance des entreprises en création ou très jeunes, sans dette d'acquisition.",
+        "Inexact : le capital-développement finance la croissance d'une entreprise existante, sans changement de contrôle.",
+        "Inexact : le capital-retournement concerne les entreprises en difficulté.",
+        "Exact : le rachat d'une entreprise mature par une holding endettée, avec les dirigeants, relève du capital-transmission, dont le LBO est l'outil principal."
+      ],
       "explanation": "Le rachat d'une entreprise mature par une holding endettée, avec les dirigeants (MBO) ou une nouvelle équipe (MBI), relève du capital-transmission, dont le LBO est l'outil principal. Le capital-risque (option 1) finance des entreprises en création ou très jeunes, sans dette d'acquisition. Le capital-développement (option 2) apporte des fonds propres à une entreprise existante pour financer sa croissance, sans changement de contrôle. Le capital-retournement (option 3) concerne les entreprises en difficulté."
     },
     {
@@ -54,6 +60,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : 1,25 M€ est l'IS de la cible seule (5 × 25 %), pas l'économie.",
+        "Inexact : décrit la situation sans intégration ; l'intégration impute le déficit de la holding sur le bénéfice de la cible.",
+        "Exact : résultat d'ensemble 5 − 1,2 = 3,8 M€ ; économie = 1,2 × 25 % = 0,30 M€ (levier fiscal).",
+        "Inexact : 0,95 M€ est l'IS du groupe intégré (3,8 × 25 %), pas l'économie."
+      ],
       "explanation": "Sans intégration, la cible paie 5 × 25 % = 1,25 M€ et le déficit de la holding (1,2 M€) reste reportable sans imputation possible faute de bénéfice propre. Avec l'intégration, le résultat d'ensemble est de 5 − 1,2 = 3,8 M€ et l'IS du groupe de 0,95 M€ : l'économie est 1,2 × 25 % = 0,30 M€. C'est le levier fiscal du LBO. L'option 1 est l'IS de la cible seule ; l'option 2 décrit justement la situation sans intégration ; l'option 4 est l'IS du groupe intégré, pas l'économie."
     },
     {
@@ -82,6 +94,12 @@
         0
       ],
       "multiple": false,
+      "option_explanations": [
+        "Exact : régime mère-fille : seule la quote-part de frais et charges de 5 % est imposée : 4 000 000 × 5 % × 25 % = 50 000 €.",
+        "Inexact : applique l'IS à la totalité des dividendes, comme sans régime mère-fille.",
+        "Inexact : oublie la quote-part de frais et charges de 5 % réintégrée.",
+        "Inexact : la quote-part de 1 % est réservée aux sociétés d'un même groupe intégré (art. 216 I), impossible à 80 %."
+      ],
       "explanation": "Le régime mère-fille (participation d'au moins 5 %) exonère les dividendes, sauf une quote-part de frais et charges de 5 % réintégrée au résultat imposable : 4 000 000 × 5 % × 25 % = 50 000 €. L'option 2 applique l'IS à la totalité des dividendes, comme sans régime mère-fille. L'option 3 oublie la quote-part. L'option 4 retient une quote-part de 1 %, réservée aux dividendes reçus de sociétés membres du même groupe intégré depuis plus d'un exercice (art. 216 I), ce qui suppose une détention d'au moins 95 %."
     },
     {

@@ -94,3 +94,13 @@ test('sujet type d’examen : listé dans S’entraîner, annexes dépliables', 
   expect(width).toBeLessThanOrEqual(page.viewportSize()!.width)
   void errors
 })
+
+test('sujet complet : dossiers enchaînés, chronométrés à la durée de l’épreuve', async ({ page, errors }) => {
+  await page.goto('entrainement')
+  await page.getByLabel('UE du sujet').selectOption('UE2')
+  await page.getByRole('button', { name: /Commencer le sujet/ }).click()
+  await expect(page).toHaveURL(/mode=full/)
+  await expect(page.getByLabel('Temps restant')).toHaveText(/^2:5\d:\d\d$|^3:00:00$/)
+  await expect(page.getByText('Sujet type d’examen')).toBeVisible()
+  void errors
+})

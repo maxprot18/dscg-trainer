@@ -67,6 +67,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : le gain est latent, pas réalisé ; par prudence, il n'est pas porté en résultat.",
+        "Exact : dette convertie à 23 000 € contre 23 600 € ; la baisse de 600 € est créditée au 477, sans produit.",
+        "Inexact : à la clôture, la dette doit être convertie au cours de clôture (1,15 €).",
+        "Inexact : le compte 476 et la provision concernent les pertes latentes, pas ce gain latent."
+      ],
       "explanation": "À la clôture, la dette est convertie au cours de clôture : 20 000 × 1,15 = 23 000 € contre 23 600 € comptabilisés, soit une baisse de 600 €, c'est-à-dire un gain latent. La dette est débitée de 600 € par le crédit du compte 477 ; par prudence, le gain latent n'est pas porté en résultat. Il ne s'agit pas d'un gain réalisé (première réponse). La dette doit être convertie au cours de clôture (troisième réponse). Le compte 476 et la provision concernent les pertes latentes (quatrième réponse).",
       "source_ref": "PCG art. 420-1 s. (règl. ANC 2014-03) ; compte 477",
       "estimated_seconds": 60
@@ -92,6 +98,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : 1 200 € ignore la position globale de change, qui limite la provision à l'excédent des pertes sur les gains.",
+        "Inexact : 1 900 € additionne pertes et gains latents, alors que le gain vient en diminution.",
+        "Exact : position globale de change : provision limitée à l'excédent des pertes latentes, 1 200 − 700 = 500 €.",
+        "Inexact : le gain latent de 700 € ne couvre pas intégralement la perte de 1 200 €."
       ],
       "explanation": "En principe, chaque perte latente est provisionnée. Lorsque des créances et dettes libellées dans la même devise ont des échéances suffisamment voisines, elles forment une position globale de change et la provision est limitée à l'excédent des pertes latentes sur les gains latents : 1 200 − 700 = 500 €. Les écarts restent inscrits pour leur montant brut aux comptes 476 (1 200 €) et 477 (700 €). 1 200 € ignore la position globale ; 1 900 € additionne pertes et gains ; 0 € suppose à tort que le gain couvre intégralement la perte.",
       "source_ref": "PCG art. 420-1 s. (provision pour perte de change, position globale de change, règl. ANC 2014-03) ; comptes 476, 477, 1515",

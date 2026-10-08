@@ -20,7 +20,7 @@
 
 ## Exemple
 Un fabricant d'appareils de cuisine vend un modèle 70 € (coût variable 40 €, coûts fixes 600 000 €) : seuil = 600 000 ÷ (70 − 40) = 20 000 unités. Une version différenciée (design, garantie étendue) serait vendue 95 € avec un coût variable de 52 € et des coûts fixes de 900 000 € : seuil = 900 000 ÷ (95 − 52) = 900 000 ÷ 43 ≈ 20 930 unités. La différenciation n'est pertinente que si le marché accepte le prix de 95 € pour un volume supérieur au seuil ; à 25 000 unités, le résultat passe de 150 000 € à 175 000 €.
-Position de coût : deux fabricants suivent une courbe d'expérience à 80 % ; le leader a produit 270 000 unités cumulées, le challenger 90 000 (rapport 3). Coût du leader ÷ coût du challenger = 3^(log₂ 0,80) = 3^(−0,322) ≈ 0,702 : si le challenger produit à 100 €, le leader produit à environ 70,20 €.
+Position de coût : deux fabricants suivent une courbe d'expérience à 80 % ; le leader a produit 270 000 unités cumulées, le challenger 90 000 (rapport 3). Coût du leader ÷ coût du challenger = 3^(log₂ 0,80) = 3^(−0,3219) ≈ 0,7021 : si le challenger produit à 100 €, le leader produit à environ 70,21 €.
 
 ## Erreurs fréquentes
 - Qualifier de « différenciation » une offre sur mesure vendue à un segment étroit (golfeurs gauchers, par exemple) : dans la matrice de Porter, c'est une focalisation (par la différenciation) : la différenciation proprement dite vise une cible large, l'ensemble du secteur ; la cible étroite relève de la focalisation.

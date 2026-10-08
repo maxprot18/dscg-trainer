@@ -92,6 +92,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : rapporte les flux non actualisés à l'investissement (350 000 / 250 000).",
+        "Exact : valeur actuelle des flux = 70 000 × 3,790787 ≈ 265 355 € ; IP = 265 355 / 250 000 ≈ 1,06.",
+        "Inexact : c'est le rapport VAN / I₀, qui vaut IP − 1.",
+        "Inexact : inverse le rapport (I₀ / valeur actuelle des flux)."
+      ],
       "explanation": "Valeur actuelle des flux = 70 000 × [1 − 1,10⁻⁵] / 0,10 ≈ 70 000 × 3,790787 ≈ 265 355 €. IP = 265 355 / 250 000 ≈ 1,06 (option 2) : chaque euro investi restitue 1,06 € actualisé, la VAN (≈ 15 355 €) est positive. L'option 1 rapporte les flux non actualisés (350 000 / 250 000). L'option 3 est le rapport VAN / I₀, qui vaut IP − 1. L'option 4 inverse le rapport (I₀ / valeur actuelle des flux)."
     },
     {
@@ -118,6 +124,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : pour des projets exclusifs, la VAN prime ; au taux de 6 %, inférieur au taux d'indifférence, le TRI classe mal.",
+        "Exact : VAN à 6 % : A ≈ 25 943 €, B ≈ 20 286 € ; le classement ne s'inverse qu'au-delà du taux d'indifférence d'environ 10,7 %.",
+        "Inexact : à 6 %, la VAN de B (≈ 20 286 €) est inférieure à celle de A (≈ 25 943 €).",
+        "Inexact : confond taux d'indifférence (TRI du projet différentiel A − B, ≈ 10,7 %) et TRI de A."
       ],
       "explanation": "VAN à 6 % : A = 150 000 × 1,06⁻³ − 100 000 ≈ 25 943 € ; B = 45 000 × 2,673012 − 100 000 ≈ 20 286 €. A l'emporte (option 2). Le taux d'indifférence est le TRI du projet différentiel A − B (flux 0 ; −45 000 ; −45 000 ; +105 000) : il vaut environ 10,73 %. En dessous, A a la plus forte VAN ; au-dessus, B. Comme 6 % < 10,7 %, le TRI (option 1) donne un classement erroné : pour des projets exclusifs, la VAN prime. L'option 3 est fausse numériquement. L'option 4 confond taux d'indifférence et TRI de A."
     },

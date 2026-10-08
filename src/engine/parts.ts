@@ -10,6 +10,8 @@ export interface ChoicePart {
   options: string[]
   answer: number[]
   multiple: boolean
+  /** Explication de chaque option, dans l'ordre (facultatif). */
+  option_explanations?: string[]
 }
 export interface BooleanPart {
   kind: 'boolean'
@@ -55,7 +57,7 @@ export type Part = PartData & {
 function subQuestionData(q: SubQuestion): PartData {
   switch (q.kind) {
     case 'mcq':
-      return { kind: 'choice', options: q.options, answer: q.answer, multiple: q.multiple }
+      return { kind: 'choice', options: q.options, answer: q.answer, multiple: q.multiple, option_explanations: q.option_explanations }
     case 'true_false':
       return { kind: 'boolean', answer: q.answer }
     case 'numeric':
@@ -70,7 +72,17 @@ function subQuestionData(q: SubQuestion): PartData {
 export function exerciseParts(ex: Exercise): Part[] {
   switch (ex.type) {
     case 'mcq':
-      return [{ id: 'main', weight: 1, kind: 'choice', options: ex.options, answer: ex.answer, multiple: ex.multiple }]
+      return [
+        {
+          id: 'main',
+          weight: 1,
+          kind: 'choice',
+          options: ex.options,
+          answer: ex.answer,
+          multiple: ex.multiple,
+          option_explanations: ex.option_explanations,
+        },
+      ]
     case 'true_false':
       return [{ id: 'main', weight: 1, kind: 'boolean', answer: ex.answer, explanation: ex.justification }]
     case 'numeric':

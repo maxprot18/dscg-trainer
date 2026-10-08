@@ -120,7 +120,7 @@ function GoalRing({ done, goal }: { done: number; goal: number }) {
         r={r}
         className={ratio >= 1 ? 'fill-none stroke-emerald-500' : 'stroke-primary fill-none'}
         strokeWidth="6"
-        strokeLinecap="round"
+        strokeLinecap={ratio > 0 ? 'round' : 'butt'}
         strokeDasharray={`${c * ratio} ${c}`}
         transform="rotate(-90 32 32)"
       />

@@ -23,6 +23,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: when interest rates rise, prices of existing fixed-rate bonds fall; prices and yields move in opposite directions.",
+        "Incorrect: higher rates attract capital inflows and tend to make the currency appreciate, not depreciate.",
+        "Correct: banks pass the higher policy rate on to lending rates, borrowing slows and demand and inflation weaken.",
+        "Incorrect: monetary policy acts with long and variable lags, typically spread over many months."
+      ],
       "explanation": "Option 3 describes the core transmission channel: banks pass on the higher policy rate to lending rates, borrowing becomes more expensive, households and firms borrow and spend less, and demand and inflation slow down. Option 1 is wrong: when interest rates rise, the price of existing fixed-rate bonds falls (prices and yields move in opposite directions). Option 2 is wrong: higher rates attract capital inflows and tend to make the currency appreciate, not depreciate. Option 4 is wrong: monetary policy acts with long and variable lags, typically spread over many months.",
       "source_ref": "TFEU art. 127(1) (price stability objective) ; ECB, monetary policy transmission mechanism",
       "verified": true,
@@ -175,6 +181,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: it subtracts the deficit instead of adding it; the deficit is a flow that increases the debt stock.",
+        "Correct: (100 + 3) ÷ 1.02 = 100.98%; stabilising a 100% ratio with 2% growth requires a deficit of about 2% only.",
+        "Incorrect: the 3% value stabilises debt only at 60% of GDP with nominal growth of about 5%, not at any level.",
+        "Incorrect: 103% ignores nominal GDP growth in the denominator: (100 + 3) ÷ 1.02 ≈ 101.0%."
+      ],
       "explanation": "Debt ratio next year = (debt + deficit) ÷ (GDP × (1 + nominal growth)) = (100 + 3) ÷ 1.02 = 100.98%, i.e. about 101.0%. The deficit is a flow that adds to the stock of debt; the ratio only stabilises if the deficit is no larger than debt × g ÷ (1 + g) ≈ 100 × 0.02 = 2% of GDP. Option 1 subtracts the deficit instead of adding it. Option 3 is wrong: the 3% and 60% reference values are not linked so as to stabilise any debt level; 3% stabilises a 60% ratio only with nominal growth of about 5%. Option 4 ignores the growth of nominal GDP in the denominator.",
       "source_ref": "TFEU art. 126 and Protocol No 12 (reference values 3% and 60% of GDP) ; debt dynamics: debt ratio(t+1) = (debt + deficit) ÷ (GDP × (1 + nominal growth))",
       "verified": true,

@@ -22,6 +22,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : tâche répétitive, à fort volume, sur données structurées et règles stables : le profil type d'un processus à confier à la RPA.",
+        "Inexact : apprécier des réclamations rédigées librement exige du jugement ; la RPA seule ne sait pas le faire.",
+        "Inexact : une dizaine de dossiers par an ne suffit pas à amortir un robot, et la validation relève du jugement.",
+        "Inexact : automatiser un processus appelé à changer obligerait à refaire le robot ; il faut d'abord le stabiliser et le simplifier."
+      ],
       "explanation": "La RPA convient aux tâches répétitives, à fort volume, reposant sur des données structurées et des règles stables : le lettrage de relevés bancaires structurés selon des règles constantes en est l'exemple type. L'option 2 exige du jugement sur des textes libres : la RPA seule ne sait pas le faire (il faudrait au minimum des outils d'IA, avec une supervision humaine). L'option 3 a un volume trop faible pour amortir le développement et la maintenance d'un robot, et la décision relève du jugement. L'option 4 conduirait à automatiser un processus appelé à changer : le robot, dépendant des écrans et des procédures, serait à refaire ; il faut d'abord stabiliser et simplifier le processus.",
       "source_ref": "Programme DSCG UE 5 : automatisation des processus (RPA), critères de choix des processus à automatiser",
       "verified": true,
@@ -169,6 +175,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : l'obligation d'émettre des factures électroniques ne vise que les opérations domestiques entre assujettis (B2B), pas les particuliers.",
+        "Exact : ventes aux particuliers et opérations internationales relèvent de l'e-reporting : transmission des données de transaction via une plateforme agréée.",
+        "Inexact : ces opérations ne sont pas hors champ ; l'e-reporting fait partie intégrante de la réforme.",
+        "Inexact : un PDF n'est pas une donnée structurée, et rien n'impose de remplacer les tickets de caisse."
+      ],
       "explanation": "Les ventes aux particuliers (B2C) et les opérations internationales ne relèvent pas de la facturation électronique entre assujettis établis en France, mais de l'e-reporting : l'entreprise transmet les données de ces transactions à l'administration par l'intermédiaire d'une plateforme agréée (option 2) ; pour les prestations de services, elle transmet aussi les données de paiement. L'option 1 est fausse : l'obligation d'émission de factures électroniques ne vise que les opérations domestiques entre assujettis (B2B). L'option 3 oublie l'e-reporting, qui fait partie de la réforme. L'option 4 est sans fondement : un PDF n'est pas une donnée structurée et rien n'impose de remplacer les tickets de caisse.",
       "source_ref": "CGI art. 290 (données de transaction) et art. 290 A (données de paiement), e-reporting et art. 289 bis (facturation électronique entre assujettis) ; loi n° 2023-1322 de finances pour 2024, art. 91",
       "estimated_seconds": 70,

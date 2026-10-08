@@ -209,6 +209,39 @@ export function sessionHistory(sessions: readonly Session[], attempts: readonly 
     .sort((a, b) => b.startedAt - a.startedAt)
 }
 
+export interface PredictedGrade {
+  /** Note prévisionnelle sur 20. */
+  grade: number
+  /** Nombre d'examens retenus (trois au plus). */
+  exams: number
+  /** Note du dernier examen. */
+  last: number
+}
+
+/** Poids des trois derniers examens, du plus récent au plus ancien. */
+const PREDICTION_WEIGHTS = [3, 2, 1]
+
+/**
+ * Note prévisionnelle par UE : moyenne pondérée des trois derniers examens blancs ou sujets complets
+ * terminés (le plus récent compte trois fois, le précédent deux fois).
+ */
+export function predictedGrades(sessions: readonly Session[]): Map<string, PredictedGrade> {
+  const byUe = new Map<string, Session[]>()
+  for (const s of sessions) {
+    if ((s.mode !== 'exam' && s.mode !== 'full') || s.grade === undefined || s.endedAt === undefined || !s.scope) continue
+    byUe.set(s.scope, [...(byUe.get(s.scope) ?? []), s])
+  }
+  const result = new Map<string, PredictedGrade>()
+  for (const [ue, list] of byUe) {
+    const recent = list.sort((a, b) => b.endedAt! - a.endedAt!).slice(0, PREDICTION_WEIGHTS.length)
+    const weights = PREDICTION_WEIGHTS.slice(0, recent.length)
+    const total = weights.reduce((a, b) => a + b, 0)
+    const grade = recent.reduce((sum, s, i) => sum + s.grade! * weights[i], 0) / total
+    result.set(ue, { grade: Math.round(grade * 10) / 10, exams: recent.length, last: recent[0].grade! })
+  }
+  return result
+}
+
 /** Notions des exercices ratés, avec le nombre d'échecs, les plus ratées d'abord. */
 export function notionsToReview(entries: readonly { exercise: { notion: string }; result: { correct: boolean } }[]): { notion: string; failed: number; total: number }[] {
   const byNotion = new Map<string, { failed: number; total: number }>()

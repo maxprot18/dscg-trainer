@@ -38,6 +38,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : des exercices ouverts et clos aux mêmes dates que ceux de la mère sont une condition de l'article 223 A.",
+        "Inexact : l'assujettissement à l'impôt sur les sociétés est une condition d'appartenance au groupe intégré (art. 223 A).",
+        "Inexact : l'accord de la filiale à son inclusion est une condition posée par l'article 223 A.",
+        "Exact : aucune condition de rentabilité ; une filiale déficitaire peut entrer, ses déficits s'imputant sur les bénéfices des autres membres."
+      ],
       "explanation": "Aucune condition de rentabilité n'est exigée : une filiale déficitaire peut entrer dans le groupe, c'est même l'un des intérêts du régime, ses déficits s'imputant sur les bénéfices des autres membres (option 4).\nLes options 1, 2 et 3 sont des conditions posées par l'article 223 A du CGI : exercices de même durée ouverts et clos aux mêmes dates, assujettissement à l'IS, accord de la filiale, auxquelles s'ajoute la détention d'au moins 95 % du capital par la mère.",
       "source_ref": "CGI art. 223 A (conditions d'appartenance au groupe intégré)",
       "estimated_seconds": 45
@@ -64,6 +70,12 @@
       ],
       "answer": [
         0
+      ],
+      "option_explanations": [
+        "Exact : la détention indirecte compte si elle passe par une société du groupe intégré : 60 % + 40 % = 100 % (art. 223 A).",
+        "Inexact : Perle, détenue à 80 %, ne peut pas être membre du groupe ; ses titres ne comptent pas, Nacre ne détient que 60 %.",
+        "Inexact : l'option ignore la détention indirecte par l'intermédiaire de sociétés du groupe intégré.",
+        "Inexact : l'option ignore que Perle doit être membre du groupe intégré pour que ses titres soient pris en compte."
       ],
       "explanation": "La détention de 95 % peut être directe ou indirecte, mais la détention indirecte ne compte que si elle s'exerce par l'intermédiaire de sociétés du groupe intégré (CGI art. 223 A). Si Perle est détenue à 100 % par Nacre et membre du groupe, Nacre détient 60 % + 40 % = 100 % d'Opale : l'inclusion est possible (option 1).\nL'option 2 est fausse : une société détenue à 80 % ne peut pas être membre du groupe, et les titres qu'elle détient ne sont pas pris en compte ; Nacre ne détient alors que 60 %.\nL'option 3 ignore la détention indirecte.\nL'option 4 ignore que Perle doit être membre du groupe.",
       "source_ref": "CGI art. 223 A (détention directe ou indirecte par l'intermédiaire de sociétés du groupe)",

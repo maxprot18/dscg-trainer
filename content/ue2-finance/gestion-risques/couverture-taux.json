@@ -25,6 +25,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : oublie de proratiser sur le semestre (180/360).",
+        "Inexact : inverse le sens ; l'acheteur du cap reçoit la compensation, il n'a payé que la prime.",
+        "Inexact : le cap porte sur le taux de référence ; la marge reste toujours à la charge de l'emprunteur.",
+        "Exact : 10 000 000 × (5 % − 4 %) × 180/360 = 50 000 € reçus ; coût plafonné à 4 % + 1 %, hors prime."
+      ],
       "explanation": "L’Euribor (5 %) dépasse le taux plafond (4 %) : le vendeur du cap verse à Nohant 10 000 000 × (5 % − 4 %) × 180/360 = 50 000 € (option 4). Le coût de l’emprunt est ainsi plafonné à 4 % + 1 % = 5 %, hors prime. L’option 1 oublie de proratiser sur un semestre. L’option 2 inverse le sens : l’acheteur du cap reçoit, il n’a payé que la prime. L’option 3 confond : le cap porte sur le taux de référence, la marge restant toujours à la charge de l’emprunteur."
     },
     {
@@ -52,6 +58,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : le swap receveur du fixe transforme une dette fixe en dette variable.",
+        "Inexact : le floor protège contre la baisse des taux, ce qui est utile à un prêteur.",
+        "Inexact : vendre un cap fait encaisser une prime mais oblige à verser la différence en cas de hausse : le risque est aggravé.",
+        "Exact : payer le fixe et recevoir l'Euribor neutralise le variable de l'emprunt ; le coût devient taux fixe du swap + marge."
+      ],
       "explanation": "En payant le fixe et en recevant l’Euribor 3 mois, Orval neutralise le variable de son emprunt : son coût devient taux fixe du swap + marge (option 4). Le swap inverse (option 1) transforme une dette fixe en dette variable. Le floor (option 2) protège contre la baisse des taux, utile à un prêteur. Vendre un cap (option 3) fait encaisser une prime mais expose Orval à verser la différence en cas de hausse : le risque est aggravé."
     },
     {

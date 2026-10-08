@@ -33,6 +33,12 @@
       ],
       "answer": [1],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : le prêt à un administrateur personne physique est une convention interdite (L225-43), nulle, qui ne peut pas être autorisée.",
+        "Exact : la convention avec une entreprise dont un administrateur est gérant est soumise à autorisation préalable du conseil (L225-38, al. 3).",
+        "Inexact : une opération courante conclue à des conditions normales est une convention libre (L225-39), même avec un actionnaire à plus de 10 %.",
+        "Inexact : la convention avec une filiale détenue à 100 % est exclue du dispositif des conventions réglementées (L225-39)."
+      ],
       "explanation": "Une convention conclue avec une entreprise dont un administrateur de la société est gérant relève de la procédure d'autorisation préalable (C. com. art. L225-38, al. 3) : option 2. Le prêt à un administrateur personne physique (option 1) est une convention interdite (art. L225-43), frappée de nullité : elle ne peut pas être autorisée. La vente courante à des conditions normales (option 3) est libre (art. L225-39), même avec un actionnaire à plus de 10 %. La convention avec une filiale détenue à 100 % (option 4) est également exclue du dispositif (art. L225-39).",
       "source_ref": "C. com. art. L225-38, L225-39 et L225-43",
       "verified": true,
@@ -145,6 +151,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : l'interdiction ne vise pas les administrateurs personnes morales (L225-43) ; ce prêt relève des conventions réglementées.",
+        "Exact : en SARL, le cautionnement au profit d'un descendant du gérant est une convention interdite, à peine de nullité (L223-21).",
+        "Inexact : une opération courante conclue à des conditions normales, comme une vente au tarif catalogue, est une convention libre (L225-39).",
+        "Inexact : la convention avec une entreprise dont un administrateur est gérant est réglementée, soumise à autorisation préalable (L225-38), non interdite."
+      ],
       "explanation": "Sont interdits, à peine de nullité absolue, les emprunts, découverts, cautionnements ou avals consentis par la société au profit de ses dirigeants personnes physiques, mais aussi de leurs conjoints, ascendants, descendants et des personnes interposées ; dans la SARL, le gérant est visé (C. com. L223-21) : le cautionnement de l'emprunt du fils du gérant est interdit (option 2).\nL'option 1 est fausse : l'interdiction ne s'applique pas aux administrateurs personnes morales (L225-43) ; le prêt relève alors de la procédure des conventions réglementées. L'option 3 est fausse : une opération courante conclue à des conditions normales est une convention libre (L225-39). L'option 4 est fausse : la convention conclue avec une entreprise dont un administrateur est gérant est une convention réglementée, soumise à autorisation préalable du conseil (L225-38), non une convention interdite.",
       "source_ref": "C. com. art. L223-21 (SARL), L225-38, L225-39 et L225-43 (SA)",
       "verified": true,

@@ -21,6 +21,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : rien n'indique la recherche du coût le plus bas ; le prix fort traduit l'inverse.",
+        "Inexact : la différenciation au sens strict vise l'ensemble du marché, pas un segment étroit comme les golfeurs gauchers.",
+        "Inexact : la focalisation par les coûts viserait un segment avec une offre au coût le plus bas, pas du sur-mesure.",
+        "Exact : segment étroit et offre perçue comme unique (sur mesure) vendue au prix fort : focalisation fondée sur la différenciation."
+      ],
       "explanation": "L'option 4 est exacte : l'entreprise vise un segment étroit (les golfeurs gauchers exigeants) avec une offre perçue comme unique (sur mesure) vendue au prix fort : c'est une focalisation (concentration) fondée sur la différenciation. L'option 1 est fausse : rien n'indique la recherche du coût le plus bas, le prix fort traduit l'inverse. L'option 2 est fausse : la différenciation au sens strict s'adresse à l'ensemble du marché, pas à un segment étroit. L'option 3 est fausse : la focalisation par les coûts viserait un segment avec une offre au coût le plus bas, pas une offre sur mesure.",
       "source_ref": "M. Porter, Competitive Strategy (1980), stratégies génériques",
       "verified": true,
@@ -47,6 +53,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : l'océan bleu désigne la création d'un espace de marché nouveau, pas une position défavorable sur un marché existant.",
+        "Exact : ni coût le plus bas ni offre reconnue comme supérieure ; l'entreprise est exposée au leader en coûts et aux entreprises différenciées.",
+        "Inexact : l'intégration verticale est une stratégie de groupe (activités amont ou aval), sans rapport avec ce constat.",
+        "Inexact : par hypothèse, l'offre n'est pas perçue comme supérieure ; il n'y a donc aucun avantage de différenciation."
+      ],
       "explanation": "L'option 2 est exacte : Porter qualifie d'enlisement (stuck in the middle) la situation d'une entreprise qui n'a ni le coût le plus bas ni une offre reconnue comme supérieure ; elle est exposée à la fois au leader en coûts et aux entreprises différenciées. L'option 1 est fausse : l'océan bleu désigne la création d'un espace de marché nouveau, pas une position défavorable sur un marché existant. L'option 3 est fausse : l'intégration verticale est une stratégie de groupe (choix des activités amont ou aval), sans rapport avec le constat. L'option 4 est fausse : par hypothèse, l'offre n'est pas perçue comme supérieure, il n'y a donc pas d'avantage de différenciation.",
       "source_ref": "M. Porter, Competitive Strategy (1980), stratégies génériques",
       "verified": true,
@@ -72,6 +84,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : une domination par les coûts pure réduirait les coûts sans créer d'élément de valeur nouveau comme le coaching.",
+        "Inexact : la matrice BCG analyse un portefeuille de domaines d'activité, pas les attributs d'une offre.",
+        "Exact : exclure (cours, vestiaires), atténuer (encadrement), renforcer (horaires), créer (coaching) : les quatre actions de la grille océan bleu.",
+        "Inexact : la chaîne reste dans son métier ; il n'y a ni produit ni marché sans lien avec l'activité actuelle."
       ],
       "explanation": "L'option 3 est exacte : la chaîne agit sur les attributs de l'offre selon les quatre actions de la grille de l'océan bleu : exclure (cours collectifs, vestiaires luxueux), atténuer (encadrement), renforcer (amplitude horaire) et créer (coaching par application). Le but est d'obtenir à la fois des coûts bas et une valeur nouvelle pour une clientèle élargie. L'option 1 est fausse : une domination par les coûts pure réduirait les coûts sans créer d'élément de valeur nouveau. L'option 2 est fausse : la matrice BCG analyse un portefeuille de domaines d'activité, pas les attributs d'une offre. L'option 4 est fausse : la chaîne reste dans son métier ; il n'y a ni produit ni marché sans lien avec l'activité actuelle.",
       "source_ref": "W.C. Kim et R. Mauborgne, Blue Ocean Strategy (2005), grille Exclure / Atténuer / Renforcer / Créer",

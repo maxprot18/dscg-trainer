@@ -25,6 +25,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : le montant d'une facture reçue est fixé par un document, sans incertitude d'estimation.",
+        "Inexact : le capital social est un fait mesuré précisément, sans incertitude d'estimation.",
+        "Exact : la provision pour litige dépend d'une issue incertaine et du jugement de la direction : estimation comptable (NEP 540 §05).",
+        "Inexact : un solde bancaire rapproché du relevé est mesuré précisément, sans incertitude d'estimation."
       ]
     },
     {
@@ -53,6 +59,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : une estimation raisonnable à la date d'arrêté n'est pas une erreur si son dénouement diffère.",
+        "Inexact : des écarts répétés et toujours dans le même sens ne sont pas anodins ; ils signalent un possible biais.",
+        "Inexact : un indice de biais ne conduit pas à lui seul à un refus de certifier.",
+        "Exact : des écarts répétés dans le même sens sont un indice de biais ; le CAC en tient compte pour les provisions de l'exercice (NEP 540)."
       ]
     },
     {

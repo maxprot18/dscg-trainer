@@ -23,6 +23,12 @@
         0
       ],
       "multiple": false,
+      "option_explanations": [
+        "Exact : des droits de veto sur le budget et le plan d'affaires caractérisent un contrôle conjoint, donc une concentration (L. 430-1).",
+        "Inexact : une participation minoritaire sans influence déterminante ne confère aucun contrôle ; ce n'est pas une concentration.",
+        "Inexact : un contrat de distribution relève du droit des ententes, non du contrôle des concentrations.",
+        "Inexact : une restructuration interne à un groupe ne modifie pas le contrôle, les entreprises n'étant pas indépendantes."
+      ],
       "explanation": "Constitue une concentration l'acquisition du contrôle, exclusif ou conjoint, de tout ou partie d'une entreprise, le contrôle s'entendant de la possibilité d'exercer une influence déterminante ; des droits de veto sur le budget et le plan d'affaires caractérisent un contrôle conjoint (C. com. art. L. 430-1) : option 1. Une participation minoritaire sans influence déterminante (option 2) n'est pas une concentration. Un contrat de distribution (option 3) relève du droit des ententes, non du contrôle des concentrations. Une restructuration interne à un groupe (option 4) ne modifie pas le contrôle, les entreprises n'étant pas indépendantes.",
       "source_ref": "C. com. art. L. 430-1 ; règlement (CE) n° 139/2004, art. 3",
       "verified": true,
@@ -52,6 +58,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : l'option oublie la règle des deux tiers ; chaque groupe réalise plus des deux tiers de son CA européen en France.",
+        "Inexact : l'option oublie les seuils français, franchis : CA mondial cumulé > 250 M€ et CA en France de chacun > 80 M€.",
+        "Inexact : principe du guichet unique ; une opération relève de la Commission ou de l'Autorité, jamais des deux.",
+        "Exact : Aldric 83 % et Bastide 77 % de leur CA européen en France ; règle des deux tiers, puis seuils français franchis (L. 430-2)."
+      ],
       "explanation": "Seuils européens principaux : CA mondial cumulé 5 100 M€ > 5 000 M€ et CA dans l'UE de chaque groupe > 250 M€ (1 800 et 260 M€). Mais la dimension européenne est exclue lorsque chaque entreprise réalise plus des deux tiers de son CA européen dans un seul et même État membre : Aldric 1 500 / 1 800 = 83 %, Bastide 200 / 260 = 77 %, tous deux en France. On applique alors les seuils français (C. com. art. L. 430-2) : CA mondial cumulé > 250 M€ et CA en France de chacun > 80 M€ (seuils relevés par la loi n° 2026-403 du 26 mai 2026 pour les opérations notifiées à compter du 1er septembre 2026) : notification à l'Autorité de la concurrence (option 4). L'option 1 oublie la règle des deux tiers ; l'option 2 oublie les seuils nationaux ; l'option 3 méconnaît le principe du guichet unique, une opération relevant de l'une ou de l'autre autorité.",
       "source_ref": "Règlement (CE) n° 139/2004, art. 1 ; C. com. art. L. 430-2",
       "verified": true,

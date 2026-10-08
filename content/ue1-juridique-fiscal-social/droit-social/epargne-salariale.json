@@ -24,6 +24,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : l'option inverse les deux dispositifs ; c'est la participation qui est obligatoire dès 50 salariés, l'intéressement restant facultatif.",
+        "Exact : la participation s'impose aux entreprises d'au moins 50 salariés ; l'intéressement est mis en place par accord, de manière facultative.",
+        "Inexact : la RSP vaut ½ (B − 5 % C) × S / VA ; les 5 % portent sur les capitaux propres, déduits du bénéfice.",
+        "Inexact : ces sommes ne sont pas des salaires pour les cotisations de sécurité sociale ; seules la CSG et la CRDS sont dues."
+      ],
       "explanation": "La participation est obligatoire dans les entreprises employant au moins 50 salariés ; l'intéressement est mis en place par accord, de manière facultative (option 2). L'option 1 inverse les deux dispositifs. L'option 3 est fausse : la formule légale est RSP = ½ (B − 5 % C) × S / VA ; les 5 % s'appliquent aux capitaux propres, en déduction du bénéfice. L'option 4 est fausse : les sommes ne sont pas des salaires au sens des cotisations de sécurité sociale ; seules la CSG et la CRDS sont dues (l'employeur supporte le cas échéant le forfait social).",
       "source_ref": "C. trav. art. L3322-2 (participation obligatoire), L3312-1 s. (intéressement), L3324-1 (formule de la RSP)",
       "estimated_seconds": 60

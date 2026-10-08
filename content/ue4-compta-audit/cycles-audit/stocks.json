@@ -58,6 +58,12 @@
         "Séparation des exercices"
       ],
       "answer": [2],
+      "option_explanations": [
+        "Inexact : l’exhaustivité se teste dans l’autre sens, du stock physique vers le listing, pour détecter un bien omis.",
+        "Inexact : l’évaluation porte sur le coût et la dépréciation, que le comptage n’examine pas.",
+        "Exact : partir du listing pour remonter au stock physique vérifie que les quantités enregistrées existent réellement.",
+        "Inexact : la séparation des exercices se teste à partir des derniers bons de réception et de livraison, non par un comptage."
+      ],
       "explanation": "Partir du listing (ce qui sera inscrit au bilan) pour remonter au stock physique vérifie que les quantités enregistrées existent réellement : c’est l’existence. L’exhaustivité se teste dans l’autre sens, du stock physique vers le listing, pour s’assurer qu’aucun bien présent n’a été omis. L’évaluation porte sur le coût et la dépréciation, que le comptage n’examine pas. La séparation des exercices se teste à partir des derniers bons de réception et de livraison de l’exercice, non par un comptage de références.",
       "source_ref": "NEP 500 (assertions relatives aux soldes de fin de période) ; NEP 501 (inventaire physique)",
       "estimated_seconds": 50
@@ -79,6 +85,12 @@
         "Classification"
       ],
       "answer": [0],
+      "option_explanations": [
+        "Exact : les biens en consignation restent la propriété du fournisseur jusqu’à leur revente ; Véga ne peut pas les inscrire à son actif.",
+        "Inexact : l’exhaustivité serait en défaut par une omission, alors qu’ici un bien est compté en trop.",
+        "Inexact : il ne s’agit pas d’un décalage de date entre deux exercices, mais de biens appartenant à un tiers.",
+        "Inexact : il ne s’agit pas d’une imputation au mauvais compte de stock, mais de biens qui n’appartiennent pas à l’entité."
+      ],
       "explanation": "Les biens en consignation restent la propriété du fournisseur tant qu’ils ne sont pas revendus : Véga n’en détient pas les droits et ne peut pas les inscrire à son actif. C’est l’assertion droits et obligations qui est en cause. L’exhaustivité serait mise en défaut par une omission, alors qu’ici un bien est compté en trop. Il ne s’agit pas d’un décalage de date entre deux exercices (séparation) ni d’une imputation au mauvais compte de stock (classification).",
       "source_ref": "NEP 500 (assertion droits et obligations) ; PCG, définition d’un actif (règl. ANC 2014-03, art. 211-1)",
       "estimated_seconds": 50
@@ -92,6 +104,12 @@
       "notion": "stocks-assertions",
       "difficulty": 2,
       "multiple": true,
+      "option_explanations": [
+        "Exact : comparer le coût aux prix de vente postérieurs détecte les références dont la valeur actuelle est inférieure au coût.",
+        "Exact : recalculer le coût moyen pondéré à partir des factures d’achat vérifie le coût d’entrée, donc l’évaluation.",
+        "Inexact : compter des références du listing vers le magasin vise l’existence, non la valeur des stocks.",
+        "Inexact : rapprocher les derniers bons de réception des factures vise la séparation des exercices, pas la valeur des stocks."
+      ],
       "tags": ["assertions", "évaluation", "procédures"],
       "statement": "Parmi les procédures suivantes mises en œuvre sur les stocks de marchandises de la société Lyra, lesquelles visent principalement l’assertion d’évaluation ? (plusieurs réponses possibles)",
       "options": [
@@ -153,6 +171,12 @@
         "Les bons de réception sont prénumérotés et rapprochés des commandes"
       ],
       "answer": [2],
+      "option_explanations": [
+        "Inexact : un inventaire réalisé par des équipes indépendantes est un contrôle qui réduit le risque, et il porte sur l’existence.",
+        "Inexact : l’accès restreint à l’entrepôt est un contrôle qui protège l’existence des biens, non leur évaluation.",
+        "Exact : une nouvelle gamme remplaçant la moitié des références crée un risque d’obsolescence et de dépréciation des anciennes.",
+        "Inexact : les bons de réception prénumérotés sont un contrôle sur l’exhaustivité et la séparation des entrées, pas sur l’évaluation."
+      ],
       "explanation": "Le remplacement de la moitié des références par une nouvelle gamme crée un risque d’obsolescence : les anciennes références risquent de ne se vendre qu’à prix réduit, voire pas du tout, et de devoir être dépréciées. Les trois autres éléments sont des contrôles internes qui réduisent le risque, et ils portent sur l’existence (inventaire indépendant, accès restreint) ou sur l’exhaustivité et la séparation des entrées (bons de réception), pas sur l’évaluation.",
       "source_ref": "NEP 315 (facteurs de risque inhérent) ; PCG, règles de dépréciation des stocks (règl. ANC 2014-03)",
       "estimated_seconds": 50
@@ -174,6 +198,12 @@
         "Une erreur de classification entre stocks de marchandises et de matières premières"
       ],
       "answer": [1],
+      "option_explanations": [
+        "Inexact : des dépréciations excessives réduiraient au contraire la marge, alors qu’elle progresse.",
+        "Exact : un stock final surévalué diminue le coût des ventes ; marge et durée de stockage augmentent, comme observé à prix constants.",
+        "Inexact : des ventes omises dont les biens sont sortis baisseraient le chiffre d’affaires sans baisser le coût des ventes : marge en baisse.",
+        "Inexact : une erreur de classification entre comptes de stocks n’affecte ni la marge globale ni la durée de stockage totale."
+      ],
       "explanation": "Un stock final surévalué diminue le coût d’achat des marchandises vendues : la marge augmente et la durée de stockage s’allonge mécaniquement, ce qui correspond aux deux signaux observés à prix constants. Une sous-évaluation par dépréciations excessives réduirait au contraire la marge. Des ventes non comptabilisées dont les biens sont sortis du stock baisseraient le chiffre d’affaires sans baisser le coût des ventes, donc réduiraient la marge. Une erreur de classification entre comptes de stocks n’affecte ni la marge globale ni la durée de stockage totale.",
       "source_ref": "NEP 315 (procédures analytiques d’évaluation des risques) ; NEP 520",
       "estimated_seconds": 80
@@ -275,6 +305,12 @@
         "Un accès à l’entrepôt réservé au personnel autorisé, le magasinier ne tenant pas l’inventaire permanent"
       ],
       "answer": [3],
+      "option_explanations": [
+        "Inexact : la revue des articles à rotation lente porte sur l’évaluation (dépréciation), non sur la protection contre le vol.",
+        "Inexact : le calcul automatique du coût moyen pondéré porte sur l’évaluation des stocks.",
+        "Inexact : le rapprochement factures / commandes porte sur la réalité et la mesure des achats.",
+        "Exact : l’accès restreint protège les biens, et séparer garde et inventaire permanent empêche de dissimuler un vol."
+      ],
       "explanation": "L’accès restreint protège physiquement les biens, et la séparation entre la garde des marchandises et la tenue de l’inventaire permanent empêche un magasinier de dissimuler un vol en modifiant les quantités enregistrées : ce dispositif vise l’existence et la protection des actifs. La revue des articles à rotation lente et le calcul automatique du CMP portent sur l’évaluation. Le rapprochement factures / commandes porte sur la réalité et la mesure des achats.",
       "source_ref": "NEP 315 (compréhension du contrôle interne)",
       "estimated_seconds": 50
@@ -296,6 +332,12 @@
         "Les écarts de comptage inférieurs à un montant fixé sont passés directement en charges sans analyse"
       ],
       "answer": [1],
+      "option_explanations": [
+        "Inexact : des comptages par les magasiniers responsables de leur zone violent la séparation des tâches.",
+        "Exact : inventaire permanent fiable, chaque référence comptée au moins une fois et écarts analysés : le CAC teste ces contrôles.",
+        "Inexact : cibler les références de faible valeur laisse sans contrôle les plus significatives.",
+        "Inexact : passer les écarts en charges sans analyse empêche de détecter vols et erreurs systématiques."
+      ],
       "explanation": "L’inventaire tournant ne remplace l’inventaire annuel que si l’inventaire permanent est fiable (le stock de clôture en est issu), si chaque référence est comptée au moins une fois sur l’exercice et si les écarts sont analysés et corrigés ; le CAC teste ces contrôles. Des comptages par les magasiniers eux-mêmes violent la séparation des tâches. Cibler les références de faible valeur laisse sans contrôle les plus significatives. Passer les écarts en charges sans analyse empêche de détecter vols et erreurs systématiques.",
       "source_ref": "NEP 330 (tests de procédures) ; NEP 501 (inventaire physique) ; C. com. art. L123-12",
       "estimated_seconds": 70
@@ -369,6 +411,12 @@
         "Rapprocher les factures du prestataire logistique des charges externes comptabilisées"
       ],
       "answer": [2],
+      "option_explanations": [
+        "Inexact : une déclaration de la direction est un élément interne, insuffisant seul pour l’existence de stocks détenus par un tiers.",
+        "Inexact : le recalcul du coût moyen pondéré vise l’évaluation, pas l’existence des stocks.",
+        "Exact : confirmation auprès du dépositaire (NEP 505) ; 900 000 €, plus de sept fois le seuil, justifie d’envisager une présence sur place.",
+        "Inexact : le rapprochement des factures de stockage concerne les charges externes, non l’existence des stocks."
+      ],
       "explanation": "Pour les stocks détenus par des tiers, l’auditeur peut adresser une demande de confirmation au dépositaire (NEP 505) ; les stocks étant répartis sur plusieurs sites, il détermine aussi, en fonction du risque, les lieux où sa présence à l’inventaire est nécessaire (NEP 501 § 04). Un montant significatif (900 000 €, plus de sept fois le seuil) justifie d’envisager une inspection sur place. Une déclaration de la direction est un élément interne, insuffisant seul. Le recalcul du CMP vise l’évaluation, pas l’existence. Le rapprochement des factures de stockage concerne les charges externes.",
       "source_ref": "NEP 505 (demandes de confirmation des tiers) ; NEP 501 (§ 03-04 : inventaire physique, stocks répartis sur plusieurs sites)",
       "estimated_seconds": 70
@@ -390,6 +438,12 @@
         "Mettre en œuvre des procédures alternatives, par exemple des comptages à une date ultérieure avec contrôle des mouvements entre la clôture et cette date, et, à défaut d’éléments suffisants, en tirer les conséquences sur l’opinion"
       ],
       "answer": [3],
+      "option_explanations": [
+        "Inexact : une déclaration de la direction ne remplace pas des éléments probants sur l’existence et l’état des stocks.",
+        "Inexact : le CAC ne peut exclure un poste de son audit ; faute d’éléments suffisants, la limitation se traduit dans l’opinion.",
+        "Inexact : le refus de certifier n’est pas automatique ; la NEP 501 impose d’abord des procédures alternatives.",
+        "Exact : la NEP 501 impose des procédures alternatives (comptage ultérieur, contrôle des mouvements) ; à défaut, la limitation affecte l’opinion."
+      ],
       "explanation": "Lorsque l’assistance à l’inventaire est impossible, la NEP 501 demande au CAC de mettre en œuvre des procédures alternatives permettant d’obtenir des éléments suffisants et appropriés sur l’existence et l’état des stocks, typiquement des comptages ultérieurs et un contrôle des mouvements intermédiaires. S’il n’y parvient pas, la limitation est appréciée dans l’opinion (réserve ou impossibilité de certifier selon son caractère généralisé). Une déclaration de la direction ne remplace pas des éléments probants. Exclure un poste du champ de l’audit n’est pas possible. Le refus de certifier n’est pas automatique.",
       "source_ref": "NEP 501 (§ 05-06 : inventaire physique, absence ou impossibilité d’y assister) ; NEP 700 (opinion avec réserve ou impossibilité de certifier) ; NEP 580 (déclarations de la direction)",
       "estimated_seconds": 80
@@ -540,6 +594,12 @@
         "Aucune incidence sur les résultats : l’erreur ne touche que le bilan"
       ],
       "answer": [1],
+      "option_explanations": [
+        "Inexact : le stock final N surévalué devient le stock initial N+1 et alourdit d’autant la variation de stock N+1.",
+        "Exact : le stock final N surévalué accroît le résultat N de 50 000 € ; devenu stock initial, il réduit d’autant le résultat N+1.",
+        "Inexact : sens inversé ; un stock final surévalué réduit la variation de stock en charges et augmente le résultat N.",
+        "Inexact : une erreur de stock passe par la variation de stock ; elle n’est jamais limitée au bilan."
+      ],
       "explanation": "Le stock final N, surévalué, réduit la variation de stock en charges et augmente le résultat N de 50 000 €. Ce même montant devient le stock initial N+1 : la variation de stock N+1 est alors alourdie de 50 000 €, ce qui diminue le résultat N+1 d’autant. Les capitaux propres à fin N+1 sont corrects, mais chaque résultat annuel est faux. Une erreur de stock n’est donc jamais limitée au bilan.",
       "source_ref": "PCG comptes 37 et 6037 (variation des stocks) ; NEP 510 (soldes d’ouverture)",
       "estimated_seconds": 60
@@ -561,6 +621,12 @@
         "Le stock est sous-évalué : les frais fixes auraient dû être imputés sur la base de la capacité normale, ce qui augmenterait le coût unitaire"
       ],
       "answer": [2],
+      "option_explanations": [
+        "Inexact : les frais fixes s’imputent sur la capacité normale ; le coût de la sous-activité reste en charges de l’exercice.",
+        "Inexact : la permanence des méthodes ne régularise pas une méthode non conforme.",
+        "Exact : imputés sur 60 000 unités au lieu de 100 000, les frais fixes gonflent le coût unitaire ; la sous-activité est reportée en stock.",
+        "Inexact : l’imputation sur la capacité normale diminue le coût unitaire, elle ne l’augmente pas ; le stock est donc surévalué."
+      ],
       "explanation": "Les frais fixes de production s’imputent sur la base de la capacité normale. Rapportés à une production réelle inférieure, ils gonflent le coût unitaire (ici 1/60 000 au lieu de 1/100 000 des frais fixes par unité) : le stock est surévalué et le coût de la sous-activité, qui devrait rester en charges, est reporté sur l’exercice suivant. La permanence des méthodes ne régularise pas une méthode non conforme. L’imputation sur la capacité normale diminue le coût unitaire, elle ne l’augmente pas.",
       "source_ref": "PCG, règles relatives au coût d’entrée des stocks (règl. ANC 2014-03 : coût de production, frais fixes et capacité normale) ; NEP 540",
       "estimated_seconds": 75

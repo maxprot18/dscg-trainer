@@ -25,6 +25,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : retenir le meilleur résultat possible, c'est le maximax du décideur optimiste.",
+        "Inexact : la moyenne des résultats, états supposés équiprobables, est le critère de Laplace.",
+        "Inexact : minimiser le regret maximal est le critère de Savage (minimax regret).",
+        "Exact : Wald (maximin), critère du décideur prudent, compare les pires résultats de chaque projet et retient le meilleur."
+      ],
       "explanation": "Le critère de Wald, ou maximin (option 4), est celui du décideur prudent : il compare les pires résultats de chaque projet et retient le meilleur d'entre eux. L'option 1 décrit le maximax (décideur optimiste). L'option 2 décrit le critère de Laplace (états supposés équiprobables). L'option 3 décrit le critère de Savage (minimax regret)."
     },
     {
@@ -52,6 +58,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : même espérance (50) et risque plus faible (σ = 20 contre 30) : A domine C.",
+        "Inexact : B a une espérance plus élevée que A, avec un risque plus fort ; aucun ne domine, le choix dépend de l'aversion au risque.",
+        "Inexact : D a un risque plus faible que C, mais aussi une espérance plus faible (40 contre 50) : pas de dominance.",
+        "Inexact : confond dominance et coefficient de variation ; A a un CV plus faible (0,40 contre 0,50), mais B offre une espérance supérieure."
+      ],
       "explanation": "A domine C (option 1) : même espérance (50) et risque plus faible (20 < 30). L'option 2 est fausse : B a une espérance plus élevée que A, au prix d'un risque plus fort ; aucun ne domine l'autre et le choix dépend de l'aversion au risque. L'option 3 est fausse : D a un risque plus faible que C mais aussi une espérance plus faible. L'option 4 confond dominance et coefficient de variation : le CV de A (0,40) est inférieur à celui de B (0,50), mais B offre une espérance supérieure, il n'y a pas de dominance."
     },
     {
@@ -78,6 +90,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : P2 a un regret maximal de 110 ; il serait retenu par Wald (pire résultat 60) ou Laplace, pas par Savage.",
+        "Inexact : P3 a le regret maximal le plus élevé (140) ; il serait retenu par le maximax.",
+        "Inexact : il n'y a pas d'égalité : regret maximal de 100 pour P1 contre 110 pour P2.",
+        "Exact : regrets maximaux de 100 (P1), 110 (P2) et 140 (P3) ; P1 a le plus petit regret maximal."
       ],
       "explanation": "Meilleure VAN par état : S1 : 260 ; S2 : 120 ; S3 : 60. Regrets : P1 : 60 ; 0 ; 100 (max 100). P2 : 110 ; 20 ; 0 (max 110). P3 : 0 ; 60 ; 140 (max 140). Le plus petit regret maximal est celui de P1 (option 4). P2 (option 1) serait retenu par Wald (pire résultat 60) ou par Laplace (moyenne 103,3), pas par Savage. P3 (option 2) serait retenu par le maximax. Il n'y a pas d'égalité entre P1 et P2 (100 contre 110), ce qui écarte l'option 3."
     },

@@ -22,6 +22,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Incorrect: IaaS only supplies computing power, storage and networks; the company would still install and manage the software itself.",
+        "Incorrect: PaaS provides a platform for developing and running the customer's own applications.",
+        "Correct: the provider hosts and maintains a ready-to-use application, paid by subscription per user and accessed via a browser.",
+        "Incorrect: an on-premises licence runs on the company's own servers, which is precisely what it is giving up."
+      ],
       "explanation": "Option 3 is correct: with software as a service, the provider hosts and maintains a ready-to-use application and the customer pays a subscription (here a monthly fee per user). Option 1 is wrong: with IaaS, the provider only supplies computing power, storage and networks; the company would still install and manage the accounting software itself. Option 2 is wrong: PaaS provides a platform for developing and running the customer's own applications. Option 4 is the opposite situation: an on-premises licence means the software runs on the company's own servers, which is precisely what the company is giving up. A side effect worth knowing: the spending moves from capital expenditure (servers, licences) to operating expenditure (subscription).",
       "source_ref": "Cloud service models IaaS / PaaS / SaaS (usual definitions, e.g. NIST SP 800-145)",
       "verified": true,
@@ -48,6 +54,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Incorrect: human interviews do not change the classification, since the tool itself filters and ranks candidates.",
+        "Correct: Annex III lists AI used for recruitment or selection among high-risk systems, subject to risk management, documentation and human oversight.",
+        "Incorrect: prohibited practices are a short, specific list such as social scoring, not every use of AI concerning people.",
+        "Incorrect: transparency duties apply to limited-risk systems such as chatbots and are not sufficient for a recruitment tool."
       ],
       "explanation": "Option 2 is correct: the AI Act follows a risk-based approach and lists AI systems used for the recruitment or selection of natural persons (in particular to analyse and filter applications and evaluate candidates) among high-risk systems (Annex III, employment). Such systems must meet strict requirements: risk management, data governance, technical documentation, logging, transparency towards deployers and human oversight. Option 1 is wrong: the fact that interviews remain human does not change the classification, since the tool itself filters candidates. Option 3 is wrong: prohibited practices are a short, specific list (e.g. social scoring, certain manipulative techniques), not every use of AI concerning people. Option 4 describes the transparency obligations of limited-risk systems such as chatbots; they are not sufficient for a recruitment tool.",
       "source_ref": "Regulation (EU) 2024/1689 (AI Act), risk-based approach ; Annex III, point 4 (employment, workers management)",
@@ -143,6 +155,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: a chatbot falls under the transparency obligations of art. 50, not under the high-risk category.",
+        "Incorrect: credit scoring based on financial data is regulated as high-risk, not banned as social scoring under art. 5(1)(c).",
+        "Correct: creditworthiness assessment of natural persons is listed in Annex III, point 5(b); it is lawful under strict requirements.",
+        "Incorrect: a spam filter is minimal-risk; classification depends on the system's use, not on the user's sector."
+      ],
       "explanation": "Option 3 is correct: AI systems intended to evaluate the creditworthiness of natural persons or establish their credit score are listed in Annex III, point 5(b) (art. 6(2)) as high-risk; they are lawful but subject to strict requirements (risk management, data governance, technical documentation, human oversight). Option 1 is wrong: a chatbot falls under the transparency obligations of art. 50 (people must be informed that they are interacting with an AI system), not under the high-risk category. Option 2 is wrong: the prohibited social scoring of art. 5(1)(c) concerns evaluating people on the basis of their social behaviour or personal characteristics leading to unjustified or unrelated detrimental treatment; credit scoring based on financial data is regulated as high-risk, not banned. Option 4 is wrong: a spam filter is a minimal-risk system with no specific obligation; the sector of the user does not change the classification, which depends on the use of the system.",
       "source_ref": "Regulation (EU) 2024/1689 (AI Act), art. 5(1)(c) (prohibited social scoring), art. 6(2) and Annex III, point 5(b) (creditworthiness of natural persons), art. 50 (transparency obligations)",
       "verified": true,

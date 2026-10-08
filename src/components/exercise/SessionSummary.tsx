@@ -8,8 +8,10 @@ import { exerciseHeadline, TYPE_LABELS } from '@/content/labels'
 import { hasCourse, taxonomy } from '@/content/load'
 import type { Exercise } from '@/content/schema'
 import { buildTaxonomyIndex } from '@/content/taxonomy'
-import type { ExerciseResult } from '@/engine/grading'
+import type { ExerciseResult, PartResponse } from '@/engine/grading'
 import { notionsToReview } from '@/engine/stats'
+
+import { ExercisePlayer } from './ExercisePlayer'
 
 const index = buildTaxonomyIndex(taxonomy)
 
@@ -24,12 +26,15 @@ export function SessionSummary({
   elapsedSeconds,
   timedOut,
   onRestart,
+  answers,
 }: {
   entries: SessionEntry[]
   planned: number
   elapsedSeconds: number
   timedOut: boolean
   onRestart: () => void
+  /** Réponses données, pour relire chaque exercice corrigé. */
+  answers?: ReadonlyMap<string, PartResponse[]>
 }) {
   const correct = entries.filter((e) => e.result.correct).length
   const pct = entries.length === 0 ? 0 : Math.round((correct / entries.length) * 100)
@@ -45,6 +50,7 @@ export function SessionSummary({
           </CardTitle>
         </CardHeader>
         <CardContent className="text-muted-foreground text-sm">
+          {entries.length === 0 && 'Session interrompue avant la première réponse. '}
           {entries.length} exercice{entries.length > 1 ? 's' : ''} traité{entries.length > 1 ? 's' : ''} sur {planned} en{' '}
           {Math.floor(elapsedSeconds / 60)} min {elapsedSeconds % 60} s.
         </CardContent>
@@ -81,26 +87,36 @@ export function SessionSummary({
         </Card>
       )}
       <ul className="flex flex-col gap-2">
-        {entries.map(({ exercise, result }) => (
-          <li key={exercise.id} className="flex items-start gap-2 rounded-md border p-3 text-sm">
-            {result.correct ? (
-              <CircleCheck className="mt-0.5 size-4 shrink-0 text-emerald-700" aria-label="réussi" />
-            ) : (
-              <CircleX className="mt-0.5 size-4 shrink-0 text-red-700" aria-label="à revoir" />
-            )}
-            <div className="flex-1">
-              <p>
-                <Link to={`/exercice/${exercise.id}`} className="hover:underline">
-                  {exerciseHeadline(exercise)}
-                </Link>
-              </p>
-              <p className="text-muted-foreground flex items-center gap-1 text-xs">
-                <TypeIcon type={exercise.type} className="size-3" /> {TYPE_LABELS[exercise.type]} ·{' '}
-                {Math.round(result.score * 100)} %
-              </p>
-            </div>
-          </li>
-        ))}
+        {entries.map(({ exercise, result }) => {
+          const responses = answers?.get(exercise.id)
+          return (
+            <li key={exercise.id} className="rounded-md border p-3 text-sm">
+              {/* Relecture : l'exercice corrigé avec les réponses données. */}
+              <details>
+                <summary className="flex cursor-pointer items-start gap-2">
+                  {result.correct ? (
+                    <CircleCheck className="mt-0.5 size-4 shrink-0 text-emerald-700 dark:text-emerald-400" aria-label="réussi" />
+                  ) : (
+                    <CircleX className="mt-0.5 size-4 shrink-0 text-red-700 dark:text-red-400" aria-label="à revoir" />
+                  )}
+                  <span className="flex-1">
+                    <span className="block">{exerciseHeadline(exercise)}</span>
+                    <span className="text-muted-foreground flex items-center gap-1 text-xs">
+                      <TypeIcon type={exercise.type} className="size-3" /> {TYPE_LABELS[exercise.type]} ·{' '}
+                      {Math.round(result.score * 100)} % · revoir la correction
+                    </span>
+                  </span>
+                </summary>
+                <div className="mt-3 flex flex-col gap-3 border-t pt-3">
+                  {responses && <ExercisePlayer exercise={exercise} review={responses} />}
+                  <Link to={`/exercice/${exercise.id}`} className="text-primary self-start text-xs underline underline-offset-2">
+                    Refaire cet exercice
+                  </Link>
+                </div>
+              </details>
+            </li>
+          )
+        })}
       </ul>
       <div className="flex flex-wrap gap-2">
         <Button onClick={onRestart}>Nouvelle session</Button>

@@ -23,6 +23,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : WHERE filtre les lignes avant regroupement et ne peut pas contenir de fonction d'agrégat.",
+        "Exact : la condition porte sur un agrégat calculé par groupe ; elle se place dans HAVING, évalué après le GROUP BY.",
+        "Inexact : ce filtre ne garde que les factures unitaires de plus de 50 000 € ; dix factures de 8 000 € seraient exclues à tort.",
+        "Inexact : ORDER BY trie les résultats sans en éliminer aucun."
+      ],
       "explanation": "La condition porte sur un agrégat calculé par groupe (le total par client) : elle se place dans HAVING, évalué après le GROUP BY. L'option 1 est invalide : WHERE filtre les lignes avant regroupement et ne peut pas contenir de fonction d'agrégat. L'option 3 est syntaxiquement correcte mais ne conserve que les factures unitaires de plus de 50 000 € : un client ayant dix factures de 8 000 € serait exclu à tort. L'option 4 trie les résultats sans en éliminer aucun.",
       "source_ref": "Norme ISO/IEC 9075 (SQL) : clauses GROUP BY et HAVING ; programme DSCG UE 5 (exploitation des données)",
       "verified": true,
@@ -76,6 +82,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : la jointure interne garde les clients ayant une commande hors 2026, même s'ils ont aussi commandé en 2026, et omet ceux sans commande.",
+        "Inexact : une date en 2026 et une commande inexistante sur la même ligne sont contradictoires ; le filtre de date devait aller dans ON.",
+        "Inexact : après une jointure interne, chaque groupe compte au moins une ligne ; COUNT(*) n'est jamais nul, la requête ne renvoie rien.",
+        "Exact : la sous-requête liste les clients ayant commandé en 2026 ; NOT IN garde tous les autres, y compris ceux qui n'ont jamais commandé."
       ],
       "explanation": "La sous-requête de l'option 4 renvoie les identifiants des clients ayant commandé en 2026 ; NOT IN garde tous les autres, y compris les clients qui n'ont jamais commandé (la précaution sur id_client toujours renseigné évite le piège de NOT IN face à une valeur NULL). L'option 1 renvoie les clients ayant au moins une commande hors 2026, même s'ils ont aussi commandé en 2026, et omet ceux qui n'ont jamais commandé (jointure interne). L'option 2 pose deux conditions contradictoires sur la même ligne (une date en 2026 et une commande inexistante) : elle ne renvoie rien. Il aurait fallu placer le filtre de date dans la clause ON. L'option 3 ne peut rien renvoyer : après une jointure interne, chaque groupe compte au moins une ligne, COUNT(*) n'est jamais nul.",
       "source_ref": "Norme ISO/IEC 9075 (SQL) : sous-requêtes (IN, NOT IN), jointures interne et externe ; programme DSCG UE 5",
@@ -205,6 +217,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : sans clause WHERE, l'instruction passe toutes les factures au statut 'Payée'.",
+        "Exact : UPDATE … SET … WHERE ne modifie que la ligne visée ; num_fact étant une chaîne, 'F12' s'écrit entre apostrophes.",
+        "Inexact : l'ordre des clauses est inversé ; SET doit précéder WHERE, sinon le SGBD refuse l'instruction.",
+        "Inexact : INSERT crée une ligne ; la clé primaire F12 existant déjà, l'insertion est rejetée et ne modifierait pas la facture."
       ],
       "explanation": "L'option 2 est la bonne : UPDATE table SET colonne = valeur WHERE condition modifie les seules lignes qui vérifient la condition ; num_fact étant une chaîne, sa valeur s'écrit entre apostrophes. L'option 1, sans WHERE, passe toutes les factures au statut 'Payée'. L'option 3 inverse l'ordre des clauses (SET doit précéder WHERE) : elle est refusée par le SGBD. L'option 4 tente d'insérer une nouvelle ligne ; la clé primaire F12 existant déjà, l'insertion est rejetée (et elle ne modifierait de toute façon pas la facture existante).",
       "source_ref": "ISO/IEC 9075 (SQL) : instructions de mise à jour UPDATE … SET … WHERE et INSERT INTO … VALUES",

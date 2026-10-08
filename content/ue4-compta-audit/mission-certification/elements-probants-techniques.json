@@ -23,6 +23,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : une copie de facture est un document interne, et une copie est moins fiable qu'un original.",
+        "Inexact : une déclaration orale et indirecte est moins fiable qu'un élément écrit obtenu directement par l'auditeur.",
+        "Exact : la confirmation directe réunit source externe, obtention directe par l'auditeur et forme écrite (NEP 500 et 505).",
+        "Inexact : le grand livre auxiliaire est un document interne à l'entité, moins fiable qu'une source externe."
+      ],
       "explanation": "La NEP 500 retient plusieurs critères de fiabilité : un élément provenant d'une source externe à l'entité est plus fiable qu'un élément interne ; un élément obtenu directement par l'auditeur est plus fiable qu'un élément obtenu indirectement ; un élément écrit est plus fiable qu'une déclaration orale ; un original est plus fiable qu'une copie. La confirmation directe du client remplit les trois premiers critères (source externe, obtention directe, écrit), et la NEP 505 en organise les modalités : l'auditeur garde la maîtrise de l'envoi et de la réception. La copie de facture et le grand livre sont des documents internes ; la déclaration du directeur financier est orale et indirecte.",
       "source_ref": "NEP 500 (caractère probant des éléments collectés) ; NEP 505 (demandes de confirmation des tiers)",
       "verified": true,
@@ -54,6 +60,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : l'inspection d'enregistrements porte sur des documents ou fichiers comptables, pas sur un processus exécuté par d'autres.",
+        "Inexact : la confirmation suppose une réponse écrite d'un tiers extérieur à l'entité ; ici, aucun tiers n'est interrogé.",
+        "Inexact : la procédure analytique compare des montants, ratios ou tendances à une attente ; ici, le collaborateur regarde un processus.",
+        "Exact : l'observation physique consiste à regarder un processus exécuté par d'autres, ici le comptage d'inventaire (NEP 500)."
       ]
     },
     {
@@ -82,6 +94,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : une non-réponse n'est pas une confirmation tacite du solde.",
+        "Exact : faute de réponse, la NEP 505 impose des procédures alternatives : règlements postérieurs à la clôture, bons de livraison.",
+        "Inexact : une confirmation obtenue par l'entité elle-même fait perdre au CAC la maîtrise du processus et la fiabilité de l'élément.",
+        "Inexact : une déclaration écrite de la direction complète les autres éléments probants, elle ne les remplace pas."
       ]
     },
     {

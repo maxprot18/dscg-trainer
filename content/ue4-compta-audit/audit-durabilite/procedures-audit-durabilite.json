@@ -22,6 +22,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : les tests de contrôles ne sont pas systématiques ; leur mise en œuvre dépend de la stratégie retenue.",
+        "Inexact : les confirmations externes peuvent servir ponctuellement, mais ne sont pas systématiques.",
+        "Exact : en assurance limitée, entretiens et procédures analytiques dominent, complétés de tests de détail limités ciblés sur les risques.",
+        "Inexact : aucune mission d'assurance n'implique un contrôle exhaustif de chaque donnée."
+      ],
       "explanation": "L'option 3 est exacte : en assurance limitée, les travaux reposent principalement sur des entretiens et des procédures analytiques, complétés de tests de détail limités ciblés sur les risques ; les travaux sont moins étendus qu'en assurance raisonnable. L'option 1 est fausse : les tests de contrôles ne sont pas imposés de manière systématique ; leur mise en œuvre dépend de la stratégie retenue. L'option 2 est fausse : des confirmations externes peuvent être utiles ponctuellement, mais ne sont pas systématiques. L'option 4 est fausse : aucune mission d'assurance n'implique un contrôle exhaustif.",
       "source_ref": "Ordonnance n° 2023-1142 (mission d'assurance limitée) ; norme internationale ISSA 5000 (IAASB) : procédures en assurance limitée",
       "verified": true,

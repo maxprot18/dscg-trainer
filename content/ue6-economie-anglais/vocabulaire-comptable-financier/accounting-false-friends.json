@@ -23,6 +23,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Incorrect: in IFRS a provision is a liability (IAS 37 §10), whereas this write-down reduces an asset.",
+        "Incorrect: a reserve is a component of equity, not a reduction of receivables.",
+        "Incorrect: \"depreciation\" is the systematic allocation of a fixed asset's cost (amortissement), a classic false friend of « dépréciation ».",
+        "Correct: under IFRS 9, expected credit losses are recognised through a loss allowance reducing the receivables; the expense is an impairment loss."
+      ],
       "explanation": "Option 4 is correct: under IFRS 9, the expected credit losses on trade receivables are recognised through a loss allowance, which reduces the carrying amount of the receivables; the related expense is an impairment loss. Option 1 is wrong in IFRS terminology: a provision is a liability of uncertain timing or amount (IAS 37 §10), whereas the French \"provision pour créances douteuses\" reduces an asset; the wording is still heard in older UK usage but is not IFRS terminology. Option 2 is wrong: a reserve is a component of equity. Option 3 is wrong: \"depreciation\" means the systematic allocation of the cost of a fixed asset (amortissement), a classic false friend of \"dépréciation\".",
       "source_ref": "IAS 37 §10 (definition of a provision) ; IFRS 9 §5.5.1 and appendix A (loss allowance) — règlement UE 2023/1803",
       "verified": true,
@@ -51,6 +57,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Incorrect: it piles up false friends: \"exercise\", \"net result\", \"depreciation\" and \"acquisition gap\" instead of goodwill.",
+        "Correct: revenue for the year, net profit and goodwill impairment (IAS 36) are the right equivalents.",
+        "Incorrect: amortisation is a systematic allocation, and goodwill is not amortised under IFRS but tested for impairment.",
+        "Incorrect: \"provision\" designates a liability (IAS 37), not the write-down of an asset."
       ],
       "explanation": "Option 2 is correct: \"chiffre d'affaires\" = revenue, \"de l'exercice\" = for the year, \"résultat net\" = net profit, and \"dépréciation de l'écart d'acquisition\" = goodwill impairment (IAS 36). Option 1 accumulates false friends: \"exercise\", \"net result\", \"depreciation\" (= amortissement) and \"acquisition gap\" instead of goodwill. Option 3 is wrong: \"amortisation\" is a systematic allocation (amortissement), whereas the French sentence describes a loss in value; besides, goodwill is not amortised under IFRS but tested for impairment (IFRS 3 B63(a)). Option 4 is wrong: \"provision\" designates a liability (IAS 37), not the write-down of an asset.",
       "source_ref": "IAS 36 §10 and §124 (goodwill impairment, no reversal) ; IFRS 3 B63(a) (goodwill not amortised) ; IAS 37 §10 — règlement UE 2023/1803",
@@ -196,6 +208,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: in English \"obligations\" means commitments or duties; the French « obligations » are bonds.",
+        "Incorrect: shares are « actions », equity instruments with no maturity; the sentence refers to bonds.",
+        "Incorrect: \"commitments\" translates « engagements », and \"echeance\" is not English.",
+        "Correct: « obligations » are bonds, « arriver à échéance » is to reach maturity, and « rembourser » is to repay."
+      ],
       "explanation": "Option 4 is correct: « obligations » are bonds (debt securities), « arriver à échéance » is to mature or reach maturity, and « rembourser » an issue of bonds is to repay or redeem it. Option 1 is wrong: \"obligations\" means commitments or duties in English. Option 2 is wrong: shares are « actions », equity instruments that have no maturity. Option 3 is wrong: \"commitments\" again translates « engagements », and \"echeance\" is not English.",
       "source_ref": "Usual UK/US financial terminology: bonds / obligations, maturity / échéance ; IAS 32 §11 (financial liability, equity instrument) — règlement UE 2023/1803",
       "verified": true,

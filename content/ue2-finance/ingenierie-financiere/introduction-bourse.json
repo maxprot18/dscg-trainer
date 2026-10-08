@@ -26,6 +26,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : l'OPO est la tranche destinée aux particuliers, servie au prix fixé à l'issue du placement.",
+        "Inexact : la cotation directe admet les titres sans offre organisée.",
+        "Exact : le placement global recueille les intentions des institutionnels (quantités, prix) dans une fourchette, puis fixe le prix et alloue les titres.",
+        "Inexact : l'offre publique d'échange porte sur les titres d'une société déjà cotée, sans rapport avec une introduction."
+      ],
       "explanation": "Le placement global (book building) vise les institutionnels : les banques recueillent leurs intentions d'achat (quantités et prix) dans une fourchette, puis fixent le prix définitif et allouent les titres. L'option 1, l'OPO, est la tranche destinée aux particuliers, servie au prix fixé à l'issue du placement. L'option 2, la cotation directe, consiste à admettre les titres sans offre organisée. L'option 4 est une offre publique portant sur les titres d'une société déjà cotée, sans rapport avec une introduction."
     },
     {
@@ -53,6 +59,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : aucune règle de l'AMF n'impose de décote.",
+        "Exact : malédiction du vainqueur ; les moins informés reçoivent surtout les introductions surévaluées, et la décote les attire et sécurise le placement.",
+        "Inexact : inversé ; à nombre d'actions donné, la décote réduit les fonds levés.",
+        "Inexact : confond la décote avec les commissions, payées aux banques par la société sans modifier le prix payé par les investisseurs."
+      ],
       "explanation": "L'émetteur et ses banques en savent plus que le marché sur la valeur de la société ; les investisseurs les moins informés reçoivent une part plus importante des introductions surévaluées, moins demandées par les investisseurs avertis (malédiction du vainqueur). Pour les attirer et sécuriser le placement, le prix est fixé avec une décote. L'option 1 est fausse : aucune règle n'impose de décote. L'option 3 est inversée : à nombre d'actions donné, la décote réduit les fonds levés (c'est un coût pour les actionnaires existants). L'option 4 confond la décote avec les commissions, que la société paie aux banques sans modifier le prix payé par les investisseurs."
     },
     {

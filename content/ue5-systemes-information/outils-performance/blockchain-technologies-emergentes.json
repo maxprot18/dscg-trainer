@@ -23,6 +23,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : ce risque est maîtrisé ; modifier un bloc ancien obligerait à recalculer les empreintes suivantes et à obtenir l'accord des autres nœuds.",
+        "Inexact : ce risque est maîtrisé par l'horodatage des blocs.",
+        "Inexact : ce risque est maîtrisé par la réplication du registre sur les nœuds des différents membres.",
+        "Exact : la blockchain garantit l'intégrité de ce qui est inscrit, pas la véracité de la donnée à l'entrée : c'est le problème de l'oracle."
+      ],
       "explanation": "La blockchain garantit l'intégrité et l'horodatage de ce qui est inscrit, pas la véracité de la donnée à l'entrée : une température mal relevée ou falsifiée par un chauffeur sera fidèlement conservée. C'est le problème de l'oracle, que l'on réduit par des capteurs connectés, des contrôles croisés et des contrôles a posteriori. L'option 1 est maîtrisée : modifier un bloc ancien obligerait à recalculer les empreintes de tous les blocs suivants et à obtenir l'accord des autres nœuds. L'option 2 est maîtrisée par l'horodatage des blocs. L'option 3 est maîtrisée par la réplication du registre sur les nœuds des différents membres.",
       "source_ref": "Programme DSCG UE 5 : blockchain et technologies émergentes (registre distribué, consensus, limites)",
       "verified": true,
@@ -97,6 +103,12 @@
         0
       ],
       "multiple": false,
+      "option_explanations": [
+        "Exact : plusieurs organisations sans confiance totale partagent un registre réservé aux membres autorisés, avec un consensus simplifié : blockchain de consortium.",
+        "Inexact : une blockchain publique ouvrirait le registre à tous et imposerait un consensus énergivore, inutile ici.",
+        "Inexact : une blockchain privée confierait le contrôle du registre à une seule banque, ce que les membres refusent.",
+        "Inexact : une base centralisée chez l'une des banques lui confierait seule le contrôle du registre, ce qui est précisément refusé."
+      ],
       "explanation": "Plusieurs organisations qui ne se font pas entièrement confiance partagent un registre dont l'accès est réservé aux membres autorisés : c'est une blockchain de consortium (option 1), avec un consensus simplifié entre nœuds autorisés, rapide et peu coûteux. L'option 2 ouvrirait le registre à tous en lecture et en écriture et imposerait un consensus énergivore, inutile ici. Les options 3 et 4 reviennent à confier le contrôle du registre à un seul acteur, ce que les banques refusent précisément.",
       "source_ref": "Typologie des registres distribués : blockchains publiques, privées et de consortium (fiche « Blockchain et technologies émergentes »)",
       "estimated_seconds": 50,

@@ -16,6 +16,12 @@
         "Une durée librement fixée par les statuts, dans la limite de dix exercices"
       ],
       "answer": [0],
+      "option_explanations": [
+        "Exact : le mandat dure six exercices et expire après l'assemblée qui statue sur les comptes du sixième exercice.",
+        "Inexact : le mandat se compte en exercices sociaux, et non en années à partir de la nomination.",
+        "Inexact : trois exercices correspondent à la mission ALPE pour petites entreprises, pas à la durée de droit commun d'un audit légal.",
+        "Inexact : les statuts ne peuvent pas modifier la durée légale de six exercices."
+      ],
       "explanation": "Le commissaire aux comptes est nommé pour six exercices. Le mandat se compte en exercices sociaux, et non en années civiles : il expire après la réunion de l'assemblée qui statue sur les comptes du sixième exercice. Les statuts ne peuvent pas modifier cette durée. La mention d'une durée de trois exercices renvoie à un autre dispositif : la mission propre aux petites entreprises (dite ALPE), créée par la loi PACTE, que la société peut choisir lorsqu'elle désigne un CAC sans y être tenue ou dans certains cas de groupe ; ce n'est pas la durée de droit commun d'un audit légal. Un suppléant n'est exigé que si le titulaire est une personne physique ou une société unipersonnelle.",
       "source_ref": "C. com. art. L. 821-40 s. (désignation des CAC) et L. 821-44 (mandat de six exercices ; anc. art. L. 823-3), dans leur rédaction issue de l'ordonnance n° 2023-1142 du 6 décembre 2023",
       "verified": true,
@@ -62,6 +68,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : l'assemblée ne peut pas révoquer un commissaire aux comptes ; seul le juge peut le relever de ses fonctions.",
+        "Exact : avec 7 % du capital (seuil de 5 %), l'actionnaire peut demander la récusation pour juste motif, dans les trente jours.",
+        "Inexact : la CNCC n'a aucun pouvoir sur les désignations ; la récusation relève du juge.",
+        "Inexact : la récusation pour juste motif n'est pas réservée au ministère public ; actionnaires à 5 %, CSE et AMF peuvent agir."
+      ],
       "explanation": "Un ou plusieurs actionnaires représentant au moins 5 % du capital (ainsi que le comité social et économique, le ministère public et, pour les sociétés cotées, l'AMF) peuvent demander en justice la récusation du commissaire aux comptes pour juste motif. La demande doit être formée dans un bref délai suivant la désignation (trente jours, art. R. 821-176). Avec 7 % du capital, l'actionnaire peut agir seul, et un doute sérieux sur l'indépendance constitue un juste motif possible. L'assemblée ne peut pas révoquer un commissaire aux comptes : seul le juge peut le relever de ses fonctions. La CNCC n'a aucun pouvoir sur les désignations. La récusation n'est pas réservée au ministère public."
     },
     {
@@ -88,6 +100,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : pour protéger son indépendance, le CAC ne peut pas être révoqué ad nutum par l'assemblée.",
+        "Inexact : l'assemblée ne peut pas révoquer, et un désaccord technique suivi d'une réserve n'est pas une faute.",
+        "Inexact : le conseil d'administration peut seulement demander au juge le relèvement ; il ne met pas fin au mandat.",
+        "Exact : seul le juge relève le CAC, pour faute ou empêchement (art. L. 821-50) ; formuler une réserve relève de l'exercice normal de la mission."
       ],
       "explanation": "Pour protéger son indépendance, le commissaire aux comptes ne peut pas être révoqué par les organes de la société. Le relèvement de fonctions est prononcé par le juge, à la demande des personnes habilitées (organe d'administration, actionnaires représentant au moins 5 % du capital, comité social et économique, ministère public, AMF pour les sociétés cotées), en cas de faute ou d'empêchement. Exprimer un désaccord technique et formuler une réserve relève de l'exercice normal de la mission : ce n'est pas une faute. La révocation ad nutum ou pour juste motif par l'assemblée et la décision du conseil d'administration sont donc exclues."
     },

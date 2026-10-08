@@ -9,6 +9,7 @@ import {
   failedExerciseIds,
   masteryOf,
   notionProgress,
+  predictedGrades,
   programProgress,
   sessionHistory,
   notionsToReview,
@@ -122,5 +123,33 @@ describe('statistiques de progression', () => {
       { type: 'mcq', attempts: 2, correct: 1, rate: 0.5 },
       { type: 'numeric', attempts: 1, correct: 1, rate: 1 },
     ])
+  })
+})
+
+describe('note prévisionnelle', () => {
+  const exam = (id: number, mode: Session['mode'], scope: string, endedAt: number | undefined, grade?: number): Session => ({
+    id,
+    mode,
+    scope,
+    startedAt: (endedAt ?? 0) - 1000,
+    endedAt,
+    exerciseIds: [],
+    grade,
+  })
+
+  it('moyenne pondérée des trois derniers examens terminés de chaque UE', () => {
+    const grades = predictedGrades([
+      exam(1, 'exam', 'UE4', 1000, 4), // plus ancien que les trois derniers : ignoré
+      exam(2, 'exam', 'UE4', 2000, 8),
+      exam(3, 'full', 'UE4', 3000, 10),
+      exam(4, 'exam', 'UE4', 4000, 14),
+      exam(5, 'exam', 'UE4', undefined, 20), // non terminé
+      exam(6, 'quick', 'UE4', 5000, 20), // pas un examen
+      exam(7, 'exam', 'UE2', 6000, 12),
+    ])
+    // (14 × 3 + 10 × 2 + 8 × 1) / 6 = 11,67
+    expect(grades.get('UE4')).toEqual({ grade: 11.7, exams: 3, last: 14 })
+    expect(grades.get('UE2')).toEqual({ grade: 12, exams: 1, last: 12 })
+    expect(grades.has('UE1')).toBe(false)
   })
 })

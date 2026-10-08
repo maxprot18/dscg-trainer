@@ -25,6 +25,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : actualise le bénéfice (5 / 0,025) au lieu du dividende D₁ = 2 €.",
+        "Inexact : calcule g avec le taux de distribution (40 % × 12,5 % = 5 %) au lieu du taux de rétention.",
+        "Exact : D₁ = 2 € ; g = 60 % × 12,5 % = 7,5 % ; P₀ = 2 / (10 % − 7,5 %) = 80 €.",
+        "Inexact : ignore la croissance des dividendes (2 / 0,10)."
+      ],
       "explanation": "Dividende D₁ = 40 % × 5 = 2 €. Taux de croissance soutenable g = taux de rétention × ROE = 60 % × 12,5 % = 7,5 %. P₀ = 2 / (10 % − 7,5 %) = 2 / 0,025 = 80 € (option 3). L’option 1 actualise le bénéfice (5 / 0,025) au lieu du dividende ; l’option 2 calcule g avec le taux de distribution (40 % × 12,5 % = 5 %) au lieu du taux de rétention ; l’option 4 ignore la croissance (2 / 0,10)."
     },
     {
@@ -50,6 +56,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : utilise le dernier dividende versé D₀ au lieu de D₁ = 2,40 × 1,04 (3,84 % + 4 %).",
+        "Exact : D₁ = 2,496 € ; k = 2,496 / 62,50 + 4 % ≈ 3,99 % + 4 % = 7,99 %.",
+        "Inexact : 3,99 % est le seul rendement D₁ / P₀ ; il oublie la croissance g.",
+        "Inexact : se limite au taux de croissance g, sans le rendement du dividende."
       ],
       "explanation": "Le prochain dividende vaut D₁ = 2,40 × 1,04 = 2,496 €. k = D₁ / P₀ + g = 2,496 / 62,50 + 4 % = 3,99 % + 4 % ≈ 7,99 % (option 2). L’option 1 utilise le dernier dividende versé D₀ au lieu de D₁ (3,84 % + 4 %) ; l’option 3 oublie la croissance ; l’option 4 se limite au taux de croissance."
     },

@@ -22,6 +22,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : les petites entreprises restent tenues d'établir une annexe, sous forme simplifiée (C. com. L123-16).",
+        "Exact : le Code de commerce dispense les micro-entreprises d'établir une annexe (L123-16-1), sauf exceptions légales.",
+        "Inexact : l'absence de commissaire aux comptes n'a aucune incidence sur le contenu des comptes annuels.",
+        "Inexact : l'annexe expose aussi règles et méthodes comptables et commente les postes ; elle ne se limite pas aux engagements hors bilan."
+      ],
       "explanation": "Le Code de commerce dispense les micro-entreprises d'établir une annexe (C. com. L123-16-1), sauf exceptions prévues par la loi. Les petites entreprises restent tenues d'en produire une, sous une forme simplifiée (C. com. L123-16). L'absence de commissaire aux comptes n'a aucune incidence sur le contenu des comptes annuels. L'annexe ne se limite pas aux engagements hors bilan : elle expose aussi les règles et méthodes comptables et commente les postes du bilan et du compte de résultat.",
       "source_ref": "C. com. L123-12, L123-16 et L123-16-1",
       "estimated_seconds": 45
@@ -48,6 +54,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : réviser une durée d'utilité après expertise modifie une estimation : changement d'estimation, traité prospectivement.",
+        "Inexact : relever le taux de dépréciation selon la conjoncture modifie une estimation du risque de non-recouvrement.",
+        "Exact : passer de l'achèvement à l'avancement modifie la règle d'évaluation des contrats : changement de méthode (art. 122-2).",
+        "Inexact : réviser le coût à terminaison est un changement d'estimation, traité de façon prospective en résultat."
       ],
       "explanation": "Passer de la méthode à l'achèvement à la méthode à l'avancement modifie la règle d'évaluation des contrats : c'est un changement de méthode à l'initiative de l'entité, admis s'il conduit à une meilleure information financière (art. 122-2) ; il porte sur tous les contrats en cours (art. 622-7). Son effet à l'ouverture est imputé sur le report à nouveau et il est justifié dans l'annexe. Les trois autres situations résultent d'informations nouvelles qui modifient des estimations (durée d'utilité, risque de non-recouvrement, coût à terminaison) : ce sont des changements d'estimation, traités de façon prospective en résultat.",
       "source_ref": "PCG art. 122-1 s. (règl. ANC 2014-03) ; PCG art. 622-2 et 622-7 ; C. com. L123-17",
@@ -76,6 +88,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : 130 000 € oublie l'amortissement de 20 000 € du projet A au titre de N-1.",
+        "Inexact : 90 000 € compte deux années d'amortissement pour A, alors qu'il n'a commencé qu'au 01/01/N-1.",
+        "Exact : rétrospectivement, A vaut 80 000 − 20 000 = 60 000 € et B 50 000 € : +110 000 € en report à nouveau.",
+        "Inexact : 60 000 € omet le projet B, pourtant activable dès N-1."
       ],
       "explanation": "Un changement de méthode s'applique rétrospectivement : on calcule, à l'ouverture de l'exercice du changement, la valeur qu'auraient les actifs si la nouvelle méthode avait toujours été appliquée, et l'écart est imputé sur le report à nouveau. Projet A : 80 000 − 20 000 (amortissement de N-1) = 60 000 €. Projet B : 50 000 € (en cours, non amorti). Impact : +110 000 €. 130 000 € oublie l'amortissement de A ; 90 000 € compte deux années d'amortissement alors qu'il n'a commencé qu'au 01/01/N-1 ; 60 000 € omet le projet B, pourtant activable dès N-1. L'amortissement de A de l'exercice N (20 000 €) sera, lui, une charge de N.",
       "source_ref": "PCG art. 122-1 s. (changements de méthode, règl. ANC 2014-03) ; PCG art. 212-3 (frais de développement)",

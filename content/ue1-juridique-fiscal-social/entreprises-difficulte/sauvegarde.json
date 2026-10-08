@@ -21,6 +21,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : seul le débiteur peut demander l'ouverture d'une sauvegarde ; un créancier n'a pas qualité pour agir.",
+        "Inexact : le ministère public ne peut pas saisir le tribunal d'une sauvegarde, réservée à la demande du débiteur (L620-1).",
+        "Inexact : le débiteur en cessation des paiements relève du redressement ou de la liquidation judiciaire, non de la sauvegarde.",
+        "Exact : sans être en cessation des paiements, le débiteur justifie de difficultés qu'il ne peut surmonter et demande lui-même la sauvegarde (L620-1)."
+      ],
       "explanation": "La sauvegarde est ouverte sur demande du débiteur qui, sans être en cessation des paiements, justifie de difficultés qu'il n'est pas en mesure de surmonter (C. com. art. L620-1) : option 4. Seul le débiteur peut la demander : ni un créancier (option 1) ni le ministère public (option 2). Le débiteur en cessation des paiements relève du redressement ou de la liquidation judiciaire (option 3).",
       "source_ref": "C. com. art. L620-1",
       "verified": true,
@@ -47,6 +53,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : les seuils de taille relevaient du régime antérieur ; la limitation aux créanciers financiers n'est plus qu'une faculté (L628-1, al. 3).",
+        "Inexact : six mois renouvelables et consultation individuelle sont les règles de la sauvegarde de droit commun ; ici, vote en classes de parties affectées.",
+        "Exact : conciliation en cours, projet de plan susceptible d'un soutien suffisamment large, durée de deux mois prolongeable jusqu'à quatre (L628-1, L628-8).",
+        "Inexact : seul le débiteur peut demander l'ouverture d'une sauvegarde accélérée, non ses créanciers financiers."
       ],
       "explanation": "Depuis l'ordonnance n° 2021-1193, la sauvegarde accélérée est ouverte au débiteur engagé dans une conciliation qui justifie d'un projet de plan susceptible de recueillir un soutien suffisamment large des parties affectées pour rendre vraisemblable son adoption dans le délai ; elle dure deux mois, prolongeables d'au plus deux mois (C. com. art. L628-1 et L628-8) : option 3. Les seuils de taille (option 1) relevaient du régime antérieur et la sauvegarde financière accélérée a été supprimée en tant que procédure distincte en 2021 ; la limitation des effets aux seuls créanciers financiers n'est plus qu'une faculté, lorsque la nature de l'endettement le justifie (art. L628-1, al. 3), et non la règle ; le vote se fait désormais en classes de parties affectées, obligatoires dans cette procédure. La période de six mois renouvelable et la consultation individuelle (option 2) sont celles de la sauvegarde de droit commun. Seul le débiteur peut demander l'ouverture (option 4).",
       "source_ref": "C. com. art. L628-1 et L628-8 (rédaction issue de l'ordonnance n° 2021-1193)",

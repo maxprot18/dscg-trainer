@@ -1,0 +1,457 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-dossier-0003",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "augmentation-capital-dilution",
+      "difficulty": 3,
+      "tags": [
+        "sujet type",
+        "augmentation de capital",
+        "droit préférentiel de souscription",
+        "dilution",
+        "obligations convertibles",
+        "effet de levier",
+        "covenant",
+        "résultat dilué par action",
+        "contrôle",
+        "signal"
+      ],
+      "source_ref": "C. com. art. L. 225-129, L. 225-129-2, L. 225-132, L. 225-141, L. 225-144, L. 228-92, L. 225-96, L. 225-98 et L. 233-3 ; IAS 32 §28-32 et 37, IAS 33 §31-33 et 36 (règl. UE 2023/1803) ; PCG art. 212-9 et comptes 4563, 101 et 1041 (règl. ANC 2014-03) ; relation de l'effet de levier",
+      "verified": true,
+      "estimated_seconds": 5400,
+      "total_points": 20,
+      "title": "Thermavia : financer une acquisition sans perdre le contrôle",
+      "context": "**Thermavia SA** conçoit et fabrique des pompes à chaleur de forte puissance pour l'industrie et les réseaux de chaleur urbains. Ses actions sont admises aux négociations sur un marché réglementé (Euronext Paris) et ses comptes consolidés sont établis en IFRS. La société est contrôlée par **Lanzac Participations**, holding de la famille fondatrice, qui détient 54 % du capital et des droits de vote ; le solde du capital est dispersé dans le public.\n\nPour accélérer sa croissance dans la récupération de chaleur fatale, Thermavia a négocié l'acquisition de 100 % des titres de **Cryonef SAS** pour 60 M€ (société sans dette ni trésorerie), avec une réalisation au 1er janvier 2027. Trois modes de financement sont à l'étude : une augmentation de capital avec droit préférentiel de souscription (solution A), un emprunt bancaire (solution B) et une émission d'obligations convertibles en actions (solution C).\n\nLa directrice financière, **Inès Moreau**, vous demande, en tant que chargé(e) d'affaires à la direction financière, de préparer la note destinée au conseil d'administration. Elle attend :\n\n1. la mesure de l'effet de chaque solution sur la rentabilité, le résultat par action et le risque financier du groupe ;\n2. l'analyse des conditions de l'augmentation de capital et de ses conséquences pour l'actionnaire familial ;\n3. le cadre juridique et le traitement comptable des opérations envisagées ;\n4. une recommandation argumentée, éventuellement sous la forme d'une solution combinée.\n\nHypothèses communes : taux d'impôt sur les sociétés de 25 % (contributions additionnelles négligées) ; frais d'émission négligés ; montants exprimés en millions d'euros (M€) sauf mention contraire.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Chiffres clés consolidés de Thermavia (IFRS, exercice 2026)",
+          "content": "| Compte de résultat 2026 | M€ |\n| --- | ---: |\n| Chiffre d'affaires | 400,0 |\n| EBITDA | 50,0 |\n| Résultat d'exploitation | 32,0 |\n| Charges financières nettes | 2,4 |\n| Impôt sur le résultat (25 %) | 7,4 |\n| Résultat net (intégralement part du groupe) | 22,2 |\n\n| Bilan au 31 décembre 2026 | M€ |\n| --- | ---: |\n| Capitaux propres | 180,0 |\n| Dettes financières (crédit syndiqué) | 80,0 |\n| Trésorerie et équivalents de trésorerie | 20,0 |\n| Endettement net | 60,0 |\n\n**Capital** : 12 000 000 actions de 2 € de nominal ; cours de bourse retenu pour les calculs : **26 €** ; résultat par action 2026 : 1,85 €. Les statuts excluent le droit de vote double : chaque action donne droit à une voix.\n\n**Coût de l'endettement net existant** : 4 % avant impôt.\n\n**Historique** : en 2023, un ralentissement des commandes du secteur a fait baisser l'EBITDA de 15 % avant qu'il ne se redresse en 2024."
+        },
+        {
+          "title": "Annexe 2 — Cryonef et prévisions pro forma 2027",
+          "content": "Prix d'acquisition de 100 % des titres de Cryonef : **60 M€**, payés le 1er janvier 2027. Cryonef n'a ni dette financière ni trésorerie.\n\n| Prévisions 2027 (M€) | Thermavia hors Cryonef | Cryonef | Groupe pro forma |\n| --- | ---: | ---: | ---: |\n| EBITDA | 50,0 | 8,0 | 58,0 |\n| Résultat d'exploitation | 32,0 | 6,0 | 38,0 |\n\nAucune synergie n'est retenue. L'endettement net existant (60 M€) et ses charges financières (2,4 M€) sont inchangés en 2027.\n\nConventions de calcul : les capitaux propres d'ouverture 2027 sont de 180 M€, augmentés selon le cas des fonds levés en capital ou de la composante capitaux propres des obligations convertibles ; le résultat de 2027 n'est pas ajouté aux capitaux propres."
+        },
+        {
+          "title": "Annexe 3 — Les trois solutions de financement étudiées",
+          "content": "**Solution A — Augmentation de capital avec droit préférentiel de souscription (DPS)**\n- Émission de 3 000 000 actions nouvelles au prix de **20 €** (2 € de nominal et 18 € de prime d'émission), soit 60 M€.\n- Parité : **1 action nouvelle pour 4 actions anciennes** ; actions nouvelles portant jouissance au 1er janvier 2027.\n- Mise en œuvre par le conseil d'administration sur délégation de l'assemblée générale extraordinaire (annexe 4).\n\n**Solution B — Emprunt bancaire**\n- 60 M€ au taux fixe de **5 %**, amortissable sur 7 ans.\n- Le montant peut être ramené à toute somme comprise entre 20 et 60 M€, aux mêmes conditions.\n\n**Solution C — Obligations convertibles en actions (OC)**\n- 2 000 000 OC de **30 €** de nominal, soit 60 M€, émises au pair le 1er janvier 2027 avec DPS des actionnaires.\n- Coupon annuel de **1,5 %**, durée 5 ans, remboursement au pair in fine.\n- Conversion possible à tout moment à raison de **1 action pour 1 OC**.\n- Taux d'un emprunt obligataire non convertible de même risque et de même durée : **5 %**. En IFRS, la charge d'intérêts de la composante dette est calculée à ce taux."
+        },
+        {
+          "title": "Annexe 4 — Extraits documentaires (rédigés pour le cas)",
+          "content": "**Contrat de crédit syndiqué de 80 M€ (clause 21.2)** : « L'emprunteur s'engage à ce que le rapport entre l'endettement net consolidé et l'EBITDA consolidé n'excède pas **2,25** à chaque date de test. L'endettement net comprend toutes les dettes financières, y compris les obligations convertibles pour leur valeur nominale tant qu'elles n'ont pas été converties, diminuées de la trésorerie. Lors de la première date de test suivant une acquisition, l'EBITDA est calculé pro forma sur douze mois. Le non-respect de ce ratio rend la totalité du crédit exigible par anticipation. »\n\n**Assemblée générale extraordinaire du 10 juin 2026, 14e résolution** : l'assemblée délègue au conseil d'administration sa compétence pour décider une ou plusieurs augmentations de capital en numéraire avec maintien du droit préférentiel de souscription, pour une durée de 26 mois, dans la limite d'un plafond global de 8 M€ de nominal.\n\n**Lettre de Lanzac Participations au président (25 novembre 2026)** : « La famille tient à conserver la majorité absolue du capital de Thermavia. Notre holding peut mobiliser 6 M€ de trésorerie, mais ne peut pas s'endetter davantage. »"
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "À partir des annexes 1 à 3, calculez la rentabilité financière prévisionnelle 2027 du groupe dans la solution B (financement intégral par l'emprunt bancaire), en %, arrondie à deux décimales. Vérifiez votre résultat par la relation de l'effet de levier.",
+          "points": 1.5,
+          "expected_value": 13.58,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Résultat d'exploitation pro forma = 32 + 6 = 38 M€ ; charges financières = 2,4 + 60 × 5 % = 5,4 M€ ; résultat net = (38 − 5,4) × 0,75 = 24,45 M€ ; Rf = 24,45 / 180 = **13,58 %**. Vérification : actif économique = 180 + 120 = 300 M€ ; Re = 38 × 0,75 / 300 = 9,50 % ; coût de la dette après impôt i = 5,4 / 120 × 0,75 = 3,375 % ; bras de levier D/CP = 120 / 180 = 0,667 ; Rf = 9,50 % + (9,50 % − 3,375 %) × 0,667 = 13,58 %. Pour comparaison : 12,33 % en 2026 (Re 10 %) et 11,13 % dans la solution A (26,7 / 240). Erreurs : oublier les intérêts du nouvel emprunt (14,83 %), prendre D/(D + CP) comme bras de levier (11,95 %)."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "prompt": "À partir des annexes 1, 2 et 4, calculez, dans la solution B, le ratio endettement net / EBITDA pro forma au 1er janvier 2027, puis la baisse maximale de l'EBITDA pro forma que le groupe pourrait subir sans enfreindre son covenant. Répondez par ce pourcentage de baisse (deux décimales).",
+          "points": 1.5,
+          "expected_value": 8.05,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Endettement net = 60 + 60 = 120 M€ ; EBITDA pro forma = 50 + 8 = 58 M€ ; ratio = 120 / 58 = 2,07, sous le plafond de 2,25. EBITDA minimal = 120 / 2,25 = 53,33 M€ ; baisse maximale = 1 − 53,33 / 58 = **8,05 %**. La marge est faible au regard de l'historique : une baisse de 15 % comme en 2023 porterait le ratio à 120 / 49,3 = 2,43 et rendrait le crédit syndiqué exigible. La solution C donne le même ratio tant que les OC ne sont pas converties (prises pour leur nominal selon la clause 21.2) ; la solution A le ramène à 60 / 58 = 1,03. Erreur : mesurer la marge sur le ratio (2,25 / 2,07 − 1 = 8,75 %) au lieu de l'EBITDA."
+        },
+        {
+          "id": "q3",
+          "kind": "numeric",
+          "prompt": "À partir des annexes 1 et 3 (solution A), calculez le cours théorique de l'action après détachement du droit, puis la valeur théorique du droit préférentiel de souscription. Répondez par la valeur du droit, en euros (deux décimales).",
+          "points": 1,
+          "expected_value": 1.2,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.01
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "Cours théorique après opération : C' = (4 × 26 + 1 × 20) / 5 = 24,80 € ; valeur du droit = 26 − 24,80 = **1,20 €** (vérification : (26 − 20) × 1 / 5 = 1,20). Il faut 4 droits pour souscrire une action nouvelle : 4 × 1,20 + 20 = 24,80 €, soit le cours théorique. Erreur classique : répartir l'écart sur les seules actions anciennes, (26 − 20) / 4 = 1,50 €."
+        },
+        {
+          "id": "q4",
+          "kind": "numeric",
+          "prompt": "Lanzac Participations souhaite détenir au moins 50 % du capital après l'augmentation de capital de la solution A (annexes 1, 3 et 4). Elle exerce les droits nécessaires et cède les droits excédentaires à leur valeur théorique. Calculez l'apport net de trésorerie qui lui serait nécessaire, en M€ (deux décimales).",
+          "points": 2,
+          "expected_value": 17.52,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.05
+          },
+          "unit": "M€",
+          "decimals": 2,
+          "explanation": "Après l'opération, le capital compte 15 000 000 actions ; 50 % = 7 500 000 actions. Lanzac détient 54 % × 12 000 000 = 6 480 000 actions : il lui faut 1 020 000 actions nouvelles, soit 4 × 1 020 000 = 4 080 000 droits sur les 6 480 000 reçus, et un versement de 1 020 000 × 20 = 20,40 M€. Elle cède les 2 400 000 droits restants à 1,20 €, soit 2,88 M€. Apport net = 20,40 − 2,88 = **17,52 M€**, très supérieur aux 6 M€ dont elle dispose. Sans souscrire, sa part tomberait à 6 480 000 / 15 000 000 = 43,2 %. Avec ses 6 M€ et la vente des droits qu'elle n'utilise pas, elle peut souscrire n actions telles que 20 n = 6 000 000 + (6 480 000 − 4 n) × 1,20, soit n = 555 484 actions et 46,9 % du capital. Erreur : oublier la cession des droits excédentaires (20,40 M€)."
+        },
+        {
+          "id": "q5",
+          "kind": "open",
+          "prompt": "À l'aide de l'annexe 4 et de vos résultats (questions 3 et 4), expliquez à Lanzac Participations en quoi le DPS protège un actionnaire qui ne souscrit pas et ce qu'il ne protège pas, puis indiquez les conséquences juridiques d'une détention ramenée à 43,2 % ou 46,9 % du capital. Quels aménagements permettraient à la holding de conserver la majorité ?",
+          "points": 2,
+          "model_answer": "Le DPS protège l'actionnaire en valeur : un actionnaire de 100 actions qui ne souscrit pas voit la valeur de ses titres passer de 2 600 € à 2 480 € (cours théorique de 24,80 €), mais il encaisse 100 × 1,20 = 120 € en cédant ses droits : sa richesse est inchangée. Il ne le protège pas en pourcentage du capital : la part de Lanzac Participations tomberait de 54 % à 43,2 % si elle ne souscrivait pas, et à 46,9 % au mieux avec les 6 M€ dont elle dispose, puisque rester à 50 % exigerait un apport net de 17,52 M€. Juridiquement, la holding perdrait la majorité absolue des droits de vote : l'assemblée générale ordinaire statuant à la majorité des voix exprimées (C. com. art. L. 225-98), elle ne serait plus assurée de faire seule nommer les administrateurs ni approuver les comptes si le public vote en nombre. Elle resterait toutefois présumée contrôler la société au sens de l'article L. 233-3 II, puisqu'elle disposerait de plus de 40 % des droits de vote et qu'aucun autre actionnaire n'en détient davantage ; en assemblée extraordinaire, qui statue à la majorité des deux tiers des voix exprimées (L. 225-96), elle n'était déjà pas assurée d'imposer seule ses décisions avec 54 %. Pour conserver la majorité, la société peut réduire le montant de l'augmentation de capital et compléter par de l'emprunt (avec 30 M€ levés à 1 action nouvelle pour 8 anciennes au prix de 20 €, les 6 M€ de la holding et la vente de ses droits excédentaires lui permettent de rester à environ 51 %) ; la famille peut renforcer les fonds propres de la holding ; le recours aux OC reporte enfin la dilution à la conversion, qui n'interviendra que si le cours dépasse 30 €.",
+          "key_points": [
+            "Protection en valeur : la baisse du cours (1,20 € par action) est compensée par la vente du droit",
+            "Pas de protection en pourcentage : 54 % → 43,2 % sans souscription, 46,9 % au mieux avec 6 M€ ; 17,52 M€ seraient nécessaires pour garder 50 %",
+            "Perte de la majorité absolue des droits de vote, donc plus de majorité assurée en assemblée ordinaire (L. 225-98), mais contrôle présumé au-delà de 40 % si aucun autre actionnaire ne détient davantage (L. 233-3 II)",
+            "Aménagements : augmentation de capital réduite combinée à de l'emprunt, renforcement de la holding, OC (dilution différée)"
+          ],
+          "explanation": "On attend la distinction classique entre protection en valeur et dilution du contrôle, chiffrée avec les résultats des questions 3 et 4, puis une lecture juridique nuancée : majorité en AGO perdue, mais contrôle présumé (seuil de 40 %). Calcul d'appui de la solution réduite : droit = (26 − 20) × 1 / 9 = 0,667 € ; n = (6 000 000 + 6 480 000 × 0,667) / (20 + 8 × 0,667) = 407 368 actions ; (6 480 000 + 407 368) / 13 500 000 = 51,0 %."
+        },
+        {
+          "id": "q6",
+          "kind": "mcq",
+          "prompt": "À partir de l'annexe 4, quelle affirmation relative à la mise en œuvre de l'augmentation de capital de la solution A est exacte ?",
+          "points": 1.5,
+          "options": [
+            "Le conseil d'administration peut décider seul l'augmentation de capital ; l'assemblée générale extraordinaire n'intervient qu'ensuite, pour modifier les statuts.",
+            "Les actions de Thermavia étant cotées, les droits préférentiels de souscription ne sont pas négociables : chaque actionnaire doit les exercer ou y renoncer.",
+            "Les actions nouvelles doivent être libérées intégralement, nominal et prime d'émission, dès la souscription.",
+            "La délégation du 10 juin 2026 peut être utilisée jusqu'en août 2028 dans la limite de son plafond, et le délai de souscription offert aux actionnaires ne peut être inférieur à cinq jours de bourse."
+          ],
+          "answer": [
+            3
+          ],
+          "multiple": false,
+          "explanation": "L'option 4 est exacte : la délégation de compétence ne peut excéder 26 mois (C. com. art. L. 225-129-2), soit jusqu'au 10 août 2028, et l'émission de 6 M€ de nominal (3 000 000 × 2 €) respecte le plafond de 8 M€ ; le délai de souscription est d'au moins cinq jours de bourse (L. 225-141). L'option 1 est fausse : l'AGE est seule compétente pour décider une augmentation de capital, le conseil n'agissant que sur sa délégation (L. 225-129). L'option 2 est fausse : le DPS détaché d'actions négociables est lui-même négociable pendant la période de souscription (L. 225-132). L'option 3 est fausse : la loi impose la libération d'un quart au moins du nominal et de la totalité de la prime à la souscription, le solde pouvant être appelé dans les cinq ans (L. 225-144)."
+        },
+        {
+          "id": "q7",
+          "kind": "true_false",
+          "prompt": "Solution C (annexe 3) : si l'assemblée générale extraordinaire décide l'émission des OC sans supprimer le droit préférentiel, les actionnaires bénéficient d'un droit préférentiel de souscription sur les OC, mais pas sur les actions qui seront créées lors de la conversion.",
+          "points": 1,
+          "answer": true,
+          "explanation": "Vrai. Les émissions de valeurs mobilières donnant accès au capital sont autorisées par l'AGE et ouvrent aux actionnaires un droit de préférence à leur souscription, régi par les règles du DPS (C. com. art. L. 228-92, al. 2). En contrepartie, la décision d'émission emporte renonciation des actionnaires à leur droit préférentiel sur les actions auxquelles ces titres donnent droit (L. 225-132, dernier alinéa) : la protection joue au moment de l'émission des OC, pas lors de la conversion."
+        },
+        {
+          "id": "q8",
+          "kind": "numeric",
+          "prompt": "À partir de l'annexe 3 (solution C), calculez le montant de la composante dette des OC à inscrire au bilan consolidé IFRS de Thermavia lors de l'émission, en M€ (deux décimales).",
+          "points": 1.5,
+          "expected_value": 50.91,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.05
+          },
+          "unit": "M€",
+          "decimals": 2,
+          "explanation": "L'OC est un instrument composé (IAS 32 §28-29) : la composante dette est la valeur actuelle des flux contractuels au taux d'une dette analogue non convertible (5 %), la composante capitaux propres est le résidu (§31-32). Coupon = 60 × 1,5 % = 0,9 M€. Composante dette = 0,9 × [1 − 1,05⁻⁵] / 0,05 + 60 × 1,05⁻⁵ = 3,90 + 47,01 = **50,91 M€** ; composante capitaux propres = 60 − 50,91 = 9,09 M€, qui ne sera pas réestimée même si la conversion devient plus probable (§30). Erreurs : ne pas séparer (60 M€), actualiser au taux du coupon (60 M€), répondre par la composante capitaux propres (9,09 M€)."
+        },
+        {
+          "id": "q9",
+          "kind": "numeric",
+          "prompt": "À partir des annexes 2 et 3 et de la question précédente, calculez le résultat dilué par action 2027 du groupe dans la solution C (IAS 33), en euros (deux décimales). Les OC étant émises le 1er janvier 2027, la charge d'intérêts IFRS de 2027 est calculée au taux effectif de 5 % sur la composante dette à l'émission.",
+          "points": 2,
+          "expected_value": 1.91,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.01
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "Charge d'intérêts sur les OC (coût amorti, première année au taux effectif) = 50,908 × 5 % = 2,545 M€, et non le coupon de 0,9 M€ ; la différence de 1,645 M€ accroît la composante dette. Résultat net = (38 − 2,4 − 2,545) × 0,75 = 24,79 M€ ; résultat de base par action = 24,79 / 12 = 2,07 €. Résultat dilué (IAS 33 §32-33) : le numérateur est majoré des intérêts comptabilisés, nets d'impôt, soit 24,79 + 2,545 × 0,75 = 26,70 M€, et le dénominateur des 2 000 000 actions potentielles : 26,70 / 14 = **1,91 €**. Les OC sont dilutives (1,91 € < 2,07 €). Comparaison : solution A, 26,70 / 15 = 1,78 € ; solution B, 24,45 / 12 = 2,04 € ; 2026, 1,85 €. Erreurs : ne pas réintégrer les intérêts (1,77 €), réintégrer le seul coupon (1,82 €), réintégrer les intérêts avant impôt (1,95 €)."
+        },
+        {
+          "id": "q10",
+          "kind": "journal_entry",
+          "prompt": "La solution A est retenue (annexe 3). Les fonds versés par les souscripteurs ont été enregistrés au compte 4563. Passez, dans les comptes individuels de Thermavia SA (PCG), l'écriture constatant la réalisation définitive de l'augmentation de capital, en euros, avec les comptes 4563, 101 et 1041 (frais négligés).",
+          "points": 1.5,
+          "date": "2026-12-21",
+          "entries": [
+            {
+              "account": "4563",
+              "label": "Associés – Versements reçus sur augmentation de capital",
+              "debit": 60000000,
+              "credit": 0
+            },
+            {
+              "account": "101",
+              "label": "Capital (3 000 000 × 2 €)",
+              "debit": 0,
+              "credit": 6000000
+            },
+            {
+              "account": "1041",
+              "label": "Primes d'émission (3 000 000 × 18 €)",
+              "debit": 0,
+              "credit": 54000000
+            }
+          ],
+          "explanation": "Le compte 4563 reçoit au crédit les versements des souscripteurs ; il est débité lorsque l'augmentation devient effective, par le crédit du capital et des primes liées au capital (PCG, commentaires du compte 456). Capital : 3 000 000 × 2 € = 6 000 000 € ; prime d'émission : 3 000 000 × 18 € = 54 000 000 €. Si des frais avaient été retenus, ils pourraient être inscrits à l'actif en frais d'établissement ou imputés sur la prime d'émission, et comptabilisés en charges en cas d'insuffisance de la prime (PCG art. 212-9). En IFRS, les coûts marginaux d'une transaction sur capitaux propres viennent en déduction des capitaux propres (IAS 32 §37)."
+        },
+        {
+          "id": "q11",
+          "kind": "mcq",
+          "prompt": "Le 2 décembre 2026, Thermavia annonce que son conseil étudie une augmentation de capital avec DPS (solution A) ; le cours baisse de 4 % dans la journée, alors que le détachement des droits n'interviendra que le 9 décembre. Quelle explication est la plus cohérente avec la théorie financière ?",
+          "points": 1.5,
+          "options": [
+            "La baisse correspond au détachement anticipé du droit préférentiel de souscription, dont la valeur est retranchée du cours dès l'annonce.",
+            "Selon Modigliani et Miller (1958), en marchés parfaits et sans impôt, remplacer de la dette par des fonds propres détruit de la valeur : le cours doit donc baisser.",
+            "Il s'agit d'un signal négatif lié à l'asymétrie d'information : le marché craint que les dirigeants émettent des actions parce qu'ils les jugent surévaluées, ce qui rejoint la théorie du financement hiérarchique.",
+            "La baisse traduit la hausse du coût des capitaux propres provoquée par l'augmentation de capital, qui accroît le risque financier supporté par les actionnaires."
+          ],
+          "answer": [
+            2
+          ],
+          "multiple": false,
+          "explanation": "L'option 3 est exacte : selon Myers et Majluf, les dirigeants, mieux informés, émettent plus volontiers des actions quand ils les jugent surévaluées ; le marché corrige le cours à l'annonce, ce qui explique que l'augmentation de capital soit la source de dernier recours du financement hiérarchique. L'option 1 est fausse : la baisse mécanique liée au droit intervient le jour du détachement, qui ouvre la période de négociation des droits, pas à l'annonce. L'option 2 est fausse : sans impôt, Modigliani et Miller concluent à la neutralité de la structure financière. L'option 4 est fausse : une augmentation de capital réduit l'endettement relatif, donc le risque financier et le coût des capitaux propres."
+        },
+        {
+          "id": "q12",
+          "kind": "open",
+          "prompt": "À l'aide de l'ensemble des annexes et de vos résultats, rédigez la recommandation destinée au conseil d'administration : comparez les solutions A, B et C (rentabilité, résultat par action, risque financier et covenant, contrôle, signal) et proposez le financement à retenir, éventuellement combiné, en chiffrant ses principaux effets.",
+          "points": 3,
+          "model_answer": "L'acquisition de Cryonef rapporte 6 × 0,75 = 4,5 M€ de résultat d'exploitation après impôt pour 60 M€ investis, soit 7,5 % : elle abaisse la rentabilité économique du groupe de 10 % à 9,5 %, mais reste supérieure au coût de la dette après impôt. Solution B (emprunt) : l'effet de levier est positif (Re 9,5 % > i 3,375 %), la rentabilité financière monte à 13,58 % et le résultat par action à 2,04 € (contre 1,85 € en 2026), sans dilution du contrôle. Mais le ratio endettement net / EBITDA atteint 2,07 pour un plafond de 2,25 : une baisse de l'EBITDA de 8 % suffirait à rendre exigibles les 80 M€ du crédit syndiqué, alors que l'EBITDA a déjà reculé de 15 % en 2023. Ce risque de liquidité est inacceptable. Solution A (capital) : elle sécurise la structure (ratio 1,03), mais la rentabilité financière tombe à 11,13 % et le résultat par action à 1,78 € (dilution de 4 %), l'annonce est un signal négatif, et Lanzac Participations, faute de 17,52 M€, perdrait la majorité absolue (46,9 % au mieux), en restant seulement présumée contrôler la société. Solution C (OC) : le coupon de 1,5 % ménage la trésorerie, mais la charge IFRS est de 5 % ; le résultat dilué par action est de 1,91 €, la dilution du contrôle est reportée (46,3 % après conversion si la holding ne souscrit pas) ; en revanche, les OC sont comptées pour leur nominal dans le covenant jusqu'à leur conversion (ratio 2,07, même fragilité que B), et si le cours reste sous 30 €, il faudra rembourser 60 M€ à l'échéance, dans cinq ans. Je recommande une solution combinée : une augmentation de capital avec DPS de 30 M€ (1 action nouvelle pour 8 anciennes à 20 €) et un emprunt bancaire de 30 M€ à 5 %. Le ratio de covenant serait de 90 / 58 = 1,55, ce qui permet de supporter une baisse de l'EBITDA de 31 % ; le résultat net atteindrait (38 − 3,9) × 0,75 = 25,58 M€, soit un résultat par action de 1,89 €, supérieur à celui de 2026, et une rentabilité financière de 12,18 % ; Lanzac Participations, avec ses 6 M€ et la vente de ses droits excédentaires, resterait à environ 51 % du capital. Il faudra présenter l'opération comme le financement d'un projet de croissance identifié, pour limiter l'effet de signal négatif.",
+          "key_points": [
+            "Comparaison chiffrée des trois solutions : rentabilité financière, résultat par action, ratio de covenant, contrôle",
+            "B : effet de levier positif (Re 9,5 % > i 3,375 %) mais marge de covenant de 8 % seulement, incompatible avec la baisse de 15 % de l'EBITDA observée en 2023",
+            "A : structure sécurisée mais résultat par action dilué (1,78 €), signal négatif et perte de la majorité absolue pour la holding",
+            "C : dilution différée et coupon faible, mais OC comptées en dette dans le covenant jusqu'à la conversion et risque de remboursement si le cours reste sous 30 €",
+            "Recommandation motivée et chiffrée, par exemple 30 M€ de capital et 30 M€ d'emprunt : ratio 1,55, résultat par action 1,89 €, holding à environ 51 %"
+          ],
+          "explanation": "Une bonne copie ne se contente pas de retenir la solution qui maximise le résultat par action : elle confronte l'effet de levier au risque de défaut technique (covenant), à la dilution du contrôle et au signal envoyé au marché, puis chiffre la solution proposée. Calculs d'appui de la solution combinée : charges financières = 2,4 + 30 × 5 % = 3,9 M€ ; résultat net = 25,575 M€ ; 13 500 000 actions ; capitaux propres 210 M€ ; ratio 90 / 58 ; baisse admissible de l'EBITDA = 1 − (90 / 2,25) / 58 = 31 %. D'autres combinaisons sont acceptables si elles respectent le covenant avec une marge suffisante et la contrainte de la holding."
+        }
+      ],
+      "explanation": "Méthode : (1) mesurer l'effet de levier de la solution par emprunt (Rf 13,58 % = 9,50 % + (9,50 % − 3,375 %) × 120/180) et sa contrepartie, la marge de covenant (8,05 % d'EBITDA seulement) ; (2) calculer le droit préférentiel (1,20 €) et la dilution de l'actionnaire familial (43,2 % sans souscription ; 17,52 M€ nécessaires pour rester à 50 %) ; (3) situer l'opération dans le Code de commerce (compétence de l'AGE et délégation de 26 mois, DPS négociable, délai de cinq jours de bourse, DPS sur les OC) ; (4) traiter les OC en IFRS (composante dette 50,91 M€, résultat dilué par action 1,91 €) et passer l'écriture de réalisation de l'augmentation de capital (4563 / 101 et 1041) ; (5) interpréter la réaction du marché (signal, financement hiérarchique) et recommander une solution, de préférence combinée (30 M€ de capital et 30 M€ d'emprunt)."
+    },
+    {
+      "id": "ue2-dossier-0004",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE2",
+      "theme": "gestion-tresorerie",
+      "notion": "plan-tresorerie-previsionnel",
+      "difficulty": 3,
+      "tags": [
+        "sujet type",
+        "tableau des flux de trésorerie",
+        "flux de trésorerie disponible",
+        "BFR",
+        "budget de trésorerie",
+        "cession Dailly",
+        "risque de taux",
+        "swap de taux",
+        "cap",
+        "prêt indexé sur la durabilité"
+      ],
+      "source_ref": "Règl. ANC 2020-01 art. 282-43 (tableau des flux de trésorerie consolidé, méthode indirecte) ; PCG art. 513-5 ; PCG art. 628-1, 628-5, 628-11, 628-12 et 628-18 (règl. ANC 2014-03) ; IFRS 9 §6.5.11 (règl. UE 2023/1803) ; C. com. art. L. 441-10 et L. 441-16 (délais de paiement) ; C. mon. fin. art. L. 313-23 et L. 313-24 (cession Dailly) ; calcul du coût réel d'un financement à court terme",
+      "verified": true,
+      "estimated_seconds": 5400,
+      "total_points": 20,
+      "title": "Pradeval : une croissance rentable qui assèche la trésorerie",
+      "context": "Le **groupe Pradeval** distribue du matériel électrique et des solutions d'éclairage auprès des installateurs et des entreprises du bâtiment, à partir de 38 agences situées dans l'ouest et le sud de la France. La société mère, **Pradeval SAS**, détient 100 % de trois filiales de distribution ; elle porte l'essentiel de l'endettement du groupe et centralise sa trésorerie. Les comptes consolidés sont établis selon le règlement ANC 2020-01 et les comptes individuels selon le PCG.\n\nEn 2026, le chiffre d'affaires a progressé de 12,5 % grâce aux chantiers de rénovation énergétique, mais la trésorerie est passée de 12 000 k€ à 2 925 k€. Le président, **Hugo Pradeval**, s'en étonne : « nous n'avons jamais été aussi rentables ». La directrice administrative et financière, **Claire Lemaître**, vous a recruté(e) comme trésorier(ère) du groupe et vous confie quatre travaux :\n\n1. expliquer la dégradation de la trésorerie à partir du tableau des flux et du BFR ;\n2. établir le budget de trésorerie du premier trimestre 2027 et proposer son équilibrage ;\n3. proposer une couverture du risque de taux de l'emprunt à taux variable du groupe ;\n4. donner un avis sur la proposition des banques de transformer cet emprunt en prêt indexé sur des critères de durabilité.\n\nHypothèses : taux d'impôt sur les sociétés de 25 % ; montants en milliers d'euros (k€) sauf mention contraire ; année de 360 jours pour les calculs d'intérêts et de délais ; les éléments du BFR autres que ceux de l'annexe 2 sont stables.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Compte de résultat consolidé 2026 et opérations de l'exercice (k€)",
+          "content": "| Compte de résultat consolidé | 2026 |\n| --- | ---: |\n| Chiffre d'affaires HT (160 000 en 2025) | 180 000 |\n| EBITDA (hors plus-value de cession) | 14 400 |\n| Dotations aux amortissements | 5 200 |\n| Plus-value nette de cession d'un entrepôt (prix 2 400 − valeur nette comptable 1 500) | 900 |\n| Résultat d'exploitation | 10 100 |\n| Charges financières | 1 800 |\n| Impôt sur les bénéfices | 2 075 |\n| Résultat net | 6 225 |\n\nLa cession, opération courante de gestion du parc d'agences, est classée en résultat d'exploitation. La plus-value est imposée au taux de 25 % : l'impôt correspondant (225) est compris dans l'impôt sur les bénéfices.\n\n**Opérations de 2026** (toutes réglées dans l'exercice, comme les charges financières et l'impôt) :\n- cession de l'entrepôt de Niort : prix encaissé 2 400 ;\n- acquisitions d'immobilisations (ouverture de quatre agences, rayonnages automatisés) : 8 000 ;\n- dividendes versés aux actionnaires : 3 000 ;\n- nouvel emprunt bancaire amortissable : 6 000 ;\n- remboursements d'emprunts : 4 000.\n\n**Trésorerie nette** : 12 000 au 31 décembre 2025 ; 2 925 au 31 décembre 2026.\n\n**Dettes financières au 31 décembre 2026** : emprunt in fine à taux variable 30 000 (annexe 4) ; emprunts amortissables à taux fixe 12 000."
+        },
+        {
+          "title": "Annexe 2 — BFR d'exploitation au 31 décembre (k€)",
+          "content": "| Élément | 2025 | 2026 |\n| --- | ---: | ---: |\n| Stocks de marchandises | 24 000 | 31 000 |\n| Créances clients | 30 000 | 37 500 |\n| Dettes fournisseurs | 22 000 | 23 500 |\n\n**Note du directeur commercial (septembre 2026)** : « Pour gagner des parts de marché face aux plateformes en ligne, nous avons accordé aux grands installateurs un délai de paiement de 60 jours fin de mois et élargi l'assortiment disponible en agence. »"
+        },
+        {
+          "title": "Annexe 3 — Prévisions de trésorerie du premier trimestre 2027 (k€)",
+          "content": "Trésorerie au 1er janvier 2027 : **2 925**.\n\n| Flux prévus | Janvier | Février | Mars |\n| --- | ---: | ---: | ---: |\n| Encaissements clients (TTC) | 19 800 | 18 000 | 22 800 |\n| Paiements fournisseurs (TTC), dont achats de saison en février | 14 400 | 19 200 | 15 600 |\n| Salaires et charges sociales | 3 600 | 3 600 | 3 600 |\n| Autres charges décaissables (TTC) | 1 200 | 1 200 | 1 200 |\n\n**TVA** (régime réel normal ; la TVA due au titre d'un mois est payée le mois suivant ; un crédit de TVA s'impute sur les déclarations suivantes) :\n\n| TVA | Décembre 2026 | Janvier 2027 | Février 2027 |\n| --- | ---: | ---: | ---: |\n| TVA collectée | 3 000 | 3 300 | 3 400 |\n| TVA déductible | 1 900 | 2 400 | 3 900 |\n\n**Autres éléments** : acompte d'impôt sur les sociétés de 520 le 15 mars ; le 31 mars, intérêts du premier trimestre (90 jours) de l'emprunt in fine (annexe 4) et échéance des emprunts amortissables (1 000 de capital et 80 d'intérêts) ; dotations aux amortissements du trimestre : 1 350.\n\n**Moyens de financement à court terme** :\n- découvert autorisé de 3 000 au taux de l'Euribor 3 mois + 1,80 % ;\n- cession Dailly d'un bordereau de créances sur de grands installateurs : nominal 5 000, échéance dans 60 jours (début avril, encaissement prévu en avril), intérêts précomptés au taux de 4,00 % sur la durée majorée de 2 jours de banque, commission de 5 HT par bordereau (TVA récupérable).\n\nAvec la saison des chantiers, la trésorerie prévisionnelle redevient nettement positive à partir d'avril."
+        },
+        {
+          "title": "Annexe 4 — Emprunt à taux variable et propositions de couverture",
+          "content": "**Emprunt in fine** de 30 000 contracté par Pradeval SAS, échéance le 31 décembre 2031, au taux de l'**Euribor 3 mois + 1,30 %**, intérêts payés chaque trimestre (nombre exact de jours / 360). Euribor 3 mois fixé le 2 janvier 2027 pour le premier trimestre : **2,30 %**. Covenant : endettement net consolidé / EBITDA consolidé ≤ 3,0 (test annuel).\n\n**Proposition 1 — Swap de taux** sur 5 ans, nominal 30 000 : Pradeval **paie 2,45 % fixe** et **reçoit l'Euribor 3 mois** ; seul le différentiel net est réglé chaque trimestre, sur la même base que l'emprunt.\n\n**Proposition 2 — Cap** sur 5 ans, nominal 30 000 : taux plafond de **3,00 %** sur l'Euribor 3 mois ; prime de 0,10 % du nominal payée au début de chaque trimestre (soit **0,40 % par an**).\n\n**Variante suggérée par une banque** : porter le nominal du swap à 40 000 « pour profiter davantage de la hausse des taux attendue ».\n\nScénarios d'Euribor 3 mois retenus par la DAF pour la durée de l'emprunt : 2,00 % (baisse), 3,60 % (hausse)."
+        },
+        {
+          "title": "Annexe 5 — Proposition de prêt indexé sur la durabilité (extrait de la lettre des banques)",
+          "content": "*Texte rédigé pour le cas.*\n\n« Nous vous proposons de refinancer l'emprunt in fine de 30 000 par un prêt de même montant et de même échéance, **indexé sur deux indicateurs de durabilité**. Les fonds restent destinés aux besoins généraux du groupe. La marge de 1,30 % sera ajustée chaque année de −0,05 point par indicateur atteint et de +0,05 point par indicateur manqué :\n- indicateur 1 : réduction de 30 % des émissions de gaz à effet de serre des scopes 1 et 2 en 2029 par rapport à 2024 (électrification de la flotte de livraison) ;\n- indicateur 2 : taux de valorisation des emballages collectés en agence d'au moins 85 %.\n\nLes indicateurs seront vérifiés chaque année par un organisme tiers indépendant, pour un coût de 25 par an à la charge de Pradeval. Le covenant serait porté à 3,25. »"
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "À partir des annexes 1 et 2, calculez le flux net de trésorerie généré par l'activité du groupe en 2026, selon la méthode indirecte du modèle de tableau des flux du règlement ANC 2020-01 (art. 282-43), en k€.",
+          "points": 1.5,
+          "expected_value": -2250,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "BFR d'exploitation : 2025 = 24 000 + 30 000 − 22 000 = 32 000 ; 2026 = 31 000 + 37 500 − 23 500 = 45 000 ; variation = +13 000. Le modèle de l'article 282-43 élimine les plus-values de cession **nettes d'impôt** (le produit de cession figure, net d'impôt, dans les investissements) : plus-value nette = 900 × (1 − 25 %) = 675. Marge brute d'autofinancement = 6 225 + 5 200 − 675 = 10 750 ; flux d'activité = 10 750 − 13 000 = **−2 250 k€**. Vérification par l'EBITDA : 14 400 − 13 000 − impôt hors impôt sur la plus-value (2 075 − 225 = 1 850) − charges financières 1 800 = −2 250 (dans le modèle du règlement ANC 2020-01, les intérêts versés restent dans le flux d'activité). Erreurs : éliminer la plus-value brute en laissant son impôt dans l'activité (−2 475), laisser la plus-value dans le résultat (−1 575), oublier la variation du BFR (+10 750)."
+        },
+        {
+          "id": "q2",
+          "kind": "numeric",
+          "prompt": "À partir de l'annexe 1 et de la question précédente, calculez le flux de trésorerie disponible 2026 du groupe (flux d'activité diminué des investissements nets de cessions), en k€. Vérifiez la cohérence avec la variation de la trésorerie.",
+          "points": 1.5,
+          "expected_value": -8075,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "Flux d'investissement = −8 000 + produit de cession net d'impôt (2 400 − 225 = 2 175) = −5 825 ; flux de trésorerie disponible = −2 250 − 5 825 = **−8 075 k€** (le reclassement de l'impôt sur la plus-value ne modifie pas ce total : −2 475 − 5 600 donne le même résultat). Flux de financement = −3 000 (dividendes) + 6 000 − 4 000 = −1 000. Variation de trésorerie = −8 075 − 1 000 = −9 075, soit 12 000 − 9 075 = 2 925 au 31 décembre 2026 : le tableau est cohérent avec l'annexe 1. Erreur : retenir la plus-value nette (675) au lieu du prix de cession net d'impôt (2 175), ce qui donne −9 575."
+        },
+        {
+          "id": "q3",
+          "kind": "numeric",
+          "prompt": "À partir des annexes 1 et 2, exprimez le BFR d'exploitation de 2025 et de 2026 en jours de chiffre d'affaires HT, puis calculez le montant du BFR d'exploitation 2026 qui excède celui qu'aurait atteint le groupe s'il avait conservé en 2026 la même durée qu'en 2025, en k€.",
+          "points": 1.5,
+          "expected_value": 9000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "Durée du BFR d'exploitation : 2025 = 32 000 / 160 000 × 360 = 72 jours ; 2026 = 45 000 / 180 000 × 360 = 90 jours. À 72 jours, le BFR 2026 aurait été de 180 000 × 72 / 360 = 36 000. Excédent = 45 000 − 36 000 = **9 000 k€**. La hausse de 13 000 se décompose en 4 000 dus à la croissance de l'activité (normaux) et 9 000 dus à l'allongement de la durée (dérive). Détail en jours de CA HT : stocks 54 → 62 jours, clients 67,5 → 75 jours, fournisseurs 49,5 → 47 jours. Erreur : répondre par la hausse totale du BFR (13 000)."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "prompt": "À l'aide de vos résultats (questions 1 à 3) et des annexes 1, 2 et 4, répondez au président : pourquoi la trésorerie a-t-elle fondu alors que le groupe est rentable ? Votre diagnostic doit apprécier la situation financière du groupe et proposer des mesures.",
+          "points": 2,
+          "model_answer": "La rentabilité n'est pas en cause : l'EBITDA atteint 14 400 k€ (8 % du chiffre d'affaires) et le résultat net 6 225 k€. Mais ce résultat ne s'est pas transformé en trésorerie : l'activité a consommé 2 250 k€, parce que le BFR d'exploitation a augmenté de 13 000 k€. Une partie de cette hausse (4 000 k€) accompagne normalement la croissance de 12,5 % ; l'essentiel (9 000 k€) vient de l'allongement de la durée du BFR de 72 à 90 jours de chiffre d'affaires : stocks portés de 54 à 62 jours par l'élargissement de l'assortiment, crédit clients de 67,5 à 75 jours, crédit fournisseurs réduit de 49,5 à 47 jours. Après 5 600 k€ d'investissements nets, le flux de trésorerie disponible est négatif de 8 075 k€ ; le groupe a pourtant versé 3 000 k€ de dividendes, financés par la trésorerie et par la dette (endettement net de 39 075 k€, soit 2,71 fois l'EBITDA, pour un covenant de 3,0 : une baisse de l'EBITDA d'environ 10 % suffirait à le rompre). Cette trajectoire n'est pas durable. En outre, le délai de 60 jours fin de mois accordé aux grands installateurs dépasse les plafonds légaux (60 jours à compter de l'émission de la facture ou 45 jours fin de mois, C. com. art. L. 441-10) ; le non-respect de ces délais est passible d'une amende administrative pouvant atteindre 2 M€ pour une personne morale (L. 441-16) : les conditions de vente doivent être mises en conformité. Mesures : revenir à des délais clients conformes et relancer le recouvrement ; réduire les stocks (assortiment par agence, réapprovisionnement centralisé) ; renégocier les délais fournisseurs dans les limites légales ; envisager l'affacturage pour les grands comptes ; suspendre ou réduire le dividende tant que le flux disponible est négatif ; financer les investissements de croissance par des ressources longues.",
+          "key_points": [
+            "Rentabilité réelle (EBITDA 14 400, résultat net 6 225) mais flux d'activité négatif (−2 250) à cause de la hausse du BFR (+13 000)",
+            "Dérive du BFR de 72 à 90 jours (9 000 k€), au-delà de l'effet normal de la croissance (4 000 k€)",
+            "Flux disponible de −8 075 alors que 3 000 de dividendes sont versés : financement par la dette et la trésorerie, levier de 2,71 proche du covenant de 3,0",
+            "Délai clients de 60 jours fin de mois contraire au plafond légal (L. 441-10), manquement passible d'une amende administrative (L. 441-16)",
+            "Mesures : délais clients et stocks, recouvrement, affacturage, politique de dividende, ressources longues pour les investissements"
+          ],
+          "explanation": "On attend un diagnostic qui relie rentabilité et trésorerie par le BFR, distingue la croissance de la dérive des délais, qualifie le flux disponible négatif (investissements et BFR, aggravés par un dividende non couvert) et propose des mesures concrètes. Calculs d'appui : endettement net = 30 000 + 12 000 − 2 925 = 39 075 ; 39 075 / 14 400 = 2,71 ; EBITDA minimal pour le covenant = 39 075 / 3 = 13 025, soit une baisse admissible de 9,5 %."
+        },
+        {
+          "id": "q5",
+          "kind": "numeric",
+          "prompt": "À partir des annexes 3 et 4, établissez le budget de trésorerie de janvier à mars 2027 avant tout financement à court terme et donnez le solde de trésorerie prévisionnel à fin mars 2027, en k€.",
+          "points": 2,
+          "expected_value": -3945,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "TVA à payer : en janvier, au titre de décembre, 3 000 − 1 900 = 1 100 ; en février, au titre de janvier, 3 300 − 2 400 = 900 ; en mars, au titre de février, 3 400 − 3 900 = −500 : crédit de TVA imputé sur les déclarations suivantes, donc aucun paiement ni encaissement en mars. Intérêts de l'emprunt in fine = 30 000 × (2,30 % + 1,30 %) × 90 / 360 = 270. Janvier : 2 925 + 19 800 − (14 400 + 3 600 + 1 200 + 1 100) = 2 425. Février : 2 425 + 18 000 − (19 200 + 3 600 + 1 200 + 900) = −4 475. Mars : −4 475 + 22 800 − (15 600 + 3 600 + 1 200 + 520 + 270 + 1 080) = **−3 945 k€**. Les dotations aux amortissements (1 350) ne sont pas des décaissements. Erreurs : traiter le crédit de TVA comme un encaissement (−3 445), inscrire les dotations (−5 295), oublier les intérêts de l'emprunt in fine (−3 675)."
+        },
+        {
+          "id": "q6",
+          "kind": "numeric",
+          "prompt": "À partir de l'annexe 3, calculez le coût réel (taux effectif annuel, base 360 jours) de la cession Dailly du bordereau de 5 000 k€, rapporté au montant net perçu et à la durée réelle de 60 jours, en % (deux décimales).",
+          "points": 1.5,
+          "expected_value": 4.77,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.02
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Intérêts précomptés = 5 000 × 4 % × (60 + 2) / 360 = 34,44 k€ ; agios = 34,44 + 5 = 39,44 k€ (la TVA sur la commission est récupérable et n'entre pas dans le coût) ; montant net perçu = 5 000 − 39,44 = 4 960,56 k€. Coût réel = 39,44 × 360 / (4 960,56 × 60) = **4,77 %**, contre 4,10 % pour le découvert (2,30 % + 1,80 %, hors commissions). Erreurs : rapporter les agios au nominal (4,73 %), oublier les jours de banque (4,64 %)."
+        },
+        {
+          "id": "q7",
+          "kind": "mcq",
+          "prompt": "Le président demande s'il ne vaudrait pas mieux céder les créances des grands installateurs à un factor plutôt que de recourir à la cession Dailly (annexe 3). Quelle affirmation est exacte ?",
+          "points": 1.5,
+          "options": [
+            "La cession Dailly transfère à la banque le risque d'insolvabilité des clients cédés : en cas d'impayé, Pradeval n'a rien à rembourser.",
+            "Le crédit de campagne est la solution adaptée au besoin créé par l'allongement durable du BFR constaté en 2026.",
+            "L'affacturage avec garantie transfère au factor le risque d'insolvabilité des débiteurs ; son coût comprend une commission d'affacturage, en plus de la commission de financement.",
+            "Le découvert étant plus coûteux que la cession Dailly, il doit être utilisé en dernier recours."
+          ],
+          "answer": [
+            2
+          ],
+          "multiple": false,
+          "explanation": "L'option 3 est exacte : le factor achète les créances, assure leur recouvrement et, dans l'affacturage avec garantie, supporte l'insolvabilité des débiteurs ; il facture une commission d'affacturage sur les créances cédées et une commission de financement sur les sommes avancées. L'option 1 est fausse : dans la cession Dailly, le cédant reste, sauf convention contraire, garant solidaire du paiement des créances cédées (C. mon. fin. art. L. 313-24). L'option 2 est fausse : le crédit de campagne finance un besoin saisonnier remboursé par les ventes de la saison, pas une hausse durable du BFR, qui appelle des mesures sur le BFR ou une ressource stable. L'option 4 est fausse : ici le découvert (4,10 % hors commissions) est moins cher que la cession Dailly (4,77 %) ; il est seulement plafonné à 3 000."
+        },
+        {
+          "id": "q8",
+          "kind": "numeric",
+          "prompt": "À partir de l'annexe 4 (proposition 1), calculez le montant net reçu (positif) ou versé (négatif) par Pradeval au titre du swap pour un trimestre de 90 jours où l'Euribor 3 mois est fixé à 3,60 %, en k€ (deux décimales).",
+          "points": 1.5,
+          "expected_value": 86.25,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "k€",
+          "decimals": 2,
+          "explanation": "Pradeval reçoit l'Euribor et paie 2,45 % : différentiel = 30 000 × (3,60 % − 2,45 %) × 90 / 360 = **+86,25 k€ reçus**. Sur l'emprunt, elle paie 30 000 × (3,60 % + 1,30 %) × 90 / 360 = 367,50 ; coût net = 367,50 − 86,25 = 281,25 par trimestre, soit 3,75 % l'an (2,45 % + 1,30 %) quel que soit l'Euribor. Si l'Euribor tombait à 2,00 %, Pradeval verserait 33,75 k€ par trimestre au titre du swap. Erreurs : inverser le sens (−86,25), inclure la marge de l'emprunt dans le différentiel (183,75)."
+        },
+        {
+          "id": "q9",
+          "kind": "numeric",
+          "prompt": "À partir de l'annexe 4, déterminez le niveau de l'Euribor 3 mois en dessous duquel le cap (proposition 2) procure un coût total de l'emprunt, prime comprise, inférieur à celui de l'emprunt swapé (proposition 1), en % (deux décimales).",
+          "points": 1.5,
+          "expected_value": 2.05,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.05
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Coût avec swap : 2,45 % + 1,30 % = 3,75 % quel que soit l'Euribor (E). Coût avec cap : min(E ; 3,00 %) + 1,30 % + 0,40 % de prime. Au-delà de 3,00 %, le cap coûte 4,70 %, plus que le swap ; en dessous, il est moins coûteux si E + 1,70 % < 3,75 %, soit **E < 2,05 %**. Dans le scénario de baisse (2,00 %), le cap coûte 3,70 % contre 3,75 % pour le swap ; dans le scénario de hausse (3,60 %), 4,70 % contre 3,75 %, et 4,90 % sans couverture. Le cap ne devient préférable à l'absence de couverture qu'au-delà de 3,40 %. Erreur : oublier la prime (seuil de 2,45 %)."
+        },
+        {
+          "id": "q10",
+          "kind": "mcq",
+          "prompt": "Pradeval SAS conclut le swap de la proposition 1 (annexe 4) pour couvrir son emprunt. Quelle affirmation relative à sa comptabilisation dans les comptes individuels (PCG) est exacte ?",
+          "points": 1.5,
+          "options": [
+            "Le nominal du swap (30 000) est inscrit au bilan, à l'actif et au passif, puisqu'il sert de base au calcul des flux échangés.",
+            "Les différentiels d'intérêts du swap sont comptabilisés en résultat de manière symétrique aux intérêts de l'emprunt couvert, et les variations de valeur du swap ne sont pas enregistrées au bilan.",
+            "Avec la variante à 40 000, la fraction de 10 000 non adossée à l'emprunt est en position ouverte isolée : ses gains latents sont enregistrés en produits financiers.",
+            "Le swap n'étant pas coté, sa valeur ne peut pas être estimée : il ne fait l'objet d'aucune information dans les comptes annuels."
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "explanation": "L'option 2 est exacte : en comptabilité de couverture, les produits et charges de l'instrument de couverture sont reconnus en résultat de manière symétrique à ceux de l'élément couvert, dans le même poste ou la même rubrique, et ses variations de valeur ne sont pas reconnues au bilan sauf pour assurer cette symétrie (PCG art. 628-11). L'option 1 est fausse : les nominaux des instruments financiers à terme ne sont pas comptabilisés au bilan, ils sont mentionnés dans les engagements hors bilan (art. 628-1). L'option 3 est fausse : en position ouverte isolée, les gains latents n'interviennent pas dans le résultat ; seules les pertes latentes sont provisionnées (art. 628-18). L'option 4 est fausse : la valeur des contrats se détermine par référence au marché ou par des modèles d'évaluation généralement admis (art. 628-5), et le nominal figure dans les engagements hors bilan. Si le groupe établissait ses comptes en IFRS, le swap qui fixe les intérêts d'une dette variable serait une couverture de flux de trésorerie : sa juste valeur figurerait au bilan, la partie efficace de ses variations en autres éléments du résultat global (IFRS 9 §6.5.11)."
+        },
+        {
+          "id": "q11",
+          "kind": "true_false",
+          "prompt": "Le prêt proposé à l'annexe 5 est un prêt vert : les fonds doivent être affectés à des projets environnementaux, faute de quoi la marge est majorée.",
+          "points": 1,
+          "answer": false,
+          "explanation": "Faux. Les fonds restent destinés aux besoins généraux du groupe : il n'y a pas d'affectation à des projets. C'est un prêt indexé sur la durabilité (sustainability-linked) : seule la marge varie selon l'atteinte d'objectifs mesurés par des indicateurs (émissions des scopes 1 et 2, valorisation des emballages). Un prêt ou une obligation verte se caractérise au contraire par l'affectation des fonds à des projets environnementaux éligibles."
+        },
+        {
+          "id": "q12",
+          "kind": "open",
+          "prompt": "À l'aide de l'ensemble des annexes et de vos résultats (questions 5 à 11), rédigez vos recommandations à la DAF : équilibrage de la trésorerie du premier trimestre 2027, politique de couverture du risque de taux et avis motivé sur le prêt indexé sur la durabilité (chiffrez son intérêt financier).",
+          "points": 3,
+          "model_answer": "Équilibrage du trimestre : le besoin culmine à 4 475 k€ fin février et reste de 3 945 k€ fin mars, avant le retour d'excédents en avril. Il est saisonnier et court : un financement à court terme est donc adapté. Le découvert, le moins coûteux (4,10 % hors commissions), est utilisé jusqu'à son plafond de 3 000 ; le complément, environ 1 500 k€ en février et 1 000 k€ en mars, est couvert par une cession Dailly (coût réel de 4,77 %) d'un bordereau plus petit que celui proposé, ou par un relèvement temporaire de l'autorisation de découvert à négocier avec la banque. Ces solutions ne règlent pas le problème de fond : la dérive du BFR (9 000 k€) doit être traitée par la remise en conformité des délais clients, la réduction des stocks et, le cas échéant, l'affacturage des grands comptes, faute de quoi le groupe financera durablement son exploitation à court terme. Couverture du risque de taux : l'emprunt de 30 000 à taux variable expose le groupe à une hausse des taux (risque de flux), alors que son levier (2,71 pour un covenant de 3,0) laisse peu de marge. Le swap payeur du fixe garantit un coût de 3,75 % pendant cinq ans : il coûte un peu plus que la situation actuelle (3,60 %), mais protège contre le scénario de hausse (4,90 % sans couverture). Le cap laisse profiter de la baisse, mais n'est préférable au swap que si l'Euribor descend sous 2,05 % et coûte 4,70 % en cas de hausse. Je recommande le swap, sur un nominal au plus égal à l'emprunt ; une couverture partielle (par exemple deux tiers par swap, le reste en variable ou sous cap) est défendable si la DAF anticipe une baisse. La variante à 40 000 doit être refusée : les 10 000 excédentaires seraient une position spéculative, en position ouverte isolée, avec provision des pertes latentes. En comptabilité, le différentiel du swap s'impute sur les charges d'intérêts de l'emprunt. Prêt indexé sur la durabilité : le gain maximal est de 0,10 point, soit 30 k€ par an si les deux objectifs sont atteints, presque entièrement absorbé par les 25 k€ de vérification (gain net de 5 k€) ; si les deux objectifs sont manqués, le surcoût atteint 30 + 25 = 55 k€ par an. L'intérêt est surtout ailleurs : le covenant passe de 3,0 à 3,25, ce qui donne de l'air au groupe, et la démarche crédibilise sa stratégie de durabilité auprès des banques et des grands clients. Je recommande d'accepter, à condition que les objectifs soient atteignables (plan d'électrification de la flotte financé) et que le swap soit adossé au nouveau prêt, de même montant et de même échéance.",
+          "key_points": [
+            "Besoin saisonnier (−4 475 en février, −3 945 en mars) : découvert jusqu'au plafond de 3 000, complément par cession Dailly ou découvert temporaire ; traitement de fond de la dérive du BFR",
+            "Swap payeur du fixe : coût garanti de 3,75 % ; le cap n'est meilleur que sous 2,05 % d'Euribor et coûte 4,70 % en cas de hausse",
+            "Refus de la variante à 40 000 : 10 000 en position ouverte isolée (spéculation), pertes latentes provisionnées",
+            "Prêt indexé sur la durabilité : gain maximal de 30 k€ par an contre 25 k€ de vérification (gain net de 5 k€, surcoût de 55 k€ dans le pire cas)",
+            "Intérêts non financiers et covenant porté à 3,25 ; recommandation conditionnée à des objectifs atteignables et à l'adossement du swap"
+          ],
+          "explanation": "La copie doit relier le choix du financement à la nature du besoin (saisonnier ou structurel), choisir l'instrument de couverture selon l'exposition et le scénario de taux, en refusant toute surcouverture, et chiffrer l'intérêt réel du prêt indexé (gain de marge contre frais de vérification), sans le confondre avec un prêt vert. Calculs d'appui : complément au-delà du découvert = 4 475 − 3 000 = 1 475 en février et 3 945 − 3 000 = 945 en mars ; ajustement de marge = 30 000 × 0,10 % = 30 k€ par an."
+        }
+      ],
+      "explanation": "Méthode : (1) reconstituer le tableau des flux par la méthode indirecte : flux d'activité −2 250 (hausse du BFR de 13 000 ; plus-value éliminée nette d'impôt), flux disponible −8 075, variation de trésorerie −9 075 ; (2) isoler la dérive du BFR (72 → 90 jours, soit 9 000 k€) et la non-conformité des délais clients (C. com. art. L. 441-10) ; (3) bâtir le budget du trimestre avec la TVA payée le mois suivant (crédit de TVA sans encaissement) et sans les dotations : solde de −4 475 fin février et −3 945 fin mars ; (4) équilibrer par le découvert puis la cession Dailly (coût réel 4,77 %) ; (5) couvrir l'emprunt variable par un swap payeur du fixe (coût 3,75 % ; différentiel reçu de 86,25 k€ au trimestre si l'Euribor est à 3,60 % ; cap préférable seulement sous 2,05 %), comptabilisé en couverture (PCG art. 628-11), sans surcouverture ; (6) apprécier le prêt indexé sur la durabilité : 30 k€ de gain maximal pour 25 k€ de vérification, intérêt surtout stratégique et covenant assoupli."
+    }
+  ]
+}

@@ -24,6 +24,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : un franchissement ponctuel du seuil de 11 salariés ne suffit pas ; il doit être atteint pendant 12 mois consécutifs.",
+        "Inexact : 20 salariés n'est pas le seuil du CSE, fixé à 11 salariés pendant 12 mois consécutifs.",
+        "Exact : le CSE est obligatoire dès 11 salariés, seuil atteint pendant 12 mois consécutifs (L2311-2).",
+        "Inexact : le seuil de 50 salariés élargit les attributions du CSE (budgets, personnalité civile), il ne conditionne pas son existence."
+      ],
       "explanation": "Le CSE est mis en place dans les entreprises d'au moins 11 salariés, sa mise en place n'étant obligatoire que si ce seuil est atteint pendant 12 mois consécutifs (option 3). Un franchissement ponctuel ne suffit pas (option 1). Le seuil de 20 salariés (option 2) n'est pas celui du CSE. Le seuil de 50 salariés (option 4) détermine l'étendue des attributions du CSE (attributions économiques élargies, personnalité civile, budgets), pas son existence.",
       "source_ref": "C. trav. art. L2311-2",
       "estimated_seconds": 40
@@ -52,6 +58,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : les orientations stratégiques font l'objet de l'une des trois consultations récurrentes du CSE.",
+        "Inexact : la situation économique et financière est l'une des trois consultations récurrentes, appuyée sur la BDESE.",
+        "Inexact : la politique sociale, les conditions de travail et l'emploi forment la troisième consultation récurrente.",
+        "Exact : la rémunération des dirigeants sociaux relève des organes sociaux (conseil, assemblée, statuts), non d'une consultation du CSE."
+      ],
       "explanation": "Les trois consultations récurrentes portent sur les orientations stratégiques (option 1), la situation économique et financière (option 2) et la politique sociale, les conditions de travail et l'emploi (option 3) ; elles s'appuient sur la BDESE. La rémunération des dirigeants sociaux (option 4) relève des organes sociaux (conseil d'administration, assemblée, statuts) et non d'une consultation du CSE.",
       "source_ref": "C. trav. art. L2312-17 ; C. trav. art. L2312-18 (BDESE)",
       "estimated_seconds": 50
@@ -125,6 +137,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : l'option ignore toute condition d'audience ; la signature doit émaner de syndicats ayant plus de 50 % des suffrages.",
+        "Inexact : confusion avec le CSE, qui rend des avis ; en présence de délégués syndicaux, ce sont les syndicats qui négocient et signent.",
+        "Inexact : c'est l'ancienne règle ; aujourd'hui, entre 30 % et 50 %, l'accord n'est valable qu'après approbation des salariés par référendum.",
+        "Exact : l'accord majoritaire exige des signataires ayant recueilli plus de 50 % des suffrages exprimés au premier tour des élections du CSE (L2232-12)."
+      ],
       "explanation": "Depuis la généralisation de l'accord majoritaire (L2232-12), l'accord d'entreprise doit être signé par un ou plusieurs syndicats représentatifs ayant recueilli plus de 50 % des suffrages exprimés en faveur des organisations représentatives au premier tour des dernières élections des titulaires du CSE : option 4.\nL'option 1 ignore toute condition d'audience. L'option 2 confond le CSE, qui rend des avis, avec les syndicats, qui négocient et signent les accords en présence de délégués syndicaux. L'option 3 reprend l'ancienne règle (30 % sans opposition majoritaire) ; aujourd'hui, un accord signé par des syndicats ayant plus de 30 % mais pas plus de 50 % n'est valable qu'après approbation des salariés par consultation (référendum) demandée par ces syndicats.",
       "source_ref": "C. trav. art. L2232-12 (validité des accords d’entreprise)",
       "estimated_seconds": 50

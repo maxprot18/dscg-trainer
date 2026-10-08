@@ -23,6 +23,12 @@
         0
       ],
       "multiple": false,
+      "option_explanations": [
+        "Correct: expenditure-approach GDP = C + I + G + (X − M); imports are subtracted because they are produced abroad.",
+        "Incorrect: it mixes the income approach (wages, profits, taxes less subsidies) with imports, which are not domestic income.",
+        "Incorrect: imports must be subtracted, not added, since they are produced abroad.",
+        "Incorrect: including intermediate consumption double counts; the output approach adds up value added only."
+      ],
       "explanation": "Under the expenditure approach, GDP = C + I + G + (X − M): final spending by households, firms and government, plus net exports. Imports are subtracted because they are produced abroad. Option 2 mixes the income approach (wages, profits, taxes less subsidies) with imports, which have nothing to do with domestic income. Option 3 adds imports instead of subtracting them. Option 4 counts intermediate consumption, which leads to double counting: the output approach only adds up value added (output minus intermediate consumption).",
       "source_ref": "ESA 2010 (Regulation (EU) No 549/2013), GDP at market prices — expenditure approach",
       "verified": true,
@@ -51,6 +57,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: this confuses disinflation (prices rising more slowly) with deflation (prices falling); headline inflation is still 3.4%.",
+        "Correct: headline fell 2.7 points but core only 0.6, so energy drove the decline; core at 4.2% shows persistent pressures.",
+        "Incorrect: core above headline at year-end is consistent with falling energy prices, exactly as the bulletin says.",
+        "Incorrect: at year-end headline inflation (3.4%) is below core inflation (4.2%), not above it."
+      ],
       "explanation": "Option 2 is correct: core inflation excludes volatile items such as energy and food. Headline inflation fell by 2.7 points but core inflation by only 0.6 point, so most of the decline comes from energy; underlying (core) price pressures remain well above a 2% target. Option 1 confuses disinflation (prices still rising, but more slowly) with deflation (prices falling). Option 3 is wrong: core inflation (4.2%) being above headline inflation (3.4%) at the end of the year is consistent with energy prices falling, as the statement says. Option 4 is factually wrong: at the end of the year headline inflation (3.4%) is below core inflation (4.2%), not above it.",
       "source_ref": "Eurostat HICP methodology — headline HICP vs HICP excluding energy, food, alcohol and tobacco (core inflation)",
       "verified": true,
@@ -123,6 +135,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: the sign is wrong; (1,940 − 2,000) ÷ 2,000 = −3%, while a positive gap would signal overheating.",
+        "Incorrect: it divides by actual GDP instead of potential, and a recession means falling real GDP, not GDP below potential.",
+        "Correct: (1,940 − 2,000) ÷ 2,000 = −3%; output below potential means spare capacity and weak demand-driven inflation.",
+        "Incorrect: both figures are real (volume) GDP, so no inflation rate is needed to compute the gap."
+      ],
       "explanation": "Output gap = (actual GDP − potential GDP) ÷ potential GDP = (1,940 − 2,000) ÷ 2,000 = −3%. A negative gap means the economy produces less than it could without stoking inflation: there is spare capacity (unused labour and equipment), so demand-driven inflationary pressure is weak. Option 1 gets the sign wrong: a positive gap would signal overheating. Option 2 divides by actual GDP (60 ÷ 1,940 = 3.09%) instead of potential GDP, and confuses a level below potential with a recession, which is defined by falling real GDP (two consecutive quarters of negative growth); an economy can grow while remaining below potential. Option 4 is wrong: both figures are real (volume) GDP, so no inflation rate is needed.",
       "source_ref": "Output gap = (actual GDP − potential GDP) ÷ potential GDP, in % of potential — IMF and OECD definitions ; recession rule of thumb: two consecutive quarters of negative real GDP growth",
       "verified": true,

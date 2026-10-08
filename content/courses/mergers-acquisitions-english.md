@@ -10,7 +10,7 @@
 - **Public offers**: a **tender offer** is made directly to shareholders; crossing a control threshold triggers a **mandatory bid** (in France, 30% of the capital or voting rights; in the UK, 30% of the voting rights) at an equitable price. A **squeeze-out** lets a bidder holding a very large majority (90% in France) buy out the remaining minority.
 - **Consideration**: cash offer, share-for-share exchange (the exchange ratio sets how many bidder shares per target share), or a mix; an **earn-out** makes part of the price contingent on future performance. In a **leveraged buyout** (LBO) a private equity fund finances the deal largely with debt repaid from the target's cash flows.
 - **Valuation vocabulary**: equity value (market capitalisation), **enterprise value** (EV = equity value + net debt), multiples (EV/EBITDA, P/E ratio), **control premium** over the undisturbed share price (the price before rumours), cost and revenue **synergies**, **goodwill** (excess of consideration over the fair value of net identifiable assets, IFRS 3).
-- **Takeover defences**: poison pill (rights issue that dilutes the bidder), white knight (friendly competing bidder), sale of the "crown jewels" (the assets the bidder wants), staggered board.
+- **Takeover defences**: poison pill (shareholder rights plan: all shareholders except the bidder may buy new shares at a discount, which dilutes the bidder), white knight (friendly competing bidder), sale of the "crown jewels" (the assets the bidder wants), staggered board.
 - **Corporate finance**: dividend payout ratio, share buyback (*rachat d'actions*), rights issue (*augmentation de capital avec DPS*), spin-off (distribution of a subsidiary's shares), divestment (*cession*).
 
 ```diagram

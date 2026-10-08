@@ -42,6 +42,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : le virement quotidien des soldes vers la société pivot est la centralisation physique (zero balancing).",
+        "Exact : le netting compense les flux intragroupe ; chaque société paie ou reçoit son solde net, d'où moins de virements et de frais de change.",
+        "Inexact : le calcul d'intérêts sur la somme fictive des soldes est la centralisation notionnelle.",
+        "Inexact : la cession de créances à un factor est de l'affacturage, sans rapport avec la compensation."
+      ],
       "explanation": "Le netting compense les flux commerciaux intragroupe : chaque société paie ou reçoit seulement son solde net auprès d’une centrale (option 2), ce qui réduit le nombre de virements et les frais de change. L’option 1 décrit la centralisation physique (zero balancing), l’option 3 la centralisation notionnelle ; l’option 4 est une opération d’affacturage, sans rapport avec la compensation."
     },
     {
@@ -68,6 +74,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : l'exception de l'art. L. 511-7, I, 3° du C. mon. fin. dispense d'agrément bancaire.",
+        "Inexact : l'interdiction de principe connaît une exception pour la trésorerie entre sociétés liées en capital (C. mon. fin., art. L. 511-7, I, 3°).",
+        "Inexact : la cotation n'est pas une condition ; seuls comptent les liens de capital conférant un contrôle effectif.",
+        "Exact : C. mon. fin., art. L. 511-7, I, 3° : trésorerie permise entre sociétés dont l'une contrôle effectivement les autres par des liens de capital."
+      ],
       "explanation": "Le Code monétaire et financier (art. L. 511-7, I, 3°) autorise par exception les opérations de trésorerie entre sociétés ayant, directement ou indirectement, des liens de capital conférant à l’une d’elles un pouvoir de contrôle effectif sur les autres (option 4). Aucun agrément bancaire n’est donc exigé (option 1), l’interdiction de principe connaît cette exception (option 2) et la cotation n’est pas une condition (option 3)."
     },
     {
@@ -93,6 +105,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : 1 400 k€ est le total des flux bruts, sans compensation.",
+        "Exact : soldes nets A = −300, B = +450, C = +50, D = −200 ; les débiteurs A et D versent 500 k€.",
+        "Inexact : additionne versements (500) et reversements (500) de la centrale.",
+        "Inexact : ne retient que le solde débiteur de A, en oubliant D (−200)."
       ],
       "explanation": "Soldes nets (reçu − payé) : A = 150 + 200 − 400 − 250 = −300 ; B = 400 + 300 − 150 − 100 = +450 ; C = 250 + 100 − 300 = +50 ; D = −200. Les débiteurs nets A et D versent 300 + 200 = 500 k€ à la centrale (option 2), qui reverse 450 à B et 50 à C. L’option 1 (1 400) est le total des flux bruts sans compensation ; l’option 3 (1 000) additionne versements et reversements ; l’option 4 ne retient que le solde de A."
     },

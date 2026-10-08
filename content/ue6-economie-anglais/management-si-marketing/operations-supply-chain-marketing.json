@@ -22,6 +22,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Correct: \"place\" covers distribution, the channels through which the product reaches customers, here the website and pharmacies.",
+        "Incorrect: promotion concerns communication, such as advertising, social media and sales promotions.",
+        "Incorrect: product concerns the offer itself, such as formula, packaging and range.",
+        "Incorrect: price concerns pricing policy, such as level, discounts and payment terms."
+      ],
       "explanation": "Option 1 is correct: \"place\" covers distribution, i.e. the channels through which the product reaches customers (website, pharmacies). Option 2 is wrong: promotion concerns communication (advertising, social media, sales promotions). Option 3 is wrong: product concerns the offer itself (formula, packaging, range). Option 4 is wrong: price concerns the pricing policy (level, discounts, payment terms).",
       "source_ref": "McCarthy, Basic Marketing (1960): the 4Ps of the marketing mix",
       "verified": true,
@@ -209,6 +215,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: a bottleneck is the step that limits a process's output, not the amplification of orders upstream.",
+        "Incorrect: economies of scale relate unit costs to volume, not to the propagation of orders along the chain.",
+        "Incorrect: a stock-out is a shortage of inventory, which the text does not describe.",
+        "Correct: demand variations grow moving upstream (5%, 15%, 35%), driven by safety margins, batch ordering and poor information sharing."
+      ],
       "explanation": "Option 4 is correct: the bullwhip effect is the amplification of demand variations as one moves upstream in the supply chain (5% at the consumer, 15% at the bottler, 35% at the packaging supplier), caused by safety margins, batch ordering and lack of shared information. Option 1 is wrong: a bottleneck is the step that limits the output of a process. Option 3 is wrong: a stock-out is a shortage of inventory, which the text does not describe. Option 2 is wrong: economies of scale relate unit costs to volume, not to the propagation of orders. Sharing point-of-sale data with suppliers is the usual remedy.",
       "source_ref": "Supply chain management: bullwhip effect (Lee, Padmanabhan and Whang, \"The Bullwhip Effect in Supply Chains\", Sloan Management Review, 1997)",
       "verified": true,

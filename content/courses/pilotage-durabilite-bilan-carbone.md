@@ -1,6 +1,6 @@
 # Pilotage de la durabilité : double matérialité, bilan carbone, indicateurs ESG
 
-**Références :** directive (UE) 2022/2464 (CSRD) ; ESRS 1, chapitre 3, et ESRS E1 (règl. délégué (UE) 2023/2772) ; C. env. art. L. 229-25 ; GHG Protocol, *Corporate Standard* (WRI/WBCSD, 2004)
+**Références :** directive (UE) 2022/2464 (CSRD) ; ESRS 1, chapitre 3, et ESRS E1 (règl. délégué (UE) 2023/2772) ; C. env. art. L. 229-25 et R. 229-47 ; GHG Protocol, *Corporate Standard* (WRI/WBCSD, 2004)
 
 **Enjeu :** le contrôleur de gestion produit désormais des indicateurs extra-financiers vérifiés ; à l'examen, on classe des émissions par scope, on calcule une intensité ou une trajectoire et on applique le principe de double matérialité.
 
@@ -15,7 +15,7 @@ Il suffit qu'un des deux points de vue soit atteint ; une question matérielle d
 - scope 1 : émissions directes de sources détenues ou contrôlées (combustion sur site, véhicules de la flotte, procédés, fuites de fluides frigorigènes) ;
 - scope 2 : émissions indirectes liées à l'énergie achetée (électricité, chaleur, vapeur) ;
 - scope 3 : autres émissions indirectes, amont (achats de matières, transport amont, déplacements des salariés) et aval (utilisation et fin de vie des produits vendus). Souvent le poste le plus important, et le moins maîtrisé.
-En France, le BEGES réglementaire (C. env. art. L. 229-25) concerne notamment les entreprises de plus de 500 salariés (250 outre-mer) ; depuis 2023 il inclut les émissions indirectes significatives.
+En France, le BEGES réglementaire (C. env. art. L. 229-25) concerne notamment les entreprises de plus de 500 salariés (250 outre-mer) ; il est joint à un plan de transition et mis à jour tous les quatre ans. Les émissions indirectes significatives (scope 3) n'y sont obligatoires que pour les entreprises soumises au rapport de durabilité ; pour les autres, les émissions indirectes obligatoires se limitent à l'énergie achetée (C. env. art. R. 229-47). L'entreprise qui publie son bilan et son plan de transition dans son état de durabilité est dispensée du BEGES distinct.
 
 **Pilotage** : trajectoire de réduction (année de référence, cible, réduction annuelle), plan de transition (ESRS E1), intensité carbone (tCO₂e par M€ de chiffre d'affaires ou par unité produite), intégration des indicateurs ESG au tableau de bord, aux budgets (prix interne du carbone appliqué aux projets) et aux rémunérations variables.
 

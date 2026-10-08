@@ -21,6 +21,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : les entretiens avec la direction et d'autres personnes sont l'une des trois procédures d'évaluation des risques de la NEP 315.",
+        "Exact : la confirmation des soldes (NEP 505) est une procédure de substance, mise en œuvre en réponse aux risques évalués (NEP 330).",
+        "Inexact : les procédures analytiques sont l'une des trois procédures d'évaluation des risques de la NEP 315.",
+        "Inexact : l'observation physique et l'inspection sont l'une des trois procédures d'évaluation des risques de la NEP 315."
+      ],
       "explanation": "La NEP 315 retient trois procédures pour prendre connaissance de l'entité et évaluer les risques : les entretiens avec la direction et d'autres personnes de l'entité, les procédures analytiques, et l'observation physique et l'inspection. La demande de confirmation des soldes clients (NEP 505) est une procédure de substance mise en œuvre en réponse aux risques évalués (NEP 330), pour collecter des éléments sur l'existence des créances : elle intervient après l'évaluation des risques, non pour la réaliser.",
       "source_ref": "NEP 315 (connaissance de l'entité et de son environnement et évaluation du risque d'anomalies significatives dans les comptes) ; NEP 505 ; NEP 330",
       "verified": true,
@@ -48,6 +54,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : trop étroit ; l'incitation peut toucher de nombreux postes (ventes, stocks, provisions, estimations).",
+        "Inexact : l'incitation porte précisément sur les comptes ; ce n'est pas un risque d'activité sans traduction comptable.",
+        "Exact : incitation à présenter un résultat élevé, facteur de risque de fraude au niveau des comptes ; la NEP 240 impose d'adapter l'approche générale.",
+        "Inexact : ce n'est pas un risque lié au contrôle, et abaisser le seuil sans adapter les procédures ne répond pas au risque."
       ],
       "explanation": "Une forte incitation de la direction à présenter un résultat élevé est un facteur de risque de fraude (comptes présentés de façon trompeuse). Elle peut se traduire dans de nombreux postes (ventes, stocks, provisions, estimations) et justifie une évaluation au niveau des comptes pris dans leur ensemble. La NEP 240 impose alors d'adapter l'approche générale (affectation et supervision de l'équipe, analyse des choix comptables et des estimations, imprévisibilité, §20) et de mettre en œuvre les procédures relatives au risque de contournement des contrôles par la direction (§22) ; au niveau des assertions, le CAC détermine en outre s'il existe un risque inhérent élevé qui requiert une démarche d'audit particulière (NEP 315 §40). Le limiter au chiffre d'affaires est trop étroit ; parler de risque d'activité sans incidence est faux, puisque l'incitation porte précisément sur les comptes. Ce n'est pas un risque lié au contrôle, et abaisser le seuil sans adapter les procédures (supervision renforcée, imprévisibilité, examen des écritures et des estimations) ne répond pas au risque.",
       "source_ref": "NEP 315 (évaluation du risque d'anomalies significatives) ; NEP 240 (prise en considération de la possibilité de fraudes lors de l'audit des comptes)",

@@ -23,6 +23,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : une erreur d'appréciation est une faute de gestion commise dans l'exercice des fonctions, qui n'engage que la société envers les tiers.",
+        "Exact : s'abstenir sciemment de souscrire une assurance obligatoire est une faute séparable des fonctions, engageant la responsabilité personnelle du gérant.",
+        "Inexact : une mauvaise organisation des équipes est une faute de gestion dans l'exercice des fonctions, non une faute séparable.",
+        "Inexact : l'inexécution d'une obligation contractuelle de la société engage la responsabilité de la société elle-même, non celle du gérant."
+      ],
       "explanation": "Envers les tiers, le dirigeant n'engage sa responsabilité personnelle que s'il commet une faute séparable de ses fonctions : faute intentionnelle d'une particulière gravité, incompatible avec l'exercice normal des fonctions sociales. La Cour de cassation l'a retenue à propos d'un gérant qui s'abstient sciemment de souscrire une assurance obligatoire, ce qui constitue en outre une infraction pénale (option 2). Une erreur d'appréciation (option 1) ou une mauvaise organisation (option 3) sont des fautes de gestion commises dans l'exercice des fonctions, qui n'engagent que la société envers les tiers. L'inexécution d'une obligation contractuelle de la société (option 4) engage la responsabilité de la société elle-même.",
       "source_ref": "C. com. L223-22 ; Cass. com., 20 mai 2003 (faute séparable) ; Cass. com., 28 sept. 2010 (défaut d'assurance obligatoire)",
       "estimated_seconds": 90,
@@ -51,6 +57,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : confusion avec l'action individuelle ; l'action ut singuli répare le préjudice de la société, à laquelle les dommages-intérêts sont alloués.",
+        "Inexact : confusion avec l'action individuelle, qui suppose un préjudice personnel distinct ; ici, le préjudice est celui de la société.",
+        "Exact : l'action ut singuli est l'action sociale exercée par des associés ; les dommages-intérêts sont alloués à la société (L225-252).",
+        "Inexact : confusion avec l'action individuelle ; l'action ut singuli répare le seul préjudice social, et les dommages-intérêts reviennent intégralement à la société."
+      ],
       "explanation": "L'action ut singuli est l'action sociale exercée par un ou plusieurs associés à la place des représentants légaux : elle répare le préjudice subi par la société, à laquelle les dommages-intérêts sont alloués (C. com. L225-252) : option 3. Les options 1, 2 et 4 confondent avec l'action individuelle, qui suppose un préjudice personnel distinct de celui de la société (une simple dépréciation des titres consécutive au préjudice social n'en est pas un).",
       "source_ref": "C. com. L225-252",
       "estimated_seconds": 60,
@@ -175,6 +187,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : l'indemnisation de la révocation sans juste motif concerne le directeur général non président (L225-55), pas l'administrateur.",
+        "Exact : les administrateurs sont révocables ad nutum par l'AGO (L225-18), sans motif ni indemnité, hors circonstances abusives ou vexatoires.",
+        "Inexact : l'administrateur est nommé et révoqué par l'assemblée générale ordinaire, non par le conseil d'administration.",
+        "Inexact : la loi ne prévoit aucune indemnité forfaitaire en cas de révocation d'un administrateur."
+      ],
       "explanation": "Les administrateurs peuvent être révoqués à tout moment par l'assemblée générale ordinaire (C. com. L225-18), sans motif ni indemnité (révocation ad nutum), sous réserve du respect du contradictoire et de l'absence de circonstances abusives ou vexatoires, qui seules pourraient fonder des dommages-intérêts : c'est l'option 2.\nL'option 1 est fausse : le droit à dommages-intérêts en cas de révocation sans juste motif concerne le directeur général non président (L225-55), pas l'administrateur. L'option 3 est fausse : l'administrateur est nommé et révoqué par l'assemblée ordinaire, non par le conseil. L'option 4 est fausse : aucune indemnité forfaitaire n'est prévue par la loi.",
       "source_ref": "C. com. art. L225-18 (nomination et révocation des administrateurs) et L225-55 (révocation du directeur général)",
       "verified": true,

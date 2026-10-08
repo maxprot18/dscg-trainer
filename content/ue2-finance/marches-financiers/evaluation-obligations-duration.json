@@ -50,6 +50,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : oublie que le prix, valeur actuelle des flux, s'ajuste aux taux du marché.",
+        "Inexact : inverse la relation prix-taux, qui est décroissante.",
+        "Exact : actualisé à 5 %, un coupon de 3 % vaut moins que le nominal ; la décote compense l'acheteur.",
+        "Inexact : à risque de crédit inchangé, le sens de la variation découle de la hausse des taux de marché."
+      ],
       "explanation": "L'option 3 est correcte : le prix d'une obligation est la valeur actuelle de ses flux ; si le taux d'actualisation (5 %) dépasse le taux du coupon (3 %), la valeur actuelle est inférieure au nominal. La décote compense l'acheteur pour le coupon trop faible. L'option 1 oublie que le prix s'ajuste aux taux du marché. L'option 2 inverse la relation prix-taux, qui est décroissante. L'option 4 est fausse : à risque de crédit inchangé, le sens de la variation découle de la hausse des taux de marché."
     },
     {
@@ -76,6 +82,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : une duration identique ne garantit une réaction identique que pour de très petites variations de taux.",
+        "Exact : à duration égale, la plus convexe gagne davantage à la baisse et perd moins à la hausse : elle domine pour une forte variation.",
+        "Inexact : décrit un effet symétrique qui n'existe pas ; la convexité joue dans les deux sens en faveur du porteur.",
+        "Inexact : inverse le raisonnement ; la convexité améliore le prix réel par rapport à l'approximation par la duration."
       ],
       "explanation": "L'option 2 est correcte : la convexité mesure la courbure de la relation prix-taux. L'approximation par la duration (linéaire) sous-estime toujours le prix réel ; plus la convexité est forte, plus l'écart favorable est grand, à la hausse comme à la baisse des taux. À duration égale, l'obligation la plus convexe domine donc pour une variation importante des taux (c'est pourquoi la convexité se paie, en général, par un rendement un peu plus faible). L'option 1 ne vaut que pour de très petites variations de taux. L'option 3 décrit un effet symétrique qui n'existe pas : la convexité joue dans les deux sens en faveur du porteur. L'option 4 inverse le raisonnement."
     },

@@ -22,6 +22,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : l'imprévisibilité dans le choix des procédures est une réponse générale citée par la NEP 330.",
+        "Inexact : la confirmation fournisseurs est une procédure de substance répondant à un risque au niveau d'une assertion.",
+        "Inexact : recalculer une dotation est une procédure de substance sur l'évaluation des immobilisations, au niveau d'une assertion.",
+        "Inexact : le contrôle de la séparation des exercices est une procédure de substance au niveau d'une assertion."
+      ],
       "explanation": "La NEP 330 cite, parmi les réponses générales à un risque au niveau des comptes pris dans leur ensemble : affecter des collaborateurs expérimentés, renforcer la supervision, introduire un élément d'imprévisibilité dans le choix des procédures, modifier la nature, le calendrier ou l'étendue des travaux. Les trois autres propositions sont des procédures de substance qui répondent à un risque au niveau d'une assertion : exhaustivité ou existence des dettes fournisseurs, évaluation des immobilisations, séparation des exercices des ventes.",
       "source_ref": "NEP 330 (procédures mises en œuvre par le commissaire aux comptes à l'issue de son évaluation des risques), réponses générales",
       "verified": true,
@@ -49,6 +55,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : partir des soldes comptabilisés vérifie leur existence ; une dette non enregistrée ne peut pas être sélectionnée dans la balance.",
+        "Inexact : le recalcul de la TVA porte sur la mesure des opérations enregistrées, pas sur l'exhaustivité des dettes.",
+        "Exact : pour l'exhaustivité, on part des factures et paiements postérieurs à la clôture pour rechercher les passifs non comptabilisés.",
+        "Inexact : la déclaration écrite ne remplace pas les procédures de substance, surtout face à une incitation de la direction."
       ],
       "explanation": "Pour l'exhaustivité, il faut partir de sources extérieures à la comptabilité ou postérieures à la clôture et vérifier que les dettes correspondantes figurent dans les comptes : c'est la recherche de passifs non comptabilisés (factures reçues et paiements après la clôture, rattachés à des achats ou prestations de l'exercice). Partir des soldes comptabilisés vérifie leur existence, pas l'absence d'omission : une dette non enregistrée ne peut pas être sélectionnée dans la balance. Le recalcul de la TVA porte sur la mesure des opérations enregistrées. La déclaration écrite de la direction est un élément complémentaire qui ne remplace pas les procédures de substance, surtout face à un risque d'incitation de la direction.",
       "source_ref": "NEP 330 (procédures de substance en réponse au risque évalué au niveau des assertions) ; NEP 500 (assertion d'exhaustivité) ; NEP 580 (déclarations de la direction)",

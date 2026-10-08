@@ -23,6 +23,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : l'apport d'un bien isolé (projet 2) n'est pas une branche complète ; il n'accède au régime de faveur que sur agrément.",
+        "Exact : la branche complète bénéficie de plein droit du régime (art. 210 B, 1 et 2) ; le bien isolé requiert un agrément (210 B, 3).",
+        "Inexact : le régime de faveur s'étend aux scissions et aux apports partiels d'actif, non aux seules fusions.",
+        "Inexact : l'option inverse les situations ; transmettre les passifs liés à la branche est inhérent à la branche complète."
+      ],
       "explanation": "L'apport d'une branche complète d'activité bénéficie de plein droit du régime de faveur ; la plus-value de cession ultérieure des titres reçus est alors calculée d'après la valeur que les biens apportés avaient, du point de vue fiscal, chez l'apporteuse (CGI art. 210 B, 1 et 2) : option 2. Aucun engagement de conservation des titres n'est exigé pour un tel apport depuis le 1er janvier 2018. L'apport d'un bien isolé ne constitue pas une branche complète et requiert un agrément (art. 210 B, 3), délivré notamment si l'opération est justifiée par un motif économique et si l'apporteuse s'engage à conserver les titres reçus pendant 3 ans. L'option 1 est fausse pour le projet 2 ; l'option 3 oublie que le régime s'étend aux scissions et aux apports partiels d'actif ; l'option 4 inverse les situations, la transmission des passifs liés à la branche étant au contraire inhérente à la branche complète.",
       "source_ref": "CGI art. 210 A et 210 B, 1 et 2 (branche complète, régime de plein droit, calcul de la plus-value sur titres) et 3 (agrément, engagement de conservation de 3 ans), rédaction issue de la loi n° 2017-1775 (opérations réalisées depuis le 1er janvier 2018)",
       "verified": true,
@@ -51,6 +57,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : aucun droit proportionnel n'est dû sur l'actif net apporté ni sur le passif pris en charge.",
+        "Inexact : le droit fixe de 500 € a été supprimé par la LF 2019 ; le capital de l'absorbante est sans incidence.",
+        "Exact : depuis 2019, l'acte de fusion entre personnes morales passibles de l'IS est enregistré gratuitement (CGI art. 816).",
+        "Inexact : 0,1 % est le taux des cessions d'actions (art. 726), non celui des fusions."
+      ],
       "explanation": "Depuis le 1er janvier 2019 (LF 2019, art. 26), les actes constatant une fusion entre personnes morales passibles de l'IS, ainsi que la prise en charge du passif de l'absorbée, sont enregistrés gratuitement (CGI art. 816) : option 3. Le droit fixe de 500 € (option 2), comme l'ancien droit de 375 €, a été supprimé par cette même loi ; le montant du capital de l'absorbante est sans incidence. Aucun droit proportionnel n'est dû sur l'actif net apporté ni sur le passif pris en charge : ni 5 % (option 1), ni 0,1 % (option 4), ce dernier taux étant celui des cessions d'actions (art. 726), pas des fusions.",
       "source_ref": "CGI art. 816 (enregistrement gratuit des actes de fusion entre personnes morales passibles de l'IS, depuis le 1er janvier 2019, LF 2019 art. 26) ; BOI-ENR-AVS-20-60",
       "verified": true,

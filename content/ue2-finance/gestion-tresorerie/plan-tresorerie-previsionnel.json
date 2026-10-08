@@ -24,6 +24,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : la TVA nette payée le mois suivant est un décaissement effectif.",
+        "Inexact : le remboursement du capital, absent du compte de résultat, est bien décaissé.",
+        "Inexact : les acomptes d'IS sont des décaissements effectifs.",
+        "Exact : les dotations sont des charges calculées, sans décaissement ; le budget de trésorerie ne retient que des flux monétaires."
+      ],
       "explanation": "Le budget de trésorerie ne retient que des flux monétaires. Les dotations aux amortissements sont des charges calculées, sans décaissement : elles n’y figurent pas (option 4). La TVA nette payée le mois suivant (option 1), le remboursement du capital d’un emprunt (option 2, absent du compte de résultat mais bien décaissé) et les acomptes d’IS (option 3) sont des décaissements effectifs."
     },
     {
@@ -49,6 +55,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : oublie la TVA déductible sur l'immobilisation (5 000 €), qui se déduit comme celle sur biens et services.",
+        "Inexact : au régime réel normal, le paiement intervient le mois suivant, non le mois même.",
+        "Exact : 30 000 − 18 000 − 5 000 = 7 000 €, payés avec la déclaration déposée en mai.",
+        "Inexact : retient la TVA collectée brute, sans imputer la TVA déductible."
       ],
       "explanation": "TVA à décaisser au titre d’avril = 30 000 − 18 000 − 5 000 = 7 000 €, payée avec la déclaration déposée en mai (option 3). L’option 1 oublie la TVA déductible sur l’immobilisation, qui se déduit comme celle sur biens et services. L’option 2 place le paiement le mois même, alors qu’il intervient le mois suivant. L’option 4 retient la TVA collectée brute, sans imputation de la TVA déductible."
     },

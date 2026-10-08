@@ -26,8 +26,10 @@ export function normalize(text: string): string {
   return text.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase()
 }
 
+/** Mots de la requête ; lettres et chiffres collés sont séparés (« IAS16 » = « IAS 16 »). */
 export function queryTokens(query: string): string[] {
-  return [...new Set(normalize(query).split(/[^\p{L}\p{N}]+/u).filter((t) => t.length >= MIN_TOKEN_LENGTH))]
+  const text = normalize(query).replace(/(\p{L})(\p{N})/gu, '$1 $2')
+  return [...new Set(text.split(/[^\p{L}\p{N}]+/u).filter((t) => t.length >= MIN_TOKEN_LENGTH))]
 }
 
 export interface Searchable {

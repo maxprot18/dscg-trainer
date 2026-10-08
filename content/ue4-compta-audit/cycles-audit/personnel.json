@@ -22,6 +22,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : l’exhaustivité se teste dans l’autre sens, des données RH vers la paie.",
+        "Inexact : la séparation des exercices porte sur le rattachement à l’exercice, que ce test n’examine pas.",
+        "Exact : partir du journal de paie vers le contrat, le registre et les badges vérifie que chaque salaire payé correspond à un salarié réel.",
+        "Inexact : la classification concerne le compte d’imputation des charges, que ce test ne contrôle pas."
+      ],
       "explanation": "Le test part des salaires comptabilisés (journal de paie) pour remonter à des preuves d’existence du salarié et de sa présence : il vérifie que chaque rémunération enregistrée correspond à un salarié réel ayant travaillé, c’est la réalité (risque de salariés fictifs). L’option 1 (exhaustivité) se teste dans l’autre sens, des données RH vers la paie. L’option 2 (séparation) porte sur le rattachement à l’exercice, non examiné ici. L’option 4 (classification) concerne le compte d’imputation, que ce test ne contrôle pas.",
       "source_ref": "NEP 500 (assertions relatives aux catégories d’opérations : réalité, exhaustivité)",
       "verified": true,
@@ -49,6 +55,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : partir des contrats signés tenus par la DRH, source indépendante de la paie, vérifie que les rémunérations ont été enregistrées.",
+        "Inexact : la réalité se teste en sens inverse, du journal de paie vers les preuves d’existence des salariés.",
+        "Inexact : l’évaluation vise le montant des dettes sociales à la clôture (congés, charges sociales), non l’enregistrement des salaires.",
+        "Inexact : les droits et obligations sont une assertion sur les soldes, inadaptée à ce test sur les opérations."
+      ],
       "explanation": "Le test part d’une source indépendante de la paie (contrats signés tenus par la DRH) pour vérifier que les rémunérations correspondantes ont bien été enregistrées : il couvre l’exhaustivité. L’option 2 (réalité) se teste en sens inverse, du journal de paie vers les preuves d’existence. L’option 3 vise le montant des dettes sociales à la clôture (recalcul des congés, des charges sociales), non leur enregistrement. L’option 4 est une assertion relative aux soldes (actifs détenus, passifs dus) et ne correspond pas à ce test sur les opérations.",
       "source_ref": "NEP 500 (assertions relatives aux catégories d’opérations)",
       "verified": true,
@@ -71,12 +83,18 @@
         "Existence des dettes sociales",
         "Mesure des charges de personnel",
         "Séparation des exercices",
-        "Présentation et informations fournies (classification et intelligibilité, exhaustivité de l’information)"
+        "Présentation et informations fournies (présentation et intelligibilité, exhaustivité de l’information)"
       ],
       "answer": [
         3
       ],
-      "explanation": "Vérifier le poste du bilan dans lequel figure une dette et la présence d’une information obligatoire en annexe relève des assertions de présentation : classification et intelligibilité (bon poste) et exhaustivité de l’information fournie (engagements non provisionnés à mentionner, C. com. art. L123-13). L’option 1 (existence) porte sur la réalité de la dette, non sur son classement. L’option 2 (mesure) vise le montant des charges. L’option 3 (séparation) concerne le rattachement des opérations au bon exercice.",
+      "option_explanations": [
+        "Inexact : l’existence porte sur la réalité de la dette, non sur son classement au bilan.",
+        "Inexact : la mesure vise le montant des charges de personnel, que ce contrôle n’examine pas.",
+        "Inexact : la séparation des exercices concerne le rattachement des opérations au bon exercice.",
+        "Exact : vérifier le poste du bilan et la mention en annexe des engagements non provisionnés relève des assertions de présentation."
+      ],
+      "explanation": "Vérifier le poste du bilan dans lequel figure une dette et la présence d’une information obligatoire en annexe relève des assertions de présentation : présentation et intelligibilité (bon poste) et exhaustivité de l’information fournie (engagements non provisionnés à mentionner, C. com. art. L123-13). L’option 1 (existence) porte sur la réalité de la dette, non sur son classement. L’option 2 (mesure) vise le montant des charges. L’option 3 (séparation) concerne le rattachement des opérations au bon exercice.",
       "source_ref": "NEP 500 (assertions relatives à la présentation des comptes et aux informations fournies) ; C. com. art. L123-13",
       "verified": true,
       "estimated_seconds": 70
@@ -144,6 +162,12 @@
         3
       ],
       "multiple": true,
+      "option_explanations": [
+        "Exact : saisir seule entrées, sorties et RIB est un cumul incompatible permettant de créer un salarié fictif ou de détourner un salaire.",
+        "Inexact : un logiciel de paie du marché mis à jour par l’éditeur réduit plutôt le risque d’erreur de calcul.",
+        "Inexact : une masse salariale cohérente avec l’effectif et l’augmentation générale ne signale aucun risque particulier.",
+        "Exact : des bulletins sans salarié au registre peuvent révéler des salariés fictifs ou sortis encore payés."
+      ],
       "explanation": "L’option 1 décrit un cumul de fonctions incompatibles : la même personne peut créer un salarié fictif ou détourner un salaire en modifiant un RIB. L’option 4 est un indice direct d’anomalie : des bulletins sans salarié correspondant au registre peuvent révéler des salariés fictifs ou sortis encore payés. L’option 2 (logiciel du marché mis à jour) réduit plutôt le risque d’erreur de calcul. L’option 3 décrit une évolution cohérente, qui ne signale aucun risque particulier.",
       "source_ref": "NEP 240 (facteurs de risque de fraude) ; NEP 315",
       "verified": true,
@@ -170,6 +194,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : un audit complet de conformité excède la mission du CAC, qui n’est pas un audit de conformité.",
+        "Inexact : un non-respect peut entraîner amendes ou litiges ayant une incidence significative ; des diligences limitées restent requises.",
+        "Inexact : une confirmation directe auprès de l’inspection du travail n’est pas une procédure prévue par la NEP 250.",
+        "Exact : pour les textes sans incidence directe, la NEP 250 limite les diligences aux demandes à la direction et à la correspondance des autorités."
       ],
       "explanation": "La NEP 250 distingue les textes ayant une incidence directe sur les comptes (pour lesquels le CAC collecte des éléments suffisants et appropriés sur leur respect) et les autres textes, pour lesquels ses diligences se limitent à des demandes d’informations auprès de la direction et à la consultation de la correspondance avec les autorités : c’est l’option 4. L’option 1 excède la mission du CAC, qui n’est pas un audit de conformité. L’option 2 est fausse : un non-respect peut entraîner amendes ou litiges ayant une incidence significative sur les comptes. L’option 3 n’est pas une procédure prévue par la norme.",
       "source_ref": "NEP 250 (textes légaux et réglementaires)",
@@ -301,6 +331,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : création des salariés, calcul et paiement réunis permettent de créer un salarié fictif et d’encaisser son salaire sans détection.",
+        "Inexact : valider les heures supplémentaires et évaluer ses collaborateurs relève de l’encadrement normal.",
+        "Inexact : enregistrer la paie et rapprocher le compte 421 associe enregistrement et contrôle, sans accès aux fonds.",
+        "Inexact : signer les contrats et archiver les dossiers sont des tâches administratives, sans calcul ni paiement."
+      ],
       "explanation": "L’option 1 réunit trois fonctions incompatibles : création des salariés (gestion des données permanentes), calcul et paiement. Une seule personne peut alors créer un salarié fictif et encaisser son salaire sans qu’aucun contrôle ne le détecte. L’option 2 relève de l’encadrement normal. L’option 3 associe enregistrement et contrôle comptable, sans accès aux fonds. L’option 4 regroupe des tâches administratives de la DRH, sans calcul ni paiement.",
       "source_ref": "NEP 315 (compréhension du contrôle interne)",
       "verified": true,
@@ -327,6 +363,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : la dette de congés payés relève d’un calcul de clôture, non traité par ce contrôle mensuel des données permanentes.",
+        "Exact : rapprocher toute modification des données permanentes d’une autorisation prévient salariés fictifs, RIB détournés et hausses non accordées.",
+        "Inexact : une mauvaise imputation entre 6411 et 6413 est une erreur de classification, détectée par la revue des imputations.",
+        "Inexact : le respect des délais de déclaration à l’URSSAF relève du contrôle des échéances déclaratives."
       ],
       "explanation": "Le contrôle porte sur toute modification des données permanentes, rapprochée d’une autorisation : il prévient les créations de salariés fictifs, les détournements par changement de RIB et les hausses de salaire non accordées, soit la réalité et la mesure des rémunérations. L’option 1 concerne un calcul de clôture, non traité par ce contrôle mensuel. L’option 3 est une erreur de classification, détectée par la revue des imputations comptables. L’option 4 relève du contrôle des échéances déclaratives.",
       "source_ref": "NEP 315 (activités de contrôle) ; NEP 330",
@@ -418,6 +460,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : une attestation du responsable de la paie est un élément interne, peu probant.",
+        "Inexact : la comparaison avec N−1 est insuffisante seule pour valider un solde.",
+        "Exact : la DSN déposée établit le montant dû et le relevé bancaire, document externe, son paiement : existence et exhaustivité de la dette.",
+        "Inexact : vérifier l’addition du journal de paie contrôle un document interne, sans lien direct avec le montant dû à l’URSSAF."
+      ],
       "explanation": "La DSN (déclaration transmise à l’administration) et le relevé bancaire (document externe) établissent le montant dû et son paiement : ils corroborent l’existence et l’exhaustivité de la dette. L’option 1 est un élément interne, peu probant. L’option 2 est une simple comparaison, insuffisante seule pour valider un solde. L’option 4 vérifie l’exactitude arithmétique d’un document interne, sans rapport direct avec le montant dû à l’URSSAF.",
       "source_ref": "NEP 500 (caractère probant) ; NEP 330 ; PCG compte 431",
       "verified": true,
@@ -444,6 +492,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : tester tous les bulletins nierait l’intérêt de la procédure analytique, dont l’écart est sous le seuil acceptable.",
+        "Exact : selon la NEP 520, avec une attente précise et fiable, un écart sous le seuil acceptable n’exige pas d’investigation.",
+        "Inexact : l’explication de la direction vise un écart supérieur au seuil, et doit même alors être corroborée.",
+        "Inexact : les procédures analytiques sont aussi des procédures substantives (NEP 520) et servent en fin de mission."
       ],
       "explanation": "Selon la NEP 520, lorsque l’attente est suffisamment précise et fondée sur des données fiables, un écart inférieur au seuil d’écart acceptable ne nécessite pas d’investigation : la procédure fournit des éléments probants (option 2). L’option 1 nierait l’intérêt de la procédure analytique. L’option 3 vise le traitement d’un écart supérieur au seuil, et même dans ce cas l’explication doit être corroborée. L’option 4 est fausse : les procédures analytiques sont aussi des procédures substantives (NEP 520) et servent en fin de mission.",
       "source_ref": "NEP 520 (procédures analytiques)",
@@ -681,6 +735,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : une provision pour risques et charges suppose une échéance ou un montant incertain ; la dette de congés est connue précisément.",
+        "Exact : droits acquis × indemnité donnent un montant suffisamment précis : charge à payer 4282, en dettes fiscales et sociales.",
+        "Inexact : les congés acquis sont une obligation à comptabiliser, non un simple engagement mentionné en annexe.",
+        "Inexact : une charge constatée d’avance est un actif correspondant à une charge payée d’avance, l’inverse de la situation."
+      ],
       "explanation": "Le montant de la dette est connu avec une précision suffisante (droits acquis × indemnité) : il s’agit d’une charge à payer (débit 6412, crédit 4282), présentée en dettes fiscales et sociales, avec les charges sociales correspondantes en 4382. L’option 1 confond dette provisionnée et provision pour risques et charges, dont l’échéance ou le montant est incertain. L’option 3 est fausse : les congés acquis sont une obligation à comptabiliser. L’option 4 inverse le raisonnement : une charge constatée d’avance est un actif correspondant à une charge payée d’avance.",
       "source_ref": "PCG comptes 4282 et 4382 ; PCG, modèles de bilan (dettes fiscales et sociales)",
       "verified": true,
@@ -707,6 +767,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : la provision est facultative, mais c’est une méthode de référence dont l’adoption est irréversible (PCG art. 121-5).",
+        "Inexact : une information en annexe ne rend pas acceptable un changement interdit par l’irréversibilité de la méthode de référence.",
+        "Inexact : le classement de la reprise est sans portée ; c’est la reprise elle-même qui est une anomalie.",
+        "Exact : provisionner les retraites est une méthode de référence, et son adoption est irréversible ; la reprise doit être corrigée."
       ],
       "explanation": "Le provisionnement des engagements de retraite est facultatif (C. com. art. L123-13), mais c’est une méthode de référence (terme du PCG depuis le règl. ANC 2022-06, anciennement « méthode préférentielle ») et l’adoption d’une méthode de référence est irréversible (PCG art. 121-5). La reprise est donc une anomalie dont l’auditeur demande la correction (option 4). L’option 1 ignore l’irréversibilité. L’option 2 : une information en annexe ne rend pas acceptable un changement interdit. L’option 3 traite d’un classement, sans remettre en cause la reprise elle-même.",
       "source_ref": "C. com. art. L123-13 ; recommandation ANC 2013-02 (engagements de retraite) ; PCG art. 121-5 (méthodes de référence, irréversibilité) ; compte 1521",

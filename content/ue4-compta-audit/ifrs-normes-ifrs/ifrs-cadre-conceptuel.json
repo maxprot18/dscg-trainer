@@ -21,7 +21,13 @@
       "answer": [
         2
       ],
-      "explanation": "Le Cadre conceptuel de 2018 définit le passif comme une obligation actuelle de l'entité de transférer une ressource économique du fait d'événements passés ; la définition ne contient plus de référence à une sortie « probable » d'avantages. « Une sortie probable de ressources dont le montant est fiable » mélange l'ancienne définition (2010) et les critères de comptabilisation. Une dépense future envisagée par la direction (plan de restructuration non annoncé, par exemple) n'est pas une obligation actuelle : l'entité peut l'éviter par ses actions futures. Enfin, le passif n'est pas l'intérêt résiduel : c'est la définition des capitaux propres.",
+      "option_explanations": [
+        "Inexact : cette formule mêle l'ancienne définition (1989, reprise en 2010) et les anciens critères de comptabilisation.",
+        "Inexact : une dépense future envisagée par la direction n'est pas une obligation actuelle ; l'entité peut l'éviter.",
+        "Exact : le Cadre de 2018 définit le passif comme une obligation actuelle de transférer une ressource économique du fait d'événements passés.",
+        "Inexact : l'intérêt résiduel dans les actifs après déduction des dettes définit les capitaux propres, pas le passif."
+      ],
+      "explanation": "Le Cadre conceptuel de 2018 définit le passif comme une obligation actuelle de l'entité de transférer une ressource économique du fait d'événements passés ; la définition ne contient plus de référence à une sortie « probable » d'avantages. « Une sortie probable de ressources dont le montant est fiable » mélange l'ancienne définition (cadre de 1989, reprise sans changement en 2010) et les anciens critères de comptabilisation. Une dépense future envisagée par la direction (plan de restructuration non annoncé, par exemple) n'est pas une obligation actuelle : l'entité peut l'éviter par ses actions futures. Enfin, le passif n'est pas l'intérêt résiduel : c'est la définition des capitaux propres.",
       "source_ref": "Cadre conceptuel de l'information financière (IASB, 2018), chap. 4 (§4.26-4.47)",
       "verified": true,
       "estimated_seconds": 60
@@ -45,6 +51,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : la pertinence est une caractéristique qualitative fondamentale, pas auxiliaire.",
+        "Inexact : l'image fidèle est une caractéristique qualitative fondamentale, pas auxiliaire.",
+        "Inexact : l'importance relative est un aspect de la pertinence propre à chaque entité, non une caractéristique auxiliaire.",
+        "Exact : la comparabilité est l'une des quatre caractéristiques auxiliaires, avec vérifiabilité, rapidité et compréhensibilité."
       ],
       "explanation": "Le Cadre distingue deux caractéristiques qualitatives fondamentales, la pertinence et l'image fidèle, et quatre caractéristiques auxiliaires qui en renforcent l'utilité : comparabilité, vérifiabilité, rapidité et compréhensibilité. La comparabilité est donc la réponse. La pertinence et l'image fidèle sont fondamentales, pas auxiliaires. L'importance relative (significativité) est un aspect de la pertinence propre à chaque entité, non une caractéristique auxiliaire.",
       "source_ref": "Cadre conceptuel de l'information financière (IASB, 2018), chap. 2 (§2.4-2.5, §2.23-2.38)",
@@ -72,7 +84,13 @@
       "answer": [
         1
       ],
-      "explanation": "Depuis 2018, le Cadre ne retient plus de seuil général de probabilité : un élément conforme à la définition d'un actif ou d'un passif est comptabilisé si cela fournit une information pertinente et une image fidèle, compte tenu de la contrainte de coût. Une faible probabilité d'entrée ou de sortie d'avantages ou une forte incertitude d'évaluation peuvent conduire à ne pas comptabiliser, mais ce sont des facteurs d'appréciation, non un seuil de 50 %. Le critère « probable et évaluable de façon fiable » est celui de l'ancien Cadre (2010) et subsiste dans certaines normes (IAS 16 §7, IAS 37 §14). Le Cadre n'impose pas de comptabiliser tout élément conforme à la définition, ni ne s'en remet au seul choix de la direction.",
+      "option_explanations": [
+        "Inexact : le critère « probable et évaluable de façon fiable » est celui de l'ancien Cadre ; il n'y a plus de seuil de 50 %.",
+        "Exact : depuis 2018, l'élément est comptabilisé si cela fournit une information pertinente et une image fidèle, compte tenu du coût.",
+        "Inexact : le Cadre n'impose pas de comptabiliser tout élément conforme à la définition ; faible probabilité ou incertitude peuvent l'écarter.",
+        "Inexact : le Cadre ne s'en remet pas au seul jugement de prudence de la direction."
+      ],
+      "explanation": "Depuis 2018, le Cadre ne retient plus de seuil général de probabilité : un élément conforme à la définition d'un actif ou d'un passif est comptabilisé si cela fournit une information pertinente et une image fidèle, compte tenu de la contrainte de coût. Une faible probabilité d'entrée ou de sortie d'avantages ou une forte incertitude d'évaluation peuvent conduire à ne pas comptabiliser, mais ce sont des facteurs d'appréciation, non un seuil de 50 %. Le critère « probable et évaluable de façon fiable » est celui de l'ancien Cadre (1989, repris en 2010) et subsiste dans certaines normes (IAS 16 §7, IAS 37 §14). Le Cadre n'impose pas de comptabiliser tout élément conforme à la définition, ni ne s'en remet au seul choix de la direction.",
       "source_ref": "Cadre conceptuel de l'information financière (IASB, 2018), chap. 5 (§5.6-5.25)",
       "verified": true,
       "estimated_seconds": 75

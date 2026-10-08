@@ -23,6 +23,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: acquiring a dominant position through competition on the merits is lawful; only its abuse is prohibited.",
+        "Correct: tying a separate product to the dominant one is a classic abuse under Article 102, point (d), excluding rivals on the second market.",
+        "Incorrect: charging a premium for a superior product is normal competition; only excessive or unfair prices may be abusive.",
+        "Incorrect: no firm is obliged to merge, so refusing a merger cannot be an abuse."
+      ],
       "explanation": "Option 2 describes tying: a dominant firm uses its market power on one product to force customers to buy a separate product, which can exclude competitors on the second market; it is a classic abuse under Article 102. Option 1 is lawful: holding a dominant position, or acquiring it through competition on the merits, is not prohibited; only its abuse is. Option 3 is not in itself abusive: charging a premium for a superior product is normal competition (only excessive or unfair prices may be abusive). Option 4 is irrelevant: no firm is obliged to merge.",
       "source_ref": "TFEU art. 102, point (d) (making contracts subject to supplementary obligations which have no connection with the subject of such contracts)",
       "verified": true,
@@ -145,6 +151,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: the art. 1(2) thresholds are met on their face, but this answer stops before applying the two-thirds rule.",
+        "Incorrect: the €5,000m threshold applies to combined worldwide turnover (€5,400m here), not to each party; national control still applies.",
+        "Correct: Alvane makes 76.2% and Brisol 73.3% of EU turnover in France, so the two-thirds rule removes the EU dimension.",
+        "Incorrect: the €250m threshold applies to each of at least two parties individually, not to their combined EU turnover."
+      ],
       "explanation": "The main test of art. 1(2) is met on its face: combined worldwide turnover = 3,800 + 1,600 = €5,400m > €5,000m, and each party's EU-wide turnover (€1,050m and €450m) exceeds €250m. But the two-thirds rule removes the EU dimension when each party achieves more than two-thirds of its EU-wide turnover in one and the same member state: Alvane 800 ÷ 1,050 = 76.2% and Brisol 330 ÷ 450 = 73.3% in France. The same exception applies to the alternative test of art. 1(3), so the deal is a \"national\" case reviewed under French merger control (the French thresholds of art. L. 430-2 are clearly met: combined worldwide turnover above €250m and each of at least two parties above €80m in France, thresholds raised by Law No. 2026-403 of 26 May 2026 for deals notified from 1 September 2026). Option 1 stops before the two-thirds rule. Option 2 applies the €5,000m threshold to each party instead of the combined turnover, and wrongly concludes that no authority is competent. Option 4 misreads the €250m threshold, which applies to each of at least two parties individually.",
       "source_ref": "Council Regulation (EC) No 139/2004, art. 1(2) and 1(3) (EU dimension and two-thirds rule) ; French Commercial Code, art. L. 430-2 (national thresholds)",
       "verified": true,

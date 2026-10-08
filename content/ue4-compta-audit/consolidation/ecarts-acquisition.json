@@ -37,6 +37,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : l'amortissement sur 10 ans vise l'écart à durée limitée non déterminable de façon fiable, pas un écart à durée non limitée.",
+        "Inexact : l'imputation de l'écart d'acquisition sur les capitaux propres n'est pas un traitement admis.",
+        "Inexact : aucun plafond de 20 ans n'existe ; l'amortissement ne concerne que les écarts à durée d'utilisation limitée.",
+        "Exact : à durée d'utilisation non limitée, l'écart n'est pas amorti ; il est testé au moins une fois par exercice (art. 231-11)."
+      ],
       "explanation": "Option 4 : selon le règlement ANC 2020-01, un écart d'acquisition dont la durée d'utilisation n'est pas limitée n'est pas amorti ; il fait l'objet d'un test de dépréciation au moins une fois par exercice, et la dépréciation éventuelle n'est pas reprise. Les options 1 et 3 décrivent un amortissement, qui ne concerne que les écarts à durée d'utilisation limitée, amortis sur cette durée ; l'amortissement sur 10 ans (option 1) vise seulement l'écart à durée limitée dont la durée ne peut pas être déterminée de façon fiable, et aucun plafond de 20 ans n'existe (option 3). Ni l'un ni l'autre ne s'applique à un écart dont la durée d'utilisation n'est pas limitée. L'imputation sur les capitaux propres (option 2) n'est pas un traitement admis.",
       "source_ref": "Règl. ANC 2020-01 art. 231-11 (écart d'acquisition : amortissement ou test de dépréciation selon la durée d'utilisation)",
       "verified": true,

@@ -21,6 +21,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : la prime de fusion est la valeur d'apport revenant aux associés rémunérés moins la valeur nominale des titres émis (compte 1042).",
+        "Inexact : cet écart est une plus-value latente sur les apports ; la prime se mesure par rapport au nominal des titres émis.",
+        "Inexact : cet écart sur les titres détenus par l'absorbante, annulés, est le boni ou le mali de fusion.",
+        "Inexact : la prime se calcule sur la valeur d'apport ; cette définition n'y coïncide que si valeur d'apport et valeur réelle des titres sont égales."
+      ],
       "explanation": "La prime de fusion est la différence entre la valeur d'apport de la quote-part d'actif net qui rémunère les associés de l'absorbée et la valeur nominale des titres émis. L'option 2 est fausse : l'écart entre valeur réelle et valeur comptable des apports n'est pas comptabilisé en valeur comptable et n'est pas une prime. L'option 3 décrit le boni ou le mali, qui naît de l'annulation des titres détenus par l'absorbante. L'option 4 est fausse en général : elle ne coïncide avec la bonne définition que si la valeur d'apport est égale à la valeur réelle des titres émis ; en valeur comptable, la prime se calcule sur l'actif net comptable.",
       "source_ref": "PCG titre VII, traitement du boni et du mali de fusion (règl. ANC 2014-03 modifié par les règl. ANC 2015-06 et 2017-01) ; compte 1042",
       "verified": true,
@@ -47,6 +53,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : seule la quote-part des résultats accumulés non distribués depuis l'acquisition (50 000 €) va en résultat financier.",
+        "Inexact : le boni doit être ventilé ; la part correspondant aux résultats accumulés non distribués (50 000 €) va en résultat financier.",
+        "Inexact : la ventilation inverse les montants ; 50 000 € de résultats non distribués vont en résultat financier, 20 000 € en capitaux propres.",
+        "Exact : boni de 70 000 € (470 000 − 400 000) ; résultats non distribués (50 000 €) en résultat financier, surplus en capitaux propres."
       ],
       "explanation": "Lambert détient 100 % de Morin : pas d'augmentation de capital, les titres sont annulés. Boni = actif net comptable apporté − valeur des titres = 470 000 − 400 000 = 70 000 €. Le boni est comptabilisé en résultat financier à hauteur de la quote-part des résultats accumulés par Morin depuis l'acquisition et non distribués (50 000 €), et en capitaux propres pour le surplus (20 000 €). L'option 1 et l'option 2 ignorent la ventilation. L'option 3 inverse les deux montants.",
       "source_ref": "PCG titre VII, traitement du boni et du mali de fusion (règl. ANC 2014-03 modifié par les règl. ANC 2015-06 et 2017-01) ; comptes 768 et 1042",

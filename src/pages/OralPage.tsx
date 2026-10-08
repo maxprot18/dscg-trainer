@@ -14,7 +14,7 @@ import { cn } from '@/lib/utils'
 type Step = 'choose' | 'prep' | 'talk' | 'interview' | 'review'
 
 const selectClass =
-  'border-input bg-background focus-visible:ring-ring/50 h-10 w-full rounded-md border px-3 text-sm outline-none focus-visible:ring-[3px]'
+  'border-input bg-background focus-visible:ring-ring/70 h-10 w-full rounded-md border px-3 text-sm outline-none focus-visible:ring-[3px]'
 const ue6 = taxonomy.ues.find((u) => u.id === 'UE6')!
 const PREP_CHOICES = [ORAL_PREP_MINUTES, 30, 15] as const
 
@@ -182,9 +182,14 @@ export function OralPage() {
         <Button variant="outline" onClick={recorder.stop}>
           <Square className="text-destructive" /> Arrêter l’enregistrement
         </Button>
-      ) : recorder.state === 'idle' || recorder.state === 'stopped' ? (
+      ) : recorder.state !== 'unsupported' ? (
         <Button variant="outline" onClick={() => void recorder.start()}>
-          <Mic /> {recorder.state === 'stopped' ? 'Recommencer l’enregistrement' : 'M’enregistrer'}
+          <Mic />{' '}
+          {recorder.state === 'stopped'
+            ? 'Recommencer l’enregistrement'
+            : recorder.state === 'idle'
+              ? 'M’enregistrer'
+              : 'Réessayer l’enregistrement'}
         </Button>
       ) : null}
       {recorder.state === 'recording' && (
@@ -193,7 +198,16 @@ export function OralPage() {
         </span>
       )}
       {recorder.state === 'unsupported' && <span className="text-muted-foreground">Enregistrement non disponible sur ce navigateur.</span>}
-      {recorder.state === 'denied' && <span className="text-muted-foreground">Micro refusé : autorisez-le dans le navigateur pour vous enregistrer.</span>}
+      {(recorder.state === 'denied' || recorder.state === 'no-mic' || recorder.state === 'busy') && (
+        <span role="alert" className="text-amber-800 dark:text-amber-300">
+          {recorder.state === 'denied'
+            ? 'Micro refusé : autorisez-le dans le navigateur, puis réessayez.'
+            : recorder.state === 'no-mic'
+              ? 'Aucun micro détecté : branchez-en un, puis réessayez.'
+              : 'Le micro est déjà utilisé par une autre application.'}{' '}
+          L’oral reste faisable sans enregistrement.
+        </span>
+      )}
     </div>
   )
 

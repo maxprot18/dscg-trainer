@@ -23,6 +23,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : la rapidité de récupération ne mesure pas la création de valeur ; VAN A ≈ 4 959 € contre 12 923 € pour B.",
+        "Exact : VAN B ≈ 12 923 € contre 4 959 € pour A ; A est récupéré en 1,6 an, B en 2,4 ans environ.",
+        "Inexact : le ROI simple de 40 % ignore l'actualisation et s'exprime en pourcentage ; ce n'est pas une VAN.",
+        "Inexact : le calcul donne deux VAN positives, 4 959 € pour A et 12 923 € pour B."
+      ],
       "explanation": "VAN A = −100 000 + 70 000 ÷ 1,1 + 50 000 ÷ 1,1² = −100 000 + 63 636 + 41 322 = 4 959 €. VAN B = −100 000 + 30 000 ÷ 1,1 + 40 000 ÷ 1,1² + 70 000 ÷ 1,1³ = −100 000 + 27 273 + 33 058 + 52 592 = 12 923 €. Délai de récupération (non actualisé) : A, 70 000 en année 1 puis 30 000 ÷ 50 000 = 0,6 an, soit 1,6 an ; B, 70 000 cumulés fin d'année 2 puis 30 000 ÷ 70 000 ≈ 0,43 an, soit environ 2,4 ans. L'option 1 confond rapidité de récupération et création de valeur : le délai de récupération ignore les flux postérieurs. L'option 3 assimile le ROI simple ((140 000 − 100 000) ÷ 100 000 = 40 %) à une VAN, alors que le ROI ignore l'actualisation et s'exprime en pourcentage. L'option 4 est contredite par le calcul. Selon le critère de la VAN, B est préféré ; A ne le serait que si la contrainte de liquidité ou le risque à long terme primait.",
       "source_ref": "Évaluation des investissements : VAN = −I₀ + Σ FNTₜ (1 + k)⁻ᵗ ; délai de récupération ; ROI simple",
       "verified": true,
@@ -49,6 +55,12 @@
       ],
       "answer": [
         0
+      ],
+      "option_explanations": [
+        "Exact : la logistique interne regroupe réception, stockage et mise à disposition des intrants aux ateliers, exactement le périmètre du système.",
+        "Inexact : la logistique externe concerne le stockage et la distribution des produits finis aux clients.",
+        "Inexact : les approvisionnements désignent la fonction d'achat des intrants (fournisseurs, négociation, commandes), non leur manutention.",
+        "Inexact : l'infrastructure couvre la direction générale, la finance, le juridique et la planification."
       ],
       "explanation": "La logistique interne regroupe la réception, le stockage et la distribution des intrants aux unités de production : c'est exactement le périmètre du système décrit. La logistique externe (option 2) concerne le stockage et la distribution des produits finis aux clients. Les approvisionnements (option 3) désignent la fonction d'achat des intrants (sélection des fournisseurs, négociation, commandes), non leur manutention. L'infrastructure de l'entreprise (option 4) couvre la direction générale, la finance, le juridique, la planification. Le SI peut ainsi renforcer chaque maillon de la chaîne de valeur, ce qui en fait une source d'avantage concurrentiel.",
       "source_ref": "M. Porter, L'avantage concurrentiel (1985) : chaîne de valeur, activités principales et activités de soutien",

@@ -24,6 +24,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : l'audit ne donne qu'une assurance raisonnable ; une anomalie non détectée ne suffit pas, il faut prouver une faute.",
+        "Inexact : les tiers (banques, fournisseurs, acquéreurs) peuvent agir contre le commissaire aux comptes.",
+        "Exact : obligation de moyens ; la victime, entité ou tiers, prouve faute, préjudice et lien de causalité (art. L. 821-37).",
+        "Inexact : la responsabilité civile coexiste avec les responsabilités pénale et disciplinaire."
+      ],
       "explanation": "Le commissaire aux comptes est responsable, envers l'entité et envers les tiers, des conséquences dommageables des fautes et négligences commises dans l'exercice de ses fonctions. Il est tenu d'une obligation de moyens : la victime doit prouver une faute (diligences insuffisantes au regard des normes), un préjudice et un lien de causalité. Une anomalie non détectée ne suffit pas, l'audit ne donnant qu'une assurance raisonnable. Les tiers (banques, fournisseurs, acquéreurs) peuvent agir ; la responsabilité civile coexiste avec les responsabilités pénale et disciplinaire."
     },
     {
@@ -50,7 +56,13 @@
       "answer": [
         0
       ],
-      "explanation": "Le Code de commerce prévoit pour le CAC un délai spécial : trois ans à compter du fait dommageable ou, s'il a été dissimulé, de sa révélation (même délai que pour les dirigeants de SA). Le délai de cinq ans du droit commun (C. civ. art. 2224) est écarté par ce texte spécial. Les six ans correspondent à la durée du mandat et à la durée de conservation des dossiers, pas à la prescription ; le délai de dix ans ne s'applique pas."
+      "option_explanations": [
+        "Exact : délai spécial de trois ans à compter du fait dommageable ou de sa révélation s'il a été dissimulé (art. L. 821-38).",
+        "Inexact : le délai de droit commun de cinq ans (C. civ. art. 2224) est écarté par le texte spécial.",
+        "Inexact : six ans est la durée du mandat et de conservation des dossiers, pas le délai de prescription.",
+        "Inexact : la prescription est de trois ans ; le délai de dix ans, réservé aux faits qualifiés de crime, ne court pas de la certification."
+      ],
+      "explanation": "Le Code de commerce prévoit pour le CAC un délai spécial : trois ans à compter du fait dommageable ou, s'il a été dissimulé, de sa révélation (même délai que pour les dirigeants de SA). Le délai de cinq ans du droit commun (C. civ. art. 2224) est écarté par ce texte spécial. Les six ans correspondent à la durée du mandat et à la durée de conservation des dossiers, pas à la prescription ; le délai de dix ans prévu par l'article L. 225-254 ne vaut que si le fait est qualifié crime, et il court à compter de ce fait, non de la certification."
     },
     {
       "id": "ue4-cadre-responsabilite-0003",

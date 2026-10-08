@@ -18,6 +18,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : les biens fongibles s'évaluent au coût moyen pondéré ou selon la méthode PEPS.",
+        "Inexact : le DEPS n'est pas admis dans les comptes individuels, car il valorise le stock final à des coûts anciens.",
+        "Inexact : le DEPS (LIFO) n'est pas admis dans les comptes individuels ; seul le PEPS est ici recevable.",
+        "Inexact : le prix de vente diminué de la marge n'est qu'une approximation pratique du coût, ni méthode de sortie ni obligation."
+      ],
       "explanation": "Les biens fongibles sont évalués soit au coût moyen pondéré, soit selon la méthode PEPS. Le DEPS (LIFO) n’est pas admis dans les comptes individuels, car il conduit à valoriser le stock final à des coûts anciens. La méthode du prix de vente diminué de la marge n’est qu’une technique pratique d’approximation du coût, utilisée notamment dans la distribution lorsqu’elle donne un résultat proche du coût réel : ce n’est ni une méthode de sortie des biens fongibles ni une obligation.",
       "source_ref": "PCG, règles relatives au coût d’entrée et à l’évaluation des stocks (règl. ANC 2014-03), évaluation des biens fongibles",
       "estimated_seconds": 45,
@@ -44,6 +50,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : 15 € (400 000 / 80 000 = 5 € de fixe) incorpore le coût de la sous-activité dans le stock.",
+        "Inexact : 10 € omet les charges fixes de production, qui s'imputent sur la base de la capacité normale.",
+        "Exact : charges fixes imputées sur la capacité normale : 400 000 / 100 000 = 4 € ; coût unitaire 10 + 4 = 14 €.",
+        "Inexact : 14,50 € ne correspond à aucune méthode admise d'imputation des charges fixes."
       ],
       "explanation": "Les charges fixes de production sont imputées sur la base de la capacité normale : 400 000 / 100 000 = 4 € par unité. Coût unitaire = 10 + 4 = 14 €. Les 80 000 € de charges fixes non imputés (400 000 − 80 000 × 4) constituent le coût de la sous-activité, qui reste en charges de la période. 15 € (400 000 / 80 000 = 5 € de fixe) incorpore la sous-activité dans le stock ; 10 € omet les charges fixes de production ; 14,50 € ne correspond à aucune méthode admise.",
       "source_ref": "PCG, règles relatives au coût d’entrée et à l’évaluation des stocks (règl. ANC 2014-03), coût de production et imputation rationnelle des charges fixes",
