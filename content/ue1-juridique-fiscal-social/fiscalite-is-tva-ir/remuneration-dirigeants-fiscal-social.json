@@ -22,6 +22,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : l'option oublie les parts du conjoint, qui s'ajoutent à celles du gérant : 30 % + 25 % = 55 %.",
+        "Exact : avec les parts de son épouse, M. Arnal détient 55 % : gérant majoritaire, travailleur non salarié.",
+        "Inexact : les parts du conjoint sont prises en compte même s'il n'exerce aucune fonction de gérance.",
+        "Inexact : les gérants minoritaires ou égalitaires de SARL sont assimilés salariés (CSS art. L311-3)."
+      ],
       "explanation": "Le caractère majoritaire de la gérance s'apprécie en ajoutant aux parts du gérant celles de son conjoint (ou partenaire de PACS) et de ses enfants mineurs non émancipés : 30 % + 25 % = 55 %. M. Arnal est gérant majoritaire, travailleur non salarié (exclu de l'affiliation au régime général prévue par CSS art. L311-3 pour les seuls gérants minoritaires ou égalitaires) : option 2.\nL'option 1 oublie les parts du conjoint.\nL'option 3 est fausse : les parts du conjoint sont prises en compte même s'il n'est pas gérant.\nL'option 4 est fausse : les gérants minoritaires ou égalitaires de SARL sont assimilés salariés.",
       "source_ref": "CSS art. L311-3 (affiliation des gérants minoritaires ou égalitaires de SARL au régime général) ; CGI art. 62 (gérants majoritaires de SARL)",
       "verified": true,

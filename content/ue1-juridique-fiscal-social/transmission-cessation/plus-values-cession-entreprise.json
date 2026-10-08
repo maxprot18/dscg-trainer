@@ -23,6 +23,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : le seuil de 90 000 € concerne les prestations de services, non les activités de vente.",
+        "Exact : vente exercée depuis plus de 5 ans, moyenne des recettes 210 000 € ≤ 250 000 € : exonération totale (CGI art. 151 septies).",
+        "Inexact : l'article 151 septies vise aussi les plus-values réalisées en cours d'exploitation, pas seulement la cession de l'entreprise.",
+        "Inexact : l'exonération est soumise à une condition de recettes : totale jusqu'à 250 000 €, partielle jusqu'à 350 000 € pour la vente."
+      ],
       "explanation": "Pour une activité de vente, l'exonération est totale si l'activité est exercée depuis au moins 5 ans et si la moyenne des recettes HT des deux exercices précédents n'excède pas 250 000 € (exonération partielle jusqu'à 350 000 €) : moyenne 210 000 € (option 2). Le seuil de 90 000 € (option 1) concerne les prestations de services. L'article 151 septies s'applique aux plus-values réalisées en cours d'exploitation, pas seulement à la cession de l'entreprise (option 3), qui relève aussi de l'article 238 quindecies. L'exonération est soumise à une condition de recettes (option 4).",
       "source_ref": "CGI art. 151 septies (exonération des plus-values professionnelles des petites entreprises)",
       "verified": true,
@@ -51,6 +57,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : l'option ignore le régime du long terme des titres de participation détenus depuis au moins 2 ans.",
+        "Inexact : aucun taux réduit de 15 % ne s'applique ; ces plus-values sont exonérées sous réserve d'une quote-part.",
+        "Inexact : l'option oublie la quote-part de frais et charges de 12 %, imposée au taux normal.",
+        "Exact : exonération sous réserve d'une quote-part de 12 % imposée à 25 % : 500 000 × 12 % × 25 % = 15 000 € (art. 219 I a quinquies)."
+      ],
       "explanation": "Les plus-values à long terme de cession de titres de participation détenus depuis au moins 2 ans sont exonérées, sous réserve de la réintégration d'une quote-part de frais et charges de 12 % du montant brut des plus-values, imposée au taux normal (CGI art. 219 I a quinquies) : 500 000 × 12 % × 25 % = 15 000 € (option 4). L'option 1 ignore le régime du long terme ; aucun taux réduit de 15 % ne s'applique à ces plus-values (option 2), qui relèvent de l'exonération sous réserve de la quote-part ; l'option 3 oublie la quote-part.",
       "source_ref": "CGI art. 219 I a quinquies (plus-values à long terme sur titres de participation, quote-part de 12 %)",
       "verified": true,
@@ -165,6 +177,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : le seuil de 60 % précède la LF 2026 ; la cession de septembre 2026 relève du seuil de 70 %.",
+        "Exact : cession 18 mois après l'apport, réinvestissement économique de 65 % < 70 % : le report prend fin (CGI art. 150-0 B ter).",
+        "Inexact : le report est menacé par une cession dans les trois ans de l'apport, non d'un an.",
+        "Inexact : un réinvestissement d'au moins 70 % dans le délai aurait maintenu le report ; la fin n'est pas automatique."
+      ],
       "explanation": "La cession par la holding des titres apportés dans les trois ans de l'apport met fin au report, sauf si elle s'engage à réinvestir une fraction du produit de cession dans une activité économique. Pour les cessions réalisées à compter du 21 février 2026, la loi de finances pour 2026 a porté cette fraction de 60 % à 70 %, le délai de réinvestissement de deux à trois ans et la durée de conservation des actifs acquis à cinq ans. Ici, la cession intervient 18 mois après l'apport et le réinvestissement économique représente 1 300 000 / 2 000 000 = 65 % du prix, sous le seuil de 70 % ; les contrats de capitalisation ne sont pas un réinvestissement économique. Le report prend fin et la plus-value de 1 400 000 € est imposée au nom de Mme Lebrun (option 2).\nL'option 1 applique le seuil de 60 % en vigueur avant la loi de finances pour 2026, alors que c'est la date de la cession (septembre 2026) qui détermine le régime. L'option 3 retient un délai d'un an au lieu de trois. L'option 4 est fausse : un réinvestissement d'au moins 70 % dans le délai aurait maintenu le report, et une cession plus de trois ans après l'apport l'aurait laissé subsister sans condition de réinvestissement.",
       "source_ref": "CGI art. 150-0 B ter (rédaction issue de la loi n° 2026-103 du 19 février 2026, loi de finances pour 2026 : cession dans les trois ans de l'apport, réinvestissement d'au moins 70 % dans les trois ans, applicable aux cessions réalisées à compter du 21 février 2026)",
       "verified": true,

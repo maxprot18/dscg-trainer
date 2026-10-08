@@ -17,6 +17,12 @@
       ],
       "answer": [3],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : la libération de la moitié du nominal est la règle de la constitution (L225-3), non de l'augmentation de capital.",
+        "Inexact : la libération intégrale du prix d'émission est possible mais pas obligatoire.",
+        "Inexact : le quart porte sur le nominal et non sur le prix d'émission ; la prime doit être versée en totalité.",
+        "Exact : quart du nominal plus totalité de la prime : 10 × 1/4 + (18 − 10) = 10,50 € (L225-144)."
+      ],
       "explanation": "Lors d'une augmentation de capital, les actions de numéraire sont libérées d'au moins un quart de leur valeur nominale et de la totalité de la prime d'émission (C. com. art. L225-144) : 10 × 1/4 + (18 − 10) = 2,50 + 8 = 10,50 € (option 4). La moitié du nominal (option 1) est la règle de la constitution (art. L225-3). La libération intégrale (option 2) est possible mais pas obligatoire. Le quart du prix d'émission (option 3) oublie que la prime doit être versée en totalité.",
       "source_ref": "C. com. art. L225-144 (libération des actions de numéraire en cas d'augmentation de capital)",
       "verified": true,
@@ -39,6 +45,12 @@
       ],
       "answer": [0],
       "multiple": false,
+      "option_explanations": [
+        "Exact : la réduction non motivée par des pertes ouvre un droit d'opposition aux créanciers antérieurs ; les opérations attendent l'expiration du délai (L225-205).",
+        "Inexact : l'option nie le droit d'opposition que l'article L225-205 reconnaît aux créanciers antérieurs, dont le gage diminue.",
+        "Inexact : la réduction est votée par l'AGE à la majorité des deux tiers, sans unanimité, sous réserve de l'égalité des actionnaires.",
+        "Inexact : la réduction relève de l'AGE ; le conseil ne peut agir que sur délégation de celle-ci (L225-204)."
+      ],
       "explanation": "Une réduction non motivée par des pertes diminue le gage des créanciers : ceux dont la créance est antérieure au dépôt du procès-verbal au greffe peuvent former opposition, et les opérations ne peuvent commencer pendant le délai d'opposition ni, le cas échéant, avant qu'il ait été statué en première instance (C. com. art. L225-205) : option 1. L'option 2 nie ce droit d'opposition. La réduction est votée par l'AGE à la majorité des deux tiers, sans unanimité (option 3), sous réserve de l'égalité des actionnaires. Le conseil ne peut agir seul (option 4) : il peut seulement recevoir une délégation de l'AGE (art. L225-204).",
       "source_ref": "C. com. art. L225-204 (compétence de l'AGE) et L225-205 (opposition des créanciers)",
       "verified": true,

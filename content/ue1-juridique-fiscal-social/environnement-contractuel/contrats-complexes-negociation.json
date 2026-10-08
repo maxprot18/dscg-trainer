@@ -23,6 +23,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : la formation du contrat malgré la rétractation est la solution de la promesse unilatérale (art. 1124), pas celle de l'offre.",
+        "Exact : la rétractation pendant le délai fixé empêche la formation du contrat mais engage la responsabilité extracontractuelle de l'offrant (art. 1115 et 1116).",
+        "Inexact : la libre rétractation ne vaut que pour une offre qui n'est pas encore parvenue à son destinataire.",
+        "Inexact : doublement faux ; aucun contrat n'est formé, et la perte des avantages attendus du contrat n'est pas réparable (art. 1116)."
+      ],
       "explanation": "Une fois parvenue à son destinataire, l'offre ne peut pas être rétractée avant l'expiration du délai fixé. La rétractation fautive empêche toutefois la conclusion du contrat et engage la responsabilité extracontractuelle de l'offrant, sans l'obliger à compenser la perte des avantages attendus du contrat (C. civ. art. 1115 et 1116) : option 2. L'option 1 correspond à la solution de la promesse unilatérale (art. 1124), pas à celle de l'offre. L'option 3 vaut seulement pour une offre qui n'est pas encore parvenue au destinataire. L'option 4 est doublement fausse : pas de contrat formé, et la perte des avantages attendus n'est pas réparable.",
       "source_ref": "C. civ. art. 1115 et 1116",
       "estimated_seconds": 60,
@@ -51,6 +57,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : l'article 1112, al. 2, exclut la réparation de la perte des avantages attendus du contrat non conclu.",
+        "Inexact : l'article 1112, al. 2, exclut aussi la perte de chance d'obtenir les avantages attendus du contrat.",
+        "Inexact : la liberté de rompre est encadrée par la bonne foi ; une rupture brutale après avoir laissé croire à la conclusion est fautive.",
+        "Exact : la rupture fautive engage la responsabilité extracontractuelle de Corail ; seuls les frais exposés pour la négociation sont indemnisables (art. 1112)."
+      ],
       "explanation": "La rupture des pourparlers est libre, mais elle devient fautive lorsqu'elle est brutale et intervient après qu'un partenaire a laissé croire à la conclusion : la responsabilité extracontractuelle de Corail est engagée. L'article 1112, al. 2, exclut la réparation de la perte des avantages attendus du contrat non conclu et de la perte de chance de les obtenir : seuls les frais exposés sont indemnisables (option 4). Les options 1 et 2 correspondent précisément aux préjudices exclus. L'option 3 ignore l'exigence de bonne foi qui encadre la liberté de rompre.",
       "source_ref": "C. civ. art. 1112",
       "estimated_seconds": 75,

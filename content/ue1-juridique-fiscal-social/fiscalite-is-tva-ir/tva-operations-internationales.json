@@ -22,6 +22,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : la TVA française ne peut pas être facturée lorsque les conditions de l'exonération de livraison intracommunautaire sont réunies.",
+        "Exact : livraison intracommunautaire exonérée en France (CGI art. 262 ter I) ; l'acquéreur taxe l'acquisition intracommunautaire en Allemagne.",
+        "Inexact : confusion avec l'exportation, qui suppose une sortie du bien hors de l'Union européenne (CGI art. 262 I).",
+        "Inexact : l'opération est dans le champ, exonérée ; elle figure sur la déclaration de TVA et dans l'état récapitulatif."
+      ],
       "explanation": "Bien expédié de France vers un autre État membre, acheteur assujetti identifié dans cet État : c'est une livraison intracommunautaire exonérée en France (CGI art. 262 ter I), l'acquéreur taxant l'acquisition intracommunautaire dans l'État d'arrivée. L'option 2 est donc la bonne.\nL'option 1 est fausse : facturer la TVA française n'est pas possible lorsque les conditions de l'exonération sont réunies.\nL'option 3 confond avec l'exportation, qui concerne une sortie du bien hors de l'Union européenne (CGI art. 262 I).\nL'option 4 est fausse : l'opération est dans le champ, exonérée, ouvre droit à déduction de la TVA d'amont et doit figurer sur la déclaration de TVA et dans l'état récapitulatif.",
       "source_ref": "CGI art. 262 ter I (exonération des livraisons intracommunautaires) ; CGI art. 256 bis (acquisitions intracommunautaires)",
       "verified": true,
@@ -49,6 +55,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : l'établissement du prestataire hors de l'Union n'exclut pas l'imposition en France, lieu d'établissement du preneur.",
+        "Inexact : l'autoliquidation par le preneur dispense le prestataire non établi de facturer la TVA française (CGI art. 283-2).",
+        "Exact : entre assujettis, lieu du preneur (art. 259, 1°) ; le prestataire n'étant pas établi en France, Calixte autoliquide la TVA (art. 283-2).",
+        "Inexact : le lieu d'établissement du prestataire est la règle B to C, qui ne vaut pas entre assujettis."
       ],
       "explanation": "Pour une prestation entre assujettis, le lieu d'imposition est le lieu d'établissement du preneur (CGI art. 259, 1°) : la France. Le prestataire n'étant pas établi en France, la TVA est due par le preneur assujetti (CGI art. 283-2), qui l'autoliquide sur sa déclaration et la déduit s'il a un droit à déduction : option 3.\nL'option 1 est fausse : l'établissement du prestataire hors de l'Union n'exclut pas l'imposition en France.\nL'option 2 est fausse : le mécanisme d'autoliquidation dispense le prestataire de facturer la TVA française.\nL'option 4 applique la règle B to C (lieu du prestataire), qui ne vaut pas entre assujettis.",
       "source_ref": "CGI art. 259, 1° (lieu des prestations entre assujettis) ; CGI art. 283-2 (autoliquidation par le preneur)",

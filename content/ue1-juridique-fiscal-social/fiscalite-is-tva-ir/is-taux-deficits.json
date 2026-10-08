@@ -40,6 +40,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : le 15 mars 2026 est la date du premier acompte de l'exercice 2026, non celle du solde de 2025.",
+        "Exact : clôture au 31 décembre : le solde est reporté au 15 mai de l'année suivante (CGI art. 1668).",
+        "Inexact : l'option applique la règle du 15 du quatrième mois sans le report au 15 mai prévu pour les clôtures au 31 décembre.",
+        "Inexact : le 15 décembre est la date du quatrième acompte, non celle du solde."
+      ],
       "explanation": "Le solde de l'IS est liquidé au plus tard le 15 du quatrième mois qui suit la clôture de l'exercice ; pour un exercice clos le 31 décembre, l'échéance est reportée au 15 mai de l'année suivante (CGI art. 1668) : option 2.\nL'option 1 (15 mars) correspond à la date du premier acompte de l'exercice 2026, non au solde de 2025.\nL'option 3 (15 avril) applique la règle du quatrième mois sans tenir compte du report au 15 mai prévu pour les clôtures au 31 décembre.\nL'option 4 (15 décembre) est la date du quatrième acompte.",
       "source_ref": "CGI art. 1668 (acomptes et liquidation du solde de l'IS)",
       "verified": true,
@@ -67,6 +73,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : l'option ignore le plafonnement et impute les déficits à hauteur de la totalité du bénéfice.",
+        "Inexact : l'option oublie la majoration de 50 % de la fraction du bénéfice excédant 1 M€.",
+        "Exact : 1 000 000 + 50 % × (1 800 000 − 1 000 000) = 1 400 000 € (CGI art. 209, I).",
+        "Inexact : l'option applique 50 % à la totalité du bénéfice au lieu de la seule fraction excédant 1 M€."
       ],
       "explanation": "L'imputation des déficits antérieurs est plafonnée à 1 000 000 € majoré de 50 % de la fraction du bénéfice qui excède 1 000 000 € (CGI art. 209, I) : 1 000 000 + 50 % × (1 800 000 − 1 000 000) = 1 400 000 €, soit l'option 3. Le bénéfice imposable est de 400 000 € et le reliquat de déficits (1 000 000 €) reste reportable sans limite de durée.\nL'option 1 ignore le plafonnement (imputation totale à hauteur du bénéfice).\nL'option 2 oublie la majoration de 50 % de la fraction excédant 1 M€.\nL'option 4 applique 50 % à la totalité du bénéfice.",
       "source_ref": "CGI art. 209, I (report en avant des déficits, plafond de 1 M€ majoré de 50 % de l'excédent)",

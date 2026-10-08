@@ -22,6 +22,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : les porteurs de titres participatifs n'ont aucun droit de vote, d'où l'absence de dilution du pouvoir.",
+        "Inexact : confusion avec des obligations remboursables en actions ; le titre participatif n'a pas vocation à être converti.",
+        "Exact : rémunération fixe et variable ; remboursement seulement en cas de liquidation ou, au gré de l'émetteur, après sept ans au moins (L228-36).",
+        "Inexact : le porteur ne peut pas exiger le remboursement à tout moment, sinon le titre ne serait pas un quasi-fonds propre."
+      ],
       "explanation": "Les titres participatifs (C. com. art. L228-36), que seules certaines sociétés peuvent émettre (sociétés par actions du secteur public, coopératives, certains organismes d'HLM), ont une rémunération composée d'une partie fixe et d'une partie variable indexée sur l'activité ou les résultats ; ils ne sont remboursables qu'en cas de liquidation de la société ou, à son initiative, à l'expiration d'un délai minimal de 7 ans (option 3). C'est ce qui les rapproche des fonds propres. L'option 1 est fausse : les porteurs n'ont aucun droit de vote, d'où l'absence de dilution du pouvoir. L'option 2 confond avec des obligations remboursables en actions : le titre participatif n'a pas vocation à être converti. L'option 4 est fausse : le porteur ne peut pas exiger le remboursement à tout moment, sinon le titre ne serait pas un quasi-fonds propre.",
       "source_ref": "C. com. art. L228-36 (titres participatifs)",
       "verified": true,
@@ -189,6 +195,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : confusion avec l'affacturage avec garantie de bonne fin ; le cédant Dailly est garant solidaire du paiement (L313-24).",
+        "Inexact : la cession est opposable aux tiers dès la date du bordereau, sans signification (L313-27) ; l'ancien article 1690 ne s'applique pas.",
+        "Inexact : la garantie du cédant est solidaire : ni bénéfice de discussion ni préalable judiciaire.",
+        "Exact : sauf convention contraire, Ombrée garantit solidairement le paiement (L313-24) ; la cession est opposable depuis la date du bordereau (L313-27)."
+      ],
       "explanation": "Sauf convention contraire, le signataire du bordereau Dailly est garant solidaire du paiement des créances cédées (C. mon. fin. art. L313-24) : la banque peut se retourner directement contre Ombrée, et la cession est opposable aux tiers dès la date portée sur le bordereau, sans formalité (art. L313-27) : option 4. L'option 1 confond la cession Dailly avec un affacturage assorti d'une garantie de bonne fin, qui transfère le risque d'impayé au factor. L'option 2 applique à tort l'ancienne signification par huissier de la cession de créance civile (ancien C. civ. art. 1690) : le bordereau suffit (la notification au débiteur sert seulement à l'empêcher de payer le cédant). L'option 3 est fausse : la garantie est solidaire, il n'y a ni bénéfice de discussion ni préalable judiciaire.",
       "source_ref": "C. mon. fin. art. L313-23, L313-24 (garantie solidaire du cédant) et L313-27 (opposabilité à la date du bordereau)",
       "verified": true,

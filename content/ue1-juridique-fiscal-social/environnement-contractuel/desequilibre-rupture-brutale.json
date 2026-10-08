@@ -23,6 +23,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : une relation établie peut résulter d'une succession de contrats ou de commandes régulières, sans contrat écrit.",
+        "Inexact : seul le préjudice né de la brutalité est réparé, en général la marge perdue pendant le préavis manquant.",
+        "Exact : depuis l'ordonnance du 24 avril 2019, un préavis de dix-huit mois exclut la responsabilité pour durée insuffisante (L442-1 II).",
+        "Inexact : le texte vise expressément la rupture « même partielle », comme une baisse importante et imposée des commandes."
+      ],
       "explanation": "Depuis l'ordonnance du 24 avril 2019, l'article L442-1 II précise que la responsabilité ne peut pas être engagée pour cause de durée insuffisante dès lors qu'un préavis de dix-huit mois a été respecté (option 3). L'option 1 est fausse : une relation établie peut résulter d'une succession de contrats ou de simples commandes régulières, sans contrat écrit. L'option 2 est fausse : seul le préjudice né de la brutalité est réparé, en général la marge perdue pendant le préavis manquant. L'option 4 est fausse : le texte vise expressément la rupture « même partielle ».",
       "source_ref": "C. com. L442-1 II",
       "estimated_seconds": 75,
@@ -52,6 +58,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : l'article 1171 du Code civil exclut expressément l'adéquation du prix à la prestation de son contrôle.",
+        "Inexact : trop général ; sur le fondement du Code de commerce, le déséquilibre peut porter sur le prix (Cass. com., 25 janv. 2017).",
+        "Inexact : la lésion n'est pas une cause générale de nullité des contrats (art. 1168).",
+        "Exact : la Cour de cassation admet qu'un déséquilibre significatif au sens de L442-1 I 2° résulte d'une inadéquation du prix au bien vendu."
+      ],
       "explanation": "Dans les relations entre professionnels de la production et de la distribution, la Cour de cassation admet que le déséquilibre significatif sanctionné par le Code de commerce peut résulter d'une inadéquation du prix au bien vendu (Cass. com., 25 janv. 2017, Galec) : option 4. L'article 1171 du Code civil exclut au contraire expressément l'adéquation du prix à la prestation de son contrôle (option 1), et le texte spécial du Code de commerce prime lorsqu'il s'applique. L'option 2 est donc trop générale. L'option 3 est fausse : la lésion n'est pas une cause générale de nullité des contrats (C. civ. art. 1168).",
       "source_ref": "C. civ. art. 1168 et 1171 ; C. com. L442-1 I 2° ; Cass. com., 25 janv. 2017, n° 15-23.547",
       "estimated_seconds": 90,

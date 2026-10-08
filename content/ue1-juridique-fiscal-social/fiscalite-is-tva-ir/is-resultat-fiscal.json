@@ -22,6 +22,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : les amendes, majorations et pénalités mises à la charge des contrevenants ne sont pas déductibles (CGI art. 39-2).",
+        "Inexact : l'IS n'est pas déductible de son propre résultat imposable ; il est réintégré quand on part du résultat après impôt.",
+        "Inexact : les provisions pour indemnités de départ à la retraite sont expressément exclues (art. 39-1-5°) ; la charge se déduit au versement.",
+        "Exact : charge nettement précisée, rendue probable par des événements en cours et comptabilisée : provision déductible (CGI art. 39-1-5°)."
+      ],
       "explanation": "L'option 4 est la bonne : une provision est déductible si elle couvre une perte ou une charge nettement précisée, que des événements en cours rendent probable, et si elle est comptabilisée (CGI art. 39-1-5°) ; un litige prud'homal probable et évalué avec précision remplit ces conditions.\nL'option 1 est fausse : les amendes, majorations et pénalités mises à la charge des contrevenants ne sont pas déductibles (CGI art. 39-2).\nL'option 2 est fausse : l'IS n'est pas une charge déductible de son propre résultat imposable ; il est réintégré lorsqu'on part du résultat comptable après impôt.\nL'option 3 est fausse : les provisions pour indemnités de départ à la retraite sont expressément exclues des provisions déductibles (CGI art. 39-1-5°) ; la charge sera déduite lors du versement effectif.",
       "source_ref": "CGI art. 39-1-5° (provisions déductibles et exclusion des provisions pour retraite) ; CGI art. 39-2 (amendes et pénalités)",
       "verified": true,
@@ -49,6 +55,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : l'option ignore le régime mère-fille, applicable ici : 30 % du capital détenus depuis quatre ans (CGI art. 145).",
+        "Exact : déduction du dividende de 200 000 € et réintégration de la quote-part de 5 %, soit 10 000 € (CGI art. 216).",
+        "Inexact : l'option oublie la quote-part de frais et charges de 5 % ; Holdam, hors intégration fiscale, ne bénéficie pas du taux de 1 %.",
+        "Inexact : le taux de 12 % concerne la quote-part sur les plus-values à long terme de titres de participation (art. 219, I-a quinquies)."
       ],
       "explanation": "Les conditions du régime mère-fille sont remplies : participation d'au moins 5 % du capital, conservée au moins deux ans (CGI art. 145). Le dividende est retranché du bénéfice net total, sous déduction d'une quote-part de frais et charges égale à 5 % du produit brut des participations (CGI art. 216) : déduction de 200 000 € et réintégration de 200 000 × 5 % = 10 000 €. L'option 2 est donc la bonne ; seuls 10 000 € sont finalement imposés au taux normal.\nL'option 1 ignore le régime mère-fille, applicable ici.\nL'option 3 oublie la quote-part de frais et charges (le taux de 1 % ne vaut qu'au sein d'un groupe intégré et il n'y a pas d'exonération totale).\nL'option 4 applique à tort le taux de 12 %, qui concerne la quote-part sur les plus-values à long terme de cession de titres de participation (CGI art. 219, I-a quinquies).",
       "source_ref": "CGI art. 145 (conditions du régime des sociétés mères) ; CGI art. 216 (déduction des produits nets de participation, quote-part de frais et charges de 5 %)",

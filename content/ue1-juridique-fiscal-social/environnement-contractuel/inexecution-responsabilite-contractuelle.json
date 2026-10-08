@@ -22,6 +22,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : la réduction du prix figure parmi les cinq sanctions de l'inexécution énumérées par l'article 1217.",
+        "Inexact : l'exception d'inexécution figure parmi les sanctions énumérées par l'article 1217.",
+        "Inexact : la résolution du contrat figure parmi les sanctions énumérées par l'article 1217.",
+        "Exact : la nullité sanctionne un défaut de formation du contrat (vice du consentement, contenu illicite), non un manquement dans son exécution."
+      ],
       "explanation": "L'article 1217 énumère cinq sanctions : exception d'inexécution (option 2), exécution forcée en nature, réduction du prix (option 1), résolution (option 3) et réparation des conséquences de l'inexécution. La nullité (option 4) sanctionne un défaut affectant la formation du contrat (vice du consentement, contenu illicite…), et non un manquement survenu dans son exécution.",
       "source_ref": "C. civ. art. 1217 et 1178",
       "estimated_seconds": 45,
@@ -50,6 +56,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : la partie qui demande la renégociation continue d'exécuter ses obligations pendant celle-ci (art. 1195).",
+        "Exact : faute d'accord dans un délai raisonnable, le juge peut, à la demande d'une seule partie, réviser le contrat ou y mettre fin (art. 1195).",
+        "Inexact : confusion entre la saisine conjointe, pour adapter le contrat, et la saisine unilatérale ouverte en l'absence d'accord.",
+        "Inexact : l'exécution impossible relève de la force majeure (art. 1218) ; l'imprévision suppose une exécution excessivement onéreuse."
+      ],
       "explanation": "L'article 1195 prévoit qu'en cas de refus ou d'échec de la renégociation, les parties peuvent convenir de la résolution ou demander ensemble au juge d'adapter le contrat ; à défaut d'accord dans un délai raisonnable, le juge peut, à la demande d'une seule partie, réviser le contrat ou y mettre fin (option 2). L'option 1 est fausse : la partie continue d'exécuter ses obligations durant la renégociation. L'option 3 confond la saisine conjointe (adaptation) et la saisine unilatérale ouverte en l'absence d'accord. L'option 4 décrit la force majeure (art. 1218) : l'imprévision suppose une exécution excessivement onéreuse, non impossible.",
       "source_ref": "C. civ. art. 1195 et 1218",
       "estimated_seconds": 75,
@@ -217,6 +229,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : l'article 1170 s'applique aussi entre professionnels ; l'absence de faute lourde n'empêche pas d'écarter la clause qui vide l'obligation essentielle.",
+        "Inexact : la sanction frappe la seule clause, réputée non écrite, et non le contrat entier.",
+        "Exact : la clause prive de sa substance l'obligation essentielle de conserver les données (art. 1170) ; réparation limitée au préjudice prévisible (art. 1231-3).",
+        "Inexact : écarter la clause ne supprime pas la limite du préjudice prévisible, qui ne cède qu'en cas de faute lourde ou dolosive (art. 1231-3)."
+      ],
       "explanation": "L'obligation essentielle d'un prestataire de sauvegarde est de conserver les données qui lui sont confiées. Une clause qui l'exonère de toute responsabilité en cas de perte, quelle qu'en soit la cause, prive cette obligation de sa substance : elle est réputée non écrite (C. civ. art. 1170). Duroc obtient alors des dommages-intérêts selon le droit commun, limités au préjudice prévisible lors de la conclusion du contrat, faute de faute lourde ou dolosive (art. 1231-3) : c'est l'option 3.\nL'option 1 est fausse : l'article 1170 s'applique à tout contrat, y compris entre professionnels ; l'absence de faute lourde n'empêche que l'éviction de la clause pour faute lourde, non son éviction pour atteinte à l'obligation essentielle. L'option 2 est fausse : la sanction frappe la seule clause, réputée non écrite, et non le contrat entier. L'option 4 est fausse : l'éviction de la clause ne fait pas disparaître la limite du préjudice prévisible, qui ne cède qu'en cas de faute lourde ou dolosive.",
       "source_ref": "C. civ. art. 1170 (clause privant de sa substance l’obligation essentielle) et 1231-3 (préjudice prévisible)",
       "verified": true,

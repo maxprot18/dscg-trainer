@@ -24,6 +24,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : la fusion est expressément visée par l'article L1224-1 (« succession, vente, fusion… ») : les contrats sont transférés.",
+        "Inexact : la vente du fonds est expressément visée par l'article L1224-1 : les contrats suivent le fonds.",
+        "Inexact : la location-gérance transfère l'exploitation du fonds au locataire-gérant, auquel les contrats sont transférés.",
+        "Exact : la seule perte d'un marché, sans transfert d'éléments d'exploitation significatifs, ne transfère pas une entité économique autonome, sauf disposition conventionnelle."
+      ],
       "explanation": "L'article L1224-1 s'applique en cas de transfert d'une entité économique autonome qui conserve son identité et dont l'activité est poursuivie. La seule perte d'un marché au profit d'un concurrent, sans transfert d'éléments d'exploitation significatifs, ne caractérise pas un tel transfert (option 4) : les contrats ne sont pas transférés de plein droit, sauf disposition conventionnelle de branche organisant la reprise du personnel. La fusion (option 1) et la vente du fonds (option 2) sont expressément visées par le texte (« succession, vente, fusion… »). La location-gérance (option 3) transfère l'exploitation du fonds au locataire-gérant : les contrats lui sont transférés.",
       "source_ref": "C. trav. art. L1224-1 ; jurisprudence de la Cour de cassation sur l'entité économique autonome",
       "estimated_seconds": 60
@@ -52,6 +58,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : la convention mise en cause survit temporairement jusqu'à un accord de substitution ou, à défaut, pendant 15 mois.",
+        "Inexact : la survie de la convention de l'ancien employeur est limitée dans le temps, non indéfinie.",
+        "Exact : faute d'accord de substitution, la convention survit un an après l'expiration du préavis de trois mois, soit 15 mois (L2261-14).",
+        "Inexact : l'option oublie le préavis de trois mois et la garantie d'une rémunération annuelle au moins égale à celle des douze derniers mois."
+      ],
       "explanation": "Le transfert met en cause la convention collective de l'ancien employeur. Elle continue de produire effet jusqu'à l'entrée en vigueur d'un accord de substitution ou, à défaut, pendant un an à compter de l'expiration du préavis de trois mois, soit 15 mois au total (option 3). À l'issue, sans accord, les salariés conservent une rémunération annuelle au moins égale à celle versée au cours des douze derniers mois. L'option 1 ignore la survie temporaire de la convention mise en cause. L'option 2 est fausse : la survie est limitée dans le temps. L'option 4 oublie le préavis et la garantie de rémunération.",
       "source_ref": "C. trav. art. L2261-14 (mise en cause d'une convention ou d'un accord) et L2261-9 (préavis de trois mois)",
       "estimated_seconds": 75
@@ -220,6 +232,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : c'est le principe de droit commun de l'article L1224-2, écarté en cas de sauvegarde, redressement ou liquidation judiciaire.",
+        "Inexact : en procédure collective, le repreneur n'est pas tenu des dettes antérieures ; et hors procédure, il a en principe un recours contre le cédant.",
+        "Exact : l'article L1224-2 écarte l'obligation du repreneur en procédure collective ; les créances antérieures restent dues par Alto, dans sa procédure.",
+        "Inexact : le transfert n'éteint pas les créances salariales ; elles restent dues par Alto, dans le cadre de sa procédure collective."
+      ],
       "explanation": "L'article L1224-2 pose en principe que le nouvel employeur est tenu, envers les salariés transférés, des obligations de l'ancien employeur nées à la date de la modification, l'ancien lui remboursant les sommes payées sauf convention contraire. Mais il écarte cette règle en cas de procédure de sauvegarde, de redressement ou de liquidation judiciaire : les créances antérieures restent dues par Alto et sont traitées dans sa procédure collective (avec, le cas échéant, l'intervention de la garantie des salaires). L'option 3 est donc exacte.\nL'option 1 décrit le principe de droit commun, inapplicable ici. L'option 2 est fausse deux fois : le repreneur n'est pas tenu des dettes en procédure collective et, même hors procédure collective, il dispose en principe d'un recours contre le cédant. L'option 4 est fausse : les créances des salariés subsistent et restent dues par Alto, dans le cadre de sa procédure collective.",
       "source_ref": "C. trav. art. L1224-2 (obligations du nouvel employeur et exceptions)",
       "estimated_seconds": 75

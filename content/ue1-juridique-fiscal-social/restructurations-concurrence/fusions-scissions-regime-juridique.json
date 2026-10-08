@@ -23,6 +23,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : la fusion entraîne une dissolution sans liquidation ; pas de boni en numéraire, la soulte étant limitée à 10 % du nominal.",
+        "Inexact : la subsistance de Pradel comme filiale décrit une prise de participation ou un apport de titres, non une fusion.",
+        "Exact : dissolution sans liquidation, transmission universelle du patrimoine à Lunel ; les associés de Pradel reçoivent des titres de Lunel.",
+        "Inexact : l'option nie la transmission universelle ; aucune cession bien par bien, et les dettes passent à l'absorbante."
+      ],
       "explanation": "La fusion entraîne la dissolution sans liquidation de la société absorbée et la transmission universelle de son patrimoine (actifs, dettes, contrats) à l'absorbante ; les associés de l'absorbée reçoivent des titres de l'absorbante (option 3). Il n'y a pas de liquidation ni de boni en numéraire (option 1) : la soulte éventuelle est limitée à 10 % de la valeur nominale des titres attribués. L'option 2 décrit une prise de participation, voire un apport de titres, pas une fusion. L'option 4 nie la transmission universelle : aucune cession bien par bien n'est nécessaire et les dettes passent à l'absorbante.",
       "source_ref": "C. com. art. L. 236-1 et s. (rédaction issue de l'ordonnance n° 2023-393 du 24 mai 2023) : définition et effets de la fusion",
       "verified": true,
@@ -51,6 +57,12 @@
         0
       ],
       "multiple": false,
+      "option_explanations": [
+        "Exact : opposition dans les 30 jours, sans effet suspensif ; le tribunal ordonne remboursement ou garanties, ou rejette (L. 236-15, R. 236-11).",
+        "Inexact : la fusion n'exige aucun accord unanime des créanciers ; ils disposent seulement d'un droit d'opposition.",
+        "Inexact : l'opposition des créanciers non obligataires n'a pas d'effet suspensif ; la créance est de toute façon transmise à l'absorbante.",
+        "Inexact : les créanciers ordinaires sont protégés par l'opposition ; les obligataires ont seulement un régime propre (L. 236-14)."
+      ],
       "explanation": "Les créanciers non obligataires des sociétés participantes, dont la créance est antérieure à la publicité du projet de fusion, peuvent former opposition dans un délai de 30 jours. Cette opposition n'a pas d'effet suspensif : le tribunal la rejette ou ordonne le remboursement des créances ou la constitution de garanties (option 1). Aucun accord unanime des créanciers n'est requis (option 2). L'opposition ne suspend pas l'opération (option 3) ; la créance est de toute façon transmise à l'absorbante. Les créanciers ordinaires sont protégés, pas seulement les obligataires (option 4), qui disposent d'un régime propre (assemblée des obligataires de l'absorbée).",
       "source_ref": "C. com. art. L. 236-15 (opposition des créanciers non obligataires, sans effet suspensif, rédaction issue de l'ordonnance n° 2023-393) et R. 236-11 (délai de 30 jours à compter de la dernière publicité) ; art. L. 236-14 (obligataires de l'absorbée)",
       "verified": true,
@@ -195,6 +207,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : la majorité de l'AGE est la règle ordinaire, écartée ici parce que l'opération alourdit les engagements des associés.",
+        "Inexact : les créanciers ne consentent pas à la fusion ; les non obligataires disposent seulement d'un droit d'opposition non suspensif.",
+        "Inexact : le commissaire à la fusion se prononce sur le caractère équitable de la parité ; il ne remplace pas la décision des associés.",
+        "Exact : devenir associé de SNC rend la responsabilité indéfinie et solidaire ; l'augmentation des engagements exige l'unanimité (L. 236-5 ; C. civ. 1836)."
+      ],
       "explanation": "La fusion est en principe approuvée par l'assemblée extraordinaire de chaque société participante, aux conditions de majorité requises pour modifier ses statuts. Mais une opération qui augmente les engagements des associés ne peut être décidée qu'à l'unanimité de ces associés (C. civ. art. 1836, al. 2, règle reprise par le Code de commerce pour les fusions) : en devenant associés d'une SNC, les actionnaires de Corbières passent d'une responsabilité limitée à leurs apports à une responsabilité indéfinie et solidaire. L'option 4 est donc exacte.\nL'option 1 décrit la règle ordinaire, écartée ici parce que l'opération alourdit les engagements des associés. L'option 2 est fausse : les créanciers ne consentent pas à la fusion ; les créanciers non obligataires disposent seulement d'un droit d'opposition, sans effet suspensif. L'option 3 est fausse : le commissaire à la fusion se prononce sur le caractère équitable de la parité, il ne remplace pas la décision des associés.",
       "source_ref": "C. com. art. L. 236-2 (approbation par chaque société participante dans les conditions requises pour la modification des statuts) et L. 236-5 (unanimité des associés dont les engagements sont augmentés), rédaction issue de l'ordonnance n° 2023-393 ; L. 236-15 (opposition des créanciers) ; C. civ. art. 1836, al. 2 (unanimité pour augmenter les engagements d'un associé)",
       "verified": true,

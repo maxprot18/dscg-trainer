@@ -23,6 +23,12 @@
         0
       ],
       "multiple": false,
+      "option_explanations": [
+        "Exact : la garantie autonome est indépendante du marché ; le garant paie, sauf abus ou fraude manifestes du bénéficiaire ou collusion (art. 2321).",
+        "Inexact : opposer les exceptions du débiteur est propre au cautionnement, engagement accessoire, non à la garantie autonome.",
+        "Inexact : le bénéfice de discussion est propre à la caution simple ; il n'existe pas dans la garantie autonome.",
+        "Inexact : la mention manuscrite est exigée de la caution personne physique (art. 2297) ; ici, une banque souscrit une garantie autonome."
+      ],
       "explanation": "La garantie autonome est indépendante de l'obligation garantie : le garant ne peut opposer aucune exception tenant à cette obligation et n'est libéré qu'en cas d'abus ou de fraude manifestes du bénéficiaire ou de collusion de celui-ci avec le donneur d'ordre (C. civ. art. 2321) : option 1. L'option 2 décrit le cautionnement, engagement accessoire. L'option 3 vise le bénéfice de discussion, propre à la caution simple. L'option 4 transpose à tort la mention exigée de la caution personne physique (art. 2297) : ici, le garant est une banque et l'engagement n'est pas un cautionnement.",
       "source_ref": "C. civ. art. 2321 (garantie autonome) ; art. 2288 et 2297 (cautionnement)",
       "verified": true,
@@ -51,6 +57,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : le défaut d'information n'entraîne pas la nullité ; la caution reste tenue du principal.",
+        "Inexact : la réduction de l'engagement aux biens et revenus de la caution sanctionne la disproportion manifeste (art. 2300), non le défaut d'information.",
+        "Inexact : l'information annuelle est due à toute caution personne physique, comme M. Vidal (art. 2302) ; elle n'est pas réservée aux personnes morales.",
+        "Exact : faute d'information annuelle, le créancier perd les intérêts et pénalités échus entre les deux informations ; le principal reste dû (art. 2302)."
+      ],
       "explanation": "Le créancier professionnel doit, avant le 31 mars de chaque année, informer la caution personne physique du montant de la dette (principal, intérêts, accessoires) au 31 décembre précédent ; à défaut, il est déchu de la garantie des intérêts et pénalités échus depuis la précédente information jusqu'à celle de la nouvelle information (C. civ. art. 2302) : option 4. Le principal reste dû : la nullité totale (option 1) est hors de propos. L'option 2 est la sanction de la disproportion manifeste (art. 2300), non du défaut d'information. L'option 3 inverse le champ : l'obligation protège précisément la caution personne physique.",
       "source_ref": "C. civ. art. 2302 (information annuelle de la caution, ordonnance n° 2021-1192)",
       "verified": true,
@@ -194,6 +206,12 @@
         0
       ],
       "multiple": false,
+      "option_explanations": [
+        "Exact : dans une SA non bancaire, une caution au profit d'un tiers non autorisée par le conseil est inopposable à la société (L225-35, al. 4).",
+        "Inexact : les pouvoirs du directeur général s'exercent sous réserve de ceux que la loi attribue au conseil, dont l'autorisation des cautions.",
+        "Inexact : l'autorisation des cautions, avals et garanties relève du conseil d'administration, non de l'assemblée générale extraordinaire.",
+        "Inexact : la loi ne substitue pas le dirigeant à la société ; sa responsabilité ne peut être recherchée que sur le terrain de la faute."
+      ],
       "explanation": "Dans une SA autre qu'un établissement bancaire ou financier, les cautions, avals et garanties donnés au profit de tiers doivent être autorisés par le conseil d'administration (C. com. art. L225-35, al. 4), le cas échéant dans une limite globale annuelle. À défaut, l'engagement est inopposable à la société : option 1. L'option 2 oublie que ces pouvoirs du directeur général s'exercent sous réserve de ceux que la loi attribue au conseil. L'option 3 est fausse : l'autorisation relève du conseil, non de l'AGE. L'option 4 invente une substitution : la loi ne transforme pas l'engagement de la société en engagement personnel du dirigeant (sa responsabilité ne peut être recherchée que sur le terrain de la faute).",
       "source_ref": "C. com. art. L225-35, al. 4 (autorisation des cautions, avals et garanties par le conseil d'administration) ; art. L225-56 (pouvoirs du directeur général)",
       "verified": true,

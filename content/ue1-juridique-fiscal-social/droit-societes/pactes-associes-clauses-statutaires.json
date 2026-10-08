@@ -17,6 +17,12 @@
       ],
       "answer": [2],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : cinq ans est une durée possible, mais le maximum légal est de dix ans (L227-13).",
+        "Inexact : quinze ans dépasse le plafond légal de dix ans fixé par l'article L227-13.",
+        "Exact : les statuts de SAS peuvent prévoir l'inaliénabilité des actions pour dix ans au plus (L227-13).",
+        "Inexact : la durée de la société dépasse le plafond de dix ans ; une telle inaliénabilité porterait une atteinte excessive au droit de propriété."
+      ],
       "explanation": "Les statuts de la SAS peuvent prévoir l'inaliénabilité des actions pour une durée n'excédant pas dix ans (C. com. art. L227-13) : option 3. Cinq ans (option 1) est une durée possible mais pas le maximum légal. Quinze ans (option 2) et la durée de la société (option 4) dépassent le plafond : une inaliénabilité trop longue porterait une atteinte excessive au droit de propriété.",
       "source_ref": "C. com. art. L227-13",
       "verified": true,
@@ -39,6 +45,12 @@
       ],
       "answer": [3],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : les seuls dommages-intérêts sanctionnent en principe la violation d'un pacte extrastatutaire, non d'une clause statutaire de SAS.",
+        "Inexact : une inopposabilité temporaire de dix ans n'existe pas ; la loi prévoit la nullité de la cession.",
+        "Inexact : la bonne foi du cessionnaire est indifférente ; les statuts publiés lui sont opposables.",
+        "Exact : toute cession effectuée en violation d'une clause statutaire d'agrément est nulle (L227-15)."
+      ],
       "explanation": "Toute cession effectuée en violation des clauses statutaires (inaliénabilité, agrément…) est nulle (C. com. art. L227-15) : option 4. L'allocation de seuls dommages-intérêts (option 1) est la sanction de principe de la violation d'un pacte extrastatutaire, pas d'une clause statutaire de SAS. L'inopposabilité temporaire (option 2) n'existe pas. La bonne foi du cessionnaire (option 3) est indifférente : les statuts publiés lui sont opposables.",
       "source_ref": "C. com. art. L227-14 et L227-15",
       "verified": true,

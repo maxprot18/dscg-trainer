@@ -22,6 +22,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : 10 % correspond à la participation en droit des sociétés (L233-2), sans lien avec le régime fiscal.",
+        "Inexact : 50 % correspond à la qualité de filiale en droit des sociétés (L233-1).",
+        "Exact : le régime des sociétés mères s'applique aux titres représentant au moins 5 % du capital (CGI art. 145, 1, b).",
+        "Inexact : 95 % est le seuil de l'intégration fiscale (CGI art. 223 A)."
+      ],
       "explanation": "Le régime des sociétés mères s'applique aux titres représentant au moins 5 % du capital de la société émettrice (CGI art. 145, 1, b) : option 3.\nL'option 1 (10 %) correspond à la définition d'une participation en droit des sociétés (C. com. L233-2), sans lien avec le régime fiscal.\nL'option 2 (50 %) correspond à la qualité de filiale en droit des sociétés (L233-1).\nL'option 4 (95 %) est le seuil de l'intégration fiscale (CGI art. 223 A).",
       "source_ref": "CGI art. 145, 1, b (détention d'au moins 5 % du capital)",
       "estimated_seconds": 45
@@ -48,6 +54,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : 40 000 € applique le taux de droit commun de 5 %, ramené à 1 % au sein d'un groupe intégré.",
+        "Exact : entre sociétés d'un même groupe intégré, la quote-part est de 1 % : 800 000 × 1 % = 8 000 € (CGI art. 216, I).",
+        "Inexact : la neutralisation totale de la quote-part a été remplacée par le taux de 1 % pour les exercices ouverts depuis le 1er janvier 2016.",
+        "Inexact : 96 000 € applique le taux de 12 %, propre aux plus-values de cession de titres de participation (art. 219, I, a quinquies)."
       ],
       "explanation": "La quote-part de frais et charges est en principe de 5 % du produit des participations, mais elle est ramenée à 1 % pour les dividendes perçus par une société d'un groupe intégré d'une société membre du même groupe (CGI art. 216, I) : 800 000 × 1 % = 8 000 € (option 2).\nL'option 1 applique le taux de droit commun de 5 %.\nL'option 3 correspond à l'ancienne neutralisation totale de la quote-part dans le résultat d'ensemble, remplacée par le taux de 1 % depuis les exercices ouverts à compter du 1er janvier 2016.\nL'option 4 applique le taux de 12 %, propre aux plus-values de cession de titres de participation (CGI art. 219, I, a quinquies).",
       "source_ref": "CGI art. 216, I (quote-part de 5 % ramenée à 1 % pour les produits de participation entre sociétés d'un même groupe intégré)",
@@ -199,6 +211,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : la cession avant deux ans rompt l'engagement de conservation, et le taux de 0 % suppose deux ans de détention.",
+        "Inexact : le reversement est exact, mais le taux de 0 % exige une détention d'au moins deux ans, non atteinte ici.",
+        "Inexact : procédure inexacte ; Ocre verse spontanément l'IS dans les trois mois, avec intérêt de retard, sans déclaration rectificative.",
+        "Exact : cession après 18 mois : reversement de l'IS économisé avec intérêt de retard (art. 145, 1, c) ; plus-value au taux normal."
+      ],
       "explanation": "Le régime mère-fille s'applique dès la première distribution sous réserve de l'engagement de conserver les titres deux ans. En cas de cession avant ce délai (ici 18 mois), la mère verse au Trésor, dans les trois mois suivant la cession, une somme égale à l'impôt dont elle a été indûment exonérée, majorée de l'intérêt de retard (CGI art. 145, 1, c). Par ailleurs, le taux de 0 % des plus-values sur titres de participation suppose une détention d'au moins deux ans (art. 219, I, a quinquies) : la plus-value de 80 000 € est imposée au taux normal. Seule l'option 4 réunit ces deux conséquences. L'option 1 ignore la rupture de l'engagement de conservation et la condition de durée du taux de 0 %. L'option 2 accorde à tort le taux de 0 %. L'option 3 décrit une procédure inexacte : il s'agit d'un versement spontané dans les trois mois, avec intérêt de retard.",
       "source_ref": "CGI art. 145, 1, c (conservation des titres pendant deux ans, reversement dans les trois mois) ; art. 219, I, a quinquies (plus-values sur titres de participation détenus depuis au moins deux ans)",
       "verified": true,

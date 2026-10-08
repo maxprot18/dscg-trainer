@@ -23,6 +23,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : s'aligner seul sur des prix publics relève du parallélisme de comportement, licite en l'absence de concertation.",
+        "Inexact : gagner des parts de marché grâce à un produit plus performant est la concurrence par les mérites.",
+        "Inexact : un refus de vente justifié par un motif objectif n'est pas une entente, qui suppose un concours de volontés.",
+        "Exact : échanger des informations sur les prix futurs réduit l'incertitude entre concurrents : pratique concertée à objet anticoncurrentiel (L. 420-1 ; TFUE 101)."
+      ],
       "explanation": "L'échange entre concurrents d'informations sur leurs prix futurs réduit l'incertitude sur le comportement de chacun et constitue une pratique concertée ayant un objet anticoncurrentiel (C. com. art. L. 420-1 ; TFUE art. 101) : option 4. S'aligner unilatéralement sur des prix publics (option 1) relève du parallélisme de comportement, licite en l'absence de concertation. Gagner des parts de marché par l'innovation (option 2) est la concurrence par les mérites. Un refus de vente justifié par un motif objectif (option 3) n'est pas une entente, qui suppose un concours de volontés.",
       "source_ref": "C. com. art. L. 420-1 ; TFUE art. 101 § 1 (ententes)",
       "verified": true,
@@ -51,6 +57,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : il n'existe pas de notification préalable des ententes ; l'entreprise prouve les conditions de l'exemption en cas de poursuite.",
+        "Exact : quatre conditions cumulatives : progrès économique, part équitable aux utilisateurs, restrictions indispensables, concurrence non éliminée (L. 420-4 ; TFUE 101 § 3).",
+        "Inexact : aucun seuil de part de marché de 50 % ne vaut exemption individuelle.",
+        "Inexact : la loi vise l'objet ou l'effet ; une entente à objet anticoncurrentiel est prohibée même sans effet démontré."
+      ],
       "explanation": "L'exemption individuelle (C. com. art. L. 420-4, I, 2° ; TFUE art. 101 § 3) suppose la réunion de quatre conditions cumulatives : progrès économique, partie équitable du profit aux utilisateurs, restrictions indispensables, absence d'élimination de la concurrence pour une partie substantielle des produits (option 2). Il n'existe pas de procédure de notification préalable des ententes (option 1) : c'est l'entreprise qui doit prouver, en cas de poursuite, qu'elle remplit les conditions. Aucun seuil de 50 % ne vaut exemption (option 3). Une entente ayant un objet anticoncurrentiel est prohibée même sans effet démontré (option 4), la loi visant l'objet ou l'effet.",
       "source_ref": "C. com. art. L. 420-4 (exemption) ; TFUE art. 101 § 3",
       "verified": true,
@@ -194,6 +206,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : l'abus de position dominante est une pratique unilatérale, sanctionnée sans concertation entre entreprises (L. 420-2, al. 1).",
+        "Inexact : une forte part de marché acquise par les mérites n'est pas fautive ; seul l'abus de position dominante est interdit.",
+        "Exact : Hydrolis est dominante ; son rabais de fidélité tend à évincer les concurrents, comme le montre le déréférencement (L. 420-2 ; TFUE 102).",
+        "Inexact : l'abus de dépendance économique vise l'exploitation d'un partenaire ; ici l'atteinte porte sur le marché, et rien n'établit l'absence de solution équivalente."
+      ],
       "explanation": "Avec 65 % du marché face à des concurrents beaucoup plus petits, Hydrolis peut se comporter de façon indépendante : elle est en position dominante. Cette position n'est pas interdite ; seul son abus l'est (C. com. art. L. 420-2, al. 1 ; TFUE art. 102). Un rabais subordonné à l'exclusivité ou à la quasi-exclusivité des achats (rabais de fidélité) s'écarte de la concurrence par les mérites lorsqu'il est de nature à évincer les concurrents, ce que l'autorité vérifie au cas par cas : ici, le déréférencement de leurs produits montre l'effet de fermeture du marché. L'option 3 est exacte.\nL'option 1 est fausse : l'abus de position dominante est une pratique unilatérale, sanctionnée sans concertation. L'option 2 est fausse : la détention d'une forte part de marché, acquise par les mérites, n'est pas fautive. L'option 4 est fausse : l'abus de dépendance économique (L. 420-2, al. 2) vise l'exploitation d'un partenaire sans solution équivalente et ne suppose pas de position dominante ; ici, l'atteinte porte sur le marché par l'éviction des concurrents, ce qui caractérise l'abus de position dominante, et rien n'établit l'absence de solution équivalente pour les distributeurs.",
       "source_ref": "C. com. art. L. 420-2, al. 1 et 2 ; TFUE art. 102 ; C. com. art. L. 464-2 (sanctions)",
       "verified": true,

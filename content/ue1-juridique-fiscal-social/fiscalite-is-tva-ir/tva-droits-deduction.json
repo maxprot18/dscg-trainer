@@ -45,6 +45,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : 8 000 € n'applique que le coefficient d'assujettissement (0,80), sans le coefficient de taxation.",
+        "Inexact : 7 500 € n'applique que le coefficient de taxation (0,75), sans le coefficient d'assujettissement.",
+        "Exact : coefficient de déduction 0,80 × 0,75 × 1 = 0,60 ; TVA déductible 10 000 × 0,60 = 6 000 € (CGI ann. II art. 206).",
+        "Inexact : la déduction intégrale ignore l'usage hors champ et les opérations n'ouvrant pas droit à déduction."
+      ],
       "explanation": "Le coefficient de déduction est le produit des coefficients d'assujettissement, de taxation et d'admission (CGI ann. II art. 206) : 0,80 × 0,75 × 1 = 0,60. TVA déductible = 10 000 × 0,60 = 6 000 € : option 3.\nL'option 1 n'applique que le coefficient d'assujettissement.\nL'option 2 n'applique que le coefficient de taxation.\nL'option 4 suppose un droit à déduction intégral, alors que le bien sert en partie à des activités hors champ et à des opérations n'ouvrant pas droit à déduction.",
       "source_ref": "CGI ann. II art. 205 et 206 (coefficient de déduction = assujettissement × taxation × admission)",
       "verified": true,
@@ -71,6 +77,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : les voitures particulières sont exclues du droit à déduction, sauf exceptions ; leur coefficient d'admission est nul.",
+        "Inexact : le carburant des véhicules de tourisme n'est déductible qu'à 80 %, non intégralement.",
+        "Inexact : les services de transport de personnes sont exclus du droit à déduction (CGI ann. II art. 206, IV).",
+        "Exact : un véhicule utilitaire affecté à l'activité taxable ouvre droit à déduction intégrale."
       ],
       "explanation": "L'option 4 est la bonne : un véhicule utilitaire affecté à l'activité taxable ouvre droit à déduction intégrale.\nL'option 1 est fausse : les véhicules conçus pour transporter des personnes (voitures particulières) sont exclus du droit à déduction, sauf exceptions (activité de transport, auto-école, location…) ; leur coefficient d'admission est nul.\nL'option 2 est fausse : le carburant (gazole ou essence) des véhicules de tourisme n'est déductible qu'à 80 %.\nL'option 3 est fausse : les services de transport de personnes sont exclus du droit à déduction (CGI ann. II art. 206, IV).",
       "source_ref": "CGI ann. II art. 206, IV (exclusions du droit à déduction : véhicules de transport de personnes, services de transport de personnes) ; CGI art. 298, 4 (carburants)",
@@ -206,6 +218,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : l'option ignore la faculté de rattraper une déduction omise sur une déclaration ultérieure (CGI ann. II art. 208).",
+        "Inexact : le délai de rattrapage court jusqu'au 31 décembre de la deuxième année suivant l'omission, non de la première.",
+        "Exact : omission de 2024, mention distincte sur une déclaration déposée avant le 31 décembre 2026 (CGI ann. II art. 208).",
+        "Inexact : la TVA reste récupérable, et une TVA récupérable n'a pas à être portée en charges."
+      ],
       "explanation": "La déduction s'opère en principe sur la déclaration du mois où le droit est né, mais une omission peut être réparée, par une mention distincte, sur les déclarations ultérieures déposées avant le 31 décembre de la deuxième année qui suit celle de l'omission (CGI ann. II art. 208) : omission de 2024, régularisation possible sur une déclaration déposée avant le 31 décembre 2026 : option 3. L'option 1 ignore cette faculté de rattrapage. L'option 2 retient un délai d'un an au lieu de deux. L'option 4 est fausse : la TVA reste récupérable, et une TVA récupérable n'a pas à être portée en charges.",
       "source_ref": "CGI ann. II art. 208 (mention de la TVA omise déposée avant le 31 décembre de la deuxième année suivant celle de l'omission) ; CGI art. 271 (droit à déduction)",
       "verified": true,

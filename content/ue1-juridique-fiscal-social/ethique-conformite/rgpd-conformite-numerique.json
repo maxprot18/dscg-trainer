@@ -23,6 +23,12 @@
         0
       ],
       "multiple": false,
+      "option_explanations": [
+        "Exact : notification à la CNIL dans les meilleurs délais et, si possible, 72 heures au plus tard après la prise de connaissance (RGPD art. 33).",
+        "Inexact : le délai d'un mois est celui de la réponse aux demandes d'exercice des droits (art. 12), non de la notification d'une violation.",
+        "Inexact : un délai de 15 jours ouvrés n'existe pas ; la notification intervient si possible dans les 72 heures.",
+        "Inexact : le RGPD ne prévoit aucune dispense de notification liée à l'effectif de l'entreprise."
+      ],
       "explanation": "Le responsable du traitement notifie la violation à l'autorité de contrôle dans les meilleurs délais et, si possible, 72 heures au plus tard après en avoir pris connaissance, sauf si la violation n'est pas susceptible d'engendrer un risque pour les droits et libertés des personnes (RGPD art. 33) : option 1. Le délai d'un mois (option 2) est celui de la réponse aux demandes d'exercice des droits (art. 12). Le délai de 15 jours (option 3) n'existe pas. Aucune dispense liée à l'effectif n'est prévue (option 4). Le vol de coordonnées bancaires présentant un risque élevé, les clients doivent aussi être informés (art. 34).",
       "source_ref": "Règlement (UE) 2016/679, art. 33 et 34",
       "estimated_seconds": 45,
@@ -96,6 +102,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : le consentement doit être libre et révocable ; or le salarié, subordonné, ne peut pas s'opposer à la DSN.",
+        "Inexact : l'intérêt légitime ne se justifie pas lorsqu'une obligation légale fonde déjà le traitement.",
+        "Exact : la DSN est imposée par la loi ; le traitement est nécessaire au respect d'une obligation légale (RGPD art. 6, §1, c).",
+        "Inexact : les intérêts vitaux visent les situations où la vie de la personne est en jeu, sans rapport avec la DSN."
+      ],
       "explanation": "La DSN est imposée par la loi (Code de la sécurité sociale) : le traitement est nécessaire au respect d'une obligation légale à laquelle le responsable est soumis (RGPD art. 6, §1, c) : option 3. Le consentement (option 1) est inadapté, car il doit être libre et révocable alors que le salarié ne peut pas s'opposer à la déclaration et se trouve en situation de subordination. L'intérêt légitime (option 2) ne se justifie pas lorsqu'une obligation légale fonde le traitement. Les intérêts vitaux (option 4) visent les situations où la vie de la personne est en jeu.",
       "source_ref": "Règlement (UE) 2016/679, art. 6, §1, et art. 7",
       "estimated_seconds": 60,
@@ -124,6 +136,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : confusion avec le délai de notification d'une violation de données à la CNIL (72 heures, art. 33).",
+        "Inexact : le délai de principe est d'un mois, et une prorogation de deux mois est possible (art. 12 §3).",
+        "Inexact : l'obligation de répondre naît de la demande elle-même (art. 15) ; la CNIL n'intervient qu'en cas de plainte.",
+        "Exact : réponse au plus tard dans un mois, prorogeable de deux mois selon la complexité et le nombre de demandes (RGPD art. 12 §3)."
+      ],
       "explanation": "Le responsable de traitement répond aux demandes d'exercice des droits (accès, rectification, effacement, opposition…) dans les meilleurs délais et au plus tard dans un délai d'un mois à compter de leur réception ; ce délai peut être prolongé de deux mois, compte tenu de la complexité et du nombre de demandes, la personne étant informée de la prolongation et de ses motifs dans le premier mois (RGPD art. 12 §3) : option 4.\nL'option 1 confond avec le délai de notification d'une violation de données à la CNIL (72 heures, art. 33). L'option 2 est fausse : le délai de principe est d'un mois et la prorogation est possible. L'option 3 est fausse : l'obligation de répondre naît de la demande elle-même (art. 15) ; la CNIL n'intervient qu'en cas de plainte.",
       "source_ref": "Règl. (UE) 2016/679 (RGPD) art. 12 §3 (délai de réponse) et art. 15 (droit d’accès)",
       "verified": true,

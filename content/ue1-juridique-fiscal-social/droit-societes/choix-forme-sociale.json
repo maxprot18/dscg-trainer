@@ -17,6 +17,12 @@
       ],
       "answer": [2],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : le conseil d'administration est un organe de la SA ; une SAS peut en créer un par ses statuts, sans obligation légale.",
+        "Inexact : le directeur général est facultatif en SAS ; les statuts peuvent en prévoir un, la loi ne l'impose pas.",
+        "Exact : la loi impose seulement un président, personne physique ou morale, qui représente la SAS à l'égard des tiers (L227-6).",
+        "Inexact : directoire et conseil de surveillance sont des organes de la SA, non imposés par la loi à la SAS."
+      ],
       "explanation": "La SAS est représentée à l'égard des tiers par un président désigné dans les conditions prévues par les statuts (C. com. art. L227-6) ; il peut être une personne physique ou une personne morale (option 3). Le conseil d'administration (option 1) et le couple directoire / conseil de surveillance (option 4) sont les organes de la SA ; une SAS peut créer des organes collégiaux par ses statuts, mais la loi ne les impose pas. Un directeur général (option 2) est facultatif : les statuts peuvent en prévoir un, sans obligation.",
       "source_ref": "C. com. art. L227-5 (organisation fixée par les statuts) et L227-6 (président)",
       "verified": true,
@@ -55,6 +61,12 @@
       ],
       "answer": [3],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : le quorum d'un quart est celui de l'AGE sur première convocation ; sur deuxième, il est d'un cinquième.",
+        "Inexact : absence de quorum et majorité des voix exprimées sont les règles de l'AGO sur deuxième convocation (L225-98).",
+        "Inexact : l'option mélange le quorum d'AGE sur deuxième convocation et la majorité d'AGO ; l'AGE statue aux deux tiers.",
+        "Exact : sur deuxième convocation, l'AGE exige un quorum d'un cinquième et statue à la majorité des deux tiers des voix exprimées (L225-96)."
+      ],
       "explanation": "L'AGE ne délibère valablement que si les actionnaires présents ou représentés possèdent au moins le quart des actions ayant droit de vote sur première convocation et le cinquième sur deuxième convocation ; elle statue à la majorité des deux tiers des voix exprimées (C. com. art. L225-96) : option 4. L'option 1 reprend le quorum de première convocation. L'option 2 correspond à l'AGO sur deuxième convocation (aucun quorum, majorité des voix exprimées, art. L225-98). L'option 3 mélange le quorum d'AGE et la majorité d'AGO.",
       "source_ref": "C. com. art. L225-96 (AGE) ; art. L225-98 (AGO, pour comparaison)",
       "verified": true,

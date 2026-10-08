@@ -23,6 +23,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : un délai de 30 jours à compter de l'acte ne correspond pas au texte ; l'opposition court de la publication au BODACC.",
+        "Inexact : un délai de 3 mois de l'entrée en jouissance ne correspond pas au texte ; il est de 10 jours de la publication au BODACC.",
+        "Exact : les créanciers du vendeur forment opposition dans les 10 jours de la publication de la vente au BODACC (L. 141-14).",
+        "Inexact : l'option nie le droit d'opposition, précisément conçu pour protéger les créanciers du cédant."
+      ],
       "explanation": "Les créanciers du vendeur peuvent former opposition au paiement du prix dans les 10 jours qui suivent la publication de la vente au BODACC (option 3). C'est pourquoi le prix est en pratique séquestré : l'acquéreur qui paie le vendeur sans tenir compte des oppositions s'expose à payer une seconde fois. Les délais de 30 jours (option 1) et de 3 mois (option 2) ne correspondent pas au texte ; l'option 4 nie le droit d'opposition, qui est précisément la protection des créanciers du cédant.",
       "source_ref": "C. com. art. L. 141-12 à L. 141-14 (publicité de la vente et opposition des créanciers)",
       "verified": true,
@@ -52,6 +58,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : 3 % est le taux des parts sociales ; les actions de SAS sont taxées à 0,1 %, soit 600 €.",
+        "Exact : parts de SARL : 3 % après abattement de 23 000 € proratisé : 3 % × (600 000 − 11 500) = 17 655 € (CGI art. 726).",
+        "Inexact : la nature des titres, actions ou parts sociales, détermine le taux des droits d'enregistrement.",
+        "Inexact : aucune exonération ne s'attache à une cession partielle des parts sociales."
+      ],
       "explanation": "Les cessions de parts sociales (SARL) sont taxées à 3 % après un abattement de 23 000 € proratisé selon la fraction du capital cédée (CGI art. 726) : 3 % × (600 000 − 11 500) = 17 655 € (option 2). Pour des actions de SAS, le taux est de 0,1 %, soit 600 € (l'option 1 applique à tort le taux des parts sociales). L'option 3 est donc fausse : la nature des titres (actions ou parts) détermine le taux. Aucune exonération ne s'attache à une cession partielle (option 4).",
       "source_ref": "CGI art. 726 (droits sur les cessions de droits sociaux)",
       "verified": true,
@@ -244,6 +256,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : double erreur ; garantie de valeur due à l'acquéreur, et le seuil franchi n'est pas une franchise : 80 000 € sont dus.",
+        "Inexact : traiter le seuil comme une franchise (80 000 − 50 000) est faux ; une fois le seuil franchi, tout le passif est indemnisé.",
+        "Inexact : verser l'indemnité à la cible correspond à une garantie de passif stricto sensu, non à la garantie de valeur stipulée.",
+        "Exact : garantie de valeur : indemnité due à Kerlan en réduction du prix ; seuil franchi, totalité des 80 000 € sous le plafond."
+      ],
       "explanation": "Dans une garantie de valeur, l'indemnité est due à l'acquéreur des titres (Kerlan) et s'analyse en une réduction du prix ; dans une garantie de passif au sens strict, elle est versée à la société cible (Tregor). Le passif de 80 000 € a une cause antérieure à la cession et dépasse le seuil de déclenchement de 50 000 € : une fois le seuil franchi, la totalité du passif est indemnisée, dans la limite du plafond (1 500 000 €, non atteint). Indemnité : 80 000 € versés à Kerlan (option 4).\nL'option 2 traite le seuil comme une franchise (80 000 − 50 000 = 30 000 €) : seule une franchise laisse sa fraction à la charge de l'acquéreur. Les options 1 et 3 désignent la société cible comme bénéficiaire, ce qui correspond à une garantie de passif stricto sensu et non à la garantie de valeur stipulée ; l'option 1 commet en outre l'erreur sur le seuil.",
       "source_ref": "Garantie conventionnelle (C. civ. art. 1103, force obligatoire du contrat) ; garanties légales insuffisantes pour l'acquéreur de titres (C. civ. art. 1641)",
       "verified": true,

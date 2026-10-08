@@ -23,6 +23,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : les difficultés économiques sont expressément visées par l'article L1233-3 comme cause de licenciement économique.",
+        "Exact : rechercher une rentabilité accrue sans difficultés ni menace sur la compétitivité n'est pas un motif économique ; le licenciement serait sans cause réelle et sérieuse.",
+        "Inexact : la réorganisation nécessaire à la sauvegarde de la compétitivité figure parmi les motifs économiques de l'article L1233-3.",
+        "Inexact : la cessation d'activité de l'entreprise est l'un des motifs économiques prévus par l'article L1233-3."
+      ],
       "explanation": "L'article L1233-3 vise notamment les difficultés économiques (option 1), les mutations technologiques, la réorganisation nécessaire à la sauvegarde de la compétitivité (option 3) et la cessation d'activité (option 4). La recherche d'une rentabilité accrue dans une entreprise qui ne connaît ni difficultés ni menace sur sa compétitivité (option 2) n'est pas un motif économique : un licenciement fondé sur ce seul objectif serait dépourvu de cause réelle et sérieuse.",
       "source_ref": "C. trav. art. L1233-3",
       "estimated_seconds": 45
@@ -51,6 +57,12 @@
         0
       ],
       "multiple": false,
+      "option_explanations": [
+        "Exact : les deux seuils sont atteints, au moins 50 salariés et au moins 10 licenciements économiques sur 30 jours.",
+        "Inexact : avec 45 salariés, l'entreprise est sous le seuil de 50 ; pas de PSE, quel que soit le nombre de licenciements.",
+        "Inexact : 8 licenciements restent sous le seuil de 10 licenciements sur 30 jours qui déclenche le PSE.",
+        "Inexact : des ruptures conventionnelles individuelles hors contexte économique ne sont pas des licenciements économiques et ne déclenchent pas le PSE."
+      ],
       "explanation": "Le PSE est obligatoire dans les entreprises d'au moins 50 salariés lorsque le projet porte sur au moins 10 licenciements sur une même période de 30 jours : les deux seuils sont atteints dans l'option 1. Dans l'option 2, l'entreprise compte moins de 50 salariés : pas de PSE, malgré le nombre de licenciements. Dans l'option 3, le nombre de licenciements (8) est inférieur à 10. Dans l'option 4, il ne s'agit pas de licenciements pour motif économique, et des ruptures conventionnelles individuelles conclues hors contexte économique ne déclenchent pas l'obligation.",
       "source_ref": "C. trav. art. L1233-61",
       "estimated_seconds": 60

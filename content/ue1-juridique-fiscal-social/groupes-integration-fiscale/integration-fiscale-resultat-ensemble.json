@@ -23,6 +23,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : confusion avec les déficits nés pendant l'intégration ; les déficits antérieurs ne s'imputent pas sur le résultat d'ensemble.",
+        "Inexact : l'entrée dans le groupe ne fait pas perdre les déficits antérieurs, qui restent reportables.",
+        "Exact : les déficits antérieurs ne s'imputent que sur le bénéfice propre de Quille : 120 000 €, solde de 180 000 € reportable (art. 223 I).",
+        "Inexact : les déficits antérieurs à l'entrée ne sont pas transférés à la société mère."
+      ],
       "explanation": "Les déficits subis par une filiale avant son entrée dans le groupe ne peuvent être imputés que sur son propre bénéfice (CGI art. 223 I) : Quille impute 120 000 € sur son bénéfice de N, qui est donc retenu pour zéro dans le résultat d'ensemble ; le solde de 180 000 € reste reportable sur ses bénéfices ultérieurs (option 3).\nL'option 1 confond avec les déficits nés pendant l'intégration, qui s'imputent sur le résultat d'ensemble.\nL'option 2 est fausse : l'entrée ne fait pas perdre les déficits antérieurs.\nL'option 4 est fausse : il n'y a pas de transfert des déficits antérieurs à la mère.",
       "source_ref": "CGI art. 223 I (imputation des déficits antérieurs à l'entrée sur le seul bénéfice de la société qui les a subis)",
       "estimated_seconds": 75
