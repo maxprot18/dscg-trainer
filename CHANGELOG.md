@@ -1,5 +1,21 @@
 # Journal des versions
 
+## 1.5.0 (octobre 2026)
+
+Finalisation, à la suite de l'audit de la version 1.4.2 (`docs/audit-v3.md`) ; nouvel audit complet dans `docs/audit-v4.md`.
+
+- **Sujet complet** : nouveau mode qui enchaîne des dossiers type d'examen à la durée officielle de l'épreuve (3 ou 4 h), sans correction avant la fin, noté sur 20 et reprenable s'il est interrompu.
+- **20 sujets type d'examen** (dix nouveaux, deux par UE écrite) : transmission Dutreil et fiscalité internationale (UE 1), financement d'une acquisition et trésorerie (UE 2), coûts et ABC, décarbonation et GEPP (UE 3), IFRS d'un groupe et fusion avec mali (UE 4), cybersécurité et DORA, données et IA (UE 5).
+- **Explication de chaque option** des 625 QCM : pourquoi chaque réponse est juste ou fausse, affichée sous l'option après la réponse ; toutes relues de façon indépendante.
+- **Correction guidée des réponses rédigées** : les points clés dont les mots-clés figurent dans la copie sont repérés et pré-cochés ; l'utilisateur garde la main sur son auto-évaluation.
+- **Note prévisionnelle** par UE, tirée des trois derniers examens blancs ou sujets complets (page Progression).
+- **Difficulté adaptative** dans la révision intelligente : le niveau des exercices proposés monte avec la réussite récente sur la notion.
+- **Date de dernière révision** sous chaque fiche de cours.
+- **Contenu vérifié sur les textes officiels** : fiches IFRS détaillées (IAS 2, 8, 12, 16, 19, 36, 37, 38, 40, IFRS 3, 9, 10, 15, 16, information sectorielle), toute l'UE 3 et toute l'UE 6 ; corrections de fond, entre autres sur le bilan d'émissions de gaz à effet de serre (scope 3, R. 229-47), la négociation sur la GEPP, l'affectation du mali technique (PCG 745-5), les amendes RGPD (art. 83), IFRS 18 et ISA 570 révisée.
+- **Performance** : chargement du contenu fichier par fichier (une page d'exercice ne charge que son fichier, une session que le dossier de son thème), plus aucun décalage de mise en page (bandeaux d'installation et de mise à jour flottants) ; Lighthouse mobile 94 à 97 sur les pages principales, session rapide au premier chargement de 14 s à 3 s.
+- **Sécurité** : politique de sécurité du contenu (CSP) en balise meta, fichier de progression importé validé (schéma et taille maximale), liens internes stricts, Zod sans eval, actions GitHub épinglées par empreinte et mises à jour par Dependabot ; CI lancée une seule fois par push.
+- **Accessibilité** : options de QCM et barre d'avancement correctement nommées pour les lecteurs d'écran.
+
 ## 1.4.2 (octobre 2026)
 
 Deuxième série de vérifications sur les textes officiels : tout le reste de l'UE 1, l'audit (démarche, rapport, cycles, durabilité), les SI (UE 5) et les passages normatifs de l'UE 2.
