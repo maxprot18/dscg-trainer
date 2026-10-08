@@ -24,7 +24,7 @@ export function Layout() {
   return (
     <div className="mx-auto flex min-h-dvh max-w-3xl flex-col lg:max-w-5xl">
       <PwaBanner />
-      <header className="flex items-center justify-between px-4 pt-3">
+      <header className="no-print flex items-center justify-between px-4 pt-3">
         <Link to="/" className="text-muted-foreground text-sm font-semibold">
           DSCG Trainer
         </Link>

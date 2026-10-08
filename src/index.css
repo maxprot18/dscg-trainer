@@ -107,7 +107,7 @@
 }
 
 @media print {
-  nav, header, .no-print { display: none !important; }
+  nav, .no-print { display: none !important; }
   main { padding: 0 !important; }
   article { break-inside: avoid; }
   .print-sheet { break-inside: auto; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
