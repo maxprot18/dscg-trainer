@@ -283,7 +283,11 @@ function SessionRunner({
         <span className="font-medium">
           {index + 1} / {exercises.length}
         </span>
-        <Progress value={((index + (answered ? 1 : 0)) / exercises.length) * 100} className="flex-1" />
+        <Progress
+          value={((index + (answered ? 1 : 0)) / exercises.length) * 100}
+          className="flex-1"
+          aria-label="Avancement de la session"
+        />
         <span
           className={remaining !== null && remaining <= 30 ? 'text-destructive font-semibold' : 'text-muted-foreground'}
           aria-label={remaining !== null ? 'Temps restant' : 'Durée de la session'}

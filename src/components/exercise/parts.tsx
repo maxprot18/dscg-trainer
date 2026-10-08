@@ -78,7 +78,8 @@ function ChoiceInput({ part, response, result, active, onSubmit }: PartProps<Cho
           const isSelected = shown.includes(i)
           const isAnswer = part.answer.includes(i)
           return (
-            <li key={i}>
+            // La liste porte le rôle de groupe de choix : ses éléments ne sont pas des éléments de liste.
+            <li key={i} role="none">
               <button
                 type="button"
                 role={part.multiple ? 'checkbox' : 'radio'}
