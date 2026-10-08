@@ -93,7 +93,12 @@ function ChoiceInput({ part, response, result, active, onSubmit }: PartProps<Cho
                 )}
               >
                 <span className="text-muted-foreground mt-0.5 w-4 shrink-0 text-xs font-semibold">{i + 1}</span>
-                <span className="flex-1">{option}</span>
+                <span className="flex-1">
+                  {option}
+                  {done && part.option_explanations?.[i] && (
+                    <span className="text-muted-foreground mt-1 block text-xs">{part.option_explanations[i]}</span>
+                  )}
+                </span>
                 {done && isAnswer && <Check className="size-4 shrink-0 text-emerald-700" aria-label="bonne réponse" />}
                 {done && isSelected && !isAnswer && <X className="size-4 shrink-0 text-red-700" aria-label="mauvaise réponse" />}
               </button>

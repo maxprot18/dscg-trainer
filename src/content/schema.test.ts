@@ -124,6 +124,11 @@ describe('mcq', () => {
       ),
     ).toEqual([])
   })
+
+  it('explications par option : une par option, dans le même ordre', () => {
+    expect(issuesOf(variant('mcq', (e) => (e.option_explanations = ['a', 'b', 'c', 'd'])))).toEqual([])
+    expectIssueAt(variant('mcq', (e) => (e.option_explanations = ['a', 'b'])), 'option_explanations')
+  })
 })
 
 describe('true_false', () => {

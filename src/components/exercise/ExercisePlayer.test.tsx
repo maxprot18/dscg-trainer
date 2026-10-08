@@ -31,6 +31,16 @@ describe('ExercisePlayer', () => {
     expect(onComplete).toHaveBeenCalledWith(expect.objectContaining({ correct: true }), [{ kind: 'choice', selected: [1] }])
   })
 
+  it('QCM : explication de chaque option après la réponse', async () => {
+    const e = { ...ex('mcq'), option_explanations: ['Un seul plan ignore les composants.', 'Approche par composants.', 'Pas de choix.', 'Moyenne interdite.'] }
+    const { user } = setup(e as Exercise)
+    expect(screen.queryByText('Approche par composants.')).not.toBeInTheDocument()
+    await user.click(screen.getAllByRole('radio')[0])
+    await user.click(screen.getByRole('button', { name: 'Valider' }))
+    expect(screen.getByText('Un seul plan ignore les composants.')).toBeInTheDocument()
+    expect(screen.getByText('Approche par composants.')).toBeInTheDocument()
+  })
+
   it('lien « signaler une erreur » vers une issue GitHub pré-remplie, après la correction', async () => {
     const e = ex('mcq')
     const { user } = setup(e)
