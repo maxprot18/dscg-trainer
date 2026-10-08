@@ -23,6 +23,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : le RTO correspond à l'autre contrainte, la demi-journée de coupure acceptable.",
+        "Inexact : le taux de disponibilité contractuel est un engagement d'un prestataire, pas un besoin de continuité exprimé par le métier.",
+        "Inexact : le PUE mesure l'efficacité énergétique d'un centre de données, sans lien avec la continuité.",
+        "Exact : la perte de données maximale admissible, exprimée en temps, est le RPO ; il impose des sauvegardes au moins horaires."
+      ],
       "explanation": "La perte de données maximale admissible, exprimée en temps, est le RPO (option 4) : il impose ici des sauvegardes ou une réplication au moins toutes les heures. L'option 1 correspond à l'autre contrainte (une demi-journée de coupure acceptable). L'option 2 est un engagement de service d'un prestataire, pas un besoin de continuité exprimé par le métier. L'option 3 mesure l'efficacité énergétique d'un centre de données.",
       "source_ref": "ISO 22301 (bilan d’impact sur l’activité) ; définitions du RTO et du RPO",
       "estimated_seconds": 45,
@@ -146,6 +152,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : la PSSI fixe les objectifs et règles de sécurité ; elle ne décrit pas la conduite de l'activité pendant un sinistre.",
+        "Exact : maintenir les activités critiques pendant la crise, en mode dégradé (site de secours, procédures manuelles), relève du PCA.",
+        "Inexact : le PRA vise à rétablir le SI après le sinistre ; le PCA cherche à ne pas s'arrêter, le PRA à redémarrer.",
+        "Inexact : la charte décline les règles de sécurité pour les utilisateurs ; elle n'organise pas la continuité d'activité."
+      ],
       "explanation": "Maintenir les activités critiques pendant la crise, éventuellement en mode dégradé (site de secours, procédures manuelles), relève du plan de continuité d'activité (option 2). Le PRA (option 3) vise à rétablir le SI après le sinistre (restauration, bascule) : le PCA cherche à ne pas s'arrêter, le PRA à redémarrer. La PSSI (option 1) fixe les objectifs et règles de sécurité, et la charte (option 4) décline ces règles pour les utilisateurs : aucune ne décrit la conduite de l'activité pendant un sinistre.",
       "source_ref": "ISO 22301 (management de la continuité d'activité) ; distinction PCA / PRA (fiche « Politique de sécurité, plans de continuité et de reprise d'activité »)",
       "estimated_seconds": 45,

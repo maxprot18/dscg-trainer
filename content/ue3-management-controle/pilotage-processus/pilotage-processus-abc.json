@@ -25,6 +25,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : la surproduction est un muda, souvent présenté comme le pire car elle engendre stocks et transports.",
+        "Inexact : les stocks excédentaires sont un muda : immobilisation, risque d'obsolescence, problèmes masqués.",
+        "Inexact : les attentes entre opérations sont un muda : des ressources restent inoccupées.",
+        "Exact : la maintenance préventive limite pannes et défauts et fluidifie le flux ; ce n'est pas un gaspillage."
+      ],
       "explanation": "L'option 4 est la bonne réponse : la maintenance préventive n'est pas un gaspillage, elle limite les pannes et les défauts et contribue au contraire à la fluidité du flux. Les options 1, 2 et 3 sont des gaspillages classiques du lean : la surproduction (souvent présentée comme le pire, car elle engendre stocks et transports), les stocks excédentaires (immobilisation, risque d'obsolescence, problèmes masqués) et les attentes (ressources inoccupées). Les autres muda sont les transports, les opérations inutiles, les mouvements inutiles et les défauts."
     },
     {
@@ -52,6 +58,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : c'est l'ancienne logique volumique, critiquée ; avec les heures machine, les grandes séries subventionnaient les petites.",
+        "Exact : avec l'inducteur « nombre de lots », chaque lancement coûte autant ; réparti sur peu d'unités, il alourdit le coût unitaire.",
+        "Inexact : le total des charges indirectes est inchangé, mais leur répartition entre produits change.",
+        "Inexact : l'ABC est une méthode de coût complet qui répartit l'ensemble des charges indirectes, pas seulement les variables."
+      ],
       "explanation": "L'option 2 est exacte : avec un inducteur « nombre de lots », le coût d'un lancement est le même quelle que soit la taille du lot ; réparti sur peu d'unités, il pèse lourd dans le coût unitaire. Avec une unité d'œuvre volumique (heures machine), les grandes séries supportaient une part excessive de ces charges et subventionnaient les petites séries. L'option 1 décrit l'ancienne logique volumique, justement critiquée. L'option 3 est fausse : le total des charges est inchangé, mais leur répartition entre produits change. L'option 4 est fausse : l'ABC est une méthode de coût complet, qui répartit l'ensemble des charges indirectes."
     },
     {
@@ -78,6 +90,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : un rebut détecté en fin de ligne, avant livraison, est une défaillance interne.",
+        "Inexact : former aux procédures qualité est un coût de prévention, engagé pour éviter les défauts.",
+        "Exact : le défaut est découvert après livraison au client ; l'indemnité est un coût de défaillance externe.",
+        "Inexact : le contrôle par échantillonnage à réception est un coût de détection (évaluation)."
       ],
       "explanation": "L'option 3 est exacte : une défaillance externe est détectée après la livraison au client (retours, garanties, indemnités, pénalités, perte d'image). L'option 1 est une défaillance interne : le défaut est détecté avant la livraison. L'option 2 est un coût de prévention, engagé pour éviter l'apparition des défauts. L'option 4 est un coût de détection (évaluation), engagé pour repérer les défauts. Seules les défaillances internes et externes forment les coûts de la non-qualité au sens strict."
     },

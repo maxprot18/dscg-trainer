@@ -22,6 +22,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : le volume renvoie à la quantité de données ; l'énoncé insiste sur la diversité des formats, pas sur leur masse.",
+        "Exact : tables, JSON, textes libres et photos mêlent données structurées, semi-structurées et non structurées : c'est la variété.",
+        "Inexact : la vélocité renvoie à la vitesse de production et de traitement (flux en temps réel), non décrite ici.",
+        "Inexact : la véracité concerne la fiabilité des données ; des avis peuvent être faux, mais l'énoncé décrit l'hétérogénéité des formats."
+      ],
       "explanation": "La variété désigne l'hétérogénéité des formats : données structurées (tickets), semi-structurées (JSON) et non structurées (textes, images), qu'un SGBD relationnel classique traite mal. Le volume (option 1) renvoie à la quantité de données, la vélocité (option 3) à la vitesse de production et de traitement (flux en temps réel), la véracité (option 4) à la fiabilité des données (les avis en ligne peuvent être faux, mais ce n'est pas ce que décrit l'énoncé).",
       "source_ref": "Programme DSCG UE 5 : données massives (big data) et leurs caractéristiques",
       "verified": true,
@@ -48,6 +54,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : une base clé-valeur sert à des accès très rapides à une valeur par sa clé (cache, sessions), sans requête sur les liens.",
+        "Inexact : une base documents convient à des objets au schéma souple (fiches produits, profils), pas au parcours de chaînes de relations.",
+        "Inexact : une base en colonnes sert aux analyses massives sur quelques attributs (séries temporelles, agrégats).",
+        "Exact : nœuds (clients, comptes, adresses) et relations (virements, partages) s'y parcourent efficacement sur plusieurs niveaux, sans jointures coûteuses."
       ],
       "explanation": "Une base orientée graphe stocke des nœuds (clients, comptes, adresses) et des relations (partage, virement) et parcourt efficacement des chemins sur plusieurs niveaux, ce qui exigerait de nombreuses jointures coûteuses en relationnel. La base clé-valeur (option 1) est faite pour des accès très rapides à une valeur par sa clé (cache, sessions), sans requête sur les liens. La base documents (option 2) convient à des objets au schéma souple (fiches produits, profils). La base en colonnes (option 3) sert aux analyses massives sur quelques attributs (séries temporelles, agrégats).",
       "source_ref": "Programme DSCG UE 5 : bases NoSQL (clé-valeur, documents, colonnes, graphes)",
@@ -123,6 +135,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : l'entrepôt suppose des données nettoyées, intégrées et structurées à l'avance pour des analyses prévues.",
+        "Exact : le lac de données conserve des données brutes dans leur format d'origine ; la structure n'est définie qu'au moment de l'analyse.",
+        "Inexact : la base de l'ERP est transactionnelle (OLTP), au schéma fixe, conçue pour les opérations courantes, pas pour stocker images et courriels.",
+        "Inexact : une base clé-valeur sert à retrouver vite une valeur par sa clé, pas à conserver durablement des données hétérogènes."
+      ],
       "explanation": "L'option 2 est la bonne : le lac de données conserve des données brutes, structurées ou non, dans leur format d'origine, sans schéma préalable ; la structure n'est définie qu'au moment de l'analyse. L'option 1 suppose au contraire des données nettoyées, intégrées et structurées pour des analyses prévues. L'option 3 est une base transactionnelle (OLTP) au schéma fixe, conçue pour les opérations courantes et non pour stocker des images ou des courriels en masse. L'option 4 sert à retrouver très vite une valeur par sa clé, pas à conserver durablement des données hétérogènes pour l'analyse.",
       "source_ref": "Programme DSCG UE 5 (données massives) : lac de données et entrepôt de données",
       "verified": true,
@@ -150,6 +168,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : le Data Act encadre justement ces frais pour éviter le verrouillage du client ; ils ne sont pas librement fixés.",
+        "Inexact : la suppression totale n'intervient qu'à compter du 12 janvier 2027 ; en octobre 2026, des frais limités restent possibles.",
+        "Exact : en période transitoire, les frais sont plafonnés aux coûts directement liés à la migration, puis supprimés au 12 janvier 2027 (art. 29).",
+        "Inexact : le règlement couvre aussi le changement de fournisseur de services de traitement de données (cloud), pas seulement les objets connectés."
       ],
       "explanation": "L'option 3 est la bonne : le Data Act, applicable pour l'essentiel depuis le 12 septembre 2025, facilite le changement de fournisseur de cloud ; pendant une période transitoire, les frais de changement sont plafonnés aux coûts directement liés à l'opération, puis ils sont supprimés à compter du 12 janvier 2027 (art. 29). L'option 1 ignore cet encadrement, qui vise précisément les clauses qui verrouillent le client. L'option 2 avance la suppression totale des frais : en octobre 2026, des frais limités aux coûts directs restent possibles. L'option 4 est inexacte : le règlement couvre à la fois les données des produits connectés et le changement de fournisseur de services de traitement de données (cloud).",
       "source_ref": "Règlement (UE) 2023/2854 (Data Act), art. 29 (frais de changement de fournisseur de services de traitement de données) et dispositions d’application",

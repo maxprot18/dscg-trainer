@@ -24,6 +24,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : les sortants, souvent plus anciens et mieux payés, sont remplacés par des entrants moins rémunérés ; la masse baisse à effectif constant.",
+        "Inexact : la hausse due à l'ancienneté et aux promotions des présents est le GVT positif, pas l'effet de noria.",
+        "Inexact : la répercussion sur l'année suivante des augmentations de l'année est l'effet report.",
+        "Inexact : la variation de masse salariale due à l'évolution des effectifs est l'effet d'effectif."
+      ],
       "explanation": "L'option 1 est exacte : l'effet de noria naît du renouvellement du personnel ; les sortants, souvent plus anciens et mieux payés, sont remplacés par des entrants moins rémunérés, ce qui réduit la masse salariale à effectif constant. L'option 2 décrit le GVT (glissement vieillesse technicité) positif. L'option 3 décrit l'effet report. L'option 4 décrit l'effet d'effectif."
     },
     {
@@ -50,6 +56,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : un effet masse de 2 % sans report correspondrait à une augmentation accordée au 1er janvier.",
+        "Inexact : l'effet masse de 0,5 % est juste, mais le report est sous-estimé : 102 ÷ 100,5 − 1 ≈ 1,5 %.",
+        "Inexact : les deux effets sont inversés ; trois mois à 102 ne donnent que 0,5 % d'effet masse sur N.",
+        "Exact : moyenne N de 100,5 (neuf mois à 100, trois à 102), soit 0,5 % ; report : 102 ÷ 100,5 − 1 ≈ 1,5 %."
       ],
       "explanation": "L'option 4 est exacte. En base 100, le salaire vaut 100 pendant neuf mois puis 102 pendant trois mois : moyenne N = (9 × 100 + 3 × 102) ÷ 12 = 100,5, soit un effet masse de 0,5 %. En N+1, sans nouvelle mesure, le salaire reste à 102 toute l'année : effet report = 102 ÷ 100,5 − 1 ≈ 1,49 %, soit environ 1,5 %. On vérifie que 1,005 × 1,0149 ≈ 1,02 (effet niveau de 2 %). L'option 1 correspondrait à une augmentation au 1er janvier. L'option 2 sous-estime le report. L'option 3 inverse les deux effets."
     },

@@ -23,6 +23,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : le SaaS fournit une application déjà développée par l'éditeur ; la PME ne pourrait pas développer la sienne.",
+        "Inexact : l'IaaS laisse au client la gestion des systèmes d'exploitation et des intergiciels, ce que la PME refuse.",
+        "Inexact : le cloud privé est un modèle de déploiement, non de service, et l'obligerait à exploiter elle-même l'infrastructure.",
+        "Exact : en PaaS, le fournisseur gère infrastructure, systèmes, bases et intergiciels ; le client gère seulement ses applications et ses données."
+      ],
       "explanation": "Le PaaS fournit une plateforme de développement et d'exécution : le fournisseur gère l'infrastructure, les systèmes d'exploitation, les bases et intergiciels ; le client gère ses applications et ses données. L'option 1 (SaaS) fournit une application déjà développée par l'éditeur, ce qui ne permet pas de développer sa propre application. L'option 2 (IaaS) fournit des serveurs virtuels mais laisse au client la gestion des systèmes d'exploitation et des intergiciels, ce que la PME refuse. L'option 3 est un modèle de déploiement, non un modèle de service, et obligerait la PME à exploiter elle-même l'infrastructure.",
       "source_ref": "NIST SP 800-145 (2011), The NIST Definition of Cloud Computing : modèles de service IaaS, PaaS, SaaS",
       "verified": true,
@@ -50,6 +56,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : la clause de niveaux de service fixe les engagements de qualité (disponibilité, rétablissement) pendant l'exécution du contrat.",
+        "Inexact : la clause de pénalités sanctionne le non-respect des niveaux de service ; elle n'organise pas la sortie.",
+        "Exact : la réversibilité prévoit en fin de contrat la restitution des données dans un format exploitable et l'assistance au transfert.",
+        "Inexact : l'exclusivité interdit de recourir à d'autres prestataires et accroît au contraire la dépendance."
       ],
       "explanation": "La clause de réversibilité prévoit, en fin de contrat, la restitution des données dans un format exploitable, la documentation et l'assistance au transfert, avec un calendrier et un prix ; sans elle, l'entreprise risque une forte dépendance au prestataire. La clause de niveaux de service (option 1) fixe les engagements de qualité (disponibilité, délais de rétablissement) pendant l'exécution du contrat. La clause de pénalités (option 2) sanctionne le non-respect de ces engagements. La clause d'exclusivité (option 4) interdit de recourir à d'autres prestataires et accroît au contraire la dépendance.",
       "source_ref": "Programme DSCG UE 5 : externalisation et contrats de services (niveaux de service, réversibilité)",
@@ -181,6 +193,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : le cloud public ne décrit qu'une partie du dispositif ; les données de paie restent sur un cloud privé dédié.",
+        "Inexact : le cloud privé est incomplet ; le site marchand utilise aussi des ressources publiques mutualisées pour les pics.",
+        "Inexact : un cloud communautaire est partagé par plusieurs organisations aux besoins communs (des hôpitaux, par exemple), ce qui n'est pas le cas.",
+        "Exact : un cloud privé pour les données sensibles relié à un cloud public pour la capacité élastique forme un cloud hybride."
+      ],
       "explanation": "La combinaison d'un cloud privé (données sensibles) et d'un cloud public (capacité élastique pour les pics), reliés entre eux, est un cloud hybride (option 4). L'option 1 ne décrit qu'une partie du dispositif : les données de paie ne sont pas sur des ressources partagées. L'option 2 est incomplète : le site marchand utilise des ressources publiques mutualisées. L'option 3 désigne une infrastructure partagée par plusieurs organisations ayant des besoins communs (par exemple des hôpitaux), ce qui n'est pas le cas ici.",
       "source_ref": "NIST SP 800-145 (2011), modèles de déploiement : public, privé, communautaire, hybride",
       "estimated_seconds": 45,

@@ -23,6 +23,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : les centres de données pèsent nettement moins dans cette étude, l'électricité française étant peu carbonée.",
+        "Exact : l'essentiel de l'empreinte provient des terminaux, surtout de leur fabrication ; d'où la priorité à l'allongement de leur durée de vie.",
+        "Inexact : les réseaux pèsent nettement moins que la fabrication des terminaux dans l'étude ADEME-Arcep.",
+        "Inexact : l'envoi de courriels est un usage parmi d'autres, au poids faible comparé à la fabrication des équipements."
+      ],
       "explanation": "En France, l'électricité étant peu carbonée, l'essentiel de l'empreinte carbone du numérique provient des terminaux, et surtout de leur fabrication (option 2). Les centres de données (option 1) et les réseaux (option 3) pèsent nettement moins dans cette étude ; une actualisation ultérieure, qui intègre les centres de données situés à l'étranger utilisés par les Français, relève la part de ces derniers. L'option 4 est un usage parmi d'autres, dont le poids est faible comparé à la fabrication des équipements : d'où la priorité donnée à l'allongement de la durée de vie.",
       "source_ref": "Études ADEME-Arcep sur l’empreinte environnementale du numérique en France ; loi n° 2021-1485 du 15 novembre 2021 (REEN)",
       "estimated_seconds": 45,
@@ -50,6 +56,12 @@
         0
       ],
       "multiple": false,
+      "option_explanations": [
+        "Exact : PUE = énergie totale ÷ énergie informatique = 3 000 ÷ 2 000 = 1,5.",
+        "Inexact : le rapport est inversé (2 000 ÷ 3 000) ; un PUE est toujours supérieur ou égal à 1.",
+        "Inexact : 2 000 ÷ 1 000 rapporte l'énergie informatique à celle de l'infrastructure, ce qui ne correspond pas à la définition.",
+        "Inexact : 1 000 ÷ 2 000 = 0,5 est la part de l'infrastructure rapportée à l'énergie informatique, soit PUE − 1."
+      ],
       "explanation": "PUE = énergie totale du site ÷ énergie des équipements informatiques = 3 000 ÷ 2 000 = 1,5 (option 1) : l'infrastructure (refroidissement, onduleurs, éclairage) consomme 0,5 kWh pour 1 kWh informatique. L'option 2 inverse le rapport (un PUE est toujours supérieur ou égal à 1). L'option 3 rapporte l'énergie informatique à celle de l'infrastructure (2 000 ÷ 1 000), ce qui ne correspond pas à la définition. L'option 4 est la part de l'infrastructure rapportée à l'énergie informatique (1 000 ÷ 2 000), soit PUE − 1.",
       "source_ref": "Indicateur PUE (Power Usage Effectiveness), ISO/IEC 30134-2",
       "estimated_seconds": 60,

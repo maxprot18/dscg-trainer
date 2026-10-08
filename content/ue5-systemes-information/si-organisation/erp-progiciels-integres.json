@@ -22,6 +22,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : un ERP est un progiciel standard que l'on paramètre, pas un développement sur mesure.",
+        "Inexact : l'analyse des données historiques relève d'un entrepôt de données ou d'un outil décisionnel, alimenté notamment par l'ERP.",
+        "Exact : les modules partagent une base et un référentiel uniques ; une saisie unique met à jour en temps réel tous les modules concernés.",
+        "Inexact : des logiciels hétérogènes reliés par des interfaces, c'est précisément la situation que l'ERP remplace."
+      ],
       "explanation": "Un ERP est composé de modules (finance, achats, ventes, stocks, paie…) qui partagent une base de données et un référentiel uniques : une information saisie une fois (par exemple une réception de marchandises) met à jour en temps réel tous les modules concernés (stocks, comptabilité fournisseurs). L'option 1 est fausse : un ERP est un progiciel standard que l'on paramètre. L'option 2 décrit un entrepôt de données ou un outil décisionnel, alimenté notamment par l'ERP. L'option 4 décrit précisément la situation que l'ERP remplace : des applications hétérogènes reliées par des interfaces.",
       "source_ref": "Programme DSCG UE 5 : progiciels de gestion intégrés (base de données unique, intégration des processus)",
       "verified": true,
@@ -49,6 +55,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : un ERP apporte des processus standardisés adaptés par paramétrage ; tout adapter par spécifiques fait perdre l'intérêt du progiciel.",
+        "Inexact : conserver l'ancien logiciel sans interface réintroduit des ressaisies et casse l'intégration des données.",
+        "Inexact : attendre l'éditeur rend le projet dépendant d'une décision qui n'interviendra peut-être jamais.",
+        "Exact : le spécifique doit rester l'exception ; il renchérit le projet, complique la maintenance et chaque montée de version."
       ],
       "explanation": "Un ERP apporte des processus standardisés que l'on adapte par paramétrage. Le développement spécifique doit rester l'exception : il renchérit le projet, complique la maintenance et chaque montée de version (il faut retester et réadapter le code), et accroît la dépendance envers l'intégrateur. La démarche recommandée consiste à remettre en cause le processus existant et à l'aligner sur le standard, sauf si la procédure procure un avantage concurrentiel réel. L'option 1 fait perdre l'intérêt du progiciel. L'option 2 réintroduit des ressaisies et casse l'intégration des données. L'option 3 rend le projet dépendant d'une décision de l'éditeur qui n'interviendra peut-être jamais.",
       "source_ref": "Programme DSCG UE 5 : progiciels de gestion intégrés (paramétrage, développements spécifiques, conduite du projet)",
@@ -231,6 +243,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : un transfert manuel entre modules décrit des logiciels non intégrés, ce que l'ERP supprime précisément.",
+        "Inexact : la base unique assure la cohérence (tous voient la même donnée), pas l'exactitude de la donnée saisie.",
+        "Inexact : la comptabilité est un module de l'ERP ; la supposer tenue à part contredit le principe du progiciel intégré.",
+        "Exact : la base unique met à jour tous les modules en temps réel ; la contrepartie est qu'une erreur de saisie s'y propage."
       ],
       "explanation": "L'option 4 est la bonne : les modules d'un ERP partagent une base de données unique et une saisie unique les met à jour en temps réel ; la contrepartie de cette intégration est qu'une erreur de saisie se propage à tous les modules concernés. D'où l'importance des contrôles à la saisie et du rapprochement réception-facture. L'option 1 décrit un ensemble de logiciels non intégrés reliés par des transferts, ce qu'un ERP supprime précisément. L'option 2 confond cohérence et exactitude : la base unique assure que tous les modules voient la même donnée, pas que cette donnée est juste. L'option 3 est contraire au principe même du progiciel intégré, dont la comptabilité est un module.",
       "source_ref": "Programme DSCG UE 5 : progiciels de gestion intégrés (base de données unique, intégration des processus, limites)",

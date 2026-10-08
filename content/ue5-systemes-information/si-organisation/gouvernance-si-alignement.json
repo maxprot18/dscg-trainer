@@ -23,6 +23,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : APO est un domaine de management qui traduit les orientations en plans et en organisation.",
+        "Exact : EDM est le seul domaine de gouvernance : on y fixe les orientations, on arbitre et on contrôle l'atteinte des objectifs.",
+        "Inexact : DSS est un domaine de management, consacré à l'exploitation et au support des services.",
+        "Inexact : malgré son intitulé, MEA est un domaine de management (performance, contrôle interne, conformité) dont les résultats remontent à EDM."
+      ],
       "explanation": "COBIT 2019 sépare la gouvernance, exercée par le conseil et la direction générale, du management, confié à la direction des SI. Le seul domaine de gouvernance est EDM (évaluer, diriger, surveiller) : on y fixe les orientations, on arbitre et on contrôle l'atteinte des objectifs. L'option 1 (APO) est un domaine de management qui traduit les orientations en plans et en organisation. L'option 3 (DSS) est le domaine de management de l'exploitation et du support des services. L'option 4 (MEA) est le piège classique : bien qu'il parle de surveillance et d'évaluation, c'est un domaine de management (mesure de la performance, du contrôle interne et de la conformité), dont les résultats remontent au domaine EDM.",
       "source_ref": "COBIT 2019 (ISACA), cadre de référence : domaine de gouvernance EDM et domaines de management APO, BAI, DSS, MEA ; ISO/IEC 38500",
       "verified": true,
@@ -49,6 +55,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : la gestion des incidents rétablit le service plus vite, mais laisse la cause intacte ; les blocages continueront.",
+        "Inexact : renégocier l'engagement de disponibilité contourne la panne au lieu de la résoudre.",
+        "Exact : des incidents répétés appellent une analyse de la cause racine et une solution durable : c'est la gestion des problèmes.",
+        "Inexact : inventorier le serveur apporte une information utile mais ne traite pas les interruptions."
       ],
       "explanation": "Dans ITIL 4, la gestion des incidents vise à rétablir le service le plus vite possible : c'est ce que fait déjà le support en redémarrant le serveur. Quand des incidents se répètent, il faut une analyse de la cause racine et une solution durable : c'est l'objet de la gestion des problèmes, qui peut aboutir à une demande de changement. L'option 1 accélère le rétablissement mais laisse la cause intacte, les blocages continueront. L'option 2 modifie l'engagement de service au lieu de résoudre la panne : c'est contourner le problème. L'option 4 apporte une information utile (inventaire du serveur) mais ne traite pas les interruptions.",
       "source_ref": "ITIL 4 (Axelos) : pratiques de gestion des incidents et de gestion des problèmes",
@@ -206,6 +218,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : un SI techniquement performant peut être déconnecté de la stratégie ; disponibilité et SLA ne prouvent pas l'alignement.",
+        "Inexact : renoncer à une orientation stratégique relève de la gouvernance, donc de la direction générale ; la DSI assure le management.",
+        "Exact : la stratégie métier n'est pas traduite dans le SI (Henderson et Venkatraman) ; arbitrer les priorités relève de la gouvernance.",
+        "Inexact : aucun service n'est interrompu ; il ne s'agit pas d'un incident au sens d'ITIL."
       ],
       "explanation": "L'option 3 est la bonne : dans le modèle de Henderson et Venkatraman, l'alignement suppose la cohérence entre stratégie métier, stratégie SI, organisation et infrastructure. Une stratégie métier (vente en ligne) irréalisable avec l'infrastructure existante révèle un défaut d'alignement, aggravé par un schéma directeur construit sans les métiers. Arbitrer les priorités relève de la gouvernance, donc de la direction générale et du comité stratégique SI. L'option 1 confond excellence opérationnelle et alignement : un SI techniquement performant peut être déconnecté de la stratégie. L'option 2 attribue à la DSI une décision de gouvernance (renoncer à une orientation stratégique) qui revient à la direction générale ; la DSI assure le management. L'option 4 se trompe de niveau : aucun service n'est interrompu, il ne s'agit pas d'un incident.",
       "source_ref": "Modèle d’alignement stratégique de Henderson et Venkatraman (1993) ; ISO/IEC 38500 (responsabilité de la direction : évaluer, orienter, surveiller)",

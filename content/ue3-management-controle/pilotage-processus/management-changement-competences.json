@@ -24,6 +24,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : ancrer les nouvelles pratiques dans la culture est la dernière des huit étapes de Kotter.",
+        "Exact : Kotter commence par créer un sentiment d'urgence pour vaincre la complaisance et montrer que le statu quo n'est plus tenable.",
+        "Inexact : les victoires rapides interviennent en cours de processus, pour entretenir la dynamique, pas au départ.",
+        "Inexact : la formation n'est pas une étape du modèle ; c'est l'un des moyens de lever les obstacles."
+      ],
       "explanation": "L'option 2 est exacte : Kotter commence par instaurer un sentiment d'urgence, pour vaincre la complaisance et montrer pourquoi le statu quo n'est plus tenable ; viennent ensuite la coalition, la vision, sa communication, la levée des obstacles, les victoires rapides et la consolidation. L'option 1 est la dernière étape du modèle. L'option 3 intervient en cours de processus, pour entretenir la dynamique. L'option 4 n'est pas une étape en tant que telle du modèle ; la formation est l'un des moyens de lever les obstacles."
     },
     {
@@ -50,6 +56,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : la socialisation transmet du tacite au tacite par l'observation et la pratique partagée, sans formalisation écrite.",
+        "Inexact : la combinaison assemble des connaissances déjà explicites (documents, bases de données).",
+        "Inexact : l'intériorisation, appropriation d'un savoir explicite par la pratique, viendra quand les nouveaux régleurs utiliseront le guide.",
+        "Exact : le savoir-faire tacite du régleur devient une connaissance explicite, le guide écrit : c'est l'externalisation."
+      ],
       "explanation": "L'option 4 est exacte : l'externalisation transforme une connaissance tacite (le savoir-faire du régleur) en connaissance explicite (le guide écrit). L'option 1, la socialisation, transmet du tacite au tacite par l'observation et la pratique partagée (compagnonnage), sans formalisation. L'option 2, la combinaison, assemble des connaissances déjà explicites (documents, bases de données). L'option 3, l'intériorisation, correspond à l'appropriation d'une connaissance explicite par la pratique : elle interviendra lorsque les nouveaux régleurs utiliseront le guide."
     },
     {
@@ -75,6 +87,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : relancer les fournisseurs corrige l'action pour revenir à la norme, sans la questionner : simple boucle.",
+        "Inexact : augmenter le stock selon la règle habituelle reste en simple boucle ; la norme elle-même n'est pas interrogée.",
+        "Exact : remettre en cause l'objectif de stock fixé et le mode de pilotage interroge les normes qui guident l'action : double boucle.",
+        "Inexact : sanctionner cherche un responsable sans modifier ni l'action ni les normes ; ce n'est pas un apprentissage."
       ],
       "explanation": "L'option 3 est exacte : l'apprentissage en double boucle interroge les normes, valeurs et objectifs qui guident l'action (ici la politique de stock minimal elle-même). Les options 1 et 2 relèvent de la simple boucle : on corrige l'action pour revenir à la norme, sans la remettre en question. L'option 4 ne constitue pas un apprentissage : elle cherche un responsable sans modifier ni l'action ni les normes."
     },

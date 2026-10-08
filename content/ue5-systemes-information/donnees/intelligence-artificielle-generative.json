@@ -23,6 +23,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : les pratiques interdites de l'article 5 sont limitativement énumérées (notation sociale, manipulation…) ; le tri de CV n'en fait pas partie.",
+        "Exact : l'annexe III range parmi les systèmes à haut risque ceux destinés au recrutement et à la sélection, notamment au filtrage des candidatures.",
+        "Inexact : les seules obligations de transparence de l'article 50 sont insuffisantes pour un système de recrutement à haut risque.",
+        "Inexact : le règlement vise aussi les déployeurs, tenus notamment d'assurer un contrôle humain et une utilisation conforme à la notice."
+      ],
       "explanation": "L'annexe III du règlement range parmi les systèmes à haut risque ceux destinés au recrutement ou à la sélection de personnes, notamment pour filtrer les candidatures et évaluer les candidats. L'éditeur (fournisseur) supporte les obligations de conformité (gestion des risques, qualité des données, documentation, marquage) ; l'entreprise (déployeur) doit l'utiliser conformément à la notice, assurer un contrôle humain par des personnes compétentes, surveiller son fonctionnement et informer les représentants du personnel et les salariés concernés. L'option 1 est fausse : les pratiques interdites de l'article 5 sont limitativement énumérées (notation sociale, manipulation, reconnaissance des émotions sur le lieu de travail…) et le tri de CV n'en fait pas partie. L'option 3 décrit les obligations de transparence de l'article 50, insuffisantes ici. L'option 4 est fausse : le règlement vise aussi les déployeurs. Le RGPD s'applique en outre (art. 22 sur les décisions entièrement automatisées).",
       "source_ref": "Règlement (UE) 2024/1689 (AI Act), art. 5, art. 6 §2 et annexe III (emploi), art. 26 (obligations des déployeurs), art. 50 ; RGPD art. 22",
       "verified": true,
@@ -50,6 +56,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : les deux indicateurs sont inversés ; rappel = 80 ÷ 100 = 80 %, précision = 80 ÷ 250 = 32 %.",
+        "Inexact : l'exactitude de 98,1 % est juste mais trompeuse ; avec 1 % de fraudes, ne jamais alerter donnerait 99 %.",
+        "Exact : rappel = 80 ÷ 100 = 80 % ; précision = 80 ÷ 250 = 32 %, soit 170 fausses alertes sur 250.",
+        "Inexact : la précision se calcule sur les 250 alertes, pas sur les 100 fraudes réelles : 80 ÷ 250 = 32 %."
       ],
       "explanation": "Rappel = fraudes détectées ÷ fraudes réelles = 80 ÷ 100 = 80 %. Précision = alertes justifiées ÷ alertes = 80 ÷ 250 = 32 % : 170 alertes sur 250 (68 %) sont de fausses alertes, qui mobiliseront les analystes. L'option 1 inverse les deux indicateurs. L'option 2 cite une exactitude juste ((80 + 9 730) ÷ 10 000 = 98,1 %, avec 9 900 − 170 = 9 730 virements sains non alertés) mais en tire une conclusion fausse : quand la fraude ne représente que 1 % des cas, un modèle qui ne signalerait jamais rien serait exact à 99 %. L'option 4 calcule la précision sur une mauvaise base. L'arbitrage entre rappel et précision se règle par le seuil d'alerte, selon le coût d'une fraude manquée et celui d'une fausse alerte.",
       "source_ref": "Programme DSCG UE 5 : intelligence artificielle et apprentissage automatique (mesures de performance d’un classifieur)",
@@ -194,6 +206,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : l'apprentissage non supervisé travaille sans étiquette (regroupement, détection d'anomalies) ; ici chaque facture est étiquetée.",
+        "Inexact : l'apprentissage par renforcement apprend une suite de décisions à partir de récompenses, pas à partir d'exemples étiquetés.",
+        "Inexact : l'IA générative produit du contenu (texte, image, code) ; ici le modèle classe des factures.",
+        "Exact : le modèle apprend sur des données étiquetées (frauduleuse ou légitime) pour prédire l'étiquette de cas nouveaux."
       ],
       "explanation": "L'option 4 est la bonne : le modèle apprend à partir de données étiquetées (le résultat attendu, frauduleuse ou légitime, est connu pour chaque exemple) afin de prédire l'étiquette de cas nouveaux ; c'est la définition de l'apprentissage supervisé. L'option 1 travaille sans étiquette (regroupement, détection d'anomalies). L'option 2 apprend une suite de décisions à partir de récompenses. L'option 3 désigne des modèles qui produisent du contenu (texte, image, code), non un classement.",
       "source_ref": "Programme DSCG UE 5 : intelligence artificielle, apprentissage automatique (supervisé, non supervisé, par renforcement)",

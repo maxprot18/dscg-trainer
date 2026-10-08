@@ -22,6 +22,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : la conception détaillée est vérifiée par les tests unitaires, pas par la recette.",
+        "Inexact : le codage est la pointe du V, sans phase de test symétrique.",
+        "Exact : la recette vérifie que le système répond aux besoins exprimés ; elle fait face à l'expression des besoins et aux spécifications.",
+        "Inexact : l'architecture technique (conception générale) est vérifiée par les tests d'intégration."
+      ],
       "explanation": "Le cycle en V associe à chaque phase de conception (branche descendante) une phase de test (branche montante) qui vérifie ses livrables. La recette, menée par la maîtrise d'ouvrage, vérifie que le système répond aux besoins exprimés : elle correspond à l'expression des besoins et aux spécifications. La conception détaillée (option 1) est vérifiée par les tests unitaires. Le codage (option 2) est la pointe du V, sans phase de test symétrique. L'architecture technique ou conception générale (option 4) est vérifiée par les tests d'intégration.",
       "source_ref": "Méthodes prédictives de conduite de projet : cycle en V (correspondance conception / tests)",
       "verified": true,
@@ -49,6 +55,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : le Scrum Master est garant de la méthode, il ne gère pas le contenu, et la durée d'un sprint n'est pas prolongée.",
+        "Exact : le Product Owner est seul responsable du backlog produit et de sa priorisation ; la demande ira en principe à un prochain sprint.",
+        "Inexact : l'agilité accueille le changement entre les itérations, par le backlog, pas en désorganisant le sprint en cours.",
+        "Inexact : modifier soi-même le backlog contourne le Product Owner et crée des priorités concurrentes."
       ],
       "explanation": "Dans Scrum, le Product Owner est seul responsable du backlog produit et de sa priorisation : toute nouvelle demande passe par lui. Le sprint a une durée fixe et un objectif qui ne doit pas être remis en cause en cours de route ; la fonctionnalité sera donc en principe planifiée pour un sprint suivant (si l'objectif du sprint devient obsolète, seul le Product Owner peut l'annuler). L'option 1 est fausse : le Scrum Master est garant de la méthode, il ne gère pas le contenu, et la durée d'un sprint n'est pas prolongée. L'option 3 confond accueil du changement et désorganisation : l'agilité accueille le changement entre les itérations, par le backlog. L'option 4 contourne le Product Owner, ce qui crée des priorités concurrentes.",
       "source_ref": "Scrum Guide (K. Schwaber et J. Sutherland, 2020) : rôles du Product Owner et du Scrum Master, sprint ; Manifeste agile (2001)",
@@ -198,6 +210,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : une tâche du chemin critique n'a, par définition, aucune marge pour absorber le retard.",
+        "Inexact : cette option confond délai et coût ; le retard peut aussi coûter, mais il décale d'abord la date de fin.",
+        "Exact : les tâches critiques n'ont pas de marge ; tout retard sur l'une d'elles se répercute intégralement sur la fin du projet.",
+        "Inexact : ce sont les tâches suivantes du chemin critique qui sont décalées, pas les tâches parallèles, qui ont leur propre marge."
+      ],
       "explanation": "Le chemin critique est la suite des tâches sans marge : tout retard sur l'une d'elles se répercute intégralement sur la date de fin du projet (option 3). L'option 1 est fausse : une tâche critique n'a, par définition, aucune marge. L'option 2 confond délai et coût : le retard peut aussi coûter, mais il décale d'abord la fin. L'option 4 est fausse : ce sont les tâches qui suivent la tâche retardée sur le chemin critique qui sont décalées, pas les tâches parallèles, qui disposent elles-mêmes d'une marge.",
       "source_ref": "Méthode PERT : chemin critique et marges des tâches (fiche « Conduite de projets SI »)",
       "estimated_seconds": 50,

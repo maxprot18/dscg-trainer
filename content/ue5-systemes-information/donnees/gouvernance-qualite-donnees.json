@@ -22,6 +22,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : la complétude concerne les champs non renseignés, pas un même client enregistré trois fois.",
+        "Inexact : la fraîcheur concerne les données périmées, non mises à jour ; ici le défaut est le doublon.",
+        "Inexact : la validité concerne le respect d'un format ou d'une règle (SIREN à 9 chiffres, clé IBAN).",
+        "Exact : un même objet réel enregistré plusieurs fois est un défaut d'unicité (doublons), qui sous-estime l'encours client."
+      ],
       "explanation": "Un même objet réel enregistré plusieurs fois est un défaut d'unicité (doublons). Conséquences : encours client sous-estimé, limite de crédit contournée, relances incohérentes. La complétude (option 1) concerne les champs non renseignés ; la fraîcheur (option 2) les données périmées, non mises à jour ; la validité (option 3) le respect d'un format ou d'une règle (SIREN à 9 chiffres, clé IBAN correcte). Remède : dédoublonnage et, à la source, contrôle d'existence à la création (référentiel client unique, MDM).",
       "source_ref": "ISO/IEC 25012 (modèle de qualité des données) ; programme DSCG UE 5 (gouvernance et qualité des données)",
       "verified": true,
@@ -191,6 +197,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : le propriétaire des données est le directeur commercial lui-même, qui fixe définitions, règles d'accès et niveau de qualité.",
+        "Exact : le data steward veille au quotidien à la qualité, instruit les créations et modifications, corrige et documente.",
+        "Inexact : le DPO vise la conformité des traitements de données personnelles au RGPD, pas la qualité opérationnelle des fiches.",
+        "Inexact : le CDO porte la stratégie data au niveau de la direction et arbitre entre métiers ; il n'instruit pas les fiches une à une."
       ],
       "explanation": "L'option 2 est la bonne : le gestionnaire des données (data steward) veille au quotidien à la qualité, documente, corrige et instruit les demandes de création ou de modification. L'option 1 désigne le rôle du directeur commercial lui-même : responsable métier du domaine, il fixe définitions, règles d'accès et niveau de qualité. L'option 3 vise la conformité des traitements de données personnelles au RGPD, non la qualité opérationnelle des fiches. L'option 4 porte la stratégie data au niveau de la direction et arbitre entre métiers ; il n'instruit pas les demandes fiche par fiche.",
       "source_ref": "Gouvernance des données : rôles du propriétaire, du gestionnaire et du directeur des données ; COBIT 2019, objectif APO14 (gestion des données)",

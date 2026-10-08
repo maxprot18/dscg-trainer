@@ -21,6 +21,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : prix, quantité et délai sont des termes du contrat, pas des attributs de la transaction.",
+        "Inexact : rationalité limitée et opportunisme sont les hypothèses comportementales de la théorie ; la confiance n'en fait pas partie.",
+        "Exact : spécificité des actifs, incertitude et fréquence orientent le choix entre marché, formes hybrides et hiérarchie.",
+        "Inexact : taille, ancienneté et réputation sont des caractéristiques du partenaire, pas de la transaction."
+      ],
       "explanation": "L'option 3 est exacte : Williamson caractérise une transaction par la spécificité des actifs qu'elle requiert, l'incertitude qui l'entoure et sa fréquence ; ces attributs orientent le choix entre marché, formes hybrides et hiérarchie. L'option 1 est fausse : prix, quantité et délai sont des termes du contrat, pas des attributs de la transaction. L'option 2 est fausse, c'est le piège classique : rationalité limitée et opportunisme sont les hypothèses comportementales de la théorie, pas les attributs des transactions ; la confiance n'en fait pas partie. L'option 4 est fausse : ce sont des caractéristiques du partenaire.",
       "source_ref": "O. Williamson (1975, 1985), théorie des coûts de transaction ; R. Coase (1937)",
       "verified": true,
@@ -46,6 +52,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : une alliance complémentaire associe des apports de nature différente, par exemple un produit contre un réseau de distribution.",
+        "Inexact : en pseudo-concentration, les partenaires développent, fabriquent et commercialisent un produit final commun ; ici chacun vend sous sa marque.",
+        "Inexact : un partenariat vertical associe un client et un fournisseur, pas deux concurrents.",
+        "Exact : des concurrents produisent ensemble un élément commun, le moteur, que chacun intègre dans ses propres produits finals concurrents."
       ],
       "explanation": "L'option 4 est exacte : dans une alliance de co-intégration, des concurrents produisent ensemble un élément commun (ici le moteur) pour bénéficier d'économies d'échelle, chacun l'intégrant dans ses propres produits finals, qui restent concurrents. L'option 1 est fausse : une alliance complémentaire associe des apports de nature différente (par exemple un produit contre un réseau de distribution). L'option 2 est fausse : dans une pseudo-concentration, les partenaires développent, fabriquent et commercialisent un produit final commun. L'option 3 est fausse : un partenariat vertical associe un client et un fournisseur, pas deux concurrents.",
       "source_ref": "B. Garrette et P. Dussauge, typologie des alliances entre concurrents",

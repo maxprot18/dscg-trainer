@@ -24,6 +24,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : un centre de coûts standards suppose une relation technique entre consommations et production, comme dans un atelier.",
+        "Inexact : le service juridique ne vend rien et ne maîtrise pas de produits ; ce n'est pas un centre de profit.",
+        "Inexact : il ne décide pas de ses investissements et n'est pas évalué sur la rentabilité des capitaux.",
+        "Exact : production non mesurable, budget de moyens et indicateurs de qualité de service : centre de dépenses discrétionnaires."
+      ],
       "explanation": "L'option 4 est exacte : un service fonctionnel dont la production n'est pas mesurable est un centre de dépenses discrétionnaires, piloté par un budget de moyens et des indicateurs de qualité de service. L'option 1 est fausse : un centre de coûts standards suppose une relation technique entre consommations et production (atelier). L'option 2 est fausse : le service ne vend rien et ne maîtrise pas de produits. L'option 3 est fausse : il ne décide pas de ses investissements et n'est pas évalué sur une rentabilité des capitaux."
     },
     {
@@ -49,6 +55,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : le coût réel transfère les inefficiences du vendeur à l'acheteur et ôte toute incitation à maîtriser les coûts.",
+        "Exact : fixé à l'avance, il couvre les charges fixes à l'activité normale ; les écarts restent à la charge de la division vendeuse.",
+        "Inexact : le coût variable ne couvre pas les charges fixes, et le coût réel transmet aussi les inefficiences.",
+        "Inexact : faute de marché externe pour un sous-ensemble spécifique, un prix de marché estimé serait arbitraire."
       ],
       "explanation": "L'option 2 est exacte : le coût complet standard couvre les charges fixes (sur la base de l'activité normale) et fige le prix à l'avance ; les écarts entre coût réel et standard restent à la charge de la division vendeuse, qui en est responsable. L'option 1 est fausse : le coût réel transfère les inefficiences du vendeur à l'acheteur et ôte toute incitation à maîtriser les coûts. L'option 3 est fausse : le coût variable ne couvre pas les charges fixes, et le coût réel transmet aussi les inefficiences. L'option 4 est fausse : faute de marché externe pour un sous-ensemble spécifique, un tel prix serait arbitraire."
     },

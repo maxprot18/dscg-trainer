@@ -22,6 +22,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : selon Inmon, l'entrepôt est non volatil et historisé ; il conserve l'historique pour l'analyse dans le temps.",
+        "Inexact : la mise à jour à chaque saisie décrit un système transactionnel (OLTP) ; l'entrepôt est alimenté périodiquement par un ETL.",
+        "Inexact : l'entrepôt est alimenté par les applications de gestion ; il ne les remplace pas.",
+        "Inexact : c'est l'inverse du caractère intégré ; la transformation de l'ETL harmonise codes et définitions."
+      ],
       "explanation": "Selon la définition d'Inmon, l'entrepôt est orienté sujet, intégré, non volatil et historisé : il conserve l'historique pour l'analyse et la comparaison dans le temps. L'option 2 décrit un système transactionnel (OLTP) comme l'ERP ; l'entrepôt est alimenté périodiquement par un ETL, souvent la nuit. L'option 3 est fausse : l'entrepôt est alimenté par les applications de gestion, il ne les remplace pas. L'option 4 est l'inverse du caractère intégré : la phase de transformation de l'ETL harmonise codes et définitions.",
       "source_ref": "Définition de l’entrepôt de données (W. Inmon) ; programme DSCG UE 5 (informatique décisionnelle)",
       "verified": true,
@@ -48,6 +54,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : un camembert est illisible au-delà de quelques parts et montre une composition, pas un classement.",
+        "Inexact : une courbe suggère une continuité ou une évolution temporelle qui n'existe pas entre des agences.",
+        "Exact : l'œil compare des longueurs, le tri fait apparaître le classement et l'orientation horizontale laisse la place aux noms d'agences.",
+        "Inexact : la 3D déforme les hauteurs et l'axe tronqué exagère visuellement les écarts entre agences."
       ],
       "explanation": "Pour comparer des catégories, les barres sont la forme la plus lisible : l'œil compare des longueurs, et le tri fait apparaître le classement ; l'orientation horizontale laisse la place aux noms d'agences. Le camembert (option 1) est illisible au-delà de quelques parts et sert à montrer une composition, pas un classement. La courbe (option 2) suggère une continuité ou une évolution dans le temps qui n'existe pas entre des agences. L'option 4 cumule deux défauts : la 3D déforme les hauteurs et l'axe tronqué exagère visuellement les écarts.",
       "source_ref": "Programme DSCG UE 5 : visualisation des données (choix des représentations) ; principes de sémiologie graphique",
@@ -184,6 +196,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : agréger du jour au mois donne le CA mensuel, mais pas le nombre de tickets, absent du grain stocké.",
+        "Inexact : on ne peut pas forer en dessous du grain stocké ; le jour est le niveau le plus fin disponible.",
+        "Exact : au grain jour × magasin × produit, les tickets sont fondus ; il faut une table de faits au grain du ticket.",
+        "Inexact : une dimension supplémentaire ne crée pas un niveau de détail que la table de faits n'a pas enregistré."
       ],
       "explanation": "L'option 3 est la bonne : le grain fixe le niveau de détail d'une ligne de faits ; au grain jour × magasin × produit, les ventes d'un même ticket sont fondues avec celles des autres tickets, et le nombre de tickets ne peut pas être reconstitué (un ticket contient souvent plusieurs produits). Il faut alimenter une table de faits au grain du ticket ou de la ligne de ticket. L'option 1 donne le CA mensuel, pas le nombre de tickets. L'option 2 est impossible : on ne peut pas forer en dessous du grain stocké. L'option 4 ne résout rien : une dimension supplémentaire ne crée pas un niveau de détail que la table de faits n'a pas enregistré.",
       "source_ref": "Modélisation dimensionnelle (R. Kimball) : grain de la table de faits ; analyse OLAP (drill-down, roll-up)",

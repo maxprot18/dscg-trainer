@@ -23,6 +23,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : l'ERP est resté accessible ; aucun service n'a été interrompu, la disponibilité n'est pas atteinte.",
+        "Exact : la donnée fournisseur a été modifiée sans autorisation ; c'est une atteinte à l'intégrité.",
+        "Inexact : le problème n'est pas une divulgation d'information mais son altération.",
+        "Inexact : la traçabilité aide à retrouver l'auteur de la modification, mais ce n'est pas le critère principalement atteint."
+      ],
       "explanation": "La donnée fournisseur a été modifiée sans autorisation : c'est une atteinte à l'intégrité (option 2). L'option 1 est fausse : l'ERP est resté accessible, aucun service n'a été interrompu. L'option 3 est fausse : le problème n'est pas qu'une information a été divulguée, mais qu'elle a été altérée. L'option 4 est fausse : la traçabilité permet de retrouver l'auteur de la modification (journal des modifications) ; elle aide à l'enquête mais n'est pas le critère principalement atteint.",
       "source_ref": "Critères de sécurité DICP ; ISO/IEC 27000 (définitions de l’intégrité et de la confidentialité)",
       "estimated_seconds": 45,
@@ -51,6 +57,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : tout éteindre est excessif et détruit des traces ; on isole d'abord, l'arrêt d'autres systèmes se décide en cellule de crise.",
+        "Inexact : restaurer avant d'identifier le mode d'intrusion expose à une réinfection, et la sauvegarde peut elle-même être compromise.",
+        "Exact : isoler le poste sans l'éteindre contient la propagation et conserve les traces en mémoire ; la gestion de crise est ensuite déclenchée.",
+        "Inexact : payer ne garantit ni déchiffrement ni non-divulgation, et l'indemnisation suppose une plainte sous 72 heures (C. assur. art. L. 12-10-1)."
+      ],
       "explanation": "La priorité est de contenir la propagation : déconnecter le poste du réseau (câble, Wi-Fi) sans l'éteindre, pour conserver en mémoire des traces utiles à l'analyse, puis déclencher la gestion de crise (option 3). L'option 1 est excessive et détruit des traces : on isole d'abord, l'arrêt éventuel d'autres systèmes se décide en cellule de crise. L'option 2 est prématurée : restaurer avant d'avoir identifié le mode d'intrusion expose à une nouvelle infection, et la sauvegarde peut elle-même être compromise. L'option 4 est contraire aux recommandations des autorités : le paiement ne garantit ni le déchiffrement ni la non-divulgation des données, et l'indemnisation par l'assurance suppose une plainte déposée dans les 72 heures (Code des assurances art. L. 12-10-1).",
       "source_ref": "Recommandations ANSSI sur les attaques par rançongiciel ; Code des assurances art. L. 12-10-1 (loi n° 2023-22 du 24 janvier 2023)",
       "estimated_seconds": 60,
@@ -188,6 +200,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : l'assurance prend en charge les conséquences financières sans réduire la vraisemblance : c'est un transfert, pas une réduction.",
+        "Inexact : l'authentification multifacteur diminue la vraisemblance d'une compromission de compte : c'est une réduction, pas un transfert.",
+        "Exact : renoncer à l'exposition qui crée le risque (accès à l'ERP depuis internet) supprime le scénario : c'est l'évitement.",
+        "Inexact : faire approuver formellement le risque résiduel par la direction est une acceptation, pas une réduction."
+      ],
       "explanation": "Renoncer à l'activité ou à l'exposition qui crée le risque (ici, l'accès à l'ERP depuis internet) supprime le scénario : c'est l'évitement (option 3). L'option 1 décrit un transfert : l'assurance prend en charge tout ou partie des conséquences financières, sans réduire la vraisemblance de l'attaque. L'option 2 décrit une réduction : l'authentification multifacteur diminue la vraisemblance d'une compromission de compte. L'option 4 décrit une acceptation : le risque qui subsiste est accepté formellement par la direction.",
       "source_ref": "EBIOS Risk Manager (ANSSI, 2018), atelier 5 : stratégie de traitement du risque (réduire, transférer, éviter, accepter) ; ISO/IEC 27005",
       "estimated_seconds": 70,

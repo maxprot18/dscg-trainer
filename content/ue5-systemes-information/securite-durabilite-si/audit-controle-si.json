@@ -22,6 +22,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : la revue des habilitations est un contrôle général informatique de gestion des accès.",
+        "Inexact : la procédure de mise en production est un contrôle général informatique de gestion des changements.",
+        "Exact : le rapprochement automatique commande / réception / facture est intégré à l'application et porte sur des transactions : contrôle applicatif.",
+        "Inexact : la sauvegarde supervisée est un contrôle général informatique d'exploitation, commun à toutes les applications."
+      ],
       "explanation": "Le rapprochement automatique commande / réception / facture est intégré à l'application et porte sur des transactions : c'est un contrôle applicatif (option 3). Les trois autres sont des contrôles généraux informatiques, qui portent sur l'environnement de toutes les applications : gestion des accès (option 1), gestion des changements (option 2) et exploitation (option 4). C'est leur efficacité qui permet de se fier dans la durée au contrôle applicatif.",
       "source_ref": "NEP 315 (connaissance du système d’information) ; COBIT 2019, domaines BAI (changements) et DSS (exploitation)",
       "estimated_seconds": 60,
@@ -50,6 +56,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : consulter des comptes et éditer des relances est une tâche de recouvrement sans mouvement de fonds.",
+        "Inexact : la saisie de commandes est associée à une simple consultation, sans pouvoir de validation.",
+        "Inexact : ce cumul est normal ; la note de frais reste soumise à la validation d'un responsable.",
+        "Exact : modifier un RIB fournisseur et valider soi-même le virement permet de détourner un paiement seul : tâches incompatibles."
+      ],
       "explanation": "Pouvoir modifier un RIB fournisseur et valider soi-même le virement permet de détourner un paiement sans intervention d'une autre personne (option 4) : ces deux tâches sont incompatibles et doivent être séparées. L'option 1 combine une consultation et une tâche de recouvrement sans mouvement de fonds. L'option 2 associe une saisie à une simple consultation, sans validation. L'option 3 est normale : la note de frais reste soumise à la validation d'un responsable.",
       "source_ref": "Principe de séparation des tâches (contrôle interne) ; COBIT 2019, objectif DSS05 (gestion des services de sécurité, droits d’accès)",
       "estimated_seconds": 60,
@@ -116,6 +128,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : un rapport de type 1 ne décrit la conception des contrôles qu'à une date ; il ne prouve pas leur fonctionnement sur l'exercice.",
+        "Inexact : le certificat ISO/IEC 27001 atteste un système de management de la sécurité, pas l'efficacité des contrôles sur la paie.",
+        "Inexact : un SOC 2 porte sur la sécurité ou la disponibilité, pas sur les contrôles touchant l'information financière.",
+        "Exact : l'auditeur a besoin d'un rapport sur les contrôles utiles à l'information financière (SOC 1), testés sur la période (type 2)."
+      ],
       "explanation": "Pour s'appuyer sur des contrôles tout au long de l'exercice, l'auditeur a besoin d'un rapport qui porte sur les contrôles utiles à l'information financière (ISAE 3402 / SOC 1) et qui teste leur efficacité sur une période (type 2) : option 4. L'option 1 ne décrit la conception des contrôles qu'à une date : elle ne prouve pas leur fonctionnement pendant l'exercice. L'option 2 atteste l'existence d'un système de management de la sécurité, pas l'efficacité des contrôles du traitement de la paie. L'option 3 porte sur la sécurité, la disponibilité ou la confidentialité, et non sur les contrôles qui touchent l'information financière.",
       "source_ref": "ISAE 3402 (rapports d'assurance sur les contrôles d'une société de services) ; rapports SOC 1 / SOC 2, type 1 et type 2",
       "estimated_seconds": 70,

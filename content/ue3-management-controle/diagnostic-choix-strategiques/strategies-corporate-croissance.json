@@ -21,6 +21,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : le chocolatier prend le contrôle de son fournisseur de matière première, une activité située en amont de sa filière.",
+        "Inexact : l'intégration aval porterait sur une activité entre le chocolatier et le client final (distribution, boutiques).",
+        "Inexact : l'intégration horizontale consiste à racheter un concurrent, ici un autre chocolatier.",
+        "Inexact : la diversification conglomérale vise une activité sans lien avec le métier ; le cacao est la matière première du chocolat."
+      ],
       "explanation": "L'option 1 est exacte : le chocolatier prend le contrôle de son fournisseur de matière première, c'est-à-dire d'une activité située en amont de sa filière ; il s'agit d'une intégration verticale amont (sécurisation des approvisionnements, captation de la marge du fournisseur). L'option 2 est fausse : l'intégration aval porterait sur une activité située entre le chocolatier et le client final (distribution, boutiques). L'option 3 est fausse : l'intégration horizontale consiste à racheter un concurrent, ici un autre chocolatier. L'option 4 est fausse : la diversification conglomérale vise une activité sans lien avec le métier, alors que le cacao est la matière première du chocolat.",
       "source_ref": "Programme DSCG UE3 (arrêté du 4 août 2025), stratégies de groupe ; intégration verticale",
       "verified": true,
@@ -46,6 +52,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : le développement de produits vise les clients actuels (fabricants de tondeuses) ; ici le marché aussi est nouveau.",
+        "Inexact : la diversification conglomérale n'aurait aucun lien de métier ; or la technologie et l'outil industriel sont communs.",
+        "Inexact : la pénétration consiste à vendre davantage les produits actuels sur les marchés actuels.",
+        "Exact : produit et marché nouveaux caractérisent une diversification, liée car elle exploite la technologie et les usines existantes."
       ],
       "explanation": "L'option 4 est exacte : le produit (moteur de bateau) et le marché (chantiers navals) sont nouveaux, ce qui caractérise une diversification ; elle est liée (concentrique) car elle exploite la technologie et l'outil industriel existants. L'option 1 est fausse : le développement de produits propose un produit nouveau aux clients actuels (les fabricants de tondeuses), ce qui n'est pas le cas. L'option 2 est fausse : une diversification conglomérale n'aurait aucun lien de métier avec l'activité actuelle, or la technologie est commune. L'option 3 est fausse : la pénétration consiste à vendre davantage les produits actuels sur les marchés actuels.",
       "source_ref": "H.I. Ansoff, « Strategies for Diversification » (1957) et Corporate Strategy (1965), matrice produits-marchés",
@@ -75,6 +87,12 @@
         2
       ],
       "multiple": true,
+      "option_explanations": [
+        "Exact : la croissance externe donne un accès rapide à des parts de marché, compétences, marques ou réseaux déjà constitués.",
+        "Inexact : l'acquéreur paie le plus souvent une prime de contrôle au-dessus de la valeur de marché, à compenser par les synergies.",
+        "Exact : racheter un concurrent supprime un rival et accroît le pouvoir de marché, sous réserve du contrôle des concentrations.",
+        "Inexact : l'intégration des équipes, des systèmes et des cultures est au contraire la principale difficulté des acquisitions."
+      ],
       "explanation": "Les options 1 et 3 sont exactes : la croissance externe donne un accès rapide à des parts de marché, des compétences, des marques ou des réseaux déjà constitués, et le rachat d'un concurrent supprime un rival et accroît le pouvoir de marché (sous réserve du contrôle des concentrations). L'option 2 est fausse : l'acquéreur paie le plus souvent une prime de contrôle au-dessus de la valeur de marché, qui doit être compensée par les synergies. L'option 4 est fausse : l'intégration des équipes, des systèmes et des cultures est au contraire la principale difficulté et une cause fréquente d'échec des acquisitions.",
       "source_ref": "Programme DSCG UE3 (arrêté du 4 août 2025), stratégies de groupe ; modalités de croissance (interne, externe, conjointe)",
       "verified": true,

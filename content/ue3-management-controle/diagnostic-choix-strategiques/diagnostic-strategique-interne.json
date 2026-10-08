@@ -21,6 +21,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : les approvisionnements (achats des intrants pour toutes les activités) sont une activité de soutien, avec l'infrastructure, les RH et la technologie.",
+        "Inexact : la logistique interne (réception, stockage des intrants) est une activité principale ; ne pas la confondre avec la fonction achats.",
+        "Inexact : les services (après-vente, installation) sont une activité principale de la chaîne de valeur.",
+        "Inexact : la commercialisation et la vente sont une activité principale, pas une activité de soutien."
+      ],
       "explanation": "L'option 1 est exacte : dans la chaîne de valeur de Porter, les approvisionnements (la fonction achats, qui acquiert les intrants pour toutes les activités) font partie des activités de soutien, avec l'infrastructure, la gestion des ressources humaines et le développement technologique. L'option 2 est fausse : la logistique interne (réception, stockage, manutention des intrants) est une activité principale ; ne pas la confondre avec la fonction achats. Les options 3 et 4 sont fausses : les services (après-vente, installation) et la commercialisation-vente sont des activités principales.",
       "source_ref": "M. Porter, Competitive Advantage (1985), chaîne de valeur",
       "verified": true,
@@ -47,6 +53,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : l'avantage durable suppose en outre une ressource difficilement imitable et exploitée par l'organisation.",
+        "Exact : valorisable et rare, la ressource procure un avantage ; facile à imiter, il ne dure que jusqu'à sa reproduction.",
+        "Inexact : la parité concurrentielle correspond à une ressource valorisable mais non rare, que tous les concurrents possèdent.",
+        "Inexact : une ressource valorisable ne crée pas de désavantage ; celui-ci vient d'une ressource absente ou sans valeur."
       ],
       "explanation": "L'option 2 est exacte : selon la grille VRIO, une ressource valorisable et rare procure un avantage, mais s'il est facile de l'imiter cet avantage ne dure que le temps que les concurrents la reproduisent. L'option 1 est fausse : l'avantage durable suppose en plus que la ressource soit difficilement imitable (et exploitée par l'organisation). L'option 3 est fausse : la parité concurrentielle correspond à une ressource valorisable mais non rare, que tous les concurrents possèdent. L'option 4 est fausse : une ressource valorisable ne crée pas de désavantage ; le désavantage vient de l'absence d'une ressource que les concurrents détiennent, ou d'une ressource sans valeur.",
       "source_ref": "J. Barney (1991), approche par les ressources ; J. Barney (1995), grille VRIO",
