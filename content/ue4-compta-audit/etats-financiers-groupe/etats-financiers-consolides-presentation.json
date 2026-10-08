@@ -22,6 +22,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : l'état du résultat global relève des IFRS (IFRS 18 §86) ; en ANC 2020-01, les écarts de conversion vont directement en capitaux propres.",
+        "Exact : bilan, compte de résultat et annexe consolidés forment un tout indissociable (art. L. 233-20) ; le rapport de gestion du groupe est distinct.",
+        "Inexact : l'annexe fait partie des comptes consolidés, que la société soit cotée ou non.",
+        "Inexact : le compte de résultat consolidé présente le résultat de l'ensemble, puis sa répartition entre minoritaires et part du groupe."
+      ],
       "explanation": "Le Code de commerce (art. L233-20) et le règlement ANC 2020-01 font du bilan, du compte de résultat et de l'annexe consolidés un tout indissociable (option 2) ; le rapport sur la gestion du groupe est un document distinct, qui ne remplace pas l'annexe. L'option 1 décrit l'état du résultat global des IFRS (IFRS 18 §10 et §86, ex-IAS 1 §10 et §81A) : le règlement ANC 2020-01 n'en comporte pas, les écarts de conversion étant inscrits directement dans les capitaux propres consolidés. L'option 3 est fausse : l'annexe fait partie des comptes consolidés quelle que soit la cotation. L'option 4 est fausse : le compte de résultat consolidé fait apparaître le résultat de l'ensemble consolidé, puis sa répartition entre intérêts minoritaires et part du groupe.",
       "source_ref": "C. com. art. L233-20 ; règl. ANC 2020-01, présentation des comptes consolidés ; IFRS 18 §10 et §86 (règlement UE 2023/1803 modifié par le règl. UE 2026/338 ; ex-IAS 1 §10 et §81A)",
       "verified": true,
@@ -49,6 +55,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : 590 k€ impute au groupe la totalité de l'écart de conversion, alors que 25 % (−50 k€) reviennent aux PNC.",
+        "Inexact : 740 k€ est le résultat global total de l'ensemble consolidé (640 + 100), non ventilé.",
+        "Inexact : 790 k€ oublie l'écart de conversion, dont la part du groupe s'élève à 75 % × (−200) = −150 k€.",
+        "Exact : 750 − 150 (75 % de l'écart de conversion) + 40 (écarts actuariels de la mère) = 640 k€."
       ],
       "explanation": "Résultat net part du groupe = 900 − 150 = 750 k€. L'écart de conversion est partagé : 75 % × (−200) = −150 k€ pour le groupe et −50 k€ pour les PNC (IAS 21 §41). Les écarts actuariels de la mère reviennent intégralement au groupe : +40 k€. Résultat global part du groupe = 750 − 150 + 40 = 640 k€ (option 4) ; part des PNC = 150 − 50 = 100 k€. L'option 1 (590) impute la totalité de l'écart de conversion au groupe. L'option 2 (740) est le résultat global total de l'ensemble consolidé (640 + 100), non ventilé. L'option 3 (790) oublie l'écart de conversion.",
       "source_ref": "IFRS 18 §87 et §88 (règlement UE 2023/1803 modifié par le règl. UE 2026/338 ; ex-IAS 1 §81B et §82A) ; IAS 21 §41 (règlement UE 2023/1803)",

@@ -106,6 +106,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : le mali suit l'actif auquel il est affecté ; il ne peut rester à l'actif sans sous-jacent après la cession.",
+        "Inexact : le vrai mali, part sans contrepartie, se détermine à la date de la fusion ; la cession ne transforme pas le mali technique.",
+        "Exact : le mali technique suit l'actif ; à la cession du terrain, la quote-part est sortie et diminue le résultat de cession.",
+        "Inexact : le mali affecté à un terrain ne peut pas être réaffecté au fonds commercial."
+      ],
       "explanation": "Le mali technique suit l'actif auquel il est affecté. Lorsque cet actif est cédé, la quote-part de mali correspondante est sortie de l'actif et comptabilisée en résultat avec la cession, ce qui diminue le résultat de cession. L'option 1 est fausse : le mali ne peut rester à l'actif sans sous-jacent. L'option 2 est fausse : le vrai mali est la part du mali sans contrepartie, déterminée à la date de la fusion ; la cession ne transforme pas le mali technique en vrai mali. L'option 4 est fausse : le mali affecté à un terrain ne peut être réaffecté au fonds commercial.",
       "source_ref": "PCG titre VII, traitement du mali technique (règl. ANC 2014-03 modifié par les règl. ANC 2015-06 et 2017-01)",
       "verified": true,

@@ -22,6 +22,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : le compte 271 vise les titres détenus durablement sans intention d'influence ou de contrôle.",
+        "Inexact : le compte 273 (TIAP) vise un portefeuille géré pour sa rentabilité, sans intervention dans la gestion.",
+        "Exact : détention durable utile à l'activité, pour exercer une influence : titres de participation (261), présumés au-delà de 10 %.",
+        "Inexact : le compte 503 vise des titres acquis pour être revendus à brève échéance, contraire à la détention durable."
+      ],
       "explanation": "Les titres dont la possession durable est estimée utile à l'activité, notamment parce qu'elle permet d'exercer une influence ou un contrôle sur la société émettrice, sont des titres de participation (compte 261) ; une détention de plus de 10 % du capital fait d'ailleurs présumer cette qualification. Le compte 271 vise les titres détenus durablement sans ces caractéristiques ; le compte 273 (TIAP) un portefeuille géré pour sa rentabilité, sans intervention dans la gestion des sociétés ; le compte 503 des titres acquis pour être revendus à brève échéance, ce qui contredit l'intention de détention durable.",
       "source_ref": "PCG art. 221-1 s. (règl. ANC 2014-03) ; liste des comptes : 261, 271, 273, 503",
       "estimated_seconds": 60
@@ -48,6 +54,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : aucune compensation n'est admise entre les lignes ; l'évaluation se fait ligne par ligne.",
+        "Inexact : la référence pour les titres cotés est le cours moyen du dernier mois, pas le cours du 31/12/N.",
+        "Inexact : constater la plus-value latente d'Alpha en produit méconnaît le principe de prudence.",
+        "Exact : au cours moyen de décembre, ligne par ligne ; Beta : 6 500 − 8 000, dépréciation de 1 500 € ; plus-value d'Alpha ignorée."
       ],
       "explanation": "Les titres cotés de placement sont évalués à la clôture au cours moyen du dernier mois de l'exercice, ligne par ligne. Beta : 6 500 − 8 000 = moins-value latente de 1 500 €, dépréciée (6866 / 590). Alpha : plus-value latente de 2 000 €, non comptabilisée par prudence. Aucune compensation n'est admise entre les lignes, ce qui écarte la première réponse. Le cours du jour de clôture (qui donnerait une dépréciation de 1 200 €) n'est pas la référence retenue pour les titres cotés. Constater la plus-value latente en produit méconnaît le principe de prudence.",
       "source_ref": "PCG art. 221-1 s. (évaluation des titres à l'inventaire, règl. ANC 2014-03) ; C. com. L123-19 (non-compensation) ; comptes 590 et 6866",

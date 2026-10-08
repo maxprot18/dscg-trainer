@@ -22,6 +22,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : le Code de commerce limite la soulte à 10 % de la valeur nominale des parts ou actions attribuées.",
+        "Inexact : la limite de 10 % se calcule sur la valeur nominale, non sur la valeur réelle des actions attribuées.",
+        "Inexact : la base est constituée des titres attribués aux associés de l'absorbée, non du capital total de l'absorbante.",
+        "Inexact : la loi plafonne la soulte, sinon l'opération ne serait plus rémunérée principalement en titres."
+      ],
       "explanation": "Le Code de commerce autorise le versement d'une soulte en espèces aux associés de la société absorbée, dans la limite de 10 % de la valeur nominale des parts ou actions attribuées. L'option 2 est fausse : la limite se calcule sur la valeur nominale, non sur la valeur réelle. L'option 3 est fausse : la base est constituée des titres attribués aux associés de l'absorbée, non du capital total de l'absorbante. L'option 4 est fausse : la loi plafonne la soulte, sinon l'opération ne serait plus rémunérée principalement en titres.",
       "source_ref": "C. com. art. L. 236-1 et s. (rédaction issue de l'ordonnance n° 2023-393)",
       "verified": true,
@@ -48,6 +54,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : la valeur nominale ne mesure pas la valeur des sociétés et ne peut fonder la parité.",
+        "Inexact : la valeur d'apport sert à la comptabilisation ; la parité repose sur des valeurs réelles.",
+        "Exact : pour une parité équitable, les deux sociétés s'évaluent selon les mêmes méthodes, pondérations et date.",
+        "Inexact : la liberté de choix des méthodes est encadrée par l'exigence d'homogénéité, vérifiée par le commissaire à la fusion."
       ],
       "explanation": "La parité compare la valeur des deux sociétés : pour qu'elle soit équitable, les deux sociétés doivent être évaluées selon les mêmes méthodes, avec les mêmes pondérations et à la même date. Évaluer l'absorbante par l'actif net comptable et l'absorbée par la valeur de rendement fausse la comparaison. L'option 1 est fausse : la valeur nominale ne mesure pas la valeur des sociétés. L'option 2 est fausse : la valeur d'apport (comptabilisation) ne détermine pas la parité, qui repose sur des valeurs réelles. L'option 4 est fausse : la liberté de choix des méthodes est encadrée par l'exigence d'homogénéité, que vérifie le commissaire à la fusion.",
       "source_ref": "C. com. art. L. 236-1 et s. (rapport du commissaire à la fusion sur le caractère équitable de la parité)",

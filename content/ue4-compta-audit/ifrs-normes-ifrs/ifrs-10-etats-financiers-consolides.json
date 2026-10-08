@@ -21,6 +21,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : les PNC ne sont pas une dette ; le groupe n'a aucune obligation de remettre de la trésorerie aux minoritaires.",
+        "Inexact : la rubrique intermédiaire entre capitaux propres et dettes relève d'anciennes pratiques françaises, pas des IFRS.",
+        "Inexact : les PNC figurent au bilan ; un simple renvoi en annexe ne suffit pas.",
+        "Exact : les PNC sont présentées dans les capitaux propres, séparément de la part des propriétaires de la mère (IFRS 10 §22)."
+      ],
       "explanation": "Les participations ne donnant pas le contrôle (intérêts minoritaires) sont présentées dans l'état consolidé de la situation financière au sein des capitaux propres, séparément des capitaux propres attribuables aux propriétaires de la mère (IFRS 10 §22 ; IFRS 18 §104, ex-IAS 1 §54 q). Elles ne sont pas une dette : le groupe n'a pas d'obligation de remettre de la trésorerie aux minoritaires. Elles ne sont pas une rubrique intermédiaire entre capitaux propres et dettes (présentation que l'on rencontrait dans d'anciennes pratiques françaises), ni un simple renvoi en annexe.",
       "source_ref": "IFRS 10 §22 et B94 (règlement UE 2023/1803) ; IFRS 18 §104 (règlement UE 2023/1803 modifié par le règl. UE 2026/338 ; ex-IAS 1 §54 q)",
       "verified": true,
@@ -47,6 +53,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : la mise en équivalence sous-estime le pouvoir de Lozère, qui dirige seule les activités pertinentes.",
+        "Exact : 43 % face à un actionnariat très dispersé, sans pacte, et un historique d'adoption des résolutions : contrôle de fait (IFRS 10 B41-B45).",
+        "Inexact : le contrôle ne suppose pas la majorité des droits de vote ; le seuil de 50 % n'est pas une condition.",
+        "Inexact : la cotation de Margeride n'empêche pas la consolidation d'une entité contrôlée."
       ],
       "explanation": "Le contrôle ne suppose pas la majorité des droits de vote. IFRS 10 B41-B45 : un investisseur peut avoir le pouvoir avec moins de la moitié des droits de vote si leur importance relative, par rapport à la dispersion des autres porteurs, lui donne la capacité pratique de diriger unilatéralement les activités pertinentes. Avec 43 % face à des milliers d'actionnaires dont aucun ne dépasse 1 %, sans pacte entre eux, et un historique où Lozère fait seule adopter ses résolutions, le contrôle de fait est caractérisé : intégration globale. La mise en équivalence (influence notable) sous-estime ce pouvoir. Le seuil de 50 % n'est pas une condition, et la cotation de la filiale n'interdit rien.",
       "source_ref": "IFRS 10 §7, §10-11, B38 et B41-B45 (règlement UE 2023/1803)",

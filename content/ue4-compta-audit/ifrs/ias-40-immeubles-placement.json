@@ -41,6 +41,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : un immeuble construit pour être vendu dans le cours normal de l'activité relève d'IAS 2 (IAS 40 §9a).",
+        "Exact : un terrain détenu pour une utilisation future indéterminée est un immeuble de placement (IAS 40 §8b).",
+        "Inexact : occupé par une filiale, il est occupé par le groupe : IAS 16 en consolidé (§15), placement seulement chez la mère.",
+        "Inexact : le siège social est occupé par son propriétaire et relève d'IAS 16 (§9c)."
+      ],
       "explanation": "Un terrain détenu pour une utilisation future indéterminée est un immeuble de placement (IAS 40 §8b) : il est réputé détenu pour valoriser le capital. L'immeuble construit pour être vendu dans le cours normal de l'activité relève d'IAS 2 (§9a). Le bâtiment loué à une filiale est occupé par le groupe : immeuble de placement dans les comptes individuels de la mère, mais pas dans les comptes consolidés (§15), où il relève d'IAS 16. Le siège social est occupé par son propriétaire : IAS 16 (§9c).",
       "source_ref": "IAS 40 §5, §8-9 et §15 (règlement UE 2023/1803)",
       "verified": true,
@@ -67,6 +73,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : seules les variations de juste valeur postérieures au transfert iront en résultat (§35).",
+        "Exact : l'écart au transfert est traité comme une réévaluation IAS 16 (IAS 40 §61) : hausse en OCI, en écart de réévaluation.",
+        "Inexact : le transfert à la valeur comptable ne vaut que pour le modèle du coût (§59).",
+        "Inexact : l'écart de 250 000 € est une hausse portée en écart de réévaluation, pas une diminution du coût."
       ],
       "explanation": "Lors du transfert d'un bien occupé par son propriétaire vers un immeuble de placement évalué à la juste valeur, l'entité applique IAS 16 jusqu'à la date du changement d'utilisation, puis traite l'écart entre la valeur comptable et la juste valeur comme une réévaluation selon IAS 16 (IAS 40 §61) : la hausse est portée en OCI, en écart de réévaluation, sauf reprise d'une baisse antérieure passée en résultat (IAS 16 §39). Les variations ultérieures de juste valeur iront en résultat (§35). Le transfert à la valeur comptable ne vaut que pour le modèle du coût (§59).",
       "source_ref": "IAS 40 §57 et §61 ; IAS 16 §39-40 (règlement UE 2023/1803)",

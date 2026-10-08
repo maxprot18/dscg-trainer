@@ -63,6 +63,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : la commande ne fait pas entrer la machine dans le patrimoine ; l'amortissement ne peut pas commencer.",
+        "Inexact : la livraison fixe l'entrée à l'actif, mais la machine n'est pas encore utilisable ; la consommation des avantages n'a pas commencé.",
+        "Inexact : rien ne justifie de différer l'amortissement à l'exercice suivant ; il court prorata temporis dès la mise en service.",
+        "Exact : l'amortissement court dès le début de consommation des avantages, en pratique la mise en service, prorata temporis."
+      ],
       "explanation": "L’amortissement commence à la date de début de consommation des avantages économiques attachés à l’actif, c’est-à-dire en pratique à sa mise en service (01/05/N), avec un calcul prorata temporis. La commande ne fait pas entrer l’actif dans le patrimoine ; la livraison et la facture fixent l’entrée à l’actif mais la machine n’est pas encore utilisable ; rien ne justifie de différer l’amortissement à l’exercice suivant. À noter : le dégressif fiscal court, lui, à partir du premier jour du mois d’acquisition.",
       "source_ref": "PCG art. 214-1 s. (règl. ANC 2014-03), règles d’amortissement",
       "estimated_seconds": 45,
@@ -89,6 +95,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : 30 000 € compare la VNC à la seule valeur vénale ; la valeur actuelle est la plus élevée des deux valeurs.",
+        "Exact : valeur actuelle = max(50 000 ; 65 000) = 65 000 € ; dépréciation = 80 000 − 65 000 = 15 000 €.",
+        "Inexact : 22 500 € repose sur une moyenne des deux valeurs, sans fondement ; on retient la plus élevée.",
+        "Inexact : la valeur actuelle de 65 000 € est inférieure à la VNC de 80 000 € ; une dépréciation s'impose."
       ],
       "explanation": "La valeur actuelle est la plus élevée de la valeur vénale et de la valeur d’usage : max(50 000 ; 65 000) = 65 000 €. Elle est inférieure à la VNC (80 000 €) : dépréciation = 80 000 − 65 000 = 15 000 € (6816 / 29x). 30 000 € résulte d’une comparaison avec la seule valeur vénale ; 22 500 € d’une moyenne des deux valeurs, sans fondement ; l’absence de dépréciation ne serait justifiée que si la valeur actuelle était au moins égale à la VNC.",
       "source_ref": "PCG art. 214-1 s. (règl. ANC 2014-03), dépréciation des actifs ; comptes 291 et 6816",

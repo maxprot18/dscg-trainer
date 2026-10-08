@@ -22,6 +22,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : la durée d'utilité est une estimation ; l'application rétrospective est réservée aux changements de méthode.",
+        "Inexact : il n'y a pas d'erreur, l'information disponible à l'époque ayant été utilisée de bonne foi.",
+        "Exact : réviser la durée d'utilité est un changement d'estimation, appliqué prospectivement sur N et les exercices suivants.",
+        "Inexact : aucun effet cumulé n'est imputé sur les capitaux propres pour un changement d'estimation."
+      ],
       "explanation": "La durée d'utilité d'un actif est une estimation comptable : sa révision, due à une information nouvelle, constitue un changement d'estimation et non un changement de méthode ni une correction d'erreur. Son effet est comptabilisé de manière prospective, en résultat de l'exercice du changement et des exercices futurs concernés : la valeur nette comptable résiduelle est amortie sur la durée restante révisée. L'application rétrospective avec retraitement des comparatifs est réservée aux changements de méthode comptable. Le retraitement des capitaux propres d'ouverture vise la correction d'erreurs, ce qui suppose que l'information disponible à l'époque ait été mal utilisée ou ignorée, ce que l'énoncé exclut. Enfin, aucun effet cumulé n'est imputé sur les capitaux propres pour un changement d'estimation.",
       "source_ref": "IAS 8 §5, §32-38 et §41-42 (règlement UE 2023/1803) ; IAS 16 §51 (règlement UE 2023/1803)",
       "verified": true,
@@ -51,6 +57,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : aucune information nouvelle sur un montant incertain ; changer de formule de coût n'est pas un changement d'estimation.",
+        "Exact : changement de méthode permis s'il est plus pertinent (IAS 8 §14 b)), appliqué rétrospectivement avec retraitement des comparatifs.",
+        "Inexact : il n'y a pas d'erreur, la méthode FIFO était correctement appliquée.",
+        "Inexact : IAS 8 encadre les changements volontaires de méthode sans les interdire."
       ]
     },
     {
@@ -77,6 +89,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : la méthode, amortir selon le rythme de consommation, est inchangée ; changer de mode n'est pas un changement de méthode.",
+        "Inexact : le mode linéaire n'était pas une mauvaise utilisation des informations disponibles ; il n'y a pas d'erreur.",
+        "Inexact : ce n'est pas un changement de méthode, et IAS 8 ne prévoit aucune imputation d'un effet cumulé en résultat.",
+        "Exact : IAS 16 §61 qualifie le changement de mode de changement d'estimation : la valeur nette restante est amortie selon le nouveau mode."
       ]
     },
     {

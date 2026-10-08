@@ -22,6 +22,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : le règlement exclut le maintien de ces écritures d'origine purement fiscale (art. 272-1).",
+        "Inexact : les amortissements dérogatoires ne correspondent à aucun passif ; ils ne sont pas des provisions pour risques.",
+        "Exact : écritures purement fiscales annulées contre réserves et résultat ; l'écart avec la base fiscale crée un impôt différé passif.",
+        "Inexact : l'annulation crée un écart entre valeur consolidée et base fiscale ; il faut constater un impôt différé passif."
+      ],
       "explanation": "Les amortissements dérogatoires (compte 145) sont des écritures d'origine purement fiscale : ils sont annulés en consolidation, en contrepartie des réserves (part antérieure) et du résultat (dotation ou reprise de l'exercice). L'annulation fait apparaître un écart entre la valeur consolidée et la base fiscale, d'où un impôt différé passif. L'option 1 les maintient, ce que le règlement exclut ; l'option 2 les reclasse en provisions alors qu'ils ne correspondent à aucun passif ; l'option 4 oublie l'impôt différé.",
       "source_ref": "Règl. ANC 2020-01 art. 272-1 (élimination des écritures passées pour la seule application des législations fiscales) ; PCG compte 145",
       "verified": true,
@@ -48,6 +54,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : c'était une méthode préférentielle sous le règlement CRC 99-02 ; le règlement ANC 2020-01 rend le retraitement obligatoire.",
+        "Inexact : la durée du contrat n'est pas le critère ; tout contrat de location-financement est retraité.",
+        "Inexact : cette réponse confond avec les comptes individuels, où le PCG maintient les redevances en charges.",
+        "Exact : le règlement ANC 2020-01 (art. 272-2) impose d'inscrire le bien à l'actif et la dette financière au passif."
       ],
       "explanation": "Le règlement ANC 2020-01 rend obligatoire, dans les comptes consolidés, la comptabilisation à l'actif des biens pris en location-financement (crédit-bail notamment) avec une dette financière au passif ; sous le règlement CRC 99-02, ce traitement était une méthode préférentielle. L'option 1 décrit l'ancien régime ; l'option 3 confond comptes consolidés et comptes individuels, où le PCG maintient la comptabilisation des redevances en charges ; l'option 2 est sans fondement : la durée du contrat n'est pas le critère.",
       "source_ref": "Règl. ANC 2020-01 art. 272-2 (contrats de crédit-bail et assimilés)",

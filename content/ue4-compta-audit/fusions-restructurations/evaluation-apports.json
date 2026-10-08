@@ -23,6 +23,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : le contrôle distinct ne suffit pas ; il faut aussi une opération à l'endroit pour retenir la valeur réelle.",
+        "Exact : contrôle distinct, mais les actionnaires de Brix prennent le contrôle d'Albe : opération à l'envers, apports à la valeur comptable.",
+        "Inexact : la valeur d'apport n'est pas laissée au libre choix des parties ; les règles du PCG sont impératives.",
+        "Inexact : le PCG ne distingue pas selon la nature des actifs ; la même valeur s'applique à l'ensemble des apports."
+      ],
       "explanation": "Le PCG (titre VII issu du règlement ANC 2017-01) fixe la valeur d'apport selon deux critères : le contrôle des sociétés avant l'opération (commun ou distinct) et le sens de l'opération. Entre sociétés sous contrôle distinct, les apports sont évalués à la valeur réelle si l'opération est réalisée « à l'endroit », c'est-à-dire si les actionnaires de l'absorbante gardent le contrôle. Ici, ce sont les actionnaires de l'absorbée (Brix) qui prennent le contrôle de l'absorbante : l'opération est « à l'envers » et les apports doivent être retenus à leur valeur comptable, pour éviter de réévaluer les actifs de l'entité qui est en réalité l'acquéreur. La première option oublie le critère du sens de l'opération. La valeur d'apport n'est pas laissée au libre choix des parties : les règles sont impératives (hors exceptions limitées prévues par le texte). Enfin, le PCG ne distingue pas selon la nature des actifs : la même valeur s'applique à l'ensemble des apports.",
       "source_ref": "PCG titre VII, règles d’évaluation des apports (règl. ANC 2014-03 modifié par le règl. ANC 2017-01)",
       "verified": true,
@@ -50,6 +56,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : la prime de fusion est l'écart entre valeur d'apport et nominal des titres émis ; elle ne remplace pas un élément d'actif.",
+        "Inexact : l'écart n'est pas un profit ; il correspond à un actif acquis.",
+        "Exact : l'écart, qui correspond aux éléments non identifiables séparément, est inscrit en fonds commercial (compte 207) chez l'absorbante.",
+        "Inexact : la valeur d'apport totale est la valeur globale ; l'écart doit donc être comptabilisé."
+      ],
       "explanation": "En valeur réelle, chaque actif et passif identifiable (y compris ceux qui ne figuraient pas au bilan de l'absorbée) est évalué isolément. La valeur globale de l'absorbée retenue pour la parité peut dépasser la somme de ces valeurs : l'écart, qui correspond aux éléments non identifiables séparément, est inscrit en fonds commercial (compte 207) chez l'absorbante. L'option 1 est fausse : la prime de fusion est l'écart entre la valeur d'apport et le nominal des titres émis, elle ne remplace pas un élément d'actif. L'option 2 est fausse : l'écart n'est pas un profit, il correspond à un actif acquis. L'option 4 est fausse : la valeur d'apport totale est la valeur globale, l'écart doit donc être comptabilisé.",
       "source_ref": "PCG titre VII, règles d’évaluation des apports (règl. ANC 2014-03 modifié par le règl. ANC 2017-01) ; compte 207",
       "verified": true,
@@ -76,6 +88,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : inscrire la valeur nette comme nouvelle valeur brute ne respecte pas la règle de reprise du détail.",
+        "Exact : en valeur comptable, l'absorbante reprend le détail des comptes de l'absorbée : 500 000 € de valeur brute et 300 000 € d'amortissements.",
+        "Inexact : la valeur réelle n'est pas retenue en contrôle commun ; les apports d'une filiale vont à la valeur comptable.",
+        "Inexact : l'absorbante poursuit les plans d'amortissement à partir des valeurs reprises ; les amortissements cumulés ne sont pas abandonnés."
       ],
       "explanation": "Lorsque les apports sont évalués à la valeur comptable, l'absorbante reprend le détail figurant dans les comptes de l'absorbée : valeur brute, amortissements et dépréciations. La machine est donc inscrite pour 500 000 € au débit du compte d'immobilisation et 300 000 € au crédit du compte d'amortissements. L'option 1 est fausse : inscrire la valeur nette comme nouvelle valeur brute ne respecte plus la règle de reprise du détail. L'option 3 est fausse : la valeur réelle n'est pas retenue en contrôle commun. L'option 4 est fausse : l'absorbante continue les plans d'amortissement à partir des valeurs reprises ; on n'abandonne pas les amortissements cumulés.",
       "source_ref": "PCG titre VII, apports évalués à la valeur comptable (règl. ANC 2014-03 modifié par les règl. ANC 2017-01 et 2019-06)",

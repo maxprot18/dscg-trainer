@@ -22,6 +22,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : les indemnités de fin de carrière garantissent un montant fonction du salaire et de l'ancienneté : prestations définies.",
+        "Inexact : la retraite « chapeau » garantit un niveau de prestation : régime à prestations définies.",
+        "Inexact : les médailles du travail sont d'autres avantages à long terme (§153), pas des avantages postérieurs à l'emploi.",
+        "Exact : l'employeur ne verse que des cotisations, sans risque actuariel ni de placement (IAS 19 §28) : cotisations définies."
+      ],
       "explanation": "Dans un régime à cotisations définies, l'obligation de l'employeur se limite au versement des cotisations : il ne supporte ni le risque actuariel ni le risque de placement (IAS 19 §28). C'est le cas des cotisations aux régimes obligatoires de retraite complémentaire, comptabilisées en charges quand elles sont dues. Les indemnités de fin de carrière sont un régime à prestations définies : l'employeur garantit un montant fonction du salaire et de l'ancienneté. La retraite « chapeau » garantit un niveau de prestation : prestations définies. Les médailles du travail ne sont pas des avantages postérieurs à l'emploi mais d'autres avantages à long terme (§153).",
       "source_ref": "IAS 19 §8, §26-31 et §153 (règlement UE 2023/1803)",
       "verified": true,
@@ -48,6 +54,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : l'OCI sans recyclage vaut pour les seuls avantages postérieurs à l'emploi à prestations définies (§120 c)), pas pour les médailles du travail.",
+        "Exact : pour les autres avantages à long terme, toutes les composantes du coût, réévaluations comprises, vont en résultat (IAS 19 §154-156).",
+        "Inexact : IAS 19 n'autorise jamais le recyclage des réévaluations, et celles des médailles vont directement en résultat.",
+        "Inexact : la méthode du corridor a été supprimée lors de la révision d'IAS 19 en 2011."
       ],
       "explanation": "Les médailles du travail sont d'« autres avantages à long terme ». Leur engagement est évalué comme celui d'un régime à prestations définies, mais toutes les composantes du coût, y compris les réévaluations, sont comptabilisées en résultat (IAS 19 §154-156). Le traitement en OCI sans recyclage concerne les seuls avantages postérieurs à l'emploi à prestations définies (§120c, §122) : c'est le piège classique. IAS 19 n'autorise jamais le recyclage des réévaluations, et la méthode du corridor a été supprimée lors de la révision de 2011.",
       "source_ref": "IAS 19 §153-156 (règlement UE 2023/1803)",

@@ -24,6 +24,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : la future déduction fera payer moins d'impôt, pas plus ; c'est un actif, et non un passif, d'impôt différé.",
+        "Inexact : la charge sera déduite plus tard ; c'est une différence temporelle, et non permanente.",
+        "Exact : base fiscale nulle, différence temporelle déductible de 40 000 € ; actif d'impôt différé de 10 000 € (IAS 12 §24).",
+        "Inexact : attendre le paiement ignore la différence temporelle existant à la clôture ; l'actif est comptabilisé dès N."
       ]
     },
     {
@@ -50,6 +56,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : le taux courant de 30 % ne s'applique pas à une résorption future soumise à un autre taux adopté.",
+        "Exact : taux attendu lors de la résorption, adopté à la clôture (IAS 12 §47) : 200 000 × 26 % = 52 000 €.",
+        "Inexact : IAS 12 retient le report variable ; le stock d'impôts différés est réévalué à chaque changement de taux.",
+        "Inexact : une moyenne n'aurait de sens que si la différence se résorbait sur plusieurs exercices à taux différents."
       ]
     },
     {

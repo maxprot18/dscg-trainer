@@ -22,6 +22,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : le régime de faveur place justement cette plus-value en sursis ; payer immédiatement l'impôt n'est pas un engagement de l'article 210 A.",
+        "Inexact : reprendre les provisions dont l'imposition est différée est bien un engagement de l'article 210 A.",
+        "Inexact : calculer les plus-values ultérieures sur la valeur fiscale chez l'absorbée est bien un engagement de l'article 210 A.",
+        "Inexact : réintégrer de manière étalée les plus-values sur biens amortissables est bien un engagement de l'article 210 A."
+      ],
       "explanation": "Le régime de faveur exonère précisément la plus-value sur immobilisations non amortissables chez l'absorbée : elle est placée en sursis, l'absorbante calculant la plus-value de cession ultérieure d'après la valeur fiscale chez l'absorbée. Payer immédiatement l'impôt n'est donc pas un engagement du régime (option 1). Les options 2, 3 et 4 reprennent des engagements de l'article 210 A : reprise des provisions dont l'imposition est différée, calcul des plus-values ultérieures sur la valeur fiscale d'origine, réintégration étalée des plus-values sur biens amortissables.",
       "source_ref": "CGI art. 210 A",
       "verified": true,
@@ -49,6 +55,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : 150 000 € est la plus-value comptable, calculée sur la valeur d'apport de 500 000 € et non sur la valeur fiscale.",
+        "Exact : la plus-value se calcule d'après la valeur fiscale des biens apportés : 650 000 − 200 000 = 450 000 € (CGI art. 210 B).",
+        "Inexact : 300 000 € (500 000 − 200 000) n'est que la plus-value d'apport en sursis.",
+        "Inexact : 650 000 € est le prix de cession, pas la plus-value."
       ],
       "explanation": "Sous le régime de faveur, la plus-value d'apport de 300 000 € (500 000 − 200 000) n'est pas imposée lors de l'apport, mais l'apporteuse calcule la plus-value de cession des titres reçus d'après la valeur fiscale des biens apportés dans ses écritures, soit 200 000 €. Plus-value imposable = 650 000 − 200 000 = 450 000 € (option 2). L'option 1 (150 000 €) correspond à la plus-value comptable, calculée sur la valeur d'apport ; l'option 3 (300 000 €) n'est que la plus-value en sursis ; l'option 4 confond le prix de cession et la plus-value.",
       "source_ref": "CGI art. 210 B",

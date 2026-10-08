@@ -47,6 +47,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : 50 % × 800 000 € et sa marge relèvent de la méthode à l'avancement, pas de l'achèvement.",
+        "Exact : à l'achèvement, ni chiffre d'affaires ni marge avant livraison ; les coûts sont neutralisés par 300 000 € de travaux en cours (compte 335).",
+        "Inexact : les en-cours sont évalués au coût de production et ne peuvent inclure aucune marge.",
+        "Inexact : laisser les coûts en charges sans constater d'en-cours fausserait le résultat de N."
+      ],
       "explanation": "Selon la méthode à l'achèvement, ni chiffre d'affaires ni marge ne sont reconnus avant la livraison. Les coûts engagés sont neutralisés par la constatation de travaux en cours (compte 335) au coût de production, par le crédit de la variation de production stockée : 300 000 €. La première réponse décrit la méthode à l'avancement (50 % × 800 000 €). Les en-cours ne peuvent inclure de marge (troisième réponse). Laisser les coûts en charges sans en-cours fausserait le résultat de N (quatrième réponse). La marge étant positive, aucune provision n'est nécessaire.",
       "source_ref": "PCG art. 622-1 s. (règl. ANC 2014-03) ; comptes 335 et 7133",
       "estimated_seconds": 75

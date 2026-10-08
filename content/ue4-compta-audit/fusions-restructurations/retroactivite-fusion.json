@@ -22,6 +22,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : le 1er juillet N-1 précède la clôture du dernier exercice clos de Peuplier (31 décembre N-1).",
+        "Inexact : le 1er octobre N-1 précède la clôture du dernier exercice clos de Peuplier (31 décembre N-1).",
+        "Exact : la date d'effet doit se situer entre la clôture du dernier exercice clos de l'absorbée et celle de l'exercice en cours de l'absorbante (L. 236-4).",
+        "Inexact : le 1er mars N+1 est postérieur à la clôture de l'exercice en cours de Platane (31 décembre N)."
+      ],
       "explanation": "La date d'effet stipulée ne peut être antérieure à la clôture du dernier exercice clos de l'absorbée (31 décembre N-1) ni postérieure à la clôture de l'exercice en cours de l'absorbante (31 décembre N). Seul le 1er janvier N respecte ces bornes (option 3). Les options 1 et 2 sont antérieures à la clôture du dernier exercice clos de Peuplier. L'option 4 est postérieure à la clôture de l'exercice en cours de Platane.",
       "source_ref": "C. com. art. L. 236-4",
       "verified": true,
@@ -48,6 +54,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : le résultat intercalaire n'est pas une prime ; il transite par le compte de résultat de l'absorbante.",
+        "Inexact : l'actif net apporté est évalué à la date d'effet ; il ne s'accroît pas du résultat intercalaire.",
+        "Inexact : le résultat intercalaire n'est pas inscrit directement en report à nouveau.",
+        "Exact : avec effet rétroactif, les opérations intercalaires sont faites pour le compte de l'absorbante, qui en reprend produits et charges."
       ],
       "explanation": "Avec effet rétroactif, les apports sont évalués à la date d'effet et les opérations de la période intercalaire sont réputées faites pour le compte de l'absorbante, qui reprend les produits et charges correspondants dans son propre compte de résultat (option 4). L'option 1 est fausse : le résultat intercalaire n'est pas une prime, il transite par le résultat. L'option 2 est fausse : l'actif net apporté est celui de la date d'effet, il ne s'accroît pas du résultat intercalaire. L'option 3 est fausse : le résultat intercalaire n'est pas inscrit directement en report à nouveau.",
       "source_ref": "PCG titre VII (règl. ANC 2014-03 modifié par le règl. ANC 2017-01), rétroactivité et opérations de la période intercalaire",

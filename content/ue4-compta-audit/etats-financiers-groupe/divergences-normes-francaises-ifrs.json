@@ -23,7 +23,13 @@
       "answer": [
         1
       ],
-      "explanation": "En IFRS, le goodwill n'est jamais amorti : il est affecté à des unités génératrices de trésorerie et soumis à un test de dépréciation au moins une fois par an et dès qu'un indice de perte de valeur apparaît (IFRS 3 §B63 ; IAS 36 §10 et §90). Le règlement ANC 2020-01 retient une approche fondée sur la durée d'utilisation : un écart d'acquisition à durée d'utilisation limitée est amorti sur cette durée ; s'il n'existe pas de limite prévisible, il n'est pas amorti mais est testé au moins annuellement. L'amortissement obligatoire sur 10 ans au plus ne correspond à aucun des deux référentiels (il existe seulement une présomption de durée en cas d'impossibilité de déterminer la durée d'utilisation en règles françaises). L'option 3 inverse les deux référentiels. L'imputation sur les capitaux propres n'est pas le traitement de droit commun dans ces référentiels.",
+      "option_explanations": [
+        "Inexact : le goodwill IFRS n'est jamais amorti ; en ANC 2020-01, 10 ans ne valent que pour une durée limitée non déterminable de façon fiable.",
+        "Exact : en IFRS, test au moins annuel sans amortissement (IAS 36 §90) ; en ANC 2020-01, amortissement si durée limitée, sinon test annuel.",
+        "Inexact : fausse sur les deux points : le goodwill IFRS n'est jamais amorti, et l'écart ANC à durée d'utilisation limitée est amorti.",
+        "Inexact : l'imputation sur les capitaux propres n'est le traitement de droit commun dans aucun des deux référentiels."
+      ],
+      "explanation": "En IFRS, le goodwill n'est jamais amorti : il est affecté à des unités génératrices de trésorerie et soumis à un test de dépréciation au moins une fois par an et dès qu'un indice de perte de valeur apparaît (IFRS 3 §B63 ; IAS 36 §10 et §90). Le règlement ANC 2020-01 retient une approche fondée sur la durée d'utilisation : un écart d'acquisition à durée d'utilisation limitée est amorti sur cette durée ; s'il n'existe pas de limite prévisible, il n'est pas amorti mais est testé au moins annuellement. L'amortissement obligatoire sur 10 ans au plus ne correspond à aucun des deux référentiels (il existe seulement une présomption de durée en cas d'impossibilité de déterminer la durée d'utilisation en règles françaises). L'option 3 est fausse sur les deux points : le goodwill IFRS n'est jamais amorti, et l'écart ANC à durée d'utilisation limitée est amorti. L'imputation sur les capitaux propres n'est pas le traitement de droit commun dans ces référentiels.",
       "source_ref": "IFRS 3 §B63 et IAS 36 §10 et §90 (règlement UE 2023/1803) ; règl. ANC 2020-01, écart d’acquisition",
       "verified": true,
       "estimated_seconds": 60
@@ -49,6 +55,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : placer la transition au 01/01/N prive le comparatif N-1 d'une base IFRS ; la date de transition est le 01/01/N-1.",
+        "Inexact : les normes retenues sont celles en vigueur à la clôture des premiers états IFRS (31/12/N), pour toutes les périodes (§7-8).",
+        "Inexact : la date de transition est le début du comparatif, le 01/01/N-1, et les normes sont celles du 31/12/N.",
+        "Exact : avec un comparatif, la transition est au 01/01/N-1 (IFRS 1 §6), selon les normes en vigueur au 31/12/N appliquées à toutes les périodes."
       ],
       "explanation": "La date de transition est le début de la première période pour laquelle l'entité présente une information comparative complète en IFRS (IFRS 1, annexe A) : avec un exercice comparatif N-1, c'est le 01/01/N-1, date de l'état de la situation financière d'ouverture (§6). Les méthodes comptables retenues sont celles des normes en vigueur à la date de clôture des premiers états IFRS, le 31/12/N, appliquées à toutes les périodes présentées (§7-8) : l'option 4 est exacte. Les options 1 et 3 placent la transition au début du premier exercice IFRS et privent le comparatif N-1 d'une base IFRS. L'option 2 retient les normes en vigueur à la date de transition, ce qui conduirait à appliquer des versions différentes selon les périodes.",
       "source_ref": "IFRS 1 §6-8 et annexe A (règlement UE 2023/1803)",

@@ -18,6 +18,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : les frais de transport sont un coût directement attribuable à la mise en place de l'actif.",
+        "Exact : la publicité ne sert pas à mettre l'actif en état de fonctionner ; elle est exclue du coût et passe en charges (art. 213-11).",
+        "Inexact : l'installation et le montage sont des coûts directement attribuables à la mise en état de fonctionner.",
+        "Inexact : les droits de douane non récupérables font partie du prix d'achat."
+      ],
       "explanation": "Le coût d’acquisition comprend le prix d’achat (droits de douane et taxes non récupérables compris) et les coûts directement attribuables engagés pour mettre l’actif en place et en état de fonctionner : transport, installation, montage. Les frais de publicité ne servent pas à mettre l’actif en place et en état de fonctionner : ils sont exclus du coût et comptabilisés en charges (art. 213-11). Les trois autres dépenses sont des éléments du coût d’acquisition (prix d’achat droits de douane compris, coûts directement attribuables).",
       "source_ref": "PCG art. 213-8 et 213-11 (règl. ANC 2014-03), coût d’acquisition des immobilisations",
       "estimated_seconds": 45,
@@ -43,6 +49,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : l'incorporation est la méthode de référence, mais pas une obligation ; le PCG ouvre une option (art. 213-8).",
+        "Inexact : la comptabilisation en charges n'est qu'un terme de l'option ; l'incorporation est aussi permise.",
+        "Inexact : l'option est globale ; elle interdit de choisir immobilisation par immobilisation (avis CU CNC 2005-J).",
+        "Exact : option entre incorporation et charges (art. 213-8), exercée globalement pour toutes les immobilisations corporelles et incorporelles."
       ],
       "explanation": "Les droits de mutation, honoraires, commissions et frais d’actes liés à l’acquisition peuvent être soit incorporés au coût d’acquisition, soit comptabilisés en charges (art. 213-8) ; l’incorporation constitue la méthode de référence (art. 121-5), dont l’adoption est irréversible. Il s’agit d’une option globale : le choix s’applique à l’ensemble des immobilisations corporelles et incorporelles, une option distincte pouvant être exercée pour l’ensemble des titres immobilisés et de placement (avis du Comité d’urgence du CNC n° 2005-J). Les deux premières propositions ignorent l’existence de l’option ; la troisième méconnaît son caractère global, qui interdit de choisir immobilisation par immobilisation.",
       "source_ref": "PCG art. 213-8, 213-22 et 121-5 (règl. ANC 2014-03) ; avis du Comité d’urgence du CNC n° 2005-J du 6 décembre 2005 (caractère global de l’option)",

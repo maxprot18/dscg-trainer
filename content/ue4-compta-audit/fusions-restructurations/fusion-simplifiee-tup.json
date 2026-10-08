@@ -22,6 +22,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : la décision de dissolution ouvre le délai d'opposition des créanciers mais ne transmet pas encore le patrimoine.",
+        "Exact : la transmission intervient à l'issue du délai d'opposition de 30 jours, ou après rejet, remboursement ou garanties (C. civ. art. 1844-5 al. 3).",
+        "Inexact : la transmission universelle de patrimoine se fait justement sans liquidation.",
+        "Inexact : le Code civil ne rattache pas la transmission au début de l'exercice de l'associé unique."
+      ],
       "explanation": "La transmission n'intervient qu'à l'issue du délai d'opposition de 30 jours ouvert aux créanciers à compter de la publication de la dissolution, ou après rejet de l'opposition, remboursement des créances ou constitution de garanties (option 2). L'option 1 est fausse : la décision de dissolution ouvre le délai d'opposition mais ne transmet pas encore le patrimoine. L'option 3 est fausse : la TUP se fait justement sans liquidation. L'option 4 est fausse : le Code civil ne rattache pas la transmission au début de l'exercice de l'associé unique.",
       "source_ref": "C. civ. art. 1844-5 al. 3",
       "verified": true,
@@ -48,6 +54,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : l'article L. 236-11 dispense d'approbation par l'assemblée extraordinaire de l'absorbée.",
+        "Inexact : aucun rapport du commissaire à la fusion n'est requis, faute de parité à apprécier.",
+        "Inexact : aucun échange de titres n'a lieu quand l'absorbante détient tout le capital (L. 236-3 II) ; les titres sont annulés.",
+        "Exact : même simplifiée, la fusion suppose un projet déposé au greffe et publié ; la détention de 100 % doit être permanente depuis ce dépôt (L. 236-11)."
       ],
       "explanation": "Même simplifiée, la fusion suppose un projet de fusion établi, déposé au greffe et publié (option 4) : c'est lui qui ouvre la période pendant laquelle la détention de 100 % doit être permanente. L'option 1 est fausse : l'article L. 236-11 dispense d'approbation par l'assemblée extraordinaire de l'absorbée. L'option 2 est fausse : aucun rapport du commissaire à la fusion n'est requis, faute de parité à apprécier. L'option 3 est fausse : il n'est pas procédé à l'échange de titres lorsque l'absorbante détient la totalité du capital de l'absorbée (art. L. 236-3 II) ; les titres détenus sont annulés.",
       "source_ref": "C. com. art. L. 236-11 et L. 236-3 II (rédaction issue de l'ordonnance n° 2023-393)",

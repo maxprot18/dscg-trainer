@@ -21,6 +21,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : l'écart d'évaluation positif porte la valeur comptable au-dessus de la base fiscale : impôt différé passif.",
+        "Inexact : annuler les dérogatoires, déjà déduits fiscalement, rend la base fiscale de l'actif inférieure à sa valeur consolidée : impôt différé passif.",
+        "Exact : le stock consolidé passe sous sa base fiscale ; l'impôt payé par la mère sur la marge est payé d'avance : impôt différé actif.",
+        "Inexact : aucun impôt différé n'est constaté sur un écart d'acquisition non déductible."
+      ],
       "explanation": "Option 3 : l'élimination de la marge interne ramène le stock consolidé sous sa base fiscale (le prix payé par la filiale) ; l'impôt déjà payé par la mère sur cette marge est « payé d'avance » : impôt différé actif. Option 1 : l'écart d'évaluation positif porte la valeur comptable au-dessus de la base fiscale, d'où un impôt différé passif. Option 2 : annuler les amortissements dérogatoires augmente les capitaux propres consolidés par rapport à la base fiscale : impôt différé passif. Option 4 : aucun impôt différé n'est constaté sur un écart d'acquisition non déductible.",
       "source_ref": "Règl. ANC 2020-01 art. 272-8 et 272-10 ; IAS 12 §15 et §24 (règlement UE 2023/1803)",
       "verified": true,
@@ -47,6 +53,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : figer le taux historique, c'est la méthode du report fixe ; IAS 12 §47 retient le taux adopté à la clôture.",
+        "Inexact : le goodwill est figé après la période d'évaluation de 12 mois ; un changement de taux ultérieur ne le modifie pas.",
+        "Exact : report variable, taux adopté à la clôture (§47) ; 200 000 × 5 % = 10 000 € passent en résultat (§58).",
+        "Inexact : l'écart d'évaluation n'a pas été comptabilisé hors résultat ; l'ajustement ne va donc pas en capitaux propres (§60)."
       ],
       "explanation": "Option 3 : selon la méthode du report variable, les impôts différés sont évalués au taux attendu lors du reversement, adopté à la clôture (IAS 12 §47) ; l'ajustement de 200 000 × (30 % − 25 %) = 10 000 € passe en résultat, sauf s'il se rapporte à un élément comptabilisé hors résultat (IAS 12 §58 et §60). L'option 1 décrit la méthode du report fixe, non retenue. L'option 2 est fausse : le goodwill est figé à l'issue de la période d'évaluation (12 mois) ; un changement de taux ultérieur ne le modifie pas. L'option 4 est fausse : l'écart d'évaluation n'a pas été comptabilisé en autres éléments du résultat global, l'ajustement ne va donc pas en capitaux propres.",
       "source_ref": "IAS 12 §47, §58 et §60 ; IFRS 3 §45 (règlement UE 2023/1803)",

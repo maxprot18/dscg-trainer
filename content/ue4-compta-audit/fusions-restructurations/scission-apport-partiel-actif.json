@@ -22,6 +22,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : dissolution sans liquidation et titres remis aux associés décrivent la scission, pas l'apport partiel d'actif.",
+        "Inexact : l'apport partiel d'actif n'entraîne aucune dissolution de l'apporteuse.",
+        "Exact : dans un apport partiel d'actif, l'apporteuse survit et reçoit elle-même les titres émis par la bénéficiaire.",
+        "Inexact : un apport est rémunéré en titres de la bénéficiaire ; un paiement intégral en numéraire serait une cession."
+      ],
       "explanation": "Dans un apport partiel d'actif, la société apporteuse survit et reçoit elle-même les titres émis par la bénéficiaire en rémunération de son apport (option 3). L'option 1 décrit la scission : dissolution sans liquidation et titres remis aux associés. L'option 2 est fausse : l'APA n'entraîne aucune dissolution. L'option 4 est fausse : la rémunération d'un apport consiste en titres de la bénéficiaire ; un paiement intégral en numéraire serait une cession, non un apport.",
       "source_ref": "C. com. art. L. 236-1 et s.",
       "verified": true,
@@ -48,6 +54,12 @@
       ],
       "answer": [
         0
+      ],
+      "option_explanations": [
+        "Exact : Millet est contrôlée par l'apporteuse : contrôle commun, donc valeur comptable de 1,8 M€, quelle que soit l'expertise.",
+        "Inexact : la nouveauté de la bénéficiaire est indifférente ; la valeur réelle concerne le contrôle distinct à l'endroit.",
+        "Inexact : la valeur d'apport découle du contrôle et du sens de l'opération, pas du choix des parties.",
+        "Inexact : le titre VII du PCG s'applique aussi aux apports partiels d'actif ; l'apport d'une branche n'est pas une cession."
       ],
       "explanation": "La société créée par l'apport est contrôlée par l'apporteuse : l'opération est réalisée entre sociétés sous contrôle commun, donc évaluée à la valeur comptable (option 1), quelle que soit la valeur d'expertise. L'option 2 est fausse : la valeur réelle concerne le contrôle distinct à l'endroit, ce qui n'est pas le cas ici. L'option 3 est fausse : la valeur d'apport n'est pas laissée au choix des parties, elle découle du contrôle et du sens de l'opération. L'option 4 est fausse : le titre VII du PCG s'applique aux apports partiels d'actif, et l'apport d'une branche ne se traite pas comme une cession d'éléments isolés.",
       "source_ref": "PCG titre VII (règl. ANC 2014-03 modifié par le règl. ANC 2017-01), règles d'évaluation des apports",

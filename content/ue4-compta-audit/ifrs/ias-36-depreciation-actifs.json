@@ -47,6 +47,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : un immeuble amorti n'est testé qu'en présence d'un indice de perte de valeur (IAS 36 §9).",
+        "Inexact : un brevet amorti a une durée d'utilité finie ; il n'est testé que sur indice (§9).",
+        "Exact : IAS 36 §10 impose un test annuel du goodwill acquis, même sans indice de perte de valeur.",
+        "Inexact : une machine amortie n'est testée qu'en présence d'un indice de perte de valeur (§9)."
+      ],
       "explanation": "IAS 36 §10 impose un test annuel, indépendamment de tout indice, pour le goodwill acquis lors d'un regroupement d'entreprises, pour les immobilisations incorporelles à durée d'utilité indéterminée et pour celles qui ne sont pas encore prêtes à être utilisées. L'immeuble, le brevet amorti (durée d'utilité finie) et la machine ne sont testés que si un indice de perte de valeur est identifié à la clôture (§9).",
       "source_ref": "IAS 36 §9-10 (règlement UE 2023/1803)",
       "verified": true,
@@ -72,6 +78,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : 140 000 € porterait l'actif à sa valeur recouvrable, au-delà du plafond de 350 000 € (IAS 36 §117).",
+        "Inexact : 90 000 € reprend la perte initiale sans tenir compte des amortissements qu'elle a évités.",
+        "Inexact : l'interdiction de reprise ne vise que le goodwill (§124) ; une machine peut être reprise.",
+        "Exact : plafond sans dépréciation 500 000 − 150 000 = 350 000 € ; valeur comptable 280 000 € ; reprise de 70 000 €."
       ],
       "explanation": "Valeur comptable au 31/12/N+2 = 360 000 − 2 × 40 000 = 280 000 €. La reprise est plafonnée à la valeur comptable qu'aurait eue l'actif sans dépréciation, nette des amortissements (IAS 36 §117) : 500 000 − 3 × 50 000 = 350 000 €. Reprise = 350 000 − 280 000 = 70 000 €. 140 000 € porterait l'actif à sa valeur recouvrable, au-delà du plafond. 90 000 € reprend la perte initiale sans tenir compte des amortissements qu'elle a évités. L'interdiction de reprise ne vise que le goodwill (§124).",
       "source_ref": "IAS 36 §114-117 (règlement UE 2023/1803)",

@@ -23,6 +23,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : mettre le contrôle conjoint en équivalence applique la logique IFRS 11 des coentreprises, pas le règlement ANC 2020-01.",
+        "Exact : en règles françaises, contrôle exclusif, intégration globale ; contrôle conjoint, intégration proportionnelle ; influence notable, mise en équivalence.",
+        "Inexact : cette correspondance inverse les méthodes du contrôle conjoint et de l'influence notable.",
+        "Inexact : l'intégration globale est réservée au contrôle exclusif."
+      ],
       "explanation": "En règles françaises, la méthode découle de la nature du contrôle : intégration globale pour le contrôle exclusif, intégration proportionnelle pour le contrôle conjoint, mise en équivalence pour l'influence notable (C. com. L233-18 ; règl. ANC 2020-01). L'option 1 applique la logique IFRS 11 (coentreprise mise en équivalence), qui n'est pas celle du règlement ANC. L'option 3 inverse contrôle conjoint et influence notable. L'option 4 est fausse : l'intégration globale est réservée au contrôle exclusif.",
       "source_ref": "C. com. L233-18 ; règl. ANC 2020-01 art. 221-1",
       "verified": true,
@@ -49,6 +55,12 @@
       ],
       "answer": [
         0
+      ],
+      "option_explanations": [
+        "Exact : sans véhicule distinct, avec des droits directs sur actifs et passifs, c'est une activité conjointe ; quote-part de 40 % comptabilisée (IFRS 11 §20).",
+        "Inexact : la mise en équivalence vise les coentreprises, dont les partenaires ont des droits sur l'actif net (IFRS 11 §24).",
+        "Inexact : l'intégration proportionnelle n'existe plus en IFRS.",
+        "Inexact : l'intégration globale suppose le contrôle exclusif, absent puisque les décisions requièrent l'unanimité."
       ],
       "explanation": "Le partenariat n'est pas logé dans un véhicule distinct et les partenaires ont des droits directs sur les actifs et des obligations au titre des passifs : c'est une activité conjointe (IFRS 11 §15). Chaque partenaire comptabilise ses actifs, passifs, produits et charges relatifs à l'activité, ici sa quote-part de 40 % (§20). La mise en équivalence (option 2) s'applique aux coentreprises, dont les partenaires ont des droits sur l'actif net (§16 et §24). L'intégration proportionnelle (option 3) n'existe plus en IFRS. L'intégration globale (option 4) suppose le contrôle exclusif, absent ici puisque les décisions requièrent l'unanimité.",
       "source_ref": "IFRS 11 §15-16, §20 et §24 ; IAS 28 §16 (règl. UE 2023/1803)",

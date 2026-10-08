@@ -60,6 +60,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : 200 € de produit serait le traitement d'un principal ; encaisser le prix total ne fait pas de Vacanza un principal.",
+        "Exact : Vacanza ne contrôle pas les nuitées et agit comme agent : produit = commission, 15 % × 200 = 30 €, à la confirmation.",
+        "Inexact : l'obligation de l'agent est remplie à la confirmation de la réservation ; la commission n'est pas différée au séjour.",
+        "Inexact : agent, Vacanza ne comptabilise que sa commission de 30 €, dès la confirmation ; les 170 € reversés sont une dette envers l'hôtel."
+      ],
       "explanation": "La plateforme ne contrôle jamais les nuitées avant leur transfert au client : elle ne s'engage pas à les fournir, ne supporte aucun risque de stock (pas de réservation préalable de chambres, pas de pénalité en cas d'invendus) et ne fixe pas le prix (indicateurs de B37). Elle agit comme agent : son obligation est d'organiser la fourniture du service par l'hôtel, et son produit est la commission nette, 15 % × 200 = 30 € (B36). Comptabiliser 200 € en produit (et 170 € en charge) serait le traitement d'un principal. Le fait d'encaisser le prix total ne fait pas de la plateforme un principal : les 170 € reversés sont une dette envers l'hôtel. Différer la commission jusqu'au séjour ne correspond pas à l'obligation de l'agent, remplie lors de la réservation confirmée.",
       "source_ref": "IFRS 15 B34-B38 (règlement UE 2023/1803)",
       "verified": true,
@@ -88,6 +94,12 @@
         1
       ],
       "multiple": true,
+      "option_explanations": [
+        "Exact : le bâtiment construit sur le terrain du client est contrôlé par lui au fur et à mesure (IFRS 15 §35(b)).",
+        "Exact : le client reçoit et consomme simultanément les avantages du nettoyage (§35(a)).",
+        "Inexact : la machine de série a un usage alternatif ; son contrôle passe à la livraison : produit à une date donnée (§38).",
+        "Inexact : sans droit exécutoire au paiement de la prestation effectuée à date, le critère §35(c) échoue : produit à la livraison."
+      ],
       "explanation": "IFRS 15 §35 : le produit est comptabilisé progressivement si l'un des trois critères est rempli. Option 1 : le bâtiment construit sur le terrain du client est un actif que le client contrôle au fur et à mesure de sa construction (§35(b)) : avancement. Option 2 : le client reçoit et consomme simultanément les avantages du nettoyage (§35(a)) : avancement. Option 3 : la machine standard a un usage alternatif et son contrôle passe à la livraison : produit à une date donnée (§38). Option 4 : l'équipement sur mesure n'a pas d'usage alternatif, mais l'entité n'a aucun droit exécutoire au paiement de la prestation effectuée à date (§35(c) exige les deux conditions) : produit à la livraison.",
       "source_ref": "IFRS 15 §35-38 (règlement UE 2023/1803)",
       "verified": true,

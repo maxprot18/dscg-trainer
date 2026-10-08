@@ -25,6 +25,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : la renonciation du 15/02/N+1 est postérieure à la clôture ; elle ne modifie pas le classement et se mentionne seulement en annexe.",
+        "Inexact : l'échéance contractuelle de N+5 ne compte plus, l'emprunt étant exigible à vue à la clôture.",
+        "Exact : à la clôture, aucun droit de différer le règlement d'au moins 12 mois : emprunt courant en totalité (IFRS 18 §101 d)).",
+        "Inexact : aucune ventilation selon la durée de la renonciation ; postérieure à la clôture, elle ne fonde aucun classement non courant, même partiel."
       ]
     },
     {
@@ -51,6 +57,12 @@
       ],
       "answer": [
         0
+      ],
+      "option_explanations": [
+        "Exact : l'écart de conversion d'une activité à l'étranger est reclassé en résultat lors de sa sortie (IAS 21 §48).",
+        "Inexact : l'écart de réévaluation IAS 16 peut seulement être viré en réserves, jamais en résultat (IAS 16 §41).",
+        "Inexact : les réévaluations du passif net des régimes à prestations définies restent en capitaux propres (IAS 19 §122).",
+        "Inexact : pour les actions désignées à la juste valeur par OCI, rien n'est transféré en résultat, même à la cession (IFRS 9 B5.7.1)."
       ]
     },
     {

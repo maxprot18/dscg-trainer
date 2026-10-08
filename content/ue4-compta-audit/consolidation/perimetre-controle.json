@@ -22,6 +22,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : 10 % est un seuil sans portée pour présumer l'influence notable.",
+        "Exact : l'influence notable est présumée à partir de 20 % des droits de vote, en règles françaises comme dans IAS 28 §5.",
+        "Inexact : plus de 40 %, sans associé détenant davantage, correspond à la présomption de contrôle exclusif de fait.",
+        "Inexact : la majorité des droits de vote caractérise le contrôle exclusif de droit."
+      ],
       "explanation": "L'influence notable est présumée lorsque l'investisseur dispose, directement ou indirectement, d'au moins 20 % des droits de vote (seuil identique en règles françaises et dans IAS 28 §5). Il s'agit d'une présomption simple, qui peut être renversée ou démontrée en dessous du seuil. 10 % est un seuil sans portée ici ; plus de 40 % correspond à la présomption de contrôle exclusif de fait (avec absence d'associé détenant plus) ; la majorité des droits de vote caractérise le contrôle exclusif de droit.",
       "source_ref": "C. com. L233-17-2 ; règl. ANC 2020-01 ; IAS 28 §5-6 (règl. UE 2023/1803)",
       "verified": true,
@@ -48,6 +54,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : ce raisonnement ignore le contrôle exclusif de fait, possible sans majorité des droits de vote.",
+        "Inexact : le contrôle conjoint suppose un partage contractuel du contrôle entre un nombre limité d'associés, absent sans pacte.",
+        "Inexact : l'influence notable est insuffisante au regard des faits : plus de 40 % pendant deux exercices, sans associé plus puissant.",
+        "Exact : plus de 40 % des droits de vote pendant deux exercices, aucun associé au-dessus : contrôle exclusif de fait présumé (L. 233-16 II 2°)."
       ],
       "explanation": "Le contrôle exclusif de fait résulte de la désignation, pendant deux exercices successifs, de la majorité des membres des organes de direction ; il est présumé lorsque la société a disposé sur cette période de plus de 40 % des droits de vote et qu'aucun autre associé n'en détenait une fraction supérieure. Sirius (43 % depuis trois ans, autre associé principal à 25 %) remplit les deux conditions : contrôle exclusif, donc intégration globale. L'option 1 ignore le contrôle de fait ; l'option 3 décrit l'influence notable, insuffisante au regard des faits ; l'option 2 confond le nombre d'associés avec le partage contractuel du contrôle, qui suppose un accord entre un nombre limité d'associés.",
       "source_ref": "C. com. L233-16 II 2° ; règl. ANC 2020-01 art. 211-3",

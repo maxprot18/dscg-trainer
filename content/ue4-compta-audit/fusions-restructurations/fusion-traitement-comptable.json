@@ -22,6 +22,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : ni la forme juridique ni le régime fiscal (CGI art. 210 A) ne commandent la valeur comptable des apports.",
+        "Inexact : la taille des sociétés et la cotation n'interviennent pas dans le choix de la valeur d'apport.",
+        "Exact : le PCG retient le contrôle avant l'opération (commun ou distinct) et, en contrôle distinct, le sens de l'opération.",
+        "Inexact : les règles du PCG sont impératives ; le commissaire à la fusion apprécie les valeurs mais ne fixe pas la méthode."
+      ],
       "explanation": "Le PCG (titre VII) détermine la valeur d'apport à partir de deux critères : le contrôle des sociétés avant l'opération (commun ou distinct) et, lorsque le contrôle est distinct, le sens de l'opération (à l'endroit ou à l'envers). L'option 1 est fausse : ni la forme juridique ni le régime fiscal (CGI art. 210 A) ne commandent la valeur comptable des apports. L'option 2 est fausse : la taille ou la cotation n'interviennent pas. L'option 4 est fausse : la valeur d'apport n'est pas laissée au choix des parties, les règles du PCG sont impératives ; le commissaire à la fusion apprécie les valeurs mais ne fixe pas la méthode.",
       "source_ref": "PCG titre VII, règles d’évaluation des apports (règl. ANC 2014-03 modifié par le règl. ANC 2017-01)",
       "verified": true,
@@ -49,6 +55,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : la valeur réelle est réservée au contrôle distinct à l'endroit ; ici, Mistral contrôle Noroît : contrôle commun.",
+        "Inexact : être l'absorbante ne suffit pas ; c'est la relation de contrôle avant l'opération qui compte.",
+        "Inexact : la valeur d'apport n'est pas laissée au choix des parties.",
+        "Exact : Mistral contrôle Noroît (80 %) ; en contrôle commun, les apports vont à la valeur comptable, quel que soit le sens."
+      ],
       "explanation": "La société Mistral contrôle la société Noroît (80 % des droits de vote) : l'une contrôle l'autre avant l'opération, les sociétés sont donc sous contrôle commun. En contrôle commun, les apports sont évalués à la valeur comptable, quel que soit le sens de l'opération. L'option 1 est fausse : la valeur réelle est réservée aux opérations entre sociétés sous contrôle distinct réalisées à l'endroit. L'option 2 est fausse : être l'absorbante ne suffit pas, c'est la relation de contrôle qui compte. L'option 3 est fausse : la valeur d'apport n'est pas laissée au choix des parties.",
       "source_ref": "PCG titre VII, règles d’évaluation des apports (règl. ANC 2014-03 modifié par le règl. ANC 2017-01)",
       "verified": true,
@@ -75,6 +87,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : le contrôle commun suppose qu'une même entité contrôle les deux sociétés avant l'opération ; contrôler la seule absorbante ne suffit pas.",
+        "Exact : Solen n'a aucun lien avec Pégase (contrôle distinct) et garde 52 % d'Orion (à l'endroit) : valeur réelle.",
+        "Inexact : l'opération serait à l'envers si les actionnaires de Pégase prenaient le contrôle d'Orion ; Solen le conserve avec 52 %.",
+        "Inexact : la même méthode s'applique à l'ensemble des apports, sans distinction selon la nature des actifs."
       ],
       "explanation": "Avant l'opération, la holding Solen contrôle Orion mais n'a aucun lien avec Pégase : les sociétés sont sous contrôle distinct. Après la fusion, Solen détient encore 52 % du capital et des droits de vote d'Orion : les actionnaires qui contrôlaient l'absorbante conservent le contrôle, l'opération est réalisée à l'endroit. En contrôle distinct à l'endroit, les apports sont évalués à la valeur réelle. L'option 1 est fausse : le contrôle commun suppose qu'une même entité contrôle les deux sociétés (ou que l'une contrôle l'autre) avant l'opération ; contrôler l'absorbante seule ne suffit pas. L'option 3 est fausse : l'opération serait à l'envers si les actionnaires de Pégase prenaient le contrôle d'Orion, ce qui n'est pas le cas. L'option 4 est fausse : la même méthode s'applique à l'ensemble des apports, sans distinction selon la nature des actifs.",
       "source_ref": "PCG titre VII, règles d’évaluation des apports (règl. ANC 2014-03 modifié par le règl. ANC 2017-01)",

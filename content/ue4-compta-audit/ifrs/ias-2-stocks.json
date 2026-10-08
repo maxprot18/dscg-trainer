@@ -22,6 +22,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : les coûts de stockage des produits finis en attente de vente sont exclus du coût et passent en charges (IAS 2 §16).",
+        "Inexact : les frais administratifs qui ne contribuent pas à amener les stocks en l'état sont exclus (§16).",
+        "Exact : les frais fixes de production sont incorporés sur la base de la capacité normale, la sous-activité restant en charges (§13).",
+        "Inexact : les montants anormaux de déchets de fabrication sont exclus du coût des stocks (§16)."
+      ],
       "explanation": "IAS 2 retient dans le coût de transformation les coûts directs et une affectation systématique des frais généraux de production fixes et variables ; les frais fixes sont imputés sur la base de la capacité normale, la part correspondant à la sous-activité restant en charges (§12-13). Les trois autres éléments sont expressément exclus du coût des stocks et comptabilisés en charges de la période : les montants anormaux de déchets de fabrication, les coûts de stockage sauf s'ils sont nécessaires au processus de production avant une nouvelle étape (ce n'est pas le cas pour des produits finis en attente de vente), et les frais administratifs qui ne contribuent pas à amener les stocks à l'endroit et dans l'état où ils se trouvent (§16).",
       "source_ref": "IAS 2 §10, §12-13 et §16 (règlement UE 2023/1803)",
       "verified": true,
@@ -51,6 +57,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : le FIFO est l'une des deux formules admises pour les éléments interchangeables (IAS 2 §25).",
+        "Inexact : le coût moyen pondéré peut se calculer à chaque nouvelle entrée (§27) ; il est admis.",
+        "Inexact : le coût moyen pondéré peut se calculer sur une base périodique (§27) ; il est admis.",
+        "Exact : IAS 2 n'admet que le FIFO et le coût moyen pondéré (§25) ; la méthode LIFO est exclue."
       ]
     },
     {

@@ -42,6 +42,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : la cotation commande le référentiel IFRS, pas l'obligation de consolider.",
+        "Inexact : un contrôle conjoint ou un contrôle exclusif de fait suffit à déclencher l'obligation, sans filiale détenue à plus de 50 %.",
+        "Inexact : toutes les sociétés commerciales sont visées par l'article L. 233-16, la SA comme la SAS.",
+        "Exact : seul un contrôle exclusif ou conjoint déclenche l'obligation (L. 233-16 I) ; l'influence notable délimite seulement le périmètre (L. 233-17-2)."
+      ],
       "explanation": "Le Code de commerce impose d'établir et de publier des comptes consolidés aux sociétés commerciales qui contrôlent de manière exclusive ou conjointe une ou plusieurs entreprises (C. com. L233-16 I) ; l'influence notable n'intervient que pour délimiter le périmètre d'une société déjà tenue de consolider (L233-17-2). La SA Lumen, qui n'exerce qu'une influence notable sur Opale, n'est donc pas tenue de consolider (option 4). Le motif de l'option 1 est faux : la cotation commande le référentiel IFRS, pas l'obligation de consolider. L'option 2 est fausse : un contrôle conjoint ou un contrôle exclusif de fait (plus de 40 % des droits de vote sans associé détenant davantage) suffit, sans filiale détenue à plus de 50 %. L'option 3 est fausse : toutes les sociétés commerciales sont visées, la SA comme la SAS.",
       "source_ref": "C. com. L233-16 et L233-17-2 ; règl. ANC 2020-01, commentaire de l'art. 211-1",
       "verified": true,
@@ -68,6 +74,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : le dépassement des seuils fait obstacle à la seule dispense de taille, pas à la dispense des sous-groupes.",
+        "Inexact : cette réponse confond obligation de consolider et référentiel ; les IFRS ne s'imposent qu'aux sociétés cotées.",
+        "Exact : dispense des sous-groupes (L. 233-17) ; Vigne n'est pas cotée et Bauer, qui détient 100 %, la consolide dans des comptes publiés.",
+        "Inexact : une mère établie dans un autre État membre de l'UE peut ouvrir la dispense des sous-groupes."
       ],
       "explanation": "La dispense dite « des sous-groupes » joue lorsque la société est elle-même contrôlée par une entreprise qui l'inclut dans ses comptes consolidés publiés, y compris une mère établie dans un autre État de l'Union. Elle ne s'applique pas si la société a des titres admis sur un marché réglementé, ce qui n'est pas le cas ici, et les minoritaires peuvent s'y opposer, ce qui est sans objet puisque Bauer détient 100 % du capital. Le dépassement des seuils (option 1) ne fait obstacle qu'à la dispense de taille, pas à celle des sous-groupes. L'option 2 confond l'obligation de consolider et le référentiel : les IFRS ne s'imposent qu'aux sociétés cotées. L'option 4 est fausse : une mère établie dans un État membre de l'UE peut ouvrir la dispense.",
       "source_ref": "C. com. L233-17 (dispense des sous-groupes)",
