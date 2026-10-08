@@ -130,6 +130,31 @@ describe('ExercisePlayer', () => {
     expect(screen.getByText(/Réussi : 9 \/ 10 points/)).toBeInTheDocument()
   })
 
+  it('examen : réponse rédigée enregistrée sans afficher le corrigé, notée sur les points clés repérés', async () => {
+    const onComplete = vi.fn()
+    render(
+      <MemoryRouter>
+        <ExercisePlayer exercise={ex('case_study')} onComplete={onComplete} deferFeedback />
+      </MemoryRouter>,
+    )
+    const user = userEvent.setup()
+    await user.click(screen.getAllByRole('radio')[0])
+    await user.click(screen.getByRole('button', { name: 'Valider' }))
+    // Seul le bouton de la question suivante reste : celui de la réponse enregistrée est masqué.
+    expect(screen.getAllByRole('button', { name: 'Valider' })).toHaveLength(1)
+    await user.type(screen.getByLabelText('Votre réponse'), '20000{Enter}')
+    await user.type(screen.getByLabelText('Compte ligne 1'), '68112')
+    await user.type(screen.getByLabelText('Débit ligne 1'), '20000')
+    await user.type(screen.getByLabelText('Compte ligne 2'), '28154')
+    await user.type(screen.getByLabelText('Crédit ligne 2'), '20000')
+    await user.click(screen.getByRole('button', { name: 'Valider l’écriture' }))
+    await user.type(screen.getByLabelText('Votre réponse rédigée'), 'Rythme de consommation des avantages')
+    expect(screen.queryByRole('button', { name: 'Voir le corrigé' })).not.toBeInTheDocument()
+    await user.click(screen.getByRole('button', { name: 'Enregistrer ma réponse' }))
+    expect(screen.queryByText('Corrigé type')).not.toBeInTheDocument()
+    expect(onComplete).toHaveBeenCalledWith(expect.objectContaining({ earned: 9, total: 10 }), expect.anything())
+  })
+
   it('cas de consolidation : organigramme et étapes', async () => {
     const e = ex('consolidation_case')
     const { onComplete, user } = setup(e)

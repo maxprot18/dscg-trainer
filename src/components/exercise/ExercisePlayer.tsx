@@ -67,7 +67,7 @@ function Statement({ exercise }: { exercise: Exercise }) {
           {exercise.annexes?.map((annex, i) => (
             <details key={i} className="rounded-md border">
               <summary className="cursor-pointer px-3 py-2 text-sm font-medium">
-                Annexe {i + 1} — {annex.title}
+                {/^annexe\b/i.test(annex.title) ? annex.title : `Annexe ${i + 1} — ${annex.title}`}
               </summary>
               <div className="border-t px-3 py-2 text-sm">
                 <Markdown source={annex.content} />
@@ -133,9 +133,11 @@ export interface ExercisePlayerProps {
   deferFeedback?: boolean
   /** Relecture d'un exercice déjà traité, avec les réponses données. */
   review?: readonly PartResponse[]
+  /** Réponses données jusqu'ici (après chaque partie) : un exercice commencé compte au prorata en examen. */
+  onProgress?: (responses: PartResponse[]) => void
 }
 
-export function ExercisePlayer({ exercise, onComplete, deferFeedback = false, review }: ExercisePlayerProps) {
+export function ExercisePlayer({ exercise, onComplete, deferFeedback = false, review, onProgress }: ExercisePlayerProps) {
   const parts = useMemo(() => exerciseParts(exercise), [exercise])
   const [responses, setResponses] = useState<PartResponse[]>(() => (review ? [...review] : []))
   const [results, setResults] = useState<PartResult[]>(() =>
@@ -154,6 +156,7 @@ export function ExercisePlayer({ exercise, onComplete, deferFeedback = false, re
     const nextResults = [...results, gradePart(parts[index], response)]
     setResponses(nextResponses)
     setResults(nextResults)
+    onProgress?.(nextResponses)
     if (nextResults.length === parts.length) {
       completed.current = true
       const result = combineResults(parts, nextResults)
@@ -188,10 +191,9 @@ export function ExercisePlayer({ exercise, onComplete, deferFeedback = false, re
               result={hidden ? undefined : results[i]}
               active={i === results.length}
               onSubmit={(r) => submit(i, r)}
+              deferred={hidden}
+              locked={hidden && i < results.length}
             />
-            {hidden && i < results.length && (
-              <p className="text-muted-foreground text-xs">Réponse enregistrée : correction à la fin de l’examen.</p>
-            )}
           </fieldset>
         </div>
       ))}

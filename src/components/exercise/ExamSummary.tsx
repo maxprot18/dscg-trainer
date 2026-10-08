@@ -53,7 +53,8 @@ export function ExamSummary({
         <CardContent className="text-muted-foreground text-sm">
           {entries.length} exercice{entries.length > 1 ? 's' : ''} traité{entries.length > 1 ? 's' : ''} sur {exercises.length}{' '}
           en {Math.floor(minutes / 60)} h {String(minutes % 60).padStart(2, '0')}. Chaque exercice pèse sa durée estimée ;
-          un exercice non traité vaut 0.
+          un exercice commencé compte au prorata des questions traitées, un exercice non traité vaut 0. Les réponses
+          rédigées sont notées sur les points clés repérés dans votre copie.
         </CardContent>
       </Card>
       <ol className="flex flex-col gap-2">

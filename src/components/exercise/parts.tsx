@@ -19,6 +19,7 @@ import { PCG_ACCOUNTS, pcgLabel } from '@/content/pcg'
 import { suggestKeyPoints } from '@/engine/keyPoints'
 import { formatNumber, parseNumberInput } from '@/engine/numbers'
 import type { BooleanPart, ChoicePart, FlashcardPart, JournalPart, NumericPart, OpenPart, Part } from '@/engine/parts'
+import { Markdown } from '@/components/Markdown'
 import { useKeyboard } from '@/hooks/useKeyboard'
 import { cn } from '@/lib/utils'
 
@@ -33,6 +34,10 @@ export interface PartProps<P> {
   /** Seule la partie active réagit aux raccourcis clavier. */
   active: boolean
   onSubmit: (response: PartResponse) => void
+  /** Examen : aucune correction pendant l'épreuve (réponse rédigée enregistrée sans corrigé). */
+  deferred?: boolean
+  /** Examen : réponse déjà enregistrée, saisie verrouillée et boutons de validation masqués. */
+  locked?: boolean
 }
 
 export function PartView(props: PartProps<Part>) {
@@ -50,11 +55,12 @@ export function PartView(props: PartProps<Part>) {
         <Verdict correct={props.result.correct} score={props.result.score} />
       )}
       {props.result && part.explanation && <Explanation>{part.explanation}</Explanation>}
+      {props.locked && <p className="text-muted-foreground text-xs">Réponse enregistrée : correction à la fin de l’examen.</p>}
     </section>
   )
 }
 
-function ChoiceInput({ part, response, result, active, onSubmit }: PartProps<ChoicePart>) {
+function ChoiceInput({ part, response, result, active, onSubmit, locked }: PartProps<ChoicePart>) {
   const [selected, setSelected] = useState<number[]>([])
   const done = result !== undefined
   const shown = done ? (response as ChoiceResponse).selected : selected
@@ -101,14 +107,16 @@ function ChoiceInput({ part, response, result, active, onSubmit }: PartProps<Cho
                     <span className="text-muted-foreground mt-1 block text-xs">{part.option_explanations[i]}</span>
                   )}
                 </span>
-                {done && isAnswer && <Check className="size-4 shrink-0 text-emerald-700" aria-label="bonne réponse" />}
-                {done && isSelected && !isAnswer && <X className="size-4 shrink-0 text-red-700" aria-label="mauvaise réponse" />}
+                {done && isAnswer && <Check className="size-4 shrink-0 text-emerald-700 dark:text-emerald-400" aria-label="bonne réponse" />}
+                {done && isSelected && !isAnswer && (
+                  <X className="size-4 shrink-0 text-red-700 dark:text-red-400" aria-label="mauvaise réponse" />
+                )}
               </button>
             </li>
           )
         })}
       </ul>
-      {!done && (
+      {!done && !locked && (
         <Button onClick={submit} disabled={selected.length === 0} className="self-start">
           Valider
         </Button>
@@ -117,14 +125,20 @@ function ChoiceInput({ part, response, result, active, onSubmit }: PartProps<Cho
   )
 }
 
-function BooleanInput({ part, response, result, active, onSubmit }: PartProps<BooleanPart>) {
+function BooleanInput({ part, response, result, active, onSubmit, locked }: PartProps<BooleanPart>) {
+  // Choix gardé pour l'afficher (sans correction) quand la réponse est verrouillée en examen.
+  const [chosen, setChosen] = useState<boolean | null>(null)
   const done = result !== undefined
   const given = done && response?.kind === 'boolean' ? response.value : undefined
+  const choose = (value: boolean) => {
+    setChosen(value)
+    onSubmit({ kind: 'boolean', value })
+  }
   useKeyboard((key) => {
-    if (key === '1') return onSubmit({ kind: 'boolean', value: true }), true
-    if (key === '2') return onSubmit({ kind: 'boolean', value: false }), true
+    if (key === '1') return choose(true), true
+    if (key === '2') return choose(false), true
     return false
-  }, active && !done)
+  }, active && !done && !locked)
   return (
     <div className="grid grid-cols-2 gap-2">
       {[true, false].map((value, i) => (
@@ -132,9 +146,11 @@ function BooleanInput({ part, response, result, active, onSubmit }: PartProps<Bo
           key={String(value)}
           variant="outline"
           size="lg"
-          disabled={done}
-          onClick={() => onSubmit({ kind: 'boolean', value })}
+          disabled={done || locked}
+          aria-pressed={locked ? chosen === value : undefined}
+          onClick={() => choose(value)}
           className={cn(
+            locked && !done && chosen === value && 'border-primary ring-primary opacity-100 ring-1',
             done && value === part.answer && 'border-emerald-600 bg-emerald-50 opacity-100 dark:bg-emerald-950',
             done && given === value && value !== part.answer && 'border-red-600 bg-red-50 opacity-100 dark:bg-red-950',
           )}
@@ -146,7 +162,7 @@ function BooleanInput({ part, response, result, active, onSubmit }: PartProps<Bo
   )
 }
 
-function NumericInput({ part, response, result, onSubmit }: PartProps<NumericPart>) {
+function NumericInput({ part, response, result, onSubmit, locked }: PartProps<NumericPart>) {
   const [raw, setRaw] = useState('')
   const done = result !== undefined
   const value = done && response?.kind === 'numeric' ? response.raw : raw
@@ -171,7 +187,7 @@ function NumericInput({ part, response, result, onSubmit }: PartProps<NumericPar
           className="border-input bg-background focus-visible:ring-ring/50 h-10 w-48 rounded-md border px-3 text-right outline-none focus-visible:ring-[3px]"
         />
         {part.unit && <span className="text-muted-foreground text-sm">{part.unit}</span>}
-        {!done && (
+        {!done && !locked && (
           <Button type="submit" disabled={parsed === null}>
             Valider
           </Button>
@@ -208,7 +224,7 @@ function amount(sides?: { debit: number; credit: number }): string {
   return sides.debit > 0 ? `D ${formatNumber(sides.debit, 2)}` : `C ${formatNumber(sides.credit, 2)}`
 }
 
-function JournalInput({ part, response, result, onSubmit }: PartProps<JournalPart>) {
+function JournalInput({ part, response, result, onSubmit, locked }: PartProps<JournalPart>) {
   const [draft, setDraft] = useState<DraftLine[]>([emptyLine(), emptyLine()])
   const done = result !== undefined
   const lines = toJournalLines(draft)
@@ -251,7 +267,9 @@ function JournalInput({ part, response, result, onSubmit }: PartProps<JournalPar
                 <td className="py-1 font-mono">{a.account}</td>
                 <td>{amount(a.expected)}</td>
                 <td>{amount(a.given)}</td>
-                <td className={a.status === 'ok' ? 'text-emerald-700' : 'text-red-700'}>{STATUS_LABEL[a.status]}</td>
+                <td className={a.status === 'ok' ? 'text-emerald-700 dark:text-emerald-400' : 'text-red-700 dark:text-red-400'}>
+                  {STATUS_LABEL[a.status]}
+                </td>
               </tr>
             ))}
           </tbody>
@@ -345,18 +363,16 @@ function JournalInput({ part, response, result, onSubmit }: PartProps<JournalPar
           Total débit {formatNumber(totalDebit, 2)} · total crédit {formatNumber(totalCredit, 2)}
         </span>
       </div>
-      <Button
-        className="self-start"
-        disabled={lines.length === 0}
-        onClick={() => onSubmit({ kind: 'journal', lines })}
-      >
-        Valider l’écriture
-      </Button>
+      {!locked && (
+        <Button className="self-start" disabled={lines.length === 0} onClick={() => onSubmit({ kind: 'journal', lines })}>
+          Valider l’écriture
+        </Button>
+      )}
     </div>
   )
 }
 
-function OpenInput({ part, response, result, onSubmit }: PartProps<OpenPart>) {
+function OpenInput({ part, response, result, onSubmit, deferred, locked }: PartProps<OpenPart>) {
   const [text, setText] = useState('')
   const [revealed, setRevealed] = useState(false)
   const [checked, setChecked] = useState<boolean[]>(() => part.key_points.map(() => false))
@@ -377,7 +393,19 @@ function OpenInput({ part, response, result, onSubmit }: PartProps<OpenPart>) {
         placeholder="Rédigez votre réponse, puis comparez-la au corrigé."
         className="border-input bg-background focus-visible:ring-ring/50 rounded-md border p-2 text-sm outline-none focus-visible:ring-[3px]"
       />
-      {!revealed && !done ? (
+      {deferred && !done ? (
+        // Examen : la réponse est enregistrée sans corrigé ; les points clés repérés dans la copie font la
+        // note, et le corrigé est montré à la fin de l'épreuve.
+        !locked && (
+          <Button
+            variant="secondary"
+            className="self-start"
+            onClick={() => onSubmit({ kind: 'open', text, checked: suggestKeyPoints(part.key_points, text) })}
+          >
+            Enregistrer ma réponse
+          </Button>
+        )
+      ) : !revealed && !done ? (
         <Button
           variant="secondary"
           className="self-start"
@@ -393,7 +421,7 @@ function OpenInput({ part, response, result, onSubmit }: PartProps<OpenPart>) {
         <div className="bg-muted/50 flex flex-col gap-3 rounded-md p-3 text-sm">
           <div>
             <p className="text-muted-foreground mb-1 text-xs font-semibold uppercase">Corrigé type</p>
-            <p className="whitespace-pre-line">{part.model_answer}</p>
+            <Markdown source={part.model_answer} />
           </div>
           <fieldset className="flex flex-col gap-1">
             <legend className="text-muted-foreground mb-1 text-xs font-semibold uppercase">
