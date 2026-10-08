@@ -1,18 +1,12 @@
-# Mises à jour mensuelles des dépendances npm et des actions GitHub.
+# Mises à jour proposées chaque semaine : actions GitHub (épinglées par empreinte) et dépendances npm.
 version: 2
 updates:
-  - package-ecosystem: npm
-    directory: /
-    schedule:
-      interval: monthly
-    groups:
-      npm:
-        patterns: ['*']
-
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: monthly
-    groups:
-      actions:
-        patterns: ['*']
+      interval: weekly
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
