@@ -1,7 +1,7 @@
 /**
  * Chargement du contenu (/content) dans l'app.
- * La taxonomie est embarquée ; les exercices sont chargés UE par UE (un fichier JS par UE,
- * mis en cache par le service worker) ; les fiches de cours, une à une à la demande.
+ * La taxonomie est embarquée ; les exercices sont chargés fichier par fichier (un fichier JS par fichier
+ * JSON, mis en cache par le service worker) ; les fiches de cours, une à une à la demande.
  * Les exercices non vérifiés (verified: false) ne sont jamais servis en production (SPEC).
  */
 import { useEffect, useState } from 'react'
@@ -69,10 +69,19 @@ export function loadExercises(ues?: readonly UeId[]): Promise<Exercise[]> {
   return Promise.all(paths.map(loadFile)).then((lists) => lists.flat())
 }
 
+type ExerciseIndex = typeof import('virtual:exercise-index').default
+let indexCache: Promise<ExerciseIndex> | null = null
+
+/** Index des exercices publiés (fichier de chaque id, sujets type d'examen) : quelques Ko, sans le contenu. */
+export function loadExerciseIndex(): Promise<ExerciseIndex> {
+  indexCache ??= import('virtual:exercise-index').then((m) => m.default)
+  return indexCache
+}
+
 /** Un exercice par son id, en ne chargeant que le fichier qui le contient ; `null` s'il n'existe pas. */
 export async function loadExercise(id: string): Promise<Exercise | null> {
   if (loaded) return loaded.find((e) => e.id === id) ?? null
-  const { default: index } = await import('virtual:exercise-index')
+  const index = await loadExerciseIndex()
   const file = index.ids[id]
   if (file === undefined) return null
   return (await loadFile(index.files[file])).find((e) => e.id === id) ?? null
@@ -90,6 +99,32 @@ export function useExercises(enabled = true): Exercise[] | null {
     }
   }, [exercises, enabled])
   return exercises
+}
+
+/** Exercices d'une seule UE, ou `null` pendant leur chargement. */
+export function useUeExercises(ue: UeId): Exercise[] | null {
+  const [state, setState] = useState<{ ue: UeId; exercises: Exercise[] } | null>(null)
+  useEffect(() => {
+    let alive = true
+    void loadExercises([ue]).then((exercises) => alive && setState({ ue, exercises }))
+    return () => {
+      alive = false
+    }
+  }, [ue])
+  return state?.ue === ue ? state.exercises : null
+}
+
+/** Index des exercices publiés, ou `null` pendant son chargement. */
+export function useExerciseIndex(): ExerciseIndex | null {
+  const [index, setIndex] = useState<ExerciseIndex | null>(null)
+  useEffect(() => {
+    let alive = true
+    void loadExerciseIndex().then((value) => alive && setIndex(value))
+    return () => {
+      alive = false
+    }
+  }, [])
+  return index
 }
 
 /** Un exercice : `undefined` pendant le chargement, `null` s'il n'existe pas. */

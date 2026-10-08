@@ -14,18 +14,20 @@ import { stripUnverified } from './build/stripUnverified.ts'
 
 /**
  * Nombre d'exercices vérifiés par UE (`UE4`), thème (`UE4/ifrs`) et notion (`notion:ias16`), et au
- * total : les écrans l'affichent sans attendre le chargement de tout le contenu.
+ * total, plus les flashcards (`cards:…`) : les écrans l'affichent sans attendre le chargement du contenu.
  */
 function countVerifiedExercises(dir: string, counts: Record<string, number> = { total: 0 }): Record<string, number> {
   for (const entry of readdirSync(dir, { withFileTypes: true })) {
     const path = join(dir, entry.name)
     if (entry.isDirectory()) countVerifiedExercises(path, counts)
     else if (entry.name.endsWith('.json') && entry.name !== 'taxonomy.json') {
-      type Ex = { verified?: boolean; ue: string; theme: string; notion: string }
+      type Ex = { verified?: boolean; type: string; ue: string; theme: string; notion: string }
       const data = JSON.parse(readFileSync(path, 'utf8')) as { exercises?: Ex[] }
       for (const e of data.exercises ?? []) {
         if (e.verified !== true) continue
-        for (const key of ['total', e.ue, `${e.ue}/${e.theme}`, `notion:${e.notion}`]) counts[key] = (counts[key] ?? 0) + 1
+        const keys = ['total', e.ue, `${e.ue}/${e.theme}`, `notion:${e.notion}`]
+        if (e.type === 'flashcard') keys.push('cards:total', `cards:${e.ue}`, `cards:${e.ue}/${e.theme}`)
+        for (const key of keys) counts[key] = (counts[key] ?? 0) + 1
       }
     }
   }
@@ -71,8 +73,7 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,ico,json,woff2}'],
         navigateFallback: 'index.html',
-        // Le contenu d'une UE tient dans un seul fichier JS (UE 4 : ~1,3 Mo) : on relève la limite
-        // de précache (2 Mo par défaut) pour que tout reste disponible hors ligne.
+        // Marge au-dessus de la limite de précache par défaut (2 Mo) pour que tout reste disponible hors ligne.
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
       },
     }),
