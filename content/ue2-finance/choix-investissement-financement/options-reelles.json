@@ -24,6 +24,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : les options de développement ou de différer sont des calls ; l'abandon donne le droit de vendre le projet.",
+        "Inexact : l'option de différer est une autre option réelle, celle d'attendre avant d'investir.",
+        "Exact : l'option d'abandon est un put, exercé si la valeur des flux futurs tombe sous la valeur de revente des actifs.",
+        "Inexact : une option est un droit, non une obligation."
+      ],
       "explanation": "L'option d'abandon (option 3) donne le droit de « vendre » le projet à sa valeur de revente : c'est un put, exercé si la valeur des flux futurs tombe sous cette valeur. L'option 1 correspond aux options de développement ou de différer, qui sont des calls. L'option 2 décrit une autre option réelle (attendre avant d'investir). L'option 4 est fausse : une option est un droit, non une obligation."
     },
     {
@@ -49,6 +55,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : raisonne comme pour un actif sans flexibilité ; le détenteur se protège des scénarios défavorables en n'exerçant pas.",
+        "Exact : une dispersion plus forte élargit les gains possibles sans augmenter les pertes, l'option n'étant exercée qu'en scénario favorable.",
+        "Inexact : ignore l'asymétrie des gains propre aux options, dont la valeur croît avec la volatilité du sous-jacent.",
+        "Inexact : l'effet favorable de la volatilité ne dépend pas du signe de la VAN classique."
       ],
       "explanation": "La valeur d'une option croît avec la volatilité du sous-jacent (option 2) : le détenteur profite des scénarios favorables en exerçant l'option et se protège des scénarios défavorables en ne l'exerçant pas ; une dispersion plus forte élargit les gains possibles sans augmenter les pertes. L'option 1 raisonne comme pour un actif sans flexibilité. L'option 3 ignore l'asymétrie des gains propre aux options. L'option 4 est fausse : l'effet de la volatilité ne dépend pas du signe de la VAN classique."
     },
@@ -76,6 +88,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : ignore la flexibilité ; attendre peut valoir mieux que renoncer, même si la VAN immédiate est négative.",
+        "Inexact : retranche à tort le déficit de VAN immédiate (119,05 − 50).",
+        "Inexact : oublie d'actualiser le gain espéré : 0,5 × 250 = 125 doit être divisé par 1,05.",
+        "Exact : p = (1,05 × 1 000 − 800) / 500 = 0,5 ; gain en hausse 1 300 − 1 050 = 250 ; 0,5 × 250 / 1,05 ≈ 119,05 k€."
       ],
       "explanation": "Probabilité risque-neutre de hausse : p = (1,05 × 1 000 − 800) / (1 300 − 800) = 250 / 500 = 0,5. Gains en date 1 : max(1 300 − 1 050 ; 0) = 250 en hausse, max(800 − 1 050 ; 0) = 0 en baisse. Valeur de l'option = 0,5 × 250 / 1,05 ≈ 119,05 k€ (option 4) : attendre vaut mieux que renoncer, alors que la VAN immédiate est négative. L'option 1 ignore la flexibilité. L'option 2 déduit à tort le déficit de VAN immédiate (119,05 − 50). L'option 3 oublie d'actualiser le gain espéré."
     },

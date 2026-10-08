@@ -25,6 +25,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : l'économie d'IS sur amortissements (t × dotation) est un flux réel, car l'amortissement réduit l'IS payé.",
+        "Inexact : c'est un coût d'opportunité ; en affectant le terrain au projet, l'entreprise renonce à le vendre, ce qui s'impute au projet.",
+        "Exact : le coût du financement est déjà pris en compte par le taux d'actualisation ; déduire les intérêts le compterait deux fois.",
+        "Inexact : la cannibalisation est un effet induit à retenir, le raisonnement étant différentiel (avec projet moins sans projet)."
+      ],
       "explanation": "Les intérêts de l'emprunt (option 3) sont exclus : le coût du financement est déjà pris en compte par le taux d'actualisation (coût du capital) ; les déduire des flux reviendrait à le compter deux fois. L'option 1 est un flux réel (t × dotation, l'amortissement réduisant l'IS payé). L'option 2 est un coût d'opportunité : en affectant le terrain au projet, l'entreprise renonce à le vendre, ce qui doit être imputé au projet. L'option 4 est un effet induit (cannibalisation) : le raisonnement est différentiel, avec projet moins sans projet."
     },
     {
@@ -52,6 +58,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : oublie l'impôt de 2 500 € sur la plus-value (30 000 − VNC fiscale de 20 000).",
+        "Inexact : applique l'IS au prix de cession entier, comme si la VNC fiscale était nulle.",
+        "Inexact : ajoute l'impôt sur la plus-value (2 500 €) au lieu de le retrancher.",
+        "Exact : VNC fiscale = 100 000 − 4 × 20 000 = 20 000 ; IS sur plus-value = 25 % × 10 000 = 2 500 ; 30 000 − 2 500 = 27 500 €."
+      ],
       "explanation": "VNC fiscale fin année 4 = 100 000 − 4 × 20 000 = 20 000 €. Plus-value = 30 000 − 20 000 = 10 000 € ; IS = 2 500 €. Valeur résiduelle nette = 30 000 − 2 500 = 27 500 € (option 4). L'option 1 oublie l'impôt sur la plus-value. L'option 2 applique l'IS au prix de cession entier, comme si la VNC était nulle. L'option 3 ajoute l'impôt au lieu de le retrancher."
     },
     {
@@ -78,6 +90,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : inscrit le BFR total de l'année 2 au lieu de sa seule variation.",
+        "Inexact : inverse le signe ; une hausse du BFR est un emploi, donc un flux négatif.",
+        "Exact : en date 1, on constitue seulement le supplément de BFR : 20 % × 600 000 − 20 % × 500 000 = 20 000 €, soit −20 000 €.",
+        "Inexact : −100 000 € est le BFR constitué en date 0 pour l'année 1, pas le flux de la date 1."
       ],
       "explanation": "BFR nécessaire : 100 000 € pour l'année 1 (constitué en date 0), 120 000 € pour les années 2 et 3. En date 1 (début de l'année 2), il faut seulement constituer le supplément : 120 000 − 100 000 = 20 000 €, soit un flux de −20 000 € (option 3). L'option 1 inscrit le BFR total au lieu de sa variation. L'option 4 correspond au flux de la date 0. L'option 2 inverse le signe : une hausse du BFR est un emploi. Le BFR cumulé de 120 000 € sera récupéré en date 3."
     },

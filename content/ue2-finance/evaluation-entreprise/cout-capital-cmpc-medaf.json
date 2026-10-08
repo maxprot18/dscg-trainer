@@ -50,6 +50,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : multiplie le bêta par la rentabilité du marché (9 %) au lieu de la prime de risque (6,5 %).",
+        "Exact : prime de marché 9 % − 2,5 % = 6,5 % ; k_CP = 2,5 % + 0,9 × 6,5 % = 8,35 %.",
+        "Inexact : 0,9 × 6,5 % = 5,85 % oublie d'ajouter le taux sans risque.",
+        "Inexact : se limite à 0,9 × 9 %, sans taux sans risque ni prime de risque."
+      ],
       "explanation": "Prime de risque du marché = 9 % − 2,5 % = 6,5 %. k_CP = 2,5 % + 0,9 × 6,5 % = 2,5 % + 5,85 % = 8,35 % (option 2). L’option 1 multiplie le bêta par la rentabilité du marché et non par la prime (2,5 + 0,9 × 9) ; l’option 3 oublie le taux sans risque ; l’option 4 se limite à 0,9 × 9 %."
     },
     {
@@ -76,6 +82,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : suppose arbitrairement un risque égal à celui du marché.",
+        "Inexact : les bêtas observés incorporent l'endettement propre des comparables ; il faut les désendetter puis réendetter.",
+        "Inexact : confond volatilité du résultat comptable et risque systématique de marché.",
+        "Exact : on désendette les bêtas des comparables (bêta de l'actif), on retient une valeur centrale, puis on réendette au D / CP de la cible."
       ],
       "explanation": "Les bêtas observés des comparables incorporent leur propre endettement. On les désendette (bêta de l’actif économique), on en retient une valeur centrale, puis on la réendette avec le ratio D / CP de la société évaluée (option 4). L’option 1 suppose arbitrairement un risque égal à celui du marché ; l’option 2 ignore les différences d’endettement entre comparables et cible ; l’option 3 confond volatilité comptable et risque systématique de marché."
     },

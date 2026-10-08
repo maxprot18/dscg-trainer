@@ -24,6 +24,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : les formes faible et semi-forte sont vérifiées, puisque toute l'information publique est dans les cours.",
+        "Inexact : incomplet ; la forme faible ne porte que sur les prix passés, alors que toute l'information publique est intégrée.",
+        "Exact : la forme semi-forte correspond à l'intégration de toute l'information publique, historique des cours compris.",
+        "Inexact : la forme forte suppose que même l'information privée est dans les cours, ce que l'énoncé exclut."
+      ],
       "explanation": "L'option 3 est correcte : la forme semi-forte correspond à l'intégration de toute l'information publique, ce qui inclut l'historique des cours (forme faible). L'option 2 est incomplète : la forme faible ne porte que sur les prix passés, alors que l'énoncé vise toute l'information publique. L'option 4 est fausse : la forme forte suppose que même l'information privée est déjà dans les cours, ce que l'énoncé exclut. L'option 1 est fausse puisque les formes faible et semi-forte sont vérifiées."
     },
     {
@@ -50,6 +56,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : le mimétisme consiste à imiter les décisions des autres investisseurs, ce que l'énoncé ne décrit pas.",
+        "Exact : réaliser vite les gains et différer les pertes est l'effet de disposition, expliqué par l'aversion aux pertes et l'ancrage sur le prix d'achat.",
+        "Inexact : le biais de disponibilité est la surpondération des informations récentes ou marquantes.",
+        "Inexact : l'excès de confiance conduit plutôt à trop négocier et à surestimer la précision de ses prévisions."
       ],
       "explanation": "L'option 2 est correcte : l'effet de disposition consiste à réaliser trop vite les gains et à différer la réalisation des pertes ; il s'explique par l'aversion aux pertes de la théorie des perspectives (une perte réalisée est ressentie plus fortement qu'un gain équivalent) et par l'ancrage sur le prix d'achat. L'option 1 (mimétisme) consiste à imiter les décisions des autres investisseurs, ce que l'énoncé ne décrit pas. L'option 3 désigne la surpondération des informations récentes ou marquantes. L'option 4 conduit plutôt à trop négocier et à surestimer la précision de ses prévisions."
     },

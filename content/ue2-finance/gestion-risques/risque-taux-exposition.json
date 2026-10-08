@@ -25,6 +25,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : à taux fixe, les intérêts versés ne changent pas.",
+        "Inexact : à taux fixe, les intérêts versés ne changent pas ; la baisse des taux ne profite pas à Kerlan.",
+        "Exact : risque de valeur : actualisée à 2,5 %, la dette vaut davantage, et Kerlan paie 4 % quand le marché prête à 2,5 %.",
+        "Inexact : confond avec le risque de change, absent d'un emprunt en euros."
+      ],
       "explanation": "À taux fixe, les intérêts versés ne changent pas (les options 1 et 2 sont fausses). Kerlan supporte un risque de valeur : actualisée au nouveau taux de marché, sa dette vaut davantage, et elle paie 4 % quand ses concurrents empruntent à 2,5 % (coût d’opportunité, option 3). Elle ne pourrait en sortir qu’en remboursant par anticipation, souvent moyennant une indemnité. L’option 4 confond avec le risque de change, absent d’un emprunt en euros."
     },
     {
@@ -52,7 +58,13 @@
         1
       ],
       "multiple": false,
-      "explanation": "Seuls les éléments à taux variable modifient les flux : impasse = 3 − 8 = − 5 M€ (position emprunteuse nette). Une hausse de 1 point réduit le résultat d’environ 5 M€ × 1 % = 50 000 € par an (option 2). L’option 1 inverse le sens : une position emprunteuse perd à la hausse. L’option 3 oublie les placements variables, dont le rendement augmente. L’option 4 ajoute à tort la dette à taux fixe, dont les intérêts ne varient pas (elle porte un risque de valeur, non de flux)."
+      "option_explanations": [
+        "Inexact : inverse le sens ; une position emprunteuse nette perd à la hausse des taux.",
+        "Exact : impasse = 3 − 8 = −5 M€ à taux variable ; −5 M€ × 1 % = −50 000 € par an.",
+        "Inexact : oublie les placements à taux variable (3 M€), dont le rendement augmente.",
+        "Inexact : (8 + 6) × 1 % ajoute la dette à taux fixe, dont les intérêts ne varient pas, et oublie les placements variables."
+      ],
+      "explanation": "Seuls les éléments à taux variable modifient les flux : impasse = 3 − 8 = − 5 M€ (position emprunteuse nette). Une hausse de 1 point réduit le résultat d’environ 5 M€ × 1 % = 50 000 € par an (option 2). L’option 1 inverse le sens : une position emprunteuse perd à la hausse. L’option 3 oublie les placements variables, dont le rendement augmente. L’option 4 ((8 + 6) × 1 %) ajoute à tort la dette à taux fixe, dont les intérêts ne varient pas (elle porte un risque de valeur, non de flux), et oublie en outre les placements."
     },
     {
       "id": "ue2-risques-expotaux-0003",

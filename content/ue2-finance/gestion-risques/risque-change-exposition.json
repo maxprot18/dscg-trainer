@@ -25,6 +25,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : le risque de transaction suppose un flux en devises à régler (créance, dette, commande ferme).",
+        "Exact : la variation des capitaux propres convertis d'une filiale étrangère est un risque comptable de conversion, porté en autres éléments du résultat global (IAS 21).",
+        "Inexact : le risque économique vise l'effet durable des parités sur la compétitivité et les flux futurs.",
+        "Inexact : le risque de contrepartie concerne la défaillance d'un cocontractant, sans lien avec les parités."
+      ],
       "explanation": "La variation des capitaux propres consolidés due à la conversion des comptes d’une filiale étrangère est le risque de conversion (ou de consolidation) : c’est un risque comptable, les écarts étant portés en autres éléments du résultat global (IAS 21 §39-41). L’option 1 (risque de transaction) suppose un flux en devises à régler (créance, dette, commande ferme). L’option 3 (risque économique) vise l’effet durable des parités sur la compétitivité et les flux futurs. L’option 4 concerne la défaillance d’une contrepartie, sans lien avec les parités."
     },
     {
@@ -52,6 +58,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : oublie la commande d'achat ferme (150 000 USD), qui entre dans la position dès l'engagement.",
+        "Inexact : bon montant, sens inversé ; une position courte correspond à des engagements supérieurs aux avoirs.",
+        "Inexact : oublie le compte bancaire en dollars (50 000 USD), lui aussi exposé.",
+        "Exact : 600 000 + 50 000 − 250 000 − 150 000 = 250 000 USD ; avoirs supérieurs aux engagements, une baisse du dollar fait perdre."
+      ],
       "explanation": "Position = 600 000 + 50 000 − 250 000 − 150 000 = 250 000 USD. Les avoirs en dollars dépassent les engagements : la position est longue et une baisse du dollar réduit leur contre-valeur en euros (option 4). L’option 1 oublie la commande d’achat ferme, qui fait partie de la position dès l’engagement. L’option 3 oublie le compte bancaire en dollars, lui aussi exposé. L’option 2 retient le bon montant mais inverse le sens : une position courte correspond à des engagements supérieurs aux avoirs."
     },
     {
@@ -80,6 +92,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : le termaillage consiste à accélérer ou retarder un règlement selon l'évolution anticipée des cours.",
+        "Inexact : le swap de devises est un instrument financier d'échange de flux dans deux devises.",
+        "Exact : compenser les dettes et créances réciproques pour ne régler que les soldes est le netting ; il réduit flux, coûts et exposition.",
+        "Inexact : l'avance en devises est un emprunt en devises adossé à une créance."
+      ],
       "explanation": "Compenser les dettes et créances réciproques des filiales pour ne régler que les soldes est le netting (option 3) : il réduit le volume des flux en devises, donc les achats et ventes de devises, leurs coûts et l’exposition à couvrir. Le termaillage (option 1) consiste à accélérer ou retarder un règlement selon l’évolution anticipée des cours. Le swap de devises (option 2) est un instrument financier d’échange de flux dans deux devises. L’avance en devises (option 4) est un emprunt en devises adossé à une créance."
     },
     {

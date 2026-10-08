@@ -24,6 +24,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : une obligation verte affecte les fonds à des projets environnementaux, alors qu'ici ils financent les besoins généraux.",
+        "Exact : le coupon dépend de l'atteinte d'un objectif (−30 % scopes 1 et 2) à une date d'observation, sans fléchage des fonds.",
+        "Inexact : l'obligation verte européenne alloue ses fonds à des activités alignées sur la taxonomie : c'est une obligation verte.",
+        "Inexact : une obligation sociale finance des projets sociaux identifiés."
+      ],
       "explanation": "L'obligation liée à la durabilité (option 2) ne fléche pas les fonds : ses caractéristiques financières (ici une hausse du coupon, ou step-up) dépendent de l'atteinte d'un objectif de performance (réduction de 30 %) mesuré par un indicateur clé (émissions scopes 1 et 2) à une date d'observation. Une obligation verte (option 1) affecte au contraire les fonds à des projets environnementaux, ce que l'énoncé exclut. L'obligation verte européenne (option 3) est une obligation verte dont les fonds sont alloués à des activités alignées sur la taxonomie. Une obligation sociale (option 4) finance des projets sociaux identifiés."
     },
     {

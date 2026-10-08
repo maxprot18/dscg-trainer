@@ -25,6 +25,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : capitaliser le bénéfice total donne une valeur de rendement, pas un goodwill.",
+        "Exact : la rente est le bénéfice excédant la rémunération normale des capitaux engagés : B − i × A.",
+        "Inexact : l'écart valeur de marché / valeur comptable des actifs correspond aux plus-values latentes intégrées dans l'ANCC.",
+        "Inexact : décrit le résultat d'exploitation, sans référence à la rémunération des capitaux engagés."
+      ],
       "explanation": "La rente de goodwill est le bénéfice excédant ce que rapporterait un placement normal des capitaux engagés : B − i × A (option 2). Capitaliser le bénéfice total (option 1) donne une valeur de rendement, pas un goodwill. L’écart entre valeur de marché et valeur comptable des actifs (option 3) correspond aux plus-values latentes intégrées dans l’ANCC. L’option 4 décrit le résultat d’exploitation, sans référence à la rémunération des capitaux."
     },
     {
@@ -51,6 +57,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : écart entre valeur de rendement et ANCC (4 000 000 − 3 000 000), non divisé par deux.",
+        "Inexact : 3 500 000 € est la valeur des praticiens de l'entreprise, pas le goodwill.",
+        "Inexact : 4 000 000 € est la valeur de rendement (360 000 / 0,09).",
+        "Exact : V = (3 000 000 + 4 000 000) / 2 = 3 500 000 € ; goodwill = 3 500 000 − 3 000 000 = 500 000 €."
       ],
       "explanation": "Valeur de rendement = 360 000 / 0,09 = 4 000 000 €. Valeur des praticiens = (3 000 000 + 4 000 000) / 2 = 3 500 000 €. Goodwill implicite = 3 500 000 − 3 000 000 = 500 000 € (option 4). L’option 1 est l’écart entre valeur de rendement et ANCC, non divisé par deux ; l’option 2 est la valeur de l’entreprise et non le goodwill ; l’option 3 est la valeur de rendement."
     },

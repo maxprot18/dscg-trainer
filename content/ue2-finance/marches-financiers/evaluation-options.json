@@ -25,6 +25,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : confond l'effet de la volatilité avec celui du cours du sous-jacent, dont la hausse valorise le call et déprécie le put.",
+        "Inexact : confond l'effet de la volatilité avec celui du cours du sous-jacent ; la volatilité valorise le call comme le put.",
+        "Inexact : raisonne comme pour un actif détenu en direct ; l'asymétrie de l'option fait du risque une source de valeur.",
+        "Exact : la perte est limitée à la prime et le gain croît avec l'ampleur des mouvements : la volatilité valorise call et put."
+      ],
       "explanation": "L'option 4 est correcte : la perte du détenteur d'une option est limitée à la prime alors que son gain croît avec l'ampleur des mouvements favorables. Une volatilité plus forte augmente la probabilité de gains importants sans accroître la perte maximale : elle valorise donc le call comme le put. Les options 1 et 2 confondent l'effet de la volatilité avec celui du cours du sous-jacent (une hausse du cours valorise le call et déprécie le put). L'option 3 raisonne comme pour un actif détenu en direct, alors que l'asymétrie de l'option fait du risque une source de valeur."
     },
     {
@@ -51,6 +57,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : retranche la prime du call côté bas et ajoute celle du put côté haut, sans cumuler les deux primes.",
+        "Exact : coût total 3 + 2,50 = 5,50 € ; perte tant que |S_T − 50| < 5,50, soit entre 44,50 € et 55,50 €.",
+        "Inexact : utilise chaque prime séparément au lieu du coût total de 5,50 €.",
+        "Inexact : 50 € est le point de perte maximale (5,50 €), pas toute la zone de perte."
       ],
       "explanation": "L'option 2 est correcte : coût total du straddle = 3 + 2,50 = 5,50 €. À l'échéance, le gain brut vaut |S_T − 50| ; l'opération est perdante tant que |S_T − 50| < 5,50, soit entre 44,50 € et 55,50 € (points morts 50 ± 5,50). La perte maximale (5,50 €) est atteinte à 50 €. L'option 1 retranche la prime du call du côté bas et ajoute celle du put du côté haut, sans cumuler les deux primes. L'option 3 utilise chaque prime séparément. L'option 4 confond le point de perte maximale avec la zone de perte."
     },

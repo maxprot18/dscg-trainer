@@ -25,6 +25,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : les charges de personnel sont retranchées de la valeur ajoutée pour obtenir l'EBE.",
+        "Inexact : les impôts, taxes et versements assimilés sont retranchés de la valeur ajoutée pour obtenir l'EBE.",
+        "Exact : les dotations sont déduites entre l'EBE et le résultat d'exploitation, ce qui rend l'EBE indépendant de la politique d'amortissement.",
+        "Inexact : les subventions d'exploitation sont ajoutées à la valeur ajoutée dans le calcul de l'EBE."
+      ],
       "explanation": "EBE = valeur ajoutée + subventions d'exploitation − impôts, taxes et versements assimilés − charges de personnel. Les dotations aux amortissements (option 3) sont déduites plus bas, entre l'EBE et le résultat d'exploitation : c'est ce qui rend l'EBE indépendant de la politique d'amortissement. Les charges de personnel (option 1) et les impôts et taxes (option 2) sont retranchés de la VA pour obtenir l'EBE ; les subventions d'exploitation (option 4) y sont ajoutées."
     },
     {
@@ -52,6 +58,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : oublie de retrancher la quote-part de subvention virée au résultat (50), produit calculé sans encaissement.",
+        "Inexact : retire deux fois la plus-value de cession (80).",
+        "Exact : 1 200 + 800 − 150 − 300 + 220 − 50 = 1 720 k€ ; le couple produit de cession / VNC neutralise la plus-value.",
+        "Inexact : oublie de retrancher les reprises sur provisions (150)."
+      ],
       "explanation": "CAF = résultat net + dotations − reprises − produits de cession + VNC des actifs cédés − quote-part de subvention virée au résultat = 1 200 + 800 − 150 − 300 + 220 − 50 = 1 720 k€ (option 3). Le couple « − produits de cession + VNC » revient à retirer la plus-value de cession (80), qui n'est pas une ressource d'autofinancement : le prix de cession est une ressource d'investissement. 1 770 (option 1) oublie de retrancher la quote-part de subvention, produit calculé sans encaissement. 1 640 (option 2) retire la plus-value deux fois. 1 870 (option 4) oublie de retrancher les reprises sur provisions."
     },
     {
@@ -80,6 +92,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : la conserver surestime l'autofinancement ; le groupe n'encaisse rien tant que la société ne distribue pas.",
+        "Inexact : les minoritaires concernent les filiales intégrées, pas les sociétés mises en équivalence.",
+        "Inexact : l'ajouter une seconde fois n'a aucun fondement ; c'est un produit calculé, sans encaissement.",
+        "Exact : la quote-part de résultat mise en équivalence est un produit calculé ; on la retranche et l'on retient les dividendes reçus."
+      ],
       "explanation": "La quote-part de résultat des sociétés mises en équivalence est un produit calculé : le groupe n'encaisse rien tant que la société ne distribue pas. On la retranche donc du résultat pour calculer la CAF (ou les flux opérationnels), et l'on retient les dividendes effectivement reçus (option 4). La conserver (option 1) surestime l'autofinancement. Les minoritaires (option 2) concernent les filiales intégrées, pas les sociétés mises en équivalence, et l'on part du résultat de l'ensemble consolidé. L'ajouter à nouveau (option 3) n'a aucun fondement."
     },
     {

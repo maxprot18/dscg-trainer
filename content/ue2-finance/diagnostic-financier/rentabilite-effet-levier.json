@@ -26,6 +26,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : levier mal calculé avec D/(D + CP) = 1/3 au lieu de D/CP = 0,5.",
+        "Exact : R_f = 9 % + (9 % − 3 %) × 2/4 = 12 % ; vérification : (540 − 60) / 4 000 = 12 %.",
+        "Inexact : inverse le ratio de levier (CP/D = 2 au lieu de D/CP = 0,5).",
+        "Inexact : 6 % n'est que le différentiel R_e − i, pas la rentabilité financière."
+      ],
       "explanation": "Formule de l'effet de levier : R_f = R_e + (R_e − i) × D/CP. Le levier est D/CP = 2/4 = 0,5. R_f = 9 % + (9 % − 3 %) × 0,5 = 9 % + 3 % = 12 %. Vérification par les montants : résultat économique après impôt = 9 % × 6 M€ = 540 k€ ; frais financiers après impôt = 3 % × 2 M€ = 60 k€ ; résultat net = 480 k€, soit 480/4 000 = 12 %. 11 % résulte d'un levier mal calculé (D/(D+CP) = 1/3 au lieu de D/CP) ; 21 % inverse le ratio (CP/D = 2) ; 6 % n'est que l'écart R_e − i (le différentiel de levier), pas la rentabilité financière. L'effet de levier est positif ici car R_e > i."
     },
     {
@@ -52,6 +58,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : le niveau de D/CP ne fait qu'amplifier l'effet, dans un sens ou dans l'autre.",
+        "Inexact : une rentabilité financière positive ne dit rien du signe du différentiel R_e − i.",
+        "Inexact : si i > R_e, le différentiel est négatif : l'endettement réduit R_f (effet de massue).",
+        "Exact : R_f = R_e + (R_e − i) × D/CP ; l'endettement accroît R_f si le différentiel R_e − i est positif."
+      ],
       "explanation": "Rf = Re + (Re − i) × D/CP : l'endettement augmente Rf si le différentiel (Re − i) est positif, c'est-à-dire si l'actif financé rapporte plus que la dette ne coûte (option 4). Le niveau du ratio D/CP (option 1) ne fait qu'amplifier l'effet, dans un sens ou dans l'autre. Une Rf positive (option 2) ne dit rien du signe du différentiel. Si i > Re (option 3), l'effet est négatif : c'est l'effet de massue."
     },
     {
@@ -80,6 +92,12 @@
         0
       ],
       "multiple": false,
+      "option_explanations": [
+        "Exact : taux de marge 1,8 / 30 = 6 % ; rotation 30 / 15 = 2 ; Re = 6 % × 2 = 12 %, soit 1,8 / 15.",
+        "Inexact : 9 % est la rentabilité économique avant réduction du BFR (1,8 / 20).",
+        "Inexact : 6 % n'est que le taux de marge économique, sans la rotation de l'actif économique.",
+        "Inexact : applique l'ancienne rotation de 1,5 à la Re initiale de 9 % au lieu de l'appliquer au taux de marge."
+      ],
       "explanation": "Re = taux de marge économique × rotation. Le taux de marge reste 1,8 / 30 = 6 % ; la rotation passe de 30 / 20 = 1,5 à 30 / 15 = 2. Re = 6 % × 2 = 12 % (option 1), soit 1,8 / 15. 9 % (option 2) est la Re avant réduction du BFR. 6 % (option 3) est le seul taux de marge, sans la rotation. 13,5 % (option 4) applique la rotation de 1,5 à la Re initiale de 9 % au lieu de l'appliquer au taux de marge."
     },
     {
@@ -107,6 +125,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : 4,0 % = 7 % + (7 % − 9 %) × 1,5, mais oublie l'impôt (× 0,75).",
+        "Inexact : mélange une Re après impôt (5,25 %) et un coût de la dette avant impôt (9 %).",
+        "Inexact : 5,25 % est la Re après impôt, qui ne serait la rentabilité financière qu'en l'absence de dette.",
+        "Exact : [7 % + (7 % − 9 %) × 1,5] × 0,75 = 3,0 % ; différentiel négatif, effet de massue."
+      ],
       "explanation": "Avec des taux avant impôt : Rf = [Re + (Re − i) × D/CP] × (1 − t). Avant : [7 % + (7 % − 5 %) × 1,5] × 0,75 = 7,5 %. Après : [7 % + (7 % − 9 %) × 1,5] × 0,75 = (7 % − 3 %) × 0,75 = 3,0 % (option 4) : le différentiel devient négatif, l'effet de levier se transforme en effet de massue et la Rf passe sous la Re après impôt (5,25 %). 4,0 % (option 1) oublie l'impôt. −0,4 % (option 2) mélange une Re après impôt (5,25 %) et un coût de la dette avant impôt (9 %). 5,25 % (option 3) est la Re après impôt, qui ne serait la Rf qu'en l'absence de dette."
     },
     {

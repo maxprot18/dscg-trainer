@@ -24,6 +24,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : les subventions d'investissement font partie des capitaux propres ; seul l'impôt latent qu'elles supportent est traité comme une dette dans l'ANCC.",
+        "Inexact : le report à nouveau créditeur est une composante ordinaire des capitaux propres.",
+        "Inexact : les provisions réglementées restent dans les capitaux propres ; seul leur impôt latent est traité comme une dette dans l'ANCC.",
+        "Exact : les frais d'établissement sont un actif fictif, sans valeur de cession, éliminé pour obtenir l'ANC."
+      ],
       "explanation": "Les frais d’établissement sont un actif fictif (« non-valeur ») : ils n’ont aucune valeur de cession et sont éliminés pour obtenir l’ANC (option 4). Les subventions d’investissement (option 1) et les provisions réglementées (option 3) font partie des capitaux propres comptables ; dans l’ANCC, seul l’impôt latent qu’elles supportent est traité comme une dette, elles ne sont pas retranchées en totalité. Le report à nouveau créditeur (option 2) est une composante ordinaire des capitaux propres."
     },
     {
@@ -50,6 +56,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : ignore la fiscalité latente de 75 000 € sur la plus-value.",
+        "Inexact : le terrain est déjà inclus pour 200 000 € dans les capitaux propres ; seule la plus-value nette s'ajoute.",
+        "Exact : plus-value latente 300 000 € × (1 − 25 %) = 225 000 €.",
+        "Inexact : 75 000 € est le seul impôt latent sur la plus-value."
       ],
       "explanation": "Plus-value latente = 500 000 − 200 000 = 300 000 € ; impôt latent = 300 000 × 25 % = 75 000 € ; augmentation de l’ANCC = 300 000 × (1 − 0,25) = 225 000 € (option 3). L’option 1 ignore la fiscalité latente ; l’option 2 ajoute la valeur de marché totale alors que le terrain est déjà inclus pour 200 000 € dans les capitaux propres ; l’option 4 correspond au seul impôt latent."
     },
@@ -78,6 +90,12 @@
       "answer": [
         0,
         2
+      ],
+      "option_explanations": [
+        "Exact : les frais d'établissement sont une charge étalée sans valeur de réalisation : non-valeur éliminée.",
+        "Inexact : le brevet est un actif réel, retenu à sa valeur expertisée, plus-value éventuelle nette d'impôt latent.",
+        "Exact : les primes de remboursement des obligations sont une charge étalée sans valeur de réalisation : non-valeur éliminée.",
+        "Inexact : les créances recouvrables sont des actifs réels, retenus à leur valeur probable de recouvrement."
       ],
       "explanation": "Les frais d’établissement (option 1) et les primes de remboursement des obligations (option 3) sont des charges étalées qui n’ont aucune valeur de réalisation : ce sont des non-valeurs, éliminées de l’actif net. Le brevet (option 2) est un actif réel, retenu à sa valeur expertisée (éventuelle plus-value nette d’impôt latent). Les créances clients recouvrables (option 4) sont des actifs réels retenus à leur valeur probable de recouvrement."
     },

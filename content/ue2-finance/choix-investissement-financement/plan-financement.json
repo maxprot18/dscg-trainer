@@ -25,6 +25,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : les dividendes à verser sont un décaissement, donc un emploi du plan de financement.",
+        "Exact : les dotations ne sont pas des décaissements ; elles n'interviennent qu'indirectement, en majorant la CAF, qui est une ressource.",
+        "Inexact : le remboursement du capital des emprunts est un décaissement, donc un emploi.",
+        "Inexact : l'augmentation du BFR mobilise des fonds : c'est un emploi."
+      ],
       "explanation": "Les dotations aux amortissements (option 2) ne sont pas des décaissements : elles n'interviennent qu'indirectement, en majorant la CAF (ressource). Les dividendes (option 1), les remboursements en capital (option 3) et la hausse du BFR (option 4) sont des emplois de fonds."
     },
     {

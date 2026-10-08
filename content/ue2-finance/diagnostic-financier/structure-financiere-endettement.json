@@ -25,6 +25,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : exclut les dettes locatives (2 000), alors que la définition du groupe les inclut.",
+        "Inexact : déduit en plus les actions cotées (400), qui ne sont pas des équivalents de trésorerie (IAS 7 §7).",
+        "Exact : 6 000 + 4 500 + 2 000 + 300 − 2 800 = 10 000 k€, selon la définition du groupe.",
+        "Inexact : oublie les concours bancaires courants (300)."
+      ],
       "explanation": "Endettement net = 6 000 + 4 500 + 2 000 + 300 − 2 800 = 10 000 k€ (option 3). 8 000 (option 1) exclut les dettes locatives, alors que la définition du groupe les inclut. 9 600 (option 2) déduit en plus les actions cotées, qui ne sont pas des équivalents de trésorerie (risque de variation de valeur non négligeable, IAS 7 §7). 9 700 (option 4) oublie les concours bancaires courants."
     },
     {
@@ -52,6 +58,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : l'appréciation se fait à la clôture ; une renonciation postérieure, même avant l'arrêté, ne permet pas le classement non courant (B102).",
+        "Exact : bris à la clôture rendant la dette exigible : passif courant (IFRS 18 B102) ; la renonciation de février est un événement postérieur non ajustant (B105).",
+        "Inexact : ignore que l'appréciation se fait à la clôture ; seul un délai de grâce d'au moins douze mois obtenu à la clôture l'autoriserait (B103).",
+        "Inexact : aucune règle ne prévoit de partager la dette entre courant et non courant."
+      ],
       "explanation": "IFRS 18 B102 (ex-IAS 1 §74) : lorsqu'une clause d'un emprunt à long terme n'est pas respectée à la clôture et rend la dette exigible à vue, la dette est classée en courant, même si le prêteur accepte après la clôture et avant l'autorisation de publication de ne pas exiger le paiement. Seul un délai de grâce d'au moins douze mois accordé au plus tard à la clôture permettrait le classement non courant (B103). D'où l'option 2 ; la renonciation obtenue en février est un événement postérieur non ajustant (B105), mentionné en annexe. Les options 1 et 3 ignorent que l'appréciation se fait à la clôture. Aucune règle ne prévoit le partage de l'option 4."
     },
     {

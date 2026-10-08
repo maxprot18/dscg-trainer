@@ -25,6 +25,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : ce n'est pas une dette ; le groupe n'a pas d'obligation de rembourser les minoritaires.",
+        "Inexact : elles ne se déduisent pas du goodwill, même si le goodwill complet inclut la part des minoritaires.",
+        "Inexact : elles figurent bien au bilan, pas seulement en annexe.",
+        "Exact : IFRS 10 §22 : présentation dans les capitaux propres, séparément de la part des propriétaires de la mère."
+      ],
       "explanation": "IFRS 10 §22 : les participations ne donnant pas le contrôle sont présentées dans les capitaux propres, séparément de la part des propriétaires de la mère (option 4). Elles ne constituent pas une dette (option 1), car le groupe n'a pas d'obligation de les rembourser. Elles ne viennent pas en déduction du goodwill (option 2), même si, avec l'option du goodwill complet, celui-ci inclut la part des minoritaires. Elles figurent bien au bilan, pas seulement en annexe (option 3). Conséquence pour l'analyste : comparer un résultat part du groupe aux seuls capitaux propres part du groupe."
     },
     {
@@ -54,6 +60,12 @@
         2
       ],
       "multiple": true,
+      "option_explanations": [
+        "Exact : le loyer est remplacé par un amortissement du droit d'utilisation et des intérêts, tous deux sous l'EBITDA, qui augmente.",
+        "Inexact : les flux d'activité augmentent, car le remboursement du principal de la dette locative est classé en financement (§50).",
+        "Exact : la dette locative est comptabilisée au passif ; l'endettement net augmente s'il l'inclut.",
+        "Inexact : le gearing augmente, l'endettement net croissant tandis que les capitaux propres baissent légèrement en début de contrat."
+      ],
       "explanation": "Selon IFRS 16, le loyer est remplacé par un amortissement du droit d'utilisation et une charge d'intérêts sur la dette locative : l'EBITDA augmente (option 1). La dette locative est comptabilisée au passif : l'endettement net augmente s'il l'inclut (option 3). Les flux d'activité augmentent au contraire, car le remboursement du principal de la dette est classé en financement (§50) : l'option 2 est fausse. Le gearing augmente, puisque l'endettement net croît alors que les capitaux propres baissent légèrement en début de contrat : l'option 4 est fausse."
     },
     {

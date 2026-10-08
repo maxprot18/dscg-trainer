@@ -26,6 +26,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : correspond au cours comptant, sans tenir compte du différentiel de taux.",
+        "Exact : F = 1,1000 × 1,0125 / 1,0075 ≈ 1,105459 USD pour 1 EUR ; 1 100 000 / 1,105459 ≈ 995 062 €.",
+        "Inexact : inverse les taux euro et dollar dans la formule de parité.",
+        "Inexact : applique le différentiel annuel de 2 points sans le proratiser sur 3 mois (F ≈ 1,1220)."
+      ],
       "explanation": "Le cours à terme découle de la parité des taux d'intérêt. Cotation à l'incertain pour le dollar (USD pour 1 EUR) : F = 1,1000 × (1 + 5 % × 90/360) / (1 + 3 % × 90/360) = 1,1000 × 1,0125 / 1,0075 ≈ 1,105459 USD pour 1 EUR. Le dollar, devise au taux le plus élevé, cote en déport à terme. Montant garanti : 1 100 000 / 1,105459 ≈ 995 062 €. 1 000 000 € correspond au cours comptant (aucune prise en compte du différentiel de taux) ; 1 004 963 € inverse les taux dans la formule ; 980 392 € applique le différentiel annuel de 2 points sans le proratiser sur 3 mois (F ≈ 1,1000 × 1,02 = 1,1220). La couverture fige le montant : l'entreprise renonce à un éventuel gain de change mais élimine le risque de perte."
     },
     {
@@ -53,6 +59,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : calcule les intérêts sur le montant final (1 000 000 × 1,5 %) au lieu du capital emprunté.",
+        "Inexact : oublie les intérêts ; le remboursement dépasserait la créance.",
+        "Exact : M × (1 + 6 % × 90/360) = 1 000 000, soit M = 1 000 000 / 1,015 ≈ 985 222 USD.",
+        "Inexact : applique le taux annuel de 6 % sans le proratiser sur 90 jours."
+      ],
       "explanation": "Le montant emprunté M doit vérifier M × (1 + 6 % × 90/360) = 1 000 000, soit M = 1 000 000 / 1,015 ≈ 985 222 USD (option 3) ; ces dollars, convertis au comptant, procurent immédiatement des euros, et l’encaissement du client rembourse l’emprunt. L’option 1 calcule les intérêts sur le montant final (1 000 000 × 1,5 %) au lieu de les calculer sur le capital emprunté. L’option 2 oublie les intérêts : le remboursement dépasserait la créance. L’option 4 applique le taux annuel de 6 % sans le proratiser sur 90 jours."
     },
     {
@@ -81,6 +93,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : une transaction prévue n'est pas comptabilisée ; il n'existe rien à réévaluer en résultat.",
+        "Inexact : la couverture d'investissement net vise l'actif net d'une activité à l'étranger, pas une vente future.",
+        "Inexact : une transaction future hautement probable peut être un élément couvert (IFRS 9 §6.3.3), la relation étant documentée.",
+        "Exact : couverture de flux de trésorerie : part efficace en autres éléments du résultat global, reclassée en résultat quand la vente l'affecte (§6.5.11)."
+      ],
       "explanation": "Une transaction future hautement probable peut être un élément couvert (IFRS 9 §6.3.3) ; le risque couvert est la variabilité de ses flux de trésorerie en euros : c’est une couverture de flux de trésorerie (option 4). La part efficace de la variation de juste valeur du dérivé est portée en autres éléments du résultat global (réserve de couverture), la part inefficace en résultat, et le montant accumulé est reclassé en résultat lorsque la vente couverte affecte le résultat (§6.5.11). L’option 1 est impossible : une transaction prévue n’est pas comptabilisée, il n’existe rien à réévaluer. L’option 2 vise l’actif net d’une activité à l’étranger. L’option 3 est fausse dès lors que la transaction est hautement probable et la relation documentée."
     },
     {

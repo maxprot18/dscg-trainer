@@ -104,6 +104,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : ajoute la hausse du BFR (0,5 M€) au lieu de la retrancher.",
+        "Inexact : calcule l'impôt sur l'EBE (2,5 M€) au lieu de l'IS normatif sur l'EBIT (1,5 M€).",
+        "Inexact : oublie de retrancher les investissements (4 M€).",
+        "Exact : IS normatif = 6 × 25 % = 1,5 ; FTD = 10 − 1,5 − 4 − 0,5 = 4,0 M€."
+      ],
       "explanation": "IS normatif sur le résultat d’exploitation : 6 × 25 % = 1,5 M€. FTD = 10 − 1,5 − 4 − 0,5 = 4,0 M€ (option 4). L’option 1 ajoute la hausse du BFR au lieu de la retrancher ; l’option 2 calcule l’impôt sur l’EBE (2,5 M€) au lieu de l’EBIT ; l’option 3 oublie les investissements."
     },
     {
@@ -130,6 +136,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : 72,86 M€ est la valeur terminale en fin d'année 5, non actualisée.",
+        "Inexact : utilise le flux de l'année 5 au lieu de celui de l'année 6 (5 × 1,02).",
+        "Exact : VT = 5 × 1,02 / (0,09 − 0,02) = 72,86 M€ en fin d'année 5 ; 72,86 / 1,09⁵ ≈ 47,35 M€.",
+        "Inexact : n'actualise la valeur terminale que sur 4 ans au lieu de 5."
       ],
       "explanation": "VT en fin d’année 5 = 5 × 1,02 / (0,09 − 0,02) = 5,1 / 0,07 = 72,86 M€ ; valeur actuelle = 72,86 / 1,09⁵ = 72,86 / 1,538624 ≈ 47,35 M€ (option 3). L’option 1 n’est pas actualisée ; l’option 2 utilise le flux de l’année 5 au lieu de celui de l’année 6 (5 / 0,07 / 1,09⁵) ; l’option 4 n’actualise que sur 4 ans."
     },

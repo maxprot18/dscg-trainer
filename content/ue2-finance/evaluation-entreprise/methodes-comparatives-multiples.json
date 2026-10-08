@@ -24,6 +24,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : un multiple de VE donne une valeur d'entreprise, dont il faut retrancher la dette financière nette.",
+        "Exact : le PER rapporte la capitalisation au résultat net, après frais financiers : il donne directement la valeur des capitaux propres.",
+        "Inexact : VE / CA donne une valeur d'entreprise, dont il faut retrancher la dette financière nette.",
+        "Inexact : VE / EBIT s'applique à un agrégat avant frais financiers ; il faut retrancher la dette financière nette."
+      ],
       "explanation": "Le PER rapporte la capitalisation boursière au résultat net, agrégat après frais financiers revenant aux actionnaires : appliqué au résultat net de la cible, il donne directement la valeur des capitaux propres (option 2). Les multiples VE / EBITDA, VE / CA et VE / EBIT (options 1, 3 et 4) donnent une valeur d’entreprise, dont il faut retrancher la dette financière nette."
     },
     {
@@ -50,6 +56,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : sans fondement ; le niveau des résultats est neutralisé par le rapport prix / agrégat.",
+        "Inexact : les deux familles de multiples utilisent les mêmes agrégats (EBITDA, EBIT, résultat net).",
+        "Exact : l'acquéreur paie une prime de contrôle et une partie des synergies : les multiples de transactions traduisent une valeur majoritaire.",
+        "Inexact : inversé ; la décote d'illiquidité s'applique à une société non cotée évaluée sur multiples boursiers."
+      ],
       "explanation": "Un acquéreur qui prend le contrôle paie une prime reflétant le pouvoir de décision et les synergies attendues : les multiples de transactions traduisent une valeur majoritaire (option 3). L’option 1 n’a pas de fondement : le niveau des résultats est neutralisé par le rapport prix / agrégat. L’option 2 est fausse : les deux familles utilisent les mêmes agrégats (EBITDA, EBIT, résultat net). L’option 4 est inversée : la décote d’illiquidité s’applique à une société non cotée évaluée sur multiples boursiers, les cours des sociétés cotées n’en contiennent pas."
     },
     {
@@ -75,6 +87,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : 90 M€ est la valeur d'entreprise (7,5 × 12), dette non retranchée.",
+        "Inexact : ajoute la dette financière nette au lieu de la retrancher.",
+        "Exact : VE = 7,5 × 12 = 90 M€ ; capitaux propres = 90 − 30 = 60 M€.",
+        "Inexact : retranche deux fois la dette financière nette (90 − 2 × 30)."
       ],
       "explanation": "Valeur d’entreprise = 7,5 × 12 = 90 M€ ; valeur des capitaux propres = 90 − 30 = 60 M€ (option 3). L’option 1 est la valeur d’entreprise, la dette n’ayant pas été retranchée ; l’option 2 ajoute la dette au lieu de la retrancher ; l’option 4 retranche deux fois la dette."
     },

@@ -45,6 +45,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : 84 / 3 répartit la valeur sur les 3 actions anciennes au lieu des 4 actions du nouvel ensemble.",
+        "Exact : cours théorique après = 3 × 84 / 4 = 63 € ; droit = 84 − 63 = 21 €, soit 84 × 1/4.",
+        "Inexact : l'action gratuite a une valeur ; il faut 3 droits pour l'obtenir, ce qui compense la baisse du cours.",
+        "Inexact : 63 € est le cours théorique après opération, pas la valeur du droit."
+      ],
       "explanation": "La valeur de la société ne change pas : 3 actions anciennes valent 3 × 84 = 252 € et, après l'attribution, ce montant se répartit sur 4 actions, soit 63 € l'une. Chaque action ancienne perd 84 − 63 = 21 €, valeur du droit d'attribution (formule : 84 × 1/4 = 21 €). L'option 1 (84 / 3 = 28 €) répartit la valeur sur les 3 actions anciennes au lieu des 4 actions du nouvel ensemble. L'option 3 oublie que l'action gratuite a une valeur : il faut 3 droits pour l'obtenir, et c'est précisément ce qui compense la baisse du cours. L'option 4 (63 €) est le cours théorique après opération, pas la valeur du droit."
     },
     {
@@ -72,6 +78,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : la vente des DPS compense la baisse du cours (protection en valeur), pas la perte de pourcentage.",
+        "Inexact : retire un quart du pourcentage (12 % × 3/4), comme si les actions nouvelles étaient prises sur le million existant.",
+        "Inexact : arrondi sans fondement ; le calcul donne 120 000 / 1 250 000 = 9,6 %.",
+        "Exact : 120 000 actions sur 1 000 000 + 250 000 = 1 250 000, soit 9,6 % (12 % / 1,25)."
+      ],
       "explanation": "Après l'opération, le capital compte 1 000 000 + 250 000 = 1 250 000 actions ; l'actionnaire en détient toujours 120 000, soit 120 000 / 1 250 000 = 9,6 % (12 % / 1,25). L'option 1 confond protection en valeur et protection en contrôle : le produit de la vente des DPS compense la baisse du cours, pas la perte de pourcentage. L'option 2 retire un quart du pourcentage (12 % × 3/4), comme si les 250 000 actions nouvelles étaient prises sur le million existant. L'option 3 est un arrondi sans fondement."
     },
     {

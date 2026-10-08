@@ -25,6 +25,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : le risque spécifique est précisément celui que la diversification élimine.",
+        "Inexact : le risque systématique, ou de marché, demeure malgré la diversification.",
+        "Inexact : la défaillance d'un émetteur isolé relève du risque spécifique, négligeable dans un portefeuille de cent lignes.",
+        "Exact : le risque systématique (conjoncture, taux, inflation) affecte tous les titres et ne se diversifie pas."
+      ],
       "explanation": "L'option 4 est correcte : la diversification élimine le risque spécifique (ou diversifiable), car les événements propres à chaque société se compensent ; le risque systématique (conjoncture, taux, inflation) affecte tous les titres et ne se diversifie pas. L'option 1 désigne précisément le risque éliminé. L'option 2 est fausse : le risque de marché demeure. L'option 3 est une composante du risque spécifique, dont le poids devient négligeable dans un portefeuille de cent lignes."
     },
     {
@@ -51,6 +57,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : compare à la rentabilité du marché (2,5 % + 6 % = 8,5 %) sans tenir compte du bêta.",
+        "Exact : rentabilité d'équilibre = 2,5 % + 0,8 × 6 % = 7,3 % ; 8,5 % au-dessus de la SML (alpha +1,2 point) : sous-évaluée.",
+        "Inexact : confond niveau de risque (bêta) et évaluation du titre.",
+        "Inexact : applique le bêta à la rentabilité du marché au lieu de la prime ; et 8,5 % < 9,3 % contredit sa conclusion."
       ],
       "explanation": "L'option 2 est correcte : rentabilité d'équilibre = 2,5 % + 0,8 × 6 % = 7,3 %. La rentabilité prévue (8,5 %) est supérieure : alpha de +1,2 point, le titre est au-dessus de la SML, donc sous-évalué (son prix devrait monter jusqu'à ce que sa rentabilité attendue revienne à 7,3 %). L'option 1 compare à la rentabilité du marché (2,5 + 6 = 8,5 %) sans tenir compte du bêta. L'option 3 confond niveau de risque et évaluation. L'option 4 applique le bêta à la rentabilité du marché au lieu de la prime de risque, et sa conclusion est d'ailleurs incohérente avec son propre calcul (8,5 % < 9,3 %)."
     },

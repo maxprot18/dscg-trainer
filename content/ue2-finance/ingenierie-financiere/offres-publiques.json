@@ -26,6 +26,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : l'OPA est rémunérée en numéraire, non en titres de l'initiateur.",
+        "Exact : la rémunération en titres de l'initiateur (3 actions nouvelles pour 2 apportées) caractérise l'OPE.",
+        "Inexact : l'OPR permet à un actionnaire largement majoritaire d'offrir une sortie aux minoritaires avant un retrait de la cote.",
+        "Inexact : l'OPRA est l'offre d'une société sur ses propres actions."
+      ],
       "explanation": "La rémunération en titres de l'initiateur caractérise l'OPE. L'OPA (option 1) est rémunérée en numéraire. L'OPR (option 3) permet à un actionnaire largement majoritaire d'offrir une sortie aux minoritaires avant un retrait de la cote. L'OPRA (option 4) est l'offre d'une société sur ses propres actions."
     },
     {
@@ -53,6 +59,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : le tiers est l'ancien seuil, abaissé à 30 % par la loi du 22 octobre 2010 (applicable depuis le 1er février 2011).",
+        "Inexact : 50 % est le seuil de contrôle majoritaire, sans portée particulière pour l'offre obligatoire.",
+        "Inexact : 90 % correspond au seuil permettant le retrait obligatoire (minoritaires ne détenant pas plus de 10 %).",
+        "Exact : RG AMF art. 234-2 : l'offre est obligatoire au-delà de 30 % du capital ou des droits de vote, seul ou de concert."
+      ],
       "explanation": "Le dépôt d'une offre est obligatoire lorsqu'une personne, seule ou de concert, vient à détenir plus de 30 % du capital ou des droits de vote. L'option 1 correspond à l'ancien seuil, abaissé à 30 % par la loi de régulation bancaire et financière du 22 octobre 2010 (applicable depuis le 1er février 2011). L'option 2 est le seuil de contrôle majoritaire, sans portée particulière en matière d'offre obligatoire. L'option 3 correspond au seuil permettant le retrait obligatoire (minoritaires ne détenant pas plus de 10 %)."
     },
     {
@@ -81,6 +93,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : n'examine que le capital ; les minoritaires doivent aussi ne pas dépasser 10 % des droits de vote.",
+        "Inexact : bonne conclusion, mais règle périmée ; le seuil de 95 % a été abaissé à 90 % par la loi PACTE de 2019.",
+        "Exact : les conditions sont cumulatives ; les minoritaires détiennent 9 % du capital mais 11 % des droits de vote : retrait impossible.",
+        "Inexact : l'attestation d'équité est une condition nécessaire, pas suffisante ; le seuil de 10 % des droits de vote n'est pas respecté."
+      ],
       "explanation": "Le retrait obligatoire suppose que les actionnaires minoritaires ne représentent pas plus de 10 % du capital et des droits de vote : les deux conditions sont cumulatives. Ici, ils détiennent 9 % du capital mais 11 % des droits de vote : le retrait est impossible pour l'instant. L'option 1 n'examine qu'une condition. L'option 2 conclut aussi par la négative, mais sur une règle périmée : le seuil de 95 % a été abaissé à 90 % par la loi PACTE de 2019. L'option 4 confond une condition nécessaire (l'attestation d'équité) avec une condition suffisante."
     },
     {

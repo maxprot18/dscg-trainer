@@ -24,6 +24,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : c'est l'autofinancement disponible après service de la dette, qui ignore le BFR et les investissements.",
+        "Exact : le FTD est la trésorerie générée par l'activité après investissements nécessaires, disponible pour les apporteurs de capitaux.",
+        "Inexact : EBE − variation du BFRE est l'excédent de trésorerie d'exploitation, avant impôt et avant investissements.",
+        "Inexact : résultat net plus dotations n'est qu'une approximation grossière de la CAF."
+      ],
       "explanation": "Le FTD (option 2) mesure ce qui reste de la trésorerie générée par l'activité après financement des investissements nécessaires : il est disponible pour les apporteurs de capitaux. La CAF diminuée des remboursements (option 1) est l'autofinancement disponible après service de la dette, qui ignore le BFR et les investissements. EBE − variation du BFRE (option 3) est l'excédent de trésorerie d'exploitation, avant impôt et avant investissements. Le résultat net augmenté des dotations (option 4) est une approximation grossière de la CAF."
     },
     {
@@ -52,6 +58,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Inexact : compare les montants publiés (950 − 880) sans reclasser les intérêts de B en financement.",
+        "Inexact : retranche les intérêts de B au lieu de les réintégrer (880 − 120 = 760).",
+        "Exact : intérêts de B reclassés en financement : 880 + 120 = 1 000 M€, contre 950 M€ pour A, soit 50 M€ de plus.",
+        "Inexact : après retraitement, B atteint 1 000 M€ contre 950 M€ pour A ; l'égalité n'a pas de fondement."
+      ],
       "explanation": "Pour un exercice ouvert avant le 1er janvier 2027, IAS 7 §33 (ancienne rédaction) autorise le classement des intérêts versés en activité ou en financement. Pour comparer, on reclasse les 120 M€ d'intérêts de B en financement : ses flux d'activité deviennent 880 + 120 = 1 000 M€, contre 950 M€ pour A. B génère donc 50 M€ de plus (option 3). L'option 1 compare les montants publiés sans retraitement. L'option 2 retranche les intérêts au lieu de les réintégrer (880 − 120 = 760). L'option 4 n'a pas de fondement. À compter des exercices ouverts le 1er janvier 2027, IAS 7 modifiée par IFRS 18 impose aux groupes industriels et commerciaux de classer les intérêts versés en financement (§34A) : ce retraitement de comparabilité devient inutile entre deux tels groupes."
     },
     {
