@@ -23,7 +23,7 @@
 
 **Cas particuliers** :
 - pertes opérationnelles futures : **pas de provision** (§63), mais indice de dépréciation IAS 36 (§65) ;
-- contrat déficitaire (§66-69) : provision = coûts inévitables, soit le plus faible du coût d'exécution et des pénalités de sortie ; les actifs dédiés sont d'abord dépréciés ;
+- contrat déficitaire (§66-69) : contrat dont les coûts inévitables (coût net de sortie : le plus faible du coût d'exécution et de l'indemnité ou pénalité de non-exécution, §68) excèdent les avantages économiques attendus ; la provision couvre la perte inévitable, soit l'excédent du coût d'exécution sur les avantages attendus, ou la pénalité de sortie si elle est plus faible ; coût d'exécution = coûts marginaux (main-d'œuvre directe, matières) + quote-part des autres coûts directement liés, amortissements compris (§68A) ; les actifs dédiés sont d'abord dépréciés (§69) ;
 - restructuration (§70-83) : obligation implicite si plan formalisé et détaillé **et** attente fondée créée chez les personnes concernées (début d'exécution ou annonce, §72) ; seules les dépenses directes, non liées aux activités poursuivies (§80-81 : pas de reconversion ni de déménagement du personnel conservé, ni de marketing) ; une vente d'activité n'est engagée qu'avec un accord de vente irrévocable (§78).
 
 **Formules clés :** valeur attendue = Σ (probabilitéᵢ × coûtᵢ) ; provision actualisée = dépense / (1 + r)ⁿ ; désactualisation de l'année = provision d'ouverture × r
