@@ -107,12 +107,12 @@
         "scopes",
         "GHG Protocol"
       ],
-      "source_ref": "GHG Protocol, A Corporate Accounting and Reporting Standard (WRI/WBCSD, 2004), périmètres (scopes) 1, 2 et 3 ; C. env. art. L. 229-25",
+      "source_ref": "GHG Protocol, A Corporate Accounting and Reporting Standard (WRI/WBCSD, 2004), périmètres (scopes) 1, 2 et 3 ; C. env. art. L. 229-25 et R. 229-47",
       "verified": true,
       "estimated_seconds": 40,
       "front": "Que recouvrent les scopes 1, 2 et 3 du GHG Protocol ?",
       "back": "Scope 1 : émissions directes des sources détenues ou contrôlées (combustion sur site, véhicules de l'entreprise, procédés, fuites de fluides frigorigènes).\nScope 2 : émissions indirectes liées à l'énergie achetée (électricité, chaleur, vapeur, froid).\nScope 3 : toutes les autres émissions indirectes de la chaîne de valeur, amont (achats, transport amont, déplacements des salariés) et aval (utilisation et fin de vie des produits vendus).",
-      "explanation": "Le scope 3 représente souvent la plus grande part des émissions. Le bilan réglementaire français (C. env. art. L. 229-25) intègre, depuis 2023, les émissions indirectes significatives."
+      "explanation": "Le scope 3 représente souvent la plus grande part des émissions. Dans le bilan réglementaire français (C. env. art. L. 229-25), les émissions indirectes significatives ne sont obligatoires que pour les entreprises soumises au rapport de durabilité ; pour les autres, les émissions indirectes obligatoires se limitent à l'énergie achetée (C. env. art. R. 229-47)."
     },
     {
       "id": "ue3-pilotage-durab-0006",
