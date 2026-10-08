@@ -23,6 +23,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: free movement of workers and capital defines a single (common) market, a higher level of integration than a customs union.",
+        "Incorrect: a free trade area also abolishes tariffs between its members; that is common to both arrangements.",
+        "Incorrect: a single currency belongs to a monetary union, a separate step; several EU member states do not use the euro.",
+        "Correct: both remove internal tariffs, but a customs union adds a common external tariff on imports from non-members, as in the EU."
+      ],
       "explanation": "Option 4 is correct: in both a free trade area and a customs union, internal tariffs are removed; a customs union goes further with a common external tariff (the EU is a customs union). Option 1 describes a single (common) market, a higher level of integration. Option 2 is wrong because a free trade area also abolishes tariffs between its members. Option 3 is wrong: a single currency belongs to a monetary union, which is a separate step (several EU member states do not use the euro).",
       "source_ref": "GATT 1994, art. XXIV §8 (definitions of customs union and free-trade area) ; TFEU art. 28 (EU customs union, common customs tariff)",
       "verified": true,
@@ -50,6 +56,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: this confuses absolute and comparative advantage; even if A is more productive in both goods, both gain by specialising.",
+        "Correct: one machine costs 2 textiles in A but 4 in B, so A specialises in machinery and B in textiles.",
+        "Incorrect: this reverses the specialisation; A has the lower opportunity cost in machinery (2 textiles against 4 in B).",
+        "Incorrect: trade pays whenever opportunity costs differ; B's lower productivity in both goods does not rule out gains."
+      ],
       "explanation": "Opportunity cost of 1 unit of machinery: 8 / 4 = 2 textiles in A, 4 / 1 = 4 textiles in B. A therefore has the comparative advantage in machinery, and B in textiles (opportunity cost of 1 textile: 0.25 machinery in B vs 0.5 in A). So option 2 is correct. Options 1 and 4 confuse absolute and comparative advantage: even though A is more productive in both goods, both countries gain by specialising according to opportunity costs. Option 3 reverses the specialisation.",
       "source_ref": "D. Ricardo, On the Principles of Political Economy and Taxation (1817), theory of comparative advantage",
       "verified": true,
@@ -203,6 +215,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: favouring Japan alone is exactly the discrimination MFN forbids; no free trade agreement exists to justify an exception.",
+        "Incorrect: equal treatment with domestic wine for internal taxes is national treatment (GATT art. III), not MFN, and does not concern tariffs.",
+        "Incorrect: MFN treatment is unconditional; it cannot depend on reciprocal concessions from other members.",
+        "Correct: under GATT art. I, an advantage granted to one member's products extends immediately and unconditionally to like products of all members."
+      ],
       "explanation": "The MFN principle (GATT art. I) requires any advantage granted to the products of one member to be extended immediately and unconditionally to like products of all other members. Option 1 describes exactly the discrimination MFN forbids; the main exception is a free trade area or customs union (GATT art. XXIV), which does not exist here. Option 2 describes national treatment (GATT art. III), the other WTO non-discrimination principle, which concerns internal taxes and regulations, not tariffs. Option 3 is wrong because MFN treatment is unconditional.",
       "source_ref": "GATT 1994, art. I (general most-favoured-nation treatment), art. III (national treatment) and art. XXIV (free trade areas and customs unions)",
       "verified": true,

@@ -22,6 +22,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Incorrect: an emphasis of matter does not modify the opinion and cannot address an uncorrected material misstatement.",
+        "Incorrect: an adverse opinion requires misstatements that are both material and pervasive (§8).",
+        "Correct: material but not pervasive misstatements require a qualified opinion under ISA 705 §7(a).",
+        "Incorrect: a disclaimer applies when sufficient appropriate evidence cannot be obtained; here evidence was obtained."
+      ],
       "explanation": "Option 3 is correct: when the auditor concludes that misstatements are material, individually or in aggregate, but not pervasive, ISA 705 §7(a) requires a qualified opinion (certification avec réserve). Option 1 is wrong: an emphasis of matter paragraph draws attention to a matter properly presented in the financial statements and does not modify the opinion; it cannot be used for an uncorrected material misstatement. Option 2 is wrong: an adverse opinion is required only when the misstatements are both material and pervasive (§8). Option 4 is wrong: a disclaimer of opinion applies when the auditor is unable to obtain sufficient appropriate audit evidence and the possible effects could be both material and pervasive (§9); here evidence was obtained.",
       "source_ref": "ISA 705 §7-10 (modified opinions) ; ISA 706 (emphasis of matter) — IAASB ; NEP 700 for the French equivalents",
       "verified": true,
@@ -165,6 +171,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: a qualified opinion would apply only if the possible effects were material but not pervasive (§7(b)).",
+        "Incorrect: an adverse opinion requires evidence of material and pervasive misstatements, not a lack of evidence.",
+        "Correct: insufficient evidence with possibly material and pervasive effects requires a disclaimer of opinion (ISA 705 §9).",
+        "Incorrect: an emphasis of matter highlights a matter correctly presented and can never replace a modified opinion (ISA 706)."
+      ],
       "explanation": "Option 3 is correct: when the auditor is unable to obtain sufficient appropriate evidence and the possible effects of undetected misstatements could be both material and pervasive, the auditor disclaims an opinion (ISA 705 §9; French: impossibilité de certifier). Option 1 would apply if the possible effects were material but not pervasive (ISA 705 §7(b)). Option 2 is wrong: an adverse opinion is expressed when the auditor has obtained evidence of misstatements that are material and pervasive (ISA 705 §8), not when evidence is lacking. Option 4 is wrong: an emphasis of matter paragraph draws attention to a matter correctly presented in the financial statements and can never replace a modified opinion (ISA 706).",
       "source_ref": "ISA 705 §7-9 (qualified opinion, adverse opinion, disclaimer of opinion) ; ISA 706 (emphasis of matter) — IAASB ; NEP 700 for the French equivalents",
       "verified": true,

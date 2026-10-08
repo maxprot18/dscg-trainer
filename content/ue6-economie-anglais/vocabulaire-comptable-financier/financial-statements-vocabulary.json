@@ -91,6 +91,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Incorrect: cash received from the sale of goods is the typical operating cash flow (IAS 7 §14(a)).",
+        "Correct: proceeds from the sale of property, plant and equipment are investing cash flows (IAS 7 §16(b)).",
+        "Incorrect: dividends paid are financing cash flows (IAS 7 §33A, from 2027), previously financing or operating (former §34), never investing.",
+        "Incorrect: payments of the principal portion of lease liabilities are financing activities (IFRS 16 §50(a))."
+      ],
       "explanation": "Option 2 is correct: cash receipts from sales of property, plant and equipment are investing cash flows (IAS 7 §16(b)). Option 1 is wrong: cash receipts from the sale of goods are the typical operating cash flow (IAS 7 §14(a)). Option 3 is wrong: dividends paid are classified within financing activities (IAS 7 §33A, as amended by IFRS 18 for financial years beginning on or after 1 January 2027; before that date, financing or operating activities under former §34), never within investing activities. Option 4 is wrong: cash payments for the principal portion of lease liabilities are classified within financing activities (IFRS 16 §50(a), IAS 7 §17).",
       "source_ref": "IAS 7 §14, §16, §17 and §33A (as amended by IFRS 18, Regulation (EU) 2026/338) ; IFRS 16 §50 (règlement UE 2023/1803)",
       "verified": true,
@@ -120,6 +126,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: permitted; short-term lease payments under the recognition exemption are operating activities (IFRS 16 §50(c)).",
+        "Incorrect: permitted; interest paid may be operating or financing, applied consistently (IAS 7 §31 and §33).",
+        "Correct: dividends paid may be financing or operating activities, but never investing activities (IAS 7 §34).",
+        "Incorrect: permitted and required; the principal portion of lease liabilities is a financing cash flow (IFRS 16 §50(a))."
+      ],
       "explanation": "Option 3 is not permitted: dividends paid may be classified as financing (a cost of obtaining financial resources) or as operating activities (to show the ability to pay dividends out of operating cash flows), but never as investing activities (IAS 7 §34). The other presentations are permitted or required. Option 1: payments for short-term leases and leases of low-value assets not recognised on the balance sheet (exemption of IFRS 16 §5-6) are classified within operating activities (IFRS 16 §50(c)). Option 2: interest paid may be classified as operating or financing activities, consistently from period to period (IAS 7 §31 and §33). Option 4: cash payments for the principal portion of a lease liability are financing activities (IFRS 16 §50(a)).",
       "source_ref": "IAS 7 §31, §33 and §34 ; IFRS 16 §50 (règlement UE 2023/1803)",
       "verified": true,

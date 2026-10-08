@@ -22,6 +22,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Incorrect: it treats 80 bp as 0.08 point; 80 bp is 0.8 point.",
+        "Incorrect: it treats the expansion as a relative 8% increase (12.3 ÷ 1.08 ≈ 11.4%) instead of 0.8 point.",
+        "Correct: one basis point is 0.01 percentage point, so 12.3% − 0.8 = 11.5%.",
+        "Incorrect: it subtracts 8 points, as if 80 bp were 8 percentage points."
+      ],
       "explanation": "Option 3 is correct: one basis point is 0.01 percentage point, so 80 bp = 0.8 point and the previous margin was 12.3% − 0.8 = 11.5%. Option 1 treats 80 bp as 0.08 point. Option 2 treats the expansion as a relative increase of 8% (12.3 ÷ 1.08 ≈ 11.4%). Option 4 subtracts 8 percentage points, as if 80 bp were 8 points.",
       "source_ref": "Market convention: 1 basis point (bp) = 0.01 percentage point",
       "verified": true,
@@ -152,6 +158,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: it confuses the top line with gross margin and the bottom line with net debt, a balance sheet item.",
+        "Incorrect: it contradicts the sentence; the top line, revenue, grew strongly.",
+        "Incorrect: it inverts the two expressions; the top line is revenue and the bottom line is profit for the year.",
+        "Correct: the top line is revenue and the bottom line profit for the year; one-off charges are non-recurring costs."
+      ],
       "explanation": "The \"top line\" is the first line of the income statement, revenue; the \"bottom line\" is the last one, profit for the year. \"One-off charges\" are non-recurring (exceptional) costs such as restructuring or impairment. Option 4 is therefore correct. Option 1 confuses the top line with gross margin and the bottom line with net debt, a balance sheet item. Option 2 contradicts the sentence: the top line grew. Option 3 inverts the two expressions.",
       "source_ref": "IFRS 18 §75(a)(i) (revenue line item) and §69(c) and §72 (profit or loss; formerly IAS 1 §82(a) and §81A) — règlement UE 2023/1803 as amended by Regulation (EU) 2026/338 ; IFRS Practice Statement 1 Management Commentary (financial performance)",
       "verified": true,
@@ -181,6 +193,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: C passes the 10% test with 110 ≥ 108, since the test includes inter-segment sales.",
+        "Incorrect: it applies the 10% test to external revenue only (threshold 96), so it misses C (110 ≥ 108) and wrongly treats D as passing it.",
+        "Correct: A, B and C pass the 10% test (threshold 108) but cover 74.0% of external revenue; adding D reaches 84.4%.",
+        "Incorrect: this confuses operating and reportable segments; segments below the thresholds may go into \"all other segments\"."
+      ],
       "explanation": "Step 1, 10% test (IFRS 8 §13(a)): it is based on reported revenue including inter-segment sales, compared with the combined internal and external revenue of all segments: 480 + 240 + 110 + 100 + 90 + 60 = 1,080, so the threshold is 108. A (480), B (240) and C (110) are reportable; D (100), E (90) and F (60) are not. Step 2, 75% test (§15): external revenue of A, B and C = 480 + 200 + 30 = 710, i.e. 710 ÷ 960 = 74.0% of total external revenue (960), below 75%. Additional segments must be identified as reportable until 75% is reached: adding D gives 810 ÷ 960 = 84.4%. Option 3 is therefore correct. Option 2 applies the 10% test to external revenue only (threshold 96), which wrongly excludes C and includes D. Option 1 stops before the 10% test is fully applied (C passes it with 110 ≥ 108). Option 4 confuses operating segments with reportable segments: segments below the thresholds may be combined in an \"all other segments\" category (§16).",
       "source_ref": "IFRS 8 Operating Segments §13 (quantitative thresholds), §15 (75% of external revenue) and §16 (all other segments) — règlement UE 2023/1803",
       "verified": true,

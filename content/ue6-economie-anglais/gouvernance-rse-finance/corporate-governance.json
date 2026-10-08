@@ -23,6 +23,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: running a division day to day is the job of an executive director or senior manager.",
+        "Incorrect: auditing the accounts and signing the report is the role of the external auditor, independent from the board.",
+        "Incorrect: representing employees in collective bargaining is the role of trade unions or employee representatives.",
+        "Correct: non-executive directors sit on the board outside management; they monitor performance, challenge strategy and often serve on committees."
+      ],
       "explanation": "Option 4 is correct: non-executive directors (NEDs) sit on the board but are not part of the management team; they monitor performance, challenge strategy and often serve on board committees. Option 1 describes an executive director or a senior manager. Option 2 is the role of the external (statutory) auditor, who is independent from the board. Option 3 is the role of trade unions or employee representatives, not of NEDs.",
       "source_ref": "UK Corporate Governance Code (FRC), section 2 \"Division of responsibilities\" — role of non-executive directors",
       "verified": true,
@@ -52,6 +58,12 @@
         2
       ],
       "multiple": true,
+      "option_explanations": [
+        "Correct: art. 39 tasks the committee with monitoring the effectiveness of internal quality control and risk management systems.",
+        "Incorrect: management prepares the financial statements; the committee oversees the reporting process without replacing the preparers.",
+        "Correct: reviewing and monitoring the statutory auditor's independence is one of the art. 39 tasks.",
+        "Incorrect: executive pay is a matter for the remuneration committee and the board; it is not among the audit committee's art. 39 tasks."
+      ],
       "explanation": "Options 1 and 3 are correct: art. 39 lists, among others, informing the board of the outcome of the audit, monitoring the financial reporting process, monitoring the effectiveness of internal quality control and risk management systems, monitoring the statutory audit, reviewing and monitoring the independence of the auditor, and being responsible for the auditor selection procedure. Option 2 is wrong: management prepares the financial statements; the committee oversees the process, it does not replace the preparers. Option 4 is the task of the remuneration committee (and of the board), not of the audit committee.",
       "source_ref": "Directive 2006/43/EC, art. 39(6), as amended by Directive 2014/56/EU",
       "verified": true,
@@ -181,6 +193,12 @@
         0
       ],
       "multiple": false,
+      "option_explanations": [
+        "Correct: no executive role or business link, four years' tenure; a small shareholding and directors' fees do not impair independence.",
+        "Incorrect: an executive position held within the previous five years fails the cooling-off criterion; three years is not enough.",
+        "Incorrect: having been the company's statutory auditor within the previous five years excludes independence.",
+        "Incorrect: a director loses independent status once tenure exceeds twelve years; non-executive does not mean independent."
+      ],
       "explanation": "Option 1 meets the criteria: no executive or employee role, no business relationship, a tenure of four years, and holding a small number of shares is even encouraged by governance codes; directors' fees do not impair independence. Option 2 fails the cooling-off criterion: no employee or executive position in the company or its group in the previous five years. Option 3 fails the criterion excluding anyone who has been the company's statutory auditor in the previous five years. Option 4 fails the tenure criterion: a director loses independent status once his or her term exceeds twelve years. Non-executive does not mean independent.",
       "source_ref": "Afep-Medef Corporate Governance Code (December 2022 version, still current in 2026), §10.5, criteria for assessing directors' independence (employee or executive in the previous five years, statutory auditor in the previous five years, more than twelve years on the board)",
       "verified": true,

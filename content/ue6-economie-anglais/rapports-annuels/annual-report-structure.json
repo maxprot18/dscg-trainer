@@ -42,6 +42,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Incorrect: Item 1A lists risks that could affect the company in the future; it does not analyse past results.",
+        "Correct: the MD&A is where management discusses results, liquidity and capital resources and explains year-on-year changes.",
+        "Incorrect: Item 8 contains the audited statements and notes, which show the figures but not management's narrative explanation.",
+        "Incorrect: Item 1 describes the company's activities, products, markets and competition."
+      ],
       "explanation": "Option 2 is correct: the MD&A (Item 7) is where management discusses results of operations, liquidity and capital resources, and explains changes from one year to the next. Option 1 is wrong: Item 1A lists the risks that could affect the company in the future; it does not analyse past results. Option 3 is wrong: Item 8 contains the audited financial statements and notes, which show the figures but not management's narrative explanation. Option 4 is wrong: Item 1 describes the company's activities, products, markets and competition.",
       "source_ref": "SEC Form 10-K, Part II, Item 7 ; Regulation S-K, Item 303 (MD&A)",
       "verified": true,
@@ -109,6 +115,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: the remuneration report covers directors' pay policy and amounts paid, not business risks.",
+        "Incorrect: key audit matters concern the audit of the financial statements, not the business risks identified by the directors.",
+        "Correct: s.414C requires the strategic report to describe principal risks and uncertainties; listed groups add their mitigating actions.",
+        "Incorrect: the statement of changes in equity reconciles opening and closing equity; it contains no risk narrative."
+      ],
       "explanation": "Section 414C of the Companies Act 2006 requires the strategic report to contain a description of the principal risks and uncertainties facing the company; listed groups present them with their mitigating actions in a dedicated section of the strategic report. Option 1 is wrong: the remuneration report covers directors' pay policy and amounts paid. Option 2 is wrong: key audit matters describe the matters of most significance in the audit of the financial statements, not the business risks identified by the directors. Option 4 is wrong: the statement of changes in equity is a primary financial statement reconciling opening and closing equity (profit, dividends, share issues).",
       "source_ref": "UK Companies Act 2006, s.414C (contents of the strategic report: principal risks and uncertainties)",
       "verified": true,

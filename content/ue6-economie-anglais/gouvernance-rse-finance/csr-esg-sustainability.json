@@ -23,6 +23,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: Scope 1 covers direct emissions from sources the company owns or controls, such as its plants, not customers' cars.",
+        "Incorrect: Scope 2 is limited to purchased electricity, steam, heat and cooling consumed by the company.",
+        "Correct: use of sold products is a downstream Scope 3 category, usually the largest emission source for car makers.",
+        "Incorrect: these emissions are not excluded; they are reported in Scope 3, which the ESRS require when material."
+      ],
       "explanation": "Option 3 is correct: the use of sold products is a downstream Scope 3 category (indirect emissions occurring in the value chain); for car makers it is usually the largest source of emissions. Option 1 is wrong: Scope 1 covers direct emissions from sources the company owns or controls (its plants, its own vehicle fleet), not customers' cars. Option 2 is wrong: Scope 2 is limited to purchased electricity, steam, heat and cooling consumed by the company. Option 4 is wrong: these emissions are not excluded; they are reported in Scope 3, which the ESRS require to be disclosed when material.",
       "source_ref": "GHG Protocol Corporate Value Chain (Scope 3) Standard, category 11 \"Use of sold products\" ; ESRS E1 (Delegated Regulation (EU) 2023/2772), gross Scopes 1, 2, 3 GHG emissions",
       "verified": true,
@@ -95,6 +101,12 @@
         3
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: this confuses eligibility with alignment; eligibility only means the activity is described in the delegated acts.",
+        "Incorrect: too demanding; a substantial contribution to one of the six objectives is enough.",
+        "Incorrect: this mixes up the Taxonomy with ESG ratings and with the SFDR, a separate disclosure regime for financial products.",
+        "Correct: alignment requires a substantial contribution to one objective, no significant harm to the others and minimum safeguards."
+      ],
       "explanation": "Eligibility only means that the activity is described in the Taxonomy delegated acts. Alignment requires three conditions: a substantial contribution to at least one of the six environmental objectives (assessed against technical screening criteria), no significant harm to the other five objectives (DNSH), and compliance with minimum safeguards (OECD Guidelines, UN Guiding Principles on business and human rights). Option 1 confuses eligibility with alignment. Option 2 is too demanding: one objective is enough. Option 3 mixes up the Taxonomy with ESG ratings and with the SFDR, a separate disclosure regime for financial products.",
       "source_ref": "Regulation (EU) 2020/852 (Taxonomy Regulation), art. 3 (criteria for environmentally sustainable economic activities), art. 9 (six environmental objectives), art. 17 (DNSH) and art. 18 (minimum safeguards)",
       "verified": true,

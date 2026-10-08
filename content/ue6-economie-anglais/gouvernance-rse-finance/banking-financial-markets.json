@@ -23,6 +23,12 @@
         1
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: 12 ÷ 400 divides by total assets, the leverage ratio's base; the CET1 ratio uses risk-weighted assets.",
+        "Correct: CET1 ratio = 12 ÷ 100 = 12%, above the 7% formed by the 4.5% minimum and the 2.5% conservation buffer.",
+        "Incorrect: the ratio of 12% is right, but Basel III sets no 15% CET1 minimum; the minimum is 4.5%.",
+        "Incorrect: this confuses solvency and liquidity; the LCR is a separate liquidity requirement, not an input of the CET1 ratio."
+      ],
       "explanation": "CET1 ratio = CET1 capital / RWA = 12 / 100 = 12%, which is above the 4.5% minimum plus the 2.5% conservation buffer (7%). Option 1 divides by total assets (12 / 400 = 3%): total exposure is the denominator of the leverage ratio, not of the CET1 ratio. Option 3 invents a 15% minimum. Option 4 confuses solvency and liquidity: the LCR is a separate liquidity requirement.",
       "source_ref": "Regulation (EU) No 575/2013 (CRR), art. 92(1)(a) (CET1 ratio of 4.5%) ; Directive 2013/36/EU (CRD), art. 129 (capital conservation buffer of 2.5%)",
       "verified": true,
@@ -95,6 +101,12 @@
         0
       ],
       "multiple": false,
+      "option_explanations": [
+        "Correct: short yields above long yields (4.6% > 3.9%) mean an inverted curve, reflecting expected rate cuts and often preceding recessions.",
+        "Incorrect: a normal curve slopes upwards, because investors demand a term premium for lending longer.",
+        "Incorrect: this confuses the slope of the curve with credit risk, which would appear as a wider spread over other issuers.",
+        "Incorrect: a steep upward-sloping curve is the opposite of the data, where short yields exceed long yields."
+      ],
       "explanation": "A yield curve is inverted when short-term yields exceed long-term yields, as here (4.6% > 3.9%). It usually reflects tight current monetary policy and market expectations that the central bank will cut rates as the economy slows; historically, inversions have often preceded recessions, although the signal is not infallible. Option 2 is wrong: a normal curve slopes upwards, because investors demand a term premium for lending longer. Option 3 confuses the slope of the curve with credit risk, which would show up as a widening spread over other issuers. Option 4 describes a steep upward-sloping curve, the opposite of the data.",
       "source_ref": "Term structure of interest rates: expectations theory and term premium ; inverted yield curve as a leading indicator of recessions",
       "verified": true,

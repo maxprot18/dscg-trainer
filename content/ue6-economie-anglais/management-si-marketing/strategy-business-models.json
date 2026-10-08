@@ -21,6 +21,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Incorrect: new entrants would be new airlines entering the market, not other ways of meeting the need.",
+        "Incorrect: suppliers would be aircraft manufacturers, airports or fuel suppliers.",
+        "Correct: video calls and high-speed rail meet the same need differently; as substitutes, they cap the prices the airline can charge.",
+        "Incorrect: buyer power concerns customers' ability to negotiate prices, not the existence of alternative products."
+      ],
       "explanation": "Option 3 is correct: video conferencing and high-speed rail are not airlines, but they satisfy the same need (meeting someone or travelling between two cities) in a different way; they are substitutes, which cap the prices the airline can charge. Option 1 is wrong: new entrants would be new airlines entering the market. Option 2 is wrong: suppliers would be aircraft manufacturers, airports or fuel suppliers. Option 4 is wrong: the bargaining power of buyers concerns customers' ability to negotiate prices (e.g. large corporate accounts), not the existence of alternative products.",
       "source_ref": "Porter, Competitive Strategy (1980), chapter 1: the five competitive forces",
       "verified": true,
@@ -51,6 +57,12 @@
         2
       ],
       "multiple": true,
+      "option_explanations": [
+        "Correct: in freemium, the basic service is free and revenue comes from the minority who upgrade, so conversion is key.",
+        "Incorrect: the initial product (razor, printer) is sold cheaply, sometimes at a loss; margin comes from recurring consumables.",
+        "Correct: each side's value grows with participants on the other side; these indirect network effects drive a \"winner takes most\" dynamic.",
+        "Incorrect: cost leadership usually competes on price; premium pricing belongs to differentiation, and mixing both risks being stuck in the middle."
+      ],
       "explanation": "Options 1 and 3 are correct. Option 1: in a freemium model, the basic service is free and revenue comes from the minority of users who upgrade, so the conversion rate is a key metric. Option 3: on a two-sided platform (marketplace, app store), the value for each side grows with the number of participants on the other side; these indirect network effects create a \"winner takes most\" dynamic. Option 2 is wrong: in a razor-and-blades model, the initial product (razor, printer, coffee machine) is sold cheaply, sometimes at a loss, and the margin is made on recurring consumables. Option 4 is wrong: cost leadership aims at the lowest costs in the industry, usually to compete on price; premium pricing belongs to a differentiation strategy, and combining both without a clear logic risks being \"stuck in the middle\".",
       "source_ref": "Osterwalder and Pigneur, Business Model Generation (2010): business model patterns ; Porter, Competitive Strategy (1980): generic strategies",
       "verified": true,
@@ -162,6 +174,12 @@
         2
       ],
       "multiple": false,
+      "option_explanations": [
+        "Incorrect: product development would require new products for the same customers; the chain sells no new products.",
+        "Incorrect: diversification means new products in new markets, the riskiest Ansoff option.",
+        "Correct: selling more existing products to existing customers, by raising visit frequency, is market penetration, the least risky option.",
+        "Incorrect: market development would sell existing products to new customers or countries, such as opening shops in the Netherlands."
+      ],
       "explanation": "Option 3 is correct: selling more of the existing products to the existing market (here, increasing purchase frequency of current customers) is market penetration, the least risky Ansoff option. Option 1 would require new products for the same customers; option 4, existing products sold to new customers or countries (e.g. opening shops in the Netherlands); option 2, new products in new markets, the riskiest option.",
       "source_ref": "Ansoff, \"Strategies for Diversification\", Harvard Business Review (1957): product-market growth matrix",
       "verified": true,
