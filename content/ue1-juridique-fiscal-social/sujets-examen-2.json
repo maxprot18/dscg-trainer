@@ -1,0 +1,432 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-dossier-0003",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE1",
+      "theme": "transmission-cessation",
+      "notion": "transmission-titre-gratuit-dutreil",
+      "difficulty": 3,
+      "tags": [
+        "sujet type examen",
+        "pacte Dutreil",
+        "donation-partage",
+        "cession de titres",
+        "garantie d'actif et de passif",
+        "plus-values",
+        "apport-cession",
+        "holding de reprise",
+        "intégration fiscale"
+      ],
+      "source_ref": "CGI art. 787 B, 790, 777, 779, 784 ; BOI-ENR-DMTG-10-20-40-10 (§ 330, 370, 395, 400 et 510) ; BOI-ENR-DMTG-20-30-20-50 ; C. civ. art. 1075, 1076, 1077, 1077-1, 1077-2, 1078, 843 et 860 ; CGI art. 150-0 D, 150-0 D ter, 150-0 B ter, 200 A, 726 et 1712 ; CGI art. 145, 216, 223 A, 223 B et 212 bis",
+      "verified": true,
+      "estimated_seconds": 5400,
+      "total_points": 20,
+      "title": "Vergnes Robinetterie : transmettre l'entreprise familiale",
+      "context": "La **SAS Vergnes Robinetterie** (VR), installée à Saint-Étienne, conçoit et fabrique des vannes et des robinets pour l'industrie chimique et le traitement de l'eau. Fondée en 1994 par **M. Bernard Vergnes**, qui la préside depuis l'origine, elle emploie 85 salariés et réalise un chiffre d'affaires de 18 M€. Son capital de 10 000 actions est réparti entre M. Vergnes (70 %) et **Mme Odile Ferrand** (30 %), directrice générale depuis 2008.\n\nM. Vergnes, né le 3 mars 1960, veut organiser sa succession avant de prendre sa retraite. Sa fille **Claire**, directrice industrielle salariée de VR depuis dix ans, souhaite reprendre l'entreprise ; son fils **Paul**, architecte à Lyon, ne veut pas y travailler. Mme Ferrand souhaite céder toutes ses actions et partir à la retraite en 2027.\n\nLe notaire de la famille et la banque de VR ont bâti un projet en trois temps : une donation-partage consentie par M. Vergnes à ses deux enfants le 14 décembre 2026 ; le rachat des actions de Mme Ferrand, le lendemain, par une holding créée par Claire ; l'apport à cette holding, en 2027, des actions reçues par Claire.\n\nVous êtes collaborateur du cabinet d'expertise comptable de VR. M. Vergnes, Claire et Mme Ferrand vous demandent de vérifier ce projet et d'en chiffrer les conséquences juridiques et fiscales (annexes 1 à 5).\n\n**Hypothèses** : droit en vigueur au 8 octobre 2026, loi de finances pour 2026 comprise ; taux global des prélèvements sociaux sur les plus-values de cession de valeurs mobilières : 18,6 % ; ne pas tenir compte de la contribution exceptionnelle ni de la contribution différentielle sur les hauts revenus ; taux de l'IS : 25 % ; par simplification, la réduction de 50 % de l'article 790 du CGI, lorsqu'elle s'applique, est calculée sur la totalité des droits dus à raison des actions données, y compris sur la fraction de leur valeur exclue de l'exonération partielle.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — VR et ses associés",
+          "content": "| Associé | Actions détenues | Depuis | Fonctions dans VR |\n| --- | ---: | --- | --- |\n| M. Bernard Vergnes (66 ans au 14 décembre 2026) | 7 000 (70 %) | 1994, souscription à la constitution | Président depuis 1994 ; rémunération normale, qui constitue l'essentiel de ses revenus professionnels |\n| Mme Odile Ferrand (63 ans) | 3 000 (30 %) | juin 2008, souscription à une augmentation de capital au prix de 40 € par action | Directrice générale depuis juin 2008 ; rémunération normale, qui constitue la totalité de ses revenus professionnels |\n\n- Toutes les actions sont ordinaires (une voix par action, mêmes droits financiers).\n- VR est soumise à l'IS ; elle exerce une activité industrielle depuis 1994 et clôture ses exercices le 31 décembre. Aux clôtures 2024 et 2025, elle répondait à la définition européenne de la PME (85 salariés, chiffre d'affaires de 18 M€, total de bilan de 11 M€).\n- Claire est salariée de VR (directrice industrielle) depuis 2016 ; elle n'est à ce jour ni présidente ni directrice générale.\n- En mars 2008, M. Vergnes a consenti à chacun de ses enfants une donation de 30 000 € en numéraire. Il ne leur a fait aucune autre donation depuis."
+        },
+        {
+          "title": "Annexe 2 — Évaluations retenues au 14 décembre 2026",
+          "content": "**Actions VR** : valeur vénale des 10 000 actions retenue par toutes les parties à l'issue d'une évaluation multicritère : **2 600 000 €**, soit 260 € par action. À la même date, les dettes inscrites au passif de VR s'élèvent à **1 400 000 €**.\n\n**Chalet de Megève** : VR est propriétaire depuis 2015 d'un chalet à Megève (valeur vénale : **260 000 €**), utilisé exclusivement par la famille Vergnes pour ses vacances ; il n'est ni loué, ni mis à la disposition des salariés. Tous les autres actifs de VR sont affectés à son activité industrielle.\n\n**Biens personnels de M. Vergnes destinés à Paul** :\n\n| Bien | Valeur vénale |\n| --- | ---: |\n| Immeuble de rapport à Lyon | 1 300 000 |\n| Portefeuille d'actions cotées | 520 000 |\n| **Total** | **1 820 000** |"
+        },
+        {
+          "title": "Annexe 3 — Projet de transmission et de reprise",
+          "content": "**1. Donation-partage du 14 décembre 2026** (acte notarié). M. Vergnes distribue et partage entre ses deux enfants, qui acceptent expressément leur lot :\n- lot de Claire : 7 000 actions VR en pleine propriété ;\n- lot de Paul : l'immeuble de Lyon et le portefeuille d'actions cotées, en pleine propriété.\n\nAucun engagement collectif de conservation n'a été signé. Claire prend dans l'acte l'engagement individuel de conservation prévu par l'article 787 B du CGI. Le projet prévoit que M. Vergnes reste seul président de VR jusqu'à son départ en retraite, le 30 juin 2027 ; Claire deviendrait présidente le 1er juillet 2027 et conserverait d'ici là ses seules fonctions de directrice industrielle.\n\n**2. Cession du 15 décembre 2026.** Mme Ferrand cède ses 3 000 actions VR à la **SAS CV Participations** (CVP), constituée le 1er décembre 2026 par Claire, qui en est l'associée unique et la présidente (capital de 200 000 € libéré en numéraire). Prix : 260 € par action, soit 780 000 €, financé par le capital de CVP et par un emprunt bancaire de 600 000 € sur sept ans au taux de 4 %. Mme Ferrand supporte 12 000 € d'honoraires de conseil liés à la cession. Elle quitte ses fonctions de directrice générale le jour de la cession et liquidera ses droits à la retraite le 1er juillet 2027 ; elle ne détient et ne détiendra aucun titre de CVP. Les droits d'enregistrement sont à la charge de CVP.\n\n**3. Apport du 30 mars 2027.** Claire apporte ses 7 000 actions VR à CVP, en échange d'actions CVP (valeur d'apport : 260 € par action VR). Après l'apport, l'actif de CVP se compose des 10 000 actions VR (2 600 000 €) et de 15 000 € de trésorerie ; Claire détient 100 % du capital et des droits de vote de CVP et en reste présidente.\n\n**4. Intégration fiscale.** CVP, soumise à l'IS, clôture son premier exercice le 31 décembre 2026, puis ses exercices suivants le 31 décembre de chaque année (douze mois). Elle envisage d'opter pour l'intégration fiscale avec VR afin de rembourser l'emprunt grâce aux résultats de VR."
+        },
+        {
+          "title": "Annexe 4 — Protocole de cession du 15 décembre 2026 : extrait de la garantie",
+          "content": "**Article 7 — Garantie de valeur**\n\n7.1 La cédante garantit au cessionnaire tout passif nouveau et toute insuffisance d'actif de VR ayant une cause ou une origine antérieure au 30 novembre 2026, date des comptes de référence annexés au protocole, dans la mesure où ils ne sont pas comptabilisés ou provisionnés, ou le sont insuffisamment, dans ces comptes (ci-après les « passifs garantis »).\n\n7.2 L'indemnité est versée au cessionnaire. Elle est égale à 30 % du montant des passifs garantis retenus après application de l'article 7.3.\n\n7.3 Franchise : la garantie ne joue que pour la fraction du montant cumulé des passifs garantis qui excède 40 000 € ; cette franchise reste dans tous les cas à la charge du cessionnaire.\n\n7.4 Plafond : le montant total des indemnités ne peut excéder 117 000 €.\n\n7.5 Durée : les réclamations sont notifiées à la cédante au plus tard le 31 décembre 2029, dans les 30 jours de la connaissance du fait générateur.\n\n7.6 Garantie de paiement : 78 000 € du prix sont séquestrés chez le notaire pendant 24 mois."
+        },
+        {
+          "title": "Annexe 5 — Événements survenus en 2027 et 2028",
+          "content": "Chaque réclamation a été notifiée à Mme Ferrand dans les formes et délais de l'article 7.5.\n\n| Événement | Montant |\n| --- | ---: |\n| Redressement de l'URSSAF notifié le 12 avril 2028, portant sur des avantages en nature de 2024 et 2025, non provisionné dans les comptes de référence | 64 000 |\n| Condamnation prononcée en septembre 2027 par le conseil de prud'hommes au profit d'un salarié licencié en octobre 2026 ; une provision de 30 000 € figurait dans les comptes de référence | 45 000 |\n| Rectification du crédit d'impôt recherche de 2025, notifiée en juin 2028, non provisionnée | 21 000 |\n| Pénalités de retard dues à un client au titre d'un contrat signé par Claire en février 2027 | 18 000 |"
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1-engagement-repute-acquis",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "Vrai ou faux ? À l'aide des annexes 1 et 3 : faute d'engagement collectif de conservation signé par M. Vergnes, la donation des actions VR à Claire ne peut bénéficier de l'exonération partielle de l'article 787 B du CGI que si un engagement collectif d'au moins deux ans est d'abord conclu et enregistré.",
+          "answer": false,
+          "explanation": "Faux. L'engagement collectif est **réputé acquis** (CGI art. 787 B, b, 2) : M. Vergnes détient depuis plus de deux ans (1994) 70 % des droits financiers et des droits de vote, au-delà des seuils de 17 % et 34 % applicables à une société non cotée, et il exerce depuis plus de deux ans dans VR, société à l'IS, l'une des fonctions de direction énumérées à l'article 975, III, 1° (président de société par actions, normalement rémunéré). VR exerce en outre une activité industrielle depuis plus de deux ans à la date de la transmission (787 B, c bis). Aucun pacte n'est donc nécessaire : la donation peut intervenir immédiatement, Claire prenant l'engagement individuel dans l'acte."
+        },
+        {
+          "id": "q2-obligations-claire",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À l'aide des annexes 1 et 3, quelles obligations doivent être respectées pour que l'exonération partielle accordée sur le lot de Claire soit définitivement acquise ?",
+          "options": [
+            "Claire conserve ses 7 000 actions jusqu'au 14 décembre 2030 (engagement individuel de quatre ans) ; la condition de direction est remplie par M. Vergnes jusqu'à sa retraite, puisqu'il est réputé signataire de l'engagement collectif",
+            "Claire respecte un engagement collectif de deux ans, jusqu'au 14 décembre 2028, puis un engagement individuel de six ans, jusqu'au 14 décembre 2034, et dirige VR pendant toute cette période",
+            "Claire conserve ses actions jusqu'au 14 décembre 2032 et exerce dans VR, dès la donation et au moins jusqu'au 14 décembre 2029, la fonction de présidente ou de directrice générale, normalement rémunérée : le projet laissant M. Vergnes seul dirigeant jusqu'au 30 juin 2027 doit être modifié",
+            "Claire conserve ses actions jusqu'au 14 décembre 2032 ; la condition de direction est remplie par ses fonctions salariées de directrice industrielle, exercées depuis plus de deux ans"
+          ],
+          "answer": [
+            2
+          ],
+          "explanation": "La donation intervient après le 21 février 2026 : l'engagement individuel dure **six ans** (787 B, c, rédaction de la loi de finances pour 2026 ; BOI-ENR-DMTG-10-20-40-10 § 330). L'engagement collectif étant réputé acquis, l'engagement individuel court, pour une donation par acte notarié, à compter de la date de l'acte (§ 370) : jusqu'au 14 décembre 2032. La condition de direction (787 B, d) doit être remplie pendant les trois ans qui suivent la transmission, jusqu'au 14 décembre 2029, par l'exercice d'une fonction énumérée à l'article 975, III, 1° (président, directeur général…) ; en cas d'engagement réputé acquis, elle doit l'être par un héritier ou donataire, le donateur n'étant pas signataire d'un engagement (§ 395). L'option 1 retient l'ancienne durée de quatre ans et fait diriger le donateur. L'option 2 impose à tort un engagement collectif de deux ans alors qu'il est réputé acquis. L'option 4 est fausse : une fonction salariée de directrice industrielle ne figure pas parmi les fonctions de direction exigées."
+        },
+        {
+          "id": "q3-valeur-taxable-claire",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l'aide des annexes 2 et 3, et en supposant le projet modifié de sorte que toutes les conditions de l'article 787 B du CGI soient respectées, calculez la valeur des actions reçues par Claire qui reste soumise aux droits de donation après application de l'exonération partielle, avant tout abattement. Réponse en euros.",
+          "expected_value": 543725,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Valeur du lot de Claire : 7 000 × 260 = 1 820 000 €. Le chalet est un logement non affecté à l'activité depuis plus de trois ans : la fraction de la valeur des titres qui le représente est exclue de l'exonération (787 B, troisième alinéa, issu de la loi de finances pour 2026). Fraction exclue = valeur des titres transmis × valeur du bien ÷ valeur vénale de l'actif **brut** de VR (BOI-ENR-DMTG-10-20-40-10 § 510), l'actif brut pouvant être estimé à la valeur des titres augmentée des dettes : 2 600 000 + 1 400 000 = 4 000 000 €. Ratio : 260 000 ÷ 4 000 000 = 6,5 % ; fraction exclue : 1 820 000 × 6,5 % = 118 300 €. Fraction exonérée à 75 % : 75 % × (1 820 000 − 118 300) = 1 276 275 €. Valeur taxable : 1 820 000 − 1 276 275 = **543 725 €**. Rapporter le chalet à la valeur des titres (10 %) donne 591 500 € ; ignorer l'exclusion donne 455 000 €."
+        },
+        {
+          "id": "q4-droits-claire",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l'aide des annexes 1 et 3 et de votre réponse à la question 3, calculez les droits de donation dus par Claire, après abattement et réduction éventuels. Réponse en euros, arrondie à l'euro.",
+          "expected_value": 43470,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "La donation de mars 2008 a plus de quinze ans au 14 décembre 2026 : elle n'est pas rappelée (CGI art. 784) et l'abattement de 100 000 € en ligne directe est entier (art. 779). Part nette taxable : 543 725 − 100 000 = 443 725 €. Barème en ligne directe (art. 777) : 8 072 × 5 % = 403,60 ; 4 037 × 10 % = 403,70 ; 3 823 × 15 % = 573,45 ; (443 725 − 15 932) × 20 % = 85 558,60 ; total 86 939,35 €. La donation porte sur la pleine propriété de titres remplissant les conditions de l'article 787 B et le donateur a 66 ans, moins de 70 ans : réduction de 50 % (art. 790, I), appliquée en dernier lieu sur la totalité des droits selon l'hypothèse de l'énoncé (BOI-ENR-DMTG-20-30-20-50 § 10 ; pour des titres de holding, l'administration la limite aux droits afférents à la fraction éligible, § 40). Droits : 86 939,35 × 50 % = 43 469,68, soit **43 470 €**. Sans la réduction, 86 939 € ; sans l'exclusion du chalet, 34 597 €."
+        },
+        {
+          "id": "q5-droits-paul",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À l'aide des annexes 1 à 3, calculez les droits de donation dus par Paul sur son lot. Réponse en euros, arrondie à l'euro.",
+          "expected_value": 540678,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Lot de Paul : 1 300 000 + 520 000 = 1 820 000 € ; ni exonération partielle ni réduction (biens hors 787 B et 790). Part nette taxable : 1 820 000 − 100 000 = 1 720 000 €. Barème (art. 777) : 1 380,75 € jusqu'à 15 932 € ; (552 324 − 15 932) × 20 % = 107 278,40 ; (902 838 − 552 324) × 30 % = 105 154,20 ; (1 720 000 − 902 838) × 40 % = 326 864,80 ; total 540 678,15, soit **540 678 €**. Pour des lots d'égale valeur, les droits de Claire (43 470 €) sont inférieurs de plus de 497 000 € : c'est l'effet combiné du pacte Dutreil et de la réduction de 50 %."
+        },
+        {
+          "id": "q6-donation-partage",
+          "kind": "open",
+          "points": 2,
+          "prompt": "À l'aide du contexte et des annexes 2 et 3, expliquez pourquoi le notaire a proposé une donation-partage plutôt que deux donations simples, et pourquoi il attribue toutes les actions VR à Claire et les autres biens à Paul. Précisez les conditions dont dépend le principal avantage civil de cette formule.",
+          "model_answer": "La donation-partage (C. civ. art. 1075 et 1076) est à la fois une donation et un partage anticipé : M. Vergnes distribue lui-même ses biens présents entre ses héritiers présomptifs et compose les lots. Elle permet ici d'attribuer la totalité des actions VR à la seule enfant qui reprend l'entreprise : Claire en reçoit le contrôle sans indivision ni frère associé minoritaire, tandis que Paul reçoit des biens qu'il gère librement et n'est tenu par aucun engagement de conservation de l'article 787 B.\n\nL'avantage civil décisif tient à l'**évaluation figée** : les biens sont évalués au jour de la donation-partage pour l'imputation et le calcul de la réserve (art. 1078). Si VR prend de la valeur grâce au travail de Claire, Paul ne pourra pas s'en prévaloir au décès de son père. Avec deux donations simples, les biens seraient en principe rapportables à la succession pour leur valeur au jour du partage (art. 843 et 860), source de conflits entre les enfants. Les lots reçus s'imputent sur la réserve de chacun (art. 1077) ; l'action en réduction n'est ouverte qu'après le décès, à l'enfant dont le lot serait inférieur à sa réserve (art. 1077-1 et 1077-2), risque limité ici par des lots d'égale valeur (1 820 000 € chacun).\n\nCet effet suppose que tous les héritiers réservataires vivants ou représentés au décès de M. Vergnes aient reçu un lot et l'aient **expressément accepté**, et qu'aucune réserve d'usufruit ne porte sur une somme d'argent (art. 1078) : les deux enfants doivent donc intervenir à l'acte et accepter leur lot. Fiscalement, chaque lot est taxé séparément, avec son propre abattement, le régime Dutreil ne concernant que celui de Claire.",
+          "key_points": [
+            "Donation et partage anticipé de biens présents, lots composés par le donateur (C. civ. art. 1075 et 1076)",
+            "Actions attribuées à la seule repreneuse : pas d'indivision ni d'associé minoritaire ; Paul libre de tout engagement Dutreil",
+            "Évaluation au jour de la donation-partage pour l'imputation et le calcul de la réserve (art. 1078), contre un rapport à la valeur au jour du partage pour une donation simple (art. 860)",
+            "Conditions : tous les réservataires reçoivent un lot et l'acceptent expressément ; pas de réserve d'usufruit sur une somme d'argent",
+            "Lots d'égale valeur : action en réduction peu probable, ouverte seulement après le décès (art. 1077-1 et 1077-2)"
+          ],
+          "explanation": "La donation-partage règle à la fois la transmission du pouvoir dans l'entreprise et l'égalité entre les enfants ; son intérêt principal, l'évaluation figée de l'article 1078 du Code civil, suppose l'acceptation expresse d'un lot par chaque réservataire."
+        },
+        {
+          "id": "q7-impot-plus-value-ferrand",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l'aide des annexes 1 et 3, déterminez le montant total de l'impôt sur le revenu (prélèvement forfaitaire unique) et des prélèvements sociaux dus par Mme Ferrand sur la cession de ses actions, en appliquant le dispositif le plus favorable auquel elle peut prétendre. Réponse en euros.",
+          "expected_value": 139472,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Plus-value (CGI art. 150-0 D, 1) : prix net des frais acquittés par la cédante, moins le prix de souscription : (780 000 − 12 000) − 3 000 × 40 = **648 000 €**. Les conditions de l'abattement fixe de 500 000 € pour départ à la retraite (art. 150-0 D ter) sont réunies : cession de toutes ses actions ; fonction de directrice générale normalement rémunérée et détention d'au moins 25 % des droits (30 %) de manière continue pendant les cinq ans précédant la cession ; cessation des fonctions et retraite dans les deux ans ; VR est une PME industrielle soumise à l'IS ; titres détenus depuis plus d'un an ; aucun droit dans CVP. Impôt sur le revenu : (648 000 − 500 000) × 12,8 % = 18 944 € (art. 200 A). Prélèvements sociaux, calculés sur la plus-value avant abattement : 648 000 × 18,6 % = 120 528 €. Total : **139 472 €**, au lieu de 203 472 € sans abattement. Appliquer l'abattement aux prélèvements sociaux donne 46 472 €."
+        },
+        {
+          "id": "q8-apport-cession",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "Le conseiller de Mme Ferrand lui suggère d'apporter d'abord ses actions VR à une holding qu'elle contrôlerait, puis de faire céder ces actions par la holding à CVP. Au regard de l'article 150-0 B ter du CGI et des objectifs de Mme Ferrand (contexte et annexe 3), quelle affirmation est exacte ?",
+          "options": [
+            "La plus-value d'apport serait définitivement exonérée, puisque la holding céderait les actions VR à leur valeur d'apport sans dégager de plus-value",
+            "La cession par la holding dans les trois ans de l'apport mettrait fin au report, sauf réinvestissement d'au moins 60 % du prix dans une activité économique dans un délai de deux ans",
+            "Le report serait maintenu sans condition de réinvestissement, puisque Mme Ferrand fait valoir ses droits à la retraite dans les deux ans de la cession",
+            "La cession par la holding dans les trois ans de l'apport ne maintiendrait le report que si la holding réinvestissait au moins 70 % du prix, dans les trois ans, dans une activité économique éligible et conservait cinq ans les biens acquis : le montage immobiliserait l'essentiel du prix, contrairement à l'objectif de Mme Ferrand"
+          ],
+          "answer": [
+            3
+          ],
+          "explanation": "L'apport à une société contrôlée par l'apporteur place la plus-value d'apport en **report** d'imposition (CGI art. 150-0 B ter, I et III, 2°) : elle n'est pas exonérée et redevient imposable lors des événements prévus par le texte. Si la holding cède les titres apportés dans les trois ans, le report n'est maintenu que si elle s'engage à réinvestir au moins 70 % du produit de cession dans les trois ans dans une activité éligible, les biens acquis étant conservés au moins cinq ans (rédaction de la loi de finances pour 2026, applicable aux cessions de titres apportés réalisées à compter du 21 février 2026) : option 4. Mme Ferrand veut disposer du prix pour sa retraite et bénéficie déjà de l'abattement définitif de 500 000 € en cédant directement. L'option 1 confond report et exonération. L'option 2 reprend l'ancien quota de 60 % en deux ans. L'option 3 est fausse : le départ en retraite conditionne l'abattement de l'article 150-0 D ter, pas le maintien du report."
+        },
+        {
+          "id": "q9-garantie-passif",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l'aide des annexes 4 et 5, calculez l'indemnité due par Mme Ferrand à CVP au titre de la garantie. Réponse en euros.",
+          "expected_value": 18000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Passifs garantis (cause antérieure au 30 novembre 2026, non ou insuffisamment provisionnés) : redressement URSSAF portant sur 2024 et 2025, 64 000 € ; condamnation prud'homale liée à un licenciement d'octobre 2026, pour la seule insuffisance de provision, 45 000 − 30 000 = 15 000 € ; rectification du crédit d'impôt recherche de 2025, 21 000 €. Les pénalités de 18 000 € naissent d'un contrat signé après la cession : cause postérieure, non garantie. Total : 100 000 €. Franchise (art. 7.3) : 100 000 − 40 000 = 60 000 €. Indemnité : 60 000 × 30 % = **18 000 €**, sous le plafond de 117 000 €, payable sur le séquestre. Erreurs classiques : traiter la franchise comme un seuil de déclenchement (30 000 €), retenir toute la condamnation prud'homale (27 000 €) ou les pénalités postérieures (23 400 €), oublier le taux de 30 % (60 000 €)."
+        },
+        {
+          "id": "q10-apport-holding-dutreil",
+          "kind": "open",
+          "points": 2.5,
+          "prompt": "À l'aide des annexes 2 et 3, appréciez l'apport par Claire de ses 7 000 actions VR à CVP le 30 mars 2027 : effet sur l'exonération partielle obtenue lors de la donation et conditions à respecter jusqu'au terme des engagements, imposition éventuelle de Claire au titre de l'apport, intérêt de l'opération pour le remboursement de l'emprunt de CVP.",
+          "model_answer": "**Pacte Dutreil.** L'apport intervient pendant l'engagement individuel de conservation : il rompt en principe l'engagement pris par Claire (CGI art. 787 B, c) et entraînerait la remise en cause de l'exonération partielle. Le f de l'article 787 B maintient toutefois l'exonération en cas d'apport pur et simple à une holding, si les conditions suivantes sont remplies à l'issue de l'apport et jusqu'au terme des engagements :\n- l'actif brut de CVP est composé à plus de 50 % de participations dans VR soumises aux engagements : 1 820 000 ÷ (2 600 000 + 15 000) ≈ 69,6 % ;\n- les trois quarts au moins du capital et des droits de vote de CVP sont détenus par des personnes soumises aux engagements : Claire en détient 100 % ;\n- CVP est dirigée par l'une d'elles : Claire en est présidente ;\n- CVP s'engage à conserver les actions VR apportées et Claire à conserver les actions CVP reçues jusqu'au terme de l'engagement individuel, le 14 décembre 2032.\nLa condition de direction de VR reste due par ailleurs jusqu'au 14 décembre 2029.\n\n**Imposition de l'apport.** Pour des titres reçus par donation, le prix de revient fiscal est la valeur retenue pour les droits de mutation, soit 260 € par action pour la valeur totale, et non la seule fraction taxée après l'exonération (art. 150-0 D, 1) : apportées à 260 €, les actions ne dégagent aucune plus-value. Une plus-value éventuelle serait en report d'imposition, Claire contrôlant CVP (art. 150-0 B ter).\n\n**Remboursement de l'emprunt.** Détenant 100 % de VR, CVP peut faire remonter les bénéfices de VR sous le régime mère-fille (participation d'au moins 5 %, quote-part de frais et charges de 5 %), puis, après option, constituer avec VR un groupe intégré : les intérêts de l'emprunt (environ 24 000 € la première année) s'imputent alors sur les bénéfices de VR. Ces charges financières sont très inférieures au seuil de 3 M€ de l'article 212 bis.",
+          "key_points": [
+            "L'apport pendant l'engagement individuel le rompt en principe (787 B, c), sauf exception du f",
+            "Conditions du f vérifiées chiffres à l'appui : actif de CVP composé à plus de 50 % des titres VR sous engagement (≈ 69,6 %), au moins 3/4 du capital détenu par Claire, CVP dirigée par Claire",
+            "Engagements de conservation : CVP garde les actions VR et Claire les actions CVP jusqu'au 14 décembre 2032",
+            "Prix de revient des actions reçues par donation = valeur retenue pour les droits (260 €) : pas de plus-value d'apport, sinon report de l'art. 150-0 B ter",
+            "100 % de VR : remontée des dividendes (mère-fille) puis intégration fiscale pour imputer les intérêts sur les bénéfices de VR"
+          ],
+          "explanation": "Le montage de holding de reprise est compatible avec le pacte Dutreil grâce au f de l'article 787 B, à condition de vérifier la composition de l'actif de la holding, son contrôle, sa direction et la conservation des titres à chaque niveau jusqu'au terme de l'engagement individuel."
+        },
+        {
+          "id": "q11-integration-charasse",
+          "kind": "mcq",
+          "points": 2,
+          "prompt": "À l'aide de l'annexe 3, quelle affirmation relative à l'intégration fiscale de CVP et de VR est exacte ?",
+          "options": [
+            "CVP et VR peuvent former un groupe intégré dès l'exercice 2027, puisque CVP détient 100 % de VR au 31 décembre 2027",
+            "Le groupe peut être constitué au plus tôt pour l'exercice 2028, sur option notifiée par CVP au plus tard à la date limite de dépôt de sa déclaration de résultat de 2027 ; les intérêts de l'emprunt ayant financé le rachat des actions de Mme Ferrand échappent à la réintégration de l'article 223 B (« amendement Charasse »), Mme Ferrand ne contrôlant pas CVP",
+            "Le groupe peut être constitué pour 2028, mais une fraction des intérêts de l'emprunt d'acquisition devra être réintégrée au résultat d'ensemble pendant neuf exercices, les titres ayant été achetés à une associée de VR",
+            "L'intégration est impossible tant que court l'engagement individuel de conservation de Claire, l'apport à CVP ayant fait perdre le bénéfice du pacte Dutreil"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "La filiale doit être détenue à 95 % au moins **de manière continue au cours de l'exercice** (CGI art. 223 A) : CVP ne détient que 30 % de VR jusqu'au 30 mars 2027, d'où l'exclusion de 2027 (option 1 fausse). Pour 2028, les deux sociétés ont des exercices de douze mois clos le 31 décembre ; l'option est notifiée au plus tard à la date limite de dépôt de la déclaration de résultat de l'exercice précédent. La réintégration de l'article 223 B (sixième alinéa) ne vise que les titres achetés aux personnes qui contrôlent la société acquéreuse, ou à des sociétés qu'elles contrôlent : Mme Ferrand ne contrôle pas CVP, et les actions de Claire ont été apportées, non achetées (option 3 fausse). L'option 4 est fausse : l'apport respecte l'exception du f de l'article 787 B, et le pacte Dutreil ne fait de toute façon pas obstacle à l'intégration fiscale."
+        }
+      ],
+      "explanation": "Méthode : (1) vérifier les conditions du pacte Dutreil : engagement collectif réputé acquis (70 % détenus et présidence exercée depuis plus de deux ans), engagement individuel de six ans courant de l'acte (jusqu'au 14 décembre 2032), direction par la donataire pendant trois ans, ce qui impose de modifier le projet ; (2) liquider les droits : exclusion du chalet calculée sur l'actif brut (6,5 %), valeur taxable 543 725 €, abattement entier, barème puis réduction de 50 % : 43 470 € pour Claire contre 540 678 € pour Paul sur un lot de même valeur ; (3) justifier la donation-partage par l'attribution de l'entreprise à la repreneuse et l'évaluation figée de l'article 1078 du Code civil ; (4) chiffrer la sortie de Mme Ferrand : abattement de 500 000 € sur l'impôt sur le revenu seulement (139 472 €), apport-cession inadapté à son besoin de liquidités ; (5) appliquer la garantie de valeur : passifs à cause antérieure, insuffisance de provision, franchise puis quote-part de 30 % (18 000 €) ; (6) sécuriser la holding de reprise : exception du f de l'article 787 B, absence de plus-value d'apport, intégration fiscale possible à partir de 2028 sans amendement Charasse."
+    },
+    {
+      "id": "ue1-dossier-0004",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE1",
+      "theme": "groupes-integration-fiscale",
+      "notion": "prix-transfert-fiscalite-internationale",
+      "difficulty": 3,
+      "tags": [
+        "sujet type examen",
+        "TVA intracommunautaire",
+        "importations",
+        "autoliquidation",
+        "prix de transfert",
+        "régime mère-fille",
+        "intégration fiscale",
+        "intérêts intra-groupe",
+        "rupture brutale"
+      ],
+      "source_ref": "CGI art. 256 bis, 259, 262 ter, 283, 287 et 1695 ; CGI art. 57, 39, 212, 212 bis, 145, 216, 223 A et 223 quinquies B ; C. com. art. L. 134-1, L. 134-12 et L. 442-1 ; PCG comptes 401, 4452, 44566 et 601",
+      "verified": true,
+      "estimated_seconds": 5100,
+      "total_points": 20,
+      "title": "Groupe Ostral : se développer à l'international",
+      "context": "La **SA Ostral**, dont le siège est à Annecy, conçoit et fabrique des systèmes de filtration pour l'industrie agroalimentaire et pharmaceutique. Elle emploie 410 salariés et son chiffre d'affaires 2026 devrait atteindre 74 M€. Longtemps tournée vers le marché français, elle réalise désormais plus du tiers de ses ventes à l'étranger.\n\nPour accompagner cette croissance, le groupe s'est structuré autour d'une filiale de maintenance en France, d'une filiale de distribution en Allemagne et d'une filiale d'assemblage au Maroc, qui fournit à Ostral des sous-ensembles à moindre coût. Ostral vient aussi de mettre fin à la relation qu'elle entretenait depuis près de douze ans avec un distributeur indépendant du Sud-Ouest, dont elle veut confier le territoire à sa filiale de maintenance.\n\nLe directeur administratif et financier, M. Lambert, prépare la clôture de l'exercice 2026 ; un contrôle fiscal est annoncé pour 2027. Collaborateur du cabinet d'expertise comptable qui assiste le groupe, vous êtes chargé de sécuriser la TVA des opérations internationales, d'analyser les flux financiers intra-groupe et la politique de prix de transfert, et d'évaluer le risque du litige avec l'ancien distributeur (annexes 1 à 4).\n\n**Hypothèses** : droit en vigueur au 8 octobre 2026 ; les opérations de TVA étudiées datent de novembre 2026, avant la reprise des règles de TVA dans le code des impositions sur les biens et services au 1er janvier 2027 : citer le CGI. Taux normal de TVA : 20 % ; taux de l'IS : 25 % ; ignorer les retenues à la source et les crédits d'impôt étrangers.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Le groupe Ostral au 31 décembre 2026",
+          "content": "| Société | Pays | Activité | Détention par Ostral | Depuis | Imposition |\n| --- | --- | --- | --- | --- | --- |\n| SAS Ostral Services | France | Maintenance et installation | 97 % (3 % au président de la filiale) | 2018 | IS français ; membre du groupe intégré constitué par Ostral depuis le 1er janvier 2022 |\n| Ostral Filtertechnik GmbH | Allemagne | Distribution des produits Ostral en Allemagne et en Autriche | 100 % | 2019 | Impôt allemand sur les sociétés, équivalent à l'IS |\n| Ostral Maroc SARL | Maroc | Assemblage de sous-ensembles vendus exclusivement à Ostral | 100 % | 2021 | IS marocain au taux de 20 % : pas de régime fiscal privilégié |\n| SAS Hydrolab | France | Laboratoire d'analyses | 90 % (10 % à un fonds d'investissement) | mars 2025 | IS français |\n\n- Ostral détient en outre 2 % du capital de la SA Purea, société cotée, inscrits en titres de placement.\n- Toutes les sociétés clôturent des exercices de douze mois le 31 décembre.\n- Ostral, soumise à l'IS au taux normal : chiffre d'affaires 2025 de 68 M€, total de bilan de 52 M€ ; capital entièrement libéré. Elle est identifiée à la TVA en France, soumise au régime réel normal, avec un droit à déduction intégral."
+        },
+        {
+          "title": "Annexe 2 — Opérations réalisées par Ostral en novembre 2026 (montants hors taxe)",
+          "content": "| N° | Opération | Montant |\n| --- | --- | ---: |\n| 1 | Ventes de systèmes à des clients établis en France | 2 400 000 |\n| 2 | Livraison de systèmes à Ostral Filtertechnik GmbH, transportés d'Annecy à Stuttgart par un transporteur (lettre de voiture conservée) ; la GmbH a communiqué son numéro de TVA allemand, valide | 900 000 |\n| 3 | Vente de systèmes à un client suisse ; sortie de l'Union justifiée par la déclaration d'exportation visée par la douane | 300 000 |\n| 4 | Achat de membranes à Membrana Srl (Milan), assujettie identifiée en Italie, transportées de Milan à Annecy ; facture du 18 novembre 2026, payable à 60 jours | 500 000 |\n| 5 | Importation de sous-ensembles achetés à Ostral Maroc (valeur en douane) | 450 000 |\n| 6 | Prestation d'ingénierie facturée par un cabinet établi au Royaume-Uni, sans établissement en France | 40 000 |\n\nTVA mentionnée sur les factures de fournisseurs français : 210 000 € au titre des achats de biens et de services, 30 000 € au titre de l'acquisition d'une machine-outil. Aucun crédit de TVA antérieur."
+        },
+        {
+          "title": "Annexe 3 — Flux financiers intra-groupe",
+          "content": "**A. Achats de sous-ensembles à Ostral Maroc en 2026.** Prix facturé à Ostral : 5 760 000 €, soit les coûts complets d'Ostral Maroc (4 800 000 €) majorés de 20 %. Tous les sous-ensembles achetés ont été incorporés dans des produits vendus en 2026. Ostral Maroc travaille sur les plans et spécifications d'Ostral, qui lui fournit les équipements de production ; elle ne supporte ni risque commercial ni risque de stock. Une étude portant sur neuf sous-traitants d'assemblage indépendants fait apparaître des marges sur coûts complets comprises entre 7 % et 12 %, la médiane étant de 10 %. Ostral ne dispose d'aucune autre justification de son prix ; le vérificateur retiendra la médiane.\n\n**B. Prêt d'Ostral Filtertechnik GmbH à Ostral.** Prêt de 3 000 000 € accordé le 1er janvier 2026, remboursable in fine dans cinq ans, au taux fixe de 5,4 % ; intérêts de l'exercice 2026 : 162 000 €. Taux prévu à l'article 39, 1, 3° du CGI pour l'exercice clos le 31 décembre 2026 (hypothèse) : 4,6 %. Ostral détient une offre écrite de sa banque, du 15 décembre 2025, pour un prêt analogue (même montant, même durée, sans garantie) au taux de 5,0 %. Charges financières nettes d'Ostral en 2026 : 410 000 €.\n\n**C. Dividendes qu'Ostral recevra en mai 2027.** Ostral demandera le régime des sociétés mères pour toutes les distributions qui y ouvrent droit.\n\n| Société distributrice | Dividende |\n| --- | ---: |\n| Ostral Services | 300 000 |\n| Ostral Filtertechnik GmbH | 800 000 |\n| Ostral Maroc | 400 000 |\n| Purea | 20 000 |"
+        },
+        {
+          "title": "Annexe 4 — Fin de la relation avec Filtrasud",
+          "content": "**Filtrasud SARL** (Toulouse), distributeur indépendant, achète les produits Ostral et les revend en son nom à ses propres clients du Sud-Ouest. Le contrat de concession exclusive signé le 1er mars 2015, conclu pour un an et renouvelable par tacite reconduction, a été renouvelé chaque année depuis. Filtrasud ne reçoit aucune commission et n'agit pas au nom d'Ostral.\n\n*Article 12 du contrat* : « Chaque partie peut s'opposer au renouvellement par lettre recommandée adressée au moins trois mois avant l'échéance annuelle. »\n\nPar lettre recommandée du 25 novembre 2026, Ostral a notifié à Filtrasud le non-renouvellement du contrat à son échéance du 28 février 2027, sans reprocher le moindre manquement à son partenaire.\n\n| Ventes de produits Ostral par Filtrasud | 2023 | 2024 | 2025 |\n| --- | ---: | ---: | ---: |\n| Chiffre d'affaires HT | 1 700 000 | 1 900 000 | 1 800 000 |\n\nCes ventes représentent 70 % du chiffre d'affaires de Filtrasud ; son taux de marge sur coûts variables sur ces produits est de 25 %. Compte tenu de la durée de la relation, de la dépendance de Filtrasud et des usages du secteur, le conseil d'Ostral estime qu'un juge retiendrait un préavis raisonnable de douze mois.\n\nL'avocat de Filtrasud réclame : (a) une indemnité de fin de contrat égale à deux années de marge, « comme pour un agent commercial » ; (b) la réparation du préjudice causé par une rupture brutale."
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1-livraison-intracommunautaire",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À l'aide des annexes 1 et 2 (opération 2), comment Ostral doit-elle traiter la livraison de 900 000 € à sa filiale allemande ?",
+          "options": [
+            "Facturer la TVA française au taux de 20 %, la GmbH appartenant au même groupe que le vendeur",
+            "Facturer hors taxe en exonération (livraison intracommunautaire), avec le numéro de TVA de la GmbH, porter l'opération sur la déclaration de TVA et sur l'état récapitulatif, et conserver la preuve du transport vers l'Allemagne",
+            "La traiter comme une exportation exonérée, justifiée par une déclaration d'exportation visée par la douane",
+            "Facturer hors taxe : l'exonération est acquise même sans dépôt de l'état récapitulatif, dès lors que la GmbH autoliquide la TVA en Allemagne"
+          ],
+          "answer": [
+            1
+          ],
+          "explanation": "Le bien est expédié en Allemagne à un assujetti identifié dans cet État qui a communiqué son numéro : la livraison intracommunautaire est exonérée en France (CGI art. 262 ter, I, 1°), l'acquisition étant taxée par la GmbH en Allemagne. L'appartenance au même groupe est sans incidence (option 1 fausse). Il ne s'agit pas d'une exportation, qui suppose une sortie de l'Union (option 3 fausse). L'option 4 est fausse : l'exonération est refusée si le fournisseur n'a pas déposé l'état récapitulatif ou l'a déposé incomplet, sauf manquement dûment justifié (art. 262 ter, I, 1°, deuxième alinéa ; art. 289 B). L'opération figure en outre sur la déclaration de TVA (art. 287, 5, a)."
+        },
+        {
+          "id": "q2-tva-importation",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "Vrai ou faux ? À l'aide des annexes 1 et 2 (opération 5) : Ostral déclare elle-même la TVA due sur les sous-ensembles importés du Maroc sur sa déclaration mensuelle et la déduit sur cette même déclaration, sans la payer à la douane.",
+          "answer": true,
+          "explanation": "Vrai. Depuis le 1er janvier 2022, la TVA à l'importation due par un assujetti identifié en France est autoliquidée sur sa déclaration de chiffre d'affaires, qui fait apparaître les importations et la taxe correspondante (CGI art. 287, 5, b quater) ; la perception par la douane est réservée aux importateurs non assujettis et non identifiés (art. 1695, I, 1°). Ostral déclare 450 000 × 20 % = 90 000 € de TVA due et les déduit sur la même déclaration, ce qui est neutre pour sa trésorerie compte tenu de son droit à déduction intégral."
+        },
+        {
+          "id": "q3-tva-nette-novembre",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l'aide de l'annexe 2, calculez la TVA nette due par Ostral au titre du mois de novembre 2026. Réponse en euros.",
+          "expected_value": 240000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "TVA collectée sur les ventes en France : 2 400 000 × 20 % = 480 000 € ; la livraison intracommunautaire (art. 262 ter, I) et l'exportation (art. 262, I) sont exonérées. TVA autoliquidée par Ostral : acquisition intracommunautaire 500 000 × 20 % = 100 000 € (art. 256 bis et 283, 2 bis) ; importation 450 000 × 20 % = 90 000 € ; prestation du cabinet britannique, imposable en France au lieu d'établissement du preneur assujetti (art. 259, 1°) et due par le preneur (art. 283, 2), 40 000 × 20 % = 8 000 € ; total 198 000 €. TVA déductible : 198 000 + 210 000 + 30 000 = 438 000 €. TVA nette : 480 000 + 198 000 − 438 000 = **240 000 €**. Oublier de déduire la TVA autoliquidée donne 438 000 € ; taxer la livraison intracommunautaire et l'exportation ajoute 240 000 €."
+        },
+        {
+          "id": "q4-ecriture-acquisition-intracommunautaire",
+          "kind": "journal_entry",
+          "points": 2,
+          "prompt": "Passez l'écriture d'enregistrement de la facture de Membrana Srl du 18 novembre 2026 (annexe 2, opération 4). Utilisez les comptes 601, 44566, 4452 et 401.",
+          "date": "2026-11-18",
+          "entries": [
+            {
+              "account": "601",
+              "label": "Achats stockés de matières premières (membranes)",
+              "debit": 500000,
+              "credit": 0
+            },
+            {
+              "account": "44566",
+              "label": "TVA déductible sur autres biens et services",
+              "debit": 100000,
+              "credit": 0
+            },
+            {
+              "account": "4452",
+              "label": "TVA due intracommunautaire",
+              "debit": 0,
+              "credit": 100000
+            },
+            {
+              "account": "401",
+              "label": "Fournisseurs (Membrana Srl)",
+              "debit": 0,
+              "credit": 500000
+            }
+          ],
+          "explanation": "La facture italienne est établie hors taxe : la dette fournisseur est de 500 000 €. Ostral autoliquide la TVA de l'acquisition intracommunautaire : 100 000 € de TVA due (4452) et, son droit à déduction étant intégral, la même somme en TVA déductible (44566). Total des débits = total des crédits = 600 000 €."
+        },
+        {
+          "id": "q5-perimetre-integration",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À l'aide de l'annexe 1, quelles sociétés peuvent être membres, pour l'exercice 2027, du groupe fiscal intégré dont Ostral est la société mère ?",
+          "options": [
+            "Ostral, Ostral Services, Ostral Filtertechnik GmbH et Ostral Maroc, toutes détenues à 95 % au moins",
+            "Ostral, Ostral Services et Ostral Filtertechnik GmbH, la filiale allemande étant établie dans l'Union européenne",
+            "Ostral, Ostral Services et Hydrolab, toutes trois soumises à l'IS français",
+            "Ostral et Ostral Services uniquement"
+          ],
+          "answer": [
+            3
+          ],
+          "explanation": "Seules peuvent être membres les sociétés soumises à l'IS en France dont la mère détient 95 % au moins du capital de manière continue au cours de l'exercice (CGI art. 223 A) : Ostral Services (97 %) remplit ces conditions. Hydrolab, détenue à 90 %, en est exclue (option 3 fausse). Les filiales allemande et marocaine ne sont pas soumises à l'IS français et ne peuvent pas être membres, quel que soit le pourcentage détenu (options 1 et 2 fausses) ; l'implantation de la GmbH dans l'Union n'a d'effet que sur le taux de la quote-part de frais et charges de ses dividendes (question 6)."
+        },
+        {
+          "id": "q6-quote-part-frais-charges",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l'aide des annexes 1 et 3 (C), calculez le montant total de la quote-part de frais et charges qu'Ostral devra réintégrer au titre des dividendes reçus en 2027. Réponse en euros.",
+          "expected_value": 31000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Régime mère-fille (CGI art. 145 et 216) pour les trois filiales, détenues à plus de 5 % depuis plus de deux ans. Ostral Services est membre du groupe intégré depuis plus d'un exercice : quote-part de 1 % (art. 216, I, 1°), soit 3 000 €. La GmbH est soumise dans l'Union à un impôt équivalent et remplirait, si elle était établie en France, les conditions pour être membre du groupe (détention de 100 % depuis 2019, mêmes dates de clôture) : 1 % également (art. 216, I, 2°), soit 8 000 €. Ostral Maroc, hors Union : 5 %, soit 20 000 €. Les dividendes de Purea (2 %) n'ouvrent pas droit au régime : imposés en totalité, sans quote-part. Total : **31 000 €**. Appliquer 5 % aux trois filiales donne 75 000 € ; réserver le taux de 1 % à la seule filiale intégrée donne 63 000 €."
+        },
+        {
+          "id": "q7-interets-pret-intra-groupe",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À l'aide de l'annexe 3 (B), calculez le montant des intérêts versés à Ostral Filtertechnik GmbH à réintégrer au résultat fiscal 2026 d'Ostral. Réponse en euros.",
+          "expected_value": 12000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "La GmbH, détenue à 100 % par Ostral, est une entreprise liée (CGI art. 39, 12). Les intérêts versés à une entreprise associée ou liée sont déductibles dans la limite du taux de l'article 39, 1, 3° (4,6 %) ou, s'il est supérieur, du taux que l'emprunteuse aurait pu obtenir d'établissements financiers indépendants dans des conditions analogues (art. 212, I, a) : l'offre bancaire justifie 5,0 %. Intérêts déductibles : 3 000 000 × 5,0 % = 150 000 € ; réintégration : 162 000 − 150 000 = **12 000 €**. Retenir le taux de 4,6 % donne 24 000 €. Les charges financières nettes d'Ostral (410 000 €) restant très inférieures à 3 M€, la limitation générale de l'article 212 bis ne joue pas."
+        },
+        {
+          "id": "q8-benefice-transfere",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l'aide de l'annexe 3 (A), calculez le montant du bénéfice indirectement transféré à Ostral Maroc en 2026 que l'administration pourrait réintégrer dans le résultat d'Ostral sur le fondement de l'article 57 du CGI, en retenant la marge médiane des comparables. Réponse en euros.",
+          "expected_value": 480000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Ostral Maroc est un sous-traitant à risques limités qui travaille exclusivement pour Ostral : la méthode du coût majoré est adaptée. Prix de pleine concurrence : 4 800 000 × 1,10 = 5 280 000 €. Bénéfice transféré par majoration du prix d'achat : 5 760 000 − 5 280 000 = **480 000 €**, entièrement réintégrable puisque tous les sous-ensembles ont été consommés dans des produits vendus en 2026 (IS supplémentaire : 480 000 × 25 % = 120 000 €, hors intérêts de retard et majorations). Même au haut de la fourchette (12 %), le prix excède le prix de pleine concurrence de 384 000 €."
+        },
+        {
+          "id": "q9-analyse-article-57",
+          "kind": "open",
+          "points": 2.5,
+          "prompt": "À l'aide des annexes 1 et 3 (A) et de votre réponse à la question 8, rédigez pour M. Lambert une note préparant le contrôle fiscal : conditions de la réintégration sur le fondement de l'article 57 du CGI et charge de la preuve, arguments dont dispose Ostral, conséquences fiscales, obligations déclaratives en matière de prix de transfert et mesures à prendre pour 2027.",
+          "model_answer": "**Conditions.** L'article 57 du CGI permet de réintégrer dans le résultat d'une entreprise française les bénéfices transférés à une entreprise étrangère par majoration ou minoration des prix ou par tout autre moyen. L'administration doit établir : (1) un lien de **dépendance ou de contrôle** : Ostral détient 100 % d'Ostral Maroc ; cette preuve est requise car le Maroc, où le taux est de 20 %, n'est pas un État à régime fiscal privilégié au sens de l'article 238 A ; (2) un **avantage** consenti, par comparaison avec les prix pratiqués entre entreprises indépendantes : la marge de 20 % sur coûts complets dépasse nettement la fourchette des comparables (7 % à 12 %). Ces deux éléments établis, le transfert de bénéfices est présumé.\n\n**Arguments d'Ostral.** Elle ne peut écarter la réintégration qu'en justifiant d'une contrepartie à l'avantage consenti : qualité ou délais exceptionnels, investissements spécifiques supportés par la filiale, coûts de démarrage. Ostral Maroc ne supportant ni risque commercial ni risque de stock et travaillant sur les plans d'Ostral, cette justification paraît difficile ; Ostral peut tout au plus discuter les comparables ou soutenir une marge au haut de la fourchette.\n\n**Conséquences.** Réintégration de 480 000 € dans le résultat 2026, soit 120 000 € d'IS, augmentés de l'intérêt de retard et, le cas échéant, d'une majoration. Le bénéfice ayant déjà été imposé au Maroc, il en résulte une double imposition économique : la convention franco-marocaine ne prévoyant pas d'ajustement corrélatif, Ostral ne peut que saisir les autorités compétentes dans le cadre de la procédure amiable (convention du 29 mai 1970, art. 31), sans garantie de résultat.\n\n**Obligations déclaratives.** Ostral, dont le chiffre d'affaires dépasse 50 M€, souscrit chaque année la déclaration relative aux prix de transfert (CGI art. 223 quinquies B), déposée par la mère pour le groupe intégré : politique de prix de transfert du groupe, état des transactions avec les entreprises associées dépassant 100 000 € par nature, méthode retenue. Avec un chiffre d'affaires et un actif brut inférieurs à 150 M€, elle n'est pas tenue de produire la documentation complète de l'article L. 13 AA du LPF. **Pour 2027**, il faut ramener la marge vers 10 % et documenter volontairement la méthode du coût majoré (analyse fonctionnelle, étude de comparables), seul moyen de défendre sa politique lors du contrôle.",
+          "key_points": [
+            "Dépendance établie (100 % du capital) ; preuve requise car le Maroc n'est pas un État à régime fiscal privilégié",
+            "Avantage : marge de 20 % contre 7 à 12 % chez des indépendants ; preuve à la charge de l'administration, puis présomption de transfert",
+            "Ostral ne peut écarter la réintégration qu'en prouvant une contrepartie, difficile pour un sous-traitant sans risque",
+            "Conséquences : 480 000 € réintégrés, 120 000 € d'IS, intérêt de retard ; double imposition : procédure amiable de la convention franco-marocaine (art. 31), sans ajustement corrélatif garanti",
+            "Déclaration annuelle de l'art. 223 quinquies B (CA ≥ 50 M€), sous le seuil de 150 M€ de la documentation de l'art. L. 13 AA du LPF ; révision et documentation de la marge pour 2027"
+          ],
+          "explanation": "L'article 57 repose sur deux preuves à la charge de l'administration (dépendance et avantage), qui font présumer le transfert ; l'entreprise ne peut ensuite que démontrer une contrepartie. La conformité passe par une méthode documentée et la déclaration de l'article 223 quinquies B."
+        },
+        {
+          "id": "q10-indemnite-rupture-brutale",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l'aide de l'annexe 4, évaluez le montant des dommages-intérêts que Filtrasud peut obtenir au titre de la rupture brutale, en retenant le préavis jugé raisonnable par le conseil d'Ostral. Réponse en euros.",
+          "expected_value": 337500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Seule la brutalité de la rupture est réparée : le préjudice est la marge sur coûts variables dont Filtrasud est privée pendant la durée du préavis manquant. Chiffre d'affaires annuel moyen : (1 700 000 + 1 900 000 + 1 800 000) ÷ 3 = 1 800 000 € ; marge annuelle : 1 800 000 × 25 % = 450 000 €. Préavis accordé : 3 mois (du 25 novembre 2026 au 28 février 2027) ; préavis raisonnable : 12 mois ; préavis manquant : 9 mois. Indemnité : 450 000 × 9 ÷ 12 = **337 500 €**. Retenir le chiffre d'affaires (1 350 000 €) ou douze mois de marge (450 000 €) surévalue le préjudice."
+        },
+        {
+          "id": "q11-demandes-filtrasud",
+          "kind": "open",
+          "points": 2,
+          "prompt": "À l'aide de l'annexe 4 et de votre réponse à la question 10, analysez les deux demandes de l'avocat de Filtrasud et indiquez ce qu'Ostral aurait dû faire pour limiter son risque.",
+          "model_answer": "**(a) Indemnité de fin de contrat.** L'agent commercial est un mandataire chargé, de façon permanente, de négocier et, éventuellement, de conclure des contrats au nom et pour le compte de son mandant (C. com. art. L. 134-1) ; à la cessation du contrat, il a droit à une indemnité réparant son préjudice (art. L. 134-12). Filtrasud achète les produits et les revend en son nom, sans commission : c'est un revendeur indépendant, concessionnaire exclusif. Le statut d'agent commercial ne s'applique pas et aucune indemnité de fin de contrat n'est due de plein droit ; le contrat n'ouvrait d'ailleurs aucun droit au renouvellement. La demande (a) doit être rejetée.\n\n**(b) Rupture brutale.** L'article L. 442-1, II du Code de commerce engage la responsabilité de celui qui rompt brutalement, même partiellement, une **relation commerciale établie** sans préavis écrit tenant compte notamment de la durée de la relation et des usages. Près de douze ans de renouvellements successifs et des flux importants caractérisent une relation établie, même si chaque contrat était conclu pour un an. Le respect du préavis contractuel de trois mois ne suffit pas : il est insuffisant au regard de la durée de la relation et de la dépendance de Filtrasud (70 % de son chiffre d'affaires). Ostral n'invoque ni inexécution ni force majeure. Elle doit donc réparer la marge perdue pendant le préavis manquant de neuf mois, soit 337 500 €, mais non la perte de la relation elle-même. Le litige relève des juridictions spécialisées désignées en application de l'article L. 442-4 (C. com. art. D. 442-2 et D. 442-3), avec appel devant la cour d'appel de Paris.\n\n**Prévention.** Ostral aurait dû notifier par écrit un préavis d'environ douze mois, ou organiser une sortie progressive (baisse échelonnée des volumes, reprise des stocks) ; un préavis de dix-huit mois l'aurait mise à l'abri de toute action fondée sur l'insuffisance du préavis.",
+          "key_points": [
+            "Filtrasud est un revendeur indépendant (concessionnaire), non un agent commercial : pas d'indemnité de l'art. L. 134-12",
+            "Le non-renouvellement est licite et le préavis contractuel respecté, ce qui n'exclut pas l'art. L. 442-1, II",
+            "Relation commerciale établie (près de douze ans) ; préavis écrit de trois mois insuffisant",
+            "Réparation limitée à la marge perdue pendant les neuf mois de préavis manquant (337 500 €)",
+            "Prévention : préavis d'environ douze mois ou transition négociée ; dix-huit mois mettent à l'abri"
+          ],
+          "explanation": "On qualifie d'abord le distributeur (revendeur ou mandataire) pour écarter l'indemnité propre à l'agent commercial, puis on applique L. 442-1, II, qui sanctionne l'insuffisance du préavis et non la rupture elle-même."
+        }
+      ],
+      "explanation": "Méthode : (1) TVA : livraison intracommunautaire exonérée sous condition de l'état récapitulatif, exportation exonérée, autoliquidation de l'acquisition intracommunautaire, de l'importation et de la prestation reçue d'un prestataire étranger, toutes déduites : TVA nette 240 000 €, et écriture de l'acquisition (601 et 44566 au débit, 4452 et 401 au crédit) ; (2) groupe : seules les sociétés soumises à l'IS français et détenues à 95 % entrent dans l'intégration (Ostral et Ostral Services) ; quote-part de frais et charges de 1 % pour la filiale intégrée et la filiale européenne, 5 % pour la filiale marocaine (31 000 €) ; intérêts d'un prêt intra-groupe déductibles au taux de marché prouvé (12 000 € réintégrés) ; (3) prix de transfert : méthode du coût majoré, 480 000 € de bénéfice transféré, analyse des preuves de l'article 57 et de la déclaration de l'article 223 quinquies B ; (4) distribution : pas d'indemnité d'agent commercial pour un concessionnaire, mais réparation de la rupture brutale limitée à la marge du préavis manquant (337 500 €)."
+    }
+  ]
+}
