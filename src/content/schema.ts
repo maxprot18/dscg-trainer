@@ -8,7 +8,7 @@
  * valides, écriture équilibrée, barème cohérent…) sont factorisées dans des
  * helpers de refinement réutilisés par les exercices et les sous-questions.
  */
-import { z } from 'zod'
+import { z } from '../lib/zod'
 
 import { UE_IDS } from './ids'
 

@@ -3,7 +3,7 @@
  * refusé avec un message clair au lieu d'être écrit tel quel dans la base (ce qui ferait planter les
  * statistiques). Chargé seulement par la page des réglages (Zod reste hors du fichier JS principal).
  */
-import { z } from 'zod'
+import { z } from '../lib/zod'
 
 import type { ProgressExport } from './db'
 
