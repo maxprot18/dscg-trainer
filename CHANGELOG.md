@@ -14,7 +14,8 @@ Finalisation, à la suite de l'audit de la version 1.4.2 (`docs/audit-v3.md`) ; 
 - **Contenu vérifié sur les textes officiels** : fiches IFRS détaillées (IAS 2, 8, 12, 16, 19, 36, 37, 38, 40, IFRS 3, 9, 10, 15, 16, information sectorielle), toute l'UE 3 et toute l'UE 6 ; corrections de fond, entre autres sur le bilan d'émissions de gaz à effet de serre (scope 3, R. 229-47), la négociation sur la GEPP, l'affectation du mali technique (PCG 745-5), les amendes RGPD (art. 83), IFRS 18 et ISA 570 révisée.
 - **Performance** : chargement du contenu fichier par fichier (une page d'exercice ne charge que son fichier, une session que le dossier de son thème), plus aucun décalage de mise en page (bandeaux d'installation et de mise à jour flottants) ; Lighthouse mobile 94 à 97 sur les pages principales, session rapide au premier chargement de 14 s à 3 s.
 - **Sécurité** : politique de sécurité du contenu (CSP) en balise meta, fichier de progression importé validé (schéma et taille maximale), liens internes stricts, Zod sans eval, actions GitHub épinglées par empreinte et mises à jour par Dependabot ; CI lancée une seule fois par push.
-- **Accessibilité** : options de QCM et barre d'avancement correctement nommées pour les lecteurs d'écran.
+- **Audit UX indépendant** (mobile et desktop, clair et sombre) et corrections : corrigé caché pendant l'examen, dossier commencé noté au prorata, impression toujours lisible, recherche sans touche perdue, chrono collant, pas de barre de navigation en session, relecture des réponses dans le bilan, liste « À revoir plus tard », 31 comptes ajoutés à l'aide à la saisie, messages de l'oral sans micro, corrigés en Markdown.
+- **Accessibilité** : focus clavier visible, lien « Aller au contenu », contrastes en thème sombre, cibles tactiles d'au moins 40 px, options de QCM et barre d'avancement correctement nommées pour les lecteurs d'écran.
 
 ## 1.4.2 (octobre 2026)
 
