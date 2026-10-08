@@ -22,6 +22,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : l'exhaustivité se teste dans l'autre sens, des biens observés dans l'usine vers leur inscription au fichier.",
+        "Inexact : voir une machine ne prouve pas la propriété (location, crédit-bail) ; elle se vérifie sur factures, contrats ou titres.",
+        "Exact : partir du fichier pour remonter au bien physique vérifie que les immobilisations inscrites existent.",
+        "Inexact : l'évaluation (amortissements, dépréciation) n'est que marginalement éclairée par l'observation de l'état du bien."
+      ],
       "explanation": "Partir du fichier (ce qui est comptabilisé) pour remonter au bien physique vérifie que les immobilisations inscrites existent : c'est l'existence. L'exhaustivité se teste dans l'autre sens, en partant des biens observés dans l'usine pour vérifier leur inscription au fichier. Voir une machine ne prouve pas que l'entité en est propriétaire (elle peut être louée ou en crédit-bail) : les droits et obligations se vérifient sur les factures, contrats ou titres. L'évaluation (amortissements, dépréciation) n'est que marginalement éclairée par l'observation de l'état du bien.",
       "source_ref": "NEP 500 (assertions relatives aux soldes des comptes en fin de période : existence)",
       "estimated_seconds": 50,
@@ -49,6 +55,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : actes notariés et cartes grises au nom de la société établissent ses droits sur les biens inscrits.",
+        "Inexact : l'existence physique se vérifie par inspection des biens, non par un document juridique.",
+        "Inexact : l'exhaustivité supposerait de partir de biens non encore rattachés au fichier des immobilisations.",
+        "Inexact : la séparation des exercices porte sur le rattachement des opérations à la période, que l'examen d'un titre ne teste pas."
+      ],
       "explanation": "Les titres de propriété (actes notariés, cartes grises au nom de la société) établissent que l'entité détient les droits sur les biens inscrits : c'est l'assertion droits et obligations. L'existence physique se vérifie par inspection des biens, non par un document juridique. L'exhaustivité suppose de partir de biens non encore rattachés au fichier. La séparation des exercices porte sur le rattachement des opérations à la bonne période, que l'examen d'un titre de propriété ne teste pas.",
       "source_ref": "NEP 500 (assertions relatives aux soldes : droits et obligations)",
       "estimated_seconds": 50,
@@ -75,6 +87,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : l'existence se teste du fichier vers le bien ; ce test ne remet pas en cause les biens déjà inscrits.",
+        "Inexact : les droits et obligations portent sur la propriété des biens, non sur l'imputation des dépenses.",
+        "Inexact : évaluer les amortissements suppose un bien déjà à l'actif, alors que ce test cherche des biens qui n'y sont pas.",
+        "Exact : une dépense immobilisable passée en 615 manque à l'actif ; la rechercher dans les charges teste l'exhaustivité."
       ],
       "explanation": "Une dépense immobilisable passée en charges est absente de l'actif : rechercher ces dépenses dans les comptes de charges teste l'exhaustivité des immobilisations. L'existence se teste en partant du fichier vers le bien ; ce test ne remet pas en cause les biens déjà inscrits. Les droits et obligations portent sur la propriété des biens, non sur leur imputation. L'évaluation des amortissements suppose que le bien soit déjà à l'actif ; ce test cherche justement des biens qui n'y sont pas.",
       "source_ref": "NEP 500 (assertion exhaustivité) ; PCG art. 211-1 et 212-1 (définition et comptabilisation des actifs) ; PCG compte 615",
@@ -142,6 +160,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : chercher à réduire l'impôt incite à l'inverse à passer en charges des dépenses immobilisables.",
+        "Exact : activer des charges augmente le résultat ; un covenant de résultat menacé crée cette pression (NEP 240).",
+        "Inexact : sans investissement, les occasions d'activer des charges sont limitées.",
+        "Inexact : des biens existants totalement amortis ne créent pas en soi d'incitation à activer des charges."
+      ],
       "explanation": "Activer des charges augmente le résultat : la direction y est incitée lorsqu'un covenant de résultat risque d'être franchi (NEP 240, facteurs de risque liés aux pressions). Une société cherchant à réduire son impôt a l'incitation inverse : passer en charges des dépenses immobilisables (risque sur l'exhaustivité des immobilisations). Sans investissement, les occasions d'activer des charges sont limitées. Le fait que les biens existants soient amortis ne crée pas en soi d'incitation à activer des charges.",
       "source_ref": "NEP 315 (évaluation du risque) ; NEP 240 (facteurs de risque de fraude : pressions)",
       "estimated_seconds": 60,
@@ -168,6 +192,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : le mode dégressif est un choix de plan d'amortissement, sans lien avec une perte de valeur.",
+        "Inexact : le mode de financement n'affecte pas la valeur de l'actif.",
+        "Inexact : une VNC faible du fait de l'amortissement n'est pas un indice ; elle rend même une dépréciation moins probable.",
+        "Exact : une baisse durable et importante de l'utilisation, due à un environnement défavorable, impose de comparer VNC et valeur actuelle."
       ],
       "explanation": "Une baisse durable et importante de l'utilisation d'un actif, due à un changement défavorable de l'environnement, est un indice de perte de valeur : l'entité doit alors comparer la VNC à la valeur actuelle. Le mode d'amortissement dégressif est un choix de plan, sans lien avec une perte de valeur. Le mode de financement n'affecte pas la valeur de l'actif. Une VNC faible du fait de l'amortissement n'est pas un indice ; elle rend même une dépréciation moins probable.",
       "source_ref": "PCG art. 214-15 s. (dépréciation des actifs, indices de perte de valeur) ; NEP 540",
@@ -299,6 +329,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : l'inventaire physique est un contrôle de détection sur l'existence des biens acquis, sans vérifier leur autorisation.",
+        "Inexact : le rapprochement fichier / balance détecte des écarts sur les biens acquis, sans vérifier qu'ils étaient autorisés.",
+        "Exact : seule l'autorisation préalable intervient avant l'engagement de la dépense ; c'est un contrôle préventif.",
+        "Inexact : l'étiquetage facilite le suivi et l'inventaire mais n'empêche pas une acquisition non autorisée."
+      ],
       "explanation": "Seule l'autorisation préalable intervient avant l'engagement de la dépense : c'est un contrôle préventif qui couvre la réalité et l'autorisation des acquisitions. L'inventaire physique et le rapprochement fichier / balance sont des contrôles de détection, qui portent sur l'existence et l'exhaustivité des biens déjà acquis, sans vérifier qu'ils étaient autorisés. L'étiquetage facilite le suivi et l'inventaire mais n'empêche pas une acquisition non autorisée.",
       "source_ref": "NEP 315 (compréhension du contrôle interne : activités de contrôle)",
       "estimated_seconds": 60,
@@ -325,6 +361,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : le budget d'investissement porte sur les entrées d'immobilisations, pas sur les sorties.",
+        "Inexact : le calcul automatique continue d'amortir les biens disparus tant qu'ils restent au fichier.",
+        "Inexact : la revue des factures d'entretien vise les dépenses immobilisables passées en charges (exhaustivité), non les sorties.",
+        "Exact : un bien inscrit mais introuvable à l'inventaire révèle une sortie non comptabilisée ; ce contrôle de détection couvre l'existence."
       ],
       "explanation": "Un bien inscrit au fichier mais introuvable lors de l'inventaire physique révèle une sortie non comptabilisée : ce contrôle de détection couvre l'existence. Le budget d'investissement porte sur les entrées, pas sur les sorties. Le calcul automatique des dotations continue au contraire d'amortir les biens disparus tant qu'ils restent au fichier. La revue des factures d'entretien vise les dépenses immobilisables passées en charges (exhaustivité), non les sorties.",
       "source_ref": "NEP 315 (activités de contrôle) ; NEP 500 (existence)",
@@ -448,6 +490,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : la mesure porte sur le montant enregistré, que seuls les factures et l'analyse des composantes du coût d'entrée vérifient.",
+        "Inexact : l'inventaire physique prouve l'existence des biens, pas le montant de leur coût d'entrée.",
+        "Inexact : les procès-verbaux d'assemblée ne renseignent pas sur le coût d'un bien acquis.",
+        "Inexact : les dotations des biens anciens relèvent de l'évaluation des soldes, non de la mesure des acquisitions de l'exercice."
+      ],
       "explanation": "La mesure porte sur le montant enregistré : seul le rapprochement avec les factures et l'analyse des composantes du coût d'entrée la vérifient. L'inventaire physique prouve l'existence, pas le montant. Les procès-verbaux d'assemblée ne renseignent pas sur le coût d'un bien. Les dotations des biens anciens relèvent de l'évaluation des soldes, non de la mesure des acquisitions de l'exercice.",
       "source_ref": "NEP 500 (assertion mesure) ; PCG art. 213-8 s. (coût d'acquisition)",
       "estimated_seconds": 50,
@@ -474,6 +522,12 @@
       ],
       "answer": [
         1
+      ],
+      "option_explanations": [
+        "Inexact : une déclaration écrite complète les éléments collectés mais ne se substitue pas à l'appréciation des hypothèses.",
+        "Exact : la NEP 540 demande d'apprécier hypothèses, méthode et données : comparaison aux budgets et réalisations, taux, sensibilité.",
+        "Inexact : la valeur actuelle est la plus élevée de la valeur vénale et de la valeur d'usage ; l'auditeur ne peut écarter cette dernière.",
+        "Inexact : le seul contrôle arithmétique laisse de côté les hypothèses, principale source de risque de l'estimation."
       ],
       "explanation": "La NEP 540 demande d'apprécier les hypothèses, la méthode et les données d'une estimation : comparaison aux budgets et aux réalisations passées, examen du taux, analyse de sensibilité. Une déclaration écrite complète les éléments collectés mais ne s'y substitue pas. La valeur actuelle est la plus élevée de la valeur vénale et de la valeur d'usage : l'auditeur ne peut écarter la valeur d'usage. Le seul contrôle arithmétique laisse de côté les hypothèses, principale source de risque.",
       "source_ref": "NEP 540 (estimations comptables) ; PCG art. 214-15 s. (dépréciation des actifs : valeur actuelle)",
@@ -678,6 +732,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : seuls les frais externes de formation peuvent, sur option, être incorporés ; une formation assurée en interne reste en charges.",
+        "Inexact : les pertes opérationnelles initiales ne mettent pas le bien en état de fonctionner ; ce sont des charges de l'exercice.",
+        "Exact : installation et essais avant mise en service sont directement attribuables à la mise en état de fonctionnement (art. 213-8).",
+        "Inexact : les frais de publicité et de lancement ne mettent pas le bien en état de fonctionner ; ils restent en charges."
+      ],
       "explanation": "Les coûts d'installation et d'essais sont directement attribuables à la mise en état de fonctionnement du bien : ils font partie du coût d'entrée. Les pertes opérationnelles initiales et les frais de publicité ou de lancement ne mettent pas le bien en état de fonctionner : ce sont des charges de l'exercice (art. 213-11 à 213-13). Seuls les frais externes de formation nécessaires à la mise en service peuvent, sur option, être rattachés au coût (art. 213-8) ; une formation assurée en interne par le chef d'atelier n'en relève pas et reste en charges de personnel.",
       "source_ref": "PCG art. 213-8 s. (coût d'acquisition : coûts directement attribuables et coûts exclus)",
       "estimated_seconds": 60,
@@ -709,6 +769,12 @@
         2
       ],
       "multiple": true,
+      "option_explanations": [
+        "Exact : même sans effet sur le résultat, le bien sorti doit être retiré ; brut et amortissements sont surévalués (existence).",
+        "Inexact : dans les comptes sociaux, le bien en crédit-bail n'est pas inscrit à l'actif du preneur ; le traitement est correct.",
+        "Exact : un terrain, dont la durée d'utilisation n'est pas limitée, ne s'amortit pas.",
+        "Inexact : traitement correct, l'amortissement débute à la mise en service et non à la livraison."
+      ],
       "explanation": "Option 1 : anomalie ; même sans effet sur le résultat, le bien sorti doit être retiré (brut et amortissements surévalués, existence). Option 3 : anomalie ; un terrain, dont la durée d'utilisation n'est pas limitée, ne s'amortit pas. Option 2 : traitement correct dans les comptes sociaux, où le bien en crédit-bail n'est pas inscrit à l'actif du preneur. Option 4 : traitement correct, l'amortissement débutant à la mise en service et non à la livraison.",
       "source_ref": "PCG, règles relatives à l’amortissement, à la sortie des actifs et au crédit-bail (règl. ANC 2014-03) ; NEP 500 (existence)",
       "estimated_seconds": 90,

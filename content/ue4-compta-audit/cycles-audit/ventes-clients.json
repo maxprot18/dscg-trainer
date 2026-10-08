@@ -63,6 +63,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : l’exhaustivité se teste dans l’autre sens, des bons de livraison vers les factures.",
+        "Exact : partir des factures enregistrées pour remonter au bon de livraison signé vérifie que chaque vente correspond à une livraison effective.",
+        "Inexact : la classification porte sur l’imputation au bon compte, que ce test n’examine pas.",
+        "Inexact : l’évaluation des créances concerne leur recouvrabilité (dépréciation), non l’existence d’une livraison."
+      ],
       "explanation": "Partir de la comptabilité (factures enregistrées) pour remonter à la preuve de livraison permet de vérifier que chaque vente comptabilisée correspond à une livraison effective : c’est la réalité. L’exhaustivité se teste dans l’autre sens, en partant des bons de livraison pour vérifier qu’ils ont été facturés. La classification porte sur l’imputation au bon compte, que ce test n’examine pas. L’évaluation des créances concerne leur recouvrabilité (dépréciation), non l’existence d’une livraison.",
       "source_ref": "NEP 500 (assertions relatives aux catégories d’opérations : réalité, exhaustivité)",
       "verified": true,
@@ -90,6 +96,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : les clients sont sélectionnés dans la balance ; une créance non enregistrée ne peut pas être confirmée.",
+        "Inexact : un client peut reconnaître sa dette sans pouvoir la payer ; l’évaluation se vérifie par la balance âgée et les règlements postérieurs.",
+        "Inexact : une réponse peut révéler un problème de séparation, mais ce n’est pas l’objectif principal de la confirmation.",
+        "Exact : en confirmant le solde qu’il doit, le client atteste que la créance existe à la clôture."
+      ],
       "explanation": "En confirmant le solde qu’il doit, le client atteste que la créance existe à la clôture : la confirmation est la procédure de référence pour l’existence. Elle ne prouve pas l’exhaustivité, car les clients sont sélectionnés dans la balance (une créance non enregistrée ne peut pas être confirmée). Un client peut reconnaître sa dette sans être en mesure de la payer : l’évaluation se vérifie par la balance âgée et les règlements postérieurs. Une réponse peut révéler un problème de séparation, mais ce n’est pas l’objectif principal de la procédure.",
       "source_ref": "NEP 500 (assertions relatives aux soldes) ; NEP 505 (confirmations externes)",
       "verified": true,
@@ -116,6 +128,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : partir du compte 706 teste des opérations déjà enregistrées ; on ne peut pas y trouver une vente omise.",
+        "Inexact : les soldes de la balance clients sont déjà enregistrés ; cette sélection sert à tester l’existence, non l’exhaustivité.",
+        "Exact : population indépendante de la comptabilité et réputée complète, les bons prénumérotés permettent de suivre facture et écriture.",
+        "Inexact : partir du journal des ventes teste la réalité ; une vente jamais enregistrée n’y figure pas."
       ],
       "explanation": "Pour vérifier que toutes les livraisons ont été facturées et comptabilisées, il faut partir d’une population indépendante de la comptabilité et réputée complète : les bons de livraison prénumérotés, dont on suit ensuite la facture et l’écriture. Partir du grand livre, du journal des ventes ou de la balance clients revient à tester des opérations déjà enregistrées : on ne peut pas y trouver une vente omise, ces sélections servent à tester la réalité ou l’existence.",
       "source_ref": "NEP 500 (assertion d’exhaustivité) ; NEP 330 (conception des procédures substantives)",
@@ -183,6 +201,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : l’augmentation des jours de stock relève du cycle stocks, non de la valeur des créances.",
+        "Inexact : la masse salariale commerciale n’informe pas sur la recouvrabilité des créances.",
+        "Exact : un recouvrement qui s’allonge et des créances anciennes en hausse signalent des dépréciations potentiellement insuffisantes.",
+        "Inexact : la baisse des taux d’intérêt n’a pas de lien direct avec la valeur des créances clients."
+      ],
       "explanation": "Un délai de recouvrement qui s’allonge et des créances anciennes en hausse signalent des difficultés d’encaissement : le risque porte sur l’évaluation (dépréciations insuffisantes). L’augmentation des jours de stock relève du cycle stocks. La masse salariale commerciale n’informe pas sur la recouvrabilité des créances. La baisse des taux d’intérêt n’a pas de lien direct avec la valeur des créances clients.",
       "source_ref": "NEP 315 (procédures analytiques en phase d’évaluation des risques)",
       "verified": true,
@@ -209,6 +233,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : les factures sont réelles ; l’existence des créances n’est pas en cause.",
+        "Inexact : les droits et obligations concernent notamment les créances cédées, sans rapport avec les ristournes.",
+        "Inexact : rien dans les faits n’évoque une confusion entre ventes de produits et de marchandises.",
+        "Exact : des ristournes acquises non constatées en 4198 (contrepartie 709) sous-évaluent ce passif et surévaluent le chiffre d’affaires net."
       ],
       "explanation": "Les ristournes acquises à la clôture doivent être constatées en avoirs à établir (4198) en réduction du chiffre d’affaires (709). Leur oubli, déjà constaté par le passé, sous-évalue un passif et surévalue le chiffre d’affaires net : le risque porte sur l’exhaustivité de ce passif et la mesure du CA. L’existence des créances n’est pas en cause (les factures sont réelles). Les droits concernent les créances cédées. La classification entre produits et marchandises n’est pas évoquée par les faits.",
       "source_ref": "NEP 315 (risques au niveau des assertions) ; PCG compte 4198 et compte 709",
@@ -339,6 +369,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : encaisser, tenir les comptes et émettre des avoirs permet de détourner un règlement puis de solder la créance par un avoir fictif.",
+        "Inexact : saisir les commandes et préparer les livraisons relève de l’administration des ventes, sans accès aux fonds.",
+        "Inexact : établir et classer les factures ne permet pas de détourner des encaissements ni de les masquer.",
+        "Inexact : relancer les clients et transmettre les litiges ne donne pas accès aux encaissements."
+      ],
       "explanation": "Une personne qui encaisse, tient les comptes clients et peut émettre des avoirs peut détourner un règlement puis solder la créance par un avoir fictif sans que l’anomalie apparaisse : c’est l’incompatibilité majeure du cycle. Saisir les commandes et préparer les livraisons relève de l’administration des ventes, sans accès aux fonds. Établir et classer les factures, ou relancer les clients, ne donne pas la possibilité de détourner des encaissements et de les masquer.",
       "source_ref": "NEP 315 (compréhension du contrôle interne : séparation des fonctions)",
       "verified": true,
@@ -368,6 +404,12 @@
         3
       ],
       "multiple": true,
+      "option_explanations": [
+        "Inexact : la prénumérotation des bons de livraison vise l’exhaustivité de la facturation, pas le prix facturé.",
+        "Exact : protéger le fichier des tarifs, avec validation et traçabilité des modifications, garantit des factures établies au bon prix.",
+        "Inexact : la confirmation de solde est une procédure de l’auditeur orientée vers l’existence, non un contrôle interne.",
+        "Exact : bloquer les remises hors barème sans validation garantit le bon prix facturé, donc la mesure des ventes."
+      ],
       "explanation": "La protection du fichier des tarifs et le blocage des remises hors barème garantissent que les factures sont établies au bon prix : ils couvrent la mesure. La prénumérotation des bons de livraison vise l’exhaustivité de la facturation. La confirmation de solde n’est pas un contrôle interne de l’entité mais une procédure substantive de l’auditeur, orientée vers l’existence des créances.",
       "source_ref": "NEP 315 (activités de contrôle) ; NEP 500 (assertion de mesure)",
       "verified": true,
@@ -457,6 +499,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : grands comptes et risque élevé sur l’existence exigent des confirmations positives, plus probantes.",
+        "Inexact : un client en litige au solde contesté appelle une confirmation positive et, au besoin, des procédures complémentaires.",
+        "Exact : petits soldes nombreux et homogènes, risque faible et contrôle interne efficace : conditions dans lesquelles la confirmation négative est envisageable.",
+        "Inexact : un soupçon de ventes fictives exige des confirmations positives ; l’absence de réponse ne prouve pas l’accord."
+      ],
       "explanation": "La confirmation négative fournit des éléments moins probants : l’absence de réponse ne prouve pas l’accord. Elle n’est envisageable que si le risque est évalué faible avec un contrôle interne efficace, sur une population nombreuse de petits soldes homogènes, avec un faible taux d’écarts attendu et sans raison de penser que les destinataires négligeront la demande. Pour des grands comptes à risque élevé, un client en litige ou un soupçon de ventes fictives, il faut des confirmations positives et, le cas échéant, des procédures complémentaires.",
       "source_ref": "NEP 505 (§ 04 et 08 : demandes fermées ou ouvertes, fiabilité des réponses) ; la demande de confirmation négative relève de la pratique professionnelle, la NEP 505 ne la mentionne pas",
       "verified": true,
@@ -483,6 +531,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : accepter le refus sans diligence prive l’audit d’un élément probant sur le principal client.",
+        "Inexact : passer outre le refus de la direction n’est pas la démarche prévue par la NEP 505.",
+        "Exact : le CAC apprécie les motifs, en tient compte dans le risque de fraude, puis collecte d’autres éléments probants.",
+        "Inexact : le refus de certifier n’est qu’un dernier ressort, si le refus est injustifié ou les procédures alternatives insuffisantes."
       ],
       "explanation": "Face à un refus, le CAC cherche à comprendre les motifs, apprécie s’ils sont fondés et vraisemblables et en tire les conséquences sur son évaluation des risques, notamment de fraude. Il collecte ensuite d’autres éléments (encaissements postérieurs, factures, bons de livraison, pièces du litige). Accepter sans diligence prive l’audit d’un élément probant. Passer outre le refus n’est pas la démarche prévue. Si le refus paraît injustifié ou si les procédures alternatives ne suffisent pas, le CAC en informe les organes de gouvernance et en tire les conséquences dans son rapport (réserve, voire impossibilité de certifier) : ce n’est qu’un dernier ressort.",
       "source_ref": "NEP 505 (§ 10-12 : refus de la direction de laisser adresser une demande de confirmation)",
@@ -661,6 +715,12 @@
       "answer": [
         0
       ],
+      "option_explanations": [
+        "Exact : seule la comparaison des avis de paiement et remises avec le lettrage révèle des règlements imputés sur des factures non visées.",
+        "Inexact : la manœuvre préserve l’égalité entre balance auxiliaire et compte collectif 411.",
+        "Inexact : le délai moyen de recouvrement global peut rester stable malgré le décalage d’imputation.",
+        "Inexact : le détournement des encaissements n’affecte pas la séquence de numérotation des factures."
+      ],
       "explanation": "Le décalage d’imputation (lapping) se manifeste par des règlements imputés sur des factures que le payeur n’a pas visées : seule la comparaison entre le détail des paiements (avis, remises) et le lettrage le met en évidence. L’égalité auxiliaire / collectif est préservée par la manœuvre. Le DSO global peut rester stable. La séquence des factures n’est pas affectée par le détournement des encaissements. La faiblesse sous-jacente est l’absence de séparation entre encaissement et tenue des comptes clients.",
       "source_ref": "NEP 240 (fraude : détournement d’actifs) ; NEP 330",
       "verified": true,
@@ -687,6 +747,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : maintenir le cours historique ignore la perte latente de 10 909 € que le PCG impose de provisionner.",
+        "Inexact : une dépréciation au compte 491 traite un risque d’insolvabilité, pas un effet de change.",
+        "Inexact : une perte de change (656) suppose une perte réalisée lors du règlement, non une perte latente.",
+        "Exact : 90 909 € − 80 000 € = 10 909 € : écart de conversion actif (476) et provision pour perte de change (1515)."
       ],
       "explanation": "Valeur historique = 100 000 / 1,10 = 90 909 € ; valeur au cours de clôture = 100 000 / 1,25 = 80 000 € ; perte latente = 10 909 €. Le PCG impose la conversion au cours de clôture avec un écart de conversion actif (476) qui n’affecte pas directement le résultat, et une provision pour risque (1515) qui constate la perte latente en charge. Maintenir le cours historique ignore la perte latente. Une dépréciation 491 traite un risque d’insolvabilité, pas un effet de change. Une perte de change (656, pertes de change sur créances et dettes commerciales) suppose une perte réalisée lors du règlement.",
       "source_ref": "PCG art. 420-5 (conversion des créances et dettes en monnaies étrangères) ; comptes 476 et 1515",

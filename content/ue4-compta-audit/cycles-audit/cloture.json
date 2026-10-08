@@ -23,6 +23,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : la réalité se teste dans l'autre sens, des charges enregistrées vers les pièces justificatives.",
+        "Inexact : la classification porte sur l'imputation au bon compte, que ce test n'examine pas.",
+        "Exact : partir des factures reçues en N+1 pour vérifier qu'aucune charge de N n'est omise teste l'exhaustivité des charges à payer.",
+        "Inexact : les charges constatées d'avance (486) visent des charges enregistrées en N relatives à N+1, situation inverse."
+      ],
       "explanation": "Le test part de pièces postérieures à la clôture (factures reçues en N+1) pour vérifier qu'aucune charge de N n'a été omise : c'est l'exhaustivité des charges et des dettes (charges à payer, compte 408). La réalité se teste dans l'autre sens, en partant des charges enregistrées vers les pièces. La classification porte sur l'imputation au bon compte, que ce test n'examine pas. Les charges constatées d'avance (486) concernent des charges enregistrées en N mais relatives à N+1, situation inverse de celle testée ici.",
       "source_ref": "NEP 500 (assertions relatives aux catégories d'opérations et aux soldes : exhaustivité) ; PCG compte 408",
       "estimated_seconds": 50
@@ -50,6 +56,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : la mesure porterait sur le montant des engagements mentionnés, non sur le fait qu'ils figurent tous dans l'annexe.",
+        "Inexact : la réalité se testerait en partant de l'annexe vers les pièces, sens inverse de ce rapprochement.",
+        "Inexact : la présentation et l'intelligibilité visent la clarté et le classement de l'information, non son caractère complet.",
+        "Exact : partir de confirmations bancaires et de procès-verbaux indépendants de l'annexe vérifie que tous les engagements y figurent."
+      ],
       "explanation": "Le test part de sources indépendantes de l'annexe (confirmations bancaires, procès-verbaux) pour vérifier que tous les engagements y figurent : c'est l'exhaustivité des informations fournies. La mesure (option 1) porterait sur le montant des engagements mentionnés, la réalité (option 2) se testerait en partant de l'annexe vers les pièces, et la présentation et l'intelligibilité (option 3) portent sur la clarté et le classement de l'information, non sur son caractère complet.",
       "source_ref": "NEP 500 (assertions relatives à la présentation des comptes et aux informations fournies dans l'annexe)",
       "estimated_seconds": 60
@@ -76,6 +88,12 @@
       ],
       "answer": [
         0
+      ],
+      "option_explanations": [
+        "Exact : partir de l'ensemble des contrats facturés en N, population indépendante du 487, vérifie que chaque fraction de N+1 est différée.",
+        "Inexact : partir des soldes du 487 ne détecte pas un produit jamais différé ; ce test couvre la réalité et l'évaluation.",
+        "Inexact : le recalcul du compte 486 concerne les charges constatées d'avance, non les produits.",
+        "Inexact : la confirmation des clients porte sur l'existence des créances, pas sur les produits constatés d'avance."
       ],
       "explanation": "Pour tester l'exhaustivité d'un passif, on part d'une population indépendante du compte testé (ici l'ensemble des contrats facturés en N) pour vérifier que chaque fraction relative à N+1 a bien été différée. Partir des soldes du 487 (option 2) ne permet pas de détecter un produit facturé d'avance qui n'aurait jamais été différé : ce test couvre la réalité et l'évaluation du solde. Le recalcul du 486 (option 3) concerne les charges, non les produits. La confirmation clients (option 4) porte sur l'existence des créances.",
       "source_ref": "NEP 500 (exhaustivité) ; PCG compte 487",
@@ -141,6 +159,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : un changement de logiciel est un facteur de risque d'anomalies sur la fiabilité des données, pas de continuité.",
+        "Exact : un emprunt important échu sous douze mois, sans refinancement identifié, est un indicateur financier typique de la NEP 570.",
+        "Inexact : une croissance de 8 % conforme au secteur ne signale aucune difficulté.",
+        "Inexact : un remplacement de directeur financier n'est pas un indicateur ; seul le départ non remplacé de dirigeants clés en serait un."
+      ],
       "explanation": "Un emprunt important arrivant à échéance dans l'horizon de douze mois, sans renouvellement ni refinancement, menace directement la capacité de l'entité à faire face à ses engagements : c'est un indicateur financier typique de la NEP 570. Le changement de logiciel (option 1) est un facteur de risque d'anomalies (fiabilité des données), pas de continuité. Une croissance conforme au marché (option 3) ne signale aucune difficulté. Le remplacement d'un directeur financier (option 4) n'est pas en soi un indicateur : seul le départ non remplacé de dirigeants clés en serait un.",
       "source_ref": "NEP 570 (événements ou circonstances susceptibles de mettre en cause la continuité d'exploitation)",
       "estimated_seconds": 50
@@ -166,6 +190,12 @@
       ],
       "answer": [
         0
+      ],
+      "option_explanations": [
+        "Exact : dans la SA, l'alerte commence par l'information du président du conseil d'administration, à qui le CAC demande des explications.",
+        "Inexact : l'alerte procède par étapes ; le président du tribunal n'est informé qu'à partir de la deuxième, faute de réponse satisfaisante du président.",
+        "Inexact : la procédure d'alerte est distincte de l'opinion et n'entraîne pas en soi un refus de certifier.",
+        "Inexact : la révélation au procureur concerne les faits délictueux, non les difficultés économiques."
       ],
       "explanation": "Dans la SA, la procédure d'alerte commence par l'information du président du conseil d'administration (ou du directoire), à qui le CAC demande des explications ; ce n'est qu'en l'absence de réponse satisfaisante que la procédure se poursuit par étapes (conseil, assemblée, information du président du tribunal). La saisine immédiate du tribunal (option 2) saute ces étapes. La procédure d'alerte est distincte de l'opinion : elle n'entraîne pas en soi un refus de certifier (option 3). La révélation au procureur (option 4) concerne les faits délictueux, non les difficultés économiques.",
       "source_ref": "C. com. art. L. 234-1 (procédure d'alerte du commissaire aux comptes dans les SA) ; NEP 570",
@@ -295,6 +325,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : la revue mensuelle du compte de résultat est un contrôle de détection global, trop peu précis pour cet objectif.",
+        "Inexact : l'autorisation des règlements protège contre les paiements indus, non contre l'omission de charges.",
+        "Exact : recenser les réceptions non facturées part des biens et services reçus et garantit la constatation des factures non parvenues.",
+        "Inexact : le lettrage ne porte que sur les factures déjà enregistrées ; il ne révèle pas une charge omise."
+      ],
       "explanation": "Le recensement des réceptions non facturées part des événements réels (biens et services reçus) pour vérifier qu'une charge est constatée même sans facture : il couvre directement l'exhaustivité des charges à payer. La revue mensuelle du compte de résultat (option 1) est un contrôle de détection global, trop peu précis pour cet objectif. L'autorisation des règlements (option 2) protège contre les paiements indus. Le lettrage (option 4) ne porte que sur les factures déjà enregistrées.",
       "source_ref": "NEP 315 (compréhension du contrôle interne) ; PCG compte 408",
       "estimated_seconds": 50
@@ -321,6 +357,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : le cumul et la mention dans la lettre d'affirmation concernent les anomalies supérieures au seuil des anomalies manifestement insignifiantes.",
+        "Inexact : une réserve suppose une anomalie significative, ce qu'une erreur isolée de 2 200 € n'est pas.",
+        "Inexact : l'extension des travaux se justifierait face à une défaillance plus large ou un indice de fraude, exclus ici.",
+        "Exact : 2 200 € est sous le seuil de 3 000 € des anomalies manifestement insignifiantes ; ces anomalies ne sont pas cumulées."
       ],
       "explanation": "Les anomalies inférieures au seuil des anomalies manifestement insignifiantes ne sont pas cumulées : leur incidence, même additionnée, est par construction sans conséquence sur les comptes. Le cumul et la mention dans la lettre d'affirmation (option 1) concernent les anomalies au-dessus de ce seuil. Une réserve (option 2) suppose une anomalie significative. L'extension des travaux (option 3) se justifierait si l'erreur révélait une défaillance plus large ou un indice de fraude, ce que l'énoncé exclut.",
       "source_ref": "NEP 450 (évaluation des anomalies relevées au cours de l'audit) ; NEP 320",
@@ -473,6 +515,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : la mention en annexe seule est réservée aux événements liés à des situations nées après la clôture ; ce litige date de septembre N.",
+        "Exact : le jugement éclaire une obligation existant à la clôture ; la provision passe à 64 000 €, soit 34 000 € de complément en N.",
+        "Inexact : reporter la charge en N+1 méconnaît le rattachement à N d'une obligation née en septembre N.",
+        "Inexact : annuler la provision pour constater la dette en N+1 méconnaît aussi le rattachement de l'obligation à l'exercice N."
+      ],
       "explanation": "Le jugement apporte une information sur une obligation qui existait à la clôture (litige né en septembre N) : c'est un événement postérieur qui donne lieu à ajustement. La provision doit être portée à 64 000 €, soit un complément de 34 000 € en N. La simple mention en annexe (option 1) est réservée aux événements liés à des situations nées après la clôture. Reporter la charge en N+1 (options 3 et 4) méconnaît le rattachement de l'obligation à l'exercice N.",
       "source_ref": "NEP 560 (événements postérieurs à la clôture) ; PCG, règles relatives aux passifs et provisions (règl. ANC 2014-03)",
       "estimated_seconds": 70
@@ -498,6 +546,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : une lettre datée de la clôture laisserait sans déclaration la période suivante, où des événements postérieurs peuvent survenir.",
+        "Inexact : la date d'arrêté laisserait non couverte la période jusqu'au rapport ; les déclarations doivent aller jusqu'à sa date.",
+        "Exact : les déclarations écrites couvrent la période jusqu'à la date du rapport ; la lettre est datée au plus près, jamais après.",
+        "Inexact : le CAC ne peut fonder son opinion sur un élément pas encore obtenu ; une lettre postérieure au rapport est exclue."
       ],
       "explanation": "Les déclarations écrites doivent couvrir la période jusqu'à la date du rapport : la lettre est datée au plus près de cette date et jamais après, car le CAC ne peut fonder son opinion sur un élément qu'il n'a pas encore obtenu. Une lettre datée de la clôture (option 1) ou de l'arrêté (option 2) laisserait sans déclaration la période qui suit, pendant laquelle des événements postérieurs peuvent survenir. Une date postérieure au rapport (option 4) est exclue.",
       "source_ref": "NEP 580 (déclarations de la direction : date et signataires)",
@@ -731,6 +785,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : la date de facture est sans incidence ; la charge se rattache à l'exercice où la prestation a été reçue.",
+        "Exact : la mission achevée le 15/12/N est une charge de N, constatée par une charge à payer (compte 408).",
+        "Inexact : la date du règlement est sans incidence sur le rattachement des charges (art. L. 123-13).",
+        "Inexact : une répartition n'aurait de sens que pour une prestation s'étalant sur les deux exercices ; celle-ci est achevée en N."
+      ],
       "explanation": "La charge se rattache à l'exercice au cours duquel la prestation a été reçue, indépendamment de la date de facture ou de paiement : elle est constatée en N par une charge à payer (compte 408, fournisseurs, factures non parvenues). La date de facture (option 1) et celle du règlement (option 3) sont sans incidence sur le rattachement. Une répartition (option 4) n'aurait de sens que pour une prestation s'étalant sur les deux exercices.",
       "source_ref": "C. com. art. L. 123-13 (le compte de résultat récapitule les produits et charges de l'exercice sans tenir compte de leur date d'encaissement ou de paiement) ; PCG compte 408",
       "estimated_seconds": 45
@@ -758,6 +818,12 @@
       "answer": [
         3
       ],
+      "option_explanations": [
+        "Inexact : l'annexe décrit l'incertitude de façon adéquate ; sans désaccord ni limitation, il n'y a pas de réserve.",
+        "Inexact : l'information en annexe étant adéquate, il n'y a ni désaccord ni limitation ; rien ne justifie un refus de certifier.",
+        "Inexact : l'impossibilité de certifier suppose que le CAC n'a pu collecter les éléments nécessaires, ce qui n'est pas le cas.",
+        "Exact : information adéquate en annexe : le CAC certifie sans réserve et signale l'incertitude dans une partie spécifique du rapport."
+      ],
       "explanation": "Les comptes, annexe comprise, donnent une information adéquate : il n'y a ni désaccord ni limitation, donc pas de réserve (option 1) ni de refus (option 2). L'impossibilité de certifier (option 3) suppose que le CAC n'a pu collecter les éléments nécessaires. Le CAC certifie sans réserve et attire l'attention du lecteur sur l'incertitude dans une partie spécifique de son rapport. Si l'information en annexe était insuffisante, il formulerait une réserve ou un refus.",
       "source_ref": "NEP 570 (conséquences sur le rapport) ; NEP 700",
       "estimated_seconds": 60
@@ -771,6 +837,12 @@
       "notion": "cloture-pieges",
       "difficulty": 3,
       "multiple": true,
+      "option_explanations": [
+        "Exact : la liquidation confirme un risque de non-recouvrement déjà présent à l'automne N ; la créance doit être dépréciée en N.",
+        "Inexact : l'incendie de mars N+1 est un fait né après la clôture : information en annexe si significatif, sans ajustement.",
+        "Exact : la vente à perte dans un marché dégradé dès novembre N renseigne sur la valeur nette de réalisation à la clôture.",
+        "Inexact : la baisse découle d'une annonce du 15/01/N+1, fait né après la clôture : pas d'ajustement des comptes de N."
+      ],
       "tags": [
         "événements postérieurs",
         "NEP 560",

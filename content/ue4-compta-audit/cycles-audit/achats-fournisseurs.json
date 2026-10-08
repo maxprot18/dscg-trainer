@@ -63,6 +63,12 @@
       "answer": [
         2
       ],
+      "option_explanations": [
+        "Inexact : la réalité se teste en sens inverse, des écritures comptabilisées vers les pièces justificatives.",
+        "Inexact : ce rapprochement ne démontre pas que la dette incombe bien à l’entité, objet des droits et obligations.",
+        "Exact : partir de bons de réception indépendants de la comptabilité pour vérifier leur enregistrement (401 ou 408) teste l’exhaustivité.",
+        "Inexact : la présentation porte sur le classement des dettes et l’information en annexe, non sur l’enregistrement des réceptions."
+      ],
       "explanation": "Le test part de documents indépendants de la comptabilité (les bons de réception) pour vérifier que chaque réception a bien donné lieu à un enregistrement (facture en 401 ou facture non parvenue en 408) : c’est un test d’exhaustivité des achats et des dettes. La réalité se teste en sens inverse, des écritures vers les pièces. Les droits et obligations portent sur le fait que la dette incombe bien à l’entité, ce que le rapprochement ne démontre pas spécifiquement. La présentation concerne le classement et l’information en annexe.",
       "source_ref": "NEP 500 (assertions relatives aux flux d’opérations et aux soldes) ; compte 408",
       "verified": true,
@@ -89,6 +95,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : partir des bons de réception vers les factures enregistrées teste l’exhaustivité, non la réalité des charges.",
+        "Inexact : confirmer des fournisseurs à solde nul vise l’exhaustivité des dettes, pas des charges fictives enregistrées.",
+        "Inexact : l’examen des décaissements de janvier N+1 recherche des passifs non comptabilisés, donc l’exhaustivité.",
+        "Exact : pour la réalité, on part des factures enregistrées et on cherche la preuve de la commande et de la prestation rendue."
       ],
       "explanation": "Pour la réalité, on part de ce qui est enregistré (les factures comptabilisées en sous-traitance) et on cherche la preuve que la prestation a bien été commandée et rendue : contrat ou bon de commande, bon de réception ou procès-verbal de prestation. Partir des bons de réception vers la comptabilité teste l’exhaustivité. Confirmer des fournisseurs à solde nul vise aussi l’exhaustivité des dettes. L’examen des décaissements postérieurs à la clôture sert à rechercher des passifs non comptabilisés, donc encore l’exhaustivité.",
       "source_ref": "NEP 500 (assertions relatives aux flux d’opérations : réalité)",
@@ -119,6 +131,12 @@
         2
       ],
       "multiple": true,
+      "option_explanations": [
+        "Exact : l’existence fait partie des assertions sur les soldes de fin de période, avec droits et obligations, exhaustivité, évaluation et imputation.",
+        "Inexact : la séparation des exercices est une assertion sur les flux d’opérations (les achats de l’exercice), non sur le solde.",
+        "Exact : l’évaluation et imputation figure parmi les assertions sur les soldes de fin de période selon la NEP 500.",
+        "Inexact : la mesure est une assertion sur les flux d’opérations, pas sur le solde des dettes fournisseurs à la clôture."
+      ],
       "explanation": "Les assertions sur les soldes de fin de période sont : existence, droits et obligations, exhaustivité, évaluation et imputation. Existence et évaluation et imputation sont donc les bonnes réponses. La séparation des exercices et la mesure sont des assertions sur les flux d’opérations (les achats de l’exercice), pas sur le solde des dettes.",
       "source_ref": "NEP 500 (assertions relatives aux soldes des comptes en fin de période et aux flux d’opérations)",
       "verified": true,
@@ -185,6 +203,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : des factures fictives augmenteraient les charges et dégraderaient le ratio, à l’opposé de l’incitation décrite.",
+        "Exact : pour respecter le ratio, l’entité a intérêt à omettre des factures de fin d’exercice, minorant charges et dettes.",
+        "Inexact : un double enregistrement accroîtrait les charges, ce qui va contre l’incitation à présenter un meilleur résultat.",
+        "Inexact : une erreur de conversion au cours historique a un sens qui dépend du cours, sans lien avec l’incitation décrite."
+      ],
       "explanation": "Une entité incitée à présenter un meilleur résultat a intérêt à réduire ses charges : le moyen le plus simple est d’omettre des factures de fin d’exercice ou de sous-estimer les factures non parvenues, ce qui minore à la fois les charges et les dettes. Des factures fictives ou des doubles enregistrements augmenteraient les charges, à l’opposé de l’incitation. La conversion d’une dette en devises au cours historique est une erreur d’évaluation dont le sens dépend de l’évolution du cours ; elle n’est pas liée à l’incitation décrite.",
       "source_ref": "NEP 315 (facteurs de risque d’anomalies significatives) ; NEP 240 (incitations à la fraude)",
       "verified": true,
@@ -211,6 +235,12 @@
       ],
       "answer": [
         2
+      ],
+      "option_explanations": [
+        "Inexact : une hausse de prix de 4 % conforme à l’indice du secteur est explicable et ne signale pas de fraude.",
+        "Inexact : un escompte de 2 % pour paiement comptant est une pratique commerciale normale.",
+        "Exact : fournisseur récent, aucune preuve de livraison et bénéficiaire interne cumulent les signaux d’un faux fournisseur.",
+        "Inexact : des achats à terme de dollars réduisent le risque de change ; ils ne signalent pas une fraude."
       ],
       "explanation": "Un fournisseur récent, sans bon de réception, réglé sur le compte bancaire d’un salarié cumule les signaux d’un faux fournisseur : pas de preuve de livraison et un bénéficiaire interne. Une hausse de prix conforme au marché est explicable. Un escompte pour paiement comptant est une pratique commerciale normale. Des achats en devises couverts par des contrats à terme réduisent le risque de change et ne signalent pas une fraude.",
       "source_ref": "NEP 240 (facteurs de risque de fraude : détournement d’actifs) ; NEP 315",
@@ -342,6 +372,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : le lettrage mensuel intervient après le paiement et ne vérifie pas la réception des marchandises.",
+        "Exact : ce rapprochement préalable au bon à payer est un contrôle préventif qui bloque le règlement de biens jamais reçus.",
+        "Inexact : le contrôle arithmétique vérifie les calculs de la facture, pas la livraison effective des marchandises.",
+        "Inexact : le classement chronologique est une mesure d’organisation sans effet sur le risque de payer des biens non reçus."
+      ],
       "explanation": "Le rapprochement de la facture avec la commande et le bon de réception, préalable au bon à payer, empêche de régler une facture portant sur des biens jamais reçus : c’est un contrôle préventif qui couvre la réalité. Le lettrage mensuel intervient après le paiement et ne vérifie pas la réception. Le contrôle arithmétique vérifie les calculs de la facture, pas la livraison. Le classement chronologique est une mesure d’organisation sans effet sur ce risque.",
       "source_ref": "NEP 315 (compréhension du contrôle interne)",
       "verified": true,
@@ -368,6 +404,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : commander et réceptionner facilite des achats injustifiés, mais les fonds vont à un vrai fournisseur, sauf collusion.",
+        "Inexact : saisir les factures et lettrer est un cumul courant, exposé à l’erreur plus qu’au vol.",
+        "Inexact : établir le budget et analyser les écarts relève du pilotage, sans accès aux fonds.",
+        "Exact : modifier les coordonnées bancaires et préparer les virements permet de rediriger un paiement vers son propre compte."
       ],
       "explanation": "Celui qui peut modifier les coordonnées bancaires d’un fournisseur et préparer les virements peut rediriger un paiement vers son propre compte : c’est le cumul le plus directement exposé au détournement de fonds. Commander et réceptionner facilite des achats injustifiés, mais les fonds vont alors à un vrai fournisseur (sauf collusion). Saisir les factures et lettrer est un cumul courant, à risque d’erreur plus que de vol. Budgéter et analyser les écarts relève du pilotage.",
       "source_ref": "NEP 315 (compréhension du contrôle interne) ; NEP 240 (détournement d’actifs)",
@@ -459,6 +501,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : la marchandise a été reçue le 28/12/N ; la dette existe à la clôture, que la facture soit parvenue ou non.",
+        "Exact : la livraison du 28/12/N crée une dette omise de 12 000 € TTC, à enregistrer en N, en 408 si la facture manque.",
+        "Inexact : le solde confirmé par Antares est exact ; c’est la comptabilité de Castor qui omet la dette.",
+        "Inexact : une charge constatée d’avance réduirait les charges, alors qu’il faut au contraire enregistrer la charge omise."
+      ],
       "explanation": "La marchandise a été reçue le 28/12/N : la dette existe à la clôture, que la facture soit parvenue ou non. L’écart révèle une dette omise de 12 000 € à enregistrer en facture non parvenue (408), avec la charge correspondante. Ce n’est pas un simple décalage sans incidence : un règlement en transit justifierait un écart, pas une livraison non comptabilisée. Demander au fournisseur de corriger son relevé n’a pas de sens, son solde étant exact. Une charge constatée d’avance réduirait les charges, à l’inverse de ce qui est requis.",
       "source_ref": "NEP 505 (confirmations externes : exploitation des réponses) ; NEP 330 ; compte 408",
       "verified": true,
@@ -485,6 +533,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : l’achat a été enregistré en N alors que le stock final ne le compense pas ; le résultat est donc affecté.",
+        "Inexact : un résultat surévalué correspondrait au cas inverse, un bien inventorié dont la facture n’est pas enregistrée.",
+        "Inexact : la charge d’achat de N est surévaluée, ce qui réduit le résultat ; l’anomalie dépasse la présentation.",
+        "Exact : réception en N+1 mais achat enregistré en N, stock exclu : charge et dette surévaluées, résultat N sous-évalué."
       ],
       "explanation": "La facture a été enregistrée en achats N alors que la réception date de N+1 : la charge N et la dette au 31/12/N sont surévaluées. La marchandise, absente à la clôture, a été correctement exclue de l’inventaire, donc le stock final ne compense pas l’achat : le résultat N est sous-évalué du montant HT de l’achat. L’anomalie relève de la séparation des exercices (et de l’existence de la dette). Prétendre à une absence d’incidence oublie que l’achat a été enregistré ; un résultat surévalué correspondrait au cas inverse (bien inventorié sans facture enregistrée).",
       "source_ref": "NEP 500 (séparation des exercices, existence) ; NEP 330 ; PCG compte 603 (variation des stocks)",
@@ -672,6 +726,12 @@
       "answer": [
         1
       ],
+      "option_explanations": [
+        "Inexact : la compensation avec les autres fournisseurs viole le principe de non-compensation et minore l’actif et le passif.",
+        "Exact : l’acompte versé est une créance sur le fournisseur, présentée à l’actif au compte 4091, sans compensation.",
+        "Inexact : laisser l’acompte au passif pour un montant négatif revient à une compensation interdite.",
+        "Inexact : tant que la livraison n’est pas intervenue, l’acompte est une créance, non une charge de l’exercice."
+      ],
       "explanation": "Un acompte versé est une créance sur le fournisseur : il se présente à l’actif (compte 4091), sans compensation avec les dettes envers les autres fournisseurs, conformément au principe de non-compensation. Le compenser minorerait à la fois l’actif et le passif. Le laisser au passif en négatif revient au même. Le passer en charge serait faux tant que la livraison n’est pas intervenue.",
       "source_ref": "PCG compte 4091 (fournisseurs – avances et acomptes versés sur commandes) ; C. com. art. L. 123-19 (non-compensation)",
       "verified": true,
@@ -698,6 +758,12 @@
       ],
       "answer": [
         3
+      ],
+      "option_explanations": [
+        "Inexact : cette option confond date de paiement et date du service rendu ; la consommation de décembre est une charge de N.",
+        "Inexact : une charge constatée d’avance vise une charge comptabilisée en N pour un service de N+1, l’inverse de la situation.",
+        "Inexact : le caractère récurrent d’une charge n’exonère pas de la séparation des exercices.",
+        "Exact : onze factures pour douze mois révèlent l’omission de décembre N, à enregistrer en facture non parvenue."
       ],
       "explanation": "Onze factures pour douze mois de consommation signalent une facture manquante, très probablement celle de décembre N, facturée en N+1. La consommation de décembre est une charge de N : il faut une facture non parvenue. Rattacher la facture à N+1 parce qu’elle est payée en janvier confond la date de paiement et la date du service rendu. Une charge constatée d’avance concerne une charge comptabilisée en N pour un service de N+1, l’inverse de la situation. Le caractère récurrent de la charge n’exonère pas de la séparation des exercices.",
       "source_ref": "NEP 520 (procédures analytiques) ; PCG compte 408 ; NEP 500 (séparation des exercices)",
