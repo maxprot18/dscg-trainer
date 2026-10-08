@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom'
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { TYPE_LABELS } from '@/content/labels'
-import { taxonomy, useExercises } from '@/content/load'
+import { exerciseHeadline, TYPE_LABELS } from '@/content/labels'
+import { taxonomy, useExercise, useExercises } from '@/content/load'
+import { buildTaxonomyIndex } from '@/content/taxonomy'
 import type { Exercise } from '@/content/schema'
 import type { SessionMode } from '@/db/db'
-import { useProgress, type ProgressData } from '@/db/progress'
+import { useMarks, useProgress, type ProgressData } from '@/db/progress'
 import { sessionSearch } from '@/engine/sessionConfig'
 import {
   activeDays,
@@ -87,6 +88,7 @@ export function ProgressView({ progress, now: nowProp }: { progress: ProgressDat
         </Button>
       )}
       <PredictedGrades progress={progress} />
+      <Bookmarks />
       <WeeklyChart progress={progress} now={now} />
       <Heatmap ues={ues} />
       <ByUe ues={ues} now={now} />
@@ -94,6 +96,52 @@ export function ProgressView({ progress, now: nowProp }: { progress: ProgressDat
       <History progress={progress} />
       <BackupCard />
     </div>
+  )
+}
+
+const taxonomyIndex = buildTaxonomyIndex(taxonomy)
+
+/** Exercices et fiches marqués « À revoir plus tard ». */
+function Bookmarks() {
+  const marks = useMarks('bookmark')
+  if (!marks || marks.size === 0) return null
+  const targets = [...marks].sort()
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>À revoir plus tard</CardTitle>
+        <CardDescription>Les exercices et fiches que vous avez marqués.</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <ul className="flex flex-col gap-1 text-sm">
+          {targets.map((target) => (
+            <li key={target}>
+              {target.startsWith('notion:') ? <BookmarkedSheet notion={target.slice('notion:'.length)} /> : <BookmarkedExercise id={target} />}
+            </li>
+          ))}
+        </ul>
+      </CardContent>
+    </Card>
+  )
+}
+
+function BookmarkedSheet({ notion }: { notion: string }) {
+  const entry = taxonomyIndex.notions.get(notion)
+  return (
+    <Link to={`/cours/${notion}`} className="text-primary flex min-h-9 items-center gap-2 underline-offset-2 hover:underline">
+      <span className="text-muted-foreground text-xs">Fiche</span> {entry?.notion.title ?? notion}
+    </Link>
+  )
+}
+
+function BookmarkedExercise({ id }: { id: string }) {
+  const exercise = useExercise(id)
+  if (exercise === null) return null
+  return (
+    <Link to={`/exercice/${id}`} className="text-primary flex min-h-9 items-center gap-2 underline-offset-2 hover:underline">
+      <span className="text-muted-foreground text-xs">{exercise ? exercise.ue : 'Exercice'}</span>
+      <span className="line-clamp-1">{exercise ? exerciseHeadline(exercise) : id}</span>
+    </Link>
   )
 }
 

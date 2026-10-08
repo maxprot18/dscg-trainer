@@ -68,9 +68,9 @@ export function ExamSummary({
                   {!result ? (
                     <CircleMinus className="text-muted-foreground mt-0.5 size-4 shrink-0" aria-label="non traité" />
                   ) : result.correct ? (
-                    <CircleCheck className="mt-0.5 size-4 shrink-0 text-emerald-700" aria-label="réussi" />
+                    <CircleCheck className="mt-0.5 size-4 shrink-0 text-emerald-700 dark:text-emerald-400" aria-label="réussi" />
                   ) : (
-                    <CircleX className="mt-0.5 size-4 shrink-0 text-red-700" aria-label="à revoir" />
+                    <CircleX className="mt-0.5 size-4 shrink-0 text-red-700 dark:text-red-400" aria-label="à revoir" />
                   )}
                   <span className="flex-1">
                     <span className="block">

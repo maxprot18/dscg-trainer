@@ -45,6 +45,19 @@ describe('écran Progression', () => {
   // sinon les imports des fichiers UE se terminent après la destruction de l'environnement.
   afterAll(() => loadExercises())
 
+  it('liste les fiches marquées « À revoir plus tard » et la note prévisionnelle', async () => {
+    await db.marks.add({ kind: 'bookmark', target: `notion:${n1}`, date: NOW })
+    renderView({
+      ...data,
+      sessions: [...data.sessions, { id: 2, mode: 'exam', scope: 'UE4', startedAt: NOW - 1000, endedAt: NOW, exerciseIds: [], grade: 12.5 }],
+    })
+    expect(await screen.findByText('À revoir plus tard')).toBeInTheDocument()
+    const card = screen.getByText('À revoir plus tard').closest('[data-slot="card"]') as HTMLElement
+    expect(within(card).getByRole('link', { name: new RegExp(`Fiche ${taxonomy.ues[3].themes[0].notions[0].title.slice(0, 15)}`) })).toBeInTheDocument()
+    expect(screen.getByText('12,5 / 20')).toBeInTheDocument()
+    await db.marks.clear()
+  })
+
   it('chiffres clés, carte du programme, réussite par notion et historique', () => {
     renderView(data)
     expect(screen.getByText('7')).toBeInTheDocument() // exercices faits

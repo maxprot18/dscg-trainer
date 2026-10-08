@@ -297,6 +297,7 @@ function SessionRunner({
         elapsedSeconds={elapsed}
         timedOut={limit !== null && elapsed >= limit}
         onRestart={() => navigate(`/session${sessionSearch({ ...config, seed: newSeed() })}`)}
+        answers={answers}
       />
     )
   }
