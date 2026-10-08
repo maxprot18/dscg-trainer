@@ -147,6 +147,11 @@ export function hasCourse(notionId: string): boolean {
   return coursePath(notionId) in courseFiles
 }
 
+/** Date de dernière révision d'une fiche (AAAA-MM-JJ), ou `undefined` si elle n'est pas connue. */
+export function courseReviewDate(notionId: string): string | undefined {
+  return __COURSE_DATES__[notionId]
+}
+
 /** Fiche de cours (Markdown) d'une notion, ou `null` si elle n'existe pas encore. */
 export async function loadCourse(notionId: string): Promise<string | null> {
   const load = courseFiles[coursePath(notionId)]

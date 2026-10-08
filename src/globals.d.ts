@@ -6,6 +6,9 @@ declare const __APP_VERSION__: string
  */
 declare const __EXERCISE_COUNTS__: Readonly<Record<string, number>>
 
+/** Date de dernière révision de chaque fiche (`{ id de notion: AAAA-MM-JJ }`, build/courseDates.ts). */
+declare const __COURSE_DATES__: Readonly<Record<string, string>>
+
 /** Index des exercices publiés : fichier de contenu de chaque exercice (build/exerciseIndex.ts). */
 declare module 'virtual:exercise-index' {
   const index: {

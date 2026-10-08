@@ -9,6 +9,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 import pkg from './package.json' with { type: 'json' }
 import { contentSecurityPolicy } from './build/contentSecurityPolicy.ts'
+import { courseDates } from './build/courseDates.ts'
 import { exerciseIndex } from './build/exerciseIndex.ts'
 import { stripUnverified } from './build/stripUnverified.ts'
 
@@ -42,6 +43,7 @@ export default defineConfig({
   define: {
     __APP_VERSION__: JSON.stringify(pkg.version),
     __EXERCISE_COUNTS__: JSON.stringify(countVerifiedExercises(fileURLToPath(new URL('./content', import.meta.url)))),
+    __COURSE_DATES__: JSON.stringify(courseDates(fileURLToPath(new URL('.', import.meta.url)))),
   },
   plugins: [
     stripUnverified(),

@@ -9,7 +9,7 @@ import { UeBadge } from '@/components/UeBadge'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { courseSections } from '@/content/courseSheet'
-import { exerciseCount, loadCourse, taxonomy } from '@/content/load'
+import { courseReviewDate, exerciseCount, loadCourse, taxonomy } from '@/content/load'
 import { buildTaxonomyIndex } from '@/content/taxonomy'
 import { setMark } from '@/db/db'
 import { useMarks } from '@/db/progress'
@@ -58,6 +58,7 @@ export function CoursePage() {
   }
 
   const count = exerciseCount(`notion:${notionId}`)
+  const reviewed = courseReviewDate(notionId)
   const train = () =>
     navigate(
       `/session${sessionSearch({
@@ -94,6 +95,12 @@ export function CoursePage() {
             <article className="min-h-[70vh]">
               <CourseSheet source={text} nav />
             </article>
+            {reviewed && (
+              <p className="text-muted-foreground text-xs">
+                Dernière révision le <time dateTime={reviewed}>{formatReviewDate(reviewed)}</time>, sur les textes en vigueur à
+                cette date.
+              </p>
+            )}
             <div className="no-print flex flex-wrap items-center gap-2">
               <BookmarkButton target={`notion:${notionId}`} />
               <ReportLink href={courseIssueUrl(notionId, entry.notion.title)} label="Signaler une erreur dans cette fiche" />
@@ -160,4 +167,8 @@ export function CoursePage() {
       </aside>
     </div>
   )
+}
+
+function formatReviewDate(iso: string): string {
+  return new Date(`${iso}T12:00:00`).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })
 }
