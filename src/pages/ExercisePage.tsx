@@ -5,7 +5,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom'
 import { ExercisePlayer } from '@/components/exercise/ExercisePlayer'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import { taxonomy, useExercises } from '@/content/load'
+import { taxonomy, useExercise } from '@/content/load'
 import { buildTaxonomyIndex } from '@/content/taxonomy'
 import { recordAttempt } from '@/engine/recorder'
 import { newSeed, sessionSearch } from '@/engine/sessionConfig'
@@ -15,13 +15,12 @@ const index = buildTaxonomyIndex(taxonomy)
 /** Un exercice seul (ouvert depuis la recherche) ; la tentative est enregistrée hors session. */
 export function ExercisePage() {
   const { exerciseId = '' } = useParams()
-  const exercises = useExercises()
+  const exercise = useExercise(exerciseId)
   const navigate = useNavigate()
   const [startedAt] = useState(() => Date.now())
   const recorded = useRef(false)
 
-  if (!exercises) return <p className="text-muted-foreground">Chargement des exercices…</p>
-  const exercise = exercises.find((e) => e.id === exerciseId)
+  if (exercise === undefined) return <p className="text-muted-foreground">Chargement de l’exercice…</p>
   if (!exercise) {
     return (
       <div className="flex flex-col gap-4">

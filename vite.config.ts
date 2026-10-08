@@ -9,6 +9,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 import pkg from './package.json' with { type: 'json' }
 import { contentSecurityPolicy } from './build/contentSecurityPolicy.ts'
+import { exerciseIndex } from './build/exerciseIndex.ts'
 import { stripUnverified } from './build/stripUnverified.ts'
 
 /**
@@ -43,6 +44,7 @@ export default defineConfig({
   plugins: [
     stripUnverified(),
     contentSecurityPolicy(),
+    exerciseIndex(fileURLToPath(new URL('.', import.meta.url))),
     react(),
     tailwindcss(),
     VitePWA({

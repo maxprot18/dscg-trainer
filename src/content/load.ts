@@ -31,29 +31,51 @@ export const examDurations = Object.fromEntries(
   taxonomy.ues.map((ue) => [ue.id, ue.exam.duration_minutes]),
 ) as unknown as ExamDurations
 
-type Modules = Record<string, unknown>
+/**
+ * Fichiers de contenu : un fichier JS par fichier JSON, chargé à la demande et mis en cache par le service
+ * worker. Une page ne charge que ce dont elle a besoin (une UE pour une session ciblée, un seul fichier
+ * pour la page d'un exercice grâce à l'index `virtual:exercise-index`).
+ */
+const contentFiles = import.meta.glob<unknown>(['/content/**/*.json', '!/content/taxonomy.json', '!/content/oral/**'], {
+  import: 'default',
+})
+const ueDirs = Object.fromEntries(taxonomy.ues.map((ue) => [ue.id, `/content/${ue.slug}/`])) as Record<UeId, string>
 
-const bundles: Record<UeId, () => Promise<{ default: Modules }>> = {
-  UE1: () => import('./bundles/ue1'),
-  UE2: () => import('./bundles/ue2'),
-  UE3: () => import('./bundles/ue3'),
-  UE4: () => import('./bundles/ue4'),
-  UE5: () => import('./bundles/ue5'),
-  UE6: () => import('./bundles/ue6'),
+let parser: Promise<typeof import('./parse')> | null = null
+const fileCache = new Map<string, Promise<Exercise[]>>()
+
+function loadFile(path: string): Promise<Exercise[]> {
+  let pending = fileCache.get(path)
+  if (!pending) {
+    parser ??= import('./parse')
+    pending = Promise.all([parser, contentFiles[path]()]).then(([{ parseExercises }, data]) =>
+      parseExercises({ [path]: data }, import.meta.env.DEV),
+    )
+    fileCache.set(path, pending)
+  }
+  return pending
 }
 
-let cache: Promise<Exercise[]> | null = null
+let allCache: Promise<Exercise[]> | null = null
 let loaded: Exercise[] | null = null
 
-/** Tous les exercices servis (chargés une seule fois). */
-export function loadExercises(): Promise<Exercise[]> {
-  cache ??= Promise.all([import('./parse'), ...Object.values(bundles).map((load) => load())]).then(
-    ([{ parseExercises }, ...mods]) => {
-      loaded = mods.flatMap((m) => parseExercises(m.default, import.meta.env.DEV))
-      return loaded
-    },
-  )
-  return cache
+/** Exercices servis, de toutes les UE ou des seules UE demandées (chargés une seule fois par fichier). */
+export function loadExercises(ues?: readonly UeId[]): Promise<Exercise[]> {
+  if (!ues) {
+    allCache ??= Promise.all(Object.keys(contentFiles).map(loadFile)).then((lists) => (loaded = lists.flat()))
+    return allCache
+  }
+  const paths = Object.keys(contentFiles).filter((path) => ues.some((ue) => path.startsWith(ueDirs[ue])))
+  return Promise.all(paths.map(loadFile)).then((lists) => lists.flat())
+}
+
+/** Un exercice par son id, en ne chargeant que le fichier qui le contient ; `null` s'il n'existe pas. */
+export async function loadExercise(id: string): Promise<Exercise | null> {
+  if (loaded) return loaded.find((e) => e.id === id) ?? null
+  const { default: index } = await import('virtual:exercise-index')
+  const file = index.ids[id]
+  if (file === undefined) return null
+  return (await loadFile(index.files[file])).find((e) => e.id === id) ?? null
 }
 
 /** Exercices servis, ou `null` pendant le premier chargement. `enabled: false` n'en charge aucun. */
@@ -68,6 +90,19 @@ export function useExercises(enabled = true): Exercise[] | null {
     }
   }, [exercises, enabled])
   return exercises
+}
+
+/** Un exercice : `undefined` pendant le chargement, `null` s'il n'existe pas. */
+export function useExercise(id: string): Exercise | null | undefined {
+  const [state, setState] = useState<{ id: string; exercise: Exercise | null } | null>(null)
+  useEffect(() => {
+    let alive = true
+    void loadExercise(id).then((exercise) => alive && setState({ id, exercise }))
+    return () => {
+      alive = false
+    }
+  }, [id])
+  return state?.id === id ? state.exercise : undefined
 }
 
 const courseFiles = import.meta.glob<string>('/content/courses/*.md', { query: '?raw', import: 'default' })
