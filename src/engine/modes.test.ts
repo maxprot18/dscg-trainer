@@ -12,6 +12,7 @@ import {
   examGrade,
   SMART_PER_NOTION,
   smartNotionOrder,
+  targetDifficulty,
 } from './session'
 import { buildSession, parseSessionSearch, sessionSearch, timeLimit, type ExamDurations } from './sessionConfig'
 import { DAY_MS } from './srs'
@@ -64,6 +65,23 @@ describe('révision intelligente', () => {
     expect(n2).toEqual(expect.arrayContaining(['n2-2', 'n2-4']))
     for (const n of new Set(s.map((e) => e.notion))) expect(s.filter((e) => e.notion === n).length).toBeLessThanOrEqual(SMART_PER_NOTION)
     expect(buildSmartSession(pool, { attempts, reviews: [] }, T0, 7, 20)).toHaveLength(18)
+  })
+
+  it('difficulté adaptative : le niveau visé monte avec la réussite récente sur la notion', () => {
+    const tries = (results: boolean[]) => results.map((ok, i) => attempt(`x${i}`, 'n', ok, T0 + i))
+    expect(targetDifficulty([])).toBe(1)
+    expect(targetDifficulty(tries([false, false, true]))).toBe(1)
+    expect(targetDifficulty(tries([true, false, true]))).toBe(2)
+    // Seules les 5 dernières tentatives comptent.
+    expect(targetDifficulty(tries([false, false, false, true, true, true, true, true]))).toBe(3)
+
+    // Notion nouvelle : les exercices de niveau 1 d'abord ; notion bien réussie : niveau 3 d'abord.
+    const levels = [1, 2, 3, 1, 2, 3].map((d, i) => ex(`m${i}`, { notion: 'm', difficulty: d as 1 | 2 | 3 }))
+    const fresh = buildSmartSession(levels, { attempts: [], reviews: [] }, T0, 5)
+    expect(fresh.map((e) => e.difficulty).sort()).toEqual([1, 1, 2])
+    const strong = Array.from({ length: 5 }, (_, i) => attempt(`old${i}`, 'm', true, T0 - DAY_MS + i))
+    const advanced = buildSmartSession(levels, { attempts: strong, reviews: [review('m', T0 - 1)] }, T0, 5)
+    expect(advanced.map((e) => e.difficulty).sort()).toEqual([2, 3, 3])
   })
 
   it('déterministe pour une graine et un historique donnés', () => {
