@@ -39,7 +39,10 @@ export const examDurations = Object.fromEntries(
 const contentFiles = import.meta.glob<unknown>(['/content/**/*.json', '!/content/taxonomy.json', '!/content/oral/**'], {
   import: 'default',
 })
-const ueDirs = Object.fromEntries(taxonomy.ues.map((ue) => [ue.id, `/content/${ue.slug}/`])) as Record<UeId, string>
+/** Chemins de tous les fichiers de contenu (`/content/<slug>/<thème>/<notion>.json`). */
+export const contentPaths: readonly string[] = Object.keys(contentFiles)
+/** Dossier de chaque UE sous /content. */
+export const ueSlugs = Object.fromEntries(taxonomy.ues.map((ue) => [ue.id, ue.slug])) as Record<UeId, string>
 
 let parser: Promise<typeof import('./parse')> | null = null
 const fileCache = new Map<string, Promise<Exercise[]>>()
@@ -62,11 +65,15 @@ let loaded: Exercise[] | null = null
 /** Exercices servis, de toutes les UE ou des seules UE demandées (chargés une seule fois par fichier). */
 export function loadExercises(ues?: readonly UeId[]): Promise<Exercise[]> {
   if (!ues) {
-    allCache ??= Promise.all(Object.keys(contentFiles).map(loadFile)).then((lists) => (loaded = lists.flat()))
+    allCache ??= Promise.all(contentPaths.map(loadFile)).then((lists) => (loaded = lists.flat()))
     return allCache
   }
-  const paths = Object.keys(contentFiles).filter((path) => ues.some((ue) => path.startsWith(ueDirs[ue])))
-  return Promise.all(paths.map(loadFile)).then((lists) => lists.flat())
+  return loadExerciseFiles(contentPaths.filter((path) => ues.some((ue) => path.startsWith(`/content/${ueSlugs[ue]}/`))))
+}
+
+/** Exercices servis des seuls fichiers indiqués (chemins de `contentPaths`). */
+export function loadExerciseFiles(paths: readonly string[]): Promise<Exercise[]> {
+  return Promise.all(paths.filter((p) => p in contentFiles).map(loadFile)).then((lists) => lists.flat())
 }
 
 type ExerciseIndex = typeof import('virtual:exercise-index').default
@@ -101,21 +108,26 @@ export function useExercises(enabled = true): Exercise[] | null {
   return exercises
 }
 
-/** Exercices des seules UE indiquées (toutes si `undefined`), ou `null` pendant leur chargement. */
-export function useUeExercises(ues: readonly UeId[] | undefined): Exercise[] | null {
-  const key = ues?.join(',') ?? '*'
+/** Exercices des seuls fichiers indiqués (tous si `undefined`), ou `null` pendant leur chargement. */
+export function useExerciseFiles(paths: readonly string[] | undefined): Exercise[] | null {
+  const key = paths?.join('|') ?? '*'
   const [state, setState] = useState<{ key: string; exercises: Exercise[] } | null>(() =>
-    loaded && !ues ? { key, exercises: loaded } : null,
+    loaded && !paths ? { key, exercises: loaded } : null,
   )
   useEffect(() => {
     let alive = true
-    const list = key === '*' ? undefined : (key.split(',') as UeId[])
-    void loadExercises(list).then((exercises) => alive && setState({ key, exercises }))
+    const pending = key === '*' ? loadExercises() : loadExerciseFiles(key.split('|'))
+    void pending.then((exercises) => alive && setState({ key, exercises }))
     return () => {
       alive = false
     }
   }, [key])
   return state?.key === key ? state.exercises : null
+}
+
+/** Exercices des seules UE indiquées, ou `null` pendant leur chargement. */
+export function useUeExercises(ues: readonly UeId[]): Exercise[] | null {
+  return useExerciseFiles(contentPaths.filter((path) => ues.some((ue) => path.startsWith(`/content/${ueSlugs[ue]}/`))))
 }
 
 /** Index des exercices publiés, ou `null` pendant son chargement. */

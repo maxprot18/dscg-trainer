@@ -212,6 +212,11 @@ export function validateContent(contentDir: string | URL, opts: ValidateOptions)
       if (ue && topDir !== ue.slug) {
         errors.push(`${where} : un exercice ${ex.ue} doit être rangé sous content/${ue.slug}/ (fichier : content/${relPath})`)
       }
+      // Les sessions par thème ne chargent que content/<slug>/<thème>/ et les fichiers à la racine de l'UE.
+      const folders = relPath.split('/')
+      if (ue && topDir === ue.slug && folders.length > 2 && folders[1] !== ex.theme) {
+        warnings.push(`${where} : rangé hors du dossier de son thème (content/${ue.slug}/${ex.theme}/) : les sessions par thème ne le verront pas`)
+      }
 
       if (ex.type === 'audit_case') {
         const group = index.notions.get(ex.notion)?.notion.group

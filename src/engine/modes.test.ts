@@ -14,7 +14,15 @@ import {
   smartNotionOrder,
   targetDifficulty,
 } from './session'
-import { buildSession, parseSessionSearch, sessionSearch, timeLimit, type ExamDurations } from './sessionConfig'
+import {
+  buildSession,
+  parseSessionSearch,
+  QUICK_SESSION_FILES,
+  sessionFiles,
+  sessionSearch,
+  timeLimit,
+  type ExamDurations,
+} from './sessionConfig'
 import { DAY_MS } from './srs'
 
 const mcq = exerciseSchema.parse(exampleExercises.mcq)
@@ -261,4 +269,39 @@ describe('sujet complet', () => {
   function pool6() {
     return Array.from({ length: 6 }, (_, i) => ex(`q${i}`, { estimated_seconds: 120 }))
   }
+})
+
+describe('fichiers chargés par une session', () => {
+  const slugs = { UE1: 'ue1-j', UE2: 'ue2-f', UE3: 'ue3-m', UE4: 'ue4-c', UE5: 'ue5-s', UE6: 'ue6-e' } as const
+  const paths = [
+    '/content/ue4-c/ifrs/ias-16.json',
+    '/content/ue4-c/ifrs/ias-36.json',
+    '/content/ue4-c/consolidation/perimetre.json',
+    '/content/ue4-c/sujets-examen.json',
+    '/content/ue4-c/sujets-examen-2.json',
+    '/content/ue2-f/van.json',
+    ...Array.from({ length: 30 }, (_, i) => `/content/ue1-j/t${i}/n.json`),
+  ]
+  const files = (config: Parameters<typeof sessionFiles>[0]) => sessionFiles(config, paths, slugs)
+
+  it('thème : son dossier et les fichiers à la racine de l’UE ; examen : toute l’UE', () => {
+    expect(files({ mode: 'theme', seed: 1, scope: { ue: 'UE4', theme: 'ifrs' } })).toEqual([
+      '/content/ue4-c/ifrs/ias-16.json',
+      '/content/ue4-c/ifrs/ias-36.json',
+      '/content/ue4-c/sujets-examen.json',
+      '/content/ue4-c/sujets-examen-2.json',
+    ])
+    expect(files({ mode: 'full', seed: 1, ue: 'UE4' })).toHaveLength(5)
+    expect(files({ mode: 'theme', seed: 1, scope: { ue: 'UE2' } })).toEqual(['/content/ue2-f/van.json'])
+  })
+
+  it('session rapide : quelques fichiers tirés avec la graine, sans sujets d’examen ; sinon tout', () => {
+    const quick = files({ mode: 'quick', seed: 9 })!
+    expect(quick).toHaveLength(QUICK_SESSION_FILES)
+    expect(quick.some((p) => p.includes('sujets-examen'))).toBe(false)
+    expect(files({ mode: 'quick', seed: 9 })).toEqual(quick)
+    expect(files({ mode: 'smart', seed: 9 })).toBeUndefined()
+    expect(files({ mode: 'errors', seed: 9 })).toBeUndefined()
+    expect(files({ mode: 'smart', seed: 9, ues: ['UE2'] })).toEqual(['/content/ue2-f/van.json'])
+  })
 })

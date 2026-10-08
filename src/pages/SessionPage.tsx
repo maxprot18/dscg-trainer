@@ -8,7 +8,7 @@ import { ExamSummary } from '@/components/exercise/ExamSummary'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Progress } from '@/components/ui/progress'
-import { examDurations, useUeExercises } from '@/content/load'
+import { contentPaths, examDurations, ueSlugs, useExerciseFiles } from '@/content/load'
 import type { Exercise } from '@/content/schema'
 import type { Attempt } from '@/db/db'
 import { loadProgress } from '@/db/progress'
@@ -24,7 +24,7 @@ import {
   parseSessionSearch,
   sessionScope,
   sessionSearch,
-  sessionUes,
+  sessionFiles,
   timeLimit,
   type SessionConfig,
 } from '@/engine/sessionConfig'
@@ -51,9 +51,10 @@ export function SessionPage({ pool }: { pool?: readonly Exercise[] }) {
   return pool ? <SessionLoader config={config} pool={pool} /> : <ContentLoader config={config} />
 }
 
-/** Charge le contenu des seules UE utiles à la session (toutes pour une session rapide). */
+/** Charge les seuls fichiers de contenu utiles à la session (`sessionFiles`). */
 function ContentLoader({ config }: { config: SessionConfig }) {
-  const pool = useUeExercises(sessionUes(config))
+  const files = useMemo(() => sessionFiles(config, contentPaths, ueSlugs), [config])
+  const pool = useExerciseFiles(files)
   if (!pool) return <p className="text-muted-foreground">Chargement des exercices…</p>
   return <SessionLoader config={config} pool={pool} />
 }

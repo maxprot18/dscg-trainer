@@ -16,6 +16,8 @@ import {
   buildSmartSession,
   buildThemeSession,
   QUICK_SESSION_SECONDS,
+  seededRandom,
+  shuffle,
   type ProgressSnapshot,
   type ThemeScope,
 } from './session'
@@ -91,23 +93,45 @@ export function isExamMode(config: SessionConfig): config is Extract<SessionConf
   return config.mode === 'exam' || config.mode === 'full'
 }
 
-/** UE dont le contenu suffit pour construire la session (toutes si `undefined`). */
-export function sessionUes(config: SessionConfig): UeId[] | undefined {
+/** Nombre de fichiers de contenu tirés au sort pour une session rapide (≈ 60 à 80 exercices). */
+export const QUICK_SESSION_FILES = 12
+
+/**
+ * Fichiers de contenu (chemins `/content/…`) qui suffisent pour construire la session, ou `undefined` s'il
+ * les faut tous (révision intelligente et erreurs sur toutes les UE). Une page de session ne charge ainsi
+ * que le nécessaire : le dossier du thème (plus les fichiers à la racine de l'UE), les fichiers de l'UE, ou,
+ * pour une session rapide, quelques fichiers tirés au sort avec la graine (même série au rechargement).
+ */
+export function sessionFiles(
+  config: SessionConfig,
+  paths: readonly string[],
+  slugs: Readonly<Record<UeId, string>>,
+): string[] | undefined {
+  const ueFiles = (ue: UeId) => paths.filter((p) => p.startsWith(`/content/${slugs[ue]}/`))
+  const themeFiles = (scope: ThemeScope) => {
+    const files = ueFiles(scope.ue)
+    if (!scope.theme) return files
+    const dir = `/content/${slugs[scope.ue]}/${scope.theme}/`
+    return files.filter((p) => p.startsWith(dir) || p.split('/').length === 4)
+  }
   switch (config.mode) {
     case 'theme':
-      return [config.scope.ue]
+      return themeFiles(config.scope)
     case 'cards':
-      return config.scope ? [config.scope.ue] : undefined
+      return config.scope ? themeFiles(config.scope) : undefined
     case 'smart':
-      return config.ues?.length ? config.ues : undefined
+      return config.ues?.length ? config.ues.flatMap(ueFiles) : undefined
     case 'errors':
-      return config.ue ? [config.ue] : undefined
+      return config.ue ? ueFiles(config.ue) : undefined
     case 'exam':
     case 'full':
     case 'diagnostic':
-      return [config.ue]
+      return ueFiles(config.ue)
     case 'quick':
-      return undefined
+      return shuffle(
+        paths.filter((p) => !/\/sujets-examen[^/]*\.json$/.test(p)),
+        seededRandom(config.seed),
+      ).slice(0, QUICK_SESSION_FILES)
   }
 }
 
