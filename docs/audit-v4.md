@@ -153,3 +153,12 @@ Les quatre durcissements de l'audit v3 sont faits :
 4. **Échéances 2027** : renuméroter la TVA dans le CIBS, intégrer la loi de finances 2027 et la transposition d'Omnibus I, revoir les cas ESRS quand les normes révisées seront publiées.
 5. **Contenu** : explication par option des 228 QCM posés dans les cas, sujets d'oral supplémentaires (20 aujourd'hui).
 6. **Si vente** : relecture par un professionnel, comptes, synchronisation et paiement, avec un audit de sécurité dédié (`docs/audit-v2.md` § 5).
+
+## 9. Suites traitées en 1.5.1 et 1.6.0
+
+- **Mises à jour de l'application** (1.5.1) : une application installée gardait l'ancienne version ; détection au retour au premier plan et toutes les heures, bouton dans les réglages.
+- **§ 4, point 1, vrai mode épreuve** : fait (navigation libre, questions dans l'ordre voulu, annexes à côté des questions, alertes de fin).
+- **§ 4, points 2 et 3, accueil et S'entraîner** : faits (action principale unique, objectif unique, quatre groupes, deux colonnes).
+- **§ 4, point 4, lecture sur grand écran** : largeur limitée pour les exercices ; navigation latérale non faite.
+- **§ 8, point 2 (dossiers) et point 5 (explications des QCM des cas)** : faits (30 sujets type, 256 QCM des cas expliqués).
+- **Restent** : programme officiel, saisie d'écriture sur mobile, carte du programme cliquable, accessibilité de fond, échéances 2027, migrations majeures.
