@@ -138,9 +138,11 @@ describe('ExercisePlayer', () => {
       </MemoryRouter>,
     )
     const user = userEvent.setup()
+    // En examen, toutes les questions du cas sont affichées d'emblée et se traitent dans n'importe quel ordre.
+    expect(screen.getByText(/Question 4\/4/)).toBeInTheDocument()
     await user.click(screen.getAllByRole('radio')[0])
-    await user.click(screen.getByRole('button', { name: 'Valider' }))
-    // Seul le bouton de la question suivante reste : celui de la réponse enregistrée est masqué.
+    await user.click(screen.getAllByRole('button', { name: 'Valider' })[0])
+    // Le bouton de la réponse enregistrée est masqué : reste celui du calcul.
     expect(screen.getAllByRole('button', { name: 'Valider' })).toHaveLength(1)
     await user.type(screen.getByLabelText('Votre réponse'), '20000{Enter}')
     await user.type(screen.getByLabelText('Compte ligne 1'), '68112')

@@ -1,4 +1,4 @@
-import { render, screen, waitFor } from '@testing-library/react'
+import { render, screen, waitFor, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { MemoryRouter, Route, Routes } from 'react-router-dom'
 
@@ -42,7 +42,7 @@ describe('SessionPage', () => {
         await user.click(screen.getByRole('button', { name: /Faux/ }))
       }
       expect(screen.queryByText('Bonne réponse')).not.toBeInTheDocument()
-      await user.click(screen.getByRole('button', { name: /Suivant|Voir le bilan/ }))
+      await user.click(screen.getByRole('button', { name: /Suivant|Terminer l’épreuve/ }))
     }
     expect(screen.getByRole('heading', { name: /Examen blanc UE4/ })).toBeInTheDocument()
     expect(screen.getByText(/Note : 20(,00)? \/ 20/)).toBeInTheDocument()
@@ -166,7 +166,7 @@ describe('SessionPage', () => {
     )
     await screen.findByText(/Question 1\/4/)
     await user.click(screen.getAllByRole('radio')[0])
-    await user.click(screen.getByRole('button', { name: 'Valider' }))
+    await user.click(screen.getAllByRole('button', { name: 'Valider' })[0])
     // Réponse verrouillée : plus de bouton de validation, aucune correction.
     expect(screen.queryByText('Bonne réponse')).not.toBeInTheDocument()
     await user.click(screen.getByRole('button', { name: 'Terminer la session' }))
@@ -174,6 +174,34 @@ describe('SessionPage', () => {
     expect(screen.queryByText(/Note : 0(,00)? \/ 20/)).not.toBeInTheDocument()
     await waitFor(async () => expect(await db.attempts.count()).toBe(1))
     vi.restoreAllMocks()
+  })
+
+  it('examen : navigation libre entre les exercices, réponse enregistrée retrouvée verrouillée', async () => {
+    const user = userEvent.setup()
+    renderAt('/session?mode=exam&seed=1&ue=UE4')
+    await screen.findByLabelText('Temps restant')
+    const palette = screen.getByRole('navigation', { name: 'Exercices de l’épreuve' })
+    expect(within(palette).getAllByRole('button')).toHaveLength(2)
+    // Aller directement au 2e exercice, puis revenir au 1er.
+    await user.click(within(palette).getByRole('button', { name: 'Exercice 2' }))
+    expect(screen.getByText('2 / 2')).toBeInTheDocument()
+    await user.click(screen.getByRole('button', { name: /Précédent/ }))
+    expect(screen.getByText('1 / 2')).toBeInTheDocument()
+    const answerFirst = async () => {
+      if (screen.queryAllByRole('radio').length > 0) {
+        await user.click(screen.getAllByRole('radio')[1])
+        await user.click(screen.getByRole('button', { name: 'Valider' }))
+      } else {
+        await user.click(screen.getByRole('button', { name: /Faux/ }))
+      }
+    }
+    await answerFirst()
+    expect(within(palette).getByRole('button', { name: 'Exercice 1, traité' })).toBeInTheDocument()
+    await user.click(within(palette).getByRole('button', { name: 'Exercice 2' }))
+    await user.click(within(palette).getByRole('button', { name: 'Exercice 1, traité' }))
+    // Réponse verrouillée, sans bouton de validation ni correction.
+    expect(screen.queryByRole('button', { name: 'Valider' })).not.toBeInTheDocument()
+    expect(screen.queryByText('Bonne réponse')).not.toBeInTheDocument()
   })
 
   it('sujet complet sans assez de dossiers : message', async () => {

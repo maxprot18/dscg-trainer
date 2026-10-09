@@ -1,4 +1,4 @@
-import { ArrowRight, Clock, SkipForward, Timer, X } from 'lucide-react'
+import { ArrowLeft, ArrowRight, Clock, SkipForward, Timer, X } from 'lucide-react'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 
@@ -30,6 +30,7 @@ import {
 } from '@/engine/sessionConfig'
 import { useKeyboard } from '@/hooks/useKeyboard'
 import { readSettings } from '@/lib/settings'
+import { cn } from '@/lib/utils'
 
 function BackToTraining({ message }: { message: string }) {
   return (
@@ -194,28 +195,39 @@ function SessionRunner({
     () => new Map((resume?.attempts ?? []).map((a) => [a.exerciseId, a.answer as PartResponse[]])),
   )
   const [answered, setAnswered] = useState(false)
+  // Examen : réponses partielles de chaque exercice commencé (on peut y revenir, elles comptent au prorata).
+  const [progress, setProgress] = useState<Map<string, (PartResponse | undefined)[]>>(() => new Map())
   const [finished, setFinished] = useState(() => (resume?.attempts.length ?? 0) >= exercises.length)
   const [elapsed, setElapsed] = useState(() => Math.floor((Date.now() - (resume?.startedAt ?? Date.now())) / 1000))
   const sessionId = useRef<Promise<number> | null>(resume ? Promise.resolve(resume.sessionId) : null)
   const exerciseStartedAt = useRef(0)
-  // Examen : réponses déjà données dans l'exercice en cours (un dossier commencé compte au prorata).
-  const partial = useRef<{ id: string; responses: PartResponse[] } | null>(null)
+  const done = useMemo(() => new Set(entries.map((e) => e.exercise.id)), [entries])
+  const [warning, setWarning] = useState<string | null>(null)
 
-  /** Enregistre l'exercice commencé mais pas terminé (passé, arrêt, temps écoulé), noté sur ses seules réponses. */
-  const flushPartial = () => {
-    const pending = partial.current
-    partial.current = null
-    if (!pending || entries.some((e) => e.exercise.id === pending.id)) return
-    const exercise = byId.get(pending.id)
-    if (!exercise) return
-    const result = gradeExercise(exercise, pending.responses)
-    const durationMs = Date.now() - exerciseStartedAt.current
-    setEntries((e) => [...e, { exercise, result }])
-    setAnswers((m) => new Map(m).set(exercise.id, pending.responses))
-    void sessionId.current?.then((id) => recordAttempt(exercise, pending.responses, result, durationMs, id))
+  /**
+   * Fin d'examen : enregistre chaque exercice commencé mais pas terminé (arrêt, temps écoulé), noté sur ses
+   * seules réponses ; une question non traitée vaut 0.
+   */
+  const flushPartials = () => {
+    const pending = [...progress].filter(([id, responses]) => !done.has(id) && responses.some(Boolean))
+    if (!pending.length) return
+    const added: SessionEntry[] = []
+    for (const [id, responses] of pending) {
+      const exercise = byId.get(id)
+      if (!exercise) continue
+      const result = gradeExercise(exercise, responses as PartResponse[])
+      added.push({ exercise, result })
+      void sessionId.current?.then((sid) => recordAttempt(exercise, responses as PartResponse[], result, 0, sid))
+    }
+    setEntries((e) => [...e, ...added])
+    setAnswers((m) => {
+      const next = new Map(m)
+      for (const [id, responses] of pending) next.set(id, responses as PartResponse[])
+      return next
+    })
   }
   const finish = () => {
-    flushPartial()
+    if (exam) flushPartials()
     setFinished(true)
   }
   const finishRef = useRef(finish)
@@ -234,9 +246,14 @@ function SessionRunner({
       const seconds = Math.floor((Date.now() - startedAt) / 1000)
       setElapsed(seconds)
       if (limit !== null && seconds >= limit) finishRef.current()
+      // Examen : alertes à 15 et 5 minutes de la fin, comme les annonces de la salle d'examen.
+      else if (limit !== null && exam) {
+        const left = limit - seconds
+        if (left === 15 * 60 || left === 5 * 60) setWarning(`Plus que ${left / 60} minutes.`)
+      }
     }, 1000)
     return () => window.clearInterval(timer)
-  }, [finished, limit, startedAt])
+  }, [finished, limit, startedAt, exam])
 
   useEffect(() => {
     if (!finished) return
@@ -250,7 +267,6 @@ function SessionRunner({
   }, [finished])
 
   const onComplete = (exercise: Exercise, result: ExerciseResult, responses: PartResponse[]) => {
-    partial.current = null
     const durationMs = Date.now() - exerciseStartedAt.current
     setEntries((e) => [...e, { exercise, result }])
     setAnswers((m) => new Map(m).set(exercise.id, responses))
@@ -258,8 +274,16 @@ function SessionRunner({
     void sessionId.current?.then((id) => recordAttempt(exercise, responses, result, durationMs, id))
   }
 
+  /** Examen : aller librement d'un exercice à l'autre (les réponses données restent enregistrées). */
+  const goTo = (i: number) => {
+    setIndex(i)
+    setAnswered(done.has(exercises[i].id))
+    exerciseStartedAt.current = Date.now()
+    window.scrollTo?.({ top: 0 })
+  }
+
   const next = () => {
-    flushPartial()
+    if (exam) return index + 1 >= exercises.length ? stop() : goTo(index + 1)
     if (index + 1 >= exercises.length) return setFinished(true)
     setIndex((i) => i + 1)
     setAnswered(false)
@@ -268,7 +292,7 @@ function SessionRunner({
   }
 
   const stop = () => {
-    const pending = exercises.length - entries.length
+    const pending = exercises.length - done.size
     if (pending > 0 && !window.confirm(`Terminer maintenant ? ${pending} exercice${pending > 1 ? 's' : ''} ne ser${pending > 1 ? 'ont' : 'a'} pas traité${pending > 1 ? 's' : ''}.`)) return
     finish()
   }
@@ -304,6 +328,7 @@ function SessionRunner({
 
   const current = exercises[index]
   const remaining = limit !== null ? Math.max(0, limit - elapsed) : null
+  const started = (id: string) => progress.get(id)?.some(Boolean) ?? false
 
   return (
     <div className="flex flex-col gap-4">
@@ -313,12 +338,18 @@ function SessionRunner({
           {index + 1} / {exercises.length}
         </span>
         <Progress
-          value={((index + (answered ? 1 : 0)) / exercises.length) * 100}
+          value={exam ? (done.size / exercises.length) * 100 : ((index + (answered ? 1 : 0)) / exercises.length) * 100}
           className="flex-1"
           aria-label="Avancement de la session"
         />
         <span
-          className={remaining !== null && remaining <= 30 ? 'text-destructive font-semibold' : 'text-muted-foreground'}
+          className={
+            remaining !== null && (remaining <= 30 || (exam && remaining <= 5 * 60))
+              ? 'text-destructive font-semibold'
+              : remaining !== null && exam && remaining <= 15 * 60
+                ? 'font-semibold text-amber-700 dark:text-amber-400'
+                : 'text-muted-foreground'
+          }
           aria-label={remaining !== null ? 'Temps restant' : 'Durée de la session'}
           title={remaining !== null ? 'Temps restant' : 'Durée de la session (sans limite)'}
         >
@@ -329,13 +360,52 @@ function SessionRunner({
           <X />
         </Button>
       </div>
+      {warning && (
+        <div role="alert" className="flex items-center justify-between gap-2 rounded-md bg-amber-100 px-3 py-2 text-sm text-amber-900 dark:bg-amber-950 dark:text-amber-200">
+          <span>{warning}</span>
+          <Button variant="ghost" size="sm" onClick={() => setWarning(null)}>
+            OK
+          </Button>
+        </div>
+      )}
+      {exam && (
+        <nav aria-label="Exercices de l’épreuve" className="flex flex-wrap gap-1">
+          {exercises.map((e, i) => (
+            <button
+              key={e.id}
+              type="button"
+              onClick={() => goTo(i)}
+              aria-current={i === index ? 'step' : undefined}
+              aria-label={`Exercice ${i + 1}${done.has(e.id) ? ', traité' : started(e.id) ? ', commencé' : ''}`}
+              className={cn(
+                'min-w-9 rounded-md border px-2 py-1 text-xs tabular-nums',
+                done.has(e.id) ? 'bg-primary text-primary-foreground border-primary' : started(e.id) ? 'border-primary text-primary' : 'text-muted-foreground',
+                i === index && 'ring-ring ring-offset-background ring-2 ring-offset-1',
+              )}
+            >
+              {i + 1}
+            </button>
+          ))}
+        </nav>
+      )}
       <ExercisePlayer
         key={`${index}-${current.id}`}
         exercise={current}
         deferFeedback={exam}
         onComplete={(r, resp) => onComplete(current, r, resp)}
-        onProgress={exam ? (responses) => (partial.current = { id: current.id, responses }) : undefined}
+        initial={exam ? (done.has(current.id) ? answers.get(current.id) : progress.get(current.id)) : undefined}
+        onProgress={exam ? (responses) => setProgress((m) => new Map(m).set(current.id, responses)) : undefined}
       />
+      {exam ? (
+        <div className="flex items-center justify-between gap-2">
+          <Button variant="outline" onClick={() => goTo(index - 1)} disabled={index === 0}>
+            <ArrowLeft /> Précédent
+          </Button>
+          <Button size="lg" onClick={next} variant={index + 1 >= exercises.length ? 'default' : 'outline'}>
+            {index + 1 >= exercises.length ? 'Terminer l’épreuve' : 'Suivant'} <ArrowRight />
+          </Button>
+        </div>
+      ) : (
       <div className="flex items-center justify-end gap-2">
         {!answered && (
           <Button variant="ghost" onClick={next} title="Passer sans répondre (compte comme non traité)">
@@ -348,6 +418,7 @@ function SessionRunner({
           </Button>
         )}
       </div>
+      )}
     </div>
   )
 }
