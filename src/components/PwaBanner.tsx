@@ -10,6 +10,7 @@ import { useRegisterSW } from 'virtual:pwa-register/react'
 
 import { Button } from '@/components/ui/button'
 import { useInstallPrompt } from '@/hooks/useInstallPrompt'
+import { watchForUpdates } from '@/lib/updates'
 import { cn } from '@/lib/utils'
 
 const INSTALL_DISMISSED_KEY = 'dscg-install-dismissed'
@@ -19,7 +20,12 @@ export function PwaBanner() {
   const {
     needRefresh: [needRefresh, setNeedRefresh],
     updateServiceWorker,
-  } = useRegisterSW()
+  } = useRegisterSW({
+    // Vérifications régulières : une application laissée ouverte voit aussi les nouvelles versions.
+    onRegisteredSW(_url, registration) {
+      if (registration) watchForUpdates(registration)
+    },
+  })
   const install = useInstallPrompt()
   const [installDismissed, setInstallDismissed] = useState(() => {
     try {

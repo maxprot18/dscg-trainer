@@ -1,5 +1,9 @@
 # Journal des versions
 
+## 1.5.1 (octobre 2026)
+
+- **Mises à jour** : l'application installée ou laissée ouverte vérifie maintenant les nouvelles versions au retour au premier plan et toutes les heures (auparavant seulement à une ouverture complète) ; bouton « Vérifier les mises à jour » et numéro de version dans les réglages.
+
 ## 1.5.0 (octobre 2026)
 
 Finalisation, à la suite de l'audit de la version 1.4.2 (`docs/audit-v3.md`) ; nouvel audit complet dans `docs/audit-v4.md`.
