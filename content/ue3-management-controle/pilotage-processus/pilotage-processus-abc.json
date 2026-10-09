@@ -242,6 +242,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : la marge cible de 15 % est maintenue ; la baisse du coût ne vient pas de la marge.",
+            "Exact : l'ABM agit sur les inducteurs ; moins de références propres et de lancements réduisent la consommation des activités.",
+            "Inexact : sans références nouvelles, l'activité de gestion des références diminue réellement, sous réserve que les ressources libérées soient supprimées ou redéployées.",
+            "Inexact : dans la démarche du coût cible, le prix est une donnée du marché."
+          ],
           "explanation": "L'option 2 est exacte : l'ABM consiste à agir sur les causes des coûts, c'est-à-dire sur les inducteurs ; ici, moins de références propres et moins de lancements réduisent la consommation des activités. L'option 1 est fausse : la marge cible de 15 % est maintenue. L'option 3 est fausse : si les composants communs ne créent pas de références nouvelles, l'activité de gestion des références diminue réellement ; il faut toutefois vérifier que les ressources libérées sont effectivement supprimées ou redéployées. L'option 4 est fausse : le prix est une donnée du marché dans la démarche du coût cible."
         },
         {

@@ -272,6 +272,12 @@
             3
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : l'option ignore la séparation imposée par IAS 32 entre composante dette et composante capitaux propres.",
+            "Inexact : l'option ignore la composante dette de l'instrument composé (IAS 32 §28-32).",
+            "Inexact : la conversion en un nombre fixe d'actions contre un montant fixe n'est pas un dérivé évalué à la juste valeur.",
+            "Exact : instrument composé : dette évaluée par actualisation au taux de 5 % d'un emprunt sans option, solde en capitaux propres (IAS 32 §28-32)."
+          ],
           "explanation": "IAS 32 §28-32 : l'OC à parité fixe est un instrument composé ; l'émetteur évalue d'abord la dette (flux actualisés au taux de 5 % d'un emprunt sans option) et affecte le solde à la composante capitaux propres. Les options 1 et 2 ignorent la séparation ; l'option 3 ne vaut pas pour une conversion en un nombre fixe d'actions contre un montant fixe."
         },
         {

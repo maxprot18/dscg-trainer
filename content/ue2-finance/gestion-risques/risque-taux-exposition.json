@@ -171,6 +171,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : l'effet prix ne dominerait que pour un horizon plus court que la duration.",
+            "Exact : à horizon égal à la duration, effets prix et réinvestissement se compensent : environ 1 119,8 € à 5 % comme à 6 %.",
+            "Inexact : l'effet réinvestissement ne dominerait que pour un horizon plus long, et sans forte hausse ici.",
+            "Inexact : un coupon fixe rend justement le prix de l'obligation sensible aux taux."
+          ],
           "explanation": "À un horizon égal à la duration, l’effet prix (perte en capital à la revente) et l’effet réinvestissement (coupons replacés à 6 %) se compensent : la valeur acquise reste pratiquement égale à celle obtenue à 5 % (environ 1 119,8 € dans les deux cas), option 2. Pour un horizon plus court, l’effet prix dominerait (option 1) ; pour un horizon plus long, l’effet réinvestissement dominerait, sans forte hausse ici (option 3). L’option 4 est fausse : un coupon fixe rend justement le prix sensible aux taux."
         },
         {

@@ -213,6 +213,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : conclusion inverse ; la rentabilité d'équilibre (12,6 %) est inférieure aux 14 % espérés, le titre est sous-évalué.",
+            "Inexact : l'option confond niveau de risque et évaluation ; c'est l'écart avec la rentabilité d'équilibre qui compte.",
+            "Exact : rentabilité d'équilibre = 3 + 1,6 × (9 − 3) = 12,6 % < 14 % : alpha positif, titre au-dessus de la SML.",
+            "Inexact : le bêta s'applique à la prime de marché (9 − 3), non à la rentabilité du marché."
+          ],
           "explanation": "Rentabilité d'équilibre de B = 3 + 1,6 × (9 − 3) = 12,6 %. B promet 14 % : alpha positif, titre au-dessus de la SML, donc sous-évalué. L'option 4 applique le bêta à la rentabilité du marché au lieu de la prime ; l'option 1 aboutit à la conclusion inverse ; l'option 2 confond niveau de risque et évaluation."
         },
         {

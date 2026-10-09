@@ -156,6 +156,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : l'article 17 vise aussi les groupes de 500 salariés dont la mère est en France ; l'effectif de la seule mère n'est pas déterminant.",
+            "Exact : groupe à mère française de 3 800 salariés et 270 M€ de chiffre d'affaires consolidé : seuils de 500 salariés et 100 M€ dépassés.",
+            "Inexact : la cotation est sans incidence sur l'obligation de l'article 17.",
+            "Inexact : le programme de prévention couvre l'ensemble du groupe, pas les seules filiales vietnamiennes."
+          ],
           "explanation": "L'article 17 vise aussi les sociétés appartenant à un groupe dont la mère a son siège en France et dont l'effectif atteint 500 salariés, avec un chiffre d'affaires consolidé supérieur à 100 M€ : 420 + 780 + 2 600 = 3 800 salariés et 270 M€ (option 2). L'effectif de la seule mère (option 1) n'est pas déterminant ; la cotation est sans incidence (option 3) ; le programme couvre l'ensemble du groupe (option 4)."
         },
         {

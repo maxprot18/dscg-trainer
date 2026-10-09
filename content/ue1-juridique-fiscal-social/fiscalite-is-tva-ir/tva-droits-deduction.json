@@ -159,6 +159,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : l'utilisation pour l'activité taxable ne suffit pas ; les véhicules de transport de personnes sont exclus du droit à déduction.",
+            "Inexact : l'option ignore l'exclusion (ann. II art. 206, IV) ; le coefficient d'admission nul rend le coefficient de déduction nul.",
+            "Exact : voiture particulière exclue du droit à déduction : coefficient d'admission nul, donc coefficient de déduction nul quelle que soit l'utilisation.",
+            "Inexact : confusion avec la déduction à 80 % de la TVA sur le carburant ; le véhicule lui-même est exclu."
+          ],
           "explanation": "Les véhicules conçus pour transporter des personnes sont exclus du droit à déduction (CGI ann. II art. 206, IV) : coefficient d'admission nul, donc coefficient de déduction nul quelle que soit l'utilisation (option 3). Les options 1 et 2 ignorent l'exclusion ; l'option 4 confond avec la règle de déduction à 80 % du carburant."
         },
         {

@@ -208,6 +208,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : 1 166 339 € est le seul goodwill ; il faut lui ajouter l'ANCC de 2 400 000 €.",
+            "Exact : V = ANCC + goodwill = 2 400 000 + 1 166 339 = 3 566 339 €.",
+            "Inexact : l'option ajoute le goodwill aux CPNE au lieu de l'ANCC.",
+            "Inexact : 2 400 000 € est l'ANCC seul, sans le goodwill."
+          ],
           "explanation": "V = ANCC + GW = 2 400 000 + 1 166 339 = 3 566 339 € (option 2). L’option 1 est le seul goodwill ; l’option 3 ajoute le goodwill aux CPNE au lieu de l’ANCC ; l’option 4 est l’ANCC seul."
         },
         {

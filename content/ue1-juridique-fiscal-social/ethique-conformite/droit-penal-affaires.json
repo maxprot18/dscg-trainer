@@ -110,6 +110,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : l'abus de confiance est réservé aux formes sociales non visées par l'abus de biens sociaux ; la SAS est visée.",
+            "Exact : usage de mauvaise foi des biens sociaux à des fins personnelles par le président de SAS (L242-6 3°, L244-1).",
+            "Inexact : la banqueroute suppose une procédure collective.",
+            "Inexact : le recel vise celui qui détient ou profite du produit d'une infraction commise par autrui."
+          ],
           "explanation": "Le président de SAS qui fait, de mauvaise foi, des biens de la société un usage contraire à l'intérêt social à des fins personnelles commet un abus de biens sociaux (C. com. L242-6 3°, rendu applicable aux SAS par L244-1) : option 2. L'abus de confiance (option 1) est réservé aux formes sociales non visées par l'ABS. La banqueroute (option 3) suppose une procédure collective. Le recel (option 4) vise celui qui détient ou profite du produit d'une infraction commise par autrui."
         },
         {

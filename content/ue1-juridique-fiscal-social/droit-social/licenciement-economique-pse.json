@@ -144,6 +144,12 @@
             2
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : un trimestre suffit seulement aux entreprises de moins de 11 salariés (L1233-3).",
+            "Inexact : deux trimestres consécutifs visent les entreprises de 11 à moins de 50 salariés ; Corvalis en compte 180.",
+            "Exact : de 50 à moins de 300 salariés, L1233-3 exige trois trimestres consécutifs de baisse ; Corvalis, 180 salariés, est concernée.",
+            "Inexact : quatre trimestres consécutifs ne sont exigés qu'à partir de 300 salariés ; Corvalis en compte 180."
+          ],
           "explanation": "L'article L1233-3 module la durée selon l'effectif : un trimestre (moins de 11 salariés), deux trimestres consécutifs (11 à moins de 50), trois trimestres consécutifs (50 à moins de 300 : option 3), quatre trimestres consécutifs (300 et plus). Avec 180 salariés, il faut trois trimestres consécutifs ; la baisse observée sur quatre trimestres satisfait donc le critère."
         },
         {

@@ -178,6 +178,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : ils traitent les données pour le compte de Lunetik, sans déterminer finalités ni moyens essentiels : ce ne sont pas des responsables autonomes.",
+            "Exact : sous-traitants agissant pour le compte de Lunetik (art. 4 §8) ; un contrat écrit fixe leurs obligations (art. 28 §3).",
+            "Inexact : ce sont des sous-traitants, et l'option ignore l'exigence d'un contrat écrit (art. 28 §3).",
+            "Inexact : ils ne déterminent ni les finalités ni les moyens essentiels ; ce ne sont pas des responsables conjoints."
+          ],
           "explanation": "Paysoft et Nuagix traitent les données pour le compte de Lunetik et selon ses instructions : ce sont des sous-traitants (RGPD art. 4 §8). Le traitement par un sous-traitant est régi par un contrat ou un autre acte juridique écrit fixant l'objet, la durée, la finalité, les obligations de sécurité et de confidentialité (art. 28 §3) : son absence est un manquement de Lunetik. Ils ne déterminent ni les finalités ni les moyens essentiels : ils ne sont ni responsables autonomes (option 1) ni responsables conjoints (option 4) ; l'option 3 ignore l'exigence du contrat."
         },
         {

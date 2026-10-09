@@ -163,6 +163,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : le marché n'a pas ignoré l'annonce ; la rentabilité anormale du jour 0 est forte.",
+            "Exact : forte rentabilité anormale au jour 0, faible ajustement ensuite (+0,54 %) : intégration rapide de l'information publique, conforme à l'efficience semi-forte.",
+            "Inexact : un rebond modeste n'établit pas une sur-réaction, et l'efficience forte concerne l'information privée.",
+            "Inexact : compte tenu du marché, le modèle de marché prévoyait une hausse de 0,62 % ; le bêta n'explique pas la baisse."
+          ],
           "explanation": "La forte rentabilité anormale du jour 0 suivie d'un faible ajustement (+0,54 %) indique une intégration rapide de l'information publique : c'est ce qu'attend l'efficience semi-forte. Le marché n'a pas ignoré l'annonce (option 1). Un rebond modeste ne suffit pas à établir une sur-réaction, et l'efficience forte concerne l'information privée (option 3). Le modèle de marché prévoyait une hausse de 0,62 % compte tenu du marché : le bêta n'explique pas la baisse (option 4)."
         },
         {

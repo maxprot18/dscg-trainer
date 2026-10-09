@@ -71,6 +71,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : l'expertise sert à fixer la parité, pas la valeur d'inscription, qui découle du contrôle commun.",
+            "Exact : Ardoise contrôle Brume (100 %) et Celtis (97 %) : le contrôle commun impose la valeur comptable (PCG titre VII).",
+            "Inexact : la valeur d'apport découle de la qualification de l'opération, pas de la volonté des parties.",
+            "Inexact : la méthode s'applique à l'ensemble des apports, sans panachage entre valeur réelle et valeur comptable."
+          ],
           "explanation": "Avant l'opération, Ardoise contrôle Brume (100 %) et Celtis (97 %) : les deux sociétés sont sous contrôle commun, ce qui impose la valeur comptable, quel que soit le sens de l'opération (PCG titre VII, règl. ANC 2017-01). L'exception tenant à l'insuffisance de l'actif net comptable pour libérer l'augmentation de capital ne joue pas (950 000 € ≥ 300 000 €, voir question 4). L'option 1 est fausse : l'expertise sert à fixer la parité, pas la valeur d'inscription. L'option 3 est fausse : la valeur d'apport découle de la qualification de l'opération, pas de la volonté des parties. L'option 4 est fausse : la méthode s'applique à l'ensemble des apports, sans panachage."
         },
         {
@@ -198,6 +204,12 @@
           ],
           "answer": [
             2
+          ],
+          "option_explanations": [
+            "Inexact : l'exigibilité n'est pas requise ; seule compte l'antériorité de la créance à la publicité du projet.",
+            "Inexact : l'opposition n'a pas d'effet suspensif ; la fusion peut être approuvée le 15 mai N+1.",
+            "Exact : opposition recevable, formée dans les 30 jours, sans effet suspensif ; à défaut de remboursement ou de garanties, fusion inopposable à Frigotec.",
+            "Inexact : la transmission universelle du patrimoine fait passer les dettes à Celtis sans accord des créanciers."
           ],
           "explanation": "Frigotec est un créancier non obligataire dont la créance est antérieure à la publicité du projet (2 avril N+1) ; elle agit le 20 avril, dans le délai de 30 jours : l'opposition est recevable, même si la créance n'est payable qu'en juin. L'opposition n'a pas d'effet suspensif : la fusion peut être approuvée le 15 mai ; le tribunal rejette l'opposition ou ordonne le remboursement ou la constitution de garanties, et à défaut d'exécution la fusion est inopposable à ce créancier (option 3). L'option 1 est fausse : l'exigibilité n'est pas requise, seule l'antériorité de la créance compte. L'option 2 confond opposition et suspension. L'option 4 est fausse : la transmission universelle du patrimoine fait passer les dettes à Celtis sans accord des créanciers."
         },
@@ -336,6 +348,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : le seuil des attributions élargies est de 50 salariés ; Lisière en emploie 84.",
+            "Exact : au-delà de 50 salariés, droit d'alerte économique (L2312-63) et information-consultation sur les compressions d'effectifs, avis consultatif.",
+            "Inexact : seul le débiteur peut demander l'ouverture d'une conciliation.",
+            "Inexact : l'avis du CSE est consultatif ; il ne dispose d'aucun droit de veto."
+          ],
           "explanation": "Avec 84 salariés, Lisière dépasse le seuil de 50 : le CSE a des attributions élargies (C. trav. art. L2312-8), dont le droit d'alerte économique en présence de faits de nature à affecter de manière préoccupante la situation économique (L2312-63), que la chute du chiffre d'affaires et les pertes caractérisent, et l'information-consultation sur les compressions d'effectifs (option 2). L'option 1 est fausse : le seuil des attributions élargies est de 50 salariés. L'option 3 est fausse : seul le débiteur peut demander une conciliation. L'option 4 est fausse : l'avis du CSE est consultatif."
         },
         {
@@ -365,6 +383,12 @@
           ],
           "answer": [
             3
+          ],
+          "option_explanations": [
+            "Inexact : la sauvegarde exige l'absence de cessation des paiements (L620-1), survenue ici le 1er mars N+1.",
+            "Inexact : la conciliation reste ouverte au débiteur en cessation des paiements depuis 45 jours au plus (L611-4).",
+            "Inexact : le redressement n'est pas manifestement impossible (activité, carnet de commandes, actifs) ; la liquidation ne s'impose pas.",
+            "Exact : cessation des paiements depuis 19 jours : conciliation possible (L611-4), sinon redressement demandé dans les 45 jours (L631-4)."
           ],
           "explanation": "La cessation des paiements remonte au 1er mars N+1, soit 19 jours au 20 mars : la conciliation reste ouverte au débiteur qui n'est pas en cessation des paiements depuis plus de 45 jours (C. com. art. L611-4) ; à défaut, M. Varenne doit demander un redressement judiciaire dans les 45 jours (L631-4), soit au plus tard le 15 avril N+1 (option 4). L'option 1 est fausse : la sauvegarde exige l'absence de cessation des paiements (L620-1). L'option 2 est fausse : la conciliation reste possible dans la limite de 45 jours. L'option 3 est fausse : le redressement n'étant pas manifestement impossible (activité, carnet de commandes, actifs), la liquidation ne s'impose pas."
         },
@@ -418,6 +442,12 @@
           ],
           "answer": [
             2
+          ],
+          "option_explanations": [
+            "Inexact : les actes de la période suspecte sont précisément antérieurs au jugement d'ouverture.",
+            "Inexact : c'est la nullité facultative (L632-2), qui vise le paiement de dettes échues ; le prêt n'était pas échu.",
+            "Exact : remboursement le 4 mars d'un prêt échéant le 31 décembre N+1 : dette non échue payée en période suspecte, nulle de droit (L632-1).",
+            "Inexact : le prêt d'associé est une dette de la société comme une autre."
           ],
           "explanation": "La période suspecte court de la date de cessation des paiements (1er mars N+1) au jugement d'ouverture (12 mai N+1). Le 4 mars, Lisière a remboursé un prêt dont l'échéance était le 31 décembre N+1 : paiement d'une dette **non échue**, cas de nullité de droit (C. com. art. L632-1) ; la holding restitue les 40 000 € et déclare sa créance (option 3). L'option 1 est fausse : les actes de la période suspecte sont précisément antérieurs au jugement. L'option 2 décrit la nullité facultative (L632-2), qui vise le paiement de dettes échues. L'option 4 est fausse : le prêt d'associé est une dette de la société comme une autre."
         },

@@ -135,6 +135,12 @@
             0
           ],
           "multiple": false,
+          "option_explanations": [
+            "Exact : hors SA, l'alerte commence par une demande écrite d'explications au dirigeant, qui répond sous quinze jours (L234-2).",
+            "Inexact : le rapport spécial à l'assemblée n'intervient qu'ensuite, si la continuité reste compromise.",
+            "Inexact : l'information du président du tribunal accompagne les phases de l'alerte ; elle ne les précède pas.",
+            "Inexact : la révélation au procureur concerne les faits délictueux, non les difficultés de continuité."
+          ],
           "explanation": "Dans les sociétés autres que les SA (SAS, SARL), la première phase est une demande écrite d'explications au dirigeant, qui répond sous quinze jours ; la réponse est communiquée au CSE et le CAC en informe le président du tribunal (C. com. art. L234-2) : option 1. Le rapport spécial à l'assemblée n'intervient qu'ensuite, si la continuité reste compromise (option 2). L'information du président du tribunal accompagne les phases ; elle ne les précède pas (option 3). La révélation au procureur concerne les faits délictueux, non les difficultés de continuité (option 4)."
         },
         {

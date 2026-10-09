@@ -135,6 +135,13 @@
             0,
             1
           ],
+          "option_explanations": [
+            "Exact : Alma est détenue à 100 %, soumise à l'IS et clôture à la même date que la mère.",
+            "Exact : 70 % en direct et 28 % via Alma, société du groupe : 98 %, éligible si Alma est intégrée.",
+            "Inexact : Cobalt clôture au 30 juin, date différente de celle de la mère : elle est exclue.",
+            "Inexact : Delta n'est détenue qu'à 90 % ; les 5 % d'Éther, non membre du groupe, ne comptent pas.",
+            "Inexact : Fjord n'est pas soumise à l'IS, condition nécessaire pour être intégrée."
+          ],
           "explanation": "Alma (100 %, IS, même clôture) est éligible. Brume est détenue à 70 % directement et à 28 % par Alma, société du groupe : 98 % au total, elle est éligible si Alma est intégrée. Cobalt est exclue (clôture au 30 juin, différente de celle de la mère). Delta n'est détenue qu'à 90 % : les 5 % détenus par Éther, qui n'est pas membre du groupe (détenue à 60 %), ne comptent pas. Fjord n'est pas soumise à l'IS."
         },
         {

@@ -202,6 +202,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : le swap est un engagement ferme qui ne s'annule pas ; 2,5 % correspond à l'emprunt seul, sans les flux du swap.",
+            "Exact : swap (1,5 % − 2,8 %) × 10 M€ = −130 000 €, plus 250 000 € d'intérêts : coût total de 3,8 %.",
+            "Inexact : le sens est inversé ; Calvane paie 2,8 % et reçoit 1,5 %, elle verse donc 130 000 €.",
+            "Inexact : seule une option (cap) s'abandonne ; un swap ferme se résilie à sa valeur de marché, ici défavorable."
+          ],
           "explanation": "Flux net du swap = (1,5 % − 2,8 %) × 10 M€ = −130 000 € ; intérêts d'emprunt 250 000 € ; total 380 000 € (3,8 %). Le swap est un engagement ferme : il supprime le risque de hausse mais aussi le bénéfice d'une baisse. Seule une option (cap) aurait permis de profiter de la baisse moyennant une prime ; la résiliation anticipée d'un swap se fait à sa valeur de marché, ici défavorable."
         },
         {

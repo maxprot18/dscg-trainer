@@ -119,6 +119,12 @@
             2
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : la position dominante collective suppose une domination du marché, absente avec 8 % de part de marché.",
+            "Inexact : l'entente n'est pas verticale ; les trois négociants opèrent au même stade de distribution.",
+            "Exact : des concurrents qui fixent des prix et se répartissent des marchés forment une entente horizontale à objet anticoncurrentiel (L420-1).",
+            "Inexact : les pratiques restrictives de L442-1 visent les relations bilatérales, non la concertation entre concurrents."
+          ],
           "explanation": "Des concurrents qui fixent des prix et se répartissent des marchés commettent une entente horizontale ayant un objet anticoncurrentiel (C. com. art. L. 420-1) : option 3. La position dominante collective (option 1) suppose une domination du marché, absente avec 8 % de part de marché. L'entente n'est pas verticale (option 2) : les trois entreprises sont au même stade de distribution. Les pratiques restrictives de l'article L. 442-1 (option 4) concernent les relations commerciales bilatérales, pas la concertation entre concurrents."
         },
         {

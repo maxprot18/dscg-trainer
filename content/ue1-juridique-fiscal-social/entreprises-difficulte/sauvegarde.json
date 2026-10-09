@@ -140,6 +140,12 @@
             0
           ],
           "multiple": false,
+          "option_explanations": [
+            "Exact : la sauvegarde est une procédure volontaire, ouverte sur la seule demande du débiteur (L620-1).",
+            "Inexact : la saisine par un créancier n'existe qu'en redressement ou en liquidation judiciaire.",
+            "Inexact : la saisine par le ministère public n'existe qu'en redressement ou en liquidation judiciaire.",
+            "Inexact : ces modes de saisine valent en redressement ou liquidation ; la sauvegarde n'est ouverte qu'au débiteur."
+          ],
           "explanation": "La sauvegarde est une procédure volontaire, ouverte sur la seule demande du débiteur (C. com. art. L620-1) : option 1. La saisine par un créancier ou le ministère public (options 2 à 4) n'existe qu'en redressement ou en liquidation judiciaire."
         },
         {

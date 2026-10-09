@@ -171,6 +171,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : le Code de la consommation ne protège pas un fournisseur professionnel face à un distributeur.",
+            "Exact : entre professionnels, la soumission à des obligations créant un déséquilibre significatif relève de L442-1 I 2°.",
+            "Inexact : l'article 1170 vise la clause qui prive de sa substance l'obligation essentielle du débiteur.",
+            "Inexact : L442-1 II sanctionne la rupture brutale ; or aucune relation n'a encore été rompue."
+          ],
           "explanation": "Entre professionnels de la production et de la distribution, la soumission à des obligations créant un déséquilibre significatif relève de L442-1 I 2° (option 2). Le Code de la consommation (option 1) ne protège pas un fournisseur professionnel dans ses rapports avec un distributeur. L'article 1170 (option 3) vise la clause qui prive de sa substance l'obligation essentielle du débiteur. Aucune relation n'a encore été rompue (option 4)."
         },
         {

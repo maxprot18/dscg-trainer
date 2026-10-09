@@ -206,6 +206,12 @@
             3
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : c'est un avantage : la cotation permet de lever des fonds propres, dès l'introduction puis par de futures augmentations de capital.",
+            "Inexact : c'est un avantage : le marché offre au fonds une sortie liquide, sans recherche d'acquéreur pour son bloc.",
+            "Inexact : c'est un avantage : des actions cotées, valorisées par le marché, servent de monnaie d'échange lors d'acquisitions.",
+            "Exact : la cotation alourdit les obligations d'information (permanente, périodique, information privilégiée, gouvernance) : ce n'est pas un avantage."
+          ],
           "explanation": "La cotation alourdit au contraire les obligations d'information (information permanente et périodique, information privilégiée, gouvernance). Les trois autres options sont des avantages classiques."
         },
         {

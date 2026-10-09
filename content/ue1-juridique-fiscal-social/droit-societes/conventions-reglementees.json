@@ -86,6 +86,12 @@
           ],
           "answer": [2],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : le prêt au président personne physique de SAS est interdit (L227-12) ; aucune approbation ne le régularise.",
+            "Inexact : le montant est indifférent ; le prêt au président de SAS est interdit.",
+            "Exact : L227-12 étend au président de SAS l'interdiction de L225-43 ; le prêt est nul.",
+            "Inexact : la convention interdite est nulle ; même une ratification unanime ne peut la régulariser."
+          ],
           "explanation": "Il est interdit à la SAS de consentir un prêt à son président personne physique (C. com. art. L227-12, qui étend aux dirigeants de SAS l'interdiction de l'article L225-43) : option 3. La convention est nulle et aucune approbation, même unanime, ne peut la régulariser (options 1 et 4). Le montant est indifférent (option 2)."
         },
         {

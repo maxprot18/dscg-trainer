@@ -150,6 +150,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : la zone de défaillance probable se situe sous 1,81 ; le score de 1,96 la dépasse.",
+            "Exact : 1,81 ≤ 1,96 ≤ 2,99 : zone d'incertitude, proche du seuil bas.",
+            "Inexact : la zone saine commence au-delà de 2,99 ; le score de 1,96 en est loin.",
+            "Inexact : le score suffit au classement ; l'endettement est déjà pris en compte par X4."
+          ],
           "explanation": "1,81 ≤ 1,96 ≤ 2,99 : zone d'incertitude (option 2), proche du seuil bas. Le score se suffit à lui-même pour le classement ; l'endettement est déjà pris en compte par X4."
         },
         {

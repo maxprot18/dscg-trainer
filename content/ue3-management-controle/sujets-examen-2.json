@@ -104,6 +104,12 @@
           "answer": [
             3
           ],
+          "option_explanations": [
+            "Inexact : les mêmes 2 402 400 € sont répartis, résultat global inchangé (1 092 600 €) ; −116 400 € est celui du seul Gravel.",
+            "Inexact : le coût de l'Urbain baisse (964,60 € à 887 €) ; ses grandes séries consomment peu de lots et de commandes par vélo.",
+            "Inexact : l'ABC est une méthode de coût complet ; elle répartit toutes les charges indirectes, fixes comprises.",
+            "Exact : unités d'œuvre volumiques ; le Gravel, 6,25 % des vélos, consomme 45 % des lots : 491 400 € en ABC contre 174 300 €."
+          ],
           "explanation": "L'option 4 est exacte : heures de MOD, vélos produits ou vendus et 100 € de matières varient avec le volume ; or le Gravel, 6,25 % des vélos, consomme 45 % des lots (100 sur 220), 37,5 % des commandes fournisseurs (360 sur 960) et 20,6 % des commandes clients (440 sur 2 140). La méthode actuelle lui impute 174 300 € de charges indirectes (348,60 € par vélo), l'ABC 491 400 € ; l'Urbain, qui supportait ces charges, voit son coût passer de 964,60 € à 887 €. L'option 1 est fausse : les mêmes 2 402 400 € sont répartis, le résultat global reste de 1 092 600 € ; −116 400 € est le résultat du seul Gravel. L'option 2 est fausse : le coût de l'Urbain baisse, ses grandes séries consomment peu de lots et de commandes par vélo. L'option 3 est fausse : l'ABC est une méthode de coût complet, elle répartit toutes les charges indirectes, fixes comprises."
         },
         {
@@ -190,6 +196,12 @@
           ],
           "answer": [
             3
+          ],
+          "option_explanations": [
+            "Inexact : un écart favorable sur activité nourri d'heures improductives n'est pas une performance ; il se lit avec l'écart sur rendement.",
+            "Inexact : l'écart sur budget compare le coût réel au budget flexible de l'activité réelle ; neutre vis-à-vis du volume, il relève du chef d'atelier.",
+            "Inexact : la référence est le coût préétabli de la production réelle (1 670 h × 60 = 100 200 €) : écart de 4 100 €.",
+            "Exact : 1 740 h pour 1 625 h normales (−4 600 €), mais 70 h au-delà du standard (rendement +4 200 €) : suractivité nourrie d'inefficience."
           ],
           "explanation": "L'option 4 est exacte. Écart sur activité = BF(1 740) − 1 740 × 60 = 99 800 − 104 400 = −4 600 € (charges fixes surabsorbées : 65 000 × (1 − 1 740 ÷ 1 625)). Écart sur rendement = (1 740 − 1 670) × 60 = 4 200 € défavorable. Contrôle : 4 500 − 4 600 + 4 200 = 4 100 € = 104 300 − 1 670 × 60. Les 70 heures excédentaires sont les mêmes que celles de l'écart sur temps de la MOD : la suractivité apparente est gonflée par les reprises de soudure. L'option 1 est fausse : un écart favorable sur activité nourri d'heures improductives n'est pas une performance, il se lit avec l'écart sur rendement. L'option 2 est fausse : l'écart sur budget compare le coût réel au budget flexible de l'activité réelle, il est neutre vis-à-vis du volume et relève du chef d'atelier. L'option 3 est fausse : l'écart global se mesure par rapport au coût préétabli de la production réelle (1 670 h × 60 = 100 200 €), soit 4 100 €."
         },
@@ -294,6 +306,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : seule la combustion dans les tracteurs est directe ; extraction, raffinage et transport du carburant relèvent du scope 3.",
+            "Inexact : la responsabilité commerciale ne change pas le classement, qui dépend de la détention ou du contrôle de la source.",
+            "Exact : fuites d'équipements détenus (scope 1), électricité achetée (scope 2), camions d'affréteurs non contrôlés (scope 3 amont).",
+            "Inexact : le scope 3 atteint 15 620 t sur 54 972 t, soit 28,4 % ; pour ce transporteur, le scope 1 domine (70,7 %)."
+          ],
           "explanation": "L'option 3 est exacte : les fuites proviennent d'équipements que Rhodanor détient (émissions directes, scope 1) ; l'électricité achetée est produite ailleurs (scope 2) ; les camions des affréteurs ne sont ni détenus ni contrôlés par Rhodanor (scope 3 amont). L'option 1 est fausse : seule la combustion dans les tracteurs est directe ; l'extraction, le raffinage et le transport du carburant ont lieu chez les fournisseurs (scope 3). L'option 2 est fausse : la responsabilité commerciale ne change pas le classement, qui dépend de la détention ou du contrôle de la source. L'option 4 est fausse : le scope 3 atteint 9 000 + 2 200 + 820 + 3 600 = 15 620 t sur un total de 54 972 t, soit 28,4 % ; pour un transporteur qui exploite sa propre flotte, le scope 1 domine (70,7 %)."
         },
         {
@@ -323,6 +341,12 @@
           ],
           "answer": [
             1
+          ],
+          "option_explanations": [
+            "Inexact : l'obligation dépend de l'effectif (plus de 500 personnes) ; l'état de durabilité ne joue que comme cause de dispense.",
+            "Exact : hors état de durabilité, seules les émissions directes et celles de l'électricité sont obligatoires ; plan de transition, publication, mise à jour quadriennale.",
+            "Inexact : le scope 3 n'est obligatoire que pour les entreprises soumises aux articles visés du Code de commerce, ce qui n'est pas le cas.",
+            "Inexact : la mise à jour est quadriennale pour les entreprises, et le manquement est passible d'une amende de 50 000 € au plus."
           ],
           "explanation": "L'option 2 est exacte. Le bilan est imposé aux personnes morales de droit privé employant plus de 500 personnes (Rhodanor en compte 820), avec un plan de transition, une publication et une mise à jour tous les quatre ans (C. env. art. L. 229-25). Le bilan distingue émissions directes et émissions indirectes significatives (C. env. art. R. 229-47) ; toutefois, pour les personnes morales de droit privé qui ne publient pas d'état de durabilité et ne relèvent pas des obligations des sociétés cotées (C. com. art. L. 22-10-36, L. 232-6-3 et L. 233-28-4), les émissions indirectes obligatoires se limitent à celles de la consommation d'électricité, de chaleur ou de vapeur. L'option 1 est fausse : l'obligation dépend de l'effectif ; l'état de durabilité ne joue que comme cause de dispense (bilan publié dans ce cadre). L'option 3 est fausse : le scope 3 n'est obligatoire que pour les entreprises soumises à ces articles du Code de commerce, ce qui n'est pas le cas par hypothèse. L'option 4 est fausse : la mise à jour est quadriennale pour les entreprises (trois ans pour les personnes publiques) et le manquement est passible d'une amende administrative de 50 000 € au plus (100 000 € en cas de récidive)."
         },
@@ -381,6 +405,12 @@
           ],
           "answer": [
             0
+          ],
+          "option_explanations": [
+            "Exact : indicateur lié à l'objectif (gazole, 95 % des scopes 1 et 2), maîtrisable localement, rapide grâce à la télématique : indicateur avancé.",
+            "Inexact : un chef d'agence ne maîtrise ni achats, ni affrètement, ni facteur d'émission ; et un indicateur annuel arrive trop tard.",
+            "Inexact : le nombre de réunions mesure une activité ou un moyen, pas un résultat environnemental.",
+            "Inexact : si les t.km augmentent, les émissions absolues peuvent croître malgré une intensité en baisse."
           ],
           "explanation": "L'option 1 est exacte : l'indicateur est lié à l'objectif (le gazole représente 37 500 t, soit 95 % des scopes 1 et 2), maîtrisable localement, disponible rapidement grâce à la télématique, et il annonce l'évolution des émissions : c'est un indicateur avancé. L'option 2 est fausse : un chef d'agence ne maîtrise ni les achats, ni l'affrètement décidé au siège, ni le facteur d'émission de l'électricité ; un indicateur non maîtrisable ne doit pas servir à évaluer un responsable, et un indicateur annuel arrive trop tard pour agir. L'option 3 est fausse : il mesure une activité ou un moyen, pas un résultat environnemental, et sa cible (4 réunions) ne dit rien des émissions. L'option 4 est fausse : si les t.km augmentent, les émissions absolues peuvent croître malgré une intensité en baisse ; la trajectoire se suit en valeur absolue, l'intensité la complète."
         },

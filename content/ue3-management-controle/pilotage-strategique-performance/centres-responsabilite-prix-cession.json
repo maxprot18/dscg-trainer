@@ -217,6 +217,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : le PCI au coût variable pénalise le vendeur et attribue tout le gain à l'acheteur.",
+            "Exact : à 40 €, Composants ne gagne rien sur les pièces cédées et perd 5 000 × 28 = 140 000 € de marge externe.",
+            "Inexact : 40 € est très inférieur au prix externe de 70 € ; Assemblage a intérêt à acheter en interne.",
+            "Inexact : le PCI répartit le résultat entre divisions ; il ne modifie le résultat global que par les décisions qu'il provoque."
+          ],
           "explanation": "L'option 2 est exacte : à 40 €, Composants ne gagne rien sur les pièces cédées et perd la marge de 5 000 ventes externes (5 000 × 28 = 140 000 €) : un responsable autonome refusera la cession, contre l'intérêt du groupe. L'option 1 est fausse : le PCI au coût variable pénalise le vendeur et attribue tout le gain à l'acheteur. L'option 3 est fausse : 40 € est très inférieur au prix externe de 70 €. L'option 4 est fausse : le PCI ne fait que répartir le résultat entre divisions ; il ne modifie le résultat global qu'à travers les décisions qu'il provoque."
         },
         {

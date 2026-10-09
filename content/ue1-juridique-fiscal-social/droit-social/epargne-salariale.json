@@ -137,6 +137,12 @@
             2
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : intéressement et participation sont des dispositifs indépendants ; verser l'un n'oblige pas à instituer l'autre.",
+            "Inexact : le bénéfice seul ne déclenche pas l'obligation, qui dépend d'un effectif d'au moins 50 salariés.",
+            "Exact : la participation n'est obligatoire qu'à partir de 50 salariés ; en deçà, un accord peut l'instituer volontairement.",
+            "Inexact : aucune interdiction ne vise les petites entreprises, qui peuvent mettre en place la participation par accord."
+          ],
           "explanation": "La participation est obligatoire dans les entreprises employant au moins 50 salariés ; en deçà, elle peut être mise en place volontairement par accord (option 3). L'intéressement et la participation sont des dispositifs indépendants (option 1). Le bénéfice seul ne déclenche pas l'obligation (option 2). Aucune interdiction ne vise les petites entreprises (option 4)."
         },
         {

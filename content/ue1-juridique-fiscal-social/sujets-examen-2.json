@@ -70,6 +70,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : l'option retient l'ancienne durée de quatre ans et fait diriger le donateur, qui n'est pas signataire d'un engagement.",
+            "Inexact : l'engagement collectif est réputé acquis ; il n'y a pas d'engagement collectif de deux ans à souscrire.",
+            "Exact : engagement individuel de six ans, jusqu'au 14 décembre 2032, et direction par la donataire pendant trois ans, jusqu'au 14 décembre 2029.",
+            "Inexact : une fonction salariée de directrice industrielle ne figure pas parmi les fonctions de direction de l'article 975, III, 1°."
+          ],
           "explanation": "La donation intervient après le 21 février 2026 : l'engagement individuel dure **six ans** (787 B, c, rédaction de la loi de finances pour 2026 ; BOI-ENR-DMTG-10-20-40-10 § 330). L'engagement collectif étant réputé acquis, l'engagement individuel court, pour une donation par acte notarié, à compter de la date de l'acte (§ 370) : jusqu'au 14 décembre 2032. La condition de direction (787 B, d) doit être remplie pendant les trois ans qui suivent la transmission, jusqu'au 14 décembre 2029, par l'exercice d'une fonction énumérée à l'article 975, III, 1° (président, directeur général…) ; en cas d'engagement réputé acquis, elle doit l'être par un héritier ou donataire, le donateur n'étant pas signataire d'un engagement (§ 395). L'option 1 retient l'ancienne durée de quatre ans et fait diriger le donateur. L'option 2 impose à tort un engagement collectif de deux ans alors qu'il est réputé acquis. L'option 4 est fausse : une fonction salariée de directrice industrielle ne figure pas parmi les fonctions de direction exigées."
         },
         {
@@ -157,6 +163,12 @@
           "answer": [
             3
           ],
+          "option_explanations": [
+            "Inexact : l'apport à une holding contrôlée place la plus-value en report d'imposition, non en exonération.",
+            "Inexact : l'option reprend l'ancien quota de 60 % en deux ans ; la loi de finances pour 2026 exige 70 % en trois ans.",
+            "Inexact : le départ en retraite conditionne l'abattement de l'article 150-0 D ter, pas le maintien du report.",
+            "Exact : report maintenu seulement si la holding réinvestit 70 % du prix en trois ans et conserve cinq ans, ce qui immobilise le prix."
+          ],
           "explanation": "L'apport à une société contrôlée par l'apporteur place la plus-value d'apport en **report** d'imposition (CGI art. 150-0 B ter, I et III, 2°) : elle n'est pas exonérée et redevient imposable lors des événements prévus par le texte. Si la holding cède les titres apportés dans les trois ans, le report n'est maintenu que si elle s'engage à réinvestir au moins 70 % du produit de cession dans les trois ans dans une activité éligible, les biens acquis étant conservés au moins cinq ans (rédaction de la loi de finances pour 2026, applicable aux cessions de titres apportés réalisées à compter du 21 février 2026) : option 4. Mme Ferrand veut disposer du prix pour sa retraite et bénéficie déjà de l'abattement définitif de 500 000 € en cédant directement. L'option 1 confond report et exonération. L'option 2 reprend l'ancien quota de 60 % en deux ans. L'option 3 est fausse : le départ en retraite conditionne l'abattement de l'article 150-0 D ter, pas le maintien du report."
         },
         {
@@ -201,6 +213,12 @@
           ],
           "answer": [
             1
+          ],
+          "option_explanations": [
+            "Inexact : la détention de 95 % doit être continue sur l'exercice (art. 223 A) ; CVP ne détient que 30 % jusqu'au 30 mars 2027.",
+            "Exact : intégration possible dès 2028, option notifiée au plus tard au dépôt de la déclaration 2027 ; la cédante ne contrôlant pas CVP, 223 B est écarté.",
+            "Inexact : l'article 223 B ne vise que les titres achetés aux personnes contrôlant l'acquéreuse ; Mme Ferrand ne contrôle pas CVP.",
+            "Inexact : l'apport respecte l'exception du f de l'article 787 B, et le pacte Dutreil ne fait pas obstacle à l'intégration."
           ],
           "explanation": "La filiale doit être détenue à 95 % au moins **de manière continue au cours de l'exercice** (CGI art. 223 A) : CVP ne détient que 30 % de VR jusqu'au 30 mars 2027, d'où l'exclusion de 2027 (option 1 fausse). Pour 2028, les deux sociétés ont des exercices de douze mois clos le 31 décembre ; l'option est notifiée au plus tard à la date limite de dépôt de la déclaration de résultat de l'exercice précédent. La réintégration de l'article 223 B (sixième alinéa) ne vise que les titres achetés aux personnes qui contrôlent la société acquéreuse, ou à des sociétés qu'elles contrôlent : Mme Ferrand ne contrôle pas CVP, et les actions de Claire ont été apportées, non achetées (option 3 fausse). L'option 4 est fausse : l'apport respecte l'exception du f de l'article 787 B, et le pacte Dutreil ne fait de toute façon pas obstacle à l'intégration fiscale."
         }
@@ -264,6 +282,12 @@
           ],
           "answer": [
             1
+          ],
+          "option_explanations": [
+            "Inexact : l'appartenance au même groupe est sans incidence ; la livraison intracommunautaire est exonérée en France.",
+            "Exact : livraison intracommunautaire exonérée (art. 262 ter, I, 1°), déclarée en TVA et sur l'état récapitulatif, preuve du transport conservée.",
+            "Inexact : une exportation suppose une sortie de l'Union ; l'Allemagne est un État membre.",
+            "Inexact : l'exonération est refusée si l'état récapitulatif n'est pas déposé, sauf manquement dûment justifié (art. 262 ter, art. 289 B)."
           ],
           "explanation": "Le bien est expédié en Allemagne à un assujetti identifié dans cet État qui a communiqué son numéro : la livraison intracommunautaire est exonérée en France (CGI art. 262 ter, I, 1°), l'acquisition étant taxée par la GmbH en Allemagne. L'appartenance au même groupe est sans incidence (option 1 fausse). Il ne s'agit pas d'une exportation, qui suppose une sortie de l'Union (option 3 fausse). L'option 4 est fausse : l'exonération est refusée si le fournisseur n'a pas déposé l'état récapitulatif ou l'a déposé incomplet, sauf manquement dûment justifié (art. 262 ter, I, 1°, deuxième alinéa ; art. 289 B). L'opération figure en outre sur la déclaration de TVA (art. 287, 5, a)."
         },
@@ -336,6 +360,12 @@
           ],
           "answer": [
             3
+          ],
+          "option_explanations": [
+            "Inexact : les filiales allemande et marocaine ne sont pas soumises à l'IS français ; elles ne peuvent pas être membres.",
+            "Inexact : l'implantation dans l'Union n'ouvre pas l'intégration ; elle joue seulement sur la quote-part des dividendes de la GmbH.",
+            "Inexact : Hydrolab n'est détenue qu'à 90 %, sous le seuil de 95 % de l'article 223 A.",
+            "Exact : seule Ostral Services (97 %, soumise à l'IS français) remplit les conditions de l'article 223 A avec la mère."
           ],
           "explanation": "Seules peuvent être membres les sociétés soumises à l'IS en France dont la mère détient 95 % au moins du capital de manière continue au cours de l'exercice (CGI art. 223 A) : Ostral Services (97 %) remplit ces conditions. Hydrolab, détenue à 90 %, en est exclue (option 3 fausse). Les filiales allemande et marocaine ne sont pas soumises à l'IS français et ne peuvent pas être membres, quel que soit le pourcentage détenu (options 1 et 2 fausses) ; l'implantation de la GmbH dans l'Union n'a d'effet que sur le taux de la quote-part de frais et charges de ses dividendes (question 6)."
         },

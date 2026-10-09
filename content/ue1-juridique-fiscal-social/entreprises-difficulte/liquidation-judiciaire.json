@@ -173,6 +173,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : le délai de deux mois ne court pas du jugement mais de sa publication au BODACC (R622-24).",
+            "Exact : la déclaration intervient dans les deux mois de la publication du jugement au BODACC (R622-24), soit le 12 juin N.",
+            "Inexact : le délai de quatre mois ne bénéficie qu'aux créanciers établis hors de France métropolitaine.",
+            "Inexact : l'échéance est indifférente ; les créances non échues sont déclarées et deviennent exigibles par le jugement de liquidation."
+          ],
           "explanation": "Les créanciers déclarent leurs créances dans les deux mois de la publication du jugement d'ouverture au BODACC (C. com. art. R622-24, applicable en liquidation), soit jusqu'au 12 juin N : option 2. Le délai ne court pas de la date du jugement (option 1). Le délai de quatre mois (option 3) ne bénéficie qu'aux créanciers établis hors de France métropolitaine. L'échéance de la créance est indifférente (option 4) : les créances non échues sont déclarées et deviennent d'ailleurs exigibles par le jugement de liquidation."
         },
         {

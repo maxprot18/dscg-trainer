@@ -114,6 +114,12 @@
           ],
           "answer": [1],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : la SARL est rigide (gérance, majorités légales, au plus 100 associés) et peu adaptée à l'arrivée d'un fonds.",
+            "Exact : la SAS organise librement sa direction (L227-5) et admet inaliénabilité, agrément et exclusion (L227-13, L227-14, L227-16).",
+            "Inexact : la SA n'est pas la seule forme ouverte à un fonds, et son fonctionnement est très encadré.",
+            "Inexact : la SNC expose les associés à une responsabilité indéfinie et solidaire, ce qui ne rassure pas les investisseurs."
+          ],
           "explanation": "La SAS permet d'organiser librement la direction (L227-5) et d'insérer des clauses d'inaliénabilité (L227-13), d'agrément (L227-14) et d'exclusion (L227-16) : option 2. La SARL (option 1) est rigide (gérance, majorités légales, au plus 100 associés) et peu adaptée à l'arrivée d'un fonds. La SA (option 3) n'est pas la seule forme ouverte à un fonds ; son fonctionnement est très encadré. La SNC (option 4) expose les associés à une responsabilité indéfinie et solidaire."
         },
         {

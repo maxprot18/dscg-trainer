@@ -184,6 +184,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : vision trop étroite ; clients, commune et salariés affectent l'entreprise ou sont affectés par elle.",
+            "Inexact : vision trop étroite ; clients et commune sont aussi des parties prenantes au sens de Freeman.",
+            "Exact : clients, commune et salariés peuvent affecter les objectifs de l'entreprise ou être affectés par elle : parties prenantes au sens large.",
+            "Inexact : la commune n'a pas de lien contractuel avec l'entreprise, mais elle est affectée par ses rejets d'eau."
+          ],
           "explanation": "L'option 3 est exacte : clients, commune et salariés peuvent affecter les objectifs de l'entreprise ou être affectés par elle ; ce sont des parties prenantes au sens large de Freeman. Les options 1 et 2 sont fausses : elles adoptent une vision trop étroite. L'option 4 est fausse : la commune n'a pas de lien contractuel avec l'entreprise, mais elle est affectée par ses rejets d'eau."
         },
         {

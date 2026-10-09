@@ -143,6 +143,12 @@
             2
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : L330-3 impose 20 jours au moins entre la remise du DIP et la signature ou tout versement.",
+            "Inexact : le délai légal est de 20 jours (L330-3), non de 15.",
+            "Exact : L330-3 impose une remise au moins 20 jours avant la signature ou le versement de toute somme.",
+            "Inexact : 30 jours excède le minimum légal ; L330-3 exige 20 jours."
+          ],
           "explanation": "L'article L330-3 du Code de commerce impose une remise au moins 20 jours avant la signature du contrat ou le versement de toute somme (option 3). Ici, du 2 au 14 juin, il ne s'écoule que 12 jours : la signature doit être reportée au 22 juin au plus tôt, et le droit d'entrée ne peut pas être versé avant."
         },
         {

@@ -194,6 +194,12 @@
           "answer": [
             0
           ],
+          "option_explanations": [
+            "Exact : SPI = 910 000 ÷ 1 000 000 = 0,91 (retard) et CPI = 0,875 (dépassement de coût).",
+            "Inexact : comparer CR (1 040 000 €) à VP (1 000 000 €) mélange coût et délai : moins de travail fait, et plus cher.",
+            "Inexact : l'avance du lot 3 (+60 000 €) ne compense pas le retard du lot 2 (−150 000 €).",
+            "Inexact : le CPI de 0,875 est inférieur à 1 : le travail réalisé a coûté plus que son budget."
+          ],
           "explanation": "L'option 1 est exacte : SPI = VA ÷ VP = 910 000 ÷ 1 000 000 = 0,91 (écart de délai −90 000 €) et CPI = 0,875 (écart de coût −130 000 €). L'option 2 reprend l'erreur du directeur financier : comparer CR (1 040 000 €) à VP (1 000 000 €) mélange les effets coût et délai ; en réalité moins de travail que prévu a été fait, et il a coûté plus cher que son budget. L'option 3 est fausse : l'avance sur le lot 3 (+60 000 €) ne compense pas le retard du lot 2 (−150 000 €). L'option 4 est fausse : le CPI est inférieur à 1."
         },
         {

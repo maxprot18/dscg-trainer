@@ -165,6 +165,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : la transaction est récurrente (activité permanente), donc fréquente, et non rare.",
+            "Exact : moules et réglages dédiés, deux prestataires seulement : la spécificité des actifs expose Cérès à un hold-up à la renégociation.",
+            "Inexact : la demande est saisonnière et les lancements fréquents ; l'incertitude est réelle.",
+            "Inexact : la manipulation du flacon breveté n'a rien de standard."
+          ],
           "explanation": "L'option 2 est exacte : les moules et réglages dédiés et le très petit nombre de prestataires capables exposent Cérès à un risque de hold-up à la renégociation. L'option 1 est fausse : la transaction est récurrente (activité permanente), donc fréquente. L'option 3 est fausse : la demande est saisonnière et les lancements fréquents, l'incertitude est réelle. L'option 4 est fausse : la manipulation du flacon breveté n'a rien de standard."
         },
         {

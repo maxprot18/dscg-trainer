@@ -162,6 +162,12 @@
             2
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : la liberté de négociation est bornée par le plafond d'ordre public de L441-10 (60 jours après émission).",
+            "Inexact : l'inscription dans les CGV ne permet pas de dépasser le plafond légal de L441-10.",
+            "Exact : L441-10 plafonne le délai convenu à 60 jours après émission de la facture, ou 45 jours fin de mois si stipulé.",
+            "Inexact : le délai de 30 jours ne s'applique qu'à défaut de stipulation ; il n'est pas impératif."
+          ],
           "explanation": "L'article L441-10 du Code de commerce plafonne le délai convenu à 60 jours après la date d'émission de la facture ou, par dérogation, à 45 jours fin de mois si ce délai est expressément stipulé et ne constitue pas un abus manifeste (option 3). Le délai de 30 jours (option 4) ne s'applique qu'à défaut de stipulation. Les options 1 et 2 ignorent ce plafond légal d'ordre public."
         },
         {

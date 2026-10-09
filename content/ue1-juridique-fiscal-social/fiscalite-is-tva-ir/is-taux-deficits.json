@@ -190,6 +190,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : l'option oublie les 160 000 € d'acomptes déjà versés, supérieurs à l'IS dû de 75 000 €.",
+            "Inexact : l'écart de 85 000 € est inversé ; les acomptes excèdent l'IS dû, la société est créancière.",
+            "Exact : acomptes de 160 000 € moins IS dû de 75 000 € : l'excédent de 85 000 € est restitué (CGI art. 1668).",
+            "Inexact : l'excédent d'acomptes n'est pas perdu ; il est restitué à la société (CGI art. 1668)."
+          ],
           "explanation": "Acomptes versés : 160 000 € ; IS dû : 75 000 €. L'excédent de 85 000 € est restitué à la société (CGI art. 1668) : option 3. L'option 1 oublie les acomptes déjà versés ; l'option 2 inverse le sens de l'écart ; l'option 4 est fausse, l'excédent n'est pas perdu."
         },
         {

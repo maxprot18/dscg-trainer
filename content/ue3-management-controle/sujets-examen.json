@@ -85,6 +85,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : une vedette suppose une PMR supérieure à 1 ; celle de l'éclairage public n'est que de 0,69.",
+            "Exact : public, croissance de 8,43 % et PMR de 0,69 : dilemme ; tertiaire, croissance de 1,2 % et PMR de 1,41 : vache à lait.",
+            "Inexact : un poids mort suppose une PMR inférieure à 1 ; or Lumen domine le tertiaire (PMR ≈ 1,41).",
+            "Inexact : lecture de la croissance inversée ; le public croît au-dessus du seuil de 5 %, le tertiaire en dessous."
+          ],
           "explanation": "L’option 2 est exacte. Éclairage public : croissance de 8,43 % supérieure au seuil de 5 %, PMR de 0,69 inférieure à 1, donc dilemme : le DAS consomme des liquidités et impose un choix (investir pour devenir leader ou se retirer). Éclairage tertiaire : croissance de 1,2 % inférieure au seuil, PMR = 38 ÷ 27 ≈ 1,41 supérieure à 1 (Lumen est leader), donc vache à lait, qui peut financer le dilemme. L’option 1 est fausse : une vedette suppose une PMR supérieure à 1. L’option 3 est fausse : un poids mort suppose une PMR inférieure à 1, or Lumen domine le tertiaire. L’option 4 est fausse : elle inverse la lecture de la croissance, car le marché public croît au-dessus du seuil (ce n’est pas un poids mort) et le tertiaire en dessous (ce n’est pas une vedette)."
         },
         {
@@ -116,6 +122,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : la certification, détenue par les quatre acteurs nationaux, n'est pas rare ; elle ne donne qu'une parité concurrentielle.",
+            "Inexact : un logiciel vendu sous licence à tout le secteur n'est pas rare.",
+            "Exact : optique valorisable, rare, protégée par brevet et savoir-faire tacite, exploitée par un bureau d'études dédié : les quatre critères VRIO réunis.",
+            "Inexact : la même ligne a été livrée à Eclairis ; achetable, elle est imitable."
+          ],
           "explanation": "L’option 3 est exacte : l’optique est valorisable (appréciée des syndicats d’énergie, annexe 4), rare (propre à Lumen), difficile à imiter (brevet jusqu’en 2034, savoir-faire tacite d’une équipe stable depuis vingt ans, amélioré chaque année) et exploitée par une organisation dédiée (bureau d’études) : les quatre critères sont réunis. L’option 1 est fausse : la certification est valorisable mais détenue par les quatre acteurs nationaux, elle ne donne qu’une parité concurrentielle. L’option 2 est fausse : un logiciel vendu à tout le secteur n’est pas rare. L’option 4 est fausse : la même ligne a été livrée à Eclairis, elle est achetable donc imitable."
         },
         {
@@ -131,6 +143,12 @@
           ],
           "answer": [
             0
+          ],
+          "option_explanations": [
+            "Exact : vendre une performance transforme la proposition de valeur, exige de nouvelles compétences et une organisation nouvelle, avec des revenus récurrents.",
+            "Inexact : les trois composantes du RCOV sont touchées et doivent rester cohérentes.",
+            "Inexact : la concurrence relève du diagnostic externe, ni du RCOV ni du Canvas.",
+            "Inexact : dans l'offre garantie, le client paie une redevance annuelle et non un prix unitaire à l'installation."
           ],
           "explanation": "L’option 1 est exacte : vendre une performance (lumière garantie, économies d’énergie) plutôt qu’un matériel transforme la proposition de valeur, exige de nouvelles ressources et compétences (logiciel, maintenance, engagement de résultat) et une organisation nouvelle (pose, pilotage, relation contractuelle longue), d’où des revenus récurrents sous forme de redevances et un besoin de financement accru. L’option 2 est fausse : les trois composantes sont touchées et elles doivent rester cohérentes. L’option 3 est fausse : la concurrence relève du diagnostic externe, ni du RCOV ni du Canvas. L’option 4 est fausse : dans l’offre garantie, le client paie une redevance annuelle et non un prix unitaire à l’installation."
         },
@@ -203,6 +221,12 @@
           ],
           "answer": [
             3
+          ],
+          "option_explanations": [
+            "Inexact : la pseudo-concentration porte sur un produit final commun vendu ensemble.",
+            "Inexact : l'alliance complémentaire associe des apports de nature différente, par exemple un produit contre un réseau de distribution.",
+            "Inexact : une alliance laisse les partenaires juridiquement indépendants, alors qu'une fusion les réunit.",
+            "Exact : élément commun (module de communication) monté sur des produits finals concurrents vendus sous leur marque : co-intégration."
           ],
           "explanation": "L’option 4 est exacte : les partenaires mettent en commun la conception et la fabrication d’un élément (le module de communication) monté sur leurs propres produits finals, qui restent concurrents et vendus sous leur marque : c’est une co-intégration, qui recherche des économies d’échelle sur le composant partagé. L’option 1 est fausse : la pseudo-concentration porte sur un produit final commun vendu ensemble. L’option 2 est fausse : l’alliance complémentaire associe des apports de nature différente (par exemple un produit contre un réseau de distribution). L’option 3 est fausse : une alliance laisse les partenaires juridiquement indépendants, alors qu’une fusion les réunit."
         },
@@ -283,6 +307,12 @@
           ],
           "answer": [
             2
+          ],
+          "option_explanations": [
+            "Inexact : aucune relation mesurable entre dépense juridique et production : centre de dépenses discrétionnaires, évalué sur son budget.",
+            "Inexact : le directeur de la Biscuiterie maîtrise aussi ses coûts de production et est évalué sur un résultat : centre de profit.",
+            "Exact : le directeur maîtrise produits et charges, est évalué sur un résultat, sans décider des investissements : centre de profit.",
+            "Inexact : le chef d'atelier est évalué sur des coûts standards par paquet ; utiliser des machines n'est pas décider de leur acquisition."
           ],
           "explanation": "L’option 3 est exacte : le directeur de la Meunerie maîtrise produits et charges et il est évalué sur un résultat, sans décider des investissements : centre de profit (et non d’investissement). L’option 1 est fausse : il n’existe pas de relation mesurable entre la dépense juridique et une production, c’est un centre de dépenses discrétionnaires évalué sur le respect de son budget (380 000 €). L’option 2 est fausse : le directeur de la Biscuiterie maîtrise aussi ses coûts de production et il est évalué sur un résultat : centre de profit. L’option 4 est fausse : le chef d’atelier est évalué sur des coûts standards par paquet : centre de coûts standards ; utiliser des machines ne signifie pas en décider l’acquisition."
         },
@@ -406,6 +436,12 @@
           "answer": [
             3
           ],
+          "option_explanations": [
+            "Inexact : seules 100 t sont produites sur capacité libre ; à 0,34 €/kg, la Meunerie perdrait 18 000 € et refuserait.",
+            "Inexact : le coût complet réel transmettrait les inefficiences du vendeur à l'acheteur ; on retient un coût standard.",
+            "Inexact : le PCI ne fait que répartir le résultat du groupe entre les divisions.",
+            "Exact : la Meunerie gagne dès 0,43 €/kg, la Biscuiterie jusqu'à 0,53 €/kg (offre externe) ; à 0,52 €/kg : 18 000 € contre 2 000 €."
+          ],
           "explanation": "L’option 4 est exacte : la Meunerie gagne à céder dès que le PCI couvre 0,43 €/kg, la Biscuiterie gagne à acheter en interne tant que le PCI ne dépasse pas l’offre externe de 0,53 €/kg ; à 0,52 €/kg, la Meunerie reçoit 104 000 € pour un coût de 86 000 € (+18 000 €) et la Biscuiterie économise 106 000 − 104 000 = 2 000 €. Le PCI de 0,52 €/kg est donc congruent, mais le partage est déséquilibré, ce qui explique les tensions ; un prix négocié dans la fourchette répartirait mieux le gain. L’option 1 est fausse : seules 100 t sont produites sur capacité libre, et à 0,34 €/kg la Meunerie perdrait 18 000 € et refuserait. L’option 2 est fausse : le coût complet réel transmettrait les inefficiences du vendeur à l’acheteur ; on retient un coût standard. L’option 3 est fausse : le PCI ne fait que répartir le résultat du groupe entre divisions."
         },
         {
@@ -421,6 +457,12 @@
           ],
           "answer": [
             0
+          ],
+          "option_explanations": [
+            "Exact : la formation développe les compétences (axe apprentissage) et agit en amont sur les processus : indicateur de pilotage.",
+            "Inexact : le taux de rebut mesure la qualité d'un processus interne (axe processus), même s'il influence le service client.",
+            "Inexact : le chiffre d'affaires constate une performance déjà réalisée ; c'est un indicateur de résultat.",
+            "Inexact : le scorecard d'origine n'a pas d'indicateur environnemental dans l'axe financier ; les émissions relèvent d'un axe ajouté ou de l'axe processus."
           ],
           "explanation": "L’option 1 est exacte : la formation développe les compétences (axe apprentissage) et agit en amont sur la qualité des processus, donc sur le résultat : c’est un indicateur de pilotage. L’option 2 est fausse : le taux de rebut mesure la qualité d’un processus interne (axe processus), même s’il influence ensuite le service client. L’option 3 est fausse : le chiffre d’affaires constate une performance déjà réalisée, c’est un indicateur de résultat. L’option 4 est fausse : le scorecard d’origine ne comporte pas d’indicateur environnemental dans l’axe financier ; les émissions s’intègrent dans un axe sociétal ou environnemental ajouté (scorecard durable) ou dans l’axe processus."
         },

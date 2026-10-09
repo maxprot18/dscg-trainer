@@ -162,6 +162,12 @@
           ],
           "answer": [3],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : 9 715 k€ est la valeur d'entreprise, avant déduction de l'endettement net de 3 780 k€.",
+            "Inexact : l'option utilise la moyenne (7,7), tirée vers le haut par la valeur extrême 9,8, au lieu de la médiane.",
+            "Inexact : la médiane est appliquée à l'EBE de 2024 (1 470), alors que les multiples portent sur 2025.",
+            "Exact : médiane 7,25 × EBE 2025 de 1 340 = 9 715 ; moins l'endettement net de 3 780 : 5 935 k€."
+          ],
           "explanation": "Médiane des quatre multiples boursiers (6,5 ; 7,0 ; 7,5 ; 9,8) = (7,0 + 7,5) / 2 = 7,25. VE = 7,25 × EBE 2025 de 1 340 = 9 715 ; valeur des capitaux propres = 9 715 − 3 780 = 5 935 k€ (option 4), sans décote ni prime selon l'annexe 4. L'option 1 est la valeur d'entreprise, avant déduction de l'endettement net. L'option 2 utilise la moyenne (7,7), tirée vers le haut par la valeur extrême 9,8. L'option 3 applique la médiane à l'EBE de 2024 (1 470), alors que les multiples portent sur 2025."
         },
         {
@@ -355,6 +361,12 @@
           ],
           "answer": [2],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : l'option ignore la prime ; entre 1,0928 et 1,1000, l'option abandonnée rapporte moins que le terme.",
+            "Inexact : le cours à terme ignore la prime de 5 400 € payée pour l'option.",
+            "Exact : l'option abandonnée bat le terme si 495 000 / S − 5 400 > 447 552, soit S < 1,0928 USD pour 1 €.",
+            "Inexact : si le dollar baisse, l'option est exercée et rapporte 444 600 €, moins que le terme (447 552 €)."
+          ],
           "explanation": "L'option ne bat le terme que si elle est abandonnée et que le dollar s'est apprécié : 495 000 / S − 5 400 > 447 552, soit S < 495 000 / 452 952 ≈ 1,0928 USD pour 1 € (option 3). L'option 1 ignore la prime et la comparaison avec le terme : entre 1,0928 et 1,1000, l'option est abandonnée mais rapporte moins que le terme. L'option 2 ignore la prime. L'option 4 correspond à une baisse du dollar : l'option est alors exercée et rapporte 450 000 − 5 400 = 444 600 €, moins que le terme (447 552 €)."
         },
         {

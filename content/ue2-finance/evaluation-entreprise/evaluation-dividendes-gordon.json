@@ -238,6 +238,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : la cotation n'est pas une condition d'application du modèle de Gordon-Shapiro.",
+            "Inexact : le taux de distribution n'est pas une condition d'application ; seule compte la condition g < k.",
+            "Exact : g (12 %) dépasse k (10 %) : la série des dividendes actualisés diverge et D₁ / (k − g) perd tout sens.",
+            "Inexact : la connaissance du BPA de N n'est pas une condition d'application du modèle."
+          ],
           "explanation": "La formule D₁ / (k − g) n’a de sens que si g < k ; avec g = 12 % > k = 10 %, la série des dividendes actualisés diverge et la formule donne une valeur négative (option 3). Une croissance aussi forte ne peut être que temporaire, d’où le modèle de Bates. Les options 1, 2 et 4 ne sont pas des conditions d’application du modèle."
         },
         {

@@ -195,6 +195,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : les filiales sont françaises ; la centralisation n'engendre pas de risque de change.",
+            "Exact : en zero balancing, les excédents de F1 sont virés à Velter SA : F1 détient une créance intragroupe exposée à la défaillance de la holding.",
+            "Inexact : F1 est structurellement excédentaire ; elle n'a pas de découvert exposé au risque de taux.",
+            "Inexact : la centralisation de trésorerie est sans effet sur le droit à déduction de la TVA."
+          ],
           "explanation": "Avec le zero balancing, les excédents de F1 sont virés à Velter SA : F1 détient désormais une créance intragroupe et supporte le risque de défaillance de la holding (option 2). Il n’y a pas de risque de change (filiales françaises, option 1), F1 n’a pas de découvert (option 3) et la centralisation est sans effet sur la TVA (option 4)."
         },
         {

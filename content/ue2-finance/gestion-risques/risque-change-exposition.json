@@ -218,6 +218,12 @@
             2
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : la VaR n'est pas une perte maximale ; les pertes au-delà du seuil ne sont pas bornées.",
+            "Inexact : la VaR n'est pas une perte probable ; c'est un seuil que la perte ne dépasse pas avec 99 % de confiance.",
+            "Exact : la VaR est un quantile à 99 % : la perte sur 10 jours ne dépasse ce montant que dans 1 % des cas.",
+            "Inexact : la VaR n'est pas une perte moyenne ; l'espérance de variation est supposée nulle."
+          ],
           "explanation": "La VaR est un quantile : avec 99 % de confiance, la perte sur 10 jours ne dépassera pas ce montant ; elle le dépasse dans 1 % des cas (option 3). Ce n’est pas une perte maximale (option 1), les pertes au-delà du seuil n’étant pas bornées, ni une perte probable ou moyenne (options 2 et 4) : l’espérance de variation est supposée nulle."
         },
         {

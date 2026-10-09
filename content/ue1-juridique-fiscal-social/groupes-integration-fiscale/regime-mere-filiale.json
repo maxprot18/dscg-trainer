@@ -140,6 +140,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : avec 4 % du capital, Arbelle n'atteint pas le seuil de 5 % du régime mère-fille (CGI art. 145).",
+            "Inexact : la déduction suppose le régime mère-fille, inaccessible sous le seuil de 5 % du capital.",
+            "Exact : 4 % du capital, sous le seuil de 5 % (art. 145) : le dividende est imposé au taux normal.",
+            "Inexact : confusion avec le régime des plus-values sur titres de participation (0 %, quote-part de 12 %)."
+          ],
           "explanation": "Avec 4 % du capital, Arbelle n'atteint pas le seuil de 5 % du régime mère-fille (CGI art. 145) : le dividende reste compris dans le résultat imposable au taux normal (option 3). La durée de détention ne compense pas l'insuffisance du pourcentage. L'option 4 confond avec le régime des plus-values sur titres de participation."
         },
         {

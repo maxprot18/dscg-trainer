@@ -192,6 +192,11 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : l'option confond EVA annuelle et création de valeur, mesurée par la VAN sur toute la durée du programme.",
+            "Exact : la création de valeur se mesure par la VAN, valeur actuelle des EVA futures ; une EVA négative la première année est fréquente.",
+            "Inexact : les fours sont des immobilisations d'exploitation, incluses dans le capital économique."
+          ],
           "explanation": "La création de valeur d'un investissement se mesure par la VAN, égale à la valeur actuelle des EVA futures qu'il génère. Une EVA négative la première année est fréquente pour un investissement dont les gains croissent (option 2). L'option 1 confond EVA annuelle et création de valeur. L'option 3 est fausse : les fours sont des immobilisations d'exploitation, incluses dans le capital économique."
         },
         {

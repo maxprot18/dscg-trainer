@@ -144,6 +144,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : l'option inverse la charge de la preuve ; l'administration doit établir dépendance et avantage, Talma justifiant ensuite d'une contrepartie.",
+            "Exact : l'administration prouve la dépendance (filiale à 100 %) et l'avantage consenti par rapport aux indépendants (CGI art. 57).",
+            "Inexact : l'article 57 n'exige aucune intention frauduleuse.",
+            "Inexact : le régime fiscal privilégié dispense seulement de prouver la dépendance ; ce n'est pas une condition de l'article 57."
+          ],
           "explanation": "L'administration doit prouver la dépendance (ici juridique : filiale à 100 %) et l'avantage (écart avec les prix pratiqués avec des indépendants, prêt sans intérêts) ; Talma peut ensuite justifier d'une contrepartie (CGI art. 57) : option 2. L'option 1 inverse la charge de la preuve. Aucune intention frauduleuse n'est exigée (option 3). Le régime fiscal privilégié (option 4) dispense seulement l'administration de prouver la dépendance ; il n'est pas une condition de l'article 57."
         },
         {

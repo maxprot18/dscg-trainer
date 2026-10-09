@@ -130,6 +130,12 @@
             3
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : l'AGE est seule compétente pour décider l'augmentation de capital ; le conseil n'agit que sur sa délégation (L. 225-129).",
+            "Inexact : le DPS détaché d'actions négociables est lui-même négociable pendant la période de souscription (L. 225-132).",
+            "Inexact : la souscription exige un quart au moins du nominal et toute la prime ; le solde peut être appelé dans les cinq ans (L. 225-144).",
+            "Exact : délégation de 26 mois au plus (L. 225-129-2), 6 M€ sous le plafond de 8 M€, souscription d'au moins cinq jours de bourse (L. 225-141)."
+          ],
           "explanation": "L'option 4 est exacte : la délégation de compétence ne peut excéder 26 mois (C. com. art. L. 225-129-2), soit jusqu'au 10 août 2028, et l'émission de 6 M€ de nominal (3 000 000 × 2 €) respecte le plafond de 8 M€ ; le délai de souscription est d'au moins cinq jours de bourse (L. 225-141). L'option 1 est fausse : l'AGE est seule compétente pour décider une augmentation de capital, le conseil n'agissant que sur sa délégation (L. 225-129). L'option 2 est fausse : le DPS détaché d'actions négociables est lui-même négociable pendant la période de souscription (L. 225-132). L'option 3 est fausse : la loi impose la libération d'un quart au moins du nominal et de la totalité de la prime à la souscription, le solde pouvant être appelé dans les cinq ans (L. 225-144)."
         },
         {
@@ -211,6 +217,12 @@
             2
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : la baisse mécanique liée au droit intervient au détachement, qui ouvre la négociation des droits, pas à l'annonce.",
+            "Inexact : sans impôt, Modigliani et Miller concluent à la neutralité de la structure financière.",
+            "Exact : selon Myers et Majluf, les dirigeants émettent plutôt des actions jugées surévaluées ; le marché corrige le cours dès l'annonce.",
+            "Inexact : l'augmentation de capital réduit l'endettement relatif, donc le risque financier et le coût des capitaux propres."
+          ],
           "explanation": "L'option 3 est exacte : selon Myers et Majluf, les dirigeants, mieux informés, émettent plus volontiers des actions quand ils les jugent surévaluées ; le marché corrige le cours à l'annonce, ce qui explique que l'augmentation de capital soit la source de dernier recours du financement hiérarchique. L'option 1 est fausse : la baisse mécanique liée au droit intervient le jour du détachement, qui ouvre la période de négociation des droits, pas à l'annonce. L'option 2 est fausse : sans impôt, Modigliani et Miller concluent à la neutralité de la structure financière. L'option 4 est fausse : une augmentation de capital réduit l'endettement relatif, donc le risque financier et le coût des capitaux propres."
         },
         {
@@ -380,6 +392,12 @@
             2
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : dans la cession Dailly, le cédant reste, sauf convention contraire, garant solidaire du paiement (C. mon. fin. L. 313-24).",
+            "Inexact : le crédit de campagne finance un besoin saisonnier ; une hausse durable du BFR appelle une ressource stable.",
+            "Exact : le factor supporte l'insolvabilité des débiteurs dans l'affacturage avec garantie et facture commissions d'affacturage et de financement.",
+            "Inexact : ici le découvert (4,10 % hors commissions) est moins cher que la cession Dailly (4,77 %) ; il est seulement plafonné."
+          ],
           "explanation": "L'option 3 est exacte : le factor achète les créances, assure leur recouvrement et, dans l'affacturage avec garantie, supporte l'insolvabilité des débiteurs ; il facture une commission d'affacturage sur les créances cédées et une commission de financement sur les sommes avancées. L'option 1 est fausse : dans la cession Dailly, le cédant reste, sauf convention contraire, garant solidaire du paiement des créances cédées (C. mon. fin. art. L. 313-24). L'option 2 est fausse : le crédit de campagne finance un besoin saisonnier remboursé par les ventes de la saison, pas une hausse durable du BFR, qui appelle des mesures sur le BFR ou une ressource stable. L'option 4 est fausse : ici le découvert (4,10 % hors commissions) est moins cher que la cession Dailly (4,77 %) ; il est seulement plafonné à 3 000."
         },
         {
@@ -425,6 +443,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : les nominaux des instruments financiers à terme ne sont pas inscrits au bilan, mais dans les engagements hors bilan (art. 628-1).",
+            "Exact : en couverture, les différentiels sont reconnus symétriquement aux intérêts couverts, sans variation de valeur au bilan (PCG art. 628-11).",
+            "Inexact : en position ouverte isolée, les gains latents n'entrent pas en résultat ; seules les pertes latentes sont provisionnées (art. 628-18).",
+            "Inexact : la valeur se détermine par référence au marché ou par des modèles admis (art. 628-5), et le nominal figure hors bilan."
+          ],
           "explanation": "L'option 2 est exacte : en comptabilité de couverture, les produits et charges de l'instrument de couverture sont reconnus en résultat de manière symétrique à ceux de l'élément couvert, dans le même poste ou la même rubrique, et ses variations de valeur ne sont pas reconnues au bilan sauf pour assurer cette symétrie (PCG art. 628-11). L'option 1 est fausse : les nominaux des instruments financiers à terme ne sont pas comptabilisés au bilan, ils sont mentionnés dans les engagements hors bilan (art. 628-1). L'option 3 est fausse : en position ouverte isolée, les gains latents n'interviennent pas dans le résultat ; seules les pertes latentes sont provisionnées (art. 628-18). L'option 4 est fausse : la valeur des contrats se détermine par référence au marché ou par des modèles d'évaluation généralement admis (art. 628-5), et le nominal figure dans les engagements hors bilan. Si le groupe établissait ses comptes en IFRS, le swap qui fixe les intérêts d'une dette variable serait une couverture de flux de trésorerie : sa juste valeur figurerait au bilan, la partie efficace de ses variations en autres éléments du résultat global (IFRS 9 §6.5.11)."
         },
         {

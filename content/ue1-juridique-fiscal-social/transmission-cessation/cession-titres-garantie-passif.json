@@ -211,6 +211,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : la non-concurrence protège la valeur de la clientèle, pas le recouvrement de l'indemnité.",
+            "Exact : la garantie de la garantie (caution bancaire, séquestre, paiement différé) assure le paiement effectif de l'indemnité.",
+            "Inexact : l'agrément contrôle l'entrée de nouveaux associés ; il ne garantit pas le paiement des cédants.",
+            "Inexact : allonger la durée n'apporte aucune sûreté si le cédant est insolvable ou hors d'atteinte."
+          ],
           "explanation": "La garantie de la garantie (caution bancaire, garantie à première demande, séquestre d'une fraction du prix ou paiement différé) assure le paiement effectif de l'indemnité (option 2). La non-concurrence (option 1) protège la valeur de la clientèle, pas le recouvrement. L'agrément (option 3) contrôle l'entrée de nouveaux associés. Allonger la durée (option 4) n'apporte aucune sûreté si le débiteur est insolvable ou hors d'atteinte."
         },
         {

@@ -192,6 +192,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : seule la marge de Visiora baisse ; disposition à payer et coûts d'opportunité inchangés, la valeur créée reste 260 €.",
+            "Exact : valeur créée inchangée (400 − 140 = 260 €) ; la marge de Visiora tombe à 90 €, celle du fournisseur monte à 50 €.",
+            "Inexact : le fournisseur capte davantage sans rien créer de plus ; la valeur créée reste 260 €.",
+            "Inexact : le partage est modifié : 20 € passent de Visiora au fournisseur."
+          ],
           "explanation": "L'option 2 est exacte : la disposition à payer (400 €) et les coûts d'opportunité (140 €) ne changent pas, la valeur créée reste 260 € ; la marge de Visiora tombe à 90 € et celle du fournisseur passe à 50 €. L'option 1 est fausse : seule la marge de Visiora baisse, pas la valeur totale. L'option 3 est fausse : le fournisseur capte davantage sans rien créer de plus. L'option 4 est fausse : le partage est modifié."
         },
         {
