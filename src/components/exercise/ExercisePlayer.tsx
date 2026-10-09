@@ -24,6 +24,7 @@ import { exerciseParts, STAGE_LABELS } from '@/engine/parts'
 import { formatNumber } from '@/engine/numbers'
 import { useKeyboard } from '@/hooks/useKeyboard'
 import { exerciseIssueUrl } from '@/lib/report'
+import { cn } from '@/lib/utils'
 
 import { Explanation, Verdict } from './Feedback'
 import { PartView } from './parts'
@@ -215,7 +216,8 @@ export function ExercisePlayer({ exercise, onComplete, deferFeedback = false, re
   }
 
   return (
-    <article className="flex flex-col gap-5">
+    // Largeur de lecture limitée sur grand écran (sauf sujets type d'examen, présentés sur deux colonnes).
+    <article className={cn('flex flex-col gap-5', !dossier && 'lg:max-w-3xl')}>
       <div className="flex flex-wrap items-center gap-2">
         <Badge>
           <TypeIcon type={exercise.type} className="size-3.5" /> {TYPE_LABELS[exercise.type]}

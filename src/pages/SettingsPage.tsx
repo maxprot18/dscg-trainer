@@ -103,11 +103,14 @@ export function SettingsPage() {
       <Card>
         <CardHeader>
           <CardTitle>Entraînement</CardTitle>
-          <CardDescription>Objectif affiché sur l’accueil et taille des sessions.</CardDescription>
+          <CardDescription>
+            Objectif affiché sur l’accueil et taille des sessions. Avec une date d’examen à venir, l’objectif du jour suit le
+            rythme du plan de révision.
+          </CardDescription>
         </CardHeader>
         <CardContent className="flex flex-col gap-3">
           <label className="flex items-center justify-between gap-3 text-sm">
-            Objectif quotidien
+            Objectif quotidien (sans examen)
             <select
               className={selectClass}
               value={settings.dailyGoal}
