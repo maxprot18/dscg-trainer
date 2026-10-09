@@ -1,5 +1,18 @@
 # Journal des versions
 
+## 1.6.0 (octobre 2026)
+
+Suites de l'audit v4 (`docs/audit-v4.md`) : mode épreuve, ergonomie, contenu.
+
+- **Vrai mode épreuve** (examen blanc et sujet complet) : palette de navigation entre les exercices (traité, commencé, à faire), boutons Précédent / Suivant, questions d'un dossier affichées d'emblée et traitées dans l'ordre voulu, réponses retrouvées verrouillées, alertes à 15 et 5 minutes de la fin ; tout exercice commencé est noté au prorata à la fin.
+- **Annexes à portée de main** : sur grand écran, énoncé et annexes des sujets type d'examen fixés à gauche des questions ; sur mobile, bouton « Annexes » qui les ouvre en plein écran.
+- **30 sujets type d'examen** (dix nouveaux, six par UE écrite) : LBO et pacte d'associés, conformité et responsabilité des dirigeants (UE 1) ; couverture de change et de taux, LBO et évaluation (UE 2) ; masse salariale et tableau de bord, risques et projet (UE 3) ; variations de périmètre, audit et opinion avec réserve (UE 4) ; migration SaaS, automatisation et IA (UE 5).
+- **Explication de chaque option** aussi pour les 256 QCM posés dans les cas : tous les QCM de l'application en ont une, relue.
+- **Accueil à une seule action** : « Séance du jour » quand un examen est à venir, sinon « Réviser », sinon « Commencer » ; un seul objectif quotidien (celui du plan d'examen quand il existe).
+- **S'entraîner regroupé** en quatre familles (Réviser, Cibler, Examen, Oral), sur deux colonnes en grand écran, avec la dernière UE choisie retenue ; largeur de lecture limitée pour les exercices sur grand écran.
+- **Vérification** : le Code pénal est désormais téléchargé et ses articles cités sont contrôlés par `npm run check:refs`.
+- **Dépendances** : Dependabot ne propose plus de version majeure (migrations à faire à part) et groupe les mises à jour mineures.
+
 ## 1.5.1 (octobre 2026)
 
 - **Mises à jour** : l'application installée ou laissée ouverte vérifie maintenant les nouvelles versions au retour au premier plan et toutes les heures (auparavant seulement à une ouverture complète) ; bouton « Vérifier les mises à jour » et numéro de version dans les réglages.
