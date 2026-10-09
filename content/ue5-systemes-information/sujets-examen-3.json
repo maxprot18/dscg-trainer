@@ -1,0 +1,465 @@
+{
+  "exercises": [
+    {
+      "id": "ue5-dossier-0005",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "cloud-saas-externalisation",
+      "difficulty": 3,
+      "tags": [
+        "dossier",
+        "urbanisation",
+        "cartographie applicative",
+        "plateforme d'intégration",
+        "disponibilité",
+        "SaaS",
+        "niveaux de service",
+        "réversibilité",
+        "Data Act",
+        "RGPD",
+        "TCO",
+        "VAN",
+        "PERT",
+        "conduite du changement"
+      ],
+      "source_ref": "Règlement (UE) 2023/2854 (Data Act), art. 2 (points 34 à 36), 25, 29 et 50, considérants 88 et 89 ; RGPD art. 28 et 44 à 46 ; lignes directrices 05/2021 du CEPD sur les transferts internationaux ; Code du travail art. L. 1222-4 et L. 2312-38 ; définition du cloud du NIST (SP 800-145) ; démarche d'urbanisation du SI et TOGAF (ADM) ; méthode PERT",
+      "verified": true,
+      "estimated_seconds": 5100,
+      "total_points": 20,
+      "title": "Migration vers le SaaS : urbanisation, contrats et projet",
+      "context": "**Ferrand Électricité SAS**, dont le siège est à Clermont-Ferrand, distribue du matériel électrique aux artisans et aux entreprises du bâtiment par un réseau de seize agences en Auvergne-Rhône-Alpes et un site de commande en ligne. En 2025, elle a réalisé un chiffre d'affaires de 112 M€ HT avec 380 salariés, dont 140 commerciaux itinérants et sédentaires.\n\nSon système d'information s'est construit par ajouts successifs : un ERP de négoce, un logiciel de gestion de la relation client (CRM) dont l'éditeur cessera le support en juin 2027, un outil de devis développé en interne, des logiciels de paie et de gestion des temps installés sur des serveurs virtuels loués à l'hébergeur XHost ou sur un serveur du siège. Les applications échangent leurs données par des transferts de fichiers nocturnes.\n\nEn septembre 2026, la direction générale a validé le projet **Horizon** : passer à deux solutions SaaS, le CRM Kalio, qui comprend un module de devis, et le SIRH Ressourcia (paie, temps et absences, notes de frais). Une plateforme d'intégration (iPaaS) reliera ces services à l'ERP, qui reste pour l'instant chez XHost. Le SIRH doit démarrer le 1ᵉʳ janvier 2027, au début de l'année de paie ; le CRM suivra au printemps 2027.\n\nM. Lebrun, directeur administratif et financier et sponsor du projet, vous confie, en tant que consultant(e) en systèmes d'information, une mission en quatre volets : apprécier l'architecture cible au regard des principes d'urbanisation ; analyser les projets de contrats et la sortie de l'hébergeur XHost ; chiffrer le coût et la rentabilité du projet ; sécuriser le planning et la conduite du changement. Les données utiles figurent dans les annexes 1 à 5. Sauf mention contraire, les montants sont hors taxes.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Cartographie applicative actuelle et cible",
+          "content": "| Application | Domaine fonctionnel | Hébergement | Devenir |\n| --- | --- | --- | --- |\n| ERP Négoce | Ventes, achats, stocks, comptabilité | Serveurs virtuels XHost | Conservé (migration étudiée pour 2028) |\n| CRM Contact+ (version 2017) | Prospection, suivi des clients, opportunités | Serveurs virtuels XHost | Remplacé par Kalio |\n| DevisPro | Devis (base de données bureautique créée par un salarié parti à la retraite) | Serveur du siège | Remplacé par le module de devis de Kalio |\n| Site B2B | Commandes en ligne des artisans | Agence web | Conservé |\n| PaieOne | Paie | Serveurs virtuels XHost | Remplacé par Ressourcia |\n| Tempo | Temps, absences, badgeuses | Serveur du siège | Remplacé par Ressourcia |\n| Notes de frais | Tableur et justificatifs papier | Postes de travail | Remplacé par Ressourcia |\n| Messagerie et bureautique | Communication | SaaS | Conservé |\n| Reporting | Tableur alimenté par des extractions | Postes de travail | Remplacé par un outil de BI |\n\n**Constats du diagnostic** :\n- un client est créé dans quatre applications (ERP, CRM, DevisPro, site B2B), sous des codes différents ; 9 % des clients actifs ont au moins un doublon et les conditions de paiement diffèrent parfois d'une application à l'autre ;\n- les tarifs de l'ERP sont ressaisis chaque semaine dans DevisPro ; un devis sur six comporte un prix périmé ;\n- treize interfaces point à point (transferts de fichiers et scripts écrits par quatre prestataires successifs) fonctionnent sans documentation à jour ;\n- les données des salariés sont saisies dans PaieOne, dans Tempo et dans l'ERP (affectation analytique).\n\n**Cible** : huit applications reliées à la plateforme d'intégration (ERP, Kalio, Ressourcia, site B2B, outil de BI, messagerie, portail bancaire, plateforme agréée de facturation électronique). Chaque application dispose d'un connecteur vers la plateforme, qui transforme et achemine les flux."
+        },
+        {
+          "title": "Annexe 2 — Chaîne de prise de commande et responsabilités en mode SaaS",
+          "content": "Après le démarrage de Kalio, le commercial saisit le devis puis la commande dans Kalio ; la plateforme d'intégration transmet la commande à l'ERP, qui contrôle le stock et l'encours du client. Les quatre composants ci-dessous sont tous nécessaires à la prise de commande en agence ; leurs pannes sont supposées indépendantes.\n\n| Composant | Disponibilité annuelle retenue |\n| --- | --- |\n| Lien internet de l'agence (fibre, opérateur unique) | 99,5 % |\n| Kalio (engagement contractuel, annexe 3) | 99,9 % |\n| Plateforme d'intégration | 99,95 % |\n| ERP hébergé chez XHost | 99,8 % |\n\nUne année compte 8 760 heures. Trois agences rurales ont subi en 2026 des coupures de fibre de plus d'une journée. Un lien de secours 4G coûte 45 € par mois et par agence.\n\n**Responsabilités** : l'éditeur SaaS exploite l'application, l'infrastructure et les sauvegardes ; Ferrand Électricité gère les comptes des utilisateurs, les habilitations, le paramétrage et la qualité de ses données."
+        },
+        {
+          "title": "Annexe 3 — Extraits des projets de contrats SaaS (signature prévue en novembre 2026)",
+          "content": "**Kalio (CRM et devis)** — offre standard du catalogue ; engagement de 36 mois ; 45 € par utilisateur et par mois pour 140 utilisateurs.\n- Art. 4 — Disponibilité : 99,9 % par mois, mesurée par Kalio, hors maintenances programmées (8 heures par mois au plus, annoncées 48 heures à l'avance, y compris en journée). Crédit de service de 5 % de la redevance mensuelle par tranche de 0,1 point manquant, plafonné à 10 % de la redevance mensuelle.\n- Art. 7 — Prix : révisables chaque 1ᵉʳ janvier, à la seule initiative de Kalio.\n- Art. 9 — Changement de fournisseur : le client notifie sa décision avec un préavis de quatre mois. Des frais de réversibilité forfaitaires de 15 000 € sont dus pour toute exportation des données vers un autre fournisseur. Les données sont exportées au format CSV, sans les pièces jointes ni l'historique des devis, et effacées quinze jours après la fin du contrat.\n- Art. 10 — Résiliation anticipée : si le client résilie avant le terme de l'engagement de 36 mois, il verse une indemnité égale à trois mois de redevances.\n- Art. 12 — Les données sont hébergées en Irlande.\n\n**Ressourcia (SIRH)** — offre standard du catalogue ; 7,50 € par salarié et par mois pour 380 salariés.\n- Les données sont hébergées dans un centre de données situé à Francfort. Le support de niveau 2 est assuré par une filiale établie en Inde, dont les techniciens accèdent à distance à la base de production pour diagnostiquer les incidents.\n- « Ressourcia peut modifier librement la liste de ses sous-traitants ultérieurs. »\n- Un rapport d'assurance SOC 2 de type 1 est remis chaque année.\n\n**Hypothèses** : l'Inde ne bénéficie pas d'une décision d'adéquation de la Commission européenne. Kalio, Ressourcia et XHost sont des fournisseurs de services de traitement de données au sens du règlement (UE) 2023/2854 (Data Act), dont le chapitre VI s'applique à leurs contrats."
+        },
+        {
+          "title": "Annexe 4 — Sortie de XHost et données financières du projet Horizon",
+          "content": "**Contrat XHost** : serveurs virtuels, offre standard du catalogue, résiliable service par service avec un préavis de deux mois. L'hébergement des serveurs du périmètre Horizon (CRM, paie) coûte 3 200 € par mois.\n\n**Sorties prévues** :\n- paie : notification adressée le 1ᵉʳ octobre 2026 ; export des données de paie en décembre 2026 ;\n- CRM : notification prévue le 4 janvier 2027 ; export des données en mars 2027.\n\n**Devis de XHost** : « forfait de sortie » de 4 900 € par export, soit 9 800 €. À la demande de Ferrand Électricité, XHost a détaillé le forfait de chaque export : transfert des données par le réseau 380 € ; deux jours d'ingénieur consacrés à l'export, à 800 € par jour ; frais de structure et marge commerciale 2 920 €. L'hébergement reste facturé au tarif mensuel jusqu'à la fin de chaque période de transition.\n\n**Statu quo (périmètre Horizon), coûts annuels** :\n- hébergement XHost : 3 200 € par mois ;\n- maintenance des licences : CRM 14 000 €, paie 18 500 €, temps 6 500 € ;\n- exploitation interne : 1,2 ETP à 65 000 € par an ;\n- maintenance de DevisPro par un prestataire : 8 000 €.\nGarder le CRM actuel imposerait une montée de version de 135 000 € en année 1 (fin du support).\n\n**Projet Horizon** :\n- coûts initiaux (année 0) : paramétrage et intégration 92 000 € ; reprise des données 26 000 € ; formation et conduite du changement 34 000 € ; mise en place de la plateforme d'intégration 15 000 € ;\n- coûts annuels : abonnements Kalio et Ressourcia (annexe 3) ; plateforme d'intégration 18 000 € ; administration fonctionnelle interne 0,5 ETP à 65 000 € par an ;\n- gains attendus de Kalio (devis plus rapides, prix à jour, meilleur taux de transformation) : marge sur coûts variables supplémentaire de 30 000 € en année 1, puis de 60 000 € par an.\n\n**Hypothèses de calcul** : horizon de 5 ans ; coûts initiaux décaissés en année 0, autres flux en fin d'année ; les deux solutions SaaS sont réputées en service dès l'année 1 ; taux d'actualisation 8 % ; impôt sur les bénéfices ignoré ; les frais de sortie de XHost et le double fonctionnement pendant la bascule sont négligés dans les calculs de coûts."
+        },
+        {
+          "title": "Annexe 5 — Planning du lot CRM et enquête auprès des commerciaux",
+          "content": "**Lot CRM (Kalio)** : démarrage le lundi 4 janvier 2027 ; durées en semaines.\n\n| Tâche | Description | Durée | Antécédents |\n| --- | --- | --- | --- |\n| A | Cadrage et spécifications | 3 | — |\n| B | Paramétrage de Kalio | 6 | A |\n| C | Développement des connecteurs de la plateforme d'intégration | 5 | A |\n| D | Nettoyage et dédoublonnage des données clients | 4 | A |\n| E | Reprise des données dans Kalio | 2 | B, D |\n| F | Recette par les utilisateurs clés | 3 | C, E |\n| G | Formation des 140 commerciaux | 3 | B |\n| H | Bascule et démarrage | 1 | F, G |\n\nLe dédoublonnage (D) est confié à deux assistantes commerciales à mi-temps. Un sondage sur 2 000 clients révèle plus de doublons que prévu : la tâche D durera 7 semaines au lieu de 4.\n\n**Enquête auprès des commerciaux (septembre 2026, 112 réponses)** : 64 % rédigent leurs devis chez le client avec DevisPro hors connexion et attendent un mode hors ligne ; 47 % craignent que Kalio serve à surveiller leurs déplacements et leur activité ; 38 % jugent les formations informatiques passées « trop théoriques » ; les commerciaux des trois agences rurales signalent des coupures de réseau fréquentes. Le directeur commercial n'a pas encore été associé au projet ; il émet des réserves sur le calendrier, la période de mars à mai étant la plus chargée de l'année."
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1-referentiel-client",
+          "kind": "mcq",
+          "prompt": "À l'aide de l'annexe 1, indiquez le principe que l'architecture cible doit appliquer aux données des clients pour respecter les règles d'urbanisation.",
+          "points": 1,
+          "options": [
+            "Conserver la création des clients dans les quatre applications et fiabiliser les transferts de fichiers nocturnes par des contrôles de cohérence.",
+            "Désigner pour les clients une application source unique et un propriétaire métier ; les autres applications en reçoivent des copies synchronisées par la plateforme d'intégration.",
+            "Laisser chaque application gérer ses propres clients et rapprocher les données dans l'outil de BI pour produire les tableaux de bord.",
+            "Remplacer les échanges par une base de données commune dans laquelle chaque application lit et modifie directement les tables des autres."
+          ],
+          "answer": [
+            1
+          ],
+          "option_explanations": [
+            "Inexact : quatre points de saisie restent quatre sources ; les contrôles traitent le symptôme (9 % de doublons) sans en supprimer la cause.",
+            "Exact : une donnée de référence a une source et un propriétaire uniques ; les autres applications n'en reçoivent que des copies synchronisées.",
+            "Inexact : rapprocher les données en aval, dans la BI, laisse des clients divergents dans les applications opérationnelles (devis, commandes, encours).",
+            "Inexact : un accès direct de chaque application aux tables des autres crée un couplage fort, contraire au principe de faible couplage."
+          ],
+          "explanation": "L'option 2 applique la règle d'urbanisation des données de référence : une source unique, un propriétaire métier responsable de leur qualité, des copies synchronisées dans les autres applications. La plateforme d'intégration diffuse les créations et les modifications. Le choix de la source (par exemple l'ERP, qui porte le compte, les conditions de paiement et l'encours) se décide avec le métier.\n\nL'option 1 garde quatre sources : les contrôles détecteraient une partie des doublons, sans les empêcher. L'option 3 corrige les chiffres des tableaux de bord, mais pas les devis ni les commandes, qui continueraient d'utiliser des conditions divergentes. L'option 4 rend chaque application dépendante de la structure des tables des autres : on ne pourrait plus remplacer l'une sans modifier les autres, ce que l'urbanisation cherche justement à éviter."
+        },
+        {
+          "id": "q2-interfaces-evitees",
+          "kind": "numeric",
+          "prompt": "À l'aide de l'annexe 1, calculez le nombre d'interfaces évitées dans la cible grâce à la plateforme d'intégration, par rapport à une architecture où les huit applications seraient toutes reliées deux à deux.",
+          "points": 1,
+          "expected_value": 20,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0
+          },
+          "unit": "interfaces",
+          "decimals": 0,
+          "explanation": "En point à point, chaque paire d'applications nécessite une interface : 8 × 7 ÷ 2 = 28 interfaces. Avec la plateforme, chaque application n'a besoin que d'un connecteur : 8 connecteurs. Interfaces évitées : 28 − 8 = **20**.\n\nErreurs classiques : compter chaque paire deux fois (8 × 7 = 56, soit 48 interfaces évitées) ; croire qu'un seul connecteur suffit pour la plateforme (27). Les treize interfaces actuelles ne sont pas la référence demandée : la cible ajoute des applications (BI, portail bancaire, plateforme agréée) et donc des flux."
+        },
+        {
+          "id": "q3-disponibilite-chaine",
+          "kind": "numeric",
+          "prompt": "À l'aide de l'annexe 2, calculez la disponibilité annuelle de la chaîne de prise de commande en agence, en pourcentage arrondi à deux décimales.",
+          "points": 1.5,
+          "expected_value": 99.15,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.02
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Les quatre composants sont tous nécessaires : ils sont en série et leurs disponibilités se multiplient. A = 0,995 × 0,999 × 0,9995 × 0,998 = 0,991521, soit **99,15 %**. L'indisponibilité attendue est de (1 − 0,991521) × 8 760 = 74,3 heures par an.\n\nLa chaîne est moins disponible que son maillon le plus faible : retenir 99,5 % serait une erreur. Le maillon faible est le lien internet de l'agence (0,5 % d'indisponibilité, soit 43,8 heures par an). C'est lui qu'il faut doubler en priorité : un lien 4G de secours coûterait 45 × 12 × 16 = 8 640 € par an pour les seize agences, ou 1 620 € pour les trois agences rurales seulement."
+        },
+        {
+          "id": "q4-clause-data-act",
+          "kind": "mcq",
+          "prompt": "À l'aide de l'annexe 3, indiquez la clause du projet de contrat Kalio qui est compatible avec le Data Act (règlement (UE) 2023/2854).",
+          "points": 1.5,
+          "options": [
+            "Article 9 : préavis de quatre mois pour notifier le changement de fournisseur.",
+            "Article 9 : effacement des données quinze jours après la fin du contrat.",
+            "Article 10 : indemnité de trois mois de redevances en cas de résiliation avant le terme de l'engagement de 36 mois.",
+            "Article 9 : frais de réversibilité forfaitaires de 15 000 € pour toute exportation des données vers un autre fournisseur."
+          ],
+          "answer": [
+            2
+          ],
+          "option_explanations": [
+            "Inexact : le préavis pour lancer le changement de fournisseur ne peut pas dépasser deux mois (art. 25 §2 d).",
+            "Inexact : le client dispose d'au moins trente jours pour récupérer ses données après la période transitoire (art. 25 §2 g).",
+            "Exact : les pénalités de résiliation anticipée ne sont pas des frais de changement (art. 2, point 36) ; le considérant 89 admet des pénalités proportionnées.",
+            "Inexact : les frais de changement sont interdits à compter du 12 janvier 2027 et, avant cette date, limités aux coûts directs (art. 29)."
+          ],
+          "explanation": "L'option 3 est la bonne. La définition des frais de changement de fournisseur exclut les frais de service standard et les pénalités de résiliation anticipée (art. 2, point 36). Le Data Act ne les interdit pas : il impose seulement d'en informer le client avant la signature (art. 29 §4), et le considérant 89 admet des contrats à durée déterminée assortis de pénalités de résiliation anticipée proportionnées. Leur montant relève du droit des contrats ; une indemnité limitée à trois mois de redevances sur un engagement de 36 mois paraît mesurée.\n\nLes trois autres clauses sont contraires au Data Act, applicable depuis le 12 septembre 2025 :\n- option 1 : le délai de préavis maximal est de deux mois (art. 25 §2 d) ;\n- option 2 : le contrat doit prévoir une période d'au moins trente jours calendaires pour récupérer les données, qui débute après la période transitoire (art. 25 §2 g) ; l'effacement n'intervient qu'ensuite (point h) ;\n- option 4 : le contrat sera signé en novembre 2026. Un changement effectué à partir du 12 janvier 2027 ne peut donner lieu à aucun frais de changement, frais de transfert des données compris (art. 29 §1). Avant cette date, les frais réduits ne peuvent dépasser les coûts directement liés au changement (art. 29 §2 et §3) : un forfait de 15 000 € ne répond pas à cette exigence."
+        },
+        {
+          "id": "q5-frais-sortie-xhost",
+          "kind": "numeric",
+          "prompt": "À l'aide des annexes 3 et 4, calculez le montant total maximal des frais de changement de fournisseur que XHost pourra facturer à Ferrand Électricité pour les deux exports prévus, en euros.",
+          "points": 1.5,
+          "expected_value": 1980,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Le Data Act distingue deux périodes (art. 29).\n- **Export de la paie, en décembre 2026** : jusqu'au 12 janvier 2027, XHost peut facturer des frais réduits, qui ne dépassent pas les coûts directement liés au changement (art. 29 §2 et §3). Coûts directs : transfert des données 380 € + 2 jours × 800 € = 1 980 €. Les frais de structure et la marge commerciale (2 920 €) ne sont pas des coûts directs.\n- **Export du CRM, en mars 2027** : à compter du 12 janvier 2027, aucun frais de changement de fournisseur ne peut être imposé (art. 29 §1), y compris les frais de transfert des données (art. 2, points 35 et 36).\n\nTotal maximal : 1 980 + 0 = **1 980 €**, au lieu des 9 800 € du devis. L'hébergement facturé jusqu'à la fin de chaque période de transition est un frais de service standard : il reste dû, mais ce n'est pas un frais de changement. Erreurs : accepter le devis (9 800 €) ; retenir les coûts directs des deux exports (3 960 €) en oubliant la date du 12 janvier 2027 ; croire l'interdiction déjà en vigueur en décembre 2026 (0 €)."
+        },
+        {
+          "id": "q6-tco-horizon",
+          "kind": "numeric",
+          "prompt": "À l'aide des annexes 3 et 4, calculez le coût total de possession (TCO) du projet Horizon sur 5 ans, en euros (somme non actualisée des coûts initiaux et des coûts annuels, gains exclus).",
+          "points": 2,
+          "expected_value": 968500,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Coûts initiaux : 92 000 + 26 000 + 34 000 + 15 000 = 167 000 €.\nCoûts annuels : Kalio 140 × 45 × 12 = 75 600 € ; Ressourcia 380 × 7,50 × 12 = 34 200 € ; plateforme d'intégration 18 000 € ; administration interne 0,5 × 65 000 = 32 500 €. Total : 160 300 € par an.\nTCO = 167 000 + 5 × 160 300 = **968 500 €**.\n\nÀ titre de comparaison, le statu quo coûte chaque année 3 200 × 12 + (14 000 + 18 500 + 6 500) + 1,2 × 65 000 + 8 000 = 38 400 + 39 000 + 78 000 + 8 000 = 163 400 €. Son TCO est de 135 000 + 5 × 163 400 = 952 000 €. Le projet coûte donc 16 500 € de plus sur 5 ans : le TCO seul ne justifie pas la décision, qui repose sur les gains attendus et sur la réduction des risques (fin du support, applications non documentées). Erreurs fréquentes : oublier de multiplier les tarifs mensuels par 12, ou ne pas compter les coûts internes d'administration."
+        },
+        {
+          "id": "q7-van-differentielle",
+          "kind": "numeric",
+          "prompt": "À l'aide de l'annexe 4, calculez la valeur actuelle nette (VAN) du projet Horizon par rapport au statu quo, au taux de 8 % sur 5 ans, en euros arrondis à l'unité. Raisonnez sur les flux différentiels : coûts évités, coûts supplémentaires et gains.",
+          "points": 2.5,
+          "expected_value": 182162,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.01
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Flux différentiels (projet − statu quo) :\n- année 0 : coûts initiaux −167 000 € ;\n- économie annuelle de fonctionnement : 163 400 − 160 300 = 3 100 € ;\n- année 1 : 3 100 + 135 000 (montée de version évitée) + 30 000 (gains) = 168 100 € ;\n- années 2 à 5 : 3 100 + 60 000 = 63 100 € par an.\n\nVAN = −167 000 + 168 100 × 1,08⁻¹ + 63 100 × [1 − 1,08⁻⁴] ÷ 0,08 × 1,08⁻¹ = −167 000 + 155 648 + 193 514 = **182 162 €**.\n\nLe projet est rentable, mais sa VAN repose sur deux éléments : la montée de version évitée et les gains commerciaux. Sans la montée de version évitée, la VAN tombe à 57 162 € ; sans les gains, elle devient négative (−29 623 €). Les gains de Kalio sont l'hypothèse à suivre de près après le démarrage."
+        },
+        {
+          "id": "q8-duree-lot-crm",
+          "kind": "numeric",
+          "prompt": "À l'aide de l'annexe 5, déterminez la durée du lot CRM, en semaines, compte tenu de l'allongement de la tâche D à 7 semaines.",
+          "points": 1.5,
+          "expected_value": 16,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0
+          },
+          "unit": "semaines",
+          "decimals": 0,
+          "explanation": "Planning initial (dates au plus tôt, en fin de semaine) : A 3 ; B 9 ; C 8 ; D 7 ; E commence quand B et D sont finies, soit en 9, et finit en 11 ; F commence en 11 (après C et E) et finit en 14 ; G finit en 12 ; H commence en 14 et finit en 15. Le chemin critique est A-B-E-F-H (15 semaines). Les marges totales sont de 3 semaines pour C, 2 pour D et 2 pour G.\n\nLa tâche D s'allonge de 3 semaines, alors que sa marge n'est que de 2 : le projet prend 1 semaine de retard. Le nouveau chemin critique est A-D-E-F-H : 3 + 7 + 2 + 3 + 1 = **16 semaines**. La bascule s'achève le vendredi 23 avril 2027, en pleine période chargée pour les commerciaux.\n\nErreurs : ajouter les 3 semaines à la durée initiale (18), ou conclure que la tâche D n'est pas critique et que le projet ne bouge pas (15)."
+        },
+        {
+          "id": "q9-transfert-support",
+          "kind": "mcq",
+          "prompt": "À l'aide de l'annexe 3, indiquez l'analyse exacte, au regard du RGPD, de l'accès du support de Ressourcia aux données des salariés.",
+          "points": 1.5,
+          "options": [
+            "Les données étant hébergées à Francfort, aucun transfert hors de l'Union n'a lieu, quel que soit le pays d'où le support accède à la base.",
+            "En hébergeant les données des salariés, Ressourcia devient responsable du traitement : Ferrand Électricité n'a plus d'obligation à leur égard.",
+            "Les données de paie ne peuvent en aucun cas être accessibles depuis un pays tiers : la clause doit être supprimée et le support relocalisé dans l'Union.",
+            "L'accès à distance depuis l'Inde est un transfert vers un pays tiers ; faute de décision d'adéquation, il doit être encadré par des garanties appropriées, telles que des clauses contractuelles types, prévues au contrat de sous-traitance."
+          ],
+          "answer": [
+            3
+          ],
+          "option_explanations": [
+            "Inexact : donner à une entité établie dans un pays tiers un accès à distance à des données hébergées dans l'Union constitue un transfert (chapitre V du RGPD).",
+            "Inexact : Ressourcia traite les données pour le compte de Ferrand Électricité ; elle est sous-traitante (art. 28) et Ferrand reste responsable du traitement.",
+            "Inexact : le RGPD n'interdit pas les transferts ; il les subordonne à une décision d'adéquation ou à des garanties appropriées (art. 44 à 46).",
+            "Exact : sans décision d'adéquation, le transfert exige des garanties appropriées (art. 46 §2), par exemple des clauses contractuelles types, et des instructions documentées (art. 28)."
+          ],
+          "explanation": "L'option 4 est la bonne. Selon les lignes directrices 05/2021 du Comité européen de la protection des données, l'accès à distance, depuis un pays tiers, d'une entité distincte (ici la filiale indienne, sous-traitante ultérieure) à des données stockées dans l'Union est un transfert, même s'il se limite à afficher les données à l'écran pour le support. Faute de décision d'adéquation pour l'Inde, il n'est licite qu'avec des garanties appropriées : clauses contractuelles types adoptées par la Commission, règles d'entreprise contraignantes… (art. 46 §2). Les personnes concernées doivent disposer de droits opposables et de voies de droit effectives (art. 46 §1). Le contrat de sous-traitance doit encadrer ces transferts (art. 28 §3 a). En pratique, on y ajoute une évaluation du droit du pays tiers, des accès limités au besoin, accordés au cas par cas et journalisés, et si possible la pseudonymisation des données.\n\nL'option 1 confond localisation de l'hébergement et transfert. L'option 2 inverse les rôles : Ferrand Électricité détermine les finalités et les moyens du traitement, elle reste responsable du traitement. L'option 3 pose une interdiction que le RGPD ne prévoit pas."
+        },
+        {
+          "id": "q10-analyse-contrats",
+          "kind": "open",
+          "prompt": "À l'aide des annexes 2, 3 et 4 et de vos calculs, analysez les projets de contrats Kalio et Ressourcia (niveaux de service, réversibilité, prix, localisation et sécurité des données) et indiquez les points à renégocier avant la signature.",
+          "points": 3,
+          "model_answer": "**1. Niveaux de service (Kalio, art. 4).** L'engagement de 99,9 % par mois tolère environ 43 minutes d'arrêt non programmé sur 30 jours. Mais les maintenances programmées sont exclues, jusqu'à 8 heures par mois et même en journée. La disponibilité réellement garantie peut donc tomber vers 98,8 % (près de 9 heures d'arrêt par mois) sans pénalité, alors que la chaîne de prise de commande dépend de Kalio (annexe 2). La mesure est faite par Kalio seul. Les crédits sont plafonnés à 10 % de la redevance mensuelle (630 €), ce qui n'est pas dissuasif face à une journée de commandes perdues. À renégocier : maintenances hors des heures ouvrées des agences ; rapport mensuel de disponibilité vérifiable ; crédits progressifs et droit de résiliation en cas de manquements répétés ; engagements de rétablissement et de sauvegarde (durée maximale d'interruption, perte de données maximale).\n\n**2. Réversibilité et Data Act.** Plusieurs clauses de l'article 9 sont contraires au règlement 2023/2854. Le préavis devra être ramené à deux mois au plus ; il faut une période transitoire de trente jours au plus pendant laquelle le service est maintenu, puis au moins trente jours pour récupérer les données avant leur effacement (art. 25). Les frais de 15 000 € sont à supprimer : ils sont interdits à compter du 12 janvier 2027 et limités aux coûts directs avant cette date (art. 29). L'export doit couvrir toutes les données exportables, pièces jointes et historique des devis compris, dans un format structuré et documenté. L'indemnité de résiliation anticipée (art. 10) est admise. Le même raisonnement a permis de ramener les frais de sortie de XHost de 9 800 € à 1 980 €.\n\n**3. Prix.** Une révision annuelle laissée à la seule initiative de Kalio expose le TCO calculé (968 500 €) à des hausses non maîtrisées. Il faut une indexation sur un indice public, plafonnée (par exemple 3 % par an), et un tarif fixé pour les utilisateurs supplémentaires.\n\n**4. Localisation et protection des données.** Les données sont hébergées dans l'Union (Irlande, Francfort). Mais l'accès du support de Ressourcia depuis l'Inde est un transfert : il doit être encadré par des clauses contractuelles types et une évaluation du droit indien, avec des accès limités, accordés au cas par cas et journalisés. La clause qui laisse Ressourcia changer librement de sous-traitants ultérieurs est contraire à l'article 28 §2 du RGPD : Ferrand doit être informée de tout changement et pouvoir s'y opposer. Chaque contrat doit comporter les clauses de l'article 28 §3 : instructions, confidentialité, sécurité, assistance, notification dans les meilleurs délais des violations de données (pour que Ferrand tienne le délai de 72 heures), restitution et suppression des données.\n\n**5. Sécurité et contrôle.** Un rapport SOC 2 de type 1 ne décrit les contrôles qu'à une date : il faut exiger un rapport de type 2, qui teste leur fonctionnement sur une période, ou un droit d'audit. Il faut aussi l'authentification multifacteur et le chiffrement des données. Enfin, Ferrand reste responsable des habilitations, du paramétrage et de la qualité de ses données, ce qui suppose une organisation interne (administrateur fonctionnel, revue des droits).",
+          "key_points": [
+            "SLA Kalio : 99,9 % hors maintenances de 8 h par mois en journée, mesure par l'éditeur, crédits plafonnés à 630 € : garantie réelle faible ; renégocier maintenances, mesure, crédits, rétablissement",
+            "Data Act : préavis de deux mois au plus, transition de trente jours au plus, récupération des données pendant trente jours au moins, suppression des 15 000 € de frais (interdits au 12 janvier 2027), export complet ; indemnité de résiliation anticipée admise",
+            "Prix : révision libre à remplacer par une indexation plafonnée, pour protéger le TCO",
+            "Données : hébergement dans l'Union, mais support depuis l'Inde = transfert à encadrer (clauses contractuelles types, accès limités et journalisés) ; sous-traitants ultérieurs soumis à information et objection (RGPD art. 28 §2) ; clauses de l'art. 28 §3",
+            "Sécurité : rapport SOC 2 de type 2 ou droit d'audit, authentification multifacteur, chiffrement ; habilitations et paramétrage restent à la charge de Ferrand"
+          ],
+          "explanation": "Une bonne copie traite chaque clause en trois temps : le constat tiré de l'annexe 3, le risque concret pour Ferrand Électricité (chaîne de commande bloquée, coût de sortie, hausse des prix, transfert illicite) et la modification demandée. Elle s'appuie sur des chiffres (disponibilité réelle, plafond des crédits, TCO) et distingue ce que le Data Act impose de ce qui relève de la négociation : le niveau de SLA, l'indexation des prix et le droit d'audit."
+        },
+        {
+          "id": "q11-trajectoire-changement",
+          "kind": "open",
+          "prompt": "À l'aide des annexes 1, 2 et 5 et de vos calculs, rédigez une note au directeur administratif et financier présentant la trajectoire du projet Horizon, les mesures permettant de tenir le planning du lot CRM et le plan de conduite du changement.",
+          "points": 3,
+          "model_answer": "**1. Trajectoire.** Le projet doit suivre une trajectoire d'urbanisation par étapes plutôt qu'un basculement unique.\n- **Préalables** : mettre en place la plateforme d'intégration et le référentiel client unique, avec un propriétaire métier. Par exemple, l'ERP fait foi pour les comptes, les conditions de paiement et l'encours ; Kalio gère les prospects jusqu'à leur première commande. Le dédoublonnage (9 % des clients) conditionne la reprise des données.\n- **Lot SIRH au 1ᵉʳ janvier 2027** : le démarrer au début de l'année de paie évite de reprendre des cumuls en cours d'année. Je recommande une paie à blanc en parallèle en novembre et décembre, et un critère de décision (« go / no go ») fondé sur l'absence d'écart. Le CSE doit être informé avant l'introduction de ce traitement automatisé de gestion du personnel (C. trav. art. L. 2312-38).\n- **Lot CRM** : à démarrer ensuite, avec l'arrêt de DevisPro et de Contact+ avant la fin du support en juin 2027.\n- **Étapes suivantes** : outil de BI, puis étude de la migration de l'ERP en 2028.\n\n**2. Tenir le planning du lot CRM.** Avec la tâche D à 7 semaines, le lot dure 16 semaines et la bascule tombe le 23 avril 2027, en pleine haute saison. La tâche D est devenue critique (A-D-E-F-H). Plusieurs leviers sont possibles :\n- commencer le dédoublonnage dès novembre 2026 sur les données de l'ERP, en fixant les règles de rapprochement sans attendre la fin du cadrage ;\n- renforcer l'équipe (assistantes à temps plein, outil de déduplication automatique) pour ramener D à 6 semaines au plus ;\n- surveiller la tâche B, qui n'a plus qu'une semaine de marge et redevient critique si D revient à 6 semaines, ainsi que G et C (2 et 3 semaines de marge dans ce cas).\nIl faut aussi arbitrer le calendrier avec le directeur commercial. Je recommande une bascule par vagues : une agence pilote, puis les autres agences. Si la haute saison ne peut être évitée, mieux vaut décaler la généralisation à juin que basculer 140 commerciaux en avril. Cela reste compatible avec la fin du support de Contact+ si la bascule est terminée fin juin.\n\n**3. Conduite du changement.**\n- **Parrainage** : la direction générale porte le projet, et le directeur commercial doit devenir co-sponsor du lot CRM, puisque c'est son équipe qui change d'outil.\n- **Répondre aux craintes** : 47 % des commerciaux craignent d'être surveillés. Il faut annoncer clairement les finalités de Kalio et les données collectées. Aucun suivi des déplacements ne doit être activé sans information préalable des salariés (art. L. 1222-4). Le CSE doit être informé et consulté avant toute technique permettant de contrôler l'activité (art. L. 2312-38).\n- **Répondre aux besoins** : le mode hors ligne (64 % des commerciaux) doit être une exigence vérifiée dès le cadrage (tâche A). Je recommande un lien 4G de secours pour les trois agences rurales (1 620 € par an), car le lien internet est le maillon faible de la chaîne (99,15 % de disponibilité).\n- **Formation** : 38 % des commerciaux trouvent les formations trop théoriques. La formation doit être pratique, sur des cas réels, assurée en agence par des utilisateurs clés, juste avant la bascule.\n- **Après le démarrage** : support renforcé pendant les premières semaines, et indicateurs d'adoption suivis par le comité de pilotage : part des devis faits dans Kalio, connexions, taux de doublons, gains de marge par rapport aux 30 000 € attendus.",
+          "key_points": [
+            "Trajectoire par étapes : plateforme d'intégration et référentiel client d'abord, SIRH au 1ᵉʳ janvier 2027 avec paie en parallèle, CRM ensuite, BI puis ERP plus tard",
+            "Planning : 16 semaines et bascule le 23 avril 2027 en haute saison ; D devenue critique ; dédoublonnage anticipé ou renforcé, marges de B, C et G à surveiller",
+            "Calendrier arbitré avec le directeur commercial : bascule par vagues (agence pilote) ou généralisation après mai, avant la fin du support en juin 2027",
+            "Craintes de surveillance : finalités annoncées, information des salariés (L. 1222-4) et consultation du CSE (L. 2312-38) ; mode hors ligne et lien 4G de secours pour les agences rurales",
+            "Formation pratique par des utilisateurs clés, support après démarrage, indicateurs d'adoption et suivi des gains"
+          ],
+          "explanation": "On attend une note structurée qui exploite les résultats chiffrés : chemin critique et nouvelle date de bascule, disponibilité et maillon faible, gains dont dépend la VAN. Chaque mesure de conduite du changement doit répondre à un constat de l'enquête (craintes de surveillance, mode hors ligne, formations trop théoriques, directeur commercial tenu à l'écart). La copie doit aussi rappeler les obligations d'information des salariés et du CSE qu'imposent un SIRH et un CRM capable de suivre l'activité."
+        }
+      ],
+      "explanation": "Urbanisation : une source et un propriétaire uniques pour les données clients ; la plateforme d'intégration évite 28 − 8 = 20 interfaces. La chaîne de prise de commande, en série, est disponible à 0,995 × 0,999 × 0,9995 × 0,998 = 99,15 % (74 heures d'arrêt par an) ; le lien internet est le maillon faible. Contrats : seule l'indemnité de résiliation anticipée de Kalio est compatible avec le Data Act. Le préavis est limité à deux mois, la récupération des données dure au moins trente jours et les frais de changement sont interdits à compter du 12 janvier 2027. XHost ne peut donc facturer que les coûts directs de l'export de décembre 2026 (1 980 €). L'accès à distance de la filiale indienne chargée du support est un transfert à encadrer par des garanties appropriées. Chiffrage : TCO du projet 968 500 € contre 952 000 € pour le statu quo ; VAN différentielle 182 162 €, portée par la montée de version évitée et les gains de Kalio. Planning : la tâche D, allongée de 3 semaines avec 2 semaines de marge, porte le lot à 16 semaines. Méthode : raisonner en flux différentiels, multiplier les disponibilités en série et dater chaque opération avant d'appliquer le Data Act."
+    },
+    {
+      "id": "ue5-dossier-0006",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE5",
+      "theme": "outils-performance",
+      "notion": "automatisation-processus-rpa",
+      "difficulty": 3,
+      "tags": [
+        "dossier",
+        "BPMN",
+        "RPA",
+        "API",
+        "facturation électronique",
+        "ETP libérés",
+        "délai de récupération",
+        "SQL",
+        "contrôles applicatifs",
+        "contrôles généraux informatiques",
+        "AI Act",
+        "IA générative",
+        "RGPD",
+        "numérique responsable",
+        "PUE"
+      ],
+      "source_ref": "BPMN 2.0 (OMG, norme ISO/IEC 19510) ; CGI art. 289 bis ; loi n° 2023-1322 de finances pour 2024, art. 91 ; règlement (UE) 2024/1689 (AI Act), art. 3, 6, 26, 27, 50, 113 et annexe III, modifié par le règlement (UE) 2026/1744 ; RGPD art. 22, 28, 35 et 44 à 46 ; Code du travail art. L. 1222-4 et L. 2312-38 ; COBIT 2019 ; norme ISO/IEC 9075 (SQL) ; ISO/IEC 30134-2 (PUE)",
+      "verified": true,
+      "estimated_seconds": 5100,
+      "total_points": 20,
+      "title": "Automatisation de la fonction finance, IA et audit applicatif",
+      "context": "**Maison Térac SAS** conçoit et vend des cuisines équipées aux particuliers dans vingt-quatre magasins en France ; la pose est assurée par ses propres équipes de livreurs-poseurs. En 2025, elle a réalisé un chiffre d'affaires de 148 M€ HT avec 610 salariés. Les clients peuvent régler leur cuisine en dix mensualités sans frais, après acceptation de leur dossier par Maison Térac.\n\nLa direction financière (32 personnes) utilise un ERP depuis 2019, mais de nombreuses tâches restent manuelles : saisie des factures fournisseurs, rapprochements, extractions de données. Depuis le 1ᵉʳ septembre 2026, Maison Térac reçoit une partie de ses factures sous forme électronique par sa plateforme agréée, qui n'est pas encore reliée à l'ERP. La directrice financière, Mme Ostermann, a lancé le programme **Finance 2028**. Il doit automatiser les processus répétitifs, encadrer les usages de l'intelligence artificielle et réduire l'empreinte environnementale des outils numériques. Par ailleurs, l'auditeur interne a relevé des anomalies dans le module fournisseurs de l'ERP.\n\nVous êtes consultant(e) dans un cabinet d'expertise comptable. Mme Ostermann vous confie une mission en quatre volets : modéliser le traitement des factures fournisseurs et choisir les solutions d'automatisation ; chiffrer les gains attendus ; exploiter les travaux d'audit sur le module fournisseurs ; apprécier les projets d'intelligence artificielle au regard du règlement (UE) 2024/1689 (AI Act) et de leur empreinte environnementale. Les données utiles figurent dans les annexes 1 à 5. Sauf mention contraire, les montants sont hors taxes.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Processus actuel de traitement des factures fournisseurs (octobre 2026)",
+          "content": "**Acteurs** : les fournisseurs ; chez Maison Térac, l'accueil du siège, les comptables fournisseurs, les acheteurs et la trésorière.\n\n**Déroulement** :\n1. Le fournisseur adresse sa facture : sous forme électronique par la plateforme agréée (40 % des factures), en PDF par courriel (45 %) ou sur papier (15 %).\n2. L'accueil numérise les factures papier (1,5 minute par facture) et les transmet au service comptable.\n3. Le comptable fournisseurs saisit chaque facture dans l'ERP (5 minutes par facture), y compris les factures électroniques, dont il télécharge la version lisible sur le portail de la plateforme agréée.\n4. Il rapproche la facture de la commande et du bon de réception (4 minutes par facture).\n5. Si l'écart dépasse la tolérance de 2 % du montant, la facture est envoyée à l'acheteur, qui la corrige ou la refuse (15 minutes ; 8 % des factures). Sinon, le comptable la déclare bonne à payer.\n6. Chaque vendredi, la trésorière génère le fichier des virements des factures échues et le transmet à la banque.\n\n**Volumes** : 42 000 factures par an. À partir du 1ᵉʳ septembre 2027, les fournisseurs établis en France, PME comprises, devront émettre leurs factures sous forme électronique : 88 % des factures arriveront alors par la plateforme agréée ; les 12 % restants, émis par des fournisseurs étrangers, continueront d'arriver en PDF. Les fournisseurs qui envoient aujourd'hui des factures papier sont tous établis en France.\n\n**Coûts** : un ETP correspond à 1 600 heures par an ; coût horaire chargé du personnel administratif (accueil et comptabilité) : 38 €."
+        },
+        {
+          "title": "Annexe 2 — Candidats à l'automatisation et solutions étudiées",
+          "content": "**P1 — Intégration des factures fournisseurs**\n- *Solution 1* : robot logiciel (RPA) couplé à un outil de lecture optique (OCR), qui lit les PDF et les versions lisibles des factures électroniques et les saisit dans l'ERP. Coûts : 85 000 € de développement, 30 000 € par an de licences et de maintenance ; 75 % des factures traitées sans intervention.\n- *Solution 2* : connecteur par API entre la plateforme agréée et l'ERP, qui intègre automatiquement les données structurées des factures électroniques, et activation du module de rapprochement automatique à trois voies de l'ERP (commande, réception, facture) pour toutes les factures. Coûts : 160 000 € de coûts initiaux (connecteur, paramétrage, tests), 24 000 € par an. Les factures en PDF restent saisies à la main. Le rapprochement automatique supprime le rapprochement manuel des factures sans écart (92 % des factures) ; les factures en écart (8 %) restent rapprochées à la main, puis traitées par l'acheteur.\n\n**P2 — Rapprochement bancaire** : chaque jour, un comptable télécharge les relevés sur les sites de trois banques et lettre les opérations dans un tableur (1 h 30 par jour). Les trois banques proposent la transmission automatique des relevés par protocole sécurisé (EBICS). L'ERP dispose d'un module natif de rapprochement bancaire automatique, inclus dans la licence et jamais activé.\n\n**P3 — Provision pour garanties** : chaque mois, un contrôleur de gestion recopie dans un tableur 1 200 dossiers de réclamation affichés par le logiciel du service après-vente (SAV), écran par écran (deux jours par mois). Ce logiciel, stable depuis dix ans, sans API ni fonction d'export, sera conservé au moins quatre ans ; la règle de calcul de la provision est fixée et documentée.\n\n**Escomptes** : des fournisseurs représentant 7,5 M€ d'achats par an accordent un escompte de 1 % pour un paiement à dix jours. Faute d'un traitement assez rapide des factures, Maison Térac n'en bénéficie aujourd'hui que sur 25 % de ces achats ; avec la solution 2, elle en bénéficierait sur 80 %. On néglige le coût de financement du paiement anticipé."
+        },
+        {
+          "title": "Annexe 3 — Travaux de l'auditeur interne sur le module fournisseurs (octobre 2026)",
+          "content": "**Contrôles applicatifs du module fournisseurs** (documentation de l'ERP) :\n- contrôle de doublon : une facture est rejetée si le couple (fournisseur, numéro de facture du fournisseur) existe déjà, à l'identique ;\n- rapprochement à trois voies : une facture dont l'écart avec la commande et la réception dépasse le paramètre de tolérance est bloquée ;\n- modification des coordonnées bancaires (RIB) d'un fournisseur : saisie par un comptable, sans validation par une seconde personne.\n\n**Paramètre de tolérance** : l'auditeur l'a constaté à 2 % à l'écran le 30 septembre 2026. Journal des modifications du paramétrage : le 3 février 2026, passage de 2 % à 10 % par le compte ADMIN_FIN ; le 29 juin 2026, retour à 2 % par le même compte. Aucune demande de changement n'a été enregistrée. Le compte ADMIN_FIN est utilisé par trois personnes de la direction financière, qui en partagent le mot de passe.\n\n**Extraction de l'auditeur** : 214 factures, pour 1,9 M€ TTC, ont été payées entre le 3 février et le 29 juin 2026 avec un écart compris entre 2 % et 10 % ; elles n'ont pas encore été analysées.\n\n**Compte technique** : le robot de test installé par un prestataire en 2025, pour un projet abandonné depuis, dispose toujours d'un compte actif avec le profil administrateur de l'ERP.\n\n**Coordonnées bancaires** : sept RIB de fournisseurs ont été modifiés en 2026, dont deux à la suite d'un simple courriel, sans contre-appel du fournisseur."
+        },
+        {
+          "title": "Annexe 4 — Extrait de la base fournisseurs et requête de l'auditeur",
+          "content": "Schéma : FOURNISSEUR (id_fournisseur, raison_sociale, pays) ; FACTURE (num_piece, #id_fournisseur, num_facture_fournisseur, date_facture, montant_ttc, statut). Le statut vaut PAYEE, BLOQUEE (écart en attente de traitement) ou REJETEE (rejet par le contrôle de doublon).\n\n**FOURNISSEUR** : (F01, Bois et Plans, France) ; (F02, Électro Sud, France) ; (F03, Granit Italia, Italie) ; (F04, SCI Les Halles, France) ; (F05, Transports Rivière, France).\nSCI Les Halles est le bailleur du magasin de Lyon (loyer mensuel de 9 600 € TTC, facturé le 1ᵉʳ de chaque mois). Transports Rivière facture un forfait de 1 260 € TTC par livraison de plans de travail.\n\n**FACTURE**\n\n| num_piece | id_fournisseur | num_facture_fournisseur | date_facture | montant_ttc | statut |\n| --- | --- | --- | --- | --- | --- |\n| P101 | F01 | FA-2026-118 | 2026-03-04 | 14 640 | PAYEE |\n| P102 | F02 | E-5521 | 2026-03-09 | 8 280 | PAYEE |\n| P103 | F04 | L-03 | 2026-03-01 | 9 600 | PAYEE |\n| P104 | F04 | L-04 | 2026-04-01 | 9 600 | PAYEE |\n| P105 | F01 | FA2026118 | 2026-03-04 | 14 640 | PAYEE |\n| P106 | F03 | GI/0457 | 2026-04-15 | 22 950 | PAYEE |\n| P107 | F02 | E-5530 | 2026-05-02 | 8 280 | BLOQUEE |\n| P108 | F05 | TR-889 | 2026-05-20 | 1 260 | PAYEE |\n| P109 | F03 | GI/0457 | 2026-04-15 | 22 950 | REJETEE |\n| P110 | F05 | TR-912 | 2026-06-10 | 1 260 | PAYEE |\n| P111 | F04 | L-05 | 2026-05-01 | 9 600 | PAYEE |\n| P112 | F02 | E-5498 | 2025-12-18 | 8 280 | PAYEE |\n| P113 | F01 | FA-2026-131 | 2026-10-02 | 14 640 | PAYEE |\n| P114 | F05 | TR-955 | 2026-07-08 | 2 340 | PAYEE |\n\n**Requête de l'auditeur** (recherche des doublons potentiels payés au cours des neuf premiers mois de 2026) :\n\n```\nSELECT FO.raison_sociale, F.montant_ttc, COUNT(*) AS nb, SUM(F.montant_ttc) AS total\nFROM FACTURE F INNER JOIN FOURNISSEUR FO ON F.id_fournisseur = FO.id_fournisseur\nWHERE F.statut = 'PAYEE' AND F.date_facture BETWEEN '2026-01-01' AND '2026-09-30'\nGROUP BY FO.raison_sociale, F.montant_ttc\nHAVING COUNT(*) >= 2\nORDER BY total DESC;\n```"
+        },
+        {
+          "title": "Annexe 5 — Projets d'intelligence artificielle et empreinte de l'assistant « Léa »",
+          "content": "1. **Assistant « Léa »** : développé par l'équipe data de Maison Térac à partir d'un modèle d'IA à usage général accessible par API, il sera mis en service sous la marque Maison Térac en novembre 2026, dans l'espace client en ligne. Il répondra aux questions des clients sur leurs commandes, leurs dates de pose et leur échéancier. Le prototype n'indique pas qu'il s'agit d'une IA ; lors des tests, il a annoncé à un client un report d'échéance que Maison Térac n'avait jamais accordé.\n2. **Score d'acceptation du paiement en dix fois** : logiciel acheté à une société spécialisée, dont la mise en service est prévue en janvier 2027. Il évalue la solvabilité des clients particuliers à partir de leurs revenus, de leurs charges et de leurs incidents de paiement passés ; les dossiers dont le score est inférieur au seuil seraient refusés automatiquement, sans examen par un collaborateur.\n3. **Détection des fraudes** aux changements de coordonnées bancaires des fournisseurs (des sociétés) : modèle développé en interne, qui signale les demandes inhabituelles à la trésorière.\n4. **Organisation des tournées** : outil proposé par l'éditeur du logiciel de planification. Il attribuerait chaque jour les chantiers aux 85 livreurs-poseurs salariés en fonction d'une note individuelle calculée à partir de leur rapidité et des réclamations des clients.\n5. **Vidéo des résultats 2026**, prévue en mars 2027 pour les salariés : un avatar hyperréaliste de la présidente, généré par IA, y lira un texte qu'elle aura validé.\n6. **Usages spontanés** : plusieurs comptables collent des extraits de contrats fournisseurs et de balances âgées dans un assistant d'IA générative gratuit, ouvert au grand public, pour en obtenir des synthèses.\n\n**Empreinte de « Léa »** (hypothèses) : 720 000 requêtes par an ; énergie consommée par les équipements informatiques : 0,004 kWh par requête. Offre actuelle : modèle hébergé aux États-Unis, dans un centre de données de PUE 1,3, avec une électricité émettant 0,38 kg CO₂e par kWh. Offre alternative, au même prix : modèle de taille équivalente hébergé en France, PUE 1,2, électricité émettant 0,05 kg CO₂e par kWh. On ne retient que les émissions liées à l'électricité."
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1-modelisation-bpmn",
+          "kind": "mcq",
+          "prompt": "À l'aide de l'annexe 1, l'auditeur interne modélise le processus actuel en notation BPMN 2.0. Indiquez la modélisation correcte.",
+          "points": 1,
+          "options": [
+            "Les couloirs (lanes) du bassin de Maison Térac représentent les étapes successives du traitement : réception, saisie, rapprochement, paiement.",
+            "Le test « écart supérieur à 2 % ? » se représente par une passerelle exclusive, dont les deux flux sortants portent les conditions « oui » (envoi à l'acheteur) et « non » (bonne à payer).",
+            "L'envoi de la facture par le fournisseur se représente par un flux de séquence reliant le couloir du fournisseur à celui de l'accueil, dans le même bassin.",
+            "Le paiement du vendredi se représente par une passerelle parallèle, car il regroupe plusieurs factures dans un même fichier de virements."
+          ],
+          "answer": [
+            1
+          ],
+          "option_explanations": [
+            "Inexact : un couloir représente un acteur ou un rôle (accueil, comptable, acheteur, trésorière) ; les étapes sont des activités placées dans les couloirs.",
+            "Exact : une passerelle exclusive oriente le flux vers une seule branche selon une condition, ici le dépassement de la tolérance de 2 %.",
+            "Inexact : le fournisseur est un participant externe, représenté par un bassin distinct ; les échanges entre bassins sont des flux de message.",
+            "Inexact : une passerelle parallèle ouvre des branches simultanées ; un traitement déclenché chaque vendredi relève d'un événement temporel."
+          ],
+          "explanation": "L'option 2 est la bonne. En BPMN 2.0, une passerelle exclusive (losange marqué d'un X) fait suivre au flux une seule des branches sortantes, selon la condition portée par chacune : ici, envoi à l'acheteur si l'écart dépasse 2 %, déclaration « bonne à payer » sinon.\n\nL'option 1 confond couloirs et activités : le bassin de Maison Térac comporte un couloir par acteur (accueil, comptable fournisseurs, acheteur, trésorière), et les activités (numériser, saisir, rapprocher, payer) s'y placent. L'option 3 traite le fournisseur comme un service interne : participant externe, il a son propre bassin, et la facture circule par un flux de message, le flux de séquence restant interne à un bassin. L'option 4 se trompe de symbole : une passerelle parallèle déclenche plusieurs branches en même temps ; le traitement du vendredi commence par un événement temporel (minuterie)."
+        },
+        {
+          "id": "q2-etp-liberes",
+          "kind": "numeric",
+          "prompt": "À l'aide des annexes 1 et 2, calculez le nombre d'ETP (accueil et comptabilité) libérés chaque année par la solution 2 de P1, en régime de croisière (après le 1ᵉʳ septembre 2027), par rapport au maintien du processus actuel à la même date. Raisonnez en différentiel : ne retenez que le temps libéré grâce à la solution 2. Arrondissez à deux décimales.",
+          "points": 2,
+          "expected_value": 3.54,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.01
+          },
+          "unit": "ETP",
+          "decimals": 2,
+          "explanation": "On compare, après septembre 2027, la solution 2 au processus actuel maintenu, avec les mêmes volumes : 88 % de factures électroniques, 12 % de PDF étrangers, plus aucune facture papier. La disparition de la numérisation (42 000 × 15 % × 1,5 min = 9 450 min) est due à la réforme, puisque tous les émetteurs de factures papier sont établis en France : elle aurait lieu sans la solution 2 et ne lui est pas imputable.\n\nLa solution 2 supprime deux tâches :\n- la saisie des factures électroniques, intégrées par l'API : 42 000 × 88 % × 5 min = 184 800 min ;\n- le rapprochement manuel des factures sans écart : 42 000 × 92 % × 4 min = 154 560 min.\n\nTotal : 339 360 min = 5 656 h, soit 5 656 ÷ 1 600 = 3,535, arrondi à **3,54 ETP**. Le temps des acheteurs ne change pas : les factures en écart (8 %) sont toujours traitées à la main. Les factures étrangères en PDF (12 %) restent saisies, mais leur rapprochement est automatique en l'absence d'écart.\n\nErreurs : attribuer à la solution 2 la fin de la numérisation (3,63 ETP) ; supprimer aussi le rapprochement des factures en écart (3,68 ETP) ; raisonner sur les 40 % de factures électroniques actuelles au lieu de la situation après septembre 2027 (2,49 ETP)."
+        },
+        {
+          "id": "q3-choix-solutions",
+          "kind": "mcq",
+          "prompt": "À l'aide des annexes 1 et 2, indiquez la combinaison de solutions la plus pertinente pour les trois candidats P1, P2 et P3.",
+          "points": 1.5,
+          "options": [
+            "P1 : solution 1 (RPA et OCR) ; P2 : module natif de l'ERP alimenté par EBICS ; P3 : robot RPA",
+            "P1 : solution 1 (RPA et OCR) ; P2 : robot RPA qui télécharge les relevés sur les sites des banques ; P3 : développement d'une API sur le logiciel du SAV",
+            "P1 : remplacement de l'ERP ; P2 : robot RPA ; P3 : remplacement du logiciel du SAV",
+            "P1 : solution 2 (API et rapprochement automatique) ; P2 : module natif de l'ERP alimenté par EBICS ; P3 : robot RPA"
+          ],
+          "answer": [
+            3
+          ],
+          "option_explanations": [
+            "Inexact : P2 et P3 sont bien traités, mais la RPA de P1 relirait des factures déjà disponibles en données structurées, à 88 % dès septembre 2027.",
+            "Inexact : un robot sur les sites bancaires est fragile alors qu'EBICS et un module natif existent ; le logiciel du SAV n'offre aucune API.",
+            "Inexact : remplacer deux applications qui fonctionnent pour automatiser trois tâches est disproportionné en coût, en délai et en risque.",
+            "Exact : données structurées par API pour P1, fonction native et flux bancaire standard pour P2, RPA sur une application stable sans API pour P3."
+          ],
+          "explanation": "L'option 4 applique la hiérarchie des solutions : d'abord les fonctions natives des applications et les échanges normalisés (API, EBICS), la RPA en dernier recours, pour une application stable sans interface.\n- **P1** : la réforme de la facturation électronique fournit les factures sous forme de données structurées (88 % à partir de septembre 2027). Les relire par OCR, comme le ferait la solution 1, reviendrait à automatiser un détour ; le robot serait fragile et son champ utile se réduirait aux 12 % de factures étrangères. La solution 2 traite la donnée à la source et active en plus le rapprochement automatique.\n- **P2** : le module natif de l'ERP, déjà payé, et la transmission des relevés par EBICS sont plus robustes qu'un robot qui naviguerait sur trois sites bancaires dont les écrans changent.\n- **P3** : c'est le cas type de la RPA. Le logiciel est stable, sans API ni export, conservé quatre ans ; la tâche est répétitive (1 200 dossiers par mois) et la règle de calcul est fixée.\n\nL'option 1 automatise P1 avec une technologie déjà dépassée par la réforme. L'option 2 cumule un robot fragile pour P2 et une API impossible pour P3. L'option 3 remplace des applications entières pour des gains limités."
+        },
+        {
+          "id": "q4-delai-recuperation",
+          "kind": "numeric",
+          "prompt": "À l'aide de l'annexe 2 et du temps libéré calculé à la question 2, calculez le délai de récupération de la solution 2, en mois arrondis au dixième. Retenez le gain net annuel en régime de croisière : temps libéré valorisé, escomptes supplémentaires, diminués des coûts annuels de la solution.",
+          "points": 2.5,
+          "expected_value": 8.3,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "mois",
+          "decimals": 1,
+          "explanation": "Temps libéré valorisé : 5 656 h × 38 € = 214 928 €.\nEscomptes supplémentaires : 7 500 000 × 1 % × (80 % − 25 %) = 41 250 €.\nGain net annuel : 214 928 + 41 250 − 24 000 = 232 178 €.\nDélai de récupération : 160 000 ÷ 232 178 = 0,689 an, soit 0,689 × 12 = **8,3 mois**.\n\nLe résultat dépend de la question 2 : un temps libéré arrondi (3,54 ETP × 1 600 = 5 664 h) donne aussi 8,3 mois. Le gain de temps n'est réel que si les 3,5 ETP sont réaffectés (analyse, contrôles, relances) ou si des départs ne sont pas remplacés. Sans cela, seuls les escomptes seraient encaissés (gain net de 17 250 € par an) et le délai de récupération dépasserait 9 ans. Erreurs : oublier les coûts annuels (7,5 mois) ; oublier les escomptes (10,1 mois) ; reprendre les 3,63 ETP qui incluent la fin de la numérisation (8,1 mois)."
+        },
+        {
+          "id": "q5-requete-doublons",
+          "kind": "numeric",
+          "prompt": "À l'aide de l'annexe 4, exécutez la requête de l'auditeur sur l'extrait fourni et indiquez la valeur de la colonne « total » sur la première ligne du résultat, en euros.",
+          "points": 2,
+          "expected_value": 29280,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Le WHERE ne garde que les factures payées datées du 1ᵉʳ janvier au 30 septembre 2026 : il écarte P107 (bloquée), P109 (rejetée), P112 (décembre 2025) et P113 (octobre 2026). Regroupement par fournisseur et par montant :\n- Bois et Plans, 14 640 € : P101 et P105, nb = 2, total = 29 280 € ;\n- SCI Les Halles, 9 600 € : P103, P104 et P111, nb = 3, total = 28 800 € ;\n- Transports Rivière, 1 260 € : P108 et P110, nb = 2, total = 2 520 € ;\n- Électro Sud (P102), Granit Italia (P106) et la facture de 2 340 € de Transports Rivière (P114) restent seules dans leur groupe : HAVING les écarte.\nORDER BY total DESC place Bois et Plans en tête : **29 280 €**.\n\nErreurs classiques : oublier le filtre sur le statut, ce qui met en tête Granit Italia (P106 et P109, 45 900 €), alors que P109 a été rejetée par le contrôle de doublon et jamais payée ; oublier le filtre sur la date, ce qui ajoute P113 (43 920 € pour Bois et Plans)."
+        },
+        {
+          "id": "q6-parametre-tolerance",
+          "kind": "true_false",
+          "prompt": "À l'aide de l'annexe 3, dites si l'affirmation suivante est exacte : « L'auditeur ayant constaté le 30 septembre 2026 que la tolérance du rapprochement automatique est paramétrée à 2 %, il peut s'appuyer sur ce contrôle applicatif pour les neuf premiers mois de 2026. »",
+          "points": 1,
+          "answer": false,
+          "explanation": "Faux. Le constat à l'écran ne vaut que pour la date du 30 septembre. Le journal montre que la tolérance a été portée à 10 % du 3 février au 29 juin 2026. Pendant cette période, les factures présentant un écart compris entre 2 % et 10 % n'ont pas été bloquées : 214 factures, pour 1,9 M€, ont ainsi été payées.\n\nLa modification révèle en outre une défaillance des contrôles généraux informatiques. Elle n'a fait l'objet d'aucune demande de changement (gestion des changements), et elle a été faite par un compte partagé par trois personnes, qui ne permet pas d'identifier son auteur (gestion des accès). Un contrôle applicatif n'est fiable que si son paramétrage est protégé. L'auditeur ne peut donc pas s'appuyer sur ce contrôle pour la période : il doit étendre ses contrôles de substance aux 214 factures (rapprochement avec les commandes et les réceptions, demandes d'avoirs) et rechercher qui a modifié le paramètre, et pourquoi."
+        },
+        {
+          "id": "q7-classement-ai-act",
+          "kind": "mcq",
+          "prompt": "À l'aide de l'annexe 5, classez les projets 1 à 4 selon le règlement (UE) 2024/1689 (AI Act) : (1) l'assistant « Léa », (2) le score d'acceptation du paiement en dix fois, (3) la détection des fraudes aux changements de RIB, (4) l'organisation des tournées.",
+          "points": 1.5,
+          "options": [
+            "(1) risque minimal ; (2) haut risque ; (3) haut risque ; (4) risque minimal",
+            "(1) obligation de transparence ; (2) pratique interdite ; (3) risque minimal ; (4) haut risque",
+            "(1) obligation de transparence ; (2) haut risque ; (3) risque minimal ; (4) haut risque",
+            "(1) haut risque ; (2) obligation de transparence ; (3) haut risque ; (4) pratique interdite"
+          ],
+          "answer": [
+            2
+          ],
+          "option_explanations": [
+            "Inexact : Léa dialogue avec des clients (art. 50 §1), la fraude financière est exclue du point 5 b, les tournées relèvent du point 4 b.",
+            "Inexact : évaluer la solvabilité n'est pas une notation sociale interdite ; l'annexe III (point 5 b) classe ce système à haut risque.",
+            "Exact : transparence pour Léa (art. 50 §1), haut risque pour la solvabilité (5 b) et les tournées (4 b), risque minimal pour la fraude.",
+            "Inexact : Léa n'entre dans aucun domaine de l'annexe III, le score de solvabilité est à haut risque et attribuer des tâches n'est pas interdit."
+          ],
+          "explanation": "L'option 3 est la bonne.\n- **(1) Léa** interagit directement avec des clients. Maison Térac l'a développée et la met en service sous sa marque : elle en est le **fournisseur** (art. 3, point 3) et doit informer les clients qu'ils échangent avec une IA (art. 50 §1), au plus tard lors de la première interaction (§5). Cette obligation s'applique depuis le 2 août 2026.\n- **(2)** Évaluer la solvabilité des personnes physiques ou établir leur note de crédit relève de l'annexe III, point 5 b : c'est un système à **haut risque**, dont Maison Térac sera le déployeur.\n- **(3)** Le point 5 b exclut expressément les systèmes de détection des fraudes financières ; de plus, le modèle porte sur des sociétés et non sur des personnes physiques. Il relève du **risque minimal**.\n- **(4)** Attribuer des tâches en fonction du comportement individuel et évaluer les performances des salariés relève de l'annexe III, point 4 b : **haut risque**. La dérogation de l'article 6 §3 ne joue pas, car l'outil effectue un profilage de personnes physiques.\n\nPour les systèmes de l'annexe III, les obligations du haut risque s'appliquent à compter du 2 décembre 2027 (report décidé par le règlement (UE) 2026/1744)."
+        },
+        {
+          "id": "q8-hypertrucage",
+          "kind": "true_false",
+          "prompt": "À l'aide de l'annexe 5, dites si l'affirmation suivante est exacte : « Maison Térac devra indiquer aux salariés que la vidéo des résultats a été générée par une IA, même si la présidente a validé le texte prononcé et si la vidéo n'est diffusée qu'en interne. »",
+          "points": 1,
+          "answer": true,
+          "explanation": "Vrai. Un avatar hyperréaliste de la présidente, qui peut être pris à tort pour un enregistrement authentique, est un hypertrucage (art. 3, point 60). Le déployeur d'un système qui génère un hypertrucage doit indiquer que le contenu a été généré ou manipulé par une IA (art. 50 §4, premier alinéa). Cette obligation s'applique depuis le 2 août 2026, et l'information est due au plus tard lors de la première exposition (art. 50 §5).\n\nL'exception liée à la relecture humaine et à la responsabilité éditoriale ne concerne que les textes publiés pour informer le public sur des questions d'intérêt public (art. 50 §4, second alinéa). Elle ne s'applique pas aux vidéos. Le texte ne prévoit pas non plus d'exception pour une diffusion interne : Maison Térac utilise le système dans le cadre de son activité professionnelle et en est donc déployeur."
+        },
+        {
+          "id": "q9-empreinte-lea",
+          "kind": "numeric",
+          "prompt": "À l'aide de l'annexe 5, calculez la réduction annuelle des émissions de « Léa » obtenue en passant à l'offre hébergée en France, en kg CO₂e arrondis à l'unité.",
+          "points": 1.5,
+          "expected_value": 1250,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "kg CO₂e",
+          "decimals": 0,
+          "explanation": "Énergie des équipements informatiques : 720 000 × 0,004 = 2 880 kWh par an. L'énergie totale du centre de données s'obtient en multipliant par le PUE.\n- Offre actuelle : 2 880 × 1,3 × 0,38 = 1 422,72 kg CO₂e ;\n- offre en France : 2 880 × 1,2 × 0,05 = 172,80 kg CO₂e.\nRéduction : 1 422,72 − 172,80 = 1 249,92, soit **1 250 kg CO₂e par an** (−88 %).\n\nL'essentiel du gain vient du facteur d'émission de l'électricité (0,05 contre 0,38 kg CO₂e par kWh), bien plus que du PUE. Oublier le PUE donne 950 kg. Le calcul ignore la fabrication des serveurs et l'entraînement du modèle. Il conforte un autre levier de sobriété : choisir un modèle de taille adaptée à des questions simples sur des commandes."
+        },
+        {
+          "id": "q10-conclusions-audit",
+          "kind": "open",
+          "prompt": "À l'aide des annexes 3 et 4 et de vos résultats, présentez les conclusions de l'audit du module fournisseurs : appréciation des contrôles applicatifs et des contrôles généraux dont ils dépendent, conséquences pour les travaux d'audit et recommandations hiérarchisées.",
+          "points": 3,
+          "model_answer": "**1. Contrôles applicatifs.**\n- *Contrôle de doublon* : il fonctionne pour un doublon exact (P109, identique à P106, a été rejetée). Mais il est contourné dès que le numéro est saisi différemment : P101 (FA-2026-118) et P105 (FA2026118), du même fournisseur, à la même date et pour le même montant, ont toutes deux été payées. Le doublon de 14 640 € doit être réclamé à Bois et Plans.\n- *Lecture de la requête* : elle repère aussi des montants identiques légitimes. Les trois loyers de SCI Les Halles (9 600 € le 1ᵉʳ de chaque mois) sont des faux positifs ; les deux forfaits de Transports Rivière sont à vérifier avec les bons de livraison. L'analyse doit être affinée (numéro normalisé, sans tirets ni barres obliques, fournisseur, montant, date proche) et portée sur toute la population, et non sur un extrait.\n- *Rapprochement à trois voies* : le contrôle est bien conçu, mais il n'a pas protégé l'entité du 3 février au 29 juin 2026, quand la tolérance était à 10 %.\n- *Modification des RIB* : elle se fait sans validation par une seconde personne, et deux RIB ont été changés sur simple courriel, ce qui correspond au mode opératoire de la fraude au faux fournisseur. C'est le risque le plus grave.\n\n**2. Contrôles généraux informatiques.**\n- *Gestion des changements* : le paramètre a été modifié deux fois sans demande ni validation.\n- *Gestion des accès* : le compte ADMIN_FIN est partagé, ce qui rend toute action anonyme ; le compte administrateur du robot abandonné est toujours actif.\nCes défaillances rendent les contrôles automatisés contournables sans trace exploitable : on ne peut pas se fier aux contrôles applicatifs sur l'exercice.\n\n**3. Conséquences pour l'audit.**\n- Étendre les contrôles de substance : examiner les 214 factures (1,9 M€) payées avec un écart de 2 à 10 % ; vérifier les sept RIB modifiés en 2026 et les paiements effectués vers ces comptes (en priorité les deux changés sur courriel) ; rechercher les doublons sur toute l'année.\n- Exploiter le journal des connexions pour identifier les actions d'ADMIN_FIN et du compte du robot.\n- Informer la direction et le comité d'audit ; en cas de fraude avérée, informer aussi le commissaire aux comptes.\n\n**4. Recommandations hiérarchisées.**\n- *Immédiat* : désactiver le compte du robot ; remplacer ADMIN_FIN par des comptes nominatifs ; imposer un contre-appel et une double validation pour tout changement de RIB ; récupérer le doublon de 14 640 €.\n- *Court terme* : procédure de gestion des changements pour le paramétrage (demande, validation, revue du journal) ; revue trimestrielle des habilitations et des comptes techniques ; le futur compte du connecteur API doit être dédié, limité aux droits nécessaires et journalisé.\n- *Moyen terme* : contrôle de doublon fondé sur le numéro normalisé et sur le triplet fournisseur, montant, date ; analyses de données récurrentes sur les paiements ; le modèle de détection des fraudes (projet 3) complétera ces contrôles sans les remplacer.",
+          "key_points": [
+            "Contrôle de doublon contourné par un numéro saisi différemment (P101 et P105 : 14 640 € payés deux fois, à récupérer) ; loyers de SCI Les Halles = faux positifs, analyse à affiner et à étendre à toute la population",
+            "Tolérance à 10 % du 3 février au 29 juin, modifiée sans demande de changement par un compte partagé : contrôles généraux défaillants (changements, accès), contrôle applicatif non fiable sur la période",
+            "Modification des RIB sans double validation, deux changements sur simple courriel : risque de fraude au faux fournisseur, priorité absolue",
+            "Conséquences : contrôles de substance sur les 214 factures (1,9 M€) et sur les paiements vers les RIB modifiés, analyse des journaux",
+            "Recommandations hiérarchisées : compte du robot désactivé, comptes nominatifs, contre-appel et double validation des RIB, gestion des changements, revue des habilitations, contrôle de doublon normalisé"
+          ],
+          "explanation": "On attend une distinction nette entre les contrôles applicatifs (doublon, rapprochement, RIB) et les contrôles généraux dont dépend leur fiabilité (accès, changements). Les constats doivent être chiffrés à partir de l'annexe et du résultat de la requête, et les faux positifs de l'analyse de données doivent être identifiés. La copie doit tirer les conséquences pour la démarche d'audit (extension des contrôles de substance) et hiérarchiser les recommandations selon le risque, la fraude aux coordonnées bancaires en tête."
+        },
+        {
+          "id": "q11-note-ia",
+          "kind": "open",
+          "prompt": "À l'aide de l'annexe 5 et de vos réponses précédentes, rédigez une note à Mme Ostermann présentant, pour chaque projet d'intelligence artificielle et pour les usages spontanés, les risques, les obligations applicables et vos recommandations, en intégrant l'empreinte environnementale de « Léa ».",
+          "points": 3,
+          "model_answer": "**1. Assistant « Léa ».** Maison Térac en est le fournisseur : elle doit informer les clients, dès la première interaction, qu'ils dialoguent avec une IA (art. 50 §1 et §5, applicable depuis le 2 août 2026). Le prototype n'est pas conforme. Le risque principal est l'hallucination : l'annonce d'un report d'échéance jamais accordé peut engager Maison Térac envers son client.\n- *Fiabilité* : Léa doit répondre à partir des données de l'espace client (génération augmentée par récupération sur les commandes, les dates de pose et les échéanciers). Elle ne doit prendre aucun engagement commercial ou financier et doit passer la main à un conseiller pour toute demande de report. Les conversations sont journalisées et des tests sont menés avant la mise en service.\n- *Données et empreinte* : les données des clients envoyées à un modèle hébergé aux États-Unis constituent un transfert à encadrer (RGPD, chapitre V). L'offre hébergée en France, au même prix, règle ce point et réduit les émissions de 1 250 kg CO₂e par an (−88 %) : je recommande de la retenir, avec un modèle de taille adaptée au besoin.\n\n**2. Score d'acceptation du paiement en dix fois.** C'est un système à haut risque (annexe III, point 5 b), dont Maison Térac sera le déployeur. À compter du 2 décembre 2027, elle devra l'utiliser conformément à la notice, confier le contrôle humain à des personnes compétentes, veiller à la pertinence des données d'entrée, conserver les journaux et informer les clients (art. 26). Elle devra aussi réaliser une analyse d'impact sur les droits fondamentaux, imposée aux déployeurs des systèmes du point 5 b (art. 27). Le RGPD s'applique dès janvier 2027 : un refus automatique sans examen humain est une décision fondée exclusivement sur un traitement automatisé, qui produit un effet significatif. Elle n'est admise que dans les cas prévus, avec des garanties : intervention humaine, expression du point de vue du client, contestation (art. 22). Une analyse d'impact relative à la protection des données s'impose (art. 35). Je recommande qu'un collaborateur examine tout dossier sous le seuil et motive le refus, de tester les biais du score et d'exiger de l'éditeur sa documentation.\n\n**3. Détection des fraudes aux RIB.** Risque minimal au regard de l'AI Act. L'outil est utile, vu les deux RIB modifiés sur simple courriel, mais il complète le contre-appel et la double validation sans les remplacer. Il faut suivre son rappel (fraudes détectées) et sa précision (alertes justifiées).\n\n**4. Organisation des tournées.** Système à haut risque (annexe III, point 4 b), sans dérogation possible puisqu'il établit le profil des salariés. Avant toute utilisation, l'employeur devra informer les représentants du personnel et les salariés concernés (art. 26 §7). Dès maintenant, le CSE doit être informé et consulté sur une technique permettant de contrôler l'activité des salariés (C. trav. art. L. 2312-38), et les salariés doivent en être informés au préalable (art. L. 1222-4). Les réclamations des clients dépendent souvent de causes extérieures au poseur, ce qui biaise la note. Je recommande de faire valider les plannings par un responsable et de rendre les critères transparents.\n\n**5. Vidéo de la présidente.** C'est un hypertrucage : la vidéo doit indiquer clairement qu'elle a été générée par une IA (art. 50 §4), même en interne.\n\n**6. Usages spontanés.** Coller des contrats et des balances âgées dans un outil grand public expose des informations confidentielles et des données personnelles (contacts, clients) à un tiers, sans contrat ni garantie de non-réutilisation. Les synthèses peuvent en outre être fausses. Je recommande d'interdire ces outils pour les données de l'entreprise et de fournir un assistant déployé dans un environnement maîtrisé (contrat, hébergement dans l'Union, pas d'entraînement sur les données). Il faut l'accompagner d'une charte d'usage, d'une formation du personnel à l'IA et d'une vérification humaine systématique.\n\n**7. Gouvernance.** Je recommande de tenir un registre des usages d'IA, de qualifier chaque projet (catégorie de l'AI Act, RGPD) avant son lancement et de confier le pilotage à un comité réunissant la direction financière, la DSI, le délégué à la protection des données et le service juridique. Le choix des modèles et de leur hébergement doit intégrer un critère de sobriété.",
+          "key_points": [
+            "Léa : Maison Térac fournisseur, information des clients obligatoire depuis le 2 août 2026 (art. 50 §1) ; hallucinations maîtrisées (réponses à partir des données client, aucun engagement, relais vers un conseiller) ; offre en France : transfert évité et −1 250 kg CO₂e par an",
+            "Score : haut risque (annexe III, 5 b), obligations du déployeur et analyse d'impact sur les droits fondamentaux au 2 décembre 2027 (art. 26 et 27) ; RGPD dès maintenant : pas de refus automatique sans intervention humaine (art. 22), AIPD (art. 35)",
+            "Tournées : haut risque (4 b, profilage) ; information des représentants et des salariés (art. 26 §7) ; dès maintenant consultation du CSE (L. 2312-38) et information des salariés (L. 1222-4) ; biais de la note",
+            "Fraude : risque minimal, complément du contre-appel et de la double validation ; vidéo : hypertrucage à signaler (art. 50 §4)",
+            "Usages spontanés : confidentialité, données personnelles, hallucinations ; outil maîtrisé, charte, formation, vérification humaine ; registre et comité de gouvernance de l'IA"
+          ],
+          "explanation": "On attend une note qui qualifie chaque projet (catégorie de l'AI Act, rôle de fournisseur ou de déployeur, date d'application en octobre 2026), identifie le risque concret décrit en annexe et formule une recommandation opérationnelle. Points de vigilance : le report du haut risque au 2 décembre 2027 ne dispense ni du RGPD ni du droit du travail, déjà applicables ; Maison Térac est fournisseur de Léa mais déployeur du score ; l'empreinte de Léa doit être chiffrée et reliée au choix de l'offre."
+        }
+      ],
+      "explanation": "Processus : en BPMN, le contrôle de tolérance est une passerelle exclusive, les acteurs sont des couloirs, le fournisseur forme un bassin distinct. Solutions : API et rapprochement automatique pour les factures (la réforme fournit des données structurées), module natif et EBICS pour les banques, RPA pour le logiciel du SAV, stable et sans API. Gains de la solution 2, en différentiel (la fin de la numérisation tient à la réforme) : 339 360 min = 5 656 h, soit 3,54 ETP ; gain net annuel de 232 178 € et délai de récupération de 8,3 mois, sous réserve de réaffecter le temps libéré. Audit : la requête place en tête Bois et Plans (29 280 €), vrai doublon contournant le contrôle par un numéro saisi différemment ; les loyers sont des faux positifs. La tolérance portée à 10 % sans demande de changement, par un compte partagé, rend le rapprochement non fiable de février à juin. AI Act : transparence pour Léa, dont Maison Térac est fournisseur ; haut risque pour le score de solvabilité et les tournées (obligations au 2 décembre 2027, RGPD et droit du travail dès maintenant) ; risque minimal pour la détection de fraude ; hypertrucage à signaler. Héberger Léa en France réduit ses émissions de 1 250 kg CO₂e par an. Méthode : privilégier les fonctions natives et les API avant la RPA, juger un contrôle applicatif à travers les contrôles généraux, qualifier chaque usage d'IA avant d'en tirer les obligations."
+    }
+  ]
+}
