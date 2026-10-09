@@ -101,6 +101,14 @@ test('sujet complet : dossiers enchaînés, chronométrés à la durée de l’�
   await page.getByRole('button', { name: /Commencer le sujet/ }).click()
   await expect(page).toHaveURL(/mode=full/)
   await expect(page.getByLabel('Temps restant')).toHaveText(/^2:5\d:\d\d$|^3:00:00$/)
-  await expect(page.getByText('Sujet type d’examen')).toBeVisible()
+  await expect(page.getByText('Sujet type d’examen').first()).toBeVisible()
+  // Mode épreuve : palette des exercices, questions du dossier affichées d'emblée, annexes en panneau sur mobile.
+  const palette = page.getByRole('navigation', { name: 'Exercices de l’épreuve' })
+  await expect(palette.getByRole('button').first()).toBeVisible()
+  await expect(page.getByText(/^Question 2\/\d+/)).toBeVisible()
+  await page.getByRole('button', { name: /Annexes/ }).click()
+  await expect(page.getByRole('dialog', { name: 'Annexes du sujet' })).toBeVisible()
+  await page.getByRole('button', { name: 'Fermer' }).click()
+  await expect(page.getByRole('dialog')).toHaveCount(0)
   void errors
 })
