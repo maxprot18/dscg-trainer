@@ -1,4 +1,4 @@
-import { BellRing, Bug, Download, RotateCcw, ShieldCheck, Upload } from 'lucide-react'
+import { BellRing, Bug, Download, RefreshCw, RotateCcw, ShieldCheck, Upload } from 'lucide-react'
 import { useRef, useState } from 'react'
 
 import { useInstallPrompt } from '@/hooks/useInstallPrompt'
@@ -11,6 +11,7 @@ import { downloadBackup, isIosBrowserTab, requestPersistence, useStorageStatus }
 import { clearErrors, errorIssueUrl, readErrors } from '@/lib/errorLog'
 import { taxonomy } from '@/content/load'
 import { downloadReminder } from '@/lib/reminder'
+import { checkForUpdate, type UpdateCheck } from '@/lib/updates'
 import { DAILY_GOAL_CHOICES, saveSettings, SESSION_SIZE_CHOICES, useSettings } from '@/lib/settings'
 
 const selectClass =
@@ -149,6 +150,7 @@ export function SettingsPage() {
           </label>
         </CardContent>
       </Card>
+      <UpdateCard />
       <Card>
         <CardHeader>
           <CardTitle>Affichage</CardTitle>
@@ -268,5 +270,46 @@ export function SettingsPage() {
         </Card>
       )}
     </div>
+  )
+}
+
+const UPDATE_MESSAGES: Record<UpdateCheck, string> = {
+  update: 'Nouvelle version téléchargée : touchez « Recharger » dans le bandeau pour l’utiliser.',
+  latest: 'Vous avez la dernière version.',
+  offline: 'Hors ligne : la vérification se fera au retour du réseau.',
+  unavailable: 'Mises à jour automatiques indisponibles dans ce navigateur : rechargez la page.',
+}
+
+/** Version installée et vérification des mises à jour à la demande. */
+function UpdateCard() {
+  const [state, setState] = useState<UpdateCheck | 'checking' | null>(null)
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>Application</CardTitle>
+        <CardDescription>
+          Version {__APP_VERSION__}. L’application vérifie seule les nouvelles versions à l’ouverture, au retour au premier plan et
+          toutes les heures.
+        </CardDescription>
+      </CardHeader>
+      <CardContent className="flex flex-col gap-2 text-sm">
+        <Button
+          variant="outline"
+          className="self-start"
+          disabled={state === 'checking'}
+          onClick={() => {
+            setState('checking')
+            void checkForUpdate().then(setState)
+          }}
+        >
+          <RefreshCw /> {state === 'checking' ? 'Vérification…' : 'Vérifier les mises à jour'}
+        </Button>
+        {state && state !== 'checking' && (
+          <p role="status" className="text-muted-foreground">
+            {UPDATE_MESSAGES[state]}
+          </p>
+        )}
+      </CardContent>
+    </Card>
   )
 }
