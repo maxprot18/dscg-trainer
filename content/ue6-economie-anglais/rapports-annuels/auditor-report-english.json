@@ -171,6 +171,12 @@
             2
           ],
           "multiple": false,
+          "option_explanations": [
+            "Incorrect: an emphasis of matter never relates to a misstatement; here the auditor reports an uncorrected departure from IAS 2.",
+            "Incorrect: an adverse opinion requires pervasive effects; the misstatement is confined to inventories of one division and quantified.",
+            "Correct: the heading and the words \"except for\" show a qualified opinion: the misstatement is material but not pervasive (ISA 705 §7(a)).",
+            "Incorrect: a disclaimer relates to an inability to obtain evidence, whereas the auditor knows and quantifies the misstatement (€16m)."
+          ],
           "explanation": "The heading \"Qualified opinion\" and the words \"except for\" show a qualified opinion. Under ISA 705 §7(a), it is expressed when misstatements are material but not pervasive: here the problem is confined to one balance (inventories of one division) and to quantified amounts. An adverse opinion (option 2) would require pervasive effects; a disclaimer (option 4) relates to an inability to obtain evidence, whereas here the auditor knows and quantifies the misstatement. An emphasis of matter (option 1) never relates to a misstatement."
         },
         {

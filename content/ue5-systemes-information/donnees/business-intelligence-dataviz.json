@@ -129,6 +129,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : le libellé, la famille et le fournisseur sont des attributs descriptifs de la dimension PRODUIT, pas des mesures de la table de faits.",
+            "Exact : la table de faits porte les clés vers TEMPS, MAGASIN, PRODUIT et CLIENT et les mesures que l'on agrège (quantités, CA, marge).",
+            "Inexact : l'adresse, la surface et la région sont des attributs de la dimension MAGASIN, non des mesures agrégeables.",
+            "Inexact : les écritures de l'ERP sont des données opérationnelles, non modélisées pour l'analyse ; l'entrepôt les transforme au grain jour × magasin × produit."
+          ],
           "explanation": "La table de faits contient les mesures que l'on agrège (quantités, chiffre d'affaires, marge) et les clés qui la relient à chaque dimension. Les descriptions (libellé produit, région du magasin) sont des attributs des dimensions PRODUIT et MAGASIN (options 1 et 3). L'option 4 décrit une donnée opérationnelle, non modélisée pour l'analyse."
         },
         {

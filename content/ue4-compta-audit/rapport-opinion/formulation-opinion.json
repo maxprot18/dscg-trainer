@@ -217,6 +217,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : compensation à tort d'anomalies sans lien : la NEP 450 impose une appréciation individuelle et en cumul, selon les postes affectés.",
+            "Exact : l'anomalie 2 (240 000 €) dépasse le seuil et fausse chiffre d'affaires et stocks ; la provision sans lien ne la neutralise pas : réserve pour désaccord.",
+            "Inexact : le refus suppose une incidence diffuse ; celle de l'anomalie 2 reste circonscrite (environ 8 % du résultat, 2 % des capitaux propres).",
+            "Inexact : l'anomalie a été identifiée et chiffrée : c'est un désaccord, non une limitation."
+          ],
           "explanation": "La NEP 450 impose d'apprécier les anomalies individuellement et en cumul, en tenant compte des postes affectés. L'anomalie 2 (240 000 €) dépasse le seuil et fausse le chiffre d'affaires et les stocks ; la provision surévaluée porte sur d'autres postes et ne la neutralise pas. Son incidence reste circonscrite (environ 8 % du résultat, 2 % des capitaux propres) : réserve pour désaccord (option 2), et non refus (option 3), qui suppose une incidence diffuse. L'option 1 compense à tort des anomalies sans lien. L'option 4 est fausse : l'anomalie a été identifiée, il s'agit d'un désaccord et non d'une limitation."
         },
         {

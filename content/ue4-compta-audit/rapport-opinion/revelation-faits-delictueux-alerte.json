@@ -167,6 +167,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : cette séquence décrit la procédure de la SA à conseil d'administration ; Tilia est une SAS (L. 234-2), sans délibération d'un conseil.",
+            "Exact : procédure des sociétés autres que les SA (L. 234-2), en trois temps : explications du président, rapport spécial et assemblée, information du tribunal.",
+            "Inexact : le procureur est destinataire des révélations de faits délictueux, non de la procédure d'alerte.",
+            "Inexact : l'alerte se déclenche dès que les faits sont relevés au cours de la mission, y compris lors de l'intérim."
+          ],
           "explanation": "Tilia est une SAS : la procédure applicable est celle des sociétés autres que les SA (L. 234-2), en trois temps (explications du président, dont la réponse est portée à la connaissance du président du tribunal de commerce ; rapport spécial et assemblée ; information du président du tribunal), sans phase de délibération d'un conseil d'administration (option 2). L'option 1 décrit la procédure de la SA à conseil d'administration. Le procureur (option 3) est destinataire des révélations de faits délictueux, non de l'alerte. L'option 4 est fausse : l'alerte se déclenche dès que les faits sont relevés au cours de la mission."
         },
         {

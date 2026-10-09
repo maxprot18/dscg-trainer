@@ -172,6 +172,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : l'impact des fours est bien matériel, mais la hausse du coût du carbone peut aussi affecter significativement la marge : la dimension financière est remplie.",
+            "Exact : les émissions des fours sont un impact négatif réel grave, et le risque de transition peut affecter significativement la marge : les deux dimensions sont remplies.",
+            "Inexact : le poids du scope 3 ne rend pas le climat non matériel, au contraire ; l'impact des fours et le risque de transition suffisent.",
+            "Inexact : le risque de transition est bien matériel, mais les émissions des fours constituent aussi un impact négatif réel grave."
+          ],
           "explanation": "Les émissions des fours constituent un impact négatif réel grave (matérialité d'impact) et la hausse du coût du carbone peut affecter significativement la marge (matérialité financière). Les options 1 et 4 ne retiennent qu'une dimension alors que les deux sont satisfaites. L'option 3 est sans rapport : le poids du scope 3 ne rend pas le climat non matériel, au contraire."
         },
         {

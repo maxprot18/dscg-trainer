@@ -223,6 +223,12 @@
             2
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : des sauvegardes plus fréquentes sur le même NAS connecté seraient chiffrées avec lui par le rançongiciel.",
+            "Inexact : le RAID protège contre la panne d'un disque, pas contre un chiffrement qui touche toutes les copies du NAS.",
+            "Exact : il faut toutes les 2 heures une copie que l'attaquant ne peut ni chiffrer ni effacer (hors ligne ou immuable), outre la règle 3-2-1.",
+            "Inexact : l'ISO/IEC 27002 est un guide de mesures, non certifiable ; une certification ne protège de toute façon pas les sauvegardes."
+          ],
           "explanation": "Pour respecter un RPO de 2 heures face à un rançongiciel, il faut disposer toutes les 2 heures d'une copie que l'attaquant ne peut ni chiffrer ni effacer : copie hors ligne ou stockage immuable, en complément de la règle 3-2-1 (option 3). L'option 1 multiplie des sauvegardes qui seraient chiffrées avec le NAS. L'option 2 protège contre la panne d'un disque, pas contre un chiffrement qui touche toutes les copies. L'option 4 est impossible : l'ISO 27002 est un guide de mesures, non certifiable."
         },
         {

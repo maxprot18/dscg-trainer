@@ -162,6 +162,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : la permanence des méthodes vise la constance des méthodes d'un exercice à l'autre ; elle n'explique pas l'asymétrie entre gains latents et pertes probables.",
+            "Exact : seuls les bénéfices réalisés sont inscrits (L123-21), alors que les pertes probables sont prises en compte (L123-20) : asymétrie de la prudence.",
+            "Inexact : la non-compensation interdit de compenser la plus-value du point 1 avec la moins-value du point 2, mais n'explique pas l'asymétrie.",
+            "Inexact : la continuité d'exploitation n'est pas en cause ; l'asymétrie entre plus-value latente et moins-value relève de la prudence."
+          ],
           "explanation": "Seuls les bénéfices réalisés peuvent être inscrits dans les comptes (L123-21), alors que les pertes probables doivent être prises en compte (L123-20) : c’est l’asymétrie du principe de prudence. La non-compensation interdit en outre de compenser la plus-value latente des titres du point 1 avec la moins-value du point 2."
         },
         {

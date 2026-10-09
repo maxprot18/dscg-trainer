@@ -180,6 +180,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : le co-commissariat ne lève pas les interdictions ; la conception de procédures de contrôle interne reste interdite à Audit-Ouest.",
+            "Inexact : les SACC ne sont pas tous interdits aux CAC d'EIP ; l'attestation sur covenants est un SACC non interdit.",
+            "Exact : l'attestation porte sur des informations établies par l'entité (SACC non interdit) ; concevoir le contrôle interne est interdit (règl. 537/2014, art. 5).",
+            "Inexact : c'est l'inverse : concevoir et mettre en œuvre des procédures de contrôle interne financier est un service interdit (autorévision, art. 5)."
+          ],
           "explanation": "La conception et la mise en œuvre de procédures de contrôle interne relatives à l'information financière figurent parmi les services interdits aux CAC d'EIP (règlement 537/2014, art. 5) : autorévision. L'attestation sur des covenants porte sur des informations établies par l'entité ; c'est un SACC non interdit. Le co-commissariat ne lève pas les interdictions, et les SACC ne sont pas tous interdits aux CAC d'EIP."
         },
         {

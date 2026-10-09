@@ -171,6 +171,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Incorrect: this ignores Pillar 2 and buffers (overall requirement 9.5%, CET1 only 9.0%) and the leverage ratio of 2.88%, below the 3% minimum.",
+            "Correct: CET1 9.0% lies between 6.0% and the 9.5% overall requirement (buffer use); leverage 7.5 ÷ 260 = 2.88% < 3%; LCR = 120%.",
+            "Incorrect: this inverts the LCR (25 ÷ 30 = 83%); HQLA ÷ net outflows = 30 ÷ 25 = 120%, compliant, while capital is not sound.",
+            "Incorrect: 9.0% is above the 6.0% minimum; using the buffers triggers restrictions on distributions, not resolution."
+          ],
           "explanation": "CET1 9.0% lies between the 6.0% minimum plus Pillar 2 and the 9.5% overall requirement: the bank is using its buffers, which triggers restrictions on distributions, not resolution. The leverage ratio (2.88%) is below the 3% minimum. LCR = HQLA ÷ net outflows = 30 ÷ 25 = 120% ≥ 100%. Option 1 ignores buffers, Pillar 2 and the leverage ratio. Option 3 inverts the LCR (25 ÷ 30 = 83%). Option 4 is wrong: 9.0% is above 6.0%."
         },
         {

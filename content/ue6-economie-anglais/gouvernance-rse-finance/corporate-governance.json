@@ -148,6 +148,12 @@
             0
           ],
           "multiple": false,
+          "option_explanations": [
+            "Correct: a proxy fight is a campaign to win shareholders' votes, often by collecting their proxies, against the board's position.",
+            "Incorrect: a squeeze-out is the compulsory buy-out of the remaining minority shareholders after a takeover, not a vote campaign at the AGM.",
+            "Incorrect: a poison pill is a defence used by a board against a hostile takeover, not a shareholder's voting strategy.",
+            "Incorrect: a rights issue is a share issue offered to existing shareholders; Crestview is seeking votes, not raising capital."
+          ],
           "explanation": "A proxy fight (or proxy contest) is a campaign to win shareholders' votes, often by collecting their proxies, against the board's position. A squeeze-out is the compulsory buy-out of remaining minority shareholders after a takeover; a poison pill is a takeover defence; a rights issue is a share issue offered to existing shareholders."
         },
         {

@@ -45,6 +45,12 @@
             "Impossibilité de certifier"
           ],
           "answer": [1],
+          "option_explanations": [
+            "Inexact : un pourcentage forfaitaire du résultat ne remplace pas le seuil de la NEP 320 ; 90 000 € dépasse le seuil de 70 000 €.",
+            "Exact : 90 000 € > 70 000 € : anomalie significative que la direction refuse de corriger (désaccord), à effet non diffus : réserve.",
+            "Inexact : le refus suppose un effet diffus ; ici l'effet se limite aux stocks, au résultat et aux capitaux propres (environ 6,5 % du résultat).",
+            "Inexact : aucune limitation n'a été relevée ; l'anomalie est identifiée et la direction refuse de la corriger : c'est un désaccord."
+          ],
           "explanation": "L'anomalie de 90 000 € dépasse le seuil de signification de 70 000 € : elle est significative. Il s'agit d'un désaccord, puisque la direction refuse de corriger une anomalie identifiée. Son effet n'est pas diffus : il se limite aux stocks, au résultat et aux capitaux propres, pour environ 6,5 % du résultat, et n'affecte pas la lecture d'ensemble des comptes. L'opinion appropriée est donc une certification avec réserve. Un pourcentage forfaitaire du résultat ne remplace pas le seuil fixé selon la NEP 320, et la NEP 450 impose d'apprécier l'incidence des anomalies non corrigées par rapport à ce seuil."
         },
         {

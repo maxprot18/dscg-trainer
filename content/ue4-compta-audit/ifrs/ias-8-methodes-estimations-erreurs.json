@@ -149,6 +149,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : le double comptage résulte de la non-utilisation d'informations fiables disponibles à l'époque : c'est une erreur, non une estimation (IAS 8 §5).",
+            "Exact : erreur significative d'une période antérieure (IAS 8 §5), corrigée rétrospectivement par retraitement des comparatifs N−1 (§42).",
+            "Inexact : une erreur significative se corrige rétrospectivement, par retraitement des comparatifs N−1 (IAS 8 §42), et non en résultat de N.",
+            "Inexact : le retournement mécanique en N fausserait les deux exercices ; il ne dispense pas de la correction rétrospective."
+          ],
           "explanation": "Le double comptage résulte de la non-utilisation d'informations fiables disponibles à l'époque : c'est une erreur (IAS 8 §5). Significative, elle est corrigée rétrospectivement dans les premiers états financiers publiés après sa découverte, par retraitement des montants comparatifs de N−1 (§42). Le retournement mécanique en N fausserait les deux exercices : il ne dispense pas de la correction."
         },
         {

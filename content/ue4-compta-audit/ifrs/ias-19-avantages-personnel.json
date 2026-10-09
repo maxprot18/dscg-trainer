@@ -180,6 +180,12 @@
           "answer": [
             0
           ],
+          "option_explanations": [
+            "Exact : c'est un coût des services passés, comptabilisé immédiatement en résultat à la date de modification du régime (IAS 19 §103).",
+            "Inexact : l'étalement sur la durée d'activité résiduelle n'est plus autorisé depuis la révision de 2011 ; le coût va en résultat immédiatement.",
+            "Inexact : l'OCI reçoit les réévaluations, comme les écarts actuariels ; le coût des services passés n'en est pas une.",
+            "Inexact : le coût des services passés n'est pas imputé en réserves ; il est comptabilisé immédiatement en résultat (IAS 19 §103)."
+          ],
           "explanation": "C'est un coût des services passés, comptabilisé immédiatement en résultat à la date de la modification du régime (IAS 19 §103). L'étalement sur la durée d'activité résiduelle n'est plus autorisé depuis la révision de 2011. Ce n'est pas une réévaluation : pas d'OCI."
         },
         {

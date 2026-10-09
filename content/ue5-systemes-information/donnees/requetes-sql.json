@@ -139,6 +139,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : un agrégat comme SUM(heures) ne peut pas figurer dans WHERE, qui filtre les lignes avant le regroupement ; il faut HAVING.",
+            "Inexact : le regroupement se fait par collaborateur, alors qu'on veut un total par mission, et id_mission n'est pas dans le GROUP BY.",
+            "Exact : GROUP BY id_mission puis HAVING SUM(heures) > 70 retient M1 (75 h) et M2 (95 h) et écarte M3 (32 h).",
+            "Inexact : cette requête teste chaque saisie isolément ; aucune ne dépasse 70 h, le résultat est vide."
+          ],
           "explanation": "Il faut regrouper par mission puis filtrer sur la somme avec HAVING (option 3) : M1 = 75 h et M2 = 95 h sont retenues, M3 = 32 h est écartée. L'option 1 place un agrégat dans WHERE (erreur). L'option 2 regroupe par collaborateur, et id_mission n'est pas dans le GROUP BY. L'option 4 teste chaque saisie isolément : aucune ne dépasse 70 h, le résultat est vide."
         },
         {

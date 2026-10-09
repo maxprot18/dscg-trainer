@@ -192,6 +192,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : la forme civile de la SCI est indifférente : L. 225-38 vise toute entreprise dont un administrateur ou le directeur général est gérant.",
+            "Exact : le PDG est gérant de la SCI (L. 225-38), et un loyer supérieur d'un tiers au marché exclut les conditions normales (L. 225-39).",
+            "Inexact : les conventions interdites (L. 225-43) visent notamment les prêts et cautions au profit des administrateurs personnes physiques, pas un bail.",
+            "Inexact : le loyer de 360 000 €, supérieur d'un tiers à la valeur de marché (270 000 €), exclut l'opération courante à conditions normales (L. 225-39)."
+          ],
           "explanation": "L'article L. 225-38 soumet à autorisation préalable du conseil les conventions conclues entre la société et une entreprise dont le directeur général ou un administrateur est notamment gérant ; la forme civile de la SCI est indifférente. Le loyer, supérieur d'un tiers à la valeur de marché, exclut la qualification d'opération courante conclue à des conditions normales (L. 225-39). Les conventions interdites (L. 225-43) visent notamment les prêts et cautions au profit des administrateurs personnes physiques, pas un bail."
         },
         {

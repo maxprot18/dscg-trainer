@@ -150,6 +150,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : l'opération n'est pas à l'envers : après émission de 8 000 actions, la famille Leroy conserve 55,3 % d'Atlas.",
+            "Exact : la famille Leroy ne contrôle pas Borée (contrôle distinct) et conserve 21 000 / 38 000 = 55,3 % d'Atlas (à l'endroit) : valeur réelle.",
+            "Inexact : le capital de Borée est dispersé entre des actionnaires sans lien avec la famille Leroy : il n'y a pas de contrôle commun.",
+            "Inexact : la méthode d'évaluation des apports n'est pas au choix des parties ; elle découle du contrôle et du sens de l'opération."
+          ],
           "explanation": "La famille Leroy ne contrôle pas Borée avant l'opération : contrôle distinct. Atlas émet 8 000 actions (question 4) ; la famille Leroy détient alors 21 000 / 38 000 = 55,3 % du capital et conserve le contrôle : opération à l'endroit, donc valeur réelle. L'option 1 et l'option 3 décrivent des situations absentes de l'énoncé ; l'option 4 est fausse car la méthode n'est pas au choix des parties."
         },
         {

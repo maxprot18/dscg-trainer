@@ -117,6 +117,12 @@
           "answer": [
             3
           ],
+          "option_explanations": [
+            "Incorrect: completeness concerns omitted transactions; here revenue is overstated by £150k, not understated.",
+            "Incorrect: rights and obligations is an assertion about account balances, such as assets owned or controlled, not about the period of revenue.",
+            "Incorrect: the revenue was recorded in the correct account, only in the wrong period, so classification is not affected.",
+            "Correct: goods shipped on 3 January 2026 were recorded as December 2025 revenue: a cut-off error (séparation des exercices)."
+          ],
           "explanation": "Option 4 is correct: revenue relating to goods shipped in January 2026 was recorded in the 2025 period, which is a cut-off error (séparation des exercices). Option 1 is wrong: completeness concerns transactions that were omitted; here revenue is overstated, not understated. Option 2 is wrong: rights and obligations is an assertion about account balances such as assets owned or controlled. Option 3 is wrong: the revenue was recorded in the correct account, only in the wrong period."
         },
         {

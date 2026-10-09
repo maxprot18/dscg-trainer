@@ -182,6 +182,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : la lettre de mission fixe notamment le budget d'honoraires, non les procédures détaillées confiées à l'équipe.",
+            "Exact : une procédure précise, avec sa date et son étendue (40 références), relève du programme de travail : nature, calendrier, étendue des procédures.",
+            "Inexact : le plan de mission se limite à l'approche générale (risque élevé sur les stocks, présence aux inventaires), sans détail de date ni d'échantillon.",
+            "Inexact : le rapport sur les comptes annuels exprime l'opinion ; il ne décrit pas la planification des procédures."
+          ],
           "explanation": "Une procédure précise, avec sa date et son étendue (40 références), relève du programme de travail, qui définit la nature, le calendrier et l'étendue des procédures confiées à l'équipe. Le plan de mission se limite à l'approche générale (par exemple : « risque élevé sur les stocks, présence aux inventaires »)."
         },
         {

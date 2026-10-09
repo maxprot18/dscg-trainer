@@ -214,6 +214,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : la qualité d'absorbante n'est pas un critère ; la méthode dépend du contrôle, ici commun (Omega détient 70 % de Pi).",
+            "Exact : Omega contrôle Pi (14 000 / 20 000 = 70 %) : les sociétés sont sous contrôle commun, donc apports à la valeur comptable.",
+            "Inexact : la présence d'actionnaires minoritaires de Pi ne change pas la méthode, dictée par le contrôle commun.",
+            "Inexact : l'opération n'est pas réalisée à l'envers ; la valeur comptable s'impose parce qu'Omega contrôle déjà Pi."
+          ],
           "explanation": "Omega contrôle Pi (70 %) : contrôle commun, donc valeur comptable. La présence de minoritaires ne change pas la méthode (option 3) ; l'opération n'est pas à l'envers (option 4) ; la qualité d'absorbante n'est pas un critère (option 1)."
         },
         {

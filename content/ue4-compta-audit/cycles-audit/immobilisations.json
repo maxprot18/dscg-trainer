@@ -659,6 +659,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : l'exhaustivité porterait sur un bien omis ; ici le camion cédé figure à tort à l'actif.",
+            "Exact : le camion, cédé le 30 juin N, figure toujours à l'actif au 31/12/N : le solde inclut un bien qui n'existe plus pour l'entité.",
+            "Inexact : les droits et obligations pourraient être évoqués, mais l'anomalie première est la présence d'un actif sorti, donc l'existence.",
+            "Inexact : le prix de cession est bien rattaché à l'exercice N ; la séparation des exercices des produits n'est pas en cause."
+          ],
           "points": 2,
           "explanation": "Le camion n'appartient plus à la société au 31/12/N mais figure toujours à l'actif : le solde inclut un bien qui n'existe plus pour l'entité (existence). L'exhaustivité porterait sur un bien omis. Les droits et obligations pourraient être évoqués, mais l'anomalie première est la présence d'un actif sorti. Le prix de cession est bien rattaché à l'exercice N."
         },

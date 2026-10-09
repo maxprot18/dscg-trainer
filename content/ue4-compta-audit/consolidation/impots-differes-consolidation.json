@@ -204,6 +204,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : l'écart d'acquisition non déductible ne donne lieu à aucun impôt différé ; un passif augmenterait l'écart lui-même, de façon circulaire.",
+            "Inexact : aucun impôt différé, ni actif ni passif, n'est constaté sur un écart d'acquisition non déductible fiscalement.",
+            "Exact : l'écart d'acquisition non déductible ne donne lieu à aucun impôt différé, qui l'augmenterait de façon circulaire (même solution qu'IAS 12 §15).",
+            "Inexact : l'exception est générale : aucun impôt différé n'est constaté sur l'écart d'acquisition non déductible, pas même au rythme des dépréciations."
+          ],
           "explanation": "L'écart d'acquisition non déductible ne donne lieu à aucun impôt différé : le constater augmenterait l'écart d'acquisition lui-même, de façon circulaire (même solution qu'IAS 12 §15)."
         },
         {

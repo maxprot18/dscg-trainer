@@ -154,6 +154,12 @@
             2
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : l'atelier 1 fixe le périmètre, les valeurs métier et le socle de sécurité ; il n'étudie pas les chemins d'attaque.",
+            "Inexact : l'atelier 2 identifie les sources de risque et leurs objectifs, pas les chemins d'attaque passant par les prestataires.",
+            "Exact : l'atelier 3 construit les scénarios stratégiques, c'est-à-dire les chemins d'attaque qui passent par l'écosystème (prestataires, partenaires, fournisseurs).",
+            "Inexact : l'atelier 5 décide des mesures de traitement une fois les scénarios établis ; il n'identifie pas le chemin d'attaque."
+          ],
           "explanation": "L'atelier 3 construit les scénarios stratégiques : les chemins d'attaque qui passent par l'écosystème (prestataires, partenaires, fournisseurs). L'atelier 1 fixe le périmètre, les valeurs métier et le socle de sécurité ; l'atelier 2 identifie les sources de risque et leurs objectifs ; l'atelier 5 décide des mesures de traitement une fois les scénarios établis."
         },
         {

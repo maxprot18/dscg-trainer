@@ -458,6 +458,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : l'autorisation de la demande ne concerne ni le calcul ni la comptabilisation annuelle de la reprise, cause de l'omission.",
+            "Exact : une seule personne tient le tableau, sans revue ni rapprochement avec le plan d'amortissement : son départ a suffi pour que la reprise soit oubliée.",
+            "Inexact : l'encaissement de la subvention en N−1 n'est pas en cause ; l'omission porte sur la reprise annuelle au résultat.",
+            "Inexact : l'existence de la machine n'est pas en cause ; l'omission vient de l'absence de revue du calcul de la reprise."
+          ],
           "points": 2,
           "explanation": "Le tableau dépend d’une seule personne, sans revue ni rapprochement avec le plan d’amortissement : le départ du comptable a suffi pour que la reprise soit oubliée (option 2). Les autres options ne concernent pas le calcul ni la comptabilisation annuelle de la reprise."
         },
@@ -904,6 +910,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : le 30/06/N+1 correspond au délai d'approbation des comptes (six mois), non au délai de consultation de l'AGE.",
+            "Exact : l'AGE doit être consultée dans les quatre mois de l'approbation des comptes du 18/05/N+1, soit au plus tard le 18/09/N+1.",
+            "Inexact : le 31/12/N+1 n'a pas de fondement ; le délai est de quatre mois après l'approbation, soit le 18/09/N+1.",
+            "Inexact : le 31/12/N+3 est la date limite de régularisation si la dissolution n'est pas décidée, non celle de consultation de l'AGE."
+          ],
           "points": 2,
           "explanation": "Quatre mois après l’approbation des comptes du 18/05/N+1, soit le 18/09/N+1 (option 2). Le 30/06/N+1 correspond au délai d’approbation des comptes (six mois). Le 31/12/N+3 est la date limite de régularisation si la dissolution n’est pas décidée (clôture du deuxième exercice suivant celui de la constatation, intervenue en N+1). Le 31/12/N+1 n’a pas de fondement."
         },
@@ -985,6 +997,12 @@
           ],
           "answer": [
             1
+          ],
+          "option_explanations": [
+            "Inexact : cette option ignore le report à nouveau débiteur et la réserve légale : le bénéfice distribuable n'est que de 192 000 €.",
+            "Exact : 38 000 € excèdent le bénéfice distribuable (192 000 €) ; une décision expresse peut les prélever sur les réserves facultatives (50 000 €).",
+            "Inexact : les réserves disponibles sont distribuables sur décision expresse de l'assemblée indiquant les postes prélevés.",
+            "Inexact : la réserve légale n'est jamais distribuable ; le complément doit venir des réserves facultatives."
           ],
           "points": 2,
           "explanation": "230 000 − 192 000 = 38 000 € excèdent le bénéfice distribuable. L’assemblée peut distribuer des réserves disponibles par une décision expresse indiquant les postes prélevés ; les réserves facultatives (50 000 €) suffisent (option 2). Après distribution, les capitaux propres (1 332 000 €) restent supérieurs au capital augmenté de la réserve légale (1 320 000 €). L’option 1 ignore le report à nouveau débiteur et la réserve légale. L’option 3 est fausse : les réserves disponibles sont distribuables. L’option 4 est fausse : la réserve légale n’est pas distribuable."

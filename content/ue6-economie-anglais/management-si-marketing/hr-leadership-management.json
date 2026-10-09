@@ -111,6 +111,12 @@
             0
           ],
           "multiple": false,
+          "option_explanations": [
+            "Correct: onboarding (intégration) is the process of integrating new hires, here through shadowing and an e-learning module before driving alone.",
+            "Incorrect: outsourcing means entrusting an activity to an external provider; the programme is run in-house for new employees.",
+            "Incorrect: a performance appraisal is the periodic review of an employee's results, not the induction of new hires.",
+            "Incorrect: headhunting is the direct search for candidates, usually for senior positions; it happens before hiring, not after."
+          ],
           "explanation": "Onboarding (intégration) is the process of integrating new hires into the organisation. Outsourcing means entrusting an activity to an external provider; a performance appraisal is the periodic review of an employee's results; headhunting is the direct search for candidates, usually for senior positions."
         },
         {

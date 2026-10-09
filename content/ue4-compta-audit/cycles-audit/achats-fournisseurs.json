@@ -680,6 +680,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : une facture non parvenue suppose une livraison ; le chariot n'est pas livré à la clôture, aucune dette n'est née.",
+            "Exact : non livré à la clôture, le chariot ne crée ni actif ni dette ; la commande ferme est un engagement donné, mentionné en annexe si significatif.",
+            "Inexact : une provision suppose une sortie de ressources sans contrepartie au moins équivalente, ce qui n'est pas le cas d'un achat d'immobilisation.",
+            "Inexact : à la clôture, le chariot n'est pas livré : il n'y a ni actif ni obligation de payer envers le fournisseur."
+          ],
           "points": 2,
           "explanation": "À la clôture, le chariot n’est pas livré : aucune obligation de payer n’est née, il n’y a ni actif ni dette. La commande ferme est un engagement donné, à mentionner en annexe s’il est significatif. Une facture non parvenue suppose une livraison ; une provision suppose une sortie de ressources sans contrepartie au moins équivalente, ce qui n’est pas le cas d’un achat d’immobilisation."
         },
@@ -899,6 +905,12 @@
           ],
           "answer": [
             2
+          ],
+          "option_explanations": [
+            "Inexact : une charge ne se justifierait qu'en cas de perte probable (dépréciation) ; le trop-versé est une créance dont le remboursement est demandé.",
+            "Inexact : le solde débiteur se présente à l'actif sans compensation avec les autres dettes fournisseurs.",
+            "Exact : le trop-versé est une créance sur le fournisseur, présentée à l'actif sans compensation ; pas d'incidence sur le résultat si le remboursement est assuré.",
+            "Inexact : le second règlement a bien eu lieu ; on ne peut pas l'annuler en banque, il faut en obtenir le remboursement."
           ],
           "points": 2,
           "explanation": "Le trop-versé est une créance sur le fournisseur : il se présente à l’actif sans compensation, et le résultat n’est pas affecté tant que le remboursement est assuré. Une charge ne se justifierait qu’en cas de perte probable (dépréciation). Le règlement a bien eu lieu : on ne peut pas l’annuler en banque."

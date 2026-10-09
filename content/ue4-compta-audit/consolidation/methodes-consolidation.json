@@ -162,6 +162,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : une activité conjointe confère des droits sur les actifs et des obligations au titre des passifs ; ici les associés n'ont droit qu'à l'actif net.",
+            "Exact : contrôle conjoint (unanimité) via un véhicule distinct donnant des droits sur l'actif net : coentreprise (IFRS 11 §16).",
+            "Inexact : une entreprise associée suppose une simple influence notable ; ici Prisme partage le contrôle, puisque l'unanimité est requise.",
+            "Inexact : Prisme ne contrôle pas Jade seule : avec 50 % et l'accord obligatoire du partenaire, le contrôle est conjoint."
+          ],
           "explanation": "Contrôle conjoint (unanimité) exercé via un véhicule distinct qui confère aux partenaires des droits sur l'actif net, et non des droits sur les actifs et obligations au titre des passifs : coentreprise (IFRS 11 §16)."
         },
         {
@@ -347,6 +353,12 @@
           ],
           "answer": [
             2
+          ],
+          "option_explanations": [
+            "Inexact : l'intégration proportionnelle n'est pas admise en IFRS ; une coentreprise y est mise en équivalence.",
+            "Inexact : l'intégration globale suppose un contrôle exclusif ; Capella est contrôlée conjointement, l'accord exigeant l'unanimité.",
+            "Exact : contrôle conjoint et droits sur l'actif net : Capella est une coentreprise, mise en équivalence selon IAS 28 (IFRS 11 §24).",
+            "Inexact : une coentreprise n'est pas laissée hors consolidation au coût ; IFRS 11 §24 impose la mise en équivalence."
           ],
           "explanation": "Capella est une coentreprise au sens d'IFRS 11 (contrôle conjoint, droits sur l'actif net) : elle est mise en équivalence selon IAS 28 (IFRS 11 §24). L'intégration proportionnelle n'est pas admise en IFRS."
         }

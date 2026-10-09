@@ -266,6 +266,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : cette option ignore le mécanisme des rompus : l'action restante n'est pas annulée, elle se complète par achat de droits ou se vend.",
+            "Exact : parité de 4 Elsa pour 3 Fiona : 99 actions (33 lots) donnent 132 Elsa ; la 100e est un rompu, complété par 2 droits ou vendue.",
+            "Inexact : aucun arrondi supérieur n'est prévu ; cette option ignore le mécanisme des rompus (achat ou vente de droits).",
+            "Inexact : 75 applique la parité à l'envers (100 × 3/4) ; il faut 4 actions Elsa pour 3 actions Fiona."
+          ],
           "explanation": "La parité porte sur des lots de 3 actions Fiona : 99 actions (33 lots) donnent 132 actions Elsa. L'action restante forme un rompu : M. Garnier achète 2 droits (pour compléter un lot de 3 et recevoir 4 actions Elsa) ou vend son droit. L'option 1 et l'option 3 ignorent le mécanisme des rompus ; l'option 4 applique la parité à l'envers (100 × 3/4)."
         },
         {

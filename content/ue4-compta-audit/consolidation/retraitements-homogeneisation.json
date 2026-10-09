@@ -188,6 +188,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : sens inversé : la valeur consolidée (80 000 €) excède la base fiscale (65 000 €), différence temporelle imposable, donc impôt différé passif.",
+            "Exact : valeur consolidée 80 000 € contre base fiscale 65 000 € : différence imposable de 15 000 €, impôt différé passif de 15 000 × 25 % = 3 750 €.",
+            "Inexact : 15 000 € est la différence temporelle, et non l'impôt ; il faut lui appliquer le taux de 25 %, soit 3 750 €.",
+            "Inexact : le retraitement écarte la valeur consolidée de la base fiscale de 15 000 € : un impôt différé en découle."
+          ],
           "explanation": "Valeur consolidée de la machine : 80 000 € ; base fiscale : 65 000 €. La valeur comptable excède la base fiscale de 15 000 € : différence temporelle imposable, impôt différé passif de 15 000 × 25 % = 3 750 €."
         },
         {
@@ -322,6 +328,12 @@
           ],
           "answer": [
             1
+          ],
+          "option_explanations": [
+            "Inexact : sens inversé : l'actif net retraité (−1 500 €) est inférieur à la base fiscale nulle, différence temporelle déductible, donc impôt différé actif.",
+            "Exact : matériel 75 000 € moins dette 76 500 € : actif net −1 500 € contre base fiscale nulle, impôt différé actif de 1 500 × 25 % = 375 €.",
+            "Inexact : 4 500 € correspond aux intérêts de N ; l'impôt différé porte sur la différence de 1 500 €, soit 375 €.",
+            "Inexact : le retraitement crée un actif net de −1 500 € face à une base fiscale nulle (redevances déduites) : différence temporelle déductible."
           ],
           "explanation": "Au bilan consolidé : matériel 90 000 − 15 000 = 75 000 € ; dette 90 000 − (18 000 − 4 500) = 76 500 €. L'actif net retraité est de −1 500 €, alors que la base fiscale correspondante est nulle (redevances déduites) : différence temporelle déductible, impôt différé actif de 1 500 × 25 % = 375 €."
         },

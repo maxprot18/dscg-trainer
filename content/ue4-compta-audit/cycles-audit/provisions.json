@@ -458,6 +458,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : une base chiffre d'affaires est une méthode acceptable si le taux est représentatif ; le problème est le taux figé jamais contrôlé.",
+            "Exact : sans comparaison entre coûts réels du SAV et provision (backtesting), un taux devenu obsolète n'est pas détecté.",
+            "Inexact : la fréquence de comptabilisation n'affecte pas le montant de la provision à la clôture.",
+            "Inexact : ce n'est pas une faiblesse en soi ; c'est l'absence de rapprochement entre le SAV et la comptabilité qui pose problème."
+          ],
           "points": 2,
           "explanation": "Sans comparaison entre coûts réels et provision (backtesting), un taux devenu obsolète n’est pas détecté : c’est la faiblesse principale pour l’évaluation. L’option 1 est une méthode acceptable si le taux est représentatif. L’option 3 n’affecte pas le montant à la clôture. L’option 4 n’est pas une faiblesse en soi : c’est l’absence de rapprochement entre le SAV et la comptabilité qui pose problème."
         },
@@ -670,6 +676,12 @@
           ],
           "answer": [
             2
+          ],
+          "option_explanations": [
+            "Inexact : provisionner le montant réclamé ne repose sur aucune estimation fiable ; la sortie de ressources n'est pas probable.",
+            "Inexact : un forfait ne repose sur aucune estimation fiable ; l'avocat juge la condamnation peu probable et non chiffrable.",
+            "Exact : sortie de ressources non probable et montant non estimable : pas de provision, mais un passif éventuel significatif à mentionner en annexe.",
+            "Inexact : l'absence de jugement ne dispense pas de l'information en annexe due au titre d'un passif éventuel significatif."
           ],
           "points": 2,
           "explanation": "La sortie de ressources n’est pas probable et le montant n’est pas estimable : pas de provision, mais il s’agit d’un passif éventuel significatif à mentionner en annexe. Provisionner la réclamation (option 1) ou un forfait (option 2) ne repose sur aucune estimation fiable. L’option 4 omet l’information due en annexe."
@@ -964,6 +976,12 @@
           ],
           "answer": [
             2
+          ],
+          "option_explanations": [
+            "Inexact : la prudence ne justifie pas une provision sans obligation envers un tiers ; les pertes d'exploitation futures ne se provisionnent pas.",
+            "Inexact : confusion avec une dépréciation, qui suppose un test de valeur des actifs, et non une prévision de pertes.",
+            "Exact : les pertes d'exploitation futures ne résultent d'aucune obligation envers un tiers à la clôture : la provision doit être reprise.",
+            "Inexact : provisionner la moitié est arbitraire ; sans obligation envers un tiers, aucune provision n'est admise."
           ],
           "points": 2,
           "explanation": "Les pertes d’exploitation futures ne résultent d’aucune obligation envers un tiers : elles ne se provisionnent pas, la prudence ne justifiant pas une provision sans obligation. L’option 2 confond avec une dépréciation, qui suppose un test de valeur des actifs (valeur actuelle inférieure à la valeur nette comptable), et non une prévision de pertes. L’option 4 est arbitraire."

@@ -136,6 +136,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Incorrect: this looks at the nominal rate only; with 5.2% inflation, the real policy rate is about −1.6%, below the 1% neutral rate.",
+            "Correct: the real rate (≈ −1.62%) is below r* (1%), so policy is accommodative, while high inflation and 0.3% growth signal stagflation.",
+            "Incorrect: deflation means falling prices; here prices rise by 5.2%, and weak growth must not be confused with a fall in the price level.",
+            "Incorrect: the output gap is negative (−1% of potential GDP), which signals spare capacity, not excess demand."
+          ],
           "explanation": "Option 2: the real policy rate is negative (about −1.6%), below the neutral rate of 1%, so policy is still accommodative, while inflation is high and growth weak (stagflation). Option 1 looks at the nominal rate only. Option 3 confuses weak growth with falling prices. Option 4 is wrong: the gap is negative (−1%), signalling spare capacity."
         },
         {

@@ -147,6 +147,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : la gestion des incidents a seulement rétabli le service par des redémarrages, sans traiter la cause commune des quatre interruptions.",
+            "Exact : des incidents répétés de même origine appellent la gestion des problèmes : rechercher la cause racine (saturation nocturne de la base) et la corriger durablement.",
+            "Inexact : la gestion des actifs informatiques inventorie et suit les composants du SI ; elle ne traite pas la cause des pannes.",
+            "Inexact : la gestion des relations fournisseurs encadre les prestataires ; elle ne traite pas la saturation de la base à l'origine des pannes."
+          ],
           "explanation": "Des incidents répétés de même origine appellent la gestion des problèmes : rechercher la cause racine (saturation de la base lors des traitements de nuit) et mettre en place une correction durable, via un changement. La gestion des incidents (option 1) a seulement rétabli le service par des redémarrages. Les options 3 et 4 ne traitent pas la cause des pannes."
         },
         {

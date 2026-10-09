@@ -113,6 +113,12 @@
             2
           ],
           "multiple": false,
+          "option_explanations": [
+            "Incorrect: a star needs high growth and a relative market share above 1; the division's relative share is only 0.67 (12 / 18).",
+            "Incorrect: a cash cow is in a low-growth market; the e-bike market grows by 14%, above the 10% threshold.",
+            "Correct: high market growth (14% > 10%) and a relative market share below 1 (0.67) define a question mark.",
+            "Incorrect: a dog is in a low-growth market with a low share; the e-bike market grows at 14%, above the 10% threshold."
+          ],
           "explanation": "High market growth (14% > 10%) and a relative market share below 1 (0.67): the division is a question mark (problem child). A star would need a relative share above 1; a cash cow and a dog are in low-growth markets."
         },
         {
@@ -130,6 +136,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Incorrect: market penetration means selling more of the same products in existing markets; Canada is a new market for Ostara.",
+            "Correct: existing products (the current e-bike range) sold in a new market (Canada, with no current sales) is market development.",
+            "Incorrect: product development means new products in existing markets; Ostara sells its existing range, unchanged.",
+            "Incorrect: diversification means new products in new markets; only the market is new here, not the product."
+          ],
           "explanation": "Existing products (the current e-bike range) sold in a new market (Canada): market development. Market penetration would mean selling more of the same products in existing markets; product development, new products in existing markets; diversification, new products in new markets."
         },
         {
@@ -249,6 +261,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Incorrect: the app stores are not new competitors entering the language-learning market; they control access to users.",
+            "Correct: only two app stores provide an essential input (access to users and payment) that Lingopath cannot bypass, so they capture margin through commissions.",
+            "Incorrect: a substitute is another product meeting the same need; the app stores do not offer language lessons.",
+            "Incorrect: the buyers are the learners who use the app; the app stores are intermediaries supplying distribution."
+          ],
           "explanation": "The app stores provide an essential input (access to users and payment), there are only two of them and Lingopath cannot bypass them: they are powerful suppliers, able to capture part of the margin through their commission. They are neither new competitors nor a substitute product; the buyers are the learners."
         },
         {

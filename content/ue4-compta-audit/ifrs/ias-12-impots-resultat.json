@@ -222,6 +222,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : même administration fiscale et droit juridiquement exécutoire de compenser : la compensation s'impose (IAS 12 §74), d'où un actif net de 25 000 €.",
+            "Exact : compensation (IAS 12 §74) : 50 000 − 25 000 = actif net de 25 000 €, présenté en non courant (IFRS 18 §98, ex-IAS 1 §56).",
+            "Inexact : le montant net est juste, mais les impôts différés ne sont jamais classés en courant (IFRS 18 §98, ex-IAS 1 §56).",
+            "Inexact : les impôts différés ne sont jamais classés en courant, et la compensation s'impose ici (IAS 12 §74)."
+          ],
           "explanation": "Les actifs et passifs d'impôt différé sont compensés lorsque l'entité a un droit juridiquement exécutoire de compenser et qu'ils relèvent de la même administration fiscale (IAS 12 §74), ce qui est le cas ici : actif net de 25 000 €. Les impôts différés ne sont jamais classés en courant (IFRS 18 §98, ex-IAS 1 §56)."
         },
         {

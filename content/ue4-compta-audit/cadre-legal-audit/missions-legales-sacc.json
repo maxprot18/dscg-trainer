@@ -201,6 +201,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : la réduction du capital ou la reconstitution des capitaux propres n'intervient, dans un délai déterminé, qu'à défaut de dissolution décidée par l'AGE.",
+            "Exact : L. 225-248 : dans les quatre mois de l'approbation des comptes, le conseil convoque l'AGE pour décider s'il y a lieu à dissolution anticipée.",
+            "Inexact : le dépôt de bilan est lié à la cessation des paiements, pas à des capitaux propres inférieurs à la moitié du capital.",
+            "Inexact : L. 225-248 s'applique dès que les capitaux propres tombent sous la moitié du capital, indépendamment de toute cessation des paiements."
+          ],
           "explanation": "L. 225-248 : dans les quatre mois de l'approbation des comptes faisant apparaître la perte, le conseil d'administration convoque l'assemblée extraordinaire pour décider s'il y a lieu à dissolution anticipée. À défaut de dissolution, la société doit reconstituer ses capitaux propres ou réduire son capital dans un délai déterminé. Le dépôt de bilan est lié à la cessation des paiements, pas à la perte de la moitié du capital."
         },
         {

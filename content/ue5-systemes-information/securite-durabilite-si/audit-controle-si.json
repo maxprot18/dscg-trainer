@@ -184,6 +184,12 @@
             2
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : un contrôle applicatif n'est fiable dans la durée que si les contrôles généraux le sont ; cette option ignore ce lien de dépendance.",
+            "Inexact : un test réussi ne prouve le fonctionnement qu'à une date ; le paramétrage a pu être modifié avant ou après sans recette.",
+            "Exact : le paramétrage modifiable sans recette par un administrateur rend le blocage contournable ; l'auditeur vérifie l'historique et étend ses tests substantifs.",
+            "Inexact : c'est disproportionné ; on corrige la gestion des changements plutôt que de renoncer au contrôle automatique."
+          ],
           "explanation": "Un contrôle applicatif n'est fiable dans la durée que si les contrôles généraux le sont : un paramétrage modifiable sans recette par un administrateur rend le blocage contournable (option 3). L'auditeur vérifie l'historique des modifications du paramètre et étend ses tests substantifs sur les paiements. L'option 1 ignore ce lien de dépendance. L'option 2 ne prouve le fonctionnement qu'à une date. L'option 4 est disproportionnée : on corrige la gestion des changements plutôt que de renoncer au contrôle automatique."
         },
         {

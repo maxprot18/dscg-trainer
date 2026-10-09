@@ -617,6 +617,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : confusion entre seuil de signification et seuil d'écart acceptable de la procédure (60 000 €), dépassé par l'écart de 99 610 €.",
+            "Inexact : l'explication de la direction doit être corroborée par des éléments probants avant d'être acceptée (NEP 520).",
+            "Exact : l'écart de 99 610 € dépasse le seuil d'écart acceptable (60 000 €) : l'auditeur corrobore l'explication (NEP 520), puis apprécie l'écart résiduel.",
+            "Inexact : c'est disproportionné ; la procédure analytique reste utilisable si l'écart est expliqué et corroboré."
+          ],
           "points": 2,
           "explanation": "L’écart (99 610 €) dépasse le seuil d’écart acceptable de 60 000 € : l’auditeur doit l’investiguer, en obtenant une explication de la direction qu’il corrobore (NEP 520), puis apprécier l’écart résiduel. L’option 1 confond seuil de signification et seuil d’écart acceptable de la procédure. L’option 2 omet la corroboration. L’option 4 est disproportionnée : la procédure reste utilisable si l’écart est expliqué."
         },

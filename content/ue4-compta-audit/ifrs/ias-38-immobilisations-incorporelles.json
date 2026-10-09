@@ -30,6 +30,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : les dépenses de recherche ne peuvent pas être réintégrées dans le coût de l'actif, même si le projet aboutit (IAS 38 §71).",
+            "Exact : exploration et étude d'alternatives relèvent de la recherche, toujours comptabilisée en charges lorsqu'elle est engagée (IAS 38 §54-56).",
+            "Inexact : la mise en service ne change rien : les dépenses de recherche ne sont jamais réintégrées ultérieurement dans le coût de l'actif (§71).",
+            "Inexact : les dépenses de recherche sont des charges dès qu'elles sont engagées (IAS 38 §54-56), sans report jusqu'à la mise en service."
+          ],
           "explanation": "Ces travaux relèvent de la phase de recherche (exploration, évaluation d'alternatives). Les dépenses de recherche sont toujours comptabilisées en charges lorsqu'elles sont engagées (IAS 38 §54-56) et ne peuvent pas être réintégrées dans le coût de l'actif ultérieurement, même si le projet aboutit (§71)."
         },
         {

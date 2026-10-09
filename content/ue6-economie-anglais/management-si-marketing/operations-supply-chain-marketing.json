@@ -170,6 +170,12 @@
             2
           ],
           "multiple": false,
+          "option_explanations": [
+            "Incorrect: just-in-time minimises inventories; the proposal adds a second supplier to secure supply, not to reduce stock levels.",
+            "Incorrect: reshoring brings production back to the home country; here Brewline adds a second importer in Hamburg for green coffee.",
+            "Correct: buying a critical input from two suppliers (40% from Hamburg) reduces disruption risk, trading a slightly higher cost for security of supply.",
+            "Incorrect: vertical integration would mean Brewline taking over the importing or farming stage itself, not signing a contract with another importer."
+          ],
           "explanation": "Buying a critical input from two suppliers to reduce the risk of disruption is dual sourcing, a resilience measure that trades a slightly higher cost for security of supply. Just-in-time minimises inventories; reshoring brings production back to the home country; vertical integration would mean Brewline taking over the importing or farming stage itself."
         },
         {

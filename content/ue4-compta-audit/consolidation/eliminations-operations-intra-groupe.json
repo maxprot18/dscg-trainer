@@ -124,6 +124,12 @@
           "answer": [
             0
           ],
+          "option_explanations": [
+            "Exact : la marge figure dans le résultat de F1, société vendeuse ; l'impact se répartit selon l'intérêt du groupe dans F1, soit 90 %.",
+            "Inexact : 72 % (90 % × 80 %) est l'intérêt dans F2, société acheteuse, sans effet ici : la marge a été dégagée par F1.",
+            "Inexact : 80 % est un pourcentage de détention de F1 sur F2 ; la répartition suit l'intérêt du groupe dans la société vendeuse (90 %).",
+            "Inexact : l'élimination est totale entre sociétés intégrées globalement, mais son impact est partagé avec les minoritaires du vendeur (10 % de F1)."
+          ],
           "explanation": "La marge a été dégagée par F1 et figure dans son résultat : l'élimination affecte les capitaux propres de la société vendeuse et se répartit selon le pourcentage d'intérêt du groupe dans celle-ci (90 %), y compris pour une vente ascendante ou entre filiales. Le pourcentage d'intérêt dans F2 (80 % × 90 % = 72 %) concerne l'acheteuse, sans effet ici. L'élimination est totale entre sociétés intégrées globalement et est partagée avec les minoritaires du vendeur."
         },
         {
@@ -344,6 +350,12 @@
           ],
           "answer": [
             0
+          ],
+          "option_explanations": [
+            "Exact : le dividende est retiré du résultat de Saule et réaffecté aux réserves consolidées ; les capitaux propres part du groupe ne changent pas au total.",
+            "Inexact : la part des minoritaires (25 000 €) sort du groupe et réduit les intérêts minoritaires ; les 75 000 € du groupe vont en réserves.",
+            "Inexact : seuls les dividendes d'une entité mise en équivalence réduisent la valeur des titres ; Tilleul est intégrée globalement.",
+            "Inexact : le dividende reçu est un produit financier de Saule, non du chiffre d'affaires ; sa contrepartie est dans les réserves consolidées."
           ],
           "explanation": "Le dividende est retiré du résultat de Saule et réaffecté aux réserves consolidées : les capitaux propres part du groupe ne changent pas au total. La part des minoritaires (25 000 €) est sortie du groupe et réduit les intérêts minoritaires, sans transiter par le résultat de Saule."
         },

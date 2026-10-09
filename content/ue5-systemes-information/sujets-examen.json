@@ -50,6 +50,12 @@
             "Les factures de vente sont intégrées chaque soir en comptabilité par un fichier d'export."
           ],
           "answer": [2],
+          "option_explanations": [
+            "Inexact : la fin de support de la GPAO relève de l'obsolescence et de la pérennité du SI, pas d'un écart avec la stratégie.",
+            "Inexact : des sauvegardes jamais testées relèvent de la sécurité du SI, et non de son alignement sur la stratégie.",
+            "Exact : la stratégie export (+40 %) est irréalisable avec un outil commercial mono-devise et monolingue : défaut typique d'alignement entre stratégie et SI.",
+            "Inexact : l'intégration par fichier avec rejets est un défaut d'intégration technique, qui plaide pour un ERP sans mettre en cause la stratégie."
+          ],
           "explanation": "L'alignement stratégique est la cohérence entre la stratégie métier et la capacité du SI à la servir. L'option 3 montre une stratégie (développement export) irréalisable avec l'outil commercial actuel : c'est le défaut d'alignement typique. L'option 1 relève de l'obsolescence et de la pérennité du SI ; l'option 2, de la sécurité (sauvegardes non testées) ; l'option 4, d'un défaut d'intégration technique (interfaces et rejets), qui plaide pour un ERP mais ne met pas en cause la stratégie."
         },
         {
@@ -211,6 +217,12 @@
             "ABONNE (num_abonne, nom, ville, type_abonne, courriel, iban) ; CONTRAT (num_contrat, date_debut, loyer_mensuel, statut, #num_abonne, #num_velo, #code_option, date_ajout) ; OPTION (code_option, libelle, prix_mensuel)"
           ],
           "answer": [2],
+          "option_explanations": [
+            "Inexact : la clé migre dans le mauvais sens : #num_contrat dans ABONNE limiterait chaque abonné à un contrat et perd le lien dans CONTRAT.",
+            "Inexact : une association père-fils ne donne pas de table ; #num_contrat dans OPTION interdit qu'une option figure dans plusieurs contrats.",
+            "Exact : CONTRAT, côté (1,1), reçoit #num_abonne et #num_velo ; l'association n-n donne COMPREND, clé composée #num_contrat, #code_option, avec date_ajout.",
+            "Inexact : loger l'association n-n dans CONTRAT (#code_option, date_ajout) limiterait chaque contrat à une seule option."
+          ],
           "explanation": "Associations père-fils (souscrit, porte sur) : CONTRAT, côté (1,1), reçoit les clés étrangères #num_abonne et #num_velo, sans table d'association. Association n-n (comprend) : nouvelle table COMPREND dont la clé primaire est composée de #num_contrat et #code_option, et qui porte date_ajout. L'option 3 respecte ces règles. L'option 1 fait migrer la clé dans le mauvais sens (#num_contrat dans ABONNE : un abonné ne pourrait avoir qu'un contrat) et perd le lien abonné-contrat dans CONTRAT. L'option 2 crée une table pour une association père-fils et place #num_contrat dans OPTION, ce qui interdit qu'une option figure dans plusieurs contrats. L'option 4 loge l'association n-n dans CONTRAT : un contrat ne pourrait comprendre qu'une option."
         },
         {
@@ -225,6 +237,12 @@
             "Elle viole la troisième forme normale, car modele_velo dépend de num_velo, qui n'est pas la clé."
           ],
           "answer": [3],
+          "option_explanations": [
+            "Inexact : les valeurs sont atomiques ; la répétition d'un même vélo sur plusieurs lignes n'est pas un groupe répétitif, la 1FN est respectée.",
+            "Inexact : impossible avec une clé primaire simple (num_intervention) : une table en 1FN à clé simple est en 2FN.",
+            "Inexact : cette option ignore la dépendance transitive num_intervention → num_velo → modele_velo, visible avec V12 noté « Urbis 500 » puis « Urbis 50 ».",
+            "Exact : modele_velo dépend de num_velo, qui n'est pas la clé : dépendance transitive, la 3FN est violée."
+          ],
           "explanation": "La clé primaire est simple (num_intervention) : la table est en 2FN dès lors qu'elle est en 1FN, et elle est en 1FN (valeurs atomiques, pas de groupe répétitif ; la répétition d'un vélo sur plusieurs lignes n'est pas un groupe répétitif). En revanche, num_intervention → num_velo → modele_velo est une dépendance transitive : la 3FN est violée (option 4). L'anomalie est visible dans l'extrait : le vélo V12 est noté « Urbis 500 » puis « Urbis 50 ». Il faut supprimer modele_velo de la table et faire de num_velo une clé étrangère vers VELO. L'option 2 est impossible avec une clé simple ; l'option 3 ignore la dépendance transitive."
         },
         {
@@ -250,6 +268,12 @@
             "SELECT A.num_abonne, A.nom FROM ABONNE A INNER JOIN CONTRAT C ON A.num_abonne = C.num_abonne WHERE C.date_debut BETWEEN '2026-01-01' AND '2026-12-31' GROUP BY A.num_abonne, A.nom HAVING COUNT(*) = 0;"
           ],
           "answer": [2],
+          "option_explanations": [
+            "Inexact : cette requête ne renvoie que les abonnés sans aucun contrat (A06) et oublie A01, dont les contrats sont antérieurs à 2026.",
+            "Inexact : elle renvoie les abonnés ayant un contrat antérieur à 2026 (A01, A02 deux fois, A03), y compris A02 et A03, et oublie A06.",
+            "Exact : NOT IN exclut les abonnés ayant un contrat débutant en 2026 (A02 à A05) et renvoie A01 et A06 ; num_abonne n'est jamais vide.",
+            "Inexact : la jointure interne et le WHERE ne gardent que des abonnés ayant un contrat en 2026 : aucun groupe ne compte zéro, résultat vide."
+          ],
           "explanation": "L'option 3 exclut les abonnés présents dans la liste des contrats débutant en 2026 (A02, A03, A04, A05) et renvoie A01 et A06 ; num_abonne n'étant jamais vide dans CONTRAT, le NOT IN est sûr. L'option 1 ne renvoie que les abonnés sans aucun contrat (A06) et oublie A01. L'option 2 renvoie les abonnés ayant au moins un contrat antérieur à 2026 (A01, A02 deux fois, A03), y compris A02 et A03 qui ont aussi un contrat en 2026, et oublie A06. L'option 4 ne renvoie rien : la jointure interne et le WHERE ne conservent que des abonnés ayant au moins un contrat en 2026, donc aucun groupe ne compte zéro ligne."
         },
         {
@@ -264,6 +288,12 @@
             "S2 — Fraude au faux changement de RIB d'un fournisseur"
           ],
           "answer": [1],
+          "option_explanations": [
+            "Inexact : S5 a la vraisemblance la plus forte (4) mais une gravité faible (2) : niveau 8, contre 12 pour S1.",
+            "Exact : S1 = 3 × 4 = 12, niveau le plus élevé de la matrice ; l'incident du 15 septembre l'a confirmé.",
+            "Inexact : S4 a la gravité maximale (4) mais une vraisemblance moyenne (2) : niveau 8, contre 12 pour S1.",
+            "Inexact : S2 = 3 × 3 = 9 arrive deuxième, derrière S1 qui atteint 12."
+          ],
           "explanation": "Niveaux de risque (vraisemblance × gravité) : S1 = 3 × 4 = 12 ; S2 = 3 × 3 = 9 ; S3 = 2 × 3 = 6 ; S4 = 2 × 4 = 8 ; S5 = 4 × 2 = 8. S1 (option 2) est prioritaire, et l'incident du 15 septembre l'a confirmé. S5 (option 1) a la vraisemblance la plus forte mais une gravité faible (8) ; S4 (option 3) a la gravité maximale mais une vraisemblance moyenne (8) ; S2 (option 4) arrive deuxième avec 9."
         },
         {

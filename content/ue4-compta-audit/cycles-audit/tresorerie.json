@@ -670,6 +670,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : la dette a été éteinte par le virement de juin ; maintenir le chèque en suspens minore la trésorerie à tort.",
+            "Exact : le règlement est enregistré deux fois et le 401 est débiteur de 4 300 € ; l'annulation (débit 512, crédit 401) corrige les deux comptes.",
+            "Inexact : il n'y a aucune charge : la seule erreur est un double enregistrement du règlement, qui se corrige par un débit du 512.",
+            "Inexact : il n'y a aucun produit : l'annulation doit solder le compte 401 du fournisseur, débiteur de 4 300 €."
+          ],
           "explanation": "Le chèque n'a jamais été reçu et la dette a été éteinte par le virement de juin : le paiement est enregistré deux fois et le compte 401 du fournisseur est débiteur de 4 300 €. L'annulation (débit 512, crédit 401) corrige les deux comptes. Le maintenir en suspens minore la trésorerie à tort. Il n'y a ni charge ni produit : la seule erreur est un double enregistrement du règlement."
         },
         {
@@ -930,6 +936,12 @@
           ],
           "answer": [
             2
+          ],
+          "option_explanations": [
+            "Inexact : les fonds remontés à la mère ne sont pas un avoir bancaire de Thêta, même mobilisables ; c'est une créance sur la mère.",
+            "Inexact : il ne s'agit pas de titres de placement mais de fonds centralisés chez la mère, soit une créance de compte courant.",
+            "Exact : dans une centralisation de trésorerie, les fonds remontés à la mère sont une créance sur elle, en compte courant de groupe (451).",
+            "Inexact : le cash pooling n'a aucun lien avec les capitaux propres ; c'est une créance sur la société mère."
           ],
           "explanation": "Les fonds remontés à la mère dans le cadre d'une centralisation de trésorerie constituent une créance sur la société mère, enregistrée dans un compte courant de groupe (451), et non un avoir bancaire de Thêta. Ce ne sont pas des titres de placement, et ils n'ont aucun lien avec les capitaux propres."
         },

@@ -104,6 +104,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Incorrect: the ESMA guidelines require no specific audit opinion on an APM; they require a definition, a reconciliation and an explanation of relevance.",
+            "Correct: ESMA requires each APM to be reconciled to the most directly reconcilable item of the financial statements, here operating profit.",
+            "Incorrect: no such guarantee is required; ESMA asks for a definition, reconciliation, relevance, comparatives and consistent use.",
+            "Incorrect: this is the opposite of the rule: APMs should not be displayed with more prominence than IFRS measures."
+          ],
           "explanation": "ESMA requires issuers to define each APM, reconcile it to the most directly reconcilable item of the financial statements, explain its relevance, give comparatives and use it consistently. APMs should not be displayed with more prominence than IFRS measures (so option 4 is the opposite of the rule); no specific audit opinion or \"guarantee\" is required."
         },
         {

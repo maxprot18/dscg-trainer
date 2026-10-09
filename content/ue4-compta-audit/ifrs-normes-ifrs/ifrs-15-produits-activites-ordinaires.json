@@ -161,6 +161,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : le client peut tirer avantage de la licence seule, et l'installation standard, réalisable par d'autres, ne modifie pas significativement le logiciel : promesses séparables.",
+            "Inexact : l'installation ne modifie pas significativement le logiciel et peut être faite par d'autres : elle est distincte de la licence (IFRS 15 §29).",
+            "Exact : licence, installation standard et maintenance sont chacune distinctes (IFRS 15 §27 et §29) ; la maintenance est une série de services distincte.",
+            "Inexact : la prime n'est pas une obligation de prestation mais une contrepartie variable qui affecte le prix de transaction."
+          ],
           "explanation": "Chaque élément est distinct (IFRS 15 §27) : le client peut tirer avantage de la licence seule ou avec des ressources aisément disponibles (l'installation standard peut être faite par d'autres prestataires), et l'installation ne modifie pas significativement le logiciel, ce qui rend les promesses séparables (§29). La maintenance est une série de services distincte. La prime n'est pas une obligation de prestation mais une contrepartie variable affectant le prix."
         },
         {

@@ -151,6 +151,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : 1,25 inverse le ratio (VP ÷ VA = 150 000 ÷ 120 000) ; le SPI se calcule VA ÷ VP.",
+            "Exact : SPI = VA ÷ VP = 120 000 ÷ 150 000 = 0,80 ; écart de délai = VA − VP = −30 000 €, le projet est en retard.",
+            "Inexact : 0,89 est le CPI (120 000 ÷ 135 000), qui mesure la performance des coûts et non des délais.",
+            "Inexact : ni ce calcul ni ce seuil de 10 % n'ont de fondement ; le SPI vaut 0,80, ce qui traduit un retard."
+          ],
           "explanation": "SPI = VA ÷ VP = 120 000 ÷ 150 000 = 0,80 : seuls 80 % du travail planifié à cette date ont été réalisés (écart de délai = VA − VP = −30 000 €). L'option 1 inverse le ratio (VP ÷ VA). L'option 3 reprend le CPI, qui mesure les coûts et non les délais. L'option 4 repose sur un calcul et un seuil sans fondement."
         },
         {

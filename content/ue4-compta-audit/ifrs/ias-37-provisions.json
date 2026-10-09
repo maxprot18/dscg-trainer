@@ -210,6 +210,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : la sortie de ressources n'est pas probable (30 %) : aucune provision n'est comptabilisée (IAS 37 §14 et §23).",
+            "Inexact : la pondération par la probabilité ne sert qu'à évaluer une provision déjà justifiée, pour une population nombreuse ; ici aucune provision n'est due.",
+            "Exact : sortie de ressources non probable (30 %), donc pas de provision ; le risque n'étant pas éloigné, passif éventuel en annexe (IAS 37 §86).",
+            "Inexact : le risque n'est pas éloigné : il s'agit d'un passif éventuel à mentionner en annexe (IAS 37 §86)."
+          ],
           "explanation": "La sortie de ressources n'est pas probable (30 %) : aucune provision n'est comptabilisée (IAS 37 §14 et §23). Le risque n'étant pas éloigné, il s'agit d'un passif éventuel mentionné en annexe (§86). La pondération par la probabilité ne sert qu'à évaluer une provision déjà justifiée, pour une population nombreuse."
         },
         {
