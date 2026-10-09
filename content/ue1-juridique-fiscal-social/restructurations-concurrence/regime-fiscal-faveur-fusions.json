@@ -173,6 +173,12 @@
             2
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : l'option ignore la dispense d'agrément pour les déficits transférés inférieurs à 200 000 € (art. 209 II, 2).",
+            "Inexact : sous le régime de faveur, les plus-values d'apport de Boréal ne sont pas imposées ; il n'y a rien à imputer.",
+            "Exact : 90 000 € inférieurs au seuil de 200 000 €, autres conditions remplies : transfert dispensé d'agrément (art. 209 II, 2).",
+            "Inexact : un déficit n'ouvre pas droit à remboursement ; seul le report en arrière, sur option, crée une créance."
+          ],
           "explanation": "Le transfert des déficits de l'absorbée est en principe subordonné à un agrément (CGI art. 209 II, 1), mais il en est dispensé lorsque le montant cumulé des déficits, charges financières nettes non déduites et capacité de déduction inemployée transférés est inférieur à 200 000 €, que les déficits ne proviennent pas d'une gestion patrimoniale et que l'absorbée n'a pas cédé ou cessé l'exploitation d'un fonds de commerce ou d'un établissement pendant la période déficitaire (art. 209 II, 2) : c'est le cas ici (90 000 €), option 3. L'option 1 ignore cette dispense. Sous le régime de faveur, les plus-values d'apport ne sont pas imposées chez Boréal, il n'y a donc pas d'imputation à opérer (option 2). Un déficit n'ouvre pas droit à remboursement (option 4), seul le report en arrière, sur option et dans des limites, crée une créance."
         },
         {

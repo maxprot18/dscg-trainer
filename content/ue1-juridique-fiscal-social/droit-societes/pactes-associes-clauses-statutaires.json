@@ -160,6 +160,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : une majorité qualifiée ne suffit pas ; L227-19 exige l'unanimité pour les clauses de L227-13.",
+            "Inexact : le président n'est pas compétent pour modifier les statuts ; l'unanimité des associés est requise (L227-19).",
+            "Exact : la clause de L227-13 (dix ans au plus) ne peut être adoptée qu'à l'unanimité des associés (L227-19).",
+            "Inexact : la clause peut être adoptée en cours de vie sociale, à l'unanimité des associés."
+          ],
           "explanation": "Les statuts de SAS peuvent prévoir l'inaliénabilité des actions pour une durée n'excédant pas dix ans (C. com. L227-13) ; les clauses statutaires visées à cet article ne peuvent être adoptées ou modifiées qu'à l'unanimité des associés (L227-19). L'accord de tous les associés, y compris Logex, est donc nécessaire (option 3). Une majorité qualifiée (option 1) ne suffit pas ; le président n'est pas compétent (option 2) ; l'adoption en cours de vie sociale est possible (option 4)."
         },
         {

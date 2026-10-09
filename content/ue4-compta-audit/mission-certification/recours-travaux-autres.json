@@ -136,6 +136,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : les CAC de l'entité consolidante ne partagent pas leur responsabilité avec l'auditeur du composant (NEP 600).",
+            "Exact : les CAC de la consolidante restent seuls responsables de l'opinion (L. 821-53 ; NEP 600) ; en co-commissariat, chacun conclut sur l'ensemble, rapport commun.",
+            "Inexact : la répartition des travaux n'emporte pas répartition des responsabilités : chacun se forge une opinion sur l'ensemble des comptes (NEP 100).",
+            "Inexact : le recours à un expert ne partage pas la responsabilité de l'opinion, qui reste celle des co-commissaires (NEP 620)."
+          ],
           "explanation": "Les commissaires aux comptes de l'entité consolidante restent seuls responsables de l'opinion sur les comptes consolidés (C. com. art. L. 821-53 ; NEP 600) : ils ne partagent cette responsabilité ni avec l'auditeur du composant ni avec l'expert (NEP 620). En co-commissariat, la répartition des travaux n'emporte pas répartition des responsabilités : chacun se forge une opinion sur l'ensemble des comptes et ils signent un rapport commun (NEP 100)."
         },
         {

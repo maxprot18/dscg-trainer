@@ -319,6 +319,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : maintenu, il serait compté deux fois, puisque le résultat de Mésange a déjà été consolidé en N-1 ; il est éliminé du résultat de Lynx.",
+            "Exact : le dividende interne transfère des réserves de Mésange vers Lynx ; il est éliminé du résultat de Lynx et reclassé en réserves consolidées.",
+            "Inexact : le dividende ne modifie pas l'écart d'acquisition, calculé une fois pour toutes à l'acquisition (148 000 €).",
+            "Inexact : les 24 000 € reviennent au groupe ; seule la part versée aux minoritaires (6 000 €) réduit les intérêts minoritaires."
+          ],
           "explanation": "Le dividende interne est un transfert de réserves de Mésange vers Lynx : il est éliminé du résultat de Lynx (sinon il serait compté deux fois, puisque le résultat de Mésange a déjà été consolidé en N-1) et reclassé en réserves consolidées. Il ne modifie pas l'écart d'acquisition ; la part versée aux minoritaires (6 000 €) réduit les intérêts minoritaires."
         }
       ],

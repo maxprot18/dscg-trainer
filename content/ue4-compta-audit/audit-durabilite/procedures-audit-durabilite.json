@@ -144,6 +144,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : aucune confirmation externe n'est décrite ; l'information vient d'un entretien, corroborée par la consultation des registres du site.",
+            "Exact : l'omission est apprise lors de l'entretien avec la responsable santé-sécurité, puis corroborée par l'inspection des registres du site de Dole.",
+            "Inexact : ni test de contrôle sur la paie ni observation physique ne figurent dans les faits ; l'auditeur a consulté les registres (inspection).",
+            "Inexact : une procédure analytique aurait pu alerter, mais l'énoncé décrit un entretien puis la consultation des registres, non un recalcul sur la paie."
+          ],
           "explanation": "Selon l'énoncé, l'information provient d'un entretien et elle est corroborée par la consultation des registres du site (inspection). Les autres combinaisons ne correspondent pas aux faits décrits, même si une procédure analytique sur la baisse du taux aurait aussi pu alerter l'auditeur."
         },
         {

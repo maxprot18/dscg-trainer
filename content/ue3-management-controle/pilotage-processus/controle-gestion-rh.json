@@ -208,6 +208,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : au 1er janvier, effet masse ≈ 1,0107 × 1,02 − 1 ≈ 3,09 %, au-delà du budget de 2 %.",
+            "Exact : trois mois d'effet (≈ 0,5 %) plus l'effet report de 1,07 % : effet masse ≈ 1,58 %, sous les 2 %.",
+            "Inexact : l'option confond effet niveau et effet masse, qui dépend de la date d'augmentation et de l'effet report.",
+            "Inexact : l'augmentation au 1er octobre donne un effet masse d'environ 1,58 %, sous le plafond de 2 %."
+          ],
           "explanation": "L'option 2 est exacte. L'effet report de 1,07 % est acquis quoi qu'il arrive. Au 1er octobre, l'augmentation ne joue que trois mois : effet en masse ≈ 3 × 2 % ÷ 12 = 0,5 % ; effet masse N+1 ≈ 1,0107 × 1,005 − 1 ≈ 1,58 %, sous les 2 %. Au 1er janvier : 1,0107 × 1,02 − 1 ≈ 3,09 %, au-delà du budget (option 1). L'option 3 confond effet niveau et effet masse. L'option 4 est fausse au vu du calcul."
         },
         {

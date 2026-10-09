@@ -195,6 +195,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : la forme d'apport partiel d'actif ne dicte pas la méthode ; celle-ci dépend du contrôle et du sens de l'opération.",
+            "Exact : Cobalt et Nickel sont indépendantes et Cobalt ne détiendra qu'une minorité de Nickel : contrôle distinct, à l'endroit, donc valeur réelle.",
+            "Inexact : un élément non inscrit au bilan, comme la clientèle, peut être apporté à sa valeur réelle.",
+            "Inexact : la méthode s'applique à l'ensemble des apports, et non élément par élément."
+          ],
           "explanation": "Cobalt et Nickel sont indépendantes et Cobalt ne détiendra qu'une minorité de Nickel (voir q2) : contrôle distinct, à l'endroit, donc valeur réelle (option 2). L'option 1 est fausse : la forme d'APA ne dicte pas la méthode. L'option 3 est fausse : un élément non inscrit peut être apporté à sa valeur réelle. L'option 4 est fausse : la méthode s'applique à l'ensemble des apports."
         },
         {

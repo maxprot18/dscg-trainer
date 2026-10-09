@@ -113,6 +113,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : l'affiliation au régime général (CSS L311-3) vise les gérants minoritaires ou égalitaires ; Mme Tessier détient 70 % des parts.",
+            "Exact : avec 70 % des parts, la gérante est majoritaire et relève du régime des travailleurs non salariés.",
+            "Inexact : le statut de salariée de droit commun suppose un contrat de travail distinct, absent ici.",
+            "Inexact : la gérante majoritaire cotise au régime des indépendants ; elle bénéficie donc d'une protection sociale."
+          ],
           "explanation": "Détenant 70 % des parts, Mme Tessier est gérante majoritaire : elle relève du régime des travailleurs non salariés, l'affiliation au régime général (CSS art. L311-3) ne visant que les gérants minoritaires ou égalitaires (option 2). L'option 1 vaudrait pour une gérante minoritaire ; l'option 3 suppose un contrat de travail distinct ; l'option 4 est fausse, la gérante majoritaire cotise au régime des indépendants."
         },
         {

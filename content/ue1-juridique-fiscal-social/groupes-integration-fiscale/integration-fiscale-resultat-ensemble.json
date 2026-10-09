@@ -211,6 +211,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : le déficit, imputé sur le résultat d'ensemble, appartient au groupe et n'est pas restitué à la filiale sortante.",
+            "Exact : le déficit subi pendant l'intégration a été imputé sur le résultat d'ensemble ; il reste acquis au groupe.",
+            "Inexact : aucun texte ne prévoit de partage du déficit entre la mère et la filiale sortante.",
+            "Inexact : aucune réintégration du déficit n'est prévue ; seules certaines neutralisations sont réintégrées à la sortie (art. 223 F)."
+          ],
           "explanation": "Les déficits subis par une filiale pendant l'intégration ont été imputés sur le résultat d'ensemble : ils appartiennent au groupe et ne sont pas restitués à la filiale sortante (option 2). Aucun texte ne prévoit de partage (option 3) ni de réintégration du déficit lui-même (option 4) ; ce sont certaines neutralisations, comme celle de la plus-value de cession intra-groupe, qui sont réintégrées en cas de sortie de la société cédante ou cessionnaire (CGI art. 223 F, al. 2). Faute de clause d'indemnisation, Quartz perd l'économie future correspondante."
         },
         {

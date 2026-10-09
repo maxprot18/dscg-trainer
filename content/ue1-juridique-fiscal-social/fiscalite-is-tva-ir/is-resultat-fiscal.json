@@ -144,6 +144,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : l'option ignore le régime des plus-values à long terme sur titres de participation, taxées à 0 % (art. 219, I-a quinquies).",
+            "Exact : taux de 0 % sur les plus-values à long terme de titres de participation, avec réintégration d'une quote-part de 12 % du montant brut.",
+            "Inexact : l'option oublie la quote-part de frais et charges de 12 % du montant brut, à réintégrer.",
+            "Inexact : confusion avec le taux réduit PME de 15 %, qui vise une tranche de bénéfice, non une catégorie de plus-values."
+          ],
           "explanation": "Les plus-values à long terme de cession de titres de participation détenus depuis au moins deux ans relèvent d'un taux de 0 %, sous réserve de la réintégration d'une quote-part de frais et charges de 12 % du montant brut des plus-values (CGI art. 219, I-a quinquies) : option 2. L'option 1 ignore ce régime ; l'option 3 oublie la quote-part ; l'option 4 confond avec le taux réduit PME, qui concerne une tranche de bénéfice et non une catégorie de plus-values."
         },
         {

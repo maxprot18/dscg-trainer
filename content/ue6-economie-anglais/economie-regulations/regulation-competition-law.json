@@ -65,6 +65,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Incorrect: the €5,000m threshold applies to combined worldwide turnover (4,200 + 1,300 = €5,500m), not to each party separately.",
+            "Correct: combined turnover €5,500m > €5,000m, each party's EU turnover (€1,900m, €900m) exceeds €250m, and the two-thirds exception does not apply.",
+            "Incorrect: France is only about 37% of Alpha Pack's EU turnover (700 / 1,900) and the Netherlands about 39% of Beta's (350 / 900).",
+            "Incorrect: under the one-stop shop principle, a deal with an EU dimension is notified once to the Commission, replacing national notifications."
+          ],
           "explanation": "Combined worldwide turnover = 4,200 + 1,300 = €5,500m > €5,000m; EU turnover of each party (€1,900m and €900m) > €250m. The two-thirds exception does not apply: France represents 700 / 1,900 ≈ 37% of Alpha Pack's EU turnover and the Netherlands 350 / 900 ≈ 39% of Beta's. The €5,000m threshold is a combined figure, not per party (option 1). Under the one-stop shop principle, national notifications are replaced by a single EU notification (option 4)."
         },
         {

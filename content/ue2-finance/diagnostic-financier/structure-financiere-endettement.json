@@ -224,6 +224,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : 7 500 / 9 000 oublie les concours bancaires et les disponibilités dans l'endettement net.",
+            "Exact : endettement net = 7 500 + 1 200 − 400 = 8 300 ; 8 300 / 9 000 = 0,92.",
+            "Inexact : 8 700 / 9 000 oublie de déduire les disponibilités de 400.",
+            "Inexact : 8 300 / 23 000 rapporte l'endettement net aux ressources stables, non aux capitaux propres."
+          ],
           "explanation": "Endettement net = 7 500 + 1 200 − 400 = 8 300 ; 8 300 / 9 000 = 0,92 (option 2). 0,83 oublie les concours bancaires et les disponibilités (7 500 / 9 000) ; 0,97 oublie de déduire les disponibilités (8 700 / 9 000) ; 0,36 rapporte l'endettement net aux ressources stables (8 300 / 23 000)."
         },
         {

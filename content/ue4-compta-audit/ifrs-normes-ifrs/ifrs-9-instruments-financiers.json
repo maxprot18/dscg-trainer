@@ -175,6 +175,12 @@
           "answer": [
             0
           ],
+          "option_explanations": [
+            "Exact : détenues à des fins de transaction, les actions sont à la juste valeur par résultat (IFRS 9 §4.1.4) ; frais de transaction en charges (§5.1.1).",
+            "Inexact : pour un actif à la juste valeur par résultat, les coûts de transaction ne sont pas incorporés à la valeur initiale (IFRS 9 §5.1.1).",
+            "Inexact : l'option pour la juste valeur par OCI est fermée aux actions détenues à des fins de transaction (IFRS 9 §5.7.5).",
+            "Inexact : le coût amorti est exclu pour une action, dont les flux ne sont pas uniquement du principal et des intérêts."
+          ],
           "explanation": "Détenues à des fins de transaction, les actions Gamma sont évaluées à la juste valeur par résultat (IFRS 9 §4.1.4) ; l'option OCI leur est fermée (§5.7.5). Pour un actif à la juste valeur par résultat, les coûts de transaction ne sont pas incorporés à la valeur initiale (§5.1.1) : ils sont passés en charges. Le coût amorti est exclu pour une action (flux non SPPI)."
         },
         {

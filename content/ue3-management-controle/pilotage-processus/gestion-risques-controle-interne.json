@@ -187,6 +187,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : la priorité se juge sur le risque net ; R1 a une criticité nette de 8, sous le seuil d'appétence.",
+            "Exact : R2, sans dispositif de maîtrise, est le seul risque dont la criticité nette (3 × 3 = 9) atteint le seuil d'appétence.",
+            "Inexact : la priorité se juge sur le risque net ; la criticité nette de R3 n'est que de 6.",
+            "Inexact : R2 et R5 n'ont aucun dispositif de maîtrise."
+          ],
           "explanation": "L'option 2 est exacte : R2 est le seul risque dont la criticité nette (3 × 3 = 9) atteint le seuil d'appétence ; aucun dispositif ne le réduit. L'option 1 est fausse : la priorité se juge sur le risque net ; R1 a une criticité brute de 12 mais nette de 8, sous le seuil (il reste à surveiller, car il dépend de l'efficacité du stock de sécurité). L'option 3 est fausse : la criticité nette de R3 est de 6. L'option 4 est fausse : R2 et R5 n'ont aucun dispositif de maîtrise."
         },
         {

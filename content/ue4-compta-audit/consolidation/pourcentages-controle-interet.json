@@ -134,6 +134,12 @@
           "answer": [
             0
           ],
+          "option_explanations": [
+            "Exact : la méthode dépend du pourcentage de contrôle : 65 % des droits de vote (40 % via B + 25 % direct) donnent un contrôle exclusif.",
+            "Inexact : la mise en équivalence vise l'influence notable ; avec 65 % des droits de vote, le groupe contrôle C de façon exclusive.",
+            "Inexact : c'est le traitement IFRS 11 des activités conjointes, qui suppose un contrôle conjoint, absent ici.",
+            "Inexact : un intérêt inférieur à 50 % (39,4 %) n'est pas un motif d'exclusion ; les intérêts minoritaires (60,6 %) seront simplement élevés."
+          ],
           "explanation": "La méthode dépend de la nature du contrôle, appréciée par le pourcentage de contrôle et non par le pourcentage d'intérêt. Avec 65 % des droits de vote, le groupe exerce un contrôle exclusif sur C : intégration globale. La mise en équivalence vise les entités sous influence notable (et, en IFRS seulement, les coentreprises : IFRS 11 §24). La comptabilisation des quotes-parts d'actifs et de passifs est le traitement IFRS 11 des activités conjointes ; le règlement ANC 2020-01 applique, lui, l'intégration proportionnelle aux entités sous contrôle conjoint. Ces deux traitements supposent un contrôle conjoint, absent ici. Un intérêt inférieur à 50 % n'est pas un motif d'exclusion : les intérêts minoritaires de C (60,6 %) seront simplement élevés."
         }
       ],
@@ -346,6 +352,12 @@
           ],
           "answer": [
             1
+          ],
+          "option_explanations": [
+            "Inexact : le pourcentage d'intérêt, inférieur à 50 %, ne détermine pas la méthode ; le contrôle de 55 % conduit à l'intégration globale.",
+            "Exact : le groupe dispose de 55 % des droits de vote de S (30 % via L + 25 % via P) : contrôle exclusif de droit.",
+            "Inexact : l'intégration proportionnelle suppose un contrôle conjoint ; aucun accord ne partage le contrôle de S.",
+            "Inexact : le contrôle s'apprécie au niveau du groupe en additionnant les droits de vote des sociétés contrôlées : L et P réunissent 55 %."
           ],
           "explanation": "Le groupe dispose de 55 % des droits de vote de S : contrôle exclusif de droit, intégration globale. Le pourcentage d'intérêt, inférieur à 50 %, ne détermine pas la méthode."
         },

@@ -190,6 +190,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Incorrect: a dividend is a distribution to owners, not an expense, so it never appears in profit or loss.",
+            "Correct: the statement of changes in equity shows distributions to owners separately (IAS 1 §106(d)(iii), now IFRS 18 §107(c)(iii)).",
+            "Incorrect: OCI contains income and expenses not recognised in profit or loss; a distribution to owners is not income or expense.",
+            "Incorrect: the dividend per share may be given in the notes (IAS 1 §107), but the movement must appear in the statement of changes in equity."
+          ],
           "explanation": "Dividends are distributions to owners: the statement of changes in equity must reconcile each component of equity, showing separately the distributions to owners (IAS 1 §106(d)(iii), now IFRS 18 §107(c)(iii)), so the £150k reduction of retained earnings appears there, not as an expense in profit or loss or in OCI. \"Notes only\" is wrong: IAS 1 §107 (now IFRS 18 §110) lets the entity give the amount of dividends and the dividend per share either in that statement or in the notes, but the movement itself must appear in the statement of changes in equity. The dividend also appears as a cash outflow in the statement of cash flows (financing or operating activities in 2025; financing activities only from 2027, IAS 7 §33A as amended by IFRS 18)."
         },
         {

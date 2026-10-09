@@ -22,13 +22,14 @@ if (!existsSync(join(SRC, 'codes'))) {
 
 // ---------- Index des textes ----------
 
-type Code = 'com' | 'trav' | 'civ' | 'cgi' | 'consom' | 'css'
+type Code = 'com' | 'trav' | 'civ' | 'cgi' | 'consom' | 'css' | 'pen'
 const CODE_DIRS: Record<Exclude<Code, 'css'>, string> = {
   com: 'Code de commerce',
   trav: 'Code du travail',
   civ: 'Code civil',
   cgi: 'Code général des impôts',
   consom: 'Code de la consommation',
+  pen: 'Code pénal',
 }
 const CODE_LABEL: Record<Code, string> = {
   com: 'C. com.',
@@ -37,6 +38,7 @@ const CODE_LABEL: Record<Code, string> = {
   cgi: 'CGI',
   consom: 'C. consom.',
   css: 'CSS',
+  pen: 'C. pén.',
 }
 
 function walk(dir: string, out: string[] = []): string[] {
@@ -134,7 +136,8 @@ const MARKERS: [RegExp, Code | 'skip' | 'pcg' | 'anc'][] = [
   [/\bCGI\b|Code général des impôts/g, 'cgi'],
   [/C\.\s?consom\.|Code de la consommation/g, 'consom'],
   [/\bCSS\b|C\.\s?séc\.\s?soc\.|Code de la sécurité sociale/g, 'css'],
-  [/C\.\s?mon\.\s?fin\.|\bCMF\b|C\.\s?ass(?:ur)?\.|Code des assurances|\bCPP\b|C\.\s?pén\.|Code pénal|\bLPF\b|C\.\s?pr\.\s?civ\.|\bCPC\b|C\.\s?env\.|C\.\s?rur\.|\bCCH\b/g, 'skip'],
+  [/C\.\s?pén\.|Code pénal/g, 'pen'],
+  [/C\.\s?mon\.\s?fin\.|\bCMF\b|C\.\s?ass(?:ur)?\.|Code des assurances|\bCPP\b|\bLPF\b|C\.\s?pr\.\s?civ\.|\bCPC\b|C\.\s?env\.|C\.\s?rur\.|\bCCH\b/g, 'skip'],
   [/[Ll]oi n°|[Oo]rdonnance|[Dd]écret|[Dd]irective|[Rr]èglement \(UE\)|règl\. \(UE\)|\bRGPD\b|\bTFUE\b|[Aa]rrêté/g, 'skip'],
   [/règl(?:ement|\.)?\s+ANC\s+(?:n°\s*)?2020-01|ANC\s+2020-01/g, 'anc'],
   [/\bPCG\b|règl(?:ement|\.)?\s+ANC\s+(?:n°\s*)?2014-03/g, 'pcg'],
@@ -203,8 +206,9 @@ function checkLine(where: string, id: string, line: string) {
         }
         continue
       }
-      // Articles L./R./D./A. des codes (le CGI n'en a pas : ceux-là relèvent du LPF).
-      if (code !== 'cgi' && code !== 'civ') {
+      // Articles L./R./D./A. des codes (le CGI n'en a pas : ceux-là relèvent du LPF ; le Code pénal et le Code
+      // civil numérotent leurs articles législatifs sans lettre).
+      if (code !== 'cgi' && code !== 'civ' && code !== 'pen') {
         for (const m of part.text.matchAll(L_NUM)) {
           if (/^ancien/.test(m[0])) continue
           const num = `${m[1]}${m[2]}`
@@ -214,7 +218,7 @@ function checkLine(where: string, id: string, line: string) {
         }
         continue
       }
-      // CGI et Code civil : numéros après « art. », en liste « 145 et 216 », « 1843-4, 1844 ».
+      // CGI, Code civil et Code pénal : numéros après « art. », en liste « 145 et 216 », « 1843-4, 1844 ».
       const after = part.text.match(/\bart(?:icle)?s?\.?\s+(.*)$/s)
       if (!after) continue
       const list = after[1].split(/(,\s*(?=\d)|\s+et\s+(?=\d)|\s+à\s+(?=\d))/)

@@ -141,6 +141,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : l'écart de conversion d'une activité à l'étranger ne passe pas en résultat de N ; il est enregistré en autres éléments du résultat global.",
+            "Exact : IAS 21 §39(c) : l'écart est comptabilisé en autres éléments du résultat global et cumulé dans une composante distincte des capitaux propres.",
+            "Inexact : le capital reste converti au cours historique ; l'écart forme une composante distincte des capitaux propres.",
+            "Inexact : ce n'est pas un passif probable ; l'écart est cumulé en capitaux propres et reclassé en résultat seulement à la cession."
+          ],
           "explanation": "IAS 21 §39(c) : l'écart né de la conversion d'une activité à l'étranger est comptabilisé en autres éléments du résultat global et cumulé dans une composante distincte des capitaux propres."
         },
         {

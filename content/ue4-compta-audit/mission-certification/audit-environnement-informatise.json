@@ -168,6 +168,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : le test d'un contrôle automatisé sur un cas n'est probant que si les contrôles généraux sont efficaces, ce qui n'est pas le cas ici.",
+            "Inexact : une faiblesse de contrôle interne n'est pas une limitation de l'audit ; le CAC adapte ses procédures.",
+            "Exact : accès des développeurs à la production et absence de revue : le programme a pu être modifié ou contourné ; travaux complémentaires ou substance renforcée.",
+            "Inexact : la faiblesse n'impose pas d'audit par l'éditeur ; le CAC adapte ses propres procédures, par des travaux complémentaires ou des procédures de substance."
+          ],
           "explanation": "L'accès des développeurs à la production et l'absence de revue des habilitations ne garantissent plus que le programme n'a pas été modifié ni contourné pendant l'exercice : le test d'un contrôle automatisé sur un cas n'est probant que si les contrôles généraux sont efficaces. Une faiblesse de contrôle interne n'est pas une limitation de l'audit : le CAC adapte ses procédures."
         },
         {

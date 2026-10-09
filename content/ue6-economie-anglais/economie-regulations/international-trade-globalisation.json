@@ -170,6 +170,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Incorrect: a current account deficit is not a loss; it may finance productive investment, even though it increases the country's external liabilities.",
+            "Correct: by construction of the balance of payments, the €13bn deficit is matched by net financial account inflows: FDI, portfolio inflows, foreign loans or reserves.",
+            "Incorrect: this rule is invented; the WTO does not regulate countries' trade or current account balances.",
+            "Incorrect: customs duties are tax revenue for the government; they do not finance a deficit, which is matched by financial account inflows."
+          ],
           "explanation": "By construction of the balance of payments, a current account deficit is matched (apart from the small capital account and errors and omissions) by net inflows on the financial account: foreign direct investment, portfolio inflows, loans from abroad or a drawdown of reserves. It is not a \"loss\" (option 1): it may finance productive investment, although it increases external liabilities. Option 3 is invented: the WTO does not regulate trade balances. Option 4 confuses tax revenue with balance of payments financing."
         },
         {

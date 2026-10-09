@@ -144,6 +144,12 @@
             2
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : la complétude vise les champs non renseignés, comme les 260 IBAN absents ; ici le SIREN est renseigné mais mal formé.",
+            "Inexact : l'unicité vise les doublons, comme les 120 fiches en double d'un fournisseur déjà présent.",
+            "Exact : un SIREN qui ne compte pas 9 chiffres ne respecte pas le format attendu, ce qui met en cause la validité.",
+            "Inexact : l'actualité vise une donnée non mise à jour dans le délai utile, et non un défaut de format."
+          ],
           "explanation": "L'option 3 est la bonne : un SIREN qui ne compte pas 9 chiffres ne respecte pas le format attendu, ce qui relève de la validité. La complétude (option 1) vise les champs non renseignés, comme les IBAN absents ; l'unicité (option 2) vise les doublons ; l'actualité (option 4) vise une donnée non mise à jour dans le délai utile."
         },
         {

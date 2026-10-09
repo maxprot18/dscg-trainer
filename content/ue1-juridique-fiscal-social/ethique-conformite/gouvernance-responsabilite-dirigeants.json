@@ -128,6 +128,12 @@
             2
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : le quitus n'éteint pas l'action sociale pour faute commise dans le mandat (L225-253, al. 2).",
+            "Inexact : aucune décision de l'assemblée n'éteint l'action en responsabilité, même pour des faits connus (L225-253, al. 2).",
+            "Exact : aucune décision de l'assemblée ne peut éteindre l'action sociale pour faute commise dans le mandat (L225-253, al. 2).",
+            "Inexact : la loi refuse tout effet extinctif au quitus, y compris à l'égard des actionnaires ayant voté la résolution."
+          ],
           "explanation": "Aucune décision de l'assemblée ne peut avoir pour effet d'éteindre une action en responsabilité contre les administrateurs pour faute commise dans l'accomplissement de leur mandat (C. com. L225-253, al. 2) : option 3. Les options 1, 2 et 4 prêtent au quitus un effet extinctif que la loi lui refuse."
         },
         {

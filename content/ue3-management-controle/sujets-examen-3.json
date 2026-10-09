@@ -1,0 +1,487 @@
+{
+  "exercises": [
+    {
+      "id": "ue3-dossier-0005",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "controle-gestion-rh",
+      "difficulty": 3,
+      "tags": [
+        "dossier type examen",
+        "masse salariale",
+        "effet masse",
+        "effet report",
+        "GVT",
+        "effet de noria",
+        "écarts sur charges de personnel",
+        "indicateurs RH",
+        "balanced scorecard",
+        "tableau de bord"
+      ],
+      "source_ref": "Contrôle de gestion sociale : analyse de l'évolution de la masse salariale (effets niveau, masse, report, GVT, noria) et indicateurs sociaux ; contrôle budgétaire, écarts sur charges de personnel (salaire moyen, effectif, structure) ; R. Kaplan et D. Norton, « The Balanced Scorecard », Harvard Business Review (1992) et Strategy Maps (2004) ; programme DSCG UE 3 (arrêté du 4 août 2025), pilotage des ressources humaines et de la performance",
+      "verified": true,
+      "estimated_seconds": 5100,
+      "total_points": 20,
+      "title": "Calyptis Services : piloter la masse salariale et construire un balanced scorecard",
+      "explanation": "Démarche attendue : mesurer d'abord les effets des augmentations générales à effectif et structure constants (effet masse de 2026 : 2,71 %, dont 1,19 % de report des mesures de 2025 ; effet report sur 2027 : 1,00 %), puis construire le budget 2027 mois par mois à partir de la masse de décembre 2026, en intégrant le GVT, la noria, l'augmentation générale et les recrutements : 10 003 154 €, soit +2,86 %, sous le plafond de 3 %. L'analyse des écarts de septembre 2026 montre que l'écart global favorable de 27 360 € vient des effectifs (−25 140 €, dont −8 826 € d'effectif global et −16 314 € de structure) et très peu des salaires (−2 220 €) : il traduit un sous-effectif de 14 ingénieurs compensé par des techniciens moins qualifiés, au détriment de la qualité de service. Les indicateurs sociaux (absentéisme de 5,90 %, rotation de 20,3 %) et opérationnels alimentent un balanced scorecard dont la carte stratégique relie compétences et rétention, qualité du support, fidélisation des clients et marge. La copie doit enfin critiquer le reporting financier actuel et la prime fondée sur le budget de masse salariale, puis discuter les limites du scorecard et ses conditions de réussite.",
+      "context": "**Calyptis Services SAS** est un centre de services informatiques implanté à Nantes et à Angers. Elle assure le support des utilisateurs (helpdesk de niveaux 1 et 2) et l'infogérance des postes de travail et des réseaux de PME, d'établissements de santé et de collectivités. Elle a réalisé en 2025 un chiffre d'affaires de 24,6 M€ pour une marge opérationnelle de 5,8 % et emploie 282 salariés fin septembre 2026. Les charges de personnel (salaires et charges sociales) représentent environ 55 % du chiffre d'affaires : la masse salariale est le premier levier de sa rentabilité.\n\nLe plan stratégique 2026-2028, adopté en janvier 2026, prévoit une montée en gamme : développer l'infogérance et la cybersécurité, vendues sous forme de contrats pluriannuels à plus forte marge, pour porter leur part du chiffre d'affaires de 22 % à 40 % et la marge opérationnelle à 8 % en 2028. Sa réussite dépend des compétences : Calyptis peine à recruter des ingénieurs systèmes et réseaux et perd chaque année un quart de ses techniciens.\n\nRecruté comme contrôleur de gestion sociale auprès de la directrice administrative et financière, vous êtes chargé d'analyser l'évolution de la masse salariale, de construire le budget 2027 des salaires, d'analyser les écarts sur charges de personnel de septembre 2026 et de proposer un tableau de bord prospectif qui relie la gestion des ressources humaines à la stratégie.\n\nLes données figurent en annexes 1 à 5. Les salaires sont des salaires mensuels bruts, hors charges sociales patronales.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Effectifs et salaires au 31 décembre 2025",
+          "content": "| Catégorie | Effectif au 31/12/2025 | Salaire mensuel brut moyen au 31/12/2025 |\n| --- | --- | --- |\n| Techniciens support (niveaux 1 et 2) | 180 | 2 300 € |\n| Ingénieurs systèmes et réseaux | 70 | 3 600 € |\n| Encadrement et fonctions support | 30 | 4 400 € |\n| Total | 280 | 2 850 € |\n\nMasse salariale brute de décembre 2025 : 798 000 €.\n\nMouvements de 2025 : 54 entrées, 60 sorties, effectif moyen de 281 salariés. Taux de rotation de 2025 (formule de l'entreprise : ((entrées + sorties) ÷ 2) ÷ effectif moyen) : 20,3 % en moyenne, dont 25 % pour les techniciens, 15 % pour les ingénieurs et 5 % pour l'encadrement (taux arrondis). Les techniciens expérimentés qui partent sont en général remplacés par des débutants."
+        },
+        {
+          "title": "Annexe 2 — Politique salariale 2025-2026 et hypothèses du budget 2027",
+          "content": "**Augmentations générales accordées** (applicables à tous les salariés présents ; chaque augmentation s'applique au salaire déjà augmenté) :\n- 2024 : aucune ; le salaire de janvier 2025 est égal à celui de décembre 2024 ;\n- 2025 : 1,8 % au 1er septembre 2025 ;\n- 2026 : 1,5 % au 1er mars 2026, puis 1 % au 1er octobre 2026 (accord complémentaire signé en septembre pour freiner les départs).\n\n**Masse salariale brute de 2026** (prévision de clôture) : 9 724 600 €. **Masse salariale brute de décembre 2026** (prévision, 282 salariés) : 819 250 €.\n\n**Hypothèses du budget 2027 des salaires bruts** :\n1. Glissement vieillesse technicité (avancements d'échelon prévus par l'accord d'entreprise et promotions) : +0,3 % de la masse salariale au 1er janvier 2027.\n2. Noria : 12 techniciens expérimentés, payés 2 600 € par mois, partiront le 31 mars 2027 ; ils seront remplacés le 1er avril 2027 par 12 techniciens débutants payés 2 250 € par mois (montants au niveau de salaire de janvier 2027).\n3. Augmentation générale de 1,2 % au 1er juillet 2027, applicable à tous les salariés présents à cette date.\n4. Recrutement de 8 ingénieurs supplémentaires le 1er septembre 2027, à 3 800 € par mois chacun (salaire d'embauche déjà fixé, non concerné par l'augmentation générale de 2027).\n5. Aucun autre mouvement. La direction générale plafonne la hausse de la masse salariale brute de 2027 à 3 % par rapport à 2026."
+        },
+        {
+          "title": "Annexe 3 — Charges de personnel de septembre 2026 : budget et réalisations (salaires bruts)",
+          "content": "| Catégorie | Budget : effectif | Budget : salaire moyen | Réel : effectif | Réel : salaire moyen |\n| --- | --- | --- | --- | --- |\n| Techniciens support | 175 | 2 360 € | 186 | 2 320 € |\n| Ingénieurs systèmes et réseaux | 80 | 3 650 € | 66 | 3 720 € |\n| Encadrement et fonctions support | 30 | 4 450 € | 30 | 4 470 € |\n| Total | 285 | | 282 | |\n\nLe budget, établi en novembre 2025, prévoyait le recrutement de 10 ingénieurs au premier semestre 2026 ; 4 recrutements seulement ont abouti, pour 8 départs. Les ingénieurs recrutés l'ont été au-dessus de la grille de salaires. Pour absorber la charge de travail, la directrice des opérations a recruté des techniciens supplémentaires en contrat à durée déterminée.\n\nConvention : écart = réel − budget ; un écart positif est défavorable."
+        },
+        {
+          "title": "Annexe 4 — Absences de 2025 et indicateurs disponibles",
+          "content": "**Heures d'absence de 2025** : maladie 22 480 h ; accidents du travail et de trajet 2 960 h ; absences injustifiées 1 200 h ; congés de maternité et de paternité 3 400 h ; formation 9 800 h. Durée annuelle théorique de travail : 1 607 heures par salarié.\n\nDéfinition retenue par l'entreprise : taux d'absentéisme = heures d'absence pour maladie, accident du travail ou de trajet et absences injustifiées ÷ heures théoriques travaillées (effectif moyen × durée annuelle théorique).\n\n| Indicateur | 2025 | Cible 2028 (plan stratégique) |\n| --- | --- | --- |\n| Marge opérationnelle | 5,8 % | 8 % |\n| Part du chiffre d'affaires en infogérance et cybersécurité | 22 % | 40 % |\n| Taux de renouvellement des contrats arrivés à échéance | 86 % | — |\n| Utilisateurs satisfaits (enquête à la clôture des tickets) | 81 % | — |\n| Taux de résolution au premier contact (niveau 1) | 64 % | — |\n| Tickets traités dans les délais contractuels | 90,5 % | — |\n| Heures de formation par salarié | 19 h | — |\n| Part des techniciens titulaires d'une certification (ITIL, sécurité) | 18 % | — |"
+        },
+        {
+          "title": "Annexe 5 — Extrait du compte rendu du comité de direction du 5 octobre 2026",
+          "content": "- **Directeur général** : « Le plan stratégique ne se lit nulle part dans nos tableaux de bord. Je veux un outil qui traduise la stratégie, pas seulement des chiffres financiers. »\n- **Directrice administrative et financière** : « Notre tableau de bord mensuel compte quatorze indicateurs, tous financiers : chiffre d'affaires, marge par contrat, masse salariale comparée au budget, encours clients… En septembre, la masse salariale est inférieure de 27 360 € au budget : elle est maîtrisée. »\n- **Directrice des opérations** : « Faute d'ingénieurs, mes techniciens de niveau 2 traitent des incidents complexes pour lesquels ils ne sont pas formés. Les délais contractuels dérapent sur les contrats d'infogérance et deux clients hospitaliers ont émis des réserves avant le renouvellement de leur contrat. »\n- **DRH** : « Le marché des ingénieurs est très tendu. Les chefs de plateau ne remplacent pas toujours les départs, car leur prime annuelle dépend uniquement du respect de leur budget de masse salariale. »\n- **Une cheffe de plateau** : « Je reçois le tableau de bord du mois vers le 20 du mois suivant. Je n'y trouve rien sur mes tickets ni sur mon équipe. »"
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1-effet-masse-2026",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À partir de l'annexe 2, calculez l'effet masse de 2026, c'est-à-dire la variation de la masse salariale de 2026 par rapport à celle de 2025 due aux augmentations générales, en %, arrondi à deux décimales. Raisonnez à effectif et structure constants, en base 100 au 1er janvier 2025.",
+          "expected_value": 2.71,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.01
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Base 100 : le salaire vaut 100 de janvier à août 2025, puis 101,8 de septembre à décembre. Salaire moyen de 2025 = (8 × 100 + 4 × 101,8) ÷ 12 = 100,6. En 2026 : 101,8 en janvier et février ; 101,8 × 1,015 = 103,327 de mars à septembre (7 mois) ; 103,327 × 1,01 = 104,36027 d'octobre à décembre (3 mois). Salaire moyen de 2026 = (2 × 101,8 + 7 × 103,327 + 3 × 104,36027) ÷ 12 = 1 239,96981 ÷ 12 ≈ 103,3308. Effet masse = 103,3308 ÷ 100,6 − 1 ≈ 2,71 %. Il combine l'effet report des mesures de 2025 (101,8 ÷ 100,6 − 1 ≈ 1,19 %) et l'effet masse propre des mesures de 2026 (103,3308 ÷ 101,8 − 1 ≈ 1,50 %) : 1,0119 × 1,0150 ≈ 1,0271. Erreurs classiques : rapporter le salaire moyen de 2026 au salaire de janvier 2025 (3,33 %), oublier l'effet report (1,50 %) ou retenir l'effet niveau de 2026 (1,015 × 1,01 − 1 ≈ 2,52 %)."
+        },
+        {
+          "id": "q2-effet-report-2027",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À partir de l'annexe 2 et de la question 1, calculez l'effet report des augmentations de 2026 sur la masse salariale de 2027, à effectif et structure constants, en %, arrondi à deux décimales.",
+          "expected_value": 1,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.01
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Effet report sur 2027 = salaire au 31/12/2026 ÷ salaire moyen de 2026 − 1 = 104,36027 ÷ 103,3308 − 1 ≈ 0,996 %, soit 1,00 % (la valeur non arrondie, 0,996, est acceptée). Sans aucune mesure nouvelle, la masse salariale de 2027 dépassera donc d'environ 1 % celle de 2026. Ce report vient de l'augmentation de mars (deux mois non supportés en 2026, environ 0,25 %) et surtout de celle d'octobre (neuf mois, environ 0,75 %). Contrôle : (1 + effet masse propre de 2026) × (1 + report sur 2027) = 1,0150 × 1,0100 ≈ 1,0251, ce qui redonne l'effet niveau de 2026 (2,52 %). Erreurs classiques : ne retenir que le report de l'augmentation d'octobre (0,75 %) ou prendre l'effet niveau (2,52 %)."
+        },
+        {
+          "id": "q3-lecture-effets",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À partir de l'annexe 2 et des questions 1 et 2, quelle affirmation sur l'évolution de la masse salariale est exacte ?",
+          "options": [
+            "L'augmentation de 1 % accordée au 1er octobre 2026 accroît d'environ 1 % la masse salariale de 2026",
+            "Sans aucune mesure nouvelle en 2027, la masse salariale de 2027 serait égale à celle de 2026, à effectif et structure constants",
+            "L'effet masse de 2026 (2,71 %) dépasse l'effet niveau de 2026 (2,52 %), car il intègre l'effet report de l'augmentation de septembre 2025 (1,19 %)",
+            "Le glissement vieillesse technicité et l'effet de noria jouent dans le même sens : tous deux augmentent la masse salariale à effectif constant"
+          ],
+          "answer": [
+            2
+          ],
+          "option_explanations": [
+            "Inexact : appliquée trois mois sur douze, elle pèse environ 0,25 % sur 2026 ; l'essentiel de son effet se reporte sur 2027.",
+            "Inexact : les augmentations de 2026 créent un effet report d'environ 1,00 % sur 2027, même sans mesure nouvelle.",
+            "Exact : 1,0119 × 1,0150 ≈ 1,0271 ; le report des mesures de 2025 s'ajoute à l'effet des mesures de 2026.",
+            "Inexact : le GVT positif fait monter le salaire moyen ; la noria le fait baisser en remplaçant des sortants mieux payés par des débutants."
+          ],
+          "explanation": "L'option 3 est exacte : l'effet masse de 2026 combine le report de l'augmentation de septembre 2025 (1,19 %), qui ne pesait que quatre mois sur 2025, et l'effet masse propre des mesures de 2026 (1,50 %) ; il dépasse l'effet niveau de 2026 (2,52 %), qui ne mesure que l'écart entre les salaires de fin d'année. L'option 1 est fausse : une augmentation au 1er octobre ne joue que trois mois, soit environ 1 % × 3 ÷ 12 = 0,25 % sur la masse de 2026. L'option 2 est fausse : les mesures de 2026, surtout celle d'octobre, produisent un effet report d'environ 1,00 % sur 2027 (question 2). L'option 4 est fausse : le GVT positif (ancienneté, promotions) augmente la masse salariale, alors que la noria la réduit."
+        },
+        {
+          "id": "q4-budget-2027",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À partir de l'annexe 2, calculez la masse salariale brute budgétée pour 2027, en euros, à l'euro près (raisonnez mois par mois à partir de la masse salariale de décembre 2026).",
+          "expected_value": 10003154,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 5
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Janvier à mars : masse mensuelle après GVT = 819 250 × 1,003 = 821 707,75 € ; 3 × 821 707,75 = 2 465 123,25 €. Avril à juin : la noria économise 12 × (2 600 − 2 250) = 4 200 € par mois, d'où 817 507,75 € ; 3 × 817 507,75 = 2 452 523,25 €. Juillet et août : 817 507,75 × 1,012 = 827 317,84 € ; 2 × 827 317,84 = 1 654 635,69 €. Septembre à décembre : 827 317,84 + 8 × 3 800 = 857 717,84 € ; 4 × 857 717,84 = 3 430 871,37 €. Total ≈ 10 003 154 €, soit +2,86 % par rapport à 2026 (9 724 600 €) : le plafond de 3 % est respecté, de peu. Le niveau de décembre 2026 porte déjà l'effet report des augmentations de 2026 (environ 1 %, question 2). Erreurs classiques : oublier le GVT (9 973 484 €) ou la noria (10 041 256 €), appliquer l'augmentation générale aux recrues (10 004 613 €), compter les recrues sur douze mois (10 246 354 €) ou la noria sur l'année entière (9 990 554 €)."
+        },
+        {
+          "id": "q5-ecart-salaire-moyen",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À partir de l'annexe 3, calculez l'écart sur salaire moyen (écart sur taux) des charges de personnel de septembre 2026, calculé par catégorie puis totalisé : Σ (salaire moyen réel − salaire moyen budgété) × effectif réel. Donnez le résultat en euros, positif si défavorable.",
+          "expected_value": -2220,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Techniciens : (2 320 − 2 360) × 186 = −7 440 € ; ingénieurs : (3 720 − 3 650) × 66 = +4 620 € ; encadrement : (4 470 − 4 450) × 30 = +600 €. Total = −2 220 € (favorable). Coût réel = 186 × 2 320 + 66 × 3 720 + 30 × 4 470 = 811 140 € ; budget = 175 × 2 360 + 80 × 3 650 + 30 × 4 450 = 838 500 € ; écart global = −27 360 €, dont −2 220 € sur les salaires et −25 140 € sur les effectifs (Σ (effectif réel − effectif budgété) × salaire moyen budgété : +25 960 − 51 100 + 0). L'écart sur salaires masque des situations opposées : les techniciens coûtent moins que prévu (recrues débutantes), les ingénieurs davantage (marché tendu). Erreur classique : raisonner sur le salaire moyen de l'ensemble du personnel (2 876,38 € réel contre 2 942,11 € budgété), ce qui donne −18 534 € et mélange l'effet des salaires et celui de la structure."
+        },
+        {
+          "id": "q6-ecart-structure",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À partir de l'annexe 3, l'écart sur effectifs, Σ (effectif réel − effectif budgété) × salaire moyen budgété, se décompose en un écart sur effectif global, valorisé au salaire moyen budgété de l'ensemble du personnel, et un écart de structure (composition des effectifs) : Σ (effectif réelᵢ − effectif réel total × part budgétéeᵢ) × salaire moyen budgétéᵢ. Calculez l'écart de structure, en euros à l'unité près, positif si défavorable.",
+          "expected_value": -16314,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 5
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Salaire moyen budgété = 838 500 ÷ 285 ≈ 2 942,11 €. Écart sur effectif global = (282 − 285) × 2 942,11 ≈ −8 826 €. Écart de structure : techniciens (186 − 282 × 175 ÷ 285) × 2 360 = (186 − 173,16) × 2 360 ≈ +30 307 € ; ingénieurs (66 − 79,16) × 3 650 ≈ −48 026 € ; encadrement (30 − 29,68) × 4 450 ≈ +1 405 €. Total ≈ −16 314 € (favorable). Contrôle : −8 826 − 16 314 = −25 140 €, écart sur effectifs. L'écart de structure est favorable parce que la part de la catégorie la moins payée (techniciens) a augmenté au détriment de celle des ingénieurs. Erreurs classiques : retenir l'écart sur effectifs (−25 140 €) ou l'écart sur effectif global (−8 826 €)."
+        },
+        {
+          "id": "q7-analyse-ecarts",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À partir des annexes 3 et 5 et des questions 5 et 6, quelle analyse des écarts de septembre 2026 est exacte ?",
+          "options": [
+            "L'écart global favorable de 27 360 € vient surtout des effectifs : il manque 14 ingénieurs, remplacés en partie par 11 techniciens de plus, moins payés ; cet écart « favorable » révèle un sous-effectif qualifié qui menace la qualité de service",
+            "L'écart favorable prouve la bonne maîtrise des salaires par la DRH, puisque l'écart sur salaire moyen explique l'essentiel de l'écart global",
+            "Les ingénieurs sont payés en moyenne moins que prévu, ce qui explique l'écart favorable",
+            "L'écart de structure est défavorable, car la part des techniciens dans l'effectif a augmenté"
+          ],
+          "answer": [
+            0
+          ],
+          "option_explanations": [
+            "Exact : l'écart sur effectifs (−25 140 €) domine ; les 14 ingénieurs manquants dégradent les délais contractuels décrits en annexe 5.",
+            "Inexact : l'écart sur salaire moyen n'est que de −2 220 € ; l'essentiel vient des effectifs (−25 140 €).",
+            "Inexact : les ingénieurs coûtent 70 € de plus que prévu par mois, soit un écart défavorable de 4 620 €.",
+            "Inexact : l'écart de structure est favorable (−16 314 €), car la part de la catégorie la moins payée a augmenté."
+          ],
+          "explanation": "L'option 1 est exacte : sur −27 360 €, −25 140 € viennent des effectifs (dont −16 314 € de structure) et −2 220 € seulement des salaires. Le budget prévoyait 80 ingénieurs, il y en a 66 ; 11 techniciens de plus en CDD comblent une partie du vide à moindre coût. L'économie est trompeuse : l'annexe 5 montre que les délais contractuels dérapent et que deux clients hospitaliers hésitent à renouveler, ce qui contredit la stratégie de montée en gamme. L'option 2 est fausse : l'écart sur salaire moyen est faible et masque des écarts de sens contraire. L'option 3 est fausse : les ingénieurs sont payés 3 720 € au lieu de 3 650 € (écart défavorable de 4 620 €). L'option 4 est fausse : la hausse de la part de la catégorie la moins payée rend l'écart de structure favorable."
+        },
+        {
+          "id": "q8-absenteisme",
+          "kind": "numeric",
+          "points": 1,
+          "prompt": "À partir des annexes 1 et 4, calculez le taux d'absentéisme de 2025 selon la définition retenue par l'entreprise, en %, arrondi à deux décimales.",
+          "expected_value": 5.9,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.05
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Heures d'absence retenues = 22 480 + 2 960 + 1 200 = 26 640 h. Heures théoriques travaillées = 281 × 1 607 = 451 567 h. Taux = 26 640 ÷ 451 567 ≈ 5,90 %. Les congés de maternité et de paternité et la formation sont exclus par la définition de l'entreprise : inclure les premiers donnerait 6,65 %, la formation 8,07 %, les deux 8,82 %. Le taux se commente avec son coût (remplacements, tickets en retard) et avec le taux de rotation (20,3 %), qui traduisent ensemble la fragilité des équipes de techniciens."
+        },
+        {
+          "id": "q9-classement-bsc",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À partir des annexes 1, 4 et 5, quelle proposition de classement d'un indicateur dans le balanced scorecard de Calyptis est exacte ?",
+          "options": [
+            "Le taux de rotation des techniciens relève de l'axe clients, puisque les départs dégradent la qualité de service perçue par les clients",
+            "Le taux de résolution au premier contact relève de l'axe processus internes ; c'est un indicateur de pilotage (avancé) de la satisfaction des utilisateurs et du renouvellement des contrats",
+            "Le taux de renouvellement des contrats relève de l'axe financier, car il conditionne le chiffre d'affaires futur",
+            "Le respect du budget de masse salariale relève de l'axe apprentissage organisationnel, car il concerne le personnel"
+          ],
+          "answer": [
+            1
+          ],
+          "option_explanations": [
+            "Inexact : la rétention du personnel relève de l'axe apprentissage organisationnel ; elle conditionne les processus, puis la satisfaction des clients.",
+            "Exact : la qualité du traitement des tickets est un processus interne qui agit en amont sur la satisfaction et le renouvellement.",
+            "Inexact : le renouvellement mesure la fidélisation des clients ; c'est un indicateur de résultat de l'axe clients.",
+            "Inexact : le respect d'un budget de charges est un indicateur financier ; l'axe apprentissage suit compétences, rétention et climat social."
+          ],
+          "explanation": "L'option 2 est exacte : résoudre le problème dès le premier contact relève de la qualité des processus internes ; cet indicateur, disponible chaque jour dans l'outil de gestion des tickets, annonce la satisfaction des utilisateurs et le renouvellement des contrats (indicateurs de résultat de l'axe clients). L'option 1 est fausse : la rotation du personnel relève de l'axe apprentissage organisationnel, base de la chaîne de causalité. L'option 3 est fausse : le renouvellement des contrats mesure la fidélisation, résultat de l'axe clients, même s'il annonce les résultats financiers. L'option 4 est fausse : le respect d'un budget de charges est un indicateur financier, et le classer dans l'axe apprentissage reviendrait à piloter les compétences par la seule réduction des coûts."
+        },
+        {
+          "id": "q10-prime-chefs-plateau",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "Vrai ou faux ? À partir des annexes 3 et 5, indexer la prime annuelle des chefs de plateau sur le seul respect de leur budget de masse salariale est cohérent avec la stratégie de Calyptis, puisque la masse salariale est son premier poste de charges.",
+          "answer": false,
+          "explanation": "Faux. Un indicateur d'évaluation doit être relié aux objectifs stratégiques et maîtrisable par le responsable. Le seul respect du budget de masse salariale incite les chefs de plateau à ne pas remplacer les départs (annexe 5) : il produit l'écart « favorable » de septembre, mais au prix d'un sous-effectif qualifié, de délais contractuels dépassés et de clients hospitaliers qui hésitent à renouveler, à l'opposé de la montée en gamme. On obtient ce que l'on mesure : la prime devrait combiner un indicateur financier (marge du plateau, coût par ticket) et des indicateurs non financiers maîtrisables (respect des délais contractuels, satisfaction des utilisateurs, rétention et certification des techniciens)."
+        },
+        {
+          "id": "q11-construction-bsc",
+          "kind": "open",
+          "points": 3,
+          "prompt": "À partir des annexes 1, 4 et 5 et de l'ensemble du dossier, construisez le balanced scorecard de Calyptis : pour chacun des quatre axes, un ou deux objectifs, les indicateurs associés (en distinguant indicateurs de résultat et de pilotage) et des cibles ou des initiatives ; présentez les relations de cause à effet qui relient les axes (carte stratégique).",
+          "model_answer": "Le balanced scorecard traduit la stratégie de montée en gamme (infogérance et cybersécurité, marge opérationnelle de 8 % en 2028) en objectifs reliés par des relations de cause à effet ; les cibles ci-dessous, hors celles du plan stratégique, sont des propositions.\n\n**Axe financier.** Objectif : améliorer la rentabilité en changeant la composition du chiffre d'affaires. Indicateurs de résultat : marge opérationnelle (5,8 % en 2025, cible 8 % en 2028) ; part du chiffre d'affaires en infogérance et cybersécurité (22 %, cible 40 %) ; en complément, la masse salariale rapportée au chiffre d'affaires ou la marge par contrat, plutôt que le seul respect du budget de masse salariale.\n\n**Axe clients.** Objectifs : fidéliser les clients et gagner des contrats pluriannuels. Indicateurs de résultat : taux de renouvellement des contrats (86 %, cible 92 %), part d'utilisateurs satisfaits (81 %, cible 90 %), nombre de contrats d'infogérance et de cybersécurité signés. Initiative : revue de service trimestrielle avec chaque client, en priorité les établissements de santé.\n\n**Axe processus internes.** Objectif : un support fiable et rapide, capable de traiter des incidents complexes. Indicateurs de pilotage : taux de résolution au premier contact (64 %, cible 75 %), tickets traités dans les délais contractuels (90,5 %, cible 97 %), délai moyen de traitement des incidents de niveau 2. Initiatives : base de connaissances partagée, escalade organisée vers les ingénieurs.\n\n**Axe apprentissage organisationnel.** Objectifs : disposer des compétences et les retenir. Indicateurs de pilotage : taux de postes d'ingénieurs pourvus (66 sur 80 en septembre 2026, soit 82,5 %, cible 100 %), part des techniciens certifiés (18 %, cible 50 %), heures de formation par salarié (19 h), taux de rotation des techniciens (25 %, cible 15 %), taux d'absentéisme (5,90 %), baromètre d'engagement. Initiatives : plan de certification, parcours de promotion de technicien vers ingénieur, politique de rétention (rémunération des compétences rares, intégration des débutants), marque employeur.\n\n**Carte stratégique.** Formation, certification et rétention des techniciens, recrutement des ingénieurs → hausse du taux de résolution au premier contact et du respect des délais contractuels → satisfaction des utilisateurs, renouvellement des contrats et crédibilité pour vendre de l'infogérance et de la cybersécurité → part croissante des contrats à forte marge et marge opérationnelle de 8 %. Ces liens sont des hypothèses à vérifier (par exemple, constater par plateau que la baisse de la rotation précède la hausse de la résolution au premier contact). Chaque indicateur a un responsable (DRH pour l'apprentissage, directrice des opérations et chefs de plateau pour les processus, direction commerciale pour les clients), une périodicité (mensuelle au moins pour les indicateurs de pilotage) et une cible ; le scorecard se décline en tableaux de bord par plateau.",
+          "key_points": [
+            "Quatre axes de Kaplan et Norton, avec des objectifs reliés à la montée en gamme (marge de 8 %, 40 % du chiffre d'affaires en infogérance et cybersécurité)",
+            "Indicateurs tirés des annexes et bien classés par axe, en distinguant résultat (marge, renouvellement, satisfaction) et pilotage (résolution au premier contact, délais contractuels, certifications, rotation)",
+            "Axe apprentissage centré sur les enjeux RH du dossier : postes d'ingénieurs pourvus, certifications, rotation des techniciens, absentéisme",
+            "Cibles chiffrées et initiatives (certification, rétention, recrutement, revues de service)",
+            "Carte stratégique : chaîne apprentissage → processus → clients → finances, présentée comme une hypothèse à vérifier",
+            "Responsables, périodicité et déclinaison par plateau"
+          ],
+          "explanation": "La copie doit partir de la stratégie (contexte, annexe 5) et des indicateurs disponibles (annexe 4), et ne pas se limiter à une liste par axe : la carte stratégique et la distinction entre résultat et pilotage sont attendues. Un axe supplémentaire (social ou sociétal) est accepté s'il est justifié, mais les quatre axes de Kaplan et Norton doivent être présents."
+        },
+        {
+          "id": "q12-limites-pilotage",
+          "kind": "open",
+          "points": 2.5,
+          "prompt": "En vous appuyant sur l'ensemble du dossier, et notamment sur l'annexe 5, discutez les limites du tableau de bord actuel et du balanced scorecard proposé, puis indiquez les conditions de leur réussite pour le pilotage des ressources humaines de Calyptis.",
+          "model_answer": "Le tableau de bord actuel est en réalité un reporting financier : quatorze indicateurs financiers, reçus par les chefs de plateau vers le 20 du mois suivant, donc trop tard pour agir, sans aucun indicateur sur les tickets, les compétences ou le climat social, alors que la stratégie repose sur la qualité de service et les compétences. Il conduit à de fausses conclusions : l'écart « favorable » de 27 360 € en septembre ne traduit pas une maîtrise de la masse salariale mais un sous-effectif de 14 ingénieurs, compensé par des techniciens moins qualifiés (écart de structure de −16 314 €), avec des délais contractuels dépassés et des clients hospitaliers réservés. La prime des chefs de plateau, fondée sur le budget de masse salariale, provoque un comportement contraire à la stratégie (non-remplacement des départs) : on obtient ce que l'on mesure.\n\nLe balanced scorecard a lui aussi des limites. Les relations de cause à effet sont des hypothèses rarement vérifiées (la certification améliore-t-elle vraiment la résolution au premier contact ?) et des délais séparent les actions de leurs effets financiers. Le nombre d'indicateurs peut devenir excessif. Certains indicateurs sont manipulables : clôture prématurée des tickets pour améliorer le taux de résolution, enquêtes de satisfaction à faible taux de réponse. Les moyennes masquent les écarts entre plateaux et entre catégories (rotation de 25 % chez les techniciens contre 5 % dans l'encadrement). Les parties prenantes autres que les clients et les actionnaires, à commencer par les salariés, restent peu représentées. Enfin, un outil conçu au siège et imposé sans concertation risque d'être rejeté.\n\nConditions de réussite : construire le scorecard avec la direction des opérations, la DRH et les chefs de plateau ; limiter le nombre d'indicateurs et associer à chacun un responsable qui le maîtrise, une cible et une périodicité ; produire les indicateurs de pilotage vite et de façon fiable (outil de gestion des tickets, système d'information RH) ; décliner le scorecard en tableaux de bord par plateau ; tester régulièrement les liens de causalité et réviser les indicateurs ; revoir les primes pour combiner indicateurs financiers et non financiers maîtrisables ; compléter le contrôle budgétaire de la masse salariale par un suivi des effectifs par compétence, des effets de structure (GVT, noria) et du coût du turnover (recrutement, formation des débutants), afin d'éclairer les décisions de rémunération des métiers en tension, comme l'augmentation d'octobre 2026.",
+          "key_points": [
+            "Tableau de bord actuel = reporting financier tardif, sans indicateurs non financiers, inutilisable par les chefs de plateau",
+            "Écart favorable trompeur : sous-effectif d'ingénieurs et effet de structure, au détriment de la qualité de service",
+            "Effets pervers de la prime fondée sur le seul budget de masse salariale (non-remplacement des départs)",
+            "Limites du BSC : causalités supposées, délais, excès d'indicateurs, manipulation, moyennes trompeuses, parties prenantes peu représentées",
+            "Conditions : co-construction, indicateurs maîtrisables et peu nombreux, données rapides et fiables, déclinaison par plateau, primes revues, suivi des effets de structure et du coût du turnover"
+          ],
+          "explanation": "Le correcteur attend une discussion argumentée à partir des faits de l'annexe 5 et des résultats chiffrés du dossier (écarts, rotation), et non une liste générale des limites du balanced scorecard. Le lien avec le contrôle budgétaire (budget flexible, écarts interprétés ensemble) et avec le beyond budgeting peut être valorisé."
+        }
+      ]
+    },
+    {
+      "id": "ue3-dossier-0006",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE3",
+      "theme": "pilotage-processus",
+      "notion": "gestion-risques-controle-interne",
+      "difficulty": 3,
+      "tags": [
+        "dossier type examen",
+        "cartographie des risques",
+        "criticité",
+        "COSO",
+        "séparation des tâches",
+        "trois lignes",
+        "chemin critique",
+        "valeur acquise",
+        "CPI",
+        "SPI",
+        "business model",
+        "création de valeur"
+      ],
+      "source_ref": "COSO, Internal Control – Integrated Framework (2013) ; COSO, Enterprise Risk Management – Integrating with Strategy and Performance (2017) ; norme ISO 31000:2018 ; IIA, modèle des trois lignes (2020) ; PMI, PMBOK (méthode de la valeur acquise) ; norme ISO 21502:2020 ; B. Demil et X. Lecocq (2010), modèle RCOV ; A. Osterwalder et Y. Pigneur, Business Model Generation (2010) ; A. Brandenburger et H. Stuart (1996) ; programme DSCG UE 3 (arrêté du 4 août 2025)",
+      "verified": true,
+      "estimated_seconds": 5100,
+      "total_points": 20,
+      "title": "Médilor : sécuriser et piloter un projet de transformation",
+      "explanation": "Démarche attendue : hiérarchiser les risques sur la criticité nette (R1, R2 et R4 à 9, au-dessus du seuil de 8), chiffrer l'intérêt du dispositif contre la fraude au fournisseur (gain net de 22 000 € par an), rattacher constats et mesures aux composantes du COSO, identifier les cumuls de tâches incompatibles (fichier des tiers, paiements et rapprochement bancaire chez une même personne ; achats sans plafond ni rapprochement ; magasinier juge et partie) et situer les acteurs dans le modèle des trois lignes. Côté projet : durée minimale de 33 semaines (chemin critique A-B-E-F-H), marge totale de 2 semaines sur la plateforme, valeur acquise de 693 000 €, CPI de 0,89, SPI de 0,83, coût à terminaison d'environ 1 519 000 € et fin repoussée à la semaine 35 par le retard du paramétrage du PGI, tâche critique. La note au comité de pilotage doit critiquer la compression des tests et proposer le traitement des risques projet. Enfin, l'offre Réassort+ transforme le business model (abonnement, données, partenariat) : la valeur se partage entre l'EHPAD (1 320 € par armoire et par an), Médilor (1 740 €) et Stockeo ; la rentabilité dépasse le CMPC si le déploiement est atteint, et la dépendance envers le partenaire doit être maîtrisée.",
+      "context": "**Médilor SAS** distribue des dispositifs médicaux et des consommables (pansements, matériel d'injection, produits d'incontinence, petits équipements) auprès d'EHPAD, de cabinets infirmiers et de pharmacies du Grand Est. Filiale à 100 % du groupe Hestia Santé, elle emploie 210 salariés, exploite un entrepôt de 12 000 m² près de Metz et a réalisé en 2025 un chiffre d'affaires de 64 M€.\n\nFace à des distributeurs nationaux qui proposent la commande en ligne et à des clients qui veulent réduire le temps consacré aux commandes, la direction a lancé en juin 2026 le projet « Cap 2028 ». Il comprend le remplacement du logiciel de gestion actuel par un progiciel de gestion intégré (PGI), une plateforme de commande en ligne pour les clients professionnels et une nouvelle offre, Réassort+ : des armoires connectées installées chez les EHPAD, qui déclenchent automatiquement le réapprovisionnement et sont facturées par abonnement.\n\nUne tentative de fraude au changement de coordonnées bancaires, découverte par hasard en mars 2026, a par ailleurs révélé les faiblesses du contrôle interne. Le comité d'audit du groupe a demandé que la mise en place du PGI soit l'occasion de les corriger.\n\nChargé de mission auprès du directeur administratif et financier, vous devez évaluer les risques et le dispositif de contrôle interne, analyser l'avancement du projet et éclairer la direction sur la transformation du modèle économique de Médilor.\n\nLes données figurent en annexes 1 à 5. Les probabilités, les coûts et les estimations sont des hypothèses de l'énoncé.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Extrait de la cartographie des risques (septembre 2026)",
+          "content": "Échelles : probabilité (P) et impact (I) notés de 1 (faible) à 4 (très élevé) ; criticité = P × I. Règle fixée par la direction (appétence au risque) : tout risque dont la criticité **nette** atteint 8 fait l'objet d'un plan de traitement prioritaire ; les autres sont acceptés et surveillés.\n\n| Risque | P brute | I brut | Dispositifs de maîtrise existants | P nette | I net |\n| --- | --- | --- | --- | --- | --- |\n| R1 — Dérive des délais et des coûts du projet Cap 2028 (intégrateur, reprise des données) | 3 | 4 | Comité de pilotage mensuel ; ni plan de secours ni pénalités de retard dans le contrat de l'intégrateur | 3 | 3 |\n| R2 — Fraude au fournisseur (faux changement de coordonnées bancaires, fournisseur fictif) | 3 | 3 | Aucun dispositif efficace (voir annexe 2) | 3 | 3 |\n| R3 — Rançongiciel bloquant la prise de commandes | 2 | 4 | Sauvegardes quotidiennes externalisées, plan de reprise testé en 2025 | 2 | 3 |\n| R4 — Rupture de stock de produits critiques chez les EHPAD | 3 | 3 | Stocks de sécurité recalculés une fois par an ; inventaire annuel seulement | 3 | 3 |\n| R5 — Défaut de traçabilité des lots et des dates de péremption | 2 | 4 | Lecture des codes-barres à la réception et à la préparation, blocage informatique des lots périmés | 1 | 4 |\n| R6 — Rejet du PGI par les préparateurs et les commerciaux | 3 | 2 | Formation prévue en fin de projet (tâche G) | 3 | 2 |\n\n**Fraude au fournisseur (R2)** : probabilité annuelle d'un détournement réussi estimée à 20 %, pour un montant moyen de 250 000 €. Le dispositif proposé (séparation des tâches dans le PGI, contre-appel du fournisseur à un numéro déjà connu avant toute modification de coordonnées bancaires, double validation des virements supérieurs à 10 000 €) coûterait 18 000 € par an et ramènerait cette probabilité à 4 %, le montant moyen restant inchangé."
+        },
+        {
+          "title": "Annexe 2 — Organisation actuelle du cycle achats-stocks-paiements (constats de septembre 2026)",
+          "content": "- **Comptabilité fournisseurs** : Mme Rivet crée et modifie les fiches fournisseurs, y compris les coordonnées bancaires, sur simple courriel ; elle saisit les factures, prépare les virements et les valide dans le logiciel bancaire avec la clé d'authentification que le directeur administratif et financier lui a confiée « pour ses périodes d'absence » (en pratique, elle valide 80 % des virements). Elle établit aussi le rapprochement bancaire mensuel. Le service comptable compte quatre personnes.\n- **Achats** : les deux acheteurs passent les commandes sans plafond ni validation hiérarchique. Les factures sont payées sans rapprochement systématique avec la commande et le bon de réception.\n- **Entrepôt** : le chef magasinier réceptionne les livraisons, saisit les entrées et les sorties de stock, peut corriger les quantités en stock sans validation et organise l'inventaire annuel avec sa propre équipe.\n- **Environnement** : ni charte éthique ni délégations de pouvoirs écrites ; dans le logiciel actuel, tous les comptables disposent de tous les droits, qui n'ont jamais été revus.\n- **Tentative de fraude de mars 2026** : un faux courriel, imitant celui d'un fournisseur de gants, a demandé la modification de ses coordonnées bancaires ; le virement de 84 000 € déjà émis n'a pu être rappelé auprès de la banque que parce que le vrai fournisseur a relancé Médilor le lendemain pour une facture impayée.\n- **Acteurs** : Médilor a créé en 2026 un poste de responsable du contrôle interne et des risques, rattaché au directeur administratif et financier, chargé d'animer la cartographie et de concevoir avec les directions opérationnelles la matrice de séparation des tâches du PGI. L'audit interne du groupe Hestia Santé, qui rend compte au comité d'audit du groupe, évaluera le dispositif en 2027."
+        },
+        {
+          "title": "Annexe 3 — Planning initial du projet Cap 2028 (durées en semaines)",
+          "content": "| Tâche | Libellé | Durée | Tâches antérieures |\n| --- | --- | --- | --- |\n| A | Cadrage et choix de l'intégrateur | 6 | — |\n| B | Paramétrage des modules achats, stocks et ventes du PGI | 14 | A |\n| C | Reprise et nettoyage des données (articles, tiers, lots) | 10 | A |\n| D | Développement de la plateforme de commande en ligne | 12 | A |\n| E | Interfaces entre le PGI, la plateforme et les armoires connectées | 6 | B, D |\n| F | Tests d'intégration et recette | 5 | C, E |\n| G | Formation des utilisateurs | 4 | B |\n| H | Bascule et démarrage | 2 | F, G |\n\nLe projet a démarré au début de la semaine 1. Dans le planning initial, chaque tâche commence à sa date au plus tôt et son budget est consommé régulièrement sur sa durée."
+        },
+        {
+          "title": "Annexe 4 — Suivi du projet au terme de la semaine 16",
+          "content": "| Tâche | Budget (€) | Avancement physique constaté |\n| --- | --- | --- |\n| A | 90 000 | 100 % |\n| B | 420 000 | 60 % |\n| C | 150 000 | 90 % |\n| D | 360 000 | 60 % |\n| E | 120 000 | 0 % |\n| F | 100 000 | 0 % |\n| G | 60 000 | 0 % |\n| H | 50 000 | 0 % |\n| Total (budget à l'achèvement, BAC) | 1 350 000 | |\n\nValeur planifiée au terme de la semaine 16 (planning initial) : 840 000 €. Coût réel du travail réalisé : 780 000 €. Provision pour aléas, hors BAC : 80 000 €.\n\nEstimations du chef de projet : B s'achèvera à la fin de la semaine 22 (au lieu de 20), C à la fin de la semaine 17 (au lieu de 16) et D à la fin de la semaine 21 (au lieu de 18) ; les durées des tâches E à H sont inchangées."
+        },
+        {
+          "title": "Annexe 5 — L'offre Réassort+ et extrait du comité de pilotage du 28 septembre 2026",
+          "content": "**Offre Réassort+** (lancement prévu en 2027) : Médilor installe chez chaque EHPAD client des armoires connectées (lecteurs RFID, pesée) qui suivent les consommations et déclenchent le réapprovisionnement. L'EHPAD paie un abonnement de 390 € par mois et par armoire, pour trois ans, et s'engage à acheter à Médilor les consommables stockés dans l'armoire. Les armoires et leur logiciel sont fournis par Stockeo, jeune entreprise de 25 salariés qui conserve la propriété du logiciel ; Médilor achète les armoires et en reste propriétaire.\n\n**Données par armoire et par an (hypothèses)** : valeur pour l'EHPAD estimée à 6 000 € (temps infirmier libéré, ruptures et produits périmés évités) ; abonnement 4 680 € ; coûts pour Médilor : amortissement de l'armoire 1 440 € (prix d'achat 7 200 €, durée d'utilisation de 5 ans), maintenance et connectivité facturées par Stockeo 600 €, réassort et suivi 900 €. Objectif : 400 armoires installées fin 2028. Taux d'impôt sur les bénéfices : 25 % ; coût moyen pondéré du capital de Médilor : 8,5 %.\n\n**Extraits du comité de pilotage** :\n- Directeur général : « Nous ne décalerons pas la date de démarrage. Ramenons les tests (F) de 5 à 3 semaines et commençons la formation dès que possible. »\n- Directeur des systèmes d'information : « La reprise des données révèle 18 % de fiches articles en double ou incomplètes. L'intégrateur facture en régie : chaque semaine de retard nous coûte. »\n- Directrice commerciale : « Réassort+ n'est qu'un service de plus : nos commerciaux continueront à vendre des cartons de gants. Ils craignent que l'automatisation des commandes ne réduise leurs commissions. »\n- Responsable du contrôle interne : « Le paramétrage des droits d'accès dans le PGI ne figure dans aucune tâche du planning. »"
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1-priorites-risques",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À partir de l'annexe 1, quels risques doivent faire l'objet d'un plan de traitement prioritaire selon la règle fixée par la direction ?",
+          "options": [
+            "R1, R2, R3, R4 et R5, dont la criticité brute atteint au moins 8",
+            "R1 seulement, seul risque dont la criticité brute atteint 12",
+            "R1, R3 et R5, dont l'impact brut est maximal (4)",
+            "R1, R2 et R4, dont la criticité nette atteint 9"
+          ],
+          "answer": [
+            3
+          ],
+          "option_explanations": [
+            "Inexact : la règle porte sur la criticité nette ; les contrôles existants ramènent R3 à 6 et R5 à 4.",
+            "Inexact : la criticité brute n'est pas le critère ; R2 et R4 restent à 9 en net, au-dessus du seuil de 8.",
+            "Inexact : l'impact seul ne mesure pas la criticité ; R3 et R5 n'ont qu'une criticité nette de 6 et 4.",
+            "Exact : criticités nettes de R1, R2 et R4 = 3 × 3 = 9 ≥ 8 ; les autres risques sont acceptés et surveillés."
+          ],
+          "explanation": "L'option 4 est exacte. Criticités brutes : R1 = 12, R2 = 9, R3 = 8, R4 = 9, R5 = 8, R6 = 6. Criticités nettes : R1 = 9, R2 = 9, R3 = 6, R4 = 9, R5 = 4, R6 = 6. La règle de la direction porte sur le risque net, c'est-à-dire après prise en compte des dispositifs existants : seuls R1, R2 et R4 atteignent le seuil de 8. L'option 1 raisonne sur le risque brut et ignore l'effet des contrôles (sauvegardes et plan de reprise pour R3, lecture des codes-barres et blocage des lots pour R5). L'option 2 retient le seul risque brut le plus élevé. L'option 3 confond impact et criticité. R6 (6) n'est pas prioritaire selon la règle, mais son évolution mérite d'être suivie (question 11)."
+        },
+        {
+          "id": "q2-gain-dispositif",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À partir de l'annexe 1, calculez le gain net annuel attendu du dispositif proposé contre la fraude au fournisseur (R2), en euros.",
+          "expected_value": 22000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Perte attendue brute = 20 % × 250 000 = 50 000 € par an ; perte attendue nette = 4 % × 250 000 = 10 000 € par an. Gain net = (50 000 − 10 000) − 18 000 = 22 000 € par an : le traitement « réduire » est justifié, avant même de compter les gains non chiffrés (fiabilité des paiements, image auprès des fournisseurs et de la banque). Erreurs classiques : oublier le coût du dispositif (40 000 €) ou comparer son coût à la seule perte nette (10 000 − 18 000 = −8 000 €), ce qui conduirait à le rejeter à tort."
+        },
+        {
+          "id": "q3-composantes-coso",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À partir des annexes 1 et 2, quelle affirmation sur le rattachement des constats et des mesures au référentiel COSO (2013) est exacte ?",
+          "options": [
+            "Le suivi budgétaire mensuel du projet Cap 2028 constitue une composante à part entière du COSO, à côté des activités de contrôle",
+            "L'absence de charte éthique et de délégations écrites relève de l'environnement de contrôle ; le contre-appel du fournisseur avant toute modification de coordonnées bancaires est une activité de contrôle ; l'évaluation du dispositif par l'audit interne du groupe relève des activités de pilotage",
+            "La cartographie des risques de l'annexe 1 relève des activités de contrôle, puisqu'elle recense les dispositifs de maîtrise existants",
+            "Le rapprochement bancaire mensuel relève de l'environnement de contrôle, car il concerne la trésorerie de l'entreprise"
+          ],
+          "answer": [
+            1
+          ],
+          "option_explanations": [
+            "Inexact : le contrôle budgétaire est un outil de gestion qui peut servir d'activité de contrôle, pas une composante du COSO.",
+            "Exact : intégrité et délégations relèvent de l'environnement de contrôle, le contre-appel est une activité de contrôle, l'évaluation indépendante relève du pilotage.",
+            "Inexact : identifier et évaluer les risques relève de la composante « évaluation des risques », même si la cartographie recense les contrôles.",
+            "Inexact : un rapprochement est une activité de contrôle, quel que soit le domaine concerné."
+          ],
+          "explanation": "L'option 2 est exacte. Le COSO 2013 compte cinq composantes : environnement de contrôle, évaluation des risques, activités de contrôle, information et communication, activités de pilotage. L'intégrité, les valeurs éthiques et l'attribution des pouvoirs et des responsabilités relèvent de l'environnement de contrôle ; le contre-appel est une activité de contrôle préventive ; l'évaluation du dispositif par l'audit interne est une activité de pilotage. L'option 1 est fausse : le contrôle budgétaire n'est pas une composante du COSO ; il peut constituer une activité de contrôle. L'option 3 est fausse : la cartographie relève de l'évaluation des risques. L'option 4 est fausse : le rapprochement bancaire est une activité de contrôle (rapprochement), d'autant plus efficace qu'il est réalisé par une personne qui ne prépare pas les paiements."
+        },
+        {
+          "id": "q4-separation-taches",
+          "kind": "open",
+          "points": 2,
+          "prompt": "À partir de l'annexe 2, identifiez les cumuls de tâches incompatibles et les autres faiblesses du cycle achats-stocks-paiements, puis proposez les mesures de contrôle interne à intégrer dans le PGI et dans l'organisation.",
+          "model_answer": "La séparation des tâches impose de confier à des personnes différentes l'autorisation des opérations, leur enregistrement, la garde des actifs ou des moyens de paiement et le contrôle. Plusieurs cumuls sont incompatibles.\n\n1) Mme Rivet modifie le fichier des fournisseurs (y compris les coordonnées bancaires), enregistre les factures, valide les virements avec la clé du directeur administratif et financier et contrôle elle-même le rapprochement bancaire : elle pourrait créer un fournisseur fictif ou détourner un paiement, puis dissimuler l'opération. C'est la faille exploitée par la tentative de mars 2026, que rien n'a arrêtée avant l'émission du virement. 2) Les acheteurs autorisent eux-mêmes leurs commandes, sans plafond, et les factures sont payées sans rapprochement commande-réception-facture : risque d'achats non autorisés, de paiement de livraisons non reçues ou de collusion avec un fournisseur. 3) Le chef magasinier réceptionne, enregistre les mouvements, corrige les stocks sans validation et inventorie avec sa propre équipe : un vol ou une erreur peut être masqué par une correction de stock. 4) L'environnement de contrôle est faible : ni charte éthique ni délégations écrites, prêt d'une clé d'authentification personnelle, droits informatiques illimités et jamais revus.\n\nMesures dans le PGI : une matrice des droits construite sur ces incompatibilités (création et modification des fournisseurs réservées à une personne sans accès aux paiements) ; un circuit d'approbation des commandes avec plafonds conformes à des délégations écrites ; un rapprochement automatique commande-réception-facture qui bloque le paiement en cas d'écart ; la double validation des virements supérieurs à 10 000 € par deux signataires, chacun avec sa propre clé ; un journal des modifications du fichier des fournisseurs ; une revue semestrielle des droits d'accès. Mesures d'organisation : contre-appel du fournisseur à un numéro déjà connu avant toute modification de coordonnées bancaires ; rapprochement bancaire confié à une personne qui ne prépare pas les paiements ; corrections de stock validées par le responsable logistique et inventaires tournants réalisés par une équipe indépendante de l'entrepôt. Dans un service comptable de quatre personnes, si la séparation complète est impossible, des contrôles compensatoires prennent le relais (revue mensuelle par le directeur administratif et financier des modifications du fichier des fournisseurs et des paiements). Une charte éthique et la sensibilisation du personnel à la fraude au faux fournisseur complètent le dispositif ; le paramétrage des droits doit être inscrit au planning du projet.",
+          "key_points": [
+            "Principe : séparer autorisation, enregistrement, garde des actifs ou des moyens de paiement, et contrôle",
+            "Cumul de la comptable fournisseurs : fichier des fournisseurs, saisie, validation des virements avec la clé du DAF et rapprochement bancaire (tentative de mars 2026)",
+            "Achats sans plafond ni rapprochement commande-réception-facture ; magasinier qui réceptionne, enregistre, corrige et inventorie",
+            "Mesures dans le PGI : matrice des droits, circuit d'approbation avec plafonds, rapprochement automatique bloquant, double validation des virements, revue des droits",
+            "Mesures d'organisation : contre-appel, journal des modifications, inventaires tournants indépendants, contrôles compensatoires, charte éthique et délégations écrites"
+          ],
+          "explanation": "La copie doit nommer le principe de séparation des tâches, partir de chaque constat de l'annexe 2 et proposer une mesure adaptée à une PME (contrôles compensatoires si l'effectif ne permet pas une séparation complète). Le lien avec le dispositif chiffré à la question 2 et avec la tâche de paramétrage des droits absente du planning (annexe 5) est valorisé."
+        },
+        {
+          "id": "q5-trois-lignes",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "Vrai ou faux ? À partir de l'annexe 2, dans le modèle des trois lignes de l'IIA, la responsable du contrôle interne et des risques de Médilor relève de la deuxième ligne, et l'audit interne du groupe Hestia Santé, qui évaluera le dispositif en 2027, de la troisième ligne.",
+          "answer": true,
+          "explanation": "Vrai. La première ligne est le management opérationnel (comptabilité, achats, entrepôt), propriétaire des risques et des contrôles. La responsable du contrôle interne et des risques anime la cartographie et conçoit avec les directions la matrice de séparation des tâches : c'est une fonction d'appui et de surveillance, de deuxième ligne. L'audit interne du groupe, qui rend compte au comité d'audit, apporte une assurance indépendante : troisième ligne. Il évalue le dispositif sans le concevoir ni le gérer, ce qui préserve son indépendance. Le commissaire aux comptes, externe, n'appartient pas au modèle."
+        },
+        {
+          "id": "q6-duree-projet",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À partir de l'annexe 3, déterminez la durée minimale du projet Cap 2028 selon le planning initial, en semaines.",
+          "expected_value": 33,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0
+          },
+          "unit": "semaines",
+          "decimals": 0,
+          "explanation": "Dates au plus tôt (début ; fin) : A (0 ; 6) ; B (6 ; 20) ; C (6 ; 16) ; D (6 ; 18) ; E commence après B et D, au maximum de leurs fins : (20 ; 26) ; F après C et E : (26 ; 31) ; G après B : (20 ; 24) ; H après F et G : (31 ; 33). Durée minimale = 33 semaines. Chemin critique : A-B-E-F-H (6 + 14 + 6 + 5 + 2 = 33). Erreurs classiques : suivre la chaîne A-D-E-F-H (31 semaines) en oubliant que E attend aussi B, ou additionner toutes les durées (59 semaines)."
+        },
+        {
+          "id": "q7-marge-plateforme",
+          "kind": "numeric",
+          "points": 1,
+          "prompt": "À partir de l'annexe 3 et de la question 6, calculez la marge totale de la tâche D (développement de la plateforme), en semaines.",
+          "expected_value": 2,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0
+          },
+          "unit": "semaines",
+          "decimals": 0,
+          "explanation": "Passage retour : H au plus tard (31 ; 33), F (26 ; 31), E (20 ; 26). D doit être achevée au plus tard au début de E, soit à la fin de la semaine 20 : début au plus tard = 20 − 12 = 8. Marge totale = 8 − 6 = 2 semaines : D peut prendre deux semaines de retard sans décaler la fin du projet. Par comparaison, C dispose de 10 semaines de marge (fin au plus tard 26) et G de 7 (fin au plus tard 31). Erreur classique : calculer la marge par rapport à la fin du projet (33 − 18 = 15 semaines) sans tenir compte des tâches qui suivent D."
+        },
+        {
+          "id": "q8-cpi",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À partir de l'annexe 4, calculez la valeur acquise du projet au terme de la semaine 16, puis l'indice de performance des coûts (CPI). Donnez le CPI arrondi à deux décimales.",
+          "expected_value": 0.89,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.01
+          },
+          "decimals": 2,
+          "explanation": "VA = Σ avancement physique × budget = 90 000 + 60 % × 420 000 + 90 % × 150 000 + 60 % × 360 000 = 90 000 + 252 000 + 135 000 + 216 000 = 693 000 €. CPI = VA ÷ CR = 693 000 ÷ 780 000 ≈ 0,89 : chaque euro dépensé n'a produit que 0,89 € de travail budgété ; écart de coût = 693 000 − 780 000 = −87 000 €. Erreurs classiques : inverser le ratio (CR ÷ VA ≈ 1,13), calculer le SPI (693 000 ÷ 840 000 ≈ 0,83) ou rapporter la VP au coût réel (840 000 ÷ 780 000 ≈ 1,08), ce qui mélange l'effet coût et l'effet délai."
+        },
+        {
+          "id": "q9-eac",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À partir de l'annexe 4 et de la question 8, calculez l'estimation du coût à terminaison (EAC) du projet, en supposant que la performance de coût observée se maintient, en euros.",
+          "expected_value": 1519481,
+          "tolerance": {
+            "kind": "relative",
+            "value": 0.01
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "EAC = BAC ÷ CPI = 1 350 000 ÷ (693 000 ÷ 780 000) = 1 350 000 × 780 000 ÷ 693 000 ≈ 1 519 481 € (1 516 854 € avec un CPI arrondi à 0,89, accepté). Reste à faire ≈ 1 519 481 − 780 000 = 739 481 € ; écart à terminaison ≈ 1 350 000 − 1 519 481 = −169 481 €, plus du double de la provision pour aléas (80 000 €) : le coût prévisible dépasse d'environ 89 500 € l'enveloppe totale de 1 430 000 €. Erreurs classiques : supposer le reste du travail réalisé au coût budgété (BAC + CR − VA = 1 437 000 €), diviser par le SPI (1 636 364 €) ou ajouter la provision au BAC avant de diviser par le CPI (1 609 524 €)."
+        },
+        {
+          "id": "q10-diagnostic-avancement",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À partir des annexes 3 et 4 et des questions 6 à 9, quelle analyse de l'avancement du projet est exacte ?",
+          "options": [
+            "Le projet est en avance sur son planning, puisque le coût réel du travail réalisé (780 000 €) est inférieur à la valeur planifiée (840 000 €)",
+            "Le retard de la plateforme (D), le plus long des trois, repousse à lui seul la fin du projet de trois semaines, à la semaine 36",
+            "Le projet est en retard (SPI ≈ 0,83) et en surcoût (CPI ≈ 0,89) ; selon les estimations du chef de projet, la fin passe de la semaine 33 à la semaine 35, car le retard de B, tâche critique, se reporte intégralement, alors que ceux de C et de D sont absorbés",
+            "La fin du projet est repoussée de six semaines, soit la somme des retards estimés de B, C et D"
+          ],
+          "answer": [
+            2
+          ],
+          "option_explanations": [
+            "Inexact : comparer CR et VP mélange coût et délai ; VA inférieure à VP (693 000 contre 840 000 €) signale un retard.",
+            "Inexact : D dispose de 2 semaines de marge ; seule, elle décalerait la fin d'une semaine, et le retard de B la rend sans effet.",
+            "Exact : B finit en semaine 22, donc E en 28, F en 33 et H en 35 ; C et D ne sont plus déterminants.",
+            "Inexact : les retards ne s'additionnent pas ; seul compte l'allongement du chemin critique, ici les 2 semaines de B."
+          ],
+          "explanation": "L'option 3 est exacte. SPI = 693 000 ÷ 840 000 ≈ 0,83 (retard) et CPI ≈ 0,89 (surcoût). Avec les estimations du chef de projet : E commence à la fin de B (semaine 22) et de D (semaine 21), soit en semaine 22, et finit en 28 ; F commence après E (28) et C (17), finit en 33 ; G finit en 26 ; H finit en 35. Le retard de B, critique, se reporte intégralement (2 semaines) ; celui de C (1 semaine, pour 10 de marge) est absorbé ; celui de D (3 semaines, pour 2 de marge) aurait décalé seul la fin d'une semaine, mais E attend de toute façon B. L'option 1 est fausse : le délai se lit en comparant VA et VP, pas CR et VP. L'option 2 est fausse : la marge de D absorbe deux de ses trois semaines de retard. L'option 4 est fausse : on n'additionne pas des retards de tâches parallèles. D reste à surveiller : sa marge n'est plus que d'une semaine."
+        },
+        {
+          "id": "q11-note-comite",
+          "kind": "open",
+          "points": 2.5,
+          "prompt": "À partir des annexes 1, 3, 4 et 5 et des questions 6 à 10, rédigez une note au comité de pilotage : diagnostic de l'avancement, appréciation des propositions du directeur général, traitement des risques R1 et R6.",
+          "model_answer": "**Diagnostic.** Au terme de la semaine 16, le projet est en retard et en surcoût : la valeur acquise (693 000 €) est inférieure à la valeur planifiée (840 000 €, SPI ≈ 0,83) et au coût réel (780 000 €, CPI ≈ 0,89). Si la performance de coût se maintient, le projet coûtera environ 1 519 000 €, soit 169 000 € de plus que le budget, plus du double de la provision pour aléas. Selon les estimations du chef de projet, la fin passe de la semaine 33 à la semaine 35 à cause du retard du paramétrage du PGI (B), tâche critique ; la plateforme (D) a dépassé sa marge, mais son retard est masqué par celui de B : il ne lui reste qu'une semaine de marge et elle doit être suivie comme une tâche quasi critique. Les causes sont identifiées : qualité des données (18 % de fiches articles à corriger) et intégrateur facturé en régie, sans pénalités de retard.\n\n**Propositions du directeur général.** Ramener les tests de 5 à 3 semaines rattraperait les deux semaines, puisque F est critique, mais au prix d'un démarrage avec des anomalies sur la prise de commandes, la traçabilité des lots (R5) et les paiements : on déplace le risque du projet vers l'exploitation, alors que la bascule d'un PGI est le moment le plus risqué. Il vaut mieux préserver la recette, ou ne la réduire qu'avec un démarrage par étapes et un plan de retour arrière. Commencer la formation au plus tôt est possible (dès la fin de B ; G dispose de 7 semaines de marge) et utile, et une partie (utilisateurs clés) peut même se dérouler pendant le paramétrage ; cela réduit le risque de rejet, mais ne rattrape pas le retard, G n'étant pas critique.\n\n**Traitement des risques.** R1 (criticité nette 9, au-dessus du seuil) doit être réduit : renégociation du contrat de l'intégrateur (forfait ou pénalités de retard), renfort de la reprise des données par des référents métiers, suivi hebdomadaire du chemin critique et des indicateurs de valeur acquise, revues de jalons et plan de secours (démarrage différé de la plateforme si les interfaces ne sont pas prêtes) ; la provision pour aléas doit être réévaluée. R6 (criticité nette 6) est accepté par la règle de la direction, mais il est sous-estimé : la crainte des commerciaux pour leurs commissions et une formation placée en fin de projet le font croître. Il faut associer des utilisateurs clés au paramétrage, communiquer sur les objectifs du projet et revoir les commissions pour intégrer les abonnements Réassort+. Enfin, une tâche de paramétrage des droits et de la séparation des tâches doit être ajoutée au planning, avant les tests, car elle conditionne le contrôle interne du PGI.",
+          "key_points": [
+            "Diagnostic chiffré : SPI ≈ 0,83, CPI ≈ 0,89, EAC ≈ 1 519 000 €, dépassement supérieur à la provision ; fin repoussée à la semaine 35",
+            "Lecture du chemin critique : retard de B critique, D devenue quasi critique ; causes identifiées (données, contrat en régie)",
+            "Critique de la compression des tests (F critique : gain de 2 semaines mais risque reporté sur l'exploitation) ; formation avancée utile contre le rejet mais sans effet sur la durée",
+            "R1 : réduire (contrat, pénalités, jalons, plan de secours, provision) ; R6 : anticiper malgré une criticité de 6 (utilisateurs clés, communication, commissions)",
+            "Ajout au planning du paramétrage des droits et de la séparation des tâches"
+          ],
+          "explanation": "La note doit reprendre les résultats des questions 6 à 10 sans les recalculer longuement, et formuler des recommandations argumentées. L'appréciation de la compression des tests doit relier délai et risque (triangle coût-délai-qualité) ; celle de la formation doit tenir compte de sa marge."
+        },
+        {
+          "id": "q12-business-model",
+          "kind": "open",
+          "points": 3,
+          "prompt": "À partir du contexte et de l'annexe 5, analysez à l'aide d'un cadre de référence (modèle RCOV ou Business Model Canvas) la transformation du business model de Médilor induite par l'offre Réassort+, puis discutez sa capacité à créer de la valeur, à la capter et à la partager avec les EHPAD et avec Stockeo.",
+          "model_answer": "Médilor passe d'un modèle de distributeur, qui capte une marge sur des volumes vendus à la commande, à un modèle de service, qui facture un abonnement et sécurise des flux récurrents.\n\n**Lecture par le modèle RCOV.** La proposition de valeur change de nature : il ne s'agit plus seulement de livrer des produits au meilleur prix, mais de garantir la disponibilité des consommables et de libérer du temps infirmier, en réduisant ruptures et péremptions (valeur estimée à 6 000 € par armoire et par an). Les ressources et compétences évoluent : armoires, données de consommation, PGI et plateforme deviennent des ressources clés ; il faut des compétences nouvelles (exploitation des données, maintenance, gestion d'abonnements) et les commerciaux passent de la prise de commande au conseil, d'où leur inquiétude sur les commissions. L'organisation interne et externe se transforme : partenariat avec Stockeo, qui détient le logiciel, et logistique de réassort pilotée par les données. Le modèle de revenus devient mixte (abonnement de 4 680 € par an et par armoire, plus la marge sur des consommables captifs) et la structure de coûts plus capitalistique (7 200 € par armoire, 2,88 M€ pour 400 armoires). Un Canvas donnerait la même lecture par blocs : segment des EHPAD, proposition de valeur, relation d'abonnement, partenaire clé, ressources clés, flux de revenus récurrents, structure de coûts.\n\n**Création, captation et partage de la valeur.** Pour une armoire, la valeur pour l'EHPAD (6 000 €) dépasse l'abonnement (4 680 €) : le surplus du client est de 1 320 € par an, ce qui rend l'offre attractive. Médilor capte 4 680 − (1 440 + 600 + 900) = 1 740 € par an et par armoire, avant la marge sur les consommables ; après impôt (25 %), 1 305 €, soit environ 18 % du prix d'achat de l'armoire (1 305 ÷ 7 200 ≈ 18,1 % : approximation prudente, qui rapporte le résultat d'exploitation après impôt au capital investi brut), nettement plus que le CMPC de 8,5 % : la rentabilité des capitaux employés dépasse leur coût, ce qui laisse espérer une EVA positive si le taux d'équipement visé est atteint (des armoires achetées mais non installées immobiliseraient du capital sans le rémunérer) et si chaque armoire reste en service cinq ans, par renouvellement de l'abonnement ou réinstallation : sur les trois seules années du premier contrat, sans réemploi, le flux après impôt de 2 745 € par an (1 305 + 1 440 d'amortissement) donnerait un taux de rentabilité interne d'environ 7 %, inférieur au CMPC. Stockeo capte la valeur des armoires et de la maintenance, garde la propriété du logiciel et, potentiellement, l'accès aux données. Médilor capte surtout de la valeur par le verrouillage de la relation : engagement de trois ans, exclusivité d'achat des consommables, coûts de changement pour l'EHPAD, connaissance fine des consommations qui améliore ses prévisions et réduit ses propres stocks.\n\n**Limites et risques.** La captation dépend d'un partenaire fragile (25 salariés) qui détient le logiciel : risque de dépendance et de défaillance, à traiter par contrat (réversibilité, dépôt du code source, propriété des données) ou par une prise de participation. Les EHPAD, aux budgets contraints, peuvent contester l'exclusivité, et la valeur de 6 000 € reste une estimation à valider par un pilote. Le modèle exige la cohérence des trois composantes : sans commerciaux formés et incités à vendre des abonnements, sans PGI fiable ni données de qualité, la proposition de valeur ne serait pas tenue. Réassort+ n'est donc pas « un service de plus » : c'est un changement de business model, qui justifie de piloter Cap 2028 comme un projet stratégique, avec des indicateurs de création de valeur (armoires installées, renouvellement des abonnements, marge par armoire, EVA).",
+          "key_points": [
+            "Cadre nommé (RCOV ou Canvas) appliqué au cas : proposition de valeur (disponibilité, temps infirmier), ressources (armoires, données, PGI), organisation (partenariat avec Stockeo, réassort piloté par les données)",
+            "Passage d'une marge sur volumes à des revenus récurrents (abonnement, consommables captifs) ; modèle plus capitalistique",
+            "Partage de la valeur chiffré : surplus de l'EHPAD de 1 320 €, marge de Médilor de 1 740 € par armoire et par an, part de Stockeo",
+            "Création de valeur actionnariale : rentabilité après impôt d'environ 18 % contre un CMPC de 8,5 %, sous condition de déploiement et d'usage des armoires sur cinq ans",
+            "Risques : dépendance envers Stockeo (logiciel, données), acceptabilité de l'exclusivité, cohérence interne (commerciaux, PGI, données)"
+          ],
+          "explanation": "Le correcteur attend un cadre nommé et appliqué aux faits de l'annexe 5, un partage de la valeur chiffré (au sens de Brandenburger et Stuart : le surplus du client, la marge de l'entreprise et la part du fournisseur) et une discussion de la captation et des risques. La rentabilité d'environ 18 % est une approximation (résultat d'exploitation après impôt par armoire, 1 305 €, rapporté à son prix d'achat, 7 200 €), qui suppose une armoire en service sur ses cinq ans d'utilisation ; un calcul de taux de rentabilité interne (environ 26 % sur cinq ans, environ 7 % sur les seuls trois ans du contrat sans réemploi) est valorisé, et tout raisonnement cohérent qui compare la rentabilité des capitaux employés au CMPC est accepté."
+        }
+      ]
+    }
+  ]
+}

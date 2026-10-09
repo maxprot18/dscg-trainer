@@ -164,7 +164,13 @@
           "answer": [
             2
           ],
-          "explanation": "La géolocalisation continue à des fins de prospection est intrusive et non nécessaire au fonctionnement de la carte de fidélité : elle doit reposer sur un consentement libre, spécifique, éclairé et univoque, distinct de l'acceptation des conditions générales, et aussi simple à retirer qu'à donner (art. 4 §11 et art. 7). L'accès aux données de localisation stockées dans le téléphone suppose d'ailleurs le consentement de l'utilisateur (art. 82 de la loi n° 78-17, transposant la directive « vie privée et communications électroniques »). Les options 1, 2 et 4 sont donc écartées : l'acceptation des conditions générales ne vaut pas consentement spécifique ; l'exécution du contrat ne couvre que ce qui est nécessaire au service (gestion des points). l'intérêt légitime ne peut jamais exclure le droit d'opposition à la prospection (art. 21 §2)."
+          "option_explanations": [
+            "Inexact : l'acceptation des conditions générales ne vaut pas consentement spécifique, qui doit être distinct, libre et éclairé (art. 4 §11 et art. 7).",
+            "Inexact : l'exécution du contrat ne couvre que ce qui est nécessaire au service (gestion des points) ; la géolocalisation continue n'en fait pas partie.",
+            "Exact : traitement intrusif non nécessaire à la carte : consentement spécifique, distinct des conditions générales, aussi simple à retirer qu'à donner (art. 7).",
+            "Inexact : l'intérêt légitime ne peut jamais exclure le droit d'opposition à la prospection (art. 21 §2)."
+          ],
+          "explanation": "La géolocalisation continue à des fins de prospection est intrusive et non nécessaire au fonctionnement de la carte de fidélité : elle doit reposer sur un consentement libre, spécifique, éclairé et univoque, distinct de l'acceptation des conditions générales, et aussi simple à retirer qu'à donner (art. 4 §11 et art. 7). L'accès aux données de localisation stockées dans le téléphone suppose d'ailleurs le consentement de l'utilisateur (art. 82 de la loi n° 78-17, transposant la directive « vie privée et communications électroniques »). Les options 1, 2 et 4 sont donc écartées : l'acceptation des conditions générales ne vaut pas consentement spécifique ; l'exécution du contrat ne couvre que ce qui est nécessaire au service (gestion des points) ; l'intérêt légitime ne peut jamais exclure le droit d'opposition à la prospection (art. 21 §2)."
         },
         {
           "id": "q2-aipd",

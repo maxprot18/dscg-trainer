@@ -642,6 +642,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : une attestation de la direction est un élément interne peu probant pour établir l'existence de la créance.",
+            "Exact : encaissements postérieurs rapprochés des factures et bons de livraison signés : éléments externes ou produits par des tiers, qui établissent l'existence.",
+            "Inexact : l'absence de réponse à une demande de confirmation positive ne vaut pas accord du client.",
+            "Inexact : le recalcul de la balance auxiliaire ne prouve pas l'existence d'un solde individuel."
+          ],
           "points": 2,
           "explanation": "Les encaissements postérieurs rapprochés des factures, complétés par les bons de livraison signés, sont des éléments externes ou produits par des tiers qui établissent l’existence de la créance. Une attestation de la direction est un élément interne peu probant. L’absence de réponse à une confirmation positive ne vaut pas accord. Le recalcul de la balance ne prouve pas l’existence d’un solde individuel."
         },

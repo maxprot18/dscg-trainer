@@ -194,6 +194,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : l'option inverse la chronologie ; la consultation du CSE précède la décision de l'employeur.",
+            "Exact : la consultation précède la décision et repose sur des informations précises et écrites, avec un délai d'examen suffisant (L2312-8).",
+            "Inexact : la consultation est due quel que soit le nombre de licenciements ; le seuil de 10 concerne le PSE.",
+            "Inexact : la consultation est une obligation de l'employeur, pas une faculté laissée aux élus."
+          ],
           "explanation": "Dans une entreprise d'au moins 50 salariés, le CSE est informé et consulté sur les questions intéressant l'organisation, la gestion et la marche générale de l'entreprise, notamment les restructurations et compressions d'effectifs (L2312-8) ; la consultation précède la décision de l'employeur et repose sur des informations précises et écrites, avec un délai d'examen suffisant : option 2. L'option 1 inverse la chronologie. L'option 3 confond la consultation du CSE, due quel que soit le nombre de licenciements, avec le seuil du PSE. L'option 4 est fausse : la consultation est une obligation de l'employeur, pas une faculté laissée aux élus."
         },
         {

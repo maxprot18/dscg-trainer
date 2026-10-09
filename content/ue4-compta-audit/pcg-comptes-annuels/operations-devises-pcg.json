@@ -199,6 +199,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : le compte 477 ne concerne que les créances et dettes ; l'écart sur liquidités est porté directement en résultat.",
+            "Inexact : les liquidités en devises sont converties au cours de clôture (0,95 €), non maintenues au cours historique.",
+            "Exact : liquidités converties au cours de clôture, écart porté directement en résultat : 10 000 × 0,95 − 9 000 = 500 € de gain (766).",
+            "Inexact : le compte 476 ne concerne que les créances et dettes ; ici l'écart est d'ailleurs un gain, porté directement en résultat."
+          ],
           "explanation": "Les liquidités en devises sont converties au cours de clôture et l'écart est porté directement en résultat : 10 000 × 0,95 − 9 000 = 500 € de gain de change (766). Les comptes 476 et 477 ne concernent que les créances et dettes."
         },
         {

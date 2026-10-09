@@ -190,6 +190,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : 4,50 % est le coût de l'emprunt seul, qui ignore le différentiel de 0,60 % reçu sur le swap.",
+            "Exact : 4,50 % − (3,50 % − 2,90 %) = 3,90 % : le coût est figé au taux fixe du swap plus la marge.",
+            "Inexact : 2,90 % oublie la marge de 1 % de l'emprunt, que le swap ne couvre pas.",
+            "Inexact : 3,50 % est l'Euribor seul, sans marge ni effet du swap."
+          ],
           "explanation": "Emprunt : 3,50 % + 1 % = 4,50 % ; swap : Belem reçoit 3,50 % et paie 2,90 %, soit un différentiel reçu de 0,60 %. Coût net : 4,50 % − 0,60 % = 3,90 % (option 2), identique à la première année : quel que soit l’Euribor, le coût est figé à taux fixe du swap + marge. L’option 1 ignore le swap ; l’option 3 oublie la marge de l’emprunt, que le swap ne couvre pas ; l’option 4 est l’Euribor seul."
         },
         {
@@ -207,6 +213,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : la couverture de juste valeur viserait un swap qui rend variable une dette à taux fixe.",
+            "Exact : dette variable : couverture de flux de trésorerie ; part efficace en autres éléments du résultat global, reclassée en résultat (IFRS 9 §6.5.11).",
+            "Inexact : en IFRS, un dérivé figure toujours au bilan à sa juste valeur ; l'option décrit une logique de hors-bilan.",
+            "Inexact : la couverture d'investissement net à l'étranger est sans rapport avec un swap de taux sur une dette."
+          ],
           "explanation": "Le swap couvre la variabilité des flux d’intérêts futurs d’une dette variable : c’est une couverture de flux de trésorerie (IFRS 9 §6.5.2), avec une part efficace en autres éléments du résultat global reclassée en résultat quand les intérêts couverts affectent le résultat (§6.5.11), option 2. La couverture de juste valeur (option 1) viserait un swap qui rend variable une dette à taux fixe. En IFRS, un dérivé figure toujours au bilan à sa juste valeur (l’option 3 décrit plutôt une logique de hors-bilan). L’option 4 est sans rapport."
         },
         {

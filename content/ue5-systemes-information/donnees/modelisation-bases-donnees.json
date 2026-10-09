@@ -118,6 +118,12 @@
           "answer": [
             0
           ],
+          "option_explanations": [
+            "Exact : côté MATERIEL, minimum 0 (un article neuf jamais loué) et maximum n (loué successivement dans de nombreux contrats).",
+            "Inexact : au moins un et au plus un décrit une cardinalité 1,1, et non 0,n.",
+            "Inexact : cela concerne CONTRAT, dont la cardinalité est 1,n : un contrat comporte au moins un article.",
+            "Inexact : l'appartenance à une catégorie relève de l'association APPARTENIR, où MATERIEL a la cardinalité 1,1 (une seule catégorie)."
+          ],
           "explanation": "La cardinalité se lit du côté de l'entité : chaque occurrence de MATERIEL participe au minimum 0 fois (un article neuf n'a jamais été loué) et au maximum n fois (il est loué successivement dans de nombreux contrats) à l'association LOUER. L'option 2 décrit une cardinalité 1,1. L'option 3 décrit la cardinalité de CONTRAT, qui est 1,n (un contrat comporte au moins un article). L'option 4 concerne APPARTENIR, où MATERIEL a la cardinalité 1,1."
         },
         {

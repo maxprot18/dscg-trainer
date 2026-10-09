@@ -193,6 +193,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : ajouter des interfaces point à point laisse quatre sources concurrentes et aggrave le plat de spaghettis (déjà 23 interfaces).",
+            "Exact : une donnée de référence a une source et un propriétaire uniques (référentiel, MDM), diffusée aux autres applications par copies synchronisées.",
+            "Inexact : rapprocher les écarts une fois par an les traite après coup, sans supprimer leur cause : quatre saisies séparées de la fiche.",
+            "Inexact : supprimer l'adresse sans lien avec le CRM prive les caisses, le site et la fidélité d'une donnée dont ils ont besoin."
+          ],
           "explanation": "L'option 2 applique la règle selon laquelle une donnée de référence a une source et un propriétaire uniques (référentiel, MDM), diffusée par copies synchronisées. L'option 1 multiplie les interfaces et laisse quatre sources concurrentes : c'est aggraver le plat de spaghettis. L'option 3 traite les écarts après coup, sans en supprimer la cause. L'option 4 prive les caisses, le site et la fidélité d'une donnée dont ils ont besoin."
         },
         {

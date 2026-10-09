@@ -278,6 +278,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : au 01/01/N-1, Nova n'acquiert que 25 % avec influence notable : Orbe est mise en équivalence, sur une ligne distincte.",
+            "Inexact : jusqu'au 30/06/N, Orbe reste mise en équivalence ; l'intégration globale ne commence qu'à la prise de contrôle.",
+            "Exact : l'intégration globale commence à la date de prise de contrôle (IFRS 10 §20), soit le 01/07/N, avec l'acquisition des 40 % supplémentaires.",
+            "Inexact : l'intégration commence à la prise de contrôle du 01/07/N, non à la clôture ; le résultat de N est ventilé entre les deux périodes."
+          ],
           "explanation": "L'intégration globale commence à la date de prise de contrôle (IFRS 10 §20), soit le 01/07/N. Avant, Orbe est mise en équivalence : seule la quote-part de résultat figure sur une ligne distincte."
         }
       ],

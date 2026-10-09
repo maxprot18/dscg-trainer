@@ -175,6 +175,11 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : moyenne de X = 550 / 3 ≈ 183,3, inférieure à celle de Z (190).",
+            "Inexact : moyenne de Y = 520 / 3 ≈ 173,3, la plus faible des trois.",
+            "Exact : Laplace retient la meilleure moyenne : Z = 570 / 3 = 190, contre 183,3 pour X et 173,3 pour Y."
+          ],
           "explanation": "Moyennes : X = 550 / 3 ≈ 183,3 ; Y = 520 / 3 ≈ 173,3 ; Z = 570 / 3 = 190. Z est retenu."
         },
         {
@@ -189,6 +194,11 @@
           ],
           "answer": [
             1
+          ],
+          "option_explanations": [
+            "Inexact : le pire résultat de X est −150, le plus mauvais des trois.",
+            "Exact : Wald retient le meilleur des pires résultats : 40 pour Y, contre −150 pour X et −60 pour Z.",
+            "Inexact : le pire résultat de Z est −60, inférieur à celui de Y (40)."
           ],
           "explanation": "Pires résultats : X = −150 ; Y = 40 ; Z = −60. Le meilleur des pires est celui de Y."
         },

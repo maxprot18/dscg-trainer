@@ -207,6 +207,11 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : 33 / 135 inclut à tort le goodwill dans le dénominateur des CapEx.",
+            "Exact : dénominateur de 110 M€ (entrées d'immobilisations, droits d'utilisation compris, goodwill exclu) : 33 / 110 = 30,0 %.",
+            "Inexact : 33 / 100 exclut à tort les droits d'utilisation du dénominateur des CapEx."
+          ],
           "explanation": "Le dénominateur CapEx comprend les entrées d'immobilisations corporelles et incorporelles de l'exercice, droits d'utilisation compris, mais exclut le goodwill : 110 M€. Part alignée = 33 / 110 = 30,0 % (option 2). L'option 1 (33 / 135) inclut à tort le goodwill ; l'option 3 (33 / 100) exclut à tort les droits d'utilisation."
         },
         {

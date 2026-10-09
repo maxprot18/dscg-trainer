@@ -71,6 +71,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : la méthode dépend du contrôle, pas des intérêts : Corlay est contrôlée à 57 % (12 % + 45 %), donc intégrée globalement malgré 48 % d'intérêts.",
+            "Inexact : l'intégration proportionnelle suppose un contrôle conjoint, qui exigerait un accord de partage (décisions unanimes), absent pour Dinan.",
+            "Exact : Bréhat (80 %) et Corlay (57 %) sous contrôle exclusif : intégration globale ; Dinan (35 %, deux sièges sur sept) sous influence notable : mise en équivalence.",
+            "Inexact : une entité sous influence notable entre dans le périmètre même si un tiers la contrôle ; Dinan est mise en équivalence."
+          ],
           "explanation": "Bréhat : contrôle de 80 %, contrôle exclusif, intégration globale. Corlay : contrôle de 12 % + 45 % = 57 % (les voix de Bréhat, contrôlée, sont retenues en totalité), contrôle exclusif, donc intégration globale malgré des intérêts de 48 %. Dinan : contrôle de 10 % + 25 % = 35 % et deux sièges sur sept, influence notable sans contrôle, donc mise en équivalence. L’option 3 est la bonne. L’option 1 choisit la méthode d’après le pourcentage d’intérêts, alors que c’est le contrôle qui la détermine. L’option 2 suppose un contrôle conjoint, qui exigerait un accord contractuel de partage du contrôle (décisions unanimes), absent ici. L’option 4 oublie qu’une entité sous influence notable entre dans le périmètre, même si un tiers la contrôle."
         },
         {
@@ -303,6 +309,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : l'exercice 2025 était clos et déjà approuvé lors de la nomination du 24 juin 2026 ; le premier exercice contrôlé est 2026.",
+            "Inexact : la mission de trois exercices (ALPE) est réservée aux sociétés non tenues individuellement de désigner un CAC ; Kervalec dépasse les trois seuils.",
+            "Exact : désignation obligatoire, mandat de six exercices (C. com. art. L. 821-44) à compter de l'exercice en cours lors de la nomination : 2026 à 2031.",
+            "Inexact : le mandat ne commence pas à l'exercice suivant la nomination ; il couvre l'exercice en cours, 2026."
+          ],
           "explanation": "Kervalec dépasse au 31/12/2025 les trois seuils (bilan 7,9 M€ > 5 M€, CA 12,8 M€ > 10 M€, 58 salariés > 50), alors qu’au 31/12/2024 elle n’en dépassait aucun : la désignation est obligatoire et le mandat est de six exercices (C. com. art. L. 821-44). Le premier exercice contrôlé est celui en cours lors de la nomination (2026) : le mandat couvre 2026 à 2031 (2026 + 5) et expire après l’assemblée statuant sur les comptes 2031. L’option 3 est la bonne. L’option 1 inclut l’exercice 2025, clos et déjà approuvé lors de la nomination. L’option 2 correspond à la mission de trois exercices (ALPE), réservée aux sociétés qui ne sont pas tenues individuellement de désigner un CAC. L’option 4 fait commencer le mandat à l’exercice suivant la nomination."
         },
         {
@@ -362,6 +374,12 @@
           ],
           "answer": [
             2
+          ],
+          "option_explanations": [
+            "Inexact : l'exhaustivité viserait des ventes omises ; ici la vente est anticipée, comptabilisée en 2026 au lieu de 2027.",
+            "Inexact : la propriété des créances n'est pas en cause ; c'est le rattachement de la vente à l'exercice qui est erroné.",
+            "Exact : propriété et risques sont transférés à la réception des travaux posés, en 2027 : rattacher la vente à 2026 met en défaut la séparation des exercices.",
+            "Inexact : l'évaluation des créances concerne le risque de non-recouvrement, illustré par le constat 2 et non par le constat 1."
           ],
           "explanation": "La vente existe bien (le client a commandé et les travaux ont été réceptionnés en janvier 2027), mais elle a été rattachée à 2026 alors que le transfert de propriété et de risques, fait générateur selon les conditions générales, est intervenu en 2027 : c’est la séparation des exercices qui est en défaut (option 3). L’option 1 viserait des ventes omises, non des ventes anticipées. L’option 2 porte sur la propriété des créances, qui n’est pas en cause. L’option 4 concerne le risque de non-recouvrement, illustré par le constat 2 et non par le constat 1."
         },
@@ -482,6 +500,12 @@
           ],
           "answer": [
             1
+          ],
+          "option_explanations": [
+            "Inexact : une observation ne peut pas remplacer une réserve pour une anomalie significative non corrigée (60 000 € avant impôt, seuil 55 000 €).",
+            "Exact : dépréciation omise de 60 000 €, au-delà du seuil de 55 000 € ; la direction refuse de corriger (désaccord), incidence circonscrite et chiffrable : réserve.",
+            "Inexact : le refus suppose une incidence diffuse, ce qui n'est pas le cas d'une créance isolée (90 000 € TTC pour un bilan de 8,6 M€).",
+            "Inexact : la limitation viserait une impossibilité de collecter des éléments probants ; ici ils existent (estimation du mandataire)."
           ],
           "explanation": "L’anomalie non corrigée (dépréciation omise de 60 000 € avant impôt, 45 000 € sur le résultat net et les capitaux propres) dépasse le seuil de signification de 55 000 € : elle est significative. Il s’agit d’un désaccord (le commissaire aux comptes dispose des éléments probants, la direction refuse de corriger), dont l’incidence est circonscrite au poste clients et chiffrable : certification avec réserve pour désaccord (option 2), le fondement de l’opinion indiquant les montants. L’option 1 est fausse : une observation ne peut pas remplacer une réserve pour une anomalie non corrigée. L’option 3 suppose une incidence diffuse, ce qui n’est pas le cas d’une créance isolée (90 000 € TTC pour un total de bilan de 8,6 M€). L’option 4 viserait une impossibilité de collecter des éléments probants ; ici, les éléments existent (estimation du mandataire)."
         },

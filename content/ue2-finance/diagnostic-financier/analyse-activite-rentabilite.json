@@ -204,6 +204,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : les charges de personnel passent de 27,5 % à 27,0 % du CA : leur poids baisse.",
+            "Exact : les achats consommés passent de 40,0 % à 42,0 % du CA, soit deux points perdus (remises, hausse de l'acier).",
+            "Inexact : les dotations aux amortissements sont hors EBITDA ; elles n'en affectent pas le taux de marge.",
+            "Inexact : les charges externes passent de 18,1 % à 17,6 % du CA : leur poids baisse."
+          ],
           "explanation": "Rapportés au CA, les achats consommés passent de 40,0 % à 42,0 % (option 2), soit deux points perdus, cohérent avec les remises accordées et la hausse de l'acier. Les charges de personnel passent de 27,5 % à 27,0 % et les charges externes de 18,1 % à 17,6 % : leur poids baisse. Les dotations (option 3) sont hors EBITDA."
         },
         {

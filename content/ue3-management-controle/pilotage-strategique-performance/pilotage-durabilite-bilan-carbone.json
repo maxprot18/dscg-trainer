@@ -186,6 +186,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : l'objectif est formulé en émissions absolues, qui n'ont baissé que de 10 % ; l'intensité ne suffit pas.",
+            "Inexact : le calcul est juste ; l'intensité passe de 80 à 60 tCO₂e/M€, soit −25 %.",
+            "Exact : intensité de 80 à 60 tCO₂e/M€, mais émissions absolues −10 % seulement, contre environ −15,75 % attendus en 3 ans.",
+            "Inexact : l'intensité est un indicateur utile de pilotage, à compléter par les émissions absolues."
+          ],
           "explanation": "L'option 3 est exacte : intensité 2022 = 4 800 ÷ 60 = 80 tCO₂e/M€ ; 2025 = 4 320 ÷ 72 = 60 tCO₂e/M€, soit −25 %. Mais les émissions absolues n'ont baissé que de 10 % (4 320 ÷ 4 800 − 1), alors que la réduction linéaire de 42 % sur 8 ans supposait environ −15,75 % en 3 ans (42 % × 3 ÷ 8). L'option 1 est fausse : l'objectif est formulé en valeur absolue. L'option 2 est fausse : le calcul de l'intensité est juste. L'option 4 est fausse : l'intensité est un indicateur utile de pilotage, à condition de le compléter par les émissions absolues."
         },
         {

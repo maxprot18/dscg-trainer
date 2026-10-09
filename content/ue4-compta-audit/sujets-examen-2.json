@@ -58,6 +58,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : une option non encore exercée est prise en compte dès la prise d'effet si son exercice est raisonnablement certain (IFRS 16 §18 a).",
+            "Exact : aménagements propres sur 8 ans, loyer optionnel inférieur au marché, déménagement coûteux : la prolongation est raisonnablement certaine (IFRS 16 §18-19, B37), d'où 7 ans.",
+            "Inexact : la durée d'utilité des aménagements n'est qu'un indice ; la durée du contrat ne peut excéder la période juridiquement exécutoire (5 + 2 ans).",
+            "Inexact : cette approche hors bilan a été supprimée par le modèle unique du preneur (IFRS 16 §22)."
+          ],
           "explanation": "La durée du contrat est la période non résiliable augmentée des périodes couvertes par une option de prolongation que le preneur a la certitude raisonnable d’exercer (IFRS 16 §18). Pour l’apprécier, on retient les faits qui donnent au preneur un avantage économique à exercer l’option (§19, B37) : aménagements importants propres au preneur, d’une durée d’utilité (8 ans) supérieure à la période non résiliable ; loyer de la période optionnelle (150 k€) inférieur au marché (175 k€) ; coût élevé d’un déménagement (400 k€) ; importance du site pour l’activité. La certitude raisonnable est acquise : **7 ans** (option 2). L’option 1 ignore §18 a) : une option non encore exercée est prise en compte dès la date de prise d’effet si son exercice est raisonnablement certain. L’option 3 confond la durée d’utilité des aménagements, simple indice, avec la durée du contrat, qui ne peut excéder la période juridiquement exécutoire (5 + 2 ans). L’option 4 décrit une approche hors bilan que le modèle unique du preneur (§22) a supprimée."
         },
         {
@@ -196,6 +202,12 @@
           "answer": [
             3
           ],
+          "option_explanations": [
+            "Inexact : la mise en équivalence et la trésorerie relèvent de l'investissement (IFRS 18 §53-54) ; le goodwill d'une filiale consolidée n'est pas une participation.",
+            "Inexact : la catégorie financement est réservée aux passifs, pas aux produits de placement ; les intérêts du passif locatif vont, eux, en financement.",
+            "Inexact : la quote-part de résultat de la coentreprise mise en équivalence relève de l'investissement (IFRS 18 §53 a), non de l'exploitation.",
+            "Exact : Ionis et trésorerie en investissement (§53 a et b), intérêts locatifs en financement (§61 a), perte de valeur du goodwill en exploitation, catégorie résiduelle."
+          ],
           "explanation": "Pour une entité dont l’activité principale n’est ni l’investissement ni le financement de clients : la quote-part de résultat d’une coentreprise mise en équivalence et les produits de la trésorerie relèvent de la catégorie « investissement » (IFRS 18 §53 a et b, §54) ; le passif locatif ne résulte pas d’une transaction ayant uniquement trait à l’obtention de financements (B53 c), mais ses charges d’intérêts identifiées selon IFRS 16 vont dans la catégorie « financement » (§61 a, B54 c) ; la perte de valeur du goodwill d’une filiale consolidée n’est visée par aucune autre catégorie et reste dans la catégorie résiduelle « exploitation ». L’option 4 est donc la bonne. L’option 1 met la mise en équivalence et la trésorerie en exploitation et le goodwill en investissement (le goodwill d’une filiale consolidée n’est pas une participation au sens de §53 a). L’option 2 classe les produits de placement en financement, catégorie réservée aux passifs, et les intérêts locatifs en exploitation. L’option 3 range la quote-part de la coentreprise en exploitation, alors qu’elle relève de l’investissement."
         },
         {
@@ -287,6 +299,12 @@
           ],
           "answer": [
             2
+          ],
+          "option_explanations": [
+            "Inexact : confusion entre parité et valeur d'apport : les règles d'évaluation des apports ne visent pas celles de la parité (PCG art. 740-1).",
+            "Inexact : le critère « à l'endroit » n'a de sens qu'entre sociétés sous contrôle distinct ; Rivages contrôle déjà Corniche (70 %).",
+            "Exact : Rivages contrôle Corniche (70 %) : contrôle commun, apports à la valeur comptable (PCG art. 743-1), soit 2 800 000 − 1 000 000 = 1 800 000 €.",
+            "Inexact : la logique est inverse : la valeur d'apport est fixée par le PCG, le régime fiscal de l'article 210 A en tire seulement les conséquences."
           ],
           "explanation": "La valeur d’apport dépend de la situation de contrôle avant l’opération et de son sens (PCG art. 740-1, 743-1), et non de la méthode de calcul de la parité : l’article 740-1 précise que les règles d’évaluation des apports ne visent pas celles retenues pour la parité. Rivages détient 70 % des droits de vote de Corniche : elle la contrôle de manière exclusive (art. 741-1, 741-2), l’opération implique des entités sous contrôle commun et les apports sont retenus à la **valeur comptable**, soit l’actif net comptable de Corniche au 31/12/N−1 : 2 800 000 − 1 000 000 = 1 800 000 € (option 3). L’option 1 confond parité et valeur d’apport (c’est l’erreur de M. Aubert). L’option 2 n’a de sens qu’entre sociétés sous contrôle distinct. L’option 4 inverse la logique : la valeur d’apport est fixée par le PCG, le régime fiscal en tire seulement les conséquences."
         },

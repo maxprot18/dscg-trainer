@@ -155,6 +155,12 @@
           "answer": [
             3
           ],
+          "option_explanations": [
+            "Inexact : les batteries existent bien ; c'est leur valeur nette de réalisation qui est douteuse.",
+            "Inexact : rien n'indique des batteries omises de l'inventaire ; le doute porte sur leur valeur après incompatibilité.",
+            "Inexact : les batteries appartiennent à l'entité ; leur incompatibilité ne met pas en cause la propriété mais la valeur.",
+            "Exact : l'incompatibilité avec les modèles actuels fait douter de la valeur nette de réalisation : risque de dépréciation insuffisante, donc évaluation."
+          ],
           "explanation": "Les batteries existent et appartiennent à l'entité, mais leur incompatibilité avec les modèles actuels fait douter de leur valeur nette de réalisation : le risque porte sur l'évaluation (dépréciation éventuellement insuffisante). Les autres assertions ne sont pas spécialement affectées par ce fait."
         },
         {

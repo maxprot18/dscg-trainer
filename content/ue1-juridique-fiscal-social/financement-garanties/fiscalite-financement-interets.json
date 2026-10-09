@@ -176,6 +176,12 @@
             2
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : l'option oublie le plancher de 3 M€ ; les charges financières nettes de 47 250 € restent en deçà.",
+            "Inexact : le taux plafond de l'article 39-1-3° ne s'applique pas aux intérêts versés à une banque tierce.",
+            "Exact : 36 000 + 11 250 = 47 250 € de charges financières nettes, très inférieures au plafond minimal de 3 M€.",
+            "Inexact : les deux dispositifs s'appliquent successivement ; la fraction conforme au taux plafond reste déductible."
+          ],
           "explanation": "Intérêts bancaires : 800 000 × 4,5 % = 36 000 €. Charges financières nettes retenues : 36 000 + 11 250 = 47 250 €, très inférieures au plafond, qui est au minimum de 3 M€ : aucune réintégration au titre de l'article 212 bis (option 3). L'option 1 oublie le plancher de 3 M€. L'option 2 applique à tort le taux plafond à une banque tierce. L'option 4 est fausse : les deux dispositifs s'appliquent successivement, et la fraction des intérêts du compte courant conforme au taux plafond reste déductible."
         },
         {

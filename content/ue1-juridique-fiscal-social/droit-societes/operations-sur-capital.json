@@ -142,6 +142,12 @@
           ],
           "answer": [1],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : le conseil d'administration ne peut pas supprimer le DPS de sa propre autorité ; c'est la compétence de l'AGE.",
+            "Exact : l'AGE supprime le DPS au vu du rapport du conseil et de celui du commissaire aux comptes (L225-135).",
+            "Inexact : l'unanimité n'est pas requise ; la renonciation individuelle est une autre technique que la suppression collective.",
+            "Inexact : le DPS existe dans toutes les SA, cotées ou non (L225-132)."
+          ],
           "explanation": "La suppression du DPS relève de l'AGE, qui statue sur le rapport du conseil d'administration et sur celui du commissaire aux comptes (C. com. art. L225-135) : option 2. Le conseil ne peut supprimer le DPS de sa propre autorité (option 1). L'unanimité n'est pas requise (option 3) : une renonciation individuelle est une autre technique, non une condition de la suppression collective. Le DPS existe dans toutes les SA, cotées ou non (option 4, art. L225-132)."
         },
         {

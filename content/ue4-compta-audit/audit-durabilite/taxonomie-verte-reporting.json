@@ -151,6 +151,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : la contribution substantielle ne suffit pas ; l'échec au critère DNSH relatif à la pollution empêche l'alignement.",
+            "Inexact : confusion entre éligibilité et respect des critères : l'activité est décrite dans l'acte délégué, donc éligible.",
+            "Exact : activité décrite dans l'acte délégué, donc éligible ; l'échec au critère DNSH sur les rejets de l'usine 2 empêche l'alignement.",
+            "Inexact : sans fondement ; une mention en annexe ne remplace pas le respect du critère DNSH, condition de l'alignement."
+          ],
           "explanation": "L'activité est décrite dans l'acte délégué : elle est éligible. L'échec au critère DNSH empêche l'alignement. L'option 1 oublie la condition DNSH ; l'option 2 confond éligibilité et respect des critères ; l'option 4 est sans fondement."
         },
         {

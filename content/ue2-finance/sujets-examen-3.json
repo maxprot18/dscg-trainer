@@ -1,0 +1,478 @@
+{
+  "exercises": [
+    {
+      "id": "ue2-dossier-0005",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE2",
+      "theme": "gestion-risques",
+      "notion": "couverture-change",
+      "difficulty": 3,
+      "tags": [
+        "sujet type",
+        "position de change",
+        "change à terme",
+        "parité des taux d'intérêt",
+        "option de change",
+        "appel d'offres",
+        "comptabilité de couverture PCG",
+        "impasse de taux",
+        "swap de taux",
+        "cap"
+      ],
+      "source_ref": "PCG art. 420-5, 420-6, 628-1, 628-2, 628-6 à 628-8, 628-10 à 628-13 et 628-18 (règl. ANC 2014-03 modifié par le règl. ANC 2015-05) ; IFRS 9 §6.3.3 (règl. UE 2023/1803), pour comparaison ; parité des taux d'intérêt couverte ; mathématiques financières (annuité constante)",
+      "verified": true,
+      "estimated_seconds": 5400,
+      "total_points": 20,
+      "title": "Cévamat : couvrir les risques de change et de taux d'un exportateur endetté",
+      "context": "La société **Cévamat SAS**, installée à Valence, conçoit et fabrique des stations de pompage et des systèmes d'irrigation au goutte-à-goutte. Elle réalise 86 M€ de chiffre d'affaires, dont 40 % au Royaume-Uni, facturés en livres sterling (GBP) à des distributeurs et à des compagnies des eaux. Ses composants électroniques sont achetés en dollars (USD) à des fournisseurs américains et asiatiques. Ses comptes annuels sont établis selon le PCG ; l'exercice coïncide avec l'année civile.\n\nPour financer l'agrandissement de son usine, Cévamat a souscrit en 2025 un emprunt in fine de 12 M€ à taux variable. La volatilité de la livre et l'incertitude sur l'évolution des taux de la zone euro inquiètent le directeur général, **Bruno Castagné**, alors que la société n'a jamais couvert aucun risque financier.\n\nLe 1er mars 2027, la directrice financière, **Inès Marchal**, vous confie, en tant que trésorier(ère) récemment recruté(e), les travaux suivants :\n\n1. mesurer l'exposition de la société au risque de change ;\n2. couvrir la facture émise ce jour sur le distributeur Brentwood Irrigation Ltd et préparer sa comptabilisation ;\n3. proposer une couverture de l'offre remise dans un appel d'offres britannique ;\n4. mesurer et couvrir le risque de taux de l'emprunt ;\n5. rédiger, pour le comité de direction, une proposition de politique de couverture.\n\nHypothèses : année de 360 jours pour tous les calculs d'intérêts et de cours à terme ; taux d'impôt sur les sociétés de 25 % ; les cours de change sont exprimés en unités de devise pour 1 € ; montants en euros, sauf mention contraire.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Éléments en devises au 1er mars 2027",
+          "content": "| Élément | Montant | Échéance |\n| --- | ---: | --- |\n| Facture Brentwood Irrigation Ltd émise le 1er mars 2027 | 1 275 000 GBP | 30 mai 2027 (90 jours) |\n| Autres créances clients britanniques | 300 000 GBP | avril 2027 |\n| Commandes de vente fermes (livraison en avril) | 500 000 GBP | paiement fin juin 2027 |\n| Dette envers un sous-traitant écossais | 150 000 GBP | avril 2027 |\n| Commande d'achat ferme de pièces usinées en Écosse | 50 000 GBP | mai 2027 |\n| Créance sur un client canadien facturé en dollars | 200 000 USD | avril 2027 |\n| Dettes fournisseurs de composants | 900 000 USD | mars à mai 2027 |\n| Commandes d'achat fermes de composants | 400 000 USD | juin 2027 |\n\n**Appel d'offres de Fenland Water Services** (compagnie des eaux britannique) : le 25 février 2027, Cévamat a remis une offre ferme et non révisable de **2 000 000 GBP** pour l'équipement de douze stations de pompage. Le résultat sera connu le 31 mai 2027 ; si l'offre est retenue, le prix sera encaissé fin août 2027, 180 jours après le 1er mars. La direction commerciale estime à **40 %** la probabilité de succès."
+        },
+        {
+          "title": "Annexe 2 — Données de marché au 1er mars 2027",
+          "content": "| Donnée | Valeur |\n| --- | --- |\n| Cours au comptant | 1 € = 0,8500 GBP ; 1 € = 1,0800 USD |\n| Taux d'intérêt annuels à 90 et à 180 jours (base 360 jours) | euro 2,00 % ; livre 4,00 % ; dollar 3,80 % |\n| Euribor 3 mois | 2,20 % |\n\nLes cours à terme se déduisent de la parité des taux d'intérêt couverte ; la banque les cote avec **quatre décimales**.\n\n**Option de vente de livres (put GBP)** européenne proposée par la banque : nominal 2 000 000 GBP, échéance fin août 2027 (180 jours), prix d'exercice **1 € = 0,8600 GBP**, prime de **1,6 % du nominal converti au cours au comptant**, payée le 1er mars 2027. On néglige le coût de financement de la prime."
+        },
+        {
+          "title": "Annexe 3 — Emprunt, placements et propositions de couverture du risque de taux",
+          "content": "**Emprunt in fine** de 12 000 k€, échéance le 31 mars 2031, au taux **Euribor 3 mois + 1,50 %**, intérêts payés chaque trimestre (90 jours). La prochaine période d'intérêts commence le 1er avril 2027.\n\n**Placements de trésorerie à taux variable** (comptes à terme indexés sur l'Euribor) : 2 000 k€. Ils seront entièrement mobilisés à l'automne 2027 pour payer la deuxième tranche des travaux de l'usine.\n\n**Proposition A — Swap de taux** de 4 ans à compter du 1er avril 2027, nominal 12 000 k€ : Cévamat **paie 2,60 % fixe** et **reçoit l'Euribor 3 mois** ; seul le différentiel net est réglé chaque trimestre, aux dates d'intérêts de l'emprunt.\n\n**Proposition B — Cap** de 4 ans à compter du 1er avril 2027, nominal 12 000 k€, taux plafond de **3,00 %** sur l'Euribor 3 mois ; prime unique de **1,20 % du nominal** (144 k€) payée le 1er avril 2027. Pour comparer les solutions, la prime est convertie en coût annuel équivalent par une **annuité constante calculée au taux de 3 % sur 4 ans**.\n\n**Scénarios d'Euribor 3 mois** retenus par la direction financière pour la durée de l'emprunt : 1,80 % (baisse) et 4,00 % (hausse)."
+        },
+        {
+          "title": "Annexe 4 — Extraits du compte rendu du comité de direction du 22 février 2027",
+          "content": "*Compte rendu rédigé pour le cas.*\n\n**Bruno Castagné (directeur général)** : « Couvrir nos factures en livres ? Si la livre remonte, nous aurons renoncé au gain. Pour l'appel d'offres de Fenland, vendons dès maintenant les 2 000 000 GBP à terme : c'est gratuit, alors qu'une option coûte près de 38 000 €. De toute façon, nos achats en dollars compensent nos ventes en livres : nous sommes naturellement couverts. Quant aux taux, la BCE va les baisser ; je ne veux pas payer pour rien. »\n\n**Inès Marchal (directrice financière)** : « Le plan de financement de l'agrandissement a été bâti sur un coût de la dette de **4,25 % au plus** ; au-delà, le programme d'investissement serait remis en cause. Je propose une politique de couverture écrite : aucune position spéculative ; couverture d'au moins 80 % des positions fermes à moins de six mois ; instruments autorisés : change à terme, achat d'options, swaps et caps de taux ; ventes d'options interdites ; chaque couverture documentée conformément au PCG. »"
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "À partir de l'annexe 1, calculez la position de change nette de Cévamat en livres sterling au 1er mars 2027, avant toute couverture et hors appel d'offres, en GBP (positive si elle est longue, négative si elle est courte).",
+          "points": 1.5,
+          "expected_value": 1875000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "GBP",
+          "decimals": 0,
+          "explanation": "Position = créances + engagements de vente fermes − dettes − engagements d'achat fermes = 1 275 000 + 300 000 + 500 000 − 150 000 − 50 000 = **1 875 000 GBP**, position longue : Cévamat perd si la livre se déprécie (si le cours dépasse 0,8500 GBP pour 1 €). Les commandes fermes font partie de la position dès l'engagement, avant toute facturation. L'offre de 2 000 000 GBP est une exposition conditionnelle (probabilité de 40 %), suivie à part. Erreurs : oublier les commandes fermes (1 425 000), ajouter l'appel d'offres (3 875 000), compenser avec la position en dollars."
+        },
+        {
+          "id": "q2",
+          "kind": "mcq",
+          "prompt": "À partir des annexes 1 et 4, quelle affirmation relative à l'exposition de Cévamat au risque de change est exacte ?",
+          "points": 1.5,
+          "options": [
+            "Les achats en dollars compensent les ventes en livres : seule la différence entre les deux positions, exprimées en euros, doit être couverte.",
+            "L'offre remise à Fenland Water Services doit être ajoutée pour 2 000 000 GBP à la position en livres, au même titre que les commandes fermes.",
+            "La position en dollars est courte (−1 100 000 USD) : Cévamat perd si le dollar s'apprécie face à l'euro, c'est-à-dire si le cours passe sous 1,0800 USD pour 1 €.",
+            "La position en livres étant longue, Cévamat perd si la livre s'apprécie face à l'euro."
+          ],
+          "answer": [
+            2
+          ],
+          "multiple": false,
+          "option_explanations": [
+            "Inexact : la position se mesure devise par devise ; livre et dollar évoluent indépendamment face à l'euro, les pertes peuvent se cumuler.",
+            "Inexact : l'offre ne deviendra une créance que si elle est retenue (40 %) ; exposition conditionnelle, elle est suivie à part, hors position ferme.",
+            "Exact : 200 000 − 900 000 − 400 000 = −1 100 000 USD ; position courte, perdante si le dollar s'apprécie.",
+            "Inexact : une position longue perd quand la devise se déprécie ; une appréciation de la livre augmenterait la contre-valeur en euros des créances."
+          ],
+          "explanation": "L'option 3 est exacte : position en dollars = 200 000 − 900 000 − 400 000 = −1 100 000 USD, position courte ; si le dollar s'apprécie (par exemple 1 € = 1,0300 USD au lieu de 1,0800), il faudra davantage d'euros pour régler les fournisseurs. L'option 1 est fausse : on raisonne devise par devise, sans compenser une livre avec un dollar, car les deux devises peuvent évoluer en sens contraire face à l'euro ; l'idée d'une couverture « naturelle » du directeur général est donc erronée. L'option 2 est fausse : l'offre expose déjà Cévamat, mais de façon conditionnelle (probabilité de succès de 40 %) ; elle n'entre pas dans la position ferme et appelle un instrument adapté à une exposition incertaine. L'option 4 est fausse : la position longue en livres (1 875 000 GBP) perd si la livre se déprécie."
+        },
+        {
+          "id": "q3",
+          "kind": "numeric",
+          "prompt": "À partir de l'annexe 2, calculez le cours à terme à 90 jours de la livre (arrondi à quatre décimales, comme le cote la banque), puis le montant en euros garanti par la vente à terme des 1 275 000 GBP de la facture Brentwood (annexe 1), arrondi à l'euro.",
+          "points": 1.5,
+          "expected_value": 1492625,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 60
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Cours à terme (GBP pour 1 €) = 0,8500 × (1 + 4 % × 90/360) / (1 + 2 % × 90/360) = 0,8500 × 1,01 / 1,005 = 0,854229, coté **0,8542**. Montant garanti = 1 275 000 / 0,8542 = **1 492 625 €** (1 492 574 € avec le cours non arrondi, accepté). La livre, dont le taux d'intérêt est le plus élevé, cote en déport : elle vaut moins à terme qu'au comptant (1 500 000 €). Le déport de 7 375 € est le coût de la couverture, reflet du différentiel de taux. Erreurs : retenir le cours au comptant (1 500 000 €), inverser la parité (1 507 463 €), ne pas proratiser les taux (1 471 154 €)."
+        },
+        {
+          "id": "q4",
+          "kind": "journal_entry",
+          "prompt": "La vente à terme de la question 3 est conclue le 1er mars 2027 et documentée comme couverture de la créance Brentwood, enregistrée ce jour-là au cours au comptant de l'annexe 2. Le 30 mai 2027, le client paie 1 275 000 GBP, aussitôt livrés à la banque au cours à terme ; le cours au comptant est alors de 1 € = 0,8800 GBP. Passez l'écriture de règlement en une seule écriture : la perte de change sur la créance et le gain symétrique du contrat à terme sur la composante comptant, de même montant et présentés dans le même poste, ne sont pas enregistrés séparément ; la couverture étant dénouée dans l'exercice, la totalité du déport est constatée à cette date au compte 666. Montants arrondis à l'euro.",
+          "points": 2,
+          "date": "2027-05-30",
+          "entries": [
+            {
+              "account": "512",
+              "label": "Banque (livres cédées au cours à terme 0,8542)",
+              "debit": 1492625,
+              "credit": 0
+            },
+            {
+              "account": "666",
+              "label": "Pertes de change financières (déport)",
+              "debit": 7375,
+              "credit": 0
+            },
+            {
+              "account": "411",
+              "label": "Clients — Brentwood Irrigation Ltd",
+              "debit": 0,
+              "credit": 1500000
+            }
+          ],
+          "explanation": "La créance a été enregistrée le 1er mars à 1 275 000 / 0,8500 = 1 500 000 €. Le 30 mai, elle ne vaut plus que 1 275 000 / 0,8800 = 1 448 864 € : perte de change de 51 136 €. Le contrat à terme dégage un gain total de 1 492 625 − 1 448 864 = 43 761 €, qui se décompose en un gain de 51 136 € sur la composante comptant, symétrique de la perte sur la créance et présenté dans le même poste (PCG art. 628-11), et le déport de 7 375 €, enregistré en résultat financier sur la durée de la couverture (art. 628-13). D'où l'écriture : 512 débité de 1 492 625, 666 débité de 7 375, 411 crédité de 1 500 000. Sans couverture, Cévamat n'aurait encaissé que 1 448 864 €. Erreurs : solder la créance au cours du 30 mai, enregistrer le déport en perte de change commerciale (656) alors que l'énoncé et l'article 628-13 le placent en résultat financier, ou créditer 411 du montant encaissé."
+        },
+        {
+          "id": "q5",
+          "kind": "numeric",
+          "prompt": "À partir des annexes 1 et 2, calculez la prime du put GBP, puis le montant minimal en euros, net de la prime, que l'option garantit à Cévamat si son offre à Fenland Water Services est retenue (arrondi à l'euro).",
+          "points": 1.5,
+          "expected_value": 2287934,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 50
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Prime = 1,6 % × 2 000 000 / 0,8500 = 37 647 €, payée dans tous les cas. Si la livre se déprécie au-delà de 0,8600, l'option est exercée : 2 000 000 / 0,8600 = 2 325 581 € ; montant minimal net = 2 325 581 − 37 647 = **2 287 934 €**. Si la livre s'apprécie, l'option est abandonnée et Cévamat vend ses livres au comptant. À titre de comparaison, la vente à terme à 180 jours (cours 0,8500 × 1,02 / 1,01 = 0,8584) garantirait 2 000 000 / 0,8584 = 2 329 916 € ; l'option ne fait mieux que le terme que si la livre s'apprécie sous 2 000 000 / (2 329 916 + 37 647) = 0,8448 GBP pour 1 €. Erreurs : oublier la prime (2 325 581 €), calculer la prime au prix d'exercice (2 288 372 €)."
+        },
+        {
+          "id": "q6",
+          "kind": "numeric",
+          "prompt": "Le directeur général propose de vendre à terme à 180 jours les 2 000 000 GBP de l'offre (annexe 4). À partir des annexes 1 et 2, calculez le résultat de cette vente à terme (positif si gain, négatif si perte) dans le cas où l'offre n'est pas retenue et où la livre cote 1 € = 0,8100 GBP fin août 2027 : Cévamat doit alors acheter au comptant les livres à livrer à la banque. Cours à terme arrondi à quatre décimales ; résultat arrondi à l'euro.",
+          "points": 2,
+          "expected_value": -139220,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 60
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Cours à terme à 180 jours = 0,8500 × (1 + 4 % × 180/360) / (1 + 2 % × 180/360) = 0,8500 × 1,02 / 1,01 = 0,858416, coté 0,8584. Sans contrat commercial, Cévamat doit acheter 2 000 000 GBP au comptant : 2 000 000 / 0,8100 = 2 469 136 €, et les livrer contre 2 000 000 / 0,8584 = 2 329 916 €. Résultat = 2 329 916 − 2 469 136 = **−139 220 €** (−139 263 € avec le cours non arrondi, accepté). La vente à terme n'est donc pas « gratuite » : si l'offre échoue, elle devient une position spéculative. Avec le put, la perte serait limitée à la prime (37 647 €) : l'option, abandonnée, ne crée aucune obligation. Erreurs : raisonner au cours au comptant du 1er mars (−116 195 €), inverser le signe."
+        },
+        {
+          "id": "q7",
+          "kind": "mcq",
+          "prompt": "Cévamat achète finalement le put GBP de l'annexe 2 pour se protéger sur l'offre remise à Fenland Water Services (annexe 1). Le PCG ne fixant pas de seuil chiffré, la directrice financière estime qu'avec 40 % de chances de succès l'offre ne présente pas, à ce stade, une probabilité suffisante de réalisation. Quelle affirmation relative à son traitement comptable selon le PCG est exacte ?",
+          "points": 1.5,
+          "options": [
+            "Le nominal de l'option, converti en euros, est inscrit au bilan dès l'achat, au compte 521 Instruments financiers à terme.",
+            "La prime de 37 647 € est obligatoirement enregistrée en charges financières le 1er mars 2027.",
+            "Si l'offre est retenue fin mai, la prime doit être déduite du chiffre d'affaires du contrat, l'option étant alors considérée comme une couverture depuis le 1er mars.",
+            "L'offre ne pouvant pas, à ce stade, être désignée comme élément couvert, l'option est en position ouverte isolée : ses gains latents ne sont pas comptabilisés et ses pertes latentes sont provisionnées."
+          ],
+          "answer": [
+            3
+          ],
+          "multiple": false,
+          "option_explanations": [
+            "Inexact : les nominaux des instruments financiers à terme ne sont pas comptabilisés au bilan, ils figurent dans les engagements hors bilan (art. 628-1).",
+            "Inexact : les primes d'options sont enregistrées au bilan (art. 628-2), puis rapportées au résultat selon la qualification de l'opération.",
+            "Inexact : une couverture peut débuter sur un instrument déjà détenu (art. 628-7), mais à sa date de désignation, sans effet rétroactif au 1er mars.",
+            "Exact : sans probabilité suffisante, une transaction future n'est pas couvrable (art. 628-8) ; position ouverte isolée : gains latents ignorés, pertes provisionnées (art. 628-18)."
+          ],
+          "explanation": "L'option 4 est exacte : une transaction future ne peut être un élément couvert que si elle est définie avec précision et possède une probabilité suffisante de réalisation (PCG art. 628-8) ; le PCG ne fixe pas de seuil chiffré, et l'énoncé retient qu'une offre dont le succès est estimé à 40 % ne remplit pas cette condition, ce qui est une appréciation prudente pour une probabilité inférieure à une chance sur deux. Le put est donc traité en position ouverte isolée : ses variations de valeur sont inscrites au bilan, les gains latents n'interviennent pas dans le résultat et les pertes latentes sont provisionnées en résultat financier (art. 628-18). L'option 1 est fausse : le nominal est un engagement hors bilan (art. 628-1). L'option 2 est fausse : la prime est enregistrée au bilan (art. 628-2). L'option 3 est fausse : il est possible de débuter une relation de couverture à partir d'un instrument déjà détenu (art. 628-7), mais à compter de sa désignation et sans effet rétroactif ; la prime pourrait alors, sur option, être rattachée au résultat de la transaction couverte (art. 628-12), ce qui n'est jamais une obligation. En IFRS 9, la conclusion serait la même : une transaction prévue doit être hautement probable pour être couverte (§6.3.3)."
+        },
+        {
+          "id": "q8",
+          "kind": "numeric",
+          "prompt": "À partir de l'annexe 3, calculez l'impasse de taux de Cévamat au 1er mars 2027, puis l'effet annuel sur le résultat avant impôt d'une hausse de 1 point de l'Euribor 3 mois, en k€ (négatif s'il s'agit d'une perte).",
+          "points": 1,
+          "expected_value": -100,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "Impasse = actifs à taux variable − passifs à taux variable = 2 000 − 12 000 = −10 000 k€. Effet d'une hausse de 1 point = −10 000 × 1 % = **−100 k€** par an avant impôt (−75 k€ après impôt). L'impasse négative signifie qu'une hausse des taux coûte à Cévamat. Elle se creusera à −12 000 k€ à l'automne 2027, quand les placements seront mobilisés : la hausse de 1 point coûtera alors 120 k€ par an. Erreurs : ignorer les placements (−120 k€), raisonner après impôt (−75 k€)."
+        },
+        {
+          "id": "q9",
+          "kind": "numeric",
+          "prompt": "À partir de l'annexe 3, calculez le coût annuel global de l'emprunt couvert par le cap (proposition B), prime comprise, dans le scénario de hausse (Euribor 3 mois à 4,00 %), en % (deux décimales).",
+          "points": 1.5,
+          "expected_value": 4.82,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.01
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Coût annuel équivalent de la prime = 1,20 % × 0,03 / (1 − 1,03⁻⁴) = 1,20 % × 0,26903 = 0,3228 %. Avec l'Euribor à 4,00 %, le cap plafonne le taux de référence à 3,00 % ; la marge de 1,50 % reste due. Coût global = 3,00 % + 1,50 % + 0,32 % = **4,82 %**, contre 5,50 % sans couverture et 4,10 % avec le swap (2,60 % + 1,50 %). Dans le scénario de baisse (1,80 %), le cap coûte 1,80 % + 1,50 % + 0,32 % = 3,62 %, le swap 4,10 % et l'emprunt non couvert 3,30 %. Erreurs : oublier la prime (4,50 %), l'étaler linéairement (4,80 %), comparer l'Euribor au plafond majoré de la marge (5,82 %)."
+        },
+        {
+          "id": "q10",
+          "kind": "true_false",
+          "prompt": "Selon le PCG, la prime du cap (proposition B, annexe 3) doit être comptabilisée en totalité en charges financières lors de son paiement, le 1er avril 2027.",
+          "points": 1,
+          "answer": false,
+          "explanation": "Faux. Les primes d'options sont enregistrées au bilan (PCG art. 628-2). Le cap couvrant les intérêts des quatre années à venir, sa prime peut être étalée en résultat sur la période de couverture, ou constatée au rythme des transactions couvertes (art. 628-12) : dans les deux cas, elle est rapportée aux exercices 2027 à 2031, symétriquement aux intérêts de l'emprunt et dans le même poste (art. 628-11). La passer en charge en une seule fois fausserait le coût de la dette de 2027."
+        },
+        {
+          "id": "q11",
+          "kind": "open",
+          "prompt": "À l'aide des annexes 3 et 4 et de vos résultats (questions 8 et 9), comparez le swap et le cap dans les deux scénarios de taux, recommandez une couverture du risque de taux en précisant le nominal à couvrir, et indiquez son traitement comptable selon le PCG.",
+          "points": 2,
+          "model_answer": "L'emprunt de 12 000 k€ à taux variable expose Cévamat à un risque de flux : l'impasse de −10 000 k€ fait perdre 100 k€ par an avant impôt pour 1 point de hausse, et l'exposition atteindra 12 000 k€ à l'automne, quand les placements seront mobilisés. Coût annuel de la dette selon les scénarios : sans couverture, 3,30 % (baisse) ou 5,50 % (hausse) ; avec le swap, 4,10 % dans tous les cas ; avec le cap, 3,62 % ou 4,82 %, prime comprise. Le cap n'est moins coûteux que le swap que si l'Euribor reste sous 2,28 % (4,10 % − 1,50 % − 0,32 %) ; il laisse profiter de la baisse attendue par le directeur général, mais ne plafonne le coût qu'à 4,82 %, au-dessus du maximum de 4,25 % sur lequel repose le plan de financement. Seul le swap respecte cette contrainte, au prix d'un surcoût de 0,40 point par rapport au taux actuel (3,70 %). Je recommande donc le swap payeur du fixe, sur un nominal de 12 000 k€ égal au capital de l'emprunt et non à l'impasse actuelle, puisque les placements vont disparaître, avec des dates et une durée identiques à celles de l'emprunt. Une couverture mixte (swap sur 10 000 k€, cap sur 2 000 k€) resterait compatible avec le plafond de 4,25 % (coût maximal de 4,22 %) tout en conservant une petite partie de la baisse ; en revanche, un nominal supérieur à la dette serait spéculatif. En PCG, le nominal du swap figure dans les engagements hors bilan (art. 628-1) ; la relation de couverture est documentée dès l'origine (art. 628-10) ; le différentiel net de chaque trimestre est enregistré dans les charges d'intérêts, symétriquement aux intérêts de l'emprunt (art. 628-11) : 24 k€ versés par trimestre si l'Euribor est à 1,80 %, 42 k€ reçus s'il est à 4,00 % ; les variations de valeur du swap ne sont pas comptabilisées.",
+          "key_points": [
+            "Exposition : impasse de −10 000 k€ (−100 k€ par point de hausse), portée à −12 000 k€ quand les placements seront mobilisés",
+            "Comparaison chiffrée : swap 4,10 % dans tous les cas ; cap 3,62 % ou 4,82 % ; sans couverture 3,30 % ou 5,50 % ; cap préférable seulement sous 2,28 % d'Euribor",
+            "Seul le swap respecte le coût maximal de 4,25 % du plan de financement : swap payeur du fixe recommandé (couverture mixte défendable)",
+            "Nominal de 12 000 k€ adossé à l'emprunt (mêmes dates et durée), sans surcouverture",
+            "PCG : nominal hors bilan, documentation, différentiel dans les charges d'intérêts par symétrie, variations de valeur non comptabilisées"
+          ],
+          "explanation": "On attend un raisonnement par scénarios relié à la contrainte de la directrice financière (4,25 %), et non un pari sur les taux. Calculs d'appui : seuil cap / swap = 4,10 % − 1,50 % − 0,3228 % = 2,28 % ; couverture mixte dans le scénario de hausse : swap sur 10 000 k€ et cap sur 2 000 k€ = (10 000 × 4,10 % + 2 000 × 4,82 %) / 12 000 = 4,22 % (avec 9 000 k€ swapés, 4,28 % : plafond dépassé) ; différentiel du swap = 12 000 × (2,60 % − 1,80 %) × 90/360 = 24 k€ versés, ou 12 000 × (4,00 % − 2,60 %) × 90/360 = 42 k€ reçus."
+        },
+        {
+          "id": "q12",
+          "kind": "open",
+          "prompt": "À l'aide de l'ensemble des annexes et de vos résultats (questions 1 à 7), rédigez la note destinée au comité de direction : répondez aux trois objections du directeur général sur le risque de change (annexe 4) et proposez une politique de couverture du risque de change de Cévamat, y compris son traitement comptable.",
+          "points": 3,
+          "model_answer": "Première objection : ne pas couvrir pour garder le gain d'une remontée de la livre revient à spéculer, ce que la politique proposée interdit. Cévamat détient une position longue de 1 875 000 GBP : elle perd si la livre baisse. La vente à terme de la facture Brentwood garantit 1 492 625 € ; le déport de 7 375 € est le prix du différentiel de taux entre la livre et l'euro. Sans couverture, la livre étant tombée à 0,8800 le 30 mai, Cévamat n'aurait encaissé que 1 448 864 €, soit 51 136 € de moins que la valeur d'origine de la créance. Deuxième objection : la vente à terme de l'offre à Fenland n'est « gratuite » qu'en apparence. Si l'offre échoue (60 % de probabilité), Cévamat reste vendeuse de 2 000 000 GBP sans recette en face : une remontée de la livre à 0,8100 lui coûterait 139 220 €. C'est une position spéculative, traitée en position ouverte isolée avec provision des pertes latentes. Le put coûte 37 647 €, mais cette perte maximale est connue d'avance. Si l'offre est retenue, il garantit au moins 2 287 934 € et laisse profiter d'une remontée de la livre ; il ne fait mieux que le terme qu'au-dessous de 0,8448. Si l'offre échoue et que la livre baisse, l'option rapporte un gain, par exemple 65 712 € nets à 0,9000. L'option est l'instrument adapté à une exposition conditionnelle ; je recommande son achat. Si l'offre est retenue fin mai, l'option pourra être désignée comme couverture à partir de cette date. Troisième objection : il n'y a pas de couverture naturelle. La position en livres est longue et celle en dollars courte (−1 100 000 USD) ; or les deux devises évoluent indépendamment face à l'euro, si bien qu'une baisse de la livre et une hausse du dollar peuvent se cumuler. Politique proposée : mesurer chaque mois la position par devise et par échéance ; couvrir au moins 80 % des positions fermes à moins de six mois ; pour la livre, après la couverture Brentwood, il reste 600 000 GBP à vendre à terme aux échéances d'avril et de juin (au moins 480 000 GBP) ; pour le dollar, acheter à terme ou acheter des calls aux dates de paiement des fournisseurs, sur au moins 880 000 USD ; pour les offres en devises, recourir aux options ou à des clauses d'indexation ; développer les techniques internes (facturation en euros des nouveaux contrats, adossement des dettes en livres aux créances en livres, avance en devises). Gouvernance : instruments limités aux achats d'options, terme et swaps, ventes d'options interdites, plafonds par contrepartie bancaire, compte rendu mensuel au comité de direction. En PCG, chaque couverture est documentée dès l'origine (art. 628-10) ; son résultat est constaté symétriquement à celui de l'élément couvert et dans le même poste (art. 628-11) ; le report ou le déport est étalé en résultat financier (art. 628-13) ; une méthode cohérente est choisie pour les primes d'options (art. 628-12) ; tout instrument non adossé est en position ouverte isolée (art. 628-18).",
+          "key_points": [
+            "Ne pas couvrir la facture revient à spéculer : le terme garantit 1 492 625 €, soit 43 761 € de plus que sans couverture à 0,8800",
+            "Le terme sur l'appel d'offres n'est pas gratuit : perte de 139 220 € si l'offre échoue et que la livre remonte à 0,8100 ; le put limite la perte à la prime (37 647 €) et garantit 2 287 934 € si l'offre est retenue",
+            "Pas de couverture naturelle : positions mesurées devise par devise (GBP longue, USD courte), les deux risques peuvent se cumuler",
+            "Politique : couverture d'au moins 80 % des positions fermes (600 000 GBP restant à vendre à terme, achat à terme ou call pour le dollar), options pour les offres, techniques internes, interdiction de la spéculation et des ventes d'options",
+            "PCG : documentation (art. 628-10), symétrie (art. 628-11), report ou déport en résultat financier (art. 628-13), position ouverte isolée pour les instruments non adossés (art. 628-18)"
+          ],
+          "explanation": "La note doit répondre point par point au directeur général avec les chiffres du dossier, puis proposer une politique opérationnelle : seuils de couverture, instruments autorisés et interdits, traitement des expositions conditionnelles, techniques internes, suivi et comptabilisation. Calculs d'appui : position en livres restant à couvrir = 1 875 000 − 1 275 000 = 600 000 GBP, dont 80 % = 480 000 GBP ; 80 % de la position en dollars = 880 000 USD ; option exercée si l'offre échoue et que la livre cote 0,9000 : 2 000 000 / 0,8600 − 2 000 000 / 0,9000 − 37 647 = 65 712 €. Une recommandation de couverture partielle de l'offre (option sur une partie du montant) est acceptable si elle est justifiée."
+        }
+      ],
+      "explanation": "Méthode : (1) mesurer la position de change devise par devise, commandes fermes comprises et exposition conditionnelle à part : 1 875 000 GBP (longue) et −1 100 000 USD (courte) ; (2) couvrir la créance Brentwood par une vente à terme : cours 0,8542 (déport de la livre), 1 492 625 € garantis ; règlement comptabilisé en PCG avec le déport de 7 375 € en résultat financier et une perte de change sur la créance compensée par le contrat (art. 628-11 et 628-13) ; (3) préférer l'option à la vente à terme pour l'appel d'offres : prime de 37 647 €, minimum garanti de 2 287 934 € si l'offre est retenue ; le terme coûterait 139 220 € si l'offre échoue et que la livre remonte ; option en position ouverte isolée tant que l'offre n'est pas assez probable (art. 628-8 et 628-18) ; (4) mesurer le risque de taux par l'impasse (−10 000 k€, soit −100 k€ par point) et comparer les couvertures : swap à 4,10 % dans tous les cas, cap entre 3,62 % et 4,82 % ; seul le swap respecte le coût maximal de 4,25 % ; prime du cap au bilan puis rapportée au résultat sur la période couverte (art. 628-2 et 628-12) ; (5) formaliser une politique de couverture sans spéculation."
+    },
+    {
+      "id": "ue2-dossier-0006",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE2",
+      "theme": "ingenierie-financiere",
+      "notion": "lbo-montages",
+      "difficulty": 3,
+      "tags": [
+        "sujet type",
+        "LBO",
+        "multiples de transactions",
+        "DCF",
+        "dette senior",
+        "mezzanine",
+        "effet de levier",
+        "intégration fiscale",
+        "capacité de remboursement",
+        "TRI",
+        "prêt à impact",
+        "ESG"
+      ],
+      "source_ref": "CGI art. 145 et 216 I (régime mère-fille), 223 A (intégration fiscale) et 223 B bis (plafonnement des charges financières nettes du groupe) ; C. com. art. L. 225-216 (assistance financière), applicable aux SAS par l'art. L. 227-1 ; méthodes d'évaluation usuelles (multiples, DCF, Gordon-Shapiro) ; relation de l'effet de levier ; règl. (UE) 2019/2088 (SFDR) art. 8 ; Sustainability-Linked Loan Principles (LMA)",
+      "verified": true,
+      "estimated_seconds": 5400,
+      "total_points": 20,
+      "title": "Tessaro : le rachat d'une PME familiale par LBO",
+      "context": "**Tessaro SAS**, fondée en 1987 à Villeurbanne, conçoit, fabrique et installe du mobilier technique de laboratoire (paillasses, sorbonnes, armoires ventilées) pour les hôpitaux, les universités et l'industrie pharmaceutique. Elle emploie 210 salariés et a réalisé en 2026 un chiffre d'affaires de 40 M€. Son fondateur et associé unique, **Paul Tessaro**, 66 ans, souhaite céder la totalité de ses actions ; aucun membre de sa famille ne reprendra l'entreprise.\n\nLe fonds de capital-transmission **Confluence Capital Partenaires** a remis une offre de **47 000 k€ pour 100 % des titres**, acceptée par le cédant sous réserve de l'accord du comité d'investissement du fonds. L'acquisition serait réalisée le 31 décembre 2026 par une société holding créée pour l'occasion, **Tessaro Développement SAS** (« Newco »), détenue à 90 % par le fonds et à 10 % par trois cadres dirigeants de Tessaro conduits par la directrice générale, **Claire Vautrin**. Newco opterait pour l'intégration fiscale avec Tessaro à compter du 1er janvier 2027.\n\nChargé(e) d'affaires chez Confluence, vous préparez le mémorandum destiné au comité d'investissement, qui attend :\n\n1. une évaluation de Tessaro par les multiples et par l'actualisation des flux de trésorerie disponibles, pour apprécier le prix ;\n2. l'analyse de la structure de financement et des effets de levier du montage ;\n3. la vérification de la capacité de Tessaro à servir la dette d'acquisition ;\n4. le TRI prévisionnel de l'investissement du fonds ;\n5. un avis sur le prêt à impact proposé par les banques et sur la démarche ESG du fonds.\n\nHypothèses : taux d'impôt sur les sociétés de 25 % ; montants en milliers d'euros (k€) ; les flux interviennent en fin d'année.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Données historiques et plan d'affaires de Tessaro (k€)",
+          "content": "| Élément | 2026 réel | 2027 | 2028 | 2029 | 2030 | 2031 |\n| --- | ---: | ---: | ---: | ---: | ---: | ---: |\n| Chiffre d'affaires | 40 000 | 42 000 | 44 100 | 46 300 | 48 200 | 49 700 |\n| EBITDA | 6 000 | 6 300 | 6 700 | 7 100 | 7 400 | 7 600 |\n| Dotations aux amortissements | 1 400 | 1 450 | 1 500 | 1 550 | 1 600 | 1 650 |\n| Résultat d'exploitation | 4 600 | 4 850 | 5 200 | 5 550 | 5 800 | 5 950 |\n| Investissements | 1 500 | 1 600 | 1 700 | 1 700 | 1 700 | 1 650 |\n| Variation du BFR d'exploitation | 250 | 300 | 300 | 300 | 250 | 100 |\n\nTessaro n'a aucune dette financière ; sa trésorerie s'élève à **1 000** au 31 décembre 2026, après distribution au cédant de la totalité du résultat 2026. Le résultat financier de Tessaro est négligeable. Le plan, établi par l'équipe dirigeante, prévoit à partir de 2031 des investissements égaux aux dotations aux amortissements et une croissance à long terme de 1,5 % par an."
+        },
+        {
+          "title": "Annexe 2 — Éléments d'évaluation",
+          "content": "**Multiples de valeur d'entreprise / EBITDA 2026** (valeur d'entreprise = valeur des capitaux propres + endettement net) :\n\n| Échantillon | Multiples observés |\n| --- | --- |\n| Acquisitions récentes de 100 % de sociétés comparables (2024-2026) | 6,6× ; 7,2× ; 7,5× ; 8,1× ; 10,4× |\n| Sociétés cotées comparables | 5,8× ; 6,4× ; 6,9× ; 7,3× ; 8,8× |\n\nLe multiple de 10,4× correspond au rachat d'un concurrent par un groupe industriel qui en attendait d'importantes synergies.\n\n**Actualisation** : coût moyen pondéré du capital retenu par l'évaluateur, **9,5 %** ; taux de croissance à l'infini des flux au-delà de 2031, **1,5 %** ; valeur terminale calculée par la formule de Gordon-Shapiro à fin 2031."
+        },
+        {
+          "title": "Annexe 3 — Structure de financement de l'acquisition (k€)",
+          "content": "| Emplois | Montant | Ressources | Montant |\n| --- | ---: | --- | ---: |\n| Acquisition des titres Tessaro | 47 000 | Capitaux propres de Newco (fonds 21 600 ; dirigeants 2 400) | 24 000 |\n| Frais d'acquisition (conseils, audits) | 1 000 | Dette senior, tranche A | 10 500 |\n| | | Dette senior, tranche B | 7 500 |\n| | | Dette mezzanine | 6 000 |\n| **Total** | **48 000** | **Total** | **48 000** |\n\n- **Dette senior** : taux fixe de 5 % après couverture ; intérêts payés chaque 31 décembre sur le capital restant dû au 1er janvier. Tranche A amortissable par septièmes (1 500 par an) le 31 décembre de chaque année de 2028 à 2034 ; tranche B remboursable in fine le 31 décembre 2034. Garantie : nantissement des titres Tessaro détenus par Newco.\n- **Dette mezzanine** : in fine, remboursable à la sortie du fonds et au plus tard en 2035 ; intérêts de 9 % payés chaque 31 décembre ; assortie de BSA exerçables à la sortie, pour un prix d'exercice négligeable, donnant droit à **5 % du capital de Newco** après exercice.\n- **Remontée des flux** : en 2027, Tessaro distribuera à Newco 1 500 prélevés sur ses réserves antérieures. À partir de 2028, elle versera chaque année un dividende égal à son flux de trésorerie disponible de l'exercice précédent, dans la limite de son résultat net de cet exercice."
+        },
+        {
+          "title": "Annexe 4 — Fiscalité du montage et hypothèses de sortie",
+          "content": "**Fiscalité** :\n- Newco détient 100 % de Tessaro et opte pour l'intégration fiscale à compter de 2027. Tessaro verse à Newco l'impôt qu'elle aurait payé en l'absence d'intégration ; Newco paie l'impôt du groupe et conserve l'économie d'impôt due à ses propres charges.\n- Les charges financières nettes du groupe restent inférieures au plafond de déductibilité.\n- Les dividendes reçus de Tessaro relèvent du régime mère-fille ; la quote-part de frais et charges, imposée au taux de 25 %, est de **5 %** du dividende en principe, ramenée à **1 %** pour les dividendes versés par une société membre du groupe intégré depuis plus d'un exercice (CGI art. 216 I).\n- Newco n'a ni autres produits ni autres charges (les frais d'acquisition sont incorporés au coût des titres).\n\n**Sortie envisagée le 31 décembre 2031** par cession de 100 % du capital de Newco :\n- valeur d'entreprise de sortie : **7,5 × EBITDA 2031** ;\n- endettement net consolidé prévu au 31 décembre 2031 : **9 600** (dette senior restante 12 000 + mezzanine 6 000 − trésorerie du groupe 8 400) ; la mezzanine est remboursée et les BSA exercés lors de la cession ;\n- aucun dividende n'est versé aux associés de Newco avant la sortie.\n\n**TRI minimal exigé par le comité d'investissement : 15 %.**"
+        },
+        {
+          "title": "Annexe 5 — Proposition de prêt à impact et démarche ESG du fonds",
+          "content": "*Extrait de la lettre des banques, rédigé pour le cas.*\n\n« La dette senior pourra prendre la forme d'un **prêt à impact**. Chaque année, la marge sera diminuée de 0,05 point par objectif atteint et augmentée de 0,05 point par objectif manqué, sur la base de trois indicateurs vérifiés par un organisme tiers indépendant : (1) réduction de 25 % d'ici 2030 de la consommation d'énergie par paillasse produite, par rapport à 2026 ; (2) taux de fréquence des accidents du travail inférieur à 10 ; (3) au moins 90 % de bois et de panneaux certifiés issus de forêts gérées durablement. Les fonds restent destinés au financement de l'acquisition. » Coût annuel de la vérification : 15.\n\n**Démarche ESG de Confluence** : le fonds investisseur est classé « article 8 » au sens du règlement (UE) 2019/2088 (SFDR) ; il réalise une revue ESG préalable de chaque cible et indexe 10 % de la rémunération variable des dirigeants de ses participations sur des objectifs ESG. Tessaro n'a jamais été notée par une agence de notation extra-financière ; une agence a publié une note non sollicitée de son principal concurrent coté."
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1",
+          "kind": "numeric",
+          "prompt": "À partir des annexes 1 et 2, calculez la valeur des capitaux propres de Tessaro au 31 décembre 2026 par le multiple médian des acquisitions récentes, en k€.",
+          "points": 1.5,
+          "expected_value": 46000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "Multiples classés : 6,6 ; 7,2 ; **7,5** ; 8,1 ; 10,4 : médiane = 7,5×. Valeur d'entreprise = 7,5 × 6 000 = 45 000 ; Tessaro n'ayant pas de dette financière, son endettement net est négatif (trésorerie nette de 1 000), qui s'ajoute à la valeur d'entreprise : capitaux propres = 45 000 + 1 000 = **46 000 k€**. La médiane neutralise le multiple de 10,4×, gonflé par des synergies industrielles qu'un fonds ne réalisera pas. Erreurs : retenir la moyenne (7,96×, soit 48 760), le multiple boursier médian (6,9×, soit 42 400), oublier la trésorerie (45 000)."
+        },
+        {
+          "id": "q2",
+          "kind": "mcq",
+          "prompt": "À partir des annexes 1 et 2, quelle affirmation relative à l'évaluation de Tessaro par les multiples est exacte ?",
+          "points": 1.5,
+          "options": [
+            "La moyenne des multiples d'acquisitions (7,96×) doit être préférée à la médiane, car elle utilise toutes les observations de l'échantillon.",
+            "Les multiples d'acquisitions, plus élevés que les multiples boursiers, intègrent une prime de contrôle et une partie des synergies : ils constituent la référence adaptée au rachat de 100 % de Tessaro.",
+            "Le multiple VE / EBITDA appliqué à l'EBITDA de Tessaro donne directement la valeur de ses titres, sans retraitement de la trésorerie.",
+            "Les multiples boursiers s'appliquent à Tessaro sans décote, puisque les cours de bourse reflètent la valeur de marché des comparables."
+          ],
+          "answer": [
+            1
+          ],
+          "multiple": false,
+          "option_explanations": [
+            "Inexact : la moyenne est tirée vers le haut par le 10,4×, lié à des synergies industrielles ; la médiane (7,5×) neutralise cette valeur extrême.",
+            "Exact : les prix de prise de contrôle incluent prime de contrôle et synergies ; référence pertinente pour l'achat de 100 % des titres.",
+            "Inexact : un multiple de valeur d'entreprise donne la VE ; il faut ensuite retrancher l'endettement net, ici ajouter la trésorerie de 1 000.",
+            "Inexact : les cours reflètent une participation minoritaire et liquide ; une société non cotée supporte en principe une décote d'illiquidité."
+          ],
+          "explanation": "L'option 2 est exacte : les multiples d'acquisitions sont observés lors de prises de contrôle et intègrent une prime de contrôle et une partie des synergies attendues ; pour le rachat de 100 % des titres, c'est la référence adaptée, la médiane écartant l'effet du rachat par un industriel (10,4×). L'option 1 est fausse : la moyenne (7,96×) est faussée par la valeur extrême. L'option 3 est fausse : appliqué à l'EBITDA, le multiple donne la valeur d'entreprise ; on passe aux capitaux propres en retranchant l'endettement net (ici en ajoutant 1 000 de trésorerie). L'option 4 est fausse : les multiples boursiers donnent une valeur minoritaire de titres liquides ; pour une société non cotée, on applique en principe une décote d'illiquidité, sans prime de contrôle."
+        },
+        {
+          "id": "q3",
+          "kind": "numeric",
+          "prompt": "À partir des annexes 1 et 2, calculez les flux de trésorerie disponibles de Tessaro de 2027 à 2031, puis la valeur de ses capitaux propres au 31 décembre 2026 par l'actualisation de ces flux au coût moyen pondéré du capital, valeur terminale comprise, en k€.",
+          "points": 2.5,
+          "expected_value": 50287,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 300
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "Flux de trésorerie disponible = résultat d'exploitation × (1 − 25 %) + dotations − investissements − variation du BFR : 2027 = 3 637,5 + 1 450 − 1 600 − 300 = 3 187,5 ; 2028 = 3 900 + 1 500 − 1 700 − 300 = 3 400 ; 2029 = 4 162,5 + 1 550 − 1 700 − 300 = 3 712,5 ; 2030 = 4 350 + 1 600 − 1 700 − 250 = 4 000 ; 2031 = 4 462,5 + 1 650 − 1 650 − 100 = 4 362,5. Flux actualisés à 9,5 % : 2 910,96 + 2 835,64 + 2 827,64 + 2 782,30 + 2 771,18 = 14 127,7. Valeur terminale à fin 2031 = 4 362,5 × 1,015 / (0,095 − 0,015) = 55 349,2, actualisée sur 5 ans : 55 349,2 / 1,095⁵ = 35 159,4. Valeur d'entreprise = 49 287 ; capitaux propres = 49 287 + 1 000 = **50 287 k€**. La valeur terminale représente 71 % de la valeur d'entreprise. Erreurs : ne pas actualiser la valeur terminale (70 477), l'actualiser sur 6 ans (47 237), oublier la trésorerie (49 287), calculer la valeur terminale sans le facteur (1 + g) (49 767)."
+        },
+        {
+          "id": "q4",
+          "kind": "open",
+          "prompt": "À l'aide de vos résultats (questions 1 à 3) et des annexes 1 à 3, appréciez le prix de 47 000 k€ offert par Confluence : situez-le dans la fourchette de valeurs obtenues et commentez la fiabilité de chaque méthode.",
+          "points": 2,
+          "model_answer": "Le prix de 47 000 k€ correspond à une valeur d'entreprise de 46 000 k€, soit 7,67 fois l'EBITDA 2026. Il se situe dans le haut de la fourchette des multiples (42 400 k€ par le multiple boursier médian, valeur minoritaire avant décote d'illiquidité ; 46 000 k€ par le multiple médian d'acquisitions) et en dessous de la valeur DCF (50 287 k€). La référence la plus pertinente pour un rachat à 100 % est le multiple d'acquisitions, qui intègre une prime de contrôle : le fonds paie un peu plus que la médiane (7,67× contre 7,5×), sans pouvoir invoquer de synergies industrielles. Le DCF est plus favorable au cédant, mais fragile : il repose sur un plan établi par l'équipe dirigeante, qui prévoit une hausse de l'EBITDA de 27 % en cinq ans et une marge qui passe de 15 % à 15,3 %, et la valeur terminale représente 71 % de la valeur d'entreprise. Un CMPC de 10 % au lieu de 9,5 % ramène la valeur à 47 284 k€, une croissance à l'infini de 1 % à 48 056 k€ : le prix offert reste alors couvert, mais sans marge de sécurité. En conclusion, le prix est défendable sur le plan de la valeur intrinsèque, mais il ne laisse au fonds qu'une faible décote ; sa validation dépend de la rentabilité de l'investissement (TRI) et de la soutenabilité de la dette.",
+          "key_points": [
+            "Prix de 47 000 k€ = valeur d'entreprise de 46 000 k€, soit 7,67 × EBITDA 2026",
+            "Fourchette : 42 400 (multiples boursiers, valeur minoritaire) ; 46 000 (multiples d'acquisitions, référence pour un rachat à 100 %) ; 50 287 (DCF)",
+            "Le DCF dépend d'un plan établi par les dirigeants et de la valeur terminale (71 % de la VE) : sensibilité au CMPC et à g",
+            "Prix défendable mais sans décote significative : la décision dépend du TRI et de la capacité de remboursement"
+          ],
+          "explanation": "On attend une mise en fourchette argumentée (nature de chaque méthode, valeur minoritaire ou de contrôle, fragilité du plan et de la valeur terminale) et une conclusion prudente. Calculs d'appui : 46 000 / 6 000 = 7,67× ; marge d'EBITDA 2031 = 7 600 / 49 700 = 15,3 % ; DCF avec CMPC 10 % et g 1,5 % = 47 284 k€ ; avec CMPC 9,5 % et g 1 % = 48 056 k€."
+        },
+        {
+          "id": "q5",
+          "kind": "numeric",
+          "prompt": "À partir des annexes 1 et 3, calculez la rentabilité économique après impôt de 2027 (résultat d'exploitation 2027 de Tessaro après impôt, rapporté aux 48 000 k€ de capitaux investis dans le montage), puis, par la relation de l'effet de levier, la rentabilité des 24 000 k€ de capitaux propres investis en 2027, en % (deux décimales). Le coût de la dette est calculé après impôt à partir des intérêts 2027 de la dette senior et de la mezzanine ; on néglige la quote-part de frais et charges et la trésorerie de Tessaro.",
+          "points": 1.5,
+          "expected_value": 10.66,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.05
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Rentabilité économique = 4 850 × 0,75 / 48 000 = 3 637,5 / 48 000 = 7,58 %. Intérêts 2027 = 18 000 × 5 % + 6 000 × 9 % = 900 + 540 = 1 440 ; coût de la dette après impôt = 1 440 × 0,75 / 24 000 = 4,50 %. Bras de levier = dettes / capitaux propres = 24 000 / 24 000 = 1. Rentabilité des capitaux propres = 7,58 % + (7,58 % − 4,50 %) × 1 = **10,66 %**. Vérification : résultat net = 3 637,5 − 1 440 × 0,75 = 2 557,5, soit 2 557,5 / 24 000 = 10,66 %. L'effet de levier est positif car la rentabilité économique dépasse le coût de la dette après impôt. Erreurs : coût de la dette avant impôt (9,16 %), bras de levier D / (D + CP) (9,12 %)."
+        },
+        {
+          "id": "q6",
+          "kind": "mcq",
+          "prompt": "À partir des annexes 3 et 4, quelle affirmation relative aux effets de levier et à la sécurité juridique du montage est exacte ?",
+          "points": 1.5,
+          "options": [
+            "L'économie d'impôt obtenue en imputant les intérêts de Newco sur le bénéfice de Tessaro grâce à l'intégration fiscale constitue le levier juridique du montage.",
+            "Tessaro étant une SAS, elle peut garantir la dette d'acquisition de Newco par un nantissement de son fonds de commerce, l'interdiction de l'assistance financière ne visant que les sociétés anonymes.",
+            "L'effet de levier financier est positif dès lors que le résultat net consolidé du montage est positif, quel que soit le coût de la dette.",
+            "Par l'intermédiaire de Newco, le fonds contrôle 100 % de Tessaro en n'apportant que 21 600 k€, soit moins de la moitié du prix des titres : c'est le levier juridique."
+          ],
+          "answer": [
+            3
+          ],
+          "multiple": false,
+          "option_explanations": [
+            "Inexact : l'imputation des frais financiers de la holding sur le bénéfice de la cible relève du levier fiscal, permis par l'intégration fiscale.",
+            "Inexact : l'article L. 225-216 s'applique aux SAS (art. L. 227-1) ; la cible ne peut garantir l'achat de ses propres actions.",
+            "Inexact : le levier n'est positif que si la rentabilité économique dépasse le coût de la dette après impôt ; sinon l'endettement réduit la rentabilité.",
+            "Exact : majoritaire dans Newco (90 %), qui détient 100 % de Tessaro, le fonds contrôle la cible avec 21 600 k€."
+          ],
+          "explanation": "L'option 4 est exacte : le levier juridique consiste à contrôler une société avec un apport limité grâce à une holding endettée ; le fonds, majoritaire dans Newco (90 %), contrôle 100 % de Tessaro avec 21 600 k€, soit 46 % du prix des titres. L'option 1 est fausse : l'imputation des charges financières de Newco sur les bénéfices de Tessaro, grâce à l'intégration fiscale (détention d'au moins 95 %), est le levier fiscal. L'option 2 est fausse : l'interdiction d'avancer des fonds, de prêter ou de consentir une sûreté en vue de l'achat de ses propres actions (C. com. art. L. 225-216) s'applique à la SAS en vertu de l'article L. 227-1 ; la garantie bancaire porte sur les titres détenus par Newco. L'option 3 est fausse : le signe de l'effet de levier dépend de l'écart entre rentabilité économique et coût de la dette après impôt (ici 7,58 % contre 4,50 %), pas du signe du résultat."
+        },
+        {
+          "id": "q7",
+          "kind": "numeric",
+          "prompt": "À partir des annexes 1, 3 et 4, calculez la capacité de Newco à rembourser sa dette en 2028 : dividende reçu de Tessaro + économie d'impôt due à l'intégration fiscale − impôt sur la quote-part de frais et charges − intérêts de la dette senior et de la mezzanine, en k€ (arrondi à l'unité). Comparez-la à l'échéance de la tranche A.",
+          "points": 2,
+          "expected_value": 2100,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "Dividende 2028 = flux de trésorerie disponible 2027 (3 187,5) dans la limite du résultat net 2027 de Tessaro (4 850 × 0,75 = 3 637,5) : 3 187,5. Intérêts 2028 (aucun remboursement en 2027) = 18 000 × 5 % + 6 000 × 9 % = 1 440 ; économie d'impôt = 1 440 × 25 % = 360 ; Tessaro, membre du groupe depuis le 1er janvier 2027, verse en 2028 un dividende au cours de son deuxième exercice d'appartenance : la quote-part est donc de 1 % (CGI art. 216 I, 1°), d'où un impôt de 3 187,5 × 1 % × 25 % = 7,97. Capacité = 3 187,5 + 360 − 7,97 − 1 440 = **2 100 k€** (2 099,53), pour une échéance de 1 500 : couverture de 1,40 fois, excédent de 600. Si l'EBITDA 2027 était inférieur de 10 % au plan (−630), le flux disponible baisserait de 472,5 et la capacité tomberait à 1 628 : la marge de sécurité est mince. La quote-part de 5 % ne vise ici que le dividende de 2027, versé pendant le premier exercice d'appartenance. Erreurs : retenir le résultat net comme dividende (2 548), oublier l'économie d'impôt (1 740), oublier l'impôt sur la quote-part (2 108), appliquer la quote-part de 5 % (2 068)."
+        },
+        {
+          "id": "q8",
+          "kind": "true_false",
+          "prompt": "À partir de l'annexe 4 : si le résultat fiscal corrigé (EBITDA fiscal) du groupe intégré tombait à 4 000 k€, une partie des 1 440 k€ de charges financières nettes du groupe cesserait d'être déductible, le plafond étant alors de 30 % × 4 000 = 1 200 k€.",
+          "points": 1,
+          "answer": false,
+          "explanation": "Faux. Les charges financières nettes du groupe intégré sont déductibles dans la limite du plus élevé de deux montants : 3 M€ ou 30 % du résultat du groupe corrigé (CGI art. 223 B bis, dispositif de l'art. 212 bis transposé au groupe). Avec un résultat corrigé de 4 000 k€, le plafond est de max(3 000 ; 1 200) = 3 000 k€ : les 1 440 k€ restent intégralement déductibles. Ce plafond ne devient contraignant pour une PME que lorsque ses charges financières nettes dépassent 3 M€."
+        },
+        {
+          "id": "q9",
+          "kind": "numeric",
+          "prompt": "À partir des annexes 1, 3 et 4, calculez le TRI prévisionnel de l'investissement du fonds entre le 31 décembre 2026 et la sortie du 31 décembre 2031, en tenant compte de l'exercice des BSA attachés à la mezzanine, en % (deux décimales).",
+          "points": 2,
+          "expected_value": 13.41,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.1
+          },
+          "unit": "%",
+          "decimals": 2,
+          "explanation": "Valeur d'entreprise de sortie = 7,5 × 7 600 = 57 000 ; valeur des capitaux propres de Newco = 57 000 − 9 600 = 47 400. Après exercice des BSA, le fonds détient 90 % × 95 % = 85,5 % du capital : 47 400 × 0,855 = 40 527. Multiple = 40 527 / 21 600 = 1,876 ; TRI = 1,876^(1/5) − 1 = **13,41 %**, inférieur au minimum de 15 % exigé par le comité. Erreurs : ignorer la dilution des BSA (14,58 %), oublier l'endettement net (17,67 %), diviser la plus-value par 5 au lieu de prendre la racine cinquième (17,53 %)."
+        },
+        {
+          "id": "q10",
+          "kind": "mcq",
+          "prompt": "À partir de l'annexe 5, quelle affirmation relative à la finance durable est exacte ?",
+          "points": 1.5,
+          "options": [
+            "Le prêt proposé est un prêt vert : les fonds doivent être affectés à des projets environnementaux éligibles à la taxonomie européenne, faute de quoi la marge est majorée.",
+            "Le classement du fonds en « article 8 » SFDR atteste que ses participations sont alignées sur la taxonomie européenne et vaut label ISR.",
+            "Le prêt à impact lie la marge à des objectifs de performance ESG de Tessaro, fixés à l'avance et vérifiés par un tiers indépendant, sans affectation des fonds : il peut donc financer l'acquisition.",
+            "La note non sollicitée du concurrent coté a été demandée et payée par celui-ci ; elle mesure son impact environnemental et peut être transposée à Tessaro."
+          ],
+          "answer": [
+            2
+          ],
+          "multiple": false,
+          "option_explanations": [
+            "Inexact : les fonds financent l'acquisition, sans affectation à des projets ; seule la marge dépend d'objectifs : c'est un prêt indexé sur la durabilité.",
+            "Inexact : l'article 8 SFDR classe un produit qui promeut des caractéristiques ESG ; ce n'est ni un label ni une preuve d'alignement taxonomique.",
+            "Exact : sans fléchage des fonds, la marge varie selon des indicateurs ESG vérifiés ; un tel prêt peut financer une acquisition.",
+            "Inexact : une note non sollicitée n'est pas demandée par la société notée ; celle d'un concurrent ne se transpose pas à Tessaro."
+          ],
+          "explanation": "L'option 3 est exacte : un prêt à impact (ou indexé sur la durabilité) ne fléche pas les fonds ; il fait varier la marge selon l'atteinte d'objectifs de performance mesurés par des indicateurs fixés à l'avance et vérifiés par un tiers ; il peut donc financer une acquisition. L'option 1 est fausse : un prêt vert suppose l'affectation des fonds à des projets environnementaux, ce qui n'est pas le cas ici. L'option 2 est fausse : l'article 8 SFDR est une catégorie de transparence (produit promouvant des caractéristiques environnementales ou sociales), pas un label ni une garantie d'alignement sur la taxonomie. L'option 4 est fausse : une notation non sollicitée est établie sans demande de l'entreprise, à partir de données publiques ; une note ESG mesure surtout la gestion des risques ESG, et celle d'un concurrent ne vaut pas pour Tessaro."
+        },
+        {
+          "id": "q11",
+          "kind": "open",
+          "prompt": "À l'aide de l'ensemble des annexes et de vos résultats (questions 4 à 10), rédigez la recommandation au comité d'investissement : faut-il réaliser l'opération au prix proposé et avec cette structure de financement ? Appréciez les risques du montage, proposez les ajustements nécessaires et donnez un avis chiffré sur le prêt à impact.",
+          "points": 3,
+          "model_answer": "Le montage est raisonnablement structuré : la dette d'acquisition (24 000 k€) représente 4,0 fois l'EBITDA 2026, dont 3,0 fois en dette senior, et les capitaux propres financent 50 % des emplois. L'effet de levier financier est positif (rentabilité économique de 7,58 % contre un coût de la dette après impôt de 4,50 %), ce qui porte la rentabilité des capitaux propres à 10,66 % en 2027. Le levier fiscal est assuré par l'intégration fiscale, les charges financières restant très en deçà du plafond de 3 M€, et le levier juridique permet au fonds de contrôler Tessaro avec 21 600 k€. Les risques sont réels : la capacité de remboursement de 2028 (2 100 k€) ne couvre l'échéance de 1 500 k€ que 1,40 fois et tomberait à 1 628 k€ si l'EBITDA était inférieur de 10 % au plan ; le plan, établi par les dirigeants, prévoit une croissance de 27 % de l'EBITDA en cinq ans ; la clientèle hospitalière et universitaire dépend des budgets publics ; le départ du fondateur doit être compensé par l'équipe de direction, dont l'association au capital (10 %) est un atout. Surtout, le TRI prévisionnel du fonds (13,41 %) est inférieur au minimum de 15 %, parce que le prix (7,67 fois l'EBITDA) dépasse le multiple de sortie retenu (7,5 fois). Je recommande de ne pas accepter l'opération en l'état et de renégocier : un prix d'environ 45 400 k€, financé par une baisse de l'apport en capitaux propres, ramènerait le TRI à 15 % ; à défaut, un complément de prix conditionné à l'atteinte de l'EBITDA 2028 ou un crédit-vendeur subordonné consenti par Paul Tessaro réduirait la mise initiale du fonds. Il ne faut pas augmenter la dette senior, la capacité de remboursement étant déjà juste. La garantie bancaire doit rester limitée au nantissement des titres détenus par Newco : Tessaro ne peut garantir la dette de son acquéreur (C. com. art. L. 225-216 et L. 227-1). Prêt à impact : le gain maximal est de 0,15 point sur 18 000 k€, soit 27 k€ par an, pour 15 k€ de vérification (gain net de 12 k€) ; si les trois objectifs sont manqués, le surcoût atteint 42 k€ par an. L'enjeu financier est marginal, mais les indicateurs sont matériels pour Tessaro (énergie, sécurité au travail, bois certifié), cohérents avec le classement « article 8 » du fonds et avec l'indexation de la rémunération des dirigeants : je recommande de l'accepter si les objectifs sont atteignables et bien définis.",
+          "key_points": [
+            "Structure : dette de 4,0 fois l'EBITDA (senior 3,0 fois), 50 % de capitaux propres, effet de levier positif (10,66 % contre 7,58 %), leviers fiscal et juridique",
+            "Risques : couverture de l'échéance 2028 de 1,40 fois seulement (1 628 k€ si l'EBITDA baisse de 10 %), plan des dirigeants ambitieux, dépendance aux budgets publics, transition après le fondateur",
+            "TRI de 13,41 % inférieur aux 15 % exigés : renégocier le prix (environ 45 400 k€), complément de prix ou crédit-vendeur, sans alourdir la dette senior",
+            "Sécurité juridique : pas de garantie de Tessaro pour la dette d'acquisition (L. 225-216), nantissement des seuls titres détenus par Newco",
+            "Prêt à impact : gain net maximal de 12 k€ par an (27 − 15), surcoût de 42 k€ dans le pire cas ; intérêt surtout stratégique, à accepter si les objectifs sont atteignables"
+          ],
+          "explanation": "La copie doit conclure clairement (opération à renégocier) en s'appuyant sur les résultats chiffrés, distinguer les trois leviers, identifier les risques propres au LBO (capacité de remboursement, plan d'affaires, sortie) et proposer des ajustements cohérents avec la contrainte de dette. Calculs d'appui : 24 000 / 6 000 = 4,0 ; 18 000 / 6 000 = 3,0 ; prix ramenant le TRI à 15 % : mise maximale du fonds = 40 527 / 1,15⁵ = 20 149, soit une baisse de 1 451 de l'apport du fonds et de 1 612 du total des capitaux propres (le fonds en apporte 90 %), d'où un prix d'environ 47 000 − 1 612 = 45 388 k€ ; prêt à impact : 18 000 × 3 × 0,05 % = 27 k€."
+        }
+      ],
+      "explanation": "Méthode : (1) évaluer Tessaro par le multiple médian d'acquisitions (46 000 k€ après ajout de la trésorerie) et par le DCF (flux de 3 187,5 à 4 362,5, valeur terminale de Gordon-Shapiro, 50 287 k€), puis situer le prix de 47 000 k€ (7,67 × EBITDA) dans la fourchette ; (2) analyser la structure (dette de 4,0 × EBITDA, 50 % de capitaux propres) et les trois leviers : financier (10,66 % de rentabilité des capitaux propres contre 7,58 % de rentabilité économique), juridique (contrôle de 100 % de Tessaro avec 21 600 k€, sans garantie de la cible : C. com. art. L. 225-216 et L. 227-1), fiscal (intégration fiscale, plafond de 3 M€ non atteint : CGI art. 223 B bis) ; (3) tester la capacité de remboursement 2028 : dividende limité au flux disponible, plus l'économie d'impôt, moins l'impôt sur la quote-part de 1 % (Tessaro est membre du groupe depuis plus d'un exercice) et les intérêts, soit 2 100 k€ pour une échéance de 1 500 k€ ; (4) calculer le TRI du fonds après dilution des BSA (13,41 %, sous le seuil de 15 %) et en déduire la nécessité de renégocier ; (5) distinguer le prêt à impact (marge indexée, fonds non fléchés) du prêt vert et chiffrer son intérêt (27 k€ de gain maximal pour 15 k€ de vérification)."
+    }
+  ]
+}

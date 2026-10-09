@@ -533,6 +533,12 @@
             "L’écart entre la date d’inventaire et la clôture n’excède pas trois mois, sans autre condition"
           ],
           "answer": [1],
+          "option_explanations": [
+            "Inexact : aucun texte n'impose un inventaire à la clôture ; la NEP 501 demande seulement d'assister à l'inventaire lorsque les stocks sont significatifs.",
+            "Exact : l'auditeur couvre la période jusqu'à la clôture par des procédures complémentaires (NEP 330 § 26), ce qui suppose un contrôle interne fiable sur les mouvements.",
+            "Inexact : une déclaration de la direction ne suffit pas ; l'auditeur doit obtenir des éléments sur les mouvements entre l'inventaire et la clôture.",
+            "Inexact : aucun délai forfaitaire ne dispense de contrôler les mouvements intervenus entre la date d'inventaire et la clôture."
+          ],
           "points": 2,
           "explanation": "Aucun texte n’impose un inventaire à la date de clôture (C. com. art. L123-12 : inventaire au moins une fois tous les douze mois) ; la NEP 501 demande seulement d’assister à la prise d’inventaire lorsque les stocks sont significatifs. Quand l’inventaire a lieu avant la clôture, l’auditeur met en œuvre des procédures complémentaires couvrant la période jusqu’à la clôture (NEP 330 § 26) pour vérifier que les mouvements entre les deux dates sont correctement enregistrés, ce qui suppose un contrôle interne fiable sur ces mouvements. Il n’y a pas d’interdiction ; une déclaration de la direction ne suffit pas ; aucun délai forfaitaire ne dispense de contrôler les mouvements."
         },
@@ -726,6 +732,12 @@
             "Les inscrire en immobilisations en cours jusqu’à leur réception"
           ],
           "answer": [1],
+          "option_explanations": [
+            "Inexact : Epsilon est propriétaire depuis la remise au transporteur le 27/12/N ; annuler l'achat serait contraire au transfert de propriété.",
+            "Exact : propriétaire depuis le 27/12/N, Epsilon doit inclure les bureaux dans son stock final, en cohérence avec l'achat déjà comptabilisé en N.",
+            "Inexact : cette option repose sur un fait faux : l'achat est comptabilisé en N, et seul le stock final omet les bureaux.",
+            "Inexact : les bureaux sont des marchandises destinées à la revente, pas des immobilisations."
+          ],
           "points": 2,
           "explanation": "Epsilon est propriétaire des bureaux depuis le 27/12/N : ils doivent figurer dans son stock au 31/12/N, en cohérence avec l’achat déjà comptabilisé en N. Annuler l’achat serait contraire au transfert de propriété ; l’achat est bien en N, l’option 3 repose donc sur un fait faux ; il s’agit de marchandises destinées à la revente, pas d’immobilisations."
         },

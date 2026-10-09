@@ -24,7 +24,7 @@ import { useKeyboard } from '@/hooks/useKeyboard'
 import { cn } from '@/lib/utils'
 
 import { Explanation, Verdict } from './Feedback'
-import { emptyLine, toJournalLines, type DraftLine } from './journalDraft'
+import { emptyLine, fromJournalLines, toJournalLines, type DraftLine } from './journalDraft'
 
 export interface PartProps<P> {
   part: P
@@ -38,6 +38,8 @@ export interface PartProps<P> {
   deferred?: boolean
   /** Examen : réponse déjà enregistrée, saisie verrouillée et boutons de validation masqués. */
   locked?: boolean
+  /** Examen : réponse déjà donnée, affichée sans correction (retour sur un exercice). */
+  given?: PartResponse
 }
 
 export function PartView(props: PartProps<Part>) {
@@ -60,8 +62,8 @@ export function PartView(props: PartProps<Part>) {
   )
 }
 
-function ChoiceInput({ part, response, result, active, onSubmit, locked }: PartProps<ChoicePart>) {
-  const [selected, setSelected] = useState<number[]>([])
+function ChoiceInput({ part, response, result, active, onSubmit, locked, given }: PartProps<ChoicePart>) {
+  const [selected, setSelected] = useState<number[]>(() => (given?.kind === 'choice' ? given.selected : []))
   const done = result !== undefined
   const shown = done ? (response as ChoiceResponse).selected : selected
   const toggle = (i: number) => {
@@ -125,9 +127,9 @@ function ChoiceInput({ part, response, result, active, onSubmit, locked }: PartP
   )
 }
 
-function BooleanInput({ part, response, result, active, onSubmit, locked }: PartProps<BooleanPart>) {
+function BooleanInput({ part, response, result, active, onSubmit, locked, given: previous }: PartProps<BooleanPart>) {
   // Choix gardé pour l'afficher (sans correction) quand la réponse est verrouillée en examen.
-  const [chosen, setChosen] = useState<boolean | null>(null)
+  const [chosen, setChosen] = useState<boolean | null>(() => (previous?.kind === 'boolean' ? previous.value : null))
   const done = result !== undefined
   const given = done && response?.kind === 'boolean' ? response.value : undefined
   const choose = (value: boolean) => {
@@ -162,8 +164,8 @@ function BooleanInput({ part, response, result, active, onSubmit, locked }: Part
   )
 }
 
-function NumericInput({ part, response, result, onSubmit, locked }: PartProps<NumericPart>) {
-  const [raw, setRaw] = useState('')
+function NumericInput({ part, response, result, onSubmit, locked, given }: PartProps<NumericPart>) {
+  const [raw, setRaw] = useState(() => (given?.kind === 'numeric' ? given.raw : ''))
   const done = result !== undefined
   const value = done && response?.kind === 'numeric' ? response.raw : raw
   const parsed = parseNumberInput(raw)
@@ -224,8 +226,10 @@ function amount(sides?: { debit: number; credit: number }): string {
   return sides.debit > 0 ? `D ${formatNumber(sides.debit, 2)}` : `C ${formatNumber(sides.credit, 2)}`
 }
 
-function JournalInput({ part, response, result, onSubmit, locked }: PartProps<JournalPart>) {
-  const [draft, setDraft] = useState<DraftLine[]>([emptyLine(), emptyLine()])
+function JournalInput({ part, response, result, onSubmit, locked, given }: PartProps<JournalPart>) {
+  const [draft, setDraft] = useState<DraftLine[]>(() =>
+    given?.kind === 'journal' ? fromJournalLines(given.lines) : [emptyLine(), emptyLine()],
+  )
   const done = result !== undefined
   const lines = toJournalLines(draft)
   const totalDebit = lines.reduce((s, l) => s + l.debit, 0)
@@ -372,8 +376,8 @@ function JournalInput({ part, response, result, onSubmit, locked }: PartProps<Jo
   )
 }
 
-function OpenInput({ part, response, result, onSubmit, deferred, locked }: PartProps<OpenPart>) {
-  const [text, setText] = useState('')
+function OpenInput({ part, response, result, onSubmit, deferred, locked, given }: PartProps<OpenPart>) {
+  const [text, setText] = useState(() => (given?.kind === 'open' ? given.text : ''))
   const [revealed, setRevealed] = useState(false)
   const [checked, setChecked] = useState<boolean[]>(() => part.key_points.map(() => false))
   const done = result !== undefined

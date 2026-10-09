@@ -160,6 +160,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : les parties étant séparables, chacune est comptabilisée séparément (IAS 40 §10) ; la part majoritaire ne compte que si elles ne le sont pas.",
+            "Inexact : les étages pouvant être vendus séparément, la partie louée (70 %) est un immeuble de placement distinct (IAS 40 §10).",
+            "Exact : les parties pouvant être vendues ou louées séparément sont comptabilisées séparément (IAS 40 §10) : 70 % en placement, 30 % en IAS 16.",
+            "Inexact : rien n'indique une intention de vente dans le cours normal de l'activité (IAS 2) ; la possibilité de vendre par lots ne suffit pas."
+          ],
           "explanation": "Lorsque les parties d'un bien peuvent être vendues ou louées séparément, chacune est comptabilisée séparément (IAS 40 §10) : 70 % en immeuble de placement, 30 % en IAS 16. Le critère de la part non significative ne s'applique que si les parties ne sont pas séparables. Rien n'indique une intention de vente dans le cours normal de l'activité (IAS 2)."
         },
         {

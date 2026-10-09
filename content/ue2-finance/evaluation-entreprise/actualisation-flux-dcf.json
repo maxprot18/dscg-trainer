@@ -249,6 +249,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : en présence d'intérêts, le résultat d'exploitation est supérieur au résultat avant impôt, non plus faible.",
+            "Exact : le CMPC retient le coût de la dette après impôt k_D (1 − t) ; déduire les intérêts compterait deux fois l'économie d'impôt.",
+            "Inexact : les intérêts sont en principe fiscalement déductibles.",
+            "Inexact : l'argument ne justifie rien ; l'impôt des flux est un impôt normatif prévisionnel."
+          ],
           "explanation": "Le CMPC intègre le coût de la dette après impôt k_D (1 − t) : l’économie d’impôt sur les intérêts y est déjà comptée. Calculer l’impôt après frais financiers la compterait une seconde fois (option 2). L’option 1 est fausse : en présence d’intérêts, l’EBIT est supérieur au résultat avant impôt. L’option 3 est fausse : les intérêts sont en principe déductibles. L’option 4 ne justifie rien : il s’agit d’un impôt normatif prévisionnel."
         },
         {

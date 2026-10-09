@@ -279,6 +279,12 @@
             2
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : 0,9100 € est le prix d'exercice, qui ignore la prime et la comparaison avec le terme.",
+            "Inexact : 0,9169 € est le cours à terme (1 / 1,090667), qui ignore la prime de l'option.",
+            "Exact : l'option abandonnée l'emporte si 800 000 × S − 9 600 > 733 496, soit S > 0,9289 €.",
+            "Inexact : 0,9220 € ajoute la prime au prix d'exercice sans comparer avec le terme."
+          ],
           "explanation": "L’option l’emporte quand elle est abandonnée et que 800 000 × S − 9 600 > 733 496, soit S > 743 096 / 800 000 ≈ 0,9289 € (option 3). L’option 1 est le prix d’exercice, qui ignore la prime et le terme. L’option 2 est le cours à terme (1 / 1,090667 ≈ 0,9169 €), qui ignore la prime. L’option 4 ajoute la prime au prix d’exercice (0,9100 + 0,0120), sans comparer avec le terme."
         },
         {

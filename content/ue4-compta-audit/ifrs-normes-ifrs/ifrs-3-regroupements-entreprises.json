@@ -171,6 +171,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : les frais connexes à l'acquisition ne majorent pas la contrepartie transférée ; ce sont des charges de la période (IFRS 3 §53).",
+            "Inexact : seule l'imputation des coûts d'émission de titres sur les capitaux propres est prévue ; les honoraires d'acquisition sont des charges.",
+            "Exact : les frais connexes à l'acquisition sont des charges de la période au cours de laquelle ils sont engagés (IFRS 3 §53).",
+            "Inexact : sans objet : les honoraires payés par Aubrac ne sont pas des actifs de Causse et n'entrent pas dans son actif net identifiable."
+          ],
           "explanation": "Les frais connexes à l'acquisition sont des charges de la période (IFRS 3 §53). Ils ne majorent ni la contrepartie transférée (option 1) ni l'actif net identifiable (option 4, sans objet : ce ne sont pas des actifs de Causse) et ne s'imputent pas sur les capitaux propres, réservés aux coûts d'émission de titres (option 2)."
         },
         {

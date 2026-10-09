@@ -130,6 +130,12 @@
           "answer": [
             0
           ],
+          "option_explanations": [
+            "Exact : Altaïr détient la majorité des droits de vote (51,3 %) grâce aux droits de vote doubles : contrôle exclusif de droit.",
+            "Inexact : la majorité des droits de vote (51,3 %) donne un contrôle de droit ; inutile de recourir à la présomption de contrôle de fait.",
+            "Inexact : le pourcentage de capital (42 %) n'est pas le critère du contrôle ; seuls comptent les droits de vote, ici 51,3 %.",
+            "Inexact : aucun accord de partage du contrôle n'existe ; Altaïr détient seule la majorité des droits de vote."
+          ],
           "explanation": "Altaïr détient la majorité des droits de vote (51,3 %) : contrôle exclusif de droit, sans qu'il soit besoin de recourir à la présomption de contrôle de fait. Le pourcentage de capital (42 %) n'est pas le critère du contrôle."
         },
         {
@@ -256,6 +262,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : au-delà de l'influence notable, O détient plus de 40 % et a désigné la majorité des administrateurs pendant deux exercices : contrôle exclusif de fait.",
+            "Exact : plus de 40 % des droits de vote, aucun autre actionnaire au-dessus, majorité des administrateurs désignée deux exercices de suite (C. com. L233-16 II 2°).",
+            "Inexact : aucun accord ne partage le contrôle de B avec un autre associé ; O le détient seule.",
+            "Inexact : la majorité n'est pas requise : le contrôle de fait résulte de la désignation de la majorité des administrateurs avec plus de 40 %."
+          ],
           "explanation": "O détient plus de 40 % des droits de vote, aucun autre actionnaire ne détient une fraction supérieure, et O a désigné la majorité des administrateurs pendant deux exercices successifs : contrôle exclusif de fait (C. com. L233-16 II 2°)."
         },
         {
@@ -272,6 +284,12 @@
           ],
           "answer": [
             2
+          ],
+          "option_explanations": [
+            "Inexact : l'intégration globale suppose un contrôle exclusif ; les décisions de C exigent l'unanimité des deux associés.",
+            "Inexact : la mise en équivalence vise l'influence notable ; elle ne s'applique à une coentreprise qu'en IFRS, pas selon le règlement ANC 2020-01.",
+            "Exact : unanimité des deux associés, donc contrôle conjoint, qui conduit en règles françaises à l'intégration proportionnelle (C. com. L233-18 ; règl. ANC 2020-01).",
+            "Inexact : une entité sous contrôle conjoint entre dans le périmètre ; elle est intégrée proportionnellement en règles françaises."
           ],
           "explanation": "Les décisions de C exigent l'accord unanime de deux associés : contrôle conjoint. En règles françaises, le contrôle conjoint conduit à l'intégration proportionnelle (C. com. L233-18 ; règl. ANC 2020-01). En IFRS, une coentreprise serait mise en équivalence."
         },

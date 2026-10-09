@@ -151,6 +151,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : renouveler pour gagner en consommation électrique est contre-productif en France, où l'électricité est peu carbonée ; la fabrication domine l'empreinte.",
+            "Exact : la fabrication concentre l'essentiel de l'empreinte des terminaux ; allonger leur durée de vie réduit directement les émissions amorties chaque année.",
+            "Inexact : éteindre les écrans réduit un peu la consommation électrique, mais l'effet est limité face aux émissions de fabrication.",
+            "Inexact : supprimer les pièces jointes réduit un peu la consommation, mais l'effet est limité ; l'essentiel de l'empreinte vient de la fabrication."
+          ],
           "explanation": "La fabrication concentre l'essentiel de l'empreinte des terminaux : allonger leur durée de vie réduit directement les émissions amorties chaque année. Renouveler pour gagner en consommation électrique est contre-productif en France, où l'électricité est peu carbonée. Les deux autres gestes réduisent un peu la consommation mais ont un effet limité."
         },
         {

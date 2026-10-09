@@ -191,6 +191,12 @@
             2
           ],
           "multiple": false,
+          "option_explanations": [
+            "Incorrect: this confuses intensity with absolute emissions; intensity fell from 400 to 358.3 tCO2e per €m, but the footprint itself rose.",
+            "Incorrect: Scopes 1 and 2 fell by 12% (50,000 to 44,000), but this ignores Scope 3, which is 79.5% of the total.",
+            "Correct: total emissions rose from 200,000 to 215,000 tCO2e (+7.5%); presenting the 10% fall in intensity as a footprint cut is misleading.",
+            "Incorrect: Scope 3 is part of the emissions inventory and is reported under ESRS E1 when material, so the claim can be assessed."
+          ],
           "explanation": "A \"carbon footprint\" refers to absolute emissions, which rose from 200,000 to 215,000 tCO2e (+7.5%). The 10% figure is the fall in intensity (400 to 358.3 tCO2e per €m), which reflects revenue growth rather than lower emissions: presenting it as a cut in the footprint is a misleading claim. Option 1 confuses intensity with absolute emissions. Option 2 relies on Scopes 1 and 2 (50,000 to 44,000, −12%) and ignores Scope 3, which represents 171,000 ÷ 215,000 = 79.5% of the total. Option 4 is wrong: Scope 3 is part of the inventory and is reported under ESRS E1 when material."
         },
         {

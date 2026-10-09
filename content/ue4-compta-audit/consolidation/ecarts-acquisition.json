@@ -162,6 +162,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : IFRS 3 §53 : les coûts liés à l'acquisition n'entrent pas dans la contrepartie transférée et n'augmentent pas le goodwill.",
+            "Exact : IFRS 3 §53 : les coûts liés à l'acquisition sont des charges de la période au cours de laquelle ils sont engagés.",
+            "Inexact : les honoraires d'acquisition ne sont pas imputés sur les capitaux propres ; ce sont des charges de N (IFRS 3 §53).",
+            "Inexact : les frais ne touchent ni les capitaux propres ni les PNC ; ils sont comptabilisés en charges de N par Quartz."
+          ],
           "explanation": "IFRS 3 §53 : les coûts liés à l'acquisition sont des charges de la période au cours de laquelle ils sont engagés ; ils n'entrent ni dans la contrepartie transférée (option 1), ni dans les capitaux propres (options 3 et 4)."
         },
         {

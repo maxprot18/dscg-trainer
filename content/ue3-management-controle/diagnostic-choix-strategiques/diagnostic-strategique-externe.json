@@ -183,6 +183,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : le coût de la voiture peut en être une cause, mais le fait décrit est un changement de comportement.",
+            "Exact : une évolution des modes de vie et des comportements de consommation relève du socioculturel.",
+            "Inexact : la dimension écologique vise les contraintes et enjeux environnementaux (climat, ressources), non les comportements des ménages.",
+            "Inexact : les politiques des métropoles sont un autre fait de l'énoncé, distinct du comportement des ménages."
+          ],
           "explanation": "L'option 2 est exacte : il s'agit d'une évolution des modes de vie et des comportements de consommation, qui relève du socioculturel. L'option 1 est fausse : le coût de la voiture peut en être une cause, mais le fait décrit est un changement de comportement. L'option 3 est fausse : la dimension écologique vise les contraintes et enjeux environnementaux (climat, ressources). L'option 4 est fausse : les politiques des métropoles (pistes, restrictions) sont un autre fait de l'énoncé, distinct du comportement des ménages."
         },
         {

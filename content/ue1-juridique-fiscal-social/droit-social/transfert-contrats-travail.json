@@ -120,6 +120,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : le transfert d'une branche autonome suffit ; la cession de toute l'entreprise n'est pas exigée.",
+            "Exact : l'entrepôt est une entité économique autonome transférée dont l'activité est poursuivie à l'identique : L1224-1 s'applique.",
+            "Inexact : le transfert des contrats est automatique, sans accord des salariés.",
+            "Inexact : l'appartenance des deux sociétés à un même groupe est indifférente."
+          ],
           "explanation": "L'entrepôt réunit des personnes et des éléments corporels et incorporels (matériel, logiciel, clientèle) poursuivant un objectif propre ; il est transféré et son activité poursuivie à l'identique : l'article L1224-1 s'applique (option 2). Le transfert d'une branche autonome suffit, la cession de toute l'entreprise n'est pas exigée (option 1). Le transfert est automatique, sans accord des salariés (option 3). L'appartenance à un groupe est indifférente (option 4)."
         },
         {

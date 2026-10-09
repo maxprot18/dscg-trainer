@@ -94,6 +94,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : les comptes ne sont pas faux : le défaut d'autorisation d'une convention réglementée ne justifie pas de réserve.",
+            "Exact : convention réglementée non autorisée : le rapport spécial expose pourquoi la procédure n'a pas été suivie, et l'assemblée peut la couvrir par un vote.",
+            "Inexact : le défaut d'autorisation n'est pas en soi un délit (possible nullité si préjudice) ; le loyer conforme au marché n'indique aucun abus de biens sociaux.",
+            "Inexact : contraire au texte : les conventions non autorisées figurent aussi dans le rapport spécial, avec les circonstances du défaut d'autorisation."
+          ],
           "explanation": "Le bail conclu avec une société dont le directeur général est gérant et associé majoritaire est une convention réglementée (personne intéressée indirectement). Non autorisée préalablement, elle figure dans le rapport spécial, qui expose pourquoi la procédure n'a pas été suivie ; l'assemblée peut la couvrir par un vote (option 2). Les comptes ne sont pas faux : pas de réserve (option 1). Le défaut d'autorisation entraîne une possible nullité si la convention est préjudiciable, mais n'est pas en soi un délit (option 3) ; le loyer étant conforme au marché, rien n'indique un abus de biens sociaux. L'option 4 est contraire au texte."
         },
         {

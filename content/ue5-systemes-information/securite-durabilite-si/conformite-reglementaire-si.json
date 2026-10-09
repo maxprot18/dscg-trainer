@@ -118,6 +118,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : selon l'hypothèse du sujet, la production, la transformation et la distribution de denrées alimentaires figurent à l'annexe II de NIS 2.",
+            "Exact : une entreprise au moins de taille moyenne d'un secteur de l'annexe II est une entité importante, quelle que soit sa taille au-delà, sauf désignation.",
+            "Inexact : le seuil de 250 salariés ne rend essentielle qu'une grande entreprise d'un secteur de l'annexe I ; l'agroalimentaire relève de l'annexe II.",
+            "Inexact : la présence d'un établissement de paiement dans le groupe ne change pas la qualification de la société de biscuits."
+          ],
           "explanation": "Les entités des secteurs de l'annexe II, au moins de taille moyenne, sont des entités importantes, quelle que soit leur taille au-delà (sauf désignation par l'État). La taille de 250 salariés ne rend essentielle qu'une grande entreprise d'un secteur de l'annexe I. La présence d'un établissement de paiement dans le groupe ne change pas la qualification de la société de biscuits."
         },
         {
@@ -149,6 +155,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : pour les entités financières, DORA, texte spécial, prime sur NIS 2 ; Maraval Pay, établissement de paiement, relève de DORA.",
+            "Exact : les établissements de paiement entrent dans le champ de DORA, applicable depuis le 17 janvier 2025, qui prime sur NIS 2 pour les entités financières.",
+            "Inexact : un usage interne au groupe ne fait pas sortir un établissement agréé du champ du règlement DORA.",
+            "Inexact : le RGPD s'applique aux données personnelles mais ne traite pas de la résilience opérationnelle numérique."
+          ],
           "explanation": "Les établissements de paiement entrent dans le champ de DORA, texte spécial qui prime sur NIS 2 pour les entités financières. L'usage interne au groupe ne fait pas sortir un établissement agréé du champ du règlement. Le RGPD s'applique aux données personnelles mais ne traite pas de la résilience opérationnelle numérique."
         },
         {

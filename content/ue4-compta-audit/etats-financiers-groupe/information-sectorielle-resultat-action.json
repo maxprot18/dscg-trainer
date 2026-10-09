@@ -154,6 +154,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : 600 000 oublie le rachat : les fonds de l'exercice (18 000 000 €) permettraient de racheter 450 000 actions au cours moyen.",
+            "Inexact : 450 000 est le nombre d'actions rachetées (18 000 000 / 40), non le nombre d'actions émises sans contrepartie.",
+            "Exact : méthode du rachat d'actions (IAS 33 §45-46) : 600 000 − 450 000 rachetées = 150 000, soit 600 000 × (40 − 30) / 40.",
+            "Inexact : 200 000 rapporte l'écart de prix au prix d'exercice (10 / 30) au lieu du cours moyen (10 / 40)."
+          ],
           "explanation": "Méthode du rachat d'actions (IAS 33 §45-46) : les fonds issus de l'exercice (600 000 × 30 = 18 000 000 €) permettraient de racheter 18 000 000 / 40 = 450 000 actions au cours moyen ; seules les 600 000 − 450 000 = 150 000 actions émises sans contrepartie sont ajoutées (formule : 600 000 × (40 − 30) / 40). 600 000 oublie le rachat, 450 000 est le nombre d'actions rachetées, 200 000 rapporte l'écart de prix au prix d'exercice au lieu du cours moyen."
         },
         {

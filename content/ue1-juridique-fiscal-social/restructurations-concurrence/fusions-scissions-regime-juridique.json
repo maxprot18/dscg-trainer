@@ -133,6 +133,12 @@
             3
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : le conseil arrête le projet de fusion mais ne décide pas seul ; l'AGE de Calvane approuve.",
+            "Inexact : les actionnaires de Calvane se prononcent aussi, car le capital augmente et ils sont dilués.",
+            "Inexact : l'unanimité n'est exigée que si l'opération augmente les engagements des associés, ce qui n'est pas le cas entre SA et SAS.",
+            "Exact : hors fusion simplifiée, chaque société approuve dans les conditions de modification des statuts : AGE de Calvane, décision extraordinaire de Bérinne."
+          ],
           "explanation": "Hors fusion simplifiée (100 %), la fusion est approuvée par chaque société participante dans les conditions de modification des statuts : AGE de Calvane, décision collective extraordinaire des associés de Bérinne (option 4). Le conseil arrête le projet mais ne décide pas seul (option 1). Les actionnaires de Calvane se prononcent, car le capital augmente et ils sont dilués (option 2). L'unanimité (option 3) n'est exigée que si l'opération augmente les engagements des associés, ce qui n'est pas le cas entre SA et SAS."
         },
         {

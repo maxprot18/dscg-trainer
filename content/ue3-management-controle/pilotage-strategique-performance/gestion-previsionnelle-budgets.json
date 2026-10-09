@@ -287,6 +287,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : les charges variables sont neutralisées dans l'écart sur activité.",
+            "Exact : imputation rationnelle des charges fixes : (2 000 − 2 050) × 50 000 ÷ 2 000 = −1 250 €, sans être une performance.",
+            "Inexact : l'inefficience de la main-d'œuvre apparaît dans l'écart sur rendement, non sur activité.",
+            "Inexact : les écarts de prix figurent dans l'écart sur budget."
+          ],
           "explanation": "L'option 2 est exacte : l'écart sur activité correspond à l'imputation rationnelle des charges fixes, (2 000 − 2 050) × 50 000 ÷ 2 000 = −1 250 €. Les 50 heures de suractivité absorbent 25 € de charges fixes chacune. Mais ce boni naît ici d'heures consommées en excès (voir l'écart sur rendement) : il n'a rien d'une performance. L'option 1 est fausse : les charges variables sont neutralisées dans cet écart. L'option 3 est fausse : l'inefficience apparaît dans l'écart sur rendement. L'option 4 est fausse : les prix figurent dans l'écart sur budget."
         },
         {

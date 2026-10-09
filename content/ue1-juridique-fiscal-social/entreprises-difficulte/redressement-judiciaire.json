@@ -203,6 +203,12 @@
             2
           ],
           "multiple": true,
+          "option_explanations": [
+            "Exact : la remise d'un bien en paiement est un mode non communément admis, nul de droit en période suspecte (L632-1).",
+            "Inexact : paiement normal d'une dette échue, relevant seulement de la nullité facultative (L632-2) ; la banque ignorait la cessation des paiements.",
+            "Exact : l'hypothèque conventionnelle constituée pour une dette antérieurement contractée est nulle de droit en période suspecte (L632-1).",
+            "Inexact : paiement normal d'une dette échue ; le tribunal peut l'annuler (L632-2), créancier informé, mais la nullité n'est pas de droit."
+          ],
           "explanation": "Sont nuls de droit en période suspecte (L632-1) le paiement d'une dette échue par un mode non communément admis dans les relations d'affaires, comme la remise d'un bien en paiement (option 1), et l'hypothèque conventionnelle constituée pour une dette antérieurement contractée (option 3). Le paiement d'une dette échue par un mode normal relève seulement de la nullité facultative (L632-2), qui suppose que le créancier ait connu la cessation des paiements : la banque qui l'ignorait conserve le paiement (option 2), et le paiement au fournisseur informé (option 4) peut être annulé par le tribunal, sans l'être de droit."
         },
         {

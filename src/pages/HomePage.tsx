@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 
 import { BackupReminder } from '@/components/BackupReminder'
 import { ExamPlanCard } from '@/components/ExamPlanCard'
+import { planIsActive, useExamPlan } from '@/hooks/useExamPlan'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { exerciseCount, taxonomy } from '@/content/load'
@@ -27,6 +28,15 @@ export function HomePage() {
   const { dailyGoal } = useSettings()
   const today = progress ? progress.attempts.filter((a) => startOfDay(a.date) === startOfDay(now)).length : 0
   const attempts = progress?.attempts.length ?? 0
+  const { plan, ues } = useExamPlan(progress?.attempts ?? NO_ATTEMPTS, progress?.reviews ?? NO_REVIEWS, now)
+  // Un seul objectif : le rythme du plan quand un examen est à venir, sinon l'objectif choisi dans les réglages.
+  const goal = planIsActive(plan) ? plan.exercisesPerDay : dailyGoal
+  // Une seule action principale : la séance du jour (plan d'examen), sinon la révision, sinon le choix d'un mode.
+  const primary = planIsActive(plan)
+    ? { to: `/session${sessionSearch({ mode: 'smart', seed: newSeed(), ues: [...ues] })}`, label: 'Séance du jour' }
+    : attempts > 0
+      ? { to: `/session${sessionSearch({ mode: 'smart', seed: newSeed() })}`, label: due > 0 ? `Réviser (${due} notion${due > 1 ? 's' : ''} du jour)` : 'Réviser maintenant' }
+      : { to: '/entrainement', label: 'Commencer à s’entraîner' }
   // Stockage persistant demandé une fois, dès que l'utilisateur a commencé à s'entraîner.
   useEffect(() => {
     void requestPersistenceOnce(attempts)
@@ -39,26 +49,30 @@ export function HomePage() {
         <p className="text-muted-foreground">Audit, comptabilité, IFRS, consolidation, finance, droit et fiscalité.</p>
       </header>
       <BackupReminder attempts={attempts} now={now} />
-      <Button asChild size="lg" className="h-14 text-lg">
-        <Link to="/entrainement">S'entraîner</Link>
-      </Button>
+      <div className="flex flex-col gap-2">
+        <Button asChild size="lg" className="min-h-14 text-lg">
+          <Link to={primary.to}>{primary.label}</Link>
+        </Button>
+        {primary.to !== '/entrainement' && (
+          <Button asChild variant="ghost" className="self-center">
+            <Link to="/entrainement">Tous les modes d’entraînement</Link>
+          </Button>
+        )}
+      </div>
       {/* Toujours rendue (avec des valeurs à zéro pendant le chargement) pour éviter un saut de mise en page. */}
       <Card aria-busy={!progress}>
           <CardContent className="flex items-center gap-4">
-            <GoalRing done={today} goal={dailyGoal} />
+            <GoalRing done={today} goal={goal} />
             <div className="flex min-w-0 flex-1 flex-col gap-1">
               <p className="flex items-center gap-2 font-semibold">
                 <Target className="size-4 shrink-0" aria-hidden />
-                {today >= dailyGoal ? 'Objectif du jour atteint' : `${today} / ${dailyGoal} exercices aujourd’hui`}
+                {today >= goal ? 'Objectif du jour atteint' : `${today} / ${goal} exercices aujourd’hui`}
               </p>
               <p className="text-muted-foreground flex items-center gap-2 text-sm">
                 <Flame className={streak > 0 ? 'size-4 shrink-0 text-orange-500' : 'size-4 shrink-0'} aria-hidden />
                 {streak > 0 ? `${streak} jour${streak > 1 ? 's' : ''} d’affilée` : 'Aucune série en cours'}
                 {due > 0 ? ` · ${due} notion${due > 1 ? 's' : ''} à réviser` : ''}
               </p>
-              <Button asChild variant="outline" size="sm" className="mt-1 self-start">
-                <Link to={`/session${sessionSearch({ mode: 'smart', seed: newSeed() })}`}>Révision intelligente</Link>
-              </Button>
             </div>
           </CardContent>
       </Card>

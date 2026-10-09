@@ -201,6 +201,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : pour un bloc minoritaire, les multiples boursiers, éventuellement après décote d'illiquidité, sont plus adaptés.",
+            "Exact : les multiples de transactions intègrent une prime de contrôle et des synergies : ils conviennent à la cession du contrôle.",
+            "Inexact : l'option ignore la prime de contrôle incluse dans les multiples de transactions, sans objet pour un bloc minoritaire.",
+            "Inexact : les transactions de référence portent souvent sur des sociétés non cotées."
+          ],
           "explanation": "Les multiples de transactions intègrent une prime de contrôle et des synergies : ils sont adaptés à la cession du contrôle (option 2). Pour un bloc minoritaire (option 1), les multiples boursiers, éventuellement diminués d’une décote d’illiquidité, sont plus adaptés ; l’option 3 ignore cette différence de nature. L’option 4 est fausse : les transactions portent souvent sur des sociétés non cotées."
         },
         {

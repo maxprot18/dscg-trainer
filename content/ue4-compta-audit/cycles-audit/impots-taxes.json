@@ -315,6 +315,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : la situation ne porte pas sur une créance fiscale mais sur un passif probable : le rappel de TVA, avec intérêts et majoration.",
+            "Exact : le risque est qu'un passif probable (rappel de TVA, intérêts, majoration) ne soit pas comptabilisé ou soit sous-évalué : exhaustivité et évaluation.",
+            "Inexact : les ventes ne sont pas en cause ; le risque porte sur la provision pour impôts non constituée.",
+            "Inexact : aucune charge de personnel n'est en cause ; le risque porte sur un passif fiscal non provisionné."
+          ],
           "explanation": "Le risque est qu'un passif probable (rappel de TVA, intérêts et majoration) ne soit pas comptabilisé ou soit sous-évalué : exhaustivité et évaluation des provisions. Les autres options ne correspondent pas aux faits."
         },
         {
@@ -937,17 +943,23 @@
           "id": "q1-redevable",
           "kind": "mcq",
           "points": 2,
-          "prompt": "Qui est redevable envers le Trésor de l'IS calculé sur le résultat d'ensemble ?",
+          "prompt": "Qui déclare et acquitte auprès du Trésor l'IS calculé sur le résultat d'ensemble ?",
           "options": [
-            "Chaque société, à hauteur de son propre résultat fiscal",
+            "Chaque société, sur son propre résultat fiscal",
             "Altaïr seule",
             "Altaïr et Castor, seules sociétés bénéficiaires",
-            "Les filiales, solidairement"
+            "Les filiales, solidairement, pour la totalité de l'IS du groupe"
           ],
           "answer": [
             1
           ],
-          "explanation": "La société mère se constitue seule redevable de l'IS du groupe (CGI art. 223 A) ; les filiales lui versent leur contribution selon la convention."
+          "option_explanations": [
+            "Inexact : la société mère se constitue seule redevable de l'IS d'ensemble (CGI art. 223 A, I) ; les filiales déclarent leurs résultats sans payer l'IS au Trésor.",
+            "Exact : la société mère se constitue seule redevable de l'IS du groupe (CGI art. 223 A, I) ; les filiales lui versent leur contribution selon la convention.",
+            "Inexact : Castor ne paie pas l'IS au Trésor ; elle verse sa contribution à Altaïr, seule redevable (CGI art. 223 A).",
+            "Inexact : Altaïr est seule redevable ; la solidarité des filiales (art. 223 A, III) est limitée à l'impôt qu'elles auraient dû hors du groupe."
+          ],
+          "explanation": "La société mère se constitue seule redevable de l'IS du groupe (CGI art. 223 A, I) ; les filiales lui versent leur contribution selon la convention. Chaque filiale reste tenue solidairement au paiement, mais seulement à hauteur de l'impôt qu'elle aurait dû si elle n'était pas membre du groupe (art. 223 A, III) : elle n'est pas redevable de l'IS d'ensemble."
         },
         {
           "id": "q2-is-groupe",

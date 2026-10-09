@@ -1,18 +1,13 @@
 import { CalendarClock } from 'lucide-react'
-import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import type { UeId } from '@/content/ids'
-import { taxonomy } from '@/content/load'
 import type { Attempt, Review } from '@/db/db'
-import { examPlan, type ExamPlan } from '@/engine/plan'
+import type { ExamPlan } from '@/engine/plan'
+import { useExamPlan } from '@/hooks/useExamPlan'
 import { newSeed, sessionSearch } from '@/engine/sessionConfig'
-import { notionProgress } from '@/engine/stats'
-import { DAILY_GOAL_CHOICES, saveSettings, useSettings } from '@/lib/settings'
 
-const notionsByUe = new Map<UeId, string[]>(taxonomy.ues.map((u) => [u.id, u.themes.flatMap((t) => t.notions.map((n) => n.id))]))
 
 const PHASE_TEXT: Record<ExamPlan['phase'], string> = {
   learn: 'Découverte : voyez chaque jour quelques notions nouvelles et révisez celles qui sont dues.',
@@ -25,14 +20,9 @@ function listUes(ues: readonly string[]): string {
   return ues.length <= 1 ? ues.join('') : `${ues.slice(0, -1).join(', ')} et ${ues[ues.length - 1]}`
 }
 
-/** Plan de révision à rebours de la date d'examen (accueil). */
+/** Plan de révision à rebours de la date d'examen (accueil) ; la séance du jour est l'action principale de l'accueil. */
 export function ExamPlanCard({ attempts, reviews, now }: { attempts: readonly Attempt[]; reviews: readonly Review[]; now: number }) {
-  const { examDate, examUes, dailyGoal } = useSettings()
-  const ues = examUes
-  const plan = useMemo(
-    () => (examDate && ues.length ? examPlan(examDate, ues, notionsByUe, notionProgress(attempts, reviews), now) : null),
-    [examDate, ues, attempts, reviews, now],
-  )
+  const { plan, examDate, ues } = useExamPlan(attempts, reviews, now)
 
   if (!plan || !examDate) {
     return (
@@ -53,7 +43,6 @@ export function ExamPlanCard({ attempts, reviews, now }: { attempts: readonly At
   const date = new Date(`${examDate}T12:00:00`).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })
   const countdown = plan.daysLeft > 1 ? `J-${plan.daysLeft}` : plan.daysLeft === 1 ? 'Demain' : plan.daysLeft === 0 ? 'Aujourd’hui' : 'Passé'
   const untouched = plan.perUe.filter((u) => u.seen === 0).map((u) => u.ue)
-  const goal = DAILY_GOAL_CHOICES.reduce((best, c) => (Math.abs(c - plan.exercisesPerDay) < Math.abs(best - plan.exercisesPerDay) ? c : best))
   return (
     <Card>
       <CardHeader>
@@ -79,21 +68,12 @@ export function ExamPlanCard({ attempts, reviews, now }: { attempts: readonly At
         <p>{PHASE_TEXT[plan.phase]}</p>
         {plan.phase !== 'past' && (
           <p className="font-medium">
-            Rythme conseillé : {plan.exercisesPerDay} exercices par jour
-            {plan.newPerDay > 0 && `, dont ${plan.newPerDay} notion${plan.newPerDay > 1 ? 's' : ''} nouvelle${plan.newPerDay > 1 ? 's' : ''}`}.
-            {goal !== dailyGoal && (
-              <Button variant="link" size="sm" className="h-auto px-1" onClick={() => saveSettings({ dailyGoal: goal })}>
-                En faire mon objectif ({goal})
-              </Button>
-            )}
+            Rythme du plan : {plan.exercisesPerDay} exercices par jour
+            {plan.newPerDay > 0 && `, dont ${plan.newPerDay} notion${plan.newPerDay > 1 ? 's' : ''} nouvelle${plan.newPerDay > 1 ? 's' : ''}`}
+            {' '}: c’est votre objectif du jour.
           </p>
         )}
         <div className="flex flex-wrap gap-2">
-          {plan.phase !== 'past' && (
-            <Button asChild size="sm">
-              <Link to={`/session${sessionSearch({ mode: 'smart', seed: newSeed(), ues: [...ues] })}`}>Séance du jour</Link>
-            </Button>
-          )}
           {untouched.slice(0, 2).map((ue) => (
             <Button key={ue} asChild size="sm" variant="outline">
               <Link to={`/session${sessionSearch({ mode: 'diagnostic', seed: newSeed(), ue })}`}>Test de positionnement {ue}</Link>

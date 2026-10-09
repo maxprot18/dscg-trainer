@@ -177,6 +177,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : la règle des deux tiers suppose que chaque entreprise concernée la remplisse ; Sein ne réalise que 60 % en France.",
+            "Exact : CA mondial de 5 300 M€, plus de 250 M€ chacune dans l'UE, règle des deux tiers non remplie : dimension européenne.",
+            "Inexact : guichet unique ; une opération de dimension européenne n'est pas notifiée en parallèle aux autorités nationales.",
+            "Inexact : l'acquisition de 60 % du capital et des droits de vote confère le contrôle exclusif : c'est une concentration."
+          ],
           "explanation": "L'acquisition de 60 % du capital et des droits de vote confère le contrôle exclusif : c'est une concentration (option 4 fausse). Seuils européens : CA mondial total 3 600 + 1 700 = 5 300 M€ > 5 000 M€, et chacune des deux entreprises réalise plus de 250 M€ dans l'UE (2 400 et 700 M€). La règle des deux tiers suppose que chaque entreprise concernée réalise plus des deux tiers de son CA européen dans le même État : c'est vrai pour Ouessant (79,2 %), mais pas pour Sein (60 %). L'opération est donc de dimension européenne et relève de la seule Commission (option 2). L'option 1 applique la règle des deux tiers à une seule entreprise. L'option 3 méconnaît le guichet unique : une opération de dimension européenne n'est pas notifiée en parallèle aux autorités nationales."
         },
         {

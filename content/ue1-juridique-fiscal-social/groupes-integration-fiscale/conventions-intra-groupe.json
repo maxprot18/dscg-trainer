@@ -119,6 +119,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : Aldric ne détient pas directement plus de la moitié du capital de Dune ; ce n'est pas sa filiale.",
+            "Exact : Brisa (45 %, aucun associé au-dessus) est présumée contrôler Dune ; Aldric, qui contrôle Brisa, contrôle donc Dune indirectement (L233-3).",
+            "Inexact : le pourcentage d'intérêt de 31,5 % mesure les droits financiers et n'exclut pas le contrôle indirect par Brisa.",
+            "Inexact : Aldric contrôle Dune indirectement, par l'intermédiaire de Brisa (L233-3, I)."
+          ],
           "explanation": "Brisa détient 45 % des droits de vote de Dune et aucun autre associé ne détient une fraction supérieure : Brisa est présumée contrôler Dune (C. com. art. L233-3, II). Aldric contrôlant Brisa (70 % des droits de vote), elle contrôle Dune indirectement (L233-3, I, « directement ou indirectement ») : option 2. Dune n'est pas une filiale d'Aldric (option 1), faute de détention directe de plus de la moitié du capital. Le pourcentage d'intérêt de 31,5 % (70 % × 45 %) mesure les droits financiers et n'exclut pas le contrôle (option 3)."
         },
         {

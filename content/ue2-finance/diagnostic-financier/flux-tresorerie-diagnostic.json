@@ -224,6 +224,12 @@
             2
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : le FTD (1 100 k€) ne couvre ni les intérêts (700) ni les distributions (3 500).",
+            "Inexact : les cessions (300 k€) sont déjà comprises dans le FTD, insuffisant.",
+            "Exact : l'endettement net augmente de 3 100 k€ (dette brute + 1 800, trésorerie − 1 300) et finance l'essentiel des distributions.",
+            "Inexact : le BFR a augmenté ; il a consommé de la trésorerie au lieu d'en dégager."
+          ],
           "explanation": "Le FTD (1 100) ne couvre ni les intérêts (700) ni les distributions (3 500). L'endettement brut augmente de 4 000 − 2 200 = 1 800 et la trésorerie baisse de 1 300 : l'endettement net s'accroît de 3 100 k€, ce qui finance l'essentiel des distributions (option 3). Les cessions (300) sont déjà dans le FTD, et le BFR a augmenté."
         },
         {

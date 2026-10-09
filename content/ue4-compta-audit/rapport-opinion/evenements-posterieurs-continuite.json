@@ -202,6 +202,12 @@
           "answer": [
             3
           ],
+          "option_explanations": [
+            "Inexact : une réserve ne se justifierait qu'en cas d'information insuffisante en annexe ; ici la note décrit précisément l'incertitude.",
+            "Inexact : l'observation n'est plus l'outil prévu pour l'incertitude sur la continuité, qui a sa propre partie dans le rapport.",
+            "Inexact : le refus de certifier suppose une convention de continuité inappropriée ; ici elle est jugée appropriée.",
+            "Exact : convention appropriée et annexe adéquate : opinion non modifiée, avec une partie spécifique sur l'incertitude significative renvoyant à l'annexe (NEP 570)."
+          ],
           "explanation": "La convention de continuité est appropriée et l'annexe décrit l'incertitude de façon adéquate : la NEP 570 prévoit alors une opinion non modifiée et une partie spécifique du rapport consacrée à l'incertitude significative, avec renvoi à l'annexe (option 4). Une réserve (option 1) ne se justifierait qu'en cas d'information insuffisante en annexe. L'observation (option 2) n'est plus l'outil prévu pour l'incertitude sur la continuité, qui a sa propre partie. Le refus de certifier (option 3) suppose une convention de continuité inappropriée, ce qui n'est pas le cas."
         },
         {

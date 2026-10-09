@@ -222,6 +222,12 @@
             3
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : l'escompte paraît le moins cher par son taux nominal (5,4 %), mais son coût réel atteint 7,30 %.",
+            "Inexact : l'escompte, à 7,30 % de coût réel, est plus cher que le découvert à 7 %.",
+            "Inexact : le découvert (7 %) est plus cher que la cession Dailly (6,32 % de coût réel).",
+            "Exact : coûts réels de 6,32 % pour la cession Dailly, 7 % pour le découvert et 7,30 % pour l'escompte."
+          ],
           "explanation": "Dailly : agios 120 000 × 5,6 % × 31 / 360 + 50 = 628,67 € ; coût réel 628,67 × 360 / (119 371,33 × 30) = 6,32 %. Découvert : 7 % (pas de commission, intérêts sur la durée réelle). Escompte : 7,30 %. Classement : Dailly, découvert, escompte (option 4). Les options 1 et 2 se fient au taux nominal de l’escompte (5,4 %), le plus bas en apparence ; l’option 3 place à tort le découvert devant la cession Dailly."
         },
         {

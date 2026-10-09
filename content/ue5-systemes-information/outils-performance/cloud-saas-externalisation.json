@@ -148,6 +148,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : en SaaS, le cabinet n'exploite pas l'application ; il reste responsable de ses données, des comptes et droits de ses utilisateurs et de ses paramétrages.",
+            "Exact : le fournisseur SaaS exploite l'application et l'infrastructure, donc applique les mises à jour et correctifs (modèle de responsabilité partagée).",
+            "Inexact : les correctifs de l'application relèvent du fournisseur qui l'exploite, pas d'un hébergeur des postes de travail.",
+            "Inexact : le SaaS nécessite des correctifs comme tout logiciel ; c'est le fournisseur qui les applique."
+          ],
           "explanation": "En SaaS, le fournisseur exploite l'application et l'infrastructure : il applique les mises à jour et correctifs de l'application. Le client reste responsable de ses données, de la gestion des comptes et des droits de ses utilisateurs, et de ses paramétrages (modèle de responsabilité partagée)."
         },
         {

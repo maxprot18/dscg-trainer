@@ -191,6 +191,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : une procédure analytique porte sur une relation entre données ; ici on vérifie, commande par commande, le fonctionnement d'un contrôle.",
+            "Exact : vérifier sur un échantillon si l'approbation des commandes a fonctionné est un test de procédures au sens de la NEP 330.",
+            "Inexact : aucun tiers n'est interrogé ; le collaborateur examine les commandes pour vérifier leur approbation.",
+            "Inexact : un test de détail porte sur un montant comptabilisé ; ici l'objet est le fonctionnement du contrôle d'approbation."
+          ],
           "explanation": "Le collaborateur vérifie, sur un échantillon, si un contrôle (l'approbation des commandes) a fonctionné : c'est un test de procédures au sens de la NEP 330. Il ne porte pas sur un montant comptabilisé (test de détail) ni sur une relation entre données (procédure analytique)."
         },
         {

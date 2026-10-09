@@ -180,6 +180,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : la preuve de travail, très énergivore, répond au besoin d'un réseau ouvert à des participants anonymes, pas d'un consortium de membres connus.",
+            "Exact : dans une blockchain de consortium, les nœuds sont connus et autorisés ; un consensus simplifié entre eux suffit, rapide et peu coûteux.",
+            "Inexact : la validation par le seul distributeur redonnerait le contrôle à un acteur unique et ôterait l'intérêt du registre partagé.",
+            "Inexact : sans consensus ni copie commune, on perd la propriété même de la blockchain : un registre commun validé collectivement."
+          ],
           "explanation": "Dans une blockchain de consortium, les nœuds sont connus et autorisés : un consensus simplifié entre eux suffit, rapide et peu coûteux (option 2). L'option 1 est inutilement énergivore : la preuve de travail répond au besoin d'un réseau ouvert à des participants anonymes. L'option 3 redonnerait le contrôle à un seul acteur, ce qui ôterait l'intérêt du registre partagé. L'option 4 supprime la propriété même de la blockchain (un registre commun validé collectivement)."
         },
         {
@@ -197,6 +203,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : le versement automatique d'une somme est précisément l'objet d'un contrat intelligent.",
+            "Exact : problème de l'oracle : la blockchain garantit l'intégrité de ce qui est inscrit, pas la véracité des heures saisies à la main.",
+            "Inexact : confusion entre réplication et exécution : la transaction est inscrite une seule fois, puis répliquée sur chaque nœud.",
+            "Inexact : les règles (seuil, montant, litiges) doivent être convenues dans la gouvernance du consortium ; le code ne remplace pas l'accord."
+          ],
           "explanation": "C'est le problème de l'oracle : la blockchain garantit l'intégrité de ce qui est inscrit, pas la véracité de la donnée saisie (option 2). Une heure mal saisie déclenchera ou non la pénalité à tort ; il faut une source fiable (géolocalisation, capteur à la réception). L'option 1 est fausse : le versement automatique est précisément l'objet d'un contrat intelligent. L'option 3 confond réplication du registre et exécution : la transaction est inscrite une seule fois puis répliquée. L'option 4 est fausse : les règles (seuil, montant, litiges) doivent être convenues dans la gouvernance du consortium."
         },
         {

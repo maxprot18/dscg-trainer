@@ -171,6 +171,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : le terrain n'a pas de durée d'utilisation limitée ; l'amortir reviendrait à amortir un actif non consommé.",
+            "Exact : le terrain n'a pas de durée d'utilisation limitée : il est comptabilisé séparément (compte 211) et n'est pas amorti.",
+            "Inexact : intégrer le terrain au gros œuvre conduirait à amortir un actif non consommé ; il doit être comptabilisé séparément.",
+            "Inexact : le terrain est un actif durable, comptabilisé séparément au compte 211, sans amortissement, et non une charge."
+          ],
           "explanation": "Le terrain n’a pas de durée d’utilisation limitée : il est comptabilisé séparément (compte 211) et n’est pas amorti. L’intégrer au gros œuvre conduirait à amortir un actif non consommé."
         },
         {

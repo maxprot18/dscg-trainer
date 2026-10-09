@@ -125,6 +125,12 @@
             2
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : l'engagement collectif peut être conclu entre le donateur et d'autres associés, y compris son conjoint.",
+            "Inexact : la totalité du capital n'est pas exigée ; les seuils sont de 17 % des droits financiers et 34 % des droits de vote.",
+            "Exact : 70 % des droits, au-delà des seuils de 17 % et 34 %, engagement de plus de 2 ans en cours à la donation.",
+            "Inexact : la fonction de direction peut être exercée par un seul signataire ou bénéficiaire, ici Paul."
+          ],
           "explanation": "L'engagement collectif peut être conclu entre le donateur et d'autres associés, y compris son conjoint ; il porte sur 70 % des droits, au-delà des seuils de 17 % (droits financiers) et 34 % (droits de vote), et il est en cours depuis plus de 2 ans (option 3). La totalité du capital n'est pas exigée (option 2). La fonction de direction peut être exercée par un seul signataire ou bénéficiaire, ici Paul (option 4)."
         },
         {

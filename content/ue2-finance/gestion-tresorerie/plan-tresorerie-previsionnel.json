@@ -168,6 +168,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : le découvert est un concours courant, coûteux et révocable, destiné aux décalages temporaires, non à un investissement.",
+            "Exact : le déficit vient de l'achat de la machine, emploi durable financé par une ressource stable dont l'échéancier suit sa durée d'utilisation.",
+            "Inexact : les facilités de caisse couvrent des décalages temporaires de fin de mois, pas un emploi durable.",
+            "Inexact : les NEU CP sont un financement de court terme réservé aux grandes entreprises, inadapté à une PME et à un emploi durable."
+          ],
           "explanation": "Le déficit provient de l’investissement (144 000 € TTC payés en février), emploi durable qui doit être financé par une ressource stable : un emprunt à moyen terme (option 2), dont l’échéancier suit la durée d’utilisation de la machine. Le découvert (option 1) et les facilités de caisse (option 3) sont des concours courants, coûteux et révocables, destinés à des décalages temporaires. Les NEU CP (option 4) sont un financement de court terme réservé aux grandes entreprises, inadapté à une PME et à un emploi durable."
         },
         {

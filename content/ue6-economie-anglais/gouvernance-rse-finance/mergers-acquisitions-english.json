@@ -93,6 +93,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Incorrect: 6.7x uses equity value (1,040 / 155), which is inconsistent with EBITDA, a measure of operating performance before financing.",
+            "Correct: EV = 1,040 + 200 = €1,240m; 1,240 / 155 = 8.0x, within the 7x-9x range of comparable transactions.",
+            "Incorrect: 9.5x has no basis in the data; the offer implies EV of €1,240m, i.e. 8.0x EBITDA of €155m.",
+            "Incorrect: EV includes net debt precisely so that it can be compared with EBITDA, which is earned for all providers of finance."
+          ],
           "explanation": "EV/EBITDA = 1,240 / 155 = 8.0x, within the 7x-9x range. Option 1 uses the equity value (1,040 / 155 ≈ 6.7x), which is inconsistent with EBITDA, a measure of operating performance before financing. Option 3 (9.5x) has no basis in the data. Option 4 is wrong: EV includes net debt precisely so that it can be compared with EBITDA."
         },
         {

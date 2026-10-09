@@ -154,6 +154,12 @@
             1
           ],
           "multiple": false,
+          "option_explanations": [
+            "Inexact : confusion avec la notation sociale interdite, qui évalue des personnes sur leur comportement social en général, non leur solvabilité.",
+            "Exact : l'évaluation de la solvabilité des personnes physiques figure à l'annexe III ; obligations du haut risque applicables au 2 décembre 2027 après report.",
+            "Inexact : l'article 50 vise les systèmes qui interagissent avec des personnes ou génèrent du contenu, comme l'assistant conversationnel, pas le score de crédit.",
+            "Inexact : développer un système pour son propre usage, c'est le mettre en service ; l'établissement est fournisseur soumis au règlement."
+          ],
           "explanation": "L'option 2 est la bonne : l'évaluation de la solvabilité des personnes physiques figure à l'annexe III ; c'est un système à haut risque, dont les obligations (gestion des risques, qualité des données, documentation, journalisation, contrôle humain, marquage CE) s'appliquent, après le report de l'omnibus IA, à compter du 2 décembre 2027. L'option 1 confond avec la notation sociale, interdite, qui évalue des personnes sur leur comportement social en général. L'option 3 vise les systèmes qui interagissent avec des personnes ou génèrent du contenu. L'option 4 est fausse : développer un système pour son propre usage, c'est le mettre en service, ce qui fait de l'établissement un fournisseur soumis au règlement."
         },
         {

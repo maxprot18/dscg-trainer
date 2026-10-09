@@ -29,12 +29,13 @@ function pdfToText(pdf, txt) {
 }
 
 // 1. Codes consolidés (miroir de la base LEGI de la DILA, mis à jour chaque jour).
-step('Codes (commerce, CGI, travail, civil, consommation)')
+step('Codes (commerce, CGI, travail, civil, consommation, pénal, propriété intellectuelle)')
 if (!have('codes')) {
   rmSync(join(DIR, 'codes'), { recursive: true, force: true })
   run('git', ['clone', '-q', '--depth', '1', '--filter=blob:none', '--no-checkout', 'https://github.com/LeMyst/Codes', join(DIR, 'codes')])
   run('git', ['-C', join(DIR, 'codes'), 'sparse-checkout', 'set', '--no-cone',
-    '/Code de commerce/', '/Code général des impôts/', '/Code du travail/', '/Code civil/', '/Code de la consommation/'])
+    '/Code de commerce/', '/Code général des impôts/', '/Code du travail/', '/Code civil/', '/Code de la consommation/',
+    '/Code pénal/', '/Code de la propriété intellectuelle/'])
   run('git', ['-C', join(DIR, 'codes'), 'checkout', '-q'])
 }
 console.log('  ', run('git', ['-C', join(DIR, 'codes'), 'log', '-1', '--format=%ci']).toString().trim())

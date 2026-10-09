@@ -196,6 +196,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : une vedette a une part de marché relative supérieure à 1 (DAS C : 2,40) ; celle de B n'est que de 0,30.",
+            "Inexact : une vache à lait combine faible croissance et part relative supérieure à 1 (DAS A : 3 % et 1,50).",
+            "Exact : croissance de 15 % (> 10 %) et part de marché relative de 0,30 (< 1) : dilemme.",
+            "Inexact : un poids mort cumule faible croissance et faible part relative (DAS D : 1 % et 0,25) ; B croît de 15 %."
+          ],
           "explanation": "L'option 3 est exacte : croissance de 15 % (> 10 %) et part de marché relative de 0,30 (< 1). L'option 1 est fausse : une vedette a une part de marché relative supérieure à 1 (c'est le cas du DAS C : 12 % et 2,40). L'option 2 est fausse : une vache à lait est sur un marché à faible croissance avec une part relative supérieure à 1 (DAS A : 3 % et 1,50). L'option 4 est fausse : un poids mort cumule faible croissance et faible part relative (DAS D : 1 % et 0,25)."
         },
         {

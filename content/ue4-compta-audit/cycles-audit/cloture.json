@@ -470,6 +470,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : une observation ne s'emploie pas pour des anomalies significatives non corrigées ; le cumul atteint 102 500 €, au-delà du seuil de 80 000 €.",
+            "Exact : cumul 62 500 + 40 000 = 102 500 €, supérieur au seuil de signification ; faute d'effet diffus, certification avec réserve pour désaccord.",
+            "Inexact : la limitation suppose une impossibilité de collecter des éléments ; ici les anomalies sont connues et la direction refuse de corriger.",
+            "Inexact : le refus pour désaccord est réservé aux anomalies dont les effets sont diffus ; elles portent ici sur des postes identifiés."
+          ],
           "points": 2,
           "explanation": "Le cumul devient 62 500 + 40 000 = 102 500 €, supérieur au seuil de signification : les comptes comportent des anomalies significatives. Faute d'effet diffus, le CAC certifie avec réserve pour désaccord. Une observation (option 1) ne s'emploie pas pour des anomalies significatives non corrigées. La limitation (option 3) suppose une impossibilité de collecter des éléments, non un désaccord. Le refus pour désaccord (option 4) est réservé aux anomalies dont les effets sont diffus."
         },
@@ -662,6 +668,12 @@
           ],
           "answer": [
             1
+          ],
+          "option_explanations": [
+            "Inexact : le jugement et la liquidation révèlent des situations existant à la clôture (rupture en juin N, impayés depuis octobre N) : ils entraînent un ajustement.",
+            "Exact : jugement et liquidation révèlent des situations existant à la clôture (ajustement) ; l'incendie, né après la clôture, va en annexe s'il est significatif.",
+            "Inexact : classement inversé : l'incendie est un événement nouveau, né après la clôture, alors que jugement et liquidation révèlent des situations antérieures.",
+            "Inexact : la liquidation de Delta révèle aussi une situation existant à la clôture (impayés depuis octobre N) et entraîne un ajustement."
           ],
           "points": 2,
           "explanation": "Le jugement et la liquidation de Delta révèlent des situations qui existaient à la clôture (rupture du contrat en juin N, impayés depuis octobre N) : ils entraînent un ajustement. L'incendie est un événement nouveau, né après la clôture : il est mentionné dans l'annexe s'il est significatif, sans ajustement des comptes de N."

@@ -67,6 +67,12 @@
           "answer": [
             1
           ],
+          "option_explanations": [
+            "Inexact : DORA, acte sectoriel, s'applique aux entités financières à la place de NIS 2, dont les annexes ne visent d'ailleurs pas les établissements de paiement.",
+            "Exact : établissement de paiement agréé, Tempo relève de DORA, directement applicable depuis le 17 janvier 2025, et déclare ses incidents majeurs à l'ACPR (art. 19 §1).",
+            "Inexact : DORA est un règlement, directement applicable sans transposition ; la CNIL n'est compétente que pour les violations de données personnelles.",
+            "Inexact : l'article 16 vise notamment les établissements de paiement exemptés ; Tempo applique le régime complet, et la BCE est informée par l'ACPR, pas par l'entité."
+          ],
           "explanation": "Tempo est un établissement de paiement agréé : elle entre dans le champ du règlement (UE) 2022/2554, dit DORA (art. 2 §1 b). Ce règlement est directement applicable depuis le 17 janvier 2025 (art. 64), sans transposition. Elle déclare ses incidents majeurs liés aux TIC à son autorité compétente (art. 19 §1), l'ACPR pour un établissement de paiement en France ; la BCE est informée par cette autorité (art. 19 §6), pas par l'entité. L'option 2 est donc la bonne.\n\nL'option 1 est doublement fausse. Au 8 octobre 2026, NIS 2 n'est toujours pas transposée en France : le projet de loi n'est pas promulgué. Et pour les entités financières, DORA est l'acte sectoriel qui s'applique à la place de NIS 2 (NIS 2, art. 4 et considérant 28). Les établissements de paiement ne figurent d'ailleurs pas dans les annexes de NIS 2. L'option 3 traite DORA comme une directive, alors que c'est un règlement, et confond l'autorité financière avec la CNIL, compétente seulement pour les violations de données personnelles (RGPD art. 33). L'option 4 se trompe de régime : le cadre simplifié de l'article 16 est réservé notamment aux établissements de paiement exemptés et aux petites entreprises d'investissement non interconnectées. Tempo, établissement agréé de 145 salariés, applique le régime complet des articles 5 à 15."
         },
         {
@@ -90,6 +96,12 @@
           ],
           "answer": [
             2
+          ],
+          "option_explanations": [
+            "Inexact : la revue des habilitations porte sur l'environnement de toutes les applications ; c'est un contrôle général relevant de la gestion des accès.",
+            "Inexact : la séparation des environnements est un contrôle général informatique relevant de la gestion des changements.",
+            "Exact : intégré à Règl, ce blocage agit sur chaque opération de versement qu'elle traite : c'est un contrôle applicatif.",
+            "Inexact : la supervision des sauvegardes est un contrôle général informatique relevant de l'exploitation, et non d'une transaction."
           ],
           "explanation": "Un contrôle applicatif est intégré à une application et porte sur les transactions qu'elle traite. Le blocage d'un versement vers un compte bancaire récemment modifié (option 3) répond à cette définition : il agit sur chaque opération de versement. Les trois autres contrôles portent sur l'environnement de toutes les applications et sont des contrôles généraux informatiques. La revue des habilitations (option 1) relève de la gestion des accès. La séparation des environnements (option 2) relève de la gestion des changements. La supervision des sauvegardes (option 4) relève de l'exploitation. Le contrôle applicatif n'est fiable dans la durée que si ces contrôles généraux le sont : un développeur qui déploie seul en production peut modifier ou désactiver le blocage."
         },
@@ -134,6 +146,12 @@
           ],
           "answer": [
             3
+          ],
+          "option_explanations": [
+            "Inexact : les 4 heures courent depuis la classification comme majeur (14 h 00), et non depuis la détection (6 h 10).",
+            "Inexact : 6 h 10 + 24 h n'est que le plafond ; la limite de 4 heures après classification tombe plus tôt et s'applique.",
+            "Inexact : le délai de 72 heures est celui de la notification d'une violation de données personnelles (RGPD art. 33), pas de DORA.",
+            "Exact : la limite la plus proche s'applique : classification à 14 h + 4 h, soit lundi 18 h, avant le plafond de mardi 6 h 10."
           ],
           "explanation": "Deux limites se combinent, et la plus proche s'applique. La première tombe 4 heures après la classification de l'incident comme majeur : 14 h 00 + 4 h, soit le lundi à 18 h 00. La seconde tombe 24 heures après la prise de connaissance, c'est-à-dire après le constat de l'astreinte : 6 h 10 + 24 h, soit le mardi à 6 h 10. L'échéance est donc le **lundi 7 septembre à 18 h 00** (option 4). La notification envoyée le mardi à 11 h 00 est tardive ; elle dépasse même le plafond de 24 heures.\n\nL'option 1 fait courir les 4 heures depuis la détection, alors qu'elles courent depuis la classification. L'option 2 ne retient que le plafond de 24 heures. L'option 3 applique le délai de 72 heures, qui est celui de la notification d'une violation de données personnelles (RGPD art. 33). Deux autres faiblesses ressortent de la chronologie. La classification a pris près de 8 heures après la détection. Et les commerçants, dont les intérêts financiers étaient touchés, devaient être informés sans retard injustifié (DORA, art. 19 §3), et non deux jours plus tard."
         },
@@ -279,6 +297,12 @@
           "answer": [
             2
           ],
+          "option_explanations": [
+            "Inexact : une ligne de faits est un produit vendu dans la journée, pas un ticket ; le panier moyen se calcule avec les tickets de la caisse.",
+            "Inexact : l'entrepôt est alimenté chaque nuit par les systèmes opérationnels et ne les remplace pas.",
+            "Exact : modèle en étoile : les dimensions portent les axes d'analyse, la table de faits les mesures, au grain jour × magasin × produit.",
+            "Inexact : un chargement nocturne donne des données à J+1, et le grain jour × magasin × produit ne descend pas au ticket."
+          ],
           "explanation": "L'option 3 décrit correctement le modèle en étoile. La table de faits porte les mesures numériques, et les dimensions portent les axes d'analyse. Le grain jour × magasin × produit signifie qu'une ligne correspond à un produit vendu dans un magasin un jour donné.\n\nL'option 1 confond lignes de faits et tickets : un ticket comprend plusieurs produits, et un produit apparaît dans de nombreux tickets. Le nombre de lignes du jour est donc le nombre de produits différents vendus. Le panier moyen se calcule avec le nombre de tickets transmis par le logiciel de caisse. L'option 2 est fausse : l'entrepôt est alimenté par les systèmes opérationnels et ne les remplace pas. L'option 4 est fausse deux fois : un chargement nocturne donne des données à J+1, et le grain choisi ne descend pas au ticket."
         },
         {
@@ -323,6 +347,12 @@
           "answer": [
             3
           ],
+          "option_explanations": [
+            "Inexact : la condition de date dans le WHERE élimine Rodez (date_vente NULL) après la jointure ; la jointure externe devient interne, trois lignes.",
+            "Inexact : la jointure interne écarte d'emblée Rodez, qui n'a aucune vente ; le résultat ne compte que trois lignes.",
+            "Inexact : sans condition de jointure, le produit cartésien rattache toutes les ventes de septembre à chaque magasin : quatre lignes à 5 650 €.",
+            "Exact : la date dans le ON de la jointure externe gauche conserve tous les magasins : M1 2 045 €, M2 2 565 €, M3 1 040 €, Rodez vide."
+          ],
           "explanation": "L'option 4 place la condition sur la date dans la clause ON de la jointure externe gauche. Tous les magasins sont conservés ; seules les ventes de septembre leur sont rattachées. Résultat : M1 2 045 €, M2 2 565 €, M3 1 040 €, M7 Rodez vide (NULL).\n\nL'option 1 place la même condition dans le WHERE, qui s'applique après la jointure. Pour Rodez, date_vente vaut NULL : la condition est fausse, la ligne disparaît, et la jointure externe se comporte comme une jointure interne (trois lignes). L'option 2 est une jointure interne : Rodez, sans vente, disparaît d'emblée. L'option 3 n'a pas de condition de jointure : le produit cartésien rattache toutes les ventes de septembre à chaque magasin. Les quatre lignes affichent alors le même total de 5 650 €, ce qui est faux."
         },
         {
@@ -366,6 +396,12 @@
           ],
           "answer": [
             3
+          ],
+          "option_explanations": [
+            "Inexact : l'assistant est soumis à l'obligation de transparence (art. 50 §1), et l'inférence des émotions au travail est une pratique interdite.",
+            "Inexact : cette option inverse les projets 2 et 3 : la présélection des CV est à haut risque, les caméras d'émotions sont interdites.",
+            "Inexact : l'assistant n'entre dans aucun domaine de l'annexe III ; il relève seulement de la transparence, et la présélection des CV est à haut risque.",
+            "Exact : transparence pour l'assistant (art. 50 §1), haut risque pour le recrutement (annexe III, point 4 a), interdiction de l'inférence des émotions au travail."
           ],
           "explanation": "L'option 4 est la bonne.\n- **(1)** Un système destiné à interagir directement avec des personnes doit les informer qu'elles échangent avec une IA (art. 50 §1), obligation applicable depuis le 2 août 2026. Il n'est ni interdit ni à haut risque.\n- **(2)** Les systèmes destinés au recrutement, notamment pour analyser et filtrer les candidatures et évaluer les candidats, figurent à l'annexe III (point 4 a) : c'est un système à **haut risque** (art. 6 §2). Les obligations correspondantes s'appliquent à compter du 2 décembre 2027, date fixée par le règlement (UE) 2026/1744.\n- **(3)** Inférer les émotions d'une personne sur le lieu de travail est une **pratique interdite**, sauf pour des raisons médicales ou de sécurité (art. 5 §1 f). Mesurer l'« engagement » des caissiers pour leur évaluation n'en relève pas. L'interdiction s'applique depuis le 2 février 2025 (art. 113).\n\nL'option 1 ignore l'obligation de transparence et l'interdiction. L'option 2 inverse les catégories des projets 2 et 3. L'option 3 classe l'assistant à haut risque, alors qu'il n'entre dans aucun domaine de l'annexe III."
         },
