@@ -1,0 +1,471 @@
+{
+  "exercises": [
+    {
+      "id": "ue1-dossier-0005",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE1",
+      "theme": "droit-societes",
+      "notion": "pactes-associes-clauses-statutaires",
+      "difficulty": 3,
+      "tags": [
+        "sujet type examen",
+        "LBO",
+        "holding de reprise",
+        "pacte d'associés",
+        "actions de préférence",
+        "good leaver / bad leaver",
+        "conventions réglementées",
+        "frais d'acquisition des titres",
+        "régime mère-fille",
+        "intégration fiscale",
+        "amendement Charasse"
+      ],
+      "source_ref": "C. com. art. L227-1, L227-9, L227-10, L227-11, L227-12, L227-14, L227-15, L225-43, L228-11, L228-12, L228-15, L233-3, L242-6 et L244-1 ; C. civ. art. 1123, 1199, 1221 et 1843-4 ; C. trav. art. L1331-2 ; CGI art. 145, 209 VII, 216, 223 A, 223 B, 223 B bis, 223 I, 212 bis et 726 ; BOI-IS-GPE-20-20-80-20 ; PCG art. 221-1 ; comptes 145, 2611 et 68725",
+      "verified": true,
+      "estimated_seconds": 5400,
+      "total_points": 20,
+      "title": "Armor Participations : le rachat de Tanguy Cartonnages par son fondateur et un fonds",
+      "context": "La **SAS Tanguy Cartonnages** (TC), installée à Morlaix, fabrique des emballages en carton ondulé pour l'agroalimentaire. Elle emploie 240 salariés et dégage un résultat fiscal annuel d'environ 4 M€. Son fondateur, **M. Hervé Tanguy**, 61 ans, en détient 80 % ; sa sœur **Anne**, qui n'y travaille pas, détient le solde et souhaite vendre.\n\nPour acheter les parts de sa sœur, préparer sa propre succession et associer ses trois principaux cadres au capital, M. Tanguy a réalisé le 1er juillet 2026 une opération de rachat avec effet de levier par le fondateur : il a constitué une holding, la **SAS Armor Participations** (AP), dans laquelle sont entrés la **SCR Ouessant Capital**, société de capital-risque, et trois cadres de TC. AP a acquis 100 % des actions TC, en finançant le prix par ses fonds propres et par un emprunt bancaire. M. Tanguy reste majoritaire et dirige AP et TC.\n\nVous êtes collaborateur du cabinet d'expertise comptable qui tient la comptabilité d'AP et de TC. En octobre 2026, M. Tanguy et le représentant de la SCR vous demandent de vérifier le volet juridique de l'opération (actions de préférence, statuts, pacte d'associés, conventions conclues autour du rachat), puis d'en chiffrer les conséquences fiscales pour la clôture 2026 et l'exercice 2027 (annexes 1 à 4).\n\n**Hypothèses** : droit en vigueur au 9 octobre 2026 ; taux de l'IS : 25 %, sans contribution sociale ni contribution exceptionnelle ; AP et TC sont soumises à l'IS au taux normal ; AP applique le régime mère-fille à tous les dividendes qu'elle reçoit de TC et s'engage à conserver les titres TC au moins deux ans ; toutes les conditions de l'intégration fiscale non évoquées dans les annexes sont remplies.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Le montage du 1er juillet 2026",
+          "content": "**Avant l'opération.** Le capital de TC est composé de 100 000 actions ordinaires : M. Hervé Tanguy en détient 80 000 depuis 1998, Mme Anne Tanguy 20 000. TC n'est pas une société à prépondérance immobilière.\n\n**Constitution d'AP.** Pour les besoins de l'opération, M. Tanguy constitue seul AP le 1er juin 2026, au capital de 10 000 € libéré en numéraire (1 000 actions ordinaires de 10 €). AP désigne un commissaire aux comptes dès sa constitution. Son premier exercice sera clos le 31 décembre 2026 ; les suivants, de douze mois, coïncideront avec l'année civile, comme ceux de TC.\n\n**1er juillet 2026, 9 h — augmentation du capital d'AP** de 11 990 000 € en numéraire, intégralement libérée. Répartition du capital à l'issue de l'opération :\n\n| Associé | Catégorie d'actions | Nombre d'actions | Capital (€) | Capital et droits de vote |\n| --- | --- | ---: | ---: | ---: |\n| M. Hervé Tanguy | ordinaires | 660 000 | 6 600 000 | 55 % |\n| SCR Ouessant Capital (SA) | préférence, catégorie P | 420 000 | 4 200 000 | 35 % |\n| Mme Claire Morvan | ordinaires | 60 000 | 600 000 | 5 % |\n| M. Julien Rivière | ordinaires | 40 000 | 400 000 | 3,33 % |\n| Mme Inès Le Gall | ordinaires | 20 000 | 200 000 | 1,67 % |\n| **Total** | | **1 200 000** | **12 000 000** | **100 %** |\n\nChaque action, ordinaire ou de préférence, donne droit à une voix. M. Tanguy a libéré sa souscription en numéraire au moyen d'un prêt-relais bancaire personnel, remboursé le jour même grâce au prix de cession de ses actions TC.\n\n**1er juillet 2026, 11 h — acquisition** par AP des 100 000 actions TC au prix de 300 € par action, soit 30 000 000 € : 24 000 000 € versés à M. Tanguy et 6 000 000 € à Mme Anne Tanguy. Financement : fonds propres d'AP et emprunt bancaire de 18 800 000 € au taux fixe de 5,5 % sur sept ans, sans remboursement du capital avant le 31 décembre 2028 ; les actions TC sont nanties au profit de la banque.\n\n**Dirigeants.** M. Tanguy préside AP et TC. Mme Morvan est directrice générale de TC, fonction prévue par les statuts de TC. M. Rivière (directeur industriel) et Mme Le Gall (directrice administrative et financière) sont salariés de TC et n'y exercent aucun mandat social. Depuis le 1er juillet 2026, AP est l'associé unique de TC."
+        },
+        {
+          "title": "Annexe 2 — Extraits des statuts d'AP et du pacte d'associés",
+          "content": "**Statuts d'AP (mis à jour le 1er juillet 2026)**\n\n- *Article 9 — Actions de préférence de catégorie P.* Créées le 1er juillet 2026 par décision de l'associé unique, au vu du rapport spécial du commissaire aux comptes et du rapport d'un commissaire aux avantages particuliers, au profit de la SCR Ouessant Capital. Elles confèrent une voix par action, un dividende prioritaire et cumulatif égal à 6 % de leur prix de souscription, prélevé sur le bénéfice distribuable avant toute autre distribution, et un droit d'information renforcé (reporting mensuel). Elles sont converties en actions ordinaires, à raison d'une pour une, en cas de cession de la totalité du capital d'AP.\n- *Article 12 — Agrément.* Toute cession d'actions, à quelque titre et au profit de quelque personne que ce soit, y compris entre associés ou au profit d'un conjoint, est soumise à l'agrément préalable des associés statuant à la majorité des deux tiers des droits de vote.\n\n**Pacte d'associés du 1er juillet 2026**, conclu pour dix ans entre M. Tanguy, la SCR et les trois cadres ; AP y intervient pour en prendre acte. Ses stipulations ne sont pas reprises dans les statuts.\n\n- *Article 3 — Inaliénabilité.* Les cadres s'interdisent de céder leurs actions avant le 1er juillet 2029, sauf en application de l'article 7.\n- *Article 4 — Préemption.* Tout projet de cession est notifié aux autres signataires, qui disposent pendant trente jours d'un droit de préemption au prorata de leur participation.\n- *Article 5 — Sortie conjointe totale.* Si un projet de cession doit faire perdre à M. Tanguy le contrôle d'AP, la SCR et les cadres peuvent exiger que l'acquéreur leur rachète la totalité de leurs actions au même prix ; à défaut, M. Tanguy s'engage à les acquérir lui-même à ce prix.\n- *Article 6 — Comité stratégique.* Il réunit M. Tanguy, deux représentants de la SCR et Mme Morvan ; l'accord de la SCR est requis pour le budget annuel, tout endettement supérieur à 1 M€ et toute acquisition.\n- *Article 7 — Départ d'un cadre.* Chaque cadre consent à M. Tanguy et à la SCR une promesse de vente de toutes ses actions AP, qu'ils peuvent lever au prorata de leur participation dans les six mois de la cessation de ses fonctions dans TC.\n- *Article 7 (suite) — good leaver* (décès, invalidité, retraite, licenciement ou révocation sans faute grave ou lourde, tout départ après le 1er juillet 2030) : prix égal à la juste valeur.\n- *Article 7 (suite) — bad leaver* (démission avant le 1er juillet 2030, licenciement ou révocation pour faute grave ou lourde) : prix égal à 80 % du plus faible des deux montants suivants : prix de souscription, juste valeur.\n- *Article 7 (suite) — juste valeur* : sept fois l'EBITDA consolidé du dernier exercice clos, diminué de l'endettement net consolidé ; à défaut d'accord sur son application, elle est déterminée par un expert désigné dans les conditions de l'article 1843-4 du Code civil."
+        },
+        {
+          "title": "Annexe 3 — Conventions conclues autour du rachat",
+          "content": "1. **Convention d'animation** du 1er juillet 2026 entre AP et TC : AP assure la direction stratégique, financière et juridique de TC moyennant une rémunération annuelle de 360 000 € HT, égale au coût des moyens qu'elle y consacre majoré de 5 %, conforme aux pratiques de groupes comparables.\n2. **Bail commercial de l'usine de Morlaix**, consenti à TC par la SCI Kerhuel, dont M. Tanguy est gérant et détient 90 % des parts. Un avenant signé le 1er juillet 2026, après l'acquisition, par M. Tanguy, pour la SCI et pour TC, porte le loyer annuel de 240 000 € à 300 000 € HT ; un expert évalue la valeur locative de marché à 250 000 €.\n3. **Prêt de 150 000 €** consenti le 25 juin 2026 par TC à Mme Morvan, au taux de 2 %, pour financer une partie de sa souscription au capital d'AP.\n4. **Convention de suivi** du 1er juillet 2026 entre AP et la SCR Ouessant Capital : la SCR facture à AP 60 000 € HT par an d'honoraires de conseil stratégique."
+        },
+        {
+          "title": "Annexe 4 — Frais de l'opération et prévisions fiscales",
+          "content": "**Frais supportés par AP en 2026** (hors taxe ; la TVA, récupérable, est ignorée)\n\n| Nature | Montant (€) |\n| --- | ---: |\n| Honoraires du conseil en fusions-acquisitions (recherche et négociation de l'acquisition de TC) | 300 000 |\n| Honoraires d'avocats : rédaction et négociation du protocole de cession des actions TC | 120 000 |\n| Honoraires d'audit d'acquisition (revue financière, fiscale et sociale de TC) | 90 000 |\n| Honoraires d'avocats : rédaction des statuts d'AP et du pacte d'associés | 30 000 |\n| Frais de constitution d'AP (greffe, annonces légales) | 4 000 |\n| Commission d'arrangement de l'emprunt bancaire, répartie sur sept ans | 175 000 |\n| Droits d'enregistrement de la cession des actions TC, à la charge d'AP | à calculer |\n\nAP rattache au coût d'acquisition des titres TC (compte 2611) tous les frais qui peuvent l'être et pratique la déduction fiscale de ces frais sur cinq ans par voie d'amortissement dérogatoire, prorata temporis calculé en mois.\n\n**Intégration fiscale.** AP envisage de constituer un groupe fiscal avec TC, qui a déjà donné son accord. AP prévoit pour son premier exercice (1er juin – 31 décembre 2026) un déficit fiscal de 592 500 €.\n\n**Prévisions 2027**\n\n| AP — compte de résultat prévisionnel | Montant (€) |\n| --- | ---: |\n| Rémunération d'animation facturée à TC | 360 000 |\n| Dividende reçu de TC en mai 2027 (prélevé sur le bénéfice 2026) | 2 400 000 |\n| Charges externes et frais de personnel (honoraires de la SCR compris) | − 310 000 |\n| Intérêts de l'emprunt bancaire (compte 661) | − 1 034 000 |\n| Quote-part annuelle de la commission d'arrangement | − 25 000 |\n| Dotation aux amortissements dérogatoires (frais d'acquisition des titres TC) | − 108 000 |\n| **Résultat comptable avant impôt** | **1 283 000** |\n\n- Pour AP, aucune autre réintégration ni déduction que celles qu'appelle le dividende.\n- TC : résultat fiscal prévisionnel 2027 de 4 200 000 € (rémunération d'animation déduite) ; charges financières (compte 66) : 86 000 € ; produits financiers : 6 000 €.\n- Montant moyen des dettes en 2027 (somme des dettes à la fin de chaque mois ÷ 12) : AP 19 000 000 € ; TC 9 000 000 €.\n- Charges financières nettes du groupe en 2027, au sens du III de l'article 212 bis du CGI : 1 139 000 €."
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1-actions-preference",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À l'aide des annexes 1 et 2, quelle affirmation relative à la création des actions de préférence de catégorie P est exacte ?",
+          "options": [
+            "Le président d'AP pouvait les créer seul, puisqu'il exerce dans la SAS les attributions du conseil d'administration, et leurs droits particuliers pouvaient être fixés par le seul pacte d'associés",
+            "Leur création relevait de la décision collective des associés, prise ici par M. Tanguy, associé unique, au vu d'un rapport spécial du commissaire aux comptes ; émises au profit d'une personne nommément désignée, elles imposaient l'appréciation des avantages particuliers par un commissaire aux comptes sans mission dans AP depuis trois ans ; leurs droits sont fixés par les statuts",
+            "Elles ne pouvaient pas être assorties du droit de vote : une action de préférence est par nature privée de vote en contrepartie de son dividende prioritaire",
+            "Leur création exigeait l'unanimité des futurs associés, SCR comprise, et la SCR, bénéficiaire des avantages particuliers, devait prendre part au vote pour les approuver"
+          ],
+          "answer": [
+            1
+          ],
+          "option_explanations": [
+            "Inexact : l'augmentation de capital relève des associés (L227-9) et les droits particuliers sont définis par les statuts (L228-11), non par un pacte.",
+            "Exact : décision de l'associé unique, rapport spécial du commissaire aux comptes (L228-12) et procédure des avantages particuliers pour un bénéficiaire désigné (L228-15).",
+            "Inexact : les actions de préférence sont créées avec ou sans droit de vote (L228-11) ; celles de la SCR ont une voix chacune.",
+            "Inexact : aucune unanimité n'est requise et le bénéficiaire d'avantages particuliers ne participe pas au vote qui les approuve."
+          ],
+          "explanation": "Les actions de préférence peuvent être créées à la constitution ou en cours de vie sociale, avec ou sans droit de vote, et leurs droits particuliers sont définis par les **statuts** (C. com. art. L228-11), applicable à la SAS par renvoi de l'article L227-1. L'émission relève de l'organe compétent pour modifier le capital, qui est en SAS la collectivité des associés (L227-9, al. 2) : AP n'ayant alors qu'un associé, M. Tanguy l'exerce seul (L227-1, al. 2). Elle suppose un rapport spécial du commissaire aux comptes (L228-12). Les actions P étant émises au profit d'une personne nommément désignée, la SCR, la procédure des avantages particuliers s'applique, l'appréciation étant confiée à un commissaire aux comptes qui n'a réalisé aucune mission dans la société depuis trois ans et n'en réalise pas (L228-15). L'option 1 confond les pouvoirs du président et ceux des associés ; l'option 3 est fausse, le vote pouvant être maintenu ; l'option 4 invente une unanimité, réservée en SAS aux clauses d'inaliénabilité (L227-19), et fait voter le bénéficiaire, qui en est exclu."
+        },
+        {
+          "id": "q2-sortie-conjointe",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "Vrai ou faux ? À l'aide de l'annexe 2 : si M. Tanguy cédait, après avoir obtenu l'agrément statutaire, 30 % du capital d'AP à un groupe industriel qui refuse d'étendre son offre à la SCR, celle-ci pourrait obtenir l'annulation de la cession, la clause de sortie conjointe étant opposable à l'acquéreur comme une clause statutaire.",
+          "answer": false,
+          "explanation": "Faux. La sortie conjointe ne figure que dans le pacte, contrat soumis à l'effet relatif (C. civ. art. 1199) : elle n'oblige que ses signataires et la nullité de l'article L227-15, réservée aux cessions contraires aux **statuts**, ne s'applique pas. L'article 1123, qui permet la nullité ou la substitution en cas de violation d'un pacte de préférence connue du tiers, ne vise pas cette clause. Cédant 30 %, M. Tanguy passerait de 55 % à 25 % des droits de vote et perdrait le contrôle : la SCR peut le mettre en demeure d'exécuter son engagement de rachat (exécution forcée, art. 1221) ou obtenir des dommages-intérêts ; l'acquéreur n'engagerait que sa responsabilité délictuelle s'il s'était rendu complice de la violation en connaissance de cause. C'est pourquoi les fonds demandent souvent que ces clauses soient aussi inscrites dans les statuts."
+        },
+        {
+          "id": "q3-prix-bad-leaver",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À l'aide des annexes 1 et 2 : M. Rivière serait licencié pour faute grave par TC le 15 mars 2028, la juste valeur de l'action AP étant alors de 22 €. Calculez le prix total que M. Tanguy et la SCR devraient lui verser s'ils levaient la promesse de vente. Réponse en euros.",
+          "expected_value": 320000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Un licenciement pour faute grave avant le 1er juillet 2030 fait de M. Rivière un *bad leaver* (pacte, art. 7). Prix unitaire : 80 % × min(prix de souscription 10 € ; juste valeur 22 €) = 80 % × 10 = 8 €. Prix total : 40 000 × 8 = **320 000 €**, au lieu de 880 000 € s'il était *good leaver*. La chambre commerciale de la Cour de cassation admet la validité de ces clauses de prix minoré stipulées dans un pacte d'associés, y compris à l'égard d'un cadre salarié (Cass. com., 7 juin 2016, n° 14-17.978) : le prix rémunère une cession d'actions entre associés. Le grief tiré d'une sanction pécuniaire prohibée par le droit du travail (C. trav. art. L1331-2) reste toutefois discuté en doctrine lorsque le prix dépend du motif du licenciement. Si M. Rivière contestait la juste valeur, l'expert désigné selon l'article 1843-4 du Code civil serait tenu d'appliquer la méthode prévue par le pacte. Erreurs classiques : retenir le prix de souscription sans décote (400 000 €) ou 80 % de la juste valeur (704 000 €)."
+        },
+        {
+          "id": "q4-cession-sans-agrement",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À l'aide des annexes 1 et 2 : le 15 septembre 2026, Mme Le Gall a cédé 5 000 actions AP à son conjoint, sans solliciter l'agrément des associés ni notifier son projet aux autres signataires du pacte. Quelle est la situation de cette cession ?",
+          "options": [
+            "Elle est valable : une cession au conjoint échappe de plein droit à toute clause d'agrément, comme le prévoit le Code de commerce pour les sociétés anonymes",
+            "Elle est valable entre les époux mais inopposable à AP ; Mme Le Gall ne doit que des dommages-intérêts aux bénéficiaires de la préemption",
+            "Elle est nulle, car contraire à la clause d'agrément statutaire, même si le conjoint est de bonne foi ; la violation de la préemption et de l'inaliénabilité stipulées au pacte expose en outre Mme Le Gall à des dommages-intérêts envers les autres signataires",
+            "Elle n'est annulable que si le conjoint connaissait l'existence du pacte et l'intention des bénéficiaires de la préemption de s'en prévaloir"
+          ],
+          "answer": [
+            2
+          ],
+          "option_explanations": [
+            "Inexact : en SAS, les statuts peuvent soumettre toute cession à agrément (L227-14) ; ceux d'AP visent expressément le conjoint.",
+            "Inexact : la violation d'une clause statutaire de SAS entraîne la nullité de la cession (L227-15), pas une simple inopposabilité.",
+            "Exact : nullité de la cession contraire aux statuts (L227-15) ; la violation du pacte n'engage que la responsabilité contractuelle de Mme Le Gall.",
+            "Inexact : cette condition (C. civ. art. 1123) concerne la violation d'un pacte de préférence, non celle d'une clause statutaire d'agrément."
+          ],
+          "explanation": "Les statuts d'une SAS peuvent soumettre **toute** cession d'actions à l'agrément préalable (C. com. art. L227-14) : l'article 12 des statuts d'AP vise expressément les cessions au conjoint, sans que joue la dispense prévue pour les sociétés anonymes. Une cession effectuée en violation des clauses statutaires est **nulle** (L227-15), quelle que soit la bonne foi du cessionnaire (option 3). Le pacte n'ayant qu'un effet relatif, la violation de la préemption (art. 4) et de l'inaliénabilité (art. 3) n'engage que la responsabilité contractuelle de Mme Le Gall ; la nullité ou la substitution de l'article 1123 du Code civil supposeraient en outre la connaissance du pacte et de l'intention de s'en prévaloir, mais elles sont inutiles ici puisque la nullité statutaire suffit. L'option 1 transpose à tort une règle de SA ; l'option 2 confond nullité et inopposabilité ; l'option 4 applique au statut une condition propre au pacte de préférence."
+        },
+        {
+          "id": "q5-conventions",
+          "kind": "open",
+          "points": 2.5,
+          "prompt": "À l'aide des annexes 1 et 3, qualifiez chacune des quatre conventions au regard des règles des conventions réglementées et interdites de la SAS, en indiquant la procédure applicable et la sanction encourue.",
+          "model_answer": "**Convention d'animation AP–TC.** Dans TC, société à associé unique, les conventions conclues avec son associé unique AP ne sont soumises à aucune approbation : elles sont seulement mentionnées au registre des décisions (C. com. art. L227-10, dernier alinéa). Rémunérant des services réels au coût majoré de 5 %, conforme aux pratiques des groupes, elle peut d'ailleurs être regardée comme une opération courante conclue à des conditions normales, exclue de tout contrôle (L227-11). Dans AP, TC n'est ni dirigeant ni associé : le texte de la SAS ne vise pas cette convention.\n\n**Avenant au bail avec la SCI Kerhuel.** M. Tanguy, président de TC, contracte avec TC par l'intermédiaire de la SCI qu'il contrôle et gère : c'est une convention conclue par personne interposée avec le dirigeant. Le loyer dépassant de 50 000 € la valeur locative, elle n'est pas conclue à des conditions normales. TC étant unipersonnelle, elle doit être mentionnée au registre des décisions (L227-10, dernier alinéa). Surtout, faire supporter à TC un loyer excessif au profit d'une société dans laquelle il est intéressé expose M. Tanguy au délit d'abus de biens sociaux (L242-6, 3°, applicable au président de SAS par L244-1) : il faut ramener le loyer à la valeur de marché.\n\n**Prêt de TC à Mme Morvan.** Mme Morvan est directrice générale de TC, dirigeante au sens des statuts : il est interdit à la société de lui consentir un emprunt (L227-12, renvoyant à L225-43). La convention est **nulle** de nullité absolue, sans régularisation possible par une décision de l'associé unique ; le prêt doit être remboursé et le financement de Mme Morvan trouvé ailleurs (banque, prêt personnel).\n\n**Convention de suivi AP–SCR.** La SCR détient 35 % des droits de vote d'AP, plus de 10 % : la convention relève de L227-10. Le commissaire aux comptes d'AP présente aux associés un rapport sur cette convention et les associés statuent sur ce rapport, selon les règles fixées par les statuts. Non approuvée, elle produit néanmoins ses effets, les conséquences dommageables pour AP restant à la charge de la SCR et, éventuellement, du président et des autres dirigeants.",
+          "key_points": [
+            "Convention d'animation : mention au registre de TC, société à associé unique (L227-10, dernier alinéa), voire convention libre si courante et normale (L227-11)",
+            "Bail : convention avec le dirigeant par personne interposée (SCI), loyer anormal, mention au registre de TC et risque d'abus de biens sociaux (L242-6, L244-1)",
+            "Prêt à la directrice générale de TC : convention interdite (L227-12 et L225-43), nullité absolue non régularisable",
+            "Convention avec la SCR, associée à plus de 10 % des voix : rapport du commissaire aux comptes et décision des associés (L227-10)",
+            "Convention réglementée non approuvée : elle produit ses effets, conséquences dommageables à la charge de l'intéressé et éventuellement des dirigeants"
+          ],
+          "explanation": "Méthode : identifier pour chaque convention la société concernée (AP, pluripersonnelle, ou TC, unipersonnelle) et la qualité du cocontractant (associé unique, dirigeant direct ou par personne interposée, associé à plus de 10 % des voix), écarter les opérations courantes à conditions normales, puis distinguer la convention interdite, nulle, de la convention réglementée, qui produit ses effets même désapprouvée."
+        },
+        {
+          "id": "q6-frais-acquisition",
+          "kind": "numeric",
+          "points": 1,
+          "prompt": "À l'aide des annexes 1 et 4, calculez le montant total des frais d'acquisition rattachés au coût d'acquisition des titres TC au sens du VII de l'article 209 du CGI, droits d'enregistrement compris. Réponse en euros.",
+          "expected_value": 540000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Les frais d'acquisition de titres de participation s'entendent des droits de mutation, honoraires, commissions et frais d'actes **liés à l'acquisition** (CGI art. 209, VII ; PCG art. 221-1 pour l'option comptable). Droits d'enregistrement : cession d'actions d'une société par actions non cotée et non à prépondérance immobilière, taux de 0,1 % (CGI art. 726, I, 1°) : 30 000 000 × 0,1 % = 30 000 €. Total : 300 000 + 120 000 + 90 000 + 30 000 = **540 000 €**. Sont exclus : les honoraires de rédaction des statuts et du pacte et les frais de constitution (organisation de la holding), ainsi que la commission d'arrangement, qui est un frais d'émission de l'emprunt réparti sur sa durée. Inclure ces trois postes donne 749 000 € ; appliquer le taux de 3 % des parts sociales donne 1 410 000 €."
+        },
+        {
+          "id": "q7-ecriture-derogatoire",
+          "kind": "journal_entry",
+          "points": 1.5,
+          "prompt": "À l'aide de l'annexe 4 et de votre réponse à la question 6, passez chez AP, au 31 décembre 2026, l'écriture relative à la déduction fiscale des frais d'acquisition des titres TC. Utilisez les comptes 68725 et 145.",
+          "date": "2026-12-31",
+          "entries": [
+            {
+              "account": "68725",
+              "label": "Dotation aux amortissements dérogatoires (frais d'acquisition des titres TC)",
+              "debit": 54000,
+              "credit": 0
+            },
+            {
+              "account": "145",
+              "label": "Amortissements dérogatoires",
+              "debit": 0,
+              "credit": 54000
+            }
+          ],
+          "explanation": "Les frais rattachés au coût des titres (540 000 €) ne sont pas déductibles l'année de leur engagement mais peuvent être amortis sur cinq ans à compter de la date d'acquisition (CGI art. 209, VII). Les titres de participation n'étant pas amortissables en comptabilité, cette déduction passe par un amortissement dérogatoire : 540 000 ÷ 5 × 6/12 (1er juillet – 31 décembre 2026) = **54 000 €** ; débit 68725, crédit 145. En 2027, la dotation sera de 108 000 €. Oublier le prorata donne 108 000 € ; amortir aussi les frais exclus donnerait 74 900 €."
+        },
+        {
+          "id": "q8-integration-limitation",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À l'aide des annexes 1 et 4, quelle affirmation relative à l'intégration fiscale d'AP et de TC et à la déduction des charges financières est exacte ?",
+          "options": [
+            "Le groupe peut être constitué dès 2026, AP détenant 100 % de TC à la clôture et pouvant opter jusqu'au dépôt de sa première déclaration de résultat",
+            "Le groupe ne peut pas être constitué : le capital d'AP comprend des actions de préférence détenues à 35 % par une société de capital-risque",
+            "Le groupe peut être constitué à compter de 2027 ; chaque société applique alors séparément la limitation de l'article 212 bis, de sorte que les intérêts d'AP, supérieurs à 30 % de son propre résultat, sont en partie non déductibles",
+            "Le groupe peut être constitué à compter de 2027, sur option notifiée par AP au plus tard à la date limite de dépôt de sa déclaration de résultat de l'exercice 2026 ; la limitation des charges financières nettes s'apprécie au niveau du groupe et ne joue pas, celles-ci (1 139 000 €) étant inférieures à 3 M€"
+          ],
+          "answer": [
+            3
+          ],
+          "option_explanations": [
+            "Inexact : TC n'est détenue qu'à partir du 1er juillet 2026, pas de manière continue au cours de l'exercice, et les exercices 2026 diffèrent.",
+            "Inexact : les 95 % s'apprécient sur la détention de TC ; AP n'est pas détenue à 95 % par une société à l'IS.",
+            "Inexact : dans un groupe intégré, la limitation s'applique aux charges financières nettes du groupe sur le résultat d'ensemble (223 B bis).",
+            "Exact : détention continue de 95 % en 2027, option dans le délai, plafond de 3 M€ apprécié pour le groupe et non atteint."
+          ],
+          "explanation": "La filiale doit être détenue à 95 % au moins **de manière continue au cours de l'exercice** et les exercices doivent être ouverts et clos aux mêmes dates (CGI art. 223 A) : en 2026, AP n'acquiert TC que le 1er juillet et son premier exercice s'ouvre le 1er juin, contre le 1er janvier pour TC (option 1 fausse). Pour 2027, toutes les conditions sont remplies ; l'option est notifiée au plus tard à la date limite de dépôt de la déclaration de l'exercice précédent. Le capital d'AP, détenu par des personnes physiques et une SCR, n'est pas détenu à 95 % par une société soumise à l'IS : AP peut être société mère (option 2 fausse). Dans un groupe, la limitation générale s'applique aux charges financières nettes **du groupe**, dans la limite du plus élevé de 3 M€ ou de 30 % du résultat du groupe retraité (CGI art. 223 B bis) : 1 139 000 € < 3 000 000 €, aucune limitation (option 3 fausse). Ces charges restent toutefois exposées à la réintégration de l'article 223 B (question 10)."
+        },
+        {
+          "id": "q9-qpfc-2027",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À l'aide des annexes 1 et 4, et en supposant le groupe intégré constitué à compter du 1er janvier 2027, calculez le montant de la quote-part de frais et charges qu'AP doit réintégrer en 2027 au titre du dividende reçu de TC. Réponse en euros.",
+          "expected_value": 120000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Le dividende ouvre droit au régime mère-fille : participation de 100 %, au moins 5 % du capital, engagement de conservation de deux ans (CGI art. 145). Il est retranché du résultat d'AP, sous déduction d'une quote-part de frais et charges de 5 % (art. 216, I). Le taux de 1 % ne s'applique qu'aux produits d'une participation dans une société membre du même groupe **depuis plus d'un exercice** (216, I, 1°) : en 2027, TC n'est membre du groupe que depuis le 1er janvier 2027. QPFC : 2 400 000 × 5 % = **120 000 €**. Le taux de 1 % (24 000 €) ne s'appliquera qu'aux dividendes perçus à partir de 2028."
+        },
+        {
+          "id": "q10-charasse",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l'aide des annexes 1 et 4, calculez le montant des charges financières à réintégrer au résultat d'ensemble 2027 en application de l'article 223 B du CGI (« amendement Charasse »). Réponse en euros.",
+          "expected_value": 480000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "AP a acheté 80 000 actions TC à M. Tanguy, qui la contrôle au sens de l'article L233-3 du Code de commerce (55 % des droits de vote) : les charges financières déduites du résultat d'ensemble sont rapportées pour une fraction égale au rapport du prix d'acquisition de ces titres au montant moyen des dettes des sociétés du groupe, pendant l'exercice d'acquisition et les huit suivants (CGI art. 223 B, sixième alinéa). Numérateur : prix des actions achetées à M. Tanguy, 24 000 000 €, frais exclus, diminué des fonds apportés en numéraire à AP par des personnes autres que des sociétés du groupe lors de l'augmentation de capital simultanée à l'acquisition, cédant compris, et lors de sa constitution, AP ayant été créée immédiatement avant la cession pour l'opération : 12 000 000 € (CGI art. 223 B, sixième alinéa, deuxième phrase ; BOI-IS-GPE-20-20-80-20, § 90 à 140 : frais exclus, apports en numéraire effectivement versés dans les trois mois de l'achat) ; numérateur : 24 000 000 − 12 000 000 = 12 000 000 €. Les actions achetées à Anne, qui ne contrôle pas AP, ne sont pas visées. Dénominateur : 19 000 000 + 9 000 000 = 28 000 000 €. Charges financières déduites (comptes 66, entièrement déduites puisque l'article 223 B bis ne limite rien) : 1 034 000 + 86 000 = 1 120 000 €. Réintégration : 1 120 000 × 12 000 000 ÷ 28 000 000 = **480 000 €**. Sans la réduction pour augmentation de capital : 960 000 € ; en retenant tout le prix de 30 M€ diminué du capital : 720 000 €."
+        },
+        {
+          "id": "q11-is-groupe-2027",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l'aide de l'annexe 4 et de vos réponses aux questions 9 et 10, calculez l'impôt sur les sociétés dû par le groupe intégré au titre de 2027. Réponse en euros.",
+          "expected_value": 920750,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "Résultat fiscal d'AP : 1 283 000 − 2 400 000 (dividende retranché) + 120 000 (QPFC) = − 997 000 € ; la dotation aux amortissements dérogatoires est la déduction fiscale elle-même et n'appelle aucun retraitement. Somme algébrique : 4 200 000 − 997 000 = 3 203 000 €. Rectification : réintégration Charasse de 480 000 € ; aucune autre (rémunération d'animation déduite par TC et imposée chez AP, QPFC de 5 % sans neutralisation). Résultat d'ensemble : 3 683 000 €. Le déficit d'AP de 2026, antérieur à l'intégration, ne s'impute que sur le bénéfice propre d'AP (art. 223 I) et ne peut donc pas être utilisé en 2027. IS du groupe : 3 683 000 × 25 % = **920 750 €**. Sans réintégration Charasse : 800 750 € ; avec une QPFC de 1 % : 896 750 €."
+        },
+        {
+          "id": "q12-synthese-montage",
+          "kind": "open",
+          "points": 2.5,
+          "prompt": "À l'aide de l'ensemble des annexes et de vos réponses aux questions 6 à 11, rédigez pour M. Tanguy et la SCR une note de synthèse sur la fiscalité du montage : gain de l'intégration fiscale en 2027, coût et durée de la réintégration de l'article 223 B, solutions qui auraient permis de l'éviter, évolution attendue à partir de 2028.",
+          "model_answer": "**Gain de l'intégration.** Sans intégration, TC paierait 4 200 000 × 25 % = 1 050 000 € d'IS en 2027, tandis qu'AP, déficitaire de 997 000 € du fait des intérêts de l'emprunt, reporterait son déficit. Avec l'intégration, le déficit d'AP s'impute immédiatement sur le bénéfice de TC : IS du groupe de 920 750 €, soit une économie de 129 250 €. Les intérêts sont de fait financés par les bénéfices de la cible, objectif même du montage ; la remontée du dividende ne coûte que l'IS sur la QPFC (5 % en 2027, 1 % ensuite). Les charges financières nettes du groupe (1,14 M€) restant sous le plafond de 3 M€ de l'article 223 B bis, aucune limitation générale ne joue.\n\n**Coût de l'amendement Charasse.** M. Tanguy contrôle AP et lui a vendu ses actions TC : une fraction des charges financières du groupe est réintégrée, soit 480 000 € en 2027 (120 000 € d'IS), ce qui réduit de moitié l'économie d'intégration (249 250 € sans cette réintégration). Le numérateur (12 M€) est figé ; le rapport varie avec l'endettement moyen du groupe et les charges financières baisseront avec l'amortissement de l'emprunt à partir de fin 2028. La réintégration court de l'exercice d'acquisition (2026, sans effet faute de groupe) aux huit exercices suivants, soit jusqu'en 2034 ; elle cesse plus tôt si M. Tanguy perd le contrôle d'AP ou si TC sort du groupe (CGI art. 223 B, d et b).\n\n**Solutions alternatives.** Le dispositif vise l'achat de titres aux personnes qui contrôlent l'acquéreur. Il aurait été évité si M. Tanguy avait **apporté** ses actions TC à AP au lieu de les vendre (apport rémunéré par des actions AP, la plus-value d'apport étant placée en report d'imposition), seules les actions d'Anne étant achetées, ou s'il n'avait pas contrôlé AP, ni seul ni de concert, au sens de l'article L233-3 (par exemple une SCR majoritaire en droits de vote, sans action de concert avec lui). Une augmentation de capital plus importante aurait aussi réduit le numérateur.\n\n**À partir de 2028.** QPFC ramenée à 1 % sur les dividendes de TC, membre du groupe depuis plus d'un exercice ; poursuite de l'amortissement dérogatoire des frais d'acquisition (108 000 € par an, jusqu'au 30 juin 2031) ; le déficit d'AP de 2026 reste imputable sur son seul bénéfice propre (art. 223 I).",
+          "key_points": [
+            "Gain 2027 chiffré : 1 050 000 € sans intégration contre 920 750 € avec, économie de 129 250 € grâce à l'imputation du déficit d'AP",
+            "Charasse : achat à M. Tanguy qui contrôle AP, 480 000 € réintégrés en 2027 (120 000 € d'IS), de 2026 à 2034, arrêt en cas de perte de contrôle ou de sortie de TC",
+            "Alternatives : apport des actions TC par M. Tanguy au lieu d'une vente, SCR majoritaire ou augmentation de capital plus forte",
+            "Article 223 B bis : charges financières nettes du groupe sous 3 M€, aucune limitation générale",
+            "Évolution : QPFC de 1 % dès 2028, amortissement des frais sur cinq ans, déficit 2026 d'AP imputable sur son seul bénéfice"
+          ],
+          "explanation": "L'intégration fiscale permet d'imputer les intérêts de la dette d'acquisition sur les bénéfices de la cible ; l'amendement Charasse en neutralise une partie lorsque le vendeur contrôle la holding, situation typique du rachat par le fondateur. La note doit chiffrer les deux effets et proposer les structurations qui l'évitent."
+        }
+      ],
+      "explanation": "Méthode : (1) droit des sociétés : actions de préférence créées par les associés au vu des rapports du commissaire aux comptes et du commissaire aux avantages particuliers ; clause statutaire opposable à tous (nullité de la cession contraire, L227-15) contre pacte à effet relatif (dommages-intérêts, exécution forcée) ; prix *bad leaver* de 320 000 € ; (2) conventions : mention au registre de la SAS unipersonnelle, rapport et vote des associés pour la SCR à 35 %, nullité absolue du prêt à la directrice générale, risque d'abus de biens sociaux sur le loyer ; (3) fiscalité : frais d'acquisition de 540 000 € incorporés et amortis sur cinq ans (54 000 € en 2026), intégration possible dès 2027, QPFC de 5 % la première année (120 000 €), réintégration Charasse de 480 000 €, IS du groupe de 920 750 € ; (4) synthèse : économie d'intégration réduite de moitié par l'amendement Charasse, qu'un apport des titres par le fondateur aurait évité."
+    },
+    {
+      "id": "ue1-dossier-0006",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE1",
+      "theme": "ethique-conformite",
+      "notion": "anticorruption-vigilance-rse",
+      "difficulty": 3,
+      "tags": [
+        "sujet type examen",
+        "Sapin 2",
+        "Agence française anticorruption",
+        "CJIP",
+        "devoir de vigilance",
+        "RGPD",
+        "violation de données",
+        "abus de biens sociaux",
+        "délégation de pouvoirs",
+        "lanceur d'alerte",
+        "licenciement nul"
+      ],
+      "source_ref": "Loi n° 2016-1691 du 9 déc. 2016 (art. 6, 8, 10-1 et 17, mod. loi n° 2022-401) ; règl. (UE) 2016/679 (RGPD) art. 5, 32, 33, 34 et 83 (considérant 150) ; CPP art. 8, 9-1 et 41-1-2 ; C. com. art. L225-102-1, L225-251 à L225-254, L225-55, L242-6 ; C. pén. art. 121-2, 122-9, 131-38 et 441-1 ; C. com. art. L233-1 et L233-3 ; C. trav. art. L1121-2, L1132-3-3, L1132-4, L1134-1, L1235-3, L1235-3-1, L1234-1, L1234-9, R1234-1, R1234-2, R1234-4 et L4741-1",
+      "verified": true,
+      "estimated_seconds": 5100,
+      "total_points": 20,
+      "title": "Groupe Corvane : conformité, alerte et responsabilité des dirigeants",
+      "context": "La **SA Corvane**, dont le siège est à Lyon, conçoit et fabrique des lits médicalisés et des équipements hospitaliers. Société familiale non cotée, dotée d'un conseil d'administration présidé par **Mme Hélène Corvane**, elle est dirigée depuis 2021 par un directeur général, **M. Lucas Ferrière**, qui n'est ni administrateur ni actionnaire. Le groupe s'est développé en Espagne, au Brésil et au Maroc et remporte une part croissante de ses contrats à l'exportation par des appels d'offres d'hôpitaux publics, souvent avec l'aide d'agents commerciaux rémunérés à la commission.\n\nL'année 2026 a été difficile : contrôle de l'Agence française anticorruption (AFA), soupçons sur une commission versée à un intermédiaire, attaque informatique chez le prestataire de paie, découverte par le commissaire aux comptes de dépenses irrégulières du directeur général, accident grave dans une usine et licenciement contesté d'une comptable.\n\nLe comité d'audit du conseil d'administration vous demande, en tant que collaborateur du cabinet qui l'assiste, d'analyser les obligations de conformité du groupe, les risques de sanction qu'il encourt, la responsabilité de ses dirigeants et la situation de la salariée licenciée (annexes 1 à 5).\n\n**Hypothèses** : droit en vigueur au 9 octobre 2026 ; Corvane SA n'a jamais été condamnée ni sanctionnée ; les effectifs indiqués sont ceux retenus pour l'application des seuils légaux.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Le groupe Corvane",
+          "content": "| Société | Siège | Détention par Corvane SA | Effectif au 31/12/2024 | Effectif au 31/12/2025 | CA 2025 (M€) |\n| --- | --- | ---: | ---: | ---: | ---: |\n| Corvane SA (société mère) | Lyon | — | 1 180 | 1 240 | 214 |\n| Corvane Services SAS | Lyon | 100 % | 360 | 380 | 41 |\n| Corvane Industrie Est SAS | Mulhouse | 100 % | 1 450 | 1 520 | 96 |\n| Corvane Iberia SL | Saragosse (Espagne) | 100 % | 1 900 | 2 010 | 88 |\n| Corvane do Brasil Ltda | Curitiba (Brésil) | 100 % | 3 600 | 3 900 | 102 |\n| Corvane Maroc SARL | Tanger (Maroc) | 100 % | 920 | 1 260 | 31 |\n\n| Chiffre d'affaires (M€) | 2023 | 2024 | 2025 |\n| --- | ---: | ---: | ---: |\n| Corvane SA (comptes individuels) | 182 | 196 | 214 |\n| Groupe (comptes consolidés, CA mondial) | 470 | 515 | 560 |\n\nToutes les sociétés clôturent leur exercice le 31 décembre. Prévision au 31 décembre 2026 : effectif du groupe de 10 650 salariés, dont 3 210 en France."
+        },
+        {
+          "title": "Annexe 2 — Contrôle de l'AFA et contrat d'agent commercial",
+          "content": "**Contrôle de l'AFA.** Ouvert en mars 2026 sur Corvane SA. Constats du rapport provisoire du 15 septembre 2026 :\n- cartographie des risques de corruption établie en 2019, jamais mise à jour, n'intégrant ni le Brésil ni le Maroc ;\n- aucune procédure d'évaluation des intermédiaires : 23 agents commerciaux rémunérés à la commission sans vérification de leur identité, de leurs bénéficiaires effectifs ni de leur réputation ;\n- code de conduite diffusé par courriel en 2020, non intégré au règlement intérieur ;\n- dispositif d'alerte interne en place, mais signalements restés sans réponse ;\n- aucun contrôle comptable spécifique des commissions versées aux agents ;\n- formation anticorruption réservée aux douze membres du comité de direction.\n\n**Contrat Meridian.** En avril 2025, Corvane SA a remporté un marché de 18 M€ HT auprès d'un centre hospitalier public d'un État non membre de l'Union européenne. En septembre 2025, elle a versé une commission de 1 620 000 € (9 % du marché) à Meridian Consulting FZE, agent immatriculé dans une zone franche trois mois avant l'appel d'offres, sur un compte bancaire ouvert dans un troisième État. Le gérant de Meridian est le frère du directeur des achats du centre hospitalier. Les commissions habituelles des agents du groupe vont de 2 % à 4 %. Le contrat d'agent a été signé par M. Ferrière."
+        },
+        {
+          "title": "Annexe 3 — Violation de données personnelles",
+          "content": "Corvane SA confie la paie de ses salariés et la tenue du fichier de ses anciens salariés à la société Paylis, prestataire informatique qui agit pour son compte et selon ses instructions.\n\n- **Dimanche 7 juin 2026** : un rançongiciel chiffre les serveurs de Paylis ; les pirates copient le fichier « RH Corvane ».\n- **Lundi 8 juin 2026, 9 h** : Paylis informe le directeur des ressources humaines de Corvane SA de l'attaque, preuves à l'appui.\n- **Vendredi 12 juin 2026, 17 h** : Corvane SA notifie la violation à la CNIL. Aucune information n'a encore été adressée aux salariés.\n\nContenu du fichier, non chiffré : identité, adresse, numéro de sécurité sociale, IBAN et salaires de 2 300 salariés et anciens salariés, ainsi que les dates et motifs des arrêts de travail (maladie, accident) depuis 2008. Il contient les données de 640 personnes parties depuis plus de dix ans, conservées sans finalité identifiée.\n\n**Hypothèses** : la CNIL envisage de retenir trois manquements, tous relatifs au même traitement : sécurité insuffisante des données (RGPD art. 32), notification tardive (art. 33), durée de conservation excessive des données des anciens salariés (art. 5). Le chiffre d'affaires à retenir est celui de l'entreprise au sens du droit de la concurrence, c'est-à-dire le chiffre d'affaires mondial consolidé du groupe Corvane de l'exercice 2025."
+        },
+        {
+          "title": "Annexe 4 — Dépenses du directeur général et accident du travail",
+          "content": "**Travaux d'Annecy.** En octobre et novembre 2023, l'entreprise BTP Savoie Rénov a rénové la maison de vacances de M. Ferrière à Annecy. Sur instruction de M. Ferrière, elle a facturé ces travaux à Corvane SA, pour 64 000 € TTC, sous le libellé « Réfection du show-room de Lyon » ; M. Ferrière a lui-même validé le paiement. Les comptes 2023, où la dépense figure en charges d'entretien, ont été approuvés par l'assemblée générale ordinaire du 20 juin 2024, qui a donné quitus de leur gestion aux administrateurs et au directeur général. Le commissaire aux comptes a découvert les faits le 10 mars 2026 en rapprochant les factures des travaux réellement effectués au show-room ; il en a informé le conseil d'administration.\n\n**Accident de Bourgoin-Jallieu.** Par écrit du 5 janvier 2024, M. Ferrière a délégué à M. Pascal Rey, ingénieur, directeur de l'usine de Corvane SA à Bourgoin-Jallieu (350 salariés), ses pouvoirs en matière d'hygiène et de sécurité dans l'usine. M. Rey dispose d'un budget annuel de sécurité de 400 000 €, de l'autorité hiérarchique sur tout le personnel de l'usine et d'une formation en prévention des risques professionnels. Le 14 mai 2026, un opérateur a été grièvement blessé (incapacité totale de travail de quatre mois) par une presse dont le capteur de sécurité avait été neutralisé trois semaines plus tôt, sur ordre de M. Rey, pour tenir les cadences. M. Ferrière ignorait cette neutralisation."
+        },
+        {
+          "title": "Annexe 5 — Licenciement de Mme Delmas",
+          "content": "Mme Sonia Delmas est comptable fournisseurs de Corvane SA, en contrat à durée indéterminée, depuis 2019.\n\n- **10 janvier 2026** : elle relève la commission versée à Meridian (annexe 2) et interroge son responsable, qui lui demande de « ne pas s'en occuper ».\n- **3 février 2026** : elle effectue un signalement sur la plateforme d'alerte interne, en joignant le contrat d'agent et la facture de Meridian. Elle ne reçoit aucune réponse.\n- **12 mai 2026** : elle adresse un signalement au parquet national financier, accompagné de copies du contrat, de la facture et de l'ordre de virement, documents auxquels elle avait accès dans ses fonctions. Elle n'a demandé ni reçu aucune contrepartie.\n- **2 juin 2026** : convocation à un entretien préalable ; **19 juin 2026** : licenciement pour faute grave, la lettre lui reprochant « un manquement grave à ses obligations de loyauté et de confidentialité, par la communication à un tiers de documents internes de l'entreprise ».\n\nRémunération brute mensuelle : 3 300 €, constante depuis plus d'un an, sans prime. Ancienneté à retenir pour le calcul de l'indemnité légale de licenciement (préavis compris) : 7 ans et 6 mois. Mme Delmas a saisi le conseil de prud'hommes ; elle ne demande pas sa réintégration."
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1-assujettissement-sapin2",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À l'aide de l'annexe 1, quelle affirmation relative à l'obligation de mettre en œuvre un programme de prévention de la corruption (loi n° 2016-1691, art. 17) est exacte ?",
+          "options": [
+            "Corvane SA y est soumise (1 240 salariés et 214 M€ de chiffre d'affaires), mais son programme ne porte que sur elle-même : une filiale n'est concernée que si elle franchit seule les seuils, ce qui exclut Corvane Services et les filiales étrangères, qui relèvent de leur droit local",
+            "Corvane SA y est soumise (1 240 salariés et 214 M€ de chiffre d'affaires) ; établissant des comptes consolidés, elle doit faire porter son programme sur elle-même et sur l'ensemble de ses filiales, françaises et étrangères, Corvane Services comprise malgré ses 380 salariés",
+            "Aucune société du groupe n'y est soumise tant que l'effectif du groupe en France n'atteint pas 5 000 salariés",
+            "Chaque société du groupe, y compris Corvane do Brasil et Corvane Maroc, doit établir son propre programme, la seule condition étant un chiffre d'affaires consolidé supérieur à 100 M€"
+          ],
+          "answer": [
+            1
+          ],
+          "option_explanations": [
+            "Inexact : la société qui établit des comptes consolidés applique le programme à toutes ses filiales, y compris étrangères et sous les seuils.",
+            "Exact : seuils cumulatifs franchis par Corvane SA ; programme de la mère étendu à l'ensemble de ses filiales, françaises et étrangères.",
+            "Inexact : le seuil de 5 000 salariés en France concerne le devoir de vigilance, non le programme anticorruption.",
+            "Inexact : le critère d'effectif de 500 salariés est cumulatif, et le programme de la mère couvre les filiales étrangères."
+          ],
+          "explanation": "Le programme de conformité anticorruption s'impose aux dirigeants des sociétés qui emploient au moins **500 salariés**, ou appartiennent à un groupe dont la mère a son siège en France et dont l'effectif atteint 500 salariés, **et** dont le chiffre d'affaires, ou le chiffre d'affaires consolidé, dépasse **100 M€** (loi n° 2016-1691, art. 17) : les conditions sont cumulatives. Corvane SA (1 240 salariés, 214 M€ ; groupe de plus de 10 000 salariés au chiffre d'affaires consolidé de 560 M€) y est soumise. Lorsque la société établit des comptes consolidés, les obligations portent sur elle-même et sur l'ensemble de ses filiales (C. com. art. L233-1) ou sociétés contrôlées (L233-3), françaises comme étrangères, quelle que soit leur taille : le programme de Corvane SA couvre donc Corvane Services. Les filiales qui dépassent elles-mêmes les seuils sont réputées satisfaire à leurs obligations dès lors que la mère met en œuvre les mesures et que celles-ci s'appliquent à toutes les sociétés qu'elle contrôle (art. 17, I). L'option 1 limite à tort le programme à la mère ; l'option 3 confond avec le seuil du devoir de vigilance ; l'option 4 oublie le critère d'effectif et impose à tort des programmes distincts."
+        },
+        {
+          "id": "q2-devoir-vigilance",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "Vrai ou faux ? À l'aide de l'annexe 1 : Corvane SA doit établir un plan de vigilance et le publier dans son rapport de gestion de l'exercice 2025, l'effectif du groupe dépassant 10 000 salariés au 31 décembre 2025.",
+          "answer": false,
+          "explanation": "Faux. Le plan de vigilance s'impose à la société qui emploie, **à la clôture de deux exercices consécutifs**, au moins 5 000 salariés en son sein et dans ses filiales françaises, ou au moins 10 000 salariés avec ses filiales françaises et étrangères (C. com. art. L225-102-1, anciennement numéroté L. 225-102-4, renuméroté par l'ordonnance n° 2023-1142). L'effectif français (3 140 en 2025) est loin du premier seuil. L'effectif mondial dépasse 10 000 au 31 décembre 2025 (10 310) mais non au 31 décembre 2024 (9 410). Si la prévision de 10 650 salariés fin 2026 se réalise, la condition sera remplie à la clôture de 2026 : Corvane SA devra alors établir et mettre en œuvre un plan (cartographie, évaluation des filiales, sous-traitants et fournisseurs, actions d'atténuation, mécanisme d'alerte, suivi), publié avec le compte rendu de sa mise en œuvre dans le rapport de gestion, sous peine d'injonction judiciaire après mise en demeure restée sans effet pendant trois mois et de responsabilité civile (L225-102-2)."
+        },
+        {
+          "id": "q3-plafond-cjip",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l'aide des annexes 1 et 2 : le procureur de la République envisage de proposer à Corvane SA une convention judiciaire d'intérêt public pour les faits de corruption présumés liés au contrat Meridian. En retenant, comme le parquet l'envisage, les chiffres d'affaires des comptes individuels de Corvane SA, personne morale mise en cause, pour les trois derniers exercices connus, calculez le montant maximal de l'amende d'intérêt public. Réponse en euros.",
+          "expected_value": 59200000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "L'amende d'intérêt public est proportionnée aux avantages tirés des manquements, dans la limite de **30 % du chiffre d'affaires moyen annuel** calculé sur les trois derniers chiffres d'affaires annuels connus à la date du constat (CPP art. 41-1-2). La convention est conclue avec la personne morale mise en cause, Corvane SA : conformément à l'hypothèse de l'énoncé (le texte ne précise pas s'il s'agit du chiffre d'affaires individuel ou consolidé), on retient ses chiffres d'affaires individuels 2023 à 2025. Moyenne : (182 + 196 + 214) ÷ 3 = 197,33 M€ ; plafond : 30 % × 197,33 = **59 200 000 €**. Retenir le chiffre d'affaires consolidé donne 154 500 000 € ; le seul exercice 2025, 64 200 000 €."
+        },
+        {
+          "id": "q4-note-anticorruption",
+          "kind": "open",
+          "points": 2.5,
+          "prompt": "À l'aide des annexes 1 et 2 et de vos réponses aux questions 1 et 3, rédigez pour le comité d'audit une note sur la situation de Corvane SA au regard de la lutte contre la corruption : manquements relevés par l'AFA et sanctions encourues à ce titre, risque pénal attaché au contrat Meridian et intérêt d'une CJIP, mesures immédiates à prendre.",
+          "model_answer": "**Manquements au programme de conformité.** Corvane SA, assujettie à l'article 17 de la loi Sapin 2, doit mettre en œuvre huit mesures. Le rapport de l'AFA en met plusieurs en défaut : cartographie des risques obsolète et incomplète (Brésil et Maroc absents) ; absence de procédure d'évaluation des intermédiaires, alors que le groupe recourt à 23 agents ; code de conduite non intégré au règlement intérieur ; dispositif d'alerte sans traitement des signalements ; absence de contrôles comptables des commissions ; formation limitée au comité de direction, alors que les commerciaux et les comptables sont exposés.\n\n**Sanctions de l'AFA.** Sa commission des sanctions peut enjoindre à la société et à ses dirigeants d'adapter leurs procédures et prononcer une sanction pécuniaire jusqu'à 1 M€ pour Corvane SA et 200 000 € pour les dirigeants personnes physiques (M. Ferrière). L'AFA sanctionne l'insuffisance du programme, non la corruption elle-même.\n\n**Risque pénal.** Le contrat Meridian réunit les signaux d'alerte d'un intermédiaire de façade : société créée trois mois avant l'appel d'offres en zone franche, paiement dans un troisième État, lien familial entre son gérant et l'acheteur public, commission de 9 % contre 2 à 4 % habituellement. Si une corruption d'agent public étranger est établie, Corvane SA, pour le compte de laquelle M. Ferrière a agi, engage sa responsabilité pénale (C. pén. art. 121-2), avec une amende portée au quintuple de celle des personnes physiques (art. 131-38) et des peines complémentaires (exclusion des marchés publics), sans préjudice des poursuites contre M. Ferrière.\n\n**Intérêt d'une CJIP.** Proposée par le procureur et validée par le président du tribunal, elle évite la déclaration de culpabilité et l'inscription au casier judiciaire, donc l'exclusion des marchés publics. Elle impose une amende d'intérêt public plafonnée à 59,2 M€ (30 % du chiffre d'affaires moyen), éventuellement un programme de mise en conformité sous le contrôle de l'AFA et la réparation du préjudice ; elle est publiée.\n\n**Mesures immédiates.** Suspendre tout paiement à Meridian et réexaminer les 22 autres agents ; mener une enquête interne indépendante ; mettre à jour la cartographie, intégrer le code de conduite au règlement intérieur, organiser l'évaluation des intermédiaires, les contrôles comptables et les formations ; traiter les alertes ; coopérer avec le parquet, ce qui favorise une CJIP.",
+          "key_points": [
+            "Manquements rattachés aux mesures de l'article 17 : cartographie, évaluation des intermédiaires, code de conduite dans le règlement intérieur, contrôles comptables, formation, alerte",
+            "Sanctions de l'AFA : injonction et sanction pécuniaire jusqu'à 1 M€ pour la société et 200 000 € pour le dirigeant ; l'AFA ne poursuit pas la corruption elle-même",
+            "Signaux d'alerte du contrat Meridian et responsabilité pénale de Corvane SA (C. pén. art. 121-2, amende au quintuple) cumulée avec celle du dirigeant",
+            "CJIP : ni culpabilité ni casier, amende plafonnée à 59,2 M€, programme sous contrôle de l'AFA, validation par le juge et publication",
+            "Mesures immédiates : suspension des paiements, enquête interne, remise à niveau du programme, coopération avec le parquet"
+          ],
+          "explanation": "Il faut distinguer deux régimes : le manquement à l'obligation de prévention, sanctionné par l'AFA même sans corruption avérée, et l'infraction de corruption, poursuivie par le parquet, pour laquelle la CJIP offre une alternative négociée aux poursuites."
+        },
+        {
+          "id": "q5-notification-violation",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À l'aide de l'annexe 3, quelle affirmation relative aux obligations de Corvane SA après l'attaque informatique est exacte ?",
+          "options": [
+            "La notification à la CNIL incombait à Paylis, dont les serveurs ont été attaqués ; Corvane SA devait seulement informer ses salariés dans le délai d'un mois",
+            "Le délai de 72 heures se compte en heures ouvrées à partir du lundi 8 juin à 9 h : la notification du vendredi 12 juin est dans les temps, et l'information des salariés n'est jamais obligatoire lorsque la CNIL a été notifiée",
+            "Corvane SA, responsable du traitement, devait notifier la violation à la CNIL dans les meilleurs délais et, si possible, au plus tard le jeudi 11 juin à 9 h ; la notification tardive doit indiquer les motifs du retard ; vu les données exposées, les salariés et anciens salariés doivent être informés dans les meilleurs délais",
+            "Aucune notification n'était due tant que les pirates n'avaient pas publié les données ; seule l'inscription de la violation au registre interne était obligatoire"
+          ],
+          "answer": [
+            2
+          ],
+          "option_explanations": [
+            "Inexact : le sous-traitant alerte le responsable du traitement, à qui incombe la notification à la CNIL (RGPD art. 33 § 1 et 2).",
+            "Inexact : le délai court en heures calendaires dès la prise de connaissance ; l'information des personnes est due si le risque est élevé.",
+            "Exact : délai de 72 heures dépassé, notification motivée, risque élevé (numéro de sécurité sociale, IBAN, données de santé) imposant d'informer les personnes.",
+            "Inexact : la copie de données non chiffrées crée déjà un risque ; la notification ne dépend pas de leur publication."
+          ],
+          "explanation": "Corvane SA détermine les finalités et les moyens de la paie : elle est responsable du traitement, Paylis sous-traitant. Le sous-traitant notifie la violation au responsable du traitement, qui la notifie à la CNIL dans les meilleurs délais et, si possible, **72 heures au plus tard après en avoir pris connaissance**, le retard devant être motivé (RGPD art. 33) : prise de connaissance le lundi 8 juin à 9 h, échéance le jeudi 11 juin à 9 h. Les données copiées, non chiffrées (numéro de sécurité sociale, IBAN, motifs des arrêts de travail, qui sont des données de santé), font courir un **risque élevé** d'usurpation d'identité et de fraude : les personnes concernées doivent être informées dans les meilleurs délais (art. 34), aucune exception (chiffrement, mesures ultérieures) ne jouant. La violation est en outre documentée en interne (art. 33 § 5). L'option 1 inverse les rôles ; l'option 2 invente des heures ouvrées ; l'option 4 subordonne à tort la notification à la publication des données."
+        },
+        {
+          "id": "q6-plafond-rgpd",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l'aide des annexes 1 et 3, calculez le montant maximal de l'amende administrative que la CNIL peut infliger à Corvane SA si elle retient les trois manquements envisagés. Réponse en euros.",
+          "expected_value": 22400000,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 0,
+          "explanation": "La sécurité (art. 32) et la notification (art. 33) relèvent du plafond de l'article 83 § 4 : 10 M€ ou 2 % du chiffre d'affaires annuel mondial total de l'exercice précédent, le montant le plus élevé étant retenu, soit max(10 M€ ; 2 % × 560 M€ = 11,2 M€) = 11,2 M€. La durée de conservation est un principe de base du traitement (art. 5) : plafond du § 5, max(20 M€ ; 4 % × 560 M€ = 22,4 M€) = 22,4 M€. Les trois manquements portant sur le même traitement, le montant total de l'amende ne peut excéder celui fixé pour la violation la plus grave (art. 83 § 3) : **22 400 000 €**. Le chiffre d'affaires retenu est celui de l'entreprise au sens des articles 101 et 102 du TFUE (considérant 150), ici le groupe. Erreurs classiques : retenir le montant fixe de 20 M€, additionner les plafonds (44,8 M€) ou partir du seul chiffre d'affaires de Corvane SA (20 M€)."
+        },
+        {
+          "id": "q7-delegation-pouvoirs",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À l'aide de l'annexe 4, qui encourt une responsabilité pénale à la suite de l'accident du 14 mai 2026 ?",
+          "options": [
+            "M. Ferrière seul, en sa qualité de chef d'entreprise : les pouvoirs en matière de sécurité ne peuvent pas être délégués",
+            "M. Ferrière et M. Rey conjointement, la délégation de pouvoirs ne transférant au délégataire que la responsabilité civile",
+            "M. Rey seul : Corvane SA ne peut pas être poursuivie, un délégataire n'étant ni un organe ni un représentant de la société",
+            "M. Rey, délégataire doté de la compétence, de l'autorité et des moyens nécessaires, qui a personnellement ordonné la neutralisation ; M. Ferrière est exonéré faute d'avoir participé aux faits ; Corvane SA peut être poursuivie, le délégataire étant son représentant agissant pour son compte"
+          ],
+          "answer": [
+            3
+          ],
+          "option_explanations": [
+            "Inexact : le Code du travail vise lui-même « l'employeur ou son délégataire » (L4741-1) ; la délégation en matière de sécurité est admise.",
+            "Inexact : une délégation valable transfère la responsabilité pénale au délégataire ; le délégant n'est poursuivi que s'il a participé aux faits.",
+            "Inexact : le délégataire est un représentant de la personne morale au sens de l'article 121-2 du Code pénal.",
+            "Exact : délégation valable, faute personnelle du délégataire, exonération du délégant étranger aux faits et responsabilité possible de la personne morale."
+          ],
+          "explanation": "La jurisprudence de la chambre criminelle (depuis Cass. crim., 11 mars 1993) admet que le chef d'entreprise qui n'a pas personnellement pris part à l'infraction s'exonère de sa responsabilité pénale s'il prouve avoir délégué ses pouvoirs à une personne pourvue de la **compétence**, de l'**autorité** et des **moyens** nécessaires ; le Code du travail punit d'ailleurs « l'employeur ou son délégataire » qui méconnaît par sa faute personnelle les règles de sécurité (C. trav. art. L4741-1). La délégation de M. Rey, écrite, précise et assortie d'un budget, d'une autorité hiérarchique et d'une formation, est valable ; il a lui-même ordonné la neutralisation du capteur : il répond des infractions aux règles de sécurité et du délit de blessures involontaires. M. Ferrière, qui l'ignorait, est exonéré. Le délégataire en matière de sécurité étant, selon une jurisprudence constante de la chambre criminelle (notamment Cass. crim., 30 mai 2000), un représentant de la personne morale, Corvane SA peut être déclarée responsable des infractions commises pour son compte (C. pén. art. 121-2), sans que cela exclue la responsabilité de M. Rey. Les options 1 et 2 nient l'effet de la délégation ; l'option 3 écarte à tort la responsabilité de la société."
+        },
+        {
+          "id": "q8-abus-biens-sociaux",
+          "kind": "open",
+          "points": 2.5,
+          "prompt": "À l'aide de l'annexe 4, analysez la responsabilité pénale et civile de M. Ferrière au titre des travaux de sa maison d'Annecy : qualification des faits, peines encourues, prescription de l'action publique, action en réparation de Corvane SA (titulaires, effet du quitus, prescription).",
+          "model_answer": "**Qualification pénale.** Le directeur général d'une SA qui fait, de mauvaise foi, des biens de la société un usage qu'il sait contraire à l'intérêt de celle-ci, à des fins personnelles, commet un **abus de biens sociaux** (C. com. art. L242-6, 3°). Les éléments sont réunis : paiement par Corvane SA de 64 000 € de travaux réalisés dans la maison de M. Ferrière, sans contrepartie pour la société ; usage à des fins personnelles ; mauvaise foi établie par le libellé mensonger qu'il a lui-même demandé et par la validation du paiement. Peines : cinq ans d'emprisonnement et 375 000 € d'amende, aucun compte ni intermédiaire à l'étranger n'étant en cause. La facture mensongère constitue en outre un **faux** (altération de la vérité dans un écrit qui établit la preuve d'un fait, de nature à causer un préjudice), dont M. Ferrière a fait usage en la faisant payer et comptabiliser (C. pén. art. 441-1 : trois ans et 45 000 €) ; l'entrepreneur peut être poursuivi pour faux et complicité d'abus de biens sociaux. Corvane SA est la victime : elle peut se constituer partie civile.\n\n**Prescription de l'action publique.** Délai de six ans pour les délits (CPP art. 8). Pour l'abus de biens sociaux, il court en principe de la présentation des comptes où figure la dépense (20 juin 2024) ; mais les faits ont été dissimulés par un libellé fictif : le délai court du jour où ils ont pu être constatés, le 10 mars 2026, dans la limite de douze ans après leur commission (CPP art. 9-1). L'action publique est ouverte jusqu'en mars 2032.\n\n**Responsabilité civile.** Le directeur général est responsable envers la société des infractions aux lois et des fautes de gestion (L225-251) : Corvane SA peut lui réclamer 64 000 € et la réparation de son préjudice. L'action sociale est exercée par les représentants légaux de la société (en pratique le nouveau directeur général nommé par le conseil après la révocation de M. Ferrière) ou, à défaut, par un ou plusieurs actionnaires *ut singuli*, les dommages-intérêts étant alors alloués à la société (L225-252). Le quitus voté le 20 juin 2024 est sans effet : aucune décision de l'assemblée ne peut éteindre l'action en responsabilité (L225-253). Prescription de trois ans à compter du fait dommageable ou, s'il a été dissimulé, de sa révélation (L225-254) : jusqu'au 10 mars 2029.",
+          "key_points": [
+            "Abus de biens sociaux du directeur général de SA (L242-6, 3°) : usage contraire à l'intérêt social, fins personnelles, mauvaise foi ; cinq ans et 375 000 €",
+            "Faux et usage de faux pour la facture mensongère (C. pén. art. 441-1), complicité possible de l'entrepreneur ; Corvane SA victime",
+            "Prescription de six ans, point de départ reporté à la découverte du 10 mars 2026 en raison de la dissimulation, butoir de douze ans (CPP art. 8 et 9-1)",
+            "Action sociale (L225-251 et L225-252), éventuellement ut singuli avec indemnité versée à la société ; quitus sans effet (L225-253)",
+            "Prescription civile de trois ans à compter de la révélation des faits dissimulés (L225-254)"
+          ],
+          "explanation": "L'analyse sépare l'action publique (abus de biens sociaux et faux, prescription de six ans retardée par la dissimulation) de l'action civile de la société (responsabilité du dirigeant, quitus inopérant, prescription de trois ans à compter de la révélation)."
+        },
+        {
+          "id": "q9-revocation-dg",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "Vrai ou faux ? À l'aide de l'annexe 4 : le conseil d'administration peut révoquer M. Ferrière à tout moment ; décidée après qu'il a été informé des griefs et mis en mesure de présenter ses observations, cette révocation reposera, compte tenu des faits, sur un juste motif et ne lui ouvrira droit à aucuns dommages-intérêts.",
+          "answer": true,
+          "explanation": "Vrai. Le directeur général est révocable à tout moment par le conseil d'administration ; seule une révocation sans juste motif peut donner lieu à des dommages-intérêts (C. com. art. L225-55). Le détournement de 64 000 € au moyen d'une fausse facture constitue un juste motif. Le respect du principe du contradictoire, posé par l'énoncé, est indispensable : sans information préalable sur les griefs et possibilité de présenter ses observations, la révocation, même justifiée, pourrait être jugée abusive dans ses circonstances et ouvrir droit à des dommages-intérêts."
+        },
+        {
+          "id": "q10-indemnite-licenciement-nul",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l'aide de l'annexe 5, et en supposant que le conseil de prud'hommes prononce la nullité du licenciement, calculez le montant minimal total que Corvane SA devra verser à Mme Delmas au titre de l'indemnité pour licenciement nul et de l'indemnité légale de licenciement (hors indemnité compensatrice de préavis, congés payés et rappels de salaire). Réponse en euros, au centime.",
+          "expected_value": 25987.5,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "€",
+          "decimals": 2,
+          "explanation": "Licenciement nul et salariée qui ne demande pas sa réintégration : le barème de l'article L1235-3 est écarté et le juge octroie une indemnité au moins égale aux salaires des **six derniers mois** (C. trav. art. L1235-3-1) : 6 × 3 300 = 19 800 €. La faute grave étant écartée, l'indemnité légale de licenciement est due (L1234-9) : un quart de mois de salaire par année jusqu'à dix ans (R1234-2), en tenant compte des mois complets (R1234-1), sur la base de 3 300 € (R1234-4, les deux formules donnant le même montant) : 3 300 × 1/4 × 7,5 = 6 187,50 €. Total : **25 987,50 €**. S'y ajoutent l'indemnité compensatrice de préavis de deux mois (L1234-1) et les congés payés afférents. Appliquer le minimum de trois mois du barème donne 16 087,50 € ; oublier l'indemnité légale, 19 800 €."
+        },
+        {
+          "id": "q11-lanceur-alerte",
+          "kind": "open",
+          "points": 2.5,
+          "prompt": "À l'aide des annexes 2 et 5 et de votre réponse à la question 10, appréciez la régularité du licenciement de Mme Delmas : peut-elle se prévaloir du statut de lanceur d'alerte (conditions, choix du canal de signalement, communication des documents) ? Quelle est la sanction du licenciement et comment se répartit la charge de la preuve ? Que conseillez-vous à Corvane SA ?",
+          "model_answer": "**Statut de lanceur d'alerte.** Est lanceur d'alerte la personne physique qui signale ou divulgue, sans contrepartie financière directe et de bonne foi, des informations portant sur un crime, un délit ou une violation du droit (loi n° 2016-1691, art. 6, modifiée par la loi n° 2022-401). Mme Delmas signale des faits susceptibles de constituer une corruption d'agent public étranger, délit, qu'elle a constatés dans ses fonctions ; elle n'a demandé ni reçu aucune contrepartie et sa bonne foi est étayée par les anomalies objectives du contrat (commission de 9 %, lien familial, zone franche). Elle pouvait choisir entre le signalement interne et le signalement externe à l'autorité judiciaire (art. 8) : elle a même commencé par l'alerte interne, restée sans réponse, avant de saisir le parquet national financier. La remise des copies nécessaires à l'appui du signalement, auxquelles elle avait accès licitement, est couverte par l'irresponsabilité civile et pénale prévue en faveur des lanceurs d'alerte (loi n° 2016-1691, art. 10-1, I ; C. pén. art. 122-9) : son obligation de confidentialité ne peut justifier une sanction.\n\n**Sanction.** Aucun salarié ne peut être sanctionné ou licencié pour avoir signalé des informations dans ces conditions, ni pour avoir relaté de bonne foi des faits délictueux (C. trav. art. L1121-2 et L1132-3-3). La lettre de licenciement reproche précisément la communication des documents au parquet : le licenciement est **nul** (L1132-4 ; loi n° 2016-1691, art. 10-1, II). Mme Delmas, qui ne demande pas sa réintégration, a droit à une indemnité d'au moins six mois de salaire, hors barème (L1235-3-1), soit au minimum 25 987,50 € avec l'indemnité légale de licenciement, plus le préavis et les congés payés.\n\n**Preuve.** La salariée présente des éléments de fait laissant supposer que le licenciement est une mesure de représailles (chronologie : signalement externe le 12 mai, convocation le 2 juin) ; il incombe alors à l'employeur de prouver que sa décision est dûment justifiée par des éléments objectifs étrangers au signalement (loi n° 2016-1691, art. 10-1, III ; C. trav. art. L1134-1). Ici, le motif invoqué est le signalement lui-même : la preuve contraire est impossible.\n\n**Conseil.** Proposer la réintégration ou une transaction tenant compte de ces montants, ne prendre aucune autre mesure défavorable contre Mme Delmas ni contre ceux qui l'ont aidée, traiter son signalement dans le cadre de l'enquête interne et revoir la procédure d'alerte, dont l'absence de suivi a été relevée par l'AFA.",
+          "key_points": [
+            "Conditions du statut : personne physique, signalement de bonne foi, sans contrepartie financière directe, d'un délit constaté dans les fonctions (loi 2016-1691, art. 6)",
+            "Libre choix du canal interne ou externe (art. 8) ; communication des documents nécessaires couverte par l'irresponsabilité du lanceur d'alerte",
+            "Licenciement fondé sur le signalement : nullité (C. trav. art. L1121-2, L1132-3-3 et L1132-4)",
+            "Indemnité d'au moins six mois de salaire hors barème (L1235-3-1), en plus de l'indemnité de licenciement et du préavis",
+            "Aménagement de la preuve : éléments laissant supposer des représailles, puis justification objective à la charge de l'employeur (loi 2016-1691, art. 10-1, III ; L1134-1)"
+          ],
+          "explanation": "Le motif du licenciement révèle qu'il sanctionne le signalement : la protection du lanceur d'alerte conduit à la nullité, avec une indemnisation hors barème. Le conseil à l'employeur doit en tirer les conséquences pratiques (réintégration ou transaction, procédure d'alerte à revoir)."
+        }
+      ],
+      "explanation": "Méthode : (1) seuils de conformité : programme anticorruption dès 500 salariés et 100 M€ de chiffre d'affaires (cumulatifs, appréciés aussi au niveau du groupe), devoir de vigilance à 5 000 salariés en France ou 10 000 dans le monde à la clôture de deux exercices consécutifs (pas avant la clôture 2026) ; (2) corruption : sanctions de l'AFA pour l'insuffisance du programme (1 M€ et 200 000 €), responsabilité pénale de la société pour la corruption, CJIP plafonnée à 30 % du chiffre d'affaires moyen de Corvane SA (59,2 M€) ; (3) RGPD : notification dans les 72 heures par le responsable du traitement, information des personnes en cas de risque élevé, plafond du manquement le plus grave pour un même traitement (22,4 M€) ; (4) dirigeants : délégation de pouvoirs valable qui exonère le délégant étranger aux faits, abus de biens sociaux et faux, prescription retardée par la dissimulation, quitus inopérant, révocation pour juste motif ; (5) social : licenciement d'une lanceuse d'alerte nul, indemnité d'au moins six mois de salaire (25 987,50 € avec l'indemnité légale)."
+    }
+  ]
+}
