@@ -1,0 +1,583 @@
+{
+  "exercises": [
+    {
+      "id": "ue4-dossier-0005",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE4",
+      "theme": "consolidation",
+      "notion": "variations-perimetre",
+      "difficulty": 3,
+      "tags": [
+        "dossier type examen",
+        "consolidation",
+        "ANC 2020-01",
+        "prise de contrôle par étapes",
+        "cession partielle",
+        "écart d’acquisition",
+        "impôts différés",
+        "conversion",
+        "intérêts minoritaires"
+      ],
+      "source_ref": "Règl. ANC 2020-01 art. 211-3 à 211-5 (contrôle exclusif, contrôle conjoint, influence notable), 211-10 (date d’entrée), 231-1, 231-2 et 231-9 (coût d’acquisition, écarts d’évaluation et d’acquisition), 231-8 (évaluation à la date d’entrée dans le périmètre), 231-11 (écart d’acquisition non amorti), 241-1 (prise de contrôle par lots d’une entité antérieurement mise en équivalence), 242-3 et 242-5 (résultat de cession partielle), 272-7 et s. (impôts différés), 272-15, 272-17, 272-18 et 272-21 (conversion, écarts de conversion) ; IFRS 3 §32 et §42, IFRS 10 §23 et §B96, IAS 21 §48C (règl. UE 2023/1803) ; comptes PCG 101, 106, 120, 207, 211, 213, 2154, 28154, 261, 276 et 1523 et 108 (conventions)",
+      "verified": true,
+      "estimated_seconds": 5400,
+      "total_points": 20,
+      "title": "Prise de contrôle de Pellan et cession partielle de Lémanis : groupe Ostral (normes françaises)",
+      "context": "Le groupe **Ostral** conçoit et fabrique des systèmes d’irrigation pour l’agriculture. Sa société mère, **Ostral SA**, installée à Valence, établit des comptes consolidés selon le **règlement ANC 2020-01** ; l’exercice coïncide avec l’année civile. Jusqu’au 31 décembre 2025, le périmètre comprenait une seule filiale, **Lémanis SA**, société suisse créée par Ostral en 2019 et détenue à 100 %.\n\nDeux opérations ont modifié le périmètre le **1er janvier 2026** :\n\n- la prise de contrôle de **Pellan SAS**, fabricant de pompes à Agen, dont Ostral détenait déjà 15 % du capital depuis 2022 ;\n- la cession de 20 % du capital de Lémanis à un partenaire suisse, **Helvea Holding**, Ostral conservant 80 %.\n\nMme Delorme, directrice financière, vous confie, en qualité de collaborateur du service consolidation, les travaux suivants :\n\n- vérifier le périmètre et les méthodes de consolidation au 31/12/2026 ;\n- réaliser la première consolidation de Pellan (écarts d’évaluation, impôts différés, écart d’acquisition, partage des capitaux propres) et éliminer le résultat interne de 2026 ;\n- traiter la cession partielle de Lémanis et la conversion de ses comptes ;\n- préparer une note sur les divergences avec les IFRS, que le groupe envisage d’adopter.\n\n**Hypothèses communes** : montants en milliers d’euros (k€) ; taux d’impôt sur les bénéfices de 25 % pour toutes les sociétés et toutes les échéances ; une action donne une voix ; on néglige l’impôt sur la cession des titres Lémanis ; aucun impôt différé n’est constaté sur les écarts de conversion. Toutes les données utiles figurent dans les annexes 1 à 4.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Participations du groupe et gouvernance",
+          "content": "| Société | Pays et monnaie | Détenteur | % du capital et des droits de vote au 31/12/2025 | au 31/12/2026 |\n| --- | --- | --- | --- | --- |\n| Lémanis SA | Suisse, franc suisse (CHF) | Ostral SA | 100 % | 80 % |\n| Pellan SAS | France, euro | Ostral SA | 15 % | 70 % |\n\n**Pellan** : de 2022 à 2025, Ostral ne disposait d’aucun siège au comité de direction, ne participait à aucune décision et n’entretenait pas d’opérations significatives avec Pellan ; les titres figuraient au coût dans ses comptes individuels et n’étaient pas consolidés. Depuis le 1er janvier 2026, Ostral désigne quatre des cinq membres du comité de direction. La famille Pellan conserve 30 % du capital ; M. Pellan reste directeur général.\n\n**Lémanis** : selon le pacte signé le 1er janvier 2026, Helvea Holding désigne un administrateur sur cinq. L’unanimité est requise pour modifier les statuts, augmenter le capital ou dissoudre la société ; le budget, les investissements et la nomination des dirigeants sont décidés à la majorité simple du conseil."
+        },
+        {
+          "title": "Annexe 2 — Prise de contrôle de Pellan SAS",
+          "content": "- **1er mars 2022** : acquisition de 15 % du capital pour **270 k€**. Capitaux propres de Pellan à cette date : 1 500 k€.\n- **1er janvier 2026** : acquisition auprès de la famille Pellan de 55 % du capital pour **1 430 k€**, sans frais. Ce prix fait ressortir une valeur de 2 600 k€ pour 100 % des titres ; la juste valeur du lot de 15 % déjà détenu est estimée à **390 k€** à cette date.\n\n**Capitaux propres de Pellan au 1er janvier 2026** : capital 800 k€ ; réserves 1 100 k€ (résultat 2025 compris, intégralement affecté aux réserves).\n\n**Évaluation des actifs identifiables au 1er janvier 2026** (les bases fiscales restent égales aux valeurs comptables) :\n\n| Élément | Valeur comptable | Valeur d’entrée retenue | Observations |\n| --- | --- | --- | --- |\n| Terrain | 150 | 250 | toujours détenu au 31/12/2026 |\n| Construction | 600 | 900 | durée d’utilisation résiduelle 15 ans, amortissement linéaire |\n\nLes autres actifs et passifs ont une valeur d’entrée égale à leur valeur comptable. L’analyse documentée de l’acquisition conclut à une durée d’utilisation **non limitée** de l’écart d’acquisition ; le test annuel ne fait apparaître aucune dépréciation en 2026."
+        },
+        {
+          "title": "Annexe 3 — Pellan en 2026 et opérations intra-groupe",
+          "content": "- **Résultat social de Pellan pour 2026** : **245 k€**. Pellan n’a versé aucun dividende en 2026 ; ses capitaux propres au 31/12/2026 comprennent donc le capital (800), les réserves (1 100) et ce résultat.\n- **Cession interne** : le 1er juillet 2026, Pellan a cédé à Ostral un banc d’essai hydraulique pour **160 k€** ; sa valeur nette comptable chez Pellan était de **96 k€** à cette date. Ostral l’amortit linéairement sur **4 ans** à compter du 1er juillet 2026 ; Pellan l’amortissait sur la même durée résiduelle.\n- Pellan a vendu à Ostral des pompes pour 380 k€ en 2026 ; aucune ne figure dans les stocks d’Ostral au 31/12/2026. Les créances et dettes réciproques ont déjà été éliminées.\n\n**Conventions de comptes pour les écritures de consolidation** (écritures passées au bilan consolidé) : 101 Capital ; 106 Réserves ; 120 Résultat ; 108 Intérêts minoritaires (compte de convention) ; 207 Écart d’acquisition ; 211 Terrains ; 213 Constructions ; 2154 Matériel industriel ; 28154 Amortissements du matériel industriel ; 261 Titres de participation ; 1523 Impôts différés passifs ; 276 Impôts différés actifs."
+        },
+        {
+          "title": "Annexe 4 — Lémanis SA : conversion et cession partielle",
+          "content": "Lémanis a été créée le 1er juillet 2019 avec un capital de **2 000 kCHF**, souscrit et libéré par Ostral pour **1 800 k€** (1 CHF = 0,90 €). Elle achète, vend et se finance en francs suisses et dispose d’une large autonomie de gestion : sa monnaie de fonctionnement est le franc suisse et ses comptes sont convertis selon la **méthode du cours de clôture**. Créée par le groupe, elle ne porte ni écart d’acquisition ni écart d’évaluation.\n\n| Capitaux propres de Lémanis au 31/12/2025 | En kCHF | Au cours historique (k€) |\n| --- | --- | --- |\n| Capital | 2 000 | 1 800 |\n| Réserves (résultat 2025 compris) | 1 200 | 1 140 |\n| Total | 3 200 | 2 940 |\n\nRésultat de Lémanis pour 2026 : **300 kCHF** ; aucune distribution en 2026.\n\n| Cours du franc suisse | 1 CHF = |\n| --- | --- |\n| 31/12/2025 (et 1/1/2026) | 1,06 € |\n| Cours moyen 2026 | 1,08 € |\n| 31/12/2026 | 1,10 € |\n\n**Cession** : le 1er janvier 2026, Ostral a cédé 20 % des actions de Lémanis à Helvea Holding pour **820 k€**, payés comptant. Dans ses comptes individuels, Ostral a constaté une plus-value de **460 k€** (820 − 20 % × 1 800)."
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1-perimetre-methodes",
+          "kind": "mcq",
+          "points": 1,
+          "prompt": "À l’aide de l’annexe 1, quel est le traitement de Pellan et de Lémanis dans les comptes consolidés de l’exercice 2026 ?",
+          "options": [
+            "Pellan : mise en équivalence jusqu’au 31/12/2025, puis intégration globale ; Lémanis : intégration globale",
+            "Pellan : intégration globale à compter du 1/1/2026 ; Lémanis : intégration globale maintenue (80 % des droits de vote)",
+            "Pellan : intégration globale à compter du 1/1/2026 ; Lémanis : intégration proportionnelle, le pacte donnant un droit de veto à Helvea Holding",
+            "Pellan : intégration globale avec effet au 1/3/2022, date d’acquisition du premier lot ; Lémanis : intégration globale"
+          ],
+          "answer": [
+            1
+          ],
+          "option_explanations": [
+            "Inexact : avec 15 % des voix, sans siège ni participation aux décisions, Ostral n’avait pas d’influence notable ; Pellan n’était pas consolidée avant 2026.",
+            "Exact : Pellan entre à la prise de contrôle (70 %) ; Lémanis reste sous contrôle exclusif (80 % des voix, majorité du conseil).",
+            "Inexact : le veto d’Helvea ne porte que sur des décisions protectrices (statuts, capital, dissolution) ; budget, investissements et dirigeants restent décidés par Ostral.",
+            "Inexact : en cas d’acquisition en plusieurs fois, l’entrée dans le périmètre se fait à la date de prise de contrôle, ici le 1/1/2026."
+          ],
+          "explanation": "Pellan : de 2022 à 2025, 15 % des droits de vote (sous le seuil de présomption de 20 %), aucun siège, aucune participation aux décisions ni opérations significatives : ni contrôle ni influence notable (art. 211-5), donc pas de consolidation. Le 1/1/2026, Ostral passe à 70 % des voix et désigne quatre membres sur cinq du comité de direction : contrôle exclusif (art. 211-3), intégration globale à compter de cette date, qui est la date d’entrée dans le périmètre en cas d’acquisition en plusieurs fois (art. 211-10). Lémanis : après la cession, Ostral garde 80 % des voix et quatre administrateurs sur cinq ; les décisions soumises à l’unanimité sont des droits protecteurs du minoritaire qui ne lui donnent pas part aux politiques financière et opérationnelle. Il n’y a pas d’accord de partage du contrôle au sens de l’art. 211-4 : l’intégration globale est maintenue. Bonne réponse : l’option 2. L’option 1 suppose une influence notable qui n’existait pas ; l’option 3 confond droits protecteurs et contrôle conjoint ; l’option 4 fait remonter l’entrée à l’achat du premier lot."
+        },
+        {
+          "id": "q2-methode-ecart-acquisition",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À l’aide des annexes 1 et 2, comment l’écart d’acquisition de Pellan doit-il être déterminé selon le règlement ANC 2020-01 ?",
+          "options": [
+            "Lot par lot : le premier lot sur les capitaux propres de Pellan au 1/3/2022 (1 500 k€), le second sur l’actif net identifiable au 1/1/2026",
+            "Lot de 15 % réévalué à sa juste valeur (390 k€), l’écart de 120 k€ étant porté en résultat consolidé, puis écart calculé sur un coût de 1 820 k€",
+            "Lot de 15 % réévalué à sa juste valeur, l’écart de 120 k€ étant porté en réserves consolidées comme le prévoit l’article 241-1",
+            "Coût total des deux lots (1 700 k€) comparé à 70 % de l’actif net identifiable évalué au 1/1/2026, date de prise de contrôle, sans réévaluation du premier lot"
+          ],
+          "answer": [
+            3
+          ],
+          "option_explanations": [
+            "Inexact : actifs et passifs sont évalués une seule fois, à la date de prise de contrôle ; les capitaux propres de 2022 ne servent pas.",
+            "Inexact : c’est le traitement d’IFRS 3 §42 ; les règles françaises ne réévaluent pas la participation antérieure à la juste valeur.",
+            "Inexact : l’article 241-1 vise une entité antérieurement mise en équivalence et la réévaluation de sa quote-part d’actif net, pas la juste valeur des titres.",
+            "Exact : le coût d’acquisition comprend tous les lots à leur coût historique ; l’actif net identifiable est évalué à la date de prise de contrôle."
+          ],
+          "explanation": "Selon le règlement ANC 2020-01, l’entité entre dans le périmètre à la date de prise de contrôle (art. 211-10 et 231-1). L’écart d’acquisition est la différence entre le coût d’acquisition des titres et la part de l’acquéreur dans les actifs et passifs identifiables évalués à leur valeur d’entrée (art. 231-9) ; cette évaluation est faite à la date d’entrée dans le périmètre (art. 231-8), qui est la date de prise de contrôle en cas d’acquisition en plusieurs fois (art. 211-10). L’article 241-1 retient la même logique pour une entité antérieurement mise en équivalence : coût d’acquisition total de tous les lots, actifs et passifs évalués à la date de prise de contrôle. Le premier lot, qui n’était pas consolidé, entre donc à son coût historique (270 k€) dans un coût total de 1 700 k€, comparé à 70 % de l’actif net identifiable au 1/1/2026 : c’est l’option 4. L’option 1 évalue le premier lot sur des capitaux propres de 2022, alors que l’évaluation se fait une fois, à la prise de contrôle. L’option 2 applique IFRS 3 §42 (réévaluation de la participation antérieure à la juste valeur en résultat). L’option 3 détourne l’article 241-1, réservé à une entité antérieurement mise en équivalence : il porte en réserves l’écart de réévaluation de la quote-part de capitaux propres déjà consolidée, sans jamais réévaluer les titres à la juste valeur."
+        },
+        {
+          "id": "q3-actif-net-identifiable",
+          "kind": "numeric",
+          "points": 1,
+          "prompt": "À l’aide de l’annexe 2, calculez l’actif net identifiable de Pellan au 1er janvier 2026, après prise en compte des écarts d’évaluation et des impôts différés correspondants (en k€).",
+          "expected_value": 2200,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "Écarts d’évaluation bruts : terrain 250 − 150 = 100 ; construction 900 − 600 = 300 ; total 400. Les bases fiscales étant inchangées, ces écarts créent des différences temporelles : impôt différé passif de 400 × 25 % = 100 ; écarts nets 300. Actif net identifiable = capitaux propres comptables (800 + 1 100 = 1 900) + 300 = **2 200 k€**. Erreurs types hors tolérance : 2 300 k€ (impôt différé oublié), 1 900 k€ (écarts d’évaluation oubliés)."
+        },
+        {
+          "id": "q4-ecart-acquisition",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À l’aide de l’annexe 2 et de votre réponse précédente, calculez l’écart d’acquisition de Pellan au 1er janvier 2026 selon le règlement ANC 2020-01 (en k€).",
+          "expected_value": 160,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "Coût d’acquisition total : 270 + 1 430 = 1 700 k€. Quote-part acquise de l’actif net identifiable : 70 % × 2 200 = 1 540 k€. Écart d’acquisition = 1 700 − 1 540 = **160 k€**, non amorti (durée d’utilisation non limitée, art. 231-11) et sans dépréciation en 2026. Erreurs types : 90 k€ (impôt différé oublié : 1 700 − 70 % × 2 300), 370 k€ (écarts d’évaluation oubliés : 1 700 − 70 % × 1 900), 265 k€ (calcul lot par lot : 270 − 15 % × 1 500 + 1 430 − 55 % × 2 200), 280 k€ (goodwill IFRS avec réévaluation du premier lot)."
+        },
+        {
+          "id": "q5-ecriture-premiere-consolidation",
+          "kind": "journal_entry",
+          "points": 2.5,
+          "prompt": "À l’aide des annexes 2 et 3 et de vos réponses précédentes, passez au 1er janvier 2026, en une seule écriture, la constatation des écarts d’évaluation et de l’impôt différé correspondant, l’élimination des titres Pellan et le partage des capitaux propres de Pellan entre le groupe et les intérêts minoritaires. Utilisez les comptes de l’annexe 3 (101, 106, 211, 213, 207, 261, 1523 et 108).",
+          "date": "01/01/2026",
+          "entries": [
+            {
+              "account": "101",
+              "label": "Capital (Pellan)",
+              "debit": 800,
+              "credit": 0
+            },
+            {
+              "account": "106",
+              "label": "Réserves (Pellan)",
+              "debit": 1100,
+              "credit": 0
+            },
+            {
+              "account": "211",
+              "label": "Terrains (écart d’évaluation)",
+              "debit": 100,
+              "credit": 0
+            },
+            {
+              "account": "213",
+              "label": "Constructions (écart d’évaluation)",
+              "debit": 300,
+              "credit": 0
+            },
+            {
+              "account": "207",
+              "label": "Écart d’acquisition",
+              "debit": 160,
+              "credit": 0
+            },
+            {
+              "account": "261",
+              "label": "Titres de participation Pellan (deux lots)",
+              "debit": 0,
+              "credit": 1700
+            },
+            {
+              "account": "1523",
+              "label": "Impôts différés passifs (400 × 25 %)",
+              "debit": 0,
+              "credit": 100
+            },
+            {
+              "account": "108",
+              "label": "Intérêts minoritaires (30 % × 2 200)",
+              "debit": 0,
+              "credit": 660
+            }
+          ],
+          "explanation": "Les écarts d’évaluation sont constatés à 100 % (terrain + 100, construction + 300), avec l’impôt différé passif correspondant (100). Les capitaux propres de Pellan à la date de prise de contrôle (capital 800, réserves 1 100) sont annulés ; les titres sont éliminés pour leur coût total (270 + 1 430 = 1 700). Les intérêts minoritaires reçoivent 30 % de l’actif net identifiable : 30 % × 2 200 = **660**, sans aucune part de l’écart d’acquisition (méthode partielle). L’écart d’acquisition (160) solde l’écriture. Contrôle : débits 800 + 1 100 + 100 + 300 + 160 = 2 460 ; crédits 1 700 + 100 + 660 = 2 460. Pellan entrant le 1/1/2026, aucune réserve consolidée n’en provient à cette date."
+        },
+        {
+          "id": "q6-ecriture-plus-value-interne",
+          "kind": "journal_entry",
+          "points": 2,
+          "prompt": "À l’aide de l’annexe 3, passez au bilan consolidé du 31 décembre 2026 l’écriture d’élimination du résultat interne sur la cession du banc d’essai, impôt différé compris. Utilisez les comptes 120, 276, 2154 et 28154.",
+          "date": "31/12/2026",
+          "entries": [
+            {
+              "account": "120",
+              "label": "Résultat (plus-value interne nette d’impôt, Pellan)",
+              "debit": 42,
+              "credit": 0
+            },
+            {
+              "account": "276",
+              "label": "Impôts différés actifs (56 × 25 %)",
+              "debit": 14,
+              "credit": 0
+            },
+            {
+              "account": "28154",
+              "label": "Amortissements du matériel industriel (supplément éliminé)",
+              "debit": 8,
+              "credit": 0
+            },
+            {
+              "account": "2154",
+              "label": "Matériel industriel (plus-value interne)",
+              "debit": 0,
+              "credit": 64
+            }
+          ],
+          "explanation": "Plus-value interne constatée par Pellan : 160 − 96 = 64. Le bien doit figurer au bilan consolidé comme si la cession n’avait pas eu lieu : la valeur brute est ramenée de 160 à 96 (crédit 2154 : 64). L’amortissement 2026 d’Ostral (160 / 4 × 6/12 = 20) excède celui qui aurait été calculé sur 96 (96 / 4 × 6/12 = 12) : le supplément de 8 est annulé (débit 28154). Résultat interne net à éliminer : 64 − 8 = 56, d’où un impôt différé actif de 56 × 25 % = 14 et une diminution du résultat consolidé de **42**. Pellan étant la société cédante, cette diminution affecte son résultat retraité et sera partagée entre le groupe (70 %) et les minoritaires (30 %). Contrôle : 42 + 14 + 8 = 64."
+        },
+        {
+          "id": "q7-interets-minoritaires-pellan",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À l’aide des annexes 2 et 3 et de vos réponses précédentes, calculez le montant des intérêts minoritaires de Pellan au bilan consolidé du 31 décembre 2026, résultat 2026 compris (en k€, arrondi au dixième). Retenez le résultat retraité de Pellan (écart d’évaluation de la construction et résultat interne sur le banc d’essai).",
+          "expected_value": 716.4,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "k€",
+          "decimals": 1,
+          "explanation": "Résultat retraité de Pellan pour 2026 : 245 − 15 (supplément d’amortissement de la construction, 300 / 15 = 20, net de la reprise d’impôt différé de 5) − 42 (résultat interne net d’impôt, Pellan étant le vendeur) = **188 k€**. Capitaux propres retraités au 31/12/2026 : capital 800 + réserves 1 100 + écarts d’évaluation nets à l’entrée 300 + résultat retraité 188 = 2 388 k€. Intérêts minoritaires = 30 % × 2 388 = **716,4 k€**, dont 56,4 k€ de résultat. Erreurs types hors tolérance : 729 k€ (résultat interne oublié), 733,5 k€ (aucun retraitement du résultat), 643,5 k€ (capitaux propres sociaux sans écarts d’évaluation)."
+        },
+        {
+          "id": "q8-resultat-cession-lemanis",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l’aide de l’annexe 4, calculez le résultat de cession des titres Lémanis à faire figurer dans le compte de résultat consolidé 2026 selon le règlement ANC 2020-01, y compris la quote-part d’écart de conversion afférente aux titres cédés (en k€, arrondi au dixième).",
+          "expected_value": 232,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "k€",
+          "decimals": 1,
+          "explanation": "Valeur en consolidation de Lémanis au 1/1/2026 (actif net au cours de clôture) : 3 200 kCHF × 1,06 = 3 392 k€, dont capitaux propres au cours historique 2 940 k€ et écart de conversion cumulé 3 392 − 2 940 = 452 k€ (entièrement part du groupe avant la cession). Résultat avant reprise de l’écart de conversion : 820 − 20 % × 3 392 = 820 − 678,4 = 141,6 k€. Reprise en résultat de la quote-part de l’écart de conversion afférente aux titres cédés (art. 242-5 et 272-21) : 20 % × 452 = 90,4 k€. Résultat de cession consolidé = 141,6 + 90,4 = **232 k€** (soit 820 − 20 % × 2 940). Erreurs types : 460 k€ (plus-value des comptes individuels), 141,6 k€ (reprise de l’écart de conversion oubliée), 322,4 k€ (reprise ajoutée à un calcul déjà fait au cours historique)."
+        },
+        {
+          "id": "q9-ecart-conversion-2026",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À l’aide de l’annexe 4, calculez l’écart de conversion de l’exercice 2026 sur Lémanis revenant au groupe (part du groupe, en k€, arrondi au dixième).",
+          "expected_value": 107.2,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 0.5
+          },
+          "unit": "k€",
+          "decimals": 1,
+          "explanation": "Méthode du cours de clôture (art. 272-17) : actifs et passifs au cours de clôture, résultat au cours moyen, capitaux propres d’ouverture au cours historique. Écart de l’exercice sur les capitaux propres d’ouverture : 3 200 × (1,10 − 1,06) = 128 k€ ; sur le résultat : 300 × (1,10 − 1,08) = 6 k€ ; total 134 k€. Contrôle : capitaux propres de clôture 3 500 × 1,10 = 3 850 k€ ; à l’ouverture 3 392 k€ + résultat converti 300 × 1,08 = 324 k€, soit 3 716 k€ ; différence 134 k€. Depuis le 1/1/2026, le groupe ne détient plus que 80 % : part du groupe = 80 % × 134 = **107,2 k€**, en capitaux propres (art. 272-21) ; 26,8 k€ vont aux intérêts minoritaires. Erreurs types : 134 k€ (totalité attribuée au groupe), 102,4 k€ (écart sur le résultat oublié)."
+        },
+        {
+          "id": "q10-mise-equivalence-anterieure",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "À l’aide des annexes 1 et 2 : si Ostral avait détenu depuis 2022 non pas 15 % mais 30 % de Pellan, mis en équivalence, l’écart de réévaluation de cette quote-part constaté lors de la prise de contrôle du 1er janvier 2026 aurait été comptabilisé en résultat consolidé 2026.",
+          "answer": false,
+          "explanation": "Faux. Pour l’intégration globale d’une entité précédemment mise en équivalence, le coût d’acquisition total regroupe tous les lots et les actifs et passifs sont évalués à la date de prise de contrôle ; l’écart de réévaluation par rapport à la quote-part de capitaux propres antérieurement consolidée par mise en équivalence est porté **directement dans les réserves consolidées** (règl. ANC 2020-01, art. 241-1). Le passage en résultat est la solution d’IFRS 3 §42, qui réévalue la participation antérieure à sa juste valeur."
+        },
+        {
+          "id": "q11-note-cession-lemanis",
+          "kind": "open",
+          "points": 2,
+          "prompt": "À l’aide de l’annexe 4 et de vos réponses précédentes, Mme Delorme ne comprend pas pourquoi la plus-value de 460 k€ des comptes individuels d’Ostral ne se retrouve pas dans le résultat consolidé. Rédigez une note qui explique le traitement de la cession partielle de Lémanis dans les comptes consolidés 2026 (méthode, calcul, rapprochement des deux résultats, conséquences sur les capitaux propres et les intérêts minoritaires).",
+          "model_answer": "**Maintien de l’intégration globale** : Ostral conserve 80 % des droits de vote et la majorité du conseil ; les droits d’Helvea Holding sont protecteurs. Lémanis reste intégrée globalement ; seul le pourcentage d’intérêts passe de 100 % à 80 % au 1er janvier 2026.\n\n**Résultat de cession consolidé** : le règlement ANC 2020-01 traite la cession partielle sans perte de contrôle comme une cession, dont le résultat passe par le compte de résultat (art. 242-5). Il se calcule sur la dernière valeur en consolidation des titres cédés, au prorata de la quote-part cédée (20 % sur 100 %), écart de conversion compris : 820 − 20 % × 3 392 = 141,6 k€, auxquels s’ajoute la reprise en résultat de la quote-part de l’écart de conversion afférente aux titres cédés, 20 % × 452 = 90,4 k€ (art. 272-21). Résultat consolidé : **232 k€**.\n\n**Rapprochement** : la plus-value sociale (460 k€) est calculée sur le coût historique des titres (20 % × 1 800 = 360). Or le groupe a déjà intégré dans ses réserves consolidées les bénéfices accumulés par Lémanis depuis sa création (1 140 k€ au cours historique) ; 20 % de ces réserves, soit 228 k€, ont déjà été « comptés » et ne peuvent pas l’être une seconde fois en résultat : 460 − 228 = 232 k€. Au bilan consolidé, le résultat d’Ostral est diminué de 228 k€ par reclassement en réserves consolidées (débit 120, crédit 106).\n\n**Capitaux propres** : à compter du 1er janvier 2026, les intérêts minoritaires reçoivent 20 % de l’actif net de Lémanis au cours de clôture (678,4 k€ à cette date, écart de conversion compris), puis 20 % du résultat et de l’écart de conversion de 2026 ; l’écart de conversion part du groupe ne porte plus que sur 80 % (361,6 k€ d’ouverture, plus 107,2 k€ pour 2026). Au total, les capitaux propres part du groupe augmentent de 141,6 k€ : + 232 en résultat, − 90,4 d’écart de conversion repris en résultat.",
+          "key_points": [
+            "Contrôle conservé (80 %, droits d’Helvea protecteurs) : intégration globale maintenue, intérêts de 80 %",
+            "ANC 2020-01 : la cession partielle sans perte de contrôle dégage un résultat de cession consolidé (art. 242-5)",
+            "Calcul : 820 − 20 % × 3 392 + reprise de 20 % de l’écart de conversion (90,4) = 232 k€",
+            "Rapprochement : 460 − 232 = 228 = 20 % des réserves accumulées depuis la création, déjà en réserves consolidées",
+            "Minoritaires : 20 % de l’actif net (678,4 au 1/1/2026), puis 20 % du résultat et de l’écart de conversion 2026"
+          ],
+          "explanation": "Le candidat doit justifier le maintien de la méthode, appliquer les articles 242-5 et 272-21 (résultat de cession au prorata, écart de conversion repris en résultat pour la quote-part cédée), et surtout expliquer l’écart avec la plus-value sociale : le coût historique des titres ignore les bénéfices déjà consolidés. Contrôle global : capitaux propres part du groupe + 141,6 k€ (232 − 90,4), égal au prix de cession diminué de la quote-part d’actif net transférée aux minoritaires (820 − 678,4)."
+        },
+        {
+          "id": "q12-note-divergences-ifrs",
+          "kind": "open",
+          "points": 2.5,
+          "prompt": "À l’aide de l’ensemble des annexes et de vos réponses précédentes, le groupe envisage d’appliquer les IFRS. Présentez, en les chiffrant, les différences de traitement des deux opérations du 1er janvier 2026 (prise de contrôle de Pellan avec goodwill partiel ; cession partielle de Lémanis) par rapport au règlement ANC 2020-01. Pour Pellan, retenez une valeur comptable de 270 k€ pour la participation de 15 % juste avant la prise de contrôle.",
+          "model_answer": "**Prise de contrôle de Pellan (IFRS 3)**\n- La participation de 15 % est réévaluée à sa juste valeur à la date de prise de contrôle (IFRS 3 §42) : 390 − 270 = **120 k€ de profit en résultat 2026**. En règles françaises, le premier lot reste à son coût historique et aucun résultat n’est constaté.\n- Goodwill (IFRS 3 §32) = contrepartie transférée 1 430 + participations ne donnant pas le contrôle 660 (30 % × 2 200, option du goodwill partiel) + juste valeur de la participation antérieure 390 − actif net identifiable 2 200 = **280 k€**, contre 160 k€ en ANC 2020-01 ; l’écart de 120 k€ correspond exactement à la réévaluation du premier lot. L’actif net identifiable (2 200) et les minoritaires (660) sont identiques dans les deux référentiels en goodwill partiel ; avec l’option du goodwill complet (§19), les minoritaires seraient évalués à leur juste valeur et le goodwill serait plus élevé.\n- Le goodwill IFRS n’est jamais amorti : il est affecté à une unité génératrice de trésorerie et testé chaque année (IAS 36) ; ici, l’écart français, à durée non limitée, n’est pas amorti non plus.\n\n**Cession partielle de Lémanis (IFRS 10)**\n- Sans perte de contrôle, la cession est une transaction entre actionnaires comptabilisée en capitaux propres (IFRS 10 §23 et §B96) : **aucun résultat de cession**, alors que le règlement ANC 2020-01 dégage 232 k€ en résultat. Les participations ne donnant pas le contrôle sont constatées pour 20 % de l’actif net (678,4 k€) et la différence avec le prix, 820 − 678,4 = 141,6 k€, est portée directement en capitaux propres part du groupe.\n- La quote-part des écarts de conversion cumulés (90,4 k€) n’est pas recyclée en résultat : elle est réattribuée aux participations ne donnant pas le contrôle (IAS 21 §48C).\n\n**Synthèse** : le résultat consolidé 2026 est augmenté de 120 k€ (Pellan) et diminué de 232 k€ (Lémanis) en IFRS ; les capitaux propres totaux part du groupe sont plus élevés de 120 k€ (le goodwill supplémentaire), l’effet de la cession sur les capitaux propres étant identique (141,6 k€) dans les deux référentiels.",
+          "key_points": [
+            "IFRS 3 §42 : lot de 15 % réévalué à la juste valeur, profit de 120 k€ en résultat (rien en ANC 2020-01)",
+            "Goodwill partiel IFRS = 1 430 + 660 + 390 − 2 200 = 280 k€, contre 160 k€ en ANC 2020-01",
+            "IFRS 10 §23 : cession sans perte de contrôle en capitaux propres, aucun résultat (232 k€ en ANC 2020-01)",
+            "Écart prix − PNC (820 − 678,4 = 141,6 k€) imputé sur les capitaux propres part du groupe",
+            "Écarts de conversion réattribués aux PNC sans recyclage (IAS 21 §48C)"
+          ],
+          "explanation": "Les deux divergences tiennent à la même logique : en IFRS, franchir le seuil du contrôle entraîne une réévaluation à la juste valeur en résultat, alors qu’une variation de pourcentage sans changement de contrôle est une transaction entre actionnaires, en capitaux propres. Les règles françaises raisonnent à l’inverse sur le coût historique des lots et dégagent un résultat de cession dès qu’une quote-part est cédée."
+        }
+      ],
+      "explanation": "Méthode : (1) périmètre : Pellan, non consolidée jusqu’en 2025 (15 % sans influence notable), est intégrée globalement à compter du 1/1/2026 (70 %) ; Lémanis reste intégrée globalement (80 %, droits d’Helvea protecteurs) ; (2) première consolidation de Pellan selon le règlement ANC 2020-01 : coût total des lots (1 700 k€), actif net identifiable évalué à la date de prise de contrôle (2 200 k€ après écarts d’évaluation de 400 et impôt différé passif de 100), écart d’acquisition 160 k€ non amorti, minoritaires 660 k€ ; (3) élimination de la plus-value interne sur le banc d’essai (64 − 8 = 56, impôt différé actif 14, effet net − 42 imputé au vendeur Pellan) ; résultat retraité de Pellan 188 k€ et minoritaires au 31/12/2026 716,4 k€ ; (4) cession partielle de Lémanis : résultat consolidé 232 k€ (820 − 678,4 + 90,4 d’écart de conversion repris), contre 460 k€ dans les comptes individuels, la différence de 228 k€ correspondant aux réserves déjà consolidées ; écart de conversion 2026 de 134 k€, dont 107,2 k€ part du groupe ; (5) IFRS : profit de 120 k€ sur le premier lot de Pellan et goodwill de 280 k€ ; cession de Lémanis en capitaux propres (141,6 k€), sans recyclage des écarts de conversion. Points de vigilance : date de prise de contrôle, impôt différé sur chaque écart, imputation du résultat interne au vendeur, méthode du cours de clôture et partage de l’écart de conversion."
+    },
+    {
+      "id": "ue4-dossier-0006",
+      "type": "case_study",
+      "dossier": true,
+      "ue": "UE4",
+      "theme": "rapport-opinion",
+      "notion": "formulation-opinion",
+      "difficulty": 3,
+      "tags": [
+        "dossier type examen",
+        "commissariat aux comptes",
+        "seuil de signification",
+        "inventaire physique",
+        "circularisation",
+        "ventes-clients",
+        "stocks",
+        "opinion",
+        "justification des appréciations",
+        "durabilité"
+      ],
+      "source_ref": "C. com. art. L. 821-53 (certification et justification des appréciations), L. 232-6-3 (état de durabilité et sa certification), L. 821-13 (liste des CAC habilités pour la durabilité) et L. 822-1 (OTI) ; PCG art. 513-3 et 513-4 (règl. ANC 2014-03) ; NEP 320, 450, 500, 501, 505, 700, 701 et 702 ; directive (UE) 2022/2464 (CSRD), directive (UE) 2025/794 (report) et directive (UE) 2026/470 (Omnibus I : champ de plus de 1 000 salariés et 450 M€ de chiffre d’affaires, assurance limitée) ; comptes PCG 355, 395, 4198, 44587, 6817, 701, 7091 et 7135",
+      "verified": true,
+      "estimated_seconds": 5400,
+      "total_points": 20,
+      "title": "Certification des comptes 2026 des Biscuiteries Morvane : stocks, clients, opinion et durabilité",
+      "context": "Les **Biscuiteries Morvane SA**, installées à Cholet, fabriquent des biscuits et gâteaux secs dans trois usines (Cholet, Vierzon et Albi) et les vendent principalement à la grande distribution : cinq centrales d’achat représentent 78 % du chiffre d’affaires. La société, non cotée, est détenue à 62 % par la famille Morvane et à 38 % par un fonds d’investissement ; elle ne détient aucune filiale et n’appartient à aucun groupe. Elle n’est pas une entité d’intérêt public. L’exercice coïncide avec l’année civile.\n\nLe cabinet **Loire Audit & Associés** est commissaire aux comptes de Morvane depuis 2023. Vous êtes chef de mission ; l’associée signataire, Mme Garnier, vous demande, à l’issue de l’intervention finale de février 2027 :\n\n- de vérifier le seuil de signification retenu pour l’audit des comptes 2026 ;\n- d’apprécier les travaux réalisés sur les stocks (inventaire physique) et sur les clients (demandes de confirmation) ;\n- de chiffrer les anomalies relevées et de proposer les écritures de correction ;\n- d’en tirer les conséquences sur l’opinion et sur la justification des appréciations ;\n- de répondre au président sur l’état de durabilité et sa certification.\n\n**Hypothèses** : montants en milliers d’euros (k€) ; taux d’impôt sur les sociétés de 25 %, toutes les corrections envisagées étant fiscalement déductibles ou imposables ; les produits vendus sont soumis à la TVA au taux de 5,5 %. On admet qu’à la date de la mission la directive (UE) 2026/470 (Omnibus I) a été transposée en droit français sans option particulière. Toutes les données utiles figurent dans les annexes 1 à 4.",
+      "annexes": [
+        {
+          "title": "Annexe 1 — Données clés de Morvane",
+          "content": "| Indicateur | 2025 | 2026 (comptes provisoires) | 2027 (prévision) |\n| --- | --- | --- | --- |\n| Chiffre d’affaires net HT | 486 000 | 512 000 | 530 000 |\n| Effectif moyen au cours de l’exercice | 1 210 | 1 260 | 1 290 |\n| Total du bilan | 352 000 | 380 000 | — |\n\n**Compte de résultat provisoire 2026 (extraits, k€)** : résultat d’exploitation 33 100 ; résultat financier − 1 100 ; résultat exceptionnel + 4 000 (plus-value de cession de l’ancien entrepôt de Vierzon, opération non récurrente) ; impôt sur les bénéfices − 9 000 ; résultat net 27 000.\n\n**Bilan provisoire au 31/12/2026 (extraits, k€)** : stocks de matières premières et emballages 16 700 ; stocks de produits finis 24 600 (Cholet 11 200 ; Vierzon 6 100 ; Albi 4 900 ; entrepôt du prestataire logistique LogiOuest à Angers 2 400) ; créances clients 96 400 TTC."
+        },
+        {
+          "title": "Annexe 2 — Politique du cabinet en matière de seuils",
+          "content": "- Critère de référence pour une entité industrielle bénéficiaire : **résultat courant avant impôt** de l’exercice audité, les éléments exceptionnels non récurrents étant exclus.\n- Seuil de signification : **5 %** du critère de référence.\n- Seuil de planification : **75 %** du seuil de signification.\n- Seuil des anomalies manifestement insignifiantes : **5 %** du seuil de signification.\n- Les prévisions établies lors de la planification (septembre 2026) se sont réalisées ; les seuils calculés sur les comptes provisoires n’ont pas à être révisés."
+        },
+        {
+          "title": "Annexe 3 — Travaux sur les stocks et les clients",
+          "content": "**Inventaire physique du 31/12/2026** : l’équipe a assisté aux comptages de Cholet et de Vierzon. Une intempérie a bloqué l’accès au site d’Albi le 31 décembre ; Morvane y a réalisé ses comptages sans l’équipe. Aucun travail n’a été prévu sur le stock déposé chez LogiOuest. Morvane tient un inventaire permanent des produits finis dans les trois usines.\n\n**Constat 1 — Albi** : la revue analytique de janvier a montré une hausse de 38 % du stock de produits finis d’Albi, alors que la production du site est stable et que ses ventes ont baissé de 6 %. Le 14 janvier 2027, l’équipe a procédé à des comptages à Albi et a reconstitué les mouvements depuis le 31 décembre à partir de l’inventaire permanent : un lot de **60 000 cartons** a été compté deux fois par deux équipes de comptage. Coût de production unitaire : **9 €** par carton.\n\n**Constat 2 — Dates de durabilité minimale (DDM)** : des produits finis dont la DDM expire avant le 28 février 2027 figurent dans les stocks pour un coût de **840 k€**, sans dépréciation. Selon les ventes réalisées depuis plusieurs années, ces produits sont cédés à des soldeurs pour **20 % de leur coût**, frais de vente déduits.\n\n**Demandes de confirmation des clients** : des demandes ouvertes ont été adressées aux cinq centrales d’achat et à vingt autres clients. Le directeur général s’est opposé à l’envoi d’une demande à la centrale belge **Eurodis** (créance de 3 100 k€ TTC) : « un litige commercial est en cours, je ne veux pas envenimer la négociation ».\n\n**Constat 3 — Centrale Socadis** : solde du compte client dans les livres de Morvane au 31/12/2026 : **14 820 k€** TTC ; solde indiqué par Socadis : **11 184,5 k€**. Rapprochement :\n\n| Élément de rapprochement | k€ TTC |\n| --- | --- |\n| Virement émis par Socadis le 30/12/2026, reçu par Morvane le 3/1/2027 | 1 420 |\n| Ristourne de fin d’année 2026 déduite par Socadis (1 980 k€ HT) | 2 088,9 |\n| Avoir pour palettes endommagées retournées le 18/12/2026, détruites par Morvane, avoir établi le 8/1/2027 (120 k€ HT) | 126,6 |\n| Écart total | 3 635,5 |\n\n*Accord commercial annuel 2026 conclu avec Socadis (extrait)* : « une ristourne de fin d’année de 1,5 % du chiffre d’affaires net hors taxes réalisé avec Socadis en 2026 est acquise si ce chiffre d’affaires atteint 120 000 k€ ; elle est réglée par avoir au plus tard le 31 mars 2027. » Chiffre d’affaires HT réalisé avec Socadis en 2026 : **132 000 k€**. Aucune ristourne n’est comptabilisée au 31/12/2026."
+        },
+        {
+          "title": "Annexe 4 — Réunion de synthèse du 3 mars 2027 et questions de la direction",
+          "content": "**Position de la direction** : M. Morvane, président-directeur général, accepte de corriger les constats 1 et 2 ainsi que l’avoir pour palettes endommagées. Il refuse de comptabiliser la ristourne Socadis : « Socadis n’a pas encore validé ses volumes et nous renégocions l’accord ; l’avoir sera comptabilisé en 2027. » Aucune autre anomalie n’a été relevée.\n\n**Demande de la directrice financière, Mme Leroux** : « Notre principal concurrent, coté à Paris, publie un rapport d’audit avec des points clés de l’audit. Nous voulons la même présentation. Et plutôt qu’une réserve, je préférerais que le sujet de la ristourne soit traité dans cette partie du rapport, qui me paraît moins négative. »\n\n**Questions du président sur la durabilité** : « Le fonds d’investissement nous demande un rapport de durabilité. Sommes-nous obligés d’en publier un, et à partir de quand ? Loire Audit, qui figure sur la liste des commissaires aux comptes habilités à certifier les informations en matière de durabilité, peut-il s’en charger ? Je souhaite une certification aussi solide que celle des comptes, pour rassurer le fonds. »\n\n**Rappel** : la directive (UE) 2025/794 a reporté de deux ans l’application de la CSRD aux grandes entreprises qui n’étaient pas déjà soumises à la déclaration de performance extra-financière en tant qu’entités d’intérêt public, ce qui est le cas de Morvane. Selon la directive Omnibus I, transposée (hypothèse), seules les entreprises dont le chiffre d’affaires net dépasse 450 000 k€ et dont l’effectif moyen dépasse 1 000 salariés au cours de l’exercice sont tenues de publier un état de durabilité, au titre des exercices ouverts à compter du 1er janvier 2027."
+        }
+      ],
+      "sub_questions": [
+        {
+          "id": "q1-seuil-signification",
+          "kind": "numeric",
+          "points": 1,
+          "prompt": "À l’aide des annexes 1 et 2, calculez le seuil de signification de l’audit des comptes 2026 de Morvane (en k€).",
+          "expected_value": 1600,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "Critère de référence : résultat courant avant impôt = résultat d’exploitation 33 100 + résultat financier (− 1 100) = 32 000 k€ ; la plus-value non récurrente de 4 000 k€, exceptionnelle, est exclue. Seuil de signification = 5 % × 32 000 = **1 600 k€**. En découlent un seuil de planification de 75 % × 1 600 = 1 200 k€ et un seuil des anomalies manifestement insignifiantes de 5 % × 1 600 = 80 k€. Erreurs types hors tolérance : 1 800 k€ (résultat avant impôt de 36 000 k€, plus-value comprise), 1 350 k€ (5 % du résultat net), 1 200 k€ (seuil de planification)."
+        },
+        {
+          "id": "q2-inventaire-physique",
+          "kind": "open",
+          "points": 2.5,
+          "prompt": "À l’aide des annexes 1 et 3, appréciez les travaux réalisés sur l’existence des stocks de produits finis au 31/12/2026 et indiquez les procédures que l’équipe aurait dû ou doit encore mettre en œuvre, site par site (Cholet et Vierzon, Albi, LogiOuest).",
+          "model_answer": "**Principe** : les stocks (41 300 k€, soit près de 11 % du total du bilan et vingt-six fois le seuil de signification) sont significatifs ; le commissaire aux comptes assiste donc à la prise d’inventaire physique pour collecter des éléments sur leur existence et leur état (NEP 501 §3). Lorsque les stocks sont répartis sur plusieurs sites, il choisit ceux où sa présence est nécessaire en fonction du risque de chaque site (§4).\n\n**Cholet et Vierzon** : la présence de l’équipe est conforme. Elle devait vérifier que les instructions de comptage étaient appliquées (zones délimitées, double comptage, étiquetage des palettes comptées, arrêt des mouvements), réaliser des comptages par sondages dans les deux sens (du physique vers les listes, pour l’exhaustivité ; des listes vers le physique, pour l’existence), repérer les produits abîmés ou à DDM courte et relever les derniers documents de réception et d’expédition pour le contrôle de la séparation des exercices.\n\n**Albi** : l’absence au comptage résulte d’une circonstance imprévue ; l’inventaire permanent permet d’intervenir à une autre date en procédant à des comptages et en contrôlant les mouvements intercalaires (§5). C’est ce que l’équipe a fait le 14 janvier, à juste titre, après une revue analytique révélatrice. Les comptages ont mis en évidence un double comptage de 540 k€ : l’équipe doit étendre ses tests sur ce site (autres allées, rapprochement des listes de comptage), apprécier si l’erreur révèle une faiblesse des procédures d’inventaire à communiquer à la direction, et documenter la reconstitution des mouvements.\n\n**LogiOuest** : un stock de 2 400 k€ détenu par un tiers ne peut pas être ignoré (1,5 fois le seuil de signification). L’équipe doit adresser une demande de confirmation à LogiOuest sur les quantités détenues pour le compte de Morvane au 31/12/2026 (NEP 505), la rapprocher de l’inventaire permanent et, selon le risque, visiter l’entrepôt ou examiner le rapport de contrôle interne du prestataire et les contrats (droits et obligations).\n\n**Évaluation** : au-delà de l’existence, l’équipe vérifie le coût de production unitaire et la dépréciation des produits à DDM courte, à rapprocher des prix de vente aux soldeurs (constat 2).",
+          "key_points": [
+            "Stocks significatifs : présence obligatoire à l’inventaire, sites choisis selon le risque (NEP 501 §3-4)",
+            "Cholet et Vierzon : observation des procédures, comptages par sondages dans les deux sens, derniers documents de mouvements",
+            "Albi : intervention à une autre date avec comptages et contrôle des mouvements intercalaires (NEP 501 §5), extension après le double comptage",
+            "LogiOuest : demande de confirmation au tiers dépositaire, voire visite (NEP 505)",
+            "Lien avec l’évaluation : coût de production et dépréciation des produits à DDM courte"
+          ],
+          "explanation": "La NEP 501 impose l’assistance à l’inventaire physique des stocks significatifs et prévoit les solutions de repli : intervention à une autre date avec contrôle des mouvements intercalaires en cas d’empêchement imprévu (§5), procédures alternatives d’un caractère probant équivalent si la présence est impossible (§6). Le stock détenu par un tiers relève d’une demande de confirmation. La revue analytique a joué son rôle de procédure de détection."
+        },
+        {
+          "id": "q3-refus-confirmation",
+          "kind": "mcq",
+          "points": 1,
+          "prompt": "À l’aide de l’annexe 3, comment Loire Audit doit-il réagir au refus du directeur général d’adresser une demande de confirmation à Eurodis ?",
+          "options": [
+            "Accepter le refus et formuler une réserve pour limitation, sans autre diligence",
+            "Envoyer malgré tout la demande à Eurodis, le commissaire aux comptes ayant la maîtrise de la sélection des tiers",
+            "Examiner si le refus repose sur des motifs valables ; s’il est fondé, mettre en œuvre des procédures alternatives ; sinon, en tirer les conséquences dans son rapport",
+            "Remplacer la confirmation par une déclaration écrite de la direction sur le solde d’Eurodis"
+          ],
+          "answer": [
+            2
+          ],
+          "option_explanations": [
+            "Inexact : le refus doit d’abord être analysé ; une réserve n’intervient que si le refus est infondé ou si les procédures alternatives échouent.",
+            "Inexact : la maîtrise de la sélection ne permet pas de passer outre l’opposition de la direction ; la NEP 505 prévoit l’analyse de ses motifs.",
+            "Exact : démarche de la NEP 505 §10 à §12, un litige commercial pouvant constituer un motif valable à étayer.",
+            "Inexact : une déclaration de la direction, d’origine interne, ne remplace pas des éléments externes sur l’existence de la créance."
+          ],
+          "explanation": "Si la direction s’oppose à une demande de confirmation, le commissaire aux comptes examine si ce refus se fonde sur des motifs valables et collecte des éléments sur ces motifs (NEP 505 §10). S’il est fondé (un litige commercial réel, documenté, peut l’être), il met en œuvre des procédures alternatives : règlements reçus après la clôture, bons de livraison signés, factures et correspondances, analyse du litige et de son incidence sur la dépréciation (§11). S’il ne l’est pas, il en tire les conséquences dans son rapport (§12). L’option 3 est la bonne. L’option 1 saute l’analyse des motifs ; l’option 2 passe outre l’opposition de la direction sans examiner ses raisons ; l’option 4 substitue une déclaration interne à un élément probant externe."
+        },
+        {
+          "id": "q4-assertions-ristourne",
+          "kind": "mcq",
+          "points": 1,
+          "prompt": "À l’aide de l’annexe 3 (constat 3), quelles assertions l’absence de comptabilisation de la ristourne de fin d’année due à Socadis met-elle principalement en défaut ?",
+          "options": [
+            "La réalité des ventes et l’existence des créances clients",
+            "L’exhaustivité des ventes et des créances clients",
+            "La mesure des ventes et l’exhaustivité des passifs",
+            "L’évaluation des stocks de produits finis"
+          ],
+          "answer": [
+            2
+          ],
+          "option_explanations": [
+            "Inexact : les livraisons à Socadis ont bien eu lieu et la créance existe ; c’est le montant net des ventes qui est faux.",
+            "Inexact : les ventes ne sont pas sous-évaluées mais surévaluées, faute de la réduction acquise ; aucune vente ni créance n’a été omise.",
+            "Exact : le chiffre d’affaires n’est pas diminué de la ristourne acquise et l’avoir à établir, dette envers le client, n’est pas enregistré.",
+            "Inexact : la ristourne porte sur le chiffre d’affaires et la dette envers le client, sans lien avec la valeur des stocks."
+          ],
+          "explanation": "La ristourne est acquise dès que la condition de volume est remplie au 31/12/2026 (132 000 ≥ 120 000 k€) : le chiffre d’affaires 2026 doit être présenté net de cette réduction et l’obligation d’établir un avoir est un passif né au cours de l’exercice (PCG art. 513-4). Les assertions en défaut sont la **mesure** des ventes (montant enregistré trop élevé) et l’**exhaustivité** des passifs (avoir à établir omis) : option 3 (NEP 500). Reporter l’avoir en 2027, comme le veut la direction, reviendrait aussi à rattacher la ristourne au mauvais exercice, ce qui se traduit par le même excès du chiffre d’affaires 2026. L’option 1 viserait des ventes fictives ; l’option 2, des ventes ou des créances omises, alors que les ventes sont au contraire surévaluées ; l’option 4 est sans rapport avec le constat."
+        },
+        {
+          "id": "q5-anomalies-socadis",
+          "kind": "numeric",
+          "points": 1.5,
+          "prompt": "À l’aide de l’annexe 3 (constat 3), calculez l’incidence sur le résultat avant impôt 2026 des anomalies révélées par le rapprochement du solde Socadis (en k€, montant positif correspondant à la surévaluation du résultat).",
+          "expected_value": 2100,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "Le virement de 1 420 k€ est un décalage de trésorerie (émis le 30/12, reçu le 3/1) : il n’affecte ni le résultat ni le montant de la créance au 31/12 et n’est pas une anomalie. La ristourne de fin d’année, acquise en 2026 (1,5 % × 132 000 = 1 980 k€ HT), aurait dû réduire le chiffre d’affaires 2026. Les palettes retournées le 18/12/2026 et détruites constituent un retour de 2026 : chiffre d’affaires surévalué de 120 k€ HT, sans stock à réintégrer. Incidence = 1 980 + 120 = **2 100 k€** avant impôt. Erreurs types : 2 215,5 k€ (montants TTC, alors que la TVA n’affecte pas le résultat), 3 520 k€ (virement en transit compté comme une anomalie HT), 1 980 k€ (avoir pour retour oublié)."
+        },
+        {
+          "id": "q6-ecriture-ristourne",
+          "kind": "journal_entry",
+          "points": 2,
+          "prompt": "À l’aide de l’annexe 3 (constat 3), passez au 31/12/2026 l’écriture de comptabilisation de la ristourne Socadis proposée par Loire Audit à la direction. Utilisez les comptes 7091, 44587 et 4198.",
+          "date": "31/12/2026",
+          "entries": [
+            {
+              "account": "7091",
+              "label": "RRR accordés sur ventes de produits finis (1,5 % × 132 000)",
+              "debit": 1980,
+              "credit": 0
+            },
+            {
+              "account": "44587",
+              "label": "TVA sur avoirs à établir (5,5 %)",
+              "debit": 108.9,
+              "credit": 0
+            },
+            {
+              "account": "4198",
+              "label": "Rabais, remises, ristournes à accorder (Socadis)",
+              "debit": 0,
+              "credit": 2088.9
+            }
+          ],
+          "explanation": "La ristourne acquise au 31/12/2026 est un avoir à établir : débit 7091 pour le montant hors taxes (1,5 % × 132 000 = **1 980 k€**), débit 44587 pour la TVA qui sera régularisée lors de l’émission de l’avoir (1 980 × 5,5 % = **108,9 k€**), crédit 4198 pour le montant TTC (**2 088,9 k€**), qui correspond au montant déduit par Socadis dans sa réponse. Le résultat avant impôt diminuerait de 1 980 k€, le résultat net de 1 980 × 0,75 = 1 485 k€. Le compte 7091 est retenu car il s’agit d’une réduction de prix hors facture, distincte d’un retour de produits."
+        },
+        {
+          "id": "q7-ecriture-stocks",
+          "kind": "journal_entry",
+          "points": 2,
+          "prompt": "À l’aide des annexes 3 et 4, passez au 31/12/2026 les écritures de correction acceptées par la direction : double comptage d’Albi (constat 1), produits à DDM courte (constat 2) et retour de palettes endommagées (constat 3). Utilisez les comptes 355, 7135, 6817, 395, 701, 44587 et 4198.",
+          "date": "31/12/2026",
+          "entries": [
+            {
+              "account": "7135",
+              "label": "Variation des stocks de produits (double comptage d’Albi)",
+              "debit": 540,
+              "credit": 0
+            },
+            {
+              "account": "355",
+              "label": "Produits finis (60 000 cartons × 9 €)",
+              "debit": 0,
+              "credit": 540
+            },
+            {
+              "account": "6817",
+              "label": "Dotations aux dépréciations des actifs circulants (produits à DDM courte)",
+              "debit": 672,
+              "credit": 0
+            },
+            {
+              "account": "395",
+              "label": "Dépréciations des stocks de produits (840 − 20 % × 840)",
+              "debit": 0,
+              "credit": 672
+            },
+            {
+              "account": "701",
+              "label": "Ventes de produits finis (retour du 18/12/2026)",
+              "debit": 120,
+              "credit": 0
+            },
+            {
+              "account": "44587",
+              "label": "TVA sur avoir à établir (5,5 %)",
+              "debit": 6.6,
+              "credit": 0
+            },
+            {
+              "account": "4198",
+              "label": "Avoir à établir (Socadis)",
+              "debit": 0,
+              "credit": 126.6
+            }
+          ],
+          "explanation": "Constat 1 : le lot compté deux fois surévalue le stock final de 60 000 × 9 € = **540 k€** ; la correction diminue le stock (crédit 355) et la production stockée (débit 7135). Constat 2 : les produits à DDM courte, d’un coût de 840 k€, ne pourront être cédés aux soldeurs que pour 20 % de ce coût, frais de vente déduits, soit une valeur nette de réalisation de 168 k€ : dépréciation de 840 − 168 = **672 k€** (débit 6817, crédit 395), le stock restant inscrit à son coût. Retour du 18/12/2026 : les produits retournés en 2026 et détruits ne doivent plus figurer dans le chiffre d’affaires 2026 ; l’avoir établi le 8/1/2027 est un avoir à établir au 31/12/2026 : débit 701 pour 120 k€ HT (retour de produits, imputé sur le compte de ventes), débit 44587 pour la TVA à régulariser (120 × 5,5 % = 6,6 k€), crédit 4198 pour 126,6 k€ TTC. Aucun stock n’est à réintégrer, les palettes ayant été détruites. Incidence totale de ces trois corrections sur le résultat avant impôt : 540 + 672 + 120 = − 1 332 k€. Contrôle : débits 540 + 672 + 120 + 6,6 = 1 338,6 ; crédits 540 + 672 + 126,6 = 1 338,6."
+        },
+        {
+          "id": "q8-cumul-anomalies",
+          "kind": "numeric",
+          "points": 2,
+          "prompt": "À l’aide de l’annexe 3 et de vos réponses précédentes, calculez l’incidence cumulée de toutes les anomalies relevées (constats 1 à 3) sur le résultat net 2026, après impôt (en k€, montant positif correspondant à la surévaluation du résultat).",
+          "expected_value": 2484,
+          "tolerance": {
+            "kind": "absolute",
+            "value": 1
+          },
+          "unit": "k€",
+          "decimals": 0,
+          "explanation": "Anomalies avant impôt : double comptage d’Albi 540 + dépréciation des produits à DDM courte 672 + ristourne Socadis 1 980 + avoir pour retour 120 = 3 312 k€, soit plus du double du seuil de signification (1 600 k€). Après impôt à 25 % : 3 312 × 0,75 = **2 484 k€**. Après les corrections acceptées (540 + 672 + 120 = 1 332 avant impôt), seule subsiste la ristourne : 1 980 k€ avant impôt, 1 485 k€ après impôt, au-dessus du seuil de signification. Erreurs types : 3 312 k€ (impôt oublié), 2 570,6 k€ (ristourne et avoir retenus TTC)."
+        },
+        {
+          "id": "q9-documentation-anomalies",
+          "kind": "true_false",
+          "points": 1,
+          "prompt": "À l’aide des annexes 2 à 4 : les anomalies corrigées par la direction (constats 1 et 2, avoir pour retour) n’ont plus à être mentionnées dans le dossier de travail de Loire Audit, qui ne documente que les anomalies non corrigées.",
+          "answer": false,
+          "explanation": "Faux. Le commissaire aux comptes fait figurer dans son dossier le montant en deçà duquel les anomalies sont manifestement insignifiantes (ici 80 k€) et **toutes les anomalies autres que manifestement insignifiantes** relevées au cours de l’audit, avec la mention de leur correction ou de leur non-correction, ainsi que sa conclusion sur le caractère significatif des anomalies non corrigées (NEP 450). Les anomalies corrigées restent utiles : elles renseignent sur la qualité du contrôle interne (le double comptage révèle une faiblesse des procédures d’inventaire) et sur le risque pour les audits suivants."
+        },
+        {
+          "id": "q10-opinion",
+          "kind": "mcq",
+          "points": 1.5,
+          "prompt": "À l’aide des annexes 2 à 4 et de vos réponses précédentes, quelle opinion Loire Audit doit-il formuler sur les comptes 2026 si la direction maintient son refus de comptabiliser la ristourne Socadis ?",
+          "options": [
+            "Certification sans réserve, avec une observation sur la renégociation de l’accord commercial avec Socadis",
+            "Refus de certifier pour désaccord, l’anomalie dépassant le seuil de signification",
+            "Certification avec réserve pour limitation, Socadis n’ayant pas validé ses volumes",
+            "Certification avec réserve pour désaccord, le fondement de l’opinion quantifiant l’incidence de la ristourne non comptabilisée"
+          ],
+          "answer": [
+            3
+          ],
+          "option_explanations": [
+            "Inexact : une observation ne peut pas remplacer une réserve lorsqu’une anomalie significative n’est pas corrigée.",
+            "Inexact : le refus suppose des incidences diffuses ; une ristourne isolée et chiffrée (1 485 k€ nets, 5,5 % du résultat) reste circonscrite.",
+            "Inexact : les éléments probants existent (accord, chiffre d’affaires, réponse de Socadis) ; il s’agit d’un désaccord, pas d’une limitation.",
+            "Exact : anomalie significative (1 980 k€ > 1 600 k€), non corrigée, circonscrite et chiffrable : réserve pour désaccord quantifiée."
+          ],
+          "explanation": "L’anomalie non corrigée (1 980 k€ avant impôt ; 1 485 k€ sur le résultat net et les capitaux propres ; chiffre d’affaires surévalué de 1 980 k€ et dettes sous-évaluées de 2 088,9 k€) dépasse le seuil de signification de 1 600 k€. Le commissaire aux comptes dispose d’éléments probants suffisants (accord signé, chiffre d’affaires réalisé, réponse de Socadis) et la direction refuse de corriger : c’est un désaccord. Son incidence est circonscrite à un poste et chiffrable, et une réserve suffit à éclairer l’utilisateur : certification avec réserve pour désaccord, en quantifiant au mieux les incidences dans le fondement de l’opinion (NEP 700 §9 et §10). L’option 4 est la bonne. L’option 1 confond observation et réserve ; l’option 2 suppose des incidences diffuses ; l’option 3 suppose une impossibilité de collecter des éléments probants."
+        },
+        {
+          "id": "q11-justification-appreciations",
+          "kind": "open",
+          "points": 2,
+          "prompt": "À l’aide de l’annexe 4 et de vos réponses précédentes, répondez à la demande de Mme Leroux sur les points clés de l’audit et sur le traitement de la ristourne dans le rapport. Indiquez ce que contiendra la partie du rapport relative à la justification des appréciations.",
+          "model_answer": "**Points clés de l’audit** : le commissaire aux comptes justifie ses appréciations pour toutes les entités dont il certifie les comptes (C. com. art. L. 821-53), mais la forme diffère. Pour une entité d’intérêt public, comme le concurrent coté, la justification consiste à décrire les risques d’anomalies significatives les plus importants et les réponses apportées : ce sont les « points clés de l’audit » (NEP 701). Morvane, non cotée, n’est pas une entité d’intérêt public : la justification des appréciations relève de la NEP 702 et consiste à expliciter les appréciations les plus importantes, avec la description du sujet et un résumé des diligences.\n\n**Ristourne** : la justification des appréciations ne peut pas se substituer à une réserve (NEP 702 §7). L’anomalie de 1 980 k€ non corrigée impose une certification avec réserve pour désaccord, motivée et chiffrée dans la partie « Fondement de l’opinion avec réserve ». L’exposé des motifs de la réserve constituant par nature une justification des appréciations, la partie relative à la justification des appréciations n’y revient pas et se borne à y renvoyer (NEP 702 §18).\n\n**Contenu de la justification des appréciations** : une introduction indiquant que les appréciations sont celles qui, selon le jugement professionnel du commissaire aux comptes, ont été les plus importantes, qu’elles s’inscrivent dans le contexte de l’audit des comptes pris dans leur ensemble et qu’il n’est pas exprimé d’opinion sur des éléments isolés ; le renvoi au fondement de l’opinion pour la ristourne ; les appréciations portant sur d’autres éléments, par exemple l’évaluation des stocks de produits finis (coût de production, dépréciation des produits à DDM courte, estimation fondée sur les prix de cession aux soldeurs), avec la référence à la note de l’annexe et le résumé des travaux (assistance à l’inventaire, comptages complémentaires d’Albi, examen des cessions postérieures).",
+          "key_points": [
+            "Points clés de l’audit réservés aux EIP (NEP 701) ; Morvane, non EIP : justification des appréciations (NEP 702)",
+            "La justification des appréciations ne remplace pas une réserve (NEP 702 §7)",
+            "Ristourne : réserve pour désaccord motivée et chiffrée dans le fondement de l’opinion ; simple renvoi dans la justification (§18)",
+            "Autres appréciations à expliciter, par exemple l’évaluation des stocks (DDM), avec description et résumé des diligences"
+          ],
+          "explanation": "Deux erreurs sont à écarter : présenter des points clés de l’audit pour une entité qui n’est pas d’intérêt public, et utiliser la justification des appréciations pour adoucir une réserve. La NEP 702 prévoit expressément le renvoi au fondement de l’opinion pour les motifs d’une réserve et le maintien des autres appréciations."
+        },
+        {
+          "id": "q12-durabilite",
+          "kind": "open",
+          "points": 2.5,
+          "prompt": "À l’aide des annexes 1 et 4, répondez aux questions du président sur l’état de durabilité : obligation de publication et premier exercice concerné, professionnel chargé de la certification et conditions de sa désignation, niveau d’assurance et forme de la conclusion, champ de la mission.",
+          "model_answer": "**Obligation et calendrier** : Morvane n’est pas une entité d’intérêt public et n’était pas soumise à la déclaration de performance extra-financière à ce titre ; le report de deux ans de la directive 2025/794 l’exonère pour les exercices 2025 et 2026 : le rapport de gestion 2026 ne comporte pas d’état de durabilité obligatoire. Selon la directive Omnibus I, transposée, sont soumises les entreprises dont le chiffre d’affaires net dépasse 450 000 k€ **et** dont l’effectif moyen dépasse 1 000 salariés, pour les exercices ouverts à compter du 1er janvier 2027. Avec 530 000 k€ de chiffre d’affaires et 1 290 salariés prévus en 2027 (512 000 k€ et 1 260 en 2026), Morvane remplit les deux conditions : elle publiera son premier état de durabilité au titre de 2027, dans une section distincte de son rapport de gestion présentée à l’assemblée de 2028. N’appartenant à aucun groupe, elle ne peut pas bénéficier de l’exemption des filiales incluses dans le rapport consolidé d’une mère. D’ici là, une publication volontaire est possible pour répondre au fonds.\n\n**Professionnel** : les informations sont certifiées par un commissaire aux comptes inscrit sur la liste des professionnels habilités à certifier les informations en matière de durabilité ou par un organisme tiers indépendant accrédité (C. com. art. L. 232-6-3, III). Loire Audit, inscrit sur cette liste, peut être chargé de la mission, mais elle n’est pas automatique : il doit être nommé pour cette mission dans les conditions du titre II du livre VIII du Code de commerce (désignation par l’assemblée), après vérification de son indépendance et des compétences de l’équipe.\n\n**Niveau d’assurance** : la certification repose sur une mission d’**assurance limitée**, et non raisonnable comme pour les comptes ; la directive Omnibus I a supprimé la perspective d’un passage à l’assurance raisonnable. Les travaux sont moins étendus (entretiens, procédures analytiques, rapprochements, tests ciblés) et la conclusion est exprimée sous une forme négative : le professionnel indique qu’il n’a pas relevé d’éléments de nature à remettre en cause la conformité de l’état de durabilité. Le souhait d’une certification « aussi solide que celle des comptes » ne correspond pas au régime légal.\n\n**Champ** : conformité de l’état de durabilité aux normes ESRS, y compris le processus de détermination des informations publiées (analyse de double matérialité), respect des obligations de l’article 8 du règlement taxonomie et, le cas échéant, du balisage électronique ; le rapport est distinct du rapport sur les comptes.",
+          "key_points": [
+            "Exercices 2025 et 2026 non soumis (report de la directive 2025/794 pour une grande entreprise non EIP)",
+            "Omnibus I : CA > 450 M€ et effectif moyen > 1 000 ; Morvane soumise à compter de l’exercice 2027 (rapport publié en 2028)",
+            "Certification par un CAC inscrit sur la liste durabilité ou un OTI (L. 232-6-3) ; Loire Audit possible s’il est désigné à cet effet",
+            "Assurance limitée maintenue par Omnibus I ; conclusion sous forme négative, différente de l’opinion sur les comptes",
+            "Champ : conformité aux ESRS, processus de double matérialité, taxonomie (art. 8), balisage"
+          ],
+          "explanation": "Le candidat doit appliquer les seuils cumulatifs de la directive Omnibus I aux données de l’annexe 1 (les deux conditions sont remplies), situer le premier exercice concerné (2027, après le report des exercices 2025 et 2026), identifier les professionnels habilités et marquer la différence entre l’assurance limitée (conclusion négative) et l’assurance raisonnable de la certification des comptes."
+        }
+      ],
+      "explanation": "Méthode : (1) seuil de signification sur le résultat courant avant impôt (32 000 k€, plus-value non récurrente exclue) : 1 600 k€ ; planification 1 200 k€ ; anomalies manifestement insignifiantes 80 k€ ; (2) stocks : assistance à l’inventaire des stocks significatifs, choix des sites selon le risque, intervention à une autre date à Albi avec contrôle des mouvements intercalaires (NEP 501), confirmation du stock détenu par LogiOuest ; (3) clients : refus de confirmation à analyser (NEP 505 §10-12) ; rapprochement Socadis : virement en transit sans incidence, ristourne acquise de 1 980 k€ HT (mesure des ventes, exhaustivité des passifs) et retour de 120 k€ ; (4) écritures : ristourne en avoir à établir 7091 / 44587 / 4198 (1 980 HT) ; double comptage 7135 / 355 (540) ; retour 701 / 44587 / 4198 (120 HT) ; dépréciation des produits à DDM courte 6817 / 395 (672) ; cumul des anomalies 3 312 k€ avant impôt, 2 484 k€ après impôt, toutes documentées (NEP 450) ; (5) ristourne non corrigée (1 980 k€ > 1 600 k€), circonscrite et chiffrée : certification avec réserve pour désaccord (NEP 700) ; justification des appréciations selon la NEP 702 (Morvane n’est pas une EIP, pas de points clés de l’audit), avec renvoi au fondement de l’opinion pour la ristourne ; (6) durabilité : premier état de durabilité au titre de 2027 (seuils Omnibus I dépassés), certifié en assurance limitée par un CAC inscrit ou un OTI, conclusion sous forme négative."
+    }
+  ]
+}
